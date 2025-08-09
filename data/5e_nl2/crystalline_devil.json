@@ -1,0 +1,55 @@
+{
+    "name": "Crystalline Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "fiend",
+        "ambush",
+        "charm",
+        "summoning"
+    ],
+    "adjectives": [
+        "crystalline",
+        "deceptive",
+        "tactical",
+        "fiendish"
+    ],
+    "description": "The Crystalline Devil can disguise itself as an ordinary gemstone, possessing a fiendish quality beneath its deceptive exterior.",
+    "memorable": "Its ability to charm opponents while disguised as a gemstone makes it a unique ambush predator.",
+    "goals": "Typically seeks to incapacitate opponents and gain control over encounters through charm effects.",
+    "relations": "May work alongside other fiends or summon allies to aid in combat.",
+    "environment": "Often found in dark, hidden places where its gemstone form can blend in.",
+    "strengths": "Possesses high defenses and the ability to charm and incapacitate enemies.",
+    "weaknesses": "Vulnerable to silvered weapons, which can bypass its resistances.",
+    "attacks": "Performs multiple claw attacks and unleashes a burst of crystal shards on nearby foes.",
+    "most_powerful_ability": "Glittering Temptation allows it to incapacitate and charm nearby creatures.",
+    "equipment": null,
+    "senses": "Has Devil's Sight, allowing it to see in magical darkness.",
+    "skills": "Excels in Deception and Stealth, making it effective in ambush tactics.",
+    "additional_information": [
+        "Immunities to fire, poison, and the poisoned condition.",
+        "Magic Resistance grants advantage on saving throws against magical effects.",
+        "Can summon additional fiendish allies once per day.",
+        "True form is revealed when not in gemstone disguise.",
+        "Duality of forms provides unique tactical options."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that disguises as a gemstone",
+        "creature with charm ability and crystal attacks",
+        "deceptive monster that ambushes and summons allies",
+        "fiendish entity with magical resistances",
+        "strong ambusher creature with dual forms"
+    ]
+}

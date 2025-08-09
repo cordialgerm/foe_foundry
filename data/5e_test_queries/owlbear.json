@@ -1,0 +1,25 @@
+{
+    "name": "Owlbear",
+    "queries": [
+        {
+            "query": "large creature with a bear body and owl head that lives in forests",
+            "variant": "big animal having a bear body and owl head found in woodlands"
+        },
+        {
+            "query": "aggressive monster with sharp claws and keen senses found in caves",
+            "variant": "hostile creature with pointed claws and sharp senses dwelling in caverns"
+        },
+        {
+            "query": "territorial hybrid creature known for its crushing beak and brute strength",
+            "variant": "defensive mixed animal recognized for its powerful beak and heavy strength"
+        },
+        {
+            "query": "monstrous creature that attacks intruders in its lair with powerful melee attacks",
+            "variant": "fearsome being that strikes foes in its home with strong physical assaults"
+        },
+        {
+            "query": "owl bear that can glide and is difficult to tame",
+            "variant": "owlbear capable of gliding and tough to train"
+        }
+    ]
+}

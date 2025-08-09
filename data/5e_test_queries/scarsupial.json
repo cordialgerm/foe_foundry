@@ -1,0 +1,25 @@
+{
+    "name": "Scarsupial",
+    "queries": [
+        {
+            "query": "small agile beast that can climb and falls without damage",
+            "variant": "beast that is small and agile, able to climb and not take fall damage"
+        },
+        {
+            "query": "creature with climbing speed and strong bite attack",
+            "variant": "monster that has a strong bite attack and a climbing speed"
+        },
+        {
+            "query": "cunning creature with vertical pounce ability in diverse environments",
+            "variant": "clever beast that has a vertical pounce and thrives in varied locales"
+        },
+        {
+            "query": "small monster with high strength and natural armor",
+            "variant": "small creature that features natural armor and considerable strength"
+        },
+        {
+            "query": "beast that uses height advantage in combat with multiattack",
+            "variant": "creature that uses vertical advantages in battle and has a multiattack"
+        }
+    ]
+}

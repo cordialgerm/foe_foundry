@@ -1,0 +1,53 @@
+{
+    "name": "Ravenfolk Doom Croaker",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 88,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "humanoid",
+        "spellcaster",
+        "mystical"
+    ],
+    "adjectives": [
+        "mystical",
+        "manipulative",
+        "formidable",
+        "dynamic"
+    ],
+    "description": "A medium humanoid creature clad in studded leather armor, known for its darkly mystical abilities and manipulative nature.",
+    "memorable": "It can instill fear through prophetic caws while wielding rune-powered weapons that deal radiant damage.",
+    "goals": "The Ravenfolk Doom Croaker usually aims to deceive enemies, invoke fear, and support allies using its magic and intimidation.",
+    "relations": "It may be found among other ravenfolk or allied with creatures that thrive in darker, mystical circumstances.",
+    "environment": "Typically found in dark, mystical locations or shadowy forests.",
+    "strengths": "Possesses magical resistance, enhancing its ability to withstand spells.",
+    "weaknesses": "Average physical strength, relying more on magic and manipulation than brute force.",
+    "attacks": "Utilizes Multiattack, combining peck and runestaff attacks or unleashing radiant damage through runeblast.",
+    "most_powerful_ability": "Prophetic Caw, making nearby creatures frightened or granting them advantages based on their responses to the prophecy.",
+    "equipment": "wields a Runestaff and has innate magical abilities.",
+    "senses": "Has exceptional passive perception of 20, making it adept at detecting threats.",
+    "skills": "Excels in Deception, Intimidation, and has impressive Perception skills.",
+    "additional_information": [
+        "Can mimic animal sounds and humanoid voices.",
+        "Rune-powered weapons deal additional radiant damage.",
+        "Can cast augury and the thaumaturgy cantrip at will.",
+        "Blinds enemies with phantasmal wings.",
+        "Uses clever tactics to manipulate outcomes in combat."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast augury and the thaumaturgy cantrip using Wisdom without material components.",
+    "test_queries": [
+        "mystical humanoid with radiant attacks",
+        "Ravenfolk creature that uses magic",
+        "dark creature with fear-inducing abilities",
+        "humanoid that can mimic animal sounds",
+        "manipulative monster with prophetic powers"
+    ]
+}

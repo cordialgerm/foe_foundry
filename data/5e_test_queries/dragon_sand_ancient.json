@@ -1,0 +1,25 @@
+{
+    "name": "Dragon, Sand Ancient",
+    "queries": [
+        {
+            "query": "gargantuan dragon with sand camouflage and fire immunity",
+            "variant": "gargantuan dragon immune to fire with sand camouflage"
+        },
+        {
+            "query": "strong dragon that uses frightful presence and moves quickly in sandy terrain",
+            "variant": "fast-moving dragon that uses frightful presence and terrors foes in sandy areas"
+        },
+        {
+            "query": "legendary dragon that thrives in sandy environments and has multiattack abilities",
+            "variant": "legendary dragon with multiattack traits that excels in sandy habitats"
+        },
+        {
+            "query": "ancient dragon characterized by high hit points and powerful breath weapon",
+            "variant": "ancient dragon known for its immense hit points and devastating breath attack"
+        },
+        {
+            "query": "neutral evil dragon with blindsight and melee attack disadvantages",
+            "variant": "neutral evil dragon that has blindsight and causes disadvantages with melee attacks"
+        }
+    ]
+}

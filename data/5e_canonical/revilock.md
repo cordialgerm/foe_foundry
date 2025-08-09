@@ -1,6 +1,8 @@
 <MonsterName/>Revilock</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>39</HP>
 <summary>The Revilock is a Medium humanoid creature that operates primarily as an ambush predator, utilizing its natural camouflage and keen senses to stalk its prey. With a respectable Armor Class of 12 and a total of 39 hit points, it can withstand moderate confrontations but is vulnerable to more skilled attackers. The creature's Challenge Rating of 2 indicates that it presents a moderate threat, suitable for low or mid-level adventurers. Its abilities are notably balanced, with averages across strength, dexterity, and constitution, and it showcases a strong predatory instinct with skills in athletics, engineering, perception, and stealth, making it very good at hiding and tracking. However, its reduced charisma and wisdom indicate a lack of social skills and mental fortitude. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Revilock is a capable ambusher with versatile combat abilities, mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Revilock
 
 *Medium* *Humanoid*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

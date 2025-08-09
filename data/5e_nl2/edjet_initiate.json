@@ -1,0 +1,53 @@
+{
+    "name": "Edjet Initiate",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 12,
+    "srd": false,
+    "ac_description": "padded armor",
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "dragonborn",
+        "combatant",
+        "teamwork"
+    ],
+    "adjectives": [
+        "medium",
+        "resilient",
+        "supportive"
+    ],
+    "description": "The Edjet Initiate is a medium humanoid creature notable for its padded armor and dragonborn affiliation, characterized by a lawful neutral alignment. It has an athletic build with good strength and constitution.",
+    "memorable": "Its advantage on melee attack rolls near allies and ability to resist fire damage make it effective in team settings.",
+    "goals": "To engage in combat while supporting dragonborn allies.",
+    "relations": "Often found alongside dragonborn allies, and has a specific synergy with them in combat.",
+    "environment": "Commonly encountered in areas where dragonborn gather or within military contexts.",
+    "strengths": "Resistant to fire damage and can gain advantage on attack rolls when near allies.",
+    "weaknesses": "Limited defensive capabilities with low hit points and armor class.",
+    "attacks": "Can attack with a shortsword or a shortbow, dealing piercing damage.",
+    "most_powerful_ability": "Overeager Trainee grants advantage on melee attacks but makes it vulnerable to enemy attacks.",
+    "equipment": "Shortsword and shortbow are the primary weapons.",
+    "senses": "Has an average passive perception of 10, indicating general awareness.",
+    "skills": "Proficient in athletics, allowing better engagement in physical challenges.",
+    "additional_information": [
+        "Advantage on saving throws against being frightened while near a superior officer.",
+        "Encourages teamwork and positioning for effective combat.",
+        "Has a modest challenge rating of 1/4.",
+        "Interactions with dragonborn can enhance combat effectiveness.",
+        "Focus on supporting allies rather than solo combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium humanoid supporting dragonborn allies",
+        "combatant with fire resistance and teamwork",
+        "edjet initiate dragonborn associate",
+        "padded armor humanoid with melee advantage",
+        "shortsword wielding weaker dragonborn fighter"
+    ]
+}

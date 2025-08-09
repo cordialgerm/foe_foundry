@@ -1,0 +1,25 @@
+{
+    "name": "Grick",
+    "queries": [
+        {
+            "query": "serpentine cave predator with tentacles",
+            "variant": "tentacled predator that lives in caves and is serpentine"
+        },
+        {
+            "query": "ambush monster with rubbery gray body and beak",
+            "variant": "gray rubbery creature that attacks by ambush using a beak"
+        },
+        {
+            "query": "stealthy creature that climbs walls and hides in shadows",
+            "variant": "creature that is stealthy, can climb walls, and blends into shadows"
+        },
+        {
+            "query": "medium monstrosity that grapples with tentacles",
+            "variant": "monstrosity of medium size that uses tentacles to grapple"
+        },
+        {
+            "query": "monster with natural armor and high stealth in rocky terrain",
+            "variant": "creature with good stealth and natural armor that excels in rocky areas"
+        }
+    ]
+}

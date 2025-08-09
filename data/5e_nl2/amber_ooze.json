@@ -1,0 +1,49 @@
+{
+    "name": "Amber Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 7,
+    "srd": false,
+    "cr": "4",
+    "movement": "20 ft. walk",
+    "role": "Bruiser",
+    "tags": [
+        "ooze",
+        "large"
+    ],
+    "adjectives": [
+        "amorphous",
+        "formidable",
+        "durable"
+    ],
+    "description": "The Amber Ooze is characterized by its large, amorphous body which allows it to navigate various terrains with ease, featuring a jelly-like consistency and a menacing presence.",
+    "memorable": "Its Engulf ability can trap and petrify creatures, making it a significant threat in combat scenarios.",
+    "goals": "To engulf and incapacitate foes, particularly those in dense vegetation.",
+    "relations": "Related to other oozes and potentially found in the company of similar ambush predators.",
+    "environment": "Usually found in dense vegetation or forested areas, taking advantage of its arboreal movement.",
+    "strengths": "Damage immunity to poison and resistance to bludgeoning, piercing, and slashing damage from nonmagical sources.",
+    "weaknesses": "Very low Dexterity makes it vulnerable to agile opponents.",
+    "attacks": "Can execute a Multiattack with its Engulf ability followed by two powerful pseudopod strikes.",
+    "most_powerful_ability": "Engulf ability, which can trap creatures and lead to petrification if they remain trapped for too long.",
+    "senses": "Blindsight up to 60 ft. allows it to sense creatures nearby despite being blind.",
+    "skills": null,
+    "additional_information": [
+        "Can move through spaces as narrow as 1 inch without squeezing due to its Amorphous ability.",
+        "Has Arboreal Movement allowing it to traverse through trees without difficulty.",
+        "The Engulf ability can lead to a creature being petrified after a short duration.",
+        "Capable of climbing difficult surfaces, including ceilings, with its Spider Climb ability."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large amorphous monster",
+        "ooze that petrifies",
+        "creature that engulfs opponents",
+        "giant ooze ambush predator",
+        "forest-dwelling ooze"
+    ]
+}

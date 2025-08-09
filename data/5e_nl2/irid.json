@@ -1,0 +1,54 @@
+{
+    "name": "Irid",
+    "creature_type": "Celestial",
+    "alignment": "chaotic neutral",
+    "size": "Tiny",
+    "hp": 20,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 40 ft., walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "chaotic",
+        "celestial",
+        "manipulative",
+        "magical"
+    ],
+    "adjectives": [
+        "tiny",
+        "playful",
+        "elusive",
+        "colorful"
+    ],
+    "description": "The Irid is a Tiny Celestial creature embodying chaos, known for its playful nature and colorful magical light. It has a delicate appearance and can turn invisible, enhancing its cunning tactics.",
+    "memorable": "The ability to manipulate situations and cast vibrant magical lights makes the Irid captivating and unpredictable.",
+    "goals": "To manipulate scenarios to its advantage and engage in playful interactions.",
+    "relations": "Could be encountered with other chaotic creatures or serve as a trickster spirit.",
+    "environment": "Often found in whimsical or enchanted locations, thriving in areas that resonate with magic.",
+    "strengths": "Excels in deception and persuasion, making it formidable in social encounters; possesses advantageous Magic Resistance.",
+    "weaknesses": "Poor physical strength and average Constitution leave it vulnerable in direct combat.",
+    "attacks": "Utilizes a Multiattack involving Gossip to influence targets and an Iridescent Blast dealing radiant damage.",
+    "most_powerful_ability": "Magic Resistance, granting it advantage on saving throws against spells and magical effects.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in deception and persuasion, both at +7, and has good stealth proficiency.",
+    "additional_information": [
+        "Immune to poison and resistant to radiant damage.",
+        "Immunity to conditions like charmed, exhaustion, frightened, and poisoned.",
+        "Possesses Photographic Memory for exceptional recall.",
+        "Creates colorful magical light called Iridescence at will.",
+        "Can magically turn invisible for tactical advantages."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "playful magical creature with colorful light",
+        "tiny celestial that can turn invisible",
+        "manipulative creature with powerful magic resistance",
+        "chaotic being skilled in deception and persuasion",
+        "small creature that uses gossip to influence others"
+    ]
+}

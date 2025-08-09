@@ -1,0 +1,52 @@
+{
+    "name": "Drake, Vapor",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft., fly 50 ft., swim 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "swamp",
+        "ambusher",
+        "poison"
+    ],
+    "adjectives": [
+        "sizable",
+        "agile",
+        "untamed",
+        "venomous"
+    ],
+    "description": "The Drake, Vapor is a sizable, agile dragon with a demeanor reflecting its untamed swamp habitat. It has a sturdy natural armor and a fearsome appearance suitable for ambush tactics.",
+    "memorable": "Notable for its ability to ambush foes using camouflage in swampy terrain and its unique Diving Pounce ability.",
+    "goals": "Typically hunts in swamp habitats, using stealth and ambush to catch prey.",
+    "relations": "Often encountered near swamps and may communicate with swampland beasts.",
+    "environment": "Usually found in swampy terrain.",
+    "strengths": "High Dexterity enhances its agility in battle; immunity to poison and resistance to cold damage.",
+    "weaknesses": "Low Intelligence and Charisma affect its strategic and social capabilities; loses flight if unable to access swamp gases.",
+    "attacks": "Employs a Multiattack pattern including a Bite that deals piercing damage and has a chance to poison the target; Claw attacks deal slashing damage.",
+    "most_powerful_ability": "Poisonous Breath, exhaling a 30-foot cone of poisonous gas that can incapacitate foes.",
+    "senses": "Possesses darkvision and a passive perception score of 15, making it quite aware of its surroundings.",
+    "skills": "Has proficiency in perception, allowing it to be fairly aware of surroundings.",
+    "additional_information": [
+        "Able to communicate with swampland beasts via Speak with Beasts.",
+        "Gaseous Ascension allows flight dependent on inhaling swamp gases.",
+        "Swamp Camouflage provides advantage on Dexterity (Stealth) checks in swampy terrain."
+    ],
+    "damage_types": [
+        "poison",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon from swampy areas",
+        "agile drake with poisonous breath",
+        "ambushing creature in swamp habitats",
+        "dragon that communicates with swamp beasts",
+        "venomous dragon with stealthy camouflaging abilities"
+    ]
+}

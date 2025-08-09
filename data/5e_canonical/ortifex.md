@@ -1,6 +1,8 @@
 <MonsterName/>Ortifex</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Ortifex is a Medium-sized undead creature known for its neutral evil alignment, making it a formidable adversary in any combat encounter. With a Challenge Rating of 4, it poses a substantial threat to lower-level parties, offering 1,100 XP upon defeat. It has an Armor Class of 12, which is average and can result in some hits getting through, but it compensates with a substantial pool of 78 hit points, representing good durability thanks to its natural armor. The Ortifex’s speed is unique as it cannot walk but can fly at a speed of 30 feet and hover, giving it excellent mobility in the air. However, its attributes show certain weaknesses; it has very poor intelligence and average dexterity, making it less effective in situations requiring cleverness or agility, though it boasts very good strength and good constitution, enhancing its melee combat capabilities. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Ortifex can deliver a melee attack with its slam action
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ortifex
 
 *Medium* *Undead* *neutral evil*
@@ -52,5 +55,6 @@ Unless surprised, a creature can plug its ears to avoid the saving throw at the 
 - **Blood Siphon (Recharge 6):** The ortifex drains blood from nearby creatures. Each creature within 20 feet of the ortifex must make a DC 13 Constitution saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. The ortifex gains temporary hp equal to the single highest amount of necrotic damage dealt. If it gains temporary hp from this action while it still has temporary hp from a previous use of this action, the temporary hp add together. The ortifex’s temporary hp can’t exceed half its hp maximum. A creature that doesn’t have blood is immune to Blood Siphon.
 
 
+</statblock>
 
 

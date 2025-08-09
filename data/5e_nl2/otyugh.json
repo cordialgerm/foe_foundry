@@ -1,0 +1,55 @@
+{
+    "name": "Otyugh",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 114,
+    "ac": 14,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft. walk, 30 ft. swim",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "sewer",
+        "scavenger",
+        "monster"
+    ],
+    "adjectives": [
+        "grotesque",
+        "filthy",
+        "cunning"
+    ],
+    "description": "A grotesque, three-legged creature with a bloated, writhing body covered in filth and long, tentacle-like appendages ending in spiked claws.",
+    "memorable": "Notable for its repulsive habits and ability to inflict disease, it thrives in filthy environments and ambushes prey.",
+    "goals": "Typically feeds on garbage and carrion, ambushing any living creatures that come too close.",
+    "relations": "Often found in sewers, refuse heaps, and can be encountered alongside other scavengers.",
+    "environment": "Commonly resides in sewers or waste-filled areas.",
+    "strengths": "Has substantial hit points and good resistance to conditions like charm and fear, along with multiattack capabilities.",
+    "weaknesses": "Not particularly intelligent, relying on base instincts rather than strategic thinking.",
+    "attacks": "Utilizes tentacles for grappling and biting attacks that can induce disease.",
+    "most_powerful_ability": "The ability to swallow creatures, rendering them blinded and restrained while dealing acid damage.",
+    "senses": "Has darkvision up to 120 feet, allowing it to see in darkness as if it were dim light.",
+    "skills": "Exhibits effective grappling skills with tentacles, allowing it to control opponents in combat.",
+    "additional_information": [
+        "Exhibits Aberrant Resilience, resistant to being charmed, frightened, paralyzed, or stunned.",
+        "Communicates using Limited Telepathy to convey simple messages and images to nearby allies.",
+        "Possesses a Stench ability that can poison nearby creatures.",
+        "Can use Tentacle Slam to deal bludgeoning damage and stun grappled foes.",
+        "The Bite attack has a significant risk of inflicting a disease that reduces hit point maximum."
+    ],
+    "damage_types": [
+        "poison",
+        "bludgeoning",
+        "piercing",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large sewer monster with tentacles",
+        "grotesque creature that inflicts disease",
+        "aberration known for ambush tactics",
+        "filthy scavenger that lives in sewers",
+        "monster with a noxious stench and tentacles"
+    ]
+}

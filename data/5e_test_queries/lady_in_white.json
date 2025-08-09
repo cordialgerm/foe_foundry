@@ -1,0 +1,25 @@
+{
+    "name": "Lady in White",
+    "queries": [
+        {
+            "query": "haunted ghost that can fly and reduces Charisma",
+            "variant": "haunting ghost that flies and decreases Charisma"
+        },
+        {
+            "query": "undead creature that reveals its form and frightens living beings",
+            "variant": "undead monster that shows its true nature and terrifies living creatures"
+        },
+        {
+            "query": "ghostly being with the ability to attach to humanoids and cause despair",
+            "variant": "phantom entity that can latch onto humanoids and inflict sorrow"
+        },
+        {
+            "query": "flying undead with invisibility that inflicts necrotic damage",
+            "variant": "soaring undead that turns invisible and deals necrotic harm"
+        },
+        {
+            "query": "psychological undead creature that embodies despair and isn't good in combat",
+            "variant": "tactically weak undead being that represents sorrow and is not strong in battles"
+        }
+    ]
+}

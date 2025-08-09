@@ -1,0 +1,25 @@
+{
+    "name": "Ley Wanderer",
+    "queries": [
+        {
+            "query": "huge aberration that manipulates magic and psychic energy",
+            "variant": "huge aberrattion tht manipulates magic and psychic enregy"
+        },
+        {
+            "query": "creature with high intelligence and psychic damage abilities",
+            "variant": "creature with hi intelligence and psyschic damge abilities"
+        },
+        {
+            "query": "Ley Wanderer magic-draining abilities in a combat scenario",
+            "variant": "Ley Wanderer magic draining abilities in a combate scenerio"
+        },
+        {
+            "query": "monster that teleports and has immunity to psychic damage",
+            "variant": "monster that teleports and hsa immunity to psyhchic damage"
+        },
+        {
+            "query": "combat monster known for absorbing spells and dealing psychic damage",
+            "variant": "combat monster known for absobing spells and daling psychic dmage"
+        }
+    ]
+}

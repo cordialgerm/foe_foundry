@@ -1,0 +1,25 @@
+{
+    "name": "Gnoll Pack Leader",
+    "queries": [
+        {
+            "query": "aggressive humanoid that leads a pack and uses teamwork in battle",
+            "variant": "humanoid leader of gnolls that is aggressive and utilizes team tactics"
+        },
+        {
+            "query": "medium-sized gnoll that excels in combat when allies are nearby",
+            "variant": "medium gnoll that performs well in fights with allies close"
+        },
+        {
+            "query": "tactical monster with darkvision and special rampaging ability",
+            "variant": "strategic creature with dark vision and a unique rampaging skill"
+        },
+        {
+            "query": "gnoll creature with chilling laughter ability that enhances allies",
+            "variant": "creature gnoll with the ability of chilling laughter that boosts its companions"
+        },
+        {
+            "query": "humanoid with pack tactics and multiple attacks per turn",
+            "variant": "humanoid creature that has pack tactics and can attack multiple times a turn"
+        }
+    ]
+}

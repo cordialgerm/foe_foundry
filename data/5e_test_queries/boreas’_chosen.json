@@ -1,0 +1,25 @@
+{
+    "name": "Boreas\u2019 Chosen",
+    "queries": [
+        {
+            "query": "humanoid ice creature with cold immunity and high damage",
+            "variant": "ice humanoid creature with immunity to cold and high damage"
+        },
+        {
+            "query": "powerful opponent with ice powers and high durability",
+            "variant": "strong opponent with ice abilities and great durability"
+        },
+        {
+            "query": "creature that inflicts cold damage and excels in icy environments",
+            "variant": "monster that deals cold damage and thrives in frozen terrains"
+        },
+        {
+            "query": "medium creature with leather armor and strong physical abilities",
+            "variant": "medium-sized creature wearing leather and has strong physical traits"
+        },
+        {
+            "query": "chaotic evil humanoid with freezing breath attack and high hit points",
+            "variant": "evil humanoid with freezing attack and a lot of hit points"
+        }
+    ]
+}

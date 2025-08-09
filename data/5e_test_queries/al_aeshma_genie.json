@@ -1,0 +1,25 @@
+{
+    "name": "Al-Aeshma Genie",
+    "queries": [
+        {
+            "query": "large chaotic elemental that can fly and deals slashing damage",
+            "variant": "chaotic elemental creature that is large, flies and inflicts slashing damage"
+        },
+        {
+            "query": "genie with air hatred ability that regenerates health",
+            "variant": "genie that has a regeneration trait and air hatred power"
+        },
+        {
+            "query": "elemental with high armor class that is weak to fire",
+            "variant": "high AC elemental creature that is vulnerable to fire damage"
+        },
+        {
+            "query": "creature that disintegrates into sand upon death and can cast invisibility",
+            "variant": "monster that turns into sand when it dies and is able to use invisibility"
+        },
+        {
+            "query": "flying elemental with necrotic damage and thunder immunity",
+            "variant": "elemental that flies, can deal necrotic damage and is immune to thunder"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Cultist Psychophant",
+    "creature_type": "Humanoid",
+    "alignment": "any non-good alignment",
+    "size": "Medium",
+    "hp": 149,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "cultist",
+        "psychic",
+        "psionic"
+    ],
+    "adjectives": [
+        "manipulative",
+        "cunning",
+        "psychic"
+    ],
+    "description": "The Cultist Psychophant is a Medium Humanoid embodying manipulation and mental dominance. It has an exceptional Charisma and wears no armor, relying on its Impenetrable Ego for defense, allowing it to avoid attacks effectively while manipulating battles through psychic powers.",
+    "memorable": "Its ability to turn psychic attacks back on foes and redirect attacks toward allies makes it a cunning and formidable opponent.",
+    "goals": "To manipulate others and control the battlefield through psychological warfare and mental domination.",
+    "relations": "Often found among cultists or similar groups, it likely has followers who assist it in its schemes.",
+    "environment": "Typically found in settings associated with dark rituals or cultist gatherings.",
+    "strengths": "Resistance to psychic damage and enhanced defenses through Charisma, making it difficult to charm or frighten.",
+    "weaknesses": "Low Strength and Dexterity make it vulnerable in direct physical confrontations.",
+    "attacks": "Utilizes Psychic Strikes to deal psychic damage, with potential to stun opponents.",
+    "most_powerful_ability": "Brain Storm deals heavy psychic damage in an area and can poison opponents for a duration.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in perception, allowing it some awareness of surroundings.",
+    "additional_information": [
+        "Can warp weapons, reducing their effectiveness.",
+        "Calls for help from followers to redirect attacks.",
+        "Can read thoughts and manipulate objects with spells.",
+        "Has an effective AC of 19 when utilizing its special ability.",
+        "Excels in psychic warfare and battlefield control."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast detect thoughts and mage hand at will, with charming and levitation spells available as well.",
+    "test_queries": [
+        "manipulative psychic humanoid enemy",
+        "cultist that excels in mental warfare",
+        "psychic damage dealer with strong Charisma",
+        "unique creature that manipulates weapons",
+        "enemy that can redirect attacks to allies"
+    ]
+}

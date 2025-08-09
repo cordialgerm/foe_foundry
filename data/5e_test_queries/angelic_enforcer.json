@@ -1,0 +1,25 @@
+{
+    "name": "Angelic Enforcer",
+    "queries": [
+        {
+            "query": "large celestial being that acts as a divine protector",
+            "variant": "big angelic creature that serves as a protector of the divine"
+        },
+        {
+            "query": "powerful celestial with high armor class and radiant damage immunity",
+            "variant": "strong celestial being with great armor rating and immunity to radiant attacks"
+        },
+        {
+            "query": "lawful good creature that can change shape and cast spells",
+            "variant": "creature with a lawful good nature that has the ability to polymorph and cast magic"
+        },
+        {
+            "query": "angelic enforcer tactics with innate spellcasting and high hit points",
+            "variant": "tactics of the angelic enforcer with natural spellcasting abilities and many hit points"
+        },
+        {
+            "query": "celestial creature immune to exhaustion and can see through illusions",
+            "variant": "heavenly creature that is immune to tiredness and can perceive through illusions"
+        }
+    ]
+}

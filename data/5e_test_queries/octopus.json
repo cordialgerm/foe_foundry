@@ -1,0 +1,25 @@
+{
+    "name": "Octopus",
+    "queries": [
+        {
+            "query": "small creature that can camouflage and swim quickly in water",
+            "variant": "tiny creature that swims fast and can hide easily in water"
+        },
+        {
+            "query": "sea creature with multiple tentacles and an ink escape ability",
+            "variant": "ocean creature with several tentacles and the ability to escape using ink"
+        },
+        {
+            "query": "intelligent aquatic beast known for stealth and grasping with tentacles",
+            "variant": "clever water beast famous for its stealth and tentacle grasping"
+        },
+        {
+            "query": "octopus-like creature found in shallow coastal waters that uses ink for cover",
+            "variant": "octopus type creature located in shallow waters that uses ink to hide"
+        },
+        {
+            "query": "small beast that can hold its breath for 30 minutes and grapples prey",
+            "variant": "little beast capable of holding breath for thirty minutes and can capture prey"
+        }
+    ]
+}

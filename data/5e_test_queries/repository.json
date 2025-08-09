@@ -1,0 +1,25 @@
+{
+    "name": "Repository",
+    "queries": [
+        {
+            "query": "durable construct with psychic powers and self-destruct ability",
+            "variant": "durable construct that has psychic abilities and self-destructing"
+        },
+        {
+            "query": "magic resistant construct that uses melee attacks and can explode",
+            "variant": "construct that resists magic, uses melee attacks, and can explode"
+        },
+        {
+            "query": "medium creature immune to shape-changing magic with strong melee attacks",
+            "variant": "medium creature that is immune to shape-changing spells and has strong melee"
+        },
+        {
+            "query": "creature with bludgeoning damage immunity that deals psychic damage",
+            "variant": "creature immune to bludgeoning damage who deals psychic"
+        },
+        {
+            "query": "construct that can incapacitate enemies with Language Lash ability",
+            "variant": "construct that can incapacitate foes using Language Lash ability"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Quippers",
+    "queries": [
+        {
+            "query": "aggressive school of fish that attacks in water",
+            "variant": "agressive fish school that attacks in water"
+        },
+        {
+            "query": "carnivorous fish swarm found in lakes and rivers",
+            "variant": "carnivorus fish swarm found in lakes or rivers"
+        },
+        {
+            "query": "fast-moving aquatic predators that sense blood",
+            "variant": "fast going aquatic predators that can smell blood"
+        },
+        {
+            "query": "swarm of small sharp-toothed fish lurking in murky water",
+            "variant": "swarm of tiny sharp toothed fish hiding in muddy water"
+        },
+        {
+            "query": "Medium beast that breathes underwater and has piercing attacks",
+            "variant": "medium beast breathing underwater with piercing bites"
+        }
+    ]
+}

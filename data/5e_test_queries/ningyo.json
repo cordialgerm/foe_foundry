@@ -1,0 +1,25 @@
+{
+    "name": "Ningyo",
+    "queries": [
+        {
+            "query": "small aquatic monster with manipulation abilities",
+            "variant": "small water creature that can manipulate attacks"
+        },
+        {
+            "query": "dangerous creature from the water with curse ability",
+            "variant": "threatening water monster with ill fortune power"
+        },
+        {
+            "query": "monster that can breathe underwater and redirect attacks",
+            "variant": "creature that swims and can redirect enemy attacks"
+        },
+        {
+            "query": "cunning mischievous creature with barbed tentacles",
+            "variant": "crafty creature with tentacle attacks and mischief"
+        },
+        {
+            "query": "creature that has damage resistance and darkvision",
+            "variant": "monster with darkvision and resistances to various damages"
+        }
+    ]
+}

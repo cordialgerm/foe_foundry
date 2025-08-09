@@ -1,6 +1,8 @@
 <MonsterName/>Death Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (plate)</AC>
+<HP/>140</HP>
 <summary>The Death Knight is a formidable undead creature that serves as a powerful adversary in combat situations. With an impressive armor class of 18 and 140 hit points, it can withstand a considerable amount of damage. The Death Knight has a challenge rating of 8, indicating that it poses a significant threat to adventurers at lower levels. Its strengths lie in its ability to deal substantial necrotic damage, its magic resistance that offers it an advantage against spells, and its unique ability to return from destruction unless redeemed. However, it lacks mobility beyond a standard walking speed of 30 feet and is vulnerable to radiant damage, which can exploit its undead nature. Overall, the Death Knight is a relentless foe that embodies the themes of death and retribution.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of reactions, the Death Knight can use "Parry" to enhance its defense. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Knight
 
 *Medium undead*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Parry.** The death knight adds 3 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon.
 - **Soul Drain.** When the death knight reduces a Humanoid to 0 HP, it can absorb the creature’s soul. The target must succeed on a DC 15 WIS save or immediately die, its soul becoming trapped in the death knight’s sword. The death knight has advantage on attack rolls for 1 minute after absorbing a soul. The creature can’t be restored to life until the death knight is permanently destroyed.
 
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Young Emerald Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Large",
+    "hp": 133,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft., burrow 20 ft., fly 60 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "young",
+        "emerald",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "intelligent",
+        "cunning",
+        "formidable"
+    ],
+    "description": "The Young Emerald Dragon is a large and imposing figure with strong features, proficient in both combat and cunning tactics. Its scales shimmer in shades of green, reflecting its affinity for nature and the environment.",
+    "memorable": "Possesses powerful psionic abilities with long-range observation and devastating thunder-based attacks.",
+    "goals": "Typically seeks to dominate its territory and manipulate others through cunning and deception.",
+    "relations": "Often encountered alongside other dragons or powerful arcane creatures.",
+    "environment": "Commonly found in lush forested areas or hidden underground lairs, blending seamlessly with nature.",
+    "strengths": "High Armor Class and hit points, strong spellcasting abilities, and formidable melee attacks.",
+    "weaknesses": "Vulnerable to magical attacks that are not psychic or thunder damage.",
+    "attacks": "Multiattack with a powerful bite and claws, complemented by thunder damage on bite.",
+    "most_powerful_ability": "Maddening Breath, a devastating area attack that deals significant thunder damage.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive perception score of 17, allowing it to stay alert.",
+    "skills": "Excels in deception and stealth, allowing it to confuse and ambush unsuspecting foes.",
+    "additional_information": [
+        "Resistant to psychic and thunder damage.",
+        "Immunities to fatigue condition.",
+        "Can communicate telepathically within 120 feet.",
+        "Innate spellcasting abilities allowing for tactical control of encounters.",
+        "Ability to psionically observe distant creatures or locations."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcaster with access to Hideous Laughter and Suggestion, using Charisma as its spellcasting ability.",
+    "test_queries": [
+        "powerful dragon with psionic abilities",
+        "large green dragon that casts spells",
+        "intelligent dragon that manipulates others",
+        "young dragon with thunder breath weapon",
+        "emerald dragon with high AC and HP"
+    ]
+}

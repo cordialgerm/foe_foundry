@@ -1,0 +1,25 @@
+{
+    "name": "Shrieker",
+    "queries": [
+        {
+            "query": "fungus creature that emits a loud shriek in caves",
+            "variant": "creature that shrieks loudly and looks like fungus in dark caves"
+        },
+        {
+            "query": "large plant that blends in with its surroundings and makes noise",
+            "variant": "big plant that camouflages itself and produces sound"
+        },
+        {
+            "query": "underground plant that alerts predators with a loud sound",
+            "variant": "plant found in caves that makes noise to warn predators"
+        },
+        {
+            "query": "environmental hazard that moves very little and produces sound",
+            "variant": "hazardous creature that remains still and emits loud sounds"
+        },
+        {
+            "query": "non-threatening fungus that frightens nearby creatures",
+            "variant": "fungus that doesn't attack but can scare creatures nearby"
+        }
+    ]
+}

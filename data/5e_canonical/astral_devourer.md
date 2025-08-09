@@ -1,6 +1,8 @@
 <MonsterName/>Astral Devourer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Astral Devourer is a powerful medium aberration that embodies chaos and evil. It is a formidable opponent in battle, with both resilient defenses and potent offensive capabilities, making it a dangerous encounter for adventurers. Notably, its ability to communicate telepathically through its hive mind allows it to coordinate with its serpentine forms effectively, enhancing its tactical options in combat. The creature is designed to disrupt and damage enemies using a mix of physical and poison attacks while having a unique defensive mechanism allowing it to split into smaller versions of itself when injured. However, its strengths are somewhat balanced by its requirement to maintain close proximity to its swarm and limitations regarding healing.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Astral Devourer presents a unique and challenging encounter, emphas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Astral Devourer
 
 *Medium* *Aberration* *chaotic evil*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Recombine:** When one or more astral devourers that are Small or smaller and share a collective mind are within 5 feet of each other, they can combine into a new astral devourer. The new astral devourer is one size larger than the largest original creature, and it has hp equal to the combined total of the original creatures. The new astral devourer’s hp can’t exceed the normal hp maximum of a Medium astral devourer.
 
 
+</statblock>
 
 

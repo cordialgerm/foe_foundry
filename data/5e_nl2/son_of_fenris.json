@@ -1,0 +1,56 @@
+{
+    "name": "Son of Fenris",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Huge",
+    "hp": 175,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft., burrow 60 ft.",
+    "role": null,
+    "tags": [
+        "chaotic",
+        "evil",
+        "monstrosity",
+        "huge"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Son of Fenris is a Huge monstrosity with an impressive physique, embodying chaos and evil. Its powerful build is accentuated by a terrifying presence and chaotic nature, enhanced by truesight and tremorsense.",
+    "memorable": "Its ability to swallow opponents while dealing significant necrotic or radiant damage makes it particularly feared, along with its powerful acidic breath attack.",
+    "goals": "To dominate and instill fear in those it encounters, often leading chaotic attacks against adventurers.",
+    "relations": "As a monstrosity, it may be related to other chaotic beasts or serve a higher chaotic evil power.",
+    "environment": "Typically found in dark, chaotic environments, often amidst ruins or cursed lands.",
+    "strengths": "Immunity to cold and poison, resistance to necrotic and radiant damage, and significant melee damage output.",
+    "weaknesses": null,
+    "attacks": "Wields powerful melee attacks with a Bite and Slam, alongside a ranged Divine Bolt attack, and a devastating Snake Breath ability.",
+    "most_powerful_ability": "The ability to swallow creatures, rendering them blinded and restrained while inflicting continuous acid damage.",
+    "equipment": null,
+    "senses": "Possesses truesight and tremorsense, allowing it to detect hidden foes and sense vibrations around it.",
+    "skills": "Excels in Religion, showcasing exceptional knowledge and understanding in that area.",
+    "additional_information": [
+        "Has advantage on Wisdom checks related to hearing and smell.",
+        "Weapon attacks deal an extra 3d6 necrotic or radiant damage.",
+        "Can communicate telepathically within 60 feet.",
+        "Utilizes both melee and ranged attacks effectively.",
+        "Chaos may lead to unpredictable combat outcomes."
+    ],
+    "damage_types": [
+        "cold",
+        "poison",
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": "Features ranged spell-like abilities that deal necrotic or radiant damage.",
+    "test_queries": [
+        "huge chaotic evil monster with necrotic attacks",
+        "powerful monster that can swallow its foes",
+        "monstrosity with divine weapon attacks",
+        "fearsome creature with poison breath attack",
+        "son of fenris combat tactics"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Garroter Crab",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Tiny",
+    "hp": 18,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "grappler"
+    ],
+    "adjectives": [
+        "tiny",
+        "crustacean",
+        "vicious"
+    ],
+    "description": "The Garroter Crab is a tiny, vicious creature with a strong physique characterized by its whip-like claws. Its small size and unique abilities make it an effective ambusher.",
+    "memorable": "Its ability to deliver a mental vision to humanoids it grapples and defeats adds a unique twist to its predatory nature.",
+    "goals": "To ambush and grapple prey, reducing them to 0 hit points.",
+    "relations": "Can be found in aquatic environments, potentially alongside other amphibious creatures.",
+    "environment": "Commonly found near water bodies, both fresh and saltwater.",
+    "strengths": "Strong physical capabilities that enhance its grappling ability, making it a difficult opponent in close quarters.",
+    "weaknesses": "Lacks durability and mental capabilities, making it vulnerable outside of its ambush tactics.",
+    "attacks": "Uses its whip-like claws to deal slashing damage and grapple targets.",
+    "most_powerful_ability": "Strangling Divination allows it to provide a mental vision of the future to its grappled prey.",
+    "equipment": null,
+    "senses": "Possesses darkvision, enabling it to see in dim light up to 60 feet.",
+    "skills": "Excels in athletics with a modifier of +4 due to its strong physique.",
+    "additional_information": [
+        "Can breathe both air and water due to its amphibious nature.",
+        "Grappled targets cannot speak or cast spells with verbal components.",
+        "Has a reach of 10 feet with its attacks, allowing it to engage targets from a distance.",
+        "Once a target receives a vision, they must wait 30 days for another.",
+        "Its small size makes it easy to overlook until it strikes."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny vicious crab that grapples prey",
+        "amphibious creature with mental vision attack",
+        "strong crab lurking in water for ambush",
+        "crustacean that silences spellcasters when grappling",
+        "Garroter Crab abilities and tactics"
+    ]
+}

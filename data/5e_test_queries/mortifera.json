@@ -1,0 +1,25 @@
+{
+    "name": "Mortifera",
+    "queries": [
+        {
+            "query": "large aquatic monster with poisonous tendrils in a swamp",
+            "variant": "large monster that lives in swamp and has poisonous tendrils"
+        },
+        {
+            "query": "aberration that can breathe underwater and hides among lotus flowers",
+            "variant": "underwater aberration that can breathe air and water hiding in lotus flowers"
+        },
+        {
+            "query": "chaotic neutral creature with high Strength and poison attacks",
+            "variant": "creature with chaotic neutral alignment that has high strength and does poison damage"
+        },
+        {
+            "query": "monster with blindsight and resistance to magic in flower-laden areas",
+            "variant": "creature that has blindsight and magic resistance found in flower-filled areas"
+        },
+        {
+            "query": "Mortifera combat tactics for grappling and area poison damage",
+            "variant": "combat strategies for Mortifera using grappling and poison attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Pit Fiend",
+    "queries": [
+        {
+            "query": "large devil with flaming eyes and massive wings",
+            "variant": "large demon with flames in its eyes and huge wings"
+        },
+        {
+            "query": "red scaly monster that commands infernal armies",
+            "variant": "monster with red scales that leads hellish forces"
+        },
+        {
+            "query": "powerful fiend with high armor class and spellcasting abilities",
+            "variant": "strong fiend with impressive AC and magical powers"
+        },
+        {
+            "query": "demon that uses fear aura and fire spells in battle",
+            "variant": "devil that employs fear and fire magic in fights"
+        },
+        {
+            "query": "muscular creature with scary presence and poison attacks",
+            "variant": "muscular beast with a frightening aura and toxin attacks"
+        }
+    ]
+}

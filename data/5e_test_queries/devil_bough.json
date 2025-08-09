@@ -1,0 +1,25 @@
+{
+    "name": "Devil Bough",
+    "queries": [
+        {
+            "query": "huge fiend with claw and bite attacks that regenerates health",
+            "variant": "huge fiend with claw and bite attacks that regains health"
+        },
+        {
+            "query": "creature that senses evil and grapples with a bite attack",
+            "variant": "a creature that can detect evil and grapples using its bite"
+        },
+        {
+            "query": "monster with high strength that walks slowly and has fire immunity",
+            "variant": "monster with strong physical power that walks 10 feet and is immune to fire"
+        },
+        {
+            "query": "neutral evil fiend limited by slow movement and powerful melee attacks",
+            "variant": "neutral evil fiend restricted by its slow speed and strong melee capabilities"
+        },
+        {
+            "query": "fiend with special abilities like Grinding Maw and Like Calls to Like",
+            "variant": "fiend possessing abilities such as Grinding Maw and Like Calls to Like"
+        }
+    ]
+}

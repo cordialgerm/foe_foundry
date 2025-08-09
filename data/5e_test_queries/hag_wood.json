@@ -1,0 +1,25 @@
+{
+    "name": "Hag, Wood",
+    "queries": [
+        {
+            "query": "forest-dwelling fey monster with magic resistance",
+            "variant": "fey creature with magic immunity that lives in the woods"
+        },
+        {
+            "query": "cunning trickster creature with poison attacks",
+            "variant": "sneaky monster known for poison attacks and tricks"
+        },
+        {
+            "query": "medium-sized evil creature that can speak to plants",
+            "variant": "medium fey being capable of talking to plants and animals"
+        },
+        {
+            "query": "wooded environment hag with camouflage abilities",
+            "variant": "hag that camouflages in woodlands and blends in"
+        },
+        {
+            "query": "strong melee attacker that is resistant to spells",
+            "variant": "melee combat monster that can resist magical effects"
+        }
+    ]
+}

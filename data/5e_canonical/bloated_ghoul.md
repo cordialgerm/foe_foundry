@@ -1,6 +1,8 @@
 <MonsterName/>Bloated Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Bloated Ghoul is a Medium-sized undead creature that embodies a sinister force with its neutral evil alignment. This creature has a stronger physique and greater resilience compared to typical ghouls, making it a notable adversary in combat. With an armor class of 14, it has good defense due to its natural armor, and it possesses a total of 142 hit points, making it quite durable. Its challenge rating of 6 indicates that it is a formidable opponent, suitable for parties of varied levels. The Bloated Ghoul's strengths lie in its solid Constitution and its unique abilities that enhance its survivability and damage potential, while its weaknesses include modest Dexterity and Intelligence scores.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The "Hideous Feast" special action allows the Bloated Ghoul to consume a corpse 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bloated Ghoul
 
 *Medium* *Undead* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Hideous Feast:** The bloated ghoul feeds on a corpse within 5 feet of it that is less than 1 week old. It regains 1d8 hit points per size category of the creature it consumes. For example, the ghoul regains 1d8 hit points when consuming a Tiny creature or 4d8 hit points when consuming a Large creature. The bloated ghoul can’t use Hideous Feast on a corpse if it or another bloated ghoul has already used Hideous Feast on the corpse.
 
 
+</statblock>
 
 

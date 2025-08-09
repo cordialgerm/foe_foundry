@@ -1,6 +1,8 @@
 <MonsterName/>Three-Headed Cobra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Three-Headed Cobra is a formidable Large Monstrosity that presents a unique threat in combat with its multiple heads and reactive abilities. With a high Armor Class of 16 and a significant pool of Hit Points amounting to 127, this creature is durable and can withstand considerable damage. Its Challenge Rating of 5 indicates that it provides a balanced threat for mid-level adventurers, offering 1,800 XP upon defeat. The cobra is particularly fast on land, with a walking speed of 40 feet and capable of swimming at 30 feet. Despite its physical prowess, it has low intelligence and charisma, which affects its interaction capabilities outside combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the cobra can utilize its Multiattack feature to make three separate 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Three-Headed Cobra
 
 *Large* *Monstrosity* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 15 ft., one target. Hit: 7 (1d6 + 4) piercing damage and the target must make a DC 15 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

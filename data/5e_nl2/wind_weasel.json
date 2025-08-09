@@ -1,0 +1,54 @@
+{
+    "name": "Wind Weasel",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "shapechanger",
+        "stealthy",
+        "whirlwind"
+    ],
+    "adjectives": [
+        "cunning",
+        "elusive",
+        "chaotic",
+        "agile"
+    ],
+    "description": "The Wind Weasel is a medium-sized fey that can shift between a small weasel form and a whirlwind form, showcasing a unique duality. It is characterized by its ability to move through tight spaces and evade attacks.",
+    "memorable": "Its ability to disguise itself as a dust devil makes it a challenging foe to detect before it strikes.",
+    "goals": "To confuse and elude enemies while striking quickly and retreating.",
+    "relations": "Often associated with other chaotic fey creatures or nature spirits.",
+    "environment": "Commonly found in forests, glades, or areas filled with natural wind currents.",
+    "strengths": "Excels in stealth, mobility, and multi-target damage with its whirlwind abilities.",
+    "weaknesses": "Has lower defenses with an armor class of 13 and relies heavily on evasion.",
+    "attacks": "Can perform a Multiattack with a bite and scythe claw, plus a devastating Whirling Leaves action in whirlwind form.",
+    "most_powerful_ability": "Whirling Leaves allows it to deal damage to all creatures in its space, potentially impacting multiple opponents.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses strong stealth and dexterity saving throws, making it hard to track and hit.",
+    "additional_information": [
+        "Can occupy a hostile creature's space without hindrance.",
+        "Immunity to effects that would restrain or grapple it while in whirlwind form.",
+        "Hidden In The Wind ability makes it hard to detect unless enemies succeed on a DC 15 Intelligence check.",
+        "Shapechanger ability allows it to revert back to its true form as a bonus action.",
+        "Windy Speed ability lets it resist the effects of the slow spell."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "slippery whirlwind creature with stealth",
+        "chaotic fey that can disguise as wind",
+        "agile weasel monster that evades attacks",
+        "fey creature that confuses in battle",
+        "medium size creature that shifts forms"
+    ]
+}

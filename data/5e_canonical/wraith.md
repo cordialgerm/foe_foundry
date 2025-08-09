@@ -1,6 +1,8 @@
 <MonsterName/>Wraith</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>67</HP>
 <summary>A Wraith is a malevolent, incorporeal undead creature that embodies death and darkness. It appears as a shadowy, wisp-like figure with glowing eyes, floating silently through the air. Wraiths are driven by a burning hatred for all life, and their touch drains the life force from living beings, turning their victims into wraiths or lesser undead. They are immune to most physical attacks and can pass through walls or objects, making them difficult to fight. Wraiths are often found in ancient crypts or haunted places, serving as guardians for cursed treasures or as agents of necromancers.</summary>
 
 <summary>The Wraith is a Medium Undead creature that embodies fear and death, often serving as a formidable opponent for adventurers. It has a significant challenge rating of 5, reflecting its potency and the threat it poses to any who cross its path. Wraiths are known for their incorporeal nature, allowing them to move freely through obstacles, and their ability to sap life from their victims. With an Armor Class of 13 and 67 hit points, they can withstand a moderate amount of damage but should not be underestimated due to their unique abilities and resistances. Notably, they are immune to necrotic and poison damage, making them especially dangerous in encounters with characters relying on such attack types. Wraiths excel in dealing necrotic damage and controlling the battlefield with fear, but their Light Sensitivity makes them vulnerable when exposed to bright light.</summary>
@@ -31,6 +33,7 @@ Finally, as a reaction, the Wraith can use Unravel Life when it sees a creature 
 
 Source: 5e_srd
 
+<statblock>
 ## Wraith
 
 *Medium undead, neutral evil*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ***Life Drain***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one creature. *Hit:* 21 (4d8+3) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
 
-***Create Specter***. The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
+***Create Specter***. The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wraith
 
 *Medium* *Undead*
@@ -108,6 +113,7 @@ Source: 5e_artisinal_monsters
 - **Create Specter:** The wraith touches a humanoid corpse it killed less than 1 day ago. The creatures spirit rises as a specter under the wraiths control.
 
 
+</statblock>
 
 
 
@@ -116,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wraith
 
 *Medium undead*
@@ -156,5 +163,6 @@ Source: 5e_artisinal_monsters
 
 - **Unravel Life.** When a creature the wraith can see within 30 feet of it and that isn’t a Construct or Undead regains HP, the wraith can corrupt the healing energies, halving the amount of healing that creature receives.
 
+</statblock>
 
 

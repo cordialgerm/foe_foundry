@@ -1,0 +1,25 @@
+{
+    "name": "Arcanaphage",
+    "queries": [
+        {
+            "query": "magic-consuming monster that flies and avoids attacks",
+            "variant": "monster that flies and consumes magical energy while evading hits"
+        },
+        {
+            "query": "agile creature that can counter spells and absorbs magic",
+            "variant": "creature that absorbs magic and counters spells, very agile"
+        },
+        {
+            "query": "floating monstrosity that is unaligned and resilient to magic",
+            "variant": "monstrosity that floats and is resistant to magical attacks, unaligned"
+        },
+        {
+            "query": "medium-sized magical monster that regenerates from spell power",
+            "variant": "medium magical creature that regains health from spells it consumes"
+        },
+        {
+            "query": "dangerous spell-eating creature that explodes when killed",
+            "variant": "creature that eats spells and explodes upon death, very dangerous"
+        }
+    ]
+}

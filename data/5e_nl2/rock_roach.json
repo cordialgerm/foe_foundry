@@ -1,0 +1,52 @@
+{
+    "name": "Rock Roach",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., burrow 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "acid attack",
+        "durable"
+    ],
+    "adjectives": [
+        "formidable",
+        "tough",
+        "unique"
+    ],
+    "description": "The Rock Roach is a sturdy medium beast with two brains, allowing it resilience in combat. Its brown, rocky exterior provides camouflage in rugged terrain, and it possesses powerful biting attacks coupled with acid-spitting abilities.",
+    "memorable": "The Rock Roach's Dual Brain allows it to function normally even when its head is destroyed, making it a remarkably tough opponent.",
+    "goals": "The Rock Roach seeks to defend its territory and attack intruders with its biting and acid attacks.",
+    "relations": "Rock Roaches may be encountered with other beasts or in underground environments.",
+    "environment": "Typically found in rocky or underground environments.",
+    "strengths": "Has resistance to bludgeoning damage and benefits from its Dual Brain ability.",
+    "weaknesses": "Low Intelligence and Charisma scores limit its tactical capabilities.",
+    "attacks": "Multiattack with bite or Acid Spit, dealing piercing and acid damage.",
+    "most_powerful_ability": "Dual Brain grants it resilience against Intelligence-based effects even if severely injured.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to effectively navigate and attack in total darkness.",
+    "skills": null,
+    "additional_information": [
+        "Can continue functioning normally if its head is removed or destroyed.",
+        "Deals lingering acid damage with its Acid Spit ability.",
+        "Robust physical attributes for combat effectiveness.",
+        "Uses its Constitution modifier for Intelligence saving throws as long as both brains are intact.",
+        "Average Dexterity allows for decent initiative and movement agility."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "beast that spits acid and bites",
+        "creature with two brains and burrow speed",
+        "durable monster in rocky environments",
+        "acidic attacker with high hit points",
+        "tough beast with a unique dual brain ability"
+    ]
+}

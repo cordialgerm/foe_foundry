@@ -1,6 +1,8 @@
 <MonsterName/>Giant Armadillo</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>10</HP>
 <summary>The Giant Armadillo is a Small beast that is unaligned, featuring a robust yet simple design suitable for encounters with low-level adventurers. It has decent armor and moderate hit points, making it a manageable opponent. With a primary focus on physical attacks, the Giant Armadillo utilizes its claws for damage and possesses a unique defensive ability. However, its weaknesses include a low Dexterity and subpar Intelligence, which make it less agile and less capable in non-physical interactions. Overall, it serves as a minor threat that can surprise players with its resilience when tucking into its shell.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Giant Armadillo is a creature that emphasizes defense over offense,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Armadillo
 
 *Small* *Beast* *unaligned*
@@ -43,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Tuck In:** The giant armadillo tucks its entire body into its shell, forming an armored ball. While in this form, it moves by rolling around, it has resistance to bludgeoning, piercing, and slashing damage, and it can’t take the Attack action or burrow. The giant armadillo can return to its true form as a bonus action.
 
 
+</statblock>
 
 

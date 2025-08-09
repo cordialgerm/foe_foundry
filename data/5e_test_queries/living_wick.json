@@ -1,0 +1,25 @@
+{
+    "name": "Living Wick",
+    "queries": [
+        {
+            "query": "small construct with a lit wick that can use fire attacks",
+            "variant": "tiny construct that has a burning wick and can perform fire attacks"
+        },
+        {
+            "query": "creature that operates on a wick and is vulnerable to flames",
+            "variant": "monster that functions using a wick and is weak against fire"
+        },
+        {
+            "query": "animated wax figure that emits light and burns itself out over time",
+            "variant": "living wax creature that shines light and runs out of power after a while"
+        },
+        {
+            "query": "magical being made of wax that obeys its creator and has fire immunity",
+            "variant": "enchanted wax entity that follows its master and is immune to fire"
+        },
+        {
+            "query": "living construct that weakens each day it is active and can ignite",
+            "variant": "animated construct that diminishes daily while active and can set things on fire"
+        }
+    ]
+}

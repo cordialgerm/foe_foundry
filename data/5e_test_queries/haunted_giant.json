@@ -1,0 +1,25 @@
+{
+    "name": "Haunted Giant",
+    "queries": [
+        {
+            "query": "massive ghostly giant that attacks with advantage",
+            "variant": "huge spirit giant that strikes with advantage"
+        },
+        {
+            "query": "giant that can see invisible creatures and summon spirits",
+            "variant": "giant capable of seeing invisible beings and summoning ancestral spirits"
+        },
+        {
+            "query": "Haunted Giant abilities and low intelligence",
+            "variant": "Haunted Giant traits and poor intelligence"
+        },
+        {
+            "query": "chaotic giant with high armor class and bludgeoning attacks",
+            "variant": "chaotic giant having a high AC and blunt-force attacks"
+        },
+        {
+            "query": "ethereal giant that resists charm and fear with high hit points",
+            "variant": "spiritual giant immune to fear and charm with a lot of health"
+        }
+    ]
+}

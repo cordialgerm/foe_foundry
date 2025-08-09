@@ -1,0 +1,25 @@
+{
+    "name": "Aviere",
+    "queries": [
+        {
+            "query": "tiny celestial protector that heals and can return to life",
+            "variant": "small celestial guardian that provides healing and has a chance to resurrect"
+        },
+        {
+            "query": "celestial creature with vibrant light and healing abilities",
+            "variant": "divine creature that shines light and has support skills in healing"
+        },
+        {
+            "query": "Aviere abilities including rejuvenation and magic resistance",
+            "variant": "Aviere features such as divine revival and resistance against magic"
+        },
+        {
+            "query": "flying celestial that stabilizes allies and excels in performance",
+            "variant": "winged celestial that supports companions and is skilled in performance"
+        },
+        {
+            "query": "Aviere combat style focusing on slashing and fire damage",
+            "variant": "Aviere battle tactics involving slashing and fire attacks"
+        }
+    ]
+}

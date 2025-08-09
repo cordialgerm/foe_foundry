@@ -1,6 +1,8 @@
 <MonsterName/>Giant Octopus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>52</HP>
 <summary>The Giant Octopus is a massive, intelligent sea creature with long, flexible tentacles lined with powerful suction cups. Its body is soft and malleable, allowing it to squeeze through tight spaces, and its skin can change color to blend in with its surroundings. Giant Octopuses are stealthy predators, often ambushing their prey from hiding and ensnaring them with their tentacles. Once captured, the prey is crushed and consumed by its sharp beak. In addition to its strength, the Giant Octopus is a master of escape, able to squirt ink to create a cloud that obscures its retreat.</summary>
 
 <summary>The Giant Octopus is a large aquatic beast that excels in stealth and grappling opponents. With a moderate armor class of 11 and a total of 32 hit points, it can withstand some damage but is not particularly durable compared to larger creatures. Its challenge rating of 1 indicates that it is suitable for low-level adventurers. The Giant Octopus is agile in water, capable of moving quickly with a swim speed of 60 feet, while its walk speed is limited to 10 feet. Notably, the Giant Octopus possesses exceptional strength with a 16 in Strength, allowing it to effectively grapple and restrain foes. Its intelligence is low, but this creature compensates with proficient stealth and the ability to camouflage itself, making it a surprising threat in underwater encounters.</summary>
@@ -37,6 +39,7 @@ Overall, the Giant Octopus is a tactical creature that excels in aquatic environ
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Octopus
 
 *Large beast, unaligned*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Tentacles***. *Melee Weapon Attack:* +5 to hit, reach 15 ft., one target. *Hit:* 10 (2d6+3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.
 
-***Ink Cloud (Recharges after a Short or Long Rest)***. A 20- foot radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
+***Ink Cloud (Recharges after a Short or Long Rest)***. A 20- foot radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Octopus
 
 *Large* *Beast*
@@ -109,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Ink Cloud (1/Day):** If underwater, the octopus exudes a cloud of ink in a 20-foot-radius sphere, extending around corners. The area is heavily obscured for 1 minute unless dispersed by a strong current.
 
 
+</statblock>
 
 
 
@@ -117,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Octopus, Giant
 
 *Large beast*
@@ -154,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Ink Dash (Recharge 4–6).** When a creature the octopus can see deals damage to it, the octopus can release a 20-foot-radius cloud of ink all around itself, if it is underwater. The area is heavily obscured until the end of the octopus’s next turn, although a significant current can disperse the ink. Then, the octopus can swim up to its swimming speed. If it does so, it immediately releases any creatures it is grappling.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Ramag Portal Master</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>71</HP>
 <summary>The Ramag Portal Master is a medium neutral humanoid and a formidable spellcaster whose abilities are centered around manipulation of space and magic. With a challenge rating of 5, it serves as a mid-level adversary capable of both dealing significant damage and controlling the battlefield. Its strengths include its impressive spellcasting capabilities, particularly in crowd control and area denial, as well as its natural resistance to magic. However, its moderate armor class of 12, which can be increased to 15 with the use of mage armor, makes it somewhat vulnerable to physical attacks, particularly if caught off-guard. The Ramag’s intelligence and magical prowess make it a cunning opponent, one that can outmaneuver and outwit adventurers trying to close the distance.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Ramag also possesses the Dimensional Seal ability, which it recharges after 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ramag Portal Master
 
 *Medium* *Humanoid* *neutral*
@@ -56,5 +59,6 @@ Cantrips (at will): fire bolt, light, prestidigitation, shocking grasp
 - **Weave Dimensions:** The ramag creates two magical gateways in unoccupied spaces it can see within 100 feet of it. The gateways appear as shimmering, opaque ovals in the air. A creature that moves into one gateway appears at the other immediately. The gateways last for 1 minute, or until the ramag loses concentration on them as if concentrating on a spell.
 
 
+</statblock>
 
 

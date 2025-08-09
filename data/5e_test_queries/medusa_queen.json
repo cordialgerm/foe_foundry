@@ -1,0 +1,25 @@
+{
+    "name": "Medusa Queen",
+    "queries": [
+        {
+            "query": "tall monstrosity with snake hair and petrifying gaze abilities",
+            "variant": "tall monstoristy that has snake hair and can petrify foes"
+        },
+        {
+            "query": "agile creature that resides in dark areas and attacks with poison",
+            "variant": "nimble creature lurking in dark places that deals poison damage"
+        },
+        {
+            "query": "medium-sized monster that can charm and petrify adventurers",
+            "variant": "medium monster capable of charming and turning adventurers to stone"
+        },
+        {
+            "query": "creature with high perception skills that loves to ambush enemies",
+            "variant": "monster with great perception ability who enjoys ambushing opponents"
+        },
+        {
+            "query": "dangerous adversary with a multiattack that can petrify foes",
+            "variant": "threatening foe with multiple attacks capable of petrifying enemies"
+        }
+    ]
+}

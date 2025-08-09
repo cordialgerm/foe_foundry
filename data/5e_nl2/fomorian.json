@@ -1,0 +1,52 @@
+{
+    "name": "Fomorian",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "30 ft. walk",
+    "role": null,
+    "tags": [
+        "fey",
+        "huge",
+        "psychic"
+    ],
+    "adjectives": [
+        "powerful",
+        "mystical",
+        "formidable"
+    ],
+    "description": "The Fomorian is a huge fey creature known for its rugged appearance and magical abilities, often exerting a strong psychic influence over others.",
+    "memorable": "Renowned for its charm and control abilities with a fearsome gaze that psychologically challenges opponents.",
+    "goals": "To dominate its surroundings and charm creatures to serve its interests.",
+    "relations": "May interact with other fey creatures or serve dark lords in a mystical hierarchy.",
+    "environment": "Often found in enchanted forests or areas rich in magical energy.",
+    "strengths": "High physical strength with significant immunities to psychic damage and nonmagical weapon attacks.",
+    "weaknesses": "Reliance on charm abilities can be countered, especially by targeting its Eye Vulnerability.",
+    "attacks": "Can strike twice with a warhammer for devastating melee damage.",
+    "most_powerful_ability": "Charming Gaze can incapacitate enemies, while Mesmerizing Gaze restrains them, enhancing its control over the battlefield.",
+    "equipment": "Warhammer",
+    "senses": null,
+    "skills": "Possesses a strong skill in persuasion, making it a formidable negotiator.",
+    "additional_information": [
+        "Has Eye Vulnerability that can be exploited to disrupt its charm effects.",
+        "Immortal Nature allows it to endure without basic needs.",
+        "Can transform into a Medium humanoid form while in its lair, facilitating subterfuge.",
+        "Possesses immunities to nonmagical, non-silvered weaponry.",
+        "Passive perception of 12 indicates average awareness of surroundings."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge fey creature with charm powers",
+        "powerful monster with gaze abilities",
+        "fomorian tactics in battle",
+        "mystical giant that mesmerizes foes",
+        "fey creature that dominates its environment"
+    ]
+}

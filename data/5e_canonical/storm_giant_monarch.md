@@ -1,6 +1,8 @@
 <MonsterName/>Storm Giant Monarch</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>14</CR>
+<AC/>16</AC>
+<HP/>460</HP>
 <summary>The Storm Giant Monarch is a formidable creature classified as a Huge Giant, presenting a significant threat to adventurers in Dungeons & Dragons 5e. With a robust armor class of 16 and a staggering 460 hit points, the Storm Giant Monarch is designed to withstand considerable damage. It has a speed of 50 feet on land and a swimming speed of 50 feet, giving it flexibility in both aquatic and terrestrial environments. Its challenge rating of 14 indicates that it represents a high-level encounter, yielding 11,500 experience points upon defeat. Notably, the Storm Giant Monarch possesses immunity to lightning and thunder damage, resistance to cold damage, and it can effectively breathe air and water, making it an adept fighter in various terrains.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ When bloodied, the Storm Giant Monarch can use the Sword Sweep special action to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Giant Monarch
 
 *Huge* *Giant*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Stomp:** Melee Weapon Attack: +14 to hit, reach 5 ft., one Medium or smaller prone target. Hit: 19 (3d6 + 9) bludgeoning damage.
 
 
+</statblock>
 
 

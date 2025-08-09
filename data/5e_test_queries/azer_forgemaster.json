@@ -1,0 +1,25 @@
+{
+    "name": "Azer Forgemaster",
+    "queries": [
+        {
+            "query": "medium elemental creature with fire affinity and returning hammer",
+            "variant": "medium creature with fire affinity and a returning hammer"
+        },
+        {
+            "query": "fire-themed battlefield control monster that can teleport",
+            "variant": "battlefield control fire-themed monster that teleports"
+        },
+        {
+            "query": "creature immune to fire with fiery aura damaging nearby foes",
+            "variant": "fire immune creature with an aura that damages foes nearby"
+        },
+        {
+            "query": "monster that deals fire damage and vulnerable to cold",
+            "variant": "creature that deals fire damage and is cold vulnerable"
+        },
+        {
+            "query": "Azer Forgemaster abilities in combat and fire damage mechanics",
+            "variant": "Azer Forgemaster combat mechanics and fire damage abilities"
+        }
+    ]
+}

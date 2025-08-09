@@ -1,0 +1,50 @@
+{
+    "name": "Khargi",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 147,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft., fly 20 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "swarm",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "adaptive",
+        "venomous"
+    ],
+    "description": "The Khargi is a Huge Fiend with a distinctive presence, revealing its neutrality towards evil. It can be recognized by the swarms of stinging insects that protect it and burst forth upon its death.",
+    "memorable": "Its ability to summon swarms of insects and deal poison damage creates a uniquely terrifying encounter for adventurers.",
+    "goals": "The Khargi typically seeks to dominate and instill fear in its opponents through relentless attacks and swarm tactics.",
+    "relations": "The Khargi may serve more powerful fiends or command its own swarms of lesser insect fiends.",
+    "environment": "The Khargi can be found in dark, desolate places conducive to fiendish creatures, often terrorizing the weak.",
+    "strengths": "It has powerful poison attacks, a high hit point total, and the ability to fly, providing it with substantial battlefield control.",
+    "weaknesses": "Vulnerable to certain damage types, particularly nonmagical attacks; struggles with low Perception skills.",
+    "attacks": "Employs a combination of a Bite attack that deals piercing and poison damage, and Leg attacks that deal bludgeoning and poison damage.",
+    "most_powerful_ability": "The *Swarming Breath* allows it to unleash a cone of poisonous insects, dealing significant area damage to enemies.",
+    "equipment": null,
+    "senses": "It possesses blindsight out to 30 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Despite its formidable abilities, the Khargi has a notably poor Perception skill, limiting its situational awareness.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition",
+        "Resistance to fire damage and nonmagical bludgeoning, piercing, and slashing attacks",
+        "Can magically adapt to various damage types with *Adaptive Carapace*"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable flying fiend with insect swarms",
+        "huge poison dealing insect monster",
+        "adaptive fiend with swarm abilities",
+        "neutral evil monster that summons insects",
+        "creature with poisonous bite and swarm attacks"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Spawn of Akyishigal",
+    "queries": [
+        {
+            "query": "fiend that commands insectoid creatures and has poison immunity",
+            "variant": "fiend that can command insects and is immune to poison"
+        },
+        {
+            "query": "chaotic evil creature with magic resistance and a swarm ability",
+            "variant": "chaotic evil monster with resistant to magic and ability to summon swarms"
+        },
+        {
+            "query": "medium-sized fiend with a strong bite and sting attacks",
+            "variant": "medium fiend with powerful biting and stinging attacks"
+        },
+        {
+            "query": "creature with damage resistance to cold and fire that summons swarms",
+            "variant": "monster with resistance to cold, fire and can call upon swarms"
+        },
+        {
+            "query": "Spawn of Akyishigal actions including multiattack and swarming cough",
+            "variant": "actions of Spawn of Akyishigal like multiattack and swarming cough ability"
+        }
+    ]
+}

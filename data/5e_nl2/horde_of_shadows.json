@@ -1,0 +1,52 @@
+{
+    "name": "Horde of Shadows",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Large",
+    "hp": 90,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "shadow",
+        "horde"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "chaotic"
+    ],
+    "description": "The Horde of Shadows is a mass of swirling darkness, composed of numerous shadows that can overwhelm opponents. Its otherworldly presence is accentuated by its eerie movements and the ability to curse its targets.",
+    "memorable": "It can disperse into smaller shadows upon defeat and is significantly more dangerous in dimly lit environments.",
+    "goals": "Overwhelm and curse living beings in the darkness, avoiding direct confrontation when possible.",
+    "relations": "Often found among other types of undead, such as skeletons or zombies that might serve a necromancer.",
+    "environment": "Usually lurks in dimly lit or dark locales, such as tombs, abandoned ruins, or shadowy forests.",
+    "strengths": "Immune to necrotic and poison damage, possesses stealth capabilities, and can absorb attacks targeting single entities.",
+    "weaknesses": "Vulnerable to radiant damage and severely weakened by exposure to sunlight.",
+    "attacks": "Employs multiple claw attacks infused with necrotic energy that can curse its targets, severely impacting their combat abilities.",
+    "most_powerful_ability": "Horde Dispersal allows the horde to split into smaller shadows upon defeat, continuing the threat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in stealth with a notable +4 modifier, making it difficult to detect.",
+    "additional_information": [
+        "Area Vulnerability makes it susceptible to area-of-effect attacks.",
+        "Can pass through narrow openings due to its Amorphous ability.",
+        "Undead nature means it does not require air, food, or sleep.",
+        "Can hinder targets with curses that impose attack penalties.",
+        "Ambush tactics with strategic use of darkness and numbers."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mass of shadows cursing enemies",
+        "undead creature thriving in darkness",
+        "stealthy ambush monster made of shadows",
+        "horde of undead lurking in dim light",
+        "shadows that split into smaller creatures"
+    ]
+}

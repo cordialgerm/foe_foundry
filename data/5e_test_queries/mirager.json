@@ -1,0 +1,25 @@
+{
+    "name": "Mirager",
+    "queries": [
+        {
+            "query": "deceptive fey creature that can charm humanoids",
+            "variant": "fey creature that charms humanoids and is deceptive"
+        },
+        {
+            "query": "charming fey that excels in performance and deception skills",
+            "variant": "fey that is exceptionally good at performance and has deception skills"
+        },
+        {
+            "query": "medium fey with illusion abilities and necrotic damage attacks",
+            "variant": "fey of medium size that can use illusions and has attacks with necrotic damage"
+        },
+        {
+            "query": "neutral evil fey that manipulates opponents and alters appearance",
+            "variant": "fey that is neutral evil, alters its appearance, and manipulates enemies"
+        },
+        {
+            "query": "seductive fey that uses illusions and psychic damage",
+            "variant": "fey that is seductive and deals psychic damage while using illusions"
+        }
+    ]
+}

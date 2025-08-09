@@ -1,0 +1,50 @@
+{
+    "name": "Iron Ghoul",
+    "creature_type": "Undead",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 143,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 20 ft., burrow 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "ghoul",
+        "intimidating"
+    ],
+    "adjectives": [
+        "terrifying",
+        "relentless",
+        "powerful"
+    ],
+    "description": "Iron Ghouls are tough undead creatures, showcasing exceptional strength and resilience. They can attack with a bite, claws, or a glaive.",
+    "memorable": "This creature can inflict debilitating diseases and paralysis, making it a terrifying foe in combat.",
+    "goals": "The Iron Ghoul often acts as an enforcer of dark wills, relentlessly pursuing its foes.",
+    "relations": "Iron Ghouls may be encountered with other ghouls and are resistant to effects that turn undead.",
+    "environment": "Typically found in dark, foreboding places, often where other undead gather.",
+    "strengths": "Significant durability and high strength, capable of multiple attacks and inflicting severe conditions on opponents.",
+    "weaknesses": "Limited movement speed may put it at a disadvantage against ranged attackers.",
+    "attacks": "The Iron Ghoul can bite for piercing damage, claw for slashing damage, or strike with a glaive. It can also use a heavy crossbow for ranged attacks.",
+    "most_powerful_ability": "Its capacity to inflict diseases and paralysis on targets makes its attacks particularly dangerous.",
+    "equipment": null,
+    "senses": "Iron Ghoul has darkvision up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage and resistant to being charmed or exhausted.",
+        "Does not require air or sleep, making it a tireless hunter.",
+        "Advantage on saving throws against effects that turn undead."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with powerful paralysis attack",
+        "Iron Ghoul tactics in battle",
+        "creature that inflicts diseases on humanoids",
+        "slow moving undead that uses glaive",
+        "monster immune to poison and charm effects"
+    ]
+}

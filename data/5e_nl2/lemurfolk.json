@@ -1,0 +1,54 @@
+{
+    "name": "Lemurfolk",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 21,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walking speed of 20 feet",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "gliding",
+        "stealthy",
+        "agile"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "stealthy",
+        "poisonous"
+    ],
+    "description": "The Lemurfolk is a small humanoid creature with membranes between its limbs that enable it to glide gracefully. Its agile nature is complemented by its ability to perform acrobatic feats.",
+    "memorable": "The gliding ability allows the Lemurfolk to control its descent, making it a unique and tactical creature in encounters.",
+    "goals": "Lemurfolk typically seek to navigate their environment stealthily and may incapacitate foes using their blowgun.",
+    "relations": "Often found in communities or groups of similarly agile and stealthy creatures, they may interact with other small humanoids.",
+    "environment": "Typically found in jungles or dense forests where trees are abundant for gliding and stealthy movement.",
+    "strengths": "High dexterity enhances agility and acrobatic abilities; proficiency in Acrobatics and Stealth makes them skilled at stealthy maneuvers.",
+    "weaknesses": "Low charisma reduces their effectiveness in social interactions and persuasion.",
+    "attacks": "Can perform a melee attack with a slam for bludgeoning damage or use a blowgun for ranged attacks that can poison unsuspecting targets.",
+    "most_powerful_ability": "The Glide ability allows the Lemurfolk to fall safely and maneuver in the air, providing tactical advantages during combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Acrobatics and Stealth, allowing for exceptional agility and stealthy movement.",
+    "additional_information": [
+        "Notable gliding ability mitigates falling damage",
+        "Can incapacitate foes with a poisoned blowgun",
+        "Low armor class indicates vulnerability in combat",
+        "Utilizes acrobatic skills to navigate obstacles",
+        "Community-oriented with other agile creatures"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile small humanoid that glides",
+        "stealthy creature with a blowgun",
+        "lemur-like creature found in jungles",
+        "poisonous creature with acrobatic abilities",
+        "small monster that can glide and evade"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Elementalist",
+    "queries": [
+        {
+            "query": "humanoid spellcaster that controls fire and lightning",
+            "variant": "humanoid spell caster that controls fire and lighting"
+        },
+        {
+            "query": "elemental magic user wearing studded leather armor",
+            "variant": "element magic user in studded leather armor"
+        },
+        {
+            "query": "medium creature with resistance to fire and ability to cast spells",
+            "variant": "medium monster with fire resistance and spell casting ability"
+        },
+        {
+            "query": "magic-focused humanoid that can breathe elemental energy",
+            "variant": "humanoid focused on magic that can exhale elemental energy"
+        },
+        {
+            "query": "elementalist with stealth skills and low strength",
+            "variant": "elementalist having stealth abilities and weak strength"
+        }
+    ]
+}

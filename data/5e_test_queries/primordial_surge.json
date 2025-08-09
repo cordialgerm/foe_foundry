@@ -1,0 +1,25 @@
+{
+    "name": "Primordial Surge",
+    "queries": [
+        {
+            "query": "giant elemental monster that can restore life",
+            "variant": "elemental giant monster that restores life"
+        },
+        {
+            "query": "powerful elemental with the ability to create lush landscapes",
+            "variant": "powerful creature that creates lush landscapes and is elemental"
+        },
+        {
+            "query": "agile gargantuan creature that is immune to poison",
+            "variant": "gargantuan immune to poison that is very agile"
+        },
+        {
+            "query": "monster that deals heavy elemental damage and has high mobility",
+            "variant": "creature with high mobility and heavy elemental damage"
+        },
+        {
+            "query": "Primordial Surge abilities and physical traits",
+            "variant": "abilities and physical characteristics of Primordial Surge"
+        }
+    ]
+}

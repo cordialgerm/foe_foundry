@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Sea Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Gargantuan",
+    "hp": 518,
+    "ac": 22,
+    "srd": false,
+    "cr": "23",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "sea",
+        "mythical"
+    ],
+    "adjectives": [
+        "ancient",
+        "formidable",
+        "fearsome"
+    ],
+    "description": "The Ancient Sea Dragon is a gargantuan, powerful dragon with a majestic and intimidating presence, capable of dominating both air and sea battles. Its sleek, scaled form glistens like dark ocean waves, and its piercing eyes reflect a cunning intelligence and an aura of dread.",
+    "memorable": "This dragon's ability to breathe both air and water, combined with its devastating Tidal Breath attack and Frightful Presence, makes it a uniquely terrifying foe capable of overwhelming opponents with fear and raw power.",
+    "goals": "The Ancient Sea Dragon typically seeks to dominate its territory, instill fear in coastal settlements, and collect treasures from shipwrecks or defeated adversaries.",
+    "relations": "This dragon may have connections with other aquatic creatures, such as krakens, sea serpents, or powerful aquatic fey, and might be a rival to other dragons in its domain.",
+    "environment": "Usually found in deep oceans, coastal areas, or underwater caves, the Ancient Sea Dragon thrives in aquatic environments.",
+    "strengths": "Immunity to cold damage, high durability with substantial hit points, legendary resistance to avoid failed saving throws, and a powerful ability to wreak havoc on structures.",
+    "weaknesses": "Despite its strengths, the Ancient Sea Dragon has a low Dexterity score, making it more susceptible to tactical maneuvers that exploit its lack of agility.",
+    "attacks": "Utilizes frightening multiattacks including a powerful Bite that inflicts piercing and cold damage, swift Fin slashes for slashing damage, and a long-reaching Tail attack for bludgeoning damage.",
+    "most_powerful_ability": "Tidal Breath, which unleashes a torrent of frigid seawater that damages and displaces opponents, creating tactical advantages on the battlefield.",
+    "equipment": null,
+    "senses": "Has blindsight ranging 60 feet and passive perception of 27, indicating exceptional awareness in its surroundings.",
+    "skills": "Possesses a high perception skill, enhancing its ability to detect enemies and threats in its vicinity.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on saving throws three times a day.",
+        "Amphibious trait enables survival in both air and underwater.",
+        "Can deal double damage to objects and structures as a Siege Monster.",
+        "Frightful Presence can terrify creatures, creating chaos among foes.",
+        "Legendary actions provide tactical flexibility during combat."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive ocean dragon",
+        "terrifying deep sea creature",
+        "formidable aquatic dragon",
+        "powerful dragon with cold breath",
+        "ancient sea monster"
+    ]
+}

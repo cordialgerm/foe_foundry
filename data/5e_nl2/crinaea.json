@@ -1,0 +1,53 @@
+{
+    "name": "Crinaea",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 60 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "aquatic",
+        "poisoner"
+    ],
+    "adjectives": [
+        "cunning",
+        "aquatic",
+        "invisible"
+    ],
+    "description": "The Crinaea is characterized by its aquatic nature with a slightly humanoid appearance, capable of becoming invisible when submerged in water.",
+    "memorable": "It can poison water sources from a distance and turn invisible while submerged, presenting a strategic threat.",
+    "goals": "To guard its water source and use its abilities to ambush and poison its foes.",
+    "relations": "Typically found in areas near water, it may encounter other water-dwelling fey or creatures.",
+    "environment": "Aquatic environments or near water sources.",
+    "strengths": "Excellent stealth and the unique ability to poison water from a distance.",
+    "weaknesses": "Becomes fatigued if away from its water source for too long.",
+    "attacks": "Uses a dagger attack that deals both piercing and cold damage.",
+    "most_powerful_ability": "Crinaea\u2019s Curse allows it to poison nearby water, causing significant damage and the poisoned condition.",
+    "equipment": "Dagger",
+    "senses": "It has an average passive perception of 13.",
+    "skills": "Notable for its stealth, providing it advantageous ambush potential.",
+    "additional_information": [
+        "Innate spellcaster with a focus on poison and utility spells.",
+        "Can create or destroy water, enhancing its control over the environment.",
+        "Transforms into an invisible form when fully submerged.",
+        "Possesses resistance to fire damage.",
+        "Immune to poisonous conditions."
+    ],
+    "damage_types": [
+        "poison",
+        "cold"
+    ],
+    "spellcasting": "Can cast poison spray at will; also versatile with several utility spells including fog cloud and protection from poison.",
+    "test_queries": [
+        "clever aquatic fey that poisons water",
+        "invisible water creature with spells",
+        "skilled stealthy fey near water sources",
+        "dangerous fey that manipulates water",
+        "poisonous fey creature with aquatic abilities"
+    ]
+}

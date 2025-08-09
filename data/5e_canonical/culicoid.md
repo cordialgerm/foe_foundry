@@ -1,6 +1,8 @@
 <MonsterName/>Culicoid</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Culicoid is a large fiend characterized by its chaotic evil nature. It is a formidable opponent due to its high armor class of 18, substantial hit points totaling 190, and its ability to fly with a speed of 60 feet. The creature is known for its aggressive multiattack capability, allowing it to strike multiple times in one turn. With a challenge rating of 12, it provides significant experience upon defeat, making it a notable encounter for adventurers. The Culicoid possesses a variety of strengths, including damage immunities to poison, resistances to multiple elemental damage types, and exceptional mobility due to its ability to hover. However, its weaknesses include a lack of extensive magical attacks and a relatively low Intelligence and Charisma, which may limit its ability to engage in certain types of interactions. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ When it comes to its actions, the Culicoid can perform a Multiattack, allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Culicoid
 
 *Large* *Fiend* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Proboscis:** Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 14 (2d8 + 5) piercing damage plus 7 (2d6) poison damage. The target must succeed on a DC 16 Constitution saving throw or be poisoned for 1 minute. While poisoned, a creature must succeed on a DC 16 Wisdom saving throw at the start of each of its turns or spend its full turn scratching the rash. A poisoned creature can repeat the Constitution saving throw at the end of each of its turns, ending the poisoned condition on itself on a success.
 
 
+</statblock>
 
 

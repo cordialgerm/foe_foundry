@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Skeleton",
+    "queries": [
+        {
+            "query": "undead creature with shadowy aura that attacks using scimitars",
+            "variant": "creature that attacks with scimitars and has a shadowy aura"
+        },
+        {
+            "query": "medium undead with good dexterity and poison immunity",
+            "variant": "medium undead that is immune to poison and has high dexterity"
+        },
+        {
+            "query": "shadow creature that can swim and has necrotic damage effects",
+            "variant": "creature that swims and inflicts necrotic damage with its attacks"
+        },
+        {
+            "query": "neutral evil undead with ranged and melee attacks",
+            "variant": "undead that is neutral evil and uses both ranged and melee attacks"
+        },
+        {
+            "query": "tactical undead with multiattack and defensive capabilities",
+            "variant": "undead with multiattack that has strong defensive abilities"
+        }
+    ]
+}

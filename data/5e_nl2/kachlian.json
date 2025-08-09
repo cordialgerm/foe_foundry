@@ -1,0 +1,52 @@
+{
+    "name": "Kachlian",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 157,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 40 ft., hover, no ground movement",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "spellcaster",
+        "grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "challenging",
+        "soul-consuming"
+    ],
+    "description": "The Kachlian is a huge, formidable aberration with a distinctive presence, featuring three long tentacles for grappling its foes. Its body exudes an aura of dark power, underlining its neutral evil nature.",
+    "memorable": "The Kachlian embodies the ability to consume souls, preventing resurrection and adding a sense of urgency to encounters.",
+    "goals": "To dominate and manipulate its surroundings, often consuming the souls of its victims.",
+    "relations": "Often encountered alone, it may serve as a master of lesser aberrations or be found in the company of dark sorcerers.",
+    "environment": "Typically found in dark, secluded places, such as ancient ruins or underground lairs.",
+    "strengths": "High Constitution and solid Armor Class grant it durability, while flight allows it to avoid ground-based threats.",
+    "weaknesses": "Low Dexterity limits its agility, and it cannot move across the ground.",
+    "attacks": "Multiattack with tentacles, dealing significant bludgeoning damage and grappling targets.",
+    "most_powerful_ability": "Consume Soul prevents resurrection of slain foes for 24 hours unless the Kachlian is defeated.",
+    "equipment": null,
+    "senses": "Darkvision extends to 120 feet, allowing it to see in darkness as if it were bright light.",
+    "skills": null,
+    "additional_information": [
+        "Immune to stunned, paralyzed, and prone conditions.",
+        "Can cast spells as a 7th-level wizard with a variety of effects.",
+        "Tentacles can grapple targets of Large size or smaller."
+    ],
+    "damage_types": [
+        "necrotic",
+        "cold",
+        "lightning"
+    ],
+    "spellcasting": "Can cast a variety of spells, including crowd control and offensive spells like confusion and magic missile.",
+    "test_queries": [
+        "huge creature that consumes souls",
+        "dark aberration casting spells",
+        "tentacled monster with soul powers",
+        "creature immune to paralysis and stun",
+        "flying monster that grapples enemies"
+    ]
+}

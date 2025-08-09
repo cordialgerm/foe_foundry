@@ -1,0 +1,25 @@
+{
+    "name": "Hivebound",
+    "queries": [
+        {
+            "query": "small insect-like monster that can fly and control swarms",
+            "variant": "small flying insect creature that controls swarms and can attack"
+        },
+        {
+            "query": "monstrosity with high Constitution and ability to use poison attacks",
+            "variant": "monstrosity that has good Constitution and can deal poison damage"
+        },
+        {
+            "query": "creature with telepathic communication and natural armor",
+            "variant": "being that uses telepathy and has natural armor for protection"
+        },
+        {
+            "query": "Hivebound combat strategies using insect swarms",
+            "variant": "combat tactics of Hivebound involving swarms of insects"
+        },
+        {
+            "query": "monster that hides well and has a stinging breath attack",
+            "variant": "creature that can stealth effectively and has a breath attack with stinging effects"
+        }
+    ]
+}

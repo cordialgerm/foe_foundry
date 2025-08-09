@@ -1,0 +1,25 @@
+{
+    "name": "Alehouse Drake",
+    "queries": [
+        {
+            "query": "tiny dragon that uses charm and can breathe poison",
+            "variant": "small dragon that breathes poison and uses charm"
+        },
+        {
+            "query": "cunning dragon with incapacitating abilities that lives in alehouses",
+            "variant": "smart dragon with abilities to incapacitate found in taverns"
+        },
+        {
+            "query": "mischievous dragon known for deception and psychic damage",
+            "variant": "playful dragon famous for trickery and psychic attacks"
+        },
+        {
+            "query": "dragon with high agility and the ability to incapacitate enemies",
+            "variant": "dragon known for its agility and incapacitating powers"
+        },
+        {
+            "query": "chaotic dragon that attacks with slashing damage and can mock enemies",
+            "variant": "chaotic dragon dealing slashing damage and able to taunt"
+        }
+    ]
+}

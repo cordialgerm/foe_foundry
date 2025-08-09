@@ -1,0 +1,53 @@
+{
+    "name": "Red Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 17,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft. walking, climbing, 60 ft. flying",
+    "role": "Artillery",
+    "tags": [
+        "fire",
+        "dragon",
+        "fierce",
+        "elemental"
+    ],
+    "adjectives": [
+        "fierce",
+        "fiery",
+        "formidable",
+        "powerful"
+    ],
+    "description": "The Red Dragon Wyrmling is a Medium-sized dragon with a fierce presence. It is notable for its scales vividly colored in deep red, embodying the raw elemental power of fire. Its powerful build showcases a strong physique with exceptionally sharp claws and a menacing bite.",
+    "memorable": "Known for its devastating fire breath and powerful melee attacks, the Red Dragon Wyrmling strikes fear in adventurers, especially in fiery environments.",
+    "goals": "Typically seeks dominance in its territory, hoarding treasures, and can be very territorial.",
+    "relations": "Might associate or ally with other chromatic dragons or more powerful creatures of fire.",
+    "environment": "Usually found in volcanic regions or mountainous terrains where it can nest and thrive.",
+    "strengths": "Immunity to fire damage and capabilities in both melee and area-of-effect fire attacks with high damage potential.",
+    "weaknesses": "Average Dexterity reduces effectiveness in stealth and ranged combat.",
+    "attacks": "Bite attack dealing significant piercing damage plus fire damage, and a powerful Fire Breath exhaling a cone of fire that causes high damage.",
+    "most_powerful_ability": "Fire Breath, allowing it to unleash a devastating cone of fire in combat, inflicting massive damage to multiple targets.",
+    "senses": "Possesses blindsight with a range of 10 feet, enabling it to perceive its vicinity without relying on sight.",
+    "skills": "Excels in intimidation, making its threats very imposing with a +4 modifier.",
+    "additional_information": [
+        "Pounce ability allows it to knock targets prone for additional attacks.",
+        "Volcanic Tyrant ability grants immunity to poisonous gases from volcanic environments.",
+        "Blindsight enhances its combat effectiveness in low-visibility conditions.",
+        "High Strength value enables strong melee attacks, making it a dangerous opponent.",
+        "Durable with solid hit points and Armor Class for its Challenge Rating."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon with fiery breath attack",
+        "medium dragon immune to fire damage",
+        "fierce red dragon inhabiting volcanic areas",
+        "physically powerful dragon with knockdown ability",
+        "fire-themed creature with stunning attacks"
+    ]
+}

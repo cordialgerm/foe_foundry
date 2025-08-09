@@ -1,0 +1,52 @@
+{
+    "name": "Cacus Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "fire",
+        "giant",
+        "chaotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "dangerous"
+    ],
+    "description": "A huge giant characterized by massive physique and a terrifying presence, often associated with fire and chaos.",
+    "memorable": "The Cacus Giant's capacity to unleash fire upon death creates a hazardous environment for its foes.",
+    "goals": "To dominate its surroundings and eliminate any threats through brute force and fiery attacks.",
+    "relations": "Might be encountered alongside other chaotic creatures or serve as a protector of chaotic realms.",
+    "environment": "Often found in mountainous or volcanic regions where fire is prevalent.",
+    "strengths": "High Strength and Constitution scores enable powerful melee attacks and exceptional endurance.",
+    "weaknesses": "Low Dexterity and Intelligence scores hinder mobility and tactical capabilities.",
+    "attacks": "Can make two greatclub strikes from 10 feet away or hurl massive rocks for devastating damage from a distance.",
+    "most_powerful_ability": "Fire Breath, exhaling fire in a 30-foot cone to damage multiple targets severely.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 15, making it quite aware of its surroundings.",
+    "skills": "Proficient in Perception and Survival, which enhances its awareness and survival skills in the wilderness.",
+    "additional_information": [
+        "Immunity to fire damage grants it extra protection in combat.",
+        "The Final Breath ability causes area damage upon its death.",
+        "Can reach attacking enemies from afar by hurling rocks.",
+        "Has decent endurance with 138 hit points.",
+        "Good Wisdom score results in reasonable situational awareness."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic giant immune to fire",
+        "giant with fiery breath weapon",
+        "hulking giant that attacks with a club",
+        "Cacus Giant's fiery death breath",
+        "enormous giant in volcanic regions"
+    ]
+}

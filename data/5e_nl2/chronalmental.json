@@ -1,0 +1,53 @@
+{
+    "name": "Chronalmental",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 142,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "elemental",
+        "time",
+        "combat",
+        "manipulation"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Chronalmental is a large elemental embodying time, notable for its substantial hit points and high agility with an exceptional Dexterity score.",
+    "memorable": "Its ability to manipulate time and heal itself during effects like slow or haste makes it a unique adversary.",
+    "goals": "Engage in combat while manipulating the flow of time.",
+    "relations": "Can be found alongside other elementals or creatures that have abilities related to time.",
+    "environment": "Often found in locations where the fabric of time is unstable or elemental entities gather.",
+    "strengths": "High resilience with immunities to poison and nonmagical physical attacks.",
+    "weaknesses": "Relatively low Intelligence and Charisma, limiting its social interactions.",
+    "attacks": "Three Slam attacks with considerable bludgeoning damage, enhancing its melee presence.",
+    "most_powerful_ability": "The ability to stun an opponent and send them outside the flow of time.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, drink, or sleep.",
+        "Automatically succeeds on saving throws against slowing or hasting effects.",
+        "Can heal itself when impacted by time manipulation spells.",
+        "Capable of teleporting to avoid attacks.",
+        "Gains advantages in actions and speed when it steals time."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful elemental that manipulates time",
+        "large creature immune to nonmagical attacks",
+        "formidable time-manipulating elemental",
+        "agile creature with slam attack abilities",
+        "neutral elemental with extraordinary resilience"
+    ]
+}

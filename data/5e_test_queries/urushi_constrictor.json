@@ -1,0 +1,25 @@
+{
+    "name": "Urushi Constrictor",
+    "queries": [
+        {
+            "query": "large jungle monster with poison abilities",
+            "variant": "big jungle creature that has poisonous attacks"
+        },
+        {
+            "query": "ambush predator with jungle camouflage and blinding poison",
+            "variant": "sneaky predator that can hide in jungles and uses blinding poison"
+        },
+        {
+            "query": "constrictor snake that inflicts disease and ambushes adventurers",
+            "variant": "snake that grapples and spreads disease, ambushing adventurers"
+        },
+        {
+            "query": "monstrous creature with high Constitution and stealth in jungles",
+            "variant": "big monster with great health and can hide well in jungles"
+        },
+        {
+            "query": "Urushi Constrictor's weakness to fire and poison damage abilities",
+            "variant": "vulnerability to fire and abilities that deal poison damage of Urushi Constrictor"
+        }
+    ]
+}

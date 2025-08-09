@@ -1,0 +1,25 @@
+{
+    "name": "Derro, Voidwarped",
+    "queries": [
+        {
+            "query": "small humanoid that can fly and has psychic attacks",
+            "variant": "humanoid that is small and flies with psychic abilities"
+        },
+        {
+            "query": "creature immune to cold and specializes in magical damage",
+            "variant": "monster that is immune to cold and focuses on magical attacks"
+        },
+        {
+            "query": "darkvision humanoid with a weakness to sunlight and high dexterity",
+            "variant": "humanoid with 120 feet darkvision and poor in sunlight plus high dexterity"
+        },
+        {
+            "query": "neutral evil creature with potent spell-like abilities and increased damage",
+            "variant": "creature of neutral evil alignment that has powerful spell abilities and enhances damage"
+        },
+        {
+            "query": "monster that can incapacitate enemies and has a tendency to manipulate",
+            "variant": "creature that can disable foes and often uses manipulation tactics"
+        }
+    ]
+}

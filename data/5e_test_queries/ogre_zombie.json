@@ -1,0 +1,25 @@
+{
+    "name": "Ogre Zombie",
+    "queries": [
+        {
+            "query": "large undead creature with a mindless state and great strength",
+            "variant": "large undead being that has a decaying state and immense power"
+        },
+        {
+            "query": "slow zombie that can resist damage and attacks with a Greatclub",
+            "variant": "sluggish undead that can take damage and hits with a large weapon"
+        },
+        {
+            "query": "undead ogre that does not need food or air and can take multiple hits",
+            "variant": "ogre zombie that requires no sustenance and can endure several attacks"
+        },
+        {
+            "query": "monster with high strength and low dexterity, often used by necromancers",
+            "variant": "creature with strong melee capabilities and poor agility, commonly employed by dark wizards"
+        },
+        {
+            "query": "zombie that regains hit points with its bite and is resistant to poison",
+            "variant": "undead creature that restores health through biting and is immune to poison damage"
+        }
+    ]
+}

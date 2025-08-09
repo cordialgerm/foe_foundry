@@ -1,0 +1,55 @@
+{
+    "name": "Psychopomp Angel",
+    "creature_type": "Celestial",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 68,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., fly 60 ft.",
+    "role": "Support",
+    "tags": [
+        "angel",
+        "celestial",
+        "psychopomp",
+        "guardian"
+    ],
+    "adjectives": [
+        "radiant",
+        "immortal",
+        "protective",
+        "strategic"
+    ],
+    "description": "The Psychopomp Angel embodies guidance and protection in the afterlife, showcasing a celestial form with potential glowing features, standing ready to assist souls transitioning between worlds.",
+    "memorable": "Its unique ability to manipulate the conditions of others and protect allies makes it a significant presence on the battlefield, transcending its physical form.",
+    "goals": "To guide and protect souls in their transition between the realms, while maintaining order and balance.",
+    "relations": "May serve deities related to the afterlife, could be found alongside other celestial beings or guardians.",
+    "environment": "Typically found in the realms of the afterlife or places where guidance and protection are needed.",
+    "strengths": "Has resistance to necrotic and radiant damage, along with condition immunities that enhance its survivability.",
+    "weaknesses": "Reliance on specific spells makes it vulnerable to effects that can bypass its defenses.",
+    "attacks": "Employs its multiattack with Lantern Flail for both bludgeoning and radiant damage, enhancing attacks against fiends and undead.",
+    "most_powerful_ability": "Divine Dictum can deal significant radiant damage in an area and potentially free allies from harmful mental conditions.",
+    "equipment": "Lantern Flail",
+    "senses": "Possesses darkvision up to 120 feet and has a passive Perception score of 15, indicating average detection capabilities.",
+    "skills": "Has proficiency in perception, allowing for decent awareness of hidden threats.",
+    "additional_information": [
+        "Can adapt radiant damage to necrotic when advantageous.",
+        "Immortal nature allows it to remain active without physical needs.",
+        "Can mask its celestial nature in environments dominated by fiends.",
+        "Grants temporary hit points and protection from undead and fiend attacks with Spirit Usher.",
+        "Carries the authority of its patron deity, allowing it to free souls from binding contracts."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "guardian of souls",
+        "celestial support creature",
+        "protective angel",
+        "psychopomp abilities",
+        "radiant damage angel"
+    ]
+}

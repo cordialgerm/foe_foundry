@@ -1,0 +1,25 @@
+{
+    "name": "Far Darrig",
+    "queries": [
+        {
+            "query": "small fey creature that summons woodland allies",
+            "variant": "small fey that can call woodland creatures"
+        },
+        {
+            "query": "agile monster with antler glaive and darkvision",
+            "variant": "agile creature with darkvision and antler glaive"
+        },
+        {
+            "query": "neutral fey that excels in nature-related skills and combat",
+            "variant": "neutral creature strong in nature skills and combat"
+        },
+        {
+            "query": "woodland creature with high charisma and forest abilities",
+            "variant": "creature from the woods with high charisma and abilities in forests"
+        },
+        {
+            "query": "fey with good melee attacks and mobility in forests",
+            "variant": "fey creature with strong melee skills and mobility in woodland"
+        }
+    ]
+}

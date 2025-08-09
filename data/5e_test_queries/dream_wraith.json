@@ -1,0 +1,25 @@
+{
+    "name": "Dream Wraith",
+    "queries": [
+        {
+            "query": "undead creature that moves through walls and thrives in darkness",
+            "variant": "darkness-loving undead that can pass through walls"
+        },
+        {
+            "query": "malevolent wraith that attacks with psychic damage",
+            "variant": "evil wraith that uses psychic attacks"
+        },
+        {
+            "query": "incorporeal flying monster with sunlight sensitivity",
+            "variant": "flying incorporeal creature that is sensitive to sunlight"
+        },
+        {
+            "query": "stealthy wraith that can turn foes unconscious with touch",
+            "variant": "wraith that makes enemies unconscious with a touch attack"
+        },
+        {
+            "query": "dream manipulator that reanimates humanoid corpses",
+            "variant": "creature that can animate dead humanoids and manipulate dreams"
+        }
+    ]
+}

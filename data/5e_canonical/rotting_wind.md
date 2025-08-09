@@ -1,6 +1,8 @@
 <MonsterName/>Rotting Wind</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>110</HP>
 <summary>The Rotting Wind is a formidable Large Undead creature embodying neutral evil traits. Its most notable power comes from its ability to inflict disease and decay, making it a dangerous opponent on the battlefield. With a high Dexterity score, it excels in speed, allowing it to navigate the terrain easily and evade attacks. Its ability to become invisible presents a significant challenge to any adventurer, as does its poisonous aura, which slowly corrupts the environment. While the Rotting Wind has a decent Armor Class and substantial Hit Points, making it resilient in combat, it may fall prey to strong magical attacks or effects that can bypass its immunities. This creature's challenge rating of 6 indicates it is a serious threat for adventurers who underestimate its abilities.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Rotting Wind can perform a Multiattack, making two Wind of Decay 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rotting Wind
 
 *Large* *Undead* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The rotting wind makes two Wind of Decay attacks. If both attacks hit one creature, the target must succeed on a DC 14 Constitution saving throw or contract the tomb rot disease (see the Tomb Rot trait).
 - **Wind of Decay:** Melee Weapon Attack: +8 to hit, reach 0 ft., one target in the rotting wind’s space. Hit: 12 (2d6 + 5) bludgeoning damage plus 10 (3d6) necrotic damage.
+</statblock>
 
 

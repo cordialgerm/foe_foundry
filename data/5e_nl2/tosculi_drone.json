@@ -1,0 +1,52 @@
+{
+    "name": "Tosculi Drone",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Small",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "lawful evil",
+        "tactical",
+        "swarm"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "cunning"
+    ],
+    "description": "The Tosculi Drone is a small humanoid creature characterized by its dexterous build and agile movements, enhanced by vestigial wings.",
+    "memorable": "Its Crowd Tactics ability allows it to work effectively in groups, gaining advantages in combat.",
+    "goals": "To serve the hive and support its queen through cooperative combat.",
+    "relations": "Often found with other Tosculi and serving the hive queen.",
+    "environment": "Typically found in hive structures or areas near its queen.",
+    "strengths": "Exceptional dexterity which provides agility and accuracy in combat.",
+    "weaknesses": "Low strength and charisma limit physical power and social interactions.",
+    "attacks": "Uses razor-sharp claws to deal slashing damage in melee combat.",
+    "most_powerful_ability": "The Glide ability allows it to maneuver effectively in combat and avoids falling damage.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 ft., aiding in low-light conditions.",
+    "skills": "Possesses average perception skills with a passive Perception of 11.",
+    "additional_information": [
+        "Can share space with other Tosculi for tactical advantages.",
+        "Can glide gracefully to avoid fall damage.",
+        "Has a strong connection to its hive queen, sensing her location.",
+        "Strategic and cunning in combat situations."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid with tactical abilities",
+        "agile creature that glides when falling",
+        "Tosculi monster serving a hive queen",
+        "cunning small creature with claw attacks",
+        "lawful evil creature with teamwork tactics"
+    ]
+}

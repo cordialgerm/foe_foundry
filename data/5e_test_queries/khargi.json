@@ -1,0 +1,25 @@
+{
+    "name": "Khargi",
+    "queries": [
+        {
+            "query": "large fiend that can fly and deals poison damage",
+            "variant": "large flying fiend that does poison damage"
+        },
+        {
+            "query": "Huge creature immune to poison living in dark environments",
+            "variant": "huge dark dweller immune to poison"
+        },
+        {
+            "query": "fiend that summons insect swarms and has a deadly infestation ability",
+            "variant": "fiend with insect swarm summoning and deadly infestation power"
+        },
+        {
+            "query": "Khargi tactics for engaging adventurers with poison attacks",
+            "variant": "tactics for the Khargi using poison on adventurers"
+        },
+        {
+            "query": "creature with high hit points that uses swarming breath in combat",
+            "variant": "monster with lots of hit points that uses swarming breath attack"
+        }
+    ]
+}

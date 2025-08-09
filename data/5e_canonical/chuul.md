@@ -1,6 +1,8 @@
 <MonsterName/>Chuul</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Chuul is a grotesque, amphibious creature resembling a massive crustacean. Its body is covered in thick, chitinous plates, with large pincers capable of crushing bone. Surrounding its maw are numerous writhing tentacles, which can paralyze its prey with a touch. Chuuls are ancient beings, often found lurking in swamps or the dark depths of the ocean. They are driven by a deep, alien intelligence and serve powerful, eldritch entities. Chuuls hunt by dragging their paralyzed victims into the water, where they drown and devour them. They are often employed as guardians for underwater ruins or other hidden places of power.</summary>
 
 <summary>The Chuul is a large aberration that serves as a formidable predator in aquatic environments. With an armor class of 16, it can withstand a good amount of damage, complemented by its 93 hit points derived from 11d10 plus 33, making it relatively resilient in combat. Its challenge rating of 5 indicates that it poses a moderate threat to a party of adventurers, granting 1,800 experience points upon defeat. The Chuul is particularly dangerous due to its ability to grapple and paralyze opponents, significantly hindering their ability to fight back. However, it does have weaknesses, including a low Dexterity score of 10, meaning its ability to dodge or evade attacks is average. With a strong Strength score of 18 and a decent Constitution of 16, the Chuul excels in physical combat, making it a powerful adversary in close quarters, especially in water.</summary>
@@ -33,6 +35,7 @@ Overall, the Chuul embodies a creature that thrives on grappling and manipulatin
 
 Source: 5e_srd
 
+<statblock>
 ## Chuul
 
 *Large aberration, chaotic evil*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Pincer***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled.
 
-***Tentacles***. One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Tentacles***. One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chuul
 
 *Large* *Aberration*
@@ -109,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** A grappled creature makes a DC 14 Constitution saving throw. On a failure  it is paralyzed for 1 minute. The creature repeats the saving throw at the end of each of its turns  ending the paralysis on a success.
 
 
+</statblock>
 
 
 
@@ -117,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chuul
 
 *Large aberration*
@@ -152,5 +159,6 @@ Source: 5e_artisinal_monsters
 
 - **Paralyzing Tentacles.** One creature grappled by the chuul must succeed on a DC 14 CON save or be poisoned for 1 minute. Until this poison ends, the creature is paralyzed. A poisoned creature can repeat the save at the end of each of its turns, ending the effect on itself on a success.
 
+</statblock>
 
 

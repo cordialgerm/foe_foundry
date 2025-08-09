@@ -1,0 +1,25 @@
+{
+    "name": "Soil Snake",
+    "queries": [
+        {
+            "query": "huge snake construct that can burrow in the ground",
+            "variant": "huge construct snake that can burrow underground"
+        },
+        {
+            "query": "strong ambushing creature immune to several conditions",
+            "variant": "powerful ambush monster that is immune to many conditions"
+        },
+        {
+            "query": "snake-like construct with high strength and bludgeoning attacks",
+            "variant": "construct resembling a snake with great strength and bludgeoning attacks"
+        },
+        {
+            "query": "creature that uses grassland camouflage and soil blast",
+            "variant": "monster that uses soil blast and has grassland camouflage ability"
+        },
+        {
+            "query": "ambushing construct with bite and tail whip attacks",
+            "variant": "ambush construct featuring bite and tail whip abilities"
+        }
+    ]
+}

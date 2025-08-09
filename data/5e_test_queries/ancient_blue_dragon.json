@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Blue Dragon",
+    "queries": [
+        {
+            "query": "magnificent dragon with lightning breath that rules the desert",
+            "variant": "dragon that rules the desert and breathes lightning, magnificent"
+        },
+        {
+            "query": "gargantuan dragon with scales like sapphires and can manipulate lightning",
+            "variant": "giant dragon with sapphire-like scales that controls lightning"
+        },
+        {
+            "query": "dragon that hides under sand and has powerful area attacks",
+            "variant": "creature that can conceal itself in sand and use strong area attacks"
+        },
+        {
+            "query": "ancient blue dragon that has legendary resistance and electric attacks",
+            "variant": "blue dragon with electric attacks and can resist spells"
+        },
+        {
+            "query": "desert-dwelling dragon with blinding abilities and cunning tactics",
+            "variant": "dragon that lives in the desert, uses blinding powers, and is very clever in battle"
+        }
+    ]
+}

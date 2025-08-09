@@ -1,0 +1,53 @@
+{
+    "name": "Cave Ogre",
+    "creature_type": "Giant",
+    "alignment": null,
+    "size": "Large",
+    "hp": 119,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "ogre",
+        "giant",
+        "cave"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "formidable"
+    ],
+    "description": "The Cave Ogre is a large giant known for its considerable physical strength and resilience, making it a formidable opponent in combat. It has a high strength stat, exceptional bulk, and darkvision that allows it to see in darkness.",
+    "memorable": "The ability to recover from conditions even when incapacitated makes this ogre uniquely tough and dangerous in battle.",
+    "goals": "The Cave Ogre typically seeks to dominate its territory and eliminate threats with brute force.",
+    "relations": "Cave Ogres may be encountered alone or as part of a larger group of giants, often being feared by weaker creatures in their territory.",
+    "environment": "Typically found in caves or hilly terrain, often in isolation from civilized areas.",
+    "strengths": "Notable for its high physical strength and durability, along with recovery abilities that enhance its survivability.",
+    "weaknesses": "Poor agility due to low dexterity, making it vulnerable to quick or agile opponents.",
+    "attacks": "The ogre uses a Greatclub for powerful melee strikes and has a Sweeping Strike to hit multiple nearby foes. It can also attack from a distance with Javelins.",
+    "most_powerful_ability": "Elite Recovery allows it to end conditions on itself even while unconscious, maintaining effectiveness during prolonged encounters.",
+    "equipment": null,
+    "senses": "The Cave Ogre has darkvision, enabling it to see in darkness up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "HP of 119 with a solid armor class of 12.",
+        "Can deal significant melee damage due to high strength.",
+        "Strong in melee combat but lacks ranged mobility.",
+        "Can push opponents away with Sweeping Strike, creating distance.",
+        "Commonly communicates in Giant and Common, adding to its intelligence."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong giant that recovers in battle",
+        "ogre with high strength and low agility",
+        "Large cave creature with melee attacks",
+        "giant that uses a club and javelins",
+        "Cave Ogre resilient in combat"
+    ]
+}

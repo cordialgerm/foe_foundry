@@ -1,0 +1,25 @@
+{
+    "name": "Infernal Centaur",
+    "queries": [
+        {
+            "query": "medium fiend that leads hell hounds and breathes fire",
+            "variant": "medium fiend that commands hell hounds and has fiery breath"
+        },
+        {
+            "query": "fiery monster with strong physical power and fire immunity",
+            "variant": "fire-based creature with great physical strength and immunity to fire"
+        },
+        {
+            "query": "centaur creature with darkvision and intimidation skills",
+            "variant": "centaur-like monster that has darkvision and skills in intimidation"
+        },
+        {
+            "query": "lawful evil centaur with enhanced melee attacks and fire breath",
+            "variant": "centaur that is lawful evil with powerful melee attacks and breath weapon"
+        },
+        {
+            "query": "creature with authority over fire creatures and pack tactics",
+            "variant": "monster that dominates fire-based creatures and uses pack tactics"
+        }
+    ]
+}

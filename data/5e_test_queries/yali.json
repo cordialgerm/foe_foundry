@@ -1,0 +1,25 @@
+{
+    "name": "Yali",
+    "queries": [
+        {
+            "query": "medium construct with high Strength that moves quickly",
+            "variant": "medium-sized construct that has a high Strength and fast movement"
+        },
+        {
+            "query": "combat-focused statue creature that can leap and knock opponents down",
+            "variant": "combat-oriented statue monster that can jump and knock foes prone"
+        },
+        {
+            "query": "immune to poison and psychic damage while resembling a statue",
+            "variant": "poison and psychic damage immune creature that looks like a statue"
+        },
+        {
+            "query": "powerful melee attacker that can hurl foes and leap long distances",
+            "variant": "strong melee opponent that can throw enemies and jump far distances"
+        },
+        {
+            "query": "Yali abilities include thunder damage and jumping",
+            "variant": "Yali has abilities that involve jumping and dealing thunder damage"
+        }
+    ]
+}

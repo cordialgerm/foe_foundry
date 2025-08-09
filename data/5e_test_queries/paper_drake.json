@@ -1,0 +1,25 @@
+{
+    "name": "Paper Drake",
+    "queries": [
+        {
+            "query": "small dragon that can transform into a book and understands written language",
+            "variant": "tiny dragon that transforms into a book and knows how to read"
+        },
+        {
+            "query": "dragon with slashing breath weapon and low strength, good dexterity",
+            "variant": "dragon that uses slashing breath and has weak strength but high dexterity"
+        },
+        {
+            "query": "guardian dragon that disguises as a regular book and has good durability",
+            "variant": "protective dragon that can look like a normal book with high hit points"
+        },
+        {
+            "query": "dragon that can fly short distances and uses clever strategies in combat",
+            "variant": "dragon with limited flying ability that employs smart tactics during fights"
+        },
+        {
+            "query": "creature known for blinding breath attack and unique folding ability",
+            "variant": "being famous for its breath attack that causes blindness and a special folding skill"
+        }
+    ]
+}

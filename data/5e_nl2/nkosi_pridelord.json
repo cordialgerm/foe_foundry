@@ -1,0 +1,49 @@
+{
+    "name": "Nkosi Pridelord",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 82,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "shapechanger",
+        "beast",
+        "lion"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "graceful"
+    ],
+    "description": "The Nkosi Pridelord embodies the power and grace of a lion, capable of transforming into a Large lion. In humanoid form, it wears studded leather armor.",
+    "memorable": "Its ability to change shape and unleash a powerful roar to empower allies makes it a unique and dangerous opponent.",
+    "goals": "To command and rally allies in combat while dealing significant damage to foes.",
+    "relations": "Related to other nkosi, which may be subordinate or allied creatures.",
+    "environment": "Typically found in open plains or savannah-like terrains.",
+    "strengths": "Exceptional Strength and Dexterity allow it to excel in melee combat with high damage output.",
+    "weaknesses": "Average Constitution, Intelligence, Wisdom, and Charisma limit its durability and magical influence.",
+    "attacks": "Can make multiple attacks using either its Bite or Mambele, with special abilities like Pridelord's Roar to enhance allies.",
+    "most_powerful_ability": "Pounce allows it to knock targets prone and follow up with a powerful Bite attack as a bonus action.",
+    "equipment": "Studded leather armor in humanoid form.",
+    "senses": "Has keen smell, giving it an advantage on perception checks that rely on smell.",
+    "skills": "Proficient in Survival skills, enhancing its tracking and wilderness abilities.",
+    "additional_information": [
+        "Can roar to give advantage to allies in combat.",
+        "Capable of dealing extra damage with melee attacks due to its Brute feature.",
+        "Moves exceptionally fast for a humanoid at 50 ft.",
+        "Loses the ability to communicate while in lion form."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid that transforms into a lion",
+        "powerful shapechanger with a roar ability",
+        "lion-like humanoid that can empower allies",
+        "brutal melee attacker with high mobility",
+        "formidable beast-like creature in savannah"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Spirit Lamp",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "spirit",
+        "light manipulation"
+    ],
+    "adjectives": [
+        "menacing",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Spirit Lamp is a medium undead creature that manipulates light and spirits, characterized by its ghostly appearance and glowing lantern.",
+    "memorable": "It can trap spirits and curse creatures, making it a formidable foe with strategic battlefield control.",
+    "goals": "To weaken and dominate its foes through manipulation of light and spirits.",
+    "relations": "Often associated with other undead or creatures of darkness.",
+    "environment": "Can be found in haunted locations or places with significant death.",
+    "strengths": "High Dexterity allows for agile combat, and it possesses multiple layers of strategic abilities.",
+    "weaknesses": "While it has immunities to several damage types, it can still be destroyed if its lantern is closed or harmed.",
+    "attacks": "The Spirit Lamp delivers necrotic damage with its Spirit Claw while also dealing fire damage with its Lantern Beam.",
+    "most_powerful_ability": "Its Lantern Spirits ability allows it to slow and damage creatures within its illuminated area, creating a field of danger.",
+    "senses": "It has a keen passive perception of 15, enhancing its awareness of its surroundings.",
+    "skills": "Proficient in Perception, catching details in its environment.",
+    "additional_information": [
+        "Immunity to necrotic, poison, and psychic damage.",
+        "Can\u2019t be surprised due to its Jumpy ability.",
+        "The lantern can trap spirits of creatures that die within its light.",
+        "Cursed creatures can become new Spirit Lamps if not freed after 30 days.",
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead that manipulates light and spirits",
+        "menacing creature with a powerful lantern",
+        "spirit haunting cursed darkness",
+        "chaotic undead with necrotic powers",
+        "monster that traps spirits in its light"
+    ]
+}

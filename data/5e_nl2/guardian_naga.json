@@ -1,0 +1,52 @@
+{
+    "name": "Guardian Naga",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 136,
+    "ac": 18,
+    "srd": true,
+    "cr": "10",
+    "movement": "40 ft. walk, swim 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "protector",
+        "spellcaster",
+        "serpent"
+    ],
+    "adjectives": [
+        "serpent-like",
+        "humanoid-faced",
+        "benevolent",
+        "wise"
+    ],
+    "description": "A large, serpent-like creature with a humanoid face, known for its wisdom and magical abilities.",
+    "memorable": "Unique ability to return to life after death, known for its magical defenses and healing.",
+    "goals": "Protect sacred sites and artifacts, provide guidance and counsel.",
+    "relations": "Often revered by creatures as a protector and guide.",
+    "environment": "Often found in sacred sites or ancient temples.",
+    "strengths": "Highly intelligent, skilled in divine magic, and possesses unique abilities like Rejuvenation and Forbiddance.",
+    "weaknesses": "Vulnerable to radiant damage and anti-magic effects.",
+    "attacks": "Can deliver a venomous bite with significant poison damage and spit poison at range.",
+    "most_powerful_ability": "Rejuvenation, allowing it to return to life in 1d6 days unless prevented by a wish spell.",
+    "senses": "Possesses heightened perception with a passive score of 18.",
+    "skills": "Highly skilled in social encounters due to its high Charisma and Wisdom.",
+    "additional_information": [
+        "Amphibious, can breathe both air and water.",
+        "Shapeshift ability allows transformation into a Medium humanoid or hybrid.",
+        "Spellcasting ability focused on protective and healing spells.",
+        "Forbiddance ability protects its lair and damages intruders.",
+        "Divine Strikes make its weapon attacks magical, adding extra damage."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "An 11th-level spellcaster with a wide range of cleric spells focused on protection and control.",
+    "test_queries": [
+        "large serpent-like guardian with magical abilities",
+        "naga that protects sacred sites and artifacts",
+        "intelligent magical creature that can return to life",
+        "humanoid faced serpent known for wisdom and spells",
+        "naga with deadly poison attacks and healing powers"
+    ]
+}

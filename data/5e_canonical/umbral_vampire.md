@@ -1,6 +1,8 @@
 <MonsterName/>Umbral Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>14</AC>
+<HP/>84</HP>
 <summary>The Umbral Vampire is a malevolent undead creature that embodies chaos and darkness, making it a formidable adversary. With its strong Dexterity and Charisma, it excels in stealth and manipulation, allowing it to sneak up on unsuspecting prey and inflict debilitating effects. It has a substantial amount of hit points, making it difficult to defeat in battle. However, it struggles in sunlight, where its power diminishes drastically due to its sensitivity to light. Its abilities and attacks focus on necrotic damage, the draining of strength, and the summoning of shadows, all of which can impose significant challenges for adventurers confronted by it.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Additionally, the Umbral Vampire can use the bonus action Shadow Stealth while i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Umbral Vampire
 
 *Medium* *Undead* *Chaotic Evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the umbral vampire takes the Hide action.
+</statblock>
 
 

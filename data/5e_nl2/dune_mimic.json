@@ -1,0 +1,52 @@
+{
+    "name": "Dune Mimic",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 13,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 15 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ambush",
+        "terrain",
+        "grappling"
+    ],
+    "adjectives": [
+        "formidable",
+        "deceptive",
+        "sand-covered"
+    ],
+    "description": "The Dune Mimic is a Huge monstrosity that disguises itself as ordinary sandy terrain, creating ambush opportunities. It has an amorphous form with adhesive properties to capture prey.",
+    "memorable": "Its ability to imitate the environment and engulf enemies makes it a unique threat.",
+    "goals": "Luring adventurers into its grasp and incapacitating them.",
+    "relations": "May be encountered with other desert creatures or as a guardian of hidden treasures.",
+    "environment": "Typically found in sandy deserts or arid regions.",
+    "strengths": "Immunity to acid and fire damage; effective grappler with ambush abilities.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks.",
+    "attacks": "Utilizes three Pseudopod attacks that can deal significant bludgeoning damage, with the option to engulf foes.",
+    "most_powerful_ability": "Engulf allows it to trap and harm creatures while restricting their movement and breathing.",
+    "senses": "Possesses tremorsense up to 30 feet, allowing it to detect vibrations in the ground.",
+    "skills": "Has a good passive Perception score of 14, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Can change shape to blend in with sandy environments.",
+        "Advantages on attack rolls against grappled creatures.",
+        "Can engulf multiple creatures at once.",
+        "Capable of hardening its surface to control who it grapples.",
+        "Remains motionless to disguise itself effectively."
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant sand creature that can engulf",
+        "ambushing monster in sandy terrain",
+        "terrain changing mimic in deserts",
+        "monster that resembles sandy objects",
+        "grappling ambusher that is immune to fire"
+    ]
+}

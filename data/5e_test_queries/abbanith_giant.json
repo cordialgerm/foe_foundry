@@ -1,0 +1,25 @@
+{
+    "name": "Abbanith Giant",
+    "queries": [
+        {
+            "query": "large earth giant that can burrow and detects vibrations",
+            "variant": "big giant that burrows in earth and senses vibrations"
+        },
+        {
+            "query": "giant creature with strong melee attacks and tower-like stature",
+            "variant": "large creature with powerful melee capabilities and giant stature"
+        },
+        {
+            "query": "neutral giant that does double damage to stone structures and counters spells",
+            "variant": "giant of neutral alignment that doubles damage to stone and counters magical spells"
+        },
+        {
+            "query": "giant with high strength and ability to detect disturbances in the ground",
+            "variant": "strong giant with the power to sense ground disturbances"
+        },
+        {
+            "query": "earth-based giant known for its attack advantage against constructs and elementals",
+            "variant": "giant tied to the earth that is stronger against constructs and elementals"
+        }
+    ]
+}

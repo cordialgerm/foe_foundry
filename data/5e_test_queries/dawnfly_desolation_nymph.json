@@ -1,0 +1,25 @@
+{
+    "name": "Dawnfly, Desolation Nymph",
+    "queries": [
+        {
+            "query": "large beast that can swim and burrow with a hinged maw attack",
+            "variant": "big creature that has swimming and burrowing abilities along with a hinged maw attack"
+        },
+        {
+            "query": "nature-themed creature that grapples opponents and blends into its surroundings",
+            "variant": "creature of nature that grabs foes and camouflages in its environment"
+        },
+        {
+            "query": "beast with acid damage abilities that thrives in natural terrain",
+            "variant": "creature that deals acid damage and flourishes in natural settings"
+        },
+        {
+            "query": "nimble creature that can swallow its prey and has low intelligence",
+            "variant": "agile beast able to consume its victims and possessing poor intelligence"
+        },
+        {
+            "query": "desolation nymph that can breathe underwater and attack with a water jet",
+            "variant": "desolation nymph able to inhale underwater and assault using a water jet"
+        }
+    ]
+}

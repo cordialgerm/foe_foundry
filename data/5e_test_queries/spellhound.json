@@ -1,0 +1,25 @@
+{
+    "name": "Spellhound",
+    "queries": [
+        {
+            "query": "large creature that targets spellcasters and disrupts magic",
+            "variant": "big creature that disrupts magic and targets spellcasters"
+        },
+        {
+            "query": "monster with keen senses and natural armor that hunts magic users",
+            "variant": "creature with sharp senses and natural armor that hunts magic users"
+        },
+        {
+            "query": "monstrosity with high attack strength and abilities against spellcasters",
+            "variant": "creature with strong attack power and abilities targeting spellcasters"
+        },
+        {
+            "query": "lawful neutral monster with a howl that affects magic",
+            "variant": "lawful-neutral creature that howls and impacts magic"
+        },
+        {
+            "query": "spell immune creature with an advantage against concentrated spells",
+            "variant": "creature immune to spells and has an advantage against concentrated magic"
+        }
+    ]
+}

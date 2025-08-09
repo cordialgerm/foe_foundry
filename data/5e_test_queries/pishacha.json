@@ -1,0 +1,25 @@
+{
+    "name": "Pishacha",
+    "queries": [
+        {
+            "query": "medium fiend that uses demonic possession and can shapeshift",
+            "variant": "medium-sized fiend who shapeshifts and uses demonic possession"
+        },
+        {
+            "query": "chaotic evil creature that is immune to poison and vulnerable to radiant",
+            "variant": "chaotic evil monster immune to poison but vulnerable to radiant damage"
+        },
+        {
+            "query": "fiend with high strength and wisdom that attacks with claws and bite",
+            "variant": "a fiend that has great strength and wisdom attacking using bite and claws"
+        },
+        {
+            "query": "creature that can become invisible and possesses humanoids",
+            "variant": "monster that turns invisible and gets to possess humanoid victims"
+        },
+        {
+            "query": "shapechanging fiend that prefers cold and dark environments",
+            "variant": "fiend that changes shape and enjoys cold and dark places"
+        }
+    ]
+}

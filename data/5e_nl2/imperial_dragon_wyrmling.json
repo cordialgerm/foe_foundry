@@ -1,0 +1,55 @@
+{
+    "name": "Imperial Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 17,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 60 ft., swim 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "amphibious",
+        "lightning",
+        "elemental"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "resilient",
+        "lightning-breathing"
+    ],
+    "description": "The Imperial Dragon Wyrmling is a resilient dragon that boasts a sleek form with scales reflecting its elemental affinity, embodying a notable presence in combat.",
+    "memorable": "Its Lightning Breath ability delivers a devastating area attack that can decimate foes, making it a unique threat in battle.",
+    "goals": "Typically seeks to dominate its territory or protect its lair from intruders.",
+    "relations": "Can be found alongside other dragons or elemental beings, often commanding lesser creatures.",
+    "environment": "Usually inhabits mountainous regions or areas near bodies of water.",
+    "strengths": "Possesses resistance to lightning and thunder damage, enhancing its durability against certain attacks.",
+    "weaknesses": "Dexterity is average, making it vulnerable to tactics that exploit its limited mobility.",
+    "attacks": "Utilizes a strong Bite attack for close combat and a powerful Lightning Breath for ranged area damage.",
+    "most_powerful_ability": "Lightning Breath creates a 30-foot line of lightning that inflicts significant damage on a failed save.",
+    "equipment": null,
+    "senses": "It has blindsight up to 10 feet, allowing it to sense creatures within that range without sight.",
+    "skills": "Notably skilled in Perception with a +5 modifier, making it adept at noticing threats.",
+    "additional_information": [
+        "Can breathe air and water, providing tactical versatility.",
+        "Innate ability to cast fog cloud for battlefield control.",
+        "Exceptional Strength stat of 19, contributing to its melee prowess.",
+        "Has good saving throw capabilities against various effects.",
+        "Average prowess in Dexterity and Wisdom."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Can cast fog cloud once per day without material components.",
+    "test_queries": [
+        "dragon that breathes lightning and water",
+        "medium dragon with lightning breath attack",
+        "imperial dragon with amphibious nature",
+        "formidable dragon found in mountains and water",
+        "resilient dragon with strong melee and spells"
+    ]
+}

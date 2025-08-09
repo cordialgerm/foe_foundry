@@ -1,0 +1,25 @@
+{
+    "name": "Helashruu",
+    "queries": [
+        {
+            "query": "huge monster with bludgeoning vulnerabilities and teleportation abilities",
+            "variant": "huge creature with teleporting powers and weaknesses to bludgeoning"
+        },
+        {
+            "query": "chaotic evil aberration that can trap and blind creatures",
+            "variant": "chaotic evil monster that traps and blinds other creatures"
+        },
+        {
+            "query": "high hit points and strong blast attack monster",
+            "variant": "creature with high health and powerful area attack"
+        },
+        {
+            "query": "flying creature with innate spellcasting and damage immunities",
+            "variant": "aerial monster with spellcasting abilities and immune to damage"
+        },
+        {
+            "query": "monstrous being with significant charisma and high perception skills",
+            "variant": "creature with excellent charisma and very high perception abilities"
+        }
+    ]
+}

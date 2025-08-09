@@ -1,0 +1,49 @@
+{
+    "name": "Otterfolk",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic good",
+    "size": "Small",
+    "hp": 18,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "swim 30 ft., walk 25 ft., climb 15 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "stealthy",
+        "playful"
+    ],
+    "adjectives": [
+        "playful",
+        "agile",
+        "chaotic",
+        "small"
+    ],
+    "description": "The Otterfolk is a small humanoid known for its playful and agile nature, characterized by its adeptness in aquatic environments.",
+    "memorable": "Unique special abilities enhance its survival and evasion capabilities, particularly in water and against reptilian foes.",
+    "goals": "To navigate its environment skillfully and engage in playful or strategic interactions.",
+    "relations": "Often encountered with amphibious or aquatic creatures.",
+    "environment": "Aquatic environments, often near rivers, lakes, or marshes.",
+    "strengths": "Excels in stealth and has advantages in combat when allies are nearby, particularly against reptilian foes.",
+    "weaknesses": "Relatively fragile with a low hit point total, making it less effective in direct confrontations.",
+    "attacks": "Utilizes Dagger and Atlatl Dart for melee and ranged attacks, respectively.",
+    "most_powerful_ability": "Secrete Oil allows it to escape grapples more easily, significantly enhancing its evasion tactics.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright light.",
+    "skills": "Has skilled proficiency in stealth and survival, making it adept at sneaking and navigating wilderness.",
+    "additional_information": [
+        "Can hold its breath for 15 minutes, making it excellent in aquatic situations.",
+        "Gains advantage on attack rolls when allies are nearby due to Pack Tactics.",
+        "Has a tactical edge against reptilian creatures with specific survival and intelligence advantages."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "playful small humanoid skilled in stealth",
+        "aquatic creature with slippery escape abilities",
+        "chaotic good creature that swims and climbs",
+        "otter-inspired humanoid with pack tactics",
+        "small amphibious creature good at evasion"
+    ]
+}

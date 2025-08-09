@@ -1,0 +1,52 @@
+{
+    "name": "Guardian",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 110,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 feet walking speed",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "protector",
+        "shadow",
+        "combatant"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "stealthy",
+        "protective"
+    ],
+    "description": "A large humanoid creature with notable physical attributes, it is equipped with a chain shirt and exhibits impressive Strength and Constitution.",
+    "memorable": "The Guardian can teleport through shadows, leaving a trail of ink-like smoke behind.",
+    "goals": "To serve as a powerful protector and defender in combat situations.",
+    "relations": "Related to shadow fey and other guardians; often operates in conjunction with stealthy creatures.",
+    "environment": "Typically found in dark or shadowy areas, where it can utilize its abilities to their fullest.",
+    "strengths": "Immunities to charm and fright, enhanced perception in darkness, and strong melee capabilities.",
+    "weaknesses": "Susceptible to sunlight, which imposes disadvantages on attack rolls and sight-based checks.",
+    "attacks": "Can make two melee attacks with a Pike or Javelin, dealing significant piercing damage.",
+    "most_powerful_ability": "Shadow Traveler allows the Guardian to vanish in shadows and reappear within 30 feet, enhancing its mobility.",
+    "equipment": "Pike and Javelin, utilized for ranged and melee attacks.",
+    "senses": "Possesses a keen sense of perception, granting advantage on perception checks in magical darkness.",
+    "skills": "Proficient in Athletics and Perception, making it an effective tracker and grappler.",
+    "additional_information": [
+        "Advantage on saving throws against being charmed.",
+        "Cannot be put to sleep by magic.",
+        "Disadvantage on attack rolls and sight-based perception checks in sunlight.",
+        "Multiattack feature for increased combat effectiveness.",
+        "Protective Interference reduces threats to allies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large humanoid guardian that defends allies",
+        "shadow creature with teleportation abilities",
+        "powerful protector that hates sunlight",
+        "Guardian with keen perception in darkness",
+        "formidable melee combatant with charm immunity"
+    ]
+}

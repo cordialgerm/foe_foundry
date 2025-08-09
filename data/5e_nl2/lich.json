@@ -1,0 +1,54 @@
+{
+    "name": "Lich",
+    "creature_type": "Undead",
+    "alignment": "any evil alignment",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 17,
+    "srd": true,
+    "cr": "21",
+    "movement": "30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "spellcaster",
+        "necromancer"
+    ],
+    "adjectives": [
+        "powerful",
+        "cunning",
+        "immortal",
+        "skeletal",
+        "arcane"
+    ],
+    "description": "A Lich is an undead spellcaster with a skeletal form wrapped in decayed robes and glowing eyes, embodying dark magic and timeless existence.",
+    "memorable": "The Lich's ability to return from death through its phylactery makes it a nearly immortal foe, feared for its mastery of necromancy and arcane spells.",
+    "goals": "Liches typically seek to increase their power, gain knowledge, and manipulate the living.",
+    "relations": "Often serves as a master of undead minions, could be encountered with other powerful undead or dark magic users.",
+    "environment": "Ancient towers or crypts, typically hidden away from the living.",
+    "strengths": "Highly intelligent, vast magical knowledge, capable of controlling legions of undead, and possesses legendary resistance.",
+    "weaknesses": "Dependent on a phylactery for its resurrection, vulnerable to nonmagical weapons.",
+    "attacks": "Employs necrotic and force damage attacks, paralyzing touch, and various devastating spells like Fireball and Finger of Death.",
+    "most_powerful_ability": "Rejuvenation allows a destroyed Lich to return with full hit points if it possesses its phylactery.",
+    "senses": "Possesses truesight with a range of 120 feet, enhancing its ability to detect hidden foes and magical effects.",
+    "skills": "Excels in arcana, history, and perception, providing an exceptional understanding of magical lore and the undead.",
+    "additional_information": [
+        "Can concentrate on two spells simultaneously.",
+        "Utilizes legendary actions to influence combat flow.",
+        "Has a variety of auras for offense and defense.",
+        "Immunities include poison damage and effects that turn undead.",
+        "Absorbs spell energy when countering enemy spells."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": "An 18th-level spellcaster with a wide array of powerful spells, including Fireball, Finger of Death, and Plane Shift.",
+    "test_queries": [
+        "undead spellcaster that can return from death",
+        "skeletal figure with glowing eyes and dark robes",
+        "powerful lich in ancient tower",
+        "necromancer that controls undead minions",
+        "intelligent undead with vast magical knowledge"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Matriarch Serpentine Lamia",
+    "queries": [
+        {
+            "query": "serpentine monster that uses deception and charm",
+            "variant": "deceptive serpentine monster that charms others"
+        },
+        {
+            "query": "large shadowy creature that can swim and climb",
+            "variant": "big stealthy creature capable of climbing and swimming"
+        },
+        {
+            "query": "monster with high charisma and intimidation skills",
+            "variant": "creature possessing strong charm and intimidation abilities"
+        },
+        {
+            "query": "manipulative snake-like being with spellcasting abilities",
+            "variant": "spellcasting snake-like being that manipulates"
+        },
+        {
+            "query": "crafty serpent monster with the ability to charm foes",
+            "variant": "clever serpent creature that can charm its enemies"
+        }
+    ]
+}

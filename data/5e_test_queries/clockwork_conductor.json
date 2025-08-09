@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Conductor",
+    "queries": [
+        {
+            "query": "small mechanical construct that enhances allies in battle",
+            "variant": "small construct that is mechanical and helps allies in combat"
+        },
+        {
+            "query": "clockwork creature with magical resistance that doesn't need to eat",
+            "variant": "mechanical creature immune to form alteration that doesn't require food"
+        },
+        {
+            "query": "support figure in combat with ability to boost attack rolls",
+            "variant": "ally in battle that enhances attack rolls and provides bonuses"
+        },
+        {
+            "query": "construct that can inspire friendly creatures with d4 bonus",
+            "variant": "mechanical being that inspires allies with a d4 advantage on rolls"
+        },
+        {
+            "query": "clockwork monster that deals bludgeoning and lightning damage",
+            "variant": "mechanical monster that inflicts bludgeoning and lightning types of damage"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Gloomflower",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 44,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 10 ft.",
+    "role": null,
+    "tags": [
+        "psychic",
+        "plant",
+        "confusion",
+        "damage"
+    ],
+    "adjectives": [
+        "tiny",
+        "defensive",
+        "offensive",
+        "psychic"
+    ],
+    "description": "The Gloomflower is a tiny, plant creature with an exceptional charisma and is primarily focused on psychic damage-inflicting abilities, featuring a unique blend of confusion and manipulation.",
+    "memorable": "Its ability to unleash horrifying visions and inflict psychic damage makes it a formidable foe that can disorient even the strongest of adventurers.",
+    "goals": "To confuse and incapacitate enemies while dealing psychic damage.",
+    "relations": null,
+    "environment": "typically found in dark, overgrown places",
+    "strengths": "High Charisma allows it to strongly influence foes through telepathy and psychic effects.",
+    "weaknesses": "Low Dexterity and Intelligence scores limit its agility and tactical capabilities.",
+    "attacks": "The Gloomflower makes psychic strikes from a distance, dealing significant psychic damage with its multiattack.",
+    "most_powerful_ability": "Corrupting Visions, which inflicts ongoing psychic damage and forces foes to attack others.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to sense nearby creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "Immune to being blinded, deafened, and frightened.",
+        "Can confuse and manipulate targets to attack others.",
+        "Capable of inflicting permanent hallucinations on reduced foes.",
+        "Defensive Blur effect makes it harder to hit.",
+        "Psychic Scream triggers area damage when injured."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that uses psychic abilities",
+        "tiny creature with horrifying visions in combat",
+        "psychic damage dealing plant in dark areas",
+        "Gloomflower tactics and abilities",
+        "plant monster that confuses opponents"
+    ]
+}

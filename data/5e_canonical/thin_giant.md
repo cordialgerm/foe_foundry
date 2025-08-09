@@ -1,6 +1,8 @@
 <MonsterName/>Thin Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Thin Giant is a formidable huge creature that embodies chaotic evil, making it a significant threat in any encounter. With an Armor Class of 16, this giant is moderately difficult to hit, while its massive hit points of 168 enable it to absorb a tremendous amount of damage before falling in battle. Its high Strength score of 23 (+6 modifier) allows for devastating melee attacks, while its Dexterity of 16 (+3 modifier) gives it decent agility and helps it avoid some attacks. The Thin Giant’s unique ability to contort its body allows it to navigate narrow spaces effectively, enhancing its strategic options in combat or surprise encounters. However, its Intelligence and Charisma scores are relatively low, which can impact its ability to interact socially or engage in complex problem-solving. The creature is particularly dangerous due to its ability to deal both piercing and necrotic damage, while also siphoning health from its enemies, making it a challenging opponent for adventurers.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Lastly, the giant can also perform a Claw attack, which has a +10 to hit, a reac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thin Giant
 
 *Huge* *Giant* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +10 to hit, reach 20 ft., one target. Hit: 13 (2d6 + 6) slashing damage.
 
 
+</statblock>
 
 

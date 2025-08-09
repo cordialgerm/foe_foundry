@@ -1,0 +1,52 @@
+{
+    "name": "Boneshard Wraith",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 15 ft., hover, fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "mobile",
+        "stealthy"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing",
+        "spectral"
+    ],
+    "description": "The Boneshard Wraith is a disembodied undead entity that strikes fear with its unsettling presence, featuring sharp bone fragments that hover around it and the ability to phase through solid matter.",
+    "memorable": "Its most terrifying aspect is the ability to rise as a Boneshard Wraith again if a creature dies while trapped in its powerful Boneshard Cyclone ability.",
+    "goals": "Lurking in shadows, it seeks to instill fear and incapacitate living creatures.",
+    "relations": "Often encountered with other undead creatures, it may serve as a harbinger of greater evils.",
+    "environment": "Commonly found in dark, haunted places or ruins.",
+    "strengths": "Immunity to necrotic and poison damage and various conditions, coupled with high mobility and stealth capabilities.",
+    "weaknesses": "Sensitive to sunlight, which imposes disadvantages on its attack rolls and perception checks.",
+    "attacks": "Utilizes long-range spectral claw attacks that can inflict exhaustion on its targets, and has the deadly Boneshard Cyclone ability.",
+    "most_powerful_ability": "Boneshard Cyclone, which can deal heavy damage and potentially cause a victim to rise as a Boneshard Wraith after death.",
+    "equipment": null,
+    "senses": "Possesses a passive perception score of 16, allowing it to detect hidden creatures or objects effectively.",
+    "skills": "Proficient in stealth and perception, making it an effective ambush predator.",
+    "additional_information": [
+        "Incorporeal Movement allows it to traverse through both creatures and objects.",
+        "It has advantage on stealth checks due to its wraith nature.",
+        "Capable of paralyzing targets upon successful dual attacks with its spectral claws.",
+        "Has significant resistances to elemental damage.",
+        "Immune to being frightened, paralyzed, and several other debilitating conditions."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead spectral creature",
+        "shadowy wraith with bone attacks",
+        "fearsome ghostly predator",
+        "mobile undead with paralyzing claws",
+        "creature that can turn victims into wraiths"
+    ]
+}

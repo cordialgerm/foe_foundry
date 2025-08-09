@@ -1,0 +1,25 @@
+{
+    "name": "Adult Black Dragon",
+    "queries": [
+        {
+            "query": "large black dragon that breathes acid and lives in swamps",
+            "variant": "big black dragon that spits acid and dwells in swamps"
+        },
+        {
+            "query": "fierce dragon with glossy black scales and high Armor Class",
+            "variant": "intimidating dragon with shiny black scales and a high AC"
+        },
+        {
+            "query": "cunning dragon that can blend into murky waters and grapples prey",
+            "variant": "smart dragon that can hide in muddy waters and holds prey"
+        },
+        {
+            "query": "cruel dragon known for its steady breath weapon and Legendary Resistance",
+            "variant": "malevolent dragon recognized for its continuous breath attack and powerful resistance"
+        },
+        {
+            "query": "intelligent dragon with darkvision and acid immunity",
+            "variant": "smart dragon who can see in the dark and is immune to acid"
+        }
+    ]
+}

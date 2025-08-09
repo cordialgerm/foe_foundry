@@ -1,0 +1,25 @@
+{
+    "name": "Phase Spider",
+    "queries": [
+        {
+            "query": "large spider that can shift between planes and has a venomous bite",
+            "variant": "big spider that shifts between the planes and bites with venom"
+        },
+        {
+            "query": "dark forest dwelling spider with ethereal abilities and ambush tactics",
+            "variant": "spider that lives in dark forests, using ethereal powers and ambush tactics"
+        },
+        {
+            "query": "monstrous creature that climbs walls and attacks with poison",
+            "variant": "huge creature that can climb and attacks with poisonous bites"
+        },
+        {
+            "query": "stealthy spider that can escape to the ethereal plane and deals poison damage",
+            "variant": "sneaky spider that shifts to the ethereal realm and inflicts poison damage"
+        },
+        {
+            "query": "ambush predator that uses webs and ethereal sight in combat",
+            "variant": "predatory spider that uses webs and can see into the ethereal plane during fights"
+        }
+    ]
+}

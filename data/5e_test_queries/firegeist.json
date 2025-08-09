@@ -1,0 +1,25 @@
+{
+    "name": "Firegeist",
+    "queries": [
+        {
+            "query": "small fire elemental that is weak against water",
+            "variant": "small elemental made of fire that is vulnurable to water"
+        },
+        {
+            "query": "fire spirit with high agility that thrives in flames",
+            "variant": "fire creature with high dexterity that lives in fire"
+        },
+        {
+            "query": "monster that uses flames to inflict fear and damage",
+            "variant": "creature that uses fire to cause fear and harm"
+        },
+        {
+            "query": "elemental creature sensitive to magical light",
+            "variant": "sensitive elemental to magic light"
+        },
+        {
+            "query": "entity with burning attacks that ignites targets",
+            "variant": "entity with attacks that catch targets on fire"
+        }
+    ]
+}

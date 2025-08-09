@@ -1,0 +1,53 @@
+{
+    "name": "Avalanche Screamer",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "burrow 20 ft., walk 40 ft., climb 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "chaotic",
+        "snow"
+    ],
+    "adjectives": [
+        "thunderous",
+        "piercing",
+        "ambush"
+    ],
+    "description": "The Avalanche Screamer is a large aberration with significant physical strength and the ability to manipulate terrain. It has a chaotic evil appearance combining characteristics suited for ambushing in snowy environments.",
+    "memorable": "Its thunderous scream can significantly damage and deafen foes, creating a chaotic battlefield environment.",
+    "goals": "To ambush and overwhelm foes with its powerful bite and thunderous abilities.",
+    "relations": "It may serve other chaotic creatures or entities linked to the cold or storms.",
+    "environment": "Typically found in snowy or mountainous regions.",
+    "strengths": "High physical strength and hit points, coupled with the ability to cause thunder damage and manipulate battle maneuvers.",
+    "weaknesses": "Low intelligence and charisma hinder strategic planning and social interactions, and its limited Dexterity affects agility.",
+    "attacks": "Can make a multiattack with one powerful bite and two leg strikes that can immobilize prey.",
+    "most_powerful_ability": "Its Scream ability unleashes a devastating thunderous shout that can damage and deafen multiple targets.",
+    "equipment": null,
+    "senses": "The creature has tremorsense with a range of 60 feet, enabling it to detect creatures through vibrations.",
+    "skills": "Excels in athletics and has proficiency in stealth, particularly in snowy environments due to its Snow Camouflage ability.",
+    "additional_information": [
+        "Resistant to cold damage and immune to frightened and prone conditions.",
+        "Can impale and restrain targets with its legs if it scores a critical hit.",
+        "Utilizes Snow Camouflage for enhanced stealth in snowy terrain.",
+        "Can grapple multiple creatures while being immobile.",
+        "Moderate speed limits its maneuverability despite its combat prowess."
+    ],
+    "damage_types": [
+        "thunder",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "snowy ambush monster",
+        "thunder scream creature",
+        "piercing damage aberration",
+        "chaotic evil snow beast",
+        "Avalanche Screamer abilities"
+    ]
+}

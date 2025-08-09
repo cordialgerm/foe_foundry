@@ -1,0 +1,52 @@
+{
+    "name": "Chill Haunt",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "cold damage",
+        "flyer"
+    ],
+    "adjectives": [
+        "frightening",
+        "agile",
+        "stealthy"
+    ],
+    "description": "The Chill Haunt is a medium-sized undead with incorporeal movement, making it able to pass through physical barriers. It has a ghostly appearance and emanates a chilling aura.",
+    "memorable": "Its unique ability to absorb fire damage for healing makes it a formidable foe in combat, especially against fire-using opponents.",
+    "goals": "To drain the life force of the living and instill fear.",
+    "relations": "Often found haunting cold or dark areas, it may accompany other undead creatures.",
+    "environment": "Typically found in cold, dark locations such as abandoned ruins or frozen wastelands.",
+    "strengths": "Immunity to cold, fire, necrotic, and poison damage, along with several condition immunities contributes to its resilience.",
+    "weaknesses": "Vulnerable to nonmagical attacks, which can limit its effectiveness against certain foes.",
+    "attacks": "Uses its Shivering Touch to deal cold and necrotic damage, causing ongoing cold damage over time if the target fails a saving throw.",
+    "most_powerful_ability": "Cryophobia, allowing it to ignore cold damage but potentially becoming frightened by its source.",
+    "equipment": null,
+    "senses": "Possesses darkvision to see in darkness, and a passive perception of 13 enables it to notice hidden foes.",
+    "skills": "Skilled in acrobatics, enhancing its ability to avoid attacks.",
+    "additional_information": [
+        "Can pass through creatures and objects, incurring damage if ending inside an object.",
+        "Resistance to several damage types makes it hard to defeat with normal attacks.",
+        "While low in strength, high dexterity allows for agile evasive maneuvers.",
+        "Its fear-inducing ability adds a strategic element in combat scenarios."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that drains life",
+        "ghostly cold creature with flight",
+        "creature that heals from fire attacks",
+        "agile undead that frightens enemies",
+        "monster with incorporeal movement and cold damage"
+    ]
+}

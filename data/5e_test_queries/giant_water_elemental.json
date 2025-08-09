@@ -1,0 +1,25 @@
+{
+    "name": "Giant Water Elemental",
+    "queries": [
+        {
+            "query": "large aquatic monster with grappling abilities and electrical damage",
+            "variant": "big water creature that can grapple and has lightning damage"
+        },
+        {
+            "query": "elemental being known for its fluid movement in water and dealing bludgeoning damage",
+            "variant": "water elemental famous for fluidity and slam attacks"
+        },
+        {
+            "query": "Huge creature found in aquatic environments that takes cold damage with reduced speed",
+            "variant": "big creature that lives in water and slows down when hit by cold attacks"
+        },
+        {
+            "query": "Giant creature with high hit points and damage resistances located in bodies of water",
+            "variant": "large monster with lots of hit points and resistant to damage found in water"
+        },
+        {
+            "query": "elemental that can control space and has immunity to poison",
+            "variant": "water elemental able to control area and immune to poisons"
+        }
+    ]
+}

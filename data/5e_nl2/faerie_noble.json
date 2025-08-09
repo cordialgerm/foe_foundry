@@ -1,0 +1,57 @@
+{
+    "name": "Faerie Noble",
+    "creature_type": "Fey",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 165,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 35 ft., fly 60 ft.",
+    "role": "null",
+    "tags": [
+        "Fey",
+        "spellcaster",
+        "noble",
+        "agile"
+    ],
+    "adjectives": [
+        "cunning",
+        "magical",
+        "versatile",
+        "evasive"
+    ],
+    "description": "The Faerie Noble is a Medium Fey creature that showcases innate magical powers, high Charisma, and remarkable mobility both in and out of combat.",
+    "memorable": "Its ability to change size and impose strong magical effects makes it a uniquely challenging opponent.",
+    "goals": "To control encounters using spells and manipulate its environment to gain the upper hand.",
+    "relations": "May be encountered with other fey creatures or as a powerful ally or adversary in the Feywild.",
+    "environment": "Typically found in enchanted forests or other mystical realms.",
+    "strengths": "Strong spellcasting abilities and condition immunities, along with high Dexterity and Charisma scores.",
+    "weaknesses": "Relies heavily on spells and magical abilities for combat effectiveness, making it vulnerable in physical confrontations.",
+    "attacks": "Uses Glittering Scimitars for melee attacks and a Gleaming Longbow for ranged attacks, dealing significant elemental damage.",
+    "most_powerful_ability": "The Evil Eye ability can impose debilitating effects such as sleep, fright, or poison.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 60 feet and a high passive Perception of 19.",
+    "skills": "Shows exceptional proficiency in Insight and Perception, making it adept in social interactions and awareness.",
+    "additional_information": [
+        "Immunities to being charmed, paralyzed, poisoned, or unconscious.",
+        "Can teleport up to 60 feet as a bonus action.",
+        "Innate spellcasting with a DC of 17 allows various useful spells without components.",
+        "Can change its size between Large, Medium, and Tiny for tactical advantages.",
+        "Has high Dexterity, allowing it to evade attacks effectively."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "psychic"
+    ],
+    "spellcasting": "Can cast spells at will such as Disguise Self, and has a variety of powerful spells like Geas and Polymorph available daily.",
+    "test_queries": [
+        "magical fey creature with versatile capabilities",
+        "noble fey that can change size during battle",
+        "faerie creature with strong spellcasting abilities",
+        "cunning fey with truesight and teleportation",
+        "fey with gaze attack and various elemental damage"
+    ]
+}

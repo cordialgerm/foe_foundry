@@ -1,6 +1,8 @@
 <MonsterName/>Crystallite</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Crystallite is a formidable Large Giant that embodies a unique combination of defensive and offensive capabilities, serving as a challenging opponent for adventurers. With a lawful neutral alignment, it carries out its actions with purpose and reasoning rather than emotion. The creature has a robust armor class of 15 due to its natural armor, and it presents a substantial amount of hit points at 90, which combines to make it a tough adversary in combat. Its challenge rating of 4 indicates that it provides a moderate challenge for a party of lower-level characters. Notably, the Crystallite exhibits immunities to poison damage and conditions, alongside resistances to cold and fire, which can significantly affect how players strategize against it.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Crystallite is a dangerous opponent whose unique abilities challeng
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crystallite
 
 *Large* *Giant* *lawful neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Calcify:** When it takes 5+ damage on a single turn it can reduce its hp max by an amount equal to damage taken and gains a +1 bonus to AC. Reduction and bonus last until it finishes a long rest. Can’t increase its AC above 20 using this.
 
 
+</statblock>
 
 

@@ -1,0 +1,54 @@
+{
+    "name": "Zombie",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 8,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "slow walking speed of 20 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "monster",
+        "zombie",
+        "horror"
+    ],
+    "adjectives": [
+        "slow",
+        "clumsy",
+        "resilient",
+        "mindless"
+    ],
+    "description": "A reanimated corpse, shambling and rotting, driven only by a desire to consume the living. Lacks intelligence and communicates only through actions.",
+    "memorable": "High resilience due to Undead Fortitude, allowing it to remain in battle even after taking lethal damage.",
+    "goals": "To consume the living and spread its undead nature.",
+    "relations": "May be encountered alongside other undead creatures or in service to dark sorcerers.",
+    "environment": "Commonly found in graveyards, ancient tombs, or among dark sorcery.",
+    "strengths": "Immune to poison damage and the poisoned condition, and can potentially survive lethal damage with Undead Fortitude.",
+    "weaknesses": "Lacks mobility, low Intelligence means predictable behavior.",
+    "attacks": "Can perform a Grab or Slam attack to restrain and damage opponents.",
+    "most_powerful_ability": "Undead Fortitude allows the Zombie to avoid falling unconscious when taking lethal damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": "Passive perception is low, making it somewhat oblivious to its surroundings.",
+    "additional_information": [
+        "Resistant to exhaustion and poisoned condition.",
+        "Can turn slain foes into new zombies after 24 hours.",
+        "Grapples targets effectively with some attacks.",
+        "Often encountered in large numbers, increasing its threat level.",
+        "Mindless and driven by instinct, making it predictable."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "slow shambling undead that eats living",
+        "mindless zombie with high resilience to damage",
+        "creature that turns slain foes into new zombies",
+        "undead monster that grapples and bites",
+        "zombie in ancient graveyard"
+    ]
+}

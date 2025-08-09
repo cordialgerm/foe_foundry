@@ -1,0 +1,25 @@
+{
+    "name": "Hill Giant Chief",
+    "queries": [
+        {
+            "query": "massive giant that uses bludgeoning attacks and controls the battlefield",
+            "variant": "huge giant that controls the battle and uses bludgeoning attacks"
+        },
+        {
+            "query": "gullible giant with powerful melee abilities living in hilly areas",
+            "variant": "giant that is gullible and has strong melee skills found in hills"
+        },
+        {
+            "query": "slow giant with high strength that can create difficult terrain",
+            "variant": "giant with low agility and strong strength that makes challenging terrain"
+        },
+        {
+            "query": "giant that can grapple enemies and throw rocks for long distances",
+            "variant": "hill giant that throws rocks and grapples foes from a distance"
+        },
+        {
+            "query": "huge brute with an armor class of 13 and high hit points",
+            "variant": "large brute has AC 13 and many hit points"
+        }
+    ]
+}

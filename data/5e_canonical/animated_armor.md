@@ -1,6 +1,8 @@
 <MonsterName/>Animated Armor (Animated Object)</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>33</HP>
 <summary>Animated Armor is a hollow suit of armor brought to life by magical forces. Its metal plates are polished but often show signs of age or battle damage, yet it moves with a silent, eerie grace. Lacking any visible occupant, the armor follows the commands of its creator without question. It can wield weapons and shields, mimicking the movements of a skilled warrior. Animated Armor is often used as a guardian, patrolling castles, ancient ruins, or wizard towers, tirelessly protecting its master's domain. It strikes without hesitation and is nearly indestructible by conventional means, as it feels no pain or fear.</summary>
 
 <summary>The Animated Armor is a Medium-sized construct that serves as a formidable guardian in combat situations. With an armor class of 18, it possesses excellent defenses, allowing it to withstand a fair amount of damage. With a hit point total of 31, it can sustain several attacks before being defeated. Its challenge rating of 1 indicates it is suitable for low-level adventurers, providing a manageable yet threatening encounter. Notable strengths of the Animated Armor include its immunity to poison and psychic damage, as well as its resistance to piercing damage, making it particularly effective against melee attackers. However, its intelligence, wisdom, and charisma scores are exceptionally low, limiting its interactions with characters that rely on social skills and magical effects. </summary>
@@ -47,6 +49,7 @@ Overall, the Animated Armor is designed to protect areas and can be surprisingly
 
 Source: 5e_srd
 
+<statblock>
 ### Animated Armor (Animated Object)
 
 *Medium construct, unaligned*
@@ -81,7 +84,8 @@ Constitution saving throw against the caster's spell save DC or fall unconscious
 
 ***Multiattack***. The armor makes two melee attacks.
 
-***Slam***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) bludgeoning damage.</statblock>
+
 
 
 
@@ -89,6 +93,7 @@ Constitution saving throw against the caster's spell save DC or fall unconscious
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Armor
 
 *Medium* *Construct*
@@ -120,6 +125,7 @@ Source: 5e_artisinal_monsters
 - **Weapon:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) bludgeoning  piercing  or slashing damage  depending on weapon.
 
 
+</statblock>
 
 
 
@@ -128,6 +134,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Armor
 
 *Medium construct*
@@ -163,5 +170,6 @@ Source: 5e_artisinal_monsters
 
 - **Helmet Bash (19 HP or Fewer).** The animated armor slams its helmet into a creature it can sense within 5 feet of it. The target must succeed on a DC 13 STR save or take 5 (2d4) bludgeoning damage and be knocked prone.
 
+</statblock>
 
 

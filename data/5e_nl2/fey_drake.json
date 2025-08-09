@@ -1,0 +1,52 @@
+{
+    "name": "Fey Drake",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 82,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 80 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "fey",
+        "spellcaster",
+        "ambusher"
+    ],
+    "adjectives": [
+        "mischievous",
+        "whimsical",
+        "chaotic",
+        "stealthy"
+    ],
+    "description": "A small dragon characterized by its graceful flight and mischievous demeanor, the Fey Drake has bright scales that shimmer in various colors, embodying the whimsical nature of fey creatures.",
+    "memorable": "Its ability to manipulate foes with spells and become invisible makes it a formidable and unpredictable opponent.",
+    "goals": "To play tricks, manipulate others, and exert whimsical chaos.",
+    "relations": "Often associated with other fey creatures and may be found working with or against them.",
+    "environment": "Typically found in enchanted forests or magical glades.",
+    "strengths": "High Dexterity and Charisma make it an excellent ambusher and spellcaster.",
+    "weaknesses": "Low Strength limits its physical attacks.",
+    "attacks": "Three quick bite attacks, each dealing piercing damage and potentially poisoning the target.",
+    "most_powerful_ability": "Bewildering Breath that charms enemies in a wide area, limiting their combat effectiveness.",
+    "equipment": null,
+    "senses": "Can see in darkness and has a passive perception of 16, making it quite aware of its surroundings.",
+    "skills": "Notable for its proficiency in stealth, arcana, deception, and perception, with exceptional sneakiness due to high Dexterity.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Superior Invisibility allows it to become invisible at will.",
+        "Innate spellcasting capability to cast various spells without components.",
+        "Can charm or control opponents through spells like dominate person and hypnotic pattern.",
+        "Weak physicality but powerful magical potential."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast spells at will like charm person, color spray, and grease; and three times a day can use hypnotic pattern and suggestion.",
+    "test_queries": [
+        "small dragon with elusive spells",
+        "charming dragon that turns invisible",
+        "mischievous flying dragon with magical breath",
+        "agile dragon that manipulates foes",
+        "dragon with strong spellcasting abilities"
+    ]
+}

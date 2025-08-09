@@ -1,0 +1,25 @@
+{
+    "name": "Moon Drake",
+    "queries": [
+        {
+            "query": "medium dragon with lunar abilities and uses radiant damage",
+            "variant": "dragon that is medium-sized and has lunar powers and uses radiant damage"
+        },
+        {
+            "query": "dragon immune to paralysis and has healing saliva",
+            "variant": "dragon that is immune to paralysis and possesses curative saliva"
+        },
+        {
+            "query": "creature that changes powers with the moon phases and flies at high speed",
+            "variant": "monster that shifts abilities with moon cycles and can fly quickly"
+        },
+        {
+            "query": "dragon that can cure lycanthropy and deals slashing damage",
+            "variant": "dragon that cures lycanthropy and inflicts slashing damage"
+        },
+        {
+            "query": "moon-themed creature with a bite attack and special light attacks",
+            "variant": "creature related to the moon that has a biting attack and unique light powers"
+        }
+    ]
+}

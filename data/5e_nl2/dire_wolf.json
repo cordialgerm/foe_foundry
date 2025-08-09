@@ -1,0 +1,51 @@
+{
+    "name": "Dire Wolf",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 37,
+    "ac": 14,
+    "srd": true,
+    "cr": "1",
+    "movement": "50 feet speed for quick ambushes",
+    "role": "Skirmisher",
+    "tags": [
+        "wolf",
+        "predator",
+        "pack hunter"
+    ],
+    "adjectives": [
+        "enormous",
+        "fearsome",
+        "aggressive"
+    ],
+    "description": "The Dire Wolf resembles a larger, more aggressive version of a wolf, with thick fur, muscular limbs, and a powerful build. It stands as tall as a horse at the shoulder.",
+    "memorable": "Its ability to knock targets prone and coordinate attacks in packs makes it a formidable opponent.",
+    "goals": "To hunt prey and dominate its territory alongside its pack.",
+    "relations": "Often found with other wolves as a pack hunter.",
+    "environment": "Commonly found in wilderness settings.",
+    "strengths": "High movement speed and powerful melee attacks; excellent at tracking with keen senses.",
+    "weaknesses": "Vulnerable to magic and ranged attacks despite decent hit points.",
+    "attacks": "Relies on its powerful bite to deal significant piercing damage and can knock enemies prone.",
+    "most_powerful_ability": "Pack Tactics, allowing advantage on attack rolls when allies are nearby.",
+    "senses": "Possesses keen hearing and smell, granting advantage on relevant perception checks.",
+    "skills": "Proficient in Perception and Stealth, useful for ambushing foes.",
+    "additional_information": [
+        "Can be heard howling from great distances",
+        "Forms strong social bonds within its pack",
+        "Uses its size and strength to dominate territory",
+        "Effective predator when attacking in numbers",
+        "Can snap bones with its powerful jaws"
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive wolf with powerful bite",
+        "fearsome predator that hunts in packs",
+        "wolf that knocks foes prone with its bite",
+        "quick moving wolf found in the wilderness",
+        "wolf with keen senses and ambushing tactics"
+    ]
+}

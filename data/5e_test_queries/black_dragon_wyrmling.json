@@ -1,0 +1,25 @@
+{
+    "name": "Black Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that breathes acid and can swim",
+            "variant": "medium-sized dragon that swims and exhales acid"
+        },
+        {
+            "query": "cunning aquatic dragon with stealth abilities",
+            "variant": "stealthy dragon from the water known for its cunning"
+        },
+        {
+            "query": "black dragon wyrmling with high dexterity and natural armor",
+            "variant": "young black dragon with natural armor and good dexterity"
+        },
+        {
+            "query": "dragon that excels in aquatic environments and stealth attacks",
+            "variant": "creature that performs stealth attacks and thrives in water"
+        },
+        {
+            "query": "acid-breathing dragon that can breathe both air and water",
+            "variant": "dragon that exhales acid and can breathe in water and air"
+        }
+    ]
+}

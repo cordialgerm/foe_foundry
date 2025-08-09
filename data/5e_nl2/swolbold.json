@@ -1,0 +1,53 @@
+{
+    "name": "Swolbold",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "grappler",
+        "brawler"
+    ],
+    "adjectives": [
+        "chaotic",
+        "strong",
+        "resilient",
+        "aggressive"
+    ],
+    "description": "The Swolbold is a medium humanoid characterized by significant physical strength, marked by its notable strength score of 19. It wears scale mail, offering decent protection, but moves slowly at a speed of 20 feet.",
+    "memorable": "Excels in grappling and physical confrontations, leveraging its Pack Tactics for advantage in group combat.",
+    "goals": "Typically seeks to engage in physical confrontations and outmaneuver opponents during combat.",
+    "relations": "Often found in groups, coordinating with allies to maximize combat effectiveness.",
+    "environment": "Can be found in various terrains, usually in groups due to its reliance on Pack Tactics.",
+    "strengths": "Possesses high strength and resilience, along with damage resistance to bludgeoning.",
+    "weaknesses": "Sunlight Sensitivity imposes disadvantages in bright light, affecting attack rolls and perception.",
+    "attacks": "Utilizes a Slam attack grapple opponents, and can deal additional damage through its Crush action.",
+    "most_powerful_ability": "Pack Tactics allows it to gain advantage on attack rolls when allied creatures are nearby.",
+    "equipment": "Wears scale mail for increased protection.",
+    "senses": "Has darkvision up to 60 feet, enabling it to see in dim light and darkness.",
+    "skills": "Proficient in Athletics, enhancing its effectiveness in physical contests.",
+    "additional_information": [
+        "Leaping Attack allows for surprise slam attacks after dashing.",
+        "High Strength score grants significant melee capabilities.",
+        "Can restrain opponents when successfully grappling.",
+        "Weak in daylight due to Sunlight Sensitivity.",
+        "Communicates in Draconic, facilitating interaction with certain creatures."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong humanoid that grapples and crushes",
+        "Swolbold group tactics and combat strategy",
+        "creature with sunlight sensitivity and high strength",
+        "powerful grappler that communicates in Draconic",
+        "humanoid with leaping attack ability"
+    ]
+}

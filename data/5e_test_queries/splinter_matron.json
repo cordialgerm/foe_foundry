@@ -1,0 +1,25 @@
+{
+    "name": "Splinter Matron",
+    "queries": [
+        {
+            "query": "malevolent fey creature with splinter attacks that lives in trees",
+            "variant": "evil fey creature that has splinter attacks and resides in trees"
+        },
+        {
+            "query": "chaotic fey monster with high Dexterity and Magic Resistance",
+            "variant": "fey monster that is chaotic, has high Dexterity, and possesses Magic Resistance"
+        },
+        {
+            "query": "medium fey creature that deals poison damage and has a strong presence in combat",
+            "variant": "fey creature of medium size that inflicts poison damage and has a notable combat presence"
+        },
+        {
+            "query": "Fey creature that communicates in Elvish and uses area attacks",
+            "variant": "creature of fey origin that speaks Elvish and can perform area attacks"
+        },
+        {
+            "query": "monster with darkvision and low perceptive skills that creates blind effects",
+            "variant": "creature with darkvision and poor perception that can cause blindness"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Crimson Jelly</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>20</HP>
 <summary>The Crimson Jelly is a tiny ooze creature known for its unique abilities and tactical advantages in combat. With a challenge rating of 1/2, it may not seem intimidating at first, but its resistance to various conditions and its capability to become invisible in certain lighting can catch foes off guard. The jelly has moderate armor class and hit points, allowing it to withstand a few hits before falling. Its movement is quite versatile, being able to fly and swim, and it can navigate through tight spaces easily. However, its low strength and constitution scores denote significant weaknesses, particularly in terms of physical combat capability and durability against high-damage attacks. The Crimson Jelly's unique abilities enable it to manipulate encounters by draining opponents and potentially seizing control over the battlefield.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ As a bonus action, with the ability Reproduce, the Crimson Jelly can split a por
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crimson Jelly
 
 *Tiny ooze*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 
 - **Reproduce (Requires Temporary HP).** While the crimson jelly has 1 or more temporary HP, it can split part of itself off into a new crimson jelly with HP equal to the original crimson jelly’s temporary HP. The original crimson jelly then loses any temporary HP it has. The new crimson jelly otherwise has all the same statistics as its parent, except the new jelly can’t gain temporary HP from Feeding Paddles attacks until it finishes a long rest.
 
+</statblock>
 
 

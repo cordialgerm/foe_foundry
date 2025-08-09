@@ -1,0 +1,25 @@
+{
+    "name": "Dragonette, Barnyard",
+    "queries": [
+        {
+            "query": "tiny dragon that can communicate with animals",
+            "variant": "small dragon that talks to beasts"
+        },
+        {
+            "query": "neutral dragon with keen sense of smell living in a barnyard",
+            "variant": "dragonette that is neutral and has a strong smell in a farm"
+        },
+        {
+            "query": "dragon with a Gritty Breath ability and low hit points",
+            "variant": "dragonette that has a stinging breath attack and few hit points"
+        },
+        {
+            "query": "Barnyard dragonette capable of grappling small creatures",
+            "variant": "dragonette from the barn that can grab smaller beings"
+        },
+        {
+            "query": "dragonette with darkvision and average perception skills",
+            "variant": "dragon that has night vision and normal perception abilities"
+        }
+    ]
+}

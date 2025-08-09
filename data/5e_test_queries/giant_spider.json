@@ -1,0 +1,25 @@
+{
+    "name": "Giant Spider",
+    "queries": [
+        {
+            "query": "large spider that spins webs and lives in dark forests",
+            "variant": "big spider that weaves webs and dwells in shady woods"
+        },
+        {
+            "query": "venomous spider with poisonous bite that climbs walls",
+            "variant": "poisonous spider with a toxic bite that can climb vertical surfaces"
+        },
+        {
+            "query": "stealthy spider that ambushes its prey in caves",
+            "variant": "sneaky spider that traps its victims in underground lairs"
+        },
+        {
+            "query": "web-slinging beast found in dark, abandoned ruins",
+            "variant": "web-spinning creature discovered in eerie, deserted ruins"
+        },
+        {
+            "query": "Giant Spider capabilities in combat and web abilities",
+            "variant": "Giant Spider combat skills and web powers"
+        }
+    ]
+}

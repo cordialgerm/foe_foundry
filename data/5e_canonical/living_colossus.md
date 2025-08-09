@@ -1,6 +1,8 @@
 <MonsterName/>Living Colossus</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>261</HP>
 <summary>The Living Colossus is a gargantuan construct that serves as an imposing presence on the battlefield. With a high Armor Class of 18 and an impressive pool of 261 hit points, it can endure significant amounts of damage. It has a Challenge Rating of 15, indicating its strength and the challenge it presents to adventurers. The Living Colossus excels in strength and resilience, with a Strength modifier of +10, which is exceptional, allowing it to deal considerable melee damage through its Slam attacks. Its Constitution modifier is also +10, which reinforces its durability. However, its Dexterity modifier is -1, which is considered bad and makes it less effective in dexterous actions like stealth. Its range of special abilities enhances its combat capabilities, including the ability to deal double damage to structures and immunity to various conditions. Overall, the Living Colossus is a powerful ally or adversary, capable of both protecting its allies and wreaking havoc on its enemies.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Living Colossus has a reaction called Bolstering Spirit. When a nea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Colossus
 
 *Gargantuan construct*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Reactions** 
 - **Bolstering Spirit.** When a friendly creature the living colossus can see within 60 feet of it, other than itself, takes damage, the living colossus can share some of the life force of the spirit animating it with that friendly creature. The target gains 14 (4d6) temporary HP for 1 minute. If the target would take enough damage to reduce it to 0 HP, it instead regains 14 (4d8) HP.
 
+</statblock>
 
 

@@ -1,0 +1,50 @@
+{
+    "name": "Duffel Crab",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking and swimming",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "trap",
+        "predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "unique",
+        "intriguing"
+    ],
+    "description": "The Duffel Crab is a large monstrosity with a shell that operates like a bag of holding, capable of trapping and holding multiple creatures inside.",
+    "memorable": "Its ability to manipulate extradimensional space and capture prey makes it a formidable opponent.",
+    "goals": "To capture prey and ambush unsuspecting creatures.",
+    "relations": "May be found alongside other sea creatures or in aquatic environments.",
+    "environment": "Aquatic environments",
+    "strengths": "Exceptional physical strength and constitution make it a tough combatant.",
+    "weaknesses": "Low intelligence and charisma hinder its tactical abilities.",
+    "attacks": "Can use claw attacks to grapple and deal bludgeoning damage.",
+    "most_powerful_ability": "Extradimensional Bag allows it to trap creatures and hold them in a bag-like space.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Average perception skill of +1.",
+    "additional_information": [
+        "Grappled targets are blinded and restrained.",
+        "Multiattack feature allows for flexibility in combat.",
+        "False Appearance ability makes it appear as an ordinary bag when motionless.",
+        "Creature can survive a limited time inside the extradimensional space.",
+        "Upon death or damage to the bag, contents spill out rather than being lost."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large crab that can trap creatures",
+        "aquatic monster that acts like a bag",
+        "creature that grapples and holds prey",
+        "crab with extradimensional trapping abilities",
+        "formidable crab that ambushes in water"
+    ]
+}

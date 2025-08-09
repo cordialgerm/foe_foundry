@@ -1,0 +1,51 @@
+{
+    "name": "Crypt Spider",
+    "creature_type": "Beast",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 38,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "spider",
+        "beast",
+        "web"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "predatory"
+    ],
+    "description": "The Crypt Spider is a Medium beast with exceptional dexterity and cunning, often dwelling in dark, web-infested areas.",
+    "memorable": "Notable for its ability to paralyze prey and create zombie spiders, creating a fearsome combination for adventurers.",
+    "goals": "Typically seeks to ensnare and dominate its prey, using webs and stealth.",
+    "relations": "May be encountered alongside other spiders or undead creatures created by its 'Create Zombie' ability.",
+    "environment": "Commonly found in dark, web-filled locales, such as caves or abandoned buildings.",
+    "strengths": "Possesses high dexterity and stealth capabilities, making it a formidable ambusher.",
+    "weaknesses": "Lacks magical abilities and has relatively low hit points compared to other creatures of similar challenge rating.",
+    "attacks": "Employs a bite that inflicts piercing damage and possible paralysis; also uses webbing to restrain foes.",
+    "most_powerful_ability": "The ability to create a zombie swarm from spiders, adding pressure to combat encounters.",
+    "senses": "Has blindsight up to 10 feet, allowing it to detect creatures in darkness when in contact with its webs.",
+    "skills": "Proficient in stealth, allowing it to ambush its prey effectively.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Can cocoon restrained targets for easier capture.",
+        "Moves effortlessly through webs without restriction.",
+        "Utilizes web sense to detect prey in its territory.",
+        "Can create a swarm of zombie spiders as an additional threat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile predatory spider in dark areas",
+        "creature that creates zombie spiders",
+        "cunning web-dwelling ambush predator",
+        "poisonous spider with web-based abilities",
+        "stealthy beast that ensnares prey"
+    ]
+}

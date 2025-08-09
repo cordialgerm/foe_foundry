@@ -1,0 +1,25 @@
+{
+    "name": "Silver Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "small silver dragon that can fly and breathe ice",
+            "variant": "silver colored small dragon that can fly and exhale freezing breath"
+        },
+        {
+            "query": "medium dragon with paralyzing breath and cold immunity",
+            "variant": "medium-sized dragon that can paralyze foes and is immune to cold damage"
+        },
+        {
+            "query": "dragon with high mobility that prefers cold environments",
+            "variant": "dragon with great ability to fly that thrives in icy climates"
+        },
+        {
+            "query": "agile dragon that speaks Draconic and has a powerful bite attack",
+            "variant": "quick dragon that can communicate in Draconic and has a strong bite attack"
+        },
+        {
+            "query": "dragon that uses frost breath and can knock enemies prone",
+            "variant": "dragon capable of freezing breath and knocking foes to the ground"
+        }
+    ]
+}

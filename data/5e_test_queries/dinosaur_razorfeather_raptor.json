@@ -1,0 +1,25 @@
+{
+    "name": "Razorfeather Raptor",
+    "queries": [
+        {
+            "query": "medium-sized dinosaur with sharp feathers and fast speed",
+            "variant": "fast medium-sized dinosaur that has sharp feathers"
+        },
+        {
+            "query": "predatory raptor with pack tactics and slashing claws",
+            "variant": "raptor that has slashing claws and pack tactics"
+        },
+        {
+            "query": "neutral evil creature that excels in group attacks and mobility",
+            "variant": "creature that is neutral evil and specializes in group mobility"
+        },
+        {
+            "query": "Razorfeather Raptor abilities including pounce and multiattack",
+            "variant": "abilities of the Razorfeather Raptor like multiattack and pounce"
+        },
+        {
+            "query": "monster that reduces enemy speed and knocks targets prone",
+            "variant": "creature that can knock enemies prone and decreases their speed"
+        }
+    ]
+}

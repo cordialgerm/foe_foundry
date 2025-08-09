@@ -1,6 +1,9 @@
 <MonsterName/>Marilith (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>demon</Subtype>
+<CR/>16</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>189</HP>
 <summary>A Marilith is a powerful, six-armed demon with the upper body of a humanoid woman and the lower body of a massive serpent. Known for their strategic minds and deadly combat abilities, Mariliths wield six swords with terrifying skill, capable of fighting multiple opponents at once. They are cunning and intelligent, often serving as generals in the demonic armies of the Abyss. In battle, Mariliths use their agility and strength to outmaneuver their enemies, combining swordplay with demonic magic. They are highly respected among demons for their martial prowess and tactical genius.</summary>
 
 <summary>The Marilith is a formidable large fiend and an embodiment of chaos and evil. With an impressive armor class of 18 and a substantial hit point pool of 220 (calculated using 21d10 plus an additional 105), it can withstand significant damage in battle. Challenge Rating 16 indicates that it is a powerful adversary, suited for high-level encounters. The Marilith’s high Strength, Dexterity, Constitution, Intelligence, and Charisma scores imply it possesses very good physical prowess, agility, resilience, mental acuity, and charm, making it a versatile threat on the battlefield. Its extensive resistances to cold, fire, and lightning damage, as well as immunity to poison damage and the poisoned condition, further accentuate its durability. With the ability to utilize multiple attacks and teleport, the Marilith presents a unique challenge to adventurers who dare to confront it.</summary>
@@ -35,6 +38,7 @@ In terms of reactions, the Marilith can utilize Parry to boost its Armor Class a
 
 Source: 5e_srd
 
+<statblock>
 ### Marilith (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -81,7 +85,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Parry***. The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon.
+***Parry***. The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon.</statblock>
+
 
 
 
@@ -89,6 +94,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Marilith
 
 *Large* *Fiend*
@@ -131,6 +137,7 @@ Source: 5e_artisinal_monsters
 - **Reactive Teleport:** When the marilith is hit or missed by a ranged attack, it uses Teleport. If it teleports within 5 feet of a creature, it can attack with its tail.
 
 
+</statblock>
 
 
 
@@ -139,6 +146,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Marilith
 
 *Large fiend (demon)*
@@ -185,5 +193,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

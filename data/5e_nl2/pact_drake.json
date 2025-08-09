@@ -1,0 +1,54 @@
+{
+    "name": "Pact Drake",
+    "creature_type": "Dragon",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 60 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "spellcaster",
+        "overseer"
+    ],
+    "adjectives": [
+        "cunning",
+        "magical",
+        "lawful",
+        "diplomatic"
+    ],
+    "description": "The Pact Drake is a small dragon with exceptional charisma and an air of authority, noted for its cunning and magical abilities. It has a natural armor and a solid build, allowing it to endure battles.",
+    "memorable": "The Pact Drake binds creatures to their oaths and agreements through its magical influence, making it a unique arbiter in local disputes.",
+    "goals": "To oversee pacts and agreements, ensuring loyalty and truth among parties.",
+    "relations": "May be encountered with other dragons or magical beings who respect pacts and treaties.",
+    "environment": "Found typically in positions of influence or authority where agreements are made.",
+    "strengths": "Possesses strong spellcasting abilities, capable of divination and influencing decisions.",
+    "weaknesses": "Average physical strength limits its effectiveness in direct combat.",
+    "attacks": "Multiattack with bite and claw, dealing moderate slashing and piercing damage.",
+    "most_powerful_ability": "Punish Transgressor, which can blind, deafen, and stun creatures that violate a pact witnessed by the drake.",
+    "equipment": null,
+    "senses": "Possesses truesight and darkvision, with a high passive perception of 16, allowing it to sense deceit effectively.",
+    "skills": "Excels in insight and perception, making it adept at detecting lies and observing its surroundings.",
+    "additional_information": [
+        "Immune to being charmed and frightened.",
+        "Can cast detect magic at will and scrying multiple times per day.",
+        "Has a calming breath attack that can charm multiple targets.",
+        "Has damage immunities against psychic and radiant damage.",
+        "Notably good at strategic manipulation and negotiation."
+    ],
+    "damage_types": [
+        "psychic",
+        "radiant"
+    ],
+    "spellcasting": "Innate spellcaster with Charisma as its spellcasting ability, capable of casting several useful spells for reconnaissance and influence.",
+    "test_queries": [
+        "small magical dragon that influences pacts",
+        "dragon with scrying and charm abilities",
+        "creature that punishes broken agreements",
+        "clever dragon that can detect lies",
+        "dragon with spellcasting and mediation powers"
+    ]
+}

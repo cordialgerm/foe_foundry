@@ -1,0 +1,53 @@
+{
+    "name": "Yowler",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "climb 30 ft., walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "frightening",
+        "agile"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Yowler is a tiny undead creature with rotten fur and exposed bones, appearing as a magical illusion of its former self, embodying chaotic malevolence.",
+    "memorable": "Its ability to frighten opponents with a horrid scream sets it apart from other undead.",
+    "goals": "To terrify foes and sustain itself through fear.",
+    "relations": "May be accompanied by other undead creatures.",
+    "environment": "Can be found in dark, eerie places, often lurking in shadows.",
+    "strengths": "High dexterity and constitution provide agility and resilience.",
+    "weaknesses": "Very low strength leaves it incapable of dealing physical attacks effectively.",
+    "attacks": "Its multiattack includes a biting attack that can poison and a claw attack that slashes.",
+    "most_powerful_ability": "The Yowl ability frightens multiple foes within close range, affecting their combat performance.",
+    "equipment": null,
+    "senses": "It possesses darkvision with a range of 60 feet.",
+    "skills": "Skilled in stealth allows it to move unseen.",
+    "additional_information": [
+        "Immune to poison damage.",
+        "Resistant to necrotic damage.",
+        "Immunity to frightened and poisoned conditions.",
+        "Illusion can be disrupted if it attacks or uses Yowl.",
+        "Requires successful Intelligence checks to see its true form."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny undead monster that frightens foes",
+        "chaotic undead with a terrifying scream",
+        "agile monster immune to poison damage",
+        "undead that appears alive with illusion",
+        "small creature with high constitution and dexterity"
+    ]
+}

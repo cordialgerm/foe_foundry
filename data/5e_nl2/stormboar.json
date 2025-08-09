@@ -1,0 +1,55 @@
+{
+    "name": "Stormboar",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 95,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "40 feet walk speed",
+    "role": "Bruiser",
+    "tags": [
+        "lightning",
+        "thunder",
+        "ferrous detection",
+        "charge"
+    ],
+    "adjectives": [
+        "formidable",
+        "electric",
+        "powerful",
+        "durable"
+    ],
+    "description": "The Stormboar is a large creature with impressive physical attributes, characterized by its combination of slashing and lightning capabilities. Its tusks are formidable, and its fur appears charged with electrical energy.",
+    "memorable": "The Stormboar combines strong melee attacks with electrical abilities, making it a dangerous opponent that can disrupt enemy formations.",
+    "goals": "To charge at foes, deal damage, and control the battlefield with its electrical abilities.",
+    "relations": "Related to other large, aggressive monsters, it could be encountered alongside thunder-themed creatures.",
+    "environment": "Typically found in stormy or wild areas where it can harness its electrical powers.",
+    "strengths": "High physical strength and durability, alongside electrical and thunder damage immunity.",
+    "weaknesses": "Low intelligence, wisdom, and charisma, making it ineffective in strategic or spellcasting roles.",
+    "attacks": "The Stormboar uses powerful tusk attacks, capable of inflicting slashing and lightning damage while also threatening armor with damage.",
+    "most_powerful_ability": "Lightning Run allows the Stormboar to move through enemies, dealing high lightning damage and manipulating battlefield positioning.",
+    "equipment": null,
+    "senses": "The Stormboar can detect ferrous metals within 60 feet, allowing it to sense weapons or armor nearby.",
+    "skills": null,
+    "additional_information": [
+        "Can deal thunder damage with Thunder Charge and Thunder Leap.",
+        "Iron Scent ability helps locate metal items.",
+        "The Relentless ability keeps it alive at low hit points.",
+        "Lightning Hide deals extra damage to melee attackers.",
+        "Threatens opponents with permanent penalties to nonmagical metal armor."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large electric creature with tusks",
+        "storm creature that charges and leaps",
+        "monstrous boar immune to lightning",
+        "beast that damages metal armor",
+        "aggressive creature with thunder attacks"
+    ]
+}

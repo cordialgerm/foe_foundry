@@ -1,0 +1,53 @@
+{
+    "name": "Specter",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "fly 50 ft. (hover)",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ghost",
+        "life-draining"
+    ],
+    "adjectives": [
+        "malevolent",
+        "incorporeal",
+        "haunting"
+    ],
+    "description": "A malevolent, incorporeal undead creature formed from the soul of a person who met a violent or tragic end, drifting through walls and objects.",
+    "memorable": "Its life-draining capability and incorporeal movement make it a dangerous and elusive foe.",
+    "goals": "To drain the life force from the living, feeding on their energy.",
+    "relations": "Often bound to the location of their death or cursed to wander the world.",
+    "environment": "Usually encountered in dark and foreboding locations.",
+    "strengths": "Immune to necrotic and poison damage, as well as a wide range of conditions.",
+    "weaknesses": "Vulnerable to radiant damage and sunlight, which severely hinders its abilities.",
+    "attacks": "Life Drain causes necrotic damage and reduces targets' hit point maximum, while Hurl can throw creatures or objects.",
+    "most_powerful_ability": "Life Drain can not only inflict damage but also reduce the target's maximum hit points, potentially leading to death.",
+    "equipment": null,
+    "senses": "The Specter has darkvision.",
+    "skills": "The Specter can be stealthy, often remaining hidden while attacking.",
+    "additional_information": [
+        "Incorporeal Movement allows it to move through creatures and objects.",
+        "Sunlight Sensitivity imposes disadvantage on attack rolls and perception checks in sunlight.",
+        "It doesn't require air, food, drink, or sleep, enhancing its ghostly endurance.",
+        "The Retributive Shriek ability can frighten attackers, imposing psychological stress.",
+        "It has resistances to several damage types, enhancing survival in combat."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that drains life",
+        "ghost that moves through walls",
+        "malevolent spirit in dark places",
+        "specter with life-draining abilities",
+        "haunting apparition vulnerable to sunlight"
+    ]
+}

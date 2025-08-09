@@ -1,0 +1,52 @@
+{
+    "name": "Servant of the Vine",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 72,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "spellcaster",
+        "support",
+        "poison"
+    ],
+    "adjectives": [
+        "chaotic",
+        "versatile",
+        "inspirational"
+    ],
+    "description": "The Servant of the Vine is a humanoid with an average build and a charismatic demeanor. It has a mastery of both physical and magical capabilities.",
+    "memorable": "It combines spellcasting with the ability to inspire and enhance allies, alongside using toxic breath attacks.",
+    "goals": "To support allies in combat through inspiration and healing, while incapacitating foes with poison.",
+    "relations": "May work alongside fey creatures or other chaotic entities.",
+    "environment": "Typically found in locations with vibrant flora, such as enchanted forests or mystical groves.",
+    "strengths": "Skilled in spellcasting, capable of crowd control and healing. Excels in Wisdom and Charisma saving throws.",
+    "weaknesses": "Low Constitution and Strength scores leave it vulnerable to physical attacks.",
+    "attacks": "Performs three melee attacks in quick succession, inflicting slashing damage and potential poisoning.",
+    "most_powerful_ability": "Stuporous Breath releases poisonous fumes that deal damage and can put targets to sleep, affecting a wide area.",
+    "equipment": null,
+    "senses": "Has darkvision allowing it to see in darkness and a passive perception score of 16.",
+    "skills": "Proficient in medicine, perception, and persuasion, enhancing its effectiveness during encounters.",
+    "additional_information": [
+        "Fey Ancestry grants advantage on saving throws against charm effects.",
+        "Inspires allies with better performance checks through Inspire Artistry.",
+        "Can generate wine through the spell create or destroy water.",
+        "Incapacitating abilities with poison damage and sleep effect.",
+        "The spellcaster has a wide range of cleric spells prepared."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "An 11th-level spellcaster with a mix of healing, crowd control, and offensive spells.",
+    "test_queries": [
+        "humanoid with poisonous breath attack",
+        "spellcaster that inspires allies",
+        "chaotic creature in enchanted forests",
+        "servant with darkvision and support spells",
+        "humanoid that can put enemies to sleep"
+    ]
+}

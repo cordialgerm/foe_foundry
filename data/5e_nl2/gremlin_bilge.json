@@ -1,0 +1,52 @@
+{
+    "name": "Bilge Gremlin",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 36,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "20 ft. walking, 10 ft. climbing, 20 ft. swimming",
+    "role": null,
+    "tags": [
+        "fey",
+        "gremlin",
+        "chaotic",
+        "disruptor"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "vulnerable",
+        "dexterous"
+    ],
+    "description": "A tiny fey creature with a chaotic evil nature, known for its disruptive abilities.",
+    "memorable": "Disrupts mechanical objects and can inflict sewer plague with its bite.",
+    "goals": "Disrupt technology and cause chaos.",
+    "relations": "Often found in filthy environments, thriving amidst disorder.",
+    "environment": "Typically found in dirty water bodies or industrial areas.",
+    "strengths": "Highly dexterous, able to evade attacks easily and disrupts nonmagical mechanisms within its vicinity.",
+    "weaknesses": "Low physical strength and low hit points make it vulnerable in direct combat.",
+    "attacks": "Bites and uses makeshift weapons for melee or ranged attacks, causing various damage types.",
+    "most_powerful_ability": "Aura of Mechanical Mishap creates chaos among nonmagical mechanical devices within 20 feet.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in perception, but limited by low Wisdom.",
+    "additional_information": [
+        "Amphibious: Can breathe air and water.",
+        "Immune to disease, enhancing survival in filthy environments.",
+        "Creates malfunction in nonmagical mechanical devices within aura.",
+        "+3 Dexterity making it quick and difficult to hit.",
+        "Has a unique attack that can inflict sewer plague."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fey creature that disrupts technology",
+        "tiny creature that causes mechanical failures",
+        "gremlin immune to diseases and chaotic",
+        "bilge gremlin with sewer plague bite",
+        "small aquatic fey that thrives in filth"
+    ]
+}

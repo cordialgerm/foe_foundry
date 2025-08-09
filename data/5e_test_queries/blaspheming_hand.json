@@ -1,0 +1,25 @@
+{
+    "name": "Blaspheming Hand",
+    "queries": [
+        {
+            "query": "large fiend with grappling abilities that uses fire attacks",
+            "variant": "large fiend that grapples and uses fire attacks"
+        },
+        {
+            "query": "creature that pulls opponents closer and has flight capabilities",
+            "variant": "monster that can fly and pulls enemies near"
+        },
+        {
+            "query": "lawful evil fiend that can resist spells and magically mark targets",
+            "variant": "fiend of lawful evil that can resist magic and mark foes"
+        },
+        {
+            "query": "dangerous enemy with slashing claws and fire damage abilities",
+            "variant": "enemy with claw attacks and ability to deal fire damage"
+        },
+        {
+            "query": "creature immune to charm effects that thrives near allies",
+            "variant": "monster that cannot be charmed and works best with allies"
+        }
+    ]
+}

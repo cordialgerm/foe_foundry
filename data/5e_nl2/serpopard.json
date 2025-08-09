@@ -1,0 +1,51 @@
+{
+    "name": "Serpopard",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 85,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ambush",
+        "stealth",
+        "predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "sneaky"
+    ],
+    "description": "The Serpopard is a large monstrosity with a unique appearance suited for ambushing prey. It has a sleek, muscular build with features adapted for stealth and speed.",
+    "memorable": "The Serpopard excels in ambush tactics, utilizing camouflage and striking rapidly with its multiattack.",
+    "goals": "To ambush and hunt prey in coastal and swampy environments.",
+    "relations": "Often encountered in swamps or coastal regions; may share territory with other predators.",
+    "environment": "Coastal or swampy areas.",
+    "strengths": "Exceptional stealth and ambush skills, high Dexterity, and strong melee attacks.",
+    "weaknesses": "Poor Intelligence and Charisma limit strategic interactions and social engagement.",
+    "attacks": "Multiattack combining one Bite and two Claw attacks, dealing substantial melee damage.",
+    "most_powerful_ability": "Musk ability, releasing a noxious cloud that inflicts poison damage and crowd control.",
+    "senses": "Possesses darkvision and a passive Perception score of 13, allowing it to detect creatures in low visibility.",
+    "skills": "Notably proficient in Stealth, allowing it to remain undetected while hunting.",
+    "additional_information": [
+        "Has advantage on Stealth checks when hiding in sandy, muddy, or swampy terrain.",
+        "Resistant to poison damage and immune to the poisoned condition.",
+        "Can deal damage to multiple foes with its Musk ability.",
+        "Strong Dexterity and Strength contribute to its effectiveness in battle.",
+        "Predator that thrives in ambush situations."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large predator in swamps",
+        "stealthy ambushing monster",
+        "creature with poison musk ability",
+        "formidable swamp hunter",
+        "quick and strong coastal attacker"
+    ]
+}

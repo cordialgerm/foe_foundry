@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Blight</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Shadow Blight is a small, neutral evil plant creature that lurks in the shadows and thrives on darkness and decay. It possesses a decent level of resilience and can inflict significant cold and necrotic damage through its attacks. The Shadow Blight is particularly effective in ambush situations, utilizing its False Appearance ability to blend in with the environment. However, it is vulnerable to fire damage, which can easily disrupt its plans. With its spell-like abilities, it can animate other plants to serve as additional threats, making it a formidable opponent in environments rich with vegetation.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The creature can also utilize the Animate Plants action, which recharges after a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Blight
 
 *Small* *Plant* *neutral evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Animate Plants (Recharges after a Short or Long Rest):** The shadow blight magically animates 1d4 plants within 60 feet of it, turning them into awakened shrubs under its control. These plants' attacks deal an additional 3 (1d6) necrotic damage. If the shrubs are not destroyed before 1 hour passes, they become new shadow blights.
 
 
+</statblock>
 
 

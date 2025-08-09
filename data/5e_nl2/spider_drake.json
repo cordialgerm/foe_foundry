@@ -1,0 +1,52 @@
+{
+    "name": "Spider Drake",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "climb 40 ft., fly 80 ft., walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "poison",
+        "ambusher"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "resilient"
+    ],
+    "description": "The Spider Drake is a large dragon with a combination of scales and webs, showcasing a predatory appearance with venomous attributes.",
+    "memorable": "Its Sticky Secretions ability makes melee attackers vulnerable to being restrained by the drake's webbing.",
+    "goals": "The Spider Drake seeks to ambush prey and assert dominance in its territory.",
+    "relations": "It may be encountered alongside other dragons or as a guardian of its lair.",
+    "environment": "Typically found in rugged, mountainous areas or dark forests where it can use its climbing and flying abilities.",
+    "strengths": "High armor class and hit points; formidable poison breath weapon; expert ambusher with stealth.",
+    "weaknesses": "Low intelligence and charisma limit tactical options; reliant on melee engagement for advantage.",
+    "attacks": "Can make multiple attacks including a venomous bite and slashing claw strikes.",
+    "most_powerful_ability": "Poison Breath, an area attack that deals substantial poison damage and can inflict the poisoned condition.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, granting it awareness of its surroundings without sight.",
+    "skills": "Proficient in perception and survival, enabling it to track and ambush effectively.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Web ability can restrain targets at range, creating strategic challenges.",
+        "Vulnerable webbing to fire damage while immune to psychic damage.",
+        "Can engage in airborne combat thanks to its flight speed.",
+        "Relatively slow intelligence hampers its strategic capabilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large green dragon that ambushes with webs",
+        "poisonous dragon that flies and climbs",
+        "monster that uses webbing to trap attackers",
+        "powerful dragon with poison breath attack",
+        "intimidating dragon immune to poison"
+    ]
+}

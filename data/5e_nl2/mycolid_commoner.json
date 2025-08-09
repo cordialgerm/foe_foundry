@@ -1,0 +1,52 @@
+{
+    "name": "Mycolid Commoner",
+    "creature_type": "Plant",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 21,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "15 feet, below average mobility",
+    "role": "null",
+    "tags": [
+        "plant",
+        "fungal",
+        "non-combatant"
+    ],
+    "adjectives": [
+        "small",
+        "stealthy",
+        "supportive"
+    ],
+    "description": "The Mycolid Commoner is a small, non-combatant plant creature with fungal biology, noted for its stealth and perceptive abilities.",
+    "memorable": "Its ability to communicate telepathically with kin and inflict potent poison makes it unique.",
+    "goals": "To support its kin and maintain stealth within its ecosystem.",
+    "relations": "Often found in communities with other Mycolids.",
+    "environment": "Typically inhabits forested or overgrown areas rich in decaying vegetation.",
+    "strengths": "Possesses keen senses, good perception, and a strong poison defense mechanism.",
+    "weaknesses": "Low intelligence and charisma with below average mobility.",
+    "attacks": "Gardening Pick delivers piercing and poison damage; Slowing Spores hinder opponents and deal poison damage.",
+    "most_powerful_ability": "Fungal Toxicity, which punishes melee attackers with poison effects.",
+    "equipment": null,
+    "senses": "Has keen senses that allow it to perceive its surroundings within a radius of 120 feet.",
+    "skills": "Excels in stealth with a high rating of 14.",
+    "additional_information": [
+        "Can heal using Fetid Feast by consuming carrion or rotting vegetation.",
+        "Resistant to exhaustion and immunity to several debilitating conditions.",
+        "Telepathy ranges up to 120 feet when communicating with other Mycolids.",
+        "Strong scouting potential due to high wisdom and perception.",
+        "Acts as a non-combatant support unit in Mycolid communities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small plant creature with poison abilities",
+        "elf-like creature that communicates telepathically",
+        "slow-moving mushroom creature with stealth skills",
+        "fungal plant found in forest ecosystems",
+        "Mycolid Commoner abilities and features"
+    ]
+}

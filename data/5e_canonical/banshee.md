@@ -1,6 +1,8 @@
 <MonsterName/>Banshee</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>58</HP>
 <summary>The Banshee is a Medium undead creature known for its haunting presence and sorrowful cries. With a challenge rating of 4, it poses a moderate threat to adventurers, utilizing its ability to manipulate emotions and inflict psychic damage. Its key strengths lie in its high Charisma score of +4, making it exceptionally adept at affecting the minds of its foes. Additionally, its incorporeal nature allows it to seamlessly move through solid objects, providing it with strategic advantages in combat. The Banshee is immune to several forms of damage and numerous conditions, which makes it resilient against various attacks. However, it has low hit points relative to its challenge rating, making it vulnerable if combatants can overcome its defenses and resist its psychic assaults.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a reaction, the Banshee can activate "Wounded Warning" when it takes damage f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Banshee
 
 *Medium* *Undead*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Wounded Warning:** When the banshee takes damage from a creature within 60 feet, it uses Presage Death on the attacker.
 
 
+</statblock>
 
 

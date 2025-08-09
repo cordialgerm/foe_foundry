@@ -1,0 +1,25 @@
+{
+    "name": "Adult Copper Dragon",
+    "queries": [
+        {
+            "query": "large dragon with corrosive breath living in mountains",
+            "variant": "big dragon that has acid breath and prefers rocky hills"
+        },
+        {
+            "query": "cunning metallic dragon known for riddles and tricks",
+            "variant": "clever metal dragon famous for puzzles and pranks"
+        },
+        {
+            "query": "formidable dragon with a playful personality and acid immunity",
+            "variant": "strong dragon that enjoys games and is immune to acid damage"
+        },
+        {
+            "query": "agile copper-colored dragon with high natural armor",
+            "variant": "quick dragon with aged copper scales and solid natural defense"
+        },
+        {
+            "query": "dragon that can change shape and has an acid breath weapon",
+            "variant": "dragon that can transform forms and possesses an acid breath attack"
+        }
+    ]
+}

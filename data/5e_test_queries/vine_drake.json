@@ -1,0 +1,25 @@
+{
+    "name": "Vine Drake",
+    "queries": [
+        {
+            "query": "medium dragon that can communicate with plants and uses thorny skin for defense",
+            "variant": "medium dragon that communicates with plants and has thorn skin for defense"
+        },
+        {
+            "query": "dragon with climb speed that excels in nature manipulation and physical combat",
+            "variant": "dragon that excels in physical combat and nature manipulation with climbing ability"
+        },
+        {
+            "query": "creature that inflicts damage upon touch and has poisonous bite attacks",
+            "variant": "creature that deals damage on touch and has a poisonous bite attack"
+        },
+        {
+            "query": "Vine Drake abilities including innate spellcasting and acid breath",
+            "variant": "Vine Drake skills like acid breath and innate spell casting"
+        },
+        {
+            "query": "dragon that grapples with vine lash and has high Strength attribute",
+            "variant": "dragon with a high Strength score and is capable of grappling using vine lash"
+        }
+    ]
+}

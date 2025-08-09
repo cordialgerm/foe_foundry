@@ -1,0 +1,52 @@
+{
+    "name": "Oathrot Wraith",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly speed of 60 feet",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "curse",
+        "drain"
+    ],
+    "adjectives": [
+        "malevolent",
+        "ethereal",
+        "cursed"
+    ],
+    "description": "The Oathrot Wraith is a spectral figure with an aura of malevolence, often appearing as a shrouded silhouette that drifts through the air, imposing curses upon its foes.",
+    "memorable": "Its ability to curse and drain life makes encounters with it particularly dangerous, especially for those reliant on their oaths and resolve.",
+    "goals": "To curse living beings and drain their life force while disrupting their concentration and abilities.",
+    "relations": "Often associated with other undead or creatures that threaten oaths, such as fiends.",
+    "environment": "Dark or abandoned places, especially where oaths have been broken or betrayal has occurred.",
+    "strengths": "Strong against many damage types, immunity to several conditions, and the ability to evade physical attacks.",
+    "weaknesses": "Vulnerable to radiant damage and has disadvantage in sunlight, making it susceptible to light-based tactics.",
+    "attacks": "Life Drain melee attack that saps life essence, dealing significant necrotic damage and reducing maximum hit points.",
+    "most_powerful_ability": "Aura of Oathbreaking, which curses enemies and severely hampers their ability to concentrate.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, allowing it to see in darkness.",
+    "skills": "Possesses an average perception skill, making it capable of noticing hidden threats.",
+    "additional_information": [
+        "Immunities to necrotic and poison damage, showcasing its undead nature.",
+        "Can pinpoint the location of clerics and paladins nearby, enhancing its threat against divine beings.",
+        "Incorporeal movement allows it to pass through objects and creatures effortlessly.",
+        "Can impose severe penalties on creatures that fail its curse, particularly during critical moments.",
+        "Swaths of darkness and despair often follow its presence."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "spectral creature that curses oaths",
+        "ethereal wraith that drains life",
+        "undead with powerful necrotic attacks",
+        "cursing undead found in dark places",
+        "wraith that seeks out divine beings"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Riptide Drake",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 231,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 20 ft., swim 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "amphibious",
+        "aquatic"
+    ],
+    "adjectives": [
+        "large",
+        "imposing",
+        "formidable"
+    ],
+    "description": "The Riptide Drake is a large and imposing dragon known for its formidable presence in aquatic environments. It has a muscular build and a dragon-like face, featuring sharp teeth and vivid scales that allow it to camouflage underwater.",
+    "memorable": "Its ability to manipulate water currents and unleash devastating underwater attacks makes it a unique and terrifying presence.",
+    "goals": "To dominate aquatic territories and ambush unsuspecting prey.",
+    "relations": "Other aquatic creatures, and possibly rival dragons in its territory.",
+    "environment": "Primarily found in aquatic environments, such as oceans, rivers, and lakes.",
+    "strengths": "Immunity to poison damage and conditions, along with resistance to cold damage.",
+    "weaknesses": "Limited dexterity, which affects its nimbleness and ranged capabilities.",
+    "attacks": "Can perform a bite attack dealing substantial piercing damage and slam attacks for bludgeoning damage, alongside powerful thunder-based ranged attacks.",
+    "most_powerful_ability": "Buffeting Blast, which unleashes a powerful stream of water that can disorient and damage multiple creatures.",
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures in water with precision.",
+    "skills": "Proficient in perception, with an enhanced passive perception score of 17.",
+    "additional_information": [
+        "Amphibious, allowing it to breathe both air and water",
+        "Can camouflage itself underwater for stealth attacks",
+        "Utilizes echolocation but loses blindsight if deafened or out of water",
+        "Has a powerful sonic pulse attack that operates underwater",
+        "Can create difficult terrain with rushing water currents"
+    ],
+    "damage_types": [
+        "thunder",
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon that manipulates water currents",
+        "imposing aquatic dragon with thunder attacks",
+        "amphibious predator that camouflages underwater",
+        "dragon that excels in aquatic combat",
+        "creature with blindsight and powerful sonic pulse"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Fey Knight",
+    "queries": [
+        {
+            "query": "magical fey creature that can charm humanoids and flies fast",
+            "variant": "magical creature fey that can charm humans and flies quickly"
+        },
+        {
+            "query": "agile knight with a scimitar that uses tricks in combat",
+            "variant": "knight agile with scimitar that employs tricks during battle"
+        },
+        {
+            "query": "Fey being that manipulates light and changes size",
+            "variant": "Fey creature that alters light and shifts its size"
+        },
+        {
+            "query": "Fey Knight immune to charms and adept in stealth",
+            "variant": "Fey Knight proof against charms skilled in stealth"
+        },
+        {
+            "query": "creature from the Fey realm with a longbow and poison attack",
+            "variant": "being from the Fey realm wielding a longbow and poison strikes"
+        }
+    ]
+}

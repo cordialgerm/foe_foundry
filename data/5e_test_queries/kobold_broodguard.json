@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Broodguard",
+    "queries": [
+        {
+            "query": "small humanoid creature that fights in packs",
+            "variant": "small humanoid monster that battles in groups"
+        },
+        {
+            "query": "Kobold with sunlight sensitivity and pack tactics",
+            "variant": "Kobold with disadvantage in bright light and teamwork abilities"
+        },
+        {
+            "query": "creature that has a multiattack with Bill Hook and Spiked Shield",
+            "variant": "monster that can make multiple attacks with Bill Hook and Spiked Shield"
+        },
+        {
+            "query": "darkvision kobold that can bolster allies' morale",
+            "variant": "kobold with darkvision that boosts the morale of its allies"
+        },
+        {
+            "query": "frontline kobold fighter with high Armor Class",
+            "variant": "frontline kobold warrior that has a high AC"
+        }
+    ]
+}

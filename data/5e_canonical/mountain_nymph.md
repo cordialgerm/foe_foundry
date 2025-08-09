@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Nymph</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>112</HP>
 <summary>The Mountain Nymph is a Medium-sized fey creature with a chaotic neutral alignment. Known for her agility and cunning, she embodies the clever and elusive qualities often attributed to fey beings. With an Armor Class of 15, she is reasonably protected, aided by her leather armor. She has a substantial pool of Hit Points at 112, making her resilient in battle, and poses a Challenge Rating of 6, equating to 2,300 experience points for those who defeat her. The Mountain Nymph excels at stealth and ranged attacks, with skilled proficiency in Dexterity and Wisdom, allowing her to evade detection and react quickly to threats. However, her lack of exceptional physical strength and moderate Intelligence presents some limitations in direct confrontation.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, she can use a Multiattack to make three longbow attacks, leveraging h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Nymph
 
 *Medium* *Fey* *chaotic neutral*
@@ -54,5 +57,6 @@ At will: hunter’s mark
 - **Longbow:** Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 
 
+</statblock>
 
 

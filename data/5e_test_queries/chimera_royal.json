@@ -1,0 +1,25 @@
+{
+    "name": "Chimera, Royal",
+    "queries": [
+        {
+            "query": "huge three-headed monster with fire immunity",
+            "variant": "huge monster with three heads and immune to fire"
+        },
+        {
+            "query": "powerful spellcasting beast that combines different creatures",
+            "variant": "strong beast that casts spells and merges creatures"
+        },
+        {
+            "query": "monstrosity with high charisma and substantial hit points",
+            "variant": "creature with a lot of hit points and good charisma score"
+        },
+        {
+            "query": "regal chimera known for its magical attacks and high armor class",
+            "variant": "royal chimera with strong magical abilities and high AC"
+        },
+        {
+            "query": "evil creature living in darkness with resistance to nonmagical attacks",
+            "variant": "malevolent beast that resides in shadows and resists nonmagical damage"
+        }
+    ]
+}

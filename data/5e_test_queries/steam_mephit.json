@@ -1,0 +1,25 @@
+{
+    "name": "Steam Mephit",
+    "queries": [
+        {
+            "query": "small elemental creature that deals fire damage and creates steam clouds",
+            "variant": "elemental creature that is small and can cause fire damage with steam clouds"
+        },
+        {
+            "query": "monster that uses scalding steam and lives near geothermal vents",
+            "variant": "creature that exhale scalding steam, found in geothermal areas"
+        },
+        {
+            "query": "chaotic steam creature with the ability to fly and explode",
+            "variant": "flying steam monster that explodes and causes chaos"
+        },
+        {
+            "query": "elemental that can camouflage as a cloud of steam and causes confusion",
+            "variant": "steam elemental that disguises itself as a cloud and creates confusion"
+        },
+        {
+            "query": "small creature immune to fire and poisons, effective in ambush tactics",
+            "variant": "small monster that is immune to fire and poison, good for ambushing"
+        }
+    ]
+}

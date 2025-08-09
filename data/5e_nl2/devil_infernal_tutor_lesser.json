@@ -1,0 +1,53 @@
+{
+    "name": "Infernal Tutor, Lesser",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 feet walking speed",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "cunning",
+        "charismatic",
+        "manipulative",
+        "intelligent"
+    ],
+    "description": "The Infernal Tutor is a Medium fiend known for its superior Charisma and intelligence, using charm and cunning to sway others. It has a humanoid appearance in its true form and can change shape to mimic humanoids.",
+    "memorable": "The Devil\u2019s Sight ability allows it to see in magical darkness, making it adept at manipulation in obscured environments.",
+    "goals": "To manipulate others for its own advantage and to spread influence through deception.",
+    "relations": "Often encountered alongside other devils or fiendish entities that share its goals.",
+    "environment": "Typically found in infernal domains or locations where dark magic is prevalent.",
+    "strengths": "Possesses high Charisma for spellcasting and social manipulation, along with Magic Resistance that provides advantage on saving throws against magic.",
+    "weaknesses": "Vulnerable to magic attacks and silver weapons, which can bypass its resistances.",
+    "attacks": "Can deliver multiple attacks using Claws or Tutor's Batons, inflicting slashing or bludgeoning damage.",
+    "most_powerful_ability": "Fiendish Tutelage, which deals psychic damage to creatures in proximity and can severely affect their will to resist its spells.",
+    "equipment": null,
+    "senses": "Devil\u2019s Sight allows it to see through magical darkness.",
+    "skills": "Proficient in Deception and Persuasion, leveraging its Charisma to influence others.",
+    "additional_information": [
+        "Immune to fire and poison damage",
+        "Resistance to cold damage",
+        "Condition immunities include charmed, frightened, and poisoned",
+        "Has telepathy within 120 feet",
+        "Can cast spells without material components"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast spells including Bane, Calm Emotions, and Suggestion at will, with a focus on manipulation and control.",
+    "test_queries": [
+        "manipulative fiend that uses charm and magic",
+        "charming creature with psychic powers",
+        "fiend that can change shape and cast spells",
+        "medium devil known for influencing others",
+        "psychic damage dealer with devil's sight"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Wind Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium-sized dragon that can control wind and is resistant to cold damage",
+            "variant": "dragon of medium size that can control winds and immune to cold attacks"
+        },
+        {
+            "query": "chaotic neutral dragon with lightning immunity and strong melee attacks",
+            "variant": "chaotic dragon with strong melee attacks and immune to lightning"
+        },
+        {
+            "query": "dragon that has high Dexterity and can see through fog",
+            "variant": "dragon with great Dexterity and the ability to see through foggy areas"
+        },
+        {
+            "query": "storm-themed dragon with bludgeoning breath attack and evasion skills",
+            "variant": "dragon themed around storms with bludgeoning breath and skills for evasion"
+        },
+        {
+            "query": "Wind Dragon Wyrmling abilities in combat and environmental control",
+            "variant": "Wind Dragon Wyrmling powers for combat and controlling environment"
+        }
+    ]
+}

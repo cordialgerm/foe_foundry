@@ -1,0 +1,51 @@
+{
+    "name": "Lady in White",
+    "creature_type": "Undead",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 49,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 30 ft., hover",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "haunting",
+        "charismatic"
+    ],
+    "adjectives": [
+        "ghostly",
+        "sorrowful",
+        "stealthy"
+    ],
+    "description": "The Lady in White embodies sorrow and despair, haunting its environment with ghostly grace. It is incorporeal, allowing it to pass through solid objects.",
+    "memorable": "The ability to reduce a target's Charisma can lead to horrific consequences, including death and the rise of another Lady in White from a corpse.",
+    "goals": "To instill fear and sorrow, typically targeting humanoids.",
+    "relations": "Often encountered with other undead or creatures that thrive on fear.",
+    "environment": "Haunted locations, graveyards, or areas filled with despair.",
+    "strengths": "Immune to cold, necrotic, and poison damage; can become invisible; excels in stealth and psychological manipulation.",
+    "weaknesses": "Low strength makes it ineffective in physical combat; requires careful positioning due to potential force damage from its abilities.",
+    "attacks": "Grasp attack does necrotic damage and can attach to targets; capable of reducing Charisma with Inflict Sorrow.",
+    "most_powerful_ability": "Corpse Revealed ability frightens nearby non-undead creatures, creating a tense battlefield.",
+    "senses": "Passive Perception of 10.",
+    "skills": "Possesses exceptional Charisma for social interactions and spell-like abilities.",
+    "additional_information": [
+        "Has the ability to rise from the corpse of a slain female humanoid.",
+        "Invisibility allows for tactical repositioning during combat.",
+        "Incorporates psychological tactics into its attacks to instill fear.",
+        "Can traverse through objects, adding a layer of unpredictability.",
+        "Its signature attack weakens targets, making them easier to defeat."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ghostly figure causing sorrow",
+        "undead creature that reduces Charisma",
+        "invisible haunting monster with emotional attacks",
+        "fear-inducing spirit that flies",
+        "abomination rising from female corpses"
+    ]
+}

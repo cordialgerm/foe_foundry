@@ -1,0 +1,52 @@
+{
+    "name": "Ratatosk Warlord",
+    "creature_type": "Celestial",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 77,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "climb 25 ft., walk 25 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "celestial",
+        "tactical",
+        "leader"
+    ],
+    "adjectives": [
+        "cunning",
+        "swift",
+        "psychic"
+    ],
+    "description": "The Ratatosk Warlord is a small celestial creature known for its speed, agility, and tactical command abilities.",
+    "memorable": "It combines mobility with a powerful command over its kin, delivering significant damage through unique psychic attacks.",
+    "goals": "To lead and command, ambushing enemies with cunning tactics and psychological warfare.",
+    "relations": "Often accompanied by other ratatosks as its kin, serving under its tactical leadership.",
+    "environment": "Typically found in diverse environments where they can utilize their agility and cunning, likely amid other celestial beings.",
+    "strengths": "High Dexterity grants exceptional agility and evasiveness in battle, along with powerful psychic attacks.",
+    "weaknesses": "Low Strength makes it less effective in physical confrontations relying on brute force.",
+    "attacks": "Employs a Multiattack to deliver gore and Ratatosk shortspear strikes with potent psychic damage.",
+    "most_powerful_ability": "Chatter of War can debilitate opponents, imposing disadvantage on their attacks, shifting the tide of battle.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright light up to 60 feet.",
+    "skills": "Excels in Acrobatics and Intimidation, showcasing impressive agility and a commanding presence.",
+    "additional_information": [
+        "Can command other ratatosks to attack as a reaction.",
+        "Gains a bonus action for Dash or Disengage, enhancing its battlefield mobility.",
+        "Damage resistant against nonmagical bludgeoning, piercing, and slashing.",
+        "Delivers a strong combination of physical and psychic damage in attacks.",
+        "Remarkable for its tactical disruption abilities."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile celestial creature with psychic attacks",
+        "tactical leader that commands ratatosk allies",
+        "ratatosk warlord ambush tactics",
+        "swift celestial warrior with psychic damage",
+        "chaotic neutral celestial skillful in acrobatics"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Orobas Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 203,
+    "ac": 19,
+    "srd": false,
+    "cr": "14",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "magical",
+        "melee",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "powerful",
+        "deceptive"
+    ],
+    "description": "The Orobas Devil is a large fiend noted for its formidable presence, characterized by exceptional physical strength and resilience, and a mastery of fiery magic. It bears a cunning intellect, adorned with a shield and natural armor, giving it a fearsome appearance.",
+    "memorable": "Its combination of high damage output, versatile attacks, and the ability to detect Celestials make it a unique and dangerous adversary.",
+    "goals": "To deceive and destroy those who oppose it, particularly Celestial beings.",
+    "relations": "May serve alongside other powerful fiends or sinister entities.",
+    "environment": "Often found in hellish realms or locations of dark power.",
+    "strengths": "Immunity to fire and poison damage, advantage on saving throws against spells, and a strong suite of skills in deception and insight.",
+    "weaknesses": "Struggles against overwhelming magical power that can bypass its defenses.",
+    "attacks": "Utilizes a multiattack with a combination of melee and ranged attacks, including a powerful bite that inflicts piercing, fire, and poison damage.",
+    "most_powerful_ability": "The Hellish Weapons ability adds an extra 3d8 fire damage to its weapon attacks, increasing its lethality in combat.",
+    "equipment": "Natural armor and magical weapon attacks.",
+    "senses": "Possesses truesight up to 90 feet, allowing it to detect hidden foes and traps.",
+    "skills": "Excels in skills such as Deception, Insight, and Perception, providing it with an advantageous position in social and observational scenarios.",
+    "additional_information": [
+        "Can teleport up to 120 feet to an unoccupied space.",
+        "Advantage on Charisma (Deception) checks after casting a divination spell.",
+        "Restores strategic advantages with a reaction to gain advantage on ability checks or attacks."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Can cast spells like augury and guidance at will, enhancing its combat strategy and versatility.",
+    "test_queries": [
+        "devilish monster with deceptive abilities",
+        "large fiend with fiery attacks",
+        "Orobas Devil spells and tactics",
+        "powerful devil with telepathy and truesight",
+        "large creature immune to fire and poison"
+    ]
+}

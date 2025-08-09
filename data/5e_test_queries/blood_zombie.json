@@ -1,0 +1,25 @@
+{
+    "name": "Blood Zombie",
+    "queries": [
+        {
+            "query": "medium undead creature with life-draining abilities and high Constitution",
+            "variant": "undead medium creature that drains life and has a strong Constitution"
+        },
+        {
+            "query": "zombie that can siphon life and has low Dexterity living in darkness",
+            "variant": "zombie able to drain life and has a low Dexterity, residing in dark places"
+        },
+        {
+            "query": "creature with darkvision and blood drain ability that deals necrotic damage",
+            "variant": "monster with night vision and the ability to drain blood while causing necrotic harm"
+        },
+        {
+            "query": "zombie with temporary hit points and vulnerable to radiant damage",
+            "variant": "blood zombie gaining temporary hp and weak against radiant attacks"
+        },
+        {
+            "query": "undead with slam attack that regenerates health from melee hits",
+            "variant": "creature that has a melee slam attack and regains health from close combat damage"
+        }
+    ]
+}

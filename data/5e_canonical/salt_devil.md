@@ -1,6 +1,8 @@
 <MonsterName/>Salt Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Salt Devil is a medium-sized fiend embodying a lawful evil alignment, showcasing itself as a formidable adversary in combat. It possesses a respectable armor class of 13 and substantial hit points amounting to 93, making it capable of sustaining damage while dealing it effectively. With a Challenge Rating of 6, the Salt Devil presents a significant challenge for adventurers, yielding 2,300 experience points upon defeat. Notably, its dual resistance to fire and poison, along with the ability to become immune to certain non-magical attacks, allows it to withstand various forms of assault. However, despite its defensive capabilities, the Salt Devil has a vulnerability to silvered weapons, making it critical for opponents to exploit its weaknesses in combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Salt Devil can also teleport up to 120 feet, three times a day, to repositio
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salt Devil
 
 *Medium* *Fiend* *Lawful Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Water-Draining Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) slashing damage. If the target is a creature that isn’t a Construct or Undead, it must make a DC 15 Constitution saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. Plants, Oozes, and creatures with the Amphibious, Water Breathing, or Water Form traits have disadvantage on this saving throw. If the saving throw fails by 5 or more, the target also suffers one level of exhaustion.
 - **Teleport (3/Day):** The salt devil magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
 - **Summon Devil (1/Day):** The salt devil magically calls 1d4 gnolls that are Fiends with the salt devil’s damage resistances and immunities. The salt devil has a 25 percent chance of calling one salt devil instead. The called creatures arrive in 1d4 rounds, acting as allies of the devil and obeying its telepathic commands. The creatures remain for 1 hour, until the devil dies, or until the devil dismisses them as a bonus action.
+</statblock>
 
 

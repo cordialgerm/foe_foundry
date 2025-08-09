@@ -1,0 +1,56 @@
+{
+    "name": "Walled Horror",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "immobile except for movement through walls",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "psychic",
+        "fear",
+        "immobile",
+        "large"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "malevolent",
+        "resilient",
+        "fearsome"
+    ],
+    "description": "The Walled Horror is a large undead creature known for its chaotic appearance and the ability to move through walls, embodying malevolence and chaos.",
+    "memorable": "Its terrifying ability to make surprise attacks through walls and induce fear in opponents makes it a unique and formidable adversary.",
+    "goals": "To instill fear and chaos, incapacitating foes while utilizing its wall-bound uniqueness.",
+    "relations": "Could be encountered alongside other undead or creatures tied to necromancy.",
+    "environment": "Typically found in abandoned buildings, ruins, or areas with strong ties to spirits.",
+    "strengths": "High defenses, significant damage immunities, and the ability to move through walls to surprise foes.",
+    "weaknesses": "Its immobility limits movement and could be exploited by savvy opponents.",
+    "attacks": "Two spectral claw attacks dealing slashing and psychic damage, with an ability to grapple targets.",
+    "most_powerful_ability": "Spectral Scream, which inflicts significant psychic damage and can frighten targets.",
+    "equipment": null,
+    "senses": "Has truesight up to 60 feet, allowing it to see beyond the ordinary.",
+    "skills": null,
+    "additional_information": [
+        "Immune to necrotic, poison, and psychic damage.",
+        "Can only move within 120 feet of its bound wall.",
+        "Can repair its wall-bound form by resting.",
+        "Partially entombs creatures, rendering them blinded and restrained.",
+        "Can inflict grave fear with its psychic abilities."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fearsome undead wall creature",
+        "large monster that moves through walls",
+        "psychic damaging undead creature",
+        "chaotic evil undead that frightens enemies",
+        "immobile horror that deals psychic damage"
+    ]
+}

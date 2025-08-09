@@ -1,0 +1,54 @@
+{
+    "name": "Fragrant One",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 45,
+    "ac": 11,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., climb 20 ft.",
+    "role": "null",
+    "tags": [
+        "charm",
+        "psychic",
+        "manipulation",
+        "fey"
+    ],
+    "adjectives": [
+        "manipulative",
+        "charming",
+        "small",
+        "chaotic"
+    ],
+    "description": "The Fragrant One is a small fey creature known for its sweet-smelling pheromones and captivating charm abilities. It possesses notable features such as Phrenic Antennae capable of delivering psychic damage.",
+    "memorable": "Its ability to charm multiple creatures simultaneously enhances its combat effectiveness, making it a strategic manipulator in battle.",
+    "goals": "To charm and control others while avoiding physical confrontation.",
+    "relations": "Could be encountered with other charming or manipulative fey creatures.",
+    "environment": "Typically found in enchanted forests or areas rich with magical flora.",
+    "strengths": "Exceptional spellcasting capabilities with a focus on charm and manipulation; gains strength in battle from charmed allies.",
+    "weaknesses": "Low physical strength and poor defense make it vulnerable in direct combat situations.",
+    "attacks": "Uses Phrenic Antennae for melee spell attacks that inflict psychic damage and can incapacitate targets temporarily.",
+    "most_powerful_ability": "Fragrant Aura creates a zone that charms multiple enemies, allowing it to control the battlefield effectively.",
+    "equipment": null,
+    "senses": "Has a passive Perception score of 14, making it effective at detecting hidden threats.",
+    "skills": "Proficient in deception and persuasion, allowing it to manipulate social situations and influence others.",
+    "additional_information": [
+        "Immunity to charmed and frightened conditions",
+        "Can charm a maximum of six creatures at a time",
+        "Gains temporary hit points and increased damage from charmed allies",
+        "Has telepathy to communicate over distances",
+        "Can redirect attacks towards charmed allies"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "charming fey manipulator",
+        "small creature with pheromones",
+        "psychic damage from fragrant aura",
+        "manipulative creature with telepathy",
+        "fey that charms enemies in combat"
+    ]
+}

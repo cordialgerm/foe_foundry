@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Siege Engine",
+    "queries": [
+        {
+            "query": "huge construct that deals double damage to structures and has natural armor",
+            "variant": "massive construct with twofold damage to buildings and natural defense"
+        },
+        {
+            "query": "siege machine with immunity to poison and psychic damage",
+            "variant": "siege engine immune to poison and psychic attacks"
+        },
+        {
+            "query": "large goblin-created contraption that lacks intelligence but has high strength",
+            "variant": "big goblin-built device with low IQ but very high strength"
+        },
+        {
+            "query": "combat construct with acid jet attack and ability to escape grapples easily",
+            "variant": "battle machine that can spray acid and has an easy way to break free from grapples"
+        },
+        {
+            "query": "durable construct used in sieges with multiple slam attacks",
+            "variant": "tough machine for sieges capable of multiple slam strikes"
+        }
+    ]
+}

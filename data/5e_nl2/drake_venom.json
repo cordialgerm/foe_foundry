@@ -1,0 +1,52 @@
+{
+    "name": "Venom Drake",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 142,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "poison",
+        "dragon",
+        "venom"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "agile",
+        "toxic"
+    ],
+    "description": "The Venom Drake is a large dragon with powerful physique and deadly poison, known for its sleek scales that allow it to camouflage in nature.",
+    "memorable": "Its potent poison can incapacitate foes, making it a formidable opponent in battles.",
+    "goals": "Typically seeks to incapacitate and damage foes using its toxic abilities.",
+    "relations": "May serve other chaotic creatures or serve as an independent predator within its environment.",
+    "environment": "Found in natural terrains that allow for effective camouflage.",
+    "strengths": "Has high strength and constitution, making it robust in combat with potent poison and agile movement.",
+    "weaknesses": "Low charisma suggests difficulty in social interactions.",
+    "attacks": "Multiattack feature allows it to bite and claw or spit venom, with attacks dealing both piercing and poison damage.",
+    "most_powerful_ability": "Venom Breath unleashes a large line of poison damage potentially incapacitating multiple creatures.",
+    "senses": "Possesses keen smell, granting advantage on perception checks related to smell.",
+    "skills": "Good perception skills due to a high wisdom score.",
+    "additional_information": [
+        "Damage immunity to poison.",
+        "Condition immunity to poisoned.",
+        "Can camouflage effectively in natural terrain.",
+        "Multiattack capability makes it highly dangerous in combat.",
+        "Maintains a solid AC with natural armor."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "deadly large dragon with venom attacks",
+        "toxic dragon in natural camouflage",
+        "multiattack drake that spits poison",
+        "chaotic dragon with incapacitating poison",
+        "agile dragon known for venomous capabilities"
+    ]
+}

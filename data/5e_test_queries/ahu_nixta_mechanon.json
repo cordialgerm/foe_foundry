@@ -1,0 +1,25 @@
+{
+    "name": "Ahu-Nixta Mechanon",
+    "queries": [
+        {
+            "query": "mechanical creature that can heal itself and grapples enemies",
+            "variant": "healing mechanical creature with grappling abilities"
+        },
+        {
+            "query": "durable construct immune to poison and psychic damage",
+            "variant": "poison and psychic damage immune durable construct"
+        },
+        {
+            "query": "medium-sized automaton that uses sonic attacks",
+            "variant": "medium automaton using sonic abilities"
+        },
+        {
+            "query": "mechanon with strong melee attacks and control abilities",
+            "variant": "mechanical creature with powerful melee and control skills"
+        },
+        {
+            "query": "construct that can absorb souls to regain hit points",
+            "variant": "creature that absorbs souls for health regeneration"
+        }
+    ]
+}

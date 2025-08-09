@@ -1,0 +1,25 @@
+{
+    "name": "One-Headed Clockwork Dragon",
+    "queries": [
+        {
+            "query": "mechanical dragon with devastating abilities and telepathic communication",
+            "variant": "devastating abilities and telepathic communication mechanical dragon"
+        },
+        {
+            "query": "large construct dragon immune to poison and psychic damage",
+            "variant": "dragon immune to psychic and poison damage that is a large construct"
+        },
+        {
+            "query": "strong mechanical dragon that uses fire and oil attacks",
+            "variant": "mechanical dragon that uses fire attacks and oil and is very strong"
+        },
+        {
+            "query": "Dragon with high durability and special bound abilities",
+            "variant": "special bound abilities and high durability dragon"
+        },
+        {
+            "query": "tactical clockwork dragon that views non-wearers as enemies",
+            "variant": "tactical clockwork dragon which sees non-wearers as enemies"
+        }
+    ]
+}

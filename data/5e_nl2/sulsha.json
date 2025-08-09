@@ -1,0 +1,53 @@
+{
+    "name": "Sulsha",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "40 ft. walking and climbing",
+    "role": "Ambusher",
+    "tags": [
+        "climber",
+        "fear",
+        "bombs",
+        "melee",
+        "ranged"
+    ],
+    "adjectives": [
+        "imposing",
+        "lethal",
+        "versatile"
+    ],
+    "description": "The Sulsha is a large and imposing humanoid creature with a robust build. It possesses an aggressive demeanor with notable physical features for climbing.",
+    "memorable": "Its ability to frighten opponents with a terrifying display makes the Sulsha a unique threat in combat.",
+    "goals": "The Sulsha primarily seeks to dominate its opponents through fear and lethal tactics.",
+    "relations": "The Sulsha may be encountered alongside other evil humanoids or creatures that utilize similar fear tactics.",
+    "environment": "Typically found in environments with vertical elements, such as forests or cliffs.",
+    "strengths": "Excels in both melee and ranged attacks, can climb without provoking opportunity attacks, and has area damage abilities.",
+    "weaknesses": "Low Charisma score suggests inadequate social skills, making it less effective in diplomacy or persuasion.",
+    "attacks": "Utilizes a combination of physical attacks including a bite, a powerful slam, and a tail spur, alongside ranged bomb attacks.",
+    "most_powerful_ability": "Terrifying Display allows it to frighten creatures within 30 feet, potentially turning the tide of battle.",
+    "senses": "Passive Perception of 13 indicates a moderately keen awareness of its surroundings.",
+    "skills": "Proficient in acrobatics, athletics, perception, and survival, showcasing its adaptability and readiness in various situations.",
+    "additional_information": [
+        "Ability to jump long distances with Standing Leap",
+        "Advantage on attacks against climbing opponents",
+        "Bomb attack inflicts both bludgeoning and fire damage",
+        "Multiattack feature enhances combat effectiveness",
+        "Lacks charm, making it poor at social interactions"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large humanoid that climbs and attacks",
+        "monster capable of ranged bomb attacks",
+        "creature that frightens its enemies",
+        "agile fighter in tree environments",
+        "lawful evil humanoid with melee capabilities"
+    ]
+}

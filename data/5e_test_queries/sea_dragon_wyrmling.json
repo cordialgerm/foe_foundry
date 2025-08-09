@@ -1,0 +1,25 @@
+{
+    "name": "Sea Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium aquatic dragon that breathes cold and water",
+            "variant": "medium water dragon that can breathe cold and air"
+        },
+        {
+            "query": "dragon with cold immunity that lives in the sea",
+            "variant": "sea dragon immune to cold that resides in water"
+        },
+        {
+            "query": "dangerous dragon with a tidal breath attack",
+            "variant": "formidable dragon that has a tidal breath ability"
+        },
+        {
+            "query": "dragon with high charisma and amphibious abilities",
+            "variant": "charismatic dragon that can breathe in air and water"
+        },
+        {
+            "query": "strong dragon with piercing and cold damage attacks",
+            "variant": "powerful dragon that attacks with piercing and cold damage"
+        }
+    ]
+}

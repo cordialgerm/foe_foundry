@@ -1,0 +1,54 @@
+{
+    "name": "Eye of the Gods",
+    "creature_type": "Celestial",
+    "alignment": "any alignment (as its creator deity)",
+    "size": "Small",
+    "hp": 36,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 50 ft. hover",
+    "role": "Supporter",
+    "tags": [
+        "celestial",
+        "support",
+        "flying",
+        "magical"
+    ],
+    "adjectives": [
+        "small",
+        "divine",
+        "radiant"
+    ],
+    "description": "The Eye of the Gods is a small celestial creature that serves as a divine conduit for its creator deity, possessing a range of notable abilities.",
+    "memorable": "Offers truesight to allies and acts as a tactical conduit for its deity.",
+    "goals": "To assist its allies in combat and connect with its creator deity.",
+    "relations": "Serves its creator deity and can be summoned back to its side.",
+    "environment": "Typically found in settings associated with celestial beings or divine missions.",
+    "strengths": "Immunities to necrotic and poison damage, and exceptional Wisdom for high perception.",
+    "weaknesses": "Vulnerable to magical attacks.",
+    "attacks": "Can perform a Slam attack dealing radiant or necrotic damage.",
+    "most_powerful_ability": "Divine Inspiration enhances allies' saving throws against fear.",
+    "equipment": null,
+    "senses": "Possesses truesight that extends 120 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Has a +9 bonus in perception, making it highly adept at noticing threats.",
+    "additional_information": [
+        "Ethereal Jaunt allows it to shift between planes as a bonus action.",
+        "Blazing Nimbus deals damage to hostile creatures that come too close.",
+        "Corona of Truth grants allies truesight within a specified range.",
+        "Divine Conduit creates a bond with its deity for tactical advantages.",
+        "Immune to conditions such as charmed and exhausted."
+    ],
+    "damage_types": [
+        "radiant",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial creature that provides truesight",
+        "small divine being with flying speed",
+        "ally that inspires against fear attacks",
+        "creature with divine connection to a deity",
+        "flying creature immune to poison damage"
+    ]
+}

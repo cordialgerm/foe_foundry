@@ -1,0 +1,50 @@
+{
+    "name": "Adult Flame Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Huge",
+    "hp": 275,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "fire",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "destructive"
+    ],
+    "description": "The Adult Flame Dragon embodies chaos and destruction, with an impressive wingspan and smoldering scales. Its presence exudes power, augmented by its fiery breath and blazing attacks.",
+    "memorable": "It possesses the terrifying ability to instill fear in foes with its Frightful Presence and can wreak havoc with its Fire Breath, causing extensive fire damage.",
+    "goals": "To dominate its territory, inflict chaos, and destroy its enemies through fire and intimidation.",
+    "relations": "It may command lesser fire-based creatures and could be associated with other chaotic beings.",
+    "environment": "Commonly found in volcanic regions, fiery caves, or places associated with intense heat.",
+    "strengths": "Immunity to fire damage and high durability due to substantial hit points and saving throw proficiencies.",
+    "weaknesses": "Vulnerable to non-magical attacks and lacks resistances beyond fire damage.",
+    "attacks": "Utilizes a combination of piercing bites, slashing claws, and bludgeoning tail strikes, alongside devastating fire breath attacks.",
+    "most_powerful_ability": "Fire Breath, allowing it to exhale a devastating 60-foot cone of fire, inflicting massive damage and potentially causing targets to rampage.",
+    "equipment": null,
+    "senses": "The dragon has blindsight up to 60 feet, enabling it to detect foes in darkness or invisibility.",
+    "skills": "Excels in Deception, Persuasion, and has exceptional Perception, making it a cunning and observant opponent.",
+    "additional_information": [
+        "Can shift forms to become a fire-based elemental with different capabilities.",
+        "Has the ability to knock foes prone with its Wing Attack and reposition itself.",
+        "Utilizes Legendary Resistance to avoid negative effects from spells."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fierce fire dragon",
+        "chaotic evil dragon",
+        "devastating flame creature",
+        "intimidating fire-based monster",
+        "legendary dragon abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Roc",
+    "queries": [
+        {
+            "query": "enormous bird that preys on large animals and lives in the mountains",
+            "variant": "massive bird that hunts big creatures and resides in mountainous areas"
+        },
+        {
+            "query": "territorial bird that can carry off elephants and has keen sight",
+            "variant": "territorial avian that can swoop up elephants and possesses excellent vision"
+        },
+        {
+            "query": "gargantuan predator that can swim and shrieks to frighten enemies",
+            "variant": "huge predator capable of swimming and yells to scare foes"
+        },
+        {
+            "query": "massive flying beast with a powerful beak and talons",
+            "variant": "large flying creature with a strong beak and claws"
+        },
+        {
+            "query": "bird of prey that can deal double damage to structures and has high hit points",
+            "variant": "raptor that inflicts double damage to buildings and possesses a large hit point pool"
+        }
+    ]
+}

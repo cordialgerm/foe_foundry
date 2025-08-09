@@ -1,0 +1,49 @@
+{
+    "name": "Grolar Bear",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 68,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 ft. walking, 30 ft. swimming, 20 ft. climbing",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "carnivore",
+        "large beast"
+    ],
+    "adjectives": [
+        "formidable",
+        "fierce",
+        "powerful"
+    ],
+    "description": "The Grolar Bear is a large beast with exceptional physical strength and resilience, showcasing its power as a predator in diverse terrains.",
+    "memorable": "Its ability to knock opponents prone with a powerful combination of bite and claw attacks makes it a dangerous foe.",
+    "goals": "Typically hunts and ambushes prey, driven by instinct rather than strategy.",
+    "relations": "Related to other large bears, it may be encountered alongside similar apex predators.",
+    "environment": "Commonly found in wilderness areas where it has access to land, water, and trees for climbing.",
+    "strengths": "Possesses high strength and solid hit points, making it both a dangerous attacker and a resilient combatant.",
+    "weaknesses": "Low intelligence limits strategic capabilities, making it rely on brute force.",
+    "attacks": "Can perform a multiattack with powerful bite and claws, dealing significant damage.",
+    "most_powerful_ability": "Keen Smell allows it to track creatures more effectively through smell.",
+    "senses": "Has a passive Perception of 13, reflecting decent awareness of its surroundings.",
+    "skills": "Has a bonus to Perception, indicating average awareness.",
+    "additional_information": [
+        "Excellent mobility with proficient swimming and climbing speeds.",
+        "Resistant to cold damage.",
+        "Driven by instinct, reflecting its low intelligence.",
+        "Uses brute strength to dominate opponents in combat.",
+        "Can knock foes prone to enhance attack opportunities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large bear predator with strong smell",
+        "formidable bear that can swim and climb",
+        "powerful beast with knock prone attack",
+        "instinct-driven bear found in wilderness",
+        "bear with keen sense of smell and high strength"
+    ]
+}

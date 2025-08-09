@@ -1,0 +1,51 @@
+{
+    "name": "Plaresh",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 30,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "burrow 30 ft., swim 30 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "burrower",
+        "swarm"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evil",
+        "agile"
+    ],
+    "description": "The Plaresh is a Medium-sized Fiend with a chaotic evil disposition, possessing grinding maws for burrowing through solid materials, and a small, worm-like physique. It is highly dexterous but physically weak, relying on agility in combat.",
+    "memorable": "It can inflict permanent penalties on nonmagical armor and raise new Plaresh from humanoid corpses.",
+    "goals": "To inflict damage and wreak havoc while expanding its numbers.",
+    "relations": "Typically encountered alone or in small numbers, often created by other malevolent beings.",
+    "environment": "Commonly found in dark, underground lairs or areas near humanoid settlements to target unsuspecting victims.",
+    "strengths": "High agility with significant damage immunities and resistances, and can burrow through various materials.",
+    "weaknesses": "Extremely low physical strength and poor social attributes, making it vulnerable outside of combat.",
+    "attacks": "It can perform a Bite attack that deals significant piercing and poison damage, potentially weakening the armor of its target.",
+    "most_powerful_ability": "Infest Corpse, allowing it to resurrect from humanoid remains, increasing its threat in combat.",
+    "senses": "Possesses blindsight out to 30 ft. and tremorsense out to 60 ft., allowing it to detect vibrations and movement nearby.",
+    "skills": null,
+    "additional_information": [
+        "Damage immunities to poison and resistances to cold, fire, and lightning.",
+        "Can create bore holes that weaken structural materials.",
+        "Advantage on saving throws against spells and magical effects.",
+        "Swarm ability allows occupying the space of other creatures.",
+        "Preferred tactic is to weaken opponents by targeting their armor."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil fiend that can burrow",
+        "fiend that infests humanoid corpses",
+        "creature with high agility and poison attack",
+        "worm-like monster with grinding maws",
+        "creepy fiend that loves to weaken armor"
+    ]
+}

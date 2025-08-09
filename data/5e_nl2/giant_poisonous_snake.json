@@ -1,0 +1,52 @@
+{
+    "name": "Giant Poisonous Snake",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 14,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 feet walking and swimming",
+    "role": "Ambusher",
+    "tags": [
+        "snake",
+        "poisonous",
+        "predator"
+    ],
+    "adjectives": [
+        "venomous",
+        "stealthy",
+        "agile",
+        "large"
+    ],
+    "description": "A massive serpent over 20 feet long with venomous fangs.",
+    "memorable": "Its venom can paralyze or kill small to medium-sized creatures.",
+    "goals": "To ambush and prey on unsuspecting creatures.",
+    "relations": "Typically found alone or in pairs, can be related to other serpents.",
+    "environment": "Jungles, swamps, or dense wilderness areas.",
+    "strengths": "Excellent ambush predator with good agility and venomous attacks.",
+    "weaknesses": "Low hit points, making it susceptible to damage.",
+    "attacks": "Bite attack that deals piercing damage and venom damage on a failed Constitution save.",
+    "most_powerful_ability": "Delivers significant poison damage if the target fails to resist.",
+    "senses": "Possesses blindsight to detect prey within 10 feet.",
+    "skills": "Has proficiency in Perception, enhancing its tracking abilities.",
+    "additional_information": [
+        "Can blend into its surroundings to become difficult to spot.",
+        "Utilizes swift movements to evade attacks.",
+        "Highly adaptable to different environments.",
+        "Employs constricting abilities in addition to its bite.",
+        "Uses ambush tactics to ensure successful strikes."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large venomous snake in the jungle",
+        "stealthy snake that paralyzes prey",
+        "ambush predator found in swamps",
+        "fast swimming snake with deadly bite",
+        "massive serpent with paralyzing venom"
+    ]
+}

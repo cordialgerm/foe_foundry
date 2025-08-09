@@ -1,0 +1,25 @@
+{
+    "name": "Edimmu",
+    "queries": [
+        {
+            "query": "undead creature that drains life force",
+            "variant": "undead monster that takes life force"
+        },
+        {
+            "query": "creature with high Dexterity that moves through objects",
+            "variant": "monster with great Dex and can pass through objects"
+        },
+        {
+            "query": "chaotic evil undead that can resurrect itself",
+            "variant": "chaotic evil zombie that comes back to life"
+        },
+        {
+            "query": "medium undead that hates water-based creatures",
+            "variant": "medium undead that has a disadvantage against water-based creatures"
+        },
+        {
+            "query": "creature with regeneration and necrotic damage immunity",
+            "variant": "monster with healing abilities and immunity to necrotic damage"
+        }
+    ]
+}

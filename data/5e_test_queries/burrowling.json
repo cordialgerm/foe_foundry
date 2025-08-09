@@ -1,0 +1,25 @@
+{
+    "name": "Burrowling",
+    "queries": [
+        {
+            "query": "small humanoid that lives underground and uses team tactics",
+            "variant": "small underground humanoid that uses tactics with allies"
+        },
+        {
+            "query": "creature with darkvision that excels in cooperative combat",
+            "variant": "creature that has darkvision and is good at cooperative battles"
+        },
+        {
+            "query": "Burrowling abilities in combat with allies and perception skills",
+            "variant": "combat tactics of Burrowling and its perception abilities"
+        },
+        {
+            "query": "humanoid with burrowing capabilities and good Dexterity",
+            "variant": "humanoid that can burrow and has high Dexterity"
+        },
+        {
+            "query": "small creature that attacks with claws and bite while burrowing",
+            "variant": "small creature that uses claws and bite attacks during burrowing"
+        }
+    ]
+}

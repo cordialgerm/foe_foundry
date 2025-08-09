@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Manabane Scarabs",
+    "queries": [
+        {
+            "query": "swarm of insects that disrupts magic and drains magic items",
+            "variant": "insect swarm that drains magic items and disrupts spells"
+        },
+        {
+            "query": "creature with blindsight that is immune to many conditions",
+            "variant": "monster that has blindsight and is immune to several conditions"
+        },
+        {
+            "query": "magical pest that targets spellcasters and has high dexterity",
+            "variant": "pest that targets magic users and has good dexterity"
+        },
+        {
+            "query": "beast swarm that cannot regain hit points and excels against magic",
+            "variant": "beast that cannot regain hp and is strong against magic"
+        },
+        {
+            "query": "creature with low strength that uses biting attacks and magic resistance",
+            "variant": "monster with weak strength that uses bites and has magic resistance"
+        }
+    ]
+}

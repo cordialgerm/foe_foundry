@@ -1,6 +1,8 @@
 <MonsterName/>Treant</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>138</HP>
 <summary>A Treant is a towering, sentient tree-like creature that serves as a guardian of the forest. Standing over 20 feet tall, Treants have bark-like skin, branches for arms, and roots for legs. They are wise and ancient beings, deeply connected to nature, and they often act as protectors of their woodland homes. In combat, Treants use their massive strength to crush enemies and can animate trees to fight alongside them. They are generally peaceful, preferring to live in harmony with the natural world, but they will not hesitate to defend their forests from those who seek to harm them.</summary>
 
 <summary>The Treant is a powerful, huge plant creature that serves as a guardian of forests and natural spaces. With a formidable Armor Class of 18 and a significant pool of Hit Points totaling 138, the Treant is a tough opponent in battle. Its primary strengths lie in its robust physical stats, boasting an impressive Strength of 22 (+6) which makes its melee attacks particularly dangerous. However, its Dexterity score is quite low at 8 (-1), indicating that it is not very nimble, which could be a vulnerability against faster adversaries. With a Challenge Rating of 9, the Treant is a challenging foe for adventurers, especially as it can resist bludgeoning and piercing damage. Notably, the Treant's ability to animate plants and communicate with creatures of the forest adds to its role as a protector and manipulator of its environment.</summary>
@@ -29,6 +31,7 @@ Overall, the Treant is a formidable foe, able to deal substantial damage, contro
 
 Source: 5e_srd
 
+<statblock>
 ## Treant
 
 *Huge plant, chaotic good*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ***Rock***. *Ranged Weapon Attack:* +10 to hit, range 60/180 ft., one target. *Hit:* 28 (4d10+6) bludgeoning damage.
 
-***Animate Trees (1/Day)***. The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.
+***Animate Trees (1/Day)***. The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Treant
 
 *Huge* *Plant*
@@ -107,5 +112,6 @@ Source: 5e_artisinal_monsters
 - **Animate Plant:** The treant magically animates a Large or larger plant within 60 feet. The plant is immobile  but it acts on the treants initiative and can make slam attacks  or rock attacks if there are rocks to throw within 10 feet of it. Non-plant creatures treat the ground within 15 feet of the plant as difficult terrain  as surrounding roots conspire to trip and grasp moving creatures. The plant remains animated for 1 hour. If the treant uses this action while it has three plants animated in this way  the plant that has been animated the longest returns to normal.
 
 
+</statblock>
 
 

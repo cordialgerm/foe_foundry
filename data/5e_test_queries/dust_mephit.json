@@ -1,0 +1,25 @@
+{
+    "name": "Dust Mephit",
+    "queries": [
+        {
+            "query": "small dust elemental that blinds enemies in deserts",
+            "variant": "little sand elemental which can blind foes in deseret areas"
+        },
+        {
+            "query": "creature made of dust and sand that can cause confusion",
+            "variant": "monster of sand and dust that can confuse opponents"
+        },
+        {
+            "query": "deceptive flying creature known for its blinding dust breath",
+            "variant": "tricky flying monster famous for its dust breath that blinds"
+        },
+        {
+            "query": "mischievous creature found in ruins that can put enemies to sleep",
+            "variant": "playful monster located in ruins that can make foes sleep"
+        },
+        {
+            "query": "dust creature that explodes on death and blinds nearby foes",
+            "variant": "dust monster that bursts when it dies, blinding close enemies"
+        }
+    ]
+}

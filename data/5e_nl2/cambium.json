@@ -1,0 +1,52 @@
+{
+    "name": "Cambium",
+    "creature_type": "Fiend",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 264,
+    "ac": 19,
+    "srd": false,
+    "cr": "14",
+    "movement": "30 ft. walking and 40 ft. flying",
+    "role": null,
+    "tags": [
+        "fiend",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "powerful"
+    ],
+    "description": "The Cambium is a large fiend with robust features and natural armor, designed for both melee and ranged attacks.",
+    "memorable": "It twists the bodily humors of its enemies, inflicting various debilitating effects.",
+    "goals": "To manipulate and incapacitate its foes through cunning and deceitful tactics.",
+    "relations": "Related to other fiends, often working alone or in small groups.",
+    "environment": "Typically found in realms of darkness or despair, where it can exert its nefarious influence.",
+    "strengths": "High hit points, powerful melee and ranged attacks, versatile spellcasting abilities.",
+    "weaknesses": "None specifically mentioned, but its manipulative tactics can be countered.",
+    "attacks": "Melee attack with Needle Fingers for piercing damage and a ranged Poison Ray that inflicts poison status.",
+    "most_powerful_ability": "Ability to twist bodily humors, causing significant debuffs to enemies.",
+    "equipment": null,
+    "senses": "It has darkvision allowing it to see in low-light conditions up to 60 feet.",
+    "skills": "Highly proficient in deception, stealth, and arcana, showcasing its cunning nature.",
+    "additional_information": [
+        "Immune to poison damage and conditions like exhaustion.",
+        "Can alter its appearance and perceive thoughts through spells.",
+        "Can create debilitating conditions like Sanguine Flux and Choleric Flux.",
+        "Capable of casting powerful spells like hold person and protection from poison.",
+        "Can fly, enhancing its battlefield mobility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast spells including alter self, detect thoughts, and hold person with a DC of 17.",
+    "test_queries": [
+        "large fiend with poison abilities",
+        "cunning creature that inflicts debuffs",
+        "fiend that can fly and manipulate humors",
+        "powerful fiend with versatile spellcasting",
+        "Cambium abilities and weaknesses"
+    ]
+}

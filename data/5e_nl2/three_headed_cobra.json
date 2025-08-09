@@ -1,0 +1,53 @@
+{
+    "name": "Three-Headed Cobra",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 feet walking speed, 30 feet swimming speed",
+    "role": null,
+    "tags": [
+        "snake",
+        "monstrosity",
+        "multi-headed"
+    ],
+    "adjectives": [
+        "fast",
+        "durable",
+        "reactive",
+        "venomous"
+    ],
+    "description": "The Three-Headed Cobra is a formidable creature with three heads, each capable of delivering a venomous bite. It is large in size, agile, and possesses a sleek, scaly body.",
+    "memorable": "Its three heads allow it to attack multiple times and provide it with enhanced awareness and resilience against control effects.",
+    "goals": "Typically aggressive, it seeks to ambush prey and defend its territory using its speed and biting attacks.",
+    "relations": "Related to other giant snakes and cobras, could be encountered alongside venomous wildlife.",
+    "environment": "Commonly found in swamps, jungles, or any area with access to both land and water.",
+    "strengths": "Quick and highly reactive, boasting a multiattack feature that allows it to strike multiple times in one turn.",
+    "weaknesses": "Low intelligence and charisma, limiting its problem-solving abilities and interactions outside combat.",
+    "attacks": "Delivers three venomous bite attacks in a single turn, with a significant reach and the potential for ongoing poison damage.",
+    "most_powerful_ability": "The Reactive Heads ability grants it additional reactions for opportunity attacks, increasing its threat during combat.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": "Has a decent perception skill, enhancing its ability to notice hidden creatures or objects.",
+    "additional_information": [
+        "Gains advantage on Wisdom (Perception) checks due to having three heads.",
+        "Resilient against being blinded or charmed thanks to its multiple heads.",
+        "Always has one awake head, providing it with protection during rest.",
+        "Highly resistant to poison damage.",
+        "Engages in opportunistic strikes as foes attempt to flee."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "three-headed venomous snake",
+        "large cobra with multiple heads",
+        "fast swimming snake monster",
+        "agile beast that can poison",
+        "multi-headed creature with reactive abilities"
+    ]
+}

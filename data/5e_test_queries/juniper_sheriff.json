@@ -1,0 +1,25 @@
+{
+    "name": "Juniper Sheriff",
+    "queries": [
+        {
+            "query": "fey creature that enforces honesty and can see through lies",
+            "variant": "fey being that promotes truth and is capable of detecting deceit"
+        },
+        {
+            "query": "small fey guardian with a speed of 40 feet",
+            "variant": "little fey protector that moves at 40 feet"
+        },
+        {
+            "query": "creature with an aura that prevents lying and has darkvision",
+            "variant": "being with a truth-enforcing aura and the ability to see in darkness"
+        },
+        {
+            "query": "Juniper Sheriff abilities related to truth and memory",
+            "variant": "Juniper Sheriff skills connected to truthfulness and recollection"
+        },
+        {
+            "query": "small fey known for its perception and psychic attack",
+            "variant": "little fey recognized for its perception skills and psychic abilities"
+        }
+    ]
+}

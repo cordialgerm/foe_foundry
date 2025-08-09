@@ -1,0 +1,53 @@
+{
+    "name": "Duergar",
+    "creature_type": "Humanoid",
+    "creature_subtype": "dwarf",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 26,
+    "ac": 16,
+    "srd": true,
+    "cr": "1",
+    "movement": "25 feet average speed",
+    "role": "Skirmisher",
+    "tags": [
+        "duergar",
+        "dwarf",
+        "underdark",
+        "invisibility"
+    ],
+    "adjectives": [
+        "grim",
+        "stony-skinned",
+        "cruel",
+        "militaristic"
+    ],
+    "description": "Duergar are grim, stony-skinned dwarves with ashen complexion and faintly glowing red eyes, adept for their underground dwelling. They are known for their militaristic culture and cruel treatment of other creatures.",
+    "memorable": "Duergar can turn invisible or enlarge themselves, making them particularly dangerous in combat, and they are notorious for their deep enmity towards surface-dwelling dwarves.",
+    "goals": "Expand their subterranean empire through mining and subjugation of other creatures.",
+    "relations": "Often associated with other dwarves and may come into conflict with surface-dwelling races.",
+    "environment": "Commonly found deep underground in the Underdark.",
+    "strengths": "Possess Duergar Resilience granting them advantages against spells and effects like charm or paralysis.",
+    "weaknesses": "Sunlight Sensitivity causes them to suffer disadvantages on attacks and perception checks in sunlight.",
+    "attacks": "Wields a War Pick and Javelin, capable of significant damage especially when enlarged.",
+    "most_powerful_ability": "Can magically enlarge itself, doubling damage on attacks and granting advantage on Strength checks, making them formidable foes.",
+    "equipment": "Equipped with scale mail and a shield for defense.",
+    "senses": "Possesses darkvision with a range of 120 feet, allowing them to see in darkness.",
+    "skills": "Has proficient stealth abilities, making them adept at ambush tactics.",
+    "additional_information": [
+        "Can enslave other creatures for labor in their mines.",
+        "Their society is harsh and ruled by a strict hierarchy.",
+        "Known for their bitter enmity towards surface dwarves.",
+        "Exhibit abilities to resist poison, spells, and illusions.",
+        "Poses a unique threat due to its magical invisibility."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "grumpy dwarf that turns invisible",
+        "stone-skinned creature from the Underdark",
+        "dwarven creature that enlarges in battle",
+        "duergar stealth tactics and appearance",
+        "dark-skinned dwarf with magical abilities"
+    ]
+}

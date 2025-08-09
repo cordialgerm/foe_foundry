@@ -1,0 +1,25 @@
+{
+    "name": "Karkadann",
+    "queries": [
+        {
+            "query": "huge monster with impressive physical abilities and a special charging attack",
+            "variant": "large creature known for its strong physical attacks and a unique impaling ability"
+        },
+        {
+            "query": "monster that can grapple and restrain opponents while dealing piercing damage",
+            "variant": "creature capable of grappling foes and inflicting ongoing piercing damage"
+        },
+        {
+            "query": "tough monstrosity with natural armor and high hit points lurking in combat",
+            "variant": "sturdy creature with natural protection and substantial hit points found in battles"
+        },
+        {
+            "query": "Karkadann abilities and tactics for a challenging encounter",
+            "variant": "Karkadann skills and strategies for a difficult battle"
+        },
+        {
+            "query": "creature immune to poison with magic resistance to spells",
+            "variant": "monster resistant to poison and having an advantage against spell effects"
+        }
+    ]
+}

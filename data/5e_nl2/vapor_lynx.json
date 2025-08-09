@@ -1,0 +1,51 @@
+{
+    "name": "Vapor Lynx",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Neutral",
+    "size": "Large",
+    "hp": 127,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet walk speed",
+    "role": "Skirmisher",
+    "tags": [
+        "stealthy",
+        "poison",
+        "fog"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "agile"
+    ],
+    "description": "The Vapor Lynx is a large, agile creature that blends into foggy or misty environments, characterized by its sleek form and adaptability to its surroundings.",
+    "memorable": "This creature is unique for its ability to navigate through fog effortlessly and unleash poisonous breath attacks, creating heavily obscured areas.",
+    "goals": "Typically seeks to ambush prey or defend its territory using stealth and environmental manipulation.",
+    "relations": "Often related to or found alongside other mist-dwelling creatures that thrive in obscured environments.",
+    "environment": "Commonly found in foggy swamps or misty wooded areas.",
+    "strengths": "Exceptional agility and stealth thanks to a high Dexterity score, allowing it to move and attack with surprising speed.",
+    "weaknesses": "Average Intelligence may limit its tactical combat strategies.",
+    "attacks": "Multiattack with powerful Bite and Claw attacks, featuring significant piercing and slashing damage.",
+    "most_powerful_ability": "Poison Breath, which creates a hazardous zone of poisonous fog that obscures vision and deals damage over time.",
+    "equipment": null,
+    "senses": "Has darkvision as well as significant perception skills, excelling in detecting hidden threats.",
+    "skills": "Boasts proficiency in Stealth and Perception, enhancing its elusive nature.",
+    "additional_information": [
+        "Immune to poison damage and cannot be poisoned.",
+        "Can move through narrow spaces in fog without penalty.",
+        "Sees through fog, mist, and steam without being hindered.",
+        "Teleports short distances through fog, allowing for quick escapes."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy fog creature with poison breath",
+        "large creature that navigates mist effortlessly",
+        "monster that attacks with claws and poison fog",
+        "agile lynx that blends into fog",
+        "chaotic creature found in misty environments"
+    ]
+}

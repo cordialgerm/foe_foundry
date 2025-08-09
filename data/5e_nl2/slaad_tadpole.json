@@ -1,0 +1,53 @@
+{
+    "name": "Slaad Tadpole",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Neutral",
+    "size": "Tiny",
+    "hp": 10,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 ft.",
+    "role": null,
+    "tags": [
+        "tadpole",
+        "chaotic",
+        "aberration"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic"
+    ],
+    "description": "A small, wriggling tadpole with a chaotic nature and distinct characteristics.",
+    "memorable": "Its ability to resist magic makes it a unique threat compared to typical weak creatures.",
+    "goals": "Typically seeks to survive and grow, often hiding to avoid danger.",
+    "relations": "Related to larger Slaad creatures, it might be found near them or in the same environment.",
+    "environment": "Often found in chaotic or wild areas where its larger kin dwell.",
+    "strengths": "Has resistance to various elemental damage types.",
+    "weaknesses": "Low health and poor physical stats make it vulnerable in direct combat.",
+    "attacks": "Uses a bite attack to inflict piercing damage.",
+    "most_powerful_ability": "Magic Resistance allows it to avoid many harmful spells.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Possesses a stealth skill, allowing it to remain concealed from prying eyes.",
+    "additional_information": [
+        "Resistant to acid, cold, fire, lightning, and thunder damage.",
+        "Understands the Slaad language but cannot speak.",
+        "Chaotic nature influences its behavior and interactions."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic tiny tadpole with magic resistance",
+        "small monster that resists elemental damage",
+        "tiny aberration that seeks to survive",
+        "tadpole-like creature that bites foes",
+        "stealthy tadpole living in chaotic areas"
+    ]
+}

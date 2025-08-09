@@ -1,0 +1,53 @@
+{
+    "name": "Felid Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 275,
+    "ac": 18,
+    "srd": false,
+    "cr": "19",
+    "movement": "walk 40 ft., fly 80 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "flying",
+        "poison",
+        "ambush"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "stealthy"
+    ],
+    "description": "The Felid Dragon has remarkable speed and agility, capable of both aerial and terrestrial combat. It has a sleek, agile body with sharp claws and a powerful bite.",
+    "memorable": "Its ability to use a deafening roar and unleash a sickening bile attack makes encounters with this dragon particularly challenging.",
+    "goals": "To dominate its territory and take down intruders using cunning ambush tactics.",
+    "relations": "It could be encountered with other dragons, particularly creatures that rely on stealth and mobility.",
+    "environment": "Typically found in mountainous or secluded, remote areas.",
+    "strengths": "Exceptional Dexterity score grants it high agility and evasiveness in combat. Also possesses magic resistance.",
+    "weaknesses": "Although challenging, it may still rely on terrain and strategic positioning for maximum effectiveness in combat.",
+    "attacks": "Makes three attacks in a single turn: a powerful bite and two punishing claw strikes, with additional debilitating effects.",
+    "most_powerful_ability": "Sickening Bile attack can deal significant poison damage and impose the poisoned condition over a wide area.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, enhancing its ability to detect hidden foes.",
+    "skills": "Excels in Stealth with a +16 proficiency, making it a master ambush predator.",
+    "additional_information": [
+        "Immunities to poison damage and conditions such as being poisoned or prone.",
+        "Flyby ability prevents it from provoking opportunity attacks while flying.",
+        "Keen Smell grants advantage on Perception checks that rely on scent.",
+        "Pounce ability allows it to knock creatures prone with a successful claw attack, followed by a bite as a bonus action.",
+        "Deafening Roar can incapacitate multiple foes but allows saves to reduce the effect."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile dragon with deafening roar",
+        "huge dragon that attacks with bile",
+        "stealthy dragon with keen senses",
+        "dragon that uses pounce and claws",
+        "poison immune flying creature"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Graknork",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 201,
+    "ac": 20,
+    "srd": false,
+    "cr": "14",
+    "movement": "50 ft. walking speed and 30 ft. swimming speed",
+    "role": "Bruiser",
+    "tags": [
+        "cold damage",
+        "multiattack",
+        "melee and ranged attack"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "icy",
+        "powerful"
+    ],
+    "description": "Graknork is a massive, formidable monstrosity with sharp claws and a powerful bite, capable of swift movement through both land and water.",
+    "memorable": "It can unleash an icy beam that restrains its targets, combined with devastating melee attacks, making it a strong threat in battle.",
+    "goals": "To dominate its environment through raw strength and powerful icy attacks against foes.",
+    "relations": "May be encountered alongside other monstrous creatures in cold regions or deep waters.",
+    "environment": "Commonly found in cold waters or icy terrains.",
+    "strengths": "Exceptional physical capabilities, solid defenses, and a variety of powerful attacks.",
+    "weaknesses": "Low intelligence and charisma, making it vulnerable to manipulation.",
+    "attacks": "Graknork can perform a multiattack that includes a powerful bite and claw attacks, as well as a freezing eye ray that can immobilize enemies.",
+    "most_powerful_ability": "Freezing Eye, which can deal substantial cold damage and restrain targets in a broad line.",
+    "equipment": null,
+    "senses": "Graknork has keen sight, giving it an advantage on perception checks that rely on sight.",
+    "skills": "It possesses a high perception skill, allowing it to notice its environment effectively.",
+    "additional_information": [
+        "Damage immunities to cold",
+        "Resistances against non-magical bludgeoning, piercing, and slashing",
+        "Ability to knock creatures prone with successful claw attacks",
+        "Can unleash its special ability to freeze enemies in place, altering battle dynamics",
+        "Vulnerable to effects that target intelligence or charisma"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan icy monstrosity with freezing attacks",
+        "powerful melee monster that swims fast",
+        "monster that restrains enemies with ice beam",
+        "large monster with sharp claws and icy breath",
+        "cold-resistant creature with incredible strength"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Oliphaunt",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 148,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "gargantuan",
+        "beast",
+        "combat"
+    ],
+    "adjectives": [
+        "immense",
+        "powerful",
+        "formidable"
+    ],
+    "description": "The Oliphaunt is a gargantuan beast known for its immense strength and formidable presence on the battlefield, characterized by its massive size and trunk.",
+    "memorable": "The Oliphaunt can trample foes and grapple enemies with its powerful trunk, serving as a living tank.",
+    "goals": "Often used in combat scenarios to dominate the battlefield and overpower opponents.",
+    "relations": "Related to other large beasts and may be encountered together with similar creatures in combat.",
+    "environment": "Typically found in areas where it can charge at enemies, often in forested or open terrains.",
+    "strengths": "Exceptional Strength score enables it to deliver devastating melee attacks and control the battlefield.",
+    "weaknesses": "Very low Dexterity makes it cumbersome and vulnerable to agile attacks.",
+    "attacks": "Uses its trunk to grapple, followed by either a powerful gore or stomp attack, all while also having a wide area attack with Tusk Sweep.",
+    "most_powerful_ability": "The Oliphaunt's Trampling Charge can knock enemies prone, allowing for a subsequent attack.",
+    "equipment": null,
+    "senses": "Has passive Perception of 10, which is average for a creature of its kind.",
+    "skills": null,
+    "additional_information": [
+        "Can execute a Multiattack with its trunk and melee attacks.",
+        "Has a high Strength of 27, enabling it to hit hard and effectively.",
+        "Possesses a charge ability that enhances its offensive capabilities.",
+        "Resilient with a Constitution of 23, contributing to its overall durability.",
+        "Lacks magical abilities, focusing entirely on brute strength."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive beast that charges enemies",
+        "gargantuan creature with a powerful trunk",
+        "battle tank creature with impressive melee attacks",
+        "strong beast that can trample foes",
+        "monstrous creature with grappling abilities"
+    ]
+}

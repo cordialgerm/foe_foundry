@@ -1,0 +1,51 @@
+{
+    "name": "Shimmer Seal",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "stealthy",
+        "ice"
+    ],
+    "adjectives": [
+        "agile",
+        "resilient",
+        "icy"
+    ],
+    "description": "The Shimmer Seal is a unique, agile creature with excellent swimming capabilities that blends into icy environments, featuring a strong body and tusks.",
+    "memorable": "It can become invisible on icy surfaces or underwater, posing a unique challenge for opponents.",
+    "goals": "To hunt and evade predators in icy aquatic environments.",
+    "relations": "It may be encountered alongside other aquatic creatures or near icy environments.",
+    "environment": "Typically found in icy waters and coastal regions.",
+    "strengths": "High Strength and good Dexterity allow it to deal significant damage and evade attacks effectively.",
+    "weaknesses": "Low Intelligence and Charisma make it ineffective in social interactions.",
+    "attacks": "Employs multiattacks with tusks that deal significant slashing damage.",
+    "most_powerful_ability": "Limited invisibility on ice or underwater enhances its stealth capabilities.",
+    "senses": "Has darkvision up to 60 feet, allowing it to navigate well in low-light aquatic environments.",
+    "skills": "Notably skilled in acrobatics, performance, and stealth, indicating graceful movement and evasion.",
+    "additional_information": [
+        "Can traverse and climb icy terrains without difficulty.",
+        "Damage resistance to cold mitigates ice-related attacks.",
+        "Dash action as a bonus action while submerged enhances mobility.",
+        "Advantage on Dexterity (Stealth) checks in most terrains.",
+        "If not on icy surfaces, can be seen by seals and creatures it chooses."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium beast with icy stealth",
+        "agile swimmer that blends in with ice",
+        "monster that becomes invisible on icy surfaces",
+        "creature with significant slashing tusk attacks",
+        "stealthy aquatic creature in cold environments"
+    ]
+}

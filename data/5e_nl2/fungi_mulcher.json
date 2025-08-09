@@ -1,0 +1,50 @@
+{
+    "name": "Fungi, Mulcher",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 139,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 10 ft., burrow 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "underground",
+        "tactical"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "ground-manipulating",
+        "grappling"
+    ],
+    "description": "The Mulcher is a gargantuan plant creature characterized by its strong central stalk and mycelium-covered limbs combined with burrowing capabilities.",
+    "memorable": "This creature can trap foes in pits and manipulate the battlefield, presenting a formidable challenge with its grappling attacks.",
+    "goals": "The Mulcher aims to control the battlefield and immobilize foes through difficult terrain and traps.",
+    "relations": "The Mulcher may be found alongside other plant creatures or mycelium-based entities.",
+    "environment": "Typically found in forested or underground areas where it can burrow and create difficult terrain.",
+    "strengths": "Impressive physical strength with significant hit points and the ability to regenerate.",
+    "weaknesses": "Low Dexterity makes it vulnerable to agile opponents, and a critical vulnerability exists in its central stalk.",
+    "attacks": "Utilizes a powerful Mycelium Spike attack capable of grappling and dealing piercing damage.",
+    "most_powerful_ability": "Mulcher Pit, trapping foes and dealing significant damage with mycelium spikes.",
+    "equipment": null,
+    "senses": "The Mulcher has blindsight up to 120 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": "The creature has poor perception skills, indicated by a passive Perception of only 13.",
+    "additional_information": [
+        "Central stalk is vulnerable to acid, cold, and fire damage.",
+        "Slow movement speed overall with a high ability to control terrain.",
+        "Regains hit points when the exposed stalk is above ground.",
+        "Can create difficult terrain and pits to hinder movements.",
+        "Can make multiple attacks in one turn."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan plant creature that creates pits",
+        "creature that traps foes in mycelium pits",
+        "massive plant with burrowing abilities",
+        "mulcher with vulnerable central stalk",
+        "grazing plant that grapples enemies"
+    ]
+}

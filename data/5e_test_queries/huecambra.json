@@ -1,0 +1,25 @@
+{
+    "name": "Huecambra",
+    "queries": [
+        {
+            "query": "large monster that can swim and has explosive attacks",
+            "variant": "big creature capable of swimming with explosive abilities"
+        },
+        {
+            "query": "monstrous creature with gem-like curses and strong melee attacks",
+            "variant": "monster with gem curses and powerful melee strikes"
+        },
+        {
+            "query": "aquatic terror that inflicts thunder damage and has high hit points",
+            "variant": "water beast that deals thunder damage and has a lot of hit points"
+        },
+        {
+            "query": "large creature immune to poison and charming with multiattack ability",
+            "variant": "big monster not affected by poison or charm with multiattack feature"
+        },
+        {
+            "query": "Huecambra characteristics such as high constitution and cursed bite attack",
+            "variant": "Huecambra features like strong constitution and bite that curses"
+        }
+    ]
+}

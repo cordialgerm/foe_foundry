@@ -1,0 +1,53 @@
+{
+    "name": "Giant Honey Bee",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 9,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 10 ft, fly 40 ft",
+    "role": "null",
+    "tags": [
+        "flying",
+        "poisonous",
+        "insect"
+    ],
+    "adjectives": [
+        "small",
+        "dangerous",
+        "mobile",
+        "poisonous"
+    ],
+    "description": "The Giant Honey Bee is a small and mobile creature capable of flight, with notable dexterity that allows it to evade attacks. Its strong sting delivers piercing damage along with a potent poison effect.",
+    "memorable": "Its sting not only inflicts damage but can also paralyze characters with poison, making it a formidable opponent despite its low health.",
+    "goals": "To defend its territory and propagate its species.",
+    "relations": "Often found in proximity to flowers and other pollinators.",
+    "environment": "Typically found in grassy fields, gardens, or areas with abundant flowering plants.",
+    "strengths": "Quick and agile, capable of flying to avoid danger while delivering a paralyzing sting.",
+    "weaknesses": "Low hit points make it susceptible to attacks despite its speed.",
+    "attacks": "Sting attack that deals piercing damage combined with a powerful poison effect that can paralyze targets.",
+    "most_powerful_ability": "The poison from its sting can leave targets paralyzed for an hour if they fail their saving throw.",
+    "equipment": null,
+    "senses": "Blindsight out to 30 feet allows it to detect nearby creatures without needing sight.",
+    "skills": "Proficient in survival checks, reflecting its ability to navigate its environment effectively.",
+    "additional_information": [
+        "Can incapacitate characters with its poison effect.",
+        "Fast flying speed allows for evasive maneuvers.",
+        "Relatively low challenge rating makes it an uncommon adversary.",
+        "Its sting can stabilize targets at 0 hit points but still leave them poisoned.",
+        "Plays a role in the ecosystem as a pollinator."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small flying insect that can paralyze",
+        "agile bee with a deadly sting",
+        "dangerous insect with poison capabilities",
+        "mobile creature that inflicts paralysis",
+        "Giant Honey Bee behavior and abilities"
+    ]
+}

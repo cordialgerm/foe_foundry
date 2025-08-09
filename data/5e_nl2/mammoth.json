@@ -1,0 +1,53 @@
+{
+    "name": "Mammoth",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 13,
+    "srd": true,
+    "cr": "6",
+    "movement": "40 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "herbivore",
+        "mammoth"
+    ],
+    "adjectives": [
+        "massive",
+        "woolly",
+        "powerful",
+        "resilient"
+    ],
+    "description": "A massive, woolly beast resembling an enormous elephant with long, curved tusks, characterized by thick fur and a powerful presence.",
+    "memorable": "Mammoths are formidable opponents on the battlefield, capable of crushing foes with their weight and using their tusks to deal heavy damage.",
+    "goals": "They generally seek to defend their herd or territory, demonstrating fierce protectiveness when threatened.",
+    "relations": "Mammoths may be related to other large beasts or encountered alongside similar herbivorous creatures in their natural habitats.",
+    "environment": "Typically found in icy tundras and cold forests, reflecting their adaptation to frigid climates.",
+    "strengths": "High damage output from melee attacks, capable of knocking opponents prone, and can control the battlefield effectively.",
+    "weaknesses": "Low Dexterity score results in difficulty with agility and evasion, leading to challenges in avoiding area effects.",
+    "attacks": "Specializes in powerful Gore and Stomp attacks, able to knock enemies prone and follow up with additional damage.",
+    "most_powerful_ability": "Trampling Charge, allowing it to knock enemies prone and follow-up with a Stomp attack as a bonus action.",
+    "senses": "Has an average passive perception of 13 but is quite poor in stealth with a score of 9.",
+    "skills": "None notable.",
+    "additional_information": [
+        "Represents strength and endurance in various cultures.",
+        "Large size and thick fur provide some resilience against physical attacks.",
+        "Can graze on a wide range of vegetation.",
+        "Known for their unique tusks, used for digging through snow.",
+        "Can be a combination of herbivore and powerful defender."
+    ],
+    "damage_types": [
+        "piercing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge woolly elephant-like creature",
+        "massive beast that charges and stomps",
+        "powerful creature inhabiting icy tundras",
+        "herbivore with long tusks and thick fur",
+        "fierce defender of territories in cold forests"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Grolar Bear",
+    "queries": [
+        {
+            "query": "large bear that can swim and climb well",
+            "variant": "big bear that climbs and swims effectively"
+        },
+        {
+            "query": "Grolar Bear abilities and environmental strength",
+            "variant": "abilities of the Grolar Bear and its strength in the environment"
+        },
+        {
+            "query": "predatory bear with high strength and cold resistance",
+            "variant": "predatory bear that resists cold and has great strength"
+        },
+        {
+            "query": "strong beast with keen sense of smell and heavy attacks",
+            "variant": "powerful beast with a sharp sense of smell and strong attacks"
+        },
+        {
+            "query": "combat bear with multiattack and significant hit points",
+            "variant": "bear that fights with multiattack and has high hit points"
+        }
+    ]
+}

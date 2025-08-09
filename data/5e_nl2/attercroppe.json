@@ -1,0 +1,53 @@
+{
+    "name": "Attercroppe",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 21,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "swim 30 ft., climb 20 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "poison",
+        "invisibility",
+        "water"
+    ],
+    "adjectives": [
+        "cunning",
+        "malicious",
+        "deceptive",
+        "fast"
+    ],
+    "description": "The Attercroppe is a small, deceitful fey creature with exceptional dexterity and a malicious nature, often found lurking in water sources.",
+    "memorable": "Its ability to poison water sources and become invisible underwater makes it a unique and dangerous foe.",
+    "goals": "To control and poison water sources and deceive creatures for malicious enjoyment.",
+    "relations": "Often associated with other malicious fey creatures or water elementals.",
+    "environment": "Typically found near water bodies such as ponds, rivers, or swamps.",
+    "strengths": "Immunity to poison damage and the ability to become invisible while submerged bolster its defenses.",
+    "weaknesses": "Low physical strength and limited hit points make it vulnerable if discovered.",
+    "attacks": "It attacks with a bite, dealing piercing damage and utilizing its stealth effectively.",
+    "most_powerful_ability": "The poisonous aura can contaminate significant amounts of water, posing a threat to those who drink from it.",
+    "equipment": null,
+    "senses": "Possesses darkvision and a passive perception of 15, giving it keen awareness in low-light settings.",
+    "skills": "Skilled in acrobatics, perception, and stealth, allowing for effective evasion and ambush tactics.",
+    "additional_information": [
+        "Can poison up to 10 gallons of water each hour.",
+        "Ability to teleport short distances with Misty Step.",
+        "Innate spellcasting includes manipulating the battlefield with Fog Cloud.",
+        "Can suppress its invisibility until it attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting allows it to use poison spray, control water, and create fog to aid in escaping or ambushing foes.",
+    "test_queries": [
+        "fey creature that poisons water",
+        "invisible water sprite",
+        "malicious tiny fey monster",
+        "Attercroppe abilities",
+        "cunning fey in water"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Scorch Drake",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 145,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "40 ft. on land, 60 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "fire",
+        "damage dealer"
+    ],
+    "adjectives": [
+        "fiery",
+        "formidable",
+        "tactical"
+    ],
+    "description": "The Scorch Drake is a large dragon with formidable physical defenses and a fiery presence, capable of maneuvering effectively in combat with its wings.",
+    "memorable": "Its ability to create visual distortions and unleash devastating fire breath make it a dangerous foe.",
+    "goals": "Typically seeks to ambush and overwhelm foes with fiery attacks.",
+    "relations": "May be encountered alongside other dragons or fire elemental creatures.",
+    "environment": "Fiery environments such as volcanic areas or regions with considerable heat.",
+    "strengths": "Good mobility, capable of stealth with its Heat Shimmer ability, and devastating fire breath attacks.",
+    "weaknesses": "Below average intellect may limit strategic options in combat.",
+    "attacks": "Multiattack that includes a Bite dealing piercing and fire damage and Claw attacks that deal slashing and fire damage.",
+    "most_powerful_ability": "Fire Breath, allowing it to unleash a cone of liquid fire that ignites enemies, causing ongoing damage.",
+    "senses": "Has a keen perception with a passive score of 15.",
+    "skills": "Demonstrates proficiency in Wisdom-based Perception checks, enhancing its stealth capabilities.",
+    "additional_information": [
+        "Creates illusions with Heat Shimmer to hinder foes' perception.",
+        "Inflicts fire damage with its Scalding Blood ability when attacked.",
+        "Can blind ignited foes with Fan the Flames ability.",
+        "Uses stealth and mobility to navigate combat effectively.",
+        "Present a significant threat to lower-level adventurers."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon that breathes fire",
+        "fiery dragon with stealth abilities",
+        "monster that blinks in and out of sight",
+        "dragon that ignites attackers in melee",
+        "fire-breathing drake that blinds enemies"
+    ]
+}

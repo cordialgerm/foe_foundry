@@ -1,0 +1,48 @@
+{
+    "name": "Boggard",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "stealthy",
+        "aquatic"
+    ],
+    "adjectives": [
+        "agile",
+        "opportunistic"
+    ],
+    "description": "The Boggard is a Medium humanoid creature with a remarkable amphibious nature, characterized by its agility and stealthfulness. It has the ability to leap impressively and possesses sharp teeth for biting.",
+    "memorable": "Notable for its ability to move swiftly and strike with advantage, especially with its vaulting leap tactic.",
+    "goals": "Typically seeks to ambush foes and exploit advantageous positions in combat.",
+    "relations": "Often found in the company of frogs and toads, with which it can communicate.",
+    "environment": "Commonly inhabits swampy or aquatic environments.",
+    "strengths": "Exceptional agility and stealth skills, with the ability to breathe both air and water.",
+    "weaknesses": "Low durability with a low Armor Class and hit points, making it vulnerable in prolonged combat.",
+    "attacks": "Can attack with a spear or bite, utilizing a vaulting leap for strategic advantage.",
+    "most_powerful_ability": "Vaulting Leap, allowing for strategic jumps to engage or evade enemies effectively.",
+    "senses": "Passive perception is rated at 10, indicating average awareness.",
+    "skills": "Proficient in stealth with a +4 modifier, excelling in ambush tactics.",
+    "additional_information": [
+        "Can communicate with frogs and toads, enhancing its role in aquatic environments.",
+        "Effective in surprise attacks due to its agility.",
+        "Not particularly durable but can outmaneuver stronger foes.",
+        "Utilizes its amphibious nature to traverse both land and water seamlessly.",
+        "Relies on stealth to avoid direct confrontation."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "amphibious humanoid",
+        "stealthy swamp creature",
+        "agile humanoid attacker",
+        "creature with vaulting leap",
+        "Boggard abilities"
+    ]
+}

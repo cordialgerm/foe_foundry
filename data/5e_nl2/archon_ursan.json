@@ -1,0 +1,52 @@
+{
+    "name": "Ursan Archon",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Large",
+    "hp": 142,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft. walking, 60 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "chaotic good"
+    ],
+    "adjectives": [
+        "formidable",
+        "strong",
+        "magical",
+        "resilient"
+    ],
+    "description": "The Ursan Archon is a large celestial being known for its immense strength and magical capabilities. It has natural armor, making it tough in combat. With a greataxe in hand and the ability to fly, it presents a commanding presence on the battlefield.",
+    "memorable": "The Archon can rally allies with its Rallying Roar, providing significant boosts to morale and combat effectiveness while also possessing a variety of magical attack capabilities.",
+    "goals": "To engage in melee combat and support allies through magical abilities.",
+    "relations": "May be encountered alongside other celestial beings or as guardians of good-aligned locations.",
+    "environment": "Typically found in areas where celestial beings reside, possibly in divine realms or near places of great good.",
+    "strengths": "High damage output, innate magical resistance, and the ability to mitigate fatal damage.",
+    "weaknesses": "Reliance on direct combat can be exploited by agile opponents, especially due to its Reckless ability.",
+    "attacks": "Utilizes a greataxe for melee attacks and has area control through Thunderous Roar, capable of causing fear in foes.",
+    "most_powerful_ability": "Thunderous Roar, which not only deals significant area damage but also instills fear in enemies.",
+    "equipment": "Greataxe",
+    "senses": "Possesses darkvision up to 120 feet.",
+    "skills": "Has proficiency in perception, allowing it to detect threats effectively.",
+    "additional_information": [
+        "Celestial Weapons deal extra force damage on successful hits.",
+        "Immortal Nature allows it to avoid the need for food, drink, or sleep.",
+        "Magic Resistance gives it an advantage against spells.",
+        "Relentless allows it to stay in combat longer by preventing death once per rest.",
+        "Reckless ability provides high melee attack potential at a risk."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful celestial warrior",
+        "Ursan Archon abilities",
+        "magical melee combatant",
+        "area control celestial",
+        "Rallying Roar celestial ally"
+    ]
+}

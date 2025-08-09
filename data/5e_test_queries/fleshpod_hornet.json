@@ -1,0 +1,25 @@
+{
+    "name": "Fleshpod Hornet",
+    "queries": [
+        {
+            "query": "large flying hornet that inflicts poison damage",
+            "variant": "big flying hornet that deals poison dmg"
+        },
+        {
+            "query": "beast with a circular tumor causing disadvantage on checks",
+            "variant": "creature with a round tumor that gives disadvantage on rolls"
+        },
+        {
+            "query": "agile hornet that can fly and has a deadly stinger",
+            "variant": "quick hornet that flies and has a dangerous stinger"
+        },
+        {
+            "query": "beast that creates young from its sting and has high dexterity",
+            "variant": "creature that spawns young from its sting and has great dex"
+        },
+        {
+            "query": "flying hornet that can knock enemies prone and has bludgeoning damage",
+            "variant": "hornet that flies, can knock foes down, and does bludgeoning dmg"
+        }
+    ]
+}

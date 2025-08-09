@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Swiftblade",
+    "queries": [
+        {
+            "query": "agile small humanoid that excels in ambushes and has poor sunlight tolerance",
+            "variant": "quick small humanoid that is great at ambushing and doesn't do well in sunlight"
+        },
+        {
+            "query": "stealthy creature with high Dexterity and strong pack tactics in combat",
+            "variant": "sneaky creature with exceptional Dexterity and effective group attacks"
+        },
+        {
+            "query": "small kobold with leather armor that moves quickly and can climb",
+            "variant": "little kobold wearing leather armor that has fast movement and climbing ability"
+        },
+        {
+            "query": "monster that deals poison damage and has a disadvantage in bright light",
+            "variant": "creature that inflicts poison damage and struggles in bright daylight"
+        },
+        {
+            "query": "quick moving humanoid capable of strategic repositioning and ambushing",
+            "variant": "fast moving humanoid that can reposition strategically and launch ambushes"
+        }
+    ]
+}

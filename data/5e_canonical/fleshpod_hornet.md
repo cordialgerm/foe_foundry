@@ -1,6 +1,8 @@
 <MonsterName/>Fleshpod Hornet</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>120</HP>
 <summary>The Fleshpod Hornet is a large, unaligned beast known for its agility and potent attacks. With an Armor Class of 14 and 120 hit points, it is reasonably durable, allowing it to withstand a fair amount of damage before falling. It has a flying speed of 60 feet, which, combined with its ability to hover and moderate walking speed, gives it exceptional maneuverability in combat. The Fleshpod Hornet presents a significant challenge with a Challenge Rating of 6 and rewards adventurers with 2,300 experience points upon defeat. Its strengths lie in its skills and unique abilities, particularly its capacity to inflict poison damage and debilitating effects through its stinger. However, despite its strong Dexterity score of 18 (+4), it has poor intelligence and charisma, limiting its influence in social or strategic situations.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ The infected target can attempt to remove the tumor with a DC 15 Wisdom (Medicin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fleshpod Hornet
 
 *Large* *Beast* *unaligned*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Stinger:** Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage. The target must make a DC 13 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one. On a failed saving throw, the target is also infected with the eggs of the fleshpod hornet. <br><br>The injected eggs form a circular lotus pod tumor, roughly half a foot in diameter, on the target within 1 minute of injection. While carrying this tumor, the target has disadvantage on skill checks and saving throws. Exactly 24 hours after the lotus pod appears, a young fleshpod hornet (use giant wasp statistics) erupts from the tumor, dealing does 33 (6d10) slashing damage to the target. <br><br>The tumor can be excised with a DC 15 Wisdom (Medicine) check, causing 16 (3d10) slashing damage to the host. If it is cut out without the check, the patient must succeed on a DC 15 Constitution saving throw or take 22 (4d10) slashing damage.
 
 
+</statblock>
 
 

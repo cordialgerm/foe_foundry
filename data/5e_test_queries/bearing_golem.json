@@ -1,0 +1,25 @@
+{
+    "name": "Bearing Golem",
+    "queries": [
+        {
+            "query": "agile ball bearing construct that can explode",
+            "variant": "agile construct made of ball bearings that can explode"
+        },
+        {
+            "query": "medium-size golem with high dexterity and magical attacks",
+            "variant": "medium golem with magical attacks and high dexterity"
+        },
+        {
+            "query": "golem that can scatter and reassemble made of bearings",
+            "variant": "bearing golem that can scatter and reform"
+        },
+        {
+            "query": "construct immune to poison and psychic damage",
+            "variant": "construct that is immune to psychic and poison damage"
+        },
+        {
+            "query": "stealthy golem with ambushing abilities and false appearance",
+            "variant": "golem skilled in stealth with ambushing powers and disguise"
+        }
+    ]
+}

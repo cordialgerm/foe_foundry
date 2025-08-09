@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Black Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with corrosive acid breath that lives in swamps",
+            "variant": "large dragon that has acid breath and resides in wetlands"
+        },
+        {
+            "query": "gargantuan dragon that can breathe underwater and is a cruel ambusher",
+            "variant": "massive dragon able to breathe in water and known for ambushing its prey"
+        },
+        {
+            "query": "dark-scaled dragon known for manipulating other creatures",
+            "variant": "black-scaled dragon infamous for controlling lesser beings"
+        },
+        {
+            "query": "menacing swamp creature with high armor class and hit points",
+            "variant": "threatening swamp-dwelling monster with formidable armor and health"
+        },
+        {
+            "query": "legendary dragon with a terrifying roar and devastating breath attack",
+            "variant": "fabled dragon known for its frightening roar and powerful acid breath"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Intellect Devourer",
+    "queries": [
+        {
+            "query": "tiny creature that manipulates minds and has telepathy",
+            "variant": "tiny monster that controls minds and can communicate telepathically"
+        },
+        {
+            "query": "stealthy aberration that attacks with psychic damage from a distance",
+            "variant": "sneaky aberration that does psychic damage with ranged attacks"
+        },
+        {
+            "query": "small monster that can eat brains and takes over their hosts",
+            "variant": "little creature that consumes brains and controls their victims"
+        },
+        {
+            "query": "creature with low strength but high intelligence and dexterity in mental combat",
+            "variant": "monster with poor strength but high intelligence and agility for mental battles"
+        },
+        {
+            "query": "manipulative creature that uses blindsight and can stun opponents",
+            "variant": "clever monster that has blindsight and can incapacitate enemies"
+        }
+    ]
+}

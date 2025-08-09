@@ -1,0 +1,50 @@
+{
+    "name": "Raven",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 12,
+    "srd": true,
+    "cr": "0",
+    "movement": "walking speed of 10 feet and flying speed of 50 feet",
+    "role": null,
+    "tags": [
+        "beast",
+        "scavenger",
+        "mimic"
+    ],
+    "adjectives": [
+        "intelligent",
+        "ominous",
+        "agile"
+    ],
+    "description": "A large, black-feathered bird known for its intelligence and ability to mimic sounds, representing death and magic in various cultures.",
+    "memorable": "Known for its ability to mimic sounds and intelligence, making it a curious companion.",
+    "goals": "Scavenging for food, observing its surroundings, and potentially assisting adventurers.",
+    "relations": "Often seen in the company of spellcasters or druids who might train them as companions or messengers.",
+    "environment": "Commonly found in wilderness and urban areas, often near carrion or places of significance.",
+    "strengths": "Exceptional mobility with a flying speed of 50 feet and strong perception skills.",
+    "weaknesses": "Very low hit points and weak physical capabilities, making it vulnerable in combat.",
+    "attacks": "Beak attack that deals 1 piercing damage, used primarily for non-lethal interference.",
+    "most_powerful_ability": "Mimicry allows it to imitate sounds for distraction or communication.",
+    "equipment": null,
+    "senses": "Has keen perception skills with a passive perception of 13.",
+    "skills": "Skilled in Perception with a modifier of +3, allowing it to notice hidden creatures or objects.",
+    "additional_information": [
+        "Can sense carrion within a 60-foot range by smell.",
+        "Can remember and repeat up to 20 words from any language it has heard.",
+        "Recognized as a symbol of mystery and foresight in many cultures.",
+        "Easy to train as a messenger or companion due to its intelligence.",
+        "Often associated with death or omens in mythology."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small black bird that mimics sounds",
+        "black-feathered scavenger with keen eyesight",
+        "intelligent bird known for impersonation skills",
+        "bird that senses death nearby and imitates voices",
+        "agile creature that flies fast and finds food"
+    ]
+}

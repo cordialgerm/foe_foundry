@@ -1,0 +1,25 @@
+{
+    "name": "Gigantura",
+    "queries": [
+        {
+            "query": "huge aquatic monster with a horrifying gaze",
+            "variant": "huge water monster with a terrifying stare"
+        },
+        {
+            "query": "Gargantuan creature that lives underwater and can swallow you whole",
+            "variant": "Gargantuan beast that resides in the water and can consume you entirely"
+        },
+        {
+            "query": "monster with darkvision and resistance to cold",
+            "variant": "creature with the ability to see in the dark and cold resistance"
+        },
+        {
+            "query": "hulking monstrosity that can breathe underwater and has strong physical attacks",
+            "variant": "massive monstrosity that can inhale underwater and possesses mighty melee attacks"
+        },
+        {
+            "query": "Gigantura's abilities in combat and its aquatic habitat",
+            "variant": "Gigantura's combat skills and its environment in the water"
+        }
+    ]
+}

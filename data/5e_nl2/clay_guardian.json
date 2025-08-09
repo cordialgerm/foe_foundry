@@ -1,0 +1,51 @@
+{
+    "name": "Clay Guardian",
+    "creature_type": "Construct",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 133,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 25 ft.",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "construct",
+        "magical creature"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "robust"
+    ],
+    "description": "The Clay Guardian is a large, robust construct designed to serve as a protector on the battlefield, with a strong, clay-like appearance and formidable melee capabilities.",
+    "memorable": "Its unique ability to regain hit points from acid damage and its berserking mechanic make it a daunting opponent.",
+    "goals": "To protect its creator or designated location, engaging aggressively when threatened.",
+    "relations": "Often found guarding spellcasters or important locations; can be considered a loyal protector.",
+    "environment": "Typically found in locations associated with powerful spellcasters or ancient ruins.",
+    "strengths": "Immunity to acid, poison, and psychic damage; advantage on saving throws against spells and magical effects.",
+    "weaknesses": "Very low Intelligence and Charisma hinder its cognitive abilities and social interactions.",
+    "attacks": "Multiattack allows for two slam attacks, dealing significant bludgeoning damage and potentially reducing a creature's hit point maximum.",
+    "most_powerful_ability": "Berserk ability allows it to attack aggressively, increasing its threat level when bloodied.",
+    "equipment": "none",
+    "senses": "Possesses darkvision to a range of 60 feet and average passive perception.",
+    "skills": "N/A",
+    "additional_information": [
+        "Regains hit points when subjected to acid damage.",
+        "Speed doubles and AC increases when bloodied.",
+        "Immune to effects that alter its physical form.",
+        "Requires no air, sustenance, or sleep."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable guardian that heals from acid",
+        "robot protector with berserk ability",
+        "magical construct with significant hit points",
+        "large clay creature that defends spellcasters",
+        "powerful defender immune to nonmagical damage"
+    ]
+}

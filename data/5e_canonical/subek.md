@@ -1,6 +1,8 @@
 <MonsterName/>Subek</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Subek is a formidable large humanoid creature that embodies a chaotic and aggressive nature, particularly during its flood season. As a Lawful Neutral entity, it follows a code but is prone to violent outbursts when provoked or hungry. With 114 hit points, it possesses a strong resilience in combat, thanks to its natural armor which grants it an Armor Class of 15. Its Strength attribute of 19, alongside an exceptional modifier of +4, indicates its physical prowess, making its melee attacks particularly dangerous. However, while its Constitution of 18 also gives it good durability in battle, its overall average Dexterity of 10 could be seen as a weakness when faced with high-speed adversaries. Subek’s challenge rating of 5 makes it a moderate threat in the game, suitable for parties of about five characters. The Subek has abilities that emphasize its aggression and combat capabilities, particularly its unique Blood Frenzy feature, which enhances its offensive potential under specific conditions.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of actions, the Subek has a Multiattack feature, enabling it to make on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Subek
 
 *Large* *Humanoid* *Lawful Neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The subek makes one Bite attack and two Claw attacks. If both Claw attacks hit one creature, the target must succeed on a DC 15 Strength saving throw or take 7 (2d6) slashing damage as the subek tears into the target.
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
+</statblock>
 
 

@@ -1,0 +1,54 @@
+{
+    "name": "Starving Specter",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "flies 40 feet",
+    "role": null,
+    "tags": [
+        "undead",
+        "specter",
+        "fear",
+        "psychic"
+    ],
+    "adjectives": [
+        "menacing",
+        "ethereal",
+        "chaotic",
+        "psychic"
+    ],
+    "description": "The Starving Specter is an ethereal being with a dismal presence, capable of flying silently through the air. It embodies the lost souls of the departed, shifting faces of its former victims often appear on its visage.",
+    "memorable": "Its ability to invoke fear and psychic pain makes it a terrifying foe.",
+    "goals": "It seeks to inflict suffering and terror on the living, preying on their fears.",
+    "relations": "Often related to other undead creatures, it could be encountered alongside wraiths or other specters.",
+    "environment": "Typically found in abandoned places, graveyards, or haunted ruins.",
+    "strengths": "Possesses good Constitution and Wisdom saving throws, and can manipulate the battlefield with its fear-inducing abilities.",
+    "weaknesses": "Vulnerable to psychic damage, making it an easier target for certain spells.",
+    "attacks": "Can perform Multiattack, utilizing a Bite attack that inflicts piercing and necrotic damage, and a Bladed Arm attack that deals slashing damage.",
+    "most_powerful_ability": "The Unnerving Visage frightens foes and deals psychic damage, making them vulnerable to its attacks.",
+    "equipment": null,
+    "senses": "Possesses Ethereal Sight, allowing it to see 60 feet into the Ethereal Plane.",
+    "skills": "Has a perception skill of +2, giving it the ability to notice hidden creatures moderately well.",
+    "additional_information": [
+        "Aura of the Forgotten grants disadvantage on saving throws.",
+        "Incorporeal Movement allows passing through objects fantastically.",
+        "Life Hunger enhances damage against recovering creatures.",
+        "Undead Nature means it doesn't require food or sleep.",
+        "The specter can shift its appearance to resemble loved ones or foes."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psychic attacking undead haunting",
+        "creature with ethereal movement and fear tactics",
+        "specter that frightens and consumes life",
+        "undead that shifts into foes' relatives",
+        "menacing flying creature attacking with necrotic damage"
+    ]
+}

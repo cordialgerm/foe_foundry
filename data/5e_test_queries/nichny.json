@@ -1,0 +1,25 @@
+{
+    "name": "Nichny",
+    "queries": [
+        {
+            "query": "magical fey creature that manipulates luck",
+            "variant": "fey creature with luck manipulation and magic"
+        },
+        {
+            "query": "medium-sized monster with high intelligence and resistance to spells",
+            "variant": "medium creature that is highly intelligent and resistant to magic"
+        },
+        {
+            "query": "cunning fey that uses auras and can teleport",
+            "variant": "teleporting fey with cunning abilities and auras"
+        },
+        {
+            "query": "Nichny abilities and weaknesses against radiant damage",
+            "variant": "abilities of Nichny and its weaknesses to radiant"
+        },
+        {
+            "query": "darkvision and sneak attacks from stealthy fey",
+            "variant": "stealthy fey with darkvision and sneak attack potential"
+        }
+    ]
+}

@@ -1,6 +1,11 @@
 <MonsterName/>Werewolf (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>human</Subtype>
+<Subtype/>lycanthrope</Subtype>
+<Subtype/>shapechanger</Subtype>
+<CR/>3</CR>
+<AC/>11</AC>
+<HP/>58</HP>
 <summary>A Werewolf is a humanoid cursed with the ability to transform into a wolf or a wolf-like hybrid form. Werewolves are among the most feared lycanthropes, known for their savage nature and insatiable bloodlust. In their wolf form, they possess heightened senses, sharp claws, and fangs, making them deadly hunters. Werewolves are often driven by primal instincts and are known to form packs, preying on humans and animals alike. They are immune to most conventional weapons unless made of silver, and they can spread lycanthropy through their bite, creating new werewolves to join their pack.</summary>
 
 <summary>The Werewolf is a Medium-sized humanoid that embodies the dual nature of humanity and beast. With a Challenge Rating of 3, it presents a moderate level of threat, capable of dealing significant damage when engaging in combat. Its notable strengths include a solid Armor Class of 12 and decent Hit Points, totaling 58. Werewolves possess strong physical attributes with a Strength, Dexterity, and Constitution score of 14, each providing a good modifier of +2, which enhances their effectiveness in combat and physical activities. However, their Intelligence, Wisdom, and Charisma are average, each sitting at 10, offering no bonus or drawback to their social interactions or ability checks reliant on those attributes. </summary>
@@ -33,6 +38,7 @@ Overall, the Werewolf embodies a potent mix of strength, tactical advantages, an
 
 Source: 5e_srd
 
+<statblock>
 ### Werewolf (Lycanthrope)
 
 *Medium humanoid (human, shapechanger), chaotic evil*
@@ -69,7 +75,8 @@ Source: 5e_srd
 
 ***Claws (Hybrid Form Only)***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (2d4+2) slashing damage.
 
-***Spear (Humanoid Form Only)***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* 5 (1d6+2) piercing damage, or 6 (1d8+2) piercing damage if used with two hands to make a melee attack.
+***Spear (Humanoid Form Only)***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* 5 (1d6+2) piercing damage, or 6 (1d8+2) piercing damage if used with two hands to make a melee attack.</statblock>
+
 
 
 
@@ -77,6 +84,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werewolf
 
 *Medium* *Humanoid*
@@ -114,6 +122,7 @@ Source: 5e_artisinal_monsters
 - **Frenzied Bite (While Bloodied:** The werewolf makes a bite attack.
 
 
+</statblock>
 
 
 
@@ -122,6 +131,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werewolf
 
 *Medium humanoid (lycanthrope)*
@@ -158,5 +168,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape.** The werewolf transforms into a Medum or Large wolf, a Medium wolf-humanoid hybrid, or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
 - **Hungry Growl (Wolf and Hybrid Form Only).** The werewolf stares down and growls at one creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn. The werewolf has advantage on the next attack roll it makes against the frightened creature.
 
+</statblock>
 
 

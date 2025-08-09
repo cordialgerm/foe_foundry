@@ -1,0 +1,53 @@
+{
+    "name": "Living Wick",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "fire",
+        "damage dealer"
+    ],
+    "adjectives": [
+        "small",
+        "flame-powered",
+        "strategic",
+        "light-emitting"
+    ],
+    "description": "The Living Wick is a small construct powered by a lit wick, which serves as both its source of power and life force. It can emit bright light and can perform physical attacks effectively with a strong build.",
+    "memorable": "It can sacrifice itself to unleash a devastating explosion of fire, making it a potentially dangerous ally.",
+    "goals": "To serve its creator and perform assigned tasks until its wick is extinguished.",
+    "relations": "It is created and controlled by a creator, often serving as an ally or servant.",
+    "environment": "Typically found in locations associated with magic or constructs.",
+    "strengths": "Good physical strength for melee attacks and the ability to unleash fire damage.",
+    "weaknesses": "Vulnerable to fire damage and becomes weaker over time while active; dies if its wick is extinguished or hit points reach zero.",
+    "attacks": "Can slam for 5 bludgeoning damage and unleash 'Consuming Inferno' to deal area fire damage.",
+    "most_powerful_ability": "Consuming Inferno allows it to create a fireball affecting multiple targets, sacrificing the Living Wick in the process.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Becomes dormant when unlit and obeys commands when lit.",
+        "Emits bright light in a 20-foot radius and dim light for additional 20 feet.",
+        "Maximum hit points decrease each day it remains active.",
+        "Immune to poison and psychic damage.",
+        "Not reliant on biological needs, enabling continuous operation."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fire-powered construct",
+        "creature that explodes in flames",
+        "magic construct that can attack",
+        "light-emitting creature with fire abilities",
+        "unique creature that sacrifices itself for damage"
+    ]
+}

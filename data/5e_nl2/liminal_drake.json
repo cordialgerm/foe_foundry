@@ -1,0 +1,54 @@
+{
+    "name": "Liminal Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 204,
+    "ac": 17,
+    "srd": false,
+    "cr": "14",
+    "movement": "fly 80 ft., hover",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "flyer",
+        "cosmic"
+    ],
+    "adjectives": [
+        "manipulative",
+        "devastating",
+        "resilient"
+    ],
+    "description": "The Liminal Drake is a large dragon known for its manipulation of space, flying with great flexibility. It has a distinctive sleek appearance with cosmic features.",
+    "memorable": "It can incapacitate foes with its Nauseating Luminance and move through solid objects.",
+    "goals": "To disrupt and incapacitate foes, maintaining cosmic dominance.",
+    "relations": "Other dragons, cosmic entities, or fiends may be related or allied.",
+    "environment": "Cosmic voids, asteroids, or high-altitude locations.",
+    "strengths": "Immunity to cold damage, resistances to multiple elemental damage types, and condition immunities make it exceptionally tough in combat.",
+    "weaknesses": "Relatively low Strength score limits its physical melee capabilities.",
+    "attacks": "Multiattack with one bite dealing piercing and cold damage, and two claws inflicting slashing and cold damage.",
+    "most_powerful_ability": "Stellar Breath, exhaling fire and radiant damage in a wide cone.",
+    "equipment": null,
+    "senses": "The Liminal Drake has darkvision up to 120 feet.",
+    "skills": null,
+    "additional_information": [
+        "Can use Incorporeal Movement to pass through creatures and objects.",
+        "Incapacitates creatures with its Nauseating Luminance ability.",
+        "Possesses Void Dweller ability allowing for quick cosmic travel.",
+        "Can teleport with Warp Space ability.",
+        "High Dexterity grants it excellent evasion."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that moves through objects",
+        "large dragon with cold damage",
+        "cosmic dragon that can fly",
+        "dragon with powerful breath attack",
+        "incapacitating dragon in battle"
+    ]
+}

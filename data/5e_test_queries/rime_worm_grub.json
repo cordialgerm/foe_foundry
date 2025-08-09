@@ -1,0 +1,25 @@
+{
+    "name": "Rime Worm Grub",
+    "queries": [
+        {
+            "query": "cold-resistant medium elemental creature that burrows in snow",
+            "variant": "medium elemental creature that burrows in the snow and is cold resistant"
+        },
+        {
+            "query": "monster lurking in snowy terrain with camouflage abilities",
+            "variant": "creature with camouflage abilities that lurks in snowy terrains"
+        },
+        {
+            "query": "frigid landscape monster with opportunity attack against wounded foes",
+            "variant": "monster in frigid landscapes that can make opportunity attacks on wounded enemies"
+        },
+        {
+            "query": "snow camouflaged creature that can breathe in water and air",
+            "variant": "creature that uses snow camouflage and can breathe both air and water"
+        },
+        {
+            "query": "elemental with darkvision that attacks using Rime Tendril",
+            "variant": "elemental capable of darkvision and utilizes Rime Tendril for attacking"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Orniraptor",
+    "queries": [
+        {
+            "query": "small creature that retaliates with acid when damaged",
+            "variant": "small monster that retaliates with acid if harmed"
+        },
+        {
+            "query": "agile monster with poor perception and caustic blood",
+            "variant": "agile creature with low perception and caustic blood"
+        },
+        {
+            "query": "monstrosity that works together with others for combat advantage",
+            "variant": "creature that collaborates with others for fight benefits"
+        },
+        {
+            "query": "monster that can see only moving creatures and collects awareness",
+            "variant": "beast that can only see moving creatures and shares awareness"
+        },
+        {
+            "query": "small monster with bludgeoning and piercing attacks",
+            "variant": "tiny creature with bludgeoning and piercing damage attacks"
+        }
+    ]
+}

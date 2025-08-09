@@ -1,0 +1,25 @@
+{
+    "name": "Compsognathus",
+    "queries": [
+        {
+            "query": "small stealthy dinosaur that lives in grasslands",
+            "variant": "little stealthy dino that dwells in grasslands"
+        },
+        {
+            "query": "agile creature with camouflage that attacks in packs",
+            "variant": "quick beast that has camouflage and strikes in groups"
+        },
+        {
+            "query": "tiny beast with low intelligence and high stealth skills",
+            "variant": "small creature with very low smarts but great stealth abilities"
+        },
+        {
+            "query": "monster with a bite attack and the ability to hide in tall grass",
+            "variant": "creature that bites and can conceal itself in tall grass"
+        },
+        {
+            "query": "fragile dinosaur that excels in ambush tactics and stealth",
+            "variant": "delicate dino good at ambushing and stealthy actions"
+        }
+    ]
+}

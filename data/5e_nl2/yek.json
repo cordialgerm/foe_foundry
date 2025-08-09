@@ -1,0 +1,50 @@
+{
+    "name": "Yek",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 77,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. walk and climb",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "swarm"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "dangerous"
+    ],
+    "description": "The Yek is a small fiend characterized by its chaotic evil nature. It has a solid combination of offensive capabilities and strategic abilities. Notable for its ability to form swarms and adapt to combat situations.",
+    "memorable": "Yeks are dangerous fiends that thrive in groups, embodying chaotic evil with their cunning tactics and unique Devouring Swarm ability.",
+    "goals": "Yeks typically aim to disrupt and weaken their opponents through swarm tactics and exploiting vulnerabilities.",
+    "relations": "Yeks often accompany other chaotic fiends and work effectively in packs to overwhelm enemies.",
+    "environment": "Yeks are usually found in dark, chaotic locations that align with their fiendish nature.",
+    "strengths": "Possess immunities to poison and resistance to cold, fire, and lightning damage, enhancing their survivability in combat.",
+    "weaknesses": "Low intelligence limits strategic options in combat.",
+    "attacks": "Yek can make a multiattack consisting of a bite and claw, dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "The Devouring Swarm ability allows the Yek to reduce a creature's Constitution score if attached by three or more Yeks.",
+    "equipment": null,
+    "senses": "Yek possesses darkvision to see in darkness up to 120 feet and can communicate telepathically within the same range.",
+    "skills": "Proficient in Stealth and Perception, making it effective for ambushes and scouting.",
+    "additional_information": [
+        "Ability to attach to enemies and gain advantage on future attacks",
+        "Advantage on saving throws against spells and magical effects",
+        "Highly effective when working in groups due to Pack Tactics"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small chaotic evil fiend",
+        "Yek swarm tactics in combat",
+        "fiend that reduces opponent's constitution",
+        "agile fiend with magic resistance",
+        "monster that attaches to enemies"
+    ]
+}

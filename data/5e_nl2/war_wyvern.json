@@ -1,0 +1,53 @@
+{
+    "name": "War Wyvern",
+    "creature_type": "Dragon",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 80 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "wyvern",
+        "poison",
+        "siege monster",
+        "flying"
+    ],
+    "adjectives": [
+        "formidable",
+        "robust",
+        "dangerous"
+    ],
+    "description": "The War Wyvern is a large dragon with a powerful physique, capable of flying at high speeds and exhibiting impressive physical resilience.",
+    "memorable": "Its ability as a Siege Monster allows it to deal double damage to structures, making it formidable in siege warfare.",
+    "goals": "Typically seeks physical dominance in combat, often engaging in battles using its mobility and poison attacks.",
+    "relations": "Can be related to other dragons or wyverns and may serve as a powerful adversary to adventurers.",
+    "environment": "Often found in battlefields or areas involving fortifications, utilizing its flight and siege capabilities.",
+    "strengths": "High hit points and multiple attacks allow it to dominate in melee and ranged combat.",
+    "weaknesses": "Low intelligence and charisma limit its strategic capabilities beyond straightforward engagement.",
+    "attacks": "Utilizes multiple attacks including a powerful bite, claws, and a venomous stinger, each capable of significant damage.",
+    "most_powerful_ability": "Spit Venom, which allows it to deal heavy poison damage at range.",
+    "senses": "Possesses passive perception of 15, enhancing its situational awareness in combat.",
+    "skills": "Excels in athletics and has a good perception, aiding its combat effectiveness.",
+    "additional_information": [
+        "Utilizes its claws to grapple and restrain foes.",
+        "Effective against fortifications due to its Siege Monster ability.",
+        "Can attack from the air, maintaining a safe distance from melee combatants.",
+        "Has a notable Constitution saving throw bonus, increasing its durability.",
+        "Ranged poison attack can significantly damage enemies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large wyvern that flies and poisons",
+        "dragon creature good at siege warfare",
+        "powerful flying monster with venom attacks",
+        "monster with high mobility and poison breath",
+        "robust dragon that grapples with claws"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Catonoctrix</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Catonoctrix is a formidable Large-sized Aberration that embodies the essence of neutral evil. With its impressive mobility, boasting a walking speed of 40 feet and the ability to fly at 80 feet, it can maneuver effectively in combat. It possesses a high Armor Class of 18 due to its natural armor, making it quite resilient against attacks. With 168 hit points, derived from a roll of 16d10 plus 80, it can endure substantial damage before falling in battle. The creature's challenge rating of 10 signifies that it is a challenging opponent, granting 5,900 experience points upon defeat. Characters facing the Catonoctrix need to be cautious of its strong physical and psychic attacks, while also being wary of its ability to extract secrets and manipulate minds.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Catonoctrix can react to attacks with "Precognitive Dodge," which i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Catonoctrix
 
 *Large* *Aberration* *neutral evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Precognitive Dodge:** Adds 4 to its AC vs. one attack that would hit it. To do so it must see the attacker and be within 30' of it.
 
 
+</statblock>
 
 

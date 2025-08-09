@@ -1,0 +1,25 @@
+{
+    "name": "Derro Explorer",
+    "queries": [
+        {
+            "query": "small humanoid that excels in underground ambushes and has darkvision",
+            "variant": "small monster that is great at ambushing in caves and can see in the dark"
+        },
+        {
+            "query": "cunning humanoid with stealth abilities that deals extra damage to other humanoids",
+            "variant": "sneaky humanoid that inflicts additional harm to humanoids and has stealth skills"
+        },
+        {
+            "query": "agile underground creature with a scimitar and resistance to being charmed",
+            "variant": "nimble monster from underground that uses a scimitar and resists charm effects"
+        },
+        {
+            "query": "derro-like creature with rock terrain mobility and poison damage attacks",
+            "variant": "creature resembling a derro that moves easily on rocky surfaces and has poison attacks"
+        },
+        {
+            "query": "monster that features both mobility advantages and a low charisma score",
+            "variant": "creature that has high movement capabilities and poor charm ability"
+        }
+    ]
+}

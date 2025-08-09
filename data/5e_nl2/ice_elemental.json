@@ -1,0 +1,50 @@
+{
+    "name": "Ice Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "burrow 30 ft., climb 20 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "ice",
+        "cold"
+    ],
+    "adjectives": [
+        "powerful",
+        "imposing",
+        "resilient"
+    ],
+    "description": "The Ice Elemental is a large, imposing creature composed of ice and frost, exhibiting exceptional durability and strength, along with notable ice-based abilities.",
+    "memorable": "Its ability to encase foes in ice and move effortlessly across icy terrain makes it a dangerous opponent.",
+    "goals": "Typically found in cold environments, aiming to protect its icy domain from intruders.",
+    "relations": "Often associated with other elemental beings, particularly those of ice or water.",
+    "environment": "Cold terrains, such as icy mountains or frozen landscapes.",
+    "strengths": "Immunity to cold and poison damage, resistance to non-magical attacks except for fire.",
+    "weaknesses": "Vulnerable to fire damage, rendering it susceptible to fiery attacks.",
+    "attacks": "Utilizes ice claws for slashing damage and has a retaliatory ability that damages attackers with ice shards.",
+    "most_powerful_ability": "Encase in Ice can restrain and petrify opponents with ice, creating a strategic advantage in battle.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can glide through nonmagical ice without disturbance.",
+        "Moves freely across icy surfaces without slowing down.",
+        "Can retaliate against bludgeoning melee attacks with piercing ice damage."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful ice elemental",
+        "creature that moves through ice effortlessly",
+        "monster that encases enemies in ice",
+        "Large elemental immune to cold damage",
+        "vulnerable ice monster that hates fire"
+    ]
+}

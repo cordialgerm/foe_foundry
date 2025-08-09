@@ -1,0 +1,53 @@
+{
+    "name": "Moppet",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 17,
+    "ac": 10,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "psychic",
+        "manipulation",
+        "stealth",
+        "nightmare"
+    ],
+    "adjectives": [
+        "tiny",
+        "confusing",
+        "deceptive"
+    ],
+    "description": "The Moppet is a tiny, doll-like construct, designed for psychological manipulation with unique abilities that disrupt foes' actions and thoughts.",
+    "memorable": "Despite its small size, the Moppet can absorb psychic energy and manifest nightmares, incapacitating foes.",
+    "goals": "To manipulate and incapacitate opponents using psychic energy and nightmares.",
+    "relations": "Often created by spellcasters or individuals skilled in crafting constructs.",
+    "environment": "Typically found in places where its creator resides, or in areas of strong psychic energy.",
+    "strengths": "Immune to poison and psychic damage, and can incapacitate foes with psychic abilities.",
+    "weaknesses": "Very low physical capabilities and durability, making it vulnerable in direct combat.",
+    "attacks": "Uses a Psychic Burst for psychic damage or the Waking Nightmare to incapacitate foes in a psychic state.",
+    "most_powerful_ability": "The Waking Nightmare ability can put multiple foes into a fugue state, creating an illusionary struggle that is psychologically unsettling.",
+    "equipment": null,
+    "senses": null,
+    "skills": "The Moppet has proficiency in perception, but its total is low, reflecting its limited awareness.",
+    "additional_information": [
+        "Can appear motionless and indistinguishable from a normal doll due to its False ability.",
+        "Does not require air, food, drink, or sleep.",
+        "Can absorb psychic energy, holding up to four Psychic Points.",
+        "Gains Psychic Points through critical hits and by incapacitating foes.",
+        "Magic item charges are not expended during nightmare combat, which adds an interesting tactical element."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny doll that creates nightmares",
+        "psychic construct that confuses foes",
+        "mysterious doll that mesmerizes enemies",
+        "creature that brings fears to life",
+        "psychic energy absorbing doll construct"
+    ]
+}

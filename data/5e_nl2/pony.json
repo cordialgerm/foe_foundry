@@ -1,0 +1,50 @@
+{
+    "name": "Pony",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "beast",
+        "mount",
+        "companion"
+    ],
+    "adjectives": [
+        "small",
+        "sturdy",
+        "reliable"
+    ],
+    "description": "The Pony is a small, sturdy breed of horse known for its strength and endurance, often used as a pack animal or mount for smaller creatures. It has a moderate build and is typically gentle and easy to train.",
+    "memorable": "Ponies are valued for their resilience and utility in traveling across difficult terrain.",
+    "goals": "To assist with transportation and carry loads in various environments.",
+    "relations": "Commonly found with halflings or children as riders; often encountered on farms.",
+    "environment": "Typically found in rural areas or farms.",
+    "strengths": "Good Strength modifier allows for effective physical tasks and carrying loads.",
+    "weaknesses": "Limited combat abilities and very low Intelligence and Charisma.",
+    "attacks": "Can make a melee weapon attack with its hooves, dealing 2 (1d4) bludgeoning damage.",
+    "most_powerful_ability": "Draft Animal ability allows the Pony to push, drag, or lift weight three times its carrying capacity.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Gentle and easy to train, ideal as a companion.",
+        "Can sustain some damage with 11 hit points.",
+        "Moderate speed of 40 feet supports short to moderate travel.",
+        "Basic offensive capabilities with melee attacks.",
+        "Serves effectively as a pack animal."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small sturdy horse for transporting",
+        "mount for halflings and children",
+        "reliable pack animal for travel",
+        "gentle beast for rural adventures",
+        "work animal used on farms"
+    ]
+}

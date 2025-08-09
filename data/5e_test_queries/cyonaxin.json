@@ -1,0 +1,25 @@
+{
+    "name": "Cyonaxin",
+    "queries": [
+        {
+            "query": "medium chaotic good celestial with high mobility and magical attacks",
+            "variant": "chaotic good medium celestial with magical attacks and high mobility"
+        },
+        {
+            "query": "creature that protects allies and has resistance to poison and radiant damage",
+            "variant": "creature immune to poison and radiant attacks that protects allies"
+        },
+        {
+            "query": "celestial with special combat abilities like Blur of Motion and Evasion",
+            "variant": "celestial that has Evasion and Blur of Motion combat abilities"
+        },
+        {
+            "query": "Cyonaxin's unique ability to break chains and protect from being restrained",
+            "variant": "Cyonaxin has a unique ability to break chains and protect from restraints"
+        },
+        {
+            "query": "combat tactics of a celestial that can knock foes prone and empower allies",
+            "variant": "tactics of a celestial that can empower allies and knock foes down"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Darkmantle",
+    "queries": [
+        {
+            "query": "shadowy octopus monster that ambushes from cave ceilings",
+            "variant": "octopus-like shadow creature that ambushes prey from ceilings in caves"
+        },
+        {
+            "query": "cave predator that uses magical darkness and has tentacles",
+            "variant": "creature from caves that has tentacles and can create magical darkness"
+        },
+        {
+            "query": "monster that remains motionless resembling cave formations",
+            "variant": "creature that mimics stalactites and stalagmites in caves"
+        },
+        {
+            "query": "small monster with grappling abilities found in caverns",
+            "variant": "tiny creature in caves that can grapple and constrict its prey"
+        },
+        {
+            "query": "dark creature with blindsight and the ability to smother opponents",
+            "variant": "creature that can see in darkness and suffocates its victims"
+        }
+    ]
+}

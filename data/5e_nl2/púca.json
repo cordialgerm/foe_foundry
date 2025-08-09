@@ -1,0 +1,50 @@
+{
+    "name": "P\u00faca",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 142,
+    "ac": 12,
+    "srd": false,
+    "cr": "7",
+    "movement": "nimble speed of 50 feet",
+    "role": "Ambusher",
+    "tags": [
+        "fey",
+        "manipulator",
+        "charming"
+    ],
+    "adjectives": [
+        "cunning",
+        "sly",
+        "powerful"
+    ],
+    "description": "The P\u00faca is a large fey creature characterized by its beguiling abilities and cunning nature, preying upon unsuspecting travelers.",
+    "memorable": "Its unique ability to charm travelers and disappear with them into a nightmarish landscape makes the P\u00faca a formidable foe.",
+    "goals": "The P\u00faca seeks to lure and capture travelers, manipulating them for its own amusement.",
+    "relations": "P\u00faca may be encountered alongside other fey creatures or as minions of powerful fey lords.",
+    "environment": "Typically found in wooded areas or places associated with fey magic.",
+    "strengths": "High Strength and Charisma scores allow it to perform powerful physical attacks and excel in charm-related abilities.",
+    "weaknesses": "Average Wisdom makes it susceptible to certain forms of magic; vulnerable to cold iron weapons.",
+    "attacks": "Uses Multiattack with two Chain Whip attacks and one Hooves attack, dealing bludgeoning damage and grappling foes.",
+    "most_powerful_ability": "Beguiling Aura, which charms creatures and compels them to approach and mount it.",
+    "equipment": null,
+    "senses": "Possesses darkvision enabling it to see in dim light up to 30 feet.",
+    "skills": "Has low perception skills with a +0 modifier, making it average at detecting hidden creatures or traps.",
+    "additional_information": [
+        "Can resist nonmagic bludgeoning, piercing, and slashing damage from weapons not made with cold iron.",
+        "Nightmarish Ride ability paralyzes and restrains mounted creatures until dawn.",
+        "Charm lasts for one minute unless a saving throw is successful.",
+        "If a creature succeeds on its saving throw after taking damage, it gains immunity to the P\u00faca\u2019s charm for 24 hours.",
+        "Grappling capabilities make it dangerous in melee encounters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "charming fey creature that can disappear",
+        "manipulative large creature with beguiling ability",
+        "P\u00faca nightmarish ride ability details",
+        "P\u00faca ambusher that steals travelers",
+        "fey creature that charms and escapes"
+    ]
+}

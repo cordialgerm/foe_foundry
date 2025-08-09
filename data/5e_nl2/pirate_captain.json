@@ -1,0 +1,53 @@
+{
+    "name": "Pirate Captain",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walking speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "pirate",
+        "warrior",
+        "naval"
+    ],
+    "adjectives": [
+        "cunning",
+        "skilled",
+        "agile"
+    ],
+    "description": "A medium humanoid skilled in combat and navigation, the Pirate Captain wields a scimitar and daggers, showcasing agility and combat readiness.",
+    "memorable": "Unique ability to navigate waters expertly and use both melee and ranged attacks effectively.",
+    "goals": "To commandeer ships and lead crews, dominate maritime encounters.",
+    "relations": "Often commands a crew of pirates and interacts with other nautical-themed creatures.",
+    "environment": "Typically found in coastal areas or aboard ships.",
+    "strengths": "High dexterity allows for effective dodging and maneuverability in combat; skilled in various physical and social activities.",
+    "weaknesses": "Moderate mental stats; average perception may make them susceptible to unnoticed threats.",
+    "attacks": "Attacks twice with a scimitar, dealing slashing damage, and can also throw daggers for piercing damage.",
+    "most_powerful_ability": "Seawise ability grants expertise on maritime skill checks, enhancing navigation and ship handling.",
+    "equipment": "Wields a scimitar and daggers.",
+    "senses": "Has a passive perception of 11, which is average for detecting hidden threats.",
+    "skills": "Proficient in Acrobatics, Deception, and Stealth, enhancing their versatility in both combat and social interactions.",
+    "additional_information": [
+        "Uses Parry reaction to boost Armor Class.",
+        "Can perform multiattacks for increased damage output.",
+        "Shows strong capabilities in physical feats through Athletics and Acrobatics.",
+        "Adept at intimidation and deception in social encounters.",
+        "Navigates well in maritime settings due to Seawise ability."
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning warrior skilled in navigation",
+        "agile pirate captain with daggers",
+        "medium humanoid skilled in combat",
+        "pirate captain who excels at sea",
+        "skilled melee fighter with multiattack"
+    ]
+}

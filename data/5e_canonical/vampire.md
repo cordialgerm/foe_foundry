@@ -1,6 +1,9 @@
 <MonsterName/>Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<Subtype/>shapechanger</Subtype>
+<CR/>13</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>144</HP>
 <summary>A Vampire is an undead creature of immense power, known for its immortality, charm, and thirst for blood. Vampires retain the intelligence and personality they had in life but are twisted by their undead nature. They possess superhuman strength, speed, and the ability to regenerate from most wounds. Vampires can charm their victims, turn into mist or bats, and summon creatures of the night to their aid. While they are vulnerable to sunlight, running water, and holy symbols, they are dangerous foes in the darkness, using both their physical abilities and dark magic to manipulate and destroy.</summary>
 
 <summary>The Vampire is a formidable Medium Undead creature, known for its cunning and overwhelming strength on the battlefield. With a challenge rating of 11, it poses a significant threat to adventurers, bolstered by impressive abilities and high defenses. The Vampire possesses strong melee capabilities, allowing it to grapple and drain the life force of its victims while also charming them, making it a dangerous adversary both in combat and when manipulating party dynamics. Its high Armor Class of 16 and substantial hit points of 142 provide resilience. However, it is vulnerable to sunlight and running water, which can impose significant damage and deactivate some of its abilities. This combination of strengths and weaknesses makes the Vampire a challenging foe that requires careful strategy to defeat.</summary>
@@ -72,6 +75,7 @@ Lastly, the Vampire has regional effects that come into play in areas it haunts,
 
 Source: 5e_srd
 
+<statblock>
 ### Vampire
 
 *Medium undead (shapechanger), lawful evil*
@@ -146,7 +150,8 @@ The vampire can take 3 legendary actions, choosing from the options below. Only 
 
 **Unarmed Strike**. The vampire makes one unarmed strike.
 
-**Bite (Costs 2 Actions)**. The vampire makes one bite attack.
+**Bite (Costs 2 Actions)**. The vampire makes one bite attack.</statblock>
+
 
 
 
@@ -154,6 +159,7 @@ The vampire can take 3 legendary actions, choosing from the options below. Only 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire
 
 *Medium* *Undead*
@@ -206,6 +212,7 @@ Source: 5e_artisinal_monsters
 - **Grab:** The vampire makes a grab attack.
 - **Mist Form:** The vampire transforms into a mist or back into its true form. As mist, the vampire has a flying speed of 30, can't speak, can't take actions or manipulate objects, is immune to nonmagical damage from weapons, and has advantage on saving throws and Stealth checks. It can pass through a space as narrow as 1 inch without squeezing but can't pass through water. Anything its carrying transforms with it.
 - **Shapechange:** The vampire transforms into the shape of a Medium or smaller beast or back into its true form. While transformed, it has the beasts size and movement modes. It can't use reactions or legendary actions, and can't speak. Otherwise, it uses the vampires statistics. Anything its carrying transforms with it.
+</statblock>
 
 
 
@@ -214,6 +221,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire
 
 *Medium undead (shapechanger)*
@@ -269,5 +277,6 @@ The vampire can take 3 legendary actions, choosing from the options below. Only 
 ### Regional Effects
 
 - **1d10** If the vampire dies, these effects fade in  days.
+</statblock>
 
 

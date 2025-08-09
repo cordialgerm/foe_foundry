@@ -1,0 +1,55 @@
+{
+    "name": "Deep Drake",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 150,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 80 ft., fly 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "chaotic",
+        "necrotic",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "dark",
+        "powerful"
+    ],
+    "description": "The Deep Drake is a large, fearsome dragon with imposing physical features and a chaotic essence. Its scales shimmer with dark hues, reflecting its malevolent nature.",
+    "memorable": "Its Enervating Breath ability can stun multiple foes and inflict substantial necrotic damage.",
+    "goals": "To dominate its territory and eliminate threats through physical might and powerful magic.",
+    "relations": "Often found in the company of other chaotic evil creatures, other dragons, or lurking in dark lairs.",
+    "environment": "Chaotic environments, often underground or in areas with limited light.",
+    "strengths": "High physical attributes in Strength and Dexterity, strong melee attacks, and immunities to necrotic damage.",
+    "weaknesses": "Sensitive to sunlight, which hinders its effectiveness during the day.",
+    "attacks": "Employs a Multiattack strategy with a Bite, Claw, and Stinger, delivering powerful and potentially poisoning strikes.",
+    "most_powerful_ability": "Enervating Breath, which deals significant necrotic damage and stuns targets within its reach.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "Proficient in Athletics, showcasing exceptional physical prowess, as well as good Insight and Perception skills.",
+    "additional_information": [
+        "Immune to necrotic damage and paralysis",
+        "Magic Resistance grants advantage on spell saves",
+        "Has a potent poison attack with ongoing effects",
+        "Good mobility with a fast walking speed",
+        "Can communicate in multiple languages"
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon with necrotic breath attack",
+        "chaotic dragon sensitive to sunlight",
+        "dragon that stuns with purple-black energy",
+        "deep drake with powerful melee attacks",
+        "fearsome dragon that inflicts necrotic damage"
+    ]
+}

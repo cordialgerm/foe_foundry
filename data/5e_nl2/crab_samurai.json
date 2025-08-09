@@ -1,0 +1,49 @@
+{
+    "name": "Crab, Samurai",
+    "creature_type": "Beast",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "martial",
+        "grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "dynamic"
+    ],
+    "description": "The Crab Samurai is a robust creature with a solid Armor Class and a significant health pool. It has a uniquely armored shell and wields a Crustaceous Sword, making it a formidable melee opponent.",
+    "memorable": "It possesses the ability to grapple opponents with its powerful claws and has various combat stances that enhance its capabilities.",
+    "goals": "Typically seeks to dominate its territory and defeat intruders.",
+    "relations": "Might be encountered alongside other aquatic or marshy creatures.",
+    "environment": "Aquatic or marshy environments, often near water bodies.",
+    "strengths": "High Strength for inflicting damage and exceptional durability.",
+    "weaknesses": "Limited Dexterity makes it less evasive in combat.",
+    "attacks": "Can make multiple melee attacks including a damaging sword strike and grappling with powerful claws.",
+    "most_powerful_ability": "The ability to grapple opponents tightly, significantly restricting their movement.",
+    "equipment": "Crustaceous Sword used for melee attacks.",
+    "senses": "Blindsight up to 30 feet, allowing it to sense its surroundings effectively.",
+    "skills": "Proficient in Perception, granting it a passive perception of 15.",
+    "additional_information": [
+        "Amphibious, can breathe air and water.",
+        "Immunity to being charmed or frightened.",
+        "Can adopt various stances to enhance combat abilities.",
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic creature with grappling claws",
+        "samurai crab with strong melee attacks",
+        "unique crab with powerful claws and sword",
+        "robust crab that can breathe underwater",
+        "strategic grappler in marshy environments"
+    ]
+}

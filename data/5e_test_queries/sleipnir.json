@@ -1,0 +1,25 @@
+{
+    "name": "Sleipnir",
+    "queries": [
+        {
+            "query": "strong creature known for its leaping ability and cold resistance",
+            "variant": "creature strong that leaps and is resistant to cold"
+        },
+        {
+            "query": "large monstrosity with high hit points and strong physical attacks",
+            "variant": "big monstrosity with high health and powerful melee attacks"
+        },
+        {
+            "query": "agile monster that uses magic weakness and excels in physical combat",
+            "variant": "quick monster that has a weak spot for magic and is great in physical fights"
+        },
+        {
+            "query": "quadrupedal creature that charges foes and can summon avalanches",
+            "variant": "four-legged creature that can charge at enemies and call avalanches"
+        },
+        {
+            "query": "monstrosity that communicates in Primordial and has darkvision",
+            "variant": "monstrous creature able to speak Primordial and sees in the dark"
+        }
+    ]
+}

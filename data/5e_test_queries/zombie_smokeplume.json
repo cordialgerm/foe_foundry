@@ -1,0 +1,25 @@
+{
+    "name": "Zombie, Smokeplume",
+    "queries": [
+        {
+            "query": "large undead creature that uses smoke and fire in battle",
+            "variant": "large undead being that uses fire and smoke during fights"
+        },
+        {
+            "query": "creature with high hit points and fire immunity that creates smoke",
+            "variant": "monster with lots of hit points and immunity to fire that generates smoke"
+        },
+        {
+            "query": "undead monster with low agility that can see through smoke",
+            "variant": "undead creature with poor dexterity that sees through smoke easily"
+        },
+        {
+            "query": "chaotic evil undead that deals poison damage with smoke",
+            "variant": "chaotic evil undead being that inflicts poison through smoke"
+        },
+        {
+            "query": "zombie with special abilities related to smoke and fire",
+            "variant": "zombie featuring unique powers regarding fire and smoke"
+        }
+    ]
+}

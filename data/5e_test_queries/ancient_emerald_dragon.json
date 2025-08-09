@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Emerald Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with psionic abilities and high intelligence",
+            "variant": "gargantuam dragon that has psionic powers and intelligence"
+        },
+        {
+            "query": "dragon that manipulates magical forces and has a thunder breath attack",
+            "variant": "dragon that can manipulate magic and has an attack that uses thunder"
+        },
+        {
+            "query": "massive dragon resistant to psychic damage with strong stealth skills",
+            "variant": "huge dragon that is resistant to psychic damage and has powerful stealth abilities"
+        },
+        {
+            "query": "Ancient Emerald Dragon abilities and combat tactics",
+            "variant": "Abilities and combat tactics of the Ancient Emerald Dragon"
+        },
+        {
+            "query": "dragon with innate spellcasting and telepathic communication",
+            "variant": "dragon that has innate spellcasting and can communicate telepathically"
+        }
+    ]
+}

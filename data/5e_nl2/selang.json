@@ -1,0 +1,53 @@
+{
+    "name": "Selang",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 40 feet",
+    "role": null,
+    "tags": [
+        "fey",
+        "chaotic evil",
+        "poison",
+        "music"
+    ],
+    "adjectives": [
+        "chaotic",
+        "dangerous",
+        "cunning"
+    ],
+    "description": "The Selang is a Medium-sized fey creature characterized by its chaotic evil alignment, featuring a combination of high Strength and Charisma which it uses to influence and damage opponents. It has magical poison-coated weapons which enhance its lethality.",
+    "memorable": "Its ability to play mystical melodies that influence enemies in combat makes it a unique and tactical foe.",
+    "goals": "The Selang typically seeks to manipulate and harm adversaries through its abilities and combat prowess.",
+    "relations": "It may be encountered alongside other fey creatures or as a servant of a more powerful fey lord.",
+    "environment": "The Selang is often found in enchanted forests or locations steeped in magical energy.",
+    "strengths": "Possesses immunities to acid and lightning damage, along with high damage potential through poison attacks.",
+    "weaknesses": "Vulnerable to magical attacks, which can bypass its resistances.",
+    "attacks": "Utilizes multiattack with dagger or poison bolt, dealing significant poison damage combined with piercing damage.",
+    "most_powerful_ability": "The Alien Piping ability can influence a target's actions in combat through mystical melodies, possibly turning the tide of battle.",
+    "equipment": null,
+    "senses": "It possesses a passive Perception score of 16, allowing it to detect hidden threats easily.",
+    "skills": "Exceptional skills in Performance and Perception enable it to excel in social interactions and noticing details.",
+    "additional_information": [
+        "Weapons coated with magical poison deal extra 3d6 poison damage.",
+        "High Charisma allows for effective manipulation of opponents.",
+        "Good mobility with a walking speed of 40 feet.",
+        "Mixed attack styles with ranged and melee options.",
+        "Utilizes tactical influence in combat through Alien Piping."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fey with magical poison",
+        "fey creature that manipulates enemies with music",
+        "dangerous fey with high Charisma and poison attacks",
+        "medium-sized fey immune to acid and lightning",
+        "creature adept in performance and perception skills"
+    ]
+}

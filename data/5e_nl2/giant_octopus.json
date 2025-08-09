@@ -1,0 +1,51 @@
+{
+    "name": "Giant Octopus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 52,
+    "ac": 11,
+    "srd": true,
+    "cr": "1",
+    "movement": "10 ft. walk, 60 ft. swim",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "stealth",
+        "grappler"
+    ],
+    "adjectives": [
+        "intelligent",
+        "flexible",
+        "camouflaging",
+        "strong"
+    ],
+    "description": "The Giant Octopus is a large, intelligent sea creature with long, flexible tentacles lined with powerful suction cups. Its body is soft and malleable, capable of squeezing through tight spaces. The octopus can change color to blend in with its surroundings.",
+    "memorable": "Known for its ink cloud ability and stealth tactics.",
+    "goals": "Hunt for prey, ambush unsuspecting creatures, and escape predators.",
+    "relations": "Typically encountered in underwater environments with other sea creatures.",
+    "environment": "Aquatic settings, typically found in oceans and seas.",
+    "strengths": "Strong grappler with enhanced camouflage and quick swimming speed.",
+    "weaknesses": "Low durability compared to larger creatures with a modest armor class.",
+    "attacks": "Uses tentacles for melee attacks, grappling prey using its long reach.",
+    "most_powerful_ability": "Ink Cloud, which provides heavy obscurity and allows for escape.",
+    "senses": "The octopus has a passive Perception of 14, enabling it to notice hidden threats effectively.",
+    "skills": "Proficient in stealth, especially enhanced underwater.",
+    "additional_information": [
+        "Can hold its breath for 1 hour while out of water.",
+        "Advantage on Stealth checks while underwater.",
+        "Grapples multiple creatures simultaneously.",
+        "Can release a cloud of ink to obscure its surroundings.",
+        "Can execute a Tentacle Slam as a bonus action."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large underwater predator with tentacles",
+        "camouflaging sea creature that grapples",
+        "intelligent octopus with ink cloud ability",
+        "stealthy octopus that ambushes prey",
+        "Giant Octopus habitat and behavior"
+    ]
+}

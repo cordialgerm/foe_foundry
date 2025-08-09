@@ -1,0 +1,25 @@
+{
+    "name": "Albino Death Weasel",
+    "queries": [
+        {
+            "query": "large cunning beast with poison attacks that is fast and grapples prey",
+            "variant": "fast large beast that grapples prey and has poison abilities"
+        },
+        {
+            "query": "beast that has keen hearing and a foul musk ability found in natural habitats",
+            "variant": "creature with keen senses and musk spray ability that lives in its natural environment"
+        },
+        {
+            "query": "white color beast that can knock enemies prone and inflict poison damage",
+            "variant": "white beast capable of knocking foes down and causing poison damage"
+        },
+        {
+            "query": "weasel-like creature that pounces on its prey and has grappling capabilities",
+            "variant": "creature that resembles a weasel, known for its pouncing ability and grappling"
+        },
+        {
+            "query": "agile beast with strong bite and claw attacks that lives underground",
+            "variant": "strong agile creature with biting and clawing attacks found underground"
+        }
+    ]
+}

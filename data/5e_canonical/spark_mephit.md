@@ -1,6 +1,8 @@
 <MonsterName/>Spark Mephit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>17</HP>
 <summary>The Spark Mephit is a small elemental creature associated with the forces of electricity. With an armor class of 12 and a modest 17 hit points, it has a relatively low durability, making it vulnerable in direct confrontations. This creature possesses a challenge rating of 1/2, indicating it is a suitable opponent for novice adventurers. Notably, the Spark Mephit demonstrates a unique blend of speed and agility, being able to walk and fly at a rate of 30 feet each. Its strengths lie in its immunities to lightning and poison damage, as well as its ability to wreak havoc with its special abilities. However, its low strength and constitution make it poor in physical confrontations, and its intelligence is also quite low, making it less effective in cunning or deceptive maneuvers.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Spark Mephit can be a trickster in combat, utilizing its speed and 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spark Mephit
 
 *Small* *Elemental*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Faerie Flame (1/Day):** Each creature within 10 feet of the mephit makes a DC 11 Dexterity saving throw. On a failure  the creature is magically outlined in blue light for 1 minute. While outlined  the creature gains no benefit from being invisible and attack rolls against it are made with advantage.
 
 
+</statblock>
 
 

@@ -1,0 +1,51 @@
+{
+    "name": "Swarm of Sluaghs",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 54,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 50 ft. fly 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "swarm",
+        "stealth"
+    ],
+    "adjectives": [
+        "chaotic",
+        "mobile",
+        "magical"
+    ],
+    "description": "A chaotic swarm of fey with a blend of mobility and magical abilities, able to fly and walk swiftly.",
+    "memorable": "Its reliance on stealth and significant drawbacks in sunlight create a unique tactical challenge.",
+    "goals": "To ambush targets and control the battlefield, particularly in low-light conditions.",
+    "relations": "May be encountered alongside other fey creatures.",
+    "environment": "Typically found in dimly lit or dark areas, avoiding direct sunlight.",
+    "strengths": "High Dexterity enhances its agility and stealth capabilities.",
+    "weaknesses": "Disadvantaged in sunlight, making it vulnerable during the day.",
+    "attacks": "Chilling Touch attack inflicts heavy cold damage and can prevent healing.",
+    "most_powerful_ability": "Shadow Stealth enables it to hide effectively in darkness, enhancing ambush potential.",
+    "senses": "Possesses darkvision up to 60 feet, allowing navigation in low-light spaces.",
+    "skills": "Skilled in Stealth with a +5 bonus, enabling effective hiding and ambushing.",
+    "additional_information": [
+        "Immunity to cold damage",
+        "Vulnerability to fire damage",
+        "Condition immunity to many debilitating effects",
+        "Can occupy the same space as targets",
+        "Inability to regain hit points restricts its endurance"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic swarm of fey creatures",
+        "mobile creature that hates sunlight",
+        "darkness-loving creature with chilling touch",
+        "stealthy fey swarm that ambushes",
+        "fey that occupies the same space as opponents"
+    ]
+}

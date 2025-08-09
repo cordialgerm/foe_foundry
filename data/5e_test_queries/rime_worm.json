@@ -1,0 +1,25 @@
+{
+    "name": "Rime Worm",
+    "queries": [
+        {
+            "query": "large elemental creature that lives in icy environments and has cold damage abilities",
+            "variant": "big elemental monster that exists in cold places and can deal cold damage"
+        },
+        {
+            "query": "ice-themed monster with burrowing abilities and stealth advantages in snow",
+            "variant": "snow-related creature that can burrow and has stealth perks in snowy terrain"
+        },
+        {
+            "query": "Rime Worm's icy body ability that harms melee attackers and its freezing powers",
+            "variant": "Rime Worm's cold damage ability that impacts melee attackers and its ice trapping powers"
+        },
+        {
+            "query": "creature that can ambush in snow and is dangerous in close combat with freezing tendrils",
+            "variant": "monster that can attack from ambush in snowy areas and is lethal in melee with freezing tentacles"
+        },
+        {
+            "query": "elemental monster with a challenging rating and experience points for adventurers in icy landscapes",
+            "variant": "elemental creature with difficulty rating and XP rewards for adventurers in freezing terrains"
+        }
+    ]
+}

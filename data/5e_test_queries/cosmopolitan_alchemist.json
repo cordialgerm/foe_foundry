@@ -1,0 +1,25 @@
+{
+    "name": "Cosmopolitan Alchemist",
+    "queries": [
+        {
+            "query": "humanoid potion master with explosive bombs",
+            "variant": "humanoid master of potions using bombs"
+        },
+        {
+            "query": "medium creature skilled in alchemical crafting and healing potions",
+            "variant": "medium monster proficient in crafting potions and healing"
+        },
+        {
+            "query": "intelligent character that uses fire and poison in combat",
+            "variant": "smart character employing poison and fire during battles"
+        },
+        {
+            "query": "spell-casting alchemist with high dexterity and intelligence",
+            "variant": "alchemist with high intelligence and dexterity that casts spells"
+        },
+        {
+            "query": "humanoid alchemist that thrives in crafting magic items",
+            "variant": "alchemist humanoid that excels at crafting magical items"
+        }
+    ]
+}

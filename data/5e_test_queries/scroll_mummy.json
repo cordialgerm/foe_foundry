@@ -1,0 +1,25 @@
+{
+    "name": "Scroll Mummy",
+    "queries": [
+        {
+            "query": "undead creature that absorbs spells and has low agility",
+            "variant": "creature that is undead, absorbs spells, and is not very agile"
+        },
+        {
+            "query": "medium-sized mummy known for draining spell slots and casting spells",
+            "variant": "mummy that is medium-sized, drains spell slots, and can cast spells"
+        },
+        {
+            "query": "resilient undead with high hit points and magic resistance",
+            "variant": "undead with high hit points, resilient, and has resistance to magic"
+        },
+        {
+            "query": "Scroll Mummy abilities related to spellcasting and combat",
+            "variant": "abilities of the Scroll Mummy concerning combat and casting spells"
+        },
+        {
+            "query": "flesh-wrapped mummy that is immune to poison and fire damage",
+            "variant": "mummy wrapped in flesh, immune to poison and fire damage"
+        }
+    ]
+}

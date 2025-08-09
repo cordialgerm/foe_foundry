@@ -1,0 +1,52 @@
+{
+    "name": "Grick",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 14,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 feet on ground and climbing",
+    "role": "Ambusher",
+    "tags": [
+        "predator",
+        "ambush",
+        "cave"
+    ],
+    "adjectives": [
+        "serpentine",
+        "gray",
+        "rubbery",
+        "stealthy"
+    ],
+    "description": "A serpentine predator with a rubbery gray body, a beak-like maw surrounded by tentacles, adept at blending into rocky environments.",
+    "memorable": "Cunning ambush predator known for silent movement and deadly grappling tentacles.",
+    "goals": "Hunts unsuspecting prey in caves and dungeons.",
+    "relations": "May be encountered alongside other cave-dwelling monsters or predators.",
+    "environment": "Dark caves or dungeons.",
+    "strengths": "Exceptional stealth in rocky terrain and grappling attacks.",
+    "weaknesses": "Low intelligence and charisma, vulnerable to magical attacks.",
+    "attacks": "Utilizes tentacle and beak attacks, capable of grappling its prey.",
+    "most_powerful_ability": "Spider Climb allows it to traverse ceilings and difficult surfaces effortlessly.",
+    "senses": "Possesses keen stealth in rocky terrain with an advantage on Stealth checks.",
+    "skills": "Excels in stealth due to its camouflage ability.",
+    "additional_information": [
+        "Resistant to exhaustion and the frightened condition",
+        "Blends into rocky environments effectively",
+        "Utilizes multiattack with tentacles and beak",
+        "Can climb walls, enhancing combat mobility",
+        "Focuses on ambushing prey with surprise attacks"
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "rocky cave predator with tentacles",
+        "ambush monster with a beak and tentacles",
+        "stealthy predator that climbs walls",
+        "gray serpentine creature in dark caves",
+        "monster that grapples and bites victims"
+    ]
+}

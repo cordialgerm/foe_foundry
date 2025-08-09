@@ -1,0 +1,55 @@
+{
+    "name": "Pit Fiend",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 300,
+    "ac": 19,
+    "srd": true,
+    "cr": "20",
+    "movement": "30 feet walking, 60 feet flying",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "fire",
+        "fear"
+    ],
+    "adjectives": [
+        "towering",
+        "muscular",
+        "menacing"
+    ],
+    "description": "The Pit Fiend has red, scaly skin, massive bat-like wings, and flaming eyes, adorned with infernal armor. It wields flaming swords or massive maces, and its body is marked with scars.",
+    "memorable": "Its ability to instill fear and its powerful spellcasting make the Pit Fiend a truly formidable foe.",
+    "goals": "Commanding legions of devils and spreading destruction.",
+    "relations": "Often found serving other powerful devils or leading infernal armies.",
+    "environment": "Typically found in the Nine Hells or in the presence of dark magic.",
+    "strengths": "High strength and charisma scores enhance its combat and intimidations.",
+    "weaknesses": "Vulnerable to effects that exploit its lower dexterity.",
+    "attacks": "Can deliver devastating bite, mace, and tail attacks, inflicting significant damage and additional effects such as poison.",
+    "most_powerful_ability": "The Fear Aura that frightens creatures nearby, making it a psychological threat.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see invisible creatures.",
+    "skills": "Skilled in athletics, insight, and has high perception, indicating exceptional awareness.",
+    "additional_information": [
+        "Aura of the Devil Lord enhances allies and frightens enemies.",
+        "Damage immunities to fire and poison grant durability.",
+        "Magic Resistance provides advantages against spells and magical effects.",
+        "Innate spellcasting allows for versatile tactical options.",
+        "Multiattack capability enables it to strike multiple times."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Can cast fireball and other spells at will, with significant control options.",
+    "test_queries": [
+        "powerful devil with flaming eyes",
+        "huge red fiend commanding fear",
+        "fiery monster with magical abilities",
+        "scary pit fiend with many attacks",
+        "devil with truesight and fire attacks"
+    ]
+}

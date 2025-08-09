@@ -1,0 +1,52 @@
+{
+    "name": "Angel of Judgment",
+    "creature_type": "Celestial",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 229,
+    "ac": 19,
+    "srd": false,
+    "cr": "18",
+    "movement": "walk 40 ft., fly 120 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "judgment",
+        "magic"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "versatile"
+    ],
+    "description": "The Angel of Judgment is a Huge celestial being embodying principles of balance, showcasing a majestic presence with celestial features and wielding a Greataxe.",
+    "memorable": "Its dual aspect ability allows it to become a harbinger of either chaos or law, gaining advantages against specific enemies.",
+    "goals": "To uphold the balance between law and chaos, confronting those who disrupt this balance.",
+    "relations": "Might serve under higher celestial beings or frequently confront fiends and other chaotic entities.",
+    "environment": "Typically found in celestial realms or places where law and authority are in question.",
+    "strengths": "High damage output with magical attacks and strong defensive capabilities including magic resistance and condition immunities.",
+    "weaknesses": "Reliance on targeting specific creature types and vulnerabilities against certain adversaries.",
+    "attacks": "Utilizes a powerful Greataxe attack that inflicts substantial slashing and force damage.",
+    "most_powerful_ability": "Penance Gaze, allowing it to stun or restrain creatures based on their saving throws.",
+    "equipment": "Wields a Greataxe.",
+    "senses": "Possesses truesight up to 120 feet and has an impressive passive Perception score of 23.",
+    "skills": "Excels in History, Investigation, Perception, and Religion, each rated at +12 or +13.",
+    "additional_information": [
+        "Magic Resistance grants advantage against spells.",
+        "Change Face ability allows it to adapt its alignment in battle.",
+        "Innate spellcasting centered around Charisma with a variety of utility spells.",
+        "Condition immunities to charmed, exhausted, and frightened.",
+        "Weapons of Balance ability deals extra force damage."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Can cast spells like Detect Evil and Good, Detect Magic, and Detect Thoughts at will, with powerful spells available once per day.",
+    "test_queries": [
+        "celestial guardian with judgment abilities",
+        "powerful angel creature",
+        "entity of law and chaos",
+        "huge celestial being with magical attacks",
+        "angel of balance in D&D"
+    ]
+}

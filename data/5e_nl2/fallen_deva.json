@@ -1,0 +1,52 @@
+{
+    "name": "Fallen Deva",
+    "creature_type": "Celestial",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 153,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft., fly 90 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "deva",
+        "angel"
+    ],
+    "adjectives": [
+        "fallen",
+        "resilient",
+        "powerful",
+        "lawful"
+    ],
+    "description": "The Fallen Deva is a medium celestial being that embodies strength and resilience, possessing an ethereal appearance.",
+    "memorable": "The ability to shapeshift, powerful radiant attacks, and dissolving into light upon death makes it unique and intriguing.",
+    "goals": "It seeks to carry out its own agenda while drawing on celestial power.",
+    "relations": "Often encountered with other fallen celestials, demons, or fiends.",
+    "environment": "Typically found in areas with celestial influence or those corrupted by evil.",
+    "strengths": "Resistant to nonmagical weapon damage and immune to fear, charm, and exhaustion.",
+    "weaknesses": "Vulnerable to radiant damage, which is a significant drawback for a celestial being.",
+    "attacks": "Can perform Multiattack with its Celestial Hammer dealing bludgeoning and radiant damage, and has a ranged attack called Divine Blast.",
+    "most_powerful_ability": "Radiant Energy ability allows it to heal allies or harm enemies for significant damage.",
+    "senses": "Possesses truesight within 30 feet, enabling it to see through illusions.",
+    "skills": "Highly skilled in insight, perception, and religion, reflecting its celestial nature.",
+    "additional_information": [
+        "Magic resistance granting advantage on spells",
+        "Dissolves into motes of light upon death",
+        "Immortal nature; does not require air, sustenance, or sleep",
+        "Can detect the alignment of creatures nearby",
+        "Capable of absorbing temporary hit points from slain humanoids"
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile celestial with radiant attacks",
+        "powerful celestial that resists nonmagical damage",
+        "fallen celestial that can heal or harm",
+        "deva with shapeshifting abilities",
+        "medium celestial vulnerable to radiant damage"
+    ]
+}

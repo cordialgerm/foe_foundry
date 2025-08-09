@@ -1,0 +1,25 @@
+{
+    "name": "Basilisk",
+    "queries": [
+        {
+            "query": "large reptilian creature that can turn you to stone",
+            "variant": "big reptile that turns foes into stone"
+        },
+        {
+            "query": "monstrous creature that lives in dark caves and petrifies with its gaze",
+            "variant": "monster hiding in dark ruins with a gaze that petrifies"
+        },
+        {
+            "query": "medium-sized monster with venomous bite and petrifying ability",
+            "variant": "medium creature known for poisonous bite and gaze that turns to stone"
+        },
+        {
+            "query": "scaly creature with eight legs that ambushes in the dark",
+            "variant": "creature covered in scales with 8 legs that hides in shadows"
+        },
+        {
+            "query": "dangerous monster that combines venom and stone gaze",
+            "variant": "threatening creature that uses venomous attacks and can petrify"
+        }
+    ]
+}

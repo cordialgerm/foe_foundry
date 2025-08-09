@@ -1,0 +1,51 @@
+{
+    "name": "Great Mandrake",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 44,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "10 feet walking speed",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "creature"
+    ],
+    "adjectives": [
+        "tiny",
+        "sturdy",
+        "resilient",
+        "dangerous"
+    ],
+    "description": "The Great Mandrake is a small, sturdy plant creature that emits a powerful and damaging shriek.",
+    "memorable": "Its devastating shriek can stun or knock unconscious foes, making it a significant tactical threat.",
+    "goals": "To defend itself and incapacitate intruders with its shriek.",
+    "relations": "May be encountered in wooded areas or alongside other plant creatures.",
+    "environment": "Forests or overgrown areas.",
+    "strengths": "Immunities to poison damage and the poisoned condition enhance its resilience in combat.",
+    "weaknesses": "Weaker dexterity hampers its defense and agility.",
+    "attacks": "Can use multiattack to make two bites that deal piercing damage or unleash a shriek that inflicts thunder damage.",
+    "most_powerful_ability": "The shriek ability can incapacitate enemies and control the battlefield.",
+    "senses": "Possesses tremorsense up to 60 feet, allowing it to detect movement in that radius.",
+    "skills": null,
+    "additional_information": [
+        "Constitution score of 16 makes it very resilient.",
+        "Strength score of 14 enhances its physical attacks.",
+        "Shriek can potentially stun or knock unconscious.",
+        "Can detect movement despite being blind beyond its tremorsense range.",
+        "Low dexterity may leave it vulnerable to ranged attacks."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny plant creature that shrieks",
+        "sturdy plant with thunder damage ability",
+        "monster that stuns enemies with a shriek",
+        "Great Mandrake shriek ability",
+        "resilient plant creature immune to poison"
+    ]
+}

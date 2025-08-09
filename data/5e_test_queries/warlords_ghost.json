@@ -1,0 +1,25 @@
+{
+    "name": "Warlords Ghost",
+    "queries": [
+        {
+            "query": "spectral undead warrior that attacks with psychic damage",
+            "variant": "undead warrior spirit that uses psychic attacks"
+        },
+        {
+            "query": "ghostly creature immune to cold and necrotic damage",
+            "variant": "haunted entity that cannot be harmed by cold or necrotic"
+        },
+        {
+            "query": "revenge-seeking ghost that can fly and pass through walls",
+            "variant": "flying vengeful spirit that can move through objects"
+        },
+        {
+            "query": "undead creature with high Charisma and special wail attack",
+            "variant": "ghost with strong presence and a powerful wail ability"
+        },
+        {
+            "query": "medium ghost with a death howl and detect life abilities",
+            "variant": "ghostly apparition that has detect life and a death howl"
+        }
+    ]
+}

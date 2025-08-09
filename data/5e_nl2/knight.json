@@ -1,0 +1,53 @@
+{
+    "name": "Knight",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 68,
+    "ac": 18,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 feet speed, capable of mounted combat",
+    "role": "Bruiser",
+    "tags": [
+        "warrior",
+        "noble",
+        "combatant",
+        "leader"
+    ],
+    "adjectives": [
+        "heavily armored",
+        "disciplined",
+        "chivalrous",
+        "formidable"
+    ],
+    "description": "Knights are heavily armored warriors clad in plate armor, wielding a sword or lance, exemplifying honor and valor on the battlefield.",
+    "memorable": "Possesses a unique ability to inspire allies and advantage against fear effects.",
+    "goals": "Serve noble causes, uphold justice, and protect their realm.",
+    "relations": "Often accompanied by squires and other commoners, and may serve under noble lords.",
+    "environment": "Typically found in battlefields or noble courts.",
+    "strengths": "High armor class and hit points, strong melee damage capabilities, and the ability to inspire allies.",
+    "weaknesses": "Average Dexterity may hinder speed and ranged effectiveness.",
+    "attacks": "Can make multiple melee attacks with a greatsword or lance, and has a ranged option with a heavy crossbow.",
+    "most_powerful_ability": "Knightly Inspiration to grant allies enhanced attack rolls and saving throws.",
+    "equipment": "Plate armor, greatsword, lance, and heavy crossbow.",
+    "senses": "Keen perception with a passive score of 13.",
+    "skills": "Good at Athletics, capable of physical challenges and combat maneuvers.",
+    "additional_information": [
+        "Brave ability grants advantage against being frightened.",
+        "Chivalrous Presence provides tactical advantages in combat.",
+        "Multiattack allows for multiple offensive maneuvers in one turn.",
+        "Champion\u2019s Challenge ability allows control over opponents' focus.",
+        "Knightly role is often tied to service and loyalty."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "noble warrior with heavy armor",
+        "chivalrous knight inspiring allies",
+        "mounted combat expert with lance",
+        "brave fighter against fear effects",
+        "armored leader serving noble lords"
+    ]
+}

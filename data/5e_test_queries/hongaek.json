@@ -1,0 +1,25 @@
+{
+    "name": "Hongaek",
+    "queries": [
+        {
+            "query": "large elemental with poison immunity and fire vulnerability",
+            "variant": "huge elemental that has immunity to poison and is weak to fire"
+        },
+        {
+            "query": "stealthy flying monster that casts contagion",
+            "variant": "flying stealth monster that can use contagion spell"
+        },
+        {
+            "query": "invisible elemental that deals poison damage",
+            "variant": "elemental that can turn invisible and inflicts poison damage"
+        },
+        {
+            "query": "tough elemental with high dexterity and air mobility",
+            "variant": "resilient elemental that has great dexterity and can fly"
+        },
+        {
+            "query": "combat-focused elemental using vaporous tentacles and ambush tactics",
+            "variant": "elemental that uses tentacle attacks for ambush in combat"
+        }
+    ]
+}

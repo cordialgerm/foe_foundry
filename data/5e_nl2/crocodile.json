@@ -1,0 +1,50 @@
+{
+    "name": "Crocodile",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 19,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "20 ft. on land, 30 ft. swimming",
+    "role": "Ambusher",
+    "tags": [
+        "predator",
+        "aquatic",
+        "ambush"
+    ],
+    "adjectives": [
+        "massive",
+        "predatory",
+        "scaly",
+        "fearsome"
+    ],
+    "description": "The crocodile is a massive, predatory reptile with tough, scaly skin and powerful jaws capable of crushing bone. It is an effective ambush predator that can lie motionless in the water before lunging at its prey.",
+    "memorable": "The crocodile's ability to perform a deadly death roll while grappling its prey makes it a terrifying opponent in aquatic environments.",
+    "goals": "Typically hunts as a solitary predator and fiercely defends its territory.",
+    "relations": "May share habitats with other reptiles or aquatic creatures.",
+    "environment": "Found in swamps, rivers, and lakes.",
+    "strengths": "Swift movement in water and strong grappling capabilities.",
+    "weaknesses": "Slow movement on land and low intelligence.",
+    "attacks": "Bite attack with a high chance to hit and can grapple opponents effectively.",
+    "most_powerful_ability": "Death Roll allows the crocodile to deal additional damage to grappled prey.",
+    "senses": "The crocodile has average passive perception, allowing it to notice common threats.",
+    "skills": "Possesses a good stealth skill, making it adept at ambushing prey.",
+    "additional_information": [
+        "Can hold breath for up to 15 minutes.",
+        "Grapples opponents upon successful bite, restraining them.",
+        "Inflicts 6-7 piercing damage with bite attack.",
+        "Uses hit-and-run tactics effectively in water.",
+        "Low mental attributes, poor at problem-solving."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive ambush predator in water",
+        "fearsome reptile with a death roll",
+        "crocodile hunting in rivers and swamps",
+        "large beast known for powerful jaws",
+        "predatory creature that can hold breath"
+    ]
+}

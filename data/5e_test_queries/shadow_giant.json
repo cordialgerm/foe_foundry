@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Giant",
+    "queries": [
+        {
+            "query": "huge chaotic evil giant with dark vision and powerful melee attacks",
+            "variant": "chaotic evil huge giant that has dark vision and strong melee ability"
+        },
+        {
+            "query": "shadow creature that disrupts spell concentration and imposes attack limitations",
+            "variant": "creature of shadows that limits spell concentration and reduces attack options"
+        },
+        {
+            "query": "monster that can teleport to the Plane of Shadow and has high agility",
+            "variant": "beast that teleports to the Shadow Plane with excellent agility"
+        },
+        {
+            "query": "giant with cold and necrotic damage resistance that has high Charisma",
+            "variant": "giant resistant to cold and necrotic with elevated Charisma"
+        },
+        {
+            "query": "shadow giant known for debilitating abilities and significant hit points",
+            "variant": "shadow giant recognized for its crippling skills and high health points"
+        }
+    ]
+}

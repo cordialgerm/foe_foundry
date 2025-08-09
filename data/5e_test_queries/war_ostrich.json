@@ -1,0 +1,25 @@
+{
+    "name": "War Ostrich",
+    "queries": [
+        {
+            "query": "large agile beast that can leap and knock enemies prone",
+            "variant": "big swift creature that jumps and can topple foes"
+        },
+        {
+            "query": "large bird-like monster with a powerful screech and claw attacks",
+            "variant": "big avian creature with a strong screech and claw strikes"
+        },
+        {
+            "query": "combatant that uses speed and jumping to gain tactical advantage",
+            "variant": "fighter that employs speed and leaping for tactical benefits"
+        },
+        {
+            "query": "monster that has bludgeoning and piercing attacks and can disrupt enemies",
+            "variant": "creature with piercing and bludgeoning abilities that can hinder foes"
+        },
+        {
+            "query": "beast known for its sprinting speed and fierce claw strikes",
+            "variant": "animal recognized for its running speed and strong claw hits"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Young Wasteland Dragon",
+    "queries": [
+        {
+            "query": "large dragon with force damage immunity that lives in wastelands",
+            "variant": "big dragon that has immunity to force damage and is found in wastelands"
+        },
+        {
+            "query": "chaotic evil creature with high strength and flying capabilities",
+            "variant": "evil chaotic being with great physical strength and the ability to fly"
+        },
+        {
+            "query": "dragon that can burrow and has Warped Energy Breath attack",
+            "variant": "dragon with burrowing abilities and a Warped Energy Breath attack"
+        },
+        {
+            "query": "melee capable dragon with significant hit points and area damage abilities",
+            "variant": "dragon that can attack in melee, has high hit points, and can deal area damage"
+        },
+        {
+            "query": "Wasteland Dragon that is perceptive and stealthy with darkvision",
+            "variant": "Wasteland Dragon that has keen perception and stealth, along with darkvision"
+        }
+    ]
+}

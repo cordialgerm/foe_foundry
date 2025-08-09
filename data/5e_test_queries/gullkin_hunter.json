@@ -1,0 +1,25 @@
+{
+    "name": "Gullkin Hunter",
+    "queries": [
+        {
+            "query": "humanoid creature that can swim and fly",
+            "variant": "humanoid that swims and flies creature"
+        },
+        {
+            "query": "agile combatant with ranged and melee attacks",
+            "variant": "combatant that is agile and has ranged and melee attacks"
+        },
+        {
+            "query": "creature with a beak and natural armor found in aquatic environments",
+            "variant": "aquatic creature that has a beak and natural armor"
+        },
+        {
+            "query": "monster capable of holding breath for 5 minutes and marking quarry",
+            "variant": "monster that can hold its breath for 5 min and mark its quarry"
+        },
+        {
+            "query": "medium humanoid with a challenge rating of 3 and good perception skills",
+            "variant": "medium creature with a cr of 3 and good perception abilities"
+        }
+    ]
+}

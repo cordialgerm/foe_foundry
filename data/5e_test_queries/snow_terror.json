@@ -1,0 +1,25 @@
+{
+    "name": "Snow Terror",
+    "queries": [
+        {
+            "query": "large snow fiend that can disguise itself",
+            "variant": "big snow creature that can change its appearance"
+        },
+        {
+            "query": "chaotic evil fiend immune to cold and acid",
+            "variant": "evil snow monster resistant to cold and poison"
+        },
+        {
+            "query": "formidable snow monster with a terrifying bite attack",
+            "variant": "powerful snow creature with a frightening biting attack"
+        },
+        {
+            "query": "snow creature that can swallow and restrain enemies",
+            "variant": "snow beast that is capable of swallowing and restraining foes"
+        },
+        {
+            "query": "creature that instills fear and is vulnerable to fire",
+            "variant": "monster that causes fear and has a weakness to fire"
+        }
+    ]
+}

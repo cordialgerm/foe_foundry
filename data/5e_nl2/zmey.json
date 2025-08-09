@@ -1,0 +1,50 @@
+{
+    "name": "Zmey",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Huge",
+    "hp": 189,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 30 ft. fly 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "chaotic",
+        "multi-headed"
+    ],
+    "adjectives": [
+        "formidable",
+        "devastating",
+        "chaotic"
+    ],
+    "description": "The Zmey is a huge dragon with three heads, known for its impressive physical power, formidable claws, and fiery breath. It possesses a sleek, scaly body and multiple sharp teeth.",
+    "memorable": "Its three heads grant it advantageous saving throws and its regeneration ability makes it a tough opponent to defeat.",
+    "goals": "To wreak havoc and dominate its territory using its physical power and elemental breath attacks.",
+    "relations": "May be encountered with other dragons or creatures drawn to its chaotic nature.",
+    "environment": "Typically found in mountainous terrains or areas where it can take to the skies.",
+    "strengths": "Has regeneration ability and multiple heads that provide advantage on saving throws.",
+    "weaknesses": "Vulnerable to acid and fire damage that can negate its regeneration abilities.",
+    "attacks": "Makes multiple claw and bite attacks, unleashes a powerful fire breath in a 30-foot cone.",
+    "most_powerful_ability": "Fire Breath, capable of dealing up to 49 fire damage in a wide area.",
+    "senses": "Has blindsight up to 60 feet and passive Perception of 18.",
+    "skills": "Skilled in Perception with a bonus of +8, indicating acute awareness.",
+    "additional_information": [
+        "Can breathe air and water, making it amphibious.",
+        "Regenerates 15 hit points if not damaged by acid or fire.",
+        "Uses legendary actions for tactical flexibility in combat."
+    ],
+    "damage_types": [
+        "fire",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge dragon with multiple heads",
+        "formidable dragon that breathes fire",
+        "chaotic evil creature with regeneration abilities",
+        "multi-headed dragon that can fly",
+        "dragon that can breathe fire and water"
+    ]
+}

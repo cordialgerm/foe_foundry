@@ -1,0 +1,25 @@
+{
+    "name": "Grimalkin",
+    "queries": [
+        {
+            "query": "stealthy creature that can shift forms between a small cat and a panther",
+            "variant": "creature that is stealthy and can change from a little cat into a panther"
+        },
+        {
+            "query": "medium monstrosity with keen smell ability that moves quickly",
+            "variant": "monstrosity of medium size that has keen sense of smell and is fast"
+        },
+        {
+            "query": "agile monster with a claw attack and the ability to become a tiny cat",
+            "variant": "quick creature that has a claw attack and can turn into a small cat"
+        },
+        {
+            "query": "monster that has high dexterity and excels in stealth",
+            "variant": "creature with great dexterity and is good at stealth"
+        },
+        {
+            "query": "cunning creature that can attack prone targets with its bite",
+            "variant": "smart monster that can bite and hit targets that are lying down"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Plaresh",
+    "queries": [
+        {
+            "query": "evil fiend that can burrow and infests corpses",
+            "variant": "evil creature that can burry and take over corpses"
+        },
+        {
+            "query": "medium creature with poison immunity and magic resistance",
+            "variant": "medium sized being with immunity to poison and resistance against magic"
+        },
+        {
+            "query": "chaotic evil fiend with low strength and burrowing abilities",
+            "variant": "chaotic evil demon with weak strength and ability to burrow"
+        },
+        {
+            "query": "fiend that creates weak structures while burrowing",
+            "variant": "creature that makes weak structures when it burrows"
+        },
+        {
+            "query": "fiend with significant piercing damage and AC reduction abilities",
+            "variant": "creature with major piercing damage and abilities to lower AC"
+        }
+    ]
+}

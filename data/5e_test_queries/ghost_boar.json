@@ -1,0 +1,25 @@
+{
+    "name": "Ghost Boar",
+    "queries": [
+        {
+            "query": "large spectral pig that charges at enemies and deals slashing damage",
+            "variant": "pig that is large and spectral, charges enemies to deal slashing damage"
+        },
+        {
+            "query": "ghostly boar with tusks that can knock targets prone",
+            "variant": "boar that is ghostly and has tusks, can knock down targets"
+        },
+        {
+            "query": "monstrosity with darkvision that can move through obstacles",
+            "variant": "monstrosity that has darkvision and can phase through obstacles"
+        },
+        {
+            "query": "resilient ghostly creature with high Strength score and melee attacks",
+            "variant": "ghostly creature that is resilient, has high Strength and uses melee attacks"
+        },
+        {
+            "query": "creature that understands Common and has a charge ability",
+            "variant": "beast that knows Common and can charge its enemies"
+        }
+    ]
+}

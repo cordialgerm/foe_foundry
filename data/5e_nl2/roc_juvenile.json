@@ -1,0 +1,52 @@
+{
+    "name": "Roc Juvenile",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 147,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 25 ft., fly 100 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "flying",
+        "predator"
+    ],
+    "adjectives": [
+        "massive",
+        "aerial",
+        "formidable"
+    ],
+    "description": "The Roc Juvenile is a massive beast notable for its aerial prowess, featuring a strong and agile body capable of swift flight and a sharp beak for devastating attacks.",
+    "memorable": "Known for its enormous size and ability to attack from great heights, making it a formidable foe in aerial combat.",
+    "goals": "Typically hunts for large prey and dominates its territory from the skies.",
+    "relations": "Could be encountered alongside other predators or in environments populated by large creatures.",
+    "environment": "Often found in mountainous regions or open skies where it can soar freely.",
+    "strengths": "Exceptionally high Strength allows for impactful attacks; keen sight aids in tracking prey.",
+    "weaknesses": "Low Intelligence and Charisma limit its social interactions and strategic capabilities.",
+    "attacks": "Utilizes a Multiattack involving a powerful beak and talons, adept at grappling and restraining prey.",
+    "most_powerful_ability": "Retributive Strike allows it to retaliate immediately when struck by a melee attack.",
+    "senses": "Possesses Keen Sight, granting advantage on Perception checks that rely on sight.",
+    "skills": "Has a +4 bonus in perception skills, resulting in a passive Perception of 14 for detecting threats.",
+    "additional_information": [
+        "Strong flying speed of 100 feet makes it agile in the air.",
+        "Can grapple and restrain targets effectively with its talons.",
+        "High Constitution granting +7 on saving throws.",
+        "Easily dominates combat scenarios by using its size and strength.",
+        "Lacks strategic and social capabilities due to low mental attributes."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive flying predator with keen sight",
+        "huge beast that attacks from the air",
+        "juvenile roc with powerful talons and beak",
+        "aerial creature that grapples its prey",
+        "formidable monster often found in mountainous regions"
+    ]
+}

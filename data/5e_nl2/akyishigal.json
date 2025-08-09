@@ -1,0 +1,53 @@
+{
+    "name": "Akyishigal",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 138,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "40 ft. walking, 40 ft. flying, 40 ft. burrowing",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "summoner"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "resilient",
+        "mobile"
+    ],
+    "description": "Akyishigal is a massive fiend that utilizes a cloud of stinging insects emitted from its body, making it both a terrifying and disruptive presence on the battlefield.",
+    "memorable": "Its ability to summon offspring and emit hazardous swarms of insects makes Akyishigal a uniquely challenging foe.",
+    "goals": "Akyishigal seeks to disrupt and destroy its foes using its abilities and minions.",
+    "relations": "Often found in the company of lesser fiends or insect swarms.",
+    "environment": "Typically dwells in dark, chaotic realms, potentially near sources of corruption.",
+    "strengths": "High mobility with flight and burrowing capabilities, excellent defenses against magic, and the ability to summon spawn.",
+    "weaknesses": "Vulnerable to interruption while concentrating on its spells and abilities.",
+    "attacks": "Akyishigal delivers slashing damage through its multiple claws, enhanced by poisonous strikes.",
+    "most_powerful_ability": "Cloak of Swarms, releasing a cloud of stinging insects to impede and damage enemies.",
+    "equipment": null,
+    "senses": "Possesses truesight to see through illusions and perceive creatures hidden from normal sight.",
+    "skills": "Excels in Acrobatics and Stealth, showcasing significant agility and sneaky capabilities.",
+    "additional_information": [
+        "Immunities to cold, lightning, and poison damage, along with the poisoned condition.",
+        "Advantages on saving throws against spells due to Magic Resistance.",
+        "Legendary Resistance allows it to automatically succeed on failed saving throws three times a day.",
+        "Capable of changing shape into insectoid forms or teleporting short distances rapidly.",
+        "Can cast spells including insect-themed magic that can control foes or summon giant insects."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Akyishigal can cast spells using Charisma, including detection, stealth enhancement, and plague-causing magic.",
+    "test_queries": [
+        "swarming insect fiend",
+        "summoner of insects",
+        "chaotic evil large fiend",
+        "fiend with poison attacks",
+        "Akyishigal abilities"
+    ]
+}

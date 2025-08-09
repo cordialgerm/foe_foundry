@@ -1,0 +1,53 @@
+{
+    "name": "Eonic Drifter",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "chaotic",
+        "magical"
+    ],
+    "adjectives": [
+        "unique",
+        "chaotic",
+        "intelligent",
+        "agile"
+    ],
+    "description": "The Eonic Drifter is a uniquely humanoid creature with a mix of magical and physical abilities, wearing leather armor and possessing an impressive intelligence.",
+    "memorable": "Its ability to manipulate time through its Drift Forward skill makes it a disorienting and formidable foe.",
+    "goals": "The Eonic Drifter seeks to use its abilities to confuse and disrupt its opponents in combat.",
+    "relations": "It may be encountered alongside other chaotic entities or creatures that are also concerned with time and magic.",
+    "environment": "Typically found in chaotic or magical realms.",
+    "strengths": "Possesses strong magical capabilities and good agility, making it a clever combatant.",
+    "weaknesses": "Low physical strength and low passive perception may leave it susceptible in direct confrontations.",
+    "attacks": "Uses a Time-Warping Staff to inflict bludgeoning and force damage, as well as a psychic attack through its special abilities.",
+    "most_powerful_ability": "Drift Forward can disorient targets, pulling them through time and causing them psychological distress.",
+    "equipment": "Wields a Time-Warping Staff.",
+    "senses": "Has a passive perception of 10, indicating average awareness of surroundings.",
+    "skills": "Highly proficient in Arcana and History, showcasing its deep magical knowledge.",
+    "additional_information": [
+        "Can summon a future version of itself for assistance.",
+        "The future self can attack or aid in combat.",
+        "If the future self is destroyed, the Drifter risks being stunned.",
+        "Immunity to poison and psychic damage for its future self.",
+        "Resistances to bludgeoning, piercing, and slashing damage for its future self."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid that manipulates time in combat",
+        "chaotic unique creature with magical skills",
+        "medium creature with time-warping abilities",
+        "intelligent drifter that confuses its enemies",
+        "magical humanoid using a staff in battle"
+    ]
+}

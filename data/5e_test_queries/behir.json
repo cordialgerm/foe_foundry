@@ -1,0 +1,25 @@
+{
+    "name": "Behir",
+    "queries": [
+        {
+            "query": "huge serpentine monster with lightning breath that lives in mountains",
+            "variant": "huge serpent-like creature with lightning breath living in the mountains"
+        },
+        {
+            "query": "monstrous creature with clawed legs and a dangerous swallow ability",
+            "variant": "monstrous being with claws and a dangerous ability to swallow"
+        },
+        {
+            "query": "lightning-absorbing monster that can climb and constrict",
+            "variant": "lightning-absorbing creature able to climb and constrict"
+        },
+        {
+            "query": "massive predator with electric attacks and spider-like climbing",
+            "variant": "large predator using electric attacks and spider-like climbing ability"
+        },
+        {
+            "query": "serpentine creature known for strength and consuming prey whole",
+            "variant": "snake-like monster famous for its strength and swallowing prey"
+        }
+    ]
+}

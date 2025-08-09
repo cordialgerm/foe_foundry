@@ -1,0 +1,54 @@
+{
+    "name": "Titanic Dragon Turtle",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Gargantuan",
+    "hp": 396,
+    "ac": 21,
+    "srd": false,
+    "cr": "24",
+    "movement": "swim 80 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "dragon",
+        "legendary"
+    ],
+    "adjectives": [
+        "formidable",
+        "massive",
+        "powerful",
+        "aquatic"
+    ],
+    "description": "The Titanic Dragon Turtle is an enormous aquatic dragon, characterized by its shell and large limbs, capable of tremendous physical power. It commands control over water and weather with its innate spellcasting abilities.",
+    "memorable": "Its Steam Breath and Lightning Storm abilities, combined with a massive health pool, make it a daunting adversary.",
+    "goals": "To dominate aquatic environments and protect its territory.",
+    "relations": "Often encountered alongside lesser aquatic creatures or in territories dominated by other dragon-type beings.",
+    "environment": "Typically found in large bodies of water, such as oceans and lakes.",
+    "strengths": "High hit points and formidable melee attacks make it a durable opponent; it can control the battlefield with area damage and environmental manipulation spells.",
+    "weaknesses": "Average Dexterity makes it less nimble, and it has to rely on its strong constitution for saving throws.",
+    "attacks": "Can bite for piercing damage, ram for bludgeoning damage, and unleash a powerful steam attack, alongside its claw attack in close combat.",
+    "most_powerful_ability": "Steam Breath can deal significant area fire damage, affecting multiple targets at once.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet.",
+    "skills": "Possesses proficiency in history, insight, and nature, showcasing its wisdom and understanding of the aquatic world.",
+    "additional_information": [
+        "Amphibious nature enables breathing in both air and water.",
+        "Legendary Resistance can negate failed saving throws once per day.",
+        "Reacts to damage by retracting into its shell for additional defense.",
+        "Can use powerful legendary actions including Emerald Radiance that blinds enemies.",
+        "Absorbs significant damage before reacting with retaliatory tail attacks."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": "Innately casts spells like Control Weather, Water Breathing, and Zone of Truth, enhancing its versatility in combat.",
+    "test_queries": [
+        "massive dragon turtle with steam breath",
+        "powerful aquatic creature that casts spells",
+        "Titanic turtle with lightning attacks",
+        "dragon turtle that can breathe water and air",
+        "gargantuan turtle attacking in ocean"
+    ]
+}

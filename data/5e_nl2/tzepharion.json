@@ -1,0 +1,53 @@
+{
+    "name": "Tzepharion",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 110,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "devil",
+        "monster",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "vicious"
+    ],
+    "description": "Tzepharion is a large fiend with a muscular build, characterized by its evil disposition and frightening presence in battle.",
+    "memorable": "Its ability to manipulate others through rage and its soul displacement power creates a terrifying combat dynamic.",
+    "goals": "Tzepharion typically seeks to overpower its enemies and manipulate others into chaos.",
+    "relations": "Tzepharion may be encountered alongside other fiends or as part of a devilish hierarchy.",
+    "environment": "Typically found in dark, infernal realms or during twisted rituals on the Material Plane.",
+    "strengths": "Powerful melee attacks and abilities that incite rage in others make it a dangerous opponent.",
+    "weaknesses": "It struggles against intelligent foes who can resist its rage-inducing abilities.",
+    "attacks": "Multiattack includes a fierce bite and multiple claw strikes, all capable of dealing significant damage.",
+    "most_powerful_ability": "Soul Jolt allows it to separate an enemy's soul from their body, incapacitating them and creating a unique strategic advantage in combat.",
+    "senses": "Tzepharion has superior perception with a passive score of 17.",
+    "skills": "It excels in Athletics and has notable skills in Perception and Survival, making it adept in physical encounters and environmental awareness.",
+    "additional_information": [
+        "Immune to fire and poison damage.",
+        "Resistant to cold and non-magical physical attacks from non-silver weapons.",
+        "Has Devil's Sight, allowing vision in magical darkness.",
+        "Ability to incite rage in beasts and monstrosities, creating chaos in battle.",
+        "Benefits from Pack Tactics when allies are nearby."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large malevolent fiend with soul manipulation",
+        "fiend that incites rage in beasts",
+        "monster with powerful melee attacks and soul jolt ability",
+        "cunning devil that thrives in dark environments",
+        "fiend immune to fire and poison damage"
+    ]
+}

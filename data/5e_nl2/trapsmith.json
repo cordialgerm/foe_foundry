@@ -1,0 +1,48 @@
+{
+    "name": "Trapsmith",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Neutral",
+    "size": "Small",
+    "hp": 54,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "trapmaker",
+        "sneaky",
+        "crafty"
+    ],
+    "adjectives": [
+        "cunning",
+        "resourceful",
+        "tactical"
+    ],
+    "description": "A small humanoid creature skilled in crafting traps and utilizing stealth to gain the upper hand.",
+    "memorable": "The Trapsmith's ability to create and activate traps in combat makes them particularly dangerous in strategic scenarios.",
+    "goals": "To set traps and outmaneuver foes, using cunning tactics to gain advantages in battle.",
+    "relations": "Often found among rogue or crafty creatures, potentially allied with other trap makers or stealthy individuals.",
+    "environment": "Typically encountered in urban areas, wilderness, or anywhere they can set traps for unsuspecting targets.",
+    "strengths": "High dexterity allows for quick movements and effective sneaking; pack tactics grant advantages in group combat.",
+    "weaknesses": "Vulnerability to sunlight limits effectiveness outdoors during the day.",
+    "attacks": "Uses a dagger for piercing damage and a Spare Part attack, which can deal either bludgeoning or slashing damage.",
+    "most_powerful_ability": "Makeshift Trap ability enables strategic battlefield control through traps with various effects.",
+    "equipment": null,
+    "senses": "Possesses darkvision enabling it to see in dim light as if it were bright light.",
+    "skills": "Proficient in Stealth, allowing for sneaky movements with a total skill score of +5.",
+    "additional_information": [
+        "Uses Improvised Tools to disarm traps with advantage.",
+        "Gains advantage on attacks when allies are nearby due to Pack Tactics.",
+        "Suffers disadvantage on attack rolls and perception checks in sunlight."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "crafty small humanoid trapmaker",
+        "sneaky creature that uses traps",
+        "cunning creature vulnerable to sunlight",
+        "humanoid with tactical trap abilities",
+        "skilled rogue that sets traps"
+    ]
+}

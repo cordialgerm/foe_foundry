@@ -1,0 +1,53 @@
+{
+    "name": "Balbazu",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 36,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 10 ft., swim 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "demon",
+        "fiend",
+        "stealth",
+        "blood draining",
+        "aquatic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "menacing",
+        "stealthy",
+        "tiny"
+    ],
+    "description": "The Balbazu is a tiny fiend known for its chaotic nature. It appears weak physically but possesses stealthy aquatic abilities and a terrifying blood-draining attack.",
+    "memorable": "It can remain invisible underwater and drain blood from its targets, healing itself in the process.",
+    "goals": "To drain the blood of its enemies and provide sustenance to other demons.",
+    "relations": "Related to other demons it can assist, especially within aquatic environments.",
+    "environment": "Typically found in aquatic areas or regions that support fiends.",
+    "strengths": "Aquatic invisibility allows it to ambush prey, along with blood-draining capabilities to sustain itself.",
+    "weaknesses": "Very weak in physical confrontations and vulnerable to mental attacks due to poor intelligence and charisma.",
+    "attacks": "Utilizes a bite attack that can attach itself to a target, causing blood loss each turn.",
+    "most_powerful_ability": "Blood Reservoir, which enables it to store drained blood and heal itself or aid other demons.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in darkness up to 60 feet.",
+    "skills": "Proficient in perception, though its overall score is average.",
+    "additional_information": [
+        "Immunities to poison and advantages against magical effects.",
+        "Can store blood within itself and share with nearby demons.",
+        "Very low strength makes it ineffective in physical combat.",
+        "Great ambush tactics due to stealth when submerged underwater.",
+        "Vulnerable to mental attacks due to low intelligence."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny demon that drains blood",
+        "stealthy aquatic fiend with blood powers",
+        "Balbazu blood-draining abilities",
+        "demon that can become invisible in water",
+        "chaotic fiend with high agility"
+    ]
+}

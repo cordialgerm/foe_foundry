@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Tiger</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Clockwork Tiger is a formidable Large Construct that serves as a mechanical guardian in combat scenarios. With an Armor Class of 16, it boasts strong defenses alongside its impressive 112 hit points, making it quite durable. Its formidable Strength of 18 grants it a strong melee presence, while its decent Dexterity of 16 allows for responsive movements. This creature is particularly effective in battle thanks to its special abilities such as Magic Resistance, which gives it an advantage on saving throws against spells, making it resistant to magical effects. However, its Intelligence, Wisdom, and Charisma scores are notably low, indicating that it lacks mental sophistication and emotional depth. The Clockwork Tiger's notable features include its ability to knock foes prone and follow up with an attack, making it a tactical menace on the battlefield, while its immunity to various conditions and alterations ensures it remains a consistent threat in encounters.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For its reactions, the Deflecting Leap ability is a strategic move that allows t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Tiger
 
 *Large* *Construct* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Deflecting Leap:** When the clockwork tiger’s ward is the target of an attack the tiger can see, the tiger can move up to 10 feet toward its ward without provoking opportunity attacks. If it ends this movement within 5 feet of its ward, the tiger becomes the target of the attack instead.
 
 
+</statblock>
 
 

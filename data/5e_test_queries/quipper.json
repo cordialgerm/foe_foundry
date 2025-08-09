@@ -1,0 +1,25 @@
+{
+    "name": "Quipper",
+    "queries": [
+        {
+            "query": "small aggressive fish that swims in schools and has sharp teeth",
+            "variant": "small aggressive fish that swims in schools and sharp teeth"
+        },
+        {
+            "query": "tiny carnivorous aquatic creature known for its flesh-stripping bite",
+            "variant": "tiny carnivorous water creature known for its bite that strips flesh"
+        },
+        {
+            "query": "fish that only breathes underwater and attacks in groups",
+            "variant": "fish that can only breathe underwater and attacks in groups"
+        },
+        {
+            "query": "fast swimming fish that can bite and relies on speed for survival",
+            "variant": "fast swimming fish that bites and depends on speed for survival"
+        },
+        {
+            "query": "predatory underwater fish that has a blood frenzy ability",
+            "variant": "predatory fish underwater with a blood frenzy ability"
+        }
+    ]
+}

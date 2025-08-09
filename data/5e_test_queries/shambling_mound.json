@@ -1,0 +1,25 @@
+{
+    "name": "Shambling Mound",
+    "queries": [
+        {
+            "query": "large plant creature found in swamps that engulfs its prey",
+            "variant": "big plant monster located in swamps that consumes its enemies"
+        },
+        {
+            "query": "creature with lightning absorption that attacks with tendrils",
+            "variant": "monster that absorbs lightning damage and uses tendrils to strike"
+        },
+        {
+            "query": "strong ambush predator made of rotting vegetation",
+            "variant": "powerful surprise attacker composed of decaying plants"
+        },
+        {
+            "query": "plant monster that can regenerate and has a noxious smell",
+            "variant": "vegetable creature that heals and emits a foul odor"
+        },
+        {
+            "query": "blinded and restrained enemy engulfing creature from the forest",
+            "variant": "creature from woodland that can blind and restrain engulfed foes"
+        }
+    ]
+}

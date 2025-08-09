@@ -1,0 +1,25 @@
+{
+    "name": "Mountain Dwarf Defender",
+    "queries": [
+        {
+            "query": "sturdy humanoid with high armor class and melee abilities",
+            "variant": "sturdy humanoid with high AC and melee skills"
+        },
+        {
+            "query": "medium dwarf warrior that uses a warhammer and has special defensive abilities",
+            "variant": "medium dwarf fighter who wields a warhammer and has defensive skills"
+        },
+        {
+            "query": "defensive warrior that resists fear and can inspire allies",
+            "variant": "defensive fighter who can resist fear and inspire teammates"
+        },
+        {
+            "query": "combat-oriented dwarf with lance for mounted attacks",
+            "variant": "combat-focused dwarf with lance for attacks while mounted"
+        },
+        {
+            "query": "dwarf defender with strong melee attacks and above-average perception",
+            "variant": "dwarf defender with strong melee skills and better than average perception"
+        }
+    ]
+}

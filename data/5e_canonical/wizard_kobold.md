@@ -1,6 +1,8 @@
 <MonsterName/>Wizard Kobold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>58</HP>
 <summary>The Wizard Kobold is a small humanoid creature that embodies the cleverness and cunning of its kind, functioning primarily as a spellcaster in the ranks of low-level adventurers and opportunistic foes. With a lawful neutral alignment, this kobold adheres to a structured code, making it reliable in its plans and actions. Its strengths lie in its spellcasting abilities, particularly its access to a variety of powerful spells that can manipulate the battlefield or inflict harm from a distance. However, it is hindered by its low physical strength and vulnerability to sunlight, which severely impacts its combat performance. A typical strategy for a Wizard Kobold involves utilizing its spells to control the flow of combat while relying on its allies to distract foes and take advantage of its Pack Tactics ability.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In combat, the Wizard Kobold can attack with a dagger, utilizing a +5 to hit for
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wizard Kobold
 
 *Small* *Humanoid* *lawful neutral*
@@ -62,5 +65,6 @@ Cantrips (at will): fire bolt, minor illusion, poison spray, prestidigitation
 - **Breath of the Visage:** Ranged Spell Attack: +6 to hit, range 120 ft., one target. Hit: 7 (2d6) damage of the type dealt by the chosen dragon's breath weapon.
 
 
+</statblock>
 
 

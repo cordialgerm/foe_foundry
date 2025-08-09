@@ -1,0 +1,25 @@
+{
+    "name": "Forest Falcon",
+    "queries": [
+        {
+            "query": "agile bird with sharp beak inhabiting forests",
+            "variant": "sharp beaked agile bird that lives in forests"
+        },
+        {
+            "query": "medium beast that can fly and has keen sight",
+            "variant": "beast that flies and has very sharp sight, medium size"
+        },
+        {
+            "query": "fast flying creature that uses dive attacks",
+            "variant": "quick flying creature with ability for dive attacks"
+        },
+        {
+            "query": "forest dwelling falcon with good dexterity and perception",
+            "variant": "falcon that lives in forests, has high agility and perception"
+        },
+        {
+            "query": "beast with low strength but high speed and wisdom",
+            "variant": "creature with weak strength but great agility and intelligence"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Light Eater",
+    "queries": [
+        {
+            "query": "small creature that absorbs light and disguises as rock",
+            "variant": "small being that consumes light and looks like a rock"
+        },
+        {
+            "query": "aberration with blinding attacks and immune to fire",
+            "variant": "light-eating aberration immune to fire with blinding abilities"
+        },
+        {
+            "query": "monster that blends in with its surroundings and has light manipulation powers",
+            "variant": "creature that camouflages itself and can manipulate light"
+        },
+        {
+            "query": "resilient small aberration with a flying speed and special light skills",
+            "variant": "tough little aberration with flight ability and unique light skills"
+        },
+        {
+            "query": "light-consuming monster that can blink and has a passive perception of 15",
+            "variant": "light devouring creature with a passive perception score of 15"
+        }
+    ]
+}

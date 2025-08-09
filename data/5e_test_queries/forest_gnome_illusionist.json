@@ -1,0 +1,25 @@
+{
+    "name": "Forest Gnome Illusionist",
+    "queries": [
+        {
+            "query": "small spellcasting humanoid that uses illusions and communicates with tiny beasts",
+            "variant": "humanoid that is small and casts spells, helps with illusions and talks to small animals"
+        },
+        {
+            "query": "Gnome illusionist with crowd control spells and average physical strength",
+            "variant": "illusionist Gnome that controls crowds and has average strength in melee"
+        },
+        {
+            "query": "Forest Gnome capable of casting major illusion spells and capable of teleportation",
+            "variant": "Gnome from the forest that can cast big illusion spells and teleport"
+        },
+        {
+            "query": "intelligent and dexterous gnome who excels in magic and ranged attacks",
+            "variant": "gnome with high intelligence and dexterity that is great at magic and ranged combat"
+        },
+        {
+            "query": "versatile illusionist that can cast spells like fireball and greater invisibility",
+            "variant": "illusionist that can use fireball and become invisible with spells"
+        }
+    ]
+}

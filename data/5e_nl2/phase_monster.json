@@ -1,0 +1,49 @@
+{
+    "name": "Phase Monster",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., fly 50 ft.",
+    "role": null,
+    "tags": [
+        "phaseshifting",
+        "frightening"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "shapeshifting"
+    ],
+    "description": "The Phase Monster is a large creature with a strong physique and magical traits; it can shift between a monstrous form and that of a small goat.",
+    "memorable": "Its ability to create illusions and frighten foes with a terrifying scream makes it a unique adversary.",
+    "goals": "To ambush opponents and escape detection while using its abilities to frighten and confuse.",
+    "relations": "It may be found in the company of other monstrosities or magical creatures.",
+    "environment": "Typically encountered in mystical or wild areas where it can use its agility and magical traits to its advantage.",
+    "strengths": "Strong physical ability allows for effective melee attacks, while its magical illusion adds an extra layer of defense.",
+    "weaknesses": "Very low Intelligence and Charisma hinder complex strategies and social interactions.",
+    "attacks": "It can unleash a devastating multiattack with its horns and claws, particularly effective against prone targets.",
+    "most_powerful_ability": "Blood-Curdling Scream that frightens enemies, forcing them to flee.",
+    "equipment": null,
+    "senses": "It has darkvision, allowing it to see in low-light conditions, and a passive Perception score of 14.",
+    "skills": "Proficient in Perception and Stealth, enhancing its ability to detect threats and remain hidden.",
+    "additional_information": [
+        "Mirror Image ability makes it harder to hit.",
+        "Shapeshifting into a goat allows for tactical versatility.",
+        "Blood-curdling scream affects all within 60 feet.",
+        "Can deal extra damage if the target is prone.",
+        "High Strength and Constitution for durability in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster that can fly and scare",
+        "monstrous in goat form with magical traits",
+        "creature with an illusory defense method",
+        "agile monster that frightens nearby enemies",
+        "phase monster with a devastating scream ability"
+    ]
+}

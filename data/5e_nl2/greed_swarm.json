@@ -1,0 +1,49 @@
+{
+    "name": "Greed Swarm",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "construct",
+        "swarm",
+        "treasure"
+    ],
+    "adjectives": [
+        "deceptive",
+        "menacing",
+        "insatiable"
+    ],
+    "description": "The Greed Swarm resembles a pile of glittering coins and treasures, capable of moving swiftly through the air.",
+    "memorable": "It can ambush adventurers by blending in as treasure and regains strength by collecting valuable items.",
+    "goals": "To ambush and incapacitate adventurers while stealing their valuables.",
+    "relations": "Can be encountered alongside other treasure-hungry constructs or traps.",
+    "environment": "Often found in treasure hoards or caves filled with valuable items.",
+    "strengths": "Great at ambushing unaware targets; fast flying speed.",
+    "weaknesses": "Vulnerable to force damage and incapacitated by anti-magic effects.",
+    "attacks": "Uses Coin Slam for close combat and Coin Barrage for ranged attacks.",
+    "most_powerful_ability": "Gather allows it to regain health and enhance its next attack by pulling valuable items from nearby creatures.",
+    "senses": "Blindsight up to 60 feet, allowing it to perceive its surroundings despite being blind.",
+    "skills": null,
+    "additional_information": [
+        "Incapacitated in an antimagic field",
+        "Deafens creatures in its space",
+        "Can occupy the same space as creatures",
+        "Imitates a normal pile of coins when motionless",
+        "Damage-resistant to common weapon types"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "treasure-collecting flying swarm",
+        "deceptive swarm that disguises as coins",
+        "construct that ambushes for valuables",
+        "swarm that pulls items from adventurers",
+        "menacing creature that resembles treasure"
+    ]
+}

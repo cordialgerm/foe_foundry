@@ -1,0 +1,25 @@
+{
+    "name": "Rhinoceros",
+    "queries": [
+        {
+            "query": "large herbivorous beast with a horn found in savannas",
+            "variant": "large beast that eats plants and has a horn in savanna"
+        },
+        {
+            "query": "solid creature known for charging and goring attacks",
+            "variant": "sturdy animal famous for gore attacks and charges"
+        },
+        {
+            "query": "powerful melee attacker with low agility and thick skin",
+            "variant": "strong creature with bad agility and tough skin"
+        },
+        {
+            "query": "beast with high strength and aggressive charging ability",
+            "variant": "creature with great strength and aggressive charge capability"
+        },
+        {
+            "query": "thick-skinned animal that can knock foes prone",
+            "variant": "animal with thick skin that can push enemies down"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ratatosk",
+    "queries": [
+        {
+            "query": "tiny celestial creature that uses psychic damage and clever tactics",
+            "variant": "small celestial being that employs psychic attacks and smart strategies"
+        },
+        {
+            "query": "chaotic creature with strong deception skills and high dexterity",
+            "variant": "chaotic being possessing excellent deception abilities and high agility"
+        },
+        {
+            "query": "manipulative celestial that resists nonmagical damage",
+            "variant": "deceptive celestial creature that can withstand regular damage types"
+        },
+        {
+            "query": "fast celestial monster that excels in persuasion and spellcasting",
+            "variant": "quick celestial being that is good at persuading others and casting spells"
+        },
+        {
+            "query": "trickster creature with divisive chatter ability and annoying attacks",
+            "variant": "prankster being that has a splitting chatter skill and bothersome strikes"
+        }
+    ]
+}

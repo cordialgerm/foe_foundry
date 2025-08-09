@@ -1,0 +1,52 @@
+{
+    "name": "Leavesrot",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 105,
+    "ac": 8,
+    "srd": false,
+    "cr": "4",
+    "movement": "slow movement at 20 feet",
+    "role": null,
+    "tags": [
+        "ooze",
+        "poison",
+        "ambush"
+    ],
+    "adjectives": [
+        "large",
+        "toxic",
+        "deceptive"
+    ],
+    "description": "A large ooze resembling an ordinary pile of leaves, capable of blending into its environment.",
+    "memorable": "Its ability to surprise with toxic spores and deceptive appearance makes it a dangerous foe.",
+    "goals": "To ambush unsuspecting creatures and use poison to control the battlefield.",
+    "relations": "May be found in areas dense with foliage, often alone or in small groups.",
+    "environment": "Typically inhabits forests or overgrown areas, camouflaging among the leaves.",
+    "strengths": "Resilient with high hit points, damage immunities, and abilities to poison and grapple opponents.",
+    "weaknesses": "Low Armor Class and poor Dexterity make it vulnerable to ranged attacks.",
+    "attacks": "Utilizes a Pseudopod attack that deals bludgeoning and acid damage while grappling its target.",
+    "most_powerful_ability": "Release Spores can affect multiple creatures, dealing poison damage and imposing the choking condition.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures even while blind.",
+    "skills": "Has a low proficiency in perception, with a passive score of 9.",
+    "additional_information": [
+        "Damage immunities include acid, bludgeoning, and cold.",
+        "Condition immunities make it durable against various debilitating effects.",
+        "Can move through narrow spaces without squeezing due to its Amorphous ability.",
+        "False Appearance ability allows it to camouflage as leaves until it strikes.",
+        "Ooze Nature allows it to function without needing sleep."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large ooze disguised as leaves",
+        "toxic creature that gives poison damage",
+        "ambushing ooze in dense foliage",
+        "slow-moving poison-spitting ooze",
+        "creature with high HP and low AC"
+    ]
+}

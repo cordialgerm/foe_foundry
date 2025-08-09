@@ -1,0 +1,25 @@
+{
+    "name": "Piasa",
+    "queries": [
+        {
+            "query": "large dragon with a segmented tail that uses sleep gas",
+            "variant": "big dragon that has a segmented tail and breathes sleep gas"
+        },
+        {
+            "query": "flying monster with 144 hit points that is vulnerable to poison",
+            "variant": "flying creature with 144 hp that has a weakness to poison"
+        },
+        {
+            "query": "dragon that intimidates foes and uses multiattack",
+            "variant": "a dragon that frightens its enemies and can make multiple attacks"
+        },
+        {
+            "query": "Piasa creature with high strength and low intelligence",
+            "variant": "Piasa monster characterized by high strength and poor intelligence"
+        },
+        {
+            "query": "unaligned dragon that grapples with its tail and has natural armor",
+            "variant": "dragon without alignment that grapples using its tail and has good natural armor"
+        }
+    ]
+}

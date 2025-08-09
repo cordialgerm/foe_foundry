@@ -1,6 +1,8 @@
 <MonsterName/>Faerie Eater Troll</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>84</HP>
 <summary>The Faerie Eater Troll is a large and formidable giant known for its unique abilities and resilience in combat. Possessing a high Armor Class of 15 and robust Hit Points totaling 84, this creature is tough to take down. It is particularly dangerous due to its strong regeneration ability, which allows it to heal itself steadily unless it takes acid or fire damage. The troll has a solid Strength score of 18, which makes it a powerful melee combatant with effective attacks, augmented by its average Dexterity of 12 and exceptional Constitution of 20, giving it good stamina and survivability. However, its Intelligence and Charisma are notably low, making it less effective in social interactions or using complex tactics. The Faerie Eater Troll poses a challenge due to its ability to charm opponents, and it can maintain combat engagement even when injured by controlling its severed limbs.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ During combat, the Faerie Eater Troll can perform a Multiattack action, allowing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Faerie Eater Troll
 
 *Large* *Giant*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Charming Murmur:** One creature within 60 feet that can hear the troll makes a DC 12 Charisma saving throw. On a failure  it is charmed for 1 minute. While charmed  its Speed is 0. The creature repeats the saving throw whenever it takes damage.
 
 
+</statblock>
 
 

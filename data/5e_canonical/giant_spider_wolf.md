@@ -1,6 +1,8 @@
 <MonsterName/>Spider, Giant Wolf</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>14</HP>
 <summary>The Giant Wolf Spider is a Medium beast commonly found in various terrains, showcasing both agility and predatory skills. It has an Armor Class of 13, which reflects its natural armor, making it moderately difficult to hit. With 14 hit points, it possesses a relatively low endurance in combat situations, meaning it can be taken down fairly quickly if targeted. The creature is fast, boasting a speed of 40 feet on the ground and the same for climbing, which gives it excellent maneuverability both on the ground and on vertical surfaces. Its challenge rating of 1/4 indicates that it poses a minimal threat individually, primarily serving as an ambush predator rather than a frontline combatant. The Giant Wolf Spider's strengths lie in its climbing abilities and its potentially devastating bite, which can poison targets and incapacitate them if they fail their saving throw. However, it has weak mental attributes—particularly a very low Intelligence and Charisma—making it susceptible to magical effects and social interactions. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Giant Wolf Spider serves as a nimble and stealthy predator, using i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider, Giant Wolf
 
 *Medium beast*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Hunter’s Leap.** The spider jumps up to 20 feet horizontally or up to 10 feet vertically toward a hostile creature that it can see. This movement doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

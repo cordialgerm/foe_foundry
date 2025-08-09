@@ -1,0 +1,50 @@
+{
+    "name": "Swarm of Wharflings",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 66,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast",
+        "chaotic",
+        "disruption"
+    ],
+    "adjectives": [
+        "chaotic",
+        "deceptive",
+        "nimble"
+    ],
+    "description": "The Swarm of Wharflings is a large mass of tiny wharflings that creates chaos by overwhelming foes with swarming attacks and stealing their items.",
+    "memorable": "The swarm's ability to pilfer items while attacking makes it a unique and disruptive opponent.",
+    "goals": "To overwhelm enemies, steal items, and create chaos in its environment.",
+    "relations": "Can be encountered alongside other chaotic creatures or as part of a larger swarm.",
+    "environment": "Found in chaotic or cluttered environments where they can easily navigate and create disorder.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage, and immune to many conditions, allowing them to remain active in combat.",
+    "weaknesses": "Very low intelligence and an inability to regain hit points limits their sustainability in prolonged encounters.",
+    "attacks": "Pilfering bites deal significant piercing damage while also potentially stealing items from targets.",
+    "most_powerful_ability": "The swarm can occupy another creature\u2019s space and disrupt their actions while also stealing their equipment.",
+    "senses": "Possesses darkvision and a passive Perception of 13, allowing it to be aware of its surroundings.",
+    "skills": "Proficient in Perception and Sleight of Hand, enhancing its ability to navigate and pilfer effectively.",
+    "additional_information": [
+        "Can breathe air and water, enhancing its versatility.",
+        "Cannot regain hit points or gain temporary hit points.",
+        "Makes a strategic nuisance by occupying spaces of larger creatures.",
+        "Can cause significant disruption in battle with its unique swarm abilities.",
+        "Immune to charm and fear effects, making it challenging to control."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic large beast that steals items",
+        "swarm monster that disrupts actions and bites",
+        "nimble beast with stealing abilities in combat",
+        "large creature that causes chaos and pilfers goods",
+        "beast swarm that can breathe in air and water"
+    ]
+}

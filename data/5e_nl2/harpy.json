@@ -1,0 +1,51 @@
+{
+    "name": "Harpy",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 38,
+    "ac": 11,
+    "srd": true,
+    "cr": "1",
+    "movement": "fly 40 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "flying",
+        "charming",
+        "ambusher"
+    ],
+    "adjectives": [
+        "vicious",
+        "winged",
+        "beautiful",
+        "cruel"
+    ],
+    "description": "Harpies have the upper body of a human woman and the lower body of a bird, with hauntingly beautiful voices.",
+    "memorable": "Their Luring Song ability charms and incapacitates prey, making them dangerous foes.",
+    "goals": "To lure and torment unsuspecting travelers before attacking them.",
+    "relations": "Usually found near cliffs or remote islands, often encountered with other harpies.",
+    "environment": "High cliffs or remote islands, ambushing travelers and sailors from above.",
+    "strengths": "Ability to charm and incapacitate enemies with Luring Song; agile with flying speed.",
+    "weaknesses": "Low hit points and armor class make them susceptible to damage; reliant on charm for effectiveness.",
+    "attacks": "Attacks with sharp claws dealing slashing damage and can perform dual attacks in combat.",
+    "most_powerful_ability": "Luring Song, which charms and incapacitates humanoids and giants within range.",
+    "senses": "Has darkvision with a range of 120 feet, enhancing its stealth capabilities.",
+    "skills": "Possesses a good stealth modifier, indicating its ability to avoid detection.",
+    "additional_information": [
+        "Known for their cruelty and tormenting behavior.",
+        "Can fly, which allows for strategic vantage points during an ambush.",
+        "Sings a magical melody to control victims during combat.",
+        "Resistant to exhaustion and the frightened condition.",
+        "Can repeat its charm ability multiple times if not harmed."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "winged creature with a beautiful song",
+        "monster that charms its prey with singing",
+        "vicious ambush predator in cliffs",
+        "humanoid bird monster with dangerous song",
+        "cruel monster that torments victims"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Eonic Drifter",
+    "queries": [
+        {
+            "query": "humanoid creature with time manipulation abilities that wears leather armor",
+            "variant": "humanoid monster that manipulates time and has leather armor"
+        },
+        {
+            "query": "chaotic neutral creature with high intelligence that can disappear in time",
+            "variant": "creature of chaotic neutrality with great intelligence that vanishes in time"
+        },
+        {
+            "query": "medium humanoid with psychic damage abilities and proficiency in Arcana",
+            "variant": "medium-sized humanoid that deals psychic damage and is skilled in Arcana"
+        },
+        {
+            "query": "Eonic Drifter combat abilities with Time-Warping Staff and drift skill",
+            "variant": "combat skills of Eonic Drifter featuring Time-Warping Staff and drift ability"
+        },
+        {
+            "query": "creature that communicates in multiple languages and has low passive perception",
+            "variant": "monster that speaks several languages but has low passive perception"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Kobold, Empyrean",
+    "queries": [
+        {
+            "query": "small celestial dragon-like creature that supports allies",
+            "variant": "small dragon-like celestial creature that helps its allies"
+        },
+        {
+            "query": "strong kobold with elemental weapons that can turn invisible",
+            "variant": "powerful kobold with the ability to use elemental weapons and go invisible"
+        },
+        {
+            "query": "battle-supporting celestial with high wisdom and magical defenses",
+            "variant": "celestial that supports in battle with impressive wisdom and strong magic defenses"
+        },
+        {
+            "query": "immortal kobold that can reincarnate allies as dragons",
+            "variant": "eternal kobold able to bring allies back as dragon wyrmlings"
+        },
+        {
+            "query": "powerful small creature immune to radiant damage in combat",
+            "variant": "strong small being that is immune to radiant damage during battle"
+        }
+    ]
+}

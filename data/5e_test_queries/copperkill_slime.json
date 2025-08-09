@@ -1,0 +1,25 @@
+{
+    "name": "Copperkill Slime",
+    "queries": [
+        {
+            "query": "large ooze creature that grapples and poisons enemies",
+            "variant": "big ooze monster that can grapple and poisons foes"
+        },
+        {
+            "query": "slime that can climb walls and sprays poison",
+            "variant": "slime creature that climbs walls and sprays toxins"
+        },
+        {
+            "query": "green and paint-like ooze found in dungeons",
+            "variant": "green slime resembling paint found in underground areas"
+        },
+        {
+            "query": "massive ooze resistant to slashing and piercing damage",
+            "variant": "huge ooze that has resistance to slashing and piercing attacks"
+        },
+        {
+            "query": "Copperkill Slime's ability to immobilize and deal poison damage",
+            "variant": "Copperkill Slime's power to restrain and inflict poison damage"
+        }
+    ]
+}

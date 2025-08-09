@@ -1,0 +1,54 @@
+{
+    "name": "Valkyrie",
+    "creature_type": "Celestial",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 60 ft., fly 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "guardian",
+        "healer",
+        "warrior"
+    ],
+    "adjectives": [
+        "powerful",
+        "fierce",
+        "supportive",
+        "radiant"
+    ],
+    "description": "The Valkyrie is a powerful celestial creature with impressive combat skills, armed with a longsword and a spear. It embodies a fierce warrior's presence, emanating an aura that inspires allies.",
+    "memorable": "Its ability to reincarnate fallen allies as gladiators makes it a crucial force on the battlefield.",
+    "goals": "To protect allies and turn the tide of battle in favor of its companions.",
+    "relations": "Often associated with heroic spirits and warriors",
+    "environment": "Found in celestial realms or on battlefields.",
+    "strengths": "High armor class and hit points, along with powerful radiant damage attacks.",
+    "weaknesses": "Vulnerability to magical damage types not specified in its resistances.",
+    "attacks": "Utilizes a Multiattack to strike with a longsword and spear or unleash devastating radiant bolts.",
+    "most_powerful_ability": "Aura of Valor grants allies advantage on attack rolls and ability checks.",
+    "equipment": "Longsword and spear",
+    "senses": "Possesses truesight with a range of 60 feet and has high passive perception of 18.",
+    "skills": "Noteworthy skill in Perception with a +8 modifier.",
+    "additional_information": [
+        "Immortal Nature allows it to remain active indefinitely.",
+        "Magic Resistance provides advantage against spells and magical effects.",
+        "Healing Touch can restore hit points and remove conditions.",
+        "Gaze of Doom can inflict fear on enemies, hindering their effectiveness.",
+        "Radiant Weapons ensure all its attacks deal additional radiant damage."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful celestial warrior with healing abilities",
+        "angelic being that aids fallen allies",
+        "radiant damage dealer in battle",
+        "guardian that protects with auras",
+        "healer that reincarnates fallen allies"
+    ]
+}

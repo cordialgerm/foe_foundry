@@ -1,0 +1,50 @@
+{
+    "name": "Haleshi",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Large",
+    "hp": 123,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "swim 40 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "Fey",
+        "Amphibious",
+        "Spellcaster"
+    ],
+    "adjectives": [
+        "powerful",
+        "charming",
+        "strategic"
+    ],
+    "description": "The Haleshi is a large, fey creature with a strong physical presence, characterized by high charisma and unique charm abilities.",
+    "memorable": "The ability to incapacitate foes with its Stupefying Touch and teleport allies with Clamport makes Haleshi a strategic and manipulative presence in battle.",
+    "goals": "To manipulate and control the battlefield while serving as a formidable opponent or intriguing ally.",
+    "relations": "Related to other fey creatures, it might serve or be encountered alongside aquatic beings.",
+    "environment": "Often found in aquatic environments or near bodies of water.",
+    "strengths": "Possesses high defenses and magical versatility with strong resistances and condition immunities.",
+    "weaknesses": "Vulnerable to physical damage types that are not resisted by its cold damage resistance.",
+    "attacks": "Utilizes a Multiattack with Stupefying Touch, dealing psychic damage and potentially incapacitating its target.",
+    "most_powerful_ability": "Charming Defense ability boosts its AC significantly when unarmored.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive perception of 16, enhancing its threat detection.",
+    "skills": "Shows exceptional skill in insight and persuasion, enabling effective social interaction.",
+    "additional_information": [
+        "Amphibious, allowing breathing in water and air",
+        "Innate spellcaster with spells that enhance combat and diplomacy",
+        "Can use Water Shield to enhance defenses or negate fire damage"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast charm person and invisibility three times daily, with access to major image, water walk, and zone of truth once daily each.",
+    "test_queries": [
+        "charming fey with psychic attacks",
+        "large creature that manipulates water",
+        "amphibious monster with spell abilities",
+        "fey creature that teleports its allies",
+        "powerful monster with incapacitating touch"
+    ]
+}

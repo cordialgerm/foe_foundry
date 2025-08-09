@@ -1,0 +1,25 @@
+{
+    "name": "Raptor",
+    "queries": [
+        {
+            "query": "medium-sized predator with pack tactics and fast speed",
+            "variant": "medium predator that has pack tactics and is fast"
+        },
+        {
+            "query": "beast with high strength that relies on teamwork",
+            "variant": "creature with strong abilities that depends on teamwork"
+        },
+        {
+            "query": "swift raptor that uses clever group tactics",
+            "variant": "fast raptor that employs smart team tactics"
+        },
+        {
+            "query": "agile monster that can knock down prey using claws",
+            "variant": "nimble creature that can topple prey with its claws"
+        },
+        {
+            "query": "raptor with decent armor class and high movement speed",
+            "variant": "raptor that has average AC and fast movement abilities"
+        }
+    ]
+}

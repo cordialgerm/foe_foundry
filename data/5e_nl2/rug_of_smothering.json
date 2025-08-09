@@ -1,0 +1,49 @@
+{
+    "name": "Rug of Smothering",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 33,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "10 ft., can roll towards a target",
+    "role": "Ambusher",
+    "tags": [
+        "trap",
+        "animated object",
+        "ambush"
+    ],
+    "adjectives": [
+        "deceptive",
+        "lethal",
+        "stealthy"
+    ],
+    "description": "A large, decorative rug that springs to life to grapple and suffocate its victims with its constricting folds.",
+    "memorable": "It hides in plain sight as a normal rug until an unsuspecting victim triggers its attack.",
+    "goals": "To ambush and incapacitate intruders by grappling and smothering them.",
+    "relations": "Often found in enchanted homes or dungeons where they serve as traps.",
+    "environment": "Enchanted homes, dungeons",
+    "strengths": "Immunity to poison and psychic damage; condition immunities include being blinded, charmed, or paralyzed.",
+    "weaknesses": "Susceptible to dispel magic, and can be incapacitated in an antimagic field.",
+    "attacks": "Smother attack that grapples and restrains victims; Squeeze action that deals bludgeoning damage to grappled creatures.",
+    "most_powerful_ability": "Damage Transfer allows it to take only half damage while grappling a creature.",
+    "senses": "Blindsight out to 60 feet, allowing it to perceive its environment despite being blind beyond this radius.",
+    "skills": null,
+    "additional_information": [
+        "Operates continuously without the need for air or food",
+        "Can mimic a normal rug when motionless",
+        "Excellent ambusher due to deceptive appearance",
+        "Can roll to engage targets from a distance when damaged",
+        "Requires a DC 19 to destroy with dispel magic"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "deadly ambush rug in dungeons",
+        "animated rug that grapples victims",
+        "suffocating trap disguised as rug",
+        "magical rug that attacks intruders",
+        "construct that smothers its prey"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Ghost Dragon",
+    "creature_type": "Undead",
+    "alignment": "any alignment",
+    "size": "Large",
+    "hp": 126,
+    "ac": 14,
+    "srd": false,
+    "cr": "11",
+    "movement": "fly 60 ft., cannot walk",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "undead",
+        "ghost"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "fearsome"
+    ],
+    "description": "The Ghost Dragon is a large undead creature that embodies terror; it has a ghostly form and can fly but lacks ground mobility. Its keen features and intimidating presence make it a particularly daunting opponent.",
+    "memorable": "Possesses terrifying abilities like Horrifying Breath and the ability to shift between planes.",
+    "goals": "To induce fear and terror, typically stalking its prey before unleashing attacks.",
+    "relations": "Often encountered in areas haunted by the undead or near locations of significant death.",
+    "environment": "Commonly found in haunted ruins or places steeped in death and despair.",
+    "strengths": "High Dexterity grants agility and effective stealth, combined with multiple immunities and resistances make it difficult to defeat.",
+    "weaknesses": "Lack of mobility on the ground limits its movement options.",
+    "attacks": "Utilizes claw and withering bite attacks, capable of dealing slashing and significant necrotic damage.",
+    "most_powerful_ability": "Horrifying Breath can inflict massive psychic damage and frighten opponents.",
+    "equipment": null,
+    "senses": "Possesses Ethereal Sight allowing it to see into the Ethereal Plane, enhancing its combat abilities.",
+    "skills": "Proficient in Stealth and Perception, making it skilled in ambushing and spotting hidden foes.",
+    "additional_information": [
+        "Immune to multiple conditions such as frightened and paralyzed.",
+        "Incorporeal Movement allows it to pass through creatures and objects.",
+        "Can utilize Etherealness to shift between the Material and Ethereal Plane.",
+        "Strong Charisma enhances its terrifying presence.",
+        "Resilient with damage immunities to cold, necrotic, and poison."
+    ],
+    "damage_types": [
+        "psychic",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ghostly dragon that flies and instills fear",
+        "undead dragon with icy breath attack",
+        "formidable monster with incorporeal movement",
+        "large ghost dragon immune to multiple conditions",
+        "stealthy undead dragon with terrifying abilities"
+    ]
+}

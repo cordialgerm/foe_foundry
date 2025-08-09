@@ -1,0 +1,51 @@
+{
+    "name": "Soil Snake",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 115,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., burrow 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "Construct",
+        "Ambusher",
+        "Battlefield Control"
+    ],
+    "adjectives": [
+        "massive",
+        "durable",
+        "coil-like"
+    ],
+    "description": "The Soil Snake is a huge constructed creature with a serpentine form, capable of burrowing through the ground and ambushing unwary foes.",
+    "memorable": "Its ability to swallow creatures whole while moving through the environment, encapsulating them in soil.",
+    "goals": "To control the battlefield by ambushing enemies and restricting their movement.",
+    "relations": "Could be a guardian of a territory or serve a creator or master who designs constructs.",
+    "environment": "Typically found in grassland terrains or similar open environments.",
+    "strengths": "High durability with damage immunities and the ability to burrow for tactical advantage.",
+    "weaknesses": "Lacks intelligence and charisma, making it ineffective in social situations.",
+    "attacks": "Multiattack with a powerful Bite causing piercing damage and a Tail Whip delivering significant bludgeoning damage.",
+    "most_powerful_ability": "Soil Blast, releasing a cone of soil to damage and knock prone all in its path.",
+    "equipment": null,
+    "senses": "Possesses tremorsense, allowing it to detect vibrations in the ground.",
+    "skills": "Has basic perceptual abilities, but lacks advanced intelligence for strategic thinking.",
+    "additional_information": [
+        "Immunities to various conditions like charm and exhaustion.",
+        "Can camouflage itself in grassland, enhancing stealth.",
+        "Construct nature allows it to operate without basic life necessities."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge snake construct that burrows",
+        "constructed serpent with soil control abilities",
+        "massive ambusher in grassland terrain",
+        "powerful burrowing creature that swallows foes",
+        "soil snake that knocks enemies prone"
+    ]
+}

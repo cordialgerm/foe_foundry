@@ -1,6 +1,8 @@
 <MonsterName/>Hongaek</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>15</AC>
+<HP/>105</HP>
 <summary>The Hongaek is a large, neutral evil elemental with a significant presence in combat, featuring a blend of offensive abilities and unique traits that make it a formidable foe. With a Challenge Rating of 8, it presents a tough challenge for adventurers, possessing high Dexterity and a range of immunities and resistances that make it hard to damage. Spellcasting adds to its versatility, enabling strategic manipulation of the battlefield. Its significant weaknesses include vulnerability to fire damage, while its ability to become invisible and move through tight spaces grants it an edge in ambush and retreat scenarios.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ For its actions, the Hongaek employs a Multiattack option, making two attacks wi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hongaek
 
 *Large* *Elemental* *neutral evil*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The hongaek magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the hongaek wears or carries is invisible with it.
 
 
+</statblock>
 
 

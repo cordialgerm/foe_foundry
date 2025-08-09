@@ -1,6 +1,8 @@
 <MonsterName/>Queen of Night and Magic</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>21</CR>
+<AC/>22 (Regal Bearing)</AC>
+<HP/>225</HP>
 <summary>The Queen of Night and Magic is a formidable Medium Fey creature characterized by her exceptional magical abilities and her dominance in combat. With a neutral evil alignment, she leverages her powers to manipulate and control her surroundings, making her a dangerous adversary for adventurers. She boasts a high Armor Class of 22, fortified by her ability to use her Charisma modifier, making physical attacks challenging to land. The Queen possesses a significant pool of hit points at 225, ensuring she can endure prolonged encounters. She is exceptionally skilled in various disciplines, particularly in Charisma-driven actions, allowing her to deceive and intimidate her opponents with ease. Her notable strengths include resistance to magic and damage immunity to cold and nonmagical attacks from weapons not made of cold iron. However, her reliance on magical effects may expose her to counterspell strategies, and her inability to heal makes her vulnerable if her spellcasting is disrupted.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ For legendary actions, the Queen can make an additional attack with Star Strike,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Queen of Night and Magic
 
 *Medium* *Fey* *Neutral Evil*
@@ -78,5 +81,6 @@ The Queen of Night and Magic can take 3 legendary actions, choosing from the opt
 - **Move:** The Queen of Night and Magic moves up to her walking speed or up to half of her flying speed without provoking opportunity attacks.
 - **Cast a Spell (Costs 2 Actions):** The Queen of Night and Magic uses Spellcasting.
 - **Swirling Stars (Costs 2 Actions):** The stars on the Queen’s gown pulse with brilliant starlight. Each creature within 15 feet of her must succeed on a DC 23 Dexterity saving throw or be blinded until the end of its next turn.
+</statblock>
 
 

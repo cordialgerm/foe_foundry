@@ -1,0 +1,25 @@
+{
+    "name": "Giant Honey Bee",
+    "queries": [
+        {
+            "query": "small flying creature that uses poison and has a painful sting",
+            "variant": "small flying insect that has a hurting sting and uses poison"
+        },
+        {
+            "query": "creature with a sting attack that paralyzes targets and can fly",
+            "variant": "monster with a sting that paralyzes foes and is capable of flight"
+        },
+        {
+            "query": "beast that can fly and has a potent poison attack",
+            "variant": "flying beast with a strong poison attack"
+        },
+        {
+            "query": "ecosystem creature that delivers venomous stings and is very small",
+            "variant": "small creature of the ecosystem that gives venomous stings"
+        },
+        {
+            "query": "Giant Honey Bee abilities in combat and movement speed",
+            "variant": "abilities of Giant Honey Bee in battles and how fast it moves"
+        }
+    ]
+}

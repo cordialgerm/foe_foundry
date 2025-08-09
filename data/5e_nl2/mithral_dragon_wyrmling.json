@@ -1,0 +1,54 @@
+{
+    "name": "Mithral Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "60 ft. walking, 50 ft. flying",
+    "role": null,
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "metallic",
+        "flying"
+    ],
+    "adjectives": [
+        "neutral",
+        "young",
+        "formidable",
+        "agile"
+    ],
+    "description": "A medium-sized dragon with impressive agility and a sleek, metallic sheen, embodying neutrality and magical resilience.",
+    "memorable": "Its Shard Breath ability creates difficult terrain and unleashes a flurry of damaging metallic shards.",
+    "goals": "To outmaneuver opponents and resist magical control while asserting dominance in combat.",
+    "relations": "May be encountered alongside other dragons or magical creatures.",
+    "environment": "Typically found in areas with open skies and magical influences.",
+    "strengths": "Exhibits strong mobility with its flying speed and magic resistance, making it tough in magical combat.",
+    "weaknesses": "As a young dragon, it may struggle against more seasoned adventurers despite its abilities.",
+    "attacks": "Sharp bite attack inflicting piercing damage and the ability to end magical effects.",
+    "most_powerful_ability": "Shard Breath; unleashes a cone of metallic shards causing slashing damage and creating difficult terrain.",
+    "equipment": null,
+    "senses": "It has blindsight up to 10 feet, allowing it to detect nearby creatures effectively.",
+    "skills": "Excels in Insight and Perception, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Immunity to slashing damage.",
+        "Immunity to the charmed condition.",
+        "Magic Resistance providing advantage against spells.",
+        "Passive Perception of 16.",
+        "Communicates telepathically within 30 feet."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "metallic dragon with magic resistance",
+        "agile dragon that breathes shards",
+        "neutral wyrmling with strong perception",
+        "young dragon that creates difficult terrain",
+        "medium dragon with powerful breath weapon"
+    ]
+}

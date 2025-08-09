@@ -1,0 +1,25 @@
+{
+    "name": "Orthrus",
+    "queries": [
+        {
+            "query": "two-headed canine monster with poisonous bite in the forest",
+            "variant": "canine monster with two heads that has a snake-like bite in the woods"
+        },
+        {
+            "query": "magical creature with high Dexterity and two heads",
+            "variant": "creature with two canine heads and good Dexterity"
+        },
+        {
+            "query": "monster that has enhanced perception and can knock opponents prone",
+            "variant": "creature with improved awareness that can make enemies fall"
+        },
+        {
+            "query": "serpent-headed monster that is awake while sleeping",
+            "variant": "awake serpent-headed creature that sleeps with one eye open"
+        },
+        {
+            "query": "Orthrus special abilities focused on resilience and multiple attacks",
+            "variant": "Orthrus attacks and special traits emphasizing resistance and multiple strike capabilities"
+        }
+    ]
+}

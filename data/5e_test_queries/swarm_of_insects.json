@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Insects",
+    "queries": [
+        {
+            "query": "buzzing mass of small beetles or wasps in jungles",
+            "variant": "buzzing small wasp or beetle mass in jungles"
+        },
+        {
+            "query": "swarm of biting insects that can occupy another creature's space",
+            "variant": "biting insect swarm that occupies other creatures' spaces"
+        },
+        {
+            "query": "mass of insects that deals poison damage and is difficult to control",
+            "variant": "insect mass that does poison damage and is hard to control"
+        },
+        {
+            "query": "medium swarm that moves quickly through small openings",
+            "variant": "medium insect swarm that can navigate through tiny spaces"
+        },
+        {
+            "query": "insect swarm immune to being charmed or frightened",
+            "variant": "swarm of insects that can't be charmed or frightened"
+        }
+    ]
+}

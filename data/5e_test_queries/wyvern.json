@@ -1,0 +1,25 @@
+{
+    "name": "Wyvern",
+    "queries": [
+        {
+            "query": "large dragon-like creature with a venomous tail found in mountainous regions",
+            "variant": "big dragon-like beast with poisonous tail found in mountain areas"
+        },
+        {
+            "query": "aggressive flying monster that hunts large game and has a stinger",
+            "variant": "hostile flying creature that preys on big animals and possesses a stinger"
+        },
+        {
+            "query": "dragon creature with high strength and poison damage attacks",
+            "variant": "dragon-like being with strong physical attacks and venom damage abilities"
+        },
+        {
+            "query": "aerial predator with poor intelligence and high hit points",
+            "variant": "flying predator with low intelligence and significant hit points"
+        },
+        {
+            "query": "dangerous mountain-dweller with barbed tail and claws",
+            "variant": "hazardous mountain resident with spiky tail and claws"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Kelp Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "swim 50 ft. and walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "aquatic",
+        "amphibious"
+    ],
+    "adjectives": [
+        "stealthy",
+        "aggressive",
+        "cunning"
+    ],
+    "description": "The Kelp Drake is a Medium-sized dragon resembling a blend of aquatic features and draconic characteristics, with dark green scales and long trailing kelp-like appendages.",
+    "memorable": "Its ability to stun creatures with its Deathroll underwater and restrain them with Binding Bile makes it a formidable foe.",
+    "goals": "Typically hunts for prey in aquatic environments and establishes dominance over its territory.",
+    "relations": "May serve under more powerful aquatic creatures or dragons, and possibly encountered alongside other sea monsters.",
+    "environment": "Usually found in coastal waters or submerged areas where kelp is abundant.",
+    "strengths": "Excellent speed in water and the ability to ambush foes makes it a dangerous predator.",
+    "weaknesses": "Limited to water-based tactics due to its need for immersion, making it vulnerable on land.",
+    "attacks": "It employs a combination of bite and claw attacks, followed by a devastating Deathroll in water.",
+    "most_powerful_ability": "Binding Bile allows it to restrain multiple enemies, inflicting acid damage and controlling the battlefield.",
+    "senses": "Possesses darkvision up to 60 feet and a passive perception of 13.",
+    "skills": "Proficient in athletics and stealth, enhancing its capabilities as an ambush predator.",
+    "additional_information": [
+        "Can breathe both air and water, requiring submersion every six hours.",
+        "Aggressive nature allows it to quickly close distances to its prey.",
+        "Can restrain targets with its Binding Bile ability, controlling movement in combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive underwater dragon",
+        "stealthy aquatic predator with kelp",
+        "dragon that uses binding bile attack",
+        "kelp drake tactics in combat",
+        "water-loving dragon that stuns prey"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Black Crier",
+    "creature_type": "Undead",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft., hover, fly 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "harbinger",
+        "psychic"
+    ],
+    "adjectives": [
+        "ominous",
+        "formidable",
+        "strategic"
+    ],
+    "description": "The Black Crier is a Medium Undead creature known for its ominous presence, with the ability to hover and fly, enhancing its battlefield mobility. It is capable of delivering dire prophecies and is adorned with a sorrowful visage that evokes dread.",
+    "memorable": "Its ability to manipulate emotions and deliver prophecies of doom makes the Black Crier a uniquely terrifying adversary.",
+    "goals": "To warn of impending disasters and serve as a harbinger of doom within its bound region.",
+    "relations": "May be linked with other undead creatures or serve dark powers that revel in catastrophe.",
+    "environment": "Typically found in regions where calamities are foretold or have occurred.",
+    "strengths": "High Wisdom and Dexterity enhance its insight and agility, allowing it to evade attacks and strategically manipulate encounters.",
+    "weaknesses": "Struggles with low Intelligence and Charisma, limiting cognitive abilities and persuasive power.",
+    "attacks": "Utilizes its Bell attack for significant bludgeoning and necrotic damage, along with the terrifying Bell Toll ability to frighten and exhaust foes.",
+    "most_powerful_ability": "Crier\u2019s Lament unleashes a devastating wave of psychic energy that can instantly incapacitate foes, making it extremely dangerous.",
+    "senses": "Has a passive Perception of 15, showcasing its keen insight and ability to detect hidden threats.",
+    "skills": "Proficient in perception and performance, which highlights its insightful and somewhat eerie presence.",
+    "additional_information": [
+        "Immune to poison damage.",
+        "Resistant to necrotic, psychic, and nonmagical physical attacks.",
+        "Can resurrect within its designated area after a few days if not defeated before a predicted catastrophe.",
+        "Bound to a specific region tied to a foretold calamity.",
+        "Producing a frightful presence that manipulates the emotions of those nearby."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "harbinger of doom undead",
+        "creature predicting disaster",
+        "psychic attack undead",
+        "sinister flying undead",
+        "cursed being of prophecies"
+    ]
+}

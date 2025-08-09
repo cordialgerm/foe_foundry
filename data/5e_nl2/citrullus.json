@@ -1,0 +1,52 @@
+{
+    "name": "Citrullus",
+    "creature_type": "Plant",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 85,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 15 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "ambush",
+        "maneuver"
+    ],
+    "adjectives": [
+        "sticky",
+        "deceptive",
+        "formidable"
+    ],
+    "description": "The Citrullus resembles a normal melon plant while motionless, with sticky juices and viny tendrils that can ensnare enemies.",
+    "memorable": "It can disguise itself as a common plant and restrain foes with sticky juice or viny tendrils.",
+    "goals": "To ambush unsuspecting creatures and control the battlefield.",
+    "relations": "Could be found in the company of other plants or creatures in ambush tactics.",
+    "environment": "Often found in grassy or overgrown areas where it can blend in.",
+    "strengths": "Impressive physical strength makes its bite attack lethal; possesses abilities to restrain foes.",
+    "weaknesses": "Vulnerable to bludgeoning damage.",
+    "attacks": "Uses a powerful bite that combines piercing and acid damage; can spray acid in a cone to harm and restrain multiple foes.",
+    "most_powerful_ability": "Bile Spray creates a large area of effect to damage and restrain multiple enemies.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, allowing it to sense creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "Can remain motionless to avoid detection.",
+        "Forces attackers to make saving throws when taking bludgeoning damage.",
+        "Can drag restrained creatures closer with its Creeping Seedlings.",
+        "Immunities to acid provide resilience in specific combat situations.",
+        "Features a high Strength score for effective melee attacks."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant that disguises as a melon",
+        "sticky plant creature with ambush tactics",
+        "creature that sprays acid and restrains",
+        "monster with viny tendrils and sticky juice",
+        "plant monster found in overgrown areas"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Corrupted Pixie",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 5,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 10 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "pixie",
+        "fiend",
+        "chaotic",
+        "magic"
+    ],
+    "adjectives": [
+        "tiny",
+        "deceptive",
+        "chaotic",
+        "magical"
+    ],
+    "description": "The Corrupted Pixie is a tiny fiend with deceptive features and an ominous appearance, reflecting its chaotic evil nature. It is agile and can fly, giving it an elusive presence in combat.",
+    "memorable": "Its ability to inflict confusion and become invisible makes it a dangerous opponent despite its fragility.",
+    "goals": "To create chaos and manipulate others, often aligning with dark forces.",
+    "relations": "May be found alongside other fiends or corrupt creatures, using its cunning to serve more powerful beings.",
+    "environment": "Often encountered in dark forests, corrupted magical areas, or alongside other fiendish beings.",
+    "strengths": "High Dexterity provides excellent agility; magic resistance allows it to withstand magical attacks.",
+    "weaknesses": "Fragile with only 5 hit points, making it vulnerable when targeted.",
+    "attacks": "Can deal psychic damage with vicious mockery and confuse enemies with its touch.",
+    "most_powerful_ability": "The ability to become invisible, allowing for strategic repositioning and ambushes.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, enhancing its ability to operate in low-light conditions.",
+    "skills": "Exceptional at stealth, making it difficult to detect and target.",
+    "additional_information": [
+        "Can manipulate enemies with confusion and charm spells.",
+        "Innate spellcasting allows for versatile magic use.",
+        "Possesses resistance to spells and magical effects.",
+        "Known for creating discord in the ranks of foes.",
+        "A dark twist on the traditionally playful nature of pixies."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcaster with abilities to cast various spells, including confusion and charm.",
+    "test_queries": [
+        "tiny magical creature that causes chaos",
+        "fiendish pixie with confusing touch",
+        "invisible creature that casts spells",
+        "chaotic monster that manipulates enemies",
+        "agile pixie known for deception"
+    ]
+}

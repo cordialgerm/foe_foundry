@@ -1,0 +1,25 @@
+{
+    "name": "Young Shadow Dragon",
+    "queries": [
+        {
+            "query": "large dragon with dark powers and shadowy breath weapon",
+            "variant": "big dragon that has dark abilities and a breath attack with shadows"
+        },
+        {
+            "query": "creature that moves incorporeally and has an evil aura",
+            "variant": "monster that can phase through objects and radiates evil"
+        },
+        {
+            "query": "dragon with high Charisma that casts darkness spell",
+            "variant": "dragon having a Charisma of 18 and can use the spell darkness"
+        },
+        {
+            "query": "shadow dragon that thrives in darkness and has essence link",
+            "variant": "dark dragon that flourishes in shadows and has a link to a location"
+        },
+        {
+            "query": "monster immune to necrotic damage that delivers lethal strikes",
+            "variant": "creature resistant to necrotic damage and capable of deadly attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Adult Red Dragon",
+    "queries": [
+        {
+            "query": "large fire-breathing dragon that hoards treasure in volcanic lairs",
+            "variant": "large dragon that breathes fire and collects treasure in lava caves"
+        },
+        {
+            "query": "powerful dragon with molten lava scales and a breath attack",
+            "variant": "potent dragon with fiery scales and a breath weapon"
+        },
+        {
+            "query": "red dragon known for its overwhelming arrogance and fire attacks",
+            "variant": "dragon that is red and famous for its arrogance and fire breath"
+        },
+        {
+            "query": "dragon with high armor class and devastating multiattack capabilities",
+            "variant": "dragon featuring high AC and fierce multiattack skills"
+        },
+        {
+            "query": "intelligent creature with fire immunity and frightful presence",
+            "variant": "smart being with immunity to fire and an ability to instill fear"
+        }
+    ]
+}

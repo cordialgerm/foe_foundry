@@ -1,0 +1,53 @@
+{
+    "name": "Snow Giant",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 11,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "snow",
+        "cold",
+        "combat"
+    ],
+    "adjectives": [
+        "huge",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Snow Giant is a huge and powerful creature, characterized by its immense physical strength and exceptional resilience. It thrives in snowy environments, employing camouflage and regeneration abilities.",
+    "memorable": "It can regenerate health in snowy terrain and is effective at ambushing with its snow camouflage.",
+    "goals": "To dominate snowy areas and challenge any adventurers who encroach upon its territory.",
+    "relations": "Related to other giants, could be encountered with elemental creatures or ice-themed beings.",
+    "environment": "Typically found in snowy and cold regions.",
+    "strengths": "High physical strength and hit points, ability to regenerate in snowy terrain.",
+    "weaknesses": "Vulnerable to fire damage, relatively easy to hit.",
+    "attacks": "Can perform two powerful melee attacks with its club, and can throw a giant snowball that deals bludgeoning and cold damage.",
+    "most_powerful_ability": "Snow Regeneration allows it to regain health in comfortable snowy conditions.",
+    "equipment": null,
+    "senses": "Has passive Perception of 12, providing decent awareness.",
+    "skills": "Skilled in athletics, allowing it to perform impressive feats of physical prowess.",
+    "additional_information": [
+        "Immune to cold damage",
+        "Has advantage on stealth in snowy terrain",
+        "Can blind targets with its Giant Snowball attack",
+        "Immune to being grappled or restrained",
+        "Exhibits poor charisma for social interactions"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster that regenerates in snow",
+        "powerful giant immune to cold damage",
+        "snowy environment giant with camouflage",
+        "blinding snowball throwing giant",
+        "formidable melee attacker in ice terrain"
+    ]
+}

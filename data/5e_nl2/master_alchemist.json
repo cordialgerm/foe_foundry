@@ -1,0 +1,57 @@
+{
+    "name": "Master Alchemist",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any lineage",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 152,
+    "ac": 16,
+    "srd": false,
+    "ac_description": "studded leather",
+    "cr": "7",
+    "movement": "30 feet speed",
+    "role": "Support",
+    "tags": [
+        "alchemist",
+        "spellcaster",
+        "tactical"
+    ],
+    "adjectives": [
+        "versatile",
+        "intelligent",
+        "durable"
+    ],
+    "description": "The Master Alchemist is a medium humanoid known for its cunning use of alchemical concoctions and effects to control the battlefield while supporting allies. It has an exceptional Intelligence that fuels its magical effects and a good Armor Class due to studded leather armor.",
+    "memorable": "Combines potent offensive capabilities with battlefield control through unique concoction effects.",
+    "goals": "To confuse and hinder enemies while providing healing support to allies.",
+    "relations": "May be encountered with other alchemists or creatures that use poison or gas-based attacks.",
+    "environment": "Often found in laboratories, alchemical workshops, or places rich in magical ingredients.",
+    "strengths": "High Intelligence enhances spellcasting abilities, and it has good durability with a high HP.",
+    "weaknesses": "Average physical attributes make it vulnerable in direct melee confrontations.",
+    "attacks": "Utilizes Hasty Concoction attacks dealing versatile damage with various debilitating effects like Disorienting Vapors.",
+    "most_powerful_ability": "Explosive Flask, which deals significant fire damage in a wide area.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient with alchemist\u2019s supplies, able to double its proficiency bonus for related checks.",
+    "additional_information": [
+        "Uses Healing Unguent to restore hit points to allies.",
+        "Can create various battlefield effects like Poisonous Cloud and Slick Floor.",
+        "Has specialized tactics involving area control and support.",
+        "Utilizes Protective Draught for damage resistance.",
+        "Capable of making multiple attacks in a turn."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "master alchemist potion effects",
+        "humanoid with alchemical abilities",
+        "tactical spellcaster with battlefield control",
+        "support character using poisonous gas",
+        "intelligent alchemist with healing abilities"
+    ]
+}

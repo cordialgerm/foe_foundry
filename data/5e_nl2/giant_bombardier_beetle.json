@@ -1,0 +1,52 @@
+{
+    "name": "Giant Bombardier Beetle",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "insect",
+        "fire attack",
+        "beast"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Giant Bombardier Beetle is a medium-sized insect known for its unique combat abilities, particularly its capability to spray fire. It has a robust build, with notable resilience and agility.",
+    "memorable": "It can spray fire from a distance, catching enemies off guard.",
+    "goals": "Primarily acts on instinct, exhibiting aggressive tendencies when threatened.",
+    "relations": "May inhabit the same areas as other beasts or creatures that it could prey on or defend against.",
+    "environment": "Typically found in natural environments where other beasts dwell.",
+    "strengths": "Has good agility with a decent Dexterity score and resistance to fire damage.",
+    "weaknesses": "Very low Intelligence and Charisma scores limit its cognitive abilities and social interactions.",
+    "attacks": "Realizes threats with a bite and can spray fire from a distance, posing a dual threat.",
+    "most_powerful_ability": "Its ability to spray fire deals significant ranged damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 30 feet, granting it awareness of its surroundings without the need for sight.",
+    "skills": null,
+    "additional_information": [
+        "Resistant to fire damage",
+        "Good Constitution saving throw",
+        "Unique ranged attack with fire",
+        "Agility enhances defensive capabilities",
+        "Not capable of complex thought"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium beetle that sprays fire",
+        "agile creature with ranged fire attack",
+        "beast with fire resistance and bite",
+        "surprising insect that can deal fire damage",
+        "instinct-driven medium-sized bombardier beetle"
+    ]
+}

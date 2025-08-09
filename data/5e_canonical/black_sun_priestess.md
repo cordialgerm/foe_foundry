@@ -1,6 +1,8 @@
 <MonsterName/>Black Sun Priestess</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (hide armor)</AC>
+<HP/>67</HP>
 <summary>The Black Sun Priestess is a Medium humanoid of chaotic evil alignment, serving as a formidable opponent in combat situations. With a Challenge Rating of 3, this character poses a moderate threat, featuring strong physical attributes and spellcasting abilities. Her armor class of 13, while not exceptionally high, paired with 67 hit points (which translates to an average of 9d8+27), indicates she can withstand a fair amount of damage before being defeated. Notable strengths include her capability to engage quickly due to her aggressive nature and her potent array of spells, which can influence the battlefield significantly. However, she is vulnerable to bright light, which hampers her effectiveness in combat, making her less intimidating under such conditions.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Black Sun Priestess can engage with her melee weapon, a greatclub
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Sun Priestess
 
 *Medium* *Humanoid* *chaotic evil*
@@ -53,5 +56,6 @@ Cantrips (at will): guidance, mending, resistance, sacred flame
 - **Greatclub:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

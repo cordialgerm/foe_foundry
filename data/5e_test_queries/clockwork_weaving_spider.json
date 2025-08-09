@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Weaving Spider",
+    "queries": [
+        {
+            "query": "tiny mechanical spider that can paralyze using poison",
+            "variant": "tiny metal spider that can use poison to paralyze"
+        },
+        {
+            "query": "construct that doesn't need food and can slice materials with its attacks",
+            "variant": "creature that doesn't require food and slices through materials with attacks"
+        },
+        {
+            "query": "high agility spider immune to poison and psychic damage",
+            "variant": "spider with great agility that is immune to psychic and poison damage"
+        },
+        {
+            "query": "spider construct living in hazardous environment that can damage nonmagical items",
+            "variant": "spider construct in dangerous settings that can harm nonmagical belongings"
+        },
+        {
+            "query": "mechanical spider with high Dexterity and the ability to evade attacks",
+            "variant": "metal spider featuring high Dexterity capable of dodging attacks"
+        }
+    ]
+}

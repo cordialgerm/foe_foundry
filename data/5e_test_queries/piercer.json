@@ -1,0 +1,25 @@
+{
+    "name": "Piercer",
+    "queries": [
+        {
+            "query": "small monstrosity that disguises as a stalactite to ambush",
+            "variant": "small monster that hides like stalactite to ambush"
+        },
+        {
+            "query": "deceptive creature with blindsight that poses a challenge",
+            "variant": "tricky creature with blindsight that is challenging"
+        },
+        {
+            "query": "monster with false appearance that deals piercing damage",
+            "variant": "creature with false appearance that inflicts piercing damage"
+        },
+        {
+            "query": "low intelligence monster that can blend into its environment",
+            "variant": "dumb monster that can blend in with its surroundings"
+        },
+        {
+            "query": "creature that attacks from above with significant damage",
+            "variant": "monster that strikes from above with high damage"
+        }
+    ]
+}

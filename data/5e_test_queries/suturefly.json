@@ -1,0 +1,25 @@
+{
+    "name": "Suturefly",
+    "queries": [
+        {
+            "query": "tiny stealthy monster that can sew shut orifices",
+            "variant": "tiny monster that stealthily sews orifices shut"
+        },
+        {
+            "query": "forest-dwelling fly creature that can detect lies",
+            "variant": "fly creature living in forests that detects lies"
+        },
+        {
+            "query": "monster with high Dexterity that can inflict blinding effects",
+            "variant": "monster that can blind with sewing attack and has high Dexterity"
+        },
+        {
+            "query": "tiny creature with mobility and stealth abilities in wooded areas",
+            "variant": "small creature with stealth and mobility qualities in forests"
+        },
+        {
+            "query": "beast that disrupts combat using sewing attacks and camouflage",
+            "variant": "beast that uses sewing to disrupt combat and has camouflage"
+        }
+    ]
+}

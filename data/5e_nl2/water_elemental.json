@@ -1,0 +1,51 @@
+{
+    "name": "Water Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 114,
+    "ac": 14,
+    "srd": true,
+    "cr": "5",
+    "movement": "walking speed 30 ft., swimming speed 90 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "water",
+        "guardian"
+    ],
+    "adjectives": [
+        "fluid",
+        "towering",
+        "crushing"
+    ],
+    "description": "The Water Elemental is a large creature embodying the essence of water, capable of shifting into towering waves or crashing torrents.",
+    "memorable": "Known for its ability to envelop and drown enemies while regenerating from most physical damage.",
+    "goals": "Often summoned to serve as guardians or to wreak havoc in battle.",
+    "relations": "Can be summoned by spellcasters and often associated with aquatic environments.",
+    "environment": "Commonly found in aquatic environments or guarding sacred bodies of water.",
+    "strengths": "Resistance to nonmagical damage, immunity to poison and several debilitating conditions.",
+    "weaknesses": "Vulnerable to cold damage, which reduces its speed.",
+    "attacks": "Can make multiple slam attacks, dealing significant bludgeoning damage and grappling opponents.",
+    "most_powerful_ability": "Whelm ability that allows it to engulf and restrain creatures within its space.",
+    "senses": "Lacks keen senses but has darkvision up to 60 feet.",
+    "skills": "Possesses a passive perception of 10.",
+    "additional_information": [
+        "Conductive ability transfers lightning damage to others in its space.",
+        "Fluid Form allows it to move through cramped spaces effortlessly.",
+        "Purify Water ability can cleanse water of poison and disease.",
+        "Water Camouflage enhances stealth while submerged.",
+        "Elemental Nature allows it to exist without air, food, or sleep."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fluid creature that controls water",
+        "large elemental that drowns enemies",
+        "water guardian found in sacred lakes",
+        "elemental immune to poison and exhaustion",
+        "a water monster with a powerful whelm ability"
+    ]
+}

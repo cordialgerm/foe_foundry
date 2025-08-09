@@ -1,0 +1,53 @@
+{
+    "name": "Khodumodumo",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 186,
+    "ac": 18,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 25 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "gargantuan",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "stealthy",
+        "powerful"
+    ],
+    "description": "The Khodumodumo is a gargantuan creature resembling an earthen hill when motionless, with impressive physical attributes and natural armor.",
+    "memorable": "Its unique ability to blend into the environment and its devastating swallow attack make it both terrifying and memorable.",
+    "goals": "Typically aims to ambush and consume unwary creatures, asserting dominance in its environment.",
+    "relations": "May encounter other earth-dwelling creatures or be a terror among lesser monstrosities.",
+    "environment": "Often found in hilly or mountainous terrains that enable its False Appearance ability.",
+    "strengths": "Possesses high damage resistance to multiple types of damage and exceptional stealth capabilities.",
+    "weaknesses": "Low intelligence, charisma, and wisdom scores limit its strategic and social capabilities.",
+    "attacks": "Utilizes a Multiattack with its tongues and bite, capable of swallowing prey and inflicting ongoing damage.",
+    "most_powerful_ability": "The swallow ability traps enemies, causing them to be blinded and take continuous acid damage.",
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures without seeing them directly.",
+    "skills": "Boasts exceptional stealth and perception skills, making it a challenging foe to detect.",
+    "additional_information": [
+        "Immunity to poison and psychic damage for its Impaling Tongues.",
+        "Regenerates destroyed tongues after a long rest.",
+        "Bite attack can incapacitate and digest creatures.",
+        "Can grapple targets with long-reaching tongues, controlling the battlefield.",
+        "Effective ambusher using False Appearance to blend in."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan creature that hides like a hill",
+        "powerful biting monster with long tongues",
+        "stealthy earth monster that swallows its prey",
+        "zombie-like creature that conceals itself",
+        "monstrous hill-like ambusher with acid attacks"
+    ]
+}

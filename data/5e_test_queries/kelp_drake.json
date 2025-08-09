@@ -1,0 +1,25 @@
+{
+    "name": "Kelp Drake",
+    "queries": [
+        {
+            "query": "dragon monster that lives in water and can paralyze",
+            "variant": "water dragon monster that can paralyze and lives in kelp"
+        },
+        {
+            "query": "medium long creature that breathes air and water",
+            "variant": "medium creature that can breathe air and also water"
+        },
+        {
+            "query": "kelp drake abilities and aquatic environment",
+            "variant": "aquatic environment and abilities of the kelp drake"
+        },
+        {
+            "query": "monster with aggressive behavior that uses kelp",
+            "variant": "creature that uses kelp and has aggressive behavior"
+        },
+        {
+            "query": "dragon that swims and has a deathroll attack",
+            "variant": "swimming dragon with a deathroll move"
+        }
+    ]
+}

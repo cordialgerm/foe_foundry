@@ -1,6 +1,8 @@
 <MonsterName/>Dragonette, Shovel</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Dragonette, Shovel is a tiny, neutral dragon creature that excels in stealth and mobility, making it a cunning opponent in combat. With an Armor Class of 12, this creature is relatively easy to hit, but its 33 hit points offer a reasonable buffer for survival. Its challenge rating of 1/2 means it poses a low to moderate threat, providing a mere 100 XP for defeating it. Notably, the Dragonette can burrow and utilize its floral camouflage to blend seamlessly into environments rich with vegetation, offering it tactical advantages in ambushes. While its physical attacks may not deal massive damage, it can control the battlefield effectively with its special abilities, making it a quirky and versatile foe.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Dragonette, Shovel is a whimsical and agile opponent, using its mob
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragonette, Shovel
 
 *Tiny* *Dragon* *neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Sticky Tongue:** Launches tongue at target up to 15 ft. away. If target is Small or smaller: DC 13 Str save or be pulled up to 15 ft. toward dragonette. If target is Med or larger: DC 13 Dex save or dragonette is pulled up to 15 ft. closer to the target. If target is within 5 ft. of dragonette dragonette can make one Raking Claws attack vs. it as a bonus action.
 
 
+</statblock>
 
 

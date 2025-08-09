@@ -1,0 +1,52 @@
+{
+    "name": "War Machine Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 232,
+    "ac": 18,
+    "srd": false,
+    "cr": "18",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "golem",
+        "construct",
+        "mechanical"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The War Machine Golem is a massive construct designed for battlefield dominance, with strong, powerful limbs and a heavy armored exterior.",
+    "memorable": "Its exceptional melee strength and ability to deal double damage to objects make it a terrifying presence in any siege.",
+    "goals": "To serve as a relentless combatant on the battlefield, targeting fortifications and enemy forces.",
+    "relations": "Often found guarding important locations or serving as a protector for more powerful beings.",
+    "environment": "Typically encountered in war zones or near fortifications.",
+    "strengths": "High durability, immunity to nonmagical attacks, and immense physical power.",
+    "weaknesses": "Low Dexterity makes it less agile, and negligible intelligence limits strategic capabilities.",
+    "attacks": "Can perform powerful slam attacks and hurl boulders with a catapult action, alongside a devastating fire breath.",
+    "most_powerful_ability": "Fire Breath creates a wide area of effect, dealing heavy fire damage to enemies caught in the cone.",
+    "equipment": null,
+    "senses": "Standard darkvision up to 60 feet and a basic passive perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Immune to spells that would alter its form.",
+        "Resistant to magic due to its Magic Resistance ability.",
+        "Can only be damaged by adamantine weapons for nonmagical damage.",
+        "Has a siege ability that allows for significant damage to structures.",
+        "Cannot be affected by charm or fear effects."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive golem with siege ability",
+        "construct that breathes fire",
+        "gargantuan mechanical guardian",
+        "iron giant that targets structures",
+        "golem immune to nonmagical attacks"
+    ]
+}

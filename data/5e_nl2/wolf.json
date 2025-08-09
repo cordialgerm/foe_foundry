@@ -1,0 +1,51 @@
+{
+    "name": "Wolf",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "40 ft., fast and agile",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "pack mentality",
+        "stealthy"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "cunning",
+        "agile"
+    ],
+    "description": "A medium-sized predator found in forests, mountains, and tundras, known for its sharp teeth and claws and pack mentality.",
+    "memorable": "Wolves are apex predators, skilled hunters that coordinate attacks using their pack tactics.",
+    "goals": "To hunt larger prey and defend their territory.",
+    "relations": "Often found in packs, they may be accompanied by other wolves.",
+    "environment": "Typically inhabits forests, mountains, and tundras.",
+    "strengths": "Excellent stealth and perception, making them dangerous in ambush situations.",
+    "weaknesses": "Relatively low intelligence and low-hit points.",
+    "attacks": "Bitten attacks that deal 5 piercing damage and have a chance to knock the target prone.",
+    "most_powerful_ability": "Pack Tactics allows advantage on attack rolls against targets near allies.",
+    "senses": "Heightened senses grant advantage on Wisdom (Perception) checks based on hearing and smell.",
+    "skills": "Proficient in Perception and Stealth, making them adept at detecting threats and avoiding danger.",
+    "additional_information": [
+        "Known for their communication through howls and vocalizations.",
+        "Prefer to avoid humans unless threatened or food is scarce.",
+        "Can deliver significant damage in packs during encounters.",
+        "Respected and feared by all creatures within their range.",
+        "Capable of delivering a solid threat in both solitary and group settings."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "predatory pack hunting animal",
+        "fast agile forest creature",
+        "cunning predator with keen senses",
+        "medium-sized wolf with sharp teeth",
+        "wolf tactics in pack hunting"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Saber-Toothed Tiger</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>52</HP>
 <summary>The Saber-Toothed Tiger is a large, prehistoric predator with long, curved canine teeth that protrude from its powerful jaws. These big cats are fast, agile, and ferocious hunters, often stalking prey before ambushing with swift, deadly strikes. Their sharp claws and massive jaws allow them to take down large animals with ease. Found in cold, mountainous regions or ancient forests, Saber-Toothed Tigers are solitary creatures, relying on their stealth and raw power to survive. Their fangs are their most notable feature, capable of piercing through flesh and bone with ease.</summary>
 
 <summary>The Saber-Toothed Tiger is a large beast renowned for its ferocious nature and predatory instincts. With an Armor Class of 12, it has some degree of protection, but its true strengths lie in its high Strength score of 20, allowing for powerful melee attacks. The tiger can deal significant damage with its claws and bite, making it a formidable opponent in combat. Its Challenge Rating of 2 indicates it can be a challenging encounter for lower-level adventurers, providing 450 experience points upon defeat. Although it lacks intelligence and charm, the tiger compensates with decent Dexterity and Constitution scores, demonstrating agility and resilience. Its Keen Smell ability enhances its awareness, allowing it to detect creatures nearby. However, its low Charisma and Intelligence make it less effective in social interactions.</summary>
@@ -33,6 +35,7 @@ Overall, the Saber-Toothed Tiger relies on its physical prowess and predatory ab
 
 Source: 5e_srd
 
+<statblock>
 ### Saber-Toothed Tiger
 
 *Large beast, unaligned*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (1d10+5) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.
+***Claw***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Saber-Toothed Tiger
 
 *Large* *Beast*
@@ -103,5 +108,6 @@ Source: 5e_artisinal_monsters
 - **Opportune Bite:** The tiger makes a bite attack against a prone creature.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Stygian Fat-Tailed Scorpion",
+    "queries": [
+        {
+            "query": "tiny scorpion that deals poison damage and can see in the dark",
+            "variant": "small scorpion that can see in dark and inflicts poison damage"
+        },
+        {
+            "query": "beast with multiattack that has low strength but high dexterity",
+            "variant": "creature with low strength but good dexterity and multiattack ability"
+        },
+        {
+            "query": "a dangerous animal that inflicts exhaustion with its sting attack",
+            "variant": "a creature that causes exhaustion with its sting and is considered dangerous"
+        },
+        {
+            "query": "moderately strong scorpion that operates independently and lives in dark areas",
+            "variant": "scorpion that is moderately strong, lives in darkness, and is independent"
+        },
+        {
+            "query": "poisonous beast that has natural armor and a challenge rating of 3",
+            "variant": "creature with a challenge rating of 3 and natural armor that is poisonous"
+        }
+    ]
+}

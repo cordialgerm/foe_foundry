@@ -1,0 +1,50 @@
+{
+    "name": "Green Knight of the Woods",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 20,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "knight",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "enforcing"
+    ],
+    "description": "The Green Knight of the Woods embodies a strong fey presence with a plate and shield, showcasing its formidable defensive capabilities.",
+    "memorable": "The ability to reattach its head makes the Green Knight a terrifying opponent, ensuring it can't easily be defeated.",
+    "goals": "Enforcing order within its domain and challenging intruders to engage in combat.",
+    "relations": "Often interacts with woodland creatures, as it can communicate with beasts and plants.",
+    "environment": "Typically found in wooded or natural areas that reflect its connection to nature.",
+    "strengths": "Magical resistance and ability to compel foes into melee combat gives it a significant advantage on the battlefield.",
+    "weaknesses": "Vulnerable to cold iron attacks and has a limited range of offensive spells.",
+    "attacks": "Multiattack with a battle axe, shield bash that grapples, and javelin throw.",
+    "most_powerful_ability": "Headsman's Woe which allows it to reattach its head if severed.",
+    "equipment": "Plate armor and a shield, as well as a battle axe.",
+    "senses": "Has darkvision out to 60 feet.",
+    "skills": "Skilled in athletics, intimidation, and survival, excelling as a tracker and formidable socialite.",
+    "additional_information": [
+        "Magic resistance grants advantage on saving throws against spells.",
+        "Can issue a challenge to compel a creature into melee combat.",
+        "Immune to being charmed or frightened.",
+        "Can make a retaliatory attack when challenged.",
+        "Possesses a strong physical presence with good strength."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fey knight with magical resilience",
+        "forest guardian that reattaches its head",
+        "strong knight that compels foes to fight",
+        "durable fey with head reattachment ability",
+        "creature that communicates with beasts"
+    ]
+}

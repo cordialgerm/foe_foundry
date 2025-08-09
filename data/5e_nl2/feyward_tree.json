@@ -1,0 +1,52 @@
+{
+    "name": "Feyward Tree",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "limited walking speed of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "magical",
+        "resilient",
+        "tree"
+    ],
+    "adjectives": [
+        "huge",
+        "durable",
+        "magical",
+        "resistant"
+    ],
+    "description": "The Feyward Tree is a huge construct with immense physical power and a magical nature. It has thick, resilient bark, and its branches are adorned with razor-leafed foliage, making it a formidable presence on the battlefield.",
+    "memorable": "Its ability to absorb lightning damage and launch devastating area attacks makes it a unique and tactical threat.",
+    "goals": "To protect its surroundings and eliminate intruders using its powerful attacks and control tactics.",
+    "relations": "It may be associated with other constructs or guardians created by its master.",
+    "environment": "Typically found in enchanted groves or areas rich in magic where it can serve as a protector.",
+    "strengths": "Immunity to several damage types and conditions, multiattack capability, and magical resistance enhance its combat effectiveness.",
+    "weaknesses": "Low mobility and vulnerability to cold damage can hinder its performance in battle.",
+    "attacks": "Employs razor-leafed branch attacks that deal slashing and additional force damage, and it can unleash a flurry of razor-sharp leaves in an area.",
+    "most_powerful_ability": "Flaying Leaves creates a dangerous area-of-effect attack that can severely damage multiple foes at once.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses good perception (modifier of +3), allowing it to detect hidden threats effectively.",
+    "additional_information": [
+        "Gain hit points from lightning damage due to Lightning Absorption.",
+        "Multiattack capability allows striking twice in a turn.",
+        "Magic Resistance provides advantage against spells and magical effects.",
+        "Immune to shape-altering effects with Immutable Form.",
+        "Provokes opportunity attacks within 15 feet of it."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "magical tree construct with razor leaf attacks",
+        "durable creature that absorbs lightning damage",
+        "huge construct that attacks with sharp branches",
+        "tree protector that uses area-of-effect attacks",
+        "creature immune to being charmed or frightened"
+    ]
+}

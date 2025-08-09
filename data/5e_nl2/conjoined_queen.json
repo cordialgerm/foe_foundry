@@ -1,0 +1,53 @@
+{
+    "name": "Conjoined Queen",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 168,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "burrow 20 ft., climb 30 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "chaotic",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "versatile",
+        "charming"
+    ],
+    "description": "The Conjoined Queen is a large monstrosity with a blend of physical and magical prowess, characterized by its imposing size and unique features.",
+    "memorable": "Combines charm abilities, powerful spellcasting, and tactical burrowing movement, creating chaos on the battlefield.",
+    "goals": "To manipulate and control opponents using its charm abilities and overwhelming spell power.",
+    "relations": "Might be found in the company of other chaotic creatures or as a leader of lesser monstrosities.",
+    "environment": "Typically resides in labyrinthine terrains or underground lairs where it can utilize its burrowing capabilities.",
+    "strengths": "High physical strength and resilience, exceptional at spellcasting, and advantageous movement options.",
+    "weaknesses": "Vulnerable to spell disruptions due to its reliance on magic.",
+    "attacks": "Utilizes powerful melee attacks with bludgeoning and poison damage, supplemented by charming abilities.",
+    "most_powerful_ability": "Pheromones that can charm and stun nearby creatures, and a daily ability that boosts allies' effectiveness in battle.",
+    "equipment": null,
+    "senses": "Has tremorsense and darkvision up to 60 feet, allowing it to sense nearby creatures effectively.",
+    "skills": "Proficient in perception with a +6 modifier, enabling strong awareness of surroundings.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can create a 5-foot-diameter tunnel through solid rock.",
+        "Spellcasting abilities include a variety of offensive, defensive, and utility spells.",
+        "Sleeps in subterranean lairs where it can maximize its burrowing capabilities.",
+        "Appears as a blend of various monstrous features, contributing to its fearsome presence."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "A 9th-level spellcaster with access to a diverse range of spells for both attack and utility.",
+    "test_queries": [
+        "charming large monster with spellcasting abilities",
+        "powerful queen with poison damage attacks",
+        "monstrous spellcaster that can burrow underground",
+        "creature that stuns opponents with pheromones",
+        "large monster that creates tunnels and casts spells"
+    ]
+}

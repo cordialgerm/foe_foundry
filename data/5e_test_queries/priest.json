@@ -1,0 +1,25 @@
+{
+    "name": "Priest",
+    "queries": [
+        {
+            "query": "humanoid spellcaster with healing abilities",
+            "variant": "humanoid healer with spellcasting powers"
+        },
+        {
+            "query": "support character wearing robes and using divine magic",
+            "variant": "character in robes using holy magic for support"
+        },
+        {
+            "query": "priest with high Wisdom and spells like guiding bolt",
+            "variant": "priest character known for Wisdom and spells like guiding bolt"
+        },
+        {
+            "query": "humanoid that wards off evil and supports allies",
+            "variant": "humanoid helping allies and fighting evil"
+        },
+        {
+            "query": "medium-sized priest that casts protective spells",
+            "variant": "medium priest casting spells for protection"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Sand Silhouette",
+    "queries": [
+        {
+            "query": "undead desert creature that can engulf enemies",
+            "variant": "desert undead monster capable of engulfing foes"
+        },
+        {
+            "query": "medium undead with a sandstorm ability and weaknesses to water",
+            "variant": "med size undead that has sandstorm powers and is weak to water"
+        },
+        {
+            "query": "creature that takes cold damage from water and has a high strength score",
+            "variant": "monster vulnerable to cold water with high strength attributes"
+        },
+        {
+            "query": "sandy terrain monster immune to necrotic damage",
+            "variant": "necrotic immune creature that thrives in sandy environments"
+        },
+        {
+            "query": "ambush undead that moves silently through sand",
+            "variant": "silent moving undead that ambushes in sandy areas"
+        }
+    ]
+}

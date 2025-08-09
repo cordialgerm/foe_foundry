@@ -1,0 +1,25 @@
+{
+    "name": "Despair And Anger",
+    "queries": [
+        {
+            "query": "large celestial creature embodying sorrow and rage",
+            "variant": "large celestial being that embodies sadness and fury"
+        },
+        {
+            "query": "creature with high armor class and the ability to fly",
+            "variant": "monster that has a high AC and can fly in battle"
+        },
+        {
+            "query": "monster that can switch between rage and despair in combat",
+            "variant": "creature that can change between anger and sorrow during fights"
+        },
+        {
+            "query": "celestial being that resists necrotic damage and can manipulate emotions",
+            "variant": "celestial entity that has resistance to necrotic damage and can affect feelings"
+        },
+        {
+            "query": "powerful creature with truesight and telepathy abilities",
+            "variant": "strong monster that possesses truesight and telepathic powers"
+        }
+    ]
+}

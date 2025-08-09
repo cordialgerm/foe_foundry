@@ -1,0 +1,25 @@
+{
+    "name": "Archmage",
+    "queries": [
+        {
+            "query": "powerful humanoid with immense magical abilities wearing ornate robes",
+            "variant": "humanoid with great magic wearing ornate robes and strong abilities"
+        },
+        {
+            "query": "master spellcaster who can teleport and cast lightning bolts",
+            "variant": "spellcaster who can teleport and cast bolts of lightning"
+        },
+        {
+            "query": "intelligent wizard that can confuse foes and resist magic",
+            "variant": "wizard that resists magic and confuses enemies with intellect"
+        },
+        {
+            "query": "tactical humanoid adept in arcane arts living in towers",
+            "variant": "humanoid skilled in arcane arts who resides in towers"
+        },
+        {
+            "query": "magical being immune to psychic damage and can manipulate time",
+            "variant": "being that can manipulate time and is immune to psychic effects"
+        }
+    ]
+}

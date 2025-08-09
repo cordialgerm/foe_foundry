@@ -1,0 +1,51 @@
+{
+    "name": "Ash Drake",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 117,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking 60 feet, flying 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "fire",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "fiery"
+    ],
+    "description": "The Ash Drake is a small, cunning dragon known for its stealth and flame, covered in ash and capable of moving quickly through its environment.",
+    "memorable": "The Ash Drake's ability to create an obscured area with its Ash Cloud and its potent Ash Breath make it a dangerous foe in combat, able to blind enemies and deal significant damage.",
+    "goals": "It often seeks to ambush unsuspecting prey, using its cunning nature and ability to control the battlefield.",
+    "relations": "It may serve or be allied with other draconic beings or creatures that thrive in fiery or ash-laden environments.",
+    "environment": "Typically found in volcanic regions or areas affected by fire, smoke, and ash.",
+    "strengths": "Immunity to fire damage and the ability to see through smoke and fog give the Ash Drake significant tactical advantages.",
+    "weaknesses": "Its low intelligence limits its strategic combat planning and spellcasting capabilities.",
+    "attacks": "The Ash Drake performs a multiattack, using its Bite and Claw attacks to inflict piercing and slashing damage, alongside fire damage.",
+    "most_powerful_ability": "The Ash Breath creates a devastating cone of fire and poisons those who fail to escape its reach.",
+    "equipment": null,
+    "senses": "The Ash Drake possesses Firesight, allowing it to see through fire, smoke, and fog without penalties.",
+    "skills": "It is proficient in Stealth, allowing it to excel in ambush situations.",
+    "additional_information": [
+        "It has the ability to create a heavily obscured area with its Ash Cloud.",
+        "The Ash Drake's low intelligence affects its tactics in battle.",
+        "It can potentially blind enemies, creating advantageous conditions for attacks.",
+        "The Ash Breath can poison enemies, prolonging their suffering in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery stealth dragon",
+        "dragon with ash breath",
+        "cunning small dragon",
+        "blinding ash cloud creature",
+        "fire immune dragon"
+    ]
+}

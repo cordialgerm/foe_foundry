@@ -1,0 +1,25 @@
+{
+    "name": "Ettercap",
+    "queries": [
+        {
+            "query": "humanoid spider creature that builds webs in dark forests",
+            "variant": "spider-like humanoid monster that spins webs in dark woods"
+        },
+        {
+            "query": "cunning monster with poisonous bites and web trapping ability",
+            "variant": "sly creature with venomous bites and web traps"
+        },
+        {
+            "query": "dangerous forest predator that commands spiders and uses stealth",
+            "variant": "menacing woodland hunter that controls spiders and relies on stealth"
+        },
+        {
+            "query": "hairy monster with a grotesque face that ambushes its prey",
+            "variant": "furry creature with an ugly face that surprises its victims"
+        },
+        {
+            "query": "monster that climbs walls and is skilled at surviving in dark caves",
+            "variant": "creature that scales surfaces and excels in dark caverns"
+        }
+    ]
+}

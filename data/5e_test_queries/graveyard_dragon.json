@@ -1,0 +1,25 @@
+{
+    "name": "Graveyard Dragon",
+    "queries": [
+        {
+            "query": "undead dragon that can breathe elemental damage and lives among bones",
+            "variant": "dragon that is undead and can deal elemental damage while surrounded by bones"
+        },
+        {
+            "query": "large creature with resistance to necrotic damage and strong physical attacks",
+            "variant": "big monster that resists necrotic attacks and has powerful physical hits"
+        },
+        {
+            "query": "dangerous undead dragon with a multiattack and a false appearance ability",
+            "variant": "hazardous undead dragon that can multiattack and has a disguise ability"
+        },
+        {
+            "query": "Graveyard Dragon's elemental aura and ability to hide as bones",
+            "variant": "elemental aura of the Graveyard Dragon and its skill to blend in with bones"
+        },
+        {
+            "query": "undead dragon with decent strength and low agility in the graveyard",
+            "variant": "dragon that is undead with good strength and poor agility found in graveyards"
+        }
+    ]
+}

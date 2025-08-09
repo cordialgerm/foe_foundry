@@ -1,0 +1,54 @@
+{
+    "name": "Ankou Soul Herald",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 407,
+    "ac": 18,
+    "srd": false,
+    "cr": "21",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "necromancy",
+        "dragon",
+        "shadow",
+        "celestial"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "powerful",
+        "ghostly",
+        "fearsome"
+    ],
+    "description": "The Ankou Soul Herald is a gargantuan dragon known for its powerful presence, blending draconic strength with celestial powers. It possesses a cloak of ghostly shadows, allowing it to vanish in dim light and phase through objects, showcasing a haunting appearance.",
+    "memorable": "Its ability to negate necromancy spells and its devastating Reaper's Breath attack make it a terrifying opponent, especially against undead foes.",
+    "goals": "To dominate its environment and eliminate threats, particularly those reliant on necromantic powers.",
+    "relations": "May serve powerful undead entities or collaborate with other necromancers, often encountered alongside undead minions.",
+    "environment": "Often found in realms of darkness or near battlefields where the dead roam.",
+    "strengths": "Immunity to cold, necrotic, and poison damage; exceptional Constitution and Wisdom saving throws; and powerful necromancy-based abilities.",
+    "weaknesses": "Weakness to radiant damage, which can be strategically exploited.",
+    "attacks": "The Ankou attacks using a powerful bite that deals piercing and cold damage, along with slashing attacks from its claws. It can also use a devastating line attack called Reaper's Breath.",
+    "most_powerful_ability": "Aura of Necromancy's Bane, which prohibits necromancy spells from being cast nearby and damages undead creatures.",
+    "equipment": null,
+    "senses": "It possesses truesight up to 60 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Has high perception skills, with a passive score of 28, showcasing its acute awareness of its surroundings.",
+    "additional_information": [
+        "Can polymorph using Change Shape ability, adapting to various forms.",
+        "Can transport itself and others to different planes with the Usher of Souls ability.",
+        "Possesses a legendary resistance that allows it to negate failed saving throws."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan dragon with necromancy abilities",
+        "shadow dragon of immense power",
+        "Ankou Soul Herald characteristics",
+        "powerful dragon controlling undead",
+        "creature that negates necromancy spells"
+    ]
+}

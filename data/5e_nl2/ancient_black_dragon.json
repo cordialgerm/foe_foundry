@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Black Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Gargantuan",
+    "hp": 367,
+    "ac": 22,
+    "srd": true,
+    "cr": "21",
+    "movement": "40 ft. walking, 80 ft. flying, 40 ft. swimming",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "amphibious",
+        "acid breath"
+    ],
+    "adjectives": [
+        "dark",
+        "cunning",
+        "cruel",
+        "massive"
+    ],
+    "description": "The Ancient Black Dragon boasts dark scales that absorb light, massive wings that cast imposing shadows, and a menacing presence. Known for its acidic breath, it thrives in vile, swampy environments and is often found in decayed ruins. This dragon revels in tormenting its enemies both physically and psychologically.",
+    "memorable": "Its ability to breathe corrosive acid and employ effective ambushing tactics make it a formidable opponent. The dragon\u2019s mastery of terror through its Frightful Presence and the psychological manipulation of others enhance its intensity.",
+    "goals": "To dominate and enslave lesser beings, achieving its own dark ambitions while inciting fear and chaos in its territory.",
+    "relations": "Often associated with other dark creatures of the swamps, it may enslave lesser dragons or other beings to do its bidding.",
+    "environment": "Typically found in dark, murky swamps and decayed ruins, thriving in putrid environments.",
+    "strengths": "Immune to acid damage and has several legendary actions, along with powerful multiattack capabilities that can devastate multiple foes.",
+    "weaknesses": "Vulnerable to certain types of magic, especially those that exploit its fearsome presence.",
+    "attacks": "Utilizes a bite that deals piercing and acid damage and multiple claw and tail attacks, all with high accuracy.",
+    "most_powerful_ability": "Acid Breath, which unleashes a devastating line of acid damage that can blind foes.",
+    "senses": "Possesses blindsight up to 60 feet, enabling it to detect unseen foes in its vicinity.",
+    "skills": "Excels in stealth and perception, making it a cunning predator in its swampy domain.",
+    "additional_information": [
+        "Can breathe both air and water, allowing it to thrive in aquatic environments.",
+        "Legendary Resistance enables it to overcome failed saving throws.",
+        "Ambusher ability grants advantage on stealth checks while submerged.",
+        "Frightful Presence can incapacitate foes with fear.",
+        "Acidic Vapors can poison creatures nearby after using its Acid Breath."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast several powerful spells like fog cloud and insect plague.",
+    "test_queries": [
+        "massive dark swamp dragon",
+        "creature with acidic breath",
+        "dragon that rules the swamp",
+        "fearsome amphibious dragon",
+        "legendary black dragon abilities"
+    ]
+}

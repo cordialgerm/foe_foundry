@@ -1,6 +1,8 @@
 <MonsterName/>Leashed Lesion</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Leashed Lesion is a large aberration characterized by its chaotic evil nature. This creature stands out with an Armor Class of 15 due to its natural armor, making it relatively difficult to hit in combat. With 65 hit points, it has a moderate endurance but can still be defeated with focused attacks. The Leashed Lesion has a movement speed of 40 feet, allowing it to maneuver effectively during encounters. It is rated with a Challenge Rating of 3, indicating it can pose a significant threat to lower-level adventurers while being manageable for more experienced parties. Its notable features include damage resistance to necrotic damage and powerful abilities that allow it to drain health from opponents while recovering its own.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Leashed Lesion can utilize its Life Tether ability, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Leashed Lesion
 
 *Large* *Aberration* *chaotic evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Life Tether:** Attaches a symbiotic tether to a creature sitting in the recess in its back. A creature in the recess that isn’t attached to the tether takes 7 (2d6) piercing damage at the end of the lesion’s turn and the lesion regains hp equal to the damage dealt. While the tether is attached the creature is grappled by the lesion. The lesion or the creature can detach the tether as a bonus action. Lesion can have its symbiotic tether attached to only one creature at a time.
 
 
+</statblock>
 
 

@@ -1,0 +1,58 @@
+{
+    "name": "Ghostwalk Spider",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "50 feet walking speed, climbs difficult surfaces effortlessly",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "spider",
+        "predator",
+        "stealthy"
+    ],
+    "adjectives": [
+        "formidable",
+        "ghostly",
+        "stealthy",
+        "predatory"
+    ],
+    "description": "The Ghostwalk Spider is a large, predatory spider with remarkable stealth, capable of shifting between ghostly and physical forms.",
+    "memorable": "This spider can move through objects, becoming invisible to effectively ensnare its prey with ghostly webs.",
+    "goals": "To ambush and capture prey, using cunning tactics and stealth.",
+    "relations": "Related to other monstrous spiders and undead creatures, often inhabiting dark, eerie environments.",
+    "environment": "Typically found in dark forest areas or abandoned ruins where it can conceal itself.",
+    "strengths": "High Dexterity enhances evasion and stealth, and resistance to numerous damage types while in ghostly form.",
+    "weaknesses": "Low Charisma and Intelligence affect social interactions and resistance to certain magical effects.",
+    "attacks": "Can perform a Bite attack dealing piercing damage with a chance of poisoning, or use Ghostly Snare to restrain and hide targets.",
+    "most_powerful_ability": "Ghostly Body provides extensive resistances and immunities in ghost form, while also allowing for incorporeal movement through objects.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet and a passive Perception of 16, enhancing its hunting abilities.",
+    "skills": "Proficient in Stealth and Perception, making it highly adept at ambush tactics.",
+    "additional_information": [
+        "Has the ability to teleport between ghostly and true forms.",
+        "Immunities to being grappling or paralyzed.",
+        "Can move through difficult terrain without penalty.",
+        "Restrains targets using invisible webbing.",
+        "Deals additional poison damage in true form."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ghostly large spider with stealth abilities",
+        "predatory spider that shifts forms",
+        "spider immune to grappled and paralyzed conditions",
+        "huge spider with deadly bite and ghostly snare",
+        "stealthy spider that can walk through walls"
+    ]
+}

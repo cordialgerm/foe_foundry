@@ -1,0 +1,25 @@
+{
+    "name": "Emperor\u2019s Hyena",
+    "queries": [
+        {
+            "query": "undead creature that uses stench and fights in packs",
+            "variant": "creature that is undead, fights in groups, and has a stench ability"
+        },
+        {
+            "query": "hyena-like monster immune to poison with multi-attack",
+            "variant": "poison-immune hyena creature with multiple attacks"
+        },
+        {
+            "query": "aggressive undead monster with black breath attack",
+            "variant": "undead aggressive creature that has a black breath ability"
+        },
+        {
+            "query": "medium-sized monster resistant to cold and necrotic damage",
+            "variant": "creature of medium size that resists cold and necrotic damage"
+        },
+        {
+            "query": "neutral evil hyena that can exhaust targets",
+            "variant": "hyena that is neutral evil and can cause exhaustion"
+        }
+    ]
+}

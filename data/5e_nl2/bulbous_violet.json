@@ -1,0 +1,54 @@
+{
+    "name": "Bulbous Violet",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 38,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "20 feet walking and climbing",
+    "role": "null",
+    "tags": [
+        "plant",
+        "acid",
+        "grappler",
+        "camouflage"
+    ],
+    "adjectives": [
+        "bulbous",
+        "violet",
+        "agile",
+        "camouflage"
+    ],
+    "description": "The Bulbous Violet is a Medium-sized plant creature with notable physical attributes, including strong tendrils used for grappling. Its appearance allows it to blend in with flowering plants while remaining motionless.",
+    "memorable": "It can blend into surroundings and inflict persistent acid damage while grappling.",
+    "goals": "To ambush flesh-based creatures that come too close.",
+    "relations": "Likely found in environments with other plant creatures or species that share its habitat.",
+    "environment": "Can be found in flora-rich areas, mimicking large flowering plants.",
+    "strengths": "Good Strength and Dexterity make it effective in grappling and mobility.",
+    "weaknesses": "Low Intelligence and Charisma, making it simple-minded and uncharismatic.",
+    "attacks": "Uses tendril attacks to inflict bludgeoning and acid damage while grappling.",
+    "most_powerful_ability": "Acid Sacs ability that deals retaliatory acid damage to nearby creatures when harmed.",
+    "equipment": null,
+    "senses": "Has Flesh Sense, allowing it to detect flesh-based creatures within 60 feet by scent.",
+    "skills": null,
+    "additional_information": [
+        "Blend in with large flowering plants when motionless.",
+        "Regains hit points when grappling targets is reduced to 0 hit points.",
+        "Can grapple two targets simultaneously with its tendrils.",
+        "Deals persistent acid damage while grappling.",
+        "Very poor reasoning and problem-solving abilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that grapples",
+        "acid dealing flower monster",
+        "camouflaged plant with tendril attacks",
+        "bulbous plant that blends into flowers",
+        "creature that detects flesh by scent"
+    ]
+}

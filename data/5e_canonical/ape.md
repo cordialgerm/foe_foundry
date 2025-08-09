@@ -1,6 +1,8 @@
 <MonsterName/>Ape</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>19</HP>
 <summary>An Ape is a large, muscular primate with powerful limbs and a thick coat of fur. Its long arms are perfectly adapted for climbing and swinging through trees, though it can also walk on two legs when needed. Apes are highly intelligent and often display strong social behavior, living in family groups and communicating through a variety of vocalizations and gestures. In combat, an ape relies on its immense strength, using its fists to deliver crushing blows. Apes are territorial and will defend their group fiercely if threatened, though they are generally peaceful when unprovoked.</summary>
 
 <summary>The Ape is a Medium-sized beast known for its agility and physical strength, often acting as a brute force combatant in the wild. With a well-rounded physical presence and decent climbing abilities, it can prove to be a formidable opponent in melee encounters. The Ape's strengths lie in its impressive Strength score of 16, granting it an attack bonus of +5, and its decent Dexterity of 14, which contributes to its combat agility. However, its intelligence is remarkably low at 6, making it poor at complex problem-solving, and though it possesses average Wisdom, its lack of Charisma means it may struggle in social situations. With a Challenge Rating of 1/2, it represents a threat primarily to low-level adventurers, and while it has good hit points at 19, its moderate Armor Class of 12 means it can be vulnerable to more experienced foes.</summary>
@@ -37,6 +39,7 @@ In summary, the Ape is a straightforward, yet dangerous opponent, particularly w
 
 Source: 5e_srd
 
+<statblock>
 ### Ape
 
 *Medium beast, unaligned*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ***Fist***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) bludgeoning damage.
 
-***Rock***. *Ranged Weapon Attack:* +5 to hit, range 25/50 ft., one target. *Hit:* 6 (1d6+3) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +5 to hit, range 25/50 ft., one target. *Hit:* 6 (1d6+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ape
 
 *Medium* *Beast*
@@ -98,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6+3) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -106,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ape
 
 *Medium beast*
@@ -137,5 +144,6 @@ Source: 5e_artisinal_monsters
 - **Fist.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.
 - **Rock.** Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.
 
+</statblock>
 
 

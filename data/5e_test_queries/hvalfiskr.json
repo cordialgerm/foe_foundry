@@ -1,0 +1,25 @@
+{
+    "name": "Hvalfiskr",
+    "queries": [
+        {
+            "query": "huge aquatic giant that can shape-shift and has a charming song",
+            "variant": "giant that is huge and aquatic which can change shape and has a song that charms"
+        },
+        {
+            "query": "powerful whale giant with cold immunity living in water",
+            "variant": "whale giant that is powerful and immune to cold living in aquatic places"
+        },
+        {
+            "query": "frost giant that uses echolocation and can charm enemies",
+            "variant": "giant of frost that can echolocate and charms foes"
+        },
+        {
+            "query": "creature with natural armor and psychic attack abilities in an aquatic environment",
+            "variant": "beast with armor made by nature and psychic abilities found in water"
+        },
+        {
+            "query": "giant monster that uses chains and bludgeoning attacks in combat",
+            "variant": "huge monster that uses chain attacks and deals bludgeoning damage in battles"
+        }
+    ]
+}

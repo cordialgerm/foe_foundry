@@ -1,0 +1,25 @@
+{
+    "name": "Incubus",
+    "queries": [
+        {
+            "query": "charming male demon that manipulates mortals",
+            "variant": "male demon that charms and manipulates mortals"
+        },
+        {
+            "query": "seductive fiend with shapechanging abilities",
+            "variant": "shapechanging fiend that is also seductive"
+        },
+        {
+            "query": "chaos-loving demon that feeds on emotions",
+            "variant": "demon that feeds on emotions and loves chaos"
+        },
+        {
+            "query": "appearance of an incubus and its charm ability",
+            "variant": "look of an incubus and the ability to charm"
+        },
+        {
+            "query": "fiend that can fly and uses illusion magic",
+            "variant": "fiend that flies and employs illusion magic"
+        }
+    ]
+}

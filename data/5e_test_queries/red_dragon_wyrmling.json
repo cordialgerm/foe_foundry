@@ -1,0 +1,25 @@
+{
+    "name": "Red Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that breathes fire and is immune to fire damage",
+            "variant": "dragon of medium size that can breathe fire and has immunity to fire attacks"
+        },
+        {
+            "query": "dangerous fire creature found in volcanic environments",
+            "variant": "hazardous fire monster located in volcanic surroundings"
+        },
+        {
+            "query": "dragon with high strength and a strong bite attack",
+            "variant": "dragon possessing exceptional strength and powerful biting attack"
+        },
+        {
+            "query": "creature that can fly and uses fire breath in combat",
+            "variant": "being capable of flight that employs fire breath during battles"
+        },
+        {
+            "query": "red scaled dragon that excels in intimidation and has darkvision",
+            "variant": "red-scaled creature that is skilled at intimidation and possesses darkvision"
+        }
+    ]
+}

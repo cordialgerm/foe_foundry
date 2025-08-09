@@ -1,0 +1,52 @@
+{
+    "name": "Young Wasteland Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 178,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "burrow 20 ft., climb 40 ft., fly 70 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "wasteland",
+        "chaotic evil",
+        "breath weapon"
+    ],
+    "adjectives": [
+        "large",
+        "mobile",
+        "powerful",
+        "chaotic"
+    ],
+    "description": "The Young Wasteland Dragon is a large dragon with potent abilities and a chaotic nature. Its body is likely covered in scales that reflect its wasteland environment.",
+    "memorable": "Features Warped Energy Breath, a devastating area attack.",
+    "goals": "To dominate its territory and eliminate threats.",
+    "relations": "May be encountered alongside other wasteland creatures or powerful chaotic beings.",
+    "environment": "Typically found in barren wasteland areas or ruins.",
+    "strengths": "High physical strength and constitution, making it durable and capable in melee combat.",
+    "weaknesses": "Moderate intelligence and wisdom, making it susceptible to manipulation.",
+    "attacks": "Can make a bite attack and claw attacks, dealing significant damage to enemies.",
+    "most_powerful_ability": "Warped Energy Breath, dealing 49 force damage in a line to multiple foes.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 feet, allowing it to detect hidden foes.",
+    "skills": "Skilled in perception and stealth, enhancing its capability to navigate its environment unnoticed.",
+    "additional_information": [
+        "Immune to force damage.",
+        "Exceptional mobility with flying and climbing abilities.",
+        "Can perform multiattacks with its bite and claws."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon with devastating breath attack",
+        "chaotic creature from the wasteland",
+        "mobile dragon using force damage",
+        "dragon with strong melee abilities",
+        "wasteland dragon immune to force damage"
+    ]
+}

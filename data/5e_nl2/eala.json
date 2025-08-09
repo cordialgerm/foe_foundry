@@ -1,0 +1,50 @@
+{
+    "name": "Eala",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 40,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "60 feet walking speed, 10 feet flying speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fire",
+        "flight"
+    ],
+    "adjectives": [
+        "agile",
+        "fiery"
+    ],
+    "description": "The Eala is a small, agile monstrosity known for its exceptional Dexterity and its fiery breath weapon. It features two wing blades that it utilizes in melee combat, and its enchanting Charisma allows it to affect its surroundings uniquely.",
+    "memorable": "The Eala can unleash a devastating Fire Breath attack and has a powerful Swan Song ability that can incapacitate foes.",
+    "goals": "To effectively use its agility and fire breath to dominate opponents in battle.",
+    "relations": "Could be found with other fire-themed creatures or as a solitary predator.",
+    "environment": "Often found in areas where it can use its fire breath, possibly near flammable environments.",
+    "strengths": "Exceptional agility with high Dexterity, potent fire breath attack with area effect.",
+    "weaknesses": "Lower Intelligence, making it strategically limited.",
+    "attacks": "Can make two Wing Blades melee attacks and unleash a Fire Breath cone attack.",
+    "most_powerful_ability": "Fire Breath attack that deals significant fire damage and can ignite flammable objects.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a range of 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Can sing a plaintive melody to incapacitate enemies when reduced to 0 hit points.",
+        "Can ignite flammable objects and melt soft metals in the area of its fire breath.",
+        "High Dexterity saving throws allow it to evade physical attacks.",
+        "Has average hit points for its challenge rating, allowing for moderate endurance in combat.",
+        "Relies on speed and mobility rather than brute strength."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile creature with fiery breath",
+        "monster that can sing to incapacitate enemies",
+        "fire-breathing monstrosity with wings",
+        "quick flying creature with melee attacks",
+        "creature that ignites flammable objects"
+    ]
+}

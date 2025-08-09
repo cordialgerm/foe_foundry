@@ -1,0 +1,49 @@
+{
+    "name": "Frost-Afflicted",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "cold",
+        "humanoid",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "frosty",
+        "chaotic",
+        "afflicted"
+    ],
+    "description": "The Frost-Afflicted is a medium-sized humanoid characterized by its frost-rimed skin, reflecting its connection to a cold element. It wears leather armor and exhibits a wild demeanor.",
+    "memorable": "It is immune to cold damage and has abilities that enhance its cold attacks, making it a dangerous opponent in combat.",
+    "goals": "To survive in cold environments and retaliate against threats with cold attacks.",
+    "relations": "Other cold-aligned creatures, possible elemental entities.",
+    "environment": "Cold climates or snowy regions.",
+    "strengths": "Immune to cold damage and conditions like exhaustion or petrified.",
+    "weaknesses": "Average charisma and limited defensive capabilities make it vulnerable to certain tactics.",
+    "attacks": "Uses Frigid Punch for melee combat and Frost Bolt for ranged cold damage.",
+    "most_powerful_ability": "Burning Cold allows its cold damage to bypass creature resistances.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 13, allowing it to detect hidden threats.",
+    "skills": "Proficient in perception with a +3 modifier, enhancing its ability to notice hidden creatures.",
+    "additional_information": [
+        "Requires only half the food and drink typical for its size due to Icy Nature.",
+        "Can retaliate with Frigid Flare when hit in melee, causing area cold damage."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast spells that deal cold damage, enhancing its combat effectiveness.",
+    "test_queries": [
+        "humanoid with cold abilities",
+        "frosty monster immune to cold",
+        "chaotic creature from snowy regions",
+        "afflicted humanoid with icy powers",
+        "cold damage dealing skirmisher"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Elder Black Pudding",
+    "creature_type": "Ooze",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 171,
+    "ac": 7,
+    "srd": false,
+    "cr": "8",
+    "movement": "20 ft. walking, climbing, and swimming",
+    "role": null,
+    "tags": [
+        "ooze",
+        "corrosive",
+        "giant"
+    ],
+    "adjectives": [
+        "formidable",
+        "corrosive",
+        "amorphous"
+    ],
+    "description": "The Elder Black Pudding is a gigantic, amorphous ooze that can pass through narrow openings and has a viscous, black appearance. It is capable of climbing surfaces and moving upside down.",
+    "memorable": "Its ability to split into smaller puddings and corrode nonmagical weapons makes it a terrifying opponent.",
+    "goals": "Typically seeks to engulf creatures and defend its territory.",
+    "relations": "May be found alongside other oozes or in areas where rot and decay prevail.",
+    "environment": "Often dwells in dungeons, sewers, or anywhere dark and damp.",
+    "strengths": "Immunities to many damage types and the ability to corrode weapons provide strong defenses.",
+    "weaknesses": "Sunlight sensitivity and its low intelligence prevent it from using complex strategies.",
+    "attacks": "Uses pseudopod attacks to deal bludgeoning and acid damage, while also corroding armor.",
+    "most_powerful_ability": "The ability to split into two smaller puddings when damaged by lightning or slashing, potentially overwhelming foes.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 60 feet, allowing it to detect nearby creatures.",
+    "skills": "Very low passive perception at 8, highlighting its lack of insight.",
+    "additional_information": [
+        "Can pass through openings as narrow as 1 inch.",
+        "Any creature touching it takes acid damage.",
+        "Nonmagical weapons made of metal or wood become damaged over time.",
+        "Resilient due to not needing air or sleep.",
+        "Can move upside down on ceilings."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large black ooze that splits",
+        "corrosive monster with amorphous form",
+        "puddle creature that absorbs physical attacks",
+        "giant ooze immune to many damage types",
+        "slime monster sensitive to sunlight"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Weeping Treant",
+    "creature_type": "Plant",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 105,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking speed",
+    "role": "Defender",
+    "tags": [
+        "treant",
+        "plant",
+        "tank",
+        "acid"
+    ],
+    "adjectives": [
+        "huge",
+        "acidic",
+        "resilient"
+    ],
+    "description": "The Weeping Treant is a large plant creature with thick, dark sap streaming continuously down its face and trunk, giving it a somber appearance.",
+    "memorable": "Its ability to ooze acidic sap creates dangerous situations for melee attackers, while it can also communicate with plants.",
+    "goals": "To protect its forest and engage in strategic combat as a frontline defender.",
+    "relations": "It may be encountered alongside other plant creatures or in forest environments.",
+    "environment": "Typically found in forests or overgrown areas.",
+    "strengths": "High hit points and solid armor class make it resistant to damage; can deal significant bludgeoning and acid damage.",
+    "weaknesses": "Vulnerable to fire damage and has low Dexterity, leading to less agility in combat.",
+    "attacks": "The Weeping Treant can make powerful slam attacks that deal bludgeoning damage along with acidic damage, or it can throw rocks from a distance.",
+    "most_powerful_ability": "Weep Acid: Causes continuous acid damage to creatures in close proximity.",
+    "equipment": null,
+    "senses": "Has darkvision out to 60 feet and a passive Perception score of 13.",
+    "skills": "Has a proficiency in Insight with a +6 bonus.",
+    "additional_information": [
+        "Deals double damage to objects and structures as a Siege Monster.",
+        "Can converse with plants through the Speak with Plants ability.",
+        "Acidic tears create hazards for attackers.",
+        "Can perform multiattacks with both melee and ranged options.",
+        "Melee attacks inflict lingering acid damage over time."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge plant creature with acidic tears",
+        "treant that communicates with plants",
+        "defensive monster with high hit points",
+        "vine-covered monster that deals acid damage",
+        "forest guardian with bludgeoning attacks"
+    ]
+}

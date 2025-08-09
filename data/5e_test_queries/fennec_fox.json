@@ -1,0 +1,25 @@
+{
+    "name": "Fennec Fox",
+    "queries": [
+        {
+            "query": "tiny desert creature with keen senses and high speed",
+            "variant": "small animal from the desert with great senses and fast speed"
+        },
+        {
+            "query": "fragile fox that excels in stealth and evasion",
+            "variant": "delicate fox known for its stealthy movements and evading attacks"
+        },
+        {
+            "query": "creature with darkvision and ability to burrow in the ground",
+            "variant": "animal that can see in darkness and can dig into the earth"
+        },
+        {
+            "query": "fast animal with poor melee strength but high stealth",
+            "variant": "quick creature that struggles in close combat but is very stealthy"
+        },
+        {
+            "query": "beast that uses keen hearing to avoid detection during nighttime",
+            "variant": "animal that relies on sharp hearing to stay hidden in the dark"
+        }
+    ]
+}

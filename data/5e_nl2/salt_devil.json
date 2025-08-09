@@ -1,0 +1,53 @@
+{
+    "name": "Salt Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 13,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "summoner",
+        "devil"
+    ],
+    "adjectives": [
+        "formidable",
+        "deceptive",
+        "dangerous"
+    ],
+    "description": "The Salt Devil is a medium-sized fiend with a formidable appearance, showcasing a salt-encrusted hide that protects it in battle. Its notable physical prowess is highlighted by an intimidating presence with bright and keen eyes.",
+    "memorable": "The Salt Devil's ability to drain water and summon allies makes it a persistent threat on the battlefield.",
+    "goals": "To dominate foes and control the battlefield through tactical teleportation and summoning minions.",
+    "relations": "Often seen commanding lesser fiends like gnolls, it operates as a commander or elite soldier within fiendish hierarchies.",
+    "environment": "Usually found in desolate, arid regions or places related to water, such as salt flats or coastal areas.",
+    "strengths": "Resistant to fire and poison, with Magic Resistance and the ability to drain life from enemies.",
+    "weaknesses": "Vulnerable to silvered weapons, which can penetrate its defenses, making it easier to defeat.",
+    "attacks": "Utilizes a deadly combination of scimitar slashing attacks and a water-draining claw that inflicts necrotic damage.",
+    "most_powerful_ability": "Water-Draining Claw that not only inflicts damage but can also exhaust victims, debilitating them further.",
+    "equipment": null,
+    "senses": "Boasts Devil's Sight to see through magical darkness, enhancing its combat effectiveness.",
+    "skills": "Demonstrates proficiency in Perception and Stealth, making it adept at ambush tactics.",
+    "additional_information": [
+        "Can teleport up to 120 feet, allowing for strategic repositioning.",
+        "Can summon 1d4 gnolls or potentially another Salt Devil once per day.",
+        "Its Salt-Encrusted Hide deals damage to those who make melee attacks against it.",
+        "Possesses a high Constitution and Strength, augmenting its durability and combat effectiveness.",
+        "Known for being manipulative, using telepathy to command summoned allies."
+    ],
+    "damage_types": [
+        "necrotic",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "salt-covered fiend that drains life",
+        "manipulative devil that summons gnolls",
+        "dangerous creature with teleportation and summoning",
+        "fiend that hangs around coastal regions",
+        "medium fiend with slashing attacks and magic resistance"
+    ]
+}

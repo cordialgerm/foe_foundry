@@ -1,6 +1,8 @@
 <MonsterName/>Savager</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Savager is a formidable large beast that embodies primal ferocity and relentless aggression, making it a dangerous adversary in combat. With a neutral evil alignment, it demonstrates ruthless behavior in pursuit of its goals. The Savager has impressive physical attributes, boasting high Strength and Constitution, which contribute to its devastating melee attacks and durability in battle. However, it is limited in Dexterity and Intelligence, which affects its speed and cunning. Noteworthy features include its ability to resist damage from nonmagical attacks, making it a tough opponent for less potent combatants, along with special abilities that enhance its attack potency and defensive measures. Overall, the Savager's power lies in its raw physicality and ability to inflict continuous damage while remaining resilient.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In terms of actions, the Savager can make a series of attacks through its "Multi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Savager
 
 *Large* *Beast* *Neutral Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The savager makes one Bite attack and two Claw attacks. If both Claw attacks hit one creature, the target must succeed on a DC 15 Strength saving throw or take 9 (2d8) slashing damage as the savager rips into the target.
 - **Bite:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 19 (2d12 + 6) piercing damage.
 - **Claw:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.
+</statblock>
 
 

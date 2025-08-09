@@ -1,0 +1,25 @@
+{
+    "name": "Sprite",
+    "queries": [
+        {
+            "query": "tiny fey creature with insect-like wings that lives in enchanted forests",
+            "variant": "fey creature that is tiny and has insect wings, found in magical forests"
+        },
+        {
+            "query": "magical creature that can turn invisible and uses poison arrows",
+            "variant": "creature that uses arrows with poison and has the ability to become invisible"
+        },
+        {
+            "query": "playful fey that protects nature and has sharp senses",
+            "variant": "nature-protecting fey known for its playful behavior and keen senses"
+        },
+        {
+            "query": "stealthy tiny creature with low hit points and high dexterity",
+            "variant": "small creature with exceptional stealth, low health, and great agility"
+        },
+        {
+            "query": "fey creature that communicates with plants and has emotional sensing",
+            "variant": "creature from the fey that can talk to plants and senses emotions"
+        }
+    ]
+}

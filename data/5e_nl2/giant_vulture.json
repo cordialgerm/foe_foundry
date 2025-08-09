@@ -1,0 +1,50 @@
+{
+    "name": "Giant Vulture",
+    "creature_type": "Beast",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 22,
+    "ac": 10,
+    "srd": true,
+    "cr": "1",
+    "movement": "walk 10 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "scavenger",
+        "predator",
+        "aggressive"
+    ],
+    "adjectives": [
+        "massive",
+        "intelligent",
+        "aggressive"
+    ],
+    "description": "Large bird of prey with bald head, hooked beak, and sharp talons. Notable wingspan over 10 feet.",
+    "memorable": "Aggressive scavenger that hunts in groups and attacks weakened prey.",
+    "goals": "Primarily scavenges carrion but will attack if provoked or opportunity arises.",
+    "relations": "Often found in groups, potentially with other large scavenger birds.",
+    "environment": "Deserts or savannahs, often seen circling high in search of carrion.",
+    "strengths": "Keen senses for detecting carrion and advantage on attacks when in proximity to allies.",
+    "weaknesses": "Low armor class and hit points make it vulnerable to focused attacks.",
+    "attacks": "Uses beak and talons to deal piercing and slashing damage.",
+    "most_powerful_ability": "Carrion Sense allows it to locate dead creatures and undead within 60 feet.",
+    "equipment": null,
+    "senses": "Possesses Keen Sight and Smell, granting advantage on perception checks based on these senses.",
+    "skills": "Notably proficient in perception with a +3 bonus, demonstrating acute awareness of surroundings.",
+    "additional_information": [
+        "Uses Pack Tactics to gain advantage on attack rolls against nearby foes.",
+        "Defensive Bile ability deters melee attackers by causing damage and incapacitation.",
+        "Intelligent yet malevolent, known for haunting weakened prey.",
+        "Striking features include sharp talons and a notable wingspan.",
+        "Can attack with both beak and talons in a single turn."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive scavenging bird with talons",
+        "giant bird that hunts in groups",
+        "vulture with keen sense of smell",
+        "predatory giant vulture in savannah",
+        "bird that attacks weakened prey and flies"
+    ]
+}

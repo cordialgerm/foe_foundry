@@ -1,0 +1,56 @@
+{
+    "name": "Spirit Naga",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 75,
+    "ac": 15,
+    "srd": true,
+    "cr": "8",
+    "movement": "40 ft. walking, swim 40 ft.",
+    "role": "null",
+    "tags": [
+        "spellcaster",
+        "necromancer",
+        "rejuvenation",
+        "undead"
+    ],
+    "adjectives": [
+        "serpentine",
+        "humanoid-headed",
+        "malevolent",
+        "potent",
+        "formidable"
+    ],
+    "description": "A serpentine creature with a humanoid head, the Spirit Naga is known for its mastery of necromancy and dark magic, often serving as rulers of ancient ruins or hidden temples.",
+    "memorable": "Possesses the ability to rejuvenate, returning to life if killed; commands legions of undead.",
+    "goals": "Crave power and control; rule ancient ruins or hidden places with dark magic.",
+    "relations": "Related to other Nagas and often encountered with undead minions.",
+    "environment": "Typically found in ancient ruins or hidden temples.",
+    "strengths": "Skilled spellcaster capable of powerful enchantments and commands necrotic damage through weapon attacks.",
+    "weaknesses": "Dependent on spell components; can be vulnerable if outmaneuvered or if its spells are disrupted.",
+    "attacks": "Melee attack with bite causing piercing and poison damage, and can spit poison for ranged damage.",
+    "most_powerful_ability": "Rejuvenation allows it to come back to life after being slayed, making it a persistent threat.",
+    "equipment": null,
+    "senses": "Possesses a perception score of 15.",
+    "skills": "Proficient in Stealth, enabling exceptional ability to hide.",
+    "additional_information": [
+        "Immune to poison damage and charmed condition.",
+        "Casts powerful spells like Lightning Bolt and Blight.",
+        "Can teleport and hide as a bonus action.",
+        "Magical attacks deal additional necrotic damage.",
+        "Has advantages in Dexterity and Constitution saving throws."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic"
+    ],
+    "spellcasting": "9th-level spellcaster with a variety of spells including dominate person, hypnotic pattern, and lightning bolt.",
+    "test_queries": [
+        "serpentine creature wielding dark magic",
+        "undead commanding serpent monster",
+        "powerful spellcaster in ancient ruins",
+        "monster that regenerates after defeat",
+        "malevolent naga with necromantic abilities"
+    ]
+}

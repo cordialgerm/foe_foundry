@@ -1,0 +1,53 @@
+{
+    "name": "Ghoulsteed",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "large",
+        "aggressive",
+        "mobility"
+    ],
+    "adjectives": [
+        "dangerous",
+        "aggressive",
+        "tactical"
+    ],
+    "description": "The Ghoulsteed is a large undead creature with a robust presence, capable of swift movements and strong attacks. It is characterized by a horrifying appearance typical of undead horses, often associated with ghoul-like features.",
+    "memorable": "Its ability to pounce and knock opponents prone, combined with Undead Fortitude, makes it a formidable foe in combat.",
+    "goals": "To engage and incapacitate adventurers while sustaining itself through combat.",
+    "relations": "Related to ghouls and other undead creatures, it may be found alongside them in battle or haunting specific locales.",
+    "environment": "Commonly found in dark, eerie settings where undead roam, such as graveyards or haunted lands.",
+    "strengths": "High physical strength and the ability to regain temporary hit points with successful attacks.",
+    "weaknesses": "Low Intelligence and Charisma scores limit its effectiveness in social interactions and intelligence-based tasks.",
+    "attacks": "Can make two powerful bite attacks that deal substantial damage, knocking foes prone with its Pounce ability.",
+    "most_powerful_ability": "Undead Fortitude allows it to maintain presence in combat despite severe injuries.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, enhancing its awareness in low light.",
+    "skills": "Has a +2 bonus to Perception, making it somewhat aware of its surroundings.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Pounce ability creates tactical advantages by knocking opponents prone.",
+        "Sprint ability increases its movement options significantly.",
+        "Regains temporary hit points with successful bite attacks.",
+        "Fearsome presence as an undead creature in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead horse with pounce ability",
+        "ghoulsteed mobility and attack tactics",
+        "undead creature that knocks down opponents",
+        "Ghoulsteed's Undead Fortitude feature",
+        "fast undead steed in combat situations"
+    ]
+}

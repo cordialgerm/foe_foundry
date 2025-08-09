@@ -1,0 +1,25 @@
+{
+    "name": "Faux-Garou",
+    "queries": [
+        {
+            "query": "construct that can change shape and hunts specific targets",
+            "variant": "shape-shifting construct that hunts specific creatures"
+        },
+        {
+            "query": "creature with necrotic weapon attacks and frightening gaze ability",
+            "variant": "monster with ability that frightens and attacks with necrotic damage"
+        },
+        {
+            "query": "medium construct immune to charming and exhausting effects",
+            "variant": "medium creature that can't be charmed or exhausted"
+        },
+        {
+            "query": "creature with darkvision that doesn't need air or food",
+            "variant": "monster with darkvision that survives without air or food"
+        },
+        {
+            "query": "powerful construct with low intelligence and high constitution",
+            "variant": "strong creature with  high con and low int"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Ghast",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 36,
+    "ac": 13,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. and climb 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "aberration",
+        "monster"
+    ],
+    "adjectives": [
+        "decayed",
+        "emaciated",
+        "malevolent"
+    ],
+    "description": "A ghast is an emaciated undead creature with a stench of death, burning eyes, and a presence that embodies terror.",
+    "memorable": "Known for its paralyzing claw attacks and foul stench that can incapacitate multiple foes in an encounter.",
+    "goals": "To hunt living creatures and command packs of ghouls in savage hunts.",
+    "relations": "Often leads groups of ghouls; considered a stronger version of typical ghouls.",
+    "environment": "Shadows and dark places, often lurking in graveyards or abandoned ruins.",
+    "strengths": "Possesses a paralyzing touch and toxic stench, making it a formidable ambusher.",
+    "weaknesses": "Vulnerable to radiant damage and effects that disrupt undead, with limited hit points.",
+    "attacks": "Paralyzing claw and bite attacks that inflict slashing and piercing damage.",
+    "most_powerful_ability": "Paralyzing Claw can immobilize targets, severely impacting combat encounters.",
+    "equipment": null,
+    "senses": "Immune to poison damage and the poisoned condition, with a heightened inability to experience exhaustion.",
+    "skills": "Has a passive Perception of 10, making it average in detecting enemies.",
+    "additional_information": [
+        "Does not require air or sleep, but needs to consume raw meat.",
+        "Possesses the ability to climb difficult surfaces with ease.",
+        "Stench ability can poison those nearby, affecting enemy positioning.",
+        "Gains advantage on saving throws against effects that would turn undead.",
+        "Absorbs the ability to contract ghoul hunger through melee attacks."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with paralyzing touch",
+        "emaciated monster that emits foul stench",
+        "medium-sized ghoul leading undead hunts",
+        "ghast with unique abilities and mobility",
+        "relentless predator that feasts on the living"
+    ]
+}

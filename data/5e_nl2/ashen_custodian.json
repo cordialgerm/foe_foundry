@@ -1,0 +1,52 @@
+{
+    "name": "Ashen Custodian",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 99,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "guardian",
+        "fire",
+        "nature"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "exceptional",
+        "versatile"
+    ],
+    "description": "The Ashen Custodian is a Medium-sized fey creature with exceptional agility and strong magical abilities. It stands out with its fiery features and serves as a guardian of forest sanctity.",
+    "memorable": "It effectively manipulates fire on the battlefield and possesses strong magical resistance, making it a challenging adversary.",
+    "goals": "To protect the forest's sanctity and control the element of fire.",
+    "relations": "May be encountered alongside other forest guardians or fire elementals.",
+    "environment": "Typically found in forested areas or places with significant fire presence.",
+    "strengths": "Immunity to fire damage and resistance to nonmagical physical damage.",
+    "weaknesses": "Vulnerable to magical damage.",
+    "attacks": "Utilizes Cleansing Strike, a melee attack dealing bludgeoning and fire damage, with additional effects against plant creatures.",
+    "most_powerful_ability": "Fire Controller allows manipulation of fires within a designated area as a bonus action.",
+    "spellcasting": "Innate spellcasting capability with access to spells like burning hands and wall of fire.",
+    "senses": "Possesses a passive perception of 15, indicating alertness to surroundings.",
+    "skills": "Skilled in nature and perception, enhancing its abilities to navigate its environment.",
+    "additional_information": [
+        "Cleansing Strike can ignite targets, causing continuous fire damage.",
+        "Warming Presence deals fire damage to nearby hostile creatures.",
+        "Can heal friendly creatures with additional hit points when they regain health.",
+        "Has a Magic Resistance trait, providing advantage on saving throws against spells.",
+        "Can manipulate fire, affecting battlefield conditions significantly."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "test_queries": [
+        "forest guardian creature",
+        "fire manipulating fey",
+        "treacherous nature spirit",
+        "magical fey with fire abilities",
+        "agile fire guardian"
+    ]
+}

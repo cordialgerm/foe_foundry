@@ -1,0 +1,25 @@
+{
+    "name": "River Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that can breathe water and fly fast",
+            "variant": "dragon that is medium-sized and breathes water while flying quickly"
+        },
+        {
+            "query": "water-loving dragon with high agility and bludgeoning breath attack",
+            "variant": "dragon that loves water, has great agility, and can attack with a bludgeoning breath"
+        },
+        {
+            "query": "aquatic dragon with resistance to nonmagical weapons and ability to swim",
+            "variant": "dragon that is aquatic, resistant to normal weapons, and can swim"
+        },
+        {
+            "query": "mobile dragon that avoids opportunity attacks and lives near water",
+            "variant": "dragon that is very mobile, can evade opportunity attacks, and inhabits watery areas"
+        },
+        {
+            "query": "dragon with tremorsense in water and essence link to a landmark",
+            "variant": "dragon that senses vibrations in water and is spiritually connected to a specific place"
+        }
+    ]
+}

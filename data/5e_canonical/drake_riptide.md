@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Riptide</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>231</HP>
 <summary>The Riptide Drake is a large and imposing dragon with a lawful evil alignment known for its formidable presence in aquatic environments. With a well-rounded role as both a melee and ranged combatant, it utilizes its significant hit points and natural armor to withstand attacks, making it a tough opponent for even seasoned adventurers. With a challenge rating of 11, it can poses a substantial threat with its powerful abilities, particularly in water where it excels. Its weaknesses are primarily associated with its limited dexterity and reliance on an aquatic setting to unleash its full range of capabilities. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, the Riptide Drake is capable of manipulating water currents a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Riptide
 
 *Large* *Dragon* *lawful evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Manipulate Currents:** While underwater changes water flow within 60' of it. Chooses one of below which lasts until start of its next turn.A 20' cube of rushing water forms on a point drake can see in the water. The cube’s space is difficult terrain and a creature that starts its turn swimming in the area must make DC 17 Str save or be pushed out of the cube directly away from drake.The current shoots in a 60' long 10 ft. wide line from drake in a direction it chooses. Each creature in area: pushed up to 15 ft. away from drake in a direction following the line (DC 17 Str negates).The drake takes the Dash action.
 
 
+</statblock>
 
 

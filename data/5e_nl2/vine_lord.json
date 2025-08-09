@@ -1,0 +1,52 @@
+{
+    "name": "Vine Lord",
+    "creature_type": "Plant",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "magic",
+        "nature"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "resilient"
+    ],
+    "description": "The Vine Lord embodies the essence of nature's wrath, characterized by its connection to plant life and ability to manipulate its environment.",
+    "memorable": "Its ability to inflict debilitating diseases and regenerate in forests makes it a dangerous adversary.",
+    "goals": "Preservation and control of its territory.",
+    "relations": "Commands tendril puppets and can summon allied plant creatures.",
+    "environment": "Typically found in dense forests or natural terrains.",
+    "strengths": "High Dexterity and magical abilities enhance its combat and tactical maneuvers.",
+    "weaknesses": "Vulnerable to fire damage, which significantly impairs its capabilities.",
+    "attacks": "Can perform a Tendril attack for slashing and poison damage, alongside Thorned Slam attacks for bludgeoning and piercing damage.",
+    "most_powerful_ability": "Vine Seed, inflicting a debilitating disease that reduces hit points and imposes disadvantage on attack rolls and ability checks.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, making it adept in darkness and natural environments.",
+    "skills": "Resilient to magic with advantages on saving throws against spells and magical effects.",
+    "additional_information": [
+        "Green Regeneration allows it to heal in forests.",
+        "Root Mind provides telepathic communication with its puppets.",
+        "Woodland Walk allows it to traverse plant-heavy terrain effortlessly.",
+        "Forest Protectors ability allows summoning of ally plant creatures.",
+        "Condition immunity to blinded and deafened."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that can regenerate in forests",
+        "Vine Lord with magical abilities in nature",
+        "creature that inflicts pain with vine seed",
+        "master of plants with telepathic powers",
+        "tactical plant monster with summons"
+    ]
+}

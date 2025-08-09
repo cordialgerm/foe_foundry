@@ -1,0 +1,25 @@
+{
+    "name": "Necrotech Thunderer",
+    "queries": [
+        {
+            "query": "huge undead monster with necromantic powers that deals high damage",
+            "variant": "large undead creature with powerful necromancy that inflicts heavy damage"
+        },
+        {
+            "query": "creature that can attack structures and is vulnerable to magic",
+            "variant": "being that can strike buildings and is weak against spells"
+        },
+        {
+            "query": "slow but strong undead monster resistant to non-magic damage",
+            "variant": "sluggish yet powerful undead being that defends well against non-magical attacks"
+        },
+        {
+            "query": "undead creature immune to necrotic damage and capable of blindsight",
+            "variant": "undead being that cannot be harmed by necrotic attacks and has blindsight"
+        },
+        {
+            "query": "massive creature with trample attack and high hit points in combat",
+            "variant": "giant monster with trampling ability and significant health during battles"
+        }
+    ]
+}

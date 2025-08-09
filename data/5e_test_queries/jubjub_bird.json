@@ -1,0 +1,25 @@
+{
+    "name": "Jubjub Bird",
+    "queries": [
+        {
+            "query": "large colorful bird that disrupts with a shrill screech and has poison resistance",
+            "variant": "big colorful bird with a screech that disrupts and resistance to poison"
+        },
+        {
+            "query": "bird creature that grapples and deals bludgeoning damage with high-pitched screams",
+            "variant": "creature bird that grapples and inflicts bludgeoning damage with loud screams"
+        },
+        {
+            "query": "highly independent beast that avoids charm and is dangerous in combat",
+            "variant": "independent beast that dodges charm and is lethal in fights"
+        },
+        {
+            "query": "creature with low intelligence that can intimidate foes and has a unique attack style",
+            "variant": "monster with poor intelligence that intimidates enemies and has a special attack method"
+        },
+        {
+            "query": "predatory large bird with a powerful bite and poison attack",
+            "variant": "big predatory bird with a strong bite and poison-inflicting attack"
+        }
+    ]
+}

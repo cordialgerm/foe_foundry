@@ -1,0 +1,25 @@
+{
+    "name": "Remorhaz Spawn",
+    "queries": [
+        {
+            "query": "large fiery monster that grapples intruders",
+            "variant": "big fire creature that grips invaders"
+        },
+        {
+            "query": "monstrosity with heated body ability living underground",
+            "variant": "creature that has heated body power and dwells beneath ground"
+        },
+        {
+            "query": "cold and fire immune monster with strong melee attacks",
+            "variant": "creature immune to cold and fire with powerful physical strikes"
+        },
+        {
+            "query": "burrowing creature with high hit points and multiple attacks",
+            "variant": "digging monster possessing significant health and several strikes"
+        },
+        {
+            "query": "Remorhaz Spawn appearance and combat strategies",
+            "variant": "look of Remorhaz Spawn and its fight tactics"
+        }
+    ]
+}

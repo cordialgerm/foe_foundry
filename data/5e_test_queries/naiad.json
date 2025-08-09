@@ -1,0 +1,25 @@
+{
+    "name": "Naiad",
+    "queries": [
+        {
+            "query": "water-loving fey creature with healing abilities",
+            "variant": "fey creature that loves water and can heal"
+        },
+        {
+            "query": "graceful medium fey that can breathe underwater",
+            "variant": "medium fey that gracefully breathes underwater"
+        },
+        {
+            "query": "beautiful aquatic monster that interacts with nature",
+            "variant": "aquatic creature that is beautiful and communicates with nature"
+        },
+        {
+            "query": "monster vulnerable to fire that can swim and walk",
+            "variant": "creature weak to fire that walks and swims"
+        },
+        {
+            "query": "versatile fey with magical resistance and stealth skills",
+            "variant": "stealthy fey with magic resistance and versatility"
+        }
+    ]
+}

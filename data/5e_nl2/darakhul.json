@@ -1,0 +1,54 @@
+{
+    "name": "Darakhul",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 18,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "disease",
+        "poison",
+        "stealth",
+        "paralysis"
+    ],
+    "adjectives": [
+        "undead",
+        "cunning",
+        "malevolent",
+        "disease-inflicting"
+    ],
+    "description": "The Darakhul is a medium undead creature with a gaunt appearance, characterized by its mastery of disguise and a strong odor that afflicts nearby foes.",
+    "memorable": "Notable for its ability to inflict diseases and paralysis, making it a formidable foe for unprepared adventurers.",
+    "goals": "Typically seeks to weaken or subdue living creatures through disease and stealth tactics.",
+    "relations": "May be encountered in the company of ghouls or other undead creatures.",
+    "environment": "Often found in dark or desolate areas, such as graveyards or abandoned buildings.",
+    "strengths": "Immunity to poison damage and conditions like exhaustion and charm; possesses stealth abilities and multiple debilitating attacks.",
+    "weaknesses": "Vulnerable to sunlight, which causes disadvantage on attack rolls and perception checks.",
+    "attacks": "Can perform a multiattack including a bite that inflicts disease, a claw attack with paralysis potential, and a piercing war pick attack.",
+    "most_powerful_ability": "The ability to inflict paralysis with its claw attack, significantly reducing an opponent's combat effectiveness.",
+    "equipment": "Scale mail and shield.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Excels in Deception and Stealth, making it capable of disguising itself effectively and ambushing unsuspecting foes.",
+    "additional_information": [
+        "Requires no air or sleep, making it tireless.",
+        "Has a stench ability that can poison nearby creatures.",
+        "Gains advantage on saving throws against being turned due to its Turning Defiance trait.",
+        "Can be disguised as a living creature to deceive others."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that inflicts paralysis",
+        "stealthy monster with disease abilities",
+        "medium undead known for disguise and stench",
+        "creature vulnerable to sunlight attacks",
+        "deadly undead with claw and bite attacks"
+    ]
+}

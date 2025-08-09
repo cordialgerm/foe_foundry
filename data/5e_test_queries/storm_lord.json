@@ -1,0 +1,25 @@
+{
+    "name": "Storm Lord",
+    "queries": [
+        {
+            "query": "huge elemental creature that commands storms and lightning",
+            "variant": "elemental monster that controls storms and lightning bolts"
+        },
+        {
+            "query": "storm elemental immune to poison and can create tempest",
+            "variant": "poison-immune storm monster with tempest abilities"
+        },
+        {
+            "query": "powerful storm creature with devastating area control and melee attacks",
+            "variant": "strong storm lord with area control and massive melee damage"
+        },
+        {
+            "query": "creature with high Armor Class and hit points that dominates in combat",
+            "variant": "monster with significant hit points and high AC that excels in fights"
+        },
+        {
+            "query": "elemental that uses thunder clap and melee attacks to defeat foes",
+            "variant": "monster using thunder clap ability and slam attacks against enemies"
+        }
+    ]
+}

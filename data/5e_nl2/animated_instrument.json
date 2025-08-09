@@ -1,0 +1,52 @@
+{
+    "name": "Animated Instrument",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 17,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "fly 30 ft.",
+    "role": "Support",
+    "tags": [
+        "musical",
+        "construct",
+        "support"
+    ],
+    "adjectives": [
+        "animated",
+        "musical",
+        "entertaining"
+    ],
+    "description": "The Animated Instrument resembles a normal musical instrument when motionless. It can fly and has a delicate construction, primarily serving as a support character in combat.",
+    "memorable": "Its ability to influence creatures through music makes it a unique ally on the battlefield.",
+    "goals": "To support allies by enhancing their performance and incapacitating opponents with music.",
+    "relations": "Often works alongside adventurers or other constructs.",
+    "environment": "Commonly found in areas where music is present, such as theaters or festivals.",
+    "strengths": "Immunities to poison and psychic damage. Highly effective in influencing creature behavior through music.",
+    "weaknesses": "Low physical stats make it ineffective in direct confrontations. Vulnerable to antimagic effects.",
+    "attacks": "Can perform melee and ranged attacks, dealing bludgeoning and thunder damage, respectively.",
+    "most_powerful_ability": "Spirited Solo allows it to incapacitate creatures within range while enhancing allies' performance.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 60 feet, making it capable of detecting creatures without sight.",
+    "skills": "Skilled in perception, allowing it to notice important details.",
+    "additional_information": [
+        "Immunities to various conditions such as blinded, charmed, and frightened.",
+        "Functions as a normal musical instrument when motionless.",
+        "Does not require air, food, drink, or sleep.",
+        "Can incapacitate creatures temporarily through its music.",
+        "Provides a bonus to attack rolls and ability checks for allies."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny flying musical construct",
+        "animated instrument support abilities",
+        "constructs that influence with music",
+        "creatures with magic resistance",
+        "musical allies in combat"
+    ]
+}

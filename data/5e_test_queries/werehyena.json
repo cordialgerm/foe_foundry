@@ -1,0 +1,25 @@
+{
+    "name": "Werehyena",
+    "queries": [
+        {
+            "query": "humanoid monster that can turn into a hyena or gnoll and uses stealth",
+            "variant": "humanoid creature that shifts to hyena or gnoll and excels in stealth"
+        },
+        {
+            "query": "chaotic evil creature that deals lycanthropy damage and forms a hyena",
+            "variant": "chaotic evil being that inflicts lycanthropy and can transform into a hyena"
+        },
+        {
+            "query": "creature with keen senses that fights in hybrid form and is challenged by silver",
+            "variant": "monster with enhanced senses that combats in hybrid shape and is weak against silver"
+        },
+        {
+            "query": "cunning humanoid that is vulnerable to non-silver attacks and has multiple attack forms",
+            "variant": "shrewd humanoid creature weak to non-silver damage and possessing several attack methods"
+        },
+        {
+            "query": "monster that enjoys ambushing and can morph into different forms during combat",
+            "variant": "creature that loves to ambush and can change forms while fighting"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Beheaded Vengeful Spirit</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (Angry Defiance)</AC>
+<HP/>54</HP>
 <summary>The Beheaded Vengeful Spirit is a formidable Medium Undead creature that embodies rage and vengeance, with a particular focus on manipulating emotions during combat. Bearing a Challenge Rating of 4, it provides 1,100 experience points upon defeat. With an impressive Armor Class of 15 and a total of 54 hit points, this spirit is difficult to strike down, especially with its special ability called Angry Defiance, which enhances its defensive capabilities. It excels in certain damage immunities, particularly to cold, necrotic, and poison damage, while also resisting many forms of physical harm. However, it is not particularly strong in physical attributes, especially Strength, where it receives a very bad modifier (-2). Instead, this spirit thrives on its high Charisma value, allowing it to unleash powerful psychic attacks that can turn the tide of battle. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Beheaded Vengeful Spirit is a terrifying adversary, harnessing emot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beheaded Vengeful Spirit
 
 *Medium* *Undead* *Any Alignment*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 
 - **Essence of Rage:** Melee or Ranged Spell Attack: +6 to hit, reach 5 ft. or range 30 ft., one creature. Hit: 22 (4d8 + 4) psychic damage, and the target must succeed on a DC 14 Charisma saving throw or be enraged until the end of its next turn. While enraged, the target has advantage on melee attack rolls and must move to and attack the nearest creature other than the spirit. In addition, attack rolls against the enraged target have advantage.
 - **Decapitation (1/Day):** The vengeful spirit makes a quick, cutting gesture at one creature it can see within 30 feet of it that has a head and that is below half its hp maximum. The target must make a DC 14 Constitution saving throw, taking 28 (8d6) slashing damage on a failed save, or half as much damage on a successful one. A target that fails the saving throw also has one of its heads cut off. The creature dies if it can’t survive without the lost head.
+</statblock>
 
 

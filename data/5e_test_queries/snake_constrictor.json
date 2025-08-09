@@ -1,0 +1,25 @@
+{
+    "name": "Constrictor Snake",
+    "queries": [
+        {
+            "query": "large ambush predator snake that can grapple and constrict",
+            "variant": "big snake that ambushes prey and grapples with constriction"
+        },
+        {
+            "query": "snake with bludgeoning and piercing attacks found in water",
+            "variant": "snake attacks with piercing and bludgeoning, lives in water"
+        },
+        {
+            "query": "snake that can move in water and land with strong grappling ability",
+            "variant": "snake that moves in water and on land, has great grappling skills"
+        },
+        {
+            "query": "high stealth snake with strong constrict action in combat",
+            "variant": "stealthy snake that excels in combat with strong constriction moves"
+        },
+        {
+            "query": "snake that excels at restraining prey and has decent resilience",
+            "variant": "snake good at keeping prey restrained and possesses moderate resilience"
+        }
+    ]
+}

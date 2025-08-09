@@ -1,0 +1,52 @@
+{
+    "name": "Cave Mimic",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 174,
+    "ac": 13,
+    "srd": false,
+    "cr": "7",
+    "movement": "10 feet walking, 20 feet burrowing",
+    "role": "Ambusher",
+    "tags": [
+        "monstrosity",
+        "ambush",
+        "underground"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "deceptive",
+        "sticky"
+    ],
+    "description": "The Cave Mimic has the ability to blend in with its surroundings as an object or terrain feature, appearing as an innocuous part of the environment.",
+    "memorable": "Its ability to grapple and adhere to creatures makes it particularly dangerous, as unsuspecting adventurers can find themselves trapped.",
+    "goals": "To ambush unsuspecting creatures and create chaos on the battlefield.",
+    "relations": "Related to other mimics and creatures that dwell underground; it may serve as a guard or a trap for more intelligent masterminds.",
+    "environment": "Typically found in caves and underground tunnels.",
+    "strengths": "High Strength (20) and Constitution (18) provide both offensive and defensive capabilities.",
+    "weaknesses": "Low Dexterity (8) and Intelligence (5) make it clumsy and less strategic in combat.",
+    "attacks": "Can attack with multiple pseudopods, dealing bludgeoning damage and using its adhesive ability to grapple targets.",
+    "most_powerful_ability": "Adhesive ability allows it to entrap and grapple anything that touches it.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, allowing it to detect movement through vibrations.",
+    "skills": "Has proficiency in perception, aiding its awareness of the environment.",
+    "additional_information": [
+        "Can change shape into any gargantuan object.",
+        "Able to burrow through solid rock, leaving a tunnel.",
+        "Has an ambush ability due to its False Appearance.",
+        "Can launch harpoon-like pseudopods that inflict piercing damage.",
+        "Immunities to acid damage and being knocked prone."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan monster that blends in",
+        "sticky creature that ambushes adventurers",
+        "monster that creates tunnels in rock",
+        "monster that adheres to its victims",
+        "Cave Mimic abilities and tactics"
+    ]
+}

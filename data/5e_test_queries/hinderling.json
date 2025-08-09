@@ -1,0 +1,25 @@
+{
+    "name": "Hinderling",
+    "queries": [
+        {
+            "query": "small fey creature that causes mischief and is agile",
+            "variant": "little fey monster that creates chaos and is quick"
+        },
+        {
+            "query": "chaotic neutral fey that evades confrontations and can rejuvenate",
+            "variant": "fey with chaotic alignment that dodges fights and can come back to life"
+        },
+        {
+            "query": "fey with aura of misfortune that hinders attacks and has darkvision",
+            "variant": "fey creature that has misfortune aura and can see in dark"
+        },
+        {
+            "query": "small mischievous monster that moves through larger creatures and makes them fall",
+            "variant": "tiny naughty monster that can pass through big creatures and cause them to stumble"
+        },
+        {
+            "query": "creature known for stolen belongings attack and nimble escape ability",
+            "variant": "monster with the stolen possessions attack and quick escape skill"
+        }
+    ]
+}

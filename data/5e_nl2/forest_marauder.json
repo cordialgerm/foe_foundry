@@ -1,0 +1,55 @@
+{
+    "name": "Forest Marauder",
+    "creature_type": "Giant",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "giant",
+        "ambush",
+        "forest",
+        "stealth"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "stealthy",
+        "chaotic"
+    ],
+    "description": "The Forest Marauder is a large giant with chaotic features, embodying chaotic evil. It is equipped with natural armor and wields a Boar Spear.",
+    "memorable": "Unique for its ambush tactics and powerful melee attacks in forested terrain.",
+    "goals": "To hunt and ambush adventurers in its forest territory.",
+    "relations": "Related to other giants and may serve as a leader among forest-dwelling creatures.",
+    "environment": "Typically found in forested areas.",
+    "strengths": "Excels at stealth in forest environments and has powerful melee attacks.",
+    "weaknesses": "Sunlight Sensitivity, leading to reduced effectiveness in bright light.",
+    "attacks": "Employs devastating Boar Spear attacks and can throw rocks at range.",
+    "most_powerful_ability": "Forest Camouflage, allowing it to hide easily in wooded terrain.",
+    "equipment": "Boar Spear and natural armor.",
+    "senses": "Has darkvision up to 120 feet, enhancing its ability to detect creatures in low light.",
+    "skills": "Boasts a Stealth skill, making it proficient in hiding.",
+    "additional_information": [
+        "Can perform a Multiattack with two Boar Spear strikes.",
+        "Forest Ambusher allows enhanced hiding in forests.",
+        "Strength score of 21 gives it impressive physical power.",
+        "Sunlight Sensitivity imposes disadvantages in direct sunlight.",
+        "Capable of pushing targets away with successful melee attacks."
+    ],
+    "damage_types": [
+        "piercing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant ambushing in forest",
+        "stealthy creature with natural armor",
+        "forest giant that attacks unsuspecting prey",
+        "powerful melee giant hiding in woods",
+        "creature with disadvantage in sunlight"
+    ]
+}

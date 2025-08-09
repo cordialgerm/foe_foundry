@@ -1,0 +1,25 @@
+{
+    "name": "Insatiable Brood",
+    "queries": [
+        {
+            "query": "medium swarm of tiny aberrations that can fly and has magical attacks",
+            "variant": "swarm of tiny aberrations that fly and have magical bites medium"
+        },
+        {
+            "query": "creature resistant to most damage types and immune to frightened condition",
+            "variant": "monster immune to frightened condition and resistant to most damage types"
+        },
+        {
+            "query": "chaotic aberration that can inflict double damage to structures",
+            "variant": "aberration that does double damage to structures and moves chaotically"
+        },
+        {
+            "query": "creature with incredible agility and the ability to fill enemy space",
+            "variant": "monster with great agility that can occupy the space of enemies"
+        },
+        {
+            "query": "flying swarm that uses dread effects in combat and has magical bites",
+            "variant": "swarm that flies and has magical bites, using dread effects in battles"
+        }
+    ]
+}

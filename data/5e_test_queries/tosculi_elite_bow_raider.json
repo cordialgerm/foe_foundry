@@ -1,0 +1,25 @@
+{
+    "name": "Tosculi Elite Bow Raider",
+    "queries": [
+        {
+            "query": "humanoid archer with high dexterity and hive sense",
+            "variant": "high dexterity humanoid archer that has hive sense"
+        },
+        {
+            "query": "medium lawful evil creature that excels in ranged combat",
+            "variant": "lawful evil medium creature that is good at ranged combat"
+        },
+        {
+            "query": "tactical flying ranged attacker with high hit points",
+            "variant": "ranged attacker with high hit points and tactical flying abilities"
+        },
+        {
+            "query": "monster with darkvision and skirmisher ability",
+            "variant": "creature that has darkvision and the skirmisher ability"
+        },
+        {
+            "query": "Tosculi elite bow raider capabilities in close combat",
+            "variant": "capabilities of the tosculi elite bow raider in close combat"
+        }
+    ]
+}

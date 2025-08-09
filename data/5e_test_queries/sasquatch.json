@@ -1,0 +1,25 @@
+{
+    "name": "Sasquatch",
+    "queries": [
+        {
+            "query": "large forest beast with incredible stealth and keen senses",
+            "variant": "big wood creature with great stealth and sharp hearing and smell"
+        },
+        {
+            "query": "beast that has natural armor and excels in melee combat",
+            "variant": "creature with natural defenses and strong close-range attacks"
+        },
+        {
+            "query": "primal creature that can move quickly and hides well in the forest",
+            "variant": "wild monster that can swiftly move and is good at hiding in wooded areas"
+        },
+        {
+            "query": "strong creature with high hit points and reckless combat abilities",
+            "variant": "powerful beast with lots of health and bold fighting skills"
+        },
+        {
+            "query": "Sasquatch abilities including vanishing and relentless survival tactics",
+            "variant": "Sasquatch skills like disappearing and tough survival strategies"
+        }
+    ]
+}

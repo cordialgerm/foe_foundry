@@ -1,0 +1,50 @@
+{
+    "name": "Cloudhoof Assassin",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "tactical",
+        "maneuverable"
+    ],
+    "adjectives": [
+        "agile",
+        "strong",
+        "tactical"
+    ],
+    "description": "The Cloudhoof Assassin is characterized by its agility and strength, featuring notable muscular build and the ability to charge at enemies. It has high physical power and dexterity, making it a formidable opponent.",
+    "memorable": "Its special ability Shoving Charge can reposition enemies, significantly impacting battlefield dynamics.",
+    "goals": "To tactically control the battlefield using its pushing abilities and maintain agility in combat.",
+    "relations": "May be encountered with other beasts or as a guard creature in rugged terrains.",
+    "environment": "Commonly found in rocky or rugged environments.",
+    "strengths": "Exceptional strength and dexterity scores, along with advantages on relevant checks to resist being knocked prone.",
+    "weaknesses": "Very low intelligence and charisma, making it less perceptive and social.",
+    "attacks": "Can perform a multiattack with a Headbutt and a Shoving Kick, employing pushing mechanics to control positioning.",
+    "most_powerful_ability": "Shoving Charge allows it to push enemies back, potentially altering battlefield positioning.",
+    "equipment": null,
+    "senses": "Has passive perception of 10.",
+    "skills": "Basic perception skills reflect its average wisdom.",
+    "additional_information": [
+        "Has advantage on climbing and balance on rocky surfaces.",
+        "With its strong physical attributes, it excels in melee combat.",
+        "Utilizes its environment effectively to ambush foes.",
+        "Can push targets away, creating space and protecting itself.",
+        "Moderate hit points for a creature of its challenge rating."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile beast that controls battlefield",
+        "tactical creature that can push enemies",
+        "strong melee beast with charge ability",
+        "beast that excels in rocky environments",
+        "constantly shoving monster in combat"
+    ]
+}

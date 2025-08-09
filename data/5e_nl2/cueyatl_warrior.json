@@ -1,0 +1,52 @@
+{
+    "name": "Cueyatl Warrior",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 36,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "climb 20 ft., swim 30 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "stealth",
+        "agile"
+    ],
+    "adjectives": [
+        "nimble",
+        "adaptable",
+        "poisonous"
+    ],
+    "description": "The Cueyatl Warrior is a small humanoid creature with a lean build, known for its agility and combat versatility, particularly in jungle environments.",
+    "memorable": "Its ability to deliver both slashing and poison damage makes it a formidable opponent in skirmishes.",
+    "goals": "To hunt and ambush in jungle environments, using its agility and special abilities.",
+    "relations": "Often found in groups with other Cueyatl or similar jungle-dwelling humanoids.",
+    "environment": "Typically found in jungle terrains, adapting easily to both land and aquatic surroundings.",
+    "strengths": "Excels in agility-based tasks and has special abilities that enhance mobility and stealth.",
+    "weaknesses": "As a small creature, it may lack physical power against larger foes.",
+    "attacks": "Wields a battleaxe, dealing slashing damage coupled with poison damage.",
+    "most_powerful_ability": "The ability to breathe both air and water allows for versatility in aquatic confrontations.",
+    "equipment": "battleaxe",
+    "senses": "Possesses darkvision that allows it to see in darkness up to 60 feet.",
+    "skills": "Has proficiency in Acrobatics and Survival, enhancing its mobility and resource gathering in complex terrains.",
+    "additional_information": [
+        "Has advantage on Dexterity (Stealth) checks in jungle terrain.",
+        "Benefits from the Slippery ability for escaping grapples.",
+        "Can execute long jumps good for ambush tactics.",
+        "Average hit points and armor class for resilience in combat.",
+        "Utilizes poison in melee attacks, increasing its lethality."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile jungle warrior with poison attack",
+        "humanoid that can swim and climb",
+        "stealthy jungle creature with slippery escape",
+        "Cueyatl warrior amphibious abilities",
+        "small creature that excels in jungle terrain"
+    ]
+}

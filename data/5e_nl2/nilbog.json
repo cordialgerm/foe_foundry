@@ -1,0 +1,53 @@
+{
+    "name": "Nilbog",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 14,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "quirky",
+        "troublesome",
+        "deceptive"
+    ],
+    "adjectives": [
+        "small",
+        "unique",
+        "mischievous"
+    ],
+    "description": "The Nilbog is a slim humanoid creature known for its mischievous and quirky nature, capable of healing from normal damage it takes.",
+    "memorable": "Its unique ability to heal from physical damage makes it a troublesome challenge for adventurers, forcing them to rethink their strategies.",
+    "goals": "To create conflicts and mischief through clever tactics rather than direct combat.",
+    "relations": "Commonly associated with chaotic creatures and may be encountered with goblins or other mischievous beings.",
+    "environment": "Often found in areas of mischief or chaos, likely in the company of other trickster creatures.",
+    "strengths": "Can manipulate battle dynamics effectively and evade attacks using its Nimble Escape ability.",
+    "weaknesses": "Only harmed by healing magic, making it susceptible to healing spells which cause necrotic damage.",
+    "attacks": "Utilizes a Rat Flail for melee strikes and a Fetid Sling for ranged attacks, injecting a risk of poisoning with its ranged attack.",
+    "most_powerful_ability": "Opposite Nature: Heals from normal damage instead of taking it, requiring healing spells to deal actual harm.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in stealth, allowing it to evade detection effectively.",
+    "additional_information": [
+        "Creatures harmed by its attacks may become poisoned.",
+        "Has an average resilience with a Constitution score of 10.",
+        "Low Dexterity score impacts its ability to avoid attacks.",
+        "Can only move through battle effectively using Nimble Escape.",
+        "Known for its quirky and unpredictable battle style."
+    ],
+    "damage_types": [
+        "necrotic",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "quirky small humanoid healer",
+        "troublesome creature that heals from damage",
+        "mischievous creature that can poison attackers",
+        "deceptive monster with unique healing ability",
+        "small humanoid known for chaotic tricks"
+    ]
+}

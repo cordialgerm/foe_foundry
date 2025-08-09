@@ -1,0 +1,25 @@
+{
+    "name": "Equitox",
+    "queries": [
+        {
+            "query": "large fiend with disease spreading abilities in combat",
+            "variant": "large fiend that spreads disease in battle"
+        },
+        {
+            "query": "fiend immune to necrotic damage with a powerful multiattack",
+            "variant": "necrotic immune fiend with powerful multiattack attack options"
+        },
+        {
+            "query": "chaotic evil creature that inflicts Gullylung Fever",
+            "variant": "evil creature that causes Gullylung Fever"
+        },
+        {
+            "query": "monster that can teleport and has a Befouling Aura",
+            "variant": "creature with teleportation and a Befouling Aura ability"
+        },
+        {
+            "query": "Equitox the fiend that uses Evaporation Wave",
+            "variant": "fiend named Equitox who has Evaporation Wave ability"
+        }
+    ]
+}

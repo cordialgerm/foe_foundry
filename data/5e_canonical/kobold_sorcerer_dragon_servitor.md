@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Sorcerer Dragon Servitor</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>The Kobold Sorcerer Dragon Servitor is a small humanoid creature that serves as a spellcaster and minion for more powerful draconic beings. With an Armor Class of 12 and 27 hit points, it presents a moderate challenge for low-level adventurers. Its Challenge Rating of 2 indicates that it can be a threat when encountered in groups or with strategic planning. The Kobold Sorcerer is agile, possessing a good Dexterity score of 14, granting it a +2 modifier, which is considered good for evading attacks. However, it has a very low Strength score of 6, leading to a -2 modifier, resulting in significant difficulty when engaging in physical combat. Its Charisma score of 14 allows it to be an effective spellcaster with a spell save DC of 12, making it moderately challenging for opponents to resist its spells. The creature's strengths lie in its spellcasting abilities, ranged attacks, and tactical options, while its weaknesses stem from its low physical stats and resilience.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ The Kobold Sorcerer can use expeditious retreat as a bonus action on its turn af
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Sorcerer Dragon Servitor
 
 *Small* *Humanoid*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Expeditious Retreat (1st-Level; V:** When casting this spell and as a bonus action on subsequent turns for 10 minutes, the kobold sorcerer can take the Dash action.
 
 
+</statblock>
 
 

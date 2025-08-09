@@ -1,6 +1,8 @@
 <MonsterName/>Bronze Dragon Wyrmling (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The Bronze Dragon Wyrmling is a Medium-sized dragon that embodies the traits of its kind with characteristics typical of bronze dragons, including a penchant for cleverness and respect for honor. This creature plays the role of a formidable combatant, possessing significant mobility and the ability to inflict elemental damage through its breath weapon. With a challenge rating of 3, it presents a moderate challenge for adventurers, boasting a decent armor class of 16 and 39 hit points. Its strengths lie in its mobility, both on land and in water, combined with the ability to deliver potent area damage. However, the wyrmling's weaknesses are its relatively low Dexterity score, which is average, and its reliance on saving throws, which may be circumvented through careful strategy by players.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ In terms of powerful breath attacks, the dragon has two options. The Lightning B
 
 Source: 5e_srd
 
+<statblock>
 # Bronze Dragon Wyrmling (Metallic)
 
 *Medium dragon, lawful good*
@@ -72,6 +75,7 @@ Source: 5e_srd
 **Lightning Breath**. The dragon exhales lightning in a 40- foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 **Repulsion Breath**. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon.
+</statblock>
 
 
 
@@ -80,6 +84,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bronze Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -111,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Ocean Surge:** The dragon exhales a torrent of seawater in a 30-foot cone. Each creature in the area must succeed on a DC 12 Strength saving throw or be pushed 15 feet away from the dragon.
 
 
+</statblock>
 
 
 
@@ -119,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bronze Dragon Wyrmling
 
 *Medium dragon*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Breath (Recharge 5–6).** The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 DEX save, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.
 - **Repulsion Breath (Recharge 6).** The dragon exhales repulsion energy in a 15-foot cone. Each creature in that area must succeed on a DC 12 STR save or be pushed up to 5 feet away from the dragon.
 
+</statblock>
 
 

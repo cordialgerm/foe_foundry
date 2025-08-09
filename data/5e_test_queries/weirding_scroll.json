@@ -1,0 +1,25 @@
+{
+    "name": "Weirding Scroll",
+    "queries": [
+        {
+            "query": "flying tiny construct that can dominate humanoids and is vulnerable to fire",
+            "variant": "tiny flying construct that domintates humanoids and has fire vulnerability"
+        },
+        {
+            "query": "magical tiny scroll creature with telepathic abilities and low defenses",
+            "variant": "magical tiny scroll monster with low defenses and telepathic powers"
+        },
+        {
+            "query": "creature that acts like a scroll and can charm others but is weak against fire",
+            "variant": "monster that mimics a scroll and charms others, weak to fire damage"
+        },
+        {
+            "query": "construct with blindsight and deception skills that flies slowly",
+            "variant": "flying construct with detection abilities and deception skills, flies slow"
+        },
+        {
+            "query": "small magical construct immune to many conditions and resistant to cold damage",
+            "variant": "tiny magical machine immune to many conditions and cold resistant"
+        }
+    ]
+}

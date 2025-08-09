@@ -1,0 +1,25 @@
+{
+    "name": "Cacus Giant",
+    "queries": [
+        {
+            "query": "large chaotic evil giant with fire immunity and high strength",
+            "variant": "huge evil giant immune to fire and strong"
+        },
+        {
+            "query": "brutal giant possessing fire breath ability and melee attacks",
+            "variant": "ferocious giant with fire breathing and melee skills"
+        },
+        {
+            "query": "monster that deals heavy melee damage and has a final fire breath attack",
+            "variant": "creature that inflicts massive melee damage and uses fire upon death"
+        },
+        {
+            "query": "giant with high constitution and abilities in survival and perception",
+            "variant": "a giant that excels in constitution with skills in perception and survival"
+        },
+        {
+            "query": "Cacus Giant characteristics, strengths, and weaknesses in combat",
+            "variant": "traits of the Cacus Giant, its strengths and combat weaknesses"
+        }
+    ]
+}

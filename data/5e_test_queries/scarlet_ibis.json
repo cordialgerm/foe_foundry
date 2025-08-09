@@ -1,0 +1,25 @@
+{
+    "name": "Scarlet Ibis",
+    "queries": [
+        {
+            "query": "medium-sized bird monster with potent curse abilities",
+            "variant": "bird monster that is medium-sized and has strong curse abilities"
+        },
+        {
+            "query": "creature that flies and inflicts permanent curses in battle",
+            "variant": "flying creature that can cause permanent curses during fights"
+        },
+        {
+            "query": "monstrosity with natural armor and high hit points",
+            "variant": "monstrous creature that has natural armor and a large pool of hit points"
+        },
+        {
+            "query": "monster that uses multiattack and has a deadly beak",
+            "variant": "creature that employs multiattack and features a lethal beak"
+        },
+        {
+            "query": "dangerous foe that speaks Common and Sylvan and has darkvision",
+            "variant": "a foe that can communicate in Common and Sylvan and possesses darkvision"
+        }
+    ]
+}

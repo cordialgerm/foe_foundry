@@ -1,0 +1,52 @@
+{
+    "name": "Corrupted Unicorn",
+    "creature_type": "Celestial",
+    "alignment": null,
+    "size": "Large",
+    "hp": 85,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "80 feet walking speed, very swift",
+    "role": "null",
+    "tags": [
+        "unicorn",
+        "celestial",
+        "corrupted",
+        "magical"
+    ],
+    "adjectives": [
+        "corrupted",
+        "elegant",
+        "powerful",
+        "dark"
+    ],
+    "description": "The Corrupted Unicorn is a large celestial creature known for its elegance and dark power, twisted by malevolent influences, featuring a horn and hooves that deal significant damage.",
+    "memorable": "Its ability to shroud the battlefield in magical darkness while providing healing and boons makes it uniquely powerful and tactical.",
+    "goals": "To defend its territory while offering aid to allies, potentially corrupted by dark influences.",
+    "relations": "May be related to other corrupted creatures or dark entities.",
+    "environment": "Often found in dark forests or corrupted magical areas.",
+    "strengths": "Magic Resistance grants it advantage on saving throws against magical effects, making it resilient against spellcasting foes.",
+    "weaknesses": "Susceptible to bright light due to its corrupted nature; may draw attention from heroic forces looking to cleanse the corruption.",
+    "attacks": "Strikes with powerful hooves and a piercing horn, capable of inflicting radiant damage.",
+    "most_powerful_ability": "Darkness Aura creates an area of magical darkness, allowing it to control the battlefield.",
+    "equipment": null,
+    "senses": "Passive Perception of 15 allows it to detect creatures stealthily.",
+    "skills": null,
+    "additional_information": [
+        "Can inflict extra damage and knock targets prone with its charge.",
+        "Grants powerful boons to itself or allies for tactical advantages.",
+        "Immune to charmed, paralyzed, and poisoned conditions."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "elegant celestial unicorn corrupted by darkness",
+        "powerful darkness spreading unicorn",
+        "unicorn with magical darkness aura",
+        "swift magical creature with radiant strikes",
+        "elegant horse-like creature that aids allies"
+    ]
+}

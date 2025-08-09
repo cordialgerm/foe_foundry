@@ -1,0 +1,25 @@
+{
+    "name": "Baba Yaga\u2019s Horsemen",
+    "queries": [
+        {
+            "query": "powerful fey creature that uses dark magic and serves Baba Yaga",
+            "variant": "powerfull fey creature that serves Baba Yaga and uses dark magic"
+        },
+        {
+            "query": "medium-sized magical horsemen with enchanted weapons and high armor class",
+            "variant": "medium magical horsemen with high armor class and enchanted weapons"
+        },
+        {
+            "query": "characteristics of a lawfully neutral horseman that ages targets with attacks",
+            "variant": "lawfully neutral horseman whose attacks age targets"
+        },
+        {
+            "query": "immune to poison and lightning, strong fey with enhanced spell resistance",
+            "variant": "strong fey immune to poison and lightning with better spell resistance"
+        },
+        {
+            "query": "combat strategies for horsemen with Peerless Rider and Timeless Nature abilities",
+            "variant": "combat tactics for horsemen with abilities Timeless Nature and Peerless Rider"
+        }
+    ]
+}

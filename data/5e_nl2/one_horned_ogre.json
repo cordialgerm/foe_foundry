@@ -1,0 +1,53 @@
+{
+    "name": "One-Horned Ogre",
+    "creature_type": "Giant",
+    "alignment": "any evil alignment",
+    "size": "Large",
+    "hp": 93,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "ogre",
+        "evil",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "magical"
+    ],
+    "description": "The One-Horned Ogre is a large giant with a single powerful horn, exuding an aura of menace and physical strength. Its skin is often rugged and its appearance embodies brute strength matched with a tactical mind.",
+    "memorable": "The One-Horned Ogre combines powerful melee attacks with psychological and magical spellcasting, making it a versatile and dangerous opponent.",
+    "goals": "To dominate and instill fear in its enemies using both brute force and magical abilities.",
+    "relations": "Might be associated with other evil creatures and could have minions or followers drawn to its strength and magical powers.",
+    "environment": "Typically found in dark forests, caves, or areas where it can exert dominance over other creatures.",
+    "strengths": "High Strength allows devastating melee attacks, supplemented by strong spellcasting abilities influenced by its Charisma.",
+    "weaknesses": "Average Dexterity limits its ability to evade attacks, and low Intelligence and Wisdom hinder tactical decision-making.",
+    "attacks": "Uses a combination of Fiendish Horn Blast and melee attacks with a greatsword to deal substantial damage.",
+    "most_powerful_ability": "Fiendish Horn Blast deals psychic damage and inflicts debilitating conditions like blinded, charmed, or frightened.",
+    "equipment": "Greatsword and javelin, both capable of dealing significant damage in combat.",
+    "senses": "Has passive Perception of 10, indicating average awareness.",
+    "skills": "Proficient in intimidation, capable of instilling fear in others with a +7 modifier.",
+    "additional_information": [
+        "Uses its Magical Horn for powerful abilities.",
+        "Ruthless Weapons ability adds psychic damage against debuffed enemies.",
+        "Innate spellcasting allows for battlefield manipulation.",
+        "Can cast darkness, misty step, and fear.",
+        "Regains abilities if a new horn is magically restored."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting via Charisma; can cast darkness and misty step twice daily, suggestion and fear once daily.",
+    "test_queries": [
+        "formidable giant with magical powers",
+        "ogre that uses psychic damage",
+        "monster with a single powerful horn",
+        "intimidating giant that casts darkness",
+        "ogre that instills fear and uses spells"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Chieftain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>110</HP>
 <summary>The Chieftain is a Small Humanoid creature classified as Lawful Evil, often serving as a commanding figure among its kind. With a solid Armor Class of 16 and a substantial pool of Hit Points amounting to 110, this creature is designed to withstand significant damage in combat. Its Challenge Rating is 5, indicating a moderate difficulty level for a party of adventurers. The Chieftain possesses impressive Strength, allowing it to deal extra damage with melee weapons, thanks to its Brute ability. However, it is sensitive to sunlight, suffering disadvantages in combat while exposed. Its strengths lie in commanding allies, dealing damage, and inflicting fear upon opponents, making it formidable in battle. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ For reactions, the Springspike Shield allows the Chieftain to counterattack when
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chieftain
 
 *Small* *Humanoid* *Lawful Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Springspike Shield:** When the kobold chieftain is wielding its shield and is hit by a melee attack within 5 feet of it, the chieftain can fire one of its shield spikes at the attacker. The attacker takes 5 (2d4) piercing damage.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Selang",
+    "queries": [
+        {
+            "query": "fey creature with magical poison weapon attacks",
+            "variant": "fey beast that uses poison-coated weapons in attacks"
+        },
+        {
+            "query": "chaotic evil fey with high mobility and acid immunity",
+            "variant": "chaotic evil fey that has fast movement and immunity to acid"
+        },
+        {
+            "query": "Medium fey with strong performance skills and darkvision",
+            "variant": "medium-sized fey that excels in performance and has darkvision"
+        },
+        {
+            "query": "40-foot speed fey that can charm using alien piping",
+            "variant": "fey with 40 ft speed that charms using its alien piping ability"
+        },
+        {
+            "query": "monster resistant to non-magical damage with high Charisma",
+            "variant": "creature that resists non-magical attacks and possesses high Charisma"
+        }
+    ]
+}

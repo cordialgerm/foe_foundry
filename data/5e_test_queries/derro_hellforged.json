@@ -1,0 +1,25 @@
+{
+    "name": "Derro, Hellforged",
+    "queries": [
+        {
+            "query": "small humanoid with fire immunity and sunlight sensitivity",
+            "variant": "little humanoid that has fire immunity and sensitivity to sunlight"
+        },
+        {
+            "query": "lawful evil creature that can hurl hellfire and uses a battleaxe",
+            "variant": "evil lawful creature that uses a battleaxe and can hurl hellfire"
+        },
+        {
+            "query": "durable humanoid with darkvision that excels in combat",
+            "variant": "tough humanoid with darkvision, skilled in combat"
+        },
+        {
+            "query": "creature with high Constitution that deals fire damage in sunlight",
+            "variant": "monster with high Con that inflicts fire damage when exposed to sunlight"
+        },
+        {
+            "query": "hellforged creature that commands attackers and has magic weapons",
+            "variant": "hellforged being that issues commands to attackers and uses magical weapons"
+        }
+    ]
+}

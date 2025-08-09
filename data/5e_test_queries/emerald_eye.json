@@ -1,0 +1,25 @@
+{
+    "name": "Emerald Eye",
+    "queries": [
+        {
+            "query": "tiny psychic construct with charm abilities",
+            "variant": "small construct with charm powers and psychic traits"
+        },
+        {
+            "query": "magical creature that manipulates others and is very intelligent",
+            "variant": "intelligent magical being that can control others and manipulates"
+        },
+        {
+            "query": "construct immune to poison that uses psychic powers",
+            "variant": "poison-immune construct using psychic abilities"
+        },
+        {
+            "query": "Emerald Eye's ability to bind and manipulate enemies",
+            "variant": "ability of Emerald Eye to bind and control foes"
+        },
+        {
+            "query": "creature that telepathically communicates and thrives with a host",
+            "variant": "being that communicates through telepathy and needs a host to survive"
+        }
+    ]
+}

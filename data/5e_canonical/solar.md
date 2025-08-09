@@ -1,6 +1,9 @@
 <MonsterName/>Solar (Angel)</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<Subtype/>angel</Subtype>
+<CR/>21</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>243</HP>
 <summary>A Solar is one of the most powerful celestial beings, second only to the gods themselves. Towering with a radiant, muscular form and large, feathered wings, Solars are divine warriors who serve the forces of good. They are incredibly strong and wield potent weapons imbued with holy power. In addition to their martial prowess, Solars are capable of casting powerful healing and protective magic. Their presence alone can inspire awe and fear in both allies and enemies. Solars are sent to fight evil, lead celestial armies, or serve as divine champions for their gods.</summary>
 
 <summary>The Solar is a formidable celestial creature, embodying divine power and serving as a beacon of truth and justice. With a large frame and impressive stats, it boasts an exceptional Armor Class of 21, making it quite difficult to hit. With a robust health pool of 319 hit points, the Solar can withstand considerable damage. Being a challenge rating 21 creature means it is designed for high-level encounters, presenting both a threat and a source of aid to those who respect its virtues. Notably, the Solar is immune to necrotic and poison damage, has resistance against radiant damage and nonmagical weapons, and possesses several unique abilities that define its combat style. However, despite its strengths, it relies heavily on its melee capabilities and spellcasting for damage output, making it somewhat limited against ranged combat without relying on its innate abilities.</summary>
@@ -43,6 +46,7 @@ Ultimately, the Solar is not only a powerful adversary or ally in battle, but it
 
 Source: 5e_srd
 
+<statblock>
 ### Solar (Angel)
 
 *Large celestial, lawful good*
@@ -107,7 +111,8 @@ The solar can take 3 legendary actions, choosing from the options below. Only on
 
 **Searing Burst (Costs 2 Actions)**. The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.
 
-**Blinding Gaze (Costs 3 Actions)**. The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the *lesser restoration* spell removes the blindness.
+**Blinding Gaze (Costs 3 Actions)**. The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the *lesser restoration* spell removes the blindness.</statblock>
+
 
 
 
@@ -115,6 +120,7 @@ The solar can take 3 legendary actions, choosing from the options below. Only on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Solar
 
 *Large* *Celestial*
@@ -164,6 +170,7 @@ Source: 5e_artisinal_monsters
 - **Approach! The creature must use its reaction:** 
 - **Flee! The creature must use its reaction:** 
 - **Surrender! The creature drops anything it is holding:** 
+</statblock>
 
 
 
@@ -172,6 +179,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Solar
 
 *Large celestial (angel)*
@@ -231,5 +239,6 @@ The solar can take 3 legendary actions, choosing from the options below. Only on
 ### Regional Effects
 
 - **1d6** If the solar dies, these effects end immediately. If the solar leaves the area and establishes a new lair elsewhere, these effects fade in  days.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Young Void Dragon",
+    "queries": [
+        {
+            "query": "large dragon that moves quickly through the void",
+            "variant": "big dragon that swiftly moves in the void"
+        },
+        {
+            "query": "chaotic dragon immune to cold and frightened",
+            "variant": "chaotic void dragon that can't be chilled or scared"
+        },
+        {
+            "query": "dragon with powerful breath attacks and high armor class",
+            "variant": "dragon that has strong breath weapons and a very high AC"
+        },
+        {
+            "query": "void dragon with darkvision and keen awareness",
+            "variant": "darkvision-enabled dragon with sharp perception"
+        },
+        {
+            "query": "dragon with a bite attack and the ability to manipulate gravity",
+            "variant": "dragon that can bite and control gravity"
+        }
+    ]
+}

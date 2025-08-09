@@ -1,0 +1,52 @@
+{
+    "name": "Robot Drone",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 21,
+    "ac": 18,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "slow on ground but fast flying at 40 feet",
+    "role": "Artillery",
+    "tags": [
+        "construct",
+        "drone",
+        "flying"
+    ],
+    "adjectives": [
+        "agile",
+        "durable",
+        "automated"
+    ],
+    "description": "A small, flying construct with a sleek design and a metallic surface, capable of agile aerial maneuvers.",
+    "memorable": "Its immunity to many debilitating conditions and ability to explode in a cloud of poisonous fumes make it a unique opponent.",
+    "goals": "Act as a scout and automatic combatant in various scenarios.",
+    "relations": "Often has a creator who understands its language but cannot communicate verbally.",
+    "environment": "Typically found in settings associated with technology or robotics.",
+    "strengths": "Immunity to poison and psychic damage, and various conditions like paralysis.",
+    "weaknesses": "Low physical capabilities with negative scores in Strength and Intelligence.",
+    "attacks": "Uses a Slam attack for close combat and a Flame Jet for ranged fire damage.",
+    "most_powerful_ability": "Electrical Malfunction; incapacitated if it fails a saving throw after taking lightning damage.",
+    "equipment": null,
+    "senses": "Has a good perception score of 15, allowing it to notice details effectively.",
+    "skills": "Good at stealth with a score of 13, making it difficult to detect.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to Construct Nature.",
+        "Can safely attack nearby enemies thanks to Point-Blank Shots ability.",
+        "Leaves a cloud of poison when using its Fueled Escape ability.",
+        "Relies on ranged attacks more than physical strength.",
+        "Effective as a scout due to its flight and stealth."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small flying automated combatant",
+        "metallic scout that poisons",
+        "drone with flame attacks and stealth",
+        "agile construct immune to poisons",
+        "construct that explodes in fuel fumes"
+    ]
+}

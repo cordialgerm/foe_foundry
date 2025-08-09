@@ -1,0 +1,50 @@
+{
+    "name": "Caretaker Weevil",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 51,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., climb 15 ft.",
+    "role": "null",
+    "tags": [
+        "support",
+        "stabilizer",
+        "beast"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "calming",
+        "supportive"
+    ],
+    "description": "The Caretaker Weevil is a medium-sized beast known for its calming presence and ability to stabilize allies.",
+    "memorable": "Its unique abilities to calm hostile creatures and stabilize allies make it a valuable companion in any scenario.",
+    "goals": "To support allies and incapacitate enemies, providing stabilization and calming powers during battles.",
+    "relations": "May be found alongside other supportive creatures or allies in combat.",
+    "environment": "Often found in habitats where cooperation and support among creatures are essential.",
+    "strengths": "High hit points provide durability, and its calming abilities can influence combat dynamics.",
+    "weaknesses": "Relatively weak offensive capabilities; relies on allies for damage.",
+    "attacks": "Melee attack with mandibles dealing slashing damage, and a ranged Glue Glob attack dealing acid damage while restraining targets.",
+    "most_powerful_ability": "Calming Presence creates a zone of peace that can incapacitate hostile creatures within its vicinity.",
+    "equipment": null,
+    "senses": "Has tremorsense allowing it to detect movement within 30 feet.",
+    "skills": "Possesses a perception skill bonus of +2, enabling it to notice hidden threats adequately.",
+    "additional_information": [
+        "Can stabilize allies at 0 hit points.",
+        "Prevents corpses from decaying or rising as Undead for 24 hours.",
+        "Regenerative Spittle can heal allies over time."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "beast that calms enemies and heals allies",
+        "medium creature with stabilizing abilities",
+        "supportive creature with unique calming powers",
+        "weevil that can prevent undead rise",
+        "gentle beast with healing spit abilities"
+    ]
+}

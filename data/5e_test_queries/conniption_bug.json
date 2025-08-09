@@ -1,0 +1,25 @@
+{
+    "name": "Conniption Bug",
+    "queries": [
+        {
+            "query": "small bug that grapples and inflicts damage after dying",
+            "variant": "small creature that grapples foes and deals damage after it dies"
+        },
+        {
+            "query": "creature with amphibious abilities that can attack in packs",
+            "variant": "monster that can breathe underwater and strikes with pack tactics"
+        },
+        {
+            "query": "swift bug that uses death as a trap for enemies",
+            "variant": "fast bug that turns its death into a trap for foes"
+        },
+        {
+            "query": "creature with barbed mandibles that excels in mobility",
+            "variant": "monster with spiked jaws that is very mobile"
+        },
+        {
+            "query": "beast that jumps long distances and has vicious attacks",
+            "variant": "animal that can leap far and has brutal melee strikes"
+        }
+    ]
+}

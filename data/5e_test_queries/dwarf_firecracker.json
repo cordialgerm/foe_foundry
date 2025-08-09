@@ -1,0 +1,25 @@
+{
+    "name": "Dwarf, Firecracker",
+    "queries": [
+        {
+            "query": "medium humanoid with explosive combat style and fire abilities",
+            "variant": "humanoid that is medium size known for explosive combat and having fire skills"
+        },
+        {
+            "query": "dwarf that deals double damage to structures and has high constitution",
+            "variant": "dwarf capable of dealing double damage to objects and has very good constitution"
+        },
+        {
+            "query": "combat-oriented dwarf with fire resistance and explosive attacks",
+            "variant": "dwarf focused on combat that is resistant to fire and uses explosive attacks"
+        },
+        {
+            "query": "creature with high strength and fire blast attack that thrives in close range",
+            "variant": "monster with exceptional strength and a fire blast attack that excels in melee"
+        },
+        {
+            "query": "dwarf with darkvision and a powerful combustion wave ability",
+            "variant": "dwarf that has darkvision and a strong ability called combustion wave"
+        }
+    ]
+}

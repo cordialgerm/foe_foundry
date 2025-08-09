@@ -1,0 +1,25 @@
+{
+    "name": "Loxoda",
+    "queries": [
+        {
+            "query": "huge evil monster with bludgeoning attacks that can stomp",
+            "variant": "huge monster that is evil and has bludgeoning attacks that can stomp"
+        },
+        {
+            "query": "Loxoda traits and powerful shockwave ability",
+            "variant": "traits of Loxoda and its powerful shockwave ability"
+        },
+        {
+            "query": "monstrosity with high hit points and melee attack options",
+            "variant": "monstrosity that has a lot of hit points and melee attack abilities"
+        },
+        {
+            "query": "creature that deals bludgeoning damage and has decent wisdom",
+            "variant": "monster that deals bludgeoning damage and possesses good wisdom"
+        },
+        {
+            "query": "powerful melee combatant in a neutral evil alignment",
+            "variant": "strong melee fighter with a neutral evil alignment"
+        }
+    ]
+}

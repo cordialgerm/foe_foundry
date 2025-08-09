@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Hound",
+    "queries": [
+        {
+            "query": "medium construct dog that fires explosive damage upon destruction",
+            "variant": "medium dog construct that explodes and causes fire damage when destroyed"
+        },
+        {
+            "query": "fast mechanical hound adept at tracking and has high strength",
+            "variant": "quick clockwork dog good at tracking with strong physical abilities"
+        },
+        {
+            "query": "combat companion with piercing bite and tripping attack from distance",
+            "variant": "battle ally with strong bite and slashing tongue attack from afar"
+        },
+        {
+            "query": "dog-like construct immune to charm effects and does not need food",
+            "variant": "hound construct that is immune to being charmed and doesn't need to eat"
+        },
+        {
+            "query": "clockwork creature featuring high dexterity and good perception skills",
+            "variant": "mechanical being with excellent dexterity and strong perception abilities"
+        }
+    ]
+}

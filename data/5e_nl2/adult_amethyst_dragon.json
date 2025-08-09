@@ -1,0 +1,53 @@
+{
+    "name": "Adult Amethyst Dragon",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 220,
+    "ac": 18,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 40 ft., burrow 30 ft., fly 60 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "psionic",
+        "telepathic",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "intelligent"
+    ],
+    "description": "The Adult Amethyst Dragon possesses shimmering amethyst scales and sharp, powerful features. It exhibits a mystical aura, a strong presence, and keen intelligence, complemented by its mastery of psionic powers.",
+    "memorable": "This dragon's ability to charm and manipulate enemies through its psionic powers and spells makes it a unique and formidable foe.",
+    "goals": "The dragon seeks to dominate its surroundings and influence creatures for its purposes.",
+    "relations": "Could be encountered alongside other dragons or psionically adept creatures.",
+    "environment": "Typically found in mountainous regions or mystical areas rich in psychic energy.",
+    "strengths": "Strong in both physical combat and telepathic manipulation, with notable resistances to force and psychic damage.",
+    "weaknesses": "Reliance on telepathic powers can hinder its effectiveness when disrupted.",
+    "attacks": "Multiattack with a bite and two claw strikes, as well as psionic abilities releasing waves of psychic damage.",
+    "most_powerful_ability": "Concussive Breath, unleashing deadly force damage over a large area.",
+    "senses": "Possesses keen senses with a passive perception score of 18.",
+    "skills": "Highly skilled in deception and persuasion, making it adept at manipulating others.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saving throws.",
+        "Far Thoughts grants awareness of creatures using psionics within 100 miles.",
+        "Innate spellcasting capabilities for spells like Charm Person and Modify Memory.",
+        "Utilizes reactions to control charmed creatures.",
+        "Has potent Legendary Actions to influence battles."
+    ],
+    "damage_types": [
+        "force",
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting with a focus on charm and memory manipulation spells.",
+    "test_queries": [
+        "psionic dragon",
+        "amethyst dragon abilities",
+        "telepathic dragon",
+        "manipulative dragon",
+        "dragon with psychic powers"
+    ]
+}

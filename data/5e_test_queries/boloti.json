@@ -1,0 +1,25 @@
+{
+    "name": "Boloti",
+    "queries": [
+        {
+            "query": "tiny fey creature that excels in water and has high stealth",
+            "variant": "tiny creature that is fey and great at hiding in water"
+        },
+        {
+            "query": "aquatic monster with vortex form and water camouflage ability",
+            "variant": "water monster that can turn into a vortex and hide well underwater"
+        },
+        {
+            "query": "creature that is skilled in perception and attacks better in water",
+            "variant": "monster good at noticing things and hitting well when in water"
+        },
+        {
+            "query": "neutral evil fey that can breathe air and water",
+            "variant": "fey creature with neutral evil alignment that breathes both air and water"
+        },
+        {
+            "query": "fast aquatic monster with bludgeoning attack and dual nature",
+            "variant": "quick water creature that has a bludgeoning attack and changes forms"
+        }
+    ]
+}

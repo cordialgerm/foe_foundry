@@ -1,0 +1,49 @@
+{
+    "name": "Horakh",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 161,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 feet",
+    "role": "Ambusher",
+    "tags": [
+        "predator",
+        "monstrosity",
+        "ambush"
+    ],
+    "adjectives": [
+        "cunning",
+        "malicious",
+        "agile"
+    ],
+    "description": "The Horakh is a formidable and robust creature, noted for its agility and cunning nature. It features a malleable body with sharp claws, and a vicious bite capable of implanting eggs in its victims.",
+    "memorable": "Its unique parasitic ability to implant an egg into its prey that eventually erupts into a young Horakh.",
+    "goals": "To ambush unsuspecting prey and dominate its territory.",
+    "relations": "Related to other monstrous predators, it may also serve darker forces in the wild.",
+    "environment": "Typically found in dark, secluded areas where it can ambush its prey.",
+    "strengths": "High agility and proficient in stealth, allowing effective ambush tactics.",
+    "weaknesses": "Not intelligent; limited strategic capabilities due to its low Intelligence.",
+    "attacks": "Engages in brutal multiattacks with a bite that can deal piercing damage and potentially blind its target.",
+    "most_powerful_ability": "Implant Egg ability enables it to incapacitate foes and reproduce gruesomely.",
+    "senses": "Possesses tremorsense up to 30 feet and a high passive Perception score of 20, making it highly aware of surroundings.",
+    "skills": "Skilled in Stealth with a bonus that allows it to evade detection effectively.",
+    "additional_information": [
+        "Can jump long distances with its Standing Leap ability.",
+        "Has a high Dexterity saving throw modifier.",
+        "Critical hits can remove a creature's eye, severely handicapping their combat abilities.",
+        "Dexterous and physically powerful with notable Strength and Dexterity scores.",
+        "Understands Undercommon but cannot speak."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "malicious ambush predator with dark abilities",
+        "monstrous creature that implants eggs in victims",
+        "agile medium monstrosity that jumps and stealths",
+        "cunning creature with a deadly bite attack",
+        "creature known for blinding its foes with eggs"
+    ]
+}

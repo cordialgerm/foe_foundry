@@ -1,0 +1,50 @@
+{
+    "name": "Child of Yggdrasil",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 112,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "climb 20 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "nature",
+        "chaos",
+        "stealth"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "destructive"
+    ],
+    "description": "The Child of Yggdrasil is a Large aberration with a formidable presence, characterized by its chaotic and destructive nature. It has a high Wisdom score and notable stealth capabilities.",
+    "memorable": "Its ability to destroy nonmagical objects and blend into forest terrain makes it a strategic and unpredictable opponent.",
+    "goals": "Embodies the chaotic and destructive aspects of nature.",
+    "relations": "May be found in the company of other aberrations or chaotic entities of nature.",
+    "environment": "Typically found in forested areas, capitalizing on environmental camouflage.",
+    "strengths": "High perception due to a high Wisdom score and abilities that enhance its stealth and battlefield control.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Utilizes Multiattack to make three claw attacks that deal slashing and acid damage.",
+    "most_powerful_ability": "Acid Touch allows it to destroy a nonmagical object as an action, making it highly effective for manipulation in combat.",
+    "equipment": null,
+    "senses": "Possesses keen senses with advantages on perception checks relying on smell.",
+    "skills": "High perception skill proficiency enhances its tracking and awareness in the environment.",
+    "additional_information": [
+        "Has advantage on Dexterity (Stealth) checks in forest terrain.",
+        "Capable of blending into surroundings to attack unexpectedly.",
+        "Strong physical presence with effective melee capabilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic creature that destroys objects",
+        "stealthy forest monster with acid attacks",
+        "large aberration that excels in nature",
+        "formidable enemy with high perception skills",
+        "child of Yggdrasil abilities and tactics"
+    ]
+}

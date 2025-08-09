@@ -1,0 +1,25 @@
+{
+    "name": "Giant Seahorse",
+    "queries": [
+        {
+            "query": "large aquatic beast with ram attack and water breathing",
+            "variant": "big water monster that has a ram ability and breathes underwater"
+        },
+        {
+            "query": "creature that excels in water but is weak on land",
+            "variant": "monster that is great in water but vulnerable on land"
+        },
+        {
+            "query": "stealthy underwater creature that can knock enemies prone",
+            "variant": "sneaky underwater monster capable of making foes fall down"
+        },
+        {
+            "query": "aquatic beast with a swimming speed of 40 feet",
+            "variant": "water creature that swims 40 feet fast"
+        },
+        {
+            "query": "sea monster that can only breathe underwater and has low intelligence",
+            "variant": "ocean beast that breathes only in water and is not very smart"
+        }
+    ]
+}

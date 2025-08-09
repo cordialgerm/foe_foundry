@@ -1,0 +1,25 @@
+{
+    "name": "Light Drake",
+    "queries": [
+        {
+            "query": "tiny dragon that emits bright light and supports allies",
+            "variant": "little dragon that shines bright light and helps friends"
+        },
+        {
+            "query": "creature with reflective scales that casts light spells",
+            "variant": "monster with light-reflecting scales that uses spells of light"
+        },
+        {
+            "query": "draconic creature that can fly and causes blindness",
+            "variant": "dragon-like beast that flies and can blind foes"
+        },
+        {
+            "query": "supportive light dragon with high dexterity and acrobatics",
+            "variant": "helpful light dragon with good agility and acrobatic skills"
+        },
+        {
+            "query": "small dragon that has radiant damage resistance and uses faerie fire",
+            "variant": "tiny drake that resists radiant damage and casts faerie fire"
+        }
+    ]
+}

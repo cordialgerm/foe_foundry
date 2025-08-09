@@ -1,0 +1,52 @@
+{
+    "name": "Hyena",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 5,
+    "ac": 11,
+    "srd": true,
+    "cr": "0",
+    "movement": "50 feet walking speed",
+    "role": null,
+    "tags": [
+        "pack-hunter",
+        "scavenger",
+        "predator"
+    ],
+    "adjectives": [
+        "cunning",
+        "opportunistic",
+        "agile"
+    ],
+    "description": "A medium-sized beast known for its quick movements, distinctive cackling calls, and scavenging habits.",
+    "memorable": "Hyenas are notorious for their pack mentality and ability to coordinate attacks, making them dangerous when working together.",
+    "goals": "Hyenas typically hunt in packs and scavenge for food, opportunistically taking advantage of any available resources.",
+    "relations": "Hyenas are often found accompanying other hyenas in packs and may compete with other predators for food.",
+    "environment": "Found in savannas or deserts, where they hunt in packs or feed on remains.",
+    "strengths": "They have good mobility and pack tactics that enhance their hitting capabilities against targets.",
+    "weaknesses": "Low hit points and poor armor class make them vulnerable to attacks.",
+    "attacks": "The hyena can perform a bite attack, dealing piercing damage with a chance of executing a second attack if the first reduces the target to zero hit points.",
+    "most_powerful_ability": "Cackling Chorus, which can deafen creatures nearby when multiple hyenas are present in close proximity.",
+    "equipment": null,
+    "senses": "They have keen senses that enhance their perception, allowing them to detect prey from great distances.",
+    "skills": "Hyenas possess proficiency in perception, aiding them in noticing potential prey or threats.",
+    "additional_information": [
+        "Hyenas are skilled scavengers and opportunistic hunters.",
+        "They can coordinate their attacks through their Pack Tactics ability.",
+        "Their Cackling Chorus ability increases in potency with the number of participating hyenas.",
+        "Hyena packs are known for their relentless pursuit of food.",
+        "They communicate with a range of sounds, contributing to their pack coordination."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning scavenger in savanna",
+        "agile pack hunter with deafening calls",
+        "medium beast known for its opportunistic nature",
+        "hyena coordination tactics in groups",
+        "wild animal with keen senses and pack behavior"
+    ]
+}

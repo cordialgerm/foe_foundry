@@ -1,6 +1,8 @@
 <MonsterName/>Devil Shark</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>198</HP>
 <summary>The Devil Shark is a formidable and terrifying creature, classified as a gargantuan monstrosity and embodying a neutral evil alignment. With a robust challenge rating of 13 and a substantial pool of 198 hit points, it poses a significant threat to adventurers daring enough to confront it. The Devil Shark excels in melee combat, bolstered by exceptional strength and constitution scores, allowing it to deal high damage while withstanding substantial punishment. Its significant damage immunities and resistances further increase its durability, making it a fierce opponent in aquatic environments. Notably, it possesses unique abilities such as Blood Frenzy which enhances its offensive capabilities against weakened foes, and Magic Resistance that provides it with a crucial edge against spellcasters. However, while it is a powerful predator underwater, its movement on land is nonexistent, limiting its versatility outside of its preferred environment.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Devil Shark has several damaging options. Its Bite atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil Shark
 
 *Gargantuan* *Monstrosity* *neutral evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Freezing Breath (Recharge 5-6):** The devil shark exhales a 60-foot cone of supernaturally cold water. Each creature in that area must make a DC 18 Constitution saving throw. On a failed save, a target takes 54 (12d8) cold damage and is pushed 20 feet away from the devil shark. On a success, a target takes half the damage but isn't pushed.
 
 
+</statblock>
 
 

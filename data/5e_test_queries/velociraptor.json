@@ -1,0 +1,25 @@
+{
+    "name": "Velociraptor",
+    "queries": [
+        {
+            "query": "small fast dinosaur that attacks in packs",
+            "variant": "fast small dinosaur that attaks in groups"
+        },
+        {
+            "query": "agile dinosaur with sharp claws that can grapple",
+            "variant": "agile dino with sharp claws that can graple"
+        },
+        {
+            "query": "beast that has Pack Tactics and thrives on coordination",
+            "variant": "beast with Pack Tactics that thrives on colaboration"
+        },
+        {
+            "query": "dangerous creature known for its bite and speed",
+            "variant": "dangerous beast known for its swift bite"
+        },
+        {
+            "query": "small creature with high Dexterity and low Strength",
+            "variant": "little creature with high dexterity and low strenth"
+        }
+    ]
+}

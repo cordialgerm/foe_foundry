@@ -1,0 +1,52 @@
+{
+    "name": "Deep One Archimandrite",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 153,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "spellcaster",
+        "amphibious",
+        "summoner"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Deep One Archimandrite is a Large humanoid characterized by strong physical attributes, especially a Strength score of 20, and features an unholy trident. Its skin is likely to resemble that of a deep-sea creature, hinting at its aquatic nature.",
+    "memorable": "Its ability to summon reef sharks and use powerful spells makes it a unique threat in aquatic environments.",
+    "goals": "To dominate the battlefield using its spellcasting and to summon aquatic allies.",
+    "relations": "Often associates with other Deep Ones and aquatic creatures.",
+    "environment": "Typically found in aquatic settings or near large bodies of water.",
+    "strengths": "Strong melee capabilities with enhanced attacks from Frenzied Rage, alongside spellcasting without requiring material components.",
+    "weaknesses": "Vulnerable to fire damage while resistant to cold and thunder damage.",
+    "attacks": "Uses its Claws for slashing damage and the Unholy Trident for piercing and necrotic damage, along with a spell attack that can inflict lightning damage.",
+    "most_powerful_ability": "Call of the Archimandrite, allowing it to summon aquatic allies to aid in combat.",
+    "senses": "Possesses darkvision that extends 240 feet, enabling it to see well in darkness.",
+    "skills": "Excels in Dexterity, Wisdom, and Charisma saving throws, with a moderate level of awareness due to its +6 passive Perception.",
+    "additional_information": [
+        "Can breathe both air and water due to its Amphibious trait.",
+        "Activates Frenzied Rage when taking significant damage, enhancing its combat capabilities.",
+        "Capable of casting various spells that can manipulate or control enemies.",
+        "Has a formidable armor class of 15, making it hard to hit.",
+        "Possesses a high hit point total of 153, requiring substantial effort to defeat."
+    ],
+    "damage_types": [
+        "necrotic",
+        "lightning"
+    ],
+    "spellcasting": "Can cast a variety of spells, including lightning bolt and spirit guardians, enhancing its versatility in combat.",
+    "test_queries": [
+        "deep sea humanoid with spellcasting",
+        "large creature that summons sharks",
+        "powerful archmage from the ocean depths",
+        "chaotic evil deep one with trident",
+        "monster that can breathe underwater and cast spells"
+    ]
+}

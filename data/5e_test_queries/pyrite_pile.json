@@ -1,0 +1,25 @@
+{
+    "name": "Pyrite Pile",
+    "queries": [
+        {
+            "query": "large elemental that looks like a gold nugget mound",
+            "variant": "large elemental resembling a pile of gold nuggets"
+        },
+        {
+            "query": "creature with charm ability that appears as treasure",
+            "variant": "monster that can charm and looks like treasure"
+        },
+        {
+            "query": "strong melee attacker immune to many conditions",
+            "variant": "powerful melee monster that is immune to several conditions"
+        },
+        {
+            "query": "elemental with the ability to absorb gold and deal bludgeoning damage",
+            "variant": "creature that can eat gold and inflict bludgeoning damage"
+        },
+        {
+            "query": "monster with low intelligence that can charm nearby humanoids",
+            "variant": "creature with poor reasoning that charms humanoids nearby"
+        }
+    ]
+}

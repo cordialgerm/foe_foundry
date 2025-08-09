@@ -1,0 +1,25 @@
+{
+    "name": "Nilbog",
+    "queries": [
+        {
+            "query": "humanoid creature that heals from damage and poisons foes",
+            "variant": "humaniod monster that heals from damage and can poison enemies"
+        },
+        {
+            "query": "small trickster that uses healing magic against adventurers",
+            "variant": "petite trickster that uses healing spells against adventurers"
+        },
+        {
+            "query": "quirky monster with unusual battle mechanics that avoids damage",
+            "variant": "quirky creature with odd battle mechanics that evades damage"
+        },
+        {
+            "query": "Nilbog abilities to reverse damage and evade attacks",
+            "variant": "nilbog powers that reverse damage and can dodge attacks"
+        },
+        {
+            "query": "mischievous small humanoid often found causing trouble",
+            "variant": "playful small humanoid frequently causing chaos"
+        }
+    ]
+}

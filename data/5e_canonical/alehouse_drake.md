@@ -1,6 +1,8 @@
 <MonsterName/>Alehouse Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Alehouse Drake is a tiny, chaotic neutral dragon known for its mischievous nature and clever tactics in battle. With a moderate challenge rating of 1, it poses a nuisance rather than a significant threat to more experienced adventurers. The drake's strengths lie in its agility and various abilities that can incapacitate opponents, making it a cunning adversary. It has a good armor class of 13, decent hit points totaling 45, and can move quickly on both land and in the air. However, its physical strength is notably low, which limits its effectiveness in direct combat. Overall, the Alehouse Drake excels in using its charm and trickery, while its notable immunity to poison adds to its survivability.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Intoxicating Breath works over a 15-foot cone and necessitates a DC 13 Const
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alehouse Drake
 
 *Tiny* *Dragon* *Chaotic Neutral*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5–6):** The drake uses one of the following breath weapons.
 - **Dazing Breath:** The alehouse drake exhales sweet-smelling gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Charisma saving throw or become incapacitated for 1 minute. While incapacitated, the creature is indifferent about creatures that it is hostile toward within 50 feet of the drake. If the creature is attacked, harmed by a spell, or witnesses any of its allies being harmed, it is no longer indifferent but remains incapacitated. The incapacitated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Intoxicating Breath:** The alehouse drake burps intoxicating gas in a 15-foot cone. Each creature in the area must make a DC 13 Constitution saving throw. On a failure, a creature takes 7 (2d6) poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

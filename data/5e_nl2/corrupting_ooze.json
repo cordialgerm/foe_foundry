@@ -1,0 +1,52 @@
+{
+    "name": "Corrupting Ooze",
+    "creature_type": "Ooze",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 115,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet walk speed",
+    "role": "Bruiser",
+    "tags": [
+        "ooze",
+        "corruption",
+        "poison"
+    ],
+    "adjectives": [
+        "corrupting",
+        "amorphous",
+        "malevolent"
+    ],
+    "description": "The Corrupting Ooze is a large, putrid mass with the ability to reshape its form. It is often seen as a dark and amorphous entity that exudes a foul stench.",
+    "memorable": "Its ability to destroy nonmagical items with its attacks makes it a disruptive force in combat.",
+    "goals": "To engulf and incapacitate foes while causing destruction through its toxic nature.",
+    "relations": "Often found in dark, damp environments, it may be encountered alongside other corrupted creatures or as a manifestation of decay.",
+    "environment": "Dark, damp areas like swamps, caves, or ruined places.",
+    "strengths": "Immune to poison damage and resistant to physical damage types.",
+    "weaknesses": "Low Dexterity impacts its agility, making it less maneuverable.",
+    "attacks": "Multiattack with two Slam attacks can devastate targets and potentially destroy their items.",
+    "most_powerful_ability": "Putrid Stench can incapacitate and harm nearby creatures with poison damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": "Good stealth skills enable it to move quietly and surprise opponents.",
+    "additional_information": [
+        "Does not require sleep, allowing for prolonged combat endurance.",
+        "Can reshape its form into a vaguely humanoid shape.",
+        "Effective at melee combat due to high Strength and Constitution scores.",
+        "Low Intelligence and Charisma make it ineffective in social situations.",
+        "Condition Immunities include being blinded, charmed, or frightened."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "foul ooze that destroys items",
+        "large poison slime with stench attack",
+        "amorphous creature in dark environments",
+        "ooze that can reshape into humanoid",
+        "toxic mass with brutal melee attacks"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Tendril Puppet",
+    "creature_type": "Plant",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 51,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "plant creature",
+        "minion",
+        "regenerative",
+        "magical resistance"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "defensive",
+        "agile"
+    ],
+    "description": "The Tendril Puppet is a medium-sized plant creature with strong defensive capabilities, featuring sharp thorns and a green coloration, reflecting its forest origins.",
+    "memorable": "Renowned for its regeneration in forests and telepathic coordination with its vine lord.",
+    "goals": "Assist its vine lord in combat and reconnaissance through strategic coordination and physical attacks.",
+    "relations": "Usually found in the company of a vine lord, and works alongside other tendril puppets.",
+    "environment": "Commonly located in forested areas where it can regenerate.",
+    "strengths": "Regenerates health in forests; resistant to magical effects.",
+    "weaknesses": "Vulnerable to fire, which impairs its survival.",
+    "attacks": "Utilizes a melee attack called Thorned Slam and a ranged attack known as Ball of Thorns, dealing significant bludgeoning and piercing damage.",
+    "most_powerful_ability": "Green Regeneration allows it to recover hit points while in forested areas.",
+    "equipment": null,
+    "senses": "Has blindsight for 60 feet but is blind beyond that radius.",
+    "skills": null,
+    "additional_information": [
+        "Connected to a vine lord via a hive mind for strategic communication.",
+        "Can pass through thorns without taking damage due to Woodland Walk.",
+        "Advantage on saving throws against spells due to Magic Resistance."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature with thorn attacks",
+        "forest puppet with regeneration abilities",
+        "magical resistant plant minion",
+        "creature that communicates telepathically with vine lord",
+        "medium plant that thrives in forests"
+    ]
+}

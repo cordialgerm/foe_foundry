@@ -1,0 +1,25 @@
+{
+    "name": "Brown Bear",
+    "queries": [
+        {
+            "query": "large beast that has a strong bite and claws",
+            "variant": "big beast with powerful claws and bite"
+        },
+        {
+            "query": "bear with heightened smell ability that grapples",
+            "variant": "bear that can grapple and has strong smelling ability"
+        },
+        {
+            "query": "creature with low armor class and high strength in forest",
+            "variant": "animal with poor armor but great strength in the woods"
+        },
+        {
+            "query": "strong animal known for its multiattack and decent speed",
+            "variant": "powerful beast famous for its dual attack and good speed"
+        },
+        {
+            "query": "beast that excels at tracking and has a climbing speed",
+            "variant": "creature good at tracking with the ability to climb"
+        }
+    ]
+}

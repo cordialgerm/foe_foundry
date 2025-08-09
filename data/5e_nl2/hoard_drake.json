@@ -1,0 +1,52 @@
+{
+    "name": "Hoard Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 147,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "treasure",
+        "greed"
+    ],
+    "adjectives": [
+        "greedy",
+        "powerful",
+        "malevolent"
+    ],
+    "description": "The Hoard Drake is a large dragon known for its greed and affinity for treasure, characterized by a powerful physique and dense scales.",
+    "memorable": "Its ability to exhale molten gold and gain advantages against treasure-holding foes makes it exceptionally dangerous.",
+    "goals": "The Hoard Drake seeks to protect its treasure hoard and eliminate those who threaten it.",
+    "relations": "Often encountered safeguarding treasures or working alongside other treasure-driven creatures.",
+    "environment": "Commonly found in lairs filled with valuable items, such as caves or ruins.",
+    "strengths": "Immune to fire damage, making it resistant to fiery attacks.",
+    "weaknesses": "Low Dexterity results in poor agility during combat.",
+    "attacks": "Utilizes a powerful bite and two claw attacks, dealing significant damage.",
+    "most_powerful_ability": "Midas Breath allows the drake to exhale molten gold, damaging foes and creating hazardous clinging gold.",
+    "equipment": null,
+    "senses": "Can sense valuable items within 60 feet, enhancing its treasure-hunting capabilities.",
+    "skills": "Proficient in Arcana, History, and Nature, showcasing extensive knowledge about lore and natural aspects.",
+    "additional_information": [
+        "The drake can track its treasures effectively with advantage on perception checks.",
+        "Can differentiate between various types of metals and determine if they are magical.",
+        "Possesses an impressive Constitution score, ensuring durability in battle.",
+        "Its physical strength makes it formidable in melee combat.",
+        "The dragon's greed influences its combat strategy, often prioritizing foes with treasure."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "greedy dragon that breathes molten gold",
+        "powerful dragon guarding treasure",
+        "dragon immune to fire with treasure sense",
+        "large dragon with devastating breath attack",
+        "dragon skilled in Arcana and History"
+    ]
+}

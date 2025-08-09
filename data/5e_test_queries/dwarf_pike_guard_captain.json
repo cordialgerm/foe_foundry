@@ -1,0 +1,25 @@
+{
+    "name": "Dwarf, Pike Guard Captain",
+    "queries": [
+        {
+            "query": "medium humanoid with strong tactical abilities and poison resistance",
+            "variant": "medium humanoid creature that is tactically strong and resistant to poison"
+        },
+        {
+            "query": "dwarven guard captain that excels in defensive roles and has a pike",
+            "variant": "dwarven captain that is great in defense and wields a pike"
+        },
+        {
+            "query": "tall dwarf in plate armor capable of inspiring allies and controlling the battlefield",
+            "variant": "dwarf in plate armor who can inspire allies and dominate the battlefield"
+        },
+        {
+            "query": "warrior that can see in darkness and uses a pike for melee combat",
+            "variant": "fighter able to see in the dark and fights with a pike"
+        },
+        {
+            "query": "pike guard that provides tactical buffs and has low agility",
+            "variant": "pike captain that gives tactical boosts and has poor agility"
+        }
+    ]
+}

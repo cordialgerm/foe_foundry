@@ -1,0 +1,25 @@
+{
+    "name": "Vengeful Ghost",
+    "queries": [
+        {
+            "query": "undead ghost that can possess humanoids and has a haunting presence",
+            "variant": "ghost that is undead and can control humanoids with a haunting vibe"
+        },
+        {
+            "query": "medium ghost with necrotic attacks and ethereal movement",
+            "variant": "medium-sized ghost that has necrotic damage and moves ethereally"
+        },
+        {
+            "query": "ghost that frightens and drains life with touch in dark environments",
+            "variant": "haunting ghost that terrifies and ages foes with its touch in darkness"
+        },
+        {
+            "query": "vengeful ghost immune to cold and with a 40-foot fly speed",
+            "variant": "ghost that is immune to cold damage and can fly at 40 feet"
+        },
+        {
+            "query": "haunting undead that returns after defeat and weak in melee combat",
+            "variant": "undead that haunts and comes back after being defeated and struggles in melee"
+        }
+    ]
+}

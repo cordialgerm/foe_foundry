@@ -1,0 +1,25 @@
+{
+    "name": "Radiant Spark Swarm",
+    "queries": [
+        {
+            "query": "magic-detecting swarm that emits bright light",
+            "variant": "bright light emitting swarm that detects magic"
+        },
+        {
+            "query": "flying elemental swarm with damage immunities",
+            "variant": "damage immune flying elemental swarm"
+        },
+        {
+            "query": "swarm that can hover and attack magical items",
+            "variant": "hovering swarm that attacks items that are magical"
+        },
+        {
+            "query": "radiant elemental swarm that causes fire damage",
+            "variant": "elemental swarm that deals fire damage and is radiant"
+        },
+        {
+            "query": "medium swarm with high dexterity and radiant attacks",
+            "variant": "dexterous medium swarm with radiant damage attacks"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Witchlight",
+    "creature_type": "Construct",
+    "alignment": "Any Alignment",
+    "size": "Tiny",
+    "hp": 20,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "construct",
+        "light",
+        "blinding"
+    ],
+    "adjectives": [
+        "tiny",
+        "enchanting",
+        "fragile",
+        "perceptive"
+    ],
+    "description": "The Witchlight is a tiny, enchanting construct capable of emitting light and affecting its surroundings with blinding bursts.",
+    "memorable": "This creature's ability to blind opponents with bright flashes of light makes it a unique and strategic challenge.",
+    "goals": "Typically serves as an enchanting companion or minor adversary, often leveraging its abilities to support or hinder others.",
+    "relations": null,
+    "environment": "Can be found in various environments, often near magical locations.",
+    "strengths": "Immunity to poison, psychic, and radiant damage along with various conditions makes it resilient in combat.",
+    "weaknesses": "Susceptible to antimagic effects, which can incapacitate it easily.",
+    "attacks": "Uses a Light Blast that deals radiant damage, and a blinding Flash ability that affects multiple creatures.",
+    "most_powerful_ability": "The Flash ability which can blind multiple creatures at once, significantly impacting combat dynamics.",
+    "equipment": null,
+    "senses": "Has darkvision with a range of 60 feet and a passive perception of 14.",
+    "skills": "Possesses a +4 bonus to Perception checks, making it quite perceptive.",
+    "additional_information": [
+        "Construct nature means it does not require food or sleep.",
+        "Can adjust its illumination radius as a bonus action.",
+        "Vulnerable to dispel magic with a chance of falling unconscious."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny glowing construct that can blind",
+        "enchanting creature that emits bright light",
+        "fragile construct immune to poison and psychic",
+        "magic creature that can change light radius",
+        "tiny creature with abilities to affect visibility"
+    ]
+}

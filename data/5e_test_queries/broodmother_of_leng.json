@@ -1,0 +1,25 @@
+{
+    "name": "Broodmother of Leng",
+    "queries": [
+        {
+            "query": "huge spider-themed monster that casts spells and commands spider allies",
+            "variant": "massive spider-like creature that uses magic and controls arachnid minions"
+        },
+        {
+            "query": "chaotic evil aberration with poison damage abilities and spellcasting",
+            "variant": "evil chaotic monster capable of poisoning and using magic"
+        },
+        {
+            "query": "monster with high Strength and the ability to summon swarms of spiderlings",
+            "variant": "creature with great melee power that can call spider swarms"
+        },
+        {
+            "query": "resilient aberration with darkvision that can communicate in Void Speech",
+            "variant": "strong aberration character with darkvision and the ability to speak Void Speech"
+        },
+        {
+            "query": "creature that uses poisonous blood as a defense in close combat",
+            "variant": "monster using toxic blood for protection in melee attacks"
+        }
+    ]
+}

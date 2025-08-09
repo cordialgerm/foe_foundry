@@ -1,0 +1,51 @@
+{
+    "name": "Orca",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 80,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "swim speed of 60 feet, 0 feet on land",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "beast",
+        "predator",
+        "intelligent"
+    ],
+    "adjectives": [
+        "formidable",
+        "intelligent",
+        "powerful"
+    ],
+    "description": "The orca is a large and intelligent aquatic beast with strong physical capabilities, characterized by its distinctive black and white coloration.",
+    "memorable": "Its ability to stun enemies with its Tail Slap makes it a unique threat in water.",
+    "goals": "Often hunts for food and maintains territory in aquatic environments.",
+    "relations": "May be found near other aquatic creatures and could have a complex ecosystem relationship with dolphins or sea birds.",
+    "environment": "Primarily found in oceans, where it utilizes its agility and echolocation.",
+    "strengths": "Exceptional swimming ability allows it to navigate water rapidly, and it possesses strong melee attacks with bite and tail slap.",
+    "weaknesses": "Severely limited movement options on land, making it vulnerable outside its aquatic environment.",
+    "attacks": "Can perform multiattacks, delivering significant piercing damage with its powerful Bite attacks.",
+    "most_powerful_ability": "Tail Slap ability can knock targets prone and potentially stun them, greatly affecting combat dynamics.",
+    "equipment": null,
+    "senses": "Has keen senses with 120 feet of perception, allowing it to detect sounds effectively.",
+    "skills": null,
+    "additional_information": [
+        "Can hold its breath for up to 30 minutes underwater.",
+        "Utilizes echolocation to navigate underwater.",
+        "Possesses a perception score of 18 when hearing is involved."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful aquatic predator with echolocation",
+        "intelligent huge beast living in oceans",
+        "monster that can stun enemies with tail slap",
+        "black and white swimming creature that holds breath",
+        "formidable predator found in water"
+    ]
+}

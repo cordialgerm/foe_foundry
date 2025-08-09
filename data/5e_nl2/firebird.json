@@ -1,0 +1,53 @@
+{
+    "name": "Firebird",
+    "creature_type": "Celestial",
+    "alignment": "Neutral Good",
+    "size": "Small",
+    "hp": 88,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "60 ft. walking, 20 ft. flying",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "fire",
+        "healer",
+        "protector"
+    ],
+    "adjectives": [
+        "small",
+        "fiery",
+        "supportive"
+    ],
+    "description": "The Firebird is a small celestial creature, embodying radiant features adorned with glowing feathers. It has a beak and talons, with a striking ability to shed bright light.",
+    "memorable": "The ability to compel good deeds and provide both offensive fire damage and significant healing makes the Firebird particularly unique.",
+    "goals": "To protect and heal its allies while promoting good in others.",
+    "relations": "Associated with celestial beings and could be a servant or ally to larger celestial entities.",
+    "environment": "Typically found in celestial realms or places of great goodness and light, often appearing to aid those in need.",
+    "strengths": "High dexterity and charisma, immunity to fire and poison damage, and the ability to enforce good deeds through magical influence.",
+    "weaknesses": "Moderate armor class and vulnerability to magical attacks.",
+    "attacks": "Utilizes multiattack with a beak and talon for swift, powerful strikes, supplemented by fiery damage.",
+    "most_powerful_ability": "Can compel those it aids to assist others, akin to the geas spell, for a month.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet, providing superior awareness of its surroundings.",
+    "skills": "Excels in Insight, Medicine, and Perception, reflecting its supportive nature.",
+    "additional_information": [
+        "Can shed bright light to support allies.",
+        "Has magic resistance against spells.",
+        "Can heal and cure conditions three times a day.",
+        "Fire damage is significant, adding to its basic attacks.",
+        "Possesses unique abilities that enhance allies' resilience to cold."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial creature that heals and fights",
+        "fire monster with blinding light ability",
+        "small celestial healer with glowing feathers",
+        "creature that protects allies and enforces good",
+        "firebird abilities and combat strategies"
+    ]
+}

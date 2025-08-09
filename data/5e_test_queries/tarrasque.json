@@ -1,0 +1,25 @@
+{
+    "name": "Tarrasque",
+    "queries": [
+        {
+            "query": "towering monster with regenerative abilities that causes destruction",
+            "variant": "massive creature that can regenerate and leaves destruction in its wake"
+        },
+        {
+            "query": "gigantic titan with high hit points and immune to nonmagical weapons",
+            "variant": "huge titan with 680 hit points and immunity to regular weapon damage"
+        },
+        {
+            "query": "monstrous creature that can swallow foes and has legendary resistance",
+            "variant": "monstrous being able to swallow enemies and with legendary resistances"
+        },
+        {
+            "query": "destructive giant that can reflect spells and has a frightening roar",
+            "variant": "massive creature capable of reflecting spells and unleashing a terrifying roar"
+        },
+        {
+            "query": "unstoppable creature that lives underground and surfaces rarely",
+            "variant": "relentless monster that spends most of its time underground and emerges infrequently"
+        }
+    ]
+}

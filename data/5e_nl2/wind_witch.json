@@ -1,0 +1,50 @@
+{
+    "name": "Wind Witch",
+    "creature_type": "Plant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 66,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 ft. walking, 60 ft. flying",
+    "role": null,
+    "tags": [
+        "plant",
+        "flying",
+        "fire"
+    ],
+    "adjectives": [
+        "chaotic",
+        "nimble",
+        "dangerous"
+    ],
+    "description": "The Wind Witch is a Large plant creature that can fly and possesses a cunning ability to use fire-based attacks. It can regenerate in the form of a tumbleweed when reduced to 0 hit points.",
+    "memorable": "It can transform into a tumbleweed to escape defeat and has risky interactions with fire which make it a dangerous opponent.",
+    "goals": "To ambush adventurers and utilize its fire abilities for maximal damage.",
+    "relations": "May be encountered alongside other chaotic evil creatures in areas that promote flight and flames.",
+    "environment": "Thrives in environments conducive to flight and fire.",
+    "strengths": "High Dexterity makes it nimble and evasive; can regenerate in tumbleweed form.",
+    "weaknesses": "Very low Strength and Intelligence scores hinder its physical and cognitive capabilities.",
+    "attacks": "Can perform two Slam attacks or one Slam and its Capture ability; Slam deals both bludgeoning and piercing damage.",
+    "most_powerful_ability": "Cursed Plant allows it to escape and regenerate unless it was damaged by fire.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures even while blind.",
+    "skills": "Average perception skills with a passive score of 12.",
+    "additional_information": [
+        "Regains 5 hit points each hour in tumbleweed form unless affected by fire.",
+        "Catches fire when damaged by fire, continually taking damage.",
+        "Can engulf a creature and restrain them, causing damage if they try to move."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that can fly and regenerate",
+        "nimble creature with fire abilities",
+        "Wind Witch capture and fire tactics",
+        "large chaotic evil flying plant",
+        "creature that transforms into tumbleweed when defeated"
+    ]
+}

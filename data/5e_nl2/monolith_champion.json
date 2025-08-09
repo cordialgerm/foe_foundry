@@ -1,0 +1,53 @@
+{
+    "name": "Monolith Champion",
+    "creature_type": "Construct",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 102,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "magic",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "relentless"
+    ],
+    "description": "The Monolith Champion is a large construct with imposing stature designed for melee combat, with a unique glowing blue fey fire enhancing its attacks.",
+    "memorable": "It strikes hard with devastating weapon attacks that can render enemies paralyzed and create illusory doubles to confuse allies.",
+    "goals": "Designed for combat encounters, often found guarding important locations or serving a powerful entity.",
+    "relations": "Often encountered alongside other constructs or creatures of the fey.",
+    "environment": "Typically found in fey courts, castles, or places of significant magical presence.",
+    "strengths": "Immunity to various damage types and conditions, and its powerful weapon attacks can deal massive damage.",
+    "weaknesses": "Limited dexterity and intelligence affect its mobility and strategic options in battle.",
+    "attacks": "Uses a devastating Greatsword attack dealing slashing and additional elemental damage, and a slam attack for consistent bludgeoning damage.",
+    "most_powerful_ability": "Coldfire Weapons, which adds significant cold or fire damage to its weapon attacks.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in darkness up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to poison and psychic damage.",
+        "Does not require air, food, drink, or sleep.",
+        "Paralyzes enemies with a controlling illusion in specific environments.",
+        "Can deal 3d8 damage of cold or fire type on weapon hits.",
+        "Exhibits exceptional melee attack power."
+    ],
+    "damage_types": [
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large construct with powerful melee attacks",
+        "blue fey fire melee attacker",
+        "monolith champion with paralyzing illusion abilities",
+        "creature immune to poison and psychic damage",
+        "fey court guardian that controls enemies"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Garlicle",
+    "queries": [
+        {
+            "query": "small plant creature that uses tricks in combat",
+            "variant": "trickster small plant creature in battle"
+        },
+        {
+            "query": "chaotic neutral plant with blinding ability",
+            "variant": "plant that is chaotic neutral with a blinding effect"
+        },
+        {
+            "query": "stealthy plant creature with insights and perception skills",
+            "variant": "plant creature skilled in stealth, insight and perception"
+        },
+        {
+            "query": "creature that can cast spells and has a unique fortune mechanic",
+            "variant": "monster with spellcasting abilities and a special fortune feature"
+        },
+        {
+            "query": "plant monster that thrives in obscuring terrain",
+            "variant": "monster that excels in terrain with ample obscurity"
+        }
+    ]
+}

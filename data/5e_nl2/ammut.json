@@ -1,0 +1,54 @@
+{
+    "name": "Ammut",
+    "creature_type": "Celestial",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 172,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "undead hunter",
+        "predator"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "intimidating"
+    ],
+    "description": "Ammut is a large celestial creature with robust natural armor that provides excellent defense. It possesses a strong physical presence, particularly with high Strength and Constitution scores. Its bite is formidable, capable of dealing significant damage, and it has a unique ability to swallow foes.",
+    "memorable": "Ammut's ability to stun undead creatures with its aura and its capacity to absorb spirits makes it a terrifying predator in combat.",
+    "goals": "Ammut typically seeks to hunt and disable undead entities, utilizing its unique abilities to neutralize threats.",
+    "relations": "Ammut may have connections with other celestial beings or guardians of the living, often seen as a foe of undead creatures.",
+    "environment": "Ammut can usually be found in areas plagued by undead, such as graveyards or haunted ruins.",
+    "strengths": "Ammut boasts high physical attributes, particularly in Strength and Constitution, along with damage immunities and resistances.",
+    "weaknesses": "Ammut has low Intelligence and limited problem-solving capabilities, making it less effective in strategic situations.",
+    "attacks": "Ammut's primary attack is its bite, dealing piercing and radiant damage, and it can grapple and swallow targets, blinding and restraining them.",
+    "most_powerful_ability": "Ghost Breath allows Ammut to automatically destroy weak undead and incapacitate stronger ones, reinforcing its dominance over the undead.",
+    "equipment": null,
+    "senses": "Ammut has an impressive passive Perception score of 21, enhancing its awareness.",
+    "skills": "Ammut is exceptionally skilled in Perception, allowing it to sense its surroundings and detect hidden foes.",
+    "additional_information": [
+        "Ammut has immunity to necrotic damage and resists cold and radiant damage.",
+        "It is immune to the frightened condition.",
+        "It has magic resistance, granting it advantage on saving throws against spells.",
+        "Ammut can sustain a creature in its belly, preventing the need for food, water, or air.",
+        "Ammut excels in combat against undead, making it a key ally or foe in related encounters."
+    ],
+    "damage_types": [
+        "necrotic",
+        "cold",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial predator of the undead",
+        "Ammut abilities",
+        "creature with spirit absorption powers",
+        "undead punisher celestial",
+        "intimidating celestial creature"
+    ]
+}

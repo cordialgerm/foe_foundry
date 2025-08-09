@@ -1,6 +1,8 @@
 <MonsterName/>Green Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>82</HP>
 <summary>A Green Hag is a hideous, malevolent fey creature that thrives on the misery of others. Its gnarled, sickly green skin and long, clawed hands give it a fearsome appearance. Green Hags are known for their cunning and cruelty, often using illusions and deception to manipulate and torment their victims. They dwell in dark forests, swamps, or caves, where they lure unsuspecting travelers into traps. Green Hags can mimic voices and sounds, creating confusion and fear among their prey, and they are skilled in dark magic, capable of cursing those who cross their path.</summary>
 
 <summary>The Green Hag is a Medium Fey creature renowned for its cunning and malevolent nature. It serves as a formidable opponent in encounters where trickery, manipulation, and fear are afoot. With a challenge rating of 3, the Green Hag possesses a solid mix of offensive capabilities and spellcasting, allowing it to control the battlefield and sway outcomes to its favor. Its strengths lie in its innate spellcasting, ability to deceive, and the potential to inflict debilitating curses on unsuspecting foes, while its weaknesses may include vulnerability to certain damage types and reliance on its spells to maintain an advantage.</summary>
@@ -21,6 +23,7 @@ The ability to become invisible for up to an hour through its Invisibility spell
 
 Source: 5e_srd
 
+<statblock>
 ### Green Hag
 
 *Medium fey, neutral evil*
@@ -59,7 +62,8 @@ At will: *dancing lights*, *minor illusion*, *vicious mockery*
 
 The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that the hag is disguised.
 
-***Invisible Passage***. The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.
+***Invisible Passage***. The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.</statblock>
+
 
 
 
@@ -67,6 +71,7 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Green Hag
 
 *Medium* *Fey*
@@ -103,5 +108,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility (2nd-Level; V, S, Concentration):** The hag is invisible for 1 hour. The spell ends if the hag attacks  uses Hex  or casts a spell.
 
 
+</statblock>
 
 

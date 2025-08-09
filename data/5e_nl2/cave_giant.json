@@ -1,0 +1,54 @@
+{
+    "name": "Cave Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 200,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "cave",
+        "large",
+        "aggressive"
+    ],
+    "adjectives": [
+        "formidable",
+        "strong",
+        "durable",
+        "vulnerable to sunlight"
+    ],
+    "description": "The Cave Giant is a massive creature with raw physical strength, characterized by its enormous size and tusks, capable of inflicting substantial melee damage.",
+    "memorable": "The cave giant's sunlight petrification ability makes it a unique threat, especially in environments with light exposure.",
+    "goals": "Typically seeks to dominate its territory and engage in combat.",
+    "relations": "Could be encountered alongside other giants or cave-dwelling creatures.",
+    "environment": "Often found in dark caves or subterranean areas.",
+    "strengths": "Exceptional physical strength and durability, with powerful melee and ranged attacks.",
+    "weaknesses": "Severely weakened and vulnerable when exposed to sunlight.",
+    "attacks": "Utilizes multi-attack options featuring handaxe slashes and tusk strikes, along with a strong rock throw.",
+    "most_powerful_ability": "Sunlight Petrification inflicts heavy penalties in sunlight and can lead to immobility if defeated under such conditions.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet and a passive perception score of 15.",
+    "skills": "Excels at athletics, with strong proficiency in perception and survival.",
+    "additional_information": [
+        "Has a very high strength score of 27.",
+        "Possesses a strong constitution score of 22, ensuring resilience.",
+        "Below-average intelligence and charisma, limiting strategic and social capabilities.",
+        "Can knock over opponents with its tusks attack.",
+        "Vulnerable to radiant damage when in direct sunlight."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive cave-dwelling monster",
+        "giant with sunlight vulnerability",
+        "powerful melee attacker in caves",
+        "creature that petrifies in sunlight",
+        "aggressive giant with tusks"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Grimmlet",
+    "queries": [
+        {
+            "query": "tiny flying psychic damage monster that can replicate",
+            "variant": "tiny psychic damage dealing flying monster that can create duplicates"
+        },
+        {
+            "query": "small creature with self-destruct ability that hovers",
+            "variant": "small hovering creature with ability to self-destruct"
+        },
+        {
+            "query": "monstrosity that understands Void Speech and has psychic immunity",
+            "variant": "creature that knows Void Speech and is immune to psychic damage"
+        },
+        {
+            "query": "monster with low hit points that generates new clones when hit by spells",
+            "variant": "low HP monster that creates clones when damaged by spells"
+        },
+        {
+            "query": "Grimmlet tactical abilities and replication mechanism",
+            "variant": "tactical abilities of Grimmlet and its mechanism for replication"
+        }
+    ]
+}

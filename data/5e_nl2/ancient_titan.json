@@ -1,0 +1,56 @@
+{
+    "name": "Ancient Titan",
+    "creature_type": "Celestial",
+    "alignment": "Neutral Good",
+    "size": "Gargantuan",
+    "hp": 198,
+    "ac": 15,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "12",
+    "movement": "30 feet per turn",
+    "role": null,
+    "tags": [
+        "celestial",
+        "titan",
+        "powerful",
+        "magic resistant",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "mighty",
+        "devastating",
+        "amphibious"
+    ],
+    "description": "The Ancient Titan is a gargantuan celestial creature that embodies strength and power. It has a towering presence and is noted for its robust build and the shimmering essence that radiates from its form.",
+    "memorable": "The Ancient Titan's ability to manipulate reality and stunning foes with a powerful voice makes it a unique and terrifying opponent in battle.",
+    "goals": "To uphold righteousness and justice, often intervening in conflicts where it can aid the oppressed.",
+    "relations": "Might be allied with other celestial beings or serve as a guardian of sacred places.",
+    "environment": "Typically found in high celestial realms or areas of great natural beauty.",
+    "strengths": "High physical prowess with a Strength score of 27, substantial hit points, and strong saving throws, particularly against magical effects.",
+    "weaknesses": "While resilient, it has a notable weakness to magical effects that are not mitigated by its Magic Resistance.",
+    "attacks": "Utilizes a combination of physical strikes with a greatsword and debilitating magical attacks that inflict force damage.",
+    "most_powerful_ability": "Reality-Altering Words can displace enemies, knock them prone, and cancel magical effects in a large area.",
+    "equipment": "Greatsword",
+    "senses": "Has passive perception of 17, which makes it perceptive in its surroundings.",
+    "skills": "Proficient in Athletics and Intimidation, with a respectable perception skill.",
+    "additional_information": [
+        "Amphibious, can breathe air and water.",
+        "Magic Resistance provides advantage against spells.",
+        "Can stun multiple targets with Stunning Word.",
+        "Has substantial damage resistance against nonmagical attacks."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan celestial warrior",
+        "ancient titan creature",
+        "formidable giant celestial",
+        "celestial with magic resistance",
+        "titan with reality-altering powers"
+    ]
+}

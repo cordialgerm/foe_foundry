@@ -1,6 +1,8 @@
 <MonsterName/>Yaojing</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>15</CR>
+<AC/>15</AC>
+<HP/>202</HP>
 <summary>The Yaojing is a powerful celestial creature embodying the ideals of neutrality and benevolence. As an intelligent and agile being, it possesses an impressive array of abilities and spells that make it both a formidable opponent in combat and an ally in more nuanced situations. With an armor class of 15 and hit points totaling 202, it can withstand significant damage during encounters. The Yaojing excels in dexterity and charisma, enabling it to evade attacks effectively and influence others. Its strengths lie in its exceptional magical abilities and its capacity to detect deceit. However, it remains vulnerable to magical attacks if those spells bypass its resistances. The creature's challenge rating of 15 makes it a serious contender for mid-level adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The "Blasphemer’s Bane" ability allows the Yaojing to create a ward against a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yaojing
 
 *Medium* *Celestial* *neutral good*
@@ -62,5 +65,6 @@ At will: detect evil and good, silence
 - **Radiant Spin (Recharge 5-6):** The yaojing performs a spinning kick brimming with radiant energy. Each creature within 10 feet of the yaojing must make a DC 18 Dexterity saving throw. On a failure, a creature takes 22 (5d8) bludgeoning damage and 22 (5d8) radiant damage and is pushed up to 10 feet away from the yaojing. On a success, a creature takes half the damage and isn’t pushed.
 
 
+</statblock>
 
 

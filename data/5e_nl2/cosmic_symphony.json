@@ -1,0 +1,56 @@
+{
+    "name": "Cosmic Symphony",
+    "creature_type": "Celestial",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 200,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "fly 60 ft., immobile on the ground",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "magical",
+        "flying",
+        "thunder",
+        "area control"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "invisible",
+        "incapacitating"
+    ],
+    "description": "The Cosmic Symphony is a large celestial creature that flies gracefully and is invisible, creating an ethereal and majestic presence in combat. Its body resonates with thunderous power, showcasing a harmonious blend of beauty and danger.",
+    "memorable": "It can incapacitate multiple foes with its Universal Music while rendering itself unseen and untouchable in its aerial domain.",
+    "goals": "To control the battlefield using its music and overwhelming enemy forces.",
+    "relations": "May be encountered alongside other celestial beings or as a guardian of places of great power.",
+    "environment": "Typically found in areas infused with magical energy or where celestial beings congregate.",
+    "strengths": "Possesses damage immunities and resistances, making it highly resilient, and excels in area control with its powerful songs.",
+    "weaknesses": "Immobile on the ground, which limits its physical interaction with creatures or objects at ground level.",
+    "attacks": "Can unleash thunder damage with Discordant Waves, inflicting significant area-of-effect damage and potentially deafening foes.",
+    "most_powerful_ability": "The ability to incapacitate multiple creatures with its Universal Music, providing a major tactical advantage in battles.",
+    "equipment": null,
+    "senses": "Has truesight up to 120 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Proficient in perception, enabling it to effectively detect hidden or concealed creatures.",
+    "additional_information": [
+        "Naturally invisible, which enhances its tactical surprise.",
+        "Legendary Resistance allows it to automatically succeed on failed saving throws.",
+        "Magic Resistance grants it advantage on saving throws against spells.",
+        "Can heal itself with the Major Chord legendary action.",
+        "Leaves a powerful impact with its area damage capabilities."
+    ],
+    "damage_types": [
+        "thunder",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful celestial creature that flies invisibly",
+        "large creature with thunder abilities and area control",
+        "invisible celestial that incapacitates enemies",
+        "thunder damage dealer with area effects",
+        "fiery celestial music monster"
+    ]
+}

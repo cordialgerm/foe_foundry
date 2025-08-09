@@ -1,0 +1,25 @@
+{
+    "name": "Meerkats, Swarm",
+    "queries": [
+        {
+            "query": "medium-sized swarm of fuzzy meerkats that can restrict movement",
+            "variant": "swarm of fuzzy meerkats that are medium-sized and restrict movement"
+        },
+        {
+            "query": "small animals that overwhelm enemies with numbers and can dodge attacks",
+            "variant": "small creatures that can dodge and overwhelm foes with their numbers"
+        },
+        {
+            "query": "beast that has a biting attack and lives in burrows",
+            "variant": "beast with a bite attack that dwells in burrows"
+        },
+        {
+            "query": "quirky meerkats that can avoid being frightened and have keen sight",
+            "variant": "meerkats that are quirky, have keen sight, and avoid fear"
+        },
+        {
+            "query": "swarm of meerkats with immunities to several conditions and a melee attack",
+            "variant": "melee attacking swarm of meerkats immune to multiple conditions"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Peryton",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 34,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft. fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flyer",
+        "predator"
+    ],
+    "adjectives": [
+        "brutal",
+        "agile",
+        "vicious"
+    ],
+    "description": "The Peryton is a large creature with a blend of avian and deer features, showcasing a formidable appearance. It possesses sharp claws and a vicious gore attack, enhancing its combat style.",
+    "memorable": "Its ability to rip out a humanoid's heart after a kill creates a terrifying image and adds a gruesome element to its nature.",
+    "goals": "Typically hunts prey in its environment, using its flight capabilities to ambush and attack.",
+    "relations": "Often seen as a solitary predator, it may cross paths with other creatures in its territory.",
+    "environment": "Commonly found in forests or mountainous regions, where it can take advantage of both ground and aerial combat.",
+    "strengths": "Exhibits damage resistance against nonmagical weapons and benefits from keen sight and smell for enhanced perception.",
+    "weaknesses": "Lacks spellcasting abilities, relying solely on physical prowess.",
+    "attacks": "Utilizes both gore and talons in combat, with the potential for increased damage when charging toward a target.",
+    "most_powerful_ability": "The ability to rip out the heart of a humanoid after incapacitating them is both brutal and memorable.",
+    "equipment": null,
+    "senses": "Possesses keen senses with advantage on Perception checks related to sight or smell.",
+    "skills": "Has a good perception skill with a +3 modifier, helping it notice hidden threats effectively.",
+    "additional_information": [
+        "Combines aerial agility with strong melee attacks, making it a dangerous predator.",
+        "Can inflict critical hits on specific rolls, increasing its lethality.",
+        "Gains bonus damage with talons if it moves swiftly toward its target."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aerial predator with deer features",
+        "brutal flying monster that rips out hearts",
+        "agile creature with sharp claws and gore attacks",
+        "predator known for keen sight and smell",
+        "vicious flying monstrosity that hunts in forests"
+    ]
+}

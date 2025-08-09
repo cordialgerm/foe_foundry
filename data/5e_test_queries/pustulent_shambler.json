@@ -1,0 +1,25 @@
+{
+    "name": "Pustulent Shambler",
+    "queries": [
+        {
+            "query": "gargantuan ooze with disease-spreading abilities",
+            "variant": "gargantuan ooze that spreads diseases"
+        },
+        {
+            "query": "slimy monster that absorbs flesh and causes poison",
+            "variant": "slimy creature that absorbs flesh and can poison"
+        },
+        {
+            "query": "creature with corrosive effect on bone and debilitating infection",
+            "variant": "monster with bone-corrosive effects and infecting disease"
+        },
+        {
+            "query": "ooze that can squeeze through tight spaces and has a stench",
+            "variant": "ooze that moves through tight spots and has a bad smell"
+        },
+        {
+            "query": "Pustulent Shambler's multiattack and its Bonerot disease",
+            "variant": "Pustulent Shambler's multiple attacks and Bonerot infection"
+        }
+    ]
+}

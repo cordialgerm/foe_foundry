@@ -1,6 +1,8 @@
 <MonsterName/>Cueyatl Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>36</HP>
 <summary>The Cueyatl Warrior is a small, humanoid creature that embodies a lawful evil alignment. As a combatant, it possesses a combination of agility, survivability, and unique abilities that allow it to operate effectively both on land and in water. With a Challenge Rating of 1, it presents a moderate threat to adventurers, balancing its decent offensive capabilities with useful defensive traits. While its hit points and armor class provide a fair degree of durability, its primary strengths lie in its movement and combat versatility, particularly in jungle environments where it can thrive. However, being a small creature may limit its physical strength compared to larger opponents.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of its actions during combat, the Cueyatl Warrior wields a battleaxe. F
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cueyatl Warrior
 
 *Small* *Humanoid* *lawful evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Battleaxe:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage plus 7 (2d6) poison damage, or 7 (1d10 + 2) slashing damage plus 7 (2d6) poison damage if used with two hands.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Citrullus",
+    "queries": [
+        {
+            "query": "plant monster that resembles a melon with sticky juice",
+            "variant": "melon-like plant creature that has sticky juice"
+        },
+        {
+            "query": "creature that has a powerful bite and can spray acid",
+            "variant": "monster with strong bite attack and acid spray ability"
+        },
+        {
+            "query": "plant creature that can camouflage as a regular melon plant",
+            "variant": "plant monster that can disguise itself as a normal melon"
+        },
+        {
+            "query": "Citrullus abilities like Gush and Bile Spray",
+            "variant": "abilities of Citrullus including Gush and Bile Spray"
+        },
+        {
+            "query": "strong plant creature vulnerable to bludgeoning damage",
+            "variant": "powerful plant monster weak against bludgeoning attacks"
+        }
+    ]
+}

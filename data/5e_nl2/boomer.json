@@ -1,0 +1,50 @@
+{
+    "name": "Boomer",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 7,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "0 feet, completely immobile",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "deceptive",
+        "damage"
+    ],
+    "adjectives": [
+        "unique",
+        "damaging",
+        "chaotic"
+    ],
+    "description": "The Boomer is a Medium Plant creature resembling an ordinary fungus when motionless. It has a muted coloration and lacks physical defense.",
+    "memorable": "Its powerful sonic abilities can incapacitate and damage foes at an unexpected range, punishing enemies upon its defeat.",
+    "goals": "To control the battlefield by incapacitating foes and alerting nearby creatures.",
+    "relations": "It may be found in areas where other plants thrive or alongside creatures sensitive to sound.",
+    "environment": "Often found in forested or overgrown regions, blending in with fungi.",
+    "strengths": "Immune to thunder damage and has special abilities that can incapacitate multiple foes.",
+    "weaknesses": "Extremely low physical stats make it vulnerable to direct attacks, and it cannot move.",
+    "attacks": "Employs sonic-based attacks that can incapacitate and deal thunder damage.",
+    "most_powerful_ability": "Deafening Boom, which incapacitates foes and can control the battlefield dynamics.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, detecting creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "Immobile with walking speed of 0 feet.",
+        "Mimics ordinary fungus for effective camouflage.",
+        "Reactionary ability to emit a loud shriek when disturbed."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant monster with sonic attacks",
+        "fungus that explodes upon death",
+        "immobile creature that emits loud noises",
+        "monster that uses thunder damage abilities",
+        "deceptive plant using area control"
+    ]
+}

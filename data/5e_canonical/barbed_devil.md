@@ -1,6 +1,9 @@
 <MonsterName/>Barbed Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>110</HP>
 <summary>A Barbed Devil is a fiendish creature covered in sharp, spiny protrusions that can pierce through flesh with ease. Its skin is a dark, reddish-brown, and its body is twisted and lean. The devil's eyes glow with malevolent intelligence, and it constantly exudes a sense of sadistic glee. Barbed Devils delight in inflicting pain, both physically and psychologically, and they are adept at using their barbs in combat, either by grappling their enemies or hurling them from afar. These devils often serve higher-ranking fiends in the infernal hierarchy and enjoy causing suffering wherever they go.</summary>
 
 <summary>The Barbed Devil is a Medium fiend with a formidable presence and a challenge rating of 5, making it a noteworthy adversary for adventurers. With an armor class of 15 and hit points totaling 102, it can withstand significant damage in combat. The devil excels in both melee and ranged combat, utilizing its high Strength score of 18 and Dexterity score of 16 to deliver punishing attacks. Its abilities allow it to grapple foes effectively, inflicting additional damage while protecting itself from many magical effects. Despite these strengths, the Barbed Devil has a few weaknesses, including vulnerabilities to radiant damage and the need for continuous engagement to maintain its control over grappled opponents.</summary>
@@ -33,6 +36,7 @@ In combat, the Barbed Devil can execute a Multiattack action, allowing it to str
 
 Source: 5e_srd
 
+<statblock>
 ### Barbed Devil
 
 *Medium fiend (devil), lawful evil*
@@ -77,7 +81,8 @@ Source: 5e_srd
 
 ***Tail***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage.
 
-***Hurl Flame***. *Ranged Spell Attack:* +5 to hit, range 150 ft., one target. *Hit:* 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.
+***Hurl Flame***. *Ranged Spell Attack:* +5 to hit, range 150 ft., one target. *Hit:* 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.</statblock>
+
 
 
 
@@ -85,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Barbed Devil
 
 *Medium* *Fiend*
@@ -122,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Hurl Flame:** Ranged Spell Attack: +6 to hit, range 150 ft., one target. Hit: 10 (3d6) fire damage. If the target is a creature  it catches on fire  taking 5 (1d10) ongoing fire damage. If the target is an unattended flammable object  it catches on fire. A creature can use an action to extinguish this fire.
 
 
+</statblock>
 
 
 
@@ -130,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Barbed Devil
 
 *Medium fiend (devil)*
@@ -164,5 +172,6 @@ Source: 5e_artisinal_monsters
 - **Tail.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage.
 - **Hurl Flame.** Ranged Spell Attack: +5 to hit, range 150 ft., one target. Hit: 12 (3d6 + 2) fire damage. If the target is a flammable object that isn’t being worn or carried, it also catches fire.
 
+</statblock>
 
 

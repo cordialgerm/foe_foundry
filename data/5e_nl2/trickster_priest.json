@@ -1,0 +1,52 @@
+{
+    "name": "Trickster Priest",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Support",
+    "tags": [
+        "spellcaster",
+        "healer",
+        "illusionist"
+    ],
+    "adjectives": [
+        "deceptive",
+        "supportive",
+        "strategic"
+    ],
+    "description": "The Trickster Priest is a Medium humanoid who blends mystical clerical abilities with cunning combat tactics. It has a strong presence due to its high Wisdom and utilizes a mace for melee attacks.",
+    "memorable": "Its ability to create powerful illusions and provide healing makes it a formidable opponent, while its strategic use of spells can turn the tide of battle.",
+    "goals": "Typically aims to heal allies, manipulate opponents, and control the battlefield with strategic spellcasting.",
+    "relations": "Often associated with other spellcasters and clerics, and may serve a higher power or deity.",
+    "environment": "Usually found in temples, urban areas, or locations where divine beings are venerated.",
+    "strengths": "Possesses strong spellcasting capabilities in healing, damage-dealing, and area control.",
+    "weaknesses": "Physical combat skills are average, making it less effective in direct confrontations.",
+    "attacks": "Attacks with a mace dealing bludgeoning damage, and can add radiant damage by expending spell slots.",
+    "most_powerful_ability": "Spirit Guardians, which summons spectral allies to damage opponents and create difficult terrain.",
+    "equipment": "wields a mace",
+    "senses": "Has a passive Perception of 13, indicating good awareness of its surroundings.",
+    "skills": "Excels in medicine and insight, showcasing strong capabilities in healing and social interactions.",
+    "additional_information": [
+        "Can use minor illusions to deceive others.",
+        "High Wisdom grants excellent saving throw bonuses against effects that target it.",
+        "Can make allies invisible for tactical advantages.",
+        "Expends spell slots to significantly enhance melee damage.",
+        "Versatile spellcaster with a range of support and control spells."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "A 5th level cleric with access to a range of healing, illusion, and area control spells.",
+    "test_queries": [
+        "deceptive humanoid spellcaster in combat",
+        "priest with powerful healing and illusions",
+        "supportive character that can heal and deceive",
+        "humanoid that deals radiant damage and heals allies",
+        "cleric with strong insight and social skills"
+    ]
+}

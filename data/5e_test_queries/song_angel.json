@@ -1,0 +1,25 @@
+{
+    "name": "Song Angel",
+    "queries": [
+        {
+            "query": "celestial creature that casts spells and has high Charisma",
+            "variant": "spellcasting celestial creature with high Charisma"
+        },
+        {
+            "query": "large celestial protector that resists radiant damage",
+            "variant": "big celestial protector immune to radiant damage"
+        },
+        {
+            "query": "angelic creature that supports allies with divine music",
+            "variant": "angel creature that helps allies using divine songs"
+        },
+        {
+            "query": "magical being that can change shape and summon spirits",
+            "variant": "magical entity that can polymorph and call spirits"
+        },
+        {
+            "query": "Song Angel abilities and advantages in combat",
+            "variant": "abilities and combat advantages of the Song Angel"
+        }
+    ]
+}

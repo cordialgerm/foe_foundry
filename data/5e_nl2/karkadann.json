@@ -1,0 +1,48 @@
+{
+    "name": "Karkadann",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 157,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 50 ft.",
+    "role": null,
+    "tags": [
+        "monster",
+        "beast",
+        "grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "physical",
+        "tactical"
+    ],
+    "description": "The Karkadann is a massive creature with impressive physical abilities, equipped with lethal horns and powerful hooves.",
+    "memorable": "It can impale and restrain enemies while simultaneously dealing ongoing damage with its horn attacks.",
+    "goals": "To dominate the battlefield and eliminate threats using its brute strength and tactical abilities.",
+    "relations": "Related to other powerful monstrosities, often serving as a dominant creature in its territory.",
+    "environment": "Commonly found in rugged terrains or vast open fields.",
+    "strengths": "High melee damage output, can restrain opponents, and has Magic Resistance.",
+    "weaknesses": "Poor saving throws against spells except for Constitution, and lower intelligence and charisma.",
+    "attacks": "Strikes with deadly horn attacks and can unleash crushing damage with powerful hooves.",
+    "most_powerful_ability": "Impaling Charge, allowing it to impale and deal continuous damage to a grappled foe.",
+    "equipment": null,
+    "senses": "It has a passive perception of 14, allowing it to notice things in its environment well.",
+    "skills": "Proficient in perception, but not exceptionally skilled.",
+    "additional_information": [
+        "Immune to poison damage and cannot be poisoned.",
+        "Healing Touch can restore hit points and cure diseases or poisons.",
+        "Can hurl impaled targets, potentially causing additional damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive beast with deadly horn attacks",
+        "formidable monster that grapples prey",
+        "huge creature that can heal allies",
+        "Karkadann's impaling charge ability",
+        "monster with high melee damage and healing"
+    ]
+}

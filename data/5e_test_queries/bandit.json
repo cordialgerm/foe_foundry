@@ -1,0 +1,25 @@
+{
+    "name": "Bandit",
+    "queries": [
+        {
+            "query": "humanoid character that ambushes travelers with a scimitar",
+            "variant": "humanoid ambush character with scimitar attacking travelers"
+        },
+        {
+            "query": "mismatched armor wearing foe that preys on the weak in remote areas",
+            "variant": "foe wearing mismatched armor that preys on weak in remote places"
+        },
+        {
+            "query": "opportunistic attacker that utilizes sneak tactics in groups",
+            "variant": "attacker using sneak tactics in groups and being opportunistic"
+        },
+        {
+            "query": "stealthy humanoid characterized by average defenses and greedy nature",
+            "variant": "humanoid with average defense and greedy traits being stealthy"
+        },
+        {
+            "query": "lightly armored ambushers known for raids on small villages",
+            "variant": "ambushers in light armor known for raiding small villages"
+        }
+    ]
+}

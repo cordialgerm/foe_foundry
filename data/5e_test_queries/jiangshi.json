@@ -1,0 +1,25 @@
+{
+    "name": "Jiangshi",
+    "queries": [
+        {
+            "query": "undead creature that drains life and instills fear",
+            "variant": "undead monster that instills fear and drains life"
+        },
+        {
+            "query": "chaotic evil medium undead with fire vulnerability",
+            "variant": "medium chaotic evil undead that is vulnerable to fire"
+        },
+        {
+            "query": "zombie-like creature with a terrifying appearance and slow movement",
+            "variant": "slow moving creature resembling a zombie with a terrifying look"
+        },
+        {
+            "query": "creature with blindsight and life-draining abilities",
+            "variant": "monster with life drain abilities and blindsight"
+        },
+        {
+            "query": "medium undead with claw attacks and necrotic damage",
+            "variant": "undead medium creature that deals necrotic damage with claw attacks"
+        }
+    ]
+}

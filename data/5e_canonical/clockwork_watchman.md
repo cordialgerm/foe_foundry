@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Watchman</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Clockwork Watchman is a Medium-sized construct that functions as an efficient sentry or guardian in various settings. With a focus on physical resilience, it has a good Armor Class of 14, coupled with a solid pool of 44 hit points, making it relatively durable for its Challenge Rating of 1/2, which offers a modest challenge to low-level adventurers. While it possesses decent Strength and Dexterity, with modifiers of +2 and +1 respectively, its mental capabilities are poor, particularly in Intelligence and Charisma, which are very low at -3 and -5 respectively. The Clockwork Watchman excels in physical tasks, demonstrated by its good skills in Athletics and Perception, but it lacks the ability to engage in social interactions or complex problem-solving.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ As a bonus action, the Clockwork Watchman can utilize its Reel ability to pull a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Watchman
 
 *Medium* *Construct* *Unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reel:** The clockwork watchman pulls a creature restrained by its net up to 15 feet straight toward it.
+</statblock>
 
 

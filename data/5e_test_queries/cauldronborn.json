@@ -1,0 +1,25 @@
+{
+    "name": "Cauldronborn",
+    "queries": [
+        {
+            "query": "small construct that consumes potions and regenerates health",
+            "variant": "small potion-eating construct that regains health"
+        },
+        {
+            "query": "magical item detector that is immune to poison",
+            "variant": "potion-seeking construct immune to toxic damage"
+        },
+        {
+            "query": "construct with low Dexterity that can heal itself",
+            "variant": "healing construct that is not very agile"
+        },
+        {
+            "query": "creature in search of potions with a damaging attack",
+            "variant": "entity that attacks and seeks out potions"
+        },
+        {
+            "query": "unaffiliated small creature that can sense magic",
+            "variant": "unaligned small monster capable of detecting magical items"
+        }
+    ]
+}

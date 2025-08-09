@@ -1,0 +1,25 @@
+{
+    "name": "Lost Minotaur",
+    "queries": [
+        {
+            "query": "strong undead creature with keen smell ability",
+            "variant": "undead creature that is strong and has keen sense of smell"
+        },
+        {
+            "query": "large minotaur who deals extra damage when charging",
+            "variant": "large charging minotaur that inflicts extra damage"
+        },
+        {
+            "query": "undead creature immune to cold and poison",
+            "variant": "creature that is undead and immune to cold and poison damage"
+        },
+        {
+            "query": "monster with high strength and magic resistance",
+            "variant": "creature with high strength score and has resistance to magic"
+        },
+        {
+            "query": "combat-focused undead with significant hit points",
+            "variant": "undead creature focused on combat and has a lot of hit points"
+        }
+    ]
+}

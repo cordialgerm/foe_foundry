@@ -1,0 +1,25 @@
+{
+    "name": "Scitalis",
+    "queries": [
+        {
+            "query": "large aquatic creature with stunning abilities and cold resistance",
+            "variant": "large water monster with abilities to stun and resist cold"
+        },
+        {
+            "query": "predator that swims fast and has magical resistance",
+            "variant": "fast swimming predator with resistance to magic"
+        },
+        {
+            "query": "creature with blindsight and high wisdom in water environments",
+            "variant": "monster with wisdom and blindsight residing in aquatic settings"
+        },
+        {
+            "query": "monster with bite attack and poison damage in combat",
+            "variant": "creature that uses bite attack and inflicts poison damage"
+        },
+        {
+            "query": "Scitalis characteristics as a formidable presence in aquatic settings",
+            "variant": "Scitalis traits as a strong entity in water environments"
+        }
+    ]
+}

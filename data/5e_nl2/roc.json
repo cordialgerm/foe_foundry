@@ -1,0 +1,50 @@
+{
+    "name": "Roc",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "animal",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 248,
+    "ac": 15,
+    "srd": true,
+    "cr": "11",
+    "movement": "slow walking speed; very fast flying speed",
+    "role": "Bruiser",
+    "tags": [
+        "large predator",
+        "aerial threat",
+        "creature of the skies"
+    ],
+    "adjectives": [
+        "enormous",
+        "formidable",
+        "territorial"
+    ],
+    "description": "A gargantuan bird of prey, the Roc is immensely powerful and capable of carrying off even an elephant with its massive talons. Its keen sight aids in hunting from high above, and its feathers are a blend of earthy tones that can make it difficult to spot against mountainous terrains.",
+    "memorable": "Its ability to snatch up large prey and fierce territorial behavior make it a fearsome presence in any encounter.",
+    "goals": "To hunt large prey and defend its territory from intruders.",
+    "relations": "Often solitary but can be seen dominating its hunting area, posing a threat to adventurers and travelers.",
+    "environment": "Remote mountain peaks, cliffs, and open plains; often found in high altitudes.",
+    "strengths": "Exceptional strength paired with keen eyesight allows it to be both a formidable predator and effective in combat.",
+    "weaknesses": "Low intelligence makes it lack strategic cunning in complex situations.",
+    "attacks": "Utilizes multiattack capability with powerful beak and talons strikes, capable of grappling foes.",
+    "most_powerful_ability": "Retributive Strike allows it to retaliate against melee attacks, adding to its dangerous combat presence.",
+    "senses": "Possesses keen sight, granting advantage on perception checks related to sight.",
+    "skills": "Exceptional perception makes it an efficient hunter, enhanced further with keen sight.",
+    "additional_information": [
+        "Territorial shriek can frighten opponents, forcing them to flee.",
+        "Can swim for short distances but must manage air to avoid suffocation.",
+        "Deals double damage to structures, indicating its potential threat to settlements.",
+        "Resistant to exhaustion and fear effects, maintaining combat effectiveness.",
+        "Grapples foes effectively, restraining them while it maintains control."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "enormous bird that hunts large prey",
+        "gargantuan predator living in the mountains",
+        "massive bird that can carry elephants",
+        "creature with powerful beak and talons",
+        "formidable aerial creature with keen sight"
+    ]
+}

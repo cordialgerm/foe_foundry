@@ -1,0 +1,52 @@
+{
+    "name": "Scitalis",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 58,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 30 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "predator",
+        "dangerous"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "stunning",
+        "poisonous"
+    ],
+    "description": "The Scitalis is a large monstrosity with a strong presence in aquatic environments, featuring stunning scales and formidable physical attributes.",
+    "memorable": "Its Stunning Scales can stun multiple creatures, significantly altering the course of a battle.",
+    "goals": "To hunt down prey and assert dominance in its aquatic territory.",
+    "relations": "May be found alongside other aquatic creatures or monsters.",
+    "environment": "Predominantly found in aquatic environments.",
+    "strengths": "Possesses Magic Resistance, high Wisdom, and substantial damage potential from its attacks.",
+    "weaknesses": "Notably low Intelligence and Charisma, indicating a lack of cunning and social power.",
+    "attacks": "Bite attack deals piercing and poison damage, making it a dangerous encounter.",
+    "most_powerful_ability": "Stunning Scales can stun creatures within 60 feet, significantly affecting their actions.",
+    "senses": "Has blindsight within 10 feet, allowing it to detect nearby creatures without relying on sight.",
+    "skills": "Exhibits high perception skills, with a +6 modifier, enhancing its ability to sense threats.",
+    "additional_information": [
+        "Damage resistance to cold.",
+        "Effective at delivering dangerous mix of piercing and poison damage.",
+        "Can stun multiple targets at once, creating tactical advantages.",
+        "High Wisdom grants strong saving throws against mental effects.",
+        "Moderate mobility on land makes it less versatile outside water."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "null",
+    "test_queries": [
+        "large aquatic predator with stunning abilities",
+        "monstrous creature that can stun targets",
+        "Scitalis poison damage capabilities",
+        "formidable guardian of aquatic environments",
+        "creature with magic resistance and high perception"
+    ]
+}

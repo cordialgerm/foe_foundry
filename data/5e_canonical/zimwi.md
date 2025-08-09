@@ -1,6 +1,8 @@
 <MonsterName/>Zimwi</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Zimwi is a medium-sized giant characterized by its chaotic evil nature, making it a formidable threat in combat. With an armor class of 16 thanks to its natural armor, and a significant pool of hit points totaling 110, the Zimwi is adept at sustaining damage. It is particularly rapid, able to walk at a speed of 60 feet. The challenge rating of 5 indicates that it is a moderately challenging adversary for adventurers, offering 1,800 experience points upon defeat. Notably, the Zimwi possesses high dexterity and constitution scores, which enhance its agility and hit point endurance, but lacks mental acuity, as reflected in its low intelligence, wisdom, and charisma. Its unique ability, Desperate Hunger, allows it to become especially dangerous when its health dips below half, granting it an advantage on melee attack rolls against non-construct creatures, making it a tenacious opponent when weakened.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Zimwi's combination of high dexterity, mighty constitution, multi-a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zimwi
 
 *Medium* *Giant* *Chaotic Evil*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage, and the target is grappled (escape DC 12) if it is a Medium or smaller creature. The zimwi has two claws, each of which can grapple only one target.
 - **Swallow:** The zimwi makes one Bite attack against a Medium or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the zimwi, and it takes 10 (3d6) acid damage at the start of each of the zimwi’s turns. A zimwi can have up to two creatures swallowed at a time.
+</statblock>
 
 

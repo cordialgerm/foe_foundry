@@ -1,0 +1,52 @@
+{
+    "name": "Ogre, Black Sun",
+    "creature_type": "Giant",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 152,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "undead",
+        "evil",
+        "powerful"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "brutal"
+    ],
+    "description": "A large ogre with infernal tattoos, showcasing a powerful physique and a malicious demeanor.",
+    "memorable": "The ogre's ability to deal necrotic damage alongside its exceptional melee capabilities makes it a unique threat.",
+    "goals": "Typically seeks to dominate weaker creatures and expand its influence through intimidation and brute force.",
+    "relations": "Could command lesser undead or work alongside other evil creatures.",
+    "environment": "Often found in dark caverns or areas under the influence of sinister powers.",
+    "strengths": "High armor class and hit points enhance its durability, while magical enhancements increase its offensive capabilities.",
+    "weaknesses": "Relying primarily on physical attacks may leave it vulnerable to ranged or magic-based foes.",
+    "attacks": "Uses melee attacks with a greatsword, dealing both slashing and necrotic damage.",
+    "most_powerful_ability": "Dark Word attacks up to two targets, dealing significant necrotic damage if they fail their saving throws.",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": "Has a passive perception of 14, indicating decent awareness of its surroundings.",
+    "additional_information": [
+        "Benefits from the Infernal Runes ability, granting it a bonus to AC and advantage on saves against magic.",
+        "Possesses the Unholy Blade ability, enhancing its weapon attacks with additional necrotic damage.",
+        "Multiattack capability allows it to strike multiple times in a single turn.",
+        "Can knock prone attackers who miss with melee attacks through its reaction ability.",
+        "Its lawful evil nature suggests strategic and brutal tactics in combat."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful giant with necrotic attacks",
+        "ogre that deals extra damage in combat",
+        "malevolent giant with dark enchantments",
+        "ogre proficient in brutal melee attacks",
+        "creature with infernal tattoos and dark magic"
+    ]
+}

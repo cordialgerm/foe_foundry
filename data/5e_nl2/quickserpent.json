@@ -1,0 +1,51 @@
+{
+    "name": "Quickserpent",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "burrow 20 ft., climb 20 ft., walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "swamp",
+        "beast",
+        "ambush",
+        "constrictor"
+    ],
+    "adjectives": [
+        "large",
+        "stealthy",
+        "powerful",
+        "ambushing"
+    ],
+    "description": "The Quickserpent is a large beast adorned with robust natural armor, thriving in swampy environments. It has a fierce bite and uses its constrict ability to immobilize prey.",
+    "memorable": "Its quicksand pit ability can immobilize multiple foes, making it a dominant force in combat.",
+    "goals": "To ambush unsuspecting creatures in its swampy habitat and control the battlefield with quicksand.",
+    "relations": "Often encountered in swamps, could be associated with other ambush predators.",
+    "environment": "Swampy environments.",
+    "strengths": "Possesses high strength for melee and grappling, and can immobilize opponents with quicksand.",
+    "weaknesses": "Low intelligence restricts strategic capabilities and magical abilities.",
+    "attacks": "Bite attack delivering piercing damage and a constrict attack that grapples targets for control.",
+    "most_powerful_ability": "Quicksand Pit, which creates difficult terrain and can restrain multiple creatures.",
+    "senses": "Possesses tremorsense up to 60 feet for detecting movement through the ground.",
+    "skills": "Has a stealth skill bonus of +3, excelling at hiding in swampy terrain.",
+    "additional_information": [
+        "Can grapple Large or smaller creatures easily.",
+        "Low intelligence makes it less strategic.",
+        "Effective ambusher in its native habitat.",
+        "Uses terrain to control movement of foes.",
+        "Advantage on stealth checks in swamps."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large swamp ambush creature",
+        "beast that creates quicksand pits",
+        "powerful grappler in swampy terrain",
+        "stealthy serpent that immobilizes prey",
+        "quick serpent that bites and constricts"
+    ]
+}

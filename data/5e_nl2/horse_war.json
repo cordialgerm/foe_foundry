@@ -1,0 +1,52 @@
+{
+    "name": "War Horse",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 22,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "60 feet, fast and mobile",
+    "role": "Skirmisher",
+    "tags": [
+        "mount",
+        "beast",
+        "combat"
+    ],
+    "adjectives": [
+        "robust",
+        "trained",
+        "combat-ready"
+    ],
+    "description": "The War Horse is a large robust beast equipped with scale mail barding, known for its powerful frame and trained combat capabilities.",
+    "memorable": "It has the ability to trample enemies and offer significant mobility on the battlefield.",
+    "goals": "Primarily serves as a mount for riders in battle, aiding in combat situations.",
+    "relations": "Often found alongside trained warriors or cavalry units.",
+    "environment": "Typically encountered in battlefields or stables.",
+    "strengths": "Highly mobile with a strong attack and the ability to knock down foes.",
+    "weaknesses": "Low intelligence limits complex actions or strategies; lacks magical abilities.",
+    "attacks": "Makes Hooves attacks that deal significant bludgeoning damage.",
+    "most_powerful_ability": "The Trampling Charge allows the War Horse to knock targets prone with a successful charge.",
+    "equipment": "Scale mail barding provides increased protection.",
+    "senses": null,
+    "skills": "Possesses average perception, making it moderately aware of its surroundings.",
+    "additional_information": [
+        "Has a +4 strength score for powerful physical attacks.",
+        "Trained in coordinated movements with its rider for enhanced combat effectiveness.",
+        "Can attack prone enemies with a bonus action after trampling.",
+        "Limited cognitive abilities due to very low intelligence.",
+        "Horses of this type are commonly used in cavalry."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fast large combat horse",
+        "trained war horse for battle",
+        "robust beast with trample ability",
+        "mount that assists riders in combat",
+        "horse with powerful hoof attacks"
+    ]
+}

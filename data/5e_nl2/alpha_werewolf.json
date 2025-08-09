@@ -1,0 +1,50 @@
+{
+    "name": "Alpha Werewolf",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 104,
+    "ac": 12,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "lycanthrope",
+        "werewolf",
+        "shapechanger"
+    ],
+    "adjectives": [
+        "formidable",
+        "brutal",
+        "stealthy"
+    ],
+    "description": "The Alpha Werewolf is a medium humanoid exhibiting a blend of human and wolf characteristics, with shaggy fur and sharp claws and fangs. Standing tall and robust, it has an intimidating presence that reflects its strength and ferocity.",
+    "memorable": "The Alpha Werewolf's ability to inflict lycanthropy and its unique vulnerabilities, particularly to wolfsbane, make it a terrifying and dynamic enemy.",
+    "goals": "Typically hunts in packs, seeking to overpower prey and expand territory, while also possibly protecting its kind.",
+    "relations": "Often encountered alongside other werewolves and lycanthropes, may serve as a leader in a pack.",
+    "environment": "Usually found in forests, wilderness areas, or near settlements during a full moon.",
+    "strengths": "Possesses damage immunity to nonmagical and non-silvered attacks, and benefits from pack tactics for increased combat effectiveness.",
+    "weaknesses": "Vulnerable to wolfsbane, which poisons it and allows silvered weapons to bypass its defenses.",
+    "attacks": "Utilizes Multiattack to strike twice, with particularly effective claw and bite attacks that can inflict lycanthropy.",
+    "most_powerful_ability": "The ability to transform with Shapeshift, enabling it to transition fluidly between wolf and humanoid forms while retaining its combat capabilities.",
+    "equipment": null,
+    "senses": "Has keen hearing and smell, granting it advantage on Perception checks based on those senses.",
+    "skills": "Proficient in stealth, allowing it to ambush unsuspecting targets effectively.",
+    "additional_information": [
+        "Cursed Wounds: Inflicts necrotic damage and reduces hit point maximum.",
+        "Keen Hearing and Smell: Excellent tracking abilities.",
+        "Pack Tactics: Gains advantage when fighting alongside allies.",
+        "Frenzied Bite: Makes an additional attack when bloodied.",
+        "Shapeshift ability allows for strategic flexibility in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable werewolf opponent",
+        "werewolf pack tactics",
+        "creature with lycanthropy",
+        "brutal shapeshifting monster",
+        "werewolf vulnerabilities"
+    ]
+}

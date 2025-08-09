@@ -1,0 +1,51 @@
+{
+    "name": "Mountain Dwarf Soldier",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 19,
+    "ac": 16,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "dwarf",
+        "soldier",
+        "warrior"
+    ],
+    "adjectives": [
+        "robust",
+        "disciplined",
+        "capable"
+    ],
+    "description": "The Mountain Dwarf Soldier is a resilient warrior known for its combat proficiency and sturdy build.",
+    "memorable": "Possesses tactical movement abilities allowing for repositioning without provoking attacks.",
+    "goals": "To engage effectively in combat while supporting allies.",
+    "relations": "Can be found alongside other dwarves or in military units.",
+    "environment": "Typically found in mountainous regions or battlefields.",
+    "strengths": "Enhanced combat capabilities in both melee and ranged situations, good coordination with allies.",
+    "weaknesses": "Average intelligence, wisdom, and charisma limits their interaction and problem-solving capabilities.",
+    "attacks": "Attacks with a handaxe in melee or ranged, deals slashing damage; also uses a heavy crossbow for ranged attacks.",
+    "most_powerful_ability": "Tactical Movement allows for strategic repositioning in battle without risking opportunity attacks.",
+    "equipment": null,
+    "senses": "Has a passive perception of 12, aiding in detecting hidden creatures or traps.",
+    "skills": "Proficient in perception and survival, both with a modifier of +2.",
+    "additional_information": [
+        "Good saving throws in Strength and Constitution",
+        "Effective in group tactics enhancing damage",
+        "Possesses both melee and ranged weapon options"
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "robust dwarf soldier with combat tactics",
+        "disciplined warrior from mountainous regions",
+        "capable humanoid with tactical movement",
+        "dwarf soldier that uses handaxe and crossbow",
+        "mountain dwarf proficient in survival"
+    ]
+}

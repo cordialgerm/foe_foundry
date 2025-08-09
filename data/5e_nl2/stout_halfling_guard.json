@@ -1,0 +1,53 @@
+{
+    "name": "Stout Halfling Guard",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Small",
+    "hp": 11,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Defender",
+    "tags": [
+        "halfling",
+        "guard",
+        "humanoid",
+        "defensive"
+    ],
+    "adjectives": [
+        "small",
+        "resilient",
+        "average"
+    ],
+    "description": "The Stout Halfling Guard is a small humanoid wearing solid armor, equipped with a spear for combat.",
+    "memorable": "It has a notable passive perception of 14, allowing it to detect hidden threats effectively.",
+    "goals": "To serve as a basic defensive unit, protecting key areas or assets.",
+    "relations": "May be encountered with other guards or small humanoid creatures.",
+    "environment": "Typically found in settlements or areas requiring defense.",
+    "strengths": "Good at noticing hidden objects and threats due to high passive perception.",
+    "weaknesses": "Lacks high damage output or exceptional combat abilities.",
+    "attacks": "Uses a spear for melee or ranged attacks, dealing 3 piercing damage.",
+    "most_powerful_ability": "Notable perception skills for detecting hidden entities.",
+    "equipment": "Carries a spear as its primary weapon.",
+    "senses": "It has a passive perception score of 14, indicating a strong ability to notice hidden entities or traps.",
+    "skills": "Proficient in perception, insight, and nature, each with a bonus of +2.",
+    "additional_information": [
+        "Has an average Strength score of 10.",
+        "Possesses basic combat abilities suitable for a defensive role.",
+        "Relatively low hit points, making it vulnerable.",
+        "Can communicate in one language of its choice.",
+        "Functions well as a support character in a group."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small guard with good perception skills",
+        "defensive halfling holding a spear",
+        "humanoid creature that protects key areas",
+        "guard creature with average combat abilities",
+        "halfling with strong perception and insight"
+    ]
+}

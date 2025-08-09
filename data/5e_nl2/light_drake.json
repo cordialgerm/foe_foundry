@@ -1,0 +1,53 @@
+{
+    "name": "Light Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 24,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 60 ft., walk 20 ft., hover",
+    "role": "Support",
+    "tags": [
+        "dragon",
+        "light",
+        "support",
+        "caster"
+    ],
+    "adjectives": [
+        "tiny",
+        "supportive",
+        "radiant",
+        "nimble"
+    ],
+    "description": "The Light Drake is a tiny dragon that embodies the essence of light and goodness, featuring reflective scales that enhance nearby light sources.",
+    "memorable": "Its ability to cast blinding light and illuminate surroundings makes it a useful ally in dark environments.",
+    "goals": "To assist allies and illuminate surroundings during combat and exploration.",
+    "relations": "May be allied with other good-aligned creatures and adventurers.",
+    "environment": "Typically found in bright, open areas or near sources of light.",
+    "strengths": "High dexterity allows for agility in battle; innate spellcasting provides utility without needing components.",
+    "weaknesses": "Limited physical strength makes it ineffective in melee combat.",
+    "attacks": "Bite attack deals piercing damage; Breath Weapon creates a line of radiant light that can blind enemies.",
+    "most_powerful_ability": "Breath Weapon exhaling radiant light that can blind and damage multiple creatures.",
+    "senses": "Passive Perception of 13 allows for decent awareness of surroundings.",
+    "skills": "Has proficiency in acrobatics, contributing +5 to agile maneuvers.",
+    "additional_information": [
+        "Reflective Scales enhance brightness of nearby light sources.",
+        "Innate spellcasting enables casting of various spells at will.",
+        "Breath Weapon can blind foes, affecting tactical decisions.",
+        "Resistance to radiant damage makes it resilient against light-based attacks.",
+        "Aligns well with good-aligned creatures for collaborative encounters."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells at will, such as dancing lights and faerie fire, enhancing support capabilities.",
+    "test_queries": [
+        "tiny dragon that emits bright light",
+        "support dragon with radiant breath weapon",
+        "light drake abilities and spells",
+        "dragon that blinds enemies with light",
+        "dragon companion that aids allies"
+    ]
+}

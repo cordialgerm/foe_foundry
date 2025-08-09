@@ -1,0 +1,51 @@
+{
+    "name": "Swarm of Quippers",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 28,
+    "ac": 13,
+    "srd": true,
+    "cr": "1",
+    "movement": "swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "aquatic",
+        "beast"
+    ],
+    "adjectives": [
+        "vicious",
+        "fast-moving",
+        "carnivorous"
+    ],
+    "description": "A swarm of small, sharp-toothed fish that can strip flesh from bone within seconds, found lurking in murky waters.",
+    "memorable": "Known for overwhelming enemies in numbers, particularly drawn to injured or bleeding creatures.",
+    "goals": "To hunt and incapacitate prey, especially drawn to blood.",
+    "relations": "Can often be found in rivers, lakes, or coastal waters, can swarm over larger aquatic creatures.",
+    "environment": "Rivers, lakes, or coastal waters.",
+    "strengths": "Fast swimming ability allows for quick maneuvers and rapid frenzied attacks.",
+    "weaknesses": "Relatively low Constitution making it susceptible to damage despite resistance to non-magical physical attacks.",
+    "attacks": "Bites attack that inflicts piercing damage, with enhanced attacks when bloodied.",
+    "most_powerful_ability": "Blood Frenzy, granting advantage against wounded opponents.",
+    "senses": "Has darkvision up to 60 feet, allowing it to navigate murky waters effectively.",
+    "skills": "No significant skill proficiencies but immune to various condition effects.",
+    "additional_information": [
+        "Cannot regain hit points or temporary hit points.",
+        "Occupies the space of other creatures easily.",
+        "Drawn to the scent of blood in the water.",
+        "Ability to swarm over enemies emphasizes cooperative predation.",
+        "Predominantly found in aquatic habitats."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fast swimming vicious fish swarm",
+        "aquatic creatures drawn to blood",
+        "school of biting fish in water",
+        "dangerous swarm of fish in lakes",
+        "aggressive aquatic predators that swarm"
+    ]
+}

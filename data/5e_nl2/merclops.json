@@ -1,0 +1,50 @@
+{
+    "name": "Merclops",
+    "creature_type": "Giant",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 126,
+    "ac": 13,
+    "srd": false,
+    "cr": "7",
+    "movement": "swim 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "aquatic",
+        "strong"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Merclops is a Huge Giant known for its immense strength, with a strong physique and a club weapon. Its presence is imposing, particularly in aquatic environments.",
+    "memorable": "It attacks with advantage when frightened, but struggles with ranged attacks due to poor depth perception.",
+    "goals": "To dominate in combat, particularly in close quarters and underwater settings.",
+    "relations": "Related to other aquatic giants, potentially serving under them or operating in the same regions.",
+    "environment": "Aquatic environments, such as deep waters or coastal areas.",
+    "strengths": "High physical strength and hit points, advantages in close quarters and underwater.",
+    "weaknesses": "Disadvantage on ranged attacks due to poor depth perception.",
+    "attacks": "Utilizes powerful melee attacks with a club and harpoon, capable of pulling foes closer.",
+    "most_powerful_ability": "Panicked Rage, allowing advantage on attack rolls when frightened.",
+    "equipment": "Club and harpoon, used for melee and ranged combat.",
+    "senses": null,
+    "skills": "Proficient in Survival, suggesting a good ability to navigate aquatic environments.",
+    "additional_information": [
+        "Allows for tactical flexibility with the Thick Skulled ability to end conditions.",
+        "Can make two melee attacks with the Multiattack action.",
+        "Its harpoon attack can pull opponents closer, adding tactical advantage.",
+        "Very high Strength and Constitution, making it durable in combat.",
+        "Can breathe underwater, making it a dangerous opponent in aquatic scenarios."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable giant that fights underwater",
+        "powerful melee attacks with club and harpoon",
+        "aquatic giant with tremendous resilience",
+        "giant that is strong but struggles ranged",
+        "giant that can attack with advantage when frightened"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Mydnari",
+    "queries": [
+        {
+            "query": "humanoid creature with acid damage and symbiotic jelly",
+            "variant": "humanoid monster that deals acid damage and has a jelly symbiosis"
+        },
+        {
+            "query": "deceptive medium creature immune to acid and paralyzed condition",
+            "variant": "medium always tricky creature immune to acid and paralysis"
+        },
+        {
+            "query": "creature that uses acid glob attack and has high dexterity",
+            "variant": "monster with a strong dexterity and acid glob attack"
+        },
+        {
+            "query": "Mydnari's ability to deal acid damage when touched",
+            "variant": "Mydnari's acid damage ability on touch"
+        },
+        {
+            "query": "blindsight creature reliant on jelly for abilities",
+            "variant": "creature with blindsight that depends on jelly for its traits"
+        }
+    ]
+}

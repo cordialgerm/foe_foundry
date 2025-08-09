@@ -1,0 +1,25 @@
+{
+    "name": "Goat-Man",
+    "queries": [
+        {
+            "query": "chaotic evil beast with strong melee attacks",
+            "variant": "chaotic evil creature with powerful melee strikes"
+        },
+        {
+            "query": "medium monstrosity that can stun enemies and is immune to fear",
+            "variant": "medium monster that stuns foes and is immune to being frightened"
+        },
+        {
+            "query": "agile creature that charges at enemies and delivers extra damage",
+            "variant": "quick monster that rushes at targets and inflicts additional damage"
+        },
+        {
+            "query": "Goat-Man's ability to knock down opponents and its high strength",
+            "variant": "ability of Goat-Man to topple foes and its significant strength"
+        },
+        {
+            "query": "darkvision creature that understands multiple languages but can't speak",
+            "variant": "creature with darkvision that knows several languages but cannot talk"
+        }
+    ]
+}

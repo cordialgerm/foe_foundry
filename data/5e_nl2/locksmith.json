@@ -1,0 +1,54 @@
+{
+    "name": "Locksmith",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 18,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "construct",
+        "heist",
+        "trap disarm",
+        "magic user"
+    ],
+    "adjectives": [
+        "mechanical",
+        "durable",
+        "skilled",
+        "resourceful"
+    ],
+    "description": "The Locksmith is a mechanical being with a robust body designed for picking locks and disarming traps. It has a sturdy frame and wields a key blade for melee attacks.",
+    "memorable": "It is immune to several damage types and conditions, making it exceptionally durable in combat.",
+    "goals": "To assist adventurers in navigating traps and locks within dungeons or during heists.",
+    "relations": "Often works alongside adventurers or other constructs interested in exploration and security.",
+    "environment": "Usually found in dungeons, ruins, or places rich in locks and traps.",
+    "strengths": "Strong physical attributes, high damage immunities, and skilled in stealth actions.",
+    "weaknesses": "Low Charisma and social skills limit its interaction with other creatures.",
+    "attacks": "Utilizes a key blade for melee combat, dealing significant slashing damage, and can unleash a cone of acid damage.",
+    "most_powerful_ability": "Acid Wash ability deals substantial area damage, devastating groups of enemies.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 90 ft., allowing it to detect unseen threats.",
+    "skills": "Proficient in stealth and has insight into various situations, allowing it to operate undetected.",
+    "additional_information": [
+        "Has advantage on ability checks related to picking locks and disarming traps.",
+        "Can cast spells like mending, arcane lock, knock, and forcecage.",
+        "Immune to fire, poison and psychic damage.",
+        "Resistant to bludgeoning, piercing, and slashing from nonmagical attacks.",
+        "Immunity to conditions like frightened, paralyzed, and charmed."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting allows it to repair items and create magical locks without material components.",
+    "test_queries": [
+        "mechanical being skilled in lockpicking",
+        "durable construct that casts spells",
+        "acid damage dealing trap disarmer",
+        "hands-on locksmith in dungeons",
+        "heist helper with magical abilities"
+    ]
+}

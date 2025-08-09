@@ -1,0 +1,54 @@
+{
+    "name": "Vent Linnorm",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Gargantuan",
+    "hp": 247,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "20 ft. walking, 80 ft. swimming",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "amphibious",
+        "terrifying",
+        "multiattack"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "fearsome",
+        "cold-resistant",
+        "necrotic-damaging"
+    ],
+    "description": "A gargantuan dragon with a menacing presence, characterized by its strikingly powerful build, capable of instilling fear in its foes and adept in both water and land combat.",
+    "memorable": "The Vent Linnorm wields the ability to instill fear and manipulate the battlefield with its unique Inky Breath weapon, which blinds opponents.",
+    "goals": "Typically hunts and tracks prey, exploiting its Blood Scent ability to locate injured creatures.",
+    "relations": "Possibly associated with other dragons or creatures of cold environments due to its ice immunity.",
+    "environment": "Commonly found in cold waters or frigid landscapes.",
+    "strengths": "Immunity to cold damage, ability to breathe underwater, blindsight for detecting prey in darkness.",
+    "weaknesses": "Significantly slow on land, which may limit mobility in certain combat situations.",
+    "attacks": "Multiattack includes a terrifying bite and powerful tail strikes, both capable of severe damage and restraining foes.",
+    "most_powerful_ability": "Inky Breath releases a cloud of necrotic ink that blinds and damages enemies in a wide area.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures hidden in darkness.",
+    "skills": "Highly skilled in intimidation and surviving in hostile environments, demonstrating its prowess in fear tactics.",
+    "additional_information": [
+        "Can detect blood in water from up to 5 miles away.",
+        "Frightful Presence can incapacitate creatures nearby with fear.",
+        "Ability to grapple and restrain targets significantly enhances its control over the battlefield.",
+        "Effectively combines offense and defense due to high damage output and toughness.",
+        "Imposing size contributes to its intimidating presence in any encounter."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan dragon that blinds enemies",
+        "cold-resistant dragon with fear abilities",
+        "aquatic creature that can smell blood",
+        "dragon with powerful bite and tail attacks",
+        "creature that controls battle with fear tactics"
+    ]
+}

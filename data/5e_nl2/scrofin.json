@@ -1,0 +1,50 @@
+{
+    "name": "Scrofin",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 68,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed of 40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "grappler",
+        "durable",
+        "durability"
+    ],
+    "adjectives": [
+        "playful",
+        "formidable",
+        "tactical"
+    ],
+    "description": "The Scrofin is a Medium fey creature characterized by its powerful physique, often seen engaging in grappling contests. It has a strong build accentuated by its muscular limbs, featuring bludgeoning fists and a dangerous gore attack.",
+    "memorable": "Its ability to grapple larger opponents and endure lethal damage makes the Scrofin a challenging foe to overcome.",
+    "goals": "To engage in challenges, tests of strength, and grappling contests.",
+    "relations": "Generally interacts with other fey creatures and may be encountered with allies that share a curious or mischievous nature.",
+    "environment": "Commonly found in fey realms, forests, or enchanted locations.",
+    "strengths": "Excellent grappling ability and resilience through its Relentless trait.",
+    "weaknesses": "Low Intelligence and Wisdom make it vulnerable to mental and magical challenges.",
+    "attacks": "Uses powerful melee attacks with its fists and gore, capable of grappling and stunning foes.",
+    "most_powerful_ability": "Quick to Anger, which enhances its combat effectiveness significantly when it is provoked.",
+    "equipment": null,
+    "senses": "Passive Perception is low at 9.",
+    "skills": "Proficient in athletics, reflecting its physical prowess.",
+    "additional_information": [
+        "Can grapple larger creatures while moving at full speed.",
+        "Targets grappled by it suffer disadvantage on escape attempts.",
+        "Benefits from advantage on checks to escape grapples.",
+        "Can withstand lethal damage due to the Relentless ability.",
+        "Critical hits can stun opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "playful fey grappler creature",
+        "medium creature with strong grappling abilities",
+        "forested creature that can endure fatal blows",
+        "fey that enjoys challenges and contests",
+        "tactical brawler with unique resilience"
+    ]
+}

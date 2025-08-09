@@ -1,0 +1,55 @@
+{
+    "name": "Wraith Lord",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 171,
+    "ac": 15,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft., fly 60 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "fear",
+        "paralysis",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "chilling",
+        "terrifying",
+        "shadowy"
+    ],
+    "description": "The Wraith Lord is characterized by its chilling presence, glowing with a malevolent aura. It is capable of flying and has an ethereal quality that allows it to pass through solid objects. The Wraith Lord's visage is intimidating, often draped in tattered robes, and it commands the power to strike fear into the hearts of those nearby.",
+    "memorable": "The Wraith Lord possesses the terrifying ability to paralyze enemies with fear and drain the life force from its victims.",
+    "goals": "The Wraith Lord seeks to instill terror, drain life, and command other undead minions.",
+    "relations": "It often commands lesser undead such as wraiths and has a connection to dark, haunted places.",
+    "environment": "Typically found in ancient ruins, graveyards, or other places steeped in dark magic.",
+    "strengths": "Resilient against many forms of damage and possesses abilities that cripple foes and control the battlefield.",
+    "weaknesses": "Light sensitivity makes it vulnerable in bright environments, and it temporarily loses incorporeal abilities when hit by radiant damage.",
+    "attacks": "Employs paralyzing terror and life-draining attacks, which can reduce hit points and incapacitate enemies.",
+    "most_powerful_ability": "Aura of Fear causes enemies to become frightened, greatly diminishing their effectiveness in battle.",
+    "equipment": null,
+    "senses": "The Wraith Lord has truesight out to 120 feet, allowing it to perceive the presence of invisible creatures.",
+    "skills": "Proficient in manipulating fear and controlling undead, using its high Charisma for powerful commands.",
+    "additional_information": [
+        "Can create new wraiths from fallen enemies",
+        "Incorporeal nature allows movement through solid objects",
+        "May assume a corporeal form to strike physically",
+        "Resistant to many damage types",
+        "Requires no basic biological needs like food or sleep"
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that instills fear",
+        "chilling ghost with life-draining capabilities",
+        "monster that paralyzes and commands undead",
+        "fear-inducing wraith-like creature",
+        "creature that flies and drains life"
+    ]
+}

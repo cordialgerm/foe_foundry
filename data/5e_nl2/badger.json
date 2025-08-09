@@ -1,0 +1,50 @@
+{
+    "name": "Badger",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 3,
+    "ac": 10,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 ft. walking speed, burrow 5 ft.",
+    "role": null,
+    "tags": [
+        "mammal",
+        "solitary",
+        "territorial"
+    ],
+    "adjectives": [
+        "small",
+        "stocky",
+        "fearless"
+    ],
+    "description": "The badger is a small, stocky mammal with powerful digging claws and a black-and-white striped face, known for its notable digging skills and burrows.",
+    "memorable": "Despite its low combat capabilities, the badger is fearless when provoked and known for its relentless nature in defending its territory.",
+    "goals": "To establish and defend its territory, dig burrows, and raise its young.",
+    "relations": "May coexist with other small beasts and could be targeted by larger predators.",
+    "environment": "Typically found in burrows in various terrains where it can dig.",
+    "strengths": "Excellent digging ability and strong sense of smell enhancing its tracking capabilities.",
+    "weaknesses": "Very low combat effectiveness with only 3 hit points and a low Strength score.",
+    "attacks": "The badger can perform a 'Bite', which deals 1 piercing damage with a low chance to hit.",
+    "most_powerful_ability": "Keen Smell, allowing it advantage on Perception checks that rely on smell.",
+    "equipment": null,
+    "senses": "Has a keen sense of smell, granting it heightened perception when detecting scents.",
+    "skills": "Noteworthy in Perception checks due to its keen sense of smell.",
+    "additional_information": [
+        "Can burrow to escape or maneuver underground.",
+        "Aggressive towards creatures that harm it, attacking the last assailant.",
+        "Possesses a unique retaliation trait during combat.",
+        "Low combat capabilities but can function as a minor nuisance.",
+        "Part of its nature includes creating elaborate tunnel systems."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fearless burrowing mammal",
+        "small digging animal",
+        "black and white striped face creature",
+        "tiny territorial beast",
+        "badger digging abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Trollkin Shaman",
+    "queries": [
+        {
+            "query": "medium humanoid spellcaster with regeneration ability that supports allies",
+            "variant": "medium-sized humanoid spell caster that has a regeneration power to help allies"
+        },
+        {
+            "query": "trollkin shaman that uses druid spells and can heal",
+            "variant": "shaman of trollkin that can heal and uses druid spells"
+        },
+        {
+            "query": "creature that has thick hide and is vulnerable to fire damage",
+            "variant": "monster with thick skin that is weak against fire attacks"
+        },
+        {
+            "query": "supportive humanoid that bolsters allies in battle while being resilient",
+            "variant": "humanoid that supports allies during combat and is tough to defeat"
+        },
+        {
+            "query": "spellcasting trollkin with high wisdom and bludgeoning staff attacks",
+            "variant": "trollkin with strong wisdom that casts spells and attacks with staff causing bludgeoning damage"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Asp Vine",
+    "queries": [
+        {
+            "query": "plant creature that ambushes and grapples multiple targets",
+            "variant": "plant monster that ambushes and can grapple multiple targets"
+        },
+        {
+            "query": "medium-sized vine creature that poisons and controls crowds",
+            "variant": "medium vine monster that poisons and controls groups"
+        },
+        {
+            "query": "creature resembling normal vines that can poison and restrain enemies",
+            "variant": "monster that looks like regular vines and can poison and restrain foes"
+        },
+        {
+            "query": "Asp Vine appearance and abilities in battle",
+            "variant": "Asp Vine look and combat abilities"
+        },
+        {
+            "query": "plant that is a threat in combat due to grappling and poison",
+            "variant": "plant that poses a threat in fighting because of grappling and poisoning"
+        }
+    ]
+}

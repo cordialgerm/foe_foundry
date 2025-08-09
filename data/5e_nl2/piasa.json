@@ -1,0 +1,50 @@
+{
+    "name": "Piasa",
+    "creature_type": "Dragon",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 144,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "flying",
+        "fear"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "intimidating"
+    ],
+    "description": "The Piasa is a large dragon known for its segmented tail and impressive aerial abilities. It is a formidable creature with a terrifying presence and a potent breath weapon.",
+    "memorable": "Its segmented tail diminishes in attack potency as it takes damage, adding a strategic element to encounters.",
+    "goals": "To intimidate and incapacitate foes through fear and its breath weapon.",
+    "relations": "May be encountered alongside other dragons or as a part of lairs inhabited by similar flying creatures.",
+    "environment": "Typically found in mountainous or high-altitude regions where it can utilize its flying speed.",
+    "strengths": "High hit points and a balanced set of offensive and defensive capabilities.",
+    "weaknesses": "Vulnerable to poison damage and has a low intelligence score, limiting cognitive abilities.",
+    "attacks": "Employs a multiattack strategy using its bite, claws, and segmented tail for grappling.",
+    "most_powerful_ability": "Sleep Breath, which can incapacitate multiple foes for an extended duration.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 15 feet, allowing it to navigate in complete darkness.",
+    "skills": "Proficient in athletics, perception, and stealth, enhancing its combat and reconnaissance abilities.",
+    "additional_information": [
+        "Can intimidate with Frightful Presence.",
+        "Tail re-grows segments at a rate of one per long rest.",
+        "Effective grappling ability with tail attack."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon with sleep breath ability",
+        "formidable dragon that can fly and grapple",
+        "Piasa dragon with segmented tail and frightful presence",
+        "flying dragon that can incapacitate with gas",
+        "intimidating dragon in mountainous regions"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Huntsman",
+    "queries": [
+        {
+            "query": "mechanical enforcer that uses nets in battle",
+            "variant": "enforcer that is mechanical and uses nets in combat"
+        },
+        {
+            "query": "medium-sized construct with explosive core and high hit points",
+            "variant": "construct of medium size that has high hit points and an explosive core"
+        },
+        {
+            "query": "durable robot that resists magical effects and moves quickly",
+            "variant": "robot that is durable, resists magic, and has fast movement"
+        },
+        {
+            "query": "battlefield controlling construct that deals bludgeoning damage",
+            "variant": "construct that controls the battlefield and deals damage with bludgeoning attacks"
+        },
+        {
+            "query": "clockwork creature immune to charm and has darkvision",
+            "variant": "creature made of clockwork that can't be charmed and has darkvision"
+        }
+    ]
+}

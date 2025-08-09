@@ -1,0 +1,25 @@
+{
+    "name": "Giant Snow Beetle",
+    "queries": [
+        {
+            "query": "large cold environment creature with snowball attacks",
+            "variant": "large cold monster that attacks with snowballs"
+        },
+        {
+            "query": "beast that can hide in snow and has a strong pincer attack",
+            "variant": "creature with strong pincers that can conceal itself in snow"
+        },
+        {
+            "query": "polar beetle that deals poison damage and knocks enemies prone",
+            "variant": "snowy beetle that poisons and can knock enemies down"
+        },
+        {
+            "query": "creature with good mobility in snow and poor intelligence",
+            "variant": "monster that moves well in snow but has very low intelligence"
+        },
+        {
+            "query": "cold beetle monster with special abilities for hiding and rolling snowballs",
+            "variant": "monster beetle from cold areas with snowball rolling and stealth abilities"
+        }
+    ]
+}

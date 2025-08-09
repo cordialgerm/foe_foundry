@@ -1,0 +1,25 @@
+{
+    "name": "Fire Imp",
+    "queries": [
+        {
+            "query": "tiny fiend that uses fire-based attacks and has low hit points",
+            "variant": "small fiend that has fire attacks and low hit points"
+        },
+        {
+            "query": "cunning fire creature that excels at damage avoidance and stealth",
+            "variant": "sly fire monster that is great at avoiding damage and sneaking"
+        },
+        {
+            "query": "lawful evil imp that regenerates health from fire damage and uses magic",
+            "variant": "evil lawful imp that heals from fire damage and casts spells"
+        },
+        {
+            "query": "magical creature with darkvision and resistance to cold and nonmagical attacks",
+            "variant": "creature with darkvision magic and resistances to cold and attacks not made with magic"
+        },
+        {
+            "query": "fiend with Heat Metal ability that attacks using Fire Touch",
+            "variant": "fiend with Heat Metal spell and uses Fire Touch to attack"
+        }
+    ]
+}

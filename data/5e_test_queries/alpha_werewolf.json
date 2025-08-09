@@ -1,0 +1,25 @@
+{
+    "name": "Alpha Werewolf",
+    "queries": [
+        {
+            "query": "humanoid wolf creature that shifts forms and is harmed by wolfsbane",
+            "variant": "wolf humanoid creature that can change forms and is weak to wolfsbane"
+        },
+        {
+            "query": "powerful lycanthrope with advantage in packs and damage immunity to nonmagical attacks",
+            "variant": "strong lycanthrope that gains advantage when with allies and immune to regular weapon damage"
+        },
+        {
+            "query": "werewolf that uses keen senses and inflicts lycanthropy with its bite",
+            "variant": "lycanthrope that has sharp hearing and smell and can turn others into werewolves with its bite"
+        },
+        {
+            "query": "Alpha Werewolf with strong physical abilities and a fear of wolfsbane",
+            "variant": "strong werewolf that has good physical traits and is afraid of wolfsbane flowers"
+        },
+        {
+            "query": "medium-sized humanoid wolf that can attack multiple times in combat",
+            "variant": "medium humanoid wolf creature that can make several attacks during a turn"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Hundun</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Hundun is a large celestial creature embodying chaotic goodness, making it a unique ally or challenge in a Dungeons & Dragons encounter. With an armor class of 18, it has considerable defenses that make it hard to hit. The creature has 153 hit points, which provides it with a solid buffer in combat. One of its most notable features is its extraordinary mobility, being able to walk and fly at a speed of 40 feet, allowing for strategic positioning in battles. The Hundun’s challenge rating of 12 indicates it is a formidable opponent capable of posing a serious threat to an adventuring party, providing 8,400 experience points upon defeat. It possesses exceptionally high strength, wisdom, and charisma, while its intelligence is quite low, which may reflect its nature as an entity driven by instinct rather than reason.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Hundun is also capable of casting spells, requiring no material components a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hundun
 
 *Large* *Celestial* *Chaotic Good*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage plus 7 (2d6) radiant damage.
 - **Motivating Babble:** The hundun babbles incoherently at one creature it can see within 60 feet of it. The target must succeed on a DC 17 Wisdom saving throw or suffer one of the following effects until the end of its next turn. Roll a d4 to determine which effect happens.
 - **Spellcasting:** The hundun casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 17):<br>At will: create or destroy water, dancing lights, minor illusion, prestidigitation<br>3/day each: black tentacles, fabricate (as an action), irresistible dance<br>1/day each: creation (as an action), plant growth
+</statblock>
 
 

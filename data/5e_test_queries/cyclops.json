@@ -1,0 +1,25 @@
+{
+    "name": "Cyclops",
+    "queries": [
+        {
+            "query": "huge giant creature with poor depth perception and high strength",
+            "variant": "huge creature giant with bad depth perception and high strengt"
+        },
+        {
+            "query": "monster that has a powerful melee attack and can become frightened",
+            "variant": "creature with strong melee attack and can be scared"
+        },
+        {
+            "query": "brute strength giant that uses a club and has average wisdom",
+            "variant": "brute force giant using club and average wisom"
+        },
+        {
+            "query": "tall giant with high hit points living in isolation",
+            "variant": "tall giant with many hit points living alon"
+        },
+        {
+            "query": "creature that can make two melee attacks and has a strong constitution",
+            "variant": "creature can attack twice in melee and has strong con"
+        }
+    ]
+}

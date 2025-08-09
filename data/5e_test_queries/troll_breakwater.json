@@ -1,0 +1,25 @@
+{
+    "name": "Troll, Breakwater",
+    "queries": [
+        {
+            "query": "large troll that can swim and regenerate",
+            "variant": "big troll that swims and has regeneration"
+        },
+        {
+            "query": "giant monster with amphibious abilities and strong melee attacks",
+            "variant": "giant creature having amphibious traits and powerful melee attacks"
+        },
+        {
+            "query": "water-dwelling creature with high hit points and natural armor",
+            "variant": "creature living in water with great hit points and natural defense"
+        },
+        {
+            "query": "troll that deals bludgeoning damage and loves aquatic environments",
+            "variant": "troll which inflicts bludgeoning damage and prefers water settings"
+        },
+        {
+            "query": "tough giant that can be incapacitated by force damage",
+            "variant": "sturdy giant that can be taken down by force attacks"
+        }
+    ]
+}

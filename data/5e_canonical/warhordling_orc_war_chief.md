@@ -1,6 +1,8 @@
 <MonsterName/>Warhordling Orc War Chief</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>90</HP>
 <summary>The Warhordling Orc War Chief is a formidable Medium humanoid creature that excels in combat and leadership roles within a band of orcs. With a well-rounded set of attributes, particularly strong in Strength and Dexterity, this orc war chief is designed to be both a frontline fighter and a tactical force on the battlefield. It boasts a solid Armor Class of 16 and a substantial pool of Hit Points totaling 90, reflecting its resilience in combat. The creature’s Challenge Rating of 5 indicates that it serves as a significant threat to mid-level adventurers, offering a balanced mix of damage output and mobility. Notable strengths include its high physical stats and skill proficiencies, while it does not particularly excel in Intelligence or Wisdom, which may limit its strategic thinking outside of combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For bonus actions, the War Chief has the **Aggressive Charge**, which enables it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warhordling Orc War Chief
 
 *Medium* *Humanoid*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Whirling Axe:** The war chief attacks with their greataxe.
 
 
+</statblock>
 
 

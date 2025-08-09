@@ -1,0 +1,52 @@
+{
+    "name": "Oaken Sentinel",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 189,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "slow walking speed of 10 feet",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "forest",
+        "plant"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "strategic"
+    ],
+    "description": "The Oaken Sentinel is a massive plant creature resembling a sturdy oak tree, camouflaged within natural surroundings.",
+    "memorable": "Its ability to immobilize foes with grappling branches makes it a fearsome guardian.",
+    "goals": "To protect natural spaces and control its environment.",
+    "relations": "May be encountered alongside other forest creatures or guardians.",
+    "environment": "Typically found in forests or other natural spaces.",
+    "strengths": "High hit points and the ability to grapple and restrain enemies.",
+    "weaknesses": "Vulnerable to lightning damage, limited mobility.",
+    "attacks": "Its Grasping Branches can grapple enemies from a distance and deal bludgeoning damage, or it can hurl rocks at foes.",
+    "most_powerful_ability": "Grasping Branches allows the Sentinel to immobilize multiple targets with strong, extendable branches.",
+    "equipment": null,
+    "senses": "Blindsight extending 120 feet allows it to perceive its surroundings despite being immobile.",
+    "skills": "Limited perception due to low Wisdom, resulting in a passive perception of 9.",
+    "additional_information": [
+        "Can create up to six Grasping Branches at once.",
+        "Has False Appearance ability to blend into its environment.",
+        "Grappling a target makes them take damage each turn until they escape.",
+        "Grasping Branches have their own hit points and armor class.",
+        "Destroying a branch does not harm the Oaken Sentinel."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive tree creature that grapples foes",
+        "guardian of natural spaces with gripping branches",
+        "oak monster that blends into forests",
+        "plant creature with strong bludgeoning attacks",
+        "defensive giant plant with lightning vulnerability"
+    ]
+}

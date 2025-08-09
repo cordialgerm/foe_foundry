@@ -1,0 +1,25 @@
+{
+    "name": "Arcane Blademaster",
+    "queries": [
+        {
+            "query": "humanoid spellcaster with high strength and magic resistance",
+            "variant": "humanoid spell caster with high strength and magic resitance"
+        },
+        {
+            "query": "powerful melee fighter that can teleport and cast fire spells",
+            "variant": "powerful melee fighter that can teleport and cast fire spelss"
+        },
+        {
+            "query": "versatile combatant that excels in magic and melee with high hit points",
+            "variant": "versatile combatant that is great in magic and melee with lots of hit points"
+        },
+        {
+            "query": "medium humanoid with impressive armor class and area control spells",
+            "variant": "medium humanoid with great armor class and area control spell"
+        },
+        {
+            "query": "creature that combines martial skills with spellcasting abilities",
+            "variant": "creature that mixes martial skills with spell caster abilities"
+        }
+    ]
+}

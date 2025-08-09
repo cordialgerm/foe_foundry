@@ -1,0 +1,25 @@
+{
+    "name": "Dark Eye",
+    "queries": [
+        {
+            "query": "humanoid with psychic abilities that avoids sunlight",
+            "variant": "humanoid that has psychic powers and dislikes sunlight"
+        },
+        {
+            "query": "dark creature with a strong gaze that incapacitates foes",
+            "variant": "creature with a powerful gaze that can incapacitate enemies"
+        },
+        {
+            "query": "sinister humanoid that uses daggers and deals cold damage",
+            "variant": "evil humanoid using daggers that inflicts cold damage"
+        },
+        {
+            "query": "creature known for manipulation and cold attacks in darkness",
+            "variant": "monster recognized for its dark manipulation and chilly attacks"
+        },
+        {
+            "query": "medium neutral evil creature with dark devotion and blindsight",
+            "variant": "medium evil creature with dark powers and ability to see without sight"
+        }
+    ]
+}

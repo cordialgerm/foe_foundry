@@ -1,0 +1,25 @@
+{
+    "name": "Planetar",
+    "queries": [
+        {
+            "query": "radiant angel with divine abilities that can heal allies",
+            "variant": "angelic creature with healing powers and radiant abilities"
+        },
+        {
+            "query": "large celestial being that wields a flaming sword and flies",
+            "variant": "big celestial creature that flies and uses a flaming sword"
+        },
+        {
+            "query": "stay immune to frightened and charm effects while fighting with a glowing sword",
+            "variant": "can avoid fear and charm while attacking with luminous sword"
+        },
+        {
+            "query": "powerful celestial warrior capable of summoning lightning and controlling weather",
+            "variant": "strong celestial fighter able to call down lightning and manipulate weather"
+        },
+        {
+            "query": "angelic figure with truesight that detects lies and has a fear-inducing gaze",
+            "variant": "celestial being with true sight capable of seeing through lies and frightening enemies"
+        }
+    ]
+}

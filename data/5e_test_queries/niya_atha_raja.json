@@ -1,0 +1,25 @@
+{
+    "name": "Niya-Atha Raja",
+    "queries": [
+        {
+            "query": "medium fey creature with high dexterity and social charm ability",
+            "variant": "fey creature that's medium-sized with great dexterity and charming skills"
+        },
+        {
+            "query": "lawful neutral monster that can enlarge and frighten enemies",
+            "variant": "creature with lawful neutral alignment that enlarges and scares foes"
+        },
+        {
+            "query": "magical creature that resists spells and has a bellowing attack",
+            "variant": "spell-resistant creature with a powerful bellow attack"
+        },
+        {
+            "query": "agile creature that communicates in Common and Sylvan",
+            "variant": "quick creature speaking both Common and Sylvan languages"
+        },
+        {
+            "query": "monster with immunity to charm and fear effects and multiattack",
+            "variant": "creature immune to charms and fear with multiple attacks"
+        }
+    ]
+}

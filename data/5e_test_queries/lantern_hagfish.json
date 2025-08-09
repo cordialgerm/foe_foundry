@@ -1,0 +1,25 @@
+{
+    "name": "Lantern Hagfish",
+    "queries": [
+        {
+            "query": "small aquatic aberration with bioluminescent abilities",
+            "variant": "small abberation in water that glows"
+        },
+        {
+            "query": "creature that can burrow into prey and swims through the Void",
+            "variant": "monster that swims in the void and can burrow into its enemies"
+        },
+        {
+            "query": "tactical creature that uses slime to control movement",
+            "variant": "strategic creature that controls movement using slime"
+        },
+        {
+            "query": "fragile monster resistant to charm and paralysis in an aquatic setting",
+            "variant": "delicate creature in water that resists charm and paralysis"
+        },
+        {
+            "query": "enemy that can slide without provoking attacks and inflicts continuous damage",
+            "variant": "foe that can slide and causes ongoing damage"
+        }
+    ]
+}

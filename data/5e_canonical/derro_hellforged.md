@@ -1,6 +1,8 @@
 <MonsterName/>Derro, Hellforged</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>112</HP>
 <summary>The Derro, Hellforged is a small yet formidable humanoid creature characterized by its lawful evil alignment. With a robust Armor Class of 16, the Hellforged boasts impressive hit points totaling 112, making it a resilient opponent in combat. Its challenge rating of 6 indicates that it poses a significant threat to parties of adventurers, providing 2,300 experience points upon defeat. Notably, the Hellforged possesses a unique combination of abilities that enhance its combat prowess while also introducing some vulnerabilities, particularly to light. Its strengths lie in its magical weapon attacks and resistance to certain types of damage, while its disadvantages include its impaired performance in bright sunlight and lower Wisdom, which means it struggles with perception checks.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For reactions, the Hellforged possesses the Voice of Authority ability, which ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derro, Hellforged
 
 *Small* *Humanoid* *lawful evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Voice of Authority (Recharge 5–6):** When a creature hits hellforged with an attack hellforged shrieks a one-word command. Attacker must make DC 15 Wis save or carry out this command on its next turn. This reaction works like the command spell except the attacker doesn’t have to understand the hellforged’s language. Hellforged must see the attacker and be able to speak to use this reaction.
 
 
+</statblock>
 
 

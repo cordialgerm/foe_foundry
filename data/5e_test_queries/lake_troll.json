@@ -1,0 +1,25 @@
+{
+    "name": "Lake Troll",
+    "queries": [
+        {
+            "query": "aquatic giant with regenerative abilities living near water",
+            "variant": "giant living near water that has regenerative powers and is aquatic"
+        },
+        {
+            "query": "chaotic evil troll that can breathe in water and air",
+            "variant": "troll that is chaotic evil and breathes water and air"
+        },
+        {
+            "query": "large troll with high strength that can damage weapons",
+            "variant": "big troll with incredible strength capable of weapon damage"
+        },
+        {
+            "query": "Lake Troll stealth abilities and keen sense of smell",
+            "variant": "stealth capabilities and sharp smell sense of Lake Troll"
+        },
+        {
+            "query": "troll that thrives on land and water with powerful claw attacks",
+            "variant": "troll that does well on both land and water and has strong claw attacks"
+        }
+    ]
+}

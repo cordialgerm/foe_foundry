@@ -1,0 +1,25 @@
+{
+    "name": "Howler Baboon",
+    "queries": [
+        {
+            "query": "agile pack creature that uses teamwork in combat",
+            "variant": "teamwork in combat agile pack creature"
+        },
+        {
+            "query": "medium-sized monster with strong melee attacks and high agility",
+            "variant": "strong melee attacks and medium-sized high agility monster"
+        },
+        {
+            "query": "ungrouped beast that thrives in packs and has low intelligence",
+            "variant": "low intelligence beast that thrives in packs ungrouped"
+        },
+        {
+            "query": "howler baboon strength in group combat and its abilities",
+            "variant": "howler baboon abilities and its strength in group combat"
+        },
+        {
+            "query": "melee and ranged attacks of a howler baboon and its tactics",
+            "variant": "howler baboon tactics and its melee and ranged attacks"
+        }
+    ]
+}

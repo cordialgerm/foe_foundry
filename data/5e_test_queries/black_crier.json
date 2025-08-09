@@ -1,0 +1,25 @@
+{
+    "name": "Black Crier",
+    "queries": [
+        {
+            "query": "undead creature that predicts disasters and haunts a specific area",
+            "variant": "undead monster that foretells doom and is bound to a region"
+        },
+        {
+            "query": "tall undead being with high Dexterity that can fly",
+            "variant": "medium undead creature with excellent agility and flying ability"
+        },
+        {
+            "query": "undead monster with necrotic attacks and frightening abilities",
+            "variant": "undead creature that uses necrotic damage and causes fear"
+        },
+        {
+            "query": "creature with darkvision that returns to life after being killed in its area",
+            "variant": "creature that has darkvision and resurrects in its own region"
+        },
+        {
+            "query": "tactician undead with weak Charisma but strong Wisdom",
+            "variant": "strategy-focused undead that has low Charisma and high Wisdom"
+        }
+    ]
+}

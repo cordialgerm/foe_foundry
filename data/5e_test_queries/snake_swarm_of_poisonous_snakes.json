@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Poisonous Snakes",
+    "queries": [
+        {
+            "query": "ambush predator made of tiny venomous snakes",
+            "variant": "ambush monster made up of tiny poisonous snakes"
+        },
+        {
+            "query": "swarm of snakes that inflicts poison damage",
+            "variant": "snake swarm that does poison damage"
+        },
+        {
+            "query": "medium swarm creature in water with high dexterity",
+            "variant": "medium swarm monster in water with great agility"
+        },
+        {
+            "query": "swarm of tiny snakes immune to many conditions",
+            "variant": "tiny snake swarm that is immune to several conditions"
+        },
+        {
+            "query": "snake swarm that can move through tiny openings",
+            "variant": "snake swarm able to pass through small openings"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Gypsosphinx",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 190,
+    "ac": 17,
+    "srd": false,
+    "cr": "14",
+    "movement": "70 ft. walking, 40 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "sphinx",
+        "monstrosity",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "magical",
+        "resilient",
+        "ominous"
+    ],
+    "description": "The Gypsosphinx is a large, imposing creature with natural armor and strong physical capabilities. It has a beak and claws that are formidable weapons in combat.",
+    "memorable": "It possesses death sense, allowing it to sense injured foes and predict their demise.",
+    "goals": "To hunt and eliminate weakened foes and assert its dominance in its territory.",
+    "relations": "Related to other sphinxes and serves as a cunning adversary for adventurers.",
+    "environment": "Typically found in desolate or mystical locations, often in ruins or ancient structures.",
+    "strengths": "Immunity to psychic damage, resistance to necrotic damage, and magical weapon attacks.",
+    "weaknesses": "Relies on physical attacks which may be countered by cunning spellcasters.",
+    "attacks": "Makes beak and claw attacks that deal piercing and slashing damage; can knock down opponents.",
+    "most_powerful_ability": "Carrion Breath, releasing a toxic breath that inflicts poison and necrotic damage while hindering death saves.",
+    "equipment": null,
+    "senses": "Has truesight up to 90 feet, providing it with unparalleled awareness of its surroundings.",
+    "skills": "Exhibits proficiency in Arcana, History, Perception, and Religion, making it knowledgeable in multiple domains.",
+    "additional_information": [
+        "Can foretell the manner of a creature's death through observation.",
+        "Immunities and resistances provide significant combat advantages.",
+        "Can teleport, enhancing its mobility in fights."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic"
+    ],
+    "spellcasting": "Can cast spells like blur, dispel magic, and greater invisibility, enhancing its versatility in combat.",
+    "test_queries": [
+        "giant monster with magical abilities",
+        "sphinx that can predict death",
+        "creature with truesight and flight",
+        "formidable opponent in ancient ruins",
+        "intelligent monster with poison breath"
+    ]
+}

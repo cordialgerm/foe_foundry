@@ -1,0 +1,48 @@
+{
+    "name": "Giant Sea Horse",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 16,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "swim 40 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "mount",
+        "gentle"
+    ],
+    "adjectives": [
+        "colorful",
+        "shy",
+        "graceful"
+    ],
+    "description": "Oversized version of the common sea horse, with long, curling tails and brightly colored bodies that help them blend into coral reefs.",
+    "memorable": "Often used as mounts by aquatic races due to their calm temperament and strong swimming ability.",
+    "goals": "Avoid threats and thrive in warm, shallow ocean waters.",
+    "relations": "Can be found alongside aquatic elves, merfolk, and tritons.",
+    "environment": "Warm, shallow ocean waters.",
+    "strengths": "Graceful swimmers capable of quick movement and strong aquatic maneuverability.",
+    "weaknesses": "Non-aggressive; relies on avoidance rather than combat.",
+    "attacks": "Delivers a ram attack, enhanced by a charge that can knock opponents prone.",
+    "most_powerful_ability": "Charge: extra bludgeoning damage and a chance to knock opponents prone.",
+    "equipment": null,
+    "senses": "Has passive Perception of 11.",
+    "skills": null,
+    "additional_information": [
+        "Can breathe only underwater.",
+        "Shy creatures that cling to underwater plants.",
+        "Trained by aquatic elves as mounts."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large colorful ocean creature used as a mount",
+        "gentle sea horse found in warm waters",
+        "graceful swimmers with curled tails",
+        "aquatic mount trained by merfolk",
+        "shy creature that can knock targets prone"
+    ]
+}

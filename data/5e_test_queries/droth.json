@@ -1,0 +1,25 @@
+{
+    "name": "Droth",
+    "queries": [
+        {
+            "query": "huge acid-using creature with knowledge absorption ability",
+            "variant": "huge creature that uses acid and can absorb knowledge"
+        },
+        {
+            "query": "powerful aberration that can squeeze through narrow spaces",
+            "variant": "strong aberration that can fit through tight spaces"
+        },
+        {
+            "query": "monster with high hit points and disadvantage aura for enemies",
+            "variant": "creature with a lot of hit points and an aura that gives disadvantage to foes"
+        },
+        {
+            "query": "Droth combat tactics and its abilities to inflict damage",
+            "variant": "combat strategies of the Droth and its damage-inflicting abilities"
+        },
+        {
+            "query": "lawful neutral aberration that communicates telepathically",
+            "variant": "aberration that is lawful neutral and can talk telepathically"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Vile Barber",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 35,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaotic",
+        "stealthy",
+        "evil"
+    ],
+    "adjectives": [
+        "vile",
+        "deceptive",
+        "swift",
+        "frightening"
+    ],
+    "description": "The Vile Barber is a small fey creature with high Dexterity, known for its chaotic nature and treacherous behavior. It wields a Straight Razor and utilizes stealth to strike its foes.",
+    "memorable": "It has the unique ability Blood Frenzy, granting its attacks advantage against injured foes, and can inflict ongoing damage with its wounding attacks.",
+    "goals": "To inflict harm and terror upon others while evading capture through stealth and trickery.",
+    "relations": "Often encountered in areas where other fey are found, it may associate with other chaotic or evil creatures.",
+    "environment": "Commonly found in dark, secluded places, often within forests or areas where it can hide easily.",
+    "strengths": "Excels in stealth and mobility, resistant to nonmagical physical damage.",
+    "weaknesses": "Low Constitution and Wisdom scores make it vulnerable to certain spells and effects.",
+    "attacks": "Utilizes a Straight Razor to deal slashing damage or steal items, inflicting bleeding wounds that cause ongoing damage.",
+    "most_powerful_ability": "The Blood Frenzy ability allows it to strike faster and more effectively against weakened enemies.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Highly skilled in Stealth and Acrobatics, allowing for effective evasion and maneuverability.",
+    "additional_information": [
+        "Can teleport to avoid attacks and hide.",
+        "Immune to the frightened condition.",
+        "Deals necrotic damage with its Frightening Cut ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small chaotic evil fey creature",
+        "stealthy barber that inflicts bleeding damage",
+        "monster that steals items and deals necrotic damage",
+        "vile fey creature with teleportation ability",
+        "quick fey that attacks injured foes"
+    ]
+}

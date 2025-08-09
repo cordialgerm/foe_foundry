@@ -1,0 +1,25 @@
+{
+    "name": "Dragonette, Shovel",
+    "queries": [
+        {
+            "query": "tiny dragon that can burrow and uses camouflage in forests",
+            "variant": "small dragon that burrows and hides using foliage in woods"
+        },
+        {
+            "query": "neutral dragon with a sticky tongue and floral camouflage",
+            "variant": "non-aligned dragonette that has a stick tongue and floral disguise"
+        },
+        {
+            "query": "agile dragon with abilities for ambush tactics and mobility",
+            "variant": "nimble dragonette skilled in ambushing and maneuvering"
+        },
+        {
+            "query": "tiny creature with high Constitution and stealth skills",
+            "variant": "small monster with strong Constitution and stealth abilities"
+        },
+        {
+            "query": "dragonette known for its Head Slap and Raking Claws attacks",
+            "variant": "dragonette famous for its Head Slap and Raking Claws hits"
+        }
+    ]
+}

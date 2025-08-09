@@ -1,0 +1,25 @@
+{
+    "name": "Scrag",
+    "queries": [
+        {
+            "query": "large water-dwelling giant with regeneration ability",
+            "variant": "big aquatic giant that can regenerate health"
+        },
+        {
+            "query": "giant creature with keen smell and amphibious traits",
+            "variant": "giant monster that has keen sense of smell and can breathe in water"
+        },
+        {
+            "query": "resilient giant that is weak to fire and acid",
+            "variant": "tough giant that takes extra damage from fire and acid"
+        },
+        {
+            "query": "creature known for its regenerative powers and claw attacks",
+            "variant": "monster famous for its regeneration ability and attacks with claws"
+        },
+        {
+            "query": "Scrag combat strategies for mid-level adventurers",
+            "variant": "Scrag fight tactics for intermediate adventurers"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Eel Hound",
+    "queries": [
+        {
+            "query": "fey creature that can breathe water and air living near land and water",
+            "variant": "fey monster that breaths air and water living close to water and land"
+        },
+        {
+            "query": "medium-sized monster with pack tactics and slippery abilities",
+            "variant": "medium creature with pack tactics and slick spittle powers"
+        },
+        {
+            "query": "agile monster that grapples opponents and uses special spittle",
+            "variant": "agile creature that can grapple foes and uses unique spittle"
+        },
+        {
+            "query": "versatile hunter found in the wetlands with high strength",
+            "variant": "versatile predator seen in wetlands with strong physical attacks"
+        },
+        {
+            "query": "creature known for its amphibious nature and dexterous movements",
+            "variant": "monster recognized for its ability to breathe both air and water and agile actions"
+        }
+    ]
+}

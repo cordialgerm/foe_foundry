@@ -1,0 +1,52 @@
+{
+    "name": "Snow Hag",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 17,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "horror",
+        "cold",
+        "illusion"
+    ],
+    "adjectives": [
+        "deceptive",
+        "cold-loving",
+        "cunning"
+    ],
+    "description": "The Snow Hag is a fey creature with a strong connection to cold environments, adept at creating illusions to deceive its adversaries.",
+    "memorable": "Utilizes a chilling fog to restrain enemies while disguising itself with illusions.",
+    "goals": "The Snow Hag seeks to manipulate and dominate its environment, using cunning tactics to outsmart its enemies.",
+    "relations": "Often found in the company of other cold-fey or hags, and possibly serving a more powerful entity.",
+    "environment": "Typically inhabits icy terrains, such as snow-covered landscapes and frozen surfaces.",
+    "strengths": "High durability due to decent hit points and good armor class, along with innate spellcasting abilities.",
+    "weaknesses": "Vulnerable to fire damage, making it cautious in environments where fire is prevalent.",
+    "attacks": "Claws for slashing damage in close combat and icy breath for cold damage and restraining effects.",
+    "most_powerful_ability": "Icy Embrace, which can deal massive cold damage and restrain multiple targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in deception, allowing it to manipulate encounters effectively.",
+    "additional_information": [
+        "Can traverse icy surfaces without penalty due to Ice Walk.",
+        "Innate spellcasting allows it to create illusions and fog for strategic advantage.",
+        "Illusory Appearance can disguise itself as another creature.",
+        "Immunity to cold damage makes it highly effective in cold environments.",
+        "Can summon sleet storms for battlefield control."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Casts spells like minor illusion and sleet storm, providing battlefield control and deception.",
+    "test_queries": [
+        "cold creature that casts illusions",
+        "manipulative hag in snowy terrain",
+        "fey being with icy breath attack",
+        "master of icy surfaces and fog",
+        "fey that disguises itself as others"
+    ]
+}

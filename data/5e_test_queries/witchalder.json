@@ -1,0 +1,25 @@
+{
+    "name": "Witchalder",
+    "queries": [
+        {
+            "query": "plant monster with grappling attacks and fire vulnerability",
+            "variant": "plant creature that grapples and is weak against fire"
+        },
+        {
+            "query": "medium-sized evil plant that can speak with plants",
+            "variant": "medium evil plant creature that communicates with plants"
+        },
+        {
+            "query": "creature that looks like a diseased tree and has poison abilities",
+            "variant": "monster resembling a sick tree with toxic traits"
+        },
+        {
+            "query": "Witchalder's regenerative abilities in sunlight and its ambush tactics",
+            "variant": "Witchalder's abilities to regenerate in sunlight and its sneak attack methods"
+        },
+        {
+            "query": "creature using wood manipulation and has strong Wisdom modifier",
+            "variant": "being capable of altering wood and possessing a high Wisdom score"
+        }
+    ]
+}

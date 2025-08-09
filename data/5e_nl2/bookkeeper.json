@@ -1,0 +1,53 @@
+{
+    "name": "Bookkeeper",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 5,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "fly 30 ft., walk 20 ft.",
+    "role": "null",
+    "tags": [
+        "protector",
+        "knowledge keeper",
+        "stealthy"
+    ],
+    "adjectives": [
+        "diminutive",
+        "fragile",
+        "stealthy",
+        "magical"
+    ],
+    "description": "The Bookkeeper is a diminutive construct designed to guard an important book, with a frail appearance and marked by its ability to fly and a connection to ink.",
+    "memorable": "Its unique ability to turn invisible while inside its book makes it a difficult foe to locate and combat, strengthening its role as a guardian of knowledge.",
+    "goals": "To protect and maintain the knowledge contained within its designated book.",
+    "relations": "Typically serves a creator or master who entrusts the Bookkeeper with safeguarding a valuable tome.",
+    "environment": "Often found in libraries, study rooms, or places where knowledge is preserved.",
+    "strengths": "Exceptional stealth and flying capabilities, along with immunity to many conditions.",
+    "weaknesses": "Fragile due to low hit points; can suffer from decreased effectiveness if separated from its book.",
+    "attacks": "Uses 'Ink Splash' to deal poison damage at range and potentially blind opponents; and a 'Bite' attack for melee combat.",
+    "most_powerful_ability": "Elusive Pages lets it become invisible while inside its book, complicating combat for foes.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 ft., allowing it to perceive its surroundings despite its lack of vision.",
+    "skills": "Proficient in stealth, reflecting its ability to avoid detection and navigate unnoticed.",
+    "additional_information": [
+        "Damage immunities to cold or fire, poison, and psychic damage.",
+        "Advantage on attacks and skill checks when its creator is nearby.",
+        "If separated from its book, it risks losing hit points.",
+        "Death results in the destruction of the book it protects.",
+        "Can change ownership through a Charisma check if its creator dies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny construct guardian",
+        "book protector with stealth abilities",
+        "invisible bookkeeper construct",
+        "magical knowledge guardian",
+        "fragile flying construct"
+    ]
+}

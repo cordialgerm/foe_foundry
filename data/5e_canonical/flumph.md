@@ -1,6 +1,8 @@
 <MonsterName/>Flumph</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>7</HP>
 <summary>The Flumph is a small aberration that serves as a unique and quirky creature in the Dungeons & Dragons universe, often filling a supportive or informative role in adventures. With a challenge rating of 1/8, it is relatively weak, primarily relying on its abilities to gather information and support its allies rather than direct combat. It features exceptional dexterity and intelligence, providing it with good evasion capabilities and problem-solving skills. However, its low strength and vulnerability to psychic damage make it particularly susceptible in physical confrontations. Notably, the Flumph can communicate telepathically and has an ability to both illuminate and conceal itself, contributing to its stealthy nature.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Flumph can use its Tendrils action to make a melee weapon attack.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flumph
 
 *Small* *Aberration*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Stench Spray (1/Day):** Each creature in a 15-foot cone makes a DC 10 Dexterity saving throw. On a failure  the creature exudes a horrible stench for 1 hour. While a creature exudes this stench  it and any creature within 5 feet of it are poisoned. A creature can remove the stench on itself by bathing during a rest.
 
 
+</statblock>
 
 

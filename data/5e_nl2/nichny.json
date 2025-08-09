@@ -1,0 +1,51 @@
+{
+    "name": "Nichny",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "fey",
+        "magic",
+        "manipulation",
+        "luck"
+    ],
+    "adjectives": [
+        "cunning",
+        "elusive",
+        "mystical"
+    ],
+    "description": "The Nichny is a medium-sized fey creature known for its cunning intelligence and magical abilities. It has a natural armor that grants it a high armor class.",
+    "memorable": "The Nichny excels at manipulating luck, granting allies advantages and imposing disadvantages on enemies.",
+    "goals": "To use its luck-manipulating abilities to influence battles in its favor and confuse opponents.",
+    "relations": null,
+    "environment": "Typically found in enchanted forests or mystical realms.",
+    "strengths": "Possesses high intelligence, dexterity, and charisma, making it adept at both combat and social interactions.",
+    "weaknesses": "Vulnerable to radiant damage.",
+    "attacks": "Can execute claws attacks dealing slashing and force damage, or use Luck-Stealing Bolts to impose disadvantages.",
+    "most_powerful_ability": "Aura of Luck enhances allies' attacks and hinders enemies' effectiveness.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Acrobatics, Insight, Perception, and Stealth, showcasing its agility and awareness.",
+    "additional_information": [
+        "Grants allies a luck bonus on saving throws within its aura.",
+        "Has Magic Resistance for spell defenses.",
+        "Can create Lucky Stones providing a saving throw bonus.",
+        "Can teleport up to 120 feet as a tactical maneuver.",
+        "Utilizes Soothsaying for cryptic prophecies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature that manipulates luck",
+        "mysterious creature with aura of luck",
+        "medium fey with teleportation abilities",
+        "cunning fey that creates lucky stones",
+        "magical fey known for deception and fortune"
+    ]
+}

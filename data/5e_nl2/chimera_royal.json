@@ -1,0 +1,53 @@
+{
+    "name": "Chimera, Royal",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 189,
+    "ac": 17,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 40 ft., fly 80 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "chimaera",
+        "flying",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "regal",
+        "formidable",
+        "versatile"
+    ],
+    "description": "The Royal Chimera features elements from various creatures, including a ferocious lion's head, a goat's head that can cast spells, and a dragon's head capable of exhaling fire.",
+    "memorable": "Its ability to blend physical might with powerful spellcasting makes it a versatile threat in combat.",
+    "goals": "To dominate and intimidate its opponents and allies with powerful abilities.",
+    "relations": "Often encountered in the company of other evil creatures or as a mythical guardian.",
+    "environment": "Typically found in dark, remote areas, often guarding treasures or territory.",
+    "strengths": "Resistant to nonmagical attacks, immune to charmed and frightened conditions, and capable of dealing both physical and magical damage.",
+    "weaknesses": "Lower intelligence limits strategic capabilities and access to certain magical spells.",
+    "attacks": "Utilizes a combination of physical attacks like Bite and Claws, along with powerful magical attacks like Arcane Blast and Searing Breath.",
+    "most_powerful_ability": "Searing Breath allows a sweeping fiery attack that can blind opponents and deal massive damage.",
+    "senses": "Possesses blindsight within 30 feet, allowing it to sense its surroundings in total darkness and invisibility.",
+    "skills": "Has a moderate passive perception of 16.",
+    "additional_information": [
+        "Can use Legendary Resistance to avoid failed saves.",
+        "Roar of the King provides temporary hit points to nearby allies.",
+        "Spellcasting capability adds versatility in combat.",
+        "Regal Bearing enhances its defensive capabilities.",
+        "The mix of physical and magical attacks offers strategic options."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Can cast spells using Charisma, including charm person, dispel magic, and dominate person.",
+    "test_queries": [
+        "fire breathing regal monster",
+        "spellcasting monster with lion head",
+        "huge monster that flies and casts spells",
+        "versatile chimera that resists nonmagical attacks",
+        "formidable beast with magical fire attacks"
+    ]
+}

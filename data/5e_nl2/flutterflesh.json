@@ -1,0 +1,53 @@
+{
+    "name": "Flutterflesh",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 187,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 60 ft., fly 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "necrotic",
+        "flying",
+        "chaotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "mobile",
+        "undead"
+    ],
+    "description": "The Flutterflesh is a Large Undead creature with a skeletal appearance, capable of both walking swiftly and flying short distances. Its body is covered in bone spurs that inflict piercing and necrotic damage.",
+    "memorable": "The Flutterflesh's ability to reduce foes to 1 hit point instead of killing them makes it uniquely dangerous in combat.",
+    "goals": "To incapacitate and torment living creatures on the battlefield while remaining resilient to attacks.",
+    "relations": "Often encountered alongside other undead creatures or necromancers.",
+    "environment": "Typically found in dark, necromantic settings or battlefields haunted by death.",
+    "strengths": "High mobility and regeneration abilities allow it to persist in combat and escape when necessary.",
+    "weaknesses": "Vulnerable to radiant damage, which can negate its regeneration ability.",
+    "attacks": "The Flutterflesh uses melee Bone Spur attacks combined with psychic Tormenting Gaze shots, both of which can inflict significant damage.",
+    "most_powerful_ability": "Creeping Death, which emits necromantic energy in a wide area, causing devastating necrotic damage.",
+    "senses": "It possesses a passive perception of 17, allowing it to detect enemies effectively.",
+    "skills": "Skilled in Stealth, making it difficult to detect in shadowy environments.",
+    "additional_information": [
+        "Regeneration at the start of its turn unless it takes radiant or fire damage.",
+        "Abilities focus on necrotic damage and debilitating effects.",
+        "Can reduce multiple enemies to near death simultaneously with its attacks.",
+        "Has natural resistance to nonmagical physical damage.",
+        "Turn Resistance allows it to resist being turned by clerics."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster with necrotic abilities",
+        "large flying creature that reduces foes to 1 hp",
+        "chaotic evil undead with regeneration powers",
+        "mobile undead that deals psychic damage",
+        "creature with necromantic area attack"
+    ]
+}

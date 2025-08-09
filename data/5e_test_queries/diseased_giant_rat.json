@@ -1,0 +1,25 @@
+{
+    "name": "Diseased Giant Rat",
+    "queries": [
+        {
+            "query": "small rat that infects with disease and lives in sewers",
+            "variant": "little rat that can cause disease and dwells in sewers"
+        },
+        {
+            "query": "rat with keen smell that attacks in packs",
+            "variant": "rat that has a sharp sense of smell and uses pack tactics to fight"
+        },
+        {
+            "query": "agile rat that poses a threat with sewer plague",
+            "variant": "quick rat that presents danger with a sewer plague infection"
+        },
+        {
+            "query": "melee attacking rat that is weak but dangerous in numbers",
+            "variant": "rat that attacks in melee, weak individually but risky in groups"
+        },
+        {
+            "query": "disease spreading giant rat found in urban areas",
+            "variant": "large rat that spreads diseases, common in city environments"
+        }
+    ]
+}

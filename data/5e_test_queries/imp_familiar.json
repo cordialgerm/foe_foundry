@@ -1,0 +1,25 @@
+{
+    "name": "Imp Familiar",
+    "queries": [
+        {
+            "query": "small flying fiend with telepathy and invisibility",
+            "variant": "tiny fiend that can fly and has telepathic abilities"
+        },
+        {
+            "query": "stealthy fiend that can shapeshift and mimic voices",
+            "variant": "cunning fiend able to shapeshift and imitate sounds"
+        },
+        {
+            "query": "fiend with fire immunity and flight capabilities",
+            "variant": "fiend that is immune to fire and can fly"
+        },
+        {
+            "query": "Imp Familiar with magic resistance and darkvision",
+            "variant": "Imp that has resistance to magic and can see in darkness"
+        },
+        {
+            "query": "lawful evil fiend that assists with stealth and deception",
+            "variant": "evil fiend that helps with stealthy and deceptive actions"
+        }
+    ]
+}

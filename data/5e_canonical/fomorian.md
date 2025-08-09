@@ -1,6 +1,8 @@
 <MonsterName/>Fomorian</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>8</CR>
+<AC/>15</AC>
+<HP/>138</HP>
 <summary>The Fomorian is a powerful Huge Fey creature, renowned for its formidable presence and mystical abilities. With a Challenge Rating of 8, it poses a significant threat to adventurers, boasting a high Armor Class of 15 and robust Hit Points totaling 138. The Fomorian is particularly adept at charming and controlling creatures through its unique gaze abilities, posing a psychological challenge in addition to its physical threat. However, its reliance on these charm effects can be seen as a weakness, as players can strategize to counteract its powers. The Fomorian possesses both high physical strength and durability, making it an exceptional opponent in combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Fomorian has the ability called Immortal Form that allows it to cha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fomorian
 
 *Huge* *Fey*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Immortal Form:** While in its lair, the fomorian magically changes into a specific Medium humanoid resembling a human or back to its true form. Apart from its size, its statistics are unchanged. The fomorian reverts to its true form when it dies, is incapacitated, or leaves its lair.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Fallen Deva",
+    "queries": [
+        {
+            "query": "celestial warrior with healing abilities",
+            "variant": "celestial fighter with healing powers"
+        },
+        {
+            "query": "powerful being that can fly and bears radiant damage weakness",
+            "variant": "strong creature that flies and is vulnerable to radiant damage"
+        },
+        {
+            "query": "angry celestial entity with a magical resistance and truesight",
+            "variant": "offended celestial creature with magic resistance and true sight"
+        },
+        {
+            "query": "creature that transforms and can heal allies in battle",
+            "variant": "monster that shapeshifts and has abilities to heal comrades during fights"
+        },
+        {
+            "query": "Fallen Deva traits including high Charisma and multiple skill proficiencies",
+            "variant": "Fallen Deva abilities with strong Charisma and several skill proficiencies"
+        }
+    ]
+}

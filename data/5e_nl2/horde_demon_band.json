@@ -1,0 +1,55 @@
+{
+    "name": "Horde Demon Band",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 260,
+    "ac": 13,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "demon",
+        "mob",
+        "chaotic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "chaotic",
+        "durable"
+    ],
+    "description": "A large fiendish entity characterized by its chaotic evil nature, the Horde Demon Band is composed of multiple demons that work together in combat. Its formidable presence is marked by strong melee capabilities and the ability to disperse into additional demons upon defeat.",
+    "memorable": "Can disperse into more demons, prolonging fights.",
+    "goals": "Thrive on chaos and spread malevolence.",
+    "relations": "Related to other demons and fiends, often encountered in groups.",
+    "environment": "Typically found in chaotic or evil-aligned realms.",
+    "strengths": "Immune to poison and resistant to cold, fire, lightning, and nonmagical weapon damage.",
+    "weaknesses": "Susceptible to area-effect attacks, taking double damage.",
+    "attacks": "Multiattack allows it to strike twice; Mob Attack deals significant slashing damage.",
+    "most_powerful_ability": "Band Dispersal enables it to multiply into lesser demons when reduced to 0 hit points.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see up to 120 feet.",
+    "skills": null,
+    "additional_information": [
+        "Resilient with 260 hit points.",
+        "Each individual demon created has 26 hit points.",
+        "Operates effectively as a unit, sharing space efficiently.",
+        "Vulnerable to area damage, making tactics important.",
+        "Can attack even when single-target effects are used."
+    ],
+    "damage_types": [
+        "fire",
+        "cold",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic demon that multiplies",
+        "fiendish entity with area vulnerability",
+        "mob of demons with high hit points",
+        "demon band that spreads chaos",
+        "malevolent demon with slashing attack"
+    ]
+}

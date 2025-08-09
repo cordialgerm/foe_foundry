@@ -1,0 +1,52 @@
+{
+    "name": "Corpse Worm",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walking and climbing speed of 30 feet",
+    "role": null,
+    "tags": [
+        "grappler",
+        "poison",
+        "disease"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "dangerous"
+    ],
+    "description": "The Corpse Worm is a large creature with robust defenses, capable of grappling and swallowing its prey. Its bite inflicts piercing damage and can transmit a debilitating disease.",
+    "memorable": "Its ability to swallow foes and inflict a disease makes the Corpse Worm a dangerous opponent in combat.",
+    "goals": "Typically seeks to grapple and consume smaller creatures, incapacitating them with disease.",
+    "relations": null,
+    "environment": "often found in decaying or putrid environments, due to its grotesque nature.",
+    "strengths": "Immunity to poison damage and ability to inflict a debilitating disease on its victims.",
+    "weaknesses": "Very low intelligence and charisma, limiting its strategies.",
+    "attacks": "Bite attack that deals piercing damage and grapples targets; Swallow action allows it to consume creatures, dealing ongoing acid damage.",
+    "most_powerful_ability": "Swallowing a creature, rendering them blinded and restrained while dealing acid damage over time.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting it advantage on Perception checks relying on smell.",
+    "skills": "Has a perception score of +3, making it reasonably aware of its surroundings.",
+    "additional_information": [
+        "Grapples targets with a DC 13 escape requirement.",
+        "Disease inflicted by its bite reduces hit points over time.",
+        "Regurgitates swallowed creatures if it sustains significant damage.",
+        "Can only swallow one creature at a time.",
+        "High Constitution boosts its durability in combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large creature that grapples and swallows",
+        "poisonous worm monster with disease bite",
+        "formidable grappler with acid damage",
+        "creature that inflicts diseases and consumes prey",
+        "monstrous worm with strong natural armor"
+    ]
+}

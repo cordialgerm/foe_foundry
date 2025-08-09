@@ -1,0 +1,25 @@
+{
+    "name": "Feral Hunter",
+    "queries": [
+        {
+            "query": "stealthy fey creature from the forest with heightened senses",
+            "variant": "stealthy creature from the forest that is a fey with enhanced senses"
+        },
+        {
+            "query": "medium fey that can move through plants and has piercing weapon abilities",
+            "variant": "medium fey creature with abilities for piercing weapons and can pass through plants"
+        },
+        {
+            "query": "Feral Hunter abilities and combat effectiveness in woodland environments",
+            "variant": "combat effectiveness and abilities of the Feral Hunter in forest environments"
+        },
+        {
+            "query": "agile fey that resists charm and has good perception",
+            "variant": "agile creature that is fey, has good perception, and resists charm"
+        },
+        {
+            "query": "creature that marks its quarry and strikes with precision in the wilderness",
+            "variant": "creature that has the ability to mark quarry and strikes precisely in wild areas"
+        }
+    ]
+}

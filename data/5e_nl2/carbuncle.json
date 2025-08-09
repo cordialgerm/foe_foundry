@@ -1,0 +1,52 @@
+{
+    "name": "Carbuncle",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic good",
+    "size": "Small",
+    "hp": 36,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "climb 20 ft. walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "jungle",
+        "stealth",
+        "support"
+    ],
+    "adjectives": [
+        "vibrant",
+        "supportive",
+        "chaotic"
+    ],
+    "description": "The Carbuncle features a vibrant garnet gemstone and has a small, agile body well-suited for jungles. Its unique abilities make it a versatile companion, aiding allies with illumination and stealth.",
+    "memorable": "Its ability to emit light and camouflage in jungle terrain makes it a standout companion and scout.",
+    "goals": "The Carbuncle typically aims to assist allies through scouting, illumination, and evasion.",
+    "relations": "It may be encountered alongside other jungle creatures or as a companion to adventurers.",
+    "environment": "Commonly found in jungle terrains.",
+    "strengths": "Good at stealth and perception, with special abilities enhancing its usefulness in combat.",
+    "weaknesses": "Low physical damage output due to low Strength.",
+    "attacks": "Can use a Multiattack to deliver a bite and a claw attack, dealing piercing and slashing damage respectively.",
+    "most_powerful_ability": "Light Beam is a powerful attack that creates a line of radiant damage, affecting multiple foes.",
+    "senses": "The Carbuncle has a passive perception of 15, making it quite effective at detecting hidden creatures.",
+    "skills": "It possesses good proficiency in stealth and perception, enhancing its capabilities in exploration.",
+    "additional_information": [
+        "Immunity to the charmed condition.",
+        "Advantage on Stealth checks in jungle terrain.",
+        "Can create light to illuminate dark areas.",
+        "Vulnerable to stronger physical attacks.",
+        "Effective in support roles during exploration and combat."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small jungle monster with a glowing gem",
+        "stealthy creature with radiant abilities",
+        "monstrosity that emits light and camouflages",
+        "versatile companion found in jungles",
+        "creature that supports allies with illumination"
+    ]
+}

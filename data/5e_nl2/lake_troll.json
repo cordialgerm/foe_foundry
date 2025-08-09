@@ -1,0 +1,50 @@
+{
+    "name": "Lake Troll",
+    "creature_type": "Giant",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 126,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "giant",
+        "troll"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "durable"
+    ],
+    "description": "The Lake Troll is a large, formidable aquatic giant with a strong physical presence and keen sense of smell. It thrives in both land and water environments.",
+    "memorable": "Its ability to regenerate health in combat makes it a persistent threat unless countered with fire or cold damage.",
+    "goals": "To hunt and ambush unsuspecting foes in its aquatic habitat.",
+    "relations": "Often encountered near lakes and rivers, it may have rivalries with other aquatic creatures.",
+    "environment": "Preferred habitats include lakes and wetlands, where it can take advantage of its amphibious traits.",
+    "strengths": "High durability and healing make it hard to defeat; adept at stealth in its natural environment.",
+    "weaknesses": "Vulnerable to cold and fire damage which halts its regeneration.",
+    "attacks": "Can perform a multiattack with a bite and claw, with drastic effects on the victims' weapons if successful.",
+    "most_powerful_ability": "Regeneration, allowing it to recover health each turn unless damaged by specific elements.",
+    "equipment": null,
+    "senses": "Possesses keen smell, granting advantage on perception checks reliant on smell.",
+    "skills": "Moderate skills in stealth and perception, enhancing its ambush capabilities.",
+    "additional_information": [
+        "The troll regenerates health unless affected by fire or cold damage.",
+        "Its multiattack can damage weapons in addition to dealing physical harm.",
+        "Low intelligence and charisma limit its social interactions and strategies.",
+        "Can breathe both air and water, making it effective in diverse battles.",
+        "A chaotic evil nature drives its aggressive behavior."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable swamp giant with regeneration ability",
+        "aquatic giant that can breathe water and air",
+        "troll with keen smell and stealth skill",
+        "large troll that attacks weapons in combat",
+        "Lake Troll abilities and weaknesses"
+    ]
+}

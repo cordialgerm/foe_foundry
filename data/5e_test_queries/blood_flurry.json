@@ -1,0 +1,25 @@
+{
+    "name": "Blood Flurry",
+    "queries": [
+        {
+            "query": "flying aberration that disguises itself as snowflakes and causes bleeding",
+            "variant": "aberration that flies and looks like snowflakes while causing bleeding wounds"
+        },
+        {
+            "query": "creature resistant to cold and can inflict bleeding damage",
+            "variant": "a monster that has resistance to cold damage and inflicts bleeding wounds"
+        },
+        {
+            "query": "medium-sized monster with a rust vulnerability that can fly",
+            "variant": "medium creature that is vulnerable to rust and has the ability to fly"
+        },
+        {
+            "query": "blood-sensing creature that blends into snowy environments",
+            "variant": "creature that can sense blood and camouflages in snow"
+        },
+        {
+            "query": "neutral evil entity with significant hit points and slow walking speed",
+            "variant": "creature with a challenge rating of 10, high hit points, and low walking speed"
+        }
+    ]
+}

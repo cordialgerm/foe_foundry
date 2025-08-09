@@ -1,0 +1,25 @@
+{
+    "name": "Catterball",
+    "queries": [
+        {
+            "query": "small chaotic neutral creature that can jump high and squeeze through narrow spaces",
+            "variant": "chaotic neutral small creature that can squeeze through tight areas and jump really high"
+        },
+        {
+            "query": "fey creature known for its rubbery flesh and agility in combat",
+            "variant": "agile fey creature recognized for its rubbery skin and combat skills"
+        },
+        {
+            "query": "creature with high dexterity that prefers mobility over strength",
+            "variant": "monster that has a lot of dexterity and values mobility instead of strength"
+        },
+        {
+            "query": "elusive fey with the ability to change form and attack from a distance",
+            "variant": "fey creature that can change its shape and attack from afar while being hard to catch"
+        },
+        {
+            "query": "Fey creature with thunder damage abilities and mobility advantages",
+            "variant": "fey creature that can deal thunder damage and has advantages in mobility"
+        }
+    ]
+}

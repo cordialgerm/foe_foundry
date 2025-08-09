@@ -1,0 +1,25 @@
+{
+    "name": "Roper",
+    "queries": [
+        {
+            "query": "monstrous cave predator with tendrils and sharp teeth",
+            "variant": "cave predator with tendrils and sharp teeth, monster"
+        },
+        {
+            "query": "large stone-like creature that ambushes in dark caves",
+            "variant": "large creature that is stone-like and ambushes in caves"
+        },
+        {
+            "query": "creature with long tendrils and false appearance ability",
+            "variant": "creature that has a false appearance ability and long tendrils"
+        },
+        {
+            "query": "darkvision creature found in rocky environments",
+            "variant": "creature with darkvision that lives in rocky places"
+        },
+        {
+            "query": "Roper's ambush tactics using camouflage and grappling",
+            "variant": "Roper's tactics to ambush with camouflage and grappling"
+        }
+    ]
+}

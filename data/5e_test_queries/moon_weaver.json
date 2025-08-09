@@ -1,0 +1,25 @@
+{
+    "name": "Moon Weaver",
+    "queries": [
+        {
+            "query": "small beast with enchanting presence and the ability to fly",
+            "variant": "small creature that flies and has an enchanting aura"
+        },
+        {
+            "query": "agile creature that avoids webs and inspires allies",
+            "variant": "nimble monster that escapes webbing and boosts teammates"
+        },
+        {
+            "query": "beast capable of piercing damage with a beak and using songs to motivate others",
+            "variant": "creature that attacks with its beak and uses music to inspire"
+        },
+        {
+            "query": "moon-themed creature that communicates in a unique language and can see in the dark",
+            "variant": "lunar creature that has darkvision and speaks a special language"
+        },
+        {
+            "query": "small beast with moderate armor class and high dexterity score",
+            "variant": "small creature with decent AC and great agility score"
+        }
+    ]
+}

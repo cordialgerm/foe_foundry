@@ -1,0 +1,25 @@
+{
+    "name": "Bronze Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with lightning immunity that lives in water and air",
+            "variant": "medium dragon that has immunity to lightning and can live in water and air"
+        },
+        {
+            "query": "clever aquatic dragon that uses breath weapons in combat",
+            "variant": "smart water dragon that attacks using breath weapons"
+        },
+        {
+            "query": "dragon with high armor class that excels in mobility and combat",
+            "variant": "dragon with good armor class that is excellent in mobility and battle"
+        },
+        {
+            "query": "metallic dragon that communicates in Draconic and has a strong bite",
+            "variant": "metallic dragon skilled in Draconic language that has a powerful bite attack"
+        },
+        {
+            "query": "dragon that can push enemies away and has amphibious abilities",
+            "variant": "dragon capable of pushing foes back and can breathe both air and water"
+        }
+    ]
+}

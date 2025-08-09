@@ -1,0 +1,53 @@
+{
+    "name": "Mbielu",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 76,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "beast",
+        "aquatic",
+        "positional threat"
+    ],
+    "adjectives": [
+        "formidable",
+        "toxic",
+        "resilient"
+    ],
+    "description": "The Mbielu is a huge beast known for its exceptional physical power, possessing toxic skin and a tail attack. Its appearances exude strength, and it has a notable bellow that can incapacitate foes.",
+    "memorable": "Its toxic skin can poison those who get too close, and its bellow can disorient nearby creatures.",
+    "goals": "To protect its territory and defend itself from threats.",
+    "relations": "Could be encountered with other large beasts or in water-related ecosystems.",
+    "environment": "Typically found in aquatic or marshy environments.",
+    "strengths": "High physical strength and durability make it a potent threat in melee combat.",
+    "weaknesses": "Very low intelligence and charisma can limit its ability to interact with other creatures.",
+    "attacks": "Utilizes a melee tail attack that deals bludgeoning and poison damage, and can knock opponents prone.",
+    "most_powerful_ability": "Rumbling Bellow, which causes thunder damage and may incapacitate poisoned foes.",
+    "equipment": null,
+    "senses": "Has passive perception of 13, allowing it to sense nearby creatures effectively.",
+    "skills": "Proficient in Perception, giving it enhanced awareness of its surroundings.",
+    "additional_information": [
+        "Can hold its breath for 30 minutes, making it adaptable in aquatic settings.",
+        "Resilient to poison damage and incapable of being poisoned.",
+        "Toxic Skin poses a deterrent to melee attackers, causing them to potentially be poisoned.",
+        "The creature has an excellent melee reach with its tail attack.",
+        "Can inflict disadvantage on saving throws due to hallucinations if poisoned."
+    ],
+    "damage_types": [
+        "poison",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge beast with toxic skin",
+        "animal that can incapacitate with sound",
+        "strong aquatic creature with a poisonous attack",
+        "melee monster with a tail and thunder roar",
+        "creature that excels in close-range combat"
+    ]
+}

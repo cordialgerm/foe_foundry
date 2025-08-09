@@ -1,0 +1,48 @@
+{
+    "name": "Giant Armadillo",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 10,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "burrow 15 ft., walk 25 ft.",
+    "role": "null",
+    "tags": [
+        "beast",
+        "defensive",
+        "low-level creature"
+    ],
+    "adjectives": [
+        "robust",
+        "defensive",
+        "slow"
+    ],
+    "description": "The Giant Armadillo features a robust design, characterized by its capability to tuck into a hard shell for defense. It has moderate physical capabilities yet lacks agility.",
+    "memorable": "Its ability to tuck into a heavily armored ball makes it surprisingly resilient against attacks.",
+    "goals": "To survive and defend itself from attackers primarily through physical defense.",
+    "relations": "May be found in the company of other small beasts or in areas where underground movement is possible.",
+    "environment": "Typically found in areas where it can burrow or roam on the surface.",
+    "strengths": "Good defense when tucked into its shell, providing resistance to most physical damage types.",
+    "weaknesses": "Low Dexterity and Intelligence leading to poor agility and non-physical interaction capabilities.",
+    "attacks": "Uses its claws for melee attacks dealing slashing damage.",
+    "most_powerful_ability": "The 'Tuck In' ability allows it to become a heavily armored ball, gaining significant damage resistance.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can roll around when tucked in to maneuver defensively.",
+        "Low hit points make it vulnerable to strong attacks.",
+        "Moderate attack damage can be impactful against weaker foes."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "defensive small animal that rolls into a ball",
+        "creature that can burrow and hides in shell",
+        "armored beast with slashing claws",
+        "slow creature with strong physical defense",
+        "giant armadillo defensive abilities"
+    ]
+}

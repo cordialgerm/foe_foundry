@@ -1,0 +1,25 @@
+{
+    "name": "Werebear",
+    "queries": [
+        {
+            "query": "humanoid that can transform into a bear and has keen smell",
+            "variant": "humanoid that transforms into a bear and has a good sense of smell"
+        },
+        {
+            "query": "protective shapeshifting monster with high hit points",
+            "variant": "defensive shapeshifter monster with lots of hit points"
+        },
+        {
+            "query": "bear-human hybrid that can curse with lycanthropy",
+            "variant": "bear-human shapeshifter that can inflict lycanthropy"
+        },
+        {
+            "query": "large bear-like creature immune to normal weapons",
+            "variant": "big bear-like creature resistant to standard weapons"
+        },
+        {
+            "query": "medium humanoid capable of grappling and dealing pierce damage",
+            "variant": "medium humanoid that can grapple and inflict piercing damage"
+        }
+    ]
+}

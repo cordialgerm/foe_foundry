@@ -1,0 +1,25 @@
+{
+    "name": "Boar",
+    "queries": [
+        {
+            "query": "large muscular animal with sharp tusks that charges at threats",
+            "variant": "muscular large animal with tusks that charges threats"
+        },
+        {
+            "query": "territorial beast that forages in forests and grasslands",
+            "variant": "beast that forages in grasslands and forests, known for its territorial nature"
+        },
+        {
+            "query": "medium beast known for aggressive tactics and relentless survivability",
+            "variant": "medium animal with aggressive ability and relentless survival"
+        },
+        {
+            "query": "forest-dwelling creature with a powerful tusk attack and charge ability",
+            "variant": "creature from the forest with a strong tusk attack and charging capability"
+        },
+        {
+            "query": "beast that inflicts slashing damage using tusks and can knock opponents prone",
+            "variant": "animal that can knock down foes and deals slashing damage with tusks"
+        }
+    ]
+}

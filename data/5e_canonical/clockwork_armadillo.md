@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Armadillo</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Clockwork Armadillo is a Small, unaligned Construct that serves as a resilient guardian or helper in various settings. With a solid Armor Class of 14 and 22 hit points, it can endure some damage while also possessing specific immunities to various conditions and damage types. Its Dexterity is notably high at +4, allowing it to be very good at avoiding attacks and acting swiftly in combat. However, it has low Intelligence and Charisma, making it less effective in social interactions or complex problem-solving situations. Overall, the Clockwork Armadillo is a mechanical creature ideal for combat support, thanks to its special abilities and actions, while being relatively passive in roles that require emotional or intellectual engagement.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The "Tuck In" action allows the Clockwork Armadillo to retract into its shell, f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Armadillo
 
 *Small* *Construct* *unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Tuck In:** Tucks its entire body into its shell forming an armored ball. While an armored ball it moves by rolling has resistance to B/P/S damage is immune to the prone condition and it can’t make Scissor Claws attacks. As part of this action the armadillo can expand its shell outward to contain one object of its size or smaller that isn’t being worn or carried and is within 5 ft. of the armadillo. The armadillo can uncurl its body and release any contained item as a bonus action.
 
 
+</statblock>
 
 

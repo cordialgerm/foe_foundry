@@ -1,0 +1,25 @@
+{
+    "name": "Silent Crier",
+    "queries": [
+        {
+            "query": "medium fiend with bell toll abilities that can stun creatures",
+            "variant": "medium-sized fiend with bell toll powers that can stun monsters"
+        },
+        {
+            "query": "creature that can deafen spellcasters and frighten enemies",
+            "variant": "being that can deafen spell casters and cause fear in foes"
+        },
+        {
+            "query": "psychological control monster with significant hit points and area damage",
+            "variant": "psychological monster with considerable hit points and area damaging attacks"
+        },
+        {
+            "query": "fiend that resists cold and psychic damage while controlling battle",
+            "variant": "fiend that can withstand cold and psychic damage while managing combat"
+        },
+        {
+            "query": "creature with notable wisdom and multiattack capabilities in battle",
+            "variant": "monster with remarkable wisdom and the ability to attack multiple times"
+        }
+    ]
+}

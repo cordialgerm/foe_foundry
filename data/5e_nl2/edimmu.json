@@ -1,0 +1,52 @@
+{
+    "name": "Edimmu",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "60 feet walking speed",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "necrotic",
+        "life draining"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evil",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Edimmu is a medium undead creature capable of sapping the life force from foes, with notable incorporeal movement and a ghastly presence.",
+    "memorable": "Its ability to rejuvenate after destruction makes it a persistent threat.",
+    "goals": "To drain life force from living creatures and weaken adversaries.",
+    "relations": "Often associated with malicious spirits and can be encountered near bodies of water.",
+    "environment": "Typically found in desolate, haunted places or near magical water sources.",
+    "strengths": "Immunities to necrotic and poison damage, high Dexterity for effective attacks, and regenerative capabilities.",
+    "weaknesses": "Very low Strength limits its melee combat effectiveness.",
+    "attacks": "Inflicts necrotic damage through its Draining Touch, potentially exhausting and stunning its targets.",
+    "most_powerful_ability": "Rejuvenation allows it to rise again after being destroyed, regaining full hit points.",
+    "senses": "Has blindsight up to 60 feet, making it effective in combat even without traditional sight.",
+    "skills": "Possesses a passive Perception of 14, enhancing its awareness.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Gains advantage on attacks against magical water-associated creatures.",
+        "Only permanent destruction requires consecrated burial of its remains.",
+        "Can stun targets that are hit by its attacks.",
+        "Effects of its touch can critically reduce a target's maximum hit points."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that drains life",
+        "chaotic evil water monster",
+        "mobility through objects with necrotic attacks",
+        "undead that can regenerate and evade",
+        "life-draining creature with low strength"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Constrictor Snake",
+    "queries": [
+        {
+            "query": "massive snake that ambushes prey in swamps",
+            "variant": "huge serpent that hides and attacks in jungles"
+        },
+        {
+            "query": "30-foot long predator that constricts its prey",
+            "variant": "predatory snake over 30 feet that wraps around victims"
+        },
+        {
+            "query": "stealthy jungle beast with powerful grapple attack",
+            "variant": "sneaky snake monster in jungles that can entrap foes"
+        },
+        {
+            "query": "snake with strong biting attack and bludgeoning constrict",
+            "variant": "serpent that deals piercing damage and bludgeons with constriction"
+        },
+        {
+            "query": "giant snake known for its camouflage in dense vegetation",
+            "variant": "large constrictor snake that blends in with the jungle"
+        }
+    ]
+}

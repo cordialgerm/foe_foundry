@@ -1,0 +1,53 @@
+{
+    "name": "Quicksilver Siege Orb",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft., fly 10 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "agile",
+        "versatile",
+        "mobility"
+    ],
+    "adjectives": [
+        "small",
+        "resilient",
+        "agile"
+    ],
+    "description": "A small, resilient construct that can shift between a disk and orb form, made of quicksilver-like material.",
+    "memorable": "Its ability to avoid damage from bludgeoning attacks and manipulate its form makes it a unique combatant.",
+    "goals": "To disrupt enemy formations and remain a mobile threat in combat.",
+    "relations": "Often encountered in association with other constructs or as guardians of locations.",
+    "environment": "Can be found in various environments where constructs are created, such as laboratories or fortresses.",
+    "strengths": "High Dexterity provides excellent agility, good stealth capabilities, and versatility in combat forms.",
+    "weaknesses": "Vulnerable to cold damage and possesses very low Intelligence and Charisma scores.",
+    "attacks": "Can make multiple attacks with its Disk Blade or Slam, dealing slashing and bludgeoning damage.",
+    "most_powerful_ability": "The Slashing Run ability allows it to inflict heavy slashing damage while maneuvering through enemies.",
+    "equipment": null,
+    "senses": "Has passive perception of 15, allowing it to notice hidden or obscured foes effectively.",
+    "skills": "With a Stealth skill bonus of +8, it excels at remaining hidden and ambushing targets.",
+    "additional_information": [
+        "Immunities to several conditions such as frightened and poisoned.",
+        "Can fly without provoking opportunity attacks through its Flyby ability.",
+        "Maintains the same statistics in both its orb and disk forms.",
+        "Immunity to bludgeoning damage due to its Bludgeoning Bounce ability.",
+        "Practices a unique form of mobility with shape-shifting capabilities."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile construct with mobility and stealth",
+        "small quicksilver creature that can fly",
+        "resilient construct immune to bludgeoning damage",
+        "disk form creature that avoids opportunity attacks",
+        "creature that morphs into a disk and orb"
+    ]
+}

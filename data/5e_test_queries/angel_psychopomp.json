@@ -1,0 +1,25 @@
+{
+    "name": "Psychopomp Angel",
+    "queries": [
+        {
+            "query": "celestial guardian that guides souls after death",
+            "variant": "celestial soul guardian that helps souls transition in death"
+        },
+        {
+            "query": "medium celestial creature with radiant and necrotic abilities",
+            "variant": "medium celestial being that has radiant and necrotic powers"
+        },
+        {
+            "query": "angelic being that can fly and protects against fiends",
+            "variant": "angel creature that can soar and defends from fiends"
+        },
+        {
+            "query": "monster with magic resistance and ability to ward allies",
+            "variant": "creature with spell resistance that can shield allies"
+        },
+        {
+            "query": "creature that can manipulate will saving throws and aids friends",
+            "variant": "being that affects will saves and supports allies"
+        }
+    ]
+}

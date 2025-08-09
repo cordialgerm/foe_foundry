@@ -1,0 +1,25 @@
+{
+    "name": "Deathspeaker",
+    "queries": [
+        {
+            "query": "undead creature that manipulates emotions and curses foes",
+            "variant": "creature that is undead and uses curses to manipulate emotions"
+        },
+        {
+            "query": "evil spirit with necrotic abilities that speaks to the dead",
+            "variant": "evil undead with necrotic skills and talks to the dead"
+        },
+        {
+            "query": "medium undead with high intelligence and curses opponents",
+            "variant": "medium undead creature that has high intelligence and curses enemies"
+        },
+        {
+            "query": "death-themed monster with abilities to weaken and kill opponents",
+            "variant": "monster that represents death and can weaken and kill enemies"
+        },
+        {
+            "query": "lawful evil undead that uses prophetic displays to manipulate",
+            "variant": "evil lawful undead that manipulates using prophetic insights"
+        }
+    ]
+}

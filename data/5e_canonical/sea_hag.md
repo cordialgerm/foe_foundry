@@ -1,6 +1,8 @@
 <MonsterName/>Sea Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>A Sea Hag is a grotesque, fey creature that dwells in the depths of the ocean or along desolate, rocky shores. With matted hair, slimy skin, and an appearance so horrifying it can paralyze those who look upon her, Sea Hags delight in spreading misery and despair. They are skilled in illusion and enchantment magic, using their powers to lure sailors to watery graves or curse those who trespass into their domain. Sea Hags are vicious and cruel, often forming covens with other hags to amplify their powers and terrorize coastal communities.</summary>
 
 <summary>The Sea Hag is a Medium-sized Fey creature that embodies the sinister and unsettling aspects of the sea. With an Armor Class of 14, it is moderately tough to hit in combat, and with 52 hit points, it can withstand a fair amount of damage before being taken down. The hag can move at a speed of 30 feet on land and 40 feet in water, showcasing its amphibious nature, which allows it to thrive in both environments. As a Challenge Rating 2 creature, it poses a formidable threat to lower-level adventurers, primarily using deception, psychological manipulation, and spellcasting to overwhelm its foes. Key strengths include its high Strength and Constitution scores, coupled with strong Charisma, which aids in its spellcasting and social deception. However, its Dexterity is only average, making it less effective at avoiding attacks compared to faster foes. </summary>
@@ -39,6 +41,7 @@ Overall, the Sea Hag’s unique blend of fear-inducing abilities, solid melee at
 
 Source: 5e_srd
 
+<statblock>
 ### Sea Hag
 
 *Medium fey, chaotic evil*
@@ -73,7 +76,8 @@ Unless the target is surprised or the revelation of the hag's true form is sudde
 
 ***Illusory Appearance***. The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.
 
-The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.
+The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.</statblock>
+
 
 
 
@@ -81,6 +85,7 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sea Hag
 
 *Medium* *Fey*
@@ -116,6 +121,7 @@ Source: 5e_artisinal_monsters
 - **Horrific Transformation:** The hag briefly takes on a terrifying form or reveals its true form. Each creature within 30 feet that can see the hag makes a DC 11 Wisdom saving throw. A creature under the hags curse automatically fails this saving throw. On a failure, the creature is frightened until the end of its next turn. If a creatures saving throw is successful, it is immune to the hags Horrific Transformation for 24 hours.
 
 
+</statblock>
 
 
 
@@ -124,6 +130,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sea Hag
 
 *Medium fey*
@@ -164,5 +171,6 @@ Source: 5e_artisinal_monsters
 
 - **Barnacle Block.** When the hag takes damage from a source it can see, the hag can shift the barnacles and scales on its body to absorb some of the impact, reducing the damage by 4 (1d8).
 
+</statblock>
 
 

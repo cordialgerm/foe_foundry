@@ -1,0 +1,53 @@
+{
+    "name": "Song Angel",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 76,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "Supporter",
+    "tags": [
+        "celestial",
+        "spellcaster",
+        "lawful good"
+    ],
+    "adjectives": [
+        "majestic",
+        "powerful",
+        "supportive"
+    ],
+    "description": "A large celestial creature embodying lawful good, the Song Angel possesses a high Charisma and radiant features, carrying a scimitar and a horn.",
+    "memorable": "The Song Angel can inspire allies with divine music, re-rolling failed checks with advantage.",
+    "goals": "To protect and support allies, while combating evil.",
+    "relations": "Often found with other celestial beings, or as guardians of good.",
+    "environment": "Typically inhabits sacred areas or places of righteousness.",
+    "strengths": "Resists radiant damage and can heal and protect allies with its spells.",
+    "weaknesses": "Reliance on spells and saving throws can be a strategic limitation.",
+    "attacks": "Uses a scimitar for slashing damage, enhanced with radiant energy, and employs a horn to create a thunderous blast.",
+    "most_powerful_ability": "Angelic Weapons ability adds substantial radiant damage to its attacks.",
+    "equipment": "Scimitar and a special horn for invoking spirits.",
+    "senses": "Possesses darkvision up to 120 feet.",
+    "skills": "Highly skilled in Performance and Insight, fostering social interactions.",
+    "additional_information": [
+        "Can polymorph into humanoid forms for stealth or social situations.",
+        "Immune to being charmed, exhausted, or frightened.",
+        "Summons warrior spirits to aid in battle.",
+        "Can cast powerful spells like Mass Cure Wounds.",
+        "Has exceptional Charisma, enhancing its spellcasting abilities."
+    ],
+    "damage_types": [
+        "radiant",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcasting using Charisma, with a variety of supportive and control spells.",
+    "test_queries": [
+        "majestic celestial that supports allies",
+        "large angelic creature healing friends",
+        "powerful celestial with radiant damage",
+        "angel that can summon warrior spirits",
+        "celestial being skilled in performance"
+    ]
+}

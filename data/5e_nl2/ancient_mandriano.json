@@ -1,0 +1,50 @@
+{
+    "name": "Ancient Mandriano",
+    "creature_type": "Plant",
+    "alignment": "lawful evil",
+    "size": "Huge",
+    "hp": 102,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walks 40 feet",
+    "role": null,
+    "tags": [
+        "undead",
+        "necromancer",
+        "plant"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "manipulative"
+    ],
+    "description": "The Ancient Mandriano is a Huge plant creature with impressive physical attributes. Its robust structure and ability to manipulate life and death make it a significant threat. It grapples and drains the essence of its foes, before raising them as undead, commanding them to serve its dark purposes.",
+    "memorable": "The ability to drain life and control up to twenty zombies makes this creature especially terrifying as an army commander and a controller of death.",
+    "goals": "Seeks to dominate and manipulate life and death, often raising the dead to serve its purposes.",
+    "relations": "May be encountered alongside other undead or plants that serve similar dark purposes.",
+    "environment": "Typically found in dark forests, graveyards, or areas tainted by death.",
+    "strengths": "High Strength provides powerful melee capabilities and the ability to deal double damage to structures.",
+    "weaknesses": "Vulnerable to fire and less agile due to low Dexterity.",
+    "attacks": "Uses multiattack with powerful swipe attacks that can grapple medium or smaller creatures.",
+    "most_powerful_ability": "Consume the Spark allows it to drain life and potentially raise the dead as undead servants.",
+    "equipment": null,
+    "senses": "Has a passive perception of 13, allowing it to notice its surroundings effectively.",
+    "skills": "Proficient in athletics, perception, and stealth, capable of grappling and noticing enemies.",
+    "additional_information": [
+        "Immunities to poison and exhaustion enhance its durability.",
+        "Can control up to twelve undead simultaneously.",
+        "Can animate zombies from humanoid corpses three times a day."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature with undead abilities",
+        "terrifying plant monster",
+        "necromancer plant foe",
+        "Ancient Mandriano abilities",
+        "zombie commanding plant"
+    ]
+}

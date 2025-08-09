@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Captain",
+    "queries": [
+        {
+            "query": "small humanoid leader that fights with goblins",
+            "variant": "humanoid leader that is small and fights with goblins"
+        },
+        {
+            "query": "goblin commander with a high armor class and tactical abilities",
+            "variant": "commander goblin with tactical abilities and high AC"
+        },
+        {
+            "query": "sneaky goblin figure that uses ranged weapons and commands allies",
+            "variant": "figure goblin that is sneaky, commands allies, and uses ranged weapons"
+        },
+        {
+            "query": "goblin captain that can evade attacks and has multiattack abilities",
+            "variant": "captain goblin with multiattack abilities that can evade attacks"
+        },
+        {
+            "query": "cunning goblin with darkvision and coordination skills",
+            "variant": "goblin with coordination expertise and darkvision, also cunning"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Poisonous Snakes",
+    "queries": [
+        {
+            "query": "mass of tiny snakes that can poison and paralyze",
+            "variant": "tiny snakes mass that can paralyze and poison"
+        },
+        {
+            "query": "swarm of snakes in a dark jungle environment",
+            "variant": "snake swarm found in a dark jungle"
+        },
+        {
+            "query": "venomous snakes with an ambush strategy in swamps",
+            "variant": "ambush strategy venomous snakes in swamps"
+        },
+        {
+            "query": "poisonous serpents that attack in a large group",
+            "variant": "serpents that are poisonous and attack in a big group"
+        },
+        {
+            "query": "very agile snakes that move through tight spaces",
+            "variant": "snakes that are very agile and can move through small spaces"
+        }
+    ]
+}

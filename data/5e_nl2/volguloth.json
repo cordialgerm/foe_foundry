@@ -1,0 +1,52 @@
+{
+    "name": "Volguloth",
+    "creature_type": "Fiend",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walks 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "stealthy",
+        "aggressive",
+        "poison"
+    ],
+    "adjectives": [
+        "sneaky",
+        "aggressive",
+        "poisonous",
+        "lethal"
+    ],
+    "description": "The Volguloth is a Medium-sized fiend with strong physical attributes, exhibiting aggressive and stealthy tactics in combat.",
+    "memorable": "Notable for its ability to grapple and enshroud targets while dealing significant poison damage with its attacks.",
+    "goals": "Typically seeks to ambush and incapacitate foes through stealth and aggressive engagement.",
+    "relations": "May be encountered alongside other fiends or as a servant of a more powerful demon or evil being.",
+    "environment": "Commonly found in dark, subterranean lairs or shadowy realms where it can employ stealth.",
+    "strengths": "Immunities to acid and poison damage, high stealth capabilities, and magic resistance.",
+    "weaknesses": "Can only grapple and enshroud one creature at a time, limiting its crowd control options.",
+    "attacks": "Strikes with claws for slashing damage, plus additional poison damage; can grapple and enshroud its targets.",
+    "most_powerful_ability": "The Enshroud ability, which blinds, restrains, and suffocates grappled foes.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 30 feet, allowing it to sense creatures in darkness without relying on sight.",
+    "skills": "Highly skilled in Stealth, making it difficult to detect.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against magical effects.",
+        "Glide ability allows it to slow its descent from heights.",
+        "Can apply lethal poison damage with its weapon attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy poison wielding fiend",
+        "medium-sized fiend that grapples enemies",
+        "aggressive poison attacking creature",
+        "sneaky fiend with magic resistance",
+        "monster that blinds and restrains foes"
+    ]
+}

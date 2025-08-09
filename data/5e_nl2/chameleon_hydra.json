@@ -1,0 +1,51 @@
+{
+    "name": "Chameleon Hydra",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 15,
+    "srd": false,
+    "cr": "10",
+    "movement": "climb 40 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "hydra",
+        "monstrosity",
+        "camouflage",
+        "multiple heads"
+    ],
+    "adjectives": [
+        "massive",
+        "regenerative",
+        "threatening"
+    ],
+    "description": "The Chameleon Hydra has five heads with a formidable presence, covered in colorful scales that allow it to blend seamlessly into its surroundings.",
+    "memorable": "Its ability to regrow heads unless taking fire damage makes it a formidable opponent in prolonged battles.",
+    "goals": "To ambush unsuspecting prey and dominate the battlefield through superior regeneration and stealth.",
+    "relations": "Related to other hydras, often encountered in swampy or forested environments.",
+    "environment": "Typically found in dense forests, swamps, or other places where it can effectively use its camouflage.",
+    "strengths": "Exceptional stealth capabilities and regenerative abilities make it difficult to defeat.",
+    "weaknesses": "Vulnerable to fire damage, which can prevent its heads from regenerating.",
+    "attacks": "Can perform multiple bite attacks and grapple with its sticky tongue, pulling enemies closer.",
+    "most_powerful_ability": "The ability to regrow heads at the end of its turn unless it has taken fire damage.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a high passive perception of 16, making it difficult to sneak up on.",
+    "skills": "Excels in stealth and perception, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Advantage on saving throws against many conditions due to multiple heads.",
+        "Can hide even when visible to opponents while motionless.",
+        "Can grapple opponents with its sticky tongue.",
+        "Can pull grappled creatures closer with its reel ability.",
+        "Regains hit points when regenerating heads."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive hydra with regenerative heads",
+        "colorful creature that ambushes prey",
+        "stealthy hydra in swampy environments",
+        "monster with multiple heads and camouflage",
+        "threatening hydra with sticky tongue attack"
+    ]
+}

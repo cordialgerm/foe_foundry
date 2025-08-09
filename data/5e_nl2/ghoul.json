@@ -1,0 +1,51 @@
+{
+    "name": "Ghoul",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "30 feet walking and climbing",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "ambusher",
+        "paralyzing"
+    ],
+    "adjectives": [
+        "ravenous",
+        "gaunt",
+        "decayed"
+    ],
+    "description": "A ravenous, undead creature with a gaunt body and long, clawed hands, driven by an insatiable hunger for flesh.",
+    "memorable": "Its claw attacks can paralyze living enemies, making it a dangerous foe in combat.",
+    "goals": "To consume raw meat, especially the flesh of the living.",
+    "relations": "Often found in graveyards or crypts, ghouls can be created from dark magic or as cursed beings.",
+    "environment": "Graveyards and dark places.",
+    "strengths": "Incredibly fast and stealthy, capable of ambushing unsuspecting prey.",
+    "weaknesses": "Weak to radiant damage which can impair its attack effectiveness.",
+    "attacks": "Paralyzing claw attack with slashing damage and a bite attack that targets incapacitated creatures.",
+    "most_powerful_ability": "Paralyzing Claw that incapacitates foes, making them easy targets.",
+    "senses": "Possesses darkvision, allowing it to see in dim light and total darkness.",
+    "skills": "Excels at Stealth with a high modifier, allowing it to hide effectively.",
+    "additional_information": [
+        "Loose skin hanging from its skeletal frame",
+        "Highly agile, able to climb and scale difficult surfaces with ease",
+        "Undead nature grants it immunity to fatigue and poison conditions",
+        "Must consume raw meat daily or risk starvation",
+        "Can move effortlessly on ceilings and walls"
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster with paralyzing claws",
+        "fast crawling creature in graveyards",
+        "ghoul with a hunger for flesh",
+        "ambushing undead that climbs walls",
+        "ravenous creature that craves raw meat"
+    ]
+}

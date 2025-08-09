@@ -1,0 +1,25 @@
+{
+    "name": "Butatsch",
+    "queries": [
+        {
+            "query": "gargantuan aquatic monster with fire-based attacks",
+            "variant": "gargantuan water-based creature that uses fire attacks"
+        },
+        {
+            "query": "monster with multiple eyes that excels in ambush tactics",
+            "variant": "creature with many eyes that is great at ambushing"
+        },
+        {
+            "query": "strong aberration with high hit points and bludgeoning resistance",
+            "variant": "powerful aberration sporting high HP and resistant to bludgeoning"
+        },
+        {
+            "query": "creature that ingests enemies and deals acid damage",
+            "variant": "monster that swallows foes and inflicts acid damage"
+        },
+        {
+            "query": "chaotic neutral aberration that has truesight",
+            "variant": "chaotic neutral monster with the ability to see through illusions"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Baboon",
+    "queries": [
+        {
+            "query": "small agile monkey with sharp teeth living in troops",
+            "variant": "agile small monkey with sharp fangs that lives in troops"
+        },
+        {
+            "query": "aggressive primate that travels in noisy groups",
+            "variant": "noisy aggressive primate that lives in groups"
+        },
+        {
+            "query": "creature with Pack Tactics that can climb trees",
+            "variant": "creature that can climb and has Pack Tactics ability"
+        },
+        {
+            "query": "social animal found in rocky terrains known for biting",
+            "variant": "animal found in rocky areas that is social and known for its bite"
+        },
+        {
+            "query": "primate with low hit points and high Dexterity score",
+            "variant": "primate that has a high Dexterity score and low hit points"
+        }
+    ]
+}

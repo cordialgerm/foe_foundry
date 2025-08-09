@@ -1,0 +1,50 @@
+{
+    "name": "Righteous Sentinel",
+    "creature_type": "Construct",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 104,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "construct",
+        "guardian",
+        "lawful good"
+    ],
+    "adjectives": [
+        "steadfast",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Righteous Sentinel is a powerful large construct with strong defensive and offensive capabilities, showcasing a reinforced form that embodies its lawful good alignment.",
+    "memorable": "Its reflective abilities allow it to rebound attacks and its immunity to various conditions makes it an exceptional protector.",
+    "goals": "To serve as a guardian, protect its allies, and confront evil.",
+    "relations": "May be encountered alongside celestial beings or allied constructs.",
+    "environment": "Typically found in places of order, such as temples or fortresses.",
+    "strengths": "High strength and resilience, notable defensive capabilities including damage immunities.",
+    "weaknesses": "Vulnerability to thunder damage and limited agility with average dexterity.",
+    "attacks": "Utilizes melee slam attacks with significant bludgeoning damage; capable of inflicting psychic damage and causing fear with its Warp Reflection ability.",
+    "most_powerful_ability": "The Spell-Deflecting Mirror allows it to reflect ranged spells back at their casters, disrupting enemy magic.",
+    "skills": "Proficient in perception, giving it an enhanced ability to notice threats around it.",
+    "additional_information": [
+        "Immune to poison and psychic damage.",
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Reflective Aggression enhances its attack rolls based on recent damage.",
+        "Immutable Form prevents alteration of its shape.",
+        "Conditions like charmed and paralyzed do not affect it."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large powerful guardian construct",
+        "construct with reflective abilities",
+        "sentinel immune to various conditions",
+        "guardian that counters magic",
+        "construct with high strength and resilience"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Barong",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 225,
+    "ac": 20,
+    "srd": false,
+    "cr": "17",
+    "movement": "fly 60 ft., walk 60 ft.",
+    "role": "Defender",
+    "tags": [
+        "celestial",
+        "protector",
+        "support"
+    ],
+    "adjectives": [
+        "powerful",
+        "majestic",
+        "formidable",
+        "radiant"
+    ],
+    "description": "Barong is a Large celestial being with impressive physical prowess and formidable magical abilities, showcasing a majestic appearance that embodies lawfulness and goodness.",
+    "memorable": "Barong's Aura of Protection grants allies a significant bonus to saving throws, and its ability to summon other good-aligned creatures adds tactical versatility in combat.",
+    "goals": "To serve as a protector and ally to those in need, promoting goodness and lawfulness.",
+    "relations": "May encounter or serve alongside other celestial beings and good-aligned spirits.",
+    "environment": "Typically found in celestial realms or places of great good, often in the company of allies.",
+    "strengths": "Possesses high ability scores, particularly in Strength and Constitution; has damage immunities and resistances, making it very durable in combat.",
+    "weaknesses": "Not specified, but as a celestial being may face challenges from evil-aligned creatures and magic.",
+    "attacks": "Barong attacks with a bite and claw, both of which deliver magical damage along with significant radiant damage.",
+    "most_powerful_ability": "Aura of Protection provides a +6 bonus to saving throws for all allies within 30 feet.",
+    "equipment": null,
+    "senses": "Barong has truesight up to 120 feet, allowing it to see through illusions and detect hidden foes.",
+    "skills": "Barong has exceptional skills in insight, perception, and persuasion, all rated at +12, enhancing its awareness and effectiveness in interactions.",
+    "additional_information": [
+        "Has resistance to nonmagical damage and immunity to charmed, exhaustion, and frightened conditions.",
+        "Magic Resistance gives it advantage on saving throws against spells.",
+        "Pack Tactics enhances its combat effectiveness with allies.",
+        "Possesses a Summon Spirit ability to call upon various good-aligned creatures for assistance.",
+        "Can use legendary actions to enhance its combat and support capabilities."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial protector",
+        "Barong abilities",
+        "radiant damage monster",
+        "summons good-aligned allies",
+        "aura of protection character"
+    ]
+}

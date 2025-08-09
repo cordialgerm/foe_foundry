@@ -1,6 +1,8 @@
 <MonsterName/>White Stag</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The White Stag is a large celestial creature known for its chaotic good nature. It serves as a beacon of divine will and protection within the natural world. With a balance of agility and strength, it stands out as a formidable opponent in combat while also possessing unique abilities that can influence its interactions with adventurers and the environment around it. Although its armor class is moderate, its mobility and special abilities offer substantial advantages, including avoidance of difficult terrain and the potential to bestow curses on its foes. However, it also has a limited pool of hit points, making it vulnerable if it comes under concentrated attack.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the White Stag can utilize multiattacks, allowing it to perform both 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # White Stag
 
 *Large* *Celestial* *chaotic good*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

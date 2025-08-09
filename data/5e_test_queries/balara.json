@@ -1,0 +1,25 @@
+{
+    "name": "Balara",
+    "queries": [
+        {
+            "query": "undead monster with glowing ribcage and fear-inducing ability",
+            "variant": "monster that glows and terrifies with its ribcage, undead"
+        },
+        {
+            "query": "large creature immune to poison that can inflict necrotic damage",
+            "variant": "big monster resistant to poison and does necrotic attacks"
+        },
+        {
+            "query": "creature that is relentless and can scare foes with its luminance",
+            "variant": "relentless monster that frightens enemies with its brightness"
+        },
+        {
+            "query": "terrifying undead that restricts healing and has melee attacks",
+            "variant": "scary undead monster that prevents healing and can attack in melee"
+        },
+        {
+            "query": "undead creature that doesn't need to sleep and pursues fleeing enemies",
+            "variant": "creature that never sleeps and chases enemies that run away"
+        }
+    ]
+}

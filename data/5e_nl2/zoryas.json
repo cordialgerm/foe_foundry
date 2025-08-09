@@ -1,0 +1,56 @@
+{
+    "name": "Zoryas",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 40 ft., walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "light",
+        "regeneration",
+        "magic",
+        "radiant"
+    ],
+    "adjectives": [
+        "radiant",
+        "divine",
+        "insightful",
+        "protective"
+    ],
+    "description": "Zoryas are medium celestial beings that embody the principles of light and order, showcasing elegant features that reflect their magical nature.",
+    "memorable": "They possess the unique ability to open celestial gates that provide both power and peril, becoming unconscious for days afterward.",
+    "goals": "To uphold justice, assist those in need, and intervene in mortal affairs.",
+    "relations": "Often associated with other celestial beings, divine entities, and celestial planes.",
+    "environment": "Typically found in areas of significance to celestial beings, such as holy sites or places of great importance.",
+    "strengths": "They regenerate health every turn, resist fire and radiant damage, and are immune to several debilitating conditions.",
+    "weaknesses": "Vulnerable to necrotic damage, which disrupts their regeneration.",
+    "attacks": "Utilizes magical weapon attacks that deal additional radiant or fire damage, alongside powerful area effects of light and darkness.",
+    "most_powerful_ability": "Open Celestial Gate, allowing the creation of a portal to the celestial plane at a great personal cost.",
+    "senses": "Truesight up to 60 feet allows them to see through illusions and detect hidden entities.",
+    "skills": "Proficient in insight and perception, showcasing remarkable awareness and understanding of their surroundings.",
+    "additional_information": [
+        "Regenerates 10 hit points at the start of its turn if not struck by necrotic damage.",
+        "Can create areas of bright light that blind enemies and disrupt magical effects.",
+        "Capable of manipulating darkness to control battlefield visibility and inflict damage.",
+        "Proficient in Charisma saving throws, making them resilient against magical effects.",
+        "Possesses telepathy that extends to 120 feet for communication."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial being that uses light and darkness",
+        "divine creature with radiant attacks",
+        "guardian of justice from celestial realms",
+        "magical monster with regenerative abilities",
+        "light manipulating celestial with truesight"
+    ]
+}

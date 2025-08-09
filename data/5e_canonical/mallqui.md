@@ -1,6 +1,8 @@
 <MonsterName/>Mallqui</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Mallqui is a Medium undead creature characterized by its lawful neutral alignment. This being excels in both offense and defense, boasting a solid Armor Class of 14 and a substantial pool of hit points at 120, making it quite durable in combat. The creature's challenge rating of 8 means that it presents a significant threat to parties of adventurers, providing a balance of necrotic damage and debilitating abilities that can weaken opponents. Its impressive Wisdom score allows it to excel in Insight checks, further enhancing its role as a dangerous and cunning adversary. However, it is notably vulnerable to radiant damage, which can negate its regenerative abilities, making it crucial for players to exploit this weakness during encounters. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Mallqui can cast spells, using Wisdom as its spellcasting abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mallqui
 
 *Medium* *Undead* *Lawful Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Xeric Blast:** Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 18 (4d6 + 4) necrotic damage.
 - **Xeric Aura:** Each creature within 20 feet of the mallqui must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion, as moisture is drained from its body. If a creature’s saving throw is successful, it is immune to the mallqui’s Xeric Aura for the next 24 hours.
 - **Spellcasting:** The mallqui casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 15):<br>At will: druidcraft<br>3/day each: create or destroy water, entangle<br>1/day each: locate animals or plants, wind wall
+</statblock>
 
 

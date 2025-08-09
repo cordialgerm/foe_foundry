@@ -1,6 +1,9 @@
 <MonsterName/>Master Alchemist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any lineage</Subtype>
+<CR/>7</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>152</HP>
 <summary>The Master Alchemist is a medium humanoid creature that plays a versatile role as a support and area control spellcaster in combat. Its strengths lie in its high Intelligence, which fuels its potent concoctions and alchemical effects, as well as a significant pool of hit points that allows it to endure in prolonged encounters. With a Challenge Rating of 7, this character can be a formidable opponent, utilizing smoke and effects to confuse and hinder enemies while also providing healing support to allies. However, its average physical attributes mean that it may not excel in direct melee confrontations and requires careful positioning and strategy to maximize its potential in combat. </summary>
 
 <detail>
@@ -31,6 +34,7 @@ Overall, the Master Alchemist combines potent offensive capabilities with tactic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Master Alchemist
 
 *Medium humanoid (any lineage)*
@@ -71,5 +75,6 @@ Source: 5e_artisinal_monsters
 
 - **Protective Draught (Recharge 4–6).** The master alchemist drinks one of its brews and gains resistance to acid, cold, fire, or poison damage (the master alchemist’s choice) until the end of its next turn.
 
+</statblock>
 
 

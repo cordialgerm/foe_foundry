@@ -1,0 +1,52 @@
+{
+    "name": "Night Scorpion",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at a speed of 40 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "predator",
+        "large",
+        "poison"
+    ],
+    "adjectives": [
+        "intimidating",
+        "predatory",
+        "formidable"
+    ],
+    "description": "A large scorpion with powerful claws and a venomous sting, able to grapple foes.",
+    "memorable": "Its ability to inflict paralysis and blindness through its poisonous sting makes the Night Scorpion a formidable adversary.",
+    "goals": "Typically hunts for prey using stealth and surprise tactics.",
+    "relations": "Often encountered in desert or arid environments, it may share habitat with other predatory beasts.",
+    "environment": "Commonly found in deserts and arid terrains.",
+    "strengths": "Possesses a Multiattack capability with both grappling and poisonous effects.",
+    "weaknesses": "Low intelligence and charisma hinder its social interactions and strategic planning.",
+    "attacks": "Can execute two claw attacks to grapple and a sting attack causing piercing and poison damage.",
+    "most_powerful_ability": "The sting attack can blind and potentially paralyze targets, significantly hindering their combat effectiveness.",
+    "senses": "Has blindsight up to 60 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": "It has no notable skill proficiencies.",
+    "additional_information": [
+        "Low intelligence makes it less strategic in combat.",
+        "Grapples opponents to restrict their movement.",
+        "Poisons targets with additional damage and effects.",
+        "Can cause blindness for an hour with its sting.",
+        "Exemplifies classic predatory behavior."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant scorpion causing paralysis and blindness",
+        "large creature with grappling and poison attacks",
+        "desert monster that can blind foes",
+        "intimidating predator with venomous sting",
+        "night scorpion attacks in arid terrain"
+    ]
+}

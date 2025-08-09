@@ -1,0 +1,25 @@
+{
+    "name": "Chieftain",
+    "queries": [
+        {
+            "query": "lawful evil small humanoid with brute melee abilities",
+            "variant": "small humanoid that is lawful evil and has brute melee skills"
+        },
+        {
+            "query": "creature that can intimidate and leads kobolds",
+            "variant": "monster that fears enemies and commands kobolds"
+        },
+        {
+            "query": "small creature that suffers in sunlight and deals extra damage",
+            "variant": "little creature that hates sunlight and has extra damage in attacks"
+        },
+        {
+            "query": "humanoid with a strong presence that frightens foes",
+            "variant": "humanoid that has a powerful presence and terrifies its enemies"
+        },
+        {
+            "query": "character with good stealth and tactical advantages in battle",
+            "variant": "character good at stealth and provides tactical benefits in fights"
+        }
+    ]
+}

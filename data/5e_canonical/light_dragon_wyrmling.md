@@ -1,6 +1,8 @@
 <MonsterName/>Light Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Light Dragon Wyrmling is a medium-sized dragon with a neutral good alignment, known for its benevolent nature and strong affinity for radiant energy. With an Armor Class of 13, it has a moderate level of defense, bolstered by its natural armor. It boasts 39 hit points that are calculated from rolling six eight-sided dice and adding twelve, making it relatively resilient. The creature can fly at a speed of 60 feet and walk at 30 feet, allowing it to maneuver effectively in both aerial and ground combat scenarios. Its challenge rating of 2 indicates that it presents a moderate challenge, rewarding players with 450 experience points upon defeat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Light Dragon Wyrmling features two powerful breath weapons, both of which op
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Light Dragon Wyrmling
 
 *Medium* *Dragon* *neutral good*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5-6):** The dragon uses one of the following breath weapons:<br>Radiant Breath. The dragon exhales radiant energy in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 16 (3d10) radiant damage on a failed save, or half as much damage on a successful one.<br>Flaring Breath. The dragon emits a flash of dazzling light from its maw in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw or be blinded. Undead within the area of effect must also make a DC 12 Wisdom saving throw or be turned for 1 minute. Undead of CR 1/2 or lower who fail the saving throw are instantly destroyed.
 
 
+</statblock>
 
 

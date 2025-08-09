@@ -1,0 +1,25 @@
+{
+    "name": "Walking Statue",
+    "queries": [
+        {
+            "query": "large guardian construct that is immune to poison",
+            "variant": "guardian construct that is big and immune to poison"
+        },
+        {
+            "query": "statue-like creature with bludgeoning weakness and strong melee attacks",
+            "variant": "creature that looks like a statue and has a weakness to bludgeoning with strong melee hits"
+        },
+        {
+            "query": "immobile construct that can ambush adventurers and has low intelligence",
+            "variant": "a construct that stays still and can surprise adventurers with very low intelligence"
+        },
+        {
+            "query": "powerful large construct with high hit points and prone weakness",
+            "variant": "large powerful construct that has many hit points and falls prone when damaged"
+        },
+        {
+            "query": "walking statue that blends in and can be destroyed by dispel magic",
+            "variant": "statue that walks and can hide while being able to be destroyed with dispel magic"
+        }
+    ]
+}

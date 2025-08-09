@@ -1,0 +1,52 @@
+{
+    "name": "Bakery Drake",
+    "creature_type": "Dragon",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "quirky",
+        "cooking"
+    ],
+    "adjectives": [
+        "small",
+        "culinary",
+        "quirky"
+    ],
+    "description": "The Bakery Drake is a small dragon known for its culinary abilities, blending unique cooking traits with combat prowess.",
+    "memorable": "It can purify food and drink while also restraining enemies with its sticky yeast attack.",
+    "goals": "To assist those who appreciate its culinary skills and to defend its territory.",
+    "relations": "Might be found alongside other draconic creatures or in bakery-themed environments.",
+    "environment": "Associated with areas rich in culinary delights, likely near bakeries or markets.",
+    "strengths": "Has fire damage resistance, immunities to paralysis and unconsciousness, and strong social Charisma.",
+    "weaknesses": "Weakness to fire damages its combat effectiveness and can lead to poisoning.",
+    "attacks": "Utilizes a Bite and two Claw attacks, dealing piercing and slashing damage.",
+    "most_powerful_ability": "Breath Weapon: Purifying Breath enhances flavors and purifies food, or Yeast Slurry restrains enemies.",
+    "equipment": null,
+    "senses": "Has a keen sense of smell, granting advantage on Wisdom (Perception) checks related to smell.",
+    "skills": "Has a decent perception score but is not particularly stealthy.",
+    "additional_information": [
+        "Fire Weakness can hinder its combat effectiveness when attacked with fire.",
+        "Can restrain affected creatures with Yeast Slurry attack.",
+        "Possesses a strong Charisma score, aiding in social interactions.",
+        "The Purifying Breath enhances nonmagical food and drink for one hour.",
+        "Features a Multiattack for versatility in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small dragon with culinary abilities",
+        "dragon that purifies food and drink",
+        "quirky dragon that can restrain enemies",
+        "dragon with fire weakness and strong Charisma",
+        "dragon that uses yeast in battles"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Boomer</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>7 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Boomer is a unique Medium Plant creature that embodies the role of a deceptive and damaging presence on the battlefield. With an Armor Class of 7, it lacks physical defense but compensates with abilities that can incapacitate and damage foes through its sonic attacks. While it has a modest 22 hit points, its challenge rating of 1/2 indicates it can be a surprising opponent for lower-level adventurers, dealing significant thunder damage with its special abilities. The Boomer’s strengths lie in its area control and ability to inflict status effects like deafening and incapacitation. However, its low Strength, Dexterity, and Charisma scores leave it vulnerable to direct attacks, as it is essentially immobile with a walking speed of 0 feet.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Boomer leverages its sound-based abilities to create chaos and conf
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boomer
 
 *Medium* *Plant* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Shriek:** If bright light or a creature is within 30 feet of the boomer, it emits a shriek audible within 300 feet of it. The boomer continues to shriek until the disturbance moves out of range and for 1d4 of the boomer’s turns afterward.
 
 
+</statblock>
 
 

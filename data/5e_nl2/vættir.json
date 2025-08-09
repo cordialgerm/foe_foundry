@@ -1,0 +1,53 @@
+{
+    "name": "V\u00e6ttir",
+    "creature_type": "Undead",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "deceptive",
+        "lawful evil"
+    ],
+    "adjectives": [
+        "tricky",
+        "persistent",
+        "nefarious"
+    ],
+    "description": "The V\u00e6ttir is a Medium-sized undead with a solid chain shirt armor. It possesses striking characteristics, embodying an eerie presence that combines both deceptive nature and physical strength.",
+    "memorable": "Its ability to rejuvenate within 24 hours unless put to rest makes it a relentless foe in combat.",
+    "goals": "To track down and reclaim its grave goods while tormenting and incapacitating its enemies.",
+    "relations": "Often encountered with other undead creatures or as a guardian of graves.",
+    "environment": "Commonly found in burial grounds or abandoned places associated with death.",
+    "strengths": "High Strength score provides exceptional melee attacks, and resilience against many conditions due to undead nature.",
+    "weaknesses": "V\u00e6ttir suffers disadvantages on attack and perception rolls while exposed to sunlight, making it vulnerable to daylight tactics.",
+    "attacks": "Utilizes a combination of a powerful greataxe attack and necrotic bolts for ranged combat.",
+    "most_powerful_ability": "The Disorienting Gaze incapacitating foes for up to one minute can effectively disrupt enemy plans.",
+    "equipment": "None noted.",
+    "senses": "The V\u00e6ttir possesses truesight within 30 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Adept at evading attacks with high Dexterity saving throws.",
+    "additional_information": [
+        "Immune to necrotic and poison damage due to its undead nature.",
+        "Has a unique Grave Goods Sense to track personal items.",
+        "Capable of unleashing a lethal Corpse Breath attack causing poison damage.",
+        "Reforms a new body in proximity to its destruction site within 24 hours.",
+        "Does not require air, food, drink, or sleep, making it tireless."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with truesight and necrotic bolts",
+        "medium undead that can incapacitate using gaze",
+        "relentless undead with sunlight sensitivity",
+        "creature that reanimates within 24 hours",
+        "necrotic melee attack undead that can track belongings"
+    ]
+}

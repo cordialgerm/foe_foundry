@@ -1,0 +1,50 @@
+{
+    "name": "Hobgoblin Captain",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 52,
+    "ac": 18,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "tactical",
+        "military",
+        "humanoid"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "inspiring"
+    ],
+    "description": "The Hobgoblin Captain is a formidable Medium humanoid creature, skilled in both physical combat and leadership, commanding fire and tactical movements on the battlefield.",
+    "memorable": "Its ability to inspire allies and provide tactical advantages makes it a notable threat.",
+    "goals": "To lead and enhance the effectiveness of hobgoblin forces in combat.",
+    "relations": "Often encountered with other hobgoblins as part of a military unit.",
+    "environment": "Typically found in military camps or areas of conflict.",
+    "strengths": "Possesses strong physical attributes and the ability to command and inspire.",
+    "weaknesses": "Combat effectiveness may diminish without allies nearby.",
+    "attacks": "Can execute a Multiattack with a greatsword and throw javelins, dealing significant slashing and piercing damage.",
+    "most_powerful_ability": "Officers Command allows it to inspire nearby allies, significantly boosting their combat effectiveness.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Athletics, Engineering, Intimidation, and has a decent perception skill.",
+    "additional_information": [
+        "Formation Movement prevents provoking opportunity attacks from allies.",
+        "Well-defended with high Armor Class.",
+        "Strong leadership role in hobgoblin military structure.",
+        "Access to strategic abilities enhancing ally effectiveness.",
+        "Uses both melee and ranged attack options."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strategic goblin military leader",
+        "hobgoblin with inspiring commands",
+        "commanding soldier with greatsword",
+        "hobgoblin captain in military camp",
+        "tactical humanoid with formation movement"
+    ]
+}

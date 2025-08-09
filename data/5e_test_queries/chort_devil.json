@@ -1,0 +1,25 @@
+{
+    "name": "Chort Devil",
+    "queries": [
+        {
+            "query": "fire-damaging fiend with high AC and strong melee attacks",
+            "variant": "fiend with high AC and powerful melee attacks that deal fire damage"
+        },
+        {
+            "query": "medium lawful evil creature that teleports and has magic resistance",
+            "variant": "lawful evil medium fiend that has magic resistance and can teleport"
+        },
+        {
+            "query": "creature immune to poison that is strong and spells cast by Charisma",
+            "variant": "fiend that has poison immunity and charisma-based spellcasting with strength"
+        },
+        {
+            "query": "brutal devil that uses claws and can deal fire damage from weapons",
+            "variant": "devil that attacks with claws and has weapons dealing fire damage"
+        },
+        {
+            "query": "high HP fiend that excels in combat and has darkvision",
+            "variant": "fiend with high hit points and darkvision that is skilled in combat"
+        }
+    ]
+}

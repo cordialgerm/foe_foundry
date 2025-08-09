@@ -1,6 +1,8 @@
 <MonsterName/>Horse, Riding</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>15</HP>
 <summary>The Riding Horse is a Large beast primarily used as a mount, boasting a blend of speed and resilience that makes it a valuable companion for adventurers. With a Challenge Rating of 1/4, it is not only accessible but also makes for a reliable choice for those seeking to travel quickly across vast terrains. Its moderate hit points of 15 grant it some durability, albeit it lacks exceptional defenses with an Armor Class of 10, which can leave it vulnerable during combat. The horse’s main advantage is its speed, able to move at 60 feet per round, allowing it to cover significant distances in short timeframes. While its physical attacks do provide some measure of damage, Riding Horses are primarily valued for their ability to facilitate travel and support their riders in various scenarios.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Riding Horse can perform a melee attack with its Hooves
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horse, Riding
 
 *Large beast*
@@ -44,5 +47,6 @@ Source: 5e_artisinal_monsters
 
 - **Hooves.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.
 
+</statblock>
 
 

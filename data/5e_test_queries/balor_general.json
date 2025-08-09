@@ -1,0 +1,25 @@
+{
+    "name": "Balor General",
+    "queries": [
+        {
+            "query": "huge chaotic evil fiend with fire and lightning powers",
+            "variant": "large chaotic evil creature that uses fire and lightning abilities"
+        },
+        {
+            "query": "battlefield demon with an aura that harms nearby creatures",
+            "variant": "demon on the battlefield radiating an aura damaging to nearby foes"
+        },
+        {
+            "query": "powerful monster that can teleport and has a fire whip",
+            "variant": "strong creature with teleportation ability and a fire whip"
+        },
+        {
+            "query": "fiend immune to fire and capable of explosive death",
+            "variant": "creature resistant to fire that explodes upon death"
+        },
+        {
+            "query": "Balor General abilities and characteristics for combat strategy",
+            "variant": "Balor General traits and skills for fighting tactics"
+        }
+    ]
+}

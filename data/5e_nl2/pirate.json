@@ -1,0 +1,48 @@
+{
+    "name": "Pirate",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 9,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "pirate",
+        "rogue"
+    ],
+    "adjectives": [
+        "nimble",
+        "adventurous",
+        "dangerous"
+    ],
+    "description": "The Pirate is a medium humanoid that embodies the adventurous life of seafaring rogues, wielding a scimitar and light crossbow.",
+    "memorable": "Nimble combatant capable of dealing moderate damage with melee and ranged attacks.",
+    "goals": "Seek adventure, loot, and thrill on the high seas.",
+    "relations": "Often found among other pirates or mercenaries.",
+    "environment": "Coastal regions or on ships.",
+    "strengths": "Moderate combat abilities with both melee and ranged potential.",
+    "weaknesses": "Low hit points and average durability.",
+    "attacks": "Attacks with a scimitar for slashing damage or a light crossbow for piercing damage.",
+    "most_powerful_ability": "Ability to engage in both close and ranged combat effectively.",
+    "equipment": "Scimitar and light crossbow.",
+    "senses": "Passive Perception of 10 indicates average observational abilities.",
+    "skills": "Proficient in Acrobatics, showcasing agility and athletic feats.",
+    "additional_information": [
+        "Good for ambush tactics.",
+        "Can be a minor threat in larger encounters.",
+        "Embodies the classic image of a seafaring rogue."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "nimble seafaring rogue",
+        "medium humanoid with a scimitar",
+        "pirate skilled in acrobatics",
+        "dangerous pirate with a light crossbow",
+        "adventurous pirate looking for treasure"
+    ]
+}

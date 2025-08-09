@@ -1,0 +1,25 @@
+{
+    "name": "Garmvvolf",
+    "queries": [
+        {
+            "query": "huge monstrous creature with multiple heads and poison attacks",
+            "variant": "monstrous huge creature with several heads and poison attacks"
+        },
+        {
+            "query": "powerful monster that regenerates heads and has a trampling ability",
+            "variant": "strong creature that regrows heads and can trample opponents"
+        },
+        {
+            "query": "beast with high hit points that excels in physical combat and tracking",
+            "variant": "creature with a lot of hit points that is great in physical fights and tracking"
+        },
+        {
+            "query": "agile monster that uses bite attacks and can inflict fear",
+            "variant": "fast creature that makes bite attacks and can terrify enemies"
+        },
+        {
+            "query": "intimidating giant creature that lives outside of any alignment",
+            "variant": "scary large creature that operates beyond any moral alignment"
+        }
+    ]
+}

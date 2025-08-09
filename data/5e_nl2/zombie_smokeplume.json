@@ -1,0 +1,51 @@
+{
+    "name": "Zombie, Smokeplume",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 68,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "fire",
+        "smoke"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "threatening"
+    ],
+    "description": "The Zombie, Smokeplume is a large undead creature that produces smoke and fire, making it a unique threat in combat.",
+    "memorable": "It can create heavily obscured terrain upon death and has the ability to see through smoke.",
+    "goals": "To engage and harm adventurers using its abilities.",
+    "relations": "May serve other chaotic evil undead or be found in areas where fire and chaos are prevalent.",
+    "environment": "Dark, smoky areas often associated with fires or conflict.",
+    "strengths": "High hit points and resistance to fire damage, capable of manipulating the battlefield with smoke.",
+    "weaknesses": "Very low dexterity and mental stats, making it less evasive and less intelligent.",
+    "attacks": "Primary attack is a slam that deals bludgeoning and fire damage; can also use Smoke Breath to obscure and damage enemies.",
+    "most_powerful_ability": "Smoldering Death creates a smoke cloud that poisons enemies and obscures vision.",
+    "equipment": null,
+    "senses": "It has firesight, allowing it to see through smoke and fog without penalty.",
+    "skills": "Has a low perception skill, making it not very aware of its surroundings.",
+    "additional_information": [
+        "Immune to fire and poison damage",
+        "Can potentially remain standing when reduced to 0 hit points",
+        "Does not require air, food, drink, or sleep"
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead monster that creates smoke",
+        "fire-producing undead with smoke powers",
+        "chaotic evil zombie with poison attacks",
+        "undead creature immune to fire damage",
+        "zombie that obscures the battlefield with smoke"
+    ]
+}

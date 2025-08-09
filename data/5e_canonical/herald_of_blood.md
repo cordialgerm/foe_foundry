@@ -1,6 +1,8 @@
 <MonsterName/>Herald of Blood</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Herald of Blood is a powerful and imposing creature categorized as a Huge Fiend with a Neutral Evil alignment. With a robust Armor Class of 15 and a staggering 184 hit points, this monster is designed to dominate the battlefield through both melee and ranged attacks. Its high Strength score of 22 grants it exceptional power in combat, while its high Constitution of 20 gives it remarkable durability. The Herald excels in dealing necrotic damage and can inflict debilitating effects on its foes, including the potential to poison or exhaust them. Its movement capabilities, allowing it to walk and fly at a speed of 30 feet, provide tactical advantages in combat. While it is vulnerable to radiant damage and has a few weaknesses, its numerous immunities make it a formidable foe that challenges adventurers with a Challenge Rating of 12.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ As a bonus action, the Herald can use Grant Blood Rage to unleash chaos upon a t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Herald of Blood
 
 *Huge* *Fiend* *Neutral Evil*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Grant Blood Rage:** The herald of blood infuses reckless rage in one creature it can see within 60 feet of it that isn’t a Construct or Undead. The target must succeed on a DC 17 Constitution saving throw or be enraged for a number of rounds equal to the target’s Constitution modifier. While enraged, the target has advantage on all melee attack rolls, and attack rolls against it have advantage. When the rage ends, the target takes 13 (3d8) necrotic damage and suffers one level of exhaustion. A creature with any levels of exhaustion automatically succeeds on this saving throw.
+</statblock>
 
 

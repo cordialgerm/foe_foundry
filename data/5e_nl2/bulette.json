@@ -1,0 +1,49 @@
+{
+    "name": "Bulette",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 94,
+    "ac": 17,
+    "srd": true,
+    "cr": "5",
+    "movement": "40 ft. walking and burrowing speed",
+    "role": "Ambusher",
+    "tags": [
+        "predator",
+        "burrowing",
+        "ambush"
+    ],
+    "adjectives": [
+        "massive",
+        "armored",
+        "formidable"
+    ],
+    "description": "The Bulette, or 'land shark', is a large creature with a thick, armored hide and a wedge-shaped head suited for digging. It has robust limbs that allow for rapid burrowing and surprising ambush attacks.",
+    "memorable": "The Bulette's ability to burst from the ground and its tough exterior make it an imposing threat.",
+    "goals": "Hunting and defending its territory against any intruders.",
+    "relations": "May be encountered in areas with other territorial predators.",
+    "environment": "Typically found in underground terrains and hunting grounds.",
+    "strengths": "Exceptional strength and durability, capable of enduring significant damage.",
+    "weaknesses": "Poor intelligence and lack of ranged capabilities can limit its tactical options.",
+    "attacks": "Its primary attack is a powerful bite that can inflict severe piercing damage, complemented by jumping and landing attacks that can knock foes prone.",
+    "most_powerful_ability": "Deadly Leap, which allows it to leap onto prey, dealing significant bludgeoning and thunder damage.",
+    "senses": "Possesses tremorsense, enabling it to detect movements and creatures underground.",
+    "skills": "Has a good perception score, making it somewhat aware of its surroundings.",
+    "additional_information": [
+        "Special ability 'Steely Hide' makes nonmagical weapons risk breaking on a natural 1.",
+        "'Monstrosity Resilience' grants resistance to exhaustion and fear.",
+        "Burrows effectively without incurring opportunity attacks.",
+        "Uses 'Seek Prey' to frighten and detect targets.",
+        "Capable of jumping impressive distances."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large armored land predator",
+        "burrowing monster with bite attack",
+        "ambush creature that emerges from the ground",
+        "powerful territorial predator",
+        "massive creature capable of jumping high"
+    ]
+}

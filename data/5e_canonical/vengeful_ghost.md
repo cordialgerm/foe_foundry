@@ -1,6 +1,8 @@
 <MonsterName/>Vengeful Ghost</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>11</AC>
+<HP/>58</HP>
 <summary>The Vengeful Ghost is a Medium Undead creature that embodies the remnants of a person who has significant unfinished business or emotional turmoil. It is a formidable opponent with a Challenge Rating of 8, making it suitable for mid-level adventurers. With a total of 58 hit points, an Armor Class of 11, and a flying speed of 40 feet, it can maneuver effectively in combat. The ghost is exceptionally resilient against many forms of damage due to its immunities to cold, necrotic, and poison damage, as well as resistances to acid, fire, lightning, and thunder. However, it is vulnerable to radiant damage, and its physical attributes indicate it is relatively weak in terms of strength and constitution, translating to very bad physical attacks and defenses. The creature's most notable traits include its ability to haunt and intimidate foes, as well as a unique capacity for possession.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ Additionally, the ghost has a reaction that allows it to use Horrifying Visage u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vengeful Ghost
 
 *Medium* *Undead*
@@ -75,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Horrifying Visage:** If the ghost takes damage from an attack or spell, it uses Horrifying Visage.
 
 
+</statblock>
 
 

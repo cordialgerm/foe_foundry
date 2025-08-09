@@ -1,6 +1,9 @@
 <MonsterName/>Ice Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>180</HP>
 <summary>An Ice Devil is a towering, insect-like fiend with a hard, icy exoskeleton and a long, spiked tail. These devils come from the frozen realms of the Nine Hells and are known for their cold, calculating cruelty. Ice Devils wield powerful polearms and can command the frigid air around them to summon ice storms or freeze their enemies solid. Their natural resistance to cold and ice-based attacks makes them formidable foes in icy environments. In addition to their martial prowess, Ice Devils are skilled tacticians, often leading infernal armies or serving as lieutenants to more powerful devils.</summary>
 
 <summary>The Ice Devil is a formidable large fiend known for its menacing combination of physical strength and magical capabilities. With an armor class of 18 and a whopping 180 hit points, it demonstrates considerable resilience in battle, making it a challenging adversary with a challenge rating of 12. This creature is particularly effective in combat due to its high strength and constitution scores, reflecting an exceptional physical presence as well as robust durability. It possesses resistance to nonmagical and non-silvered weaponry and is immune to cold, fire, and poison damage, enhancing its survivability in various encounters. Notably, its magic resistance grants it an advantage on saving throws against spells, allowing it to withstand magical attacks more effectively. However, it could be vulnerable to keen strategic thinking from opponents who can exploit its limited weaknesses.</summary>
@@ -41,6 +44,7 @@ Overall, the Ice Devil is a powerful adversary with an array of abilities that e
 
 Source: 5e_srd
 
+<statblock>
 ### Ice Devil
 
 *Large fiend (devil), lawful evil*
@@ -87,7 +91,8 @@ Source: 5e_srd
 
 When the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.
 
-The wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.
+The wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.</statblock>
+
 
 
 
@@ -95,6 +100,7 @@ The wall lasts for 1 minute or until the devil is incapacitated or dies. The wal
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Devil
 
 *Large* *Fiend*
@@ -141,6 +147,7 @@ Source: 5e_artisinal_monsters
 - **Freezing Blood (1/Day):** When a creature within 60 feet that the devil can see hits it with a ranged attack or includes it in a spells area, the creature makes a DC 16 Constitution saving throw. On a failure, the creature takes 10 (3d6) cold damage and is slowed until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -149,6 +156,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Devil
 
 *Large fiend (devil)*
@@ -190,5 +198,6 @@ Source: 5e_artisinal_monsters
 
 - **Ice Shield.** When the ice devil or a friendly creature it can see is hit by an attack, the devil can create a magical barrier of ice to disrupt the attack. The target halves the damage from the attack.
 
+</statblock>
 
 

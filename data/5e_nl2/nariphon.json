@@ -1,0 +1,52 @@
+{
+    "name": "Nariphon",
+    "creature_type": "Plant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 195,
+    "ac": 10,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 15 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "huge",
+        "clone"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "dangerous"
+    ],
+    "description": "A huge plant creature resembling an ordinary tree, indistinguishable when motionless.",
+    "memorable": "Can create vegetative clones that act as extensions of itself, manipulating the battlefield.",
+    "goals": "Use its environment for ambush and attack through brute strength and cloning abilities.",
+    "relations": "Can create clones resembling creatures it attacks.",
+    "environment": "Found in forested areas where it can blend in with trees.",
+    "strengths": "Immunities to bludgeoning, piercing, and poison damage, as well as condition immunities.",
+    "weaknesses": "Low Dexterity and Intelligence limits its mobility and cognitive functions.",
+    "attacks": "Makes four attacks with roots or thorns, dealing bludgeoning and piercing damage respectively and can grapple targets.",
+    "most_powerful_ability": "Vegetative Clone ability allows it to control clones mimicking creatures it hits.",
+    "equipment": null,
+    "senses": "Possesses tremorsense with a range of 120 feet, allowing it to detect movement nearby.",
+    "skills": "Has a passive perception score of 17, indicating good awareness of its surroundings.",
+    "additional_information": [
+        "Can drag grappled creatures underground with its Bury ability.",
+        "Each grappled target takes poison damage while restrained.",
+        "Indistinguishable from ordinary trees when motionless.",
+        "Clones can perceive and act as Nariphon does.",
+        "Nariphon can control up to six vegetative clones simultaneously."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that creates clones in battle",
+        "huge plant monster that disguises as a tree",
+        "manipulative plant creature with grappling attacks",
+        "dangerous plant that uses vegetative clones",
+        "strong plant with tremorsense and poison immunity"
+    ]
+}

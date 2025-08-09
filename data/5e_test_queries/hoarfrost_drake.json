@@ -1,0 +1,25 @@
+{
+    "name": "Hoarfrost Drake",
+    "queries": [
+        {
+            "query": "medium dragon that thrives in icy terrains and breathes cold",
+            "variant": "dragon that is medium-sized, loves icy places and uses cold breath"
+        },
+        {
+            "query": "chaotic evil ice creature with advantages in difficult terrains",
+            "variant": "evil icy creature with tactics that excel in tough terrain"
+        },
+        {
+            "query": "dragon with a damage vulnerability to fire and resistance to cold",
+            "variant": "fire weakness and cold immunity drake"
+        },
+        {
+            "query": "monster with icy scales and multiple claw attacks in combat",
+            "variant": "creature that has icy armor and makes several claw strikes during battle"
+        },
+        {
+            "query": "hoarfrost drake special abilities like cloud of riming ice and ice walk",
+            "variant": "special traits of hoarfrost drake including ice walk and cloud of freezing fog"
+        }
+    ]
+}

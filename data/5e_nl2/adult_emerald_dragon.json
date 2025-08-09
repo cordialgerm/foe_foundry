@@ -1,0 +1,54 @@
+{
+    "name": "Adult Emerald Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Good",
+    "size": "Huge",
+    "hp": 241,
+    "ac": 18,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 40 ft., burrow 30 ft., fly 60 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "psionic",
+        "flying",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "agile",
+        "manipulative",
+        "confusing"
+    ],
+    "description": "The Adult Emerald Dragon boasts a regal presence with powerful features typical of huge dragons. Its scales shimmer in green hues, blending seamlessly with its natural surroundings. This dragon commands respect with its exceptional physical and mental prowess.",
+    "memorable": "The blend of physical ferocity and mental manipulation, alongside its abilities to confuse and control enemies, makes this dragon a particularly daunting adversary.",
+    "goals": "Typically seeks to protect its territory while manipulating outcomes in battles, often to maintain a balance of power or to further its own ambitions.",
+    "relations": "Often interacts with other dragons and arcane beings; may be a guardian of ancient knowledge or treasures.",
+    "environment": "Commonly found in deep forests, mountainous areas, or ancient ruins, where it can rest and plot.",
+    "strengths": "Exceptional stats across multiple attributes, with notable abilities in psionics and spellcasting. Resistance to psychic and thunder damage helps it endure battles.",
+    "weaknesses": "Relatively lower Wisdom score makes it vulnerable to effects targeting that attribute.",
+    "attacks": "Can deal significant damage with melee attacks, including a bite that inflicts piercing damage along with thunder damage, plus powerful psionic wave and maddening breath attacks that confuse foes.",
+    "most_powerful_ability": "Maddening Breath: A devastating cone attack that causes thunder damage and extreme confusion.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 17, enabling it to detect threats effectively.",
+    "skills": "Excels in Deception and History, allowing it to manipulate and navigate social interactions adeptly.",
+    "additional_information": [
+        "Legendary Resistance to succeed on failed saving throws, enhancing durability in combat.",
+        "Can psionically observe creatures and locations within 100 miles, providing substantial reconnaissance advantage.",
+        "Innate spellcaster capable of casting spells without material components."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast confusion, dominate person, hideous laughter, and suggestion three times each per day.",
+    "test_queries": [
+        "mind-manipulating dragon",
+        "psionic dragon abilities",
+        "confusing flying creature",
+        "emotional manipulation dragon",
+        "powerful dragon foe"
+    ]
+}

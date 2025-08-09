@@ -1,0 +1,25 @@
+{
+    "name": "Aridni",
+    "queries": [
+        {
+            "query": "small fey creature with spellcasting abilities that can fly",
+            "variant": "small fey that can fly and has spells"
+        },
+        {
+            "query": "agile and cunning fey known for evasion and magical resistance",
+            "variant": "cunning and agile fey with magic resistance and evasion"
+        },
+        {
+            "query": "fast moving fey that can become invisible and use arrows",
+            "variant": "fey that moves quickly, can turn invisible and uses arrows"
+        },
+        {
+            "query": "creature with high Dexterity and low Strength that specializes in Acrobatics",
+            "variant": "fey with low strength and high Dexterity that excels at Acrobatics"
+        },
+        {
+            "query": "neutral evil fey that can manipulate foes with spells like Charm Person",
+            "variant": "neutral evil fey capable of using spells like Charm Person to control enemies"
+        }
+    ]
+}

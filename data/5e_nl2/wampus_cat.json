@@ -1,0 +1,52 @@
+{
+    "name": "Wampus Cat",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "manipulative",
+        "charming",
+        "cunning"
+    ],
+    "adjectives": [
+        "chaotic",
+        "agile",
+        "versatile"
+    ],
+    "description": "The Wampus Cat is a Medium creature with sharp claws, a strong presence, and the ability to change shape, taking on the form of a female humanoid. Its agility and charm make it a cunning ambusher.",
+    "memorable": "It combines charm and offensive capabilities, able to manipulate foes with song and frighten them with a yowl.",
+    "goals": "To ambush prey and manipulate foes using its charm.",
+    "relations": "May be encountered with other beasts or tricksters; particularly effective against divine beings.",
+    "environment": "Often found in varied terrain, favoring areas allowing stealth and ambush tactics.",
+    "strengths": "Possesses high dexterity and charisma, making it effective in both combat and social manipulation.",
+    "weaknesses": "May be less effective in straightforward confrontations against foes without divine powers.",
+    "attacks": "Claw attack delivers serious slashing damage, while Sweet Song charms and Terrifying Yowl frightens enemies.",
+    "most_powerful_ability": "Sweet Song has the potential to charm multiple creatures, significantly altering the dynamics of battle.",
+    "equipment": null,
+    "senses": "The Wampus Cat has darkvision, allowing it to see in darkness as if it were dim light.",
+    "skills": "It is skilled in Deception and Persuasion, allowing it to effectively manipulate others.",
+    "additional_information": [
+        "Divine Animosity grants advantage against divine beings.",
+        "Can polymorph into a Medium female Humanoid.",
+        "Recharge abilities can change battlefield dynamics significantly.",
+        "Utilizes both offensive and manipulative abilities in combat.",
+        "Excellent ambusher due to high Dexterity."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "versatile monster with charming abilities",
+        "cat-like creature that can shapeshift",
+        "monster that terrifies and charms foes",
+        "agile creature with high dexterity and charisma",
+        "cunning beast effective against divine beings"
+    ]
+}

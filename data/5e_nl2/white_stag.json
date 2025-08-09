@@ -1,0 +1,51 @@
+{
+    "name": "White Stag",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "celestial",
+        "forest",
+        "nature",
+        "chaotic good"
+    ],
+    "adjectives": [
+        "large",
+        "divine",
+        "agile",
+        "formidable"
+    ],
+    "description": "A large celestial creature resembling a majestic stag, characterized by its divine nature and impressive antlers.",
+    "memorable": "The White Stag serves as a beacon of divine will, with a curse mechanism for its death impacting its foes significantly.",
+    "goals": "To protect the natural world and maintain the balance of nature.",
+    "relations": "May be encountered alongside other celestial beings or within sacred natural areas.",
+    "environment": "Typically found in forested areas.",
+    "strengths": "Possesses agility, strength, and unique abilities to navigate difficult terrain and impact foes with curses.",
+    "weaknesses": "Limited hit points make it vulnerable to concentrated attacks.",
+    "attacks": "The White Stag can deliver a powerful gore attack and a hard-hitting hooves attack, showcasing its versatility in combat.",
+    "most_powerful_ability": "Beloved by the Gods causes long-lasting trouble for the foe that slays it, cursing them with nature's wrath.",
+    "senses": "Has a passive perception of 14, showcasing its adeptness at noticing hidden details.",
+    "skills": "Excels in athletics, insight, and perception, indicating its ability to navigate challenges and understand situations.",
+    "additional_information": [
+        "Can long jump up to 25 feet with a running start.",
+        "Travels through forests without penalty from difficult terrain.",
+        "Exhibits divine characteristics, representing its celestial origin.",
+        "Strong athletic abilities supported by a proficiency in athletics.",
+        "Exhibits an impressive blend of combat and exploration capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial forest guardian with curse ability",
+        "large stag that protects nature and jumps far",
+        "divine creature that curses its slayer",
+        "agile celestial creature with formidable combat skills",
+        "mystical stag that navigates woods effortlessly"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Wyrdling",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 40,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft.",
+    "role": null,
+    "tags": [
+        "psychic",
+        "fate",
+        "fortune"
+    ],
+    "adjectives": [
+        "intuitive",
+        "perceptive",
+        "mystical"
+    ],
+    "description": "The Wyrdling is a Medium humanoid with an exceptional Wisdom score, known for its connection to fate and psychic abilities. It is agile and possesses a unique appearance that reflects its mystical nature.",
+    "memorable": "The Wyrdling can manipulate fate, offering advantages or disadvantages based on its whims, making it a powerful and unpredictable character on the battlefield.",
+    "goals": "To influence the outcomes of events and guide the fate of creatures around it.",
+    "relations": "May associate with other psychic creatures or entities that embody fate.",
+    "environment": "Can be found where fate is a theme, such as in mystical forests or during significant events.",
+    "strengths": "High Wisdom enhances perception and insight; capable of psychic attacks.",
+    "weaknesses": "Lower physical defenses and hit points compared to stronger foes.",
+    "attacks": "Utilizes Psychic Burst, dealing significant psychic damage as either a melee or ranged spell attack.",
+    "most_powerful_ability": "'Read Fate' allows it to commune with fate and answer specific questions on behalf of another creature.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses advantage on Wisdom (Insight) checks, enabling it to read situations effectively.",
+    "additional_information": [
+        "Can impose disadvantage on attack rolls against it and grant allies advantage through its reaction.",
+        "Has the ability 'Pronounce Fate' to influence the outcomes of others' actions.",
+        "Rolls two dice for initiative, taking the higher result, ensuring it acts early in combat.",
+        "Can commune with fate once every three days for a single creature.",
+        "Utilizes psychic abilities to manipulate combat dynamics."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mystical creature that manipulates fate",
+        "psychic humanoid with intuitive abilities",
+        "Wyrdling abilities involving fortune and doom",
+        "medium humanoid that specializes in fate",
+        "creature that communes with fate"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Scorpion</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Clockwork Scorpion is a large construct creature characterized by its mechanical nature and powerful combat abilities. As an unaligned entity, it undertakes tasks and engages in battles without moral consideration, serving its creator's intentions. This formidable opponent has a notable armor class of 16, granting it good defense against attacks, while its impressive hit points of 95 enable it to withstand considerable damage in combat. With an overall challenge rating of 9, it presents a significant threat in encounters. The scorpion excels in melee combat due to its strong ability scores, particularly in Strength and Constitution, and showcases unique special abilities that enhance its effectiveness in battle. However, its low Intelligence and Charisma scores indicate weaknesses in social interactions and problem-solving, limiting its ability to engage in complex strategies outside of combat scenarios.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ As a reaction, the Clockwork Scorpion can activate Gas Nozzles when it takes dam
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Scorpion
 
 *Large* *Construct* *unaligned*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Gas Nozzles:** When it takes damage all within 5 feet: 5 (1d10) poison. If damage taken was fire gas ignites deals + 5 (1d10) fire.
 
 
+</statblock>
 
 

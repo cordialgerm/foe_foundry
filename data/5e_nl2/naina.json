@@ -1,0 +1,52 @@
+{
+    "name": "Naina",
+    "creature_type": "Dragon",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 231,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 120 ft., fly 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "shapechanger",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "powerful"
+    ],
+    "description": "Naina is a large dragon with a powerful physique marked by its strength and longevity. She possesses a menacing presence, often using her ability to shape-shift into a humanoid form while retaining her formidable abilities.",
+    "memorable": "Naina's mix of powerful physical attacks and diverse spellcasting capabilities, along with her unique breath weapons, creates a formidable challenge for adventurers.",
+    "goals": "Seeking power and control, using manipulation and fear to maintain her dominion.",
+    "relations": "May be encountered alongside other evil creatures or serve as a master to lesser dragons.",
+    "environment": "Usually found in mountainous or treacherous terrain suitable for a dragon's lair.",
+    "strengths": "Immunity to poison damage, resistance to nonmagical attacks, and powerful breath weapons give her an edge in battle.",
+    "weaknesses": "Vulnerable to magical attacks, relies on breath weapons and spells for crowd control.",
+    "attacks": "Can perform a devastating Multiattack, delivering a powerful Bite or Claw, alongside a ranged breath weapon attack.",
+    "most_powerful_ability": "Naina's breath weapons can deal significant area damage and impose debilitating effects such as paralysis or sleep.",
+    "equipment": null,
+    "senses": "Naina can sense magic within a 120-foot radius at will, allowing her to detect threats and opportunities.",
+    "skills": "Naina has proficient skills in Deception, Insight, Perception, and Persuasion, making her a cunning manipulator.",
+    "additional_information": [
+        "Can change shape into a Medium Humanoid.",
+        "Equipped with a range of powerful spells for versatile combat.",
+        "Uses breath weapons for area control and crowd control.",
+        "Possesses high Constitution and Strength, enhancing durability and offensive capabilities.",
+        "Relies on her cunning nature and high Charisma in social encounters."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Naina can cast spells without material components, utilizing her Charisma for spell effectiveness.",
+    "test_queries": [
+        "large cunning dragon with breath weapons",
+        "dragon that can shapeshift and cast spells",
+        "formidable dragon immune to poison attacks",
+        "dragon known for paralyzing breath attack",
+        "manipulative dragon with high Constitution"
+    ]
+}

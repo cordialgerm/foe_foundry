@@ -1,0 +1,52 @@
+{
+    "name": "Firegeist",
+    "creature_type": "Elemental",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walks at a speed of 40 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "fire",
+        "elemental",
+        "fear"
+    ],
+    "adjectives": [
+        "fiery",
+        "small",
+        "agile",
+        "fearsome"
+    ],
+    "description": "The Firegeist embodies the essence of fire, appearing as a small, flickering elemental with an intense flame-like aura.",
+    "memorable": "It inflicts fear and flame-based damage, making its enemies catch fire with its attacks.",
+    "goals": "To instill fear and cause destruction using its fiery abilities.",
+    "relations": "May be encountered alongside other fire-based elementals or as guardians of volcanic areas.",
+    "environment": "Thrives in fiery or volcanic environments, becoming highly effective in bright light.",
+    "strengths": "Immunity to fire and poison damage, high Dexterity and Wisdom grants it agility and perceptiveness.",
+    "weaknesses": "Low Strength and Intelligence hinder physical combat and problem-solving, vulnerable to water.",
+    "attacks": "Burning Slam deals bludgeoning and fire damage, can ignite flammable objects and creatures.",
+    "most_powerful_ability": "Burning Terror causes fire damage and frightens its target with painful memories.",
+    "senses": "Possesses passive perception of 15, allowing it to be highly aware of its surroundings.",
+    "skills": "Proficient in Perception, enhancing its ability to notice threats.",
+    "additional_information": [
+        "Elemental Nature allows it to go without air, food, or sleep.",
+        "Hide By Firelight ability gives it advantage on Stealth checks in fire.",
+        "Magical Light Sensitivity imposes disadvantages in areas of magical light.",
+        "Variable Illumination feature lets it control the light radius it emits.",
+        "Water Susceptibility causes cold damage when in contact with water."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fearsome fire elemental",
+        "elemental that thrives in fire",
+        "creature that ignites targets with attacks",
+        "fire elemental vulnerable to water",
+        "monster that causes fear with burning memories"
+    ]
+}

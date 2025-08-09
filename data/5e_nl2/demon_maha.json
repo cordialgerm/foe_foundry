@@ -1,0 +1,55 @@
+{
+    "name": "Maha",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 178,
+    "ac": 15,
+    "srd": false,
+    "cr": "12",
+    "movement": "walking speed of 40 feet",
+    "role": "Controller",
+    "tags": [
+        "Demon",
+        "Fiend",
+        "Psychic",
+        "Aura",
+        "Cold"
+    ],
+    "adjectives": [
+        "dangerous",
+        "manipulative",
+        "chaotic"
+    ],
+    "description": "The Maha is a medium fiend with high Dexterity and impressive physical attributes, featuring a chaotic appearance accentuated by its Frozen Aura.",
+    "memorable": "Its ability to incapacitate opponents with deadly laughter and manipulate the battlefield makes the Maha a significant threat.",
+    "goals": "To control the battlefield and incapacitate enemies through psychic laughter.",
+    "relations": "May be encountered alongside other chaotic and evil fiends.",
+    "environment": "Often found in icy or chaotic terrains where it can utilize snow camouflage.",
+    "strengths": "Resilient with high Dexterity and strong Constitution, capable of evading magical control due to Magic Resistance.",
+    "weaknesses": "Low Intelligence may hinder its strategic decision-making; vulnerable to nonmagical attacks in particular situations.",
+    "attacks": "Employs a multiattack of claws dealing piercing and cold damage, and can incapacitate with a psychic barrage.",
+    "most_powerful_ability": "Deadly Laughter, which deals heavy psychic damage and incapacitates creatures with fits of uncontrollable laughter.",
+    "equipment": null,
+    "senses": "Possesses truesight within 120 feet, allowing it to detect invisible creatures and objects.",
+    "skills": "Has a +3 modifier in perception, making it capable of detecting hidden threats.",
+    "additional_information": [
+        "Immunities to cold and poison damage",
+        "Resistance to fire and lightning damage",
+        "Advantage on Dexterity (Stealth) checks in snowy terrain",
+        "Ability to communicate telepathically up to 120 feet",
+        "Low Intelligence indicates poor strategic awareness"
+    ],
+    "damage_types": [
+        "psychic",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil ice demon",
+        "fiend with deadly laughter ability",
+        "medium fiend with psychic attacks",
+        "monster with frozen aura",
+        "demon that manipulates movement"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Gulon",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 110,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "poison immune",
+        "agile"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Gulon is a large, agile creature with a robust build, displaying formidable physical characteristics. Its body is adapted to slip through tight spaces without difficulty.",
+    "memorable": "Its ability to belch toxic gas in a large area can significantly harm multiple foes.",
+    "goals": "To ambush prey and navigate through tight spaces while dealing damage.",
+    "relations": "Might be encountered with other monstrous creatures that share similar habitats.",
+    "environment": "Typically found in areas with tight passages or difficult terrain.",
+    "strengths": "High Strength enhances its melee attack effectiveness and the Amorphous ability allows it to navigate confined areas easily.",
+    "weaknesses": "Low Intelligence and Charisma reduce its effectiveness in social interactions and mental defenses.",
+    "attacks": "Employs Multiattack with a Bite that can knock foes prone and Claw strikes that deal slashing damage.",
+    "most_powerful_ability": "Too Full allows it to unleash a dangerous cloud of toxic gas that deals significant poison damage in a wide area.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting advantage on Wisdom (Perception) checks that rely on smell.",
+    "skills": "Proficient in Stealth, enhancing its ability to ambush.",
+    "additional_information": [
+        "Immunity to poison damage and conditions.",
+        "Leaves difficult terrain when moving through narrow spaces.",
+        "High Constitution contributes to robust hit points.",
+        "Can deliver three attacks in one turn.",
+        "Uncomplicated intelligence makes it a straightforward brute force creature."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable large monster with toxic gas",
+        "agile creature that belches poison",
+        "large monstrosity that navigates tight spaces",
+        "resilient monster immune to poison",
+        "brute force creature with keen smell ability"
+    ]
+}

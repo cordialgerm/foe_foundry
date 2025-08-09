@@ -1,0 +1,25 @@
+{
+    "name": "Gray Thirster",
+    "queries": [
+        {
+            "query": "undead creature that drains moisture and causes exhaustion",
+            "variant": "moisture draining undead that causes exhaustion and has special abilities"
+        },
+        {
+            "query": "medium-sized undead monster with claw attacks and necrotic damage",
+            "variant": "undead creature of medium size with claws and necrotic damage abilities"
+        },
+        {
+            "query": "creature immune to fire and poison that thrives in ambush",
+            "variant": "ambush-loving creature that is immune to fire and poison damage"
+        },
+        {
+            "query": "monster that requires no food or sleep and imposes exhaustion",
+            "variant": "exhaustion-imposing monster that doesn't need food or sleep"
+        },
+        {
+            "query": "gray creature with a special ability to reduce maximum hit points",
+            "variant": "gray monster with an ability to lower maximum hit points of its targets"
+        }
+    ]
+}

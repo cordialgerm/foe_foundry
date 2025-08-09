@@ -1,0 +1,25 @@
+{
+    "name": "Archfey",
+    "queries": [
+        {
+            "query": "powerful fey creature that can change size and cast spells",
+            "variant": "strong fey monster that changs size and can use magic"
+        },
+        {
+            "query": "magical fey known for its high Charisma and agility",
+            "variant": "fey creature famous for its agility and charisma scores"
+        },
+        {
+            "query": "cunning creature that uses illusions and has a fear effect",
+            "variant": "smart creature that uses illusions and can instill fear"
+        },
+        {
+            "query": "fey that can teleport and has multiple attack options",
+            "variant": "fey creature capable of teleporting and with many attack choices"
+        },
+        {
+            "query": "magical creature with immunity to charm and poison effects",
+            "variant": "magic creature immune to being charmed and poisoned"
+        }
+    ]
+}

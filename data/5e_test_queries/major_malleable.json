@@ -1,0 +1,25 @@
+{
+    "name": "Major Malleable",
+    "queries": [
+        {
+            "query": "huge chaotic evil creature that can absorb life force",
+            "variant": "huge creature that's chaotic evil and can absorb the life force"
+        },
+        {
+            "query": "shapeless monster with psychic immunity and variable form",
+            "variant": "psychic immune shapeless monster that can change shape"
+        },
+        {
+            "query": "aberration that grapples and drains intelligence",
+            "variant": "intelligence-draining aberration that can grapple"
+        },
+        {
+            "query": "creature that uses Spider Climb and can adapt shape in combat",
+            "variant": "combat adaptive creature that can utilize Spider Climb"
+        },
+        {
+            "query": "monster that can unite with others to grow and absorb smaller beings",
+            "variant": "monster that can absorb smaller beings and unite with others"
+        }
+    ]
+}

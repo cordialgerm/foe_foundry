@@ -1,6 +1,8 @@
 <MonsterName/>Ziphius</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Ziphius is a gargantuan aberration that embodies the mysteries of the deep sea. Known for its powerful aquatic abilities and formidable physical presence, the Ziphius serves as a potent threat in aquatic environments. Its high mobility in water, coupled with notable resilience against non-magical attacks, makes it a challenging opponent for adventurers. However, while its physical attacks are strong, the creature has lower mental acuity and charm, making it less effective in social interactions. Possessing unique abilities to charge at foes and create mental bonds, the Ziphius can manipulate battle dynamics to its advantage. Yet, it has limitations, such as its sole reliance on underwater breathing and a relatively slow speed on land.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Ziphius is a fearsome adversary that thrives in its aquatic domain,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ziphius
 
 *Gargantuan* *Aberration* *neutral*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Dorsal Fin:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) slashing damage.
 
 
+</statblock>
 
 

@@ -1,0 +1,51 @@
+{
+    "name": "Giant Centipede",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 4,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "venomous",
+        "ambush predator",
+        "insect"
+    ],
+    "adjectives": [
+        "long",
+        "multi-legged",
+        "agile"
+    ],
+    "description": "A long, multi-legged insect with a segmented body that moves quickly and stealthily.",
+    "memorable": "Its venomous bite can paralyze its prey, making it a dangerous ambusher especially in groups.",
+    "goals": "To ambush and subdue its prey using venom.",
+    "relations": "Often encountered in dark, damp environments.",
+    "environment": "Dark caves, forests, or swamps.",
+    "strengths": "High agility and the ability to poison targets.",
+    "weaknesses": "Low hit points and relatively low AC.",
+    "attacks": "Bite attack that deals piercing damage and can inflict additional poison damage.",
+    "most_powerful_ability": "Venomous bite that can paralyze targets for 1 hour.",
+    "senses": "Blindsight up to 30 feet allows it to detect nearby creatures without relying on sight.",
+    "skills": "Notably low perception with a passive score of 8.",
+    "additional_information": [
+        "Can burrow into the ground for stealth.",
+        "Can be dangerous when encountered in large swarms.",
+        "Low strength and intelligence limits its abilities in combat.",
+        "Weak constitution makes it susceptible to damage.",
+        "Surprisingly fast despite its low hit points."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "venomous multi-legged ambush predator",
+        "creature with paralyzing bite in swamps",
+        "agile insect that inflicts poison damage",
+        "small creature that lives in dark caves",
+        "fast insect that can climb and burrow"
+    ]
+}

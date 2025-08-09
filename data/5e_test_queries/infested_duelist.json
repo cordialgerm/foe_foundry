@@ -1,0 +1,25 @@
+{
+    "name": "Infested Duelist",
+    "queries": [
+        {
+            "query": "humanoid with poison-related attacks that excels in mobility",
+            "variant": "humanoid that poison attacks excels in mobility"
+        },
+        {
+            "query": "medium-sized duelist known for evasive tactics and toxin abilities",
+            "variant": "medium duelist known for evasive and toxin abilities"
+        },
+        {
+            "query": "tactical combat creature immune to poison, resistant to acid",
+            "variant": "tactical creature immune to poison, acid resistant"
+        },
+        {
+            "query": "Infested Duelist abilities involving spores and agility in battles",
+            "variant": "Infested Duelist abilities dealing with spores and battle agility"
+        },
+        {
+            "query": "creature that uses thorn shots and melee attacks with high dexterity",
+            "variant": "creature using thorn shots, melee attacks and high dexterity"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Boss",
+    "queries": [
+        {
+            "query": "small humanoid leader that commands goblins and attacks with a scimitar",
+            "variant": "small leader humanoid that attacks with scimitar and commands goblins"
+        },
+        {
+            "query": "goblin commander that has darkvision and a nimble escape ability",
+            "variant": "commander goblin with darkvision and ability to escape quickly"
+        },
+        {
+            "query": "Goblin Boss statistics with stealth skills and average Constitution",
+            "variant": "statistics for Goblin Boss with skills in stealth and average Con"
+        },
+        {
+            "query": "agile goblin leader in combat that uses a shortbow and commands minions",
+            "variant": "leader goblin agile in combat that uses shortbow and commands minions"
+        },
+        {
+            "query": "Goblin Boss description with a focus on speed and melee attacks",
+            "variant": "description of Goblin Boss focused on speed and melee attacks"
+        }
+    ]
+}

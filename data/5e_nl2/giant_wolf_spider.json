@@ -1,0 +1,49 @@
+{
+    "name": "Giant Wolf Spider",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "40 ft. walking and climbing",
+    "role": "Ambusher",
+    "tags": [
+        "spider",
+        "predator",
+        "venomous"
+    ],
+    "adjectives": [
+        "fast",
+        "deadly",
+        "stealthy"
+    ],
+    "description": "The Giant Wolf Spider is a fast predator covered in dark, bristly hairs with multiple eyes for detecting movement.",
+    "memorable": "Unique ambush predator that relies on speed and venomous bite to subdue prey.",
+    "goals": "To hunt and ambush prey within its territory.",
+    "relations": "May encounter other solitary predators or be found in the company of lesser spiders.",
+    "environment": "Forests, caves, or grasslands.",
+    "strengths": "High dexterity enhancing stealth and evasion; capable of quickly traversing various terrains.",
+    "weaknesses": "Low hit points and intelligence, making it vulnerable to clever tactics.",
+    "attacks": "Bite attack that deals piercing damage and can paralyze its target with poison.",
+    "most_powerful_ability": "Venomous bite that can incapacitate prey and keep them paralyzed even after stabilizing.",
+    "senses": "Possesses blindsight up to 10 feet, allowing it to detect creatures even in darkness or through obstacles.",
+    "skills": "Has a strong proficiency in stealth, allowing it to approach enemies unnoticed.",
+    "additional_information": [
+        "Climbs effectively on walls and ceilings with Spider Climb ability.",
+        "Uses webs to detect prey within its vicinity through Web Sense.",
+        "Unhindered by webbing, allowing easier movement in spider habitats."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fast stealthy spider that paralyzes with bite",
+        "ambush predator in forests and caves",
+        "dark hairy spider with venomous fangs",
+        "medium-sized spider that climbs walls and ceilings",
+        "deadly spider with sharp eyes and stealth skills"
+    ]
+}

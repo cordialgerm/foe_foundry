@@ -1,0 +1,51 @@
+{
+    "name": "Fragrite",
+    "creature_type": "Elemental",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "shapechanger",
+        "sand",
+        "glass"
+    ],
+    "adjectives": [
+        "chaotic",
+        "versatile",
+        "explosive"
+    ],
+    "description": "The Fragrite embodies the essence of sand and glass, capable of shifting forms between a mass of sand or a glass humanoid.",
+    "memorable": "Its unique shapechanging ability provides both offensive and evasive tactics, making it an unpredictable opponent.",
+    "goals": "To control the battlefield and evade attacks while posing a significant threat to adventurers.",
+    "relations": "May encounter other elemental creatures or serve powerful beings in sandy or desert environments.",
+    "environment": "Typically found in sandy areas or regions with abundant glass, such as deserts or beaches.",
+    "strengths": "Immunity to poison damage and several conditions, as well as the ability to evade attacks and control combat.",
+    "weaknesses": "Vulnerable to thunder damage while in glass form.",
+    "attacks": "Employs melee strikes that can deal bludgeoning damage, becoming slashing damage when wounded in glass form.",
+    "most_powerful_ability": "Spontaneous Explosion: allows it to cause significant damage to nearby enemies while changing back to sand form.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Resists fire, lightning, and nonmagical bludgeoning, piercing, and slashing damage.",
+        "Has a burrow speed of 50 feet in sand form, enhancing mobility.",
+        "Gains advantage on Dexterity (Stealth) checks in sandy terrain.",
+        "Immune to being grappled while in sand form.",
+        "Can make two attacks each turn, providing consistent offensive pressure."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "elemental with sand and glass forms",
+        "sand monster that can explode",
+        "chaotic neutral elemental with evasive abilities",
+        "creature immune to poison and status effects",
+        "desert elemental that changes shapes in battle"
+    ]
+}

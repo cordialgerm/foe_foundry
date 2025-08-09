@@ -1,0 +1,57 @@
+{
+    "name": "Wereboar",
+    "creature_type": "Humanoid",
+    "creature_subtype": "human, lycanthrope, shapechanger",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 10,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft. (40 ft. in boar form)",
+    "role": "Bruiser",
+    "tags": [
+        "lycanthrope",
+        "shapechanger",
+        "humanoid",
+        "brute"
+    ],
+    "adjectives": [
+        "ferocious",
+        "territorial",
+        "powerful"
+    ],
+    "description": "The Wereboar can transform into a powerful boar or a hybrid form, exhibiting thick, bristly hides and tusks. In humanoid form, it appears as a muscular humanoid with aggressive features.",
+    "memorable": "This creature is resilient against non-magical and non-silvered weapon damage and can transmit lycanthropy through its attacks.",
+    "goals": "To dominate territories and lead raids, often forming bands with other aggressive creatures.",
+    "relations": [
+        "bandits",
+        "other lycanthropes"
+    ],
+    "environment": "Often found in rural areas, forests, or near human settlements.",
+    "strengths": "High damage resistance to non-magical weapons and the ability to shapeshift provides both offensive and defensive advantages.",
+    "weaknesses": "Low armor class in humanoid form makes it vulnerable to ranged attacks; average Dexterity reduces evasiveness.",
+    "attacks": "Melee attacks utilizing tusks and powerful mauls, capable of knocking prone and inflicting lycanthropy.",
+    "most_powerful_ability": "Charge ability that allows extra damage and the potential to knock targets prone.",
+    "equipment": null,
+    "senses": "Passive Perception of 12 allows for average awareness of surrounding stimuli.",
+    "skills": "Noted for its good melee combat skills and ability to frighten opponents with Challenging Snort.",
+    "additional_information": [
+        "Can shift seamlessly between humanoid, hybrid, and boar forms.",
+        "Possesses a Relentless ability that prevents it from being reduced to 0 hit points once per day.",
+        "Affected by wolfsbane, which poisons it and can harm it like a silvered weapon.",
+        "Excels in melee combat with multiattack options.",
+        "Cursed lycanthropy can be passed on to humanoids through successful tusk attacks."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "wereboar lycanthrope with tusks",
+        "ferocious humanoid that can become a boar",
+        "shapechanging animal that charges into battle",
+        "territorial monster that leads bandits",
+        "thick hide creature immune to non-silvered damage"
+    ]
+}

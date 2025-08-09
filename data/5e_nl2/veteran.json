@@ -1,0 +1,52 @@
+{
+    "name": "Veteran",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 17,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "warrior",
+        "soldier",
+        "guard",
+        "experienced"
+    ],
+    "adjectives": [
+        "seasoned",
+        "tactical",
+        "trained",
+        "combat-ready"
+    ],
+    "description": "The Veteran is a formidable medium humanoid, embodying the archetype of a seasoned warrior. With a breastplate providing strong defense, this creature showcases significant combat experience.",
+    "memorable": "Veterans are respected warriors, capable of leading and executing tactics in battle.",
+    "goals": "To serve in battle for pay or to protect what they value, often leading smaller groups.",
+    "relations": "Typically allied with soldiers, guards, or mercenaries and often leading tactical groups.",
+    "environment": "Commonly found in military settings, battlefields, or as mercenaries in various locales.",
+    "strengths": "High proficiency in melee combat, resilient with good defensive capabilities, and possesses tactical knowledge.",
+    "weaknesses": "Average mental capabilities may limit strategic options outside direct combat.",
+    "attacks": "Multiattack with longsword and shortsword options, or ranged attack with a heavy crossbow.",
+    "most_powerful_ability": "Multiattack, allowing the Veteran to execute multiple melee attacks, significantly increasing damage potential.",
+    "equipment": "Equipped with splint armor and various weapons including a longsword and shortsword.",
+    "senses": "Possesses passive perception of 12, allowing it to be aware of hidden threats.",
+    "skills": "Skilled in athletics and intimidation, capable of navigating survival situations and noticing details.",
+    "additional_information": [
+        "Can execute Tactical Movement to reposition without provoking opportunity attacks.",
+        "Has a reaction called Off-Hand Counter to retaliate against missed melee attacks.",
+        "Possesses a shove ability to knock opponents prone, gaining tactical advantage.",
+        "Resilient saving throws, particularly strong against Strength and Constitution effects.",
+        "Adapts to various combat scenarios with versatility in weaponry."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "experienced melee warrior in armor",
+        "soldier with tactical combat abilities",
+        "medium humanoid with combat skills",
+        "resilient fighter leading troops",
+        "veteran with multiple weapon attacks"
+    ]
+}

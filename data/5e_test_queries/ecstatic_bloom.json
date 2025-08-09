@@ -1,0 +1,25 @@
+{
+    "name": "Ecstatic Bloom",
+    "queries": [
+        {
+            "query": "huge celestial guardian with healing abilities and a vulnerability to fire",
+            "variant": "huge celestial protector that heals and is weak to fire damage"
+        },
+        {
+            "query": "celestial being that turns undead and has strong mental abilities",
+            "variant": "celestial creature that can turn undead and excels in intelligence and wisdom"
+        },
+        {
+            "query": "radiant damage dealing celestial with supportive auras",
+            "variant": "celestial that deals radiant damage and offers support through auras"
+        },
+        {
+            "query": "creature with truesight and telepathy that heals allies",
+            "variant": "monster that has truesight and can communicate telepathically while healing allies"
+        },
+        {
+            "query": "protective celestial that enhances nearby trees and combats evil",
+            "variant": "celestial guardian that boosts trees and fights against evil creatures"
+        }
+    ]
+}

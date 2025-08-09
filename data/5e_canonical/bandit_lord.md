@@ -1,6 +1,8 @@
 <MonsterName/>Bandit Lord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>91</HP>
 <summary>The Bandit Lord is a formidable and cunning leader among non-lawful humanoids, embodying the essence of a skilled combatant and strategic thinker in battle. With an impressive armor class of 16 and 91 hit points, this medium humanoid is capable of withstanding significant damage while dealing out fearsome attacks. The Bandit Lord is particularly effective in a group, using its ability to gain advantage on attacks when allies are nearby, making it dangerous both as a front-line fighter and a tactical commander. Although it possesses good strength and dexterity, its moderate wisdom and charisma suggest that it might not excel in skills that require keen insight or persuasion. Notable for its brute strength and tactical acumen, it is capable of leading other bandits into battle effectively, though it may struggle against well-coordinated and heavily armored opponents.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ Overall, the Bandit Lord is a dynamic and aggressive character that excels in bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit Lord
 
 *Medium* *Humanoid* *Any Non-Lawful Alignment*
@@ -83,5 +86,6 @@ Source: 5e_artisinal_monsters
 <a class="ddb-lightbox-outer compendium-image-center" href="https://media.dndbeyond.com/compendium-images/tob1/Qc1PO9Ot6SRQVGPG/27-002.black-knight-commander.png" data-lightbox="1" data-title=""><img src="https://media.dndbeyond.com/compendium-images/tob1/Qc1PO9Ot6SRQVGPG/27-002.black-knight-commander.png" class="ddb-lightbox-inner" style="width: 600px;" alt="A fully armored knight with a red cape lunges forward, reaching out with one gauntleted hand while readying a deadly lance in the other." /></a>
 </figure>
 <div class=":** When a creature the bandit lord can see targets it with an attack, the bandit lord can sidestep behind an ally within 5 feet of it, moving to an unoccupied space within 5 feet of the ally. The chosen ally becomes the target of the attack instead.
+</statblock>
 
 

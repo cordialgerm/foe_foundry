@@ -1,0 +1,25 @@
+{
+    "name": "Unska",
+    "queries": [
+        {
+            "query": "demon fiend with magical resistances that can poison",
+            "variant": "magical resistant demon fiend that poisons foes"
+        },
+        {
+            "query": "medium fiend known for its ink attacks and poison damage",
+            "variant": "medium fiend famous for ink blasts and poisonous attacks"
+        },
+        {
+            "query": "creature with high armor class that lives in dark areas",
+            "variant": "creature with a high AC that resides in darkness"
+        },
+        {
+            "query": "enemy that can charm victims and reduces their hit points",
+            "variant": "foe that charms targets and lowers their maximum hit points"
+        },
+        {
+            "query": "medium monster that attacks with claws and tongue",
+            "variant": "medium-sized creature that uses claws and its tongue in combat"
+        }
+    ]
+}

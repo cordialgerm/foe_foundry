@@ -1,0 +1,55 @@
+{
+    "name": "Hundun",
+    "creature_type": "Celestial",
+    "alignment": "Chaotic Good",
+    "size": "Large",
+    "hp": 153,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "chaotic",
+        "support",
+        "magical"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Hundun is a large celestial creature embodying chaotic goodness, equipped with natural armor and possessing notable physical strength and charisma.",
+    "memorable": "Its Inscrutable ability prevents others from reading its emotions or thoughts and provides strong resistance to magical effects.",
+    "goals": "As a chaotic agent of goodness, it aims to challenge evil and protect those in need, using both physical prowess and spellcasting abilities.",
+    "relations": "The Hundun may interact with other celestials or chaotic beings, serving as an ally or opponent in various conflicts.",
+    "environment": "Typically found in places of celestial significance, possibly in the presence of other good-aligned creatures or in areas of chaos.",
+    "strengths": "Immunity to acid and psychic damage, advantages on saving throws against spells, and high mobility allow it to adapt in combat.",
+    "weaknesses": null,
+    "attacks": "Can deliver four Slam attacks with radiant damage enhancement, and use Motivating Babble to disrupt foes.",
+    "most_powerful_ability": "Radiant Fists ability enhances melee capabilities significantly with additional radiant damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect threats without relying on sight.",
+    "skills": "Proficient in Athletics, Insight, and Perception, showcasing exceptional physical and sensory abilities.",
+    "additional_information": [
+        "High Constitution and Wisdom saving throws enhance its resistances against magical effects.",
+        "Can cast spells without material components, providing versatility in combat situations.",
+        "Very low intelligence reflects instinctive behavior rather than logical thinking.",
+        "Resistance to multiple damage types increases its durability in battle.",
+        "Unique blend of physical attacks and magical abilities make it an unpredictable threat."
+    ],
+    "damage_types": [
+        "radiant",
+        "psychic"
+    ],
+    "spellcasting": "Can cast various spells at will or a limited number of times per day to manipulate the battlefield.",
+    "test_queries": [
+        "large celestial creature with radiant fists",
+        "chaotic good monster immune to divination",
+        "flying monster with powerful melee attacks",
+        "monster with blindsight and spellcasting abilities",
+        "undetectable celestial being using chaotic magic"
+    ]
+}

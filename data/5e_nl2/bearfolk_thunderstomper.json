@@ -1,0 +1,53 @@
+{
+    "name": "Bearfolk Thunderstomper",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "Bearfolk",
+        "Thunder",
+        "Humanoid",
+        "Spellcaster"
+    ],
+    "adjectives": [
+        "chaotic",
+        "powerful",
+        "durable"
+    ],
+    "description": "The Bearfolk Thunderstomper is a medium-sized humanoid renowned for its impressive physicality and magical abilities, characterized by a strong build and a chaotic disposition.",
+    "memorable": "Its ability to create deceptive sounds mimicking giant footsteps can confuse foes, and it has a vibrant presence on the battlefield with a unique spellcasting flair.",
+    "goals": "To use its strength and magic to dominate battles and confuse opponents.",
+    "relations": "Related to other bearfolk and potentially allies with spellcasters or creatures utilizing thunder-based powers.",
+    "environment": "Typically found in mountainous or forested areas where it can utilize its physical prowess and magical abilities effectively.",
+    "strengths": "Exceptional physical strength enhances melee attacks and durability in combat; strong charisma aids in spellcasting.",
+    "weaknesses": "Below-average intelligence may limit tactical strategies compared to more cunning foes.",
+    "attacks": "Can unleash a powerful Thunder Stomp, deal damage with a Bite, and influence the battlefield with a War Flute attack.",
+    "most_powerful_ability": "Thunder Stomp, which creates a destructive area effect damaging and potentially knocking opponents prone.",
+    "equipment": "Chain shirt provides decent defense.",
+    "senses": "Has tremorsense that allows it to detect creatures within 30 feet, enhancing its awareness of surroundings.",
+    "skills": "Proficient in perception, benefiting from both a decent passive score and keen senses.",
+    "additional_information": [
+        "Can manipulate sounds to mislead enemies with Deceptive Steps.",
+        "Possesses a powerful Frenzy ability that enhances its combat effectiveness.",
+        "Can inspire allies with Warsong, providing them advantages.",
+        "Utilizes its powerful charisma for effective spellcasting.",
+        "Has access to an array of spells for battlefield control and manipulation."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": "Capable of casting various spells, including battlefield control and utility spells like Compulsion and Hypnotic Pattern.",
+    "test_queries": [
+        "humanoid thunder monster",
+        "chaotic bearfolk spellcaster",
+        "powerful melee combatant",
+        "creature with deceptive sound abilities",
+        "thunder-based humanoid adventurer"
+    ]
+}

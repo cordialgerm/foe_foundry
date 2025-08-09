@@ -1,0 +1,52 @@
+{
+    "name": "Awakened Shrub",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 10,
+    "ac": 9,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 feet walk speed",
+    "role": "null",
+    "tags": [
+        "plant",
+        "guard",
+        "sentinel"
+    ],
+    "adjectives": [
+        "animated",
+        "deceptive",
+        "mobile"
+    ],
+    "description": "The Awakened Shrub resembles an ordinary shrub with twitching leaves and branches, animated by magic. It can blend seamlessly into its environment, making it a clever ambusher.",
+    "memorable": "Despite its humble appearance, the Awakened Shrub can serve as a clever distraction or trap for unwary adventurers, showcasing its unique False Appearance ability.",
+    "goals": "Often created as sentinels or guardians to defend gardens and forests, it follows simple commands.",
+    "relations": "Frequently created by druids or wizards and may be found alongside other plants and nature-aligned creatures.",
+    "environment": "Commonly found in gardens, forests, or areas cared for by druids.",
+    "strengths": "Can blend into its environment to surprise intruders and has resistance to certain conditions.",
+    "weaknesses": "Vulnerable to fire damage, which is especially damaging to it.",
+    "attacks": "Uses Rake for a melee attack dealing minimal slashing damage; can also annoy foes using the Thorn ability.",
+    "most_powerful_ability": "False Appearance allows it to remain motionless, making it indistinguishable from a normal shrub.",
+    "equipment": null,
+    "senses": "Has a passive Perception score of 10, reflecting average awareness of surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Capable of understanding one language known by its creator but cannot communicate verbally.",
+        "Resistant to exhaustion and conditions like paralysis and petrification, enhancing its durability.",
+        "Low challenge rating of 0 indicates it poses minimal threat.",
+        "Often serves as a minor threat for low-level encounters.",
+        "Mimics appearance of a normal shrub for ambush tactics."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "animated plant guardian",
+        "deceptive shrub sentinels",
+        "magical shrub creature",
+        "creature that mimics foliage",
+        "small plant protector"
+    ]
+}

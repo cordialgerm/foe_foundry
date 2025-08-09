@@ -1,0 +1,54 @@
+{
+    "name": "Lindwurm",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "flying",
+        "cold-resistant",
+        "ice"
+    ],
+    "adjectives": [
+        "formidable",
+        "icy",
+        "dangerous",
+        "sickening"
+    ],
+    "description": "The Lindwurm is a large dragon with incredible dexterity, thriving in icy terrains and possessing a tough physique to withstand attacks.",
+    "memorable": "Its biting attack can inflict a disease, potentially leading to exhaustion, making it uniquely dangerous in combat.",
+    "goals": "The Lindwurm typically seeks to dominate its icy surroundings and will attack adventurers that intrude on its territory.",
+    "relations": "It may be encountered alongside other dragons or cold-themed creatures.",
+    "environment": "Usually found in snowy or icy regions.",
+    "strengths": "Immunity to cold damage, agile movement across ice, and disease-inflicting bite.",
+    "weaknesses": "Vulnerability to fire damage and low intelligence affecting combat strategy.",
+    "attacks": "The Lindwurm can make multiple attacks including a disease-inflicting bite, slashing claw attacks, and constricting grapples.",
+    "most_powerful_ability": "Its bite can cause disease, leading to possible exhaustion and complications if not treated.",
+    "equipment": null,
+    "senses": "It has tremorsense up to 120 feet, allowing it to detect movement even through solid surfaces.",
+    "skills": "It is proficient in Acrobatics and Stealth, enabling it to maneuver effectively in its icy habitat.",
+    "additional_information": [
+        "Can ignore difficult terrain created by ice.",
+        "Gains advantage on saving throws against being knocked prone while on ice or snow.",
+        "Uses its environment to gain tactical advantages in combat.",
+        "Possesses high Dexterity, making it evasive.",
+        "Can grapple enemies with its Constrict attack."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ice dragon with disease-inflicting bite",
+        "large dragon that dominates snowy terrain",
+        "formidable creature with icy attacks and vulnerabilities",
+        "dangerous dragon that grapples foes",
+        "monster immune to cold and vulnerable to fire"
+    ]
+}

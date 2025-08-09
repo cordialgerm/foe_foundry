@@ -1,0 +1,25 @@
+{
+    "name": "Magma Mephit",
+    "queries": [
+        {
+            "query": "small fire elemental that explodes when it dies",
+            "variant": "small elemental of fire that explodes upon death"
+        },
+        {
+            "query": "mischievous creature found near lava flows that breathes fire",
+            "variant": "trickster being found by lava that can breathe fire"
+        },
+        {
+            "query": "molten rock creature that can summon allies and is found in volcanic regions",
+            "variant": "lava creature that can call for help and lives in volcano areas"
+        },
+        {
+            "query": "elemental from Ignan language that can cause eruptions",
+            "variant": "creature from Ignan that has explosive abilities"
+        },
+        {
+            "query": "fiery creature with abilities to camouflage and create lava explosions",
+            "variant": "fire being with skills to hide and trigger lava blasts"
+        }
+    ]
+}

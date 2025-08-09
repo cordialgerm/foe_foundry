@@ -1,0 +1,52 @@
+{
+    "name": "Necrohydra",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 13,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "fear-inducing",
+        "multi-headed"
+    ],
+    "adjectives": [
+        "massive",
+        "terrifying",
+        "resilient"
+    ],
+    "description": "The Necrohydra is a massive undead creature with five fleshy heads. Its fearsome presence is amplified by an overall rotting and intimidating appearance, designed to dominate the battlefield.",
+    "memorable": "Its ability to instill fear through its Dreadful Dirge and its formidable multiattack with multiple heads makes it a uniquely terrifying opponent.",
+    "goals": "To dominate the battlefield and instill fear in its adversaries.",
+    "relations": "May be found among other undead or serving dark powers.",
+    "environment": "Typically inhabits dark, forsaken places where death and decay are prevalent.",
+    "strengths": "Immunities to poison and exhaustion make it a durable foe; multiple heads provide advantages in combat.",
+    "weaknesses": "Low Dexterity and Intelligence lead to poor maneuverability and tactical choices.",
+    "attacks": "It can make multiple Bite attacks per round, dealing both piercing and necrotic damage with each successful hit.",
+    "most_powerful_ability": "Dreadful Dirge, which frightens creatures in its vicinity and can control the battlefield through fear.",
+    "senses": "Possesses a high passive Perception of 18, indicating a keen ability to notice details.",
+    "skills": "Skilled in Perception with a +8 modifier, allowing it to notice environmental details effectively.",
+    "additional_information": [
+        "Undead nature grants immunity to basic biological needs.",
+        "Reactive Heads allow for additional reactions against enemies.",
+        "Multiple Heads provide advantages on saving throws against various conditions.",
+        "Can spew necrotic bile in a devastating cone attack.",
+        "The fear-inducing abilities cause significant psychological impact on opponents."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive undead creature with multiple heads",
+        "terrifying monster that instills fear",
+        "creature that uses necrotic bile attack",
+        "huge undead with biting attacks",
+        "battlefield dominator with dreadful dirge ability"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Slow Storm</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>220</HP>
 <summary>The Slow Storm is a medium-sized elemental creature characterized by its chaotic nature and formidable power, often serving as a chaotic force of nature in battle. It possesses a high Armor Class of 19, significantly increasing its durability in combat, and boasts a substantial pool of 220 hit points. With exceptional Strength and Constitution scores, it can deal and withstand considerable damage, while its impressive Dexterity enhances its ability to dodge attacks. The Slow Storm's unique abilities, such as an area-effect wind storm and powerful lightning attacks, make it a challenging adversary for adventurers. However, it is vulnerable to magical attacks that bypass its resistance to nonmagical damage, and its reliance on direct confrontation can expose it to clever ranged tactics.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Slow Storm has a special ability called Static Shock, which recharg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Slow Storm
 
 *Medium* *Elemental* *Chaotic Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage plus 9 (2d8) lightning damage.
 - **Lightning Bolt:** Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 22 (4d8 + 4) lightning damage.
 - **Static Shock (Recharge 5–6):** The slow storm releases built-up electricity in a 60-foot cone. Each creature in the area must make a DC 18 Constitution saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one. A creature that fails this saving throw by 5 or more is also stunned for 1 minute. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Witchalder",
+    "creature_type": "Plant",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking speed",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "ambush",
+        "control",
+        "poison"
+    ],
+    "adjectives": [
+        "dangerous",
+        "menacing",
+        "resilient"
+    ],
+    "description": "The Witchalder is a formidable plant creature resembling a diseased alder tree, capable of intricate movements despite its natural plant form.",
+    "memorable": "Its ability to regenerate in sunlight and use poisonous pollen makes it a unique threat.",
+    "goals": "The Witchalder typically seeks to ambush intruders and control its environment to deter or manipulate threats.",
+    "relations": "May be found in the company of other plants and nature-related creatures, potentially serving as a guardian of its chosen territory.",
+    "environment": "Often found in forested areas or places where plant life thrives.",
+    "strengths": "Immunities to charm and poison, resistance to bludgeoning, and significant physical strength.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Uses powerful slam attacks and can grapple opponents, dealing significant bludgeoning damage.",
+    "most_powerful_ability": "Pollen Cloud can incapacitate foes within its vicinity while dealing poison damage.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 15, allowing it to notice threats effectively.",
+    "skills": "Skilled in perception, enhancing its ability to detect nearby creatures.",
+    "additional_information": [
+        "Can speak with plants using its Speak with Plants ability.",
+        "Appears indistinguishable from a tree while motionless due to its False Appearance ability.",
+        "Regains hit points in sunlight, providing remarkable sustainability.",
+        "Has advantage on saving throws against effects that would move it.",
+        "Can shape wooden objects, manipulating the battlefield."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing plant creature that uses poison",
+        "tree-like monster that ambushes intruders",
+        "plant that can regenerate in sunlight and grapple",
+        "disease-ridden plant that controls its environment",
+        "Witchalder tactics and powers"
+    ]
+}

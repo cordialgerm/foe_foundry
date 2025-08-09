@@ -1,0 +1,52 @@
+{
+    "name": "Death Vulture",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 76,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 60 ft., walk 10 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "necrotic",
+        "horror"
+    ],
+    "adjectives": [
+        "decaying",
+        "powerful",
+        "menacing"
+    ],
+    "description": "The Death Vulture is a large monstrosity exuding an aura of horror and decay, with a disgusting body odor and a sharp, deadly beak.",
+    "memorable": "Its ability to inflict necrotic damage that ages its victims makes it a terrifying foe.",
+    "goals": "Typically seeks to hunt and debilitate prey for food.",
+    "relations": "Often found among necromantic creatures and in dark, desolate habitats.",
+    "environment": "Commonly inhabits graveyards, battlefields, and other areas of death.",
+    "strengths": "Exceptional physical power with high Strength and Constitution; adept at cooperative attacks.",
+    "weaknesses": "Low Intelligence and Charisma limit social interaction and strategic planning.",
+    "attacks": "Multiattack with lethal strikes from its beak and talons, dealing piercing and slashing damage.",
+    "most_powerful_ability": "Decaying Breath releases necrotic energy that causes damage and potential aging.",
+    "senses": "Has keen sight and smell, granting it advantage on Perception checks related to these senses.",
+    "skills": "Possesses an average Wisdom, providing reliable perception abilities.",
+    "additional_information": [
+        "Inflicts poison with its awful stench ability.",
+        "Gains advantage on attack rolls with allies nearby due to Pack Tactics.",
+        "Necrotic and poison damage immunities make it resilient to certain threats.",
+        "Average Dexterity does not enhance its agility in combat.",
+        "Low Charisma makes it difficult for the Death Vulture to engage socially."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing flying monster that causes decay",
+        "creature that ages victims with breath attack",
+        "horror monster with terrible stench",
+        "large vulture with necrotic attacks",
+        "decaying monster that thrives on death"
+    ]
+}

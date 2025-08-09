@@ -1,6 +1,8 @@
 <MonsterName/>Nkosi Pridelord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (studded leather in Humanoid form)</AC>
+<HP/>82</HP>
 <summary>The Nkosi Pridelord is a formidable Medium-sized humanoid shapechanger, embodying the power and grace of a lion. With a challenge rating of 4, it presents a significant threat on the battlefield, boasting a solid Armor Class of 16 and a total of 82 hit points. The Pridelord excels in both melee and ranged attacks, with enhanced damage output and the ability to control the flow of combat through its roar and pounce abilities. While it possesses exceptional Strength and Dexterity scores, its Constitution, Intelligence, Wisdom, and Charisma are more average, making its durability and magical influence somewhat limited in comparison. However, its unique abilities and shapechanging capability allow it to adapt in various situations, making the Nkosi Pridelord a versatile and dangerous opponent.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ Lastly, as a bonus action, the Nkosi Pridelord can Change Shape, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nkosi Pridelord
 
 *Medium* *Humanoid* *Shapechanger)*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The pridelord transforms into a Large lion or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

@@ -1,6 +1,9 @@
 <MonsterName/>Duergar</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>dwarf</Subtype>
+<CR/>1</CR>
+<AC/>16</AC>
+<HP/>26</HP>
 <summary>Duergar, also known as gray dwarves, are grim, stony-skinned dwarves who live deep underground. Their complexion is ashen, and their eyes glow with a faint red light, adapted to the darkness of the Underdark. Duergar are highly industrious and militaristic, often enslaving other creatures to work in their vast mines and forges. They possess the ability to turn invisible or grow to giant size, making them dangerous opponents in battle. Duergar society is harsh and oppressive, ruled by strict hierarchies, and they are known for their bitter enmity toward surface-dwelling dwarves. They are dour, cruel, and focused solely on expanding their subterranean empire.</summary>
 
 <summary>The Duergar, a medium humanoid, is a formidable opponent that often serves as a cunning warrior or a stealthy ambusher within the game. With an armor class of 16 due to its scale mail and shield, it can withstand a fair amount of damage. The Duergar has 36 hit points, indicating a moderate level of resilience in battle. Its movement speed is 25 feet, which is average for humanoids. With a challenge rating of 1, the Duergar is an approachable threat for lower-level adventurers. Notable strengths include its darkvision, which allows it to see in dim light as if it were bright light up to 120 feet, and its abilities to resist being charmed or paralyzed. However, Duergar have a weakness to sunlight, suffering disadvantages on attack rolls and lowered perception while exposed. </summary>
@@ -25,6 +28,7 @@ Overall, the Duergar is a well-rounded humanoid capable of adapting its combat s
 
 Source: 5e_srd
 
+<statblock>
 ## Duergar
 
 *Medium humanoid (dwarf), lawful evil*
@@ -59,7 +63,8 @@ Source: 5e_srd
 
 ***Javelin***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage, or 9 (2d6+2) piercing damage while enlarged.
 
-***Invisibility (Recharges after a Short or Long Rest)***. The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.
+***Invisibility (Recharges after a Short or Long Rest)***. The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.</statblock>
+
 
 
 
@@ -67,6 +72,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Duergar
 
 *Medium humanoid*
@@ -106,5 +112,6 @@ Source: 5e_artisinal_monsters
 
 - **Shield Wall.** The duergar adds 2 to its AC against one weapon attack that would hit it. To do so, the duergar must be wielding a shield and within 5 feet of another duergar that is also wielding a shield.
 
+</statblock>
 
 

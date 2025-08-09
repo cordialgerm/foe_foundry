@@ -1,0 +1,52 @@
+{
+    "name": "Millitaur",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 85,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., burrow 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "poison",
+        "support",
+        "healer"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "dual-natured"
+    ],
+    "description": "The Millitaur combines the traits of a bull and humanoid, wielding a handaxe and exhibiting strong physical attributes.",
+    "memorable": "Its ability to throw poisonous concoctions and heal allies makes it a unique combatant.",
+    "goals": "To support its allies and engage in battle effectively.",
+    "relations": "Often found in groups with other combat-focused creatures.",
+    "environment": "Typically located in rugged terrains or battlefields.",
+    "strengths": "Resistant to poison and slashing damage, immune to being prone.",
+    "weaknesses": "Low intelligence limits its effectiveness in social situations.",
+    "attacks": "Can make two attacks with a handaxe, dealing slashing and poison damage.",
+    "most_powerful_ability": "Poisonous Flask produces significant area damage and the potential to poison multiple creatures.",
+    "equipment": "Handaxe",
+    "senses": "Possesses darkvision and tremorsense, allowing it to navigate in darkness.",
+    "skills": "Skilled in Acrobatics, enabling complex movements in battle.",
+    "additional_information": [
+        "Has a challenge rating of 3, posing an average threat to low-level parties.",
+        "Strong Strength and Constitution scores support its melee combat effectiveness.",
+        "Can administer a Healing Tonic to allies, healing them and curing diseases.",
+        "Excellent burrowing speed helps it navigate terrain advantageously.",
+        "The combination of melee attacks and area poison damage grants versatility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large monstrosity that combines bull and humanoid traits",
+        "creature with poison flask and healing abilities",
+        "bruiser that can heal allies and deal poison damage",
+        "combat monster skilled in acrobatics and melee attacks",
+        "dual-natured creature with excellent burrowing speed"
+    ]
+}

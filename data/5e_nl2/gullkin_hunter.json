@@ -1,0 +1,51 @@
+{
+    "name": "Gullkin Hunter",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., fly 30 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "hunter",
+        "aquatic",
+        "versatile",
+        "mobile"
+    ],
+    "adjectives": [
+        "adaptable",
+        "agile",
+        "formidable"
+    ],
+    "description": "The Gullkin Hunter is a versatile humanoid capable of flying and swimming, with a notable agility from its high Dexterity.",
+    "memorable": "Its ability to manipulate aquatic environments and its two special abilities make it an interesting opponent.",
+    "goals": "Typically hunts down enemies in combat while using its aquatic skills for survival.",
+    "relations": "May be encountered alongside other aquatic creatures or in regions with water bodies.",
+    "environment": "Found in aquatic or coastal environments, capable of navigating both land and water.",
+    "strengths": "High agility and versatility in combat; effective in both melee and ranged attacks.",
+    "weaknesses": "Average scores in Strength and Charisma may hinder physical confrontations and social interactions.",
+    "attacks": "Can perform a Multiattack with Beak and Shortsword or two Shortbow attacks, dealing piercing damage.",
+    "most_powerful_ability": "Tempest Breath pushes enemies away, disrupting their positioning and control.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 14, allowing it to notice hidden creatures or objects effectively.",
+    "skills": "Has a base skill in perception with a +2 modifier.",
+    "additional_information": [
+        "Can hold its breath for up to 5 minutes.",
+        "Effective in both melee and ranged combat.",
+        "Can mark a target to deal extra damage.",
+        "Typically works independently or in small packs.",
+        "Can manipulate enemy positioning with its breath attack."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "versatile humanoid with amazing swimming ability",
+        "hunter that can fly and swim adeptly",
+        "mobile creature skilled in ranged and melee combat",
+        "aquatic hunter with breath attack ability",
+        "agile foe that marks targets for extra damage"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Ogre Flesh Heap",
+    "creature_type": "Undead",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 59,
+    "ac": 11,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "ogre",
+        "bruiser"
+    ],
+    "adjectives": [
+        "large",
+        "hulk",
+        "caustic",
+        "stubborn"
+    ],
+    "description": "A large reanimated hulk formed from the remains of an ogre, the Ogre Flesh Heap exhibits a powerful physique with a grotesque and imposing appearance.",
+    "memorable": "Its Undead Fortitude allows it to cheat death, making it a resilient foe able to withstand significant damage.",
+    "goals": "Typically aims to crush foes in melee combat, leveraging its resilience and brute strength.",
+    "relations": "Could be encountered alongside other undead creatures or as a minion of a necromancer.",
+    "environment": "Commonly found in battlefields, graveyards, or areas of necromantic activity.",
+    "strengths": "Exceptionally high strength and constitution, allowing it to deal considerable damage and sustain hits.",
+    "weaknesses": "Low Dexterity and Intelligence, leading to poor initiative and limited cunning in combat.",
+    "attacks": "Uses its Greatclub to deliver crushing blows, employs a Sweeping Strike to affect multiple foes, and can grapple enemies with Grab.",
+    "most_powerful_ability": "Undead Fortitude allows it to stay standing when it should fall, unless struck by radiant damage or a critical hit.",
+    "equipment": null,
+    "senses": "Possesses darkvision, enabling it to see in low-light conditions.",
+    "skills": "Has very low passive perception, making it somewhat unaware of its surroundings.",
+    "additional_information": [
+        "Immunities to poison damage and fatigue effects.",
+        "Can regain hit points through its Bite attack when grappling enemies.",
+        "Ability to unleash acid damage with Corpulent Expulsion.",
+        "Grappling a creature prevents it from escaping unless successful.",
+        "Can push opponents away with its Sweeping Strike."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large hulk-like undead monster",
+        "imposing ogre made of flesh",
+        "brutal undead creature with undead fortitude",
+        "caustic monster that regains health",
+        "undead ogre crushing enemies in combat"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Dire Pangolin",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 82,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. walking, 20 ft. climbing",
+    "role": "Defender",
+    "tags": [
+        "beast",
+        "defensive",
+        "natural armor"
+    ],
+    "adjectives": [
+        "large",
+        "tough",
+        "armored"
+    ],
+    "description": "A large, armored creature with sharp, edged scales and a formidable presence.",
+    "memorable": "The pangolin's unique ability to curl into a protective ball makes it a challenging opponent.",
+    "goals": "To defend its territory from intruders and predators.",
+    "relations": "Could be encountered alongside other beasts or in rugged environments.",
+    "environment": "Often found in environments where it can utilize its climbing ability and natural defenses.",
+    "strengths": "Exceptional physical power enhances its damage output; resistant to certain damage types.",
+    "weaknesses": "Low Dexterity and Intelligence creates vulnerabilities that can be exploited easily.",
+    "attacks": "Uses multiattack with claws and a tail slap, capable of dealing significant slashing and piercing damage.",
+    "most_powerful_ability": "Edged Scales inflict slashing damage on creatures that make melee attacks against it.",
+    "equipment": null,
+    "senses": "The Dire Pangolin has keen senses, allowing it to perceive threats effectively.",
+    "skills": "Has proficiency in perception, indicating some ability to detect nearby dangers.",
+    "additional_information": [
+        "Resistant to bludgeoning, piercing, and slashing damage when curled.",
+        "Can knock targets prone with its tail slap attack.",
+        "Passive perception score of 13 aids in detecting threats.",
+        "Possesses a natural armor that increases its durability in combat.",
+        "Uncurls as a bonus action, allowing for strategic movement."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "armored giant creature with claws",
+        "large beast that curls into a ball",
+        "defensive creature with sharp scales",
+        "pangolin with slashing damage resistance",
+        "beast that knocks targets prone"
+    ]
+}

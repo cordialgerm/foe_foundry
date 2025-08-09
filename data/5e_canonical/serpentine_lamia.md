@@ -1,6 +1,8 @@
 <MonsterName/>Serpentine Lamia</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>36</HP>
 <summary>The Serpentine Lamia is a Medium-sized monstrosity characterized by its neutral evil alignment. It is known for its seductive abilities and cunning nature, making it a formidable foe in combat and social encounters. With a moderate Armor Class of 13 and 36 hit points, the lamia can hold its ground in battles but remains vulnerable to concentrated attacks. The creature excels in charm-based manipulations thanks to its high Charisma score of 15, which positively influences its deception and intimidation skills, both rated as good with a +6 modifier. However, its Intelligence is low at 8, reflecting its limited cognitive abilities. Overall, the Serpentine Lamia is a dangerous adversary, particularly in scenarios involving ambushes or when it can leverage its seductive powers.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ The Serpentine Lamia is thus well-equipped for both direct confrontation and mor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Serpentine Lamia
 
 *Medium* *Monstrosity* *neutral evil*
@@ -65,5 +68,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Shortbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 

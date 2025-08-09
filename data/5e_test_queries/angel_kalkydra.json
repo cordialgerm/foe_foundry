@@ -1,0 +1,25 @@
+{
+    "name": "Angel, Kalkydra",
+    "queries": [
+        {
+            "query": "huge celestial angel with radiant damage abilities",
+            "variant": "huge angelic celestial creature that can deal radiant damage"
+        },
+        {
+            "query": "powerful celestial being with magic resistance and grappling attacks",
+            "variant": "strong celestial entity that has magical resistance and grappling capabilities"
+        },
+        {
+            "query": "angel that can fly and has an ability to create sunlight",
+            "variant": "angelic creature capable of flying and generating sunlight"
+        },
+        {
+            "query": "celestial creature immune to fire and radiant attacks",
+            "variant": "celestial being that is immune to fire and radiant damage"
+        },
+        {
+            "query": "tall angel with the ability to support allies and deal magical damage",
+            "variant": "large angel that can aid allies and inflict magical damage"
+        }
+    ]
+}

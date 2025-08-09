@@ -1,0 +1,55 @@
+{
+    "name": "Horned Devil",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 168,
+    "ac": 18,
+    "srd": true,
+    "cr": "11",
+    "movement": "20 ft. walking speed, flies at 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "devil",
+        "large"
+    ],
+    "adjectives": [
+        "fearsome",
+        "menacing",
+        "brutal",
+        "cunning"
+    ],
+    "description": "A fearsome fiendish warrior with bat-like wings, massive horns, and red, scaly skin.",
+    "memorable": "It wields a spiked tail and deadly melee attacks, complemented by its ability to see through magical darkness.",
+    "goals": "Serve higher devils as enforcers or generals while spreading terror.",
+    "relations": "Often encountered with other devils or fiends in the Nine Hells.",
+    "environment": "Primarily found in the Nine Hells or areas of conflict.",
+    "strengths": "High physical strength and toughness, magical resistance, and various damaging attacks.",
+    "weaknesses": "Vulnerable to strategic magical attacks and abilities that exploit its few weaknesses.",
+    "attacks": "Multiattack includes two melee Fork attacks and one Tail attack or three ranged Hurl Flame attacks.",
+    "most_powerful_ability": "Inferno, dealing devastating fire damage to nearby creatures.",
+    "equipment": null,
+    "senses": "Possesses Devil's Sight, allowing it to see through magical darkness.",
+    "skills": "Notable skill proficiencies in athletics and intimidation, enhancing its capabilities in interactions and combat.",
+    "additional_information": [
+        "Immune to fire and poison damage.",
+        "Can deliver venomous strikes with its Tail attack.",
+        "Uses terrifying magical abilities to control the battlefield.",
+        "Can grapple attackers who miss with melee attacks.",
+        "Known for its loyalty to the infernal hierarchy and desire for chaos."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Can use spells and magical abilities, including Hurl Flame to deal damage at range.",
+    "test_queries": [
+        "tall red skinned fiend with wings",
+        "brutal devil with a spiked tail",
+        "fiend that can see through darkness",
+        "menacing creature with multiattack abilities",
+        "large infernal warrior that spreads terror"
+    ]
+}

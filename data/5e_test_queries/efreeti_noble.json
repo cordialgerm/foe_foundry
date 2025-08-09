@@ -1,0 +1,25 @@
+{
+    "name": "Efreeti Noble",
+    "queries": [
+        {
+            "query": "powerful fire elemental with high mobility and spellcasting abilities",
+            "variant": "strong fire elemental that has mobility and spellcasting powers"
+        },
+        {
+            "query": "large creature immune to fire that can create a wall of flames",
+            "variant": "big fire-immune creature that can summon a fiery wall"
+        },
+        {
+            "query": "elemental monster with high strength and fire attacks",
+            "variant": "elemental creature that has great strength and can deal fire damage"
+        },
+        {
+            "query": "magical creature that can change form and cast fire spells",
+            "variant": "magical being that has the ability to alter its shape and cast fire-based spells"
+        },
+        {
+            "query": "efreeti noble's battlefield tactics and elemental abilities",
+            "variant": "tactics for efreeti noble on the battlefield and its elemental powers"
+        }
+    ]
+}

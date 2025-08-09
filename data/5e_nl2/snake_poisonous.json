@@ -1,0 +1,50 @@
+{
+    "name": "Poisonous Snake",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Tiny",
+    "hp": 9,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "poison",
+        "agile",
+        "trap"
+    ],
+    "adjectives": [
+        "tiny",
+        "poisonous",
+        "agile"
+    ],
+    "description": "The Poisonous Snake is a small, agile beast with a venomous bite. It is primarily designed to ambush unsuspecting adventurers with its agility and poison capabilities.",
+    "memorable": "Its ability to inflict poison damage, which can incapacitate or weaken characters, makes it a sneaky threat despite its small size.",
+    "goals": "Usually serves as a trap in low-level encounters or ambushing unsuspecting prey.",
+    "relations": "It might be encountered with other small creatures or in environments with similar low-level beasts.",
+    "environment": "Commonly found in areas where it can hide and ambush prey.",
+    "strengths": "Relies on agility and venom to pose a threat despite its size.",
+    "weaknesses": "Very low Strength and Constitution, making it fragile in combat.",
+    "attacks": "Uses a melee bite attack that deals piercing damage and can inflict additional poison damage on a failed saving throw.",
+    "most_powerful_ability": "The Reflexive Nip reaction can poison attackers trying to hit it in close combat.",
+    "equipment": null,
+    "senses": "Possesses keen senses that allow it to detect threats within 10 feet.",
+    "skills": "Has proficiency in Stealth, making it adept at hiding.",
+    "additional_information": [
+        "Can inflict additional 2 poison damage on a failed Constitution save.",
+        "Uses agility to evade attacks moderately well.",
+        "Serves as a trap in low-level encounters."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny agile poison snake",
+        "snake with poisonous bite attack",
+        "ambush predator that uses poison",
+        "small snake that is dangerous",
+        "creature with reflexive nip ability"
+    ]
+}

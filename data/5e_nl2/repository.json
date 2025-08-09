@@ -1,0 +1,54 @@
+{
+    "name": "Repository",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "explosive",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "magical",
+        "psychic"
+    ],
+    "description": "The Repository is a formidable Medium Construct with a pyramidal chest cavity that is immune to shape-altering spells and possesses impressive strength.",
+    "memorable": "It has a Self-Destruct ability that allows it to explode upon defeat, posing a danger to nearby adversaries.",
+    "goals": "Typically acts as a guardian or defender, challenging adventurers who encounter it.",
+    "relations": "Can be associated with other constructs or magical beings.",
+    "environment": "Often found in settings designed to house or protect valuable relics or knowledge.",
+    "strengths": "Immune to poison and psychic damage, resistant to nonmagical physical attacks, and has abilities that grant advantage against spells.",
+    "weaknesses": "Lacks defenses against certain forms of magic and might struggle against highly magical foes.",
+    "attacks": "Uses two melee Slash attacks dealing significant bludgeoning damage and can unleash psychic damage with its Language Lash ability.",
+    "most_powerful_ability": "The Self-Destruct ability, which damages nearby creatures upon its defeat.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immutable Form provides immunity to shape-altering effects.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Attacks are considered magical, bypassing most non-magical resistances.",
+        "Intelligence score allows for advanced spell interaction.",
+        "Can incapacitate foes with its Language Lash ability."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that explodes when defeated",
+        "tough magical creature with psychic attacks",
+        "dangerous construct immune to shape-changing",
+        "creature with bludgeoning explosive abilities",
+        "formidable guardian with magical attacks"
+    ]
+}

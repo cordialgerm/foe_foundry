@@ -1,0 +1,54 @@
+{
+    "name": "Wind Demon",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 28,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "demon",
+        "chaotic",
+        "flying",
+        "stealth"
+    ],
+    "adjectives": [
+        "elusive",
+        "sinister",
+        "chaotic",
+        "agile"
+    ],
+    "description": "The Wind Demon is a small, chaotic fiend distinguished by its exceptional agility and sinister appearance. It moves with a natural grace in the air, reflecting its malign nature.",
+    "memorable": "Its Arrow Bane ability complicates ranged encounters, reflecting attacks back at shooters, turning them vulnerable to their own strikes.",
+    "goals": "To serve as a menace in combat, sowing chaos among opponents.",
+    "relations": "Related to other fiendish creatures of chaos, possibly serving greater fiend lords or existing as a tormentor.",
+    "environment": "Often found in dark, chaotic locations that align with the nature of chaotic fiends.",
+    "strengths": "High dexterity enables it to evade attacks and perform stealth effectively; has magic resistance.",
+    "weaknesses": "Low hit points make it vulnerable to concentrated damage despite its evasive tactics.",
+    "attacks": "Multiattack using frost claws, dealing slashing and cold damage, along with its ability to reflect ranged attacks.",
+    "most_powerful_ability": "Arrow Bane allows it to complicate ranged attacks and turn them against the attacker.",
+    "equipment": null,
+    "senses": "Possesses darkvision out to 60 feet, enabling it to see in darkness as if it were dim light.",
+    "skills": "Proficient in stealth with a +8 bonus, making it very effective at remaining undetected.",
+    "additional_information": [
+        "Immune to cold and poison damage.",
+        "Resistant to fire and lightning damage.",
+        "Ability to move after taking damage without provoking opportunity attacks."
+    ],
+    "damage_types": [
+        "cold",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic flying fiend with stealth",
+        "small demon that reflects ranged attacks",
+        "agile creature immune to cold and poison",
+        "sinister fiend with evasion tactics",
+        "wind creature that creates chaos in battles"
+    ]
+}

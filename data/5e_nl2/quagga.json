@@ -1,0 +1,51 @@
+{
+    "name": "Quagga",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 84,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 50 feet, excels in speed and agility",
+    "role": "Skirmisher",
+    "tags": [
+        "fast",
+        "agile",
+        "cooperative",
+        "combat-oriented"
+    ],
+    "adjectives": [
+        "ferocious",
+        "dynamic",
+        "tactical"
+    ],
+    "description": "The Quagga is a medium-sized creature with an agile physique, capable of quick movements and swift strikes. It wields dual Twin Blades and utilizes a shield for defense.",
+    "memorable": "Its ability to move without provoking opportunity attacks enhances its hit-and-run style, making it a challenging foe to pin down.",
+    "goals": "The Quagga aims to dominate the battlefield through speed and opportunistic attacks, ideally working alongside allies.",
+    "relations": "Often found cooperating with other agile or ferocious creatures in combat scenarios.",
+    "environment": "Typically inhabits wilderness and suburban areas, where it can leverage its speed and offensive capabilities.",
+    "strengths": "Keen sight and smell enhance its perception, while Pack Tactics amplifies its attack efficiency when allied with others.",
+    "weaknesses": "Its below-average intelligence may limit its tactical flexibility in complex situations.",
+    "attacks": "Utilizes Twin Blades for slashing attacks, Hooves for bludgeoning damage, and Javelins for ranged engagements.",
+    "most_powerful_ability": "The Trampling Charge ability can knock opponents prone, allowing for follow-up attacks and battlefield control.",
+    "equipment": "Wields Twin Blades and carries a shield.",
+    "senses": "Possesses keen senses, granting it advantage on Wisdom (Perception) checks that rely on sight or smell.",
+    "skills": "Has a basic proficiency in perception, aiding in its ability to detect hidden threats.",
+    "additional_information": [
+        "Multiattack allows for versatile engagement options.",
+        "War Surge enables chain attacks with follow-up movements.",
+        "Highly reliant on cooperation with allies during combat.",
+        "Good initiative due to high Dexterity score.",
+        "Exceptional agility due to high movement speed."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fast monster with keen senses over allies",
+        "aggressive creature that knocks enemies prone",
+        "quagga tactics for swift battlefield control",
+        "monster utilizing speed for hit-and-run tactics",
+        "medium monstrosity with dual wielding capabilities"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Akkorokamui",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Gargantuan",
+    "hp": 189,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "15 ft. walking, 60 ft. swimming",
+    "role": "Defender",
+    "tags": [
+        "celestial",
+        "healer",
+        "protector"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "regenerative"
+    ],
+    "description": "Akkorokamui is a gargantuan celestial creature characterized by its impressive tentacles and healing abilities. Its massive form radiates a chaotic good aura and it features both natural armor and magical qualities.",
+    "memorable": "Akkorokamui can detach parts of its tentacles to offer magical healing food, restoring significant health and curing afflictions.",
+    "goals": "To protect and heal allies while imposing a formidable presence on the battlefield.",
+    "relations": "Possible allies include other celestials, and it could be encountered alongside aquatic creatures due to its amphibious nature.",
+    "environment": "Typically found in aquatic environments where it can utilize its swimming speed.",
+    "strengths": "Resilient due to high HP and natural armor, able to regenerate health consistently, and offers magical healing through its unique Offering of Flesh ability.",
+    "weaknesses": "Vulnerable to physical attacks when it is unable to regenerate.",
+    "attacks": "Utilizes tentacle strikes in multiattack sequences, capable of substantial bludgeoning damage with a tentacle sweep that can knock opponents prone.",
+    "most_powerful_ability": "The Offering of Flesh ability allows it to provide magical healing food that can cure ailments and regenerate limbs.",
+    "senses": "Possesses blindsight up to 30 feet and a passive perception score of 19, providing exceptional awareness.",
+    "skills": "Has proficiency in perception, contributing to its ability to discern its surroundings effectively.",
+    "additional_information": [
+        "Immune to poison damage and cannot be poisoned.",
+        "Has legendary resistance to succeed on failed saving throws three times per day.",
+        "Magic resistance grants advantage on saving throws against spells.",
+        "Regenerates 15 HP at the start of its turn if it has at least 1 HP.",
+        "Acts as a Siege Monster, dealing double damage to objects and structures."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "magical celestial healer",
+        "gargantuan protector",
+        "chaotic good celestial with tentacles",
+        "Akkorokamui healing abilities",
+        "celestial with regeneration powers"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Beli",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking and flying",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "cold",
+        "agile"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "predatory"
+    ],
+    "description": "The Beli is a small fey creature known for its sleek frame and agile movements, possessing natural armor that aids in its defense.",
+    "memorable": "The Beli's Cold Regeneration ability makes it a formidable opponent in icy environments, capable of recovering health unless harmed by fire.",
+    "goals": "The Beli typically seeks to outmaneuver its opponents and exploit its agility in battle, utilizing stealth and surprise.",
+    "relations": "Often encountered alongside other cold-themed fey creatures, the Beli may serve or be allied with ice elementals or winter spirits.",
+    "environment": "Typically found in snowy or cold environments, thriving in conditions below freezing.",
+    "strengths": "Exceptionally agile in combat, with the ability to fly and move without provoking opportunity attacks.",
+    "weaknesses": "Vulnerable to fire damage, which negates its regenerative abilities.",
+    "attacks": "Utilizes melee and ranged attacks with ice-infused weapons, delivering both piercing and cold damage.",
+    "most_powerful_ability": "Its Cold Regeneration capability allows it to regain health in cold environments, but it is rendered inactive by fire damage.",
+    "equipment": null,
+    "senses": "The Beli has darkvision up to 60 feet and a passive Perception of 14, making it adept at detecting threats in darkness.",
+    "skills": "It has proficiency in Dexterity saving throws and is particularly skilled in Stealth and Perception, allowing it to avoid detection and observe its surroundings effectively.",
+    "additional_information": [
+        "Advantage on Stealth and Perception in snowy terrain due to Arctic Hunter ability.",
+        "Ice Dagger attacks deal both piercing and cold damage.",
+        "Icy Shortbow attacks can inflict exhaustion and even reduce opponents to 0 hit points under certain conditions.",
+        "Can turn invisible to escape or reposition stealthily."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile ice fey",
+        "tricky cold creature",
+        "fey with regeneration abilities",
+        "predatory small fey",
+        "snow terrain ambusher"
+    ]
+}

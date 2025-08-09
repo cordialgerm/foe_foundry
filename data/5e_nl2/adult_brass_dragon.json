@@ -1,0 +1,52 @@
+{
+    "name": "Adult Brass Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 18,
+    "srd": true,
+    "cr": "13",
+    "movement": "40 ft. walking speed, burrow 30 ft., flying speed 80 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "metallic",
+        "brass",
+        "fire",
+        "sleep"
+    ],
+    "adjectives": [
+        "friendly",
+        "curious",
+        "intelligent",
+        "elegant"
+    ],
+    "description": "The Adult Brass Dragon has burnished, golden-brown scales that gleam like polished metal and large, rounded wings. Its elegant appearance is complemented by a curving tail.",
+    "memorable": "Known for its love of conversation, this dragon engages in lengthy discussions with travelers and possesses powerful breath weapons.",
+    "goals": "The Adult Brass Dragon enjoys basking in the sun and conversing with other beings, often exploring the world around it.",
+    "relations": "This creature may associate with other metallic dragons and beings interested in lore and knowledge.",
+    "environment": "Deserts and hot, dry climates.",
+    "strengths": "Fire immunity, powerful breath weapons, innate spellcasting, and high intelligence.",
+    "weaknesses": "Relatively lower Dexterity compared to other dragons and reliance on legendary actions.",
+    "attacks": "Utilizes multiattack featuring bite, claws, and tail strikes. Its attacks are powerful, including Molten Breath and Sleep Breath.",
+    "most_powerful_ability": "Breath weapons capable of dealing devastating fire damage and inducing sleep.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "Skilled in Arcana, History, Nature, and Persuasion, showcasing its intelligence and social abilities.",
+    "additional_information": [
+        "Can use Change Shape to assume humanoid or beast forms while retaining its stats.",
+        "Legendary Resistance allows it to succeed on failed saving throws three times a day.",
+        "Scholar of the Ages grants it advantage on Intelligence checks to recall lore."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast spells like Comprehend Languages and Legend Lore using Charisma.",
+    "test_queries": [
+        "golden-brown scaled dragon",
+        "intelligent fire-breathing dragon",
+        "desert-dwelling brass dragon",
+        "friendly talking dragon",
+        "scorching sleep gas dragon"
+    ]
+}

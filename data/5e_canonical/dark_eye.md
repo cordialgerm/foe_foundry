@@ -1,6 +1,8 @@
 <MonsterName/>Dark Eye</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>71</HP>
 <summary>The Dark Eye is a medium humanoid creature with a neutral evil alignment, known for its manipulative and sinister nature. It boasts an impressive armor class of 16, indicating a good level of defense with its breastplate. With 71 hit points, it can sustain a fair amount of damage before being defeated, making it a resilient opponent. The Dark Eye excels at dealing psychic damage and incapacitating foes, showcasing its ability to control and dominate the battlefield. However, it suffers from a significant disadvantage when exposed to sunlight, which can hinder its effectiveness during the day. With a challenge rating of 3, the Dark Eye presents a moderate threat to adventurers, offering opportunities for both combat and strategic encounters.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For actions, the Dark Eye uses the Multiattack feature to make two dagger attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Eye
 
 *Medium* *Humanoid* *neutral evil*
@@ -49,5 +52,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Dagger:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 4 (1d8) cold damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Swolbold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (scale mail)</AC>
+<HP/>65</HP>
 <summary>The Swolbold is a medium-sized humanoid creature characterized by its chaotic neutral alignment. It has a substantial amount of physical strength and resilience, evidenced by its impressive Strength score of 19, which grants it a +4 modifier, marking it as very good. Its Hit Points total 65, which provides it with decent durability in battle, while its Armor Class of 14, bolstered by scale mail, makes it somewhat difficult to hit. However, the Swolbold's speed is relatively slow at 20 feet, which can be a disadvantage in a dynamic combat scenario. It functions best in a group, utilizing its Pack Tactics ability to gain advantage on attack rolls when accompanied by allies. The Swolbold has a few weaknesses, including Sunlight Sensitivity, which causes it to have disadvantage on attacks in bright light, rendering it less effective in outdoor settings during the day.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Swolbold can perform a Slam attack, which involves a +6
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swolbold
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Crush:** One creature grappled by the swolbold must make a DC 14 Strength saving throw, taking 21 (5d6 + 4) bludgeoning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Siren",
+    "queries": [
+        {
+            "query": "water creature that can charm and incapacitate others",
+            "variant": "water monster that charms and incapacitates opponents"
+        },
+        {
+            "query": "medium monstrosity with a luring song and amphibious ability",
+            "variant": "monstrosity of medium size that has an amphibious trait and uses a luring song"
+        },
+        {
+            "query": "creature that breathes underwater and attacks with claws",
+            "variant": "monster that can swim and uses claw attacks"
+        },
+        {
+            "query": "enchanting monster in combat that affects humanoids",
+            "variant": "charming creature in battles that can affect humanoid opponents"
+        },
+        {
+            "query": "Siren abilities like luring song and mobility in water",
+            "variant": "Siren's skills such as mobility in water and enchanting song"
+        }
+    ]
+}

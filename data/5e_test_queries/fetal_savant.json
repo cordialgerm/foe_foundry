@@ -1,0 +1,25 @@
+{
+    "name": "Fetal Savant",
+    "queries": [
+        {
+            "query": "tiny humanoid creature that thrives on psychological manipulation and creates a protective cage",
+            "variant": "tiny humanoid that manipulates minds and creates a protective cage"
+        },
+        {
+            "query": "chaotic evil creature skilled in psychic damage and capable of soul exchange",
+            "variant": "chaotic evil monster that does psychic damage and can swap souls"
+        },
+        {
+            "query": "small humanoid with high charisma and immunity to psychic damage, found in dark places",
+            "variant": "small humanoid with high charisma immunity to psychic damage found in darkness"
+        },
+        {
+            "query": "creature that babbles maddeningly and can incapacitate foes within its range",
+            "variant": "monster that babbles crazily and incapacitates enemies nearby"
+        },
+        {
+            "query": "psychic creature with low physical strength and hypersensitivity to sunlight",
+            "variant": "psychic monster that is weak physically and sensitive to sunlight"
+        }
+    ]
+}

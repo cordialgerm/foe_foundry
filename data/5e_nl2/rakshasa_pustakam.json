@@ -1,0 +1,50 @@
+{
+    "name": "Rakshasa, Pustakam",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 91,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 25 ft., climb 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "fiend",
+        "charmer",
+        "magic user"
+    ],
+    "adjectives": [
+        "cunning",
+        "tricky",
+        "deceptive"
+    ],
+    "description": "The Rakshasa, known as Pustakam, is a small fiend with a humanoid appearance. It is known for its cunning and magical powers.",
+    "memorable": "It can manipulate minds, charm opponents, and blend in as an ordinary object.",
+    "goals": "To deceive, charm, and manipulate foes while inflicting psychic damage.",
+    "relations": "May be encountered alongside other evil fiends or creatures that utilize charm abilities.",
+    "environment": "Commonly found in urban areas where it can blend in with society.",
+    "strengths": "Possesses limited magic immunity and can exploit charm effects to control enemies.",
+    "weaknesses": "Vulnerable to piercing damage from magic weapons wielded by good creatures.",
+    "attacks": "Can attack with claws for slashing and psychic damage; uses False Promises to charm opponents.",
+    "most_powerful_ability": "False Promises, which inflicts psychic damage and charms the target.",
+    "equipment": null,
+    "senses": "Has darkvision to see in dim light and telepathy to communicate with others.",
+    "skills": "Good perception with a +3 modifier.",
+    "additional_information": [
+        "Can change shape into a Tiny object.",
+        "Advantage on saving throws against spells and magical effects.",
+        "Uses Charisma for spellcasting, affecting enchantment spells."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast spells like Detect Thoughts, Mage Hand, and Minor Illusion at will, and Command and Suggestion three times per day.",
+    "test_queries": [
+        "small fiend that manipulates minds",
+        "cunning monster that charms using promises",
+        "tricky fiend with magic immunity",
+        "ambush predator that looks like an object",
+        "psychic damage dealing charmer"
+    ]
+}

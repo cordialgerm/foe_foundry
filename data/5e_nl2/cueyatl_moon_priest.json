@@ -1,0 +1,53 @@
+{
+    "name": "Cueyatl Moon Priest",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 81,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking, 20 ft. climbing, 30 ft. swimming",
+    "role": "null",
+    "tags": [
+        "spellcaster",
+        "stealth",
+        "jungle"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "agile"
+    ],
+    "description": "A small humanoid with a cunning appearance, adept in stealth and camouflage among jungle foliage.",
+    "memorable": "Its ability to extinguish magical light and deal cold damage in an area makes it a formidable foe.",
+    "goals": "To manipulate and control its environment and opponents through cunning tactics and magical prowess.",
+    "relations": "Often associated with other jungle creatures or dark cults that serve lunar deities.",
+    "environment": "Primarily found in jungle settings.",
+    "strengths": "Exceptional spellcasting abilities and stealth suited for ambush tactics.",
+    "weaknesses": "Lower physical damage output and reliance on stealth.",
+    "attacks": "Wields a morningstar, dealing piercing and poison damage, and has area effect cold damage ability.",
+    "most_powerful_ability": "Night's Chill allows it to extinguish magical light and deal cold damage to enemy creatures nearby.",
+    "equipment": "Morningstar",
+    "senses": "Possesses darkvision up to 60 feet and a passive perception score of 16, allowing it to detect hidden threats effectively.",
+    "skills": "Skilled in medicine, perception, and religion, indicating a proficiency in healing and spiritual matters.",
+    "additional_information": [
+        "Amphibious, able to breathe both air and water.",
+        "Advantage on Stealth checks in jungle terrain.",
+        "Advantage on checks to escape grapples.",
+        "Can jump impressive distances without a running start.",
+        "5th-level spellcaster with a range of useful spells."
+    ],
+    "damage_types": [
+        "cold",
+        "poison"
+    ],
+    "spellcasting": "5th-level spellcaster with various buffs, damaging spells, and healing abilities prepared.",
+    "test_queries": [
+        "small humanoid with jungle camouflage",
+        "spellcaster that extinguishes magical light",
+        "cunning monster with cold damage attacks",
+        "manipulative creature in jungle environments",
+        "agile priest with poison attacks"
+    ]
+}

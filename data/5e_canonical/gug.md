@@ -1,6 +1,8 @@
 <MonsterName/>Gug</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>230</HP>
 <summary>The Gug is a massive, menacing giant characterized by its immense strength and formidable presence on the battlefield. As a neutral evil creature, it thrives on chaos and destruction, often leveraging its physical prowess to overpower foes. With an Armor Class of 17, it withstands considerable damage while boasting a hefty pool of 230 hit points, making it a substantial challenge for adventurers. Its Strength is exceptionally high at 24, giving it a +7 modifier, which translates into formidable melee attack capabilities. However, its Dexterity score of 10 means it has only an average capacity for nimbleness, making it vulnerable to ranged attacks and agile adversaries. The Gug's challenge rating of 12 indicates that it is designed to provide a worthy encounter for a party of well-prepared adventurers.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ With strong immunity to poison and conditions like exhaustion and paralysis, the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gug
 
 *Huge* *Giant* *Neutral Evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Stomp:** Melee Weapon Attack: +11 to hit, reach 10 ft. Hit: 20 (2d12 + 7) bludgeoning damage, and the target must succeed on a DC 17 Strength saving throw or be knocked prone.
 - **Fling:** One Large or smaller object held or creature grappled by the gug is thrown up to 60 feet in a random direction and knocked prone. If a thrown target strikes a solid surface, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 17 Dexterity saving throw or take the same damage and be knocked prone.
 - **Swallow:** The gug makes one Grasping Claw attack against a Large or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the gug, and it takes 14 (4d6) acid damage at the start of each of the gug’s turns. A gug can have only one creature swallowed at a time.
+</statblock>
 
 

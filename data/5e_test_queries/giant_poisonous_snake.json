@@ -1,0 +1,25 @@
+{
+    "name": "Giant Poisonous Snake",
+    "queries": [
+        {
+            "query": "venomous jungle predator that can swim",
+            "variant": "jungle predator that is venomous and can swim"
+        },
+        {
+            "query": "large snake with poisonous fangs that ambushes prey",
+            "variant": "massive snake that ambushes prey and has poisonous fangs"
+        },
+        {
+            "query": "stealthy serpent that delivers lethal bites and blends into surroundings",
+            "variant": "serpent that blends into surroundings and delivers lethal bites stealthily"
+        },
+        {
+            "query": "medium-sized snake with a dangerous venomous bite found in swamps",
+            "variant": "a snake found in swamps that is medium-sized and has a dangerous venomous bite"
+        },
+        {
+            "query": "snake known for paralyzing venom and swift movements in water",
+            "variant": "known snake for swift movements in water and paralyzing venom"
+        }
+    ]
+}

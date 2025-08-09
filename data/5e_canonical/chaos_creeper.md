@@ -1,6 +1,8 @@
 <MonsterName/>Chaos Creeper</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Chaos Creeper is a Medium-sized chaotic neutral plant creature that epitomizes the unpredictable nature of chaos. With a Challenge Rating of 9, it poses a significant threat in combat, boasting a solid Armor Class of 16 due to its natural armor and a substantial hit point total of 150. This creature is known for its magical fruit, which produces various effects when consumed or triggered, allowing it to influence the battlefield dynamically. While its Dexterity score of 18 (+4) enables it to act quickly and evade attacks, its average strength (13, +1) means it is not particularly adept in physical confrontations. The Chaos Creeper is immune to poison damage and conditions such as being blinded or poisoned, making it resilient in specific situations, but its reliance on chaotic effects may lead to inconsistencies in combat outcomes.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Chaos Creeper can make a Multiattack, allowing it to ei
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chaos Creeper
 
 *Medium* *Plant* *chaotic neutral*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Fruit Bomb:** Ranged Weapon Attack: +8 to hit 30/120' one target 31 (5d10+4) acid cold fire lightning poison or thunder (creeper’s choice). Instead of dealing damage creeper can choose for fruit to trigger its Wondrous Cornucopia. Treat target as if it ate fruit where applicable.
 
 
+</statblock>
 
 

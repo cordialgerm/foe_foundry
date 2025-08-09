@@ -1,0 +1,25 @@
+{
+    "name": "Zoryas",
+    "queries": [
+        {
+            "query": "celestial being that protects and guides mortals",
+            "variant": "celestial creature that guides mortals and protects them"
+        },
+        {
+            "query": "medium creature with powerful radiant attacks and ability to regenerate",
+            "variant": "medium monster that has strong radiant attacks and regenerates health"
+        },
+        {
+            "query": "light manipulating celestial that opens portals and heals",
+            "variant": "celestial that manipulates light and can open gates while healing"
+        },
+        {
+            "query": "celestial being immune to fear and charm with high wisdom",
+            "variant": "fear-immune celestial creature with exceptional wisdom and charm resistance"
+        },
+        {
+            "query": "lawful good celestial that deals fire damage and can see through illusions",
+            "variant": "lawful good celestial that uses fire damage and has truesight abilities"
+        }
+    ]
+}

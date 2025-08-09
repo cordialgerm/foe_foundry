@@ -1,0 +1,49 @@
+{
+    "name": "Shard Swarm",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "construct",
+        "battlefield control"
+    ],
+    "adjectives": [
+        "sharp",
+        "mobile",
+        "resourceful"
+    ],
+    "description": "The Shard Swarm is a medium-sized construct made up of sharp shards that can fly and envelop its targets.",
+    "memorable": "It can reform and restrain foes while being immune to several damage types.",
+    "goals": "To control the battlefield and restrain its enemies.",
+    "relations": "It may be encountered alongside other constructs or mechanical creatures.",
+    "environment": "Ruinous locations or areas filled with junk and debris.",
+    "strengths": "Can disguise itself as junk and reform to evade damage.",
+    "weaknesses": "Vulnerable to spells that target antimagic, which can incapacitate it.",
+    "attacks": "Makes melee attacks with sharp shards dealing slashing damage, and ranged attacks with shrapnel dealing piercing damage.",
+    "most_powerful_ability": "Contain, allowing it to envelop and restrain a foe within its space.",
+    "senses": "It has blindsight up to 60 ft., allowing it to sense its environment despite being blind beyond that range.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison and psychic damage.",
+        "Cannot regain hit points or gain temporary HP.",
+        "Occupies the same space as other creatures.",
+        "Can move through openings large enough for a pebble.",
+        "Disguises as a pile of junk when not flying."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mobile swarm of sharp shards",
+        "construct that can envelop enemies",
+        "junk pile that attacks with slashing damage",
+        "shard monster that flies and restrains",
+        "swarm with unique battlefield control tactics"
+    ]
+}

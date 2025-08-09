@@ -1,0 +1,55 @@
+{
+    "name": "Al-Aeshma Genie",
+    "creature_type": "Elemental",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 149,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 90 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "genie",
+        "elemental",
+        "flying",
+        "chaotic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "agile",
+        "regenerative",
+        "necrotic"
+    ],
+    "description": "The Al-Aeshma Genie is a large, chaotic elemental creature with a commanding presence in combat, often manifested as a swirling spray of coarse sand. It has a notable appearance and boasts agility, making it a formidable opponent.",
+    "memorable": "Its unique regeneration ability allows it to heal each turn unless affected by fire or radiant damage, making it exceptionally resilient.",
+    "goals": "Typically seeks to dominate aerial encounters, manipulating the battlefield and using its abilities to overwhelm enemies.",
+    "relations": "Could be encountered alongside other genies or elemental beings.",
+    "environment": "Commonly found in places where elemental energies converge, often above ground due to its flight capabilities.",
+    "strengths": "Possesses a strong combination of resilience, agility, and powerful melee and magical attacks.",
+    "weaknesses": "Vulnerable to fire and radiant damage; limited in altitude due to the Earth Bound ability.",
+    "attacks": "Can inflict slashing and necrotic damage through its scimitar and special ability, Dust Devil, which restrains and damages multiple targets.",
+    "most_powerful_ability": "Regeneration allows it to regain health every turn unless taking fire or radiant damage.",
+    "equipment": "Scimitar for melee attacks.",
+    "senses": "Has darkvision with a range of 120 feet.",
+    "skills": "Immunity to lightning and thunder damage enhances its durability against some elemental attacks.",
+    "additional_information": [
+        "Air Hatred ability gives it advantage against flying creatures.",
+        "Elemental Demise causes it to disintegrate upon death.",
+        "Can create a Dust Devil to restrain and damage opponents in a specific area.",
+        "Can cast spells without needing material components.",
+        "Strategically uses its mobility and abilities to manipulate the battlefield."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Able to cast detect magic at will, create or destroy water (destroy only) and wind walk three times per day, along with gaseous form and invisibility once per day.",
+    "test_queries": [
+        "elemental creature with regeneration",
+        "flying genie with chaotic nature",
+        "elemental elemental with necrotic attacks",
+        "large chaotic evil elemental",
+        "creature that can create dust devil"
+    ]
+}

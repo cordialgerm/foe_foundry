@@ -1,0 +1,25 @@
+{
+    "name": "Greater Rakshasa",
+    "queries": [
+        {
+            "query": "fiend with charm spells and high intelligence",
+            "variant": "fiend with high intellegence and charm spells"
+        },
+        {
+            "query": "malevolent illusionist that is immune to most spells",
+            "variant": "illusiionist that is malevolent and immune to most spells"
+        },
+        {
+            "query": "manipulative fiend that curses its enemies and casts spells",
+            "variant": "fiend that manipulates and curses enemies while casting spells"
+        },
+        {
+            "query": "creature that can create horrific visions and is strong against magic",
+            "variant": "creature that creates horrifying visions and is resistant to magic"
+        },
+        {
+            "query": "powerful monster that can charm up to five targets simultaneously",
+            "variant": "strong monster that charms five targets at once"
+        }
+    ]
+}

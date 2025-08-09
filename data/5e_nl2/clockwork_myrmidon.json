@@ -1,0 +1,52 @@
+{
+    "name": "Clockwork Myrmidon",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 136,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "melee",
+        "area control"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "mechanical"
+    ],
+    "description": "A large, mechanical construct designed for combat, resembling armored warriors with formidable physical attributes.",
+    "memorable": "Its ability to explode upon destruction, potentially damaging nearby enemies, adds a layer of danger.",
+    "goals": "Primarily functions as a front-line combatant, controlling the battlefield and inflicting damage.",
+    "relations": "Act as soldiers or guardians, possibly created by more intelligent beings.",
+    "environment": "Typically found in areas of magical or mechanical creation, such as a wizard's tower or gnome workshop.",
+    "strengths": "Immunity to poison, psychic damage, and many conditions, alongside Magic Resistance against spells.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma, limiting its effectiveness in mental tasks.",
+    "attacks": "Multiattack includes a Slam and two Heavy Pick attacks, with an option for an area fire jet.",
+    "most_powerful_ability": "Alchemical Flame Jet, allowing it to deal fire damage in a straight line, affecting multiple targets.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 16, which aids in detecting the surroundings.",
+    "skills": "Skilled in Athletics with a +8 bonus, showcasing its physical prowess.",
+    "additional_information": [
+        "Construct Nature, requiring no air, food, or sleep",
+        "Explodes on destruction, causing area damage",
+        "Immutable Form prevents transformation effects",
+        "Can spray alchemical grease to create difficult terrain",
+        "Magic Resistance provides advantage against magical attacks"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large mechanical soldier with fire attacks",
+        "construct that explodes when destroyed",
+        "powerful melee combatant with area control",
+        "clockwork warrior immune to magic",
+        "battlefield control using grease and fire"
+    ]
+}

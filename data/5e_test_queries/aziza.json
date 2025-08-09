@@ -1,0 +1,25 @@
+{
+    "name": "Aziza",
+    "queries": [
+        {
+            "query": "tiny fey creature that confuses enemies and communicates with frogs",
+            "variant": "tiny creature that is a fey and confuses foes while talking to frogs"
+        },
+        {
+            "query": "agile creature with high dexterity that uses spells and melee attacks",
+            "variant": "agile monster that has exceptional dexterity and employs spells along with melee"
+        },
+        {
+            "query": "chaotic good fey that can communicate with frogs and uses a thorn dagger",
+            "variant": "chaotic fey that has frog communication abilities and attacks with a thorn dagger"
+        },
+        {
+            "query": "small monster with piercing attacks and confusing magical abilities",
+            "variant": "small creature that has piercing damage attacks and magic that confuses enemies"
+        },
+        {
+            "query": "fey with high dexterity and the ability to poison targets",
+            "variant": "fey that possesses high agility and can poison its targets"
+        }
+    ]
+}

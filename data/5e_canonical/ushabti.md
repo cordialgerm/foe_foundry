@@ -1,6 +1,8 @@
 <MonsterName/>Ushabti</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Ushabti is a formidable Medium Construct known for its unyielding nature and ability to inflict ongoing curses on its foes. With an armor class of 17, it has robust defenses that allow it to withstand significant damage, and its considerable hit points totaling 119 make it a tough adversary. The Ushabti's high Dexterity score of 20 (+5) allows it to be incredibly agile and evasive, while its decent Constitution of 18 (+4) enhances its resilience. However, its low Intelligence (6, -2), Wisdom (11, +0), and Charisma (6, -2) indicate that it is not particularly bright or persuasive, making it vulnerable to various forms of manipulation. What sets this construct apart are its necrotic weapon attacks and the ability to unleash poisonous snakes for added offensive strategies, coupled with its immunity to many debilitating effects and spells.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Ushabti can use Telekinesis to attempt to move one creatu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ushabti
 
 *Medium* *Construct* *Unaligned*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Telekinesis:** One creature the ushabti can see within 60 feet of it must succeed on a DC 16 Strength saving throw or the ushabti moves the creature up to 30 feet in any direction (including upward). The target is restrained until the start of the ushabti’s next turn.
+</statblock>
 
 

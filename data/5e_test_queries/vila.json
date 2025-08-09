@@ -1,0 +1,25 @@
+{
+    "name": "Vila",
+    "queries": [
+        {
+            "query": "fey creature that can communicate with animals and excels in stealth",
+            "variant": "fey beings that talks to animals and is great at sneaking"
+        },
+        {
+            "query": "forest protector with poison weapons and good dexterity",
+            "variant": "defender of the woods who uses poisoned arms and has high agility"
+        },
+        {
+            "query": "medium-sized magical being that thrives in difficult terrain",
+            "variant": "medium fey that does well in challenging landscapes"
+        },
+        {
+            "query": "creature with high initiative in woodland and poisoned strikes",
+            "variant": "monster with quick reflexes in forests and toxic attacks"
+        },
+        {
+            "query": "Vila abilities including Denizens of the Wilds and Forest\u2019s Defender",
+            "variant": "abilities of Vila like Denizens of the Wilds and Forest Defender"
+        }
+    ]
+}

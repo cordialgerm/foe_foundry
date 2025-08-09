@@ -1,0 +1,25 @@
+{
+    "name": "Chroma Lizard",
+    "queries": [
+        {
+            "query": "large reflective scaled monster that manipulates light",
+            "variant": "large monster with reflective scales that manipulates light"
+        },
+        {
+            "query": "beast with dazzling display ability and radiant damage resistance",
+            "variant": "creature with dazzling display power and resistance to radiant damage"
+        },
+        {
+            "query": "colorful lizard that can blind enemies and reflects radiant damage",
+            "variant": "vibrant lizard that blinds foes and reflects radiant attacks"
+        },
+        {
+            "query": "monster with high dexterity that lives in brightly lit areas",
+            "variant": "creature with excellent dexterity that thrives in bright light"
+        },
+        {
+            "query": "lizard with poor intelligence but strong dexterity in combat",
+            "variant": "lizard that has low intelligence but high dexterity in battles"
+        }
+    ]
+}

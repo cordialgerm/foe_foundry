@@ -1,0 +1,53 @@
+{
+    "name": "Animal Lord, Mammoth Queen",
+    "creature_type": "Fey",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 250,
+    "ac": 20,
+    "srd": false,
+    "cr": "18",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fey",
+        "queen",
+        "mammoth",
+        "animal lord",
+        "epic"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "protective",
+        "resilient"
+    ],
+    "description": "The Mammoth Queen is a massive fey creature with an elephant-like humanoid form, exhibiting strength and majesty. She has a thick hide and tusks, embodying the essence of the wild and the fey.",
+    "memorable": "Her ability to rejuvenate upon death and the unique characteristic of forbidding elephantine creatures from attacking her make her a compelling and formidable foe.",
+    "goals": "To protect elephantine creatures and dominate the battlefield with her massive presence.",
+    "relations": "Associated with other fey creatures and is a protector of mammoths and elephants.",
+    "environment": "Primarily found in lush forests or remote wilderness areas where elephants roam.",
+    "strengths": "High damage output, exceptional physical strength, magic resistance, and the ability to rejuvenate.",
+    "weaknesses": "Average Dexterity may lead to susceptibility to agile opponents and traps.",
+    "attacks": "Utilizes a variety of devastating attacks like Battleaxe strikes, powerful Gores, and Stomp abilities that deal significant damage and can incapacitate foes.",
+    "most_powerful_ability": "Rejuvenation allows her to reform on the Astral Plane and inhabit another elephantine creature unless all are defeated.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet and a passive perception of 20, enabling her to detect hidden threats effectively.",
+    "skills": "Skilled in perception, allowing her to notice unseen creatures and situations.",
+    "additional_information": [
+        "Immune to cold and poison damage, and resistant to nonmagical physical attacks.",
+        "Legendary Resistance allows her to overcome difficult spells.",
+        "Can communicate telepathically within 120 feet.",
+        "Possesses the ability to change her shape, retaining her combat stats.",
+        "Can perform powerful area attacks with her Tusk Sweep ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive fey creature with protective abilities",
+        "queen of the mammoths",
+        "formidable animal lord",
+        "epic creature with rejuvenation powers",
+        "elephantine protector in fey realms"
+    ]
+}

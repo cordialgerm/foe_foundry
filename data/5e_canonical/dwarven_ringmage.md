@@ -1,6 +1,8 @@
 <MonsterName/>Dwarven Ringmage</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>136</HP>
 <summary>The Dwarven Ringmage is a powerful and strategic spellcaster, adept in the manipulation of magical energies and battlefield control. With a robust armor class of 16 and a solid hit pool of 136 hit points, it can withstand moderate damage in combat. Its challenge rating of 7 indicates that it poses a significant threat to adventurers, offering a combination of spellcasting abilities and unique combat options. The ringmage excels in using its intelligence to execute spells effectively, making it a formidable opponent as well as a crucial ally. However, its low charisma and average physical strength may leave it vulnerable to social challenges and direct physical confrontations.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Dwarven Ringmage is a nuanced and varied combatant that blends phys
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarven Ringmage
 
 *Medium* *Humanoid* *Any Alignment*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Ring Staff:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 10 (3d6) acid, cold, fire, lightning, or thunder damage (the ringmage’s choice).
 - **Ring Magic:** The dwarven ringmage draws circles of magic in the air and sends them toward one creature it can see within 30 feet of it, causing one of the following effects:
 - **Spellcasting:** The dwarven ringmage casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save DC 15):<br>At will: color spray, mage hand, true strike<br>3/day each: expeditious retreat, fly, haste<br>1/day each: greater invisibility, wall of stone
+</statblock>
 
 

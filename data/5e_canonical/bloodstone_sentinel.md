@@ -1,6 +1,8 @@
 <MonsterName/>Bloodstone Sentinel</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Bloodstone Sentinel is a large, neutral evil construct known for its unique ability to manipulate bloodshed and cause chaos. With an Armor Class of 15, it boasts a solid defense, while its robust Hit Points total 114, making it a durable opponent in combat. The Sentinel operates effectively as a mid-level adversary with a Challenge Rating of 8, presenting a significant threat to characters who are not properly prepared. Its strengths lie in its damage immunities and condition immunities, which protect it from various forms of attacks and effects. However, it does have low Dexterity, making its agility poor, which could be exploited in battle. Notably, the Bloodstone Sentinel can absorb blood, enhancing its power and enabling it to support its allies or disrupt its enemies through several special abilities.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Bloodstone Sentinel can make a Multiattack, allowing it to execut
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bloodstone Sentinel
 
 *Large* *Construct* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 
 
+</statblock>
 
 

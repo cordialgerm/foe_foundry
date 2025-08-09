@@ -1,0 +1,48 @@
+{
+    "name": "Elk",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 15,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "50 ft., capable of swift movement",
+    "role": null,
+    "tags": [
+        "herbivore",
+        "forest",
+        "grassland"
+    ],
+    "adjectives": [
+        "majestic",
+        "muscular",
+        "agile"
+    ],
+    "description": "The Elk is a large herbivore with a powerful body and impressive antlers, typically found in forests and grasslands.",
+    "memorable": "The Elk's ability to charge with its ram attack, potentially knocking opponents prone, makes it a noteworthy creature in combat.",
+    "goals": "Typically grazes on grasses and leaves, residing in herds within its natural habitat.",
+    "relations": "Can be seen in herds, potentially alongside other forest and grassland creatures.",
+    "environment": "Forests and grasslands, often in rugged terrains.",
+    "strengths": "Highly mobile with the ability to deal significant damage through its ram attack and knockdown ability.",
+    "weaknesses": "Low Armor Class and intelligence limit its tactical options in combat.",
+    "attacks": "Ram attack delivers bludgeoning damage and can knock opponents prone; Hooves attack targets immobilized foes for increased damage.",
+    "most_powerful_ability": "Charge allows the Elk to deal additional damage and potentially knock its target prone if it has moved swiftly before the attack.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Aggressive when threatened, using antlers for defense.",
+        "Symbol of untamed beauty in nature.",
+        "Common target for hunters due to its size and antlers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large herbivore with impressive antlers",
+        "fast running animal in forests",
+        "majestic creature that grazes on grass",
+        "animal that charges and can knock foes down",
+        "muscular animal seen in herds"
+    ]
+}

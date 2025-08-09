@@ -1,0 +1,25 @@
+{
+    "name": "Light Cavalry",
+    "queries": [
+        {
+            "query": "humanoid warrior with fire breath and mounted combat abilities",
+            "variant": "warrior humanoid with fire breath and ability to fight mounted"
+        },
+        {
+            "query": "medium creature that excels in mounted combat and has low intelligence",
+            "variant": "medium being that is good at mounted fighting and has lower int"
+        },
+        {
+            "query": "combat-focused humanoid with fire resistance and a saber",
+            "variant": "humanoid focused on combat with saber and resistance to fire"
+        },
+        {
+            "query": "creature that can attack smaller foes better when mounted",
+            "variant": "being that is able to attack better against small enemies while on a mount"
+        },
+        {
+            "query": "light cavalry fighter skilled in athletics and perception",
+            "variant": "fighter light cavalry skilled in athleticism and perception"
+        }
+    ]
+}

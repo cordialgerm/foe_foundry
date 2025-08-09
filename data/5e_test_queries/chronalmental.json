@@ -1,0 +1,25 @@
+{
+    "name": "Chronalmental",
+    "queries": [
+        {
+            "query": "large time-manipulating elemental with high agility",
+            "variant": "big elemental that manipulates time and is very agile"
+        },
+        {
+            "query": "elemental creature immune to poison and physical damage",
+            "variant": "creature that is an elemental and immune to poisin and non-magical damage"
+        },
+        {
+            "query": "monster that can teleport and control time in battle",
+            "variant": "creature that controls time and can teleport in fight"
+        },
+        {
+            "query": "agile creature with a powerful slam attack and ability to heal",
+            "variant": "quick monster with strong slam and healing abilities"
+        },
+        {
+            "query": "elemental with unique time manipulation abilities and low charisma",
+            "variant": "elemental creature with special abilities for time control and low social skills"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Bakery Drake",
+    "queries": [
+        {
+            "query": "small dragon that can fly and has fire resistance",
+            "variant": "small flying dragon with fire resistance"
+        },
+        {
+            "query": "quirky dragon with bread-related abilities and combat prowess",
+            "variant": "funny dragon that has baking abilities and fights well"
+        },
+        {
+            "query": "dragon that uses yeast attacks and is weak to fire",
+            "variant": "dragon that has yeast moves and is vulnerable to fire"
+        },
+        {
+            "query": "animal with keen smell that helps in detecting poisons",
+            "variant": "creature with excellent smell that can find poisons"
+        },
+        {
+            "query": "lawful neutral dragon known for its baking skills and purifying breath",
+            "variant": "neutral dragon famous for baking talents and purifying breath"
+        }
+    ]
+}

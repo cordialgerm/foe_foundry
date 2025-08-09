@@ -1,0 +1,53 @@
+{
+    "name": "Tribal Warrior",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "warrior",
+        "tribal",
+        "humanoid"
+    ],
+    "adjectives": [
+        "fierce",
+        "skilled",
+        "adaptive"
+    ],
+    "description": "A fierce and skilled fighter trained to defend their tribe, proficient with simple weapons like spears and clubs.",
+    "memorable": "Deeply connected to their communities, these warriors are trained from a young age and rely on hit-and-run tactics.",
+    "goals": "Fight for survival, honor, and tradition of their tribes.",
+    "relations": "Often part of a close-knit clan and may work together with other tribal warriors.",
+    "environment": "Found in various environments, such as deserts and jungles.",
+    "strengths": "Highly adept in maneuvering and ambush tactics, using their knowledge of the land to outsmart enemies.",
+    "weaknesses": "Relatively low hit points and armor class make them vulnerable to strong attacks.",
+    "attacks": "Effective with melee and ranged spear attacks, dealing piercing damage.",
+    "most_powerful_ability": "Pack Tactics, allowing them to gain advantage on attack rolls when allies are nearby.",
+    "equipment": "Wields a spear and wears hide armor.",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Tribal warriors fight not just for survival but for the honor of their tribe.",
+        "Each tribe is led by a chief, often the greatest warrior.",
+        "They are proficient with simple weapons and adaptive in various terrains.",
+        "Use teamwork to gain tactical advantages in combat.",
+        "Live beyond civilization, relying on fishing and hunting."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fierce warrior with a spear",
+        "skilled tribal fighter from the jungle",
+        "adaptive warrior living beyond civilization",
+        "humanoid with hit-and-run tactics",
+        "tribal warrior fighting for honor"
+    ]
+}

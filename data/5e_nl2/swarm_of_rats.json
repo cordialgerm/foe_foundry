@@ -1,0 +1,51 @@
+{
+    "name": "Swarm of Rats",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 24,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft. walking speed",
+    "role": "null",
+    "tags": [
+        "swarm",
+        "rats",
+        "urban",
+        "vermin"
+    ],
+    "adjectives": [
+        "seething",
+        "collective",
+        "nuisance",
+        "agile",
+        "fragile"
+    ],
+    "description": "A swarm of small rodents that moves together, often found in urban areas or sewers, capable of overwhelming enemies in numbers.",
+    "memorable": "The inability to regain hit points makes them a unique swarm, and their potential to spread disease adds to their menace.",
+    "goals": "To feed on anything they can find, often scavenging in urban environments.",
+    "relations": "Often found alongside other urban vermin or in the company of creatures that thrive in filth.",
+    "environment": "Commonly found in urban areas, sewers, or abandoned buildings.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage, allowing them to withstand some physical attacks.",
+    "weaknesses": "Low Constitution reflects their overall fragility, making them vulnerable to damage despite their numbers.",
+    "attacks": "Bites attack that inflicts piercing damage, with damage reduced if the swarm is bloodied.",
+    "most_powerful_ability": "Keen Smell grants advantage on Perception checks based on smell, enhancing their detection capabilities.",
+    "equipment": null,
+    "senses": "Keen Smell enhances their ability to navigate and detect dangers relevant to their environment.",
+    "skills": null,
+    "additional_information": [
+        "Capable of occupying the same space as other creatures.",
+        "Can squeeze through openings intended for Tiny creatures.",
+        "In enclosed spaces, they can swarm effectively around foes."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mass of tiny biting creatures",
+        "urban swarm of rodents",
+        "disease spreading rat swarm",
+        "agile collective of small beasts",
+        "annoying swarm in sewers"
+    ]
+}

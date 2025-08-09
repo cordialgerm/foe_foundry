@@ -1,0 +1,54 @@
+{
+    "name": "Duskwilt",
+    "creature_type": "Plant",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 97,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. walk speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fungi",
+        "plant",
+        "necro",
+        "ambusher"
+    ],
+    "adjectives": [
+        "agile",
+        "tactical",
+        "necro-inflicting",
+        "light-absorbing"
+    ],
+    "description": "The Duskwilt is a small plant creature adept at manipulating light and inflicting necrotic damage with swift movements.",
+    "memorable": "Its ability to absorb light and create darkness provides strategic advantages in combat.",
+    "goals": "To manipulate the battlefield by absorbing light and poisoning foes.",
+    "relations": "Other fungi communicate with it via telepathy.",
+    "environment": "Often found in dark, shaded areas with rich plant life.",
+    "strengths": "High Dexterity provides exceptional agility and evasion in combat.",
+    "weaknesses": "Vulnerable to radiant damage, which can significantly harm it.",
+    "attacks": "Slam delivers bludgeoning and necrotic damage; Nether Bolt strikes at range with necrotic energy.",
+    "most_powerful_ability": "Light Absorption creates strategic advantages by reducing visibility in its vicinity.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet, making it effective in low-light situations.",
+    "skills": "Possesses notable perception skills with a +1 bonus.",
+    "additional_information": [
+        "Resistant to necrotic and poison damage.",
+        "Immune to the poisoned condition.",
+        "Can heal Undead nearby with temporary hit points.",
+        "Utilizes multiattack capabilities for versatile combat."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small dark plant that absorbs light",
+        "plant creature capable of necrotic damage",
+        "fungi that manipulates battlefield visibility",
+        "agile plant with poison abilities",
+        "Duskwilt attack strategies"
+    ]
+}

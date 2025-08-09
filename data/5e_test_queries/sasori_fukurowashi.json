@@ -1,0 +1,25 @@
+{
+    "name": "Sasori Fukurowashi",
+    "queries": [
+        {
+            "query": "agile fey creature with high dexterity and wisdom",
+            "variant": "agile creature fey with high wisdom and dexterity"
+        },
+        {
+            "query": "magical resistance monster that can fly and grapple",
+            "variant": "monster that can fly and grapple with magical resistance"
+        },
+        {
+            "query": "fey creature immune to poison with excellent perception",
+            "variant": "creature fey with excellent perception and immune to poison"
+        },
+        {
+            "query": "medium-sized fey that shifts between planes and has high stealth",
+            "variant": "medium fey that has high stealth and shifts between planes"
+        },
+        {
+            "query": "Sasori Fukurowashi combat abilities and elemental resistances",
+            "variant": "combat abilities and elemental resistances of Sasori Fukurowashi"
+        }
+    ]
+}

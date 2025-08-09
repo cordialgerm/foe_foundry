@@ -1,0 +1,25 @@
+{
+    "name": "Giant Elk",
+    "queries": [
+        {
+            "query": "massive herbivore with antlers that lives in forests",
+            "variant": "huge herbivore with large antlers found in woods"
+        },
+        {
+            "query": "peaceful elk that can knock enemies prone and has high strength",
+            "variant": "calm giant elk with ability to topple foes and great strength"
+        },
+        {
+            "query": "elk known for its charge ability and swift movements in wild",
+            "variant": "elk recognized for its charging ability and quick actions in nature"
+        },
+        {
+            "query": "giant elk that is a formidable opponent in combat and has impressive physical prowess",
+            "variant": "huge elk that poses a significant threat in battles with strong physical strength"
+        },
+        {
+            "query": "creature found in plains and forests with high hit points and multiattack capability",
+            "variant": "beast residing in open fields and woods with a lot of hit points and multiple attacking options"
+        }
+    ]
+}

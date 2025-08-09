@@ -1,0 +1,25 @@
+{
+    "name": "Abominable Snowman",
+    "queries": [
+        {
+            "query": "large icy monster that paralyzes with its gaze",
+            "variant": "big snow monster that can paralyze using its chilling gaze"
+        },
+        {
+            "query": "creature with camouflage ability found in snowy areas",
+            "variant": "monster with hiding ability in snow locations"
+        },
+        {
+            "query": "strong beast immune to cold and frightened by fire",
+            "variant": "powerful creature that has cold immunity and is scared of fire"
+        },
+        {
+            "query": "menacing snow creature that attacks with claws",
+            "variant": "threatening ice monster that uses clawing attacks"
+        },
+        {
+            "query": "monstrosity with high strength and average dexterity in icy environments",
+            "variant": "strong creature with decent maneuverability in cold weather"
+        }
+    ]
+}

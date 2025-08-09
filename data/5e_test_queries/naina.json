@@ -1,0 +1,25 @@
+{
+    "name": "Naina",
+    "queries": [
+        {
+            "query": "large evil dragon with poison breath that can change shape",
+            "variant": "big dragon with a mean nature that has poison breath and can transform"
+        },
+        {
+            "query": "dragon that uses spells and has a powerful bite attack",
+            "variant": "spellcasting dragon that delivers strong bite attacks"
+        },
+        {
+            "query": "Naina the cunning dragon known for her paralysis breath",
+            "variant": "the clever dragon Naina famous for her paralyzing breath attack"
+        },
+        {
+            "query": "dragon immune to poison that resides in dangerous terrain",
+            "variant": "poison-immune dragon living in perilous areas"
+        },
+        {
+            "query": "intelligent dragon that excels in social skills and magic",
+            "variant": "smart dragon with great social abilities and spellcasting"
+        }
+    ]
+}

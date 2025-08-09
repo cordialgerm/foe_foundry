@@ -1,0 +1,25 @@
+{
+    "name": "Falsifier Fog",
+    "queries": [
+        {
+            "query": "huge undead creature that manipulates the battlefield with horrific illusions",
+            "variant": "huge undead being that uses horrific illusions to manipulate the battlefield"
+        },
+        {
+            "query": "ghostly fog monster that frightens enemies and occupies their space",
+            "variant": "ethereal fog creature that occupies enemy space and instills fear"
+        },
+        {
+            "query": "undead fog that is indistinguishable from regular fog and has telepathy",
+            "variant": "undead fog creature that can blend in with regular fog and communicate telepathically"
+        },
+        {
+            "query": "creature that hovers, has multiple attacks, and cold damage abilities",
+            "variant": "hovering creature with multiple attack options and abilities dealing cold damage"
+        },
+        {
+            "query": "chaotic evil creature that is immune to poison and difficult to damage",
+            "variant": "chaotic evil being that's hard to harm and immune to poison"
+        }
+    ]
+}

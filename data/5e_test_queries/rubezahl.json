@@ -1,0 +1,25 @@
+{
+    "name": "Rubezahl",
+    "queries": [
+        {
+            "query": "fiend with high Charisma and lightning attacks",
+            "variant": "fiend with lightning attacks and high charisma"
+        },
+        {
+            "query": "chaotic evil fiend that can confuse and mislead enemies",
+            "variant": "chaotic evil creature that can confuse and mislead foes"
+        },
+        {
+            "query": "medium creature with strong physical combat abilities and magic",
+            "variant": "medium-sized monster with great physical ability and magic"
+        },
+        {
+            "query": "monster that counts objects and has thunder magic",
+            "variant": "creature that can count items and uses thunder magic"
+        },
+        {
+            "query": "durable fiend immune to lightning and thunder damage",
+            "variant": "resilient fiend that is immune to thunder and lightning"
+        }
+    ]
+}

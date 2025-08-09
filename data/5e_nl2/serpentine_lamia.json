@@ -1,0 +1,49 @@
+{
+    "name": "Serpentine Lamia",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 36,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "climb 20 ft., swim 20 ft., walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "charm",
+        "seductive",
+        "ambush",
+        "grappler"
+    ],
+    "adjectives": [
+        "serpentine",
+        "seductive",
+        "cunning"
+    ],
+    "description": "The Serpentine Lamia has a serpentine lower body and an alluring humanoid upper body. It is characterized by its striking appearance and charming gaze.",
+    "memorable": "Its ability to charm opponents with a gaze makes it exceptionally dangerous in both combat and social situations.",
+    "goals": "The Serpentine Lamia seeks to lure and dominate others, often using deception and traits of seduction to achieve its aims.",
+    "relations": "Frequently encountered alongside other charming or manipulative creatures, possibly serving darker masters.",
+    "environment": "Often found in lush or treacherous terrains where it can ambush unwary travelers.",
+    "strengths": "Excels in charm-based manipulation and ambush tactics, gaining advantages in surprise attacks.",
+    "weaknesses": "Relatively vulnerable to concentrated attacks due to moderate hit points and armor class.",
+    "attacks": "Utilizes a combination of scimitar attacks and constriction to immobilize opponents, delivering slashing and bludgeoning damage.",
+    "most_powerful_ability": "Seductive Gaze, enabling it to charm humanoids and control their actions for one minute.",
+    "skills": "Proficient in deception and intimidation, high Charisma enhances these abilities significantly.",
+    "additional_information": [
+        "The Serpentine Lamia can grapple and restrain its enemies.",
+        "It has an advantage on attacks against charmed opponents.",
+        "The creature's appearance is both captivating and dangerous.",
+        "Its intelligence is low, affecting its strategic combat capabilities.",
+        "It can communicate in Abyssal and Common."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "charming serpentine monster with a beautiful gaze",
+        "ambushing monster with serpent features and a scimitar",
+        "seductive creature that grapples and charms enemies",
+        "serpentine creature that manipulates and attacks from hiding",
+        "dangerous monster living in lush environments"
+    ]
+}

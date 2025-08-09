@@ -1,0 +1,50 @@
+{
+    "name": "Beheaded Vengeful Spirit",
+    "creature_type": "Undead",
+    "alignment": "Any Alignment",
+    "size": "Medium",
+    "hp": 54,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 60 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "spirit",
+        "vengeful",
+        "psychic"
+    ],
+    "adjectives": [
+        "vengeful",
+        "formidable",
+        "manipulative"
+    ],
+    "description": "The Beheaded Vengeful Spirit embodies rage and vengeance, possessing a high Charisma value that allows it to unleash powerful psychic attacks.",
+    "memorable": "Its ability to decapitate targets and cause emotional rage when attacked makes it a truly terrifying foe.",
+    "goals": "To manipulate and destroy its enemies through psychic attacks and physical intimidation.",
+    "relations": "May be encountered alongside other undead creatures or as a servant of a necromancer.",
+    "environment": "Typically found in haunted locations or battlefields where it once struggled.",
+    "strengths": "Immunity to cold, necrotic, and poison damage, along with various condition immunities, enhances its resilience in combat.",
+    "weaknesses": "Low physical strength, which hampers its effectiveness in melee combat.",
+    "attacks": "Uses psychic damage attacks that can inflict emotional effects, enabling it to manipulate foes on the battlefield.",
+    "most_powerful_ability": "Decapitation, which can potentially kill targets by severing their heads, is its most deadly and unique ability.",
+    "senses": "Possesses darkvision allowing it to see in darkness.",
+    "skills": "Strong resistance to mental and emotional effects due to its high Charisma saving throw.",
+    "additional_information": [
+        "Can move through solid objects but takes damage if it ends its turn inside one.",
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Uses a special ability called Angry Defiance to boost its defensive capabilities considerably."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "haunting spirit that manipulates emotions",
+        "undead creature with psychic strikes",
+        "spirit that can decapitate enemies",
+        "vengeful ghost with powerful abilities",
+        "emotional manipulator in combat"
+    ]
+}

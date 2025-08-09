@@ -1,0 +1,53 @@
+{
+    "name": "Fellforged",
+    "creature_type": "Construct",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "undead",
+        "necrotic"
+    ],
+    "adjectives": [
+        "mechanical",
+        "spectral",
+        "menacing"
+    ],
+    "description": "The Fellforged is a medium-sized construct with a blend of mechanical and spectral elements, animated by a specter and appearing as a menacing foe.",
+    "memorable": "Its dual nature as a construct and specter allows for unique combat dynamics, especially with its necrotic attacks and ability to drain life.",
+    "goals": "To serve its sinister intent in combat by using necrotic attacks to weaken living foes.",
+    "relations": "May be found alongside other constructs or undead, as it is animated by a specter.",
+    "environment": "Typically encountered in dark, ruined, or haunted locations.",
+    "strengths": "Immunities to necrotic, poison, and psychic damage, and a strong constitution make it tough to take down.",
+    "weaknesses": "Sensitivity to sunlight, causing disadvantage on attacks and perception checks.",
+    "attacks": "Makes two Necrotic Slam attacks that deal both bludgeoning and necrotic damage, capable of reducing the target's hit point maximum.",
+    "most_powerful_ability": "Burst Gears releases broken parts inflicting piercing damage to nearby creatures, complicating combat strategies.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and passive perception of 12.",
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, drink, or sleep.",
+        "Can function effectively in combat without standard biological needs.",
+        "Expelled specter retains hit points upon being turned.",
+        "Multiattack allows for a consistent offensive presence.",
+        "Damage reduction feature can significantly weaken opponents."
+    ],
+    "damage_types": [
+        "necrotic",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct with spectral abilities",
+        "mechanical undead foe in combat",
+        "necrotic damage dealing construct",
+        "sunlight sensitive spectral creature",
+        "creature that doesn't need food or sleep"
+    ]
+}

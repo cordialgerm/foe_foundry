@@ -1,0 +1,25 @@
+{
+    "name": "Ice Urchin",
+    "queries": [
+        {
+            "query": "cold environment creature with fear of fire",
+            "variant": "creature in cold settings that fears fire"
+        },
+        {
+            "query": "large ice monster vulnerable to fire attacks",
+            "variant": "big ice creature that is weak against fire"
+        },
+        {
+            "query": "monster that slides on ice and has venomous spines",
+            "variant": "creature that moves fast on ice and has poisonous spines"
+        },
+        {
+            "query": "monstrosity with armor class 14 and excels in icy terrains",
+            "variant": "creature with AC 14 that does well in snow"
+        },
+        {
+            "query": "ice urchin with piercing and cold damage when touched",
+            "variant": "urchin of ice that deals cold and piercing damage upon contact"
+        }
+    ]
+}

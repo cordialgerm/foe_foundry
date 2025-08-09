@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Broodguard Dragon Servitor",
+    "queries": [
+        {
+            "query": "small humanoid creature serving dragons with sunlight sensitivity",
+            "variant": "small humanoid serving dragons that is sensitive to sunlight"
+        },
+        {
+            "query": "Kobold guardian with Pack Tactics and Draconic Smite abilities",
+            "variant": "guardian kobold that has Pack Tactics and Draconic Smite"
+        },
+        {
+            "query": "dragon servant with advantage in combat near allies",
+            "variant": "servant of dragons that gains advantage in fights with nearby allies"
+        },
+        {
+            "query": "melee combat kobold with a shield and bill hook weapon",
+            "variant": "kobold that fights in melee using a shield and bill hook"
+        },
+        {
+            "query": "Kobold Broodguard that enhances allies' attacks",
+            "variant": "Broodguard kobold that boosts allies' attack damage"
+        }
+    ]
+}

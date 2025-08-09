@@ -1,0 +1,53 @@
+{
+    "name": "Bone Lord",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 285,
+    "ac": 20,
+    "srd": false,
+    "cr": "19",
+    "movement": "40 feet",
+    "role": "Leader",
+    "tags": [
+        "undead",
+        "necrotic",
+        "summoner"
+    ],
+    "adjectives": [
+        "formidable",
+        "decayed",
+        "powerful",
+        "tactical"
+    ],
+    "description": "The Bone Lord is a gigantic figure comprised of skeletal remains, radiating an aura of decay and death. Its presence commands respect and fear, adorned with remnants of its fallen enemies and exuding a menacing confidence.",
+    "memorable": "Its ability to summon and control numerous undead minions makes it a terrifying combatant, and its Rejuvenation power ensures it remains a persistent threat.",
+    "goals": "To spread death and decay while commanding lesser undead to do its bidding.",
+    "relations": "Typically serves as a master to various undead creatures, such as skeletons and zombies. Will often command ghouls and wights in battle.",
+    "environment": "Commonly found in dark, desolate locations like graveyards, ruins, or places steeped in necromantic energy.",
+    "strengths": "High durability and magical weapon attacks add an additional necrotic damage, while its ability to summon undead reinforces its combat capabilities.",
+    "weaknesses": "Vulnerable to effects targeting constructs and radiant damage, potentially turning the tide against it.",
+    "attacks": "Utilizes a combination of tail strikes and claw attacks, both infused with necrotic energy, and is capable of grappling foes.",
+    "most_powerful_ability": "The Pattern of Death ability unleashes a wave of necrotic energy that not only damages enemies but heals friendly undead.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 90 feet and a high passive Perception score of 20, allowing it to effectively detect hidden threats.",
+    "skills": "Proficient in perception, making it capable of spotting threats in low light.",
+    "additional_information": [
+        "Immunity to necrotic and poison damage.",
+        "Legendary Resistance allows it to succeed on failed saving throws.",
+        "Can exist without needing air, food, drink, or sleep.",
+        "Ability to command undead makes it a formidable leader on the battlefield.",
+        "Can rejuvenate into a new body if any part of it remains intact."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead commander",
+        "necromancer skeleton lord",
+        "powerful undead creature",
+        "grim reaper monster",
+        "summoner of the dead"
+    ]
+}

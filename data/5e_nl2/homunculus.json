@@ -1,0 +1,53 @@
+{
+    "name": "Homunculus",
+    "creature_type": "Construct",
+    "alignment": "Neutral",
+    "size": "Tiny",
+    "hp": 5,
+    "ac": 13,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 ft. walk, 40 ft. fly",
+    "role": null,
+    "tags": [
+        "familiar",
+        "construct",
+        "magical"
+    ],
+    "adjectives": [
+        "tiny",
+        "artificial",
+        "loyal",
+        "stealthy"
+    ],
+    "description": "A tiny, artificial creature with a bat-like body, leathery wings, a sharp-toothed mouth, and a humanoid face. It is created by a wizard or alchemist.",
+    "memorable": "It shares a telepathic bond with its creator, making it an excellent scout or messenger despite its fragility.",
+    "goals": "To serve its creator and assist with tasks such as scouting and delivering messages.",
+    "relations": "Often seen accompanying wizards or alchemists as a familiar.",
+    "environment": "Typically found in laboratories or areas of magical study.",
+    "strengths": "Good dexterity and speed, capable of flying and communication via telepathy.",
+    "weaknesses": "Very low strength and hit points, making it vulnerable to damage.",
+    "attacks": "Bite attack that deals piercing and poison damage, with potential incapacitation.",
+    "most_powerful_ability": "Telepathic Bond allows communication and sensing between it and its creator across vast distances.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Has immunity to poison and certain conditions like being charmed or paralyzed.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep.",
+        "Can deliver touch-range spells for its creator.",
+        "Immunity to exhaustion and psychic damage.",
+        "Provides tactical advantages on certain checks.",
+        "Fragile but offers significant utility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny creature with magical abilities",
+        "construct that delivers spells for wizards",
+        "stealthy familiar with a bat-like appearance",
+        "artificial creature loyal to its creator",
+        "homunculus abilities and roles"
+    ]
+}

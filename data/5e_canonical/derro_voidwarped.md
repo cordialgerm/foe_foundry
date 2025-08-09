@@ -1,6 +1,8 @@
 <MonsterName/>Derro, Voidwarped</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>120</HP>
 <summary>The Derro, Voidwarped is a small humanoid creature with a neutral evil alignment. This unique being possesses an unusual combination of capabilities that make it a formidable opponent in the battlefield. It stands out due to its flight ability, high dexterity, and proficiency in magical attacks, along with its resilience against various forms of damage. While it does have weaknesses, particularly daylight sensitivity, its strengths lie in its potent attacks and spell-like abilities, which allow it to inflict substantial damage and incapacitate foes.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The Derro can also unleash a Void Speech Rant, which recharges on a roll of 5 or
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derro, Voidwarped
 
 *Small* *Humanoid* *neutral evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Void Speech Rant (Recharge 5–6):** Spews a tirade of Void Speech. Each creature within 40' of it that can hear the tirade: 27 (5d10) psychic and is incapacitated until the end of its next turn (DC 15 Wis half damage and isn’t incapacitated).
 
 
+</statblock>
 
 

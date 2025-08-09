@@ -1,0 +1,47 @@
+{
+    "name": "Brown Bear",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 34,
+    "ac": 11,
+    "srd": true,
+    "cr": "1",
+    "movement": "40 ft. speed on land, 30 ft. climbing",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "beast",
+        "wildlife"
+    ],
+    "adjectives": [
+        "massive",
+        "powerful",
+        "predatory"
+    ],
+    "description": "A massive, powerful predator with thick, shaggy fur, long claws, and a robust build, capable of standing on its hind legs. Known for its impressive combat abilities and keen sense of smell.",
+    "memorable": "The brown bear is striking for its sheer size and strength as a predator, known for swiping with powerful claws and delivering crushing bites.",
+    "goals": "Foraging for food and hunting large prey, often solitary and active during the summer months preparing for hibernation.",
+    "relations": "Can be encountered alongside various wildlife; often preys on animals like deer and moose.",
+    "environment": "Typically found in forests, mountainous areas, and other wilderness environments.",
+    "strengths": "Strong physical attacks with high damage output; excellent swimmer and climber.",
+    "weaknesses": "Low armor class makes it vulnerable to physical attacks; limited intelligence and strategy.",
+    "attacks": "Can deliver a powerful bite (11 piercing damage) and swiping claws attack (9 slashing damage), capable of grappling smaller targets.",
+    "most_powerful_ability": "Keen Smell, granting advantage on Perception checks relying on smell, making it difficult to surprise.",
+    "senses": "Passive perception of 13 allows it to notice many details in its environment.",
+    "skills": "Proficient in Perception checks, enhancing its ability to detect prey.",
+    "additional_information": [
+        "Can grapple Medium or smaller creatures with its claws attack, focusing combat.",
+        "Primarily solitary but can be seen in paired instances during mating season.",
+        "Impressive adaptability in climbing and swimming despite size."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large powerful predator with shaggy fur",
+        "brown bear attacking in the forest",
+        "powerful beast known for hunting",
+        "massive bear that can climb and swim",
+        "predatory bear with keen sense of smell"
+    ]
+}

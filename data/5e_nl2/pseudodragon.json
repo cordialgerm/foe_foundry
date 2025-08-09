@@ -1,0 +1,52 @@
+{
+    "name": "Pseudodragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 7,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "15 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "familiar",
+        "magical"
+    ],
+    "adjectives": [
+        "tiny",
+        "magical",
+        "playful"
+    ],
+    "description": "A small, dragon-like creature the size of a cat, with leathery wings, a barbed tail, and shimmering scales in red, gold, or green.",
+    "memorable": "Despite its small size, it showcases impressive abilities like magic resistance and telepathy.",
+    "goals": "Serves as a companion, often sought after by wizards or other spellcasters.",
+    "relations": "Often accompanies spellcasters or may serve as a familiar.",
+    "environment": "Typically found in magical or forested areas.",
+    "strengths": "Agility and stealth, with heightened senses and a strong telepathic communication ability.",
+    "weaknesses": "Relatively fragile with low hit points and susceptible to direct attacks.",
+    "attacks": "Can deliver a sting that inflicts piercing damage and may poison the target, potentially causing unconsciousness.",
+    "most_powerful_ability": "Telepathic Static, stunning enemies with a mental assault.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, enhancing its perceptive capabilities in its immediate surroundings.",
+    "skills": "Skilled at stealth, allows it to evade detection effectively.",
+    "additional_information": [
+        "Can communicate simple ideas telepathically within 100 feet.",
+        "Heightened Senses provide a Perception score of 18.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Natural curiosity and playfulness; fiercely protective of companions.",
+        "Can puff smoke to obscure vision once per day."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small dragon-like magical companion",
+        "Pseudodragon abilities and traits",
+        "tiny dragon with telepathy and magic resistance",
+        "agile creature with a barbed tail",
+        "dragon scout with powerful senses"
+    ]
+}

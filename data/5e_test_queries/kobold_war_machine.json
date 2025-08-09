@@ -1,0 +1,25 @@
+{
+    "name": "Kobold War Machine",
+    "queries": [
+        {
+            "query": "large construct designed for battlefield dominance with strong armor",
+            "variant": "large battlefield machine construct with strong armor"
+        },
+        {
+            "query": "battlefield machine that can use fire attacks and is operated by kobolds",
+            "variant": "machine for battle that uses fire attacks and is controlled by kobolds"
+        },
+        {
+            "query": "tough battlefield construct that deals double damage to objects and avoids critical hits",
+            "variant": "strong war machine that does double damage to structures and escapes critical hits"
+        },
+        {
+            "query": "creature with high Constitution and immune to poison and psychic damage",
+            "variant": "monster with high Con and immunity to poison and psychic damage"
+        },
+        {
+            "query": "war machine with spiked wheel attacks and a cone of fire breath",
+            "variant": "machine that uses spiked wheel attacks and has a fire breath cone"
+        }
+    ]
+}

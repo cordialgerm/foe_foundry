@@ -1,0 +1,50 @@
+{
+    "name": "Psoglav",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 115,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 60 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "chaotic",
+        "powerful"
+    ],
+    "adjectives": [
+        "formidable",
+        "treacherous",
+        "chaotic"
+    ],
+    "description": "The Psoglav is a large fiend with exceptional agility and strength, characterized by its ability to control shadows and turn itself invisible, making it a stealthy ambusher.",
+    "memorable": "It can control shadows and use them to summon additional threats, causing chaos in battle.",
+    "goals": "To ambush and confuse opponents while maintaining control over shadows.",
+    "relations": "May be encountered with other fiends or shadowy creatures it commands.",
+    "environment": "Typically found in shadowy or dark environments where it can utilize its invisibility and shadow control.",
+    "strengths": "High Strength and Dexterity, strong melee damage through Bite attacks, and resistance to various damage types.",
+    "weaknesses": "Reliance on melee and need to maintain concentration on abilities, potentially exploited by clever tactics.",
+    "attacks": "Three melee Bite attacks per turn, dealing significant piercing damage with the potential to ambush.",
+    "most_powerful_ability": "Shadow-Stealing Ray, which allows it to control the shadows of its enemies and summon additional shadow creatures.",
+    "equipment": null,
+    "senses": "Blindsight up to 30 feet enables it to detect creatures without needing light.",
+    "skills": "High proficiency in Stealth, Acrobatics, Intimidation, and Perception makes it a highly capable combatant.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Ability to turn invisible until it attacks or uses special abilities.",
+        "Can Shadow Jump, enhancing its mobility in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dangerous fiend with shadow abilities",
+        "large chaotic evil monster with invisibility",
+        "creature that controls shadows in combat",
+        "ambush monster that attacks with teeth",
+        "powerful fiend that summons shadows"
+    ]
+}

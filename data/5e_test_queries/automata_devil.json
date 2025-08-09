@@ -1,0 +1,25 @@
+{
+    "name": "Automata Devil",
+    "queries": [
+        {
+            "query": "large fiend that can teleport and uses fear tactics",
+            "variant": "fiend that can teleport and uses fear tactics, large"
+        },
+        {
+            "query": "devil creature with high strength and immune to fire",
+            "variant": "fire immune devil creature with high strength"
+        },
+        {
+            "query": "formidable creature that attacks with claws and has magic resistance",
+            "variant": "formidable creature with magic resistance that attacks with claws"
+        },
+        {
+            "query": "automata devil abilities that frighten and grapple",
+            "variant": "abilities of the automata devil that frighten and grapples"
+        },
+        {
+            "query": "monster with darkvision that uses intimidation in combat",
+            "variant": "monster that uses intimidation in combat and has darkvision"
+        }
+    ]
+}

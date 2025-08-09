@@ -1,0 +1,51 @@
+{
+    "name": "Jackalwere",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 18,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "40 feet walking speed allowing quick assaults",
+    "role": "Skirmisher",
+    "tags": [
+        "shapeshifter",
+        "deceiver",
+        "fiend"
+    ],
+    "adjectives": [
+        "deceptive",
+        "opportunistic",
+        "chaotic",
+        "sly"
+    ],
+    "description": "The Jackalwere is a Medium-sized fiend that can shift into a Small jackal or a humanoid form, embodying chaotic evil tendencies. It has a sleek, cunning appearance, often adorned with a deceptive aura.",
+    "memorable": "Its ability to charm and incapacitate foes with a dangerous gaze and its reliance on deceit make it particularly treacherous.",
+    "goals": "To deceive and ambush unsuspecting foes while leveraging its shapeshifting capabilities in combat.",
+    "relations": "Often found working with other fiends or in packs to exploit its Pack Tactics ability.",
+    "environment": "Typically lurks in desolate areas, often preying on those who wander into its territory.",
+    "strengths": "Good at stealth and deception, enhanced by its Pack Tactics and charm abilities.",
+    "weaknesses": "Vulnerable to magical attacks and silvered weapons, which can bypass its damage resistance.",
+    "attacks": "Bite attack from jackal or hybrid form dealing piercing damage and a scimitar attack in human form dealing slashing damage.",
+    "most_powerful_ability": "The Sleep Gaze ability allows it to charm and potentially incapacitate opponents, impacting combat significantly.",
+    "equipment": "Scimitar (in human or hybrid form)",
+    "senses": "Keen Hearing and Smell grants it advantage on Perception checks related to these senses.",
+    "skills": "Notable proficiency in Deception (+4), enhancing its ability to manipulate and lie to others.",
+    "additional_information": [
+        "Has advantage on attack rolls through Pack Tactics when near allies.",
+        "Must succeed on a saving throw to make true statements, creating unintentional lies.",
+        "Damage resistance against nonmagical, non-silvered weapons provides decent protection.",
+        "Can quickly adapt its form for ambushes, showing strategic depth in encounters.",
+        "Fearless against mundane weapons but will retreat if outnumbered."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil shapeshifting monster",
+        "deceptive fiend that can charm enemies",
+        "jackal hybrid that ambushes travelers",
+        "monster that uses dangerous gaze attack",
+        "sneaky fiend known for deceit and ambush"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Water Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Giant Water Scorpion is a formidable Large beast that thrives in aquatic environments. It possesses a natural armor rating of 14, providing it with good defensive capabilities. With 93 hit points, it can withstand a moderate amount of damage in combat. The scorpion capitalizes on its environment, boasting a swimming speed of 30 feet and a walking speed of 20 feet, displaying good mobility both in water and on land. The challenge rating of 4 indicates that it is a threat to a party of moderate-level adventurers, capable of dealing significant damage through its unique abilities. Particularly notable are its poisonous attacks and stealthy nature, making it a dangerous ambush predator. However, its intelligence is very low, which affects its tactical abilities and interactions with foes.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Giant Water Scorpion can perform a Multiattack, allowin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Water Scorpion
 
 *Large* *Beast* *unaligned*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) piercing damage. The target is grappled (escape DC 13) if it is a Medium or smaller creature and the scorpion doesn’t have another creature grappled.
 
 
+</statblock>
 
 

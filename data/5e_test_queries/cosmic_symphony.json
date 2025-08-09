@@ -1,0 +1,25 @@
+{
+    "name": "Cosmic Symphony",
+    "queries": [
+        {
+            "query": "large celestial creature that can fly and is invisible",
+            "variant": "big celestial being that flies and is not visible"
+        },
+        {
+            "query": "powerful creature with high Charisma that uses thunder damage",
+            "variant": "strong being with high charisma using thunder attack"
+        },
+        {
+            "query": "creature that incapacitates enemies and has a 60-foot flight speed",
+            "variant": "being that can stun foes and has 60 feet flying range"
+        },
+        {
+            "query": "celestial being that is immune to radiant damage and deafens foes",
+            "variant": "heavenly creature immune to radiant attacks and can deafen enemies"
+        },
+        {
+            "query": "creature that excels in spellcasting and has a challenge rating of 15",
+            "variant": "being skilled in spells with a CR of 15"
+        }
+    ]
+}

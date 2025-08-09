@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Amethyst Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with psionic powers and massive hit points",
+            "variant": "gargantuan drake with psychic abilities and huge hit points"
+        },
+        {
+            "query": "dragon that can manipulate minds and has darkvision",
+            "variant": "dragon able to control minds and possesses darkvision"
+        },
+        {
+            "query": "creature with powerful spells and is immune to fatigue",
+            "variant": "being with strong spells and condition immunity to fatigue"
+        },
+        {
+            "query": "high challenge rating monster that uses telepathy",
+            "variant": "high CR creature that employs telepathy"
+        },
+        {
+            "query": "massive dragon with force damage resistance and legendary actions",
+            "variant": "huge dragon that resists force damage and has legendary abilities"
+        }
+    ]
+}

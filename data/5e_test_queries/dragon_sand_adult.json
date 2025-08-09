@@ -1,0 +1,25 @@
+{
+    "name": "Sand Adult Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with sandy camouflage that causes exhaustion",
+            "variant": "big dragon that has sandy camouflage and makes you tired"
+        },
+        {
+            "query": "dragon that breathes superheated sand and blinds targets",
+            "variant": "dragon that can exhale superheated sand and blind its enemies"
+        },
+        {
+            "query": "sandy environment creature that has a frightful presence",
+            "variant": "creature in sandy surroundings that causes fear"
+        },
+        {
+            "query": "physical powerhouse dragon with high hit points and strong attacks",
+            "variant": "big tough dragon with a lot of hit points and powerful hit"
+        },
+        {
+            "query": "neutral evil dragon with elemental power requiring less sustenance",
+            "variant": "evil dragon infused with elements needing less food and air"
+        }
+    ]
+}

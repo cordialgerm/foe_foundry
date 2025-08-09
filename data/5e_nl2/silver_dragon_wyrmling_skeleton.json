@@ -1,0 +1,50 @@
+{
+    "name": "Silver Dragon Wyrmling Skeleton",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 17,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "dragon",
+        "skeleton"
+    ],
+    "adjectives": [
+        "fearsome",
+        "strong",
+        "poisonous"
+    ],
+    "description": "The Silver Dragon Wyrmling Skeleton is a medium-sized undead creature with exceptional strength and a skeletal appearance reminiscent of a dragon.",
+    "memorable": "Its ability to unleash powerful breath attacks, including shards and poisonous gas, makes it a formidable opponent.",
+    "goals": "To serve its purpose in combat, utilizing its breath weapons and physical attacks.",
+    "relations": "May be encountered alongside other undead dragons or as an animated servant of a necromancer.",
+    "environment": "Typically found in dark, deserted areas or lairs associated with dragons.",
+    "strengths": "Exceptional strength and constitution allow it to deal with significant damage and endure attacks.",
+    "weaknesses": "Vulnerable to bludgeoning damage and has limited tactical options due to low dexterity and intelligence.",
+    "attacks": "Bite attack that deals piercing damage and breath weapons that can affect multiple targets with piercing damage or poison.",
+    "most_powerful_ability": "Breath Weapons allowing it to deal heavy area damage or inflict poisoned conditions.",
+    "equipment": null,
+    "senses": "It possesses blindsight up to 10 feet, allowing it to navigate effectively in the dark.",
+    "skills": null,
+    "additional_information": [
+        "Immunities to cold and poison damage",
+        "Condition immunities to exhaustion and poisoned states",
+        "Formidable foe for low-level adventurers"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "skeleton dragon with breath attacks",
+        "undead dragon with piercing bite",
+        "medium silver dragon skeleton",
+        "vulnerable skeleton needing bludgeoning weapons",
+        "lawful evil dragon-like undead"
+    ]
+}

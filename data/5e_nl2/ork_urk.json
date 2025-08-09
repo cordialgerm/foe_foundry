@@ -1,0 +1,54 @@
+{
+    "name": "Ork Urk",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "orc",
+        "warrior",
+        "frontline",
+        "aggro"
+    ],
+    "adjectives": [
+        "ferocious",
+        "durable",
+        "aggressive",
+        "battle-ready"
+    ],
+    "description": "The Ork Urk is a muscular humanoid adorned with simple battle-worn armor, wielding a greataxe. This creature's ferocity in combat marks it as a formidable opponent.",
+    "memorable": "When bloodied, the Urk becomes more dangerous, gaining advantage on attacks while also being vulnerable to increased damage.",
+    "goals": "To engage in battle and protect its orc war band while seeking personal glory in combat.",
+    "relations": "Often found among other orc warriors, Urks are respected figures within orc society for their bravery.",
+    "environment": "Typically encountered in war bands roaming forests, mountains, or during raids.",
+    "strengths": "Good offensive capabilities with Multiattack and the ability to deal significant damage with a greataxe.",
+    "weaknesses": "Gains advantage on attacks against them when bloodied, making them a riskier choice in prolonged battles.",
+    "attacks": "Utilizes a powerful greataxe for slashing damage and a handaxe for versatility in melee or ranged attacks.",
+    "most_powerful_ability": "Bloodied Frenzy, enabling more dangerous attacks when the Urk is in a weakened state.",
+    "equipment": "Greataxe and handaxe used for melee and ranged combat.",
+    "senses": null,
+    "skills": "Proficient in Athletics and Intimidation, making it capable in physical challenges and social interactions.",
+    "additional_information": [
+        "Respected by other orcs for their sacrifices in battle.",
+        "Known as frontline warriors in orc war bands.",
+        "Can enter a frenzied state when bloodied, increasing their threat.",
+        "Possesses unarmored defense making it flexible in combat.",
+        "Fighter's title indicates their dangerous profession and urgency in battle."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "orc warrior with a greataxe",
+        "aggressive monster with powerful melee attacks",
+        "durable humanoid that fights for orc war bands",
+        "ferocious front line fighter in battle",
+        "bloodied creature that becomes more dangerous"
+    ]
+}

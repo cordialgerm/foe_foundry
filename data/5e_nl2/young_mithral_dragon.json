@@ -1,0 +1,52 @@
+{
+    "name": "Young Mithral Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 170,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "mythical",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "versatile"
+    ],
+    "description": "The Young Mithral Dragon is a majestic large dragon with shimmering metallic scales, embodying both strength and elegance. It moves with grace, showcasing its great agility and fierce presence in combat.",
+    "memorable": "This dragon is capable of ending magical effects and has immunity to slashing damage, presenting unique challenges during encounters.",
+    "goals": "The Young Mithral Dragon often seeks to guard its territory and treasures, but it can also engage in alliances if presented with the right incentives.",
+    "relations": "It may serve as an ally to good-aligned adventurers, while suitably powerful foes can challenge its might.",
+    "environment": "Typically found in mountainous regions or caves that contain precious metals and gems.",
+    "strengths": "Exceptional Perception allows it to detect hidden foes, while Magic Resistance enhances its survival in magical confrontations.",
+    "weaknesses": "While agile, it still has a manageable speed compared to other high-flying dragons.",
+    "attacks": "The dragon's Multiattack includes a powerful Bite that can negate magical effects and two Claw attacks that can inflict ongoing damage.",
+    "most_powerful_ability": "Shard Breath unleashes a cone of metallic shards that can deal significant damage and create difficult terrain.",
+    "equipment": null,
+    "senses": "The dragon has blindsight up to 30 feet and a passive Perception score of 19, making it highly aware of its surroundings.",
+    "skills": "It excels in Insight and Perception, allowing for heightened awareness and understanding of its environment.",
+    "additional_information": [
+        "The Young Mithral Dragon is charm-proof, making it a reliable fighter against enchantments.",
+        "Its presence can inspire awe and fear, affecting interactions with other creatures.",
+        "The dragon's breath weapon creates lasting effects on the battlefield.",
+        "With its high Dexterity, it possesses valuable stealth capabilities.",
+        "It communicates using telepathy, enhancing its engagement in tactical discussions."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": "null",
+    "test_queries": [
+        "formidable dragon that can negate magic",
+        "dragon with slashing immunity and charm-proof",
+        "majestic dragon with metallic breath attack",
+        "young dragon that flies and guards treasures",
+        "agile large dragon in mountainous regions"
+    ]
+}

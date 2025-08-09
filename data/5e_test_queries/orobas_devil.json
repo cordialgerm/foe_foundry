@@ -1,0 +1,25 @@
+{
+    "name": "Orobas Devil",
+    "queries": [
+        {
+            "query": "large fiend with fire attacks and strong magical abilities",
+            "variant": "big fiend that uses fire attacks and has strong magical powers"
+        },
+        {
+            "query": "lawful evil creature that excels in deception and has powerful melee attacks",
+            "variant": "lawful evil being that is good at deception and does strong melee damage"
+        },
+        {
+            "query": "Orobas Devil's abilities including teleportation and fire immunity",
+            "variant": "abilities of the Orobas Devil like teleport and immunity to fire"
+        },
+        {
+            "query": "monster with high hit points and multiple damaging attacks in combat",
+            "variant": "creature with many hit points and several damaging combat attacks"
+        },
+        {
+            "query": "intelligent fiend capable of magical resistance and detecting celestials",
+            "variant": "smart fiend that can resist magic and find celestials"
+        }
+    ]
+}

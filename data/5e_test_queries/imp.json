@@ -1,0 +1,25 @@
+{
+    "name": "Imp",
+    "queries": [
+        {
+            "query": "tiny fiend that can turn invisible and sting",
+            "variant": "small devil that can become invisible and has a poisonous sting"
+        },
+        {
+            "query": "cunning devil that serves more powerful fiends and flies",
+            "variant": "clever fiend serving stronger devils that can fly"
+        },
+        {
+            "query": "mischievous shapeshifter that delights in causing chaos",
+            "variant": "trickster shapechanger that loves creating trouble"
+        },
+        {
+            "query": "winged fiend that uses ventriloquism and has darkvision",
+            "variant": "flying devil with the ability to imitate voices and see in darkness"
+        },
+        {
+            "query": "small creature with high dexterity that can shapeshift and resist fire",
+            "variant": "tiny being with great agility that can change shape and is immune to fire"
+        }
+    ]
+}

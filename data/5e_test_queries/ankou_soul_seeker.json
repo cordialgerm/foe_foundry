@@ -1,0 +1,25 @@
+{
+    "name": "Ankou Soul Seeker",
+    "queries": [
+        {
+            "query": "large dragon that can control undead and has strong defensive abilities",
+            "variant": "big dragon that controls undead and has strong defense abilities"
+        },
+        {
+            "query": "stealthy dragon that can become invisible in dim light and has cold breath attack",
+            "variant": "sneaky dragon that can vanish in low light and has icy breath attack"
+        },
+        {
+            "query": "creature that guards the boundary between life and death with radiant damage ability",
+            "variant": "monster that protects life and death boundary using radiant attack"
+        },
+        {
+            "query": "dragon with high Constitution and aura affecting undead",
+            "variant": "dragon that has strong Constitution and aura that impacts undead"
+        },
+        {
+            "query": "magical dragon that can transport souls and transform its shape",
+            "variant": "spellcasting dragon that can shift souls and change its form"
+        }
+    ]
+}

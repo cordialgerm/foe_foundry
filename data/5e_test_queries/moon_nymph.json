@@ -1,0 +1,25 @@
+{
+    "name": "Moon Nymph",
+    "queries": [
+        {
+            "query": "psychic damage creature that can become invisible",
+            "variant": "creature that can turn invisible and does psychic damage"
+        },
+        {
+            "query": "aberration with high dexterity and charm abilities",
+            "variant": "charm abilities and a high dexterity aberration"
+        },
+        {
+            "query": "medium-sized creature that flies and relies on magic",
+            "variant": "creature that is medium, can fly, and uses magic"
+        },
+        {
+            "query": "moon nymph abilities for manipulating the battlefield",
+            "variant": "abilities of moon nymph that manipulate the battlefield"
+        },
+        {
+            "query": "dangerous flying monster with radiant attacks",
+            "variant": "flying menace that has radiant damage attacks"
+        }
+    ]
+}

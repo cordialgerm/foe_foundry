@@ -1,0 +1,50 @@
+{
+    "name": "Walking Statue",
+    "creature_type": "Construct",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 66,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "guardian",
+        "bludgeoning",
+        "ambush"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "heavy-hitting"
+    ],
+    "description": "The Walking Statue is a large construct, built with formidable strength, resembling a typical statue until it moves. It has a robust armor and a solid pool of hit points, giving it durability in combat. Its appearance is unassuming until activated or attacked.",
+    "memorable": "The statue can blend into its surroundings and ambush adventurers, only revealing its true nature when it springs to life.",
+    "goals": "Typically tasked with guarding treasures or specific locations.",
+    "relations": "Can serve alongside other constructs or creatures that require protection.",
+    "environment": "Often found in locations where it protects valuable treasures.",
+    "strengths": "Exceptional melee attacks due to high strength and constitution; immune to poison and psychic damage.",
+    "weaknesses": "Low dexterity results in poor agility and initiative; easily affected by bludgeoning damage.",
+    "attacks": "Uses powerful melee attacks called 'Smash' that deal significant bludgeoning damage.",
+    "most_powerful_ability": "Has a bludgeoning weakness that causes it to fall prone when taking excessive bludgeoning damage.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 ft., allowing it to detect creatures nearby even without sight.",
+    "skills": null,
+    "additional_information": [
+        "Immune to a wide range of conditions.",
+        "Falls prone when receiving more than 10 bludgeoning damage from a single attack.",
+        "Can camouflage as a normal statue when motionless.",
+        "Can be destroyed by successful casting of dispel magic at a high difficulty.",
+        "Offers strategic challenges in combat due to its unique abilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large statue that can attack",
+        "guardian statue with bludgeoning weakness",
+        "formidable construct that ambushes intruders",
+        "heavy-hitting statue with high durability",
+        "motionless statue that can become dangerous"
+    ]
+}

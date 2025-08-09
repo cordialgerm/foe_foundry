@@ -1,0 +1,25 @@
+{
+    "name": "Blood Imp",
+    "queries": [
+        {
+            "query": "small flying fiend that inflicts poison damage",
+            "variant": "small fiend that can fly and deals poison damage"
+        },
+        {
+            "query": "deceptive creature with darkvision that thrives in shadows",
+            "variant": "cunning creature that can see in the dark and excels in shadows"
+        },
+        {
+            "query": "lawful evil imp known for its magical resistance and cunning",
+            "variant": "imp with lawful evil alignment, recognized for cleverness and magic resistance"
+        },
+        {
+            "query": "creature skilled in persuasion that can use poison attacks",
+            "variant": "monster proficient in persuasion that has poison abilities"
+        },
+        {
+            "query": "tiny fiend that can exploit enemy weaknesses with its sting",
+            "variant": "small fiend that capitalizes on enemy flaws using its sting attack"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Arborcyte",
+    "queries": [
+        {
+            "query": "large plant creature that controls the battlefield with animated tendrils",
+            "variant": "big plant monster that manages the battlefield using animated vines"
+        },
+        {
+            "query": "plant monster vulnerable to fire with high hit points",
+            "variant": "plant creature weak against fire that has a lot of hit points"
+        },
+        {
+            "query": "chaotic neutral tree-like monster with powerful thorn attacks",
+            "variant": "chaotic neutral tree-like creature with strong thorn attacks"
+        },
+        {
+            "query": "tendrils summoning monster that grapples opponents",
+            "variant": "monster that summons tendrils and grapples enemies"
+        },
+        {
+            "query": "Arborcyte special abilities and combat tactics",
+            "variant": "combat strategies and special powers of the Arborcyte"
+        }
+    ]
+}

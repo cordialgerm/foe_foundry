@@ -1,0 +1,25 @@
+{
+    "name": "Steam Golem",
+    "queries": [
+        {
+            "query": "large fire-based construct with steam abilities",
+            "variant": "big fire construct with steam powers"
+        },
+        {
+            "query": "mechanical creature vulnerable to water attacks",
+            "variant": "robotic monster weak to water based attacks"
+        },
+        {
+            "query": "golem with high slashing damage and fire attacks",
+            "variant": "construct doing large slashing and fire damage"
+        },
+        {
+            "query": "Steam Golem abilities related to magic resistance",
+            "variant": "abilities of Steam Golem that resist magic"
+        },
+        {
+            "query": "powerful construct that doesn't need food or sleep",
+            "variant": "strong construct that doesn\u2019t require food or sleep"
+        }
+    ]
+}

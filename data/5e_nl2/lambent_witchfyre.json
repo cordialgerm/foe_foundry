@@ -1,0 +1,51 @@
+{
+    "name": "Lambent Witchfyre",
+    "creature_type": "Aberration",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 110,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "20 feet walk speed",
+    "role": null,
+    "tags": [
+        "fire",
+        "undead",
+        "healer"
+    ],
+    "adjectives": [
+        "dangerous",
+        "fiery",
+        "sustainable"
+    ],
+    "description": "The Lambent Witchfyre is a large aberration characterized by its fire-based abilities, glowing with a flame-like appearance. It has no discernible social traits, possessing low intelligence and charisma.",
+    "memorable": "Its ability to heal from fire damage and turn slain opponents to ash makes the Lambent Witchfyre a nightmarish foe.",
+    "goals": "Typically seeks to eliminate its opponents with fiery attacks and absorb fire damage to sustain itself.",
+    "relations": "May be encountered alongside other fire-based entities or creatures that thrive in chaotic environments.",
+    "environment": "Commonly found in areas infused with fire magic or within burned ruins.",
+    "strengths": "Immunities to fire and poison, ability to heal through fire damage, and ability to inflict additional fire damage that can spread burns.",
+    "weaknesses": "Low intelligence and poor social capabilities; limited movement speed.",
+    "attacks": "Uses Blazing Touch attacks that deal significant fire damage and can set targets ablaze.",
+    "most_powerful_ability": "Fire Absorption allows it to regain health when hit by fire damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense its environment without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Can squeeze through tight spaces without hindrance.",
+        "Inflicts ongoing fire damage to creatures that come into contact with it.",
+        "Creates bright light within a 30-foot radius, illuminating dark areas."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire-based aberration that heals",
+        "creature that turns enemies to ash",
+        "flame monster with regeneration abilities",
+        "large creature that inflicts fire damage",
+        "creature immune to fire and poisonous attacks"
+    ]
+}

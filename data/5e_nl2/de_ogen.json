@@ -1,0 +1,54 @@
+{
+    "name": "De Ogen",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 40 ft. but cannot walk",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "incapacitating",
+        "stealthy"
+    ],
+    "adjectives": [
+        "potent",
+        "agile",
+        "resilient",
+        "sneaky",
+        "fiery"
+    ],
+    "description": "De Ogen is a medium-sized undead creature characterized by its exceptional agility, hovering movement, and a haunting presence that renders foes incapacitated. Its skeletal frame offers little in physical strength, but it compensates with cunning and speed.",
+    "memorable": "Can incapacitate creatures with its Transfixing Gaze and turn the slain into shadows, creating a continuous threat.",
+    "goals": "To incapacitate and weaken its foes while avoiding direct confrontation.",
+    "relations": "Often encountered alongside shadows or other undead creatures.",
+    "environment": "Typically found in dark, abandoned areas or locations with minimal sunlight.",
+    "strengths": "High Dexterity making it hard to hit, along with several immunities and resistances.",
+    "weaknesses": "Very low Strength, making it ineffective in physical combats and sensitive to sunlight.",
+    "attacks": "Burning Touch delivers fiery damage and can create shadows from slain foes.",
+    "most_powerful_ability": "Transfixing Gaze can incapacitate opponents, rendering them defenseless.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Boasts a proficiency in stealth, allowing it to remain undetected during maneuvers.",
+    "additional_information": [
+        "Immunities to fire, necrotic, and poison damage.",
+        "Ability to move through objects and creatures with Incorporeal Movement.",
+        "Deals fire damage upon moving through spaces occupied by others or objects.",
+        "Sunlight Sensitivity imposes disadvantage in bright light.",
+        "Humanoids slain by Burning Touch rise as shadows after 24 hours."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "nefarious undead creature that hovers",
+        "stealthy monster with incapacitating gaze",
+        "undead that creates shadows from victims",
+        "resilient creature that can't walk",
+        "ghostly fiend with fiery attacks"
+    ]
+}

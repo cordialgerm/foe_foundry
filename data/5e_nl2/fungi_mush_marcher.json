@@ -1,0 +1,52 @@
+{
+    "name": "Mush Marcher",
+    "creature_type": "Plant",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "fungus",
+        "tactical"
+    ],
+    "adjectives": [
+        "large",
+        "neutral",
+        "powerful",
+        "debilitating"
+    ],
+    "description": "The Mush Marcher is a large plant creature characterized by its strong physical attributes and spore effects. It embodies the essence of fungal life, with a robust structure and ability to control the battlefield.",
+    "memorable": "Its Mycelial Harpoon can ensnare foes, preventing movement while also dealing persistent damage.",
+    "goals": "To control the battlefield and weaken its enemies using debilitating spores and harpoon tactics.",
+    "relations": "Related to other plant creatures and potentially finds camaraderie with similar fungal beings.",
+    "environment": "Typically found in damp forested areas or regions rich in fungal life.",
+    "strengths": "High hit points and multiple debilitating effects through spore attacks and binding abilities.",
+    "weaknesses": "Vulnerable to thunder damage and cannot communicate verbally.",
+    "attacks": "Mycelial Harpoon deals piercing damage while sticking to enemies, plus Spore-Laced Claw deals physical and poison damage.",
+    "most_powerful_ability": "Slowing Spores, which can poison multiple enemies while reducing their speed.",
+    "senses": "Possesses blindsight out to 60 feet, allowing it to sense creatures without sight.",
+    "skills": "Has proficiency in perception, resulting in a passive perception of 14.",
+    "additional_information": [
+        "Keen Hearing grants advantage on Wisdom (Perception) checks relying on hearing.",
+        "Mycelial thread can be targeted to dislodge the harpoon.",
+        "Slowing Spores can affect a large area.",
+        "Can utilize Recall Harpoon to re-engage enemies tactically.",
+        "Partial Echolocation reduces its effectiveness when deafened."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large plant creature with debilitating spores",
+        "fungal monster that ensnares foes",
+        "Mush Marcher tactics and abilities",
+        "monster with a spore attack and harpoon",
+        "plant creature that can poison and slow enemies"
+    ]
+}

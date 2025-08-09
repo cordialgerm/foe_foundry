@@ -1,6 +1,9 @@
 <MonsterName/>Goblin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>goblinoid</Subtype>
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>7</HP>
 <summary>Goblins are small, green-skinned humanoids known for their cunning and mischievous nature. Standing about three to four feet tall, they live in caves, ruins, or forest hideouts, often forming raiding parties to attack and steal from travelers or nearby villages. Goblins are crafty and quick, favoring hit-and-run tactics and traps to overpower larger foes. While individually weak, they are dangerous in large numbers and often rely on ambushes and overwhelming their enemies with sheer numbers. They are cowardly by nature and will flee if the battle turns against them.</summary>
 
 <summary>The Goblin is a small humanoid creature commonly found in various fantasy settings. It is often portrayed as a sneaky and cunning adversary, making it a favored choice for low-level encounters. With an Armor Class of 13 and 10 hit points, the Goblin has decent defensive capabilities for its challenge rating of 1/4, meaning it presents a minor threat to adventurers. Its most notable strengths lie in its agility, indicated by a Dexterity score of 12, which gives it a good ability to evade attacks and enhances its effectiveness in stealth. However, its physical strength is subpar, with a Strength score of 8 that results in a very bad modifier. The Goblin can use a variety of actions in combat, including melee and ranged attacks, and it benefits from its racial trait, Nimble Escape, allowing it to retreat or hide effectively in battle.</summary>
@@ -35,6 +38,7 @@ Overall, the Goblin might seem weak when on its own, but in a group, its speed, 
 
 Source: 5e_srd
 
+<statblock>
 ## Goblin
 
 *Small humanoid (goblinoid), neutral evil*
@@ -63,7 +67,8 @@ Source: 5e_srd
 
 ***Scimitar***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) slashing damage.
 
-***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -71,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin
 
 *Small* *Humanoid*
@@ -99,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 
 
@@ -107,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin
 
 *Small humanoid*
@@ -142,5 +150,6 @@ Source: 5e_artisinal_monsters
 
 - **Nimble Escape.** The goblin takes the Disengage or Hide action.
 
+</statblock>
 
 

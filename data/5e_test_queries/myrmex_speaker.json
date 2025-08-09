@@ -1,0 +1,25 @@
+{
+    "name": "Myrmex Speaker",
+    "queries": [
+        {
+            "query": "elemental creature that can walk and burrow through earth",
+            "variant": "elemetal being that can burrow and walk through ground"
+        },
+        {
+            "query": "large creature with psychic abilities and strong bite attacks",
+            "variant": "big being with strong bite and psychic powers"
+        },
+        {
+            "query": "earth elemental that communicates via telepathy and has keen smell",
+            "variant": "earh elemental that uses telepathic communication and has good smell"
+        },
+        {
+            "query": "monster resistant to poison that manipulates earth terrain",
+            "variant": "creature immune to poison that shapes earth terrain"
+        },
+        {
+            "query": "battlesupport elemental with high constitution and resistance to exhaustion",
+            "variant": "supporting elemental in battle with high con and immune to exhaustion"
+        }
+    ]
+}

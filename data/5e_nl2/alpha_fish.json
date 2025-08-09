@@ -1,0 +1,49 @@
+{
+    "name": "Alpha Fish",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 59,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "swim 50 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "predator",
+        "formidable"
+    ],
+    "adjectives": [
+        "aggressive",
+        "predatory",
+        "intimidating"
+    ],
+    "description": "The Alpha Fish is a large aquatic beast known for its formidable presence in underwater habitats. It has a robust body, sharp fins, and an aggressive demeanor, ready to defend its territory.",
+    "memorable": "Its ability to frighten opponents with a Fin Flare makes it a unique aquatic predator.",
+    "goals": "Predominantly hunts and defends its territory against perceived threats.",
+    "relations": "Could be found alongside other aquatic predators or as part of an underwater ecosystem.",
+    "environment": "Typically found in underwater locales such as deep rivers, lakes, or oceans.",
+    "strengths": "Great endurance due to high hit points and strong melee attacks.",
+    "weaknesses": "Low intelligence makes it easily fooled and susceptible to illusions.",
+    "attacks": "Utilizes a Multiattack featuring a Fin Flare for area effect and two headbutt attacks for direct melee damage.",
+    "most_powerful_ability": "Fin Flare frightens creatures within 30 feet, potentially limiting their actions if they fail their saving throws.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 13, which allows it to be aware of its surroundings.",
+    "skills": "Skilled in intimidation, making it a threatening presence even in combat.",
+    "additional_information": [
+        "Can make a headbutt attack as a bonus action when wounded.",
+        "Appears larger due to its Frightening Display ability.",
+        "Attacks indiscriminately due to the Too Aggressive trait.",
+        "Breathes only underwater."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive aquatic beast",
+        "predator of the deep water",
+        "frightening fish monster",
+        "large underwater creature",
+        "invisible threat in water"
+    ]
+}

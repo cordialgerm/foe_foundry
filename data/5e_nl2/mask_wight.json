@@ -1,0 +1,55 @@
+{
+    "name": "Mask Wight",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 207,
+    "ac": 19,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "necromancer",
+        "memory eraser"
+    ],
+    "adjectives": [
+        "formidable",
+        "potent",
+        "evil",
+        "durable"
+    ],
+    "description": "The Mask Wight is a Medium undead creature with a high level of durability and a strong presence in combat. It combines intimidating physical prowess with the ability to wield necrotic energy, making it quite dangerous.",
+    "memorable": "The Mask Wight's ability to erase memories can have significant narrative repercussions, making it a terrifying foe.",
+    "goals": "To seek out and attack fiends while inflicting fear and confusion upon its enemies.",
+    "relations": "Could be encountered alongside other undead or fiendish creatures.",
+    "environment": "Commonly found in dark, cursed, or haunted locations.",
+    "strengths": "Immunities to necrotic and poison damage, strong against many conditions.",
+    "weaknesses": "Vulnerable to radiant damage, which can significantly harm it.",
+    "attacks": "Uses a combination of deadly melee attacks with its Khopesh of Oblivion and Spiked Gauntlet, dealing both slashing and necrotic damage.",
+    "most_powerful_ability": "Wail of the Forgotten can obliterate victims from memory across the planes, incapacitating them and erasing any trace of their existence.",
+    "equipment": "Khopesh of Oblivion and Spiked Gauntlet.",
+    "senses": "Possesses truesight up to 30 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Has strong saving throws indicating exceptional resilience against many types of attacks.",
+    "additional_information": [
+        "Immune to being charmed, frightened, or paralyzed.",
+        "Weapon attacks deal additional necrotic damage.",
+        "Does not require air, food, drink, or sleep.",
+        "Advantage on attack rolls against fiendish opponents.",
+        "Can forget cherished memories of targets hit by its attacks."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead that erases memories",
+        "formidable necrotic creature",
+        "evil undead with truesight",
+        "mask wight's powerful wail attack",
+        "medium undead with natural armor"
+    ]
+}

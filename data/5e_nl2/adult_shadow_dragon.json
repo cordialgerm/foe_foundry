@@ -1,0 +1,52 @@
+{
+    "name": "Adult Shadow Dragon",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 212,
+    "ac": 18,
+    "srd": false,
+    "cr": "19",
+    "movement": "40 ft. walking, 40 ft. climbing, 80 ft. flying, 40 ft. swimming",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "shadow",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "shadowy",
+        "malevolent"
+    ],
+    "description": "The Adult Shadow Dragon is a massive dragon shrouded in darkness, embodying the essence of malevolence. Its scales are dark with shadowy hues, and it uses its environment to manipulate its foes, showcasing a control over shadows.",
+    "memorable": "Its ability to pass through objects and its fear-inducing aura make it a terrifying presence on the battlefield.",
+    "goals": "To exert control over its domain and instill fear in adventurers.",
+    "relations": "Usually encountered in dark, twisted places, often with undead minions it creates.",
+    "environment": "Shadowy areas, caves, or places tied to its essence link, particularly in low-light environments.",
+    "strengths": "Immune to necrotic and poison damage; legendary resistance allows it to avoid harmful effects.",
+    "weaknesses": "Susceptible to radiant damage, which diminishes its powers.",
+    "attacks": "Employs a multiattack strategy with a powerful bite and claws, inflicting both piercing and necrotic damage, alongside a supernatural grasp that restrains foes.",
+    "most_powerful_ability": "Anguished Breath, a devastating breath attack dealing massive necrotic damage and inflicting strife.",
+    "equipment": "none",
+    "senses": "It possesses darkvision up to 240 feet, allowing it to see clearly in darkness.",
+    "skills": "Noteworthy skills in deception and stealth, making it a master ambusher and manipulator.",
+    "additional_information": [
+        "Has incorporeal movement, allowing it to phase through solid objects.",
+        "Link to a specific area limits its ability to regain health.",
+        "Can become invisible in dim light or darkness, enhancing its ambushing capabilities.",
+        "Emits an Evil aura that can instill fear.",
+        "Capable of spellcasting, including creating magical darkness."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Innate spells include darkness, detect evil and good, bane, and create undead.",
+    "test_queries": [
+        "shadowy dragon enemy",
+        "fear-inducing dragon",
+        "adult dragon with necrotic powers",
+        "dragon that creates undead",
+        "ambush predator dragon"
+    ]
+}

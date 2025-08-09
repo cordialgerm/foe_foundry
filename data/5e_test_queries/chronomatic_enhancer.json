@@ -1,0 +1,25 @@
+{
+    "name": "Chronomatic Enhancer",
+    "queries": [
+        {
+            "query": "large construct that manipulates time and enhances allies",
+            "variant": "big construct that controls time and boosts allies"
+        },
+        {
+            "query": "time-manipulating creature with high hit points and good defense",
+            "variant": "time-controlling monster with strong HP and decent defense"
+        },
+        {
+            "query": "mechanical being with the ability to slow enemies and protect allies",
+            "variant": "robotic creature that can hinder foes and safeguard companions"
+        },
+        {
+            "query": "powerful construct with damage immunities and buffs for allies",
+            "variant": "strong construct that has damage resistances and enhances allies"
+        },
+        {
+            "query": "creature with darkvision that freezes opponents in time",
+            "variant": "monster that has darkvision and can immobilize foes in time"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Bonespitter</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>217</HP>
 <summary>The Bonespitter is a gargantuan monstrosity that embodies both fear and power, making it a formidable opponent in any encounter. With a notably high armor class of 17 due to its natural armor and substantial hit points totaling 217, it presents a significant challenge to adventurers. Weighing in at challenge rating 13, it offers 10,000 experience points to those who manage to defeat it. The Bonespitter has impressive physical attributes, especially in strength with a score of 26 and a modifier of +8, signaling its strength in melee attacks. However, its dexterity is quite poor at 7, resulting in a -2 modifier, making it slow and easy to evade. Its abilities reflect its monstrous nature, affording it various dangerous actions, including strong biting attacks and a capacity to restrain opponents. Its weaknesses lie mostly in its lack of mobility and reliance on strong physical attacks rather than finesse.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Bonespitter is a brutal and powerful foe, thriving in its ability t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bonespitter
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Shard Spray (Recharge 5-6):** The bonespitter exhales a 60-foot cone of bone shards. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) piercing damage on a failed save, or half as much on a successful one. If a Large or smaller creature fails this saving throw, it is also knocked prone, pinned to the ground by a shard, and restrained. As an action, the restrained creature or a creature within 5 feet of it can make a DC 18 Strength check, removing the shard and ending the condition on a success. The shard can also be attacked and destroyed (AC 12; hp 15; vulnerability to bludgeoning damage; immunity to poison and psychic damage).
 
 
+</statblock>
 
 

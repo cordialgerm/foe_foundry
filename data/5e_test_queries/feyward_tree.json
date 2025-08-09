@@ -1,0 +1,25 @@
+{
+    "name": "Feyward Tree",
+    "queries": [
+        {
+            "query": "huge construct with magical abilities that is vulnerable to cold",
+            "variant": "large construct that has magic powers and is weak against cold"
+        },
+        {
+            "query": "tree-like monster with slashing attacks and resistance to damage",
+            "variant": "monster resembling a tree that can slash and has damage resistances"
+        },
+        {
+            "query": "Feyward Tree abilities including lightning absorption and multiattack",
+            "variant": "abilities of Feyward Tree such as absorbing lightning and doing multiple attacks"
+        },
+        {
+            "query": "creature that can control the battlefield with razor-sharp leaves",
+            "variant": "being that controls the fight using sharp leaves"
+        },
+        {
+            "query": "construct that doesn't need sleep and is immune to many conditions",
+            "variant": "creature that requires no sleep and is immune to various conditions"
+        }
+    ]
+}

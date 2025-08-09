@@ -1,0 +1,25 @@
+{
+    "name": "Corrupted Unicorn",
+    "queries": [
+        {
+            "query": "twisted celestial unicorn that creates magical darkness and heals allies",
+            "variant": "twisted unicorn celestial that can create magical darkness and heal allies"
+        },
+        {
+            "query": "large elegant unicorn with dark powers and strong magical resistance",
+            "variant": "large elegant unicorn that has dark powers and strong resistance to magic"
+        },
+        {
+            "query": "unicorn that can grant boons and charges during combat",
+            "variant": "unicorn that grants boons and charges into combat"
+        },
+        {
+            "query": "healing unicorn that moves quickly and attacks with hooves and horn",
+            "variant": "healing unicorn that attacks quickly and uses its hooves and horn"
+        },
+        {
+            "query": "corrupted unicorn that is immune to charm and has multiple attacks",
+            "variant": "corrupted unicorn immune to charm and has multiple forms of attack"
+        }
+    ]
+}

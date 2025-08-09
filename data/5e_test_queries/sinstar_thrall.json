@@ -1,0 +1,25 @@
+{
+    "name": "Sinstar Thrall",
+    "queries": [
+        {
+            "query": "plant creature that can paralyze attackers and shares senses with its creator",
+            "variant": "creature that shares senses with its creator and can paralyze those who attack it"
+        },
+        {
+            "query": "medium plant monster that has bludgeoning attacks and poisons immunity",
+            "variant": "medium-sized plant monster with immunity to poison and bludgeoning attack capabilities"
+        },
+        {
+            "query": "creature with blindsight and special spiny defense ability in combat",
+            "variant": "creature possessing blindsight and unique ability for spiny defense in battle"
+        },
+        {
+            "query": "defensive plant creature with natural armor and telepathic bond to creator",
+            "variant": "plant creature with natural armor that can communicate telepathically with its creator"
+        },
+        {
+            "query": "challenging plant enemy that deals piercing damage and can immobilize opponents",
+            "variant": "difficult plant monster dealing piercing damage and capable of immobilizing foes"
+        }
+    ]
+}

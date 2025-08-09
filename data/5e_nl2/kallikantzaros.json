@@ -1,0 +1,50 @@
+{
+    "name": "Kallikantzaros",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 59,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walks 30 feet per turn",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaotic",
+        "mischievous"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "chaotic"
+    ],
+    "description": "A small, chaotic evil fey creature with agility and stealth, wearing hide armor.",
+    "memorable": "Its ability to use the Misery Whip attack with another Kallikantzaros makes it a formidable combatant.",
+    "goals": "To cause mischief and ambush unsuspecting foes.",
+    "relations": "May be encountered alongside other fey creatures or mischievous entities.",
+    "environment": "Thrives in shadowy environments.",
+    "strengths": "Good at stealth, can evade attacks easily with Nimble Escape, and resistant to charm effects.",
+    "weaknesses": "Vulnerable to incense and burning materials, struggles against strategic opponents due to low Intelligence.",
+    "attacks": "Can make two handsaw or spear attacks in one turn, with enhanced effectiveness against unarmored targets.",
+    "most_powerful_ability": "The Misery Whip allows it to strike multiple foes simultaneously and potentially knock them prone.",
+    "equipment": "Hide armor",
+    "senses": "Has darkvision up to 60 feet, aiding its stealth.",
+    "skills": "Proficient in stealth with a +3 modifier.",
+    "additional_information": [
+        "Advantage on saving throws against being charmed due to Fey Ancestry.",
+        "Cannot be put to sleep by magic.",
+        "Must succeed on a Constitution saving throw when near burning incense.",
+        "Mobile and can use Disengage or Hide as a bonus action.",
+        "The Handsaw attack is particularly dangerous against unarmored targets."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic small fey creature with stealth",
+        "mischievous creature that thrives in shadows",
+        "fey with special attack Misery Whip",
+        "stealthy monster resistant to charm spells",
+        "Kallikantzaros ambush tactics"
+    ]
+}

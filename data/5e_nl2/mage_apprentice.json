@@ -1,0 +1,52 @@
+{
+    "name": "Mage Apprentice",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any lineage",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 40,
+    "ac": 10,
+    "srd": false,
+    "ac_description": "13 with mage armor",
+    "cr": "1",
+    "movement": "30 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "apprentice",
+        "force damage"
+    ],
+    "adjectives": [
+        "aspiring",
+        "average",
+        "tactical"
+    ],
+    "description": "A Medium humanoid aspiring spellcaster with average physicality and notable magical capabilities.",
+    "memorable": "Its ability to deal extra force damage with weapon attacks and its tactical advantage mechanics make encounters unique.",
+    "goals": "To learn and master magic while demonstrating abilities in combat.",
+    "relations": "Often seen alongside other apprentices or magical mentors.",
+    "environment": "Typically found in magical academies or arcane research locations.",
+    "strengths": "Exceptionally high Intelligence grants powerful spellcasting and ability to boost weapon damage significantly with arcane abilities.",
+    "weaknesses": "Low armor class makes it vulnerable to attacks, and reckless abilities can expose it to counter-attacks.",
+    "attacks": "Can attack with a magical dagger dealing significant piercing and force damage, or cast powerful spell attacks like Arcane Bolt.",
+    "most_powerful_ability": "Arcane Weapons ability allows for extra magical force damage on weapon attacks.",
+    "equipment": "Dagger",
+    "senses": null,
+    "skills": "Has average Stealth and Perception skills.",
+    "additional_information": [
+        "Can cast useful utility spells like Mage Hand and Minor Illusion at will.",
+        "Possesses a unique ability to gain combat advantage based on its surroundings.",
+        "Has access to incapacitating spells like Sleep and Color Spray once per day."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Can cast spell like Mage Hand and Minor Illusion at will; possesses spellcasting abilities that influence combat dynamics.",
+    "test_queries": [
+        "spellcaster with force damage abilities",
+        "apprentice that enhances weapon damage",
+        "mage that can use Color Spray",
+        "magical humanoid with tactical advantages",
+        "spellcasting apprentice in combat"
+    ]
+}

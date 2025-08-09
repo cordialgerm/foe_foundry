@@ -1,0 +1,25 @@
+{
+    "name": "Adult Amethyst Dragon",
+    "queries": [
+        {
+            "query": "large dragon that can manipulate thoughts and emotions",
+            "variant": "big dragon that can control emotions and thoughts"
+        },
+        {
+            "query": "powerful psychic dragon with exceptional spellcasting abilities",
+            "variant": "strong psychic dragon having remarkable spellcasting skills"
+        },
+        {
+            "query": "dragon that excels in telepathy and can charm enemies",
+            "variant": "dragon that is great at telepathy and can enchant foes"
+        },
+        {
+            "query": "huge dragon immune to fatigue that dwells in open spaces",
+            "variant": "massive dragon that cannot be fatigued and lives in vast areas"
+        },
+        {
+            "query": "dragon with high intelligence and charisma that uses telekinetic powers",
+            "variant": "dragon with elevated intelligence and charm that employs telekinetic abilities"
+        }
+    ]
+}

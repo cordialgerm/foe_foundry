@@ -1,0 +1,50 @@
+{
+    "name": "Ophinix",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "10 ft. walking and 40 ft. flying",
+    "role": null,
+    "tags": [
+        "lightning",
+        "electricity",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "large",
+        "dangerous",
+        "electric"
+    ],
+    "description": "The Ophinix is a large monstrosity characterized by its conductive fur and ability to harness electricity, with notable physical attributes including strong strength and dexterity.",
+    "memorable": "Its ability to absorb lightning damage and unleash powerful electrical strikes makes it a unique and formidable opponent.",
+    "goals": "To engage in combat and utilize its electrical abilities effectively.",
+    "relations": "Can be encountered near electrical storms or in areas rich in magic and energy.",
+    "environment": "Typically found in environments where lightning is prevalent.",
+    "strengths": "Immunity to lightning damage and strong physical attacks.",
+    "weaknesses": "Low intelligence and charisma, making it ineffective in social situations.",
+    "attacks": "Uses powerful melee attacks with a bite and claw, enhanced with lightning damage when charged.",
+    "most_powerful_ability": "Lightning Strike, able to unleash accumulated electrical energy at multiple targets.",
+    "equipment": null,
+    "senses": "Blindsight out to 30 feet allows it to sense nearby creatures even without sight.",
+    "skills": "Has proficiency in stealth and a decent perception score.",
+    "additional_information": [
+        "Can charge its fur to deal lightning damage to nearby melee attackers.",
+        "Electric charge can reset after absorbing lightning damage.",
+        "Has a tactical advantage with area attacks when charged."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large electric monster with conductive fur",
+        "monster that absorbs lightning damage and strikes",
+        "flying creature that deals electric damage",
+        "Ophinix abilities and strengths",
+        "dangerous creature with shocking attacks"
+    ]
+}

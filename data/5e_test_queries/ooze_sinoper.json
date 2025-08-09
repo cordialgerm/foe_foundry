@@ -1,0 +1,25 @@
+{
+    "name": "Sinoper Ooze",
+    "queries": [
+        {
+            "query": "medium ooze with paint splash ability that can climb walls",
+            "variant": "medium-sized ooze that climbs walls and has paint splash attack"
+        },
+        {
+            "query": "durable ooze resistant to cold and fire",
+            "variant": "resistant ooze that can take cold and fire damage well"
+        },
+        {
+            "query": "creature with high strength and low mobility that blends into surroundings",
+            "variant": "creature that blends into surroundings, has high strength and lacks mobility"
+        },
+        {
+            "query": "Sinoper Ooze with false appearance skill hiding in art",
+            "variant": "Sinoper Ooze using false appearance to hide among artworks"
+        },
+        {
+            "query": "paint color changing ooze able to inflict damage with cold or fire",
+            "variant": "changing color paint ooze that deals cold or fire damage"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Black Patch</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>6</CR>
+<AC/>7</AC>
+<HP/>153</HP>
 <summary>The Black Patch is a large, amorphous ooze that is unaligned and functions as a formidable combatant in aquatic environments. With a notable Armor Class of 7 and impressive Hit Points totaling 153, it can withstand significant damage in battle. Its swimming speed of 40 feet allows it to traverse through water with ease, making it a challenging opponent for creatures that rely on land mobility. As a Challenge Rating 6 creature, it presents a moderate threat to adventurers, providing 2,300 experience points upon defeat. The Black Patch's strengths revolve around its evasive capabilities, respectably high Constitution, and its unique ability to mesmerize foes, which can control the battlefield. However, its low Dexterity is a notable weakness, rendering it inept at avoiding attacks and dexterous maneuvers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Black Patch is capable of making a Multiattack, which a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Patch
 
 *Large* *Ooze* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Viscid Suffocation:** One creature in patch’s space: DC 15 Dex save or take 18 (4d8) acid and patch attaches to it coating creature and its equipment. While patch is attached to it creature’s speed is halved can’t breathe and takes 9 (2d8) acid at start of each of its turns. Also if creature is in the water has disadvantage on ability checks to swim or stay afloat. Patch can devour flesh quickly but its acid doesn’t harm metal wood or similar objects or creatures with o flesh. Patch can detach itself by spending 5 ft. of move. A creature including target can take its action to detach patch via DC 15 Str check.
 
 
+</statblock>
 
 

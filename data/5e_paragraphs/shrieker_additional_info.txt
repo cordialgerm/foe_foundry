@@ -1,0 +1,1 @@
+Useful tidbits about Shrieker: Emits a loud shriek when bright light or movement is detected. Condition immunities include blinded, deafened, and frightened. False Appearance allows it to act like ordinary fungus. Cannot move or attack, exclusively serving as an environmental hazard. Commonly found alongside other fungi, creating clusters in dark areas. 

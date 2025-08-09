@@ -1,6 +1,8 @@
 <MonsterName/>Adult Copper Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Adult Copper Dragon is a lithe and agile creature, with scales the color of aged copper that shimmer with a dull, metallic gleam. It is known for its playful and mischievous personality, often playing pranks or engaging in wordplay with those it encounters. Copper Dragons prefer rocky hills or mountains, where they make their lairs in hidden caves. Despite their lighthearted nature, they are formidable in battle, able to breathe a gout of corrosive acid or unleash a gas that can slow and confuse enemies. Copper Dragons enjoy riddles and puzzles, and often challenge those they meet to games of wit.</summary>
 
 <summary>The Adult Copper Dragon is a huge and formidable creature that serves as an iconic representation of powerful dragons in Dungeons & Dragons. With a challenge rating of 17, it possesses significant offensive and defensive capabilities. Its impressive armor class of 18 and robust hit points totaling 253 render it a challenging adversary in combat. This dragon has strengths in both melee attacks and spellcasting, making it versatile in various tactical scenarios. Despite its formidable nature, it has a few weaknesses, notably its reliance on its legendary resistances, which, when depleted, lowers its Armor Class. With its unique ability to blend into terrain and the potential to frighten foes, the Adult Copper Dragon is a master of battle who can control the battlefield's dynamics effectively.</summary>
@@ -48,6 +50,7 @@ Should the Adult Copper Dragon perish, its regional effects will fade over the c
 
 Source: 5e_srd
 
+<statblock>
 # Adult Copper Dragon (Metallic)
 
 *Huge dragon, chaotic good*
@@ -102,7 +105,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -110,6 +114,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Copper Dragon
 
 *Huge* *Dragon*
@@ -161,6 +166,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 17 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 19 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Tricksters Gambit (Costs 2 Actions):** The dragon magically teleports to an unoccupied space it can see within 30 feet and creates two illusory duplicates in different unoccupied spaces within 30 feet. These duplicates have an AC of 11, and a creature that hits one with an attack can make a DC 16 Intelligence (Investigation) check, identifying it as a fake on a success. The duplicates disappear at the end of the dragons next turn but otherwise mimic the dragons actions perfectly, even moving according to the dragons will.
+</statblock>
 
 
 
@@ -169,6 +175,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Copper Dragon
 
 *Huge dragon*
@@ -219,5 +226,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, the defensible effect fades after 1 year, but the other effects fade in  days.
+</statblock>
 
 

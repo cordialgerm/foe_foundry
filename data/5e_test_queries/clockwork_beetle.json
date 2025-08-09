@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Beetle",
+    "queries": [
+        {
+            "query": "tiny mechanical creature with flying abilities and poison attack",
+            "variant": "small robotic monster that can fly and has a poison bite"
+        },
+        {
+            "query": "construct that doesn't need food and has high Dexterity",
+            "variant": "creature that requires no food and has great agility"
+        },
+        {
+            "query": "beetle-like construct with damage immunity and limited telepathy",
+            "variant": "bug-shaped construct immune to damage and can send simple messages"
+        },
+        {
+            "query": "intelligent beetle that can't speak and communicates telepathically",
+            "variant": "smart beetle that doesn't talk and uses psychic communication"
+        },
+        {
+            "query": "mechanical insect living in inhospitable environments and immune to poisons",
+            "variant": "robot insect that thrives in harsh conditions and is poison resistant"
+        }
+    ]
+}

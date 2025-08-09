@@ -1,0 +1,52 @@
+{
+    "name": "Vallowex",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 123,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "swim 30 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "amphibious",
+        "disease",
+        "aberration"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "formidable",
+        "eerie"
+    ],
+    "description": "The Vallowex is a large aberration with a solid body, featuring a long spiked tongue and a powerful tail, making it a notable presence in both aquatic and terrestrial settings.",
+    "memorable": "Its Aura of Thirst can debilitate enemies, causing disadvantage and resulting in exhaustion over time, while its ability to swallow foes presents a dramatic combat dynamic.",
+    "goals": "To disrupt and incapacitate enemies through exhaustion and diseases while feeding.",
+    "relations": "Related to other aberrations; could be encountered near water bodies along with aquatic creatures.",
+    "environment": "Typically found in watery environments, such as lakes or rivers.",
+    "strengths": "Strong in close combat with high hit points and effective multiattack capabilities, as well as the ability to breathe both air and water.",
+    "weaknesses": "Low intelligence and charisma, making it less effective in social situations and strategies that require cleverness.",
+    "attacks": "The Vallowex can use its spiked tongue to grapple foes or deliver piercing damage, alongside bludgeoning damage from its tail. It can also swallow smaller targets for additional effects.",
+    "most_powerful_ability": "Aura of Thirst can impose disadvantage on attacks and cause exhaustion if enemies stay within range.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 60 feet, allowing it to detect creatures without needing sight.",
+    "skills": "Skilled in stealth and aware of its surroundings, giving it an advantage in aquatic ambushes.",
+    "additional_information": [
+        "Can release a cloud of microscopic eggs that can cause a debilitating disease if ingested.",
+        "Grappling foes allows it to swallow and control them during combat.",
+        "Only one creature can be swallowed at a time, increasing tactical decisions in encounters."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic monster with a deadly aura",
+        "creature that grapples and swallows foes",
+        "aberration that releases disease-causing eggs",
+        "chaotic monster that thrives in water",
+        "monster with unique dehydration effects"
+    ]
+}

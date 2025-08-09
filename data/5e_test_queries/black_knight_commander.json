@@ -1,0 +1,25 @@
+{
+    "name": "Black Knight Commander",
+    "queries": [
+        {
+            "query": "dark armored knight that commands a warhorse and uses fear",
+            "variant": "armored knight that is dark and commands a warhorse while using fear"
+        },
+        {
+            "query": "humanoid creature with high AC and melee attacks on a mount",
+            "variant": "creature that is humanoid with high armor class and melee attacks while mounted"
+        },
+        {
+            "query": "evil knight with magical abilities and a powerful lance",
+            "variant": "knight that is evil with magic abilities and a strong lance"
+        },
+        {
+            "query": "Black Knight type creature that enhances ally attacks while mounted",
+            "variant": "Knight creature that boosts ally damage while riding a mount"
+        },
+        {
+            "query": "resilient knight in plate armor with charge attack",
+            "variant": "knight that's resilient in armor with an attack while charging"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Kot Bayun",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "stealth",
+        "healer"
+    ],
+    "adjectives": [
+        "cunning",
+        "charming",
+        "deceptive"
+    ],
+    "description": "The Kot Bayun is a medium-sized monstrosity that embodies a blend of cunning and charm, featuring dexterous abilities and striking charisma.",
+    "memorable": "Its ability to turn invisible and sing a slumbering song makes it a formidable and deceitful opponent.",
+    "goals": "Typically aims to incapacitate foes and control the battlefield while providing support to allies.",
+    "relations": "Could be encountered alongside other stealthy or cunning creatures and may serve as a protector or guardian of magical realms.",
+    "environment": "Often found in enchanted forests or mystical locations where it can easily employ stealth and charm.",
+    "strengths": "Strong in Charisma and Dexterity, allowing for effective social manipulation and stealth operations.",
+    "weaknesses": "Somewhat average Constitution may limit its resilience in prolonged combat.",
+    "attacks": "Uses a combination of a powerful slumbering song to incapacitate, followed by a bite and claw attacks.",
+    "most_powerful_ability": "Slumbering Song can incapacitate a target, providing the Kot Bayun strategic advantages in combat.",
+    "equipment": null,
+    "senses": "Possesses darkvision which aids in stealth, though its passive perception is rather average.",
+    "skills": "Has proficiency in Stealth, making it adept at evading detection.",
+    "additional_information": [
+        "Can use Healing Purr to restore health and cure ailments.",
+        "Relies on strategic use of invisibility to ambush enemies or escape.",
+        "Gains advantages in charisma-based interactions due to high Charisma score.",
+        "Can incapacitate foes for up to a minute with its Slumbering Song.",
+        "Uses stealth and charm to manipulate situations to its advantage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "charming stealthy monster with healing abilities",
+        "monstrosity that can turn invisible and sing",
+        "cunning creature that puts enemies to sleep",
+        "healer that can sing and attack",
+        "slow monster known for its deceptive tactics"
+    ]
+}

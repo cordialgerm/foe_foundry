@@ -1,0 +1,25 @@
+{
+    "name": "Wolf Reaver Dwarf",
+    "queries": [
+        {
+            "query": "chaotic dwarf with high strength and pack tactics",
+            "variant": "dwarf that is chaotic, has high strength, and uses pack tactics"
+        },
+        {
+            "query": "humanoid creature with good armor class and resilience",
+            "variant": "humanoid with strong armor class and very good resilience"
+        },
+        {
+            "query": "dwarf skilled in intimidation and athletics that uses reckless attacks",
+            "variant": "dwarf with skills in intimidation and athletics that makes reckless attacks"
+        },
+        {
+            "query": "medium humanoid with darkvision that fights effectively in groups",
+            "variant": "medium humanoid with darkvision and effective group fighting tactics"
+        },
+        {
+            "query": "wolf reaver dwarf's combat abilities and defensive traits",
+            "variant": "combat abilities and defense traits of wolf reaver dwarf"
+        }
+    ]
+}

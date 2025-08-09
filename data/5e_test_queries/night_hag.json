@@ -1,0 +1,25 @@
+{
+    "name": "Night Hag",
+    "queries": [
+        {
+            "query": "fiendish creature that haunts dreams and has glowing red eyes",
+            "variant": "fiendish being that haunts dreams and has glowing red eyes"
+        },
+        {
+            "query": "malevolent hag with gray skin that can shapeshift",
+            "variant": "evil hag with gray skin that can change shape"
+        },
+        {
+            "query": "Night Hag with magic resistance and the ability to inflict nightmares",
+            "variant": "Night Hag with magical resistance and capability to cause nightmares"
+        },
+        {
+            "query": "creature that collects souls and uses dark magic",
+            "variant": "being that gathers souls and employs dark magic"
+        },
+        {
+            "query": "tall fiend with claws that curse its victims",
+            "variant": "tall fiend with claws that can put a curse on its victims"
+        }
+    ]
+}

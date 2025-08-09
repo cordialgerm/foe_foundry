@@ -1,0 +1,25 @@
+{
+    "name": "Gerridae",
+    "queries": [
+        {
+            "query": "large fey creature that moves on water",
+            "variant": "fey creature that is large and can walk on water"
+        },
+        {
+            "query": "aquatic fey with strong melee attacks",
+            "variant": "fey that is aquatic and has powerful melee abilities"
+        },
+        {
+            "query": "water-dependent creature with low intelligence and charisma",
+            "variant": "creature that needs water and has poor intelligence and charisma"
+        },
+        {
+            "query": "large creature that can't be charmed while ridden",
+            "variant": "big creature that is immune to charms when has a rider"
+        },
+        {
+            "query": "Gerridae abilities and strengths in combat",
+            "variant": "abilities and combat strengths of the Gerridae"
+        }
+    ]
+}

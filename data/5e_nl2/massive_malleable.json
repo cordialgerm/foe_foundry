@@ -1,0 +1,53 @@
+{
+    "name": "Massive Malleable",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Gargantuan",
+    "hp": 248,
+    "ac": 14,
+    "srd": false,
+    "cr": "16",
+    "movement": "climb 40 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "shapeshifter",
+        "chaotic",
+        "psychic"
+    ],
+    "adjectives": [
+        "massive",
+        "flexible",
+        "regenerative",
+        "malleable"
+    ],
+    "description": "The Massive Malleable is a gargantuan aberration, capable of shapeshifting and regeneration. It has a fleshy appearance and can absorb other malleables.",
+    "memorable": "Its ability to absorb other malleable creatures to heal, along with its capacity to drain life through psychic attacks, makes it a terrifying foe.",
+    "goals": "To absorb and regenerate from other malleables while draining the life force from opponents.",
+    "relations": "Often encountered with lesser malleables and may serve chaotic forces seeking to spread its chaotic influence.",
+    "environment": "Typically found in chaotic or unstable areas, possibly where other malleables congregate.",
+    "strengths": "High durability with 248 hit points and immunity to psychic damage, plus the ability to split into multiple smaller creatures.",
+    "weaknesses": "Low Dexterity making it less agile in combat and somewhat vulnerable to physical attacks due to its size.",
+    "attacks": "Can execute multiple attacks with its flesh tendrils, grappling foes and dealing significant bludgeoning damage.",
+    "most_powerful_ability": "Psychic Drain, which inflicts heavy psychic damage while reducing the maximum hit points of its target.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to perceive its surroundings without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Can heal from psychic damage instead of taking it.",
+        "Can reshape its own form temporarily without gaining new abilities.",
+        "Can move through incredibly tight spaces without hindrance.",
+        "Has a notable ability to split into smaller malleables when damaged.",
+        "Immunity to being blinded and prone enhances its combat effectiveness."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fortress of chaos with shapeshifting creatures",
+        "massive creature that absorbs smaller malleables",
+        "aberration with powerful psychic abilities and regeneration",
+        "gargantuan monster that can split into many",
+        "malleable creature that drains life force in combat"
+    ]
+}

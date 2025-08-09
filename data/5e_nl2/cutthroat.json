@@ -1,0 +1,52 @@
+{
+    "name": "Cutthroat",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "deception",
+        "hit-and-run"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "agile"
+    ],
+    "description": "A Medium humanoid characterized by stealth and cunning nature, often seen with a shortsword and hand crossbow, ready for hit-and-run tactics.",
+    "memorable": "Utilizes clever positioning and teamwork to maximize damage output through Sneak Attack.",
+    "goals": "To ambush and eliminate foes using stealth and deception.",
+    "relations": "May operate alongside other rogues or thieves; could be found in gangs or as part of a reconnaissance team.",
+    "environment": "Urban areas or shadowy terrains where stealth and cunning are advantageous.",
+    "strengths": "High Dexterity and skills in deception, stealth, and perception enhance its ambush capabilities.",
+    "weaknesses": "Low hit points and armor class make it vulnerable if caught off guard.",
+    "attacks": "Shortsword and Hand Crossbow strike with piercing damage, employing hit-and-run tactics.",
+    "most_powerful_ability": "Sneak Attack to deal substantial damage when positioned advantageously.",
+    "equipment": "Shortsword and Hand Crossbow.",
+    "senses": "Passive Perception of 14, enabling effective threat detection.",
+    "skills": "Profound in deception, insight, perception, and stealth, allowing for masterful manipulation and ambush strategies.",
+    "additional_information": [
+        "Uses Cunning Action to reposition in combat.",
+        "Can make additional melee attacks with Rapid Attack.",
+        "Effective at coordinating attacks with allies.",
+        "Thrives in environments conducive to stealth.",
+        "Capable of dealing significant damage with well-timed attacks."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning humanoid with stealth abilities",
+        "stealthy hit-and-run attacker",
+        "urban thief using deception",
+        "agile rogue with a short sword",
+        "ambush tactics with sneak attack"
+    ]
+}

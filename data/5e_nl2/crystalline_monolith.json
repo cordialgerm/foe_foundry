@@ -1,0 +1,52 @@
+{
+    "name": "Crystalline Monolith",
+    "creature_type": "Aberration",
+    "alignment": "lawful neutral",
+    "size": "Huge",
+    "hp": 123,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "hover and fly 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "psionic",
+        "aberration",
+        "magic"
+    ],
+    "adjectives": [
+        "crystalline",
+        "psychic",
+        "huge"
+    ],
+    "description": "The Crystalline Monolith resembles a massive, immobile crystal, capable of blending into its environment when motionless.",
+    "memorable": "It can petrify opponents and unleash devastating psychic bursts, making it a formidable foe.",
+    "goals": "To dominate the battlefield with psychic abilities and manipulate the minds of its opponents.",
+    "relations": "Often encountered with other aberrations or psionic creatures.",
+    "environment": "Typically found in mystical or otherworldly locations.",
+    "strengths": "Immunities to various effects and damage types, strong psionic abilities, and legendary actions.",
+    "weaknesses": "Lack of mobility may hinder its tactical options in combat.",
+    "attacks": "Performs slam attacks and ranged mind spear attacks, capable of dealing bludgeoning and psychic damage, respectively.",
+    "most_powerful_ability": "Psychic Burst, which stuns enemies in a cone and deals significant psychic damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing perception without sight.",
+    "skills": "Highly skilled in arcana, history, nature, insight, and perception, showing great knowledge and awareness.",
+    "additional_information": [
+        "False Appearance allows it to blend in as a giant crystal while immobile.",
+        "Magic Resistance provides advantage against spells and magical effects.",
+        "Powerful Mind grants advantage on Intelligence saving throws and ability checks.",
+        "Can innately cast various psionic spells without components.",
+        "Long-range teleportation capability to reposition in combat."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting includes abilities like detect magic, dominate person, and telekinesis.",
+    "test_queries": [
+        "huge crystal monster that petrifies",
+        "psychic creature with devastating burst attack",
+        "aberration that blends into surroundings",
+        "monster that uses powerful psionics",
+        "creature capable of stunning enemies"
+    ]
+}

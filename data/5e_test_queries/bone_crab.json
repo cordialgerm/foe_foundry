@@ -1,0 +1,25 @@
+{
+    "name": "Bone Crab",
+    "queries": [
+        {
+            "query": "small amphibious creature that uses camouflage and has a claw attack",
+            "variant": "amphibious small creature that uses camoflage and has a claw attack"
+        },
+        {
+            "query": "beast with 33 hit points that can jump long distances and cause disease",
+            "variant": "animal with 33 hit points that can jump long distances and cause illness"
+        },
+        {
+            "query": "stealthy crab-like monster that thrives in water and stealthily ambushes",
+            "variant": "stealthy crab monster that excels in water and ambushes quietly"
+        },
+        {
+            "query": "bone camouflage using creature that deals slashing damage",
+            "variant": "creature that uses bone camoflage and delivers slashing damage"
+        },
+        {
+            "query": "low challenge rating monster with telepathy and pack tactics",
+            "variant": "low CR creature with limited telepathy and group tactics"
+        }
+    ]
+}

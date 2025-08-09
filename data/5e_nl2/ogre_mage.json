@@ -1,0 +1,52 @@
+{
+    "name": "Ogre Mage",
+    "creature_type": "Giant",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 102,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walking speed and 30 ft. flying speed",
+    "role": "Controller",
+    "tags": [
+        "giant",
+        "spellcaster",
+        "ogre"
+    ],
+    "adjectives": [
+        "formidable",
+        "magical",
+        "large"
+    ],
+    "description": "A large giant with a blend of brute strength and magical prowess, often wielding an Iron Club and capable of shapeshifting.",
+    "memorable": "Its ability to cast powerful spells while remaining physically intimidating makes it a unique threat.",
+    "goals": "To control the battlefield with spells, dominate foes, and escape when necessary.",
+    "relations": "May serve as a leader among ogres, possibly communing with other magical giants.",
+    "environment": "Typically found in mountainous areas or regions where giants dwell.",
+    "strengths": "High Strength and Constitution scores, versatile spellcaster with crowd control abilities.",
+    "weaknesses": "Average Dexterity makes it less agile against nimble opponents, vulnerable to magical attacks.",
+    "attacks": "Can use Multiattack to make two melee attacks, dealing slashing and bludgeoning damage.",
+    "most_powerful_ability": "Cone of Cold, dealing devastating area-of-effect damage.",
+    "equipment": "Iron Club with magical properties targeting spells.",
+    "senses": "Exceptional passive perception of 14 gives it an edge in noticing hidden foes.",
+    "skills": "Proficient in arcana, deception, perception, and stealth, allowing it to engage in both combat and social situations effectively.",
+    "additional_information": [
+        "Innate spellcasting abilities provide significant versatility in combat.",
+        "Ability to cast Darkness to obscure surroundings.",
+        "Can become invisible for tactical advantages.",
+        "Possesses a unique capability to dispel spells with its Iron Club.",
+        "Shapeshifting allows for tactical repositioning or escaping threats."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting through Charisma, capable of casting various spells at will and once per day.",
+    "test_queries": [
+        "giant spellcaster with magical abilities",
+        "ogre that can fly and cast spells",
+        "large giant with shapeshifting powers",
+        "creature that can cast cone of cold",
+        "ogre mage with strong melee attacks"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Kobold War Machine</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Kobold War Machine is a large, unaligned construct designed for battlefield dominance. With a formidable challenge rating of 9, it has a robust armor class and a substantial pool of hit points, making it a tough adversary. This war machine excels in dealing damage and can be highly effective when operated by skilled kobolds. While it has a few limitations, such as its low intelligence and lack of language, its special abilities significantly enhance its capabilities. Notably, it is immune to a variety of conditions and can withstand all nonmagical attacks better than most foes. However, it relies heavily on operators to maximize its potential, impacting its overall effectiveness.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Combining its physical prowess with its unique abilities and special actions, th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold War Machine
 
 *Large* *Construct* *unaligned*
@@ -61,5 +64,6 @@ If a creature scores a critical hit against the kobold war machine, the creature
 - **Fire Breath (Recharge 5-6):** The kobold war machine exhales fire in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 35 (10d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

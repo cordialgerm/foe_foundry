@@ -1,0 +1,50 @@
+{
+    "name": "Gnoll Slaver",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "gnoll",
+        "humanoid",
+        "evil",
+        "slaver",
+        "cunning"
+    ],
+    "adjectives": [
+        "brutal",
+        "cunning"
+    ],
+    "description": "The Gnoll Slaver is a medium humanoid with a brutal appearance, donned in a chain shirt. It embodies chaotic evil with its sharp features, ready to engage in combat with a vicious demeanor.",
+    "memorable": "This creature's ability to instill fear through its Menace Captives ability makes it a notable foe, capable of overpowering opponents both in combat and through psychological manipulation.",
+    "goals": "The Gnoll Slaver aims to subdue and control captives, creating a hierarchy of fear.",
+    "relations": "Often works alongside other gnolls or evil humanoid creatures, acting as a leader or a commander.",
+    "environment": "Typically found in savage lands or among disadvantaged groups, preying on the weak.",
+    "strengths": "Possesses high strength and skill in combat, able to execute multiple attacks effectively in a single turn.",
+    "weaknesses": "Despite its strength, it remains vulnerable to quick, well-coordinated attacks from organized adventurers.",
+    "attacks": "Utilizes a combination of bite attacks, whips, and longbows to engage foes both in close and ranged combat.",
+    "most_powerful_ability": "Rampage, allowing it to quickly pursue and attack foes it has incapacitated.",
+    "senses": "Has darkvision that enables it to see in dim light as if it were bright light.",
+    "skills": "Skilled in athletics and intimidation, allowing it to effectively threaten and overpower its foes.",
+    "additional_information": [
+        "Can communicate in both Common and Gnoll.",
+        "Specializes in capturing and controlling opponents.",
+        "Capable of rapidly alternating between melee and ranged attacks.",
+        "Emphasizes fear tactics to maintain control over prisoners.",
+        "Utilizes terrain to its advantage during ambushes."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "brutal humanoid slaver with fear abilities",
+        "cunning gnoll that hampers captives",
+        "medium evil humanoid controlling prisoners",
+        "Gnoll with powerful melee and ranged attacks",
+        "creature that uses intimidation and stealth in combat"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Centaurs",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "50 feet, very fast and agile",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "fey",
+        "hunter",
+        "archer"
+    ],
+    "adjectives": [
+        "majestic",
+        "proud",
+        "strong",
+        "agile"
+    ],
+    "description": "Centaurs have the upper body of a human and the lower body of a horse, representing a blend of humanoid and animal traits.",
+    "memorable": "Centaurs are known for their speed, archery skills, and deep connection to nature, often serving as protectors of the wild.",
+    "goals": "Centaurs typically aim to protect their forest or plain homes and uphold their independence.",
+    "relations": "Centaurs may be seen as allies to other fey creatures or anyone who respects nature, but they do not submit easily to authority.",
+    "environment": "Centaurs are often found in large herds in forests or plains.",
+    "strengths": "Centaurs boast high strength and dexterity, taking advantage of their agility and physical attacks.",
+    "weaknesses": "They may struggle in situations requiring high intelligence or charisma due to average mental attributes.",
+    "attacks": "Centaurs are formidable in both melee and ranged combat, utilizing hooves, pikes, and shortbows with great effectiveness.",
+    "most_powerful_ability": "Their Trampling Charge allows them to knock opponents prone, setting them up for additional attacks.",
+    "senses": "Centaurs have a passive perception of 17, allowing them to notice hidden threats and navigate their surroundings effectively.",
+    "skills": "Centaurs are proficient in nature, perception, and survival, indicating their capability as guardians of the wild.",
+    "additional_information": [
+        "Centaurs exhibit Monstrosity Resilience, resisting exhaustion and frightened conditions.",
+        "They can perform Multiattacks, making multiple strikes in a turn.",
+        "The Deadeye Shot ability allows them to make a precise ranged attack once per day.",
+        "Centaurs prefer to engage in open ground where they can leverage their speed and movement.",
+        "Their proud demeanor leads to fierce loyalty to their herds and territories."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "majestic horse-human hybrid warrior",
+        "forest protector that fights with bow",
+        "fast creature with powerful charge attack",
+        "strong centaur skilled in nature and survival",
+        "proud centaur that resists fear effects"
+    ]
+}

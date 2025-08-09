@@ -1,0 +1,25 @@
+{
+    "name": "Swolbold",
+    "queries": [
+        {
+            "query": "muscular humanoid that uses pack tactics and struggles in sunlight",
+            "variant": "strong humanoid that has pack tactics and has issues in sunlight"
+        },
+        {
+            "query": "medium creature with a slam attack and disadvantage in bright light",
+            "variant": "medium-sized creature that has a slam attack and struggles in bright light"
+        },
+        {
+            "query": "Swolbold abilities in combat and weaknesses in sunlight",
+            "variant": "Swolbold combat skills and disadvantages in daylight"
+        },
+        {
+            "query": "creature with high strength that grapples and crushes foes",
+            "variant": "monster with high physical power that grapples and squashes enemies"
+        },
+        {
+            "query": "chaotic neutral humanoid that communicates in Draconic and has darkvision",
+            "variant": "chaotic neutral humanoid that speaks Draconic and possesses darkvision"
+        }
+    ]
+}

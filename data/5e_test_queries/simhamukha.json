@@ -1,0 +1,25 @@
+{
+    "name": "Simhamukha",
+    "queries": [
+        {
+            "query": "huge celestial monster that excels in melee and has radiant damage abilities",
+            "variant": "huge celestials monster that specializes in melee and has radiant damage powers"
+        },
+        {
+            "query": "powerful celestial creature with magic resistance and truesight",
+            "variant": "strong celestial being with magical resistance and true sight"
+        },
+        {
+            "query": "chaotic good creature with high Strength and unique special abilities",
+            "variant": "chaotic good monster with elevated strength and distinct special powers"
+        },
+        {
+            "query": "Simhamukha's special abilities for damaging magical attacks",
+            "variant": "Simhamukha's special powers for dealing with magical attacks"
+        },
+        {
+            "query": "strong celestial creature that communicates telepathically and has impressive defenses",
+            "variant": "powerful celestial being that can communicate via telepathy and has great defenses"
+        }
+    ]
+}

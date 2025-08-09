@@ -1,0 +1,25 @@
+{
+    "name": "Ink Devil",
+    "queries": [
+        {
+            "query": "small fiend that can turn invisible and excels in magic resistance",
+            "variant": "small evil fiend that can go invisible and has strong magic resistance"
+        },
+        {
+            "query": "lawful evil creature that can mark targets and disrupt spellcasters",
+            "variant": "lawful evil monster that marks targets and disrupts spell casting"
+        },
+        {
+            "query": "fiend with high intelligence and darkvision that manipulates opponents",
+            "variant": "fiendish creature with great intelligence and darkvision that manipulates enemies"
+        },
+        {
+            "query": "stealthy creature immune to fire that uses devil's ink",
+            "variant": "stealthy monster immune to fire and uses its devil's ink ability"
+        },
+        {
+            "query": "ink devil that excels in arcana and stealth with an advantage in social interactions",
+            "variant": "ink devil that shines in arcana and stealth, gaining bonuses in social encounters"
+        }
+    ]
+}

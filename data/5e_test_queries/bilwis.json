@@ -1,0 +1,25 @@
+{
+    "name": "Bilwis",
+    "queries": [
+        {
+            "query": "flying elemental creature that can manipulate the air",
+            "variant": "elemental creature flying that manipulates air"
+        },
+        {
+            "query": "chaotic evil creature immune to poison and resistant to lightning",
+            "variant": "poison-immune chaotic evil creature that has resistances to lightning"
+        },
+        {
+            "query": "elemental with good agility and special ability to pass through enemies",
+            "variant": "good agility elemental with ability to pass through enemies"
+        },
+        {
+            "query": "medium-sized monster that can cause bludgeoning damage and knock opponents prone",
+            "variant": "monster of medium size that causes bludgeoning damage and knocks foes down"
+        },
+        {
+            "query": "air elemental with the ability to create a whirlwind effect",
+            "variant": "elemental of air that creates a whirlwind effect"
+        }
+    ]
+}

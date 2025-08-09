@@ -1,0 +1,49 @@
+{
+    "name": "Animated Armor",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 18,
+    "srd": true,
+    "cr": "1",
+    "movement": "25 ft. walk speed",
+    "role": "Defender",
+    "tags": [
+        "Guardian",
+        "Ambusher",
+        "Magical"
+    ],
+    "adjectives": [
+        "hollow",
+        "polished",
+        "silent",
+        "eerie",
+        "indistinguishable"
+    ],
+    "description": "Animated Armor is a hollow suit of armor brought to life by magical forces. Its metal plates are polished but often show signs of age or battle damage, yet it moves with a silent, eerie grace. It can wield weapons and shields, mimicking the movements of a skilled warrior. Often used as a guardian, it patrols castles and ruins, protecting its master's domain.",
+    "memorable": "It lacks any visible occupant and follows commands without question, striking without hesitation and feeling no pain or fear.",
+    "goals": "To protect its master\u2019s domain and patrol designated areas.",
+    "relations": "Often found alongside other constructs or magical beings.",
+    "environment": "Typically found in dungeons, protecting treasures, castles, or ruins.",
+    "strengths": "Immune to poison and psychic damage, resistant to piercing damage, and does not require biological needs like food or sleep.",
+    "weaknesses": "Susceptible to antimagic fields, where it becomes incapacitated.",
+    "attacks": "Makes melee weapon attacks, capable of dealing bludgeoning, piercing, or slashing damage based on weapon type.",
+    "most_powerful_ability": "Spell-created: The DC for dispelling magic that could destroy it is set at 19, making it challenging for spellcasters to eliminate.",
+    "senses": "Possesses blindsight with a radius of 60 feet, indicating it is blind beyond that range.",
+    "skills": "Has low perception with a passive score of 6, indicating poor awareness.",
+    "additional_information": [
+        "Can blend into its environment while motionless, allowing for ambush tactics.",
+        "Incapacitated in an antimagic field, requiring a Constitution saving throw if affected by dispel magic.",
+        "Can perform a Helmet Bash for additional damage when at low hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "magical guardian armor",
+        "animated metallic protector",
+        "stealthy suit of armor",
+        "enchanted armor sentry",
+        "living suit of armor"
+    ]
+}

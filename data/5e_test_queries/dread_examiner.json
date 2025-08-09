@@ -1,0 +1,25 @@
+{
+    "name": "Dread Examiner",
+    "queries": [
+        {
+            "query": "large psychic creature with high intelligence and spellcasting abilities",
+            "variant": "big psychic monster with exceptional intelligence and magic powers"
+        },
+        {
+            "query": "aberration that communicates through telepathy and has magic resistance",
+            "variant": "creature that speaks with telepathy and resists magical effects"
+        },
+        {
+            "query": "neutral evil aberration with formidable physical attacks and manipulation tactics",
+            "variant": "neutral evil monster with strong physical strikes and strategic manipulation"
+        },
+        {
+            "query": "mysterious creature immune to nonmagical damage and can sense magic",
+            "variant": "enigmatic monster resistant to regular attacks and able to detect magic"
+        },
+        {
+            "query": "manipulative large monster capable of psychic awareness and teleportation",
+            "variant": "deceptive big creature skilled in psychic perception and teleporting"
+        }
+    ]
+}

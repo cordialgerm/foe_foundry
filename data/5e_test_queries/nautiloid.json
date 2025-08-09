@@ -1,0 +1,25 @@
+{
+    "name": "Nautiloid",
+    "queries": [
+        {
+            "query": "gargantuan elemental creature that can swim quickly and has a magical dome",
+            "variant": "big elemental monster that swims fast and has a magical dome"
+        },
+        {
+            "query": "creature with an enchanted shell that protects allies and has high hit points",
+            "variant": "monster with a magic shell that protects friends and has lots of hit points"
+        },
+        {
+            "query": "underwater creature immune to cold that offers comfort to its passengers",
+            "variant": "cold-resistant underwater monster that provides comfort to those inside"
+        },
+        {
+            "query": "strong aquatic elemental with powerful melee attacks and a teleportation ability",
+            "variant": "forceful water elemental with strong melee strikes and a teleporting ability"
+        },
+        {
+            "query": "large creature that communicates telepathically and has a unique swimming speed",
+            "variant": "huge monster that can speak mentally and has a special swimming speed"
+        }
+    ]
+}

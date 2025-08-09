@@ -1,0 +1,25 @@
+{
+    "name": "Leech Swarm",
+    "queries": [
+        {
+            "query": "aquatic parasite creature that can drain health",
+            "variant": "aquatic monster that drains health and is a parasite"
+        },
+        {
+            "query": "medium-sized beast with a stealthy nature that thrives in water",
+            "variant": "stealthy medium creature that loves water environments"
+        },
+        {
+            "query": "swarm of leeches that has enhanced agility and blood sense",
+            "variant": "leeches swarm with superior agility and can sense blood"
+        },
+        {
+            "query": "creature with low intelligence and a dangerous biting attack",
+            "variant": "monster with bad intelligence and a fierce bite attack"
+        },
+        {
+            "query": "agile leech swarm that can't heal but is good at ambushing",
+            "variant": "leech swarm that is agile, can't heal, and excels in ambush"
+        }
+    ]
+}

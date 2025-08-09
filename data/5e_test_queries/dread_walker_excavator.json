@@ -1,0 +1,25 @@
+{
+    "name": "Dread Walker Excavator",
+    "queries": [
+        {
+            "query": "large construct with high armor class and climbing ability",
+            "variant": "large construct that has a high AC and can climb"
+        },
+        {
+            "query": "tough melee attacker that is immune to poisoned and psychic damage",
+            "variant": "strong melee attacker that cannot be affected by poison and psychic damage"
+        },
+        {
+            "query": "construct that deals force damage when attacked up close",
+            "variant": "creature that inflicts force damage on nearby attackers"
+        },
+        {
+            "query": "agile creature that can walk on ceilings and has darkvision",
+            "variant": "nimble being that can traverse ceilings and possesses dark vision"
+        },
+        {
+            "query": "monstrous excavator with multiattack and special arcane ability",
+            "variant": "large excavator with multiple attacks and unique arcane power"
+        }
+    ]
+}

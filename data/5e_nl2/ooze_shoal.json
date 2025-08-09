@@ -1,0 +1,52 @@
+{
+    "name": "Shoal",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 232,
+    "ac": 9,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 10 ft., swim 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "water",
+        "ambush",
+        "ooze"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "deceptive",
+        "aquatic"
+    ],
+    "description": "The Shoal is a gargantuan ooze that resembles a large school of fish, making it difficult to distinguish from its surroundings. It primarily exists underwater and has a slimy yet gelatinous body.",
+    "memorable": "Its unique ability to mimic fish allows it to ambush unsuspecting attackers effectively.",
+    "goals": "The Shoal aims to incapacitate and consume prey that venture into its aquatic territory.",
+    "relations": "It shares a symbiotic relationship with fish, enhancing its abilities through their presence.",
+    "environment": "Commonly found in underwater settings, such as lakes and oceans.",
+    "strengths": "High hit points and unique abilities like False Appearance and Mesmerizing Spiral make it a formidable opponent.",
+    "weaknesses": "Its low intelligence and reliance on physical attacks can be exploited by strategic foes.",
+    "attacks": "The Shoal can perform a Mesmerizing Spiral to incapacitate creatures, followed by powerful pseudopod strikes and the ability to engulf multiple enemies.",
+    "most_powerful_ability": "Mesmerizing Spiral, which can incapacitate multiple creatures at once.",
+    "equipment": null,
+    "senses": "The Shoal has blindsight out to 60 feet, allowing it to perceive its surroundings without relying on sight.",
+    "skills": "It has proficiency in perception but has an average total skill modifier of +0.",
+    "additional_information": [
+        "Immune to acid damage.",
+        "Resistant to bludgeoning, piercing, and slashing damage.",
+        "Does not require sleep due to Ooze Nature.",
+        "Can engulf multiple creatures simultaneously.",
+        "Cannot be affected by various conditions such as blinded, charmed, or frightened."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan gelatinous predator in water",
+        "hypnotic fish-like ooze that engulfs",
+        "ambush monster resembling a school of fish",
+        "aquatic ooze with mesmerizing spiral ability",
+        "gelatinous creature with high health and bludgeoning resistance"
+    ]
+}

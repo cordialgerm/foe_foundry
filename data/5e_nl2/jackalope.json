@@ -1,0 +1,51 @@
+{
+    "name": "Jackalope",
+    "creature_type": "Beast",
+    "alignment": "null",
+    "size": "Tiny",
+    "hp": 55,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 50 ft.",
+    "role": "null",
+    "tags": [
+        "beast",
+        "stealth",
+        "agile"
+    ],
+    "adjectives": [
+        "tiny",
+        "cunning",
+        "nimble"
+    ],
+    "description": "The Jackalope is a tiny beast with remarkable agility, featuring a combination of rabbit-like body and antelope horns. Its high Dexterity and quick movements allow it to evade threats effectively.",
+    "memorable": "The Jackalope's ability to mimic sounds and its exceptional evasion make it a challenging creature to track or capture.",
+    "goals": "Typically seeks to evade larger predators and can use mimicry to confuse them, ensuring its survival.",
+    "relations": "Often found in the company of other small beasts or as a prey species in its natural habitat.",
+    "environment": "Commonly inhabits wooded areas or grasslands where it can use its speed to navigate effectively.",
+    "strengths": "Exceptional Dexterity enhances stealth and saving throws, making it difficult to pin down in combat.",
+    "weaknesses": "Low Intelligence limits its ability to solve problems or strategize effectively.",
+    "attacks": "Gore attack that inflicts piercing damage, enhanced by movement speed and agility.",
+    "most_powerful_ability": "Evasion, allowing it to avoid damage entirely from certain effects.",
+    "equipment": "null",
+    "senses": "Possesses keen hearing, giving it advantage on perception checks based on sound.",
+    "skills": "Skilled in stealth and perception, making it great at avoiding detection.",
+    "additional_information": [
+        "Has the ability to run quickly, moving 50 feet per turn.",
+        "Possesses condition immunity to being stunned.",
+        "Resistant to lightning damage.",
+        "Can use Nimble Escape to disengage or hide effectively."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "null",
+    "test_queries": [
+        "tiny agile beast with antelope horns",
+        "quick creature that mimics sounds",
+        "stealthy animal in woodland areas",
+        "Jackalope abilities and behaviors",
+        "cunning beast that avoids danger"
+    ]
+}

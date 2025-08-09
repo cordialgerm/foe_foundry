@@ -1,0 +1,50 @@
+{
+    "name": "Shadow Fey Ambassador",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 161,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "ambassador",
+        "manipulator"
+    ],
+    "adjectives": [
+        "sinister",
+        "elusive",
+        "charismatic"
+    ],
+    "description": "The Shadow Fey Ambassador embodies a dark and charismatic presence, capable of manipulating shadows and social dynamics with finesse.",
+    "memorable": "It combines physical prowess with deep social manipulation, instilling fear and charm simultaneously.",
+    "goals": "To manipulate social interactions and dominate encounters through fear and persuasion.",
+    "relations": "May be found serving powerful fey or working alongside other manipulators and tricksters.",
+    "environment": "Commonly associated with shadowy locales, fey courts, or dark dealings.",
+    "strengths": "Exceptional skills in deception and persuasion, high dexterity and charisma.",
+    "weaknesses": "Disadvantage on attack rolls and perception checks in bright light due to sunlight sensitivity.",
+    "attacks": "Utilizes a Withering Stare to instill fear and follows up with quick rapier strikes that deal piercing and cold damage.",
+    "most_powerful_ability": "Honeyed Words allows it to charm and manipulate multiple targets, making them view it favorably.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 17.",
+    "skills": "Expert in deception with a +13 modifier, alongside strong skills in intimidation and persuasion.",
+    "additional_information": [
+        "Fey Ancestry grants advantage against being charmed.",
+        "The Shadow Traveler ability allows it to vanish into shadows and reappear within 30 feet.",
+        "Advantage on Intelligence (Arcana) checks related to shadow magic."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "charismatic shadow fey with fear abilities",
+        "manipulative humanoid that can charm",
+        "dark creature skilled in deception and intimidation",
+        "shadow creature with powerful persuasion skills",
+        "elusive humanoid ambassador using shadows"
+    ]
+}

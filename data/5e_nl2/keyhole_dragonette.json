@@ -1,0 +1,51 @@
+{
+    "name": "Keyhole Dragonette",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "climb 20 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "stealth",
+        "utility",
+        "swarms"
+    ],
+    "adjectives": [
+        "tiny",
+        "nimble",
+        "agile",
+        "versatile"
+    ],
+    "description": "The Keyhole Dragonette is a tiny dragon known for its exceptional agility and ability to navigate tight spaces. Its scales are striking and vibrant, showcasing its draconic heritage.",
+    "memorable": "Its unique ability to squeeze through 1-inch openings and its soporific breath that can incapacitate foes makes it a clever and unexpected challenge.",
+    "goals": "Typically acts as a scout and infiltrator, often seeking out small or hidden areas.",
+    "relations": "Related to other dragon species and may be encountered with small animal companions.",
+    "environment": "Often found in areas with tight spaces like caves or dense forests.",
+    "strengths": "Possesses excellent stealth skills and can effectively combat swarms, ignoring their defenses against piercing and slashing damage.",
+    "weaknesses": "Low intelligence limits strategic planning; easily outsmarted in complex scenarios.",
+    "attacks": "Can deliver a bite attack and a slashing Scale Slash, both effective in close quarters.",
+    "most_powerful_ability": "Soporific Breath prevents enemies from acting, providing a tactical advantage in ambush situations.",
+    "senses": "Possesses darkvision and tremorsense, allowing it to detect creatures in low visibility and through barriers.",
+    "skills": "Excels in stealth and has decent perception to notice nearby threats.",
+    "additional_information": [
+        "Can pick locks and disarm traps with its tongue.",
+        "Highly mobile, able to leap without provoking opportunity attacks.",
+        "Acts as a good infiltrator due to its small size.",
+        "Offers utility outside combat, particularly in sneaking or scouting roles.",
+        "Particularly effective against swarms of beasts."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon that excels at stealth and scouting",
+        "dragon that can squeeze through small spaces",
+        "versatile dragon with soporific breath ability",
+        "dragonette that can pick locks with its tongue",
+        "mobile dragon that jumps without provoking attacks"
+    ]
+}

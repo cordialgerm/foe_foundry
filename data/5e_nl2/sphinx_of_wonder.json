@@ -1,0 +1,49 @@
+{
+    "name": "Sphinx of Wonder",
+    "creature_type": "Celestial",
+    "alignment": "Lawful Good",
+    "size": "Tiny",
+    "hp": 24,
+    "ac": 13,
+    "srd": true,
+    "cr": "1",
+    "movement": "slow land speed with fast flying speed",
+    "role": "null",
+    "tags": [
+        "celestial",
+        "flying",
+        "lawful"
+    ],
+    "adjectives": [
+        "tiny",
+        "wise",
+        "magical"
+    ],
+    "description": "A tiny celestial creature with intelligence and magical resistance, characterized by its ability to fly and the mystical qualities associated with sphinxes.",
+    "memorable": "Its Burst of Ingenuity ability allows it to aid others in crucial moments, showcasing its cleverness and benevolence.",
+    "goals": "To assist others with knowledge and magical insights.",
+    "relations": "Often found serving or aiding those in need, or associated with other celestial beings.",
+    "environment": "Frequently encountered in areas of magic or places of celestial significance.",
+    "strengths": "Possesses magic resistance, allowing it to counter spells effectively.",
+    "weaknesses": "Lower physical strength and resilience compared to larger creatures.",
+    "attacks": "Rends its opponents with slashing attacks accompanied by radiant damage.",
+    "most_powerful_ability": "Burst of Ingenuity grants bonuses to ability checks and saving throws for nearby allies.",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in low light and darkness.",
+    "skills": "Proficient in Arcana and Religion, lending its wisdom in mystical matters.",
+    "additional_information": [
+        "Can fly at a speed of 40 feet, enabling quick maneuverability.",
+        "Resistant to necrotic, psychic, and radiant damage, offering versatile defense.",
+        "Uses its intelligence to interact with magical elements and assist others."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny celestial that aids with magic",
+        "flying sphinx with radiant attacks",
+        "intelligent celestial creature with magic resistance",
+        "sphinx that adds bonuses to ability checks",
+        "lawful good creature that assists nearby allies"
+    ]
+}

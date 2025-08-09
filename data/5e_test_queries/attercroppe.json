@@ -1,0 +1,25 @@
+{
+    "name": "Attercroppe",
+    "queries": [
+        {
+            "query": "tiny fey creature that poisons water and can become invisible",
+            "variant": "fey creature that is tiny, can poison water, and goes invisible"
+        },
+        {
+            "query": "stealthy water creature with high dexterity and poisonous aura",
+            "variant": "water creature that is stealthy, has high dexterity and an aura that poisons"
+        },
+        {
+            "query": "cunning tiny monster with spellcasting abilities that manipulates water",
+            "variant": "tiny monster that is cunning, can cast spells, and controls water"
+        },
+        {
+            "query": "chaotic evil creature that can communicate in Aquan and dominates aquatic environments",
+            "variant": "creature that is chaotic evil, speaks Aquan, and rules in water environments"
+        },
+        {
+            "query": "monster with darkvision and immunity to poison, living in water",
+            "variant": "monster that has darkvision, is immune to poison, and resides in water"
+        }
+    ]
+}

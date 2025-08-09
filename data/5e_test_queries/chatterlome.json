@@ -1,0 +1,25 @@
+{
+    "name": "Chatterlome",
+    "queries": [
+        {
+            "query": "clever fiend with teleportation abilities that hides in wooden containers",
+            "variant": "sneaky fiend that can teleport and hides inside wooden boxes"
+        },
+        {
+            "query": "medium lawful evil fiend known for agility and stealth combat",
+            "variant": "medium fiend that is lawful evil, excels in stealth and agile in combat"
+        },
+        {
+            "query": "fiend with high dexterity and magical resistance that ambushes opponents",
+            "variant": "fiend that ambushes foes with high dexterity and has resistance to magic"
+        },
+        {
+            "query": "fiend known for its chisel attacks and box teleport ability",
+            "variant": "fiend characterized by chisel attacks and ability to teleport using boxes"
+        },
+        {
+            "query": "fiend resistant to poison and cold damage that excels at stealth",
+            "variant": "fiend that resists poison and cold hazards while being stealthy"
+        }
+    ]
+}

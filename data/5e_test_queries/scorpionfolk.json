@@ -1,0 +1,25 @@
+{
+    "name": "Scorpionfolk",
+    "queries": [
+        {
+            "query": "large monster that can grapple and use poison",
+            "variant": "big creature that uses poison and can grapple"
+        },
+        {
+            "query": "monster with claw and sting attacks that lives in desert",
+            "variant": "creature that has claw and sting attacks and is found in the desert"
+        },
+        {
+            "query": "monstrosity with javelin attacks and good stealth ability",
+            "variant": "creature that can use javelins and has decent stealth"
+        },
+        {
+            "query": "mighty creature with bludgeoning damage and poison effect",
+            "variant": "powerful monster that deals bludgeoning damage and has poison effect"
+        },
+        {
+            "query": "Scorpionfolk survival skills and average perception",
+            "variant": "Scorpionfolk with average perception and survival skills"
+        }
+    ]
+}

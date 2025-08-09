@@ -1,0 +1,25 @@
+{
+    "name": "Dust Goblin",
+    "queries": [
+        {
+            "query": "small humanoid that instills fear and attacks from hiding",
+            "variant": "humanoid creature that is small and can frighten its foes while ambushing"
+        },
+        {
+            "query": "stealthy monster with high dexterity and low strength",
+            "variant": "monster that specializes in stealth with great dexterity but poor strength"
+        },
+        {
+            "query": "darkvision creature that speaks Goblin and attacks with a shortsword",
+            "variant": "creature with darkvision and the ability to use a shortsword while speaking Goblin"
+        },
+        {
+            "query": "neutral evil goblin that is good at evading detection and attacks with a crossbow",
+            "variant": "goblin with neutral evil alignment that excels at avoiding detection and uses a crossbow"
+        },
+        {
+            "query": "Dust Goblin abilities that include frightening from ambush and skilled in stealth",
+            "variant": "abilities of the Dust Goblin featuring ambush tactics and proficiency in stealth"
+        }
+    ]
+}

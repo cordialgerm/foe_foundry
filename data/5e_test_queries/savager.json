@@ -1,0 +1,25 @@
+{
+    "name": "Savager",
+    "queries": [
+        {
+            "query": "large beast with high Strength and melee attacks",
+            "variant": "big beast that has high Strenght and melee attacks"
+        },
+        {
+            "query": "monster that resists nonmagical damage and is neutral evil",
+            "variant": "creature that has resistance to nonmagical attacks and is neutral evil"
+        },
+        {
+            "query": "slow-moving beast with dangerous claw and bite attacks",
+            "variant": "slow beast that has deadly claw and bite strikes"
+        },
+        {
+            "query": "creature with darkvision that attacks with spines",
+            "variant": "monster with dark vision that strikes with spines"
+        },
+        {
+            "query": "ferocious large creature with a biting attack and high hit points",
+            "variant": "fierce large critter with a bite attack and lot of hit points"
+        }
+    ]
+}

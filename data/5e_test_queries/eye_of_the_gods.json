@@ -1,0 +1,25 @@
+{
+    "name": "Eye of the Gods",
+    "queries": [
+        {
+            "query": "small celestial creature with truesight and divine abilities",
+            "variant": "small divine creature that has truesight and powers from its deity"
+        },
+        {
+            "query": "flying celestial that provides allies with truesight",
+            "variant": "celestial that flies and grants truesight to its friends"
+        },
+        {
+            "query": "creature immune to poison and necrotic damage with high wisdom",
+            "variant": "monster that has immunity to necrotic and poison damage and excels in wisdom"
+        },
+        {
+            "query": "Eye of the Gods abilities to support allies in combat",
+            "variant": "abilities of the Eye of the Gods to help allies during battle"
+        },
+        {
+            "query": "radiant damage dealing creature that can phase between planes",
+            "variant": "creature that deals radiant damage and shifts between planes"
+        }
+    ]
+}

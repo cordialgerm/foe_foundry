@@ -1,0 +1,55 @@
+{
+    "name": "Dragonleaf Tree",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 152,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "slow movement at 15 feet",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "elemental",
+        "plant"
+    ],
+    "adjectives": [
+        "imposing",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Dragonleaf Tree is a large, imposing plant creature that stands as a guardian for its draconic master. It has a robust appearance with thick foliage and features resembling that of a dragon's elemental affinity.",
+    "memorable": "Its unique ability to unleash devastating elemental damage from its leaves makes it a significant battlefield control threat.",
+    "goals": "To protect its draconic master from intruders and threats.",
+    "relations": "It is closely related and loyal to the dragon that spawned it.",
+    "environment": "Usually found in areas dominated by dragons or elemental features, such as dragon lairs or enchanted forests.",
+    "strengths": "Immunity to elemental damage depending on its dragon origin, combined with strong physical attacks and multiattack capabilities.",
+    "weaknesses": "Limited mobility with only 15 feet of walking speed and low intelligence may hinder strategic planning.",
+    "attacks": "Can perform multiattacks with Slam attacks dealing bludgeoning and elemental damage or Throw Leaves attacks for slashing and elemental damage.",
+    "most_powerful_ability": "Elemental Leaves can deal substantial area damage, affecting multiple foes at once within a 20-foot radius.",
+    "senses": "Blindsight up to 120 feet allows it to detect creatures nearby without needing to see them.",
+    "skills": null,
+    "additional_information": [
+        "Eternally Loyal ability allows it to resist effects against its draconic master.",
+        "Elemental Affinity provides immunity to various elemental damages based on the originating dragon.",
+        "Can leverage both melee and ranged attacks effectively.",
+        "Can unleash elemental damage in a wide area after recharging.",
+        "Possesses a strong Constitution and decent Strength for its role."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that guards dragon",
+        "massive guardian tree with elemental powers",
+        "dragonleaf tree that can unleash elemental damage",
+        "imposing plant creature immune to elemental damage",
+        "slow tree protector of dragon offspring"
+    ]
+}

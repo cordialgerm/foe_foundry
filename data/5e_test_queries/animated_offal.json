@@ -1,0 +1,25 @@
+{
+    "name": "Animated Offal",
+    "queries": [
+        {
+            "query": "massive ooze that regenerates health and absorbs magic",
+            "variant": "huge ooze that heals by absorbing magic and other creatures"
+        },
+        {
+            "query": "creature with necrotic damage and low armor class",
+            "variant": "monster with low AC and deals necrotic damage"
+        },
+        {
+            "query": "ooze creature that grapples opponents and inflicts necrotic damage",
+            "variant": "ooze monster that can grapple and causes necrotic damage"
+        },
+        {
+            "query": "Animated Offal abilities for combat and health regeneration",
+            "variant": "Animated Offal combat skills and healing abilities"
+        },
+        {
+            "query": "creature that crushes enemies and absorbs healing potions",
+            "variant": "monster that destroys foes and takes healing potions"
+        }
+    ]
+}

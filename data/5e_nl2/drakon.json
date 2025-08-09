@@ -1,0 +1,53 @@
+{
+    "name": "Drakon",
+    "creature_type": "Dragon",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "amphibious",
+        "poison resistance"
+    ],
+    "adjectives": [
+        "formidable",
+        "swift",
+        "acidic",
+        "stealthy"
+    ],
+    "description": "The Drakon is a large dragon with impressive physical capabilities and a unique color variation that permits it to thrive in various environments. Notable for its powerful jaws and long, sweeping tail, it possesses a sleek, agile body that allows for deception and ambush.",
+    "memorable": "Its ability to incapacitate prey with its Dissolving Gaze makes it a uniquely dangerous dragon, threatening both in close combat and from a distance with its Acid Breath.",
+    "goals": "Typically acts as a predator, seeking to incapacitate and consume prey.",
+    "relations": "May be encountered alongside other draconic creatures or serve as a guardian of treasure.",
+    "environment": "Often found in both aquatic and terrestrial habitats.",
+    "strengths": "Exceptional Dexterity grants it stealth and evasion; resistance to acid damage enhances its durability.",
+    "weaknesses": "Very low Intelligence limits its tactical options and makes it reliant on brute force.",
+    "attacks": "Utilizes a swift Bite attack combined with an impactful Tail attack, as well as the long-range Acid Breath.",
+    "most_powerful_ability": "Dissolving Gaze, which paralyzes and harms opponents while reducing their maximum hit points.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Boasts notable bonuses in Stealth and Perception, making it a skilled ambush predator.",
+    "additional_information": [
+        "Can breathe both air and water due to its Amphibious trait.",
+        "Immunity to the paralyzed condition allows it to use its abilities without fear of being incapacitated.",
+        "Allows it to manipulate battlefield presence through stealth and surprise.",
+        "Highly effective area damage with Acid Breath for crowd control.",
+        "Has a paralyzing effect which can eliminate threats effectively."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon with acid breath attack",
+        "formidable monster that can breathe water and air",
+        "stealthy creature with paralyzing gaze and acid damage",
+        "swift dragon that excels in ambush tactics",
+        "dragon known for dissolving gaze and poison resistance"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Quoreq",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "regeneration",
+        "fear",
+        "melee",
+        "unsettling appearance"
+    ],
+    "adjectives": [
+        "chaotic",
+        "menacing",
+        "durable",
+        "fear-inducing"
+    ],
+    "description": "The Quoreq is a medium-sized aberration known for its unsettling appearance, exhibiting a strong offensive presence and formidable physical damage potential.",
+    "memorable": "Its ability to instill fear and regenerate hit points makes it a formidable opponent in combat.",
+    "goals": "The Quoreq thrives in direct confrontations, using its abilities to manipulate the battlefield and terrify enemies.",
+    "relations": "Similar aberrations or creatures that embody fear and chaos.",
+    "environment": "usually found in chaotic or dark environments.",
+    "strengths": "High constitution and a strong regenerative ability allow it to endure in battles.",
+    "weaknesses": "Susceptible to acid and fire damage, which nullifies its regeneration.",
+    "attacks": "Capable of making multiple claw attacks and a powerful bite attack that inflicts significant damage.",
+    "most_powerful_ability": "Regeneration allows it to regain hit points each turn unless affected by acid or fire.",
+    "equipment": "null",
+    "senses": "Blindsight grants the ability to detect creatures within 60 feet, despite being blind beyond that range.",
+    "skills": "Possesses strong perception skills with a +5 modifier, enabling it to effectively notice hidden foes.",
+    "additional_information": [
+        "Immunity to poison damage and various conditions.",
+        "Can cause fright with its Unsettling Appearance ability.",
+        "Can make a bite attack as a bonus action after taking enough damage."
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aberration that regenerates and instills fear",
+        "chaotic creature with unsettling appearance and blindness",
+        "medium monster with terrifying bite and claw attacks",
+        "regenerating monster that hates acid and fire",
+        "strong melee combatant with frightening abilities"
+    ]
+}

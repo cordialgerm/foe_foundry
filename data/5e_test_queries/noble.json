@@ -1,0 +1,25 @@
+{
+    "name": "Noble",
+    "queries": [
+        {
+            "query": "aristocratic humanoid character known for charm and manipulation",
+            "variant": "humanoid character that is aristocratic and skilled in charm and manipulation"
+        },
+        {
+            "query": "creature with high charisma that can influence others and command loyalty",
+            "variant": "high charisma creature that can command loyalty and influence others"
+        },
+        {
+            "query": "wealthy individual in fine clothing who can wield political power",
+            "variant": "individual in fine clothing who is wealthy and can wield political power"
+        },
+        {
+            "query": "noble character that can parry attacks and has a decent armor class",
+            "variant": "character that is a noble and can parry attacks with a good armor class"
+        },
+        {
+            "query": "noble with skills in deception and persuasion, often accompanied by guards",
+            "variant": "noble skilled in persuasion and deception that often has guards with them"
+        }
+    ]
+}

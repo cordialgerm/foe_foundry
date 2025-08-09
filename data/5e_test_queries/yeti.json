@@ -1,0 +1,25 @@
+{
+    "name": "Yeti",
+    "queries": [
+        {
+            "query": "large white monster that lives in snowy areas and has cold powers",
+            "variant": "big white creature that stays in snowy regions and has ice abilities"
+        },
+        {
+            "query": "strong creature with a freezing gaze that thrives in cold environments",
+            "variant": "powerful beast with a chilling stare that excels in cold habitats"
+        },
+        {
+            "query": "snowy terrain ambusher with a fear of fire and camouflage abilities",
+            "variant": "ambusher in snowy landscapes that is afraid of flames and has stealth skills"
+        },
+        {
+            "query": "monstrosity with high strength and immune to cold attacks",
+            "variant": "beast with great physical power and resistant to cold damage"
+        },
+        {
+            "query": "yeti skills in stealth and perception in cold mountains",
+            "variant": "yeti's capabilities in stealth and awareness in snowy peaks"
+        }
+    ]
+}

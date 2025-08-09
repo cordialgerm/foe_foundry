@@ -1,6 +1,8 @@
 <MonsterName/>Behtu</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Behtu is a small humanoid creature characterized by its chaotic evil nature, making it a formidable opponent in combat scenarios. With a solid armor class of 14, it possesses good defensive capabilities, while its hit points of 52, derived from eight six-sided dice plus a substantial constitution bonus, give it moderate endurance in battle. This creature boasts strong physical attributes, particularly in strength, dexterity, and constitution, all of which are rated at +3, marking them as good in effectiveness. However, its intelligence and wisdom attributes are average, and its charisma is notably poor at -2, which may affect its interactions and ability to influence others. The Behtu is capable of dealing significant damage with its melee attacks and has a powerful area-of-effect fire breath ability that can deal major damage to multiple targets.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Behtu can use Ichorous Infusion, an ability that allows it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Behtu
 
 *Small* *Humanoid* *Chaotic Evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack.
 - **Fire Breath (Recharge 6):** The behtu exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
 - **Ichorous Infusion:** The behtu ingests an infusion made from Mechuiti’s blood. For 1 minute, the behtu has advantage on saving throws and ability checks that use Strength and Constitution, and its walking and climbing speeds are doubled. In addition, it has disadvantage on saving throws and ability checks that use Intelligence and Wisdom for the duration. A non-behtu that ingests the infusion must make a DC 14 Constitution saving throw. On a failure, the creature takes 10 (3d6) poison damage and is poisoned for 1 minute. On a success, the creature takes half the damage and isn’t poisoned. The behtu typically has 1d4 + 1 infusions in its possession.
+</statblock>
 
 

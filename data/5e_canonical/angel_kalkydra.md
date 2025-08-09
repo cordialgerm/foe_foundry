@@ -1,6 +1,8 @@
 <MonsterName/>Angel, Kalkydra</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Kalkydra is a formidable Huge Celestial creature characterized by its lawful good alignment. Known for its immense power, it serves a celestial purpose, wielding both physical and magical abilities in combat. With exceptional hit points, high armor class, and a range of devastating attacks, the Kalkydra can easily dominate the battlefield. This creature excels at both close and ranged combat, using its radiant energy to deal significant damage while simultaneously providing supportive magical effects to allies. However, despite its strengths, it is not invulnerable, and careful tactics are required to exploit its weaknesses in combat.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Kalkydra's blend of strength, resilience, magical prowess, and tact
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Kalkydra
 
 *Huge* *Celestial* *lawful good*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Solar Nimbus:** When hit by an attack it surrounds itself in a fiery nimbus searing attacker: 9 (2d8) fire and 9 (2d8) radiant and nimbus sheds bright light in 30' radius and dim light an additional 30'. Until start of kalkydra’s next turn a creature within 5 ft. of kalkydra that hits it with melee attack takes 9 (2d8) fire and 9 (2d8) radiant.
 
 
+</statblock>
 
 

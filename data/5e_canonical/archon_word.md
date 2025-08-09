@@ -1,6 +1,8 @@
 <MonsterName/>Archon, Word</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Archon, Word is a Tiny Celestial creature known for its benevolent nature and powerful abilities to assist allies during combat. As a lawful good being, it often serves as a guardian or divine messenger. With an impressive flying speed of 90 feet and a variety of supportive spells, it excels in aiding its companions while avoiding direct confrontation. Although it possesses moderate resistance to radiant damage and immunity to several conditions like fear and poison, its relatively low Armor Class of 13 and limited hit points (28) make it vulnerable if engaged directly. However, its special abilities and spellcasting can greatly enhance the performance of its allies, making it a valuable addition to any party.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Archon, Word is a highly supportive creature that enhances the capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archon, Word
 
 *Tiny* *Celestial* *lawful good*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13) no material or somatic components: At will: dancing lights message true strike1/day ea: faerie fire heroism
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Avalanche Screamer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Avalanche Screamer is a large aberration characterized by its chaotic evil nature and its unique damage capabilities, specifically using thunder and piercing attacks. It has a formidable role in combat thanks to its ability to deal significant damage, manipulate terrain with its stealth, and control the battlefield through its scream ability. However, it possesses a moderate speed and average Dexterity, making its maneuverability somewhat limited. While resistant to cold damage and immune to certain conditions like being frightened or prone, the Avalanche Screamer's low intelligence and charisma mean it's not ideal for social interactions or complex strategies.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Another powerful ability, Scream, has a recharge mechanism (5-6). This ability a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avalanche Screamer
 
 *Large* *Aberration* *chaotic evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Scream (Recharge 5-6):** The avalanche screamer shrieks thunderously in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 27 (6d8) thunder damage and is deafened for 1 hour. On a success, a creature takes half as much damage and isn’t deafened.
 
 
+</statblock>
 
 

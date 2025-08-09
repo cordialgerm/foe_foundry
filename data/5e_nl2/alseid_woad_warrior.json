@@ -1,0 +1,50 @@
+{
+    "name": "Alseid, Woad Warrior",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "40 feet walk speed",
+    "role": "Skirmisher",
+    "tags": [
+        "nature-affinity",
+        "fear-inspiring",
+        "forest-dwelling"
+    ],
+    "adjectives": [
+        "chaotic",
+        "perceptive",
+        "fearsome"
+    ],
+    "description": "The Alseid is a fearsome medium-sized monstrosity with a strong affinity for nature, characterized by its effective combat skills and agility.",
+    "memorable": "Its 'Dye Bomb' ability allows it to mark targets for easier tracking, creating a tactical advantage in battle.",
+    "goals": "To navigate and dominate forested environments while intimidating foes.",
+    "relations": "May be found with allies in nature or aligned with other creatures of the woods.",
+    "environment": "Typically found in forested areas.",
+    "strengths": "Possesses advantage on intimidation checks and against being frightened, along with impressive dexterity for ranged and melee attacks.",
+    "weaknesses": "Lower intelligence limits its strategic thinking.",
+    "attacks": "Uses a multiattack feature to make two strikes with either a greatsword for slashing damage or a shortbow for piercing damage, exploiting its agility.",
+    "most_powerful_ability": "'Dye Bomb' provides significant tactical advantages by marking enemies for easy targeting.",
+    "equipment": "Wields a greatsword and a shortbow.",
+    "senses": "Has a passive perception of 15, making it quite observant in its natural environment.",
+    "skills": "Proficient in perception, providing an edge in detecting creatures or events.",
+    "additional_information": [
+        "Can leave no tracks in forested areas due to its 'Woodfriend' ability.",
+        "Automatically discerns true north, enhancing navigation.",
+        "Benefits nearby allies with its 'Painted for War' ability.",
+        "Has the potential to intimidate effectively in confrontations.",
+        "Relatively low intelligence may lead to simple-minded combat tactics."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "nature-affinity warrior",
+        "fearsome skirmisher",
+        "forest-dwelling fighter",
+        "tactical dye bomb creature",
+        "Alseid abilities"
+    ]
+}

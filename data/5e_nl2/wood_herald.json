@@ -1,0 +1,51 @@
+{
+    "name": "Wood Herald",
+    "creature_type": "Plant",
+    "alignment": null,
+    "size": "Small",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "20 feet walking, 20 feet climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "guardian",
+        "nature",
+        "sneaky"
+    ],
+    "adjectives": [
+        "small",
+        "plant-like",
+        "nature-bound",
+        "sneaky"
+    ],
+    "description": "The Wood Herald is a small plant creature embodying nature's essence, with a form that blends seamlessly into the foliage of the woods. It has a trunk-like body, twigs for limbs, and a wooden greataxe.",
+    "memorable": "Its Plant Camouflage ability makes it exceptionally stealthy in natural environments while its Brambly Bark reaction punishes melee attackers.",
+    "goals": "To protect the woods and maintain balance in natural ecosystems.",
+    "relations": "Often found in proximity to other nature-oriented creatures and guardians.",
+    "environment": "Typically inhabits forest or wooded areas with abundant plant life.",
+    "strengths": "High stealth capabilities in forested areas and resistance to various debilitating conditions.",
+    "weaknesses": "Limited speed and maneuverability outside of natural environments.",
+    "attacks": "Engages with a wooden greataxe for slashing damage or hurls thorns for piercing damage, alongside its powerful slam attack.",
+    "most_powerful_ability": "Plant Camouflage allows for exceptional stealth in foliage, while Brambly Bark provides retaliation against attackers.",
+    "equipment": "Wields a wooden greataxe for melee combat.",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light and darkness.",
+    "skills": "Has a Stealth skill of 13, making it capable of effective maneuvering in natural surroundings.",
+    "additional_information": [
+        "Resistant to exhaustion and several debilitating conditions",
+        "Moves through nonmagical plants without penalty",
+        "Can strike with both melee and ranged attacks",
+        "Acts as a guardian of the woods",
+        "Embodies the essence of nature"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small plant guardian of the woods",
+        "sneaky nature creature with thorns",
+        "plant creature that punishes melee attackers",
+        "stealthy guardian with a wooden greataxe",
+        "woodland guardian capable of climbing"
+    ]
+}

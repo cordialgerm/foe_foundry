@@ -1,0 +1,56 @@
+{
+    "name": "Nephirron Devil",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Huge",
+    "hp": 225,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "40 ft. walking and 80 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "devil",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "lethal",
+        "deceptive"
+    ],
+    "description": "The Nephirron Devil is a large, imposing creature characterized by its exceptional strength and a malevolent aura. It possesses a muscular physique with sinister features, embodying the essence of a devilish foe.",
+    "memorable": "With its high Charisma and spellcasting abilities, the Nephirron can manipulate and deceive its opponents, making it a dangerous adversary both in combat and negotiation.",
+    "goals": "To manipulate and control others while enforcing its own agenda through deceit and magical prowess.",
+    "relations": "Often encountered with other devils or fiendish entities, the Nephirron may command lesser fiends or serve greater powers within the hierarchy of the Nine Hells.",
+    "environment": "Typically found in infernal realms, dark fortresses, or places of significant malevolence.",
+    "strengths": "Immunities to fire and poison, high physical and magical defenses, and the ability to manipulate through deception.",
+    "weaknesses": "Susceptible to silvered weapon attacks and nonmagical damage types.",
+    "attacks": "Multiattack with a powerful bite and deadly claws, the bite can render foes unconscious.",
+    "most_powerful_ability": "Magic Resistance grants it advantage on saving throws against spells, enhancing its durability against magic.",
+    "senses": "Possesses truesight up to 90 feet, allowing it to perceive invisible creatures and objects.",
+    "skills": "Excels in deception and manipulation, with high proficiency in Arcana, Deception, and Intimidation skills.",
+    "additional_information": [
+        "Can see through magical darkness with Devil's Sight.",
+        "Has the Master Liar ability for effective falsification.",
+        "Innate spellcaster with high-level spells available.",
+        "Sculpt Breath ability provides significant defense against area spells.",
+        "Known for its formidable stature and blade-like claws."
+    ],
+    "damage_types": [
+        "fire",
+        "poison",
+        "acid",
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting ability with spells that include protection, evocation, and transformation.",
+    "test_queries": [
+        "huge devil that can fly and deceive",
+        "fiend with magical abilities and deadly attacks",
+        "strong devil with truesight and high charisma",
+        "manipulative creature that casts spells and attacks",
+        "formidable fiend known for its cunning and strength"
+    ]
+}

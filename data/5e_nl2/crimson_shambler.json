@@ -1,0 +1,53 @@
+{
+    "name": "Crimson Shambler",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walking speed of 20 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "plant",
+        "undead",
+        "disease",
+        "infection"
+    ],
+    "adjectives": [
+        "bloody",
+        "gruesome",
+        "deceitful",
+        "disease-inflicting"
+    ],
+    "description": "The Crimson Shambler resembles a bloody zombie, with a hideous appearance and a fungal nature. Its body is covered in crimson slime, and it performs grotesque movements.",
+    "memorable": "It can inflict a deadly disease that transforms victims into new shamblers, making it a persistent threat.",
+    "goals": "To infect living creatures and create new shamblers.",
+    "relations": "May be encountered alongside other undead or plant-based creatures, often in decayed or corrupted areas.",
+    "environment": "Commonly found in swamps, graveyards, or places of decay.",
+    "strengths": "Immunity to acid and poison, along with the ability to disguise itself as a zombie.",
+    "weaknesses": "Lacks high agility and is reliant on its disease mechanic for offensive capabilities.",
+    "attacks": "Slam delivers bludgeoning and acid damage; Slime Glob inflicts acid damage and can infect targets with spores.",
+    "most_powerful_ability": "The Spores ability can kill and transform infected creatures into new shamblers, creating more threats.",
+    "senses": "Blindsight up to 60 feet allows it to detect creatures nearby without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Can create new shamblers from its victims.",
+        "Requires intelligence checks to see through its disguise.",
+        "Triggers spores when physically touched or hit.",
+        "Immunities to being blinded, deafened, or poisoned.",
+        "The diseased condition can lead to gradual transformation into a Crimson Shambler."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "bloody zombie plant that infects",
+        "plant that transforms victims into shamblers",
+        "creature with disease-spreading spores",
+        "deceitful crimson shambler in swamps",
+        "creature resembling a zombie with lethal spores"
+    ]
+}

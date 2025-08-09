@@ -1,0 +1,25 @@
+{
+    "name": "Void Giant",
+    "queries": [
+        {
+            "query": "huge giant with powerful spellcasting in a chaotic neutral alignment",
+            "variant": "huge chaotic neutral giant that has powerful spellcasting"
+        },
+        {
+            "query": "giant with high Strength and low Dexterity that can stun enemies",
+            "variant": "giant that has high Strength and low Dexterity, able to stun foes"
+        },
+        {
+            "query": "Void Giant with melee attacks and magical abilities",
+            "variant": "giant with magical powers and melee combat capabilities"
+        },
+        {
+            "query": "large spellcasting monster with significant hit points and void magic",
+            "variant": "large monster that casts spells and has a lot of hit points with void magic"
+        },
+        {
+            "query": "creature that can absorb magic and improve its spells",
+            "variant": "creature that enhances spells and absorbs magical effects"
+        }
+    ]
+}

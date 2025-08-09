@@ -1,0 +1,48 @@
+{
+    "name": "Commoner Mob",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 45,
+    "ac": 10,
+    "srd": false,
+    "cr": "0",
+    "movement": "walking speed of 30 feet",
+    "role": "null",
+    "tags": [
+        "mob",
+        "commoners",
+        "humanoid"
+    ],
+    "adjectives": [
+        "chaotic",
+        "vulnerable",
+        "numerous"
+    ],
+    "description": "A huge collection of commoners, representing the chaos of a populace, this mob relies on sheer numbers in combat.",
+    "memorable": "The ability to disperse into multiple individual commoners when defeated creates a unique tactical dynamic.",
+    "goals": "Overwhelm opponents through numbers and resist area attacks.",
+    "relations": "Can be seen in the company of other commoners or as part of a larger riot.",
+    "environment": "Typically found in urban areas or during civil unrest.",
+    "strengths": "Can group together to attack multiple targets and is not affected by single-target spells.",
+    "weaknesses": "Highly vulnerable to area-of-effect damage and easily reduced to weaker individual commoners.",
+    "attacks": "Melee attacks with clubs and ranged attacks with stones, both capable of targeting multiple enemies.",
+    "most_powerful_ability": "Mob Dispersal allows it to break apart into individual commoners upon defeat.",
+    "equipment": "Clubs and stones for attacks.",
+    "senses": "Has a passive perception of 10, indicating average awareness.",
+    "skills": "Neither exceptionally skilled nor lacking in any area, average across all abilities.",
+    "additional_information": [
+        "Acts as a representation of chaotic populaces.",
+        "Each commoner created from the dispersal only has 2 hit points.",
+        "Can traverse spaces suitable for Medium creatures."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic humanoid mob attacking",
+        "huge group of commoners overwhelming opponents",
+        "mob that disperses into individual commoners",
+        "vulnerable humanoid mob in urban areas",
+        "commoners acting as a collective in combat"
+    ]
+}

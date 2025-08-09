@@ -1,0 +1,25 @@
+{
+    "name": "Androsphinx",
+    "queries": [
+        {
+            "query": "lion-bodied creature with a wise man's face that loves riddles",
+            "variant": "creature that has the body of a lion and the face of a wise man who enjoys riddles"
+        },
+        {
+            "query": "regal spellcasting lion monster with powerful roars",
+            "variant": "majestic lion-like monster that casts strong spells and emits powerful roars"
+        },
+        {
+            "query": "large magical sphinx with high hit points and divine powers",
+            "variant": "big sphinx monster with a lot of hit points and access to divine magic"
+        },
+        {
+            "query": "androsphinx abilities that cause fear and paralysis",
+            "variant": "abilities of the androsphinx that can frighten targets and inflict paralysis"
+        },
+        {
+            "query": "sphinx creature with resistance to exhaustion and claw attacks",
+            "variant": "sphinx-like monster resistant to exhaustion and attacks with claws"
+        }
+    ]
+}

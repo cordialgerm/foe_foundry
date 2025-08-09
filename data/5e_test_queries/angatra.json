@@ -1,0 +1,25 @@
+{
+    "name": "Angatra",
+    "queries": [
+        {
+            "query": "medium undead creature with high speed and paralyzing claws",
+            "variant": "medium undead beast that is fast and has claw attacks that paralyze"
+        },
+        {
+            "query": "creature immune to poison that can incapacitate enemies",
+            "variant": "monster that is poison immune and can disable foes"
+        },
+        {
+            "query": "undead monster that is vulnerable to magical attacks",
+            "variant": "undead creature weak to magic attacks"
+        },
+        {
+            "query": "agile creature with agonizing gaze ability",
+            "variant": "fast monster that has an ability to inflict agonizing gaze"
+        },
+        {
+            "query": "neutral evil undead that recognizes its tribe",
+            "variant": "undead creature with neutral evil alignment that identifies its kin"
+        }
+    ]
+}

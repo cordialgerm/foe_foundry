@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Myrmidon",
+    "queries": [
+        {
+            "query": "large construct that explodes when destroyed and has fire abilities",
+            "variant": "large machine that has fire powers and explodes upon destruction"
+        },
+        {
+            "query": "mechanical warrior immune to many conditions and adept in melee combat",
+            "variant": "mechanical fighter that is immune to various conditions and skilled in close combat"
+        },
+        {
+            "query": "durable construct with magic resistance and area control abilities",
+            "variant": "resilient machine that has magic resistance and can control the battlefield"
+        },
+        {
+            "query": "powerful construct with high strength and can create difficult terrain",
+            "variant": "strong machine that can generate challenging terrain and is quite powerful"
+        },
+        {
+            "query": "fire-shooting construct immune to poison and psychic damage",
+            "variant": "fire-shooting machine that is resistant to poison and psychic attack"
+        }
+    ]
+}

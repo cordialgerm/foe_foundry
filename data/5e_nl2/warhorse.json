@@ -1,0 +1,51 @@
+{
+    "name": "Warhorse",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 19,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "60 ft. walking speed",
+    "role": null,
+    "tags": [
+        "mount",
+        "beast"
+    ],
+    "adjectives": [
+        "muscular",
+        "loyal",
+        "trained"
+    ],
+    "description": "A powerful and trained mount, larger than ordinary horses with thick hides and a fierce temperament. Often outfitted with barding.",
+    "memorable": "Known for charging fearlessly into combat and trampling foes.",
+    "goals": "Used as mounts by knights, cavalry units, and adventurers.",
+    "relations": "Commonly associated with cavalry and battlefield units.",
+    "environment": "Often found in battlefields and stables.",
+    "strengths": "Possesses high strength for physical confrontations.",
+    "weaknesses": "Low intelligence and charisma, limiting mental and social capabilities.",
+    "attacks": "Hooves attack that deals bludgeoning damage; can knock enemies prone.",
+    "most_powerful_ability": "Trampling Charge ability that can knock targets prone if condition met.",
+    "equipment": null,
+    "senses": "Passive perception of 11, allowing it to notice things in its environment.",
+    "skills": null,
+    "additional_information": [
+        "Can be used effectively in combat.",
+        "Has a fierce and loyal temperament.",
+        "Trained to remain calm in chaotic situations.",
+        "Perfect for mounted combat scenarios.",
+        "Commonly used in various campaigns."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large trained battle mount",
+        "powerful horse for knights",
+        "loyal mount that charges enemies",
+        "muscular horse with trampling ability",
+        "fast combat horse with bludgeoning attack"
+    ]
+}

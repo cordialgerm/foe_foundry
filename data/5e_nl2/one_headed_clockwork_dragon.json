@@ -1,0 +1,54 @@
+{
+    "name": "One-Headed Clockwork Dragon",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 178,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 50 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "mechanical",
+        "dragon",
+        "construct",
+        "magical"
+    ],
+    "adjectives": [
+        "advanced",
+        "formidable",
+        "durable",
+        "tactical"
+    ],
+    "description": "A Large Construct with advanced mechanical design, featuring formidable combat capabilities and magical properties.",
+    "memorable": "Its unique circlet-bound abilities allow telepathic communication and perception through the dragon's senses.",
+    "goals": "To protect circlet wearers and view all others as enemies if disconnected from them.",
+    "relations": "Circlet wearers that can communicate telepathically and share experiences with the dragon.",
+    "environment": "Can be found in areas where it operates in conjunction with circlet wearers.",
+    "strengths": "High physical power with a Strength of 22, durable with high Constitution, immunity to poison and psychic damage.",
+    "weaknesses": "Becomes hostile to all creatures if no circlet wearers are present.",
+    "attacks": "Multiattack includes Oil Spray, Bite, and Fist attacks; also has Fire Breath and Tail Sweep for area damage.",
+    "most_powerful_ability": "Fire Breath, which unleashes a powerful 30-foot cone of fire.",
+    "equipment": null,
+    "senses": "Possesses darkvision and a passive Perception score of 16, making it quite observant.",
+    "skills": "Proficient in Athletics and has decent Perception.",
+    "additional_information": [
+        "Immune to conditions like exhaustion and paralysis.",
+        "Can deal double damage to objects and structures due to its Siege Monster ability.",
+        "Bound to circlets for telepathic communication and sense sharing.",
+        "Has Magic Resistance for saving throws against spells.",
+        "Immutable Form grants immunity to effects that would alter its form."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical dragon with telepathy abilities",
+        "dragon that sprays oil and breathes fire",
+        "Large construct immune to conditions",
+        "one-headed dragon with powerful physical attacks",
+        "dragon that deals double damage to structures"
+    ]
+}

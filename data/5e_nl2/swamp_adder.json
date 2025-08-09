@@ -1,0 +1,54 @@
+{
+    "name": "Swamp Adder",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 18,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "beast",
+        "swamp",
+        "poison",
+        "ambush"
+    ],
+    "adjectives": [
+        "stealthy",
+        "agile",
+        "poisonous",
+        "small",
+        "camouflaged"
+    ],
+    "description": "The Swamp Adder is a small, stealthy snake-like creature that thrives in wet, murky environments, using its camouflage to remain undetected.",
+    "memorable": "Its ability to paralyze with a single bite makes it a dangerous ambush predator.",
+    "goals": "Hunts for prey by hiding and striking with venomous bites.",
+    "relations": "Commonly found in swamp areas, may encounter various swamp-dwelling creatures.",
+    "environment": "Wet and murky environments like swamps.",
+    "strengths": "Camouflage in swampy terrain allows it to ambush effectively.",
+    "weaknesses": "Low durability due to low hit points and weak physical strength.",
+    "attacks": "Bite attack deals piercing damage and can inflict paralysis through poison.",
+    "most_powerful_ability": "Swamp Camouflage grants advantage on Stealth checks in swampy terrain.",
+    "senses": "Has blindsight up to 10 feet, allowing it to sense nearby creatures without relying on sight.",
+    "skills": "No notable skill proficiencies.",
+    "additional_information": [
+        "Effective ambush predator due to high Dexterity and camouflage.",
+        "Paralysis lasts for 1 minute unless saving throws are successful.",
+        "Ability to deal both piercing and poison damage.",
+        "Small size allows it to hide easily in dense vegetation.",
+        "Dependent on stealth rather than direct confrontation."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small stealthy swamp predator",
+        "snake that can paralyze with poison",
+        "ambushing creature in murky environments",
+        "swamp creature with camouflage abilities",
+        "poisonous bite ambush attacker"
+    ]
+}

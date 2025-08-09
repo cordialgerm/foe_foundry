@@ -1,0 +1,55 @@
+{
+    "name": "Dread Examiner",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 322,
+    "ac": 19,
+    "srd": false,
+    "cr": "21",
+    "movement": "walk 30 ft., fly 30 ft., swim 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "spellcaster",
+        "psychic",
+        "manipulative",
+        "legendary"
+    ],
+    "adjectives": [
+        "intelligent",
+        "charismatic",
+        "formidable",
+        "mysterious"
+    ],
+    "description": "The Dread Examiner is a large, intimidating aberration known for its exceptional intelligence and charisma. It appears disjointed yet powerful, capable of manipulating its form and utilizing potent psychic abilities.",
+    "memorable": "Its blend of powerful spellcasting and physical attacks, along with abilities like Psychic Surge and truesight, make it an unforgettable encounter for adventurers.",
+    "goals": "The Dread Examiner seeks to dominate its surroundings and control the minds of others through manipulation and psychic prowess.",
+    "relations": "It may be encountered alongside other aberrations or beings with psychic abilities, possibly serving as a leader or overseer.",
+    "environment": "Typically found in places steeped in magic or aberration-infested areas.",
+    "strengths": "Immunities to various conditions and nonmagical damage types, powerful psychic abilities, and exceptional spellcasting.",
+    "weaknesses": "Limited effectiveness against magical attacks despite its resistance.",
+    "attacks": "Can unleash multiple powerful Force Swipe or Force Blast attacks, dealing force damage while also pushing or knocking opponents prone.",
+    "most_powerful_ability": "Psychic Surge, which deals psychic damage and imposes disadvantage on nearby foes' next actions.",
+    "equipment": null,
+    "senses": "Truesight up to 120 feet allows it to see through darkness and perceive creatures accurately.",
+    "skills": "Boasts a high perception skill, enhancing its awareness of surroundings.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saves three times per day.",
+        "Ability to teleport up to 120 feet as a legendary action.",
+        "Can sense magic within 120 feet at will without being magical itself.",
+        "Maintains cohesion and shape, immune to effects altering its form.",
+        "High passive perception score of 23."
+    ],
+    "damage_types": [
+        "psychic",
+        "force"
+    ],
+    "spellcasting": "Can cast various psionic spells, including Dispel Magic, Telekinesis, and True Polymorph, with a Charisma-based DC of 22.",
+    "test_queries": [
+        "intelligent psychic monster with powerful spells",
+        "aberration that can teleport and manipulate",
+        "manipulative creature with truesight and psychic powers",
+        "large creature immune to nonmagical damage",
+        "Dread Examiner powerful spellcaster and attacker"
+    ]
+}

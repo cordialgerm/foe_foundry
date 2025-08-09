@@ -1,0 +1,25 @@
+{
+    "name": "Anubian",
+    "queries": [
+        {
+            "query": "elemental creature with stealth abilities in sandy areas",
+            "variant": "creature that is elemental and can hide well in sandy environments"
+        },
+        {
+            "query": "chaotic evil entity vulnerable to water and uses sand attacks",
+            "variant": "evil chaotic monster that takes damage from water and attacks using sand"
+        },
+        {
+            "query": "medium elemental that uses Haboob to restrain enemies",
+            "variant": "elemental creature that can restrain foes with its Haboob ability"
+        },
+        {
+            "query": "agile monster that can teleport and ambush in loose sand",
+            "variant": "quick creature capable of teleporting and surprising enemies in sand"
+        },
+        {
+            "query": "Anubian with unique abilities like Sand Form and Haboob",
+            "variant": "Anubian monster that has special powers such as Sand Form and Haboob"
+        }
+    ]
+}

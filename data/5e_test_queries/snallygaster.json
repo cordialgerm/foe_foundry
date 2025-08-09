@@ -1,0 +1,25 @@
+{
+    "name": "Snallygaster",
+    "queries": [
+        {
+            "query": "huge aberration that flies and has natural armor",
+            "variant": "huge flying aberration with natural armor"
+        },
+        {
+            "query": "creature with magic resistance and regeneration abilities that deals thunder damage",
+            "variant": "monster that has regeneration and magic resistance, causing thunder damage"
+        },
+        {
+            "query": "wild creature with high hit points and low intelligence that grapples its prey",
+            "variant": "unpredictable monster with low intel and high HP that can grapple"
+        },
+        {
+            "query": "tough monster that can stun with a loud sound and regains hit points",
+            "variant": "durable creature that uses a screech to stun and heals itself"
+        },
+        {
+            "query": "snallygaster creature that causes acid damage and is immune to frightened condition",
+            "variant": "snallygaster monster immune to fear that inflicts acid damage"
+        }
+    ]
+}

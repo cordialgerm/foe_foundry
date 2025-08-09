@@ -1,0 +1,25 @@
+{
+    "name": "Sedge Dragonette",
+    "queries": [
+        {
+            "query": "tiny dragon that thrives in swampy environments and possesses poison resistance",
+            "variant": "tiny dragon that lives in swamps and has resistance to poison damage"
+        },
+        {
+            "query": "agile swamp creature with stealthy abilities and a special breath attack",
+            "variant": "quick swamp creature known for stealth and a unique breath ability"
+        },
+        {
+            "query": "dragonette with camouflage abilities that attacks with spines and bites",
+            "variant": "dragonette that uses camouflage and has attacks including spines and bites"
+        },
+        {
+            "query": "poisonous dragon that can transform ground into mud and has darkvision",
+            "variant": "a dragon that can poison and turns the ground into mud while having darkvision"
+        },
+        {
+            "query": "Sedge Dragonette features including muggy presence and prickly defense",
+            "variant": "Sedge Dragonette capabilities such as boggy presence and prickle defense"
+        }
+    ]
+}

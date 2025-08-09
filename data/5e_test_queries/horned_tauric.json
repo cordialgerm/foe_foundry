@@ -1,0 +1,25 @@
+{
+    "name": "Horned Tauric",
+    "queries": [
+        {
+            "query": "large fey creature with melee and ranged attacks",
+            "variant": "big fey beast that has melee and ranged capabilities"
+        },
+        {
+            "query": "Horned Tauric abilities and nature skills",
+            "variant": "abilities of Horned Tauric and its skills in nature"
+        },
+        {
+            "query": "fey monster with high strength and perception",
+            "variant": "fey creature that has great strength and good perception"
+        },
+        {
+            "query": "tauric creature proficient in survival and combat",
+            "variant": "creature with tauric features skilled in survival and fighting"
+        },
+        {
+            "query": "horned monster that moves fast in the wild",
+            "variant": "horned beast that is agile and swift in nature"
+        }
+    ]
+}

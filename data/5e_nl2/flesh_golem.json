@@ -1,0 +1,54 @@
+{
+    "name": "Flesh Golem",
+    "creature_type": "Construct",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 9,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "undead",
+        "golem",
+        "monstrous"
+    ],
+    "adjectives": [
+        "gruesome",
+        "resilient",
+        "powerful",
+        "mindless"
+    ],
+    "description": "A Flesh Golem appears as a patchwork of stitched-together body parts, with mismatched limbs and a face twisted in a permanent grimace of pain.",
+    "memorable": "Notably strong and resilient, Flesh Golems are animated by unstable dark magic and can go berserk when damaged.",
+    "goals": "Flesh Golems serve their creators without question, often acting as mindless guardians or enforcers.",
+    "relations": "Often created by evil spellcasters or necromancers, Flesh Golems may be found alongside other constructs or undead creatures.",
+    "environment": "Typically found in dark, abandoned laboratories, necromancer lairs, or graveyards.",
+    "strengths": "Immune to many conditions and nonmagical physical attacks; can absorb lightning damage, turning it into healing.",
+    "weaknesses": "Vulnerable to fire damage, which can lead to disadvantage on attack rolls and ability checks.",
+    "attacks": "Can perform two powerful Slam attacks, dealing significant bludgeoning damage, and has a psychic attack that can incapacitate foes.",
+    "most_powerful_ability": "The Creator's Anguish unleashes psychic energy, dealing significant damage and possibly incapacitating nearby creatures.",
+    "equipment": null,
+    "senses": "Has passive Perception of 10 and understands languages of its creator but cannot speak.",
+    "skills": "No noteworthy skill proficiencies are mentioned.",
+    "additional_information": [
+        "Has a Berserk ability that activates when its hit points are low.",
+        "Construct Nature means it does not require air, food, drink, or sleep.",
+        "The Aversion of Fire ability makes it susceptible to attacks involving fire.",
+        "Immutable Form protects it from spells altering its form.",
+        "Magic Weapons means its attacks can bypass resistance to nonmagical damage."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monstrous stitched-together creature",
+        "construct with powerful melee attacks",
+        "mindless servant created from dead bodies",
+        "golem vulnerable to fire attacks",
+        "brutal fighter that can go berserk"
+    ]
+}

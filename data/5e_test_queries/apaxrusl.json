@@ -1,0 +1,25 @@
+{
+    "name": "Apaxrusl",
+    "queries": [
+        {
+            "query": "construct that can burrow through earth and has fiery attacks",
+            "variant": "monster that can burrow through ground and has fire attacks"
+        },
+        {
+            "query": "neutral fiendish construct with melee and area damage abilities",
+            "variant": "neutral fiend construct that has melee and area damage capabilities"
+        },
+        {
+            "query": "tough earth creature immune to fire damage and can shift sands",
+            "variant": "durable earth monster that can shift sands and is immune to fire"
+        },
+        {
+            "query": "medium construct with stealth skills that can cause blinding",
+            "variant": "medium monster with stealth abilities that can blind targets"
+        },
+        {
+            "query": "monster that uses fiery sand attacks and can burrow silently",
+            "variant": "creature that can burrow quietly and uses fiery sand for attacks"
+        }
+    ]
+}

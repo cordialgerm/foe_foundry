@@ -1,0 +1,52 @@
+{
+    "name": "Somberweave",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "fey",
+        "ambush",
+        "stealth",
+        "shadow"
+    ],
+    "adjectives": [
+        "cunning",
+        "shadowy",
+        "manipulative"
+    ],
+    "description": "The Somberweave is a medium-sized fey with a dark, stealthy appearance, thriving in shadows. It uses its webs to ensnare and confuse prey, demonstrating agility and a predatory nature.",
+    "memorable": "Its ability to manipulate shadows and transport itself and imprisoned prey between realms adds a unique tactical layer to its ambush strategies.",
+    "goals": "To ensnare prey and manipulate its surroundings using ambush tactics in dark environments.",
+    "relations": "Related to other shadowy fey creatures and often found alongside allies that benefit from stealthy ambush tactics.",
+    "environment": "Typically found in dark forests or shadowy realms where ambush tactics are favored.",
+    "strengths": "Immunity to poison damage, exceptional stealth capabilities, and the ability to traverse both the Material Plane and the Shadow Realm.",
+    "weaknesses": "Less effective in open combat and reliant on stealth and ambush strategies rather than direct confrontation.",
+    "attacks": "Multiattack with a combination of bite and claw strikes, capable of poison damage and restraining targets with webs.",
+    "most_powerful_ability": "Shadow Shift allows it to transport itself and a restrained target between the Shadow Realm and Material Plane.",
+    "senses": "Blindsight up to 10 feet enhances its stealth capabilities, allowing it to react to unforeseen encounters.",
+    "skills": "Highly skilled in stealth with a +7 modifier, making it very effective at remaining undetected.",
+    "additional_information": [
+        "Can see into the Shadow Realm while on the Material Plane and vice versa.",
+        "Webbing provides half cover and protects against plane-shifting spells.",
+        "Can climb difficult surfaces and move freely through its own webs.",
+        "Webbing can be attacked and destroyed, adding a tactical element to encounters.",
+        "Uses webs for tracking movements of creatures touching them."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy fey that ensnares prey",
+        "stealthy creature with web manipulation abilities",
+        "cunning ambush monster from the shadows",
+        "creature that transports between realms",
+        "poisonous bite with web attack"
+    ]
+}

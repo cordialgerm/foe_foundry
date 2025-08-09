@@ -1,0 +1,49 @@
+{
+    "name": "Giant Constrictor Snake",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 63,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft., swim 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "snake",
+        "beast",
+        "constrictor"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "stealthy"
+    ],
+    "description": "The Giant Constrictor Snake is a massive serpent with a powerful body capable of constricting its prey. Its keen sense of smell aids in detecting nearby creatures.",
+    "memorable": "Its ability to grapple and crush opponents makes it a formidable opponent in close quarters.",
+    "goals": "Hunting and ambushing prey in its environment.",
+    "relations": "May be encountered in the company of other predatory beasts or as part of a natural ecosystem.",
+    "environment": "Typically found in forests or near bodies of water.",
+    "strengths": "Strong physical attacks and the ability to immobilize foes through grappling.",
+    "weaknesses": "Lacks cognitive abilities and social awareness due to low Intelligence.",
+    "attacks": "Utilizes a multiattack ability including a Bite that deals piercing damage and a Constrict attack that grapples and restrains targets.",
+    "most_powerful_ability": "The Crush action inflicts bludgeoning damage and suffocation on grappled foes, posing a significant threat.",
+    "senses": "Has a keen sense of smell to detect creatures within 10 feet.",
+    "skills": "Stealth capabilities allow it to move quietly and ambush unsuspecting prey.",
+    "additional_information": [
+        "Can grapple and restrain prey effectively.",
+        "Has a solid hit point pool for survival in combat.",
+        "Utilizes both physical attacks and grappling tactics for offense.",
+        "Possesses multiattack ability to maximize damage output.",
+        "Limited social interaction abilities due to low Charisma."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive snake that constricts its prey",
+        "stealthy predator with powerful grapple attack",
+        "huge serpent that crushes and suffocates",
+        "ambush hunter with keen sense of smell",
+        "giant snake that hunts in forests and water"
+    ]
+}

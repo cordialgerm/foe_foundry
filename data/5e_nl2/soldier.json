@@ -1,0 +1,49 @@
+{
+    "name": "Soldier",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 19,
+    "ac": 16,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "combatant",
+        "military"
+    ],
+    "adjectives": [
+        "tactical",
+        "durable",
+        "versatile"
+    ],
+    "description": "A medium humanoid with solid armor and a strong presence on the battlefield, utilizing a spear and heavy crossbow for both melee and ranged combat.",
+    "memorable": "Their Tactical Movement ability allows them to reposition without fear of opportunity attacks, indicating strategic combat proficiency.",
+    "goals": "To engage in combat and leverage teamwork for tactical advantage.",
+    "relations": "Often found alongside other military-themed creatures or in organized combat units.",
+    "environment": "Typically encountered in military settings or during skirmishes.",
+    "strengths": "Good melee and ranged combat capabilities with decent hit points.",
+    "weaknesses": "Lower Dexterity leaves them vulnerable to agile foes, with only average social skills.",
+    "attacks": "Wields a spear for melee or ranged attacks and can shoot a heavy crossbow at distant foes.",
+    "most_powerful_ability": "Tactical Movement allows for strategic repositioning without provoking opportunity attacks.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 12, indicating a basic awareness of surroundings.",
+    "skills": "Competent in Perception and Survival, aiding in awareness and navigation.",
+    "additional_information": [
+        "Strength and Constitution modifiers contribute to solid combat performance.",
+        "Team-oriented, gaining bonuses from allies in close proximity.",
+        "Capable of effective damage output with melee and ranged attacks."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid soldier with tactical abilities",
+        "medium combatant using spear and crossbow",
+        "military-themed character excelling in teamwork",
+        "versatile soldier adept in melee and ranged combat",
+        "durable soldier with movement strategies"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Miremuck Goblin King",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 62,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "goblin",
+        "king",
+        "stealth",
+        "charm",
+        "manipulation"
+    ],
+    "adjectives": [
+        "cunning",
+        "charismatic",
+        "stealthy"
+    ],
+    "description": "The Miremuck Goblin King is a clever humanoid with a notable charisma. It has a dexterous build, allowing for stealthy movements and a devious presence.",
+    "memorable": "Its unique ability, Death Transformation, allows it to maintain influence even after death, reshaping the leadership among goblins.",
+    "goals": "To manipulate and lead goblin followers, ensuring loyalty and obedience even in death.",
+    "relations": "Goblins, other humanoid creatures, potential adversaries in the wilderness.",
+    "environment": "Typically found in goblin settlements or swamps, maintaining control over goblin tribes.",
+    "strengths": "High charisma scores enable superiority in social interactions, excels in stealth and deduction.",
+    "weaknesses": "Low wisdom reflects poor situational awareness, leading to vulnerability in unexpected encounters.",
+    "attacks": "Attacks with a rapier, dealing piercing damage, combines stealthy approach with social manipulation skills.",
+    "most_powerful_ability": "Death Transformation, which allows a slain Goblin King to create a new leader from among its followers.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Excels in stealth, persuasion, and deception, with particularly high bonuses in these areas.",
+    "additional_information": [
+        "Not exceptionally durable but relies on tactics and charm.",
+        "Can charm creatures to turn foes into allies once per day.",
+        "Is seen as a figure of influence even in death.",
+        "The goblin it transforms into hesitates due to the burden of leadership.",
+        "Strategic manipulations are key to its survival in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast 'Charm Person' once per day as a 3rd-level spell.",
+    "test_queries": [
+        "cunning goblin leader with charm spells",
+        "stealthy goblin king with transformation ability",
+        "goblin king that manipulates others",
+        "medium humanoid creature that excels in deception",
+        "goblin that charms foes into allies"
+    ]
+}

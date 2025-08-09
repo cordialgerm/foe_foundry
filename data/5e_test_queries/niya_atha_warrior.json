@@ -1,0 +1,25 @@
+{
+    "name": "Niya-Atha Warrior",
+    "queries": [
+        {
+            "query": "medium-sized fey warrior that can enlarge itself and has good agility",
+            "variant": "fey warrior medium-sized that can become larger and has agility"
+        },
+        {
+            "query": "Niya-Atha warrior with a chain mail defense and strong dexterity saving throw",
+            "variant": "warrior Niya-Atha with defense chain mail and high dexterity save"
+        },
+        {
+            "query": "creature that performs agile combat and communicates in Common and Sylvan",
+            "variant": "being that has agile combat abilities and talks in Common and Sylvan"
+        },
+        {
+            "query": "fey creature that can leap far and deal extra damage when enlarged",
+            "variant": "fey being that can jump far and inflict more damage while larger"
+        },
+        {
+            "query": "lawful neutral fey with a challenge rating of 2 and multiple attack options",
+            "variant": "fey lawful neutral with CR of 2 and several attack choices"
+        }
+    ]
+}

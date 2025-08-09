@@ -1,0 +1,25 @@
+{
+    "name": "Shepherd Drake",
+    "queries": [
+        {
+            "query": "medium dragon that protects beasts and has high wisdom",
+            "variant": "medium-sized dragon that has high wisdom and protects creatures"
+        },
+        {
+            "query": "dragon that can communicate with animals and has a calming breath",
+            "variant": "dragon with a calming breath and capability to speak with animals"
+        },
+        {
+            "query": "lawful neutral dragon with the ability to charm beasts",
+            "variant": "neutral lawful dragon that can enchant beasts"
+        },
+        {
+            "query": "dragon that flies quickly and can bolster allies in combat",
+            "variant": "dragon with fast flying abilities that supports allies in battle"
+        },
+        {
+            "query": "monster that has a protective role and high HP",
+            "variant": "creature with a guardian role and considerable hit points"
+        }
+    ]
+}

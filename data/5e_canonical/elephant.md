@@ -1,6 +1,8 @@
 <MonsterName/>Elephant</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>76</HP>
 <summary>An Elephant is a massive, herbivorous mammal with thick, wrinkled skin and long, powerful tusks. Known for their strength and intelligence, Elephants use their trunks to manipulate objects, communicate, and care for their young. Though generally peaceful, they can be incredibly dangerous when threatened, charging at foes with their tusks or trampling anything in their path. Elephants are often found in grasslands or jungles, where they travel in herds. In battle, their size and strength make them formidable, and they are often used as war beasts by certain cultures.</summary>
 
 <summary>The Elephant is a massive beast characterized by its enormous size and significant physical power, making it an impressive presence on the battlefield. As a creature with a challenge rating of 4, it offers a moderate level of threat to adventurers, making it suitable for encounters with mid-level parties. It excels in physical combat with high strength and considerable hit points, allowing it to absorb damage while delivering devastating attacks. However, its dexterity is notably low, indicating that it is not particularly quick or agile. This makes it vulnerable to characters that rely on speed and tactical positioning. Overall, the Elephant serves as a formidable and intimidating combatant that can easily disrupt enemy formations with its charge and stomping attacks.</summary>
@@ -35,6 +37,7 @@ Finally, the Elephant has a bonus action called Trunk Grab, where it can grab on
 
 Source: 5e_srd
 
+<statblock>
 ### Elephant
 
 *Huge beast, unaligned*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 ***Gore***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 19 (3d8+6) piercing damage.
 
-***Stomp***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.
+***Stomp***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elephant
 
 *Huge* *Beast*
@@ -97,6 +102,7 @@ Source: 5e_artisinal_monsters
 - **Trample Underfoot:** The elephant makes a stomp attack against a prone creature.
 
 
+</statblock>
 
 
 
@@ -105,6 +111,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elephant
 
 *Huge beast*
@@ -138,5 +145,6 @@ Source: 5e_artisinal_monsters
 
 - **Trunk Grab.** The elephant grabs one Large or smaller creature within 10 feet of it. The target must succeed on a DC 15 STR save or be grappled (escape DC 15). The elephant can grapple only one creature at a time.
 
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Ethereal Drake",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 133,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "ethereal",
+        "elusive"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "formidable",
+        "elusive"
+    ],
+    "description": "The Ethereal Drake is a large dragon capable of traversing both the Material and Ethereal Planes, featuring a chaotic neutral alignment and a striking presence. It appears formidable with its natural armor and high hit points.",
+    "memorable": "Known for its ability to manipulate battlefield positioning by shifting opponents to the Ethereal Plane.",
+    "goals": "To dominate combat by utilizing its unique ethereal abilities to confuse and overpower opponents.",
+    "relations": "Related to other dragon species, might serve or be served by beings associated with the Ethereal Plane.",
+    "environment": "Often found in areas where the Material and Ethereal Planes intersect or near locations of significant ethereal energy.",
+    "strengths": "Possesses ethereal movement and can deal significant damage while grappling foes.",
+    "weaknesses": "Lower Intelligence and Charisma, indicating less social or magical aptitude than other dragons.",
+    "attacks": "Multiattack including a Bite for piercing plus force damage, and Claws for slashing damage.",
+    "most_powerful_ability": "Phase Breath, allowing it to deal force damage and shift creatures to the Ethereal Plane.",
+    "equipment": null,
+    "senses": "Has Ethereal Sight, enabling it to see into the Ethereal Plane up to 60 feet.",
+    "skills": "Proficient in perception, allowing it to notice details in its environment effectively.",
+    "additional_information": [
+        "Immune to poison damage and conditions.",
+        "Resistant to cold and necrotic damage.",
+        "Can shift creatures it grapples to the Ethereal Plane.",
+        "Has a passive perception score of 15, showcasing its awareness.",
+        "Can magically shift between planes as a bonus action."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon with ethereal abilities",
+        "chaotic dragon shifting foes to ethereal plane",
+        "dragon with powerful bite and claw attacks",
+        "elusive dragon capable of flying and grappling",
+        "ethereal creature with unique battlefield manipulation"
+    ]
+}

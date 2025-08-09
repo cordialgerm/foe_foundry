@@ -1,0 +1,25 @@
+{
+    "name": "Giant Armadillo",
+    "queries": [
+        {
+            "query": "small armored creature that can roll into a ball",
+            "variant": "small armored critter that can curl up into a ball"
+        },
+        {
+            "query": "beast with claws and moderate hit points that burrows",
+            "variant": "creature with claws and average hit points that can dig"
+        },
+        {
+            "query": "giant animal that has low Dexterity and a strong defense",
+            "variant": "large beast that possesses weak Dexterity and high defense"
+        },
+        {
+            "query": "creature with natural armor that resists physical damage",
+            "variant": "monster with natural armor that is resistant to physical attacks"
+        },
+        {
+            "query": "tough small beast that surprises players with its shell ability",
+            "variant": "hardy small creature that catches adventurers off guard with its shell power"
+        }
+    ]
+}

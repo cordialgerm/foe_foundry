@@ -1,0 +1,52 @@
+{
+    "name": "Emerald Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 45,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking, 15 ft. burrowing, 50 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "psionic"
+    ],
+    "adjectives": [
+        "cunning",
+        "tactical"
+    ],
+    "description": "Emerald Dragon Wyrmling is a medium-sized dragon known for its cunning and psionic abilities, featuring a sleek body and vibrant green scales.",
+    "memorable": "Able to psionically observe from 100 miles away and unleash a Maddening Breath attack.",
+    "goals": "To manipulate and control its surroundings, utilizing its cunning and psionic abilities.",
+    "relations": "Related to other dragon kinds, often encountered with older emerald dragons.",
+    "environment": "Can be found in lush, green environments that provide cover for ambush.",
+    "strengths": "Resistant to psychic and thunder damage, immune to fatigue.",
+    "weaknesses": "Constitution is slightly lower, making it less resilient in extended battles.",
+    "attacks": "Bites with sharp teeth for piercing damage and unleashes a thunderous cone attack.",
+    "most_powerful_ability": "Far Thoughts allows for psionic observation over an impressive range.",
+    "equipment": null,
+    "senses": "Possesses keen senses with an ability to observe psionic activities within 100 miles.",
+    "skills": "Excels in deception and stealth with a +4 bonus in both skills.",
+    "additional_information": [
+        "Can communicate telepathically within 120 feet.",
+        "Has a tactical intelligence score of 14, enabling complex strategies.",
+        "Uses flying speed to maneuver effectively in combat.",
+        "Shifts between physical combat and psionic abilities.",
+        "Emphasizes chaos in battles with area attacks."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning green dragon with psionic abilities",
+        "dragon with thunder breath and psionic powers",
+        "maddening breath area attack dragon",
+        "Emerald Dragon Wyrmling abilities and tactics",
+        "smart dragon that utilizes deception and stealth"
+    ]
+}

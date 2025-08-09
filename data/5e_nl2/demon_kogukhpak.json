@@ -1,0 +1,53 @@
+{
+    "name": "Kogukhpak",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 262,
+    "ac": 17,
+    "srd": false,
+    "cr": "18",
+    "movement": "40 ft. walking and swimming",
+    "role": "Bruiser",
+    "tags": [
+        "demon",
+        "fiend",
+        "chaotic",
+        "powerful"
+    ],
+    "adjectives": [
+        "formidable",
+        "immense",
+        "chaotic",
+        "fierce"
+    ],
+    "description": "The Kogukhpak is a Huge demon characterized by its immense size and chaotic evil nature, with a fearsome presence enhanced by its Strength and Charisma.",
+    "memorable": "Its ability to deal devastating damage with powerful physical attacks and magical fire breath makes it a terrifying opponent.",
+    "goals": "Typically seeks to sow chaos and destruction, overpowering foes with brute strength and magical abilities.",
+    "relations": "Related to other chaotic demons; could serve or oppose powerful entities within the Abyss.",
+    "environment": "Commonly found in dark, chaotic realms, possibly in places corrupted by evil or near battlefields.",
+    "strengths": "Holds strong immunities to cold, fire, and poison, along with resistance to lightning and non-magical physical attacks.",
+    "weaknesses": "Vulnerable to radiant damage and suffers from sunlight hypersensitivity, reducing its effectiveness outdoors during the day.",
+    "attacks": "Deals powerful melee damage with Bite and Gore attacks, as well as ranged fire damage through Spit Fire.",
+    "most_powerful_ability": "The Fire Breath can unleash a torrent of flames in a large area, inflicting massive damage.",
+    "senses": "Possesses truesight up to 120 feet, enhancing its ability to perceive hidden or invisible creatures.",
+    "skills": "Has a decent perception capability with a Wisdom score of 16, allowing it to notice hidden threats effectively.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can leap long distances, delivering damage upon landing.",
+        "Grapples targets with powerful Bite attack.",
+        "Strong physicality with a Strength of 30 for devastating melee hits.",
+        "Developed presence with a Charisma of 20, influencing interactions."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge demon that breathes fire",
+        "fiend with devastating melee attacks",
+        "chaotic demon immune to poison",
+        "powerful creature from the abyss with truesight",
+        "demon vulnerable to radiant damage in sunlight"
+    ]
+}

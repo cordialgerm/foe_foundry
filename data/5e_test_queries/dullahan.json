@@ -1,0 +1,25 @@
+{
+    "name": "Dullahan",
+    "queries": [
+        {
+            "query": "large fey creature with a severed head",
+            "variant": "big fey monster with a head that is severed"
+        },
+        {
+            "query": "creature that instills fear and moves across water",
+            "variant": "monster that invokes dread and can walk on water"
+        },
+        {
+            "query": "formidable lawful evil monster with high armor class",
+            "variant": "powerful lawful evil creature that has a 17 AC"
+        },
+        {
+            "query": "Dullahan with necrotic damage abilities",
+            "variant": "Dullahan that can inflict necrotic harm"
+        },
+        {
+            "query": "monster that doesn't need food or sleep and has a fear ability",
+            "variant": "creature that requires no food or rest and can induce fear"
+        }
+    ]
+}

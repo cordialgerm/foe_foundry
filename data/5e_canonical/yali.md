@@ -1,6 +1,8 @@
 <MonsterName/>Yali</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>51</HP>
 <summary>The Yali is a medium-sized construct that serves as a formidable opponent in combat due to its impressive speed and powerful physical attacks. With a solid Armor Class of 15, it is relatively difficult to hit. Its hit points total 51, allowing it to absorb damage effectively. The Yali is characterized by its high Strength score of 20, which grants it exceptional melee capabilities, as well as an above-average Constitution of 18, providing it with a robust endurance in battle. Although it has low Intelligence, limiting its strategic capabilities, its Dexterity of 14 ensures it can avoid some attacks. The Yali is immune to poison and psychic damage and possesses several unique abilities that enhance its combat prowess. Its main weaknesses lie in its lack of versatility and reliance on physical attacks.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Yali is a powerful construct that excels in physical combat and mob
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yali
 
 *Medium* *Construct* *unaligned*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Trumpeting Blast (Recharge 5–6):** Unleashes a warbling sound in a 15 ft. cone. Each creature in area: 10 (4d4) thunder and is deafened for 1 min (DC 12 Con half damage and not deafened). A deafened creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

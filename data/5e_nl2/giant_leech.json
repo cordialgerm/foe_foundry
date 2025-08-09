@@ -1,0 +1,50 @@
+{
+    "name": "Giant Leech",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 7,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "swim 30 ft., walk 15 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "blood-draining",
+        "stealthy"
+    ],
+    "adjectives": [
+        "small",
+        "stealthy",
+        "blood-draining",
+        "amphibious"
+    ],
+    "description": "The Giant Leech is a small beast with a smooth, slimy body capable of thriving in both water and on land. It is known for its ability to latch onto prey and slowly drain their blood.",
+    "memorable": "Its ability to drain life from attached prey creates a unique combat dynamic as it can both evade attacks and sap health over time.",
+    "goals": "To find and attach to prey in order to drain blood.",
+    "relations": "Often found in aquatic environments and may be encountered with other low-level aquatic creatures.",
+    "environment": "Aquatic settings, can also be found on land due to its amphibious nature.",
+    "strengths": "High Dexterity allows for effective evasion and stealth.",
+    "weaknesses": "Low hit points and poor physical strength make it fragile and easily damaged.",
+    "attacks": "Bite attack that can attach to prey, leading to persistent blood loss.",
+    "most_powerful_ability": "The ability to drain blood while attached to a target, dealing damage every turn.",
+    "senses": "Possesses tremorsense out to 30 feet, enabling it to detect vibrations in water and on land.",
+    "skills": "Excellent at stealth, giving it a +5 bonus, which enhances its ambush potential.",
+    "additional_information": [
+        "Can detach after draining 15 hit points or if the target dies.",
+        "Requires an action from the target to detach the leech.",
+        "Average resilience due to Constitution of 10.",
+        "Minimal intelligence limits its reasoning capabilities.",
+        "Poor social abilities indicated by low Charisma score."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small amphibious monster that drains blood",
+        "stealthy leech that attaches to prey",
+        "blood-draining creature found in water",
+        "giant leech attacks with bite and latches on",
+        "aquatic monster that can breathe air and water"
+    ]
+}

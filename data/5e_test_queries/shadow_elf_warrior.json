@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Elf Warrior",
+    "queries": [
+        {
+            "query": "stealthy humanoid that uses poison in combat",
+            "variant": "stealthy human-like creature that poisons its enemies"
+        },
+        {
+            "query": "dark-skinned elf that excels in ambush tactics",
+            "variant": "elf with dark skin proficient in ambushing"
+        },
+        {
+            "query": "warrior with good perception and darkvision",
+            "variant": "fighter with excellent perception skills and night vision"
+        },
+        {
+            "query": "medium humanoid that can cast spells and attack from shadows",
+            "variant": "medium-sized creature that can spellcast and strike from darkness"
+        },
+        {
+            "query": "shadow elf with low hit points but high wisdom",
+            "variant": "shadow elf possessing low health but strong wisdom skills"
+        }
+    ]
+}

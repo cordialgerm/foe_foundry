@@ -1,0 +1,50 @@
+{
+    "name": "Dipsa",
+    "creature_type": "Ooze",
+    "alignment": "Unaligned",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "ooze",
+        "ambush",
+        "swamp"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "acidic"
+    ],
+    "description": "The Dipsa is a small, cunning ooze with the ability to blend into swampy environments. Its translucent body allows it to surprise unsuspecting foes, and it has a discreet bite which inflicts ongoing acid damage while attached to its target.",
+    "memorable": "Its ability to attach to larger creatures and reduce their maximum hit points makes it particularly dangerous in ambush situations.",
+    "goals": "The Dipsa typically seeks to ambush larger creatures and inflict damage while remaining hidden.",
+    "relations": "It may be found alongside other swamp-dwelling creatures or as a solitary ambusher in murky waters.",
+    "environment": "Commonly found in swamps and wetland areas.",
+    "strengths": "Exceptional stealth and the ability to evade direct confrontation due to its low physical strength.",
+    "weaknesses": "Very weak in physical confrontations due to a low Strength score.",
+    "attacks": "Uses a discreet bite attack to deal piercing damage and attach to its target, inflicting ongoing acid damage.",
+    "most_powerful_ability": "The ability to attach to a target, dealing ongoing damage and reducing their maximum hit points until they take a long rest.",
+    "equipment": null,
+    "senses": "Has blindsight 60 ft., allowing it to detect creatures in its vicinity without relying on vision.",
+    "skills": "Skilled in Stealth with a +5 modifier, enhancing its ability to hide.",
+    "additional_information": [
+        "Can move through cracks as small as 1 inch due to its Amorphous trait.",
+        "Doesn't require sleep, allowing it to stay vigilant for long periods.",
+        "Gains advantage on Dexterity checks in swampy terrain due to Swamp Camouflage."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning ooze that attacks in swamps",
+        "small ambush creature with acid bite",
+        "stealthy swamp monster with ongoing damage",
+        "tiny ooze that attaches and drains hit points",
+        "dipsa ambush tactics in swamp environments"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Goblin Warlock",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 21,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Artillery",
+    "tags": [
+        "goblin",
+        "warlock",
+        "spellcaster",
+        "illusion"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "magical",
+        "tricky"
+    ],
+    "description": "A small humanoid creature with an affinity for magic, the Goblin Warlock wields a dagger and uses spells to manipulate its surroundings and the battlefield.",
+    "memorable": "Its ability to teleport allies out of harm's way creates a tactical challenge for opponents.",
+    "goals": "To outsmart foes and manipulate situations using cunning spells and illusions.",
+    "relations": "Often found with other goblins, particularly in a warlock's coven or alongside goblin minions.",
+    "environment": "Mischievous goblins, often found in caves, ruins, or forested areas.",
+    "strengths": "Skilled in stealth and arcane magic, capable of inflicting fire damage and creating illusions.",
+    "weaknesses": "Relatively low physical strength and constitution makes it less effective in direct combat.",
+    "attacks": "Uses a dagger for close range and spells like Silver Fire to deal significant ongoing damage.",
+    "most_powerful_ability": "Silver Fire deals immediate and ongoing fire damage, creating a dangerous threat.",
+    "senses": "Possesses darkvision, allowing it to see in low-light conditions.",
+    "skills": "Proficient in arcana, stealth, and intimidation, exploiting its cunning in magical situations.",
+    "additional_information": [
+        "Can create an illusion that lasts 24 hours",
+        "Quick Switch ability to teleport during an attack",
+        "Relies on deception and trickery in combat",
+        "Uses fire spells to inflict continuous damage",
+        "Low physical resilience but compensates with agility"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast spells that create illusions and deal ongoing fire damage.",
+    "test_queries": [
+        "cunning small goblin spellcaster",
+        "magical goblin that uses illusions",
+        "goblin with teleport and fire abilities",
+        "fire-dealing goblin warlock tactics",
+        "stealthy goblin with magic powers"
+    ]
+}

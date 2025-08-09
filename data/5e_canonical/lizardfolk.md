@@ -1,6 +1,9 @@
 <MonsterName/>Lizardfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>lizardfolk</Subtype>
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>22</HP>
 <summary>Lizardfolk are reptilian humanoids with scaly skin and a fierce, predatory nature. They live in swamps, marshes, or jungles, where they hunt for food and defend their tribes. Lizardfolk are highly territorial and have a survivalist mentality, seeing the world in simple terms of predator and prey. Though primitive in their culture, they are skilled hunters and warriors, using spears, clubs, and their natural claws and teeth in combat. Lizardfolk are also adept swimmers and can hold their breath for long periods, making them dangerous foes in watery environments.</summary>
 
 <summary>The Lizardfolk is a medium humanoid creature renowned for its resilience and aquatic adaptability. With an armor class of 14 and a modest pool of hit points totaling 22, this creature is capable of sustaining itself in combat while delivering formidable attacks. Its strengths lie in its physical abilities, particularly its strength score of 14, which translates to a good modifier of +2, allowing it to deal consistent damage. However, its low charisma score of 8, resulting in a bad modifier of -1, indicates that it is not skilled in social interactions or magical influences. The Lizardfolk excels in survival and stealth, making it well-suited for ambush tactics and navigating its natural environments.</summary>
@@ -33,6 +36,7 @@ Overall, the Lizardfolk's combination of physical resilience, mobility in water,
 
 Source: 5e_srd
 
+<statblock>
 ## Lizardfolk
 
 *Medium humanoid (lizardfolk), neutral*
@@ -67,7 +71,8 @@ Source: 5e_srd
 
 ***Javelin***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Spiked Shield***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Spiked Shield***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -75,6 +80,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk
 
 *Medium* *Humanoid*
@@ -106,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Javelin:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -114,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk
 
 *Medium humanoid*
@@ -149,5 +157,6 @@ Source: 5e_artisinal_monsters
 
 - **Shoving Counter.** If a creature misses the lizardfolk with an attack and the lizardfolk is wielding a shield, the lizardfolk can shove its shield into the creature. The attacker must succeed on a DC 12 STR save or be pushed up to 10 feet away from the lizardfolk and knocked prone.
 
+</statblock>
 
 

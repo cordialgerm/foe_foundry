@@ -1,0 +1,53 @@
+{
+    "name": "Aurora Horribilis",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "hover 0 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "flying",
+        "chaotic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "maddening",
+        "formidable",
+        "unpredictable"
+    ],
+    "description": "The Aurora Horribilis is a large aberration that possesses a unique and terrifying appearance, characterized by its incorporeal nature and chaotic essence. It lacks a defined physical form, enabling it to confuse and evade attacks.",
+    "memorable": "Its Reality Adjacent ability allows it to avoid damage and confound attackers, while its Void Song can charm and confuse multiple foes, making it a strategic nightmare.",
+    "goals": "The Aurora Horribilis typically seeks to manipulate and confuse its enemies, often causing chaos within combat and reveling in the discord it creates.",
+    "relations": "This creature may have ties to other aberrations or chaotic entities, potentially serving as a guardian or enforcer for more powerful beings.",
+    "environment": "It is found in areas of acute reality distortion or chaotic magical influences, often lurking in places inaccessible to traditional creatures.",
+    "strengths": "It has numerous immunities to cold, psychic, and radiant damage, along with a unique movement trait that allows it to pass through objects.",
+    "weaknesses": "The Aurora Horribilis is vulnerable to force damage, taking double damage from such attacks.",
+    "attacks": "It can deliver blistering touch attacks that inflict both cold and radiant damage, making it versatile against various defenses.",
+    "most_powerful_ability": "Void Song, a dissonant melody capable of charming those who hear it, can create confusion effects and long-term madness.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to perceive its surroundings without relying on light or physical sight.",
+    "skills": "Proficient in Acrobatics and Performance, both of which it excels at due to its high Dexterity and Charisma.",
+    "additional_information": [
+        "Incorporeal Movement allows passing through objects, but ends with damage if it remains within one.",
+        "Reality Adjacent trait provides substantial defensive capabilities against damage and attacks.",
+        "Charmed targets of the Void Song may suffer additional madness effects based on duration.",
+        "Creatures with truesight can negate some advantages of the Aurora Horribilis.",
+        "Has a high Charisma score, aiding in deceptive or manipulative tactics."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic aberration with manipulation abilities",
+        "void song creature confusing enemies",
+        "incorporeal flying monster",
+        "creature with reality distortion",
+        "madness inducing aberration"
+    ]
+}

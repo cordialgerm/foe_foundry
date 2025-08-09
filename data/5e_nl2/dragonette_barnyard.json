@@ -1,0 +1,50 @@
+{
+    "name": "Dragonette, Barnyard",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 18,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "beast communicator",
+        "tiny creature"
+    ],
+    "adjectives": [
+        "tiny",
+        "neutral",
+        "easy-to-handle"
+    ],
+    "description": "The Barnyard Dragonette is a tiny dragon with a mix of physical capability and magical traits. It boasts a colorful, scaly appearance typical of dragons, and can be both an amusing companion and a minor threat in encounters.",
+    "memorable": "Noteworthy for its ability to communicate with beasts and its keen sense of smell.",
+    "goals": "To explore and interact with its environment, often communicating with animals.",
+    "relations": "Might be encountered alongside other beasts or as a minor ally to adventurers.",
+    "environment": "Commonly found in rural areas or domesticated environments where it communes with animals.",
+    "strengths": "Possesses keen senses and the ability to blind enemies with its Gritty Breath attack.",
+    "weaknesses": "Low hit points make it vulnerable in combat situations.",
+    "attacks": "Can inflict piercing damage with its Bite attack and ensnare smaller creatures.",
+    "most_powerful_ability": "Gritty Breath, which can blind enemies and create strategic advantages in combat.",
+    "equipment": null,
+    "senses": "Has Keen Smell, granting it an advantage on perception checks related to smell.",
+    "skills": "Proficient in perception, allowing it to notice its surroundings more keenly.",
+    "additional_information": [
+        "Can communicate with beasts through its Speak with Beasts ability.",
+        "Lacks strong alignment, making it unpredictable in interactions.",
+        "Can grapple smaller creatures with its bite.",
+        "Possesses a unique breath attack that can incapacitate enemies.",
+        "Has a colorful, scaly appearance typical of dragonkind."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon that communicates with animals",
+        "small dragon with a blinding breath attack",
+        "Barnyard Dragonette tactics in combat",
+        "dragon with keen smell abilities",
+        "neutral dragon that lives in rural areas"
+    ]
+}

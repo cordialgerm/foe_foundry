@@ -1,6 +1,8 @@
 <MonsterName/>Sleipnir</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>Sleipnir is a Large neutral good Monstrosity known for its incredible strength and grace. With a formidable challenge rating of 5, this creature boasts high hit points and impressive physical attributes, making it a resilient combatant. In battle, Sleipnir can effectively engage multiple foes, leveraging its strong melee attacks and unique abilities. It has a slight weakness to magic, particularly against spells that deal cold damage, but it excels in physical prowess with exceptional strength. Additionally, its heroic leap ability demonstrates its agility and versatility, allowing for strategic movements during combat situations.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, Sleipnir’s reaction ability, Eight Hooves, can be triggered three time
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sleipnir
 
 *Large* *Monstrosity* *neutral good*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Eight Hooves (3/Day):** When a creature moves within 5 feet of the sleipnir, the sleipnir can move up to its speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Void Blessed</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Ogre, Void Blessed, is a formidable and chaotic evil giant of large stature. It boasts considerable hit points and natural armor which make it resilient in combat, and its challenge rating of 6 indicates it poses a significant threat to adventurers. The creature possesses outstanding physical strength and constitution, enabling it to deal heavy damage and withstand attacks. However, it is hampered by low dexterity and intelligence, which limits its agility and tactical awareness. Notable for its psychic immunity and its ability to inflict mental confusion, the Void Blessed Ogre can blind its foes and unleash necrotic energy, making it a fearsome opponent in battle.</summary>
 
 <detail>
@@ -39,6 +41,7 @@ As a reaction, the Ogre can utilize its Volatile Stomach ability. When it takes 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Void Blessed
 
 *Large* *Giant* *chaotic evil*
@@ -78,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Volatile Stomach:** When it takes bludgeoning piercing or slashing can regurgitate some of its stomach contents. Each creature within 5 ft. of it: 4 (1d8) necrotic and be poisoned until end of its next turn (DC 15 Con negates). A pool of Void infused stomach contents forms in a space ogre can see within 5 ft. of it and lasts until start of ogre’s next turn. A creature that enters pool for first time on a turn or starts its turn there: 4 (1d8) necrotic.
 
 
+</statblock>
 
 

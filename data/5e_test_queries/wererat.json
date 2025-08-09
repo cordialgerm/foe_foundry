@@ -1,0 +1,25 @@
+{
+    "name": "Wererat",
+    "queries": [
+        {
+            "query": "sneaky humanoid that can turn into a rat and lives in urban environments",
+            "variant": "sneaky humanoid who can transform into a rat and dwells in cities"
+        },
+        {
+            "query": "lycanthrope with stealth abilities that prefers the sewer as a habitat",
+            "variant": "lycanthrope skilled in stealth that likes living in sewers"
+        },
+        {
+            "query": "urban thief that changes shape and has a keen sense of smell",
+            "variant": "city thief who can shapeshift and possesses a strong sense of smell"
+        },
+        {
+            "query": "cunning wererat with a weakness to wolfsbane that can become a rat",
+            "variant": "clever wererat vulnerable to wolfsbane who can transform into a rat"
+        },
+        {
+            "query": "medium humanoid with low strength and high dexterity that uses pack tactics",
+            "variant": "medium humanoid with weak strength and strong dexterity that employs pack tactics"
+        }
+    ]
+}

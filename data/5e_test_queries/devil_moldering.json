@@ -1,0 +1,25 @@
+{
+    "name": "Moldering Devil",
+    "queries": [
+        {
+            "query": "small fiend that decays food and water",
+            "variant": "fiend that is small and corrupts food and drink"
+        },
+        {
+            "query": "devil that has a rotting touch and flies",
+            "variant": "flying devil with decaying touch"
+        },
+        {
+            "query": "creature immune to fire that causes food to rot",
+            "variant": "being that is immune to fire and decays food"
+        },
+        {
+            "query": "moldering creature that sees in darkness and has necrotic bite",
+            "variant": "darkvision creature that has a necrotic biting attack"
+        },
+        {
+            "query": "lawful evil devil that poisons food and drink",
+            "variant": "evil lawful devil that makes food poisonous"
+        }
+    ]
+}

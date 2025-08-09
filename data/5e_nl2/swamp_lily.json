@@ -1,0 +1,52 @@
+{
+    "name": "Swamp Lily",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "slow movement at 15 feet",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "swamp",
+        "illusion",
+        "charm"
+    ],
+    "adjectives": [
+        "deceptive",
+        "manipulative",
+        "poisonous"
+    ],
+    "description": "The Swamp Lily is a medium-sized plant creature with a unique appearance that aids in its deceptive tactics, capable of charming foes with illusory feasts.",
+    "memorable": "Known for its ability to charm and incapacitate adventurers, drawing them into traps with its illusory feasts.",
+    "goals": "Manipulate and incapacitate creatures in swamp environments through charm and deception.",
+    "relations": "Often found in swampy areas, potentially coexisting with other swamp creatures.",
+    "environment": "Swamps and marshes, utilizing the environment to enhance its deceptive abilities.",
+    "strengths": "Possesses strong charm abilities, good hit points, and damage immunities.",
+    "weaknesses": "Limited movement speed of 15 feet, making it vulnerable to fast opponents.",
+    "attacks": "Two melee root attacks dealing bludgeoning damage, with additional poison damage on a failed save.",
+    "most_powerful_ability": "The Fake Feast, creating an illusory banquet that chars creatures who approach.",
+    "senses": "Has tremorsense up to 60 feet, allowing it to detect movements of nearby creatures.",
+    "skills": null,
+    "additional_information": [
+        "Damage immunities to poison.",
+        "Condition immunities to blinded, deafened, and poisoned.",
+        "Can read surface thoughts of creatures within 60 feet regarding food preferences.",
+        "Charms creatures, incapacitating them and compelling them to move towards the illusion.",
+        "Maintains the illusion with a bonus action each turn."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that creates illusory feasts",
+        "swamp monster that charms opponents",
+        "deceptive plant living in the swamp",
+        "monster with tremorsense and poison",
+        "slow-moving plant with multiple root attacks"
+    ]
+}

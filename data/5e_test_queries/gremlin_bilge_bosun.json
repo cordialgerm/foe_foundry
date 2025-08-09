@@ -1,0 +1,25 @@
+{
+    "name": "Bilge Bosun Gremlin",
+    "queries": [
+        {
+            "query": "small fey creature that causes equipment malfunction in wet environments",
+            "variant": "tiny fey critter that makes gear malfunction in wet places"
+        },
+        {
+            "query": "cunning amphibious monster with poison attacks and chaos abilities",
+            "variant": "sly water-loving creature with poison strikes and disruptive powers"
+        },
+        {
+            "query": "gremlin that breathes both air and water while creating mayhem",
+            "variant": "gremlin that can breathe air and water and causes havoc"
+        },
+        {
+            "query": "creature immune to disease that disrupts nonmagical objects",
+            "variant": "being with disease immunity that interferes with nonmagical devices"
+        },
+        {
+            "query": "bilge gremlin with multiattack capabilities and unique aura",
+            "variant": "bilge gremlin possessing multiattack skills and special field"
+        }
+    ]
+}

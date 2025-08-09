@@ -1,0 +1,25 @@
+{
+    "name": "Blood Barnacle",
+    "queries": [
+        {
+            "query": "tiny water creature that infects and drains health",
+            "variant": "tiny aquatic beast that saps health and causes infection"
+        },
+        {
+            "query": "creature with disease-causing bite that hides as a barnacle",
+            "variant": "monster with bite that causes disease and disguises as a barnacle"
+        },
+        {
+            "query": "stealthy beast that attacks in water and causes zombification",
+            "variant": "sneaky aquatic monster that infects and turns victims into zombies"
+        },
+        {
+            "query": "small barnacle-like monster that thrives in water and hates fire",
+            "variant": "little barnacle creature that lives in water and is vulnerable to fire"
+        },
+        {
+            "query": "bloodsucking creature that conceals itself in its environment",
+            "variant": "blood-draining monster that camouflages in its surroundings"
+        }
+    ]
+}

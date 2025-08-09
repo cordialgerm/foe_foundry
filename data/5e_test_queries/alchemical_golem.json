@@ -1,0 +1,25 @@
+{
+    "name": "Alchemical Golem",
+    "queries": [
+        {
+            "query": "large construct immune to poison and psychic damage",
+            "variant": "golem large immune to poison and psychic damage"
+        },
+        {
+            "query": "alchemical creature with slam attacks and poison breath",
+            "variant": "creature with slam attacks and poison breath that is alchemical"
+        },
+        {
+            "query": "golem with high constitution and low dexterity in combat",
+            "variant": "construct with high constitution and low dexterity during battle"
+        },
+        {
+            "query": "unpredictable construct that manipulates the battlefield",
+            "variant": "construct that is unpredictable and can change the battlefield"
+        },
+        {
+            "query": "creature with elemental expulsion and alchemical infusion abilities",
+            "variant": "creature having abilities like elemental expulsion and alchemical infusion"
+        }
+    ]
+}

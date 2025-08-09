@@ -1,0 +1,52 @@
+{
+    "name": "Gearmass",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 115,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 20 ft., swim 20 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "hazardous environment",
+        "grappling"
+    ],
+    "adjectives": [
+        "large",
+        "corrosive",
+        "durable",
+        "hazardous"
+    ],
+    "description": "The Gearmass is a large ooze filled with metal objects that produce noise as it moves. Its amorphous body can pass through tight spaces, and it possesses a thick, gelatinous form. It features a constantly shifting mass that resembles a mechanical nightmare.",
+    "memorable": "The Gearmass's unique ability to corrode non-magical metal weapons makes it a dangerous opponent in combat, posing both a physical threat and a risk to adventurers' equipment.",
+    "goals": "Typically seeks to engulf creatures and damage their equipment, making it an obstacle in dungeon environments.",
+    "relations": "Often encountered in environments filled with machinery or metal, could be related to other hazardous ooze creatures.",
+    "environment": "Dungeons and other places with non-magical metal elements.",
+    "strengths": "High durability and ongoing damage to non-magical metal items, making it a formidable opponent.",
+    "weaknesses": "Low dexterity and intelligence, making it clumsy and incapable of complex strategies.",
+    "attacks": "Can perform Gear Slam attacks that deal bludgeoning damage or use Cog Toss to knock opponents prone from a distance.",
+    "most_powerful_ability": "Engulfing a creature severely restricts its movement and causes ongoing acid damage while damaging any non-magical metal items it carries.",
+    "equipment": null,
+    "senses": "Blindsight 60 feet allows it to sense its surroundings despite being blind.",
+    "skills": "Has proficiency in perception, adding a modest bonus to perception checks.",
+    "additional_information": [
+        "Immunities to various common conditions such as blinded and frightened.",
+        "Does not require sleep, allowing it to remain active indefinitely.",
+        "Mechanically hazardous to adventurers due to its corrosive nature."
+    ],
+    "damage_types": [
+        "acid",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "corrosive ooze that engulfs creatures",
+        "hazardous ooze with metal objects",
+        "ooze that destroys non-magical weapons",
+        "gelatinous creature that attacks with metal",
+        "dungeon monster that grapples opponents"
+    ]
+}

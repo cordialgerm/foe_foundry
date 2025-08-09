@@ -1,6 +1,8 @@
 <MonsterName/>Earth Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>126</HP>
 <summary>An Earth Elemental is a towering creature made of rock, stone, and dirt, animated by powerful elemental magic. Its massive, hulking form is slow but incredibly strong, capable of smashing through walls and crushing anything in its path. Earth Elementals are often summoned by druids or wizards to serve as guardians or to assist in battles. They move through the ground as easily as walking, blending into the earth and emerging to surprise their foes. Earth Elementals are nearly unstoppable in combat, using their immense strength to batter enemies and their ability to merge with stone to avoid attacks.</summary>
 
 <summary>The Earth Elemental is a powerful and resilient creature, classified as a Large Elemental in Dungeons & Dragons. With a strong armor class of 17 and a significant pool of hit points totaling 114, it excels in combat situations, making it a formidable opponent with a challenge rating of 5. One of its major strengths lies in its high Strength and Constitution scores, granting it exceptional physical attacks and resilience against damage. The elemental's ability to burrow through earth without disturbing it allows for strategic movement on the battlefield, while its immunity to poison and resistance to nonmagical weapons makes it a tough adversary. However, it has low Dexterity and Intelligence scores, which limits its agility and cognitive abilities. Overall, the Earth Elemental is adept at dealing melee damage while evading most threats due to its unique characteristics.</summary>
@@ -43,6 +45,7 @@ Additionally, the Earth Elemental can use a bonus action called Earth Tremor (wh
 
 Source: 5e_srd
 
+<statblock>
 ### Earth Elemental
 
 *Large elemental, neutral*
@@ -79,7 +82,8 @@ Source: 5e_srd
 
 ***Multiattack***. The elemental makes two slam attacks.
 
-***Slam***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 14 (2d8+5) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 14 (2d8+5) bludgeoning damage.</statblock>
+
 
 
 
@@ -87,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Earth Elemental
 
 *Large* *Elemental*
@@ -123,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -131,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Earth Elemental
 
 *Large elemental*
@@ -168,5 +175,6 @@ Source: 5e_artisinal_monsters
 
 - **Earth Tremor (Recharge 4–6).** The earth elemental causes the ground on a point it can see within 30 feet of it to rumble and shake violently. Each creature within 10 feet of that point must succeed on a DC 16 DEX save or be knocked prone.
 
+</statblock>
 
 

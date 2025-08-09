@@ -1,0 +1,52 @@
+{
+    "name": "Glacial Corrupter",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 34,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "cold"
+    ],
+    "adjectives": [
+        "chilling",
+        "menacing",
+        "undead"
+    ],
+    "description": "The Glacial Corrupter is a medium undead creature, exhibiting a chilling aura and a haunting appearance typical of its kind.",
+    "memorable": "Inflicts ongoing cold damage and can raise victims as undead.",
+    "goals": "To inflict suffering and recruit victims into its ranks as undead.",
+    "relations": "May be encountered alongside other undead creatures or in icy regions.",
+    "environment": "Typically found in cold, desolate locations.",
+    "strengths": "High Constitution grants it resilience; immune to cold and poison damage.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma make it vulnerable in mental contests.",
+    "attacks": "Uses a longsword for slashing damage or a longbow for piercing attacks, and its Glacial Touch ability inflicts cold damage with lingering effects.",
+    "most_powerful_ability": "Glacial Touch can deal initial cold damage and cause ongoing damage if not treated, creating a persistent threat.",
+    "equipment": "Longsword and longbow.",
+    "senses": "Has darkvision to navigate in darkness.",
+    "skills": null,
+    "additional_information": [
+        "Immune to exhaustion, poisoned, and petrified conditions.",
+        "Can create more Glacial Corrupters by defeating humanoids with Glacial Touch.",
+        "Reprises threats over time by raising defeated foes as undead.",
+        "Effective in combat with melee and ranged options.",
+        "Unique undead embodying cold powers."
+    ],
+    "damage_types": [
+        "cold",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that inflicts cold damage",
+        "monster that raises victims as undead",
+        "cold monster with a chilling attack",
+        "creature immune to cold and poison",
+        "menacing undead frozen attacker"
+    ]
+}

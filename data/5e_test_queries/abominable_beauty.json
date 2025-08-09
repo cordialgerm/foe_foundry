@@ -1,0 +1,25 @@
+{
+    "name": "Abominable Beauty",
+    "queries": [
+        {
+            "query": "charming fey monster that deals fire damage and blinds",
+            "variant": "fey monster that is charming and can blind foes while dealing fire damage"
+        },
+        {
+            "query": "medium evil creature with high charisma that controls the battlefield",
+            "variant": "medium-sized neutral evil creature with high charisma and battlefield control abilities"
+        },
+        {
+            "query": "monster with deadly gaze that punishes close combat and uses thunder",
+            "variant": "creature that punishes melee attacks and has a deadly gaze while using thunder damage"
+        },
+        {
+            "query": "manipulative fey that uses blinding effects and thunder attacks",
+            "variant": "manipulative fey monster utilizing blinding effects along with thunder attacks"
+        },
+        {
+            "query": "monster with fire immunity and strong manipulation abilities",
+            "variant": "creature that is immune to fire and has powerful manipulation skills"
+        }
+    ]
+}

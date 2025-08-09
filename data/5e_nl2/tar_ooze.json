@@ -1,0 +1,51 @@
+{
+    "name": "Tar Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 120,
+    "ac": 9,
+    "srd": false,
+    "cr": "6",
+    "movement": "20 feet walking and climbing",
+    "role": "null",
+    "tags": [
+        "ooze",
+        "tar",
+        "difficult terrain"
+    ],
+    "adjectives": [
+        "formidable",
+        "sticky",
+        "fire-prone"
+    ],
+    "description": "A Large ooze creature that can grapple and deal physical damage with its pseudopods, the Tar Ooze is covered in thick, black tar and emits a foul odor. It is slow-moving yet resilient in combat.",
+    "memorable": "It creates fire hazards when damaged by fire while also having the capability to produce tar that can ensnare and harm attackers.",
+    "goals": "To engulf and incapacitate opponents, causing them to become tarred and potentially turn into tar ghouls.",
+    "relations": "Related to other forms of ooze or similar creatures. Often a danger in areas of difficult terrain.",
+    "environment": "Typically found in swampy or marshy areas where its abilities can be further utilized.",
+    "strengths": "Immunities to fire, necrotic, and poison damage make it a durable opponent, along with various condition immunities.",
+    "weaknesses": "Low Dexterity score limits its ability to dodge attacks and respond quickly.",
+    "attacks": "Employs pseudopods for melee attacks, capable of inflicting both bludgeoning and necrotic damage, as well as hurling tar at foes.",
+    "most_powerful_ability": "Fire Hazard: Ignites when taking fire damage, causing additional fire damage to those who touch it, while boosting its own attacks.",
+    "equipment": null,
+    "senses": "Blindsight out to 60 feet allows it to sense its surroundings despite being blind beyond that radius.",
+    "skills": null,
+    "additional_information": [
+        "Can cause major battlefield control with sticky tar and fire hazards.",
+        "Creates lasting effects through its ability to raise tar ghouls from fallen foes.",
+        "Slow-moving but resilient, making it a challenging opponent to face head-on."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "slow-moving tar creature with fire abilities",
+        "monster that creates sticky tar hazards",
+        "large ooze that ignites when damaged by fire",
+        "undead creature that rises from tar-covered bodies",
+        "impeding ooze that hurls tar at foes"
+    ]
+}

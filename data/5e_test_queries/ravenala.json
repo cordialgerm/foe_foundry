@@ -1,0 +1,25 @@
+{
+    "name": "Ravenala",
+    "queries": [
+        {
+            "query": "large plant guardian that can heal and control vegetation",
+            "variant": "plant guardian that is large and can control vegetation and heal"
+        },
+        {
+            "query": "creature with high hit points that is vulnerable to fire and cold",
+            "variant": "monster with a lot of hit points that can be harmed by fire and cold"
+        },
+        {
+            "query": "strong plant creature that grapples enemies and inflicts conditions",
+            "variant": "powerful plant creature that can grapple foes and impose conditions"
+        },
+        {
+            "query": "Ravenala abilities that enhance plant life and heal",
+            "variant": "abilities of Ravenala that heal and promote plant growth"
+        },
+        {
+            "query": "monster with Magic Resistance that moves easily through plants",
+            "variant": "creature that has Magic Resistance and can easily navigate through plants"
+        }
+    ]
+}

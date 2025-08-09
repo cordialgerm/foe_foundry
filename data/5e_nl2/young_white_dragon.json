@@ -1,0 +1,55 @@
+{
+    "name": "Young White Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 126,
+    "ac": 17,
+    "srd": true,
+    "cr": "6",
+    "movement": "40 ft. walking, burrow 20 ft., flying 80 ft., swimming 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "ice",
+        "cold",
+        "predator"
+    ],
+    "adjectives": [
+        "savage",
+        "territorial",
+        "brutal",
+        "cold-based",
+        "formidable"
+    ],
+    "description": "The Young White Dragon features frosty white scales that camouflage it in icy environments, displaying powerful bite and claw attacks.",
+    "memorable": "It possesses a freezing breath weapon that can encase enemies in ice and is immune to cold damage.",
+    "goals": "Its driving instincts focus on survival, hoarding treasure, and dominating its frozen territory.",
+    "relations": "Typically solitary, it can be encountered in cold climates or alongside other dragons.",
+    "environment": "Icy tundras and snow-covered mountains.",
+    "strengths": "Noteworthy abilities include high resilience due to cold immunity and exceptional movement options in icy terrain.",
+    "weaknesses": "Its low Intelligence may leave it vulnerable to more strategically minded opponents.",
+    "attacks": "Performs multiattacks with a mix of biting and slashing with claws, dealing significant cold damage.",
+    "most_powerful_ability": "Cold Breath attack that deals area damage and can severely impact multiple foes.",
+    "equipment": null,
+    "senses": "Has blindsight at 30 feet, allowing it to detect creatures in darkness.",
+    "skills": "Proficient in perception with a +6 modifier, showcasing its keen senses.",
+    "additional_information": [
+        "Can move effortlessly across icy surfaces due to Ice Walk ability.",
+        "Generates a numbing chill that can hinder nearby creatures' movement.",
+        "Innate spellcasting abilities to cast animal friendship and sleet storm.",
+        "Displays strong physical power with a high Strength score.",
+        "Brutal instincts make it a dangerous predator."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast certain spells without material components.",
+    "test_queries": [
+        "cold-breath dragon that loves icy locations",
+        "young dragon with freezing power and ice walk",
+        "territorial dragon featuring icy camouflage",
+        "brutal predator known for cold attacks",
+        "savage dragon that can navigate through snow effortlessly"
+    ]
+}

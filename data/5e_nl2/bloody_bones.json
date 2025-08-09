@@ -1,0 +1,50 @@
+{
+    "name": "Bloody Bones",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at a speed of 30 feet",
+    "role": "null",
+    "tags": [
+        "undead",
+        "horror",
+        "psychological"
+    ],
+    "adjectives": [
+        "chaotic",
+        "terrifying",
+        "deceptive"
+    ],
+    "description": "The Bloody Bones is a Medium-sized monstrosity with a nightmarish appearance, embodying chaos and fear. Its emaciated form, bone structure, and eerie gaze create a disturbing presence. Armed with razor-sharp claws, it uses its physical prowess and psychological tactics to induce fear.",
+    "memorable": "Its ability to instill fear through its Horrifying Aura and the grotesque mimicry of its Horrific Imitation trait make it both a formidable opponent and a memorable creature in any dark-themed campaign.",
+    "goals": "To intimidate and frighten opponents while inflicting damage, often engaging in psychological warfare.",
+    "relations": "Could potentially be related to other undead or monstrosities that thrive on fear and deception.",
+    "environment": "Typically found in dark, foreboding locations that evoke terror, associated with horror-themed adventures.",
+    "strengths": "Possesses great physical strength, effective melee attacks, and abilities that frighten enemies, hindering their effectiveness in combat.",
+    "weaknesses": "It has low Intelligence, making it poor in strategic planning and reliant on simple combat tactics.",
+    "attacks": "Utilizes eluding claw attacks and its sinister Dark Stare ability to impose disadvantages on foes.",
+    "most_powerful_ability": "Horrifying Aura forces enemies to confront their fears, significantly impacting their performance in battles.",
+    "equipment": "none",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in dim conditions as well as bright light.",
+    "skills": "Proficient in deception and stealth, enabling effective ambush and manipulation of enemies.",
+    "additional_information": [
+        "Horrifying Aura affects any hostile creature within 10 feet, creating a tactical disadvantage.",
+        "Multiattack allows two claw strikes, making it dangerous in close combat.",
+        "Dark Stare induces disadvantage on attack rolls for affected targets, crippling their combat effectiveness.",
+        "Regenerates hit points as a reaction when damaged, increasing its sustainability.",
+        "Known for grotesque mimicry that can unsettle opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "horror monstrosity",
+        "psychological fear creature",
+        "undead horror",
+        "mimicry monster",
+        "creature with frightening aura"
+    ]
+}

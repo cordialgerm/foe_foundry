@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Fey",
+    "queries": [
+        {
+            "query": "humanoid creature that thrives in darkness and struggles in sunlight",
+            "variant": "humanoid that excels in shadow and suffers under sunlight"
+        },
+        {
+            "query": "stealthy fey humanoid that uses shortswords and bows",
+            "variant": "nimble fey creature armed with shortswords and bows"
+        },
+        {
+            "query": "medium-sized evil fey living in shadows with unique abilities",
+            "variant": "medium fey creature of evil nature that dwells in shadows"
+        },
+        {
+            "query": "creature vulnerable to sunlight with darkvision and fey ancestry",
+            "variant": "vulnerable monster in bright light with abilities of darkvision and fey ancestry"
+        },
+        {
+            "query": "Shadow Fey's ability to travel through shadows and attack in dim light",
+            "variant": "ability of Shadow Fey to move through shadows and strike in low light"
+        }
+    ]
+}

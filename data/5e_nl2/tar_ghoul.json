@@ -1,0 +1,55 @@
+{
+    "name": "Tar Ghoul",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "fire",
+        "ambush",
+        "control"
+    ],
+    "adjectives": [
+        "cunning",
+        "deadly",
+        "fire-manipulating",
+        "strong",
+        "agile"
+    ],
+    "description": "The Tar Ghoul is a Medium undead creature, characterized by its ability to ignite itself and others, along with its strong physical attributes in Strength and Dexterity.",
+    "memorable": "Its ability to vomit tar creates hazardous areas that can ignite, adding a tactical complexity to encounters.",
+    "goals": "To ambush unsuspecting foes and control the battlefield with fire and tar.",
+    "relations": "May be encountered with other undead creatures; serves as a formidable challenge to adventurers.",
+    "environment": "Often found in areas where it can utilize its fiery abilities and surprise tactics.",
+    "strengths": "Immunity to fire and poison damage; can paralyze foes with its claw attack.",
+    "weaknesses": "Low Charisma and Wisdom make it less persuasive and perceptive than other undead.",
+    "attacks": "Makes one bite and one claw attack, with the potential to paralyze non-elf foes.",
+    "most_powerful_ability": "Vomit Tar creates burnable tar zones that ignite and deal ongoing fire damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has average perception skills, with a +2 modifier indicating capability in noticing surroundings.",
+    "additional_information": [
+        "Immune to charm, exhaustion, and poisoned conditions.",
+        "Resistant to necrotic damage.",
+        "Dual capabilities with fire and melee attacks.",
+        "Uses fire strategically to control combat fields.",
+        "Moves quickly to engage or escape in battle situations."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that controls fire",
+        "ambushing creature with tar attack",
+        "monster that paralyzes foes with claws",
+        "cunning undead that vomits tar",
+        "medium undead with fire manipulation abilities"
+    ]
+}

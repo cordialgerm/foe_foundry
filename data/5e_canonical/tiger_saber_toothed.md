@@ -1,6 +1,8 @@
 <MonsterName/>Tiger, Saber-Toothed</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>63</HP>
 <summary>The saber-toothed tiger is a large beast known for its fearsome appearance and predatory instincts. As a challenge rating 2 creature, it poses a moderate threat to adventurers, leveraging its high speed and strength in combat. The tiger boasts an Armor Class of 12, making it relatively easy to hit, and a sizable hit point pool of 63, which allows it to endure a fair amount of damage. With a strong base Strength score of +4 and decent Dexterity and Constitution values, its physical attacks are potent but are counterbalanced by poor Intelligence and Charisma scores. This creature is particularly dangerous when it can utilize its special abilities, such as its heightened sense of smell and the pounce attack, allowing it to gain an advantage on its targets. However, its lack of ranged abilities can be considered a significant weakness.</summary>
 
 <detail>
@@ -32,6 +34,7 @@ These abilities and attacks mean that the saber-toothed tiger is a formidable op
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tiger, Saber-Toothed
 
 *Large beast*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 9 (1d10 + 4) piercing damage, and the target must succeed on a DC 14 DEX save or suffer a puncture wound. A creature suffering a puncture wound loses 5 (1d10) HP at the start of each of its turns as the wound bleeds excessively. Any creature can take an action to stanch the wound with a successful DC 12 WIS (Medicine) check. The wound also closes if the target receives magical healing.
 - **Claws.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage.
 
+</statblock>
 
 

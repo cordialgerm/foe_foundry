@@ -1,0 +1,25 @@
+{
+    "name": "Nephirron Devil",
+    "queries": [
+        {
+            "query": "Huge fiend that can fly and sees through magical darkness",
+            "variant": "massive devil that flies and has vision in magical darkness"
+        },
+        {
+            "query": "powerful creature with high Charisma and spellcasting abilities",
+            "variant": "strong creature with exceptional Charisma and spellcasting powers"
+        },
+        {
+            "query": "cunning devil that can manipulate others and ambush from the air",
+            "variant": "sly fiend that can deceive others and attack from the sky"
+        },
+        {
+            "query": "fiend immune to fire and poison with exceptional physical strength",
+            "variant": "devil resistant to fire and poison with great physical power"
+        },
+        {
+            "query": "strength-based monster with multiple attacks and spell resistance",
+            "variant": "might-focused creature capable of multiple strikes and resistant to spells"
+        }
+    ]
+}

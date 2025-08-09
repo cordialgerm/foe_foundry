@@ -1,0 +1,51 @@
+{
+    "name": "Leashed Lesion",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 65,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "aberration",
+        "chaotic evil",
+        "necrotic resistance"
+    ],
+    "adjectives": [
+        "chaotic",
+        "symbiotic",
+        "draining"
+    ],
+    "description": "The Leashed Lesion is a large aberration characterized by a chaotic appearance and a symbiotic nature, featuring a special recess on its back for tethering other creatures.",
+    "memorable": "It has a unique ability to tether a creature, draining its health to heal itself while grappling the target.",
+    "goals": "To drain health from foes while sustaining itself and controlling its tethered target.",
+    "relations": "Often encountered alongside other aberrations or as a minion to darker powers.",
+    "environment": "Typically found in dark, chaotic landscapes where it can employ its blindsight.",
+    "strengths": "Possesses damage resistance to necrotic damage and can regain health based on the necrotic damage dealt.",
+    "weaknesses": "Limited cognitive abilities with a low Intelligence score, which may restrict strategic planning.",
+    "attacks": "Utilizes a Multiattack consisting of a Bite dealing piercing and necrotic damage, along with two Claw attacks for slashing damage.",
+    "most_powerful_ability": "Draining Burst allows it to deal area damage while healing itself and its tethered target.",
+    "equipment": null,
+    "senses": "Has blindsight with a range of 120 feet, allowing it to detect hidden creatures without sight.",
+    "skills": "Limited perception skills with a passive perception of 9.",
+    "additional_information": [
+        "Can attach a symbiotic Life Tether to gain health from the tethered creature's suffering.",
+        "The creature can only maintain one Life Tether at a time, adding tactical choices.",
+        "It can unleash a potent area effect with its Draining Burst, enhancing its survivability.",
+        "Both the lesion and the tethered creature can detach from the Life Tether as a bonus action."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that drains health and heals itself",
+        "aberration with symbiotic tethering ability",
+        "large chaotic monster with necrotic resistance",
+        "monster with area necrotic damage attack",
+        "Leashed Lesion combat tactics"
+    ]
+}

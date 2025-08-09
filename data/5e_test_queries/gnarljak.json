@@ -1,0 +1,25 @@
+{
+    "name": "Gnarljak",
+    "queries": [
+        {
+            "query": "small construct monster with high dexterity and ambush abilities",
+            "variant": "small ambush monster that is a construct and has high dexterity"
+        },
+        {
+            "query": "creature with natural armor and poor intelligence hiding in plain sight",
+            "variant": "creature that has natural armor and low intelligence blending in as a trap"
+        },
+        {
+            "query": "ambush predator that is immune to poison and psychic damage",
+            "variant": "predator that ambushes and is not affected by poison and psychic damage"
+        },
+        {
+            "query": "Gnarljak unique abilities to attach and restrain opponents",
+            "variant": "Gnarljak's special abilities to attach and restrain enemies"
+        },
+        {
+            "query": "monster that has blindsight and strong multiattack capabilities",
+            "variant": "creature with blindsight and powerful multiattack options"
+        }
+    ]
+}

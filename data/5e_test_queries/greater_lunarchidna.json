@@ -1,0 +1,25 @@
+{
+    "name": "Greater Lunarchidna",
+    "queries": [
+        {
+            "query": "stealthy monster that uses webbing and necrotic damage",
+            "variant": "sneaky creature that manipulates webs and deals necrotic dmg"
+        },
+        {
+            "query": "medium-sized aberration vulnerable to sunlight with climbing abilities",
+            "variant": "a medium aberration sensitive to sunlight that can climb"
+        },
+        {
+            "query": "spellcasting creature that thrives in darkness and hates sunlight",
+            "variant": "spellcaster that performs well in dark areas but dislikes bright light"
+        },
+        {
+            "query": "cunning monster with natural armor and climbing speed found in the dark",
+            "variant": "sly creature that has natural defenses and can climb, lives in shadows"
+        },
+        {
+            "query": "creature that restrains foes with webs and has a necrotic bite",
+            "variant": "beast that traps its enemies in webs and bites with necrotic effect"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Coven Winter Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>17</AC>
+<HP/>135</HP>
 <summary>The Coven Winter Hag is a formidable Medium Fey creature embodying the essence of winter and malice. It serves as a cunning spellcaster and a dangerous foe in combat, boasting a variety of abilities that allow it to manipulate its environment, curse its enemies, and deal significant damage. With a respectable Armor Class of 17 and 135 hit points, the hag has a good chance of sustaining damage while delivering potent attacks both at range and in melee combat. Its strengths lie in its high Charisma, which enhances its spellcasting capabilities, and its ability to control cold weather—providing it advantages during specific encounters. However, its reliance on spells and tactics can make it vulnerable if faced with strong magical resistances or abilities that counteract its effects.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Coven Winter Hag is a cunning and powerful adversary, masterfully u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coven Winter Hag
 
 *Medium* *Fey*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Ice Shield:** The hag adds 3 to its AC against one melee attack that would hit it made by a creature it can see. If the attack misses, the attacker takes 14 (4d6) cold damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Elder Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>285</HP>
 <summary>The Elder Vampire is a formidable creature, serving as both a powerful adversary in combat and a master manipulator outside of it. With an armor class of 16 and a staggering 285 hit points, this Medium undead being is resilient and difficult to take down. Its strengths lie in high attributes, especially in Strength and Constitution, both at 20, indicating exceptional physical prowess and durability. The Elder Vampire is also skilled in Dexterity and Charisma, making it agile and a capable deceiver. However, it is vulnerable to sunlight and running water, taking significant radiant damage when exposed, which can incapacitate it and prevent it from utilizing its regeneration or mist form abilities. The Elder Vampire’s challenge rating of 11 reflects its dangerous combination of combat abilities, spellcasting potential, and intimidating presence, requiring careful strategy from any adventurers encountering it.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ When it comes to legendary actions, the Elder Vampire can take one action at the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elder Vampire
 
 *Medium* *Undead*
@@ -80,5 +83,6 @@ Source: 5e_artisinal_monsters
 - **Grab:** The vampire makes a grab attack.
 - **Mist Form:** The vampire transforms into a mist or back into its true form. As mist, the vampire has a flying speed of 30, can't speak, can't take actions or manipulate objects, is immune to nonmagical damage from weapons, and has advantage on saving throws and Stealth checks. It can pass through a space as narrow as 1 inch without squeezing but can't pass through water. Anything its carrying transforms with it.
 - **Shapechange:** The vampire transforms into the shape of a Medium or smaller beast or back into its true form. While transformed, it has the beasts size and movement modes. It can't use reactions or legendary actions, and can't speak. Otherwise, it uses the vampires statistics. Anything its carrying transforms with it.
+</statblock>
 
 

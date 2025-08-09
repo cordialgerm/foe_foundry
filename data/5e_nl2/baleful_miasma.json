@@ -1,0 +1,52 @@
+{
+    "name": "Baleful Miasma",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 60 ft., walk speed reduced to 0 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "poisonous",
+        "stealthy"
+    ],
+    "adjectives": [
+        "poisonous",
+        "stealthy",
+        "dangerous"
+    ],
+    "description": "The Baleful Miasma is a medium elemental creature embodying stealth and danger through its poisonous presence.",
+    "memorable": "Its ability to suffocate creatures that breathe air and move through narrow spaces without obstruction makes it particularly threatening.",
+    "goals": "To suffocate and poison creatures within its space.",
+    "relations": null,
+    "environment": "Typically found in areas with stagnant air or toxic environments.",
+    "strengths": "Immunity to poison damage and numerous conditions, making it highly resilient in combat.",
+    "weaknesses": "Low intelligence and charisma, indicating a lack of tactical awareness.",
+    "attacks": "It executes a Multiattack with two Slam attacks, dealing bludgeoning and poison damage.",
+    "most_powerful_ability": "Asphyxiate ability, which can incapacitate creatures by filling their lungs with poisonous miasma.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has a passive perception rate of 10, which is average for detecting threats.",
+    "additional_information": [
+        "Completely immune to poison damage.",
+        "Resistant to lightning damage and nonmagical physical damage.",
+        "Can occupy a hostile creature's space without restriction.",
+        "Does not require air, food, water, or sleep.",
+        "Can follow creatures within its space without provoking attacks of opportunity."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "poisonous elemental",
+        "stealthy air creature",
+        "suffocating miasma monster",
+        "toxic cloud elemental",
+        "creature that fills the air with poison"
+    ]
+}

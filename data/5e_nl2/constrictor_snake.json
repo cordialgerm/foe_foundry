@@ -1,0 +1,49 @@
+{
+    "name": "Constrictor Snake",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 13,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft. walking, climbing, and swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "snake",
+        "ambush",
+        "constrictor"
+    ],
+    "adjectives": [
+        "large",
+        "muscular",
+        "powerful"
+    ],
+    "description": "A large, muscular serpent known for its ability to coil around prey and squeeze tightly.",
+    "memorable": "Its immense strength allows it to deal significant damage, even to larger creatures.",
+    "goals": "Hunts prey by lying in wait before ambushing.",
+    "relations": "Can be encountered alongside other jungle or swamp predators.",
+    "environment": "Typically found in jungles, forests, and swamps.",
+    "strengths": "Skilled at stealth and camouflage, making it a dangerous ambusher.",
+    "weaknesses": "Lacks venom, which limits its lethality.",
+    "attacks": "Bite deals piercing damage, while Constrict grapples and restrains targets.",
+    "most_powerful_ability": "Constrict allows it to immobilize its prey while inflicting damage.",
+    "senses": "Has blindsight out to 10 feet, allowing it to sense nearby vibrations and movement.",
+    "skills": null,
+    "additional_information": [
+        "Can consume prey whole after capturing it.",
+        "Uses its strength to deal damage rather than relying on agility.",
+        "Grappling an opponent restricts their movement.",
+        "Can ambush effectively due to its camouflage.",
+        "Relatively low defenses with only an Armor Class of 12."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large ambush snake with powerful constriction",
+        "muscular serpent that hunts in jungles",
+        "snake that grapples and restrains prey",
+        "powerful serpent that swallows prey whole",
+        "stealthy snake that uses camouflage"
+    ]
+}

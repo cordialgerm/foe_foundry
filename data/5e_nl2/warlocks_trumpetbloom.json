@@ -1,0 +1,51 @@
+{
+    "name": "Warlock's Trumpetbloom",
+    "creature_type": "Plant",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 152,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 20 feet",
+    "role": "null",
+    "tags": [
+        "plant",
+        "poison",
+        "grappling"
+    ],
+    "adjectives": [
+        "sinister",
+        "formidable",
+        "durable",
+        "poisonous"
+    ],
+    "description": "The Warlock's Trumpetbloom is a large, sinister plant creature with tendrils and a venomous stinger.",
+    "memorable": "Its ability to frighten foes and paralyze them with its poison makes it a dangerous adversary.",
+    "goals": "The trumpetbloom seeks to incapacitate intruders using its poisonous attacks and psychological effects.",
+    "relations": "It may be found in dark, twisted environments, possibly serving dark masters or lurking alone.",
+    "environment": "Typically found in dark forests or cursed places.",
+    "strengths": "Has high hit points and natural armor providing strong defense; immune to poison and certain conditions.",
+    "weaknesses": "Relatively low Dexterity makes it less agile compared to faster enemies.",
+    "attacks": "Can use a poisonous stinger for piercing damage and grapple with its tendrils for bludgeoning damage.",
+    "most_powerful_ability": "The ability to instill fear with its 'Alien Mind' ability can hinder adventurers significantly.",
+    "equipment": null,
+    "senses": "It has blindsight up to 60 feet but is blind beyond that range, with a passive perception of 13.",
+    "skills": "Skilled in stealth, it can remain hidden when necessary.",
+    "additional_information": [
+        "Immune to blinded, deafened, exhausted, and poisoned conditions.",
+        "Has advantage on saving throws against spells and magical effects.",
+        "Can grapple multiple Medium or smaller foes simultaneously."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large poisonous plant monster",
+        "grappling plant with poisonous stinger",
+        "sinister plant that instills fear",
+        "dark forest creature with psychic abilities",
+        "resilient plant with natural armor"
+    ]
+}

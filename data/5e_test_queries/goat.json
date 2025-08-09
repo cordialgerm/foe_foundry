@@ -1,0 +1,25 @@
+{
+    "name": "Goat",
+    "queries": [
+        {
+            "query": "small mountain animal with curved horns and cloven hooves",
+            "variant": "small beast with cloven hooves and curved horns found in mountains"
+        },
+        {
+            "query": "peaceful livestock that can knock opponents down during combat",
+            "variant": "non-aggressive livestock that can knock foes prone in battle"
+        },
+        {
+            "query": "goat that charges and has weak intelligence",
+            "variant": "goat with low intelligence that uses its charge ability"
+        },
+        {
+            "query": "medium-sized creature that excels in rugged terrains",
+            "variant": "creature of medium size that does well in rough terrain"
+        },
+        {
+            "query": "animal with low armor class and ability to deal bludgeoning damage",
+            "variant": "creature with low AC that can inflict bludgeoning damage"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Prismatic Adult</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>212</HP>
 <summary>The Prismatic Adult Dragon is a formidable foe, embodying the essence of a massive and majestic creature with immense power and a wide array of abilities. As a neutral alignment entity, this dragon strikes a balance between benevolence and malignance, making it unpredictable in its interactions with adventurers. It possesses exceptional physical attributes, with a Strength score of 22 and a Constitution score of 23, contributing to its high damage output and resilience in combat. With a total of 212 hit points and an Armor Class of 18, this dragon can endure considerable punishment while threatening any foes with its potent melee attacks and fear-inducing presence. Its primary strengths lie in its diverse array of attacks, its ability to instill fear in others, and its powerful breath weapon that can deal heavy radiant damage. However, its reliance on spellcasting may make it vulnerable if faced with enemies that can withstand or counter its magical abilities.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, this dragon represents a high-level challenge capable of devastating ef
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Prismatic Adult
 
 *Huge* *Dragon* *neutral*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Tail Attack:** Makes a tail attack.
 - **Cast a Spell (2):** The prismatic dragon uses Spellcasting.
 - **Shimmering Wings (2):** Each creature within 20': DC 16 Wis save or take 11 (2d10) radiant and blinded until start of its next turn.
+</statblock>
 
 

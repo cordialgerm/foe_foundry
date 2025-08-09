@@ -1,0 +1,54 @@
+{
+    "name": "Wasteland Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 17,
+    "srd": false,
+    "cr": "3",
+    "movement": "burrow 15 ft., climb 30 ft., fly 50 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "chaotic",
+        "arcane"
+    ],
+    "adjectives": [
+        "fearsome",
+        "mobile",
+        "chaotic",
+        "malevolent"
+    ],
+    "description": "The Wasteland Dragon Wyrmling is a medium-sized dragon with chaotic evil traits, combining solid defenses and significant damage output. It has robust physical features reflecting its dragon lineage, with a strong physique and an imposing presence.",
+    "memorable": "Notable for its Warped Energy Breath ability, delivering area-of-effect force damage, making it a versatile threat.",
+    "goals": "To dominate its territory and vanquish foes using its chaotic nature and powerful abilities.",
+    "relations": "May be encountered with other dragons or chaotic creatures; possibly serves as a minion to a more powerful dragon.",
+    "environment": "Often found in arid or desolate regions that reflect its chaotic nature.",
+    "strengths": "Immunity to force damage, versatile movement capabilities, strong area-effect damage, and solid physical abilities.",
+    "weaknesses": "Average Dexterity could make it vulnerable in tactical engagements requiring mobility.",
+    "attacks": "Performing a powerful Bite attack dealing 14 piercing damage, alongside its potent Warped Energy Breath.",
+    "most_powerful_ability": "Warped Energy Breath, unleashing a devastating blast of force damage in a line.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, providing it with an edge in detecting nearby creatures without relying on sight.",
+    "skills": "Average in Perception and Stealth, indicating competency in hiding and sensing danger.",
+    "additional_information": [
+        "Strong Constitution giving it good durability",
+        "Dexterity saving throw above average",
+        "Ability to fly enhances its battlefield mobility",
+        "Can burrow, allowing for evasive tactics",
+        "Arcane energy theme adds a unique flavor to its attacks"
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon with arcane breath attack",
+        "mobile dragon living in wasteland",
+        "powerful dragon with force immunity",
+        "wyrmling that burrows and flies",
+        "chaotic dragon capable of area damage"
+    ]
+}

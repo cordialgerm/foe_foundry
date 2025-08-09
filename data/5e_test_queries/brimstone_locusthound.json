@@ -1,0 +1,25 @@
+{
+    "name": "Brimstone Locusthound",
+    "queries": [
+        {
+            "query": "smoky monster that can blind opponents in close range",
+            "variant": "monster that is smoky and can blind foes at close distance"
+        },
+        {
+            "query": "medium monstrosity that excels in chaos with strong melee attacks",
+            "variant": "monstrosity of medium size that thrives in chaotic environments with powerful melee abilities"
+        },
+        {
+            "query": "creature with a smoky aura that disrupts vision and restrains targets",
+            "variant": "creature having a smoky aura that can obscure vision and hold opponents"
+        },
+        {
+            "query": "brimstone locusthound tactics in battle with area control",
+            "variant": "tactics of locusthound that focus on controlling the area in combat"
+        },
+        {
+            "query": "monster known for mobility and obscuring smoke techniques",
+            "variant": "creature recognized for its movement and smoke-based techniques"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Empty Cloak",
+    "creature_type": "Construct",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "Construct",
+        "Shadow"
+    ],
+    "adjectives": [
+        "shadowy",
+        "defensive",
+        "agile"
+    ],
+    "description": "The Empty Cloak is a shadowy construct, resembling a flowing garment with no visible contents, capable of moving fluidly on the battlefield.",
+    "memorable": "It can burst into pieces when critically hit, showcasing its unique resilience and shadowy nature.",
+    "goals": "To serve as a sentinel and protect its allies while engaging a variety of foes.",
+    "relations": "Typically encountered with constructs or shadow-themed creatures.",
+    "environment": "Can be found in dark, shadowy areas or as guardians in enigmatic locations.",
+    "strengths": "Possesses advantage on Perception checks and can protect allies by absorbing damage.",
+    "weaknesses": "Vulnerable to fire damage, reflecting its shadowy, ethereal makeup.",
+    "attacks": "Can perform the Razor Cloak for slashing damage, Shadow Slam for bludgeoning damage, and Shadow Snare to grapple enemies.",
+    "most_powerful_ability": "Wrapping Embrace reduces incoming damage to allies while absorbing it for itself.",
+    "equipment": null,
+    "senses": "Has heightened perception with advantage on Wisdom checks.",
+    "skills": "Has proficiency in Stealth, benefiting its shadowy nature.",
+    "additional_information": [
+        "Immunities to poison and psychic damage.",
+        "Can grapple targets with its shadowy tendrils.",
+        "Does not require air, food, drink, or sleep.",
+        "Resistant to bludgeoning damage.",
+        "Can occupy the same space as Medium or smaller creatures."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy construct that protects allies",
+        "cool defensive tactics of the Empty Cloak",
+        "medium-sized monster with shadow abilities",
+        "creature that grapples with shadowy tendrils",
+        "unique construct with no visible contents"
+    ]
+}

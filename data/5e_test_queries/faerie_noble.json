@@ -1,0 +1,25 @@
+{
+    "name": "Faerie Noble",
+    "queries": [
+        {
+            "query": "magical fey creature with high charisma and flight abilities",
+            "variant": "magical creature fey with flight abilities and high charisma"
+        },
+        {
+            "query": "medium-sized fey that can teleport and manipulate its size",
+            "variant": "fey creature medium size that can change size and teleport"
+        },
+        {
+            "query": "charming creature immune to being poisoned and has truesight",
+            "variant": "charming fey immune to poison and has ability to see through illusions"
+        },
+        {
+            "query": "nimble fey that casts spells and attacks with scimitars",
+            "variant": "nimble creature that uses magic and fights with scimitars"
+        },
+        {
+            "query": "tactical fey that can impose effects on its enemies with a gaze",
+            "variant": "tactical creature that can affect foes with its gaze"
+        }
+    ]
+}

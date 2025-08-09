@@ -1,0 +1,50 @@
+{
+    "name": "Swarm of Khalkos Spawn",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 71,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "chaos",
+        "debuff"
+    ],
+    "adjectives": [
+        "menacing",
+        "intelligent",
+        "agile"
+    ],
+    "description": "The Swarm of Khalkos Spawn is a menacing Medium Aberration characterized by its swarm-like appearance and effective combat capabilities, known for emitting chaos pheromones.",
+    "memorable": "Its ability to confuse enemies with chaos pheromones makes it a unique and strategic threat in encounters.",
+    "goals": "To create confusion and chaos among enemies, making them susceptible to attacks.",
+    "relations": "Related to other aberrations and may be encountered alongside similar chaotic entities.",
+    "environment": "Typically found in areas where chaos reigns or near other corrupted creatures.",
+    "strengths": "High Intelligence allows for effective mental maneuvers and superior Dexterity enhances agility in combat.",
+    "weaknesses": "Very low Strength limits its physical attack effectiveness, making it rely on tactics rather than brute force.",
+    "attacks": "Utilizes a Sting attack that deals both piercing and poison damage, adaptable based on its condition.",
+    "most_powerful_ability": "Chaos Pheromones create an area of confusion, forcing enemies to make Intelligence saving throws to avoid debilitating effects.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Resistant to fire, psychic, radiant damage, and physical damage types.",
+        "Immune to charmed, frightened, grappled, paralyzed, petrified, prone, restrained, and stunned conditions.",
+        "Can telepathically communicate within 120 ft."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic swarm with confusion powers",
+        "debuffing monster that creates chaos",
+        "intelligent poisonous swarm attacking",
+        "fast flying aberration that confuses foes",
+        "menacing swarm with strong mental abilities"
+    ]
+}

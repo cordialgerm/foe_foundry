@@ -1,0 +1,50 @@
+{
+    "name": "Bagiennik",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 feet walk speed",
+    "role": "Artillery",
+    "tags": [
+        "healer",
+        "acid",
+        "slashing"
+    ],
+    "adjectives": [
+        "chaotic",
+        "unpredictable",
+        "durable"
+    ],
+    "description": "The Bagiennik is a Medium-sized aberration characterized by its chaotic nature and unique combat abilities. It has a strong build with notable Dexterity, allowing it to dodge attacks effectively. Its deep green skin is mottled with patterns that suggest its slippery oil powers, making it an eye-catching adversary.",
+    "memorable": "The combination of potent acid sprays that create slippery oil hazards and its ability to heal allies makes the Bagiennik a formidable and unpredictable foe.",
+    "goals": "Engage in combat, support allies with healing, and create hazardous environments.",
+    "relations": "Often found in the company of chaotic creatures or those that thrive in hazardous environments.",
+    "environment": "Typically encountered in wetlands or environments that allow for slippery terrain.",
+    "strengths": "Impressive Dexterity and healing capabilities, along with the ability to create difficult terrain with acid sprays.",
+    "weaknesses": "Low intelligence indicates limited strategic planning and decision-making in battle.",
+    "attacks": "Two claw attacks that deal slashing damage, combined with acid attacks that can affect multiple targets and the environment.",
+    "most_powerful_ability": "Acid Spray, which deals significant damage and creates hazardous conditions for foes.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 15, allowing it to detect threats effectively.",
+    "skills": "Skilled in Perception, enhancing its ability to notice hidden or approaching enemies.",
+    "additional_information": [
+        "Can heal allies by restoring hit points and curing diseases or poisons.",
+        "Creates slippery oil hazards that can knock foes prone.",
+        "Dexterous and strong, making it effective in melee combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic healer creature",
+        "acid and slashing monster",
+        "slimy aberration with healing powers",
+        "medium-sized chaotic enemy",
+        "Bagiennik abilities and traits"
+    ]
+}

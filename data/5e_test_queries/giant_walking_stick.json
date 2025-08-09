@@ -1,0 +1,25 @@
+{
+    "name": "Giant Walking Stick",
+    "queries": [
+        {
+            "query": "large forest beast with stealth and poison attack",
+            "variant": "big creature in the woods with stealth and poison attacks"
+        },
+        {
+            "query": "insect-like creature that can climb and fly in forests",
+            "variant": "bug-like monster that flies and climbs in wooded areas"
+        },
+        {
+            "query": "beast with a ram attack and ability to blend into vegetation",
+            "variant": "creature that can ram and hide in forest plants"
+        },
+        {
+            "query": "unintelligent creature that can incapacitate enemies nearby",
+            "variant": "monster with low intelligence that can stun foes around it"
+        },
+        {
+            "query": "Giant Walking Stick environmental behaviors and combat abilities",
+            "variant": "Giant Walking Stick's fighting skills and habitat"
+        }
+    ]
+}

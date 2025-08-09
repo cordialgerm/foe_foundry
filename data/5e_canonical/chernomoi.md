@@ -1,6 +1,8 @@
 <MonsterName/>Chernomoi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>32</HP>
 <summary>The Chernomoi is a tiny fey creature that embodies a versatile combination of cunning and magical abilities. With a neutral alignment, it plays a role that can be both mischievous and helpful, depending on the situation. The creature possesses a relatively high Armor Class of 14, bolstered by its substantial Hit Points of 32, which allows it to endure in combat. Its main strengths lie in agility and magical prowess, with an exceptional Dexterity score of 18, granting it a very good modifier of +4 for actions reliant on finesse and evasion. However, its Strength is notably low at 9, resulting in a very bad modifier of -1, meaning it struggles in physical confrontations where brute force is needed. The Chernomoi's challenge rating of 1 indicates that it poses a moderate threat to adventurers at its level, earning it 200 experience points when defeated.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the Chernomoi's spellcasting is another critical aspect of its combat s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chernomoi
 
 *Tiny* *Fey* *Neutral*
@@ -43,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Scimitar:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 - **Shriek (Recharge 5–6):** The chernomoi emits a loud shriek that is audible out to 100 feet. Each creature within 60 feet of the chernomoi and that can hear it must make a DC 13 Constitution saving throw, taking 10 (3d6) thunder damage on a failed save, or half as much damage on a successful one.
 - **Spellcasting:** The chernomoi casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 13):<br>At will: detect magic, mage hand, mending, message, prestidigitation<br>1/day each: detect poison and disease, dimension door
+</statblock>
 
 

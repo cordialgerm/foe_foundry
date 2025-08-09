@@ -1,6 +1,8 @@
 <MonsterName/>Scorpionfolk</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>52</HP>
 <summary>The Scorpionfolk is a large monstrosity that strikes a balance between physical power and tactical versatility in combat. With an armor class of 15 and 52 hit points, it is well-equipped to endure a moderate amount of damage, making it a challenging opponent, particularly suitable for encounters with characters around level 3. The creature excels in melee combat and has the versatility of ranged attacks using javelins. Its grapple ability can control the battlefield, but it relies on its close-range claw and sting attacks to inflict significant damage, especially when utilizing its poison effect. However, it possesses average intelligence and charisma, making it less effective in social interactions or spellcasting. Overall, the Scorpionfolk is a formidable foe with strengths in strength and dexterity, though it may struggle against foes adept at avoiding grapples or resisting poisons.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, the Scorpionfolk can use its sting, which is a melee weapon a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorpionfolk
 
 *Large* *Monstrosity*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and the target makes a DC 12 Constitution saving throw, taking 16 (3d10) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

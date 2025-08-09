@@ -1,0 +1,52 @@
+{
+    "name": "Mirror Hag",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 147,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 10 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "hag",
+        "illusionist"
+    ],
+    "adjectives": [
+        "chaotic",
+        "deceptive",
+        "manipulative"
+    ],
+    "description": "The Mirror Hag is a Medium-sized fey creature with a knack for chaotic deception, possessing a true form that can disturb and incapacitate foes.",
+    "memorable": "Her ability to confuse and manipulate enemies sets her apart, particularly through her unique 'Confounding Ugliness' ability.",
+    "goals": "Usually seeks to incapacitate or manipulate humanoid creatures for her own amusement or designs.",
+    "relations": "Often associated with other fey creatures and can be encountered alongside other hags.",
+    "environment": "Typically found in enchanted woods or locations imbued with magical properties.",
+    "strengths": "Possesses exceptional constitution and immunity to charm and fright effects, making her durable and resistant to crowd control.",
+    "weaknesses": "Average in physical attributes and can be countered if creatures successfully save against her abilities.",
+    "attacks": "The Mirror Hag can perform debilitating melee attacks with her bite and claw, each dealing both piercing/slashing and necrotic damage.",
+    "most_powerful_ability": "Confounding Ugliness can incapacitate humanoids who witness her true form, disrupting their actions.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing her to see in dim light as if it were bright light.",
+    "skills": null,
+    "additional_information": [
+        "Has resistance to thunder damage.",
+        "Immune to being charmed or frightened.",
+        "Can cast spells without material components, enhancing her tactical flexibility.",
+        "Can curse enemies, corrupting their forms with debilitating effects.",
+        "Utilizes deceptive abilities like disguise self to manipulate appearances."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Casts spells like disguise self and ray of enfeeblement at will, and dispel magic and locate creature once daily.",
+    "test_queries": [
+        "fey creature that manipulates appearance",
+        "hag with incapacitating abilities and curses",
+        "mirror hag that confuses humanoids",
+        "fey spellcaster with necrotic attacks",
+        "chaotic fey known for deception"
+    ]
+}

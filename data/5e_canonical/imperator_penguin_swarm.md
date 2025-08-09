@@ -1,6 +1,8 @@
 <MonsterName/>Imperator, Penguin Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural)</AC>
+<HP/>114</HP>
 <summary>The Imperator, a Penguin Swarm, is a Huge, unaligned beast that presents a unique challenge to adventurers. With its ability to swarm and occupy the same space as its enemies, it can overwhelm foes with sheer numbers and its swift movement across icy terrain makes it particularly dangerous in snowy encounters. Notably, it has a solid pool of hit points at 114, reflecting a strong capacity for endurance in battle. However, it has a relatively low Armor Class of 13, indicating that while it can withstand damage, it is susceptible to attacks, especially from diligent ranged attackers. The creature capitalizes on its resistances, allowing it to evade various damage types, and its condition immunities make it hard to control in combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Imperator, as a Penguin Swarm, is a formidable beast that thrives i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imperator, Penguin Swarm
 
 *Huge* *Beast* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Toboggan Charge (Recharge 5–6):** The swarm moves up to 20' in a straight line over ice or snow and can move through the space of any Large or smaller creature. The first time it enters a creature’s space during this move that creature must make a DC 14 Str save. On a failure a creature takes 10 (3d6) bludgeoning damage and 10 (3d6) piercing damage and is knocked prone. On a success a creature takes half the damage and isn’t knocked prone.
 
 
+</statblock>
 
 

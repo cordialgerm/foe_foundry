@@ -1,0 +1,25 @@
+{
+    "name": "Air Elemental",
+    "queries": [
+        {
+            "query": "swirling wind creature with flying ability",
+            "variant": "flying creature made of swirling wind"
+        },
+        {
+            "query": "translucent humanoid form that controls the air",
+            "variant": "humanoid shape made of air that controls winds"
+        },
+        {
+            "query": "fast elemental that can move through tight spaces",
+            "variant": "elemental that can quickly go through narrow areas"
+        },
+        {
+            "query": "air being immune to poison and resistant to thunder",
+            "variant": "creature made of air with poison immunity and thunder resistance"
+        },
+        {
+            "query": "elemental that creates whirlwinds and suffocates foes",
+            "variant": "creature that can generate whirlwinds and choke enemies"
+        }
+    ]
+}

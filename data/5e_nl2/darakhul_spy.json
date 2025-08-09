@@ -1,0 +1,52 @@
+{
+    "name": "Darakhul Spy",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walking speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "stealth",
+        "deception",
+        "combat"
+    ],
+    "adjectives": [
+        "devious",
+        "stealthy",
+        "manipulative",
+        "formidable"
+    ],
+    "description": "The Darakhul Spy is a Medium undead featuring a cunning and stealthy appearance, often cloaked in shadow.",
+    "memorable": "Its unique combination of stealth, deception, and combat versatility makes the Darakhul Spy particularly dangerous.",
+    "goals": "Typically seeks to manipulate situations, gather information, or ambush unsuspecting targets.",
+    "relations": "May be found allied with other undead or creatures of darkness, including ghouls and similar beings.",
+    "environment": "Often encountered in dark, urban environments or areas where stealth and deception thrive.",
+    "strengths": "Immunity to poison, resistance to necrotic damage, and strong stealth capabilities bolster its effectiveness.",
+    "weaknesses": "Sunlight sensitivity reduces its combat effectiveness and hampers its perception.",
+    "attacks": "Can perform a multiattack, delivering a Bite, Claw, and Shortsword strike with notable damage.",
+    "most_powerful_ability": "The Stench ability poisons nearby enemies, disrupting their tactics and potentially incapacitating them.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dimly lit conditions effectively.",
+    "skills": "Excels in Deception and Stealth, making it particularly effective at avoiding detection and manipulating situations.",
+    "additional_information": [
+        "Evasion allows it to avoid damage from dexterity-saving effects.",
+        "The Master of Disguise ability enhances deception checks when camouflaged as a living creature.",
+        "Sneak Attack provides additional damage when attacking from a position of advantage.",
+        "Turning Defiance grants it advantage on saves against turning effects.",
+        "Contracting darakhul fever can inflict serious harm on humanoid enemies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy undead master of disguise",
+        "darakhul creature that poisons enemies",
+        "undead spy skilled in deception and ambush",
+        "poisonous zombie with stealth abilities",
+        "manipulative creature found in urban settings"
+    ]
+}

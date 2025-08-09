@@ -1,0 +1,25 @@
+{
+    "name": "Lamassu",
+    "queries": [
+        {
+            "query": "large celestial guardian with healing powers and spellcasting abilities",
+            "variant": "big celestial protector with spells and healing abilities"
+        },
+        {
+            "query": "magical creature that protects allies and has strong defensive skills",
+            "variant": "magical being that defends companions and possesses powerful defenses"
+        },
+        {
+            "query": "lawful good creature with truesight and multiattack abilities",
+            "variant": "lawful good being with truesight and ability to perform multiple attacks"
+        },
+        {
+            "query": "celestial creature that can fly and uses legendary actions in combat",
+            "variant": "celestial being able to fly and utilizes legendary actions during fights"
+        },
+        {
+            "query": "protected magical creature immune to charm and exhaustion",
+            "variant": "magical defensive creature that can't be charmed or exhausted"
+        }
+    ]
+}

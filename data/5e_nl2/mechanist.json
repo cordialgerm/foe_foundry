@@ -1,0 +1,52 @@
+{
+    "name": "Mechanist",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any lineage",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "ac_description": "scale mail",
+    "cr": "2",
+    "movement": "30 ft.",
+    "role": "null",
+    "tags": [
+        "mechanical",
+        "artisan"
+    ],
+    "adjectives": [
+        "intelligent",
+        "skilled",
+        "versatile",
+        "durable"
+    ],
+    "description": "The Mechanist is a medium humanoid known for its proficiency with mechanical devices and tools, often depicted as a skilled artisan or engineer. It is adept in combat, manipulating constructs and gadgets to gain a tactical advantage.",
+    "memorable": "Its ability to produce Constructs that can aid in combat and its vast knowledge in tinkering tools set it apart.",
+    "goals": "To support allies through mechanical inventions and to excel in battles using constructs and tools.",
+    "relations": "Mechanists may command small Constructs and often work alongside other mechanical entities or artisans.",
+    "environment": "Typically found in workshops, battlefields, or areas where technology and machinery are present.",
+    "strengths": "Exceptional intelligence grants it double proficiency with tinker tools, making it a powerful engineer and combat support.",
+    "weaknesses": "Moderate physical strength and charisma, limiting direct confrontations and social interactions.",
+    "attacks": "Utilizes melee attacks with a Warhammer and ranged attacks with a Light Crossbow, effective both in close and ranged combat.",
+    "most_powerful_ability": "Quick Creation allows it to create Constructs that follow its commands, adding tactical options in battle.",
+    "equipment": null,
+    "senses": "Normal senses with a perception score of 10.",
+    "skills": "Proficient with tinker tools, enhancing its ability to repair and create mechanical devices.",
+    "additional_information": [
+        "Can restore hit points to friendly Constructs through Repair ability.",
+        "Releases a magnetic pulse to disorient attackers using metal weapons.",
+        "Capable of multiattacks to increase damage output.",
+        "Creates tiny Constructs that provide additional tactical support.",
+        "Strikes a balance between combat effectiveness and mechanical ingenuity."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical engineer humanoid",
+        "tinkerer that creates constructs",
+        "combat artisan with gadgets",
+        "mechanical monster with repair abilities",
+        "intelligent humanoid using tools"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Werecrocodile",
+    "queries": [
+        {
+            "query": "humanoid crocodile creature that can hold its breath for 15 minutes",
+            "variant": "creature that is a humanoid crocodile and holds its breath for up to 15 minutes"
+        },
+        {
+            "query": "crocodile-like monster that practices grappling tactics in water",
+            "variant": "monster resembling a crocodile that uses grappling techniques in water"
+        },
+        {
+            "query": "neutral evil lycanthrope with hybrid form and versatile melee attacks",
+            "variant": "lycanthrope that is neutral evil and has a hybrid form, using versatile attacks"
+        },
+        {
+            "query": "creature that switches between humanoid and crocodile forms and uses tail attacks",
+            "variant": "monster that can change from humanoid to crocodile and perform tail swipe attacks"
+        },
+        {
+            "query": "werecrocodile with curse ability and damage immunities to non-silvered weapons",
+            "variant": "werecrocodile that has a curse ability and immunities against non-silver weapons"
+        }
+    ]
+}

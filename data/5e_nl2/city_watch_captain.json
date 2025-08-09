@@ -1,0 +1,52 @@
+{
+    "name": "City Watch Captain",
+    "creature_type": "Humanoid",
+    "alignment": "Any Lawful Alignment",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. walking speed",
+    "role": "Leader",
+    "tags": [
+        "humanoid",
+        "lawful",
+        "tactical"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "supportive"
+    ],
+    "description": "The City Watch Captain is a sturdy humanoid wearing a chain shirt, wielding a rapier and a light crossbow, with an air of authority.",
+    "memorable": "Possesses the ability to command allies and create strategic advantages in battle.",
+    "goals": "Maintains law and order while leading a group of law enforcement.",
+    "relations": "Might serve alongside guards or other lawful creatures.",
+    "environment": "Urban areas or cities requiring law enforcement.",
+    "strengths": "Strong tactical insight and ability to influence combat dynamics with commands.",
+    "weaknesses": "Lack of powerful spellcasting capabilities.",
+    "attacks": "Uses rapier for melee attacks and light crossbow for ranged attacks, can force enemies to drop weapons.",
+    "most_powerful_ability": "Tactical Insight allows advantageous initiative rolls and coordination of allied actions.",
+    "equipment": "Chain shirt, rapier, and light crossbow.",
+    "senses": "Noteworthy perception skill with a +4 modifier, maintaining a decent awareness of surroundings.",
+    "skills": "Good at perceiving threats with a Perception skill modifier of +4.",
+    "additional_information": [
+        "Ability to deal extra damage with rapier close to enemies.",
+        "Can issue commands to up to two allies to react strategically.",
+        "Advantage on initiative rolls enhances team coordination.",
+        "Allows allies to take their turn based on its initiative.",
+        "Utilizes multiple attacks through special actions."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical humanoid city enforcer",
+        "lawful urban combat leader",
+        "capable captain with strategic commands",
+        "city watch officer with piercing rapier",
+        "formidable watch captain commanding allies"
+    ]
+}

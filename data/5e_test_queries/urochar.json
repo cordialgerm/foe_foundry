@@ -1,0 +1,25 @@
+{
+    "name": "Urochar",
+    "queries": [
+        {
+            "query": "huge monster with tentacles and psychic abilities",
+            "variant": "huge monster with psyhic powers and tentacles"
+        },
+        {
+            "query": "aberration that can teleport and fear enemies",
+            "variant": "aberration capable of teleporting and instilling fear"
+        },
+        {
+            "query": "monster that grapples and paralyzes with its gaze",
+            "variant": "monster that can paralyze foes and grapple"
+        },
+        {
+            "query": "chaotic evil creature immune to fear and with high HP",
+            "variant": "chaos-driven evil creature with high hit points and immune to fright"
+        },
+        {
+            "query": "creature with rubbery body that climbs on ceilings",
+            "variant": "monster with a rubbery form that can traverse ceilings"
+        }
+    ]
+}

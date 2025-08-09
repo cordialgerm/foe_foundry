@@ -1,0 +1,54 @@
+{
+    "name": "Arcamag",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 30 ft., walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "manipulative",
+        "spellcaster",
+        "shapeshifter"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "intriguing",
+        "manipulative"
+    ],
+    "description": "The Arcamag is a tiny monstrosity with a cunning and deceptive nature, capable of blending in as an ordinary object when motionless. It has exceptional charisma and is adept at manipulating spellcasters through attachment.",
+    "memorable": "Its ability to shape-shift into small objects and attach itself to spellcasters makes the Arcamag a unique and intriguing threat.",
+    "goals": "Often focuses on manipulating spellcasters and can significantly impact their abilities.",
+    "relations": "Can be found alongside spellcasters and may serve as a nuisance or tactical advantage.",
+    "environment": "Commonly encountered in areas where spellcasters gather, such as magical academies or enchanted forests.",
+    "strengths": "Excels in stealth and manipulation, making it difficult to detect and a potent threat to spellcasters.",
+    "weaknesses": "Low strength and intelligence, making it weak in direct combat situations.",
+    "attacks": "The Arcamag can perform a melee attack to attach itself to a spellcaster, imposing psychic damage dependence on the target's spellcaster level rather than dealing direct damage.",
+    "most_powerful_ability": "Shapechanger ability allows it to polymorph into small objects, enhancing its stealth and deceptive capabilities.",
+    "equipment": null,
+    "senses": null,
+    "skills": "The Arcamag has a good stealth skill, making it easy for it to hide from targets.",
+    "additional_information": [
+        "Camouflage ability grants advantage on Stealth checks while attached to a host.",
+        "Can teleport once per day to reposition itself.",
+        "Psychic damage inflicted on the host upon detachment depends on their spellcaster level.",
+        "Remains an ordinary object while motionless, making it hard to identify.",
+        "Has an average passive perception score, but relies more on stealth."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "manipulative tiny monster",
+        "stealthy creature that attaches to spellcasters",
+        "shapeshifter that causes psychic damage",
+        "Cunning creature that affects spellcasters",
+        "deceptive monstrosity with camouflage"
+    ]
+}

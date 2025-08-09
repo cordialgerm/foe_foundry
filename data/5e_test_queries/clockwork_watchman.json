@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Watchman",
+    "queries": [
+        {
+            "query": "mechanical guardian that uses a net and halberd",
+            "variant": "guardian that is mechanical and uses a net as well as a halberd"
+        },
+        {
+            "query": "medium construct with damage immunities and magic resistance",
+            "variant": "construct that is medium-sized and has magic resistance along with damage immunities"
+        },
+        {
+            "query": "sentinel with strong physical defense and weak mental abilities",
+            "variant": "sentinel that has weak mental capabilities but strong physical defenses"
+        },
+        {
+            "query": "clockwork creature that excels in physical tasks and lacks social skills",
+            "variant": "creature made of clockwork that is good at physical tasks but lacks social abilities"
+        },
+        {
+            "query": "battlefield control from a mechanical entity with slashing attacks",
+            "variant": "mechanical entity that controls the battlefield and has slashing attacks"
+        }
+    ]
+}

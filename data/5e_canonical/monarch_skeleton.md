@@ -1,6 +1,8 @@
 <MonsterName/>Monarch Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>142</HP>
 <summary>The Monarch Skeleton is a formidable undead creature with a neutral evil alignment. Serving as a tactical leader for other skeletons, it possesses strengths in combat through its high strength and constitution scores, as well as its ability to coordinate attacks with allies. With an armor class of 16 and a substantial pool of 142 hit points, it can withstand a fair amount of punishment. The skeleton is particularly frightening due to its potent necrotic attacks, which can not only deal damage but also reduce the maximum hit points of its victims, making it a prime threat in battle. However, it is vulnerable to radiant damage and has no offensive capabilities against magical attacks made with silver. Its challenge rating of 9 indicates that it can pose a significant challenge to a well-prepared party.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The "Grasp of the Grave" is a special attack that requires a recharge on a roll 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monarch Skeleton
 
 *Medium* *Undead* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Grasp of the Grave (Recharge 5-6):** Each non-skeleton creature within 30 feet of the monarch must succeed on a DC 16 Dexterity saving throw or be restrained by ghostly, skeletal hands for 1 minute. A restrained target takes 10 (3d6) necrotic damage at the start of each of its turns. A creature, including the target, can take its action to break the ghostly restraints by succeeding on a DC 16 Strength check.
 
 
+</statblock>
 
 

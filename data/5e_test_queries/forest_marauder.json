@@ -1,0 +1,25 @@
+{
+    "name": "Forest Marauder",
+    "queries": [
+        {
+            "query": "large giant with stealth abilities that lives in forests",
+            "variant": "big giant that can hide and exists in wooded areas"
+        },
+        {
+            "query": "forest dwelling monster with sunlight sensitivity and melee attacks",
+            "variant": "monster from the woods with a weakness to sunlight and strong close combat skills"
+        },
+        {
+            "query": "chaotic evil giant that can ambush in wooded environments",
+            "variant": "evil giant that surprises in forests and uses stealth tactics"
+        },
+        {
+            "query": "creature with high durability and powerful forest attacks",
+            "variant": "monster with strong defense and lethal strikes in a forested area"
+        },
+        {
+            "query": "giant with darkvision and skill in hiding among trees",
+            "variant": "large creature that can see in the dark and is good at concealing itself in forests"
+        }
+    ]
+}

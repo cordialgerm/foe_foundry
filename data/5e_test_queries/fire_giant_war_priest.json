@@ -1,0 +1,25 @@
+{
+    "name": "Fire Giant War Priest",
+    "queries": [
+        {
+            "query": "large fire-themed giant that can cast spells",
+            "variant": "big fire giant who can use magic"
+        },
+        {
+            "query": "strong giant with fire immunity that hates cold",
+            "variant": "powerful giant immune to fire and weak to cold"
+        },
+        {
+            "query": "giant that uses a greatsword and breathes fire",
+            "variant": "giant with a sword that can use flames"
+        },
+        {
+            "query": "massive creature with high armor class and flame abilities",
+            "variant": "huge creature with strong defense and fire powers"
+        },
+        {
+            "query": "monster that performs area attacks and can ignite weapons",
+            "variant": "creature that does area damage and can set weapons on fire"
+        }
+    ]
+}

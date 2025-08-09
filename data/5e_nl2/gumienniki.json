@@ -1,0 +1,52 @@
+{
+    "name": "Gumienniki",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft. walking speed, doubled speed in grassy areas",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "shapechanger",
+        "agile"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "versatile"
+    ],
+    "description": "The Gumienniki is a small, agile fiend with the ability to change into a Tiny housecat, which enhances its stealth and evasion capabilities.",
+    "memorable": "Its ability to shape-shift and blind opponents through its Fiendish Blink makes it a unique threat.",
+    "goals": "Often seeks to manipulate and disrupt opponents while remaining elusive.",
+    "relations": "Related to other fiendish creatures and often encountered with malevolent entities.",
+    "environment": "Typically found in dark, hidden spaces, often in grassy or rural areas.",
+    "strengths": "High Dexterity enhances its acrobatics and stealth, making it hard to hit.",
+    "weaknesses": "Low hit points and weaker in close combat due to lower Strength and Constitution.",
+    "attacks": "Uses a Flaming Hand Scythe to deliver slashing and fire damage.",
+    "most_powerful_ability": "Fiendish Blink can blind creatures, significantly reducing their combat effectiveness.",
+    "senses": "Possesses darkvision with a range of 60 feet.",
+    "skills": "Highly skilled in acrobatics and stealth, both at +5.",
+    "additional_information": [
+        "Immune to poison damage and resistant to cold, fire, and lightning.",
+        "Can double its speed in grassy terrains.",
+        "Taunting Cackle reduces enemy effectiveness after a miss.",
+        "Shapechanger ability allows it to transform into a housecat.",
+        "Has average Wisdom, making it vulnerable to deception."
+    ],
+    "damage_types": [
+        "fire",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fiend that can transform into a cat",
+        "cunning creature that blinds opponents",
+        "agile monster with fire damage attacks",
+        "shape-shifting fiend in grassy areas",
+        "monster that taunts opponents after missing attacks"
+    ]
+}

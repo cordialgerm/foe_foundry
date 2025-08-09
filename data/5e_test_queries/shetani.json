@@ -1,0 +1,25 @@
+{
+    "name": "Shetani",
+    "queries": [
+        {
+            "query": "medium fiend that can change shape and casts necrotic spells",
+            "variant": "fiend of medium size with shape-changing ability and necrotic spellcasting"
+        },
+        {
+            "query": "creature with darkvision that draws moisture from opponents",
+            "variant": "being able to see in the dark and able to extract moisture from enemies"
+        },
+        {
+            "query": "neutral evil fiend with high AC and magical resistance",
+            "variant": "fiendish monster of neutral evil alignment with strong armor class and resistance to magic"
+        },
+        {
+            "query": "powerful flying fiend that can inflict exhaustion",
+            "variant": "strong fiend that flies and has the ability to cause exhaustion"
+        },
+        {
+            "query": "Shetani that performs multiattacks and casts spells",
+            "variant": "multiattack capable Shetani that also has spellcasting abilities"
+        }
+    ]
+}

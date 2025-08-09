@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Pugilist",
+    "queries": [
+        {
+            "query": "mechanical fighter that doesn't eat or sleep",
+            "variant": "machine fighter that doesn eat or sleeps"
+        },
+        {
+            "query": "medium-sized construct with high Strength and good defense",
+            "variant": "medium construct with high strength and solid defense"
+        },
+        {
+            "query": "combat robot immune to poison and psychic damage",
+            "variant": "fighting robot immune to poison and psychic type damage"
+        },
+        {
+            "query": "Durable automaton that uses melee attacks in battle",
+            "variant": "tough automaton using melee attacks during battle"
+        },
+        {
+            "query": "pugilist construct that can protect allies from ranged attacks",
+            "variant": "construct pugilist that can shield allies from ranged attacks"
+        }
+    ]
+}

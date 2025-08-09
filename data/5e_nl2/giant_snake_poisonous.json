@@ -1,0 +1,52 @@
+{
+    "name": "Giant Poisonous Snake",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 14,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft., swim 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "snake",
+        "poisonous",
+        "ambusher",
+        "beast"
+    ],
+    "adjectives": [
+        "stealthy",
+        "agile",
+        "venomous"
+    ],
+    "description": "The Giant Poisonous Snake is a medium-sized snake, characterized by its agility and ability to ambush prey. It has a sleek body suited for swimming and stealthy movements.",
+    "memorable": "This snake can incapacitate foes with its venomous bite, presenting a significant danger despite its low challenge rating.",
+    "goals": "Hunt and ambush smaller creatures for food.",
+    "relations": "Can often be found in environments populated by other small woodland or aquatic creatures.",
+    "environment": "Commonly found in forests, swamps, or areas with water sources.",
+    "strengths": "High stealth capabilities and a deadly poisonous bite.",
+    "weaknesses": "Low physical strength and intelligence, reliant on ambush tactics.",
+    "attacks": "Utilizes its venomous bite, which inflicts damage and potential poison effects on targets.",
+    "most_powerful_ability": "Bite attack that delivers both piercing and poison damage to its prey.",
+    "senses": "Has keen senses that allow it to detect movements from a short distance.",
+    "skills": "Possesses a stealth skill modifier of +4, making it quite effective at hiding.",
+    "additional_information": [
+        "Can swim effectively, adding versatility to its hunting grounds.",
+        "Can retaliate with a Reflexive Nip when attacked in melee.",
+        "Average hit points but can deal significant damage with its bite.",
+        "Relies on ambush tactics due to low overall strength.",
+        "Effective against unprepared adventurers due to its poisonous capabilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy aquatic venomous serpent",
+        "agile snake with poisonous bite",
+        "ambushing medium-sized venomous snake",
+        "fast swimming poisonous snake",
+        "quick striking snake with poison attack"
+    ]
+}

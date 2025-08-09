@@ -1,0 +1,25 @@
+{
+    "name": "Accursed Spirit Naga",
+    "queries": [
+        {
+            "query": "amphibious monster with strong magical abilities",
+            "variant": "monster that can breathe both air and water with strong magic powers"
+        },
+        {
+            "query": "large creature with solid defense and poison attacks",
+            "variant": "big creature with robust defense and poisonous attacks"
+        },
+        {
+            "query": "Naga that can charm enemies and has lightning spells",
+            "variant": "creature that charms foes and casts lightning spells"
+        },
+        {
+            "query": "monstrosity living in water and land with multiple attack types",
+            "variant": "monster inhabiting both water and land with various attack methods"
+        },
+        {
+            "query": "versatile combat monster with strong saving throws",
+            "variant": "adaptable battle creature with powerful saving throw abilities"
+        }
+    ]
+}

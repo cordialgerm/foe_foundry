@@ -1,0 +1,25 @@
+{
+    "name": "Psychic Vampire",
+    "queries": [
+        {
+            "query": "medium undead creature with high mental powers and sunlight vulnerability",
+            "variant": "medium undead monster with strong psychic abilities and weakness to sunlight"
+        },
+        {
+            "query": "monster that can levitate and attacks with psychic damage",
+            "variant": "creature that levitates and inflicts psychic damage with its attacks"
+        },
+        {
+            "query": "lawful evil vampire that can summon allies and has strong saving throws",
+            "variant": "vampire of lawful evil alignment that summons allies and has excellent saving throws"
+        },
+        {
+            "query": "creature that manipulates minds and climbs walls effortlessly",
+            "variant": "monster that controls minds and scales walls easily"
+        },
+        {
+            "query": "psychic vampire that can incapacitate opponents with mental attacks",
+            "variant": "vampire with psychic abilities that incapacitates foes using mental attacks"
+        }
+    ]
+}

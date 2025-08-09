@@ -1,0 +1,25 @@
+{
+    "name": "Fallen Planetar",
+    "queries": [
+        {
+            "query": "powerful celestial creature with flaming sword and healing abilities",
+            "variant": "powerful celstial creature that has a healing ability and flaming sword"
+        },
+        {
+            "query": "large celestial monster that can detect lies and heal allies",
+            "variant": "large monster from the celestial realm that heals allies and can see lies"
+        },
+        {
+            "query": "combat-focused celestial being that thrives in battle and resists necrotic damage",
+            "variant": "combat-ready celestial being that resists necrotic and excels in battle"
+        },
+        {
+            "query": "creature that uses lightning attacks and has high hit points",
+            "variant": "monster that has high hit points and employs lightning strikes"
+        },
+        {
+            "query": "flying celestial guardian vulnerable to radiant damage",
+            "variant": "flying guardian celestial that is weak against radiant attack"
+        }
+    ]
+}

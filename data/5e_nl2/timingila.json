@@ -1,0 +1,53 @@
+{
+    "name": "Timingila",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "gargantuan",
+    "hp": 232,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "swim 60 ft, walk 0 ft",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "destruction",
+        "chaos"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "chaotic",
+        "destructive"
+    ],
+    "description": "The Timingila is a gargantuan monstrosity that embodies chaos and destruction, thriving in aquatic environments. It has exceptional strength and large, powerful melee attacks, featuring a bite that can swallow foes and bludgeoning strikes from its flippers and tail.",
+    "memorable": "Its ability to destroy structures and vehicles with ease makes it a formidable threat, along with its Resonating Roar that can affect creatures even inside vehicles.",
+    "goals": "To wreak havoc and destruction in its aquatic domain.",
+    "relations": "Often found in chaotic seas and might be a master over smaller aquatic creatures.",
+    "environment": "Aquatic environments, primarily in oceans or seas.",
+    "strengths": "Outstanding physical power and effective at demolishing structures, along with a fear-inducing area attack.",
+    "weaknesses": "Significantly clumsy on land due to low Dexterity and limited mobility due to its water breathing.",
+    "attacks": "Multiple melee attacks including a strong bite that can swallow creatures, tail slap that can knock targets prone, and powerful flipper strikes.",
+    "most_powerful_ability": "Resonating Roar creates a 90-foot cone of thunderous sound, dealing significant damage and deafening creatures.",
+    "equipment": null,
+    "senses": "Blindsight allows it to perceive its surroundings even while submerged.",
+    "skills": "Noteworthy perception skills make it aware of its environment, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Immunities to cold and thunder damage.",
+        "Can only breathe underwater, limiting it to aquatic combat.",
+        "Has a powerful Siege Monster ability for demolishing structures.",
+        "Can cause massive waves that affect vehicles upon breaching.",
+        "Highly effective in close-quarters aquatic combat."
+    ],
+    "damage_types": [
+        "thunder",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan creature that destroys structures",
+        "aquatic monster with thunder attack",
+        "chaotic water creature with swallow ability",
+        "powerful sea beast that causes waves",
+        "creature that can only breathe underwater"
+    ]
+}

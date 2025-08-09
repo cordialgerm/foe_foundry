@@ -1,0 +1,51 @@
+{
+    "name": "Astralsupial",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "multitalented",
+        "swift",
+        "versatile"
+    ],
+    "adjectives": [
+        "nimble",
+        "agile",
+        "unique",
+        "tactical"
+    ],
+    "description": "The Astralsupial is a medium-sized beast characterized by its blend of speed and agility. Its apposable thumbs grant it extraordinary climbing capabilities, and its natural armor provides decent protection.",
+    "memorable": "Its ability to pull various objects from an extradimensional pouch and the unique effects they can cause, from blinding to poisoning, makes it an interesting and unpredictable combatant.",
+    "goals": "To explore its environment, engage in combat, and utilize its abilities to outmaneuver foes.",
+    "relations": "It could encounter other beasts or creatures in its territory and may interact with adventurers seeking its unique abilities.",
+    "environment": "Forests and areas with plenty of climbing opportunities and hiding spots.",
+    "strengths": "High dexterity allows for effective dodging and nimble maneuvers; the Astral Pouch offers versatile tactical options.",
+    "weaknesses": "Low intelligence and strength limit its combat tactics and physical capabilities.",
+    "attacks": "It can make two claw attacks, dealing 10 slashing damage, and utilize its unique Astral Pouch ability to affect surroundings and creatures.",
+    "most_powerful_ability": "The Astral Pouch allows the Astralsupial to create varying effects using different objects, affecting multiple creatures at once.",
+    "senses": "Keen hearing and smell grant it an advantage on Wisdom (Perception) checks related to these senses.",
+    "skills": "It has average perception skills, making it somewhat aware of its surroundings.",
+    "additional_information": [
+        "The Astralsupial can teleport up to 30 feet twice per day with its Astral Traveler ability.",
+        "When reduced to low health, it can feign death to surprise attackers.",
+        "Its claw attacks are reliable in close-range combat due to its good dexterity.",
+        "The creature is immune to the effects of its own Astral Pouch.",
+        "Requires strategic thinking from players to fully utilize its capabilities in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "versatile agile beast",
+        "creature with extradimensional pouch",
+        "nimble climbing monster",
+        "beast that feigns death",
+        "unique combat abilities beast"
+    ]
+}

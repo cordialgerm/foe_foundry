@@ -1,0 +1,25 @@
+{
+    "name": "Musk Deer",
+    "queries": [
+        {
+            "query": "tiny agile deer that emits potent musk in combat",
+            "variant": "tiny agile musk-emitting deer for battles"
+        },
+        {
+            "query": "creature with high dexterity and low strength living in the wild",
+            "variant": "wild creature with low strength and high dexterity"
+        },
+        {
+            "query": "beast that can poison opponents with musk and swiftly escape",
+            "variant": "beast capable of poisoning enemies with its musk and escaping quickly"
+        },
+        {
+            "query": "fragile creature known for evasion and musk ability",
+            "variant": "delicate creature famous for its evasiveness and musk skills"
+        },
+        {
+            "query": "small unaligned creature that uses musk to hinder foes",
+            "variant": "unaligned small creature hindering foes using musk"
+        }
+    ]
+}

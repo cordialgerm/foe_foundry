@@ -1,0 +1,25 @@
+{
+    "name": "Knight",
+    "queries": [
+        {
+            "query": "heavily armored warrior with a code of chivalry in melee combat",
+            "variant": "armor-clad fighter who follows a code of honor during close combat"
+        },
+        {
+            "query": "humanoid combatant that can inspire allies and has a high armor class",
+            "variant": "warrior that boosts teammates and has strong defensive ability with armor"
+        },
+        {
+            "query": "knight that uses a greatsword and excels in physical confrontation",
+            "variant": "fighter proficient with a greatsword and skilled in melee battles"
+        },
+        {
+            "query": "noble warrior type skilled in both mounted and foot combat",
+            "variant": "noble fighter adept at riding and engaging on the ground"
+        },
+        {
+            "query": "medium humanoid with a brave ability that withstands fear effects",
+            "variant": "humanoid fighter with an ability that resists fear and is of medium size"
+        }
+    ]
+}

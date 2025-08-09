@@ -1,0 +1,25 @@
+{
+    "name": "Incinis",
+    "queries": [
+        {
+            "query": "large fire elemental that causes damage upon contact",
+            "variant": "large fire creature that deals damage when touched"
+        },
+        {
+            "query": "elemental creature immune to fire and poison attacks",
+            "variant": "creature that is immune to fire and poison damage"
+        },
+        {
+            "query": "tactical magma monster with high Dexterity and Constitution",
+            "variant": "tactical magma elemental with good Dexterity and Constitution"
+        },
+        {
+            "query": "brutal fire creature with magma form ability",
+            "variant": "savage fire elemental with magma form power"
+        },
+        {
+            "query": "elemental that uses multiattack and wave of magma",
+            "variant": "creature that employs multiattack and a wave of magma ability"
+        }
+    ]
+}

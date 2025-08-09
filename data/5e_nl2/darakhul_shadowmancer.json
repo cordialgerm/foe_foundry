@@ -1,0 +1,54 @@
+{
+    "name": "Darakhul Shadowmancer",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "stealth",
+        "deception"
+    ],
+    "adjectives": [
+        "cunning",
+        "dark",
+        "magical",
+        "stealthy"
+    ],
+    "description": "The Darakhul Shadowmancer is a Medium undead creature embodying dark magic and cunning. It wears a prepared disguise and utilizes shadowy evasion to remain hidden, enhancing its ambush capabilities.",
+    "memorable": "It blends stealth and high-level spellcasting, using shadows and deception effectively in combat.",
+    "goals": "To manipulate shadows and ambush foes while employing its dark spells.",
+    "relations": "May be encountered alongside other undead, particularly ghouls.",
+    "environment": "Typically found in dark, shadowy places, avoiding bright sunlight.",
+    "strengths": "Resilient to poison and necrotic damage; adept in Arcana and Stealth skills.",
+    "weaknesses": "Aversion to sunlight and reliance on darkness for abilities.",
+    "attacks": "Utilizes a melee bite attack that can inflict darakhul fever and a dagger for piercing damage.",
+    "most_powerful_ability": "Has powerful spellcasting abilities as a 9th-level wizard, capable of manipulating shadows and creating illusions.",
+    "equipment": null,
+    "senses": "It possesses darkvision up to 60 feet.",
+    "skills": "Skilled in Arcana and Investigation, making it adept at deciphering magical phenomena.",
+    "additional_information": [
+        "Master of Disguise allows it to appear as a living creature.",
+        "Shadow Stealth enables hiding in dim light or darkness as a bonus action.",
+        "Stench ability poisons creatures nearby.",
+        "Sunlight Sensitivity imposes disadvantages in bright light.",
+        "Turning Defiance grants it advantages against effects that turn undead."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Functions as a 9th-level wizard with a diverse spell list including powerful offensive and utility spells.",
+    "test_queries": [
+        "dark magic undead creature",
+        "stealthy spellcaster in shadows",
+        "undead with disguise and stench",
+        "necrotic resistant ambush monster",
+        "cunning undead that avoids sunlight"
+    ]
+}

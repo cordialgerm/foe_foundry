@@ -1,0 +1,50 @@
+{
+    "name": "Forest Falcon",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "forest",
+        "hunter"
+    ],
+    "adjectives": [
+        "agile",
+        "sharp-beaked",
+        "keen-sighted"
+    ],
+    "description": "The Forest Falcon is a medium-sized beast with a sharp beak and a graceful silhouette, soaring skillfully through the forest canopies.",
+    "memorable": "Its falcon dive ability allows for swift and lethal attacks, especially effective in ambush situations.",
+    "goals": "Hunts for prey, utilizing its keen senses and agility.",
+    "relations": "May coexist in environments with other forest creatures; not a pack animal.",
+    "environment": "Typically found in forested areas where it can use its flying capabilities.",
+    "strengths": "Excellent flying speed and keen sight make it a formidable aerial hunter.",
+    "weaknesses": "Low strength and hit points make it vulnerable in direct combat.",
+    "attacks": "Uses its beak to deal piercing damage, capable of inflicting significant damage for its size.",
+    "most_powerful_ability": "Falcon Dive: Advantage on attack rolls after diving, inflicting extra damage upon a successful hit.",
+    "equipment": null,
+    "senses": "Has passive perception of 14, demonstrating keen awareness of its surroundings.",
+    "skills": "Specializes in perception, allowing it to effectively spot potential threats or prey.",
+    "additional_information": [
+        "Effective ambush predator in forest environments.",
+        "Lacks inherent biases or motivations due to its unaligned nature.",
+        "Capable of surprising opponents with high mobility."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile forest flying predator",
+        "sharp-beaked hunter of the forest",
+        "falcon that dives for lethal attacks",
+        "keen sight bird living in trees",
+        "medium beast with quick aerial strikes"
+    ]
+}

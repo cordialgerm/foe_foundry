@@ -1,6 +1,8 @@
 <MonsterName/>Oliphaunt</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>148</HP>
 <summary>The Oliphaunt is a gargantuan beast known for its immense strength and formidable presence on the battlefield. Unaligned and powerful, this creature is often used as a living tank in combat scenarios, leveraging its size to trample foes and grapple enemies with its trunk. With a high challenge rating of 8, the Oliphaunt can deliver significant damage while boasting considerable hit points at 148, making it a durable opponent. Its low Dexterity indicates it is somewhat cumbersome, but its exceptional Strength allows it to execute devastating melee attacks. The creature lacks significant magical abilities or skills, emphasizing its role as a brute force combatant rather than a tactical or stealthy one. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Oliphaunt can execute a Multiattack, using its trunk first, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oliphaunt
 
 *Gargantuan* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Tusk Sweep (Recharge 5-6):** The oliphaunt sweeps its tusks in a wide arc. Each creature in a 20-foot cube must make a DC 17 Dexterity saving throw, taking 35 (10d6) bludgeoning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

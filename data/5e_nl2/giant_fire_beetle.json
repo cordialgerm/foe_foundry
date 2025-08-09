@@ -1,0 +1,50 @@
+{
+    "name": "Giant Fire Beetle",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 4,
+    "ac": 13,
+    "srd": true,
+    "cr": "0",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "beetle",
+        "bioluminescent",
+        "insect"
+    ],
+    "adjectives": [
+        "glowing",
+        "small",
+        "benign"
+    ],
+    "description": "A Giant Fire Beetle is a small, insect-like creature that emits a faint glow from glands near its head, often found in dark caves and forests.",
+    "memorable": "Unique ability to provide illumination in dark environments.",
+    "goals": "To feed on plants or small creatures and defend itself if provoked.",
+    "relations": "Often found in the company of other insects; may be encountered with miners or adventurers.",
+    "environment": "Commonly found underground and in dark forests.",
+    "strengths": "Emits light that aids vision in darkness; can be captured for use as a light source.",
+    "weaknesses": "Low hit points and poor combat ability make it vulnerable.",
+    "attacks": "Can make a Bite attack dealing minimal slashing damage.",
+    "most_powerful_ability": "Fire Glands allow it to shed bright light in a 10-foot radius for navigation.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, allowing it to detect creatures and objects without relying on vision.",
+    "skills": null,
+    "additional_information": [
+        "Bioluminescent glow aids in navigation for adventurers.",
+        "Glands continue to emit light for 1d6 days after the beetle dies.",
+        "Regarded as harmless and often non-aggressive.",
+        "A favored creature for those exploring dark environments.",
+        "Has very low intelligence and awareness."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small glowing beetle that provides light",
+        "harmless bioluminescent insect in caves",
+        "beetle with fire glands for illumination",
+        "creature that emits light in dark forests",
+        "tiny insect-like creature with weak bite"
+    ]
+}

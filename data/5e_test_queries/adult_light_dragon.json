@@ -1,0 +1,25 @@
+{
+    "name": "Adult Light Dragon",
+    "queries": [
+        {
+            "query": "huge dragon that represents light and goodness",
+            "variant": "big dragon embodying goodness and light"
+        },
+        {
+            "query": "dragon with radiant breath and blinding abilities",
+            "variant": "dragon that can blind and has radiant breath"
+        },
+        {
+            "query": "majestic dragon that can fly and has high hit points",
+            "variant": "grand dragon capable of flight with a lot of hit points"
+        },
+        {
+            "query": "creature immune to radiant damage that lives in ethereal plane",
+            "variant": "being that cannot take radiant damage and resides in ethereal space"
+        },
+        {
+            "query": "powerful dragon with the ability to intimidate and attack multiple foes",
+            "variant": "strong dragon capable of scaring opponents and striking multiple enemies"
+        }
+    ]
+}

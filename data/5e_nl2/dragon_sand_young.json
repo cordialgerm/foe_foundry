@@ -1,0 +1,52 @@
+{
+    "name": "Sand Young Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 189,
+    "ac": 19,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft., burrow 20 ft., fly 80 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "elemental",
+        "ambusher"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "debilitating"
+    ],
+    "description": "The Sand Young Dragon is a large, stealthy creature with a neutral evil alignment, known for its agility in sandy environments and potent physical attacks.",
+    "memorable": "It has a devastating breath weapon and the ability to inflict disadvantage on its foes.",
+    "goals": "To ambush and overpower its enemies, leveraging its agile and stealthy nature.",
+    "relations": "Similar to other dragons, it may encounter or conflict with other elemental creatures.",
+    "environment": "Typically found in desert regions or sandy terrains.",
+    "strengths": "Immune to fire damage and resistant to piercing damage, with strong physical attributes.",
+    "weaknesses": "Requires only half the sustenance of a typical dragon, which can be a limitation.",
+    "attacks": "Multiattack with a Bite that deals piercing damage and Claws that deal slashing damage.",
+    "most_powerful_ability": "Breath Weapon, capable of dealing both piercing and fire damage in a devastating cone.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet and darkvision up to 120 feet.",
+    "skills": "Has a keen perception with a passive score of 21, making it difficult to surprise.",
+    "additional_information": [
+        "Has the Sand Camouflage ability for stealth in sandy areas.",
+        "Can inflict exhaustion with its Sand Blast breath attack.",
+        "Its Stinging Sand ability can debilitate targets on melee hits.",
+        "Combines agile movement with potent combat abilities.",
+        "Possesses a high armor class for added resilience."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy large dragon in sandy environments",
+        "dragon that inflicts disadvantage with sand attack",
+        "elemental dragon with breath weapon",
+        "agile dragon that ambushes its foes",
+        "Sand Young Dragon combat abilities"
+    ]
+}

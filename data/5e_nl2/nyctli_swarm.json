@@ -1,0 +1,51 @@
+{
+    "name": "Nyctli Swarm",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 110,
+    "ac": 14,
+    "srd": false,
+    "cr": "10",
+    "movement": "fly 40 ft., hover, walk 10 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "fey",
+        "swarm",
+        "chaotic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "chaotic",
+        "swirling"
+    ],
+    "description": "The Nyctli Swarm is a large, swirling mass of chaotic fey energy, embodying a malevolent and disorienting presence in combat.",
+    "memorable": "It can occupy other creatures' spaces and inflicts necrotic damage along with blindness, creating a horrifying ambush.",
+    "goals": "To ambush and disorient its foes using chaotic tactics.",
+    "relations": "Often encountered in the company of other chaotic fey creatures.",
+    "environment": "Typically found in areas of dark woods or shadowy forests.",
+    "strengths": "High Dexterity makes it difficult to hit, and it has resistances to common forms of physical attacks.",
+    "weaknesses": "Cannot heal or gain temporary hit points, making it vulnerable to sustained assault.",
+    "attacks": "Utilizes Stingers that deal piercing and necrotic damage, with potential to blind foes.",
+    "most_powerful_ability": "Swarm allows it to occupy the same space as foes, enhancing its ambush capabilities.",
+    "senses": "Possesses a passive perception of 16, allowing it to detect threats effectively.",
+    "skills": "Exhibits a high aptitude in perception with a +6 modifier.",
+    "additional_information": [
+        "Immune to conditions such as charmed, frightened, and stunned",
+        "Can cast the spell Fear once per day",
+        "Excels in ambush tactics",
+        "Swarm's movement can create confusion in combat",
+        "Resists bludgeoning, piercing, and slashing damage"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Can cast the spell Fear once per day without material components.",
+    "test_queries": [
+        "large malevolent fey ambush",
+        "swirling dark swarm that causes blindness",
+        "fey creature with swarm tactics and necrotic damage",
+        "chaotic flying creature immune to charm",
+        "ambushing swarm that uses fear spells"
+    ]
+}

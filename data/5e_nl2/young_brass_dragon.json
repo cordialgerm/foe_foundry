@@ -1,0 +1,52 @@
+{
+    "name": "Young Brass Dragon (Metallic)",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Large",
+    "hp": 110,
+    "ac": 17,
+    "srd": true,
+    "cr": "6",
+    "movement": "40 ft., burrow 20 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "metallic",
+        "brass"
+    ],
+    "adjectives": [
+        "sociable",
+        "inquisitive",
+        "playful"
+    ],
+    "description": "A large dragon with warm, gleaming metallic scales, known for its friendly demeanor and playfulness.",
+    "memorable": "Has breath weapons that can deal fire damage or induce sleep, along with a unique ability to suffocate foes.",
+    "goals": "Collects stories, converses with travelers, defends its hoard when threatened.",
+    "relations": "Might be found alongside other dragons or magical creatures in its territory.",
+    "environment": "Typically found in arid deserts or savannas.",
+    "strengths": "Fire immunity and self-sufficient, needing only a quart of water and a pound of food per day.",
+    "weaknesses": "Lacks strategic intelligence compared to other dragons.",
+    "attacks": "Multiattack includes a powerful bite and two claw attacks, with an option for sleep-inducing breath weapon.",
+    "most_powerful_ability": "Fire Breath and Sleep Breath can drastically change the outcome of encounters.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 30 feet, and has keen senses which enhance its perception.",
+    "skills": "Excels in arcana, history, nature, and perception, making it knowledgeable and aware.",
+    "additional_information": [
+        "Can communicate effectively due to high Charisma.",
+        "Uses its powers for persuasion and social interactions.",
+        "Can change shape into a Beast or Humanoid form.",
+        "An adept spellcaster with innate abilities.",
+        "Embodying trickster-like characteristics."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast spells like 'comprehend languages' without material components.",
+    "test_queries": [
+        "friendly giant dragon with fire breath",
+        "large dragon that can put you to sleep",
+        "dragon that loves conversation and sunlight",
+        "brass dragon with multiple breath weapons",
+        "sociable dragon in arid deserts"
+    ]
+}

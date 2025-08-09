@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Rats",
+    "queries": [
+        {
+            "query": "mass of tiny creatures that reside in urban areas and can spread disease",
+            "variant": "swarm of small animals that live in city places and spread sickness"
+        },
+        {
+            "query": "vermin swarm that attacks in enclosed spaces and is resistant to physical damage",
+            "variant": "rat swarm that fights in tight areas and can withstand physical hits"
+        },
+        {
+            "query": "agile rats that can occupy the same space as a target and have keen senses",
+            "variant": "quick rats that can fit in the same area as a victim and have sharp senses"
+        },
+        {
+            "query": "creature that overwhelms enemies with bites and is commonly found in sewers",
+            "variant": "monster that floods foes with bites and is often seen in drainage systems"
+        },
+        {
+            "query": "small swarm of beasts that is a nuisance and can inflict piercing damage",
+            "variant": "tiny horde of creatures that is bothersome and can deal stabbing damage"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Ulnorya",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 119,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 50 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "replication",
+        "stealth"
+    ],
+    "adjectives": [
+        "deceptive",
+        "tactical",
+        "resilient"
+    ],
+    "description": "The Ulnorya is a large aberration known for its ability to become invisible and its significant piercing and poison damage, featuring a formidable Bite and multiple tentacle attacks.",
+    "memorable": "Its ability to replicate itself into two identical copies complicates combat strategies for opponents, providing a unique tactical threat.",
+    "goals": "To ambush unsuspecting opponents and survive combat encounters through deception and resilience.",
+    "relations": "An aberrant creature that could possibly be encountered alongside other malevolent beings of the same origin.",
+    "environment": "Typically found in dark, secluded areas where it can ambush its prey.",
+    "strengths": "Immunity to poison effects and resistance to bludgeoning damage makes it durable in encounters.",
+    "weaknesses": "While it has resistances, it is still susceptible to other forms of damage.",
+    "attacks": "Can make four attacks in a round, utilizing its Bite, Claw, and Tentacle for significant damage including the threat of paralysis.",
+    "most_powerful_ability": "The Replicate ability allows it to create two identical copies, making it a formidable and confusing opponent in battle.",
+    "equipment": null,
+    "senses": "Possesses passive Perception of 16, enabling it to sense threats effectively.",
+    "skills": "Excels in Stealth (+10) and Acrobatics (+7), enhancing its ability to hide and move undetected.",
+    "additional_information": [
+        "Immutable Form ensures it cannot be transformed by spells or effects.",
+        "Photoadaptive Hide grants it invisibility if it remains still.",
+        "Multiattack allows it to execute multiple types of physical attacks in a single turn.",
+        "Replicates into two identical forms for tactical advantage.",
+        "Can recombine if the two copies come within close proximity."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large ambush creature with cloning ability",
+        "stealthy monster that can split into copies",
+        "poisonous creature that attacks with tentacles",
+        "invisible aberration known for melee attacks",
+        "deceptive monster with powerful bite and claws"
+    ]
+}

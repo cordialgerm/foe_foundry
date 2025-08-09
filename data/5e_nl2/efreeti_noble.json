@@ -1,0 +1,53 @@
+{
+    "name": "Efreeti Noble",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 344,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft., fly 60 ft.",
+    "role": "Artillery",
+    "tags": [
+        "fire",
+        "elemental",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "powerful",
+        "fiery",
+        "resilient",
+        "agile"
+    ],
+    "description": "The Efreeti Noble is a powerful Large elemental with a strong presence, characterized by its fiery attributes and notable strength.",
+    "memorable": "It can summon a wall of magical flame and has powerful fire-based spells.",
+    "goals": "Often seeks to dominate and manipulate the battlefield through fire and spells.",
+    "relations": "Related to other fire elementals, potentially commanding lesser efreet.",
+    "environment": "Typically found in the Elemental Plane of Fire or areas associated with fire.",
+    "strengths": "Immunity to fire damage and powerful innate spellcasting.",
+    "weaknesses": "Vulnerable to non-fire damage types, lacks defensive immunities.",
+    "attacks": "Can deliver lethal brass sword slashes and devastating fire attacks from a distance.",
+    "most_powerful_ability": "Creates a Fiery Wall that inflicts fire damage and obstructs movement.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and has a passive perception of 17.",
+    "skills": "Excels in athletics, intimidation, and perception.",
+    "additional_information": [
+        "Can alter its size and form at will.",
+        "Can summon a fire elemental with conjure elemental.",
+        "Capable of plane shifting to the Elemental Plane of Fire.",
+        "Has high Strength and Constitution.",
+        "Uses spells strategically in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma, allowing it to cast spells without material components.",
+    "test_queries": [
+        "large elemental creature casting fire spells",
+        "powerful fire elemental with wall of flames",
+        "efreeti with immunity to fire damage",
+        "spellcasting noble that manipulates fire",
+        "fiery creature that can alter its form"
+    ]
+}

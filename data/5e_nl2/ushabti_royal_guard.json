@@ -1,0 +1,52 @@
+{
+    "name": "Ushabti Royal Guard",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 168,
+    "ac": 19,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "royal guard",
+        "guardian",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "autonomous"
+    ],
+    "description": "The Ushabti Royal Guard is a large construct resembling a funerary statue, serving as a formidable guardian. It's durable in combat with mechanical features and equipped with necrotic-infused weapons.",
+    "memorable": "Its ability to drain healing from nearby creatures and control the battlefield makes it a unique threat.",
+    "goals": "To protect ancient treasures or tombs from intruders.",
+    "relations": "Often found in the company of treasures, magical artifacts, and mummified creatures.",
+    "environment": "Typically positioned in ancient tombs or treasure vaults.",
+    "strengths": "Immunities to nonmagical damage and several conditions, along with high physical and mental resilience.",
+    "weaknesses": "Low Charisma score reflecting its lack of social skills.",
+    "attacks": "Utilizes necrotic-infused melee attacks with its Khopesh and Medjai\u2019s Scepter, capable of inflicting significant damage.",
+    "most_powerful_ability": "Enervating Surge: It unleashes waves of necrotic energy, damaging and exhausting nearby creatures.",
+    "equipment": "Khopesh and Medjai's Scepter, both enhancing its offensive capabilities.",
+    "senses": "Passive Perception of 19 allows it to effectively detect magical phenomena.",
+    "skills": "High proficiency in Arcana, History, and a strong Perception score enhances its battlefield awareness.",
+    "additional_information": [
+        "Functions autonomously without food, air, or sleep.",
+        "Immunity to spells that alter its form.",
+        "Can camouflage itself as a statue for ambush.",
+        "Gains benefits from nearby healing spells to sustain itself.",
+        "Legendary resistance makes it difficult to incapacitate."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful guardian that drains healing",
+        "necrotic damage construct that resembles a statue",
+        "tomb guardian with magical weapon attacks",
+        "autonomous guardian with impressive defenses",
+        "Ushabti creature with area control abilities"
+    ]
+}

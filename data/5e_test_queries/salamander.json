@@ -1,0 +1,25 @@
+{
+    "name": "Salamander",
+    "queries": [
+        {
+            "query": "serpentine fire creature with heated body",
+            "variant": "fire serpentine creature with heated body"
+        },
+        {
+            "query": "large elemental that attacks with a spear and tail",
+            "variant": "large elemental using a spear and tail attacks"
+        },
+        {
+            "query": "creature from the Elemental Plane of Fire that grapples foes",
+            "variant": "fire elemental creature that grapples enemies"
+        },
+        {
+            "query": "intelligent fiery creature that thrives in volcanic regions",
+            "variant": "cunning fire creature that lives in volcanoes"
+        },
+        {
+            "query": "dangerous monster with fire immunity and cold vulnerability",
+            "variant": "dangerous creature immune to fire and vulnerable to cold"
+        }
+    ]
+}

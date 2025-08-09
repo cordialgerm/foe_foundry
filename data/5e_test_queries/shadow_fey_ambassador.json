@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Fey Ambassador",
+    "queries": [
+        {
+            "query": "dark humanoid with persuasion and charm abilities",
+            "variant": "dark humanoid creature with persuasive and charming skills"
+        },
+        {
+            "query": "creature that manipulates shadows and is lawful evil",
+            "variant": "being that controls shadows and embodies lawful evil"
+        },
+        {
+            "query": "humanoid with high dexterity and social manipulation skills",
+            "variant": "humanoid possessing exceptional dexterity and skills in social manipulation"
+        },
+        {
+            "query": "shadow fey with ability to instill fear and charm others",
+            "variant": "shadow fey that can create fear and charm beings"
+        },
+        {
+            "query": "lawful evil humanoid that uses darkness in combat and social scenarios",
+            "variant": "humanoid aligned with lawful evil that employs darkness in battles and social encounters"
+        }
+    ]
+}

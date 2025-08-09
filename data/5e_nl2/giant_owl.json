@@ -1,0 +1,51 @@
+{
+    "name": "Giant Owl",
+    "creature_type": "Beast",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 19,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "walk 5 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "avian",
+        "predator",
+        "natural"
+    ],
+    "adjectives": [
+        "large",
+        "intelligent",
+        "perceptive",
+        "stealthy"
+    ],
+    "description": "A Giant Owl is an enormous bird of prey with a wingspan that allows it to soar silently through the night. Its large eyes grant exceptional vision and its sharp talons and beak make it a deadly predator.",
+    "memorable": "This creature combines its silent flight with exceptional vision and keen senses, making it a valuable scout and ambusher.",
+    "goals": "Hunts for large prey and may act as a guardian or companion for humanoids.",
+    "relations": "Often befriends fey and other sylvan creatures.",
+    "environment": "Ancient forests or high mountain ranges.",
+    "strengths": "Exceptional mobility with the Flyby ability and acute perception with advantage on perception checks.",
+    "weaknesses": "Low hit points and modest armor class make it vulnerable in sustained combat.",
+    "attacks": "Talons attack offers decent slashing damage with good accuracy.",
+    "most_powerful_ability": "Puffed Up Display grants disadvantage on attack rolls against it, enhancing its defensive capabilities.",
+    "senses": "Possesses heightened perception with a passive perception of 15, and up to 20 when using keen hearing or sight.",
+    "skills": "Proficient in Stealth, enabling it to remain hidden effectively.",
+    "additional_information": [
+        "Allows for stealthy ambushes and quick repositioning during combat.",
+        "Has strong ties and potential bonding with adventurers.",
+        "Known for its silent flight, which aids in stalking prey.",
+        "Can evade opportunity attacks due to its Flyby ability.",
+        "Often misunderstood due to its low intelligence, relying on instinct."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large silent night predator",
+        "bird of prey with keen senses",
+        "elusive giant owl that ambushes",
+        "predator with silent flight abilities",
+        "guardian owl of ancient forests"
+    ]
+}

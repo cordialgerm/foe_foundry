@@ -1,0 +1,49 @@
+{
+    "name": "Chain Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 119,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft., climb 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "golem",
+        "chain",
+        "construct"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "mechanical"
+    ],
+    "description": "The Chain Golem is a Large Construct composed of heavy chains, featuring a mechanical design that emphasizes its durability and strength. It grapples and restrains foes, showcasing formidable physical attacks.",
+    "memorable": "Its ability to inflict Infernal Tetanus and its resistance to magical effects make it a daunting opponent in combat.",
+    "goals": "Typically employed by those who seek to harness its mechanical might for combat or protection.",
+    "relations": "Often created by wizards or artificers, it may serve under powerful entities or be found guarding treasures.",
+    "environment": "Can be found in dungeons or locations where constructs are utilized for protection.",
+    "strengths": "Immune to a variety of conditions, strong physical attacks, and Magic Resistance provide exceptional resilience in battle.",
+    "weaknesses": "Low intelligence and charisma scores limit its tactical sophistication and social interactions.",
+    "attacks": "Multiattack with two Chain attacks that deal slashing damage and can infect targets with Infernal Tetanus, grappling them.",
+    "most_powerful_ability": "Infernal Tetanus, which inflicts debilitating symptoms and can potentially paralyze targets.",
+    "senses": "It possesses darkvision and is immune to various conditions, enhancing its combat effectiveness.",
+    "skills": "Has a passive perception of 10, signifying average awareness.",
+    "additional_information": [
+        "Construct Nature allows it to function without biological needs.",
+        "Immutable Form makes it immune to spells or effects that alter its form.",
+        "Magic Weapons ensure its attacks can bypass resistance to non-magical damage.",
+        "Imprison ability can restrain and deal damage to captured foes.",
+        "Resistance to many conditions makes it exceptionally resilient."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical beast that restrains foes",
+        "golem with chain attacks and disease",
+        "durable construct immune to spells",
+        "brutal melee attacker with Infernal Tetanus",
+        "Large construct that grapples and imprisons"
+    ]
+}

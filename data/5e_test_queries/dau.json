@@ -1,0 +1,25 @@
+{
+    "name": "Dau",
+    "queries": [
+        {
+            "query": "small fey creature that deceives using illusions and magic",
+            "variant": "fey creature that is small and uses magic illusions to deceive"
+        },
+        {
+            "query": "agile fey that regenerates health through necrotic damage",
+            "variant": "fey with agility that heals itself using necrotic damage"
+        },
+        {
+            "query": "creature with magic resistance that excels in deception and stealth",
+            "variant": "being proficient in deception and stealth with magic resistance"
+        },
+        {
+            "query": "chaotic neutral fey capable of teleporting and manipulating illusions",
+            "variant": "neutral chaotic fey that can teleport and manipulate illusions"
+        },
+        {
+            "query": "magically resistant small creature with multiple spellcasting abilities",
+            "variant": "small being with magica resistance and various spellcasting powers"
+        }
+    ]
+}

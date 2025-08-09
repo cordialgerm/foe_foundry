@@ -1,0 +1,50 @@
+{
+    "name": "Rum Gremlin",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaotic",
+        "mischievous",
+        "poison"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "cunning",
+        "stealthy"
+    ],
+    "description": "A tiny fey creature with a mischievous appearance, embodying chaos and causing havoc.",
+    "memorable": "Unique ability to incapacitate opponents with its Aura of Drunkenness.",
+    "goals": "To create chaos and incapacitate victims through drunkenness.",
+    "relations": "Related to other fey creatures, potentially interacts with drunks or mischief-makers.",
+    "environment": "Typically found in areas where mischief brews, like taverns or festivity grounds.",
+    "strengths": "Skilled in stealth and has magical resistance.",
+    "weaknesses": "Low hit points and armor class make it vulnerable in direct confrontations.",
+    "attacks": "Can attack with claws or bite, dealing piercing or slashing damage.",
+    "most_powerful_ability": "Aura of Drunkenness that poisons creatures within its radius.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a range of 120 feet.",
+    "skills": "Highly skilled in stealth with a +5 modifier.",
+    "additional_information": [
+        "Immune to the poisoned condition.",
+        "Exhibits chaotic behavior in battle.",
+        "Utilizes spells to control combat scenarios."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast prestidigitation at will and command three times a day.",
+    "test_queries": [
+        "tiny fey that causes drunkenness",
+        "chaotic mischievous gremlin in taverns",
+        "stealthy creature with aura of drunkenness",
+        "rum gremlin unique magical abilities",
+        "fey creature with poison aura"
+    ]
+}

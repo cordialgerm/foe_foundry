@@ -1,0 +1,53 @@
+{
+    "name": "Gearforged Templar",
+    "creature_type": "Construct",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 18,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "combatant",
+        "construct"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "defensive"
+    ],
+    "description": "The Gearforged Templar is a Medium-sized constructed being representing order and law, formidable with natural armor and a solid defensive capability.",
+    "memorable": "It can deal devastating area damage with its Whirlwind ability and functions without the need for air, food, drink, or sleep.",
+    "goals": "To maintain order and enforce law in its surroundings, acting as a guardian.",
+    "relations": "May serve other constructs or command lesser automatons in its quest to maintain order.",
+    "environment": "Typically found in places of justice, such as fortresses or within the command of lawful entities.",
+    "strengths": "Resistant to nonmagical physical damage and immune to various conditions and damage types.",
+    "weaknesses": "Low Dexterity resulting in poor agility and initiative, average intelligence and charisma.",
+    "attacks": "Can perform multiple attacks with its Greatsword or Javelins, capable of pushing enemies back and dealing significant slashing or piercing damage.",
+    "most_powerful_ability": "Whirlwind, an area-of-effect attack that deals considerable slashing damage to nearby enemies.",
+    "equipment": "Greatsword and Javelins.",
+    "senses": "Has a passive Perception of 13, allowing it to notice surroundings competently.",
+    "skills": "None notably skilled, relying on its constructed nature and combat abilities.",
+    "additional_information": [
+        "Functions without air, food, drink, or sleep.",
+        "Can enhance its AC against an incoming melee attack using its Parry ability.",
+        "Multiattack feature allows it to strike multiple times in one turn.",
+        "Whirlwind can hit multiple targets, making it effective in controlling combat.",
+        "Can make immediate attacks when enemies enter its reach."
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct guardian with multiattack",
+        "formidable being without need for food",
+        "lawful neutral battle automaton",
+        "area attack slashing damage guardian",
+        "resilient construct with defensive abilities"
+    ]
+}

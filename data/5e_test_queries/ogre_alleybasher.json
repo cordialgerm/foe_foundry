@@ -1,0 +1,25 @@
+{
+    "name": "Ogre, Alleybasher",
+    "queries": [
+        {
+            "query": "large chaotic evil giant known for brute strength and combat skills",
+            "variant": "chaotic evil large giant with brute strength and skills in combat"
+        },
+        {
+            "query": "ogre with darkvision that communicates in Common and Giant",
+            "variant": "ogre that can see in the dark and speaks Common and Giant"
+        },
+        {
+            "query": "intimidating giant with a special ability to knock opponents prone",
+            "variant": "fearsome giant that can use its strength to knock enemies down"
+        },
+        {
+            "query": "monster with high Strength and low Intelligence using Fist and Throw Brick attacks",
+            "variant": "creature with strong attacks and poor reasoning skills using Fist and Throw Brick"
+        },
+        {
+            "query": "Ogre that uses rocks and sand to blind enemies in combat",
+            "variant": "ogre using sand and stones to blind foes during battle"
+        }
+    ]
+}

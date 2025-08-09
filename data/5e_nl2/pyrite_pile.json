@@ -1,0 +1,50 @@
+{
+    "name": "Pyrite Pile",
+    "creature_type": "Elemental",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 136,
+    "ac": 18,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "ambush",
+        "illusion",
+        "gold"
+    ],
+    "adjectives": [
+        "deceptive",
+        "intimidating",
+        "golden",
+        "strong"
+    ],
+    "description": "The Pyrite Pile resembles a mound of gold nuggets, making it elusive and deceptive.",
+    "memorable": "Its ability to charm nearby creatures creates a unique battlefield dynamic.",
+    "goals": "To lure adventurers with its appearance and absorb their valuables.",
+    "relations": "Related to other elemental creatures and potential treasure guardians.",
+    "environment": "Often found in caves or areas rich in precious metals.",
+    "strengths": "High hit points and strong melee attacks; immune to many conditions.",
+    "weaknesses": "Low Intelligence and Wisdom make it easy to outsmart.",
+    "attacks": "Relentless slam attacks that grapple opponents and deal ongoing damage.",
+    "most_powerful_ability": "Gold Fever charms nearby humanoids, enticing them to approach.",
+    "equipment": null,
+    "senses": "Has tremorsense up to 60 feet, allowing it to detect movement.",
+    "skills": "Has poor perception skills, making it less aware of its surroundings.",
+    "additional_information": [
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage.",
+        "Immune to exhaustion, paralysis, petrification, poisoning, and unconsciousness.",
+        "Can absorb and destroy precious metals to regain hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "golden mound monster with charm ability",
+        "deceptive elemental resembling gold",
+        "creature that consumes metal and gold",
+        "strong monster that grapples and deals damage",
+        "ambushing elemental with treasure allure"
+    ]
+}

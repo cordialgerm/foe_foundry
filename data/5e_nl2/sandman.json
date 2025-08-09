@@ -1,0 +1,54 @@
+{
+    "name": "Sandman",
+    "creature_type": "Celestial",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "dream manipulator",
+        "nightmare",
+        "illusion"
+    ],
+    "adjectives": [
+        "ethereal",
+        "chaotic",
+        "charming",
+        "formidable"
+    ],
+    "description": "The Sandman is a medium-sized celestial creature with an ethereal appearance, embodying the essence of dreams and nightmares. It features a fluid and shifting form that blends in with the illusionary theme of its abilities.",
+    "memorable": "The Sandman can manipulate dreams, causing both nightmares and pleasant dreams, while also rendering targets unconscious with magical sand.",
+    "goals": "To influence the dreams of others, spreading both fear and comfort, as is in line with its chaotic nature.",
+    "relations": "Often encountered with other dream-related entities or creatures that deal with illusions and manipulation.",
+    "environment": "Typically found in areas associated with dreams, sleep, or hidden sanctuaries.",
+    "strengths": "Excels in stealth and magical resilience, making it difficult to target with spells and physical attacks.",
+    "weaknesses": "Vulnerable to magical forces and nonmagical attacks that can penetrate its defenses.",
+    "attacks": "Can make two claw attacks that deal slashing and psychic damage, with a chance to inflict blindness and nightmares on targets.",
+    "most_powerful_ability": "The Encourage Dreams ability can inflict psychic damage and awaken creatures from sleep, instilling fear or providing healing based on their saving throw.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet, allowing it to see through illusions and detect hidden foes.",
+    "skills": null,
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "The Stuff of Dreams ability negates the effects of critical hits.",
+        "Damage immunities include poison and psychic damage.",
+        "Can affect multiple targets with its Encourage Dreams ability.",
+        "The Dreamer's Sand action can incapacitate foes for 10 minutes."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ethereal creature that manipulates dreams",
+        "nightmare-inducing celestial with truesight",
+        "magical sand that puts creatures to sleep",
+        "charming celestial known for psychic damage",
+        "dream manipulator that inflicts nightmares"
+    ]
+}

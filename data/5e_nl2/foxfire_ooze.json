@@ -1,0 +1,56 @@
+{
+    "name": "Foxfire Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 126,
+    "ac": 9,
+    "srd": false,
+    "cr": "10",
+    "movement": "climb 20 ft., fly 10 ft., swim 20 ft., walk 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ooze",
+        "lightning",
+        "ambusher",
+        "durable"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "amorphous",
+        "electrifying"
+    ],
+    "description": "The Foxfire Ooze is a large, amorphous creature that can absorb and deal considerable damage, with a vibrant, otherworldly glow. It has a viscous, gelatinous form that allows it to contort and move through tight spaces.",
+    "memorable": "Its Lightning Storm ability can devastate opponents when touched or attacked with metal weapons.",
+    "goals": "To ambush unsuspecting foes and dominate close-quarter encounters.",
+    "relations": "May be found in cavernous areas or damp environments alongside other oozes or creatures drawn to its electric properties.",
+    "environment": "Often found in dark, damp locations such as caves or ruins.",
+    "strengths": "High hit points, immunity to numerous damage types, and ability to surprise opponents.",
+    "weaknesses": "Low Armor Class and vulnerability to cold damage.",
+    "attacks": "Makes three pseudopod attacks, each delivering significant bludgeoning and lightning damage.",
+    "most_powerful_ability": "Lightning Storm, which can deal area damage and punish metal-wielding attackers.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, enabling it to perceive its surroundings without relying on sight.",
+    "skills": "Typically lacks proficiency in any skills due to low Intelligence and Wisdom.",
+    "additional_information": [
+        "Ambusher ability grants advantage on attacks against surprised foes.",
+        "Can move through spaces as narrow as 1 inch without restriction.",
+        "Resistant to bludgeoning, piercing, and slashing from nonmagical attacks.",
+        "Immune to being blinded, charmed, deafened, exhausted, frightened, or prone.",
+        "Has exceptional Constitution for durability."
+    ],
+    "damage_types": [
+        "lightning",
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "amorphous lightning creature in caves",
+        "durable ooze with electrifying attacks",
+        "creature that ambushes with lightning",
+        "mobility and surprise in close quarters",
+        "gelatinous monster with lightning storm ability"
+    ]
+}

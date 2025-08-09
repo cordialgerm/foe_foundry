@@ -1,0 +1,55 @@
+{
+    "name": "Adult Bronze Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Huge",
+    "hp": 212,
+    "ac": 19,
+    "srd": true,
+    "cr": "15",
+    "movement": "40 ft., fly 80 ft., swim 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "metallic",
+        "amphibious",
+        "legendary",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "noble",
+        "majestic",
+        "formidable",
+        "wise"
+    ],
+    "description": "The Adult Bronze Dragon has shimmering bronze scales, crest-like horns, and a powerful, proud appearance. It's often associated with coastal regions and possesses the ability to breathe both air and water.",
+    "memorable": "This dragon commands respect with its mastery over lightning, ability to manipulate water, and its role as a guardian of coastal realms.",
+    "goals": "The dragon typically seeks to protect coastal regions, uphold justice, and combat threats to aquatic life and communities.",
+    "relations": "Adult Bronze Dragons may ally with good-aligned adventurers or serve as protectors to aquatic and coastal creatures.",
+    "environment": "Commonly found near coastlines and large bodies of water.",
+    "strengths": "Possesses strong melee attacks, a devastating breath weapon, the ability to control water, and formidable innate spellcasting.",
+    "weaknesses": "Although tough, its reliance on maintaining higher AC may make it vulnerable to high damage output.",
+    "attacks": "Bite and claw attacks are its primary melee options, supplemented by powerful breath weapons and a tail attack capable of pushing enemies away.",
+    "most_powerful_ability": "Lightning Breath, which unleashes a devastating line of electricity, can incapacitate or severely injure multiple foes.",
+    "equipment": null,
+    "senses": "The dragon has blindsight up to 60 feet and a passive perception of 22, allowing it to detect hidden enemies effectively.",
+    "skills": "It excels in Insight and Perception, both with modifiers of +8, demonstrating its awareness and discernment capabilities.",
+    "additional_information": [
+        "Innate spellcasting includes fog cloud, speak with animals, commune with nature, and speak with plants.",
+        "Legendary Resistance allows the dragon to ignore failed saving throws three times per day.",
+        "Can change its shape into a humanoid or beast form.",
+        "Frightful Presence can instill fear in nearby creatures.",
+        "The Oracle of the Coast ability grants it the power to predict weather and cast scrying."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Can innately cast spells related to nature and water, enhancing its versatility.",
+    "test_queries": [
+        "majestic water dragon",
+        "lightning breath dragon",
+        "coastal guardian dragon",
+        "formidable bronze dragon",
+        "legendary dragon abilities"
+    ]
+}

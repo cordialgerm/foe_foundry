@@ -1,0 +1,53 @@
+{
+    "name": "Clockwork Sentinel",
+    "creature_type": "Construct",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 18,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 35 feet",
+    "role": "Defender",
+    "tags": [
+        "construct",
+        "guardian",
+        "automaton"
+    ],
+    "adjectives": [
+        "mechanical",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Clockwork Sentinel is a Medium construct designed as a formidable guardian with robust armor, featuring a metallic body that resembles a suit of armor.",
+    "memorable": "Immunity to conditions like blinded, charmed, and frightened, making it a reliable front-line entity.",
+    "goals": "To serve as a guardian or combatant, protecting its designated area.",
+    "relations": "Could be related to other constructs or servitors designed for protection.",
+    "environment": "Commonly found in fortresses, castles, or as guardians of treasures.",
+    "strengths": "Highly resilient due to condition immunities and significant hit points.",
+    "weaknesses": "Limited mobility and low mental capabilities in strategy or social interactions.",
+    "attacks": "Utilizes a halberd for melee attacks with a long reach and powerful multiattack capability.",
+    "most_powerful_ability": "Calculated Sweep allows it to attack multiple targets in close proximity, creating substantial damage potential.",
+    "equipment": "Halberd for melee combat.",
+    "senses": "Possesses blindsight up to 120 feet, allowing it to sense movement effectively within that range.",
+    "skills": "Has proficiency in athletics, allowing it to perform physical tasks with greater effectiveness.",
+    "additional_information": [
+        "False Appearance feature that allows it to blend with normal armor when motionless.",
+        "Clockwork Nature immunity to diseases and extremes of biological function.",
+        "Immutable Form makes it immune to alteration or transformation by magical effects.",
+        "Can use Overclock to reposition quickly during combat.",
+        "Parry ability enhances its defensive capabilities."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical guardian with mobility issues",
+        "formidable sentinel immune to conditions",
+        "automaton with multiattack halberd strikes",
+        "construct that blends in as armor",
+        "Clockwork Sentinel features and abilities"
+    ]
+}

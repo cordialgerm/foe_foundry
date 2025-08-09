@@ -1,0 +1,25 @@
+{
+    "name": "Alseid, Woad Warrior",
+    "queries": [
+        {
+            "query": "nature-loving monster with speed and intimidation skills",
+            "variant": "monster that loves nature with intimidation and speed skills"
+        },
+        {
+            "query": "medium-sized warrior that uses dye bombs in combat",
+            "variant": "warrior of medium size that uses dye bombs during fights"
+        },
+        {
+            "query": "forest-dwelling monster with no tracks and great attack speed",
+            "variant": "monster that lives in forests and leaves no tracks with fast attack capabilities"
+        },
+        {
+            "query": "chaotic neutral monstrosity with high dexterity and perception",
+            "variant": "monstrosity that is chaotic neutral with high perception and dexterity"
+        },
+        {
+            "query": "Alseid that can mark enemies and has multiattack abilities",
+            "variant": "Alseid that marks foes and can perform multiattacks"
+        }
+    ]
+}

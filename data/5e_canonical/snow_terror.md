@@ -1,6 +1,8 @@
 <MonsterName/>Snow Terror</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>16</AC>
+<HP/>127</HP>
 <summary>The Snow Terror is a large fiend with a chaotic evil alignment, designed to instill fear and chaos among its foes. With a body that resembles a snow creature, it possesses potent abilities that make it formidable in battle. Its strengths lie in its high Dexterity and multiple damage immunities, allowing it to evade attacks effectively while inflicting significant damage with its biting attacks. However, it is vulnerable to fire damage, which can exploit one of its few weaknesses. Being a shapechanger, the Snow Terror can adapt its form to intimidate opponents or to disguise itself, adding an element of strategy to its encounters. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Its "Horrifying Visage" action forces each non-undead creature within 60 feet th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snow Terror
 
 *Large* *Fiend* *chaotic evil*
@@ -57,5 +60,6 @@ While in the form of the creature it most recently killed, creatures that knew t
 - **Horrifying Visage:** Each non-undead creature within 60 feet of the snow terror that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to this snow terror’s Horrifying Visage for the next 24 hours.
 
 
+</statblock>
 
 

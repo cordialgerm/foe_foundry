@@ -1,0 +1,50 @@
+{
+    "name": "Shoreline Scrapper",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 93,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "swim 20 ft., walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "beast",
+        "coastal",
+        "magnetic"
+    ],
+    "adjectives": [
+        "versatile",
+        "formidable",
+        "large"
+    ],
+    "description": "The Shoreline Scrapper is a large beast with a tough exterior, covered in a magnetic shell that can immobilize metal objects and creatures nearby. It has powerful claws for melee attacks and a robust physique.",
+    "memorable": "Its ability to control metal items and creatures around it creates a unique battlefield dynamic.",
+    "goals": "Hindering enemies and dominating coastal environments.",
+    "relations": "May be encountered with other coastal creatures, particularly those adapted to aquatic life.",
+    "environment": "Typically found in coastal areas where land meets water.",
+    "strengths": "Good physical power, substantial resilience, and strong area control through its unique magnetic abilities.",
+    "weaknesses": "Low intelligence and charisma, making it poor at strategy and social interaction.",
+    "attacks": "Capable of making two claw attacks in a single turn, dealing significant slashing damage, alongside its Magnetic Pulse that restrains and pulls opponents.",
+    "most_powerful_ability": "Magnetic Shell, which restrains metal-wearing creatures and objects within its vicinity.",
+    "equipment": null,
+    "senses": "Can detect the location of metal objects within 60 feet through its Metal Sense ability.",
+    "skills": "Possesses a basic survival skill that aids it in its natural coastal habitat.",
+    "additional_information": [
+        "Breathes air and water, allowing it to thrive both underwater and on land.",
+        "Items made of gold and silver are unaffected by its Magnetic Shell ability.",
+        "Can temporarily increase its Armor Class by retracting into its shell as a defensive measure.",
+        "A strong presence on the battlefield due to its control tactics.",
+        "Effective against metal-wearing foes due to its unique abilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "coastal beast with magnetic abilities",
+        "large creature that immobilizes metal items",
+        "strong claw attacks and magnetic control",
+        "marine beast that can breathe underwater",
+        "creature that hinders enemies with magnetic shell"
+    ]
+}

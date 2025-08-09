@@ -1,0 +1,25 @@
+{
+    "name": "Bulette",
+    "queries": [
+        {
+            "query": "huge burrowing monster with armored hide that attacks from underground",
+            "variant": "massive armored creature that burrows underground and ambushes enemies"
+        },
+        {
+            "query": "predatory land shark capable of jumping great distances and burrowing",
+            "variant": "land shark predator that can jump far and dig underground"
+        },
+        {
+            "query": "strong monster that uses a deadly leap to attack unsuspecting foes",
+            "variant": "powerful creature that leaps to surprise and damages opponents"
+        },
+        {
+            "query": "large monstrosity that inflicts damage with bite and leap attacks",
+            "variant": "big monstrous creature that uses bite and leap attacks to deal damage"
+        },
+        {
+            "query": "armored predator with low intelligence that protects its territory fiercely",
+            "variant": "armored hunting creature with a poor intellect that defends its domain aggressively"
+        }
+    ]
+}

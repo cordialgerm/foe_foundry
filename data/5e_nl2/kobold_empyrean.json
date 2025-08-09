@@ -1,0 +1,57 @@
+{
+    "name": "Kobold, Empyrean",
+    "creature_type": "Celestial",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 150,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft. fly 90 ft.",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "support",
+        "draconic"
+    ],
+    "adjectives": [
+        "small",
+        "formidable",
+        "resilient",
+        "inspiring"
+    ],
+    "description": "The Kobold Empyrean is a small celestial being that blends celestial and draconic powers, serving as a source of strength and inspiration for other kobolds, adorned with robust armor and possessing formidable abilities.",
+    "memorable": "Its ability to reincarnate fallen kobolds as wyrmling dragons dramatically shifts the tides of battle.",
+    "goals": "To inspire and support its fellow kobolds and excel in combat.",
+    "relations": "Often accompanies other kobolds, enhancing their capabilities and coordinating their efforts.",
+    "environment": "Prefers environments where kobolds thrive, often found among their kin.",
+    "strengths": "Immunities to radiant damage and various resistances make it extremely resilient against many forms of attack.",
+    "weaknesses": "Relies heavily on allies for support, making it vulnerable when isolated.",
+    "attacks": "Can deliver three magical claw attacks, each dealing slashing damage augmented by elemental damage of its choice.",
+    "most_powerful_ability": "The ability to invoke elemental damage in a 60-foot cone, dealing significant area damage while coordinating ally attacks.",
+    "senses": "Has a passive perception of 19, showcasing excellent awareness of its surroundings.",
+    "skills": "Boasts a perception skill modifier of +5, indicating a good ability to notice details.",
+    "additional_information": [
+        "Aura of Draconic Virtue grants advantage to allies within range.",
+        "Invisibility allows for stealth in combat situations.",
+        "Immortal Nature means it doesn't require food, drink, or sleep.",
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Massive elemental damage potential with Invoke the Dragon Gods."
+    ],
+    "damage_types": [
+        "radiant",
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small celestial that supports kobolds",
+        "inspiring draconic creature with powerful abilities",
+        "kobold leader that can turn allies into dragons",
+        "elemental damage dealer in a 60-foot cone",
+        "celestial monster with magical attacks and invisibility"
+    ]
+}

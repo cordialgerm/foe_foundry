@@ -1,0 +1,25 @@
+{
+    "name": "Ice Elemental",
+    "queries": [
+        {
+            "query": "large cold creature that can burrow through ice and has icy claws",
+            "variant": "big cold monster that can tunnel in ice and has ice claws"
+        },
+        {
+            "query": "elemental that is immune to cold and is vulnerable to fire",
+            "variant": "creature that has immunity to cold but is weak against fire"
+        },
+        {
+            "query": "monster with high constitution that can traverse ice without difficulty",
+            "variant": "creature with high con that can walk on ice easily"
+        },
+        {
+            "query": "frosty elemental that can restrain enemies in ice",
+            "variant": "icy elemental that can trap foes in ice"
+        },
+        {
+            "query": "cold-themed monster that has no intelligence but high strength",
+            "variant": "ice-themed creature that lacks smarts but has great strength"
+        }
+    ]
+}
