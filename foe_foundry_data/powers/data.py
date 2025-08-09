@@ -15,6 +15,7 @@ from foe_foundry.creatures.warrior import warrior
 from foe_foundry.features import ActionType
 from foe_foundry.powers import Power
 from foe_foundry.statblocks import Statblock
+from foe_foundry.utils import name_to_key
 
 from ..icons import icon_path
 from ..monsters import monsters_for_power
@@ -120,6 +121,10 @@ class MonsterInPower:
             return "CR 1/2"
         else:
             return f"CR {self.cr:.0f}"
+
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)
 
 
 @dataclass(kw_only=True)
