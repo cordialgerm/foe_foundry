@@ -2197,6 +2197,26 @@ files = [
 ]
 
 [[package]]
+name = "networkx"
+version = "3.4"
+description = "Python package for creating and manipulating graphs and networks"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "networkx-3.4-py3-none-any.whl", hash = "sha256:46dad0ec74a825a968e2b36c37ef5b91faa3868f017b2283d9cbff33112222ce"},
+    {file = "networkx-3.4.tar.gz", hash = "sha256:1269b90f8f0d3a4095f016f49650f35ac169729f49b69d0572b2bb142748162b"},
+]
+
+[package.extras]
+default = ["matplotlib (>=3.7)", "numpy (>=1.24)", "pandas (>=2.0)", "scipy (>=1.10,!=1.11.0,!=1.11.1)"]
+developer = ["changelist (==0.5)", "mypy (>=1.1)", "pre-commit (>=3.2)", "rtoml"]
+doc = ["intersphinx-registry", "myst-nb (>=1.1)", "numpydoc (>=1.8.0)", "pillow (>=9.4)", "pydata-sphinx-theme (>=0.15)", "sphinx (>=7.3)", "sphinx-gallery (>=0.16)", "texext (>=0.6.7)"]
+example = ["cairocffi (>=1.7)", "contextily (>=1.6)", "igraph (>=0.11)", "momepy (>=0.7.2)", "osmnx (>=1.9)", "scikit-learn (>=1.5)", "seaborn (>=0.13)"]
+extra = ["lxml (>=4.6)", "pydot (>=3.0.1)", "pygraphviz (>=1.14)", "sympy (>=1.10)"]
+test = ["pytest (>=7.2)", "pytest-cov (>=4.0)"]
+
+[[package]]
 name = "num2words"
 version = "0.5.14"
 description = "Modules to convert numbers to words. Easily extensible."
@@ -4222,4 +4242,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "3.10.15"
-content-hash = "6ee2c9321000a17b135e3cf94a5276a927a0c231de33cec6e36188367d0f7d01"
+content-hash = "9a95d84c31028f0c36b8a7caba048b801e40610118d7d27ef779f31bd947fd7c"
