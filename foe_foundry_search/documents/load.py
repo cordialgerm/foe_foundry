@@ -13,6 +13,10 @@ from .meta import MonsterDocumentMeta
 
 
 class _Loader:
+    def __init__(self):
+        self.cache_dir = Path.cwd() / "cache" / "documents"
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+
     @cached_property
     def document_metas(self) -> dict[str, MonsterDocumentMeta]:
         return {meta.key: meta for meta in self.iter_document_metas()}
@@ -22,6 +26,26 @@ class _Loader:
         return {doc.doc_id: doc for doc in self.iter_documents()}
 
     def iter_documents(self) -> Iterable[Document]:
+        items = [item for item in self.cache_dir.glob("*.json")]
+        if len(items) == 0:
+            for doc in self._cache_and_iter_documents():
+                yield doc
+
+        for item in items:
+            with item.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+                yield Document.from_json(data)
+
+    def _cache_and_iter_documents(self) -> Iterable[Document]:
+        for doc in self._do_iter_documents():
+            path = self.cache_dir / f"{doc.doc_id}.json"
+            if not path.exists():
+                with path.open("w", encoding="utf-8") as f:
+                    json.dump(doc.to_json(), f, ensure_ascii=False, indent=4)
+
+            yield doc
+
+    def _do_iter_documents(self) -> Iterable[Document]:
         dir = Path(__file__).parent.parent.parent / "data" / "5e_paragraphs"
 
         suffixes = [

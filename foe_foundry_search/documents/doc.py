@@ -1,4 +1,6 @@
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass
 
 from backports.strenum import StrEnum
 
@@ -17,3 +19,10 @@ class Document:
     doc_type: DocType
     name: str
     content: str
+
+    def to_json(self) -> dict:
+        return asdict(self)
+
+    @staticmethod
+    def from_json(data: dict) -> Document:
+        return Document(**data)
