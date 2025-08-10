@@ -17,7 +17,7 @@ log = logging.getLogger(__name__)
 
 
 @dataclass
-class SearchResult:
+class DocumentSearchResult:
     """
     A search result containing the document, score, and match metadata.
     """
@@ -79,7 +79,7 @@ def clean_document_index():
     shutil.rmtree(INDEX_DIR, ignore_errors=True)
 
 
-def search_documents(search_query: str, limit: int) -> Iterable[SearchResult]:
+def search_documents(search_query: str, limit: int) -> Iterable[DocumentSearchResult]:
     """
     Search the document index and return detailed results with highlights.
 
@@ -156,7 +156,7 @@ def search_documents(search_query: str, limit: int) -> Iterable[SearchResult]:
             except Exception:
                 pass
 
-            yield SearchResult(
+            yield DocumentSearchResult(
                 document=doc,
                 score=score,
                 matched_fields=matched_fields,

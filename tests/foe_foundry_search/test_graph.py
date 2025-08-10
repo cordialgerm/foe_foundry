@@ -10,7 +10,12 @@ from pathlib import Path
 
 import networkx as nx
 
-from foe_foundry_search.graph import build_graph, visualize_all_layouts
+from foe_foundry_search.graph import (
+    find_descendants_with_decay,
+    load_graph,
+    rebuild_graph,
+    visualize_all_layouts,
+)
 
 
 def sample_subgraph(G, max_mon_nodes: int = 40, ego_radius: int = 4) -> nx.DiGraph:
@@ -46,24 +51,20 @@ def sample_subgraph(G, max_mon_nodes: int = 40, ego_radius: int = 4) -> nx.DiGra
 
 def test_graph_construction():
     """Test the basic graph construction functionality."""
-    G, issues = build_graph()
+    G = rebuild_graph()
 
     # Basic assertions about the graph
     assert isinstance(G, nx.DiGraph), "Graph should be a directed graph"
     assert G.number_of_nodes() > 0, "Graph should have nodes"
-    assert isinstance(issues, list), "Issues should be a list"
 
     print(
         f"Graph constructed with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges."
     )
-    print(f"{len(issues)} issues found")
-    for issue in issues:
-        print(issue)
 
 
 def test_subgraph_sampling():
     """Test the subgraph sampling functionality."""
-    G, _ = build_graph()
+    G = load_graph()
 
     # Test with default parameters
     subgraph = sample_subgraph(G)
@@ -81,7 +82,30 @@ def test_subgraph_sampling():
 
 def test_visualization_layouts():
     """Test visualization with different layouts (without saving files)."""
-    G, _ = build_graph()
+    G = load_graph()
     output_dir = Path.cwd() / "tests" / "outputs"
     output_dir.mkdir(exist_ok=True)
     visualize_all_layouts(G, output_dir)
+
+
+def test_find_descendants():
+    """Test the find_descendants_with_decay function."""
+    print("Testing find_descendants_with_decay...")
+
+    # We need to find a real document ID to test with
+    from foe_foundry_search.documents import iter_documents
+
+    # Get the first few documents
+    doc = next(d for d in iter_documents())
+
+    print(f"Testing with document: {doc.doc_id} - {doc.name}")
+
+    # Find descendants
+    target_types = {"FF_MON", "FF_FAM", "POW"}
+    paths = find_descendants_with_decay(doc.doc_id, target_types, max_hops=2)
+
+    print(f"Found {len(paths)} paths:")
+    for i, path in enumerate(paths[:5]):  # Show first 5
+        print(f"  {i + 1}. {path.target_type} {path.target_node_id}")
+        print(f"     Strength: {path.strength:.3f}, Hops: {path.hops}")
+        print(f"     Path: {' -> '.join(path.path)}")

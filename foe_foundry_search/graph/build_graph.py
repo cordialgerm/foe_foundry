@@ -24,6 +24,7 @@ Returns a tuple of (graph, issues) where issues is a list of warnings or missing
 
 import json
 import os
+from pathlib import Path
 
 import networkx as nx
 
@@ -38,10 +39,41 @@ from foe_foundry_search.documents import (
 from foe_foundry_search.documents.meta import MonsterDocumentMeta
 
 # Path to SRD mapping file
-SRD_MAPPING_PATH = os.path.join(os.path.dirname(__file__), "monster_to_srd_a_b.json")
+SRD_MAPPING_PATH = Path(__file__).parent / "monster_to_srd_a_b.json"
+CACHE_DIR = Path.cwd() / "cache" / "graph"
+CACHE_FILE = CACHE_DIR / "graph.json"
 
 
-def build_graph() -> tuple[nx.DiGraph, list[str]]:
+def load_graph() -> nx.DiGraph:
+    """Load the graph from the cache or build it if not cached."""
+
+    CACHE_DIR.mkdir(exist_ok=True, parents=True)
+
+    if CACHE_FILE.exists():
+        # Load from cache
+        with open(CACHE_FILE, "r") as f:
+            data = json.load(f)
+        return nx.node_link_graph(data)
+    else:
+        # Build and cache
+        graph, _ = _do_build_graph()
+
+        # Save to cache
+        data = nx.node_link_data(graph, edges="links")
+        with open(CACHE_FILE, "w") as f:
+            json.dump(data, f, indent=2)
+
+        return graph
+
+
+def rebuild_graph() -> nx.DiGraph:
+    """Rebuild the graph from scratch."""
+    if CACHE_FILE.exists():
+        CACHE_FILE.unlink()
+    return load_graph()
+
+
+def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
     """
     Build a directed graph representing monsters, documents, families, and powers.
 
