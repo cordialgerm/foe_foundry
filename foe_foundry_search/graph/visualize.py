@@ -1,6 +1,6 @@
-import os
 import random
 from enum import Enum
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -48,7 +48,9 @@ def _create_layout_positions(subgraph: nx.DiGraph, layout_type: LayoutType) -> d
         raise ValueError(f"Unsupported layout type: {layout_type}")
 
 
-def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
+def visualize_graph_sampled(
+    G, output_dir: Path, layout_type: LayoutType = LayoutType.SPRING
+):
     """
     Visualize a sampled subset of the graph with the specified layout.
 
@@ -200,12 +202,12 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
 
     plt.title(f"Sampled Foe Foundry GraphRAG ({layout_type.value} layout)")
     plt.tight_layout()
-    out_path = os.path.join(os.path.dirname(__file__), f"graph_{layout_type.value}.png")
+    out_path = output_dir / f"graph_{layout_type.value}.png"
     plt.savefig(out_path, dpi=300)
     print(f"Sampled graph visualization saved to {out_path}")
 
 
-def visualize_all_layouts(G):
+def visualize_all_layouts(G, output_dir: Path):
     """
     Generate visualizations for all available layout types.
 
@@ -214,5 +216,5 @@ def visualize_all_layouts(G):
     """
     for layout_type in LayoutType:
         print(f"Generating visualization with {layout_type.value} layout...")
-        visualize_graph_sampled(G, layout_type)
+        visualize_graph_sampled(G, output_dir, layout_type)
         plt.close()  # Close the figure to free memory
