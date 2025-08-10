@@ -21,3 +21,8 @@ def name_to_key(name: str) -> str:
 def strip_group_qualifier(name: str) -> str:
     """Remove trailing (Group) qualifiers from names."""
     return re.sub(r"\s*\([^)]+\)$", "", name)
+
+
+def key_to_name(key: str) -> str:
+    """Convert a standardized key format back to a monster name."""
+    return key.replace("-", " ").title()

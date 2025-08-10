@@ -1,6 +1,6 @@
 from .rng import choose_enum  # noqa
 from .rounding import easy_multiple_of_five  # noqa
-from .key import name_to_key  # noqa
+from .key import name_to_key, key_to_name  # noqa
 from .text import comma_separated, list_to_sentence  # noqa
 from .find_image import find_monster_image, find_lore  # noqa
 from .title import slug_to_title  # noqa

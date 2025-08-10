@@ -64,63 +64,14 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
     ]
     sample_size = min(40, len(mon_nodes))
     sampled_mons = random.sample(mon_nodes, sample_size)
-    # Collect all 1st and 2nd degree neighbors of the sampled MON nodes
-    nodes_to_plot = set(sampled_mons)
-    # 1st degree: all nodes directly connected to sampled MONs (in or out)
-    for mon in sampled_mons:
-        nodes_to_plot.update(G.predecessors(mon))
-        nodes_to_plot.update(G.successors(mon))
-    # 2nd degree: all nodes connected to those neighbors
-    first_degree = set(nodes_to_plot)
-    for n1 in first_degree:
-        nodes_to_plot.update(G.predecessors(n1))
-        nodes_to_plot.update(G.successors(n1))
 
-    # Add all FF_MON nodes connected to the MON nodes we have so far
-    ff_mon_nodes = set()
-    for mon in nodes_to_plot:
-        if G.nodes[mon].get("type") == "MON":
-            # Find FF_MON nodes connected to this MON node
-            for pred in G.predecessors(mon):
-                if G.nodes[pred].get("type") == "FF_MON":
-                    ff_mon_nodes.add(pred)
-            for succ in G.successors(mon):
-                if G.nodes[succ].get("type") == "FF_MON":
-                    ff_mon_nodes.add(succ)
-    nodes_to_plot.update(ff_mon_nodes)
+    # Find all nodes up to 4th degree connection from sampled_mons using ego_graph
+    nodes_to_plot = set()
+    for node in sampled_mons:
+        # ego_graph returns subgraph of all nodes within radius distance from node
+        ego = nx.ego_graph(G.to_undirected(), node, radius=4)
+        nodes_to_plot.update(ego.nodes())
 
-    # Add all FF_FAM nodes connected to the FF_MON nodes we have so far
-    ff_fam_nodes = set()
-    for ff_mon in ff_mon_nodes:
-        for pred in G.predecessors(ff_mon):
-            if G.nodes[pred].get("type") == "FF_FAM":
-                ff_fam_nodes.add(pred)
-        for succ in G.successors(ff_mon):
-            if G.nodes[succ].get("type") == "FF_FAM":
-                ff_fam_nodes.add(succ)
-    nodes_to_plot.update(ff_fam_nodes)
-
-    # Add all DOC nodes connected to the MON or FF_MON nodes we have so far
-    doc_nodes = set()
-    for mon in nodes_to_plot:
-        if G.nodes[mon].get("type") in {"MON", "FF_MON"}:
-            for pred in G.predecessors(mon):
-                if G.nodes[pred].get("type") == "DOC":
-                    doc_nodes.add(pred)
-            for succ in G.successors(mon):
-                if G.nodes[succ].get("type") == "DOC":
-                    doc_nodes.add(succ)
-    nodes_to_plot.update(doc_nodes)
-    # Add all POW nodes connected to the FF_MON nodes we have so far
-    pow_nodes = set()
-    for ff_mon in ff_mon_nodes:
-        for pred in G.predecessors(ff_mon):
-            if G.nodes[pred].get("type") == "POW":
-                pow_nodes.add(pred)
-        for succ in G.successors(ff_mon):
-            if G.nodes[succ].get("type") == "POW":
-                pow_nodes.add(succ)
-    nodes_to_plot.update(pow_nodes)
     subgraph = G.subgraph(nodes_to_plot)
 
     plt.figure(figsize=(12, 8))
@@ -172,8 +123,7 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
             is_srd = subgraph.nodes[n].get("is_srd", False)
             node_colors[n] = "#2ca02c" if is_srd else "#ff7f0e"
             node_sizes[n] = 15 if is_srd else 12
-            if is_srd:
-                labels[n] = subgraph.nodes[n].get("name", n)
+            # no label for MON nodes
         else:
             node_colors[n] = "#cccccc"
             node_sizes[n] = 10

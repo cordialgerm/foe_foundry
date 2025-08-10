@@ -4,10 +4,11 @@ from pathlib import Path
 from typing import Iterable
 
 from foe_foundry import CreatureType, DamageType, MonsterRole
-from foe_foundry.utils import name_to_key
+from foe_foundry.utils import key_to_name, name_to_key
 from foe_foundry_data.monsters.all import Monsters
+from foe_foundry_data.powers import Powers
 
-from .doc import DocType, MonsterDocument
+from .doc import DocType, Document
 from .meta import MonsterDocumentMeta
 
 
@@ -16,7 +17,7 @@ class _Loader:
     def document_metas(self) -> dict[str, MonsterDocumentMeta]:
         return {meta.key: meta for meta in self.iter_document_metas()}
 
-    def iter_documents(self) -> Iterable[MonsterDocument]:
+    def iter_documents(self) -> Iterable[Document]:
         dir = Path(__file__).parent.parent.parent / "data" / "5e_paragraphs"
 
         suffixes = [
@@ -39,21 +40,42 @@ class _Loader:
 
             text = path.read_text(encoding="utf-8")
             monster_key = name_to_key(key)
-            yield MonsterDocument(
-                doc_id=path.stem,
-                doc_type=DocType.background,
+            yield Document(
+                doc_id=f"monster-{path.stem}",
+                doc_type=DocType.monster_other,
                 monster_key=monster_key,
-                text=text,
+                power_key=None,
+                name=key_to_name(key),
+                content=text,
             )
 
         for monster in Monsters.one_of_each_monster:
             if not monster.has_lore or monster.overview_html is None:
                 continue
-            yield MonsterDocument(
-                doc_id=monster.key + "-lore",
+            yield Document(
+                doc_id=f"monster-{monster.key}-lore",
                 monster_key=monster.key,
-                doc_type=DocType.lore,
-                text=monster.overview_html,
+                doc_type=DocType.monster_ff,
+                power_key=None,
+                name=monster.name,
+                content=monster.overview_html,
+            )
+
+        for power in Powers.AllPowers:
+            roles = " ".join(r for r in power.roles)
+            damage_types = " ".join(d for d in power.damage_types)
+            tags = " ".join(t for t in power.tags)
+            searchblob = " ".join(
+                [power.name, power.feature_descriptions, tags, roles, damage_types]
+            )
+
+            yield Document(
+                doc_id=f"power-{power.key}",
+                monster_key=None,
+                power_key=power.key,
+                doc_type=DocType.power_ff,
+                name=power.name,
+                content=searchblob,
             )
 
     def iter_document_metas(self) -> Iterable[MonsterDocumentMeta]:
@@ -86,12 +108,12 @@ def iter_monster_doc_metas() -> Iterable[MonsterDocumentMeta]:
     return _loader.iter_document_metas()
 
 
-def iter_monster_docs() -> Iterable[MonsterDocument]:
+def iter_documents() -> Iterable[Document]:
     """Iterate over monster documents."""
     return _loader.iter_documents()
 
 
-def load_monster_doc_metas() -> dict[str, MonsterDocumentMeta]:
+def load_monster_document_metas() -> dict[str, MonsterDocumentMeta]:
     """Load metadata about monster documents. Cached for performance"""
     return _loader.document_metas
 

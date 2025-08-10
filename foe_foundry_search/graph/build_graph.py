@@ -32,9 +32,8 @@ from foe_foundry.utils import name_to_key
 from foe_foundry_data.families import load_families
 from foe_foundry_data.powers import Powers
 from foe_foundry_search.documents import (
-    DocType,
-    iter_monster_docs,
-    load_monster_doc_metas,
+    iter_documents,
+    load_monster_document_metas,
 )
 from foe_foundry_search.documents.meta import MonsterDocumentMeta
 
@@ -53,30 +52,65 @@ def build_graph() -> tuple[nx.DiGraph, list[str]]:
 
     issues = []
 
-    # Add DOC nodes: Each represents a monster document taken from the background corpus
-    for doc in iter_monster_docs():
-        if not doc.doc_type == DocType.background:
-            continue
+    # Add DOC nodes
+    for doc in iter_documents():
         node_id = f"DOC:{doc.doc_id}"
         G.add_node(
-            node_id, type="DOC", monster_key=doc.monster_key, id=node_id, text=doc.text
+            node_id,
+            type="DOC",
+            name=doc.name,
+            doc_type=doc.doc_type,
+            monster_key=doc.monster_key,
+            power_key=doc.power_key,
         )
 
     # Add MON nodes: Each represents monster metadata
-    metas: dict[str, MonsterDocumentMeta] = load_monster_doc_metas()
+    metas: dict[str, MonsterDocumentMeta] = load_monster_document_metas()
     for key, meta in metas.items():
         node_id = f"MON:{key}"
         G.add_node(
             node_id,
             type="MON",
-            id=key,
             name=meta.name,
+            monster_key=doc.monster_key,
             is_srd=meta.srd,
-            description=meta.description,
+        )
+
+    # Add POW nodes: Powers and the monsters they grant to
+    for power in Powers.AllPowers:
+        node_id = f"POW:{power.key}"
+        G.add_node(
+            node_id,
+            type="POW",
+            power_key=power.key,
+        )
+
+    # Add FF_MON nodes: Foe Foundry monster instances and their SRD/other references
+    for template in AllTemplates:
+        for variant in template.variants:
+            for monster in variant.monsters:
+                node_id = f"FF_MON:{monster.key}"
+                G.add_node(
+                    node_id,
+                    type="FF_MON",
+                    monster_key=monster.key,
+                    template_key=template.key,
+                )
+
+    # Add FF_FAM nodes: Monster families and their members
+    for family in load_families():
+        node_id = f"FF_FAM:{family.key}"
+        G.add_node(
+            node_id,
+            type="FF_FAM",
+            family_key=family.key,
         )
 
     # Add DOC → MON edges: Document describes monster
-    for doc in iter_monster_docs():
+    for doc in iter_documents():
+        if doc.monster_key is None:
+            continue
+
         if doc.monster_key not in metas:
             issues.append(
                 f"Document {doc.doc_id} references unknown monster {doc.monster_key}"
@@ -89,6 +123,15 @@ def build_graph() -> tuple[nx.DiGraph, list[str]]:
             f"MON:{monster.key}",
             type="about",
             relevancy=1.0,
+        )
+
+    # Add DOC → POW edges: Document describes power
+    for doc in iter_documents():
+        if doc.power_key is None:
+            continue
+
+        G.add_edge(
+            f"DOC:{doc.doc_id}", f"POW:{doc.power_key}", type="about", relevance=1.0
         )
 
     # Add MON → MON edges: Similar monsters via SRD mapping
@@ -122,88 +165,8 @@ def build_graph() -> tuple[nx.DiGraph, list[str]]:
                             f"SRD mapping {monster_name} → {srd_name} references unknown SRD monster {srd_monster_key}"
                         )
 
-    # Add FF_MON nodes: Foe Foundry monster instances and their SRD/other references
-    for template in AllTemplates:
-        for variant in template.variants:
-            for monster in variant.monsters:
-                node_id = f"FF_MON:{monster.key}"
-                G.add_node(
-                    node_id,
-                    type="FF_MON",
-                    monster_key=monster.key,
-                    template_key=template.key,
-                )
-
-                # Link FF_MON to SRD monsters it implements
-                for srd_creature in monster.srd_creatures or []:
-                    srd_monster_key = name_to_key(srd_creature)
-                    srd_node_id = f"MON:{srd_monster_key}"
-
-                    if G.has_node(srd_node_id):
-                        G.add_edge(node_id, srd_node_id, type="implemented")
-                    else:
-                        issues.append(
-                            f"FF_MON {monster.key} references unknown SRD creature {srd_creature}"
-                        )
-
-                # Link FF_MON to other monsters it implements
-                for other_monster_name, _ in (monster.other_creatures or {}).items():
-                    other_monster_key = name_to_key(other_monster_name)
-                    other_node_id = f"MON:{other_monster_key}"
-
-                    if G.has_node(other_node_id):
-                        G.add_edge(node_id, other_node_id, type="implemented")
-                    else:
-                        issues.append(
-                            f"FF_MON {monster.key} references unknown other creature {other_monster_name}"
-                        )
-
-    # Add DOC nodes: Each represents a monster document taken from the foe foundry lore
-    for doc in iter_monster_docs():
-        node_id = f"DOC:{doc.doc_id}"
-        G.add_node(
-            node_id,
-            type="DOC",
-            monster_key=doc.monster_key,
-            doc_type=doc.doc_type,
-        )
-
-        # Link DOC node to FF_MON
-        ff_mon_node_id = f"FF_MON:{doc.monster_key}"
-        if G.has_node(ff_mon_node_id):
-            G.add_edge(node_id, ff_mon_node_id, type="references")
-        else:
-            issues.append(
-                f"DOC {doc.doc_id} references unknown FF_MON {doc.monster_key}"
-            )
-
-    # Add FF_FAM nodes: Monster families and their members
-    for family in load_families():
-        node_id = f"FF_FAM:{family.key}"
-        G.add_node(
-            node_id,
-            type="FF_FAM",
-            family_key=family.key,
-        )
-
-        for monster in family.monsters:
-            monster_node_id = f"FF_MON:{monster.key}"
-            if G.has_node(monster_node_id):
-                G.add_edge(node_id, monster_node_id, type="member")
-            else:
-                issues.append(
-                    f"FF_FAM {family.key} references unknown FF_MON {monster.key}"
-                )
-
-    # Add POW nodes: Powers and the monsters they grant to
+    # Add POW → FF_MON edges
     for power in Powers.AllPowers:
-        node_id = f"POW:{power.key}"
-        G.add_node(
-            node_id,
-            type="POW",
-            power_key=power.key,
-        )
-
         for monster in power.monsters:
             monster_node_id = f"FF_MON:{monster.key}"
             if G.has_node(monster_node_id):
@@ -211,6 +174,48 @@ def build_graph() -> tuple[nx.DiGraph, list[str]]:
             else:
                 issues.append(
                     f"POW {power.key} references unknown FF_MON {monster.key}"
+                )
+
+    # Add MON → FF_MON edges: alias of third party monsters to Foe Foundry monsters
+    for template in AllTemplates:
+        for variant in template.variants:
+            for monster in variant.monsters:
+                ff_node_id = f"FF_MON:{monster.key}"
+
+                # SRD References
+                for srd_creature in monster.srd_creatures or []:
+                    srd_monster_key = name_to_key(srd_creature)
+                    srd_node_id = f"MON:{srd_monster_key}"
+
+                    if G.has_node(srd_node_id):
+                        G.add_edge(srd_node_id, ff_node_id, type="alias")
+                    else:
+                        issues.append(
+                            f"FF_MON {monster.key} references unknown monster {srd_creature}"
+                        )
+
+                # Other References
+                for other_monster_name, _ in (monster.other_creatures or {}).items():
+                    other_monster_key = name_to_key(other_monster_name)
+                    other_node_id = f"MON:{other_monster_key}"
+
+                    if G.has_node(other_node_id):
+                        G.add_edge(ff_node_id, other_node_id, type="alias")
+                    else:
+                        issues.append(
+                            f"FF_MON {monster.key} references unknown other creature {other_monster_name}"
+                        )
+
+    # Add FF_MON → FF_FAM edges: monsters are assigned to familes
+    for family in load_families():
+        family_node_id = f"FF_FAM:{family.key}"
+        for monster in family.monsters:
+            monster_node_id = f"FF_MON:{monster.key}"
+            if G.has_node(monster_node_id):
+                G.add_edge(monster_node_id, family_node_id, type="member")
+            else:
+                issues.append(
+                    f"FF_FAM {family.key} references unknown FF_MON {monster.key}"
                 )
 
     return G, issues
