@@ -7,14 +7,18 @@ from bs4 import BeautifulSoup
 
 
 def load_articles():
-    article_dir = Path(__file__).parent / "raw"
+    article_dir = Path.cwd() / "cache" / "the_monsters_know"
+    article_dir.mkdir(exist_ok=True, parents=True)
 
-    loaded_ids = np.array(
-        [int(f.stem.split("post-")[1]) for f in article_dir.glob("*.html")]
-    )
+    loaded_ids1 = [int(f.stem.split("post-")[1]) for f in article_dir.glob("*.html")]
+    loaded_ids2 = [
+        int(f.stem.split("post-")[1])
+        for f in (Path.cwd() / "data" / "the_monsters_know").glob("*.md")
+    ]
+    loaded_ids = list(set(loaded_ids1 + loaded_ids2))
     start_id = int(np.max(loaded_ids)) + 1
 
-    max_post_id = 5687
+    max_post_id = 6362
     downloads = 0
     for id in np.arange(start_id, max_post_id):
         time.sleep(0.1)
@@ -31,6 +35,7 @@ def load_articles():
                 downloads += 1
 
     print(f"Downloaded {downloads} articles")
+
 
 def transform():
     parent_dir = Path(__file__).parent
@@ -63,3 +68,8 @@ def transform():
             )
         except Exception as x:
             print(f"Unable to transform {article_path.relative_to(parent_dir)}. {x}")
+
+
+if __name__ == "__main__":
+    load_articles()
+    transform()
