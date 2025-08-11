@@ -32,6 +32,7 @@ import networkx as nx
 from foe_foundry.creatures import AllTemplates
 from foe_foundry.utils import name_to_key
 from foe_foundry_data.families import load_families
+from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.powers import Powers
 from foe_foundry_search.documents import (
     iter_documents,
@@ -79,9 +80,15 @@ def load_graph() -> nx.DiGraph:
 
 def rebuild_graph() -> nx.DiGraph:
     """Rebuild the graph from scratch."""
+
+    # delete file-system cache
     if CACHE_FILE.exists():
         CACHE_FILE.unlink()
-    del _cache.load_graph
+
+    # hack to clear the @cached_property cache
+    if "load_graph" in _cache.__dict__:
+        del _cache.__dict__["load_graph"]
+
     return _cache.load_graph
 
 
@@ -130,16 +137,16 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
         )
 
     # Add FF_MON nodes: Foe Foundry monster instances and their SRD/other references
-    for template in AllTemplates:
-        for variant in template.variants:
-            for monster in variant.monsters:
-                node_id = f"FF_MON:{monster.key}"
-                G.add_node(
-                    node_id,
-                    type="FF_MON",
-                    monster_key=monster.key,
-                    template_key=template.key,
-                )
+    for monster in Monsters.one_of_each_monster:
+        node_id = f"FF_MON:{monster.key}"
+        G.add_node(
+            node_id,
+            type="FF_MON",
+            monster_key=monster.key,
+            template_key=monster.template_key,
+            cr=monster.cr,
+            creature_type=monster.creature_type,
+        )
 
     # Add FF_FAM nodes: Monster families and their members
     for family in load_families():

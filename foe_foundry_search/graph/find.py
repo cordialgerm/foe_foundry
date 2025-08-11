@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Callable
 
 import networkx as nx
 
@@ -18,7 +19,11 @@ class GraphPath:
 
 
 def find_descendants_with_decay(
-    document_doc_id: str, target_types: set[str], max_hops: int = 3, alpha: float = 0.15
+    document_doc_id: str,
+    target_types: set[str],
+    max_hops: int = 3,
+    alpha: float = 0.15,
+    custom_filter: Callable[[dict], bool] | None = None,
 ) -> list[GraphPath]:
     """
     Find all nodes of the desired types that are descendants of a document up to N hops,
@@ -49,22 +54,28 @@ def find_descendants_with_decay(
     shortest_paths = nx.single_source_shortest_path(ego_subgraph, source_node_id)
 
     paths = []
-    for target_node, distance in distances.items():
+    for target_node_id, distance in distances.items():
         # Skip the source node itself
-        if target_node == source_node_id:
+        if target_node_id == source_node_id:
             continue
 
         # Only include nodes of target types
-        if graph.nodes[target_node]["type"] in target_types:
+        if graph.nodes[target_node_id]["type"] in target_types:
+            # allow caller to apply custom filters
+            if custom_filter is not None and not custom_filter(
+                graph.nodes[target_node_id]
+            ):
+                continue
+
             # Calculate strength with decay
             strength = (1 - alpha) ** distance
 
             paths.append(
                 GraphPath(
                     source_doc_id=document_doc_id,
-                    target_node_id=target_node,
-                    target_type=graph.nodes[target_node]["type"],
-                    path=shortest_paths[target_node],
+                    target_node_id=target_node_id,
+                    target_type=graph.nodes[target_node_id]["type"],
+                    path=shortest_paths[target_node_id],
                     strength=strength,
                     hops=distance,
                 )

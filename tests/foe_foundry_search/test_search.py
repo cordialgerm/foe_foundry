@@ -1,7 +1,9 @@
+from foe_foundry.creature_types import CreatureType
 from foe_foundry_search.search import (
     EntityType,
     search_documents,
     search_entities_with_graph_expansion,
+    search_monsters,
 )
 
 
@@ -63,10 +65,37 @@ def test_search_with_graph_expansion():
     results = list(
         search_entities_with_graph_expansion(
             query,
-            entity_types={EntityType.MONSTER, EntityType.FAMILY},
+            entity_types={EntityType.POWER, EntityType.FAMILY},
             limit=5,
             max_hops=4,
             alpha=0.15,
+        )
+    )
+
+    assert len(results) > 0, "Should find entities for 'sneaky bandit'"
+
+    print(f"\nFound {len(results)} results for query '{query}':")
+    for i, result in enumerate(results):
+        print(f"  {i + 1}. Score: {result.score:.3f}")
+        if result.monster_key:
+            print(f"     Monster: {result.monster_key}")
+        if result.family_key:
+            print(f"     Family: {result.family_key}")
+        print(f"     Document matches: {len(result.document_matches)}")
+
+
+def test_search_monsters():
+    """Test the search_entities_with_graph_expansion function."""
+
+    # Test with a simple query
+    query = "sneaky bandit"
+    results = list(
+        search_monsters(
+            query,
+            limit=5,
+            max_hops=4,
+            alpha=0.15,
+            creature_types={CreatureType.Humanoid},
         )
     )
 

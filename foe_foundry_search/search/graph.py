@@ -38,6 +38,8 @@ from typing import Iterable
 
 from backports.strenum import StrEnum
 
+from foe_foundry.creature_types import CreatureType
+
 from ..graph import find_descendants_with_decay, load_graph
 from .documents import DocumentSearchResult, search_documents
 
@@ -61,7 +63,7 @@ class EntitySearchResult:
 def search_entities_with_graph_expansion(
     search_query: str,
     entity_types: set[EntityType] | None = None,
-    limit: int = 10,
+    limit: int = 5,
     max_hops: int = 3,
     alpha: float = 0.15,
 ) -> Iterable[EntitySearchResult]:
@@ -148,3 +150,51 @@ def search_entities_with_graph_expansion(
     # Sort by score (descending) and limit results
     results.sort(key=lambda x: x.score, reverse=True)
     return results[:limit]
+
+
+def search_monsters(
+    search_query: str,
+    target_cr: float | None = None,
+    creature_types: set[CreatureType] | None = None,
+    limit: int = 10,
+    max_hops: int = 3,
+    alpha: float = 0.15,
+) -> Iterable[EntitySearchResult]:
+    # custom node-level filter based on monster parameters
+    def custom_filter(node: dict) -> bool:
+        if node["type"] != "FF_MON":
+            return False
+
+        if target_cr is not None:
+            cr: float | None = node.get("cr")
+            if cr is None:
+                return False
+
+            if target_cr < 1:
+                min_cr = 0
+                max_cr = 1
+            elif target_cr < 5:
+                min_cr = target_cr - 1
+                max_cr = target_cr + 1
+            else:
+                min_cr = 0.75 * target_cr
+                max_cr = 1.25 * target_cr
+
+            if not (min_cr <= cr <= max_cr):
+                return False
+
+        if (
+            creature_types is not None
+            and node.get("creature_type") not in creature_types
+        ):
+            return False
+
+        return True
+
+    return search_entities_with_graph_expansion(
+        search_query,
+        entity_types={EntityType.MONSTER},
+        limit=limit,
+        max_hops=max_hops,
+        alpha=alpha,
+    )
