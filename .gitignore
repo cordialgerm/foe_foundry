@@ -166,8 +166,6 @@ examples/
 cache/
 
 foe_foundry_site/routes/whoosh/index/
-
-models/*/checkpoint*
 tests/output/
 
 # Mac stuff
