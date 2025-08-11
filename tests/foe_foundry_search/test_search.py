@@ -32,8 +32,8 @@ def test_search_with_highlights():
 
     # For emerald search, should match in content
     assert "content" in result.matched_fields, "Should match in content field"
-    assert any(term == "warrior" for field, term in result.matched_terms), (
-        "Should match 'warrior' term"
+    assert any(term == "rage" for field, term in result.matched_terms), (
+        "Should match 'rage' term"
     )
 
     # Should have highlighted content since it matched in content
@@ -65,10 +65,12 @@ def test_search_with_graph_expansion():
             query,
             entity_types={EntityType.MONSTER, EntityType.FAMILY},
             limit=5,
-            max_hops=2,
+            max_hops=4,
             alpha=0.15,
         )
     )
+
+    assert len(results) > 0, "Should find entities for 'sneaky bandit'"
 
     print(f"\nFound {len(results)} results for query '{query}':")
     for i, result in enumerate(results):

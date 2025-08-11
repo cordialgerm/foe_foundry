@@ -24,6 +24,7 @@ Returns a tuple of (graph, issues) where issues is a list of warnings or missing
 
 import json
 import os
+from functools import cached_property
 from pathlib import Path
 
 import networkx as nx
@@ -44,33 +45,44 @@ CACHE_DIR = Path.cwd() / "cache" / "graph"
 CACHE_FILE = CACHE_DIR / "graph.json"
 
 
+class _Cache:
+    @cached_property
+    def load_graph(self) -> nx.DiGraph:
+        """Load the graph from the cache or build it if not cached."""
+
+        CACHE_DIR.mkdir(exist_ok=True, parents=True)
+
+        if CACHE_FILE.exists():
+            # Load from cache
+            with open(CACHE_FILE, "r") as f:
+                data = json.load(f)
+            return nx.node_link_graph(data)
+        else:
+            # Build and cache
+            graph, _ = _do_build_graph()
+
+            # Save to cache
+            data = nx.node_link_data(graph, edges="links")
+            with open(CACHE_FILE, "w") as f:
+                json.dump(data, f, indent=2)
+
+            return graph
+
+
+_cache = _Cache()
+
+
 def load_graph() -> nx.DiGraph:
     """Load the graph from the cache or build it if not cached."""
-
-    CACHE_DIR.mkdir(exist_ok=True, parents=True)
-
-    if CACHE_FILE.exists():
-        # Load from cache
-        with open(CACHE_FILE, "r") as f:
-            data = json.load(f)
-        return nx.node_link_graph(data)
-    else:
-        # Build and cache
-        graph, _ = _do_build_graph()
-
-        # Save to cache
-        data = nx.node_link_data(graph, edges="links")
-        with open(CACHE_FILE, "w") as f:
-            json.dump(data, f, indent=2)
-
-        return graph
+    return _cache.load_graph
 
 
 def rebuild_graph() -> nx.DiGraph:
     """Rebuild the graph from scratch."""
     if CACHE_FILE.exists():
         CACHE_FILE.unlink()
-    return load_graph()
+    del _cache.load_graph
+    return _cache.load_graph
 
 
 def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
@@ -200,9 +212,10 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
     # Add POW → FF_MON edges
     for power in Powers.AllPowers:
         for monster in power.monsters:
+            power_node_id = f"POW:{power.key}"
             monster_node_id = f"FF_MON:{monster.key}"
             if G.has_node(monster_node_id):
-                G.add_edge(node_id, monster_node_id, type="grants")
+                G.add_edge(power_node_id, monster_node_id, type="has_power")
             else:
                 issues.append(
                     f"POW {power.key} references unknown FF_MON {monster.key}"

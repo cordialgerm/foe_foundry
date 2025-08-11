@@ -1,5 +1,6 @@
-from collections import deque
 from dataclasses import dataclass
+
+import networkx as nx
 
 from ..graph import load_graph
 
@@ -38,44 +39,35 @@ def find_descendants_with_decay(
     if not graph.has_node(source_node_id):
         return []
 
+    # Get the ego graph (subgraph of all nodes within max_hops radius)
+    ego_subgraph = nx.ego_graph(graph, source_node_id, radius=max_hops)
+
+    # Get distances from source to all nodes in the ego graph
+    distances = nx.single_source_shortest_path_length(ego_subgraph, source_node_id)
+
+    # Get the actual paths for nodes we need
+    shortest_paths = nx.single_source_shortest_path(ego_subgraph, source_node_id)
+
     paths = []
-
-    # BFS with path tracking and strength decay
-    queue = deque(
-        [(source_node_id, [source_node_id], 1.0, 0)]
-    )  # (node_id, path, strength, hops)
-    visited = set()
-
-    while queue:
-        current_node, path, strength, hops = queue.popleft()
-
-        # Skip if we've already visited this node with equal or better strength
-        state_key = (current_node, hops)
-        if state_key in visited:
+    for target_node, distance in distances.items():
+        # Skip the source node itself
+        if target_node == source_node_id:
             continue
-        visited.add(state_key)
 
-        # If this is a target node type and not the source, add to results
-        if (
-            current_node != source_node_id
-            and graph.nodes[current_node]["type"] in target_types
-        ):
+        # Only include nodes of target types
+        if graph.nodes[target_node]["type"] in target_types:
+            # Calculate strength with decay
+            strength = (1 - alpha) ** distance
+
             paths.append(
                 GraphPath(
                     source_doc_id=document_doc_id,
-                    target_node_id=current_node,
-                    target_type=graph.nodes[current_node]["type"],
-                    path=path.copy(),
+                    target_node_id=target_node,
+                    target_type=graph.nodes[target_node]["type"],
+                    path=shortest_paths[target_node],
                     strength=strength,
-                    hops=hops,
+                    hops=distance,
                 )
             )
-
-        # Continue traversal if we haven't reached max hops
-        if hops < max_hops:
-            for neighbor in graph.successors(current_node):
-                new_strength = strength * (1 - alpha)  # Apply decay
-                new_path = path + [neighbor]
-                queue.append((neighbor, new_path, new_strength, hops + 1))
 
     return paths
