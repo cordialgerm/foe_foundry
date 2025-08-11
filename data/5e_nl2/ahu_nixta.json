@@ -1,0 +1,50 @@
+{
+    "name": "Ahu-Nixta",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 67,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 30 ft., swim 30 ft., walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "clockwork",
+        "spellcaster",
+        "aberration"
+    ],
+    "adjectives": [
+        "mechanical",
+        "unsettling",
+        "intelligent"
+    ],
+    "description": "The Ahu-Nixta is a large aberration encased in clockwork armor, resembling a shapeless mass with appendages and manipulators for combat and interaction. It has an eerie presence and its clockwork armor enhances its capabilities.",
+    "memorable": "Unique blend of mechanical prowess and unsettling magical abilities, capable of shifting from a formidable opponent to a vulnerable entity when it exits its armor.",
+    "goals": "To engage in combat, manipulate its environment, and cast spells to control its foes.",
+    "relations": "Can potentially be found with other mechanical or aberrant creatures.",
+    "environment": "Typically found in areas conducive to its nature, possibly ruins or ancient sites.",
+    "strengths": "Possesses damage immunities, spellcasting abilities, and a versatile attack strategy.",
+    "weaknesses": "Significantly weakened without its clockwork armor, losing many of its defensive and offensive capabilities.",
+    "attacks": "Multiattack capability with three melee attacks or casting at-will spells, featuring Whirring Blades, Pronged Scepter, and Bashing Rod for effective damage.",
+    "most_powerful_ability": "Clockwork Encasement allows it to switch between forms and protect itself while in armor; Immutable Form prevents form alteration while armored.",
+    "equipment": "clockwork armor",
+    "senses": "The Ahu-Nixta has an above-average perception with a skill of +3.",
+    "skills": "Boasts a skill proficiency in perception, indicating above-average awareness.",
+    "additional_information": [
+        "Immunities to poison and psychic damage, along with various conditions.",
+        "At-will spells include fear, fire bolt, and telekinesis, allowing for versatile combat options.",
+        "The innate spellcasting ability is governed by Intelligence, leading to strong spell effects.",
+        "Can exit or enter its clockwork armor as a bonus action.",
+        "Features a pulpy mass that can form appendages for manipulation without combat."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting capability allows it to cast various spells at will without material components.",
+    "test_queries": [
+        "mechanical aberration",
+        "spellcasting clockwork creature",
+        "intelligent mechanical monster",
+        "versatile combat aberration",
+        "Ahu-Nixta armor abilities"
+    ]
+}

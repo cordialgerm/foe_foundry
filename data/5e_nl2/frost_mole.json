@@ -1,0 +1,50 @@
+{
+    "name": "Frost Mole",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 71,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "burrow 30 ft., walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "cold",
+        "burrowing",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "cold-adapted"
+    ],
+    "description": "The Frost Mole is a small, robust creature adept at burrowing and stealth, thriving in snowy environments.",
+    "memorable": "Its ability to create pits under targets and camouflaging in snow makes it a unique ambusher.",
+    "goals": "To use its environment effectively to catch foes off guard.",
+    "relations": "May be found in proximity to other cold-adapted creatures.",
+    "environment": "Cold, snowy terrains.",
+    "strengths": "Good physical resilience and stealth capabilities.",
+    "weaknesses": "Low intelligence and charisma, predictable in social situations.",
+    "attacks": "Claw attack that deals 8 slashing damage.",
+    "most_powerful_ability": "Snow Pit allows for tactical ambushes by trapping foes.",
+    "senses": "Blindsight allows it to detect nearby threats without relying on sight.",
+    "skills": "Good at athletics and stealth, capable of effective climbing and hiding.",
+    "additional_information": [
+        "Resistant to cold damage.",
+        "Advantage on perception checks relying on smell.",
+        "Can burrow through snow and ice easily.",
+        "Advantage on stealth checks in snowy terrain."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small ambush creature in snowy environments",
+        "cold-resistant burrowing beast",
+        "stealthy mole that digs traps in snow",
+        "creature with keen sense of smell in cold",
+        "Frost Mole tactics and abilities"
+    ]
+}

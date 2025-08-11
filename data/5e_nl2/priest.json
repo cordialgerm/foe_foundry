@@ -1,0 +1,53 @@
+{
+    "name": "Priest",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 13,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft.",
+    "role": "Support",
+    "tags": [
+        "cleric",
+        "spellcaster",
+        "healer"
+    ],
+    "adjectives": [
+        "divine",
+        "spiritual",
+        "supportive"
+    ],
+    "description": "A Priest is a Medium humanoid clad in robes, often carrying holy symbols. They are spiritual leaders capable of casting healing spells and wards.",
+    "memorable": "Excels in spellcasting with high Wisdom, providing significant support through healing and blessings.",
+    "goals": "To guide and protect their community through divine magic and teachings.",
+    "relations": "Usually affiliated with religious orders or communities, they may work alongside acolytes or other compassionate beings.",
+    "environment": "Typically found in temples, shrines, or in communities of worship.",
+    "strengths": "High Wisdom enhances healing and spellcasting effectiveness.",
+    "weaknesses": "Relatively low physical attack capabilities; relies more on spells than on melee combat.",
+    "attacks": "Uses a mace for melee attacks, dealing bludgeoning damage enhanced with radiant or necrotic damage, or casts a divine bolt for ranged necrotic or radiant damage.",
+    "most_powerful_ability": "Spirit guardians creates an aura of protection that damages foes and grants difficult terrain, serving as both offensive and defensive support.",
+    "equipment": "Typically wields a mace and carries holy symbols.",
+    "senses": "Passive perception of 13 indicates decent awareness of surroundings.",
+    "skills": "Proficient in medicine, insight, and religion, leveraging their high Wisdom for valuable support.",
+    "additional_information": [
+        "Can heal allies with spells like Healing Word",
+        "Resistance to necrotic or radiant damage based on their deity",
+        "Multiattack capability allows for consistent damage output",
+        "Utilizes spells to control battlefield and protect allies",
+        "Blends combat and healing abilities effectively"
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": "Functions as a 5th-level spellcaster, with spells focused on healing and utility, including Dispel Magic and Spirit Guardians.",
+    "test_queries": [
+        "divine healer humanoid",
+        "medium cleric who casts healing spells",
+        "spiritual leader with radiant magic",
+        "priest wielding divine energy",
+        "support character in temples"
+    ]
+}

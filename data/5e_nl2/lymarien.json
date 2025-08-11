@@ -1,0 +1,50 @@
+{
+    "name": "Lymarien",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 5,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 5 ft., fly 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "distraction",
+        "support"
+    ],
+    "adjectives": [
+        "nimble",
+        "elusive",
+        "agile"
+    ],
+    "description": "The Lymarien is a tiny fey creature characterized by its impressive speed and dexterity. It has vibrant wings allowing it to fly swiftly, making it elusive in combat.",
+    "memorable": "Notably able to distract opponents with its quick movements, making it an effective disruptor on the battlefield.",
+    "goals": "Uses its abilities to influence encounters, often helping allies or befriending creatures.",
+    "relations": "Tends to associate with other fey beings and can communicate with beasts.",
+    "environment": "Typically found in enchanted forests or areas rich in fey magic.",
+    "strengths": "Exceptional agility enables it to be a difficult target and its distraction abilities can cripple opponents.",
+    "weaknesses": "Extremely low hit points and poor physical strength make it vulnerable in direct combat.",
+    "attacks": "Can make a quick Claw attack dealing slashing damage, leveraging its speed.",
+    "most_powerful_ability": "Distracting Swoop can incapacitate foes by imposing disadvantage on attacks or checks.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Proficient in stealth and perception, making it an effective scout.",
+    "additional_information": [
+        "Ability to communicate with beasts.",
+        "Very low hit points make it fragile.",
+        "Great maneuvers help it avoid hits in combat.",
+        "Uses speed to control the flow of battle.",
+        "Tends towards neutral good alignments, rarely malicious."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny fey with distraction abilities",
+        "nimble creature that can fly and distract",
+        "elusive fey creature with stealth skills",
+        "supportive fey that communicates with beasts",
+        "agile Tiny creature with a quick attack"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Water Elemental",
+    "queries": [
+        {
+            "query": "large fluid creature that lives in water and can drown enemies",
+            "variant": "large watery creature that can drown foes and lives in aquatic environments"
+        },
+        {
+            "query": "elemental monster with immunity to poison and ability to grapple multiple targets",
+            "variant": "elemental beast immune to poison and capable of grappling several enemies at once"
+        },
+        {
+            "query": "towering water creature that can reform and is difficult to injure",
+            "variant": "tall water elemental that can regenerate and is hard to damage"
+        },
+        {
+            "query": "creature with high mobility in water that attacks with bludgeoning damage",
+            "variant": "monster with great speed in water that deals bludgeoning damage when it attacks"
+        },
+        {
+            "query": "creature that can purify water and has a cold damage vulnerability",
+            "variant": "monster that purifies water and is susceptible to cold damage"
+        }
+    ]
+}

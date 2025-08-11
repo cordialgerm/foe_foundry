@@ -1,0 +1,25 @@
+{
+    "name": "Mechanist",
+    "queries": [
+        {
+            "query": "humanoid engineer with mechanical abilities",
+            "variant": "humanoid mechanic with engineering skills"
+        },
+        {
+            "query": "creature that can repair constructs and create small machines",
+            "variant": "monster that repairs machines and builds tiny constructs"
+        },
+        {
+            "query": "intelligent humanoid that uses tinkering tools in battle",
+            "variant": "smart humanoid that fights with tinkering tools"
+        },
+        {
+            "query": "medium humanoid proficient in using warhammers and crossbows",
+            "variant": "medium creature skilled with warhammers and light crossbows"
+        },
+        {
+            "query": "mechanical artisan that thrives in combat support roles",
+            "variant": "mechanical creator that excels in supportive combat roles"
+        }
+    ]
+}

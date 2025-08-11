@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Boxer",
+    "queries": [
+        {
+            "query": "fey creature that uses shadows and agility in battle",
+            "variant": "fey being that utilizes agility and shadows in fights"
+        },
+        {
+            "query": "small trickster creature with the ability to communicate with cats",
+            "variant": "little trickster being that can talk to cats"
+        },
+        {
+            "query": "chaotic neutral creature that can incapacitate enemies with shadows",
+            "variant": "chaotic neutral being that can stun foes using shadows"
+        },
+        {
+            "query": "shadow manipulating creature known for its cunning and stealth",
+            "variant": "stealthy creature that controls shadows and is quite clever"
+        },
+        {
+            "query": "fast-moving fey creature vulnerable to area effects",
+            "variant": "quick fey being that is susceptible to area attacks"
+        }
+    ]
+}

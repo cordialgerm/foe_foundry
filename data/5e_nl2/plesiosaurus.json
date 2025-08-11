@@ -1,0 +1,51 @@
+{
+    "name": "Plesiosaurus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 68,
+    "ac": 13,
+    "srd": true,
+    "cr": "2",
+    "movement": "walking speed 20 feet, swimming speed 40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "dinosaur",
+        "predator"
+    ],
+    "adjectives": [
+        "large",
+        "aquatic",
+        "fearsome",
+        "powerful"
+    ],
+    "description": "A large, aquatic dinosaur with a long neck, broad body, and flippers adapted for swimming.",
+    "memorable": "Its long neck and powerful jaws can deal significant damage and pull prey closer.",
+    "goals": "Hunting fish and marine life, occasionally becoming territorial if disturbed.",
+    "relations": "Can be encountered alongside other aquatic creatures or dinosaurs.",
+    "environment": "Deep lakes, rivers, and coastal waters.",
+    "strengths": "Exceptional swimming ability and high strength allow it to overpower foes in water.",
+    "weaknesses": "Poor performance on land and low intelligence makes it vulnerable to clever tactics.",
+    "attacks": "Melee bite attack with a reach of 10 feet, dealing piercing damage and with a pull effect.",
+    "most_powerful_ability": "Hold Breath allows it to remain submerged for up to 1 hour.",
+    "skills": "Capable of stealth, enhancing its ambush abilities underwater.",
+    "additional_information": [
+        "Can negate critical hits with its Hardy ability.",
+        "Can use Flipper Slam to create shockwaves affecting opponents.",
+        "Not capable of meaningful communication due to low intelligence.",
+        "Thrives in water-based combat scenarios.",
+        "Forms part of the aquatic predator ecosystem."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic dinosaur with powerful jaws",
+        "predator that can hold breath underwater",
+        "monster that swims fast and bites hard",
+        "Dinosaur found in deep lakes and rivers",
+        "creature that creates shockwaves in water"
+    ]
+}

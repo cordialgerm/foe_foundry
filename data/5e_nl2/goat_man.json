@@ -1,0 +1,50 @@
+{
+    "name": "Goat-Man",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 feet walking speed for quick engagement",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "melee attacker",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "ferocious",
+        "cunning",
+        "agile"
+    ],
+    "description": "The Goat-Man has a muscular build typical of a beast, combining the features of a goat with a humanoid form, including prominent horns and a fierce demeanor.",
+    "memorable": "Its ability to charge at foes and potentially knock them prone makes it a dangerous adversary in combat.",
+    "goals": "Seeks to dominate and instill fear in its surroundings, often engaging in brutal physical confrontations.",
+    "relations": "Could be encountered with other chaotic evil creatures, perhaps serving as a minion or underling.",
+    "environment": "Commonly found in wild, untamed, or desolate areas, often lurking near forests or hills.",
+    "strengths": "Excellent at grappling, delivering powerful slams, and proficient in stealth.",
+    "weaknesses": "Weak mental capacity and susceptible to magical attacks targeting mental fortitude.",
+    "attacks": "Delivers bites and strong slams, capable of stunning enemies and knocking them down.",
+    "most_powerful_ability": "Charge allows the Goat-Man to deal extra damage and potentially knock targets prone.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Acrobatics and Stealth, allowing for stealthy movements and agile maneuvers.",
+    "additional_information": [
+        "Immune to charmed and frightened conditions",
+        "Solid endurance with high hit points",
+        "Relies on physical strength and speed in combat",
+        "Possesses strong attacks with the potential for stunning effects",
+        "Lacks social skills due to low charisma"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "beastly humanoid with charging abilities",
+        "monstrous goat creature that stuns",
+        "agile creature that knocks down foes",
+        "brutal melee attacker with strong physical traits",
+        "chaotic evil monster with powerful slam attacks"
+    ]
+}

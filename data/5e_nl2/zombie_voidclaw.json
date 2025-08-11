@@ -1,0 +1,55 @@
+{
+    "name": "Voidclaw Zombie",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 143,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "40 feet walking and 20 feet climbing, highly mobile",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "zombie",
+        "necrotic",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "resilient",
+        "mobile",
+        "chaotic",
+        "undead"
+    ],
+    "description": "A small, chaotic evil undead creature, known for its erratic movements and strong necrotic attacks, the Voidclaw Zombie exhibits a distinct ability to avoid damage and inflict ongoing painful wounds.",
+    "memorable": "Its ability to remain standing despite lethal damage makes it difficult to defeat, along with its unique necrotic wound effects.",
+    "goals": "Typically hunts living creatures, seeking to drain their life force.",
+    "relations": "Often encountered with other undead or dark creatures, making it a part of a larger necromantic menace.",
+    "environment": "Commonly found in dark, decayed, or cursed areas.",
+    "strengths": "Fast movement and the ability to inflict ongoing necrotic damage; resilient against attacks.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma scores lead to limited mental capacity.",
+    "attacks": "Multiattack feature allows for quick strikes with either Void Claws or Void Bolts, delivering slashing and necrotic damage.",
+    "most_powerful_ability": "Undead Fortitude allows it to potentially survive lethal damage by making saving throws.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has perception with a poor modifier of -2.",
+    "additional_information": [
+        "Immunity to necrotic and poison damage types",
+        "Disadvantage on opportunity attacks due to Erratic Movement",
+        "Advantage on saves against turning effects",
+        "Does not require air, food, drink, or sleep",
+        "Ongoing necrotic damage from its Void Claw attack can be purged"
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead that drains life with chaotic attacks",
+        "small necrotic inflicting zombie with unique abilities",
+        "zombie immune to turning and dealing ongoing damage",
+        "mobile undead with resilient survival ability",
+        "Voidclaw Zombie chaos in dark environments"
+    ]
+}

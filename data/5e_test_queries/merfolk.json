@@ -1,0 +1,25 @@
+{
+    "name": "Merfolk",
+    "queries": [
+        {
+            "query": "aquatic humanoid with fish-like lower body living in water",
+            "variant": "humanoid creature with fish lower body that lives in water"
+        },
+        {
+            "query": "creature that can breathe both air and water and is a skilled swimmer",
+            "variant": "monster that can breathe air and water and swims well"
+        },
+        {
+            "query": "peaceful water creature that protects its territory",
+            "variant": "calm aquatic being that defends its home"
+        },
+        {
+            "query": "medium humanoid creature with coral armor and trident",
+            "variant": "humanoid creature of medium size that has coral armor and uses a trident"
+        },
+        {
+            "query": "swift aquatic being with darkvision and stealth skills",
+            "variant": "fast water creature that can see in the dark and is stealthy"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Fractal Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>8</HP>
 <summary>The Fractal Golem is a large, unaligned construct that serves as a formidable combatant in battle. It possesses strong defenses, with a high Armor Class of 18, making it quite resilient against physical attacks. With 8 hit points, the golem can endure some damage before being defeated. Its Challenge Rating of 8 indicates that it is a formidable foe for a party of adventurers. The golem is particularly notable for its unique ability to replicate itself upon destruction, creating duplicates that can continue to threaten enemies. However, its intelligence is very low, meaning it cannot form complex strategies, and it is entirely immune to mental effects. The golem has a mix of skills that contribute to its survivability in combat, but it is vulnerable to being overrun by coordinated attacks due to its relatively low hit points. </summary>
 
 <detail>
@@ -37,6 +39,7 @@ Overall, the Fractal Golem represents a formidable challenge, especially when co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fractal Golem
 
 *Large* *Construct* *unaligned*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

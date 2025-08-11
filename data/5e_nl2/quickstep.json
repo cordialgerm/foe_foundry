@@ -1,0 +1,52 @@
+{
+    "name": "Quickstep",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 49,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "50 ft. walking speed, highly mobile",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "agile",
+        "cold damage"
+    ],
+    "adjectives": [
+        "quick",
+        "cunning",
+        "elusive"
+    ],
+    "description": "The Quickstep is a small fey creature embodying agility, skilled in evasion and deception. It wields a moonlight rapier and a hidden dagger, striking swiftly with both piercing and cold damage.",
+    "memorable": "Its ability to evade attacks and paralyze foes with a glittering offensive makes the Quickstep a challenging opponent.",
+    "goals": "To outmaneuver opponents, using speed and deception in combat.",
+    "relations": "Related to other fey creatures, often found in the company of mischievous or trickster beings.",
+    "environment": "Typically encountered in enchanted woodlands or mystical realms.",
+    "strengths": "High mobility, exceptional Dexterity, and unique evasive abilities make it hard to hit.",
+    "weaknesses": "Relatively low hit points compared to its challenge rating, vulnerable when restrained or incapacitated.",
+    "attacks": "Employs a multiattack strategy featuring a moonlight rapier and hidden dagger, focusing on rapid, damaging strikes.",
+    "most_powerful_ability": "Freezing Steel can paralyze enemies within a 10-foot radius, making it both offensive and controlling.",
+    "equipment": "Uses a moonlight rapier and a hidden dagger for melee combat.",
+    "senses": "Possesses truesight up to 60 feet, allowing it to see through illusions and obscured vision.",
+    "skills": "Skilled in deception, intimidation, and perception, showing its cunning and awareness in combat.",
+    "additional_information": [
+        "Evasion grants it exceptional defense against area attacks.",
+        "Fey Ancestry offers resilience against charm effects.",
+        "Quick Dodge enables it to evade attacks effectively.",
+        "Startling Speed provides mobility and makes it difficult to target.",
+        "Condition immunity to unconsciousness improves effectiveness in various situations."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "elusive fey creature with quick attacks",
+        "small fey with cold and piercing attacks",
+        "agile creature that can paralyze opponents",
+        "fey with exceptional evasion abilities",
+        "quick creature that resists being charmed"
+    ]
+}

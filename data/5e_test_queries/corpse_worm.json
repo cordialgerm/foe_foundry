@@ -1,0 +1,25 @@
+{
+    "name": "Corpse Worm",
+    "queries": [
+        {
+            "query": "large monster that inflicts disease and swallows prey",
+            "variant": "big creature that can disease and eat its victims"
+        },
+        {
+            "query": "monstrosity with poison immunity and keen smell",
+            "variant": "creature immune to poison and has a strong sense of smell"
+        },
+        {
+            "query": "undead-looking worm that grapples and poisons",
+            "variant": "zombie-like worm that restrains and inflicts poison"
+        },
+        {
+            "query": "battlefield control creature that deals acid damage",
+            "variant": "enemy controlling the battlefield and inflicting acid damage"
+        },
+        {
+            "query": "abnormal creature with high hit points and low intelligence",
+            "variant": "strange monster with strong defenses but poor smarts"
+        }
+    ]
+}

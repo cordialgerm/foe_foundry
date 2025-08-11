@@ -1,0 +1,25 @@
+{
+    "name": "Giant Shark",
+    "queries": [
+        {
+            "query": "massive underwater predator with sharp teeth",
+            "variant": "huge underwater predator with sharp teeth"
+        },
+        {
+            "query": "shark that can smell blood from miles away in the ocean",
+            "variant": "shark that smells blood from miles away in the ocean"
+        },
+        {
+            "query": "aggressive sea creature that breathes underwater and hunts ships",
+            "variant": "aggressive ocean creature that breathes underwater and attacks ships"
+        },
+        {
+            "query": "giant aquatic beast known for its powerful bite and high hit points",
+            "variant": "huge ocean beast known for strong bite and high HP"
+        },
+        {
+            "query": "dangerous hunter in deep ocean waters that poses a threat to adventurers",
+            "variant": "dangerous predator in deep sea that threatens adventurers"
+        }
+    ]
+}

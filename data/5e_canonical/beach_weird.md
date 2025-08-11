@@ -1,6 +1,8 @@
 <MonsterName/>Beach Weird</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Beach Weird is a large elemental creature that embodies the essence of coastal environments. It serves as a guardian of tide pools and sandy shores, conveying a sense of untamed nature. With moderate defensive capabilities, including a good Armor Class of 14 and a solid pool of hit points totaling 65, it can withstand a fair amount of punishment in combat. Its challenge rating of 3 indicates that it is designed to be a noteworthy adversary for a group of lower-level adventurers. The Beach Weird boasts several strengths, including a powerful slam attack, the ability to create hazardous quicksand, and unique movement abilities that enable it to traverse its watery habitat effectively. However, it is bound to its tide pools, limiting its range, which represents a significant tactical weakness. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ These attributes and abilities make the Beach Weird a unique and dangerous oppon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beach Weird
 
 *Large* *Elemental* *neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Create Quicksand (3/Day):** Creates a 10 ft. radius 5 ft. deep area of quicksand centered on a point it can see within 30' of it. A creature that starts its turn in the quicksand or enters area for the first time on a turn: DC 13 Str save or be grappled by it. Grappled creature must make DC 13 Str save at start of each of its turns or sink 1 foot into the quicksand. A Small creature that sinks 2'+ or a Med creature that sinks 3'+ is restrained instead.
 
 
+</statblock>
 
 

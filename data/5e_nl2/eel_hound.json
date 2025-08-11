@@ -1,0 +1,50 @@
+{
+    "name": "Eel Hound",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 77,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "pack tactics",
+        "slippery"
+    ],
+    "adjectives": [
+        "versatile",
+        "agile",
+        "clever"
+    ],
+    "description": "The Eel Hound is a medium-sized fey creature that embodies characteristics of both land and aquatic life, resembling a sleek and agile hunting dog, with the ability to breathe air and water.",
+    "memorable": "Its unique abilities, like Slick Spittle that creates hazardous terrain, and Water Step for teleportation, make it a challenging opponent in combat.",
+    "goals": "To hunt effectively in regions where land meets water, utilizing its environment to its advantage.",
+    "relations": "Often found in the company of other fey or creatures that inhabit similar environments.",
+    "environment": "Regions where water meets land.",
+    "strengths": "Possesses Pack Tactics for advantageous combat and can teleport to maneuver in combat effectively.",
+    "weaknesses": "Low intelligence and cannot communicate verbally despite understanding Sylvan.",
+    "attacks": "Can perform a powerful Bite attack, dealing 11 piercing damage and grappling the target, alongside using Slick Spittle to hinder opponents.",
+    "most_powerful_ability": "Slick Spittle creates a slippery area that can knock creatures prone, significantly impacting battlefield control.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has proficient Stealth skill, making it difficult to detect.",
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Grapples targets to restrain them during combat.",
+        "The Slick Spittle remains on the ground for one minute.",
+        "Gains advantage on attack rolls when allies are within 5 feet.",
+        "Teleports using Water Step when partially submerged."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that can breathe air and water",
+        "agile fey creature with slippery abilities",
+        "medium-sized monster adept at hunting near water",
+        "sneaky amphibious creature with pack tactics",
+        "versatile creature that creates hazardous terrain"
+    ]
+}

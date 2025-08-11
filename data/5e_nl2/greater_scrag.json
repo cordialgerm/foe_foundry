@@ -1,0 +1,50 @@
+{
+    "name": "Greater Scrag",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "swim 40 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "amphibious",
+        "regeneration",
+        "blood frenzy",
+        "combat predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "chaotic",
+        "aquatic"
+    ],
+    "description": "The Greater Scrag is a large, chaotic evil monstrosity found lurking in murky depths, known for its formidable strength and resilient nature. It has a tough exterior with natural armor and a powerful physique.",
+    "memorable": "This creature can regenerate health while submerged, making it a persistent threat.",
+    "goals": "To hunt weaker creatures and establish dominance in its aquatic territory.",
+    "relations": "Often found in swamps or near bodies of water, potentially alongside other aquatic threats.",
+    "environment": "Murky water bodies and swamps.",
+    "strengths": "Excellent hit points and strong regeneration abilities while submerged.",
+    "weaknesses": "Slow movement and vulnerability to acid and fire, which cancels its regeneration.",
+    "attacks": "The Greater Scrag can make three attacks in a turn: one vicious bite and two claw strikes, delivering substantial damage to enemies.",
+    "most_powerful_ability": "Regeneration, which allows it to heal while submerged and remain a significant challenge in combat.",
+    "equipment": null,
+    "senses": "It has darkvision up to 60 feet, allowing it to see in the dark aquatic environments.",
+    "skills": null,
+    "additional_information": [
+        "Blood Frenzy grants advantage against wounded opponents.",
+        "Can only be truly killed if it starts its turn with 0 hit points.",
+        "Preferred habitat includes swamps and dark waters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large amphibious monster with regeneration",
+        "chaotic evil creature from murky swamps",
+        "creature with blood frenzy abilities",
+        "strong water monster that regenerates health",
+        "predator lurking in swampy water"
+    ]
+}

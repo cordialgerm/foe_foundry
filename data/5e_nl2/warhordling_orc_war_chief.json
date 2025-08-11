@@ -1,0 +1,53 @@
+{
+    "name": "Warhordling Orc War Chief",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "orc",
+        "war chief",
+        "combat",
+        "leader"
+    ],
+    "adjectives": [
+        "formidable",
+        "aggressive",
+        "tactical"
+    ],
+    "description": "The Warhordling Orc War Chief is a strong and dexterous humanoid, showcasing prowess in melee combat with its imposing greataxe. It has a rugged appearance typical of orcs, reflecting its battle-hardened nature.",
+    "memorable": "This war chief excels in combat tactics and physical prowess, making it a significant threat on the battlefield.",
+    "goals": "To lead and inspire other orcs in battle, employing aggressive tactics to overpower enemies.",
+    "relations": "Often commands a group of orcs and may be allied with other aggressive humanoids or creatures.",
+    "environment": "Typically found in harsh, war-torn lands or within tribal settlements.",
+    "strengths": "High Strength and Dexterity scores make it a formidable melee combatant with strong tactical movement abilities.",
+    "weaknesses": "Average Intelligence may limit strategic planning outside of direct combat scenarios.",
+    "attacks": "Can strike twice in a turn with a greataxe, delivering notable slashing damage while benefiting from tactical positioning.",
+    "most_powerful_ability": "Aggressive Charge, allowing it to quickly engage enemies while attacking from an advantageous position.",
+    "equipment": "Greataxe, used for melee attacks.",
+    "senses": "Possesses passive Perception of 14, enhancing its ability to detect enemies and threats.",
+    "skills": "Excels in Athletics and Stealth, showcasing versatility in physical tasks and ambush tactics.",
+    "additional_information": [
+        "Strength 18 and Dexterity 18 for exceptional combat ability.",
+        "Uses Whirling Axe for swift attack options.",
+        "Ability to intimidate and influence others due to good Charisma.",
+        "Good Constitution provides resilience in battle.",
+        "Fast movement speed enables aggressive positioning."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong orc war chief with greataxe",
+        "aggressive humanoid leader with high strength",
+        "tactical combat orc with fast movement",
+        "orc chief known for intimidation and strength",
+        "medium humanoid known for melee attacks"
+    ]
+}

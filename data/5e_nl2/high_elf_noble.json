@@ -1,0 +1,50 @@
+{
+    "name": "High Elf Noble",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 13,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "noble",
+        "social",
+        "manipulator"
+    ],
+    "adjectives": [
+        "elegant",
+        "charismatic",
+        "skilled"
+    ],
+    "description": "The High Elf Noble embodies elegance and charisma typical of high elf lineage, wielding a rapier and capable of spellcasting.",
+    "memorable": "Notable for their social prowess and ability to manipulate social situations.",
+    "goals": "Focus on social interactions and gaining influence in social encounters.",
+    "relations": "May associate with other high elves or nobility.",
+    "environment": "Often found in courtly or diplomatic settings.",
+    "strengths": "Excellent in deception, intimidation, and persuasion, making them formidable in social situations.",
+    "weaknesses": "Low physical strength and constitution limits resilience in direct combat.",
+    "attacks": "Attacks with a rapier dealing piercing damage; uses Ray of Frost to impair movement.",
+    "most_powerful_ability": "Ray of Frost can deal cold damage and reduce target's speed, providing strategic combat advantages.",
+    "equipment": "Rapier",
+    "senses": null,
+    "skills": "Excels in deception, intimidation, performance, and persuasion, showcasing strong social skills.",
+    "additional_information": [
+        "Can use Parry to increase AC against attacks.",
+        "Uses Ray of Frost cantrip for offense and control.",
+        "Total charm from high charisma aids in negotiations."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast the cantrip Ray of Frost for ranged cold damage and speed reduction.",
+    "test_queries": [
+        "elegant high elf with social skills",
+        "charismatic noble who manipulates others",
+        "high elf skilled in deception and intimidation",
+        "noble that can cast Ray of Frost",
+        "high elf melee attacker with parry ability"
+    ]
+}

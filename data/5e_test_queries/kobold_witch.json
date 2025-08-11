@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Witch",
+    "queries": [
+        {
+            "query": "small humanoid with darkvision and spellcasting abilities",
+            "variant": "humanoid that is small, has darkvision, and casts spells"
+        },
+        {
+            "query": "cunning creature with high charisma and tactical advantages in combat",
+            "variant": "smart creature that uses high charisma and has tactical skills in battles"
+        },
+        {
+            "query": "creature that uses pack tactics and has disadvantages in sunlight",
+            "variant": "monster with pack tactics and suffers penalties in sunlight"
+        },
+        {
+            "query": "Kobold thrived in group settings with spellcasting and stealth skills",
+            "variant": "Kobold that excels in groups and has spells and stealth abilities"
+        },
+        {
+            "query": "Kobold Witch with temporary hit points and hex ability",
+            "variant": "Witch Kobold that provides temporary HP and has the hex feature"
+        }
+    ]
+}

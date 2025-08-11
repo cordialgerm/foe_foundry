@@ -1,0 +1,50 @@
+{
+    "name": "Illhveli, Kembingur",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Gargantuan",
+    "hp": 210,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "swim 60 ft., walk 5 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "predator",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "fearsome",
+        "relentless"
+    ],
+    "description": "The Kembingur is a gargantuan aquatic creature with significant physical power and a menacing presence. It has a massive body well-suited for melee combat, and its skin is covered with natural armor.",
+    "memorable": "Its ability to smell blood from miles away and its 'Blood Frenzy' that gives it advantage against weakened foes makes it notably deadly.",
+    "goals": "The Kembingur typically seeks to hunt and ambush its prey in aquatic environments.",
+    "relations": "It may be found alongside or clashing with other aquatic predators.",
+    "environment": "Usually found in oceans or large bodies of water.",
+    "strengths": "Exceptional melee combat abilities enhanced by 'Blood Frenzy' and high resilience due to its large hit point pool.",
+    "weaknesses": "Lower Intelligence limits its tactical options compared to more cunning foes.",
+    "attacks": "The Kembingur uses a powerful bite attack and a sweeping tail strike against its opponents.",
+    "most_powerful_ability": "Blood Scent allows it to track injured creatures from up to 5 miles away.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive Perception of 20.",
+    "skills": "Skilled in Athletics and Perception, making it adept at navigating its environment and detecting threats.",
+    "additional_information": [
+        "Can hold its breath for an hour, allowing it to remain submerged.",
+        "Deals double damage to objects and structures as a siege monster.",
+        "Creates difficult terrain with its Churn Water ability.",
+        "Resistant to cold damage.",
+        "Immune to the prone condition."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan aquatic predator with chaotic abilities",
+        "creature that senses blood in water",
+        "massive monster with blood frenzy attack",
+        "brutal water beast with difficult terrain ability",
+        "chaotic evil monster in large bodies of water"
+    ]
+}

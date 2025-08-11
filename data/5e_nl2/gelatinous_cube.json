@@ -1,0 +1,52 @@
+{
+    "name": "Gelatinous Cube",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 84,
+    "ac": 6,
+    "srd": true,
+    "cr": "2",
+    "movement": "walk 15 ft., swim 15 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ooze",
+        "ambush",
+        "dungeon"
+    ],
+    "adjectives": [
+        "transparent",
+        "menacing",
+        "mindless"
+    ],
+    "description": "A large, transparent ooze in the shape of a perfect cube that slowly moves through dungeons, dissolving and consuming organic material.",
+    "memorable": "Its nearly invisible form makes it a deadly ambush predator that can engulf and digest living creatures.",
+    "goals": "To consume any organic matter that enters its space.",
+    "relations": "Often found in old dungeons, keeps corridors clean of debris and bodies.",
+    "environment": "Dungeons and underground passages.",
+    "strengths": "High hit points and strong ability to engage multiple foes through engulfing attacks.",
+    "weaknesses": "Low Armor Class and very slow movement speed make it vulnerable to ranged attacks.",
+    "attacks": "Engulfs creatures to restrain and deal ongoing acid damage, along with a melee attack using its pseudopod.",
+    "most_powerful_ability": "Engulf, allowing it to consume or restrain multiple creatures.",
+    "equipment": null,
+    "senses": "Has blindsight out to 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "Its passive Perception is low, making it unlikely to notice stealthy creatures.",
+    "additional_information": [
+        "Immunity to conditions like blinded, charmed, deafened, and frightened.",
+        "Can move engulfed creatures to absorb damage directed at it.",
+        "Takes disadvantage on attack rolls in sunlight.",
+        "Effectively invisible when motionless, making it a surprise threat.",
+        "Does not require air or sleep, making it active during long encounters."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "invisible dungeon predator",
+        "sticky cube that engulfs",
+        "large ooze in dungeon corridors",
+        "transparent cube that deals acid damage",
+        "menacing gelatinous dungeon monster"
+    ]
+}

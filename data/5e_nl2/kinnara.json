@@ -1,0 +1,53 @@
+{
+    "name": "Kinnara",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 50 ft. and walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "celestial",
+        "protector",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "lawful",
+        "good",
+        "magical"
+    ],
+    "description": "The Kinnara is a medium-sized celestial creature radiating goodness and law, known for its strong ties to protective spirits.",
+    "memorable": "It can enhance weapon attacks with radiant damage and possesses an innate loyalty to its partner, making it a formidable ally.",
+    "goals": "To protect its partner and ensure the safety of others while combating evil.",
+    "relations": "Kinnara can be encountered alongside other celestial beings or allies who uphold law and goodness.",
+    "environment": "Typically found in places of virtue or areas under celestial conflict.",
+    "strengths": "Resistant to radiant damage and most physical damage from non-magical attacks, immune to being charmed or frightened.",
+    "weaknesses": "Vulnerable to spells and effects targeting celestial beings.",
+    "attacks": "Can use both melee and ranged attacks, dealing dual damage types with its shortsword and shortbow.",
+    "most_powerful_ability": "Discordant Refrain can frighten and deal psychic damage to multiple enemies while providing a unique auditory threat.",
+    "equipment": "Shortsword and shortbow for both melee and ranged engagements.",
+    "senses": "Has a passive Perception score of 13, allowing it to detect ambushes and hidden threats effectively.",
+    "skills": "Excels in insight and performance skills, reflecting its high Wisdom and Charisma.",
+    "additional_information": [
+        "Can innately cast multiple spells without material components.",
+        "Interior bond ensures it remains loyal to its partner.",
+        "Magical weapon attacks deal additional radiant damage.",
+        "Can teleport to its partner to share damage from attacks.",
+        "Resistant to common mundane threats."
+    ],
+    "damage_types": [
+        "radiant",
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcaster with abilities including healing and charm effects.",
+    "test_queries": [
+        "celestial protector with radiant attacks",
+        "magical creature that heals allies",
+        "angelic being that frightens enemies",
+        "partner protector that shares pain",
+        "flying celestial creature with innate spells"
+    ]
+}

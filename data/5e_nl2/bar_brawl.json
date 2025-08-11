@@ -1,0 +1,50 @@
+{
+    "name": "Bar Brawl",
+    "creature_type": "Humanoid",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 67,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "brawler",
+        "chaotic",
+        "barroom"
+    ],
+    "adjectives": [
+        "gigantic",
+        "fearsome",
+        "chaotic"
+    ],
+    "description": "The Bar Brawl is a gigantic humanoid, embodying rough-and-tumble barroom fights with a considerable presence. It strikes fear into the hearts of tavern patrons.",
+    "memorable": "Its ability 'Liquid Courage' allows it to temporarily bolster its resilience, making it a formidable opponent in close quarters.",
+    "goals": "To create chaos and assert dominance in combat, particularly in taverns or bars.",
+    "relations": "Can often be found in the company of rowdy patrons, bar fighters, or serving as a muscle for bar owners.",
+    "environment": "Typically found in taverns, bars, or other places of chaotic feasting and drinking.",
+    "strengths": "Possesses significant hit points and immunities to various conditions, allowing it to stay in the fight longer.",
+    "weaknesses": "Vulnerable to bludgeoning damage and lacks healing abilities outside of its special powers.",
+    "attacks": "Utilizes melee attacks with barstools and broken bottles, embodying the improvised nature of bar brawls.",
+    "most_powerful_ability": "'Liquid Courage' provides temporary hit points, enhancing its durability in battle.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can share space with other creatures, providing unique mobility.",
+        "Attacks can inflict significant damage in chaotic settings.",
+        "Limited to melee combat and darts, lacking ranged versatility beyond that.",
+        "Cannot regain hit points normally, making prolonged encounters risky.",
+        "The presence of the Bar Brawl often incites mayhem in its environment."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gigantic humanoid in a bar fight",
+        "barroom brawler creature",
+        "chaotic tavern monster",
+        "street fighter style creature",
+        "monster with alcohol-induced abilities"
+    ]
+}

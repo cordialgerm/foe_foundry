@@ -1,0 +1,25 @@
+{
+    "name": "Duergar",
+    "queries": [
+        {
+            "query": "grim stony-skinned dwarf that lives underground",
+            "variant": "grim stone dwarf that lives in the underground"
+        },
+        {
+            "query": "humanoid with glowing red eyes and the ability to turn invisible",
+            "variant": "humanoid with glowing red eyes and can turn invisible"
+        },
+        {
+            "query": "gray dwarf from the Underdark known for militaristic society",
+            "variant": "gray dwarf from Underdark known for its militaristic society"
+        },
+        {
+            "query": "dour malevolent dwarf capable of growing to giant size",
+            "variant": "gloomy evil dwarf that can grow to giant size"
+        },
+        {
+            "query": "underground creature vulnerable to sunlight and enslaves others",
+            "variant": "subterranean creature sensitive to sunlight and enslaving others"
+        }
+    ]
+}

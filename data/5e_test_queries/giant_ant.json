@@ -1,0 +1,25 @@
+{
+    "name": "Giant Ant",
+    "queries": [
+        {
+            "query": "large beast with grappling bite and a poisonous sting",
+            "variant": "large creature with poisonous sting and bite that grapples"
+        },
+        {
+            "query": "creature that has keen smell and high hit points",
+            "variant": "monster with a keen sense of smell and good hit points"
+        },
+        {
+            "query": "strong ant-like creature that lives in colonies and can immobilize opponents",
+            "variant": "strong ant creature from colonies that can immobilize enemies"
+        },
+        {
+            "query": "monster with a movement speed of 40 feet and natural armor",
+            "variant": "creature that moves 40 feet and has natural defense"
+        },
+        {
+            "query": "combat beast known for its bite attack and strong constitution",
+            "variant": "beast in combat known for its strong bite and high constitution"
+        }
+    ]
+}

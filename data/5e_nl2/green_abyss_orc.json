@@ -1,0 +1,54 @@
+{
+    "name": "Green Abyss Orc",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 15,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "orc",
+        "poison",
+        "agile",
+        "chaotic"
+    ],
+    "adjectives": [
+        "vicious",
+        "cunning",
+        "agile",
+        "poisonous",
+        "unstable"
+    ],
+    "description": "The Green Abyss Orc is a medium-sized humanoid known for its green skin and agility. It possesses a spear and exhibits a chaotic, vicious demeanor in combat.",
+    "memorable": "Its ability to incapacitate foes with poison makes it particularly dangerous despite its low hit points.",
+    "goals": "Typical goals include raiding, ambushing adventurers, or simply causing chaos.",
+    "relations": "Often found in groups with other chaotic orcs or malevolent creatures.",
+    "environment": "Commonly found in dark or swampy areas, preferring places where they can ambush targets.",
+    "strengths": "Exceptional dexterity and constitution enhance its combat maneuvers and resilience.",
+    "weaknesses": "Sunlight sensitivity imposes significant disadvantages in bright environments.",
+    "attacks": "Uses a poisoned spear in both melee and ranged attacks, with a chance to poison targets.",
+    "most_powerful_ability": "The Poisoned Spear attack can incapacitate enemies, leaving them paralyzed for an hour.",
+    "equipment": "Wields a poisoned spear.",
+    "senses": "Possesses darkvision extending 90 feet, enabling it to navigate effectively in darkness.",
+    "skills": "Skilled in acrobatics and stealth, making it capable of sneaking and agile movement.",
+    "additional_information": [
+        "Gain advantage on movement towards enemies with aggressive ability.",
+        "Immunities to poison damage and the poisoned condition.",
+        "Relies on ambush tactics, leveraging its mobility.",
+        "Uses terrain to its advantage with climbing speed."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile green orc with poison spear",
+        "chaotic evil humanoid skilled at ambushing",
+        "orc that can paralyze foes with poison",
+        "Green Abyss Orc climbing speed and sunlight sensitivity",
+        "Melee or ranged attacker with vicious poison abilities"
+    ]
+}

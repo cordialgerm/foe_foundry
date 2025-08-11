@@ -1,0 +1,25 @@
+{
+    "name": "Roggenwolf",
+    "queries": [
+        {
+            "query": "agile predator that attacks with necrotic damage and has a frightening howl",
+            "variant": "predator that is agile, uses necrotic bite attack, and has a scary howl"
+        },
+        {
+            "query": "medium-sized monstrosity with stealth abilities living in dark environments",
+            "variant": "monstrosity of medium size that stealthily inhabits dark places"
+        },
+        {
+            "query": "creature with darkvision and keen smell that instills fear in its enemies",
+            "variant": "monster with enhanced smell, darkvision, and fear-inducing abilities"
+        },
+        {
+            "query": "Roggenwolf's howling ability to frighten and restrain nearby foes",
+            "variant": "howl ability of Roggenwolf that can frighten and bind nearby enemies"
+        },
+        {
+            "query": "neutral evil creature with resistance to nonmagical damage unless using silver",
+            "variant": "evil neutral monster that resists normal damage from non-magical attacks unless silver"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Algorith",
+    "creature_type": "Construct",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 153,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "fly 40 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "combat",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "tactical"
+    ],
+    "description": "The Algorith is a formidable medium-sized construct known for its exceptional armor and durability, with physical prowess evident in its high Strength and Constitution scores. It possesses a sleek, mechanical form that suggests both power and intelligence, equipped to deal significant force damage and manipulate spells.",
+    "memorable": "Its ability to negate spells and its stunning explosion capability make it a unique and challenging opponent.",
+    "goals": "To dominate in combat and strategically manipulate the battlefield.",
+    "relations": "It may be encountered alongside other constructs or magical entities that share a similar purpose.",
+    "environment": "Typically found in places of magic, order, or constructs hidden in labs or clockwork cities.",
+    "strengths": "Immunity to many conditions and damages, and high durability.",
+    "weaknesses": "Reliance on physical power, making it vulnerable to certain attack types.",
+    "attacks": "The Logic Razor is a powerful melee weapon strike, while the Cone of Negation delivers area force damage and dispels magic.",
+    "most_powerful_ability": "The Reality Bomb can deal significant area damage and stun foes, creating tactical advantages in combat.",
+    "equipment": null,
+    "senses": "The Algorith has darkvision up to 60 feet and a passive perception of 17, enhancing its spatial awareness.",
+    "skills": "Proficient in Athletics, Insight, Investigation, and Perception, indicating its capabilities in physical feats and awareness.",
+    "additional_information": [
+        "Construct Nature allows it to function without basic needs like air and sleep.",
+        "Immutable Form grants immunity to alterations of its physical state.",
+        "Can cast a variety of spells to support itself and allies in combat.",
+        "Possesses high Charisma, enhancing its spellcasting abilities.",
+        "Resilient against many forms of damage, making it a robust opponent."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Casts spells at will, including bless, detect magic, dimension door, and dispel magic, along with commune and wall of force once per day.",
+    "test_queries": [
+        "powerful magical construct",
+        "combat entity with spellcasting",
+        "stunning explosive enemy",
+        "force damage dealing construct",
+        "mechanical opponent with immunity"
+    ]
+}

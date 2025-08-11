@@ -1,0 +1,25 @@
+{
+    "name": "Truant Devourer",
+    "queries": [
+        {
+            "query": "undead creature that can teleport and drain life",
+            "variant": "creature that can teleport and drains life, undead"
+        },
+        {
+            "query": "dark humanoid that targets heretics and has necrotic powers",
+            "variant": "humanoid with necrotic abilities and targets heretics in the dark"
+        },
+        {
+            "query": "highly durable undead with magic resistance and melee attacks",
+            "variant": "undead that is very durable, has magic resistance, and uses melee attacks"
+        },
+        {
+            "query": "powerful medium undead that can turn invisible and use claws",
+            "variant": "medium powerful undead that uses claws and can become invisible"
+        },
+        {
+            "query": "batttlefield creature with significant HP and a challenge rating of 9",
+            "variant": "creature with a challenge rating of 9 that has significant hit points on the battlefield"
+        }
+    ]
+}

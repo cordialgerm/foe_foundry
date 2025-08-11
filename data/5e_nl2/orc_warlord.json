@@ -1,0 +1,53 @@
+{
+    "name": "Orc Warlord",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 17,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 feet with average speed on the battlefield.",
+    "role": "Bruiser",
+    "tags": [
+        "orc",
+        "warlord",
+        "melee combat",
+        "leader",
+        "tactician"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "powerful",
+        "tactical"
+    ],
+    "description": "The Orc Warlord is a strong and commanding medium humanoid clad in half plate armor, perfect for leading troops in melee combat and displaying exceptional martial prowess.",
+    "memorable": "Its ability to increase damage output and rally allies makes it a deadly force in battle.",
+    "goals": "To lead its allies to victory through melee combat and tactical positioning.",
+    "relations": "Typically found among other orcish warriors, commanding a group of allies in battle.",
+    "environment": "Commonly found in orc strongholds or in battlefields where orc tribes gather.",
+    "strengths": "High damage output with weapon attacks and provides tactical advantages to allies.",
+    "weaknesses": "Vulnerable to ranged attacks due to average Dexterity.",
+    "attacks": "Utilizes both a longsword and a skull club for powerful melee attacks, capable of making multiple strikes in one turn.",
+    "most_powerful_ability": "Warlord's Rally, which grants allies advantage on their attack rolls.",
+    "equipment": "Equipped with a longsword and a skull club, along with half plate armor.",
+    "senses": "Perception score of 13, indicating a keen awareness of its surroundings.",
+    "skills": "Limited Intelligence results in poor knowledge abilities, but average Wisdom adds slight advantages in perception.",
+    "additional_information": [
+        "Has the ability to make multiattacks, increasing its offensive capabilities.",
+        "The Martial Adept ability enhances its weapon damage dramatically.",
+        "Possesses a strong Constitution, contributing to its durability in combat.",
+        "Can strategically reposition or gain advantages through Warrior\u2019s Advance.",
+        "Leads orc troops with authority and strength."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong orc leader with powerful melee attacks",
+        "warlord that enhances ally attack rolls",
+        "formidable humanoid in half plate armor",
+        "orc warlord capable of multiple attacks",
+        "orc with tactical abilities and high damage output"
+    ]
+}

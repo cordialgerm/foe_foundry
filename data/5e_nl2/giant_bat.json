@@ -1,0 +1,52 @@
+{
+    "name": "Giant Bat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 22,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "10 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "predator",
+        "nocturnal",
+        "flying",
+        "beast"
+    ],
+    "adjectives": [
+        "large",
+        "swift",
+        "nocturnal",
+        "dangerous"
+    ],
+    "description": "A large predator with a wingspan up to 15 feet, known for its sharp teeth and powerful wings, it hunts using echolocation and is found in dark environments like caves and forests.",
+    "memorable": "Its dizzying screech can disorient foes, creating chaos in combat despite its lower combat capabilities.",
+    "goals": "To hunt smaller creatures at night and defend itself when threatened.",
+    "relations": "Often found in caves or forests alongside other nocturnal creatures, could be encountered with wolves or other predatory animals.",
+    "environment": "Caves, forests, or any dark environments where they roost during the day.",
+    "strengths": "High agility and sensory abilities, particularly through echolocation and keen hearing.",
+    "weaknesses": "Low hit points and lack of significant defensive measures make it vulnerable to attacks.",
+    "attacks": "Bite attack dealing moderate piercing damage; can also disrupt foes with a dizzying screech.",
+    "most_powerful_ability": "Dizzying Screech can disorient an enemy, making them move randomly.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, effective for navigating darkness, but loses it if deafened.",
+    "skills": "Effective at stealth with a high score of 14.",
+    "additional_information": [
+        "Uses echolocation to navigate in darkness.",
+        "Can disrupt combat dynamics with its dizzying screech.",
+        "Found in areas with natural darkness.",
+        "Though not tough, its flying ability adds to its elusiveness.",
+        "Primarily feeds on smaller creatures but can attack larger threats."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large nocturnal flying predator",
+        "bat with echolocation in caves",
+        "swift monster that hunts at night",
+        "large beast with disorienting screech",
+        "monster that attacks with sharp teeth"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Black Shuck</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Black Shuck is a formidable Large Fiend with a chaotic evil alignment, well-known for its intimidating presence and deadly abilities. Boasting a high Armor Class of 17 thanks to its natural armor, it is resilient in combat, accompanied by a substantial pool of Hit Points totaling 157. With a Challenge Rating of 11, it poses a significant threat to adventurers, making it a worthy foe in any encounter. The Black Shuck excels in melee combat, using its high Strength and Dexterity to deliver powerful attacks, while also leveraging its unique abilities to outmaneuver and debilitate its enemies. However, it is crucial to note that the Black Shuck has vulnerabilities against magical attacks made with silvered weapons.</summary>
 
 <detail>
@@ -37,6 +39,7 @@ Overall, the Black Shuck is a powerful and versatile foe that can disrupt combat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Shuck
 
 *Large* *Fiend* *chaotic evil*
@@ -77,5 +80,6 @@ Source: 5e_artisinal_monsters
 - **Mist Stalker:** In dim light fog or mist it takes the Hide action.
 
 
+</statblock>
 
 

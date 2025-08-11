@@ -1,0 +1,54 @@
+{
+    "name": "Altar Flame Golem",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 152,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 20 ft.",
+    "role": "Defender",
+    "tags": [
+        "golem",
+        "fire",
+        "construct",
+        "guardian"
+    ],
+    "adjectives": [
+        "formidable",
+        "fiery",
+        "durable",
+        "immovable"
+    ],
+    "description": "The Altar Flame Golem is a large construct, characterized by its fiery essence and solid form, resembling an altar adorned with an eternal flame. Its body is made of hot stone, radiating heat and visually intimidating.",
+    "memorable": "The golem is unique due to its ability to absorb fire damage, regaining health instead of taking it, and its devastating explosion upon destruction, making it a tactical challenge for adventurers.",
+    "goals": "Primarily serves as a guardian for sacred sites or important locations, protecting them from intruders.",
+    "relations": "May be found alongside other constructs or fire-based creatures, particularly in areas of worship or ancient ruins.",
+    "environment": "Typically located in sacred grounds, ancient temples, or places of eternal flame.",
+    "strengths": "Immunity to fire, poison, and psychic damage; resilience against nonmagical attacks; ability to regain hit points from fire damage.",
+    "weaknesses": "Vulnerable to cold damage, which can severely impair its combat effectiveness.",
+    "attacks": "Can perform melee slam attacks that deal both bludgeoning and additional fire damage, with the powerful Flame Breath to engulf multiple targets in flames.",
+    "most_powerful_ability": "Death Burst - Explodes upon being destroyed, dealing significant fire damage to all nearby creatures.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Disguises itself as an altar while motionless, making it a deceptive guardian.",
+        "Immune to many debilitating effects and conditions.",
+        "Absorbs fire damage without harm, making it particularly resilient in flame-heavy environments.",
+        "Magic attacks are particularly effective due to its magical weapon attacks.",
+        "Has a low Dexterity, making it less agile in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery guardian golem",
+        "construct with fire abilities",
+        "altar resembling golem",
+        "explosive monster upon defeat",
+        "vulnerable to cold damage"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Ancient Blue Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Gargantuan",
+    "hp": 481,
+    "ac": 22,
+    "srd": true,
+    "cr": "23",
+    "movement": "40 ft. walking, 40 ft. burrowing, 80 ft. flying",
+    "role": null,
+    "tags": [
+        "dragon",
+        "chromatic",
+        "lightning",
+        "territorial"
+    ],
+    "adjectives": [
+        "magnificent",
+        "powerful",
+        "intelligent"
+    ],
+    "description": "An Ancient Blue Dragon is adorned with scales that shimmer like sapphires, boasting piercing eyes filled with intelligence and pride. It conducts its reign from vast underground caverns filled with treasure beneath the deserts.",
+    "memorable": "Known for unleashing devastating bolts of electricity with its lightning breath attack, the dragon combines formidable physicality with powerful spellcasting abilities and tactical prowess in battle.",
+    "goals": "To dominate vast territories, control creatures, and hoard treasures, while asserting its pride and fearsome presence.",
+    "relations": "Typically found ruling over lesser creatures, engaging in battles with adventurers, or serving as an antagonist in high-level campaigns.",
+    "environment": "Usually inhabits underground lairs in desert regions, emerging to assert dominance over its surroundings.",
+    "strengths": "Exceptionally durable with high hit points and a strong armor class, combined with powerful area attacks and the ability to manipulate the battlefield using spells.",
+    "weaknesses": "Its relatively low dexterity makes it potentially vulnerable to ranged attacks from agile opponents.",
+    "attacks": "The dragon can attack with a bite that inflicts piercing and lightning damage, claws that deal slashing damage, and a tail that can push foes away. It can unleash arcing lightning attacks that can jump to multiple targets.",
+    "most_powerful_ability": "Lightning Breath, an area-of-effect attack that targets multiple creatures in a linear path, delivering significant lightning damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight and an exceptionally high passive perception, allowing it to notice creatures effectively.",
+    "skills": "Incredibly perceptive with a high perception score, making it difficult to approach undetected.",
+    "additional_information": [
+        "Ability to ignore difficult terrain in sandy environments.",
+        "Can use unique Dune Splitter ability to become concealed in sand, gaining a significant advantage in stealth.",
+        "Possesses Legendary Resistance, enhancing its resilience against spells and effects.",
+        "Can manipulate foes with its Frightful Presence, making it a terrifying adversary.",
+        "Creates regional effects that can manifest following its demise."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcaster capable of casting spells like blur, silent image, blight, and hypnotic pattern without requiring components.",
+    "test_queries": [
+        "enormous lightning dragon",
+        "sapphire scaled dragon",
+        "fearsome desert dragon",
+        "powerful chromatic dragon",
+        "dragon with devastating breath attack"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Enchantress</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>123</HP>
 <summary>The Enchantress is a medium humanoid creature with a lawful evil alignment, known for her potent mixture of charm and intelligence. With an impressive armor class of 16 and a substantial pool of 123 hit points, she is a formidable opponent in combat, able to withstand considerable punishment. Her challenge rating of 7 indicates a significant threat level, making her a noteworthy adversary for adventuring parties. The Enchantress excels in manipulating others and dealing damage through her magical weapons and spells, making her a master of battlefield control and deception. However, her effectiveness is reduced in sunlight due to her sensitivity to it, making her vulnerable in bright environments. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, she can utilize Shadow Traveler up to three times a day, allo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Enchantress
 
 *Medium* *Humanoid* *Lawful Evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Traveler (3/Day):** While in shadows, dim light, or darkness, the shadow fey disappears into the darkness and reappears in an unoccupied space it can see within 30 feet. A tendril of inky smoke appears at the origin and destination when it uses this bonus action.
+</statblock>
 
 

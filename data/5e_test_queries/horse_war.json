@@ -1,0 +1,25 @@
+{
+    "name": "War Horse",
+    "queries": [
+        {
+            "query": "large horse known for combat skills and speed",
+            "variant": "big horse famous for its fighting skills and quickness"
+        },
+        {
+            "query": "horse with trample ability that serves in battle",
+            "variant": "equine creature with trampling power that fights in wars"
+        },
+        {
+            "query": "tall war beast with powerful hooves and tough armor",
+            "variant": "large battle beast with strong legs and sturdy protection"
+        },
+        {
+            "query": "combat-trained horse that helps riders in fights",
+            "variant": "trained horse for battle that aids its riders during combats"
+        },
+        {
+            "query": "horse with low intelligence and high strength used in battles",
+            "variant": "equine with poor smarts and strong body used for fighting"
+        }
+    ]
+}

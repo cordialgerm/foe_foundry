@@ -1,0 +1,25 @@
+{
+    "name": "Ghostwalk Spider",
+    "queries": [
+        {
+            "query": "large ghostly spider that can walk through walls and has poison attacks",
+            "variant": "big ghost spider that can move through walls and has poison abilities"
+        },
+        {
+            "query": "stealthy monster with high Dexterity that lives in dark environments",
+            "variant": "sneaky creature with high dexterity dwelling in shadowy places"
+        },
+        {
+            "query": "predatory spider known for its ghostly form and deadly snares",
+            "variant": "hunter spider famous for its spectral shape and deadly traps"
+        },
+        {
+            "query": "high health giant spider capable of immobilizing enemies and dealing poison damage",
+            "variant": "big spider with high HP able to trap foes and inflict poison damage"
+        },
+        {
+            "query": "monstrosity with evasion abilities that can become invisible",
+            "variant": "creature with dodging powers that can turn invisible"
+        }
+    ]
+}

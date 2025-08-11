@@ -1,0 +1,54 @@
+{
+    "name": "Adult Gold Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Huge",
+    "hp": 256,
+    "ac": 19,
+    "srd": true,
+    "cr": "17",
+    "movement": "40 ft., fly 80 ft., swim 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "gold",
+        "metallic",
+        "mythical"
+    ],
+    "adjectives": [
+        "formidable",
+        "majestic",
+        "powerful",
+        "wise"
+    ],
+    "description": "The Adult Gold Dragon is a majestic creature with regal scales that shine like molten gold. It has massive wings and a fierce expression, capable of striking with its formidable bite and sharp claws.",
+    "memorable": "The dragon's ability to breathe fire in devastating cones and its power to charm or frighten other creatures makes it a threat in combat. Its presence is often associated with tales of wisdom and valor.",
+    "goals": "The Adult Gold Dragon seeks to protect its territory and allies, often defending against evil forces while promoting good in the world.",
+    "relations": "Gold Dragons often have relationships with other good-aligned creatures and could be seen with allies such as celestial beings or adventurers.",
+    "environment": "Typically found in mountainous regions, ancient forests, or secluded lairs that reflect its noble nature.",
+    "strengths": "Immunity to fire damage, high mobility with flying speed, and strong presence in combat, bolstered by spells and special abilities.",
+    "weaknesses": "Occasional vulnerability to spells targeting mental fortitude due to its reliance on Charisma for spellcasting.",
+    "attacks": "Utilizes powerful bite, claw, and tail attacks combined with fire breath and weakening breath to dominate on the battlefield.",
+    "most_powerful_ability": "Molten Breath unleashes a cone of molten gold that devastates enemies while potentially immobilizing them.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet allows it to perceive its surroundings entirely within darkness, enhancing its combat effectiveness.",
+    "skills": "Notably skilled in persuasion and stealth, the dragon can navigate social situations and ambush enemies.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saving throws, enhancing its durability.",
+        "The ability to grant nearby allies bonuses to their saving throws and immunity to fear effects.",
+        "Change Shape ability enables it to transform into humanoid or beast forms for versatility.",
+        "Capable of using the Frightful Presence to instill fear among enemies.",
+        "Creation of pools of molten gold when utilizing its Legendary Resistance, adding a unique environmental danger."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting with abilities to cast spells like bless, healing word, banishment, and greater restoration.",
+    "test_queries": [
+        "majestic gold dragon",
+        "powerful fire-breathing dragon",
+        "legendary gold dragon abilities",
+        "dragon with healing powers",
+        "formidable metallic dragon"
+    ]
+}

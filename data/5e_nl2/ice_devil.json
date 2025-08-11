@@ -1,0 +1,56 @@
+{
+    "name": "Ice Devil",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 180,
+    "ac": 18,
+    "srd": true,
+    "cr": "14",
+    "movement": "40 feet walk speed",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "cold",
+        "tactician"
+    ],
+    "adjectives": [
+        "menacing",
+        "frosty",
+        "calculating",
+        "powerful"
+    ],
+    "description": "The Ice Devil is a towering, insect-like fiend with a hard, icy exoskeleton and a long, spiked tail. Known for its cold demeanor and mastery over ice, it wields powerful polearms and can command frigid air to summon ice storms.",
+    "memorable": "This creature is formidable with its ability to create walls of ice and summon snowstorms, showcasing a mix of martial prowess and tactical brilliance.",
+    "goals": "Usual goals include leading infernal armies and spreading chaos through icy realms.",
+    "relations": "Often serves as a lieutenant to greater devils and commands lesser fiends.",
+    "environment": "Typically found in frozen realms of the Nine Hells or icy environments.",
+    "strengths": "High resilience against cold and ice-based attacks, immunity to fire and poison, and the ability to manipulate the battlefield with ice and snow.",
+    "weaknesses": "Vulnerable to fire damage and can be outsmarted by clever opponents exploiting its strategic tendencies.",
+    "attacks": "Employs a Multiattack feature with powerful bite, claws, and tail strikes, delivering piercing and cold damage.",
+    "most_powerful_ability": "Ice Wall ability creates barriers that control the battlefield and inflict heavy cold damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight, allowing it to see in complete darkness, which gives it a significant advantage in combat.",
+    "skills": "Very perceptive with a passive perception score of 13, aiding in awareness during encounters.",
+    "additional_information": [
+        "Emits an aura of lawful evil, influencing nearby creatures",
+        "Can use bonus actions to create barriers or hinder opponents",
+        "Has magic resistance providing advantages against spells",
+        "Equipped with exceptional physical and magical attributes",
+        "Utilizes strategic thinking in combat scenarios"
+    ],
+    "damage_types": [
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "towering fiend with icy exoskeleton",
+        "cold manipulator with tactical abilities",
+        "devil that commands ice storms and snow",
+        "creature resistant to cold and fire damage",
+        "large fiend with a spiked tail and ice wall"
+    ]
+}

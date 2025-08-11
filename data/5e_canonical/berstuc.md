@@ -1,6 +1,8 @@
 <MonsterName/>Berstuc</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Berstuc is a formidable Large Fiend of chaotic evil alignment, noted for its cunning and strength. With a Challenge Rating of 11, it presents a significant challenge for adventurers, boasting strong offensive capabilities, high durability, and various abilities that can manipulate the battlefield. The Berstuc's natural armor provides a robust Armor Class of 18, and its substantial hit points allow it to withstand considerable damage. Its physical attributes are impressive, with a Strength score of 22 contributing to its powerful attacks. This creature is particularly dangerous in forested environments, where its abilities allow it to conceal itself and ambush unsuspecting foes. Additionally, it is resistant to a variety of damage types and immune to poison. While it excels in stealth and deception, the Berstuc's reliance on its natural terrain can sometimes be a weakness if fought in open spaces.</summary>
 
 <detail>
@@ -51,6 +53,7 @@ Overall, the Berstuc is a stealthy and powerful foe that thrives in woodland env
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Berstuc
 
 *Large* *Fiend* *Chaotic Evil*
@@ -86,5 +89,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The berstuc makes three Slam attacks. If two Slam attacks hit a Medium or smaller creature, the berstuc can use Enclose on it.
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage, and the target is grappled (escape DC 17) if it is a Large or smaller creature and the berstuc doesn’t have two other creatures grappled.
 - **Enclose:** The berstuc encloses a Medium or smaller creature grappled by it in a mossy growth on the berstuc’s body, and the grapple ends. While enclosed in the berstuc’s growth, the target is blinded and restrained, it has total cover from attacks and other effects outside the berstuc, and it takes 21 (6d6) poison damage at the start of each of the berstuc’s turns. The berstuc can have only one creature enclosed at a time.
+</statblock>
 
 

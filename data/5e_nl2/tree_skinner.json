@@ -1,0 +1,53 @@
+{
+    "name": "Tree Skinner",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 38,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "nature",
+        "deceptive",
+        "tree"
+    ],
+    "adjectives": [
+        "chaotic",
+        "cunning",
+        "deceptive",
+        "fiendish"
+    ],
+    "description": "The Tree Skinner appears as a normal tree when motionless, using its bark-like skin to blend into wooded areas, making it a formidable foe that utilizes its environment.",
+    "memorable": "Its ability to camouflage as a tree and to grapple with vine-like attacks makes it a unique threat in forested settings, plus it has a tree as a vessel.",
+    "goals": "To protect its territory by ambushing those who venture too close and utilizing its tree camouflage.",
+    "relations": "It may be encountered with other fiends or creatures that inhabit forests.",
+    "environment": "Typically found in wooded areas where it can hide among trees.",
+    "strengths": "High Dexterity and Charisma scores make it agile and compelling in interactions; it can effectively conceal itself.",
+    "weaknesses": "Vulnerable to fire damage and is limited to inhabiting a single tree for only three days.",
+    "attacks": "Claw attack inflicts slashing and poison damage, while Vine Whip can grapple multiple targets.",
+    "most_powerful_ability": "Inhabit Tree grants increased AC and tremorsense while vulnerable to fire damage, allowing it to hide effectively.",
+    "senses": "The Tree Skinner has tremorsense with a radius of 30 feet when inside a tree, allowing it to detect movement in the ground nearby.",
+    "skills": "It has high proficiency in Stealth, allowing it to move undetected in wooded areas.",
+    "additional_information": [
+        "Has a False Appearance ability enabling it to camouflage as a tree.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can grapple up to two creatures simultaneously with its Vine Whip attack.",
+        "Charmed immunity enhances its survivability in combat situations.",
+        "Can cause a tree to die and re-emerge when reduced to 15 hit points."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that disguises as a tree",
+        "nature monster with tree camouflage",
+        "cunning fiend with grappling attacks",
+        "deceptive creature that ambushes in forests",
+        "chaotic evil fiend using vine attacks"
+    ]
+}

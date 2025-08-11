@@ -1,0 +1,53 @@
+{
+    "name": "Shadow Elf Spellcaster Drider",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 114,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft., climb 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "spellcaster",
+        "drider",
+        "shadow elf"
+    ],
+    "adjectives": [
+        "agile",
+        "durable",
+        "stealthy",
+        "powerful"
+    ],
+    "description": "A large, spider-like creature that retains drow features, capable of climbing and executing potent spellcasting.",
+    "memorable": "Its combination of physical prowess, spellcasting abilities, and strategic movement options make it formidable in combat.",
+    "goals": "To ambush prey and control the battlefield using spells and physical attacks.",
+    "relations": "Related to drow and other driders, often found with other shadow creatures.",
+    "environment": "Typically lurks in dark, subterranean environments or shadowy forests.",
+    "strengths": "High Dexterity and Wisdom for both agility in combat and effective spellcasting.",
+    "weaknesses": "Vulnerable to sunlight, suffering disadvantage on attack rolls and perception checks when exposed.",
+    "attacks": "Multiple options including claws that can grapple, poisonous bite, and longbow for ranged attacks.",
+    "most_powerful_ability": "Innate spellcasting with spells like 'Darkness' and 'Web' to control the battlefield.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a range of 120 feet and a passive perception of 16.",
+    "skills": "Expertise in perception, stealth, and survival, all with a modifier of +6.",
+    "additional_information": [
+        "Damage resistance against poison.",
+        "Can move easily on difficult surfaces with Spider Climb.",
+        "Immune to magical sleep effects.",
+        "Ability to obscure vision with magical darkness.",
+        "Utilizes webs for trapping enemies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting based on Wisdom; can cast 'dancing lights' at will, and 'darkness' and 'web' once per day.",
+    "test_queries": [
+        "shadow elf spider monster with spells",
+        "agile drider using darkness and web",
+        "powerful spider monster with poison attacks",
+        "stealthy drider that lurks in shadows",
+        "large monstrosity with sunlight vulnerability"
+    ]
+}

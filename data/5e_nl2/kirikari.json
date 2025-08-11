@@ -1,0 +1,51 @@
+{
+    "name": "Kirikari",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 142,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft. walking and swimming speed",
+    "role": null,
+    "tags": [
+        "acid immunity",
+        "poison immunity",
+        "grappling"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "unpredictable"
+    ],
+    "description": "The Kirikari is a Huge, formidable monstrosity with natural armor. It has notable physical features that make it an imposing presence in combat.",
+    "memorable": "It combines strong physical attacks with environmental control through mist and acid damage.",
+    "goals": "The Kirikari is likely to ambush and grapple foes while utilizing its corrosive abilities.",
+    "relations": "It may be encountered with other monstrous creatures or in treacherous natural environments.",
+    "environment": "Typically found in swampy areas or regions with dense fog.",
+    "strengths": "High Strength and Dexterity allow effective grappling and maneuverability. Immune to acid and poison damage.",
+    "weaknesses": "Notably low Intelligence limits tactical options in combat.",
+    "attacks": "It can perform two slam attacks dealing both bludgeoning and acid damage, alongside a biting attack that inflicts piercing damage and poisons.",
+    "most_powerful_ability": "The Misty Veil creates obscuring fog that provides battlefield control.",
+    "equipment": null,
+    "senses": "It has tremorsense with a range of 60 feet and a passive perception of 16.",
+    "skills": "Possesses strong stealth skills with a +11 modifier allowing for effective hiding from enemies.",
+    "additional_information": [
+        "Can unleash a blinding mist that obscures vision.",
+        "Grapples targets with its bite attack.",
+        "Creates perilous conditions for grappling foes with its corrosive mold ability."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Huge creature that grapples and poisons",
+        "monster with acid damage and mist abilities",
+        "ambush monster that creates dense fog",
+        "formidable creature with high stealth skills",
+        "dangerous monstrosity immune to poison"
+    ]
+}

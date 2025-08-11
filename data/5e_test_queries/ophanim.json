@@ -1,0 +1,25 @@
+{
+    "name": "Ophanim",
+    "queries": [
+        {
+            "query": "large celestial creature with high Charisma and flying ability",
+            "variant": "big celestial being that has great Charisma and can fly"
+        },
+        {
+            "query": "lawful good celestial that can sense lies and cast spells",
+            "variant": "lawful good celestial creature that knows lies and has spellcasting"
+        },
+        {
+            "query": "durable being immune to necrotic damage living in the heavens",
+            "variant": "tough creature immune to necrotic damage that resides in the sky"
+        },
+        {
+            "query": "powerful guardian able to resurrect allies and deal radiant damage",
+            "variant": "strong protector that can bring allies back to life and inflict radiant damage"
+        },
+        {
+            "query": "celestial with high wisdom that can avoid magical effects",
+            "variant": "heavenly being with notable wisdom that resists magic"
+        }
+    ]
+}

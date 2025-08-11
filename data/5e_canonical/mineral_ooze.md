@@ -1,6 +1,8 @@
 <MonsterName/>Mineral Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>3</CR>
+<AC/>9</AC>
+<HP/>76</HP>
 <summary>The Mineral Ooze is a Large, neutral ooze that serves as a unique adversary in encounters, particularly effective in ambush scenarios due to its deceptive appearance and ability to restrain enemies. With a relatively low Armor Class of 9, it compensates with a high hit point total of 76, providing it with resilience in battle. Its challenge rating of 3 indicates that it poses a moderate threat to adventurers, particularly when it can utilize its grappling and encasing abilities to capture and neutralize foes. The ooze is particularly well-defended against damage types such as acid, cold, and fire. However, its weaknesses include a slow movement speed of only 20 feet and poor dexterity, making it vulnerable to ranged attacks from quick adversaries.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Mineral Ooze is a formidable opponent that combines resilience, con
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mineral Ooze
 
 *Large* *Ooze* *neutral*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Encase:** The mineral ooze encases a Medium or smaller creature grappled by it. The encased target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the ooze’s turns or take 7 (2d6) acid damage. If the ooze moves, the encased target moves with it. The ooze can have only one creature encased at a time. An encased creature can try to escape by taking an action to make a DC 12 Strength check. The creature has disadvantage on this check if the ooze is mineralized. On a success, the creature escapes and enters a space of its choice within 5 feet of the ooze. Alternatively, a creature within 5 feet of the ooze can take an action to pull a creature out of the ooze. Doing so requires a successful DC 12 Strength check, and the creature making the attempt takes 7 (2d6) acid damage. The creature making the attempt has disadvantage on the check if the ooze is mineralized.
 
 
+</statblock>
 
 

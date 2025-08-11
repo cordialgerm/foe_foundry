@@ -1,0 +1,52 @@
+{
+    "name": "Obeleric",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft. and burrow 15 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "boulder",
+        "acid"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "strategic"
+    ],
+    "description": "The Obeleric is a Medium aberration with an imposing physical presence, resembling a boulder when motionless, showcasing its chaotic evil nature and tentacled true form.",
+    "memorable": "The ability to transform into a boulder and use devastating charges makes it a unique threat.",
+    "goals": "Typically aims to ambush and overpower foes using its versatile attack options.",
+    "relations": "May be encountered alongside other aberrations in desolate or chaotic environments.",
+    "environment": "Often found in rocky terrains or areas with loose boulders, hiding until it ambushes prey.",
+    "strengths": "Strong physical capabilities, multiple attacks per turn, and strategic defensive transformations.",
+    "weaknesses": "Low intelligence and charisma, which limits its cognitive and social abilities.",
+    "attacks": "Can perform multiple powerful attacks including Boulder Bash, Tentacle Slam, and Spit Acid, dealing significant damage.",
+    "most_powerful_ability": "Ricochet Charge allows it to target multiple enemies in a single turn after successfully knocking one prone.",
+    "equipment": null,
+    "senses": "Possesses tremorsense within a range of 30 feet, enabling it to detect creatures without sight.",
+    "skills": "Has an average perception modifier, contributing minimally to its detection abilities.",
+    "additional_information": [
+        "Immune to being petrified or prone.",
+        "Can roll into a defensive boulder form for added protection.",
+        "Deals additional acid damage on certain attacks.",
+        "Can vomit acid in reaction to taking bludgeoning damage.",
+        "Uses its False Appearance ability for effective ambush tactics."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "boulder-like monster with acid attacks",
+        "chaotic aberration that ambushes in rocky terrain",
+        "formidable enemy with multiple melee attacks",
+        "monster that can blend in as a boulder",
+        "acid-spitting creature with defensive abilities"
+    ]
+}

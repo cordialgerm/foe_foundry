@@ -1,0 +1,48 @@
+{
+    "name": "Broodiken",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Tiny",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "construct",
+        "damage dealer",
+        "magic resistant"
+    ],
+    "adjectives": [
+        "durable",
+        "strategic",
+        "agile"
+    ],
+    "description": "The Broodiken is a tiny construct known for its durability, high Constitution, and specialized abilities. With a rugged exterior and intricate design, it compensates for its low physical strength with effective attachment and damage-dealing capabilities.",
+    "memorable": "It can attach to its targets, dealing damage over time while remaining almost impervious to magic and physical changes.",
+    "goals": "Acts according to the desires of its creator, seeking to fulfill orders when within range.",
+    "relations": "Typically associated with creators who imbue them with purpose and commands.",
+    "environment": "Often found in settings where Constructs might be summoned or created, such as magical laboratories or workshops.",
+    "strengths": "Immunities to many conditions and magic resistance enhance its longevity in combat.",
+    "weaknesses": "Low Strength and Intelligence limits its physical capabilities and cognitive function.",
+    "attacks": "The Broodiken uses a bite attack that can inflict piercing damage while attaching itself to the target for ongoing damage.",
+    "most_powerful_ability": "Shared Rage allows the Broodiken to receive emotional directives from its creator, leading to strategic engagement in combat.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 14, enhancing its awareness of its surroundings.",
+    "skills": "Skilled in Stealth and Perception, making it adept at avoiding detection and noticing threats.",
+    "additional_information": [
+        "Immunity to effects that alter its form.",
+        "Does not require biological necessities like food or sleep.",
+        "Ability to inflict ongoing damage while attached to a target."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny magic-resistant construct",
+        "durable creature that can attach and deal damage",
+        "construct that follows creator's orders",
+        "Broodiken bite attack that inflicts ongoing damage",
+        "magic immune construct with emotional commands"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Nyctli",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 7,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 40 ft, hover, walk 10 ft",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaotic",
+        "stealthy"
+    ],
+    "adjectives": [
+        "tiny",
+        "mischievous",
+        "malevolent"
+    ],
+    "description": "A tiny fey creature known for its chaotic evil nature, exhibiting a mischievous and malevolent demeanor. It excels in stealth and surprises foes with its abilities.",
+    "memorable": "Its ability to blind opponents and manipulate light provides a tactical advantage, making it a formidable ambusher despite its fragility.",
+    "goals": "To cause chaos and mischief, often attacking unsuspecting foes.",
+    "relations": "Frequently encountered with other fey creatures; could serve more powerful chaotic beings.",
+    "environment": "Typically found in dark, wooded areas or places of magic.",
+    "strengths": "High Dexterity and exceptional stealth make it hard to hit, while its ability to inflict status effects can severely hinder opponents.",
+    "weaknesses": "Weak physical stats make it vulnerable in direct melee combat.",
+    "attacks": "Uses stingers for melee attacks, dealing piercing and necrotic damage, potentially blinding foes.",
+    "most_powerful_ability": "The Stingers attack can inflict blindness, significantly hindering an opponent's combat effectiveness.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a range of 60 feet and a passive perception score of 14, enhancing its ability to notice details.",
+    "skills": "Notably skilled in Perception and Stealth, making it adept at sneaking and hiding.",
+    "additional_information": [
+        "Can magically extinguish light sources within 30 feet.",
+        "Low hit points make it frail in direct confrontations.",
+        "Chaotic nature allows for unpredictable behavior.",
+        "Significant maneuverability due to flying speed.",
+        "Ability to create darkness for tactical advantages."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny chaotic evil fey creature",
+        "stealthy monster that manipulates light",
+        "mischievous fey that blinds opponents",
+        "fey creature known for ambushing",
+        "dark magic light dousing fey"
+    ]
+}

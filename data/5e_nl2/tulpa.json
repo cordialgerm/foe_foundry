@@ -1,0 +1,55 @@
+{
+    "name": "Tulpa",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "hover true",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "psychic",
+        "necrotic",
+        "frightening"
+    ],
+    "adjectives": [
+        "medium",
+        "potent",
+        "frightening",
+        "cursed"
+    ],
+    "description": "The Tulpa is a medium undead creature characterized by its connection to the mental disturbances of its creator, allowing it to manifest as a physical threat that inflicts psychic maladies.",
+    "memorable": "Its ability to reform after being slain strong ties it to the mental state of its creator, creating an unsettling connection.",
+    "goals": "To persist as a manifestation of its creator's mental issues and to haunt enemies psychologically.",
+    "relations": "It serves its creator and is linked to other mental manifestations that share similar traits.",
+    "environment": "Usually found in places reflecting its creator's mental state, potentially haunting areas of concentrated thought or psychic energy.",
+    "strengths": "Possesses incorporeal movement which allows it to phase through objects, and can strike from a distance with psychic abilities.",
+    "weaknesses": "Highly vulnerable to radiant damage, making it weaker against certain types of attacks.",
+    "attacks": "Uses Multiattack for two claw strikes dealing necrotic damage and can unleash powerful psychic blasts from afar.",
+    "most_powerful_ability": "Imposing Dread creates a fear-inducing aura that curses and frightens multiple opponents.",
+    "equipment": null,
+    "senses": "It has a passive perception of 12, showing good awareness despite its limited intelligence.",
+    "skills": null,
+    "additional_information": [
+        "Reforms within 500 feet of its creator if slain within a day.",
+        "Immunity to damage from its own creator.",
+        "Causative ability to create additional Tulpas if the cursed are not healed.",
+        "Imposes disadvantage on the creator's Wisdom saving throws.",
+        "Possesses a frightening aura that instills terror in foes."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psychic undead that can reform",
+        "frightening creature linked to its creator",
+        "necrotic monster that follows its master",
+        "Tulpa that can induce dread",
+        "undead that embodies mental disturbances"
+    ]
+}

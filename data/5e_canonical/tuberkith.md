@@ -1,6 +1,8 @@
 <MonsterName/>Tuberkith</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Tuberkith is a small plant creature that possesses unique abilities making it adept at navigating and surviving in its environment. Its challenge rating of 1/4 designates it as a relatively low-power creature, suited for role-playing encounters or as a minor combatant. The Tuberkith has a decent armor class of 13 due to its natural armor, while its hit points of 22, generated from rolling 4d6 and adding 8, grant it an average degree of durability. This creature moves swiftly on land with a speed of 30 feet and can burrow at 20 feet, making it adept for both escape and ambush tactics. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Tuberkith has two melee weapon attacks. The Peeler atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tuberkith
 
 *Small* *Plant* *any alignment*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Masher:** Melee Weapon Attack: +4 to hit, 5 ft., one target, 6 (1d8+2) bludgeoning damage. If the target is a creature it must make DC 12 Str save or be knocked prone.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Poisonous Snake",
+    "queries": [
+        {
+            "query": "agile snake that swims and has a poisonous bite",
+            "variant": "swimming snake that bites and is very agile"
+        },
+        {
+            "query": "medium-sized snake with a poisonous attack that ambushes",
+            "variant": "snake that ambushes and has a medium size with poisonous bite"
+        },
+        {
+            "query": "stealthy snake that can poison attackers",
+            "variant": "sneaky snake that poisons those who attack it"
+        },
+        {
+            "query": "snake with keen senses and high stealth ability",
+            "variant": "snake that has excellent stealth and keen senses"
+        },
+        {
+            "query": "dangerous snake that requires saving throws against poison",
+            "variant": "snake that poses a danger and needs saves versus poison"
+        }
+    ]
+}

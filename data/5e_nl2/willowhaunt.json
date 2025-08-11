@@ -1,0 +1,53 @@
+{
+    "name": "Willowhaunt",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "slow walking speed of 20 feet",
+    "role": "null",
+    "tags": [
+        "undead",
+        "illusion",
+        "manipulation"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing",
+        "illusive"
+    ],
+    "description": "The Willowhaunt resembles a living willow tree due to its magical illusion that cloaks its skeletal remains beneath.",
+    "memorable": "Unique ability to compel others to kill their allies through manipulation.",
+    "goals": "To create chaos and confusion among enemies while using illusions to hide its true form.",
+    "relations": "Might be encountered alongside other undead minions or creatures that thrive in darkness.",
+    "environment": "Often found in dark forests or graveyards, places associated with death and decay.",
+    "strengths": "Immunities to necrotic and poison damage, and resistance to non-magical physical attacks.",
+    "weaknesses": "Vulnerable to magical attacks due to reliance on illusion for defense.",
+    "attacks": "Delivers powerful slam attacks with a combination of bludgeoning and necrotic damage.",
+    "most_powerful_ability": "Provoke Murder, which incites chaotic violence among nearby creatures.",
+    "equipment": "null",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in darkness.",
+    "skills": "Possesses high proficiency in Intimidation and Insight, effectively instilling fear and gauging emotions.",
+    "additional_information": [
+        "Highly persuasive due to exceptional Charisma score.",
+        "Can dismiss its illusion as a bonus action.",
+        "Affected by short-term or long-term madness through specific attacks.",
+        "Targets affected by its Provoke Murder cannot distinguish allies from foes.",
+        "Relies on tactical abilities to turn battles in its favor despite slow movement."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that looks like a willow tree",
+        "monster that instigates chaos among allies",
+        "huge evil undead with illusion abilities",
+        "manipulative monster causing madness in foes",
+        "creature with necrotic immunity and illusions"
+    ]
+}

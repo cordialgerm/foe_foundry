@@ -1,0 +1,52 @@
+{
+    "name": "Meerkat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 11,
+    "srd": false,
+    "cr": "0",
+    "movement": "20 feet walking, 10 feet burrowing",
+    "role": null,
+    "tags": [
+        "beast",
+        "small",
+        "nimble"
+    ],
+    "adjectives": [
+        "tiny",
+        "nimble",
+        "keen-sighted"
+    ],
+    "description": "A small, nimble creature known for its keen senses and burrowing ability, the Meerkat typically adds color to an environment rather than serving as a serious threat.",
+    "memorable": "Its keen sight and burrowing abilities make it an interesting addition to stealth and exploration scenarios.",
+    "goals": "Often seen in playful or social settings, enhancing themes of stealth and exploration.",
+    "relations": "May be found in environments with other small beasts or creatures.",
+    "environment": "Deserts or grasslands, often in small groups.",
+    "strengths": "Possesses keen sight, allowing it advantage on perception checks, and damage resistance to poison.",
+    "weaknesses": "Extremely low hit points and weak offensive capabilities.",
+    "attacks": "Bite attack dealing minimal piercing damage with a +3 to hit.",
+    "most_powerful_ability": "Keen Sight, granting advantage on perception checks related to sight.",
+    "equipment": null,
+    "senses": "Has average passive perception of 10.",
+    "skills": "Possesses basic perception skills with a +0 modifier.",
+    "additional_information": [
+        "Easily taken out in combat due to low hit points.",
+        "Serves primarily as an amusing or thematic addition.",
+        "Enhances gameplay in non-combat contexts.",
+        "Burrows into the ground for protection or stealth.",
+        "Operates better in collaborative scenarios with other creatures."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny nimble creature with keen sight",
+        "burrowing animal that resists poison",
+        "small beast with minimal combat ability",
+        "meerkat behavior in desert environments",
+        "amusing thematic addition in non-combat scenarios"
+    ]
+}

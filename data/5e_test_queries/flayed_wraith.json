@@ -1,0 +1,25 @@
+{
+    "name": "Flayed Wraith",
+    "queries": [
+        {
+            "query": "undead creature that tortures enemies and hovers",
+            "variant": "creature that hovers and inflicts torture on foes"
+        },
+        {
+            "query": "psychological torment creature with cold resistance",
+            "variant": "creature resistant to cold that brings psychological torment"
+        },
+        {
+            "query": "medium undead being that incapacitates foes",
+            "variant": "undead medium creature that incapacitates its enemies"
+        },
+        {
+            "query": "wraith with necrotic immunities and sunlight sensitivity",
+            "variant": "necrotic immune wraith that is sensitive to sunlight"
+        },
+        {
+            "query": "creature that deals psychic damage and uses claw attacks",
+            "variant": "being that attacks with claws and inflicts psychic damage"
+        }
+    ]
+}

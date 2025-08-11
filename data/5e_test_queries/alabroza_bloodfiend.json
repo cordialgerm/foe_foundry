@@ -1,0 +1,25 @@
+{
+    "name": "Alabroza, Bloodfiend",
+    "queries": [
+        {
+            "query": "small fiend with bloodthirsty abilities and flying speed",
+            "variant": "tiny fiend that has bloodthirsty powers and can fly"
+        },
+        {
+            "query": "blood-drinking creature that transforms into mist and hypnotizes",
+            "variant": "creature that drinks blood, can turn into mist, and has a hypnotic gaze"
+        },
+        {
+            "query": "cunning fiend that deals piercing damage and relies on blood",
+            "variant": "sly fiend that inflicts piercing damage and depends on blood"
+        },
+        {
+            "query": "creature that charms foes and has a beak attack",
+            "variant": "monster that uses charm ability and has a beak strike"
+        },
+        {
+            "query": "fiend that flies and uses deception in combat",
+            "variant": "fiendish creature that can fly and employs trickery during battles"
+        }
+    ]
+}

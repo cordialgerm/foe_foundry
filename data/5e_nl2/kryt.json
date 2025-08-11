@@ -1,0 +1,48 @@
+{
+    "name": "Kryt",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 25 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "neutral evil",
+        "melee attacker"
+    ],
+    "adjectives": [
+        "agile",
+        "sinister",
+        "formidable"
+    ],
+    "description": "The Kryt is a medium humanoid creature known for its agility and sinister abilities, showcasing high strength and remarkable skills in psychological manipulation.",
+    "memorable": "The Kryt's ability to manipulate perception and its Resilience to exhaustion make it a challenging opponent over extended encounters.",
+    "goals": "To deal damage while evading threats and manipulate enemy effectiveness in combat.",
+    "relations": "May interact with other neutral evil beings or creatures that prefer psychological tactics.",
+    "environment": "Typically found in settings that complement its sinister nature, possibly lurking in shadows or fighting in dimly lit areas.",
+    "strengths": "High strength score grants strong melee attacks, while high wisdom enhances insight and perception.",
+    "weaknesses": "Low intelligence and charisma scores suggest limitations in problem-solving and social interactions.",
+    "attacks": "Can make a Multiattack with one bite and two quarterstaff strikes, effectively dealing substantial damage.",
+    "most_powerful_ability": "Prophetic Vision grants it advantage on one attack roll or saving throw each turn, enhancing its combat effectiveness.",
+    "equipment": null,
+    "senses": "The Kryt has a passive perception of 17, making it very good at noticing details.",
+    "skills": "Proficient in insight and perception, both at +7, allowing it to excel at detecting hidden enemies.",
+    "additional_information": [
+        "Immune to exhaustion, allowing combat effectiveness in prolonged encounters.",
+        "Hold Breath ability enables it to remain underwater for up to 15 minutes.",
+        "Can use Haunting Vision to impose disadvantage on an attacking creature's next roll."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "sinister humanoid with high strength and foresight",
+        "agile creature with psychological manipulation abilities",
+        "medium humanoid that excels in melee attacks",
+        "neutral evil creature with exhaustion immunity",
+        "Kryt abilities and combat tactics"
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Black Shuck",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 157,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 50 ft.",
+    "role": null,
+    "tags": [
+        "Fiend",
+        "Undead",
+        "Curse",
+        "Fear"
+    ],
+    "adjectives": [
+        "intimidating",
+        "chaotic",
+        "powerful",
+        "elusive"
+    ],
+    "description": "The Black Shuck is a large, intimidating fiend with an aura of malevolence, exhibiting a fierce presence that commands attention. Its fur is dark and unkempt, and its eyes gleam with a sinister intelligence.",
+    "memorable": "Its ability to instill fear through its horrific howl and to curse its enemies makes the Black Shuck a unique threat that leaves a lasting impression.",
+    "goals": "To hunt prey, instill fear, and spread chaos through its curses.",
+    "relations": "Often associated with darker, chaotic beings and may be encountered alongside other fiends or undead creatures.",
+    "environment": "Typically found in dark, eerie landscapes and around cursed sites, often in areas with water for its unique movement ability.",
+    "strengths": "Immunities to necrotic and poison damage, as well as being able to move across water as if it were solid ground.",
+    "weaknesses": "Vulnerable to magical attacks made with silvered weapons.",
+    "attacks": "Multiattack with three powerful Bite attacks that inflict piercing and necrotic damage, along with a debilitating curse and a fear-inducing howl.",
+    "most_powerful_ability": "Curse of the Grave: Curses a creature from a distance, making them suffer disadvantage on death saving throws for a week.",
+    "equipment": null,
+    "senses": "Possesses keen hearing and smell, giving it advantage on perception checks based on these senses.",
+    "skills": "Expert in perception, allowing it to detect hidden creatures and ambushes.",
+    "additional_information": [
+        "Blood Frenzy increases its chances of hitting weaker targets.",
+        "Immune to charm and fear effects, making it resilient against psychological manipulation.",
+        "Can utilize the Mist Stalker ability to remain hidden in dim light or mist.",
+        "Can inflict both physical and magical damage with its Bite attack.",
+        "Can frighten multiple creatures at once with its Fearsome Howl."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark and terrifying fiend",
+        "fiend with a fear inducing howl",
+        "malevolent curse spreading creature",
+        "chaotic hunting monster",
+        "large dark animal with cursed abilities"
+    ]
+}

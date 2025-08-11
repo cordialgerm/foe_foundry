@@ -1,0 +1,25 @@
+{
+    "name": "Hell Hound",
+    "queries": [
+        {
+            "query": "fiery black canine creature that serves dark masters",
+            "variant": "blackened fiery canine that serves the dark lords"
+        },
+        {
+            "query": "swift fire-breathing monster with pack tactics ability",
+            "variant": "fast fire-breathing fiend with ability to work in packs"
+        },
+        {
+            "query": "intelligent hound that hunts souls in the Nine Hells",
+            "variant": "smart creature that tracks souls within the Nine Hells"
+        },
+        {
+            "query": "hellish creature with fire immunity and keen senses",
+            "variant": "fiendish creature immune to fire and with sharp senses"
+        },
+        {
+            "query": "medium fiend with a terrifying bite attack and fire breath",
+            "variant": "medium fiend that has a fearsome bite and breathes fire"
+        }
+    ]
+}

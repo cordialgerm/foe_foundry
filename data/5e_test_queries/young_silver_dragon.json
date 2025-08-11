@@ -1,0 +1,25 @@
+{
+    "name": "Young Silver Dragon",
+    "queries": [
+        {
+            "query": "majestic silver dragon that breathes frost in mountainous regions",
+            "variant": "silver dragon that majestic and breathes frost in mountains"
+        },
+        {
+            "query": "large dragon with ice breath found in the cold",
+            "variant": "big dragon with ice breath found in chilly areas"
+        },
+        {
+            "query": "dragon with piercing and slashing attacks that protects the innocent",
+            "variant": "dragon that has piercing and slashing attacks and defends the innocent"
+        },
+        {
+            "query": "intelligent silver dragon with the ability to change shape",
+            "variant": "smart silver dragon that can change its shape"
+        },
+        {
+            "query": "powerful cold-breathing dragon often seen in high altitudes",
+            "variant": "strong cold-breathing dragon frequently spotted at high elevations"
+        }
+    ]
+}

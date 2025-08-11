@@ -1,0 +1,51 @@
+{
+    "name": "Strobing Fungus",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 10 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "fungus",
+        "blinding light",
+        "acid damage"
+    ],
+    "adjectives": [
+        "dazzling",
+        "powerful",
+        "slow-moving"
+    ],
+    "description": "The Strobing Fungus is a medium-sized plant creature known for its ability to emit a powerful strobing light that dazzles and blinds those who gaze upon it.",
+    "memorable": "Its strobing light can incapacitate foes, making it a unique control element in combat.",
+    "goals": "To disable foes using its strobing light while delivering acid damage through its chemical burns.",
+    "relations": "It may be found in battles alongside other magic-resistant or nature-themed creatures.",
+    "environment": "Typically found in dark or damp areas where its light can affect visibility.",
+    "strengths": "Condition immunity to being blinded, deafened, or frightened.",
+    "weaknesses": "Limited mobility with a walk speed of only 10 feet and inability to communicate.",
+    "attacks": "It can execute multiattacks with chemical burn that deals significant acid damage.",
+    "most_powerful_ability": "The ability to emit a dazzling strobing light that can blind multiple creatures.",
+    "equipment": null,
+    "senses": "Possesses blindsight 60 feet, allowing it to sense creatures even when unable to see.",
+    "skills": null,
+    "additional_information": [
+        "Can emit strobing light but cannot attack while doing so.",
+        "Requires a DC 14 Constitution saving throw to resist blindness from its strobe ability.",
+        "Chemical burn attacks have a reach of 5 feet or a range of 30/120 feet, dealing substantial acid damage."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that emits blinding strobing light",
+        "fungus with acid damage and blinding ability",
+        "slow-moving plant that dazzles foes",
+        "blinding light creature in dark environments",
+        "medium unaligned plant with chemical attacks"
+    ]
+}

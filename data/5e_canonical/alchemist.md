@@ -1,6 +1,8 @@
 <MonsterName/>Alchemist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>91</HP>
 <summary>The Alchemist is a medium humanoid creature known for its extraordinary skills in potion making and alchemical crafting. With a challenge rating of 6, it possesses a balance of good offensive capabilities and defensive endurance, boasting an armor class of 14 and 91 hit points, making it a moderately resilient threat. The Alchemist excels in intelligence and dexterity, allowing for effective spellcasting and agile combat maneuvers. It is adept at creating various potions, which can greatly enhance the abilities of its allies or hinder opponents, while its bombs provide a powerful area-effect attack. However, the Alchemist's physical strength is average, which limits its melee effectiveness, and relying heavily on alchemical resources can be a potential weakness.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ The Alchemist also possesses powerful special attacks such as Alchemical Vapors,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alchemist
 
 *Medium* *Humanoid*
@@ -78,6 +81,7 @@ Source: 5e_artisinal_monsters
 - **Alchemists brew concoctions with potent magical and chemical properties:** Some alchemists perform dangerous experiments to perfect new alchemical recipes, while others fabricate guardians and other constructs in pursuit of the creation of life itself.
 
 
+</statblock>
 
 
 
@@ -86,6 +90,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alchemist
 
 *Small* *Humanoid* *Lawful Neutral*
@@ -120,5 +125,6 @@ Source: 5e_artisinal_monsters
 - **Alchemical Bolt:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 10 (2d6 + 3) damage of the type determined by Apothecary.
 - **Alchemical Vapors (Recharge 6):** The kobold alchemist releases alchemical vapors pleasing to draconic senses and unpleasant to all others. Each creature that isn’t a dragonborn or kobold within 15 feet of the alchemist must make a DC 13 Constitution saving throw, taking 17 (5d6) poison damage on a failed save, or half as much damage on a successful one. Each dragonborn and kobold within 15 feet of the alchemist has resistance to damage of the type determined by Apothecary for 1 minute.
 - **Explosive Flask (Recharge 5–6):** The kobold alchemist throws a flask of volatile substances at a point it can see within 30 feet of it. The flask explodes, and each creature within 15 feet of that point must make a DC 13 Dexterity saving throw. On a failure, a creature takes 14 (4d6) damage of the type determined by Apothecary and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

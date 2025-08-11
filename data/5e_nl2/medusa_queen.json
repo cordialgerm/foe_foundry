@@ -1,0 +1,53 @@
+{
+    "name": "Medusa Queen",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 153,
+    "ac": 14,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "petrification",
+        "ambush",
+        "poison",
+        "charm"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "deceptive"
+    ],
+    "description": "The Medusa Queen combines a beautiful yet deadly visage with snake-like hair, ready to ensnare foes with her petrifying gaze and poison-infused attacks.",
+    "memorable": "Her ability to petrify enemies with a mere gaze, making her a strategic threat in combat.",
+    "goals": "To ambush and overpower her foes using stealth and deception, and maintain her territory.",
+    "relations": "Often encountered alongside other monstrous creatures or as a leader of such factions.",
+    "environment": "Typically found in dark woods, ruins, or other secluded areas that offer cover and ambush opportunities.",
+    "strengths": "Exceptional agility and stealth with a deadly gaze that can incapacitate enemies instantly.",
+    "weaknesses": "Reliance on her gaze requires careful positioning; vulnerable to reflecting surfaces.",
+    "attacks": "Capable of multiattacks using her snake hair and longbow, inflicting piercing and poison damage.",
+    "most_powerful_ability": "Petrifying Gaze, which can instantly petrify opponents while forcing them to strategize around her gaze.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and has a passive perception of 15, enhancing her ability to detect threats.",
+    "skills": "Skilled in deception, insight, perception, and stealth, making her a master of ambush and evasion.",
+    "additional_information": [
+        "Can charm enemies with her gaze via Imperious Command.",
+        "Uses Frenzy of Snakes to attack multiple foes in close proximity.",
+        "Exhibits a strong presence with good Charisma for manipulation.",
+        "Ambush predator that capitalizes on surprise.",
+        "Highly proficient in stealth tactics."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dangerous queen with snake hair and petrifying gaze",
+        "stealthy monster that uses charm and poisons",
+        "Medusa with deadly ambush tactics and petrification",
+        "monster that attacks with snake hair and longbow",
+        "poisonous creature that petrifies enemies instantly"
+    ]
+}

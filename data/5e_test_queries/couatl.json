@@ -1,0 +1,25 @@
+{
+    "name": "Couatl",
+    "queries": [
+        {
+            "query": "celestial serpent with magical abilities and protective traits",
+            "variant": "celestial serpent with magical powers and protective abilities"
+        },
+        {
+            "query": "beautiful feathered creature that brings healing and can shapeshift",
+            "variant": "pretty feathered creature that heals and can change shape"
+        },
+        {
+            "query": "intelligent creature that communicates telepathically and lives in sacred places",
+            "variant": "smart creature that talks telepathically and inhabits holy places"
+        },
+        {
+            "query": "guardian serpent capable of flight and poison attacks",
+            "variant": "guardian serpent able to fly and use poison attacks"
+        },
+        {
+            "query": "magical creature that can shapeshift into humanoid form and heal allies",
+            "variant": "magic creature that can change into humanoid form and heal companions"
+        }
+    ]
+}

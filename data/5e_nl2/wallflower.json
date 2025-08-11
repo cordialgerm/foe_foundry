@@ -1,0 +1,50 @@
+{
+    "name": "Wallflower",
+    "creature_type": "Plant",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft. climb 20 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "controller",
+        "stealth"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "manipulative",
+        "durable"
+    ],
+    "description": "The Wallflower is a medium-sized plant creature with the ability to grapple foes using its tentacles and attack with its beak, blending offensive and defensive capabilities.",
+    "memorable": "Excels in stealth and can manipulate enemy movement with its Luring Scent ability.",
+    "goals": "To control battlefield movement and immobilize prey with grappling tactics.",
+    "relations": "May be related to other plant creatures or serve as guardians in forested areas.",
+    "environment": "Typically found in forested or overgrown areas.",
+    "strengths": "Possesses good stealth capabilities and damage resistances to nonmagical weapons.",
+    "weaknesses": "Low intelligence and charisma limit its interaction and charm abilities.",
+    "attacks": "Attacks with tentacles that deal bludgeoning damage and can grapple enemies. Uses a beak attack on grappled foes.",
+    "most_powerful_ability": "Luring Scent can force enemies to move closer, controlling their position.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive perception of 12.",
+    "skills": "Proficient in stealth, allowing it to remain hidden in its environment.",
+    "additional_information": [
+        "Resistant to damage from nonmagical weapons.",
+        "Has an escape DC of 12 for grappling.",
+        "The Luring Scent affects beasts, humanoids, and fey.",
+        "Creatures that succeed on Luring Scent save become immune for 24 hours.",
+        "Can only attack grappled creatures with its beak."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that grapples",
+        "stealthy plant with special scent ability",
+        "medium plant monster that controls movement",
+        "creature with tentacles and beak attacks",
+        "manipulative monster found in forests"
+    ]
+}

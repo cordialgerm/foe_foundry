@@ -1,0 +1,25 @@
+{
+    "name": "Broodiken",
+    "queries": [
+        {
+            "query": "tiny construct creature that can attach to targets",
+            "variant": "tiny creature that is a construct and can attach to targets"
+        },
+        {
+            "query": "monster immune to shape-altering spells and has high Constitution",
+            "variant": "creature that is immune to shape changes and has a strong Constitution"
+        },
+        {
+            "query": "Broodiken's abilities and combat strategy against spellcasters",
+            "variant": "combat tactics of the Broodiken and how it fares against spellcasters"
+        },
+        {
+            "query": "durable creature with piercing damage attack and magical resistances",
+            "variant": "a tough creature that does piercing damage and has resistance to magic"
+        },
+        {
+            "query": "construct with low Strength and Intelligence but above average Dexterity",
+            "variant": "creature with poor Strength and Intelligence scores but decent Dexterity"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Balloon Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>36</HP>
 <summary>The Balloon Spider is a Medium beast that serves as an ambush predator, utilizing its unique abilities and mobility to control the battlefield effectively. With an unaligned nature, it does not favor any particular side and attacks based purely on opportunity. This creature has a moderate Armor Class of 13, making it somewhat resilient against attacks, and possesses 36 hit points which can absorb a fair amount of damage. Its hovering ability gives it excellent mobility, allowing it to evade ground-based attacks while flying. The challenge rating of 1 indicates that it poses a moderate threat to adventurers, providing 200 experience points upon defeat. The Balloon Spider excels in delivering lightning damage, but it has a very low intelligence, which limits its strategic capabilities. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Draw In ability allows the Balloon Spider to magically pull all cre
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balloon Spider
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Draw In:** The balloon spider magically pulls all creatures grappled by its webbing up to 10 feet toward it. If this movement pulls the creature within 5 feet of the balloon spider, the spider can make one bite attack against the creature as a bonus action.
 
 
+</statblock>
 
 

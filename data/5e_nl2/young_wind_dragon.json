@@ -1,0 +1,51 @@
+{
+    "name": "Young Wind Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Large",
+    "hp": 123,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "90 ft. walking speed and 30 ft. flying speed",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "elemental",
+        "storm"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Young Wind Dragon embodies the power of storms and winds, possessing a strong, streamlined body ideal for navigating turbulent skies.",
+    "memorable": "Its ability to manipulate storm effects and its powerful breath attack make it a unique threat in combat.",
+    "goals": "To exert its dominance over the skies and control the battlefield with wind and storm.",
+    "relations": "Often encountered with other elemental creatures or dragons, possibly serving larger elemental powers.",
+    "environment": "Typically found in stormy regions or mountainous areas where winds are strong.",
+    "strengths": "Immunity to lightning damage and high mobility in combat make it a formidable opponent.",
+    "weaknesses": "Resistance only to cold damage leaves it vulnerable to many other types of attacks.",
+    "attacks": "The dragon can strike with powerful Bite and Claw attacks, delivering significant damage while leveraging its storm abilities.",
+    "most_powerful_ability": "Tempest Breath unleashes a devastating blast of stormy wind, pushing enemies away and knocking them prone.",
+    "senses": "It possesses blindsight out to 30 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": "With high proficiency in Acrobatics, Intimidation, Perception, and Stealth, it is a versatile and agile creature.",
+    "additional_information": [
+        "Has advantage on checks to escape restraints.",
+        "Sees through fog and precipitation without restriction.",
+        "Can manipulate battlefield conditions by extinguishing flames.",
+        "Exceptional physical attributes for a strong combat presence.",
+        "High passive perception for awareness of threats."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon that controls storms",
+        "chaotic dragon with storm abilities",
+        "powerful wind dragon with breath attack",
+        "dragon immune to lightning damage",
+        "storm creature in mountainous regions"
+    ]
+}

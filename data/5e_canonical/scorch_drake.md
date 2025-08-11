@@ -1,6 +1,8 @@
 <MonsterName/>Scorch Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>145</HP>
 <summary>The Scorch Drake is a formidable Large dragon that serves as a potent adversary for adventurers, particularly in fiery environments. It boasts impressive physical defenses with an armor class of 15 and a substantial hit point pool of 145, making it difficult to take down. The drake has good mobility, capable of moving 40 feet on land and flying at 60 feet, allowing it to maneuver effectively in combat. With a challenge rating of 6, it presents a significant threat to lower-level parties. The creature has several notable abilities, particularly its fiery attacks and ability to create visual distortions that hinder perception. However, its intellect is below average, which might limit its strategic options during encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Scorch Drake can use **Fan the Flames**, which targets an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorch Drake
 
 *Large dragon*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 
 - **Fan the Flames.** The scorch drake flaps its wings in the direction of one ignited creature it can see within 15 feet of it. The flames coating the target flare up and generate excess smoke. The target must succeed on a DC 15 CON save or be blinded until the end of its next turn.
 
+</statblock>
 
 

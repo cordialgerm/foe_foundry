@@ -1,0 +1,52 @@
+{
+    "name": "Lost Minotaur",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "minotaur",
+        "monster"
+    ],
+    "adjectives": [
+        "strong",
+        "formidable",
+        "undead"
+    ],
+    "description": "The Lost Minotaur is a large undead creature with a massive frame and a twisted appearance, wielding a large Twilight Greataxe.",
+    "memorable": "Its ability to sense living creatures from a mile away and the devastating charge attack make it a menacing presence.",
+    "goals": "Typically seeks to dominate the battlefield and eliminate foes using brute strength and special abilities.",
+    "relations": "Can be found near other undead creatures or in locations tied to dark magic.",
+    "environment": "Commonly found in dark, abandoned places or ruins, where it hunts for living beings.",
+    "strengths": "High physical attack power, magical resistance, and abilities that enhance its battlefield control.",
+    "weaknesses": "Vulnerable to radiant damage and has low intelligence for tactical planning.",
+    "attacks": "Employs powerful melee attacks with a greataxe and gore, dealing slashing, necrotic, and piercing damage.",
+    "most_powerful_ability": "Charge allows it to deal extra damage and potentially knock targets prone.",
+    "equipment": "Twilight Greataxe",
+    "senses": "Has keen smell, granting advantage on perception checks that rely on scent.",
+    "skills": "Proficient in athletics, perception, and survival, enhancing its ability to track and engage in physical challenges.",
+    "additional_information": [
+        "Immune to cold and poison damage",
+        "Resistant to necrotic damage",
+        "Condition immunities include charmed and frightened",
+        "Can sense living creatures within a one-mile radius",
+        "Low charisma making it ineffective in social interactions"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful undead monster with keen smell",
+        "large minotaur with magical resistance",
+        "undead creature that charges attackers",
+        "lost minotaur with devastating greataxe",
+        "monster that senses living creatures nearby"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Carnivorous Sod",
+    "queries": [
+        {
+            "query": "ambush predator plant that can disguise as grass",
+            "variant": "plant predator that ambushes and looks like grass"
+        },
+        {
+            "query": "medium-sized creature with low mobility and poison immunity",
+            "variant": "creature the size of medium with weak movement and immune to poison"
+        },
+        {
+            "query": "plant creature able to absorb enhancing spells",
+            "variant": "creature that is a plant and can take in spells that boost it"
+        },
+        {
+            "query": "grass camouflage monster that strikes with a bite",
+            "variant": "monster that blends in with grass and attacks using a bite"
+        },
+        {
+            "query": "Carnivorous Sod special abilities and combat tactics",
+            "variant": "special combat tactics and abilities of the Carnivorous Sod"
+        }
+    ]
+}

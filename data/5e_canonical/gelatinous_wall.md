@@ -1,6 +1,8 @@
 <MonsterName/>Gelatinous Wall</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>7</CR>
+<AC/>6</AC>
+<HP/>136</HP>
 <summary>The Gelatinous Wall is a massive ooze creature that serves as both a formidable obstacle and a striking threat in combat scenarios. With a robust Armor Class of 6 and a substantial pool of Hit Points totaling 136, it is designed to withstand significant amounts of damage. Despite its substantial hit points, it suffers from low Dexterity, leading to poor agility and evasion capabilities, making it less effective in open spaces where ranged attacks are prevalent. The Gelatinous Wall features unique abilities, including engulfing attacks that can trap and damage foes, making it particularly dangerous in close quarters. Its challenge rating of 7 indicates that it is a worthy opponent for mid-level adventurers, providing both a tactical challenge and an opportunity for creative problem-solving. However, its reliance on engulfing and low mobility may become weaknesses if opponents exploit its disadvantages effectively, particularly in bright light where it has reduced combat effectiveness.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Gelatinous Wall represents a solid challenge with powerful abilitie
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gelatinous Wall
 
 *Huge* *Ooze*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **An engulfed creature can escape by using an action to make a DC 13 Strength check:** On a success  the creature moves to a space within 5 feet of the cube. A creature within 5 feet can take the same action to free an engulfed creature  but takes 10 (3d6) acid damage plus 9 (2d6 + 2) bludgeoning damage in the process.
 
 
+</statblock>
 
 

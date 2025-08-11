@@ -1,0 +1,25 @@
+{
+    "name": "Plague Harpy",
+    "queries": [
+        {
+            "query": "disease inflicting harpy that can fly",
+            "variant": "flying harpy that spreads disease"
+        },
+        {
+            "query": "creature that induces despair and spreads plague",
+            "variant": "monster that causes despair while transmitting plague"
+        },
+        {
+            "query": "agile monstrosity with necrotic resistance",
+            "variant": "nimble creature resistant to necrotic damage"
+        },
+        {
+            "query": "plague harpy abilities and attack methods",
+            "variant": "abilities and attack strategies of plague harpy"
+        },
+        {
+            "query": "harpy that uses psychological manipulation in combat",
+            "variant": "psychologically manipulative harpy in battle"
+        }
+    ]
+}

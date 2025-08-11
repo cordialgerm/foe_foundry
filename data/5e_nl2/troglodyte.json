@@ -1,0 +1,51 @@
+{
+    "name": "Troglodyte",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking, 30 ft. swimming",
+    "role": "Ambusher",
+    "tags": [
+        "stealth",
+        "poison",
+        "ambush"
+    ],
+    "adjectives": [
+        "cunning",
+        "sneaky",
+        "poisonous"
+    ],
+    "description": "The Troglodyte is a medium humanoid creature with a strong build, possessing sharp claws and a foul stench that can incapacitate foes.",
+    "memorable": "The Troglodyte's stench can poison those near it, hindering their combat effectiveness.",
+    "goals": "To ambush and incapacitate intruders in its territory.",
+    "relations": "Often encountered with other troglodytes or in underground environments.",
+    "environment": "Typically found in dark, subterranean locations.",
+    "strengths": "Excellent at stealth, able to surprise enemies and deliver consistent melee damage.",
+    "weaknesses": "Disadvantaged in direct sunlight, making it vulnerable during the day.",
+    "attacks": "Utilizes multiattack to deliver both a bite and claw attack, along with ranged dart attacks that inflict additional poison damage.",
+    "most_powerful_ability": "Stench, which poisons any non-troglodyte creature within 5 feet.",
+    "senses": "Has darkvision allowing it to see in total darkness up to 120 feet.",
+    "skills": "Proficient in stealth, reflecting its ability to remain hidden from foes.",
+    "additional_information": [
+        "Multiattack capability allows for diverse combat interaction.",
+        "Uses both melee and ranged attacks effectively.",
+        "Can incapacitate opponents with its Stench ability.",
+        "Struggles in bright environments due to Sunlight Sensitivity.",
+        "Ideal for beginner adventurer encounters."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy underground ambusher",
+        "medium humanoid with poisonous stench",
+        "cunning sewer-dwelling creature",
+        "troglodyte ambush tactics",
+        "darkvision humanoid from caves"
+    ]
+}

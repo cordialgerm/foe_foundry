@@ -1,0 +1,25 @@
+{
+    "name": "Hippopotamus",
+    "queries": [
+        {
+            "query": "large aquatic beast with high strength and thunderous attack",
+            "variant": "big water animal that has strong abilities and loud attack"
+        },
+        {
+            "query": "slow creature that can hold its breath underwater and has a gore attack",
+            "variant": "clumsy beast able to keep breath in water and does a gore attack"
+        },
+        {
+            "query": "tank-like monster with significant hit points and area effect abilities",
+            "variant": "armor-heavy creature with lots of health and area-wide powers"
+        },
+        {
+            "query": "large beast that inhabits water and strikes with powerful melee attacks",
+            "variant": "big animal that lives in water and hits hard in close combat"
+        },
+        {
+            "query": "strong beast known for its incapacitating roar and high natural armor",
+            "variant": "powerful animal recognized for its stunning noise and tough natural defense"
+        }
+    ]
+}

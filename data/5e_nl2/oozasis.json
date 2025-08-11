@@ -1,0 +1,55 @@
+{
+    "name": "Oozasis",
+    "creature_type": "Ooze",
+    "alignment": "Unaligned",
+    "size": "Gargantuan",
+    "hp": 217,
+    "ac": 7,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 20 ft., burrow 20 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "desert",
+        "deception",
+        "manipulation"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "amorphous",
+        "deceptive",
+        "formidable"
+    ],
+    "description": "The Oozasis presents itself as an oasis in desert environments, appearing as a pool of water partially submerged in sand or soil.",
+    "memorable": "It possesses the ability to compel creatures that drink its water to perform tasks aligned with its long-term goals.",
+    "goals": "To manipulate those who encounter it and use its capabilities to execute plans over extended periods.",
+    "relations": "It may be encountered alone or as a guardian of desert secrets, with a connection to plants growing around its area.",
+    "environment": "Desert habitats, often hidden amidst sandy terrain mimicking an oasis.",
+    "strengths": "High hit points, resilience to most damage types, ability to grapple multiple targets.",
+    "weaknesses": "Vulnerable to cold damage, relatively easy to hit due to low Armor Class.",
+    "attacks": "Uses multiple pseudopod strikes that deal bludgeoning and acid damage, with the potential to grapple targets.",
+    "most_powerful_ability": "Waters of Unfathomable Compulsion can influence creatures to serve the Oozasis's long-term objectives.",
+    "equipment": null,
+    "senses": "Blindsight up to 120 feet allows it to detect creatures, despite being unable to see.",
+    "skills": "Very high Perception and Insight, granting it exceptional awareness and understanding of its surroundings.",
+    "additional_information": [
+        "Does not require sleep, making it constantly active.",
+        "Amorphous form allows for movement through narrow spaces.",
+        "Oasis Appearance ability provides a strategic advantage when stationary.",
+        "Immune to several conditions, making it a challenging foe.",
+        "Can blend in with the environment, making it difficult to detect."
+    ],
+    "damage_types": [
+        "cold",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan deceptive oasis creature",
+        "ooze that compels other creatures",
+        "monster that manipulates its drinkers",
+        "amorphous creature in the desert",
+        "gargantuan ooze with compelling abilities"
+    ]
+}

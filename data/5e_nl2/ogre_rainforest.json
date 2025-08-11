@@ -1,0 +1,52 @@
+{
+    "name": "Ogre, Rainforest",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 90,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "ogre",
+        "rainforest"
+    ],
+    "adjectives": [
+        "formidable",
+        "aggressive",
+        "adaptable"
+    ],
+    "description": "The Rainforest Ogre is a large, muscular giant known for its exceptional strength and combat prowess. It can change shape into a large boar, enhancing its tactical options.",
+    "memorable": "The ability to charge and knock foes prone, coupled with regenerative capabilities, allows the ogre to dominate the battlefield.",
+    "goals": "To overpower and defeat enemies, making it a fearsome predator of the rainforest.",
+    "relations": "Often found in the company of beasts, potentially using them as allies in combat.",
+    "environment": "Rainforest, thriving in dense jungles and often using the terrain to its advantage.",
+    "strengths": "High hit points and strong melee capabilities make it a durable opponent; ability to change shape offers versatility.",
+    "weaknesses": "Low Intelligence and Charisma might hinder complex strategies and social interactions.",
+    "attacks": "Utilizes Multiattack for rapid, devastating strikes with spear or bite, especially dangerous when charging.",
+    "most_powerful_ability": "Devouring Charge allows it to knock opponents prone, leading to additional attacks as a bonus action.",
+    "equipment": "Spear for ranged or melee attacks.",
+    "senses": "Has a passive perception score of 12, allowing it to be somewhat aware of its surroundings.",
+    "skills": "Has no notable skill proficiencies.",
+    "additional_information": [
+        "Fey Ancestry grants advantage against being charmed and immunity to magical sleep effects.",
+        "Can speak with animals, potentially gaining local allies.",
+        "Excellent at melee combat with a bite attack that also heals it.",
+        "Uses its environment in combat to bolster its aggressive tactics.",
+        "Can revert to its original form upon death, maintaining its adaptability."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable giant in the rainforest",
+        "ogre that can transform into a boar",
+        "rainforest creature with powerful melee attacks",
+        "aggressive giant with high hit points",
+        "unique abilities of a rainforest ogre"
+    ]
+}

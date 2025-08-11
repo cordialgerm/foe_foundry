@@ -1,0 +1,52 @@
+{
+    "name": "Great Wyrm Gold Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Lawful Good",
+    "size": "Gargantuan",
+    "hp": 975,
+    "ac": 22,
+    "srd": false,
+    "cr": "26",
+    "movement": "walk 40 ft., fly 80 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "gold",
+        "majestic",
+        "fire immune"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "powerful",
+        "majestic"
+    ],
+    "description": "The Great Wyrm Gold Dragon has a majestic and imposing presence, with scales that shine like gold. It is gargantuan in size and possesses potent melee attacks alongside formidable spellcasting abilities.",
+    "memorable": "It is known for its immense power, versatility in battle, and protective abilities that aid its allies.",
+    "goals": "To protect its territory and allies while dispelling evil.",
+    "relations": "Can be found with other dragons or noble creatures of the realm.",
+    "environment": "High mountains, ancient ruins, and secluded forests.",
+    "strengths": "Immunity to fire, high durability, and the ability to turn failed saving throws into successes.",
+    "weaknesses": "Vulnerability to strategic spell use and ranged combat.",
+    "attacks": "Powerful melee attacks with bite and claws, devastating breath weapons, and the ability to create hazardous zones with molten gold.",
+    "most_powerful_ability": "Breath weapons that deal immense fire damage and can immobilize foes.",
+    "senses": "It has blindsight out to 60 feet, granting it excellent awareness of its surroundings.",
+    "skills": "Possesses exceptional persuasion skills, allowing it to manipulate allies and foes with ease.",
+    "additional_information": [
+        "Gleaming Brilliance ability recharges breath weapon when bloodied.",
+        "Legendary Resistance enables it to succeed on saving throws.",
+        "Valor ability grants allies bonuses and immunities.",
+        "Can change shape into humanoid or beast form.",
+        "Legendary actions provide tactical advantages in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting ability allows it to cast support spells like 'bless' and 'greater restoration' without material components.",
+    "test_queries": [
+        "gargantuan gold dragon with powerful abilities",
+        "majestic dragon immune to fire attacks",
+        "great wyrm dragon that shapes into humanoid",
+        "formidable dragon with healing spells",
+        "gold dragon that supports allies in battle"
+    ]
+}

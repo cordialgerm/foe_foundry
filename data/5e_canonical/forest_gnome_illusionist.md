@@ -1,6 +1,8 @@
 <MonsterName/>Forest Gnome Illusionist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>12</AC>
+<HP/>67</HP>
 <summary>The Forest Gnome Illusionist is a unique and versatile spellcasting creature that plays a supportive and controlling role in combat. With a challenge rating of 6, it possesses a decent amount of hit points and armor class, making it relatively durable for a spellcaster. Its strengths lie in its high intelligence and dexterity, allowing it to cast powerful spells effectively while also being nimble enough to escape danger. The illusionist is particularly adept at handling crowds with potent area control spells, making its presence important in larger engagements. However, the creature's melee capabilities are weak, and its lack of high charisma limits its social interactions, making it less effective in situations where charm or persuasion is necessary.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Forest Gnome Illusionist is a crafty and resourceful spellcaster th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Gnome Illusionist
 
 *Medium* *Humanoid*
@@ -97,5 +100,6 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V:** When the mage is hit by an attack or targeted by magic missile, they gain a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the start of their next turn.
 
 
+</statblock>
 
 

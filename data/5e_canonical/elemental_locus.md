@@ -1,6 +1,8 @@
 <MonsterName/>Elemental Locus</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>17</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>290</HP>
 <summary>The Elemental Locus is a gargantuan elemental creature that serves as a powerful guardian of its territory, embodying the raw forces of nature. With an impressive armor class of 16 and a substantial pool of hit points totaling 290, it stands as a formidable opponent in combat. The Locus possesses exceptional physical strength with a Strength score of 28, allowing it to effectively deal high amounts of bludgeoning damage. However, its Dexterity is notably low at 1, indicating that it may struggle with agility and evasion. The creature’s defined role is to control an area, leveraging its abilities to summon allies and deal significant damage to structures while remaining virtually immortal—and bound to its territory. Its multiple resistances and immunities make it a challenging adversary, though its limitations in mobility due to its bound nature can be a critical weakness in open environments.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ The Spawn Elemental action enables the Locus to magically create a number of all
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elemental Locus
 
 *Gargantuan* *Elemental* *Neutral*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The elemental locus makes three Slam attacks. It can replace one attack with a use of Spawn Elemental.
 - **Slam:** Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 31 (5d8 + 9) bludgeoning damage. If the target is a creature, it must succeed on a DC 18 Strength saving throw or be knocked prone.
 - **Spawn Elemental:** The elemental locus magically creates up to 2d6 mephits or 1 Elemental with a challenge rating of 5 or lower. The Elementals arrive at the start of the locus’s next turn, acting as allies of the locus and obeying its spoken commands. The locus can create only Elementals that share an element with a terrain feature comprising at least 100,000 square feet of the locus’s bound land. For example, a desert-bound locus can’t create a water-based Elemental, unless its bound desert contains an oasis or other source of water around the size of a small pond.
+</statblock>
 
 

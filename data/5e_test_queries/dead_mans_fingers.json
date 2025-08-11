@@ -1,0 +1,25 @@
+{
+    "name": "Dead Mans Fingers",
+    "queries": [
+        {
+            "query": "plant creature that exists on both Ethereal and Material planes",
+            "variant": "creature that is a plant and lives on Ethereal and Material planes"
+        },
+        {
+            "query": "medium-sized plant with powerful tendril attacks and fire vulnerability",
+            "variant": "medium plant that has strong tendril attacks and is susceptible to fire"
+        },
+        {
+            "query": "ethereal plant that can shift opponents to another plane",
+            "variant": "plant that can move enemies to the Ethereal Plane"
+        },
+        {
+            "query": "monster with blindsight and immunity to many conditions",
+            "variant": "creature that has blindsight and is immune to various conditions"
+        },
+        {
+            "query": "combat challenge monster with necrotic spores ability",
+            "variant": "challenge monster that has the ability to release necrotic spores"
+        }
+    ]
+}

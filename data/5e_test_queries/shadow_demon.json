@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Demon",
+    "queries": [
+        {
+            "query": "evil fiend that moves through shadows and can fly",
+            "variant": "fiend that can fly and moves through shadows, evil creature"
+        },
+        {
+            "query": "creature with cold damage attacks that lurks in darkness",
+            "variant": "dark creature that lurks in shadows and has cold damage attacks"
+        },
+        {
+            "query": "medium demon that is vulnerable to radiant damage and uses telepathy",
+            "variant": "demon vulnerable to radiant damage that communicates via telepathy and is medium-sized"
+        },
+        {
+            "query": "stealthy creature that excels in dim light and can douse fires",
+            "variant": "creature that can extinguish fires and is excellent in dim light for stealth"
+        },
+        {
+            "query": "demon with claws that attacks from the shadows and shares space with targets",
+            "variant": "creature with claws that can attack from shadows and shares space with its victims"
+        }
+    ]
+}

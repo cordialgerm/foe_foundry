@@ -1,6 +1,8 @@
 <MonsterName/>Warmth Thief</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Warmth Thief is a tiny fey creature embodying the essence of cold and stealth. Its neutral evil alignment drives it to manipulate and harm those around it, using its innate abilities to siphon warmth and life force from unsuspecting victims. With impressive mobility due to its flying speed, it can maneuver easily in combat, making it hard to pin down. The creature possesses a relatively high Armor Class of 16 and a substantial pool of hit points, totaling 112, that makes it resilient in battle. However, it is vulnerable to the environment, as excessive warmth can cause it to suffer from exhaustion. The Warmth Thief primarily employs cold damage in its attacks and abilities, making it a formidable foe in colder climates but less effective in warmer environments.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ During its turn, the Warmth Thief can use the action "Multiattack," allowing it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warmth Thief
 
 *Tiny* *Fey* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Freezing Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) slashing damage plus 14 (4d6) cold damage. The warmth thief regains hp equal to half the cold damage dealt. The target must succeed on a DC 16 Constitution saving throw or be chilled for 1 minute. A chilled creature takes 7 (2d6) cold damage at the start of each of its turns. A chilled creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A humanoid slain while chilled rises 24 hours later as a chill haunt, unless the humanoid is restored to life or its body is destroyed.
 
 
+</statblock>
 
 

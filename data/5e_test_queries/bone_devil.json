@@ -1,0 +1,25 @@
+{
+    "name": "Bone Devil",
+    "queries": [
+        {
+            "query": "tall skeletal fiend with a barbed tail and wings",
+            "variant": "tall fiend with bony wings and a barbed tail"
+        },
+        {
+            "query": "fiend that commands lesser devils and excels in deception",
+            "variant": "devil that commands lower devils and is skilled in deception"
+        },
+        {
+            "query": "creature with high AC and poison attacks in the underworld",
+            "variant": "monster with great armor class and poison attacks dwelling in the underworld"
+        },
+        {
+            "query": "large malevolent fiend with magic resistance and darkvision",
+            "variant": "large evil fiend that has magical resistance and darkvision"
+        },
+        {
+            "query": "skeletal creature that thrives in combat and instills fear",
+            "variant": "bone creature that excels in battle and strikes fear"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Shark, Hunter</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>63</HP>
 <summary>The Hunter Shark is a large, predatory beast that thrives in aquatic environments, making it a formidable opponent in water-based encounters. With a challenge rating of 2, it poses a moderate threat to adventurers, particularly those who may find themselves in its element. The creature possesses notable strengths, including enhanced attack abilities against weakened foes and a keen sense of smell, allowing it to track injured creatures from great distances. It primarily uses its bite for attacks and can move quickly in the water to close gaps on its prey. However, its reliance on being in water limits its versatility on land, making it vulnerable in terrestrial combat situations.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the shark can perform a Multiattack, enabling it to make two Bite att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shark, Hunter
 
 *Large beast*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Swift Hunter.** The shark moves up to half its speed toward a hostile creature that it can see. This movement doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

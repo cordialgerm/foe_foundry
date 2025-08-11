@@ -1,0 +1,25 @@
+{
+    "name": "Wereotter",
+    "queries": [
+        {
+            "query": "playful humanoid creature that can transform and loves water",
+            "variant": "humanoid creature that loves water and is playful and can transform"
+        },
+        {
+            "query": "otter-like monster with strong Dexterity that lives near water",
+            "variant": "monster resembling an otter that has strong Dexterity and lives by water"
+        },
+        {
+            "query": "chaotic good lycanthrope that can breathe underwater",
+            "variant": "lycanthrope that is chaotic good and can breathe underwater"
+        },
+        {
+            "query": "medium-sized humanoid that is cursed with lycanthropy and uses nets",
+            "variant": "humanoid that can use nets and is cursed with lycanthropy, medium-sized"
+        },
+        {
+            "query": "creature with darkvision that can attack with javelins and bite",
+            "variant": "creature that can bite and attack with javelins and has darkvision"
+        }
+    ]
+}

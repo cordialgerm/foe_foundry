@@ -1,6 +1,8 @@
 <MonsterName/>Giant Frilled Lizard</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Giant Frilled Lizard is a large beast known for its impressive physical capabilities and intimidating presence. With an unaligned nature, this creature predominantly relies on its high Dexterity and decent Constitution to excel in combat situations. The lizard has a solid Armor Class of 16, allowing it to withstand hits fairly well, and possesses a considerable pool of 105 hit points, making it resilient in skirmishes. While its Intelligence is significantly low, indicating a lack of strategic thinking, its physical attributes and abilities make it a formidable opponent in battle, especially when using its special abilities to frighten foes or make multiple attacks in a single turn.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ Overall, the Giant Frilled Lizard combines agility, physical strength, and a sur
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Frilled Lizard
 
 *Large* *Beast* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

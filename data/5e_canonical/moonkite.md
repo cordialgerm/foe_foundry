@@ -1,6 +1,8 @@
 <MonsterName/>Moonkite</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Moonkite is a formidable celestial creature that embodies goodness and light. With its large stature and impressive abilities, it serves as a protector and a guide for those in need. It possesses high mobility with a flying speed of 120 feet, making it an agile combatant and an effective ally in tight situations. While its natural armor grants it a fair amount of protection, its true strengths lie in its special abilities and damage immunities. The Moonkite is immune to poison and resistant to fire and radiant damage, which are common in magical encounters. Additionally, its condition immunities make it an exceptional fighter, unable to be hindered by conventional means like exhaustion or fright. However, while it is strong in combat, it does not excel in traditional melee attacks.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Moonkite can perform a "Multiattack," which allows it to unleash 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonkite
 
 *Large* *Celestial* *lawful good*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Planar Traveler:** The moonkite can transport itself to a different plane of existence. This works like the plane shift spell, except the moonkite can affect only itself and a willing rider, and can’t banish an unwilling creature to another plane.
 
 
+</statblock>
 
 

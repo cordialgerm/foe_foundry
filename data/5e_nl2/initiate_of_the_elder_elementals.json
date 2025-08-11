@@ -1,0 +1,56 @@
+{
+    "name": "Initiate of the Elder Elementals",
+    "creature_type": "Humanoid",
+    "alignment": "any evil alignment",
+    "size": "Small",
+    "hp": 33,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "spellcaster",
+        "humanoid"
+    ],
+    "adjectives": [
+        "intelligent",
+        "resilient",
+        "small",
+        "elemental"
+    ],
+    "description": "A small humanoid creature representing the elemental forces of nature, showcasing both physical prowess and magic.",
+    "memorable": "Possesses elemental adaptability and strong spellcasting abilities.",
+    "goals": "Typically invokes elemental powers in combat, utilizing spells and in coordination with allies.",
+    "relations": "Often found working alongside elemental beings or evil spellcasters.",
+    "environment": "Commonly found in areas rich in elemental magic or among evil factions.",
+    "strengths": "Strong in spellcasting with a diverse array of elemental spells and advantageous traits.",
+    "weaknesses": "Very low strength makes it vulnerable in melee combat, particularly in direct confrontations.",
+    "attacks": "Attacks using a dagger for melee or ranged strikes and can unleash potent elemental magic.",
+    "most_powerful_ability": "Gift of the Elder Elementals allows for substantial damage and hinders targets against future spells.",
+    "equipment": "dagger",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Skilled in Religion and Intimidation, with a notable proficiency in spellcasting.",
+    "additional_information": [
+        "Advantage on saving throws against acid, cold, fire, or lightning damage.",
+        "Can change the damage type of spells for tactical flexibility.",
+        "Gains advantage on attack rolls when allies are nearby.",
+        "Has disadvantage on attack rolls and Wisdom checks in bright light.",
+        "5th-level spellcaster with a variety of damaging spells."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": "Can cast various spells including burning hands, lightning bolt, and versatile elemental damage spells.",
+    "test_queries": [
+        "small evil elemental spellcaster",
+        "humanoid with elemental powers",
+        "spellcasting creature with sunlight sensitivity",
+        "Initiate of the Elder Elementals abilities",
+        "elemental-themed humanoid with pack tactics"
+    ]
+}

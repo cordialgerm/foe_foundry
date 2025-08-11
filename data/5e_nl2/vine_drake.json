@@ -1,0 +1,53 @@
+{
+    "name": "Vine Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "climb 50 ft., walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "nature",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "poisonous"
+    ],
+    "description": "The Vine Drake is a medium dragon with thorny skin and a strong connection to nature, capable of commanding the environment around it.",
+    "memorable": "Its ability to communicate with plants and use acid breath makes it a unique rival.",
+    "goals": "To dominate its territory and control the flora around it.",
+    "relations": "Often found in the company of other nature-based creatures or within lush environments.",
+    "environment": "Typically found in forests or other nature-rich terrains.",
+    "strengths": "Resistant to bludgeoning and piercing damage from nonmagical attacks; high Strength and Constitution.",
+    "weaknesses": "Potential vulnerability to magic that overcomes its resistances.",
+    "attacks": "Uses bite, claw, vine lash, and acid breath to inflict damage and control enemies.",
+    "most_powerful_ability": "Innate spellcasting to cast entangle without need for components.",
+    "equipment": null,
+    "senses": "Has darkvision up to 90 feet and a passive Perception score of 14.",
+    "skills": "Excels in Athletics and Stealth due to high skill bonuses.",
+    "additional_information": [
+        "Can inflict piercing damage with its thorny skin against attackers.",
+        "Can grapple and restrain enemies with its vine lash.",
+        "Poison damage added to its bite attack adds a layer of danger.",
+        "Multiattack allows it to be a threat in combat with multiple actions.",
+        "Ability to communicate with plants can provide tactical advantages."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": "Can cast entangle two times per day, using Charisma as the spellcasting ability.",
+    "test_queries": [
+        "dragon controlling nature and plants",
+        "versatile dragon with poison and acid attacks",
+        "thorny dragon that communicates with plants",
+        "medium dragon with powerful natural abilities",
+        "creature that grapples and restrains foes"
+    ]
+}

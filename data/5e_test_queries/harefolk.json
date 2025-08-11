@@ -1,0 +1,25 @@
+{
+    "name": "Harefolk",
+    "queries": [
+        {
+            "query": "small humanoid creature that excels in stealth and lives in snowy terrain",
+            "variant": "small humanlike being skilled in stealth who resides in snow environments"
+        },
+        {
+            "query": "agile furry humanoid with keen smell ability and icy camouflage",
+            "variant": "quick fur-covered humanoid that has keen sniffing skills and snow hiding abilities"
+        },
+        {
+            "query": "chaotic good humanoid known for perception and survival skills in cold areas",
+            "variant": "humanoid with chaotic good alignment recognized for its skills in perception and survival among icy surroundings"
+        },
+        {
+            "query": "creature with advantage on initiative rolls and great at detecting shapechangers",
+            "variant": "being that benefits from initiative advantages and excels in spotting shape-shifting foes"
+        },
+        {
+            "query": "humanoid with high dexterity and snow camouflage that can burrow",
+            "variant": "humanoid possessing strong agility and snowy hiding skills that can dig underground"
+        }
+    ]
+}

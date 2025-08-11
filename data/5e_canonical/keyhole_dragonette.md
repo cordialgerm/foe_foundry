@@ -1,6 +1,8 @@
 <MonsterName/>Keyhole Dragonette</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Keyhole Dragonette is a tiny, neutral dragon known for its agility and unique abilities. With an Armor Class of 14 and 27 Hit Points, it is a nimble creature that can evade some attacks while delivering its own. Ideal for a low-level encounter, this creature holds a Challenge Rating of 1/2, offering 100 XP upon defeat. Notable for its ability to navigate through tight spaces and require minimal space to move, the dragonette can serve various roles in a party or during combat situations, particularly as a scout due to its good dexterity and stealth skills. However, its intelligence is relatively low, making it less effective in roles that require problem-solving or strategy.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Keyhole Dragonette can perform a melee attack with its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Keyhole Dragonette
 
 *Tiny* *Dragon* *neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Soporific Breath (Recharge 5-6):** The dragonette exhales a cloud of sleep gas in a 15-foot cone. Each creature in the area must succeed on a DC 12 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.
 
 
+</statblock>
 
 

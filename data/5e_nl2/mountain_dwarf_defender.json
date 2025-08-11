@@ -1,0 +1,51 @@
+{
+    "name": "Mountain Dwarf Defender",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 20,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Defender",
+    "tags": [
+        "dwarf",
+        "defender",
+        "warrior",
+        "knight"
+    ],
+    "adjectives": [
+        "sturdy",
+        "brave",
+        "resilient"
+    ],
+    "description": "The Mountain Dwarf Defender is a robust medium humanoid known for its sturdy build and capabilities in melee combat, often wielding a warhammer and a lance while mounted.",
+    "memorable": "Exceptional defensive skills that resist being moved or knocked prone, combined with inspiring allies in battle.",
+    "goals": "To stand firm on the battlefield, protect allies, and engage in melee combat.",
+    "relations": "Often found alongside other dwarves or knights, serving as protectors or warriors.",
+    "environment": "Typically found in mountainous terrains or battlefields.",
+    "strengths": "High armor class and exceptional melee attack capabilities, resilient against fear and physical displacements.",
+    "weaknesses": "Limited effectiveness in ranged combat, with disadvantage when attacking close targets.",
+    "attacks": "Strikes with a warhammer for bludgeoning damage, uses a lance effectively while mounted, also has a ranged attack with a heavy crossbow.",
+    "most_powerful_ability": "Knightly Inspiration, which grants allies bonuses on attack rolls and saving throws.",
+    "equipment": null,
+    "senses": "Passive perception score of 12 indicating above-average awareness.",
+    "skills": "Skilled in athletics, showcasing exceptional physical capabilities.",
+    "additional_information": [
+        "Brave: Advantage on saving throws against fear.",
+        "Steadfast: Resists being pushed or knocked prone.",
+        "Multiattack: Can attack twice with their warhammer.",
+        "Mounted combat with increased damage using the lance.",
+        "Inspires allies with Knightly Inspiration, enhancing their combat effectiveness."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dwarf knight with a sturdy defense",
+        "mountain defender with melee capabilities",
+        "dwarf that inspires allies in combat",
+        "brave warrior resistant to fear",
+        "robust defender using a warhammer"
+    ]
+}

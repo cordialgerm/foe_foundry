@@ -1,0 +1,48 @@
+{
+    "name": "Gerridae",
+    "creature_type": "Fey",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "aquatic",
+        "mount"
+    ],
+    "adjectives": [
+        "large",
+        "water-bound",
+        "resilient"
+    ],
+    "description": "The Gerridae is a large fey creature known for its aquatic nature, having a robust physique with notable strength and resilience. It has a distinct appearance suited to its environment and is often found with a saddle, ready for a rider.",
+    "memorable": "Its ability to walk on water and resistance to charm while ridden makes it a unique companion.",
+    "goals": "Typically serves as a mount for aquatic riders, navigating over water surfaces while remaining resilient.",
+    "relations": "May be found alongside other aquatic fey or as mounts for adventurers.",
+    "environment": "Typically found in water bodies or areas close to water, as it suffers while on dry land.",
+    "strengths": "High Strength and Constitution make it effective in combat, and its Water Walker ability allows for unique movement over water.",
+    "weaknesses": "Vulnerable to damage from prolonged exposure to dry land, losing hit points over time.",
+    "attacks": "Makes one Bite attack dealing piercing damage and one Claw attack dealing slashing damage.",
+    "most_powerful_ability": "Water Walker allows it to traverse water as if it were solid ground, facilitating movement and tactical advantages.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can't be charmed or frightened with a rider.",
+        "Loses hit points on dry land.",
+        "Good melee combatant with multiattack actions."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large fey that can walk on water",
+        "aquatic mount with charm resistance",
+        "strong creature that loses health on dry land",
+        "water traversing large fey creature",
+        "Gerridae mount for aquatic adventures"
+    ]
+}

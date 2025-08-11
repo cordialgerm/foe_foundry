@@ -1,0 +1,25 @@
+{
+    "name": "Ash Drake",
+    "queries": [
+        {
+            "query": "small dragon that breathes hot ash and is immune to fire",
+            "variant": "small drake that can breath hot ash and has fire immunity"
+        },
+        {
+            "query": "cunning flying creature that creates obscuring ash clouds",
+            "variant": "sneaky flying monster that uses ash clouds for cover"
+        },
+        {
+            "query": "stealthy drake known for poison and heat attacks",
+            "variant": "sneaky drake known for heat and poison attack abilities"
+        },
+        {
+            "query": "dragon with dexterous movements and a 30-foot ash breath",
+            "variant": "dragon that can move quickly and has a 30-foot ash breath weapon"
+        },
+        {
+            "query": "neutral evil dragon that excels in stealth and tactical advantages",
+            "variant": "evil neutral dragon that is great at stealth and gaining tactical edges"
+        }
+    ]
+}

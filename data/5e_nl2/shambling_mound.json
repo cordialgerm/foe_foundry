@@ -1,0 +1,53 @@
+{
+    "name": "Shambling Mound",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": true,
+    "cr": "5",
+    "movement": "20 ft. walking and swimming",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "swamp",
+        "predator"
+    ],
+    "adjectives": [
+        "hulking",
+        "strong",
+        "slow-moving",
+        "vegetation-covered"
+    ],
+    "description": "A mass of rotting vegetation animated by natural or magical forces, resembling a large mound with tendrils for ensnaring prey.",
+    "memorable": "Its ability to heal from lightning damage makes it a dangerous opponent in combat.",
+    "goals": "To consume both animals and plants for nutrients.",
+    "relations": "Often found in swamps and forested areas, may encounter other swamp or plant monsters.",
+    "environment": "Swamps, forests, and overgrown areas.",
+    "strengths": "Resistant to cold and fire damage; immune to lightning and certain conditions; can grapple and engulf enemies.",
+    "weaknesses": "Low agility hampers its movement and predictability; has specific weak points against certain damage types.",
+    "attacks": "Uses slam attacks to deal bludgeoning damage, can grapple and engulf prey, dealing ongoing damage.",
+    "most_powerful_ability": "Lightning Absorption, allowing it to heal when struck by lightning damage.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to navigate without sight.",
+    "skills": "Proficient in stealth, enhancing its ability to ambush foes.",
+    "additional_information": [
+        "Emits a noxious smell that can poison nearby creatures.",
+        "Regenerates from wounds, increasing its survivability.",
+        "Can engulf a grappled creature, keeping it restrained and unable to breathe.",
+        "Exceptionally strong with high strength and constitution.",
+        "Blends well into natural environments, making it a threat in its habitats."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mass of rotting vegetation",
+        "plant creature that heals from lightning",
+        "ambush predator in swamps",
+        "hulking and strong swamp monster",
+        "creature that engulfs and grapples enemies"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Crocodile",
+    "queries": [
+        {
+            "query": "large ambush predator with tough scaly skin found in water",
+            "variant": "large ambush preditor with tough scaley skin found in water"
+        },
+        {
+            "query": "carnivorous reptile that can hold its breath and performs a death roll",
+            "variant": "carnivorous reptile who can hold its breath and does a death roll"
+        },
+        {
+            "query": "stealthy hunter in swamps with a deadly bite attack",
+            "variant": "stealthy hunter in swampy areas with a deadly bite attack"
+        },
+        {
+            "query": "predatory beast that grapples its prey and is dangerous in water",
+            "variant": "predatory beast which grapples its prey and is dangerous in waters"
+        },
+        {
+            "query": "creature with powerful jaws that tends to reside in lakes and rivers",
+            "variant": "creature with powerfull jaws that lives in lakes and rivers"
+        }
+    ]
+}

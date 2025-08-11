@@ -1,0 +1,25 @@
+{
+    "name": "Vellso",
+    "queries": [
+        {
+            "query": "chaotic evil fiend that can climb and has necrotic damage immunities",
+            "variant": "fiend that is chaotic evil, climbs, and immune to necrotic damage"
+        },
+        {
+            "query": "medium-sized monster with strong melee attacks and good stealth",
+            "variant": "medium fiend with excellent stealth and strong melee capabilities"
+        },
+        {
+            "query": "creature that uses bite and claws in combat and causes exhaustion",
+            "variant": "monster that attacks with claws and bite and inflicts exhaustion"
+        },
+        {
+            "query": "fiend with high hit points and magic resistance in dark areas",
+            "variant": "high HP fiend that resists magic in darkness"
+        },
+        {
+            "query": "climbing monster with keen smell and advantages against spells",
+            "variant": "monster that climbs and has keen smell, with advantages vs spells"
+        }
+    ]
+}

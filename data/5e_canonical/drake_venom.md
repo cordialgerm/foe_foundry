@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Venom</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Venom Drake is a large, chaotic evil dragon-type creature known for its potent poison and agile abilities. Standing as a formidable foe, it boasts a solid armor class of 16 and a remarkable pool of 142 hit points, making it challenging to defeat in combat. This creature is particularly dangerous due to its multiattack capabilities, which allow it to deliver a series of effective strikes, including poison-based attacks that incapacitate opponents. While it possesses strong physical attributes, particularly in strength and constitution, its charisma is notably low, suggesting a lack of social prowess. Its ability to blend into natural surroundings with special camouflage further enhances its offensive strategy. Players should be cautious of its toxic abilities, as they can swiftly incapacitate characters if not appropriately dealt with.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Venom Drake combines speed, strength, and deadly poison to create a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Venom
 
 *Large* *Dragon* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Venom Breath (Recharge 5–6):** Spits venom in a 60' line that is 5 ft. wide. Each creature in that line: 36 (8d8) poison and succumbs to the drake’s venom (see above; DC 16 Con half damage and doesn’t succumb to the venom).
 
 
+</statblock>
 
 

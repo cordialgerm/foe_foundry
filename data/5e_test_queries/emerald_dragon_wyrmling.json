@@ -1,0 +1,25 @@
+{
+    "name": "Emerald Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that can fly and uses psionic abilities",
+            "variant": "dragon that can fly and has psionic powers, medium-sized"
+        },
+        {
+            "query": "green dragon with high deception skills living in diverse environments",
+            "variant": "dragon with high stealth skills and green color found in various habitats"
+        },
+        {
+            "query": "dragon known for thunder damage attacks and psychic resistance",
+            "variant": "dragon that attacks with thunder damage and resists psychic attacks"
+        },
+        {
+            "query": "cunning dragon that has a melee bite attack and thunder scream",
+            "variant": "clever dragon with a bite attack and a thunder scream ability"
+        },
+        {
+            "query": "Emerald Dragon Wyrmling special powers and combat strategies",
+            "variant": "special abilities and combat tactics of the Emerald Dragon Wyrmling"
+        }
+    ]
+}

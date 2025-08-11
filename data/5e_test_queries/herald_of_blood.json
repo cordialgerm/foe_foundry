@@ -1,0 +1,25 @@
+{
+    "name": "Herald of Blood",
+    "queries": [
+        {
+            "query": "huge fiend that inflicts necrotic damage and can fly",
+            "variant": "fiendish creature that is huge, deals necrotic damage, and has flying ability"
+        },
+        {
+            "query": "powerful blood-themed monster with high Constitution and Strength",
+            "variant": "strong monster related to blood with exceptional Strength and Constitution scores"
+        },
+        {
+            "query": "creature immune to necrotic damage that attacks from a distance",
+            "variant": "monster that is immune to necrotic damage and can attack from far range"
+        },
+        {
+            "query": "monster with Blood Armor and abilities to poison enemies",
+            "variant": "creature featuring Blood Armor that can also poison foes"
+        },
+        {
+            "query": "evil fiend that can grant rage and exhaust opponents",
+            "variant": "neutral evil fiend that has the ability to grant rage and exhaust its enemies"
+        }
+    ]
+}

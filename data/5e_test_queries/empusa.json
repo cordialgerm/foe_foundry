@@ -1,0 +1,25 @@
+{
+    "name": "Empusa",
+    "queries": [
+        {
+            "query": "chaotic evil beast with high strength and magical attacks",
+            "variant": "beast with high strength and magical attacks that is chaotic evil"
+        },
+        {
+            "query": "medium monstrosity that can transform into small beast and ambushes",
+            "variant": "monstrosity that can shapechange into small beast and is skilled at ambushing"
+        },
+        {
+            "query": "creature known for cunning, deception skills, and high hit points",
+            "variant": "creature with high hit points, cunning abilities, and skills in deception"
+        },
+        {
+            "query": "dangerous monster that uses claw and kick attacks in battle",
+            "variant": "monster that attacks using claws and kicks and is considered dangerous"
+        },
+        {
+            "query": "fast moving creature with special ambush abilities and coppery coloration",
+            "variant": "creature that moves fast and has special abilities for ambushing, featuring coppery color"
+        }
+    ]
+}

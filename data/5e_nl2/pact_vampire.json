@@ -1,0 +1,53 @@
+{
+    "name": "Pact Vampire",
+    "creature_type": "Undead",
+    "alignment": "Any Evil Alignment",
+    "size": "Medium",
+    "hp": 178,
+    "ac": 16,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "vampire",
+        "fiend summons"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "manipulative"
+    ],
+    "description": "The Pact Vampire is a Medium Undead creature known for its cunning and magical abilities, possessing a powerful physique with a Strength score of 22 and a Charisma of 20. Its unique features include poisonous blood and the ability to regenerate unless affected by radiant damage.",
+    "memorable": "It can summon fiends to aid it in battle, and its ability to draw blood inflicts necrotic damage and heals itself.",
+    "goals": "To dominate and manipulate its foes, exploiting its vampiric powers.",
+    "relations": "May be encountered alongside fiends and often has connections to dark powers or cults.",
+    "environment": "Typically found in dark, cursed locations or ruins associated with evil and magic.",
+    "strengths": "Has high saving throws and immunity to poison damage, making it difficult to defeat.",
+    "weaknesses": "Vulnerable to sunlight and radiant damage, which can bypass its regeneration.",
+    "attacks": "Utilizes multiple claw attacks that deal slashing and poison damage, alongside necrotic damage through its blood-drawing ability.",
+    "most_powerful_ability": "The Call Blood action allows it to draw significant health from its enemies while enhancing its own vitality.",
+    "equipment": null,
+    "senses": "Possesses darkvision extending 120 feet and a passive Perception of 17.",
+    "skills": "Proficient in Persuasion, Stealth, and has strong Perception skills.",
+    "additional_information": [
+        "Can magically charm humanoids to obey its commands for a day.",
+        "Regenerates 25 hit points at the start of its turn unless exposed to radiant damage.",
+        "Blood Sense enables it to locate creatures within 60 feet.",
+        "Immunity to the poisoned condition.",
+        "Legendary Resistance allows it to avoid failed saving throws."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Pact Vampire abilities and tactics",
+        "undead creature with regenerative powers",
+        "vampire that summons fiends",
+        "cunning vampire using blood magic",
+        "creature weak to sunlight and radiant damage"
+    ]
+}

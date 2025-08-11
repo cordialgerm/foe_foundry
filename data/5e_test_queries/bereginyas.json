@@ -1,0 +1,25 @@
+{
+    "name": "Bereginyas",
+    "queries": [
+        {
+            "query": "tiny toxic fey creature that can smother its prey",
+            "variant": "small toxic fey monster that can suffocate its targets"
+        },
+        {
+            "query": "stealthy fey with a poisonous aura that inflicts damage",
+            "variant": "stealthy fey with poisonous gas that deals damage"
+        },
+        {
+            "query": "creature that can fly and has bludgeoning immunity",
+            "variant": "monster that has flight abilities and is immune to bludgeoning damage"
+        },
+        {
+            "query": "Cunning small fey that loves sneak attacks and poison tactics",
+            "variant": "clever little fey that enjoys ambushes and uses poison"
+        },
+        {
+            "query": "fey capable of inflicting poison damage and suffocating enemies",
+            "variant": "fey that can deal poison damage and choke its foes"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Gumienniki",
+    "queries": [
+        {
+            "query": "small fiend that can shapeshift into a housecat",
+            "variant": "tiny fiend that shapeshifts into a housecat"
+        },
+        {
+            "query": "agile monster with fire resistance and illusion abilities",
+            "variant": "quick monster that has fire resistance and can use illusions"
+        },
+        {
+            "query": "cunning fiend with darkvision and stealth skills",
+            "variant": "sly fiend who has darkvision and is good at stealth"
+        },
+        {
+            "query": "neutral evil creature that taunts attackers and has a flaming weapon",
+            "variant": "evil neutral creature that uses taunts and wields a flaming weapon"
+        },
+        {
+            "query": "fiend with poison immunity and speed boost in grassy areas",
+            "variant": "fiend that is immune to poison and moves faster in grass"
+        }
+    ]
+}

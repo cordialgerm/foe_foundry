@@ -1,0 +1,25 @@
+{
+    "name": "Minotaur Skeleton",
+    "queries": [
+        {
+            "query": "skeletal giant that charges at enemies and guards ancient ruins",
+            "variant": "giant skeleton that charges foes and protects ancient tombs"
+        },
+        {
+            "query": "undead minotaur with high damage melee attacks and ambush capability",
+            "variant": "undead minotaur with powerful melee attacks and surprise attack ability"
+        },
+        {
+            "query": "reanimated minotaur with rusted weapons found in dark places",
+            "variant": "revived minotaur with old weapons located in shadowy areas"
+        },
+        {
+            "query": "Minotaur skeleton with charge ability and false appearance tactic",
+            "variant": "skeleton of a minotaur that uses charge and can pretend to be still"
+        },
+        {
+            "query": "strong undead creature that does not require food or sleep",
+            "variant": "powerful undead being that doesn't need food or rest"
+        }
+    ]
+}

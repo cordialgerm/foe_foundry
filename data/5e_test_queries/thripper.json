@@ -1,0 +1,25 @@
+{
+    "name": "Thripper",
+    "queries": [
+        {
+            "query": "humanoid with cunning abilities that can fly",
+            "variant": "cunning flying humanoid with unique abilities"
+        },
+        {
+            "query": "creature that specializes in combat against fey and has truesight",
+            "variant": "fey-fighting creature with vision that pierces illusions"
+        },
+        {
+            "query": "agile humanoid known for using necrotic damage in combat",
+            "variant": "humanoid that is agile and uses necrotic attacks"
+        },
+        {
+            "query": "medium creature with cold vulnerability and a knack for perception",
+            "variant": "cold-vulnerable medium creature good at noticing details"
+        },
+        {
+            "query": "thripper tactics for fighting fey and sensing enemies",
+            "variant": "tactics of thrippers for fey combat and enemy detection"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Cryoceros",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "cold",
+        "snow"
+    ],
+    "adjectives": [
+        "formidable",
+        "aggressive"
+    ],
+    "description": "The Cryoceros is a large, powerful creature resembling a rhinoceros, adapted to snowy environments with thick, ice-sharpened skin and formidable natural weaponry.",
+    "memorable": "Its ability to expend blizzards of ice as attacks makes it a terrifying combatant in snow-covered landscapes.",
+    "goals": "The Cryoceros hunts aggressively, using its environment to ambush prey and dominate combat encounters.",
+    "relations": "Related to snowy and cold climate creatures.",
+    "environment": "Typically found in snowy terrains and cold climates.",
+    "strengths": "High physical strength and resilience, with damage resistances to bludgeoning and cold.",
+    "weaknesses": "Low versatility in combat and poor cognitive capabilities.",
+    "attacks": "Utilizes powerful melee attacks, including a gore attack that combines piercing and cold damage, and a devastating stomp on prone enemies.",
+    "most_powerful_ability": "Shards of Ice allows the Cryoceros to control the battlefield with an area effect attack delivering significant cold and piercing damage.",
+    "senses": "Has a passive perception of 11, indicating average awareness of its surroundings.",
+    "skills": "Excels in athletics, boasting a +7 modifier, making it adept at physical tasks.",
+    "additional_information": [
+        "Possesses a Snow Camouflage ability, enhancing stealth in snowy environments.",
+        "Can knock targets prone with its Trampling Charge ability, enabling follow-up attacks for greater damage.",
+        "Uses a combination of melee and area effect attacks in combat, posing a significant threat to multiple enemies.",
+        "Thrives in cold environments where it can maximize its defensive and offensive capabilities.",
+        "Combines high HP with solid AC, making it a rugged adversary."
+    ],
+    "damage_types": [
+        "cold",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable predator of snowy terrains",
+        "large creature with ice attacks",
+        "aggressive monster that charges and knocks prone",
+        "cold resistant creature with devastating stomps",
+        "snow camouflage ability for stealth in battle"
+    ]
+}

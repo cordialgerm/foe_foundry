@@ -1,0 +1,25 @@
+{
+    "name": "Temple Dog",
+    "queries": [
+        {
+            "query": "medium celestial dog with radiant bites that resists damage",
+            "variant": "a medium celestial dog that has radiant bites and resists damage"
+        },
+        {
+            "query": "protective celestial creature immune to poison with strong bite attacks",
+            "variant": "celestial protective creature that's immune to poison and has strong bite attacks"
+        },
+        {
+            "query": "guardian dog that can push enemies away and deals extra radiant damage",
+            "variant": "guardian dog which can push foes and deals additional radiant damage"
+        },
+        {
+            "query": "how fast can a temple dog move and what damage it deals",
+            "variant": "temple dog's speed and the damage it inflicts"
+        },
+        {
+            "query": "what are the temple dog's special abilities and its defenses",
+            "variant": "temple dog's abilities and what defenses it has"
+        }
+    ]
+}

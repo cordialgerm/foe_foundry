@@ -1,0 +1,25 @@
+{
+    "name": "Ratfolk",
+    "queries": [
+        {
+            "query": "small humanoid with high agility that excels in teamwork",
+            "variant": "humanoid that's small and agile, good at working with others"
+        },
+        {
+            "query": "creature with darkvision that uses pack tactics in combat",
+            "variant": "monster that can see in the dark and has tactical advantages with allies"
+        },
+        {
+            "query": "nimble rat-like creature wearing studded leather armor",
+            "variant": "dexterous creature resembling a rat, dressed in studded leather armor"
+        },
+        {
+            "query": "low strength but intelligent creature with perception skills",
+            "variant": "creature weak in strength yet smart, skilled at noticing details"
+        },
+        {
+            "query": "small neutral creature that moves through larger foes' spaces",
+            "variant": "neutral small being that can navigate through the spaces of bigger enemies"
+        }
+    ]
+}

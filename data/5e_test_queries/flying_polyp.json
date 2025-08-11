@@ -1,0 +1,25 @@
+{
+    "name": "Flying Polyp",
+    "queries": [
+        {
+            "query": "huge aberration that flies and controls wind",
+            "variant": "huge flying aberration that has wind control"
+        },
+        {
+            "query": "monster with grappling tentacles that has lightning vulnerability",
+            "variant": "creature with tentacles for grappling and is vulnerable to lightning"
+        },
+        {
+            "query": "chaotic evil creature that can become ethereal and cast invisibility",
+            "variant": "chaotic evil monster that can go ethereal and uses invisibility"
+        },
+        {
+            "query": "flying polyp with strong wind aura and high hit points",
+            "variant": "flying polyp that has a powerful wind aura and a lot of hit points"
+        },
+        {
+            "query": "creature with blindsight that uses wind-based attacks",
+            "variant": "monster with blindsight and wind-based attack abilities"
+        }
+    ]
+}

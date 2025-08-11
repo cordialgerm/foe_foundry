@@ -1,6 +1,8 @@
 <MonsterName/>Dark Voice</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>91</HP>
 <summary>The Dark Voice is a medium humanoid creature aligned with neutral evil, effectively serving as a cunning and manipulative adversary in combat. With a solid armor class of 16 due to its chain mail and a significant pool of 91 hit points, it is notably resilient. Its primary strengths lie in its high charisma of 18, as well as its impressive abilities in persuasion and intimidation, making it a formidable foe in social interactions and conflicts alike. The creature's regeneration ability allows it to heal in dim light or darkness, enhancing its survivability, while its proficiency in both melee and ranged attacks enables it to deal considerable damage. However, its weakness lies in its sunlight sensitivity; when exposed to sunlight, it suffers disadvantages on attacks and perception checks. Overall, the Dark Voice is a potent enemy that thrives in low-light conditions, using its abilities to manipulate and frighten adversaries.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ One of its most intriguing abilities, "Whispers of Shadow," recharges on a roll 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Voice
 
 *Medium* *Humanoid* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Whispers of Shadow (Recharge 5-6):** The dark voice speaks in Umbral, whispering of what it sees beyond the dark. The area within 30 feet of the dark voice becomes dimly lit until the end of the dark voice's next turn. Only sunlight can illuminate the area brightly during this time. Each non-dark folk creature in the area must succeed on a DC 15 Charisma saving throw or take 13 (3d8) psychic damage and be frightened until the start of its next turn.
 
 
+</statblock>
 
 

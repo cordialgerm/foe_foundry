@@ -1,0 +1,52 @@
+{
+    "name": "Hunter Shark",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "0 ft. walking, 40 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "shark",
+        "aquatic",
+        "predator"
+    ],
+    "adjectives": [
+        "large",
+        "predatory",
+        "fast",
+        "solitary"
+    ],
+    "description": "A large, predatory fish with powerful jaws lined with razor-sharp teeth, streamlined body, and grayish coloration. It can grow 15 to 20 feet long.",
+    "memorable": "Known for incredible speed and a keen sense of smell, it relentlessly pursues wounded prey and attacks with powerful bites.",
+    "goals": "Hunts alone in search of food, utilizing blood frenzy to detect and attack injured creatures.",
+    "relations": "Can be encountered alone or in groups around feeding areas; may hunt alongside other sharks.",
+    "environment": "Coastal waters or deep oceans.",
+    "strengths": "High strength and speed make it an efficient predator in water.",
+    "weaknesses": "Ineffective on land due to a swimming-only movement capability. Low intelligence and charisma affect its strategic abilities.",
+    "attacks": "Powerful Bite attack that inflicts 11 piercing damage and allows for an additional bite if it hits its target.",
+    "most_powerful_ability": "Blood Frenzy provides advantage on attacks against creatures that are not at full health.",
+    "senses": "Has blindsight up to 30 feet, allowing it to detect movements in murky waters effectively.",
+    "skills": "Possesses a perception skill bonus of +2 to notice changes in its aquatic environment.",
+    "additional_information": [
+        "The Hunter Shark can breathe only underwater.",
+        "Utilizes its keen sense of smell to track prey.",
+        "Known for its fearsome reputation among coastal fishermen.",
+        "Thrives in both coastal and open sea environments.",
+        "Can detect blood from miles away, enhancing its hunting capability."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large predatory fish with sharp teeth",
+        "ocean predator that smells blood",
+        "swift underwater hunter shark",
+        "marine creature with blood frenzy ability",
+        "shark that delivers powerful bite attacks"
+    ]
+}

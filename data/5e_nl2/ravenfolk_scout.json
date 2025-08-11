@@ -1,0 +1,53 @@
+{
+    "name": "Ravenfolk Scout",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "Ravenfolk",
+        "Scout",
+        "Stealth",
+        "Mimicry"
+    ],
+    "adjectives": [
+        "stealthy",
+        "nimble",
+        "perceptive"
+    ],
+    "description": "The Ravenfolk Scout resembles a humanoid figure with raven features, excelling in stealth and employing versatile tactics in ambush situations.",
+    "memorable": "Notable for its ability to mimic sounds, providing tactical advantages and deceptive maneuvers in combat.",
+    "goals": "Primarily acts as a reconnaissance and ambush specialist, gathering information and making surprise attacks.",
+    "relations": "Often found alongside other Ravenfolk or avian creatures, potentially serving a larger faction or community.",
+    "environment": "Typically inhabits forested or secluded areas, utilizing cover for stealthy operations.",
+    "strengths": "Excels in Dexterity-based tasks and possesses high stealth and perception skills, making it difficult to detect.",
+    "weaknesses": "Vulnerable in direct combat due to lower durability and limited offensive power.",
+    "attacks": "Uses an array of attacks including the peck, rapier, and longbow, alongside unique abilities like Ghost Wings to blind enemies.",
+    "most_powerful_ability": "Mimicry, allowing it to imitate sounds for tactical deception.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 16, enhancing its ability to notice hidden dangers.",
+    "skills": "Proficient in Stealth and Perception, enabling effective ambush tactics and environmental awareness.",
+    "additional_information": [
+        "Can create phantasmal wings to blind nearby foes.",
+        "Has a decent Armor Class due to studded leather armor.",
+        "Good at ranged attacks with a longbow.",
+        "Uses environmental cover for stealth maneuvers.",
+        "Capable of mimicking humanoid voices for strategic deception."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy humanoid that mimics sounds",
+        "raven-like scout in forest areas",
+        "creature skilled in deception and perception",
+        "medium neutral humanoid with ghostly wings",
+        "ambush specialist with high stealth abilities"
+    ]
+}

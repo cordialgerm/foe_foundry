@@ -1,0 +1,53 @@
+{
+    "name": "Paper Drake",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 78,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "60 feet walking, 20 feet flying in dragon form",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "shapechanger",
+        "guardian"
+    ],
+    "adjectives": [
+        "small",
+        "papery",
+        "cunning"
+    ],
+    "description": "The Paper Drake is a small dragon that can transform between dragon form and a book form, camouflaging itself as an ordinary book when still. It has distinct paper-like features and a vibrant personality.",
+    "memorable": "Its ability to transform into a book adds a unique element of stealth and tactics, making it a clever guardian.",
+    "goals": "To protect knowledge and serve as a guardian while deceiving foes with its disguise.",
+    "relations": "May be found with other dragons or creatures that value knowledge and literature.",
+    "environment": "Typically resides in libraries, ancient ruins, or places of learning.",
+    "strengths": "Good speed on foot, high dexterity and constitution provide durability.",
+    "weaknesses": "Low strength and average intelligence limit melee effectiveness and magical prowess.",
+    "attacks": "Can bite with sharp teeth, slash with claws, or flap its pages to strike.",
+    "most_powerful_ability": "Shredded Breath allows it to exhale razor-sharp paper shards, dealing slashing damage and potentially blinding foes.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses skills that enhance its cunning, with the ability to understand any written language it touches.",
+    "additional_information": [
+        "Transformations enhance tactical positioning in combat.",
+        "Uses clever ruses to mislead opponents.",
+        "Exploits its blend of magic and physical attacks effectively.",
+        "Rarely found in direct confrontations, preferring ambush tactics.",
+        "Maintains its attributes when changing size and form."
+    ],
+    "damage_types": [
+        "slashing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small dragon that turns into a book",
+        "dragon that understands written languages",
+        "guardian dragon that disguises as a book",
+        "tactical dragon with paper breath weapon",
+        "dragon with high dexterity and cunning"
+    ]
+}

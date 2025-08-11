@@ -1,0 +1,25 @@
+{
+    "name": "Crimson Shambler",
+    "queries": [
+        {
+            "query": "plant creature that resembles a bloody zombie and inflicts disease",
+            "variant": "creature that is a plant resembling zombie and spreads disease"
+        },
+        {
+            "query": "Medium-sized monster that uses spores and has blindsight capabilities",
+            "variant": "monster of medium size that can see without sight and releases spores"
+        },
+        {
+            "query": "creature with natural armor and ability to create new shamblers",
+            "variant": "creature that has natural defense and can generate more shamblers"
+        },
+        {
+            "query": "Crimson Shambler abilities like Eerie Resemblance and Spores",
+            "variant": "abilities of the Crimson Shambler such as Spores and Eerie Resemblance"
+        },
+        {
+            "query": "average mobility plant with natural defenses and dangerous spores",
+            "variant": "plant creature with slow movement and natural protection that releases harmful spores"
+        }
+    ]
+}

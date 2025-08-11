@@ -1,0 +1,25 @@
+{
+    "name": "Star Crow",
+    "queries": [
+        {
+            "query": "tiny aberration with radiant attacks and mind control abilities",
+            "variant": "tiny abberation with mind control and radiant attack powers"
+        },
+        {
+            "query": "creature emitting bright light that can attach to targets",
+            "variant": "being that shines bright light and attaches to its foes"
+        },
+        {
+            "query": "stealthy monster resistant to conditions and dealing psychic damage",
+            "variant": "sneaky creature that is resistant to status effects and inflicts psychic harm"
+        },
+        {
+            "query": "small flying creature that can stun foes and shares thoughts",
+            "variant": "little flying monster that shares thoughts and can stun opponents"
+        },
+        {
+            "query": "arcane creature with unique abilities living in magical environments",
+            "variant": "magical being with special powers dwelling in arcane settings"
+        }
+    ]
+}

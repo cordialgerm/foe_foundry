@@ -1,0 +1,25 @@
+{
+    "name": "Chaos Creeper",
+    "queries": [
+        {
+            "query": "chaotic plant creature that produces magical fruit",
+            "variant": "plant creature that is chaotic and makes magical fruit"
+        },
+        {
+            "query": "medium-sized monster immune to poison with butterfly effects",
+            "variant": "poison-immune medium creature with butterfly effects"
+        },
+        {
+            "query": "creature that can transform attacks into chaotic magic",
+            "variant": "monster that transforms its attacks into chaos magic"
+        },
+        {
+            "query": "plant monster known for versatility in combat and telepathy",
+            "variant": "versatile combat plant creature with telepathic abilities"
+        },
+        {
+            "query": "chaotic neutral creature with high Dexterity and healing fruit",
+            "variant": "neutral chaotic creature with high agility and healing fruit"
+        }
+    ]
+}

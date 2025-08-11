@@ -1,0 +1,25 @@
+{
+    "name": "Willowhaunt",
+    "queries": [
+        {
+            "query": "undead creature that can cast illusions and causes madness",
+            "variant": "undead monster that causes madness and has illusion powers"
+        },
+        {
+            "query": "huge monster that looks like a tree and has psychic attacks",
+            "variant": "large creature resembling a tree with psychic abilities"
+        },
+        {
+            "query": "manipulative undead with high Charisma and special abilities",
+            "variant": "manipulative undead creature possessing high Charisma and unique powers"
+        },
+        {
+            "query": "slow walking undead that instills fear and chaos",
+            "variant": "undead that walks slowly and creates chaos and fear"
+        },
+        {
+            "query": "monster immune to necrotic damage with a murderous ability",
+            "variant": "creature immune to necrotic attacks that has a killing ability"
+        }
+    ]
+}

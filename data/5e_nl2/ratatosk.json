@@ -1,0 +1,52 @@
+{
+    "name": "Ratatosk",
+    "creature_type": "Celestial",
+    "alignment": "Chaotic Neutral",
+    "size": "Tiny",
+    "hp": 42,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "trickster",
+        "psychic",
+        "celestial"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "manipulative"
+    ],
+    "description": "The Ratatosk is a tiny celestial creature known for its cleverness and agility, embodying chaotic neutrality. It possesses a sleek, agile form that aids in its dexterous movement and subterfuge.",
+    "memorable": "Its ability to manipulate foes through its divisive chatter and psychic attacks makes it a unique and frustrating opponent.",
+    "goals": "To create chaos and manipulate others for its amusement, often through clever tactics and psychic abilities.",
+    "relations": "Often associated with other trickster entities or creatures that embody chaos.",
+    "environment": "Typically found in areas aligned with chaos or magic, or where chaos is prevalent.",
+    "strengths": "Possesses Magic Resistance, making it hard to affect with spells; high Dexterity and Charisma allowing for excellent manipulation and evasiveness.",
+    "weaknesses": "Very low Strength makes it ineffective in direct physical confrontations.",
+    "attacks": "Utilizes Gore for melee combat, dealing psychic damage, and is also capable of Annoying Chitter, a ranged psychic attack.",
+    "most_powerful_ability": "Divisive Chatter can incapacitate multiple foes by forcing them to waste their actions in trivial complaints.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in Deception, Persuasion, and Stealth skills with a +6 modifier.",
+    "additional_information": [
+        "Can cast spells without needing components, enhancing its combat versatility.",
+        "Has a bonus action ability to quickly Dash, Disengage, or Hide, increasing its evasiveness.",
+        "Uses Desperate Lies to confuse attackers, redirecting their strikes.",
+        "Excels at creating disarray among enemies through clever tactics.",
+        "Highly intelligent with strong Charisma, making it effective in social situations."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast at-will spells like Animal Messenger and Message, and sophisticated spells like Suggestion and Commune.",
+    "test_queries": [
+        "tiny celestial trickster with psychic abilities",
+        "chaotic neutral creature causing confusion and discord",
+        "manipulative celestial with ability to charm",
+        "psychic damage dealer with versatile tactics",
+        "ratatosk's unique abilities and spells"
+    ]
+}

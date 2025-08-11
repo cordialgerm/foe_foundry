@@ -1,0 +1,25 @@
+{
+    "name": "Parzz\u2019val",
+    "queries": [
+        {
+            "query": "large monstrous aberration with area control abilities",
+            "variant": "large aberration monster with abilities for controlling area"
+        },
+        {
+            "query": "creature that uses acidic web and has strong melee attacks",
+            "variant": "creature with melee attacks and an acidic web ability"
+        },
+        {
+            "query": "chaotic evil monster that can regenerate health",
+            "variant": "evil chaotic monster that regenerates its health"
+        },
+        {
+            "query": "stealthy monster with high strength and speed in combat",
+            "variant": "monster that is stealthy, fast, and has high strength in battle"
+        },
+        {
+            "query": "aberration that deals bludgeoning damage and has vulnerability to thunder",
+            "variant": "aberration that can deal bludgeoning damage, weak to thunder"
+        }
+    ]
+}

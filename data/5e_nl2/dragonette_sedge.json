@@ -1,0 +1,53 @@
+{
+    "name": "Dragonette, Sedge",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., swim 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "swamp",
+        "ambush",
+        "poison"
+    ],
+    "adjectives": [
+        "deceptive",
+        "agile",
+        "cunning"
+    ],
+    "description": "The Sedge Dragonette is a tiny dragon with unique colors that help it blend into swampy surroundings, showcasing agile movements and a deceptive appearance.",
+    "memorable": "Known for its ability to blend into the swamp and unleash a cloud of nausea on foes, it combines stealth with a strategic approach to combat.",
+    "goals": "To ambush prey and defend its territory in swampy environments.",
+    "relations": "It might be encountered with other swamp creatures or serve under a more powerful dragon.",
+    "environment": "Typically found in swampy or marshy regions, utilizing its camouflage to evade detection.",
+    "strengths": "Resistance to poison and immunity to being poisoned, enhancing its survival in combat.",
+    "weaknesses": "Average Dexterity and Charisma scores limit its effectiveness in evasive actions and social interactions.",
+    "attacks": "Uses a Bite attack for piercing damage and Spines that embed into targets, causing disadvantage on attack rolls until removed.",
+    "most_powerful_ability": "Reeking Breath releases a nauseating gas in a cone that can poison foes, potentially incapacitating them.",
+    "equipment": null,
+    "senses": "It has a passive Perception score of 14, indicating a good ability to notice hidden enemies or traps.",
+    "skills": "Proficient in perception, allowing it to alert to potential threats in its vicinity.",
+    "additional_information": [
+        "Gains advantage on Stealth checks in swampy terrain with Swamp Camouflage.",
+        "Transforms ground into mud with Boggy Presence, hindering enemy movement.",
+        "Prickly Defense allows it to retaliate against melee attackers.",
+        "Avg Constitution score enhances its resilience in battles.",
+        "Can swim quickly to escape danger."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon living in swamp",
+        "agile dragonette with poisonous breath",
+        "dragonette that can turn ground to mud",
+        "sneaky dragon with camouflage abilities",
+        "creature with spines using poison attacks"
+    ]
+}

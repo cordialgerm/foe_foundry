@@ -1,0 +1,25 @@
+{
+    "name": "Megapede",
+    "queries": [
+        {
+            "query": "large creature that can sense metal and has poison attacks",
+            "variant": "big monster with metal sensing abilities and poison strikes"
+        },
+        {
+            "query": "monster that grapples foes and consumes metal objects",
+            "variant": "creature that can grab enemies and eats metal items"
+        },
+        {
+            "query": "agile creature with stinger attack and acid spray",
+            "variant": "quick monster with a sting and acid attack"
+        },
+        {
+            "query": "monstrosity that deals slashing damage and has low intelligence",
+            "variant": "big creature that inflicts slashing harm and has poor smarts"
+        },
+        {
+            "query": "Megapede abilities and physical attacks in battle",
+            "variant": "abilities and fighting moves of the Megapede in combat"
+        }
+    ]
+}

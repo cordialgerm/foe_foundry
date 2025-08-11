@@ -1,0 +1,51 @@
+{
+    "name": "Paper Golem Swarm",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 30 ft. and walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "construct",
+        "magical"
+    ],
+    "adjectives": [
+        "paper",
+        "chaotic",
+        "stealthy"
+    ],
+    "description": "A swarm of animated paper constructs, indistinguishable from ordinary sheets of paper when motionless. They move quickly and can fill spaces, engaging in swarm tactics and using paper-based attacks.",
+    "memorable": "Can confuse and damage foes with swarm tactics and abilities like Ink Blot.",
+    "goals": "Primarily serve as unique enemies in encounters, utilizing stealth and swarm tactics.",
+    "relations": "Related to other constructs, potentially created by a wizard or artificer.",
+    "environment": "Typically found in libraries, study rooms, or locations involving knowledge or magic.",
+    "strengths": "High Dexterity allows for evasion of attacks and quick strikes; immune to many conditions.",
+    "weaknesses": "Vulnerable to fire damage, making it susceptible to specific magical attacks.",
+    "attacks": "Uses Paper Cut for slashing damage and Whirlwind to damage nearby enemies with chaotic movement.",
+    "most_powerful_ability": "Ink Blot, which applies poison damage after a successful hit with an attack.",
+    "equipment": null,
+    "senses": "Passive perception is low at 8, indicating limited insight.",
+    "skills": null,
+    "additional_information": [
+        "False Appearance enables stealth by mimicking ordinary paper.",
+        "Immutable Form prevents alteration from spells.",
+        "Magic Weapons feature allows bypassing of damage resistances.",
+        "Swarm ability lets it occupy the same space as other creatures."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of animated paper constructs",
+        "chaotic creature that can fly and confuse",
+        "unique enemy made of paper with ink attacks",
+        "stealthy swarm that doesn't regain hit points",
+        "paper golem that inflicts poison damage"
+    ]
+}

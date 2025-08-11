@@ -1,0 +1,54 @@
+{
+    "name": "Giant Spider",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 26,
+    "ac": 14,
+    "srd": true,
+    "cr": "1",
+    "movement": "30 ft. walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "spider",
+        "beast",
+        "ambush",
+        "predator",
+        "web"
+    ],
+    "adjectives": [
+        "large",
+        "venomous",
+        "stealthy",
+        "territorial"
+    ],
+    "description": "A massive arachnid with a formidable presence, capable of weaving large webs to trap prey. Its body is a blend of ferocity and agility, with a notable ability to climb walls and ceilings effortlessly.",
+    "memorable": "The Giant Spider's venomous bite can paralyze or kill small creatures, making it a deadly ambusher in dark environments.",
+    "goals": "To trap and consume smaller creatures while defending its lair fiercely from intruders.",
+    "relations": "Connected to other arachnids and potentially serving as a predator to similar-sized creatures.",
+    "environment": "Commonly found in dark forests, caves, or abandoned ruins, often creating lairs in web-filled crevices.",
+    "strengths": "High agility and climbing skills, enhanced stealth, and effective webbing abilities for trapping prey.",
+    "weaknesses": "Low intelligence limits tactical decisions, and lower Constitution reduces overall durability.",
+    "attacks": "Bite attack that delivers piercing damage and additional poison damage with a chance to paralyze the target.",
+    "most_powerful_ability": "Web Sense allows the spider to detect creatures in contact with its webs, giving it a tactical edge.",
+    "senses": "It has blindsight within 10 feet, allowing it to sense nearby creatures without sight.",
+    "skills": "Proficient in Stealth, making it adept at ambushing characters.",
+    "additional_information": [
+        "Can spin intricate webs for trapping prey.",
+        "Uses webbing to restrain larger opponents effectively.",
+        "Defense mechanisms include ambushing from a height.",
+        "Webbing is weak to fire but immune to poison.",
+        "Poison can paralyze targets for one hour."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large venomous spider with webbing",
+        "deadly ambush predator in caves",
+        "creature that spins deadly webs",
+        "agile spider that climbs walls",
+        "stealthy beast lurking in dark forests"
+    ]
+}

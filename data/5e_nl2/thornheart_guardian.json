@@ -1,0 +1,51 @@
+{
+    "name": "Thornheart Guardian",
+    "creature_type": "Construct",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "construct",
+        "guardian",
+        "sentinel"
+    ],
+    "adjectives": [
+        "formidable",
+        "magical",
+        "resilient",
+        "thorny"
+    ],
+    "description": "The Thornheart Guardian is a large construct with a thorny exterior, utilized as a sentinel or protector. It features barbed weapons and an imposing physical presence.",
+    "memorable": "Its ability to create difficult terrain and restrain enemies with magical thorny vines makes it a challenging foe.",
+    "goals": "The guardian typically exists to protect a location or entity and defeat intruders.",
+    "relations": "It may be encountered in the service of a powerful creator or within enchanted forests guarding sacred grounds.",
+    "environment": "Often found in forested areas or locations that require protection.",
+    "strengths": "Immunity to poison and psychic damage, along with resistance to nonmagical physical attacks, enhances its durability.",
+    "weaknesses": "Low intelligence limits its tactical capabilities, making it predictable in combat.",
+    "attacks": "It can unleash three attacks in one turn using a barbed greatsword and a thorny whip, inflicting both slashing and piercing damage.",
+    "most_powerful_ability": "Grasp of the Briar creates difficult terrain and can restrain foes, causing necrotic damage each turn.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 16, making it quite aware of its surroundings.",
+    "skills": "It has a good perception skill, helping it notice hidden threats.",
+    "additional_information": [
+        "Immunities to charming and paralyzing effects.",
+        "Magical attacks allow it to bypass resistances.",
+        "Can move through nonmagical plants unhindered.",
+        "Recharges its area control ability on a 5-6 roll.",
+        "High strength makes it a powerful melee combatant."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable thorn-covered guardian",
+        "large creature with magical thorns",
+        "construct immune to psychological damage",
+        "sentinel that creates difficult terrain",
+        "strong melee combatant with barbed weapons"
+    ]
+}

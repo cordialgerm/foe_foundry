@@ -1,0 +1,25 @@
+{
+    "name": "Algorith",
+    "queries": [
+        {
+            "query": "powerful construct with high armor class and force damage abilities",
+            "variant": "strong construct that has high AC and can deal force damage"
+        },
+        {
+            "query": "medium-sized construct immune to poison and various conditions",
+            "variant": "construct of medium size that is immune to poison and other conditions"
+        },
+        {
+            "query": "tactical construct that can manipulate spells and explodes with force",
+            "variant": "construct that uses tactics, capable of manipulating spells and creating explosions"
+        },
+        {
+            "query": "resilient construct that flies and can create a cone of negation",
+            "variant": "durable flying construct that can produce a negation cone"
+        },
+        {
+            "query": "construct with spellcasting abilities and stuns foes with reality bomb",
+            "variant": "construct that casts spells and stuns enemies using a reality bomb"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Fleshspurned",
+    "queries": [
+        {
+            "query": "undead creature that can confuse opponents and deals necrotic damage",
+            "variant": "creature that can confuse foes and does necrotic damage undead"
+        },
+        {
+            "query": "ghostly monster immune to poison with high dexterity",
+            "variant": "high dexterity poison immune ghostly monster"
+        },
+        {
+            "query": "medium undead that uses phantasmal bite and chatter in combat",
+            "variant": "medium undead using chatter and phantasmal bite in battle"
+        },
+        {
+            "query": "chaotic evil creature with ability to fly and low strength",
+            "variant": "creature with low strength that flies and is chaotic evil"
+        },
+        {
+            "query": "flying undead with ghost eater ability that weakens other undead",
+            "variant": "undead that flies and has ghost eater ability to weaken other undead"
+        }
+    ]
+}

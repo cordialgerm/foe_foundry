@@ -1,0 +1,53 @@
+{
+    "name": "Wererat (Lycanthrope)",
+    "creature_type": "Humanoid",
+    "creature_subtype": "lycanthrope, shapechanger",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 57,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft., swim 30 ft. in rat or hybrid form",
+    "role": "Skirmisher",
+    "tags": [
+        "lycanthrope",
+        "sneaky",
+        "urban",
+        "criminal"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "versatile",
+        "agile"
+    ],
+    "description": "The Wererat is a Medium humanoid characterized by its ability to shapeshift into a rat or hybrid form. This creature is agile with a dexterous appearance suitable for sneaking through urban environments and sewers. It has a cunning demeanor and a mix of feral and humanoid traits, often using short swords and crossbows in combat.",
+    "memorable": "Unique ability to spread lycanthropy through its bite, adding a layer of threat to encounters.",
+    "goals": "Engage in thievery, sabotage, and build criminal networks.",
+    "relations": "Often found in gangs or associated with other urban criminals, may have ties to other lycanthropes.",
+    "environment": "Typically found in urban environments or sewers.",
+    "strengths": "Exceptional stealth and tactical advantage through Pack Tactics; immunity to damage from non-silvered weapons.",
+    "weaknesses": "Vulnerable to wolfsbane, which can incapacitate it and amplify damage from non-silvered weapons.",
+    "attacks": "Uses claws, a shortsword, or a hand crossbow with reliable accuracy; can also inflict lycanthropy through bite.",
+    "most_powerful_ability": "Pack Tactics grants advantage on attack rolls against a target when near an ally.",
+    "equipment": "Shortsword and hand crossbow.",
+    "senses": "Possesses heightened perception with advantage on checks that rely on smell, allowing it to effectively detect creatures or food.",
+    "skills": "Proficient in Stealth, making it a formidable ambusher.",
+    "additional_information": [
+        "Can shapeshift into rat or hybrid forms.",
+        "Works well in groups, benefiting from surrounding allies.",
+        "Can make a Frenzied Bite attack when bloodied.",
+        "Heightened sense of smell increases its Perception to 17.",
+        "Relies on stealth and cunning rather than brute strength."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy lycanthrope in urban settings",
+        "cunning humanoid that can become a rat",
+        "wererat abilities and tactics",
+        "urban monster with shapeshifting powers",
+        "sneaky creature using pack tactics"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Rum Lord",
+    "queries": [
+        {
+            "query": "small fey creature with intoxicating powers that can poison enemies",
+            "variant": "fey creature that is small and can poison foes with intoxicating powers"
+        },
+        {
+            "query": "rum-themed chaotic evil fey that summons allies",
+            "variant": "chaotic evil fey with a rum theme that can summon allies"
+        },
+        {
+            "query": "creature that attacks with a scepter and uses poison abilities in combat",
+            "variant": "monster using a scepter for combat and has poison abilities while attacking"
+        },
+        {
+            "query": "magical creature with high AC that can incapacitate foes in drunkenness",
+            "variant": "creature with good armor class that can incapacitate enemies with drunkenness"
+        },
+        {
+            "query": "fey with low Wisdom score that excels in close combat and has spell resistance",
+            "variant": "fey that has low Wisdom but is good at melee and resists spells"
+        }
+    ]
+}

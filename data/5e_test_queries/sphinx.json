@@ -1,0 +1,25 @@
+{
+    "name": "Sphinx",
+    "queries": [
+        {
+            "query": "large guardian creature that excels in wisdom and magic",
+            "variant": "large creature that guards wisdom and excels in magic"
+        },
+        {
+            "query": "powerful monster with high armor class and psychic immunity",
+            "variant": "strong monster that has great armor class and immunity to psychic damage"
+        },
+        {
+            "query": "mystical beast with truesight and multiple spellcasting abilities",
+            "variant": "magical beast that can see through illusions and has various spellcasting powers"
+        },
+        {
+            "query": "intelligent creature that can double its speed and fly",
+            "variant": "smart monster that can increase its speed and has flying ability"
+        },
+        {
+            "query": "large beast immune to divination and charmed effects",
+            "variant": "big creature that can't be charmed and is immune to divination"
+        }
+    ]
+}

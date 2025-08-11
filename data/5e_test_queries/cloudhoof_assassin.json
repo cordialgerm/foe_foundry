@@ -1,0 +1,25 @@
+{
+    "name": "Cloudhoof Assassin",
+    "queries": [
+        {
+            "query": "medium-sized beast that can push enemies back with its attacks",
+            "variant": "medium size beast that pushes enemies away with its attacks"
+        },
+        {
+            "query": "agile creature with headbutt and shoving kick abilities",
+            "variant": "agile creature that uses headbutt and shoving kick attacks"
+        },
+        {
+            "query": "beast with good strength and dexterity living in rocky terrain",
+            "variant": "beast with high strength and dexterity found in rocky environments"
+        },
+        {
+            "query": "combat beast with shoving charge ability that can control battlefield",
+            "variant": "battlefield controlling beast that has shoving charge ability"
+        },
+        {
+            "query": "creature with advantage on strength checks to climb and avoid being knocked prone",
+            "variant": "creature that has an edge on strength checks for climbing and not getting knocked down"
+        }
+    ]
+}

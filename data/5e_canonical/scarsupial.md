@@ -1,6 +1,8 @@
 <MonsterName/>Scarsupial</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Scarsupial is a small, agile beast that thrives in diverse environments, specifically in areas where it can utilize its climbing abilities. With a natural armor class of 13 and 39 hit points, it poses a moderate threat to adventurers, primarily due to its strength and speed. It excels in mobility, boasting a walking speed of 30 feet and an equal climbing speed, making it adept at navigating vertical terrains. The Scarsupial has formidable strength with a score of 16, granting it a good modifier of +3 for physical attacks, while its constitution scores similarly high with a +3 modifier, indicating good resilience. However, it suffers from a very low intelligence score of 2, making it quite simple-minded. Its challenge rating of 2 suggests that it can provide a reasonable challenge for low-level adventurers, offering 450 experience points when defeated.</summary>
 
 <detail>
@@ -15,6 +17,7 @@ The Scarsupial's actions include a "Multiattack" option that allows it to make b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarsupial
 
 *Small* *Beast* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Scrabble:** Takes the Dash or Disengage action
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Virtuoso Lich",
+    "queries": [
+        {
+            "query": "undead spellcaster with artistic abilities",
+            "variant": "undead caster that has artistic skills"
+        },
+        {
+            "query": "medium lich with high Charisma and spellcasting",
+            "variant": "medium lich that has high charisma and can cast spells"
+        },
+        {
+            "query": "lich that charms humanoids and has truesight",
+            "variant": "lich which can charm humans and possesses truesight"
+        },
+        {
+            "query": "undead creature with legendary resistance and versatile artist",
+            "variant": "undead monster that has legendary resistance and is a versatile artist"
+        },
+        {
+            "query": "lich with high Dexterity that regenerates from phylactery",
+            "variant": "lich that has high dexterity and can regenerate due to its phylactery"
+        }
+    ]
+}

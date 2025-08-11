@@ -1,0 +1,25 @@
+{
+    "name": "Zombie Knight",
+    "queries": [
+        {
+            "query": "undead warrior with a greatsword that can keep fighting when damaged",
+            "variant": "undead knight that fights with a greatsword and keeps going after being hurt"
+        },
+        {
+            "query": "medium undead creature with low intelligence and high strength",
+            "variant": "medium undead being with poor intelligence and strong strength"
+        },
+        {
+            "query": "zombie knight that grapples enemies and heals when biting",
+            "variant": "knight zombie that can grapple foes and regain health from bites"
+        },
+        {
+            "query": "creature that requires no air or sleep and has a solid armor class",
+            "variant": "being that needs no air or sleep and has good armor rating"
+        },
+        {
+            "query": "undead with resistance to poison and a powerful multiattack",
+            "variant": "zombie with immunity to poison and strong multiple attacks"
+        }
+    ]
+}

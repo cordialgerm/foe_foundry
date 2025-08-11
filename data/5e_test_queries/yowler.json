@@ -1,0 +1,25 @@
+{
+    "name": "Yowler",
+    "queries": [
+        {
+            "query": "tiny undead creature that uses a powerful scream to frighten foes",
+            "variant": "tiny undead monster that can scare enemies with a terrifying scream"
+        },
+        {
+            "query": "agile ghost-like being with magical illusion abilities",
+            "variant": "quick spirit-like creature possessing magic disguise skills"
+        },
+        {
+            "query": "undead creature with high dexterity that can climb and walk fast",
+            "variant": "undead monster with excellent agility that moves quickly on foot and can climb"
+        },
+        {
+            "query": "creature immune to poison and frightened conditions that lives in dark places",
+            "variant": "monster resistant to poison and fear effects that resides in shadows"
+        },
+        {
+            "query": "chaotic evil undead with claw and bite attacks causing poisoning",
+            "variant": "chaotic malevolent undead creature with slashing and biting abilities that inflict poison"
+        }
+    ]
+}

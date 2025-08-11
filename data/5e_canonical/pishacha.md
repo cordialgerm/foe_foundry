@@ -1,6 +1,8 @@
 <MonsterName/>Pishacha</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>55</HP>
 <summary>The Pishacha is a medium-sized chaotic evil fiend that serves as a cunning and deceptive opponent in combat. With a Challenge Rating of 3, it presents a moderate threat to adventurers. The Pishacha possesses a solid Armor Class of 13 and 55 hit points, making it reasonably durable. Its physical attributes are impressive, particularly its Strength of 16, which provides it with good melee capabilities, and a Wisdom of 16, enhancing its perceptual awareness. However, it has a weak Charisma score of 7, indicating its ineptness in social situations. The creature is adept at evasion, made possible by its shapechanging ability and a variety of resistances; it is immune to poison damage and resistant to cold, fire, and lightning damage. Vulnerable only to radiant damage, the Pishacha can also disappear through magical invisibility, adding to its trickster nature. Its unique abilities, particularly Demonic Possession, offer a tactical advantage by incapacitating opponents and allowing the Pishacha to control a character's actions.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Lastly, the Pishacha is capable of magical invisibility, which it can activate t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pishacha
 
 *Medium* *Fiend* *chaotic evil*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The pishacha magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell).
 
 
+</statblock>
 
 

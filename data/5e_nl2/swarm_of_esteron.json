@@ -1,0 +1,50 @@
+{
+    "name": "Swarm of Esteron",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 54,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 30 ft., fly 30 ft., walk 10 ft.",
+    "role": "null",
+    "tags": [
+        "swarm",
+        "beast",
+        "amphibious"
+    ],
+    "adjectives": [
+        "resilient",
+        "mobile",
+        "perceptive"
+    ],
+    "description": "The Swarm of Esteron is a Medium-sized, agile beast that can swim and fly. It has a notable keen sense of smell and the unique ability to occupy the same space as another creature.",
+    "memorable": "Its swarm nature allows it to engage multiple foes at once, and it cannot regain hit points, creating tension as it weakens in battle.",
+    "goals": "To attack unarmored foes and overwhelm them with numbers.",
+    "relations": "It may be related to or encountered with other swarming creatures or amphibious beasts.",
+    "environment": "Typically found in wetlands or near water bodies.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage; immune to several conditions.",
+    "weaknesses": "Cannot regain hit points or gain temporary hit points, becoming weaker as it loses health.",
+    "attacks": "Bite attack that deals significant piercing damage, diminishing as the swarm's health decreases.",
+    "most_powerful_ability": "Amphibious ability allows it to thrive in diverse environments.",
+    "equipment": null,
+    "senses": "Possesses keen smell, granting advantage on perception checks related to smell.",
+    "skills": null,
+    "additional_information": [
+        "Can occupy another creature's space and vice versa",
+        "Has a high Dexterity modifier for better evasion",
+        "Excellent at engaging multiple foes simultaneously",
+        "May be encountered in large groups due to its swarm nature",
+        "While lacking strategic intelligence, it compensates with numbers and mobility"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of mobile water and air creatures",
+        "beast that can breathe both air and water",
+        "agile swarm that attacks with piercing bites",
+        "resilient swarm that can't regain health",
+        "keen smell beast that occupies other spaces"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Spire Walker",
+    "queries": [
+        {
+            "query": "tiny fey creature that can turn invisible and deals lightning damage",
+            "variant": "little fey that turns invisible and does lightning damage"
+        },
+        {
+            "query": "chaotic neutral fey with high dexterity and magical abilities",
+            "variant": "fey creature with chaotic neutral alignment and great dexterity"
+        },
+        {
+            "query": "magical creature skilled in acrobatics that can teleport",
+            "variant": "teleporting creature that is good at acrobatics and uses magic"
+        },
+        {
+            "query": "fey with lightning immunities and enhanced mobility in combat",
+            "variant": "lightning immune fey that moves swiftly in battles"
+        },
+        {
+            "query": "creature with a unique ability to damage metal wielders and high armor class",
+            "variant": "monster that harms metal users and has strong armor"
+        }
+    ]
+}

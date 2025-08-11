@@ -1,0 +1,48 @@
+{
+    "name": "Manggus",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 127,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "shapeshifter",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "intimidating"
+    ],
+    "description": "The Manggus is a large, chaotic evil giant with the ability to shapeshift into a terrifying three-headed hydra form. It is covered in dark hide armor, emphasizing its intimidating presence.",
+    "memorable": "The Manggus can paralyze its foes with a terrifying roar and regenerate heads, making it a unique and fearsome opponent.",
+    "goals": "The Manggus seeks to dominate its surroundings and instill fear in all creatures it encounters.",
+    "relations": "Manggus may be encountered alongside other chaotic creatures or serve under more powerful giants in its territory.",
+    "environment": "Often found in wild and untamed environments, particularly where it can lurk and ambush its prey.",
+    "strengths": "Possesses the terrifying ability to frighten and paralyze enemies with its roar; can regenerate heads quickly.",
+    "weaknesses": "Lower mental faculties make it susceptible to mental effects and social interactions.",
+    "attacks": "Can strike multiple times with powerful bite attacks while in hydra form, or swing a greataxe for massive slashing damage in giant form.",
+    "most_powerful_ability": "Roaring Transformation allows it to instill fear and potentially paralyze multiple enemies within range upon shifting forms.",
+    "equipment": "The Manggus wields a greataxe in its giant form.",
+    "senses": "Has passive Perception of 8, indicating low awareness.",
+    "skills": "Proficient in intimidation, making it effective at instilling fear in others.",
+    "additional_information": [
+        "Can regrow two heads at the end of its turn unless it has taken fire damage",
+        "Only reverts to true form if all heads are destroyed",
+        "Advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious while in hydra form"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "giant that can shapeshift and roar",
+        "intimidating hydra-like giant",
+        "chaotic giant with head regeneration",
+        "fear-inducing shapeshifter in combat",
+        "Manggus terrifying roar ability"
+    ]
+}

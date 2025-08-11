@@ -1,0 +1,51 @@
+{
+    "name": "Dire Centipede",
+    "creature_type": "Beast",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "venomous",
+        "climbing",
+        "paralysis"
+    ],
+    "adjectives": [
+        "large",
+        "venomous",
+        "agile"
+    ],
+    "description": "The Dire Centipede is a large, venomous beast that is capable of climbing difficult surfaces and even ceilings with ease. Its body is segmented with many legs and a powerful bite.",
+    "memorable": "Its ability to paralyze foes with its venomous bite makes it a formidable opponent in battle.",
+    "goals": "Typically hunts for prey to incapacitate and consume.",
+    "relations": "May relate to other large insects or venomous creatures.",
+    "environment": "Often found in caves or dark environments where it can use its blindsight advantage.",
+    "strengths": "Highly mobile due to its climbing ability and venomous attacks that can incapacitate prey.",
+    "weaknesses": "Very low Intelligence and Charisma, affecting its tactical decisions.",
+    "attacks": "Bite attack that deals piercing and poison damage, with a chance to paralyze the target.",
+    "most_powerful_ability": "Paralyzing bite that can incapacitate seasoned warriors.",
+    "senses": "Has blindsight up to 30 feet, allowing it to detect movement in total darkness.",
+    "skills": null,
+    "additional_information": [
+        "Strong mobility allows it to traverse difficult terrain easily.",
+        "Can climb on ceilings, making ambush tactics effective.",
+        "Its venom can severely debilitate foes.",
+        "Low Intelligence means it lacks strategic combat awareness.",
+        "Has average durability with its Constitution score."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large climbing venomous centipede",
+        "monster with paralyzing bite attack",
+        "venomous beast that glides on ceilings",
+        "agile centipede with deadly poison",
+        "dire centipede mobility and paralysis ability"
+    ]
+}

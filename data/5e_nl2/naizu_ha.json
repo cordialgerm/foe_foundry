@@ -1,0 +1,50 @@
+{
+    "name": "Naizu-Ha",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 117,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walk",
+    "role": null,
+    "tags": [
+        "fey",
+        "neutral evil",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "treacherous",
+        "small"
+    ],
+    "description": "The Naizu-Ha is a small, treacherous fey creature, notable for its scissor claws and scythe tail. Its greenish form allows it to blend in with natural surroundings.",
+    "memorable": "The Naizu-Ha can transform into a magical dagger, adding a layer of danger to its encounters.",
+    "goals": "To ambush and deceive enemies, using its abilities to manipulate combat.",
+    "relations": "Associated with other fey creatures and likely encountered alongside cunning tricksters.",
+    "environment": "Commonly found in forests or areas rich with natural magic.",
+    "strengths": "High Armor Class and Hit Points provide strong defensive capabilities, along with unique abilities that hinder melee attackers.",
+    "weaknesses": "Average Wisdom and Intelligence scores may limit its effectiveness in certain strategies.",
+    "attacks": "Can deliver slashing damage through scissor claws and scythe tail, and automatically hits prone creatures with dagger legs.",
+    "most_powerful_ability": "Blunting Ambiance, which reduces damage from melee attacks.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in stealth, making it very difficult to detect.",
+    "additional_information": [
+        "Condition immunities to being blinded or grappled.",
+        "Can climb surfaces effortlessly with Spider Climb.",
+        "Can knock opponents prone with its Tripping Charge ability.",
+        "Able to make three attacks in a single turn with Multiattack.",
+        "Dagger Form provides a significant risk-reward dynamic in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning small fey with dagger form",
+        "ambush creature that reduces melee damage",
+        "tricky fey that can climb walls",
+        "creature with high stealth and defensive abilities",
+        "small treacherous monster with scythe tail"
+    ]
+}

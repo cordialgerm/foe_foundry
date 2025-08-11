@@ -1,0 +1,51 @@
+{
+    "name": "Hobgoblin Commander",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 72,
+    "ac": 17,
+    "srd": false,
+    "ac_description": "half plate",
+    "cr": "3",
+    "movement": "30 feet, average speed",
+    "role": "Leader",
+    "tags": [
+        "humanoid",
+        "commander",
+        "tactical"
+    ],
+    "adjectives": [
+        "tactical",
+        "effective",
+        "supportive"
+    ],
+    "description": "A Medium humanoid wearing half plate armor, the Hobgoblin Commander exudes authority and commands respect on the battlefield.",
+    "memorable": "Its 'Unshakable Command' ability boosts allies' morale by preventing them from being charmed or frightened.",
+    "goals": "To lead hobgoblin troops in battle and ensure their strategic advantage.",
+    "relations": "Usually commands other hobgoblins and works alongside military troops.",
+    "environment": "Typically found in military encampments or leading hobgoblin forces in combat.",
+    "strengths": "Good tactical leadership and supportive abilities, able to bolster allies with temporary hit points.",
+    "weaknesses": "Average intelligence and wisdom which may limit decision-making outside of combat.",
+    "attacks": "Can make three attacks with either a Greatsword or Longbow, dealing slashing or piercing damage respectively.",
+    "most_powerful_ability": "Unshakable Command prevents friendly creatures within 30 feet from being charmed or frightened.",
+    "equipment": "Greatsword and Longbow.",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in dim light as if it were bright.",
+    "skills": "Excels in stealth with a modifier of 9 while not in armor.",
+    "additional_information": [
+        "Can provide temporary hit points to allies within 30 feet.",
+        "Utilizes tactical maneuvers to enhance combat positioning.",
+        "Effective at controlling the battlefield.",
+        "Operates best in a group of hobgoblins.",
+        "Average point distribution affecting overall performance."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "Hobgoblin leader with tactical prowess",
+        "warrior that boosts ally morale",
+        "effective commander that enhances team",
+        "medium humanoid wearing half plate",
+        "hobgoblin with strong leadership abilities"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "Mummy Lord",
+    "creature_type": "Undead",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 270,
+    "ac": 17,
+    "srd": true,
+    "cr": "15",
+    "movement": "slow walking speed of 20 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "necromancer",
+        "curse",
+        "tomb guardian",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "powerful",
+        "ancient",
+        "decayed",
+        "intelligent",
+        "malevolent"
+    ],
+    "description": "A Mummy Lord is a powerful undead ruler, often preserved through ancient rituals, with a decayed, bandage-wrapped body. Its necromantic energy makes it impervious to most attacks, and it possesses former royal or religious insignia.",
+    "memorable": "Its ability to curse and control enemies, combined with its legendary resilience and spellcasting power, makes it a terrifying presence.",
+    "goals": "To guard its tomb, command legions of the undead, and inflict ancient curses on intruders.",
+    "relations": "Often found commanding other undead creatures, such as skeletons and zombies, and could serve ancient deities or dark powers.",
+    "environment": "Typically located in ancient tombs, ruins, or other sacred sites dedicated to burial or memorial purposes.",
+    "strengths": "Highly resistant to magical effects with Magic Resistance, can control the battlefield with curses, and rejuvenates after destruction if its heart remains intact.",
+    "weaknesses": "Vulnerable to fire damage, which can cause it to ignite.",
+    "attacks": "Utilizes the Rotting Fist for necrotic damage and the Dreadful Glare to frighten and potentially paralyze enemies.",
+    "most_powerful_ability": "Curse: Mummy Rot, a devastating curse affecting the target's hit points and preventing healing until removed.",
+    "equipment": "Possesses a scarab amulet that aids in saving throws and magical effects.",
+    "senses": "High passive perception score of 19, enhancing its ability to detect intruders in its domain.",
+    "skills": "Proficient in History and Religion, allowing it to recount lore and divine matters effectively.",
+    "additional_information": [
+        "Can summon legions of undead to serve it in battle.",
+        "Can rejuvenate within 24 hours if its heart is intact.",
+        "Possesses legendary actions allowing for tactical moves in battle such as teleporting and summoning.",
+        "Immunity to various conditions, making it difficult to incapacitate.",
+        "Can inflict devastating area control with spells like Harm and Contagion."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": "An 11th-level spellcaster with access to powerful necromancy and divination spells.",
+    "test_queries": [
+        "ancient undead ruler that curses enemies",
+        "mummy creature that controls undead",
+        "powerful necromancer found in tombs",
+        "creature that can catch fire and regenerate",
+        "undead spellcaster with Mummy Rot curse"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Warhorse",
+    "queries": [
+        {
+            "query": "large muscular horse used in battle with a powerful charge",
+            "variant": "muscular large horse that charges powerfully in battle"
+        },
+        {
+            "query": "fast combat mount with strong hooves and a loyal temperament",
+            "variant": "loyal fast mount for combat with strong hooves"
+        },
+        {
+            "query": "war horse that tramples enemies and has high strength",
+            "variant": "strong war horse that tramples foes with high strength"
+        },
+        {
+            "query": "trained beast known for its speed and ability to knock foes prone",
+            "variant": "beast trained for speed and knocking enemies down"
+        },
+        {
+            "query": "combat-ready horse that can execute powerful melee attacks",
+            "variant": "horse ready for combat with powerful melee attacks"
+        }
+    ]
+}

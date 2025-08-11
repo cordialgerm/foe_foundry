@@ -1,0 +1,25 @@
+{
+    "name": "Flesh Reaver",
+    "queries": [
+        {
+            "query": "medium undead creature with high agility that attacks prone enemies",
+            "variant": "medium creature undead with agility high that attacks enemies prone"
+        },
+        {
+            "query": "undead monster that has keen senses and jumps great distances",
+            "variant": "monster undead that can jump great distances and has keen senses"
+        },
+        {
+            "query": "creature with 19 hit points immune to poison and resistant to necrotic",
+            "variant": "creature 19 hit points immune poison and necrotic resistant"
+        },
+        {
+            "query": "neutral evil undead that can knock enemies prone and consume their flesh",
+            "variant": "undead evil neutral that can knock down enemies and consume flesh"
+        },
+        {
+            "query": "Flesh Reaver abilities focused on teamwork and attacking prone targets",
+            "variant": "abilities Flesh Reaver focused teamwork and targets prone attack"
+        }
+    ]
+}

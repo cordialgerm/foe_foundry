@@ -1,0 +1,25 @@
+{
+    "name": "Hag, Pesta",
+    "queries": [
+        {
+            "query": "Fey creature that deals poison damage and spreads disease",
+            "variant": "Fey monster that spread disease and inflicts poison damage"
+        },
+        {
+            "query": "chaotic neutral hag with a pestilence aura",
+            "variant": "hag that is chaotic neutral and has a aura of pestilence"
+        },
+        {
+            "query": "medium fey with abilities to heal and summon rat swarms",
+            "variant": "medium fey that can heal and call rat swarms"
+        },
+        {
+            "query": "hag with darkvision and strong Constitution",
+            "variant": "hag that has darkvision and a high Constitution"
+        },
+        {
+            "query": "Pesta Hag known for her powers of illness and healing",
+            "variant": "Pesta Hag recognized for her disease and healing powers"
+        }
+    ]
+}

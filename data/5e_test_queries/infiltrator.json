@@ -1,0 +1,25 @@
+{
+    "name": "Infiltrator",
+    "queries": [
+        {
+            "query": "stealthy humanoid with charm abilities and a Knowledge Charm",
+            "variant": "stealthy human-like creature that uses charm powers and has a Knowledge Charm"
+        },
+        {
+            "query": "medium humanoid that can cast spells and excels in subterfuge",
+            "variant": "medium-sized humanoid that can cast spells and is great at deception"
+        },
+        {
+            "query": "creature with high intelligence and dexterity living in tactical combat situations",
+            "variant": "monster with excellent intelligence and agility thriving in strategic fight scenarios"
+        },
+        {
+            "query": "humanoid proficient in two skills and can turn invisible",
+            "variant": "humanoid skilled in two abilities and has the power to become unseen"
+        },
+        {
+            "query": "creature that uses shortswords and crossbows in battle with multiple attacks",
+            "variant": "monster that wields shortswords and crossbows during fights and can attack multiple times"
+        }
+    ]
+}

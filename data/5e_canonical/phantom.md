@@ -1,6 +1,8 @@
 <MonsterName/>Phantom</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>The Phantom is a medium undead creature that embodies the essence of lost souls, drifting through the world with a chilling presence. It serves as a formidable opponent in combat, utilizing its spectral abilities to instill fear and damage its foes while maintaining a level of protection from physical attacks. The Phantom's strengths lie in its incorporeal movement, allowing it to pass through obstacles, and its debilitating abilities that can paralyze or frighten opponents. However, it is significantly weakened in sunlight, where it suffers disadvantages on its rolls. With a Challenge Rating of 1, it provides a moderately challenging encounter for adventurers, particularly those unprepared for its ghostly tactics.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Phantom can perform the action Ghostly Grasp, which is a melee weapon attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phantom
 
 *Medium* *Undead* *any alignment*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Chilling Moan (Recharge 5-6):** The phantom emits an eerie moan. Each creature within 30 feet that isn't an undead or a construct must make a DC 13 Wisdom saving throw. On a failure, the target takes 9 (2d8) cold damage and is frightened until the end of the phantom's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. On a success, the target takes half the damage and isn't frightened.
 
 
+</statblock>
 
 

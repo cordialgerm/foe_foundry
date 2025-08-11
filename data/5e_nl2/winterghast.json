@@ -1,0 +1,53 @@
+{
+    "name": "Winterghast",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "disease",
+        "cold",
+        "paralysis"
+    ],
+    "adjectives": [
+        "sinister",
+        "cold-inflicting",
+        "debilitating"
+    ],
+    "description": "The Winterghast is a sinister undead creature that inflicts cold and necrotic damage on its foes.",
+    "memorable": "Its ability to spread disease and cause paralysis makes it a strategically dangerous adversary.",
+    "goals": "To weaken foes through disease and paralysis.",
+    "relations": "May be encountered alongside other undead creatures.",
+    "environment": "Often found in cold, desolate areas.",
+    "strengths": "Decent armor class and hit points provide durability in combat; immune to poison and cold damage.",
+    "weaknesses": "Vulnerable to fire damage and lower Charisma makes it susceptible to specific tactics.",
+    "attacks": "Uses a multiattack strategy, with a damaging bite and a claw attack that can induce paralysis.",
+    "most_powerful_ability": "Creeping Cold allows it to inflict long-term cold and necrotic damage, leading to potential death and transformation into another Winterghast.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in stealth, allowing it to ambush unsuspecting foes.",
+    "additional_information": [
+        "Can create new Winterghasts from its victims.",
+        "Emits a toxic stench when hit by fire, potentially poisoning nearby creatures.",
+        "Infects creatures with a disease causing exhaustion and reduced hit points.",
+        "Requires magical means to cure its diseases or reverse transformations."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that spreads disease",
+        "cold-infesting undead that causes paralysis",
+        "winter-themed monster with disease abilities",
+        "monster that induces exhaustion through bites",
+        "creature that releases toxic stench when hurt"
+    ]
+}

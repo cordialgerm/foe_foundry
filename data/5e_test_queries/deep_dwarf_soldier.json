@@ -1,0 +1,25 @@
+{
+    "name": "Deep Dwarf Soldier",
+    "queries": [
+        {
+            "query": "medium humanoid soldier with darkvision and resistance to illusions",
+            "variant": "soldier that is a medium humanoid with darkvision and resists illusions"
+        },
+        {
+            "query": "strong and resilient dwarf that can become invisible",
+            "variant": "resilient dwarf with the ability to turn invisible and increased strength"
+        },
+        {
+            "query": "dwarf soldier that excels in close combat and has tactical movement",
+            "variant": "soldier dwarf skilled in melee engagements and capable of tactical movement"
+        },
+        {
+            "query": "combat-ready dwarf with a war pick and special magical abilities",
+            "variant": "dwarf prepared for battle with a war pick and unique magic skills"
+        },
+        {
+            "query": "humanoid soldier that uses enlarge spell and wields a heavy crossbow",
+            "variant": "soldier that wields a heavy crossbow and can cast enlarge spells"
+        }
+    ]
+}

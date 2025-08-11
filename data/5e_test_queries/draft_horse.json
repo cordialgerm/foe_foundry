@@ -1,0 +1,25 @@
+{
+    "name": "Draft Horse",
+    "queries": [
+        {
+            "query": "large strong horse used for pulling carts and covered in muscle",
+            "variant": "big muscular horse that pulls carts and works hard"
+        },
+        {
+            "query": "beast with low intelligence that can carry heavy loads and has a calm temperament",
+            "variant": "creature with bad intellect that carries heavy stuff and is very calm"
+        },
+        {
+            "query": "draft horse that can be used as a reliable mount for adventurers",
+            "variant": "draft horse useful for adventurers as a dependable mount"
+        },
+        {
+            "query": "draft horse with high strength and average dexterity in farming environments",
+            "variant": "horse with strong muscles and mid-level agility found in farms"
+        },
+        {
+            "query": "beast with 19 hit points and an armor class of 10 good for transportation",
+            "variant": "creature having 19 hit points and AC of 10 that is suitable for transport"
+        }
+    ]
+}

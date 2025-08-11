@@ -1,0 +1,25 @@
+{
+    "name": "Giant Wolf Spider",
+    "queries": [
+        {
+            "query": "agile predator spider that climbs walls",
+            "variant": "predatory spider that is agile and can climb walls"
+        },
+        {
+            "query": "medium spider with poison bite found in various terrains",
+            "variant": "spider that is medium-sized and has a poisonous bite, living in different terrains"
+        },
+        {
+            "query": "climbing spider with jumping abilities and stealthy attacks",
+            "variant": "stealthy spider that can climb and jump, using attacks effectively"
+        },
+        {
+            "query": "spider that can paralyze prey with poison and ambush tactics",
+            "variant": "poisonous spider that paralyzes targets and uses ambush tactics"
+        },
+        {
+            "query": "wolf spider with quick movements and natural armor",
+            "variant": "quick-moving wolf spider that has natural armor"
+        }
+    ]
+}

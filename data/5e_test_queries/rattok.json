@@ -1,0 +1,25 @@
+{
+    "name": "Rattok",
+    "queries": [
+        {
+            "query": "small chaotic evil fiend with regeneration abilities",
+            "variant": "small fiend with chaotic evil nature that can regenerate health"
+        },
+        {
+            "query": "monster resistant to fire and necrotic damage",
+            "variant": "creature immune to fire and necrotic damage types"
+        },
+        {
+            "query": "Rattok abilities in combat and high dexterity",
+            "variant": "combat abilities of Rattok and its good dexterity"
+        },
+        {
+            "query": "fiend with darkvision and low wisdom",
+            "variant": "creature with darkvision and bad perception"
+        },
+        {
+            "query": "monster that can stun and poison its enemies",
+            "variant": "creature that has the ability to stun and poison opponents"
+        }
+    ]
+}

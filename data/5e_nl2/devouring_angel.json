@@ -1,0 +1,54 @@
+{
+    "name": "Devouring Angel",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 220,
+    "ac": 15,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft., climb 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "multiattack",
+        "telepathy",
+        "acid damage",
+        "grappling"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "agile",
+        "acid-coated"
+    ],
+    "description": "A large aberration with quasi-wings and a twisted form, covered in acid-coated spines, capable of contorting its body.",
+    "memorable": "Its ability to unleash acid-coated spines in area damage and grapple targets with a spiked tongue makes it particularly dangerous.",
+    "goals": "Typically engages in combat to overpower its foes and devour them with its attacks.",
+    "relations": "May be found in the company of other aberrations or in conflict with celestial beings.",
+    "environment": "Often encountered in dark, twisted environments or areas with unsettlingly magical influences.",
+    "strengths": "High hit points combined with the ability to deal substantial damage both in melee and with area attacks.",
+    "weaknesses": "Low intelligence limits strategic planning in combat scenarios.",
+    "attacks": "Multiattack consisting of a bite that deals piercing and acid damage, and claws that deal slashing damage; also has a tongue attack that grapples and restrains.",
+    "most_powerful_ability": "Shed Spines allows it to deal significant area damage with piercing and acid effects.",
+    "senses": "Possesses blindsight up to 120 feet, enhancing its awareness of surroundings despite being blind.",
+    "skills": "Has a passive perception of 17, aided by keen smell granting advantage on perception checks involving smell.",
+    "additional_information": [
+        "Immunities to conditions like blinded, charmed, and frightened.",
+        "Limited telepathy allows it to communicate within a short range.",
+        "Can fly short distances thanks to its Assisted Leaping ability.",
+        "Flexible Form ability lets it pass through tight spaces.",
+        "Strong physical attributes enhance its durability and offensive capabilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large acid-coated creature with wings",
+        "monster that grapples and restrains targets",
+        "damage from acid-coated spines",
+        "formidable aberration with telepathic abilities",
+        "powerful melee attacker with high hit points"
+    ]
+}

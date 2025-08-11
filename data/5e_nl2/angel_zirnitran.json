@@ -1,0 +1,51 @@
+{
+    "name": "Zirnitran",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Huge",
+    "hp": 325,
+    "ac": 19,
+    "srd": false,
+    "cr": "20",
+    "movement": "30 ft. on the ground, 80 ft. in flight",
+    "role": null,
+    "tags": [
+        "celestial",
+        "angel",
+        "giant"
+    ],
+    "adjectives": [
+        "formidable",
+        "radiant",
+        "immortal"
+    ],
+    "description": "The Zirnitran is a huge celestial being with phenomenal durability and striking luminous features, resonating with an otherworldly presence.",
+    "memorable": "Its ability to frighten and blind foes with Glimpse from the Heavens creates a powerful and intimidating battlefield presence.",
+    "goals": "To uphold balance and justice, often intervening in conflicts or aiding those in need.",
+    "relations": "Typically associated with other celestial beings or guardians.",
+    "environment": "Often found in ethereal realms, celestial planes, or places of great spiritual significance.",
+    "strengths": "Possesses powerful magical attacks, numerous resistances, and several abilities that enhance its combat efficacy.",
+    "weaknesses": "Can be caught off-guard by certain conditions which may compromise its abilities.",
+    "attacks": "Utilizes Anointed Claws for melee strikes and Draconic Blasts for ranged attacks, both enhanced with radiant damage.",
+    "most_powerful_ability": "Glimpse from the Heavens, which can frighten and blind enemies in a wide radius.",
+    "equipment": null,
+    "senses": "Has truesight up to 120 feet and a passive Perception of 23.",
+    "skills": "Excels in perception checks due to high Wisdom and Intelligence scores.",
+    "additional_information": [
+        "Angelic Weapons deal additional radiant damage on hits.",
+        "Legendary Resistance allows it to ignore failed saves three times per day.",
+        "Immortal Nature means it doesn't need sustenance or rest."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": "Can cast various spells at will and as actions without material components, showcasing its divine magic proficiency.",
+    "test_queries": [
+        "celestial guardian with radiant abilities",
+        "huge angel with divine powers",
+        "immortal celestial being",
+        "angelic creature with magical attacks",
+        "radiant guardian of balance"
+    ]
+}

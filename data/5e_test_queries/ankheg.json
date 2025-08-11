@@ -1,0 +1,25 @@
+{
+    "name": "Ankheg",
+    "queries": [
+        {
+            "query": "large insect creature with acid attacks that burrows underground",
+            "variant": "large bug that attacks with acid and digs tunnels"
+        },
+        {
+            "query": "monster that grapples its prey and sprays acid",
+            "variant": "creature that uses grappling and acid spray attacks"
+        },
+        {
+            "query": "aggressive underground monster with segmented body and sharp mandibles",
+            "variant": "underground creature with a segmented body and sharp jaws that is aggressive"
+        },
+        {
+            "query": "ambush predator found in forests or farmland with chitinous armor",
+            "variant": "predator hiding in farmland or forests with armor made of chitin"
+        },
+        {
+            "query": "creature that can burrow quickly and has strong melee attacks",
+            "variant": "monster capable of quick burrowing and powerful close-range attacks"
+        }
+    ]
+}

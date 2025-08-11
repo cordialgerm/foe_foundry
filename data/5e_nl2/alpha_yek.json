@@ -1,0 +1,54 @@
+{
+    "name": "Alpha Yek",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 129,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 feet climbing and walking speed, enabling quick maneuverability in various terrains.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "combatant",
+        "mobility"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "chaotic"
+    ],
+    "description": "The Alpha Yek is a medium fiend with a menacing appearance, showcasing exceptional agility and strength, complemented by its natural armor.",
+    "memorable": "Its ability to use bone shards as both weapons and as lingering damaging effects makes it a unique threat.",
+    "goals": "Typical goals include seeking dominance in combat and overwhelming foes through tactical teamwork.",
+    "relations": "Often found accompanying other fiends or malevolent creatures, cooperating in attacks.",
+    "environment": "Commonly encountered in dark, chaotic, or corrupted landscapes.",
+    "strengths": "High mobility, effective in combat with strong physical attacks, and resilient to many damage types.",
+    "weaknesses": "Vulnerable to magical effects if it fails saving throws despite its magic resistance.",
+    "attacks": "The Alpha Yek employs bite and claw attacks with significant damage output, enhanced by its ability to utilize bone shards for continual damage.",
+    "most_powerful_ability": "Magic Resistance, which grants the Alpha Yek advantage on saves against spells, significantly enhancing its survivability.",
+    "senses": "Possesses darkvision up to 120 feet and a passive perception score of 15, allowing it to navigate and detect hidden threats in low-light conditions.",
+    "skills": "Proficient in stealth, with a +7 modifier, making it highly capable in sneaky approaches and ambushes.",
+    "additional_information": [
+        "Has the Magic Resistance ability, providing notable defense against spellcasters.",
+        "Employs Pack Tactics, granting advantage on attack rolls when allies are nearby.",
+        "Carries bone shards, which can inflict additional damage over time.",
+        "Good physical stats grant robust capabilities in grappling and combat maneuvers.",
+        "Well-suited for ambush tactics in combat scenarios."
+    ],
+    "damage_types": [
+        "poison",
+        "cold",
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile fiend with bone shard attacks",
+        "chaotic evil combat fiend",
+        "Alpha Yek abilities",
+        "durable fiend with magic resistance",
+        "stealthy fiendish ambusher"
+    ]
+}

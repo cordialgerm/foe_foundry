@@ -1,0 +1,50 @@
+{
+    "name": "Deathspeaker",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "cursing",
+        "manipulative"
+    ],
+    "adjectives": [
+        "deceptive",
+        "malevolent"
+    ],
+    "description": "The Deathspeaker is a cunning undead, possessing a skeletal appearance that is further enhanced by its ability to manipulate thoughts and emotions. It wields a variety of offensive and defensive tactics, drawing on both melee and necromantic attacks.",
+    "memorable": "Its ability to curse foes into believing they will die soon, causing disadvantage on attacks and checks, makes it a uniquely dangerous adversary.",
+    "goals": "Typically seeks to manipulate and control foes, often using deception and fear to achieve its ends.",
+    "relations": "May be encountered alongside other undead or dark entities that share its lawful evil alignment.",
+    "environment": "Commonly found in dark, eerie places, such as crypts, ruined castles, or shadowy forests.",
+    "strengths": "High Intelligence and Charisma scores enable it to excel in manipulation, coupled with significant resilience against debilitating effects.",
+    "weaknesses": "Its reliance on language for its most potent abilities can limit its effectiveness against creatures that do not share a language.",
+    "attacks": "Can perform Rake melee attacks or use Necrotic Ray for ranged damage, balancing its combat approach between close and distance fighting.",
+    "most_powerful_ability": "Deathspeak allows it to curse opponents with the belief of imminent death, significantly hampering their combat effectiveness.",
+    "senses": "Possesses darkvision, enabling it to see in dim light, although its passive perception is average at 11.",
+    "skills": "Proficient in deception and persuasion, allowing it to manipulate creatures with ease.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Avoids exhaustion effects.",
+        "Can execute a punishing attack called Pronounce Death against weakened foes.",
+        "Utilizes curses strategically to lower opponents' effectiveness.",
+        "Versatile combatant capable of dual attack styles."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead that curses with death",
+        "manipulative creature using prophecies",
+        "death-themed monster with necrotic attacks",
+        "intelligent undead with social manipulation",
+        "creature that can instantly kill weakened foes"
+    ]
+}

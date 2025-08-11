@@ -1,0 +1,25 @@
+{
+    "name": "Marsh Dire",
+    "queries": [
+        {
+            "query": "undead creature with a cloying stench that attacks with vines",
+            "variant": "creature that is undead and has a stench ability while using vines for attacks"
+        },
+        {
+            "query": "medium-sized undead that can poison foes and grapple them",
+            "variant": "medium undead that grapples targets and has the ability to poison"
+        },
+        {
+            "query": "monster resistant to fire and capable of melee attacks",
+            "variant": "creature that can perform melee attacks and is resistant against fire"
+        },
+        {
+            "query": "powerful monster with high hit points that lives near swamps",
+            "variant": "strong creature with a lot of hit points found in wetland areas"
+        },
+        {
+            "query": "undead creature that restrains targets and deals necrotic damage",
+            "variant": "undead being that can restrain its enemies and does necrotic kind of damage"
+        }
+    ]
+}

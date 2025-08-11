@@ -1,0 +1,50 @@
+{
+    "name": "Goblin Dreadnought",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Small",
+    "hp": 10,
+    "ac": 17,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "ambusher",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "tactical",
+        "elusive"
+    ],
+    "description": "A small humanoid known for its agility and tactical prowess, equipped with a sabre and a shortbow. It uses stealth to ambush foes.",
+    "memorable": "Its ability to evade and reposition makes it difficult for enemies to pin it down during combat.",
+    "goals": "To ambush enemies and escape combat unharmed.",
+    "relations": "Related to other goblin types and may be encountered with goblin raiders.",
+    "environment": "Typically found in dark or wooded areas where it can utilize stealth.",
+    "strengths": "High armor class for its challenge rating and effective stealth skills.",
+    "weaknesses": "Limited hit points making it vulnerable to sustained attacks.",
+    "attacks": "Utilizes a sabre for close combat and a shortbow for ranged attacks.",
+    "most_powerful_ability": "Nimble Escape allows tactical repositioning in combat.",
+    "equipment": null,
+    "senses": "Possesses darkvision, enhancing its stealth capabilities in dim light.",
+    "skills": "Proficient in stealth, giving it a +3 bonus to sneaking.",
+    "additional_information": [
+        "Dexterity provides good agility for dodging.",
+        "Average intelligence and charisma, limiting social interactions.",
+        "Effective ambusher in appropriate environments.",
+        "Combat tactics focus on evasion and re-engaging at range.",
+        "Offers 100 experience points upon defeat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "goblin skilled in ambush tactics",
+        "small agile humanoid with high AC",
+        "tactical goblin using stealth",
+        "goblin that can evade attacks",
+        "elusive creature that uses ranged weapons"
+    ]
+}

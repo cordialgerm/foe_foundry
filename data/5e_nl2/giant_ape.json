@@ -1,0 +1,51 @@
+{
+    "name": "Giant Ape",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 157,
+    "ac": 12,
+    "srd": true,
+    "cr": "7",
+    "movement": "40 ft. walking and climbing",
+    "role": "Bruiser",
+    "tags": [
+        "Ape",
+        "Giant",
+        "Beast",
+        "Melee",
+        "Ranged"
+    ],
+    "adjectives": [
+        "massive",
+        "powerful",
+        "formidable"
+    ],
+    "description": "The Giant Ape is an enormous primate, towering like a small building with massive arms capable of uprooting trees and smashing through rock. It is intelligent enough to use simple tools or weapons and can become a fearsome opponent when threatened.",
+    "memorable": "Its ability to hurl boulders and easily grapple foes makes it a terrifying creature to confront in battle.",
+    "goals": "Typically rules its territory in remote jungles or mountains, using its strength to dominate the environment.",
+    "relations": "Might be encountered alongside other large beasts or in territory that includes plants and terrain it manipulates.",
+    "environment": "Remote jungles or mountains.",
+    "strengths": "Exceptional physical power and grappling abilities, making it difficult for opponents to escape once caught.",
+    "weaknesses": "Low Armor Class of 12, which leaves it vulnerable to attacks.",
+    "attacks": "Can strike with massive fists in melee combat or throw large rocks at distant foes.",
+    "most_powerful_ability": "Multiattack allows it to strike twice in a single turn, increasing its combat effectiveness.",
+    "senses": "Passive Perception of 14 grants it good awareness of its surroundings.",
+    "skills": "Strong in athletics with a +9 modifier, showcasing its physical prowess and ability to grapple.",
+    "additional_information": [
+        "Can throw grappled creatures, causing them additional damage.",
+        "Low intelligence and charisma scores make it ineffective in social situations.",
+        "Possesses high strength, allowing for devastating melee attacks.",
+        "Intelligent enough to use simple tools.",
+        "Can deal substantial damage with both melee and ranged attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive jungle beast with powerful punches",
+        "giant primate that throws boulders",
+        "towering creature with grappling abilities",
+        "ferocious ape that dominates its territory",
+        "huge beast with devastating melee attacks"
+    ]
+}

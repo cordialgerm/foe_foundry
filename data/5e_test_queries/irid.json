@@ -1,0 +1,25 @@
+{
+    "name": "Irid",
+    "queries": [
+        {
+            "query": "tiny celestial creature that uses deception and magic",
+            "variant": "small celestial monster that manipulates with magic and deception"
+        },
+        {
+            "query": "chaotic neutral creature with magical light abilities",
+            "variant": "creature with chaotic nature that has magical light powers"
+        },
+        {
+            "query": "playful celestial that resists radiant damage and poison",
+            "variant": "playful celestial being immune to poison damage and resistant to radiant"
+        },
+        {
+            "query": "invisible creature that can influence targets with gossip",
+            "variant": "creature that turns invisible and sways opponents with gossip"
+        },
+        {
+            "query": "chaotic celestial with good dexterity and charm skills",
+            "variant": "chaotic celestial being strong in dexterity and charm abilities"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Elemental Locus",
+    "queries": [
+        {
+            "query": "gargantuan elemental creature that controls nature and summons allies",
+            "variant": "gargantuan elemental monster controlling nature and summoning allies"
+        },
+        {
+            "query": "powerful guardian with high bludgeoning damage and territorial abilities",
+            "variant": "powerful guardian dealing high bludgeoning damage and having territorial abilities"
+        },
+        {
+            "query": "creature with magic resistance and can return to life after death",
+            "variant": "monster with magic resistance that returns to life after dying"
+        },
+        {
+            "query": "elemental being that is immune to many damage types and conditions",
+            "variant": "elemental creature immune to various damage types and conditions"
+        },
+        {
+            "query": "elemental monster bound to its territory with special abilities",
+            "variant": "monster bound to its land with special elemental abilities"
+        }
+    ]
+}

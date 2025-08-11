@@ -1,0 +1,51 @@
+{
+    "name": "Giant Scorpion",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 52,
+    "ac": 15,
+    "srd": true,
+    "cr": "3",
+    "movement": "40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monster",
+        "predator",
+        "territorial"
+    ],
+    "adjectives": [
+        "massive",
+        "venomous",
+        "aggressive"
+    ],
+    "description": "A massive, predatory arachnid with a hard exoskeleton, large pincers, and a long, venomous stinger at the end of its tail.",
+    "memorable": "Its ability to grapple and deliver potent poison makes it a dangerous opponent.",
+    "goals": "Territorial and aggressive, attacking anything that comes too close.",
+    "relations": "Often encountered in wilderness and dungeon environments, potentially serving as a guardian of its territory.",
+    "environment": "Deserts, caves, or other arid regions.",
+    "strengths": "High natural armor and ability to deal significant damage through claws and venomous sting.",
+    "weaknesses": "Very low intelligence and charisma, making it ineffective in social interactions.",
+    "attacks": "Can perform a Multiattack with claws and sting, grappling targets and inflicting poison damage.",
+    "most_powerful_ability": "Delivers poison damage with its sting attack, posing a significant threat to foes.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures in its vicinity without seeing.",
+    "skills": null,
+    "additional_information": [
+        "Capable of crushing bones with its pincers.",
+        "Grapples targets when it successfully hits with claws.",
+        "Has a low passive perception, indicating poor awareness.",
+        "Utilizes venom to weaken and incapacitate prey.",
+        "A prevalent menace in its territory."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large venomous desert predator",
+        "massive arachnid with powerful claws",
+        "aggressive creature with poison sting",
+        "territorial beast found in arid caves",
+        "monster that grapples and poisons prey"
+    ]
+}

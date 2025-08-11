@@ -1,0 +1,53 @@
+{
+    "name": "Tosculi Warrior",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Small",
+    "hp": 58,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 60 ft., fly 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "flyer",
+        "tactics",
+        "poison"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "strategic",
+        "poisonous"
+    ],
+    "description": "A small humanoid with exceptional agility and a lawful evil alignment, the Tosculi Warrior uses its speed and flight effectively in combat.",
+    "memorable": "Its ability to paralyze opponents and extend the paralysis makes it a formidable foe, especially when operating in groups.",
+    "goals": "To incapacitate foes and protect its hive through coordinated attacks with other Tosculi.",
+    "relations": "Often found with other Tosculi, particularly in groups supporting a Hive Queen.",
+    "environment": "Typically encountered in hive-like structures or dark underground areas.",
+    "strengths": "High dexterity grants remarkable agility and accuracy, while special abilities enhance combat effectiveness.",
+    "weaknesses": "Moderate strength and intelligence limit its physical might and mental capabilities.",
+    "attacks": "Employs deadly claw and stinger attacks, with the stinger potentially poisoning and paralyzing its target.",
+    "most_powerful_ability": "Prepare Host, which can extend paralysis for up to 8 hours, rendering targets vulnerable.",
+    "senses": "Has Hive Sense to locate its hive queen within 300 feet, enhancing its strategic awareness.",
+    "skills": null,
+    "additional_information": [
+        "Crowd Tactics grants advantage on attack rolls when sharing space with another Tosculi.",
+        "Can execute multiattacks to maximize damage output.",
+        "Utilizes flight to navigate the battlefield effectively.",
+        "Has a noteworthy Constitution score that contributes to its resilience.",
+        "Capable of debilitating foes with poison and paralysis."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid that uses poison attacks",
+        "agile creature with tactical flying abilities",
+        "warrior that paralyzes foes for hours",
+        "Tosculi with stinger attack and hive connections",
+        "lawful evil warrior skilled in cooperative combat"
+    ]
+}

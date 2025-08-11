@@ -1,0 +1,53 @@
+{
+    "name": "Gutter Troll",
+    "creature_type": "Giant",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "troll",
+        "poison"
+    ],
+    "adjectives": [
+        "powerful",
+        "toxic",
+        "regenerative",
+        "amphibious"
+    ],
+    "description": "The Gutter Troll is a Medium-sized Giant with a powerful build, known for its keen smell and a unique psychoactive sweat that poisons nearby foes. It possesses strong melee attack capabilities, utilizing its bite and claw attacks effectively.",
+    "memorable": "The Gutter Troll's regenerative abilities and poisonous presence make it a formidable opponent in combat.",
+    "goals": "Typically seeks to ambush and overpower foes using its melee attacks and toxic abilities.",
+    "relations": "May operate within the territory of other evil creatures or trolls.",
+    "environment": "Usually found in swamps, marshes, or near bodies of water.",
+    "strengths": "High melee attack potency, amphibious capabilities, and regenerative health.",
+    "weaknesses": "Vulnerable to acid and fire, which negate its regeneration.",
+    "attacks": "Multiattack options including a powerful bite, slashing claws, and a sticky tongue that can pull targets closer.",
+    "most_powerful_ability": "Regeneration allows the troll to regain health, making it difficult to defeat without fire or acid damage.",
+    "equipment": null,
+    "senses": "Possesses keen smell, granting it advantage on perception checks relying on scent.",
+    "skills": "Has average wisdom, which does not significantly impact its perception.",
+    "additional_information": [
+        "Can poison creatures with its psychoactive sweat.",
+        "Uses a sticky tongue to pull opponents closer.",
+        "Regenerates health unless damaged by acid or fire.",
+        "Possesses a strong build with high attack modifiers.",
+        "Fights aggressively and prefers ambush tactics."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "toxic troll with regeneration abilities",
+        "poisonous giant found in swamps",
+        "amphibious creature that attacks with claws",
+        "giant that can swim and poison foes",
+        "powerful melee troll with unique abilities"
+    ]
+}

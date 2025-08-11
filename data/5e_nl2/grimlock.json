@@ -1,0 +1,49 @@
+{
+    "name": "Grimlock",
+    "creature_type": "Humanoid",
+    "creature_subtype": "grimlock",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Underdark",
+        "ambusher",
+        "primitive"
+    ],
+    "adjectives": [
+        "blind",
+        "savage",
+        "leathery",
+        "gray"
+    ],
+    "description": "Grimlocks are blind, leathery-skinned humanoids with pale gray skin. They dwell in the Underdark and are known for their primitive and savage nature.",
+    "memorable": "Grimlocks utilize their heightened hearing and smell to become effective hunters despite their blindness, employing ambush tactics in packs.",
+    "goals": "To hunt and ambush prey in the dark tunnels of the Underdark.",
+    "relations": "They are often encountered in packs and might be found in the company of other Underdark creatures.",
+    "environment": "Grimlocks typically inhabit the shadowy and rocky terrain of the Underdark.",
+    "strengths": "Their keen senses, particularly hearing and smell, make them formidable hunters; they are adept at camouflage in rocky environments.",
+    "weaknesses": "They are vulnerable when deafened or unable to smell, severely limiting their perception.",
+    "attacks": "The Grimlock attacks with a spiked club and can grapple an opponent, preventing them from breathing.",
+    "most_powerful_ability": "Keen Hearing and Smell, granting them advantage on perception checks relying on these senses.",
+    "senses": "Grimlocks have blindsight up to 30 feet, allowing them to detect movement in total darkness.",
+    "skills": "They excel in athletics, stealth, and engineering, showcasing their physical prowess.",
+    "additional_information": [
+        "Camouflage allows them to hide effectively in rocky areas.",
+        "They can use a special ability called Strange Bauble to create illusions that can blind or frighten targets.",
+        "Immunity to blindness enhances their survival in dark environments."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "blind primitive humanoid that ambushes prey",
+        "rocky terrain camouflage skilled hunter",
+        "savage creature with keen senses in darkness",
+        "Underdark humanoid that uses brutal tactics",
+        "tactically aware monster with blind senses"
+    ]
+}

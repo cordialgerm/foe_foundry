@@ -1,0 +1,52 @@
+{
+    "name": "Ghoul Bat",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 14,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "fly 30 ft., walk 5 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "flying",
+        "paralysis"
+    ],
+    "adjectives": [
+        "small",
+        "stealthy",
+        "incapacitating"
+    ],
+    "description": "The Ghoul Bat is a small undead creature, resembling a bat but with a ghastly, unnatural appearance. Its dexterous movements and unique abilities make it a quick and elusive opponent.",
+    "memorable": "Its ability to paralyze enemies with a bite attack makes it a significant threat despite its small size.",
+    "goals": "Typically seeks to incapacitate living foes to feed on their fear or serve its dark masters.",
+    "relations": "Often found in the company of other undead or in dark, neglected areas where the living dare not tread.",
+    "environment": "Commonly found in dark caves, ruins, or areas marked by death.",
+    "strengths": "Immunity to poison damage and conditions such as charm and exhaustion enhances its survivability in combat.",
+    "weaknesses": "Low Strength and combat ability make it reliant on speed and special attacks.",
+    "attacks": "Primarily uses a bite attack that can paralyze living foes, incapacitating them temporarily.",
+    "most_powerful_ability": "The ability to paralyze non-undead creatures on a successful bite allows it to control the flow of combat.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, enabling it to sense surroundings without sight, though it is compromised if deafened.",
+    "skills": "Has advantage on Wisdom (Perception) checks that rely on hearing due to keen hearing.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep, making it persistent in encounters.",
+        "Relies heavily on stealth and speed to evade attackers.",
+        "Notable for its high Dexterity, enabling agile movement.",
+        "Terrifying when encountered in groups due to their paralyzing capabilities.",
+        "Acts as a low-level threat for adventurers unprepared for incapacitating attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small undead bat that paralyzes",
+        "flying bat known for incapacitating bites",
+        "ghastly bat with blindsight",
+        "undead creature that doesn't need sleep",
+        "agile flying undead that attacks living foes"
+    ]
+}

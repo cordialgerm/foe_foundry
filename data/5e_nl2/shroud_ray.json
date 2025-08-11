@@ -1,0 +1,55 @@
+{
+    "name": "Shroud Ray",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Large",
+    "hp": 97,
+    "ac": 13,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 10 ft., swim 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "stealthy",
+        "grappler"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "deceptive"
+    ],
+    "description": "The Shroud Ray has a gelatinous body that mimics the appearance of sand when motionless, blending seamlessly into its aquatic environment.",
+    "memorable": "It can blind and suffocate its prey by grappling them, while using fear tactics to control the battlefield.",
+    "goals": "To ambush unsuspecting foes and dominate aquatic environments.",
+    "relations": [
+        "aberrations",
+        "aquatic creatures"
+    ],
+    "environment": "Underwater, often in environments that allow for camouflage and stealth.",
+    "strengths": "Exceptional grappling ability and stealth, resistant to bludgeoning damage.",
+    "weaknesses": "Sensitive to bright light, facing disadvantages in such conditions.",
+    "attacks": "Employs bite and tail attacks, with the bite allowing it to grapple and the tail inflicting poison.",
+    "most_powerful_ability": "Can instill fear in nearby creatures with a moan, controlling the battlefield while also creating illusions of itself for defense.",
+    "equipment": null,
+    "senses": "Has the ability to create a false appearance, making it undetectable when still.",
+    "skills": "Possesses a high stealth skill bonus, making it effective at sneaking upon and ambushing its targets.",
+    "additional_information": [
+        "Can only hold one creature grappled at a time.",
+        "Utilizes flickering illusions to gain advantage in combat.",
+        "Immune to being charmed or frightened.",
+        "Its moan ability can create temporary fear, forcing enemies to retreat.",
+        "Can damage both itself and the grappled target when engaged."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic stealthy creature that grapples",
+        "monster that pretends to be sand",
+        "large aberration with frightening abilities",
+        "creature that blinds and suffocates its prey",
+        "Shroud Ray fear tactics and camouflage"
+    ]
+}

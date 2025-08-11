@@ -1,0 +1,53 @@
+{
+    "name": "Giant Fire Elemental",
+    "creature_type": "Elemental",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 127,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walking speed of 50 feet",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "elemental",
+        "creature"
+    ],
+    "adjectives": [
+        "formidable",
+        "fiery",
+        "mobile"
+    ],
+    "description": "A massive embodiment of fire, capable of moving through narrow spaces and causing damage with its fiery aura.",
+    "memorable": "Exceedingly powerful in combat with a fiery aura that damages nearby creatures.",
+    "goals": "Survive and dominate in fiery or volcanic environments.",
+    "relations": "Can be associated with other fire elementals or creatures found in volcanic regions.",
+    "environment": "Fiery or volcanic environments.",
+    "strengths": "Immunities to fire and poison, along with several condition immunities.",
+    "weaknesses": "Vulnerable to cold damage from water sources.",
+    "attacks": "Can make two slam attacks dealing significant fire damage, along with ongoing fire damage effects.",
+    "most_powerful_ability": "Wildfire ability allows it to move without provoking attacks and damage foes within its proximity.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Fire Form enables movement through narrow spaces.",
+        "Fiery Aura deals damage to nearby creatures.",
+        "Elemental Nature allows it to not require air, food, or sleep.",
+        "Can trigger ongoing fire damage to those who strike it.",
+        "Excels at mobility, making it hard to pin down."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery creature that moves through narrow spaces",
+        "formidable elemental causing fire damage",
+        "huge creature in volcanic environments",
+        "mobile fire elemental with damaging aura",
+        "elemental that suffers from water damage"
+    ]
+}

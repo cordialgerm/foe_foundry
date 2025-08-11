@@ -1,0 +1,25 @@
+{
+    "name": "Tar Ghoul",
+    "queries": [
+        {
+            "query": "undead creature that can ignite itself and others",
+            "variant": "undead monster that ignites itself and others"
+        },
+        {
+            "query": "medium evil monster that uses tar and fire in battles",
+            "variant": "medium evil creature that uses fire and tar in combat"
+        },
+        {
+            "query": "creature with high Dexterity and a paralyzing claw attack",
+            "variant": "monster with high agility and a claw attack that paralyzes"
+        },
+        {
+            "query": "undead with immunity to fire and poison damages",
+            "variant": "undead creature immune to fire and poison damage"
+        },
+        {
+            "query": "Tar Ghoul's Flame and tar abilities detailed",
+            "variant": "details on Tar Ghoul's fire and tar abilities"
+        }
+    ]
+}

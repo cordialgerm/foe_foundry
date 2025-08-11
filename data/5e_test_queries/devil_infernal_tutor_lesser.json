@@ -1,0 +1,25 @@
+{
+    "name": "Infernal Tutor, Lesser",
+    "queries": [
+        {
+            "query": "cunning fiend that manipulates with charm and deception",
+            "variant": "manipulative fiend using charm and deception skills"
+        },
+        {
+            "query": "medium creature with psychic abilities and spellcasting",
+            "variant": "medium fiend that has psychic powers and can cast spells"
+        },
+        {
+            "query": "lawful evil monster immune to fire and poison",
+            "variant": "evil lawful fiend that is immune to fire and poisons"
+        },
+        {
+            "query": "monster that excels in social situations and has high charisma",
+            "variant": "creature skilled in social manipulation with a high Charisma"
+        },
+        {
+            "query": "fiend with darkvision that can change shape",
+            "variant": "fiend that can alter its form and has darkvision"
+        }
+    ]
+}

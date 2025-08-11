@@ -1,0 +1,25 @@
+{
+    "name": "Greyfur",
+    "queries": [
+        {
+            "query": "small humanoid with magical abilities that can glide",
+            "variant": "humanoid that glides and has magical powers, small in size"
+        },
+        {
+            "query": "agile creature with high dexterity and spellcasting skills",
+            "variant": "creature skilled in spells and very agile with good dexterity"
+        },
+        {
+            "query": "neutral alignment humanoid that uses updrafts for mobility",
+            "variant": "humanoid with neutral alignment that can use updrafts to move"
+        },
+        {
+            "query": "Greyfur's special abilities for battlefield manipulation",
+            "variant": "abilities of Greyfur for manipulating the battlefield"
+        },
+        {
+            "query": "small creature known for ambush tactics and stealth",
+            "variant": "small creature adept at stealth and ambushing tactics"
+        }
+    ]
+}

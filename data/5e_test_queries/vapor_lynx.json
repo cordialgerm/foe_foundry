@@ -1,0 +1,25 @@
+{
+    "name": "Vapor Lynx",
+    "queries": [
+        {
+            "query": "large stealthy creature that thrives in fog",
+            "variant": "stealthy large monster that thrives in foggy environments"
+        },
+        {
+            "query": "monster with poison breath that lives in misty areas",
+            "variant": "creature with poisonous breath that dwells in misty regions"
+        },
+        {
+            "query": "agile creature with high dexterity that can teleport in fog",
+            "variant": "high dexterity agile monster that teleports in foggy environments"
+        },
+        {
+            "query": "monstrosity known for evading detection and poisonous attacks",
+            "variant": "monstrous creature famous for its evasion and poison attacks"
+        },
+        {
+            "query": "fog machine-like beast that can pass through narrow spaces",
+            "variant": "beast resembling a fog machine that can slip through narrow gaps"
+        }
+    ]
+}

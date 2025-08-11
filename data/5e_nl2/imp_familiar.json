@@ -1,0 +1,52 @@
+{
+    "name": "Imp Familiar",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "familiar",
+        "stealthy",
+        "magic"
+    ],
+    "adjectives": [
+        "tiny",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "The Imp Familiar is a small fiend with exceptional Dexterity and a mischievous demeanor, often summoned as a magical companion. It possesses bat-like wings allowing flight and has a slick, dark appearance.",
+    "memorable": "The Imp Familiar stands out due to its ability to become invisible and mimic voices, enhancing its role as a stealthy ally or deceptive spy.",
+    "goals": "To serve as a loyal assistant to its master, using its stealth and deception.",
+    "relations": "Often summoned by spellcasters and may relate to other fiends or magical creatures.",
+    "environment": "Typically found in the service of spellcasters, in dark environments, or areas where magic is prevalent.",
+    "strengths": "Flight and invisibility offer significant mobility and ability to avoid direct confrontations.",
+    "weaknesses": "Low physical strength makes it vulnerable in direct melee combat; low hit points require caution.",
+    "attacks": "Can deliver a piercing sting attack that deals additional poison damage.",
+    "most_powerful_ability": "Invisibility allows it to evade danger and scout without being detected.",
+    "equipment": null,
+    "senses": "The Imp Familiar has darkvision that penetrates magical darkness, allowing it to see in low-light conditions.",
+    "skills": "It excels in deception and stealth, making it adept at trickery and remaining unnoticed.",
+    "additional_information": [
+        "Magic Resistance grants it advantage on saving throws against spells.",
+        "Can shapeshift into a rat, raven, or spider for added versatility.",
+        "Telepathic communication allows it to stay connected with its master."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy tiny magic fiend",
+        "invisible creature with voice mimicry",
+        "cunning familiar that serves a master",
+        "fiend with flying and stealth abilities",
+        "shape-shifting small creature with telepathy"
+    ]
+}

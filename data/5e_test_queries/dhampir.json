@@ -1,0 +1,25 @@
+{
+    "name": "Dhampir",
+    "queries": [
+        {
+            "query": "humanoid creature with vampire traits and charm abilities",
+            "variant": "humanoid monster that has traits of vampires and charm powers"
+        },
+        {
+            "query": "cunning creature resistant to necrotic damage and adept at deception",
+            "variant": "sly monster with necrotic resistance and skillful in deception"
+        },
+        {
+            "query": "medium humanoid that can manipulate others and has a physical striking ability",
+            "variant": "medium monster that can charm others and has melee attack options"
+        },
+        {
+            "query": "evasive humanoid skilled in stealth and persuasion using charisma",
+            "variant": "quick creature skilled in stealth and using charisma for persuasion"
+        },
+        {
+            "query": "dhampir abilities in combat and social situations with damage resistance",
+            "variant": "dhampir fighting abilities and skills in social interactions plus resistance to damage"
+        }
+    ]
+}

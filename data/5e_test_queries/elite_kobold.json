@@ -1,0 +1,25 @@
+{
+    "name": "Elite Kobold",
+    "queries": [
+        {
+            "query": "small humanoid that uses tactics and has sunlight sensitivity",
+            "variant": "tiny humanoid creature that uses tactics and suffers from sunlight sensitivity"
+        },
+        {
+            "query": "resourceful creature with darkvision that can burrow through soil",
+            "variant": "clever creature with darkvision that can dig through non-rocky soil"
+        },
+        {
+            "query": "kobold with good stealth abilities and a combat support role",
+            "variant": "kobold known for stealthy skills and a supportive role in combat"
+        },
+        {
+            "query": "Elite Kobold using lantern splash attack in combat",
+            "variant": "Elite Kobold deploying lantern splash during battle"
+        },
+        {
+            "query": "Kobold with pack tactics and mining pick weapon",
+            "variant": "Kobold that has pack tactics and uses a mining pick weapon"
+        }
+    ]
+}

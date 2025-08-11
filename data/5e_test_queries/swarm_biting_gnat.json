@@ -1,0 +1,25 @@
+{
+    "name": "Swarm, Biting Gnat",
+    "queries": [
+        {
+            "query": "tiny flying insects that distract and debilitate",
+            "variant": "small flying bugs that can distract and weaken enemies"
+        },
+        {
+            "query": "swarm of gnats immune to paralysis and charming",
+            "variant": "gnat swarm that can\u2019t be paralyzed or charmed"
+        },
+        {
+            "query": "creature that has blood sense and causes distraction",
+            "variant": "being with blood detection ability that distracts opponents"
+        },
+        {
+            "query": "medium swarm beast with low hit points and swarm tactics",
+            "variant": "medium-sized swarming creature with poor hp and swarm strategies"
+        },
+        {
+            "query": "gnat swarm with high dexterity and biting attacks",
+            "variant": "swarm of gnats known for fast movements and biting attacks"
+        }
+    ]
+}

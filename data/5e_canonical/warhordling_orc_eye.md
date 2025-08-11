@@ -1,6 +1,8 @@
 <MonsterName/>Warhordling Orc Eye</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>32</HP>
 <summary>The Warhordling Orc Eye is a Medium humanoid creature with a good balance of combat ability and spellcasting prowess, making it a formidable opponent on the battlefield. With an Armor Class of 14 and 32 hit points, it has a decent level of durability, allowing it to withstand some damage while engaging opponents. The creature excels in Wisdom and has a number of beneficial skills such as medicine and insight, giving it a strong role as a support character in combat. However, its Dexterity is average, limiting its agility. It possesses a unique combination of aggressive movement through its Aggressive Charge ability and can cast spells that provide both offensive capabilities and supportive healing, positioning the Warhordling Orc Eye as a versatile threat. </summary>
 
 <detail>
@@ -29,6 +31,7 @@ As a bonus action, the Warhordling Orc Eye can use Healing Word to regain 5 (1d4
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warhordling Orc Eye
 
 *Medium* *Humanoid*
@@ -79,5 +82,6 @@ arcane eye
 - **Healing Word (1st-Level; V):** The priest or a living creature within 60 feet regains 5 (1d4 + 3) hit points. The priest can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

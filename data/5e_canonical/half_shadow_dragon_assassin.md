@@ -1,6 +1,8 @@
 <MonsterName/>Half-Shadow Dragon Assassin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>16</AC>
+<HP/>97</HP>
 <summary>The Half-Shadow Dragon Assassin is a formidable Medium humanoid creature that combines agility, stealth, and the deadly traits of a dragon into a lethal assassin. With a Challenge Rating of 7, this creature presents a significant threat to adventurers, boasting a solid Armor Class of 16 and a total of 97 hit points. Its strengths lie in its high Dexterity score, enhancing its agility and making it adept in stealth and acrobatics. The assassin is also capable of dealing substantial damage through its natural abilities and infused weapon attacks. However, it does have some vulnerabilities, primarily rooted in its relatively low Constitution and lack of magical defenses, making it susceptible to certain spells and abilities. Overall, the Half-Shadow Dragon Assassin excels in ambush tactics, dealing burst damage quickly and effectively.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For bonus actions, the assassin has access to Cunning Action, enabling it to qui
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Half-Shadow Dragon Assassin
 
 *Medium* *Humanoid*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The assassin attacks with their shortsword.
 
 
+</statblock>
 
 

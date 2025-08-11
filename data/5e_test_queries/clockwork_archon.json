@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Archon",
+    "queries": [
+        {
+            "query": "gargantuan construct that can transport allies",
+            "variant": "gargantuan contruct that can carry allies"
+        },
+        {
+            "query": "heavily armored creature with strong melee attacks",
+            "variant": "tough armored monster with powerful melee abilities"
+        },
+        {
+            "query": "monster with a transforming weapon and a radiant beam attack",
+            "variant": "creature with changing weapon and a powerful radiant beam"
+        },
+        {
+            "query": "durable construct that is immune to shape-changing spells",
+            "variant": "resilient construct that doesn't change shape with spells"
+        },
+        {
+            "query": "clockwork being with strong physical attributes but low dexterity",
+            "variant": "mechanical creature with high strength but poor agility"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Stone Colossus",
+    "creature_type": "Construct",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 263,
+    "ac": 17,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "siege",
+        "gargantuan",
+        "magic resistance"
+    ],
+    "adjectives": [
+        "imposing",
+        "durable",
+        "powerful"
+    ],
+    "description": "The Stone Colossus is a massive construct designed for frontline combat, featuring imposing stone features and a robust build.",
+    "memorable": "With its ability to deal double damage to structures and multiple powerful melee attacks, it is a formidable adversary in battle.",
+    "goals": "To act as a protector or weapon on the battlefield, engaging enemies with overwhelming physical strength.",
+    "relations": "It may be encountered alongside other constructs or serve a powerful creator.",
+    "environment": "Typically found on battlefields or as guardians near important structures.",
+    "strengths": "High durability and substantial melee damage output, along with immunity to various damage types and conditions.",
+    "weaknesses": "Lacks mobility and complex thought, with low intelligence and charisma scores.",
+    "attacks": "Can perform powerful melee slam attacks and ranged rock throws, each inflicting significant bludgeoning damage.",
+    "most_powerful_ability": "The ability to call down a devastating bolt of energy that affects a wide radius.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immutable Form provides defense against manipulation.",
+        "Magic Resistance gives an advantage against spells.",
+        "Constructed Nature means it doesn't need food or rest.",
+        "Legendary Resistance allows it to succeed on failing saving throws while taking damage.",
+        "Seige Monster trait increases damage against objects."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive stone construct with powerful melee attacks",
+        "heavily built guardian that deals double damage to structures",
+        "gargantuan construct immune to many damage types",
+        "stone giant that doesn't require food or sleep",
+        "powerful colossus with devastating area attacks"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Devil, Maelstrom",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 195,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft., fly 40 ft., swim 120 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "manipulative",
+        "weather control"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "intelligent",
+        "strategic"
+    ],
+    "description": "The Maelstrom Devil is a large fiend characterized by its exceptional control over weather, formidable combat abilities, and a crown of water that can unleash powerful cold attacks.",
+    "memorable": "Its unique ability to influence weather makes it a strategic threat in any environment, giving it control over the battlefield.",
+    "goals": "To dominate its surroundings and exploit weaknesses in opponents, often battling with strategic intent.",
+    "relations": "Often associated with other fiends and can be encountered alongside lower-tier devils or in service to greater fiendish entities.",
+    "environment": "Typically found in realms of chaos and conflict, where it can manipulate weather patterns to its advantage.",
+    "strengths": "High resilience with significant damage immunities and the ability to control environmental conditions.",
+    "weaknesses": "Low passive perception and some vulnerability to clever strategies by players.",
+    "attacks": "The Maelstrom Devil can unleash a series of slashing attacks with its claws or devastating lightning rays from a distance, alongside a powerful tempest trident strike that can knock opponents prone.",
+    "most_powerful_ability": "Crown of Water, which inflicts cold damage in a wide area, potentially debilitating multiple foes at once.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in perception but has a low modifier, making it less aware of its surroundings compared to its other abilities.",
+    "additional_information": [
+        "Immune to fire, lightning, and poison damage.",
+        "Can alter weather within a mile at will, making it a tactically formidable opponent.",
+        "Possesses Magic Resistance, gaining advantage on saving throws against spells.",
+        "Crown of Water ability allows area denial and significant cold damage.",
+        "High Charisma score enhances its spellcasting and social interactions."
+    ],
+    "damage_types": [
+        "cold",
+        "lightning",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful fiend that manipulates weather",
+        "large devil with water geyser attack",
+        "formidable combatant with cold damage abilities",
+        "lawful evil creature that controls the battlefield",
+        "fiend known for lightning and cold attacks"
+    ]
+}

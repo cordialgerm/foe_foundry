@@ -1,0 +1,25 @@
+{
+    "name": "Walled Horror",
+    "queries": [
+        {
+            "query": "large undead creature that attacks through walls and causes psychic damage",
+            "variant": "undead large creature that uses walls to attack and deals psychic damage"
+        },
+        {
+            "query": "chaotic evil monster that grapples and frightens its opponents",
+            "variant": "evil chaotic monster that can grapple and terrify foes"
+        },
+        {
+            "query": "monster with high Charisma that can move between walls and uses psychic abilities",
+            "variant": "creature with strong Charisma that hops between walls and has psychic powers"
+        },
+        {
+            "query": "psychic horror that is immobilized but uses walls for movement and has spectral claws",
+            "variant": "horror creature that can't move but uses walls to hop and has ghostly claws"
+        },
+        {
+            "query": "undead monster that can partially entomb creatures and has strong defenses",
+            "variant": "undead creature that can entomb and has powerful defenses"
+        }
+    ]
+}

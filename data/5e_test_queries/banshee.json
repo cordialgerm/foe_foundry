@@ -1,0 +1,25 @@
+{
+    "name": "Banshee",
+    "queries": [
+        {
+            "query": "haunting undead creature with sorrowful cries and psychic attacks",
+            "variant": "haunting creature with sorrowful screams that uses psychic powers"
+        },
+        {
+            "query": "ghost that manipulates emotions and moves through walls",
+            "variant": "spirit that can manipulate feelings and pass through solid objects"
+        },
+        {
+            "query": "medium undead with high Charisma that can inflict curses",
+            "variant": "medium spirit with a strong Charisma stat capable of casting curses"
+        },
+        {
+            "query": "creature immune to poison and can sense living beings from far away",
+            "variant": "monster resistant to poison that can detect living creatures from miles away"
+        },
+        {
+            "query": "undead with a powerful wail that can reduce foes to zero hit points",
+            "variant": "undead creature that has a lethal wail capable of killing enemies"
+        }
+    ]
+}

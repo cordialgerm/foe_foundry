@@ -1,0 +1,51 @@
+{
+    "name": "Raven, Swarm of Ravens",
+    "creature_type": "Beast",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "10 ft., fly 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast",
+        "disruption"
+    ],
+    "adjectives": [
+        "tiny",
+        "stealthy",
+        "disruptive"
+    ],
+    "description": "A swarm of tiny ravens that can move through spaces and occupy other creatures' spaces, creating chaotic situations in battles.",
+    "memorable": "The swarm can steal spell components, disrupting magic users effectively.",
+    "goals": "Typically scavenging for carrion and disrupting opponents.",
+    "relations": "May accompany other carrion-feeding creatures or undead.",
+    "environment": "Often found in areas with dead creatures or battlefields.",
+    "strengths": "High stealth ability and resistance to various damage types.",
+    "weaknesses": "Relatively low hit points and reliance on swarm tactics.",
+    "attacks": "Attacks with beaks, causing piercing damage, scaling based on health.",
+    "most_powerful_ability": "Pilfering Swarm disrupts spellcasting by stealing components.",
+    "senses": "Good perception score of 13 allows it to detect carrion effectively.",
+    "skills": "Good at stealth, making it hard to detect.",
+    "additional_information": [
+        "Can occupy the space of other creatures.",
+        "Immune to several conditions, making it tough in combat.",
+        "Cannot regain hit points or gain temporary hit points.",
+        "Carrion Sense helps locate dead bodies within 60 feet.",
+        "Swarm tactics create unique strategic challenges."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of tiny ravens that disrupt spells",
+        "stealthy ravens stealing spell components",
+        "medium swarm of ravens that locate carrion",
+        "tiny beast swarm causing chaos in battle",
+        "ravens that can attack and evade easily"
+    ]
+}

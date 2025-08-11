@@ -1,0 +1,53 @@
+{
+    "name": "Alnaar",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 212,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "burrow 20 ft., fly 40 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "chaotic",
+        "fire"
+    ],
+    "adjectives": [
+        "formidable",
+        "devastating",
+        "chaotic",
+        "fiery"
+    ],
+    "description": "The Alnaar is characterized by its chaotic evil nature with a strong combination of speed and durability. It has fiery features that suggest its infernal origin, and its skin appears as if scorched.",
+    "memorable": "Its fiery aura damages enemies nearby and its ability to destroy nonmagical weapons upon contact makes it a dangerous foe.",
+    "goals": "To wreak havoc in combat and sustain itself by feeding on larger creatures.",
+    "relations": "Typically encountered alongside other fiends or in infernal realms.",
+    "environment": "Fiery and chaotic environments, such as hellscapes or battlefields.",
+    "strengths": "High damage output with abilities that ignite and damage enemies, excellent mobility, and resilience to many forms of damage.",
+    "weaknesses": "Vulnerable to cold damage, and its combat effectiveness is impaired when starving.",
+    "attacks": "Performs multiattacks with fiery fangs that deal piercing and fire damage.",
+    "most_powerful_ability": "Flare creates a large fiery explosion that can deal significant damage and knock enemies prone.",
+    "equipment": null,
+    "senses": "Has darkvision extending 120 feet and a passive perception of 15.",
+    "skills": "Excels in acrobatics with a +10 bonus, allowing for agile maneuvers.",
+    "additional_information": [
+        "Immunity to fire and poison.",
+        "Condition immunities include frightened and poisoned.",
+        "Deals additional fire damage to creatures that touch it.",
+        "Aggressively targets a single foe when starving.",
+        "Destroys nonmagical weapons with low Armor Class on contact."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery infernal monster",
+        "chaotic evil fiend",
+        "large fire creature",
+        "monstrous entity with a fiery aura",
+        "multiattack fire creature"
+    ]
+}

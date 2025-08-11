@@ -1,0 +1,53 @@
+{
+    "name": "Forgotten God",
+    "creature_type": "Celestial",
+    "alignment": null,
+    "size": "Large",
+    "hp": 161,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft., fly 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "damage dealer",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "powerful",
+        "formidable",
+        "divine"
+    ],
+    "description": "The Forgotten God embodies divine attributes with a formidable presence, featuring a combination of exceptional physical strength, with high Strength and Constitution scores, and potent magical abilities. It has a radiant aura and can wield melee attacks that inflict radiant damage.",
+    "memorable": "It's a complex celestial being able to shift between different alignments, and its flawed spellcasting introduces unpredictability in combat.",
+    "goals": "To impose its will on the battlefield and control the actions of its foes through spells and stunning attacks.",
+    "relations": "Could be associated with other celestial beings or serve as a powerful entity influencing other elusively divine creatures.",
+    "environment": "Typically found in celestial realms or as a guardian in regions of divine significance.",
+    "strengths": "High physical and magical defenses, along with the ability to manipulate the battlefield using spells like Spirit Guardians and Flame Strike.",
+    "weaknesses": "Flawed spellcasting can lead to failures, creating unpredictability in its abilities.",
+    "attacks": "Melee weapon attacks that deal radiant damage; an ability to stun enemies with radiant damage; strong area control with spells.",
+    "most_powerful_ability": "Divine Wrath, capable of inflicting significant radiant damage to multiple foes simultaneously.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, enhancing its ability to detect hidden foes.",
+    "skills": "Proficient in arcana, history, intimidation, perception, persuasion, and religion, showcasing versatility in various scenarios.",
+    "additional_information": [
+        "Resistant to poison and radiant damage",
+        "Immune to conditions like fatigue and fear",
+        "Does not require air, sustenance, or sleep",
+        "Can shift alignments impacting its behavior",
+        "Has legendary resistance to succeed on failed saving throws"
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": "Can cast Spirit Guardians and Flame Strike, with a risk of failure due to flawed spellcasting mechanics.",
+    "test_queries": [
+        "powerful celestial being with radiant attacks",
+        "divine creature that can fly and deal radiant damage",
+        "forgotten god with flawed spellcasting abilities",
+        "celestial monster that can manipulate alignments",
+        "large divine entity with stunning gaze ability"
+    ]
+}

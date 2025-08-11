@@ -1,6 +1,8 @@
 <MonsterName/>High Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>18</AC>
+<HP/>82</HP>
 <summary>The High Priest is a powerful and versatile spellcaster, serving as a vital support figure in any party, particularly in a clerical or divine context. With a high Armor Class of 18, the priest demonstrates good defensive capabilities, while their substantial Hit Points of 82, drawn from an 11d8 hit die, indicate good survivability in combat. Possessing a Challenge Rating of 6, the High Priest can challenge mid-level adventurers effectively, providing both healing and potent offensive spells. They excel in Wisdom and Charisma, with scores of 18 (+4) and 16 (+3) respectively, making them exceptional in saving throws related to these traits. While their Strength and Constitution are decent, their Dexterity is average, meaning they are less mobile but capable of holding their ground in battle.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the High Priest serves as a formidable entity in any encounter, providi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # High Priest
 
 *Medium* *Humanoid*
@@ -78,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Healing Word (1st-Level; V):** The priest or a living creature within 60 feet regains 6 (1d4 + 4) hit points. The priest can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

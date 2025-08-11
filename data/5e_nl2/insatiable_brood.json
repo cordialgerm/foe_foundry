@@ -1,0 +1,49 @@
+{
+    "name": "Insatiable Brood",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Medium swarm",
+    "hp": 63,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 50 ft",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "magical",
+        "resilient"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "otherworldly"
+    ],
+    "description": "The Insatiable Brood is a swarm of tiny aberrations characterized by its chaotic movement and otherworldly nature.",
+    "memorable": "Its unique blend of magical attacks, resistance to damage, and swarm tactics make it a dangerous foe.",
+    "goals": "To swarm and overwhelm enemies, dealing significant damage and causing terror.",
+    "relations": "Could be encountered alongside other aberrations or as part of a larger chaotic entity.",
+    "environment": "Often found in desolate or chaotic regions, potentially in the Void.",
+    "strengths": "Highly resistant to many damage types, can double damage to structures, and possesses swarm abilities.",
+    "weaknesses": "Lack of charm and persuasion abilities, with low intelligence making it less strategic.",
+    "attacks": "Bites that deal both piercing and force damage, with enhanced effects when attacking healthy foes.",
+    "most_powerful_ability": "Void Gaze, which can frighten foes and inflict additional dread effects.",
+    "senses": "Possesses darkvision and exceptional stealth capabilities.",
+    "skills": "Exceptional dexterity allows it to be stealthy and evade detection easily.",
+    "additional_information": [
+        "Advantage on saves against transformation magic.",
+        "Can fill the space of its foes and move through tiny openings.",
+        "Immune to several debilitating effects like paralyzed and frightened."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magic swarm of chaotic tiny aberrations",
+        "creature that can fly and terrify enemies",
+        "resilient swarm that doubles damage to structures",
+        "otherworldly monster with magical bite attacks",
+        "swarm that doesn't need air or food"
+    ]
+}

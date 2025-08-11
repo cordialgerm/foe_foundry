@@ -1,0 +1,51 @@
+{
+    "name": "Drudge Pitcher",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 20 ft., climb 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "plant",
+        "controller"
+    ],
+    "adjectives": [
+        "formidable",
+        "unique",
+        "manipulative"
+    ],
+    "description": "The Drudge Pitcher is a Huge plant creature with the ability to trap enemies inside its pitchers while regenerating from their remains, and transforming them into zombie minions.",
+    "memorable": "It can create undead minions and regenerate by consuming foes, turning them into zombies that serve it.",
+    "goals": "To ensnare foes and dominate the battlefield by creating undead minions.",
+    "relations": "May be encountered alongside other undead or plant creatures.",
+    "environment": "Often found in swampy or overgrown areas where it can go unnoticed.",
+    "strengths": "High hit points, natural armor, ability to control undead.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks.",
+    "attacks": "Can make multiple Vine Slam attacks and potentially trap enemies with its Pitcher Swallow ability, dealing bludgeoning and necrotic damage.",
+    "most_powerful_ability": "Undead Creator allows it to regenerate health and create zombies from slain foes.",
+    "senses": "Has blindsight out to 60 feet, allowing it to perceive nearby creatures despite blindness beyond that range.",
+    "skills": "Average perception skills, providing basic awareness.",
+    "additional_information": [
+        "Immune to necrotic damage and certain conditions like being blinded or exhausted.",
+        "Resistant to bludgeoning and piercing damage.",
+        "Can trap enemies within its pitchers, blinding and restraining them.",
+        "Maintains control over zombies created from defeated foes.",
+        "Can endure through long battles due to high Constitution."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge plant creature that creates zombies",
+        "monster that traps enemies in pitcher",
+        "manipulative creature with undead creation ability",
+        "tough plant monster with high hit points",
+        "creature that regenerates from killed foes"
+    ]
+}

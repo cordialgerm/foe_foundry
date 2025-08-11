@@ -1,0 +1,50 @@
+{
+    "name": "Swarm of Quippers",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 34,
+    "ac": 13,
+    "srd": true,
+    "cr": "1",
+    "movement": "swim 40 ft., cannot move on land",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "aquatic",
+        "beast"
+    ],
+    "adjectives": [
+        "voracious",
+        "aggressive",
+        "tiny"
+    ],
+    "description": "A medium-sized swarm composed of tiny aquatic quippers, known for their aggressive and voracious nature.",
+    "memorable": "The swarm can deal typical damage, plus inflict bleeding wounds on its victims, creating a heightened sense of urgency during combat.",
+    "goals": "These creatures aim to swarm and consume any living beings they come across underwater.",
+    "relations": "Often encountered in schools or groups, they can be affected by larger aquatic predators.",
+    "environment": "Typically found in underwater environments, relying on water for survival.",
+    "strengths": "Advantage on attacks against injured foes, resistance to common damage types, and immunity to various conditions.",
+    "weaknesses": "Easily dispersed if damaged sufficiently and can only exist underwater.",
+    "attacks": "Bites with the ability to inflict significant piercing damage and cause ongoing bleeding.",
+    "most_powerful_ability": "Blood Frenzy, allowing the swarm to more easily hit weakened foes.",
+    "equipment": null,
+    "senses": "The swarm has heightened smell, giving them a Perception of 15 for detecting scents.",
+    "skills": "Exceptional Stealth allows the swarm to sneak up on its targets.",
+    "additional_information": [
+        "Can occupy and move through the space of other creatures.",
+        "Resistant to bludgeoning, piercing, and slashing damage.",
+        "Immune to conditions such as charmed, frightened, and stunned.",
+        "Must remain submerged, unable to survive on land.",
+        "Uses swarm tactics to overwhelm enemies with numbers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny aggressive aquatic swarm",
+        "swarm that inflicts bleeding damage",
+        "quippers that attack in water",
+        "voracious underwater monster swarm",
+        "aggressive swarm of aquatic creatures"
+    ]
+}

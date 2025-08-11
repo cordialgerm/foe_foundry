@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>3</CR>
+<AC/>8</AC>
+<HP/>76</HP>
 <summary>The Shadow Ooze is a Medium-sized ooze creature known for its ability to consume light and navigate the environment with ease. This creature is unaligned, focusing on its survival rather than any moral affiliation. With a moderate Armor Class of 8 and a noteworthy pool of Hit Points totaling 76, thanks to its robust Constitution score, it is designed for endurance in combat. Its notable strengths include immunity to acid and necrotic damage, and it possesses several useful abilities like the Aura of Darkness, which can heavily obscure its surroundings, creating a tactical advantage in battles. However, its Dexterity is quite low, making it less effective in dodging attacks, and it lacks any intelligence or charm, rendering it incapable of complex interactions. With a Challenge Rating of 3, it poses a good challenge to low-level adventurers, rewarding 700 experience points upon defeat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Snuff Out action allows the ooze to extinguish a light source within 60 feet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Ooze
 
 *Medium* *Ooze* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Snuff Out:** The ooze extinguishes one natural or magical light source within 60 feet of it. If the light source is created by a spell, it is dispelled.
 
 
+</statblock>
 
 

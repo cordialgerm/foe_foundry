@@ -1,6 +1,8 @@
 <MonsterName/>Putrescent Slime</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>45</HP>
 <summary>The Putrescent Slime is a Medium ooze creature that serves as an ambush predator in various environments. It has a challenge rating of 1, making it suitable for low-level adventurers. With a reasonably high constitution score (16), the slime has a substantial pool of hit points at 45, which provides it with durability in combat. Its primary strengths lie in its damage immunities to acid and poison and its ability to move unhindered through tight spaces due to its amorphous nature. However, its weak Dexterity score (8) and low armor class (8) indicate that it is not very good at dodging attacks. The creature is unaligned and relies on its special abilities and attacks to inflict damage and control the battlefield.</summary>
 
 <detail>
@@ -28,6 +30,7 @@ Overall, the Putrescent Slime is an intriguing and dangerous opponent for low-le
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Putrescent Slime
 
 *Medium* *Ooze* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) bludgeoning damage plus 3 (1d6) poison damage.
 
 
+</statblock>
 
 

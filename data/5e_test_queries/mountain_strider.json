@@ -1,0 +1,25 @@
+{
+    "name": "Mountain Strider",
+    "queries": [
+        {
+            "query": "large creature that excels in mountainous terrain and has a headbutt attack",
+            "variant": "big monster that does well in mountain areas and uses a headbutt move"
+        },
+        {
+            "query": "monstrosity with cold resistance that charges at enemies",
+            "variant": "creature type monstrosity resistant to cold that rushes at foes"
+        },
+        {
+            "query": "powerful beast with strong strength and thunderous bleat ability",
+            "variant": "strong monster with high strength and a loud bleat attack"
+        },
+        {
+            "query": "agile creature with advantage on saving throws against being knocked prone",
+            "variant": "nimble monster that gets bonuses on saves against being knocked down"
+        },
+        {
+            "query": "chaotic neutral monster known for its agility and impressive hit points",
+            "variant": "neutral-aligned creature famous for being agile and having high health"
+        }
+    ]
+}

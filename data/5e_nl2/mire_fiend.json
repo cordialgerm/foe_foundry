@@ -1,0 +1,56 @@
+{
+    "name": "Mire Fiend",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 94,
+    "ac": 22,
+    "srd": false,
+    "ac_description": null,
+    "cr": "5",
+    "movement": "40 feet on land, 40 feet swimming",
+    "role": null,
+    "tags": [
+        "demon",
+        "fiend",
+        "aquatic",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "resilient",
+        "amphibious"
+    ],
+    "description": "The Mire Fiend is a Medium fiend with a combination of sharp mandibles, a spear, and a stinger. Its body is adapted for both land and water with a sleek form.",
+    "memorable": "It possesses strong resilience to various damage types and can unleash a stunning sonic attack.",
+    "goals": "Engage in combat using its pack tactics and overwhelming foes with its ability to strike quickly and stealthily.",
+    "relations": "May work alongside other demons or fiends in ambush tactics.",
+    "environment": "Typically found in swampy and aquatic habitats.",
+    "strengths": "Resistant to cold, fire, and lightning damage; immune to poison; has a high stealth score in swamps.",
+    "weaknesses": "Dependent on allies for higher attack success; less effective in non-swampy terrains.",
+    "attacks": "Engages opponents with slashing damage from mandibles, piercing damage from a spear, and a dangerous stinger delivering poison.",
+    "most_powerful_ability": "Unleashes a stunning sonic attack in a wide cone, causing significant thunder damage and potentially stunning foes.",
+    "equipment": null,
+    "senses": "Possesses keen senses up to 10 feet, allowing it to detect hidden creatures effectively.",
+    "skills": "Has a noted stealth skill with a score of 21 in swampy terrains, making it hard to detect.",
+    "additional_information": [
+        "Can function both in air and water due to amphibious trait.",
+        "Magic resistance provides advantage on spell saves.",
+        "Uses acid retribution as a reactive ability when damaged."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swamp demon with resilience and agility",
+        "amphibious fiend with sonic attack",
+        "stealthy aquatic creature with poison stinger",
+        "medium demon that excels in swampy terrain",
+        "creature with multiple attack options in combat"
+    ]
+}

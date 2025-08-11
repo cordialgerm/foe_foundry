@@ -1,0 +1,50 @@
+{
+    "name": "King Kobold",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "kobold",
+        "spellcaster",
+        "cunning"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "tactical"
+    ],
+    "description": "The King Kobold is a small humanoid with exceptional dexterity, capable of evading attacks and utilizing both melee weapons and spellcasting.",
+    "memorable": "Its strategic use of Cunning Action and spellcasting makes it a dangerous foe in combat.",
+    "goals": "To lead its kin in skirmishes and protect its territory with cunning tactics.",
+    "relations": "Often found in groups with other kobolds, it may command lesser kobolds and allies in battle.",
+    "environment": "Commonly found in underground lairs or cave systems, often in mountainous or hilly terrain.",
+    "strengths": "Exceptional Dexterity (+5) allows it to be evasive; its spellcasting enhances its versatility in battle.",
+    "weaknesses": "Sunlight Sensitivity causes disadvantage on attack rolls and Perception checks while in direct sunlight.",
+    "attacks": "Attacks with shortswords and a hand crossbow, utilizing multiattack for additional damage.",
+    "most_powerful_ability": "Evasion allows it to take no damage from certain area attacks, showcasing its high mobility.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see well in low light.",
+    "skills": "Excels in deception, insight, intimidation, and persuasion, making it formidable in social interactions.",
+    "additional_information": [
+        "Pack Tactics grants advantage on attacks with allies nearby.",
+        "Can use Sneak Attack for extra damage under favorable conditions.",
+        "4th-level spellcaster with a diverse spell selection.",
+        "Mage armor increases its AC to 18 for better protection.",
+        "Cunning Action enhances its mobility in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": "4th-level spellcaster with access to spells such as fire bolt, grease, and invisibility.",
+    "test_queries": [
+        "cunning small spellcaster with ambush tactics",
+        "kobold leader with sneaky abilities and spells",
+        "tactical humanoid with high dexterity and intelligence",
+        "King Kobold with sunlight sensitivity and evasion",
+        "spellcasting monster with pack tactics and deception"
+    ]
+}

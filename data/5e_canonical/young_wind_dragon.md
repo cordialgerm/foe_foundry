@@ -1,6 +1,8 @@
 <MonsterName/>Young Wind Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Young Wind Dragon is a large, chaotic neutral creature that embodies the elemental power of storms and winds. With a formidable presence in combat, it boasts high physical attributes, including strong strength and constitution, making it a tough opponent both physically and through its unique abilities. It has a good armor class of 16, allowing it to withstand attacks efficiently, and an impressive pool of hit points totaling 123, which translates to a substantial survivability in battles. The dragon's speed is exceptional, boasting a walking speed of 90 feet and the ability to fly at 30 feet. However, it does have weaknesses; while it has immunity to lightning damage, it only resists cold damage. Overall, the Young Wind Dragon serves as a powerful enemy in battle, showcasing abilities that manipulate storm and wind effects to both damage and control the battlefield.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Young Wind Dragon takes multiple actions due to its Multiattack f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Wind Dragon
 
 *Large* *Dragon* *Chaotic Neutral*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage.
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 - **Tempest Breath (Recharge 5–6):** The dragon exhales a blast of stormy wind in a 30-foot cone. Each creature in that area must make a DC 15 Strength saving throw. On a failure, a creature takes 27 (6d8) bludgeoning damage and is pushed up to 15 feet away from the dragon and knocked prone. On a success, a creature takes half the damage and isn’t pushed or knocked prone. Unprotected flames, such as torches, in the area are extinguished, and protected flames, such as those in lanterns, have a 50 percent chance of being extinguished.
+</statblock>
 
 

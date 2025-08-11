@@ -1,0 +1,25 @@
+{
+    "name": "Life Broker",
+    "queries": [
+        {
+            "query": "fey creature that drains life and manipulates energy",
+            "variant": "fey being that manipulates energy and drains life"
+        },
+        {
+            "query": "powerful fey with necrotic attacks and high Constitution",
+            "variant": "strong fey with high Constitution and necrotic damage"
+        },
+        {
+            "query": "tactical life-draining monster that can read lifespan",
+            "variant": "tactical monster that reads lifespan and drains life"
+        },
+        {
+            "query": "creature with the ability to gain temporary hit points from foes",
+            "variant": "being that gains temp hp from enemy life force"
+        },
+        {
+            "query": "life-manipulating fey that is lawful neutral",
+            "variant": "lawful neutral fey that manipulates life"
+        }
+    ]
+}

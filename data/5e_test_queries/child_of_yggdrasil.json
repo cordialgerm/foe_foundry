@@ -1,0 +1,25 @@
+{
+    "name": "Child of Yggdrasil",
+    "queries": [
+        {
+            "query": "large creature with keen smell and forest camouflage",
+            "variant": "large monster that has keen sense of smell and can hide in forests"
+        },
+        {
+            "query": "neutral evil aberration that can destroy objects and deals acid damage",
+            "variant": "neutral evil monster that destroys items and inflicts acid damage"
+        },
+        {
+            "query": "monster with high wisdom and vulnerability to fire",
+            "variant": "creature that has high perception and is weak to fire damage"
+        },
+        {
+            "query": "child of yggdrasil abilities and large size",
+            "variant": "ymgdrasil's child features and large stature"
+        },
+        {
+            "query": "destructive creature in forest terrain with stealth",
+            "variant": "destructive monster found in woods that excels at stealth"
+        }
+    ]
+}

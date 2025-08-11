@@ -1,0 +1,55 @@
+{
+    "name": "Stone Guardian",
+    "creature_type": "Construct",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 178,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "guardian",
+        "construct",
+        "bludgeoning",
+        "magical resistance"
+    ],
+    "adjectives": [
+        "powerful",
+        "robust",
+        "durable",
+        "magically resistant"
+    ],
+    "description": "The Stone Guardian is a formidable large construct, notable for its colossal size and stone-like exterior, which grants it exceptional physical defenses.",
+    "memorable": "Its ability to resist magic and its immutable form make it a near-unstoppable force in battle.",
+    "goals": "To serve and protect a designated area or master, engaging in combat to eliminate threats.",
+    "relations": "Often found guarding ruins, temples, or serving as sentinels for powerful wizards.",
+    "environment": "Typically found in ancient ruins, magical locations, or sites of significance.",
+    "strengths": "High damage output with its melee attacks and resistance to spells.",
+    "weaknesses": "Low Dexterity and social skills limit its effectiveness in agile situations or negotiations.",
+    "attacks": "Can execute powerful melee slam attacks and ranged rock throws, dealing substantial bludgeoning damage.",
+    "most_powerful_ability": "The Slow ability can significantly restrict multiple opponents' actions, adding tactical control to its arsenal.",
+    "equipment": "null",
+    "senses": "The Stone Guardian has darkvision up to 120 feet.",
+    "skills": "null",
+    "additional_information": [
+        "Magic resistance grants advantage on spell saves.",
+        "Immutable form makes it immune to physical alterations.",
+        "Does not require air, food, or sleep due to Constructed Nature.",
+        "Can perform multiple attacks per turn.",
+        "Targeted slowing ability can affect multiple creatures at once."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful guardian that resists magic",
+        "large construct immune to manipulation",
+        "magical sentinel that slows opponents",
+        "stone creature with high damage output",
+        "durable guardian found in ruins"
+    ]
+}

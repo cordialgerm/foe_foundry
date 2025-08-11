@@ -1,0 +1,25 @@
+{
+    "name": "Devil Shark",
+    "queries": [
+        {
+            "query": "gargantuan aquatic monster with high cold resistance",
+            "variant": "big water monster that is highly resistant to cold"
+        },
+        {
+            "query": "aquatic creature with magic resistance and blood frenzy ability",
+            "variant": "water beast that has blood frenzy and resists magic"
+        },
+        {
+            "query": "predatory shark that can command other sharks and swallow prey",
+            "variant": "shark monster that swallows prey and can command nearby sharks"
+        },
+        {
+            "query": "neutral evil predator with devastating bite attack underwater",
+            "variant": "evil underwater predator with a powerful bite attack"
+        },
+        {
+            "query": "monster that thrives in water and has telepathy within 120 feet",
+            "variant": "creature that lives in water and uses telepathy within 120 ft"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Giant, Thursir Armorer",
+    "creature_type": "Giant",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 138,
+    "ac": 19,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "lawful",
+        "powerful"
+    ],
+    "description": "This large giant wears robust splint armor and carries a shield, making it stand out in combat. Its strength is remarkable, and it possesses a sturdy presence backed by formidable armor.",
+    "memorable": "Its ability to reduce its own AC significantly when critically hit adds a unique strategic element to encounters.",
+    "goals": "Engage in combat, protect its territory, and demonstrate strength.",
+    "relations": "Might be encountered with other giants or creatures of evil alignment.",
+    "environment": "Typically found in mountainous regions or areas inhabited by giants.",
+    "strengths": "Exceptional strength and hit points make it a tough opponent in melee combat.",
+    "weaknesses": "Low dexterity results in poor agility, making it less effective in avoiding attacks.",
+    "attacks": "Utilizes a multiattack feature with a combination of powerful Battleaxe strikes and a Shield Bash to knock enemies prone.",
+    "most_powerful_ability": "Flinging Smash, an area attack that can knock back multiple enemies.",
+    "equipment": "Wears splint armor and carries a shield and battleaxe.",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in the dark.",
+    "skills": "Has a good perception skill that helps it remain aware of its surroundings.",
+    "additional_information": [
+        "Can inscribe Runic Armor to retaliate against melee attackers.",
+        "Harness Dwarven Soul provides tactical advantages in combat.",
+        "Low charisma limits its social effectiveness.",
+        "Exceptional constitution aids in resisting effects.",
+        "Armor design can be exploited by skilled smiths."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large armored giant with area attack",
+        "giant with splitting armor and strong melee",
+        "powerful giant that knocks enemies prone",
+        "giant engaged in combat with formidable armor",
+        "tough lawful evil giant with unique abilities"
+    ]
+}

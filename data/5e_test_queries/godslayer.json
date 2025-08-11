@@ -1,0 +1,25 @@
+{
+    "name": "Godslayer",
+    "queries": [
+        {
+            "query": "huge construct that targets gods with powerful attacks",
+            "variant": "huge creature construct that attacks gods with strong strikes"
+        },
+        {
+            "query": "monster immune to mind-reading and has high hit points",
+            "variant": "creature resistant to mind reading with a large amount of hit points"
+        },
+        {
+            "query": "powerful being that can teleport and uses glyphs in combat",
+            "variant": "strong entity that teleports and employs glyphs during battle"
+        },
+        {
+            "query": "mechanical giant that can negate spells and deal double damage to structures",
+            "variant": "large mechanical creature that can reflect spells and inflict twice the damage to buildings"
+        },
+        {
+            "query": "unstoppable construct that overwhelms foes with despair and pain",
+            "variant": "indestructible being that incapacitates enemies with despair and suffering"
+        }
+    ]
+}

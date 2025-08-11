@@ -1,0 +1,25 @@
+{
+    "name": "Doom Creeper",
+    "queries": [
+        {
+            "query": "small plant monster with magical abilities that can debilitate enemies",
+            "variant": "small plant creature with abilities that are magical and can disable foes"
+        },
+        {
+            "query": "creature with blindsight that excels in dexterity and can climb",
+            "variant": "being that has blindsight, is good at dexterity, and has climbing abilities"
+        },
+        {
+            "query": "Doom Creeper abilities for incapacitating and frightening targets",
+            "variant": "Doom Creeper powers for terrifying and incapacitating foes"
+        },
+        {
+            "query": "plant creature resistant to bludgeoning damage that embodies cold vulnerability",
+            "variant": "this plant being that resists bludgeoning damage and is vulnerable to cold"
+        },
+        {
+            "query": "monster with multiple attacks using Decaying Vine and a glowing purple beam",
+            "variant": "creature that has multiple vine attacks and shoots a purple magical beam"
+        }
+    ]
+}

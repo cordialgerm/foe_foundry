@@ -1,0 +1,25 @@
+{
+    "name": "Fraughashar",
+    "queries": [
+        {
+            "query": "small fey creature that excels in icy terrains",
+            "variant": "fey creature that is small and excels on icy terrains"
+        },
+        {
+            "query": "neutral evil monster with cold damage immunity",
+            "variant": "cold damage immune monster with neutral evil alignment"
+        },
+        {
+            "query": "agile monster that uses frost attacks and is good at stealth",
+            "variant": "stealthy monster that is agile and uses frost attacks"
+        },
+        {
+            "query": "creature that moves easily on ice and has low charisma",
+            "variant": "creature that has low charisma and easy movement on ice"
+        },
+        {
+            "query": "monster with quick attacks and a walking speed of 25 feet",
+            "variant": "quick attacking monster with a speed of 25 feet walking"
+        }
+    ]
+}

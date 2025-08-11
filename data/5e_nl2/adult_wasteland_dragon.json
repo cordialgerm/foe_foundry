@@ -1,0 +1,49 @@
+{
+    "name": "Adult Wasteland Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 225,
+    "ac": 18,
+    "srd": false,
+    "cr": "17",
+    "movement": "burrow 30 ft., climb 40 ft., fly 70 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "wasteland",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "menacing"
+    ],
+    "description": "The Adult Wasteland Dragon is a massive dragon with a chaotic and intimidating presence, characterized by its formidable size and natural armor. It exhibits a powerful physique capable of inflicting devastating damage and is known for its warping breath attack.",
+    "memorable": "Its ability to create fear through its Frightful Presence and its powerful Warped Energy Breath makes it a memorable and terrifying antagonist.",
+    "goals": "To dominate its territory and instill fear in any who dare approach.",
+    "relations": "Could be encountered alongside other dragons or as a ruler of lesser creatures in the wasteland.",
+    "environment": "Typically found in desolate wastelands or ruined landscapes.",
+    "strengths": "High hit points, substantial melee damage output, and resistance to certain damage types make it a challenging foe.",
+    "weaknesses": "Relatively low Dexterity limits its agility in combat.",
+    "attacks": "Employs powerful melee attacks with its bite and claws, alongside a devastating tail swipe.",
+    "most_powerful_ability": "Warped Energy Breath delivers a line attack that can decimate groups of adventurers.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect unseen foes.",
+    "skills": "Specialized in Perception and Stealth, enabling it to detect hidden enemies and move silently.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on saving throws it would otherwise fail.",
+        "Creates a fear-inducing atmosphere with its Frightful Presence ability.",
+        "Can use legendary actions to adapt its attacks and reposition during combat."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing wasteland dragon",
+        "powerful dragon antagonist",
+        "flying dragon in desolate landscapes",
+        "chaotic evil dragon with breath weapon",
+        "huge dragon capable of instilling fear"
+    ]
+}

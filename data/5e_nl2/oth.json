@@ -1,0 +1,53 @@
+{
+    "name": "Oth",
+    "creature_type": "Aberration",
+    "alignment": "lawful neutral",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "climb 10 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "spellcaster",
+        "blinding"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "resilient"
+    ],
+    "description": "Oth is a Large Aberration with remarkable resilience, possessing solid natural armor. It is capable of adopting traits that enhance its combat versatility, either as a Dripping Arcanist or a Paladin of Shoth.",
+    "memorable": "Oth can choose between powerful spellcasting and blinding enemies with sacred light, making it a multifaceted threat.",
+    "goals": "Oth serves its purpose based on its chosen trait\u2014either wielding potent magic or shielding allies with sacred light.",
+    "relations": "Related to the Shoth, Oth may encounter creatures of similar or allied nature.",
+    "environment": "Usually found in diverse terrains, adaptable to various combat environments.",
+    "strengths": "Resistances to acid, cold, and fire damage provide it with an edge against elemental attacks.",
+    "weaknesses": "Average Dexterity limits its evasiveness in combat scenarios.",
+    "attacks": "Oth can make multiattack with oozing slam, dealing bludgeoning and additional acid damage, or wield a greatsword for higher slashing damage.",
+    "most_powerful_ability": "The ability to cast fireball once a day allows Oth to deliver significant area damage.",
+    "equipment": null,
+    "senses": "Oth has blindsight up to 60 feet and a passive perception of 15, enhancing its awareness of surroundings.",
+    "skills": "Oth is proficient in persuasion, allowing it to influence others significantly.",
+    "additional_information": [
+        "Amorphous trait allows movement through narrow spaces without squeezing.",
+        "Can merge hit points with other Shoth allies to increase survivability.",
+        "Capable of blinding nearby foes with its Paladin of Shoth trait.",
+        "Includes potent spellcasting abilities with verbal components only.",
+        "Strong Charisma makes Oth a compelling figure in both combat and social interactions."
+    ],
+    "damage_types": [
+        "fire",
+        "acid"
+    ],
+    "spellcasting": "Oth can cast various spells, notably fire bolt and fireball, relying on its high Charisma for spellcasting.",
+    "test_queries": [
+        "large creature with spellcasting abilities",
+        "monster that can blind enemies",
+        "versatile aberration with strong resistance",
+        "creature that merges hit points with allies",
+        "amorphous monster that can squeeze through tight spaces"
+    ]
+}

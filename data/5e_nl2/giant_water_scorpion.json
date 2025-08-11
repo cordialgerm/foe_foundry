@@ -1,0 +1,51 @@
+{
+    "name": "Giant Water Scorpion",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 93,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "swim 30 ft, walk 20 ft",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "stealth"
+    ],
+    "adjectives": [
+        "formidable",
+        "poisonous",
+        "agile"
+    ],
+    "description": "A large scorpion that thrives in water, equipped with natural armor and a deadly proboscis.",
+    "memorable": "Its ability to inject poison and reduce the Strength of its prey makes it a lethal ambush predator.",
+    "goals": "To hunt and ambush prey in its aquatic habitat.",
+    "relations": "May be encountered in areas populated by other aquatic beasts.",
+    "environment": "Aquatic environments such as lakes, rivers, and swamps.",
+    "strengths": "Good mobility in water and the ability to deal significant damage through its poisonous attacks.",
+    "weaknesses": "Very low intelligence, limiting its tactical capabilities.",
+    "attacks": "Multiattack with claws and a dangerous proboscis that can severely weaken foes.",
+    "most_powerful_ability": "Poison Injection, which deals extra poison damage and can reduce the Strength of its targets.",
+    "senses": "Blindsight allows it to sense its surroundings without sight, adding to its stealthy predatory nature.",
+    "skills": "Proficient in Stealth, enhancing its ability to ambush prey underwater.",
+    "additional_information": [
+        "Can hold its breath for up to one hour.",
+        "Uses its tail as a breathing tube while swimming.",
+        "Advantage on stealth checks underwater due to underwater camouflage.",
+        "Grapples smaller foes, hindering their movements.",
+        "Can kill targets by reducing their Strength to zero."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large poisonous water predator",
+        "scorpion that hunts in water",
+        "stealthy aquatic ambush creature",
+        "monster that can drown its prey",
+        "giant scorpion with poisonous attacks"
+    ]
+}

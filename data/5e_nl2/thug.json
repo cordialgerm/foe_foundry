@@ -1,0 +1,56 @@
+{
+    "name": "Thug",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any non-good alignment",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 11,
+    "srd": true,
+    "ac_description": "leather armor",
+    "cr": "1",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "enforcer",
+        "criminal",
+        "intimidator",
+        "melee combatant"
+    ],
+    "adjectives": [
+        "brutal",
+        "ruthless",
+        "aggressive"
+    ],
+    "description": "A medium humanoid often on the front lines of crime, equipped with brass knuckles for melee combat and a heavy crossbow for ranged attacks. Typically found wearing leather armor.",
+    "memorable": "Thugs excel in the use of brute force and intimidation, with abilities that allow them to incapacitate foes in battle.",
+    "goals": "To overpower and intimidate opponents, serving crime lords or mercenary groups.",
+    "relations": "Often works alongside other Thugs or brutish allies in criminal enterprises.",
+    "environment": "Typically found in the underbelly of cities or as part of raiding parties.",
+    "strengths": "High melee damage output, strong intimidation skills, and ability to incapacitate foes.",
+    "weaknesses": "Limited versatility outside of combat and vulnerable to ranged attacks.",
+    "attacks": "Uses multiattack with brass knuckles for increased damage potential and has a heavy crossbow for ranged options.",
+    "most_powerful_ability": "Brutal ability allows melee attacks to deal an extra die of damage, significantly enhancing threat level.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses proficiency in intimidation, aiding in coercive social interactions.",
+    "additional_information": [
+        "Uses multiattack to enhance damage output.",
+        "Often engages in close combat to utilize brute strength.",
+        "Advantage on attack rolls against foes if allies are nearby.",
+        "Employs tactical maneuvering with abilities like Sucker Punch.",
+        "Less effective when isolated from allies."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "brutal enforcer in leather armor",
+        "intimidating melee creature with crossbow",
+        "criminal thug using brute force",
+        "mercenary with high damage melee attacks",
+        "ruthless thug incapacitating enemies"
+    ]
+}

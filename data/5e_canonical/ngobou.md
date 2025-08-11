@@ -1,6 +1,8 @@
 <MonsterName/>Ngobou</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Ngobou is a large, unaligned beast that embodies the might and ferocity of nature. With a formidable challenge rating of 5, it serves as a significant adversary in combat scenarios. This creature has a robust armor class of 15 due to its natural armor, complemented by a substantial pool of hit points totaling 102. The Ngobou excels in physical confrontation, boasting exceptional strength and constitution, allowing it to deal considerable damage while absorbing hits effectively. However, its dexterity is notably poor, which detracts from its agility in combat situations. As a beast that has a specific vendetta against elephants, its abilities and attacks are particularly devastating when engaging these creatures.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of offensive actions, the Ngobou can perform a Gore attack as a melee w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ngobou
 
 *Large* *Beast* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Gore:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 27 (4d10 + 5) piercing damage.
 - **Stomp:** Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 18 (3d8 + 5) bludgeoning damage.
+</statblock>
 
 

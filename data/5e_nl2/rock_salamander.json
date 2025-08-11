@@ -1,0 +1,53 @@
+{
+    "name": "Rock Salamander",
+    "creature_type": "Elemental",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "20 ft. walking, burrowing, and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "stealth",
+        "ambush",
+        "rocky terrain"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "stealthy",
+        "adaptable"
+    ],
+    "description": "The Rock Salamander is a tiny elemental creature, agile and stealthy, capable of moving through rocky environments with ease. It has a thin, elongated body which blends in with rocky surroundings, enabling it to hide effectively.",
+    "memorable": "Unique abilities like Earth Glide and Stone Camouflage make it a formidable opponent in rocky terrains.",
+    "goals": "To ambush intruders in its rocky environment and manipulate stone for tactical advantages.",
+    "relations": "Often found in rocky areas, it may be encountered alongside other elemental creatures or in the service of earth deities.",
+    "environment": "Typically resides in rocky environments or caves.",
+    "strengths": "Immunity to poison and several debilitating conditions makes it a resilient foe.",
+    "weaknesses": "Very low Strength and Charisma scores limit its combat ability and social interactions.",
+    "attacks": "It can perform a melee bite attack dealing 6 piercing damage within a 5-foot range.",
+    "most_powerful_ability": "Earth Glide allows it to burrow silently through stone, providing tactical options for ambushes.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, allowing it to sense vibrations in the ground up to 60 feet away.",
+    "skills": "Has a perception skill modifier of +1, indicating an average level of awareness.",
+    "additional_information": [
+        "Can manipulate stone to create tactical effects like knocking opponents prone or restraining them.",
+        "Grants advantage on Dexterity (Stealth) checks in rocky terrain.",
+        "Can climb difficult stone surfaces without needing an ability check.",
+        "Resilient to exhaustion, paralysis, petrification, poison, and unconsciousness."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy tiny elemental with rock manipulation",
+        "creature that burrows silently through stone",
+        "ambush creature in rocky terrain",
+        "small rock creature immune to poison",
+        "agile salamander that can climb walls"
+    ]
+}

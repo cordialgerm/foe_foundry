@@ -1,0 +1,50 @@
+{
+    "name": "Mi-Go",
+    "creature_type": "Plant",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 95,
+    "ac": 17,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 60 ft. fly 30 ft.",
+    "role": "null",
+    "tags": [
+        "plant",
+        "undead",
+        "psychic"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "intelligent"
+    ],
+    "description": "The Mi-Go is a formidable plant creature with high Intelligence and Constitution. It moves swiftly on the ground and can also fly, enhancing its combat tactics.",
+    "memorable": "Its ability to unleash deadly spores upon death makes the Mi-Go a particularly threatening adversary.",
+    "goals": "Its goals revolve around survival without typical needs and potentially seeking starlight for sustenance.",
+    "relations": "It may be encountered with other alien entities or creatures of the void.",
+    "environment": "Typically found in areas with exposure to starlight or otherworldly locations.",
+    "strengths": "High Dexterity and notable damage resistances against cold and radiant damage make it durable.",
+    "weaknesses": "Relies on minimal starlight exposure, which could limit its presence in dark environments.",
+    "attacks": "Can perform Multiattacks with claws or psychic bolts, dealing significant slashing and psychic damage.",
+    "most_powerful_ability": "The 'Spore Burst' ability can incapacitate multiple foes while dealing poison damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet and darkvision up to 120 feet, along with a passive Perception of 15.",
+    "skills": "Notably skilled in Arcana, Deception, and Stealth, allowing for effective use of its abilities.",
+    "additional_information": [
+        "Grapples targets upon successful claw attacks if they are large or smaller.",
+        "Survives without air, food, or sleep, requiring minimal starlight exposure.",
+        "Can communicate in Common and Void Speech."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "alien plant creature with deadly spores",
+        "mid-level creature that can fly and poison",
+        "Mi-Go characteristics and combat abilities",
+        "intelligent creature with psychic attacks",
+        "creature that survives without air or food"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Weasel",
+    "queries": [
+        {
+            "query": "small fast mammal that lives in forests",
+            "variant": "tiny quick mammal found in woods"
+        },
+        {
+            "query": "agile creature with keen senses that hunts rodents",
+            "variant": "swift animal with sharp senses that preys on small animals"
+        },
+        {
+            "query": "stealthy hunter that can perceive hidden threats",
+            "variant": "sneaky predator effective at detecting concealed dangers"
+        },
+        {
+            "query": "tiny beast known for its bite attack and theft ability",
+            "variant": "small creature famous for its biting ability and stealing skills"
+        },
+        {
+            "query": "weasel habitats in grasslands and forests with heightened senses",
+            "variant": "weasel environments in meadows and woods with sharp hearing and smell"
+        }
+    ]
+}

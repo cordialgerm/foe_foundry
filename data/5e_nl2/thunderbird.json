@@ -1,0 +1,52 @@
+{
+    "name": "Thunderbird",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 57,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 80 ft.",
+    "role": "Artillery",
+    "tags": [
+        "lightning",
+        "aerial",
+        "beast"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "swift"
+    ],
+    "description": "The Thunderbird is a large creature known for its powerful lightning abilities, soaring through the skies with impressive speed and grace. It possesses keen sight and storm sight, allowing it to excel in its surroundings even during adverse weather.",
+    "memorable": "The ability to unleash devastating lightning strikes coupled with its agile aerial maneuvers makes the Thunderbird a formidable threat.",
+    "goals": "Typically seeks to dominate aerial combat and control the battlefield with its lightning abilities.",
+    "relations": "Can be found in the company of other aerial predators or as part of storm-related phenomena.",
+    "environment": "Often inhabits stormy regions or high-altitude areas.",
+    "strengths": "Exceptional strength and constitution, with powerful melee and elemental attacks.",
+    "weaknesses": "Relatively low Armor Class makes it vulnerable to physical attacks.",
+    "attacks": "Multiattack featuring a beak strike and talons, along with its powerful Lightning Strike attack.",
+    "most_powerful_ability": "Lightning Strike allows it to unleash a devastating blast of lightning to incapacitate foes.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 15, enhanced by its keen sight.",
+    "skills": "Proficient in Perception skill, enhancing its awareness of threats.",
+    "additional_information": [
+        "Can use Lightning Strike after 6 rounds of recharge.",
+        "It can deal increased damage while grappling targets from a height.",
+        "Functions effectively in storms without visibility hindrance.",
+        "Possesses a remarkable speed of 80 ft. in flight.",
+        "Strong physical attacks complement its elemental capabilities."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful lightning monster that flies",
+        "large creature with keen eyesight and storms",
+        "aerial predator that uses lightning attacks",
+        "swift monster soaring through stormy skies",
+        "lightning breath attacker that grapples foes"
+    ]
+}

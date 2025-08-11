@@ -1,0 +1,48 @@
+{
+    "name": "Kobold, Drake Rider",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 71,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "Kobold",
+        "rider",
+        "mounted combatant"
+    ],
+    "adjectives": [
+        "nimble",
+        "strategic",
+        "tactical"
+    ],
+    "description": "The Kobold Drake Rider is a small humanoid wearing studded leather armor and has a bond with a Med or larger drake mount, enhancing its effectiveness in battle.",
+    "memorable": "The ability to command a drake mount and perform tactical maneuvers makes it a striking opponent on the battlefield.",
+    "goals": "To engage in mounted combat and utilize the unique tactics available with its drake mount.",
+    "relations": "Typically seen accompanying drakes or other kobolds in a tactical formation.",
+    "environment": "Commonly found in regions where drakes inhabit, such as mountainous or wilderness areas.",
+    "strengths": "Strong melee capabilities and tactical versatility while mounted.",
+    "weaknesses": "Disadvantage on attack rolls and Wisdom (Perception) checks in sunlight.",
+    "attacks": "Performs multiple spear attacks and can command its drake mount for additional damage.",
+    "most_powerful_ability": "Trained Tactics allows for advanced maneuvers that can incapacitate or severely damage foes.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses a passive Perception of 12, indicating its awareness is average.",
+    "additional_information": [
+        "Can\u2019t be charmed or frightened while mounted.",
+        "Has a failsafe descent mechanism to avoid fall damage.",
+        "Can perform tactical maneuvers that allow the mount to move through enemy spaces without provoking opportunity attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid riding a drake",
+        "nimble tactical kobold drake rider",
+        "drake mounted combat tactics",
+        "mount that can't be charmed or frightened",
+        "kobold with strategic drake maneuvers"
+    ]
+}

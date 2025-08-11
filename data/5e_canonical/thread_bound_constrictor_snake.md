@@ -1,6 +1,8 @@
 <MonsterName/>Thread-Bound Constrictor Snake</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>12</AC>
+<HP/>60</HP>
 <summary>The Thread-Bound Constrictor Snake is a Huge Construct creature known for its formidable physical strength and unique abilities that make it a challenging opponent in combat. With an Armor Class of 12 and a total of 60 hit points, this creature can endure a fair amount of damage before being defeated. It serves as a powerful guardian or combatant, boasting a good strength score of 19, which contributes to its ability to deal substantial bludgeoning damage with its constrict attack. However, it has very poor intelligence and charisma scores, indicating that it is not capable of complex thought or social interactions. The snake is immune to poison and has resistances to common physical attack types, making it difficult to inflict damage onto it using nonmagical means. Its weaknesses are highlighted by its susceptibility to antimagic fields which can incapacitate it, showcasing a notable reliance on magical enhancements.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its actions, the Thread-Bound Constrictor Snake can perform a Constrict atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thread-Bound Constrictor Snake
 
 *Huge* *Construct* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage and the creature is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.
 
 
+</statblock>
 
 

@@ -1,0 +1,58 @@
+{
+    "name": "Ningyo",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 77,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 60 ft., swim 60 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "manipulative",
+        "tricky"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "small",
+        "piercing",
+        "poisonous"
+    ],
+    "description": "The Ningyo is a small aberration with exceptional agility, capable of flying and swimming. Its body is characterized by barbed tentacles used for attacks.",
+    "memorable": "Its ability to redirect attacks causes chaos in combat, making it a unique threat.",
+    "goals": "To manipulate opponents and create confusion in aquatic environments.",
+    "relations": "Often encountered with other aquatic creatures, possibly serving more powerful beings.",
+    "environment": "Primarily found in aquatic settings such as oceans or rivers.",
+    "strengths": "High Dexterity allows for swift movements and effective evasions. It has multiple attacks and can redirect damage to foes.",
+    "weaknesses": "Low Strength limits physical capabilities.",
+    "attacks": "Can perform multiple barbed tentacle attacks that deal both piercing and poison damage.",
+    "most_powerful_ability": "Curse of Ill Fortune turns missed attacks into opportunities for chaos by redirecting them.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet, allowing it to see in low-light conditions.",
+    "skills": "Proficient in deception, insight, and perception, enabling it to navigate social encounters and detect threats.",
+    "additional_information": [
+        "Resistant to acid, cold, fire, necrotic, and poison damage.",
+        "Can breathe underwater and hold breath for 1 hour.",
+        "Uses 'Share Pain' to protect itself while crippling opponents.",
+        "Employs ambush tactics to confuse adventurers.",
+        "Primarily operates in marine environments."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small aquatic creature with tentacles",
+        "manipulative monster that redirects attacks",
+        "dangerous marine creature with poison attacks",
+        "cunning aberration found in water",
+        "creature that causes chaos in combat"
+    ]
+}

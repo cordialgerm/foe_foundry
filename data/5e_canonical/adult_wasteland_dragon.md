@@ -1,6 +1,8 @@
 <MonsterName/>Adult Wasteland Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>225</HP>
 <summary>The Adult Wasteland Dragon is a formidable creature known for its chaotic evil alignment. This huge dragon serves as a powerful antagonist in any campaign, capable of decimating foes with its impressive physical abilities and devastating breath attack. It boasts notable strengths, including high hit points, substantial melee damage output, a powerful breath weapon, and resistance to certain forms of damage, making it a challenging opponent. However, its relatively low Dexterity and reliance on strength and constitution can be considered weaknesses. This dragon's ability to instill fear among its enemies is complemented by its legendary resistances, making it a powerful force on the battlefield.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the dragon has three legendary actions it can use to manipulate th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Wasteland Dragon
 
 *Huge* *Dragon* *chaotic evil*
@@ -63,5 +66,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 18 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

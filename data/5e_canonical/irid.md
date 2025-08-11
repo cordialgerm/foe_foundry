@@ -1,6 +1,8 @@
 <MonsterName/>Irid</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>20</HP>
 <summary>The Irid is a Tiny Celestial creature that embodies chaos, aligning itself with a chaotic neutral disposition. Known for its playful nature, it leverages its abilities to manipulate scenarios to its advantage, often employing deception and charm in interactions. With a challenge rating of 1, the Irid is not overly formidable in combat but compensates with clever tactics and magical prowess. Its strengths include good Dexterity and Charisma scores, granting it significant bonuses in stealth and social interactions. However, it has poor Strength and average Constitution, making it weak in physical confrontations and resistance to damage. Notably, the Irid possesses abilities that enhance its survivability, such as Magic Resistance and conditions immunity.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Irid can perform a Multiattack, using its Gossip ability followed
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Irid
 
 *Tiny* *Celestial* *chaotic neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The irid magically turns invisible until it attacks or uses Gossip, or until its concentration ends (as if concentrating on a spell). Any equipment the irid wears or carries is invisible with it.
 
 
+</statblock>
 
 

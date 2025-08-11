@@ -1,0 +1,50 @@
+{
+    "name": "Alabroza",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 10 ft., fly 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "bloodthirsty",
+        "flying creature",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "insatiable",
+        "mobile",
+        "dangerous"
+    ],
+    "description": "The Alabroza is a small monstrosity known for its insatiable thirst for blood. It is characterized by its ability to fly with notable mobility, allowing it to engage in combat effectively.",
+    "memorable": "Its dependency on blood or milk adds a strategic challenge in encounters, as failing to consume enough results in exhaustion.",
+    "goals": "To seek out and consume fresh blood or milk to sustain its life.",
+    "relations": "Related to other bloodthirsty creatures; it may encounter predators or victims drawn by its hunting instinct.",
+    "environment": "Often found in areas where it can easily ambush prey, particularly near water sources or livestock.",
+    "strengths": "High mobility and the ability to inflict ongoing damage through its Draining Fangs attack.",
+    "weaknesses": "Must consume blood or milk daily; if it fails to do so, it suffers exhaustion.",
+    "attacks": "The Alabroza can perform multiattacks with its sharp Talons and a dangerous Draining Fangs attack that allows it to attach to its prey.",
+    "most_powerful_ability": "Bloodthirsty ability mandates that it must consume blood or milk every 24 hours, linking its sustenance to its effectiveness in combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "The Alabroza has a perception skill of +2, allowing it to detect hidden creatures or objects moderately well.",
+    "additional_information": [
+        "The Draining Fangs attack causes continual damage while attached to a target.",
+        "It can detach from a target under specific conditions, providing tactical options in combat.",
+        "Although having good Dexterity and Strength, its Intelligence is remarkably low.",
+        "The Alabroza lacks the ability to communicate despite understanding Abyssal.",
+        "With only moderate hit points, strategic play is essential to make the most of its capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "bloodthirsty flying monstrosity",
+        "creature that drains blood",
+        "mobile bloodsucker",
+        "small flying monster",
+        "blood-dependent creature"
+    ]
+}

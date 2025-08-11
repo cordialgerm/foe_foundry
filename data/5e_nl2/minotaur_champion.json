@@ -1,0 +1,51 @@
+{
+    "name": "Minotaur Champion",
+    "creature_type": "Monstrosity",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 262,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "melee",
+        "fire"
+    ],
+    "adjectives": [
+        "formidable",
+        "aggressive",
+        "tactical"
+    ],
+    "description": "A large, imposing creature with exceptional strength and resilience, featuring powerful melee attacks and fiery breath.",
+    "memorable": "Its ability to control the battlefield with a charging gore attack and devastating Fire Breath makes it a fearsome opponent.",
+    "goals": "To dominate in combat and assert its power over enemies.",
+    "relations": "Often found in lairs or mazes, may serve as guardians or leaders among other minotaurs.",
+    "environment": "Typically found in labyrinths, dungeons, or areas where it can exercise its strength and tactics effectively.",
+    "strengths": "Exceptional strength and constitution, high durability, access to powerful area attacks.",
+    "weaknesses": "Vulnerable to ranged attacks due to low dexterity and potential tactical exploitation.",
+    "attacks": "Gores with sharp horns and slashes with a greataxe; can unleash a fiery breath attack in a wide cone.",
+    "most_powerful_ability": "Fire Breath allows it to deal massive area damage, affecting multiple foes at once.",
+    "senses": "Possesses keen perception with a +8 modifier, able to notice hidden creatures and subtle changes.",
+    "skills": "Skilled in perception, allowing it to detect invisible foes and environmental changes easily.",
+    "additional_information": [
+        "Can remember routes perfectly due to Labyrinthine Recall.",
+        "Has Magic Resistance, improving its defenses against spells.",
+        "Gains temporary hit points with Roar of Triumph after defeating an enemy.",
+        "Highly effective as a front-line combatant with numerous tactical advantages.",
+        "Strong offensive capabilities, including a multiattack consisting of a gore and greataxe strikes."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with fire breath attack",
+        "strong melee creature that dominates battles",
+        "aggressive minotaur that uses tactical attacks",
+        "formidable labyrinth guardian with powerful strikes",
+        "fire-breathing monstrosity with high resilience"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Giant Ant Queen",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "insect",
+        "queen",
+        "beast"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "toxic"
+    ],
+    "description": "The Giant Ant Queen is a large beast with formidable strength and resilience, characterized by her robust body and commanding presence at the apex of her colony.",
+    "memorable": "Her special abilities bolster her minions and her devastating sting can inflict considerable poison damage.",
+    "goals": "To protect and lead her colony of giant ants while ensuring their survival and dominance in their ecosystem.",
+    "relations": "Typically found surrounded by swarms of giant ants who follow her commands.",
+    "environment": "Ant hills, underground tunnels, or forested areas where her colony thrives.",
+    "strengths": "High hit points, strong melee attacks, and ability to bolster allies.",
+    "weaknesses": "Low Intelligence, which limits her cognitive strategies.",
+    "attacks": "Multiattack with two powerful bites that can restrain foes and a toxic sting that delivers significant poison damage.",
+    "most_powerful_ability": "Queen\u2019s Scent grants advantage to allied giant ants on attack rolls against creatures that threaten her.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, enabling her to sense creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "High Strength score of 17 contributes to her physical might.",
+        "Ability to grapple foes with her bite attack.",
+        "Relatively fast movement speed of 40 feet.",
+        "Very low Intelligence score of 2 indicates a lack of cognitive ability.",
+        "Queen's role is crucial for the colony's survival and effectiveness in battles."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "toxic queen ant with large size",
+        "powerful insect queen with minion advantage",
+        "giant ant with devastating poison attack",
+        "large beast surrounded by giant ants",
+        "Giant Ant Queen abilities and attacks"
+    ]
+}

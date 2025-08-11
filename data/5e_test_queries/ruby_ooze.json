@@ -1,0 +1,25 @@
+{
+    "name": "Ruby Ooze",
+    "queries": [
+        {
+            "query": "corrosive red jelly that can camouflage as rubies",
+            "variant": "red jelly that can camouflage as rubies and corrosive"
+        },
+        {
+            "query": "hazardous ooze that can spray acid and climb on walls",
+            "variant": "ooze that climbs walls and sprays acid, hazardous"
+        },
+        {
+            "query": "medium ooze with high hit points and lightning vulnerability",
+            "variant": "medium ooze with high health and vulnerable to lightning"
+        },
+        {
+            "query": "creature that inflicts acid damage and ambushes unsuspecting foes",
+            "variant": "creature that ambushes and deals acid damage to unsuspecting targets"
+        },
+        {
+            "query": "dangerous ooze that degrades weapons and restrains with acid",
+            "variant": "dangerous ooze that restrains with acid and damages weapons"
+        }
+    ]
+}

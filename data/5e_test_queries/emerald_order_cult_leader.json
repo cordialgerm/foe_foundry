@@ -1,0 +1,25 @@
+{
+    "name": "Emerald Order Cult Leader",
+    "queries": [
+        {
+            "query": "powerful humanoid with divine magic and tactical abilities",
+            "variant": "humanoid cult leader with divine spells and tactical skills"
+        },
+        {
+            "query": "cult leader capable of enhancing allies and dealing radiant damage",
+            "variant": "leader of the cult that can boost allies and inflicts radiant damage"
+        },
+        {
+            "query": "lawful evil humanoid that uses wisdom for spellcasting",
+            "variant": "humanoid aligned with lawful evil that casts spells using wisdom"
+        },
+        {
+            "query": "cult leader with Blessed Weapons and good saving throws",
+            "variant": "leader of the cult that wields Blessed Weapons and has excellent saving throws"
+        },
+        {
+            "query": "medium humanoid with darkvision that can speak multiple languages",
+            "variant": "humanoid of medium size with darkvision and fluent in multiple languages"
+        }
+    ]
+}

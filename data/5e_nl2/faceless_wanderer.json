@@ -1,0 +1,51 @@
+{
+    "name": "Faceless Wanderer",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 30 ft., hover",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "memory manipulation",
+        "regeneration"
+    ],
+    "adjectives": [
+        "faceless",
+        "mysterious",
+        "manipulative"
+    ],
+    "description": "The Faceless Wanderer appears as a shifting, formless entity, lacking any facial features or distinct form, making it unsettling to behold. It has a ghostly presence and floats through the air, leaving a chilling aura.",
+    "memorable": "Notably drains memories and can cause targets to forget encounters with it, posing a unique threat to adventurers.",
+    "goals": "To manipulate and drain the memories of its victims, gaining an upper hand in encounters.",
+    "relations": "Often serves as a herald of chaos or madness, related to creatures that manipulate the mind.",
+    "environment": "Typically found in dark, mysterious locations, often in realms of nightmares or places affected by magic.",
+    "strengths": "Immune to poison and psychic damage, can regenerate health, and drains memories from sua victims.",
+    "weaknesses": "Vulnerable due to a relatively low Armor Class of 13 and can be caught off guard easily.",
+    "attacks": "Uses claws to inflict slashing and psychic damage, and employs the Memory Drain ability to cause significant harm.",
+    "most_powerful_ability": "The Memory Drain ability can reduce an enemy's Intelligence and even create new Faceless Wanderers from slain humanoids.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures without needing to see them.",
+    "skills": null,
+    "additional_information": [
+        "Regenerates 5 hit points at the start of its turn unless recently interacted with.",
+        "Can manipulate memories to disorient foes.",
+        "Appears in ghostly vapor form when reduced to 0 hit points.",
+        "Drains both life and intellect, making it a fearsome predator.",
+        "Leaves a chilling aura that unsettles those nearby."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "unsettling faceless creature that drains memories",
+        "medium aberration with memory draining abilities",
+        "creature that regenerates health and drains intelligence",
+        "haunting entity lurking in dark places",
+        "memory manipulation monster that causes amnesia"
+    ]
+}

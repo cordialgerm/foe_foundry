@@ -1,0 +1,57 @@
+{
+    "name": "Bugbear",
+    "creature_type": "Humanoid",
+    "creature_subtype": "goblinoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 16,
+    "srd": true,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Ambusher",
+    "tags": [
+        "goblinoid",
+        "stealthy",
+        "ambush",
+        "brutish",
+        "melee attacker"
+    ],
+    "adjectives": [
+        "hulking",
+        "shaggy",
+        "brutish",
+        "cunning"
+    ],
+    "description": "A hulking goblinoid creature with long arms and shaggy fur, known for its brutish appearance.",
+    "memorable": "Known for ambushing prey from the shadows and using brutal grappling tactics.",
+    "goals": "Typically raids and pillages weaker settlements, often forming small bands.",
+    "relations": "Related to other goblinoids and often found with smaller goblin allies.",
+    "environment": "Caves or abandoned ruins.",
+    "strengths": "Excels in melee combat and stealth, able to ambush surprised foes effectively.",
+    "weaknesses": "Average intelligence and charisma, limiting social interactions.",
+    "attacks": "Uses melee attacks like Strangle and Maul, and can throw Javelins.",
+    "most_powerful_ability": "Surprise Attack inflicts extra damage when striking a surprised target.",
+    "equipment": "Typically armed with clubs, axes, or spiked weapons.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Proficient in stealth and athletics, enhancing its ambush tactics.",
+    "additional_information": [
+        "Known for their cruel nature and violent behavior.",
+        "Brute ability adds extra damage on melee attacks.",
+        "Can grapple targets, restricting their breathing.",
+        "Master of stealth, able to hide effectively.",
+        "Possesses a significant tactical advantage when ambushing."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "hulking ambush predator in caves",
+        "shaggy brute that attacks from shadows",
+        "cunning goblinoid with stealth tactics",
+        "violent creature armed with spiked weapons",
+        "medium humanoid known for surprise attacks"
+    ]
+}

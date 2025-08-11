@@ -1,0 +1,51 @@
+{
+    "name": "Skull Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "burrow 10 ft., fly 60 ft., walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "undead",
+        "necrotic"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "tactical"
+    ],
+    "description": "A Medium-sized Dragon with a mix of strength and agility, characterized by a skull-like head and noxious breath.",
+    "memorable": "Its Necrotic Breath can instantly kill weakened foes, adding a lethal aspect to its combat style.",
+    "goals": "Hunt prey, attack intruders, and defend its territory.",
+    "relations": "Possibly associates with other draconic creatures or undead beings.",
+    "environment": "Typically found in dark, damp areas or ruins.",
+    "strengths": "High mobility with flying and burrowing capabilities; strong melee and special attacks.",
+    "weaknesses": "Vulnerability to radiant damage and disadvantage in sunlight.",
+    "attacks": "Multiattack option with two bite attacks, dealing significant piercing damage, and a devastating area attack with Necrotic Breath.",
+    "most_powerful_ability": "Necrotic Breath, which can kill instantly if it drops a creature to 0 hit points.",
+    "senses": "Keen Smell grants advantage on perception checks related to smell.",
+    "skills": "Skilled in stealth and perception, allowing it to move quietly and detect hidden threats.",
+    "additional_information": [
+        "Immune to necrotic damage and poisoned condition",
+        "Resistant to poison damage",
+        "Low intelligence limits tactical versatility",
+        "Good at evasive maneuvers due to high Dexterity",
+        "Can intimidate foes effectively"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile dragon with necrotic breath attack",
+        "medium dragon that hunts in dark environments",
+        "skull-like dragon vulnerable to radiant damage",
+        "dragon with strong bite and stealth abilities",
+        "noxious breath attack dragon"
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Stellar Rorqual",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 165,
+    "ac": 14,
+    "srd": false,
+    "cr": "12",
+    "movement": "fly 80 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "cosmic",
+        "gargantuan",
+        "flying",
+        "swimming"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "cosmic",
+        "powerful",
+        "unique"
+    ],
+    "description": "The Stellar Rorqual is a gargantuan aberration characterized by a cosmic theme, with formidable melee capabilities and an imposing presence. Its mouth functions as a secure compartment for creatures, providing total cover from outside attacks.",
+    "memorable": "This creature can transport itself and companions to different planes, making it a powerful ally or foe, while its explosive death can devastate the area around it.",
+    "goals": "To navigate the cosmos, potentially capturing or sheltering creatures within its mouth compartment.",
+    "relations": "Possibly related to other cosmic creatures or aberrations, may serve as a guardian of its environment.",
+    "environment": "Typically found navigating the stars, in intergalactic voids, or near cosmic phenomena.",
+    "strengths": "High physical attack damage, impressive hit points, and unique abilities like teleportation and energy bursts.",
+    "weaknesses": "Vulnerable to force damage, and its low Dexterity score makes it less evasive.",
+    "attacks": "Utilizes bludgeoning attacks with a Head Smash and Tail Slap, both delivering significant damage, alongside a ranged Energy Burst that deals force damage.",
+    "most_powerful_ability": "The Stellar Burst ability releases catastrophic energy upon its demise, inflicting damage in a wide radius.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 360 feet, allowing it to detect its surroundings without relying on vision.",
+    "skills": "Has a high perception skill, providing it with exceptional situational awareness during encounters.",
+    "additional_information": [
+        "Mouth Compartment offers total cover and environmental control for creatures inside.",
+        "Planar Dive ability allows strategic teleportation to various planes.",
+        "Blindsight enhances its combat awareness even in total darkness.",
+        "Weakness to force damage can be exploited in combat.",
+        "Highly mobile with significant flying and swimming speeds."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan cosmic monster with energy burst",
+        "powerful aberration that can transport to other planes",
+        "creature with a mouth compartment for safety",
+        "flying monster with explosive death abilities",
+        "unique creature known for its cosmic theme"
+    ]
+}

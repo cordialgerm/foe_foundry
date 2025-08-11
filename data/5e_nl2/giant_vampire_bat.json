@@ -1,0 +1,51 @@
+{
+    "name": "Giant Vampire Bat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "flies swiftly at 60 feet and walks slowly at 10 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "vampire",
+        "flying"
+    ],
+    "adjectives": [
+        "large",
+        "ferocious",
+        "stealthy"
+    ],
+    "description": "The Giant Vampire Bat is a large beast with a formidable wingspan, capable of swift flight. Its powerful bite delivers both piercing and necrotic damage, allowing it to recover health from its prey.",
+    "memorable": "It grapples and drains the life from its victims, making it a lingering threat in combat.",
+    "goals": "Primarily hunts for blood to sustain itself, seeking out weakened or incapacitated foes.",
+    "relations": "May be found in caves or dark forests, often in areas with other nocturnal creatures.",
+    "environment": "Commonly inhabits dark caves or forests where it can roost and find prey.",
+    "strengths": "High Strength and Dexterity make it agile and powerful in combat.",
+    "weaknesses": "Very low Intelligence and Charisma make it ineffective in social situations.",
+    "attacks": "Bite attack that deals piercing and necrotic damage, capable of grappling its target.",
+    "most_powerful_ability": "Regains health by dealing necrotic damage with its bite while grappling.",
+    "senses": "Possesses blindsight within 60 feet, allowing it to sense its environment without sight, though it is hindered if deafened.",
+    "skills": "Utilizes keen hearing which grants it advantage on Wisdom (Perception) checks related to sound.",
+    "additional_information": [
+        "Can fly quickly, dodging attacks effectively",
+        "Grapples victims to prevent them from escaping",
+        "Offers moderate challenge for adventurers",
+        "Excellent ambusher due to stealth and flight",
+        "Can only regain health through its necrotic bite"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large flying blood-draining creature",
+        "agile beast with deadly bite attack",
+        "nocturnal vampire bat that recovers health",
+        "stealthy creature that grapples its prey",
+        "swift flying beast found in dark caves"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Drop Bear",
+    "queries": [
+        {
+            "query": "large ambush beast in forest environments",
+            "variant": "big ambushing creature in wooded areas"
+        },
+        {
+            "query": "creature that can climb and deals extra damage from falling",
+            "variant": "monster that climbs and does more damage when it drops"
+        },
+        {
+            "query": "beast with high strength and keen smell abilities",
+            "variant": "strong creature with exceptional smell senses"
+        },
+        {
+            "query": "quick climbing monster with melee attacks",
+            "variant": "fast climbing beast that has melee attack abilities"
+        },
+        {
+            "query": "forest-dwelling creature that grapples smaller targets",
+            "variant": "wooded monster that can seize smaller foes"
+        }
+    ]
+}

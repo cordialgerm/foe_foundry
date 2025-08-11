@@ -1,0 +1,25 @@
+{
+    "name": "Cactus Drake",
+    "queries": [
+        {
+            "query": "medium dragon that can disguise as a cactus and has regeneration",
+            "variant": "medium dragon that can hide as a cactus and has health regeneration"
+        },
+        {
+            "query": "dragon with thorny body and the ability to provide nourishment",
+            "variant": "dragon that has a thorny body and can offer food and water"
+        },
+        {
+            "query": "Cactus Drake with piercing thorn attacks and ambush tactics",
+            "variant": "Cactus Drake that uses thorn attacks and stealth ambush strategies"
+        },
+        {
+            "query": "cactus-like creature that deals area damage and has a regeneration ability",
+            "variant": "cactus resembling creature that does area damage and has ability to heal"
+        },
+        {
+            "query": "neutral good dragon with a climbing speed and unique feeding ability",
+            "variant": "good-aligned dragon that can climb and has a special feeding method"
+        }
+    ]
+}

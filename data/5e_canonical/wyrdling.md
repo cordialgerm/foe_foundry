@@ -1,6 +1,8 @@
 <MonsterName/>Wyrdling</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>40</HP>
 <summary>The Wyrdling is a Medium humanoid creature known for its unique connection to fate and intuition. With a Challenge Rating of 1, it serves as an intriguing adversary or ally in various campaigns. The Wyrdling possesses a moderate Armor Class of 12 and 40 hit points, which makes it resilient without being excessively tough. Its most notable strengths lie in its high Wisdom score, which allows it to excel in perception-related checks, and a range of psychic abilities that can inflict damage or manipulate fate itself. While its physical attributes are relatively unremarkable, the Wyrdling compensates with powerful abilities and spells, making it a character agent of uncertainty on the battlefield. Its weaknesses include lower physical defenses and hit points compared to more formidable foes.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a reaction, the Wyrdling can use "Call on Fate" when it is attacked by a visi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyrdling
 
 *Medium humanoid*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 
 - **Call on Fate** . When the wyrdling is attacked by a creature it can see, it can pluck the strands of fate around the creature, imposing disadvantage on that attack roll. If the attack misses, the wyrdling or one friendly creature it can see within 30 feet of it has advantage on the next attack roll it makes against the attacker before the end of the wyrdling’s next turn.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Rakshasa</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>110</HP>
 <summary>A Rakshasa is a powerful, fiendish creature with the body of a human and the head of a tiger, often with its hands reversed. Rakshasas are known for their mastery of illusion and manipulation, using their innate magical abilities to blend into mortal society and twist events to their favor. They are highly intelligent and cunning, often appearing as noble rulers or wealthy merchants. Though they can use their claws in combat, Rakshasas prefer to manipulate from behind the scenes, relying on their magic and deception to outwit their enemies. They are nearly impervious to most mortal weapons, making them dangerous foes.</summary>
 
 <summary>The Rakshasa is a Medium fiend known for its cunning abilities and magical prowess. With an Armor Class of 16 and a substantial 161 hit points, it presents a significant challenge to adventurers, rated at a Challenge Rating of 13, equating to 10,000 experience points. This creature is particularly adept at manipulation and deception, utilizing its high Charisma score of 20, which offers an exceptional modifier of +5 in social interactions. It is skilled in deception and insight, boasting values of +10 and +8 respectively. While it is resistant to bludgeoning and slashing damage from nonmagical sources, its abilities offer it further advantages in combat and social manipulation. Notably, the Rakshasa can shapeshift, making it a formidable foe in both direct confrontation and strategic play.</summary>
@@ -47,6 +49,7 @@ In summary, the Rakshasa is a potent and deceptive adversary that utilizes its m
 
 Source: 5e_srd
 
+<statblock>
 ## Rakshasa
 
 *Medium fiend, lawful evil*
@@ -87,7 +90,8 @@ At will: *detect thoughts*, *disguise self*, *mage hand*, *minor illusion*
 
 ***Multiattack***. The rakshasa makes two claw attacks.
 
-***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 9 (2d6+2) slashing damage, and the target is cursed if it is a creature. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a *remove curse* spell or similar magic.
+***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 9 (2d6+2) slashing damage, and the target is cursed if it is a creature. The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a *remove curse* spell or similar magic.</statblock>
+
 
 
 
@@ -95,6 +99,7 @@ At will: *detect thoughts*, *disguise self*, *mage hand*, *minor illusion*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rakshasa
 
 *Medium* *Fiend*
@@ -138,6 +143,7 @@ Source: 5e_artisinal_monsters
 - **Counterproposal:** The rakshasa uses Sweet Promises on a creature that attacked it or attempted to target it with a spell.
 
 
+</statblock>
 
 
 
@@ -146,6 +152,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rakshasa
 
 *Medium fiend*
@@ -185,5 +192,6 @@ Source: 5e_artisinal_monsters
 - **Charming Gaze.** The rakshasa turns its gaze toward one creature it can see within 60 feet of it. If the target can see the rakshasa, the target must succeed on a DC 18 CHA save or be charmed for 1 minute. A charmed creature can repeat the save at the end of each of its turns, ending the effect on itself on a success. The rakshasa can have up to three creatures charmed in this way at a time.
 - **Illusory Appearance.** The rakshasa covers itself and anything it is wearing or carrying with a magical illusion that makes it look like another creature of its general size and Humanoid shape. The illusion ends if the rakshasa takes a bonus action to end it or if the rakshasa dies.
 
+</statblock>
 
 

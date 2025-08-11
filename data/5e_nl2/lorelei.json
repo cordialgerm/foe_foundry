@@ -1,0 +1,52 @@
+{
+    "name": "Lorelei",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "charming",
+        "manipulative",
+        "psychic"
+    ],
+    "adjectives": [
+        "seductive",
+        "dangerous",
+        "chaotic",
+        "versatile"
+    ],
+    "description": "The Lorelei is a medium-sized fey with enchanting abilities and a captivating presence, characterized by her alluring cunning and charming demeanor.",
+    "memorable": "Her ability to charm and incapacitate foes while healing herself through her attacks makes her particularly lethal.",
+    "goals": "To manipulate and dominate her opponents using charm effects and psychic attacks.",
+    "relations": "Typically encountered in areas near water, where she can utilize her amphibious abilities.",
+    "environment": "Often found near lakes, rivers, or other bodies of water.",
+    "strengths": "High Dexterity and Charisma, skilled in deception and manipulation.",
+    "weaknesses": "Average physical strength limits her direct melee combat effectiveness.",
+    "attacks": "Employs strategies involving Stunning Glances, Psychic Blasts, and her Corrupted Kiss for necrotic damage.",
+    "most_powerful_ability": "Alluring Presence, which can incapacitate and charm opponents to move towards her.",
+    "senses": "Has darkvision allowing her to see in darkness up to 60 feet.",
+    "skills": "Exceptional skills in Deception, Performance, and Persuasion, all at +8.",
+    "additional_information": [
+        "Immunity to difficult terrain when in water due to Free Water Spirit ability.",
+        "Can escape from nonmagical restraints easily with minimal movement.",
+        "Regains health equal to necrotic damage dealt through attacks."
+    ],
+    "damage_types": [
+        "psychic",
+        "necrotic"
+    ],
+    "spellcasting": "Uses psychic magic and charm effects, with abilities that control and incapacitate foes.",
+    "test_queries": [
+        "charming fey creature near water",
+        "seductive fey that manipulates enemies",
+        "psychic attack fey with healing abilities",
+        "creature that charms humanoids to approach",
+        "dangerous fey with stunning glance ability"
+    ]
+}

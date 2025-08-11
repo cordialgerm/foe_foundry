@@ -1,0 +1,25 @@
+{
+    "name": "Diplodocus",
+    "queries": [
+        {
+            "query": "gargantuan dinosaur with powerful stomp attacks",
+            "variant": "gargantuan dino with strong stomp attacks"
+        },
+        {
+            "query": "massive beast that struggles with agility but has high strength",
+            "variant": "huge beast that has low agility but high strength"
+        },
+        {
+            "query": "large creature with a tail attack that can knock opponents prone",
+            "variant": "big creature that uses a tail attack to knock enemies down"
+        },
+        {
+            "query": "tank-like creature with significant damage absorption",
+            "variant": "tankish creature that can absorb a lot of damage"
+        },
+        {
+            "query": "slow but powerful dinosaur that dominates the battlefield",
+            "variant": "slow yet strong dinosaur that rules the combat area"
+        }
+    ]
+}

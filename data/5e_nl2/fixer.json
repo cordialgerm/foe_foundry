@@ -1,0 +1,52 @@
+{
+    "name": "Fixer",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Support",
+    "tags": [
+        "humanoid",
+        "magical support",
+        "utility"
+    ],
+    "adjectives": [
+        "stealthy",
+        "perceptive",
+        "supportive"
+    ],
+    "description": "The Fixer is a Medium humanoid clad in leather armor, displaying agility through its dexterity. With a composed demeanor, it seems knowledgeable in various techniques and magical abilities.",
+    "memorable": "The Fixer's ability to conceal itself and allies from magical scrutiny is particularly noteworthy, making it a formidable presence in strategic encounters.",
+    "goals": "To protect allies, influence the battlefield, and maintain secrecy through magical means.",
+    "relations": "Could be found alongside other stealthy or supportive allies, working in tandem with rogues or spellcasters.",
+    "environment": "Often found in urban settings or areas requiring subterfuge and support roles.",
+    "strengths": "Notable skills in stealth and perception, along with the ability to perform a powerful cleansing ritual.",
+    "weaknesses": "Average durability and melee combat abilities, with low strength and no formidable offensive capabilities.",
+    "attacks": "Utilizes dual weapon attacks with shortswords or a sling, combining piercing damage with poison.",
+    "most_powerful_ability": "The Ritual Cleansing ability effectively renders an area immune to divination magic for an extended period.",
+    "equipment": "Wields shortswords and can operate a hand crossbow.",
+    "senses": "Passive perception of 14 allows it to detect hidden threats effectively.",
+    "skills": "Proficient in perception, enhancing its ability to notice stealthy or hidden creatures.",
+    "additional_information": [
+        "Can cast prestidigitation and unseen servant spells at will for added utility.",
+        "Practices strategic gameplay, often positioning itself to benefit allies.",
+        "Known for using tools and techniques to influence battlefield dynamics.",
+        "Engages in deception and stealth, acting as a scout or infiltrator.",
+        "Balancing offensive and defensive capabilities while primarily supporting allies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Has the ability to cast minor spells that provide utility in various situations.",
+    "test_queries": [
+        "stealthy humanoid with cleansing abilities",
+        "utility magician that aids allies",
+        "fixer that conceals from divination magic",
+        "agile support character with poison weapons",
+        "humanoid skilled in stealth and perception"
+    ]
+}

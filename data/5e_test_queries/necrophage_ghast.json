@@ -1,0 +1,25 @@
+{
+    "name": "Necrophage Ghast",
+    "queries": [
+        {
+            "query": "undead creature that emits a paralyzing stench and casts spells",
+            "variant": "undead monster that has a stench causing paralysis and uses magic"
+        },
+        {
+            "query": "chaotic evil ghast with poison immunity and necrotic resistance",
+            "variant": "evil chaotic ghast that is immune to poison and resistant to necrotic damage"
+        },
+        {
+            "query": "medium undead monster with high dexterity and spellcasting abilities",
+            "variant": "medium undead creature possessing high dexterity and the ability to cast spells"
+        },
+        {
+            "query": "ghast that can raise the dead and has high intelligence",
+            "variant": "ghast capable of animating dead bodies and has a strong intelligence stat"
+        },
+        {
+            "query": "living creature that suffers from disadvantage due to necrophage stench",
+            "variant": "creature affected by necrophage stench that leads to saving throw disadvantage"
+        }
+    ]
+}

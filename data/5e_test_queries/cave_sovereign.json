@@ -1,0 +1,25 @@
+{
+    "name": "Cave Sovereign",
+    "queries": [
+        {
+            "query": "huge aberration that can stun with its glowing antennae",
+            "variant": "big aberration with glowing antennae that stuns"
+        },
+        {
+            "query": "creature with telepathy and devastating psychic attacks",
+            "variant": "monster that communicates telepathically and has strong psychic attacks"
+        },
+        {
+            "query": "chaotic evil creature with high hit points and multiattack abilities",
+            "variant": "evil chaotic monster with a lot of hit points and multiple attacks"
+        },
+        {
+            "query": "Cave Sovereign's unique ability to consume souls",
+            "variant": "ability of Cave Sovereign to consume souls"
+        },
+        {
+            "query": "powerful creature with resistance to psychic damage and manipulation tactics",
+            "variant": "strong monster that resists psychic damage and uses manipulation"
+        }
+    ]
+}

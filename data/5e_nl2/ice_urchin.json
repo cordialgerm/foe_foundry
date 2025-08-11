@@ -1,0 +1,54 @@
+{
+    "name": "Ice Urchin",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., doubles speed on snow or ice",
+    "role": "Skirmisher",
+    "tags": [
+        "cold",
+        "vulnerable to fire",
+        "piercing damage"
+    ],
+    "adjectives": [
+        "vulnerable",
+        "spiny",
+        "fast on ice"
+    ],
+    "description": "The Ice Urchin is a large monstrosity with spiny features and an affinity for cold environments. Its icy body is covered in venomous spines that pose a threat to any who touch it.",
+    "memorable": "Its notable vulnerability to fire can incapacitate it, making encounters with flames particularly impactful.",
+    "goals": "The Ice Urchin typically thrives in icy terrain, where it can ambush prey while using its speed to evade threats.",
+    "relations": "Likely found alongside other cold-loving creatures or in frigid oceans.",
+    "environment": "Cold environments, specifically icy terrains and habitats.",
+    "strengths": "Excels in icy terrain with increased movement and agility; capable of inflicting both piercing and cold damage.",
+    "weaknesses": "Highly vulnerable to fire, which can frighten it and reduce its combat effectiveness.",
+    "attacks": "Can deliver piercing and cold damage through its melee Ice Spine and ranged Venomous Spine attacks.",
+    "most_powerful_ability": "The Ice Slide ability allows for rapid repositioning across snow and ice, making it a formidable skirmisher.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has average perception skills, making it capable but not skilled in noticing threats.",
+    "additional_information": [
+        "Upon taking fire damage, it suffers a temporary reduction in both AC and attack effectiveness.",
+        "Can use its Fear of Fire ability to become frightened of fire-based threats.",
+        "Regrows venomous spines after resting, ensuring it can attack from range multiple times.",
+        "Can inflict damage on melee attackers via its Spiny Defense ability.",
+        "Possesses an effective Strength score, allowing it to perform solid physical attacks."
+    ],
+    "damage_types": [
+        "cold",
+        "poison",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cold monster with venomous spines",
+        "ice creature that fears fire",
+        "large ice creature with quick movement",
+        "spiny ice monster that attacks from range",
+        "creature with increased speed on snow"
+    ]
+}

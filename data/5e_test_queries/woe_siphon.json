@@ -1,0 +1,25 @@
+{
+    "name": "Woe Siphon",
+    "queries": [
+        {
+            "query": "fey creature that drains life and turns invisible",
+            "variant": "fey monster that turns invisible and drains life"
+        },
+        {
+            "query": "medium fey that causes despair and has psychic attacks",
+            "variant": "medium fey with psychic attacks and causes despair"
+        },
+        {
+            "query": "creature with high strength that lives in the shadows",
+            "variant": "strong creature that dwells in shadows"
+        },
+        {
+            "query": "manipulative monster immune to charm and fear",
+            "variant": "manipulative creature that cannot be charmed or scared"
+        },
+        {
+            "query": "creature with darkvision that can sense intelligence",
+            "variant": "monster with darkvision that senses intelligence"
+        }
+    ]
+}

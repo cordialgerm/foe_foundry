@@ -1,0 +1,25 @@
+{
+    "name": "Flame Eater Swarm",
+    "queries": [
+        {
+            "query": "medium beast that consumes fire and has high dexterity",
+            "variant": "beast that is medium-sized, devours fire, and has good dexterity"
+        },
+        {
+            "query": "fire immune creature that thrives in flames",
+            "variant": "creature immune to fire that flourishes in flames"
+        },
+        {
+            "query": "swarm of tiny creatures that deal fire damage and extinguish flames",
+            "variant": "tiny creature swarm that extinguishes flames and inflicts fire damage"
+        },
+        {
+            "query": "nuisance monster for fire magic users that has swarm tactics",
+            "variant": "annoying monster for users of fire magic that utilizes swarm tactics"
+        },
+        {
+            "query": "tiny flame-consuming swarm that can move through tight spaces",
+            "variant": "small swarm that consumes flame and can navigate through narrow openings"
+        }
+    ]
+}

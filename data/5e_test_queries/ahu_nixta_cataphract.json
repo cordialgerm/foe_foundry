@@ -1,0 +1,25 @@
+{
+    "name": "Ahu-Nixta Cataphract",
+    "queries": [
+        {
+            "query": "mechanical creature that can fly and cast spells",
+            "variant": "mechanical monster that can fly and cast spells"
+        },
+        {
+            "query": "large aberration with clockwork armor and strong melee attacks",
+            "variant": "big aberration with clockwork armor and powerful melee attacks"
+        },
+        {
+            "query": "creature that is immune to fear and uses telekinesis",
+            "variant": "monster that is immune to fear and uses telekinesis"
+        },
+        {
+            "query": "tough monster with multiple forms of movement and magic",
+            "variant": "durable creature with various movement types and magic"
+        },
+        {
+            "query": "intelligent creature that manipulates objects and has low dexterity",
+            "variant": "smart monster that manipulates items and has poor dexterity"
+        }
+    ]
+}

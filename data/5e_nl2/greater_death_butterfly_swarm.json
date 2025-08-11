@@ -1,0 +1,50 @@
+{
+    "name": "Greater Death Butterfly Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 84,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft., fly 5 ft.",
+    "role": null,
+    "tags": [
+        "swarm",
+        "poison",
+        "undead immune"
+    ],
+    "adjectives": [
+        "beautiful",
+        "dangerous",
+        "evasive"
+    ],
+    "description": "A Huge swarm of butterflies, embodying a terrifying fusion of beauty and danger with vibrant wings.",
+    "memorable": "Its ability to affect undead creatures with poison makes it a unique threat.",
+    "goals": "To swarm enemies and inflict debilitating poison damage.",
+    "relations": "Can be encountered alongside undead foes.",
+    "environment": "Typically found in locations where undead roam.",
+    "strengths": "High Dexterity allows it to evade attacks, and immunity to various conditions enhances survivability.",
+    "weaknesses": "Vulnerable to cold and fire damage; low Strength hinders physical engagements.",
+    "attacks": "Can make two Bites attacks, dealing significant piercing and poison damage.",
+    "most_powerful_ability": "Potent Poison allows its attacks to affect even undead immune to poison.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Cannot regain hit points or gain temporary hit points.",
+        "Occupies the same space as creatures it attacks.",
+        "Weight of Wings ability can blind opponents and reduce their speed."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of beautiful dangerous butterflies",
+        "huge poison swarm that can blind",
+        "butterfly swarm with undead poison",
+        "dangerous swarm with piercing attacks",
+        "hunts enemies with debilitating poison"
+    ]
+}

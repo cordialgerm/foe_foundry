@@ -1,0 +1,25 @@
+{
+    "name": "Nightgaunt",
+    "queries": [
+        {
+            "query": "large lawful evil monster that hunts dreams and nightmares",
+            "variant": "huge lawful evil creature that hunts nightmares and dreams"
+        },
+        {
+            "query": "flying monster with strong stealth abilities and grappling attacks",
+            "variant": "flying creature that can grapple and has strong stealth abilities"
+        },
+        {
+            "query": "stealthy aberration that uses psychological terror in combat",
+            "variant": "sneaky aberration utilizing psychological terror during fights"
+        },
+        {
+            "query": "Nightgaunt's Baneful Presence ability and its combat tactics",
+            "variant": "Baneful Presence ability of the Nightgaunt and combat strategies"
+        },
+        {
+            "query": "creature with advantage on attack rolls when near allies",
+            "variant": "monster gaining advantage on attack rolls when allies are around"
+        }
+    ]
+}

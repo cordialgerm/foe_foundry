@@ -1,0 +1,25 @@
+{
+    "name": "Faerie Eater Troll",
+    "queries": [
+        {
+            "query": "large giant known for regeneration and charming enemies",
+            "variant": "large giant that is known for charming foes and its regeneration"
+        },
+        {
+            "query": "troll that controls severed limbs and has strong melee attacks",
+            "variant": "a troll with powerful melee abilities and the ability to control severed limbs"
+        },
+        {
+            "query": "tough giant with high Constitution and stealthy abilities",
+            "variant": "resilient giant that has good Constitution and skills in stealth"
+        },
+        {
+            "query": "creature with keen smell that is difficult to defeat unless damaged by fire or acid",
+            "variant": "monster with advantage on smell perception that's hard to beat without acid or fire damage"
+        },
+        {
+            "query": "Faerie Eater Troll combat tactics and regeneration ability",
+            "variant": "combat strategies of the Faerie Eater Troll and its healing traits"
+        }
+    ]
+}

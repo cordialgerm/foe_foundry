@@ -1,0 +1,50 @@
+{
+    "name": "Spurred Water Skate",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "beast",
+        "ambusher"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "grappling"
+    ],
+    "description": "The Spurred Water Skate is a large, agile beast that glides gracefully over water surfaces. It possesses sharp Stabbing Forelimbs that can grapple and restrain opponents, pulling them under water as a deadly tactic.",
+    "memorable": "The ability to traverse water effortlessly gives it a tactical edge in aquatic encounters, making it a challenging opponent for adventurers.",
+    "goals": "To ambush and incapacitate prey or intruders near water bodies.",
+    "relations": "Often found in company with other aquatic creatures or in environments near lakes and rivers.",
+    "environment": "Aquatic environments such as lakes, rivers, and coastal areas.",
+    "strengths": "High Dexterity allows for effective evasion and ambush tactics; ability to grapple opponents.",
+    "weaknesses": "Very low Intelligence and Charisma, limiting its problem-solving and social interaction.",
+    "attacks": "Stabbing Forelimbs deal 10 piercing damage and can grapple medium or smaller creatures.",
+    "most_powerful_ability": "Water Walker allows the creature to move across water like solid ground, enabling surprise attacks.",
+    "equipment": null,
+    "senses": "Passive Perception of 10, allowing it to notice its surroundings without significant advantages.",
+    "skills": null,
+    "additional_information": [
+        "Efficient at grappling and suffocating opponents underwater.",
+        "High mobility in aquatic combat scenarios.",
+        "Uses its terrain advantage effectively to ambush characters.",
+        "Lacks complex thought processes due to low Intelligence.",
+        "Can only grapple a limited number of creatures at once."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large beast that moves on water",
+        "agile creature with grappling abilities",
+        "monster ambushing from water surfaces",
+        "water-dwelling creature with deadly forelimbs",
+        "beast that can suffocate underwater"
+    ]
+}

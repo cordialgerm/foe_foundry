@@ -1,6 +1,8 @@
 <MonsterName/>Swamp Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Swamp Naga is a formidable Large Monstrosity that embodies the essence of the swamp with its lawful evil nature. With a well-rounded set of attributes, particularly high Strength and Dexterity, it excels in both combat and spellcasting. The Swamp Naga has a strong combat presence with an Armor Class of 15 and a substantial 102 hit points, making it a resilient opponent. Its Challenge Rating of 6 suggests that it poses a moderate challenge to a party of adventurers. Notably, it possesses the ability to regenerate after death and can command insects and serpents, making it a unique and challenging foe in its native habitat.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Swamp Naga is a cunning and dangerous creature, skilled in manipula
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swamp Naga
 
 *Large* *Monstrosity* *lawful evil*
@@ -72,5 +75,6 @@ Cantrips (at will): dancing lights, mage hand, message, poison spray
 - **Constrict:** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 14 (3d6 + 4) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the naga can’t constrict another target.
 
 
+</statblock>
 
 

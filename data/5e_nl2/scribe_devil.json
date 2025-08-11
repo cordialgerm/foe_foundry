@@ -1,0 +1,53 @@
+{
+    "name": "Scribe Devil",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walk, 30 ft. fly",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "devil",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "manipulative"
+    ],
+    "description": "The Scribe Devil is a cunning and malevolent fiend known for its exceptional intellect and ability to manipulate others. It has dark features and often cloaks itself in shadows, making it appear ominous.",
+    "memorable": "It can blind opponents with infernal ink and manipulate memories, providing a unique and dangerous combat experience.",
+    "goals": "To deceive, manipulate, and instill fear while accomplishing its dark objectives.",
+    "relations": "Often associated with other devils and fiends, it may have alliances with other malevolent entities.",
+    "environment": "Commonly found in dark, infernal realms or desolate areas where it can plot and scheme without interruption.",
+    "strengths": "Immune to fire and poison damage, with significant spellcasting abilities and tactical advantages in combat.",
+    "weaknesses": "Vulnerable to silvered weapons and magical attacks that exploit its defenses.",
+    "attacks": "Utilizes its claws for slashing damage and can inflict blindness with a tail attack that fills eyes with infernal ink.",
+    "most_powerful_ability": "Innate spellcasting enabling it to manipulate magic without components, including memory alteration.",
+    "equipment": null,
+    "senses": "Possesses Devil's Sight, allowing it to see through magical darkness.",
+    "skills": "Highly skilled in deception and insight, enabling it to manipulate and read others effectively.",
+    "additional_information": [
+        "Can cast detect magic and illusory script at will.",
+        "Benefits from magical resistance, enhancing its durability.",
+        "Can set traps using glyph of warding.",
+        "Capable of enforcing truth with zone of truth.",
+        "Claw attacks can inflict significant melee damage."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting with spell save DC of 15; can cast various spells to manipulate and deceive.",
+    "test_queries": [
+        "fiendish creature that casts spells and flies",
+        "lawful evil devil with memory alteration abilities",
+        "deceptive creature that inflicts blindness",
+        "cunning fiend skilled in manipulation and deceit",
+        "Scribe Devil abilities and tactics"
+    ]
+}

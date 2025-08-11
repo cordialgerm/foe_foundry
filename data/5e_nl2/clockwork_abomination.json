@@ -1,0 +1,52 @@
+{
+    "name": "Clockwork Abomination",
+    "creature_type": "Construct",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 76,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walking speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "mechanical",
+        "fire"
+    ],
+    "adjectives": [
+        "formidable",
+        "explosive",
+        "unyielding"
+    ],
+    "description": "The Clockwork Abomination is a large, humanoid construct with a powerful physique and an infernal power source. It features intricate mechanical components and an imposing presence.",
+    "memorable": "Its ability to explode upon destruction makes it a dangerous foe, threatening nearby enemies.",
+    "goals": "To serve its creator, engage in combat, and eliminate threats.",
+    "relations": "May be associated with other constructs or mechanical beings.",
+    "environment": "Typically found in industrial or arcane facilities where constructs are created or maintained.",
+    "strengths": "High offensive capabilities with strong melee attacks and area control through fire breath.",
+    "weaknesses": "Vulnerable to magical effects that can exploit its weaker dexterity save.",
+    "attacks": "Multiattack includes a powerful Bite dealing piercing and fire damage, and a Slam that causes bludgeoning damage.",
+    "most_powerful_ability": "Fire Breath allows it to unleash a damaging cone of flames affecting multiple targets.",
+    "equipment": null,
+    "senses": "Has darkvision with a passive perception of 13.",
+    "skills": "Proficient in Athletics and Stealth, demonstrating quite an agile nature despite being a construct.",
+    "additional_information": [
+        "Does not need air, food, drink, or sleep.",
+        "Immune to being charmed, exhausted, or frightened.",
+        "Can't be transformed by spells due to Immutable Form.",
+        "Advantage on saving throws against spells due to Magic Resistance.",
+        "Easily traverses difficult terrain without penalty."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical creature that breathes fire",
+        "large construct with explosive power",
+        "unyielding foe using fire attacks",
+        "bruiser that doesn't need food or sleep",
+        "clockwork monster with devastating breath attack"
+    ]
+}

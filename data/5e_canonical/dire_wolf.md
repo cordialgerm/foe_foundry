@@ -1,6 +1,8 @@
 <MonsterName/>Dire Wolf</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>37</HP>
 <summary>The Dire Wolf is an enormous and fearsome predator, resembling a much larger and more aggressive version of a common wolf. Standing as tall as a horse at the shoulder, with thick fur and muscular limbs, Dire Wolves are pack hunters that dominate their territories through sheer size and strength. Their powerful jaws can snap bones with ease, and their howls can be heard from great distances, signaling a coordinated attack with their pack. Though they are wild and savage, Dire Wolves are also intelligent and highly social, forming strong bonds with their pack members.</summary>
 
 <summary>The Dire Wolf is a formidable creature commonly found in various wilderness settings within D&D. As a large beast, it serves as both a fierce predator and a companion to other wolves, making it particularly dangerous when encountered in a pack. Its strengths include a high speed and powerful melee attacks, complemented by its exceptional senses which enhance its ability to locate prey. However, while it possesses decent hit points, it is still vulnerable to magic and ranged attacks. Its challenge rating of 1 indicates that it can be a noteworthy foe for low-level adventurers, especially when leveraging its special abilities in combat.</summary>
@@ -29,6 +31,7 @@ In terms of actions, the Dire Wolf's primary attack is its Bite. This melee weap
 
 Source: 5e_srd
 
+<statblock>
 ### Dire Wolf
 
 *Large beast, unaligned*
@@ -57,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</statblock>
+
 
 
 
@@ -65,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Wolf
 
 *Large* *Beast*
@@ -93,5 +98,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4+3) piercing damage. If the target is a creature  it makes a DC 13 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 

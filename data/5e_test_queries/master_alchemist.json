@@ -1,0 +1,25 @@
+{
+    "name": "Master Alchemist",
+    "queries": [
+        {
+            "query": "humanoid that creates poisonous clouds and heals allies",
+            "variant": "humanoid who makes poisonous clouds and heals allies"
+        },
+        {
+            "query": "medium alchemist with smoke abilities and high intelligence",
+            "variant": "medium alchemist with a smoke abilities and very high intelligence"
+        },
+        {
+            "query": "spellcaster who uses acid and fire damage with tactical control",
+            "variant": "spellcaster using acid and fire damage that has tactical control"
+        },
+        {
+            "query": "master alchemist skilled in alchemical effects and area control",
+            "variant": "master alchemist who excels at alchemical effects and area control"
+        },
+        {
+            "query": "creature with high hit points and disorienting vapor attacks",
+            "variant": "creature that has very high hit points and vapor attacks to disorient"
+        }
+    ]
+}

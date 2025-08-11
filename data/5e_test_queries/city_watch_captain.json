@@ -1,0 +1,25 @@
+{
+    "name": "City Watch Captain",
+    "queries": [
+        {
+            "query": "tactical humanoid leader with a chain shirt",
+            "variant": "humanoid leader in chain shirt with tactical abilities"
+        },
+        {
+            "query": "medium humanoid with high dexterity and initiative skills",
+            "variant": "humanoid with good initiative and dexterity characteristics"
+        },
+        {
+            "query": "watch captain that enhances teamwork and fights with a rapier",
+            "variant": "captain that uses a rapier and boosts team coordination"
+        },
+        {
+            "query": "combat efficient humanoid with multiattack and perception skills",
+            "variant": "humanoid with multiattack ability and good perception"
+        },
+        {
+            "query": "lawful alignment city defender with special abilities",
+            "variant": "city guardian with special skills and lawful alignment"
+        }
+    ]
+}

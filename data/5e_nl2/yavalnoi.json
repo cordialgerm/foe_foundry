@@ -1,0 +1,52 @@
+{
+    "name": "Yavalnoi",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 126,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 10 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "summoner",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "chaotic",
+        "menacing",
+        "powerful"
+    ],
+    "description": "The Yavalnoi is a large, aberrant creature known for its anchor-shaped organ atop its head and its aquatic nature. It has long, muscular limbs for swimming and is typically covered in a slick, hydrodynamic layer.",
+    "memorable": "Its ability to manipulate water and its Luminous Burst attack that outlines enemies make it a formidable opponent in aquatic battles.",
+    "goals": "Typically seeks to dominate its environment and any intruders, using both physical and magical means to achieve this.",
+    "relations": "May be encountered with giant crabs or giant octopuses that it summons with its Call of the Deep ability.",
+    "environment": "Usually found in aquatic or coastal regions.",
+    "strengths": "High hit points and damage resilience against cold, advanced melee attacks and extraordinary spellcasting capabilities.",
+    "weaknesses": "Limited movement speed on land, making it vulnerable when out of water.",
+    "attacks": "Utilizes multiattack with strong physical strikes including bites, claws, and a long-reaching tail.",
+    "most_powerful_ability": "Luminous Burst, which outlines enemies in blue light, preventing them from breathing underwater and granting advantages on attack rolls against them.",
+    "equipment": null,
+    "senses": "Possesses keen perception with a +6 modifier.",
+    "skills": "Strong constitution saving throw, indicating resilience against various effects.",
+    "additional_information": [
+        "Can breathe underwater due to its Water Breathing ability.",
+        "Innate spellcasting with spells like Ray of Enfeeblement and Control Water.",
+        "Can summon allies like giant crabs and giant octopuses for combat support.",
+        "Very good Constitution score, granting 126 hit points.",
+        "Challenging CR 6, presenting a significant threat to adventurers."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting with a spell save DC of 15, allowing it to cast spells without material components.",
+    "test_queries": [
+        "water manipulating elder creature",
+        "large aquatic monster with powerful spells",
+        "creature that outlines enemies in blue light",
+        "summoner of giant crabs and octopuses",
+        "chaotic evil giant aberration in coastal areas"
+    ]
+}

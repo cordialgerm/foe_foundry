@@ -1,0 +1,54 @@
+{
+    "name": "Ibexian",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "fire"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "chaotic",
+        "fiery"
+    ],
+    "description": "The Ibexian is a large fiend that embodies chaotic evil, characterized by its impressive speed and resilience. It boasts fiery attacks and excels in close combat, with a menacing presence and horned physique.",
+    "memorable": "Its ability to unleash fire upon taking damage and deal heavy fire damage with charge attacks makes it a dangerous foe.",
+    "goals": "To engage in combat and inflict chaos and destruction using its fiery powers.",
+    "relations": "May be found in the company of other chaotic fiends or evil creatures.",
+    "environment": "Often found in hellish or chaotic realms.",
+    "strengths": "Immunities to fire and poison damage, resistance to several elemental types, and high mobility.",
+    "weaknesses": "Vulnerable to magic attacks, with low intelligence and charisma, making it susceptible to strategic maneuvers.",
+    "attacks": "Can perform multiattack with ram and hooves combining bludgeoning and fire damage, along with explosive fire with its spit fire.",
+    "most_powerful_ability": "Pyroclasm allows it to unleash a devastating area of fire damage while moving through enemies.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive perception of 15, allowing it to detect threats effectively.",
+    "skills": "Has proficiency in perception, providing a reasonable degree of awareness of its surroundings.",
+    "additional_information": [
+        "Deals additional fire damage upon taking damage (Fiery Blood).",
+        "Gains advantage on attacks when allies are nearby (Pack Tactics).",
+        "Can push targets back and knock them prone with Fiery Charge.",
+        "Combines bludgeoning and fire damage in its physical attacks.",
+        "Capable of significant area damage with Pyroclasm."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fiend with fiery attacks",
+        "chaotic evil creature that charges",
+        "monster that deals damage when hit",
+        "fiery blood monster in hellish realms",
+        "dangerous fiend with area fire abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Alabaster Tree",
+    "queries": [
+        {
+            "query": "large celestial guardian of nature with radiant immunity",
+            "variant": "large guardian of nature celestial with immunity to radiant damage"
+        },
+        {
+            "query": "creature that protects good-aligned allies and leaves difficult terrain",
+            "variant": "creature that leaves difficult terrain and protects allies aligned with good"
+        },
+        {
+            "query": "strong tree monster that grapples and restrains foes",
+            "variant": "powerful tree-like monster that can grapple and restrain its enemies"
+        },
+        {
+            "query": "plant creature with abilities to bolster allies and detect alignment",
+            "variant": "creature with plant-like traits that can enhance allies and recognize alignment"
+        },
+        {
+            "query": "mighty being in oak form who can toss enemies and create clouds of needles",
+            "variant": "formidable creature that can throw foes in oak shape and unleash clouds of sharp needles"
+        }
+    ]
+}

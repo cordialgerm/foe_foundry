@@ -1,0 +1,53 @@
+{
+    "name": "Revenant",
+    "creature_type": "Undead",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet walk speed",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "vengeful",
+        "relentless"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "pursuing",
+        "terrifying"
+    ],
+    "description": "The Revenant is a powerful undead creature driven by vengeance, with an imposing physical presence and glowing eyes.",
+    "memorable": "It can resurrect itself by inhabiting a dead humanoid corpse and is relentless in pursuing its target.",
+    "goals": "Its primary goal is to exact revenge on those who wronged it in life.",
+    "relations": "It may serve or be related to other vengeful undead or spirits seeking retribution.",
+    "environment": "Revenants can be found in places tied to their previous life, often haunting locations of their demise.",
+    "strengths": "High strength and charisma, immunity to common conditions, and great resilience to magical effects.",
+    "weaknesses": "Vulnerable to radiant damage and has low intelligence, limiting its problem-solving capabilities.",
+    "attacks": "It performs Strangle attacks that can grapple and incapacitate targets, in addition to using psychic powers to instill fear.",
+    "most_powerful_ability": "Fearsome Pursuit allows it to track a specific target relentlessly, ignoring difficult terrain.",
+    "equipment": null,
+    "senses": "The Revenant possesses darkvision up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage and effects.",
+        "Magic Resistance grants advantage on spell saving throws.",
+        "Rapid Recovery allows it to regain hit points if undamaged for one minute.",
+        "Relentless ability allows resurrection in a nearby humanoid corpse.",
+        "Can instill fear and paralysis with Burning Hatred ability."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature seeking vengeance",
+        "relentless spirit that can resurrect",
+        "formidable monster immune to fear",
+        "undead with psychic and bludgeoning attacks",
+        "revenant that tracks its targets tirelessly"
+    ]
+}

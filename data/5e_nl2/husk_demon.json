@@ -1,0 +1,52 @@
+{
+    "name": "Husk Demon",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "40 ft., fly 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "life-draining",
+        "fiend",
+        "demon",
+        "mobility"
+    ],
+    "adjectives": [
+        "chaotic",
+        "destructive",
+        "versatile"
+    ],
+    "description": "The Husk Demon is a Medium fiend with a chaotic and destructive nature, equipped with the ability to fly and slip through narrow spaces.",
+    "memorable": "Its life-draining abilities allow it to weaken foes while restoring its own vitality, making it a formidable opponent.",
+    "goals": "To drain life from foes and spread despair through its presence.",
+    "relations": "Often encounters other demons, represents a chaotic force in the hierarchy of fiends.",
+    "environment": "Typically found in dark, chaotic areas, especially in places influenced by demonic entities.",
+    "strengths": "High mobility and life-draining capabilities, along with resistance to multiple damage types.",
+    "weaknesses": "Below-average physical prowess in Strength, Intelligence, and Charisma limits its effectiveness in certain situations.",
+    "attacks": "Multiattack capability with Life Drain, dealing slashing and necrotic damage while regaining hit points.",
+    "most_powerful_ability": "Soul Feed, allowing it to debilitate enemies by draining their happiness, hope, or motivation.",
+    "equipment": null,
+    "senses": "Darkvision allows it to see in dim light as if it were bright light.",
+    "skills": "Notably adept at stealth, enabling it to remain undetected.",
+    "additional_information": [
+        "Has advantage on saving throws against spells and magical effects.",
+        "Can slip through spaces as narrow as 1 inch without squeezing.",
+        "Immunities to poison and the poisoned condition.",
+        "Can weaken enemies with disadvantage effects on attacks or saves.",
+        "Life Drain can permanently reduce a target's hit point maximum."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that drains life and hopes",
+        "demon that flies and inflicts despair",
+        "life-draining chaotic creature",
+        "medium fiend with stealth abilities",
+        "demon capable of slipping through narrow spaces"
+    ]
+}

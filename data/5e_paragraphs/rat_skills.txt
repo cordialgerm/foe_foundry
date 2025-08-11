@@ -1,0 +1,1 @@
+Rat has the following strengths: Possesses keen sense of smell which aids in detection and avoidance of threats. Rat can use: Keen Smell grants advantage on Perception checks relying on smell. Rat has the following attacks: Bite attack that deals minimal piercing damage. Rat is susceptible to: Extremely low hit points and poor physical attributes make it vulnerable. 

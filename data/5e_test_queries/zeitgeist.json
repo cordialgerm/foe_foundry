@@ -1,0 +1,25 @@
+{
+    "name": "Zeitgeist",
+    "queries": [
+        {
+            "query": "medium humanoid that changes forms between agile and sluggish",
+            "variant": "medium humanoid that alternates between agile and sluggish forms"
+        },
+        {
+            "query": "chaotic neutral creature with damage immunity to psychic effects",
+            "variant": "chaotic neutral monster immune to psychic damage"
+        },
+        {
+            "query": "fast-moving monster with a powerful psychic scream attack",
+            "variant": "swift creature that has a strong psychic scream ability"
+        },
+        {
+            "query": "creature with high Dexterity that can negate damage",
+            "variant": "monster with great Dexterity that can cancel damage taken"
+        },
+        {
+            "query": "humanoid with form-swapping abilities in combat",
+            "variant": "humanoid that can switch forms during battle"
+        }
+    ]
+}

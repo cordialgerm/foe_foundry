@@ -1,0 +1,51 @@
+{
+    "name": "Balara",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Large",
+    "hp": 114,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. with relentless pursuit",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "horror",
+        "intimidation",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "terrifying",
+        "relentless"
+    ],
+    "description": "The Balara is a Large undead creature characterized by its glowing ribcage and menacing structure. It instills fear through its presence, capable of both melee and ranged attacks.",
+    "memorable": "Its ability to frighten foes with Terrifying Luminance and prevent them from healing makes it a menacing opponent.",
+    "goals": "To instill fear in its enemies and dominate the battlefield through intimidation.",
+    "relations": "Could be encountered alongside other undead, possibly serving under a more powerful creator or master.",
+    "environment": "Typically found in dark, haunted, or desolate locations.",
+    "strengths": "High hit points and the ability to incapacitate foes through fear and restrict their healing.",
+    "weaknesses": "Low intelligence and charisma limit its effectiveness in social interactions.",
+    "attacks": "Can perform multiattacks using a bite or claws, as well as necrotic bolt for ranged damage.",
+    "most_powerful_ability": "Terrifying Luminance, which can frighten nearby enemies and immobilize them.",
+    "equipment": null,
+    "senses": "Has keen perception with a passive score of 14, allowing it to effectively detect enemies.",
+    "skills": "Average stealth capabilities with a score of 12, aiding in ambush tactics.",
+    "additional_information": [
+        "Immune to poison damage and conditions.",
+        "Does not require air, food, drink, or sleep.",
+        "Can move swiftly to pursue foes without provoking opportunity attacks."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with fear abilities",
+        "menacing glowing undead",
+        "relentless undead adversary",
+        "creature that prevents healing",
+        "large terrifying undead monster"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Cueyatl Sea Priest",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "swim 30 ft., climb 20 ft., walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "aquatic",
+        "spellcaster",
+        "humanoid"
+    ],
+    "adjectives": [
+        "cunning",
+        "amphibious",
+        "evasive"
+    ],
+    "description": "A small, cunning humanoid adept in both aquatic and jungle environments, characterized by its leather armor and a trident.",
+    "memorable": "The Cueyatl Sea Priest's ability to communicate with sea life and its substantial poison damage makes it a unique and formidable adversary.",
+    "goals": "To dominate aquatic environments and use cunning strategies against enemies.",
+    "relations": "May associate with other aquatic creatures and be encountered with sea monsters.",
+    "environment": "Typically found in aquatic and jungle settings.",
+    "strengths": "Advantages in stealth within jungle terrain and the ability to breathe underwater.",
+    "weaknesses": "Relatively average in physical strength and combat skills.",
+    "attacks": "Utilizes a trident that delivers piercing damage plus potent poison damage.",
+    "most_powerful_ability": "Able to communicate with amphibious creatures, providing tactical advantages in water.",
+    "equipment": "Wields a trident for combat.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Skilled in medicine and religion, with a notable proficiency in medicine.",
+    "additional_information": [
+        "Has advantage on Dexterity (Stealth) checks in jungle terrain.",
+        "Possesses a standing leap ability for impressive movement versatility.",
+        "Can cast spells with a focus on communication and environmental control.",
+        "The poison damage from its trident can be deadly for unprepared foes.",
+        "Possesses an Amphibious ability to adapt in both land and water."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "2nd-level spellcaster with a focus on utility and communication spells.",
+    "test_queries": [
+        "small humanoid that can breathe underwater",
+        "cunning sea priest with poison attacks",
+        "aquatic creature that speaks with sea life",
+        "jungle camouflaged humanoid with spellcasting abilities",
+        "evasive priest using a trident in combat"
+    ]
+}

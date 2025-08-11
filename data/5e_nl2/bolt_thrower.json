@@ -1,0 +1,49 @@
+{
+    "name": "Bolt-Thrower",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 44,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 15 ft., climb 15 ft.",
+    "role": "Artillery",
+    "tags": [
+        "construct",
+        "turret",
+        "guardian",
+        "ranged combat"
+    ],
+    "adjectives": [
+        "mechanical",
+        "durable",
+        "steadfast"
+    ],
+    "description": "The Bolt-Thrower is a small mechanical guardian designed for ranged combat, resembling a turret with dual crossbows for striking down its enemies from a distance.",
+    "memorable": "Its ability to remain accurate even in close quarters due to Clockwork Sights, coupled with its imposing presence as a turret-like creature, makes it a notable challenge in battle.",
+    "goals": "Serves primarily to protect specific areas or individuals by engaging enemies from a distance.",
+    "relations": "Can be encountered alongside other constructs or creatures designed for battlefield support.",
+    "environment": "Typically found in fortified locations, ruins, or areas where mechanical guardians are employed.",
+    "strengths": "Highly effective in ranged combat with abilities that enhance its attack accuracy, along with multiple immunities to conditions.",
+    "weaknesses": "Weakness in melee confrontations due to low Strength and ineffective in social interactions due to low Intelligence and Charisma.",
+    "attacks": "Can fire a Light Crossbow and a Heavy Crossbow, both with solid range and piercing damage potential.",
+    "most_powerful_ability": "Clockwork Sights allows it to attack accurately even when adjacent to hostile creatures.",
+    "equipment": "Dual crossbows: Light Crossbow and Heavy Crossbow.",
+    "senses": "Blindsight up to 120 ft., allowing it to detect threats without needing vision.",
+    "skills": "Has minimal perception skills, leading to average threat detection capabilities.",
+    "additional_information": [
+        "Immunities include poison and psychic damage, making it resilient in various combat scenarios.",
+        "Rooted ability enhances its stability during ranged attacks but limits movement.",
+        "DC 20 Strength check required to detach from surfaces, representing its mechanical design."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical turret guardian",
+        "ranged combat construct",
+        "aimed crossbow machine",
+        "battlefield bolt shooter",
+        "constructed artillery"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Tulpa</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>39</HP>
 <summary>The Tulpa is a medium undead creature characterized by its neutral evil alignment. This entity serves as a manifestation of a creator's mental disturbances, making it a potent adversary that can linger nearly indefinitely unless its creator is eliminated or their mental issues resolved. The Tulpa boasts a combination of physical and psychic abilities, allowing it to strike from a distance while also posing a psychological threat on the battlefield. With a decent Armor Class of 13 and 39 hit points, it can hold its own but is notably vulnerable to radiant damage. The creature's unique abilities, including incorporeal movement and a frightening aura, transform it into a challenging opponent, particularly for unsuspecting foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In summary, the Tulpa is an undead entity with formidable physical and psychic c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tulpa
 
 *Medium* *Undead* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Imposing Dread (1/Day):** The tulpa uses its action to fill a 40-foot radius around itself with dread-inducing psychic energy. Each creature, other than the tulpa's creator, within that area must succeed on a DC 13 Wisdom saving throw or be frightened of the tulpa until the end of its next turn and become cursed. A creature with an Intelligence of 5 or lower can't be cursed. While cursed by the tulpa, that creature's own thoughts turn ever more dark and brooding. Its sense of hope fades, and shadows seem overly large and ominous. The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on itself on a success. If not cured within three days, the cursed creature manifests its own tulpa.
 
 
+</statblock>
 
 

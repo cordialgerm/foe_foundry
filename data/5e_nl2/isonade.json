@@ -1,0 +1,52 @@
+{
+    "name": "Isonade",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Neutral",
+    "size": "Gargantuan",
+    "hp": 222,
+    "ac": 18,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 100 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "weather manipulation",
+        "giant"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "terrifying",
+        "formidable"
+    ],
+    "description": "The Isonade is a massive monstrosity characterized by its immense size and aquatic nature, capable of dominating its environment and deftly maneuvering through water.",
+    "memorable": "Its ability to manipulate weather conditions and swallow creatures whole makes it a fearsome force in watery battles.",
+    "goals": "Typically seeks to dominate its territory in aquatic environments, using its strength and weather manipulation to maintain control.",
+    "relations": "Might be encountered alongside other monstrous sea creatures or as a guardian of underwater realms.",
+    "environment": "Found in aquatic environments, especially where it can manipulate weather conditions.",
+    "strengths": "Exceptional physical attacks with high damage output, significant magical resistance, and the ability to control weather.",
+    "weaknesses": "Low intelligence and charisma limit its strategic thinking and social interactions.",
+    "attacks": "Utilizes a powerful Bite attack and two Tail Slap attacks, capable of swallowing Large or smaller creatures.",
+    "most_powerful_ability": "Influence Weather allows it to control weather conditions in its vicinity with ease.",
+    "equipment": null,
+    "senses": "Presence of darkvision up to 90 feet and a high passive Perception of 19 enhances its awareness in aquatic combat.",
+    "skills": "Proficient in Athletics and Perception, showcasing its physical prowess and ability to notice hidden things.",
+    "additional_information": [
+        "Immune to cold damage",
+        "Ability to breathe underwater",
+        "Deals double damage to objects and structures",
+        "Can swallow multiple creatures at once",
+        "Can emerge violently from water, dealing heavy damage"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive aquatic creature with weather control",
+        "gargantuan sea monster that swallows prey",
+        "creature that influences weather in water",
+        "powerful monstrosity with bludgeoning attacks",
+        "giant monster immune to cold damage"
+    ]
+}

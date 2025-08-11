@@ -1,0 +1,53 @@
+{
+    "name": "Cambion",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft. fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "shapeshifter",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "versatile",
+        "manipulative",
+        "damaging"
+    ],
+    "description": "The Cambion is a medium-sized fiend that exhibits exceptional physical prowess with high Strength, Dexterity, and Charisma. Notably, it wields a Black Iron Blade and possesses the ability to shapeshift into humanoid forms.",
+    "memorable": "The Cambion is unique due to its ability to charm others, command allies, and create fiery portals, making it a formidable opponent both in and out of direct combat.",
+    "goals": "The Cambion typically seeks to spread chaos, manipulate those around it, and serve its fiendish parent.",
+    "relations": "Cambions often have ties to fiendish beings and can lead or influence lesser fiends or mortals.",
+    "environment": "Cambions can often be found in dark, secluded places or in the service of powerful fiends, roaming the astral or shadowy realms.",
+    "strengths": "The Cambion has resistance to cold, fire, poison, and damage from nonmagical weapons, allowing it to withstand diverse attacks.",
+    "weaknesses": "Its reliance on fiendish magic may be vulnerable to characters with strong counter-magic abilities.",
+    "attacks": "The Cambion can attack with its Black Iron Blade, dealing slashing damage and inflicting ongoing wound effects, or from a distance with its Fire Blast, dealing fire damage.",
+    "most_powerful_ability": "Fiery Escape allows the Cambion to create a portal to its fiendish parent's realm, damaging anyone else that enters its space.",
+    "equipment": "Black Iron Blade",
+    "senses": "The Cambion has a passive Perception score of 15, indicating a keen awareness of its surroundings.",
+    "skills": "The Cambion excels in Deception, Intimidation, Stealth, and has a good perception of its environment.",
+    "additional_information": [
+        "Can charm others for a day with Fell Charm.",
+        "Can command allies to react tactically in battle.",
+        "Shapeshifting ability allows it to mimic humanoids.",
+        "Multiattack grants two attacks per turn.",
+        "Inflicts ongoing damage with its melee attacks."
+    ],
+    "damage_types": [
+        "fire",
+        "slashing"
+    ],
+    "spellcasting": "The Cambion can cast Fire Blast as a ranged attack, dealing fire damage from a distance.",
+    "test_queries": [
+        "fiend that creates fiery portals",
+        "charming demon with shapeshifting ability",
+        "stealthy creature that commands allies",
+        "medium fiend with black iron blade",
+        "monster that resists fire and poison"
+    ]
+}

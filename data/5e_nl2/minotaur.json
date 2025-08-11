@@ -1,0 +1,50 @@
+{
+    "name": "Minotaur",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 76,
+    "ac": 14,
+    "srd": true,
+    "cr": "3",
+    "movement": "40 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "aggressive",
+        "strong"
+    ],
+    "adjectives": [
+        "fearsome",
+        "muscular",
+        "bull-headed"
+    ],
+    "description": "A Minotaur is a muscular humanoid with the head of a bull, known for its fierce demeanor and combat skills, often wielding heavy weapons.",
+    "memorable": "Minotaurs possess the unique ability to recall any path they have traversed, making them exceptional hunters in labyrinths.",
+    "goals": "Minotaurs typically hunt and engage intruders in their territory, often ambushing them in maze-like environments.",
+    "relations": "Minotaurs may live within tribes that adhere to their own customs and social structures.",
+    "environment": "Labyrinthine ruins or underground lairs",
+    "strengths": "Incredible strength; adept at melee combat with powerful attacks.",
+    "weaknesses": "Average Dexterity makes them less evasive and vulnerable to ranged attacks.",
+    "attacks": "Utilizes a Greataxe for slashing damage and a Gore attack that can deal additional damage and knock targets prone.",
+    "most_powerful_ability": "Labyrinthine Recall allows it to perfectly remember any paths it has traversed, granting strategic advantages in navigation.",
+    "equipment": null,
+    "senses": "Notably high passive perception of 17, making it skilled at spotting hidden threats.",
+    "skills": "Proficient in Perception, allowing it to identify hidden dangers effectively.",
+    "additional_information": [
+        "Can increase damage output during a Bleeding Frenzy when low on hit points.",
+        "Has Reckless ability, allowing for advantage on melee attacks at a risk of being targeted easier.",
+        "Doubles damage to structures as a Siege Monster, making it destructive in hostile environments.",
+        "Capable of dealing extra damage if it charges before a Gore attack.",
+        "Resistance to exhaustion and fear, providing tactical advantages in chaotic encounters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful melee monster with bull head",
+        "labyrinth guardian with great strength",
+        "aggressive beast skilled in ambush tactics",
+        "creature that remembers every path taken",
+        "massive creature known for charging attacks"
+    ]
+}

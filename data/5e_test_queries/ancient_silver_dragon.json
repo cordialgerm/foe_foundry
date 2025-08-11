@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Silver Dragon",
+    "queries": [
+        {
+            "query": "noble dragon with icy breath attacking from the sky",
+            "variant": "nobal dragon icy breath attacks from sky"
+        },
+        {
+            "query": "gargantuan silver dragon that prefers diplomacy and possesses shape-shifting abilities",
+            "variant": "gargantuan silver dragon prefers diplomacy has shape-shifting"
+        },
+        {
+            "query": "dragon with cold immunity that lives in high mountains",
+            "variant": "cold immune dragon lives in high mountains"
+        },
+        {
+            "query": "formidable dragon with paralyzing breath that can communicate with mortals",
+            "variant": "formidible dragon paralyzing breath communicates with mortals"
+        },
+        {
+            "query": "ancient dragon that has a frightful presence and multiple attacks",
+            "variant": "ancient dragon frightful presence multiple attacks"
+        }
+    ]
+}

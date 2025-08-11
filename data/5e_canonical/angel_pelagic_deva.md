@@ -1,6 +1,8 @@
 <MonsterName/>Angel, Pelagic Deva</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (Living Coral Armor)</AC>
+<HP/>142</HP>
 <summary>The Pelagic Deva is a Medium-sized celestial creature that embodies the ideals of neutrality and goodness. As a guardian of the seas, it is known for its unique ability to thrive in both water and air, showcasing an impressive range of mobility with a swimming speed of 90 feet while walking at a modest 20 feet. The Pelagic Deva possesses strong attributes across the board, with exceptional Charisma and Wisdom that enhance its spellcasting and influence. It has a solid collection of special abilities and defenses, including powerful magical weapon attacks, damage resistance to cold and radiant damage, and immunities to common conditions like being charmed or frightened. Its resilience and combat capabilities make it a formidable presence in any encounter, especially in aquatic realms, but it may be outmatched in aerial engagements due to limited mobility on land.</summary>
 
 <detail>
@@ -40,6 +42,7 @@ Overall, the Pelagic Deva is an effective guardian of aquatic realms, capable of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Pelagic Deva
 
 *Medium* *Celestial* *neutral good*
@@ -80,5 +83,6 @@ Source: 5e_artisinal_monsters
 - **Anoxic Aura (1/Day):** Removes oxygen from nearby water for 1 min. Each creature that requires oxygen to live (including air-breathing creatures under effects of water breathing) and starts its turn within 20' of deva: DC 17 Con save or begin suffocating. Deva never suffers effects of this; can choose any creatures in area to ignore it.
 
 
+</statblock>
 
 

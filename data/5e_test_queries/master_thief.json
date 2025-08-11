@@ -1,0 +1,25 @@
+{
+    "name": "Master Thief",
+    "queries": [
+        {
+            "query": "agile humanoid with deadly sneak attacks in combat",
+            "variant": "humanoid that is agile and uses deadly sneak attacks in fights"
+        },
+        {
+            "query": "stealthy thief with high dexterity and crossbow skills",
+            "variant": "thief that excels in stealth with crossbow expertise and high dexterity"
+        },
+        {
+            "query": "master thief who can dodge damage and use deadly poison",
+            "variant": "thief master who employs dodging techniques and deadly poison"
+        },
+        {
+            "query": "tactical humanoid who avoids detection and strikes swiftly",
+            "variant": "humanoid that uses tactics to avoid being seen and hits quickly"
+        },
+        {
+            "query": "dangerous thief with high AC and many hit points",
+            "variant": "thief with high armor class and a lot of hit points"
+        }
+    ]
+}

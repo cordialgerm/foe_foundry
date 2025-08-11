@@ -1,0 +1,25 @@
+{
+    "name": "Nihilethic Dominator",
+    "queries": [
+        {
+            "query": "undead monster with ghostly form and necrotic powers",
+            "variant": "undead creature with ghostly abilities and powers of necrotic damage"
+        },
+        {
+            "query": "large undead with damage immunity and cold attack",
+            "variant": "big undead creature immune to damage and with cold attacks"
+        },
+        {
+            "query": "creature that can knock opponents prone and transforms into a ghost",
+            "variant": "monster that knocks enemies down and can change into a ghost form"
+        },
+        {
+            "query": "Nihilethic Dominator abilities such as Undead Fortitude and Void Shape",
+            "variant": "Nihilethic Dominator's powers like Undead Fortitude and Void Shape"
+        },
+        {
+            "query": "creature with high hit points and resistance to nonmagical attacks",
+            "variant": "monster with lots of hit points and resistance against nonmagical damage"
+        }
+    ]
+}

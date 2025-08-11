@@ -1,0 +1,53 @@
+{
+    "name": "Nihileth",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 157,
+    "ac": 17,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "disease",
+        "psychic"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "slow"
+    ],
+    "description": "The Nihileth is a large undead creature with a ghostly form and a significant challenge rating of 13. It features a sludgy, translucent appearance when infected and maintains a haunting presence that spreads disease.",
+    "memorable": "It can infect others with Nihilethic Rot, potentially transforming them into undead under its control.",
+    "goals": "To spread the debilitating disease Nihilethic Rot and control its infected victims.",
+    "relations": "It may be encountered alongside other undead or creatures affected by its disease.",
+    "environment": "Typically found in dark places or areas tainted by necrotic energy.",
+    "strengths": "High hit points, multiple damage immunities, and the ability to switch between forms.",
+    "weaknesses": "Low Dexterity score indicates slowness and vulnerability to radiant damage.",
+    "attacks": "Can perform multiple Tentacle and Tail attacks, dealing bludgeoning damage and potentially inflicting disease.",
+    "most_powerful_ability": "Infecting Telepathy allows it to spread Nihilethic Rot disease to creatures telepathically communicating with it.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 20, indicating keen awareness of its surroundings.",
+    "skills": "Proficient in History and Perception, with significant bonuses to both.",
+    "additional_information": [
+        "Immunities to cold, necrotic, and poison damage.",
+        "Can move through creatures and objects in Void Ghost form.",
+        "Undead Fortitude allows it to remain standing after lethal damage.",
+        "Void Aura halves the speed and deals cold damage to nearby infected creatures.",
+        "Transformative ability to switch forms as a bonus action."
+    ],
+    "damage_types": [
+        "cold",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil undead with disease powers",
+        "large undead that spreads infection",
+        "formidable monster with ghostly abilities",
+        "creature that can infect others telepathically",
+        "undead that transforms into a void ghost"
+    ]
+}

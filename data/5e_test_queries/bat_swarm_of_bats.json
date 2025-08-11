@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Bats",
+    "queries": [
+        {
+            "query": "swarm of tiny bats that can disrupt spellcasting",
+            "variant": "swarm of little bats that disrupt spell casting"
+        },
+        {
+            "query": "dark cavern creature known for heighten hearing",
+            "variant": "creature in dark caves with enhanced hearing"
+        },
+        {
+            "query": "bats that resist slashing damage and occupy the same space as other creatures",
+            "variant": "bats immune to slashing damage and can share space with creatures"
+        },
+        {
+            "query": "small swarm of bats with a cacophonous ability",
+            "variant": "tiny bat swarm with a noicy ability"
+        },
+        {
+            "query": "creature in caves that uses echolocation and has weak strength",
+            "variant": "cave creature using echolocation with low strength"
+        }
+    ]
+}

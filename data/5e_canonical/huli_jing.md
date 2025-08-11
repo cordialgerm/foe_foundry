@@ -1,6 +1,8 @@
 <MonsterName/>Huli Jing</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>130</HP>
 <summary>The Huli Jing is a formidable Medium Fey creature known for its enchanting abilities and strategic combat prowess. With a challenge rating of 9, it poses a significant threat to adventurers. Its strengths lie in its high Charisma, dexterity, and the ability to manipulate luck, both for itself and others. This creature possesses a unique shapechanging ability that allows it to take on the guise of a stunning human or revert to its true nine-tailed fox form, making it unpredictable in encounters. The Huli Jing is resistant to nonmagical physical damage that does not involve cold iron and is immune to poison and charm effects. However, its reliance on spellcasting and the need to maintain its deceptive appearances in combat can potentially be exploited by alert opponents. </summary>
 
 <detail>
@@ -27,6 +29,7 @@ Lastly, its Draining Glance ability, which recharges on a roll of 5 or 6, allows
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Huli Jing
 
 *Medium* *Fey* *neutral*
@@ -67,5 +70,6 @@ At will: charm person, invisibility (self only), major image
 - **Draining Glance (Recharge 5-6):** The huli jing draws sustenance from the psyches of living creatures in a 30-foot cone. Each creature in the area that isn’t a construct or an undead must make a DC 16 Wisdom saving throw, taking 28 (8d6) psychic damage on a failed save, or half as much damage on a successful one. The huli jing regains hp equal to the single highest amount of psychic damage dealt.
 
 
+</statblock>
 
 

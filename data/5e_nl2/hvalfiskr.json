@@ -1,0 +1,52 @@
+{
+    "name": "Hvalfiskr",
+    "creature_type": "Giant",
+    "alignment": "lawful neutral",
+    "size": "Huge",
+    "hp": 275,
+    "ac": 16,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 40 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "aquatic",
+        "frost giant"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "strategic"
+    ],
+    "description": "The Hvalfiskr embodies both a giant whale and a frost giant, showcasing immense size and a blend of aquatic features alongside frost giant traits.",
+    "memorable": "Its Whale Song ability can charm and inflict psychic damage, creating chaos on the battlefield.",
+    "goals": "To dominate the aquatic environments and assert control over other sea creatures.",
+    "relations": "It might be encountered alongside other aquatic creatures or as a powerful guardian of the seas.",
+    "environment": "Typically found in aquatic settings like oceans or large bodies of water.",
+    "strengths": "Immunities to cold, lightning, and thunder damage, as well as to exhaustion.",
+    "weaknesses": "Vulnerable to sonic-based attacks and relies on water for mobility in whale form.",
+    "attacks": "Can perform Multiattack with options including Bites, Slams, and Chained Anchors, all dealing significant damage.",
+    "most_powerful_ability": "Whale Song, which charms and deals psychic damage to creatures within range.",
+    "equipment": null,
+    "senses": "Has blindsight in whale form, allowing it to navigate underwater without sight.",
+    "skills": "Possesses a high passive Perception score of 17, making it adept at noticing danger.",
+    "additional_information": [
+        "Can transform between whale and giant forms as a bonus action.",
+        "Uses echolocation for navigation while in whale form.",
+        "Can speak to cetaceans, bridging communication with marine life.",
+        "Can hold its breath for up to 1 hour.",
+        "Ability to anchor and restrict movement through its Chained Anchor attack."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge whale giant creature with psychic attacks",
+        "aquatic monster that controls other sea creatures",
+        "powerful giant that can charm enemies",
+        "giant aquatic being with unique transformation",
+        "monster with strong resistances and aquatic mobility"
+    ]
+}

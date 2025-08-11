@@ -1,0 +1,25 @@
+{
+    "name": "Ophidiotaur",
+    "queries": [
+        {
+            "query": "large serpent humanoid with strong melee attacks",
+            "variant": "big snake-man with powerful melee abilities"
+        },
+        {
+            "query": "chaotic evil creature that can summon snakes",
+            "variant": "evil chaotic monster that summons snakes"
+        },
+        {
+            "query": "monstrous creature immune to poison and has high hit points",
+            "variant": "poison-resistant monster with large hit point total"
+        },
+        {
+            "query": "physical powerhouse with Charge ability and poison attacks",
+            "variant": "strong melee fighter that has Charge and poisons targets"
+        },
+        {
+            "query": "Ophidiotaur combat tactics and abilities",
+            "variant": "Ophidiotaur fight styles and skills"
+        }
+    ]
+}

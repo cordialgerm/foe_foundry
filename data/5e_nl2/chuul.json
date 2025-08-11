@@ -1,0 +1,52 @@
+{
+    "name": "Chuul",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 93,
+    "ac": 16,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft. walking, 30 ft. swimming",
+    "role": null,
+    "tags": [
+        "aberration",
+        "amphibious",
+        "predator",
+        "guardian"
+    ],
+    "adjectives": [
+        "grotesque",
+        "amphibious",
+        "powerful",
+        "alien"
+    ],
+    "description": "A massive crustacean-like creature covered in thick chitinous plates with large pincers and numerous writhing tentacles around its maw.",
+    "memorable": "Its ability to paralyze and grapple prey makes it a terrifying predator lurking in swamps and ocean depths.",
+    "goals": "To hunt and consume prey; often serves as a guardian for hidden places of power.",
+    "relations": "Serves powerful eldritch entities and may be found alongside other aquatic or aberrant creatures.",
+    "environment": "Commonly found in swamps or dark ocean depths.",
+    "strengths": "High strength and resilience in combat, capable of grappling and paralyzing opponents.",
+    "weaknesses": "Low Dexterity, limiting its ability to evade attacks.",
+    "attacks": "Uses pincers to grapple and deal bludgeoning damage, and tentacles to paralyze opponents.",
+    "most_powerful_ability": "The ability to paralyze a grappled target for one minute, severely hindering their ability to fight back.",
+    "equipment": null,
+    "senses": "The Chuul has enhanced perception with a passive Perception of 14, allowing it to detect threats easily.",
+    "skills": "Noteworthy perception due to its Wisdom score of 16.",
+    "additional_information": [
+        "Immunities to poison damage and conditions like frightened and poisoned.",
+        "Can sense magic within 120 feet, revealing magical auras.",
+        "Grapples opponents with a successful pincer attack, allowing for mobility while grappling.",
+        "Resistant to various conditions, increasing its survivability in combat.",
+        "Exhibits deep, alien intelligence despite a very low intelligence score."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large crustacean monster in the swamp",
+        "amphibious creature that paralyzes with tentacles",
+        "predator lurking in dark ocean depths",
+        "monster with powerful pincers and tentacles",
+        "guardian of underwater ruins that grapples prey"
+    ]
+}

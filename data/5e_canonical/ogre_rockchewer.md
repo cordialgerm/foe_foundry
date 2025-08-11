@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Rockchewer</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Rockchewer Ogre is a formidable creature in the Dungeons & Dragons universe, characterized as a Huge Giant with a lawful neutral alignment. This monster exhibits immense physical strength, making it a powerful melee combatant. With an Armor Class of 14, it possesses decent defensive capabilities primarily due to its natural armor. The ogre has a high Hit Point total of 126, which allows it to endure significant damage in battle. However, its low Dexterity gives it poor agility, and its Intelligence and Charisma scores are equally subpar, rendering it less effective in mental and social encounters. This creature excels at dealing damage, particularly to stone structures or objects, making it a threat in environments rich with such materials.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Rockchewer Ogre is a potent force in battle, utilizing its physical
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Rockchewer
 
 *Huge* *Giant* *lawful neutral*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Rock Catching:** If a rock or similar object is hurled at the rockchewer ogre the ogre can with successful DC 10 Dex save catch the missile and take no bludgeoning from it.
 
 
+</statblock>
 
 

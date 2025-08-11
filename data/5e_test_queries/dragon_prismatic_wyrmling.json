@@ -1,0 +1,25 @@
+{
+    "name": "Prismatic Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with radiant damage immunity and spellcasting abilities",
+            "variant": "medium-sized dragon immune to radiant damage and can cast spells"
+        },
+        {
+            "query": "dragon that emits a light beam attack and has darkvision",
+            "variant": "dragon that can use a beam of light attack and possesses darkvision"
+        },
+        {
+            "query": "vibrant dragon known for its magical abilities and decent mobility",
+            "variant": "colorful dragon famous for its magic and good mobility"
+        },
+        {
+            "query": "dragon with average Dexterity and a powerful area attack",
+            "variant": "dragon that has average agility and a strong area damage attack"
+        },
+        {
+            "query": "creature that can charm humanoids and has blindsight",
+            "variant": "being that can charm humanoid targets and possesses blindsight"
+        }
+    ]
+}

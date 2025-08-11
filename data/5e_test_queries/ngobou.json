@@ -1,0 +1,25 @@
+{
+    "name": "Ngobou",
+    "queries": [
+        {
+            "query": "large beast with natural armor that attacks elephants",
+            "variant": "big beast with natural armor that goes after elephants"
+        },
+        {
+            "query": "strong creature that deals piercing damage and has a vendetta against elephants",
+            "variant": "powerful creature that inflicts piercing damage and has a grudge against elephants"
+        },
+        {
+            "query": "ferocious beast known for charging and trampling prey in its habitat",
+            "variant": "fierce creature recognized for charging and trampling its food in the wild"
+        },
+        {
+            "query": "Ngobou attacking with Gore and Stomp moves",
+            "variant": "Ngobou using Gore and Stomp attacks"
+        },
+        {
+            "query": "wild beast with high strength and low dexterity attacking in combat",
+            "variant": "natural creature with great strength and awful dexterity fighting in battle"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Fire Elemental",
+    "queries": [
+        {
+            "query": "Huge fiery monster that thrives in volcanic areas",
+            "variant": "huge fire creature thriving in volcanic regions"
+        },
+        {
+            "query": "elemental being with fire immunity and cold vulnerability",
+            "variant": "fire elemental that is immune to fire and weak to cold"
+        },
+        {
+            "query": "monster with fiery aura and high mobility",
+            "variant": "creature with a fiery aura and great movement speed"
+        },
+        {
+            "query": "huge monster that can bypass narrow spaces and deals fire damage",
+            "variant": "large creature that can move through tight spaces and inflicts fire damage"
+        },
+        {
+            "query": "fire elemental that communicates in Ignan and has darkvision",
+            "variant": "elemental of fire speaking Ignan and possessing darkvision"
+        }
+    ]
+}

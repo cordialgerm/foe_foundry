@@ -1,6 +1,8 @@
 <MonsterName/>Strobing Fungus</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Strobing Fungus is a medium-sized, unaligned plant creature known for its ability to emit a powerful strobing light that can dazzle and blind those who gaze upon it. This unique ability allows it to control the battlefield effectively, making it a formidable opponent, especially in situations where visibility is crucial. With a challenge rating of 4, it presents a moderate threat to adventurers, boasting a solid pool of hit points at 76 and a good armor class of 13. The Strobing Fungus excels in areas where it can exploit its strobe ability to disable foes while delivering potent acid damage through its chemical burn attacks. However, it has limitations in mobility, only able to walk 10 feet per turn, and it cannot speak, making it vulnerable in situations requiring communication.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Strobing Fungus can execute a "Multiattack," allowing it to make 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Strobing Fungus
 
 *Medium* *Plant* *unaligned*
@@ -52,5 +55,6 @@ While emitting light, the strobing fungus can’t attack. It can stop emitting l
 - **Chemical Burn:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one creature. Hit: 13 (3d6 + 3) acid damage.
 
 
+</statblock>
 
 

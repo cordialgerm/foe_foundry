@@ -1,0 +1,54 @@
+{
+    "name": "Giant Pufferfish",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 40 ft.; walk 0 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "spiny",
+        "defensive",
+        "poisonous"
+    ],
+    "adjectives": [
+        "small",
+        "spiky",
+        "dangerous",
+        "aquatic"
+    ],
+    "description": "The Giant Pufferfish has a small, rounded body covered in sharp spines that it can inflate when threatened, becoming noticeably larger and more menacing.",
+    "memorable": "Its ability to puff up and inflict piercing damage deters melee attackers, making it a formidable presence in its aquatic environment.",
+    "goals": "The Giant Pufferfish primarily seeks to defend itself in underwater habitats and deter potential threats.",
+    "relations": "It may be encountered alongside other aquatic creatures in coral reefs or other marine environments.",
+    "environment": "Typically found in aquatic environments like coral reefs or ocean floors.",
+    "strengths": "High Strength and Constitution provide durability and significant damage output, particularly when puffed up.",
+    "weaknesses": "Immobile on land, making it vulnerable if encountered outside of its natural underwater habitat.",
+    "attacks": "Employs a strong bite and spines to inflict piercing pain, and it can poison attackers.",
+    "most_powerful_ability": "Puff Up: Increases size and damage output for 1 minute, enhancing its combat effectiveness.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see in dim light and darkness up to 60 feet.",
+    "skills": "Possesses a passive perception of 12, allowing it to sense most nearby threats.",
+    "additional_information": [
+        "Immune to poison damage and cannot be poisoned.",
+        "Utilizes a unique Spiny Body defense mechanism against melee attackers.",
+        "Can breathe only underwater, limiting its movement options outside of water.",
+        "Recharges its Puff Up ability after a short or long rest.",
+        "Spines deal additional poison damage to attackers who fail their saving throw."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small spiny aquatic defender",
+        "inflatable fish that attacks with spikes",
+        "pufferfish that breathes underwater and poisons foes",
+        "dangerous underwater creature with spines",
+        "fish that retaliates with piercing damage"
+    ]
+}

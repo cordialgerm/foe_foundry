@@ -1,0 +1,57 @@
+{
+    "name": "Mytholabe",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 152,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 30 ft., hover; cannot walk",
+    "role": "Controller",
+    "tags": [
+        "combat",
+        "magic resistance",
+        "support",
+        "deafening effects",
+        "area control"
+    ],
+    "adjectives": [
+        "large",
+        "resilient",
+        "magical",
+        "tactical",
+        "combat-focused"
+    ],
+    "description": "The Mytholabe is a large construct designed for combat and support roles, featuring a durable build and the ability to fly and hover.",
+    "memorable": "It has high magic resistance, can deafen enemies, and possesses an area effect that can neutralize conditions.",
+    "goals": "Designed for combat effectiveness and support capabilities in battles.",
+    "relations": "Can be associated with magical constructs or allies that rely on defensive tactics.",
+    "environment": "Typically found in places where powerful constructs are created or in conflict zones.",
+    "strengths": "Immunity to many conditions and damage types; can efficiently counter magical spells and abilities.",
+    "weaknesses": "Very low intelligence and charisma, leading to poor problem-solving and social skills.",
+    "attacks": "Uses a multiattack to deliver three piercing and radiant damage strikes with heroic jabs.",
+    "most_powerful_ability": "Purifying Resonance can neutralize conditions for allies and disrupt enemy concentration.",
+    "equipment": null,
+    "senses": "Possesses passive Perception 13, providing decent awareness of surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Immutable Form prevents alteration by spells",
+        "Magic Weapons trait allows attacks to bypass certain resistances",
+        "Melodious Recharge enhances combat survivability",
+        "Deafens nearby creatures when struck by nonmagical weapons",
+        "Can cast Plane Shift once per day for repositioning"
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": "Can innately cast Plane Shift on itself once per day using Wisdom.",
+    "test_queries": [
+        "large flying magical construct",
+        "combat-focused construct with magic resistance",
+        "creature that can deafen enemies",
+        "combat support construct with area effect",
+        "tactical flying construct that neutralizes effects"
+    ]
+}

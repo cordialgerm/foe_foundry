@@ -1,6 +1,9 @@
 <MonsterName/>Sahuagin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>sahuagin</Subtype>
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>22</HP>
 <summary>Sahuagin are vicious, fish-like humanoids that dwell in the deep oceans and coastal waters. Known for their aggressive nature, they frequently raid coastal settlements and ships, seeking food and slaves. Sahuagin have sharp claws, webbed hands and feet, and rows of razor-sharp teeth. They are highly territorial and often engage in battles with other aquatic creatures, particularly merfolk and sea elves. Sahuagin live in underwater communities ruled by priestesses or barons and worship dark, oceanic deities. Their society values strength and brutality, and they are ruthless in combat.</summary>
 
 <summary>The Sahuagin is a medium humanoid creature often found in aquatic environments. They serve as fierce combatants known for their relentless aggression and swimming prowess. With a challenge rating of 1/2, they are relatively easy to defeat for experienced adventurers, but their ability to exploit wounded foes through their Blood Frenzy makes them dangerous in skirmishes. While their armor class is average at 12, their total of 22 hit points provides them sufficient durability in battle. Notably, their limited amphibiousness allows them to thrive both in water and on land, giving them a tactical advantage in diverse environments. They also have the unique ability to communicate telepathically with sharks, which can further enhance their combat capabilities if they are near these creatures.</summary>
@@ -35,6 +38,7 @@ Overall, the sahuagin excels in aquatic environments, leveraging their unique ab
 
 Source: 5e_srd
 
+<statblock>
 ## Sahuagin
 
 *Medium humanoid (sahuagin), lawful evil*
@@ -71,7 +75,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4+1) slashing damage.
 
-***Spear***. *Melee or Ranged Weapon Attack:* +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d6+1) piercing damage, or 5 (1d8+1) piercing damage if used with two hands to make a melee attack.
+***Spear***. *Melee or Ranged Weapon Attack:* +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d6+1) piercing damage, or 5 (1d8+1) piercing damage if used with two hands to make a melee attack.</statblock>
+
 
 
 
@@ -79,6 +84,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sahuagin
 
 *Medium* *Humanoid*
@@ -113,6 +119,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.
 
 
+</statblock>
 
 
 
@@ -121,6 +128,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sahuagin
 
 *Medium humanoid*
@@ -157,5 +165,6 @@ Source: 5e_artisinal_monsters
 
 - **Circling Sharks.** If the sahuagin ends its turn within 10 feet of at least two other friendly sahuagin or sharks, the sahuagin can snap its teeth at one creature within 15 feet of it that it can see and that can see or hear it. The target must succeed on a DC 11 WIS save or be frightened until the end of its next turn.
 
+</statblock>
 
 

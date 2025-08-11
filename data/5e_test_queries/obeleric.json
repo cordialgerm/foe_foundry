@@ -1,0 +1,25 @@
+{
+    "name": "Obeleric",
+    "queries": [
+        {
+            "query": "medium aberration that can disguise itself as a boulder",
+            "variant": "medium aberration which can hide as a boulder"
+        },
+        {
+            "query": "chaotic evil creature with a burrowing ability",
+            "variant": "creature with chaotic evil nature that has the ability to burrow"
+        },
+        {
+            "query": "monster with 75 hit points that uses acid attacks",
+            "variant": "creature with 75 HP that employs acid attacks"
+        },
+        {
+            "query": "strong physical monster immune to being knocked prone",
+            "variant": "physically powerful creature that cannot be made prone"
+        },
+        {
+            "query": "creature that understands Common and has tactical mobility",
+            "variant": "being that comprehends Common and has good movement in battle"
+        }
+    ]
+}

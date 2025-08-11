@@ -1,0 +1,25 @@
+{
+    "name": "Illhveli, Kembingur",
+    "queries": [
+        {
+            "query": "gargantuan aquatic monster with blood scent ability",
+            "variant": "gargantuann aquatic creatur with bloodscent ability"
+        },
+        {
+            "query": "fearsome creature that thrives in water and has high hit points",
+            "variant": "fierce creatur thriving in watar with high hitpoints"
+        },
+        {
+            "query": "predatory monster that can detect blood from miles away",
+            "variant": "predator monster that can detect blood from miles awy"
+        },
+        {
+            "query": "chaotic evil aquatic monstrosity with multiattack action",
+            "variant": "chaotic evil water monstrosity with multi attack action"
+        },
+        {
+            "query": "powerful melee attacker with advantage against injured foes",
+            "variant": "powerful mele attacker with advatage against injurd foes"
+        }
+    ]
+}

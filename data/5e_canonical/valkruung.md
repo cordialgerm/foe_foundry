@@ -1,6 +1,8 @@
 <MonsterName/>Valkruung</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Valkruung is a tiny monstrosity characterized by its chaotic neutral alignment, making it unpredictable and whimsical in nature. With an armor class of 13 and 22 hit points, it presents a modest challenge in combat, rated at a challenge level of 1/2, which makes it suitable for lower-level encounters. The creature is adept at evasion and manipulation, reflected in its high Dexterity score of 16, which grants it a good modifier of +3 for agility-related tasks. However, its other attributes, particularly its Strength of 8 (-1) and Intelligence of 5 (-3), show significant weaknesses, hindering its physical prowess and cognitive capabilities. Notably, the Valkruung's prehensile tendrils allow it to interact with its environment uniquely, making it versatile despite its weaknesses. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Valkruung is a quirky adversary that utilizes its unique anatomy an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Valkruung
 
 *Tiny* *Monstrosity* *chaotic neutral*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Disarming Tendrils:** When a creature the valkruung can see targets it with a melee weapon attack, the attacker must succeed on a DC 13 Dexterity saving throw or its weapon is knocked out of its grasp into a random unoccupied space within 5 feet of the attacker. The valkruung can’t use this reaction against attackers wielding a heavy or two-handed weapon.
 
 
+</statblock>
 
 

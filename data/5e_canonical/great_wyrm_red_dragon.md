@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Red Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>26</CR>
+<AC/>22</AC>
+<HP/>897</HP>
 <summary>The Great Wyrm Red Dragon is a gargantuan and fearsome creature known for its devastating fire abilities and unmatched prowess in combat. As one of the most powerful dragons, it serves as a primary antagonist in many campaigns, capable of instilling terror and commanding respect from those who encounter it. With its massive hit points and high armor class, this dragon is extraordinarily tough to defeat. Its combination of innate spellcasting and fierce physical attacks makes it an exceptional foe in both direct confrontations and strategic combat scenarios. However, while its high damage outputs and versatility render it formidable, it also possesses specific vulnerabilities, particularly when it exhausts its legendary resistances, which temporarily reduces its defense.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ For reactions, the dragon can perform a Tail Attack against any creature that hi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Wyrm Red Dragon
 
 *Gargantuan* *Dragon*
@@ -80,5 +83,6 @@ Source: 5e_artisinal_monsters
 - **Cruel Tyranny:** The dragon uses its Cruel Tyranny action.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 22 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 25 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 

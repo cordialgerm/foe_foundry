@@ -1,0 +1,25 @@
+{
+    "name": "Bloated Ghoul",
+    "queries": [
+        {
+            "query": "medium undead creature that is durable and has poison immunity",
+            "variant": "undead medium creature with durability and immunity to poison"
+        },
+        {
+            "query": "strong ghoul that poisons enemies and has a hideous feast ability",
+            "variant": "ghoul with strength that poisons foes and uses a feast ability"
+        },
+        {
+            "query": "undead monster with stench ability and resistance to necrotic damage",
+            "variant": "monster that is undead with an ability related to stench and necrotic resistance"
+        },
+        {
+            "query": "bloated undead creature with a bite attack that inflicts darakhul fever",
+            "variant": "undead creature that is bloated and has a bite attack causing darakhul fever"
+        },
+        {
+            "query": "medium-sized evil creature that can communicate in Common and Darakhul",
+            "variant": "medium creature of evil alignment capable of speaking Common and Darakhul"
+        }
+    ]
+}

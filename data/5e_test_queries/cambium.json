@@ -1,0 +1,25 @@
+{
+    "name": "Cambium",
+    "queries": [
+        {
+            "query": "fiend with needle fingers and poison ray abilities",
+            "variant": "fiend that has needle fingers and poison ray powers"
+        },
+        {
+            "query": "large evil fiend that can fly and has darkvision",
+            "variant": "big evil fiend that possesses the ability to fly and darkvision"
+        },
+        {
+            "query": "fiend known for cunning and deceitful abilities",
+            "variant": "creature recognized for its cunning and deceitful skills"
+        },
+        {
+            "query": "monster with high HP and natural armor in combat",
+            "variant": "creature with large hit points and natural armor during fights"
+        },
+        {
+            "query": "Cambium's manipulation abilities and spellcasting",
+            "variant": "manipulative abilities of Cambium and its spell casting"
+        }
+    ]
+}

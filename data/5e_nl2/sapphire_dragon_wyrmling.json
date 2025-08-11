@@ -1,0 +1,51 @@
+{
+    "name": "Sapphire Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 58,
+    "ac": 17,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking, 15 feet burrowing, 60 feet flying",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "psionic",
+        "wyrmling",
+        "psychic"
+    ],
+    "adjectives": [
+        "sapphire",
+        "psionic",
+        "mobile"
+    ],
+    "description": "The Sapphire Dragon Wyrmling is a medium-sized dragon distinguished by its psionic abilities and physical prowess. It features a sleek body and sharp teeth for a powerful bite.",
+    "memorable": "The ability to observe creatures psionically from 100 miles away makes this dragon a unique reconnaissance threat.",
+    "goals": "Typically engages in combat to defeat foes and may use its psionic observation for strategic advantages.",
+    "relations": "Related to other dragons, particularly sapphire dragons, and may serve or ally with creatures possessing psionic abilities.",
+    "environment": "Often found in mountainous or cavernous regions where it can use its burrowing and flying capabilities.",
+    "strengths": "Immunity to psychic damage and fatigue conditions, along with strong physical and mental stats.",
+    "weaknesses": "Limited defenses against other damage types as it doesn't have damage resistance beyond psychic immunity.",
+    "attacks": "The creature can attack with a vicious bite and unleash a deadly psychic breath weapon causing area damage.",
+    "most_powerful_ability": "The 'Far Thoughts' ability allows it to psionically observe familiar creatures from up to 100 miles away.",
+    "equipment": null,
+    "senses": "It has a passive perception of 14, which allows it to notice hidden creatures with ease.",
+    "skills": "Possesses high skill proficiencies in arcana, history, insight, and perception, showcasing its intellectual capabilities.",
+    "additional_information": [
+        "Has telepathy within 120 feet, enhancing its communication in combat.",
+        "Can recharge its area attack, 'Discognitive Breath,' making it a consistent threat.",
+        "Possesses a high level of mobility with the ability to fly and burrow."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mobile dragon with psionic powers",
+        "wyrmling that can see 100 miles away",
+        "dragon with psychic breath weapon",
+        "sapphire dragon with strong arcana skills",
+        "flying dragon that speaks telepathically"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Clockwork Tactician",
+    "creature_type": "Construct",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walking speed of 30 feet",
+    "role": "Controller",
+    "tags": [
+        "construct",
+        "tactician",
+        "battlefield control",
+        "intelligent"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "durable",
+        "intelligent"
+    ],
+    "description": "The Clockwork Tactician is a Medium-sized Construct known for its strategic combat abilities and high intelligence. It features durable natural armor and is designed for battlefield control, making it a commanding presence in combat.",
+    "memorable": "Its ability to analyze threats and coordinate allies makes it a unique battlefield strategist that enhances the effectiveness of its companions.",
+    "goals": "To effectively control the battlefield and support allies in combat situations through tactical commands.",
+    "relations": "Often encountered alongside allied constructs and creatures that benefit from its strategic guidance.",
+    "environment": "Can usually be found in advanced mechanized realms or battlefields where strategy plays a crucial role.",
+    "strengths": "High intelligence and strength allow it to command the battlefield, along with magical resistance and immunity to many conditions.",
+    "weaknesses": "Limited mobility with only walking speed and dependency on allies for maximizing its effectiveness through Pack Tactics.",
+    "attacks": "Can execute four Multiweapon attacks, adjusting damage types based on the situation.",
+    "most_powerful_ability": "Quick Study allows it to gain advantageous benefits after being attacked, enabling potent reactions during combat.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive perception score of 16.",
+    "skills": "Proficient in perception checks, leveraging its high intelligence for effective reasoning.",
+    "additional_information": [
+        "Immune to poison and psychic damage",
+        "Can issue commands to enhance allies' effectiveness",
+        "Attacks can bypass non-magical resistances",
+        "Ability to operate without rest or sustenance",
+        "Can stack multiple benefits from Quick Study"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "construct with battlefield control abilities",
+        "intelligent tactical construct in combat",
+        "Clockwork Tactician uses commands for allies",
+        "durable construct with magical resistance",
+        "formidable construct that analyzes threats"
+    ]
+}

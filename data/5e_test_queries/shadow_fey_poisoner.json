@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Fey Poisoner",
+    "queries": [
+        {
+            "query": "humanoid creature that uses poison and thrives in darkness",
+            "variant": "humanoid creature that thrives in darkness and uses poison"
+        },
+        {
+            "query": "stealthy poison-inflicting enemy vulnerable to sunlight",
+            "variant": "stealthy enemy that inflicts poison and is vulnerable to sunlight"
+        },
+        {
+            "query": "cunning fey that attacks from shadows and is effective at sneaking",
+            "variant": "cunning fey effective at sneaking that attacks from shadows"
+        },
+        {
+            "query": "dangerous fey enemy with sunlight sensitivity and multiple attack options",
+            "variant": "fey enemy that is dangerous with multiple attack options and has sunlight sensitivity"
+        },
+        {
+            "query": "shadow creature with high dexterity that can teleport and deal extra damage",
+            "variant": "creature of shadows with high dexterity that teleports and deals extra damage"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Carnivorous Ship",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 186,
+    "ac": 17,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 10 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "land",
+        "amphibious"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "mobile",
+        "amphibious"
+    ],
+    "description": "A gargantuan ship with an amorphous form that can transform into a traditional vessel, known for its immense size and ferocity on the battlefield.",
+    "memorable": "The ability to polymorph into a ship and generate controlled undead drones makes it a unique and formidable foe.",
+    "goals": "To traverse land and sea, dominating its surroundings and controlling drones for combat.",
+    "relations": "Can be encountered with zombies (as its drones) and might relate to other aquatic or coastal monsters.",
+    "environment": "Coastal areas and deep waters, but also capable of movement on land.",
+    "strengths": "Immune to acid, can produce and control drones, and has high durability with significant movement capabilities.",
+    "weaknesses": "Poor maneuverability on land due to low Dexterity, limited strategic thinking.",
+    "attacks": "Can bite with strong attacks dealing piercing and acid damage, and launch destructive cannonball-like projectiles.",
+    "most_powerful_ability": "The Surge allows it to move 400 feet in a straight line, causing massive damage to anything in its path.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to sense its surroundings even without sight.",
+    "skills": "Proficient in deception, with high persuasion abilities in trickery.",
+    "additional_information": [
+        "Creates up to 12 humanoid drones daily at dawn.",
+        "Is amphibious, able to breathe air and water.",
+        "Can move through objects without provoking attacks of opportunity.",
+        "Retains its statistics and equipment when shifting forms.",
+        "Can\u2019t be knocked prone."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan ship capable of land and sea movement",
+        "amphibious monster that creates undead minions",
+        "ship that transforms and moves through objects",
+        "large creature with powerful bite and acid attacks",
+        "monster that generates drones each day"
+    ]
+}

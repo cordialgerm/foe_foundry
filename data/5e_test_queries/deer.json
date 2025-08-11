@@ -1,0 +1,25 @@
+{
+    "name": "Deer",
+    "queries": [
+        {
+            "query": "agile forest creature with a brown coat and white markings",
+            "variant": "brown coated agile creature found in the forest with white markings"
+        },
+        {
+            "query": "peaceful prey animal that can kick and has keen smell ability",
+            "variant": "prey animal known for its peace that has kick and keen sense of smell"
+        },
+        {
+            "query": "quick animal that lives in grasslands and has excellent dexterity",
+            "variant": "swift creature found in grasslands with great dexterity"
+        },
+        {
+            "query": "medium-sized herbivorous beast commonly found near freshwater",
+            "variant": "medium herbivore often seen near water sources"
+        },
+        {
+            "query": "deer that is skittish and uses speed to escape predators",
+            "variant": "timid deer that escapes from predators using its speed"
+        }
+    ]
+}

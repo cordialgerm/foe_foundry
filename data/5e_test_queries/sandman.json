@@ -1,0 +1,25 @@
+{
+    "name": "Sandman",
+    "queries": [
+        {
+            "query": "ethereal dream creature that manipulates nightmares",
+            "variant": "dreamlike creature that controls nightmares and has an ethereal body"
+        },
+        {
+            "query": "chaotic celestial being with strong psychic abilities",
+            "variant": "chaotic celestial creature known for powerful psychic powers"
+        },
+        {
+            "query": "medium-sized celestial that takes over dreams and has resistances",
+            "variant": "medium celestial being that controls dreams and possesses resistances"
+        },
+        {
+            "query": "creature immune to charm with sleep-inducing attack",
+            "variant": "being that cannot be charmed and can induce sleep with its attacks"
+        },
+        {
+            "query": "Sandman with claw attacks and magical resistances",
+            "variant": "the Sandman that uses claw strikes and has magic resistances"
+        }
+    ]
+}

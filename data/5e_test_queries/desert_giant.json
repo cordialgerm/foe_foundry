@@ -1,0 +1,25 @@
+{
+    "name": "Desert Giant",
+    "queries": [
+        {
+            "query": "massive creature that thrives in arid deserts and wields a falchion",
+            "variant": "huge monster thriving in dry desert and using a falchion"
+        },
+        {
+            "query": "giant with high strength that can camouflage in sand",
+            "variant": "strong giant that can blend into sandy environments"
+        },
+        {
+            "query": "tall giant immune to fire with exceptional constitution and natural armor",
+            "variant": "huge giant with fire immunity and great constitution plus natural armor"
+        },
+        {
+            "query": "desert-dwelling giant that can throw rocks long distances",
+            "variant": "giant living in the desert that can hurl rocks over long ranges"
+        },
+        {
+            "query": "neutral giant with high hit points and desert movement abilities",
+            "variant": "giant with neutral alignment, lots of hit points, and sand movement powers"
+        }
+    ]
+}

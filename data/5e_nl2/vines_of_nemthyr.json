@@ -1,0 +1,49 @@
+{
+    "name": "Vines of Nemthyr",
+    "creature_type": "Plant",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "burrow 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "plant",
+        "ambush",
+        "poison"
+    ],
+    "adjectives": [
+        "large",
+        "poisonous",
+        "ambushing"
+    ],
+    "description": "The Vines of Nemthyr is a Large plant creature characterized by its formidable presence in the wild and its ability to resemble a normal plant. Its body is a mass of vines that can grapple and restrain foes.",
+    "memorable": "The ability to disperse into individual vines adds a unique tactical option, allowing the creature to surprise adventurers.",
+    "goals": "Typically ambushing unsuspecting creatures and defending its territory.",
+    "relations": "May be encountered in wild areas often alongside other dangerous plant creatures.",
+    "environment": "Commonly found in dense forests or overgrown areas.",
+    "strengths": "High hit points and significant resistance to cold and poison damage.",
+    "weaknesses": "Very low intelligence and charisma, making social interactions ineffective.",
+    "attacks": "Employs multiple slam attacks and a thorny lash to grapple enemies, along with a powerful cone attack dealing poison damage.",
+    "most_powerful_ability": "Thorn Spray, which deals substantial poison damage in a wide area, potentially affecting multiple creatures.",
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures in its vicinity even without sight.",
+    "skills": "Proficient in perception and survival, granting it good awareness of its surroundings.",
+    "additional_information": [
+        "Can separate into distinct vines to navigate tight spaces.",
+        "Uses false appearance to ambush its prey effectively.",
+        "Magic resistance enhances its survivability against spells."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant monster with poison attacks",
+        "ambushing creature located in forests",
+        "vine creature that can grapple",
+        "large plant that uses thorn spray",
+        "creature that resembles a normal plant"
+    ]
+}

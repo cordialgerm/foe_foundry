@@ -1,0 +1,25 @@
+{
+    "name": "Moonkite",
+    "queries": [
+        {
+            "query": "large celestial creature that provides guidance and possesses magical abilities",
+            "variant": "big celestial monster that gives guidance and has magical powers"
+        },
+        {
+            "query": "flying creature immune to poison that can teleport and has radiant attacks",
+            "variant": "flying monster that is immune to poison, capable of teleporting and has radiant damage attacks"
+        },
+        {
+            "query": "agile celestial being that ignores difficult terrain and avoids opportunity attacks",
+            "variant": "quick celestial creature that bypasses difficult terrain and doesn't provoke opportunity attacks"
+        },
+        {
+            "query": "creature with high mobility that can blind enemies and resist magic",
+            "variant": "monster with great mobility that can make enemies blind and has resistance to spells"
+        },
+        {
+            "query": "radiant damage dealing celestial entity that resists fire and has special abilities",
+            "variant": "radiant damage inflicting celestial being that is resistant to fire and has unique powers"
+        }
+    ]
+}

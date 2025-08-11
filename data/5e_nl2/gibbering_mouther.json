@@ -1,0 +1,51 @@
+{
+    "name": "Gibbering Mouther",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 9,
+    "srd": true,
+    "cr": "2",
+    "movement": "10 feet on land, swim 10 feet",
+    "role": "Controller",
+    "tags": [
+        "chaotic",
+        "gibbering",
+        "consuming"
+    ],
+    "adjectives": [
+        "grotesque",
+        "amorphous",
+        "chaotic"
+    ],
+    "description": "A horrifying mass of flesh covered in multiple eyes and mouths that constantly babble in incomprehensible voices, slithering and oozing across the ground.",
+    "memorable": "Its endless gibbering can drive creatures mad, causing confusion and fear, while it absorbs victims into its body.",
+    "goals": "To consume any living thing it encounters.",
+    "relations": "Might be found in areas with other aberrations or chaotic entities.",
+    "environment": "Usually found in bizarre and chaotic places, often swamps or areas of aberrant energy.",
+    "strengths": "High hit points and resistance to psychic damage; can cause confusion and manipulate terrain.",
+    "weaknesses": "Low armor class and poor Dexterity make it vulnerable to physical attacks.",
+    "attacks": "Makes bite attacks that deal piercing damage and can absorb killed creatures.",
+    "most_powerful_ability": "Gibbering ability can confuse foes, disrupting their actions and control.",
+    "senses": "It has darkvision up to 60 feet.",
+    "skills": "Average perception makes it capable of noticing hidden creatures.",
+    "additional_information": [
+        "Amphibious, can breathe in air and water.",
+        "Ground becomes difficult terrain within 10-foot radius.",
+        "Can spit blinding bile to hinder foes.",
+        "Resistance to mental incapacitations such as charm and fear.",
+        "Ability to absorb dead melee victims into its mass."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that babbles and confuses",
+        "monstrous mass with multiple mouths",
+        "chaotic entity that absorbs victims",
+        "blinding acid-spitting monster",
+        "gibbering flesh monster from swamps"
+    ]
+}

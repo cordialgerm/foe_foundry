@@ -1,0 +1,48 @@
+{
+    "name": "Likho",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walking speed of 40 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrous",
+        "chaotic",
+        "evil"
+    ],
+    "adjectives": [
+        "agile",
+        "deceptive",
+        "disruptive"
+    ],
+    "description": "The Likho is a medium-sized monstrosity with a robust build, known for its chaotic and evil demeanor. It possesses high dexterity and charisma, enhancing its agility and social manipulation capabilities.",
+    "memorable": "The Likho is unique due to its powerful Disruptive Gaze ability that can severely hinder opponents in combat.",
+    "goals": "The Likho seeks to disrupt opponents and manipulate situations to its advantage, often through chaotic means.",
+    "relations": "Likhos may be encountered alongside other chaotic creatures or as companions to evil spellcasters.",
+    "environment": "Likhos are found in areas of chaos, particularly in dark forests or ruined places.",
+    "strengths": "Highly agile with advantages against spells due to Magic Resistance, and capable of strategic communication with Limited Telepathy.",
+    "weaknesses": "Relatively average intelligence may limit its strategic capabilities.",
+    "attacks": "The Likho uses four Claw attacks and a Disruptive Gaze to impair its enemies.",
+    "most_powerful_ability": "Disruptive Gaze causes targets to have disadvantage on attack rolls, ability checks, and saving throws.",
+    "equipment": null,
+    "senses": "The Likho has a passive perception of 16, allowing it to maintain awareness of its surroundings.",
+    "skills": "It excels in Stealth and Acrobatics due to its high Dexterity.",
+    "additional_information": [
+        "Limited Telepathy allows it to transmit messages within 120 feet.",
+        "Pounce ability enables knocking targets prone for additional attacks.",
+        "Magic Resistance gives it an edge against spell attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "medium chaotic evil monster with claws",
+        "agile monster with disruptive gaze ability",
+        "creature that uses limited telepathy in combat",
+        "monster that knocks foes prone with claws",
+        "deceptive skirmisher in dark forest environments"
+    ]
+}

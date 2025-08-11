@@ -1,0 +1,51 @@
+{
+    "name": "Sunset Raptor",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "charm",
+        "illusion",
+        "agile",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "charming"
+    ],
+    "description": "The Sunset Raptor is a Medium-sized creature characterized by its vibrant plumage and agile form, making it an impressive sight on the battlefield.",
+    "memorable": "The Hypnotic Plumage ability allows the raptor to incapacitate opponents, making it a dangerous manipulator in combat.",
+    "goals": "To charm and incapacitate foes to control the battlefield effectively.",
+    "relations": "Often found in packs, working together to overwhelm opponents.",
+    "environment": "Typically found in areas where it can utilize its agility and charm, possibly in forests or open terrains.",
+    "strengths": "High dexterity and charisma, coupled with stealth and the ability to charm opponents.",
+    "weaknesses": "Very low intelligence, making it vulnerable to tactics that exploit its poor decision-making.",
+    "attacks": "Utilizes a multiattack featuring biting and clawing actions to deal piercing and slashing damage.",
+    "most_powerful_ability": "Hypnotic Plumage can charm and incapacitate creatures within range, forcing them to move closer against their will.",
+    "equipment": null,
+    "senses": "Has a passive perception of 13, allowing it to notice hidden threats.",
+    "skills": "Proficient in perception and stealth, enhancing its ability to ambush and evade notice.",
+    "additional_information": [
+        "Pack Tactics grants advantage on attack rolls when allies are nearby.",
+        "Can control opponents' movements with its charm ability.",
+        "Impressive movement speed enhances its agility in combat.",
+        "Utilizes teamwork tactics effectively with other sunset raptors.",
+        "Receives 200 experience points upon defeat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "charming agile monster with vivid plumage",
+        "medium-sized creature that controls opponents",
+        "stealthy raptor using hallucinations in combat",
+        "monster that manipulates foes with vibrant tail",
+        "agile monster that fights in packs"
+    ]
+}

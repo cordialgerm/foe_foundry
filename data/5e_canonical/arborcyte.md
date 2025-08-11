@@ -1,6 +1,8 @@
 <MonsterName/>Arborcyte</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Arborcyte is a large, chaotic neutral plant creature known for its unique ability to create animated tendrils during combat. It possesses a strong armor class of 16, indicative of its natural resilience, and has a robust pool of hit points totaling 127, which allows it to endure a significant amount of damage. With a challenge rating of 8, it poses a moderate threat to adventurers and can grant them 3,900 experience points upon defeat. The creature is designed for close combat, moving moderately with a speed of 30 feet. Its main strengths lie in its powerful thorn vine attacks and the ability to summon additional tendrils when damaged, allowing it to control the battlefield effectively. Weaknesses include vulnerability to fire damage and a lack of mental acuity, reflected in low intelligence and charisma scores, making it less capable in skills and spellcasting.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Arborcyte combines strong physical attacks with an ability to adapt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arborcyte
 
 *Large* *Plant* *chaotic neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Animated Tendril:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) piercing damage.
 
 
+</statblock>
 
 

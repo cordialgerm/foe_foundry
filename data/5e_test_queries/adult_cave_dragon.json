@@ -1,0 +1,25 @@
+{
+    "name": "Adult Cave Dragon",
+    "queries": [
+        {
+            "query": "large subterranean dragon with a darkness aura",
+            "variant": "huge underground dragon that has a dark aura"
+        },
+        {
+            "query": "dragon that can burrow and causes fear",
+            "variant": "dragon with burrowing ability that instills fear"
+        },
+        {
+            "query": "cunning dragon that manipulates darkness and has poison breath",
+            "variant": "sly dragon that uses dark magic and has poisonous breath"
+        },
+        {
+            "query": "powerful cave dragon with high hit points and physical strength",
+            "variant": "formidable cave dragon boasting substantial hit points and strength"
+        },
+        {
+            "query": "Adult Cave Dragon abilities in dark environments",
+            "variant": "Adult Cave Dragon powers when in dark settings"
+        }
+    ]
+}

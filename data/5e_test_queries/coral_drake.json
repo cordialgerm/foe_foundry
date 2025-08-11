@@ -1,0 +1,25 @@
+{
+    "name": "Coral Drake",
+    "queries": [
+        {
+            "query": "medium-sized dragon that thrives underwater and has poison abilities",
+            "variant": "medium dragon that lives in water and poisons its prey"
+        },
+        {
+            "query": "dragon with a natural armor that inflicts piercing damage and prefers aquatic environments",
+            "variant": "dragon with natural defense that deals piercing damage and likes water"
+        },
+        {
+            "query": "neutral evil dragon known for stealth and Biting Breath attack in water",
+            "variant": "evil dragon that is stealthy and uses Biting Breath attack while submerged"
+        },
+        {
+            "query": "Coral Drake abilities related to underwater combat and poison damage",
+            "variant": "abilities of Coral Drake concerning aquatic fighting and poison attacks"
+        },
+        {
+            "query": "dragon with high hit points and underwater camouflage skills",
+            "variant": "dragon that has lots of hit points and skills in hiding underwater"
+        }
+    ]
+}

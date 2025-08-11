@@ -1,0 +1,25 @@
+{
+    "name": "Merclops",
+    "queries": [
+        {
+            "query": "huge aquatic giant with powerful melee attacks",
+            "variant": "huge giant that is aquatic and has strong melee strikes"
+        },
+        {
+            "query": "monster with underwater breathing and poor depth perception",
+            "variant": "creature that can breathe underwater and has bad depth perception"
+        },
+        {
+            "query": "giant known for its panicked rage ability and melee combat",
+            "variant": "giant that has a panicked rage skill and excels in close combat"
+        },
+        {
+            "query": "Merclops abilities in water and melee combat techniques",
+            "variant": "abilities of a Merclops in aquatic environments and its melee attack methods"
+        },
+        {
+            "query": "strong melee giant that struggles with ranged attacks",
+            "variant": "powerful giant in close combat but weak at ranged attacks"
+        }
+    ]
+}

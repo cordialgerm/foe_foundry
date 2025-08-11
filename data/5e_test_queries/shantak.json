@@ -1,0 +1,25 @@
+{
+    "name": "Shantak",
+    "queries": [
+        {
+            "query": "large flying monstrosity with necrotic resistance",
+            "variant": "big flying monster that resists necrotic damage"
+        },
+        {
+            "query": "creature that can see in magical darkness and has a horrifying screech",
+            "variant": "monster that sees through magical darkness and has a frightening scream"
+        },
+        {
+            "query": "monster with high Strength and Constitution that uses hit-and-run tactics",
+            "variant": "creature strong in physical stats that employs hit-and-run strategies"
+        },
+        {
+            "query": "lawful evil creature that can frighten enemies within 60 feet",
+            "variant": "evil being that terrifies foes in a 60-foot radius"
+        },
+        {
+            "query": "monstrosity reliant on perception and mobility to hunt prey",
+            "variant": "monster that depends on its senses and speed to track down targets"
+        }
+    ]
+}

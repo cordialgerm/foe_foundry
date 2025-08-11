@@ -1,6 +1,8 @@
 <MonsterName/>Adult Wind Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Adult Wind Dragon is a powerful and imposing creature that embodies the chaotic forces of nature, particularly the tempestuous elements of wind and lightning. This Huge Dragon is categorized as Chaotic Neutral, which means it acts according to its own whims without a clear moral direction. With impressive statistics, it boasts an Armor Class of 17, making it resilient against attacks, and possesses 187 hit points, which provide it with substantial durability in battle. With a Challenge Rating of 16, this creature poses a significant threat to adventurers, rewarding them with 15,000 experience points upon defeat. The dragon excels in physical prowess with high attributes in Strength and Constitution, while also demonstrating notable Dexterity, Intelligence, Wisdom, and Charisma. It holds a variety of damaging and debilitating abilities, but its penchant for chaos can also present disadvantages in more structured engagements.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The dragon can also take legendary actions, providing it greater versatility in 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Wind Dragon
 
 *Huge* *Dragon* *Chaotic Neutral*
@@ -65,5 +68,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

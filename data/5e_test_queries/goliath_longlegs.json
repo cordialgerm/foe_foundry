@@ -1,0 +1,25 @@
+{
+    "name": "Goliath Longlegs",
+    "queries": [
+        {
+            "query": "gargantuan monster that can camouflage in forests and has eight legs",
+            "variant": "gargantuan creature with eight legs that can blend into forests"
+        },
+        {
+            "query": "large forest-dwelling monstrosity with poison immunity and multiattack",
+            "variant": "big monstrosity that lives in forests and has multiattack capability with poison immunity"
+        },
+        {
+            "query": "creature that is hard to spot in woods and has overwhelming strength",
+            "variant": "monster difficult to see in woods with great strength"
+        },
+        {
+            "query": "slow-moving giant with the ability to paralyze targets and damage from falling",
+            "variant": "giant that moves slowly with the ability to paralyze opponents and area damage when it falls"
+        },
+        {
+            "query": "monstrous creature with a high AC that poses unique threats in combat",
+            "variant": "a monster with high armor class that creates unique challenges during fights"
+        }
+    ]
+}

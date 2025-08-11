@@ -1,6 +1,8 @@
 <MonsterName/>Sodwose</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>127</HP>
 <summary>The Sodwose is a Medium-sized, neutral evil plant creature characterized by its agility and cunning. With an Armor Class of 15 and a total of 127 hit points, it is a resilient opponent. The Sodwose excels in stealth and subterfuge, making it a potent ambush predator in grassland environments. Its Dexterity score of 21 (+5 modifier) allows for exceptional agility, while its Constitution score of 18 (+4 modifier) provides it with commendable durability. However, it is vulnerable to fire damage, which can severely weaken it. The Sodwose can use its camouflage to hide effectively in grasslands, employing psychological tactics to frighten intruders. Its special abilities and action-oriented attacks make it a façade of tranquility that can quickly turn hostile.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For bonus actions, the Sodwose has the "Grass Step" ability, allowing it to tele
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sodwose
 
 *Medium* *Plant* *neutral evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Set Snare:** Creates a snare in a square area it can see within 30' of it that is 5 ft. on a side and 50%+ grass. 1st creature to moves into that space within next min: DC 15 Str save or be restrained by grasses. A creature including restrained creature can use action to free restrained creature via DC 15 Str check. It can have at most 3 snares set at a time. If it sets a 4th oldest ceases to function.
 
 
+</statblock>
 
 

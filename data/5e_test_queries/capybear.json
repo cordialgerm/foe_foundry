@@ -1,0 +1,25 @@
+{
+    "name": "Capybear",
+    "queries": [
+        {
+            "query": "medium swamp creature with keen smell and camouflage",
+            "variant": "swamp creature medium with keen sense of smell and camouflage"
+        },
+        {
+            "query": "monstrosity with a bite attack and pack tactics in a muddy environment",
+            "variant": "monstrosity that uses bite attack and works with pack tactics in mud"
+        },
+        {
+            "query": "creature that can hold its breath for 30 minutes and is found in swamps",
+            "variant": "animal that holds breath for 30 min and lives in swamps"
+        },
+        {
+            "query": "Capybear tactics in combat using Pounce and Bite attack",
+            "variant": "tactics of Capybear in battle with Pounce and Bite attacks"
+        },
+        {
+            "query": "animal with a challenge rating of 1 that uses slam attacks and can swim",
+            "variant": "creature CR 1 that uses slam and is capable of swimming"
+        }
+    ]
+}

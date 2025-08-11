@@ -1,0 +1,25 @@
+{
+    "name": "Wizard Kobold",
+    "queries": [
+        {
+            "query": "small spellcasting monster that can manipulate the battlefield",
+            "variant": "tiny monster that casts spells and controls the battlefield"
+        },
+        {
+            "query": "humanoid creature with sunlight vulnerability and powerful spells",
+            "variant": "humanoid being weak to sunlight with strong spellcasting abilities"
+        },
+        {
+            "query": "Kobold that uses Pack Tactics and has a draconic visage ability",
+            "variant": "Kobold with Pack Tactics and the ability to create a draconic visage"
+        },
+        {
+            "query": "wizard-like creature that communicates in Draconic and Infernal languages",
+            "variant": "spellcaster creature that speaks Draconic and Infernal"
+        },
+        {
+            "query": "cunning small humanoid that relies on spells and allies in combat",
+            "variant": "clever tiny humanoid that uses spells and teamwork during fights"
+        }
+    ]
+}

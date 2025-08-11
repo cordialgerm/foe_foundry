@@ -1,0 +1,25 @@
+{
+    "name": "Hyena",
+    "queries": [
+        {
+            "query": "medium-sized savanna scavenger with a cackling call",
+            "variant": "medium scavenger in the savanna known for its cackling sound"
+        },
+        {
+            "query": "beast with strong pack mentality and opportunistic hunting style",
+            "variant": "creature exhibiting pack behavior and hunting opportunistically"
+        },
+        {
+            "query": "fast-moving hyena that can work in groups to become dangerous",
+            "variant": "hyena that is agile and dangerous when it works with its pack"
+        },
+        {
+            "query": "carnivorous beast that relies on teamwork for effective attacks",
+            "variant": "carnivorous creature that uses its pack for better attack effectiveness"
+        },
+        {
+            "query": "desert-dwelling hyena with special abilities that enhance group attacks",
+            "variant": "hyena found in the desert that has unique powers boosting group attacks"
+        }
+    ]
+}

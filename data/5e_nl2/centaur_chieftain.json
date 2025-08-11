@@ -1,0 +1,50 @@
+{
+    "name": "Centaur Chieftain",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 110,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "50 feet walk speed, enabling quick engagement",
+    "role": "Bruiser",
+    "tags": [
+        "centaur",
+        "chieftain",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "strong",
+        "tactical",
+        "brutal"
+    ],
+    "description": "A large monstrosity with a strong physique, combining human-like features with the lower body of a horse, often seen wielding a pike and equipped with a chain shirt and shield.",
+    "memorable": "Its exceptional strength and the ability to command allies on the battlefield make it a formidable leader.",
+    "goals": "To lead its allies in combat and maintain territorial control.",
+    "relations": "Often commands other centaurs or savage beasts, possibly found in the company of chaotic allies.",
+    "environment": "Typically found in forested or open grassy areas, often patrolling its territory.",
+    "strengths": "High hit points and strong melee attacks, alongside the ability to bolster allies through Leadership.",
+    "weaknesses": "Low Intelligence can make it predictable in battle, which can be exploited by smarter foes.",
+    "attacks": "Can perform a multiattack with a lethal pike and powerful hooves, capable of significant damage.",
+    "most_powerful_ability": "The Charge ability substantially increases damage output when moving quickly towards a target.",
+    "equipment": "Equipped with a chain shirt and wielding a pike and longbow.",
+    "senses": "Has a passive perception of 15, indicating keen awareness of surroundings.",
+    "skills": "Proficient in athletics, perception, and survival, showcasing strong physical capabilities.",
+    "additional_information": [
+        "Leadership ability enhances allies' attack and saving throws.",
+        "Charge ability deals additional damage when moving quickly.",
+        "Can use Rearing Strike for significant area damage.",
+        "Good AC for its CR, with effective defense against moderate attacks.",
+        "High Strength and hit points make it a resilient combatant."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong centaur leader with a pike",
+        "tactical centaur with area damage abilities",
+        "monstrous centaur that boosts allies in battle",
+        "centaur chieftain capable of charge attacks",
+        "large centaur skilled in athletics and survival"
+    ]
+}

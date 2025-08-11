@@ -1,0 +1,52 @@
+{
+    "name": "Monarch Skeleton",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "skeleton",
+        "necro"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "frightening"
+    ],
+    "description": "The Monarch Skeleton is a formidable undead creature clad in chain mail, featuring a powerful dreadblade and marked by a commanding presence that enhances nearby allies.",
+    "memorable": "It possesses potent necrotic attacks that can reduce victims' maximum hit points, making it a prime threat in combat.",
+    "goals": "To lead and coordinate attacks among skeleton allies while inflicting necrotic damage on enemies.",
+    "relations": "Often encountered with other skeletons that it commands in battle.",
+    "environment": "Typically found in graveyards, ruins, or battlefields where it can rally undead forces.",
+    "strengths": "High strength and constitution scores, along with abilities that coordinate and enhance attacks with allies.",
+    "weaknesses": "Vulnerable to radiant damage and has no defense against magical attacks made with silver.",
+    "attacks": "Uses a dreadblade to deal slashing and additional necrotic damage; can restrain targets with ghostly hands.",
+    "most_powerful_ability": "Grasp of the Grave, which can restrain enemies and deal continuous necrotic damage.",
+    "equipment": "Dreadblade weapon and chain mail armor.",
+    "senses": "Darkvision up to 120 feet enhances its capabilities in darkness.",
+    "skills": "Good at resisting mind-affecting effects due to high Wisdom saving throw modifier.",
+    "additional_information": [
+        "Immunities to necrotic and poison damage.",
+        "Resists nonmagical bludgeoning, piercing, and slashing damage unless made with silver.",
+        "Advantage on attack rolls when allies are engaged with a target.",
+        "Can command nearby skeletons to attack as a reaction.",
+        "Advantage on saving throws against effects that turn undead."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable undead skeleton commander",
+        "skeleton with necrotic attacks and commands allies",
+        "tactical undead that can reduce hit points",
+        "Monarch Skeleton's grasp of the grave ability",
+        "undead leader with strong necrotic attacks"
+    ]
+}

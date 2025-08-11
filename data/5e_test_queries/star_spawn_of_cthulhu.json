@@ -1,0 +1,25 @@
+{
+    "name": "Star Spawn of Cthulhu",
+    "queries": [
+        {
+            "query": "large fiend that can teleport and absorbs psychic damage",
+            "variant": "large fiend that absorbs psychic damage and can teleport"
+        },
+        {
+            "query": "creature with necrotic attacks and immunity to cold and fire",
+            "variant": "monster with immunity to fire and cold and necrotic attacks"
+        },
+        {
+            "query": "chaotic evil creature with high intelligence and strong savings against mental attacks",
+            "variant": "chaotic evil creature with strong mental save and high intelligence"
+        },
+        {
+            "query": "a powerful fiend with crushing claws and disintegrating gaze",
+            "variant": "potent fiend with disintegrating gaze and crushing claws"
+        },
+        {
+            "query": "star spawn with visible distortions and darkvision",
+            "variant": "star spawn with darkvision and visible distortions"
+        }
+    ]
+}

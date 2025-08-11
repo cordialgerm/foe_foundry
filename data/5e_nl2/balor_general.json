@@ -1,0 +1,51 @@
+{
+    "name": "Balor General",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Huge",
+    "hp": 379,
+    "ac": 19,
+    "srd": false,
+    "cr": "24",
+    "movement": "walk 40 ft., fly 80 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "demon",
+        "fire",
+        "chaotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Balor General is a huge fiend with a formidable presence, radiating chaotic evil. It possesses a fiery aura and is characterized by its impressive combination of slashing and lightning attacks, wielding both a lightning sword and a fire whip.",
+    "memorable": "Its explosive Death Throes ability and the capability to teleport make it a highly dangerous opponent that can shift the tide of battle.",
+    "goals": "To dominate the battlefield and instill fear in opponents, leveraging its powers of fire and lightning.",
+    "relations": "May be encountered alongside other demons or serve as a general for dark forces.",
+    "environment": "Often found in chaotic planes or battlefields rife with destruction.",
+    "strengths": "High mobility and versatility in combat with multiple attacks and powerful area effects.",
+    "weaknesses": "Can be defeated through concentrated efforts and strategic planning due to its reliance on powerful abilities.",
+    "attacks": "Utilizes a lightning sword for melee strikes and a fire whip that can pull enemies closer, along with area effect attacks involving fire and thunder.",
+    "most_powerful_ability": "Death Throes, which causes an explosive fire damage effect when it dies.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through illusions and perceive hidden foes.",
+    "skills": "High proficiency in intimidation, enhancing its ability to instill fear in others.",
+    "additional_information": [
+        "Immunity to fire and poison damage, and resistance to cold and lightning damage.",
+        "Legendary Resistance allows it to negate failures on saving throws.",
+        "Can take two reactions per round, increasing its response capability during combat."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fire demon",
+        "powerful fiend with lightning attacks",
+        "demon with explosive death throes",
+        "balor general combat abilities",
+        "high CR chaotic evil creature"
+    ]
+}

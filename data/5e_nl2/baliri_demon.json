@@ -1,0 +1,51 @@
+{
+    "name": "Baliri Demon",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 190,
+    "ac": 17,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "demon",
+        "chaotic"
+    ],
+    "adjectives": [
+        "fearsome",
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Baliri Demon is a fearsome fiend with strong physical attributes and a chaotic evil nature. It combines high Strength, Dexterity, and Constitution with a menacing appearance.",
+    "memorable": "Its ability to sever limbs and unleash a horrifying area-of-effect attack makes it a terrifying opponent.",
+    "goals": "The Baliri Demon seeks to assert its dominance on the battlefield, using powerful attacks and abilities to cripple foes.",
+    "relations": "Typically encountered alongside other demons; it may serve a demon lord and inspire chaos among mortals.",
+    "environment": "Commonly found in areas corrupted by evil or chaos, often in the presence of other fiends.",
+    "strengths": "High saving throws against spells, strong physical attacks, and the ability to manipulate and empower allies.",
+    "weaknesses": "Vulnerable to magical attacks that bypass its high saving throw modifiers.",
+    "attacks": "Multiattack with a bite that deals piercing and necrotic damage, and pincers that inflict slashing damage with the potential for severe limb severing.",
+    "most_powerful_ability": "Blood Bray, an area-of-effect attack that deals necrotic damage and stuns nearby foes.",
+    "equipment": null,
+    "senses": "It has a passive Perception of 17, allowing it to notice potential threats effectively.",
+    "skills": "Skilled in perception (+8), persuasion (+7), religion (+6), and stealth (+8), making it an effective manipulator.",
+    "additional_information": [
+        "Magic Resistance grants it advantage on saving throws against spells.",
+        "Damage immunities to poison and resistance to multiple damage types.",
+        "Can empower allies with the Praising Brays ability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil fiend",
+        "limb severing demon",
+        "necrotic damage attacker",
+        "high saving throw demon",
+        "fearsome chaotic adversary"
+    ]
+}

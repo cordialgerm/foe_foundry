@@ -1,0 +1,25 @@
+{
+    "name": "Young Copper Dragon",
+    "queries": [
+        {
+            "query": "playful dragon with acid breath found in mountainous areas",
+            "variant": "mischievous dragon with acid breath located in hilly regions"
+        },
+        {
+            "query": "cunning dragon covered in copper scales that loves pranks",
+            "variant": "clever dragon with copper-colored scales who enjoys tricks"
+        },
+        {
+            "query": "large dragon that communicates in Common and Draconic",
+            "variant": "big dragon that speaks both Common and Draconic languages"
+        },
+        {
+            "query": "dragon with good armor class and breath weapon attacks",
+            "variant": "dragon that has high AC and breath weapon abilities"
+        },
+        {
+            "query": "young copper dragon excels in stealth and intelligent tactics",
+            "variant": "young copper dragon is skilled in stealth and clever strategies"
+        }
+    ]
+}

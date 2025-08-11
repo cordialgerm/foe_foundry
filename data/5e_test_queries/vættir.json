@@ -1,0 +1,25 @@
+{
+    "name": "V\u00e6ttir",
+    "queries": [
+        {
+            "query": "medium undead creature that uses necrotic energy and thrives in darkness",
+            "variant": "undead medium creature that thrives in darkness and uses necrotic energy"
+        },
+        {
+            "query": "lawful evil monster with a greataxe and rejuvenation ability",
+            "variant": "monster with a greataxe and lawful evil alignment, also has a rejuvenation ability"
+        },
+        {
+            "query": "deceptive undead that is sensitive to sunlight and has a disorienting gaze",
+            "variant": "undead that has a disorienting gaze and is sensitive to sunlight, famous for its trickery"
+        },
+        {
+            "query": "undead creature with high strength and necrotic bolt attack",
+            "variant": "creature with high strength and necrotic bolt, classified as undead"
+        },
+        {
+            "query": "monster that can sense personal items and has poison damage immunity",
+            "variant": "creature that is immune to poison damage and can sense personal items nearby"
+        }
+    ]
+}

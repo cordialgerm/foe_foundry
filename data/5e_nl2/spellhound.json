@@ -1,0 +1,49 @@
+{
+    "name": "Spellhound",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful neutral",
+    "size": "Large",
+    "hp": 102,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "hunter"
+    ],
+    "adjectives": [
+        "large",
+        "magical",
+        "predatory"
+    ],
+    "description": "The Spellhound is a large creature with a strong build and a keen sense of smell, particularly attuned to detecting spellcasters.",
+    "memorable": "It can disrupt magical effects with its powerful howl and is especially lethal against magic users.",
+    "goals": "To hunt down and incapacitate spellcasters.",
+    "relations": "Often found in the company of other creatures that threaten magic, may serve a master who uses magic.",
+    "environment": "Can typically be found in areas where magic is prevalent, such as near magical academies or enchanted forests.",
+    "strengths": "Possesses high physical attack potential and several abilities to detect and disrupt spellcasting.",
+    "weaknesses": "Low intelligence limits its tactical options and problem-solving abilities.",
+    "attacks": "Uses multiattack to make two bite attacks that deal piercing damage and can knock targets prone.",
+    "most_powerful_ability": "Nullifying Howl can end spells and stun spellcasters in its vicinity, rendering them vulnerable.",
+    "equipment": null,
+    "senses": "Has keen hearing and smell, granting it advantage on perception checks based on these senses.",
+    "skills": "Skilled in stealth, allowing it to ambush effectively.",
+    "additional_information": [
+        "Immune to being charmed",
+        "Advantage on saving throws against spells",
+        "Can locate spellcasters by scent",
+        "Struggles with intelligence-based challenges",
+        "Effective against magic users"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "magical disrupting beast",
+        "predatory creature that hunts wizards",
+        "large beast with keen senses and howl",
+        "monster that targets spellcasters with howl",
+        "creature skilled in ambushing magical foes"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Anzu</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Anzu is a large monstrosity that embodies a formidable presence in combat. With a Challenge Rating of 9, it has the potential to deal significant damage while also exhibiting resilience through its natural armor, which grants it an Armor Class of 16. Anzu's strengths lie in its impressive array of attacks and unique abilities, allowing it to engage effectively in both melee and ranged situations. However, it has a low Intelligence score, making it less adept at problem-solving or casting spells. The creature is particularly hazardous when it can surprise its opponents with its mobility, enabling it to deal substantial damage while evading counterattacks. This monster is also resistant to fire and lightning damage, granting it an advantage against many forms of magical attacks. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the Anzu has an ability called Lightning Relocation, allowing it to tele
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Anzu
 
 *Large* *Monstrosity* *neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Relocation:** The anzu teleports up to 60 feet to an unoccupied space it can see. When it does, it briefly transforms into a bolt of lightning, flashes upwards, then crashes down unharmed at its destination. Each creature within 5 feet of the anzu’s starting location or destination must succeed on a DC 16 Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much on a successful one. A creature within 5 feet of both locations makes this saving throw only once.
 
 
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Water Leaper",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 97,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., fly 5 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "ambush",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "poisonous"
+    ],
+    "description": "The Water Leaper is a large, aquatic creature characterized by its strong physique and sleek, hydrodynamic form, enabling effective movement in water. It has a potent Stinger for inflicting poison and a grappling Bite attack, which enhances its combat effectiveness.",
+    "memorable": "Its ability to swallow prey and deal ongoing acid damage while keeping them restrained and blinded makes it a fearsome opponent in watery environments.",
+    "goals": "To ambush and overwhelm foes in its aquatic territory.",
+    "relations": "Often found in hunting packs or near other aquatic monstrosities.",
+    "environment": "Aquatic environments such as rivers, ponds, or lakes.",
+    "strengths": "Excels in stealth while underwater, able to surprise opponents easily.",
+    "weaknesses": "Low Intelligence and Charisma scores indicate poor mental capabilities and social influence.",
+    "attacks": "Its Multiattack allows a combination of a grappling Bite and a powerful Stinger attack with poison effects.",
+    "most_powerful_ability": "Swallowing creatures within its grapple, subjecting them to acid damage and restricting their actions.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, enabling it to detect shapes in darkness.",
+    "skills": "Proficient in Stealth, allowing it to hide effectively while submerged.",
+    "additional_information": [
+        "Can breathe both air and water",
+        "Grapples and restrains targets with its Bite",
+        "Inflicts poison damage with its Stinger attack",
+        "Advantage on Stealth checks while submerged",
+        "Can only swallow one creature at a time"
+    ],
+    "damage_types": [
+        "poison",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable aquatic creature with poison",
+        "stealthy monster that grapples and swallows",
+        "ambush tactics in water with stinger attack",
+        "large water creature with acid damage ability",
+        "monster that excels in underwater camouflage"
+    ]
+}

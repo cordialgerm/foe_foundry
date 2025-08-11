@@ -1,0 +1,25 @@
+{
+    "name": "Young Blue Dragon",
+    "queries": [
+        {
+            "query": "large dragon with bright blue scales and lightning breath",
+            "variant": "large dragin with bright blue scales and lightning breathe"
+        },
+        {
+            "query": "desert dwelling dragon that can fly and use electricity",
+            "variant": "dragon that lives in the desert can fly and use electricity"
+        },
+        {
+            "query": "dragon that excels in tactics and has high charisma",
+            "variant": "dragon good at tactics and has high charismma"
+        },
+        {
+            "query": "arrogant blue dragon with a powerful lightning attack",
+            "variant": "arrogant blu dragon with powerful lightning attack"
+        },
+        {
+            "query": "dragon that can hide in sand and has a multiattack",
+            "variant": "dragon able to hide in sand and has multiaattack"
+        }
+    ]
+}

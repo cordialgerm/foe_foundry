@@ -1,0 +1,55 @@
+{
+    "name": "Scarecrow Harvester",
+    "creature_type": "Construct",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "scarecrow",
+        "construct",
+        "fire",
+        "fear"
+    ],
+    "adjectives": [
+        "fearsome",
+        "flammable",
+        "tactical",
+        "durable"
+    ],
+    "description": "The Scarecrow Harvester is a humanoid construct made to instill fear, with a mix of plant-like and skeletal features. Its claws are sharp, and it can create chaos on the battlefield with its abilities.",
+    "memorable": "Unique ability to throw its head and become invisible, creating tactical disruptions.",
+    "goals": "To instill fear among foes and control the battlefield.",
+    "relations": "Related to other constructs, especially those tied to nature or farming.",
+    "environment": "Found in rural areas or farmland, typically among crops.",
+    "strengths": "High Dexterity aids in evasion, possesses fear-based abilities, and has significant resistances.",
+    "weaknesses": "Vulnerable to fire damage; can be dispelled easily.",
+    "attacks": "Claw attacks dealing slashing and necrotic damage, as well as fear-inducing abilities.",
+    "most_powerful_ability": "Fire Breath allows it to deal area damage and restrict enemy movement.",
+    "equipment": null,
+    "senses": "It has darkvision up to 60 feet and a passive perception of 12.",
+    "skills": "It has a keen ability to intimidate and control foes with its fear effects.",
+    "additional_information": [
+        "Immune to poison and several conditions.",
+        "Can reanimate after being dispelled unless destroyed.",
+        "Flammable trait creates tactical options both for itself and adversaries.",
+        "Invisibility can be used for ambushes or escape.",
+        "Multiattack allows for effective offense."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fearful construct that breathes fire",
+        "scarecrow that can turn invisible and throw its head",
+        "mechanical monster with fear abilities and fire breath",
+        "tactical scarecrow with necrotic claw attacks",
+        "construct found in rural areas with unique abilities"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Ice Bogie</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 <summary>The Ice Bogie is a small fey creature characterized by its chaotic neutral alignment. It possesses a modest armor class of 12 and is only moderately durable with hit points totaling 10, making it relatively weak but nimble. Its primary strengths lie in its dexterity and stealth capabilities, with a Dexterity score of 14 providing a +2 modifier that allows for effective evasion and quick movement. However, its Strength is notably low, which gives it a -2 modifier, making direct physical attacks less effective. The Ice Bogie is capable of quick getaways thanks to its special ability, Nimble Escape, allowing it to Disengage or Hide as a bonus action. With a challenge rating of 1/8, it represents a minor but tricky adversary for low-level adventurers, gaining an advantage in combat when working alongside allies due to its Pack Tactics ability.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Ice Bogie can use its reaction Frosty Aid once per day. When an all
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Bogie
 
 *Small* *Fey* *chaotic neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Frosty Aid (1/Day):** Whenever an allied ice bogie within 30 feet is reduced to 0 hp, this ice bogie can choose to reduce its hp by 3 (1d6), and the ally regains hp equal to the amount of hp this ice bogie lost.
 
 
+</statblock>
 
 

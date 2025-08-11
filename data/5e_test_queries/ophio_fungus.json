@@ -1,0 +1,25 @@
+{
+    "name": "Ophio Fungus",
+    "queries": [
+        {
+            "query": "huge plant creature that can charm and poison adventurers",
+            "variant": "giant plant monster that poisons and charms adventurers"
+        },
+        {
+            "query": "fungus that releases spores and controls foes",
+            "variant": "fungus that controls enemies and spreads spores"
+        },
+        {
+            "query": "large unaligned plant that has potent spore abilities",
+            "variant": "big plant creature with strong spore powers"
+        },
+        {
+            "query": "slow-moving plant that can charm with hypnotic secretion",
+            "variant": "plant monster that walks slowly and charms using hypnosis"
+        },
+        {
+            "query": "fungus vulnerable to fire and effective at debilitation",
+            "variant": "fungus weak to fire that excels at incapacitating foes"
+        }
+    ]
+}

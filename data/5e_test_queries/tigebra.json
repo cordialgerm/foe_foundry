@@ -1,0 +1,25 @@
+{
+    "name": "Tigebra",
+    "queries": [
+        {
+            "query": "large chaotic evil creature with poison immunity and paralyzing gaze",
+            "variant": "giant evil creature that has immunity to poison and can paralyze with its gaze"
+        },
+        {
+            "query": "monstrosity with high hit points and strong melee attacks that lives in darkness",
+            "variant": "creature with low visibility combat advantage and a lot of hit points designed for melee"
+        },
+        {
+            "query": "predatory monster that uses keen senses and can survive after being defeated",
+            "variant": "savage creature that has sharp senses and continues to attack even after it's body is gone"
+        },
+        {
+            "query": "Tigebra combat abilities including hypnotic gaze and potent poison",
+            "variant": "Tigebra abilities in battle, focusing on its power to hypnotize and strong poison"
+        },
+        {
+            "query": "fearsome monster with natural armor and a deadly bite that can paralyze",
+            "variant": "terrifying creature with armor that is natural and a lethal bite capable of paralysis"
+        }
+    ]
+}

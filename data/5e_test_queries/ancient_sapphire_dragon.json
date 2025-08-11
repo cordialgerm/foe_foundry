@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Sapphire Dragon",
+    "queries": [
+        {
+            "query": "gigantic dragon with psionic powers and high intelligence",
+            "variant": "huge dragon that has psychic abilities and great intelligence"
+        },
+        {
+            "query": "dragon with psychic immunity that dwells in high places",
+            "variant": "dragon immune to psychic attacks that lives at great heights"
+        },
+        {
+            "query": "dragon that can predict the future and has a powerful bite attack",
+            "variant": "dragon capable of seeing the future and with a strong biting attack"
+        },
+        {
+            "query": "Gargantuan dragon known for its wisdom and mind-affecting abilities",
+            "variant": "huge dragon famous for its intelligence and psychic skills"
+        },
+        {
+            "query": "sapphire dragon with powerful magical and psionic traits",
+            "variant": "blue dragon that possesses strong magical and psychic qualities"
+        }
+    ]
+}

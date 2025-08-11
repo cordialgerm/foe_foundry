@@ -1,0 +1,50 @@
+{
+    "name": "Backup Holler Spider",
+    "creature_type": "Beast",
+    "alignment": "chaotic neutral",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "climb 25 ft., walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "spider",
+        "thunder"
+    ],
+    "adjectives": [
+        "chaotic",
+        "cunning"
+    ],
+    "description": "The Backup Holler Spider is a tiny beast characterized by its agility and chaotic nature, adorned with features typical of arachnids.",
+    "memorable": "This spider can emit distressing sounds that deal thunder damage and push enemies away, while also providing tactical support to allies.",
+    "goals": "To cause chaos in battle and assist its allies strategically.",
+    "relations": "Often found accompanying other thunder-damaging creatures or as a companion to spellcasters.",
+    "environment": "Commonly resides in varied terrains that allow for climbing, such as forested areas or caves.",
+    "strengths": "Possesses agility due to high Dexterity and the ability to climb surfaces easily.",
+    "weaknesses": "Low Strength and Charisma scores hinder its effectiveness in melee combat and social interactions.",
+    "attacks": "Utilizes a melee bite that deals piercing damage and a ranged hoot that deals thunder damage and has a push effect.",
+    "most_powerful_ability": "Distressed Discharge, which deals area thunder damage and provides tactical movement options.",
+    "equipment": null,
+    "senses": "Blindsight up to 10 feet enables it to detect creatures without sight, and it has a passive Perception of 14.",
+    "skills": "Proficient in Perception and Stealth, enhancing its ability to remain undetected.",
+    "additional_information": [
+        "Can climb difficult surfaces, including ceilings.",
+        "Gains advantage on perception and stealth when motionless.",
+        "Provides tactical advantages to allies casting thunder damage spells.",
+        "Can push back targets on critical hit with its ranged attack.",
+        "Has resistances to thunder damage."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny chaotic spider",
+        "thunder damage creature",
+        "agile climbing beast",
+        "supportive thunder spider",
+        "Backup Holler Spider abilities"
+    ]
+}

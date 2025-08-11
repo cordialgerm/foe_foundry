@@ -1,0 +1,25 @@
+{
+    "name": "Death Worm",
+    "queries": [
+        {
+            "query": "small monster that burrows and deals lightning damage",
+            "variant": "small creature that burrows and does lightning dmg"
+        },
+        {
+            "query": "monstrosity with a venomous bite and lightning immunity",
+            "variant": "creature with poisonous bite and immune to lightning"
+        },
+        {
+            "query": "digging creature that senses movement and has weak strength",
+            "variant": "burrowing monster with tremor sense and low strength"
+        },
+        {
+            "query": "lightning-infused monster that can regenerate and poison",
+            "variant": "lightning-charged creature that regenerates and uses poison"
+        },
+        {
+            "query": "medium-size creature that poses a challenge with debilitating abilities",
+            "variant": "medium size monster that presents a threat with disabling powers"
+        }
+    ]
+}

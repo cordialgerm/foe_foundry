@@ -1,0 +1,50 @@
+{
+    "name": "Gorgon",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 19,
+    "srd": true,
+    "cr": "5",
+    "movement": "40 feet speed",
+    "role": null,
+    "tags": [
+        "petrification",
+        "melee",
+        "breath weapon"
+    ],
+    "adjectives": [
+        "bull-like",
+        "metallic",
+        "territorial"
+    ],
+    "description": "A large, bull-like creature covered in gleaming iron-like plates with powerful horns.",
+    "memorable": "Possesses the ability to petrify prey with toxic gas and has high durability.",
+    "goals": "Protect its territory aggressively and intimidate intruders.",
+    "relations": "Often found in company of other aggressive creatures in remote locations.",
+    "environment": "Remote forests or mountain valleys.",
+    "strengths": "High Armor Class and hit points make it durable; petrifying breath is a significant threat.",
+    "weaknesses": "Low Dexterity limits agility, and lacks magical abilities.",
+    "attacks": "Utilizes powerful Gore and Hooves attacks for significant melee damage.",
+    "most_powerful_ability": "Petrifying Breath can restrain enemies and turn them to stone.",
+    "equipment": null,
+    "senses": "Has a passive perception of 14, allowing it to notice hidden threats effectively.",
+    "skills": "Possesses a good perception skill of +4, aiding in spotting hidden creatures.",
+    "additional_information": [
+        "Immunity to the petrified condition.",
+        "Can knock enemies prone with a charging attack.",
+        "Resistant to exhaustion and the frightened condition.",
+        "Can retaliate with poisonous gas when attacked nearby.",
+        "High Strength score allows effective melee combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large bull-like creature that petrifies with breath",
+        "metallic monster with powerful charges",
+        "aggressive creature that protects forests",
+        "petrifying gas attack in a large creature",
+        "strong melee attacker with horn attacks"
+    ]
+}

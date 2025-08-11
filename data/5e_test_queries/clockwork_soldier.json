@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Soldier",
+    "queries": [
+        {
+            "query": "combat construct with slashing damage and magic resistance",
+            "variant": "construct that deals slashing damage and has magic resistance"
+        },
+        {
+            "query": "mechanical soldier that is immune to poison and frightened",
+            "variant": "soldier made of metal that can't be poisoned or frightened"
+        },
+        {
+            "query": "medium-sized construct that excels in groups and intimidates easily",
+            "variant": "medium construct that is effective in groups and has intimidation abilities"
+        },
+        {
+            "query": "Clockwork creature with halberd attacks that becomes stunned after overdrive",
+            "variant": "robot creature wielding a halberd that gets stunned after using overdrive"
+        },
+        {
+            "query": "Clockwork Soldier with average wisdom and low intelligence living as a battlefield combatant",
+            "variant": "combatant made of clockwork with low intelligence and average wisdom on the battlefield"
+        }
+    ]
+}

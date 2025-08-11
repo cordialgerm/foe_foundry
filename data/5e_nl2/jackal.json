@@ -1,0 +1,49 @@
+{
+    "name": "Jackal",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 3,
+    "ac": 12,
+    "srd": true,
+    "cr": "0",
+    "movement": "40 feet walking speed, agile and quick",
+    "role": null,
+    "tags": [
+        "predator",
+        "scavenger",
+        "pack hunter",
+        "quick"
+    ],
+    "adjectives": [
+        "slender",
+        "opportunistic",
+        "cunning"
+    ],
+    "description": "Jackals are small, slender creatures with sharp teeth and a keen sense of smell, built for speed and agility.",
+    "memorable": "Despite their small size, jackals are cunning and opportunistic, often hunting in packs and taking advantage of weaknesses.",
+    "goals": "To scavenge for food and hunt in small packs.",
+    "relations": "Often found in the company of other jackals, utilizing pack tactics to hunt larger prey.",
+    "environment": "Commonly found in deserts, savannas, and arid plains.",
+    "strengths": "Keen hearing and smell, high perception, and enhanced effectiveness in groups due to pack tactics.",
+    "weaknesses": "Low hit points and armor class, making them vulnerable to stronger creatures.",
+    "attacks": "Bite attack that deals minimal piercing damage but can inflict a debilitating disease.",
+    "most_powerful_ability": "Pack Tactics, granting advantage on attack rolls when allies are nearby.",
+    "equipment": null,
+    "senses": "Heightened hearing and smell grant advantage on perception checks related to these senses.",
+    "skills": "Proficient in perception, making it adept at noticing threats and prey.",
+    "additional_information": [
+        "Utilizes pack tactics for coordinated hunting.",
+        "Capable of inflicting shriveling fever disease on successful bite.",
+        "Relies on agility and cunning rather than brute strength."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small quick predator with keen senses",
+        "pack hunting creature in deserts",
+        "scavenger with sharp teeth and agility",
+        "opportunistic predator with heightened smell",
+        "cunning small beast known for stealth"
+    ]
+}

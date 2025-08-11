@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Spellclerk",
+    "queries": [
+        {
+            "query": "small humanoid spellcaster that operates based on logic",
+            "variant": "little humanoid magic user that works logically"
+        },
+        {
+            "query": "Kobold with cunning action and sunlight sensitivity",
+            "variant": "kobold creature with tactical movement and sensitivity to sunlight"
+        },
+        {
+            "query": "tactical spellcaster in dim light with darkvision",
+            "variant": "strategic magic user in low light with night vision"
+        },
+        {
+            "query": "humanoid creature that casts spells and has low strength",
+            "variant": "small magic-using being with poor physical power"
+        },
+        {
+            "query": "spellcaster who communicates in Common and Draconic",
+            "variant": "magic user that speaks both Common and Draconic languages"
+        }
+    ]
+}

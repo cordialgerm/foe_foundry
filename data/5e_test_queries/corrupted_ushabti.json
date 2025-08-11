@@ -1,0 +1,25 @@
+{
+    "name": "Corrupted Ushabti",
+    "queries": [
+        {
+            "query": "undead creature with necrotic weapon attacks that regenerates health",
+            "variant": "regenerating undead monster that has necrotic weapon attacks"
+        },
+        {
+            "query": "medium-sized monster that can move through tiny spaces and is vulnerable to fire",
+            "variant": "monster vulnerable to fire that is medium-sized and can shift through small openings"
+        },
+        {
+            "query": "creature that uses a swarm of scarabs and has a ceremonial greatsword",
+            "variant": "monster with a ceremonial greatsword that attacks with a swarm of scarabs"
+        },
+        {
+            "query": "dark magic wielding undead that can heal itself and deals extra necrotic damage",
+            "variant": "undead creature that uses dark magic and heals itself while dealing additional necrotic damage"
+        },
+        {
+            "query": "neutral evil undead with high strength and special abilities",
+            "variant": "neutral evil creature that is undead with strong abilities and high strength"
+        }
+    ]
+}

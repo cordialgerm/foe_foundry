@@ -1,0 +1,25 @@
+{
+    "name": "Kitsune",
+    "queries": [
+        {
+            "query": "magical fox-like trickster living as a humanoid",
+            "variant": "humanoid living magical fox-like trickster"
+        },
+        {
+            "query": "small fey creature with shapeshifting abilities",
+            "variant": "shapeshifting small fey creature"
+        },
+        {
+            "query": "agile creature that casts spells and uses deception",
+            "variant": "deception-using creature that casts spells agilely"
+        },
+        {
+            "query": "Kitsune's magical abilities and fox form",
+            "variant": "magical abilities and fox form of Kitsune"
+        },
+        {
+            "query": "chaotic neutral fey that can polymorph and deceive",
+            "variant": "fey that can deceive and polymorph, chaotic neutral"
+        }
+    ]
+}

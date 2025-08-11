@@ -1,0 +1,25 @@
+{
+    "name": "Akhlut",
+    "queries": [
+        {
+            "query": "large aquatic predator with high strength and cold resistance",
+            "variant": "large water predator that is strong and resistant to cold"
+        },
+        {
+            "query": "creature that can swim quickly and has a multiattack feature",
+            "variant": "monster that swims fast and has multiple attacks"
+        },
+        {
+            "query": "beast that excels in melee combat with stealthy abilities",
+            "variant": "beast that is good at close combat and has stealth skills"
+        },
+        {
+            "query": "cold-resistant creature with echolocation and pack tactics",
+            "variant": "creature that resists cold, has echolocation, and uses pack tactics"
+        },
+        {
+            "query": "powerful beast that holds its breath for 30 minutes and has great perception",
+            "variant": "strong beast that can hold breath for 30 mins and has high perception"
+        }
+    ]
+}

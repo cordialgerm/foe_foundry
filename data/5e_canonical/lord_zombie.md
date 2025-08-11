@@ -1,6 +1,8 @@
 <MonsterName/>Lord Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Lord Zombie is a powerful and malevolent undead creature that serves as a formidable opponent in combat. With traits such as high hit points and the ability to rise from death, it poses a significant threat to adventurers. Equipped with a natural armor class of 15 and a challenge rating of 5, it can be a challenging encounter, especially due to its offensive capabilities and spells. The Lord Zombie showcases characteristics typical of undead beings, such as immunity to necrotic and poison damage, making it particularly resilient against various attacks. However, it is not invulnerable; it is susceptible to radiant damage, which can bypass many of its defenses.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ The Lord Zombie can also take legendary actions, allowing it to control its zomb
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lord Zombie
 
 *Medium* *Undead* *neutral evil*
@@ -70,5 +73,6 @@ The zombie lord can take 3 legendary actions, choosing from the options below. O
 ### Legendary Actions
 
 - **Shambling Hordes:** The lord telepathically commands all zombies it controls within 1 mile to immediately move up to half their speed. A zombie that moves out of an enemy's reach because of this movement doesn't provoke an opportunity attack. Life Drain (Costs 2 Actions). The lord makes a life drain attack. Arise (Costs 3 Actions). The lord targets a humanoid corpse within 30 feet, which rises as a zombie under the lord's control.
+</statblock>
 
 

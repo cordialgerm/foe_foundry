@@ -1,0 +1,25 @@
+{
+    "name": "Adult Sapphire Dragon",
+    "queries": [
+        {
+            "query": "huge blue dragon with psionic powers living in caves",
+            "variant": "big blue dragon known for psychic powers that resides in caves"
+        },
+        {
+            "query": "dragon that uses telepathy and deals psychic damage",
+            "variant": "dragon that communicates through telepathy and inflicts psychic harm"
+        },
+        {
+            "query": "intelligent dragon immune to psychic damage and excels in combat",
+            "variant": "smart dragon resistant to psychic damage and strong in battle"
+        },
+        {
+            "query": "formidable dragon with high AC and legendary resistance",
+            "variant": "powerful dragon featuring excellent armor class and legendary resistances"
+        },
+        {
+            "query": "dragon that can predict the future and observe creatures telepathically",
+            "variant": "dragon capable of foreseeing the future and watching beings via telepathy"
+        }
+    ]
+}

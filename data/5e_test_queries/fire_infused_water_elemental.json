@@ -1,0 +1,25 @@
+{
+    "name": "Fire-Infused Water Elemental",
+    "queries": [
+        {
+            "query": "huge elemental that combines fire and water abilities",
+            "variant": "huge elementaal that combines fire and water abilites"
+        },
+        {
+            "query": "elemental creature with superheated water attack and high swimming speed",
+            "variant": "elemental creature with super heated water attack and hgh swimming speed"
+        },
+        {
+            "query": "elemental being that is immune to poison and deals fire damage",
+            "variant": "elemental being immune to posion and deals fire damage"
+        },
+        {
+            "query": "fire-themed water creature that can knock opponents prone",
+            "variant": "fire themed water creatur that can knock opponnents prne"
+        },
+        {
+            "query": "water elemental with resistance to acid and a multiattack feature",
+            "variant": "water elementl with resitance to acid and a multattack feature"
+        }
+    ]
+}

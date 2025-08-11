@@ -1,0 +1,25 @@
+{
+    "name": "Peluda Drake",
+    "queries": [
+        {
+            "query": "large dragon with piercing attacks and strong defensive abilities",
+            "variant": "big dragon known for piercing attacks and good defenses"
+        },
+        {
+            "query": "chaotic neutral dragon that uses quills for defense and attack",
+            "variant": "dragon of chaotic nature that attacks and defends with its quills"
+        },
+        {
+            "query": "dragon with high strength and intelligence under average",
+            "variant": "dragon that is strong but has low intelligence"
+        },
+        {
+            "query": "Peluda Drake with Spiky Hide ability that damages melee attackers",
+            "variant": "Peluda Drake that has a protective Spiky Hide damaging melee foes"
+        },
+        {
+            "query": "monster with Steam and Acid Breath weapons for area attack",
+            "variant": "creature with Steam and Acid breath weapons for attacking areas"
+        }
+    ]
+}

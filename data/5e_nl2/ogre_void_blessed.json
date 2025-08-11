@@ -1,0 +1,54 @@
+{
+    "name": "Ogre, Void Blessed",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "chaotic evil",
+        "necrotic energy",
+        "blinding"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "psychic immune"
+    ],
+    "description": "The Void Blessed Ogre is a towering and chaotic giant with overwhelming physical strength, equipped with natural armor that gives it a resilient presence in battle. It possesses tentacle-like limbs and a dreadful aura, characterized by eerie jumbled visions and voices that signify its connection to the Void.",
+    "memorable": "The ability to inflict blindness and the presence of necrotic pools makes this creature exceptionally dangerous and memorable.",
+    "goals": "To instill fear and chaos, and to dominate weaker creatures through its powerful psychic and necrotic abilities.",
+    "relations": "Related to other evil giants and creatures from the Void realm, this ogre can be encountered alongside other chaotic entities.",
+    "environment": "Typically found in desolate, dark areas or places touched by the Void, where it can exert its influence and terror.",
+    "strengths": "Outstanding physical strength and high hit points allow it to excel in melee combat and endure substantial damage.",
+    "weaknesses": "Low dexterity and intelligence limit its agility and tactical options in combat, making it less effective in ranged combat scenarios.",
+    "attacks": "The Ogre can unleash powerful melee attacks with its Tentacle Lash, dealing bludgeoning and psychic damage while blinding opponents, or its Void Bite, inflicting piercing and necrotic damage.",
+    "most_powerful_ability": "Volatile Stomach allows it to create hazardous areas by regurgitating necrotic-infused stomach contents that damage and poison nearby foes.",
+    "equipment": null,
+    "senses": "With blindsight and tremorsense, the Ogre can detect movement and vibrations, making it nearly impossible to ambush.",
+    "skills": "Possesses a good perception skill, enabling it to effectively notice hidden threats.",
+    "additional_information": [
+        "Immune to psychic damage and conditions like being blinded and poisoned.",
+        "Resistance to necrotic and poison damage reduces vulnerability.",
+        "Tentacle Senses restricts its awareness when grappled or restrained.",
+        "Keen Hearing and Smell grants advantage on perception checks relating to those senses.",
+        "A formidable presence that instills fear with its psychic abilities."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic giant with psychic powers",
+        "ogre that can blind and deal necrotic damage",
+        "monstrous giant with necrotic pools",
+        "intimidating ogre from the void",
+        "formidable giant immune to psychic damage"
+    ]
+}

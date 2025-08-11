@@ -1,0 +1,55 @@
+{
+    "name": "Tusked Skyfish",
+    "creature_type": "Aberration",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 102,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft., fly 5 ft.",
+    "role": "null",
+    "tags": [
+        "aberration",
+        "large",
+        "lightning immune",
+        "mobile grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "powerful",
+        "vile"
+    ],
+    "description": "The Tusked Skyfish is a large creature with tusks, known for its unique offensive capabilities and defensive traits. It can inflict significant lightning damage and immobilize its enemies with grappling tentacles.",
+    "memorable": "Unique ability to combine grappling with mobility, creating a formidable combat presence.",
+    "goals": "Typically seeks to dominate opponents using its grappling abilities and area attacks.",
+    "relations": "May be encountered with other aberrations or creatures of the same environment.",
+    "environment": "Usually found in waterlogged areas or places abundant in moisture.",
+    "strengths": "Immune to lightning damage, excels in physical attacks, able to grapple and restrain targets while moving.",
+    "weaknesses": "Low intelligence affecting strategic capabilities.",
+    "attacks": "Multiattack featuring a Gore attack that deals piercing damage and Electrified Tentacles that can grapple while dealing bludgeoning and lightning damage.",
+    "most_powerful_ability": "Stench Spray can incapacitate enemies and deal significant poison damage in a wide area.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and has a passive perception of 12.",
+    "skills": "Low perception skills, with a passive perception that is not exceptionally high.",
+    "additional_information": [
+        "Electrified Tendrils deal damage for contact and area control.",
+        "Can grapple and move simultaneously, enhancing battlefield mobility.",
+        "Stench Spray causes poison damage and can render foes unconscious.",
+        "Low intelligence imposes weak tactical thought.",
+        "Significant pressure on grappled foes with ongoing lightning damage."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large formidable aberration with electric attacks",
+        "mobile grappler that uses poison and lightning",
+        "Tusked Skyfish traits and abilities",
+        "area attack with poison damage and unconscious effect",
+        "agile predator with grappling and shocking tentacles"
+    ]
+}

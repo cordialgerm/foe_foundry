@@ -1,6 +1,8 @@
 <MonsterName/>Likho</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Likho is a medium-sized monstrosity embodying chaotic evil, making it a formidable foe for adventurers in Dungeons & Dragons. It boasts a robust armor class of 15 due to its natural armor and has a substantial pool of hit points totaling 105, derived from 14d8 plus an additional 42. This enduring creature has a walking speed of 40 feet and is classified with a challenge rating of 5, reflecting its capability to provide a significant challenge to a party while granting 1,800 experience points upon defeat. The Likho stands out due to its high dexterity and charisma, providing it with excellent agility in combat and the ability to manipulate or influence others effectively. However, its intelligence is relatively average, which may limit its strategic thinking. Overall, the Likho combines physical prowess, magical resilience, and deceptive abilities, making it a potent adversary.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Likho can use a Multiattack action, enabling it to employ its Dis
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Likho
 
 *Medium* *Monstrosity* *Chaotic Evil*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The likho can use its Disruptive Gaze. It then makes four Claw attacks.
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.
 - **Disruptive Gaze:** One creature the likho can see within 60 feet of it must succeed on a DC 15 Charisma saving throw or have disadvantage on attack rolls, ability checks, and saving throws until the end of its next turn.
+</statblock>
 
 

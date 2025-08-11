@@ -1,0 +1,52 @@
+{
+    "name": "Dust Goblin Chieftain",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 44,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at 30 ft. speed",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "stealth",
+        "ambush"
+    ],
+    "adjectives": [
+        "cunning",
+        "quick",
+        "poisonous"
+    ],
+    "description": "A small humanoid covered in dust, proficient with a shortsword and light crossbow, wearing studded leather armor.",
+    "memorable": "Utilizes combat tactics that include ambushing tactics, poisonous strikes, and the ability to frighten enemies.",
+    "goals": "To ambush opponents and gain tactical advantages in combat.",
+    "relations": "Often found working alongside other goblins or creatures in ambush scenarios.",
+    "environment": "Deserted or dusty environments where stealth is advantageous.",
+    "strengths": "High dexterity makes it agile and hard to hit; can inflict significant poison damage.",
+    "weaknesses": "Low strength; less effective in direct confrontation without stealth.",
+    "attacks": "Attacks with shortsword or light crossbow, dealing piercing and poison damage.",
+    "most_powerful_ability": "Sneak Attack, which allows for extra damage when conditions are met.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in dim light as if it were bright light.",
+    "skills": "Skilled in stealth, enabling effective ambush tactics.",
+    "additional_information": [
+        "Advantage on saving throws against being charmed or frightened due to Alien Mind ability.",
+        "Can read surface thoughts of creatures within 30 feet.",
+        "Cunning Action allows for quick tactical positioning.",
+        "Can frighten enemies with its Twisted ability from hiding.",
+        "Parry ability enhances defense against melee attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small goblin with poison attacks",
+        "cunning goblin chieftain in dusty environment",
+        "ambush tactics of a dust goblin",
+        "swift melee attacker that uses poison",
+        "goblin that reads thoughts and ambushes"
+    ]
+}

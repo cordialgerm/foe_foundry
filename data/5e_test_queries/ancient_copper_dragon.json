@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Copper Dragon",
+    "queries": [
+        {
+            "query": "playful dragon with dark greenish-brown scales living in labyrinthine caves",
+            "variant": "dragon with dark scales that is playful and lives in rocky caves"
+        },
+        {
+            "query": "gargantuan creature with acid breath and a knack for riddles",
+            "variant": "large dragon with breath weapon and loves riddles"
+        },
+        {
+            "query": "intelligent dragon that can change shape and use magical abilities",
+            "variant": "dragon with high intelligence that can shapeshift and cast spells"
+        },
+        {
+            "query": "swift flying dragon with high AC and immunities in combat",
+            "variant": "fast dragon with high armor class and damage immunities"
+        },
+        {
+            "query": "mountain-dwelling dragon with abilities to frighten and confuse enemies",
+            "variant": "dragon that lives in mountains and has powers to frighten foes"
+        }
+    ]
+}

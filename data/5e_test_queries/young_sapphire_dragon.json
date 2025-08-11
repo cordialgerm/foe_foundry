@@ -1,0 +1,25 @@
+{
+    "name": "Young Sapphire Dragon",
+    "queries": [
+        {
+            "query": "large blue dragon with psionic abilities that flies",
+            "variant": "big blue dragon that has psionic powers and can fly"
+        },
+        {
+            "query": "dragon that uses telepathy and has high armor class",
+            "variant": "dragon with high AC and telepathic powers"
+        },
+        {
+            "query": "intelligent dragon immune to psychic damage and speaks multiple languages",
+            "variant": "smart dragon that can't be harmed by psychic damage and knows several languages"
+        },
+        {
+            "query": "dragon with a powerful breath attack and high hit points",
+            "variant": "dragon that has a strong breath ability and a lot of health points"
+        },
+        {
+            "query": "sapphire dragon that excels in spellcasting and has keen senses",
+            "variant": "blue dragon skilled in casting spells and with sharp senses"
+        }
+    ]
+}

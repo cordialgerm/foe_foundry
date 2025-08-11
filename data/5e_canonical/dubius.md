@@ -1,6 +1,8 @@
 <MonsterName/>Dubius</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>36</HP>
 <summary>Dubius is a small fiend characterized by its neutral evil alignment. It serves as a manipulative opponent in combat and excels at inducing fear and distrust among its enemies. With a decent speed of 30 feet and a respectable Armor Class of 14 due to its natural armor, it can evade some attacks, but it lacks exceptional physical combat abilities. Dubius has a total of 36 hit points, giving it average durability for its Challenge Rating of 2, which translates to a moderate level of threat for adventurers. One of its notable strengths is its ability to sap the morale of its foes through fear effects and manipulation, while it is particularly vulnerable to radiant damage.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Dubius also features reactions, including Hesitation and Self-Pity. With Hesitat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dubius
 
 *Small* *Fiend* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Self-Pity:** If a creature dubius can see within 30' of it regains hp dubius regains hp equal to half that amount.
 
 
+</statblock>
 
 

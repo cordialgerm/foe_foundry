@@ -1,0 +1,25 @@
+{
+    "name": "Huli Jing",
+    "queries": [
+        {
+            "query": "charming fox creature that can shapeshift into a human",
+            "variant": "fox-like creature that can become human and is charming"
+        },
+        {
+            "query": "medium fey that uses psychic attacks and has high Charisma",
+            "variant": "fey creature of medium size with strong psychic abilities and high charisma"
+        },
+        {
+            "query": "fey monster with a beautiful human form and psychic damage abilities",
+            "variant": "monster that is fey with charming human shape and can deal psychic damage"
+        },
+        {
+            "query": "Huli Jing abilities involving luck manipulation and shapechanging",
+            "variant": "abilities of the Huli Jing like changing shape and manipulating luck"
+        },
+        {
+            "query": "psychic damage dealer with a nine-tailed fox form and spellcasting",
+            "variant": "damage dealer with fox appearance that uses psychic attacks and spells"
+        }
+    ]
+}

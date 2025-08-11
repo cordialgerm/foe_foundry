@@ -1,6 +1,8 @@
 <MonsterName/>Woodwose</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Woodwose is a medium-sized humanoid creature known for its chaotic neutral alignment. It represents a nature-oriented being that possesses unique abilities allowing it to thrive in forested environments. Strong in terms of physical attributes, particularly in strength with a score of 16, it is capable of engaging in close combat effectively. However, it exhibits weak charisma, which hinders its social interactions. The Woodwose's dual speed of climbing and walking, alongside its capacity to perform innate spellcasting, make it an agile and versatile opponent. Its challenge rating of 1/2 indicates that it is a low-level creature, posing manageable difficulty for adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Woodwose can attack with a club, making a melee weapon 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Woodwose
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -54,5 +57,6 @@ At will: shillelagh
 - **Shortbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 5 (2d4) poison damage.
 
 
+</statblock>
 
 

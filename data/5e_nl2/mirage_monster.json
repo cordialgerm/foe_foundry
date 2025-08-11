@@ -1,0 +1,51 @@
+{
+    "name": "Mirage Monster",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 76,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "stealth",
+        "deception",
+        "ambush"
+    ],
+    "adjectives": [
+        "cunning",
+        "powerful"
+    ],
+    "description": "The Mirage Monster is a huge monstrosity capable of disguising itself as an inanimate object when motionless, featuring a strong physical build with a strength of 18, notable for its biting and pseudopod attacks.",
+    "memorable": "Its ability to disguise itself and control opponents through its Sticky trait makes it a formidable ambush predator.",
+    "goals": "To ambush and restrain its foes while controlling the battlefield.",
+    "relations": "Related to similar ambush predators and capable of commanding lesser creatures in its territory.",
+    "environment": "Typically found in areas where it can blend in, like ruins or dense undergrowth.",
+    "strengths": "Excels in stealth and deceptive tactics, with strong melee attacks and crowd control capabilities.",
+    "weaknesses": "Vulnerable to being revealed by water, which reduces the difficulty of escaping its grip.",
+    "attacks": "Can perform a Multiattack with biting and pseudopod strikes, applying both damage and control effects.",
+    "most_powerful_ability": "The ability to consume a creature with its Swallow action, granting it cover while inflicting continuous acid damage.",
+    "equipment": null,
+    "senses": "Possesses Telepathic Sense, allowing it to sense humanoids within 120 feet.",
+    "skills": "Demonstrates proficiency in stealth, enhancing its ambush tactics.",
+    "additional_information": [
+        "Can shapeshift into an inanimate object or return to true form as a bonus action.",
+        "Imposes significant battlefield control with its Sticky trait.",
+        "Uses Legendary Resistance for resilience against saving throw failures.",
+        "Has a Multiattack feature allowing simultaneous bite and pseudopod damage.",
+        "Its Swallow ability grants ongoing damage to swallowed creatures, enhancing its offensive capabilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monster that disguises as an object",
+        "huge ambush predator with sticky ability",
+        "monster that swallows and restrains creatures",
+        "cunning creature with telepathic sense",
+        "stealthy creature that excels in deception"
+    ]
+}

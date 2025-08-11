@@ -1,0 +1,25 @@
+{
+    "name": "Cadaver Sprite",
+    "queries": [
+        {
+            "query": "tiny undead creature with stealth abilities that can turn invisible",
+            "variant": "tiny undead sprite that can become invisible and is stealthy"
+        },
+        {
+            "query": "undead creature that uses a shortbow and can poison targets",
+            "variant": "undead monster that attacks with a shortbow and poisons its enemies"
+        },
+        {
+            "query": "creature with low strength but high dexterity that prefers ambush tactics",
+            "variant": "monster with weak strength but exceptional dexterity that likes to ambush"
+        },
+        {
+            "query": "sneaky undead that deals necrotic damage and has damage vulnerabilities",
+            "variant": "cunning undead sprite that inflicts necrotic damage and is weak to bludgeoning"
+        },
+        {
+            "query": "neutral evil undead sprite that is good at stealth and perception",
+            "variant": "neutral evil tiny undead sprite skilled in stealth and with decent perception"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Clockwork Assassin",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 99,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. climbing and walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "explosive",
+        "mechanical"
+    ],
+    "adjectives": [
+        "efficient",
+        "versatile",
+        "mobile"
+    ],
+    "description": "The Clockwork Assassin is a Medium Construct known for its precision and mechanical design, incorporating various gadgets to enhance its combat effectiveness.",
+    "memorable": "Its ability to deliver critical strikes against surprised foes makes it highly dangerous in stealthy scenarios.",
+    "goals": "To carry out stealthy assassinations and escape undetected.",
+    "relations": "Possible association with other constructs, or designed by a skilled artificer.",
+    "environment": "Typically found in urban areas or locations where stealth and agility are advantageous.",
+    "strengths": "Immunity to lightning and poison, and advantageous in surprise situations.",
+    "weaknesses": "Vulnerability to psychic damage that adversely affects its combat capabilities.",
+    "attacks": "Uses two rapier strikes in a multiattack, potentially delivering powerful sneak attacks and poison damage.",
+    "most_powerful_ability": "The Assassinate ability, granting critical hits against surprised enemies.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, aiding it in low-light conditions.",
+    "skills": "Possesses high proficiency in Stealth, allowing it to infiltrate and ambush effectively.",
+    "additional_information": [
+        "Immunities to conditions like charmed and frightened.",
+        "Explodes upon destruction, dealing area damage.",
+        "Capable of moving through narrow spaces by disassembling.",
+        "Magic Resistance grants advantage against spells.",
+        "High mobility through climbing makes it versatile."
+    ],
+    "damage_types": [
+        "poison",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical assassin that performs sneak attacks",
+        "explosive construct with stealth capabilities",
+        "poisonous damage dealer disguised as machinery",
+        "stealthy clockwork creature with critical hit advantage",
+        "efficient assassin construct with disassembly ability"
+    ]
+}

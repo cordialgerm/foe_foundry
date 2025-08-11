@@ -1,0 +1,51 @@
+{
+    "name": "Aatxe",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 105,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 50 ft.",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "protector",
+        "charge",
+        "shapechanger"
+    ],
+    "adjectives": [
+        "strong",
+        "durable",
+        "intimidating",
+        "guardian"
+    ],
+    "description": "The Aatxe is a large celestial being with a strong physical presence. It possesses impressive horns and hooves, aligning with its role as a guardian. Its lawful good nature drives it to protect others.",
+    "memorable": "The Aatxe's ability to charge at enemies, read surface thoughts, and resist magical effects make it a formidable foe and a powerful ally.",
+    "goals": "To act as a guardian and protector, engaging in combat to defend allies and intimidate foes.",
+    "relations": "It may serve celestial beings or deities, sharing common goals of protection and righteousness.",
+    "environment": "Typically found in areas that align with its lawful good nature, such as heavenly realms or locations of great importance.",
+    "strengths": "High strength and constitution, capable of dealing significant melee damage while withstanding attacks.",
+    "weaknesses": "Average dexterity, affecting its speed and agility compared to other creatures.",
+    "attacks": "Gore attack dealing significant piercing damage and can knock targets prone, in addition to a frightening ability affecting nearby enemies.",
+    "most_powerful_ability": "The ability to charge, allowing it to deal extra damage and potentially knock foes prone.",
+    "senses": null,
+    "skills": "Proficient in Athletics and Intimidation, demonstrating its physical prowess and capacity for intimidation.",
+    "additional_information": [
+        "Immune to being charmed and frightened.",
+        "Can polymorph into a Medium male humanoid.",
+        "Has magic resistance, gaining advantage on saving throws against spells.",
+        "Possesses legendary actions for tactical advantages.",
+        "Can read surface thoughts of creatures, providing strategic insight."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large celestial guardian",
+        "intimidating protector with charge ability",
+        "shapechanger celestial monster",
+        "celestial being with mind-reading powers",
+        "formidable celestial defender"
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Djinni Noble",
+    "creature_type": "Elemental",
+    "alignment": "Neutral Good",
+    "size": "Large",
+    "hp": 344,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "30 ft. walking speed and 90 ft. flying speed",
+    "role": "Artillery",
+    "tags": [
+        "elemental",
+        "djinn",
+        "air",
+        "storm",
+        "magic"
+    ],
+    "adjectives": [
+        "majestic",
+        "powerful",
+        "ethereal",
+        "dynamic"
+    ],
+    "description": "A large elemental creature made of swirling clouds, the Djinni Noble embodies the mastery of wind and storm.",
+    "memorable": "Its ability to control wind and weather makes it a formidable foe, capable of summoning whirlwinds and transforming into a giant form.",
+    "goals": "To assert control over storms and protect its domain within the Elemental Plane of Air.",
+    "relations": "Related to air elementals and other djinn.",
+    "environment": "Primarily found in the Elemental Plane of Air, often residing in stormy regions.",
+    "strengths": "Resistance to lightning and thunder damage, along with strong Dexterity and Charisma for evasive maneuvers and spellcasting.",
+    "weaknesses": "Average Intelligence may limit its strategic casting abilities compared to other spellcasters.",
+    "attacks": "Three scimitar attacks causing slashing and lightning damage, and a potent ranged lightning blast.",
+    "most_powerful_ability": "The ability to create a whirlwind that can restrain foes and control the battlefield.",
+    "senses": "Possesses a passive perception of 17, allowing it to be highly aware of its surroundings.",
+    "skills": "Skilled in Acrobatics, Insight, and Perception, enabling effective movement and situational awareness in combat.",
+    "additional_information": [
+        "Innate spellcasting with a spell save DC of 17.",
+        "Can cast powerful spells without the need for material components.",
+        "Transforms into a Huge creature once per day for enhanced combat capabilities.",
+        "Can planar shift to the Elemental Plane of Air once a day.",
+        "Creates a magical whirlwind that can restrain opponents."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Can cast several spells at will, including altering its form and creating wind barriers, along with limited daily spells such as conjuring elementals and controlling weather.",
+    "test_queries": [
+        "majestic storm elemental with spellcasting",
+        "powerful air creature with whirlwind abilities",
+        "large elemental that controls wind and storms",
+        "cloud creature that can become giant",
+        "elemental with resistance to lightning damage"
+    ]
+}

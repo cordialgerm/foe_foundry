@@ -1,0 +1,25 @@
+{
+    "name": "Nodosaurus",
+    "queries": [
+        {
+            "query": "large swamp-dwelling dinosaur with a strong tail attack",
+            "variant": "big dinosaur that lives in swamps and has a powerful tail strike"
+        },
+        {
+            "query": "beast that hides well in swampy environments and has poor intelligence",
+            "variant": "creature that can conceal itself in marshy areas and lacks intellect"
+        },
+        {
+            "query": "strong but dull beast that uses its tail in combat",
+            "variant": "powerful yet unintelligent creature that attacks with its tail"
+        },
+        {
+            "query": "Nodosaurus camouflage skill and melee damage",
+            "variant": "camouflage ability of Nodosaurus and its tail damage"
+        },
+        {
+            "query": "beast with natural armor and 45 hit points in swampy habitats",
+            "variant": "creature with natural defense and 45 health that thrives in wetlands"
+        }
+    ]
+}

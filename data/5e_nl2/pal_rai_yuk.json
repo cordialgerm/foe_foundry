@@ -1,0 +1,52 @@
+{
+    "name": "Pal-Rai-Yuk",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 133,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "burrow 40 ft., swim 60 ft., walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "water",
+        "predator",
+        "manipulative"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "malevolent"
+    ],
+    "description": "The Pal-Rai-Yuk is a Huge monstrosity with two heads, known for its slippery skin and predatory build, making it an imposing figure in both water and on land.",
+    "memorable": "Its ability to erase memories of its prey adds a psychological layer to its threat, making encounters with it particularly harrowing.",
+    "goals": "To hunt, control, and consume prey in a variety of environments, utilizing its unique abilities to isolate and incapacitate victims.",
+    "relations": "Can be encountered alongside aquatic creatures and may dominate lesser predators in its territory.",
+    "environment": "Often found in watery environments, but capable of burrowing and swimming effectively.",
+    "strengths": "High mobility with burrowing and swimming speeds, dual heads provide enhanced perception and resistance to various conditions.",
+    "weaknesses": null,
+    "attacks": "Multiattack allows it to make two bite attacks per turn, grappling targets effectively with each bite.",
+    "most_powerful_ability": "Forgotten Prey enables it to make opponents invisible and erases any memory of swallowed prey among their allies.",
+    "equipment": null,
+    "senses": "Possesses tremorsense to detect movements through vibrations, enhancing its hunting capabilities.",
+    "skills": "Proficient in athletics, showcasing strong physical prowess, with decent stealth abilities.",
+    "additional_information": [
+        "Cold damage resistance offers protection in icy conditions.",
+        "Magic Resistance grants it an edge against spells and magical effects.",
+        "Can swallow multiple Medium or smaller creatures, trapping them inside.",
+        "Holds breath for up to one hour, making it an effective ambush predator underwater.",
+        "Exceptional Charisma helps it manipulate and intimidate foes easily."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge aquatic predator with memory manipulation",
+        "monstrosity that swims and burrows swiftly",
+        "two-headed monster that erases memories",
+        "menacing water creature that can swallow prey",
+        "ambush predator capable of erasing existence"
+    ]
+}

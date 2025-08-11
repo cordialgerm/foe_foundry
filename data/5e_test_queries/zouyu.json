@@ -1,0 +1,25 @@
+{
+    "name": "Zouyu",
+    "queries": [
+        {
+            "query": "huge creature with chaotic good alignment that can manipulate luck",
+            "variant": "large monster that is chaotic good and has luck manipulation abilities"
+        },
+        {
+            "query": "monster that excels in mobility and has vulnerabilities to thunder damage",
+            "variant": "creature good at moving quickly but vulnerable to thunder attacks"
+        },
+        {
+            "query": "chaotic good monstrosity with high dexterity and perception skills",
+            "variant": "chaotic good monster with exceptional dexterity and great perception abilities"
+        },
+        {
+            "query": "Zouyu tactics for combat and abilities",
+            "variant": "strategies for fighting with Zouyu and its special abilities"
+        },
+        {
+            "query": "monster with a high Armor Class and significant hit points that can run fast",
+            "variant": "creature that has great AC and HP and can move quickly"
+        }
+    ]
+}

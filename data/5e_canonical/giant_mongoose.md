@@ -1,6 +1,8 @@
 <MonsterName/>Giant Mongoose</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>13</HP>
 <summary>The Giant Mongoose is a Medium-sized beast that serves as a clever and agile creature in any environment it inhabits. With a focus on speed and dexterity, it makes an exceptional scout or ambush predator. The creature has a respectable Armor Class of 13, complemented by its ability to resist poison damage and immunity to being poisoned. Although its hit points total just 13, it compensates for this with a notable speed of 30 feet and exceptional dexterity. The mongoose excels at stealth, boasting a very good stealth skill modifier, allowing it to slip past potential threats with ease. However, its low intelligence and charisma scores imply that it is not capable of complex problem-solving or persuasion. Overall, the Giant Mongoose is primarily a nimble and stealthy creature that can deal significant damage through its bite, while also being difficult to hit due to its evasive maneuvers.</summary>
 
 <detail>
@@ -28,6 +30,7 @@ In terms of reactions, the Giant Mongoose features a Defensive Roll ability. Thi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Mongoose
 
 *Medium* *Beast* *unaligned*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Defensive Roll:** The mongoose adds its Athletics bonus to its AC against one attack that would hit it. To do so, the mongoose must see the attacker.
 
 
+</statblock>
 
 

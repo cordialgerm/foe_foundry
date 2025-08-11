@@ -1,0 +1,25 @@
+{
+    "name": "Moonless Hunter",
+    "queries": [
+        {
+            "query": "fey creature that uses nightmares and thrives in darkness",
+            "variant": "fey being that thrives in dark and uses nightmares"
+        },
+        {
+            "query": "medium-sized creature with high dexterity and vulnerable to silver",
+            "variant": "medium creature with high agility and weakness to silvered weapons"
+        },
+        {
+            "query": "stealthy monster that can climb walls and has sunlight sensitivity",
+            "variant": "sneaky creature that climbs on walls and is sensitive to sunlight"
+        },
+        {
+            "query": "psychological manipulation monster that is neutral evil",
+            "variant": "neutral evil creature that uses psychological tactics"
+        },
+        {
+            "query": "hunter with briny embrace attack and magic resistance",
+            "variant": "hunter with water attack and resistance to magic"
+        }
+    ]
+}

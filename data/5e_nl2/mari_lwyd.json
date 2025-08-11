@@ -1,0 +1,51 @@
+{
+    "name": "Mari Lwyd",
+    "creature_type": "Undead",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 66,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "40 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "melee"
+    ],
+    "adjectives": [
+        "eerie",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Mari Lwyd is a large undead creature characterized by its eerie presence, possessing a strong bite and hooves for melee attacks, with a notable ability to recite rhymes that can affect opponents.",
+    "memorable": "Its unique combat abilities, including the duel of rhymes and innate spellcasting, make it an unpredictable and strategic opponent.",
+    "goals": "To challenge creatures through riddles and utilize its spellcasting to manipulate battles.",
+    "relations": "Often encountered in the company of other undead or as a guardian of haunted locations.",
+    "environment": "Haunted locales, graveyards, or areas with significant necromantic energy.",
+    "strengths": "Strong melee attacks, spellcasting abilities, and resistance to necrotic damage.",
+    "weaknesses": "Vulnerable to charm effects and has an average Charisma saving throw.",
+    "attacks": "Multiattack with a bite that deals piercing damage and hooves that deal bludgeoning damage.",
+    "most_powerful_ability": "Innate spellcasting allowing it to control the battlefield with spells like Animate Dead and Suggestion.",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Skilled in intimidation and exceptional in performance, allowing it to influence others effectively.",
+    "additional_information": [
+        "Immunities to poison and conditions like exhaustion and frightened.",
+        "Can grant itself advantage on saving throws against being turned.",
+        "Engages players in a battle of rhymes as a unique challenge.",
+        "A strategic layer introduced through 'Turned by Rhyme' ability.",
+        "Ability to raise fallen foes as undead minions with Animate Dead."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting with a focus on manipulation and control spells.",
+    "test_queries": [
+        "large undead creature with spellcasting",
+        "creature that challenges opponents to rhymes",
+        "eerie monster with strong melee attacks",
+        "undead that raises fallen foes",
+        "Mari Lwyd tactics in combat"
+    ]
+}

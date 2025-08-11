@@ -1,6 +1,8 @@
 <MonsterName/>Skin Bat</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Skin Bat is a small undead creature that embodies a blend of supernatural attributes and malevolent instincts. With a challenge rating of 1/2, it poses a moderate threat, especially in dimly lit environments where its qualities come into play. It has a decent Armor Class of 13 due to its natural armor and a moderate pool of hit points totaling 28. Though it lacks notable intelligence, the Skin Bat compensates with swift mobility, able to walk at 40 feet and fly at 10 feet, making it an agile combatant. However, it does have several weaknesses, notably its low Constitution and lack of control over any language, which limits its strategic capabilities in complex scenarios.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Skin Bat can use its Attract Bats reaction once per day. If it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skin Bat
 
 *Small* *Undead* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Attract Bats (1/Day):** When the skin bat is reduced to below half its hp maximum while underground or outside at night, it releases a high-frequency cry similar to that of an injured bat, attracting other bats to it. On initiative count 20 of the next round, 1d6 bats arrive and aid the skin bat. These bats aren’t under the skin bat’s control, but they protect it to the best of their abilities, attacking those that harm the skin bat.
+</statblock>
 
 

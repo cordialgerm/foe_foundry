@@ -1,0 +1,25 @@
+{
+    "name": "Giant Firestorm",
+    "queries": [
+        {
+            "query": "huge giant with fire and cold abilities",
+            "variant": "giant huge with cold and fire abilities"
+        },
+        {
+            "query": "strong melee attacker with high damage and elemental powers",
+            "variant": "melee attacker that is strong and has elemental powers with high damage"
+        },
+        {
+            "query": "fiery giant that can create lava geysers and deals cold damage",
+            "variant": "fiery giant that creates lava geysers and inflicts cold damage"
+        },
+        {
+            "query": "fire-themed giant that is immune to cold and fire damage",
+            "variant": "giant themed around fire with immunity to cold and fire"
+        },
+        {
+            "query": "massive giant with high strength and dangerous ranged attacks",
+            "variant": "giant massive with strength and dangerous ranged attacks"
+        }
+    ]
+}

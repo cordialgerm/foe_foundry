@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Dreadnought",
+    "queries": [
+        {
+            "query": "small agile humanoid with stealth abilities and a shortbow",
+            "variant": "small humanoid that is agile and has stealth skills plus a shortbow"
+        },
+        {
+            "query": "goblin that excels in ambush with high armor class",
+            "variant": "goblin creature that is good at ambushing and has a high armor class"
+        },
+        {
+            "query": "humanoid creature that can hide and disengage effectively",
+            "variant": "humanoid monster that can effectively hide and disengage"
+        },
+        {
+            "query": "goblin with darkvision and tactical combat skills",
+            "variant": "goblin that has darkvision and tactical abilities in combat"
+        },
+        {
+            "query": "Goblin Dreadnought's agility and nimble escape",
+            "variant": "goblin dreadnought's nimble escape ability and agility"
+        }
+    ]
+}

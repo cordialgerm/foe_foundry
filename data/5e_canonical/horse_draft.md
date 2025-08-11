@@ -1,6 +1,8 @@
 <MonsterName/>Horse, Draft</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>15</HP>
 <summary>The Draft Horse is a large beast commonly found in Dungeons & Dragons. It serves primarily as a work animal, utilized for its strength and ability to transport goods or carry riders. With a Challenge Rating of 1/4, it is considered easy to defeat in combat, but its notable attribute is its exceptional capacity for carrying heavy loads, making it invaluable in scenarios requiring transport or logistics. The Draft Horse possesses above-average physical attributes, particularly in Strength, allowing it to exert notable force, yet it has low mental capabilities, reflecting its role as a beast of burden rather than an intelligent creature. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of offensive capabilities, the Draft Horse can use its Hooves attack. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horse, Draft
 
 *Large beast*
@@ -44,5 +47,6 @@ Source: 5e_artisinal_monsters
 
 - **Hooves.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.
 
+</statblock>
 
 

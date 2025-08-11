@@ -1,0 +1,25 @@
+{
+    "name": "Akkorokamui",
+    "queries": [
+        {
+            "query": "gargantuan celestial creature that can heal allies and regenerate health",
+            "variant": "huge celestial monster that heals its friends and regenerates hit points"
+        },
+        {
+            "query": "creature with powerful tentacles that offers magical healing food",
+            "variant": "being with strong tentacles that provides enchanted healing flesh"
+        },
+        {
+            "query": "chaotic good celestial being that can swim and breathe underwater",
+            "variant": "good-aligned celestial entity that has swim capabilities and can breathe in water"
+        },
+        {
+            "query": "monster that has telepathy and resistance to magical effects",
+            "variant": "creature with mind-reading abilities and advantages against spells"
+        },
+        {
+            "query": "immense monster with high strength that deals double damage to buildings",
+            "variant": "large creature with great strength that inflicts double damage on structures"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Kapi",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "nimble",
+        "agile",
+        "stealthy"
+    ],
+    "adjectives": [
+        "medium",
+        "mobile",
+        "dexterous"
+    ],
+    "description": "The Kapi is a nimble humanoid with impressive Dexterity, characterized by its ability to climb and traverse terrain both vertically and horizontally. It is often seen wielding a quarterstaff.",
+    "memorable": "Its unique ability to take the Disengage action as a bonus allows it to evade attacks while remaining agile in combat.",
+    "goals": "The Kapi typically seeks to maneuver effectively in combat, avoid detection, and engage enemies from advantageous positions.",
+    "relations": "Kapi may be related or allied with other chaotic good beings and can be found in environments that support agility and stealth.",
+    "environment": "Usually found in various terrains that allow for climbing and acrobatics.",
+    "strengths": "High Dexterity enhances both evasion in combat and skills in Acrobatics and Stealth.",
+    "weaknesses": "Relatively low hit points make the Kapi vulnerable in drawn-out battles.",
+    "attacks": "The Kapi uses a quarterstaff in melee attacks, performs a 'Tail Trip' to knock foes prone, and can strike from range with a sling.",
+    "most_powerful_ability": "Nimble Feet, enabling it to disengage as a bonus action, enhances its ability to evade and reposition.",
+    "senses": "The Kapi has darkvision, allowing it to see in dim light up to 60 feet.",
+    "skills": "The Kapi is proficient in Acrobatics and Stealth, making it very competent in moving gracefully and avoiding detection.",
+    "additional_information": [
+        "Exceptional Dexterity valued at 18",
+        "Can grasp small objects with its prehensile tail",
+        "Uses a multiattack tactic with quarterstaff and tail trip"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "nimble humanoid with quick movements",
+        "agile creature that can climb and trip enemies",
+        "chaotic good character skilled in acrobatics",
+        "medium humanoid adept at stealth and evasion",
+        "creature with a prehensile tail for combat"
+    ]
+}

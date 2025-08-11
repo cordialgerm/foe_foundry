@@ -1,0 +1,53 @@
+{
+    "name": "Hooden Horse",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "spectral",
+        "manipulator"
+    ],
+    "adjectives": [
+        "chilling",
+        "formidable",
+        "eerie"
+    ],
+    "description": "A medium undead creature that embodies a spectral steed capable of hunting down wrongdoers, with notable physical prowess and eerie charm.",
+    "memorable": "It regenerates health when defeating foes and can command submission, acting as a chilling arbiter of justice.",
+    "goals": "To hunt down and exact justice upon wrongdoers connected to its creation.",
+    "relations": "May be associated with other undead creatures or entities seeking vengeance.",
+    "environment": "Typically found in locations tied to criminal activity or haunted areas.",
+    "strengths": "High strength and charisma, allowing it to be both a great combatant and manipulative in social interactions.",
+    "weaknesses": "Vulnerable to fire damage, possibly reducing its combat effectiveness against certain foes.",
+    "attacks": "Uses the Blade of Retribution to inflict necrotic damage with a potential for psychic damage through its psychic manipulation effects.",
+    "most_powerful_ability": "Harvest Life, allowing it to regain health by defeating its enemies.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 ft., allowing it to detect creatures without relying on sight.",
+    "skills": "Has a keen perception skill with a +5 modifier.",
+    "additional_information": [
+        "Immunity to necrotic and poison damage.",
+        "Can charm opponents, forcing them to approach it.",
+        "Automatically locates wrongdoers associated with its creation.",
+        "Resilient to psychological effects, immune to being frightened or charmed.",
+        "Capable of making multiattacks in combat."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "spectral undead horse tracking criminals",
+        "undead steed with healing ability",
+        "chilling horse that demands submission",
+        "powerful undead that hunts wrongdoers",
+        "necrotic damage dealing spectral steed"
+    ]
+}

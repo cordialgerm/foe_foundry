@@ -1,0 +1,25 @@
+{
+    "name": "Umbral Vampire",
+    "queries": [
+        {
+            "query": "dark undead creature that thrives in shadows and manipulates prey",
+            "variant": "creature of darkness that manipulates and thrives in shadows"
+        },
+        {
+            "query": "stealthy vampire with necrotic abilities that weakens enemies",
+            "variant": "vampire with necrotic powers that stealthily weakens foes"
+        },
+        {
+            "query": "monster that is vulnerable to sunlight and relies on stealth",
+            "variant": "creature sensitive to sunlight that depends on stealth"
+        },
+        {
+            "query": "Umbral Vampire tactics involving shadows and ambush attacks",
+            "variant": "tactics of Umbral Vampire using ambush and shadows"
+        },
+        {
+            "query": "powerful undead with strong Dexterity that drains strength",
+            "variant": "strong dexterous undead that reduces strength"
+        }
+    ]
+}

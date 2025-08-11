@@ -1,0 +1,25 @@
+{
+    "name": "Giant Earth Elemental",
+    "queries": [
+        {
+            "query": "large earth monster with strong melee attacks and burrowing ability",
+            "variant": "big elemental creature that can burrow and has powerful melee strikes"
+        },
+        {
+            "query": "elemental that deals double damage to structures and is immune to poison",
+            "variant": "creature immune to poison that can double damage against objects"
+        },
+        {
+            "query": "heavy hitter elemental that moves through earth unnoticed and has high hit points",
+            "variant": "powerful earth elemental with great hit points that can travel through the ground without detection"
+        },
+        {
+            "query": "sturdy elemental with low dexterity and high constitution found underground",
+            "variant": "durable earth creature with low agility and strong toughness that lives in the ground"
+        },
+        {
+            "query": "massive earth elemental that grapples foes and attacks with rocks",
+            "variant": "giant elemental that can grab enemies and throw boulders"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Hverhuldra",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 120,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "magical",
+        "water"
+    ],
+    "adjectives": [
+        "charming",
+        "nimble",
+        "versatile",
+        "resilient"
+    ],
+    "description": "The Hverhuldra is a small, enchanting fey entity, characterized by its aquatic affinity and mystical charm.",
+    "memorable": "Notable for its ability to manipulate water and execute powerful spells, the Hverhuldra can act as both a potent ally and a challenging opponent.",
+    "goals": "Typically seeks to protect its aquatic domain and assist those in need.",
+    "relations": "May be found alongside other fey creatures or in harmony with nature.",
+    "environment": "Usually located in water-rich areas like hot springs, creeks, or swamps.",
+    "strengths": "Immunities to fire and poison, resistance to cold, and a diverse array of spellcasting abilities.",
+    "weaknesses": "Vulnerability to cold damage diminishes its protective traits.",
+    "attacks": "Utilizes Multiattack with Steaming Fist for melee engagements and Scalding Stream as a powerful ranged attack.",
+    "most_powerful_ability": "Innate spellcasting enables the Hverhuldra to cast a variety of spells at will without components, enhancing its versatility in combat.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing low-light perception.",
+    "skills": "Strong in intimidation and survival, making it adept at navigating social interactions and wilderness scenarios.",
+    "additional_information": [
+        "Amphibious ability enables breathing in both air and water.",
+        "Can purify water of poison or disease.",
+        "Gains advantage on Dexterity (Stealth) checks while submerged.",
+        "When affected by cold damage, it can create a cloud of steam to obscure vision.",
+        "Uses Quick Rescue to offer allies underwater breathing."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting ability based on Charisma; includes spells such as Create or Destroy Water and Protection from Poison.",
+    "test_queries": [
+        "small charming fey creature with water powers",
+        "fey that can breathe underwater and purify water",
+        "versatile fey with scalding water attacks",
+        "magical creature immune to fire and poison",
+        "enchanting fey that assists allies in water"
+    ]
+}

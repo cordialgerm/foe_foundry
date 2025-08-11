@@ -1,0 +1,25 @@
+{
+    "name": "Swamp Adder",
+    "queries": [
+        {
+            "query": "small venomous snake that lives in swamps and can paralyze prey",
+            "variant": "venomous small snake living in swamps that can paralyze its prey"
+        },
+        {
+            "query": "stealthy swamp creature with poison abilities",
+            "variant": "swamp creature that is stealthy and has poison powers"
+        },
+        {
+            "query": "ambush predator found in murky wet environments",
+            "variant": "predator that ambushes in wet muddy environments"
+        },
+        {
+            "query": "Swamp Adder abilities in stealthy environments",
+            "variant": "abilities of the Swamp Adder in stealthy habitats"
+        },
+        {
+            "query": "creature with camouflage that has low hit points and paralyzing poison",
+            "variant": "creature with a camouflage ability that has low health and can poison to paralyze"
+        }
+    ]
+}

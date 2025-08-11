@@ -1,0 +1,54 @@
+{
+    "name": "Balor",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 262,
+    "ac": 19,
+    "srd": true,
+    "cr": "19",
+    "movement": "40 ft. walking, 80 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "demon",
+        "fiend",
+        "fire"
+    ],
+    "adjectives": [
+        "towering",
+        "muscular",
+        "chaotic",
+        "devastating"
+    ],
+    "description": "The Balor is a towering, demonic figure, standing over 12 feet tall with leathery wings and clad in dark, infernal armor. It wields a fiery whip and a massive, lightning-infused sword.",
+    "memorable": "The Balor embodies chaos and destruction, commanding legions of lesser demons and igniting the ground beneath it.",
+    "goals": "Fueled by a thirst for destruction and chaos, the Balor seeks to dominate and obliterate its foes.",
+    "relations": "May command an army of lesser demons in the Abyss.",
+    "environment": "Typically found in the Abyss or other infernal realms.",
+    "strengths": "Possesses exceptional Strength, high Charisma, and a variety of powerful magical and combat abilities.",
+    "weaknesses": "Susceptible to damage from non-magical weapons and relies heavily on fire damage.",
+    "attacks": "Uses a combination of a lightning-infused longsword and a fire whip to deal substantial damage from a distance.",
+    "most_powerful_ability": "Upon death, it unleashes a catastrophic explosion, dealing extensive fire damage to all nearby creatures.",
+    "senses": "Has truesight up to 120 feet, enabling it to detect invisible creatures.",
+    "skills": "Skilled in intimidation and has a high perception, making it difficult to deceive.",
+    "additional_information": [
+        "The fire damage dealt by the Balor bypasses resistance from creatures.",
+        "It has a powerful Fire Aura that inflicts damage to nearby creatures at the start of its turn.",
+        "Possesses Magic Resistance, granting it advantage on saving throws against spells.",
+        "Can teleport to quickly re-position in battle.",
+        "It's capable of dealing area damage with its Whip Crack ability."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "demonic fire creature",
+        "towering demon warrior",
+        "chaotic evil Balor",
+        "Abyssal general",
+        "flaming whip wielding demon"
+    ]
+}

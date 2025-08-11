@@ -1,0 +1,25 @@
+{
+    "name": "Kelp Eel",
+    "queries": [
+        {
+            "query": "huge plant creature that can grapple and ambush from water",
+            "variant": "huge creature of plant origin that grapples and ambushes from aquatic environments"
+        },
+        {
+            "query": "defensive plant monster with high hit points and natural armor",
+            "variant": "defensive plant-like monster with high HP and natural armor"
+        },
+        {
+            "query": "aquatic plant that dissolves when defeated and creates difficult terrain",
+            "variant": "plant creature from the water that disperses upon defeat and makes difficult terrain"
+        },
+        {
+            "query": "sea monster with kelp disguise and strong melee attacks",
+            "variant": "ocean creature that uses kelp as a disguise and has powerful melee strikes"
+        },
+        {
+            "query": "creature with high damage resistance and constricting abilities",
+            "variant": "monster that has strong damage resistance and capabilities to restrain foes"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Mandriano",
+    "queries": [
+        {
+            "query": "large plant creature that grapples and drains life",
+            "variant": "big plant monster that can grapple and drains life force"
+        },
+        {
+            "query": "dark evil plant that is vulnerable to fire",
+            "variant": "dark plant creature that's weak against fire damage"
+        },
+        {
+            "query": "plant monster with high strength that turns foes into undead",
+            "variant": "plant creature with strong power that makes enemies undead"
+        },
+        {
+            "query": "Mandriano ability to control undead and weakness to fire",
+            "variant": "Mandriano's ability to command undead and its fire vulnerability"
+        },
+        {
+            "query": "plant creature with combat abilities and low agility",
+            "variant": "plant monster with fighting skills and poor dexterity"
+        }
+    ]
+}

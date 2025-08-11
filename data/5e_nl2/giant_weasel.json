@@ -1,0 +1,50 @@
+{
+    "name": "Giant Weasel",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 9,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "predator",
+        "stealthy",
+        "beast"
+    ],
+    "adjectives": [
+        "agile",
+        "curious",
+        "sneaky"
+    ],
+    "description": "The Giant Weasel has a long, sleek body with sharp teeth, making it an efficient predator. It is known for its agility and stealth.",
+    "memorable": "Its ability to steal items from larger prey without being detected adds a clever twist to encounters.",
+    "goals": "Typically hunts small to medium-sized prey in forests or grasslands.",
+    "relations": "Often found alongside other forest creatures, but not particularly aggressive towards larger animals unless threatened.",
+    "environment": "Forests or grasslands",
+    "strengths": "Exceptional stealth and keen hearing and smell allow it to be an effective hunter.",
+    "weaknesses": "Low hit points make it fragile in direct confrontations.",
+    "attacks": "Makes a Bite attack dealing piercing damage, can also use a Grab attack to restrain foes.",
+    "most_powerful_ability": "Keen Hearing and Smell grants advantage on Perception checks relying on these senses.",
+    "equipment": null,
+    "senses": "Possesses heightened perception abilities, particularly with hearing and smell.",
+    "skills": "Proficient in Perception and Stealth, allowing it to detect hidden foes and move quietly.",
+    "additional_information": [
+        "Can release a foul-smelling spray that poisons nearby creatures.",
+        "Able to navigate well in low-light conditions with darkvision.",
+        "Highly effective at grappling and incapacitating prey.",
+        "Not naturally aggressive but defends itself fiercely if threatened.",
+        "Intelligent enough to exhibit curiosity."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "sneaky forest predator with keen senses",
+        "agile creature that hunts small animals",
+        "weasel that can steal items and grapple foes",
+        "stealthy beast with strong hearing and smell",
+        "quick predator in grasslands or forests"
+    ]
+}

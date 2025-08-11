@@ -1,0 +1,55 @@
+{
+    "name": "Horned Tauric",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "50 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "beast",
+        "agile",
+        "versatile"
+    ],
+    "adjectives": [
+        "horned",
+        "powerful",
+        "agile",
+        "observant"
+    ],
+    "description": "The Horned Tauric is a large fey creature with the strength of horned beasts and fey magic, featuring impressive agility alongside formidable melee and ranged attacks.",
+    "memorable": "Its dual nature combines physical prowess with magical agility, making it a dynamic combatant.",
+    "goals": "Typically hunts and scouts within its territory, engaging in combat to protect its domain.",
+    "relations": "May encounter various fey creatures and serves as a protector of its woodland home.",
+    "environment": "Often found in wooded areas or enchanted lands.",
+    "strengths": "High strength and dexterity allow it to deal significant damage while being agile in combat.",
+    "weaknesses": "Moderate hit points compared to the damage it can receive.",
+    "attacks": "Can attack with a pike and use its hooves, plus a ranged attack with a shortbow.",
+    "most_powerful_ability": "Deadeye Shot, allowing for a precise ranged attack with advantage once per day.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 17, making it very observant to hidden creatures.",
+    "skills": "Proficient in nature, perception, and survival, each with a +5 modifier.",
+    "additional_information": [
+        "Can execute a multiattack with both melee and ranged options.",
+        "Maneuverability in combat allows it to avoid opportunity attacks.",
+        "Gore attack can deal increased damage if it charges at its target.",
+        "Strong understanding of its environment due to high wisdom.",
+        "Communicates in multiple languages including Common, Elvish, and Sylvan."
+    ],
+    "damage_types": [
+        "piercing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fey creature with horns",
+        "versatile combatant in enchanted woods",
+        "horned agile monster capable of melee and ranged attacks",
+        "observant creature with high mobility and nature skills",
+        "powerful skirmisher that can move swiftly in battle"
+    ]
+}

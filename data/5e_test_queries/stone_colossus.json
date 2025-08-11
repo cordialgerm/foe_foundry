@@ -1,0 +1,25 @@
+{
+    "name": "Stone Colossus",
+    "queries": [
+        {
+            "query": "gargantuan stone construct with high durability and melee attacks",
+            "variant": "large stone monster with durability and strong melee damage"
+        },
+        {
+            "query": "creature immune to poison and psychic damage with heavy bludgeoning attacks",
+            "variant": "monster that is immune to psychic and poison damage and deals heavy bludgeoning damage"
+        },
+        {
+            "query": "massive construct that cannot be manipulated and delivers devastating attacks",
+            "variant": "huge construct that is unchangeable and has powerful attacks"
+        },
+        {
+            "query": "Stone Colossus abilities including slow effect and abilities against spells",
+            "variant": "gargantuan stone monster skills like slowing targets and spell resistance"
+        },
+        {
+            "query": "frontline combat monster with legendary actions and high hit points",
+            "variant": "battle-strong creature with legendary abilities and large health pool"
+        }
+    ]
+}

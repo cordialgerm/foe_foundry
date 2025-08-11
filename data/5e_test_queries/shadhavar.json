@@ -1,0 +1,25 @@
+{
+    "name": "Shadhavar",
+    "queries": [
+        {
+            "query": "large magical creature with hidden abilities in dark environments",
+            "variant": "big monster with dark abilities and hidden skills"
+        },
+        {
+            "query": "monstrosity that uses charm and can create magical darkness",
+            "variant": "creature that charms and creates dark magic"
+        },
+        {
+            "query": "stealthy monster with a horn that deals piercing damage",
+            "variant": "sneaky creature with a horn that does piercing damage"
+        },
+        {
+            "query": "strong creature with speed and incapacitating melody",
+            "variant": "powerful monster with fast movements and a captivating tune"
+        },
+        {
+            "query": "graceful large creature that manipulates combat with darkness",
+            "variant": "elegant big monster that controls battle using darkness"
+        }
+    ]
+}

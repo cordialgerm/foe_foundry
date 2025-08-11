@@ -1,6 +1,8 @@
 <MonsterName/>Pseudodragon Familiar</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>7</HP>
 <summary>The Pseudodragon is a tiny, dragon-like creature known for its role as a magical familiar. It is agile and offers significant advantages to spellcasters by enhancing their magic resistance and providing telepathic communication. With a challenge rating of 1/4, it is relatively weak in direct combat, displaying only limited offensive capabilities and low hit points. Despite its size and frailty, the Pseudodragon's unique abilities, such as its telepathy and resistance to magic, make it a valuable companion in both reconnaissance and magic-related endeavors.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Pseudodragon can use the Telepathic Static ability three times
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pseudodragon Familiar
 
 *Tiny* *Dragon*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Telepathic Static (3/Day):** The pseudodragon targets one creature it can see within 10 feet  forcing it to make a DC 11 Charisma saving throw. On a failure  its stunned until the end of its next turn as it suffers a barrage of telepathic imagery.
 
 
+</statblock>
 
 

@@ -1,0 +1,52 @@
+{
+    "name": "Garmvvolf",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 189,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "multi-headed",
+        "trampling",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing",
+        "persistent"
+    ],
+    "description": "The Garmvvolf is a Huge monstrosity with three heads, known for its powerful bite and regeneration abilities.",
+    "memorable": "Its ability to regenerate heads makes it a persistent foe in battle, creating a daunting challenge for adventurers.",
+    "goals": "The Garmvvolf typically seeks to engage in aggressive combat, overpowering foes through brute strength and tactical advantages.",
+    "relations": "It may be encountered with other monstrous allies, exploiting group tactics to overwhelm adventurers.",
+    "environment": "Usually found in wild, untamed areas or desolate regions where it can hunt freely.",
+    "strengths": "Exceptional physical strength and the ability to regenerate lost heads.",
+    "weaknesses": "Low Intelligence and Charisma, making it vulnerable to clever tactics and charm effects.",
+    "attacks": "Deals damage with its powerful bite attacks, inflicting both piercing and poison damage.",
+    "most_powerful_ability": "Tripartite Howl creates a cone of poison and thunder damage, while also imposing the frightened condition on its targets.",
+    "equipment": null,
+    "senses": "Has keen hearing and smell, granting it advantage on perception checks that rely on these senses.",
+    "skills": "Possesses a passive perception of 15, allowing it to detect hidden foes effectively.",
+    "additional_information": [
+        "Regenerates two heads for each lost head each turn unless damaged by fire.",
+        "Knocks enemies prone if charged and bitten during its movement.",
+        "Only one head remains alert while resting, making it difficult to ambush."
+    ],
+    "damage_types": [
+        "poison",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge multi-headed beast with poison attacks",
+        "monstrous creature that can regenerate heads",
+        "aggressive creature with trample ability",
+        "menacing beast that inflicts fear with howl",
+        "powerful adversary with keen senses and high hit points"
+    ]
+}

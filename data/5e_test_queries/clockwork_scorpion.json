@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Scorpion",
+    "queries": [
+        {
+            "query": "large mechanical creature that uses poison and grapples opponents",
+            "variant": "mechanical large creature that grapples and uses poison"
+        },
+        {
+            "query": "construct scorpion with high strength and poison attack",
+            "variant": "scorpion construct that has strong attacks and poison"
+        },
+        {
+            "query": "robotic creature immune to various conditions found in combat",
+            "variant": "combat robotic creature that is immune to many conditions"
+        },
+        {
+            "query": "Clockwork Scorpion abilities related to acid and hallucinations",
+            "variant": "abilities of Clockwork Scorpion including acid and hallucinatory effects"
+        },
+        {
+            "query": "scorpion-like creature that can\u2019t sleep and resists magic",
+            "variant": "creature like a scorpion that doesn't require sleep and resists magic"
+        }
+    ]
+}

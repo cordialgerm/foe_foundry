@@ -1,6 +1,8 @@
 <MonsterName/>Divi Noble</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>18</AC>
+<HP/>345</HP>
 <summary>The Divi Noble is a formidable Large Elemental creature, embodying the raw and unyielding power of earth. Its high Armor Class of 18 and significant Hit Points totaling 345 make it a tough opponent in combat, allowing it to endure significant damage. With a Challenge Rating of 11, it is suitable for mid-level adventurers who may find themselves challenged by its unique capabilities. The Divi Noble possesses an impressive Strength score of 22, making its physical attacks particularly devastating, while its Constitution score of 22 further enhances its resilience. However, it suffers from very low Intelligence, Wisdom, and Charisma scores, limiting its interaction capabilities and utility in social situations. Overall, the Divi Noble is a powerhouse in melee combat and terrain control, particularly in environments featuring earth or stone.</summary>
 
 <detail>
@@ -43,6 +45,7 @@ Lastly, the Divi Noble has a bonus action that is:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Divi Noble
 
 *Large* *Elemental*
@@ -81,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Stone Wall (1/Day):** A permanent stone wall magically rises from an earth or stone surface within 60 feet. The wall is 6 inches thick and can be up to 20 feet high and 30 feet long. If it appears in a creatures space, the creature can choose which side of the wall to move to. Each 10-foot-by-10-foot section of the wall is an object with AC 18 and 30 hit points.
 
 
+</statblock>
 
 

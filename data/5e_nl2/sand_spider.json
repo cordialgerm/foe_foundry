@@ -1,0 +1,53 @@
+{
+    "name": "Sand Spider",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 135,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "20 ft. walking, 30 ft. burrowing",
+    "role": "Ambusher",
+    "tags": [
+        "beast",
+        "ambusher",
+        "item",
+        "sand"
+    ],
+    "adjectives": [
+        "formidable",
+        "predatory",
+        "cunning"
+    ],
+    "description": "The Sand Spider is a large beast with powerful legs and a body well-adapted to sandy environments, using its camouflage to hide and ambush its prey.",
+    "memorable": "Its ability to ambush unsuspecting creatures from below the sand makes it a terrifying foe.",
+    "goals": "To ambush prey and protect its territory.",
+    "relations": "May be encountered with other sand-dwelling creatures or beasts.",
+    "environment": "Sandy areas, such as deserts or dunes.",
+    "strengths": "High Strength and Dexterity, good camouflage abilities, and predatory tactics.",
+    "weaknesses": "Low Intelligence and Charisma limit its tactical capabilities.",
+    "attacks": "Utilizes a multiattack with a powerful bite and long-reaching impaling legs, capable of grappling prey.",
+    "most_powerful_ability": "Trapdoor Ambush, allowing it to surprise creatures entering its burrow.",
+    "equipment": null,
+    "senses": "Possesses tremorsense and darkvision, enhancing its awareness of prey.",
+    "skills": "Excels in Stealth and Perception, making it highly effective in hunting.",
+    "additional_information": [
+        "Can inflict both piercing and poisonous damage with its bite.",
+        "Grapples and restrains smaller creatures for additional damage.",
+        "Ambush tactics make it especially dangerous in environments it thrives in.",
+        "Natural armor provides solid defense against attacks.",
+        "Capable of burrowing, it can quickly reposition itself."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambushing sand-dwelling predator",
+        "large beast that hides in sand",
+        "ferocious spider with burrowing abilities",
+        "cunning ambush predator in deserts",
+        "powerful creature with poisonous attacks"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Ancient River Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 372,
+    "ac": 20,
+    "srd": false,
+    "cr": "23",
+    "movement": "walk 60 ft., fly 80 ft., swim 100 ft.",
+    "role": null,
+    "tags": [
+        "water",
+        "dragon",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "formidable",
+        "territorial",
+        "immense",
+        "powerful"
+    ],
+    "description": "The Ancient River Dragon is a colossal creature with shimmering scales that allow it to blend into water. It commands the water with grace and speed, possessing a stately presence befitting its nature as a guardian of aquatic realms.",
+    "memorable": "This dragon can manipulate water and storms, creating whirlpools and controlling weather, making it a terrifying opponent in its domain.",
+    "goals": "To protect its territory in large bodies of water, maintain dominance over its environment, and deter intruders from its essence-linked area.",
+    "relations": "It may be considered a master of other aquatic creatures and could serve as a guardian to specific landmarks or areas.",
+    "environment": "Usually found in large bodies of water such as rivers, lakes, and seas.",
+    "strengths": "Immunity to fatigue and resistance to damage from nonmagical weapons enhances its combat effectiveness, making it a durable foe.",
+    "weaknesses": "Vulnerable to magical attacks despite its impressive defenses.",
+    "attacks": "It can use its powerful bite and claws for melee attacks, delivering devastating piercing and slashing damage.",
+    "most_powerful_ability": "The Torrential Breath can unleash a devastating stream of water, dealing bludgeoning damage and knocking enemies prone.",
+    "equipment": null,
+    "senses": "Has a remarkable tremorsense of 300 feet that allows it to detect vibrations in water, alongside a passive perception of 24.",
+    "skills": "Excels in Acrobatics, Insight, Perception, and Stealth, making it a clever and elusive creature.",
+    "additional_information": [
+        "Can breathe both air and water, allowing versatility in combat.",
+        "Legendary Resistance allows it to overcome failed saving throws a limited number of times per day.",
+        "Possesses unique aquatic abilities such as creating whirlpools and controlling water flow.",
+        "Spiritually linked to a specific area, affecting creatures that enter if it dies.",
+        "Has innate spellcasting capabilities focused on control over water and weather."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can innately cast spells that control water, create fog, and enhance mobility without material components.",
+    "test_queries": [
+        "formidable water dragon",
+        "ancient river guardian",
+        "gargantuan aquatic creature",
+        "dragon controlling weather",
+        "mythical dragon of the rivers"
+    ]
+}

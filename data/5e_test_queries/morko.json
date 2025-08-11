@@ -1,0 +1,25 @@
+{
+    "name": "Morko",
+    "queries": [
+        {
+            "query": "small fey creature that thrives on mischief and deception",
+            "variant": "fey creature small that loves mischief and thrives in deception"
+        },
+        {
+            "query": "monster resistant to fire with magical resistance and cunning abilities",
+            "variant": "creature with magical resistance and fire resistance along with cunning abilities"
+        },
+        {
+            "query": "chaotic evil fey that can shrink and curse with its gaze",
+            "variant": "fey chaotic evil that can curse with its gaze and shrink in size"
+        },
+        {
+            "query": "creature with stealth skills that attacks with a spear",
+            "variant": "creature that attacks with spear and has stealth skills"
+        },
+        {
+            "query": "fey with low charisma and high dexterity skills",
+            "variant": "fey with high dexterity and low charisma skills"
+        }
+    ]
+}

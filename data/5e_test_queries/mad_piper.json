@@ -1,0 +1,25 @@
+{
+    "name": "Mad Piper",
+    "queries": [
+        {
+            "query": "musical construct that inspires allies and frightens enemies",
+            "variant": "construct that plays music to inspire friends and scare foes"
+        },
+        {
+            "query": "large construct with powerful melee attacks and low dexterity",
+            "variant": "big construct known for strong melee hits but lacks agility"
+        },
+        {
+            "query": "creature that causes fear with its haunting tunes",
+            "variant": "monster that plays scary music to instill fear"
+        },
+        {
+            "query": "construct that can inspire and has bludgeoning attacks",
+            "variant": "creature that inspires allies and strikes with bludgeoning damage"
+        },
+        {
+            "query": "supportive monster with musical abilities in combat",
+            "variant": "helping creature with music skills for battle"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Tosculi Elite Bow Raider",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 17,
+    "srd": false,
+    "cr": "5",
+    "movement": "60 feet walking, 30 feet flying",
+    "role": "Skirmisher",
+    "tags": [
+        "archer",
+        "hive creature",
+        "stealthy"
+    ],
+    "adjectives": [
+        "elite",
+        "tactical",
+        "dexterous"
+    ],
+    "description": "The Tosculi Elite Bow Raider is a Medium humanoid with remarkable dexterity, excelling in ranged combat while being resilient in melee situations. It has a strong bow and claws for close encounters.",
+    "memorable": "This creature's ability to enhance ranged attacks and its connection to its hive queen is particularly unique.",
+    "goals": "To dominate the battlefield through superior ranged attacks and tactical mobility.",
+    "relations": "Part of a hive, may work alongside other Tosculi or serve a hive queen.",
+    "environment": "Typically found in areas where it can utilize its stealth and mobility for ambush tactics.",
+    "strengths": "Exceptional mobility allowing repositioning, high dexterity enhancing attack rolls, and good resilience from its Constitution score.",
+    "weaknesses": "Relies heavily on ranged attacks; can struggle in close combat without support.",
+    "attacks": "Can perform dual attacks using either claws in melee or longbow from a distance, capable of significant damage.",
+    "most_powerful_ability": "The Archery ability allows for extra damage on ranged weapon attacks.",
+    "equipment": null,
+    "senses": "Possesses darkvision, enabling it to see in low light conditions, and has a passive Perception of 15 for heightened awareness.",
+    "skills": "Proficient in Stealth and Perception, further enhancing its ability to ambush and detect threats.",
+    "additional_information": [
+        "Can detect its hive queen within 300 feet.",
+        "Gains advantage on ranged attacks within 5 feet without suffering disadvantage.",
+        "Utilizes Skirmisher ability for tactical movement."
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid bowslinger with hive link",
+        "Tosculi creature skilled in stealth",
+        "dexterous ranged attacker flying creature",
+        "elite fighter with queen detection ability",
+        "skirmisher that excels in ambush tactics"
+    ]
+}

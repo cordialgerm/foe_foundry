@@ -1,0 +1,25 @@
+{
+    "name": "Khodumodumo",
+    "queries": [
+        {
+            "query": "gargantuan earthen hill monster with impaling tongues",
+            "variant": "gargantuan monster that appears as an earthen hill and has tongues"
+        },
+        {
+            "query": "monster that swallows creatures and is very strong",
+            "variant": "creature that can swallow creatures and has high strength"
+        },
+        {
+            "query": "powerful monstrous creature with fire resistance and stealth",
+            "variant": "strong monster that can resist fire and is stealthy"
+        },
+        {
+            "query": "monstrosity with natural armor and exceptional perception skills",
+            "variant": "creature with natural armor and great skills in perception"
+        },
+        {
+            "query": "Khodumodumo combat tactics with multiple attacks",
+            "variant": "combat strategies for Khodumodumo with its multiattack"
+        }
+    ]
+}

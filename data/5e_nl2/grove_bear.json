@@ -1,0 +1,48 @@
+{
+    "name": "Grove Bear",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "40 ft. walking and 30 ft. climbing speed",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "grappler",
+        "nature"
+    ],
+    "adjectives": [
+        "strong",
+        "adaptable"
+    ],
+    "description": "The Grove Bear is a notably strong medium-sized beast characterized by its exceptional physical abilities and adaptability to diverse environments. It has sharp claws and a powerful build, making it a formidable opponent in close combat.",
+    "memorable": "Its ability to grapple effectively allows it to control its foes, showing surprising tactical prowess for a creature of its low intelligence.",
+    "goals": "The Grove Bear typically serves as a guardian of natural areas, protecting its territory from intruders.",
+    "relations": "It may be found in forests and other natural environments, possibly alongside other wildlife.",
+    "environment": "Forests and natural areas.",
+    "strengths": "Strong melee attacks combined with grappling ability make it a threat in combat.",
+    "weaknesses": "Low intelligence and social skills limit its interactions and problem-solving capabilities.",
+    "attacks": "It uses powerful claws to deal slashing damage and grapple opponents.",
+    "most_powerful_ability": "Grappler ability allows it to maintain control over grappled foes. ",
+    "senses": "The Grove Bear has keen smell, granting it advantage on perception checks that rely on scent.",
+    "skills": "Its perception skill is fairly good, allowing it to detect intruders effectively.",
+    "additional_information": [
+        "Has keen smell for tracking.",
+        "Grapples opponents to control combat.",
+        "Serves as a guardian of natural areas.",
+        "Resilient against physical challenges.",
+        "Fast movement with climbing abilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong bear that grapples opponents",
+        "medium beast adept at tracking scents",
+        "bear with climbing speed and strong claws",
+        "wildlife guardian in forest areas",
+        "bear known for grappling and strong melee attacks"
+    ]
+}

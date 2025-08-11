@@ -1,6 +1,8 @@
 <MonsterName/>Bukavac</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>199</HP>
 <summary>The Bukavac is a large and formidable monstrosity characterized by its Neutral Evil alignment. It boasts impressive physical capabilities, including high strength and constitution, making it a resilient creature that can withstand significant damage. With a challenge rating of 9, it is considered a serious threat, particularly due to its capacity for dealing substantial damage in melee combat and its ability to create devastating area effects with its special abilities. However, its intelligence is notably low, which may limit its strategic thinking in combat situations. Its reliance on physical prowess and its moderate speed give it certain strengths, but its relatively low armor class could be seen as a weakness.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Bukavac has a special ability called Croaking Blast that can b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bukavac
 
 *Large* *Monstrosity* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) slashing damage, and the target is grappled (escape DC 16) if it is a Medium or smaller creature. The bukavac can have no more than two creatures grappled at a time.
 - **Gore:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) piercing damage.
 - **Croaking Blast (Recharge 5–6):** A bukavac can emit a howling thunderclap in a 15-foot radius. Each creature in that area must make a DC 16 Constitution saving throw. On a failure, a creature takes 36 (8d8) thunder damage and is deafened until cured by the lesser restoration spell or similar magic. On a success, a creature takes half the damage and isn’t deafened.
+</statblock>
 
 

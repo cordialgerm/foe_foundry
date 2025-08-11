@@ -1,0 +1,25 @@
+{
+    "name": "Dubius",
+    "queries": [
+        {
+            "query": "small fiend with fear-inducing abilities",
+            "variant": "small fiend that induces fear with abilities"
+        },
+        {
+            "query": "creature that sows distrust and has low strength",
+            "variant": "creature that has low strength and creates distrust"
+        },
+        {
+            "query": "manipulative monster that thrives in combat via mental attacks",
+            "variant": "manipulative fiend that excels in combat using mental attacks"
+        },
+        {
+            "query": "neutral evil fiend vulnerable to radiant damage",
+            "variant": "neutral evil creature that is vulnerable to radiant damage"
+        },
+        {
+            "query": "monster with darkvision that uses Memory of Shame",
+            "variant": "creature that has darkvision and can use Memory of Shame"
+        }
+    ]
+}

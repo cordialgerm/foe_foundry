@@ -1,0 +1,25 @@
+{
+    "name": "Fext",
+    "queries": [
+        {
+            "query": "undead creature with magical attacks and high armor class",
+            "variant": "undead monster that has magical attacks and a high AC"
+        },
+        {
+            "query": "medium powerful undead with spell-based attacks and piercing damage resistance",
+            "variant": "strong medium undead that relies on spells and is resistant to piercing damage"
+        },
+        {
+            "query": "creature with exceptional charisma that is immune to frightened and poisoned",
+            "variant": "monster with high charisma that can't be frightened or poisoned"
+        },
+        {
+            "query": "undead monster with darkvision and truesight that uses psychic damage",
+            "variant": "undead creature that has darkvision and can deal psychic damage"
+        },
+        {
+            "query": "Fext abilities including Patron's Might and Eldritch Weapons",
+            "variant": "abilities of the Fext like Eldritch Weapons and Patron\u2019s Might"
+        }
+    ]
+}

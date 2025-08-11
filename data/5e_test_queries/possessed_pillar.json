@@ -1,0 +1,25 @@
+{
+    "name": "Possessed Pillar",
+    "queries": [
+        {
+            "query": "large magical guardian with high strength and magnetic abilities",
+            "variant": "strong big guardian that uses magnetic powers and magic"
+        },
+        {
+            "query": "construct that immobilizes with metal weapons and has magical attacks",
+            "variant": "creature that traps metal weapons and deals magic damage"
+        },
+        {
+            "query": "pillar statue with strong durability and false appearance",
+            "variant": "statue-like entity with great resistance and hidden identity"
+        },
+        {
+            "query": "Construct with 95 hit points that attacks with a slam",
+            "variant": "Creature with 95 health that uses slamming attacks"
+        },
+        {
+            "query": "guardian with immunity to alterations and strong melee attacks",
+            "variant": "protector with resistance to changes and powerful physical attacks"
+        }
+    ]
+}

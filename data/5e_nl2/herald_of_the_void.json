@@ -1,0 +1,56 @@
+{
+    "name": "Herald of the Void",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 123,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "hover, walk 30 ft., fly 50 ft.",
+    "role": "Artillery",
+    "tags": [
+        "fiend",
+        "chaos",
+        "psychic",
+        "cold"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "intangible",
+        "mobile"
+    ],
+    "description": "The Herald of the Void is a powerful and imposing Large Fiend with a reputation for both chaos and cerebral might. It features an ethereal form that allows it to hover and fly with elegance, wielding chilling cold and force magic with deadly precision.",
+    "memorable": "The Herald's ability to vaporize objects upon contact and create a cone of psychic energy makes it a truly unique threat.",
+    "goals": "To instill chaos and destruction, serving as an avatar of the Void.",
+    "relations": "Could be encountered alongside other fiends or chaotic entities.",
+    "environment": "Commonly found in dark realms or chaotic planes.",
+    "strengths": "Immunities to cold, necrotic, and radiant damage, along with a high Dexterity and Constitution, grant it exceptional defensive capabilities.",
+    "weaknesses": "Relatively average Strength limits its physical melee attack potency, relying more on finesse and ranged options.",
+    "attacks": "Utilizes Void Claw melee attacks and the powerful Void Ray, combining cold and force damage.",
+    "most_powerful_ability": "The Final Song, unleashing a psychic cone attack that can devastate those unprepared for its cosmic melody.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet and has a passive Perception of 20, showcasing exceptional awareness.",
+    "skills": "Excels in Perception and Stealth, making it difficult to detect and evade.",
+    "additional_information": [
+        "Can vaporize objects that touch it",
+        "Legendary Resistance allows it to succeed on failed saving throws",
+        "Zero-Dimensional ability enables movement through any space without squeezing",
+        "Can provide temporary hit points to allies that understand Void Speech",
+        "Immunity to various conditions adds to its formidable nature"
+    ],
+    "damage_types": [
+        "cold",
+        "force",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fiend that sings doom",
+        "mobile monster with psychic abilities",
+        "cold damage fiend with superb evasion",
+        "vaporizing creature from the Void",
+        "intangible large fiend with deadly claws"
+    ]
+}

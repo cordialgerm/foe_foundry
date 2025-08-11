@@ -1,6 +1,8 @@
 <MonsterName/>Adult Amethyst Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>18</AC>
+<HP/>220</HP>
 <summary>The Adult Amethyst Dragon is a powerful and formidable foe within the Dungeons & Dragons universe, classified as a Huge Dragon with a Challenge Rating of 17. This dragon boasts an impressive Armor Class of 18 and an extensive pool of Hit Points totaling 220, indicating its considerable resilience in battle. As a master of psionics, the Amethyst Dragon excels in controlling the battlefield through its powerful abilities, particularly its capacity to charm and manipulate its enemies. While it possesses good physical capabilities, with strong Strength, Dexterity, and Constitution scores, it is its Intelligence and Charisma that truly set it apart, giving it exceptional prowess in spellcasting and telepathic interactions. One notable weakness is its dependency on its telepathic powers; if unable to use them, it may find itself less effective in combat.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Adult Amethyst Dragon serves as an unparalleled foe or potential al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Amethyst Dragon
 
 *Huge* *Dragon*
@@ -76,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Stupefy:** The dragon targets a creature within 60 feet. If the target is concentrating on a spell, it must make a DC 19 Constitution saving throw or lose concentration.
 - **Psionic Wave (Costs 2 Actions):** The dragon uses Psionic Wave.
 - **Captivating Harmonics (1/Day):** Each creature of the dragons choice within 90 feet makes a DC 16 Wisdom saving throw. On a failure, it becomes psionically charmed by the dragon for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

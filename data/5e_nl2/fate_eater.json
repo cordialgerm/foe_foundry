@@ -1,0 +1,52 @@
+{
+    "name": "Fate Eater",
+    "creature_type": "Aberration",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 130,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walks at a speed of 40 feet",
+    "role": null,
+    "tags": [
+        "psychic",
+        "manipulator",
+        "aberration"
+    ],
+    "adjectives": [
+        "dark",
+        "unsettling",
+        "potent"
+    ],
+    "description": "The Fate Eater is a medium aberration known for its unsettling nature, embodying the concept of manipulating destiny.",
+    "memorable": "It can inflict psychic damage and alter the fate of its enemies, introducing a strategic layer to combat.",
+    "goals": "To manipulate destiny and overwhelm foes with psychic attacks.",
+    "relations": "Can be related to other psychic creatures or beings with fate-manipulating abilities.",
+    "environment": "Often found in locations that embody mystery or uncertainty, such as ancient temples or areas with a strong magical presence.",
+    "strengths": "Possesses high Intelligence and strong melee attacks combining slashing and necrotic damage.",
+    "weaknesses": "Low Charisma affects social interactions, and it does not excel in Dexterity.",
+    "attacks": "Employs Multiattack with two Bite attacks, dealing slashing and necrotic damage.",
+    "most_powerful_ability": "Alter Fate allows it to cause significant psychic damage and manipulate an enemy's fate.",
+    "equipment": null,
+    "senses": "It has truesight up to 60 feet, allowing it to see through illusions and detect hidden creatures.",
+    "skills": "Excels in Arcana, History, and Religion with a +7 modifier.",
+    "additional_information": [
+        "Immune to charming and frightening conditions.",
+        "Has a unique ability, Visionary Flesh, that poisons those who consume its flesh.",
+        "High Strength enables effective melee combat.",
+        "Can communicate telepathically over a distance of 100 feet.",
+        "Has a substantial HP pool, making it difficult to defeat quickly."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psychic creature that manipulates destiny",
+        "dark aberration with potent psychic attacks",
+        "creature that alters fate and inflicts poison",
+        "medium monster known for its unsettling nature",
+        "aberration with truesight and psychic abilities"
+    ]
+}

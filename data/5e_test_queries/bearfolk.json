@@ -1,0 +1,25 @@
+{
+    "name": "Bearfolk",
+    "queries": [
+        {
+            "query": "humanoid bear creature with strong melee attacks and keen smell ability",
+            "variant": "humanoid bearcharacter that has strong melee attacks and keen smell ability"
+        },
+        {
+            "query": "medium-sized bear-like humanoid that excels in combat and has low intelligence",
+            "variant": "medium bear-like humanoid that excels in fights but has low intelligence"
+        },
+        {
+            "query": "frontline melee combatant with resistance to damage and frenzy ability",
+            "variant": "frontline fighter that has damage resistance and a frenzy ability"
+        },
+        {
+            "query": "chaotic good humanoid that tracks enemies using sense of smell and has a battleaxe",
+            "variant": "chaotic good creature that tracks foes with sense of smell and uses a battleaxe"
+        },
+        {
+            "query": "durable bearfolk that can perform multiattacks with different weapons",
+            "variant": "sturdy bearfolk that can do multiple attacks with various weapons"
+        }
+    ]
+}

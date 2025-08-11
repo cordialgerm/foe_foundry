@@ -1,0 +1,52 @@
+{
+    "name": "Ouroboros",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 94,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "rebirth",
+        "magic",
+        "powerful"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "durable",
+        "adaptable"
+    ],
+    "description": "The Ouroboros is a massive dragon embodying rebirth and transformation, featuring impressive physical attributes and variegated scales.",
+    "memorable": "Its ability to rebirth itself upon death introduces high-stakes outcomes for both allies and foes.",
+    "goals": "The Ouroboros seeks to embody transformation and create unpredictable scenarios in battle.",
+    "relations": "It may be encountered alongside other magical creatures or dragons.",
+    "environment": "Typically found in magical or ancient locations rich in lore.",
+    "strengths": "Strong melee attack, high hit points, and versatile damage types.",
+    "weaknesses": "Average intelligence and charisma scores may limit strategic interactions.",
+    "attacks": "Two bite attacks that deliver consistent piercing damage and an Introspective Presence that incapacitates foes.",
+    "most_powerful_ability": "Energetic Rebirth allows it to heal allies or harm enemies upon its death.",
+    "equipment": null,
+    "senses": "Possesses blindsight to track creatures within 60 feet without relying on sight.",
+    "skills": "Excels in Arcana, History, and Perception, showcasing exceptional knowledge in magical and historical matters.",
+    "additional_information": [
+        "Can change damage immunity as a bonus action.",
+        "Kaleidoscopic Breath allows it to choose damage type dynamically.",
+        "Reactive Hide grants resistance to damage types.",
+        "Legendary actions provide versatile combat options.",
+        "Introspective Presence can incapacitate multiple creatures at once."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive dragon with rebirth ability",
+        "dragon that can heal allies and harm enemies",
+        "Ouroboros dragon with magical attacks",
+        "introspective presence incapacitating enemies",
+        "dragon with versatile breath attack options"
+    ]
+}

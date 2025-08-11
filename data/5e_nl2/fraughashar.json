@@ -1,0 +1,54 @@
+{
+    "name": "Fraughashar",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 22,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "25 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "cold",
+        "agile",
+        "cunning"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "icy",
+        "agile"
+    ],
+    "description": "Fraughashar is a small fey characterized by its cunning nature and affinity for icy terrains. It has a dexterous build and moves gracefully over snow and ice.",
+    "memorable": "Its ability to walk on ice without hindrance and its tactical use of cold spells make it a formidable foe in icy environments.",
+    "goals": "To deceive and ambush adventurers in icy terrain, exploiting its agile nature.",
+    "relations": "May be found in the company of other fey creatures or ice elementals, serving them or acting independently.",
+    "environment": "Icy terrains, such as snowy mountains or frozen forests.",
+    "strengths": "High agility and specialized movement in icy environments, along with damage immunity to cold.",
+    "weaknesses": "Low strength and charisma, making it vulnerable in direct confrontations.",
+    "attacks": "Utilizes bite and dagger attacks, combined with a potent frost bolt that deals cold damage from a distance.",
+    "most_powerful_ability": "Frost Bolt, a ranged spell attack that deals significant cold damage.",
+    "equipment": "Leather armor and a shield for enhanced defense.",
+    "senses": "Possesses a moderate passive perception of 10.",
+    "skills": "Proficient in Stealth, allowing it to hide effectively.",
+    "additional_information": [
+        "Has advantage on saving throws against being knocked prone while on ice.",
+        "Good defense with an AC of 15.",
+        "Can evade threats easily due to its high Dexterity.",
+        "Relatively low health with only 22 hit points, making it fragile.",
+        "The clever use of environment and speed provides tactical advantages."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast Frost Bolt, which deals cold damage.",
+    "test_queries": [
+        "small cunning fey creature on ice",
+        "cold immune fey that attacks with frost bolt",
+        "agile small monster that lives in icy terrains",
+        "stealthy creature with frost attacks",
+        "ice walker fey that avoids being knocked prone"
+    ]
+}

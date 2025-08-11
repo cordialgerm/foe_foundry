@@ -1,0 +1,25 @@
+{
+    "name": "Quasit",
+    "queries": [
+        {
+            "query": "small fiend that can turn invisible and shapechange",
+            "variant": "tiny fiend capable of shapeshifting and becoming invisible"
+        },
+        {
+            "query": "mischievous imp-like creature that serves demons",
+            "variant": "trickster demon servant that looks like an imp"
+        },
+        {
+            "query": "chaotic evil fiend known for stealth and ambush tactics",
+            "variant": "chaotic evil creature with stealth abilities and surprise attack skills"
+        },
+        {
+            "query": "tiny creature resistant to magic and immune to poison",
+            "variant": "small fiend immune to poisoned conditions and magical effects"
+        },
+        {
+            "query": "demonic spy with the ability to frighten enemies",
+            "variant": "demon familiar capable of causing fear in opponents"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Green Hag",
+    "queries": [
+        {
+            "query": "malevolent fey creature with green skin that lives in swamps",
+            "variant": "fey creature with green skin that is malevolent and dwells in swamps"
+        },
+        {
+            "query": "tricky shapeshifting hag that uses illusions to deceive travelers",
+            "variant": "shapeshifting hag that is tricky and uses illusions to mislead travelers"
+        },
+        {
+            "query": "dark forest creature known for cursing and manipulation of others",
+            "variant": "creature from dark forests famous for manipulating and cursing others"
+        },
+        {
+            "query": "creepy fey hag with claws and amphibious abilities",
+            "variant": "fey hag with sharp claws and the ability to breathe both air and water"
+        },
+        {
+            "query": "hag that casts spells and inflicts hexes on adventurers",
+            "variant": "hag known for casting hexes and spells on adventurers"
+        }
+    ]
+}

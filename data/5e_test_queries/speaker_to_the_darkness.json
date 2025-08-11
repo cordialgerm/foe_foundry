@@ -1,0 +1,25 @@
+{
+    "name": "Speaker to the Darkness",
+    "queries": [
+        {
+            "query": "small humanoid creature that uses fear and necrotic damage",
+            "variant": "small human-like being that utilizes necrotic damage and fear tactics"
+        },
+        {
+            "query": "chaotic evil monster that summons ghasts in battle",
+            "variant": "chaotic evil creature that can conjure ghasts during combat"
+        },
+        {
+            "query": "creature with darkvision that creates magical darkness",
+            "variant": "being with darkvision who can generate magical darkness"
+        },
+        {
+            "query": "humanoid with high Constitution and Charisma",
+            "variant": "human-like creature with excellent Constitution and Charisma scores"
+        },
+        {
+            "query": "monster vulnerable to radiant damage that uses Boon of the Bat",
+            "variant": "creature susceptible to radiant damage that has the ability Boon of the Bat"
+        }
+    ]
+}

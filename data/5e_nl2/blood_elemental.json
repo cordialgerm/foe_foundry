@@ -1,0 +1,52 @@
+{
+    "name": "Blood Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 95,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "blood",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "resilient"
+    ],
+    "description": "The Blood Elemental is a large, liquid-like entity with a strong connection to blood and vitality. It can manipulate its form to slip through narrow spaces, engaging enemies in close combat.",
+    "memorable": "Its ability to grapple and drain the life force from adventurers makes it a dangerous foe, especially when it can grow in size after dealing substantial necrotic damage.",
+    "goals": "To drain the life force of opposing creatures and control the battlefield",
+    "relations": "Related to other elemental creatures, could be summoned by practitioners of blood magic",
+    "environment": "Often found in dark and damp areas, such as caves or near bodies of water",
+    "strengths": "High durability and the ability to control movement; capable of grappling multiple opponents.",
+    "weaknesses": "Vulnerable to poison damage and is destroyed instantly if fully submerged in water.",
+    "attacks": "Utilizes slam attacks for bludgeoning damage and has a powerful blood drain attack that deals necrotic damage and grapples foes.",
+    "most_powerful_ability": "Blood Drain allows it to inflict damage and restrain enemies, posing a serious threat, especially in groups.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "When it deals 30 or more necrotic damage in one hit, it grows in size.",
+        "The Blood Elemental is immune to necrotic and psychic damage.",
+        "It can pass through spaces as narrow as 1 inch without squeezing.",
+        "It can grapple Large or up to two Medium creatures simultaneously.",
+        "It has a high Constitution score, enhancing its hit points."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "blood-draining elemental creature",
+        "elemental vulnerability to water",
+        "large grapple elemental",
+        "necrotic damage elemental",
+        "liquid form monster"
+    ]
+}

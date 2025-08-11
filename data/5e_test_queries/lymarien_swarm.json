@@ -1,0 +1,25 @@
+{
+    "name": "Lymarien Swarm",
+    "queries": [
+        {
+            "query": "enchanting fey creature with flight ability and crowd control tactics",
+            "variant": "flying creature that is enchanting and uses crowd control tactics"
+        },
+        {
+            "query": "large swarm of fey that distracts enemies and supports allies",
+            "variant": "big fey swarm that helps allies and distracts foes"
+        },
+        {
+            "query": "agile fey monster with high dexterity and spells",
+            "variant": "quick fey creature with strong dexterity and casting spells"
+        },
+        {
+            "query": "beautiful fey creature that manipulates the battlefield",
+            "variant": "fey that is beautiful and alters the battlefield"
+        },
+        {
+            "query": "Lymarien Swarm's abilities for controlling combat and enchanting enemies",
+            "variant": "abilities of the Lymarien Swarm for fighting and enchanting foes"
+        }
+    ]
+}

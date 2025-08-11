@@ -1,0 +1,25 @@
+{
+    "name": "Atavist",
+    "queries": [
+        {
+            "query": "humanoid creature with a high strength and resistance to poison",
+            "variant": "humanoid with high strength and poison resistance creature"
+        },
+        {
+            "query": "lawful evil monster that adapts in combat and deals slashing damage",
+            "variant": "lawful evil creature that adapts in fights and inflicts slashing damage"
+        },
+        {
+            "query": "medium humanoid with darkvision abilities and melee attacks",
+            "variant": "medium creature with darkvision and close combat capabilities"
+        },
+        {
+            "query": "tough humanoid fighter with high armor class and unique physical traits",
+            "variant": "resilient humanoid warrior with high AC and special physical features"
+        },
+        {
+            "query": "monster that creates bone spikes and has low wisdom",
+            "variant": "creature that forms bony spikes and has a low wisdom score"
+        }
+    ]
+}

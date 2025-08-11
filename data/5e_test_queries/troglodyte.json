@@ -1,0 +1,25 @@
+{
+    "name": "Troglodyte",
+    "queries": [
+        {
+            "query": "humanoid creature with stealth abilities that lives in shadows",
+            "variant": "humanoid monster that has stealth skills and dwells in the shadows"
+        },
+        {
+            "query": "troglodyte combat tactics with poison attacks",
+            "variant": "troglodyte fighting strategy with poisonous strikes"
+        },
+        {
+            "query": "stealthy monster that gets weakened by sunlight",
+            "variant": "sneaky creature that suffers in bright light"
+        },
+        {
+            "query": "medium humanoid with cunning abilities and ambush tactics",
+            "variant": "medium creature known for its cleverness and ambush strategies"
+        },
+        {
+            "query": "creature that uses stench to poison enemies in close range",
+            "variant": "being that employs its foul smell to poison foes nearby"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Clay Guardian",
+    "queries": [
+        {
+            "query": "large construct that absorbs acid damage and has low intelligence",
+            "variant": "big construct that heals from acid damage and has a low IQ"
+        },
+        {
+            "query": "battlefield guardian with powerful melee abilities and resistance to poison",
+            "variant": "protector on the battlefield with strong melee skills and immunities to poison"
+        },
+        {
+            "query": "physical combat creature that berserks when bloodied and has high hit points",
+            "variant": "melee-focused monster that goes berserk when injured and has a lot of hit points"
+        },
+        {
+            "query": "imposing clay monster that doesn\u2019t require air and has a strong slam attack",
+            "variant": "formidable clay guardian that needs no air and has a powerful slam"
+        },
+        {
+            "query": "constructed creature immune to psychic damage and vulnerable to adamantine weapons",
+            "variant": "constructed being that is immune to psychic attacks and weak against adamantine weapons"
+        }
+    ]
+}

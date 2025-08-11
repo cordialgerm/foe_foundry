@@ -1,0 +1,52 @@
+{
+    "name": "Godslayer",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 580,
+    "ac": 24,
+    "srd": false,
+    "cr": "30",
+    "movement": "walk 50 ft., fly 60 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "celestial hunter",
+        "massive threat"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "immortal-hunting"
+    ],
+    "description": "A massive, imposing construct capable of devastating melee and ranged attacks. Its body is adorned with eldritch glyphs that enhance its combat abilities, and it emanates an aura of divine retribution, marked with runes that glow ominously.",
+    "memorable": "Its unique ability to target and damage immortal beings such as gods, preventing their resurrection and significantly threatening celestial adversaries, makes the Godslayer a terrifying opponent.",
+    "goals": "Designed to hunt and eliminate divine beings, effectively serving as a tool of retribution against celestial entities.",
+    "relations": "Can be encountered alongside celestial beings, perhaps serving as an adversary to divine creatures.",
+    "environment": "Typically found in areas tied to celestial magic or where deities are present, such as temples or divine realms.",
+    "strengths": "High hit points, formidable physical strength, various resistance to control effects, immunity to many conditions, and the ability to teleport for tactical advantage.",
+    "weaknesses": "Lack of intelligence, unable to communicate or engage in character interactions beyond combat.",
+    "attacks": "Multiattack combining physical melee strikes with Energy Glaive and ranged attacks via Rune Discus, both enhanced by magical glyphs.",
+    "most_powerful_ability": "The Divine Slayer ability allows it to bypass resistances of celestial beings and prevents their resurrection if they are reduced to zero hit points.",
+    "equipment": null,
+    "senses": "Possesses truesight for 120 feet, allowing it to see through illusions and darkness, complemented by a very high passive perception of 29.",
+    "skills": "Displays exceptional saving throw abilities, particularly in Constitution, Wisdom, and Intelligence.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Immune to form-altering spells and mind-reading attempts.",
+        "Legendary actions enable strategic movement and potent recoveries.",
+        "Can cast various debilitating effects with its Arcane Lexicon ability."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive construct hunting gods",
+        "powerful creature with divine sensing abilities",
+        "illusions cannot deceive this powerful assassin",
+        "towering construct with glyphs that affect magic",
+        "immortal-hunting construct with high hit points"
+    ]
+}

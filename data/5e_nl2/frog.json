@@ -1,0 +1,48 @@
+{
+    "name": "Frog",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 11,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 ft. walking, 20 ft. swimming",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "small",
+        "creature"
+    ],
+    "adjectives": [
+        "amphibious",
+        "agile",
+        "harmless"
+    ],
+    "description": "A small, amphibious creature with smooth, moist skin, typically green or brown, allowing it to blend into its surroundings.",
+    "memorable": "Its ability to jump considerable distances without a running start makes it interesting for environmental storytelling.",
+    "goals": "Frogs feed on insects and often serve as a part of a larger ecosystem.",
+    "relations": "May be found alongside other small aquatic creatures or as familiars for spellcasters in enchanted locations.",
+    "environment": "Commonly found near ponds, swamps, or rivers.",
+    "strengths": "Good mobility due to its jumping ability and adaptability to both aquatic and terrestrial environments.",
+    "weaknesses": "Low physical and mental attributes make it extremely weak in combat and social situations.",
+    "attacks": "Can perform a Bite attack, dealing minimal damage and having average hit capabilities.",
+    "most_powerful_ability": "Amphibious ability allowing it to breathe both air and water.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 feet and average passive perception.",
+    "skills": "Possesses a skill bonus for stealth, allowing it to remain unnoticed in natural settings.",
+    "additional_information": [
+        "Lacks effective attacks and poses no threat to adventurers.",
+        "Jump distance provides excellent escape capabilities.",
+        "Often part of the food chain, consuming insects and small creatures."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small amphibious creature living near water",
+        "tiny green creature able to jump far",
+        "harmless creature with smooth skin",
+        "agile frog escaping threats through jumping",
+        "frog that breathes air and water"
+    ]
+}

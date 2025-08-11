@@ -1,0 +1,25 @@
+{
+    "name": "Dorreq",
+    "queries": [
+        {
+            "query": "medium evil creature with strong physical attacks and teleportation abilities",
+            "variant": "medium creature that is evil and has strong physical attacks plus teleportation powers"
+        },
+        {
+            "query": "aberration that uses thunder and necrotic damage in combat",
+            "variant": "creature from the aberration type that deals thunder and necrotic damage during battle"
+        },
+        {
+            "query": "deceptive monster that warps space and grapples opponents",
+            "variant": "a deceptive creature that can warp space and hold its foes in a grapple"
+        },
+        {
+            "query": "slow moving creature that has high stealth skills and darkvision",
+            "variant": "creature that moves slowly but has great skills in stealth and can see in the dark"
+        },
+        {
+            "query": "creature with natural armor and resistance to acid and cold damage",
+            "variant": "monster with natural armor that is resistant to acid and cold type damages"
+        }
+    ]
+}

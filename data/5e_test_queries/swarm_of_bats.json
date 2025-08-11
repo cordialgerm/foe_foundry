@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Bats",
+    "queries": [
+        {
+            "query": "nocturnal swarm that can overwhelm prey in caves",
+            "variant": "nocturnal swarm that can overwhelm prey caves"
+        },
+        {
+            "query": "chaotic flying beasts found in forests and ruins",
+            "variant": "chaotic flying creatures found in ruins or forests"
+        },
+        {
+            "query": "small dark creatures that attack in numbers and use echolocation",
+            "variant": "tiny dark creatures that attack in numbers and utilize echolocation"
+        },
+        {
+            "query": "bats that create confusion and panic in dark spaces",
+            "variant": "bats causing confusion and panic in dark spaces"
+        },
+        {
+            "query": "swarm of bats with keen hearing abilities in confined areas",
+            "variant": "swarm of bats with keen hearing abilities in tight spaces"
+        }
+    ]
+}

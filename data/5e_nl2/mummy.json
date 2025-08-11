@@ -1,0 +1,56 @@
+{
+    "name": "Mummy",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 11,
+    "srd": true,
+    "cr": "3",
+    "movement": "slow, walking speed of 20 feet",
+    "role": null,
+    "tags": [
+        "undead",
+        "curse",
+        "tomb guardian",
+        "necrotic"
+    ],
+    "adjectives": [
+        "ancient",
+        "mummified",
+        "fearsome",
+        "undead",
+        "cursed"
+    ],
+    "description": "A Mummy is an undead creature wrapped in decayed bandages, exuding an aura of dread that instills fear in its enemies. Its body is preserved through ancient embalming techniques, giving it a command over death and decay.",
+    "memorable": "The Mummy's touch brings forth a deadly curse called Mummy Rot, relentlessly weakening its victims over time.",
+    "goals": "To guard the resting places of ancient kings and priests, fulfilling its duty in death as it did in life.",
+    "relations": "May serve or be master of other undead creatures, particularly those tied to ancient tombs.",
+    "environment": "Typically found in tombs, pyramids, or other ancient sites steeped in curses.",
+    "strengths": "High resilience against many forms of damage, particularly nonmagical attacks, and immunity to necrotic damage.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks and quick opponents.",
+    "attacks": "Able to execute a multiattack with a Dreadful Glare to frighten or paralyze, followed by a powerful Rotting Fist attack that deals both bludgeoning and necrotic damage.",
+    "most_powerful_ability": "The Mummy Rot curse, which prevents healing and reduces the hit point maximum over time, potentially leading to death.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Resistant to many conditions, showcasing exceptional durability against effects like charm and paralysis.",
+    "additional_information": [
+        "Catches fire after taking fire damage, resulting in ongoing damage.",
+        "Does not require air, food, drink, or sleep.",
+        "Can communicate in the languages it knew in life, primarily in combat.",
+        "Possesses undead resilience enhancing its survivability.",
+        "Strikes fear into enemies with its mere presence."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that inflicts cursed rot",
+        "mummy with a fear-inducing glare",
+        "ancient monster found in tombs",
+        "slow-moving undead with devastating touches",
+        "cursed creature that guards tombs"
+    ]
+}

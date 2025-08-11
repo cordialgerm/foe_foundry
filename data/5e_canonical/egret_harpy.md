@@ -1,6 +1,8 @@
 <MonsterName/>Egret Harpy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>75</HP>
 <summary>The Egret Harpy is a medium-sized monstrosity known for its aerial agility and enchanting songs. As a neutral creature, it possesses a unique balance of offensive and supportive capabilities, making it versatile in various encounters. With a challenge rating of 2 and a solid pool of 75 hit points, it can endure a fair bit of damage. The harpy’s strength lies in its innate spellcasting ability and its range of both melee and magical attacks. However, its armor class of 12 indicates a moderate level of defense, making it vulnerable to coordinated assaults. Its most notable feature is the ability to assist allies in navigation and effectiveness in marshy terrain, enhancing both combat and exploration dynamics.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the **Guiding Song** is a remarkable ability that enhances navigat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Egret Harpy
 
 *Medium* *Monstrosity* *neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Guiding Song:** The egret harpy sings a magical melody. Each humanoid and giant of the harpy’s choice within 300 feet of the harpy has advantage on Wisdom (Survival) checks to navigate marshes, and difficult terrain composed of mud, standing water, or other features of a marsh doesn’t cost it extra movement. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.<br><br>The harpy can use an action to end the song and cast mass suggestion. Each creature that can hear the harpy’s song must succeed on a DC 12 Wisdom saving throw or be affected by the spell for 8 hours. If the harpy chooses to end the song this way, it can’t use Guiding Song again until it finishes a long rest.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Ratfolk Rogue",
+    "queries": [
+        {
+            "query": "small agile humanoid with stealth abilities and poison attacks",
+            "variant": "small quick humanoid that has stealth skills and poison strikes"
+        },
+        {
+            "query": "Ratfolk creature known for cunning and flanking tactics in combat",
+            "variant": "Ratfolk character recognized for its cunning nature and flanking strategies during battles"
+        },
+        {
+            "query": "humanoid that excels in stealth and uses a dagger for combat",
+            "variant": "humanoid that is great at stealth and utilizes a dagger in fights"
+        },
+        {
+            "query": "nimbly moving rogue that can bypass larger enemies without being noticed",
+            "variant": "quickly moving rogue that can easily glide past bigger foes without detection"
+        },
+        {
+            "query": "small rogue with darkvision and ability to communicate using Thieves Cant",
+            "variant": "little rogue with darkvision and skill to speak Thieves Cant"
+        }
+    ]
+}

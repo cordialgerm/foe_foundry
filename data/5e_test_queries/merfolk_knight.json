@@ -1,0 +1,25 @@
+{
+    "name": "Merfolk Knight",
+    "queries": [
+        {
+            "query": "aquatic humanoid knight with trident combat skills",
+            "variant": "aquatic knight humanoid with trident fighting abilities"
+        },
+        {
+            "query": "merfolk warrior that can fight on land and swim quickly",
+            "variant": "merfolk combatant able to battle on land and swim swiftly"
+        },
+        {
+            "query": "knight with darkvision and amphibious abilities in combat",
+            "variant": "warrior possessing darkvision and ability to breathe water and air"
+        },
+        {
+            "query": "supportive aquatic knight that inspires allies in battle",
+            "variant": "aqua knight that boosts team members' effectiveness in fights"
+        },
+        {
+            "query": "medium humanoid with strong melee and ranged attack capabilities",
+            "variant": "medium sized humanoid with powerful melee and ranged attack options"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Vanara",
+    "creature_type": "Humanoid",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "agile",
+        "playful"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "clever",
+        "mobile"
+    ],
+    "description": "The Vanara is a medium-sized humanoid creature known for its playful and agile nature.",
+    "memorable": "Its ability to distract foes significantly influences battlefield dynamics.",
+    "goals": "To create opportunities in combat and influence the battlefield dynamics.",
+    "relations": "May be encountered with other humanoids or creatures that value agility and cleverness.",
+    "environment": "Typically found in jungle or forest regions.",
+    "strengths": "High Dexterity and mobility allow it to evade attacks and hinder opponents effectively.",
+    "weaknesses": "May struggle against more formidable opponents who can withstand its distractions.",
+    "attacks": "Slam melee attack dealing bludgeoning damage, and a ranged Sling attack.",
+    "most_powerful_ability": "Howl creates a cone of sonic damage, potentially incapacitating multiple enemies.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Acrobatics and Stealth, enhancing its stealthy roles.",
+    "additional_information": [
+        "Has a tail that can be used to distract opponents.",
+        "Can move quickly without provoking opportunity attacks.",
+        "Exceptional jumping capabilities for navigating terrain.",
+        "Passive perception score of 14 enhances its investigatory abilities.",
+        "Uses clever tactics to control the flow of combat."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile jungle creature with distracting abilities",
+        "clever humanoid that excels in mobility",
+        "medium-sized playful creature with a powerful howl",
+        "skirmisher that uses tail for distraction",
+        "jumping humanoid with quick movement abilities"
+    ]
+}

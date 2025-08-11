@@ -1,0 +1,25 @@
+{
+    "name": "Jackalwere Pack Leader",
+    "queries": [
+        {
+            "query": "medium fiend with cunning abilities and dominates jackalweres",
+            "variant": "cunning medium fiend that leads jackalweres and uses deception"
+        },
+        {
+            "query": "chaotic evil creature that uses stealth tactics and manipulates others",
+            "variant": "creature with chaotic evil alignment that employs stealth and manipulation"
+        },
+        {
+            "query": "jackalwere that shapeshifts and uses a sleep gaze ability",
+            "variant": "shapeshifting jackalwere capable of using Sleep Gaze ability"
+        },
+        {
+            "query": "dexterous fiend that bites and wields a scimitar in combat",
+            "variant": "fiend with high dexterity that attacks with a bite and scimitar"
+        },
+        {
+            "query": "jackalwere leader that relies on allies and intimidates opponents",
+            "variant": "leader jackalwere that intimidates foes and depends on allies"
+        }
+    ]
+}

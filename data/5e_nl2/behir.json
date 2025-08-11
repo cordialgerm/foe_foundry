@@ -1,0 +1,52 @@
+{
+    "name": "Behir",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 17,
+    "srd": true,
+    "cr": "11",
+    "movement": "50 ft. walking, 40 ft. climbing",
+    "role": null,
+    "tags": [
+        "serpentine",
+        "lightning breath",
+        "predator"
+    ],
+    "adjectives": [
+        "massive",
+        "serpentine",
+        "formidable"
+    ],
+    "description": "The Behir is a massive creature resembling a dragon, with a long serpentine body, scales that resemble storm clouds, and a dozen clawed legs. It has no wings and prefers to slither along the ground or crawl up sheer surfaces.",
+    "memorable": "The ability to breathe lightning and swallow prey whole makes the Behir a terrifying opponent in combat.",
+    "goals": "Hunts large prey, such as giants or other monsters, often in mountainous or underground habitats.",
+    "relations": "Often solitary but could be encountered in the company of other monstrous creatures.",
+    "environment": "Mountains or deep underground.",
+    "strengths": "Immunity to lightning damage and the ability to heal from it, substantial mobility with climbing and swimming capabilities.",
+    "weaknesses": "Reliance on melee attacks can be a disadvantage against multiple attackers.",
+    "attacks": "The Behir can make a bite attack that deals piercing damage and a constrict attack that grapples its prey, along with a devastating lightning breath that can strike multiple enemies.",
+    "most_powerful_ability": "Lightning Breath, which unleashes a powerful blast of lightning in a line, dealing massive damage.",
+    "equipment": null,
+    "senses": "Passive perception of 16 allows it to notice its surroundings effectively.",
+    "skills": "Excels in athletics and stealth, making it a surprisingly agile and stealthy foe despite its size.",
+    "additional_information": [
+        "Can move through spaces as narrow as 5 feet without hindering its movement.",
+        "High Strength and Constitution enable it to absorb considerable damage while dealing significant damage.",
+        "Can swallow Medium or smaller creatures, subjecting them to ongoing acid damage while they are restrained.",
+        "Resistant to exhaustion and the frightened condition, enhancing its combat effectiveness.",
+        "Ability to climb on difficult surfaces and ceilings, adding unpredictability to its movement."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive lightning-breathing serpent",
+        "huge underground predator",
+        "storm cloud scaled monster",
+        "creature that swallows whole",
+        "serpentine dragon without wings"
+    ]
+}

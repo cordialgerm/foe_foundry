@@ -1,0 +1,25 @@
+{
+    "name": "Wind Acolyte",
+    "queries": [
+        {
+            "query": "humanoid spellcaster with air manipulation skills",
+            "variant": "humanoid air manipulation spellcaster"
+        },
+        {
+            "query": "wind creature that can fly and uses ranged attacks",
+            "variant": "flying wind creature that attacks from a distance"
+        },
+        {
+            "query": "creature that suffocates targets and has cold resistance",
+            "variant": "monster with cold resistance that can suffocate enemies"
+        },
+        {
+            "query": "mobile humanoid with impressive dexterity and wisdom",
+            "variant": "humanoid with high dexterity and wisdom that's very mobile"
+        },
+        {
+            "query": "air-themed creature using magical weapons in combat",
+            "variant": "creature that uses magical weapons made of air during battle"
+        }
+    ]
+}

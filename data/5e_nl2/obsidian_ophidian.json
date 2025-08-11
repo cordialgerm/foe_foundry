@@ -1,0 +1,52 @@
+{
+    "name": "Obsidian Ophidian",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., swims through lava effortlessly",
+    "role": null,
+    "tags": [
+        "elemental",
+        "lava",
+        "giant creature"
+    ],
+    "adjectives": [
+        "huge",
+        "fiery",
+        "resilient"
+    ],
+    "description": "The Obsidian Ophidian is a massive, serpentine elemental creature with a texture resembling glossy obsidian. It thrives in lava and has a fiery appearance, despite its dark stone-like body.",
+    "memorable": "It can move through lava as if it were solid ground and can regenerate health when in contact with lava.",
+    "goals": "To dominate its fiery territory and eliminate intruders.",
+    "relations": "Often found near or within volcanic areas, frequently encountered with other elemental creatures.",
+    "environment": "Typically found in volcanic regions and near molten lava.",
+    "strengths": "Can traverse lava without harm, has regeneration abilities, and deals damage when taking bludgeoning damage.",
+    "weaknesses": "Vulnerable to bludgeoning and cold damage, which can impede its regenerative abilities.",
+    "attacks": "It can make multiple bite attacks or constrict enemies, and it can splash lava dealing fire damage to nearby creatures.",
+    "most_powerful_ability": "Lava Splash allows it to deal significant fire damage to multiple targets at once.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 60 feet, allowing it to sense movement in its environment.",
+    "skills": "Has proficiency in Perception, allowing it to detect nearby creatures with a decent level of awareness.",
+    "additional_information": [
+        "Can sense creatures touching the same pool of lava it occupies.",
+        "Has condition immunities including exhaustion and paralysis.",
+        "Piercing damage from embedded shards of obsidian can continue even after initial wounds.",
+        "Can splash lava every few rounds to deal area damage.",
+        "Does not die until it starts its turn with 0 hit points."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge lava elemental creature",
+        "creature that thrives in molten lava",
+        "serpentine monster with obsidian scales",
+        "elemental that can regenerate in lava",
+        "fiery creature with piercing shards attack"
+    ]
+}

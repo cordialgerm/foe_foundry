@@ -1,0 +1,25 @@
+{
+    "name": "Veteran Swordbreaker Skeleton",
+    "queries": [
+        {
+            "query": "evil undead skeleton with weapon damaging ability",
+            "variant": "undead skeleton that damages weapons and is evil"
+        },
+        {
+            "query": "skeleton warrior that destroys wooden and metal weapons",
+            "variant": "skeleton fighter that cracks wooden and metal weapons"
+        },
+        {
+            "query": "medium undead creature with thunder vulnerability",
+            "variant": "medium creature that is undead and weak to thunder"
+        },
+        {
+            "query": "Veteran Swordbreaker Skeleton abilities and weaknesses",
+            "variant": "skills and vulnerabilities of Swordbreaker Skeleton"
+        },
+        {
+            "query": "lawful evil skeleton with high strength and multiattack",
+            "variant": "skeleton that is lawful evil and has high Strength with multiattack"
+        }
+    ]
+}

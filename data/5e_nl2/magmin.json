@@ -1,0 +1,52 @@
+{
+    "name": "Magmin",
+    "creature_type": "Elemental",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 9,
+    "ac": 14,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 feet walking, 15 feet burrowing",
+    "role": "null",
+    "tags": [
+        "fire",
+        "explosive",
+        "elemental"
+    ],
+    "adjectives": [
+        "fiery",
+        "volatile",
+        "unstable"
+    ],
+    "description": "A small, fiery creature made of molten rock and living flame, known for its reckless behavior and destructive tendencies.",
+    "memorable": "The Magmin explodes upon death, dealing fire damage to nearby creatures.",
+    "goals": "To cause chaos and havoc, setting fire to everything around it.",
+    "relations": "Often summoned by fire-wielding spellcasters.",
+    "environment": "Elemental Plane of Fire, or other fiery environments.",
+    "strengths": "Immunity to fire damage and resistance to nonmagical weapon damage; self-ignition and explosive death.",
+    "weaknesses": "Vulnerable to cold and thunder damage.",
+    "attacks": "Melee touch attack that ignites targets, dealing additional fire damage over time.",
+    "most_powerful_ability": "Death Burst, which causes an explosion of fire upon its defeat.",
+    "equipment": null,
+    "senses": "Can set itself ablaze or extinguish its flames at will, creating light.",
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, or sleep, making it resilient in combat.",
+        "Sheds bright light when ablaze.",
+        "Can ignite flammable objects with touch attacks.",
+        "Combines both physical and elemental damage types.",
+        "Characteristics enhance combat effectiveness through environmental hazards."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fiery elemental that explodes",
+        "magmin abilities and combat tactics",
+        "elemental creature made of molten rock",
+        "fire creature that ignites upon death",
+        "volatile elemental with fire attacks"
+    ]
+}

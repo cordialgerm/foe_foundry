@@ -1,0 +1,50 @@
+{
+    "name": "Bandit Captain",
+    "creature_type": "Humanoid",
+    "alignment": "any non-lawful alignment",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 15,
+    "srd": true,
+    "ac_description": "studded leather",
+    "cr": "2",
+    "movement": "30 ft. walk",
+    "role": "Leader",
+    "tags": [
+        "bandit",
+        "captain",
+        "criminal",
+        "leader"
+    ],
+    "adjectives": [
+        "cunning",
+        "ruthless",
+        "charismatic"
+    ],
+    "description": "The Bandit Captain is a larger and more experienced humanoid leader of a gang of criminals, wearing better armor and wielding a sword and dagger. It exudes charisma and tactical skill, often seen in the midst of an ambush or conflict leading its gang.",
+    "memorable": "Its ability to inspire loyalty through fear or respect, and its blend of martial prowess and tactical leadership in combat situations make it a notable threat.",
+    "goals": "To lead and manage a gang of bandits, engage in strategic ambushes, and maintain power through intimidation and loyalty.",
+    "relations": "Often found commanding a group of bandits, thugs, or other criminals.",
+    "environment": "Typically encountered on the road or in areas prone to ambushes, where criminal activity is prevalent.",
+    "strengths": "High Dexterity increases stealth and agility, while Charisma aids in manipulation and leadership.",
+    "weaknesses": "Reliance on physical combat makes it vulnerable to spellcasters or ranged combatants.",
+    "attacks": "Utilizes Multiattack to strike multiple times with a scimitar and dagger, demonstrating effective close combat skills.",
+    "most_powerful_ability": "Opportunist grants advantage on opportunity attacks, allowing it to deal damage when foes move away.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Athletics and Deception, enhancing its physical combat and manipulation abilities.",
+    "additional_information": [
+        "Possesses the ability to execute a tactical retreat when outnumbered.",
+        "Can use Parry reaction to increase its AC against melee attacks.",
+        "Special ability called Reposition Forces allows allies to move without provoking attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic bandit leader",
+        "cunning humanoid captain",
+        "ambush strategist",
+        "dangerous criminal leader",
+        "ruthless gang commander"
+    ]
+}

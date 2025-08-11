@@ -1,6 +1,8 @@
 <MonsterName/>Salt Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Salt Golem is a formidable Large Construct that serves as a guardian or enforcer in various settings. With an unaligned nature, it exhibits no moral compunction and acts on the commands of its creator. The Salt Golem boasts a strong Armor Class of 17 due to its natural armor, making it difficult to hit in combat. It has a substantial pool of 115 hit points, providing it with resilience in battle. However, its slow movement speed of 20 feet can be a limitation in certain tactical situations. This creature is particularly dangerous due to its unique abilities, which can inflict debilitating conditions on its foes while being resistant to a wide array of damage types. Although its Intelligence and Charisma are very low, it has exceptional Strength and Constitution scores, making it a powerful melee attacker. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Salt Golem is a robust and imposing presence on the battlefield, ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salt Golem
 
 *Large* *Construct* *Unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The salt golem makes two Slam attacks. If both attacks hit one creature, the target must succeed on a DC 17 Constitution saving throw or suffer one level of exhaustion.
 - **Slam:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage plus 18 (4d8) necrotic damage.
+</statblock>
 
 

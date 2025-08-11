@@ -1,0 +1,51 @@
+{
+    "name": "Wizard Kobold",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 58,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "spellcaster",
+        "kobold",
+        "dragon"
+    ],
+    "adjectives": [
+        "cunning",
+        "clever",
+        "opportunistic"
+    ],
+    "description": "The Wizard Kobold is a small humanoid with a clever demeanor, skilled in magic and cunning tactics, often seen wielding spells and employing its Pack Tactics ability.",
+    "memorable": "The unique ability to create a spectral dragon visage that frightens foes and grants itself damage immunity makes it a distinct threat despite its small size.",
+    "goals": "To manipulate the battlefield using spells while relying on allies to assist in combat.",
+    "relations": "Commonly found with other kobolds or dragon-related creatures, possibly as part of a larger goblinoid or draconic hierarchy.",
+    "environment": "Often encountered in gritty underground lairs or areas with connections to dragons.",
+    "strengths": "Powerful spellcaster capable of casting up to 4th level spells, effective in controlling combat and manipulating enemies.",
+    "weaknesses": "Weak physical strength and vulnerability to sunlight, which severely hampers its combat performance.",
+    "attacks": "Uses a dagger for melee or ranged attacks, dealing 4 piercing damage, and employs the Draconic Visage to frighten enemies and produce a breath attack.",
+    "most_powerful_ability": "Draconic Visage creates a spectral dragon's head that can frighten foes and provide damage immunity.",
+    "senses": "Possesses darkvision up to 60 feet, enhancing its ability to navigate in low-light conditions.",
+    "skills": "Proficient in Arcana, allowing it to understand and identify magical artifacts and phenomena.",
+    "additional_information": [
+        "Can cast a variety of powerful spells including Fireball and Counterspell.",
+        "Has advantage on attack rolls due to Pack Tactics.",
+        "Vulnerable to sunlight, which gives it disadvantage in combat during the day.",
+        "Intelligent spellcaster with exceptional knowledge of magic.",
+        "Strategically uses allies to enhance its effectiveness in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "An 8th-level spellcaster with a spell save DC of 14, equipped with various offensive and defensive spells.",
+    "test_queries": [
+        "clever kobold spellcaster",
+        "small magical creature with draconic abilities",
+        "wizard that can create illusions and fire",
+        "cunning kobold with sunlight weakness",
+        "kobold that uses dragon magic"
+    ]
+}

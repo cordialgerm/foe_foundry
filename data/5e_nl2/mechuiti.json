@@ -1,0 +1,56 @@
+{
+    "name": "Mechuiti",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Gargantuan",
+    "hp": 462,
+    "ac": 19,
+    "srd": false,
+    "cr": "27",
+    "movement": "walk 60 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "chaotic",
+        "gargantuan",
+        "disease",
+        "fire"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "overwhelming",
+        "powerful"
+    ],
+    "description": "Mechuiti is a gargantuan fiend exuding chaotic energy, with a terrifying presence and covered in a caustic ichor that inflicts disease upon those who dare to harm it. Its skin glistens with dark energies, and its fiery attacks leave destruction in their wake.",
+    "memorable": "Mechuiti inflicts debilitating disease through its ichor and has incredible resistance to various damage types.",
+    "goals": "To dominate its environment and instill fear in all who encounter it.",
+    "relations": "Often found commanding legions of lesser fiends or lurking in the depths of hellish landscapes.",
+    "environment": "Usually resides in hellish realms or chaotic battlegrounds.",
+    "strengths": "High damage potential, disease-inflicting abilities, and strong magical resistance.",
+    "weaknesses": "Vulnerable to cold damage.",
+    "attacks": "Mechuiti's attacks include vicious bite and claw strikes that deal both piercing/slashing and devastating fire damage.",
+    "most_powerful_ability": "Demon Lord\u2019s Ichor, which infects attackers with a debilitating disease that can lead to death.",
+    "equipment": null,
+    "senses": "Mechuiti possesses truesight extending 120 feet and a passive Perception of 22, allowing it to perceive threats effectively.",
+    "skills": null,
+    "additional_information": [
+        "Immunities to many damage types and conditions.",
+        "Can speak telepathically up to 300 feet.",
+        "Can cast powerful spells without needing material components.",
+        "Legendary Resistance allows it to bypass saving throw failures.",
+        "Frightful Presence that terrorizes all enemies within range."
+    ],
+    "damage_types": [
+        "fire",
+        "acid"
+    ],
+    "spellcasting": "Can cast spells such as Dispel Magic, Hold Monster, Wall of Fire at will and Fire Storm, Power Word Stun three times per day.",
+    "test_queries": [
+        "gargantuan fiend causing disease with ichor",
+        "chaotic evil fire demon with deadly ichor",
+        "powerful monstrous fiend with spellcasting and fire attacks",
+        "fire-damaging creature with terrifying presence",
+        "high HP fiend vulnerable to cold attacks"
+    ]
+}

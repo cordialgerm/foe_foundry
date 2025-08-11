@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Wharflings",
+    "queries": [
+        {
+            "query": "large swarm beast that disrupts enemy actions and steals items",
+            "variant": "big swarm animal that steals items and disrupts enemies"
+        },
+        {
+            "query": "agile creature with snapping jaws that lives in water and land",
+            "variant": "quick creature with biting jaws that can live in both water and earth"
+        },
+        {
+            "query": "unintelligent swarm that is immune to many conditions and resists physical damage",
+            "variant": "non-intelligent swarm immune to various effects and resists physical harm"
+        },
+        {
+            "query": "chaotic beast with a piercing damage attack and underwater breathing",
+            "variant": "disruptive animal that attacks with piercing damage and can breathe underwater"
+        },
+        {
+            "query": "swarm that can occupy other spaces and has a high Dexterity",
+            "variant": "swarm capable of taking up other spaces and has a good Dexterity score"
+        }
+    ]
+}

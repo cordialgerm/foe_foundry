@@ -1,0 +1,50 @@
+{
+    "name": "Haladron",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Tiny",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 60 ft.",
+    "role": "support",
+    "tags": [
+        "celestial",
+        "lawful good",
+        "healer"
+    ],
+    "adjectives": [
+        "tiny",
+        "radiant",
+        "lawful"
+    ],
+    "description": "The Haladron is a tiny celestial being embodying lawful good principles, known for its exceptional mobility and healing abilities. It showcases a modest physical presence with vibrant, radiant energy.",
+    "memorable": "The Haladron's Flyby ability allows it to move past enemies without provoking opportunity attacks, making it agile and difficult to pin down.",
+    "goals": "To assist and support allies, providing healing and protection during conflicts.",
+    "relations": "Could be encountered alongside other lawful good celestials or as a companion to good-aligned adventurers.",
+    "environment": "Often found in locations associated with goodness and light, such as temples or serene natural settings.",
+    "strengths": "Resilient against radiant damage and immune to several disabling conditions, making it an effective support creature.",
+    "weaknesses": "Limited offensive capabilities, primarily relying on a single ranged attack.",
+    "attacks": "Uses Bolt of Law as a ranged spell attack to deal radiant and thunder damage, alongside healing with the Stitch ability.",
+    "most_powerful_ability": "Stitch allows the Haladron to heal creatures or repair objects, proving invaluable in combat and exploration.",
+    "senses": "The Haladron possesses darkvision up to 60 feet, allowing it to see in dim light effectively.",
+    "skills": "Excels in perception with a +2 modifier, providing good ability to notice hidden objects and creatures.",
+    "additional_information": [
+        "Does not require food, drink, or sleep due to Immortal Nature.",
+        "Immutable Form grants immunity to form-altering spells.",
+        "Relying on its spell attack, it can deal both radiant and thunder damage."
+    ],
+    "damage_types": [
+        "radiant",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny celestial healer",
+        "haladron support abilities",
+        "radiant angel with healing powers",
+        "mobile celestial being",
+        "lawful good celestial creature"
+    ]
+}

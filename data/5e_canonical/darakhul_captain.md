@@ -1,6 +1,8 @@
 <MonsterName/>Darakhul Captain</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>165</HP>
 <summary>The Darakhul Captain is a formidable Medium undead creature that embodies the epitome of tactical malevolence. With a lawful evil alignment, it serves as a master manipulator and fierce combatant on the battlefield. The captain boasts a high armor class of 16, thanks to its breastplate, and an impressive pool of hit points totaling 165, granting it remarkable durability. Its challenge rating of 9 implies that it poses a significant threat to adventurers, rewarding foes with 5,000 experience points upon defeat. Notably, the Darakhul Captain wields a range of abilities that make it dangerous both in melee and at range, while its special features enhance its combat effectiveness and leadership role in undead hordes. However, its susceptibility to sunlight reduces its effectiveness in direct light, making it vulnerable in certain environments.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Captain can unleash a powerful ability known as Imperial Conscription, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darakhul Captain
 
 *Medium* *Undead* *lawful evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Leadership (Recharges after a Short or Long Rest):** For 1 minute, the darakhul captain can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the captain. A creature can benefit from only one Leadership die at a time. This effect ends if the captain is incapacitated.
 
 
+</statblock>
 
 

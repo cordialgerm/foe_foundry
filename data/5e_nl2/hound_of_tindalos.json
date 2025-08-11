@@ -1,0 +1,53 @@
+{
+    "name": "Hound of Tindalos",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "40 feet of agile movement",
+    "role": "Skirmisher",
+    "tags": [
+        "teleportation",
+        "psychic",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Hound of Tindalos is a Medium-sized aberration with a powerful physique, showcasing a blend of jagged curves and sharp corners that reflects its ability to navigate tight spaces.",
+    "memorable": "The creature's ability to teleport between sharp corners makes it unpredictable and dangerous.",
+    "goals": "To hunt down enemies and isolate them using its high mobility and teleportation ability.",
+    "relations": "It may serve a higher entity or be found alongside other aberrations.",
+    "environment": "Typically found in places where space intersects oddly, allowing it to exploit corners for teleportation.",
+    "strengths": "Immunity to cold, psychic, and poison damage, alongside resistance to necrotic damage enhances its durability.",
+    "weaknesses": "Its reliance on sharp edges restricts its movement in open spaces.",
+    "attacks": "Utilizes multiattack with claws and bites, delivering high damage and necrotic effects.",
+    "most_powerful_ability": "Entrance by Corners allows it to teleport swiftly and unpredictably.",
+    "equipment": null,
+    "senses": "The Hound has darkvision up to 120 feet and a passive perception of 16, enhancing its ability to detect threats.",
+    "skills": "It is highly skilled in acrobatics with a +9 modifier, allowing for incredible agility and grace.",
+    "additional_information": [
+        "Magic Resistance grants it advantage on saving throws against spells.",
+        "Keen Smell enhances its tracking capabilities.",
+        "Can transport itself to different planes of existence, adding to its unpredictability.",
+        "It can knock foes prone to further its assault.",
+        "Necrotic damage from its tongue attack reduces maximum hit points of its targets."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "teleporting monster with necrotic attacks",
+        "aberration that hunts using sharp corners",
+        "fast creature immune to psychic damage",
+        "agile foe that can teleport and reduce hit points",
+        "Hound that navigates corners and attacks with tongues"
+    ]
+}

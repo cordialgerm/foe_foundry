@@ -1,6 +1,8 @@
 <MonsterName/>Gaunt One</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Gaunt One is a Medium aberration with a neutral evil alignment, primarily serving as a menacing opponent in combat. It possesses a strong offensive capability and can inflict significant damage on its foes, while also demonstrating a good degree of resilience through its decent hit points and natural armor. One of its notable strengths is its ability to grapple and execute a devastating finishing move by extracting the heart of a grappled target. However, its low Charisma makes it ineffective in social interactions, and although its perception is enhanced by keen hearing, it lacks versatility outside of combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Extract Heart ability is a powerful melee weapon attack that can only be exe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gaunt One
 
 *Medium* *Aberration* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Extract Heart:** Melee Weapon Attack: +6 to hit, reach 5 ft., one humanoid grappled by the gaunt one. Hit: The target must make a DC 13 Constitution saving throw, taking 22 (5d8) piercing damage on a failed save, or half as much damage on a successful one. If this damage reduces the target to 0 hp, the gaunt one kills the target by extracting and devouring its heart.
 
 
+</statblock>
 
 

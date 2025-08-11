@@ -1,0 +1,25 @@
+{
+    "name": "Sea Hag",
+    "queries": [
+        {
+            "query": "grotesque fey creature that lives in the ocean and spreads despair",
+            "variant": "fey monster that spreads misery living in the sea and looks grotesque"
+        },
+        {
+            "query": "slimy-skinned hag that can curse sailors and control the weather",
+            "variant": "slimy hag that curses sailors and has control over the weather"
+        },
+        {
+            "query": "creature with horrifying appearance that can paralyze and frighten",
+            "variant": "monster with scary look that can frighten and paralyze its foes"
+        },
+        {
+            "query": "amphibious fey that uses illusion magic to lure adventurers",
+            "variant": "fey with amphibious capabilities that employs illusion spells to deceive"
+        },
+        {
+            "query": "horrifying sea creature that dwells in rocky shores and has darkvision",
+            "variant": "terrifying ocean creature that lives by rocky beaches and has darkvision"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Great Wyrm Blue Dragon",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Gargantuan",
+    "hp": 814,
+    "ac": 22,
+    "srd": false,
+    "cr": "25",
+    "movement": "walk 40 ft., burrow 40 ft., fly 80 ft., swim 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "lightning",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "manipulative",
+        "powerful"
+    ],
+    "description": "The Great Wyrm Blue Dragon is a gargantuan creature with striking scales and a commanding presence. It has a powerful physique and is known for its lightning-based abilities, manipulating the battlefield with devastating breath weapons and potent melee attacks.",
+    "memorable": "Notable for its lightning breath weapon that can cause severe damage in a wide area and abilities that manipulate terrain and vision.",
+    "goals": "Dominate the battlefield, instill fear, and control its environment.",
+    "relations": "Can be encountered alongside lesser blue dragons or serve as a leader in draconic hierarchies.",
+    "environment": "Typically found in arid regions, deserts, or locations abundant with sand.",
+    "strengths": "High hit points and a formidable breath weapon, along with multiple powerful melee attacks and unique battlefield control abilities.",
+    "weaknesses": "Average Dexterity suggests some vulnerability to attacks that require evasion.",
+    "attacks": "Multiattack includes a bite that inflicts piercing and lightning damage, along with claw strikes and a punishing tail attack.",
+    "most_powerful_ability": "Lightning Breath, a devastating area attack that inflicts severe lightning damage and limits opponents' ability to react.",
+    "equipment": "null",
+    "senses": "Possesses blindsight and tremorsense, allowing for exceptional awareness of its surroundings.",
+    "skills": "Skilled in perception, stealth, and survival, emphasizing its capability to detect threats and navigate successfully.",
+    "additional_information": [
+        "Desert Farer ability allows movement in sandy terrain with ease.",
+        "Can create an electric field when bloodied, punishing nearby creatures.",
+        "Uses powerful spells such as blight and hypnotic pattern for battlefield control.",
+        "Legendary Resistance lets it negate failed saving throws up to three times per day.",
+        "Highly charismatic, influencing combat and interactions significantly."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting abilities using Charisma, allowing it to cast various strategic spells without material components.",
+    "test_queries": [
+        "gargantuan dragon with lightning breath",
+        "manipulative blue dragon from deserts",
+        "formidable dragon with deadly breath weapon",
+        "powerful dragon controlling sand and terrain",
+        "intelligent dragon with strong melee attacks"
+    ]
+}

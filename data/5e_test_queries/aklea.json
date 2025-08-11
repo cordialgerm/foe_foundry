@@ -1,0 +1,25 @@
+{
+    "name": "Aklea",
+    "queries": [
+        {
+            "query": "gargantuan celestial creature with high HP and spellcasting abilities",
+            "variant": "gargatuan celestial critter with high hit points and magic skills"
+        },
+        {
+            "query": "powerful divine monster immune to radiant damage that changes size",
+            "variant": "strong divine creature resistant to radiant damage which can alter size"
+        },
+        {
+            "query": "celestial being that can paralyze foes and deliver radiant damage",
+            "variant": "heavenly entity that can stun enemies and inflict radiant damage"
+        },
+        {
+            "query": "highly resilient sky creature with truesight and strong saving throws",
+            "variant": "extremely tough aerial creature featuring truesight and excellent saving throws"
+        },
+        {
+            "query": "monster with bludgeoning and radiant attacks which uses spells",
+            "variant": "creature that employs bludgeoning and radiant strikes while also casting spells"
+        }
+    ]
+}

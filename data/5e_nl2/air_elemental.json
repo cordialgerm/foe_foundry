@@ -1,0 +1,53 @@
+{
+    "name": "Air Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 90,
+    "ac": 15,
+    "srd": true,
+    "cr": "5",
+    "movement": "fly 90 ft. (hover)",
+    "role": "null",
+    "tags": [
+        "elemental",
+        "air",
+        "flying",
+        "mobile"
+    ],
+    "adjectives": [
+        "swirling",
+        "translucent",
+        "chaotic"
+    ],
+    "description": "An Air Elemental is a swirling, translucent mass of wind and vapor, capable of generating powerful gusts and whirlwinds. Its form may condense into a vaguely humanoid shape with swirling arms and legs made of pure air.",
+    "memorable": "Its ability to suffocate foes by creating a vortex of air and move through narrow spaces makes it a challenging opponent.",
+    "goals": "To embody the chaotic essence of air and engage in combat when provoked.",
+    "relations": "Related to other elemental creatures; may be found in environments influenced by air or wind.",
+    "environment": "Typically found in open skies or places with strong winds.",
+    "strengths": "Highly mobile with the ability to pass through tight spaces and immunity to poison and certain conditions.",
+    "weaknesses": "Average physical strength and intelligence may limit interaction outside of combat.",
+    "attacks": "Can perform two slam attacks or unleash a whirlwind that damages and displaces enemies.",
+    "most_powerful_ability": "Whirlwind allows it to carry creatures away and deal damage while evading opportunity attacks.",
+    "senses": "Possesses darkvision up to 60 feet and keen perception in stealthy conditions.",
+    "skills": "While it lacks specific bonuses in skills, its ability to stealthily navigate clouds and fog enhances its evasion.",
+    "additional_information": [
+        "Immune to conditions such as paralysis and unconsciousness.",
+        "Can manipulate the battlefield with its whirlwind ability.",
+        "Can engage in prolonged encounters without needing air, food, or sleep.",
+        "Can deal thunder damage with its Thunderous Retreat reaction.",
+        "Moves freely through other creatures' spaces, increasing its tactical options."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swirling air creature",
+        "elemental with whirlwind abilities",
+        "mobile air elemental",
+        "chaotic wind spirit",
+        "creature immune to poison"
+    ]
+}

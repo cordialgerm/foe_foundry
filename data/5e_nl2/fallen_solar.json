@@ -1,0 +1,54 @@
+{
+    "name": "Fallen Solar",
+    "creature_type": "Celestial",
+    "alignment": null,
+    "size": "Large",
+    "hp": 319,
+    "ac": 21,
+    "srd": false,
+    "cr": "21",
+    "movement": "walk 50 ft. fly 150 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "spellcaster",
+        "melee",
+        "legendary"
+    ],
+    "adjectives": [
+        "formidable",
+        "radiant",
+        "powerful",
+        "life-draining"
+    ],
+    "description": "The Fallen Solar is a large celestial creature with a radiant presence, notable for its exceptional power and impressive physique. It wields a holy sword that combines slashing and radiant damage in combat.",
+    "memorable": "Known for its ability to detect lies and influence opponents with divine charisma, the Fallen Solar can absorb life energy from slain humanoids to gain temporary hit points.",
+    "goals": "To uphold truth, enforce a strong sense of integrity, and act as a life-draining force on the battlefield.",
+    "relations": "It may interact with other celestials or serve as a guardian or enforcer among celestial realms.",
+    "environment": "Typically found in areas of great importance or celestial significance, possibly in heavenly realms or locations of conflict between good and evil.",
+    "strengths": "Possesses high Strength and Charisma, exceptional spellcasting abilities, and a high spell save DC of 25, making it challenging to resist its magic.",
+    "weaknesses": "Vulnerable to radiant damage despite being resistant to other damage types; relatively poor in Wisdom saving throws.",
+    "attacks": "Can strike twice with a holy sword, inflicting 23 slashing damage and 21 radiant damage with each hit; also capable of causing area damage with Column of Flame.",
+    "most_powerful_ability": "Consume Life Energy allows it to absorb life force from slain humanoids for temporary hit points based on their maximum hit points.",
+    "equipment": "Holy sword as its primary weapon.",
+    "senses": "Has truesight up to 120 feet, enabling it to detect invisible creatures and see through illusions.",
+    "skills": "Excels in athletics, history, insight, perception, and religion, demonstrating a well-rounded skill set.",
+    "additional_information": [
+        "Can teleport up to 120 feet for exceptional mobility.",
+        "Incapable of lying due to the Champion of Truth ability.",
+        "Can heal others for 60 hit points and remove various ailments with Heal action.",
+        "Utilizes legendary actions to maintain battlefield control.",
+        "Designed as a complex entity capable of both damage and healing."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Innate spellcasting with powerful spells such as commune, control weather, and resurrection, all requiring no material components.",
+    "test_queries": [
+        "celestial creature with radiant attacks",
+        "powerful life-draining angel",
+        "fallen celestial that can teleport",
+        "large celestial with truesight",
+        "fallen solar that absorbs life energy"
+    ]
+}

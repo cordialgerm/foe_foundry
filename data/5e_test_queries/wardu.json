@@ -1,0 +1,25 @@
+{
+    "name": "Wardu",
+    "queries": [
+        {
+            "query": "magical creature with flying abilities and debilitating gaze",
+            "variant": "magical creature that has flying powers and a gaze that causes debilitation"
+        },
+        {
+            "query": "aberration known for its magic resistance and heal through attacks",
+            "variant": "aberration that is famous for its resistance to magic and healing from its attacks"
+        },
+        {
+            "query": "creature with darkvision that can communicate through telepathy",
+            "variant": "monster with darkvision able to use telepathy to communicate"
+        },
+        {
+            "query": "neutral evil monster with high dexterity and no ground movement",
+            "variant": "neutral evil creature having high dexterity and lacks movement on the ground"
+        },
+        {
+            "query": "creature with segmented eye causing random conditions in enemies",
+            "variant": "being with segmented vision that inflicts random conditions on foes"
+        }
+    ]
+}

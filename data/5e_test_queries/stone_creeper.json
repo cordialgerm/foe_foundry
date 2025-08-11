@@ -1,0 +1,25 @@
+{
+    "name": "Stone Creeper",
+    "queries": [
+        {
+            "query": "plant creature that ambushes and climbs",
+            "variant": "creature that climbs and ambushes, plant type"
+        },
+        {
+            "query": "ambush predator with acid attacks and vine appearance",
+            "variant": "vine-like ambush predator that uses acid attacks"
+        },
+        {
+            "query": "medium-sized plant monster with high constitution and bludgeoning resistance",
+            "variant": "medium plant creature resistant to bludgeoning and has high constitution"
+        },
+        {
+            "query": "deceptive climbing creature that blends with surroundings",
+            "variant": "creature that climbs and blend in with it's surroundings deceivingly"
+        },
+        {
+            "query": "monster with tremorsense and thorned attacks",
+            "variant": "creature that has thorned attacks and uses tremorsense"
+        }
+    ]
+}

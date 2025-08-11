@@ -1,0 +1,50 @@
+{
+    "name": "Xing Tian",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "intimidation"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "powerful"
+    ],
+    "description": "Xing Tian is a Huge Giant with exceptional combat prowess and impressive durability, equipped with a battleaxe and a shield.",
+    "memorable": "Its ability to regain health while making it harder to hit during its Dance of the Unyielding makes it a memorable foe.",
+    "goals": "Xing Tian seeks to dominate the battlefield and instill fear in its opponents.",
+    "relations": "It may be encountered alongside other powerful giants or serve powerful beings in its domain.",
+    "environment": "Typically found in mountainous regions or areas suitable for large creatures.",
+    "strengths": "Xing Tian possesses high hit points, strong melee damage output, and abilities that enhance its resilience against crowd control.",
+    "weaknesses": "Its lower Dexterity and Intelligence scores limit its agility and mental capabilities.",
+    "attacks": "Xing Tian can make up to three attacks in a turn, dealing bludgeoning and slashing damage with a shield slam and battleaxe, respectively.",
+    "most_powerful_ability": "Dance of the Unyielding, allowing it to regain health and impose disadvantage on enemy melee attacks.",
+    "equipment": "battleaxe and shield",
+    "senses": "Xing Tian has darkvision and a high passive perception of 16, enabling it to notice hidden threats well.",
+    "skills": "Xing Tian is proficient in intimidation and perception, using its physical presence to intimidate foes and remain aware of its surroundings.",
+    "additional_information": [
+        "Indomitable feature allows resistance to paralysis, restraint, and stun.",
+        "Sure-Footed ability grants advantage on saving throws against being knocked prone.",
+        "Can perform a Multiattack, making three attacks including a shield slam.",
+        "Immunity to frightened condition enhances its resilience.",
+        "Strong Constitution contributes to its high hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge giant with battleaxe and shield",
+        "powerful giant that heals in combat",
+        "resilient creature that intimidates foes",
+        "giant with ability to regain hit points",
+        "neutral giant with fear immunity"
+    ]
+}

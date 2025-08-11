@@ -1,0 +1,49 @@
+{
+    "name": "Tripwire Patch",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 95,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 10 feet, burrowing speed of 20 feet",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush",
+        "difficult terrain"
+    ],
+    "adjectives": [
+        "huge",
+        "dangerous",
+        "cunning"
+    ],
+    "description": "The Tripwire Patch is a huge, ambush predator that resembles a normal patch of foliage when motionless. It can lunge at intruders with powerful Bite attacks and ensnare them with its Tripwire Vines.",
+    "memorable": "It creates difficult terrain and enriches plants when it defeats foes, strategically altering the environment.",
+    "goals": "Hinder foes and protect its territory by creating traps and difficult terrain.",
+    "relations": "Can be found in areas with dense plant life, potentially alongside other ambush predators.",
+    "environment": "Typically found in overgrown or wild terrains, where it can blend in with surrounding flora.",
+    "strengths": "Very strong melee attacks with the ability to control the battlefield and hinder movement.",
+    "weaknesses": "Low intelligence and social capability; vulnerable to those who can detect its false appearance.",
+    "attacks": "Can perform a Multiattack with two powerful Bite attacks or a combination of Bite and Tripwire Vine attacks.",
+    "most_powerful_ability": "Bountiful Death, allowing the creature to enrich the land effectively after defeating foes.",
+    "senses": "Possesses tremorsense out to 60 feet and has a passive Perception score of 15.",
+    "skills": "Has a +1 in Perception, allowing it to detect intruders effectively.",
+    "additional_information": [
+        "Immunities to being blinded, deafened, and prone.",
+        "False appearance allows it to ambush effectively.",
+        "Ability to create difficult terrain after a kill.",
+        "No Escape reaction to catch foes standing from prone.",
+        "Strength score of 18, making it formidable in close combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator that blends with foliage",
+        "plant monster that creates difficult terrain",
+        "large creature enriching terrain after kills",
+        "predatory plant with powerful bite attacks",
+        "cunning monster that traps intruders"
+    ]
+}

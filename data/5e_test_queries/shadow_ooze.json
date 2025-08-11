@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Ooze",
+    "queries": [
+        {
+            "query": "darkness-consuming ooze that moves through tight spaces",
+            "variant": "ooze that consumes darkness and sneaks through tight spaces"
+        },
+        {
+            "query": "medium-sized ooze creature with the ability to extinguish light",
+            "variant": "medium ooze that can snuff out light sources"
+        },
+        {
+            "query": "creature immune to acid and necrotic damage living in darkness",
+            "variant": "dark creature with acid and necrotic immunity"
+        },
+        {
+            "query": "shadowy creature with blindsight and low Dexterity",
+            "variant": "shadow creature with poor Dexterity and blindsight ability"
+        },
+        {
+            "query": "stealthy ooze that can climb and create Aura of Darkness",
+            "variant": "stealthy ooze able to climb and has Aura of Darkness"
+        }
+    ]
+}

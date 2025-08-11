@@ -1,0 +1,25 @@
+{
+    "name": "Wyvern Knight",
+    "queries": [
+        {
+            "query": "humanoid creature that uses poison and wears armor",
+            "variant": "armored humanoid monster that uses poison"
+        },
+        {
+            "query": "knight with high Strength and fights from a wyvern",
+            "variant": "strong knight who fights from a wyvern's back"
+        },
+        {
+            "query": "lawful evil humanoid with lance and poison attacks",
+            "variant": "evil humanoid knight using a lance and poison"
+        },
+        {
+            "query": "medium-sized knight immune to poison with high armor class",
+            "variant": "medium knight with high AC and immune to poison"
+        },
+        {
+            "query": "combat-focused wyvern knight with protective abilities",
+            "variant": "wyvern knight with combat tactics and protective power"
+        }
+    ]
+}

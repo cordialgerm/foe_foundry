@@ -1,0 +1,25 @@
+{
+    "name": "Barbed Devil",
+    "queries": [
+        {
+            "query": "devil covered in spikes that inflicts pain",
+            "variant": "spike-covered devil that causes pain"
+        },
+        {
+            "query": "medium fiend with dark reddish-brown skin and grappling abilities",
+            "variant": "medium fiend with spiny reddish-brown skin and grappling skills"
+        },
+        {
+            "query": "fiend with barbed hide and resistant to cold damage",
+            "variant": "devil with barbed hide and cold damage resistance"
+        },
+        {
+            "query": "a cunning devil that uses Hurl Flame and grapples its enemies",
+            "variant": "intelligent devil using Hurl Flame and grabbing foes"
+        },
+        {
+            "query": "lawful evil creature with darkvision and telepathy abilities",
+            "variant": "creature of lawful evil alignment with darkvision and telepathy"
+        }
+    ]
+}

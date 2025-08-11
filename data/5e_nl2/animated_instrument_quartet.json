@@ -1,0 +1,51 @@
+{
+    "name": "Animated Instrument, Quartet",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 102,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 30 feet and a flying speed of 50 feet, providing good maneuverability.",
+    "role": "null",
+    "tags": [
+        "musical",
+        "construct",
+        "entertainer",
+        "combat",
+        "magic"
+    ],
+    "adjectives": [
+        "musical",
+        "formidable"
+    ],
+    "description": "A large construct that exudes an aura of musicality, resembling a quartet of animated instruments. It has average physical might but excels in Charisma, enhancing its musical abilities.",
+    "memorable": "The ability to blend in with other musical instruments when motionless and its performances that can terrify, knock down, or disrupt enemies make it a unique opponent.",
+    "goals": "To serve as an entertainer and formidable opponent in combat, following its programmed intent.",
+    "relations": "Typically operates independently as a construct but can be found in situations with other musical constructs.",
+    "environment": "Can be found in theaters, concert halls, or locations where music is played.",
+    "strengths": "Immunities to poison and psychic damage, along with several conditions such as being blinded, charmed, or paralyzed.",
+    "weaknesses": "Susceptible to antimagic fields, which incapacitate it.",
+    "attacks": "Multiattack capability with melee bludgeoning damage and ranged thunder damage attacks.",
+    "most_powerful_ability": "Musical Arrangement ability that plays three powerful songs to affect nearby hostile creatures.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet allows it to sense its surroundings without needing sight.",
+    "skills": "Proficient in perception, allowing it to notice things more easily.",
+    "additional_information": [
+        "Antimagic Susceptibility makes it vulnerable in magic-less zones.",
+        "Construct Nature negates the need for air, food, drink, or sleep.",
+        "Four-Part Harmony reduces its effectiveness when one of its instruments falls unconscious."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "musical construct opponent",
+        "animated instruments that can fight",
+        "non-living musical creatures",
+        "constructs with special abilities in combat",
+        "magical quartet enemies"
+    ]
+}

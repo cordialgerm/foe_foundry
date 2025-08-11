@@ -1,0 +1,25 @@
+{
+    "name": "Rakshasa, Slayer",
+    "queries": [
+        {
+            "query": "medium fiend that can teleport and is vulnerable to piercing damage",
+            "variant": "medium-sized fiend that teleports and is weak against piercing damage"
+        },
+        {
+            "query": "cunning assassin fiend with poison attacks and magic immunity",
+            "variant": "clever assassin fiend with poisonous strikes and spell immunity"
+        },
+        {
+            "query": "stealthy fiend that uses disguise and can manipulate the situation",
+            "variant": "sneaky fiend that casts disguises and manipulates scenarios"
+        },
+        {
+            "query": "fiend with high dexterity that excels in combat and evasion",
+            "variant": "fiend with exceptional agility that is great in battles and escaping"
+        },
+        {
+            "query": "lawful evil fiend that is skilled at multiattacks and capable of spellcasting",
+            "variant": "lawfully evil fiend that can perform multiple attacks and cast spells"
+        }
+    ]
+}

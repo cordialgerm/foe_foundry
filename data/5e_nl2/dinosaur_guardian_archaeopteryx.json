@@ -1,0 +1,51 @@
+{
+    "name": "Guardian Archaeopteryx",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 36,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed of 15 feet and flying speed of 50 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "dinosaur",
+        "beast",
+        "flying",
+        "nimble"
+    ],
+    "adjectives": [
+        "nimble",
+        "elusive",
+        "supportive"
+    ],
+    "description": "The Guardian Archaeopteryx is a small, agile dinosaur with natural armor that aids in its defense. It features a beak and sharp talons for melee combat, and its colorful feathers help it blend into its surroundings.",
+    "memorable": "Its ability to fly without provoking opportunity attacks makes it a challenging opponent in combat.",
+    "goals": "To assist its allies in combat while evading physical attacks.",
+    "relations": "Could be accompanied by other small beasts or serve as a companion to spellcasters.",
+    "environment": "Found in areas with plenty of open space for flight, such as forests or grasslands.",
+    "strengths": "Good agility and magical resistance enhance its survivability, while its ability to support allies with poison imbues increases combat effectiveness.",
+    "weaknesses": "Low strength and intelligence limit its physical attack capabilities and intelligence-based tasks.",
+    "attacks": "Can use a combination of beak and talons for melee attacks, or unleash a ranged spit thorn attack.",
+    "most_powerful_ability": "Imbue Poison ability supports allies, enhancing their attacks with additional poison effects.",
+    "equipment": null,
+    "senses": "Has a passive perception of 14, making it fairly observant.",
+    "skills": "Has a perception skill with a +2 modifier, allowing it to notice threats or opportunities.",
+    "additional_information": [
+        "Has resistance to poison damage.",
+        "Advantage on saving throws against spells due to Magic Resistance.",
+        "Multiattack feature allows for versatile combat strategies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "nimble dinosaur that can fly",
+        "small beast that supports allies with poison",
+        "flying monster with magical resistance",
+        "elusive creature with poison abilities",
+        "sharp beaked dinosaur in forests"
+    ]
+}

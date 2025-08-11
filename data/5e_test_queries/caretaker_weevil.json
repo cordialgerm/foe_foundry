@@ -1,0 +1,25 @@
+{
+    "name": "Caretaker Weevil",
+    "queries": [
+        {
+            "query": "beast with calming abilities and high hit points",
+            "variant": "beast that has calming powers and a lot of hit points"
+        },
+        {
+            "query": "medium-sized creature that stabilizes allies and restrains enemies",
+            "variant": "creature of medium size that supports allies and can restrain foes"
+        },
+        {
+            "query": "non-evil creature with support abilities that thrives in combat",
+            "variant": "unaligned creature with supportive skills that performs well in battles"
+        },
+        {
+            "query": "beast that provides healing and calmness in battles",
+            "variant": "animal that offers healing and serenity during fights"
+        },
+        {
+            "query": "creature that uses spittle to heal and has a weak offensive attack",
+            "variant": "being that can heal with spittle and has a poor attack capability"
+        }
+    ]
+}

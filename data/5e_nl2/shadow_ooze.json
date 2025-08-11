@@ -1,0 +1,52 @@
+{
+    "name": "Shadow Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 8,
+    "srd": false,
+    "cr": "3",
+    "movement": "climb 20 ft, walk 20 ft",
+    "role": "null",
+    "tags": [
+        "darkness",
+        "ooze",
+        "ambush"
+    ],
+    "adjectives": [
+        "shadowy",
+        "consuming",
+        "amorphous"
+    ],
+    "description": "The Shadow Ooze is a medium, dark mass that consumes light, with the ability to move through tight spaces easily.",
+    "memorable": "Its ability to create an area of darkness, rendering foes blind and disrupting spells reliant on light, is particularly frightening.",
+    "goals": "To survive by consuming light and overwhelming creatures in darkness.",
+    "relations": "May be found near other oozes or in dark, lightless environments.",
+    "environment": "Typically found in dark areas where light sources are scarce.",
+    "strengths": "Immunity to acid and necrotic damage, along with several condition immunities.",
+    "weaknesses": "Low Dexterity makes it ineffective at dodging attacks; lacks intelligence and charm.",
+    "attacks": "Uses a pseudopod attack dealing bludgeoning, necrotic, and acid damage, followed by the ability to extinguish light sources.",
+    "most_powerful_ability": "Aura of Darkness, creating an area of darkness that obscures vision and hinders light-based spells.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Stealthy with a skill modifier of +2, enhancing its capability to remain undetected in darkness.",
+    "additional_information": [
+        "Moves through 1-inch-wide spaces without squeezing.",
+        "Capable of climbing difficult surfaces, including upside down.",
+        "Has low passive perception, making it less aware of its surroundings.",
+        "Consumes both natural and magical light, creating significant tactical challenges.",
+        "Incapable of complex thought or social interaction."
+    ],
+    "damage_types": [
+        "necrotic",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark shadow creature that consumes light",
+        "shadowy ooze with strength and darkness abilities",
+        "creature that moves through tight spaces in darkness",
+        "ooze that can extinguish light sources",
+        "dark mass that uses stealth and ambush tactics"
+    ]
+}

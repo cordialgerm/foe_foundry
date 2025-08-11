@@ -1,0 +1,51 @@
+{
+    "name": "Sap Demon",
+    "creature_type": "Ooze",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 81,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "demon",
+        "chaotic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "small",
+        "sticky",
+        "evil"
+    ],
+    "description": "The Sap Demon is a small chaotic evil ooze, known for its ability to manipulate and control others. It has a sticky, amorphous body that can pass through narrow spaces, presenting a unique threat on the battlefield.",
+    "memorable": "Its Soul Sap ability allows it to possess humanoids, turning them against their allies while remaining aware of the situation.",
+    "goals": "The Sap Demon seeks to control and manipulate others, using its tactics to outmaneuver opponents.",
+    "relations": "Often found in the company of other chaotic creatures, it can serve as a minion or ally to more powerful beings.",
+    "environment": "Typically encountered in dark, hidden locations like swamps or abandoned buildings where it can ambush unsuspecting victims.",
+    "strengths": "Immune to acid damage and resistant to bludgeoning damage, it can endure significant punishment in combat.",
+    "weaknesses": "Low Dexterity makes it vulnerable to being hit and less effective at avoiding attacks.",
+    "attacks": "Its Slam attack deals both bludgeoning and acid damage, while Lob Sap lets it hinder opponents' movement.",
+    "most_powerful_ability": "The Soul Sap ability allows it to possess humanoid targets, granting it control of their bodies while they remain aware.",
+    "equipment": null,
+    "senses": "The Sap Demon has blindsight out to 90 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Amorphous body allows it to squeeze through narrow spaces.",
+        "Does not require sleep, making it a constant threat.",
+        "Season's Change ability alters its speed based on the damage type received."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small chaotic evil ooze",
+        "possessing demon that grapples",
+        "ooze monster with acid attacks",
+        "sticky monster with unique abilities",
+        "sap demon tactics and abilities"
+    ]
+}

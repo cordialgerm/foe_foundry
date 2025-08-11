@@ -1,0 +1,25 @@
+{
+    "name": "Chained Angel",
+    "queries": [
+        {
+            "query": "neutral evil celestial being with chains",
+            "variant": "evil celestial being that is chained"
+        },
+        {
+            "query": "fiery greatsword attacks from a chained angel",
+            "variant": "attacks of a chained angel using a fiery greatsword"
+        },
+        {
+            "query": "angelic creature immune to fire and radiant damage",
+            "variant": "creature with angelic features immune to radiant and fire damage"
+        },
+        {
+            "query": "high Charisma celestial bound by chains",
+            "variant": "celestial with high Charisma that is bound by chains"
+        },
+        {
+            "query": "powerful celestial with dark abilities in combat",
+            "variant": "strong celestial creature with dark powers in battles"
+        }
+    ]
+}

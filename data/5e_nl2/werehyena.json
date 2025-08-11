@@ -1,0 +1,50 @@
+{
+    "name": "Werehyena",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "shapechanger",
+        "lycanthropy",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "ferocious",
+        "versatile"
+    ],
+    "description": "The werehyena embodies the cunning of a gnoll and the ferocity of a hyena, capable of shifting between three forms: a true gnoll, a hyena-gnoll hybrid, or a pure hyena.",
+    "memorable": "It can curse targets with werehyena lycanthropy, potentially creating new werehyenas from defeated foes.",
+    "goals": "To ambush adversaries and spread chaos through lycanthropy.",
+    "relations": "Often encountered with gnolls or other monstrous creatures.",
+    "environment": "Typically found in areas where gnolls roam, such as deserts or savannas.",
+    "strengths": "High Dexterity allows for effective stealth and ambushing; immune to nonmagical attacks not made with silver.",
+    "weaknesses": "Vulnerable due to relatively low Armor Class against strong attacks.",
+    "attacks": "Can make a bite attack that causes lycanthropy, claws attacks, or use a scimitar in combat.",
+    "most_powerful_ability": "Shapechanger ability allows it to transform into different forms, enhancing its combat versatility.",
+    "equipment": null,
+    "senses": "Has Keen Hearing and Smell, granting advantage on Wisdom (Perception) checks based on these senses.",
+    "skills": "Skilled in Stealth, allowing it to excel in ambush situations.",
+    "additional_information": [
+        "Possesses high Dexterity (16) for agility.",
+        "Can make multiple attacks in its hybrid and gnoll forms.",
+        "Can inflict werehyena lycanthropy with its bite.",
+        "Reverts to true form upon death.",
+        "Uses cunning tactics to confuse and conquer enemies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid that transforms into a hyena",
+        "ferocious creature with cunning stealth",
+        "shapechanger that spreads lycanthropy",
+        "chaotic evil monster with keen senses",
+        "hyena-like humanoid in desert environments"
+    ]
+}

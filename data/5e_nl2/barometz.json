@@ -1,0 +1,50 @@
+{
+    "name": "Barometz",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 95,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "20 ft. walking speed",
+    "role": null,
+    "tags": [
+        "plant",
+        "regenerative",
+        "chaotic"
+    ],
+    "adjectives": [
+        "unique",
+        "nourishing",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Barometz is a large plant creature with a connection to the land, characterized by its ability to sprout nourishing fruits upon its death.",
+    "memorable": "It can provide significant benefits to those who consume its nourishing fruits, granting the effects of a heroes\u2019 feast spell.",
+    "goals": "To thrive in its ecosystem and possibly aid those who utilize its fruits.",
+    "relations": "Can be encountered near parent trees connected by vines.",
+    "environment": "Typically found in forested areas.",
+    "strengths": "Regenerates health at the start of its turn and is resistant to several forms of damage.",
+    "weaknesses": "Vulnerable to slashing damage and loses regenerative capabilities if its connection to the parent vine is severed.",
+    "attacks": "Can perform a multiattack using both gore and hooves, dealing piercing and bludgeoning damage.",
+    "most_powerful_ability": "Fruit of the Land allows it to grant the benefits of a heroes\u2019 feast spell upon its death.",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage.",
+        "Immunities to exhaustion and the poisoned condition.",
+        "Can pass through difficult terrain and magical plants without penalty.",
+        "Has a unique connection to a Parent Vine affecting its regeneration abilities.",
+        "The fruit created cannot last long, requiring timely consumption."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "nourishing plant monster",
+        "regenerative forest creature",
+        "large chaotic neutral plant",
+        "Barometz abilities",
+        "fruit-bearing monster"
+    ]
+}

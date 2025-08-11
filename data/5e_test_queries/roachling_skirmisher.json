@@ -1,0 +1,25 @@
+{
+    "name": "Roachling Skirmisher",
+    "queries": [
+        {
+            "query": "small humanoid with agility and cunning abilities",
+            "variant": "agile small humanoid with tricky nature and abilities"
+        },
+        {
+            "query": "creature that is immune to diseases and has a bad smell",
+            "variant": "creature with disease immunity and unpleasant odor"
+        },
+        {
+            "query": "humanoid creature that excels in Stealth and Acrobatics",
+            "variant": "humanoid that performs well in Acrobatics and Stealth"
+        },
+        {
+            "query": "low-level opponent with good Dexterity and weak social skills",
+            "variant": "weak social skills and high Dexterity low-level creature"
+        },
+        {
+            "query": "roach-like creature that uses a shortsword and darts in combat",
+            "variant": "combatant roach-like creature with shortsword and darts"
+        }
+    ]
+}

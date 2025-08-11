@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Fire Dancers",
+    "queries": [
+        {
+            "query": "medium swarm of fire elementals that engulf enemies with heat",
+            "variant": "medium fire elemental swarm that engulfs foes with heat"
+        },
+        {
+            "query": "fire-themed swarm creature that can fly and frightens humanoids",
+            "variant": "fire-themed creature swarm that can fly and terrifies humanoids"
+        },
+        {
+            "query": "swarm of beings that spread fear and deal fire damage",
+            "variant": "swarm of creatures that cause fear and inflict fire damage"
+        },
+        {
+            "query": "red hot swarm of fire dancers vulnerable to cold and water",
+            "variant": "red hot fire dancers swarm susceptible to cold and water"
+        },
+        {
+            "query": "elemental swarm that illuminates and burns foes on contact",
+            "variant": "elemental swarm that lights up and burns enemies upon contact"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Fulad-Zereh",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 115,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "40 ft. flying and walking",
+    "role": "Bruiser",
+    "tags": [
+        "demon",
+        "fiend",
+        "chaotic",
+        "battlefield control"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Fulad-Zereh is a huge fiend with an imposing presence, exhibiting features typical of demons. It bears a powerful build and armor, and its eyes hold a petrifying gaze, giving it a truly menacing appearance.",
+    "memorable": "Its ability to instantly petrify creatures with its gaze and resist various damage types make it a uniquely dangerous foe.",
+    "goals": "To exert control over its surroundings and defeat powerful adversaries through manipulation and brute strength.",
+    "relations": "Might ally with lesser demons or chaos-themed creatures in the Abyss.",
+    "environment": "Typically found in the depths of the Abyss or other chaotic locales.",
+    "strengths": "High armor class and significant hit points, along with potent abilities like Petrifying Gaze and resistance to multiple damage types.",
+    "weaknesses": "Lower Dexterity compared to its other attributes, making it less agile.",
+    "attacks": "Utilizes a barbed whip to ensnare foes and a battleaxe for powerful melee strikes.",
+    "most_powerful_ability": "Petrifying Gaze that can instantly petrify creatures within close range if they fail a saving throw.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to detect hidden creatures and see through illusions.",
+    "skills": "Has a strong insight and intimidation skill, making it adept at manipulating situations.",
+    "additional_information": [
+        "Immunity to poison damage and the poisoned condition.",
+        "Resistance to cold, fire, and lightning damage.",
+        "Ability to communicate telepathically up to 120 feet.",
+        "Multiattack allows it to strike with a whip and axe in the same turn.",
+        "Weeping Acid ability damages those who touch it or attack it in melee."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "demonic creature with petrifying gaze",
+        "huge fiend that inflicts acid damage",
+        "powerful demon from the Abyss",
+        "chaotic fiend that controls the battlefield",
+        "monster with devastating melee attacks"
+    ]
+}

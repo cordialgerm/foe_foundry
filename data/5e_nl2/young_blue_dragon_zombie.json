@@ -1,0 +1,50 @@
+{
+    "name": "Young Blue Dragon Zombie",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 152,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft., fly 70 ft., burrow 10 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "dragon",
+        "zombie"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "necrotic"
+    ],
+    "description": "The Young Blue Dragon Zombie is a large undead creature that has decayed dragon features, with tattered wings and a ghastly appearance that exudes a dark aura.",
+    "memorable": "Its ability to rise again after being dropped to 0 hit points makes it a relentless adversary.",
+    "goals": "Typically serves dark masters and seeks to spread death and destruction.",
+    "relations": "Related to blue dragons and other undead creatures, may serve powerful necromancers.",
+    "environment": "Usually found in desolate, dark areas or controlled by powerful undead lords.",
+    "strengths": "High Strength and Constitution scores make it a powerful melee attacker and durable opponent.",
+    "weaknesses": "Low Dexterity and Intelligence scores make it vulnerable to ranged attacks and limit its tactical decisions.",
+    "attacks": "Multiattack with a bite and claw strikes that deal piercing and slashing damage, plus necrotic damage from the bite.",
+    "most_powerful_ability": "Rotting Breath, which can cause substantial necrotic damage and create additional zombies from slain humanoids.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, allowing it to sense its surroundings without seeing.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to lightning and poison damage",
+        "Undead Fortitude allows it to avoid outright destruction",
+        "Can create more zombies from humanoids it kills"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead dragon with rotting breath",
+        "undead dragon that creates zombies",
+        "blue zombie dragon with high durability",
+        "formidable necrotic creature in dark areas",
+        "dragon zombie with powerful melee attacks"
+    ]
+}

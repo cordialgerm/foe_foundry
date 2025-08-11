@@ -1,0 +1,49 @@
+{
+    "name": "Brain Hood",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "flies at 40 feet and hovers",
+    "role": "Skirmisher",
+    "tags": [
+        "psychic",
+        "beast control",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "multi-faceted",
+        "size-small"
+    ],
+    "description": "A tiny aberration with a head resembling a brain, capable of merging with beasts to control them while wielding innate spellcasting and physical attacks.",
+    "memorable": "The ability to control beasts in combat and its combination of psychic and physical capabilities make it a unique and tricky adversary.",
+    "goals": "To control beasts and manipulate the battlefield using its spells.",
+    "relations": "Potential allies or foes include beasts with low intelligence, as well as other aberrations.",
+    "environment": "Typically found in areas where it can encounter beasts, such as forests or wilderness.",
+    "strengths": "Good dexterity and intelligence for offensive and defensive actions, including spellcasting and controlling beasts.",
+    "weaknesses": "Low strength and vulnerability due to its low hit points; relies on others for protection.",
+    "attacks": "Slam attack that delivers modest bludgeoning damage and can initiate its merging ability with beasts.",
+    "most_powerful_ability": "Merge with Beast, allowing it to control beasts while retaining its own personality and spellcasting ability.",
+    "senses": "Possesses blindsight up to 60 feet, granting it detection of creatures within that range while being blind beyond.",
+    "skills": "Has exceptional dexterity saving throws, reflecting its agile nature.",
+    "additional_information": [
+        "Resistant to bludgeoning damage",
+        "Immune to being prone",
+        "Can communicate telepathically with a range of 60 feet",
+        "Utilizes innate spellcasting without needing components",
+        "Retains its personality while merged with another creature"
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast spells like acid splash, chilling touch, and burning hands, utilizing its intelligence.",
+    "test_queries": [
+        "tiny monster that controls beasts",
+        "brain-like creature with spellcasting abilities",
+        "psychic creature that merges with animals",
+        "cunning aberration with high intelligence",
+        "monster with blindsight and innate spells"
+    ]
+}

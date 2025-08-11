@@ -1,0 +1,52 @@
+{
+    "name": "Holy Knight",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 18,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "knight",
+        "protector",
+        "healer"
+    ],
+    "adjectives": [
+        "formidable",
+        "valiant",
+        "supportive"
+    ],
+    "description": "The Holy Knight embodies valor and protection, showcasing exceptional melee capabilities and durability with a greatsword and a radiant-infused attack.",
+    "memorable": "Provides immunity to fear for allies and can heal significantly, making it a powerful support character in battle.",
+    "goals": "To protect allies and maintain morale while dealing significant damage to foes.",
+    "relations": "Can be accompanied by other knights or paladins and may serve a noble cause.",
+    "environment": "Commonly found in locations associated with justice, nobility, or valor, such as castles or holy sites.",
+    "strengths": "High strength and constitution contribute to impressive attack damage and resilience in combat.",
+    "weaknesses": "Moderate dexterity affects ranged combat effectiveness, and below-average intelligence limits strategic options.",
+    "attacks": "Utilizes a greatsword for melee attacks, dealing slashing and radiant damage, and can perform devastating lance charges mounted.",
+    "most_powerful_ability": "Aura of Courage grants allies within 10 feet immunity to fear.",
+    "equipment": "Greatsword, lance (mounted only)",
+    "senses": "Possesses a passive perception of 15, allowing for good awareness of surroundings.",
+    "skills": "Proficient in athletics, insight, perception, and religion, reflecting both physical prowess and moral authority.",
+    "additional_information": [
+        "Can restore 30 hit points with Lay On Hands once per day.",
+        "Has an action to inspire allies, providing a bonus to their attack rolls and saving throws.",
+        "Multiattack ability increases potential damage output in combat.",
+        "Combat capabilities are enhanced when mounted, allowing for greater reach and damage.",
+        "Condition immunity to frightened enhances battlefield presence."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "valiant knight with healing abilities",
+        "medium humanoid protector in battle",
+        "battle knight that grants fear immunity",
+        "radiant damage dealing knight with support skills",
+        "knight that inspires allies during combat"
+    ]
+}

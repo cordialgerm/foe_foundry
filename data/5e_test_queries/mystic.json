@@ -1,0 +1,25 @@
+{
+    "name": "Mystic",
+    "queries": [
+        {
+            "query": "humanoid that excels in arcane knowledge and has necrotic damage resistance",
+            "variant": "arcane knowledge humanoid with necrotic resistance"
+        },
+        {
+            "query": "medium creature that manipulates the battlefield with magical attacks",
+            "variant": "medium-sized monster that uses magic to control the battlefield"
+        },
+        {
+            "query": "creature with hide armor and the ability to command fiends in combat",
+            "variant": "monster wearing hide armor that can command fiends during battles"
+        },
+        {
+            "query": "intelligent evil humanoid that can levitate and deal necrotic damage",
+            "variant": "clever evil creature that has levitation and necrotic attack capabilities"
+        },
+        {
+            "query": "darkvision humanoid that uses fears to control enemies in battle",
+            "variant": "humanoid with darkvision that frightens foes in combat"
+        }
+    ]
+}

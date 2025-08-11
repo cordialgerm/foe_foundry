@@ -1,6 +1,8 @@
 <MonsterName/>Kelp Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary></summary>
 
 <detail></detail>
@@ -11,6 +13,7 @@
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kelp Drake
 
 *Medium* *Dragon* *neutral evil*
@@ -43,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Binding Bile (Recharge 6):** The drake forcibly vomits a long line of bile-coated kelp that unravels in a 30-foot-long, 5-foot-wide line. Each target in the area must make a DC 13 Dexterity saving throw. On a failure, a creature takes 14 (4d6) acid damage and is restrained by kelp for 1 minute. On a success, a creature takes half the damage and isn’t restrained. A creature, including the target, can take its action to remove the kelp by succeeding on a DC 13 Strength check. Alternatively, the kelp can be attacked and destroyed (AC 10; hp 3; immunity to bludgeoning, poison, and psychic damage).
 
 
+</statblock>
 
 

@@ -1,12 +1,16 @@
 <MonsterName/>Gnome, Deep (Svirfneblin)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>gnome</Subtype>
+<CR/>1</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>16</HP>
 
 
 ---
 
 Source: 5e_srd
 
+<statblock>
 ## Gnome, Deep (Svirfneblin)
 
 *Small humanoid (gnome), neutral good*
@@ -43,5 +47,6 @@ At will: *nondetection* (self only)
 
 ***War Pick***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) piercing damage.
 
-***Poisoned Dart***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Poisoned Dart***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 

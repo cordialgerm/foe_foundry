@@ -1,0 +1,57 @@
+{
+    "name": "Archfey",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 330,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 35 ft., fly 60 ft.",
+    "role": "null",
+    "tags": [
+        "magic",
+        "fey",
+        "psychic",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "versatile",
+        "formidable",
+        "agile",
+        "dominant"
+    ],
+    "description": "The Archfey is a powerful fey creature with notable magical prowess. It can change its size between Large, Medium, and Tiny, affecting its damage and capabilities. With high Dexterity and Charisma, it excels in mobility and social interactions. Its abilities include casting dim light and various potent spells like 'charm person' and 'polymorph'.",
+    "memorable": "The Archfey can summon midnight, creating an area of night that influences combat dynamics, and has the ability to terrify creatures with its 'Weird' spell, showcasing its dominance in psychological warfare.",
+    "goals": "It often seeks to manipulate, charm, or instill fear in others, leveraging its magical abilities to control its environment.",
+    "relations": "Typically associated with other fey creatures, it may command lesser fey beings or be encountered alongside powerful magic users.",
+    "environment": "Usually found in enchanted forests, magical realms, or places rich with natural beauty and wonder.",
+    "strengths": "High Dexterity and Charisma allow it to avoid danger and influence others effectively, while its considerable hit points provide durability in combat.",
+    "weaknesses": "It has lower Strength and Constitution, making it vulnerable in physical confrontations.",
+    "attacks": "It can make two glittering scimitar attacks, dealing slashing damage complemented by elemental damage of its choice, or use a Gleaming Longbow for ranged piercing damage.",
+    "most_powerful_ability": "The ability to cast 'Weird', instilling fear and causing psychic damage to nearby creatures.",
+    "equipment": "wields a glittering scimitar and a gleaming longbow.",
+    "senses": "possesses truesight up to 60 feet, allowing it to see things as they truly are.",
+    "skills": "Has proficient skills in insight and perception, with a passive Perception of 19, enabling it to notice details and read situations effectively.",
+    "additional_information": [
+        "Immunities to being charmed, paralyzed, poisoned, or unconscious.",
+        "Can teleport 60 feet as a bonus action with Faerie Step.",
+        "Utilizes Evil Eye to impose debilitating effects on opponents.",
+        "Ability to use Multiattack for two melee attacks in a single turn.",
+        "Can create areas of night and summons creatures with magical powers."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting with a focus on charm, divination, and transformation spells, allowing for a wide range of magical interventions.",
+    "test_queries": [
+        "powerful fey spellcaster",
+        "dominant magical manipulator",
+        "fear-inspiring fae being",
+        "shapeshifting fey creature",
+        "psychic warfare archfey"
+    ]
+}

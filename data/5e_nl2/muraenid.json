@@ -1,0 +1,49 @@
+{
+    "name": "Muraenid",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "aquatic",
+        "predator",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "powerful",
+        "manipulative",
+        "dangerous"
+    ],
+    "description": "The Muraenid is a large aquatic monstrosity with exceptional strength and agility, able to control its underwater domain effectively. It has a robust appearance adapted to its environment.",
+    "memorable": "Its ability to charm aquatic creatures makes it a unique and dominant force in its underwater realm.",
+    "goals": "The Muraenid seeks to control aquatic territories and dominate other creatures in its habitat.",
+    "relations": "It may engage with other aquatic monstrosities, relying on allies to enhance its combat effectiveness.",
+    "environment": "Typically found in underwater habitats, thriving in oceans, lakes, and rivers.",
+    "strengths": "Strong physical power, skilled in melee combat, and able to manipulate others with its unique abilities.",
+    "weaknesses": "Low Charisma score limits its effectiveness in social encounters.",
+    "attacks": "Uses a powerful Bite attack that deals piercing damage while grappling foes for strategic advantage.",
+    "most_powerful_ability": "Lord of the Fishes allows it to charm aquatic beasts to serve its commands.",
+    "senses": "Has a passive perception of 13, indicating average awareness of its surroundings.",
+    "skills": "Proficient in dodge mechanics due to a +4 bonus in Dexterity saving throws.",
+    "additional_information": [
+        "Can use Pack Tactics for advantageous attacks when allies are near.",
+        "Ability to Speak with Aquatic Creatures enhances its control over underwater domains.",
+        "Water Breathing capability allows it to thrive exclusively underwater.",
+        "Telekinetic Grip can restrain creatures or manipulate objects effectively.",
+        "Enjoys a predator role within its aquatic environment."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large underwater predator with charm abilities",
+        "monster that controls aquatic realms",
+        "powerful grappler in underwater habitats",
+        "Muraenid charm aquatic beasts",
+        "manipulative aquatic monstrosity"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Kinnara",
+    "queries": [
+        {
+            "query": "medium celestial creature that can heal and protect allies",
+            "variant": "medium celestial being that can help and heal partners"
+        },
+        {
+            "query": "magical being with angelic weapons and psychic damage abilities",
+            "variant": "magical creature with angelic arms and psychic damage skills"
+        },
+        {
+            "query": "flying protector with strong ties to goodness and law",
+            "variant": "flying guardian with deep connections to law and goodness"
+        },
+        {
+            "query": "radiant damage resistant celestial that can communicate telepathically",
+            "variant": "celestial being that resists radiant damage and can talk telepathically"
+        },
+        {
+            "query": "creature immune to frightened condition that provides defensive support",
+            "variant": "creature that can't be frightened and gives defensive aid"
+        }
+    ]
+}

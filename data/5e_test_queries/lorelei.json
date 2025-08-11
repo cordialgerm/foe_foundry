@@ -1,0 +1,25 @@
+{
+    "name": "Lorelei",
+    "queries": [
+        {
+            "query": "chaotic evil fey creature with charming abilities and amphibious traits",
+            "variant": "fey creature that is chaotic evil and can charm enemies while in water"
+        },
+        {
+            "query": "seductive monster that uses psychic attacks and can breathe underwater",
+            "variant": "monster that is seductive and uses psychic abilities while being able to breathe underwater"
+        },
+        {
+            "query": "crafty fey that stuns enemies and has darkvision",
+            "variant": "clever fey creature that can stun foes and has ability to see in the dark"
+        },
+        {
+            "query": "fey creature with high Dexterity and manipulating skills in social interactions",
+            "variant": "creature with high agility and strong skills in persuasion and deception"
+        },
+        {
+            "query": "Lorelei abilities for charming opponents and regaining health",
+            "variant": "abilities of the Lorelei to charm foes and heal herself"
+        }
+    ]
+}

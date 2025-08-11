@@ -1,0 +1,52 @@
+{
+    "name": "Cavefish Zombie",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 37,
+    "ac": 10,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "swimming speed of 40 feet, walking speed of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "zombie",
+        "aquatic"
+    ],
+    "adjectives": [
+        "macabre",
+        "reanimated",
+        "poisonous"
+    ],
+    "description": "The Cavefish Zombie is an undead creature resembling a reanimated fish, characterized by a grotesque appearance from its aquatic life.",
+    "memorable": "It has a debilitating stench that can poison nearby creatures and the ability to potentially avoid death with its Undead Fortitude.",
+    "goals": "To thrive in aquatic environments and attack any nearby creatures.",
+    "relations": "Often found with other undead creatures in watery locales, potentially serving dark masters or haunting submerged ruins.",
+    "environment": "Typically found in aquatic environments, such as lakes or rivers.",
+    "strengths": "Possesses Damage Immunities to poison and the ability to evade death through Undead Fortitude.",
+    "weaknesses": "Limited in versatility due to low Intelligence, Wisdom, and Charisma, making it poor in mental and social encounters.",
+    "attacks": "Uses a melee Slam attack that deals bludgeoning damage.",
+    "most_powerful_ability": "Stench ability can poison any creature starting its turn near it, imposing significant combat disadvantages.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see in darkness up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Inflicts poison through its stench.",
+        "Average speed of 20 feet on land.",
+        "Weak to radiant damage and critical hits.",
+        "Can remain in combat with Undead Fortitude.",
+        "Easy to hit due to low AC."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead fish monster with debilitating stench",
+        "reanimated aquatic creature that inflicts poison",
+        "creature that swims and can evade death",
+        "zombie that thrives in underwater environments",
+        "macabre fish with stinky poison"
+    ]
+}

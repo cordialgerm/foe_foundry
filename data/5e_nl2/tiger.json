@@ -1,0 +1,49 @@
+{
+    "name": "Tiger",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 37,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "40 ft. walk speed",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "ambusher",
+        "stealth"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "ferocious"
+    ],
+    "description": "The tiger features striking orange and black striped fur, blending seamlessly into jungle or forest environments. It possesses powerful limbs, sharp claws, and a strong jaw for tearing flesh. Known for its stealth, it utilizes ambush tactics to hunt prey efficiently.",
+    "memorable": "The tiger's ability to knock foes prone and capitalize on its attacks showcases its predatory nature and ferocity in combat.",
+    "goals": "Typically hunts for food and defends its territory, especially protecting its cubs.",
+    "relations": "As an apex predator, it may be related to other large predators or encountered with similar forest dwellers.",
+    "environment": "Generally found in jungle or forest habitats.",
+    "strengths": "High strength and dexterity enhance its attacking capabilities and evasiveness. Its keen sense of smell aids in tracking prey.",
+    "weaknesses": "Very low intelligence and charisma make it rely solely on instinctual actions rather than complex strategies.",
+    "attacks": "The tiger can deliver swift melee attacks with its bite and claws, dealing significant damage, and has additional tactical abilities like knocking foes prone.",
+    "most_powerful_ability": "The 'Pounce' ability allows it to knock targets prone and follow up with a powerful bite attack.",
+    "senses": "Possesses keen smell, granting advantage on perception checks related to smell, making it a skilled tracker in its environment.",
+    "skills": "Proficient in stealth with a high modifier, making it an expert ambusher.",
+    "additional_information": [
+        "Can perform multiattacks to deal damage with both claws and bites.",
+        "Heightened sense of smell improves perception abilities significantly when tracking.",
+        "Defends its territory fiercely, especially when cubs are involved.",
+        "Can cause ongoing damage through its attacks with bleeding effects.",
+        "Operates mainly as a solitary hunter, showcasing its independence."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy large jungle predator",
+        "fierce striped ambush hunter",
+        "large beast with powerful claws",
+        "tactical fighter that knocks enemies prone",
+        "predator with heightened sense of smell"
+    ]
+}

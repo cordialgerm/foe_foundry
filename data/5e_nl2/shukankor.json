@@ -1,0 +1,52 @@
+{
+    "name": "Shukankor",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 115,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "Aberration",
+        "Chaotic",
+        "Combat",
+        "Telepathy"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "deceptive"
+    ],
+    "description": "The Shukankor is a massive, chaotic aberration defined by its brute physical power and resilience, showcasing features that evoke both fear and intrigue.",
+    "memorable": "The Shukankor's ability to create duplicates of itself and communicate telepathically with them allows for chaotic yet strategic combat encounters.",
+    "goals": "To dominate its enemies through brute strength and confusion, utilizing clones to disrupt battle tactics.",
+    "relations": "Related to other aberrations, may have dark ties to chaotic entities in the multiverse.",
+    "environment": "Typically found in the darkest and most chaotic areas of the multiverse.",
+    "strengths": "High physical power, durability with high HP and AC, and the ability to create duplicates for tactical advantage.",
+    "weaknesses": "Low Intelligence and Charisma, limiting its social and strategic capabilities.",
+    "attacks": "Makes a multiattack with a beak and claws, dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "Duplicating Terror allows it to create four duplicates that act as allies and retain advantageous traits.",
+    "senses": "Possesses darkvision up to 120 feet and has a passive perception of 19, allowing it to detect threats effectively.",
+    "skills": "Highly skilled in athletics and perception, making it aware of its surroundings and capable in physical maneuvers.",
+    "additional_information": [
+        "Immunity to poison damage and condition.",
+        "Resistance to nonmagical physical damage.",
+        "Can sacrifice a replica to absorb an attack's damage.",
+        "Replicas can become independent beings after a month.",
+        "Possesses advantage on perception checks due to many eyes."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic huge monster with duplicating abilities",
+        "powerful aberration that creates clones",
+        "strong creature with high physical prowess",
+        "monster that communicates telepathically with replicas",
+        "large chaotic evil being from the multiverse"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Pale Screamer",
+    "queries": [
+        {
+            "query": "medium aberration with powerful scream and tentacle attacks",
+            "variant": "medium abberation with strong scream and tentacle attacks"
+        },
+        {
+            "query": "swimming monster that paralyzes with its tentacles",
+            "variant": "swimming creature that can paralyze with its tentacles"
+        },
+        {
+            "query": "creature that can breathe air and water and causes thunder damage",
+            "variant": "being that breathes both air and water and inflicts thunder damage"
+        },
+        {
+            "query": "neutral evil monster with natural armor and high strength",
+            "variant": "neutral evil creature with natural protection and high strength"
+        },
+        {
+            "query": "monster with darkvision and low intelligence that fights in water",
+            "variant": "creature with darkvision and poor intelligence that battles in water"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Morko</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>17</HP>
 <summary>Morko is a small fey creature embodying chaotic evil traits, thriving in deception and mischief. With a modest armor class of 12 and a total of 17 hit points, this creature is considered relatively weak and can be easily dispatched if caught off guard. However, its innate magical abilities and skills make it a cunning opponent. Morko has a Challenge Rating of 1/4, indicating it poses a minor threat to adventurers, typically rewarding 50 experience points upon defeat. Notable for its resistance to fire and poison damage, as well as its ability to manipulate its size, the Morko can create disruptive tactical advantages during encounters.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, Morko serves as a tricky adversary, relying on magical resistance and c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Morko
 
 *Small* *Fey* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Shrink (Recharges after a Short or Long Rest):** For 1 minute, the morko magically decreases in size, along with anything it is wearing or carrying. While shrunken, the morko is Tiny, halves its damage dice on Strength-based weapon attacks, and makes Strength checks and Strength saving throws with disadvantage. If the morko lacks the room to grow back to its regular size, it attains the maximum size possible in the space available.
 
 
+</statblock>
 
 

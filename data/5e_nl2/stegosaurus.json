@@ -1,0 +1,48 @@
+{
+    "name": "Stegosaurus",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 63,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "dinosaur",
+        "large creature",
+        "brute"
+    ],
+    "adjectives": [
+        "massive",
+        "armored"
+    ],
+    "description": "The Stegosaurus is a massive dinosaur-like creature with a robust body and armor-like skin.",
+    "memorable": "Known for its powerful tail capable of knocking down foes.",
+    "goals": "Typically roams in search of food and safety from predators.",
+    "relations": "Could be found alongside other dinosaurs or large beasts.",
+    "environment": "Often found in open areas or grasslands.",
+    "strengths": "High strength and constitution make it resilient in combat.",
+    "weaknesses": "Very low intelligence and charisma, limiting its social interactions.",
+    "attacks": "A powerful tail attack dealing 17 piercing damage, capable of knocking down smaller enemies.",
+    "most_powerful_ability": "Its tail can knock Large or smaller creatures prone on a failed saving throw.",
+    "senses": "Has a passive perception of 11.",
+    "skills": "No remarkable skill proficiencies.",
+    "additional_information": [
+        "High strength score of 18 enhances melee attacks.",
+        "Relatively slow speed compared to other creatures of its size.",
+        "Notable for its large size and intimidating presence."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive armored dinosaur with a tail attack",
+        "brute dinosaur that knocks enemies prone",
+        "huge creature with strong melee attacks",
+        "heavy-duty dinosaur like beast",
+        "stealthy massive beast roaming open fields"
+    ]
+}

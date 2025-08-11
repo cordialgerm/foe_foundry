@@ -1,0 +1,25 @@
+{
+    "name": "Avulzor",
+    "queries": [
+        {
+            "query": "large creature that manipulates bones and commands undead",
+            "variant": "big monster that commands the undead and manipulates bones"
+        },
+        {
+            "query": "lawful evil monster with a bone kilt and high intelligence",
+            "variant": "evil lawful creature wearing a bone kilt and with impressive intelligence"
+        },
+        {
+            "query": "undead commander with slashing attacks and necrotic immunity",
+            "variant": "creature that commands undead with slashing damage and is immune to necrotic"
+        },
+        {
+            "query": "monster that enhances skeletons and has powerful melee attacks",
+            "variant": "creature enhancing skeletons with strong close combat capabilities"
+        },
+        {
+            "query": "tactical aberration with condition immunities and versatile abilities",
+            "variant": "strategic aberration immune to conditions and versatile in abilities"
+        }
+    ]
+}

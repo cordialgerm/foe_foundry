@@ -1,0 +1,51 @@
+{
+    "name": "Greater Sphinx",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 220,
+    "ac": 20,
+    "srd": false,
+    "cr": "17",
+    "movement": "40 ft. walking, 60 ft. flying",
+    "role": "Controller",
+    "tags": [
+        "guardian",
+        "magical",
+        "wisdom"
+    ],
+    "adjectives": [
+        "colossal",
+        "mystical",
+        "intelligent",
+        "formidable"
+    ],
+    "description": "The Greater Sphinx is a colossal creature with a powerful, lion-like body and a humanoid head, often adorned with fine jewelry that showcases its noble and magical heritage.",
+    "memorable": "Its ability to see through illusions and its devastating roar make it an imposing presence.",
+    "goals": "Guard ancient wisdom or treasures and provide challenges to worthy adventurers.",
+    "relations": "May be encountered alongside other magical guardians or beings of ancient lore.",
+    "environment": "Typically found in ancient ruins, temples, or other locations of significant historical and magical importance.",
+    "strengths": "Immunity to psychic damage and damage from nonmagical weapons, as well as immunities to various conditions.",
+    "weaknesses": "Average Dexterity makes it less evasive against physical attacks.",
+    "attacks": "Multiattack allows for two powerful claw attacks dealing significant slashing damage, with a devastating magical roar that capitalizes on sound-based fear tactics.",
+    "most_powerful_ability": "The roar ability, which escalates in power with each use, allowing it to inflict fear, paralyze, and deal significant thunder damage.",
+    "equipment": null,
+    "senses": "Possesses truesight with a range of 120 feet, allowing it to see through illusions.",
+    "skills": "Notably skilled in arcana, history, religion, and perception, making it highly knowledgeable.",
+    "additional_information": [
+        "Innate spellcasting with a focus on Wisdom-based spells",
+        "Legendary Resistance allows it to endure critical moments in combat",
+        "Can transport up to eight willing creatures to different locations or planes",
+        "Immunity to divination magic via Inscrutable ability",
+        "Ability to double its speed temporarily boosts its combat efficiency"
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast a variety of spells at will and several times per day, enhancing its versatility in combat and utility.",
+    "test_queries": [
+        "powerful guardian that uses thunder magic",
+        "creature with truesight and fear-inducing roar",
+        "magic user that can teleport with its allies",
+        "intelligent lion-headed giant that guards treasures",
+        "fortified beast immune to psychic damage"
+    ]
+}

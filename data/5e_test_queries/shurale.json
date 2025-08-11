@@ -1,0 +1,25 @@
+{
+    "name": "Shurale",
+    "queries": [
+        {
+            "query": "fey creature that uses laughter to incapacitate enemies",
+            "variant": "fey monster that incapacitates foes with laughter"
+        },
+        {
+            "query": "medium-sized neutral evil creature with spellcasting abilities",
+            "variant": "creature of medium size with evil alignment and magical skills"
+        },
+        {
+            "query": "aggressive fey with Mirthful Regeneration and Tickle ability",
+            "variant": "zealous fey that has Tickle ability and Mirthful Regeneration"
+        },
+        {
+            "query": "monster with high Dexterity and Charisma that attacks with a battleaxe",
+            "variant": "creature that has high Dexterity and Charisma, attacking with battleaxe"
+        },
+        {
+            "query": "Shurale combat tactics and spellcasting features",
+            "variant": "Shurale battle strategies and spellcasting abilities"
+        }
+    ]
+}

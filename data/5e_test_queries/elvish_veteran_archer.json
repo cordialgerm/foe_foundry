@@ -1,0 +1,25 @@
+{
+    "name": "Elvish Veteran Archer",
+    "queries": [
+        {
+            "query": "humanoid archer with keen sight and hearing in the forest",
+            "variant": "archer humanoid with keen hearing and sight in forest"
+        },
+        {
+            "query": "agile veteran marksman skilled in wilderness tracking",
+            "variant": "agile marksman veteran skilled in tracking wilderness"
+        },
+        {
+            "query": "elvish archer with advantage on survival checks and charm resistance",
+            "variant": "elvish archer charm resistance and advantage on survival checks"
+        },
+        {
+            "query": "medium-sized creature with high dexterity and ranged attacks",
+            "variant": "creature of medium size with high dexterity and attacks from range"
+        },
+        {
+            "query": "archer that can pin targets and has a multiattack feature",
+            "variant": "archer with multiattack and ability to pin targets"
+        }
+    ]
+}

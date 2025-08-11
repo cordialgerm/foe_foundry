@@ -1,0 +1,52 @@
+{
+    "name": "Field Commander",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 170,
+    "ac": 19,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "humanoid",
+        "leader",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "charismatic",
+        "formidable",
+        "strategic"
+    ],
+    "description": "The Field Commander is a strategic leader in battle, embodying athleticism and charisma, clad in breastplate and shield.",
+    "memorable": "Its ability to protect and bolster allies with powerful auras and spells makes it a pivotal force in combat.",
+    "goals": "To lead and support allies in battle, enhancing their capabilities and coordinating tactics.",
+    "relations": "Often found commanding groups of soldiers or allied creatures, working with other leaders.",
+    "environment": "Typically found on battlefields or war camps, often rallying troops.",
+    "strengths": "High Strength and Charisma allow for powerful melee attacks and effective spellcasting.",
+    "weaknesses": "Struggles with perception and lacks certain skills despite overall combat prowess.",
+    "attacks": "Uses a longsword to deal slashing damage plus additional necrotic or radiant damage.",
+    "most_powerful_ability": "Aura of Courage and Protection grants allies immunity to frightened effects and advantages on their saving throws.",
+    "equipment": "Wields a longsword, wears a breastplate, and uses a shield.",
+    "senses": "Has a passive perception of 15.",
+    "skills": "Possesses average skills in perception with a +1 modifier.",
+    "additional_information": [
+        "Immune to the frightened condition.",
+        "Can cast a variety of spells at will to influence the battlefield.",
+        "Ability to revive fallen allies once per day with Revivify.",
+        "Can grant temporary hit points to allies when they are attacked."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": "Charisma-based casting with spell save DC of 16, capable of casting spells such as Command and Protection from Evil and Good.",
+    "test_queries": [
+        "strategic leader with protective aura",
+        "human commander with powerful battle cry",
+        "military leader granting temporary hit points",
+        "formidable humanoid wields magical weapons",
+        "battlefield leader boosting ally morale"
+    ]
+}

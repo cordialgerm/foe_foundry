@@ -1,6 +1,8 @@
 <MonsterName/>Grindylow</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Grindylow is a medium-sized aberration characterized by its chaotic evil nature. Residing underwater, this creature possesses a unique combination of cleverness and agility, making it a formidable opponent to unwary adventurers. With access to mimicry, the Grindylow can deceive foes by imitating humanoid voices, adding an element of psychological warfare to its combat strategy. However, its lack of robust intelligence makes it somewhat predictable in tactics, relying primarily on its physical attacks and the advantages provided by its aquatic environment. Its ability to move swiftly through water and use ink clouds for escape enhances its survivability, positioning it as a cunning adversary despite its relatively low challenge rating.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Grindylow can utilize the Ink Cloud ability, which recharges a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grindylow
 
 *Medium* *Aberration* *chaotic evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Ink Cloud (Recharges after a Short or Long Rest):** A 20-foot-radius cloud of ink extends all around the grindylow if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink.<br><br>After releasing the ink, the grindylow can use the Dash action as a bonus action.
 
 
+</statblock>
 
 

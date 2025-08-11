@@ -1,0 +1,25 @@
+{
+    "name": "Trollkin Raider",
+    "queries": [
+        {
+            "query": "humanoid creature with natural regeneration and thick hide",
+            "variant": "humanoid with thick hide and ability to regenerate health"
+        },
+        {
+            "query": "medium trollkin with decent melee attack and survival skills",
+            "variant": "medium-sized trollkin that excels in survival and can attack well"
+        },
+        {
+            "query": "tough humanoid that speaks Common and Trollkin and has a good perception",
+            "variant": "resilient humanoid speaking Common and Trollkin with decent perception skills"
+        },
+        {
+            "query": "creature with armor class 14 that heals every turn unless damaged by acid or fire",
+            "variant": "being with AC 14 that regenerates health unless hit by acid or fire"
+        },
+        {
+            "query": "versatile raider in outdoor settings with average intelligence and moderate challenge rating",
+            "variant": "adaptable raider for outdoor scenarios with average intellect and CR of 1"
+        }
+    ]
+}

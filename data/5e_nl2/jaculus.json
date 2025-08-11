@@ -1,0 +1,50 @@
+{
+    "name": "Jaculus",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 65,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 10 ft., fly 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "agile",
+        "tactical"
+    ],
+    "adjectives": [
+        "cunning",
+        "fast",
+        "perceptive"
+    ],
+    "description": "The Jaculus is a small, agile dragon characterized by its high Dexterity and cunning nature, making it effective in battle with precision and speed.",
+    "memorable": "Its ability to knock down foes while dealing extra damage with its Spearhead attack makes it a strategic threat in combat.",
+    "goals": "To outmaneuver opponents and utilize tactical advantages in combat.",
+    "relations": "Can be encountered alongside other dragons or creatures that value agility and stealth.",
+    "environment": "Often found in darker settings where its blindsight and darkvision grant it an advantage.",
+    "strengths": "High Dexterity enhances both defense and attack capabilities; exceptional in Acrobatics and Stealth.",
+    "weaknesses": "Lacks range in attacks and relies on melee strikes.",
+    "attacks": "Uses a combination of Bite and Claw attacks, focusing on quick and precise strikes.",
+    "most_powerful_ability": "Spearhead allows it to deal extra damage and potentially knock opponents prone after a quick charge.",
+    "senses": "Blindsight within 10 feet provides a tactical advantage in combat, especially in darkness.",
+    "skills": "Highly skilled in Acrobatics and Stealth, making it difficult for enemies to detect or catch.",
+    "additional_information": [
+        "Damage resistant to acid and lightning",
+        "Can leap remarkable distances with Standing Leap",
+        "Leverages speed to avoid direct confrontation"
+    ],
+    "damage_types": [
+        "acid",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile dragon that strikes fast",
+        "dragon with special jumping ability",
+        "tactical dragon that knocks foes down",
+        "cunning dragon known for speed and stealth",
+        "dragon with increased damage from movement"
+    ]
+}

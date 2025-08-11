@@ -1,0 +1,25 @@
+{
+    "name": "Sandwyrm",
+    "queries": [
+        {
+            "query": "large dragon that can burrow and ambush in the sand",
+            "variant": "dragon that is large, burrows in the sand and uses ambush"
+        },
+        {
+            "query": "creature with spines that hides under sand for ambush",
+            "variant": "monster with spines that hides in the sand for surprise attacks"
+        },
+        {
+            "query": "predator that uses poison and strong melee attacks in combat",
+            "variant": "creature that attacks strongly in melee and uses poison"
+        },
+        {
+            "query": "stealthy dragon with tremorsense and high hit points",
+            "variant": "stealth dragon that has tremorsense and a lot of hit points"
+        },
+        {
+            "query": "monster with a Spine Trap ability and burrowing speed",
+            "variant": "creature that burrows and has the Spine Trap reaction ability"
+        }
+    ]
+}

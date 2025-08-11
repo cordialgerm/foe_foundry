@@ -1,6 +1,8 @@
 <MonsterName/>Elementalist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>45</HP>
 <summary>The Elementalist is a Medium humanoid creature, embodying a lawful neutral alignment. As a spellcaster with a focus on elemental magic, it can manipulate forces such as fire, lightning, cold, and poison. With an Armor Class of 15 provided by its studded leather armor, it has a moderately high defense, while its Hit Points total 45, offering decent sturdiness for its Challenge Rating of 2, which grants it 450 experience points when defeated. The Elementalist possesses strong Dexterity and Charisma, at +3 each, making it quite capable in both stealthy endeavors and magical attacks. However, its Strength is notably low at -1, representing a very bad physical prowess, which suggests it should rely on its magical abilities and critical thinking rather than brute force. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Elementalist employs a Multiattack feature, enabling it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elementalist
 
 *Medium* *Humanoid* *lawful neutral*
@@ -54,5 +57,6 @@ Cave (Earth): The dragonborn has resistance to poison damage. It can cast the bl
 - **Fire Breath (Recharges after a Short or Long Rest):** The dragonborn breathes elemental energy in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) damage of the elementalist's elemental focus type on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

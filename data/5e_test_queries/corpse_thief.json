@@ -1,0 +1,25 @@
+{
+    "name": "Corpse Thief",
+    "queries": [
+        {
+            "query": "stealthy humanoid that can see through eyes of the living",
+            "variant": "humanoid that is stealthy and sees through the living's eyes"
+        },
+        {
+            "query": "medium creature with thieving abilities and darkvision",
+            "variant": "creature that is medium-sized, has darkvision, and can steal items"
+        },
+        {
+            "query": "thief with low charisma that gathers information from objects",
+            "variant": "information-gathering thief with poor charisma"
+        },
+        {
+            "query": "corpse thief that uses claws in combat and can read objects",
+            "variant": "thief that reads objects with claws for attacking"
+        },
+        {
+            "query": "humanoid creature in D&D that can gain insights from the dead",
+            "variant": "D&D humanoid gaining insights from deceased entities"
+        }
+    ]
+}

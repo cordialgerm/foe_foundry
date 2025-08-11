@@ -1,0 +1,25 @@
+{
+    "name": "Ashwalker",
+    "queries": [
+        {
+            "query": "undead draconic creature that breathes elemental energy",
+            "variant": "creature that breathes elemental energy and is undead with draconic traits"
+        },
+        {
+            "query": "medium-sized monster immune to poison and has a breath attack",
+            "variant": "medium creature with breath attack immunity to poison"
+        },
+        {
+            "query": "relentless undead that doesn't need food and has breath-based abilities",
+            "variant": "undead that doesn't require food and uses breath abilities"
+        },
+        {
+            "query": "creature with darkvision that attacks with slams and elemental breath",
+            "variant": "monster that slams and uses elemental breath with darkvision"
+        },
+        {
+            "query": "undead that can transform into energy and deals damage on contact",
+            "variant": "creature that transforms into energy and inflicts damage when touched"
+        }
+    ]
+}

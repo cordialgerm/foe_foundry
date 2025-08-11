@@ -1,0 +1,54 @@
+{
+    "name": "Horde Demon",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "demon",
+        "chaotic",
+        "evil",
+        "varied shapes"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evil",
+        "unpredictable"
+    ],
+    "description": "The Horde Demon is a formidable fiend with a chaotic and evil presence, exhibiting various grotesque physical features. It adapts its attacks using the Varied Shapes ability, which grants it access to multiple distinct forms and attack types.",
+    "memorable": "The Horde Demon can take on numerous forms and abuse its Varied Shapes ability to unleash a flurry of unpredictable attacks.",
+    "goals": "To instigate fear and chaos among its enemies.",
+    "relations": "Often found among other fiends and demons in chaotic environments.",
+    "environment": "Primarily encountered in chaotic or evil-aligned planes or settings.",
+    "strengths": "Damage immunities to poison, and resistances to cold, fire, and lightning damage.",
+    "weaknesses": "Susceptible to radiant damage while bloodied, making it frightened.",
+    "attacks": "Varied shapes allow it to deal slashing, piercing, bludgeoning, and psychic damage through a combination of melee and ranged attacks.",
+    "most_powerful_ability": "Varied Shapes, enabling it to utilize a diverse range of unique attacks.",
+    "equipment": null,
+    "senses": "Darkvision up to 120 feet allows it to see in the dark effectively.",
+    "skills": null,
+    "additional_information": [
+        "Ability to frighten enemies with psychic attacks.",
+        "Each form it takes can inflict different types of damage.",
+        "Possesses a multiattack capability leveraging its unique abilities."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "varied shapes fiend with chaotic evil",
+        "medium fiend with unpredictable attacks",
+        "horde demon that frightens enemies",
+        "chaotic creature that deals piercing damage",
+        "demon with multiple damaging forms"
+    ]
+}

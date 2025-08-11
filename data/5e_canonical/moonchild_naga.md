@@ -1,6 +1,8 @@
 <MonsterName/>Moonchild Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Moonchild Naga is a large monstrosity of neutral evil alignment, embodying a blend of serpentine grace and eldritch power. With an Armor Class of 15, it possesses sound natural defenses, and its Hit Points total 75, reflecting its resilience in prolonged confrontations. The creature moves with a speed of 40 feet, positioning itself strategically in combat. It has a Challenge Rating of 6, which suggests it can pose a significant threat to a party of adventurers, providing 2,300 experience points upon defeat. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Moonchild Naga has several actions at its disposal. Its Bite atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonchild Naga
 
 *Large* *Monstrosity* *neutral evil*
@@ -57,5 +60,6 @@ At will: charm person, friends, mage hand, message, minor illusion, poison spray
 - **Starry Gaze:** The moonchild naga's bottomless gaze inexorably draws the eye of one target within 30 feet. If the target can see the naga, it must succeed on a DC 15 Wisdom saving throw or be stunned until the end of the naga's next turn. If the target's saving throw is successful, it is immune to the naga's gaze for the next 24 hours.
 
 
+</statblock>
 
 

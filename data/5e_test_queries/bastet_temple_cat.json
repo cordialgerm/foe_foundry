@@ -1,0 +1,25 @@
+{
+    "name": "Bastet Temple Cat",
+    "queries": [
+        {
+            "query": "small magical cat that can charm and support spellcasters",
+            "variant": "tiny magical kitty that charms and aids spellcasters"
+        },
+        {
+            "query": "cat-like creature with a fascinating purr ability in combat",
+            "variant": "feline creature with charming purr during battle"
+        },
+        {
+            "query": "monstrosity that lives in temples and enhances cleric spells",
+            "variant": "temple-dwelling monstrosity that boosts cleric spellcasting"
+        },
+        {
+            "query": "agile cat with darkvision and exceptional stealth abilities",
+            "variant": "swift cat with night vision and impressive stealth skills"
+        },
+        {
+            "query": "Bastet worshipping cat that can cast guide and heal spells",
+            "variant": "cat of Bastet that can use guidance and healing spells"
+        }
+    ]
+}

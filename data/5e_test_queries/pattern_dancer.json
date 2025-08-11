@@ -1,0 +1,25 @@
+{
+    "name": "Pattern Dancer",
+    "queries": [
+        {
+            "query": "humanoid creature with magic abilities and sunlight sensitivity",
+            "variant": "humanoid monster with magic powers and sensitivity to sunlight"
+        },
+        {
+            "query": "chaotic evil dancer that excels in deception and charm",
+            "variant": "chaotic evil performer who is great at deception and charm"
+        },
+        {
+            "query": "medium creature that can teleport in shadows and casts spells",
+            "variant": "medium-sized monster that teleports in the dark and uses spells"
+        },
+        {
+            "query": "agile humanoid with high dexterity and performance skill",
+            "variant": "nimble humanoid creature with great dexterity and performance ability"
+        },
+        {
+            "query": "pattern dancer abilities in combat and environmental limitations",
+            "variant": "pattern dancer combat skills and limitations in bright environments"
+        }
+    ]
+}

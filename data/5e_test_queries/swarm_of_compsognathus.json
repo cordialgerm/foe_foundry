@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Compsognathus",
+    "queries": [
+        {
+            "query": "swift ambush predator that hides in tall grass",
+            "variant": "fast ambushing beast that can hide in long grass"
+        },
+        {
+            "query": "small reptilian swarm known for stealth and speed",
+            "variant": "tiny dinosaur swarm famous for its speed and stealth"
+        },
+        {
+            "query": "beast swarm with damage resistance and unique camouflage",
+            "variant": "swarm of beasts with damage resistance and special hiding abilities"
+        },
+        {
+            "query": "medium-sized swarm with high stealth and biting attack",
+            "variant": "swarm of medium creatures that has stealth and a biting move"
+        },
+        {
+            "query": "monster that occupies spaces of larger creatures and moves through openings",
+            "variant": "creature that takes up room of bigger foes and can go through small gaps"
+        }
+    ]
+}

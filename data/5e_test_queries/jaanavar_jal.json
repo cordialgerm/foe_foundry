@@ -1,0 +1,25 @@
+{
+    "name": "Jaanavar Jal",
+    "queries": [
+        {
+            "query": "large amphibious monster with regeneration and cold vulnerability",
+            "variant": "huge amphibious creature that can regenerate and is weak to cold damage"
+        },
+        {
+            "query": "monster that swims quickly and deals fire damage",
+            "variant": "creature that swims fast and uses flaming attacks"
+        },
+        {
+            "query": "monster with grappling capabilities and high hit points",
+            "variant": "creature that can grapple well and has a lot of hit points"
+        },
+        {
+            "query": "amphibious creature that can regenerate health but vulnerable to cold",
+            "variant": "aquatic monster that heals but is weak against cold damage"
+        },
+        {
+            "query": "massive creature that uses multiattack and has a powerful bite",
+            "variant": "large creature that performs multiattacks and has a strong biting attack"
+        }
+    ]
+}

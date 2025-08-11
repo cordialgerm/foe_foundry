@@ -1,0 +1,25 @@
+{
+    "name": "Fleshdreg",
+    "queries": [
+        {
+            "query": "huge plant creature with regenerative abilities",
+            "variant": "large plant monster that has regenerative powers"
+        },
+        {
+            "query": "thorny monster that can throw rocks and use acid attacks",
+            "variant": "spiky creature capable of throwing rocks and attacking with acid"
+        },
+        {
+            "query": "plant monster that heals itself and resists fire damage",
+            "variant": "vegetation creature that regenerates and resists fire attacks"
+        },
+        {
+            "query": "monster with darkvision and strong constitution in battles",
+            "variant": "creature that has darkvision and excels in constitution during combat"
+        },
+        {
+            "query": "Fleshdreg tactics for using Disgorge Innards",
+            "variant": "strategies for the Fleshdreg using its Disgorge Innards ability"
+        }
+    ]
+}

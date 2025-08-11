@@ -1,0 +1,25 @@
+{
+    "name": "Deep One Archimandrite",
+    "queries": [
+        {
+            "query": "large humanoid monster with spellcasting abilities that swims and breathes underwater",
+            "variant": "large monster that can swim and breath underwater with spellcasting powers"
+        },
+        {
+            "query": "chaotic evil creature with high Charisma and powerful melee attacks",
+            "variant": "powerful melee attacking monster that is chaotic evil and has high Charisma"
+        },
+        {
+            "query": "deep sea creature that commands sharks and has fire vulnerability",
+            "variant": "creature from the deep sea that calls sharks and is vulnerable to fire"
+        },
+        {
+            "query": "Archimandrite with Frenzied Rage ability and darkvision",
+            "variant": "the Archimandrite with darkvision and the ability to rage furiously"
+        },
+        {
+            "query": "humanoid with natural armor and cold damage resistance that uses lightning attacks",
+            "variant": "humanoid with armor that is natural and resists cold while using lightning for attacks"
+        }
+    ]
+}

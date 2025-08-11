@@ -1,0 +1,51 @@
+{
+    "name": "Breathstealer",
+    "creature_type": "Humanoid",
+    "alignment": "any non-good",
+    "size": "Medium",
+    "hp": 99,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "psychic",
+        "manipulative"
+    ],
+    "adjectives": [
+        "cunning",
+        "durable",
+        "agile"
+    ],
+    "description": "The Breathstealer is a Medium-sized humanoid known for its cunning and psychic abilities, characterized by its high Dexterity and the ability to invoke illusions of suffocation.",
+    "memorable": "It uses psychic manipulation to create the illusion of suffocation, incapacitating foes without physical contact.",
+    "goals": "To dominate opponents through psychic abilities and create fear of suffocation.",
+    "relations": "Might be related to or encountered with other creatures that manipulate minds or control emotions.",
+    "environment": "Typically found in areas of shadow or darkness where it can ambush its prey.",
+    "strengths": "Possesses high Dexterity, allowing for evasive maneuvers, and strong psychic attacks that can incapacitate foes.",
+    "weaknesses": "Relatively average physical attributes; may struggle against robust characters resistant to psychic manipulation.",
+    "attacks": "Utilizes powerful psychic blasts alongside nimble shortsword and dagger strikes, mixing melee and ranged combat effectively.",
+    "most_powerful_ability": "Gasp to Survive creates an illusion of suffocation that can incapacitate enemies if they fail their saving throws.",
+    "equipment": "leather armor",
+    "senses": "Has a passive Perception score of 13, allowing it to detect nearby enemies.",
+    "skills": "Proficient in Dexterity saving throws, aiding in the evasion of physical attacks.",
+    "additional_information": [
+        "Can execute a Cunning Action for strategic maneuvering",
+        "Weapon attacks are magical and deal extra psychic damage",
+        "Ability to create powerful psychological effects",
+        "Can replace a physical attack with a psychic manipulation action",
+        "Utilizes a Multiattack option for versatility in combat"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid with psychic suffocation abilities",
+        "cunning manipulative creature that attacks psychically",
+        "medium humanoid known for psychic damage",
+        "agile humanoid that uses illusions in combat",
+        "psychic attacker that creates suffocation illusions"
+    ]
+}

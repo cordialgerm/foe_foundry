@@ -1,0 +1,50 @@
+{
+    "name": "Giant Eagle",
+    "creature_type": "Beast",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 26,
+    "ac": 13,
+    "srd": true,
+    "cr": "1",
+    "movement": "10 ft. walking, 80 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "scout",
+        "guardian"
+    ],
+    "adjectives": [
+        "majestic",
+        "proud",
+        "noble"
+    ],
+    "description": "A Giant Eagle is a majestic creature with a wingspan that can reach up to 20 feet, characterized by its keen eyesight and sharp talons.",
+    "memorable": "Its presence symbolizes freedom and nobility, and it often forms close bonds with good-aligned humanoids, acting as a guardian or mount.",
+    "goals": "Typically hunts for large prey and acts as a protector for its allies.",
+    "relations": "Often seen alongside good-aligned humanoids, serving as companions or guardians.",
+    "environment": "High mountains or wide open skies.",
+    "strengths": "Exceptional at scouting due to its Keen Sight ability, allowing it to see exceptionally well and have advantage on perception checks that rely on sight.",
+    "weaknesses": "Struggles with prolonged combat due to average Constitution and potential vulnerability if submerged while swimming.",
+    "attacks": "Utilizes sharp beak and talons in combat, combining agile flight with powerful melee strikes.",
+    "most_powerful_ability": "Heightened Sight, granting superior perception capabilities and allowing it to detect hidden creatures or objects effectively.",
+    "equipment": null,
+    "senses": "Possesses heightened sight, improving its perception to a remarkable 19 when relying on vision alone.",
+    "skills": "Skilled in perception with a +4 bonus, allowing it to excel in detecting hidden creatures.",
+    "additional_information": [
+        "Can swim up to 40 feet but must transition to flying or end on solid ground.",
+        "Capable of grappling Medium or smaller targets with its Talons attack.",
+        "Can communicate in its own language, Giant Eagle.",
+        "Typically found in pairs, raising young in nests.",
+        "Commonly associated with noble and heroic characters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large majestic eagle that flies",
+        "noble eagle and guardian for warriors",
+        "predator bird seen in mountains",
+        "giant eagle with keen vision",
+        "eagle that hunts large prey"
+    ]
+}

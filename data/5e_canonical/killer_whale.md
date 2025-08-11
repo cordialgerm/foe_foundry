@@ -1,6 +1,8 @@
 <MonsterName/>Killer Whale</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Killer Whale, also known as an orca, is a massive, intelligent predator that dominates the oceans. Its sleek, black-and-white body allows it to move through the water with incredible speed and agility. Killer Whales are social creatures, often hunting in pods and using coordinated strategies to take down large prey, such as seals, fish, or even other sea creatures. Their powerful jaws and sharp teeth make them deadly hunters. While they primarily hunt marine animals, they are known to be highly intelligent and can be trained or directed by seafaring cultures.</summary>
 
 <summary>The Killer Whale is a powerful and sizable creature that falls into the category of Huge Beasts, making it a formidable opponent in aquatic environments. Its strengths lie in its impressive grappling capabilities and its proficiency in swimming, allowing it to maneuver adeptly in water. With an Armor Class of 12, the Killer Whale has a moderate defense, but its significant hit point total of 75 provides a sturdy buffer against attacks. The creature possesses a good Strength score of 18, which enhances its melee combat effectiveness, while its Dexterity is average, resulting in a less impressive agility in combat. Although the Killer Whale's Intelligence and Charisma scores are very low, its Wisdom is decent which means it's perceptive to its surroundings, particularly through sound. However, its Challenge Rating of 3 indicates that while it is capable, it might not be an overwhelming threat in a diverse party of adventurers.</summary>
@@ -19,6 +21,7 @@ In terms of actions, the Killer Whale can perform a Bite attack, making a melee 
 
 Source: 5e_srd
 
+<statblock>
 ### Killer Whale
 
 *Huge beast, unaligned*
@@ -49,7 +52,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 21 (5d6+4) piercing damage.
+***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 21 (5d6+4) piercing damage.</statblock>
+
 
 
 
@@ -57,6 +61,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Killer Whale
 
 *Huge* *Beast*
@@ -86,5 +91,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (3d6+4) piercing damage. If the target is a creature  it is grappled (escape DC 14). Until this grapple ends  the whale can't bite another target and it has advantage on bite attacks against the creature it is grappling.
 
 
+</statblock>
 
 

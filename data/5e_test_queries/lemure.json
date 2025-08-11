@@ -1,0 +1,25 @@
+{
+    "name": "Lemure",
+    "queries": [
+        {
+            "query": "mindless fiend that emits eerie groans",
+            "variant": "fiend that makes creepy sounds and is mindless"
+        },
+        {
+            "query": "grotesque devil that reanimates after death",
+            "variant": "ugly devil that comes back to life after dying"
+        },
+        {
+            "query": "low AC demon known for fire and poison immunity",
+            "variant": "demon with low armor class that is immune to fire and poison"
+        },
+        {
+            "query": "creature with darkvision that walks slowly",
+            "variant": "slow-moving creature that can see in the dark"
+        },
+        {
+            "query": "tormented fiend that serves higher devils",
+            "variant": "fiend in pain that serves more powerful devils"
+        }
+    ]
+}

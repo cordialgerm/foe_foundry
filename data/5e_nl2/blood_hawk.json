@@ -1,0 +1,51 @@
+{
+    "name": "Blood Hawk",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 7,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "10 ft. walking, 60 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "predatory",
+        "bird",
+        "aggressive",
+        "territorial"
+    ],
+    "adjectives": [
+        "striking",
+        "nimble",
+        "fierce",
+        "perceptive"
+    ],
+    "description": "The Blood Hawk is a predatory bird with striking red and black plumage, known for its aggressive hunting behavior. They tend to hunt in flocks and are fiercely territorial, capable of attacking creatures much larger than themselves.",
+    "memorable": "Notable for its sharp talons and beak, the Blood Hawk is dangerous in numbers and adept at spotting prey from great distances.",
+    "goals": "To hunt and defend its territory from intruders.",
+    "relations": "Often found in groups, Blood Hawks may work alongside each other or other predatory creatures.",
+    "environment": "Mountainous or forested regions, often nesting in high, inaccessible places.",
+    "strengths": "Keen eyesight and Pack Tactics make the Blood Hawk deadly when hunting in flocks.",
+    "weaknesses": "Relatively low hit points and armor class make them vulnerable when isolated.",
+    "attacks": "Employs a beak attack that deals piercing damage.",
+    "most_powerful_ability": "Keen Sight allows them to spot prey effectively, giving them an advantage on Perception checks.",
+    "senses": "Has passive perception of 14, allowing for reasonable awareness of surroundings.",
+    "skills": "Skilled in Perception, giving it a total of +4 for spotting hidden creatures and objects.",
+    "additional_information": [
+        "Blood Hawks gain advantage on attack rolls when their allies are nearby due to Pack Tactics.",
+        "They exhibit aggressive and territorial behavior.",
+        "They can cause significant problems for low-level adventurers when encountered in groups.",
+        "Their striking appearance may draw attention but also serves as camouflage in their natural habitats.",
+        "They can pursue prey relentlessly once they have locked onto a target."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive predatory bird",
+        "flock of red birds",
+        "small hawk with keen eyesight",
+        "territorial bird of prey",
+        "Blood Hawk in flight"
+    ]
+}

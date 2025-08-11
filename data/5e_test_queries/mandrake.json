@@ -1,0 +1,25 @@
+{
+    "name": "Mandrake",
+    "queries": [
+        {
+            "query": "small plant creature with a stunning shriek",
+            "variant": "tiny plant monster that has a stunning sound"
+        },
+        {
+            "query": "Mandrake abilities and how to counter its shriek",
+            "variant": "how to counter the shriek ability of a Mandrake"
+        },
+        {
+            "query": "plant monster that is immune to poison and uses sound to attack",
+            "variant": "poison-resistant plant creature that attacks with sound"
+        },
+        {
+            "query": "what to expect from a Mandrake in battle",
+            "variant": "battle strategies against Mandrake"
+        },
+        {
+            "query": "tiny plant creature that can stun and uses a bite attack",
+            "variant": "small plant monster with stunning ability and bite attack"
+        }
+    ]
+}

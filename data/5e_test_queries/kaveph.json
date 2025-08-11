@@ -1,0 +1,25 @@
+{
+    "name": "Kaveph",
+    "queries": [
+        {
+            "query": "huge aberration that deals bludgeoning damage",
+            "variant": "big abberation that inflicts blunt damage"
+        },
+        {
+            "query": "monster with natural armor and a weakness to radiant damage",
+            "variant": "creature with natural defense and vulnerability to radiant"
+        },
+        {
+            "query": "neutral evil creature that uses smash attacks in combat",
+            "variant": "evil-neutral being that employs smash attacks during fights"
+        },
+        {
+            "query": "strong melee fighter with blindsight ability",
+            "variant": "powerful close combat monster with blindsight powers"
+        },
+        {
+            "query": "creature that can rampage after defeating an enemy",
+            "variant": "being that can continue attacking after bringing down an opponent"
+        }
+    ]
+}

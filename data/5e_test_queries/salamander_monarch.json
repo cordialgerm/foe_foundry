@@ -1,0 +1,25 @@
+{
+    "name": "Salamander Monarch",
+    "queries": [
+        {
+            "query": "fire elemental that has powerful spells and a crown",
+            "variant": "elemental that has a crown and uses powerful fire spells"
+        },
+        {
+            "query": "large creature with fire attacks and vulnerable to cold",
+            "variant": "big monster that uses fire damage and is weak to cold"
+        },
+        {
+            "query": "monster with high strength and fire immunity found in elemental realms",
+            "variant": "creature with strong abilities and immunity to fire found in elemental areas"
+        },
+        {
+            "query": "evil salamander with grappling abilities and heated body",
+            "variant": "salamander that grapples and has a body that burns enemies"
+        },
+        {
+            "query": "powerful fire creature that inspires allies and attacks with a trident",
+            "variant": "strong fire monster that boosts allies and uses a trident to strike"
+        }
+    ]
+}

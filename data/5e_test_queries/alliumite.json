@@ -1,0 +1,25 @@
+{
+    "name": "Alliumite",
+    "queries": [
+        {
+            "query": "small plant creature known for stealth and ambush tactics",
+            "variant": "plant creature that is small and excels in stealthy ambush tactics"
+        },
+        {
+            "query": "chaotic neutral plant with a Tearful Stench ability",
+            "variant": "plant with chaotic neutral alignment and the Tearful Stench ability"
+        },
+        {
+            "query": "agile plant monster that uses camouflage in forests",
+            "variant": "agile monster that is a plant and uses camouflage in wooded areas"
+        },
+        {
+            "query": "monster that can burrow and has exceptional Dexterity",
+            "variant": "creature that has high Dexterity and can burrow through ground"
+        },
+        {
+            "query": "plant-based creature with darkvision and a stenching attack",
+            "variant": "creature that is plant-based, has darkvision, and attacks with a stench"
+        }
+    ]
+}

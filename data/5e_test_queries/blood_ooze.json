@@ -1,0 +1,25 @@
+{
+    "name": "Blood Ooze",
+    "queries": [
+        {
+            "query": "large ooze that drains life and has necrotic damage",
+            "variant": "big ooze that drains life and deals necrotic damage"
+        },
+        {
+            "query": "ooze that can cling to ceilings and regains health when hit",
+            "variant": "ooze that can stick to ceilings and heals when attacked"
+        },
+        {
+            "query": "monster with a low dexterity score that has acid immunity",
+            "variant": "creature with low dexterity that is immune to acid"
+        },
+        {
+            "query": "creature that inflicts damage while simultaneously healing itself",
+            "variant": "monster that deals damage and heals at the same time"
+        },
+        {
+            "query": "blood-draining ooze found in close combat scenarios",
+            "variant": "blood-draining ooze in melee combat situations"
+        }
+    ]
+}

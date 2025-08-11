@@ -1,0 +1,25 @@
+{
+    "name": "Skeleton",
+    "queries": [
+        {
+            "query": "undead creature that guards ancient tombs and is mindless",
+            "variant": "creature that is undead and mindless, guarding ancient tombs"
+        },
+        {
+            "query": "medium skeleton that doesn't need air and has a shortsword",
+            "variant": "medium creature skeleton that has a shortsword and doesn't need air"
+        },
+        {
+            "query": "brittle bone monster with a shortbow found in crypts",
+            "variant": "bone creature with a shortbow typically found in crypts"
+        },
+        {
+            "query": "animated remains that serve necromancers as soldiers",
+            "variant": "remains animated that serve necromancers as disposable soldiers"
+        },
+        {
+            "query": "creature with low intelligence and resistance to poison",
+            "variant": "being with a low intelligence and immune to poison damage"
+        }
+    ]
+}

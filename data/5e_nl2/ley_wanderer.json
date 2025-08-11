@@ -1,0 +1,50 @@
+{
+    "name": "Ley Wanderer",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "10 ft. walking and 40 ft. flying",
+    "role": "null",
+    "tags": [
+        "magic",
+        "psychic",
+        "aberration"
+    ],
+    "adjectives": [
+        "huge",
+        "magical",
+        "psychic"
+    ],
+    "description": "The Ley Wanderer is a huge aberration with extraordinary magical capabilities and a physical presence. It has a strong build with notable facial features that hint at its psychic prowess.",
+    "memorable": "This creature is capable of draining magic and absorbing spells, making it a formidable adversary in magical encounters.",
+    "goals": "Typically seeks to disrupt magic and consume magical energy from items and creatures.",
+    "relations": "Often associated with other aberrant creatures or beings that manipulate magic.",
+    "environment": "Commonly found in areas rich in magical energy, such as ley lines.",
+    "strengths": "Immunities to psychic damage and resistances to non-magical attacks enhance its survivability.",
+    "weaknesses": "Average dexterity makes it vulnerable to physical attacks.",
+    "attacks": "Utilizes a combination of a melee slam attack and a ranged psychic lash attack, both of which deal significant psychic damage.",
+    "most_powerful_ability": "Dispelling Burst, which disrupts spells and deals psychic damage within a wide radius.",
+    "equipment": null,
+    "senses": "Has the ability to sense magic within 120 feet at will, enhancing its detection and manipulation of magical energies.",
+    "skills": "Possesses average perception skills, indicating some capacity to detect hidden creatures or objects.",
+    "additional_information": [
+        "Can teleport itself and others to familiar locations.",
+        "Drains magic from items to gain temporary hit points.",
+        "Absorbs spell energy used against it as a countermeasure."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge creature with magic absorption abilities",
+        "magic predator in ley rich environment",
+        "psychic damage dealing aberration",
+        "Ley Wanderer combat abilities",
+        "huge psychic enemy that drains magic"
+    ]
+}

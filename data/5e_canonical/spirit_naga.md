@@ -1,6 +1,8 @@
 <MonsterName/>Spirit Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>A Spirit Naga is a serpentine creature with a humanoid head, known for its mastery of necromancy and dark magic. These Nagas are malevolent beings that crave power and often serve as rulers of ancient ruins or hidden temples. Spirit Nagas have a strong connection to the undead, using their magic to command legions of skeletal and ghostly minions. They are skilled spellcasters, capable of casting powerful enchantments, curses, and death magic. Even if slain, Spirit Nagas can resurrect themselves, making them nearly impossible to defeat permanently.</summary>
 
 <summary>The Spirit Naga is a formidable Large Monstrosity known for its potent magical abilities and resilience in combat. With a Challenge Rating of 6, it poses a serious threat to adventurers, boasting an Armor Class of 16 and a substantial pool of hit points totaling 85, derived from 10d10 plus an additional 30 hit points. Its swimming and walking speed of 40 feet each allows it to maneuver effectively in various environments. As a creature steeped in both charm and cunning, the Spirit Naga has the ability to cast spells and can recover from defeat through its unique rejuvenation ability, making it a persistent adversary. However, despite its strengths, it has vulnerabilities rooted in its dependency on spell components and the limited number of spells it can prepare. </summary>
@@ -37,6 +39,7 @@ Furthermore, as a bonus action, the Spirit Naga can use Hidden Step to teleport 
 
 Source: 5e_srd
 
+<statblock>
 ### Spirit Naga
 
 *Large monstrosity, chaotic evil*
@@ -76,7 +79,8 @@ Cantrips (at will): *mage hand*, *minor illusion*, *ray of frost*
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one creature. *Hit:* 7 (1d6+4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.
 
-[Nightmare](new/Nightmare.md)
+[Nightmare](new/Nightmare.md)</statblock>
+
 
 
 
@@ -84,6 +88,7 @@ Cantrips (at will): *mage hand*, *minor illusion*, *ray of frost*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spirit Naga
 
 *Large* *Monstrosity*
@@ -135,6 +140,7 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V):** When the naga is hit by an attack or targeted by magic missile, it gains a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the beginning of its next turn.
 
 
+</statblock>
 
 
 
@@ -143,6 +149,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spirit Naga
 
 *Large monstrosity*
@@ -184,5 +191,6 @@ Source: 5e_artisinal_monsters
 
 - **Hidden Step.** The spirit naga magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action.
 
+</statblock>
 
 

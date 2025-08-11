@@ -1,0 +1,25 @@
+{
+    "name": "Smaragdine Golem",
+    "queries": [
+        {
+            "query": "large green construct with magical abilities and high durability",
+            "variant": "big green construct that has magical powers and is very durable"
+        },
+        {
+            "query": "golem that absorbs spells and releases powerful energy while fighting",
+            "variant": "construct that absorbs magic and unleashes strong energy in combat"
+        },
+        {
+            "query": "Large magic-resistant guardian that does not need food or sleep",
+            "variant": "big guardian that resists magic and doesn't require food or sleep"
+        },
+        {
+            "query": "magical creature with a unique power to counter spells and high bludgeoning damage",
+            "variant": "magical being that can counter spells and has powerful bludgeoning attacks"
+        },
+        {
+            "query": "green golem immune to nonmagical damage with high hit points",
+            "variant": "emerald golem that is immune to non-magical attacks and has large hit points"
+        }
+    ]
+}

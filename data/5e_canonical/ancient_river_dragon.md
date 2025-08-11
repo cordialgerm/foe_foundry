@@ -1,6 +1,8 @@
 <MonsterName/>Ancient River Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>20</AC>
+<HP/>372</HP>
 <summary>The Ancient River Dragon is a formidable gargantuan creature known for its immense power and territorial nature, typically dwelling in large bodies of water. With an impressive Armor Class of 20 and a staggering 372 Hit Points, this dragon is not only hard to hit but can also endure a significant amount of punishment in combat. Its Challenge Rating of 23 indicates that it is a very powerful foe, ideally suited for high-level adventurers. The Ancient River Dragon boasts exceptional Strength, Dexterity, Wisdom, and Charisma, making it a well-rounded creature in both physical prowess and magical capabilities. However, its damage resistance against nonmagical weapons, while a significant strength, leaves it vulnerable to magical attacks. This dragon has unique abilities that enhance its survivability and combat effectiveness, such as moving gracefully through both air and water, making it difficult for enemies to land effective strikes. </summary>
 
 <detail>
@@ -66,6 +68,7 @@ The Ancient River Dragon stands as a force of nature, using its control over wat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient River Dragon
 
 *Gargantuan* *Dragon*
@@ -120,5 +123,6 @@ Source: 5e_artisinal_monsters
 - **Lurk:** The dragon takes the Hide action.
 - **River Surge (Costs 2 Actions):** The dragon generates a 20-foot-tall, 100-foot-wide wave on the surface of water within 120 feet. The wave travels up to 60 feet in any direction the dragon chooses and crashes down, carrying Huge or smaller creatures and vehicles with it. Vehicles moved in this way have a 25 percent chance of capsizing. Creatures that impact a solid object take 35 (10d6) bludgeoning damage.
 - **Sudden Maelstrom (While Bloodied:** The dragon magically surrounds itself with a 60-foot-radius maelstrom of surging wind and rain for 1 minute. A creature other than the dragon that starts its turn in the maelstrom or enters it for the first time on a turn makes a DC 20 Strength saving throw. On a failed save, the creature takes 28 (8d6) bludgeoning damage and is knocked prone and pushed 15 feet away from the dragon.
+</statblock>
 
 

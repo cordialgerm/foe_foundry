@@ -1,0 +1,25 @@
+{
+    "name": "Swampgas Shade",
+    "queries": [
+        {
+            "query": "flying undead monster that drains life in swampy areas",
+            "variant": "undead monster that flies and drains life in swamps"
+        },
+        {
+            "query": "creature immune to poison that uses stealth to ambush foes",
+            "variant": "poison-immune creature that stealthily ambushes enemies"
+        },
+        {
+            "query": "swamp dwelling shade that can return from death and has low armor class",
+            "variant": "shade that stays in swamps, can revive after death, and has low AC"
+        },
+        {
+            "query": "medium-sized undead that blends into swamp environments and drains charisma",
+            "variant": "undead monster of medium size that camouflages in swamps and drains Charisma"
+        },
+        {
+            "query": "neutral evil creature that flies and is bound to a swamp region",
+            "variant": "creature of neutral evil alignment that can fly and is tied to a swamp"
+        }
+    ]
+}

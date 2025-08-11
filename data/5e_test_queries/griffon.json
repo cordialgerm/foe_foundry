@@ -1,0 +1,25 @@
+{
+    "name": "Griffon",
+    "queries": [
+        {
+            "query": "large predator with lion body and eagle wings found in mountains",
+            "variant": "large preditor wit lion body and eagle wings in mountans"
+        },
+        {
+            "query": "creature that flies fast and has sharp talons and beak",
+            "variant": "creature that flies quickly and has sharp talons and beak"
+        },
+        {
+            "query": "aerial monster that hunts deer and horses in rugged terrain",
+            "variant": "flying monster tht hunts deer and horsess in rough terrain"
+        },
+        {
+            "query": "territorial beast that can be trained as a mount",
+            "variant": "territorial animal that can be trained as mount"
+        },
+        {
+            "query": "fierce monster with keen sight and powerful melee attacks",
+            "variant": "fierce creature with keen sight and strong melee attacks"
+        }
+    ]
+}

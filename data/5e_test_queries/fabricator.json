@@ -1,0 +1,25 @@
+{
+    "name": "Fabricator",
+    "queries": [
+        {
+            "query": "large construct that can craft items and absorbs materials",
+            "variant": "construct that is large and can craft items by absorbing materials"
+        },
+        {
+            "query": "dismantling creature with low charisma and mechanical abilities",
+            "variant": "creature that dismantles opponents and has poor charisma along with mechanical abilities"
+        },
+        {
+            "query": "monster immune to poison and capable of creating objects from raw materials",
+            "variant": "monster that can create objects from raw materials and is immune to poison"
+        },
+        {
+            "query": "Fabricator's ability to disassemble weapons and deal force damage",
+            "variant": "the ability of the Fabricator to disassemble weapons and inflict force damage"
+        },
+        {
+            "query": "creature with blindsight and high strength but poor dexterity",
+            "variant": "creature possessing blindsight, high strength, yet having low dexterity"
+        }
+    ]
+}

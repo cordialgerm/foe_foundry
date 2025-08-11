@@ -1,0 +1,25 @@
+{
+    "name": "Drake, Vapor",
+    "queries": [
+        {
+            "query": "large dragon from a swamp with poisonous breath",
+            "variant": "big dragon in swamp that has poisonous breath"
+        },
+        {
+            "query": "swift swamp creature that can breathe poison",
+            "variant": "quick creature from swamps that breathes poison"
+        },
+        {
+            "query": "agile dragon that benefits from camouflage in wetlands",
+            "variant": "nimble dragon that utilizes camouflage in wetland areas"
+        },
+        {
+            "query": "monster with high dexterity that ambushes in swamps",
+            "variant": "creature with great dexterity that surprises foes in swamps"
+        },
+        {
+            "query": "dragon immune to poison found in swampy areas",
+            "variant": "dragon that is immune to poison living in marshy regions"
+        }
+    ]
+}

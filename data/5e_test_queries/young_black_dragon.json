@@ -1,0 +1,25 @@
+{
+    "name": "Young Black Dragon",
+    "queries": [
+        {
+            "query": "black dragon with acidic breath living in swamps",
+            "variant": "dragon that is black and breathes acid, prefers swampy areas"
+        },
+        {
+            "query": "large dragon with glossy black scales found in decaying environments",
+            "variant": "big dragon with shiny black scales that dwells in deteriorating places"
+        },
+        {
+            "query": "fearsome predator with keen senses and stealth abilities",
+            "variant": "intimidating predator that excels in perception and stealth"
+        },
+        {
+            "query": "territorial dragon using ambush tactics with acid attacks",
+            "variant": "defensive dragon that employs sneaky strategies and acid breath in fights"
+        },
+        {
+            "query": "young dragon with strong melee attacks and magical capabilities",
+            "variant": "juvenile dragon excelling in physical combat and possessing magical powers"
+        }
+    ]
+}

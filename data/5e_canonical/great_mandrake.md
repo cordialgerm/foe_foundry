@@ -1,6 +1,8 @@
 <MonsterName/>Great Mandrake</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Great Mandrake is a Tiny, unaligned plant creature known for its unique abilities and defensive characteristics. It has a notably sturdy constitution with 44 hit points, positioning it as a resilient combatant despite its small size. With an Armor Class of 11, it relies on its natural armor to defend itself. The Great Mandrake has weak dexterity but makes up for this with a very good strength score of 14 and an exceptional constitution score of 16, allowing it to absorb significant damage. One of its standout features is its ability to emit a powerful and damaging shriek, which can stun and potentially incapacitate enemies, making it a potent threat in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ This combination of features makes the Great Mandrake a versatile adversary, cap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Mandrake
 
 *Tiny* *Plant* *unaligned*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Shriek (Recharge 3-6):** Each creature within 60 feet of the mandrake that can hear it must succeed on a DC 13 Constitution saving throw or take 11 (3d6) thunder damage. If a creature fails the saving throw by 5 or more, it is stunned until the end of its next turn. If it fails by 10 or more, it falls unconscious. An unconscious creature can repeat the saving throw at the end of each of its turns, regaining consciousness on a success.
 
 
+</statblock>
 
 

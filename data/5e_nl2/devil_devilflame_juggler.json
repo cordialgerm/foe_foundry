@@ -1,0 +1,55 @@
+{
+    "name": "Devilflame Juggler",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 178,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft., climb 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "devil",
+        "fire",
+        "poison"
+    ],
+    "adjectives": [
+        "fiery",
+        "nimble",
+        "deceptive",
+        "agile"
+    ],
+    "description": "The Devilflame Juggler is a large, agile fiend with a commanding presence and a penchant for fire magic, often seen juggling hellfire in battle.",
+    "memorable": "Its ability to split fireball attacks among multiple targets and steal items makes it a cunning and dangerous foe.",
+    "goals": "To overwhelm foes with agility and magical prowess while sowing chaos through fire and poison.",
+    "relations": "Related to other devil types, often encountered alongside fiends or as minions of more powerful masters.",
+    "environment": "Typically found in fiery or chaotic places, often in hellish realms or battlefields rife with magic.",
+    "strengths": "Possesses Devil's Sight allowing it to see through magical darkness and Magic Resistance granting advantage on saves against spells.",
+    "weaknesses": "Vulnerable to magical attacks using silvered weapons.",
+    "attacks": "Employs a combination of slashing and fire damage through Deft Touch and can launch explosive fireballs at a distance.",
+    "most_powerful_ability": "The Fiery Flourish can deal massive area damage and ignite targets with hellfire balls that can bounce to multiple enemies.",
+    "equipment": null,
+    "senses": "Has Devil's Sight allowing it to see through magical darkness.",
+    "skills": "Displays high proficiency in Wisdom saving throws, making it resilient against spells targeting its mind.",
+    "additional_information": [
+        "Impressive jumping ability enhances its mobility in combat.",
+        "Can poison enemies simply by moving past them.",
+        "Exceptional Dexterity provides evasiveness in battle.",
+        "Can communicate telepathically within a large radius.",
+        "Uncanny Dodge allows it to mitigate damage from attacks."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery magical juggler with agility",
+        "devil that can poison and jump",
+        "large fire-wielding fiend in combat",
+        "clever devil that steals items",
+        "nimble creature with magical darkness abilities"
+    ]
+}

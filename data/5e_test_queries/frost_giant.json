@@ -1,0 +1,25 @@
+{
+    "name": "Frost Giant",
+    "queries": [
+        {
+            "query": "huge icy humanoid with blue skin that raids villages",
+            "variant": "giant humanoid with blue skin that is massive and raids settlements"
+        },
+        {
+            "query": "cold-dwelling giant that uses ice weapons and is vulnerable to fire",
+            "variant": "frost giant that lives in icy areas and fights with ice-based attacks but is weak against fire"
+        },
+        {
+            "query": "massive creature with powerful melee attacks and cold resistance",
+            "variant": "large giant with strong close combat skills and immunity to cold"
+        },
+        {
+            "query": "beast with special ice abilities and snow mobility",
+            "variant": "creature that has unique cold powers and can move easily on ice"
+        },
+        {
+            "query": "giant known for grappling and throwing opponents while fighting",
+            "variant": "frost giant famous for its ability to grab and hurl enemies during combat"
+        }
+    ]
+}

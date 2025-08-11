@@ -1,6 +1,8 @@
 <MonsterName/>Minotaur Champion</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>16</CR>
+<AC/>19</AC>
+<HP/>262</HP>
 <summary>The Minotaur Champion is a formidable Huge monstrosity known for its high resilience, strong offensive capabilities, and tactical prowess in combat. With an armor class of 19, this creature offers excellent defense, making it challenging for adversaries to hit. It possesses a substantial pool of hit points totaling 262, which allows it to endure prolonged battles. The Minotaur Champion is particularly threatening during melee encounters due to its exceptional strength and access to various powerful attacks. While it has average dexterity, its ability to utilize mobility and powerful melee strikes can outclass many opponents. Additionally, it displays magical resilience with an innate advantage on saving throws against spells, contributing to its durability. Overall, this creature functions well as a front-line combatant but is vulnerable to strategic and ranged attacks, particularly those that exploit its low dexterity attribute.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Minotaur Champion is a highly aggressive melee combatant with stron
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur Champion
 
 *Huge* *Monstrosity*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Roar of Triumph:** If the minotaur reduced a living creature to 0 hit points since the end of its last turn, it roars and gains 35 (10d6) temporary hit points.
 
 
+</statblock>
 
 

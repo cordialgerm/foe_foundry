@@ -1,0 +1,48 @@
+{
+    "name": "Akaasit",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walking speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "construct",
+        "magic resistant",
+        "multiattack"
+    ],
+    "adjectives": [
+        "formidable",
+        "evasive",
+        "tactical"
+    ],
+    "description": "The Akaasit is a formidable medium-sized construct with natural armor. Its agility is notable, featuring a dexterity score of 18, which enables swift movements and evasiveness in combat. It wields arm blades that it uses in attacks.",
+    "memorable": "The Akaasit flickers in and out of time, making it difficult to hit and allowing it to anticipate attacks, creating a tactical challenge for its opponents.",
+    "goals": "The Akaasit acts as a dangerous adversary in combat, utilizing speed and resistance to magical effects to engage with challengers.",
+    "relations": "Often encountered in areas with constructs or magical beings, and potentially created or controlled by powerful artificers.",
+    "environment": "Typically found in areas where constructs are created or in regions influenced by magic.",
+    "strengths": "Resistant to several damage types and immune to conditions like being charmed or frightened, making it a formidable foe.",
+    "weaknesses": "Low intelligence and charisma, leading to poor social interactions and reasoning capabilities.",
+    "attacks": "Employs rapid arm blade strikes, inflicting both slashing and force damage with a multiattack capability.",
+    "most_powerful_ability": "Unfixed in Time: Grants attackers disadvantage on their rolls, making the Akaasit challenging to hit.",
+    "equipment": null,
+    "senses": "Has truesight out to 60 feet, aiding in identifying invisible foes.",
+    "skills": null,
+    "additional_information": [
+        "Immutable Form allows immunity to form-altering effects.",
+        "Magic Resistance enhances survival against spells and magical effects.",
+        "Capable of performing a timely counterattack to negate incoming attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "construct with time manipulation abilities",
+        "evasive magic-resistant creature",
+        "skirmisher with multiattack",
+        "formidable melee construct",
+        "Akaasit combat tactics"
+    ]
+}

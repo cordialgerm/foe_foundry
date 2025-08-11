@@ -1,6 +1,8 @@
 <MonsterName/>Young Light Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Young Light Dragon is a large, neutral good dragon known for its celestial powers and unique abilities that make it a formidable yet benevolent creature. With a challenge rating of 7, it has a strong presence in combat, boasting a high hit point pool of 142, which makes it resilient against attacks. Its armor class is 15, providing good defense due to its natural armor. The Young Light Dragon possesses significant physical strength with a Strength score of 18, offering exceptional melee capabilities, while its Constitution of 19 ensures great durability. However, its Dexterity is average with a score of 10, making it less agile than many other creatures. Notable for its damage immunities to radiant damage and resistances against non-magical physical damage, its weaknesses are minimal. With the ability to communicate in Draconic and perceive its surroundings with advanced sensory abilities like blindsight and darkvision, this dragon stands out as both a mystical and formidable ally in any adventure.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Young Light Dragon can perform a Bite attack, which is 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Light Dragon
 
 *Large* *Dragon* *neutral good*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5-6):** The dragon uses one of the following breath weapons:<br>Radiant Breath. The dragon exhales radiant energy in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 44 (8d10) radiant damage on a failed save, or half as much damage on a successful one.<br>Flaring Breath. The dragon emits a flash of dazzling light from its maw in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw or be blinded. Undead within the area of effect must also make a DC 15 Wisdom saving throw or be turned for 1 minute. Undead of CR 1 or lower who fail the saving throw are instantly destroyed.
 
 
+</statblock>
 
 

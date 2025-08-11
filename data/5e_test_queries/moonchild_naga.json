@@ -1,0 +1,25 @@
+{
+    "name": "Moonchild Naga",
+    "queries": [
+        {
+            "query": "large snake-like creature with powerful spellcasting abilities",
+            "variant": "big snake-like monster that has strong spellcasting powers"
+        },
+        {
+            "query": "monstrosity that can regenerate after death and has poison attacks",
+            "variant": "creature that can come back to life and uses poison in its attacks"
+        },
+        {
+            "query": "serpentine monster with mind control spells and excellent agility",
+            "variant": "snake-like creature with abilities to control minds and high dexterity"
+        },
+        {
+            "query": "deceptive creature that uses charm and persuasion in combat",
+            "variant": "tricky monster that employs charm and persuasion during battles"
+        },
+        {
+            "query": "darkvision monster that inhabits mystical areas and poses a significant threat",
+            "variant": "creature with darkvision that lives in magical regions and is a great danger"
+        }
+    ]
+}

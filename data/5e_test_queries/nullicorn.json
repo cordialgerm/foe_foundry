@@ -1,0 +1,25 @@
+{
+    "name": "Nullicorn",
+    "queries": [
+        {
+            "query": "chaotic evil aberration with magic resistance",
+            "variant": "chaotic evil abberration that has resistance to magic"
+        },
+        {
+            "query": "large creature immune to necrotic damage and paralyzation",
+            "variant": "big monster that can't be harmed by necrotic damage or paralyzed"
+        },
+        {
+            "query": "powerful melee fighter that can sense magic",
+            "variant": "strong melee monster that detects magic"
+        },
+        {
+            "query": "Nullicorn combat tactics with magic evasion abilities",
+            "variant": "combat strategies of Nullicorn that include magic evasion"
+        },
+        {
+            "query": "aberration with a disease that affects magic users",
+            "variant": "monster that causes diseases to magic users"
+        }
+    ]
+}

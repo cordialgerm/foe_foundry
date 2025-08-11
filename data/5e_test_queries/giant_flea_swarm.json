@@ -1,0 +1,25 @@
+{
+    "name": "Giant Flea Swarm",
+    "queries": [
+        {
+            "query": "medium beast swarm that bites with ravenous attacks",
+            "variant": "medium-sized beast swarm that attacks with ravenous bites"
+        },
+        {
+            "query": "blood-sensing swarm that inflicts damage in combat",
+            "variant": "swarm that senses blood and deals damage in combat"
+        },
+        {
+            "query": "creature with keen smell and resistance to multiple damage types",
+            "variant": "creature having keen sense of smell and resistant to many types of damage"
+        },
+        {
+            "query": "swarm that occupies creature\u2019s space and jumps long distances",
+            "variant": "swarm that can take a creature's space and leaps long distances"
+        },
+        {
+            "query": "giant flea swarm with low intelligence and high mobility",
+            "variant": "large flea swarm that has low IQ but is very mobile"
+        }
+    ]
+}

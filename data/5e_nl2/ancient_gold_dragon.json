@@ -1,0 +1,54 @@
+{
+    "name": "Ancient Gold Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "gargantuan",
+    "hp": 546,
+    "ac": 22,
+    "srd": true,
+    "cr": "24",
+    "movement": "40 ft., fly 80 ft., swim 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "gold",
+        "ancient",
+        "metallic"
+    ],
+    "adjectives": [
+        "majestic",
+        "awe-inspiring",
+        "regal",
+        "formidable",
+        "benevolent"
+    ],
+    "description": "The Ancient Gold Dragon is a majestic creature with gleaming gold scales, massive wings, and wise eyes. Known for its kindness and desire to protect, it often resides in high, secluded mountains.",
+    "memorable": "Its powerful fire breath can reduce entire armies to ash, while its ability to charm and inspire allies enhances its combat capabilities.",
+    "goals": "Protect the innocent and champion good; often serves as a guardian.",
+    "relations": "May be encountered with other metallic dragons or serve as a protector to good-aligned creatures.",
+    "environment": "Typically found in high, secluded mountains.",
+    "strengths": "Immunity to fire damage; highly intelligent; powerful breath weapons; strong innate spellcasting.",
+    "weaknesses": "Can be outmaneuvered by agile foes.",
+    "attacks": "Utilizes devastating bites, claws, and tail attacks, accompanied by powerful breath weapons.",
+    "most_powerful_ability": "Molten Breath can deal up to 88 fire damage in a broad cone, with additional effects that encase enemies in gold, reducing their speed to zero.",
+    "equipment": "In humanoid form, it wields a greatsword dealing 17 slashing damage.",
+    "senses": "Possesses blindsight and exceptional passive perception of 27, indicating superior awareness.",
+    "skills": "Excels in persuasion and insight, demonstrating both social finesse and combat knowledge.",
+    "additional_information": [
+        "Can breathe air and water, making it amphibious.",
+        "Has a golden splendor ability that can charm nearby creatures.",
+        "Can change its shape into a humanoid or beast, retaining many traits.",
+        "Utilizes legendary actions for tactical advantages, like frightening enemies."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting ability with a high spell save DC of 25, can cast spells like Bless, Healing Word, Banishment, and Greater Restoration.",
+    "test_queries": [
+        "majestic fire-breathing dragon",
+        "protector of the innocent",
+        "golden-scaled dragon",
+        "powerful ancient dragon",
+        "benevolent dragon guardian"
+    ]
+}

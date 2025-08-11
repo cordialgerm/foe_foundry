@@ -1,0 +1,53 @@
+{
+    "name": "Climbing Vine",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 10 ft., climb 10 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "grappler",
+        "acid damage",
+        "reaction"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "vine-like",
+        "grappling"
+    ],
+    "description": "The Climbing Vine is a medium-sized plant creature with flexible, vine-like appendages that it uses for grappling and inflicting damage.",
+    "memorable": "It grapples foes and inflicts acid damage through its Digestive Dew ability.",
+    "goals": "To entrap and damage creatures within its reach.",
+    "relations": "Often found in overgrown areas alongside other plants and creatures of similar habitat.",
+    "environment": "Typically found in jungles, forests, or overgrown ruins.",
+    "strengths": "Can grapple multiple targets at once and deal acid damage.",
+    "weaknesses": "Very low Dexterity making it easy to evade its attacks.",
+    "attacks": "Uses Dewvine to grapple opponents with its vine-like appendages, delivering bludgeoning damage through Squeeze.",
+    "most_powerful_ability": "Digestive Dew which inflicts acid damage to grappled creatures.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 20 feet, allowing it to sense nearby creatures without sight.",
+    "skills": "Has a poor perception skill with a -2 modifier.",
+    "additional_information": [
+        "Immunity to psychic damage",
+        "Unaffected by being blinded, charmed, deafened, exhausted, frightened, or prone",
+        "Can move through spaces as narrow as 6 inches",
+        "Grapples multiple targets simultaneously",
+        "Triggers a reaction when hit in melee"
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "vine creature that grapples enemies",
+        "plant monster with acid damage",
+        "vine that can fit through narrow spaces",
+        "grappling plant with multiple attacks",
+        "monster that damages grappled foes"
+    ]
+}

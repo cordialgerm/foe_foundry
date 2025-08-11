@@ -1,6 +1,8 @@
 <MonsterName/>Murmuring Worm</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>12</CR>
+<AC/>16</AC>
+<HP/>195</HP>
 <summary>The Murmuring Worm is a huge aberration that presents a formidable challenge to adventurers. With a robust armor class of 16 and a substantial pool of hit points totaling 195, it can withstand significant damage while engaging in combat. Its movement capabilities are impressive, allowing it to walk and climb at 40 feet, burrow at 20 feet, and swim at 40 feet, offering versatility in various terrains. The monster's challenge rating of 12 indicates it is a dangerous foe that can contribute significantly to an encounter. Notably, the Murmuring Worm has exceptional strength and constitution scores of 20, which provide it with both powerful attacks and durability. However, it has a low intelligence of 8, suggesting it is not particularly clever, and is vulnerable to strategies that exploit this weakness.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the worm can use the "Mental Summons" as a bonus action. Creatures
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Murmuring Worm
 
 *Huge* *Aberration*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Mental Summons:** One creature with an Intelligence score greater than 3 within 120 feet makes a DC 16 Wisdom saving throw. On a failure, it uses its reaction to move up to its Speed towards the worm by the shortest route possible, avoiding hazards but not opportunity attacks. This is a magical charm effect.
 
 
+</statblock>
 
 

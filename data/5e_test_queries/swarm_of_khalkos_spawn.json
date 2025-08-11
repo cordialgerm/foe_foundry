@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Khalkos Spawn",
+    "queries": [
+        {
+            "query": "medium aberration that emits chaos pheromones",
+            "variant": "aberration of medium size that releases pheromones of chaos"
+        },
+        {
+            "query": "agile creature with confusion abilities",
+            "variant": "quick monster that has skills to confuse enemies"
+        },
+        {
+            "query": "creature resistant to multiple damage types and immune to being charmed",
+            "variant": "monster that resists various damage types and is immune to charm effects"
+        },
+        {
+            "query": "swarm creature known for poison and piercing attacks",
+            "variant": "creature swarm recognized for its attacks of piercing and poison damage"
+        },
+        {
+            "query": "Khalkos Spawn's tactics with intelligence-based saving throws",
+            "variant": "tactics of Khalkos Spawn involving saving throws based on intelligence"
+        }
+    ]
+}

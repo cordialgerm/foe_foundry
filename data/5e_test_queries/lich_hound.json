@@ -1,0 +1,25 @@
+{
+    "name": "Lich Hound",
+    "queries": [
+        {
+            "query": "medium undead creature with enhanced tracking abilities and can fly",
+            "variant": "medium undead being that has great tracking skills and can also fly"
+        },
+        {
+            "query": "creature that causes fear and can knock enemies prone",
+            "variant": "being that induces fear and can make foes fall"
+        },
+        {
+            "query": "undead monster immune to poison and capable of locating living creatures",
+            "variant": "undead being resistant to poison and able to find living beings"
+        },
+        {
+            "query": "fast-moving hound that uses eerie howl to frighten opponents",
+            "variant": "swift hound that employs eerie howls to scare enemies"
+        },
+        {
+            "query": "Lich Hound with keen senses and decent armor class",
+            "variant": "Lich Hound having sharp senses and good armor rating"
+        }
+    ]
+}

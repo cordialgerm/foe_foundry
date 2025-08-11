@@ -1,0 +1,25 @@
+{
+    "name": "Frostveil",
+    "queries": [
+        {
+            "query": "cold environment plant creature with acidic body",
+            "variant": "plant creature in cold environments with acidic body"
+        },
+        {
+            "query": "medium-sized frost plant that grapples enemies",
+            "variant": "frost plant that can grapple enemies and is medium-sized"
+        },
+        {
+            "query": "creature with chilling acid damage and immunity to cold",
+            "variant": "creature immune to cold that deals chilling acid damage"
+        },
+        {
+            "query": "plant with natural armor and blinding engulf ability",
+            "variant": "natural armor plant that can blind and engulf"
+        },
+        {
+            "query": "flying plant that thrives in wind and absorbs damage",
+            "variant": "plant that flies in the wind and has damage absorption ability"
+        }
+    ]
+}

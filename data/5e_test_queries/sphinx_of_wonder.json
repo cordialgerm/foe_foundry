@@ -1,0 +1,25 @@
+{
+    "name": "Sphinx of Wonder",
+    "queries": [
+        {
+            "query": "tiny celestial creature with flying ability and strong magical resistance",
+            "variant": "small celestial being that can fly and has strong resistance to magic"
+        },
+        {
+            "query": "lawful good sphinx with radiant damage abilities and high stealth skills",
+            "variant": "good-aligned sphinx that deals radiant damage and has excellent stealth"
+        },
+        {
+            "query": "creature that excels in arcana and religion with a powerful rend attack",
+            "variant": "monster skilled in arcana and religion with a strong melee rend attack"
+        },
+        {
+            "query": "sphinx that helps allies with ability checks and has good darkvision",
+            "variant": "sphinx that supports allies in checks and possesses strong darkvision"
+        },
+        {
+            "query": "tiny celestial with low strength but high dexterity and intelligence",
+            "variant": "small celestial being with weak strength but high agility and intellect"
+        }
+    ]
+}

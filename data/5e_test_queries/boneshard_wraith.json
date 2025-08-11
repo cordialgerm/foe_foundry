@@ -1,0 +1,25 @@
+{
+    "name": "Boneshard Wraith",
+    "queries": [
+        {
+            "query": "undead creature that can fly and has necrotic immunity",
+            "variant": "flying undead monster with necrotic damage immunity"
+        },
+        {
+            "query": "medium wraith that paralyzes with claws and dwells in shadows",
+            "variant": "medium-sized wraith that paralyzes with its claw attacks and lurks in the dark"
+        },
+        {
+            "query": "creature with high Constitution and sunlight sensitivity that moves through walls",
+            "variant": "monster with strong constitution and disadvantage in sunlight that can pass through objects"
+        },
+        {
+            "query": "dangerous undead with strong armor class and multiple attacks",
+            "variant": "formidable undead being with good armor class that can perform multiple attacks"
+        },
+        {
+            "query": "Boneshard Wraith abilities including exhaustion and slashing damage",
+            "variant": "abilities of the Boneshard Wraith involving slashing damage and exhaustion effects"
+        }
+    ]
+}

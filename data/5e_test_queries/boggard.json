@@ -1,0 +1,25 @@
+{
+    "name": "Boggard",
+    "queries": [
+        {
+            "query": "agile swamp humanoid that can breathe water and air",
+            "variant": "swamp humanoid that is agile and can breath both water and air"
+        },
+        {
+            "query": "medium amphibious creature that excels in stealth attacks",
+            "variant": "amphibious medium creature that is good at stealthy attacks"
+        },
+        {
+            "query": "creature that communicates with frogs and has a vaulting leap",
+            "variant": "a creature that can speak frog and performs a vaulting leap"
+        },
+        {
+            "query": "stealthy humanoid with a low armor class and decent hit points",
+            "variant": "humanoid with low armor class and good hit points that is stealthy"
+        },
+        {
+            "query": "fast swamp creature that strikes with advantage in combat",
+            "variant": "swamp creature that is fast and attacks with advantage during combat"
+        }
+    ]
+}

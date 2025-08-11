@@ -1,0 +1,51 @@
+{
+    "name": "Desert Troll",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking and 30 feet burrowing",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "desert",
+        "troll"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "camouflaged"
+    ],
+    "description": "The Desert Troll is a large giant with excellent camouflage in desert terrains, characterized by its chaotic evil alignment and formidable stature.",
+    "memorable": "Its ability to regenerate and water susceptibility make it both dangerous and vulnerable.",
+    "goals": "To ambush and overpower unsuspecting prey in its desert habitat.",
+    "relations": "May be encountered with other desert creatures or serve as a guardian to a desert lair.",
+    "environment": "Usually found in desert terrains.",
+    "strengths": "Strong physical attributes, capable of significant melee damage and regaining health each turn.",
+    "weaknesses": "Susceptible to water, which disrupts its regeneration ability.",
+    "attacks": "Multiattack allowing one bite and two claw strikes, dealing consistent piercing and slashing damage.",
+    "most_powerful_ability": "Regeneration enables it to recover health at the start of each turn unless harmed by acid damage.",
+    "senses": "Has darkvision and exceptional perception enhanced by its keen sense of smell.",
+    "skills": "Proficient in stealth and perception, enhancing its ambush tactics.",
+    "additional_information": [
+        "Gains advantage on stealth checks in desert areas due to Desert Camouflage.",
+        "Erupts from the ground to surprise foes with bludgeoning damage.",
+        "Possesses immunity to fire damage, making it resistant to fire-based attacks.",
+        "Requires strategy from opponents to use water against it effectively.",
+        "Displays excellent physical resilience with high hit points."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large desert creature with regeneration",
+        "chaotic evil giant that lives in deserts",
+        "ambush predator with keen smell ability",
+        "troll that can burrow and surprise foes",
+        "giant with water vulnerability in desert terrain"
+    ]
+}

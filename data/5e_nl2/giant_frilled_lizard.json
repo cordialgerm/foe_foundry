@@ -1,0 +1,52 @@
+{
+    "name": "Giant Frilled Lizard",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking, 30 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "frightening",
+        "multiattack"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "intimidating"
+    ],
+    "description": "The Giant Frilled Lizard is a large, intimidating beast with impressive physical capabilities, characterized by its vibrant frills that it extends when charging.",
+    "memorable": "Its ability to frighten opponents with a fear-inducing charge makes it a unique and dangerous creature in battle.",
+    "goals": "The lizard typically seeks to defend its territory or hunt for food.",
+    "relations": "It may be encountered in the company of other reptiles or as part of a diverse ecosystem.",
+    "environment": "Prefers warm, forested areas or jungles.",
+    "strengths": "High Dexterity allows it to evade attacks and increased speed during its charge enhances its combat prowess.",
+    "weaknesses": "Low Intelligence renders it incapable of strategic thinking.",
+    "attacks": "Can perform a multiattack with a bite that inflicts piercing and poison damage, and a tail attack that deals bludgeoning damage.",
+    "most_powerful_ability": "Intimidating Charge, which can frighten enemies and increase its speed.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and has a passive Perception of 14.",
+    "skills": "Has notable proficiency in Athletics, making it capable at climbing and physical feats.",
+    "additional_information": [
+        "Can charge at enemies, causing fear.",
+        "High agility for an effective defensive style.",
+        "Intimidating presence in skirmishes.",
+        "Relies on physical strength rather than intelligence.",
+        "Known for its hissing behavior when threatened."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "intimidating large beast with frills",
+        "agile creature that can instill fear",
+        "multiattack lizard that charges enemies",
+        "poison dealing bite and tail attacks",
+        "frightening beast of the jungle"
+    ]
+}

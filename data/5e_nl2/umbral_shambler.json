@@ -1,0 +1,54 @@
+{
+    "name": "Umbral Shambler",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walks 20 feet, doubles speed in dim light or darkness",
+    "role": "Skirmisher",
+    "tags": [
+        "shadow",
+        "undead",
+        "darkness",
+        "mobility"
+    ],
+    "adjectives": [
+        "cunning",
+        "shadowy",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Umbral Shambler is a shadowy creature with a muscular build and a dark, flowing form that embodies darkness and despair.",
+    "memorable": "It can maneuver through shadows and attack with both slashing and necrotic damage, making it a threat in low-light situations.",
+    "goals": "To confuse and ambush its prey from the shadows.",
+    "relations": "May be accompanied by other shadowy creatures or dark minions.",
+    "environment": "Typically found in dimly lit areas or shadowy environments.",
+    "strengths": "Excellently adapted to low-light environments, allows for stealthy movement and ambush tactics.",
+    "weaknesses": "Struggles in bright sunlight, suffers disadvantage on attacks and perception checks in such conditions.",
+    "attacks": "Can make two claw strikes dealing slashing and necrotic damage, powerful in darkness due to its mobility.",
+    "most_powerful_ability": "The ability to project itself beyond typical reality, moving through solid objects in dim light.",
+    "senses": "Has blindsight up to 30 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Proficient in perception, making it perceptive to hidden threats.",
+    "additional_information": [
+        "Vulnerable to radiant damage.",
+        "Resistant to necrotic and psychic damage.",
+        "Immune to being charmed and exhausted.",
+        "Enhances movement in dim lighting conditions.",
+        "Clever use of the environment to ambush foes."
+    ],
+    "damage_types": [
+        "necrotic",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy creature that can move through walls",
+        "aberration that excels in darkness and stealth",
+        "medium monster vulnerable to radiant attacks",
+        "cunning creature that attacks in low-light",
+        "creature with claw attacks and necrotic damage"
+    ]
+}

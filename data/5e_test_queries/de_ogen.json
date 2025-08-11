@@ -1,0 +1,25 @@
+{
+    "name": "De Ogen",
+    "queries": [
+        {
+            "query": "undead creature that flies and is immune to fire",
+            "variant": "creature that flies and is fire immune and undead"
+        },
+        {
+            "query": "creepy medium-sized monster with a transfixing gaze and sunlight sensitivity",
+            "variant": "medium creepy monster with sunlight sensitivity and a gaze that can transfix"
+        },
+        {
+            "query": "agile undead that can incapacitate foes and moves through objects",
+            "variant": "undead creature that is agile, incapacitates foes, and moves through objects easily"
+        },
+        {
+            "query": "monster with high dexterity that relies on stealth and fire damage",
+            "variant": "creature that utilizes stealth and has high dexterity while dealing fire damage"
+        },
+        {
+            "query": "neutral evil monster with the ability to rise shadows from slain humanoids",
+            "variant": "evil neutral creature that can make shadows out of killed humanoids"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Wereowl",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "shapechanger",
+        "lycanthrope",
+        "stealthy",
+        "agile"
+    ],
+    "adjectives": [
+        "cunning",
+        "malevolent",
+        "stealthy",
+        "versatile"
+    ],
+    "description": "The Wereowl is a medium humanoid capable of transforming into a humanoid form, an owl-humanoid hybrid, and a giant owl, with sharp talons and a humanoid appearance.",
+    "memorable": "Its ability to curse humanoids with lycanthropy and its stealthy, flight capabilities make it a dangerous foe.",
+    "goals": "Typically seeks to manipulate situations from the shadows and consolidate power.",
+    "relations": "May serve or be allied with other cunning or evil creatures.",
+    "environment": "Usually found in dark, wooded areas or urban environments where it can blend in.",
+    "strengths": "Immunities to nonmagical physical damage, excellent stealth and perception skills, and versatility in combat due to shapechanging.",
+    "weaknesses": "Vulnerable to silvered weapons, which bypass its damage immunities.",
+    "attacks": "Can attack with rapacious talons in owl form or use shortswords and shortbows in humanoid form.",
+    "most_powerful_ability": "Shapechanger ability allows it to transform and adapt to the battlefield.",
+    "equipment": null,
+    "senses": "Has keen hearing and sight, granting it advantage on perception checks relating to these senses.",
+    "skills": "Proficient in Perception and Stealth, with high scores in both.",
+    "additional_information": [
+        "Does not provoke opportunity attacks when flying away from enemies.",
+        "Silent Flight enhances its stealth while airborne.",
+        "Returns to humanoid form upon death.",
+        "Can sense threats effectively with advantage on perception checks.",
+        "Has a solid mix of offense and defense."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy humanoid that transforms into an owl",
+        "cunning wereowl with lycanthropy curse",
+        "shapechanging monster that flies silently",
+        "humanoid creature that can become a giant owl",
+        "dangerous stealthy wereowl in wooded areas"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Idolic Deity",
+    "queries": [
+        {
+            "query": "small construct that disrupts divine power in combat",
+            "variant": "little construct that undermines divine abilities during fights"
+        },
+        {
+            "query": "creature with high dexterity and stealth abilities using Apostasy Aura",
+            "variant": "being with exceptional stealth and agility employing the Apostasy Aura"
+        },
+        {
+            "query": "deceptive monster with psychic damage and false appearance ability",
+            "variant": "tricky creature that inflicts psychic harm and has false appearance feature"
+        },
+        {
+            "query": "neutral evil construct that can move through objects and creatures",
+            "variant": "evil neutral construct capable of passing through objects and beings"
+        },
+        {
+            "query": "small statue-like creature immune to poison and psychic damage",
+            "variant": "tiny statue resembling being that is unaffected by poison and psychic harm"
+        }
+    ]
+}

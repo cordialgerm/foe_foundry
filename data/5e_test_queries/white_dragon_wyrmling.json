@@ -1,0 +1,25 @@
+{
+    "name": "White Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium-sized ice dragon with cold attacks",
+            "variant": "medium ice dragon with cold attaks"
+        },
+        {
+            "query": "dragon that breathes frost and moves on icy terrains",
+            "variant": "dragon that can breath frost and moves on ice terrain"
+        },
+        {
+            "query": "dragon with icy abilities that thrives in cold environments",
+            "variant": "dragon with icy powers that thrives in cold enviroments"
+        },
+        {
+            "query": "medium dragon known for piercing damage and cold breath",
+            "variant": "medium dragon known for piercing dmg and cold breath"
+        },
+        {
+            "query": "cold-resistant dragon that uses stealth and ambush tactics",
+            "variant": "cold resistant dragon using stealth and ambush tatics"
+        }
+    ]
+}

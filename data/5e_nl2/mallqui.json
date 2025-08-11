@@ -1,0 +1,51 @@
+{
+    "name": "Mallqui",
+    "creature_type": "Undead",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "necrotic",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "durable",
+        "resilient"
+    ],
+    "description": "The Mallqui is a Medium undead creature characterized by its pale, ghostly form and grim presence, with an aura of necrotic energy surrounding it.",
+    "memorable": "It has the ability to regenerate unless it takes radiant damage and can cause exhaustion to nearby foes.",
+    "goals": "Typically seeks to weaken living creatures and dominate the battlefield through exhaustion and necrotic damage.",
+    "relations": "It might serve under more powerful undead creatures or dark entities, drawing on their dark energies.",
+    "environment": "Often found in desolate places, graveyards, or sites of ancient battles, where it can continue its existence in undeath.",
+    "strengths": "Resistant to various forms of damage, immune to common conditions, and capable of regenerating hit points.",
+    "weaknesses": "Highly vulnerable to radiant damage, especially when moving in or near water.",
+    "attacks": "Uses Xeric Blast for necrotic damage and expels an aura that causes exhaustion to nearby creatures.",
+    "most_powerful_ability": "Regeneration allows it to heal itself unless it takes radiant damage.",
+    "senses": "Has darkvision up to 60 feet and a passive Perception of 14, enhancing its awareness in darkness.",
+    "skills": "Proficient in Insight, allowing it to effectively gauge the mental state of foes.",
+    "additional_information": [
+        "Immune to necrotic and poison damage",
+        "Resistance to cold and lightning damage",
+        "Can drain moisture and cause exhaustion",
+        "Does not require air, food, or sleep",
+        "Can manipulate water through its spells"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Can cast spells using Wisdom as its spellcasting ability, allowing for diverse battlefield control.",
+    "test_queries": [
+        "cunning undead that regenerates unless damaged",
+        "medium undead with necrotic attacks and spells",
+        "monster that drains moisture causing exhaustion",
+        "mallqui vulnerabilities radiant damage and water",
+        "undead creature skilled in insight and spellcasting"
+    ]
+}

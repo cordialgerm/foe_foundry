@@ -1,6 +1,8 @@
 <MonsterName/>Bonepowder Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>180</HP>
 <summary>The Bonepowder Ghoul is a menacing undead creature, classified as small and possessing a neutral evil alignment. Its formidable role in combat is reinforced by a strong mix of physical and magical abilities, allowing it to inflict both direct damage and debilitating effects on its targets. With a high armor class of 18, robust hit points totaling 180, and impressive dexterity and charisma, the Bonepowder Ghoul is a threat that combines agility with potent magical capabilities. However, it remains vulnerable to radiant damage, meaning it needs to be careful when facing divine or holy entities. Notably, the Bonepowder Ghoul can shape itself into a nearly immaterial form, allowing it to pass through tight spaces effortlessly, which adds a layer of tactical versatility to its encounters.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ In combat, the ghoul can trigger the Coalesce reaction, allowing it to change fr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bonepowder Ghoul
 
 *Small* *Undead* *Neutral Evil*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Coalesce:** When a bonepowder ghoul deals necrotic damage with Gravedust to at least one creature that isn’t a Construct or Undead, it can magically transform from its dusty form into a coalesced form. Its statistics are the same in each form, except it can speak audibly only in its coalesced form. The coalesced form lasts for a number of minutes equal to the total necrotic damage it dealt with Gravedust to creatures that aren’t Constructs or Undead or until the ghoul ends it as a bonus action.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Sentinel",
+    "queries": [
+        {
+            "query": "medium construct that resembles armor and has high damage resistance",
+            "variant": "medium construct like armor with strong damage immunity"
+        },
+        {
+            "query": "mechanical guardian with immunity to fear and poison",
+            "variant": "mechanical protector immune to being scared and poison"
+        },
+        {
+            "query": "combat construct that can attack multiple times in one turn",
+            "variant": "construct for battle that strikes multiple times in a single turn"
+        },
+        {
+            "query": "creature that can blend in with armor and has limited mobility",
+            "variant": "being that hides as armor and has restricted movement"
+        },
+        {
+            "query": "sentinel with special actions like 'overclock' and 'calculated sweep'",
+            "variant": "guard with unique moves like 'overclock' and 'calculated sweep'"
+        }
+    ]
+}

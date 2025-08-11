@@ -1,0 +1,51 @@
+{
+    "name": "Balloon Spider",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 36,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "hover, walk 20 ft., fly 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "spider",
+        "lightning",
+        "beast",
+        "ambush predator"
+    ],
+    "adjectives": [
+        "unique",
+        "mobile",
+        "aggressive"
+    ],
+    "description": "The Balloon Spider is a Medium beast with the ability to hover and fly, giving it excellent mobility on the battlefield. Its appearance likely includes distinct webbing and its anatomy resembles that of a typical spider, adapted for quick strikes from above.",
+    "memorable": "It's unique Erratic Discharge ability creates a dynamic combat environment, where it can hinder opponents or empower them, creating unpredictable scenarios.",
+    "goals": "Typically seeks to ambush prey and control the battlefield by limiting the movement of opponents.",
+    "relations": "May be found alongside other spiders or dangerous beasts in its environment.",
+    "environment": "Commonly found in wild areas where it can utilize its ambush tactics.",
+    "strengths": "Immunity to lightning damage makes it resilient against certain attacks; good perception allows it to detect threats effectively.",
+    "weaknesses": "Very low intelligence limits its strategic capabilities.",
+    "attacks": "Its bite attack delivers both piercing and lightning damage, potentially restricting the actions of its target, and its Charged Web can grapple and lift opponents off the ground.",
+    "most_powerful_ability": "Erratic Discharge allows for versatile interactions in combat, hindering opponents or granting them benefits.",
+    "equipment": null,
+    "senses": "Has blindsight up to 10 feet, allowing it to sense creatures in close proximity without sight.",
+    "skills": "Possesses a notable perception skill with a +3 modifier, making it adept at detecting nearby threats.",
+    "additional_information": [
+        "Excels in hit-and-run tactics by using its mobility.",
+        "Can control positioning in combat through its Draw In ability.",
+        "Can grant haste to opponents, creating high-stakes interactions."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator spider",
+        "lightning-imbued spider",
+        "balloon creature with web abilities",
+        "mobile spider beast",
+        "unpredictable battle spider"
+    ]
+}

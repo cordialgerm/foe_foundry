@@ -1,6 +1,8 @@
 <MonsterName/>Cave Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Cave Dragon Wyrmling is a Medium-sized dragon of Neutral Evil alignment, representing a formidable presence in any encounter. With a respectable Armor Class of 16, it boasts 52 hit points, which translates into good survivability for its challenge rating of 2, offering participants 450 experience points upon defeat. The creature is adept in combat with a high Strength score of 19, providing it with a +4 modifier, which is considered very good. It can move and navigate effectively, with a walking speed of 20 feet, a flying speed of 20 feet, and a burrowing speed of 30 feet, allowing it to engage in a variety of tactical maneuvers. Its ability to suppress natural light around it creates a strategic advantage, making it more difficult for foes to see and attack effectively.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Cave Dragon Wyrmling can perform a melee attack with it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Dragon Wyrmling
 
 *Medium* *Dragon* *Neutral Evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 3 (1d6) poison damage.
 - **Poison Breath (Recharge 5–6):** The dragon exhales a cone of black, poisonous gas in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw. On a failure, a creature takes 14 (4d6) poison damage and is poisoned until the end of its next turn. On a success, a creature takes half the damage and isn’t poisoned.
+</statblock>
 
 

@@ -1,6 +1,10 @@
 <MonsterName/>Cult Fanatic</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>2</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>33</HP>
 <summary>A Cult Fanatic is a fervent follower of a dark god or other sinister forces, willing to sacrifice anything, including their own life, to achieve their cult’s goals. Clad in dark robes and often adorned with strange symbols, Cult Fanatics are skilled in dark rituals and wield dangerous, often unholy, magic. They are charismatic leaders within their cult, able to inspire loyalty and fanaticism in their followers. In combat, they call upon the powers of their deity to smite their enemies or heal their allies. Cult Fanatics are dangerous opponents due to their unwavering dedication and the dark forces they serve.</summary>
 
 <summary>The Cult Fanatic is a Medium humanoid creature that embodies the fervor and zealotry often associated with cults. They possess a modest armor class of 12, making them vulnerable to physical attacks, but their hit points total 39, providing them with reasonable durability in combat situations. The Cult Fanatic’s challenge rating is 2, which is appropriate for a creature that can both support allies and hinder enemies through its spellcasting capabilities. They have notably good Dexterity, Wisdom, and Charisma scores, allowing them to excel in aspects of combat that involve agile movement and persuasive abilities. Their ability to resist charm and fear effects signifies a strong mental fortitude. While their melee capabilities using a dagger are reliable, their true strength lies in their spellcasting, where they can inflict considerable damage or manipulate foes with a variety of spells.</summary>
@@ -56,6 +60,7 @@ As a bonus action, the fanatics can use **Unholy Brand** (recharge on a roll of 
 
 Source: 5e_srd
 
+<statblock>
 ### Cult Fanatic
 
 *Medium humanoid (any race), any non-good alignment*
@@ -92,7 +97,8 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 ***Dagger***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* 4 (1d4 + 2) piercing damage.
 
-**Fanatics** are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.
+**Fanatics** are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.</statblock>
+
 
 
 
@@ -100,6 +106,7 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cult Fanatic
 
 *Medium* *Humanoid*
@@ -144,6 +151,7 @@ Source: 5e_artisinal_monsters
 - **Hold Person (2nd-Level; V, S, M, Concentration):** One humanoid the cult fanatic can see within 60 feet makes a DC 12 Wisdom saving throw. On a failure  the target is paralyzed for 1 minute. The target repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 
 
@@ -152,6 +160,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cult Fanatic
 
 *Medium humanoid (any lineage)*
@@ -190,5 +199,6 @@ Source: 5e_artisinal_monsters
 
 - **Unholy Brand (Recharge 5–6).** One creature the fanatic can see within 30 feet of it must succeed on a DC 13 CHA save or be marked with an unholy brand until the start of the fanatic’s next turn. While the creature is branded, Fiends and cultists have advantage on attack rolls against it.
 
+</statblock>
 
 

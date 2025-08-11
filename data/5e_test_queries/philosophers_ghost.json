@@ -1,0 +1,25 @@
+{
+    "name": "Philosopher's Ghost",
+    "queries": [
+        {
+            "query": "fire-inflicting ooze that thrives in combat",
+            "variant": "combat-loving ooze that causes fire damage"
+        },
+        {
+            "query": "medium ooze that is vulnerable to water and deals persistent fire damage",
+            "variant": "medium-sized ooze that takes damage from water and inflicts ongoing fire harm"
+        },
+        {
+            "query": "creature with burning touch that can pass through narrow spaces",
+            "variant": "being with burning contact ability that can move through tight gaps"
+        },
+        {
+            "query": "ooze with illumination and burning attacks",
+            "variant": "light-emitting ooze that has fire-based strikes"
+        },
+        {
+            "query": "Philosopher's Ghost combat abilities and water weaknesses",
+            "variant": "combat traits of Philosopher's Ghost and its vulnerabilities to water"
+        }
+    ]
+}

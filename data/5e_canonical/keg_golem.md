@@ -1,6 +1,8 @@
 <MonsterName/>Keg Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Keg Golem is a Medium-sized Construct that serves as a unique, unaligned creature. Its notable characteristics include a solid physical presence, with a robust armor class of 11, and a healthy pool of hit points totaling 45. This creature excels in its role on the battlefield due to its strong physical attributes—particularly its Strength of 16, granting a +3 modifier, and Constitution of 16, which also provides a +3 modifier—making it able to deal significant damage and withstand attacks. However, its weaknesses include a low Dexterity of 10 (+0 modifier), which provides only average agility, and a poor Intelligence, Wisdom, and Charisma, indicating that it lacks sophistication in both combat strategy and social interactions. The Keg Golem can be a resilient foe with some ability to knock opponents prone, but it depends on ale to maintain its combat effectiveness, enforcing an interesting tactical element.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Keg Golem has a 'Slam' attack that allows it to perform
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Keg Golem
 
 *Medium* *Construct* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Ale Blast (Recharge 5-6):** The keg golem shoots a 1 gallon jet of ale in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Constitution saving throw. On a failure, a target takes 9 (2d8) poison damage and is poisoned for 1 minute. On a success, a target takes half the damage and isn't poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

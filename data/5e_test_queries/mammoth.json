@@ -1,0 +1,25 @@
+{
+    "name": "Mammoth",
+    "queries": [
+        {
+            "query": "massive woolly creature with long tusks living in cold environments",
+            "variant": "huge woolly beast with long tusks that inhabits icy regions"
+        },
+        {
+            "query": "huge herbivore that can trample foes and has significant hit points",
+            "variant": "large plant-eating creature that can stomp enemies and has high HP"
+        },
+        {
+            "query": "creature resembling an elephant that crushes enemies with its weight",
+            "variant": "beast that looks like a giant elephant and can overpower foes with its mass"
+        },
+        {
+            "query": "powerful melee attacker with average Dexterity and high Strength",
+            "variant": "strong melee fighter with low agility and exceptional Strength"
+        },
+        {
+            "query": "peaceful beast that defends its herd fiercely and digs through snow",
+            "variant": "gentle creature that protects its group aggressively and tunnels in snow"
+        }
+    ]
+}

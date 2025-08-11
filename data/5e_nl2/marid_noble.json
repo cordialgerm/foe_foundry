@@ -1,0 +1,56 @@
+{
+    "name": "Marid Noble",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 344,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft., fly 60 ft., swim 90 ft.",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "water",
+        "noble",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "majestic",
+        "powerful",
+        "formidable",
+        "versatile"
+    ],
+    "description": "The Marid Noble is a grand elemental resembling a large, aquatic humanoid with intricate water-themed features, commanding a majestic presence.",
+    "memorable": "Its ability to control water and unleash powerful spells makes it a commanding presence in any aquatic environment.",
+    "goals": "Typically seeks to dominate its environment and assert its authority over water and aquatic creatures.",
+    "relations": "May be encountered with water elementals or other beings of elemental influence.",
+    "environment": "Aquatic and aerial settings, often in regions with abundant water.",
+    "strengths": "High hit points, strong melee and ranged attacks with its trident, and versatile spellcasting abilities.",
+    "weaknesses": "Vulnerable to certain magical effects despite resistances to acid, cold, and lightning damage.",
+    "attacks": "Can perform multiattacks with its trident for piercing and lightning damage, and can use nets to restrain foes.",
+    "most_powerful_ability": "The Water Jet attack can deal significant bludgeoning damage and knock opponents prone.",
+    "equipment": "Trident, net.",
+    "senses": "Has blindsight out to 30 feet, allowing it to detect creatures without needing to see them.",
+    "skills": "Excels in perception and persuasion, indicating high awareness and social influence.",
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Innate spellcasting allows it to cast spells without material components.",
+        "Has a Fog Cloud ability for battlefield control.",
+        "Trident magically returns when thrown, enhancing its utility.",
+        "Can unleash a powerful Water Jet when bloodied."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "lightning"
+    ],
+    "spellcasting": "Can cast various spells including 'alter self' and 'control water', with innate casting ability based on Charisma.",
+    "test_queries": [
+        "majestic water elemental with spellcasting",
+        "powerful creature that manipulates water",
+        "large elemental creature dominant in water",
+        "trident wielding water noble",
+        "elemental with fog cloud ability"
+    ]
+}

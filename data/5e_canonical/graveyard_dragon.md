@@ -1,6 +1,8 @@
 <MonsterName/>Graveyard Dragon</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Graveyard Dragon is a formidable undead creature that embodies the twisted remnants of its former life as a dragon. Bearing a neutral evil alignment, this massive foe presents significant challenges to adventurers with its blend of resilience and powerful offensive capabilities. With a solid armor class of 16 and an impressive pool of 127 hit points, it stands as a tough adversary in combat. The Graveyard Dragon excels in physical combat with a decent Strength score of 16, granting it an average ability to hit. Additionally, its unique abilities such as the Elemental Aura and various damage resistances make it a dangerous opponent on the battlefield. However, it does have a notable lack of agility with a Dexterity score of only 10, which can be seen as a weakness as it might struggle to evade incoming attacks.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Graveyard Dragon is a versatile and dangerous opponent that balance
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Graveyard Dragon
 
 *Large* *Undead* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5-6):** The dragon releases a breath weapon that corresponds to the type of dragon it was in life. Each creature in the area must make a DC 14 Dexterity saving throw, taking 40 (9d8) damage of the corresponding type on a failed save, or half as much damage on a successful one. <br>* Black. Acid damage in a 30-foot line that is 5 feet wide. <br>* Blue. Lightning damage in a 30-foot line that is 5 feet wide. <br>* Green. Poison damage in a 30-foot cone. <br>* Red. Fire damage in a 30-foot cone. <br>* White. Cold damage in a 30-foot cone.
 
 
+</statblock>
 
 

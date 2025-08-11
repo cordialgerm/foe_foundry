@@ -1,0 +1,25 @@
+{
+    "name": "Bugbear",
+    "queries": [
+        {
+            "query": "hulking goblinoid creature that excels in ambush tactics",
+            "variant": "goblinoid hulking creature known for ambush tactics"
+        },
+        {
+            "query": "strong and stealthy monster that lives in caves and raiding bands",
+            "variant": "stealthy strong creature that resides in caves and raids"
+        },
+        {
+            "query": "monster with shaggy fur and a penchant for grappling",
+            "variant": "creature that has shaggy fur and loves to grapple"
+        },
+        {
+            "query": "violent humanoid that can surprise and stun its enemies",
+            "variant": "humanoid monster that stuns and surprises foes"
+        },
+        {
+            "query": "medium humanoid known for high Strength and stealth skills",
+            "variant": "medium creature recognized for great Strength and stealth abilities"
+        }
+    ]
+}

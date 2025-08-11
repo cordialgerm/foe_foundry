@@ -1,0 +1,55 @@
+{
+    "name": "Snallygaster",
+    "creature_type": "Aberration",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 16,
+    "srd": false,
+    "cr": "15",
+    "movement": "30 feet walking and flying speed",
+    "role": null,
+    "tags": [
+        "aberration",
+        "huge",
+        "flying",
+        "magical resistance"
+    ],
+    "adjectives": [
+        "formidable",
+        "wild",
+        "unpredictable",
+        "fearsome"
+    ],
+    "description": "The Snallygaster possesses a robust physique with slimy tentacles and sharp talons, characterized by its ability to fly and unleash devastating screeches.",
+    "memorable": "Its unique ability to regenerate hit points and reflect spells makes it a challenging opponent.",
+    "goals": "To dominate its environment and thrive in battle using brute force and magical defenses.",
+    "relations": "Can be found in the company of other aberrant creatures or lurking in dark, secluded places.",
+    "environment": "Usually found in dark and mystical environments, where it can leverage its magic resistance and regeneration.",
+    "strengths": "Impressive physical strength, high hit points, magical resistance, and regeneration ability.",
+    "weaknesses": "Low intelligence and dexterity, making its movement patterns somewhat predictable.",
+    "attacks": "Attacks include dangerous Slimy Tentacles that inflict ongoing acid damage and sharp Talons for piercing damage.",
+    "most_powerful_ability": "The Screech ability can deal substantial thunder damage and potentially stun multiple foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision which allows it to see in dim light as if it were bright light.",
+    "skills": "Has a moderate passive perception score of 12.",
+    "additional_information": [
+        "Immune to acid and thunder damage.",
+        "Cannot be frightened.",
+        "Multiattack allows it to strike multiple times in one turn.",
+        "Ability to regain hit points at the start of its turn.",
+        "Can reflect spells cast against it."
+    ],
+    "damage_types": [
+        "acid",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge flying magic resistant creature",
+        "slimy tentacle monster with thunder abilities",
+        "unpredictable aberration with regeneration powers",
+        "fearsome creature that can stun its foes",
+        "acid and thunder immune monster in dark environments"
+    ]
+}

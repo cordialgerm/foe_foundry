@@ -1,6 +1,8 @@
 <MonsterName/>Werehyena</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>58</HP>
 <summary>The werehyena is a chaotic evil humanoid creature that embodies both the cunning of a gnoll and the ferocity of a hyena. As a Medium-sized being, it can shift between three forms: its true gnoll form, a hyena-gnoll hybrid, or a pure hyena. This versatility makes it an unpredictable opponent in combat, as it can choose to utilize strength or speed depending on the situation. Its strengths lie in its high Dexterity, allowing for effective stealth, and the ability to withstand attacks that are not made with silver. However, its relatively low Armor Class means it can be vulnerable if caught without the benefit of its shapechanging ability. The werehyena has a challenge rating of 3, making it a moderately challenging foe for a party of adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the werehyena is a formidable foe with unique abilities that can turn t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werehyena
 
 *Medium* *Humanoid* *chaotic evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Scimitar (Gnoll or Hybrid Form Only):** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.
 
 
+</statblock>
 
 

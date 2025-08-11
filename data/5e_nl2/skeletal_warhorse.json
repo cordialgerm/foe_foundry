@@ -1,0 +1,50 @@
+{
+    "name": "Skeletal Warhorse",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Large",
+    "hp": 30,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "mount",
+        "warhorse"
+    ],
+    "adjectives": [
+        "skeletal",
+        "powerful",
+        "charging"
+    ],
+    "description": "A large skeletal horse with impressive strength and agility, serving as a formidable mount for necromancers.",
+    "memorable": "The charging ability that can knock opponents prone adds a unique tactical element to combat.",
+    "goals": "To serve its necromancer or undead master in battle.",
+    "relations": "Often found alongside necromancers or in undead hordes.",
+    "environment": "Typically found in graveyards, battlefields, or areas tainted by undeath.",
+    "strengths": "High Strength score allowing for powerful attacks and a fast movement speed for quick positioning.",
+    "weaknesses": "Vulnerable to bludgeoning damage.",
+    "attacks": "Hooves attack that can knock opponents prone with a successful charge.",
+    "most_powerful_ability": "Charging attack that can knock enemies prone, creating battlefield control.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Functions without air, food, or sleep due to Undead Nature.",
+        "Immune to poison damage and the poisoned condition.",
+        "Does not suffer from fatigue."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fast undead horse mount",
+        "skeleton horse that charges and knocks prone",
+        "undead creature with powerful hoof attacks",
+        "charge attack skeleton warhorse battle",
+        "mount for necromancer undead army"
+    ]
+}

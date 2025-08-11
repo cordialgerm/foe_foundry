@@ -1,6 +1,8 @@
 <MonsterName/>Golem, Ice</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Ice Golem is a formidable large construct that serves as a guardian or protector in icy environments. This creature stands out for its high durability and its ability to grapple and preserve enemies within its icy core, rendering them incapacitated. With an Armor Class of 16 and 114 hit points, the Ice Golem is tough to take down. It boasts a Strength score of 20 (+5), making its physical attacks quite powerful, while its Constitution score of 18 (+4) enhances its resilience in combat. However, its Intelligence, Wisdom, and Charisma scores are extremely low, indicating it is not designed for complex problem-solving or interaction with others. The Ice Golem's primary strengths lie in its immunity to cold, poison, and psychic damage, as well as being immune to a wide array of conditions. It can effectively deal with adventurers who rely on physical attacks likely due to its damage immunities against nonmagical attacks that are not made with adamantine weapons.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a reaction, the Ice Golem can choose to Freeze or Liquefy its Ice Cavity, giv
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golem, Ice
 
 *Large* *Construct* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Freeze or Liquefy Cavity:** Freezes/liquefies its Ice Cavity.
 
 
+</statblock>
 
 

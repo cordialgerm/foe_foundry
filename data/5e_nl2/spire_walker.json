@@ -1,0 +1,52 @@
+{
+    "name": "Spire Walker",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Tiny",
+    "hp": 49,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "lightning",
+        "invisible",
+        "agile"
+    ],
+    "adjectives": [
+        "chaotic",
+        "tiny",
+        "swift",
+        "magical"
+    ],
+    "description": "The Spire Walker is a tiny chaotic neutral fey with a high dexterity and magical prowess, known for its swift movements. It possesses natural armor contributing to its high AC.",
+    "memorable": "This creature can turn invisible and teleport, making it a cunning and evasive opponent.",
+    "goals": "The Spire Walker often seeks to disrupt, evade, and confuse its adversaries in combat.",
+    "relations": "It may be found in the company of other fey creatures or elemental beings.",
+    "environment": "Often found in urban or wooded areas where it can utilize narrow features to engage in combat.",
+    "strengths": "Immunity to lightning and thunder damage, and resistance to nonmagical piercing damage makes it resilient against common threats.",
+    "weaknesses": "Very low strength makes it vulnerable in melee combat if it cannot evade.",
+    "attacks": "Lightning Burst allows it to deal substantial lightning damage and affects multiple targets within range.",
+    "most_powerful_ability": "The Energized Body ability punishes attackers using metal weaponry or armor, inflicting lightning damage upon contact.",
+    "equipment": null,
+    "senses": "It has a passive perception of 10, indicating average awareness.",
+    "skills": "Proficient in Acrobatics, allowing it to perform agile maneuvers with a +6 modifier.",
+    "additional_information": [
+        "Capable of turning invisible and teleporting, allowing for strategic repositioning.",
+        "Utilizes a blend of agility and magical prowess to outmaneuver foes.",
+        "Can significantly impact combat dynamics with its area effect lightning damage."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny fey creature with lightning powers",
+        "invisible agile lightning monster",
+        "magical fey that can teleport",
+        "creature immune to lightning damage",
+        "swift tiny monster that punishes metal weapons"
+    ]
+}

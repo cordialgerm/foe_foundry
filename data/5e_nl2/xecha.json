@@ -1,0 +1,52 @@
+{
+    "name": "Xecha",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "chaotic",
+        "manipulative"
+    ],
+    "adjectives": [
+        "deceptive",
+        "versatile",
+        "resilient"
+    ],
+    "description": "Xecha is a medium-sized fiend characterized by its ability to manipulate its form and surroundings, making it difficult to predict. Its slippery and amorphous nature allows it to navigate through narrow spaces, leaving equipment behind.",
+    "memorable": "Xecha's ability to impersonate the dead creates potent deception, allowing it to infiltrate environments undetected.",
+    "goals": "To manipulate others and deceive opponents by using assumed identities.",
+    "relations": "Could be allied with other chaotic fiends or serve darker powers seeking to create chaos.",
+    "environment": "Often found in dark, chaotic, or underworld regions conducive to its fiendish nature.",
+    "strengths": "High Dexterity and Constitution scores provide agility and resilience in fights. Magic Resistance grants it advantage on saving throws against spells.",
+    "weaknesses": "Relies more on tactics than brute strength, which can be countered by opponents who can see through its deceptions.",
+    "attacks": "Utilizes Pseudopod attacks for bludgeoning and acid damage, alongside the Slam attack for reliable physical strikes. Its area attack, Sensory Overload, inflicts psychic damage and causes blindness and deafness.",
+    "most_powerful_ability": "Sensory Overload, a powerful psychic pulse that damages and incapacitates multiple foes within range.",
+    "equipment": null,
+    "senses": "Xecha possesses blindsight up to 120 feet, allowing it to perceive its surroundings in complete darkness.",
+    "skills": "Has proficiency in perception, aiding it in detecting hidden foes.",
+    "additional_information": [
+        "Immunities to acid and poison damage, along with various conditions.",
+        "Can impersonate deceased creatures for tactical advantage.",
+        "Transparent ability makes it hard to detect, allowing ambush opportunities.",
+        "Multiattack feature allows striking multiple times.",
+        "High HP and AC for good durability in combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil fiend with shape-shifting",
+        "deceptive fiend that uses corpses",
+        "versatile monster with psychic attacks",
+        "fiend with unique amorphous abilities",
+        "monster that can manipulate its environment"
+    ]
+}

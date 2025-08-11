@@ -1,0 +1,25 @@
+{
+    "name": "Yann-An-Oed",
+    "queries": [
+        {
+            "query": "huge water-dwelling aberration with stealth abilities",
+            "variant": "large underwater aberration known for its stealth"
+        },
+        {
+            "query": "monster that grapples and swallows its enemies in combat",
+            "variant": "creature that can swallow foes and grapple effectively"
+        },
+        {
+            "query": "aquatic predator that emits a hooting call",
+            "variant": "predator that makes owl-like sounds and lives in water"
+        },
+        {
+            "query": "amphibious creature with good strength and high hit points",
+            "variant": "strong amphibian known for durability and hit points"
+        },
+        {
+            "query": "stealthy monster found in both land and water environments",
+            "variant": "creature that excels in stealth on land and in water"
+        }
+    ]
+}

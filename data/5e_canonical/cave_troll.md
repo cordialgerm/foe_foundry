@@ -1,6 +1,8 @@
 <MonsterName/>Cave Troll</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>18</AC>
+<HP/>84</HP>
 <summary>The Cave Troll is a formidable Large Giant known for its resilience and strength, making it a potent adversary in combat. With a solid Armor Class of 18 and a substantial pool of 84 hit points, it can absorb significant damage while dishing out powerful attacks. The troll's strengths lie in its high Constitution, granting it exceptional resilience and the ability to regenerate health, making it difficult to defeat in prolonged battles. However, it possesses low Intelligence and Charisma, which makes it less effective in social interactions and strategic thinking. Its challenge rating of 6 indicates that it presents a moderate challenge for adventurers, particularly when its environment is taken into account.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Cave Troll's combination of high hit points, regeneration, and powe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Troll
 
 *Large* *Giant*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

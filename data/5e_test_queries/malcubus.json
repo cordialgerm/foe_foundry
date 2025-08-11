@@ -1,0 +1,25 @@
+{
+    "name": "Malcubus",
+    "queries": [
+        {
+            "query": "fiend that can fly and charms humanoids",
+            "variant": "fiend that flies and charms humanoids"
+        },
+        {
+            "query": "medium-sized demon with high Charisma abilities",
+            "variant": "medium demon with high Charisma skills"
+        },
+        {
+            "query": "malcubus abilities to manipulate and drain hit points",
+            "variant": "malcubus capabilities to manipulate and steal hit points"
+        },
+        {
+            "query": "creature that can shapeshift and has telepathic communication",
+            "variant": "creature able to shapeshift with telepathic abilities"
+        },
+        {
+            "query": "fiend with resistance to nonmagical weapons and multiple damage types",
+            "variant": "fiend resistant to nonmagical attacks and several damage kinds"
+        }
+    ]
+}

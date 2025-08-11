@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Priestess</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>105</HP>
 <summary>The Vampire Priestess is a formidable medium undead creature with a lawful evil alignment, designed to be a potent adversary in combat and a manipulator in social encounters. Possessing a significant challenge rating of 8, she boasts a well-rounded set of attributes and abilities that make her a versatile foe. With a high Wisdom score, she excels in spellcasting and can control the battlefield with her cleric spells. Her regenerative capabilities and ability to escape injury through mist form enhance her survivability, allowing her to evade defeat and launch counterattacks even when she seems vulnerable. However, she harbors critical weaknesses, such as hypersensitivity to sunlight and a reliance on specific conditions for her full range of abilities to function, presenting opportunities for strategic play by her enemies.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In combat, the Vampire Priestess can utilize multiattack, making two attacks aft
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Priestess
 
 *Medium* *Undead* *lawful evil*
@@ -75,5 +78,6 @@ Sunlight Hypersensitivity. The priestess takes 20 radiant damage when she starts
 - **Bewitching Gaze:** The vampire priestess targets one humanoid she can see within 30 feet. If the target can see her, the target must succeed on a DC 16 Wisdom saving throw or be charmed by the priestess for 1 minute. While charmed, the creature is incapacitated and has a speed of 0. Each time the vampire priestess or her allies do anything harmful to the target, it can repeat the saving throw, ending the effect on a success. The target can also repeat the saving throw if another creature uses an action to shake the target out of its stupor.
 
 
+</statblock>
 
 

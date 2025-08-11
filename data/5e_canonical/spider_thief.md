@@ -1,6 +1,8 @@
 <MonsterName/>Spider Thief</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>66</HP>
 <summary>The Spider Thief is a small construct that embodies agility and cunning, designed for stealthy operations and swift movements. With an armor class of 13 and hit points totaling 66, it possesses decent durability for its challenge rating of 2, making it a moderate threat to unprepared adventurers. This creature shines in its ability to navigate through environments quietly, aided by its Stealth skill, and is equipped to pull itself towards targets efficiently using its hooked wire ability. However, despite its proficient attack capabilities, it struggles with low Intelligence and Charisma scores, making it limited in social interactions and mental challenges. The creature exhibits immunity to many conditions and damage types, which allows it to endure various combat situations effectively, though it remains vulnerable to psychic damage.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Spider Thief also has a unique bonus action called Wire Jump. This action al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider Thief
 
 *Small* *Construct* *Unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Wire Jump:** The spider thief throws a hooked wire at a point on a surface, such as the ground or wall, it can see within 30 feet of it, attaching one end of the wire to that point. It then reels in the wire, pulling itself to an unoccupied space within 5 feet of that point. It can bring along objects and willing creatures as long as their total weight doesn’t exceed 100 pounds. When the spider moves in this way, opportunity attacks against it have disadvantage.
+</statblock>
 
 

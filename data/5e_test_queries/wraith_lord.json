@@ -1,0 +1,25 @@
+{
+    "name": "Wraith Lord",
+    "queries": [
+        {
+            "query": "undead creature that instills fear and can fly",
+            "variant": "creature that can fly and induces fear, undead"
+        },
+        {
+            "query": "powerful wraith that drains life and is sensitive to light",
+            "variant": "life-draining powerful wraith creature that dislikes light"
+        },
+        {
+            "query": "medium-sized undead with necrotic powers and great mobility",
+            "variant": "undead creature of medium size with necrotic abilities and high mobility"
+        },
+        {
+            "query": "Wraith Lord abilities to create minions and paralyze enemies",
+            "variant": "abilities of the Wraith Lord that can create minions and paralyze foes"
+        },
+        {
+            "query": "enemy that can move through objects and has fear aura",
+            "variant": "monstrous foe that has a fear aura and can pass through objects"
+        }
+    ]
+}

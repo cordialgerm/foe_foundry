@@ -1,0 +1,25 @@
+{
+    "name": "Crinaea",
+    "queries": [
+        {
+            "query": "aquatic fey creature that can poison water and becomes invisible when submerged",
+            "variant": "fey creature that lives in water and poisons water while being invisible underwater"
+        },
+        {
+            "query": "medium-sized water creature with stealth abilities and charm in social interactions",
+            "variant": "medium fey with charm and stealthy aquatic abilities"
+        },
+        {
+            "query": "creature that manipulates water and becomes weaker when away from water",
+            "variant": "water-manipulating creature that gets weak when not near water"
+        },
+        {
+            "query": "fey that uses spells and weapons for combat while being good at stealth",
+            "variant": "stealthy fey that casts spells and attacks with a dagger"
+        },
+        {
+            "query": "Fey creature with cold damage attacks and can purify water",
+            "variant": "cold damage attacking fey that can also purify water"
+        }
+    ]
+}

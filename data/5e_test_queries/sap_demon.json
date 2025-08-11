@@ -1,0 +1,25 @@
+{
+    "name": "Sap Demon",
+    "queries": [
+        {
+            "query": "small ooze monster that can possess humanoids",
+            "variant": "small ooze creature that possesses humanoids"
+        },
+        {
+            "query": "chaotic evil creature that reduces speed with its attacks",
+            "variant": "evil chaotic monster that lowers speed with its attacks"
+        },
+        {
+            "query": "monster immune to acid damage and can grapple foes",
+            "variant": "creature that is immune to acid and grapples enemies"
+        },
+        {
+            "query": "creature with unique abilities and bludgeoning damage",
+            "variant": "being with special powers and deals bludgeoning damage"
+        },
+        {
+            "query": "ooze that can move through narrow spaces and has low Dexterity",
+            "variant": "ooze that moves through tight spaces and has poor Dexterity"
+        }
+    ]
+}

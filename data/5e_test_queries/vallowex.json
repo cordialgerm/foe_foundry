@@ -1,0 +1,25 @@
+{
+    "name": "Vallowex",
+    "queries": [
+        {
+            "query": "large aquatic monster with a chaotic nature and a thirst aura",
+            "variant": "big water creature that has chaotic tendencies and an aura of thirst"
+        },
+        {
+            "query": "monster that can swim and walk with a deadly spiked tongue attack",
+            "variant": "creature capable of swimming and walking that uses a harmful spiked tongue attack"
+        },
+        {
+            "query": "aberration with ability to swallow enemies and release disease eggs",
+            "variant": "creature classified as an aberration that can consume foes and expel disease eggs"
+        },
+        {
+            "query": "stealthy aberration that can breathe both air and water",
+            "variant": "sneaky aberration that has the ability to breathe in both air and water"
+        },
+        {
+            "query": "monster that causes disadvantage on attacks with its aura and has high HP",
+            "variant": "creature that inflicts penalties on attacks using its aura and features high hit points"
+        }
+    ]
+}

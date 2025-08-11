@@ -1,0 +1,53 @@
+{
+    "name": "Imperator",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 216,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "30 feet on land; 90 feet swimming speed",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "monstrosity",
+        "commanding"
+    ],
+    "adjectives": [
+        "powerful",
+        "versatile",
+        "formidable"
+    ],
+    "description": "A Huge monstrosity with a commanding presence, the Imperator has high hit points, strong melee attacks, and a notable ability to telepathically summon penguins.",
+    "memorable": "Its unique ability to command penguins adds an interesting dynamic to encounters, combining brute strength with area control.",
+    "goals": "To dominate its environment, using both physical might and telepathic abilities to command lesser creatures.",
+    "relations": "May be encountered with penguins or in icy environments, potentially linked to aquatic creatures.",
+    "environment": "Usually found in aquatic or snowy environments, leveraging its swimming speed.",
+    "strengths": "Excellent durability with high hit points and resistance to cold damage; capable of area damage and strong melee attacks.",
+    "weaknesses": "Very low intelligence, indicating a lack of tactical cunning.",
+    "attacks": "The Imperator can perform melee attacks using its beak and wings, and has area attacks with regurgitated bile.",
+    "most_powerful_ability": "The ability to summon swarms of penguins when reduced to half hit points, creating tactical advantages in battle.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, indicating some awareness of its surroundings.",
+    "skills": "Limited perception skill, suggesting a lack of awareness.",
+    "additional_information": [
+        "Can hold its breath for an hour, useful in underwater scenarios.",
+        "Doubles damage to objects, making it a siege threat.",
+        "Advantage on escaping grapples or restrained conditions.",
+        "Can instigate large area damage with its Pelagic Bile ability.",
+        "Requires a saving throw from creatures it charges to avoid significant damage."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge icy monster that commands penguins",
+        "aquatic creature with strong melee attacks",
+        "dangerous ice monster with area control abilities",
+        "formidable monstrosity that swims rapidly",
+        "creature that summons penguins in battle"
+    ]
+}

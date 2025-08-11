@@ -1,0 +1,52 @@
+{
+    "name": "Herald of Blood",
+    "creature_type": "Fiend",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 15,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft. fly 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "battlefield control",
+        "necromancy"
+    ],
+    "adjectives": [
+        "powerful",
+        "imposing",
+        "menacing"
+    ],
+    "description": "The Herald of Blood is a formidable fiend with a large, imposing presence, exuding malevolence. Its body is designed for combat, with durable features that hint at its significant power and resilience.",
+    "memorable": "This creature can deal powerful necrotic damage and it thrives in melee combat, punishing attackers and manipulating their own rage against them.",
+    "goals": "To inflict devastation on its enemies and assert its dominance in combat.",
+    "relations": "Often seen alongside other fiends or as a commander of lesser minions that share its malevolent nature.",
+    "environment": "Typically found in dark, foreboding locations such as cursed ruins, vast battlefields, or layers of the lower planes.",
+    "strengths": "High Strength and Constitution make it a formidable combatant, with abilities to deal and withstand significant damage.",
+    "weaknesses": "Vulnerable to radiant damage, which can counteract its many immunities.",
+    "attacks": "Utilizes powerful melee strikes with its staff, as well as a devastating Blood Bolt that targets creatures from afar, inflicting necrotic damage and potentially poisoning foes.",
+    "most_powerful_ability": "Call Blood, which deals massive area-of-effect necrotic damage and grants the Herald temporary hit points from the damage dealt.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 240 feet and has a passive perception of 17, enhancing its awareness of surroundings.",
+    "skills": "Skilled in Arcana, showcasing its magical knowledge and abilities, along with good perception skills.",
+    "additional_information": [
+        "Immune to necrotic and poison damage",
+        "Can grapple and restrain smaller foes",
+        "Grants rage to weaken opponents while empowering them",
+        "Can inflict exhaustion on enemies",
+        "Increases its Armor Class when struck in melee"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing huge fiend with necrotic attacks",
+        "creature that gains strength while attacking",
+        "formidable opponent with powerful Blood Bolt",
+        "fiend that can grapple and restrain enemies",
+        "monster that inflicts exhaustion on foes"
+    ]
+}

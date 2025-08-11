@@ -1,0 +1,25 @@
+{
+    "name": "Razorleaf",
+    "queries": [
+        {
+            "query": "plant creature that can control shadows and deals slashing damage",
+            "variant": "shadow controlling plant monster that inflicts slashing damage"
+        },
+        {
+            "query": "medium-sized evil plant that is vulnerable to fire",
+            "variant": "medium-sized evil plant creature weak to fire"
+        },
+        {
+            "query": "creature with necrotic attacks that manipulates the battlefield",
+            "variant": "monster that has necrotic abilities and alters the battlefield"
+        },
+        {
+            "query": "plant with blindsight and immune to exhaustion",
+            "variant": "blindsight plant that cannot be exhausted"
+        },
+        {
+            "query": "Razorleaf abilities and its effects in combat",
+            "variant": "abilities of the Razorleaf and combat effects"
+        }
+    ]
+}

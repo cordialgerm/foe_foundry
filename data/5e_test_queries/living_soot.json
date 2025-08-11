@@ -1,0 +1,25 @@
+{
+    "name": "Living Soot",
+    "queries": [
+        {
+            "query": "large elemental creature that attacks with poison and can fly",
+            "variant": "big elemental beast attacking with poison and flying"
+        },
+        {
+            "query": "creature that embodies soot and ash and can move through tight spaces",
+            "variant": "monster that represents soot and ash and passes through narrow gaps"
+        },
+        {
+            "query": "toxic fume creature that is vulnerable to cold and uses stealth",
+            "variant": "poisonous gas being weak to cold and employs stealth"
+        },
+        {
+            "query": "elemental monster with abilities to engulf and constrict opponents",
+            "variant": "elemental beast with the power to engulf and restrain enemies"
+        },
+        {
+            "query": "creature that harms with choking air and can partially freeze",
+            "variant": "being that damages with suffocating air and can partially chill"
+        }
+    ]
+}

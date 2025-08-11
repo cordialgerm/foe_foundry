@@ -1,0 +1,25 @@
+{
+    "name": "Spectral Guardian",
+    "queries": [
+        {
+            "query": "undead creature that haunts tombs and has necrotic abilities",
+            "variant": "haunting undead creature with necrotic powers found in tombs"
+        },
+        {
+            "query": "guardian that can pass through solid objects and instills fear",
+            "variant": "protector that walks through objects and causes fear"
+        },
+        {
+            "query": "spectral being with high Dexterity that protects its bound location",
+            "variant": "high Dexterity spectral creature that safeguards its home"
+        },
+        {
+            "query": "creature tied to its past disgrace and can teleport back to its location",
+            "variant": "monster linked to its old shame and able to teleport home"
+        },
+        {
+            "query": "Medium undead with significant necrotic damage capabilities",
+            "variant": "medium-sized undead that deals a lot of necrotic damage"
+        }
+    ]
+}

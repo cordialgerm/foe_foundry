@@ -1,0 +1,52 @@
+{
+    "name": "Imperial Ghoul",
+    "creature_type": "Undead",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 16,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "4",
+    "movement": "walk 15 ft. and burrow 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ghoul",
+        "medium",
+        "lawful evil"
+    ],
+    "adjectives": [
+        "strategic",
+        "decayed",
+        "durable"
+    ],
+    "description": "The Imperial Ghoul is a Medium-sized undead creature that embodies the essence of evil and decay, characterized by its disciplined and strategical nature in combat.",
+    "memorable": "It can infect humanoids with a debilitating disease and paralyze targets with its claw attack.",
+    "goals": "To ambush and infect targets, while remaining resilient against divine threats.",
+    "relations": "Often found alongside other ghouls and undead creatures.",
+    "environment": "Typically lurking in tombs or decaying ruins.",
+    "strengths": "Immunity to poison and conditions such as being charmed, exhausted, or poisoned.",
+    "weaknesses": "Limited walking speed of 15 feet.",
+    "attacks": "The ghoul can bite to inflict piercing damage and potentially infect, while its claw attack causes slashing damage and can paralyze foes.",
+    "most_powerful_ability": "The ability to paralyze non-elf and non-undead targets with its claw attack.",
+    "equipment": "Light Crossbow used for ranged attacks.",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light.",
+    "skills": null,
+    "additional_information": [
+        "Requires no air or sleep, granting exceptional endurance.",
+        "Advantage on saving throws against effects that turn undead.",
+        "Good strength score makes it effective in melee combat.",
+        "Strategical and disciplined in combat situations.",
+        "Potential to inflict darakhul fever disease."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster that can burrow and ambush",
+        "ghoul with paralyzing attacks and disease",
+        "lawful evil undead creature with strategic abilities",
+        "durable ghoul that infects with disease",
+        "medium undead that can move through earth"
+    ]
+}

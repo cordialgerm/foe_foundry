@@ -1,6 +1,8 @@
 <MonsterName/>Black Crier</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Black Crier is a formidable Medium Undead creature, known for its ominous presence and dire prophecies heralding major catastrophes. This creature serves as a harbinger of doom, possessing a significant amount of hit points at 150, making it robust during combat. Its natural armor grants it an Armor Class of 16, providing good protection against attacks. With a Challenge Rating of 11, the Black Crier is an exceptional threat to adventurers, yielding 7,200 experience points upon defeat. It has a range of mobility, able to walk and hover or fly, which gives it strategic advantages in combat. While it is immune to poison damage and resistant to necrotic, psychic, and nonmagical physical attacks, its vulnerabilities lie in its reliance on its bound region to utilize its special abilities effectively. The Black Crier struggles with low Intelligence and Charisma but compensates with high Wisdom and Dexterity, making it a tactician in battle and a wise entity.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ The Black Crier is a strategically complex foe due to its abilities that manipul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Crier
 
 *Medium* *Undead* *neutral*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Crier’s Lament (1/Day):** The black crier unleashes a devastating peal of anguish and rage in a 30-foot cone. Each creature in the area must make a DC 16 Charisma saving throw. On a failure, a creature drops to 0 hp. On a success, a creature takes 21 (6d6) psychic damage and is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Flesh Reaver</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>19</HP>
 <summary>The Flesh Reaver is a Medium undead creature characterized by its neutral evil alignment. As a challenge rating of 1/2, it presents a moderate threat to adventurers, particularly due to its agility and ability to take advantage of group tactics. The creature has an Armor Class of 12, which provides it with a mediocre level of protection, and it possesses 19 hit points, allowing it to withstand a few hits before being defeated. With a walking speed of 40 feet, it can close in on its targets quickly. The Flesh Reaver's strengths lie in its advantageous special abilities and decent physical attributes, while its notable weaknesses include low intelligence and charisma.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Flesh Reaver's actions include two main attacks. The Claw attack allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flesh Reaver
 
 *Medium* *Undead* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Consume Flesh:** Melee Weapon Attack: +4 to hit, reach 5 ft., one prone creature. Hit: 4 (1d4 + 2) piercing damage, and the creature must make a DC 13 Constitution saving throw, taking 7 (2d6) necrotic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

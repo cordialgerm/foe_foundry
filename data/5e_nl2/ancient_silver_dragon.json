@@ -1,0 +1,54 @@
+{
+    "name": "Ancient Silver Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Gargantuan",
+    "hp": 487,
+    "ac": 22,
+    "srd": true,
+    "cr": "23",
+    "movement": "40 ft., fly 80 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "metallic",
+        "noble",
+        "cold breath"
+    ],
+    "adjectives": [
+        "formidable",
+        "compassionate",
+        "powerful",
+        "intelligent"
+    ],
+    "description": "The Ancient Silver Dragon has gleaming silver scales, appearing often as a statue or icy outcropping when at rest. It has an elegant and majestic presence, embodying both strength and resilience.",
+    "memorable": "Its ability to take human form and interact with mortals, along with its potent breath weapons that can inflict massive cold damage and paralyze foes, make it a unique and adaptable creature.",
+    "goals": "The dragon aims to protect the innocent and uphold a deep sense of honor, often seeking peaceful resolutions to conflicts.",
+    "relations": "Ancient Silver Dragons often ally with other good-aligned creatures and can be found serving as protectors or mentors to adventurers.",
+    "environment": "Typically resides in high mountain ranges or arctic regions where it can blend in with its icy surroundings.",
+    "strengths": "Immunity to cold damage, high resistance to magical effects, advanced spellcasting abilities, and powerful breath attacks.",
+    "weaknesses": "May be vulnerable to potent magical effects if it exhausts its legendary resistances.",
+    "attacks": "Can perform a Multiattack with its bite, claws, and tail, including powerful breath weapons that deal massive cold damage.",
+    "most_powerful_ability": "The Frost Breath attack can deal significant cold damage across a wide area and can slow the targets.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a passive perception score of 26, showcasing its keen awareness of the surroundings.",
+    "skills": "Excels in Arcana, History, Perception, and Stealth, indicating its well-rounded intelligence, knowledge, and ability to evade detection.",
+    "additional_information": [
+        "Can use Cloud Strider to avoid harmful effects at high altitudes and become ephemeral clouds.",
+        "Has legendary actions for enhanced tactical versatility, including options to frighten enemies and reposition.",
+        "Can use Change Shape to transform into a humanoid or beast, retaining many of its abilities.",
+        "Legendary Resistance allows it to succeed on saving throws it would otherwise fail.",
+        "Its potent Frightful Presence can instill fear in nearby creatures, adding a psychological tactic to its combat style."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast spells like Charm Person and Faerie Fire without material components.",
+    "test_queries": [
+        "noble dragon",
+        "formidable ice dragon",
+        "magical shape-shifting dragon",
+        "dragon with powerful breath weapons",
+        "legendary silver dragon abilities"
+    ]
+}

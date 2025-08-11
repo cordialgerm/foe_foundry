@@ -1,0 +1,25 @@
+{
+    "name": "Shoggoth",
+    "queries": [
+        {
+            "query": "chaotic huge monster with absorb flesh ability",
+            "variant": "huge chaotic monster that can absorb flesh"
+        },
+        {
+            "query": "massive aberration that attacks with bludgeoning damage",
+            "variant": "big aberration that hits with bludgeoning damage"
+        },
+        {
+            "query": "creature that is immune to cold and has a hideous cacophony",
+            "variant": "monster immune to cold and emits a hideous cacophony"
+        },
+        {
+            "query": "strong and resilient creature that can grapple opponents",
+            "variant": "resilient and strong creature capable of grappling"
+        },
+        {
+            "query": "disorienting monster with keen hearing and smell",
+            "variant": "monster that disorients with excellent hearing and smell"
+        }
+    ]
+}

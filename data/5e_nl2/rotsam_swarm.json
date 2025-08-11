@@ -1,0 +1,53 @@
+{
+    "name": "Rotsam Swarm",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 142,
+    "ac": 9,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 10 ft. swim 30 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "disease",
+        "necrotic",
+        "swarm"
+    ],
+    "adjectives": [
+        "menacing",
+        "decayed",
+        "resilient"
+    ],
+    "description": "The Rotsam Swarm is a large ooze creature characterized by its unaligned nature and affinity for necrotic energy, featuring a foul odor and a rotting appearance.",
+    "memorable": "Its lethal diseased bites can spread a debilitating infection that affects its targets' health.",
+    "goals": "To spread decay and infect living creatures with its disease.",
+    "relations": "May be found in the company of other oozes or in decaying environments.",
+    "environment": "Thrives in areas where decay is prevalent, such as swamps or other necrotic-infested locations.",
+    "strengths": "Significant hit points and resistance to multiple damage types; capable of inflicting diseases.",
+    "weaknesses": "Low Armor Class and poor Dexterity makes it vulnerable to attacks.",
+    "attacks": "Diseased Bites that inflict both piercing and necrotic damage, with a chance to contract bog rot disease.",
+    "most_powerful_ability": "The ability to spread bog rot disease, severely reducing affected creatures' health.",
+    "equipment": null,
+    "senses": "Blindsight out to 60 feet; can detect threats within this range.",
+    "skills": null,
+    "additional_information": [
+        "Immune to necrotic damage and several conditions",
+        "Can climb difficult surfaces like ceilings without checks",
+        "Swarm ability allows it to occupy the same space as other creatures",
+        "Infected creatures smell of rot, making them easier to locate",
+        "Damage dealt decreases when the swarm is at half hit points or lower"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large decaying ooze that spreads disease",
+        "menacing ooze in necrotic environments",
+        "creature with devastating diseased bites",
+        "swarm of deadly rotting ooze",
+        "infection-causing ooze creature"
+    ]
+}

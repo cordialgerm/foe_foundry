@@ -1,0 +1,25 @@
+{
+    "name": "Flesh Guardian",
+    "queries": [
+        {
+            "query": "construct creature with lightning absorption and berserk state",
+            "variant": "creature that is a construct and can absorb lightning while going berserk"
+        },
+        {
+            "query": "medium construct with high hit points and low armor class",
+            "variant": "medium creature construct that has low AC but high HP"
+        },
+        {
+            "query": "animated protector immune to poison and charm",
+            "variant": "protector that is animated and immune to charm and poison"
+        },
+        {
+            "query": "creature that can hurl objects and has elemental resistance",
+            "variant": "being that can throw objects and is resistant to elements"
+        },
+        {
+            "query": "guardian that sees in darkness and has multiattack",
+            "variant": "darkvision guardian with multiple attacks"
+        }
+    ]
+}

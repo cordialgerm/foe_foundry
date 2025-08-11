@@ -1,0 +1,49 @@
+{
+    "name": "Mngwa",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "stealthy",
+        "melee"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "formidable"
+    ],
+    "description": "The Mngwa is a medium-sized aberration with a distinctive Ethereal Coat that enhances its defenses. It possesses sharp claws and a powerful bite, accentuated by its grey smoke visual effect when shifting between planes.",
+    "memorable": "Its ability to communicate with feline creatures and its Ethereal Step provide unique tactical advantages.",
+    "goals": "The Mngwa typically seeks to dominate in combat, utilizing its stealth and agility to ambush foes.",
+    "relations": "May be found alongside other aberrations or in areas populated by feline species.",
+    "environment": "Typically encountered in areas with a mix of the Material and Ethereal Planes.",
+    "strengths": "Notably high Strength and Dexterity scores, strong melee capabilities, and use of stealth.",
+    "weaknesses": "Limited ranged capabilities and low Intelligence, which affects strategic maneuvering.",
+    "attacks": "Utilizes a Multiattack, striking with a powerful Ethereal Bite and slashing Claws.",
+    "most_powerful_ability": "Ethereal Step allows it to shift between planes, providing tactical movement options.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting advantage on Perception checks that rely on smell.",
+    "skills": "Has proficiency in Perception and Stealth, enhancing its tracking and ambush abilities.",
+    "additional_information": [
+        "Ethereal Sight enables it to see into the Ethereal Plane.",
+        "Feline Passivism prevents feline attacks unless coerced.",
+        "Pack Tactics boosts offensive potential when allies are present.",
+        "Running Leap allows impressive jumping abilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning medium-sized aberration with strong melee",
+        "agile monster that jumps great distances",
+        "creature that can shift between planes and confuse enemies",
+        "monster that communicates with felines and uses stealth",
+        "bruiser with high Strength and Dexterity scores"
+    ]
+}

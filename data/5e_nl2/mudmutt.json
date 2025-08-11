@@ -1,0 +1,53 @@
+{
+    "name": "Mudmutt",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., swim 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "amphibious",
+        "stealthy",
+        "tank",
+        "thunder"
+    ],
+    "adjectives": [
+        "brutish",
+        "agile",
+        "powerful"
+    ],
+    "description": "The Mudmutt is a large, amphibious creature well-suited for both land and water environments. It has strong physical attributes, particularly in Strength and Dexterity, and appears powerful and menacing.",
+    "memorable": "The Mudmutt's distinctive ability to leap away from danger without provoking attacks and its stunning Sonic Croak make it a formidable ambush predator.",
+    "goals": "To ambush prey and engage in coordinated attacks with allies.",
+    "relations": "Often found in groups, relies on teamwork and can be encountered alongside other swamp or ambush creatures.",
+    "environment": "Prefers swampy areas where it can use its camouflage and amphibious nature to its advantage.",
+    "strengths": "High Strength and Dexterity enhance melee capabilities and evade attacks, while pack tactics improve its combat effectiveness.",
+    "weaknesses": "Extremely low Intelligence and Charisma scores indicate a lack of cunning or social interaction skills.",
+    "attacks": "Employs a combination of Bite, Kick, and Sticky Tongue attacks, capable of pulling targets closer, along with a strong area effect attack called Sonic Croak.",
+    "most_powerful_ability": "Sonic Croak, which can stun multiple enemies and deals thunder damage, especially effective in water.",
+    "equipment": null,
+    "senses": "Possesses darkvision allowing it to see in darkness up to 60 feet, with a passive Perception of 14.",
+    "skills": "Has proficiency in stealth in swampy areas, providing advantage on Dexterity (Stealth) checks.",
+    "additional_information": [
+        "Adaptable to both aquatic and terrestrial combat.",
+        "Uses ambush tactics effectively when working in groups.",
+        "Can jump impressive distances, enhancing its mobility in combat.",
+        "Resistant to thunder damage, giving it an edge against certain attacks.",
+        "Low intelligence reflects its brutish nature, impacting its strategic capabilities."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush creature with strong melee attacks",
+        "swamp monster that can swim and jump",
+        "large agile creature with stunning croak attack",
+        "brutish monster that excels in group tactics",
+        "mud creature with powerful thunder abilities"
+    ]
+}

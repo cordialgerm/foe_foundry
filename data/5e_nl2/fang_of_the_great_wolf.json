@@ -1,0 +1,52 @@
+{
+    "name": "Fang of the Great Wolf",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "fast mover with 50 feet speed",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "ferocious",
+        "grappler"
+    ],
+    "adjectives": [
+        "large",
+        "ferocious",
+        "cunning",
+        "tactical"
+    ],
+    "description": "A large, formidable creature resembling a wolf, it possesses significant physical strength and resilience, with sharp fangs and a predatory appearance.",
+    "memorable": "Its ability to grow in size and swallow prey makes it a menacing opponent.",
+    "goals": "Predation and dominance over its territory and foes.",
+    "relations": "Related to other large predatory creatures, often encountered in packs.",
+    "environment": "Typically found in forests or mountainous regions.",
+    "strengths": "High hit points, exceptional melee attacks, and the ability to grapple foes.",
+    "weaknesses": "Low intelligence and charisma, reliance on melee combat, limited damage resistances.",
+    "attacks": "Powerful bite attack that deals piercing damage, can grapple and restrain smaller targets.",
+    "most_powerful_ability": "Might of the Great Wolf allows it to enlarge itself and swallow prey.",
+    "senses": "Possesses keen hearing and smell, granting advantage on Perception checks related to these senses.",
+    "skills": "Proficient in perception, allowing it to effectively identify threats in its surroundings.",
+    "additional_information": [
+        "Grapples Medium or smaller creatures with its bite.",
+        "Can only swallow one creature at a time.",
+        "Swallowed creatures take acid damage while inside.",
+        "Releases swallowed creatures upon death.",
+        "Has damage resistance against cold."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large wolf-like creature with swallowing ability",
+        "ferocious predator that grapples and restrains",
+        "cunning beast that grows in size during combat",
+        "wolf monstrosity that uses keen hearing to hunt",
+        "tactical large creature with significant hit points"
+    ]
+}

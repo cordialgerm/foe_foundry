@@ -1,0 +1,51 @@
+{
+    "name": "Hierophant Lich",
+    "creature_type": "Undead",
+    "alignment": "any evil alignment",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "lich",
+        "undead",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "powerful"
+    ],
+    "description": "The Hierophant Lich is a skeletal figure draped in tattered, ancient robes, emanating an aura of dark magic. It possesses a glowing, malevolent gaze and wields necromantic powers.",
+    "memorable": "It can return to life unless its sacred vessel is destroyed, making it a persistent threat.",
+    "goals": "To manipulate the living and exert control over undead minions.",
+    "relations": "Often commands lesser undead and is sought by those desiring dark knowledge.",
+    "environment": "Typically found in ancient ruins, crypts, or dark temples, often where dark rituals are performed.",
+    "strengths": "Resistance to cold, lightning, and necrotic damage; can evade being turned.",
+    "weaknesses": "Average physical abilities make it less effective in direct melee combat.",
+    "attacks": "Uses Unholy Smite to inflict physical and necrotic damage while potentially charming the target.",
+    "most_powerful_ability": "Rejuvenation allows it to return to life after being destroyed.",
+    "senses": "Has truesight out to 60 feet and a passive Perception of 19, allowing it to detect unseen threats.",
+    "skills": "Highly proficient in Insight and Perception, making it adept at sensing danger and understanding others.",
+    "additional_information": [
+        "Possesses Legendary Resistance, allowing it to succeed on failed saving throws.",
+        "Can levitate, making it difficult to target.",
+        "Has a wide array of powerful spells at its disposal.",
+        "Can instill fear in adversaries with its Damnation ability.",
+        "Charms opponents, forcing them to become allies temporarily."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "A 9th-level spellcaster using Wisdom with a spell save DC of 17, capable of casting control and offense spells.",
+    "test_queries": [
+        "undead spellcaster with resurrection ability",
+        "strong lich that manipulates the living",
+        "creature with truesight and necromantic powers",
+        "lich that can charm and levitate",
+        "powerful undead with wide spell selection"
+    ]
+}

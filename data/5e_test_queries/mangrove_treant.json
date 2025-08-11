@@ -1,0 +1,25 @@
+{
+    "name": "Mangrove Treant",
+    "queries": [
+        {
+            "query": "huge plant creature in coastal regions with high strength and resilience",
+            "variant": "massive plant monster found near coastlines with robust strength and durability"
+        },
+        {
+            "query": "treant that can summon mosquitos and blend into its environment",
+            "variant": "treant able to call upon swarms of mosquitos and disguise itself within nature"
+        },
+        {
+            "query": "formidable treant protector of mangrove forests with high hit points",
+            "variant": "powerful treant guardian of mangrove habitats with substantial health"
+        },
+        {
+            "query": "plant monster that uses roots to avoid being knocked over and deals double damage to structures",
+            "variant": "vegetation creature that employs its roots to stay upright and inflicts double harm to objects"
+        },
+        {
+            "query": "treant with average intelligence that communicates with insects and has poor agility",
+            "variant": "treant possessing moderate intellect that converses with bugs and exhibits low dexterity"
+        }
+    ]
+}

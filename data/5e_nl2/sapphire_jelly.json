@@ -1,0 +1,51 @@
+{
+    "name": "Sapphire Jelly",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 144,
+    "ac": 9,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "cold",
+        "transformation"
+    ],
+    "adjectives": [
+        "formidable",
+        "gelatinous",
+        "freezing"
+    ],
+    "description": "The Sapphire Jelly is a gelatinous creature that can absorb significant damage and exhibits a freezing capability. It moves with a slimy form and can engulf its foes.",
+    "memorable": "Its ability to transform slain humanoids into glacial corrupters adds a unique layer of danger to encounters.",
+    "goals": "Typically seeks to engulf and freeze targets.",
+    "relations": "Could be encountered alongside other oozes or cold-themed creatures.",
+    "environment": "Often found in cold or icy environments.",
+    "strengths": "Impressive Constitution grants it resistance to various conditions and cold damage immunity.",
+    "weaknesses": "Low Dexterity makes it less capable of dodging attacks.",
+    "attacks": "Utilizes Freezing Slam attacks that hit with bludgeoning and cold damage.",
+    "most_powerful_ability": "Icy Transformation that turns slain humanoids into glacial corrupters after a week.",
+    "senses": "Possesses blindsight within 60 feet, allowing it to sense its surroundings without sight.",
+    "skills": null,
+    "additional_information": [
+        "Immunities to cold and poison damage.",
+        "Can move through narrow spaces easily.",
+        "Has a passive Perception score of 11.",
+        "Engulfs creatures, causing cold damage and restraining them.",
+        "Multiattack feature allows for significant damage output."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gelatinous monster that freezes enemies",
+        "formed of jelly and transforms foes into corrupters",
+        "cold immune ooze with high hit points",
+        "multiattack ooze creature with freezing abilities",
+        "monster that engulfs and restrains adventurers"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Hundun",
+    "queries": [
+        {
+            "query": "large celestial being that can fly and uses radiant damage",
+            "variant": "big celestial creature that flies and inflicts radiant damage"
+        },
+        {
+            "query": "chaotic goodness creature with high wisdom and magical resistance",
+            "variant": "creature of chaotic goodness with elevated wisdom and magic resistance"
+        },
+        {
+            "query": "monster immune to psychic and acid damage that also casts spells",
+            "variant": "creature immune to acid and psychic damage which can also cast spells"
+        },
+        {
+            "query": "heavy hitting celestial monster with extraordinary mobility and multiple attacks",
+            "variant": "strong celestial creature with exceptional mobility and several attacks"
+        },
+        {
+            "query": "Hundun abilities for combat including Motivating Babble and Radiant Fists",
+            "variant": "abilities of Hundun in battle including Motivating Babble and Radiant Fists"
+        }
+    ]
+}

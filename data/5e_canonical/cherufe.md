@@ -1,6 +1,8 @@
 <MonsterName/>Cherufe</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>14</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Cherufe is a formidable and massive elemental creature with a chaotic evil alignment, boasting powerful offensive and defensive capabilities. With a high armor class of 19 and substantial hit points totaling 161, it can withstand significant damage while dealing devastating attacks to its foes. The Cherufe excels in close-quarters combat, utilizing slam attacks and its ability to manipulate magma. Its strengths lie in its formidable physical prowess, impressive speed when taking fire damage, and its ability to create dangerous fissures in the ground to trap or hinder enemies. However, it has weaknesses, including low dexterity and intelligence scores, making it less agile and less cunning compared to other creatures. Overall, the Cherufe represents a significant challenge for adventurers, requiring strategic planning and teamwork to overcome its formidable powers. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Quake ability requires a recharge period of 6 rounds. By slamming i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cherufe
 
 *Huge* *Elemental* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Quake (Recharge 6):** The cherufe slams its fists into the ground, shaking the terrain within 60 feet of it. Each creature standing on the ground in that area must make a DC 18 Dexterity saving throw. On a failure, the creature takes 45 (10d8) bludgeoning damage and is knocked prone. On a success, the creature takes half the damage and isn’t knocked prone.
 
 
+</statblock>
 
 

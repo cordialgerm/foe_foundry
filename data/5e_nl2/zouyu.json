@@ -1,0 +1,52 @@
+{
+    "name": "Zouyu",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 114,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "60 feet walking speed allows efficient mobility",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "chaotic",
+        "good"
+    ],
+    "adjectives": [
+        "huge",
+        "mobile",
+        "wild",
+        "chaotic"
+    ],
+    "description": "A huge creature with a vibrant, multi-stranded tail that exudes wild energy and unpredictable tactics.",
+    "memorable": "The Zouyu can alter luck, impacting the outcome of critical rolls during combat.",
+    "goals": "Typically seeks to support allies in battle while disrupting enemies with its luck-manipulating abilities.",
+    "relations": "Might be related or found with other chaotic good creatures.",
+    "environment": "Usually found in wild or untamed areas where chaos thrives.",
+    "strengths": "Exceptional Dexterity allows it to dodge effectively, and its high Armor Class and hit points provide resilience.",
+    "weaknesses": "Vulnerable to thunder damage, taking double damage from such attacks.",
+    "attacks": "Utilizes a multiattack with a bite and claw attacks, employing quick and strategic movements.",
+    "most_powerful_ability": "Alter Luck can significantly shift the outcome of combat by granting advantage to allies or imposing disadvantage on enemies.",
+    "equipment": null,
+    "senses": "Possesses keen sight and smell, granting advantage on Perception checks related to these senses.",
+    "skills": "Proficient in stealth and perception, making it adept at remaining unnoticed.",
+    "additional_information": [
+        "Can run an astonishing 310 miles in a day when at a fast pace.",
+        "Ability to knock enemies prone if charging and hitting with a claw attack.",
+        "High Dexterity saving throw bonus of +10.",
+        "Unique combination of tactical support and resilient combat abilities."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic good huge wild energy creature",
+        "mobile skirmisher that alters luck in combat",
+        "Zouyu abilities to support allies and disrupt enemies",
+        "huge creature with exceptional Dexterity and chaotic traits",
+        "thunder vulnerability with strong perception skills"
+    ]
+}

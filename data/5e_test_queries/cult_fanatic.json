@@ -1,0 +1,25 @@
+{
+    "name": "Cult Fanatic",
+    "queries": [
+        {
+            "query": "dark robe-wearing humanoid that serves a sinister deity",
+            "variant": "humanoid in dark robes that worships a dark god"
+        },
+        {
+            "query": "fanatic spellcaster skilled in deception and persuasion",
+            "variant": "cultist spellcaster good at manipulation and charm"
+        },
+        {
+            "query": "medium humanoid that uses necrotic magic and wears leather armor",
+            "variant": "medium creature in leather armor with necromantic powers"
+        },
+        {
+            "query": "cultist capable of healing allies and harming enemies",
+            "variant": "cult fanatic that can support teammates and strike foes"
+        },
+        {
+            "query": "zealous worshipper capable of resisting charm effects",
+            "variant": "dedicated worshipper with resistance to charm spells"
+        }
+    ]
+}

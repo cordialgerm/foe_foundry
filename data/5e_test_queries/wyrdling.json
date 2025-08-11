@@ -1,0 +1,25 @@
+{
+    "name": "Wyrdling",
+    "queries": [
+        {
+            "query": "humanoid creature with psychic abilities and good perception",
+            "variant": "humand creature with good perception and psychic abilities"
+        },
+        {
+            "query": "creature that manipulates fate and has high wisdom",
+            "variant": "creature with high wisdom that can manipulate fate"
+        },
+        {
+            "query": "medium-sized monster that rolls two dice for initiative",
+            "variant": "medium monster that takes higher number when rolling two dice for initiative"
+        },
+        {
+            "query": "Wyrdling abilities related to fortune and doom",
+            "variant": "abilities of Wyrdling concerning fortune and doom"
+        },
+        {
+            "query": "creature that deals psychic damage and communes with fate",
+            "variant": "monster that communes with fate and deals psychic damage"
+        }
+    ]
+}

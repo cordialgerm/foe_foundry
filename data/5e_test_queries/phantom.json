@@ -1,0 +1,25 @@
+{
+    "name": "Phantom",
+    "queries": [
+        {
+            "query": "undead creature that can paralyze and flies through walls",
+            "variant": "creature that is undead, can paralyze, and flies through walls"
+        },
+        {
+            "query": "ghostly being with chilling abilities and weaknesses in sunlight",
+            "variant": "chilling ghost with abilities and weaknesses in sunlight"
+        },
+        {
+            "query": "medium phantom with necrotic attacks that uses fear",
+            "variant": "necrotic attack phantom that is medium and uses fear"
+        },
+        {
+            "query": "spooky creature immune to cold and has frightening moans",
+            "variant": "scary creature immune to cold with frightening moans"
+        },
+        {
+            "query": "spectral enemy that can hover and is weak in daylight",
+            "variant": "hovering spectral enemy that is vulnerable in daylight"
+        }
+    ]
+}

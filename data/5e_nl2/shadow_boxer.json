@@ -1,0 +1,51 @@
+{
+    "name": "Shadow Boxer",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "climb 30 ft. walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "trickster",
+        "agile",
+        "shadow manipulation"
+    ],
+    "adjectives": [
+        "chaotic",
+        "deceptive",
+        "cunning"
+    ],
+    "description": "The Shadow Boxer is a small, agile fey creature known for its chaotic nature and fast movements. It embodies a trickster-like persona with unique abilities that manipulate shadows.",
+    "memorable": "The ability to create shadows that incapacitate enemies and force them to follow its movements is particularly memorable.",
+    "goals": "To confuse and control the battlefield, leveraging its agility and shadow abilities to outmaneuver foes.",
+    "relations": "Often associated with other fey creatures and can communicate magically with cats, indicating a bond with natural beings.",
+    "environment": "Typically found in areas with shadows, such as wooded forests or any dimly lit environment.",
+    "strengths": "Excels in Dexterity and Charisma, making it formidable in stealth and agility-based actions.",
+    "weaknesses": "Vulnerable to area effects due to its lesser durability.",
+    "attacks": "Utilizes claw and bite attacks, with opportunities to knock foes prone or attack while invisible.",
+    "most_powerful_ability": "Project Silhouette allows the Shadow Boxer to incapacitate foes using shadows and manipulate their movements.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, indicating good awareness of its surroundings.",
+    "skills": "Proficient in Stealth and Perception, providing it with a +5 modifier in both.",
+    "additional_information": [
+        "Immune to being charmed",
+        "Uses Invisibility for tactical advantage",
+        "Can pounce on enemies for additional attacks",
+        "Shadow projection can control enemy positioning",
+        "Has telepathic communication with cats"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small fey trickster with shadow abilities",
+        "agile creature that manipulates shadows",
+        "cunning monster that knocks enemies prone",
+        "fey creature that creates incapacitating shadows",
+        "shadow manipulating creature with teleportation tactics"
+    ]
+}

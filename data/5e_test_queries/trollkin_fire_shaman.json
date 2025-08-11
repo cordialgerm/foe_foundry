@@ -1,0 +1,25 @@
+{
+    "name": "Trollkin Fire Shaman",
+    "queries": [
+        {
+            "query": "fire magic humanoid that can regenerate health",
+            "variant": "humanoid that regenerates health and uses fire magic"
+        },
+        {
+            "query": "creature with thick skin and powerful fire attacks",
+            "variant": "powerful fire attacking creature with thick skin"
+        },
+        {
+            "query": "medium humanoid vulnerable to acid living in a fire environment",
+            "variant": "medium humanoid that is vulnerable to acid and lives in fire"
+        },
+        {
+            "query": "Trollkin with fire spells and a teleportation ability",
+            "variant": "fire spell-wielding Trollkin that can teleport"
+        },
+        {
+            "query": "shaman that uses ranged fire attacks and melee combat",
+            "variant": "shaman using melee combat and ranged fire attacks"
+        }
+    ]
+}

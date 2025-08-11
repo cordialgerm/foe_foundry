@@ -1,0 +1,52 @@
+{
+    "name": "Animated Offal",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 8,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "regeneration",
+        "necrotic",
+        "grapple"
+    ],
+    "adjectives": [
+        "massive",
+        "resilient",
+        "formidable"
+    ],
+    "description": "The Animated Offal is a massive ooze with a size that dominates the battlefield. Its form is a grotesque conglomeration of organic matter, exuding a sense of decay and menace.",
+    "memorable": "The Animated Offal can regenerate health by consuming others, absorb healing energy, and fully absorb creatures it grapples, potentially leading to the creation of additional Animated Offals.",
+    "goals": "Typically seeks to absorb and consume other creatures, particularly those that provide healing effects.",
+    "relations": "May be encountered with other oozes or similar aberrant creatures.",
+    "environment": "Often found in decaying or cursed areas where it can feed on remnants of life.",
+    "strengths": "High hit points and the ability to regenerate, along with immunities to various conditions and damage types.",
+    "weaknesses": "Low Armor Class makes it vulnerable to physical attacks if approached.",
+    "attacks": "Utilizes Pseudopod attacks that deal both bludgeoning and necrotic damage, with the ability to grapple opponents.",
+    "most_powerful_ability": "The ability to absorb a grappled creature, dealing necrotic damage while regaining hit points and potentially creating another Animated Offal.",
+    "senses": "Possesses blindsight up to 120 feet, allowing it to navigate its surroundings despite blindness.",
+    "skills": "Has a moderate perception capability, indicated by a +2 modifier.",
+    "additional_information": [
+        "Immune to necrotic damage and several conditions, including being blinded and frightened.",
+        "Can passively sense healing spells and potions within 120 feet.",
+        "Moves through spaces as narrow as 6 inches due to its flowing nature.",
+        "Does not require sleep, allowing it to remain active continuously.",
+        "Can potentially lead to the creation of additional Animated Offals if it absorbs too much life force from its victims."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive ooze creature",
+        "regenerative ooze monster",
+        "necrotic damage absorber",
+        "grotesque creature absorbing opponents",
+        "ooze that can regenerate health"
+    ]
+}

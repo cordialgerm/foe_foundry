@@ -1,0 +1,56 @@
+{
+    "name": "Snow Queen",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 182,
+    "ac": 17,
+    "srd": false,
+    "cr": "16",
+    "movement": "walking speed of 40 feet, climbing speed of 20 feet",
+    "role": null,
+    "tags": [
+        "Fey",
+        "Ice",
+        "Cold",
+        "Magic"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "agile",
+        "cunning",
+        "winter",
+        "cold"
+    ],
+    "description": "The Snow Queen embodies the essence of winter, with icy features and a commanding presence. She wields weapons that are imbued with cold magic.",
+    "memorable": "Her ability to petrify foes in ice with her Cold Snap ability and manipulate the battlefield with snow and frost makes her a unique challenge.",
+    "goals": "To manipulate and defeat her enemies while maintaining her dominion over winter.",
+    "relations": "Potentially serves or collaborates with other ice-themed creatures or powerful Fey beings.",
+    "environment": "Typically found in cold, wintry landscapes or icy realms.",
+    "strengths": "Immune to cold damage and resistant to nonmagical physical attacks; possesses exceptional Dexterity and Charisma.",
+    "weaknesses": "Vulnerable to fire damage which can significantly affect her in combat.",
+    "attacks": "Make two melee attacks with claws or shoot ice bolts that deal cold damage and can reduce enemy speed.",
+    "most_powerful_ability": "Cold Snap causes severe cold damage and can petrify enemies in ice.",
+    "equipment": null,
+    "senses": "Has blindsight up to 10 feet, allowing her to detect creatures even in near darkness.",
+    "skills": "Possesses high perception skills with a +10 modifier, allowing her to be very aware of her surroundings.",
+    "additional_information": [
+        "Can move across icy terrain effortlessly with Snow Walk.",
+        "Her Icy Weapons ability adds extra cold damage to attacks.",
+        "Has Legendary Resistance to succeed on saving throws despite failure.",
+        "Her Snowsight allows her to see through difficult icy visibility.",
+        "Can inflict vulnerability to cold damage with her abilities."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful winter fey with ice abilities",
+        "fey creature that manipulates cold and ice",
+        "queen of winter that can blind and petrify",
+        "agile fey ruler with cold powers",
+        "cold damage immune fey with legendary resistance"
+    ]
+}

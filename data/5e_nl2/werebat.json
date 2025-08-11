@@ -1,0 +1,51 @@
+{
+    "name": "Werebat",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 50 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "lycanthrope",
+        "flying",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "versatile"
+    ],
+    "description": "The Werebat is a medium humanoid creature embodying traits of both a human and a bat, known for its ability to fly quickly and stealthily.",
+    "memorable": "Its ability to shapeshift and its curse inflicting bite attack make it a notable adversary.",
+    "goals": "To stalk its prey and surprise enemies under the cover of darkness.",
+    "relations": "Could be encountered alongside other lycanthropic creatures or nocturnal predators.",
+    "environment": "Typically found in dark environments, often in caves or ruined structures.",
+    "strengths": "Strong against nonmagical attacks unless made with silver, and has a significant speed advantage while flying.",
+    "weaknesses": "Sensitive to sunlight, suffering disadvantage on attack rolls and perception checks when exposed.",
+    "attacks": "Utilizes a multiattack feature with mace, bite, and claw attacks, each inflicting significant damage.",
+    "most_powerful_ability": "The bite attack can curse humanoids with werebat lycanthropy, posing a serious threat beyond physical damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to navigate in darkness effectively.",
+    "skills": "Has proficiency in stealth and perception, making it adept at ambushing foes.",
+    "additional_information": [
+        "Ability to shapeshift into a bat-humanoid hybrid or a Medium-sized bat.",
+        "In bat form, it cannot communicate.",
+        "Advantage on sound-based perception checks due to keen hearing.",
+        "Significant mobility due to high flying speed.",
+        "Can endure several hits in battle due to its hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dangerous flying humanoid with bat traits",
+        "cursed creature capable of shapeshifting",
+        "creature vulnerable to sunlight with echolocation",
+        "stealthy monster that can fly and bite",
+        "humanoid that deals lycanthropy with its bite"
+    ]
+}

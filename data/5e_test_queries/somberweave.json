@@ -1,0 +1,25 @@
+{
+    "name": "Somberweave",
+    "queries": [
+        {
+            "query": "shadow-dwelling fey monster that can manipulate webs",
+            "variant": "fey creature that can manipulate webs and lives in the shadows"
+        },
+        {
+            "query": "dark fey creature good at stealth and climbing",
+            "variant": "stealthy dark fey that excels in climbing"
+        },
+        {
+            "query": "creature immune to poison with web-based abilities",
+            "variant": "monster that has web abilities and is immune to poison"
+        },
+        {
+            "query": "neutral evil fey that ensnares its prey",
+            "variant": "fey monster that is neutral evil and traps its victims"
+        },
+        {
+            "query": "medium-sized creature with shadow manipulation and web sense",
+            "variant": "creature of medium size that can manipulate shadows and has web sense"
+        }
+    ]
+}

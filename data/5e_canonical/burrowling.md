@@ -1,6 +1,8 @@
 <MonsterName/>Burrowling</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>27</HP>
 <summary>The Burrowling is a small humanoid creature that thrives underground and exhibits a lawful neutral alignment. Its notable strengths lie in its agility and team-based abilities, which make it a formidable opponent when paired with allies. With a relatively low armor class of 13 and 27 hit points, Burrowlings can be overwhelmed, though their burrowing capability allows them to navigate through the terrain effectively. They possess high Dexterity, granting them a good modifier of +3, which enhances their attack rolls and skills. Overall, Burrowlings excel in cooperative combat situations, utilizing pack tactics to gain advantages against their foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ During its action sequence, the Burrowling can perform a "Multiattack," using bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Burrowling
 
 *Small* *Humanoid* *Lawful Neutral*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 - **Sling:** Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.
+</statblock>
 
 

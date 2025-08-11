@@ -1,0 +1,52 @@
+{
+    "name": "Brass Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 16,
+    "ac": 16,
+    "srd": true,
+    "cr": "1",
+    "movement": "30 ft. walk, 15 ft. burrow, 60 ft. fly",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "fire",
+        "sleep"
+    ],
+    "adjectives": [
+        "playful",
+        "cunning",
+        "fiery"
+    ],
+    "description": "The Brass Dragon Wyrmling is a medium-sized dragon noted for its bright brass scales and fiery breath. It has a playful demeanor and enjoys tricks.",
+    "memorable": "Known for its fiery breath and sleep-inducing gas, making it a versatile opponent.",
+    "goals": "To play tricks on travelers and guards while showcasing its cunning and magical abilities.",
+    "relations": "Might be encountered alongside other chromatic dragons or within dragon lairs.",
+    "environment": "Typically found in warm, hilly regions or near molten glass formations.",
+    "strengths": "Immune to fire damage and equipped with deadly breath weapons.",
+    "weaknesses": "Lower hit points compared to more mature dragons, making it vulnerable to strong attacks.",
+    "attacks": "Utilizes bite and claw attacks, alongside powerful breath weapons for crowd control.",
+    "most_powerful_ability": "Breath weapons, allowing it to deal fire damage or induce sleep in foes.",
+    "senses": "Has blindsight up to 10 feet, enhancing its ability to detect threats in close proximity.",
+    "skills": "Skilled in arcana, history, nature, and stealth, showing a good level of intelligence and awareness.",
+    "additional_information": [
+        "Self-sufficient, requiring minimal food and water each day.",
+        "Possesses a Pounce ability to knock foes prone for additional attacks.",
+        "Can perform a Multiattack for increased damage output.",
+        "Features a Fire Breath that can deal area damage.",
+        "Capable of incapacitating foes with its Sleep Breath."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium dragon that breathes fire and gas",
+        "playful dragon with fire powers",
+        "cunning dragon with breath weapons",
+        "dragon with the ability to knock foes prone",
+        "fiery dragon wyrmling that loves tricks"
+    ]
+}

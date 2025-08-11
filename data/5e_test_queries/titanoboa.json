@@ -1,0 +1,25 @@
+{
+    "name": "Titanoboa",
+    "queries": [
+        {
+            "query": "gargantuan snake that can swallow its prey",
+            "variant": "huge snake that can eat its enemies"
+        },
+        {
+            "query": "massive constrictor that stuns enemies with scales",
+            "variant": "large constrictor that can stun foes with its shimmering scales"
+        },
+        {
+            "query": "powerful predator with multiple bite attacks in combat",
+            "variant": "strong hunter that has several bite attacks during a fight"
+        },
+        {
+            "query": "snake with low dexterity that lives in wilds",
+            "variant": "serpent with poor agility that resides in nature"
+        },
+        {
+            "query": "Titanoboa special abilities and its performance in battle",
+            "variant": "Titanoboa's unique powers and how it fights"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Enchanter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>12</AC>
+<HP/>58</HP>
 <summary>The Enchanter is a Medium humanoid with a versatile role in combat, primarily focused on manipulating and controlling opponents through powerful enchantments and spells. With a Challenge Rating of 7, it boasts notable strengths, including high Intelligence and Charisma, making it an exceptional spellcaster; this allows for effective crowd control and damage output. Its ability to charm and incapacitate enemies is formidable, while it benefits from enhanced defenses against charm effects itself. However, its defenses are somewhat limited with an Armor Class of 12, which can be bolstered to 15 when using mage armor. The Enchanter has moderate hit points, totaling 58, making it resilient but not invulnerable. Its array of spells, ranging from defensive measures to debilitating enchantments, provides it significant tactical versatility, but it relies heavily on these spells to maximize its effectiveness in combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Enchanter also possesses the Beguiling Parry reaction, which it can use when
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Enchanter
 
 *Medium* *Humanoid* *any alignment*
@@ -65,5 +68,6 @@ Enchantment spell of 1st level or higher
 - **Beguiling Parry (Recharge 4-6):** When a creature within 30 feet that the enchanter can see targets it with an attack, the enchanter can stop the attacker with a glance. The attacker must succeed on a DC 15 Charisma saving throw or immediately stop the attack. The attacker can't attack the enchanter again until the start of its next turn.
 
 
+</statblock>
 
 

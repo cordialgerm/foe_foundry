@@ -1,0 +1,25 @@
+{
+    "name": "Adult Green Dragon",
+    "queries": [
+        {
+            "query": "huge dragon that breathes poisonous gas and lives in forests",
+            "variant": "large dragon that can exhale poison gas and dwells in woods"
+        },
+        {
+            "query": "cunning green dragon with scales that blend into trees and uses mind games",
+            "variant": "deceptive green dragon with scales camouflaged by foliage that utilizes psychological tactics"
+        },
+        {
+            "query": "high hit point dragon with poisonous breath and territorial nature",
+            "variant": "dragon with a lot of health that has a poison breath weapon and is very territorial"
+        },
+        {
+            "query": "smart dragon that can manipulate enemies and flies through the air",
+            "variant": "intelligent dragon that can deceive foes and can fly"
+        },
+        {
+            "query": "dragon that can swim, has good perception, and uses fright tactics in battle",
+            "variant": "dragon capable of swimming that possesses excellent perception and employs fear tactics while fighting"
+        }
+    ]
+}

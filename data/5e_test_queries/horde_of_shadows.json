@@ -1,0 +1,25 @@
+{
+    "name": "Horde of Shadows",
+    "queries": [
+        {
+            "query": "large undead creature that thrives in darkness and can move through walls",
+            "variant": "big undead monster that thrives in dark areas and can pass through narrow spaces"
+        },
+        {
+            "query": "shadowy horde that deals necrotic damage and is vulnerable to radiant",
+            "variant": "shadow mass that inflicts necrotic harm and has a weakness to radiant attacks"
+        },
+        {
+            "query": "undead group that curses targets and splits into shadows when defeated",
+            "variant": "group of undead that can curse opponents and turns into shadows when killed"
+        },
+        {
+            "query": "creature with stealth abilities that suffers in sunlight and has high hit points",
+            "variant": "monster that excels in stealth, is weak in daylight, and has a lot of hit points"
+        },
+        {
+            "query": "mass of shadows with multiattack and special amorphous ability",
+            "variant": "swarm of shadows that can attack multiple times and has the ability to squeeze through narrow openings"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Cloud Giant",
+    "queries": [
+        {
+            "query": "towering giant with cloud powers that lives in floating castles",
+            "variant": "huge giant that can control clouds and resides in sky castles"
+        },
+        {
+            "query": "pale giant with weather control abilities living among clouds",
+            "variant": "translucent giant that can summon storms and dwells in the clouds"
+        },
+        {
+            "query": "spellcasting giant that uses fog and lightning",
+            "variant": "weather-controlling giant with fog and thunder spells"
+        },
+        {
+            "query": "aristocratic giant that treasures gemstones and rules from the sky",
+            "variant": "noble giant who values precious gems and reigns from above"
+        },
+        {
+            "query": "giant with high strength and powerful spells creating foggy battles",
+            "variant": "strong giant casting formidable spells to obscure the battlefield"
+        }
+    ]
+}

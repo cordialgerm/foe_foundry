@@ -1,0 +1,54 @@
+{
+    "name": "Birgemon Seal",
+    "creature_type": "Aberration",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "aquatic",
+        "ice",
+        "snow"
+    ],
+    "adjectives": [
+        "slippery",
+        "resilient",
+        "tactical"
+    ],
+    "description": "The Birgemon Seal is a medium aberration adept at navigating aquatic environments and glaciers. It has a stout, rounded body akin to a seal, with smooth, glistening skin that adapts well to snowy terrains.",
+    "memorable": "Its ability to remain immobile on snow or ice provides tactical advantages, making it a challenging foe in icy environments.",
+    "goals": "Typically expected to hunt for food in icy waters or to defend its territory against intruders.",
+    "relations": "Often encountered near water bodies or snowy landscapes, potentially alongside other aquatic aberrations.",
+    "environment": "Primarily found in snowy regions, particularly in frozen lakes and coastal areas.",
+    "strengths": "Exceptional mobility in water with a swim speed of 60 feet and the ability to glide on snow and ice.",
+    "weaknesses": "Low Intelligence and Charisma limits its effectiveness in roles that require mental acuity or social interaction.",
+    "attacks": "Utilizes multiattack with a combination of biting, grappling with tendrils, and inflicting piercing damage with its maw.",
+    "most_powerful_ability": "The 'Frozen to the Spot' ability, allowing it to stay immovable in snowy terrain enhances its defensive capabilities.",
+    "equipment": null,
+    "senses": "Passive perception score of 13 indicates above-average awareness.",
+    "skills": "Possesses a perception skill at +1, showing average awareness of its surroundings.",
+    "additional_information": [
+        "Has damage resistances against acid and cold.",
+        "Can hold its breath for up to 90 minutes, advantageous during aquatic engagements.",
+        "Possesses a unique ability to 'Ice Slide' for enhanced mobility on snow.",
+        "The 'Reel' ability allows it to control and reposition grappled foes.",
+        "Medium-sized with notable Constitution and Dexterity stats."
+    ],
+    "damage_types": [
+        "acid",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical ice creature",
+        "aberration in snow",
+        "aquatic monster with grappling abilities",
+        "Birgemon Seal abilities",
+        "ice and water themed monster"
+    ]
+}

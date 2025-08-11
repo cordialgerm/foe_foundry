@@ -1,0 +1,51 @@
+{
+    "name": "Kaveph",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "melee",
+        "strong",
+        "combat"
+    ],
+    "adjectives": [
+        "huge",
+        "powerful",
+        "vulnerable to radiant"
+    ],
+    "description": "The Kaveph is a huge aberration known for its robust physical prowess, possessing a powerful build and the ability to perform devastating melee attacks.",
+    "memorable": "Its Rampage ability allows it to chain attacks if it reduces a target to 0 hit points, making it a relentless foe.",
+    "goals": "To dominate its foes in combat, using its strength and aggression to overpower enemies.",
+    "relations": "Often encountered by other aberrations or in the service of darker forces.",
+    "environment": "Typically lurks in dark, twisted locales where it can ambush unwary travelers.",
+    "strengths": "Exceptional strength allows for powerful melee attacks and high damage output.",
+    "weaknesses": "Vulnerable to radiant damage, which can significantly harm it.",
+    "attacks": "Multiattack for dual smash strikes and a ranged rock attack that deals high bludgeoning damage.",
+    "most_powerful_ability": "Rampage allows the Kaveph to move and attack again after defeating an enemy.",
+    "senses": "Possesses blindsight up to 90 feet, allowing it to navigate without sight.",
+    "additional_information": [
+        "Damage resistant to cold",
+        "Low intelligence affects social interactions",
+        "Ability to push targets with smash attacks",
+        "Can retaliate with a smash attack when dealt significant damage",
+        "Uses a unique language called Void Speech"
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with devastating melee attacks",
+        "powerful abomination that loves to smash",
+        "aberration that can attack multiple times",
+        "monster with blindsight and radiant vulnerability",
+        "combat-oriented creature with strong physical abilities"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Wyvern Knight",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 20,
+    "srd": false,
+    "cr": "5",
+    "movement": "walking speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "knight",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "tactical"
+    ],
+    "description": "A Medium-sized humanoid clad in plate armor and wielding a lance, the Wyvern Knight serves as a formidable opponent on the battlefield and displays an imposing demeanor.",
+    "memorable": "The Wyvern Knight can inflict poisons and has the tactical capability to protect allies with a special reaction.",
+    "goals": "To serve as a mounted warrior, exploiting its poisonous abilities and protecting allies in battle.",
+    "relations": "May command a war wyvern and likely interacts with other knightly or draconic beings.",
+    "environment": "Typically found in military encampments or regions where wyverns are common.",
+    "strengths": "High armor class and poison attacks make it a durable and dangerous opponent.",
+    "weaknesses": "Average Dexterity limits agility and it has disadvantage when attacking close targets.",
+    "attacks": "Utilizes a lance for melee attacks, long-range heavy crossbow shots, and a dagger for versatility, all enhanced with poison damage.",
+    "most_powerful_ability": "Multiattack that allows for two lance strikes and the ability to command a mount to attack.",
+    "equipment": "Wears plate armor and carries a lance, heavy crossbow, and dagger.",
+    "senses": "Exhibits passive Perception of 14, allowing for better detection of threats.",
+    "skills": "Proficient in Perception, providing an advantage in combat awareness.",
+    "additional_information": [
+        "Immune to poison damage and resistant to poison effects.",
+        "Has the Brave ability granting advantage against fear.",
+        "Carries a Ring of Feather Falling for safe descents.",
+        "Effective at protecting allies with the Protection reaction.",
+        "Wields a lance in one hand while mounted, allowing versatility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical knight with poisonous lance",
+        "humanoid knight riding a wyvern",
+        "durable armored knight with poison attacks",
+        "formidable knight with protection abilities",
+        "lawful evil creature commanding poisonous wyverns"
+    ]
+}

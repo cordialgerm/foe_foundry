@@ -1,0 +1,52 @@
+{
+    "name": "Truant Devourer",
+    "creature_type": "Undead",
+    "alignment": "any alignment (as its creator deity)",
+    "size": "Medium",
+    "hp": 156,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "average speed of 40 feet and ability to teleport",
+    "role": null,
+    "tags": [
+        "undead",
+        "necromancy",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "powerful",
+        "dangerous",
+        "stealthy"
+    ],
+    "description": "The Truant Devourer is a formidable undead entity that exudes dark intent, capable of becoming invisible and summoning ghostly skeletal claws to restrain and damage foes.",
+    "memorable": "Its ability to reduce opponents' maximum hit points with Life Drain makes it a particularly deadly foe.",
+    "goals": "Hunt and eliminate those deemed heretics by its creator deity.",
+    "relations": "May serve or be associated with other undead or dark religious figures.",
+    "environment": "Often found in areas of conflict or places where its creator deity's influence is strong.",
+    "strengths": "Possesses magic resistance and the ability to detect and track heretics effectively.",
+    "weaknesses": "Susceptible to radiant damage, and magic attacks that exceed its resistances can be particularly effective.",
+    "attacks": "Can make multiple melee attacks with its Devourer\u2019s Cleaver or cast Necrotic Bolt, inflicting necrotic damage.",
+    "most_powerful_ability": "Life Drain allows it to inflict necrotic damage and reduce maximum hit points of its target.",
+    "equipment": null,
+    "senses": "Has a heightened passive Perception of 18, enhancing its awareness.",
+    "skills": "Demonstrates proficiency in perception, providing an edge in detecting threats.",
+    "additional_information": [
+        "Can become invisible until it attacks or uses certain abilities.",
+        "Can teleport short distances to reposition during combat.",
+        "Resistant to being turned by clerics due to its Turn Resistance.",
+        "Does not require air, food, drink, or sleep as part of its Undead Nature.",
+        "Can summon grasping claws to restrain and damage multiple foes at once."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster that hunts heretics",
+        "invisible creature that drains life",
+        "powerful necrotic spellcaster undead",
+        "stealthy undead with grasping claws",
+        "monster that reduces maximum hit points"
+    ]
+}

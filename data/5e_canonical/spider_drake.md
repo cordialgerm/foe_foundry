@@ -1,6 +1,8 @@
 <MonsterName/>Spider Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Spider Drake is a formidable creature in Dungeons & Dragons, classified as a Large Dragon of lawful evil alignment. It possesses a combination of strengths that make it a challenging foe, including high armor class, significant hit points, and a versatile array of attacks. Its climbing and flying speed, coupled with its poison immunity, adds to its resilience in combat and makes it an unpredictable opponent. However, despite its impressive attributes, it is less effective in terms of intelligence and charisma, which can limit its tactical options in certain scenarios. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ The Web ability is a ranged attack with a +5 to hit and a range of 60/120 feet. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider Drake
 
 *Large* *Dragon* *lawful evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Web (Recharge 5-6):** Ranged Weapon Attack: +5 to hit, range 60/120 ft., one Large or smaller creature. Hit: The creature is restrained by webbing. As an action, the restrained creature can make a DC 16 Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage.
 
 
+</statblock>
 
 

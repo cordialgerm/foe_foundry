@@ -1,0 +1,25 @@
+{
+    "name": "Kikimora",
+    "queries": [
+        {
+            "query": "fey creature with teleportation abilities and strong persuasion skills",
+            "variant": "fey monster that has teleportation and great persuasion abilities"
+        },
+        {
+            "query": "medium-sized mischievous fey that can become invisible",
+            "variant": "medium fey that can turn invisible and loves mischief"
+        },
+        {
+            "query": "chaotic neutral fey that summons swarms and uses magic",
+            "variant": "chaotic fey creature that can summon swarms and casts magic"
+        },
+        {
+            "query": "stealthy monster with high charisma that loves to trick others",
+            "variant": "sneaky creature with a high charm ability that enjoys tricking others"
+        },
+        {
+            "query": "fey with high dexterity and magic resistance in combat",
+            "variant": "fey creature that has high dexterity and resists magic during battle"
+        }
+    ]
+}

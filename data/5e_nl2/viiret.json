@@ -1,0 +1,52 @@
+{
+    "name": "Viiret",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "disease",
+        "blinded",
+        "swallow"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Viiret is a large plant creature with formidable combat abilities, notable for its biting and vine attacks.",
+    "memorable": "Its ability to swallow enemies, blinding and restraining them, combined with its disease-related powers makes it a unique foe.",
+    "goals": "To incapacitate foes and spread disease while surviving in combat.",
+    "relations": "May be found in conjunction with other plant creatures or environmental threats.",
+    "environment": "Generally located in areas rich in flora, possibly near swamps or forests.",
+    "strengths": "High hit points, multiple attack options, immunities to necrotic and poison damage.",
+    "weaknesses": "Vulnerable to cold damage, low Dexterity and Intelligence.",
+    "attacks": "Multiattack includes a bite and a vine attack, with the bite causing potential swallowing.",
+    "most_powerful_ability": "Disease Sense allows it to detect poisoned or diseased creatures within 60 feet, enhancing its strategy.",
+    "equipment": null,
+    "senses": "Blindsight 30 feet allowing it to detect foes nearby despite being blind beyond that.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to disease and advantage against poisoned targets.",
+        "Ability to deal acid damage or necrotic damage based on swallowed target's condition.",
+        "Can swallow Medium or smaller creatures if they fail a saving throw.",
+        "Can regurgitate swallowed creatures under certain conditions.",
+        "Resistance to being blinded and frightened due to condition immunities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large plant monster with disease abilities",
+        "creature that swallows enemies in combat",
+        "plant creature immune to necrotic damage",
+        "creature that attacks with vines and bites",
+        "formidable foe with high resilience and disease sense"
+    ]
+}

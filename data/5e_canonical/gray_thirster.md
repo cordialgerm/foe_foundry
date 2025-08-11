@@ -1,6 +1,8 @@
 <MonsterName/>Gray Thirster</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Gray Thirster is a Medium-sized Undead creature with a Neutral Evil alignment, serving as a formidable foe in combat through its unique abilities and resilience. With a Challenge Rating of 2, it presents a good challenge for lower-level adventurers, boasting a decent Armor Class of 13 and 52 hit points, stemming from eight dice rolls of eight plus an additional sixteen. Its speed is average at 30 feet, allowing it to engage effectively in close combat. Notably, the Gray Thirster features damage immunities to fire and poison, resistance to necrotic damage, and various immunities to conditions such as being charmed or frightened, making it quite resilient in confrontations. However, its intelligence is notably low at a score of 6, reflecting its simplicity in tactics beyond its abilities.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the combination of the Gray Thirster's abilities makes it an effective 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gray Thirster
 
 *Medium* *Undead* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.
 - **Withering Turban:** Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 7 (1d8 + 3) necrotic damage. The target must succeed on a DC 12 Constitution saving throw or its hp maximum is reduced by an amount equal to the damage taken. The target has disadvantage on this saving throw if it failed the saving throw against the thirster’s Thirst Aura. This reduction lasts until the target finishes a long rest with no levels of exhaustion. The target dies if this effect reduces its hp maximum to 0.
 - **Drought (1/Day):** The gray thirster draws the moisture from containers and creatures around it. Nonmagical water and other liquids within 20 feet of the thirster that aren’t being worn or carried turn to dust. Each creature within 20 feet of the thirster that isn’t a Construct or Undead must make a DC 12 Constitution saving throw. On a failure, a creature takes 9 (2d8) necrotic damage and up to 5 gallons of nonmagical liquid it is wearing or carrying turn to dust. On a success, a creature takes half the damage, and nonmagical liquids it is wearing or carrying don’t turn to dust. Plants, Oozes, creatures with the Amphibious or Water Breathing trait, and creatures made mostly of water, such as water elementals or steam mephits, have disadvantage on the saving throw.
+</statblock>
 
 

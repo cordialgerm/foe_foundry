@@ -1,0 +1,53 @@
+{
+    "name": "Banshee",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 58,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., fly 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "haunting",
+        "psychic"
+    ],
+    "adjectives": [
+        "sorrowful",
+        "haunting",
+        "incorporeal",
+        "cursed"
+    ],
+    "description": "The Banshee is a haunting undead creature, embodying sorrow with a ghostly appearance. It is known for its wailing cries that can evoke fear and despair.",
+    "memorable": "The Banshee's ability to curse its victims and its fear-inducing wail make it a uniquely formidable opponent.",
+    "goals": "Typically seeks to instill fear and despair, reflecting its sad and tragic past.",
+    "relations": "Often associated with other undead or cursed beings.",
+    "environment": "Usually found in haunted locations, graveyards, or sites of tragedy.",
+    "strengths": "Has high Charisma, making it effective in manipulating emotions; immune to cold, necrotic, and poison damage.",
+    "weaknesses": "Low hit points relative to its challenge rating, vulnerable if opponents overcome its defenses.",
+    "attacks": "Utilizes psychic damage with abilities like Presage Death and Baleful Wail which can cause significant harm to its foes.",
+    "most_powerful_ability": "Baleful Wail, which can reduce creatures to 0 hit points if they've been cursed by the Banshee.",
+    "equipment": null,
+    "senses": "Can sense living creatures up to 5 miles away.",
+    "skills": null,
+    "additional_information": [
+        "Incorporeal Movement allows it to pass through objects and creatures.",
+        "Returns on the anniversary of its death unless permanently put to rest.",
+        "Immune to numerous conditions making it a strategic entity in battle.",
+        "Uses Wounded Warning to retaliate against attackers.",
+        "Can deal psychic damage effectively, impacting mental states."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "haunting undead spirit",
+        "ghostly wail creature",
+        "psychic damage banshee",
+        "cursed undead in graveyards",
+        "Banshee abilities"
+    ]
+}

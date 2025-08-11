@@ -1,0 +1,25 @@
+{
+    "name": "Soldier Squad",
+    "queries": [
+        {
+            "query": "large humanoid creature with area vulnerability and splits upon defeat",
+            "variant": "large humanoid with area vulnerablity that splits when defeated"
+        },
+        {
+            "query": "team of soldiers that has good melee attacks and takes double damage from area effects",
+            "variant": "squad of soldiers good at melee that recieves double damage from area effects"
+        },
+        {
+            "query": "combat unit with Tactical Movement ability that loses hit points to split",
+            "variant": "combat unit that can use Tactical Movement and splits when hit points are lost"
+        },
+        {
+            "query": "Soldier Squad with high durability and average Dexterity",
+            "variant": "Soldier Squad that has durability and Dexterity rated average"
+        },
+        {
+            "query": "soldier creatures that can communicate and have survival skills",
+            "variant": "soldier beings that can talk and have skill in survival"
+        }
+    ]
+}

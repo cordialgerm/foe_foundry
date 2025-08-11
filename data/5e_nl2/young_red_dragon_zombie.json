@@ -1,0 +1,50 @@
+{
+    "name": "Young Red Dragon Zombie",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 178,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft., climb 30 ft., fly 70 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "dragon",
+        "fire"
+    ],
+    "adjectives": [
+        "terrifying",
+        "formidable",
+        "resilient"
+    ],
+    "description": "A massive, decaying dragon reanimated as an undead creature, it has scaly skin covered in ash and smoldering embers.",
+    "memorable": "Its two special abilities\u2014Undead Fortitude to continue fighting and powerful Fire Breath that induces fear\u2014make it a unique adversary.",
+    "goals": "Typically seeks to instill fear and destruction upon its foes using both brute strength and fiery breath.",
+    "relations": "May be encountered alongside other undead creatures, particularly those created by necromancers or in areas with significant death magic.",
+    "environment": "Often found in desolate, fiery, or volcanic regions, where its elemental powers can thrive.",
+    "strengths": "High hit points and powerful area-of-effect fire attack, combined with the ability to potentially avoid destruction through Undead Fortitude.",
+    "weaknesses": "Low Dexterity and Intelligence, making it prone to being outmaneuvered and lacking strategic thinking.",
+    "attacks": "Multiattack combines a damaging bite and slashing claw strikes, supplemented by a fear-inducing Fire Breath.",
+    "most_powerful_ability": "Fire Breath, which deals significant damage in a wide area while also frightening targets.",
+    "senses": "Possesses blindsight up to 30 feet, allowing it to detect foes without relying on sight.",
+    "skills": "Has low passive Perception, make it less effective at noticing hidden threats.",
+    "additional_information": [
+        "Does not require air, food, or sleep due to its Undead Nature.",
+        "Low strategic capabilities but extremely dangerous in melee due to high Strength.",
+        "Can intimidate foes before they even engage with its Fire Breath ability."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead dragon that breathes fire",
+        "large zombie with powerful fire attack",
+        "dragon corpse risen as undead",
+        "creature that fear breathes fire",
+        "zombie that can fly and climb"
+    ]
+}

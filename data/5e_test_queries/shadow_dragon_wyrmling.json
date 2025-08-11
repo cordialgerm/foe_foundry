@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that embodies darkness and has a powerful breath weapon",
+            "variant": "medium-sized dragon that has a dark aura and a strong breath attack"
+        },
+        {
+            "query": "stealthy creature that can move through objects and deals necrotic damage",
+            "variant": "sneaky monster that moves incorporeally and inflicts necrotic harm"
+        },
+        {
+            "query": "dragon with an evil aura that makes it a formidable ambusher",
+            "variant": "evil creature that serves as a strong ambush predator"
+        },
+        {
+            "query": "shadow dragon that is linked to a specific area and causes fatigue",
+            "variant": "shadowy dragon tied to a location that induces fatigue in creatures"
+        },
+        {
+            "query": "dragon that excels in deception and can withstand various damage types",
+            "variant": "deceptive creature that is resistant to many damage types"
+        }
+    ]
+}

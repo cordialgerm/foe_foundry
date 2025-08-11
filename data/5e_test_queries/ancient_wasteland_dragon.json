@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Wasteland Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon that deals force damage and instills fear",
+            "variant": "huge dragon that inflicts force damage and causes fear"
+        },
+        {
+            "query": "massive chaotic evil dragon with high hit points and legendary resistance",
+            "variant": "enormous chaotic evil dragon with a lot of hit points and legendary resistance"
+        },
+        {
+            "query": "powerful dragon that can fly and has a devastating breath weapon",
+            "variant": "strong dragon that flies and uses a destructive breath attack"
+        },
+        {
+            "query": "dragon that can burrow and has blindsight abilities",
+            "variant": "dragon with burrowing capabilities and blindsight"
+        },
+        {
+            "query": "Ancient Wasteland Dragon's frightful presence and melee attacks",
+            "variant": "frightening presence and melee moves of Ancient Wasteland Dragon"
+        }
+    ]
+}

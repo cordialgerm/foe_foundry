@@ -1,0 +1,25 @@
+{
+    "name": "Lesser Lunarchidna",
+    "queries": [
+        {
+            "query": "stealthy aberration that thrives in darkness with climbing abilities",
+            "variant": "sneaky aberration that excels in shadows and can climb walls"
+        },
+        {
+            "query": "creature that deals necrotic damage and reduces hit points",
+            "variant": "monster that inflicts necrotic damage and lowers maximum hit points"
+        },
+        {
+            "query": "medium evil creature known for its mobility and poison immunity",
+            "variant": "medium dark creature known for its agility and immune to poison"
+        },
+        {
+            "query": "predator with high dexterity that uses shadow to hide",
+            "variant": "hunter with strong agility that hides in the shadows"
+        },
+        {
+            "query": "aberration skilled in stealth and has a disadvantage in bright light",
+            "variant": "aberration proficient in sneaking that suffers in bright environments"
+        }
+    ]
+}

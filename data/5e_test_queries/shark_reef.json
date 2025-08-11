@@ -1,0 +1,25 @@
+{
+    "name": "Reef Shark",
+    "queries": [
+        {
+            "query": "agile aquatic predator with blood sense",
+            "variant": "aquatic predator that is agile and has blood sense"
+        },
+        {
+            "query": "medium shark that thrives in water and attacks by biting",
+            "variant": "shark that is medium-sized, thrives in the water and uses bites to attack"
+        },
+        {
+            "query": "shark with poor charisma that can breathe underwater",
+            "variant": "underwater breathing shark that has low charisma"
+        },
+        {
+            "query": "predator in coastal waters that attacks in packs",
+            "variant": "coastal water predator that engages in pack attacks"
+        },
+        {
+            "query": "stealthy hunter that can locate injured prey underwater",
+            "variant": "hunter that is stealthy and can find injured prey in the water"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Salamander Nymph",
+    "queries": [
+        {
+            "query": "fire elemental creature with melee attacks and cold vulnerability",
+            "variant": "creature with elemental fire traits and melee capabilities that is weak to cold"
+        },
+        {
+            "query": "medium-sized salamander with fire damage immunity and heated body ability",
+            "variant": "salamander creature that is medium and has immunity to fire plus the heated body power"
+        },
+        {
+            "query": "elemental nymph from a fiery environment that punishes attackers",
+            "variant": "fiery nymph elemental that retaliates against its attackers"
+        },
+        {
+            "query": "creature with a tail attack and darkvision that understands Ignan",
+            "variant": "tail-attacking creature that can see in the dark and comprehends Ignan language"
+        },
+        {
+            "query": "fire-themed creature with average hit points and modest armor class",
+            "variant": "creature themed around fire with 27 hit points and armor class of 14"
+        }
+    ]
+}

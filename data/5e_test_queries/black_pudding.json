@@ -1,0 +1,25 @@
+{
+    "name": "Black Pudding",
+    "queries": [
+        {
+            "query": "large ooze that dissolves organic material in underground caverns",
+            "variant": "huge ooze that eats organic stuff in underground tunnels"
+        },
+        {
+            "query": "corrosive sludge creature found in abandoned ruins",
+            "variant": "acidic slime monster located in forgotten ruins"
+        },
+        {
+            "query": "formless black creature that splits when hit",
+            "variant": "shapeless black monster that divides when attacked"
+        },
+        {
+            "query": "blob-like creature with acid damage and spider climb ability",
+            "variant": "blob creature that deals acid and can climb like a spider"
+        },
+        {
+            "query": "ooze with low dexterity that lives in dungeons and tunnels",
+            "variant": "ooze creature with bad dexterity that dwells in dungeons"
+        }
+    ]
+}

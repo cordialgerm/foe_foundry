@@ -1,0 +1,50 @@
+{
+    "name": "Crusher",
+    "creature_type": "Construct",
+    "alignment": null,
+    "size": "Large",
+    "hp": 115,
+    "ac": 20,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "battlefield control",
+        "attack"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "menacing"
+    ],
+    "description": "The Crusher is a Large Construct with a robust design, showcasing an imposing figure built for direct combat, and is visually characterized by mechanical components and two powerful melee attacks.",
+    "memorable": "Its ability to crush opponents with powerful bludgeoning attacks while knocking them prone makes it a formidable presence in battle.",
+    "goals": "To dominate the battlefield by incapacitating enemies and dealing devastating blows.",
+    "relations": "Can be encountered alongside other constructs or mechanical beings.",
+    "environment": "Typically found in areas designed for mechanical constructs or battle arenas.",
+    "strengths": "Immunities to various conditions and effects enhance its battlefield durability.",
+    "weaknesses": "Its low Dexterity results in slower movement and reduced evasion capabilities.",
+    "attacks": "The Crusher can execute a potent Crush ability, moving through enemies and dealing bludgeoning damage, and a Ram attack that inflicts significant damage on contact.",
+    "most_powerful_ability": "The Crush ability allows it to knock opponents prone while dealing heavy bludgeoning damage.",
+    "equipment": null,
+    "senses": "Blindsight 60 ft., providing it awareness in combat even without sight.",
+    "skills": "The Crusher has a perception skill proficiency with a +2 modifier, reflecting good awareness of its surroundings.",
+    "additional_information": [
+        "Clockwork Nature: does not require air, nourishment, or rest.",
+        "Immutable Form: immune to effects that alter its form.",
+        "Can take the Dash action using Overclock for increased mobility.",
+        "Possesses high Strength and Constitution scores for powerful attacks.",
+        "Immune to poison and psychic damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large mechanical combat monster",
+        "creature with crushing blow ability",
+        "construct that knocks enemies prone",
+        "mechanical creature with high durability",
+        "slow moving giant with powerful attacks"
+    ]
+}

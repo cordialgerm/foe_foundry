@@ -1,0 +1,25 @@
+{
+    "name": "Ork Urk",
+    "queries": [
+        {
+            "query": "humanoid warrior with bloodied frenzy ability and greataxe",
+            "variant": "humanoid fighter with bloodied frenzy power and greataxe weapon"
+        },
+        {
+            "query": "frontline orc fighter that deals slashing damage",
+            "variant": "orc frontline warrior that does slashing damage"
+        },
+        {
+            "query": "orc warrior known for aggressive charge and durability",
+            "variant": "ork fighter famous for aggressive charge and toughness"
+        },
+        {
+            "query": "medium humanoid with unarmored defense and intimidation skills",
+            "variant": "medium-sized humanoid with unarmored defense ability and intimidation skill"
+        },
+        {
+            "query": "orc urk's special abilities and combat tactics",
+            "variant": "special abilities of ork urk and its battle tactics"
+        }
+    ]
+}

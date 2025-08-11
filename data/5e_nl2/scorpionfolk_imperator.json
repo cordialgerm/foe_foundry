@@ -1,0 +1,54 @@
+{
+    "name": "Scorpionfolk Imperator",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 52,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 ft. walking speed",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "melee combatant",
+        "grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "intelligent",
+        "durable"
+    ],
+    "description": "The Scorpionfolk Imperator is a Large creature with formidable claws and a fierce appearance, exhibiting a blend of magical prowess and physical capabilities.",
+    "memorable": "Its ability to grapple opponents with its claws while also casting powerful spells makes it a unique threat in combat.",
+    "goals": "To control the battlefield using magic and protect its allies through healing.",
+    "relations": "It may be encountered alongside other Scorpionfolk or in regions with desert or arid climates.",
+    "environment": "Usually found in desert or arid regions.",
+    "strengths": "High Intelligence for spellcasting, capable of both healing and battlefield control.",
+    "weaknesses": "Average Wisdom and Charisma, making it less effective in certain social interactions.",
+    "attacks": "Claw attack for grappling, javelin for ranged strikes, and sting dealing piercing and poison damage.",
+    "most_powerful_ability": "Venomous Fireball deals area poison damage and can also poison creatures.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has noteworthy skill proficiencies in perception, stealth, survival, arcana, history, and religion, making it adaptable in various situations.",
+    "additional_information": [
+        "Can cast cleric and wizard spells.",
+        "Has a spell save DC of 14.",
+        "Can create illusions with Major Image.",
+        "Possesses tactical advantages through grappling.",
+        "Uses spells like Healing Word to restore allies."
+    ],
+    "damage_types": [
+        "poison",
+        "fire"
+    ],
+    "spellcasting": "5th-level spellcaster with a variety of damaging, healing, and control spells prepared.",
+    "test_queries": [
+        "large spellcasting scorpion creature",
+        "desert creature with magical abilities",
+        "scorpionfolk that can grapple",
+        "monster with venomous spells and claws",
+        "intelligent creature that provides healing"
+    ]
+}

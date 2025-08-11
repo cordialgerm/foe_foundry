@@ -1,6 +1,8 @@
 <MonsterName/>Yaga Goo</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>85</HP>
 <summary>The Yaga Goo is a small, neutral evil ooze known for its sinister and elusive nature. With an Armor Class of 14 and a substantial pool of 85 hit points, this creature poses a moderate challenge to adventurers, rated at a Challenge Rating of 5. The Yaga Goo is exceptionally agile, boasting a Dexterity of 18, which offers it a good bonus for actions relying on dexterous movements, including stealth where it excels with a +10 modifier. One of its most notable characteristics is its ability to inflict necrotic damage, making it particularly threatening to certain types of foes. However, its intelligence and charisma are relatively average, limiting its effectiveness in social interactions and strategic planning.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Yaga Goo is a cunning and sinister foe, adept at using its unique a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yaga Goo
 
 *Small* *Ooze* *neutral evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Puddle Splash:** When a creature the Yaga goo can see targets it with a melee attack while within 5 feet of the goo, the goo can teleport to a puddle created by its Foul Transit, if that puddle's space is unoccupied, negating the damage from the attack. If it does, the attacker must succeed on a DC 16 Constitution saving throw or take 10 (3d6) necrotic damage and become poisoned until the end of its next turn.
 
 
+</statblock>
 
 

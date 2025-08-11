@@ -1,0 +1,51 @@
+{
+    "name": "Ogrekin",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 32,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "ogre",
+        "humanoid",
+        "melee",
+        "strength"
+    ],
+    "adjectives": [
+        "strong",
+        "resilient",
+        "formidable"
+    ],
+    "description": "The Ogrekin is characterized by its impressive strength and resilience, excelling in melee combat with formidable weapon attacks and a noteworthy physique.",
+    "memorable": "Its special ability, 'Giant Build,' enhances its damage output and lifting capacity, making it a powerful combatant in close quarters.",
+    "goals": "To engage in close combat and overpower opponents using its strength.",
+    "relations": "Related to other ogres and giant kin; often encountered in groups or as mercenaries.",
+    "environment": "Typically found in rugged terrains or near settlements where they may serve as enforcers or brutes.",
+    "strengths": "High melee damage potential with a versatile combat approach.",
+    "weaknesses": "Relatively easy to hit due to low Armor Class and limited ranged capabilities.",
+    "attacks": "Utilizes a Battleaxe for heavy melee damage and a Handaxe for both melee and ranged attacks.",
+    "most_powerful_ability": "Giant Build allows for increased damage output and enhanced carrying capacity.",
+    "equipment": null,
+    "senses": "Possesses darkvision out to 30 feet, allowing it to see in dim light as if it were bright.",
+    "skills": "Excels in Athletics with a +5 modifier, allowing for superior physical challenges.",
+    "additional_information": [
+        "Strong melee attacker with notable hit points.",
+        "Ability to adapt between melee and ranged combat with the Handaxe.",
+        "Average attributes in intelligence, wisdom, and charisma.",
+        "Gains significant damage bonuses from its Giant Build ability.",
+        "Not particularly clever or perceptive."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong melee brute from the hills",
+        "humanoid creature with giant strength",
+        "battleaxe wielding ogre kin",
+        "formidable close combat monster",
+        "adaptable fighter with powerful attacks"
+    ]
+}

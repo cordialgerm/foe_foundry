@@ -1,0 +1,50 @@
+{
+    "name": "Ahu-Nixta Cataphract",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 135,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "hover, walk 30 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "mechanical",
+        "spellcaster",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "intelligent"
+    ],
+    "description": "The Ahu-Nixta Cataphract is a large aberration that embodies a fusion of mechanical and biological elements, protected by clockwork armor and featuring a shapeless mass with manipulators for combat.",
+    "memorable": "Its ability to exit and enter its clockwork armor as a bonus action, alongside its formidable spellcasting and high Strength, makes it a unique and challenging opponent.",
+    "goals": "Primarily engages in combat using both physical and magical attacks, leveraging its clockwork armor for tactical advantage.",
+    "relations": "Possibly serves or is related to other aberrant beings or constructs.",
+    "environment": "Typically found in places where biological and mechanical entities intersect.",
+    "strengths": "High Armor Class and impressive Hit Points contribute to its resilience, while its ability to cast spells at will offers tactical versatility.",
+    "weaknesses": "Becomes significantly weaker when removed from its clockwork armor, losing many benefits and becoming vulnerable.",
+    "attacks": "Can perform multiple melee attacks, including slashing, piercing, and bludgeoning damage, while also executing spell attacks from a distance.",
+    "most_powerful_ability": "The ability to cast spells at will, including powerful options like Fear and Telekinesis, enhances its battlefield control.",
+    "equipment": "Clockwork armor which provides defense and additional functionalities.",
+    "senses": "Possesses darkvision up to 60 feet and a passive Perception score of 14.",
+    "skills": "Boasts a perception skill proficiency that reflects its acute awareness of surroundings.",
+    "additional_information": [
+        "Damage immunities to poison and psychic damage.",
+        "Condition immunities to charmed, exhaustion, frightened, and more while within clockwork armor.",
+        "Clockwork Encasement provides tactical flexibility in combat.",
+        "Immutable Form protects against spells that alter form.",
+        "High Strength score leads to powerful melee capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting with a focus on Intelligence, allowing it to cast Fear, Fire Bolt, and Telekinesis at will.",
+    "test_queries": [
+        "mechanical creature with magic",
+        "resilient aberration in armor",
+        "spellcasting aberration",
+        "creature with dual movement types",
+        "intelligent combat construct"
+    ]
+}

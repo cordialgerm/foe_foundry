@@ -1,0 +1,52 @@
+{
+    "name": "Kobold Witch",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 126,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet, agile and mobile",
+    "role": "Skirmisher",
+    "tags": [
+        "spellcaster",
+        "support",
+        "tactical"
+    ],
+    "adjectives": [
+        "cunning",
+        "resourceful",
+        "supportive"
+    ],
+    "description": "The Kobold Witch is a small and cunning humanoid with exceptional spellcasting abilities, featuring a unique cauldron and various arcane components.",
+    "memorable": "The Witch's ability to provide tactical support and temporary hit points makes it a unique and strategic opponent.",
+    "goals": "To support allies while disrupting enemies through tactical spellcasting and abilities.",
+    "relations": "Often works alongside other Kobolds and magical beings in tactical ambushes.",
+    "environment": "Commonly found in dark areas or underground lairs.",
+    "strengths": "High Charisma boosts its spellcasting effectiveness, and Pack Tactics enhances its combat capabilities in groups.",
+    "weaknesses": "Low physical strength and vulnerability to sunlight hinder its offensive and defensive capabilities outside of dim light.",
+    "attacks": "The Kobold Witch can make three Eldritch Burst attacks, dealing significant force damage from a distance.",
+    "most_powerful_ability": "The Hex reaction allows it to hinder opponents' performance at critical moments.",
+    "equipment": "Holds a small cauldron for crafting brews to support allies.",
+    "senses": "Possesses darkvision, allowing it to see in low-light conditions.",
+    "skills": "Proficient in Stealth, which aids in remaining undetected while maneuvering on the battlefield.",
+    "additional_information": [
+        "Uses Scurry to avoid opportunity attacks and navigate traps.",
+        "Can cast spells like disguise self and bestow curse for versatility.",
+        "Susceptible to sunlight sensitivity, affecting its combat effectiveness.",
+        "Good tactical maneuverability allows it to adapt in combat.",
+        "Can grant temporary hit points using Witch's Cauldron to support allies."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Utilizes Charisma for spellcasting, featuring a variety of spells for support and control.",
+    "test_queries": [
+        "small resourceful spellcaster in darkness",
+        "tactical support character with healing abilities",
+        "Kobold Witch in underground lair",
+        "cunning humanoid employing Pack Tactics",
+        "monster that uses strategic spellcasting"
+    ]
+}

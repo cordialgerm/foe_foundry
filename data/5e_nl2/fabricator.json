@@ -1,0 +1,53 @@
+{
+    "name": "Fabricator",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 147,
+    "ac": 13,
+    "srd": false,
+    "cr": "10",
+    "movement": "climb 15 ft., walk 30 ft., swim 15 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "dismantler",
+        "craftsman"
+    ],
+    "adjectives": [
+        "durable",
+        "versatile",
+        "construct",
+        "crafting"
+    ],
+    "description": "The Fabricator is a Large Construct with exceptional durability, designed for creating objects from raw materials. It has a robust mechanical structure, highlighted by its impressive size and the capacity to manipulate materials.",
+    "memorable": "Its ability to permanently disassemble creatures and their nonmagical equipment creates a unique tactical dynamic in encounters.",
+    "goals": "To create useful items and defend itself from threats.",
+    "relations": "Could potentially be allied with artisans or other constructs, but might also be an adversary to those who threaten it.",
+    "environment": "Typically found in areas with abundant raw materials, such as workshops or ruins.",
+    "strengths": "High hit points, damage immunities to force and poison, and the ability to craft items.",
+    "weaknesses": "Poor social interaction due to a low Charisma score and a low Dexterity, making it less agile.",
+    "attacks": "Multiattack with two disassembling slam attacks dealing bludgeoning and force damage, permanently disassembling foes.",
+    "most_powerful_ability": "The Dismantling Form ability inflicts damage on those who attack it and weakens nonmagical weapons.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to perceive its surroundings without relying on sight.",
+    "skills": "Proficient in Perception, giving it a passive perception score of 16.",
+    "additional_information": [
+        "Can create various objects by combining absorbed materials.",
+        "Immunity to several conditions including being charmed and frightened.",
+        "Can dismantle nonmagical weapons and ammunition when struck.",
+        "Strong offensive capabilities thanks to its high Strength.",
+        "Capable of tactical flexibility by choosing to spare defeated creatures."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large construct that crafts useful items",
+        "dismantling creature with crafting abilities",
+        "creature that disassembles weapons",
+        "durable construct with force damage",
+        "utility construct in dungeon environments"
+    ]
+}

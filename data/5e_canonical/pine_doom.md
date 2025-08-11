@@ -1,6 +1,8 @@
 <MonsterName/>Pine Doom</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Pine Doom is a formidable creature that combines the characteristics of a colossal plant with the ability to deceive its foes. Its natural armor provides a solid defense, with an Armor Class of 16, and its substantial pool of hit points, totaling 172, ensures it can withstand significant punishment in battle. With a Challenge Rating of 9, it presents a serious threat, offering 5,000 experience points to those who manage to defeat it. The Pine Doom is exceptionally powerful in inflicting damage, especially against structures, as it has the Siege Monster ability. However, it is vulnerable to fire damage, making it susceptible to certain spells and attacks that exploit this weakness. The creature also possesses various special abilities, such as grappling opponents with sticky pine tar and disguising itself as an ordinary tree when motionless. These traits make it a cunning ambush predator.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ The combination of its abilities and attacks makes the Pine Doom an intimidating
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pine Doom
 
 *Huge* *Plant* *neutral*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Flurry of Pinecones (Recharge 6):** Each creature within 30 feet of the pine doom must make a DC 16 Dexterity saving throw, taking 15 (6d4) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

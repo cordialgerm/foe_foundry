@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Sorcerer Dragon Servitor",
+    "queries": [
+        {
+            "query": "small humanoid spellcaster that serves dragons",
+            "variant": "humanoid spellcaster that is small and serves dragons"
+        },
+        {
+            "query": "creature with innate spellcasting and darkvision",
+            "variant": "creature that has darkvision and innate spellcasting"
+        },
+        {
+            "query": "Kobold sorcerer with flame-based attacks and low physical strength",
+            "variant": "Kobold sorcerer that has low physical strength and flame attacks"
+        },
+        {
+            "query": "moderately challenging spellcaster with a dragon master",
+            "variant": "spellcaster that is moderately challenging and has a dragon master"
+        },
+        {
+            "query": "small creature proficient in intimidation and arcana",
+            "variant": "small creature that is proficient in arcana and intimidation"
+        }
+    ]
+}

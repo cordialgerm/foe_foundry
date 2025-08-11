@@ -1,0 +1,54 @@
+{
+    "name": "Anzu",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 152,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "flying creature",
+        "breath weapon"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "hazardous"
+    ],
+    "description": "The Anzu is a large creature with remarkable physical attributes, showcasing a powerful build suited for combat. It deals substantial damage through its bite and talon attacks while also having the ability to breathe fire or release a wave of water.",
+    "memorable": "Anzu's ability to teleport as a bolt of lightning while dealing damage makes it particularly unique and fearsome in combat, disrupting enemy positions.",
+    "goals": "The Anzu typically seeks to engage in direct combat, using its powerful attacks to incapacitate foes while maintaining mobility through its teleportation ability.",
+    "relations": "The Anzu may be encountered alongside other monstrosities or elemental creatures, potentially serving as a guardian or formidable foe.",
+    "environment": "Anzu can usually be found in diverse environments, often where elemental magic is strong or in regions of conflict.",
+    "strengths": "Impressive mobility with flying speed, resistance to fire and lightning damage, and significant damage output through various attacks.",
+    "weaknesses": "Low Intelligence makes it less adept at strategic thinking or complex problem-solving, limiting its tactical options.",
+    "attacks": "The Anzu makes three attacks each turn, consisting of a powerful bite that inflicts piercing and additional lightning damage, followed by slashing strikes with its talons.",
+    "most_powerful_ability": "Lightning Relocation allows the Anzu to teleport swiftly, dealing lightning damage to nearby foes and providing excellent battlefield control.",
+    "equipment": null,
+    "senses": "The Anzu possesses keen sight, granting it advantage on Wisdom (Perception) checks relying on sight.",
+    "skills": "Proficient in perception, the Anzu excels at detecting hidden or invisible creatures.",
+    "additional_information": [
+        "Resistance to fire and lightning damage",
+        "Breath weapons can deal significant area damage",
+        "Ability to push and knock prone with its Water Breath",
+        "High physical strength and resilience in combat",
+        "Has flight capabilities enhancing mobility"
+    ],
+    "damage_types": [
+        "fire",
+        "lightning",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large flying monster",
+        "elemental breath weapon creature",
+        "lightning teleportation abilities",
+        "formidable combat monstrosity",
+        "multiattack flying beast"
+    ]
+}

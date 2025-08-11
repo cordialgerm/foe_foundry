@@ -1,0 +1,25 @@
+{
+    "name": "Avalanche Screamer",
+    "queries": [
+        {
+            "query": "large chaotic evil monster with thunder attacks that thrives in snow",
+            "variant": "big chaotic evil creature using thunder damage that loves snowy areas"
+        },
+        {
+            "query": "monster that grapples with legs and has piercing damage capabilities",
+            "variant": "creature that can restrain with legs and inflicts piercing damage"
+        },
+        {
+            "query": "aberration that uses screams for damage and has cold resistance",
+            "variant": "creature that deals damage with shouts and is resistant to cold"
+        },
+        {
+            "query": "snow camouflage monster with high hit points and average wisdom",
+            "variant": "creature that hides well in snow, has lots of hit points, and has normal wisdom"
+        },
+        {
+            "query": "monster affecting battlefield with thunderous shrieks and average dexterity",
+            "variant": "creature that influences combat with loud shrieks and has medium dexterity"
+        }
+    ]
+}

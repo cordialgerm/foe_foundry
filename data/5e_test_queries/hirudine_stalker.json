@@ -1,0 +1,25 @@
+{
+    "name": "Hirudine Stalker",
+    "queries": [
+        {
+            "query": "ambush predator that swims and climbs effectively",
+            "variant": "predator that climbs and swims effectively for ambush"
+        },
+        {
+            "query": "medium-sized monstrosity with disadvantage effects in combat",
+            "variant": "monstrosity of medium size that imposes disadvantage in fights"
+        },
+        {
+            "query": "creature with blood scent ability that tracks injured foes",
+            "variant": "creature that tracks wounded foes and has a blood scent ability"
+        },
+        {
+            "query": "stealthy monster with amphibious traits and psychic vulnerability",
+            "variant": "monster that is amphibious and stealthy, also vulnerable to psychic attacks"
+        },
+        {
+            "query": "Hirudine Stalker combat tactic with bite and spit tooth",
+            "variant": "combat tactic of Hirudine Stalker using bite and spit tooth attack"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Frilled Lizard",
+    "queries": [
+        {
+            "query": "large agile beast that can frighten opponents",
+            "variant": "large agile animal that frightens foes"
+        },
+        {
+            "query": "monster with impressive physical abilities and a powerful charge",
+            "variant": "creature with great physical skills and strong charging attack"
+        },
+        {
+            "query": "beast that can climb and has a high Dexterity score",
+            "variant": "animal capable of climbing and possessing high Dex stat"
+        },
+        {
+            "query": "creature with a strong bite attack and poison damage",
+            "variant": "monster that delivers a powerful bite and inflicts poison"
+        },
+        {
+            "query": "monstrous lizard known for its frills and intimidating presence",
+            "variant": "lizard monster recognized for its frills and fearsome appearance"
+        }
+    ]
+}

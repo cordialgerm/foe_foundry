@@ -1,0 +1,52 @@
+{
+    "name": "Tigebra",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 190,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "poison",
+        "blindsight",
+        "paralyze"
+    ],
+    "adjectives": [
+        "formidable",
+        "fearsome",
+        "chaotic"
+    ],
+    "description": "The Tigebra is a large and formidable monstrosity characterized by its chaotic evil nature, having a strong build with notable natural armor and a vicious appearance.",
+    "memorable": "Its ability to remain a threat even after being defeated, thanks to its 'Final Fury' ability, makes it particularly dangerous.",
+    "goals": "To hunt down and eliminate intruders.",
+    "relations": "May be encountered alongside other chaotic evil creatures.",
+    "environment": "Typically found in dark, isolated regions, especially where it can ambush prey.",
+    "strengths": "Resilient in battle due to high hit points and natural armor, alongside advantages on saving throws against magic.",
+    "weaknesses": "Very low intelligence and charisma, limiting strategic planning and social interaction.",
+    "attacks": "Can deliver a powerful multiattack with a bite that inflicts piercing and poison damage, along with slashing damage from claws.",
+    "most_powerful_ability": "The 'Hypnotic Gaze' ability allows it to paralyze enemies, significantly shifting dynamics in combat.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, with a passive perception score of 17, making it effective at detecting hidden threats.",
+    "skills": "Skilled with a +2 perception modifier, enhancing its sensory detection capabilities.",
+    "additional_information": [
+        "Damage immunity to poison and several condition immunities.",
+        "Can attack even after being reduced to zero hit points through 'Final Fury'.",
+        "Retains its formidable combat statistics as a remnant.",
+        "Advantage on Wisdom (Perception) checks due to 'Keen Hearing and Smell'.",
+        "The poison inflicted is particularly potent against resistant or immune creatures."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic evil monster with poison",
+        "fearsome predator with blindsight ability",
+        "monster that paralyzes enemies with gaze",
+        "Tigebra ability to attack after death",
+        "formidable creature with potent poison"
+    ]
+}

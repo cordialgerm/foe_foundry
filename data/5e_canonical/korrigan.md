@@ -1,6 +1,8 @@
 <MonsterName/>Korrigan</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>66</HP>
 <summary>The Korrigan is a small fey creature characterized by its chaotic neutral alignment, bringing a whimsical yet unpredictable nature to any encounter. With an Armor Class of 14, it boasts moderate protection from attacks, and its 66 hit points, derived from rolling twelve six-sided dice plus an additional 24 points, provides a fair amount of durability for a creature of its size and challenge rating of 3, equating to 700 experience points for slaying it. The Korrigan excels in dexterity and charisma, possessing a dexterity score of 16 which provides a good +3 modifier, allowing it to perform agile maneuvers and avoid attacks effectively. Moreover, its high charisma of 17 grants an exceptional +3 modifier that enhances its spellcasting abilities, making it a formidable foe due to its spellcasting and innate magical traits.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Korrigan has a reaction called Catch Me If You Can, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Korrigan
 
 *Small* *Fey* *chaotic neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Catch Me If You Can:** When a creature moves within 5 feet of the korrigan, the korrigan can cast the misty step spell.
 
 
+</statblock>
 
 

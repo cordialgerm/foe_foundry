@@ -1,0 +1,51 @@
+{
+    "name": "Griffon",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "animal",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 59,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. on ground, 80 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "predator",
+        "flying"
+    ],
+    "adjectives": [
+        "majestic",
+        "fierce",
+        "powerful"
+    ],
+    "description": "The Griffon has the body of a lion and the head and wings of an eagle, embodying the fierce traits of both birds and felines.",
+    "memorable": "A formidable aerial predator capable of executing rapid strikes from above with powerful melee attacks.",
+    "goals": "To hunt large prey and fiercely defend its territory.",
+    "relations": "Often found in high mountains or remote wilderness areas, they may be encountered with other large predators.",
+    "environment": "High mountains or remote wilderness areas",
+    "strengths": "Exceptional mobility both on the ground and in the air, strong physical presence, and advantage on attack rolls when allies are nearby.",
+    "weaknesses": "Relatively low Armor Class and lacks magical abilities.",
+    "attacks": "Multiattack includes a Beak attack and a Claws attack, dealing significant damage.",
+    "most_powerful_ability": "Pounce allows rapid strikes, knocking foes prone and capitalizing on their vulnerability.",
+    "equipment": null,
+    "senses": "Keen Sight grants advantage on Perception checks relying on sight, enhancing its ability to detect hidden threats.",
+    "skills": "Possesses proficient Perception skills, giving it a high capability to notice hidden objects or creatures.",
+    "additional_information": [
+        "Resistant to exhaustion and frightened condition.",
+        "Can be trained as mounts by skilled handlers.",
+        "Grapple mechanism with an escape DC of 14 adds strategy to combat.",
+        "Heightened Sight increases visual perception significantly.",
+        "Has a strong combination of physical attributes with notable Strength and Constitution."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful predator with wings",
+        "large creature soaring in the mountains",
+        "beast with lion body and eagle head",
+        "fierce monster that hunts large prey",
+        "aerial predator with keen sight ability"
+    ]
+}

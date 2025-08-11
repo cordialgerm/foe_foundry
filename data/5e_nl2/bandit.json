@@ -1,0 +1,52 @@
+{
+    "name": "Bandit",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any non-lawful alignment",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 12,
+    "srd": true,
+    "ac_description": "leather armor",
+    "cr": "1/8",
+    "movement": "30 feet walking speed, average pace for tactical positioning",
+    "role": "Skirmisher",
+    "tags": [
+        "ambusher",
+        "outlaw",
+        "gang"
+    ],
+    "adjectives": [
+        "opportunistic",
+        "scrappy",
+        "cunning"
+    ],
+    "description": "A rough, scrappy humanoid wearing mismatched leather armor, often armed with a scimitar and a light crossbow.",
+    "memorable": "Known for their ability to ambush unsuspecting travelers in groups, capitalizing on their numbers to overwhelm enemies.",
+    "goals": "Typically motivated by greed, bandits prey on the weak, often engaging in theft and robbery.",
+    "relations": "Often found in gangs or groups, sometimes led by more powerful individuals like thugs or veterans.",
+    "environment": "Commonly encountered on remote roads or in small villages where they can ambush their targets.",
+    "strengths": "Their strength lies in their numbers and ambush tactics rather than individual combat prowess.",
+    "weaknesses": "Fragile with low hit points, making them vulnerable in direct confrontations.",
+    "attacks": "Uses melee scimitar attacks for slashing damage and ranged attacks with a light crossbow for piercing damage.",
+    "most_powerful_ability": "Opportunist, allowing advantage on opportunity attacks when enemies leave their reach.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Average in social interactions and perception with no significant skills.",
+    "additional_information": [
+        "Can perform a bonus action to Steal Item from a nearby target.",
+        "Often live outside the law, adopting various moral standpoints.",
+        "Sometimes serve as minor antagonists or light adversaries in adventures.",
+        "Not all bandits are evil; some may take up banditry out of necessity.",
+        "Pirates are considered bandits of the high seas."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "opportunistic robber",
+        "mismatched armored outlaw",
+        "ambush gang",
+        "stealthy bandit tactics",
+        "light crossbow wielder"
+    ]
+}

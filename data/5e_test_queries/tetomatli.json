@@ -1,0 +1,25 @@
+{
+    "name": "Tetomatli",
+    "queries": [
+        {
+            "query": "large chaotic evil construct that can fly and slams its head for damage",
+            "variant": "chaotic evil construct that is large and slams its head while flying"
+        },
+        {
+            "query": "monster with strong physical attacks and immunity to poison and psychic damage",
+            "variant": "creature that is immune to poison and psychic with strong physical attacks"
+        },
+        {
+            "query": "Tetomatli abilities including tremorsense and diving head slam attack",
+            "variant": "tremorsense ability and diving head slam attacks of the Tetomatli"
+        },
+        {
+            "query": "large construct with high hit points and magic resistance",
+            "variant": "construct that is large, has magic resistance, and lots of hit points"
+        },
+        {
+            "query": "creature with double damage to structures and average perception",
+            "variant": "vulnerable to structures with double damage and average perception creature"
+        }
+    ]
+}

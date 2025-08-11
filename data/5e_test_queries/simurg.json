@@ -1,0 +1,25 @@
+{
+    "name": "Simurg",
+    "queries": [
+        {
+            "query": "gargantuan celestial creature with strong healing abilities",
+            "variant": "gargantuans celestial monster that has powerful healing powers"
+        },
+        {
+            "query": "monster that flies and has advantages on perception checks",
+            "variant": "flying creature that gets bonuses on sight-based perception"
+        },
+        {
+            "query": "simurg abilities related to battlefield control and healing",
+            "variant": "simurg's powers for controlling the battlefield and healing effects"
+        },
+        {
+            "query": "large celestial being with spellcasting and offensive capabilities",
+            "variant": "big celestial creature that can cast spells and has attack power"
+        },
+        {
+            "query": "strong creature from the heavens that can communicate telepathically",
+            "variant": "powerful heavenly being that can talk through telepathy"
+        }
+    ]
+}

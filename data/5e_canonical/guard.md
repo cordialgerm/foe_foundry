@@ -1,6 +1,10 @@
 <MonsterName/>Guard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>16</AC>
+<HP/>11</HP>
 <summary>A Guard is a professional soldier or watchman tasked with protecting a city, keep, or noble estate. Clad in armor and carrying weapons such as swords, spears, or crossbows, Guards are disciplined and trained to maintain order and defend their posts. They are often part of a larger force, patrolling streets, manning walls, or standing watch over important locations. Though not as skilled as elite soldiers, Guards are reliable and capable of working together to fend off intruders or maintain peace. Their loyalty to their employers or rulers makes them steadfast defenders.</summary>
 
 <summary>The Guard is a Medium humanoid creature designed to serve as a basic defensive unit in various situations. It has a reasonable armor class of 15, making it moderately difficult for attackers to land successful hits. With 11 hit points, it can sustain a small amount of damage before being defeated, but it is not particularly resilient. The Guard's speed is typical, allowing it to move at a rate of 30 feet per turn. Its challenge rating is 1/8, which indicates that it is not a formidable opponent, typically posing minimal threat to more experienced adventurers. The creature's primary strength lies in its basic combat capabilities, particularly its spear attack, but it lacks any significant special abilities or spells, making it relatively straightforward in terms of encounters.</summary>
@@ -38,6 +42,7 @@ Overall, the Guard serves as a competent low-level soldier, capable of engaging 
 
 Source: 5e_srd
 
+<statblock>
 ### Guard
 
 *Medium humanoid (any race), any alignment*
@@ -64,7 +69,8 @@ Source: 5e_srd
 
 ***Spear***. *Melee or Ranged Weapon Attack:* +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
 
-**Guards** include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.
+**Guards** include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.</statblock>
+
 
 
 
@@ -72,6 +78,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guard
 
 *Medium* *Humanoid*
@@ -95,6 +102,7 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage.
 
 
+</statblock>
 
 
 
@@ -103,6 +111,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guard
 
 *Medium humanoid (any lineage)*
@@ -134,5 +143,6 @@ Source: 5e_artisinal_monsters
 
 - **Protector’s Parry.** When a friendly creature the guard can see within 5 feet of it is the target of an attack, the guard can interpose its weapon between the creature and the attacker. The friendly creature adds 2 to its AC against that attack. To use this reaction, the guard must be able to see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

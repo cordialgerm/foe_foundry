@@ -1,0 +1,50 @@
+{
+    "name": "Abominable Snowman",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 136,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., climb 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "snow",
+        "cold",
+        "monstrosity",
+        "yeti"
+    ],
+    "adjectives": [
+        "formidable",
+        "chilling",
+        "stealthy",
+        "paralyzing"
+    ],
+    "description": "The Abominable Snowman is a large, formidable creature with a chilling presence, recognized for its ability to blend into snowy environments with its camouflage. Its fur is thick to withstand cold climates, and its eyes hold a menacing gaze.",
+    "memorable": "Its chilling gaze can paralyze foes, making it a terrifying presence in snowy landscapes.",
+    "goals": "Typically, it seeks to dominate its territory and can act as a guardian of icy domains.",
+    "relations": "It may be encountered alongside other cold-dwelling creatures or as a solitary predator in the mountains.",
+    "environment": "Usually found in cold, snowy terrains like mountains and icy landscapes.",
+    "strengths": "Immunity to cold damage and tactical advantages in snowy conditions due to camouflage and storm sight.",
+    "weaknesses": "Vulnerable to fire damage, which causes it to become rattled and affects its performance.",
+    "attacks": "Uses a powerful multiattack consisting of a chilling gaze and two claw strikes, able to inflict paralysis with its gaze.",
+    "most_powerful_ability": "Chilling gaze can incapacitate opponents with paralysis for up to a minute, dramatically shifting combat dynamics.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 13, making it good at noticing its surroundings.",
+    "skills": "Proficient in stealth, with advantage in snowy terrain, making it a dangerous ambusher.",
+    "additional_information": [
+        "Camouflage ability allows it to hide effectively in snow.",
+        "Fire fear ability makes it susceptible to fire, causing it to falter in combat.",
+        "Storm sight enables it to see clearly through blizzard conditions."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fearsome snow creature",
+        "snowy mountain predator",
+        "creature with chilling gaze",
+        "stealthy ice monster",
+        "cold-resistant humanoid creature"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Flame Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium-sized dragon that breathes fire and has a high AC",
+            "variant": "dragon that is medium-sized, breathes fire, and has a high Armor Class"
+        },
+        {
+            "query": "chaotic evil dragon with fire resistance and deceitful nature",
+            "variant": "dragon with chaotic evil tendencies, fire resistance, and a nature of deceit"
+        },
+        {
+            "query": "agile dragon that flies and has a heated body ability",
+            "variant": "dragon that flies and is agile with a heated body attack"
+        },
+        {
+            "query": "dragon with strong Charisma and fire-based attacks",
+            "variant": "dragon that has a high Charisma score and uses fire attacks"
+        },
+        {
+            "query": "dragon that deals fire damage upon melee contact and has a bite attack",
+            "variant": "dragon with a bite attack and deals fire damage when contacted in melee"
+        }
+    ]
+}

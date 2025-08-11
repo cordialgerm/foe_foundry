@@ -1,0 +1,25 @@
+{
+    "name": "Mamura",
+    "queries": [
+        {
+            "query": "small agile aberration with spell disruption abilities",
+            "variant": "small agile abberation that disrupts spells"
+        },
+        {
+            "query": "creature that can fly and has strong Constitution",
+            "variant": "flying creature with high Constitution score"
+        },
+        {
+            "query": "deceptive creature that uses magic resistance and blinding defense",
+            "variant": "deceptive monster that has magic resistance and blindness defense"
+        },
+        {
+            "query": "monster that specializes in stealth and causing poison damage",
+            "variant": "stealthy creature that inflicts poison damage"
+        },
+        {
+            "query": "fast aberration with claws and a whiptail attack",
+            "variant": "quick aberration that has claw and whiptail attacks"
+        }
+    ]
+}

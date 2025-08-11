@@ -1,0 +1,53 @@
+{
+    "name": "Magma Octopus",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 147,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft., swim 60 ft. in lava",
+    "role": "Bruiser",
+    "tags": [
+        "lava",
+        "elemental",
+        "octopus"
+    ],
+    "adjectives": [
+        "fiery",
+        "powerful",
+        "grappling",
+        "large"
+    ],
+    "description": "The Magma Octopus is a large elemental being with powerful tentacles and a fiery appearance, thriving in volcanic environments.",
+    "memorable": "Its ability to grapple multiple foes and unleash devastating magma blasts makes it a significant threat.",
+    "goals": "To thrive in lava and subdue prey.",
+    "relations": "Often found in volcanic habitats or alongside other elemental beings.",
+    "environment": "Volcanic regions, lava flows.",
+    "strengths": "Immune to fire damage and capable of grappling multiple enemies with its tentacles.",
+    "weaknesses": "Vulnerable to cold damage when away from lava for too long.",
+    "attacks": "Utilizes up to four tentacle attacks per turn, dealing bludgeoning and fire damage, and can unleash a Magma Blast area attack.",
+    "most_powerful_ability": "Magma Blast, dealing high area fire damage and causing targets to potentially catch fire.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has +8 in Athletics, making it exceptionally good at grappling opponents, and +6 in Stealth, allowing it to surprise adventurers.",
+    "additional_information": [
+        "Lava Bound ability allows for limited time outside of lava.",
+        "Largest in its elemental category, enhancing its physical presence.",
+        "Can grapple two targets simultaneously, making it a formidable opponent.",
+        "Ability to petrify if away from lava too long.",
+        "Sprays magma in a 30-foot cone as a powerful area attack."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fiery creature that grapples",
+        "elemental monster found in lava",
+        "octopus creature that uses fire attacks",
+        "monster with magma blast ability",
+        "formidable opponent in volcanic environments"
+    ]
+}

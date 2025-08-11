@@ -1,0 +1,25 @@
+{
+    "name": "Dread Knight Champion",
+    "queries": [
+        {
+            "query": "undead warrior with a cursed greatsword that commands zombies",
+            "variant": "undead champion with cursed greatsword that can summon zombies"
+        },
+        {
+            "query": "medium creature immune to cold and fire that deals necrotic damage",
+            "variant": "medium monster immune to fire and cold that inflicts necrotic damage"
+        },
+        {
+            "query": "tactical undead that can create ice walls and summon mounts",
+            "variant": "strategic undead that can summon mounts and create ice barriers"
+        },
+        {
+            "query": "strong undead champion with high AC and saving throw bonuses",
+            "variant": "powerful undead fighter with excellent AC and bonuses to saving throws"
+        },
+        {
+            "query": "Dread Knight with truesight and unholy aura in battle",
+            "variant": "Dread Knight that possesses truesight and an unholy aura during combat"
+        }
+    ]
+}

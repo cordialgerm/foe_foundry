@@ -1,0 +1,25 @@
+{
+    "name": "Ijiraq",
+    "queries": [
+        {
+            "query": "shapeshifting fey creature that erases memories",
+            "variant": "fey creature that shapeshifts and makes you forget"
+        },
+        {
+            "query": "magical fey with memory manipulation and hybrid forms",
+            "variant": "fey with magic that manipulates memory and has hybrid forms"
+        },
+        {
+            "query": "medium fey known for invisibility and chaos",
+            "variant": "chaotic medium fey that can turn invisible"
+        },
+        {
+            "query": "creature that can polymorph and has poison attacks",
+            "variant": "creature with poison attacks that can change shape"
+        },
+        {
+            "query": "Ijiraq combat abilities and memory loss tactics",
+            "variant": "combat tactics of Ijiraq and its memory loss ability"
+        }
+    ]
+}

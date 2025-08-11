@@ -1,0 +1,25 @@
+{
+    "name": "Bukavac",
+    "queries": [
+        {
+            "query": "large monster with high strength living in aquatic environments",
+            "variant": "big monster with lots of strength that lives in water"
+        },
+        {
+            "query": "creature with natural armor that can deal thunder damage",
+            "variant": "being with natural defense that can inflict thunder damage"
+        },
+        {
+            "query": "formidable monstrosity that can grapple and deal melee damage",
+            "variant": "strong monstrosity that grapples and delivers melee attacks"
+        },
+        {
+            "query": "monster with 199 hit points and a howling attack",
+            "variant": "creature with 199 health and a loud attack ability"
+        },
+        {
+            "query": "Bukavac combat abilities and aquatic adaptation",
+            "variant": "Bukavac's fighting skills and water survival abilities"
+        }
+    ]
+}

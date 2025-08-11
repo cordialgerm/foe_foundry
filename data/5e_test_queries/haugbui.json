@@ -1,0 +1,25 @@
+{
+    "name": "Haugbui",
+    "queries": [
+        {
+            "query": "undead creature with sunlight sensitivity and psychic abilities",
+            "variant": "creature undead with psychic powers and sensitivity to sunlight"
+        },
+        {
+            "query": "medium-sized spellcasting undead that can move through objects",
+            "variant": "undead medium that casts spells and moves through objects"
+        },
+        {
+            "query": "tough undead with high Dexterity and Wisdom in combat",
+            "variant": "durable undead creature with exceptional Dexterity and Wisdom"
+        },
+        {
+            "query": "undead monster resistant to multiple damage types and has telepathy",
+            "variant": "monster undead that resists different damages and speaks via telepathy"
+        },
+        {
+            "query": "creature with incorporeal movement and powerful spellcasting abilities",
+            "variant": "being with ability to move through objects and strong spellcasting capabilities"
+        }
+    ]
+}

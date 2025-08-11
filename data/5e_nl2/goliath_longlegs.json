@@ -1,0 +1,54 @@
+{
+    "name": "Goliath Longlegs",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 162,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "slow movement at 20 feet",
+    "role": "Controller",
+    "tags": [
+        "monstrosity",
+        "forest",
+        "camouflage",
+        "multiattack"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "formidable",
+        "stealthy",
+        "resilient"
+    ],
+    "description": "The Goliath Longlegs is a gargantuan monstrosity with eight legs and a substantial torso, resembling a large insect or arachnid. It can camouflage itself as a stationary plant, indistinguishable from surrounding flora.",
+    "memorable": "Its unique ability to manipulate the environment, combined with the threat of its paralytic web, makes it a challenging opponent for adventurers.",
+    "goals": "Typically aims to ambush foes and control the battlefield using its webbing and camouflage.",
+    "relations": "May share territory with other forest creatures or be a predator to smaller monstrosities.",
+    "environment": "Usually found in forests or heavily vegetated areas where it can exploit its camouflage.",
+    "strengths": "High resilience due to a large hit point pool, immune to poison, and capable of stealth in forested environments.",
+    "weaknesses": "Slow movement and vulnerability mechanic concerning its legs create tactical limitations.",
+    "attacks": "Can make a bite attack that deals piercing and potential poison damage, as well as multiple leg attacks causing piercing damage.",
+    "most_powerful_ability": "Paralytic Web allows the creature to restrain and potentially paralyze a target, controlling the battlefield.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, enabling it to see in darkness.",
+    "skills": "Has skills in perception and stealth, making it a competent ambush predator.",
+    "additional_information": [
+        "Can disguise itself as vegetation when motionless.",
+        "Has a notable vulnerability mechanic that can affect its balance and position.",
+        "Multiattack feature enables it to make multiple attacks in a turn.",
+        "Capable of pulling restrained creatures closer for follow-up attacks.",
+        "Immunity to conditions such as charmed and frightened increases its survivability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster that ambushes in forests",
+        "gargantuan creature with camouflaged appearance",
+        "forest protector that captures with webbing",
+        "multi-legged beast with paralyzing abilities",
+        "monstrous arachnid with high damage resistance"
+    ]
+}

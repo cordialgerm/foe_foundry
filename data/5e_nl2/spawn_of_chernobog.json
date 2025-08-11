@@ -1,0 +1,52 @@
+{
+    "name": "Spawn of Chernobog",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 95,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "undead",
+        "infectious"
+    ],
+    "adjectives": [
+        "dark",
+        "infectious",
+        "menacing"
+    ],
+    "description": "The Spawn of Chernobog is a large fiend embodying darkness and infection, with a strong physical presence, featuring a threatening physique and an aura of illness.",
+    "memorable": "Its ability to infect and transform victims into spawn creates an intense sense of horror and urgency.",
+    "goals": "To spread its infection and create more spawn, causing chaos and darkness.",
+    "relations": "May be allied with other fiendish entities or corrupted creatures.",
+    "environment": "Thrives in dark environments, avoiding sunlight.",
+    "strengths": "Exceptional melee attacker with high strength and resilience.",
+    "weaknesses": "Vulnerable to radiant damage and significantly weakened in sunlight.",
+    "attacks": "Multiattack with a Bite that infects and claws that deal slashing damage.",
+    "most_powerful_ability": "Night's Blood, which can transform victims into spawn through a debilitating infection.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Proficient in athletics, showcasing its exceptional physical prowess.",
+    "additional_information": [
+        "Immune to being charmed or frightened.",
+        "Can spread a potentially deadly disease that can lead to transformation.",
+        "Gains darkvision and sensitivity to sunlight after infection.",
+        "Secretes black oil aiding in escape from grapples.",
+        "Transforms into a spawn of Chernobog at midnight if not cured."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark fiend that spreads infection",
+        "creature that transforms victims into spawn",
+        "menacing creature thriving in darkness",
+        "large fiend with a powerful bite attack",
+        "infectious dark monster with sunlight sensitivity"
+    ]
+}

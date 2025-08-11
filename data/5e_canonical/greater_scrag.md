@@ -1,6 +1,8 @@
 <MonsterName/>Greater Scrag</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Greater Scrag is a large, chaotic evil monstrosity found lurking in the murky depths of water bodies and swamps. Known for its formidable strength and resilience, this creature poses a significant threat to adventurers who wander near its territory. With high hit points and the ability to regenerate health as long as it remains submerged, the Greater Scrag can outlast many opponents. Its Blood Frenzy ability gives it an edge in combat by increasing its chances of successfully hitting weaker foes. However, it is not particularly quick or dexterous, which can leave it vulnerable to more agile adversaries. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Greater Scrag can perform a Multiattack, enabling it to make thre
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Scrag
 
 *Large* *Monstrosity* *chaotic evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 12 (3d4 + 5)
 
 
+</statblock>
 
 

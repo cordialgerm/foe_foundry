@@ -1,0 +1,25 @@
+{
+    "name": "Alchemist Archer",
+    "queries": [
+        {
+            "query": "humanoid archer with alchemical arrows and high dexterity",
+            "variant": "humanoid archer that has alchemical arrows and high dexterity"
+        },
+        {
+            "query": "medium humanoid that excels in ranged combat and can knock enemies prone",
+            "variant": "medium humanoid that is great at ranged combat and can make enemies prone"
+        },
+        {
+            "query": "archer who uses different elemental arrows and has fey ancestry",
+            "variant": "archer that uses various elemental arrows and possesses fey ancestry"
+        },
+        {
+            "query": "versatile ranged attacker with 135 hit points and environmental mobility",
+            "variant": "versatile range attacker with 135 hit points and good mobility in the environment"
+        },
+        {
+            "query": "skilled archer in leather armor who can restrain enemies with goo",
+            "variant": "skilled archer wearing leather armor that can immobilize enemies using goo"
+        }
+    ]
+}

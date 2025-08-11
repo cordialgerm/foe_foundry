@@ -1,0 +1,25 @@
+{
+    "name": "Titanic Dragon Turtle",
+    "queries": [
+        {
+            "query": "massive aquatic dragon that can breathe air and water",
+            "variant": "huge water dragon that breathes both air and water"
+        },
+        {
+            "query": "powerful sea turtle creature with steam breath attack",
+            "variant": "strong turtle from the sea that can unleash steam breath"
+        },
+        {
+            "query": "dragon turtle that has high Constitution and can resist cold",
+            "variant": "turtle dragon with a strong Constitution and cold resistance"
+        },
+        {
+            "query": "legendary dragon turtle known for lightning storm ability",
+            "variant": "famous dragon turtle with the power of lightning storm"
+        },
+        {
+            "query": "turtle-like dragon that can grapple and deal bludgeoning damage",
+            "variant": "turtle-shaped dragon capable of grappling and causing bludgeoning harm"
+        }
+    ]
+}

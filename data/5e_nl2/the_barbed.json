@@ -1,0 +1,51 @@
+{
+    "name": "The Barbed",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Ambusher",
+    "tags": [
+        "stealth",
+        "poison",
+        "ambush"
+    ],
+    "adjectives": [
+        "cunning",
+        "ruthless",
+        "small"
+    ],
+    "description": "The Barbed is a small humanoid creature with a sinister demeanor, agile build, and sharp barbs across its body, making it well-suited for stealth and ambush tactics.",
+    "memorable": "It excels in teamwork with its Pack Tactics ability, enhancing its combat effectiveness when in groups.",
+    "goals": "To ambush unsuspecting foes and act as a scout for its companions.",
+    "relations": "Typically found in the company of other humanoid creatures and forms alliances for ambush tactics.",
+    "environment": "Often resides in dark or shadowy environments where it can effectively utilize stealth.",
+    "strengths": "Strong dexterity and stealth skills make it an effective ambusher and scout.",
+    "weaknesses": "Sunlight Sensitivity gives it a disadvantage in bright conditions, affecting its combat ability.",
+    "attacks": "Performs Barbed Slash melee attacks that deal both slashing and poison damage, incapacitating foes through poisoning.",
+    "most_powerful_ability": "Pack Tactics grant it advantage on attack rolls when near allies, greatly enhancing its effectiveness in combat.",
+    "senses": "Possesses darkvision that allows it to see in dim light as bright light, aiding its stealthy approach.",
+    "skills": "Proficient in athletics and stealth, allowing it to maneuver and attack undetected.",
+    "additional_information": [
+        "Immune to poison damage and cannot be poisoned.",
+        "Low intelligence limits its effectiveness in social interactions.",
+        "Operates effectively in darkness, leveraging shadows for ambushes.",
+        "Has a distinct appearance with barbs that enhance its menacing aura.",
+        "Releases a potent poison upon successful melee attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid creature that excels in stealth",
+        "cunning ambusher with poison attacks",
+        "ruthless scout that thrives in darkness",
+        "lawful evil creature with sunlight sensitivity",
+        "creature using Pack Tactics in low-light areas"
+    ]
+}

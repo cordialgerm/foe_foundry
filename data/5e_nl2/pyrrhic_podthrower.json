@@ -1,0 +1,52 @@
+{
+    "name": "Pyrrhic Podthrower",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 127,
+    "ac": 13,
+    "srd": false,
+    "cr": "7",
+    "movement": "walking speed of 20 feet and burrowing at the same speed",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush",
+        "fire"
+    ],
+    "adjectives": [
+        "small",
+        "regenerative",
+        "explosive",
+        "stealthy"
+    ],
+    "description": "The Pyrrhic Podthrower is a small plant creature that resembles a clump of crabgrass when motionless, allowing it to effectively ambush unsuspecting foes.",
+    "memorable": "It regenerates health each turn unless damaged by necrotic attacks, making it a persistent threat.",
+    "goals": "To ambush and attack, using regenerative abilities to endure attacks and inflict damage with explosive seedpods.",
+    "relations": "Can be encountered in environments densely populated with plants or similar creatures.",
+    "environment": "Typically found in grassy areas or regions where it can blend in with plant life.",
+    "strengths": "Possesses significant regenerative powers and can inflict area fire damage with explosive attacks.",
+    "weaknesses": "Vulnerable to necrotic damage, which prevents its regeneration.",
+    "attacks": "Utilizes multiattacks with Grass Blades for slashing damage or Flaming Seedpods for explosive fire damage.",
+    "most_powerful_ability": "Regeneration allows it to restore 10 hit points at the start of its turn, maintaining its presence in combat.",
+    "senses": "Has tremorsense up to 90 feet, allowing it to detect movement in its vicinity.",
+    "skills": "Has average awareness reflected in a passive perception score of 10.",
+    "additional_information": [
+        "False Appearance ability helps in ambushing.",
+        "Can regrow explosive seedpods each turn.",
+        "Deals fire damage with its Flaming Seedpod attacks.",
+        "Burrowing ability grants tactical versatility.",
+        "Can explode when grappled, causing damage to nearby creatures."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "explosive small plant creature",
+        "ambushing plant that regenerates health",
+        "creature that blends in with grass",
+        "small monster with fire attacks",
+        "plant that can burrow and attack"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Nightgarm",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 152,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "monstrosity",
+        "dark",
+        "summoner"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evil",
+        "large",
+        "powerful"
+    ],
+    "description": "The Nightgarm is a large, chaotic evil monstrosity, often found in dark and sinister environments. It has notable physical strength and sharp claws, along with an ominous presence.",
+    "memorable": "Its ability to summon wolves and communicate telepathically adds strategic depth to its combat tactics.",
+    "goals": "To dominate its environment and subdue or consume prey.",
+    "relations": "May create falsehearts that it communicates with telepathically.",
+    "environment": "Typically inhabits dark, sinister places.",
+    "strengths": "Possesses strong physical power and resilience with high Hit Points.",
+    "weaknesses": "Vulnerable to radiant damage and silvered weaponry.",
+    "attacks": "Utilizes powerful melee attacks, including a bite and claw, with a unique swallowing ability to incapacitate enemies.",
+    "most_powerful_ability": "Telepathic Bond allows it to communicate across dimensions with its falseheart.",
+    "senses": "Has a passive Perception of 15, indicating solid awareness of its surroundings.",
+    "skills": "Skilled in Stealth and Perception, making it effective for ambushing.",
+    "additional_information": [
+        "Can summon wolves to assist in battle.",
+        "Swallowing ability blinds and restrains targets.",
+        "Resistant to lightning and thunder damage."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster that summons wolves",
+        "monstrosity with deadly bite and claws",
+        "evil creature with telepathic communication",
+        "dark creature that thrives in shadows",
+        "powerful monster with low silver defense"
+    ]
+}

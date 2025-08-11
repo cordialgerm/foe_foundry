@@ -1,0 +1,52 @@
+{
+    "name": "Camel",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 15,
+    "ac": 9,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "50 feet walking speed, good mobility",
+    "role": null,
+    "tags": [
+        "desert",
+        "mount",
+        "beast of burden"
+    ],
+    "adjectives": [
+        "large",
+        "enduring",
+        "docile"
+    ],
+    "description": "The Camel is a large, long-legged mammal with a humped back and thick skin, well-suited for desert environments.",
+    "memorable": "Notably resilient to exhaustion and requiring less water, making it vital for long desert treks.",
+    "goals": "Typically used as a mount or pack animal for transportation in arid regions.",
+    "relations": "Often found in the company of nomadic peoples or traders in desert caravans.",
+    "environment": "Commonly inhabits desert regions where resources are scarce.",
+    "strengths": "High Strength (16), allowing it to carry significant loads and endure harsh climates.",
+    "weaknesses": "Limited offensive capabilities and low armor class, making it vulnerable in combat.",
+    "attacks": "Can deal bludgeoning damage with a bite attack and use bile spit to impair targets.",
+    "most_powerful_ability": "Camel Resilience, which grants resistance to exhaustion and reduces water needs by half.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can travel long distances with minimal water.",
+        "Becomes aggressive when threatened, capable of kicking at predators.",
+        "Possesses a low Intelligence (2), making it unresponsive to complex commands.",
+        "Low passive perception (9), indicating it may miss some threats.",
+        "Functions better in desert environments due to its physical adaptations."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "desert animal known for endurance",
+        "large beast with a humped back",
+        "mount used by traders in arid lands",
+        "pack animal that can travel long distances",
+        "creature that requires little water"
+    ]
+}

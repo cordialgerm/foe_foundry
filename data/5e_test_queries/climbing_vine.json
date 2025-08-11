@@ -1,0 +1,25 @@
+{
+    "name": "Climbing Vine",
+    "queries": [
+        {
+            "query": "plant creature that grapples and inflicts acid damage",
+            "variant": "plant monster that grapples foes and deals acid damage"
+        },
+        {
+            "query": "medium-sized vine that can move through narrow spaces",
+            "variant": "medium vine that can fit through narrow gaps"
+        },
+        {
+            "query": "creature with a low armor class that uses digestive dew",
+            "variant": "monster with low AC that has a digestive dew ability"
+        },
+        {
+            "query": "vulnerable plant creature with melee attack abilities",
+            "variant": "weak plant monster that can make melee attacks"
+        },
+        {
+            "query": "climbing plant that can react when attacked in melee",
+            "variant": "vine creature that can counterattack in melee"
+        }
+    ]
+}

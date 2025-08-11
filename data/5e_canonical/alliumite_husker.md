@@ -1,6 +1,8 @@
 <MonsterName/>Alliumite, Husker</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>15</AC>
+<HP/>68</HP>
 <summary>The Alliumite, known as the Husker, is a Medium-sized chaotic neutral plant creature that poses a unique challenge in combat. With an Armor Class of 15 due to its natural armor and shield, it is reasonably well-protected. The Husker has 68 hit points, giving it good durability in encounters, especially for its Challenge Rating of 2, which makes it suitable for mid-level adventurers. The creature's strengths lie in its abilities to inflict conditions on foes, such as blindness and psychic damage, while its mobility is enhanced by the ability to burrow. However, it has a low Intelligence score, indicating that it may not be highly strategic in its actions. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Alliumite, Husker is a versatile creature that combines physical mi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alliumite, Husker
 
 *Medium* *Plant* *chaotic neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Taunting Threat:** The husker throws a series of rude and menacing gestures at one creature it can see within 30' of it. The target must make a DC 13 Cha save. On a failure the target takes 7 (2d6) psychic and has disadvantage on all attacks not made vs. the husker until the end of its next turn. On a success the target takes half the damage and doesn’t have disadvantage on attacks not made vs. the husker.
 
 
+</statblock>
 
 

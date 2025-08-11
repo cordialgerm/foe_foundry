@@ -1,0 +1,25 @@
+{
+    "name": "Insect Swarm",
+    "queries": [
+        {
+            "query": "tiny insect swarm that disrupts spellcasting",
+            "variant": "swarm of tiny insects that can disrupt spell casting"
+        },
+        {
+            "query": "swarm that covers creatures with insects and hinders their actions",
+            "variant": "swarm that covers beings in insects and hinders their actions"
+        },
+        {
+            "query": "medium swarm with resistance to piercing and slashing damage",
+            "variant": "medium-sized swarm that has resistance to slashing and piercing damage"
+        },
+        {
+            "query": "creature that moves through small openings and can climb walls",
+            "variant": "being that can climb and move through small openings"
+        },
+        {
+            "query": "nuisance swarm that weakens foes in combat without much strength",
+            "variant": "annoying swarm that weakens enemies in battle lacking much strength"
+        }
+    ]
+}

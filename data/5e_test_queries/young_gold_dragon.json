@@ -1,0 +1,25 @@
+{
+    "name": "Young Gold Dragon",
+    "queries": [
+        {
+            "query": "majestic dragon with golden scales that breathes fire",
+            "variant": "majestic gold dragon that breathes fire and has golden scales"
+        },
+        {
+            "query": "noble dragon living near sacred sites with a breath weapon",
+            "variant": "noble dragon that resides near sacred places and has a breath weapon"
+        },
+        {
+            "query": "large dragon that charms creatures with its brilliance and is a protector",
+            "variant": "big dragon known for its charm abilities and serving as a protector"
+        },
+        {
+            "query": "dragon with strong spells and high Constitution guarding against evil",
+            "variant": "dragon that has powerful spells and high Constitution, defending from evil forces"
+        },
+        {
+            "query": "gold dragon that fights for justice and has an aura of peace",
+            "variant": "golden dragon known for its justice and possessing a peaceful aura"
+        }
+    ]
+}

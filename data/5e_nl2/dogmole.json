@@ -1,0 +1,47 @@
+{
+    "name": "Dogmole",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 10 ft, burrow 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "burrowing",
+        "agile"
+    ],
+    "adjectives": [
+        "strong",
+        "agile",
+        "formidable"
+    ],
+    "description": "The Dogmole is a medium-sized beast with strong physical attributes and unique burrowing abilities, allowing it to navigate underground terrain despite its robust appearance. It has sharp claws and a powerful bite, enhancing its effectiveness in melee combat.",
+    "memorable": "Its ability to burrow and create tunnels adds a strategic element, making it a challenging foe in underground encounters.",
+    "goals": "The Dogmole typically seeks to defend its territory and ambush prey using its burrowing capabilities.",
+    "relations": "It may be encountered alongside other beasts, especially insectoid creatures that trigger its Wormkiller Rage.",
+    "environment": "Commonly found in underground areas and terrains suitable for burrowing.",
+    "strengths": "Exceptional agility and the ability to create tunnels for ambush tactics.",
+    "weaknesses": "Low Intelligence and susceptibility to overwhelming force from multiple foes.",
+    "attacks": "Utilizes a powerful bite that inflicts piercing damage and slashing damage with sharp claws, effective in close combat.",
+    "most_powerful_ability": "Wormkiller Rage grants advantage on attacks and increased damage against insectoid creatures.",
+    "senses": "Blindsight 30 ft., enabling it to sense its environment without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Burrows efficiently, leaving behind 5-foot diameter tunnels.",
+        "Can perform both a Bite and a Claw attack in one turn.",
+        "Rage ability enhances combat effectiveness at the cost of defense."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "burrowing beast with sharp claws",
+        "strong creature that digs tunnels",
+        "agile beast with a powerful bite",
+        "Dogmole ambush tactics in underground",
+        "creature that rages against insectoids"
+    ]
+}

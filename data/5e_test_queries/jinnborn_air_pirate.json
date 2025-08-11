@@ -1,0 +1,25 @@
+{
+    "name": "Jinnborn Air Pirate",
+    "queries": [
+        {
+            "query": "medium humanoid pirate with lightning attacks and airship skills",
+            "variant": "humanoid pirate with electric abilities and airship navigation skills"
+        },
+        {
+            "query": "character that uses rapier and can deal extra lightning damage",
+            "variant": "being that uses a rapier and adds lightning damage to its attacks"
+        },
+        {
+            "query": "non-lawful air pirate with flamboyant defense and darkvision",
+            "variant": "chaotic air pirate with flamboyant defense and ability to see in darkness"
+        },
+        {
+            "query": "Jinnborn creature with average survivability and agility in combat",
+            "variant": "Jinnborn being with moderate hit points and fast reflexes in fights"
+        },
+        {
+            "query": "air pirate that resists lightning damage and uses shortbows",
+            "variant": "pirate from the air that has lightning resistance and wields shortbows"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Wakwak",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft., fly 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "pack tactics"
+    ],
+    "adjectives": [
+        "agile",
+        "ferocious"
+    ],
+    "description": "The Wakwak is a large beast characterized by its agility and ferocity in combat, featuring sharp talons and a beak.",
+    "memorable": "Noted for its ability to knock foes prone and gain temporary hit points, making it difficult to take down.",
+    "goals": "To hunt in packs and dominate its enemies through swift attacks and tactical advantages.",
+    "relations": "Commonly found with other beasts or creatures that support its pack tactics.",
+    "environment": "Typically found in open areas where it can utilize its speed and flying ability.",
+    "strengths": "Strong physical attributes and effective in coordinated pack tactics that enhance its combat effectiveness.",
+    "weaknesses": "Low Intelligence and moderate Wisdom limit its mental capabilities and perception.",
+    "attacks": "Attacks with a beak and talons, dealing slashing and piercing damage, respectively, while able to execute a powerful wing slap.",
+    "most_powerful_ability": "Bloodthirsty Pounce allows it to knock targets down and gain temporary hit points.",
+    "senses": "Possesses keen smell, granting advantage on Perception checks related to smell.",
+    "skills": "Has a passive perception of 12, indicating average awareness of its surroundings.",
+    "additional_information": [
+        "Uses Pack Tactics for combat advantages.",
+        "Can fly, albeit at a limited speed.",
+        "Capable of disrupting enemy formations with Wing Slap.",
+        "Gains temporary hit points when attacking prone targets.",
+        "Effective melee combatant in pack scenarios."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large ferocious beast with sharp talons",
+        "agile creature that hunts in packs",
+        "beast that can knock enemies prone",
+        "creature with keen smell and pounce ability",
+        "Wakwak tactics in combat"
+    ]
+}

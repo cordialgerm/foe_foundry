@@ -1,0 +1,53 @@
+{
+    "name": "Sarsaok",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "40 feet speed allowing effective battlefield maneuvering",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "fire",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "aggressive"
+    ],
+    "description": "The Sarsaok is a Huge monstrosity with potent physical strikes, featuring sharp horns and a heated body that deters close-range attackers. Its powerful frame enables it to deliver strong melee attacks and control the battlefield.",
+    "memorable": "The Sarsaok's ability to charge and deal additional damage, combined with its unique Immolating Purge attack, makes it a fearsome adversary.",
+    "goals": "The Sarsaok aims to dominate foes with brute force and area control, utilizing its Charge ability to knock opponents prone.",
+    "relations": "It may encounter other monstrous creatures or be a guardian of a particular territory.",
+    "environment": "Typically found in diverse environments where it can use its speed and strength effectively.",
+    "strengths": "Possesses immunity to fire and poison, along with resistance to piercing damage, enhancing its durability in combat.",
+    "weaknesses": "Vulnerable to cold damage, allowing clever opponents to exploit this weakness.",
+    "attacks": "Engages in multiattack with powerful gore and hoof strikes, dealing consistent damage alongside fire damage.",
+    "most_powerful_ability": "Immolating Purge unleashes a fiery blast in a wide area, significantly impacting multiple foes.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive Perception of 14 for good awareness in combat.",
+    "skills": "Skilled in Perception with a +4 bonus, aiding its ability to notice threats on the battlefield.",
+    "additional_information": [
+        "Charge attack adds extra piercing damage and can knock opponents prone.",
+        "Divine Horns ability ensures damage is effective against resistances.",
+        "Heated Body inflicts fire damage to close-range attackers.",
+        "Good overall health with high Constitution.",
+        "Very low Intelligence indicating poor strategic capabilities."
+    ],
+    "damage_types": [
+        "fire",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Huge monstrosity with fiery attacks",
+        "powerful creature immune to fire and poison",
+        "formidable monster that charges and knocks prone",
+        "creature with devastating area fire attack",
+        "monstrous beast with heated body and strong strikes"
+    ]
+}

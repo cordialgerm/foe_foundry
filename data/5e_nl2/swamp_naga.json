@@ -1,0 +1,54 @@
+{
+    "name": "Swamp Naga",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "naga",
+        "monstrosity",
+        "swamp",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "poisonous",
+        "cunning",
+        "regenerative",
+        "manipulative"
+    ],
+    "description": "A formidable large serpent-like creature that embodies the essence of the swamp, known for its dark green scales and ability to command insects and serpents.",
+    "memorable": "The Swamp Naga can regenerate after death, making it particularly difficult to eliminate.",
+    "goals": "To manipulate its environment and control creatures of the swamp, using its abilities to ambush and ensnare intruders.",
+    "relations": "Often found alongside insects and snakes, as they will not willingly attack the Swamp Naga.",
+    "environment": "Swamps and marshy areas, utilizing water for mobility.",
+    "strengths": "High Strength and Dexterity make it a resilient opponent in combat, while its spellcasting adds versatility.",
+    "weaknesses": "Can be permanently killed only by specific means; if removed from its habitat for a year, it cannot regenerate.",
+    "attacks": "Bite attack causes piercing and poison damage, while Constrict can grapple and restrain foes.",
+    "most_powerful_ability": "Rejuvenation allows it to return to life shortly after death, complicating encounters.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Nature and Persuasion, allowing it to communicate effectively and understand its surroundings.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Can manipulate the battlefield using a cloud of insects.",
+        "8th-level spellcaster with access to various spells.",
+        "Has a unique ability to command insects and serpents for protection.",
+        "Possesses both physical and magical prowess."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "8th-level spellcaster with a focus on manipulation and area control spells.",
+    "test_queries": [
+        "manipulative swamp creature with insect control",
+        "poisonous naga that can regenerate after death",
+        "magic-user living in swampy environments",
+        "large serpent that commands insects and serpents",
+        "swamp monster with powerful bite and constrict ability"
+    ]
+}

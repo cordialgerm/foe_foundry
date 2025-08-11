@@ -1,0 +1,52 @@
+{
+    "name": "Rakshasa, Myrmidon",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 51,
+    "ac": 18,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "tactical",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "deceptive",
+        "versatile"
+    ],
+    "description": "The Rakshasa Myrmidon is a medium-sized fiend clad in scale mail and wielding a shield, notable for its striking appearance that reflects its combat readiness and fiendish nature.",
+    "memorable": "It possesses a unique ability to immunize itself against lower-level spells, making it resilient in magical encounters.",
+    "goals": "To serve its fiendish masters and disrupt the plans of good-aligned creatures.",
+    "relations": "Often seen working alongside other Rakshasas, emphasizing their teamwork in battle.",
+    "environment": "Typically found in realms of evil or where chaos reigns, often alongside other fiends.",
+    "strengths": "High Armor Class and magical weapons, along with immunity to lower-level spells provide significant advantages in combat.",
+    "weaknesses": "Vulnerable to piercing damage from magical weapons wielded by good-aligned creatures.",
+    "attacks": "Utilizes a Forked Scimitar for melee and an Arcane Bolt for ranged attacks, dealing both slashing and force damage.",
+    "most_powerful_ability": "Limited Magic Immunity enables it to avoid lower-level spells while still having defenses against other magical effects.",
+    "equipment": "Wears scale mail and carries a shield, enhancing its defensive capabilities.",
+    "senses": "Has darkvision extending up to 60 feet, allowing it to see clearly in darkness.",
+    "skills": "Possesses average perception skills.",
+    "additional_information": [
+        "Advantages on saving throws against being charmed or frightened.",
+        "Can impose disadvantage on attack rolls targeting allies within 5 feet.",
+        "Combines melee and ranged combat abilities effectively.",
+        "Can cast *Detect Thoughts* at will, enhancing its tactical options.",
+        "Horsemen of evil intent often accompany these creatures."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Can cast *Detect Thoughts* at will and *Disguise Self* twice per day.",
+    "test_queries": [
+        "magical fiend with strong combat abilities",
+        "tactical creature immune to lower-level spells",
+        "Rakshasa that disrupts enemy actions",
+        "medium-sized fiend with scimitar attacks",
+        "lawful evil creature using deception in battle"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Stone Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 178,
+    "ac": 17,
+    "srd": true,
+    "cr": "10",
+    "movement": "slow-moving at 30 feet",
+    "role": "Defender",
+    "tags": [
+        "golem",
+        "construct",
+        "guardian"
+    ],
+    "adjectives": [
+        "massive",
+        "relentless",
+        "durable"
+    ],
+    "description": "The Stone Golem is a towering figure made from solid rock, crafted to serve as a guardian. Its immense strength, nearly impervious exterior, and lack of creativity characterize its presence.",
+    "memorable": "Its ability to slow enemies and its immunity to non-magical attacks make it a formidable foe.",
+    "goals": "To guard ancient sites, treasures, or fulfill its programmed duties without question.",
+    "relations": "Often found alongside constructs or in places of great importance like temples and tombs.",
+    "environment": "Ancient temples, tombs, or places laden with treasure.",
+    "strengths": "Immune to non-magical damage, poison, and psychic damage; advantages against spells.",
+    "weaknesses": "Low intelligence and charisma makes it vulnerable to certain mental effects.",
+    "attacks": "Three powerful Slam melee attacks, each capable of dealing substantial bludgeoning damage.",
+    "most_powerful_ability": "The Slow ability disrupts enemy actions, significantly hindering their combat effectiveness.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet.",
+    "skills": "Does not require air, food, drink, or sleep due to its construct nature.",
+    "additional_information": [
+        "Magic Resistance provides advantage on saving throws against magical effects.",
+        "Immutable Form makes it immune to alterations of its physical form.",
+        "Can rearrange its stone body for tactical advantages.",
+        "Slam attacks are considered magical, bypassing non-magical defenses.",
+        "Condition immunities include charmed, exhaustion, and frightened."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive guardian made of stone",
+        "construct that slows enemies in combat",
+        "golem defending ancient treasure",
+        "durable stone creature with magical attacks",
+        "slow-moving magical guardian"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Deep Dwarf Soldier",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 16,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet movement speed, tactical movement for repositioning",
+    "role": "Skirmisher",
+    "tags": [
+        "dwarf",
+        "soldier",
+        "magic",
+        "melee"
+    ],
+    "adjectives": [
+        "resilient",
+        "tactical",
+        "strong",
+        "magical"
+    ],
+    "description": "A Medium humanoid soldier with rugged features and sturdy armor, wielding a War Pick and a Heavy Crossbow.",
+    "memorable": "Utilizes tactical magic to enhance physical prowess and evade danger.",
+    "goals": "To protect its territory and outmaneuver foes in battle.",
+    "relations": "May be encountered with other dwarves or similar subterranean creatures.",
+    "environment": "Often found in underground settings or dwarf strongholds.",
+    "strengths": "Advantages against illusions and charm effects, good melee capabilities.",
+    "weaknesses": "Limited mental capabilities with average Intelligence, Wisdom, and Charisma.",
+    "attacks": "Melee weapon attacks with a War Pick, enhanced when enlarged; ranged attacks with a Heavy Crossbow.",
+    "most_powerful_ability": "The Enlarge spell, allowing the soldier to grow stronger and deal additional damage.",
+    "senses": "Possesses darkvision to see in complete darkness up to 120 feet.",
+    "skills": "Fairly effective in Perception and Survival with +2 bonuses.",
+    "additional_information": [
+        "Has a unique ability to cast spells like Invisibility and Enlarge.",
+        "Gains advantage on saving throws against being charmed or paralyzed.",
+        "Tactical Movement allows repositioning without provoking attacks.",
+        "Benefit from being near allies to enhance melee damage.",
+        "Durable due to good physical attributes."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast Enlarge/Reduce and Invisibility once per long rest.",
+    "test_queries": [
+        "tactical dwarf soldier with magic abilities",
+        "deep dwarf with high melee damage",
+        "soldier that can become larger",
+        "dwarf that uses spells in battle",
+        "militant creature with strong resistance to magic"
+    ]
+}

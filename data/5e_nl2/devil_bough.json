@@ -1,0 +1,54 @@
+{
+    "name": "Devil Bough",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 114,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walking speed of 10 feet",
+    "role": null,
+    "tags": [
+        "fiend",
+        "evil",
+        "monster",
+        "Huge"
+    ],
+    "adjectives": [
+        "formidable",
+        "robust",
+        "sinister"
+    ],
+    "description": "The Devil Bough is a Huge Fiend characterized by its sinister appearance, with tremendous physical strength and a menacing presence on the battlefield.",
+    "memorable": "Its unique ability to sense the alignment of nearby creatures and regain health from lower-level spells makes it a strategic adversary.",
+    "goals": "Typically seeks to overpower foes and assert dominance in combat.",
+    "relations": "Associates with other evil-aligned fiends and might serve more powerful demon lords.",
+    "environment": "Often found in dark, sinister locations like cursed woods or desolate landscapes.",
+    "strengths": "Possesses substantial health and immunities to fire and poison, along with powerful claw and bite attacks.",
+    "weaknesses": "Very limited movement speed of only 10 feet restricts its mobility during combat.",
+    "attacks": "Employs a Multiattack, using powerful claw and bite attacks that can grapple targets, making it dangerous in melee encounters.",
+    "most_powerful_ability": "Grinding Maw enhances its attack capabilities against restrained enemies, providing a tactical advantage.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 60 feet, allowing it to detect creatures in its vicinity even without sight.",
+    "skills": "Has a passive perception of 13, indicating an average awareness of its surroundings.",
+    "additional_information": [
+        "Can sense the alignment of nearby creatures within 60 feet.",
+        "Gains advantage on attacks against grappled creatures.",
+        "Can regain health from nearby spellcasting actions.",
+        "Damage immunities include fire and poison.",
+        "Has a modest constitution that contributes to its durability."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Can regain hit points when a spell of 5th level or lower is cast nearby.",
+    "test_queries": [
+        "Huge fiend with evil alignment",
+        "monster that can sense alignments nearby",
+        "Devil Bough's unique attack abilities",
+        "creature that regains health from spells",
+        "large fiend with strong grapple attacks"
+    ]
+}

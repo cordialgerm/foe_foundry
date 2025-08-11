@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Light Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Gargantuan",
+    "hp": 407,
+    "ac": 22,
+    "srd": false,
+    "cr": "22",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "guardian",
+        "cosmic"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "resilient",
+        "illuminating"
+    ],
+    "description": "The Ancient Light Dragon is a gargantuan dragon with a majestic and radiant appearance, often viewed as a guardian of cosmic balance, light, and knowledge.",
+    "memorable": "Its ability to traverse the void of space without the need for air, food, or sleep sets it apart from other dragons.",
+    "goals": "To protect cosmic balance and spread knowledge.",
+    "relations": "Potentially interacts with celestial beings or other dragons.",
+    "environment": "Usually found in celestial realms or near sources of radiant energy.",
+    "strengths": "Immune to radiant damage and nonmagical damage, possesses high physical attributes and a variety of impactful abilities.",
+    "weaknesses": "Susceptible to fire damage.",
+    "attacks": "Utilizes a powerful bite, slashing claw, and bludgeoning tail to deal substantial melee damage, along with frightening presence and devastating radiant breath.",
+    "most_powerful_ability": "Radiant Breath deals significant area damage and has the potential to blind enemies or turn undead.",
+    "equipment": null,
+    "senses": "The dragon possesses blindsight, allowing it to sense its surroundings without relying on sight.",
+    "skills": "Boasts high proficiency in arcana, nature, perception, persuasion, and religion, enhancing its capabilities in interaction and awareness.",
+    "additional_information": [
+        "Can see into the Ethereal Plane with Ethereal Sight.",
+        "Sheds light in a 30-foot radius, affecting stealth and visibility.",
+        "Can move through creatures and objects with ease.",
+        "Either blinded or immune to the blinded condition.",
+        "Has legendary resistance, allowing it to negate failures on saving throws."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "guardian of light dragon",
+        "gargantuan celestial dragon",
+        "dragon with radiant breath",
+        "magnificent light dragon characteristics",
+        "dragon that traverses the void"
+    ]
+}

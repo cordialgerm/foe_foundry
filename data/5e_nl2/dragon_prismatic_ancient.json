@@ -1,0 +1,57 @@
+{
+    "name": "Prismatic Ancient Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 407,
+    "ac": 20,
+    "srd": false,
+    "cr": "21",
+    "movement": "walking speed of 50 feet and climbing speed of 40 feet",
+    "role": null,
+    "tags": [
+        "dragon",
+        "prismatic",
+        "ancient"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "formidable",
+        "devastating"
+    ],
+    "description": "This prismatic dragon boasts a gargantuan form and a striking presence, using its powerful physical attacks combined with magical abilities.",
+    "memorable": "Possesses a potent Breath Weapon that can deal multiple damage types and has the unique ability to frighten foes.",
+    "goals": "To dominate the battlefield and instill fear in its enemies.",
+    "relations": "Often encountered along with other draconic creatures or as a lord of a dragon lair.",
+    "environment": "Typically found in mountainous regions or ancient castle ruins.",
+    "strengths": "Immune to radiant damage and conditions that would blind it, with exceptional durability and a high passive perception.",
+    "weaknesses": "Average Dexterity makes it less evasive against fast attacks.",
+    "attacks": "Employs a Multiattack consisting of a frightful presence, a powerful bite, two slashing claw attacks, and a bludgeoning tail strike.",
+    "most_powerful_ability": "Its Breath Weapon can deal vast amounts of radiant damage or a variety of elemental damage types, depending on the choice made.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a remarkable passive perception of 27.",
+    "skills": "Has proficiency in perception, indicating acute sensory abilities.",
+    "additional_information": [
+        "Can recharge its Breath Weapon on a roll of 5 or 6.",
+        "Has access to formidable spells, including the prismatic wall, usable once per day.",
+        "Legendary Resistance allows it to succeed on failed saving throws multiple times daily.",
+        "Can blind creatures with its Shimmering Wings legendary action.",
+        "Frightful Presence can intimidate foes within a 120-foot radius."
+    ],
+    "damage_types": [
+        "radiant",
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": "At will, can cast charm person, dancing lights, and prismatic spray, with the prismatic wall available once per day.",
+    "test_queries": [
+        "gargantuan dragon with fearsome attacks",
+        "dragon that uses radiant breath weapon",
+        "monster with frightful presence and magic",
+        "ancient dragon with multiple damage types",
+        "powerful dragon that can blind enemies"
+    ]
+}

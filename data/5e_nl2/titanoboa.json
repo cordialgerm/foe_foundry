@@ -1,0 +1,52 @@
+{
+    "name": "Titanoboa",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Gargantuan",
+    "hp": 232,
+    "ac": 14,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "serpent",
+        "apex"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "powerful",
+        "stunning"
+    ],
+    "description": "The Titanoboa is a colossal snake, possessing exceptional brute strength. It has armored scales and a menacing presence, with a muscular body capable of constricting and swallowing its prey.",
+    "memorable": "Its ability to stun enemies with its scales and powerful grappling attacks makes it a terrifying predator.",
+    "goals": "Hunting for large prey and establishing dominance in its territory.",
+    "relations": "It can be encountered in areas with other large wildlife and may dominate smaller predators.",
+    "environment": "Typically found in jungles and swamps, thriving in lush, humid environments.",
+    "strengths": "Powerful bite and constricting attacks allow it to deal significant damage and control opponents.",
+    "weaknesses": "Low Dexterity limits its agility and maneuverability in combat.",
+    "attacks": "Multiattack allows it to strike with two bite attacks or one bite and one constrict, dealing substantial piercing and bludgeoning damage.",
+    "most_powerful_ability": "Sparkling Scales can stun creatures, providing opportunities for the Titanoboa to attack without retaliation.",
+    "equipment": null,
+    "senses": "Blindsight allows it to perceive its surroundings within 10 feet.",
+    "skills": "Its perception skills grant it a fair ability to notice details.",
+    "additional_information": [
+        "Can slither through tight spaces if it has not eaten a huge creature recently.",
+        "Swallow ability inflicts ongoing acid damage to swallowed enemies.",
+        "Grapples opponents with its constricting attack, rendering them restrained.",
+        "Strong body contributes to high hit points.",
+        "Exceptional strength modifier of +8 enables powerful melee attacks."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan snake with stunning scales",
+        "colossal predator living in jungles",
+        "massive constrictor with powerful bite",
+        "large serpent that swallows its prey",
+        "apex predator with blindsight ability"
+    ]
+}

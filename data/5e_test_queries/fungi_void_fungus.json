@@ -1,0 +1,25 @@
+{
+    "name": "Void Fungus",
+    "queries": [
+        {
+            "query": "eerie glowing plant that can charm and poison",
+            "variant": "glowing eerie plant that can poison and charm"
+        },
+        {
+            "query": "medium fungal creature with psychic abilities and high perception",
+            "variant": "fungal creature of medium size with high perception and psychic powers"
+        },
+        {
+            "query": "plant monster that lives in dark areas and resists cold damage",
+            "variant": "monster plant that resists cold damage and dwells in darkness"
+        },
+        {
+            "query": "creature with blindsight and a damaging psychic attack",
+            "variant": "being with blindsight capability and an attack that deals psychic damage"
+        },
+        {
+            "query": "fungus that blends into its environment with false appearance",
+            "variant": "fungus that can blend into surroundings with false identity"
+        }
+    ]
+}

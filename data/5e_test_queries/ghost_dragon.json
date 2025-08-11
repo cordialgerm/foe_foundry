@@ -1,0 +1,25 @@
+{
+    "name": "Ghost Dragon",
+    "queries": [
+        {
+            "query": "undead dragon that uses psychic attacks and instills fear",
+            "variant": "undead dragn that uses psichic attacks and instills fear"
+        },
+        {
+            "query": "flying monster with high Dexterity and cold immunity",
+            "variant": "fling monster with high dextterity and cold immunety"
+        },
+        {
+            "query": "ethereal creature that can pass through objects and targets",
+            "variant": "etheral creture that can pass through objecs and targets"
+        },
+        {
+            "query": "large ghostly dragon that cannot walk and has claw attacks",
+            "variant": "large ghostly dragn that cant walk and has claw attaks"
+        },
+        {
+            "query": "monster with darkvision and horrifying breath ability",
+            "variant": "monstr with darkvision and horrible breath abillity"
+        }
+    ]
+}

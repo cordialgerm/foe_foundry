@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Light Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon that travels through space and is a guardian of light",
+            "variant": "dragon that is gargantuan and traverses space, serving as a light guardian"
+        },
+        {
+            "query": "dragon with radiant damage immunity that has powerful melee attacks",
+            "variant": "radiant damage immune dragon with strong melee capabilities"
+        },
+        {
+            "query": "dragon that emits dazzling light while flying and can instill fear",
+            "variant": "flying dragon that can create dazzling light and instills fear in enemies"
+        },
+        {
+            "query": "ancient dragon that has legendary resistance and can see into the ethereal plane",
+            "variant": "legendary resistant dragon that can observe the ethereal plane"
+        },
+        {
+            "query": "light dragon known for its high hit points and blinding breath weapon",
+            "variant": "dragon of light recognized for its massive hit points and blinding breath attack"
+        }
+    ]
+}

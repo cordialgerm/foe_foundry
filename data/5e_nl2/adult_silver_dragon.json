@@ -1,0 +1,52 @@
+{
+    "name": "Adult Silver Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Huge",
+    "hp": 267,
+    "ac": 19,
+    "srd": true,
+    "cr": "16",
+    "movement": "40 ft., fly 80 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "magical",
+        "flying"
+    ],
+    "adjectives": [
+        "regal",
+        "noble",
+        "majestic",
+        "compassionate"
+    ],
+    "description": "The Adult Silver Dragon is a massive creature with gleaming silver scales, large majestic wings, and often radiates a calming and dignified presence.",
+    "memorable": "Known for its compassion and justice, it frequently takes human form to assist mortals, embodying grace and intelligence that make it a formidable opponent.",
+    "goals": "To serve justice, assist those in need, and combat evil.",
+    "relations": "Might be encountered alongside other dragons, good-aligned creatures, or adventurers who seek its favor.",
+    "environment": "High, snowy mountains where it can survey vast landscapes.",
+    "strengths": "Possesses powerful breath weapons, including a freezing blast and a paralyzing gas, immunity to cold damage, and formidable physical and magical abilities.",
+    "weaknesses": "Highly reliant on its breath weapons and spells; if these powers are disabled, it may struggle in prolonged engagements.",
+    "attacks": "Multiattack with a bite, claw, and tail attacks; can utilize Frightful Presence to instill fear.",
+    "most_powerful_ability": "Breath weapons that include a powerful freezing blast and a paralyzing breath affecting multiple foes at once.",
+    "senses": "Blindsight up to 60 feet and darkvision up to 120 feet, giving a passive perception of 21, making it difficult to approach stealthily.",
+    "skills": "Noteworthy skill proficiencies in arcana, history, and perception, combined with high Charisma enhances its effectiveness in various encounters.",
+    "additional_information": [
+        "Legendary Resistance allows it to negate failed saving throws three times a day.",
+        "Cloud Strider ability grants immunity to nonmagical damage and increased fly speed in cloud form.",
+        "Can shapeshift into humanoid or beast form while retaining some dragon abilities.",
+        "Has access to legendary actions that can influence the dynamics of battles.",
+        "Possesses a Freezing Fog ability affecting creatures within a close radius."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast charm person, faerie fire, awaken, and geas up to three times per day.",
+    "test_queries": [
+        "regal silver dragon",
+        "noble dragon abilities",
+        "magical creature with freezing breath",
+        "huge dragon with paralyzing gas",
+        "compassionate dragon serving justice"
+    ]
+}

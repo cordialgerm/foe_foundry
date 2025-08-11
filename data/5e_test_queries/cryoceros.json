@@ -1,0 +1,25 @@
+{
+    "name": "Cryoceros",
+    "queries": [
+        {
+            "query": "large monster with powerful melee attacks and snowy terrain advantage",
+            "variant": "big creature with strong physical attacks and advantage in snowy environments"
+        },
+        {
+            "query": "fierce cold-resistant creature that knocks opponents prone",
+            "variant": "vicious cold-resistant beast that can knock down enemies"
+        },
+        {
+            "query": "aggressive snow monster with abilities in icy areas",
+            "variant": "hostile icy creature with skills in snowy environments"
+        },
+        {
+            "query": "large icy creature with strong attack damage and trample ability",
+            "variant": "big ice-based creature with high damage output and trampling move"
+        },
+        {
+            "query": "Cryoceros tactics in combat situations",
+            "variant": "Cryoceros strategies during battles"
+        }
+    ]
+}

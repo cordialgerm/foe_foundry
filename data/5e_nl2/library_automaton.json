@@ -1,0 +1,52 @@
+{
+    "name": "Library Automaton",
+    "creature_type": "Construct",
+    "alignment": "Lawful Neutral",
+    "size": "Small",
+    "hp": 24,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "guardian",
+        "knowledge",
+        "information",
+        "utility"
+    ],
+    "adjectives": [
+        "intelligent",
+        "organizer",
+        "magical"
+    ],
+    "description": "The Library Automaton is a small construct designed to guard and organize knowledge, possessing a remarkable understanding of written languages. It is inefficient in physical strength, yet clever in abilities to manipulate objects from a distance and safeguard written works in its extradimensional space. Its design includes magical capabilities that allow it to perform simple tasks without physical handling.",
+    "memorable": "Its unique abilities for understanding languages and the magical manipulation of objects make it an interesting utility in combat and knowledge management.",
+    "goals": "To manage and safeguard books and written records, ensuring they are accessible and undamaged in a library environment.",
+    "relations": "It may be found alongside other constructs or creatures that deal with knowledge, such as sages or wizards.",
+    "environment": "Typically found in libraries, archives, or places of knowledge.",
+    "strengths": "Possesses strong abilities in knowledge gathering, manipulation of objects, and safeguarding information.",
+    "weaknesses": "Physically weak with limited combat capabilities; vulnerable to direct physical attacks.",
+    "attacks": "Utilizes a Piston-Powered Kick for melee and an Unnerving Gaze for ranged psychic damage, influencing targets by imposing disadvantage.",
+    "most_powerful_ability": "The Bibliotelekinesis ability allows it to manipulate objects from a distance, providing significant utility in handling books and records without physical interaction.",
+    "senses": "The Library Automaton has blindsight up to 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "It excels in History and Investigation checks, demonstrating profound knowledge of written works.",
+    "additional_information": [
+        "Can understand and translate any written language it can see.",
+        "Contains an extradimensional space for storing written works.",
+        "Is a construct, hence does not need to eat, drink, or sleep.",
+        "Immunity to many conditions, making it reliable in various scenarios.",
+        "Essentially a guardian of libraries, significantly aiding in organization."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magical construct that guards knowledge",
+        "small guardian that understands languages",
+        "knowledge keeper with extradimensional storage",
+        "automaton that manipulates objects from afar",
+        "library guardian with psychic abilities"
+    ]
+}

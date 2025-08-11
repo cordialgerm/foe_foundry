@@ -1,0 +1,48 @@
+{
+    "name": "Aridni",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "60 feet walking, 20 feet flying",
+    "role": null,
+    "tags": [
+        "fey",
+        "stealthy",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "sneaky"
+    ],
+    "description": "The Aridni is a small fey creature characterized by its exceptional agility and cunning. It has a delicate appearance with an affinity for magic.",
+    "memorable": "The Aridni's ability to avoid opportunity attacks while flying and its magic resistance make it a formidable and evasive opponent.",
+    "goals": "The Aridni typically seeks to manipulate others and create chaos for its own amusement, using charm and trickery.",
+    "relations": "Aridni may be encountered alongside other fey creatures and possibly under the command of a powerful fey lord.",
+    "environment": "Aridni can usually be found in enchanted forests or mystical glades, where magic is prevalent.",
+    "strengths": "High Dexterity and spellcasting abilities allow it to excel in combat and maneuverability.",
+    "weaknesses": "Low Strength makes it vulnerable in close combat against physically stronger opponents.",
+    "attacks": "The Aridni makes quick, precise attacks with its Shortsword or Pixie Bow, delivering piercing damage.",
+    "most_powerful_ability": "Its Enchanted Arrows ability can impose debilitating effects such as confusion, fear, laughter, or sleep on its targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Expert in Acrobatics and Stealth, making it difficult to detect and easy to maneuver in combat.",
+    "additional_information": [
+        "Uses Flyby ability to avoid opportunity attacks while flying.",
+        "Has advantage on saving throws against spells and magical effects due to Magic Resistance.",
+        "Can cast spells like Invisibility and Spike Growth at will, providing strategic combat options."
+    ],
+    "damage_types": [],
+    "spellcasting": "The Aridni possesses strong spellcasting abilities, including at-will spells such as Dancing Lights and Invisibility, and can cast Charm Person and Faerie Fire three times a day.",
+    "test_queries": [
+        "cunning small fey",
+        "agile magic user",
+        "stealthy trickster creature",
+        "fey with flying abilities",
+        "manipulative aridni"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Spy",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "30 feet walking",
+    "role": null,
+    "tags": [
+        "stealth",
+        "deception",
+        "infiltration",
+        "assassination"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "versatile",
+        "trained"
+    ],
+    "description": "The Spy is a cunning and agile humanoid skilled in stealth and deception. They often employ disguises and false identities to navigate shadows and gather information. Equipped with a shortsword and hand crossbow, they excel in precision strikes and quickly retreating.",
+    "memorable": "Their ability to deal extra damage with sneak attacks can turn the tide of combat, making them fearsome foes.",
+    "goals": "To gather information, steal secrets, and assassinate key targets without drawing attention.",
+    "relations": "Often employed by rulers, guilds, and other powerful individuals to manipulate political situations.",
+    "environment": "Favors urban environments where they can easily blend in and gather intel.",
+    "strengths": "Expertise in stealth and deception, high Dexterity for effective ranged and melee attacks.",
+    "weaknesses": "Average physical and mental attributes limit durability in direct combat.",
+    "attacks": "Utilizes shortswords for melee strikes and hand crossbows for ranged attacks, both capable of inflicting piercing damage.",
+    "most_powerful_ability": "Sneak Attack, allowing them to deal significant extra damage under certain conditions.",
+    "equipment": null,
+    "senses": "Possesses passive Perception of 16, enabling effective detection of hidden objects and creatures.",
+    "skills": "Proficient in deception, insight, investigation, perception, persuasion, sleight of hand, and stealth, with strong modifiers in key areas.",
+    "additional_information": [
+        "Can use Cunning Action for tactical mobility.",
+        "Specializes in rapid attacks with their shortsword.",
+        "Can feint to gain advantage on attacks after pretended maneuvers.",
+        "Possesses skills for gathering intelligence without being noticed.",
+        "Often operates under the direction of powerful patrons."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy humanoid with a crossbow",
+        "agile creature trained in deception",
+        "spy that excels in stealth and infiltration",
+        "cunning assassin that uses sneak attacks",
+        "medium humanoid skilled in stealth and deception"
+    ]
+}

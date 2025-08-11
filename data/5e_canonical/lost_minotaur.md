@@ -1,6 +1,8 @@
 <MonsterName/>Lost Minotaur</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Lost Minotaur is a large undead creature with a neutral evil alignment, designed to be a formidable opponent in combat. With an armor class of 16 and a notable 114 hit points, it possesses significant durability. Its challenge rating of 8 indicates that it poses a moderate to high threat level, capable of earning 3,900 experience points upon defeat. The creature excels in physical combat, most notably due to its high strength score of 20, which provides it with a +5 modifier that leads to very good attack rolls. However, its low intelligence and charisma scores imply a lack of versatility in social interactions or complex problem-solving, making it reliant on brute strength and its special abilities to dominate in encounters.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Lost Minotaur can make a Multiattack, allowing it to strike with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lost Minotaur
 
 *Large* *Undead* *neutral evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Gore:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage.
 
 
+</statblock>
 
 

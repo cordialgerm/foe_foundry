@@ -1,0 +1,54 @@
+{
+    "name": "Ancient Green Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Gargantuan",
+    "hp": 385,
+    "ac": 21,
+    "srd": true,
+    "cr": "22",
+    "movement": "40 ft. on land, 80 ft. flying, 40 ft. swimming",
+    "role": null,
+    "tags": [
+        "dragon",
+        "chromatic",
+        "gargantuan",
+        "ambush predator"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "intelligent",
+        "fearsome"
+    ],
+    "description": "The Ancient Green Dragon features deep green scales that blend seamlessly into dense forests. Its long, sinuous body is armed with sharp claws, making it a formidable predator. Not only is it large and powerful, but its intelligence and cunning allow it to use deception to ensnare its prey.",
+    "memorable": "This dragon is known for its treachery, using manipulation and powerful poisonous breath to control the battlefield and instill fear in its enemies.",
+    "goals": "To manipulate its surroundings and prey through deception, often playing long games to outwit and defeat foes.",
+    "relations": "Often regarded as a master of forests, it may serve or be served by other creatures in its territory, such as various beasts or lesser dragons.",
+    "environment": "Primarily found in ancient forests, utilizing the terrain to its advantage.",
+    "strengths": "Possesses high resilience due to robust defenses and large hit points; notable spellcasting abilities enhance its combat and manipulation tactics.",
+    "weaknesses": "Moderate Dexterity may leave it vulnerable to ranged attacks and faster opponents; utilizes Legendary Resistance, but depletion of this ability reduces armor class.",
+    "attacks": "Utilizes a powerful bite attack, claw attacks, and a poison breath weapon that affects a large area, as well as the ability to instill fear with its presence.",
+    "most_powerful_ability": "Poison Breath creates a devastating area-of-effect attack that can incapacitate multiple enemies with toxic gas.",
+    "equipment": null,
+    "senses": "Blindsight out to 60 feet and an impressive passive Perception of 27, allowing it to detect threats effectively.",
+    "skills": "Highly proficient in Deception, Insight, and Persuasion, enabling it to manipulate other creatures effectively.",
+    "additional_information": [
+        "Amphibious, can breathe both air and water.",
+        "Legendary Resistance allows it to ignore failed saving throws a limited number of times each day.",
+        "Woodland Stalker ability gives advantages on stealth checks in forested areas.",
+        "Blood Toxicity punishes melee attackers with poison damage when the dragon is bloodied.",
+        "Hallucinogenic Gas affects creatures around it post-Poison Breath, causing fear and hallucinations."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma; can cast spells for manipulation, communication, and observation.",
+    "test_queries": [
+        "stealthy forest dragon",
+        "manipulative green dragon",
+        "toxic breath dragon",
+        "gargantuan cunning predator",
+        "legendary dragon abilities"
+    ]
+}

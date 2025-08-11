@@ -1,0 +1,25 @@
+{
+    "name": "Elf, Shadow Fey Executioner",
+    "queries": [
+        {
+            "query": "humanoid creature that uses necrotic weapons and has sunlight sensitivity",
+            "variant": "humanoid being that wields necrotic-infused weapons and suffers from sunlight sensitivity"
+        },
+        {
+            "query": "lawful evil executioner known for commanding severed heads",
+            "variant": "lawful evil executioner famous for its ability to control severed heads"
+        },
+        {
+            "query": "medium-sized shadow fey creature with strong physical attacks",
+            "variant": "shadow fey humanoid of medium size with powerful physical assault abilities"
+        },
+        {
+            "query": "executioner that moves through shadows and has blindsight",
+            "variant": "humanoid executioner able to travel through shadows and possesses blindsight"
+        },
+        {
+            "query": "monster with darkvision and necrotic damage abilities",
+            "variant": "creature that has darkvision and capabilities to deal necrotic damage"
+        }
+    ]
+}

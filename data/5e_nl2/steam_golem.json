@@ -1,0 +1,53 @@
+{
+    "name": "Steam Golem",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 171,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "golem",
+        "steam"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "magical",
+        "durable"
+    ],
+    "description": "The Steam Golem is a large construct with a robust form characterized by steam mechanisms, possessing powerful physical attacks. It has shining metal features emanating steam.",
+    "memorable": "The Steam Golem's unique vulnerability to water and its ability to disrupt spellcasting with its whistle create memorable tactical challenges in combat.",
+    "goals": "To serve its creator and fulfill its intended purpose without the need for sustenance.",
+    "relations": "Typically created by skilled artificers or wizards.",
+    "environment": "Often found in workshops or laboratories where magic and machinery intersect.",
+    "strengths": "Resistant to fire, poison, and non-magical physical attacks, while also possessing magical resistance against spells.",
+    "weaknesses": "Vulnerable to water, which can extinguish its internal fire, rendering it dormant.",
+    "attacks": "The Steam Golem can use a powerful axe arm and long axe attacks, dealing substantial slashing and fire damage.",
+    "most_powerful_ability": "Steam Blast, which releases a devastating blast of steam in an area, dealing significant fire damage to creatures caught within.",
+    "equipment": null,
+    "senses": "The golem has a passive perception of 10, indicating average awareness of its surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Immune to effects that would alter its physical form due to its Immutable Form ability.",
+        "Does not require air, food, drink, or sleep because it is a construct.",
+        "Its weapon attacks are magical and deal additional fire damage.",
+        "Can disrupt spellcasters within range with its Whistle ability.",
+        "Requires relighting of its internal fire if extinguished to regain full effectiveness."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large steam-powered construct",
+        "construct with dangerous fire attacks",
+        "golem vulnerable to water attacks",
+        "mechanical enemy with powerful axe attacks",
+        "magical golem that disrupts spellcasting"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Mindrot Thrall",
+    "creature_type": "Plant",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at a speed of 30 feet",
+    "role": "null",
+    "tags": [
+        "plant",
+        "fungal",
+        "disease"
+    ],
+    "adjectives": [
+        "eerie",
+        "necrotic",
+        "slashing",
+        "acidic"
+    ],
+    "description": "The Mindrot Thrall is a Medium-sized plant creature characterized by its fungal appearance, exuding an unsettling aura. It displays physical features similar to rotting vegetation, contributing to its formidable presence in battle.",
+    "memorable": "Its ability to transmit the mindrot disease and raise the deceased as more Mindrot Thralls makes it a persistent threat.",
+    "goals": "To infect opponents with mindrot disease and weaken them in combat.",
+    "relations": "Related to other fungal entities and might be encountered with lesser plant creatures.",
+    "environment": "Typically found in damp, decaying environments where fungi thrive.",
+    "strengths": "Has acid and poison immunity and features a powerful Spore Breath attack.",
+    "weaknesses": "Vulnerable to specific damage types which can be exploited by players.",
+    "attacks": "Performs multiple Claw attacks and emits a cone of acidic spores as a ranged attack.",
+    "most_powerful_ability": "Spore Breath releases a dangerous blast of acidic spores that can both damage and infect.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 30 feet, allowing it to detect vibrations in its surroundings.",
+    "skills": "Not proficient in any specific skills, focusing on its natural capabilities.",
+    "additional_information": [
+        "Fungal Aura infects nearby creatures with a debilitating disease.",
+        "Mindrot disease causes ongoing acid damage and hit point reduction.",
+        "Can resurrect deceased beings as new Mindrot Thralls.",
+        "Significant constitution and dexterity attributes enhancing its durability and agility.",
+        "Multiattack feature enhances its ability to threaten multiple foes at once."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fungal creature that spreads disease",
+        "plant monster with acid breath",
+        "eerie thrall that raises the dead",
+        "medium plant with necrotic abilities",
+        "monster that inflicts mindrot disease"
+    ]
+}

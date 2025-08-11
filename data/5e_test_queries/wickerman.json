@@ -1,0 +1,25 @@
+{
+    "name": "Wickerman",
+    "queries": [
+        {
+            "query": "huge construct that deals fire damage and has a grappling ability",
+            "variant": "large construct that inflicts fire damage and can grapple opponents"
+        },
+        {
+            "query": "creature immune to poison and goes berserk when its staff is broken",
+            "variant": "monster that cannot be poisoned and rage attacks when its staff breaks"
+        },
+        {
+            "query": "construct with high hit points and weakness to cold damage in water",
+            "variant": "creature with large health pool and vulnerability to cold damage in water"
+        },
+        {
+            "query": "evil entity with blindsight and can imprison foes inside its body",
+            "variant": "malevolent creature with blindsight that can trap enemies within itself"
+        },
+        {
+            "query": "monster with low armor class and resistance to nonmagical attacks",
+            "variant": "creature that has poor armor and resists normal physical damage"
+        }
+    ]
+}

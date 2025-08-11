@@ -1,0 +1,25 @@
+{
+    "name": "Neophron",
+    "queries": [
+        {
+            "query": "medium fiend with chaotic evil alignment that can fly and shapechange",
+            "variant": "chaotic evil medium fiend that can shapechange and fly"
+        },
+        {
+            "query": "tactical monster immune to poison and has multiattack capabilities",
+            "variant": "monster with multiattack abilities and immunity to poison"
+        },
+        {
+            "query": "fiend that turns into a giant vulture and has good perception skills",
+            "variant": "giant vulture turning fiend with high perception skills"
+        },
+        {
+            "query": "creature that deals acid damage and can swallow opponents whole",
+            "variant": "creature able to swallow foes whole and inflict acid damage"
+        },
+        {
+            "query": "flying monster with high Constitution and resistant to fire damage",
+            "variant": "high Constitution flying creature that resists fire damage"
+        }
+    ]
+}

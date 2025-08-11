@@ -1,6 +1,8 @@
 <MonsterName/>Giant, Lantern</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>12</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>225</HP>
 <summary>The Giant Lantern is a formidable Huge Giant creature with a neutral alignment, known for its impressive strength and unique abilities, making it a powerful opponent in combat. With a high Armor Class of 16 and significant hit points amounting to 225, this creature boasts exceptional durability in fights. It is equipped with strong physical attributes, particularly in Strength, which stands at 26 (+8), making its melee attacks very effective. Its Dexterity is average at 12 (+1), providing some level of agility, while its Constitution at 22 (+6) grants it good resilience. This creature also possesses notable Wisdom and Charisma scores of 16 (+3) and 17 (+3) respectively, enhancing its perceptive and social abilities. The Lantern's notable weaknesses include its reliance on water for survival and a brief vulnerability to those who can resist its charming light. It also has limited speed on land, but compensates with a faster swimming speed of 60 feet. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Lastly, the Giant Lantern possesses spellcasting abilities without the need for 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Lantern
 
 *Huge* *Giant* *neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 15) no material components:At will: detect magic identify (as an action)3/day ea: control water freedom of movement water breathing
 
 
+</statblock>
 
 

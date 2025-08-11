@@ -1,0 +1,25 @@
+{
+    "name": "Alchemist",
+    "queries": [
+        {
+            "query": "humanoid potion-maker that can create powerful bombs",
+            "variant": "humanoid bomb-maker that can craft strong potions"
+        },
+        {
+            "query": "creature skilled in alchemy with poison resistance and healing potions",
+            "variant": "being proficient in alchemy with immunity to poison and ability to heal"
+        },
+        {
+            "query": "medium creature with high intelligence and multiple potion effects",
+            "variant": "medium-sized being with great intelligence and various potion abilities"
+        },
+        {
+            "query": "potions user that excels in dexterity and alchemical crafting",
+            "variant": "potion expert who is skilled in dexterity and crafting alchemical items"
+        },
+        {
+            "query": "kobalt alchemist known for using elemental bombs in combat",
+            "variant": "kobold potion-maker famous for employing elemental explosives in battle"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Goat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 4,
+    "ac": 10,
+    "srd": true,
+    "cr": "0",
+    "movement": "40 feet, quick maneuvers",
+    "role": null,
+    "tags": [
+        "animal",
+        "livestock"
+    ],
+    "adjectives": [
+        "stubborn",
+        "hardy"
+    ],
+    "description": "A small, hardy creature with short, coarse fur and curved horns, capable of navigating rocky terrains with ease.",
+    "memorable": "Known for its stubbornness and charging ability that can knock opponents prone.",
+    "goals": "Primarily serves as livestock; generally peaceful but can be aggressive during mating season.",
+    "relations": "Often found in herds with other goats or livestock.",
+    "environment": "Typically inhabits mountainous regions or farmlands.",
+    "strengths": "Good at charging attacks and knocking down opponents with its horns.",
+    "weaknesses": "Low hit points and armor class make it vulnerable in combat.",
+    "attacks": "Uses a melee Ram attack that deals bludgeoning damage and can deal extra damage if charging.",
+    "most_powerful_ability": "Charge ability that adds damage and has the potential to knock targets prone.",
+    "equipment": null,
+    "senses": "Has a passive perception score of 10, indicating average awareness of its surroundings.",
+    "skills": "Has an average athletic skill with a +2 modifier.",
+    "additional_information": [
+        "Can eat almost anything, making it excellent livestock",
+        "Females are generally more peaceful than aggressive males during mating season",
+        "Average physical attributes with a notable ability to charge",
+        "Not very intelligent or charming",
+        "Can be useful in rugged environments"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small hardy mountain animal",
+        "stubborn creature with curved horns",
+        "peaceful livestock that charges",
+        "medium beast that can knock down opponents",
+        "animal in farmlands with ram attacks"
+    ]
+}

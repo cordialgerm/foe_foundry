@@ -1,0 +1,52 @@
+{
+    "name": "Azer Forgemaster",
+    "creature_type": "Elemental",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 78,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "fire",
+        "elemental",
+        "artisan"
+    ],
+    "adjectives": [
+        "formidable",
+        "fiery",
+        "craftsman"
+    ],
+    "description": "The Azer Forgemaster is a medium elemental creature known for its affinity with fire and mastery as a craftsman, featuring a fiery aura and wielding a returning hammer.",
+    "memorable": "Its Fiery Aura damages nearby foes and provides illumination while its ability to teleport through fire makes it a dangerous opponent.",
+    "goals": "Typically crafts weapons and armor, controls territory using fire, and engages in combat.",
+    "relations": "Related to other azer beings and may serve elemental patrons.",
+    "environment": "Often found in volcanic or fiery terrains.",
+    "strengths": "Immunities to fire and poison damage; capable of area control with its Fiery Aura and Bonfire ability.",
+    "weaknesses": "Vulnerable to cold damage.",
+    "attacks": "Utilizes a magical Returning Hammer that can deal both bludgeoning and fire damage, and creates zones of fire with its Bonfire ability.",
+    "most_powerful_ability": "Fiery Aura that damages creatures nearby while illuminating the area.",
+    "equipment": "Wields a magical returning hammer.",
+    "senses": null,
+    "skills": "Good Wisdom enhancing its perceptive skills.",
+    "additional_information": [
+        "Can teleport instantly through fire with Fire Step.",
+        "Has a strong melee combat presence due to high strength.",
+        "Sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
+        "Can create a hazardous area with the Bonfire ability to control the battlefield.",
+        "Possesses a standard intelligence level, indicating basic tactical decision-making."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire-themed elemental creature",
+        "craftsman with fire abilities",
+        "fiery aura monster",
+        "teleporting fire creature",
+        "master of fire and forge"
+    ]
+}

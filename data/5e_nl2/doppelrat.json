@@ -1,0 +1,48 @@
+{
+    "name": "Doppelrat",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Tiny",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 15 ft.",
+    "role": null,
+    "tags": [
+        "disease",
+        "summoning",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "adaptable",
+        "deceptive"
+    ],
+    "description": "The Doppelrat is a Tiny monstrosity, known for its cunning and adaptability in combat. Its ability to create duplicates allows it to confuse enemies while it hides within a swarm of rats.",
+    "memorable": "Distinctive for its ability to create rat duplicates and inflict a grotesque disease on its victims.",
+    "goals": "Typically seeks to avoid direct confrontation, relying on deception and its abilities to create chaos.",
+    "relations": "Often found in the company of other rats or similar vermin.",
+    "environment": "Prefers shadowy areas and environments where it can blend in and evade detection.",
+    "strengths": "Highly effective at stealth and evasion, with enhanced tactics due to Arcane Doubling and Hidden Original.",
+    "weaknesses": "Extremely low physical strength makes it vulnerable in direct melee combat.",
+    "attacks": "Uses a Bite attack that can poison and inflict a grotesque disease on its target.",
+    "most_powerful_ability": "Arcane Doubling allows it to create swarms of duplicates that provide tactical advantages in combat.",
+    "equipment": null,
+    "senses": "Has keen smell, granting it advantage on perception checks related to smell.",
+    "skills": "Excels in stealth, making it particularly effective at avoiding detection.",
+    "additional_information": [
+        "Inflicts the Horrific Doppeling disease through its bite.",
+        "Can control up to two swarms at a time.",
+        "Gains total cover while hidden in a swarm it created."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "Tiny monster that creates rat duplicates",
+        "stealthy creature that inflicts diseases",
+        "deceptive monster with summoning abilities",
+        "cunning rat-like monster in shadows",
+        "adaptive monster that uses distraction in combat"
+    ]
+}

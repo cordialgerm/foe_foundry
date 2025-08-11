@@ -1,0 +1,25 @@
+{
+    "name": "Fallen Solar",
+    "queries": [
+        {
+            "query": "large celestial creature with radiant abilities that can fly",
+            "variant": "big celestial monster that can fly and has radiant powers"
+        },
+        {
+            "query": "powerful celestial fighter that can absorb life energy and heal others",
+            "variant": "strong celestial being that absorbs life energy and can heal"
+        },
+        {
+            "query": "celestial entity immune to poison with exceptional charisma and wisdom",
+            "variant": "celestial creature that is immune to poison and has high wisdom and charisma"
+        },
+        {
+            "query": "monster that uses flame attacks and has the ability to teleport",
+            "variant": "creature that teleports and uses fire attacks"
+        },
+        {
+            "query": "celestial being prone to radiant damage that has strong melee attacks",
+            "variant": "celestial creature vulnerable to radiant damage with powerful melee capabilities"
+        }
+    ]
+}

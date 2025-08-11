@@ -1,0 +1,53 @@
+{
+    "name": "Ruin Scarab",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking, 15 ft. burrowing, climbing, and flying",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "necrotic damage",
+        "predator",
+        "stealth"
+    ],
+    "adjectives": [
+        "formidable",
+        "relentless",
+        "chaotic"
+    ],
+    "description": "The Ruin Scarab is a Large undead creature with a strong build, characterized by its formidable presence and eerie silent movement. Its dark, carapace-like body exudes a sense of menace.",
+    "memorable": "Its Flesh-Eating Aura targets weakened foes, dealing necrotic damage and hindering healing, while its ability to incapacitate enemies showcases its deadly combat prowess.",
+    "goals": "To sow chaos and destruction by incapacitating enemies and controlling the battlefield.",
+    "relations": "Related to other undead creatures, it might be found in the company of necromancers or similar dark beings.",
+    "environment": "Often found in desolate or cursed locations, such as graveyards or ruins.",
+    "strengths": "High hit points and necrotic damage abilities, alongside its mobility and stealth features.",
+    "weaknesses": "Very low Intelligence and Charisma, making it ineffective in social interactions and intelligence-based tasks.",
+    "attacks": "Can utilize multiattack for two Bite attacks that inflict slashing and necrotic damage, along with a powerful Gut Rip action on prone foes.",
+    "most_powerful_ability": "The Flesh-Eating Aura damages enemies that are not at full health and hinders their magical healing, creating a deadly area of effect.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 90 feet, allowing it to detect creatures without reliance on sight.",
+    "skills": "Has a modest perception skill, granting it some ability to notice nearby threats.",
+    "additional_information": [
+        "Silent Steps make it undetectable while moving or attacking.",
+        "Unstoppable ability allows it to traverse difficult terrain without penalties.",
+        "Relentless Pursuit enables it to chase down fleeing targets effectively.",
+        "It does not require air, food, drink, or sleep due to its undead nature.",
+        "Can incapacitate foes, severely disrupting their actions in combat."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "deadly predator with necrotic damage",
+        "undead creature that incapacitates foes",
+        "stealthy large monster in ruins",
+        "chaotic creature with flesh-eating abilities",
+        "relentless undead foe with mobility"
+    ]
+}

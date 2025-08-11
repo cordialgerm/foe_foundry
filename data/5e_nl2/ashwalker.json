@@ -1,0 +1,55 @@
+{
+    "name": "Ashwalker",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 31,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walks at a speed of 30 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "elemental",
+        "draconic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "draconic",
+        "relentless"
+    ],
+    "description": "The Ashwalker is an undead creature with draconic traits, distinct for its blend of malevolent energy and elemental connections based on the dragon type that killed it.",
+    "memorable": "Its ability to transform into an invulnerable energy form upon death makes it a unique and dangerous adversary.",
+    "goals": "To wreak havoc and cause destruction, driven by its lingering malice from life.",
+    "relations": "Related to dragons, as it embodies the elemental traits of the dragon that led to its death.",
+    "environment": "Typically found in areas once inhabited by the dragons it emulates or in desolate wastelands.",
+    "strengths": "Immunity to poison damage and the poisoned condition; can unleash significant damage with its breath attack.",
+    "weaknesses": "Low intelligence and charisma make it ineffective in social situations.",
+    "attacks": "Uses a slam attack dealing bludgeoning damage plus additional elemental damage based on its Breath Born trait.",
+    "most_powerful_ability": "The Last Breath ability allows the Ashwalker to drop to 1 hit point instead of 0 and become invulnerable, transforming into elemental energy.",
+    "senses": "Possesses darkvision to see in the dark up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to damage based on the dragon that killed it with the Breath Born trait.",
+        "Can deal elemental damage to any creature that touches it or attacks it in melee.",
+        "Relentless and does not need air, food, drink, or rest.",
+        "Draconic Breath is a powerful area attack that can significantly damage multiple targets.",
+        "Low intelligence limits its utility and strategic planning."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead with draconic traits",
+        "elemental damage undead",
+        "malevolent energy creature",
+        "Ashwalker D&D",
+        "undead that can become energy"
+    ]
+}

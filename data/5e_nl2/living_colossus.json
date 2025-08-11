@@ -1,0 +1,53 @@
+{
+    "name": "Living Colossus",
+    "creature_type": "Construct",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 261,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "60 feet, quick for its size",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "gargantuan",
+        "battlefield"
+    ],
+    "adjectives": [
+        "massive",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Living Colossus is a gargantuan construct that resembles a mighty statue, radiating strength and endurance on the battlefield.",
+    "memorable": "Its ability to deal double damage to structures and its unique thunderous clap attack make it a formidable presence.",
+    "goals": "To protect its allies while dominating the battlefield through sheer power and ability.",
+    "relations": "May serve a powerful wizard or be constructed from the essence of a past champion.",
+    "environment": "Often found in ancient ruins or battlefields as a guardian or sentinel.",
+    "strengths": "High hit points, formidable strength, and multiple devastating attacks.",
+    "weaknesses": "Low Dexterity, making it poor at stealth and agile maneuvers.",
+    "attacks": "Three Slam attacks that deal significant bludgeoning damage or four Spirit Blast attacks delivering psychic damage.",
+    "most_powerful_ability": "Thunderous Clap creates devastating thunder damage in a wide area, disrupting foes.",
+    "equipment": null,
+    "senses": "Has heightened perception with a passive score of 17.",
+    "skills": "Immunity to poison and psychic damage enhances its combat resilience.",
+    "additional_information": [
+        "Construct Nature allows it to function without air, food, drink, or sleep.",
+        "False Appearance lets it disguise itself as a statue when motionless.",
+        "Immutable Form ensures it cannot be transformed or altered.",
+        "Bolstering Spirit can heal allies when they are damaged.",
+        "Quake ability can knock opponents prone and stun them."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan construct that slams and blasts",
+        "powerful statue that protects allies",
+        "massive creature with thunder attack",
+        "unstoppable construct with healing powers",
+        "guardian of ruins that deals double damage"
+    ]
+}

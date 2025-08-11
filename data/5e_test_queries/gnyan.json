@@ -1,0 +1,25 @@
+{
+    "name": "Gnyan",
+    "queries": [
+        {
+            "query": "large elemental creature that embodies winter and has healing abilities",
+            "variant": "large elementel beast representing winter with healing powers"
+        },
+        {
+            "query": "creature that moves silently through snow and has resistance to cold",
+            "variant": "monster that stealths in snow and immune to cold damage"
+        },
+        {
+            "query": "neutral good elemental that boosts allies' courage and has a vulnerability to fire",
+            "variant": "good-aligned elemental boosting companions' morale and weak to fire"
+        },
+        {
+            "query": "frost-based creature with an aura of hope and unique milk restorative",
+            "variant": "creature with ice powers and an hope aura, also has special healing milk"
+        },
+        {
+            "query": "monster that can teleport in snow and uses cold damage attacks",
+            "variant": "creature that can teleport through snow and attacks with frost damage"
+        }
+    ]
+}

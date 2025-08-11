@@ -1,0 +1,50 @@
+{
+    "name": "Corpse Mound",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "30 feet walk",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "monster",
+        "combat"
+    ],
+    "adjectives": [
+        "powerful",
+        "relentless",
+        "noxious"
+    ],
+    "description": "The Corpse Mound is a grotesque combination of bodies piled together, exuding a repulsive aura and an overwhelming presence. It can absorb corpses to regain health and has a noxious aura that poisons nearby foes.",
+    "memorable": "It can reclaim health by absorbing fallen creatures and can create zombies from corpses nearby.",
+    "goals": "To absorb corpses and create zombies, dominating the battlefield.",
+    "relations": "Can be encountered with other undead creatures; it controls zombies.",
+    "environment": "Thrives in locations with many fallen creatures or battlefields.",
+    "strengths": "Significant hit points, ability to heal from absorbed creatures, and capable of creating additional threats in combat.",
+    "weaknesses": "Low mental capabilities, making it less effective in strategic combat situations.",
+    "attacks": "Multiattack allows it to strike with powerful Slam or Bone Shard attacks, grappling foes and causing bludgeoning and necrotic damage.",
+    "most_powerful_ability": "Absorb the Dead allows the Corpse Mound to regain health whenever a creature dies nearby, adding to its resilience.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage and conditions like charm and fear.",
+        "Can create up to ten zombies under its control.",
+        "Does not require air, food, drink, or sleep."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive undead creature with toxic aura",
+        "creature that absorbs fallen bodies for health",
+        "zombie-creating mound encountered in battle",
+        "undead that poisons nearby foes",
+        "huge monster with multiple melee attacks"
+    ]
+}

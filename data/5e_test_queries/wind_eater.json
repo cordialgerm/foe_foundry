@@ -1,0 +1,25 @@
+{
+    "name": "Wind Eater",
+    "queries": [
+        {
+            "query": "stealthy undead creature that manipulates sound",
+            "variant": "undead creature that stealthily manipulates sound"
+        },
+        {
+            "query": "invisible monster with magical abilities in darkness",
+            "variant": "monster that becomes invisible and has magical powers in the dark"
+        },
+        {
+            "query": "undead that deals slashing damage and has truesight",
+            "variant": "undead with truesight that slashes in combat"
+        },
+        {
+            "query": "cunning undead with high Dexterity and silent aura",
+            "variant": "high Dexterity undead that has a silent aura and is very cunning"
+        },
+        {
+            "query": "creature that is immune to poison and resistant to elemental damage",
+            "variant": "monster immune to poison and has resistances to elemental attacks"
+        }
+    ]
+}

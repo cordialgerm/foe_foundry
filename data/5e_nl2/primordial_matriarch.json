@@ -1,0 +1,55 @@
+{
+    "name": "Primordial Matriarch",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Gargantuan",
+    "hp": 313,
+    "ac": 20,
+    "srd": false,
+    "cr": "21",
+    "movement": "flies at an impressive speed of 120 feet",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "gargantuan",
+        "duel"
+    ],
+    "adjectives": [
+        "formidable",
+        "magical",
+        "chaotic"
+    ],
+    "description": "A gargantuan elemental that embodies raw power, with exceptional dexterity and resilience, featuring magical and damaging Elemental Attacks.",
+    "memorable": "Her ability to change elemental damage types and create numerous elementals makes her a dynamic foe in battle.",
+    "goals": "To dominate and control the battlefield through elemental chaos.",
+    "relations": "Might summon various elemental creatures, such as mephits and elementals, to assist her.",
+    "environment": "Typically found in areas saturated with elemental energy, such as elemental planes or locations of natural disasters.",
+    "strengths": "Immunities to various conditions and damage types, high mobility, and powerful magical attacks.",
+    "weaknesses": "Relatively low intelligence may affect her strategic planning.",
+    "attacks": "Uses Storm Blast to unleash elemental energy and Elemental Lashes in melee with magical damage.",
+    "most_powerful_ability": "Her Elemental Aura damages all nearby creatures and her ability to absorb elementals for temporary hit points.",
+    "senses": "Possesses blindsight up to 120 feet, allowing her to sense creatures without sight.",
+    "skills": "Has good perception with a +5 modifier, indicating awareness of her surroundings.",
+    "additional_information": [
+        "Can create and command multiple elementals at once",
+        "Damages nonmagical weapons that strike her",
+        "Her elemental nature allows her to function without basic needs",
+        "Can adapt to specific damage types on the fly",
+        "Recognized as a Siege Monster, dealing double damage to structures"
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan elemental with flying speed",
+        "chaotic elemental that creates allies",
+        "elemental immune to various damage types",
+        "powerful creature that embodies raw nature",
+        "elemental that deals damage in area around her"
+    ]
+}

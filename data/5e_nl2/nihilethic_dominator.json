@@ -1,0 +1,52 @@
+{
+    "name": "Nihilethic Dominator",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 82,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "necrotic",
+        "dark"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "malevolent"
+    ],
+    "description": "A large undead creature with a dark presence, the Nihilethic Dominator manifests as an intimidating being capable of maneuvering through surroundings and striking fiercely.",
+    "memorable": "Its ability to knock opponents prone and resist damage from nonmagical attacks makes it uniquely formidable in battle.",
+    "goals": "Typically seeks to dominate its foes and maintain its existence through sustained combat.",
+    "relations": "May serve as a commander or overseer for other undead creatures.",
+    "environment": "Commonly found in dark, foreboding locales such as abandoned mausoleums or haunted ruins.",
+    "strengths": "Damage immunities to cold, necrotic, and poison, along with resilience to falling to 0 hit points makes it a durable opponent.",
+    "weaknesses": "Low Dexterity affects its agility and ranged defenses significantly.",
+    "attacks": "Utilizes strong melee attacks, including Claw strikes that can deal slashing damage and Tendril attacks that inflict cold and necrotic damage.",
+    "most_powerful_ability": "Ghostly Body grants it the ability to move through objects, resisting nonmagical attacks.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to the poisoned condition.",
+        "Can transform between Undead and Void ghost forms.",
+        "Has a debilitating claw attack that can knock foes prone."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic",
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead with ghostly form",
+        "undead creature that can knock opponents prone",
+        "monster immune to cold and necrotic damage",
+        "formidable creature with multiattack abilities",
+        "evil undead that resists nonmagical damage"
+    ]
+}

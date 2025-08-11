@@ -1,0 +1,52 @@
+{
+    "name": "Ghost",
+    "creature_type": "Undead",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 11,
+    "srd": true,
+    "cr": "4",
+    "movement": "fly 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "spectral",
+        "haunting"
+    ],
+    "adjectives": [
+        "ethereal",
+        "restless",
+        "haunting"
+    ],
+    "description": "A spectral being representing the remains of a once-living creature, often beautiful or horrifyingly distorted, drifting silently and capable of passing through walls.",
+    "memorable": "Ghosts can possess the living, instill fear, and have the potential to age victims permanently.",
+    "goals": "To resolve unfinished business and move on to the afterlife.",
+    "relations": "Often connected to their place of death or objects of significance from their lives.",
+    "environment": "Can be found in places of death, sorrow, or locations they were emotionally attached to.",
+    "strengths": "Can phase through objects and is immune to many physical attacks.",
+    "weaknesses": "May be destroyed permanently if its unfinished business is resolved.",
+    "attacks": "Withering Touch for necrotic damage and Horrifying Visage that instills fear and ages victims.",
+    "most_powerful_ability": "Possession allows it to take control of a humanoid's body for 24 hours.",
+    "senses": "Has Ethereal Sight, allowing it to perceive both Material and Ethereal Planes simultaneously.",
+    "skills": "Good at instilling fear due to high Charisma, making it effective in social interactions.",
+    "additional_information": [
+        "Spiritual presence that can return in 24 hours unless put to rest.",
+        "Immunities to cold, necrotic, and poison damage.",
+        "Can age living creatures by revealing its horrific visage.",
+        "Does not require air, food, or sleep due to its Undead Nature.",
+        "Incapacitates itself when confronted with unfinished business."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "haunting specter that can pass through walls",
+        "ghost with possession and terrifying presence",
+        "undead creature that ages its victims",
+        "restless spirit seeking to resolve unfinished business",
+        "ethereal ghost that instills fear"
+    ]
+}

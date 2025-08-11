@@ -1,0 +1,54 @@
+{
+    "name": "Sand Adult Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 270,
+    "ac": 20,
+    "srd": false,
+    "cr": "18",
+    "movement": "walk 40 ft., burrow 30 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "adult",
+        "elemental",
+        "sand"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "destructive",
+        "sandy"
+    ],
+    "description": "The Sand Adult Dragon is a Huge dragon with a powerful presence, embodying elemental power and cunning, specially adapted to sandy environments.",
+    "memorable": "This dragon can instill fear and blindness with its breath weapon while thriving in sandy terrain with its Sand Camouflage.",
+    "goals": "To dominate regions and instill fear while utilizing its elemental powers.",
+    "relations": "May command lesser creatures or be encountered alongside other elemental beings.",
+    "environment": "Typically found in desert or sandy areas.",
+    "strengths": "Has damage immunity to fire and resistances to piercing, with blindsight and a high passive perception.",
+    "weaknesses": "Dependent on sandy terrain for its Sand Camouflage ability.",
+    "attacks": "Utilizes a Multiattack of a Bite and two Claws, along with a Tail swipe, as well as powerful breath weapon attacks.",
+    "most_powerful_ability": "Breath Weapon can cause both piercing and fire damage while potentially inflicting exhaustion through dehydration.",
+    "equipment": null,
+    "senses": "Possesses blindsight at 60 feet and a high passive Perception score of 26.",
+    "skills": "Demonstrates good Perception skills with a +4 modifier.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saving throws thrice per day.",
+        "Sand Camouflage grants advantage on Stealth checks in sandy environments.",
+        "The Stinging Sand ability inflicts disadvantage on targets after a melee hit.",
+        "Fearsome Frightful Presence can scare enemies within a significant radius.",
+        "Unique Sandy Nature allows it to survive on half the necessary sustenance."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge sandy dragon with elemental powers",
+        "dragon that blinds foes with sand",
+        "fearsome dragon from the desert",
+        "dominant elemental dragon that attacks with sand",
+        "dragon with powerful bite and claw attacks"
+    ]
+}

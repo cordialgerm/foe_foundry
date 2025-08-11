@@ -1,0 +1,25 @@
+{
+    "name": "Giant Goat",
+    "queries": [
+        {
+            "query": "large horned herbivore that charges at foes",
+            "variant": "large herbivore with horns that charges at enemies"
+        },
+        {
+            "query": "strong mountain creature with impressive curved horns",
+            "variant": "mountain creature with strong build and curved horns"
+        },
+        {
+            "query": "peaceful creature that can headbutt enemies",
+            "variant": "calm creature that can deliver powerful headbutts to foes"
+        },
+        {
+            "query": "aggressive goat that knocks opponents prone",
+            "variant": "goat that is aggressive and can knock enemies down"
+        },
+        {
+            "query": "Giant Goat with the ability to frighten creatures",
+            "variant": "Giant Goat that can scare enemies with its scream"
+        }
+    ]
+}

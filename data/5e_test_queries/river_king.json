@@ -1,0 +1,25 @@
+{
+    "name": "River King",
+    "queries": [
+        {
+            "query": "fey creature with amphibious abilities that controls water",
+            "variant": "fey creature that can breathe both water and air and controls water"
+        },
+        {
+            "query": "powerful aquatic monster with poison damage and spellcasting abilities",
+            "variant": "strong water monster that inflicts poison damage and has spellcasting powers"
+        },
+        {
+            "query": "medium fey with high Armor Class and damage resistances",
+            "variant": "medium fey creature that has a high AC and resists various damage types"
+        },
+        {
+            "query": "chaotic neutral fey known for its transformation and battlefield control",
+            "variant": "fey creature with chaotic neutral alignment famous for controlling the battlefield"
+        },
+        {
+            "query": "monster with blindsight, darkvision, and significant hit points",
+            "variant": "creature that has low light vision, can see with blindsight, and has a lot of hit points"
+        }
+    ]
+}

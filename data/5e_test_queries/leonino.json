@@ -1,0 +1,25 @@
+{
+    "name": "Leonino",
+    "queries": [
+        {
+            "query": "tiny beast with stealthy abilities that can fly",
+            "variant": "small beast that flies and has stealthy skills"
+        },
+        {
+            "query": "nimble flying beast that charms enemies",
+            "variant": "agile flying creature that can charm its foes"
+        },
+        {
+            "query": "creature that uses evasion and silent wings to avoid damage",
+            "variant": "being that utilizes evasion and silent wings to escape harm"
+        },
+        {
+            "query": "Leonino's bite attack has charming effects",
+            "variant": "charm effect of the bite attack from a Leonino"
+        },
+        {
+            "query": "creature that lives in forests and excels in stealth",
+            "variant": "being that thrives in the woods and is great at stealth"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Rockslide",
+    "queries": [
+        {
+            "query": "large earth elemental with strong melee attacks",
+            "variant": "big elemental of earth that has powerful melee attacks"
+        },
+        {
+            "query": "rocky terrain hiding creature with high hit points",
+            "variant": "creature that hides in rocky areas and has a lot of hit points"
+        },
+        {
+            "query": "elemental that can knock enemies prone",
+            "variant": "elemental capable of knocking foes down"
+        },
+        {
+            "query": "neutral elemental with charge ability in combat",
+            "variant": "neutral creature with charge attack during battles"
+        },
+        {
+            "query": "slow elemental with strong constitution and natural armor",
+            "variant": "elemental with low agility but good constitution and armor"
+        }
+    ]
+}

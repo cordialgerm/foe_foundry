@@ -1,0 +1,50 @@
+{
+    "name": "Hound Guardian",
+    "creature_type": "Construct",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walks at a speed of 50 feet",
+    "role": "Defender",
+    "tags": [
+        "construct",
+        "protector",
+        "guardian"
+    ],
+    "adjectives": [
+        "swift",
+        "loyal",
+        "durable"
+    ],
+    "description": "The Hound Guardian resembles a large, mechanical dog, built for protection and enhanced senses.",
+    "memorable": "Its loyalty and ability to retaliate against threats to its master make it a unique protector.",
+    "goals": "To guard its master and eliminate threats.",
+    "relations": "Often serves as a guardian or protector to spellcasters or other creators.",
+    "environment": "Commonly found in locations requiring protection, such as labs or homes of its creators.",
+    "strengths": "Immunities to poison and nonmagical damage enhance its survivability.",
+    "weaknesses": "Low Intelligence and Charisma limit its strategic capabilities.",
+    "attacks": "Bites with piercing damage and can make targets fall prone with a successful hit.",
+    "most_powerful_ability": "Magic Resistance provides it an advantage against magical attacks.",
+    "equipment": "null",
+    "senses": "The Hound Guardian has keen hearing and smell, granting it an advantage on related perception checks.",
+    "skills": "Proficient in Perception, allowing it to detect hidden threats effectively.",
+    "additional_information": [
+        "Immutable Form prevents alterations to its physical shape.",
+        "Constructed Nature allows it to function without air or sustenance.",
+        "Can respond to threats targeting its master with Protective Bite.",
+        "High Armor Class and decent hit points make it a moderate combatant.",
+        "Acts as a loyal defender, enhancing the security of its surroundings."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical dog that protects its master",
+        "loyal construct guardian with keen senses",
+        "swift protector immune to poison damage",
+        "Hound Guardian that retaliates when threatened",
+        "construct that bites and knocks foes prone"
+    ]
+}

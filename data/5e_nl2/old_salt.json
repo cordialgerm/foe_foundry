@@ -1,0 +1,53 @@
+{
+    "name": "Old Salt",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet on land, 30 feet swimming",
+    "role": null,
+    "tags": [
+        "undead",
+        "aquatic",
+        "sailor",
+        "necrotic"
+    ],
+    "adjectives": [
+        "relentless",
+        "debilitating",
+        "agile"
+    ],
+    "description": "The Old Salt is a Medium Undead creature, possessing a skeletal appearance reminiscent of a sailor, with tattered clothing and remnants of sailing paraphernalia.",
+    "memorable": "Its ability to reduce maximum hit points with necrotic damage and revive after 13 days adds a level of urgency to encounters.",
+    "goals": "To seek revenge against those who wronged it in life.",
+    "relations": "Could be encountered with other undead sailors or maritime creatures.",
+    "environment": "Typically found near coastal areas, docks, or aboard ships.",
+    "strengths": "Immune to poison and resistant to necrotic damage, making it durable against common combat threats.",
+    "weaknesses": "Cannot recover from certain conditions and depends on its unique mechanics for rejuvenation.",
+    "attacks": "Multiattack with two Desiccating Slam melee attacks dealing bludgeoning and necrotic damage; a Wave of Seawater attack that can incapacitate.",
+    "most_powerful_ability": "Seaside Rejuvenation allows it to regenerate and return if its name is not cleared within 13 days.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright light within a 60-foot range.",
+    "skills": "Proficient in perception, enabling it to detect hidden threats effectively.",
+    "additional_information": [
+        "Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks on a sailing ship.",
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Can choke opponents with its Wave of Seawater ability.",
+        "Deals persistent damage through its necrotic attacks.",
+        "Revival mechanism adds urgency to player decisions."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead sailor that revives",
+        "monster with necrotic attacks",
+        "creature that chokes opponents",
+        "relentless undead near water",
+        "animated sailor with bludgeoning strikes"
+    ]
+}

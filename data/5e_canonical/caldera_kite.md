@@ -1,6 +1,8 @@
 <MonsterName/>Caldera Kite</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Caldera Kite is a large monstrosity that serves as a formidable adversary in combat, characterized by its ability to fly gracefully while emanating toxic effects around it. With an impressive Armor Class of 17 and 119 hit points, it is quite resilient and can inflict significant damage with its attacks. The creature’s strength lies in its exceptional mobility thanks to a flying speed of 60 feet and its ability to avoid opportunity attacks when it moves. It utilizes its poisonous haze to debilitate enemies while simultaneously constraining them through its probing attacks. However, its intelligence and charisma scores are very low, making it ineffective in strategies that require reasoning or social interactions. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the combination of mobility, poison effects, and grappling capabilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Caldera Kite
 
 *Large* *Monstrosity* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Dust Cloud (Recharge 4–6):** Kite thrashes its body and releases stored toxic gases. Each creature within 20' of kite: 28 (8d6) poison (DC 14 Con half). Creature that fails save can’t speak and is suffocating until it is no longer within 20' of caldera kite.
 
 
+</statblock>
 
 

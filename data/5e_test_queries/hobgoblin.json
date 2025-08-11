@@ -1,0 +1,25 @@
+{
+    "name": "Hobgoblin",
+    "queries": [
+        {
+            "query": "militant humanoid that wears armor and fights with swords or bows",
+            "variant": "military humanoid that wears armor and fights with bows or swords"
+        },
+        {
+            "query": "tactical combat monster that works in groups and respects strength",
+            "variant": "tactical combat creature that respects strength and works in squads"
+        },
+        {
+            "query": "organized goblinoid creature with a darkvision and a combat advantage",
+            "variant": "goblinoid organism with darkvision and an advantage in combat"
+        },
+        {
+            "query": "humanoid creature found in warbands that can attack from a distance",
+            "variant": "creature that can attack from a distance and is humanoid found in warbands"
+        },
+        {
+            "query": "fearsome creature with a high armor class and tactical abilities",
+            "variant": "formidable creature with tactical skills and a high AC"
+        }
+    ]
+}

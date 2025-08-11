@@ -1,0 +1,56 @@
+{
+    "name": "Flying Polyp",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 171,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "fly 60 ft., hover, walk 0 ft.",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "flying",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "flight-capable"
+    ],
+    "description": "A Huge aberration with a chaotic and evil nature, featuring extraordinary flight capabilities and significant defenses with natural armor.",
+    "memorable": "Its ability to control the battlefield with Auras and a powerful Cyclone attack makes it a daunting opponent.",
+    "goals": "To dominate the battlefield and control the movement of foes while dealing significant damage.",
+    "relations": "Often encountered alone or serving more powerful chaotic beings.",
+    "environment": "Typically found in desolate or chaotic areas, such as stormy skies or unstable planes.",
+    "strengths": "Has powerful control abilities like Aura of Wind and Cyclone, offering battlefield manipulation while remaining elusive.",
+    "weaknesses": "Vulnerable to lightning damage, which can be exploited by strategic opponents.",
+    "attacks": "Utilizes tentacles for grappling and bludgeoning damage, alongside a vicious bite against restrained creatures.",
+    "most_powerful_ability": "Cyclone, a damaging area attack that knocks opponents prone.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to perceive its environment without needing sight.",
+    "skills": "Proficient in Arcana and History, demonstrating high intelligence and knowledge.",
+    "additional_information": [
+        "Incorporeal Movement allows it to move through objects as difficult terrain.",
+        "Magic Resistance grants it advantage on saving throws against spells.",
+        "Maintains telepathic communication within 120 feet.",
+        "Can cast invisibility at will and control weather once per day.",
+        "Immune to the prone condition, making it difficult to incapacitate."
+    ],
+    "damage_types": [
+        "lightning",
+        "acid",
+        "cold",
+        "fire",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcaster with spells including invisibility, wind walk, and control weather.",
+    "test_queries": [
+        "huge monster that controls the battlefield",
+        "flying creature with powerful wind abilities",
+        "chaotic creature immune to being knocked prone",
+        "monster that grapples and deals bludgeoning damage",
+        "aberration that can transition between planes"
+    ]
+}

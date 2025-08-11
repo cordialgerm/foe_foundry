@@ -1,0 +1,54 @@
+{
+    "name": "Yaojing",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 202,
+    "ac": 15,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "magic",
+        "spellcaster",
+        "radiant"
+    ],
+    "adjectives": [
+        "powerful",
+        "agile",
+        "intelligent",
+        "neutral"
+    ],
+    "description": "The Yaojing is a celestial creature exuding neutrality and benevolence, characterized by its agility and intelligence, making it formidable in combat. It possesses a radiant appearance marked by its magical abilities.",
+    "memorable": "Its ability to detect lies enhances both its social interactions and combat effectiveness, while its magical weapon attacks offer versatility against various resistances.",
+    "goals": "To maintain balance and assist allies while punishing those who spread deception or evil.",
+    "relations": "Often aligns with other celestial beings or adventurers, potentially serving as a guardian or ally.",
+    "environment": "Typically found in places of neutrality or areas where good and evil intersect.",
+    "strengths": "Excels in dexterity and charisma, making it effective in combat and social situations. High magical resistance and ability to discern deceit.",
+    "weaknesses": "Vulnerable to magical attacks that bypass its resistances.",
+    "attacks": "Utilizes a multiattack involving a melee sacred fist and a ranged sacred bolt, both dealing radiant damage.",
+    "most_powerful_ability": "Radiant Spin is a strong area effect attack that delivers significant damage and pushes foes away.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet, allowing it to perceive hidden enemies or illusions.",
+    "skills": "Proficient in Insight and Perception, reflecting its ability to detect lies and notice hidden threats.",
+    "additional_information": [
+        "Charlatan\u2019s Bane detects lies, giving it an advantage on Insight checks.",
+        "Magic Resistance provides an edge against spells and magical effects.",
+        "Motion Blur grants disadvantage on attacks against it when it moves.",
+        "Can innately cast spells without verbal or material components.",
+        "Radiant-themed abilities highlight its celestial nature."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can innately cast spells including Detect Evil and Good, Silence, Beacon of Hope, Bestow Curse, Death Ward, and Dispel Evil and Good.",
+    "test_queries": [
+        "celestial creature that detects lies",
+        "neutral good magic user with radiant abilities",
+        "Yaojing tactics and spellcasting",
+        "powerful celestial with spell resistance",
+        "agile creature with area effect attack"
+    ]
+}

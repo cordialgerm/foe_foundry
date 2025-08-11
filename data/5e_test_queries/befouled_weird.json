@@ -1,0 +1,25 @@
+{
+    "name": "Befouled Weird",
+    "queries": [
+        {
+            "query": "murky water elemental that attacks with parasitic amoebas",
+            "variant": "water elemental that murky attacks with amoebas parasitic"
+        },
+        {
+            "query": "medium-sized creature that inflicts necrotic damage in combat",
+            "variant": "creature that is medium-sized and inflicts necrotic combat damage"
+        },
+        {
+            "query": "evil elemental that thrives in aquatic environments and can grapple enemies",
+            "variant": "elemental that is evil and thrives in aquatic that can grapple enemies"
+        },
+        {
+            "query": "weak intelligence monster that deals bludgeoning and necrotic damage",
+            "variant": "monster with weak intelligence that does necrotic and bludgeoning damage"
+        },
+        {
+            "query": "creature with swimming speed that has a Drown in Filth attack",
+            "variant": "creature that can swim and has Drown in Filth attack"
+        }
+    ]
+}

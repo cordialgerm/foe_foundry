@@ -1,0 +1,53 @@
+{
+    "name": "Hraesvelgr",
+    "creature_type": "Giant",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 241,
+    "ac": 19,
+    "srd": false,
+    "cr": "19",
+    "movement": "walk 120 ft., fly 20 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "titan",
+        "roc"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "colossal"
+    ],
+    "description": "Hraesvelgr is a massive titan giant that can shift between a towering form and that of a colossal roc, characterized by immense size and notable strength.",
+    "memorable": "Hraesvelgr can control weather and unleash devastating attacks, making it a versatile and formidable opponent.",
+    "goals": "Hraesvelgr seeks to dominate the battlefield with its strength and weather manipulation, while also intimidating foes.",
+    "relations": "Hraesvelgr may be associated with other giant creatures or titans, often serving as a master over lesser beings.",
+    "environment": "Typically found in mountainous or stormy areas where it can influence the weather.",
+    "strengths": "Exceptionally strong and durable, with immunity to cold and nonmagical attacks, and can control weather conditions.",
+    "weaknesses": "Vulnerable to magical attacks and has limited speed when flying.",
+    "attacks": "Hraesvelgr can attack with its beak, fists, or talons, and unleash powerful gale blasts with thunderous effects.",
+    "most_powerful_ability": "Swallowing opponents, inflicting blindness, restraining, and dealing ongoing acid damage.",
+    "equipment": null,
+    "senses": "Hraesvelgr possesses keen sight when in roc form, granting it enhanced perception abilities.",
+    "skills": "It has impressive proficiency in athletics, perception, and survival, allowing it to excel in physical feats and battlefield awareness.",
+    "additional_information": [
+        "Possesses legendary resistance to overcome failed saving throws.",
+        "Can unleash a potent sudden gust attack to push enemies away.",
+        "Employs a multiattack option to target multiple foes effectively.",
+        "May use ear-splitting screeches to cause deafening damage to nearby creatures.",
+        "Can change shape between giant and roc forms seamlessly."
+    ],
+    "damage_types": [
+        "cold",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive giant that controls the weather",
+        "titan that changes into a colossal bird",
+        "giant with devastating swallow ability",
+        "creature that uses thunder damage and grapples",
+        "powerful giant with keen eyesight and weather manipulation"
+    ]
+}

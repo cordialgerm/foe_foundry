@@ -1,0 +1,48 @@
+{
+    "name": "Adult River Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 252,
+    "ac": 18,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 60 ft., fly 80 ft., swim 90 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "water",
+        "amphibious"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "magical"
+    ],
+    "description": "The Adult River Dragon is a Huge dragon known for its mastery over both land and water, showcasing remarkable features and powers that make it a formidable presence.",
+    "memorable": "Its ability to create devastating water attacks and manipulate its surroundings through innate spells establishes it as a cunning foe in battle.",
+    "goals": "Typically found guarding its essence-linked area, this dragon seeks to protect its territory and assert dominance over intruders.",
+    "relations": "Often shares its habitat with aquatic creatures and may contend with nearby land-based predators.",
+    "environment": "Often found near rivers, lakes, or coastal areas where it can leverage its aquatic abilities.",
+    "strengths": "Remarkably mobile in combat due to its amphibious nature and high movement speeds across different terrains.",
+    "weaknesses": "Vulnerable to damage from magical weapons and reliant on a specific area for its long rest benefits.",
+    "attacks": "Utilizes powerful bite and claw attacks, complemented by water-based abilities that control the battlefield and deter foes.",
+    "most_powerful_ability": "Torrential Breath provides a devastating water attack that can knock enemies prone and push them away.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 200 feet in water, allowing it to detect vibrations effectively while swimming.",
+    "skills": "Highly proficient in perception, granting it a keen awareness of its surroundings, coupled with strong acrobatics and stealth abilities.",
+    "additional_information": [
+        "Amphibious and can breathe both air and water.",
+        "Legendary actions allow for exceptional versatility in combat.",
+        "Can create strategic whirlpools and maelstroms to control the battlefield."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting ability with spells that enrich its combat utility, such as Control Water and Freedom of Movement.",
+    "test_queries": [
+        "formidable water dragon",
+        "dragon with water-based abilities",
+        "huge dragon in rivers",
+        "agile amphibious dragon",
+        "fearsome dragon with magical powers"
+    ]
+}

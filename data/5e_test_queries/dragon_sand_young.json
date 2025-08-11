@@ -1,0 +1,25 @@
+{
+    "name": "Sand Young Dragon",
+    "queries": [
+        {
+            "query": "large dragon with sandy camouflage and fire immunity",
+            "variant": "big dragon that uses sand to hide and is immune to fire"
+        },
+        {
+            "query": "dragon found in sandy environments with debilitating sand attack",
+            "variant": "dragon that lives in the sand and has a sand attack that weakens enemies"
+        },
+        {
+            "query": "neutral evil dragon that flies and burrows in the sand",
+            "variant": "dragon of neutral evil alignment that can fly and dig in sandy terrain"
+        },
+        {
+            "query": "agile dragon with high AC that can deal piercing damage",
+            "variant": "quick dragon with great armor class that can inflict piercing harm"
+        },
+        {
+            "query": "dragon with special breath weapon that can blind foes and cause exhaustion",
+            "variant": "dragon that can use its breath to blind enemies and make them exhausted"
+        }
+    ]
+}

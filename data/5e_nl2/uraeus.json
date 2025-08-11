@@ -1,0 +1,53 @@
+{
+    "name": "Uraeus",
+    "creature_type": "Celestial",
+    "alignment": "Lawful Neutral",
+    "size": "Tiny",
+    "hp": 40,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 60 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "celestial",
+        "support",
+        "fire"
+    ],
+    "adjectives": [
+        "tiny",
+        "venomous",
+        "protective",
+        "fiery"
+    ],
+    "description": "The Uraeus is a tiny celestial creature with the ability to fly and a distinct venomous bite. It possesses unique fire-based attacks.",
+    "memorable": "The Uraeus can absorb damage meant for its allies, making it a valuable protector in combat.",
+    "goals": "To protect its allies and support them in battle.",
+    "relations": "May be encountered alongside celestial beings or as a guardian of divine spaces.",
+    "environment": "Typically found in celestial or otherworldly realms.",
+    "strengths": "High mobility with Flyby ability and significant resistances to fire and poison.",
+    "weaknesses": "Low strength and charisma scores limit it in physical contests and social situations.",
+    "attacks": "Bite attack that deals piercing and poison damage, and a powerful ranged attack with fire damage.",
+    "most_powerful_ability": "Searing Breath, which deals fire damage in a cone and affects multiple creatures.",
+    "senses": "Blindsight of 10 feet aids in detecting creatures without sight.",
+    "skills": "Good perception skill with a +4 bonus for detecting hidden dangers.",
+    "additional_information": [
+        "Immune to fire and poison damage.",
+        "Advantage on saving throws against spells due to Magic Resistance.",
+        "Can bond with other creatures to share health information.",
+        "Can use its breath weapon in a cone for area damage.",
+        "Effects of its poison can cause additional fire damage over time."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny celestial creature with fiery breath",
+        "protective tiny celestial to absorb damage",
+        "Uraeus abilities and attacks summary",
+        "venomous bite and fire attacks celestial",
+        "skirmisher that flies and casts magic"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Wallflower",
+    "queries": [
+        {
+            "query": "stealthy plant monster with grappling tentacles",
+            "variant": "plant monster that grapples with tentacles and is stealthy"
+        },
+        {
+            "query": "medium-sized creature that manipulates movement and resists nonmagical damage",
+            "variant": "creature that is medium-sized and has nonmagical damage resistance while manipulating movement"
+        },
+        {
+            "query": "flower-like creature that can grapple and use luring scent",
+            "variant": "luring scent monster that can grapple and looks like a flower"
+        },
+        {
+            "query": "plant creature that lures opponents close and has low intelligence",
+            "variant": "creature that has low intelligence and can lure foes near with its abilities"
+        },
+        {
+            "query": "Wallflower abilities like beak attack and tentacle grapple",
+            "variant": "abilities of wallflower including tentacle grapple and beak attack"
+        }
+    ]
+}

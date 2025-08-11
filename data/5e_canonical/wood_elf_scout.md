@@ -1,6 +1,8 @@
 <MonsterName/>Wood Elf Scout</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>19</HP>
 <summary>The Wood Elf Scout is a specialized and agile humanoid character, designed for stealth and reconnaissance. It excels in ranged combat and has high proficiency in stealth and perception, making it an effective scout on the battlefield. With an Armor Class of 15 and 19 Hit Points, the scout possesses moderate durability but relies on its dexterity for defense and offense. Its speed of 35 feet allows for good maneuverability in various terrains, including the ability to climb effectively. However, being a low-level challenge with a rating of 1/2, it is relatively weak in direct confrontations and is best utilized in ambushes or support roles.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Wood Elf Scout can use a shortsword in melee, receiving a +5 to h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wood Elf Scout
 
 *Medium* *Humanoid*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 
 
+</statblock>
 
 

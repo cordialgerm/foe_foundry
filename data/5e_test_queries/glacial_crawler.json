@@ -1,0 +1,25 @@
+{
+    "name": "Glacial Crawler",
+    "queries": [
+        {
+            "query": "huge creature with acid coating that burrows through snow",
+            "variant": "huge acid-coated creature that tunnels in the snow"
+        },
+        {
+            "query": "aberration that can swim and immune to cold damage",
+            "variant": "creature immune to cold that swims and is an aberration"
+        },
+        {
+            "query": "monster with superheated acid spray and strong constitution",
+            "variant": "creature with strong constitution and an acid spray attack"
+        },
+        {
+            "query": "mobile snow creature that excels in melee combat",
+            "variant": "snow monster that is very effective in melee combat"
+        },
+        {
+            "query": "Glacial Crawler location and abilities in combat",
+            "variant": "location and combat abilities of the Glacial Crawler"
+        }
+    ]
+}

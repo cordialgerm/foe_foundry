@@ -1,0 +1,55 @@
+{
+    "name": "Wood Elf Sharpshooter",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "elf",
+        "archer",
+        "ranger",
+        "sharpshooter"
+    ],
+    "adjectives": [
+        "stealthy",
+        "agile",
+        "precise",
+        "resilient"
+    ],
+    "description": "The Wood Elf Sharpshooter is known for its exceptional agility and precision, equipped with a longsword and longbow, and possesses keen hearing and sight.",
+    "memorable": "With its high passive perception and ability to ignore cover, this sharpshooter can strike enemies from unexpected angles.",
+    "goals": "To engage adversaries from a distance while remaining undetected.",
+    "relations": "Often found in the company of other elves or ranger allies, this sharpshooter may serve as a scout or protector.",
+    "environment": "Typically inhabits forests and wilderness areas, ideal for ambush tactics.",
+    "strengths": "Exceptional agility and precision in ranged combat, with abilities that enhance stealth and survivability.",
+    "weaknesses": "Reliance on Dexterity can be a disadvantage in close melee encounters.",
+    "attacks": "Strikes twice in one turn with a longbow that can hit from great distances, ignoring cover.",
+    "most_powerful_ability": "Trained Accuracy enhances its weapon attacks, significantly increasing damage output.",
+    "equipment": "Longsword and longbow, effective in both melee and ranged combat.",
+    "senses": "Possesses a passive perception of 20, indicating exceptional awareness of surroundings.",
+    "skills": "Skilled in stealth, survival, and having very good perception abilities.",
+    "additional_information": [
+        "Can move without leaving tracks due to Trackless Travel.",
+        "Has advantage on Perception checks related to hearing or sight.",
+        "Can reposition without provoking opportunity attacks.",
+        "Combines melee and ranged attacks effectively as an ambusher.",
+        "Uses Aimed Strike for increased accuracy on attacks."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy elf with a longbow and longsword",
+        "ambush tactics with precise ranged attacks",
+        "wood elf skilled in stealth and survival",
+        "agile sharpshooter ignoring cover in battle",
+        "ranged combat specialist with keen senses"
+    ]
+}

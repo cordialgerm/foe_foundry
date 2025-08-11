@@ -1,6 +1,8 @@
 <MonsterName/>Nihilethic Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>37</HP>
 <summary>The Nihilethic Zombie is an undead creature characterized by its eerie connection to the void and its role as a harbinger of decay and darkness. It possesses a unique hybrid ability to shift between two forms: an Undead form and a Void Ghost form. The zombie is physically resilient with a total of 37 hit points, making it capable of enduring moderate amounts of damage before succumbing. However, it possesses a low armor class of 8, making it relatively easy to hit. Its special abilities grant it exceptional survivability; for example, it can potentially avoid being reduced to zero hit points altogether. The Nihilethic Zombie can maneuver through enemies and obstacles in its ghost form, though it suffers damage for doing so. It is immune to certain damage types such as cold, necrotic, and poison, but it is vulnerable to radiant damage, making it weaker against specific threats. While it can understand certain languages, it cannot communicate verbally, which limits its interaction options.</summary>
 
 <detail>
@@ -39,6 +41,7 @@ Overall, the Nihilethic Zombie serves as a cunning adversary in combat, capable 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nihilethic Zombie
 
 *Medium* *Undead* *Neutral Evil*
@@ -79,5 +82,6 @@ Source: 5e_artisinal_monsters
 
 - **Sacrifice Life:** When the nihilethic zombie’s controlling nihileth takes damage while within 30 feet of the zombie, the zombie can send its life force to the nihileth. The zombie’s hp is reduced by up to the amount of damage the nihileth took, preventing that amount of damage to the nihileth. If this damage reduces the zombie to 0 hp, it is immediately destroyed. A nihileth can benefit from only one zombie’s Sacrifice Life for each source of damage it takes.
 - **Void Body:** When the nihilethic zombie takes damage that isn’t radiant, it can reduce the damage by 1d12.
+</statblock>
 
 

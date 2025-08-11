@@ -1,0 +1,25 @@
+{
+    "name": "Thornheart Guardian",
+    "queries": [
+        {
+            "query": "large construct monster with thorns in a wooded area",
+            "variant": "large thorny construct creature found in forests"
+        },
+        {
+            "query": "creature immune to poison with high armor class and big health",
+            "variant": "monster that has poison immunity and a strong armor rating"
+        },
+        {
+            "query": "lawful evil construct that uses necrotic damage and grapples",
+            "variant": "evil lawful construct dealing necrotic harm and has grappling abilities"
+        },
+        {
+            "query": "sentinel-like creature with magical weapons and difficult terrain abilities",
+            "variant": "guardian-type being that has magic weapons and makes movement difficult"
+        },
+        {
+            "query": "strong melee attacker with magical resistance and limited intelligence",
+            "variant": "powerful physical fighter with magic-based defense and poor smarts"
+        }
+    ]
+}

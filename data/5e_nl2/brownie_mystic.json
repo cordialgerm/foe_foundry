@@ -1,0 +1,50 @@
+{
+    "name": "Brownie Mystic",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "fey",
+        "spellcaster",
+        "support"
+    ],
+    "adjectives": [
+        "tiny",
+        "magical",
+        "beneficial"
+    ],
+    "description": "A small fey creature known for its magical prowess and ability to turn invisible, often carrying a Mystic Staff.",
+    "memorable": "Its ability to turn invisible gives it a tactical advantage in combat, and its magic resistance makes it resilient against spellcasters.",
+    "goals": "To assist others and communicate with animals while using its magic for protection and aid.",
+    "relations": "Often found in the company of woodland creatures or other fey beings.",
+    "environment": "Typically resides in forests or magical glades.",
+    "strengths": "Exceptional Dexterity allows for agile maneuvers and evasion; magic resistance enhances survivability against spells.",
+    "weaknesses": "Very low Strength prevents it from engaging in heavy physical confrontations.",
+    "attacks": "Utilizes a Mystic Staff for melee attacks and can launch a Mystic Blast dealing psychic damage, with a combination of melee and spellcasting attacks.",
+    "most_powerful_ability": "Can turn invisible, providing strategic surprise and concealment in combat.",
+    "equipment": "Wields a Mystic Staff for melee attacks.",
+    "senses": "Passive perception of 16 enhances its awareness of surroundings.",
+    "skills": "Excels in perception with a +3 modifier, making it adept at noticing hidden details.",
+    "additional_information": [
+        "Can communicate with beasts, forming potential alliances.",
+        "Offers versatile spellcasting for utility, crowd control, and healing.",
+        "Has a Wisdom-based spellcasting ability that doesn't require material components for spells."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Wisdom-based spells including Mending, Minor Illusion, Prestidigitation, Entangle, Mirror Image, Confusion, Conjure Animals, and Dimension Door.",
+    "test_queries": [
+        "tiny magical creature that turns invisible",
+        "fey creature with spellcasting abilities",
+        "small helpful fey in the forest",
+        "brownie that communicates with animals",
+        "mystic fey with magic resistance"
+    ]
+}

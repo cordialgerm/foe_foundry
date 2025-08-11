@@ -1,0 +1,55 @@
+{
+    "name": "Windy Wailer",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 60 ft., hover",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "flying",
+        "cold",
+        "frightening"
+    ],
+    "adjectives": [
+        "haunting",
+        "chilling",
+        "incorporeal",
+        "mesmerizing"
+    ],
+    "description": "The Windy Wailer is a large undead creature that thrives on cold and necrotic energy, characterized by its haunting presence and spectral form. It can fly and hover effortlessly, enhancing its mobility.",
+    "memorable": "Its ability to mesmerize and incapacitate opponents, combined with chilling attacks and a lasting effect on victims, makes it a formidable adversary.",
+    "goals": "The Windy Wailer seeks to terrify and incapacitate its foes using its chilling presence and psychic attacks.",
+    "relations": "It may be encountered alongside other undead creatures or serve a more powerful necromancer.",
+    "environment": "Typically found in cold, haunted locations or abandoned sites filled with necrotic energy.",
+    "strengths": "High dexterity offers excellent mobility and saving throw bonuses, along with terrifying psychic abilities.",
+    "weaknesses": "Susceptible to radiant damage and relies heavily on intimidation tactics.",
+    "attacks": "Chilling Touch delivers necrotic and cold damage, while Wind Blast pushes foes with a chilling effect, and Frightful Gale frightens targets in a cone.",
+    "most_powerful_ability": "Ghostlight mesmerizes creatures within 30 feet, incapacitating them if they fail a Wisdom saving throw.",
+    "equipment": null,
+    "senses": "Has an exceptional passive perception score of 15.",
+    "skills": "Proficient in perception, enhancing its ability to detect hidden foes.",
+    "additional_information": [
+        "Can move through objects as if they were difficult terrain.",
+        "Creatures frightened by Frightful Gale can repeat saving throws to end the effect.",
+        "Victims reduced to 0 hit points by Frightful Gale gain a permanent shock of white hair upon revival.",
+        "Immunities to cold, necrotic, and poison damage make it resilient in combat.",
+        "Condition immunities and high mobility provide a significant advantage in encounters."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that flies and frightens",
+        "haunting monster with chilling touch attack",
+        "large necrotic creature with mesmerizing abilities",
+        "cold energy undead that causes white hair mark",
+        "Windy Wailer abilities and attacks"
+    ]
+}

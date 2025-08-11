@@ -1,0 +1,50 @@
+{
+    "name": "Coralfish",
+    "creature_type": "Monstrosity",
+    "alignment": "null",
+    "size": "Small",
+    "hp": 27,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "20 ft. walking, 40 ft. swimming",
+    "role": "null",
+    "tags": [
+        "aquatic",
+        "petrification",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "small",
+        "dangerous",
+        "aquatic"
+    ],
+    "description": "The Coralfish is a small, brightly colored monstrosity with notable aquatic abilities and a dangerous bite.",
+    "memorable": "Its petrifying bite can incapacitate opponents for a full day if untreated.",
+    "goals": "Predominantly seeks to ambush and incapacitate prey in aquatic environments.",
+    "relations": "May be found alongside other aquatic monsters or in coral reefs.",
+    "environment": "Primarily found in underwater environments.",
+    "strengths": "Good swimming speed and a powerful petrifying bite.",
+    "weaknesses": "Very poor physical strength and intelligence, making it less effective on land.",
+    "attacks": "The Coralfish attacks with a bite that deals piercing damage and has a chance to petrify the target.",
+    "most_powerful_ability": "Petrifying bite that can restrain opponents and turn them into statues for 24 hours.",
+    "equipment": "null",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in dim light and darkness.",
+    "skills": "null",
+    "additional_information": [
+        "Can only breathe underwater due to its aquatic nature.",
+        "Uses a Frenzy reaction to strike back when attacked.",
+        "Low intelligence and charisma scores suggest limited reasoning.",
+        "Has a decent constitution for stamina in combat.",
+        "Excellent swimming speed enhances its ambush potential in water."
+    ],
+    "damage_types": [],
+    "spellcasting": "null",
+    "test_queries": [
+        "small aquatic monster with petrifying bite",
+        "colorful fish that turns enemies to stone",
+        "dangerous underwater creature with quick strikes",
+        "monstrosity living in coral reefs",
+        "petrifying fish that ambushes prey"
+    ]
+}

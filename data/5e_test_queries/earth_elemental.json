@@ -1,0 +1,25 @@
+{
+    "name": "Earth Elemental",
+    "queries": [
+        {
+            "query": "towering rock creature that can burrow through the earth",
+            "variant": "tall rocky creature that burrows into the ground"
+        },
+        {
+            "query": "massive elemental that deals double damage to structures",
+            "variant": "huge elemental capable of doubling damage to buildings"
+        },
+        {
+            "query": "huge stone being with high durability and melee strength",
+            "variant": "large stone entity known for its strong physical attacks and durability"
+        },
+        {
+            "query": "earth creature that can move stealthily through stone",
+            "variant": "ground creature able to sneak through rock silently"
+        },
+        {
+            "query": "elemental monster immune to poison with powerful slam attacks",
+            "variant": "poison-resistant elemental monster with strong melee hits"
+        }
+    ]
+}

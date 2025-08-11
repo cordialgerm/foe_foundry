@@ -1,0 +1,55 @@
+{
+    "name": "Fallen Planetar",
+    "creature_type": "Celestial",
+    "alignment": null,
+    "size": "Large",
+    "hp": 250,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 40 ft., fly 120 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "combat",
+        "spellcaster",
+        "protector"
+    ],
+    "adjectives": [
+        "fallen",
+        "powerful",
+        "truthful",
+        "flaming"
+    ],
+    "description": "The Fallen Planetar is a large celestial with exceptional combat prowess, characterized by its flaming sword and majestic angelic form.",
+    "memorable": "It can automatically detect lies and cannot tell falsehoods, showcasing its honest nature.",
+    "goals": "To protect allies and fight against threats with its formidable combat and spellcasting abilities.",
+    "relations": "May be related to other celestial beings or serve a higher celestial authority.",
+    "environment": "Typically found in celestial realms, but may venture to the material plane for significant causes.",
+    "strengths": "High armor class and hit points make it durable, along with versatile attack options.",
+    "weaknesses": "Vulnerable to radiant damage and can be exploited due to this weakness.",
+    "attacks": "Uses a flaming sword for melee attacks dealing significant slashing and fire damage.",
+    "most_powerful_ability": "Champion of Truth allows the Fallen Planetar to detect lies automatically and prohibits it from lying.",
+    "equipment": "wields a flaming sword",
+    "senses": "Possesses truesight up to 60 feet, allowing it to see through illusions and magical darkness, with a passive perception of 22.",
+    "skills": "Well-rounded in athletics, insight, perception, and religion, displaying a balance of physical and mental skill.",
+    "additional_information": [
+        "Can heal allies significantly with its Heal ability.",
+        "Immunities to necrotic and poison damage.",
+        "Ability to consume life energy for temporary hit points.",
+        "Uses protective parry to defend allies from melee attacks.",
+        "Can cast control weather and raise dead without material components."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting provides access to commune and control weather, and can raise dead once per day.",
+    "test_queries": [
+        "powerful celestial with a flaming sword",
+        "angelic being that detects lies",
+        "enormous celestial capable of healing",
+        "large protector with lightning abilities",
+        "fallen celestial who can heal and attack"
+    ]
+}

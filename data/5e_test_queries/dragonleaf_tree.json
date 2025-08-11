@@ -1,0 +1,25 @@
+{
+    "name": "Dragonleaf Tree",
+    "queries": [
+        {
+            "query": "large plant creature that can unleash elemental damage and guards a dragon",
+            "variant": "big plant monster that unleashes elemental damage and protects a dragon"
+        },
+        {
+            "query": "imposing guardian plant with high hit points and elemental affinity abilities",
+            "variant": "formidable guardian plant with a lot of hit points and elemental affinity powers"
+        },
+        {
+            "query": "tree monster immune to certain damage types and devoted to its master",
+            "variant": "tree creature immune to specific damage types and loyal to its master"
+        },
+        {
+            "query": "giant tree that can attack from a distance and has slashing damage abilities",
+            "variant": "huge tree that can strike from afar and possesses slashing damage powers"
+        },
+        {
+            "query": "Dragonleaf Tree with incredibly high constitution and special loyalty abilities",
+            "variant": "Dragonleaf Tree with very high constitution and unique loyalty powers"
+        }
+    ]
+}

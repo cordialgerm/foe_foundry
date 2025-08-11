@@ -1,0 +1,53 @@
+{
+    "name": "Ichor Ooze",
+    "creature_type": "Ooze",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 8,
+    "srd": false,
+    "cr": "2",
+    "movement": "20 feet walk, swim, and climb",
+    "role": null,
+    "tags": [
+        "ooze",
+        "undead",
+        "creature"
+    ],
+    "adjectives": [
+        "murky",
+        "sinister",
+        "slimy"
+    ],
+    "description": "The Ichor Ooze is a murky, sinister blob with the ability to change shape and color. Its surface shimmers with a variety of hues, suggesting its dangerous vitality, and when it attacks, the ooze's gelatinous body appears to writhe and pulse.",
+    "memorable": "This ooze can drain the life from its victims, regaining health while simultaneously weakening them, making it a formidable opponent in sustained encounters.",
+    "goals": "The Ichor Ooze is often driven by vengeance, seeking out the creature that created it or its creator's enemies.",
+    "relations": "Typically encountered alone, but could be found near necromantic entities or other dark oozes.",
+    "environment": "Commonly found in dark, damp, and secluded locations such as swamps, dungeons, or ruins.",
+    "strengths": "Immune to fire and resistant to several damage types; has high resilience against nonmagical attacks.",
+    "weaknesses": "Low Armor Class makes it easy to hit, and slow movement prevents quick evasion from attacks.",
+    "attacks": "Can grapple foes with its Pseudopod attack, dealing bludgeoning and fire damage, and drains life from grappled targets with necrotic damage.",
+    "most_powerful_ability": "Life Drain allows it to lower a target's maximum hit points while healing itself, making it dangerous in extended confrontations.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense its environment without sight.",
+    "skills": null,
+    "additional_information": [
+        "Can move through narrow spaces as small as 1 inch without squeezing.",
+        "Has advantage on saving throws against spells due to Magic Resistance.",
+        "Can climb upside down on ceilings without checks.",
+        "Knows the direction and distance to the creature that killed its creator.",
+        "Easily overwhelmed by attackers due to low Dexterity."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creepy hostile ooze with life drain ability",
+        "slimy blob that can drain life",
+        "monster with unique vendetta against creators",
+        "ooze that can crawl on ceilings",
+        "slow-moving ooze immune to fire"
+    ]
+}

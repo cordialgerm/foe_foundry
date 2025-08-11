@@ -1,0 +1,55 @@
+{
+    "name": "Imp",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil, shapechanger",
+    "alignment": "lawful evil",
+    "size": "tiny",
+    "hp": 10,
+    "ac": 13,
+    "srd": true,
+    "cr": "1",
+    "movement": "20 ft., fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "devil",
+        "shapechanger",
+        "fiend",
+        "spy",
+        "familiar"
+    ],
+    "adjectives": [
+        "tiny",
+        "cunning",
+        "mischievous",
+        "deceitful"
+    ],
+    "description": "A tiny, winged devil known for its agility and rascally instigations, often adopting deceptive forms to infiltrate or spy.",
+    "memorable": "Its ability to turn invisible and imitate voices makes it a sneaky and unpredictable opponent.",
+    "goals": "To serve more powerful fiends as a spy, messenger, or familiar while causing chaos.",
+    "relations": "Typically serves larger fiends, often acting as a scout or informant.",
+    "environment": "Commonly found in regions associated with evil or chaotic entities, lurking in shadows.",
+    "strengths": "Possesses high Dexterity and stealth skills, along with resistances to several damage types.",
+    "weaknesses": "Low hit points and physical strength make it vulnerable to direct attacks.",
+    "attacks": "Uses a sting attack that deals both piercing and poison damage.",
+    "most_powerful_ability": "Invisibility allows the Imp to escape or ambush effectively.",
+    "senses": "Devil's Sight enables it to see in magical darkness, providing a tactical advantage.",
+    "skills": "High proficiency in Stealth and Deception enhances its abilities to elude detection and mislead foes.",
+    "additional_information": [
+        "Can shapeshift into a rat, raven, or spider, allowing tactical versatility.",
+        "Magic Resistance grants it advantage on saves against magic.",
+        "Immunities to fire and poison make it tough against elemental attacks.",
+        "Delights in causing chaos and corruption, embodying its evil nature."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny flying devil that can turn invisible",
+        "cunning imp that serves powerful fiends",
+        "mischievous creature that loves chaos and deception",
+        "devilish creature with stealth and magical abilities",
+        "shapechanging imp that can mimic voices"
+    ]
+}

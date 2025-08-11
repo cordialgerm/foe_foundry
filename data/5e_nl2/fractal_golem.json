@@ -1,0 +1,52 @@
+{
+    "name": "Fractal Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 8,
+    "ac": 18,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "golem",
+        "construct",
+        "magic immune",
+        "replicating"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "explosive",
+        "replicating"
+    ],
+    "description": "A large golem that can create duplicates; its form is robust and it possesses no mental capacity.",
+    "memorable": "The ability to replicate itself upon destruction with explosive force makes it a unique threat in combat.",
+    "goals": "To protect its creator or enforce its purpose on the battlefield.",
+    "relations": "May be encountered with other constructs or serve an artificer or creator.",
+    "environment": "Usually found in areas associated with magic or its creator, often in ruins or laboratories.",
+    "strengths": "Immune to poison, psychic damage, and several debilitating conditions; magical weapon attacks can bypass resistances.",
+    "weaknesses": "Relatively low hit points make it vulnerable to coordinated attacks.",
+    "attacks": "Slam attack inflicts substantial bludgeoning damage, threatening nearby enemies.",
+    "most_powerful_ability": "Fractalize: upon being destroyed, it can explode and create duplicates that maintain pressure on opponents.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has notable stealth and survival skills, allowing it to ambush effectively.",
+    "additional_information": [
+        "Immutable Form grants resistance to any shape-altering effects.",
+        "Magic Resistance provides advantage against magical effects.",
+        "Cannot communicate verbally but understands languages of its creator.",
+        "Darkvision allows it to see in low light.",
+        "Duplicates act on the same initiative, increasing battlefield chaos."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large golem that replicates itself",
+        "construct immune to magic attacks",
+        "explosive monster that creates duplicates",
+        "golem tough against physical attacks",
+        "heavily armored creature with bludgeoning slam"
+    ]
+}

@@ -1,6 +1,9 @@
 <MonsterName/>Hippogriff</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>animal</Subtype>
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>19</HP>
 <summary>A Hippogriff is a majestic creature with the front half of an eagle and the hindquarters of a horse. These creatures are known for their speed and agility in flight, making them popular as mounts for skilled riders. Hippogriffs are typically found in high mountain ranges, where they build their nests and hunt for food. They are proud and noble creatures, fiercely defending their nests and territories from intruders. In battle, they strike with razor-sharp talons and beaks, using their ability to fly to gain the advantage over their enemies. Though wild by nature, Hippogriffs can be tamed and trained with patience and respect.</summary>
 
 <summary>The Hippogriff is a large monstrosity that serves as a formidable creature in the wild. With its impressive flying capabilities and powerful melee attacks, it acts as both a guardian and predator within its territory. Its strengths lie in its decent Armor Class of 12 and a moderate pool of hit points totalling 39, derived from rolling six ten-sided dice plus an additional six hit points. The creature's challenge rating of 1 makes it a manageable foe for low-level adventurers. Notably, its ability to fly at a speed of 60 feet allows it to engage in combat from the air, making it a versatile opponent despite its low intelligence and charisma scores.</summary>
@@ -33,6 +36,7 @@ Overall, the Hippogriff is a well-rounded creature capable of strong offensive m
 
 Source: 5e_srd
 
+<statblock>
 ## Hippogriff
 
 *Large monstrosity, unaligned*
@@ -63,7 +67,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d10+3) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage.</statblock>
+
 
 
 
@@ -71,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippogriff
 
 *Large* *Monstrosity*
@@ -98,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 
 
+</statblock>
 
 
 
@@ -106,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippogriff
 
 *Large monstrosity (animal)*
@@ -140,5 +148,6 @@ Source: 5e_artisinal_monsters
 
 - **Dive (Recharge 5–6).** While flying, the hippogriff dives onto a creature below it. The hippogriff moves at least 20 feet in a straight line toward a creature it can see. The target must succeed on a DC 13 STR save or take 7 (2d6) bludgeoning damage and be knocked prone.
 
+</statblock>
 
 

@@ -1,0 +1,52 @@
+{
+    "name": "Sewer Weird",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft., swim 60 ft.",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "swarmer",
+        "water"
+    ],
+    "adjectives": [
+        "formidable",
+        "toxic",
+        "cunning",
+        "malicious"
+    ],
+    "description": "The Sewer Weird embodies the essence of stagnant waters and toxic environments, appearing as a large elemental creature with a fluid, unsettling form.",
+    "memorable": "It can erupt in flames when struck by fire damage, causing a harmful explosion to nearby creatures.",
+    "goals": "To ambush adventurers and overwhelm them with its toxic presence.",
+    "relations": "May be encountered alongside other water elementals or creatures that inhabit polluted environments.",
+    "environment": "Often found in sewers, swamps, or other polluted water bodies.",
+    "strengths": "Immunities to poison and various debilitating conditions, as well as significant mobility in water.",
+    "weaknesses": "Low intelligence and charisma, making it poor in social situations and strategy.",
+    "attacks": "Delivers multiattacks with Slam strikes, dealing bludgeoning damage and potentially poisoning its targets.",
+    "most_powerful_ability": "Sewer Overflow emits a damaging wave of filth and water that can infect its prey with sewer plague.",
+    "senses": "Has darkvision and a passive perception of 10.",
+    "skills": "Lacks notable skills due to low perception.",
+    "additional_information": [
+        "Elemental Nature allows it to survive without air, food, or sleep.",
+        "Water Form enables it to slide through narrow spaces, making it difficult to corner.",
+        "Flammable Fumes cause it to explode in a harmful radius upon taking fire damage."
+    ],
+    "damage_types": [
+        "poison",
+        "thunder",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "elemental creature from polluted waters",
+        "large creature with toxic abilities",
+        "malicious being that thrives in sewers",
+        "formidable elemental that erupts in flames",
+        "creature that can move through tight spaces"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Alehouse Drake",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Tiny",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 60 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "mischievous",
+        "nimble"
+    ],
+    "adjectives": [
+        "chaotic",
+        "clever",
+        "agile"
+    ],
+    "description": "The Alehouse Drake is a tiny dragon known for its chaotic and mischievous nature, with a vibrant coloration that reflects its playful character. It possesses sharp claws and a sly grin, often using its charm and trickery in encounters.",
+    "memorable": "It has the unique ability to incapacitate foes with its breath weapons and discombobulating bite, creating chaos on the battlefield.",
+    "goals": "The Alehouse Drake often seeks to cause mischief, disrupt opponents, and evade direct confrontation using clever tactics.",
+    "relations": "It may be found alongside other chaotic creatures or as a companion to adventurers that appreciate its cunning nature.",
+    "environment": "Typically found in taverns or festively chaotic environments, often where there's merriment or feasting.",
+    "strengths": "High Dexterity allows it to dodge attacks effectively, and its abilities can control enemy movements and actions.",
+    "weaknesses": "Significantly low Strength limits its effectiveness in direct physical combat, making it rely on tricks and agility.",
+    "attacks": "Utilizes claw and bite attacks along with unique abilities to disorient and incapacitate foes.",
+    "most_powerful_ability": "Dazing Breath can incapacitate multiple foes at once, altering the dynamics of a battle.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Deception, Insight, and Persuasion, making it skilled in social interactions and trickery.",
+    "additional_information": [
+        "Immune to poison damage and conditions, enhancing its survivability in encounters.",
+        "Can cause confusion and disarray among enemies with its psychological and tactical abilities.",
+        "Plays a role in bardic narratives or whimsical tales as a trickster figure."
+    ],
+    "damage_types": [
+        "psychic",
+        "poison"
+    ],
+    "spellcasting": "Can make ranged spell attacks with psychic damage through its Mocking Chortle.",
+    "test_queries": [
+        "tiny dragon creature",
+        "clever dragon nuisance",
+        "chaotic mischief maker",
+        "agile dragon with unique breath weapon",
+        "deceptive dragon with psychic abilities"
+    ]
+}

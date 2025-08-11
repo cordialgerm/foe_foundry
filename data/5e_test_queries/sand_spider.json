@@ -1,0 +1,25 @@
+{
+    "name": "Sand Spider",
+    "queries": [
+        {
+            "query": "large beast that ambushes in sandy environments and uses poison attacks",
+            "variant": "big creature that hides in sand and attacks with poison and ambushes"
+        },
+        {
+            "query": "cunning predator with high stealth and burrowing abilities in deserts",
+            "variant": "sneaky predator that can hide well and burrow in sandy areas"
+        },
+        {
+            "query": "sand-dwelling monster with powerful melee attacks and grappling capabilities",
+            "variant": "creature that lives in sand with strong melee attacks and can grapple"
+        },
+        {
+            "query": "predatory spider-like beast that deals both piercing and poison damage",
+            "variant": "hunting spider creature that inflicts piercing and poison damage"
+        },
+        {
+            "query": "beast with sand camouflage that excels in ambushing unaware creatures",
+            "variant": "creature that uses sand cover and is great at ambushing unsuspecting targets"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Young Blue Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 152,
+    "ac": 18,
+    "srd": true,
+    "cr": "9",
+    "movement": "40 ft. walking, 20 ft. burrowing, 80 ft. flying",
+    "role": null,
+    "tags": [
+        "dragon",
+        "lightning",
+        "predator",
+        "tactician"
+    ],
+    "adjectives": [
+        "arrogant",
+        "cunning",
+        "powerful",
+        "electric"
+    ],
+    "description": "A Young Blue Dragon with vibrant blue scales that crackle with electrical energy. Known for its tactical prowess and dominance in arid regions, it builds lairs beneath the sand, hiding its growing hoards.",
+    "memorable": "The dragon is a master tactician that can strike from the sky and uses its devastating lightning breath to control the battlefield.",
+    "goals": "Subjugates weaker creatures, expands influence, and hoards treasure.",
+    "relations": "May serve or command lesser creatures and is often found in the company of other dragons or similar desert predators.",
+    "environment": "Deserts and arid regions.",
+    "strengths": "Immune to lightning, possesses blindsight and tremorsense, and is adept at using the terrain to its advantage.",
+    "weaknesses": "Relatively low Dexterity makes it susceptible to stealthy attacks in advantageous terrain.",
+    "attacks": "Can perform a Multiattack with a bite and two claw attacks, each dealing piercing and slashing damage, supplemented by lightning damage.",
+    "most_powerful_ability": "Lightning Breath, a powerful breath weapon that unleashes a line of damaging lightning to devastate enemies.",
+    "equipment": null,
+    "senses": "The Young Blue Dragon has blindsight and tremorsense out to 30 feet, as well as darkvision extending 120 feet, which enhances its perception in various environments.",
+    "skills": "Proficient in perception, stealth, and survival, allowing it to effectively identify and adapt to threats.",
+    "additional_information": [
+        "Can ignore difficult terrain in sandy conditions and is immune to extreme heat.",
+        "The Dune Splitter ability allows it to hide in sand while gaining stealth advantages.",
+        "Innate spellcasting capabilities with spells like blur and silent image.",
+        "Charged Hide creates electrical threats for nearby enemies.",
+        "Aggressive tactics make it a dangerous opponent in combat."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting with a focus on Charisma, allowing it to cast blur and silent image three times each per day without components.",
+    "test_queries": [
+        "electric dragon with strategic tactics",
+        "desert dwelling predator with lightning breath",
+        "blue dragon that submerges in sand",
+        "powerful aerial dragon controlling its territory",
+        "Young Blue Dragon's elemental lightning abilities"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Khalkos Spawn",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet walking and flying",
+    "role": "Skirmisher",
+    "tags": [
+        "Aberration",
+        "Tiny",
+        "Cunning",
+        "Confusion"
+    ],
+    "adjectives": [
+        "cunning",
+        "strategic",
+        "mobile",
+        "confusing"
+    ],
+    "description": "A tiny aberration with a high degree of cunning and tactical awareness. It has impressive dexterity, allowing for quick movements, and a frail physical appearance.",
+    "memorable": "Its unique chaos pheromones ability can confuse foes, disrupting enemy strategies.",
+    "goals": "To manipulate the battlefield and confuse enemies.",
+    "relations": "Might be encountered with other Khalkos or in groups of cunning creatures.",
+    "environment": "Typically found in areas where it can employ tactical advantages, such as ruins or dense forests.",
+    "strengths": "Highly intelligent and dexterous, able to evade attacks and manipulate the battlefield effectively.",
+    "weaknesses": "Physically weak with low strength, making it rely on cunning over brute force.",
+    "attacks": "Uses a sting attack that combines piercing and poison damage to its target.",
+    "most_powerful_ability": "Chaos Pheromones that cause confusion among enemies within a radius.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, aiding its navigation in dim light.",
+    "skills": "Possesses high intelligence and wisdom skills, making it perceptive and insightful.",
+    "additional_information": [
+        "Resilient against fire, psychic, and radiant damage.",
+        "Immune to being charmed, offering protection against certain magical influences.",
+        "Can detect the presence of aligned creatures within 30 feet."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny cunning creature that confuses enemies",
+        "mobile aberration with chaos pheromones",
+        "small monster that manipulates foes",
+        "strategic creature with high intelligence",
+        "monster resistant to fire and psychic damage"
+    ]
+}

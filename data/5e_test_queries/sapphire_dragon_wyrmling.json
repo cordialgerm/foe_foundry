@@ -1,0 +1,25 @@
+{
+    "name": "Sapphire Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with psionic abilities that can fly",
+            "variant": "medium-sized dragon that can fly and has psionic powers"
+        },
+        {
+            "query": "dragon that communicates telepathically and has damage immunity to psychic attacks",
+            "variant": "dragon with psychic damage immunity and telepathic communication"
+        },
+        {
+            "query": "mobile dragon known for its impressive flight speed and special ability 'Far Thoughts'",
+            "variant": "very mobile dragon that has a high flight speed and the ability 'Far Thoughts'"
+        },
+        {
+            "query": "creature with high intelligence scores and strong perception in dark environments",
+            "variant": "being with elevated intelligence and strong perception in dark settings"
+        },
+        {
+            "query": "dragon that uses psychic breath attack and has strong melee damage potential",
+            "variant": "dragon with a powerful psychic breath attack and strong melee damage output"
+        }
+    ]
+}

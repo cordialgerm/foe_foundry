@@ -1,0 +1,25 @@
+{
+    "name": "Wakwak",
+    "queries": [
+        {
+            "query": "large beast with sharp beak that knocks enemies prone",
+            "variant": "big beast with a sharp beak that can knock foes down"
+        },
+        {
+            "query": "ferocious creature that has advantage due to allies nearby",
+            "variant": "fierce creature that gains bonus from nearby allies"
+        },
+        {
+            "query": "beast known for its keen smell and pounce ability",
+            "variant": "creature famous for its strong sense of smell and jumping attack"
+        },
+        {
+            "query": "agile monster with natural armor that can fly slightly",
+            "variant": "quick creature with natural protection that can glide a little"
+        },
+        {
+            "query": "monster with multiattack capabilities and temporary hit points",
+            "variant": "creature that can attack multiple times and gain extra health"
+        }
+    ]
+}

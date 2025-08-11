@@ -1,0 +1,25 @@
+{
+    "name": "Reef Shark",
+    "queries": [
+        {
+            "query": "medium aquatic predator with sharp teeth that lives near coral reefs",
+            "variant": "medium-sized predator living near coral reefs with sharp teeth"
+        },
+        {
+            "query": "fast swimming shark that hunts in packs in warm shallow waters",
+            "variant": "shark that swims fast and hunts in groups in warm shallow waters"
+        },
+        {
+            "query": "shark that breathes underwater and attacks if provoked",
+            "variant": "underwater breathing shark that will attack when threatened"
+        },
+        {
+            "query": "hunter shark with blindsight and low intelligence",
+            "variant": "shark with hunting abilities and poor intelligence using blindsight"
+        },
+        {
+            "query": "dangerous reef shark that thrives in aquatic environments",
+            "variant": "reef shark thriving in water that is dangerous"
+        }
+    ]
+}

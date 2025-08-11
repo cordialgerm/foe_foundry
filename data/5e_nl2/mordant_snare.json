@@ -1,0 +1,54 @@
+{
+    "name": "Mordant Snare",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Evil",
+    "size": "Gargantuan",
+    "hp": 248,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "30 ft. walking speed and 10 ft. burrowing speed",
+    "role": "Ambusher",
+    "tags": [
+        "aberration",
+        "chaotic evil",
+        "ambush",
+        "puppeteer"
+    ],
+    "adjectives": [
+        "formidable",
+        "grotesque",
+        "tactical",
+        "deceptive"
+    ],
+    "description": "The Mordant Snare is a grotesque gargantuan aberration with a chaotic evil nature, capable of creating puppets from slain humanoids. It has substantial tentacles and a menacing bite, along with a keen ability to ambush its enemies.",
+    "memorable": "Its unique ability to turn humanoids into puppets under its control makes it particularly dangerous and memorable.",
+    "goals": "To manipulate others through its puppets and dominate the battlefield with ambush tactics.",
+    "relations": "It may serve or be summoned by other chaotic or evil entities, and it could command its Mordant Puppets as minions.",
+    "environment": "Commonly found underground or in dark locations, where it can ambush unsuspecting prey.",
+    "strengths": "High hit points and resistance to nonmagical physical damage enhance its survivability.",
+    "weaknesses": "Low Charisma hinders its social interactions and may limit its tactical options in negotiation.",
+    "attacks": "The creature can deliver powerful melee attacks with its bite and tentacles, as well as ranged acid spikes, making it highly versatile in combat.",
+    "most_powerful_ability": "The ability to create Mordant Puppets from slain humanoids allows it to control additional combatants.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, allowing it to navigate effectively in darkness and through the ground.",
+    "skills": "Proficient in Deception, making it adept at misleading others during encounters.",
+    "additional_information": [
+        "Magic Resistance grants advantage on spell saving throws.",
+        "Can use its Hidden Trap ability to surprise attack from beneath the ground.",
+        "Immune to damage from acid.",
+        "Can grapple opponents with its tentacles, enhancing its tactical positioning.",
+        "Keeps up to twelve Mordant Puppets under its control."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Gargantuan monster that creates puppets from dead humanoids",
+        "chaotic evil creature with ambush tactics",
+        "grotesque aberration that attacks from underground",
+        "monster with tentacle attacks and acid damage",
+        "formidable creature with magic resistance and high hit points"
+    ]
+}

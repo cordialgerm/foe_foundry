@@ -1,6 +1,8 @@
 <MonsterName/>Lunar Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Lunar Devil is a formidable fiend known for its cunning and versatility in both combat and manipulation. It boasts impressive physical attributes, particularly in strength and dexterity, which enhance its melee attacks significantly. The creature has strong defenses and is quite resilient thanks to its damage immunities and resistances. Its lawful evil alignment reflects its calculated and ruthless nature, making it a substantial challenge for adventurers. Notably, its ability to utilize moonlight to enhance its defenses and mobility adds an intriguing dimension to its tactics in battle. However, while it has high hit points, its reliance on darkness might present a weakness in brightly lit environments.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Lastly, the Lunar Devil can cast spells, utilizing Charisma as its spellcasting 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lunar Devil
 
 *Large* *Fiend* *Lawful Evil*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Moonlight:** Ranged Spell Attack: +7 to hit, range 150 ft., one target. Hit: 17 (3d8 + 4) cold damage, and the target must succeed on a DC 15 Constitution saving throw or become blinded until the end of its next turn.
 - **Summon Devil (1/Day):** The lunar devil magically calls 1d4 giant owls that are Fiends with the lunar devil’s damage resistances and immunities (but not its Light Incorporeality trait). The lunar devil has a 25 percent chance of calling one lunar devil instead. The called creatures arrive in 1d4 rounds, acting as allies of the devil and obeying its telepathic commands. The creatures remain for 1 hour, until the devil dies, or until the devil dismisses them as a bonus action.
 - **Spellcasting:** The lunar devil casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):<br>At will: fly, major image<br>3/day: greater invisibility<br>1/day: wall of ice
+</statblock>
 
 

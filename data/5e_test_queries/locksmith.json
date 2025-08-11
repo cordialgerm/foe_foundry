@@ -1,0 +1,25 @@
+{
+    "name": "Locksmith",
+    "queries": [
+        {
+            "query": "construct that excels in picking locks and disarming traps",
+            "variant": "construct that is great at lockpicking and disarming traps"
+        },
+        {
+            "query": "medium-sized monster immune to fire and poison with high armor class",
+            "variant": "medium creature that has high armor and is immune to poison and fire"
+        },
+        {
+            "query": "mechanical creature with innate spellcasting and high strength",
+            "variant": "mechanical being that can cast spells and has great strength"
+        },
+        {
+            "query": "durable construct that can use acid damage and has stealth skills",
+            "variant": "sturdy construct capable of using acid attacks and proficient in stealth"
+        },
+        {
+            "query": "monster with expert lockpicker ability and low charisma",
+            "variant": "creature that can pick locks expertly but has a low charisma score"
+        }
+    ]
+}

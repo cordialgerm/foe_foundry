@@ -1,0 +1,25 @@
+{
+    "name": "Aboleth Thrall",
+    "queries": [
+        {
+            "query": "humanoid creature that can breathe in water and air",
+            "variant": "humanoid that can breath water and air creature"
+        },
+        {
+            "query": "servant of aboleth with poison attacks and aquatic abilities",
+            "variant": "aboleth servant with poison attacks and aquatic skills"
+        },
+        {
+            "query": "medium humanoid that suffocates when dry and uses a knife",
+            "variant": "medium humanoid that can suffocate when dry using a knife"
+        },
+        {
+            "query": "loyal thrall with decent combat skills and water dependency",
+            "variant": "loyal thrall with good combat skills and dependency on water"
+        },
+        {
+            "query": "creature loyal to aboleth dealing poison damage in combat",
+            "variant": "aboleth loyal creature dealing damage with poison in fights"
+        }
+    ]
+}

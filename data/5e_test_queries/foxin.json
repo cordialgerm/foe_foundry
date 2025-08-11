@@ -1,0 +1,25 @@
+{
+    "name": "Foxin",
+    "queries": [
+        {
+            "query": "small fey creature with charm and agility",
+            "variant": "fey creature that is small and agile with charm"
+        },
+        {
+            "query": "creature that can make others perceive it as unobtrusive",
+            "variant": "creature that seems unobtrusive to others around it"
+        },
+        {
+            "query": "Foxin abilities include keen senses and charming aura",
+            "variant": "abilities of a Foxin include charm and keen senses"
+        },
+        {
+            "query": "Fey creature immune to charm with high perception",
+            "variant": "charm-immune fey creature with excellent perception skills"
+        },
+        {
+            "query": "Foxin Bite attack knock prone and Illusory Calm",
+            "variant": "Bite attack of a Foxin can knock enemies prone and has Illusory Calm ability"
+        }
+    ]
+}

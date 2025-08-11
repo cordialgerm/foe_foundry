@@ -1,0 +1,54 @@
+{
+    "name": "Chatterlome",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "stealth",
+        "ambusher",
+        "magical resistance"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "elusive"
+    ],
+    "description": "The Chatterlome is a Medium fiend with a penchant for stealth, characterized by its agility and vibrant cunning. It possesses a substantial build supported by its high Dexterity and Constitution, allowing it to both endure and evade attacks.",
+    "memorable": "Its ability to teleport into wooden containers, coupled with strong stealth skills, makes the Chatterlome a unique and unpredictable foe.",
+    "goals": "The Chatterlome aims to ambush opponents and exploit its tactical advantages in combat.",
+    "relations": "Typically found within infernal legions, it may serve more powerful fiends or operate independently as a mercenary.",
+    "environment": "Often resides in urban settings, specifically in places with wooden structures for its teleportation abilities.",
+    "strengths": "Immunity to poison damage and conditions, resistance to cold and fire, along with magical resistance provides it with diverse defensive capabilities.",
+    "weaknesses": "Lower intelligence and charisma scores may limit its effectiveness in social or intellectual challenges.",
+    "attacks": "Utilizes a Multiattack feature to make up to four chisel attacks in one turn, each dealing slashing damage.",
+    "most_powerful_ability": "Box Teleport allows it to unexpectedly disappear and hide inside wooden containers, giving it a tactical edge in encounters.",
+    "equipment": null,
+    "senses": "It has a passive perception of 15, allowing it to notice subtle changes in its surroundings.",
+    "skills": "Proficient in stealth and perception, enhancing its capabilities as an ambusher.",
+    "additional_information": [
+        "Advantage on saving throws against spells",
+        "Damage resistance from nonmagical attacks",
+        "Ability to teleport to the Hells when needed",
+        "High Dexterity enhances stealth and defense",
+        "Operates effectively in urban environments"
+    ],
+    "damage_types": [
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that can teleport into boxes",
+        "stealthy magical creature that ambushes foes",
+        "cunning evil fiend known for agility",
+        "medium fiend with poison immunity",
+        "elusive ambusher with magical resistance"
+    ]
+}

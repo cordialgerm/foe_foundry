@@ -1,0 +1,50 @@
+{
+    "name": "Bone Collector",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 21,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walking speed of 15 feet and flying speed of 60 feet, providing exceptional mobility",
+    "role": "Hindering foe",
+    "tags": [
+        "undead",
+        "curse",
+        "mobility"
+    ],
+    "adjectives": [
+        "malevolent",
+        "disease-infesting",
+        "cunning"
+    ],
+    "description": "The Bone Collector is a small undead creature with a sinister appearance, capable of flying and characterized by a malevolent aura. It uses its talons to inflict harm and disease on its enemies.",
+    "memorable": "Its ability to critically hit from a distance and to inflict a debilitating disease on its victims makes it a formidable and memorable foe.",
+    "goals": "To disrupt and weaken opponents through disease and curses.",
+    "relations": "Often associated with other undead creatures it can sense through its abilities.",
+    "environment": "Typically found in graveyards or areas with a high concentration of the dead.",
+    "strengths": "Possesses flight, critical hit capabilities from a distance, and various special abilities that enhance its combat effectiveness.",
+    "weaknesses": "Low hit points and poor physical strength, limiting its resilience in direct combat.",
+    "attacks": "Utilizes a melee attack with its talons, inflicting slashing damage and potentially causing disease.",
+    "most_powerful_ability": "Call of the Grave: Allows attacks to score critical hits on a roll of 19 or 20 within a 60-foot radius.",
+    "equipment": null,
+    "senses": "Has keen senses, allowing it to pinpoint the location of undead creatures and those recently deceased within a 60-foot radius.",
+    "skills": "Proficient in perception, giving it heightened awareness to notice hidden or distant creatures.",
+    "additional_information": [
+        "Immunity to necrotic and poison damage, making it resistant to specific attacks.",
+        "Does not require basic needs such as air, food, drink, or sleep due to its Undead Nature.",
+        "Magic Resistance provides advantage on saving throws against spells and magical effects.",
+        "The disease inflicted can lead to significant consequences, including death if untreated.",
+        "The Bad Omen ability can hinder opponents, making it easier for the Bone Collector to evade attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "malevolent undead creature",
+        "flying curse inflicting monster",
+        "necrotic resistant undead",
+        "creature with disease abilities",
+        "Bone Collector tactics"
+    ]
+}

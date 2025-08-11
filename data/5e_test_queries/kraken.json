@@ -1,0 +1,25 @@
+{
+    "name": "Kraken",
+    "queries": [
+        {
+            "query": "massive sea monster with tentacles that attacks ships",
+            "variant": "huge water creature with tentacles attacking vessels"
+        },
+        {
+            "query": "gargantuan creature that commands storms and lurks in ocean depths",
+            "variant": "giant being controlling storms and hiding in deep waters"
+        },
+        {
+            "query": "intelligent kraken with acid attack and lightning abilities",
+            "variant": "smart kraken that uses acid and lightning attacks"
+        },
+        {
+            "query": "giant squid-like monster that grapples and swallows foes",
+            "variant": "large squid creature that can grapple and consume enemies"
+        },
+        {
+            "query": "underwater monster with ink cloud and legendary strength",
+            "variant": "oceanic beast with ink ability and immense power"
+        }
+    ]
+}

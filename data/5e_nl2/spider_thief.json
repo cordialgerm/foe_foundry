@@ -1,0 +1,52 @@
+{
+    "name": "Spider Thief",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "small",
+    "hp": 66,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walks 20 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "construct",
+        "agile"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "sneaky"
+    ],
+    "description": "The Spider Thief is a small construct with a design focused on agility and stealth, featuring a sleek form. It employs a hooked wire and sickle claw to maneuver and attack its targets effectively.",
+    "memorable": "Its ability to pull itself towards targets and avoid opportunity attacks makes it a tricky adversary.",
+    "goals": "To execute stealthy operations and efficiently retrieve objects.",
+    "relations": "Often found in areas where constructs are created or employed for thievery.",
+    "environment": "Typically encountered in urban settings, especially in areas prone to thievery or espionage.",
+    "strengths": "Immunities to poison and psychic damage, along with advantages against magical effects enhance its survivability.",
+    "weaknesses": "Low Intelligence and Charisma limit its usefulness in social situations.",
+    "attacks": "Utilizes a mix of hooked wire and sickle claw attacks, dealing slashing and piercing damage.",
+    "most_powerful_ability": "The Wire Jump lets it escape or reposition while avoiding opportunity attacks.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has a proficiency in Stealth, allowing it to move quietly and avoid detection.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep",
+        "Immune to spells or effects that would alter its form",
+        "Can carry objects or willing creatures up to 100 pounds",
+        "Offers tactical advantages due to its maneuverability in combat",
+        "Exhibits moderate durability for its challenge rating"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile construct that excels in stealth",
+        "small creature using wire to move stealthily",
+        "construct capable of pulling itself towards targets",
+        "Spider Thief employs sneaky tactics in urban areas",
+        "cunning thief with advantages against magic"
+    ]
+}

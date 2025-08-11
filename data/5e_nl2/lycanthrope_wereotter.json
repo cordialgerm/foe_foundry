@@ -1,0 +1,49 @@
+{
+    "name": "Lycanthrope, Wereotter",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "lycanthrope",
+        "water",
+        "chaotic good"
+    ],
+    "adjectives": [
+        "playful",
+        "tenacious",
+        "agile"
+    ],
+    "description": "The Wereotter is a medium-sized humanoid that showcases the playful nature of otters, possessing human intelligence and capabilities. It can switch between a humanoid form, a medium otter-humanoid hybrid form, and a large otter form.",
+    "memorable": "Its ability to transform shape and curse others with lycanthropy creates a unique challenge in encounters.",
+    "goals": "To explore aquatic environments, engage in playful activities, and defend its territory.",
+    "relations": "Often encountered with other lycanthropes or aquatic creatures.",
+    "environment": "Typically found in rivers, lakes, and coastal areas.",
+    "strengths": "Strong Dexterity and Charisma make it agile in combat and effective in social interactions.",
+    "weaknesses": "Vulnerable to silvered weapons and has moderate Strength, making it less effective against tough foes.",
+    "attacks": "Can make multiple ranged javelin attacks or a bite that curses humanoids with lycanthropy.",
+    "most_powerful_ability": "The ability to change shape provides versatility in combat and social situations.",
+    "senses": "Possesses keen hearing and smell, granting it advantage on Perception checks relying on those senses.",
+    "skills": "A decent passive perception of 14 aids its awareness of surroundings.",
+    "additional_information": [
+        "Can hold its breath for 10 minutes underwater.",
+        "Damage immunity to nonmagic attacks not made with silvered weapons.",
+        "Bite attack can curse humanoids with wereotter lycanthropy.",
+        "Exhibits agile swimming and maneuvering skills.",
+        "Utilizes nets to restrain opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "playful humanoid that can swim and transform",
+        "Wereotter creature with shape-shifting abilities",
+        "aquatic lycanthrope that curses with bite",
+        "medium humanoid adept in combat and social skills",
+        "tenacious swimmer that can hold breath underwater"
+    ]
+}

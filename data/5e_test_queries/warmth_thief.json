@@ -1,0 +1,25 @@
+{
+    "name": "Warmth Thief",
+    "queries": [
+        {
+            "query": "tiny fey creature that steals warmth in cold environments",
+            "variant": "fey tiny creature that warms thieve in cold environment"
+        },
+        {
+            "query": "cold damage dealing fey with high Dexterity and Constitution",
+            "variant": "fey that deals cold damage with high Dex and Con"
+        },
+        {
+            "query": "mobility expert fey that thrives in cold and avoids heat",
+            "variant": "cold thriving mobility fey that avoids heat"
+        },
+        {
+            "query": "stealthy creature that drains life force and has truesight",
+            "variant": "creature that is stealthy, drains life force, and has true sight"
+        },
+        {
+            "query": "creature immune to cold that's effective in colder climates",
+            "variant": "cold immunity creature that's effective in colder climate"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Crimson Mist",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 68,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "hover and walk speed of 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "necrotic",
+        "vampire",
+        "stealth"
+    ],
+    "adjectives": [
+        "spectral",
+        "chaotic",
+        "malevolent"
+    ],
+    "description": "The Crimson Mist is a spectral, weightless creature resembling a vampire combined with mist, known for its chaotic and evil presence, hovering ominously.",
+    "memorable": "It siphons vitality from living beings by reducing their hit point maximum while healing itself, making it a dangerous adversary.",
+    "goals": "To drain the life force of living creatures and recover its own health.",
+    "relations": "Often associated with other undead creatures or dark beings, it may serve as a minion to more powerful vampires.",
+    "environment": "Typically found in dark, abandoned places, or haunting locales away from sunlight.",
+    "strengths": "Immunities to cold, necrotic, and poison damage; it can also move through spaces occupied by other creatures.",
+    "weaknesses": "Vulnerable to sunlight, which deals damage and imposes disadvantage on its attacks; cannot enter residences without invitation.",
+    "attacks": "Engulfs living creatures, dealing necrotic damage while restraining them, leveraging its weightless form strategically.",
+    "most_powerful_ability": "Sanguine Feast, which reduces a creature's hit point maximum while healing the Crimson Mist with necrotic damage dealt.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Cannot enter a residence without invitation.",
+        "Takes damage when in running water.",
+        "Causes death if a creature's hit point maximum is reduced to 0.",
+        "Only one creature can be engulfed at a time, adding strategic importance.",
+        "Disadvantage on attack rolls and ability checks in sunlight."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant",
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "spectral vampire-like creature with mist form",
+        "malevolent undead draining life from victims",
+        "crimson mist that heals from necrotic damage",
+        "undead creature vulnerable to sunlight",
+        "weightless monster that engulfs living beings"
+    ]
+}

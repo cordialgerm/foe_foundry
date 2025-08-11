@@ -1,0 +1,25 @@
+{
+    "name": "Stargazer",
+    "queries": [
+        {
+            "query": "huge monster with tendrils that can trap opponents",
+            "variant": "huge creature with tentacles that traps enemies"
+        },
+        {
+            "query": "mighty monstrosity that has magic resistance and can burrow",
+            "variant": "powerful creature with spell resistance and burrowing ability"
+        },
+        {
+            "query": "strong creature with multiattack option and bludgeoning damage",
+            "variant": "powerful monster that uses multiattack and bludgeoning damage"
+        },
+        {
+            "query": "durable enemy with high hit points and weak dexterity",
+            "variant": "sturdy foe with large HP and low agility"
+        },
+        {
+            "query": "monstrosity that senses vibrations and grapples targets",
+            "variant": "creature that detects vibrations and can restrain opponents"
+        }
+    ]
+}

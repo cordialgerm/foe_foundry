@@ -1,0 +1,25 @@
+{
+    "name": "Mbielu",
+    "queries": [
+        {
+            "query": "large beast that can poison its enemies and has a powerful tail attack",
+            "variant": "big monster that poisons foes and has a strong tail attack"
+        },
+        {
+            "query": "huge creature that uses toxic skin against melee attackers and has a thunderous roar",
+            "variant": "gigantic beast that employs toxic skin against close fighters and has a booming bellow"
+        },
+        {
+            "query": "monster with high strength and bad intelligence that lives in various terrains",
+            "variant": "beast with great power and poor smarts that can be found in different environments"
+        },
+        {
+            "query": "durable animal with a bellow attack that can incapacitate foes",
+            "variant": "sturdy creature with a roar ability that can knock enemies out"
+        },
+        {
+            "query": "Mbielu combat tactics involving tail and poison damage",
+            "variant": "Mbielu fighting strategies using tail attacks and poisonous effects"
+        }
+    ]
+}

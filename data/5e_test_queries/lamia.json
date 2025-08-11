@@ -1,0 +1,25 @@
+{
+    "name": "Lamia",
+    "queries": [
+        {
+            "query": "beautiful monster with a lion body that casts illusions",
+            "variant": "beautiful creature with a lion body that can cast illusions"
+        },
+        {
+            "query": "desert-dwelling creature that manipulates using charm spells",
+            "variant": "creature that lives in the desert and uses charm magic to manipulate"
+        },
+        {
+            "query": "cunning serpentine monster skilled in deception and magic",
+            "variant": "sneaky serpent-like creature good at deception and spellcasting"
+        },
+        {
+            "query": "monstrous humanoid with a charming appearance and magical powers",
+            "variant": "humanoid monster with a charming look and magical abilities"
+        },
+        {
+            "query": "large chaotic creature that drains life force and enjoys causing suffering",
+            "variant": "big chaotic creature that sucks life and loves creating suffering"
+        }
+    ]
+}

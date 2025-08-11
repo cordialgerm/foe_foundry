@@ -1,0 +1,25 @@
+{
+    "name": "Lymarien",
+    "queries": [
+        {
+            "query": "tiny fey creature that can fly and distract enemies",
+            "variant": "tiny creature that fey can and distracts enemies while flying"
+        },
+        {
+            "query": "nimble monster with low hit points that communicates with beasts",
+            "variant": "nimble monster has low hp and talks to animals"
+        },
+        {
+            "query": "fast flying fey that has distraction abilities and is neutral good",
+            "variant": "fast flying fey creature with neutral good alignement and distraction powers"
+        },
+        {
+            "query": "stealthy tiny fey that affects combat with its movement and speed",
+            "variant": "stealthy small fey that impacts combat with movement and speed"
+        },
+        {
+            "query": "creature with high dexterity and the ability to move quickly in combat",
+            "variant": "monster high dexterity that can quickly move in battle"
+        }
+    ]
+}

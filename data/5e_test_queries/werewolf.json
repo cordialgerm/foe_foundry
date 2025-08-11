@@ -1,0 +1,25 @@
+{
+    "name": "Werewolf (Lycanthrope)",
+    "queries": [
+        {
+            "query": "humanoid that can transform into a wolf and has a curse",
+            "variant": "humanoid that can change into a wolf and inflicts a curse"
+        },
+        {
+            "query": "savage wolf-like creature that hunts in packs",
+            "variant": "ferocious wolfish creature that hunts in groups"
+        },
+        {
+            "query": "creature with sharp claws that inflicts lycanthropy",
+            "variant": "being with sharp claws that can spread werewolf curse"
+        },
+        {
+            "query": "shapechanging monster with heightened senses and stealth skills",
+            "variant": "transforming creature with keen senses and stealth abilities"
+        },
+        {
+            "query": "bloodthirsty lycanthrope that is immune to non-silver attacks",
+            "variant": "bloodthirsty werewolf immune to non-silver weapons"
+        }
+    ]
+}

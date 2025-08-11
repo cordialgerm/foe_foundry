@@ -1,0 +1,53 @@
+{
+    "name": "Skein Witch",
+    "creature_type": "Celestial",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 162,
+    "ac": 20,
+    "srd": false,
+    "cr": "12",
+    "movement": "slow walking and flying speed up to 30 feet",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "magical",
+        "strategy"
+    ],
+    "adjectives": [
+        "mystical",
+        "formidable",
+        "strategic"
+    ],
+    "description": "The Skein Witch is a medium celestial creature with an air of magic surrounding it. It has weak physical attributes but compensates with exceptional intelligence, wisdom, and charisma, utilizing its magic for offensive and defensive maneuvers.",
+    "memorable": "The ability to bind fates can create chaotic and tense moments, as damage inflicted on one creature affects its bound partner.",
+    "goals": "To manipulate fate and control the battlefield through magic and strategic positioning.",
+    "relations": "May ally with other celestial beings or magical creatures.",
+    "environment": "Typically found in areas rich with magic or mystical significance.",
+    "strengths": "High magical resistance and the ability to manipulate fate.",
+    "weaknesses": "Weak physical strength and low physical damage output.",
+    "attacks": "Melee or ranged attacks using Inexorable Thread, dealing radiant damage with additional effects when multiple hits land.",
+    "most_powerful_ability": "Bind Fates, linking the fates of two creatures together for shared damage and conditions.",
+    "senses": "Possesses truesight up to 60 feet and a high passive Perception score of 23.",
+    "skills": "Expert in Insight and Perception, allowing it to sense and interpret its surroundings effectively.",
+    "additional_information": [
+        "Magic Resistance grants advantage against spells and magical effects.",
+        "Fate\u2019s Resistance allows for nullifying failed saving throws three times a day.",
+        "Destiny Distortion Wave can damage and redistribute conditions among affected creatures.",
+        "Teleportation ability enhances mobility and strategic repositioning.",
+        "Can reflect low-level spells back at their casters."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial spellcaster with fate manipulation",
+        "witch that can teleport and resist magic",
+        "magical creature that redistributes damage",
+        "monster with powerful radiant attacks",
+        "medium celestial with high wisdom and charisma"
+    ]
+}

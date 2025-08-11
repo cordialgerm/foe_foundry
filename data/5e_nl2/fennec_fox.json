@@ -1,0 +1,51 @@
+{
+    "name": "Fennec Fox",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 7,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walks 40 feet, burrows 5 feet",
+    "role": "null",
+    "tags": [
+        "beast",
+        "stealth",
+        "sight",
+        "hearing"
+    ],
+    "adjectives": [
+        "tiny",
+        "fragile",
+        "stealthy"
+    ],
+    "description": "A tiny fox with large ears and a quick, agile body, known for its exceptional senses.",
+    "memorable": "Notably fragile but excels in stealth and evasion, with keen hearing and sight.",
+    "goals": "Typically seeks to scout, evade threats, and remain undetected.",
+    "relations": "Might be found alongside other small or nocturnal creatures.",
+    "environment": "Often found in arid regions or deserts, suitable for stealthy exploration.",
+    "strengths": "High Dexterity enhances stealth and evasion, advantage on perception checks related to sight and hearing.",
+    "weaknesses": "Low hit points make it very vulnerable to attacks.",
+    "attacks": "Bite attack that deals low piercing damage.",
+    "most_powerful_ability": "Keen Hearing and Sight grants advantage on perception checks.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, enhancing its effectiveness in low light.",
+    "skills": "Skilled in stealth, allowing it to remain hidden while moving silently.",
+    "additional_information": [
+        "Has a high movement speed compared to other creatures its size.",
+        "Unaligned, indicating it does not exhibit moral tendencies.",
+        "Excellent at reconnaissance tasks due to its stealth abilities.",
+        "Low Strength and Intelligence scores limit its combat and problem-solving capabilities.",
+        "Noteworthy for its fragile nature but compensates with high mobility."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny fox with keen senses",
+        "fragile stealthy creature of the desert",
+        "agile fox that excels in evasion",
+        "small creature with darkvision and keen hearing",
+        "fox known for scouting and stealth"
+    ]
+}

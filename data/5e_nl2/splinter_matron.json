@@ -1,0 +1,55 @@
+{
+    "name": "Splinter Matron",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "chaotic",
+        "evil",
+        "magic resistance",
+        "damage dealer"
+    ],
+    "adjectives": [
+        "mischievous",
+        "malevolent",
+        "agile",
+        "durable"
+    ],
+    "description": "The Splinter Matron is a medium-sized fey creature known for its mischievous and malevolent nature, characterized by its chaotic appearance and an imposing dexterity.",
+    "memorable": "It can unleash a powerful area effect called Splinter Spray, which can incapacitate multiple opponents and create openings for its allies.",
+    "goals": "To protect its tree and disrupt intruders with chaotic magic and physical attacks.",
+    "relations": "Could be encountered alongside other fey creatures, given its ability to communicate in Elvish and Sylvan.",
+    "environment": "Typically found in magical or forested areas, particularly where its tree is located.",
+    "strengths": "Resistant to non-magical bludgeoning, piercing, and slashing damage; has Magic Resistance which grants advantage on saving throws against spells.",
+    "weaknesses": "Low Wisdom score makes it vulnerable to effects relying on Wisdom saving throws.",
+    "attacks": "Utilizes multiattacks with claws that inflict slashing and poison damage, alongside ranged splinter attacks.",
+    "most_powerful_ability": "Splinter Spray can deal significant area damage and blind multiple targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses poor perception skills with a score of -1, indicating a lack of awareness of threats.",
+    "additional_information": [
+        "Magic Resistance provides an edge against magical assault.",
+        "Protective Frenzy enhances its offensive capabilities when its tree is damaged.",
+        "Can inflict ongoing damage with splinters after a successful initial attack.",
+        "Highly agile with a Dexterity score of 18, allowing it to avoid attacks.",
+        "Maintains strong durability due to high Constitution score of 19."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature that blinds foes with splinters",
+        "agile fey monster protecting its tree",
+        "monster with high constitution and magic resistance",
+        "chaotic evil creature that inflicts ongoing damage",
+        "explosive area attack fey with splinters"
+    ]
+}

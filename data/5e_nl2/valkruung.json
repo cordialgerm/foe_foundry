@@ -1,0 +1,52 @@
+{
+    "name": "Valkruung",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "climb 20 ft., walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "small creature",
+        "nimble",
+        "chaotic",
+        "quirky"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "whimsical",
+        "unpredictable"
+    ],
+    "description": "The Valkruung is a tiny, whimsical monstrosity covered with ten shiny blue-gray prehensile tendrils that it uses to interact with its environment.",
+    "memorable": "Its ability to disarm attackers and inflict a distracting poison rash makes the Valkruung a clever and irritating foe.",
+    "goals": "The Valkruung seems to enjoy manipulating its surroundings and causing mischief rather than engaging in direct conflict.",
+    "relations": "It may be encountered alongside other mischievous or chaotic creatures.",
+    "environment": "Typically found in whimsical, chaotic environments where it can easily maneuver.",
+    "strengths": "High Dexterity for evasion and manipulation, advantage on Dexterity checks.",
+    "weaknesses": "Very low Strength and Intelligence limit its physical confrontations and cognitive tasks.",
+    "attacks": "Uses swift claws to slash at enemies, with a chance to poison and incapacitate them with an itchy rash.",
+    "most_powerful_ability": "Disarming Tendrils can force attackers to drop their weapons, providing a significant tactical advantage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light.",
+    "skills": "Proficient in acrobatics and stealth, enhancing its agility and ability to avoid detection.",
+    "additional_information": [
+        "Prehensile Tendrils allow grasping tiny items.",
+        "Can use tendrils for disarming opponents.",
+        "Poisoned state causes itchy rash.",
+        "Unique anatomy enhances combat strategy.",
+        "Chaotic nature leads to unpredictable behavior."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "quirky tiny creature with tendrils",
+        "chaotic tiny monster that disarms",
+        "nimble creature that poisons with claws",
+        "whimsical monstrosity with prehensile tendrils",
+        "tiny monster that loves to manipulate"
+    ]
+}

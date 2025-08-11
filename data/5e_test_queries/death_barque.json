@@ -1,0 +1,25 @@
+{
+    "name": "Death Barque",
+    "queries": [
+        {
+            "query": "gargantuan undead creature that swims and has necrotic attacks",
+            "variant": "swimming undead monster that's gargantuan and uses necrotic breath"
+        },
+        {
+            "query": "aquatic undead with high hit points and magical resistance",
+            "variant": "undead creature in water with significant hit points and spell resistance"
+        },
+        {
+            "query": "fearsome creature immune to necrotic damage that deals double damage to structures",
+            "variant": "intimidating monster resistant to necrosis and can double damage to buildings"
+        },
+        {
+            "query": "powerful undead with a bite attack and shrapnel burst ability",
+            "variant": "strong undead that can bite and use a shrapnel burst attack"
+        },
+        {
+            "query": "monster with low intelligence that is dangerous in water environments",
+            "variant": "creature with weak smarts that is a threat in aquatic settings"
+        }
+    ]
+}

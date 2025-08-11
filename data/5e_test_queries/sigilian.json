@@ -1,0 +1,25 @@
+{
+    "name": "Sigilian",
+    "queries": [
+        {
+            "query": "construct that manipulates books and flies",
+            "variant": "flying construct that can control books"
+        },
+        {
+            "query": "creepy book creature with health restoration abilities",
+            "variant": "strange creature that can restore health through books"
+        },
+        {
+            "query": "magic absorbing creature vulnerable to psychic damage",
+            "variant": "creature that absorbs magic and is weak to psychic attacks"
+        },
+        {
+            "query": "creature with exceptional charisma that enters books",
+            "variant": "charismatic creature that can travel into books"
+        },
+        {
+            "query": "stealthy construct with high Dexterity and low physical strength",
+            "variant": "agile construct with low strength and a good stealth"
+        }
+    ]
+}

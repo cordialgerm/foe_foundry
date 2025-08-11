@@ -1,6 +1,8 @@
 <MonsterName/>Azer</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>17</AC>
+<HP/>39</HP>
 <summary>An Azer is a humanoid creature composed of living metal and flames. Its body is made of glowing, molten brass or bronze, and its hair and beard burn with an eternal fire. Azers are skilled smiths and craftsmen, forging weapons and armor of incredible quality in the forges of the Elemental Plane of Fire. They are fiercely loyal to their kin and their work, often guarding their forges with relentless determination. Though small in stature, an Azer is incredibly strong and resistant to fire, and it can channel the heat of its fiery body into powerful strikes in combat.</summary>
 
 <summary>The Azer is a Medium elemental creature known for its connection to fire and its role as a powerful combatant. With a Challenge Rating of 2, it presents an adequate challenge for a party of adventurers. The Azer boasts a solid Armor Class of 16 and a total of 39 Hit Points, which makes it somewhat durable in battle. Its main strengths lie in its fiery abilities and resistance to various damage types, including complete immunity to fire and poison, making it a formidable opponent. However, it is vulnerable to cold damage, which adventurers can exploit. The Azer’s presence on the battlefield is enhanced by its fiery aura, which can inflict damage on nearby foes, and its ability to manipulate metal through magic, allowing it to deal significant ranged damage.</summary>
@@ -35,6 +37,7 @@ As a bonus action, the Azer can activate "Blazing Bulwark," creating a line of f
 
 Source: 5e_srd
 
+<statblock>
 ## Azer
 
 *Medium elemental, lawful neutral*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Warhammer***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) bludgeoning damage, or 8 (1d10+3) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.
+***Warhammer***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) bludgeoning damage, or 8 (1d10+3) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azer
 
 *Medium* *Elemental*
@@ -112,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Fire Step:** While standing in fire, the azer can magically teleport up to 90 feet to a space within fire.
 
 
+</statblock>
 
 
 
@@ -120,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azer
 
 *Medium elemental*
@@ -154,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Blazing Bulwark.** The azer creates fire in a 15-foot line that is 1 foot wide, originating from a point the azer can see within 15 feet of it. This line is an opaque wall that is 3 feet tall and provides half-cover to creatures behind it. A creature that moves through the line takes damage as if it touched the azer. The line of fire lasts for 1 minute or until the azer uses this bonus action again.
 
+</statblock>
 
 

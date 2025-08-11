@@ -1,0 +1,25 @@
+{
+    "name": "Deathwisp",
+    "queries": [
+        {
+            "query": "undead creature with stealth abilities and necrotic attacks",
+            "variant": "stealthy undead monster with necrotic damage abilities"
+        },
+        {
+            "query": "medium-sized ghost-like monster that thrives in darkness",
+            "variant": "medium ghostly creature that does well in dark places"
+        },
+        {
+            "query": "elusive undead that can create specters and disappears in shadows",
+            "variant": "undead that can summon specters and vanish into shadows"
+        },
+        {
+            "query": "haunting creature vulnerable to sunlight with high Dexterity",
+            "variant": "creepy monster weak to sunlight that has exceptional Dexterity"
+        },
+        {
+            "query": "dangerous creature that drains life and attacks with a ghostly pike",
+            "variant": "deadly being that uses life drain attacks and ghostly pike strikes"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Wickerman</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>8</AC>
+<HP/>138</HP>
 <summary>The Wickerman is a huge construct with an ominous presence, exuding a neutral evil aura. Designed as a formidable adversary, it boasts high hit points and damage resistance against nonmagical attacks, making it a resilient opponent in combat. With a challenge rating of 9, it is intended for mid-level encounters and presents a serious threat due to its ability to deal fire damage and its devastating grappling capability. However, its low armor class and poor dexterity make it vulnerable to ranged attacks and agile opponents. Notably, the Wickerman's functionality is closely tied to its controlling staff, which adds an intriguing dynamic to its behavior in battle, as its aggression can increase dramatically if the staff is compromised.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Wickerman is an engine of destruction that requires strategic thinking to ov
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wickerman
 
 *Huge* *Construct* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Imprison:** The wickerman makes one slam attack against a target it is grappling. If the attack hits, the target is imprisoned inside its burning body, and the grapple ends. A creature imprisoned in the wickerman is blinded, restrained, has total cover against attacks and other effects outside the wickerman, and it takes 17 (5d6) fire damage at the start of each of the wickerman's turns. Up to 6 Medium or smaller creatures can fit inside a wickerman's body. If the wickerman takes 25 damage or more from a creature inside of it, the wickerman must succeed on a DC 14 Constitution saving throw or the creature bursts free from it. The creature falls prone in a space within 10 feet of the wickerman. If the wickerman dies, all creatures inside of it are no longer restrained by it and can escape from the burning corpse by using 15 feet of movement, exiting prone.
 
 
+</statblock>
 
 

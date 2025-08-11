@@ -1,0 +1,25 @@
+{
+    "name": "Troll",
+    "queries": [
+        {
+            "query": "large green humanoid that regenerates",
+            "variant": "huge green humanoid that can regain health"
+        },
+        {
+            "query": "tall giant that hunts in caves and swamps",
+            "variant": "big giant that searches for prey in caves and wetlands"
+        },
+        {
+            "query": "hulking creature with natural armor and a vicious bite",
+            "variant": "massive creature with natural defense and a deadly bite"
+        },
+        {
+            "query": "giant with high hit points and a keen sense of smell",
+            "variant": "large giant with significant health and strong olfactory senses"
+        },
+        {
+            "query": "monster that has claws and regains health unless burned",
+            "variant": "creature with sharp claws and heals unless it suffers fire damage"
+        }
+    ]
+}

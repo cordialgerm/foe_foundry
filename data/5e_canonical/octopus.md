@@ -1,6 +1,8 @@
 <MonsterName/>Octopus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>3</HP>
 <summary>An Octopus is a small, intelligent sea creature known for its ability to camouflage and squeeze through tight spaces. With its eight tentacles lined with suction cups, it can grasp objects or prey with ease. Octopuses are found in shallow coastal waters, where they hunt small fish and crustaceans. Though not aggressive, an Octopus can use its ink cloud to obscure predators and escape quickly. Its intelligence and problem-solving abilities make it one of the more curious and crafty creatures in the ocean, but it is not typically a threat to adventurers.</summary>
 
 <summary>The octopus is a tiny beast that excels in stealth and aquatic environments. With a speed of 30 feet when swimming and the ability to camouflage itself, it is adept at hiding and maneuvering in water. However, its low hit points and relatively low armor class make it vulnerable in combat situations. The octopus's abilities allow it to escape dangerous encounters by creating clouds of ink, which can provide crucial cover. Although its physical attacks are weak, its ability to grapple opponents allows it to control foes and limit their actions effectively.</summary>
@@ -35,6 +37,7 @@ Overall, the octopus is a creature that thrives in its aquatic environment, util
 
 Source: 5e_srd
 
+<statblock>
 ### Octopus
 
 *Small beast, unaligned*
@@ -67,7 +70,8 @@ Source: 5e_srd
 
 ***Tentacles***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 bludgeoning damage, and the target is grappled (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.
 
-***Ink Cloud (Recharges after a Short or Long Rest)***. A 5- foot radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.
+***Ink Cloud (Recharges after a Short or Long Rest)***. A 5- foot radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.</statblock>
+
 
 
 
@@ -75,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Octopus
 
 *Tiny* *Beast*
@@ -107,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Ink Cloud (1/Day):** If underwater, the octopus exudes a cloud of ink in a 5-foot-radius sphere, extending around corners. The area is heavily obscured for 1 minute unless dispersed by a strong current.
 
 
+</statblock>
 
 
 
@@ -115,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Octopus
 
 *Small beast*
@@ -148,5 +155,6 @@ Source: 5e_artisinal_monsters
 
 - **Ink Dash (Recharge 6).** When a creature the octopus can see deals damage to it, the octopus can release a 5-foot-radius cloud of ink all around itself, if it is underwater. The area is heavily obscured until the end of the octopus’s next turn, although a significant current can disperse the ink. Then, the octopus can swim up to its swimming speed. If it does so, it immediately releases any creature it is grappling.
 
+</statblock>
 
 

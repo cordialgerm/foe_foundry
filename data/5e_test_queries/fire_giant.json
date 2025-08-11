@@ -1,0 +1,25 @@
+{
+    "name": "Fire Giant",
+    "queries": [
+        {
+            "query": "towering coal-black monster with glowing red eyes from volcanic regions",
+            "variant": "tall monster with black skin and red eyes that lives in volcanic areas"
+        },
+        {
+            "query": "fire-based giant that exhibits cold weakness and can be found in forges",
+            "variant": "giant that has a weakness to cold damage and resides in volcanic forges"
+        },
+        {
+            "query": "militaristic giant with immense strength wielding a flaming greatsword",
+            "variant": "muscular giant known for its combat skills and using a fiery greatsword"
+        },
+        {
+            "query": "fire giant known for devastating area attacks and high durability",
+            "variant": "giant who can deliver powerful area damage and has strong defense"
+        },
+        {
+            "query": "humanoid giant that commands armies and is immune to fire damage",
+            "variant": "monster that looks humanoid, commands troops, and has fire immunity"
+        }
+    ]
+}

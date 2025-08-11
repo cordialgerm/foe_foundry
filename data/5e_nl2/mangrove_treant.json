@@ -1,0 +1,52 @@
+{
+    "name": "Mangrove Treant",
+    "creature_type": "Plant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 feet",
+    "role": null,
+    "tags": [
+        "treant",
+        "nature",
+        "plant",
+        "guardian"
+    ],
+    "adjectives": [
+        "huge",
+        "durable",
+        "powerful",
+        "slow"
+    ],
+    "description": "The Mangrove Treant is a huge plant creature that embodies the essence of nature, resembling an ordinary mangrove tree when still.",
+    "memorable": "It can summon a swarm of mosquitos to alert it of intruders and has the ability to blend seamlessly into its environment.",
+    "goals": "To protect its environment, particularly in coastal regions or mangrove forests.",
+    "relations": "Often found in the presence of other plant creatures or nature-based entities.",
+    "environment": "Coastal regions and mangrove forests.",
+    "strengths": "High strength score of 20 and a strong constitution of 19 enhances its durability and combat effectiveness.",
+    "weaknesses": "Poor dexterity score of 7 makes it less agile in combat.",
+    "attacks": "Can perform two slam attacks per turn, each dealing significant bludgeoning damage.",
+    "most_powerful_ability": "Siege Monster ability allows it to deal double damage to objects and structures.",
+    "equipment": null,
+    "senses": "It communicates with mosquitos, which serve as its eyes and ears within a 60-foot radius.",
+    "skills": "Proficient in athletics with a modifier of +8, indicating strong physical capabilities.",
+    "additional_information": [
+        "Grasping Roots grants advantage against being knocked prone.",
+        "False Appearance allows it to blend into its surroundings when motionless.",
+        "Can summon a swarm of mosquitos that acts as an ally.",
+        "Average intelligence and charisma scores.",
+        "Good wisdom score reflects its keen perception and insight."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "giant tree creature in coastal areas",
+        "powerful plant monster that summons mosquitos",
+        "ambush plant creature that blends in",
+        "mighty treant with siege capabilities",
+        "huge guardian of mangrove forests"
+    ]
+}

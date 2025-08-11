@@ -1,6 +1,8 @@
 <MonsterName/>Rock Salamander</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>27</HP>
 <summary>The Rock Salamander is a tiny elemental creature that serves as a challenging adversary for low-level adventurers. With a modest Armor Class of 13 and a total of 27 hit points, it is equipped to withstand some damage, but its strengths lie primarily in its agility and stealth. It has a good Dexterity score of 17, allowing it to evade attacks efficiently, and it can move through rocky environments with ease. Its ability to manipulate its surroundings using stone-related actions provides tactical advantages in combat, although it suffers from low Strength and Charisma scores, which limits its effectiveness in direct melee confrontations and social interactions. The Rock Salamander is immune to poison damage and several debilitating conditions, making it a resilient foe in certain circumstances.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Through these abilities and characteristics, the Rock Salamander proves to be a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rock Salamander
 
 *Tiny* *Elemental* *unaligned*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Manipulate Stone:** If it is touching stone it can manipulate stone contiguous with its location to create one of the following:Rumbling Earth: One creature touching stone within 10 ft. of salamander is knocked prone (DC 12 Dex negates).Softened Earth One creature touching stone within 10 ft. of salamander is restrained by softened mud-like stone until the end of its next turn (DC 12 Str negates).Stone Armor Salamander’s AC +2 until start of its next turn.
 
 
+</statblock>
 
 

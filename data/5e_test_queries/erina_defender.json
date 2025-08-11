@@ -1,0 +1,25 @@
+{
+    "name": "Erina Defender",
+    "queries": [
+        {
+            "query": "small humanoid with protective instincts and burrowing ability",
+            "variant": "small humanoid that has a burrowing ability and protective instincts"
+        },
+        {
+            "query": "creature that can burrow and has advantage on saving throws against poison",
+            "variant": "monster who can burrow and has advantage on poison saving throws"
+        },
+        {
+            "query": "Erina Defender traits, protector of allies and good at perception",
+            "variant": "traits of Erina Defender, ally protector and skilled in perception"
+        },
+        {
+            "query": "humanoid with darkvision and keen sense of smell",
+            "variant": "humanoid creature that has darkvision and a strong sense of smell"
+        },
+        {
+            "query": "creature with medium armor class and flexibility in combat strikes",
+            "variant": "creature that has decent armor class and flexibility in its attack options"
+        }
+    ]
+}

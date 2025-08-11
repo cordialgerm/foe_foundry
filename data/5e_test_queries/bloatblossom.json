@@ -1,0 +1,25 @@
+{
+    "name": "Bloatblossom",
+    "queries": [
+        {
+            "query": "poisonous plant creature that can grapple enemies",
+            "variant": "plant creature that is poisonous and can grapple foes"
+        },
+        {
+            "query": "medium-sized plant monster resistant to paralysis and unconsciousness",
+            "variant": "medium plant monster that is resistant to being paralyzed or knocked unconscious"
+        },
+        {
+            "query": "slow-moving plant with toxic attack abilities",
+            "variant": "slow plant creature that has toxic attacks"
+        },
+        {
+            "query": "monster with heightened hearing and plant resilience",
+            "variant": "creature with plant resilience and acute hearing"
+        },
+        {
+            "query": "monster that infects with fungus and deals poison damage",
+            "variant": "creature that deals poison damage and infects with fungal spores"
+        }
+    ]
+}

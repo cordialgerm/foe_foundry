@@ -1,0 +1,25 @@
+{
+    "name": "Boomer",
+    "queries": [
+        {
+            "query": "plant creature with thunder damage and deafening abilities",
+            "variant": "thunder dealing plant monster with deafening powers"
+        },
+        {
+            "query": "immobile fungus-like monster that causes confusion and incapacitation",
+            "variant": "fungus resembling creature that inflicts confusion and incapacitates"
+        },
+        {
+            "query": "medium plant with sonic attacks and low physical defenses",
+            "variant": "medium-sized plant creature with sonic damage and weak defenses"
+        },
+        {
+            "query": "Boomer with false appearance and area control abilities",
+            "variant": "Boomer plant with mimicry and control over areas"
+        },
+        {
+            "query": "deafening creature that shrieks and explodes upon death",
+            "variant": "explosive monster that can shriek and cause deafening effects upon dying"
+        }
+    ]
+}

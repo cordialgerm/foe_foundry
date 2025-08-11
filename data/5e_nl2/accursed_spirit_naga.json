@@ -1,0 +1,49 @@
+{
+    "name": "Accursed Spirit Naga",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 85,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft., swim 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "magic",
+        "amphibious",
+        "resilient"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile"
+    ],
+    "description": "The Accursed Spirit Naga is a large and formidable monstrosity that can thrive in both aquatic and terrestrial environments.",
+    "memorable": "It possesses powerful spellcasting abilities and can control multiple foes with spells like Hypnotic Pattern, while also making use of its vampiric bite to gain temporary hit points.",
+    "goals": "To dominate the battlefield through magical control and resilience.",
+    "relations": "Might serve or be encountered alongside other magical creatures or spirits.",
+    "environment": "Usually found in a variety of aquatic or land environments.",
+    "strengths": "Resilient with magic resistance and immunity to poison damage, making it tough against magical effects.",
+    "weaknesses": "Vulnerable to certain saving throw mechanics, particularly against wisdom and constitution.",
+    "attacks": "Utilizes a melee bite attack that deals piercing and potential poison damage, alongside spell attacks like Lightning Bolt and Blight.",
+    "most_powerful_ability": "Hypnotic Pattern, allowing it to incapacitate enemies in a wide area.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can breathe air and water due to being amphibious.",
+        "Gains advantage on saving throws against spells and magical effects.",
+        "Has a Multiattack capability allowing a spell cast followed by a vampiric bite.",
+        "The Vampiric Bite attack lets it regain hit points.",
+        "Can use Shield as a reaction to bolster its defenses."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast powerful spells like Hypnotic Pattern, Lightning Bolt, and Blight, with the ability to control the battlefield and deal significant damage.",
+    "test_queries": [
+        "magical aquatic creature",
+        "naga spellcaster",
+        "resilient spirit naga",
+        "formidable amphibious monster",
+        "control and attack magic creature"
+    ]
+}

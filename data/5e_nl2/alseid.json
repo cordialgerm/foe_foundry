@@ -1,0 +1,50 @@
+{
+    "name": "Alseid",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "forest",
+        "stealth",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "agile",
+        "chaotic",
+        "versatile"
+    ],
+    "description": "The Alseid is a lithe monstrosity, covered in patches of bark-like skin, blending seamlessly with forest surroundings. It wields a spear, shortbow, and a thorned staff, enhancing its combat capabilities.",
+    "memorable": "Known for its ability to move silently through the forest and leave no tracks, the Alseid embodies the essence of woodland stealth and cunning.",
+    "goals": "To navigate its forest home stealthily and utilize its nature-based magic to aid allies.",
+    "relations": "Often interacts with woodland creatures and may be allied with other forest-dwelling entities such as Dryads or Druids.",
+    "environment": "Typically found in forests and wooded areas.",
+    "strengths": "High Dexterity provides excellent agility in combat, alongside proficiency in stealth and nature-related skills.",
+    "weaknesses": "Low Constitution and Charisma limit its resilience and effectiveness in social interactions.",
+    "attacks": "The Alseid can attack with a spear, shortbow, or thorned staff, dealing various types of piercing and bludgeoning damage.",
+    "most_powerful_ability": "The 'Woodfriend' ability allows the Alseid to move undetected in forested areas and navigate with ease.",
+    "equipment": "A spear, shortbow, and thorned staff serve as its primary weapons.",
+    "senses": "It has a passive Perception of 15, making it highly aware of its surroundings.",
+    "skills": "It possesses notable skills in Nature, Perception, Stealth, and Survival, making it an adept hunter and tracker.",
+    "additional_information": [
+        "Can cast various nature-themed spells, enhancing its versatility.",
+        "Uses Wisdom for spellcasting, enabling strong healing and support capabilities.",
+        "Leaves no tracks when moving through forests, making it an elusive creature.",
+        "Capable of befriending animals and sending messages through them.",
+        "Has a deep connection to nature, often serving as a protector of its forest realm."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast 'Animal Friendship', 'Animal Messenger', 'Druidcraft' at will, and has access to 'Cure Wounds', 'Faerie Fire', and 'Lesser Restoration' once per day each.",
+    "test_queries": [
+        "stealthy forest creature",
+        "woodland spellcaster",
+        "Alseid abilities",
+        "Agile monster from the forest",
+        "Nature-themed D&D creature"
+    ]
+}

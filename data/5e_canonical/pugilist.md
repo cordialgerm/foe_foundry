@@ -1,6 +1,8 @@
 <MonsterName/>Pugilist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Pugilist is a Medium humanoid creature known for its exceptional combat prowess, especially in hand-to-hand fighting. With a solid armor class of 14 and 75 hit points, this creature is moderately resilient in battle. Its challenge rating of 4 indicates that it can pose a significant threat to adventurers, providing a good source of experience points when defeated. The Pugilist excels in agility and strength, with high scores in Strength and Constitution, making its physical attacks particularly potent. However, it lacks magical abilities and relies on brute force and skill in martial combat, presenting a straightforward approach to encounters. With its unique abilities and attacks, it can disrupt opponents and control the flow of combat effectively.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Lastly, the Pugilist has a reaction called Opportune Jab, which allows it to mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pugilist
 
 *Medium* *Humanoid*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Opportune Jab:** If a creature attempts to grapple the pugilist, the pugilist attacks that creature with their fists.
 
 
+</statblock>
 
 

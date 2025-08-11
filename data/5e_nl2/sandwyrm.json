@@ -1,0 +1,52 @@
+{
+    "name": "Sandwyrm",
+    "creature_type": "Dragon",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 142,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft., burrow 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "predator",
+        "stealth"
+    ],
+    "adjectives": [
+        "formidable",
+        "lethal",
+        "ambushing"
+    ],
+    "description": "The Sandwyrm is a large, formidable dragon with powerful spines along its back and a sandy, scaled body that allows it to blend into desert environments. Its burrowing capabilities make it adept at ambush tactics.",
+    "memorable": "Its unique ability to restrain foes with its Spine Trap while hidden in sand makes it a distinct threat on the battlefield.",
+    "goals": "To ambush prey and control its environment using burrowing and stealth.",
+    "relations": "May be encountered alongside other desert creatures or as a solitary predator.",
+    "environment": "Usually found in sandy deserts or similar arid environments.",
+    "strengths": "High hit points and strong melee attacks make it a durable opponent. Its burrowing ability enhances its ambush tactics.",
+    "weaknesses": "Low intelligence indicates a lack of strategic planning in combat.",
+    "attacks": "Multiattack features Bite, Gore, and Stinger attacks that deal piercing damage and can inflict debilitating poison.",
+    "most_powerful_ability": "Spine Trap allows it to restrain opponents, controlling battlefield dynamics effectively.",
+    "equipment": null,
+    "senses": "The Sandwyrm has tremorsense that allows it to detect vibrations up to 120 feet away, enhancing its ambush capabilities.",
+    "skills": "It possesses strong skill proficiencies in Perception, enabling it to notice hidden targets effectively.",
+    "additional_information": [
+        "Stealth score of +4 makes it adept at hiding.",
+        "Intelligence is exceptionally low, resulting in poor strategic capabilities.",
+        "Uses burrowing to surprise prey.",
+        "Poison from Stinger can render targets paralyzed.",
+        "In combat, it can combine multiple attacks with poison effects."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon that burrows in sand",
+        "sand creature with paralyzing stinger",
+        "ambush predator with powerful melee attacks",
+        "dragon that hides beneath the sand",
+        "monster that restrains with back spines"
+    ]
+}

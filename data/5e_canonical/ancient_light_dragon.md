@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Light Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>407</HP>
 <summary>The Ancient Light Dragon is a gargantuan creature characterized by its neutral good alignment, often seen as a guardian of cosmic balance, light, and knowledge. This formidable dragon boasts impressive defenses, with an Armor Class of 22 due to its natural armor and a staggering 407 hit points derived from rolling 22d20 plus an additional 176. Its flight speed of 80 feet allows for rapid mobility, while its walking speed of 40 feet ensures considerable ground maneuverability. With a Challenge Rating of 22, this dragon presents an extraordinary challenge to adventurers, having an experience point value of 41,000. It exhibits several notable strengths, including high damage immunity to radiant attacks and damage from nonmagical sources, as well as robust saving throws and skill proficiencies. However, its weaknesses include susceptibility to fire damage. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Moreover, the Ancient Light Dragon has an array of legendary actions to augment 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Light Dragon
 
 *Gargantuan* *Dragon* *neutral good*
@@ -66,5 +69,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

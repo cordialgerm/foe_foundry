@@ -1,0 +1,25 @@
+{
+    "name": "Otyugh",
+    "queries": [
+        {
+            "query": "grotesque three-legged monster that lives in filth and uses tentacles",
+            "variant": "three-legged grotesque creature that reside in muck and utilizes tentacles"
+        },
+        {
+            "query": "monster from the sewer with biting attack and poisonous disease",
+            "variant": "sewer-dwelling creature with a biting attack that causes disease poison"
+        },
+        {
+            "query": "large aberration that ambushes prey in refuse",
+            "variant": "big aberration that ambushes its prey among rubbish"
+        },
+        {
+            "query": "slimy monster that grapples victims and has a stench ability",
+            "variant": "slimy creature that can grapple and has an ability to create a stench"
+        },
+        {
+            "query": "Otyugh combat tactics using tentacles and bite",
+            "variant": "combat strategies of an Otyugh with tentacle and bite attacks"
+        }
+    ]
+}

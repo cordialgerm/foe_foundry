@@ -1,0 +1,53 @@
+{
+    "name": "Vampiric Knight",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 20,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "vampire",
+        "knight"
+    ],
+    "adjectives": [
+        "formidable",
+        "elite",
+        "potent",
+        "dangerous"
+    ],
+    "description": "The Vampiric Knight is a powerful undead warrior clad in impressive armor, combining martial prowess and dark magical abilities.",
+    "memorable": "It regenerates health rapidly unless damaged by radiant sources, showcasing classic vampire traits and abilities.",
+    "goals": "To dominate and protect its undead allies while wreaking havoc on living foes.",
+    "relations": "Belongs to a hierarchy of undead, often seen alongside other vampires.",
+    "environment": "Typically found in dark, abandoned places, or serving in ancient castles.",
+    "strengths": "High strength and constitution scores, coupled with exceptional regeneration and melee capabilities.",
+    "weaknesses": "Susceptible to radiant damage, running water, and wooden stakes.",
+    "attacks": "Utilizes a multiattack with an impaling longsword, inflicting both slashing and necrotic damage.",
+    "most_powerful_ability": "Channel Corruption, an area attack that deals heavy necrotic damage to multiple enemies.",
+    "equipment": "Plate armor and shield.",
+    "skills": "Excels in athletics and perception, allowing it to perform physical feats and notice hidden threats effectively.",
+    "additional_information": [
+        "Regains 20 hit points at the start of its turn if not in running water.",
+        "Can't enter residences without invitation.",
+        "Takes acid damage when ending its turn in running water.",
+        "Paralyzed by a wooden stake driven into its heart when incapacitated.",
+        "Can shield allies, boosting their defense."
+    ],
+    "damage_types": [
+        "necrotic",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead knight that regenerates health",
+        "powerful vampire with necrotic attacks",
+        "medium undead knight in impressive armor",
+        "vampire knight that protects allies",
+        "creature with weaknesses to radiant damage"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Lamassu",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 147,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "30 feet walking speed, 60 feet flying speed",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "protector",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "magical"
+    ],
+    "description": "The Lamassu is characterized by its large size, majestic appearance, and protective nature, adorned with fur and possessing the form of a lion and the wings of a celestial creature.",
+    "memorable": "Known for its strong magical capabilities and being a guardian, influencing the battlefield while providing healing and utility to allies.",
+    "goals": "To protect others and guide those in need, using its power to combat evil.",
+    "relations": "Often serves as a protector for good-aligned creatures and may be allied with other celestials.",
+    "environment": "Found in celestial realms or may manifest in places of great significance or conflict where protection is needed.",
+    "strengths": "Possesses magic resistance, high durability, and an array of powerful spells, making it a versatile combatant and support ally.",
+    "weaknesses": "Vulnerable to magical damage due to its reliance on saving throws and resistances.",
+    "attacks": "Can make two claw attacks, dealing slashing and radiant damage in a single turn.",
+    "most_powerful_ability": "Innate spellcasting allows the Lamassu to cast spells like banishment and flame strike, providing significant control and damage potential.",
+    "equipment": null,
+    "senses": "Possesses truesight with a range of 60 feet and a passive perception score of 18, allowing it to detect hidden or invisible creatures.",
+    "skills": "Skilled in arcana, history, insight, and perception, enabling it to navigate various situations effectively.",
+    "additional_information": [
+        "Immunities to being charmed, exhausted, or frightened.",
+        "Uses Healing Touch to restore hit points and cure conditions.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Pounce ability allows it to knock targets prone and follow up with a claw attack.",
+        "Can take legendary actions to detect, attack, or perform a Wing Attack."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast a variety of spells at will, up to three times a day, and powerful spells once a day.",
+    "test_queries": [
+        "large magical protector with celestial powers",
+        "guardian creature with healing abilities",
+        "powerful celestial with flight and spells",
+        "creature that knocks enemies prone and heals",
+        "celestial creature known for magic resistance"
+    ]
+}

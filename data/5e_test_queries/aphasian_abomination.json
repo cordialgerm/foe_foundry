@@ -1,0 +1,25 @@
+{
+    "name": "Aphasian Abomination",
+    "queries": [
+        {
+            "query": "large construct with psychic manipulation abilities and weak physical strength",
+            "variant": "large creature that manipulates psychic powers and has terrible physical strength"
+        },
+        {
+            "query": "creature immune to magic with ability to cause speech issues",
+            "variant": "monster that is magic resistant and makes others unable to speak properly"
+        },
+        {
+            "query": "psychic distortion field creature that thrives in magic resistance",
+            "variant": "creature that generates psychic distortion and does well against magic"
+        },
+        {
+            "query": "intelligent abomination designed for combat that can fly",
+            "variant": "smart abomination made for battle that has the ability to fly"
+        },
+        {
+            "query": "mechanical entity that can attack from a distance and has high dexterity",
+            "variant": "robotic creature capable of ranged attacks and with great agility"
+        }
+    ]
+}

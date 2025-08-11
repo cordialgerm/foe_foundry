@@ -1,0 +1,25 @@
+{
+    "name": "Ghost Knight",
+    "queries": [
+        {
+            "query": "spectral undead knight that can charge on a skeletal horse",
+            "variant": "undead knight that is spectral and charges on a skeleton horse"
+        },
+        {
+            "query": "magical weapon attacks with necrotic damage and high armor class",
+            "variant": "high AC and magical attacks that deal necrotic damage"
+        },
+        {
+            "query": "medium lawfully evil creature immune to poison and necrotic resistance",
+            "variant": "lawful evil medium creature with necrotic resistance and immunity to poison"
+        },
+        {
+            "query": "undead knight able to stay mounted while attacking",
+            "variant": "knight undead that can attack while mounted"
+        },
+        {
+            "query": "Ghost Knight combat features with Spirited Charge ability",
+            "variant": "combat abilities of Ghost Knight including Spirited Charge"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Corrupted Chieftain",
+    "creature_type": "Giant",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "corrupted",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "offensive"
+    ],
+    "description": "The Corrupted Chieftain is a large giant, embodying chaos with its intimidating presence and magical weaponry.",
+    "memorable": "Its ability to inflict extra force damage with weapon attacks and intimidate foes creates significant battlefield challenges.",
+    "goals": "To dominate the battlefield and instill fear in its enemies while empowering its allies.",
+    "relations": "Might command other giants and corrupted creatures.",
+    "environment": "Often found in chaotic and hostile territories, typically among other giants.",
+    "strengths": "High strength allows exceptional melee damage and durability in combat.",
+    "weaknesses": "Poor Dexterity and Intelligence, leading to vulnerability to ranged combat and mental tasks.",
+    "attacks": "Wields a Greatclub and Javelin, each capable of dealing massive melee and force damage.",
+    "most_powerful_ability": "Chieftain\u2019s Command grants advantage to allies and imposes disadvantage on attacks against them.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Constitution and Charisma saving throws, enhancing resilience.",
+    "additional_information": [
+        "Magic-Infused Weapons deal extra force damage.",
+        "Spiked Hide causes piercing damage to attackers in melee range.",
+        "Can move aggressively towards enemies as a bonus action.",
+        "Chieftain\u2019s Might frightens nearby enemies, hindering their actions.",
+        "Creates tactical advantages for allied giants within 30 feet."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic giant with magical attacks",
+        "intimidating giant that commands other giants",
+        "brutal melee fighter with force damage",
+        "giant with spikes that damages attackers",
+        "fierce giant with frightening abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Rats",
+    "queries": [
+        {
+            "query": "swarm of tiny rats that spread disease and thrive in filth",
+            "variant": "tiny rat swarm that thrives in filth and spreads disease"
+        },
+        {
+            "query": "medium swarm that navigates through narrow spaces and has high resistance",
+            "variant": "medium swarm that has high resistances and fits through tight spaces"
+        },
+        {
+            "query": "rat swarm found in urban settings that can overwhelm foes with bites",
+            "variant": "urban rat swarm that can bite and overwhelm enemies"
+        },
+        {
+            "query": "filthy rat swarm that is immune to many conditions and is weak against strong attacks",
+            "variant": "rat swarm immune to conditions and weak against strong strikes"
+        },
+        {
+            "query": "small beasts that act as environmental hazards in dungeons and have heightened smell",
+            "variant": "tiny beasts posing as hazards in dungeons with a keen sense of smell"
+        }
+    ]
+}

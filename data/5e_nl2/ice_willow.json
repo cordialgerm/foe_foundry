@@ -1,0 +1,51 @@
+{
+    "name": "Ice Willow",
+    "creature_type": "Plant",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 142,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 20 ft.",
+    "role": "null",
+    "tags": [
+        "plant",
+        "cold",
+        "neutral"
+    ],
+    "adjectives": [
+        "chilling",
+        "tactical",
+        "resilient"
+    ],
+    "description": "The Ice Willow is a large plant creature resembling an ice-covered willow tree, capable of blending into its environment and deceiving foes until threatened.",
+    "memorable": "It can deal significant cold damage while remaining hidden until it attacks, utilizing icy abilities to control the battlefield.",
+    "goals": "To ambush adventurers and control its environment using chilling attacks.",
+    "relations": "Can be encountered alongside other plant creatures or in icy environments.",
+    "environment": "Typically found in cold, icy environments.",
+    "strengths": "Immunities to cold damage and high hit points provide durability in combat.",
+    "weaknesses": "Vulnerability to fire damage, making it susceptible to certain attacks.",
+    "attacks": "Can perform two Slam attacks dealing bludgeoning and cold damage, along with powerful area attacks like Icicle Drop and Icicle Spray.",
+    "most_powerful_ability": "The Icicle Spray, which affects a large area, dealing substantial piercing and cold damage to multiple targets.",
+    "equipment": "null",
+    "senses": "Has a passive perception of 12, allowing it to spot foes slightly better than average.",
+    "skills": "Possesses a +2 bonus to perception, aiding in its ability to notice adventurers nearby.",
+    "additional_information": [
+        "Has a False Appearance trait that allows it to disguise itself effectively.",
+        "Ice Melt ability enhances its defense by giving advantage on saving throws against its attacks.",
+        "Can counterattack immediately with Icicle Drop when it receives fire damage."
+    ],
+    "damage_types": [
+        "cold",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant monster that blends into ice",
+        "monster that attacks with cold and ice",
+        "large creature with freezing icicle abilities",
+        "ambush plant in icy environments",
+        "chilling willow with ice-based attacks"
+    ]
+}

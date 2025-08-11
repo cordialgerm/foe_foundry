@@ -1,0 +1,56 @@
+{
+    "name": "Baba Yaga\u2019s Horsemen",
+    "creature_type": "Fey",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 171,
+    "ac": 20,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "Fey",
+        "Horseman",
+        "Magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "mystical",
+        "guardian",
+        "dark",
+        "powerful"
+    ],
+    "description": "Baba Yaga's Horsemen are Medium Fey creatures with high Armor Class and significant Hit Points, embodying dark magic and power. They wield Enchanted Weapons enhancing their attacks with additional magical damage based on their thematic alignment.",
+    "memorable": "Their ability to age opponents significantly alters the threat of combat, making them formidable foes well-connected to the mythical Baba Yaga.",
+    "goals": "To serve as mystical guardians and deliver both physical and magical damage to their foes.",
+    "relations": "They may be related to other Fey creatures or serve under Baba Yaga.",
+    "environment": "Typically found in enchanted forests or dark magical realms associated with Baba Yaga.",
+    "strengths": "High damage potential through magical weaponry, strong defenses with resistances and immunities, and potent spellcasting capabilities.",
+    "weaknesses": "Reliance on their mounts and vulnerability to nonmagical attacks under specific conditions.",
+    "attacks": "Equipped with a powerful Lance and Longsword, both enhanced by magical damage, and a ranged Horseman\u2019s Bolt capable of significant damage.",
+    "most_powerful_ability": "Temporal Strike, which can age opponents drastically, inflicting penalties on their abilities or even causing instant death.",
+    "equipment": "They wield a Lance and Longsword, both augmented with magical enchantments.",
+    "senses": "Passive Perception of 18 allows them to easily detect stealthy characters and dangers.",
+    "skills": "Notably skilled in Arcana, Athletics, History, and Perception, showcasing their versatility in both combat and knowledge.",
+    "additional_information": [
+        "Immune to lightning and poison damage.",
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage.",
+        "Can communicate using telepathy within 120 feet.",
+        "Possess Magic Resistance granting advantage on saving throws against spells.",
+        "Timeless Nature allows them to exist without aging or basic life necessities."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": "Can cast multiple spells including summon phantom steed and darkness, daylight, with Charisma as their spellcasting ability.",
+    "test_queries": [
+        "dark magical fey horseman",
+        "mystical guardian of Baba Yaga",
+        "enchanted weapon wielder fey",
+        "aging attack creature",
+        "Baba Yaga's minions"
+    ]
+}

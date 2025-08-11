@@ -1,0 +1,25 @@
+{
+    "name": "Bathhouse Drake",
+    "queries": [
+        {
+            "query": "medium dragon that breathes both air and water and lives around bathhouses",
+            "variant": "dragon that is medium-sized, can breathe air and water, and is found in bathhouse environments"
+        },
+        {
+            "query": "creature with innate spellcasting and resistance to fire damage",
+            "variant": "monster that has fire resistance and innate spellcasting abilities"
+        },
+        {
+            "query": "aquatic dragon with strong perception and blinding steam attacks",
+            "variant": "dragon found in water with high perception and steam attacks that can blind"
+        },
+        {
+            "query": "lawful neutral creature with powerful support spells and melee capabilities",
+            "variant": "neutral lawful creature that has strong melee and support spell abilities"
+        },
+        {
+            "query": "dragon with high wisdom and advantageous escape abilities",
+            "variant": "wisdom-heavy dragon that can escape grapples easily"
+        }
+    ]
+}

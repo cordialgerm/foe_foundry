@@ -1,0 +1,25 @@
+{
+    "name": "Blemmyes",
+    "queries": [
+        {
+            "query": "large chaotic evil monster with high hit points",
+            "variant": "big chaotic evil beast that has lots of hit points"
+        },
+        {
+            "query": "monstrosity that attacks incapacitated creatures with a compelling urge",
+            "variant": "beast that attacks incapacitated foes due to a compulsion"
+        },
+        {
+            "query": "Blemmyes' ability to cause stunned enemies",
+            "variant": "Blemmyes can stun enemies with its attacks"
+        },
+        {
+            "query": "monstrous creature with exceptional strength and carnivorous tendencies",
+            "variant": "monster with great strength and a tendency to eat incapacitated foes"
+        },
+        {
+            "query": "large monster that can swallow smaller creatures and has darkvision",
+            "variant": "big creature that can swallow small ones and has low-light vision"
+        }
+    ]
+}

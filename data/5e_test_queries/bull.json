@@ -1,0 +1,25 @@
+{
+    "name": "Bull",
+    "queries": [
+        {
+            "query": "large beast with physical strength found in rural areas",
+            "variant": "big creature with strength found in country environments"
+        },
+        {
+            "query": "strong melee attacker that charges at enemies",
+            "variant": "powerful melee fighter that rushes at foes"
+        },
+        {
+            "query": "bull that has a goring attack and low intelligence",
+            "variant": "bull with a gore attack and very low smarts"
+        },
+        {
+            "query": "beast with 25 hit points and average defense",
+            "variant": "creature with 25 HP and normal defense"
+        },
+        {
+            "query": "pastoral creature that deals bludgeoning damage",
+            "variant": "countryside creature that causes bludgeoning harm"
+        }
+    ]
+}

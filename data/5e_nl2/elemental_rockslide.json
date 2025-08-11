@@ -1,0 +1,48 @@
+{
+    "name": "Rockslide",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 147,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "earth",
+        "rock",
+        "large"
+    ],
+    "adjectives": [
+        "formidable",
+        "robust",
+        "powerful"
+    ],
+    "description": "The Rockslide is a Large Elemental that embodies the powerful forces of the earth, marked by its imposing size and mass made of stone.",
+    "memorable": "It can reshape the battlefield through its sheer physicality and has the ability to knock opponents prone with its formidable charge.",
+    "goals": "Typically seeks to dominate its opponents in combat, using its physical presence and strong attacks.",
+    "relations": "Often found in rocky terrains, it may coexist with other earth-related elementals or creatures that share its affinity for the earth.",
+    "environment": "Usually found in rocky or mountainous regions.",
+    "strengths": "Possesses high hit points and strength, making it a formidable opponent in melee combat.",
+    "weaknesses": "Low dexterity leads to poor agility, making it vulnerable to ranged attacks.",
+    "attacks": "Utilizes powerful melee Slam attacks as well as Skipping Stones that can bounce to other targets.",
+    "most_powerful_ability": "Its Charge ability allows it to deal additional damage and potentially knock opponents prone if it moves straight toward them before attacking.",
+    "senses": "Possesses tremorsense up to 30 feet, allowing it to detect vibrations in the ground.",
+    "skills": "Has a passive perception of 10, indicating a lack of heightened senses.",
+    "additional_information": [
+        "Immunity to exhaustion, paralysis, petrification, poison, and unconsciousness.",
+        "Does not require air, food, drink, or sleep due to its elemental nature.",
+        "Can use Nimble Separation to avoid opportunity attacks while dashing."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large stone monster with powerful melee attacks",
+        "elemental creature that dominates rocky terrain",
+        "robust earth elemental with charge attack",
+        "creature immune to poison and paralysis",
+        "strong elemental that does not need food or sleep"
+    ]
+}

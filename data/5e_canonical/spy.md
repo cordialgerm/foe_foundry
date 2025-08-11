@@ -1,6 +1,10 @@
 <MonsterName/>Spy</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>A Spy is a highly skilled operative trained in stealth, deception, and infiltration. Often employed by kingdoms, guilds, or secret organizations, Spies gather information, steal secrets, or assassinate key targets without drawing attention to themselves. They are experts at disguises, false identities, and navigating the shadows. In combat, Spies rely on precision strikes with daggers or crossbows, preferring to avoid direct confrontations. Their ability to blend in and escape unnoticed makes them invaluable for covert operations and dangerous opponents when caught off guard.</summary>
 
 <summary>The Spy is a Medium humanoid that excels in stealth and deception. With a modest Armor Class of 12 and a pool of 27 hit points, it is not heavily armored but compensates with agility and cunning. Its Challenge Rating of 1 indicates it is a moderately challenging adversary suitable for low-level parties. A notable strength lies in its Dexterity, which allows for good stealth capabilities and effective ranged attacks with a hand crossbow. However, its average Strength and Constitution mean it is not as effective in direct melee combat. The Spy can be a formidable opponent when it utilizes its special abilities, particularly the Sneak Attack, which can significantly boost its damage output under the right conditions.</summary>
@@ -41,6 +45,7 @@ Overall, the Spy is a versatile combatant effective in deceptive tactics and ste
 
 Source: 5e_srd
 
+<statblock>
 ### Spy
 
 *Medium humanoid (any race), any alignment*
@@ -75,7 +80,8 @@ Source: 5e_srd
 
 ***Hand Crossbow***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 5 (1d6 + 2) piercing damage.
 
-Rulers, nobles, merchants, guildmasters, and other wealthy individuals use **spies** to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loyal spies would rather die than divulge information that could compromise them or their employers.
+Rulers, nobles, merchants, guildmasters, and other wealthy individuals use **spies** to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loyal spies would rather die than divulge information that could compromise them or their employers.</statblock>
+
 
 
 
@@ -83,6 +89,7 @@ Rulers, nobles, merchants, guildmasters, and other wealthy individuals use **spi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spy
 
 *Medium* *Humanoid*
@@ -117,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The cutthroat attacks with their shortsword.
 
 
+</statblock>
 
 
 
@@ -125,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spy
 
 *Medium humanoid (any lineage)*
@@ -161,5 +170,6 @@ Source: 5e_artisinal_monsters
 - **Cunning Action.** The spy takes the Dash, Disengage, or Hide action.
 - **Feint (Recharge 4–6).** The spy makes a feint at one creature within 5 feet of it, pretending to go in for an attack in one direction only to change it up at the last moment. The target must succeed on a DC 13 WIS save or the spy has advantage on the next attack roll it makes against the target.
 
+</statblock>
 
 

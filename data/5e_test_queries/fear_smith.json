@@ -1,0 +1,25 @@
+{
+    "name": "Fear Smith",
+    "queries": [
+        {
+            "query": "fey creature that manipulates fear in battle",
+            "variant": "creature that is a fey and uses fear manipulation in combat"
+        },
+        {
+            "query": "medium chaotic neutral fey with high Charisma",
+            "variant": "chaotic neutral medium fey possessing exceptional Charisma"
+        },
+        {
+            "query": "monster with Distortion Gaze that causes disorientation",
+            "variant": "creature that has a Distortion Gaze ability resulting in disorientation"
+        },
+        {
+            "query": "Fear Smith abilities related to psychic damage and stunning",
+            "variant": "abilities of the Fear Smith which involve psychic damage and stuns"
+        },
+        {
+            "query": "fey that uses intimidation and stealth in combat",
+            "variant": "intimidating fey that employs stealth tactics during fights"
+        }
+    ]
+}

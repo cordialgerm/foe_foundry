@@ -1,0 +1,56 @@
+{
+    "name": "Adult Green Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 19,
+    "srd": true,
+    "cr": "15",
+    "movement": "40 ft. walking, 80 ft. flying, 40 ft. swimming",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "magical",
+        "forest",
+        "intelligent",
+        "manipulative"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "territorial",
+        "intelligent",
+        "powerful"
+    ],
+    "description": "The Adult Green Dragon has vibrant emerald to dark, forest green scales, a long body, leaf-shaped wings, and sharp, curved horns, making it adept at blending into forest environments.",
+    "memorable": "Its ability to manipulate and terrify with hallucinogenic gas and innate spells marks the Adult Green Dragon as a dangerous opponent in both tactical and psychological warfare.",
+    "goals": "It seeks to corrupt its surroundings and manipulate victims, often engaging in mind games and territorial defense.",
+    "relations": "Adult Green Dragons often interact with other dragon types, forest creatures, and can be masters to less intelligent beings they manipulate.",
+    "environment": "Typically found deep in forests, its home is characterized by corrupted natural elements to suit its desires.",
+    "strengths": "Immunity to poison damage and condition, high intelligence and cunning allow for strategic combat and manipulation, along with exceptional perceptions.",
+    "weaknesses": "Relatively low Dexterity decreases agility, making it vulnerable to physical attacks that bypass its defenses.",
+    "attacks": "It can deliver devastating bite, claw, and tail attacks, along with powerful breath weapon and spellcasting capabilities.",
+    "most_powerful_ability": "Poison Breath, a deadly cone of poisonous gas that deals significant damage and can incapacitate those who fail to resist its effects.",
+    "equipment": null,
+    "senses": "Possesses blindsight for 60 feet and a remarkable passive Perception score of 22, allowing it to detect hidden threats effortlessly.",
+    "skills": "Skilled in Deception, Insight, and Stealth, making it adept at manipulating and ambushing foes.",
+    "additional_information": [
+        "Amphibious: Can breathe air and water.",
+        "Legendary Resistance allows it to ignore failed saving throws thrice a day.",
+        "Woodland Stalker grants advantage on Stealth checks in forested areas.",
+        "Hallucinogenic Gas causes fear in creatures starting their turn nearby.",
+        "Legendary actions enable it to react fearlessly during combat, maintaining offensive pressure."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast spells like modify memory and scrying without material components, enhancing its manipulative abilities.",
+    "test_queries": [
+        "cunning forest dragon",
+        "manipulative green dragon",
+        "terrifying dragon with poisonous breath",
+        "stealthy dragon in the forest",
+        "hallucinogenic gas dragon"
+    ]
+}

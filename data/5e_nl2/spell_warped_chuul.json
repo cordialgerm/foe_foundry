@@ -1,0 +1,53 @@
+{
+    "name": "Spell-warped Chuul",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Large",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "amphibious",
+        "magical",
+        "grappler"
+    ],
+    "adjectives": [
+        "spell-warped",
+        "formidable",
+        "versatile"
+    ],
+    "description": "The Spell-warped Chuul has a large, formidable presence, with powerful pincers and a carapace that houses a wand of lightning bolts. It can grapple foes effectively and uses its magical abilities to enhance its attacks.",
+    "memorable": "It gains temporary hit points from absorbed magic, making it a growing threat in battle.",
+    "goals": "To attack and incapacitate opponents using its grappling abilities and magical resistance.",
+    "relations": "May be encountered with other aberrations or magical creatures.",
+    "environment": "Typically found in aquatic environments, capable of moving through both water and land.",
+    "strengths": "Immunities to poison and advantages against magical effects enhance its durability in combat.",
+    "weaknesses": "Lower Dexterity and Intelligence scores may hinder its evasiveness and strategic combat abilities.",
+    "attacks": "Utilizes multiattacks with pincers to deal bludgeoning damage while grappling foes.",
+    "most_powerful_ability": "Spell-warped abilities allow it to absorb magic, gaining temporary hit points and increasing its damage output.",
+    "equipment": "Has a wand of lightning bolts integrated into its carapace.",
+    "senses": "It has a passive Perception of 13, providing decent awareness of its surroundings.",
+    "skills": "The chuul lacks specific skill proficiencies but has good Wisdom for perception.",
+    "additional_information": [
+        "Can breathe both air and water, making it versatile in combat.",
+        "Pincer attacks can inflict additional force damage while grappling.",
+        "The Sparking Wand deals lightning damage to creatures nearby.",
+        "When attacked by a magic weapon, it grants disadvantage on future attacks from that weapon.",
+        "It can paralyze foes with its Tentacle attack."
+    ],
+    "damage_types": [
+        "lightning",
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large magical grappler from water",
+        "formidable aberration with lightning attack",
+        "creature that absorbs magical effects",
+        "amphibious monster with powerful pincers",
+        "spell-warped creature with temporary hit points"
+    ]
+}

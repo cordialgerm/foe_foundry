@@ -1,0 +1,25 @@
+{
+    "name": "Mummy",
+    "queries": [
+        {
+            "query": "undead creature that curses with mummy rot and is found in tombs",
+            "variant": "creature found in tombs that curses with mummy rot and is undead"
+        },
+        {
+            "query": "bandaged monster with bludgeoning attacks and a slow movement speed",
+            "variant": "slow moving bandaged monster with bludgeoning attacks"
+        },
+        {
+            "query": "monster with darkvision that inflicts fear and has a low Dexterity score",
+            "variant": "creature with darkvision that can instill fear and has poor Dexterity"
+        },
+        {
+            "query": "ancient cursed being with necrotic immunity and poor mobility",
+            "variant": "cursed being from ancient times with necrotic immunity and slow speed"
+        },
+        {
+            "query": "creature that guards tombs and has supernatural strength and resilience",
+            "variant": "being with supernatural strength and resilience that guards tombs"
+        }
+    ]
+}

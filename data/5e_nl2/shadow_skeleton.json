@@ -1,0 +1,51 @@
+{
+    "name": "Shadow Skeleton",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking, 40 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "skeleton",
+        "shadow"
+    ],
+    "adjectives": [
+        "shadowy",
+        "agile",
+        "tactical"
+    ],
+    "description": "The Shadow Skeleton is a skeletal figure that glows faintly with a dark aura, able to move with surprising speed and agility in combat.",
+    "memorable": "It can weaken its foes with debilitating shadowy auras while inflicting both slashing and necrotic damage.",
+    "goals": "To eliminate living creatures and serve its dark master.",
+    "relations": "Often encountered alongside other undead or creatures of darkness.",
+    "environment": "Generally found in graveyards, ancient ruins, or shadowy plains.",
+    "strengths": "High Dexterity enables effective evasion and swift attacks.",
+    "weaknesses": "Requires living opponents to utilize its shadow aura effectively.",
+    "attacks": "Two scimitar melee attacks that deal slashing damage, plus debilitating Finger Darts that inflict necrotic damage.",
+    "most_powerful_ability": "Can envelop living foes in a shadowy aura that deals extra necrotic damage.",
+    "equipment": "Scimitar",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to navigate effectively in low light.",
+    "skills": "Highly skilled in Dexterity-related tasks, especially stealth.",
+    "additional_information": [
+        "Immune to poison damage and resistant to fire, piercing, and slashing damages.",
+        "Condition immunity to exhaustion and poisoned.",
+        "Commands tactical advantage through its combination of melee and ranged attacks.",
+        "Shadow aura can be extinguished through magical healing or specific intelligence checks."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy undead skeleton with quick attacks",
+        "undead creature that weakens foes with shadows",
+        "agile skeleton skilled in stealth and swift attacks",
+        "medium undead that attacks with necrotic power",
+        "skeleton that uses ranged finger darts"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Specter",
+    "queries": [
+        {
+            "query": "undead creature that can fly and drain life",
+            "variant": "creature that flies and drains life energy, undead"
+        },
+        {
+            "query": "ghostly apparition that moves through walls and hates sunlight",
+            "variant": "apparition that dislikes sunlight and can pass through walls"
+        },
+        {
+            "query": "malevolent spirit with life drain ability and weak to sunlight",
+            "variant": "spirit that can drain life and is vulnerable to sunlight"
+        },
+        {
+            "query": "undead with incorporeal movement living in dark locations",
+            "variant": "undead that moves incorporeally and resides in shadowy places"
+        },
+        {
+            "query": "specter attacking with necrotic damage in dark areas",
+            "variant": "dark area specter using necrotic attacks"
+        }
+    ]
+}

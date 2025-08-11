@@ -1,0 +1,25 @@
+{
+    "name": "Derro Shadowseeker",
+    "queries": [
+        {
+            "query": "small humanoid with stealth abilities that thrives in the dark",
+            "variant": "small humanoid that has stealth and thrives in dark places"
+        },
+        {
+            "query": "chaotic evil creature that is weak in sunlight and excels in evasion",
+            "variant": "creature with chaotic evil nature that struggles in sunlight and is good at evasion"
+        },
+        {
+            "query": "agile monster that uses sneak attacks and has disadvantage in daylight",
+            "variant": "agile creature that performs sneak attacks while being weak in daylight"
+        },
+        {
+            "query": "derro that can confuse enemies and has high dexterity",
+            "variant": "Derro creature that can confuse foes and has a high dexterity score"
+        },
+        {
+            "query": "small evil humanoid skilled in acrobatics and proficient in stealth",
+            "variant": "evil small humanoid that is skilled in acrobatics and stealth"
+        }
+    ]
+}

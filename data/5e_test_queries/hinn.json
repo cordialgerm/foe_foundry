@@ -1,0 +1,25 @@
+{
+    "name": "Hinn",
+    "queries": [
+        {
+            "query": "large elemental creature with earth manipulation and high hit points",
+            "variant": "big elemental being that can control earth and has a lot of hit points"
+        },
+        {
+            "query": "earth elemental that can burrow and turns into a cloud",
+            "variant": "earth-based elemental which can tunnel and transform into dust"
+        },
+        {
+            "query": "powerful combatant that can summon an earth elemental and has a stunning mace",
+            "variant": "strong fighter which summons earth elemental and possesses a mace that stuns"
+        },
+        {
+            "query": "creature that uses Churned Earth ability and has Nebulous trait for stealth",
+            "variant": "being that wields Churned Earth feature and has a Nebulous trait enhancing stealth"
+        },
+        {
+            "query": "elemental with darkvision and a high Constitution score",
+            "variant": "elemental that has night vision and excels in resilience with high Constitution"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Centipede",
+    "queries": [
+        {
+            "query": "small venomous creature that moves quickly on the ground and climbs",
+            "variant": "quick climbing creature that is small and venomous"
+        },
+        {
+            "query": "agile insect with poisonous bite that paralyzes",
+            "variant": "insect that is nimble and has a bite that can paralyze"
+        },
+        {
+            "query": "creature with 5 piercing damage and poison that eliminates hit points",
+            "variant": "monster dealing 5 piercing damage with poison that reduces HP"
+        },
+        {
+            "query": "giant centipede's ambush tactics in forests or caves",
+            "variant": "tactics of a centipede in an ambush situation in woods or caves"
+        },
+        {
+            "query": "creature with poor strength and intelligence but high dexterity",
+            "variant": "monster with low strength and intelligence scores but good dexterity"
+        }
+    ]
+}

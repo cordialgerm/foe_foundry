@@ -1,0 +1,54 @@
+{
+    "name": "Tusked Crimson Ogre",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 93,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "ogre",
+        "chaotic",
+        "brutal"
+    ],
+    "adjectives": [
+        "tusked",
+        "crimson",
+        "formidable",
+        "brutish"
+    ],
+    "description": "The Tusked Crimson Ogre is a massive giant with a menacing appearance, characterized by its sharp tusks and crimson skin, suggesting a fierce and aggressive nature.",
+    "memorable": "Its ability to go berserk and make foes attack each other adds unpredictability to combat encounters.",
+    "goals": "To dominate its battlefield through sheer physical might and chaos.",
+    "relations": "Often found leading smaller ogres or working alongside chaotic creatures.",
+    "environment": "Typically found in rough terrains or areas with a high concentration of chaos.",
+    "strengths": "Exceptional physical strength and the ability to deliver heavy melee damage, bolstered by special abilities that enhance its aggressiveness.",
+    "weaknesses": "Low Dexterity and Intelligence make it sluggish and lacking in mental acuity.",
+    "attacks": "Employs a morningstar for swinging strikes and a powerful bite for close-range combat.",
+    "most_powerful_ability": "Berserker's Blood unleashes chaos, causing others to attack unpredictably.",
+    "equipment": "wields a morningstar",
+    "senses": "Has darkvision, allowing it to see in dim light as if it were bright light.",
+    "skills": "Excels in Athletics, making it capable of impressive physical feats, and Intimidation, enhancing its fearsome presence.",
+    "additional_information": [
+        "Immune to the frightened condition.",
+        "Has advantage on melee attack rolls against wounded foes.",
+        "Can make additional attacks when reducing creatures to 0 hit points.",
+        "Resistant to poison damage.",
+        "Chaotic and unpredictable in battle."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant with tusks and blood frenzy",
+        "brutish giant that causes berserk rage",
+        "large crimson monster with heavy melee attacks",
+        "formidable ogre with morningstar weapon",
+        "chaotic evil giant that leads others into frenzy"
+    ]
+}

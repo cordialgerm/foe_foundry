@@ -1,0 +1,53 @@
+{
+    "name": "Dark Voice",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "dark",
+        "manipulative"
+    ],
+    "adjectives": [
+        "cunning",
+        "resilient",
+        "intimidating"
+    ],
+    "description": "The Dark Voice is a medium humanoid creature with a notable presence, equipped with chain mail armor. With an exceptional charisma and a manipulative demeanor, it is capable of both melee and ranged attacks, dealing significant damage through its mace and heavy crossbow.",
+    "memorable": "Its ability to regenerate in dim light enhances its survivability, making it a persistent adversary.",
+    "goals": "To manipulate and frighten opponents while sustaining itself through regeneration.",
+    "relations": "Could serve dark entities or work with other evil-aligned creatures.",
+    "environment": "Thrives in dim light or dark areas, often avoiding sunlight.",
+    "strengths": "Possesses high charisma, making it skilled in persuasion and intimidation, along with regeneration in low light.",
+    "weaknesses": "Vulnerable in sunlight, suffering disadvantages on attacks and perception checks.",
+    "attacks": "Can strike with a mace for bludgeoning and cold damage or shoot a heavy crossbow for piercing and cold damage.",
+    "most_powerful_ability": "Whispers of Shadow creates dim light and frightens enemies, dealing psychic damage.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to perceive its surroundings without normal vision.",
+    "skills": "Proficient in intimidation and persuasion, making it a potent social manipulator.",
+    "additional_information": [
+        "Regenerates in darkness, enhancing durability.",
+        "Advantage on saving throws against being charmed or frightened.",
+        "Speaks in Umbral, adding to its mysterious persona.",
+        "Can create dim light areas that affect non-dark folk creatures.",
+        "Particularly effective in psychological warfare."
+    ],
+    "damage_types": [
+        "cold",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "manipulative humanoid adept in dark environments",
+        "creature that thrives in dim light and shadows",
+        "dark creature with powerful intimidation skills",
+        "humanoid that regenerates in darkness and fears sunlight",
+        "cunning enemy using shadows to frighten foes"
+    ]
+}

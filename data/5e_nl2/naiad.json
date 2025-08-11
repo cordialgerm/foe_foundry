@@ -1,0 +1,50 @@
+{
+    "name": "Naiad",
+    "creature_type": "Fey",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 22,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking and 30 feet swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "water",
+        "nature"
+    ],
+    "adjectives": [
+        "graceful",
+        "ethereal",
+        "aquatic"
+    ],
+    "description": "The Naiad embodies the grace and beauty of aquatic environments, with features reflective of its nature.",
+    "memorable": "Magic Resistance and ability to communicate with nature add unique strategic elements.",
+    "goals": "Typically seeks to protect its aquatic habitat and interact with nature.",
+    "relations": "Often found alongside other fey or in ecosystems involving water.",
+    "environment": "Aquatic and natural environments, such as rivers, lakes, and wetlands.",
+    "strengths": "Versatile in combat, able to grapple and control opponents while swimming.",
+    "weaknesses": "Vulnerable to fire-based attacks.",
+    "attacks": "Watery Grasp allows it to grapple foes while dealing bludgeoning damage.",
+    "most_powerful_ability": "Magic Resistance grants advantage on saving throws against spells.",
+    "equipment": null,
+    "senses": " possesses darkvision up to 60 feet.",
+    "skills": "It has notable proficiency in perception, stealth, and nature.",
+    "additional_information": [
+        "Amphibious, able to breathe both air and water.",
+        "Can communicate with beasts and plants.",
+        "Graceful movement in water enhances its combat effectiveness."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "beautiful water fey creature",
+        "graceful creature that communicates with nature",
+        "aquatic monster that can breathe underwater",
+        "nimble creature with magic resistance",
+        "medium-sized fey known for watery grasp"
+    ]
+}

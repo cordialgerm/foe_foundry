@@ -1,0 +1,25 @@
+{
+    "name": "Rotsam",
+    "queries": [
+        {
+            "query": "tiny ooze that spreads disease and decays",
+            "variant": "tiny ooze creature that decays and spreads disease"
+        },
+        {
+            "query": "creature that swims 30 feet and has a necrotic bite",
+            "variant": "monster that has a necrotic bite and swims at 30 feet"
+        },
+        {
+            "query": "ooze monster that can climb ceilings and causes rot",
+            "variant": "monster that causes rot and climbs difficult surfaces like ceilings"
+        },
+        {
+            "query": "creature immune to necrotic damage that infects with bog rot",
+            "variant": "creature that infects with bog rot and is immune to necrotic damage"
+        },
+        {
+            "query": "tiny ooze with low strength and speed of 30 feet",
+            "variant": "small ooze with poor strength and a swimming speed of 30 feet"
+        }
+    ]
+}

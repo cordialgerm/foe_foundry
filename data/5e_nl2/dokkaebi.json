@@ -1,0 +1,49 @@
+{
+    "name": "Dokkaebi",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral or chaotic good",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "trickster",
+        "mischievous"
+    ],
+    "adjectives": [
+        "playful",
+        "elusive",
+        "chaotic"
+    ],
+    "description": "The Dokkaebi is a medium-sized fey with a mischievous nature, featuring a magical Invisibility Hat and grappling abilities.",
+    "memorable": "Notable for its ability to grant invisibility through its hat, and its trickster-like tactics in combat.",
+    "goals": "Usually seeks to cause mischief and play tricks on adventurers.",
+    "relations": "May interact with other fey creatures or serve as an ally to adventurers through its playful nature.",
+    "environment": "Typically found in enchanted forests or other magical realms.",
+    "strengths": "Good endurance with 78 hit points and strong melee grappling capabilities.",
+    "weaknesses": "Moderately low Armor Class and poor perception skills.",
+    "attacks": "Makes three club attacks with decent damage output.",
+    "most_powerful_ability": "The Invisibility Hat can allow the wearer to turn invisible, dramatically changing tactics in combat.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Possesses a -1 modifier in perception, indicating poor awareness.",
+    "additional_information": [
+        "Gains advantage on Strength checks for grappling.",
+        "Invisibility ability grants tactical advantage in battle.",
+        "Chaotic nature leads to unpredictable behavior.",
+        "Can only grant invisibility with permission to wear its hat.",
+        "Endurance allows it to withstand damage in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast Invisibility to enhance its strategic approach.",
+    "test_queries": [
+        "mischievous fey with invisibility powers",
+        "trickster creature that can turn invisible",
+        "playful fey known for causing trouble",
+        "medium fey with strong grappling abilities",
+        "elusive creature that grants invisibility"
+    ]
+}

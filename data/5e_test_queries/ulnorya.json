@@ -1,0 +1,25 @@
+{
+    "name": "Ulnorya",
+    "queries": [
+        {
+            "query": "large evil aberration that can become invisible and has a powerful bite attack",
+            "variant": "big evil aberration that can turn invisible and has a strong biting attack"
+        },
+        {
+            "query": "monster with high Dexterity and the ability to split into copies during combat",
+            "variant": "creature with great Dexterity and the ability to divide into duplicates in battle"
+        },
+        {
+            "query": "agile creature that excels in stealth and has poison immunity",
+            "variant": "nimble beast that is adept at hiding and is immune to poison"
+        },
+        {
+            "query": "Ulnorya tactics and abilities in combat against adventurers",
+            "variant": "tactics for Ulnorya and its powers in fights against adventurers"
+        },
+        {
+            "query": "combat abilities of a Ulnorya including multiattack and replicate",
+            "variant": "fighting skills of a Ulnorya such as multiattack and replication abilities"
+        }
+    ]
+}

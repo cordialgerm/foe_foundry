@@ -1,0 +1,25 @@
+{
+    "name": "Stirge",
+    "queries": [
+        {
+            "query": "small bat-like creature that drains blood in swamps",
+            "variant": "tiny bat-like monster that sucks blood and lives in swamps"
+        },
+        {
+            "query": "creature with a long proboscis that swarms in dark forests",
+            "variant": "monster that has a long needle-like mouth and hides in dark woods"
+        },
+        {
+            "query": "blood-sucking creature with darkvision found in caves",
+            "variant": "blood-draining monster with the ability to see in darkness found within caves"
+        },
+        {
+            "query": "agile flying pest that attacks in groups",
+            "variant": "quick flying nuisance that strikes in swarms"
+        },
+        {
+            "query": "fragile creature that can detach itself after feeding",
+            "variant": "delicate monster that can pull away after it has drained health"
+        }
+    ]
+}

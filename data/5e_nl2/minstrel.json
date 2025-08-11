@@ -1,0 +1,53 @@
+{
+    "name": "Minstrel",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 32,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "spellcaster",
+        "support",
+        "manipulator"
+    ],
+    "adjectives": [
+        "versatile",
+        "charismatic",
+        "nimble"
+    ],
+    "description": "The Minstrel is a Medium humanoid characterized by their charming presence and skillful dexterity, often wielding a rapier with quick reflexes.",
+    "memorable": "Noteworthy for their powerful crowd control and healing spells, along with their ability to influence others in social situations.",
+    "goals": "To manipulate social situations, support allies, and control the battlefield with spells.",
+    "relations": "Likely to be found alongside other bards or entertainers.",
+    "environment": "Often found in taverns, guilds, or areas of social gathering.",
+    "strengths": "High Charisma enhances spellcasting and social skills, along with excellent Dexterity for evasive actions.",
+    "weaknesses": "Somewhat fragile due to average Constitution and limited hit points.",
+    "attacks": "Equipped with a rapier for melee attacks, focused on charm and manipulation through spells.",
+    "most_powerful_ability": "Hypnotic Pattern, which can incapacitate multiple creatures and control the battlefield.",
+    "equipment": "Rapier",
+    "senses": null,
+    "skills": "Proficient in deception, performance, and persuasion, allowing for effective manipulation and entertainment.",
+    "additional_information": [
+        "5th level spellcaster with a range of bard spells",
+        "Can heal allies using Healing Word",
+        "Utilizes Vicious Mockery to damage and debilitate foes",
+        "Gains invisibility for strategic engagement",
+        "Ability to enhance allies' damage with Martial Encouragement"
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": "Functions as a 5th level bard with a variety of spells for control, healing, and manipulation.",
+    "test_queries": [
+        "spellcasting humanoid that supports allies",
+        "charismatic bard skilled in deception",
+        "nimble entertainer with crowd control spells",
+        "support character using healing and charm",
+        "versatile performer with powerful spells"
+    ]
+}

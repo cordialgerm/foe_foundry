@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Cave Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon that creates magical darkness",
+            "variant": "huge dragon that emits magical darknes"
+        },
+        {
+            "query": "dragon with poison breath and high constitution",
+            "variant": "creature with a poison breath attack and exceptional constitution"
+        },
+        {
+            "query": "dragon that burrows through stone with frightful presence",
+            "variant": "dragon that can dig through earth and has a terrifying aura"
+        },
+        {
+            "query": "dark creature immune to poison that excels in perception",
+            "variant": "creature resistant to poison with outstanding perception abilities"
+        },
+        {
+            "query": "dragon with legendary resistance and multiple attacks",
+            "variant": "dragon that has legendary resistance abilities and can attack multiple times"
+        }
+    ]
+}

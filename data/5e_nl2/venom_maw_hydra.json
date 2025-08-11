@@ -1,0 +1,53 @@
+{
+    "name": "Venom Maw Hydra",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 231,
+    "ac": 15,
+    "srd": false,
+    "cr": "12",
+    "movement": "swim 30 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "hydra",
+        "amphibious",
+        "multiattack",
+        "acid attack"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Venom Maw Hydra is characterized by its five heads and powerful acid-based attacks. This monstrous creature has a serpentine body and multiple biting heads, making it a terrifying enemy in both water and land.",
+    "memorable": "The ability to regenerate heads when injured makes the Venom Maw Hydra a persistent threat in battle.",
+    "goals": "To dominate its environment and defeat foes using its overwhelming attacks.",
+    "relations": "Other hydra varieties or aquatic creatures.",
+    "environment": "Lurks in swamps, rivers, or aquatic environments.",
+    "strengths": "Immunity to acid and high hit points provide resilience, while multiple heads allow for multiple attacks.",
+    "weaknesses": "Takes extra damage from cold attacks, which also prevent its head regeneration.",
+    "attacks": "Utilizes multiattack with powerful bite and spit attacks dealing piercing and acid damage.",
+    "most_powerful_ability": "Its regeneration ability allows it to regrow heads killed in battle, unless cold damage is inflicted.",
+    "equipment": null,
+    "senses": "Possesses keen perception with a passive score of 18.",
+    "skills": "Proficient in Perception and Stealth, allowing it to be both aware of its surroundings and capable of ambush.",
+    "additional_information": [
+        "Regains 10 HP for each head regrown.",
+        "Advantage on saving throws due to multiple heads.",
+        "Can attack in both melee and ranged forms.",
+        "Wallowing Rampage can deal area damage in water.",
+        "Wakeful ability prevents it from being caught off guard while it sleeps."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge hydra with multiple heads",
+        "acid-spitting hydra attacks",
+        "swamp monster with head regeneration",
+        "dangerous creature that can grow heads",
+        "creature with powerful bite and spit"
+    ]
+}

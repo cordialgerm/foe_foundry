@@ -1,0 +1,54 @@
+{
+    "name": "Rum Story Keeper",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 38,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "20 ft. walking, 10 ft. climbing, 10 ft. swimming",
+    "role": "Controller",
+    "tags": [
+        "Fey",
+        "Gremlin",
+        "Spellcaster",
+        "Poison"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "mischievous",
+        "poisonous"
+    ],
+    "description": "A tiny fey creature embodying both mischief and a penchant for intoxicating fun. Known for its vibrant stories and chaotic demeanor.",
+    "memorable": "Notable for its storytelling abilities that empower allies and debilitate foes, as well as its Aura of Drunkenness.",
+    "goals": "To spread chaos and mischief, often through storytelling and intoxication.",
+    "relations": "Often found among other Rum Gremlins, serving as a supportive ally and manipulator in battles.",
+    "environment": "Typically found in taverns, festivals, or chaotic party environments.",
+    "strengths": "Strong magical resistance and the ability to poison foes, affecting the battlefield dynamics.",
+    "weaknesses": "Low hit points and armor class, making it vulnerable in direct confrontations.",
+    "attacks": "Can perform a Mug Slap for bludgeoning and poison damage, and a Rum Splash for ranged poison damage.",
+    "most_powerful_ability": "Aura of Drunkenness, affecting all creatures within its radius with potential poisoning effects.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has a passive Perception of 11 but weak in Wisdom, making it susceptible to certain effects.",
+    "additional_information": [
+        "Immune to poisoned condition",
+        "Can cast spells to enhance its manipulative abilities",
+        "Uses stories to empower rum gremlins",
+        "Can deliver potent poison damage",
+        "Constitutes a tricky foe on the battlefield"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Casts spells as a Charisma-based spellcaster, including prestidigitation at will, and charm person and mirror image three times per day.",
+    "test_queries": [
+        "tiny fey creature with storytelling powers",
+        "gremlin that poisons with drunken aura",
+        "chaotic evil gremlin spreading mischief",
+        "poisonous fey manipulating the battlefield",
+        "rum gremlin with powerful magical resistance"
+    ]
+}

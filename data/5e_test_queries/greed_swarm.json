@@ -1,0 +1,25 @@
+{
+    "name": "Greed Swarm",
+    "queries": [
+        {
+            "query": "construct that resembles a pile of coins and can fly",
+            "variant": "flying construct that looks like a coin pile"
+        },
+        {
+            "query": "swarm monster with coin attacks that can ambush players",
+            "variant": "monster swarm with attacks using coins to ambush players"
+        },
+        {
+            "query": "creature that gains health by collecting valuable items",
+            "variant": "monster that restores hit points by gathering valuable items"
+        },
+        {
+            "query": "ambush monster with a deafening clatter ability in a treasure disguise",
+            "variant": "bulling monster with treasure disguise and clatter ability to ambush"
+        },
+        {
+            "query": "Greed Swarm vulnerabilities to force damage and magic spells",
+            "variant": "weaknesses of Greed Swarm to force damage and spells"
+        }
+    ]
+}

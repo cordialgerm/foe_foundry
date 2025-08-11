@@ -1,0 +1,52 @@
+{
+    "name": "Caustic Charger",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "10 ft. walking speed, burrowing speed of 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "acid immune"
+    ],
+    "adjectives": [
+        "huge",
+        "caustic",
+        "burrowing",
+        "powerful"
+    ],
+    "description": "The Caustic Charger is a massive monstrosity with a strong physical presence, characterized by its ability to manipulate difficult terrain and deliver debilitating attacks with its tentacles.",
+    "memorable": "It can paralyze foes and drain their life force while being immune to acid damage.",
+    "goals": "To ambush and incapacitate creatures, making the battlefield difficult for opponents.",
+    "relations": "Can be encountered alongside other hostile creatures in caves or rocky terrains.",
+    "environment": "Typically found in areas with rocky or sandy difficult terrain.",
+    "strengths": "High hit points, ability to paralyze enemies, and immunity to acid damage.",
+    "weaknesses": "Average Dexterity and Charisma scores, which may make it less effective in agility-based challenges or social interactions.",
+    "attacks": "Can perform powerful Ram attacks and debilitating Tentacle attacks that deal bludgeoning damage and additional acid damage.",
+    "most_powerful_ability": "The Tentacles attack that not only inflicts damage but also has a chance to paralyze targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can occupy the space of prone creatures with its Straddler ability.",
+        "Difficult terrain does not slow its movement due to the Wastes Walk ability.",
+        "Multiattack allows it to strike multiple times in a turn.",
+        "Feeds on paralyzed targets to regain health, significantly impacting combat dynamics.",
+        "Limited mobility with a walking speed of 10 ft."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with acid immunity",
+        "monstrosity that drains health from paralyzed foes",
+        "burrowing creature that paralyzes enemies",
+        "powerful creature with tentacle attacks",
+        "monster occupying space of prone creatures"
+    ]
+}

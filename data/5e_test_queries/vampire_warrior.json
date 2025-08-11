@@ -1,0 +1,25 @@
+{
+    "name": "Vampire Warrior",
+    "queries": [
+        {
+            "query": "strong undead creature that can charm and manipulate",
+            "variant": "undead creature that is strong and good at charming and manipulation"
+        },
+        {
+            "query": "medium vampire with necrotic damage resistance",
+            "variant": "medium-sized vampire resistant to necrotic damage"
+        },
+        {
+            "query": "vampire that can turn into mist and has a high armor class",
+            "variant": "vampire able to transform into mist with a strong armor rating"
+        },
+        {
+            "query": "combat-skilled vampire who has weaknesses to sunlight",
+            "variant": "combat-adept vampire with a vulnerability to sunlight"
+        },
+        {
+            "query": "vampire warrior known for its regeneration and grabbing abilities",
+            "variant": "warrior vampire famous for its grabbing technique and ability to regenerate"
+        }
+    ]
+}

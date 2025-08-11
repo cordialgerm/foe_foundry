@@ -1,0 +1,51 @@
+{
+    "name": "Invisible Stalker",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 14,
+    "srd": true,
+    "cr": "6",
+    "movement": "50 ft., fly 50 ft. (hover)",
+    "role": "Skirmisher",
+    "tags": [
+        "Elemental",
+        "Stealth",
+        "Tracker"
+    ],
+    "adjectives": [
+        "invisible",
+        "relentless",
+        "elusive"
+    ],
+    "description": "The Invisible Stalker is a Medium elemental creature that appears completely invisible to most observers, appearing only as a vague outline to those who can perceive invisible beings. It is a spirit of air known for its exceptional stealth and tracking abilities.",
+    "memorable": "It is a relentless hunter that follows its target across distances without rest, often ambushing them in deadly silence.",
+    "goals": "Typically summoned to complete missions involving tracking or hunting specific targets.",
+    "relations": "Often summoned by spellcasters or entities needing assistance in tracking or hunting.",
+    "environment": "Usually found in diverse environments, it can move through physical barriers as long as they don't impede airflow.",
+    "strengths": "Highly stealthy with a perfect invisibility ability, making it difficult to detect. Its elemental nature grants immunity to poison and several conditions.",
+    "weaknesses": "Relies on stealth and invisibility for effectiveness; can be limited in direct combat capabilities.",
+    "attacks": "Can perform a Multiattack with two Slam attacks, dealing bludgeoning damage and pushing targets prone on a critical hit.",
+    "most_powerful_ability": "The Faultless Tracker ability allows it to always know the direction and distance to its designated quarry.",
+    "senses": "Has a passive Perception score of 18, making it highly aware of its surroundings.",
+    "skills": "Skilled in Stealth and Perception, with bonus values of +10 and +8 respectively, it excels at remaining hidden and detecting threats.",
+    "additional_information": [
+        "Invisibility allows it to operate undetected.",
+        "Elemental nature means it doesn't require air or sustenance.",
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage.",
+        "Can use Steal Breath to incapacitate targets temporarily.",
+        "Has a mobility advantage due to flying and gust abilities."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "invisible elemental with tracking abilities",
+        "stealthy creature that hunts targets",
+        "air spirit that is hard to detect",
+        "elemental that can become invisible",
+        "medium creature that ambushes silently"
+    ]
+}

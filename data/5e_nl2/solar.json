@@ -1,0 +1,55 @@
+{
+    "name": "Solar",
+    "creature_type": "Celestial",
+    "creature_subtype": "angel",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 306,
+    "ac": 21,
+    "srd": true,
+    "cr": "21",
+    "movement": "50 ft., fly 150 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "angel",
+        "warrior",
+        "divine"
+    ],
+    "adjectives": [
+        "radiant",
+        "muscular",
+        "divine"
+    ],
+    "description": "The Solar has a towering, radiant form with large, feathered wings, embodying divine power. It is equipped with a holy sword and displays exceptional physical and magical abilities.",
+    "memorable": "Its presence inspires awe and fear, and it can automatically detect lies, making it a strong ally and potent enemy.",
+    "goals": "Solars are typically sent to fight evil, lead celestial armies, or serve as divine champions for their gods.",
+    "relations": "Solars may be associated with other celestial beings and often engage with evildoers, fiends, or dark forces.",
+    "environment": "Solars can be encountered in places of significance to good or divine purpose, often in celestial realms or during high-stakes conflicts on the material plane.",
+    "strengths": "Immunity to necrotic and poison damage, resistance to radiant damage and nonmagical attacks, and high offensive capabilities.",
+    "weaknesses": "Relies heavily on melee and spellcasting for damage output, lacking ranged combat capabilities without spells.",
+    "attacks": "Utilizes a multiattack feature with a holy sword, dealing significant slashing and radiant damage. The Column of Flame area attack adds versatility and damage potential in combat.",
+    "most_powerful_ability": "Innate spellcasting includes powerful spells like resurrection, enabling it to restore life without material components.",
+    "equipment": "Armed with a holy sword, capable of unleashing greater radiant damage.",
+    "senses": "Possesses truesight up to 120 feet, allowing it to perceive unseen threats.",
+    "skills": "High perception with a passive score of 24 makes it adept at noticing details and threats in its vicinity.",
+    "additional_information": [
+        "Angelic Weapons deal extra radiant damage on attacks.",
+        "Divine Protection imposes disadvantage on attacks against it from certain creature types.",
+        "Legendary Resistance allows it to succeed on saving throws it would fail.",
+        "Magic Resistance gives it advantage on saving throws against spells.",
+        "Champion of Truth ability ensures it cannot tell lies."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": "Can innately cast spells like commune, control weather, and resurrection, showcasing its incredible divine abilities.",
+    "test_queries": [
+        "large celestial warrior with radiant wings",
+        "divine being that can cast resurrection",
+        "angelic creature immune to necrotic damage",
+        "powerful celestial with truesight ability",
+        "angel that can detect lies and heal"
+    ]
+}

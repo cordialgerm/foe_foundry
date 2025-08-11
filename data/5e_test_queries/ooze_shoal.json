@@ -1,0 +1,25 @@
+{
+    "name": "Ooze, Shoal",
+    "queries": [
+        {
+            "query": "gargantuan ooze that can breathe underwater and mimics fish",
+            "variant": "huge ooze that breathes underwater and looks like fish"
+        },
+        {
+            "query": "monster that can engulf creatures and incapacitate them with mesmerizing abilities",
+            "variant": "creature that can engulf and mesmerize other creatures"
+        },
+        {
+            "query": "aquatic ooze that shares life with fish and has high hit points",
+            "variant": "water-based ooze bonded with fish that has a lot of hit points"
+        },
+        {
+            "query": "immaculate underwater ooze with deceptive appearance and strong physical attacks",
+            "variant": "perfect underwater ooze with a trick appearance and powerful physical abilities"
+        },
+        {
+            "query": "creature with low intelligence that is dangerous in water due to its abilities",
+            "variant": "monster with poor smarts that becomes a threat in aquatic environments because of its powers"
+        }
+    ]
+}

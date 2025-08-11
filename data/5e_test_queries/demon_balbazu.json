@@ -1,0 +1,25 @@
+{
+    "name": "Balbazu",
+    "queries": [
+        {
+            "query": "tiny fiend with aquatic invisibility and blood draining ability",
+            "variant": "tiny fiend that can turn invisible in water and drains blood"
+        },
+        {
+            "query": "chaotic evil creature that thrives in water and attacks with bite",
+            "variant": "chaotic evil monster that lives in water and has a bite attack"
+        },
+        {
+            "query": "weak physical monster that has magic resistance and blood reservoir",
+            "variant": "physically weak creature with blood reservoir and resistance to magic"
+        },
+        {
+            "query": "small fiend immune to poison that drains health from enemies",
+            "variant": "small fiend that can't be poisoned and sucks health from foes"
+        },
+        {
+            "query": "Balbazu tactics in aquatic environments and stealth abilities",
+            "variant": "strategies for using Balbazu in water and its stealth powers"
+        }
+    ]
+}

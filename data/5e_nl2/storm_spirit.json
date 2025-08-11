@@ -1,0 +1,53 @@
+{
+    "name": "Storm Spirit",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 40 ft., hover; walk 0 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "storm",
+        "lightning",
+        "thunder"
+    ],
+    "adjectives": [
+        "lightning-infused",
+        "thunderous",
+        "airborne"
+    ],
+    "description": "The Storm Spirit embodies lightning and thunder, navigating through narrow spaces effortlessly and dealing damage to those who approach.",
+    "memorable": "Its ability to deal area damage and control the battlefield makes it a formidable opponent despite its frailty.",
+    "goals": "Serves as a threat or potential asset in stormy environments.",
+    "relations": "Often related to other elemental beings due to its Auran language.",
+    "environment": "Commonly found in stormy or tempestuous areas.",
+    "strengths": "Immunity to lightning and thunder damage; ability to move through small spaces.",
+    "weaknesses": "Low hit points and inability to move on the ground.",
+    "attacks": "Utilizes Thunder Slam for close combat and Shocking Bolt for ranged attacks, both dealing thunder or lightning damage.",
+    "most_powerful_ability": "Tempest creates a dangerous area effect, throwing enemies and dealing significant damage.",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immune to exhaustion and several conditions.",
+        "Can hover and fly, avoiding ground-based movement restrictions.",
+        "Can deal damage to creatures in close proximity.",
+        "The Storm Form ability allows for evasive maneuvers.",
+        "Weak melee capabilities due to zero ground speed."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "storm elemental with lightning attacks",
+        "elemental creature that hovers and deals thunder damage",
+        "lightning spirit found in stormy environments",
+        "medium elemental that uses tempest ability",
+        "dangerous storm spirit with area damage"
+    ]
+}

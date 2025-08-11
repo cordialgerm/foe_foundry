@@ -1,6 +1,8 @@
 <MonsterName/>Puffinfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>22</HP>
 <summary>The Puffinfolk is a small humanoid creature with a unique affinity for marine environments. Notably neutral in alignment, these beings are agile and capable in both water and air, making them versatile in various combat scenarios. With a relatively good Armor Class of 15, they can withstand some damage, though their Hit Points are only 22, making them somewhat fragile. Their Challenge Rating of 1/2 indicates that they are suitable opponents for lower-level adventurers, offering a mix of skills and abilities that emphasize mobility and cunning. While their physical strength is average, their dexterity is exceptional, allowing them to evade attacks effectively. The Puffinfolk's primary weaknesses lie in their lower Hit Points and average Charisma, which limits their interactions that rely on charm or intimidation.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For reactions, the Puffinfolk benefits from the "Quick and Nimble" ability, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Puffinfolk
 
 *Small* *Humanoid* *neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Quick and Nimble:** When a creature the puffinfolk can see targets it with melee or ranged weapon attack puffinfolk darts out of the way and attacker has disadvantage on the attack.
 
 
+</statblock>
 
 

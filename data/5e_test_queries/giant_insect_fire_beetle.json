@@ -1,0 +1,25 @@
+{
+    "name": "Giant Fire Beetle",
+    "queries": [
+        {
+            "query": "small glowing insect that causes fire damage",
+            "variant": "tiny insect that glows and can deal fire damage"
+        },
+        {
+            "query": "beetle with igniting mucus ability found in dark areas",
+            "variant": "beetle that has igniting mucus and is found in dark places"
+        },
+        {
+            "query": "creature that illuminates surroundings and has low health",
+            "variant": "monster that lights up the area and has few hit points"
+        },
+        {
+            "query": "fire beetle with a bite attack and poison capability",
+            "variant": "beetle that can bite and uses poison"
+        },
+        {
+            "query": "insect that has both illumination and poison abilities",
+            "variant": "bug that possesses illumination and poison skills"
+        }
+    ]
+}

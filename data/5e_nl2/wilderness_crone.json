@@ -1,0 +1,54 @@
+{
+    "name": "Wilderness Crone",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "Fey",
+        "Nature",
+        "Spellcaster",
+        "Support"
+    ],
+    "adjectives": [
+        "natural",
+        "protective",
+        "resilient",
+        "communicative"
+    ],
+    "description": "The Wilderness Crone embodies the essence of the natural world, exuding an aura of harmony with the flora and fauna around her.",
+    "memorable": "Her ability to transform dead humanoids into beasts and her influence over animals makes her a unique presence in the wilderness.",
+    "goals": "To nurture and protect her domain and communicate with the creatures of nature.",
+    "relations": "Often accompanied by beasts and plants, acting as a protector or mother figure in the wild.",
+    "environment": "Usually found in forests or natural settings rich in flora and fauna.",
+    "strengths": "Possesses magical abilities to communicate with animals and plants; has strong spells and a unique life restoration ability.",
+    "weaknesses": "Relatively low intelligence and strength limit her physical combat capabilities.",
+    "attacks": "Uses a staff to deal bludgeoning and force damage, and can unleash a damaging cone of pine needles.",
+    "most_powerful_ability": "Needle Breath, which deals significant piercing damage to multiple targets in a cone.",
+    "equipment": "staff",
+    "senses": "Has darkvision that allows her to see in the dark up to 60 feet.",
+    "skills": "Possesses a decent perception skill, allowing her to notice details in her surroundings.",
+    "additional_information": [
+        "Resistance to piercing damage.",
+        "Can cast spells like 'Goodberry' and 'Hold Person'.",
+        "Her 'Beast Passivism' ability prevents low-intelligence beasts from attacking her.",
+        "Can teleport between trees using 'Tree Stride'.",
+        "Her ability to restore humanoids as beasts adds a unique twist to encounters."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": "Can cast spells at will, including 'Minor Illusion' and 'Tree Stride', and has access to powerful spells once per day.",
+    "test_queries": [
+        "nature protector with beast communication",
+        "fey creature that talks to plants and animals",
+        "magical crone that restores life as beasts",
+        "forest-dwelling creature with needle breath attack",
+        "multitude of spells from a nature-centered fey"
+    ]
+}

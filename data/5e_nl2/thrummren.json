@@ -1,0 +1,53 @@
+{
+    "name": "Thrummren",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Gargantuan",
+    "hp": 198,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 60 ft.",
+    "role": "Defender",
+    "tags": [
+        "celestial",
+        "gargantuan",
+        "chaotic good"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "protective"
+    ],
+    "description": "The Thrummren is a massive celestial creature with a powerful presence, known for its chaotic good alignment and overwhelming abilities on the battlefield. Its physicality is accentuated by its high natural armor and significant hit points.",
+    "memorable": "Its ability to absorb lightning damage and heal itself makes it a nearly invincible force against electrical attacks.",
+    "goals": "To protect its rider and dominate the battlefield with thunderous force.",
+    "relations": "It is often seen with a rider, enhancing its protective capabilities.",
+    "environment": "Typically found in celestial or stormy areas, where it can engage in grand battles.",
+    "strengths": "Immunities to lightning and poison, along with magical resistance and heavy damage potential through its attacks.",
+    "weaknesses": "While resistant to several damage types, it may still be vulnerable to psychological effects or abilities that can bypass its high defenses.",
+    "attacks": "Utilizes multiattack capabilities with mighty gore and hooves strikes, dealing both piercing and thunder damage.",
+    "most_powerful_ability": "Lightning Absorption allows it to become stronger when hit by lightning attacks, healing instead of taking damage.",
+    "equipment": null,
+    "senses": "The Thrummren has darkvision extending 120 feet, allowing it to perceive hidden threats effectively.",
+    "skills": "Notable saving throw proficiencies in Dexterity, Wisdom, and Charisma enhance its resilience against various attacks.",
+    "additional_information": [
+        "Can redirect attacks aimed at its rider with Protect Rider ability.",
+        "Storm Hide ability deals lightning damage to melee attackers.",
+        "Multiattack allows for both piercing and thunder damage in one round.",
+        "Highly mobile for its size with a substantial walk speed.",
+        "Serves both as an offensive powerhouse and a protector."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive celestial protector with thunder abilities",
+        "lightning absorbing gargantuan creature",
+        "chaotic good celestial monster on the battlefield",
+        "defender with thunder stomp ability",
+        "formidable celestial with protective powers"
+    ]
+}

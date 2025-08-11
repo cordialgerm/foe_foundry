@@ -1,0 +1,25 @@
+{
+    "name": "Giant Leech",
+    "queries": [
+        {
+            "query": "small amphibious creature that drains blood in water",
+            "variant": "amphibious small creature that sucks blood in water"
+        },
+        {
+            "query": "stealthy aquatic beast with blood-draining capabilities",
+            "variant": "sneaky water monster that drains blood"
+        },
+        {
+            "query": "monster with high agility that attacks by biting",
+            "variant": "creature with great speed that performs bite attacks"
+        },
+        {
+            "query": "environmentally versatile leech found in water and land",
+            "variant": "leech that can live on land and in water"
+        },
+        {
+            "query": "creature with low HP that uses stealth to attack prey",
+            "variant": "monster with weak health that sneaks up on its targets"
+        }
+    ]
+}

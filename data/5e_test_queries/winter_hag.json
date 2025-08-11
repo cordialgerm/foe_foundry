@@ -1,0 +1,25 @@
+{
+    "name": "Winter Hag",
+    "queries": [
+        {
+            "query": "fey creature that uses ice spells and curses adventurers",
+            "variant": "ice spells and curses adventurers fey creature"
+        },
+        {
+            "query": "medium fey with strong cold resistance and shapeshifting abilities",
+            "variant": "strong cold resistance fey with shapeshifting abilities medium"
+        },
+        {
+            "query": "winter-themed hag that can cast control weather and charm spells",
+            "variant": "hag themed winter spells control weather and charm"
+        },
+        {
+            "query": "fey monster with high armor class that can turn invisible",
+            "variant": "high armor class fey monster that can become invisible"
+        },
+        {
+            "query": "cold-resistant hag that can petrify enemies into ice",
+            "variant": "hag can petrify enemies into ice and is resistant to cold"
+        }
+    ]
+}

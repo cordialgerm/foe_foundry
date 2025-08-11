@@ -1,0 +1,25 @@
+{
+    "name": "Ash Phoenix",
+    "queries": [
+        {
+            "query": "large undead creature that can fly and regenerates",
+            "variant": "large dead creature that can fly and comes back to life"
+        },
+        {
+            "query": "creature that disguises itself as ash and uses stealth",
+            "variant": "creature that hides as ash and uses stealth"
+        },
+        {
+            "query": "vulnerable to radiant damage and excels in dim lighting",
+            "variant": "weak to radiant attacks and great in low light"
+        },
+        {
+            "query": "creature with high Dexterity and strong necrotic attacks",
+            "variant": "monster with great Dexterity and powerful necrotic attacks"
+        },
+        {
+            "query": "undead creature that blinds enemies with ash storm",
+            "variant": "undead being that blinds foes with an ash storm"
+        }
+    ]
+}

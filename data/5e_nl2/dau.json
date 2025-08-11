@@ -1,0 +1,55 @@
+{
+    "name": "Dau",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Small",
+    "hp": 49,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 60 ft., fly 20 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "chaotic",
+        "illusion",
+        "trickster"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "deceptive",
+        "chaotic",
+        "tricky"
+    ],
+    "description": "The Dau is a small fey creature with notable agility and a colorful appearance that embodies chaotic neutrality. It uses its speed and illusion magic to outmaneuver opponents.",
+    "memorable": "Its ability to teleport and create illusory duplicates makes it a tricky and resilient combatant.",
+    "goals": "To cause confusion and manipulate opponents through trickery and deception.",
+    "relations": "May be encountered alongside other fey creatures or in areas of magical influence.",
+    "environment": "Typically found in enchanted forests or areas rich in magic.",
+    "strengths": "Exceptional magic resistance and agility, making it difficult to hit with spells.",
+    "weaknesses": "Low physical strength limits its effectiveness in direct combat.",
+    "attacks": "Can deliver two slam attacks, dealing both bludgeoning and necrotic damage, while regaining hit points from the necrotic damage dealt.",
+    "most_powerful_ability": "Tangible Illusion allows it to create temporary physical objects from its illusions, impacting both combat and role-playing experiences.",
+    "equipment": null,
+    "senses": "Possesses darkvision and a passive perception score of 15, aiding in detecting hidden threats.",
+    "skills": "Proficient in Deception, Insight, Perception, and Stealth, enhancing its trickery and environmental awareness.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can cast spells without material components, making it very versatile.",
+        "Regains hit points equal to necrotic damage dealt.",
+        "Uses spells like 'detect thoughts' and 'minor illusion' to manipulate situations.",
+        "Possesses powerful illusionary magic for battlefield control."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Can cast various spells, including invisibility and major image, enhancing its capabilities in combat and deception.",
+    "test_queries": [
+        "small agile fey that uses illusions",
+        "chaotic fey creature with magic resistance",
+        "tricky small creature with teleportation ability",
+        "fey that manipulates perception and control",
+        "illusionist fey that regains health from attacks"
+    ]
+}

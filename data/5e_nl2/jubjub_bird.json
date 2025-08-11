@@ -1,0 +1,52 @@
+{
+    "name": "Jubjub Bird",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 91,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., fly 10 ft.",
+    "role": null,
+    "tags": [
+        "beast",
+        "flying",
+        "aggressive"
+    ],
+    "adjectives": [
+        "large",
+        "agitated",
+        "resilient"
+    ],
+    "description": "The Jubjub Bird is a large beast with a high-pitched scream and strong physical abilities, primarily using its sharp beak to attack.",
+    "memorable": "Its ability to intimidate with a high-pitched scream and its resilient nature due to poison immunity makes it a unique opponent.",
+    "goals": "Typically driven by instinct, likely to defend its territory or food sources.",
+    "relations": "May be found alongside other beasts but does not have known allies or masters.",
+    "environment": "Commonly inhabits forested areas or regions where it can nest and hunt.",
+    "strengths": "Resistant to poison damage and immune to poison status, allowing it to keep fighting effectively against certain attacks.",
+    "weaknesses": "Very low intelligence limits its interactions and ability to solve problems.",
+    "attacks": "Uses multiattack featuring a powerful bite and constricting grapple, with both attacks causing piercing and poison damage.",
+    "most_powerful_ability": "Shrill Screech, which enhances its intimidation capabilities in encounters.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses basic perception skills, allowing it to notice threats at a minimal level.",
+    "additional_information": [
+        "Advantage on saving throws against being charmed.",
+        "Disadvantage on Wisdom checks made against it for animal handling.",
+        "Disadvantage to opportunity attacks made against it.",
+        "Ability to counterattack with Bite on missed attacks within 10 feet.",
+        "Significant physical damage potential with strong bites."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large bird with a piercing scream",
+        "aggressive bird that avoids charm",
+        "bird that can intimidate with screech",
+        "creature that grapples and constricts",
+        "poison-resistant bird that flies slowly"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Mummy, Peat",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "curse",
+        "bog",
+        "mummy"
+    ],
+    "adjectives": [
+        "decayed",
+        "menacing",
+        "noxious"
+    ],
+    "description": "The Peat Mummy is a formidable undead creature characterized by its decay-ridden appearance and bog-like essence, embodying the unsettling traits of a swamp.",
+    "memorable": "It can inflict a debilitating curse called 'bog melt,' which drains the life from its victims over time.",
+    "goals": "Typically serves as an antagonist in combat scenarios.",
+    "relations": "May be encountered alongside other undead or as a guardian of a swampy area.",
+    "environment": "Often found in bogs or marshlands.",
+    "strengths": "Possesses high physical strength and resilience, making it a dangerous foe in close combat.",
+    "weaknesses": "Low Dexterity and Intelligence, making it less capable in ranged combat or intellectual challenges.",
+    "attacks": "Performs multiattacks with two 'Rabid Bite' attacks that deal piercing and necrotic damage, and spread its bog melt curse.",
+    "most_powerful_ability": "'Bog Melt' curse that prevents targets from regaining hit points and reduces their maximum hit points over time.",
+    "equipment": null,
+    "senses": "Has darkvision and can notice its surroundings with average perception.",
+    "skills": "Possesses average sensory awareness with a perception score of +0.",
+    "additional_information": [
+        "Immune to poison damage and resistant to nonmagical bludgeoning and piercing damage.",
+        "Immunities to conditions such as being charmed, exhausted, or frightened.",
+        "Can poison attackers who strike it in melee with noxious fumes.",
+        "When cursed, victims may enter a rage that compels them to attack nearby creatures.",
+        "Undead nature means it does not require air, food, drink, or sleep."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature found in bogs",
+        "mummy that curses with bog melt",
+        "dangerous bog mummy with strong bites",
+        "creature that poisons attackers in melee",
+        "decayed monster causing health drain"
+    ]
+}

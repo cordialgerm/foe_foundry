@@ -1,0 +1,53 @@
+{
+    "name": "Execrable Shrub",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 40,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "10 feet burrow and 10 feet walk",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "shrub",
+        "healer",
+        "stealth"
+    ],
+    "adjectives": [
+        "execrable",
+        "evil",
+        "manipulative"
+    ],
+    "description": "The Execrable Shrub is a Medium-sized fiend resembling a twisted, malevolent plant, exhibiting vibrant colors and unusual appendages reminiscent of claws. Its form is both menacing and deceitful, blending into environments where it can ambush unsuspecting creatures.",
+    "memorable": "Its ability to heal when enemies fall and communicate telepathically with other evil beings makes it a strategic threat in combat.",
+    "goals": "To inflict pain and chaos through manipulation and ambush tactics.",
+    "relations": "Often found in the company of other evil-aligned fiends and creatures.",
+    "environment": "Dark, foreboding forests or areas where evil thrives.",
+    "strengths": "Immunity to fire damage and ability to heal from the demise of nearby creatures enhance its survivability.",
+    "weaknesses": "Limited mobility with movement only at 10 feet per turn.",
+    "attacks": "Burning Slash delivers slashing damage combined with fire for added harm.",
+    "most_powerful_ability": "Healed by Blood allows it to regain health whenever a creature nearby is slain.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 60 feet, allowing it to detect nearby creatures through vibrations.",
+    "skills": "Excellent perception with a +4 modifier enables it to easily notice threats.",
+    "additional_information": [
+        "Can generate smoke clouds to obscure vision in combat.",
+        "Communicates through images and emotions rather than words with evil-aligned beings.",
+        "Can sense the alignment of creatures around it.",
+        "Combines offensive capabilities with unique defensive utilities.",
+        "Limited mobility could be exploited by agile enemies."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "evil fiend that heals itself",
+        "plant-like fiend with healing abilities",
+        "shrub fiend that creates smoke clouds",
+        "neutral evil shrub that senses alignments",
+        "ambush monster with blood healing ability"
+    ]
+}

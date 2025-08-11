@@ -1,0 +1,25 @@
+{
+    "name": "Alkonost",
+    "queries": [
+        {
+            "query": "small flying creature that uses lightning and wind",
+            "variant": "little flying monster that uses winds and lightning"
+        },
+        {
+            "query": "creature with immunity to wind and deals extra lightning damage",
+            "variant": "monster that is immune to winds and has bonus lightning damage"
+        },
+        {
+            "query": "small monstrosity with a charm ability and high Dexterity",
+            "variant": "small monster that charms and has good Dexterity"
+        },
+        {
+            "query": "lightning-themed monster that manipulates the wind",
+            "variant": "monster that deals lightning damage and controls wind"
+        },
+        {
+            "query": "Alkonost abilities related to movement and weather",
+            "variant": "Alkonost skills linked to weather and mobility"
+        }
+    ]
+}

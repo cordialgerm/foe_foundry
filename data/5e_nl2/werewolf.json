@@ -1,0 +1,58 @@
+{
+    "name": "Werewolf (Lycanthrope)",
+    "creature_type": "Humanoid",
+    "creature_subtype": [
+        "human",
+        "lycanthrope",
+        "shapechanger"
+    ],
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 11,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 ft. walking speed, 40 ft. in wolf form",
+    "role": "Skirmisher",
+    "tags": [
+        "lycanthrope",
+        "shapechanger",
+        "werewolf"
+    ],
+    "adjectives": [
+        "ferocious",
+        "savage",
+        "bloodthirsty",
+        "cunning"
+    ],
+    "description": "A Medium-sized humanoid cursed to transform into a wolf or wolf-hybrid form, characterized by heightened senses, sharp claws, and fangs.",
+    "memorable": "Known for their bloodlust, ability to transform, and the curse of lycanthropy they inflict.",
+    "goals": "To hunt and prey on humans and animals as part of a pack.",
+    "relations": "Often encountered with other lycanthropes or in packs, hunting together.",
+    "environment": "Typically found in forests or regions where they can hunt effectively.",
+    "strengths": "Immune to damage from nonmagical attacks and non-silvered weapons, proficient in Stealth and has Pack Tactics for enhanced combat.",
+    "weaknesses": "Relatively low Armor Class in humanoid form, making it susceptible to focused attacks.",
+    "attacks": "Can perform Multiattack with either bites or claws, dealing significant damage especially to humanoid targets with the risk of lycanthropy.",
+    "most_powerful_ability": "Can inflict lycanthropy through their bite, potentially creating more werewolves.",
+    "equipment": "In humanoid or hybrid form, wields a greatclub in addition to sharp claws and a deadly bite.",
+    "senses": "Gains advantage on perception checks that rely on hearing or smell due to Keen Hearing and Smell.",
+    "skills": "Possesses good Stealth skills, making it adept at moving undetected.",
+    "additional_information": [
+        "Can shapeshift between humanoid and wolf forms at will.",
+        "Pack Tactics allows for advantage on attacks against targets near allies.",
+        "Bloodied Werewolf gains a frenzied bite attack if reduced to half hit points.",
+        "Cannot speak while in wolf form, limiting its communication.",
+        "Lengthy lore around werewolves and their curse in various cultures."
+    ],
+    "damage_types": [
+        "none"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "savage wolf-like monster that transforms",
+        "bloodthirsty creature that spreads curses",
+        "monster that hunts in packs and bites",
+        "ferocious beast with heightened senses",
+        "shapechanging humanoid that fights with claws"
+    ]
+}
