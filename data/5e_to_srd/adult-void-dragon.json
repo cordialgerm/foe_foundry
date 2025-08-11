@@ -1,0 +1,11 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge, chaotic dragons with formidable presence and breath weapons, though the Void Dragon has unique void and cold-themed abilities."
+  },
+  "Adult White Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares cold damage and a fearsome, icy thematic presence similar to the Void Dragon's chill and cold damage."
+  },
+  "monster_key": "adult-void-dragon"
+}

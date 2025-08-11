@@ -1,0 +1,12 @@
+{
+  "Tosculi Jeweled Drone": {},
+  "Drow": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, cunning, and tactical humanoid with darkvision and poison attacks, similar to drow traits."
+  },
+  "Stirge": {
+    "relation": "conceptually_similar",
+    "explanation": "A small flying creature that uses blood-related attacks and has a tactical, mobile nature."
+  },
+  "monster_key": "tosculi-jeweled-drone"
+}

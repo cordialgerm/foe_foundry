@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish creatures with a malevolent nature and resilience to magic, fitting the fiend archetype."
+  },
+  "Vrock": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiend type and a horror-themed design with agility and deadly attacks."
+  },
+  "monster_key": "soul-eater"
+}

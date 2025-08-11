@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A large, durable humanoid soldier with tactical combat skills and spear attacks."
+  },
+  "monster_key": "soldier-squad"
+}

@@ -1,0 +1,7 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Fierstjerren is a medium undead that controls thralls and has necrotic abilities similar to a Wight."
+  },
+  "monster_key": "fierstjerren"
+}

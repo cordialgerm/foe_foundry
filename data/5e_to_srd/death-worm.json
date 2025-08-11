@@ -1,0 +1,11 @@
+{
+  "Purple Worm": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are burrowing worm-like monstrosities with powerful bite attacks."
+  },
+  "Giant Constrictor Snake": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares serpentine body and ambush predator traits, though lacks lightning and poison."
+  },
+  "monster_key": "death-worm"
+}

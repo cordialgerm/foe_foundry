@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge monstrosities with grappling abilities, poison traits, and aquatic or swampy habitats."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares acid immunity and corrosive acid damage, representing a dangerous ooze-like presence in similar environments."
+  },
+  "monster_key": "kirikari"
+}

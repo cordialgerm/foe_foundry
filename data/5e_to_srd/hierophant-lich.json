@@ -1,0 +1,11 @@
+{
+  "Lich": {
+    "relation": "almost_identical",
+    "explanation": "The Hierophant Lich is a powerful undead spellcaster with necromantic abilities, rejuvenation, and legendary resistance, closely matching the Lich."
+  },
+  "Mummy": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead spellcasters tied to ancient rituals and curses, though the Hierophant Lich is more focused on necromancy and manipulation."
+  },
+  "monster_key": "hierophant-lich"
+}

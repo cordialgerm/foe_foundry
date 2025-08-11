@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, lawful evil devils with formidable combat abilities and fiendish nature."
+  },
+  "Ice Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares cold damage and a fiendish devil nature with control over cold-themed powers."
+  },
+  "monster_key": "devil,-maelstrom"
+}

@@ -1,0 +1,7 @@
+{
+  "Derro": {
+    "relation": "almost_identical",
+    "explanation": "A small, insane Underdark humanoid with psychic abilities and cold resistance, closely matching the Derro's traits."
+  },
+  "monster_key": "derro,-voidwarped"
+}

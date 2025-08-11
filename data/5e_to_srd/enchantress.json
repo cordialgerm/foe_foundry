@@ -1,0 +1,11 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "A shadowy, charming humanoid spellcaster with sunlight sensitivity and teleportation abilities."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "A humanoid spellcaster focused on battlefield control and manipulation through magic."
+  },
+  "monster_key": "enchantress"
+}

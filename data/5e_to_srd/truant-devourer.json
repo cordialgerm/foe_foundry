@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "almost_identical",
+    "explanation": "A powerful undead that uses life drain to reduce maximum hit points and can become invisible."
+  },
+  "Specter": {
+    "relation": "close_cousins",
+    "explanation": "An undead that drains life and has incorporeal, stealthy traits similar to the Truant Devourer."
+  },
+  "monster_key": "truant-devourer"
+}

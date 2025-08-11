@@ -1,0 +1,11 @@
+{
+  "Basilisk": {
+    "relation": "conceptually_similar",
+    "explanation": "The Coralfish shares the concept of a petrifying bite with the Basilisk, though it is smaller and aquatic."
+  },
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are aquatic monstrosities with good swimming abilities and ambush tactics."
+  },
+  "monster_key": "coralfish"
+}

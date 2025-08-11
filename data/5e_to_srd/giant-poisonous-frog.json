@@ -1,0 +1,11 @@
+{
+  "Giant Poisonous Snake": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, poisonous reptiles/amphibians with grappling and poison abilities."
+  },
+  "Giant Frog": {
+    "relation": "almost_identical",
+    "explanation": "A large amphibious frog with grappling and swallowing abilities, matching the core concept closely."
+  },
+  "monster_key": "giant-poisonous-frog"
+}

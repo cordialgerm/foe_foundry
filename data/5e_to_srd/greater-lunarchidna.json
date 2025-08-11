@@ -1,0 +1,11 @@
+{
+  "Ettercap": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium aberrations that use webs and ambush tactics in dark environments."
+  },
+  "Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a web-using, stealthy ambusher with climbing ability."
+  },
+  "monster_key": "greater-lunarchidna"
+}

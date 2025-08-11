@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small plant creatures with a connection to their environment and potential interaction with humanoids."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures with durable forms and combat capabilities, though the Shambling Mound is much larger and less symbiotic."
+  },
+  "monster_key": "rafflesian"
+}

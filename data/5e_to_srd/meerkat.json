@@ -1,0 +1,7 @@
+{
+  "Badger": {
+    "relation": "close_cousins",
+    "explanation": "A small, nimble burrowing beast with low combat ability and keen senses, similar to a Badger."
+  },
+  "monster_key": "meerkat"
+}

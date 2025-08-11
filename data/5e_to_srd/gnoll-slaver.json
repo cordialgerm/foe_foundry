@@ -1,0 +1,7 @@
+{
+  "Gnoll": {
+    "relation": "almost_identical",
+    "explanation": "The Gnoll Slaver is a brutal, cunning gnoll variant with similar combat style and fear tactics."
+  },
+  "monster_key": "gnoll-slaver"
+}

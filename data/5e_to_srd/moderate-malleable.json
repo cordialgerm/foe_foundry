@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, amorphous aberrations with multiple mouths and chaotic, fleshy forms."
+  },
+  "Otyugh": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the aberration type and a grotesque, fleshy body with tentacle-like appendages."
+  },
+  "monster_key": "moderate-malleable"
+}

@@ -1,0 +1,15 @@
+{
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "A small, flying fiend with shapechanging and spellcasting abilities similar to the Imp."
+  },
+  "Quasit": {
+    "relation": "close_cousins",
+    "explanation": "A small fiend with flying, shapechanging, and deceptive abilities akin to the Quasit."
+  },
+  "Vampire Spawn": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the bloodsucking and charm aspects, though mechanically different and larger."
+  },
+  "monster_key": "alabroza,-bloodfiend"
+}

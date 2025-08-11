@@ -1,0 +1,11 @@
+{
+  "Dust Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fey-like creatures that cause disruptive elemental or environmental effects around them."
+  },
+  "Mimic": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of mechanical disruption and interaction with objects, causing chaos in the environment."
+  },
+  "monster_key": "bilge-bosun-gremlin"
+}

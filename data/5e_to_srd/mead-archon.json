@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium celestial beings with strong support and spellcasting roles."
+  },
+  "Deva": {
+    "relation": "close_cousins",
+    "explanation": "The Mead Archon shares the celestial type and supportive spellcasting nature with the Deva."
+  },
+  "monster_key": "mead-archon"
+}

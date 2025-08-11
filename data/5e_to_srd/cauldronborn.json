@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are small constructs animated by magic, with the Cauldronborn having unique potion-related abilities."
+  },
+  "monster_key": "cauldronborn"
+}

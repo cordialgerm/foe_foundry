@@ -1,0 +1,11 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Yobbo is a small, sneaky humanoid ambusher similar in size and stealth to a Goblin."
+  },
+  "Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "The Yobbo's explosive death releasing a random spell conceptually resembles elemental mephits' chaotic magical nature."
+  },
+  "monster_key": "yobbo"
+}

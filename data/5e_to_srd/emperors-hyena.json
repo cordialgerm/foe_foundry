@@ -1,0 +1,15 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "An undead creature with pack tactics and a poisonous stench similar to a Ghoul."
+  },
+  "Ghast": {
+    "relation": "close_cousins",
+    "explanation": "A more powerful undead hyena-like creature with pack tactics and stench, akin to a Ghast."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "An undead with necrotic damage and a malevolent presence, sharing thematic elements with a Wight."
+  },
+  "monster_key": "emperors-hyena"
+}

@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "The Warlord's Ghost is a haunting undead apparition with incorporeal movement and a baleful wail similar to the Ghost."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are vengeful undead warriors with a strong presence and a desire for revenge."
+  },
+  "monster_key": "warlords-ghost"
+}

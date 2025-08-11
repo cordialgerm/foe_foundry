@@ -1,0 +1,7 @@
+{
+  "Flying Sword": {
+    "relation": "almost_identical",
+    "explanation": "A small construct resembling a sword that hovers and attacks autonomously, matching the Flying Sword exactly."
+  },
+  "monster_key": "flying-sword"
+}

@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Brine Hag is a fey hag with spellcasting and manipulative abilities similar to a Green Hag, but with aquatic and toxic traits."
+  },
+  "Sea Hag": {
+    "relation": "almost_identical",
+    "explanation": "The Brine Hag closely resembles a Sea Hag with its aquatic nature, toxic presence, spellcasting, and control over aquatic creatures."
+  },
+  "monster_key": "brine-hag"
+}

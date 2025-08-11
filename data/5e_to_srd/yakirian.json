@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Yakirian is a strong, resilient humanoid combatant with average armor and multiattack similar to a Veteran."
+  },
+  "Ogre": {
+    "relation": "conceptually_similar",
+    "explanation": "The Yakirian's notable physical strength and piercing gore attack conceptually resemble an Ogre's brute force."
+  },
+  "monster_key": "yakirian"
+}

@@ -1,0 +1,7 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Sunflower Sprite is a small, radiant fey similar in size and nature to the Sprite, sharing agility and a connection to nature."
+  },
+  "monster_key": "sunflower-sprite"
+}

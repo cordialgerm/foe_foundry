@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fire-based creatures with control over fire and immunity to fire damage."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey guardians of the forest with nature-related abilities."
+  },
+  "monster_key": "ashen-custodian"
+}

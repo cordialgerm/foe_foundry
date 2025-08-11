@@ -1,0 +1,11 @@
+{
+  "Flying Sword": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, flying constructs designed for combat and agility."
+  },
+  "Magma Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a small flying creature that uses fire attacks and leaves harmful fumes."
+  },
+  "monster_key": "robot-drone"
+}

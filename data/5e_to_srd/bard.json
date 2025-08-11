@@ -1,0 +1,7 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Bard is a humanoid spellcaster with utility and control spells similar to a Mage, but with a focus on charisma and artistic expression."
+  },
+  "monster_key": "bard"
+}

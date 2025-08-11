@@ -1,0 +1,11 @@
+{
+  "Sphinx of Wonder": {
+    "relation": "conceptually_similar",
+    "explanation": "A tiny celestial creature with magical abilities and a protective nature."
+  },
+  "Deva": {
+    "relation": "close_cousins",
+    "explanation": "Aviere is a small celestial protector and healer, similar in role to a Deva but much smaller and less powerful."
+  },
+  "monster_key": "aviere"
+}

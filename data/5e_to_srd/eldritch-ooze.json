@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amorphous oozes that can split when damaged by certain types of attacks."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the maddening and psychic-like effects that incapacitate or confuse intelligent creatures."
+  },
+  "monster_key": "eldritch-ooze"
+}

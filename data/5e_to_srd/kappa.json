@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fey creatures associated with nature and have a trickster aspect."
+  },
+  "Merfolk": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic humanoid creatures with ties to water environments."
+  },
+  "monster_key": "kappa"
+}

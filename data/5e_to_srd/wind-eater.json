@@ -1,0 +1,15 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are stealthy undead creatures that manipulate darkness and shadows to ambush foes."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Wind Eater shares the intangible, eerie nature and undead traits with the Wraith."
+  },
+  "Ghost": {
+    "relation": "mechanically_similar",
+    "explanation": "Both have invisibility and incorporeal movement, using stealth and fear tactics."
+  },
+  "monster_key": "wind-eater"
+}

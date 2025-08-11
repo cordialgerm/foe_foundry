@@ -1,0 +1,15 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "A medium undead that raises and commands lesser undead, similar to a Wight's ability to create spawn."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of disease and paralysis effects common to ghouls."
+  },
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "An undead that inflicts paralysis and disease-like effects, akin to a Ghast's debilitating presence."
+  },
+  "monster_key": "wormhearted-suffragan"
+}

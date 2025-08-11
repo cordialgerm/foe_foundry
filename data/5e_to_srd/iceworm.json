@@ -1,0 +1,11 @@
+{
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small cold-themed creatures with icy abilities and a connection to cold environments."
+  },
+  "Giant Octopus": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares amphibious nature and swimming with tentacle-like movement, similar to the Iceworm's burrowing and swimming."
+  },
+  "monster_key": "iceworm"
+}

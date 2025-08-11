@@ -1,0 +1,15 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ethereal shifting ability and canine-like agility."
+  },
+  "Panther": {
+    "relation": "conceptually_similar",
+    "explanation": "Similar feline traits, stealth, and melee ambush tactics."
+  },
+  "Gibbering Mouther": {
+    "relation": "close_cousins",
+    "explanation": "Both are aberrations with unusual and unsettling features."
+  },
+  "monster_key": "mngwa"
+}

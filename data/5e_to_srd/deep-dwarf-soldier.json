@@ -1,0 +1,7 @@
+{
+  "Duergar": {
+    "relation": "almost_identical",
+    "explanation": "A subterranean dwarf soldier with magic abilities like Enlarge and Invisibility, tactical combat style, and resistance to charm effects closely matches the Duergar."
+  },
+  "monster_key": "deep-dwarf-soldier"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are large mechanical constructs designed for combat and battlefield control."
+  },
+  "Fire Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to deal fire damage in an area, similar to the Clockwork Myrmidon's Alchemical Flame Jet."
+  },
+  "monster_key": "clockwork-myrmidon"
+}

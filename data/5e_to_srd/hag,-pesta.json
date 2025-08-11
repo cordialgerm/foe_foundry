@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium Fey hags with a connection to nature and malevolent magic, though the Pesta focuses on disease and poison."
+  },
+  "Swarm of Rats": {
+    "relation": "mechanically_similar",
+    "explanation": "The Pesta summons rat swarms to spread disease, similar to the Swarm of Rats' ability to overwhelm foes."
+  },
+  "monster_key": "hag,-pesta"
+}

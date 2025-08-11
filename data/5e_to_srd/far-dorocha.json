@@ -1,0 +1,15 @@
+{
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy creatures associated with darkness and stealth."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures connected to natural environments and manipulation."
+  },
+  "Drow": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares stealth, charm, and poison attacks along with spellcasting abilities."
+  },
+  "monster_key": "far-dorocha"
+}

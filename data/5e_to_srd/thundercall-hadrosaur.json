@@ -1,0 +1,11 @@
+{
+  "Tyrannosaurus Rex": {
+    "relation": "close_cousins",
+    "explanation": "The Thundercall Hadrosaur is a massive dinosaur with powerful melee attacks similar to the Tyrannosaurus Rex."
+  },
+  "Thunder Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the thunder and thunderous attack theme with the Thunder Giant."
+  },
+  "monster_key": "thundercall-hadrosaur"
+}

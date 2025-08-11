@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures connected to nature with magical abilities and forest environments."
+  },
+  "Ranger": {
+    "relation": "conceptually_similar",
+    "explanation": "The Brownie Beastrider's role as an animal commander and supportive skirmisher is conceptually similar to a Ranger's bond with animals and combat style."
+  },
+  "monster_key": "brownie-beastrider"
+}

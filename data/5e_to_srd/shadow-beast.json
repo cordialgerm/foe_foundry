@@ -1,0 +1,7 @@
+{
+  "Shadow": {
+    "relation": "almost_identical",
+    "explanation": "A shadowy, fear-inducing undead creature with incorporeal movement and necrotic damage, closely matching the Shadow Beast's traits."
+  },
+  "monster_key": "shadow-beast"
+}

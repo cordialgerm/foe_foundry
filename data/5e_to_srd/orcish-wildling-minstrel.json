@@ -1,0 +1,11 @@
+{
+  "Bard": {
+    "relation": "almost_identical",
+    "explanation": "An orcish bard-like spellcaster who supports allies and manipulates foes with charm and music."
+  },
+  "Orc": {
+    "relation": "close_cousins",
+    "explanation": "An orc variant with spellcasting and musical abilities, related to typical orc tribal members."
+  },
+  "monster_key": "orcish-wildling-minstrel"
+}

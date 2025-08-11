@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the SRD Ghost closely in abilities, traits, and thematic elements."
+  },
+  "monster_key": "ghost"
+}

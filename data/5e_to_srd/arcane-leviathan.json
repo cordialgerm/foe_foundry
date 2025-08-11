@@ -1,0 +1,15 @@
+{
+  "Iron Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are large constructs designed as powerful guardians with high durability."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares an aquatic nature and fluid movement, though the Arcane Leviathan is a construct."
+  },
+  "Fire Giant": {
+    "relation": "mechanically_similar",
+    "explanation": "Both have multiattack capabilities and deal elemental damage, with the Leviathan using lightning."
+  },
+  "monster_key": "arcane-leviathan"
+}

@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Tzepharion is a large, cunning fiendish devil with melee combat focus and infernal traits similar to a Barbed Devil."
+  },
+  "Hell Hound": {
+    "relation": "mechanically_similar",
+    "explanation": "Tzepharion's ability to incite rage in beasts and use pack tactics resembles the aggressive nature and pack hunting of Hell Hounds."
+  },
+  "monster_key": "tzepharion"
+}

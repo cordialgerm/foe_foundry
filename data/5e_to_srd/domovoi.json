@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey guardians connected to natural or domestic spaces with spellcasting abilities."
+  },
+  "Invisible Stalker": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares invisibility and teleportation abilities used for ambush and repositioning."
+  },
+  "monster_key": "domovoi"
+}

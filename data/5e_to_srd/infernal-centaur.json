@@ -1,0 +1,11 @@
+{
+  "Hell Hound": {
+    "relation": "close_cousins",
+    "explanation": "Shares a fiendish nature, fire immunity, and leadership over hell hounds."
+  },
+  "Centaur": {
+    "relation": "almost_identical",
+    "explanation": "A centaur-like creature with similar size and combat style using daggers."
+  },
+  "monster_key": "infernal-centaur"
+}

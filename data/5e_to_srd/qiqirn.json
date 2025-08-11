@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, agile creatures known for stealth and keen senses, with fear-inducing abilities."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares necrotic damage and fear effects through its attacks."
+  },
+  "monster_key": "qiqirn"
+}

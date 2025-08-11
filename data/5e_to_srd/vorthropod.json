@@ -1,0 +1,11 @@
+{
+  "Salamander": {
+    "relation": "close_cousins",
+    "explanation": "Both are fire-aligned monstrosities adapted to volcanic environments with fiery attacks."
+  },
+  "Magma Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elemental fire and magma theme and ambush tactics in volcanic terrain."
+  },
+  "monster_key": "vorthropod"
+}

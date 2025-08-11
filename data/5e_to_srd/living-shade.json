@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy, elusive creatures that thrive in darkness and use stealth to ambush foes."
+  },
+  "Darkmantle": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to blend into shadows and ambush prey in dimly lit environments."
+  },
+  "monster_key": "living-shade"
+}

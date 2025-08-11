@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are tiny plant-like creatures with manipulative and debilitating effects, though the Sinstar has stronger psychic and legendary abilities."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures that control and manipulate their environment, but the Sinstar is much smaller and more psychic-focused."
+  },
+  "monster_key": "sinstar"
+}

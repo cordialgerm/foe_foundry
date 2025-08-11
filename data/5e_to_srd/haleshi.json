@@ -1,0 +1,11 @@
+{
+  "Nymph": {
+    "relation": "conceptually_similar",
+    "explanation": "A charming and charismatic fey creature with spellcasting and social manipulation abilities."
+  },
+  "Water Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "An amphibious creature with strong aquatic movement and defensive abilities related to water."
+  },
+  "monster_key": "haleshi"
+}

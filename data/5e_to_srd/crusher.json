@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs designed for combat with durable armor and melee attacks."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, powerful construct with crushing melee attacks and high durability."
+  },
+  "monster_key": "crusher"
+}

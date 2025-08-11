@@ -1,0 +1,11 @@
+{
+  "Swarm of Ravens": {
+    "relation": "conceptually_similar",
+    "explanation": "A large swarm of birds with an enchanting and distracting presence similar to the Lymarien Swarm."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures associated with forests and possess enchanting and crowd control abilities."
+  },
+  "monster_key": "lymarien-swarm"
+}

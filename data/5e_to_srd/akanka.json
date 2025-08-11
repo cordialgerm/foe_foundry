@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fey creatures associated with forested or mystical areas and share a connection to nature and magic."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of deception and ambush tactics, using darkness and concealment to confuse foes."
+  },
+  "Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "The Akanka's web-related abilities and mobility resemble the Spider's natural traits and ambush capabilities."
+  },
+  "monster_key": "akanka"
+}

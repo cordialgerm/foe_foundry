@@ -1,0 +1,7 @@
+{
+  "Minotaur": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Minotaur closely matches the SRD Minotaur in appearance, abilities, and role as a powerful melee combatant with a bull head."
+  },
+  "monster_key": "minotaur"
+}

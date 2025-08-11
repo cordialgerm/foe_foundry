@@ -1,0 +1,15 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs serving as guardians with strong physical attacks and resistances."
+  },
+  "Stone Golem": {
+    "relation": "close_cousins",
+    "explanation": "Similar large magical constructs with durable bodies and powerful melee attacks."
+  },
+  "Iron Golem": {
+    "relation": "almost_identical",
+    "explanation": "The Bronze Golem closely resembles the Iron Golem as a large, magical construct with strong resistances and a fiery internal feature."
+  },
+  "monster_key": "bronze-golem"
+}

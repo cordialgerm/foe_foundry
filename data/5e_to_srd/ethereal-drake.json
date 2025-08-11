@@ -1,0 +1,11 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large, chaotic dragon with natural armor and multiattack including bite and claws, similar in role and size."
+  },
+  "Young Black Dragon": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the dragon type and multiattack with bite and claw, though the Ethereal Drake adds ethereal and force damage abilities."
+  },
+  "monster_key": "ethereal-drake"
+}

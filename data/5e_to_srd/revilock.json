@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "The Revilock is a stealthy humanoid ambusher with similar skills and tactics to the Scout."
+  },
+  "Drow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cunning, stealthy humanoids with psionic or magical abilities and excel in ambush tactics."
+  },
+  "monster_key": "revilock"
+}

@@ -1,0 +1,11 @@
+{
+  "Duergar": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, cunning, and agile humanoids adapted to the Underdark environment."
+  },
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "A small, agile humanoid skirmisher specialized in ambush and scouting, matching the Derro Explorer's role and abilities."
+  },
+  "monster_key": "derro-explorer"
+}

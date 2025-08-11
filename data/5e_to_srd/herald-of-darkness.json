@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large fiends with strong physical presence and combat abilities, embodying malevolent infernal power."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the shadowy, necrotic theme and paralysis effects, representing a dark, malevolent force."
+  },
+  "monster_key": "herald-of-darkness"
+}

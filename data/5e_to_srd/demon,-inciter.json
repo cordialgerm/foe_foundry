@@ -1,0 +1,11 @@
+{
+  "Dretch": {
+    "relation": "close_cousins",
+    "explanation": "Both are low-CR chaotic evil demons with flight and a focus on causing disruption and chaos."
+  },
+  "Quasit": {
+    "relation": "close_cousins",
+    "explanation": "Like the Inciter, the Quasit is a small, elusive demon with invisibility and manipulative abilities."
+  },
+  "monster_key": "demon,-inciter"
+}

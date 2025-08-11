@@ -1,0 +1,7 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, agile fey creatures with magic and stealth abilities."
+  },
+  "monster_key": "brownie"
+}

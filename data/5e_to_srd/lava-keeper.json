@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Lava Keeper is a huge elemental embodying fire and earth, similar to a Fire Elemental but with added earth and volcanic traits."
+  },
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "It shares earth elemental traits like burrowing and terrain manipulation, making it closely related to an Earth Elemental."
+  },
+  "monster_key": "lava-keeper"
+}

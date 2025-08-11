@@ -1,0 +1,11 @@
+{
+  "Treant": {
+    "relation": "close_cousins",
+    "explanation": "The Dragonleaf Tree is a large plant guardian similar to a Treant, both serving as protectors with strong physical attacks."
+  },
+  "Adult Black Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "The Dragonleaf Tree has elemental affinities and loyalty to a dragon, conceptually linking it to an Adult Black Dragon's elemental nature."
+  },
+  "monster_key": "dragonleaf-tree"
+}

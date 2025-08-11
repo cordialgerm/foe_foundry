@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "A small fey creature associated with magical flora and charm abilities."
+  },
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "A small, charming fey with abilities to manipulate and influence others."
+  },
+  "monster_key": "fragrant-one"
+}

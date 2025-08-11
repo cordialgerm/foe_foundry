@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with a grotesque, amorphous form and psychological effects on prey."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both use camouflage and ambush tactics, blending into their environment to surprise prey."
+  },
+  "monster_key": "sand-ray"
+}

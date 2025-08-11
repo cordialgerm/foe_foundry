@@ -1,0 +1,15 @@
+{
+  "Salamander": {
+    "relation": "conceptually_similar",
+    "explanation": "Zalikum's heated body and fire damage relate to the Salamander's fiery nature."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Zalikum's superheated sand and fire damage resemble the Fire Elemental's fiery form."
+  },
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Zalikum is a huge construct with high resilience similar to the Clay Golem."
+  },
+  "monster_key": "zalikum"
+}

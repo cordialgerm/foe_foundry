@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large elemental creatures with strong ties to water and aquatic environments."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a toxic, amorphous nature and thrives in filthy, polluted environments."
+  },
+  "monster_key": "sewer-weird"
+}

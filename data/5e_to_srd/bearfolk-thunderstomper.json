@@ -1,0 +1,15 @@
+{
+  "Berserker": {
+    "relation": "close_cousins",
+    "explanation": "Shares the bruiser melee combatant role and physical ferocity similar to a Berserker."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "Functions as a spellcaster with battlefield control spells like Compulsion and Hypnotic Pattern."
+  },
+  "Bear": {
+    "relation": "conceptually_similar",
+    "explanation": "The Bearfolk's physicality and thematic bear traits conceptually align with a Bear."
+  },
+  "monster_key": "bearfolk-thunderstomper"
+}

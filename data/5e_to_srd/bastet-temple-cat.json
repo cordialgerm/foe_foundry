@@ -1,0 +1,11 @@
+{
+  "Cat": {
+    "relation": "close_cousins",
+    "explanation": "The Bastet Temple Cat is a small, agile feline similar to a Cat but with added magical and charming abilities."
+  },
+  "Acolyte": {
+    "relation": "conceptually_similar",
+    "explanation": "It serves as a supportive spellcasting companion like an Acolyte, assisting clerics and paladins with spells."
+  },
+  "monster_key": "bastet-temple-cat"
+}

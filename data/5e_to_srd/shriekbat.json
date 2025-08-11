@@ -1,0 +1,11 @@
+{
+  "Giant Bat": {
+    "relation": "close_cousins",
+    "explanation": "A huge flying bat-like creature with echolocation and grappling talons similar to a Giant Bat."
+  },
+  "Harpy": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a flying creature using sonic attacks and grappling abilities."
+  },
+  "monster_key": "shriekbat"
+}

@@ -1,0 +1,11 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "The Pattern Dancer shares a shadowy, stealthy, and spellcasting humanoid nature with the Drow, including sensitivity to bright light and use of deception."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "The Pattern Dancer is a 5th-level spellcaster with illusion and enchantment spells similar to a Mage's spellcasting abilities."
+  },
+  "monster_key": "pattern-dancer"
+}

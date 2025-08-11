@@ -1,0 +1,11 @@
+{
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elusive, flying creatures with stealth and invisibility, though the Moon Nymph uses psychic and radiant magic."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "The Moon Nymph shares the ghost's incorporeal, elusive nature and ability to manipulate foes psychologically."
+  },
+  "monster_key": "moon-nymph"
+}

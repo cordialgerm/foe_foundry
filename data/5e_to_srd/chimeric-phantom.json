@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "A ghostly, flying undead that passes through objects and induces fear with necrotic attacks."
+  },
+  "monster_key": "chimeric-phantom"
+}

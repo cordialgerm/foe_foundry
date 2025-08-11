@@ -1,0 +1,7 @@
+{
+  "Lizardfolk": {
+    "relation": "almost_identical",
+    "explanation": "A lizard-like humanoid with swimming ability and combat skills using trident and shield."
+  },
+  "monster_key": "lizardfolk-chosen-one"
+}

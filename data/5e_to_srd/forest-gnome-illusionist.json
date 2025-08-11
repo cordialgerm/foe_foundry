@@ -1,0 +1,7 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "A spellcasting humanoid focused on illusion and battlefield control, similar to a Mage."
+  },
+  "monster_key": "forest-gnome-illusionist"
+}

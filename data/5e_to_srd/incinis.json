@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Incinis is a large fire and magma elemental with fire immunity and fiery attacks, similar to a Fire Elemental but with added magma-themed abilities."
+  },
+  "Magma Mephit": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the magma and fire theme and continuous fire damage abilities, though Incinis is larger and more powerful."
+  },
+  "monster_key": "incinis"
+}

@@ -1,0 +1,7 @@
+{
+  "Treant": {
+    "relation": "close_cousins",
+    "explanation": "The Oaken Sentinel is a large plant guardian resembling a tree with grappling branches, similar to a Treant."
+  },
+  "monster_key": "oaken-sentinel"
+}

@@ -1,0 +1,11 @@
+{
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "The Grave Behemoth is a huge undead that summons and commands zombies, sharing the undead and minion-creating traits."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large undead creatures with necrotic abilities and a terrifying presence on the battlefield."
+  },
+  "monster_key": "grave-behemoth"
+}

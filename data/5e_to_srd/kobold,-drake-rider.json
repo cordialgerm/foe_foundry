@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small humanoid kobold with tactical combat skills and a drake mount closely matches the Kobold archetype."
+  },
+  "monster_key": "kobold,-drake-rider"
+}

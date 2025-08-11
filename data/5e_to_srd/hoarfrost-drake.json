@@ -1,0 +1,11 @@
+{
+  "White Dragon Wyrmling": {
+    "relation": "close_cousins",
+    "explanation": "A medium-sized dragon with icy breath and cold immunity, similar to the Hoarfrost Drake's cold theme and size."
+  },
+  "Young White Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the icy environment and cold breath concept, though the Hoarfrost Drake is less powerful and has unique abilities like Cloud of Riming Ice."
+  },
+  "monster_key": "hoarfrost-drake"
+}

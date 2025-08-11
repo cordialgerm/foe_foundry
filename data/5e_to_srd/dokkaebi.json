@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are medium fey creatures associated with enchanted forests and have elusive, playful natures."
+  },
+  "Sprite": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the trickster and mischievous fey archetype with invisibility and elusive behavior."
+  },
+  "monster_key": "dokkaebi"
+}

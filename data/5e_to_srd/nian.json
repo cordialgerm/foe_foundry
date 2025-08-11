@@ -1,0 +1,11 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "The Nian shares a large, powerful aquatic and land-capable predator role with the Giant Crocodile."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Nian's ability to create magical darkness and silence conceptually aligns with the Shadow's dark, insubstantial nature."
+  },
+  "monster_key": "nian"
+}

@@ -1,0 +1,7 @@
+{
+  "Troglodyte": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Troglodyte matches the SRD Troglodyte closely in abilities, appearance, and role as a stealthy, poisonous humanoid ambusher."
+  },
+  "monster_key": "troglodyte"
+}

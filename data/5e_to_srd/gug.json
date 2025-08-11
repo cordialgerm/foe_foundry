@@ -1,0 +1,11 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "The Gug is a massive, brutish giant with grappling abilities and a menacing presence similar to an Ogre but more powerful."
+  },
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Gug shares the giant type, huge size, brute strength, and chaotic destructive nature with Hill Giants."
+  },
+  "monster_key": "gug"
+}

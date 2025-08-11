@@ -1,0 +1,11 @@
+{
+  "Giant Wolf Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, agile predatory monstrosities with climbing and ambush abilities."
+  },
+  "Blood Hawk": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the predatory and flying aspects with keen senses for hunting prey."
+  },
+  "monster_key": "anophiloi"
+}

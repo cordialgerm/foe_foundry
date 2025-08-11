@@ -1,0 +1,7 @@
+{
+  "Mimic": {
+    "relation": "almost_identical",
+    "explanation": "A tiny, amorphous creature that disguises itself as objects and ambushes prey, similar to a Mimic with added map-creating flavor and flight."
+  },
+  "monster_key": "map-mimic"
+}

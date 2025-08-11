@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "The Chill Haunt is a medium incorporeal undead with cold and necrotic damage, similar to a Ghost's ethereal nature and life-draining abilities."
+  },
+  "monster_key": "chill-haunt"
+}

@@ -1,0 +1,15 @@
+{
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead creatures that use manipulation and illusion to cause chaos and confusion."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Willowhaunt is a large undead with necrotic damage and immunities, similar to the Wraith's undead nature and necrotic abilities."
+  },
+  "Treant": {
+    "relation": "conceptually_similar",
+    "explanation": "The Willowhaunt resembles a living willow tree, similar to a Treant's tree-like form, though the Treant is not undead."
+  },
+  "monster_key": "willowhaunt"
+}

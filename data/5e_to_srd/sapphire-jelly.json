@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, gelatinous oozes that engulf and restrain foes, sharing the ooze creature type and similar combat roles."
+  },
+  "Gray Ooze": {
+    "relation": "close_cousins",
+    "explanation": "Shares the ooze type and gelatinous form, with abilities to move through narrow spaces and corrode or damage foes."
+  },
+  "monster_key": "sapphire-jelly"
+}

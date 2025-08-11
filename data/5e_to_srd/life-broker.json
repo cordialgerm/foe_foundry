@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium Fey creatures associated with life and nature, though the Life Broker has a necrotic and manipulative twist."
+  },
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "The Life Broker shares the theme of draining life energy and necrotic damage with the Banshee, an undead spirit."
+  },
+  "monster_key": "life-broker"
+}

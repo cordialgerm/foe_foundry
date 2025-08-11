@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A battle-hardened humanoid warrior with multiple attacks and combat skills similar to a Veteran."
+  },
+  "Knight": {
+    "relation": "close_cousins",
+    "explanation": "A heavily armored warrior with high AC, multiple attacks, and the ability to inspire and protect allies, akin to a Knight."
+  },
+  "monster_key": "mountain-dwarf-lord"
+}

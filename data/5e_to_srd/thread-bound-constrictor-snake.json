@@ -1,0 +1,11 @@
+{
+  "Giant Constrictor Snake": {
+    "relation": "close_cousins",
+    "explanation": "A huge snake that constricts and grapples foes, sharing the snake-like form and grappling ability."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "A construct guardian animated by magic, similar in being a magical construct protector."
+  },
+  "monster_key": "thread-bound-constrictor-snake"
+}

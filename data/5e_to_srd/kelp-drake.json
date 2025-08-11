@@ -1,0 +1,11 @@
+{
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aquatic dragons with powerful water-based attacks and a presence in coastal or underwater environments."
+  },
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Kelp Drake shares draconic traits and greenish coloration with the Young Green Dragon, including cunning and ambush tactics."
+  },
+  "monster_key": "kelp-drake"
+}

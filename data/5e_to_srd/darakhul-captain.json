@@ -1,0 +1,15 @@
+{
+  "Ghast": {
+    "relation": "close_cousins",
+    "explanation": "The Darakhul Captain commands ghouls and has necrotic attacks similar to a Ghast."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "It leads and manipulates ghouls, sharing undead and necrotic traits with Ghouls."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "A tactical undead leader with abilities to reduce hit points and command undead, similar to a Wight."
+  },
+  "monster_key": "darakhul-captain"
+}

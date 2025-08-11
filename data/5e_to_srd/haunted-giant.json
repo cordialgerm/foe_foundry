@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Haunted Giant is a huge giant with similar physical traits and combat style to a Hill Giant but with added spiritual and chaotic elements."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "The Haunted Giant is accompanied by ghostly ancestral spirits, linking it conceptually to the Ghost's ethereal and spiritual nature."
+  },
+  "monster_key": "haunted-giant"
+}

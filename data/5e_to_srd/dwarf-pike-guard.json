@@ -1,0 +1,11 @@
+{
+  "Guard": {
+    "relation": "almost_identical",
+    "explanation": "A medium humanoid defender with armor and weaponry similar to a standard Guard."
+  },
+  "Bandit Captain": {
+    "relation": "conceptually_similar",
+    "explanation": "A tactical humanoid leader with combat skills, similar in role but different in alignment and equipment."
+  },
+  "monster_key": "dwarf-pike-guard"
+}

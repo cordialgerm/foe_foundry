@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant creatures that grapple foes and inhabit subterranean or swampy environments."
+  },
+  "monster_key": "cavelight-moss"
+}

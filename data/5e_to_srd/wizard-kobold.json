@@ -1,0 +1,11 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, cunning kobold with spellcasting abilities and Pack Tactics."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "A spellcaster with powerful magic and knowledge of arcane spells."
+  },
+  "monster_key": "wizard-kobold"
+}

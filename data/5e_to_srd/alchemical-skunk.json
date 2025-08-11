@@ -1,0 +1,12 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, elusive creatures with tactical battlefield roles and high agility."
+  },
+  "Alchemical Spray": {},
+  "Giant Weasel": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, agile mammal-like creature with stealth and quick attacks similar to a skunk."
+  },
+  "monster_key": "alchemical-skunk"
+}

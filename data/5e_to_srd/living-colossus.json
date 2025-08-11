@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs animated by magic, with the Living Colossus being a massive, powerful statue-like guardian."
+  },
+  "Stone Golem": {
+    "relation": "almost_identical",
+    "explanation": "The Living Colossus is a gargantuan construct resembling a mighty statue with high resilience and powerful slam attacks, closely matching the Stone Golem's nature."
+  },
+  "monster_key": "living-colossus"
+}

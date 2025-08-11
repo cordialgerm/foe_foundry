@@ -1,0 +1,11 @@
+{
+  "Swarm of Rats": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small beasts that occupy the same space and overwhelm foes with numbers."
+  },
+  "Cat": {
+    "relation": "conceptually_similar",
+    "explanation": "The Cats of Ulthar share the feline nature and agility of a Cat, but are much larger and operate as a swarm."
+  },
+  "monster_key": "cats-of-ulthar"
+}

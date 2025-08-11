@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "A small undead creature that frightens foes and attacks with claws and bites."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "An undead that uses fear and stealth, embodying a shadowy, frightening presence."
+  },
+  "monster_key": "yowler"
+}

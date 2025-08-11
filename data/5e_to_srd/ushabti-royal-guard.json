@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as guardians with autonomous combat abilities and high resilience."
+  },
+  "Mummy": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the necrotic theme and role as a tomb guardian with undead or magical origins."
+  },
+  "monster_key": "ushabti-royal-guard"
+}

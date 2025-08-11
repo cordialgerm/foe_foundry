@@ -1,0 +1,7 @@
+{
+  "Sahuagin": {
+    "relation": "almost_identical",
+    "explanation": "The Sahuagin Champion is a close variant of the Sahuagin, sharing amphibious nature, trident use, claw attacks, and shark command abilities."
+  },
+  "monster_key": "sahuagin-champion"
+}

@@ -1,0 +1,11 @@
+{
+  "Bandit": {
+    "relation": "close_cousins",
+    "explanation": "The Trapsmith is a small, sneaky humanoid skilled in combat and tactics similar to a Bandit."
+  },
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "The Trapsmith shares the role of a skirmisher with stealth and tactical battlefield control like the Scout."
+  },
+  "monster_key": "trapsmith"
+}

@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are small constructs designed to guard and perform tasks, though the Library Automaton focuses on knowledge and magical manipulation."
+  },
+  "monster_key": "library-automaton"
+}

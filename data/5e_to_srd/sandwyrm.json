@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large dragon with a dark, desert-adapted appearance and ambush tactics similar to a Young Black Dragon."
+  },
+  "Purple Worm": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares burrowing and ambush predator traits with the Purple Worm, including control of the battlefield through restraining attacks."
+  },
+  "monster_key": "sandwyrm"
+}

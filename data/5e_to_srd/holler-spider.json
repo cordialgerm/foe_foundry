@@ -1,0 +1,11 @@
+{
+  "Spider": {
+    "relation": "close_cousins",
+    "explanation": "The Holler Spider is a tiny, stealthy spider-like beast with climbing ability and ambush tactics."
+  },
+  "Giant Wolf Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares similar ambush predator traits, climbing speed, and stealth capabilities."
+  },
+  "monster_key": "holler-spider"
+}

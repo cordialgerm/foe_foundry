@@ -1,0 +1,11 @@
+{
+  "Frost Giant": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge giants with cold-related abilities and formidable melee attacks."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the shadowy, darkness-manipulating nature and resistance to necrotic damage."
+  },
+  "monster_key": "shadow-giant"
+}

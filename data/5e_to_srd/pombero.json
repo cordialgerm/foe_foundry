@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fey creatures associated with forests, capable of charming and stealth."
+  },
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are small to medium fey known for agility, charm abilities, and stealth in wooded environments."
+  },
+  "monster_key": "pombero"
+}

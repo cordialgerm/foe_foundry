@@ -1,0 +1,11 @@
+{
+  "Gnoll": {
+    "relation": "close_cousins",
+    "explanation": "The werehyena shares the gnoll's humanoid hyena-like nature and chaotic evil alignment."
+  },
+  "Werewolf (Lycanthrope)": {
+    "relation": "mechanically_similar",
+    "explanation": "Both are lycanthropes with shapechanger abilities and the power to spread lycanthropy through their bite."
+  },
+  "monster_key": "werehyena"
+}

@@ -1,0 +1,11 @@
+{
+  "Allosaurus": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, agile dinosaur-like creature with a focus on mobility and skirmishing."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the concept of coordinated group awareness and retaliatory damage through venom or acid."
+  },
+  "monster_key": "orniraptor"
+}

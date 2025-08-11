@@ -1,0 +1,15 @@
+{
+  "Flesh Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, durable constructs with powerful melee attacks and magical resistances."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elemental fire theme and immunity to fire damage, representing a fiery force."
+  },
+  "Iron Golem": {
+    "relation": "almost_identical",
+    "explanation": "A large magical construct with powerful melee attacks and resistances, similar to a Steam Golem but with a different elemental theme."
+  },
+  "monster_key": "steam-golem"
+}

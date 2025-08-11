@@ -1,0 +1,7 @@
+{
+  "Death Knight": {
+    "relation": "almost_identical",
+    "explanation": "A powerful undead knight with life-draining weapon, necrotic abilities, and command over undead minions."
+  },
+  "monster_key": "dread-knight-champion"
+}

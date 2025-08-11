@@ -1,0 +1,15 @@
+{
+  "Black Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the aquatic and acid damage traits with a black dragon wyrmling, reflecting a dangerous, large creature with acid attacks."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Amorphous form and acid damage resemble the black pudding's corrosive and malleable nature."
+  },
+  "Zombie": {
+    "relation": "mechanically_similar",
+    "explanation": "The Carnivorous Ship creates and controls undead humanoid drones similar to zombies."
+  },
+  "monster_key": "carnivorous-ship"
+}

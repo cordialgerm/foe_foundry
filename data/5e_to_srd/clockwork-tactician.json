@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with durable armor and serve as combatants, though the Clockwork Tactician is more intelligent and strategic."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "The Clockwork Tactician and Shield Guardian are both intelligent constructs designed to protect and control the battlefield."
+  },
+  "monster_key": "clockwork-tactician"
+}

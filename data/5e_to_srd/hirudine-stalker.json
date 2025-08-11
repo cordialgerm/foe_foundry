@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "close_cousins",
+    "explanation": "Both are aquatic monstrosities with multiple attacks and ambush predatory behavior."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic predators with climbing and swimming abilities and tentacle-like features."
+  },
+  "monster_key": "hirudine-stalker"
+}

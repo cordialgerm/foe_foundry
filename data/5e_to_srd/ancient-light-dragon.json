@@ -1,0 +1,11 @@
+{
+  "Ancient Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient, gargantuan dragons associated with radiant and noble qualities, serving as guardians and wielding powerful breath weapons."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the celestial, radiant guardian theme and powerful radiant abilities, embodying cosmic balance and light."
+  },
+  "monster_key": "ancient-light-dragon"
+}

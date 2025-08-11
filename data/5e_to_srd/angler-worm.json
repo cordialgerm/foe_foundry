@@ -1,0 +1,11 @@
+{
+  "Roper": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge, ambush predators that use tendrils or coils to grapple and control prey."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a tentacle-like grappling ability and aquatic or cavernous habitat, with a focus on controlling prey."
+  },
+  "monster_key": "angler-worm"
+}

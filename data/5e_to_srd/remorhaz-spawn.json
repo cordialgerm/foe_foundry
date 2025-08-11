@@ -1,0 +1,7 @@
+{
+  "Remorhaz": {
+    "relation": "close_cousins",
+    "explanation": "The Remorhaz Spawn shares the fiery, burrowing, and grappling traits of the Remorhaz but is a smaller, less powerful variant."
+  },
+  "monster_key": "remorhaz-spawn"
+}

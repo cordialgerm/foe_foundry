@@ -1,0 +1,7 @@
+{
+  "Stone Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Stone Giant Stonetalker is a variant of the Stone Giant with added stealth and spellcasting abilities."
+  },
+  "monster_key": "stone-giant-stonetalker"
+}

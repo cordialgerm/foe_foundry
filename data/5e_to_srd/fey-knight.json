@@ -1,0 +1,15 @@
+{
+  "Knight": {
+    "relation": "conceptually_similar",
+    "explanation": "The Fey Knight shares the concept of a skilled warrior with armor and weapons, similar to a Knight."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures connected to nature and enchantment, with abilities related to charm and manipulation."
+  },
+  "Pixie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Fey Knight's small size shifting, flying ability, and charm effects are reminiscent of the Pixie's magical and elusive nature."
+  },
+  "monster_key": "fey-knight"
+}

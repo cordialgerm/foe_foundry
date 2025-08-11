@@ -1,0 +1,11 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "A huge predator with swimming and walking speed, multiattack with bite and tail, and ability to hold breath underwater."
+  },
+  "Ankheg": {
+    "relation": "conceptually_similar",
+    "explanation": "A burrowing insect-like predator with a poisonous bite and ambush tactics in natural terrain."
+  },
+  "monster_key": "oasis-keeper"
+}

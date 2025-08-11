@@ -1,0 +1,11 @@
+{
+  "Ape": {
+    "relation": "conceptually_similar",
+    "explanation": "A medium-sized, agile humanoid with playful and clever traits similar to an ape."
+  },
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid skirmisher with high mobility and skills in Acrobatics and Stealth."
+  },
+  "monster_key": "vanara"
+}

@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid archer skilled in ranged combat and stealth, similar to the Scout's role and abilities."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a spellcaster or magic user, akin to the alchemical effects delivered by the Alchemist Archer."
+  },
+  "monster_key": "alchemist-archer"
+}

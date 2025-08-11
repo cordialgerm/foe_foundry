@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, vaporous elemental that can fly and move through tight spaces, similar to the Hongaek's intangible form."
+  },
+  "Darkmantle": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ambusher role and ability to blend into surroundings, akin to Hongaek's invisibility and stealth."
+  },
+  "monster_key": "hongaek"
+}

@@ -1,0 +1,7 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Pyrite Pile is a large elemental with tremorsense and strong melee attacks, similar to an Earth Elemental but themed around gold and deception."
+  },
+  "monster_key": "pyrite-pile"
+}

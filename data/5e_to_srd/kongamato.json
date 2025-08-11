@@ -1,0 +1,11 @@
+{
+  "Pteranodon": {
+    "relation": "close_cousins",
+    "explanation": "A large flying beast with a powerful beak and natural grappling abilities."
+  },
+  "Giant Eagle": {
+    "relation": "conceptually_similar",
+    "explanation": "A large flying predator with strong physical attacks and keen perception."
+  },
+  "monster_key": "kongamato"
+}

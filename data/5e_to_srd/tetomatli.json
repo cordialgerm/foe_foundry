@@ -1,0 +1,15 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs with strong physical attacks and immunity to certain damage types."
+  },
+  "Flying Sword": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the construct nature and flying ability, though the Tetomatli is larger and more powerful."
+  },
+  "Iron Golem": {
+    "relation": "close_cousins",
+    "explanation": "Large, powerful construct with strong melee attacks and resistances, similar in role and durability."
+  },
+  "monster_key": "tetomatli"
+}

@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Peri is a small, flying elemental with lightning and thunder resistances, similar to an Air Elemental but with added chaotic good alignment and magical abilities."
+  },
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "The Peri's invisibility and elemental nature conceptually resemble the Invisible Stalker, an air elemental spirit known for stealth and magical presence."
+  },
+  "monster_key": "peri"
+}

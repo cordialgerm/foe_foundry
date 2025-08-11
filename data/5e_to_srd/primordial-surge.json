@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, agile elementals capable of flight and movement through air."
+  },
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Shares the elemental nature and ability to transform terrain, especially with water-related effects."
+  },
+  "monster_key": "primordial-surge"
+}

@@ -1,0 +1,11 @@
+{
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Spider Drake shares the dragon type, poison damage, and ambush tactics similar to a Young Green Dragon."
+  },
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "The Spider Drake's use of webs and venomous attributes conceptually aligns with the Giant Spider's natural abilities."
+  },
+  "monster_key": "spider-drake"
+}

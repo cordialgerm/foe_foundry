@@ -1,0 +1,7 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Valkyrie is a powerful celestial warrior with healing and radiant damage abilities, similar to a Planetar."
+  },
+  "monster_key": "valkyrie"
+}

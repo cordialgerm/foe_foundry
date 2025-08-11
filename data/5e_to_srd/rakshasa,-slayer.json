@@ -1,0 +1,7 @@
+{
+  "Rakshasa": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Rakshasa, Slayer shares the same fiend type, shape, magic resistance, and assassin role as the SRD Rakshasa."
+  },
+  "monster_key": "rakshasa,-slayer"
+}

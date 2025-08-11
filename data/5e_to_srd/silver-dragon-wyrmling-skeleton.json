@@ -1,0 +1,11 @@
+{
+  "Silver Dragon Wyrmling": {
+    "relation": "almost_identical",
+    "explanation": "A Silver Dragon Wyrmling variant with undead skeletal form and breath weapons."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "An undead skeletal creature sharing the skeleton type and vulnerabilities."
+  },
+  "monster_key": "silver-dragon-wyrmling-skeleton"
+}

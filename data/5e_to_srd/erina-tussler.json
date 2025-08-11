@@ -1,0 +1,11 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile humanoid with natural weapons and grappling abilities similar to Lizardfolk."
+  },
+  "Bugbear": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the humanoid grappler role and tactical combat style, though Bugbears are larger and less agile."
+  },
+  "monster_key": "erina-tussler"
+}

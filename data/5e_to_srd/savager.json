@@ -1,0 +1,11 @@
+{
+  "Giant Boar": {
+    "relation": "close_cousins",
+    "explanation": "A large, aggressive beast with powerful melee attacks and a ferocious nature similar to the Savager."
+  },
+  "Brown Bear": {
+    "relation": "close_cousins",
+    "explanation": "A large, physically strong beast with high resilience and aggressive behavior akin to the Savager."
+  },
+  "monster_key": "savager"
+}

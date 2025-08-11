@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, plant-based creatures that use stealth and ambush tactics in overgrown environments."
+  },
+  "Vine Blight": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a plant creature that uses entangling vines to control and hinder foes."
+  },
+  "monster_key": "child-of-the-briar"
+}

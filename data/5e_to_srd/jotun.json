@@ -1,0 +1,11 @@
+{
+  "Frost Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Jotun is a gargantuan icy giant with cold damage and magical abilities similar to a Frost Giant."
+  },
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful giants with strong melee attacks and large size, differing mainly in elemental affinity."
+  },
+  "monster_key": "jotun"
+}

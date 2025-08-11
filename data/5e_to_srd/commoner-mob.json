@@ -1,0 +1,7 @@
+{
+  "Commoner": {
+    "relation": "close_cousins",
+    "explanation": "The Commoner Mob is a large group of commoners acting collectively, related to individual Commoners but as a combined entity."
+  },
+  "monster_key": "commoner-mob"
+}

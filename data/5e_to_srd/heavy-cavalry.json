@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Heavy Cavalry is a disciplined, well-armored humanoid warrior similar to a Veteran in combat role and equipment."
+  },
+  "Giant Lizard": {
+    "relation": "almost_identical",
+    "explanation": "The Heavy Cavalry rides a giant lizard mount with customized armor, matching the Giant Lizard creature."
+  },
+  "monster_key": "heavy-cavalry"
+}

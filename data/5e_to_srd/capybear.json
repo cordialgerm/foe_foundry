@@ -1,0 +1,15 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "A medium swamp aquatic monstrosity with strong melee attacks and swimming ability."
+  },
+  "Giant Frog": {
+    "relation": "conceptually_similar",
+    "explanation": "An amphibious predator with a pounce ability to knock targets prone in swampy environments."
+  },
+  "Wolf": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the Pack Tactics ability and cooperative hunting style."
+  },
+  "monster_key": "capybear"
+}

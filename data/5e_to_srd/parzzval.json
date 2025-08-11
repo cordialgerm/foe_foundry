@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "close_cousins",
+    "explanation": "Parzz'val is a large aberration with tentacle-like features and acid abilities similar to the Chuul."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Parzz'val's acidic web and regeneration resemble the Black Pudding's acid damage and resilience."
+  },
+  "monster_key": "parzzval"
+}

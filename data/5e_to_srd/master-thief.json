@@ -1,0 +1,7 @@
+{
+  "Assassin": {
+    "relation": "almost_identical",
+    "explanation": "A humanoid skilled in stealth, ambush, and deadly attacks with poison, closely matching the Master Thief's role and abilities."
+  },
+  "monster_key": "master-thief"
+}

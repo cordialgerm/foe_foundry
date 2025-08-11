@@ -1,0 +1,7 @@
+{
+  "Commoner": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Commoner matches the SRD Commoner as an ordinary, untrained humanoid with minimal combat ability."
+  },
+  "monster_key": "commoner"
+}

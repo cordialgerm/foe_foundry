@@ -1,0 +1,11 @@
+{
+  "Treant": {
+    "relation": "close_cousins",
+    "explanation": "The Alabaster Tree is a huge tree-like guardian with nature themes similar to a Treant."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "As a celestial defender with radiant abilities and a protective role, it shares traits with the Planetar."
+  },
+  "monster_key": "alabaster-tree"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with armor-like bodies and serve as guardians or workers in magical or constructed environments."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, resilient construct with strong defenses and offensive capabilities, though the Dread Walker Excavator is more agile and arcane-focused."
+  },
+  "monster_key": "dread-walker-excavator"
+}

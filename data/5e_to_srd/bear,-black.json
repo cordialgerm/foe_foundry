@@ -1,0 +1,7 @@
+{
+  "Black Bear": {
+    "relation": "almost_identical",
+    "explanation": "A medium-sized bear with strong physical attacks and good mobility, matching the Black Bear closely."
+  },
+  "monster_key": "bear,-black"
+}

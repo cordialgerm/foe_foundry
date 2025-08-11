@@ -1,0 +1,11 @@
+{
+  "Archmage": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful humanoid spellcasters with access to high-level spells including Meteor Swarm."
+  },
+  "Gladiator": {
+    "relation": "close_cousins",
+    "explanation": "Both are skilled melee combatants with strong physical prowess and combat abilities."
+  },
+  "monster_key": "arcane-blademaster"
+}

@@ -1,0 +1,11 @@
+{
+  "Lion": {
+    "relation": "close_cousins",
+    "explanation": "The Nkosi Pridelord transforms into a Large lion and shares the lion's beast traits and combat style."
+  },
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "In humanoid form, the Nkosi Pridelord wears studded leather armor and fights as a skilled melee combatant similar to a Veteran."
+  },
+  "monster_key": "nkosi-pridelord"
+}

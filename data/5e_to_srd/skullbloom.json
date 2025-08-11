@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant/fungus creatures with infection abilities and resilience."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures that pursue and attack with physical strikes."
+  },
+  "monster_key": "skullbloom"
+}

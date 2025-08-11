@@ -1,0 +1,15 @@
+{
+  "Brown Bear": {
+    "relation": "close_cousins",
+    "explanation": "The Bear King shares the physical form and nature guardian role of a Brown Bear but with added magical and fey traits."
+  },
+  "Treant": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful guardians of nature with magical abilities and a regal presence."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "The Bear King, like Dryads, is a fey creature connected to nature and the forest environment."
+  },
+  "monster_key": "bear-king"
+}

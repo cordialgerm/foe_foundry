@@ -1,0 +1,11 @@
+{
+  "Quasit": {
+    "relation": "conceptually_similar",
+    "explanation": "A tiny aberration with innate spellcasting and a tricky nature."
+  },
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a small, intelligent creature with some magical abilities and connection to beasts."
+  },
+  "monster_key": "brain-hood"
+}

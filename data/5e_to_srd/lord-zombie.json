@@ -1,0 +1,11 @@
+{
+  "Ogre Zombie": {
+    "relation": "close_cousins",
+    "explanation": "The Lord Zombie is a powerful undead commanding lesser zombies, similar to an Ogre Zombie but with enhanced abilities and leadership."
+  },
+  "Zombie": {
+    "relation": "almost_identical",
+    "explanation": "The Lord Zombie is a stronger, more resilient variant of the basic Zombie with added necromantic control and legendary resistance."
+  },
+  "monster_key": "lord-zombie"
+}

@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "A chaotic evil humanoid spellcaster with dark magic and the ability to animate dead, similar to a Cult Fanatic."
+  },
+  "Priest": {
+    "relation": "conceptually_similar",
+    "explanation": "A humanoid cleric-like figure wielding divine magic and a greatclub, resembling a Priest in role and theme."
+  },
+  "monster_key": "black-sun-priestess"
+}

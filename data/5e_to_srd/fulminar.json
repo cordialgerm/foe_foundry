@@ -1,0 +1,7 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Fulminar is a large, flying elemental with lightning abilities, similar in nature to the Air Elemental's control over air and flight."
+  },
+  "monster_key": "fulminar"
+}

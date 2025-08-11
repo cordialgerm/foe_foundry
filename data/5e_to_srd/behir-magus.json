@@ -1,0 +1,7 @@
+{
+  "Behir": {
+    "relation": "almost_identical",
+    "explanation": "The Behir Magus is a serpentine Huge monstrosity with lightning breath and constricting attacks, closely matching the Behir."
+  },
+  "monster_key": "behir-magus"
+}

@@ -1,0 +1,11 @@
+{
+  "Night Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "A fey-like creature with magical abilities and a sinister, manipulative nature."
+  },
+  "Archmage": {
+    "relation": "mechanically_similar",
+    "explanation": "A powerful spellcaster with a wide array of spells and tactical battlefield control."
+  },
+  "monster_key": "queen-of-night-and-magic"
+}

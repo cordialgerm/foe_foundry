@@ -1,0 +1,7 @@
+{
+  "Merrow": {
+    "relation": "almost_identical",
+    "explanation": "The Merrow Mage is a large aquatic monstrosity with spellcasting and regeneration, closely matching the Merrow's traits with added magical abilities."
+  },
+  "monster_key": "merrow-mage"
+}

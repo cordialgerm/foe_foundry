@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Storm Maiden is an elemental with flying and swimming abilities and control over storm-related powers, similar to an Air Elemental."
+  },
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Storm Maiden's swimming ability and control over water and storm effects relate it closely to the Water Elemental."
+  },
+  "monster_key": "storm-maiden"
+}

@@ -1,0 +1,15 @@
+{
+  "Archmage": {
+    "relation": "conceptually_similar",
+    "explanation": "The Moonlit King is a powerful spellcaster with a wide array of spells and high intelligence."
+  },
+  "Night Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "The Moonlit King shares a fey and night-related theme with the Night Hag, including magical and shadowy abilities."
+  },
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "The Moonlit King can summon a lunar devil, linking it conceptually to fiendish creatures like the Barbed Devil."
+  },
+  "monster_key": "moonlit-king"
+}

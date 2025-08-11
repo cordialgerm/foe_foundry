@@ -1,0 +1,11 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "Shares the theme of a large, fire-associated humanoid warrior wielding a massive weapon and excelling in fiery combat."
+  },
+  "Dwarf": {
+    "relation": "conceptually_similar",
+    "explanation": "The creature is a dwarf with a focus on combat and toughness, matching the dwarf race and stature."
+  },
+  "monster_key": "dwarf-firecracker"
+}

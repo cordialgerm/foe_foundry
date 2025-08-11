@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic aberrations that use slime and have a predatory, ambush nature."
+  },
+  "Chuul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic predators with tentacle-like features and a dangerous bite."
+  },
+  "monster_key": "lantern-hagfish"
+}

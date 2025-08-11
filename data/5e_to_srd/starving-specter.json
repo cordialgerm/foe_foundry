@@ -1,0 +1,7 @@
+{
+  "Specter": {
+    "relation": "almost_identical",
+    "explanation": "The Starving Specter is a variant of the Specter with added psychic and fear abilities and a menacing ethereal presence."
+  },
+  "monster_key": "starving-specter"
+}

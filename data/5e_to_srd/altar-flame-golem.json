@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiery elemental constructs with immunity to fire and a strong association with flames."
+  },
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Altar Flame Golem is a construct golem similar in role and durability to the Clay Golem but with a fire theme."
+  },
+  "monster_key": "altar-flame-golem"
+}

@@ -1,0 +1,7 @@
+{
+  "Gnoll": {
+    "relation": "close_cousins",
+    "explanation": "The Gnoll Demonfang is a gnoll variant with enhanced speed, strength, and a demonic aspect."
+  },
+  "monster_key": "gnoll-demonfang"
+}

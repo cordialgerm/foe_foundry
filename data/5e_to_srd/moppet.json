@@ -1,0 +1,11 @@
+{
+  "Homunculus": {
+    "relation": "close_cousins",
+    "explanation": "The Moppet is a tiny construct created by spellcasters, similar to a Homunculus in size and origin."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both the Moppet and Will-o-Wisp use psychic or magical energy to manipulate and incapacitate foes."
+  },
+  "monster_key": "moppet"
+}

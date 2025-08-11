@@ -1,0 +1,11 @@
+{
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A small dragon with a breath weapon and flying ability, similar in size and role but with different elemental theme."
+  },
+  "Pseudodragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A small dragon-like creature with cunning and agility, sharing the small dragon concept though lacking shapechanging and breath weapon."
+  },
+  "monster_key": "paper-drake"
+}

@@ -1,0 +1,7 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Rockslide is a large earth elemental with strong melee attacks and earth affinity, similar to the Earth Elemental."
+  },
+  "monster_key": "rockslide"
+}

@@ -1,0 +1,11 @@
+{
+  "Roper": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large ambush predators that use climbing and grappling tactics in wooded or rocky environments."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the stealthy ambush predator role and a lurking presence in dark, natural environments."
+  },
+  "monster_key": "asanbosam"
+}

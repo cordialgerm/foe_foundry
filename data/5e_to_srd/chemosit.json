@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiendish creatures with a menacing presence and combat versatility."
+  },
+  "Succubus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiend type and charm-based abilities to manipulate foes."
+  },
+  "monster_key": "chemosit"
+}

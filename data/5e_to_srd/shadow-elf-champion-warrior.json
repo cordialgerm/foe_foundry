@@ -1,0 +1,11 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "Both are agile humanoid combatants skilled in stealth, melee, and ranged attacks using shortswords and hand crossbows."
+  },
+  "Drow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Shadow Elf Champion Warrior shares a similar dark elf theme with stealth, dark magic, and shadowy environments."
+  },
+  "monster_key": "shadow-elf-champion-warrior"
+}

@@ -1,0 +1,15 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "The Ash Phoenix is an undead with ghostly, intangible qualities and rejuvenation similar to a Ghost."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "It shares a fiery, elemental theme with the Fire Elemental, especially with its ash and fire-based attacks."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "As a flying, stealthy undead that uses necrotic damage and instills terror, it is similar in nature to a Wraith."
+  },
+  "monster_key": "ash-phoenix"
+}

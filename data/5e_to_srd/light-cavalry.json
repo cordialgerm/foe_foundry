@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Light Cavalry is a mounted, combat-ready humanoid warrior similar in role and equipment to a Veteran."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Light Cavalry's fire breath and resistance to fire damage conceptually align with the elemental nature of a Fire Elemental."
+  },
+  "monster_key": "light-cavalry"
+}

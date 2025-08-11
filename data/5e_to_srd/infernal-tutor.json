@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish creatures with manipulative and magical abilities, though the Infernal Tutor focuses more on psychic and charm effects."
+  },
+  "Erinyes": {
+    "relation": "conceptually_similar",
+    "explanation": "The Erinyes is a lawful evil fiend with a commanding presence and magical abilities, similar in theme to the Infernal Tutor's role as a manipulative fiend."
+  },
+  "monster_key": "infernal-tutor"
+}

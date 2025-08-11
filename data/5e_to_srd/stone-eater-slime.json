@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are oozes that dissolve materials and have acid damage, with the Stone-Eater Slime having additional petrification abilities."
+  },
+  "Gray Ooze": {
+    "relation": "close_cousins",
+    "explanation": "The Stone-Eater Slime shares the ooze type and the ability to dissolve stone like the Gray Ooze, though it adds petrification."
+  },
+  "monster_key": "stone-eater-slime"
+}

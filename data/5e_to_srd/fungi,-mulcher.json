@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large plant creatures that manipulate terrain and grapple foes, with a focus on battlefield control."
+  },
+  "monster_key": "fungi,-mulcher"
+}

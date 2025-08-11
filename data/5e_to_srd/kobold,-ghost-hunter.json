@@ -1,0 +1,11 @@
+{
+  "Kobold": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile humanoid similar to a Kobold but specialized in hunting undead with radiant abilities."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ghostly hunter theme and invisibility against undead, relating to spectral and ethereal traits."
+  },
+  "monster_key": "kobold,-ghost-hunter"
+}

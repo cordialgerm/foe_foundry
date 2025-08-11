@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are Large fiends with formidable physical attacks and resistances, sharing a fiendish nature."
+  },
+  "Green Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a forest environment and uses poison and camouflage, similar to the Berstuc's stealth and poison abilities."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are forest-associated creatures with abilities related to nature and deception, including disguising as fey."
+  },
+  "monster_key": "berstuc"
+}

@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elemental creatures associated with water and coastal environments, sharing aquatic movement and elemental nature."
+  },
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Shares elemental traits and the ability to manipulate earth-like terrain, similar to the Beach Weird's quicksand creation."
+  },
+  "monster_key": "beach-weird"
+}

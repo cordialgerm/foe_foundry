@@ -1,0 +1,7 @@
+{
+  "Giant Crab": {
+    "relation": "close_cousins",
+    "explanation": "The Bone Crab is a small, stealthy crab-like beast with natural armor and claw attacks similar to the Giant Crab."
+  },
+  "monster_key": "bone-crab"
+}

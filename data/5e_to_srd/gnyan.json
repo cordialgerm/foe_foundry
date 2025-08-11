@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "close_cousins",
+    "explanation": "A large, winter-themed elemental creature with cold attacks and battlefield control abilities."
+  },
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "A small elemental embodying ice and cold with some magical abilities, similar in elemental theme and mobility."
+  },
+  "monster_key": "gnyan"
+}

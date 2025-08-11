@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic elementals with swimming ability and control over their environment."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Both emit a substance (oil or acidic sludge) that affects terrain and can grapple or restrain foes."
+  },
+  "monster_key": "ikuchi"
+}

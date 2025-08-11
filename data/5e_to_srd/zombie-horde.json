@@ -1,0 +1,7 @@
+{
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "A large undead creature composed of multiple zombies with grappling and splitting abilities, related to standard Zombies but with enhanced features."
+  },
+  "monster_key": "zombie-horde"
+}

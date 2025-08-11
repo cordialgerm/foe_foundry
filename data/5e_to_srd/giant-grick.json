@@ -1,0 +1,7 @@
+{
+  "Grick": {
+    "relation": "close_cousins",
+    "explanation": "The Giant Grick shares the same monstrous form and ambush tactics as the Grick but is larger and more powerful."
+  },
+  "monster_key": "giant-grick"
+}

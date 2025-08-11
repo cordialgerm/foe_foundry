@@ -1,0 +1,11 @@
+{
+  "Nightmare": {
+    "relation": "close_cousins",
+    "explanation": "The Mavka is an undead creature often mounted on a Nightmare, sharing the nightmare's association with dark, fiery, and chaotic themes."
+  },
+  "Vampire": {
+    "relation": "conceptually_similar",
+    "explanation": "The Mavka is a chaotic evil undead with regeneration, necrotic damage, and vulnerability to sunlight, similar to a Vampire's traits."
+  },
+  "monster_key": "mavka"
+}

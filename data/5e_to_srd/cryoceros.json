@@ -1,0 +1,15 @@
+{
+  "Rhinoceros": {
+    "relation": "almost_identical",
+    "explanation": "The Cryoceros is a large, rhinoceros-like creature with similar physical traits and charging attacks."
+  },
+  "White Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the cold and ice-themed abilities and environment with the Cryoceros."
+  },
+  "Winter Wolf": {
+    "relation": "close_cousins",
+    "explanation": "Both are formidable predators adapted to cold, snowy environments with cold-based attacks."
+  },
+  "monster_key": "cryoceros"
+}

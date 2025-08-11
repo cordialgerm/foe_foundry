@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs serving as guardians with durable armor and melee attacks."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful constructs designed to protect and defend, with magical resistances and strong melee capabilities."
+  },
+  "monster_key": "repository"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic aberrations with tentacle-like features and the ability to grapple or swallow foes."
+  },
+  "Kraken": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are gargantuan, powerful sea creatures with a mysterious and dominating presence in deep aquatic environments."
+  },
+  "monster_key": "ziphius"
+}

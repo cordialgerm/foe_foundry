@@ -1,0 +1,15 @@
+{
+  "Otyugh": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are Medium aberrations with tentacles and a predatory nature."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the amorphous, dangerous nature and acid damage."
+  },
+  "Animated Armor": {
+    "relation": "mechanically_similar",
+    "explanation": "Both have a defensive form that enhances protection."
+  },
+  "monster_key": "obeleric"
+}

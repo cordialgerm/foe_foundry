@@ -1,0 +1,11 @@
+{
+  "Dretch": {
+    "relation": "close_cousins",
+    "explanation": "Both are chaotic evil fiends with multiple attack types and a presence in demonic hordes."
+  },
+  "Glabrezu": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful demon with multiple attack forms and a chaotic evil nature, similar in concept to a shape-shifting fiend."
+  },
+  "monster_key": "horde-demon"
+}

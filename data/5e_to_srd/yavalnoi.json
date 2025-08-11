@@ -1,0 +1,15 @@
+{
+  "Aboleth": {
+    "relation": "almost_identical",
+    "explanation": "A large aquatic aberration with powerful spellcasting, summoning aquatic creatures, and manipulating water."
+  },
+  "Giant Crab": {
+    "relation": "conceptually_similar",
+    "explanation": "Summoned aquatic ally that shares the coastal aquatic environment."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Summoned aquatic ally with long limbs and aquatic nature."
+  },
+  "monster_key": "yavalnoi"
+}

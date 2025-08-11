@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large, chaotic dragon with acid breath and a spiny, ambush predator nature similar to the Peluda Drake."
+  },
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares poison damage and tactical combat style with the Peluda Drake, including breath weapon use."
+  },
+  "monster_key": "peluda-drake"
+}

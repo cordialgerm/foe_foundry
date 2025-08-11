@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fiends with natural armor and a lawful evil alignment, sharing a fiendish nature and combat resilience."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "The Spawn of Arbeyach summons swarms of insects, similar to how swarms of poisonous snakes operate as multiple small creatures dealing poison."
+  },
+  "monster_key": "spawn-of-arbeyach"
+}

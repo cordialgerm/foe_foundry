@@ -1,0 +1,11 @@
+{
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "The Ghostwalk Spider is a large predatory spider similar to the Giant Spider in size and ambush role."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "It shares ghostly, incorporeal movement and resistances like a Ghost, blending undead and stealthy traits."
+  },
+  "monster_key": "ghostwalk-spider"
+}

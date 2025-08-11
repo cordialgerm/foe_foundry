@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Mountain Dwarf Soldier is a disciplined, capable humanoid warrior with tactical combat skills similar to a Veteran."
+  },
+  "monster_key": "mountain-dwarf-soldier"
+}

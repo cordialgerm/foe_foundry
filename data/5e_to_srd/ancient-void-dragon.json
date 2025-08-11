@@ -1,0 +1,11 @@
+{
+  "Ancient Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient dragons with cold damage immunity and a fearsome presence, though the Ancient Void Dragon has unique void and chaos-themed abilities."
+  },
+  "Ancient Red Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are gargantuan ancient dragons with powerful breath weapons and dominating presence, but the Ancient Void Dragon embodies void and chaos rather than fire."
+  },
+  "monster_key": "ancient-void-dragon"
+}

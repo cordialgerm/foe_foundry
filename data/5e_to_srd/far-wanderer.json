@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with mind manipulation abilities and a mysterious nature."
+  },
+  "Invisible Stalker": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares teleportation and high Dexterity for mobility and evasiveness."
+  },
+  "monster_key": "far-wanderer"
+}

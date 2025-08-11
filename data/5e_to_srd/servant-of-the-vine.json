@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "A humanoid fey creature associated with vibrant flora and magical abilities."
+  },
+  "Priest": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid spellcaster with healing and support capabilities."
+  },
+  "monster_key": "servant-of-the-vine"
+}

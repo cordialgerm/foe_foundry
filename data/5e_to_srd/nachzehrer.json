@@ -1,0 +1,15 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium undead creatures that drain life and spread debilitating effects."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "Shares undead nature with life-draining attacks and the ability to weaken foes."
+  },
+  "Ghast": {
+    "relation": "close_cousins",
+    "explanation": "Similar undead with disease and necrotic damage themes and multiattack capabilities."
+  },
+  "monster_key": "nachzehrer"
+}

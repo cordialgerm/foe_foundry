@@ -1,0 +1,11 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "The Dark Voice is a manipulative humanoid skilled in intimidation and persuasion, similar to a Spy's stealth and cunning."
+  },
+  "Thug": {
+    "relation": "mechanically_similar",
+    "explanation": "The Dark Voice uses melee and ranged attacks with weapons like a mace and heavy crossbow, akin to a Thug's combat style."
+  },
+  "monster_key": "dark-voice"
+}

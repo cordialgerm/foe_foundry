@@ -1,0 +1,7 @@
+{
+  "Camel": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Camel closely matches the SRD Camel in size, desert adaptation, and role as a mount and pack animal."
+  },
+  "monster_key": "camel"
+}

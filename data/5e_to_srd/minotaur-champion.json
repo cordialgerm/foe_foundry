@@ -1,0 +1,11 @@
+{
+  "Minotaur": {
+    "relation": "almost_identical",
+    "explanation": "A large, powerful minotaur with melee attacks and labyrinthine traits."
+  },
+  "Fire Giant": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the fire breath and high durability traits typical of fire giants."
+  },
+  "monster_key": "minotaur-champion"
+}

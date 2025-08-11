@@ -1,0 +1,7 @@
+{
+  "Elk": {
+    "relation": "almost_identical",
+    "explanation": "A large herbivore with powerful antlers and a charge attack that can knock foes prone, matching the description of the Elk."
+  },
+  "monster_key": "elk"
+}

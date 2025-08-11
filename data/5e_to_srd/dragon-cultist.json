@@ -1,0 +1,7 @@
+{
+  "Cult Fanatic": {
+    "relation": "almost_identical",
+    "explanation": "A spellcasting humanoid cultist skilled in deception and manipulation, wielding a dagger and using control and damage spells."
+  },
+  "monster_key": "dragon-cultist"
+}

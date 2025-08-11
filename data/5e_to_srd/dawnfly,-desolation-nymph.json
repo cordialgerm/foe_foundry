@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large amphibious beasts with grappling and swallowing abilities and acid damage."
+  },
+  "Giant Frog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares amphibious nature and swallowing prey, though the Dawnfly has more complex movement and camouflage."
+  },
+  "monster_key": "dawnfly,-desolation-nymph"
+}

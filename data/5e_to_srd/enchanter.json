@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "almost_identical",
+    "explanation": "A humanoid spellcaster with a broad spell selection focused on enchantment and control."
+  },
+  "Archmage": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful spellcaster with high intelligence and a wide array of spells, similar in magical prowess."
+  },
+  "monster_key": "enchanter"
+}

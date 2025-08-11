@@ -1,0 +1,11 @@
+{
+  "Drider": {
+    "relation": "close_cousins",
+    "explanation": "The Arachnocrat shares fiendish and arachnid traits with the Drider, including webbing and climbing abilities."
+  },
+  "Bearded Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiends with a manipulative and dangerous nature, though the Arachnocrat has a more arachnid and aristocratic theme."
+  },
+  "monster_key": "arachnocrat"
+}

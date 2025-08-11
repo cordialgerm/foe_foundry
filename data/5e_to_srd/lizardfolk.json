@@ -1,0 +1,7 @@
+{
+  "Lizardfolk": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Lizardfolk exactly in type, abilities, environment, and combat style."
+  },
+  "monster_key": "lizardfolk"
+}

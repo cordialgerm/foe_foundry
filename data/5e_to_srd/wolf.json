@@ -1,0 +1,7 @@
+{
+  "Wolf": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the SRD Wolf in size, behavior, pack tactics, and abilities."
+  },
+  "monster_key": "wolf"
+}

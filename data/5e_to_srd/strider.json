@@ -1,0 +1,7 @@
+{
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "The Strider is a stealthy, agile humanoid expert in wilderness navigation and ambush tactics, closely matching the Scout."
+  },
+  "monster_key": "strider"
+}

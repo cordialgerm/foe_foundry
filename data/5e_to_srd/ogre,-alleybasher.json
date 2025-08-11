@@ -1,0 +1,7 @@
+{
+  "Ogre": {
+    "relation": "almost_identical",
+    "explanation": "A large, chaotic evil giant with brute strength and melee attacks, similar to a standard Ogre but with added thematic abilities like blinding sand."
+  },
+  "monster_key": "ogre,-alleybasher"
+}

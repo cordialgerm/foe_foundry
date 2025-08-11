@@ -1,0 +1,11 @@
+{
+  "Vampire Spawn": {
+    "relation": "almost_identical",
+    "explanation": "A loyal, stealthy undead minion bound to a vampire master with climbing ability and sunlight vulnerability."
+  },
+  "Vampire": {
+    "relation": "close_cousins",
+    "explanation": "Shares vampiric traits and undead nature but is less powerful and serves as a minion."
+  },
+  "monster_key": "vampire-thrall"
+}

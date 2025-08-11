@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "close_cousins",
+    "explanation": "A large, ferocious wolf-like predator with cold resistance and grappling abilities."
+  },
+  "Giant Wolf Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the predatory and grappling nature, though mechanically different and arachnid in form."
+  },
+  "monster_key": "fang-of-the-great-wolf"
+}

@@ -1,0 +1,15 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with earth-related traits and durability."
+  },
+  "Salamander": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiendish essence and fire-related abilities."
+  },
+  "Earth Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Both manipulate earth and have burrowing or earth glide abilities."
+  },
+  "monster_key": "apaxrusl"
+}

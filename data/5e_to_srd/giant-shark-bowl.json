@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large oozes that engulf and restrain enemies, controlling the battlefield with continuous damage."
+  },
+  "Giant Shark": {
+    "relation": "conceptually_similar",
+    "explanation": "The homebrew combines shark-like traits with an ooze form, resembling a giant aquatic predator."
+  },
+  "monster_key": "giant-shark-bowl"
+}

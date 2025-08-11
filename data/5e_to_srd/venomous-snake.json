@@ -1,0 +1,7 @@
+{
+  "Venomous Snake": {
+    "relation": "almost_identical",
+    "explanation": "A tiny, venomous snake with swimming ability and a poison bite."
+  },
+  "monster_key": "venomous-snake"
+}

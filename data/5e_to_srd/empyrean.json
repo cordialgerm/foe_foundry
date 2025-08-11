@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful celestial beings with strong spellcasting and combat abilities."
+  },
+  "Solar": {
+    "relation": "close_cousins",
+    "explanation": "The Empyrean shares the divine, gargantuan celestial nature and potent spellcasting of the Solar."
+  },
+  "monster_key": "empyrean"
+}

@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Flab Giant is a slow, powerful, and durable giant focused on brute strength and grappling, similar to a Hill Giant's role and traits."
+  },
+  "monster_key": "flab-giant"
+}

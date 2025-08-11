@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Bloody Bones shares the undead horror theme, claw attacks, and fear-inducing abilities similar to a Ghoul."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead monstrosities that use fear and psychological tactics to weaken foes, though Wights are more intelligent and strategic."
+  },
+  "monster_key": "bloody-bones"
+}

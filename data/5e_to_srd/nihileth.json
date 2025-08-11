@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are large undead creatures that spread disease and have a brutal combat role."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a ghostly, undead form with abilities related to incorporeality and haunting presence."
+  },
+  "monster_key": "nihileth"
+}

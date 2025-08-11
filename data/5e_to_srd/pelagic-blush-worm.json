@@ -1,0 +1,11 @@
+{
+  "Purple Worm": {
+    "relation": "close_cousins",
+    "explanation": "Both are gargantuan monstrosities capable of swallowing creatures whole and dealing devastating melee damage."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aquatic monstrosities with tentacle-like appendages and strong underwater presence."
+  },
+  "monster_key": "pelagic-blush-worm"
+}

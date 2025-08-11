@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Master Alchemist is a tactical, intelligent humanoid spellcaster with battlefield control similar to a Mage."
+  },
+  "Cult Fanatic": {
+    "relation": "conceptually_similar",
+    "explanation": "Both use thematic magical effects and have a focus on debilitating enemies, though the Master Alchemist uses alchemical concoctions instead of divine magic."
+  },
+  "monster_key": "master-alchemist"
+}

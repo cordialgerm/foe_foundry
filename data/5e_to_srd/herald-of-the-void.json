@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large fiends with formidable combat abilities and a chaotic evil nature."
+  },
+  "Balor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful, imposing fiends with strong magical and physical attacks, embodying chaos and destruction."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares intangibility and mobility traits, with a focus on evasion and elusive movement."
+  },
+  "monster_key": "herald-of-the-void"
+}

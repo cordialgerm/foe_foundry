@@ -1,0 +1,11 @@
+{
+  "Assassin": {
+    "relation": "almost_identical",
+    "explanation": "A stealthy humanoid ambusher with poison and sneak attack abilities closely matches the Assassin."
+  },
+  "Half-Dragon Template": {
+    "relation": "conceptually_similar",
+    "explanation": "The creature is a humanoid with dragon traits, similar to a Half-Dragon Template."
+  },
+  "monster_key": "half-shadow-dragon-assassin"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Frog": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amphibious creatures with strong melee attacks and swimming ability."
+  },
+  "Giant Toad": {
+    "relation": "close_cousins",
+    "explanation": "Similar amphibious ambush predators with powerful tongue attacks and strong melee capabilities."
+  },
+  "monster_key": "mudmutt"
+}

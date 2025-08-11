@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy creatures that manipulate darkness and cause exhaustion, sharing a similar eerie and intangible nature."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "The Shadow Lurker's affinity for dim light and shadow manipulation conceptually aligns with the Darkmantle's shadowy, cave-dwelling nature."
+  },
+  "monster_key": "shadow-lurker"
+}

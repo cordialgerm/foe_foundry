@@ -1,0 +1,15 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are agile, teleporting canine-like creatures with high mobility."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares necrotic damage and the ability to weaken foes by reducing their hit points."
+  },
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are aberrations with psychic abilities and a predatory nature."
+  },
+  "monster_key": "hound-of-tindalos"
+}

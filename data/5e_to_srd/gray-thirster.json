@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium undead creatures that drain life and have necrotic abilities, with the Gray Thirster adding exhaustion and moisture-draining effects."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gray Thirster shares the undead ambusher role and a hunger-driven nature similar to Ghouls, though it has unique moisture-draining and exhaustion mechanics."
+  },
+  "monster_key": "gray-thirster"
+}

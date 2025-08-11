@@ -1,0 +1,11 @@
+{
+  "Noble": {
+    "relation": "almost_identical",
+    "explanation": "A noble with social skills and a rapier, matching the High Elf Noble's elegant and charismatic nature."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to cast cantrips like Ray of Frost, providing ranged cold damage and control."
+  },
+  "monster_key": "high-elf-noble"
+}

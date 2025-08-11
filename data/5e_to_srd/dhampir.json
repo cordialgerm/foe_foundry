@@ -1,0 +1,11 @@
+{
+  "Vampire Spawn": {
+    "relation": "close_cousins",
+    "explanation": "The Dhampir shares vampiric traits, necrotic abilities, and humanoid form similar to a Vampire Spawn."
+  },
+  "Vampire": {
+    "relation": "conceptually_similar",
+    "explanation": "The Dhampir conceptually resembles a vampire with charm and necrotic healing but is less powerful and more agile."
+  },
+  "monster_key": "dhampir"
+}

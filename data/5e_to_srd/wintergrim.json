@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are small fey guardians of nature with spellcasting and a connection to the natural environment."
+  },
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the winter theme and fierce combat nature with cold resistance and physical power."
+  },
+  "monster_key": "wintergrim"
+}

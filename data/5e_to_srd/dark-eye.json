@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid spellcaster with manipulative and psychic-like abilities, often found in dark or shadowy environments."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "A dark, shadowy humanoid creature that thrives in darkness and uses fear and stealth, similar to the Dark Eye's theme."
+  },
+  "monster_key": "dark-eye"
+}

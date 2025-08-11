@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large fiends with melee attacks and a menacing presence, sharing a similar role in infernal hierarchies."
+  },
+  "Bearded Devil": {
+    "relation": "close_cousins",
+    "explanation": "Similar large fiend with melee combat focus and infernal origin, fitting the same fiendish combat archetype."
+  },
+  "monster_key": "koralk"
+}

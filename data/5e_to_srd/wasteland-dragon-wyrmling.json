@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A medium-sized wyrmling dragon with a breath weapon and a presence in desolate environments, sharing the dragon wyrmling category."
+  },
+  "Young Brass Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A wyrmling dragon with arcane-themed breath and versatile movement, similar in size and mobility but differing in alignment and damage type."
+  },
+  "monster_key": "wasteland-dragon-wyrmling"
+}

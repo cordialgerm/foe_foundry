@@ -1,0 +1,11 @@
+{
+  "Skeleton": {
+    "relation": "almost_identical",
+    "explanation": "A skeleton undead with melee attacks using scimitars and similar size and role."
+  },
+  "Shadow": {
+    "relation": "close_cousins",
+    "explanation": "Shares the shadowy, necrotic damage aura and stealthy, agile nature."
+  },
+  "monster_key": "shadow-skeleton"
+}

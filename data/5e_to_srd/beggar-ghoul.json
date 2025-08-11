@@ -1,0 +1,7 @@
+{
+  "Ghoul": {
+    "relation": "almost_identical",
+    "explanation": "The Beggar Ghoul is a medium undead with paralyzing claws and ambush tactics, closely matching the standard Ghoul."
+  },
+  "monster_key": "beggar-ghoul"
+}

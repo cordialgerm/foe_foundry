@@ -1,0 +1,11 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "A shadowy, stealthy elf-like humanoid skilled in ambush and ranged attacks with poison."
+  },
+  "Spy": {
+    "relation": "almost_identical",
+    "explanation": "A medium humanoid skilled in stealth, equipped with shortsword and hand crossbow, using poison and ambush tactics."
+  },
+  "monster_key": "shadow-elf-warrior"
+}

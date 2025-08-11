@@ -1,0 +1,7 @@
+{
+  "Giant Weasel": {
+    "relation": "close_cousins",
+    "explanation": "The Giant Mongoose shares a similar size, agility, and stealthy predatory nature with the Giant Weasel."
+  },
+  "monster_key": "giant-mongoose"
+}

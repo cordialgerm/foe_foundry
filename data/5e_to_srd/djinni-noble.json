@@ -1,0 +1,11 @@
+{
+  "Djinni": {
+    "relation": "almost_identical",
+    "explanation": "A large elemental creature embodying mastery of wind and storm with similar abilities and traits to a Djinni."
+  },
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Related to air elementals, sharing elemental nature and control over wind and air."
+  },
+  "monster_key": "djinni-noble"
+}

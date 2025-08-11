@@ -1,0 +1,7 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Red Hag shares the hag creature type, fey nature, and spellcasting abilities similar to the Green Hag."
+  },
+  "monster_key": "red-hag"
+}

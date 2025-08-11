@@ -1,0 +1,11 @@
+{
+  "Pegasus": {
+    "relation": "conceptually_similar",
+    "explanation": "Sleipnir is a large, powerful horse-like creature with flying ability and grace, similar in concept to a Pegasus."
+  },
+  "Winter Wolf": {
+    "relation": "close_cousins",
+    "explanation": "Sleipnir shares cold resistance and battlefield control abilities like the Winter Wolf's icy nature."
+  },
+  "monster_key": "sleipnir"
+}

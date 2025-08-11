@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge aquatic monstrosities with strong melee attacks and amphibious capabilities."
+  },
+  "Behir": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, serpentine monstrosities with powerful physical presence and multi-environment adaptability."
+  },
+  "monster_key": "aalpamac"
+}

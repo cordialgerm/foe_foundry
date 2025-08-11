@@ -1,0 +1,7 @@
+{
+  "Wererat (Lycanthrope)": {
+    "relation": "close_cousins",
+    "explanation": "The Wereshark is a lycanthrope humanoid with shapeshifting abilities similar to the Wererat (Lycanthrope), but adapted to an aquatic shark form."
+  },
+  "monster_key": "wereshark"
+}

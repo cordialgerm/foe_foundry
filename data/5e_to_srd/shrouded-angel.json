@@ -1,0 +1,15 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "A celestial being with a powerful presence and divine judgment abilities."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "A powerful celestial warrior with flight and radiant abilities, similar in role and power."
+  },
+  "Solar": {
+    "relation": "close_cousins",
+    "explanation": "A majestic celestial with flight, radiant damage, and strong combat capabilities."
+  },
+  "monster_key": "shrouded-angel"
+}

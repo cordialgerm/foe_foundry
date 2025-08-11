@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, agile fey creatures with flying ability and mischievous nature."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the electric and lightning-themed abilities and a tricky, elusive combat style."
+  },
+  "monster_key": "azza-gremlin"
+}

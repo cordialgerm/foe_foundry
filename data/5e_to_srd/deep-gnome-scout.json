@@ -1,0 +1,11 @@
+{
+  "Deep Gnome": {
+    "relation": "almost_identical",
+    "explanation": "The Deep Gnome Scout is a variant of the Deep Gnome with added stealth and spellcasting abilities."
+  },
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "Functions as a stealthy skirmisher and scout, sharing the role and skills of the Scout."
+  },
+  "monster_key": "deep-gnome-scout"
+}

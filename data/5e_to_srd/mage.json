@@ -1,0 +1,7 @@
+{
+  "Mage": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Mage closely matches the SRD Mage in role, abilities, and spellcasting focus."
+  },
+  "monster_key": "mage"
+}

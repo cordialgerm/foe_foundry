@@ -1,0 +1,15 @@
+{
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Both embody cold and winter themes with cold-based abilities and a predatory nature."
+  },
+  "Frost Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the cold and icy environment theme and formidable presence, though the Snow Queen is more fey and magical."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures connected to nature, with the Snow Queen representing a winter aspect."
+  },
+  "monster_key": "snow-queen"
+}

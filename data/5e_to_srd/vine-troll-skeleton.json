@@ -1,0 +1,15 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Vine Troll Skeleton is an undead version of a troll with regeneration and physical strength."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "It is a large undead skeleton with typical undead traits and vulnerabilities."
+  },
+  "Treant": {
+    "relation": "conceptually_similar",
+    "explanation": "It is magically bound to a tree or dryad, linking it conceptually to treants as guardians of forests."
+  },
+  "monster_key": "vine-troll-skeleton"
+}

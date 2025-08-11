@@ -1,0 +1,11 @@
+{
+  "Awakened Tree": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge tree-like constructs with magical nature and protective roles."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs animated by magic serving as guardians."
+  },
+  "monster_key": "feyward-tree"
+}

@@ -1,0 +1,11 @@
+{
+  "Ice Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fiendish demons with immunity to cold and poison and a sinister nature."
+  },
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "A small, chaotic fiend with flying and stealth capabilities similar to an Imp."
+  },
+  "monster_key": "wind-demon"
+}

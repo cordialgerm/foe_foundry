@@ -1,0 +1,7 @@
+{
+  "Gorgon": {
+    "relation": "close_cousins",
+    "explanation": "The Karkadann is a huge, horned monstrosity with impaling charge and grappling abilities similar to the Gorgon."
+  },
+  "monster_key": "karkadann"
+}

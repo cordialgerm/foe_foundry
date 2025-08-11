@@ -1,0 +1,11 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Giant Firestorm is a huge fire-based giant with high strength and fire-related abilities similar to a Fire Giant."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Giant Firestorm shares elemental fire traits and battlefield control with a Fire Elemental."
+  },
+  "monster_key": "giant-firestorm"
+}

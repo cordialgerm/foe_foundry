@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium fiends with magical resistance and a menacing presence."
+  },
+  "Erinyes": {
+    "relation": "conceptually_similar",
+    "explanation": "A fiend with flying ability, spellcasting, and a cunning, malevolent nature."
+  },
+  "Succubus": {
+    "relation": "conceptually_similar",
+    "explanation": "A Medium fiend with shapechanging and spellcasting abilities used for manipulation."
+  },
+  "monster_key": "shetani"
+}

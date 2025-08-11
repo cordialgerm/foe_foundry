@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant creatures that ambush and grapple foes in forested or overgrown environments."
+  },
+  "monster_key": "vines-of-nemthyr"
+}

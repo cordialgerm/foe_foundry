@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aberrations with psychic abilities, amphibious nature, and mind-affecting powers."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the maddening babbling and confusing mental attacks, though differs in form and mechanics."
+  },
+  "monster_key": "murmuring-worm"
+}

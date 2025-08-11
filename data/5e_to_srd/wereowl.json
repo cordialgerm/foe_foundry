@@ -1,0 +1,11 @@
+{
+  "Werewolf (Lycanthrope)": {
+    "relation": "close_cousins",
+    "explanation": "The Wereowl is a lycanthrope with shapechanging abilities similar to the Werewolf, sharing the humanoid and animal hybrid forms."
+  },
+  "Owl": {
+    "relation": "conceptually_similar",
+    "explanation": "The Wereowl's owl form and flight capabilities conceptually resemble the natural owl's appearance and stealth."
+  },
+  "monster_key": "wereowl"
+}

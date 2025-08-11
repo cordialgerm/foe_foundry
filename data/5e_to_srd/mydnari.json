@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the acid damage and ooze-related theme with the Mydnari's jelly symbiosis."
+  },
+  "Gelatinous Cube": {
+    "relation": "conceptually_similar",
+    "explanation": "Both involve a symbiotic or ooze-like substance and acid damage, fitting the Mydnari's unique jelly connection."
+  },
+  "monster_key": "mydnari"
+}

@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, fiendish devils with formidable melee and magical abilities."
+  },
+  "Horned Devil": {
+    "relation": "close_cousins",
+    "explanation": "Shares the devil type, large size, and a combination of melee prowess and magical powers."
+  },
+  "monster_key": "orobas-devil"
+}

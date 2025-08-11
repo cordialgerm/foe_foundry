@@ -1,0 +1,11 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "close_cousins",
+    "explanation": "The Tosculi Drone is a small, agile humanoid that works effectively in groups, similar to a swarm creature."
+  },
+  "Scout": {
+    "relation": "conceptually_similar",
+    "explanation": "The Tosculi Drone is a small, agile humanoid with tactical combat abilities and dexterity, resembling a scout's role."
+  },
+  "monster_key": "tosculi-drone"
+}

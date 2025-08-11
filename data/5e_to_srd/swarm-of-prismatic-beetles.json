@@ -1,0 +1,11 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small creatures that use poison and occupy the same space as other creatures."
+  },
+  "Giant Fire Beetle": {
+    "relation": "conceptually_similar",
+    "explanation": "A beetle creature with a glowing or colorful appearance, sharing the insect and beetle concept."
+  },
+  "monster_key": "swarm-of-prismatic-beetles"
+}

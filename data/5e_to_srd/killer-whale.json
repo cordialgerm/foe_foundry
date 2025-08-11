@@ -1,0 +1,7 @@
+{
+  "Killer Whale": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the SRD Killer Whale in size, habitat, social hunting behavior, echolocation, and combat style."
+  },
+  "monster_key": "killer-whale"
+}

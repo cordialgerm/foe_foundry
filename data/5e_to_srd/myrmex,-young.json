@@ -1,0 +1,11 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Myrmex is an earth-based elemental with terrain manipulation and earth movement abilities similar to an Earth Elemental but smaller and with additional unique traits."
+  },
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "The Myrmex's spider climb ability and small size conceptually resemble a Giant Spider's climbing and predatory nature."
+  },
+  "monster_key": "myrmex,-young"
+}

@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium aberrations with tentacles, amphibious nature, and aquatic environments."
+  },
+  "Chuul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both have tentacles and are aquatic aberrations with melee tentacle attacks."
+  },
+  "monster_key": "pale-screamer"
+}

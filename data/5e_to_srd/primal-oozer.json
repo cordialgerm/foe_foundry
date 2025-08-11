@@ -1,0 +1,11 @@
+{
+  "Ochre Jelly": {
+    "relation": "close_cousins",
+    "explanation": "Both are ooze creatures with acidic damage and the ability to infect or dissolve victims."
+  },
+  "Gray Ooze": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares ooze traits and acid damage but differs in disease and aberration aspects."
+  },
+  "monster_key": "primal-oozer"
+}

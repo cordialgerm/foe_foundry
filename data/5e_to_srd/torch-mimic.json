@@ -1,0 +1,11 @@
+{
+  "Mimic": {
+    "relation": "almost_identical",
+    "explanation": "A deceptive creature that mimics objects and attacks with a bite, closely matching the Torch Mimic's core traits."
+  },
+  "Magmin": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares fire resistance and fire-based attacks similar to the Torch Mimic's fiery abilities."
+  },
+  "monster_key": "torch-mimic"
+}

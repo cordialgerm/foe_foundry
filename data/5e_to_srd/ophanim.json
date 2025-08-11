@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, powerful celestial guardians with radiant abilities and spellcasting."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ophanim shares the majestic, radiant, and divine presence of the Solar, including powerful radiant attacks and spellcasting."
+  },
+  "monster_key": "ophanim"
+}

@@ -1,0 +1,11 @@
+{
+  "Warhorse": {
+    "relation": "close_cousins",
+    "explanation": "The Harvest Horse is a large construct with a role similar to a Warhorse as a powerful mount and frontline bruiser."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs designed for battlefield roles, with the Harvest Horse being a living construct and Animated Armor a magical suit of armor."
+  },
+  "monster_key": "harvest-horse"
+}

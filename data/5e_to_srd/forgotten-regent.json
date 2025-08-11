@@ -1,0 +1,11 @@
+{
+  "Mummy Lord": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful undead leaders commanding undead minions with necromantic abilities."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead creatures that lead and empower undead forces, though the Forgotten Regent has frost and petrification abilities."
+  },
+  "monster_key": "forgotten-regent"
+}

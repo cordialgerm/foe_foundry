@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large plant-like creatures that grapple and create difficult terrain, with the Kelp Eel adapted to aquatic environments."
+  },
+  "monster_key": "kelp-eel"
+}

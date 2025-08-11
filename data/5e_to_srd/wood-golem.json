@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs designed as protectors with sturdy natural armor and melee attacks."
+  },
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Similar construct nature with high durability, magic resistance, and melee slam attacks."
+  },
+  "monster_key": "wood-golem"
+}

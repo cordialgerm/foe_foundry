@@ -1,0 +1,19 @@
+{
+  "Ice Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful, cold-themed elementals with a fearsome presence and control abilities."
+  },
+  "Frost Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the cold, huge, and physically imposing traits with strong cold-based attacks."
+  },
+  "Ice Mephit": {
+    "relation": "mechanically_similar",
+    "explanation": "Smaller cold elemental with cold damage and extinguishing flames, similar in elemental theme and abilities."
+  },
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elementals with high mobility and elemental control, though different elements."
+  },
+  "monster_key": "thuellai"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "The Gulon is a large, formidable, and resilient monstrosity with a strong bite and claw attacks, similar to the Giant Crocodile's physical traits and ambush tactics."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gulon's ability to navigate tight spaces and leave difficult terrain resembles the amorphous and space-navigating nature of the Black Pudding."
+  },
+  "monster_key": "gulon"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Boar": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful beast with strong melee attacks and a fearsome presence similar to the Daeodon."
+  },
+  "Brown Bear": {
+    "relation": "conceptually_similar",
+    "explanation": "A formidable, large beast with resilience and melee capabilities, sharing the bruiser role and intimidating presence."
+  },
+  "monster_key": "daeodon"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Lizard": {
+    "relation": "close_cousins",
+    "explanation": "A large, physical predator with strong claws and bite attacks similar to a Giant Lizard."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares earth manipulation and terrain control abilities, embodying the power of earth."
+  },
+  "monster_key": "catamount"
+}

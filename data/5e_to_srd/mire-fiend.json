@@ -1,0 +1,11 @@
+{
+  "Hezrou": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fiendish demons adapted to swampy or aquatic environments with resilience and multiple attack forms."
+  },
+  "Dretch": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiendish demon nature and low CR, but differs in abilities and resilience."
+  },
+  "monster_key": "mire-fiend"
+}

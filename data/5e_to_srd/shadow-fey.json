@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy humanoid creatures associated with darkness and stealth."
+  },
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "Both are stealthy, dark-dwelling humanoids with fey or magical traits and sensitivity to light."
+  },
+  "monster_key": "shadow-fey"
+}

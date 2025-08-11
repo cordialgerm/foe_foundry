@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic creatures with powerful tentacles used for grappling and swallowing prey."
+  },
+  "Kraken": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gulper Behemoth shares the concept of a gargantuan aquatic predator with a massive mouth and devastating area effects."
+  },
+  "monster_key": "gulper-behemoth"
+}

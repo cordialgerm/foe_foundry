@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish creatures with manipulative and combat abilities, though the Jackalwere Pack Leader focuses on shapeshifting and charm."
+  },
+  "Jackal": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares jackal-like features and cunning nature, though the Jackalwere Pack Leader is a fiend with shapeshifting and magical abilities."
+  },
+  "monster_key": "jackalwere-pack-leader"
+}

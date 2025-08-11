@@ -1,0 +1,23 @@
+{
+  "Giant Crab": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic creatures with hard shells and pincers, though the Blood Barnacle is much smaller and parasitic."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic creatures with tentacle-like appendages and ambush predation, sharing an underwater stealthy nature."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "mechanically_similar",
+    "explanation": "Both use disease or poison to weaken prey and can incapacitate targets over time."
+  },
+  "Swarm of Quippers": {
+    "relation": "mechanically_similar",
+    "explanation": "Both are small aquatic creatures that attack in groups and cause ongoing damage to prey."
+  },
+  "Giant Poisonous Snake": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the theme of delivering harmful effects through bites, similar to the Blood Barnacle's disease transmission."
+  },
+  "monster_key": "blood-barnacle"
+}

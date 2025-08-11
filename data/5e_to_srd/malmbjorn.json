@@ -1,0 +1,11 @@
+{
+  "Bulette": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge, burrowing monstrosities with powerful claws and ambush predator roles."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ability to digest metal and has a corrosive nature, similar to the Malmbjorn's metal-eating trait."
+  },
+  "monster_key": "malmbjorn"
+}

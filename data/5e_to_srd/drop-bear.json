@@ -1,0 +1,11 @@
+{
+  "Giant Ape": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, powerful beasts capable of climbing and grappling prey in forested environments."
+  },
+  "Tiger": {
+    "relation": "conceptually_similar",
+    "explanation": "A large ambush predator with sharp claws and stealthy hunting tactics in forested areas."
+  },
+  "monster_key": "drop-bear"
+}

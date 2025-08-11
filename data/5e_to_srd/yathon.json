@@ -1,0 +1,11 @@
+{
+  "Gargoyle": {
+    "relation": "close_cousins",
+    "explanation": "A large flying humanoid with powerful claws and a strong physical presence, similar to a Gargoyle."
+  },
+  "Gladiator": {
+    "relation": "conceptually_similar",
+    "explanation": "A strong humanoid bruiser wielding a greatsword and engaging in melee combat like a Gladiator."
+  },
+  "monster_key": "yathon"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Crab": {
+    "relation": "close_cousins",
+    "explanation": "The Sporous Crab is a small, filthy amphibious crab-like beast with claw attacks similar to a Giant Crab."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the filthy, swampy, and infectious nature with corrosive and damaging abilities, akin to the Sporous Crab's spore infection."
+  },
+  "monster_key": "sporous-crab"
+}

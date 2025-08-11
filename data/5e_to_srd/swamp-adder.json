@@ -1,0 +1,7 @@
+{
+  "Poisonous Snake": {
+    "relation": "almost_identical",
+    "explanation": "A small, stealthy snake with a poisonous bite that can paralyze, thriving in swampy environments."
+  },
+  "monster_key": "swamp-adder"
+}

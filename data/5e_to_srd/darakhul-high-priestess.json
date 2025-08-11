@@ -1,0 +1,11 @@
+{
+  "Mummy": {
+    "relation": "close_cousins",
+    "explanation": "An undead spellcaster priestess with a debilitating stench and the ability to raise the dead, similar to a Mummy."
+  },
+  "Priest": {
+    "relation": "conceptually_similar",
+    "explanation": "A high priestess with spellcasting and manipulative abilities shares the concept of a Priest."
+  },
+  "monster_key": "darakhul-high-priestess"
+}

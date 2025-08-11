@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "A tiny chaotic fey with spellcasting and manipulative abilities similar to a Sprite."
+  },
+  "Quasit": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, mischievous, and poisonous fey-like creature with chaotic evil alignment."
+  },
+  "monster_key": "rum-story-keeper"
+}

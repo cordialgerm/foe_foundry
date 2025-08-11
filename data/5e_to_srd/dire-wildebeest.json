@@ -1,0 +1,11 @@
+{
+  "Giant Boar": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful beast known for charging and trampling foes, similar to the Dire Wildebeest's bruiser role and trampling charge."
+  },
+  "Giant Elk": {
+    "relation": "conceptually_similar",
+    "explanation": "A large herbivorous beast with impressive antlers and charging abilities, conceptually similar to a large wildebeest-like creature."
+  },
+  "monster_key": "dire-wildebeest"
+}

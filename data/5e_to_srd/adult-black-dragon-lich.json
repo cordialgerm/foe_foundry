@@ -1,0 +1,11 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the draconic form, acid breath, and swampy environment typical of an Adult Black Dragon."
+  },
+  "Lich": {
+    "relation": "close_cousins",
+    "explanation": "Combines undead spellcasting and lich traits with the dragon's physical prowess."
+  },
+  "monster_key": "adult-black-dragon-lich"
+}

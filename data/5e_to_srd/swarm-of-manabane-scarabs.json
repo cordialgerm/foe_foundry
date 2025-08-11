@@ -1,0 +1,11 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small creatures that occupy the same space and overwhelm foes, with the homebrew swarm having a magical disruption twist."
+  },
+  "Swarm of Quippers": {
+    "relation": "close_cousins",
+    "explanation": "Similar swarm mechanics and the ability to occupy spaces of other creatures, though the homebrew swarm focuses on magic disruption."
+  },
+  "monster_key": "swarm-of-manabane-scarabs"
+}

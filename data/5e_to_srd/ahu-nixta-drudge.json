@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are mechanical constructs with armor that protects and enables combat abilities."
+  },
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the aberration type and a unique, somewhat shapeless form within a protective shell."
+  },
+  "monster_key": "ahu-nixta-drudge"
+}

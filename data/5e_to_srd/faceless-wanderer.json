@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with mind-affecting abilities and a mysterious, unsettling presence."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a formless, disturbing appearance and chaotic, mind-affecting nature."
+  },
+  "monster_key": "faceless-wanderer"
+}

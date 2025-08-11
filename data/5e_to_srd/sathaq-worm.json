@@ -1,0 +1,11 @@
+{
+  "Purple Worm": {
+    "relation": "close_cousins",
+    "explanation": "A massive burrowing worm-like creature with high hit points and powerful melee attacks."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "An elemental creature associated with earth and stone, sharing the elemental nature and burrowing ability."
+  },
+  "monster_key": "sathaq-worm"
+}

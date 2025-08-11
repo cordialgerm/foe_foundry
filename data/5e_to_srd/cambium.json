@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Cambium is a large fiend with natural armor and melee and ranged attacks, similar to the Barbed Devil's fiendish nature and combat style."
+  },
+  "Erinyes": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cunning, manipulative fiends with flying ability and spellcasting, using deception and debilitating tactics."
+  },
+  "monster_key": "cambium"
+}

@@ -1,0 +1,7 @@
+{
+  "Iron Golem": {
+    "relation": "almost_identical",
+    "explanation": "A gargantuan construct with high durability, immunity to nonmagical attacks, siege abilities, and a fire breath attack."
+  },
+  "monster_key": "war-machine-golem"
+}

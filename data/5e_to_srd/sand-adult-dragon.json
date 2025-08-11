@@ -1,0 +1,11 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are Huge, neutral evil dragons with a fearsome presence and breath weapons, adapted to harsh environments."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares elemental nature and fire damage immunity, embodying elemental power."
+  },
+  "monster_key": "sand-adult-dragon"
+}

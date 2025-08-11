@@ -1,0 +1,7 @@
+{
+  "Ice Elemental": {
+    "relation": "almost_identical",
+    "explanation": "A large elemental composed of ice and frost with immunity to cold and vulnerability to fire, matching the homebrew's description and abilities."
+  },
+  "monster_key": "ice-elemental"
+}

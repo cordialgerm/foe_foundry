@@ -1,0 +1,11 @@
+{
+  "Satyr": {
+    "relation": "conceptually_similar",
+    "explanation": "The P\u00faca is a large, charming fey creature that manipulates and beguiles travelers, similar to the Satyr's fey trickster nature."
+  },
+  "Unicorn": {
+    "relation": "conceptually_similar",
+    "explanation": "The P\u00faca's large fey form with hooves and a nightmarish ride ability conceptually resembles the majestic and elusive Unicorn."
+  },
+  "monster_key": "p\u00faca"
+}

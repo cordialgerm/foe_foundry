@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium humanoid spellcasters with a focus on using magical or alchemical effects to support and damage."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "The Alchemist shares the intelligent, dexterous humanoid archetype with magical knowledge and battlefield control."
+  },
+  "monster_key": "alchemist"
+}

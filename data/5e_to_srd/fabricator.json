@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs with durable mechanical structures designed for defense and combat."
+  },
+  "Iron Golem": {
+    "relation": "close_cousins",
+    "explanation": "A large, durable construct with strong offensive capabilities and immunities, similar in role and toughness."
+  },
+  "monster_key": "fabricator"
+}

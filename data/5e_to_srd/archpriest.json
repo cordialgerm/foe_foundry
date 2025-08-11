@@ -1,0 +1,11 @@
+{
+  "Acolyte": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are religious spellcasters with healing and divine magic, though the Archpriest is far more powerful and martial."
+  },
+  "Priest": {
+    "relation": "almost_identical",
+    "explanation": "The Archpriest is a high-level, durable version of a Priest with strong healing, radiant damage, and martial capabilities."
+  },
+  "monster_key": "archpriest"
+}

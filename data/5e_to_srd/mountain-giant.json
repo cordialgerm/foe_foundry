@@ -1,0 +1,11 @@
+{
+  "Stone Giant": {
+    "relation": "almost_identical",
+    "explanation": "A gargantuan giant from mountainous regions with powerful melee attacks and terrain manipulation similar to the Stone Giant."
+  },
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Shares the earth and terrain manipulation theme and summoning earth elementals."
+  },
+  "monster_key": "mountain-giant"
+}

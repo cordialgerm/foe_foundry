@@ -1,0 +1,11 @@
+{
+  "Ogre Zombie": {
+    "relation": "close_cousins",
+    "explanation": "A Huge undead brute with strong melee attacks and a menacing presence similar to the Necrotech Reaver."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs or animated entities with a focus on melee combat and a siege-like role."
+  },
+  "monster_key": "necrotech-reaver"
+}

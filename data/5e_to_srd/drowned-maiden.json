@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead controllers with psychic abilities and a focus on manipulation and deception."
+  },
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "The Drowned Maiden shares the theme of a female undead spirit using psychic attacks and a chilling presence."
+  },
+  "monster_key": "drowned-maiden"
+}

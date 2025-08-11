@@ -1,0 +1,11 @@
+{
+  "Gladiator": {
+    "relation": "almost_identical",
+    "explanation": "A formidable humanoid warrior skilled in melee combat and leadership, similar to the Knight Captain."
+  },
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A seasoned warrior with combat experience and tactical skills, akin to the Knight Captain's role."
+  },
+  "monster_key": "knight-captain"
+}

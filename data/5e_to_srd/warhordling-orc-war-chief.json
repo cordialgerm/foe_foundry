@@ -1,0 +1,7 @@
+{
+  "Orc": {
+    "relation": "almost_identical",
+    "explanation": "A strong, aggressive orc leader wielding a greataxe and excelling in melee combat."
+  },
+  "monster_key": "warhordling-orc-war-chief"
+}

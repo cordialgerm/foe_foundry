@@ -1,0 +1,11 @@
+{
+  "Kraken": {
+    "relation": "close_cousins",
+    "explanation": "Both are gargantuan aquatic monstrosities with powerful melee attacks, swallow ability, and destructive capabilities."
+  },
+  "Giant Octopus": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares aquatic nature, multiple tentacle attacks, and the ability to grapple or restrain foes."
+  },
+  "monster_key": "timingila"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Wasp": {
+    "relation": "close_cousins",
+    "explanation": "Both are large flying creatures with poisonous attacks and toxic effects."
+  },
+  "Wyvern": {
+    "relation": "conceptually_similar",
+    "explanation": "A large flying monstrosity with grappling and poisonous attacks, similar in role and mobility."
+  },
+  "monster_key": "caldera-kite"
+}

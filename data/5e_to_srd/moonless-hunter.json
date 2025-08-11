@@ -1,0 +1,15 @@
+{
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures that use fear and psychological effects to weaken foes."
+  },
+  "Darkmantle": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares stealth and ambush tactics in dark environments, using surprise and shadowy movement."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures connected to natural and shadowy environments with magical abilities."
+  },
+  "monster_key": "moonless-hunter"
+}

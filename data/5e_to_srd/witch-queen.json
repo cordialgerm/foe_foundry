@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "A small, cunning chaotic evil humanoid spellcaster with darkvision and spellcasting abilities."
+  },
+  "Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "A manipulative, chaotic evil magic user with sunlight sensitivity and a devious combat style."
+  },
+  "monster_key": "witch-queen"
+}

@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Darakhul is a medium undead with paralysis and disease abilities similar to a Ghoul's paralysis and undead nature."
+  },
+  "Wight": {
+    "relation": "mechanically_similar",
+    "explanation": "Darakhul's multiattack and use of weapons like a war pick resemble the Wight's combat style and undead traits."
+  },
+  "monster_key": "darakhul"
+}

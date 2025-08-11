@@ -1,0 +1,11 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "A treacherous, cunning underground humanoid with abilities to charm and ambush, similar to Drow."
+  },
+  "Deep Gnome": {
+    "relation": "close_cousins",
+    "explanation": "An underground humanoid with stealth and cunning traits, akin to the Dwarf Angler's environment and behavior."
+  },
+  "monster_key": "dwarf-angler"
+}

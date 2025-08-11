@@ -1,0 +1,11 @@
+{
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "A medium undead creature that induces fear and has a strong presence."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "An undead that uses claw attacks and instills fear, similar to ghouls."
+  },
+  "monster_key": "dissimortuum"
+}

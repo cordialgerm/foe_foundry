@@ -1,0 +1,15 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Ouroban is a formidable armored humanoid fighter with weapon proficiency similar to a Veteran."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Ouroban is a powerful spellcaster with a variety of control and fire spells like a Mage."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ouroban's fire-based abilities and immunity to fire damage conceptually resemble a Fire Elemental."
+  },
+  "monster_key": "ouroban"
+}

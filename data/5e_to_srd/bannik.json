@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are water-associated creatures with aquatic movement and control over water."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Bannik is a fey with a connection to nature and water, similar to Dryads' connection to forests."
+  },
+  "monster_key": "bannik"
+}

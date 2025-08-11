@@ -1,0 +1,11 @@
+{
+  "Quickling": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, chaotic, and stealthy fey creature known for speed and trickery."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures associated with forest environments and stealth."
+  },
+  "monster_key": "vile-barber"
+}

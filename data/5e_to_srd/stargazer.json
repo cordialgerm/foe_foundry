@@ -1,0 +1,11 @@
+{
+  "Otyugh": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge subterranean monstrosities with multiple tentacle-like appendages used for grappling and controlling foes."
+  },
+  "Roper": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of using tendril-like appendages to trap and grapple enemies, with a durable, stone-like presence."
+  },
+  "monster_key": "stargazer"
+}

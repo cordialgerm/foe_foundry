@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "close_cousins",
+    "explanation": "Both are shadowy, stealthy Medium aberrations that use fear and darkness to their advantage."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of lurking in darkness and ambushing prey using shadows and stealth."
+  },
+  "monster_key": "nalusa-falaya"
+}

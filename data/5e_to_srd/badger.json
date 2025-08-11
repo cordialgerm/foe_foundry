@@ -1,0 +1,7 @@
+{
+  "Badger": {
+    "relation": "almost_identical",
+    "explanation": "A small, stocky mammal with powerful digging claws and a black-and-white striped face, matching the SRD Badger closely."
+  },
+  "monster_key": "badger"
+}

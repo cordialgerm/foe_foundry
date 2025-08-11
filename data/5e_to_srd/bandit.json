@@ -1,0 +1,7 @@
+{
+  "Bandit": {
+    "relation": "almost_identical",
+    "explanation": "A rough, scrappy humanoid wearing mismatched leather armor, often armed with a scimitar and a light crossbow."
+  },
+  "monster_key": "bandit"
+}

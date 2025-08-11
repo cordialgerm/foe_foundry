@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "A fey creature protecting its tree with agility and magic resistance, similar to a Dryad."
+  },
+  "Green Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a malevolent fey nature and chaotic evil alignment with poisonous and magical attacks."
+  },
+  "monster_key": "splinter-matron"
+}

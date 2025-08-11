@@ -1,0 +1,11 @@
+{
+  "Grimlock": {
+    "relation": "close_cousins",
+    "explanation": "Both are stealthy, subterranean aberrations that rely on blindsight and ambush tactics in dark environments."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the shadowy, stealthy nature and thrives in darkness, using ambush and climbing abilities."
+  },
+  "monster_key": "lesser-lunarchidna"
+}

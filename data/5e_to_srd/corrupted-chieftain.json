@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Corrupted Chieftain is a large chaotic giant similar to a Hill Giant but with magical weaponry and commanding abilities."
+  },
+  "Fire Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a powerful, commanding giant with strong melee attacks and battlefield presence."
+  },
+  "monster_key": "corrupted-chieftain"
+}

@@ -1,0 +1,11 @@
+{
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "An aerial, incorporeal construct-like entity with stealth and high mobility."
+  },
+  "Flying Sword": {
+    "relation": "close_cousins",
+    "explanation": "A flying construct with no walking ability that attacks and serves as a magical guardian."
+  },
+  "monster_key": "sigilian"
+}

@@ -1,0 +1,11 @@
+{
+  "Skeleton": {
+    "relation": "almost_identical",
+    "explanation": "A skeletal undead warrior with weapon attacks and vulnerabilities typical of skeletons."
+  },
+  "Veteran": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares combat role and multiple weapon attacks similar to a seasoned warrior."
+  },
+  "monster_key": "veteran-swordbreaker-skeleton"
+}

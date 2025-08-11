@@ -1,0 +1,11 @@
+{
+  "Young Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large, benevolent celestial dragon with radiant breath and protective nature similar to a Young Gold Dragon."
+  },
+  "Young Silver Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares celestial and radiant thematic elements and a protective alignment akin to a Young Silver Dragon."
+  },
+  "monster_key": "young-light-dragon"
+}

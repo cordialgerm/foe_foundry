@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy undead creatures that manipulate darkness and instill fear."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful undead with incorporeal traits and a focus on fear and darkness."
+  },
+  "monster_key": "incarnate-gloom"
+}

@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Veteran closely matches the SRD Veteran as a seasoned, medium humanoid warrior with multiattack and tactical combat skills."
+  },
+  "monster_key": "veteran"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs with armor and combat capabilities, though the Clockwork Archon is much larger and more powerful."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "Both serve as protective constructs designed to guard and assist allies, with high durability and combat roles."
+  },
+  "monster_key": "clockwork-archon"
+}

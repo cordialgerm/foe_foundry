@@ -1,0 +1,11 @@
+{
+  "Dust Mephit": {
+    "relation": "close_cousins",
+    "explanation": "Both are small elemental creatures associated with air and sand, capable of creating obscuring effects."
+  },
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elemental beings with fluid, shifting forms and control over air-related phenomena."
+  },
+  "monster_key": "anubian"
+}

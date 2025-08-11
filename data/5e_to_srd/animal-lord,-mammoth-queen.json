@@ -1,0 +1,11 @@
+{
+  "Mammoth": {
+    "relation": "close_cousins",
+    "explanation": "The Mammoth Queen is an elephantine creature with tusks and a massive presence similar to a Mammoth."
+  },
+  "Treant": {
+    "relation": "conceptually_similar",
+    "explanation": "As a powerful fey protector of nature with a huge, resilient form, she shares conceptual similarities with the Treant."
+  },
+  "monster_key": "animal-lord,-mammoth-queen"
+}

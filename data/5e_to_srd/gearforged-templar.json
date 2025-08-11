@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as guardians with defensive capabilities and multiattack features."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful constructs designed to protect and enforce order, with strong defensive traits."
+  },
+  "monster_key": "gearforged-templar"
+}

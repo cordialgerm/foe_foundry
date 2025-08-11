@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic monstrosities with tentacle-like features and strong presence in water."
+  },
+  "Black Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares aquatic habitat and poison damage with a formidable presence and stunning abilities."
+  },
+  "monster_key": "scitalis"
+}

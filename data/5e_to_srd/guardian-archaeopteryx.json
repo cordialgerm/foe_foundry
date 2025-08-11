@@ -1,0 +1,11 @@
+{
+  "Pteranodon": {
+    "relation": "close_cousins",
+    "explanation": "A small, flying dinosaur-like beast with natural agility and flight capabilities."
+  },
+  "Giant Owl": {
+    "relation": "conceptually_similar",
+    "explanation": "A nimble flying creature with keen perception and supportive combat role."
+  },
+  "monster_key": "guardian-archaeopteryx"
+}

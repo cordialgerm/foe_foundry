@@ -1,0 +1,11 @@
+{
+  "Giant Scorpion": {
+    "relation": "close_cousins",
+    "explanation": "The Ruin Scarab shares a similar large, predatory arthropod form and multiattack style with the Giant Scorpion."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "As a Large undead creature dealing necrotic damage and incapacitating foes, it is related to the Wight in undead nature and combat role."
+  },
+  "monster_key": "ruin-scarab"
+}

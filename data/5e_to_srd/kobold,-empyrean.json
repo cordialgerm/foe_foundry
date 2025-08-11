@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "close_cousins",
+    "explanation": "The Kobold Empyrean is a celestial variant of the Kobold, sharing its draconic heritage and small size but with enhanced powers and support abilities."
+  },
+  "monster_key": "kobold,-empyrean"
+}

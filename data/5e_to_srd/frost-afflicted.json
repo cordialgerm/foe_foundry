@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "close_cousins",
+    "explanation": "A cold-aligned, chaotic humanoid with frost-related abilities and immunity to cold damage shares thematic elements with the Winter Wolf."
+  },
+  "Frost Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cold-themed creatures from snowy regions with strong cold damage abilities, though the Frost Giant is much larger and more powerful."
+  },
+  "monster_key": "frost-afflicted"
+}

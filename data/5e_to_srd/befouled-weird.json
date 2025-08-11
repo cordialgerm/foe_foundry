@@ -1,0 +1,7 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Befouled Weird is an aquatic elemental with water movement and natural armor similar to a Water Elemental."
+  },
+  "monster_key": "befouled-weird"
+}

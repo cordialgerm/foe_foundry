@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures with magical abilities and a connection to natural or hidden environments."
+  },
+  "Swarm of Rats": {
+    "relation": "mechanically_similar",
+    "explanation": "The Kikimora can summon swarms to aid in combat, similar to a Swarm of Rats."
+  },
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elusive, invisible, and mobile traits with teleportation and stealth."
+  },
+  "monster_key": "kikimora"
+}

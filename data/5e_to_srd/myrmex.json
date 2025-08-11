@@ -1,0 +1,11 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Myrmex is an earth elemental with terrain manipulation and burrowing abilities similar to the Earth Elemental."
+  },
+  "Dust Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elemental creatures with limited spell-like abilities and a connection to earth or dust."
+  },
+  "monster_key": "myrmex"
+}

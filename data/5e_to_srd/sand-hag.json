@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Sand Hag is a fey hag with illusion and deception abilities similar to the Green Hag, adapted to sandy desert terrain."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures connected to natural environments and use illusions to manipulate their surroundings."
+  },
+  "monster_key": "sand-hag"
+}

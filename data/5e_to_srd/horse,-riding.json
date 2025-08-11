@@ -1,0 +1,7 @@
+{
+  "Riding Horse": {
+    "relation": "almost_identical",
+    "explanation": "A large, fast beast used as a mount with similar speed and role."
+  },
+  "monster_key": "horse,-riding"
+}

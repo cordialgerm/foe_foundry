@@ -1,0 +1,7 @@
+{
+  "Water Elemental": {
+    "relation": "almost_identical",
+    "explanation": "A huge water elemental with fluid movement, grappling abilities, and elemental resistances similar to the standard Water Elemental."
+  },
+  "monster_key": "giant-water-elemental"
+}

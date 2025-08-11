@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A strategic humanoid leader skilled in combat and battlefield tactics."
+  },
+  "Priest": {
+    "relation": "conceptually_similar",
+    "explanation": "A spellcasting humanoid who supports and protects allies with magic."
+  },
+  "monster_key": "field-commander"
+}

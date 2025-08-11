@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "A vengeful, incorporeal undead spirit with possession and necrotic abilities matching the Ghost."
+  },
+  "monster_key": "vengeful-ghost"
+}

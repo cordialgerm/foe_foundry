@@ -1,0 +1,7 @@
+{
+  "Frost Giant": {
+    "relation": "almost_identical",
+    "explanation": "The Frost Giant Jarl is a close variant of the Frost Giant, sharing its icy theme, size, and combat style with added tactical and grappling abilities."
+  },
+  "monster_key": "frost-giant-jarl"
+}

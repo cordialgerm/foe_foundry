@@ -1,0 +1,15 @@
+{
+  "Half-Dragon Template": {
+    "relation": "almost_identical",
+    "explanation": "A humanoid warrior with draconic features and a fire breath weapon closely matches the Half-Dragon Template."
+  },
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The creature is a seasoned fighter with martial skills and tactical combat similar to a Veteran."
+  },
+  "Young Red Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares draconic fire-breathing traits and red dragon heritage, though the homebrew is humanoid and more tactical."
+  },
+  "monster_key": "half-red-dragon-veteran"
+}

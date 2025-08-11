@@ -1,0 +1,7 @@
+{
+  "Swarm of Insects": {
+    "relation": "almost_identical",
+    "explanation": "A swarm of beetles dealing damage and occupying the same space as other creatures is very similar to a Swarm of Insects."
+  },
+  "monster_key": "beetle,-clacker-swarm"
+}

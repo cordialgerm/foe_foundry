@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with disruptive abilities and a chaotic, alien nature."
+  },
+  "Quasit": {
+    "relation": "close_cousins",
+    "explanation": "Small, flying aberrations with stealthy and disruptive traits."
+  },
+  "monster_key": "mamura"
+}

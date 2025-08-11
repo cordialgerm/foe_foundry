@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiery nature and elemental fire theme with the Phoenixborn Sorcerer."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "Both are humanoid spellcasters with versatile spellcasting abilities."
+  },
+  "monster_key": "phoenixborn-sorcerer"
+}

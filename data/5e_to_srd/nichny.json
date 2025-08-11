@@ -1,0 +1,11 @@
+{
+  "Satyr": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are medium fey creatures known for their cunning and magical abilities."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey associated with enchanted forests and possess mystical qualities."
+  },
+  "monster_key": "nichny"
+}

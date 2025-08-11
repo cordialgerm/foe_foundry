@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs resembling animated statues with stealth and combat capabilities."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares stealth, incorporeal movement, and the ability to impose disadvantages on foes."
+  },
+  "monster_key": "idolic-deity"
+}

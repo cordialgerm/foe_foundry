@@ -1,0 +1,11 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elementals with burrowing abilities and control over earth-like terrain, with the Fragrite having a sand and glass theme."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Fragrite's spontaneous explosion ability and elemental nature conceptually resemble the fiery destructive nature of a Fire Elemental."
+  },
+  "monster_key": "fragrite"
+}

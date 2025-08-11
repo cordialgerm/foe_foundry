@@ -1,0 +1,11 @@
+{
+  "Giant Wolf Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are tiny, agile beasts with poison and pack tactics, using speed and coordination to ambush prey."
+  },
+  "Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares pack tactics and keen senses, though the Porcellina is much smaller and poisonous."
+  },
+  "monster_key": "porcellina"
+}

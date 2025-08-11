@@ -1,0 +1,11 @@
+{
+  "Giant Ape": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, powerful beasts with strong physical attacks and climbing ability in jungle environments."
+  },
+  "Giant Bear": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, durable beast with powerful claws and bite, similar in role as a bruiser."
+  },
+  "monster_key": "giant-sloth"
+}

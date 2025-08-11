@@ -1,0 +1,11 @@
+{
+  "Giant Goat": {
+    "relation": "close_cousins",
+    "explanation": "A large, strong creature adapted to mountainous terrain with a headbutt attack."
+  },
+  "Berserker": {
+    "relation": "conceptually_similar",
+    "explanation": "A bruiser role with strong melee attacks and aggressive combat style similar to the Mountain Strider."
+  },
+  "monster_key": "mountain-strider"
+}

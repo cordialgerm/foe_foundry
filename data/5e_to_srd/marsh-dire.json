@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Marsh Dire is a powerful undead melee combatant with grappling and poison abilities, similar to the Ghoul's undead nature and melee focus."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Marsh Dire shares undead traits, high durability, and melee combat prowess with the Wight, making them related undead combatants."
+  },
+  "monster_key": "marsh-dire"
+}

@@ -1,0 +1,7 @@
+{
+  "Giant Scorpion": {
+    "relation": "almost_identical",
+    "explanation": "A large scorpion-like monstrosity with a venomous sting and strong melee attacks."
+  },
+  "monster_key": "scorpionfolk"
+}

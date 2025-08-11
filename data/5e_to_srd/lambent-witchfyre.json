@@ -1,0 +1,11 @@
+{
+  "Magma Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fire-based creatures with fiery appearances and abilities related to fire damage and regeneration."
+  },
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "A large, fire-based elemental creature that embodies fire and can heal from fire damage, similar to the Lambent Witchfyre's fire absorption."
+  },
+  "monster_key": "lambent-witchfyre"
+}
