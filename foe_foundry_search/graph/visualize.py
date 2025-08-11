@@ -1,4 +1,3 @@
-import random
 from enum import Enum
 from pathlib import Path
 
@@ -48,34 +47,16 @@ def _create_layout_positions(subgraph: nx.DiGraph, layout_type: LayoutType) -> d
         raise ValueError(f"Unsupported layout type: {layout_type}")
 
 
-def visualize_graph_sampled(
-    G, output_dir: Path, layout_type: LayoutType = LayoutType.SPRING
+def visualize_graph(
+    subgraph, output_dir: Path, layout_type: LayoutType = LayoutType.SPRING
 ):
     """
     Visualize a sampled subset of the graph with the specified layout.
 
     Args:
-        G: The full NetworkX graph
+        subgraph: The sampled NetworkX graph
         layout_type: The layout algorithm to use for positioning nodes
     """
-    # Get all MON nodes whose names start with 'a' or 'b'
-    mon_nodes = [
-        n
-        for n, d in G.nodes(data=True)
-        if d.get("type") == "MON" and d.get("name", "").lower().startswith(("a", "b"))
-    ]
-    sample_size = min(40, len(mon_nodes))
-    sampled_mons = random.sample(mon_nodes, sample_size)
-
-    # Find all nodes up to 4th degree connection from sampled_mons using ego_graph
-    nodes_to_plot = set()
-    for node in sampled_mons:
-        # ego_graph returns subgraph of all nodes within radius distance from node
-        ego = nx.ego_graph(G.to_undirected(), node, radius=4)
-        nodes_to_plot.update(ego.nodes())
-
-    subgraph = G.subgraph(nodes_to_plot)
-
     plt.figure(figsize=(12, 8))
     pos = _create_layout_positions(subgraph, layout_type)
 
@@ -216,5 +197,5 @@ def visualize_all_layouts(G, output_dir: Path):
     """
     for layout_type in LayoutType:
         print(f"Generating visualization with {layout_type.value} layout...")
-        visualize_graph_sampled(G, output_dir, layout_type)
+        visualize_graph(G, output_dir, layout_type)
         plt.close()  # Close the figure to free memory

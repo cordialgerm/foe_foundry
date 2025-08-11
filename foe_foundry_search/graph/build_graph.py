@@ -47,6 +47,9 @@ CACHE_FILE = CACHE_DIR / "graph.json"
 
 
 class _Cache:
+    def __init__(self):
+        self.issues = []
+
     @cached_property
     def load_graph(self) -> nx.DiGraph:
         """Load the graph from the cache or build it if not cached."""
@@ -60,13 +63,17 @@ class _Cache:
             return nx.node_link_graph(data)
         else:
             # Build and cache
-            graph, _ = _do_build_graph()
+            graph, issues = _do_build_graph()
 
             # Save to cache
             data = nx.node_link_data(graph, edges="links")
             with open(CACHE_FILE, "w") as f:
                 json.dump(data, f, indent=2)
 
+            with open(CACHE_DIR / "issues.txt", "w") as f:
+                f.writelines(f"{issue}\n" for issue in self.issues)
+
+            self.issues = issues
             return graph
 
 
@@ -186,6 +193,25 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
         )
 
     # Add MON → MON edges: Similar monsters via SRD mapping
+    for monster_key, meta in metas.items():
+        for similar_key, similar_type in meta.similar_monsters.items():
+            # skip self references, we know SRD monsters reference themselves
+            if monster_key == similar_key:
+                continue
+
+            if not G.has_node(f"MON:{similar_key}"):
+                issues.append(
+                    f"MON {monster_key} references unknown similar monster {similar_key}"
+                )
+                continue
+
+            G.add_edge(
+                f"MON:{monster_key}",
+                f"MON:{similar_key}",
+                type="similar",
+                similar_type=similar_type.value,
+                relevancy=similar_type.relevancy,
+            )
     if os.path.exists(SRD_MAPPING_PATH):
         with open(SRD_MAPPING_PATH, "r") as f:
             srd_map = json.load(f)
@@ -197,10 +223,6 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
 
             for srd_name in srd_names:
                 srd_monster_key = name_to_key(srd_name)
-
-                # skip self references, we know SRD monsters reference themselves
-                if srd_monster_key == monster_key:
-                    continue
 
                 mon_node_id = f"MON:{monster_key}"
                 srd_node_id = f"MON:{srd_monster_key}"

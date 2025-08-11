@@ -1,11 +1,40 @@
+from __future__ import annotations
+
 from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
+from backports.strenum import StrEnum
 
 from foe_foundry import CreatureType, DamageType
 from foe_foundry.utils import list_to_sentence
+
+
+class SimilarMonsterType(StrEnum):
+    almost_identical = "almost_identical"
+    close_cousins = "close_cousins"
+    conceptually_similar = "conceptually_similar"
+    mechanically_similar = "mechanically_similar"
+
+    @staticmethod
+    def parse(value: str) -> SimilarMonsterType:
+        if value in SimilarMonsterType._value2member_map_:
+            return SimilarMonsterType(value)
+        raise ValueError(f"Unknown SimilarMonsterType: {value}")
+
+    @property
+    def relevancy(self) -> float:
+        if self == SimilarMonsterType.almost_identical:
+            return 1.0
+        elif self == SimilarMonsterType.close_cousins:
+            return 0.8
+        elif self == SimilarMonsterType.conceptually_similar:
+            return 0.5
+        elif self == SimilarMonsterType.mechanically_similar:
+            return 0.3
+        else:
+            raise ValueError(f"Unknown SimilarMonsterType: {self}")
 
 
 @dataclass(kw_only=True)
@@ -42,6 +71,7 @@ class MonsterDocumentMeta:
     skills: str | None
     spellcasting: str | None
     test_queries: list[str]
+    similar_monsters: dict[str, SimilarMonsterType]
 
     @property
     def cr_numeric(self) -> float:

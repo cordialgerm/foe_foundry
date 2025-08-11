@@ -9,7 +9,7 @@ from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.powers import Powers
 
 from .doc import DocType, Document
-from .meta import MonsterDocumentMeta
+from .meta import MonsterDocumentMeta, SimilarMonsterType
 
 
 class _Loader:
@@ -112,6 +112,9 @@ class _Loader:
             with path.open("r", encoding="utf-8") as f:
                 args: dict = json.load(f)
 
+                key = name_to_key(args["name"])
+                similar_monsters = _get_similar_monsters(key)
+
                 args.update(
                     key=name_to_key(args["name"]),
                     path=path,
@@ -123,6 +126,7 @@ class _Loader:
                     damage_types=_cleanup_damage_types(args["damage_types"]),
                     skills=args.pop("skills", None),
                     senses=args.pop("senses", None),
+                    similar_monsters=similar_monsters,
                 )
                 monster = MonsterDocumentMeta(**args)
                 yield monster
@@ -199,3 +203,24 @@ def _cleanup_subtypes(subtypes: str | list[str] | None) -> list[str] | None:
     elif isinstance(subtypes, str):
         subtypes = subtypes.split(",")
     return [s.strip() for s in subtypes]
+
+
+def _get_similar_monsters(key: str) -> dict[str, SimilarMonsterType]:
+    try:
+        srd_mapping_path = Path.cwd() / "data" / "5e_to_srd" / f"{key}.json"
+
+        similar_monsters: dict[str, SimilarMonsterType] = {}
+        if srd_mapping_path.exists():
+            with srd_mapping_path.open("r", encoding="utf-8") as sf:
+                similar_monsters_raw: dict = json.load(sf)
+                for key, vals in similar_monsters_raw.items():
+                    if key == "monster_key" or len(vals) == 0:
+                        continue
+                    similar_key = name_to_key(key)
+                    similar_type = SimilarMonsterType.parse(vals["relation"])
+                    similar_monsters[similar_key] = similar_type
+
+        return similar_monsters
+
+    except Exception as x:
+        raise ValueError(f"Error loading similar monsters for {key}: {x}") from x

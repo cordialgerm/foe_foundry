@@ -18,7 +18,7 @@ from foe_foundry_search.graph import (
 )
 
 
-def sample_subgraph(G, max_mon_nodes: int = 40, ego_radius: int = 4) -> nx.DiGraph:
+def sample_subgraph(G, max_mon_nodes: int = 10, ego_radius: int = 4) -> nx.DiGraph:
     """
     Sample a subgraph from the full graph for visualization and testing.
 
@@ -31,11 +31,7 @@ def sample_subgraph(G, max_mon_nodes: int = 40, ego_radius: int = 4) -> nx.DiGra
         A subgraph containing the sampled nodes and their connections
     """
     # Get all MON nodes whose names start with 'a' or 'b'
-    mon_nodes = [
-        n
-        for n, d in G.nodes(data=True)
-        if d.get("type") == "MON" and d.get("name", "").lower().startswith(("a", "b"))
-    ]
+    mon_nodes = [n for n, d in G.nodes(data=True) if d.get("type") == "MON"]
     sample_size = min(max_mon_nodes, len(mon_nodes))
     sampled_mons = random.sample(mon_nodes, sample_size)
 
@@ -83,9 +79,10 @@ def test_subgraph_sampling():
 def test_visualization_layouts():
     """Test visualization with different layouts (without saving files)."""
     G = load_graph()
+    subgraph = sample_subgraph(G)
     output_dir = Path.cwd() / "tests" / "outputs"
     output_dir.mkdir(exist_ok=True)
-    visualize_all_layouts(G, output_dir)
+    visualize_all_layouts(subgraph, output_dir)
 
 
 def test_find_descendants():
