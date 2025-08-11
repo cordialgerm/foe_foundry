@@ -185,10 +185,11 @@ def search_monsters(
             if not (min_cr <= cr <= max_cr):
                 return False
 
-        if (
-            creature_types is not None
-            and node.get("creature_type") not in creature_types
-        ):
+        node_creature_type = node.get("creature_type")
+        node_creature_type = (
+            CreatureType.parse(node_creature_type) if node_creature_type else None
+        )
+        if creature_types is not None and node_creature_type not in creature_types:
             return False
 
         return True
