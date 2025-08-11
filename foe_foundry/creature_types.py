@@ -108,3 +108,7 @@ class CreatureType(StrEnum):
         exclusions = set(creature_type)
         all = {c for c in CreatureType}
         return all - exclusions
+
+    @staticmethod
+    def parse(ct: str) -> CreatureType:
+        return CreatureType(ct.lower())

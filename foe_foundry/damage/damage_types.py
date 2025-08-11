@@ -70,6 +70,12 @@ class DamageType(StrEnum):
             DamageType.Poison,
         }
 
+    @staticmethod
+    def parse(damage_type: str) -> DamageType:
+        damage_type = damage_type.strip().lower()
+        val = DamageType._member_map_[damage_type.title()]
+        return cast(DamageType, val)
+
     @property
     def adj(self) -> str:
         if self == DamageType.Acid:
