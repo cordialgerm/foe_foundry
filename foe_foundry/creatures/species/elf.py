@@ -1,0 +1,51 @@
+from ...attack_template import spell
+from ...attributes import AbilityScore, Skills
+from ...damage import AttackType
+from ...powers import RIBBON_POWER
+from ...role_types import MonsterRole
+from ...spells import CasterType
+from ...statblocks import BaseStatblock, MonsterDials
+from .species import CreatureSpecies
+
+
+class _HighElfSpecies(CreatureSpecies):
+    def __init__(self):
+        super().__init__(
+            name="High Elf",
+            description="High Elves are a tall, slender species known for their grace and intelligence",
+        )
+
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().alter_base_stats(stats)
+        stats = stats.apply_monster_dials(
+            MonsterDials(recommended_powers_modifier=-RIBBON_POWER)
+        )
+        stats = stats.copy(creature_subtype="Elf")
+        stats = stats.grant_proficiency_or_expertise(Skills.Arcana)
+        stats = stats.grant_spellcasting(CasterType.Arcane, AbilityScore.INT)
+        stats = stats.with_roles(additional_roles=[MonsterRole.Artillery])
+
+        if not stats.attack_types.intersection(AttackType.AllSpell()):
+            attack = spell.ArcaneBurst.copy(damage_scalar=0.9)
+            stats = attack.add_as_secondary_attack(stats)
+
+        return stats
+
+
+# High Elf Power Brainstorm
+
+# Arcane Mastery - add extra damage to a spell or spell attack
+# Fey Step - like Misty Step
+
+# Wood Elf Power Brainstorm
+
+# Stealth and Perception proficiency
+# Vanish into the Woods - become invisible when in natural terrain
+# Fleet of Foot - faster movement
+
+# Dark Elf Power Brainstorm
+
+# Faerie Fire
+# Darkness
+
+HighElfSpecies: CreatureSpecies = _HighElfSpecies()

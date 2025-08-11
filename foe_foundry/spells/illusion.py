@@ -1,5 +1,5 @@
 from ..features import ActionType
-from ..skills import Stats
+from ..skills import AbilityScore
 from .spell import Spell
 
 DisguiseSelf: Spell = Spell(
@@ -23,7 +23,7 @@ Fear: Spell = Spell(
     school="illusion",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.WIS,
+    save=AbilityScore.WIS,
     upcast=False,
     concentration=True,
     description="""You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.
@@ -40,6 +40,7 @@ GreaterInvisibility: Spell = Spell(
     save=None,
     description="You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.",
     range="Touch",
+    concentration=True,
 )
 
 HypnoticPattern: Spell = Spell(
@@ -48,7 +49,7 @@ HypnoticPattern: Spell = Spell(
     school="illusion",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.WIS,
+    save=AbilityScore.WIS,
     upcast=False,
     concentration=True,
     description="""You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.
@@ -89,7 +90,7 @@ PhantasmalKiller: Spell = Spell(
     school="illusion",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.WIS,
+    save=AbilityScore.WIS,
     upcast=False,
     concentration=True,
     description="""You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened for the duration. At the start of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.

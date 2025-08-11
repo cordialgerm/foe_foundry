@@ -3,14 +3,20 @@ from typing import List
 
 from ...attack_template import natural as natural_attacks
 from ...attack_template import weapon
-from ...attributes import Skills, Stats
-from ...damage import Attack, AttackType, Bleeding, DamageType
+from ...attributes import AbilityScore, Skills
+from ...damage import Attack, AttackType, Bleeding, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
-from ...powers import PowerType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class BruiserPower(PowerWithStandardScoring):
@@ -18,23 +24,29 @@ class BruiserPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Ogre",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
             require_roles=MonsterRole.Bruiser,
-            bonus_stats=[Stats.STR, Stats.CON],
+            bonus_stats=[AbilityScore.STR, AbilityScore.CON],
             bonus_skills=Skills.Athletics,
             **score_args,
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Bruiser",
+            reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -42,12 +54,18 @@ class BruiserPower(PowerWithStandardScoring):
 class _GrapplingStrike(BruiserPower):
     def __init__(self):
         super().__init__(
-            name="Grappler", source="A5E SRD Grappler", attack_names={natural_attacks.Slam}
+            name="Grappler",
+            source="A5E SRD Grappler",
+            icon="grab",
+            attack_names={natural_attacks.Slam},
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
         stats = stats.copy(attributes=new_attrs)
+        grappled = Condition.Grappled
+        restrained = Condition.Restrained
 
         dc = stats.difficulty_class
 
@@ -57,13 +75,13 @@ class _GrapplingStrike(BruiserPower):
             attack_type=AttackType.MeleeNatural,
             die=Die.d6,
             name="Grappling Strike",
-            additional_description=f"On a hit, the target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}). \
-                 While grappled in this way, the creature is also **Restrained**",
+            additional_description=f"On a hit, the target must make a DC {dc} Strength save or be {grappled.caption} (escape DC {dc}). \
+                 While grappled in this way, the creature is also {restrained.caption}",
         )
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -72,10 +90,12 @@ class _CleavingBlows(BruiserPower):
         super().__init__(
             name="Cleaving Blows",
             source="Foe Foundry",
+            icon="meat-cleaver",
             attack_names={weapon.Greataxe, natural_attacks.Claw},
+            power_types=[PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Cleaving Blows",
             action=ActionType.BonusAction,
@@ -90,17 +110,21 @@ class _StunningBlow(BruiserPower):
         super().__init__(
             name="Stunning Blow",
             source="Foe Foundry",
+            icon="wood-club",
             power_level=HIGH_POWER,
+            require_cr=1,
             attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        stunned = Condition.Stunned
 
         feature = Feature(
             name="Stunning Blow",
             action=ActionType.BonusAction,
-            description=f"Immediately after {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be **Stunned** until the end of the {stats.selfref}'s next turn.",
+            description=f"Immediately after {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be {stunned.caption} until the end of the {stats.selfref}'s next turn.",
             recharge=6,
         )
 
@@ -112,17 +136,19 @@ class _Rend(BruiserPower):
         super().__init__(
             name="Rend",
             source="Foe Foundry",
+            icon="tearing",
             attack_names={
                 natural_attacks.Bite,
                 natural_attacks.Horns,
                 weapon.Daggers,
             },
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
         attack_type = (
             AttackType.MeleeWeapon

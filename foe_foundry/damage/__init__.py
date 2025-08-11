@@ -1,6 +1,5 @@
 from .attack import Attack, Damage  # noqa
 from .attack_type import AttackType  # noqa
-from .conditions import Fatigue  # noqa
 from .conditions import (
     Bleeding,
     Burning,

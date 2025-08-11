@@ -35,6 +35,15 @@ class DamageType(StrEnum):
             DamageType.Poison,
         }
 
+    @staticmethod
+    def Primal() -> Set[DamageType]:
+        return {
+            DamageType.Fire,
+            DamageType.Cold,
+            DamageType.Lightning,
+            DamageType.Thunder,
+        }
+
     @property
     def is_physical(self) -> bool:
         return self in {

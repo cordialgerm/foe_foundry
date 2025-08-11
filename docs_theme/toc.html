@@ -1,0 +1,52 @@
+<div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse"
+            title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    {% macro toc_item(item) %}
+    {%- if item.level <= config.theme.navigation_depth %} <li class="nav-item" data-bs-level="{{ item.level }}"><a
+            href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+        <ul class="nav flex-column">
+            {%- for child in item.children %}
+            {{- toc_item(child) }}
+            {%- endfor %}
+        </ul>
+        </li>
+        {%- endif %}
+        {%- endmacro %}
+
+        <div id="toc-collapse" class="navbar-collapse collapse card toc burnt-parchment y p-2">
+            <ul class="nav flex-column">
+                {%- for item in page.toc %}
+                {{ toc_item(item) }}
+                {%- endfor %}
+
+                {% if page.meta and page.meta.backlinks | length %}
+                <hr />
+
+                <li class="nav-item" data-bs-level="1">
+                    <span class="nav-link">Backlinks</span>
+                    <ul class="nav flex-column">
+                        {%- for item in page.meta.backlinks %}
+                        <li class="nav-item" data-bs-level="2">
+                            <a href="{{item.src_url | url}}" class="nav-link">{{item.src_title}}</a>
+                        </li>
+                        {%- endfor %}
+                    </ul>
+                </li>
+
+                {% endif %}
+
+                {% if page.meta and page.meta.related_monsters | length %}
+                <hr />
+                <li class="nav-item" data-bs-level="1">
+                    <a href="#referenced-monsters" class="nav-link">Referenced Monsters</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+
+</div>

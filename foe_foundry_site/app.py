@@ -1,25 +1,33 @@
 from __future__ import annotations
 
+import logging
+import os
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.requests import Request
 from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
 
-from .routes import powers, stats
+from foe_foundry_data.powers import load_power_index, search_powers
+
+from .logconfig import setup_logging
+from .routes import monsters, powers, redirects, statblocks
+
+setup_logging()
+log = logging.getLogger(__name__)
 
 
 @asynccontextmanager
 async def lifespan(app):
-    # re-index powers
-    powers.whoosh.clean_index()
-    powers.whoosh.index_powers()
+    # load the power index at startup unless SKIP_WHOOSH_INIT is set
+    if not os.environ.get("SKIP_WHOOSH_INIT"):
+        log.info("Initializing FastAPI app...")
+        load_power_index()
+        log.info("Running simple query to prime the index...")
+        search_powers("Pack Tactics", limit=1)
+
     yield
-    # cleanup on shutdown
-    powers.whoosh.clean_index()
 
 
 app = FastAPI(lifespan=lifespan)
@@ -29,7 +37,6 @@ origins = [
     "http://localhost:8080",
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://cordialgerm87.pythonanywhere.com",
 ]
 
 app.add_middleware(
@@ -41,22 +48,29 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(stats.router)
+app.include_router(redirects.router)
 app.include_router(powers.router)
+app.include_router(statblocks.router)
+app.include_router(monsters.router)
 
-build_dir = Path(__file__).parent.parent / "foe_foundry_ui" / "build"
+site_dir = Path(__file__).parent.parent / "site"
 
-# Sets the templates directory to the `build` folder from `npm run build`
-# this is where you'll find the index.html file.
-templates = Jinja2Templates(directory=build_dir)
-
-# Mounts the `static` folder within the `build` folder to the `/static` route.
-app.mount("/static", StaticFiles(directory=f"{build_dir}/static"), "static")
-app.mount("/img", StaticFiles(directory=f"{build_dir}/img"), "img")
+# Mounts the static site folder create by mkdocs
+app.mount("/", StaticFiles(directory=site_dir, html=True), name="site")
 
 
-# Defines a route handler for `/*` essentially.
-# NOTE: this needs to be the last route defined b/c it's a catch all route
-@app.get("/{rest_of_path:path}")
-async def react_app(req: Request, rest_of_path: str):
-    return templates.TemplateResponse("index.html", {"request": req})
+# Middleware that sets Cache-Control headers for static file responses
+@app.middleware("http")
+async def cache_control_middleware(request: Request, call_next):
+    response: Response = await call_next(request)
+
+    # Only apply caching to successful static file responses
+    if response.status_code == 200 and "/api" not in request.url.path:
+        ext = Path(request.url.path).suffix.lower()
+
+        if ext in [".webp", ".png", ".jpg", ".jpeg", ".gif", ".svg"]:
+            response.headers["Cache-Control"] = "public, max-age=2592000"  # 30 days
+        else:
+            response.headers["Cache-Control"] = "public, max-age=86400"  # 1 day
+
+    return response

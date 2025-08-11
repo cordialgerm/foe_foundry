@@ -1,2 +1,0 @@
-*.safetensors filter=lfs diff=lfs merge=lfs -text
-rapg/model/model.safetensors filter=lfs diff=lfs merge=lfs -text

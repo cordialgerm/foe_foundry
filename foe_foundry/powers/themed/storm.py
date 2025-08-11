@@ -3,11 +3,17 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...damage import DamageType, Shocked
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
-from ...powers import PowerType
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class StormPower(PowerWithStandardScoring):
@@ -15,16 +21,21 @@ class StormPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
             theme="storm",
+            icon=icon,
+            reference_statblock="Storm Giant",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.AreaOfEffect, PowerType.Attack],
             create_date=create_date,
             score_args=dict(
                 require_types={
@@ -38,7 +49,7 @@ class StormPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type != DamageType.Lightning:
             stats = stats.copy(secondary_damage_type=DamageType.Lightning)
 
@@ -50,11 +61,12 @@ class _TempestSurge(StormPower):
         super().__init__(
             name="Tempest Surge",
             source="Foe Foundry",
+            icon="lightning-storm",
             power_level=HIGH_POWER,
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=2.5, force_die=Die.d10)
         shocked = Shocked()
         dc = stats.difficulty_class
@@ -74,10 +86,13 @@ class _TempestSurge(StormPower):
 class _StormcallersFury(StormPower):
     def __init__(self):
         super().__init__(
-            name="Stormcaller's Fury", source="SRD5.1 Call Lightning", require_cr=3
+            name="Stormcaller's Fury",
+            icon="lightning-dissipation",
+            source="SRD5.1 Call Lightning",
+            require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=1.5, force_die=Die.d10)
 
@@ -87,7 +102,7 @@ class _StormcallersFury(StormPower):
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} calls down lightning on a point it can see within 120 feet. \
                 Each creature within 5 feet of the point must make a DC {dc} Dexterity saving throw, taking {dmg.description} \
-                lightning damage on a failure and half damage on a success. If the outdoors are in stormy conditions then this save is made with disadvantage.",
+                lightning damage on a failure and half damage on a success. If stormy conditions are present then this save is made with disadvantage.",
         )
 
         return [feature]

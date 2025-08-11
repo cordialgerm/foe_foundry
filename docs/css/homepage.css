@@ -1,0 +1,298 @@
+/* Homepage Styles */
+
+section {
+    margin-top: 2rem;
+}
+
+section h1 {
+    font-family: var(--stylistic-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section h2 {
+    font-family: var(--header-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section h2 a {
+    color: var(--primary-color);
+}
+
+section h3,
+section h4,
+section h5 {
+    font-family: var(--header-font);
+    color: var(--fg-color);
+    text-align: center;
+}
+
+
+section h3 a,
+section h4 a,
+section h5 a {
+    color: var(--fg-color);
+}
+
+.glowing-header {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+section p {
+    color: var(--fg-color);
+    text-align: center;
+}
+
+section p.lead {
+    font-size: 1.0em;
+}
+
+section p a {
+    color: var(--fg-color);
+    font-weight: bold;
+}
+
+
+/* Full-page parallax logo background */
+.parallax-logo-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/icons/favicon.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Use 'cover' if you want it to fill the whole screen */
+    background-position: center center;
+    background-attachment: fixed;
+    /* Creates parallax effect */
+    opacity: 0.08;
+    /* Very subtle so it doesn’t overwhelm the content */
+    pointer-events: none;
+    /* So it doesn’t block buttons or links */
+    z-index: -1;
+}
+
+/* Swiper Styles */
+.swiper-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.swiper-container.preload {
+    min-height: 267px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.swiper-container.preload.tall {
+    min-height: 300px;
+
+}
+
+.swiper-slide[data-url] {
+    cursor: pointer;
+}
+
+.swiper-slide.card {
+    padding: 1.25em;
+    aspect-ratio: 4/3;
+    width: 200px;
+    overflow: hidden;
+    font-size: var(--primary-font-size);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.swiper-slide.card:not(.burnt-parchment, .bg-object) {
+    background: var(--card-bg-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: var(--medium-margin);
+}
+
+.swiper-slide.card.tall {
+    height: 300px;
+    width: 225px;
+}
+
+.swiper-slide.card.new::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 80px;
+    height: 80px;
+    background: url('/img/misc/new-stamp.png') no-repeat center/contain;
+    transform: rotate(-15deg);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.card-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card-image.contain {
+    object-fit: contain;
+    object-position: center;
+    padding: 20px
+}
+
+.card-image.cover {
+    object-fit: cover;
+    object-position: center;
+    padding: 20px;
+}
+
+.card-image.blend {
+    mix-blend-mode: multiply;
+}
+
+.card-image.faded {
+    opacity: 0.6;
+}
+
+.card-icon {
+    color: var(--primary-faded-color);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon svg {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Ensure layering works */
+    pointer-events: none;
+    isolation: isolate;
+}
+
+.masked-label {
+    background-color: rgba(80, 80, 80, 0.60);
+    /* nice opaque gray */
+    display: inline-block;
+    padding: 0.5rem;
+
+    /* Apply watercolor mask */
+    mask-image: url('/img/backgrounds/watercolor-mask2.webp');
+    -webkit-mask-image: url('/img/backgrounds/watercolor-mask2.webp');
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+.card-title:not(.highlight),
+.card-title:not(.highlight) a {
+    font-size: 1.2rem;
+    color: var(--card-title-color);
+}
+
+@media (max-width: 900px) {
+    .card-title {
+        font-size: 1.0rem;
+    }
+}
+
+.masked-label .card-title,
+.card-title.highlight,
+.card-title.highlight a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--card-title-highlight-color);
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 1);
+}
+
+.card-tagline {
+    color: var(--card-title-highlight-color);
+    margin-top: 0.25rem;
+
+}
+
+.masked-label .card-tagline {
+    color: var(--card-title-highlight-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.card hr {
+    --primary-color: var(--card-title-color);
+}
+
+.card-details,
+.card-details p {
+    color: var(--card-text-color);
+    margin-top: 0.2rem;
+
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-clamp: 3;
+    -webkit-line-clamp: 3
+}
+
+.card-details.big {
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+@media (max-width: 430px) {
+    .card-details.hide-on-sm {
+        display: none;
+    }
+
+    .card-title {
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .card-details.big {
+        font-size: 1.0em;
+        line-height: 1.0em;
+    }
+}
+
+/* Reroll Button */
+
+.homepage .reroll-button {
+    font-size: 1.5em;
+    color: var(--bg-color);
+}

@@ -12,6 +12,13 @@
             "justMyCode": true
         },
         {
+            "name": "Foe Foundry Homepage",
+            "type": "python",
+            "request": "launch",
+            "module": "docs_gen.homepage", // <-- replace this
+            "justMyCode": false
+        }
+        {
             "name": "Python: Current File",
             "type": "debugpy",
             "request": "launch",
@@ -29,6 +36,14 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false
+        },
+        {
+            "name": "FastAPI: Uvicorn",
+            "type": "python",
+            "request": "launch",
+            "module": "foe_foundry_site",
+            "jinja": true,
+            "justMyCode": true
         }
     ]
 }

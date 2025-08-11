@@ -2,17 +2,23 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
-from ...spells import evocation
+from ...spells import CasterType, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class CleverPower(PowerWithStandardScoring):
@@ -20,13 +26,16 @@ class CleverPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        reference_statblock: str = "Spy",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
             require_types=CreatureType.all_but(CreatureType.Beast),
-            require_stats=[Stats.INT, Stats.WIS, Stats.CHA],
+            require_stats=[AbilityScore.INT, AbilityScore.WIS, AbilityScore.CHA],
             bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
             stat_threshold=16,
             **score_args,
@@ -34,19 +43,28 @@ class CleverPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
+            icon=icon,
             theme="clever",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Buff],
         )
 
 
 class _IdentifyWeakness(CleverPower):
     def __init__(self):
-        super().__init__(name="Identify Weakness", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Identify Weakness",
+            icon="magnifying-glass",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Identify Weakness",
             action=ActionType.Reaction,
@@ -55,15 +73,18 @@ class _IdentifyWeakness(CleverPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attrs = (
-            stats.attributes.boost(Stats.CHA, 2)
-            .boost(Stats.INT, 2)
-            .boost(Stats.WIS, 2)
-            .grant_proficiency_or_expertise(Skills.Investigation, Skills.Perception)
-            .grant_save_proficiency(Stats.INT)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_proficiency_or_expertise(
+            Skills.Investigation, Skills.Perception
         )
-        stats = stats.copy(attributes=new_attrs)
+        stats = stats.change_abilities(
+            {
+                AbilityScore.INT: 2,
+                AbilityScore.WIS: 2,
+                AbilityScore.CHA: 2,
+            }
+        )
         return stats
 
 
@@ -72,13 +93,15 @@ class _ArcaneMark(CleverPower):
         super().__init__(
             name="Arcane Mark",
             source="SRD5.1 Faerie Fire",
+            icon="abstract-013",
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.RangedSpell,
             bonus_types=CreatureType.Fey,
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Arcane Mark",
             uses=1,
@@ -87,15 +110,22 @@ class _ArcaneMark(CleverPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting(CasterType.Arcane)
         return stats.add_spell(evocation.FaerieFire.for_statblock())
 
 
 class _UnsettlingWords(CleverPower):
     def __init__(self):
-        super().__init__(name="Unsettling Words", source="Foe Foundry")
+        super().__init__(
+            name="Unsettling Words",
+            icon="nailed-head",
+            source="Foe Foundry",
+            power_types=[PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 7)
         distance = easy_multiple_of_five(5 + 1.25 * stats.cr, min_val=10, max_val=30)
 

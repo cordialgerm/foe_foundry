@@ -163,7 +163,13 @@ cython_debug/
 node_modules/
 
 examples/
+cache/
 
 foe_foundry_site/routes/whoosh/index/
 
 models/*/checkpoint*
+tests/output/
+
+# Mac stuff
+.DS_STORE
+.DS_Store

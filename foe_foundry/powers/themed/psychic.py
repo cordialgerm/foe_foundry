@@ -1,19 +1,23 @@
 from datetime import datetime
-from math import ceil
 from typing import List
-
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import AttackType, Burning, DamageType, Dazed
+from ...damage import AttackType, Burning, Condition, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
-from ...spells import transmutation
+from ...spells import CasterType, divination, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class PsychicPower(PowerWithStandardScoring):
@@ -21,15 +25,18 @@ class PsychicPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
+        power_category: PowerCategory = PowerCategory.Theme,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def is_spellcaster(candidate: BaseStatblock) -> bool:
             if candidate.creature_type == CreatureType.Humanoid:
-                return (
-                    candidate.attack_type.is_spell()
-                    and candidate.secondary_damage_type == DamageType.Psychic
+                return any(t.is_spell() for t in candidate.attack_types) and (
+                    candidate.secondary_damage_type == DamageType.Psychic
+                    or candidate.caster_type == CasterType.Psionic
                 )
             else:
                 return True
@@ -39,8 +46,11 @@ class PsychicPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types or [PowerType.Magic, PowerType.Debuff],
+            icon=icon,
             theme="psychic",
-            power_type=PowerType.Theme,
+            reference_statblock="Aboleth",
+            power_category=power_category,
             score_args=dict(
                 require_types={CreatureType.Aberration, CreatureType.Humanoid},
                 require_callback=is_spellcaster,
@@ -50,33 +60,47 @@ class PsychicPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+        stats = stats.grant_spellcasting(CasterType.Psionic)
         return stats
 
 
 class _Telekinetic(PsychicPower):
     def __init__(self):
-        super().__init__(name="Telekinesis", source="5.1SRD Telekinesis")
+        super().__init__(
+            name="Telekinesis",
+            source="5.1SRD Telekinesis",
+            power_category=PowerCategory.Spellcasting,
+            icon="psychic-waves",
+            power_types=[PowerType.Magic, PowerType.Movement],
+            require_cr=6,
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats.add_spell(transmutation.Telekinesis.for_statblock())
 
 
 class _PsychicInfestation(PsychicPower):
     def __init__(self):
-        super().__init__(name="Psychic Infestation", source="Foe Foundry")
+        super().__init__(
+            name="Psychic Infestation",
+            icon="unstable-orb",
+            source="Foe Foundry",
+            power_types=[PowerType.Magic, PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5, force_die=Die.d6)
         burning = Burning(
-            damage=DieFormula.from_dice(d6=dmg.n_die // 2), damage_type=DamageType.Psychic
+            damage=DieFormula.from_dice(d6=dmg.n_die // 2),
+            damage_type=DamageType.Psychic,
         )
 
         feature = Feature(
@@ -94,12 +118,17 @@ class _PsychicInfestation(PsychicPower):
 
 class _DissonantWhispers(PsychicPower):
     def __init__(self):
-        super().__init__(name="Dissonant Whispers", source="SRD5.1 Dissonant Whispers")
+        super().__init__(
+            name="Dissonant Whispers",
+            icon="convince",
+            source="SRD5.1 Dissonant Whispers",
+            power_types=[PowerType.Magic, PowerType.Attack],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
-        dmg = stats.target_value(1.5, force_die=Die.d6)
+        dmg = stats.target_value(target=1.5, force_die=Die.d6)
 
         feature = Feature(
             name="Dissonant Whispers",
@@ -115,9 +144,15 @@ class _DissonantWhispers(PsychicPower):
 
 class _PsionicBlast(PsychicPower):
     def __init__(self):
-        super().__init__(name="Psionic Blast", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Psionic Blast",
+            icon="explosive-materials",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
+            power_types=[PowerType.Magic, PowerType.AreaOfEffect, PowerType.Attack],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 2.5 if stats.multiattack >= 2 else 1.5
         dmg = stats.target_value(target=multiplier, force_die=Die.d6)
         dc = stats.difficulty_class
@@ -146,9 +181,14 @@ class _PsionicBlast(PsychicPower):
 
 class _MirroredPain(PsychicPower):
     def __init__(self):
-        super().__init__(name="Mirrored Pain", source="Foe Foundry")
+        super().__init__(
+            name="Mirrored Pain",
+            icon="telepathy",
+            source="Foe Foundry",
+            power_types=[PowerType.Magic, PowerType.Defense],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Mirrored Pain",
@@ -163,6 +203,7 @@ class _EatBrain(PsychicPower):
         super().__init__(
             name="Eat Brain",
             source="Foe Foundry",
+            icon="brain",
             power_level=HIGH_POWER,
             require_types=CreatureType.Aberration,
             require_cr=7,
@@ -172,7 +213,7 @@ class _EatBrain(PsychicPower):
             },
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.add_attack(
             scalar=3.5,
             damage_type=DamageType.Piercing,
@@ -186,20 +227,45 @@ class _EatBrain(PsychicPower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
+        grappled = Condition.Grappled
 
         stunning_tentacles = Feature(
             name="Stunning Tentancles",
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
-            description=f"On a hit, the target is **Grappled** (escape DC {dc}) and must succeed \
+            description=f"On a hit, the target is {grappled.caption} (escape DC {dc}) and must succeed \
                 on a DC {dc} Intelligence save or be {dazed.caption} while grappled in this way. {dazed.description_3rd}",
         )
 
         return [stunning_tentacles]
+
+
+class _ReadThoughts(PsychicPower):
+    def __init__(self):
+        super().__init__(
+            name="Read Thoughts",
+            icon="open-book",
+            source="SRD 5.1",
+            power_level=MEDIUM_POWER,
+            require_cr=1,
+        )
+
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        dmg = stats.target_value(target=0.25, force_die=Die.d4)
+        detect_thoughts = divination.DetectThoughts.for_statblock().caption_md
+        feature = Feature(
+            name="Read Thoughts",
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} magically probes the mind of a creature it can see within 30 feet. That creature must make a DC {dc} Wisdom saving throw. \
+                On a failure, {stats.selfref} can read the target's thoughts as per the {detect_thoughts} spell. Additionally, when {stats.selfref} hits the target with an attack, \
+                it deals an additional {dmg.description} psychic damage.",
+        )
+        return [feature]
 
 
 DissonantWhispers: Power = _DissonantWhispers()
@@ -208,6 +274,7 @@ PsionicBlast: Power = _PsionicBlast()
 PsychicInfestation: Power = _PsychicInfestation()
 MirroredPain: Power = _MirroredPain()
 Telekinetic: Power = _Telekinetic()
+ReadThoughts: Power = _ReadThoughts()
 
 PsychicPowers: List[Power] = [
     DissonantWhispers,
@@ -215,5 +282,6 @@ PsychicPowers: List[Power] = [
     MirroredPain,
     PsionicBlast,
     PsychicInfestation,
+    ReadThoughts,
     Telekinetic,
 ]

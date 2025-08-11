@@ -1,14 +1,16 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..statblocks.base import BaseStatblock
 
 
-class _LightArmorClassTemplate(ArmorClassTemplate):
+class _LightArmor(ArmorClassTemplate):
+    def __init__(self, name: str, baseline_ac: int):
+        self._name = name
+        self._baseline_ac = baseline_ac
+
     @property
     def name(self) -> str:
-        return "Light Armor"
+        return self._name
 
     @property
     def is_armored(self) -> bool:
@@ -21,19 +23,27 @@ class _LightArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
         ac = (
-            10
-            + min(stats.attributes.stat_mod(Stats.DEX), 5)
+            self._baseline_ac
+            + min(stats.attributes.stat_mod(AbilityScore.DEX), 5)
             + quality_level
             + (2 if uses_shield else 0)
         )
+
+        if quality_level > 0:
+            text = f"{self._name} +{quality_level}"
+        else:
+            text = self._name
+
         return ResolvedArmorClass(
             value=ac,
-            armor_type="Light Armor" if not uses_shield else "Light Armor, Shield",
+            armor_type=text,
             has_shield=uses_shield,
             is_armored=True,
+            display_detail=True,
             quality_level=quality_level,
-            score=ac + 0.2 - (1000 if not stats.creature_type.could_wear_light_armor else 0),
+            score=ac + 0.2,
         )
 
 
-LightArmor: ArmorClassTemplate = _LightArmorClassTemplate()
+LeatherArmor: ArmorClassTemplate = _LightArmor("Leather Armor", 11)
+StuddedLeatherArmor: ArmorClassTemplate = _LightArmor("Studded Leather Armor", 12)

@@ -3,11 +3,18 @@ from typing import List
 
 from ...attack_template import natural
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class AberrantPower(PowerWithStandardScoring):
@@ -15,19 +22,24 @@ class AberrantPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def is_aberrant_creature(c: BaseStatblock) -> bool:
             if (
                 c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}
-                and c.attack_type.is_spell()
+                and any(t.is_spell() for t in c.attack_types)
                 and c.secondary_damage_type == DamageType.Psychic
             ):
                 return True
             else:
-                return c.creature_type in {CreatureType.Aberration, CreatureType.Monstrosity}
+                return c.creature_type in {
+                    CreatureType.Aberration,
+                    CreatureType.Monstrosity,
+                }
 
         standard_score_args = (
             dict(
@@ -44,20 +56,34 @@ class AberrantPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Aberrant",
+            reference_statblock="Aboleth",
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Debuff],
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        if stats.secondary_damage_type is None:
+            return stats.copy(secondary_damage_type=DamageType.Psychic)
+        else:
+            return stats.copy()
 
 
 class _ModifyMemory(AberrantPower):
     def __init__(self):
-        super().__init__(name="Modify Memory", source="SRD5.1 Modify Memory")
+        super().__init__(
+            name="Modify Memory",
+            icon="misdirection",
+            source="SRD5.1 Modify Memory",
+            power_types=[PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Modify Memory",
@@ -71,9 +97,14 @@ class _ModifyMemory(AberrantPower):
 
 class _WarpReality(AberrantPower):
     def __init__(self):
-        super().__init__(name="Warp Reality", source="Foe Foundry")
+        super().__init__(
+            name="Warp Reality",
+            icon="abstract-119",
+            source="Foe Foundry",
+            power_types=[PowerType.AreaOfEffect, PowerType.Movement],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = 20 + (20 if stats.cr >= 7 else 0)
         feature = Feature(
@@ -90,15 +121,21 @@ class _WarpReality(AberrantPower):
 
 class _Adhesive(AberrantPower):
     def __init__(self):
-        super().__init__(name="Adhesive", source="SRD5.1 Mimic")
+        super().__init__(
+            name="Adhesive",
+            icon="sticky-boot",
+            source="SRD5.1 Mimic",
+            power_types=[PowerType.Defense, PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        grappled = Condition.Grappled
         feature = Feature(
             name="Adhesive",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} adheres to anything that touches it (including weapons). \
-                A Huge or smaller creature or object adhered to {stats.selfref} is also **Grappled** by it (escape DC {dc}). \
+                A Huge or smaller creature or object adhered to {stats.selfref} is also {grappled.caption} by it (escape DC {dc}). \
                 Ability checks made to escape this grapple have disadvantage.",
         )
         return [feature]
@@ -109,11 +146,13 @@ class _Incubation(AberrantPower):
         super().__init__(
             name="Incubation",
             source="Foe Foundry",
+            icon="alien-egg",
             power_level=HIGH_POWER,
             attack_names=["-", natural.Claw],
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         timespan = "three months" if stats.cr <= 5 else "three days"
 

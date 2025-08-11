@@ -8,14 +8,15 @@ import numpy as np
 
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..ac_templates import Unarmored
-from ..attributes import Stats
-from ..damage import Attack
-from ..die import Die, DieFormula
-from ..features import Feature
+from ..attributes import AbilityScore
+from ..die import DieFormula
+from ..features import Feature, resolve_conflicting_recharge
 from .base import BaseStatblock
 
 
-def resolve_ac(templates: List[ArmorClassTemplate], stats: BaseStatblock) -> ResolvedArmorClass:
+def resolve_ac(
+    templates: List[ArmorClassTemplate], stats: BaseStatblock
+) -> ResolvedArmorClass:
     if Unarmored not in templates:
         templates.append(Unarmored)
 
@@ -46,15 +47,18 @@ class Statblock(BaseStatblock):
         stats: BaseStatblock,
         features: List[Feature],
     ) -> Statblock:
+        # resolve armor class
         ac = resolve_ac(stats.ac_templates, stats=stats)
 
+        new_features = resolve_conflicting_recharge(features)
+
         args = stats.__copy_args__()
-        args.update(name=name, ac=ac, features=features)
+        args.update(name=name, ac=ac, features=new_features)
 
         # repair HP based on CON modifier
         clean_hp = DieFormula.target_value(
             target=stats.hp.average,
-            per_die_mod=stats.attributes.stat_mod(Stats.CON),
+            per_die_mod=stats.attributes.stat_mod(AbilityScore.CON),
             force_die=stats.size.hit_die(),
         )
         args.update(hp=clean_hp)

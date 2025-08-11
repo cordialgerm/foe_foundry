@@ -1,22 +1,21 @@
+from datetime import datetime, timedelta
 from typing import Annotated
 
 import numpy as np
 from fastapi import APIRouter, HTTPException, Query
 
 from foe_foundry import CreatureType, MonsterRole
-from foe_foundry.powers import Power
+from foe_foundry.utils import name_to_key
+from foe_foundry_data.powers import PowerModel, Powers
+from foe_foundry_data.powers import search_powers as search_powers_core
 
-from ..data.power import PowerModel
-from . import whoosh
-
-# note - lifespan doesn't work on APIRouter currently
 router = APIRouter(prefix="/api/v1/powers")
 
 
 @router.get("/power/{power_name}")
 def get_power(*, power_name: str) -> PowerModel:
-    key = Power.name_to_key(power_name)
-    power = whoosh.PowerLookup.get(key)
+    key = name_to_key(power_name)
+    power = Powers.PowerLookup.get(key)
     if power is None:
         raise HTTPException(status_code=404, detail="Power not found")
     return power
@@ -31,9 +30,10 @@ def random(
 ) -> list[PowerModel]:
     limit = limit or 10
     rng = np.random.default_rng()
-    keys = list(whoosh.PowerLookup.keys())
+
+    keys = list(Powers.PowerLookup.keys())
     indexes = rng.choice(len(keys), size=limit, replace=False)
-    powers = [whoosh.PowerLookup[keys[i]] for i in indexes]
+    powers = [Powers.PowerLookup[keys[i]] for i in indexes]
     return powers
 
 
@@ -45,8 +45,19 @@ def new(
     ] = 10,
 ) -> list[PowerModel]:
     limit = limit or 10
-    new_powers = whoosh.PowersChronologically[:limit]
-    return new_powers
+    now = datetime.now()
+    new = now - timedelta(days=30)
+    new_powers = [
+        p
+        for p in Powers.PowerLookup.values()
+        if (p.create_date is not None and p.create_date >= new)
+    ]
+
+    def _sort(p: PowerModel):
+        return p.create_date or datetime.min
+
+    sorted_powers = sorted(new_powers, key=_sort, reverse=True)
+    return sorted_powers[:limit]
 
 
 @router.get("/search")
@@ -94,7 +105,7 @@ def search_powers(
 
     # if the keyword matches a theme exactly then don't do a full text search
     # instead, filter by theme
-    if keyword is not None and keyword in whoosh.Themes:
+    if keyword is not None and keyword in Powers.Themes:
         try:
             theme = keyword
             keyword = None
@@ -103,13 +114,13 @@ def search_powers(
 
     # if a specific filter is requested we don't really need a limit
     # this is because we don't have to do a full text search
-    if creature_type or role or theme:
+    if keyword is None and (creature_type or role or theme):
         limit = 100
 
     if keyword:
-        powers = whoosh.search(keyword, limit=limit)
+        powers = search_powers_core(keyword, limit=limit)
     else:
-        powers = whoosh.PowerLookup.values()
+        powers = Powers.PowerLookup.values()
 
     def check_creature_type(p: PowerModel) -> bool:
         if not creature_type:

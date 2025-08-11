@@ -4,12 +4,13 @@ from typing import List
 
 from ...attributes import Skills
 from ...creature_types import CreatureType
+from ...damage import Condition
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class Trap(PowerWithStandardScoring):
@@ -17,17 +18,22 @@ class Trap(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Environmental, PowerType.Debuff],
             create_date=create_date,
             theme="trap",
+            icon=icon,
+            reference_statblock="Scout",
             score_args=dict(
                 require_types={c for c in CreatureType if c.could_use_equipment},
                 require_roles={
@@ -43,9 +49,14 @@ class Trap(PowerWithStandardScoring):
 
 class _Snare(Trap):
     def __init__(self):
-        super().__init__(name="Snare", source="Foe Foundry")
+        super().__init__(
+            name="Snare",
+            icon="box-trap",
+            source="Foe Foundry",
+            power_types=[PowerType.Environmental, PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         quantity = ceil(stats.cr / 3)
 
@@ -56,7 +67,7 @@ class _Snare(Trap):
                 When a creature moves within 15 feet of the snare, if it has a passive perception of {dc} or higher it becomes aware of the snare. \
                 The snares can also actively be detected by a creature within 30 feet using an action to make a DC {dc} Perception check. \
                 A creature that is unaware of an untriggered snare and moves within 5 feet of it must make a DC {dc} Dexterity saving throw. \
-                On a failure, it is lifted into the air and **Restrained** (escape DC {dc}).",
+                On a failure, it is lifted into the air and {Condition.Restrained.caption} (escape DC {dc}).",
         )
 
         return [feature]
@@ -64,13 +75,18 @@ class _Snare(Trap):
 
 class _SpikePit(Trap):
     def __init__(self):
-        super().__init__(name="Spike Pit", source="Foe Foundry")
+        super().__init__(
+            name="Spike Pit",
+            icon="spiky-pit",
+            source="Foe Foundry",
+            power_types=[PowerType.Environmental, PowerType.Attack],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         quantity = ceil(stats.cr / 3)
         fall_damage = DieFormula.from_expression("2d6")
-        spike_damage = stats.target_value(0.5, force_die=Die.d6)
+        spike_damage = stats.target_value(target=0.5, force_die=Die.d6)
 
         feature = Feature(
             name="Spike Traps",

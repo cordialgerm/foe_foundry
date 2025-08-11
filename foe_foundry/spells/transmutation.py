@@ -1,5 +1,5 @@
 from ..features import ActionType
-from ..skills import Stats
+from ..skills import AbilityScore
 from .spell import Spell
 
 ControlWeather = Spell(
@@ -17,6 +17,36 @@ ControlWeather = Spell(
 When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.""",
 )
 
+ControlWater = Spell(
+    name="Control Water",
+    level=4,
+    school="transmutation",
+    source="SRD 5.1",
+    upcast=False,
+    action_type=ActionType.Action,
+    concentration=True,
+    description="""You manipulate water in the area around you. Choose one of the following effects when you cast the spell. You can change the effect as an action on your turn.""",
+)
+
+PlantGrowth = Spell(
+    name="Plant Growth",
+    level=3,
+    school="transmutation",
+    source="SRD 5.1",
+    upcast=False,
+    action_type=ActionType.Action,
+    concentration=False,
+    description="""You enrich the land around you with abundant plant life. Choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. The area becomes difficult terrain for the duration.
+If you cast this spell using 8 hours of casting time, you enrich the land. The plants in a half-mile radius centered on that point become enriched for 1 year. The enriched area is difficult terrain for creatures other than you. If the area is used to grow food, it produces twice the normal amount of food when harvested.
+
+If you cast this spell using 1 minute of casting time, you can choose to have the spell affect only one of the following areas:
+- 20-foot radius centered on a point within range
+- 40-foot radius centered on a point within range
+- 100-foot radius centered on a point within range
+- 1 mile radius centered on a point within range
+The area becomes difficult terrain for the duration. If the area is used to grow food, it produces twice the normal amount of food when harvested.""",
+)
+
 
 Disintegrate = Spell(
     name="Disintegrate",
@@ -25,7 +55,7 @@ Disintegrate = Spell(
     source="SRD 5.1",
     action_type=ActionType.Action,
     upcast=True,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force.
 
 A creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes 10d6 + 40 force damage. The target is disintegrated if this damage leaves it with 0 hit points.
@@ -42,8 +72,9 @@ EnlargeReduce = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
+    concentration=True,
     upcast=False,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     description="""You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.
 
 If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.
@@ -60,7 +91,7 @@ FleshToStone = Spell(
     source="SRD 5.1",
     action_type=ActionType.Action,
     upcast=False,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     concentration=True,
     description="""
     You attempt to turn one creature that you can see within range into stone. If the target's body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected.
@@ -79,6 +110,7 @@ Fly = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
+    concentration=True,
     description="You touch a willing creature. \
         The target gains a flying speed of 60 feet for the duration. \
         When the spell ends, the target falls if it is still aloft, unless it can stop the fall.",
@@ -119,7 +151,7 @@ Slow: Spell = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.WIS,
+    save=AbilityScore.WIS,
     upcast=False,
     concentration=True,
     description="""You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.
@@ -137,7 +169,7 @@ SpikeGrowth: Spell = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     upcast=False,
     concentration=True,
     description="""The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.
@@ -151,7 +183,7 @@ Telekinesis: Spell = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.STR,
+    save=AbilityScore.STR,
     upcast=False,
     concentration=True,
     description="""

@@ -1,15 +1,8 @@
-from math import ceil
-from typing import List, Set, Tuple
+from typing import Set
 
-import numpy as np
-
-from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
-from ..damage import Condition, Damage, DamageType
-from ..die import DieFormula
-from ..features import ActionType, Feature
+from ..damage import DamageType
 from ..role_types import MonsterRole
-from ..size import Size
 from ..statblocks import BaseStatblock
 
 
@@ -74,6 +67,8 @@ def flavorful_damage_types(
         options.update([DamageType.Fire, DamageType.Lightning, DamageType.Cold])
     elif role == MonsterRole.Bruiser:
         pass
+    elif role == MonsterRole.Soldier:
+        pass
     elif role == MonsterRole.Controller:
         options.add(DamageType.Psychic)
     elif role == MonsterRole.Defender:
@@ -82,6 +77,8 @@ def flavorful_damage_types(
         options.add(DamageType.Poison)
     elif role == MonsterRole.Skirmisher:
         options.add(DamageType.Poison)
+    elif role == MonsterRole.Support:
+        options.add(DamageType.Radiant)
 
     # handle default
     if len(options) == 0 and default is not None:

@@ -1,0 +1,75 @@
+{% macro property_short(name,text, block = False) -%}
+{% if text|length > 0 and block %}
+<p data-statblock-property="{{ name | sluggify }}">
+    <strong>{{name}}</strong>
+    {{text}}
+</p>
+{% elif text|length > 0 and not block%}
+<span data-statblock-property="{{ name | sluggify }}">
+    <strong>{{name}}</strong>
+    {{text}}
+</span>
+{% endif %}
+{%- endmacro %}
+
+
+{% macro property(name,text, block = False, power_keys = '') -%}
+{% if text|length > 0 and block %}
+<p data-statblock-property="{{ name | sluggify }}" data-power-key="{{power_keys}}">
+    <strong>{{name | fix_punctuation}}</strong>
+    {{text | fix_punctuation}}
+</p>
+{% elif text|length > 0 and not block %}
+<span data-statblock-property="{{ name | sluggify }}" data-power-key="{{power_keys}}">
+    <strong>{{name | fix_punctuation}}</strong>
+    {{text | fix_punctuation}}
+</span>
+{% endif %}
+{%- endmacro %}
+
+
+{% macro attack_blocks(attacks) %}
+{% for attack in attacks %}
+{{ attack_block(attack.display_name, attack.description)}}
+{% endfor %}
+{% endmacro %}
+
+{% macro attack_block(display_name, attack_text, power_keys = '') -%}
+
+<p data-power-key="{{power_keys}}" data-statblock-property="attack">
+    <strong>{{display_name | fix_punctuation}}</strong>
+    {{attack_text | fix_punctuation | markdown_no_wrapping_p}}
+</p>
+
+{%- endmacro %}
+
+{% macro features_block(features, heading='') -%}
+
+{% if heading|length > 0 and features|length > 0 %}
+<h4 class="block-header">{{heading}}</h4>
+{% endif %}
+
+{% for feature in features -%}
+<p data-power-key="{{feature.power_key}}">
+    <strong>{{feature.title}}.</strong>
+    {{feature.description | fix_punctuation | markdown_no_wrapping_p}}
+</p>
+{%- endfor %}
+
+{%- endmacro %}
+
+{% macro branding(monster='', icon_only=False, text="Foe Foundry") -%}
+
+{% if icon_only %}
+<span class="branding">
+</span>
+{% elif monster != '' %}
+<span class="branding">
+    <a href="https://foefoundry.com/generate/?monster-key={{monster}}">{{ text }}</a>
+</span>
+{% else %}
+<span class="branding">
+    <a href="https://foefoundry.com/generate/">{{ text }}</a>
+</span>
+{% endif %}
+{%- endmacro %}

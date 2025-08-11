@@ -1,0 +1,165 @@
+from foe_foundry_data.markdown import markdown
+from foe_foundry_data.refs import MonsterRef
+
+
+def test_markdown():
+    text = "This is a **Wight** and these are [[Zombies]] and this is a button [[$Lich]] and this is **NOTHING IMPORTANT** and this is a statblock [[!Bandit]]"
+    result = markdown(text)
+    assert len(result.references) == 4
+
+
+def test_necromancer_primagus():
+    text = "This is a **Necromancer Primagus** and this is [[$Necromancer Primagus]] and [[!Necromancer Primagus]]"
+    result = markdown(text)
+    assert len(result.references) == 3
+
+
+def test_cultist_fanatic():
+    text = "This is a **Cultist Fanatic** and this is [[$Cultist-Fanatic]] and [[!Cultist_Fanatic]]"
+    result = markdown(text)
+    assert len(result.references) == 3
+
+
+def test_aliases():
+    text = "This is a **Cult Fanatic** and these are **Cult Fanatics**"
+    result = markdown(text)
+    assert len(result.references) == 2
+
+
+def test_reference_power():
+    text = "This is [[Pack Tactics]] and this is [[!Pack Tactics]]"
+    result = markdown(text)
+    assert len(result.references) == 2
+
+
+def test_reference_spirit_wolves():
+    text = "This is [[Spirit Wolves]] and this is [[!Spirit Wolves]]"
+    result = markdown(text)
+    assert len(result.references) == 2
+
+
+def test_embed_power():
+    text = "This is [[!Pack Tactics]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+
+
+def test_reference_statblock_with_species():
+    text = "This is an [[Orc Bandit]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+
+
+def test_embed_statblock_with_species():
+    text = "This is [[!Orc Berserker]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+    assert "Orc Orc Berserker" not in result.html
+    assert "Orc Berserker" in result.html
+    assert 'data-monster="orc-berserker"' in result.html
+    assert 'data-species="orc"' in result.html
+
+
+def test_statblock_starts_with_species_name_but_isnt_species_templated():
+    text = "This is an [[Orc Hardened One]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+    assert "orc-hardened-one" in result.html
+
+
+def test_monster_key_works_as_well():
+    text = "This is an [[orc-hardened-one]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+    assert "orc-hardened-one" in result.html
+
+
+def test_monster_key_works_for_npcs():
+    text = "This is an [[orc-berserker]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+    assert "orc-berserker" in result.html
+
+
+def test_embed_spellcasting_power_only_one_spellcasting():
+    text = "[[!Simulacrum Spellcasting]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+    assert result.html.count("Banishment") == 1
+
+
+def test_embed_icon():
+    text = "This is the [[!grapple.svg]] Grapple icon"
+    result = markdown(text)
+    assert len(result.html) > 100
+
+
+def test_monster_spec():
+    text = """
+This is some example text that contains a YAML monster block
+
+```yaml
+monster_name: Orc Berserker Veteran
+color: blue
+power_weights:
+  just-a-scratch: 1
+  pushing-attack: 0.75
+```
+
+This is some more text after the YAML block.
+
+There's also some other unrelated yaml in here
+
+```yaml
+hello: world
+foo: bar
+```
+
+"""
+
+
+def test_attack_modifier_renders_power_key():
+    text = """
+This is some example text that contains a YAML monster block
+
+```yaml
+monster_name: Knight
+power_weights:
+  grazing-attack: 1
+```
+"""
+
+    result = markdown(text)
+    assert len(result.references) == 1
+
+    ref = result.references[0]
+    assert isinstance(ref, MonsterRef)
+    assert ref.monster is not None
+    assert ref.monster.key == "knight"
+    assert "Grazing Attack" not in result.html
+    assert 'data-power-key="grazing-attack"' in result.html
+
+
+def test_spellcasting_renders_power_key():
+    text = """
+This is some example text that contains a YAML monster block
+
+```yaml
+monster_name: Medusa Queen
+power_weights:
+  eyebite: 1
+```
+"""
+
+    from foe_foundry.powers.roles.controller import Eyebite
+
+    assert Eyebite.key == "eyebite"
+
+    result = markdown(text)
+    assert len(result.references) == 1
+
+    ref = result.references[0]
+    assert isinstance(ref, MonsterRef)
+    assert ref.monster is not None
+    assert ref.monster.key == "medusa-queen"
+    assert 'data-power-key="eyebite"' in result.html

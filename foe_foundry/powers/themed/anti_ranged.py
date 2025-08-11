@@ -2,18 +2,22 @@ import math
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attributes import Stats
+from ...attack_template import spell
+from ...attributes import AbilityScore
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class _AdaptiveCamouflage(PowerWithStandardScoring):
@@ -30,15 +34,18 @@ class _AdaptiveCamouflage(PowerWithStandardScoring):
 
         super().__init__(
             name="Adaptive Camouflage",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            icon="hidden",
+            reference_statblock="Basilisk",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Stealth, PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Adaptive Camouflage",
@@ -58,14 +65,17 @@ class _ArrowWard(PowerWithStandardScoring):
 
         super().__init__(
             name="Arrow Ward",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            icon="arrows-shield",
+            reference_statblock="Shield Guardian",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Arrow Ward",
             action=ActionType.Reaction,
@@ -80,20 +90,26 @@ class _DeflectMissile(PowerWithStandardScoring):
             require_types=CreatureType.Humanoid,
             require_attack_types=AttackType.MeleeWeapon,
             bonus_roles=[MonsterRole.Defender],
-            require_stats=Stats.DEX,
+            require_stats=AbilityScore.DEX,
         )
 
         super().__init__(
             name="Deflect Missile",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="SRD5.1 Monk",
             theme="Anti-Ranged",
+            icon="divert",
+            reference_statblock="Warrior",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        reduction = easy_multiple_of_five(stats.attributes.DEX + 2 * stats.cr)
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
+        reduction = easy_multiple_of_five(
+            stats.attributes.stat_mod(AbilityScore.DEX)
+            + 2 * stats.attributes.proficiency
+        )
         feature = Feature(
             name="Deflect Missile",
             action=ActionType.Reaction,
@@ -106,18 +122,21 @@ class _HardToPinDown(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Hard to Pin Down",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            icon="fast-forward-button",
+            reference_statblock="Spy",
             create_date=datetime(2023, 11, 28),
             score_args=dict(
                 require_roles=MonsterRole.Skirmisher,
-                require_stats=Stats.DEX,
+                require_stats=AbilityScore.DEX,
                 require_attack_types=AttackType.AllMelee(),
             ),
+            power_types=[PowerType.Defense, PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Hard to Pin Down",
             action=ActionType.Feature,
@@ -138,20 +157,23 @@ def _EyeOfTheStormPowers() -> List[Power]:
 
             super().__init__(
                 name=name,
-                power_type=PowerType.Theme,
+                power_category=PowerCategory.Theme,
                 power_level=HIGH_POWER,
                 source="Foe Foundry",
                 theme="Anti-Ranged",
+                icon="entangled-typhoon",
+                reference_statblock="Fire Elemental",
                 create_date=datetime(2023, 11, 28),
                 score_args=score_args,
+                power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             )
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             if stats.secondary_damage_type is None:
                 stats = stats.copy(secondary_damage_type=self.damage_type)
             return stats
 
-        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
             dmg = math.ceil(stats.cr / 2.0)
             dmg_type = self.damage_type
             feature = Feature(
@@ -176,22 +198,34 @@ class _Overchannel(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Overchannel",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            icon="charging",
+            reference_statblock="Mage",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 28),
             score_args=dict(
                 require_attack_types=AttackType.AllSpell(),
             ),
+            power_types=[PowerType.Magic, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        if not stats.attack_types.intersection(AttackType.AllSpell()):
+            stats = stats.grant_spellcasting(CasterType.Innate)
+            stats = spell.Firebolt.copy(damage_scalar=0.9).add_as_secondary_attack(
+                stats
+            )
+            return stats
+        else:
+            return stats
+
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Overchannel",
             action=ActionType.BonusAction,
-            description=f"If {stats.selfref} begins its turn with no hostile creatures within 10 feet of it, it can use its bonus action to channel vast amounts of power into its next spell. \
-                The next spell attack it makes this turn that hits a target deals maximum damage.",
+            description=f"The {stats.selfref} begins to channel vast amounts of power into its next spell. If it begins its next turn with no creature next to it, then the next spell attack it makes that turn that hits a target deals maximum damage.",
         )
         return [feature]
 
@@ -213,4 +247,3 @@ AntiRangedPowers: List[Power] = [
 
 
 # Drawn to Combat - monstrosity, beast - DC X stealth check at the end of the turn or summon another one of these creatures
-# Over-channeled Spells - creature gains advantage on attack rolls and attacks deal an additional X damage if there's no hostile enemy within 10 feet

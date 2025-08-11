@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod, abstractproperty
+from abc import ABC, abstractmethod
 from dataclasses import field
 from typing import Any
 
@@ -11,27 +11,36 @@ class ResolvedArmorClass:
     armor_type: str
     has_shield: bool
     is_armored: bool
+    display_detail: bool
     quality_level: int
     score: float
     description: str = field(init=False)
 
     def __post_init__(self):
-        self.description = f"{self.value} ({self.armor_type})"
+        if not self.display_detail:
+            self.description = str(self.value)
+        elif self.has_shield:
+            self.description = f"{self.value} ({self.armor_type}, Shield)"
+        else:
+            self.description = f"{self.value} ({self.armor_type})"
 
     def __repr__(self) -> str:
         return self.description
 
 
 class ArmorClassTemplate(ABC):
-    @abstractproperty
+    @property
+    @abstractmethod
     def name(self) -> str:
         raise NotImplementedError
 
-    @abstractproperty
+    @property
+    @abstractmethod
     def is_armored(self) -> bool:
         raise NotImplementedError
 
-    @abstractproperty
+    @property
+    @abstractmethod
     def is_heavily_armored(self) -> bool:
         raise NotImplementedError
 

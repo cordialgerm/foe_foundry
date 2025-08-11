@@ -3,13 +3,21 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
-from ...die import Die, DieFormula
+from ...damage import Condition, conditions
+from ...die import Die
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    EXTRA_HIGH_POWER,
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class TemporalPower(PowerWithStandardScoring):
@@ -17,37 +25,37 @@ class TemporalPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
-        def is_magical_human(c: BaseStatblock) -> bool:
-            if c.creature_type == CreatureType.Humanoid:
-                return (
-                    c.attack_type.is_spell() and c.secondary_damage_type != DamageType.Radiant
-                )
-            else:
-                return True
-
         super().__init__(
             name=name,
             source=source,
+            icon=icon,
             theme="temporal",
+            reference_statblock="Divination Mage",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
+            power_types=power_types or [PowerType.Magic],
             score_args=dict(
                 require_types={
                     CreatureType.Fey,
                     CreatureType.Fiend,
                     CreatureType.Aberration,
-                    CreatureType.Humanoid,
                 },
-                require_callback=is_magical_human,
-                bonus_roles=MonsterRole.Controller,
+                require_roles=MonsterRole.Controller,
             )
             | score_args,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting(CasterType.Arcane)
+        return stats
 
 
 class _CurseOfTheAges(TemporalPower):
@@ -55,13 +63,15 @@ class _CurseOfTheAges(TemporalPower):
         super().__init__(
             name="Curse of the Ages",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
-            require_cr=7,
+            icon="time-trap",
+            power_level=EXTRA_HIGH_POWER,
+            require_cr=10,
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = stats.target_value(2.5, force_die=Die.d12)
+        dmg = stats.target_value(target=2.5, force_die=Die.d12)
         weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
             name="Curse of the Ages",
@@ -79,9 +89,15 @@ class _CurseOfTheAges(TemporalPower):
 
 class _TemporalLoop(TemporalPower):
     def __init__(self):
-        super().__init__(name="Temporal Loop", source="Foe Foundry", require_cr=3)
+        super().__init__(
+            name="Temporal Loop",
+            icon="backward-time",
+            source="Foe Foundry",
+            require_cr=3,
+            power_types=[PowerType.Magic, PowerType.Buff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30
         uses = ceil(stats.cr / 7)
 
@@ -108,17 +124,19 @@ class _TemporalMastery(TemporalPower):
         super().__init__(
             name="Temporal Mastery",
             source="Foe Foundry",
+            icon="pocket-watch",
             power_level=HIGH_POWER,
             require_cr=7,
+            power_types=[PowerType.Magic, PowerType.Stealth],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Temporal Mastery",
             action=ActionType.Action,
             uses=2,
             replaces_multiattack=2,
-            description=f"{stats.selfref} becomes **Invisible** until the start of its next turn. It may also adjust its initiative to any value it desires. \
+            description=f"{stats.selfref} becomes {Condition.Invisible.caption} until the start of its next turn. It may also adjust its initiative to any value it desires. \
                 This can allow {stats.selfref} to have a second turn this round.",
         )
         return [feature]
@@ -129,11 +147,13 @@ class _Accelerate(TemporalPower):
         super().__init__(
             name="Accelerate Time",
             source="Foe Foundry",
+            icon="extra-time",
             power_level=HIGH_POWER,
             require_cr=4,
+            power_types=[PowerType.Magic, PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Accelerate Time",
             action=ActionType.BonusAction,
@@ -147,9 +167,15 @@ class _Accelerate(TemporalPower):
 
 class _AlterFate(TemporalPower):
     def __init__(self):
-        super().__init__(name="Alter Fate", source="Alter Fate", require_cr=4)
+        super().__init__(
+            name="Alter Fate",
+            icon="card-random",
+            source="Alter Fate",
+            require_cr=4,
+            power_types=[PowerType.Magic, PowerType.Buff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Alter Fate",
             action=ActionType.Reaction,
@@ -164,11 +190,13 @@ class _WallOfTime(TemporalPower):
     def __init__(self):
         super().__init__(
             name="Wall of Time",
+            icon="time-trap",
             source="Deep Magic: Time Magic - Wall of Time",
             require_cr=5,
+            power_types=[PowerType.Magic, PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Wall of Time",
             action=ActionType.Action,
@@ -184,9 +212,15 @@ class _WallOfTime(TemporalPower):
 
 class _Reset(TemporalPower):
     def __init__(self):
-        super().__init__(name="Reset", source="Deep Magic: Time Magic - Reset", require_cr=5)
+        super().__init__(
+            name="Reset",
+            icon="recycle",
+            source="Deep Magic: Time Magic - Reset",
+            require_cr=5,
+            power_types=[PowerType.Magic, PowerType.Healing],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         feature = Feature(

@@ -1,7 +1,5 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..statblocks.base import BaseStatblock
 
 
@@ -21,11 +19,11 @@ class _ArcaneArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
 
-        ac1 = 13 + min(stats.attributes.stat_mod(Stats.DEX), 5)
+        ac1 = 13 + min(stats.attributes.stat_mod(AbilityScore.DEX), 5)
         ac2 = (
             10
-            + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
-            + min(stats.attributes.stat_mod(Stats.INT), 4)
+            + max(0, min(stats.attributes.stat_mod(AbilityScore.DEX), 2))
+            + min(stats.attributes.stat_mod(AbilityScore.INT), 4)
         )
         ac = max(ac1, ac2) + quality_level
 
@@ -35,10 +33,11 @@ class _ArcaneArmorClassTemplate(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=False,
             quality_level=quality_level,
+            display_detail=True,
             score=ac
             + 0.7
             - (1000 if not stats.attributes.is_sapient else 0)
-            - (1000 if not stats.attack_type.is_spell() else 0),
+            - (1000 if not any(t.is_spell() for t in stats.attack_types) else 0),
         )
 
 

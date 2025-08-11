@@ -2,15 +2,14 @@ from datetime import datetime
 from typing import List
 
 from ...attack_template import weapon
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, DamageType
+from ...damage import Attack, AttackType, Condition, DamageType, conditions
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
-from .organized import score_could_be_organized
+from ..power import LOW_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class _ArcaneHunt(PowerWithStandardScoring):
@@ -22,19 +21,26 @@ class _ArcaneHunt(PowerWithStandardScoring):
                 CreatureType.Fiend,
             ],
             require_attack_types=AttackType.MeleeNatural,
-            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Ambusher],
+            bonus_roles=[
+                MonsterRole.Bruiser,
+                MonsterRole.Ambusher,
+                MonsterRole.Soldier,
+            ],
         )
 
         super().__init__(
             name="Arcane Hunt",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=LOW_POWER,
             source="Foe Foundry",
+            reference_statblock="Death Dog",
+            icon="hunter-eyes",
             theme="Anti-Magic",
+            power_types=[PowerType.Movement, PowerType.Debuff],
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Arcane Hunt",
             action=ActionType.Reaction,
@@ -56,13 +62,16 @@ class _FractalForm(PowerWithStandardScoring):
         )
         super().__init__(
             name="Fractal Form",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Magic",
+            icon="abstract-061",
+            reference_statblock="Deva",
+            power_types=[PowerType.Defense],
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Fractal Form",
             action=ActionType.Feature,
@@ -74,13 +83,9 @@ class _FractalForm(PowerWithStandardScoring):
 
 class _Spellbreaker(PowerWithStandardScoring):
     def __init__(self):
-        def is_organized(c: BaseStatblock) -> bool:
-            return score_could_be_organized(c, requires_intelligence=True) > 0
-
         score_args = dict(
             require_attack_types=AttackType.MeleeWeapon,
-            require_callback=is_organized,
-            bonus_roles=MonsterRole.Bruiser,
+            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
             attack_names=[
                 weapon.SwordAndShield,
                 weapon.Greataxe,
@@ -93,13 +98,16 @@ class _Spellbreaker(PowerWithStandardScoring):
         )
         super().__init__(
             name="Spellbreaker",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="A5E SRD Spellbreaker",
             theme="Anti-Magic",
+            icon="cancel",
+            reference_statblock="Berserker",
+            power_types=[PowerType.Debuff],
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spellbreaker",
             action=ActionType.Reaction,
@@ -120,18 +128,25 @@ class _RedirectTeleport(PowerWithStandardScoring):
                 CreatureType.Monstrosity,
             ],
             require_attack_types=AttackType.AllMelee(),
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+            bonus_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Leader,
+                MonsterRole.Support,
+            ],
         )
 
         super().__init__(
             name="Redirect Teleport",
             source="Foe Foundry",
             theme="Anti-Magic",
-            power_type=PowerType.Theme,
+            icon="direction-signs",
+            reference_statblock="Aboleth",
+            power_category=PowerCategory.Theme,
+            power_types=[PowerType.Movement, PowerType.Debuff],
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Redirect Teleport",
             action=ActionType.Reaction,
@@ -145,24 +160,38 @@ class _RedirectTeleport(PowerWithStandardScoring):
 class _SpellEater(PowerWithStandardScoring):
     def __init__(self):
         score_args = dict(
-            require_types=[CreatureType.Aberration, CreatureType.Fey, CreatureType.Monstrosity],
+            require_types=[
+                CreatureType.Aberration,
+                CreatureType.Fey,
+                CreatureType.Monstrosity,
+            ],
             require_attack_types=AttackType.AllNatural(),
             require_cr=5,
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Bruiser],
+            bonus_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Bruiser,
+                MonsterRole.Soldier,
+                MonsterRole.Support,
+            ],
         )
         super().__init__(
             name="Spell Eater",
             source="Foe Foundry",
             theme="Anti-Magic",
-            power_type=PowerType.Theme,
+            icon="swallow",
+            reference_statblock="Chuul",
+            power_category=PowerCategory.Theme,
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stunned = Condition.Stunned
+
         def additional_description(a: Attack) -> Attack:
             return a.split_damage(DamageType.Force, split_ratio=0.75).copy(
                 custom_target="one target that can cast a spell",
-                additional_description=f"On a hit, the target loses its highest level spell slot. If the target has no spell slots remaining, it is **Stunned** until the end of its next turn.",
+                additional_description=f"On a hit, the target loses its highest level spell slot. If the target has no spell slots remaining, it is {stunned.caption} until the end of its next turn.",
             )
 
         stats = stats.add_attack(
@@ -176,7 +205,7 @@ class _SpellEater(PowerWithStandardScoring):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -197,7 +226,12 @@ class _SpellStealer(PowerWithStandardScoring):
                 CreatureType.Aberration,
                 CreatureType.Monstrosity,
             ],
-            require_roles=[MonsterRole.Controller, MonsterRole.Ambusher, MonsterRole.Leader],
+            require_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Ambusher,
+                MonsterRole.Leader,
+                MonsterRole.Support,
+            ],
             require_callback=humanoid_is_arcane_trickster,
         )
 
@@ -205,19 +239,23 @@ class _SpellStealer(PowerWithStandardScoring):
             name="Spell Stealer",
             source="Foe Foundry",
             theme="Anti-Magic",
-            power_type=PowerType.Theme,
+            icon="robber",
+            reference_statblock="Spy",
+            power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class_easy
+        cursed = conditions.Cursed().caption
         feature = Feature(
             name="Spell Stealer",
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
             description=f"On a hit, if the target is a spellcaster, the spellcaster must make a DC {dc} Charisma saving throw. \
-                On a failure, the target is cursed and loses the ability to cast a spell of {stats.selfref}'s choice while cursed in this way. \
+                On a failure, the target is {cursed} and loses the ability to cast a spell of {stats.selfref}'s choice while cursed in this way. \
                 The curse can be removed with a *Remove Curse* spell or similar magic.",
         )
         return [feature]
@@ -240,23 +278,26 @@ class _TwistedMind(PowerWithStandardScoring):
             name="Tiwsted Mind",
             source="Foe Foundry",
             theme="Anti-Magic",
-            power_type=PowerType.Theme,
+            icon="brain-tentacle",
+            reference_statblock="Aboleth",
+            power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
 
         if stats.cr >= 5:
             new_attributes = stats.attributes.grant_save_proficiency(
-                Stats.WIS, Stats.INT, Stats.CHA
+                AbilityScore.WIS, AbilityScore.INT, AbilityScore.CHA
             )
             stats = stats.copy(attributes=new_attributes)
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Twisted Mind",
             action=ActionType.Feature,
@@ -275,19 +316,27 @@ class _SealOfSilence(PowerWithStandardScoring):
                 CreatureType.Fiend,
                 CreatureType.Celestial,
             ],
-            require_roles=[MonsterRole.Defender, MonsterRole.Leader, MonsterRole.Controller],
+            require_roles=[
+                MonsterRole.Defender,
+                MonsterRole.Leader,
+                MonsterRole.Controller,
+                MonsterRole.Support,
+            ],
             require_cr=7,
         )
         super().__init__(
             name="Seal of Silence",
             source="A5E SRD Dread Knight Champion",
             theme="Anti-Magic",
+            reference_statblock="Wight",
+            icon="silenced",
             create_date=datetime(2023, 11, 22),
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Seal of Silence",
             action=ActionType.Feature,
@@ -303,16 +352,19 @@ class _RuneDrinker(PowerWithStandardScoring):
             name="Rune Drinker",
             source="A5E SRD Chuul",
             theme="Anti-Magic",
+            icon="rune-stone",
+            reference_statblock="Chuul",
             create_date=datetime(2023, 11, 28),
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 require_types=[CreatureType.Monstrosity, CreatureType.Aberration],
                 bonus_roles=[MonsterRole.Defender],
                 require_cr=1,
             ),
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Rune Drinker",
             action=ActionType.Feature,

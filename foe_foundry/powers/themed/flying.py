@@ -4,24 +4,38 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import LOW_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
-class _Flyer(PowerWithStandardScoring):
-    def __init__(self):
+class FlyingPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        icon: str,
+        power_level: float = LOW_POWER,
+        power_types: List[PowerType] | None = None,
+        **score_args,
+    ):
         def not_already_special_movement(c: BaseStatblock) -> bool:
             return (
-                not (c.speed.fly or 0) and not (c.speed.climb or 0) and not (c.speed.swim or 0)
+                not (c.speed.fly or 0)
+                and not (c.speed.climb or 0)
+                and not (c.speed.swim or 0)
             )
 
         super().__init__(
-            name="Flyer",
-            source="Foe Foundry",
+            name=name,
+            source=source,
             theme="flying",
-            power_level=LOW_POWER,
-            power_type=PowerType.Theme,
+            reference_statblock="Giant Eagle",
+            icon=icon,
+            power_level=power_level,
+            power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.Movement],
             score_args=dict(
                 require_types={
                     CreatureType.Dragon,
@@ -34,17 +48,27 @@ class _Flyer(PowerWithStandardScoring):
                     CreatureType.Fey,
                 },
                 require_callback=not_already_special_movement,
-            ),
+            )
+            | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        speed_change = 10 + 10 * int(floor(stats.cr / 10.0))
-        new_speed = stats.speed.delta(speed_change=speed_change)
-        new_speed = new_speed.copy(fly=new_speed.walk)
-        stats = stats.copy(speed=new_speed)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        speed = stats.speed.grant_flying()
+        stats = stats.copy(speed=speed)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+
+class _Flyer(FlyingPower):
+    def __init__(self):
+        super().__init__(
+            name="Flyer",
+            icon="swallow",
+            source="Foe Foundry",
+            power_types=[PowerType.Movement],
+        )
+
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         speed_change = 10 + 10 * int(floor(stats.cr / 10.0))
         feature = Feature(
             name="Flyer",
@@ -55,18 +79,17 @@ class _Flyer(PowerWithStandardScoring):
         return [feature]
 
 
-class _Flyby(PowerWithStandardScoring):
+class _Flyby(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Flyby",
+            icon="crow-dive",
             source="A5E SRD Owl",
-            theme="flying",
-            power_type=PowerType.Theme,
-            power_level=LOW_POWER,
-            score_args=dict(require_flying=True),
+            require_flying=True,
+            power_types=[PowerType.Movement, PowerType.Utility],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Flyby",
             action=ActionType.Feature,
@@ -75,23 +98,24 @@ class _Flyby(PowerWithStandardScoring):
         return [feature]
 
 
-class _WingedCharge(PowerWithStandardScoring):
+class _WingedCharge(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Winged Charge",
             source="A5E SRD Chimera",
-            theme="flying",
-            power_type=PowerType.Theme,
-            power_level=LOW_POWER,
-            score_args=dict(
-                require_flying=True,
-                require_types=CreatureType.all_but(CreatureType.Aberration),
-                bonus_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
-                require_attack_types=AttackType.AllMelee(),
-            ),
+            icon="griffin-symbol",
+            require_flying=True,
+            require_types=CreatureType.all_but(CreatureType.Aberration),
+            bonus_roles={
+                MonsterRole.Soldier,
+                MonsterRole.Skirmisher,
+                MonsterRole.Bruiser,
+            },
+            require_attack_types=AttackType.AllMelee(),
+            power_types=[PowerType.Movement, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Winged Charge",
             action=ActionType.Reaction,
@@ -102,20 +126,18 @@ class _WingedCharge(PowerWithStandardScoring):
         return [feature]
 
 
-class _WingedRetreat(PowerWithStandardScoring):
+class _WingedRetreat(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Winged Retreat",
             source="A5E SRD Vulture",
-            theme="flying",
-            power_type=PowerType.Theme,
-            score_args=dict(
-                require_flying=True,
-                require_roles={MonsterRole.Skirmisher},
-            ),
+            icon="dove",
+            require_flying=True,
+            require_roles={MonsterRole.Skirmisher},
+            power_types=[PowerType.Movement, PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Winged Retreat",
             action=ActionType.Reaction,
