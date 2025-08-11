@@ -38,12 +38,11 @@ def load_articles():
 
 
 def transform():
-    parent_dir = Path(__file__).parent
-    raw_dir = parent_dir / "raw"
-    transformed_dir = Path(__file__).parent / "transformed"
-    transformed_dir.mkdir(exist_ok=True)
+    source_dir = Path.cwd() / "cache" / "the_monsters_know"
+    target_dir = Path.cwd() / "data" / "the_monsters_know"
+    target_dir.mkdir(exist_ok=True)
 
-    for article_path in raw_dir.glob("*.html"):
+    for article_path in source_dir.glob("*.html"):
         try:
             html_content = article_path.read_text(encoding="utf-8")
             if "<html" not in html_content.lower():
@@ -53,21 +52,21 @@ def transform():
 
             # article title
             title = soup.find("h2")
-            title_text = title.get_text()
+            title_text = title.get_text()  # type: ignore
 
             # Extract the article content
             article = soup.find("div", class_="entry-content")
-            article_text = article.get_text()
+            article_text = article.get_text()  # type: ignore
 
-            clean_path = transformed_dir / f"{article_path.stem}.md"
+            clean_path = target_dir / f"{article_path.stem}.md"
 
             md = f"## {title_text}\n\n{article_text}"
             clean_path.write_text(md, encoding="utf-8")
             print(
-                f"Transformed {article_path.relative_to(parent_dir)} to {clean_path.relative_to(parent_dir)}"
+                f"Transformed {article_path.relative_to(source_dir)} to {clean_path.relative_to(target_dir)}"
             )
         except Exception as x:
-            print(f"Unable to transform {article_path.relative_to(parent_dir)}. {x}")
+            print(f"Unable to transform {article_path.relative_to(source_dir)}. {x}")
 
 
 if __name__ == "__main__":

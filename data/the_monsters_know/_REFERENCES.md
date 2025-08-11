@@ -1,21 +1,21 @@
 # Monster References in The Monsters Know Blog Posts
 
 **Summary:**
-- Total posts analyzed: 337
+- Total posts analyzed: 351
 - Unique monsters referenced: 354
-- Total monster references: 7608
-- Header references (high quality): 158
+- Total monster references: 7723
+- Header references (high quality): 162
 
 ## Most Referenced Monsters
-- **Shadow** (shadow): 313 references (3 in headers) 🎯
+- **Shadow** (shadow): 315 references (3 in headers) 🎯
 - **Drow** (drow): 279 references (9 in headers) 🎯
+- **Mage** (mage): 238 references (1 in headers) 🎯
 - **Vampire** (vampire): 238 references (2 in headers) 🎯
-- **Mage** (mage): 236 references (1 in headers) 🎯
-- **Warrior** (warrior): 176 references (2 in headers) 🎯
+- **Warrior** (warrior): 185 references (2 in headers) 🎯
 - **Duergar** (duergar): 156 references (5 in headers) 🎯
-- **Orc** (orc): 148 references (2 in headers) 🎯
-- **Goblin** (goblin): 147 references (3 in headers) 🎯
-- **Spider** (spider): 142 references (1 in headers) 🎯
+- **Orc** (orc): 149 references (2 in headers) 🎯
+- **Goblin** (goblin): 148 references (3 in headers) 🎯
+- **Spider** (spider): 143 references (1 in headers) 🎯
 - **Knight** (knight): 118 references (3 in headers) 🎯
 - **Hobgoblin** (hobgoblin): 106 references (2 in headers) 🎯
 - **Lich** (lich): 105 references (1 in headers) 🎯
@@ -23,10 +23,10 @@
 - **Bard** (bard): 100 references (1 in headers) 🎯
 - **Nightmare** (nightmare): 99 references (1 in headers) 🎯
 - **Priest** (priest): 95 references (3 in headers) 🎯
-- **Zombie** (zombie): 92 references (2 in headers) 🎯
-- **Guard** (guard): 84 references (1 in headers) 🎯
-- **Kraken** (kraken): 83 references (2 in headers) 🎯
-- **Guardian** (guardian): 75 references (1 in headers) 🎯
+- **Zombie** (zombie): 93 references (2 in headers) 🎯
+- **Guard** (guard): 86 references (1 in headers) 🎯
+- **Kraken** (kraken): 85 references (2 in headers) 🎯
+- **Guardian** (guardian): 80 references (1 in headers) 🎯
 
 ## Post-by-Post Breakdown
 ### post-1.md
@@ -38,12 +38,12 @@
 - **Lion** (3 refs): Body: lion
 - **Lizardfolk** (1 refs): Body: lizardfolk
 - **Orc** (1 refs): Body: orcs
-- **Soldier** (4 refs): Body: soldier, soldiers
+- **Soldier** (4 refs): Body: soldiers, soldier
 
 ### post-10.md
 **Title:** Goblin Tactics
 - **Bugbear** (2 refs): Body: bugbear, bugbears
-- **Goblin** (47 refs): **Headers: goblin**; Body: goblins, goblin 🎯
+- **Goblin** (47 refs): **Headers: goblin**; Body: goblin, goblins 🎯
 - **Hobgoblin** (2 refs): Body: hobgoblin, hobgoblins
 - **Kobold** (1 refs): Body: kobolds
 
@@ -72,7 +72,7 @@
 **Title:** Undead Tactics: Liches
 - **Berserker** (1 refs): Body: berserker
 - **Druid** (1 refs): Body: druid
-- **Lich** (82 refs): **Headers: liches**; Body: liches, lich 🎯
+- **Lich** (82 refs): **Headers: liches**; Body: lich, liches 🎯
 - **Mage** (2 refs): Body: mage
 - **Vampire** (1 refs): Body: vampire
 - **Zombie** (1 refs): Body: zombie
@@ -80,7 +80,7 @@
 ### post-1017.md
 **Title:** Flying Snake Tactics
 - **Couatl** (3 refs): Body: couatl
-- **Flying Snake** (9 refs): **Headers: flying snake**; Body: flying snake, flying snakes 🎯
+- **Flying Snake** (9 refs): **Headers: flying snake**; Body: flying snakes, flying snake 🎯
 
 ### post-1026.md
 **Title:** Live to Tell the Tale: An Introduction to Combat Tactics for Dungeons and Dragons Players, Second Edition
@@ -95,7 +95,7 @@
 - **Lich** (1 refs): Body: liches
 - **Mummy** (1 refs): Body: mummy
 - **Mummy Lord** (1 refs): Body: mummy lords
-- **Ochre Jelly** (7 refs): Body: ochre jellies, ochre jelly
+- **Ochre Jelly** (7 refs): Body: ochre jelly, ochre jellies
 - **Spider** (1 refs): Body: spider
 
 ### post-1037.md
@@ -122,7 +122,7 @@
 
 ### post-1056.md
 **Title:** Ettin Tactics
-- **Ettin** (12 refs): **Headers: ettin**; Body: ettins, ettin 🎯
+- **Ettin** (12 refs): **Headers: ettin**; Body: ettin, ettins 🎯
 - **Orc** (2 refs): Body: orcs
 - **Stirge** (1 refs): Body: stirges
 
@@ -141,13 +141,13 @@
 - **Death Dog** (1 refs): Body: death dogs
 - **Giant Spider** (9 refs): Body: giant spider, giant spiders
 - **Phase Spider** (21 refs): **Headers: phase spider**; Body: phase spiders, phase spider 🎯
-- **Spider** (35 refs): **Headers: spider**; Body: spider, spiders 🎯
+- **Spider** (35 refs): **Headers: spider**; Body: spiders, spider 🎯
 - **Worg** (1 refs): Body: worgs
 
 ### post-1083.md
 **Title:** Demon Tactics: Shoosuvas, Maw Demons and Babaus
 - **Cloaker** (1 refs): Body: cloakers
-- **Gnoll** (7 refs): Body: gnoll, gnolls
+- **Gnoll** (7 refs): Body: gnolls, gnoll
 - **Lamia** (3 refs): Body: lamia, lamias
 
 ### post-109.md
@@ -166,9 +166,9 @@
 ### post-1109.md
 **Title:** Undead Tactics: Demiliches
 - **Bard** (1 refs): Body: bard
-- **Demilich** (26 refs): **Headers: demiliches**; Body: demiliches, demilich 🎯
+- **Demilich** (26 refs): **Headers: demiliches**; Body: demilich, demiliches 🎯
 - **Druid** (1 refs): Body: druid
-- **Lich** (7 refs): Body: liches, lich
+- **Lich** (7 refs): Body: lich, liches
 
 ### post-1125.md
 **Title:** Devil Tactics: Abishais
@@ -247,14 +247,14 @@
 
 ### post-1261.md
 **Title:** Elite Githyanki Tactics
-- **Knight** (6 refs): Body: knight, knights
+- **Knight** (6 refs): Body: knights, knight
 - **Mage** (2 refs): Body: mage
 - **Warrior** (3 refs): Body: warrior, warriors
 
 ### post-1289.md
 **Title:** Skull Lord Tactics
 - **Bard** (1 refs): Body: bard
-- **Lich** (3 refs): Body: liches, lich
+- **Lich** (3 refs): Body: lich, liches
 - **Mage** (2 refs): Body: mage
 - **Skeleton** (6 refs): Body: skeletons, skeleton
 - **Treant** (1 refs): Body: treants
@@ -263,7 +263,7 @@
 ### post-13.md
 **Title:** Kobold Tactics
 - **Goblin** (5 refs): Body: goblins
-- **Kobold** (25 refs): **Headers: kobold**; Body: kobolds, kobold 🎯
+- **Kobold** (25 refs): **Headers: kobold**; Body: kobold, kobolds 🎯
 - **Orc** (1 refs): Body: orcs
 
 ### post-1304.md
@@ -277,12 +277,12 @@
 - **Deep Gnome** (1 refs): Body: deep gnomes
 - **Goblin** (1 refs): Body: goblins
 - **Kobold** (1 refs): Body: kobolds
-- **Ogre** (35 refs): **Headers: ogre**; Body: ogres, ogre 🎯
+- **Ogre** (35 refs): **Headers: ogre**; Body: ogre, ogres 🎯
 
 ### post-136.md
 **Title:** Peryton Tactics
 - **Ettercap** (1 refs): Body: ettercaps
-- **Peryton** (20 refs): **Headers: peryton**; Body: perytons, peryton 🎯
+- **Peryton** (20 refs): **Headers: peryton**; Body: peryton, perytons 🎯
 
 ### post-1386.md
 **Title:** Boneclaw Tactics
@@ -316,10 +316,10 @@
 
 ### post-142.md
 **Title:** Ettercap Tactics
-- **Ettercap** (13 refs): **Headers: ettercap**; Body: ettercaps, ettercap 🎯
+- **Ettercap** (13 refs): **Headers: ettercap**; Body: ettercap, ettercaps 🎯
 - **Giant Spider** (2 refs): Body: giant spiders
 - **Grick** (1 refs): Body: gricks
-- **Spider** (8 refs): Body: spider, spiders
+- **Spider** (8 refs): Body: spiders, spider
 
 ### post-1421.md
 **Title:** NPC Tactics: Kraken Priests
@@ -379,7 +379,7 @@
 - **Goblin** (2 refs): Body: goblins
 - **Kobold** (2 refs): Body: kobolds
 - **Lizardfolk** (1 refs): Body: lizardfolk
-- **Orc** (105 refs): **Headers: orc**; Body: orc, orcs 🎯
+- **Orc** (105 refs): **Headers: orc**; Body: orcs, orc 🎯
 - **Warrior** (2 refs): Body: warriors
 
 ### post-1516.md
@@ -413,11 +413,11 @@
 **Title:** NPC Tactics: Guards, Thugs, Veterans and Knights
 - **Commoner** (6 refs): Body: commoners, commoner
 - **Guard** (12 refs): **Headers: guards**; Body: guards, guard 🎯
-- **Knight** (13 refs): **Headers: knights**; Body: knight, knights 🎯
+- **Knight** (13 refs): **Headers: knights**; Body: knights, knight 🎯
 - **Orc** (1 refs): Body: orc
 - **Soldier** (1 refs): Body: soldier
-- **Thug** (13 refs): **Headers: thugs**; Body: thugs, thug 🎯
-- **Veteran** (15 refs): **Headers: veterans**; Body: veterans, veteran 🎯
+- **Thug** (13 refs): **Headers: thugs**; Body: thug, thugs 🎯
+- **Veteran** (15 refs): **Headers: veterans**; Body: veteran, veterans 🎯
 - **Warhorse** (2 refs): Body: warhorse
 
 ### post-1644.md
@@ -425,7 +425,7 @@
 - **Archmage** (1 refs): Body: archmage
 - **Bard** (1 refs): Body: bards
 - **Drow** (22 refs): **Headers: drow**; Body: drow 🎯
-- **Guardian** (11 refs): Body: guardian, guardians
+- **Guardian** (11 refs): Body: guardians, guardian
 - **Mage** (2 refs): Body: mage
 - **Spider** (2 refs): Body: spider
 - **Warrior** (1 refs): Body: warrior
@@ -434,7 +434,7 @@
 **Title:** Nagpa Tactics
 - **Bard** (2 refs): Body: bards
 - **Drow** (1 refs): Body: drow
-- **Druid** (4 refs): Body: druid, druids
+- **Druid** (4 refs): Body: druids, druid
 - **Raven** (1 refs): Body: raven
 - **Shadow** (1 refs): Body: shadows
 - **Vulture** (1 refs): Body: vulture
@@ -447,11 +447,11 @@
 ### post-171.md
 **Title:** NPC Tactics: Bandits and Assassins
 - **Acolyte** (1 refs): Body: acolytes
-- **Assassin** (40 refs): **Headers: assassins**; Body: assassins, assassin 🎯
+- **Assassin** (40 refs): **Headers: assassins**; Body: assassin, assassins 🎯
 - **Bandit** (41 refs): **Headers: bandits**; Body: bandit, bandits 🎯
-- **Bandit Captain** (18 refs): Body: bandit captain, bandit captains
+- **Bandit Captain** (18 refs): Body: bandit captains, bandit captain
 - **Knight** (1 refs): Body: knight
-- **Noble** (3 refs): Body: nobles, noble
+- **Noble** (3 refs): Body: noble, nobles
 - **Pirate** (1 refs): Body: pirate
 - **Shadow** (1 refs): Body: shadows
 - **Veteran** (1 refs): Body: veteran
@@ -476,9 +476,9 @@
 **Title:** NPC Tactics: Cultists and Priests
 - **Acolyte** (3 refs): Body: acolytes, acolyte
 - **Commoner** (5 refs): Body: commoners, commoner
-- **Cult Fanatic** (12 refs): Body: cult fanatic, cult fanatics
-- **Cultist** (12 refs): **Headers: cultists**; Body: cultists, cultist 🎯
-- **Druid** (7 refs): Body: druid, druids
+- **Cult Fanatic** (12 refs): Body: cult fanatics, cult fanatic
+- **Cultist** (12 refs): **Headers: cultists**; Body: cultist, cultists 🎯
+- **Druid** (7 refs): Body: druids, druid
 - **Guardian** (2 refs): Body: guardians
 - **Priest** (15 refs): **Headers: priests**; Body: priests, priest 🎯
 
@@ -514,7 +514,7 @@
 **Title:** Yugoloth Tactics: Oinoloths
 - **Bard** (1 refs): Body: bard
 - **Duergar** (1 refs): Body: duergar
-- **Minotaur** (2 refs): Body: minotaur, minotaurs
+- **Minotaur** (2 refs): Body: minotaurs, minotaur
 
 ### post-1830.md
 **Title:** Duergar Tactics: Mordenkainen’s Duergar, Part 1
@@ -571,7 +571,7 @@
 ### post-19.md
 **Title:** Lizardfolk Tactics
 - **Constrictor Snake** (1 refs): Body: constrictor snakes
-- **Crocodile** (7 refs): Body: crocodiles, crocodile
+- **Crocodile** (7 refs): Body: crocodile, crocodiles
 - **Druid** (1 refs): Body: druid
 - **Giant Lizard** (1 refs): Body: giant lizards
 - **Giant Poisonous Snake** (2 refs): Body: giant poisonous snakes
@@ -670,7 +670,7 @@
 - **Giant Sea Horse** (1 refs): Body: giant sea horse
 - **Giant Spider** (5 refs): Body: giant spider, giant spiders
 - **Giant Toad** (1 refs): Body: giant toad
-- **Giant Vulture** (5 refs): Body: giant vulture, giant vultures
+- **Giant Vulture** (5 refs): Body: giant vultures, giant vulture
 - **Giant Wasp** (1 refs): Body: giant wasp
 - **Giant Wolf Spider** (1 refs): Body: giant wolf spider
 - **Hunter Shark** (1 refs): Body: hunter shark
@@ -690,7 +690,7 @@
 - **Riding Horse** (2 refs): Body: riding horse
 - **Saber-Toothed Tiger** (1 refs): Body: saber-toothed tiger
 - **Sea Horse** (1 refs): Body: sea horse
-- **Spider** (9 refs): Body: spider, spiders
+- **Spider** (9 refs): Body: spiders, spider
 - **Swarm of Bats** (1 refs): Body: swarm of bats
 - **Swarm of Insects** (1 refs): Body: swarm of insects
 - **Swarm of Poisonous Snakes** (1 refs): Body: swarm of poisonous snakes
@@ -698,9 +698,9 @@
 - **Swarm of Rats** (1 refs): Body: swarm of rats
 - **Swarm of Ravens** (1 refs): Body: swarm of ravens
 - **Tiger** (2 refs): Body: tiger
-- **Troll** (5 refs): Body: trolls, troll
+- **Troll** (5 refs): Body: troll, trolls
 - **Velociraptor** (1 refs): Body: velociraptor
-- **Vulture** (5 refs): Body: vulture, vultures
+- **Vulture** (5 refs): Body: vultures, vulture
 - **Warhorse** (4 refs): Body: warhorses, warhorse
 - **Wolf** (4 refs): Body: wolf
 
@@ -764,15 +764,15 @@
 - **Ala** (1 refs): Body: alas
 - **Assassin** (2 refs): Body: assassins
 - **Guard** (1 refs): Body: guards
-- **Scout** (7 refs): **Headers: scouts**; Body: scouts, scout 🎯
-- **Spy** (25 refs): **Headers: spies**; Body: spies, spy 🎯
+- **Scout** (7 refs): **Headers: scouts**; Body: scout, scouts 🎯
+- **Spy** (25 refs): **Headers: spies**; Body: spy, spies 🎯
 
 ### post-2206.md
 **Title:** Leucrotta Tactics
 - **Badger** (1 refs): Body: badger
 - **Deer** (1 refs): Body: deer
 - **Giant Badger** (1 refs): Body: giant badger
-- **Gnoll** (6 refs): Body: gnoll, gnolls
+- **Gnoll** (6 refs): Body: gnolls, gnoll
 - **Hyena** (1 refs): Body: hyena
 - **Rat** (1 refs): Body: rats
 
@@ -784,7 +784,7 @@
 
 ### post-2237.md
 **Title:** Slithering Tracker Tactics
-- **Bard** (3 refs): Body: bards, bard
+- **Bard** (3 refs): Body: bard, bards
 - **Revenant** (1 refs): Body: revenant
 - **Spider** (1 refs): Body: spider
 
@@ -865,7 +865,7 @@
 - **Guard** (1 refs): Body: guard
 - **Mage** (2 refs): Body: mage
 - **Pony** (1 refs): Body: ponies
-- **Spider** (5 refs): Body: spider, spiders
+- **Spider** (5 refs): Body: spiders, spider
 - **Warrior** (3 refs): Body: warrior, warriors
 
 ### post-2518.md
@@ -886,7 +886,7 @@
 **Title:** Sword Wraith Tactics
 - **Ghost** (1 refs): Body: ghosts
 - **Warrior** (8 refs): Body: warrior, warriors
-- **Wraith** (24 refs): **Headers: wraith**; Body: wraith, wraiths 🎯
+- **Wraith** (24 refs): **Headers: wraith**; Body: wraiths, wraith 🎯
 
 ### post-256.md
 **Title:** Blight Tactics
@@ -908,11 +908,11 @@
 - **Assassin** (1 refs): Body: assassins
 - **Berserker** (1 refs): Body: berserker
 - **Druid** (1 refs): Body: druids
-- **Knight** (29 refs): **Headers: knight**; Body: knight, knights 🎯
+- **Knight** (29 refs): **Headers: knight**; Body: knights, knight 🎯
 - **Lich** (1 refs): Body: lich
 - **Skeleton** (5 refs): Body: skeletons, skeleton
 - **Warhorse** (6 refs): Body: warhorse
-- **Warhorse Skeleton** (3 refs): Body: warhorse skeletons, warhorse skeleton
+- **Warhorse Skeleton** (3 refs): Body: warhorse skeleton, warhorse skeletons
 - **Zombie** (6 refs): Body: zombies
 
 ### post-264.md
@@ -934,20 +934,20 @@
 
 ### post-274.md
 **Title:** Gorgon Tactics
-- **Gorgon** (11 refs): **Headers: gorgon**; Body: gorgons, gorgon 🎯
+- **Gorgon** (11 refs): **Headers: gorgon**; Body: gorgon, gorgons 🎯
 - **Manticore** (1 refs): Body: manticores
 
 ### post-282.md
 **Title:** Manticore Tactics
 - **Chimera** (2 refs): Body: chimeras
 - **Griffon** (1 refs): Body: griffons
-- **Manticore** (14 refs): **Headers: manticore**; Body: manticores, manticore 🎯
+- **Manticore** (14 refs): **Headers: manticore**; Body: manticore, manticores 🎯
 - **Peryton** (1 refs): Body: perytons
 - **Wyvern** (1 refs): Body: wyverns
 
 ### post-2830.md
 **Title:** Dolgaunt and Dolgrim Tactics
-- **Goblin** (4 refs): Body: goblins, goblin
+- **Goblin** (4 refs): Body: goblin, goblins
 - **Hobgoblin** (2 refs): Body: hobgoblins
 - **Soldier** (2 refs): Body: soldiers
 - **Warrior** (2 refs): Body: warrior
@@ -963,7 +963,7 @@
 - **Necromancer** (1 refs): Body: necromancer
 - **Priest** (1 refs): Body: priests
 - **Skeleton** (2 refs): Body: skeleton
-- **Soldier** (13 refs): **Headers: soldier**; Body: soldier, soldiers 🎯
+- **Soldier** (13 refs): **Headers: soldier**; Body: soldiers, soldier 🎯
 - **Warrior** (1 refs): Body: warriors
 - **Zombie** (2 refs): Body: zombie
 
@@ -982,19 +982,19 @@
 - **Archmage** (1 refs): Body: archmage
 - **Bard** (1 refs): Body: bard
 - **Guard** (1 refs): Body: guards
-- **Guardian** (3 refs): Body: guardian, guardians
+- **Guardian** (3 refs): Body: guardians, guardian
 - **Shadow** (3 refs): Body: shadow
 - **Shroud** (1 refs): Body: shroud
-- **Soldier** (13 refs): Body: soldier, soldiers
+- **Soldier** (13 refs): Body: soldiers, soldier
 
 ### post-29.md
 **Title:** Gnoll Tactics
 - **Bugbear** (1 refs): Body: bugbears
 - **Giant Hyena** (1 refs): Body: giant hyenas
-- **Gnoll** (30 refs): **Headers: gnoll**; Body: gnoll, gnolls 🎯
+- **Gnoll** (30 refs): **Headers: gnoll**; Body: gnolls, gnoll 🎯
 - **Goblin** (1 refs): Body: goblin
 - **Hobgoblin** (1 refs): Body: hobgoblins
-- **Hyena** (2 refs): Body: hyena, hyenas
+- **Hyena** (2 refs): Body: hyenas, hyena
 
 ### post-293.md
 **Title:** Dragon Tactics, Part 2
@@ -1016,7 +1016,7 @@
 **Title:** Githyanki Tactics
 - **Flumph** (1 refs): Body: flumph
 - **Guard** (1 refs): Body: guard
-- **Knight** (9 refs): Body: knight, knights
+- **Knight** (9 refs): Body: knights, knight
 - **Mage** (2 refs): Body: mage
 - **Warrior** (11 refs): Body: warrior, warriors
 
@@ -1041,10 +1041,10 @@
 - **Commoner** (1 refs): Body: commoners
 - **Rat** (1 refs): Body: rats
 - **Shadow** (2 refs): Body: shadows
-- **Tiger** (4 refs): Body: tigers, tiger
+- **Tiger** (4 refs): Body: tiger, tigers
 - **Werebear** (8 refs): Body: werebear, werebears
 - **Wereboar** (4 refs): Body: wereboars, wereboar
-- **Weretiger** (21 refs): Body: weretiger, weretigers
+- **Weretiger** (21 refs): Body: weretigers, weretiger
 
 ### post-3260.md
 **Title:** Inspired Tactics
@@ -1064,11 +1064,11 @@
 
 ### post-3336.md
 **Title:** Zakya Rakshasa Tactics
-- **Rakshasa** (28 refs): **Headers: rakshasa**; Body: rakshasas, rakshasa 🎯
+- **Rakshasa** (28 refs): **Headers: rakshasa**; Body: rakshasa, rakshasas 🎯
 
 ### post-334.md
 **Title:** Shambling Mound Tactics
-- **Shambling Mound** (12 refs): **Headers: shambling mound**; Body: shambling mounds, shambling mound 🎯
+- **Shambling Mound** (12 refs): **Headers: shambling mound**; Body: shambling mound, shambling mounds 🎯
 - **Veteran** (1 refs): Body: veteran
 - **Zombie** (1 refs): Body: zombies
 
@@ -1079,7 +1079,7 @@
 ### post-3350.md
 **Title:** Valenar Animal Tactics
 - **Blink Dog** (1 refs): Body: blink dog
-- **Druid** (2 refs): Body: druid, druids
+- **Druid** (2 refs): Body: druids, druid
 - **Dryad** (1 refs): Body: dryad
 - **Elephant** (1 refs): Body: elephant
 - **Hawk** (4 refs): Body: hawk, hawks
@@ -1110,7 +1110,7 @@
 ### post-3388.md
 **Title:** Fastieth and Clawfoot Tactics
 - **Cat** (1 refs): Body: cat
-- **Druid** (2 refs): Body: druid, druids
+- **Druid** (2 refs): Body: druids, druid
 
 ### post-339.md
 **Title:** Succubus/Incubus Tactics
@@ -1159,13 +1159,13 @@
 **Title:** Dragon Tactics, Part 5: Deep Dragons and Sea Serpents
 - **Dragon Turtle** (1 refs): Body: dragon turtles
 - **Nightmare** (1 refs): Body: nightmare
-- **Sea Serpent** (9 refs): **Headers: sea serpents**; Body: sea serpent, sea serpents 🎯
+- **Sea Serpent** (9 refs): **Headers: sea serpents**; Body: sea serpents, sea serpent 🎯
 
 ### post-344.md
 **Title:** Elemental Tactics
-- **Air Elemental** (11 refs): Body: air elemental, air elementals
+- **Air Elemental** (11 refs): Body: air elementals, air elemental
 - **Earth Elemental** (3 refs): Body: earth elementals
-- **Fire Elemental** (11 refs): Body: fire elemental, fire elementals
+- **Fire Elemental** (11 refs): Body: fire elementals, fire elemental
 - **Water Elemental** (5 refs): Body: water elemental, water elementals
 
 ### post-3447.md
@@ -1220,7 +1220,7 @@
 - **Giant Rat** (2 refs): Body: giant rats
 - **Guard** (1 refs): Body: guard
 - **Hobgoblin** (5 refs): Body: hobgoblin, hobgoblins
-- **Kobold** (8 refs): Body: kobolds, kobold
+- **Kobold** (8 refs): Body: kobold, kobolds
 - **Spy** (1 refs): Body: spy
 
 ### post-3475.md
@@ -1228,7 +1228,7 @@
 - **Bard** (1 refs): Body: bard
 - **Drow** (20 refs): Body: drow
 - **Glabrezu** (2 refs): Body: glabrezu
-- **Guardian** (2 refs): Body: guardian, guardians
+- **Guardian** (2 refs): Body: guardians, guardian
 - **Mage** (3 refs): Body: mage, mages
 - **Marilith** (1 refs): Body: marilith
 - **Shadow** (32 refs): Body: shadow
@@ -1261,7 +1261,7 @@
 ### post-3490.md
 **Title:** Monsters of the Multiverse: Giants
 - **Cloud Giant** (3 refs): Body: cloud giant
-- **Ogre** (14 refs): Body: ogres, ogre
+- **Ogre** (14 refs): Body: ogre, ogres
 - **Stone Giant** (1 refs): Body: stone giant
 - **Troll** (1 refs): Body: trolls
 
@@ -1310,11 +1310,11 @@
 **Title:** Goblin Boss, Hobgoblin and Bugbear Tactics
 - **Bugbear** (23 refs): **Headers: bugbear**; Body: bugbear, bugbears 🎯
 - **Bugbear Chief** (7 refs): Body: bugbear chief, bugbear chiefs
-- **Goblin** (30 refs): **Headers: goblin**; Body: goblins, goblin 🎯
+- **Goblin** (30 refs): **Headers: goblin**; Body: goblin, goblins 🎯
 - **Goblin Boss** (5 refs): **Headers: goblin boss**; Body: goblin boss 🎯
 - **Hobgoblin** (53 refs): **Headers: hobgoblin**; Body: hobgoblin, hobgoblins 🎯
 - **Hobgoblin Captain** (8 refs): Body: hobgoblin captains, hobgoblin captain
-- **Hobgoblin Warlord** (13 refs): Body: hobgoblin warlords, hobgoblin warlord
+- **Hobgoblin Warlord** (13 refs): Body: hobgoblin warlord, hobgoblin warlords
 - **Mage** (1 refs): Body: mage
 - **Orc** (1 refs): Body: orcs
 - **Soldier** (1 refs): Body: soldiers
@@ -1338,7 +1338,7 @@
 - **Druid** (1 refs): Body: druids
 - **Infiltrator** (14 refs): Body: infiltrator
 - **Mage** (20 refs): Body: mage
-- **Soldier** (15 refs): Body: soldier, soldiers
+- **Soldier** (15 refs): Body: soldiers, soldier
 
 ### post-3626.md
 **Title:** Egg Hunter Tactics
@@ -1413,7 +1413,7 @@
 
 ### post-375.md
 **Title:** Marid Tactics
-- **Marid** (19 refs): **Headers: marid**; Body: marids, marid 🎯
+- **Marid** (19 refs): **Headers: marid**; Body: marid, marids 🎯
 
 ### post-379.md
 **Title:** Dao Tactics
@@ -1425,16 +1425,16 @@
 
 ### post-384.md
 **Title:** Fey Tactics: Pixies, Sprites and Dryads
-- **Dryad** (6 refs): **Headers: dryads**; Body: dryads, dryad 🎯
+- **Dryad** (6 refs): **Headers: dryads**; Body: dryad, dryads 🎯
 - **Pixie** (6 refs): **Headers: pixies**; Body: pixies 🎯
-- **Sprite** (7 refs): **Headers: sprites**; Body: sprite, sprites 🎯
+- **Sprite** (7 refs): **Headers: sprites**; Body: sprites, sprite 🎯
 - **Unicorn** (2 refs): Body: unicorn
 
 ### post-391.md
 **Title:** Hag Tactics
-- **Green Hag** (9 refs): Body: green hag, green hags
+- **Green Hag** (9 refs): Body: green hags, green hag
 - **Incubus** (1 refs): Body: incubus
-- **Night Hag** (15 refs): Body: night hag, night hags
+- **Night Hag** (15 refs): Body: night hags, night hag
 - **Nightmare** (2 refs): Body: nightmare
 - **Satyr** (1 refs): Body: satyrs
 - **Sea Hag** (13 refs): Body: sea hags, sea hag
@@ -1447,11 +1447,11 @@
 ### post-397.md
 **Title:** Devil Tactics: Lesser Devils
 - **Barbed Devil** (3 refs): Body: barbed devil, barbed devils
-- **Bearded Devil** (5 refs): Body: bearded devil, bearded devils
-- **Bone Devil** (9 refs): Body: bone devils, bone devil
-- **Chain Devil** (6 refs): Body: chain devils, chain devil
+- **Bearded Devil** (5 refs): Body: bearded devils, bearded devil
+- **Bone Devil** (9 refs): Body: bone devil, bone devils
+- **Chain Devil** (6 refs): Body: chain devil, chain devils
 - **Guard** (2 refs): Body: guard
-- **Imp** (9 refs): Body: imp, imps
+- **Imp** (9 refs): Body: imps, imp
 - **Lemure** (1 refs): Body: lemure
 - **Rat** (1 refs): Body: rat
 - **Raven** (2 refs): Body: raven
@@ -1482,9 +1482,9 @@
 - **Bat** (1 refs): Body: bat
 - **Bearded Devil** (2 refs): Body: bearded devils
 - **Erinyes** (6 refs): Body: erinyes
-- **Horned Devil** (8 refs): Body: horned devil, horned devils
+- **Horned Devil** (8 refs): Body: horned devils, horned devil
 - **Ice Devil** (7 refs): Body: ice devil, ice devils
-- **Pit Fiend** (16 refs): Body: pit fiend, pit fiends
+- **Pit Fiend** (16 refs): Body: pit fiends, pit fiend
 - **Warrior** (1 refs): Body: warriors
 
 ### post-4012.md
@@ -1500,7 +1500,7 @@
 - **Lemure** (2 refs): Body: lemures
 - **Shadow** (11 refs): Body: shadow
 - **Shadow Demon** (10 refs): Body: shadow demon, shadow demons
-- **Vrock** (8 refs): Body: vrock, vrocks
+- **Vrock** (8 refs): Body: vrocks, vrock
 
 ### post-4063.md
 **Title:** Gallows Speaker Tactics
@@ -1515,7 +1515,7 @@
 ### post-4071.md
 **Title:** Dullahan Tactics
 - **Dragon Turtle** (1 refs): Body: dragon turtles
-- **Dullahan** (27 refs): **Headers: dullahan**; Body: dullahan, dullahans 🎯
+- **Dullahan** (27 refs): **Headers: dullahan**; Body: dullahans, dullahan 🎯
 - **Nightmare** (1 refs): Body: nightmare
 - **Riding Horse** (1 refs): Body: riding horse
 - **Soldier** (1 refs): Body: soldier
@@ -1579,9 +1579,9 @@
 
 ### post-419.md
 **Title:** Demon Tactics: Type 4, 5 and 6 Demons
-- **Balor** (6 refs): Body: balors, balor
+- **Balor** (6 refs): Body: balor, balors
 - **Marilith** (10 refs): Body: mariliths, marilith
-- **Nalfeshnee** (16 refs): Body: nalfeshnee, nalfeshnees
+- **Nalfeshnee** (16 refs): Body: nalfeshnees, nalfeshnee
 
 ### post-4198.md
 **Title:** Priest of Osybus Tactics
@@ -1606,7 +1606,7 @@
 - **Bard** (1 refs): Body: bard
 - **Deva** (1 refs): Body: deva
 - **Druid** (1 refs): Body: druid
-- **Gibbering Mouther** (4 refs): Body: gibbering mouther, gibbering mouthers
+- **Gibbering Mouther** (4 refs): Body: gibbering mouthers, gibbering mouther
 - **Mage** (1 refs): Body: mage
 - **Warrior** (2 refs): Body: warrior, warriors
 
@@ -1633,11 +1633,11 @@
 - **Dretch** (4 refs): Body: dretches
 - **Drow** (1 refs): Body: drow
 - **Glabrezu** (17 refs): Body: glabrezus, glabrezu
-- **Hezrou** (10 refs): Body: hezrou, hezrous
+- **Hezrou** (10 refs): Body: hezrous, hezrou
 - **Marilith** (8 refs): Body: mariliths, marilith
-- **Nalfeshnee** (6 refs): Body: nalfeshnee, nalfeshnees
-- **Quasit** (7 refs): **Headers: quasits**; Body: quasit, quasits 🎯
-- **Vrock** (20 refs): Body: vrock, vrocks
+- **Nalfeshnee** (6 refs): Body: nalfeshnees, nalfeshnee
+- **Quasit** (7 refs): **Headers: quasits**; Body: quasits, quasit 🎯
+- **Vrock** (20 refs): Body: vrocks, vrock
 
 ### post-4307.md
 **Title:** Astral Elf Tactics
@@ -1802,31 +1802,31 @@
 
 ### post-483.md
 **Title:** Sphinx Tactics
-- **Androsphinx** (20 refs): Body: androsphinxes, androsphinx
+- **Androsphinx** (20 refs): Body: androsphinx, androsphinxes
 - **Bard** (1 refs): Body: bard
 - **Gynosphinx** (13 refs): Body: gynosphinxes, gynosphinx
 - **Minotaur** (1 refs): Body: minotaurs
-- **Sphinx** (14 refs): **Headers: sphinx**; Body: sphinx, sphinxes 🎯
+- **Sphinx** (14 refs): **Headers: sphinx**; Body: sphinxes, sphinx 🎯
 
 ### post-4835.md
 **Title:** Spelljammer Thri-kreen Tactics
 - **Bat** (1 refs): Body: bat
 - **Duelist** (1 refs): Body: duelist
-- **Gladiator** (12 refs): Body: gladiators, gladiator
+- **Gladiator** (12 refs): Body: gladiator, gladiators
 - **Mage** (1 refs): Body: mage
 - **Megapede** (1 refs): Body: megapedes
 - **Mystic** (17 refs): Body: mystic
 
 ### post-4859.md
 **Title:** Megapede, B’rohg and Braxat Tactics
-- **Hill Giant** (5 refs): Body: hill giants, hill giant
+- **Hill Giant** (5 refs): Body: hill giant, hill giants
 - **Megapede** (6 refs): **Headers: megapede**; Body: megapede, megapedes 🎯
 - **Spider** (1 refs): Body: spider
 - **The Flesh** (1 refs): Body: the flesh
 
 ### post-4866.md
 **Title:** Psurlon Tactics
-- **Bard** (2 refs): Body: bards, bard
+- **Bard** (2 refs): Body: bard, bards
 - **Druid** (3 refs): Body: druid
 - **Mage** (1 refs): Body: mage
 - **Shadow** (1 refs): Body: shadows
@@ -1834,9 +1834,9 @@
 ### post-489.md
 **Title:** Mephit Tactics
 - **Dust Mephit** (9 refs): Body: dust mephits, dust mephit
-- **Ice Mephit** (5 refs): Body: ice mephits, ice mephit
+- **Ice Mephit** (5 refs): Body: ice mephit, ice mephits
 - **Kraken** (1 refs): Body: krakens
-- **Magma Mephit** (5 refs): Body: magma mephits, magma mephit
+- **Magma Mephit** (5 refs): Body: magma mephit, magma mephits
 - **Steam Mephit** (2 refs): Body: steam mephits
 
 ### post-4894.md
@@ -1865,10 +1865,10 @@
 
 ### post-495.md
 **Title:** Minotaur Tactics
-- **Berserker** (2 refs): Body: berserkers, berserker
+- **Berserker** (2 refs): Body: berserker, berserkers
 - **Bull** (3 refs): Body: bull
 - **Echo** (1 refs): Body: echo
-- **Minotaur** (31 refs): **Headers: minotaur**; Body: minotaur, minotaurs 🎯
+- **Minotaur** (31 refs): **Headers: minotaur**; Body: minotaurs, minotaur 🎯
 
 ### post-4978.md
 **Title:** Planescape Faction Agent Tactics, Part 5
@@ -1899,12 +1899,12 @@
 ### post-5081.md
 **Title:** Planescape Githzerai Tactics
 - **Bard** (1 refs): Body: bards
-- **Druid** (3 refs): Body: druid, druids
+- **Druid** (3 refs): Body: druids, druid
 - **Mage** (2 refs): Body: mage
 
 ### post-5107.md
 **Title:** Eater of Knowledge Tactics
-- **Druid** (3 refs): Body: druid, druids
+- **Druid** (3 refs): Body: druids, druid
 - **Spy** (1 refs): Body: spy
 
 ### post-5132.md
@@ -1917,21 +1917,21 @@
 **Title:** Naga Tactics
 - **Chuul** (1 refs): Body: chuuls
 - **Guardian** (20 refs): Body: guardian
-- **Guardian Naga** (19 refs): Body: guardian naga, guardian nagas
+- **Guardian Naga** (19 refs): Body: guardian nagas, guardian naga
 - **Spirit Naga** (15 refs): Body: spirit nagas, spirit naga
 
 ### post-519.md
 **Title:** Chuul Tactics
 - **Aboleth** (3 refs): Body: aboleths
 - **Ancient Aboleth** (1 refs): Body: ancient aboleths
-- **Chuul** (25 refs): **Headers: chuul**; Body: chuul, chuuls 🎯
+- **Chuul** (25 refs): **Headers: chuul**; Body: chuuls, chuul 🎯
 - **Flumph** (1 refs): Body: flumph
 - **Guard** (1 refs): Body: guard
 - **Kraken** (1 refs): Body: kraken
 
 ### post-523.md
 **Title:** Aboleth Tactics
-- **Aboleth** (29 refs): **Headers: aboleth**; Body: aboleths, aboleth 🎯
+- **Aboleth** (29 refs): **Headers: aboleth**; Body: aboleth, aboleths 🎯
 - **Chuul** (1 refs): Body: chuuls
 
 ### post-530.md
@@ -1941,7 +1941,7 @@
 ### post-532.md
 **Title:** Goblinoids Revisited
 - **Bugbear** (5 refs): Body: bugbear, bugbears
-- **Goblin** (18 refs): Body: goblins, goblin
+- **Goblin** (18 refs): Body: goblin, goblins
 - **Hobgoblin** (6 refs): Body: hobgoblin, hobgoblins
 - **Hobgoblin Commander** (1 refs): Body: hobgoblin commanders
 - **Mage** (5 refs): Body: mage
@@ -1963,7 +1963,7 @@
 - **Giant Spider** (1 refs): Body: giant spiders
 - **Giant Wolf Spider** (1 refs): Body: giant wolf spiders
 - **Goblin** (1 refs): Body: goblins
-- **Kobold** (34 refs): **Headers: kobolds**; Body: kobolds, kobold 🎯
+- **Kobold** (34 refs): **Headers: kobolds**; Body: kobold, kobolds 🎯
 - **Kobold Sorcerer** (1 refs): Body: kobold sorcerer
 - **Mage** (2 refs): Body: mage
 - **Orc** (1 refs): Body: orcs
@@ -1974,7 +1974,7 @@
 
 ### post-55.md
 **Title:** A Note on Darkvision
-- **Goblin** (4 refs): Body: goblins, goblin
+- **Goblin** (4 refs): Body: goblin, goblins
 
 ### post-559.md
 **Title:** Orcs Revisited
@@ -1982,7 +1982,7 @@
 - **Bard** (1 refs): Body: bards
 - **Gnoll** (1 refs): Body: gnolls
 - **Kobold** (1 refs): Body: kobolds
-- **Orc** (22 refs): **Headers: orcs**; Body: orc, orcs 🎯
+- **Orc** (22 refs): **Headers: orcs**; Body: orcs, orc 🎯
 
 ### post-5618.md
 **Title:** Maelephant Tactics
@@ -1999,10 +1999,10 @@
 
 ### post-564.md
 **Title:** Gnolls Revisited
-- **Gnoll** (20 refs): **Headers: gnolls**; Body: gnoll, gnolls 🎯
+- **Gnoll** (20 refs): **Headers: gnolls**; Body: gnolls, gnoll 🎯
 - **Hobgoblin** (1 refs): Body: hobgoblins
 - **Hyena** (1 refs): Body: hyenas
-- **Kobold** (2 refs): Body: kobolds, kobold
+- **Kobold** (2 refs): Body: kobold, kobolds
 
 ### post-5642.md
 **Title:** Demodand Tactics
@@ -2029,7 +2029,7 @@
 - **Bat** (1 refs): Body: bat
 - **Druid** (1 refs): Body: druids
 - **Guard** (3 refs): Body: guard
-- **Guardian** (3 refs): Body: guardian, guardians
+- **Guardian** (3 refs): Body: guardians, guardian
 - **Solar** (1 refs): Body: solar
 
 ### post-567.md
@@ -2042,19 +2042,48 @@
 - **Guardian** (1 refs): Body: guardians
 - **Spy** (1 refs): Body: spies
 
+### post-5687.md
+**Title:** Bariaur Wanderer Tactics
+- **Orc** (1 refs): Body: orcs
+- **Warrior** (1 refs): Body: warrior
+
 ### post-569.md
 **Title:** Beholders Revisited
 - **Goat** (1 refs): Body: goat
+
+### post-5699.md
+**Title:** Rilmani Tactics
+- **Assassin** (6 refs): Body: assassin, assassins
+- **Warrior** (2 refs): Body: warriors
+
+### post-5708.md
+**Title:** Modron Hierarch Tactics
+- **Druid** (1 refs): Body: druids
+- **Octopus** (1 refs): Body: octopus
+- **Shadow** (1 refs): Body: shadow
+- **Shadow Demon** (1 refs): Body: shadow demons
+
+### post-5733.md
+**Title:** Kolyarut Tactics
+- **Bat** (1 refs): Body: bat
+- **Guardian** (1 refs): Body: guardian
+- **Shadow** (1 refs): Body: shadow
+- **Warrior** (1 refs): Body: warriors
 
 ### post-576.md
 **Title:** Beholder-Kin Tactics
 - **Shadow** (1 refs): Body: shadows
 
+### post-5777.md
+**Title:** Triton Tactics
+- **Bat** (1 refs): Body: bat
+- **Goblin** (1 refs): Body: goblin
+
 ### post-579.md
 **Title:** NPC Tactics: Apprentice Wizards, Bards and Martial Arts Adepts
 - **Apprentice Mage** (1 refs): Body: apprentice mage
 - **Archdruid** (2 refs): Body: archdruid
-- **Bard** (37 refs): **Headers: bards**; Body: bards, bard 🎯
+- **Bard** (37 refs): **Headers: bards**; Body: bard, bards 🎯
 - **Blackguard** (2 refs): Body: blackguard
 - **Enchanter** (1 refs): Body: enchanter
 - **Gargoyle** (1 refs): Body: gargoyles
@@ -2067,6 +2096,18 @@
 - **Necromancer** (1 refs): Body: necromancer
 - **Priest** (4 refs): Body: priest
 
+### post-5800.md
+**Title:** Leonin Iconoclast Tactics
+- **Ala** (1 refs): Body: alas
+- **Tribal Warrior** (1 refs): Body: tribal warriors
+- **Warrior** (1 refs): Body: warriors
+
+### post-5825.md
+**Title:** Hoplite Tactics
+- **Mage** (2 refs): Body: mage
+- **Soldier** (1 refs): Body: soldier
+- **Warrior** (1 refs): Body: warriors
+
 ### post-584.md
 **Title:** NPC Tactics: Swashbucklers and Master Thieves
 - **Assassin** (1 refs): Body: assassin
@@ -2077,7 +2118,39 @@
 ### post-586.md
 **Title:** Troll Tactics
 - **Lion** (1 refs): Body: lions
-- **Troll** (29 refs): **Headers: troll**; Body: trolls, troll 🎯
+- **Troll** (29 refs): **Headers: troll**; Body: troll, trolls 🎯
+
+### post-5860.md
+**Title:** Oracle Tactics
+- **Harpy** (1 refs): Body: harpies
+- **Warrior** (1 refs): Body: warrior
+
+### post-5884.md
+**Title:** Theran Harpy Tactics
+- **Banshee** (1 refs): Body: banshees
+- **Ghast** (1 refs): Body: ghasts
+- **Ghoul** (1 refs): Body: ghouls
+- **Harpy** (12 refs): **Headers: harpy**; Body: harpy, harpies 🎯
+- **Skeleton** (2 refs): Body: skeletons
+- **Specter** (1 refs): Body: specters
+- **Wight** (1 refs): Body: wights
+- **Zombie** (1 refs): Body: zombies
+
+### post-5914.md
+**Title:** Cerberus Tactics
+- **Guardian** (2 refs): Body: guardians
+- **Kraken** (2 refs): Body: kraken, krakens
+- **Lion** (1 refs): Body: lions
+- **Medusa** (2 refs): Body: medusa, medusas
+- **Minotaur** (2 refs): Body: minotaurs, minotaur
+
+### post-5939.md
+**Title:** Fleecemane Lion Tactics
+- **Ape** (1 refs): Body: ape
+- **Chimera** (1 refs): Body: chimeras
+- **Guard** (2 refs): Body: guards, guard
+- **Guardian** (2 refs): Body: guardian
+- **Lion** (11 refs): **Headers: lion**; Body: lions, lion 🎯
 
 ### post-595.md
 **Title:** NPC Tactics: Magical Specialists
@@ -2085,13 +2158,23 @@
 - **Archfey** (1 refs): Body: archfey
 - **Bard** (2 refs): Body: bard
 - **Blackguard** (2 refs): Body: blackguard
-- **Druid** (2 refs): Body: druid, druids
+- **Druid** (2 refs): Body: druids, druid
 - **Enchanter** (1 refs): Body: enchanter
 - **Guard** (1 refs): Body: guard
 - **Mage** (1 refs): Body: mage
 - **Mammoth** (1 refs): Body: mammoth
 - **Necromancer** (1 refs): Body: necromancer
 - **Priest** (1 refs): Body: priest
+
+### post-5962.md
+**Title:** Theran Chimera Tactics
+- **Bull** (2 refs): Body: bull
+- **Chimera** (23 refs): **Headers: chimera**; Body: chimeras, chimera 🎯
+- **Cockatrice** (1 refs): Body: cockatrice
+- **Hydra** (1 refs): Body: hydras
+- **Lion** (1 refs): Body: lion
+- **Spider** (1 refs): Body: spider
+- **Unicorn** (1 refs): Body: unicorn
 
 ### post-599.md
 **Title:** Yuan-ti Revisited
@@ -2101,8 +2184,8 @@
 
 ### post-606.md
 **Title:** Hags Revisited, Part 1
-- **Green Hag** (2 refs): Body: green hag, green hags
-- **Night Hag** (10 refs): Body: night hag, night hags
+- **Green Hag** (2 refs): Body: green hags, green hag
+- **Night Hag** (10 refs): Body: night hags, night hag
 - **Ogre** (1 refs): Body: ogre
 - **Sea Hag** (4 refs): Body: sea hag
 - **Troll** (1 refs): Body: troll
@@ -2122,23 +2205,33 @@
 
 ### post-615.md
 **Title:** Empyrean Tactics
-- **Empyrean** (29 refs): **Headers: empyrean**; Body: empyreans, empyrean 🎯
+- **Empyrean** (29 refs): **Headers: empyrean**; Body: empyrean, empyreans 🎯
 
 ### post-620.md
 **Title:** Neothelid Tactics
 - **Bull** (1 refs): Body: bull
 - **Orc** (1 refs): Body: orc
 
+### post-6283.md
+**Title:** Theran Hydra Tactics
+- **Ala** (1 refs): Body: alas
+- **Hydra** (7 refs): **Headers: hydra**; Body: hydra 🎯
+- **Warrior** (1 refs): Body: warriors
+
 ### post-631.md
 **Title:** Giant Tactics
-- **Cloud Giant** (16 refs): Body: cloud giants, cloud giant
+- **Cloud Giant** (16 refs): Body: cloud giant, cloud giants
 - **Fire Giant** (5 refs): Body: fire giants
 - **Frost Giant** (4 refs): Body: frost giants
-- **Hill Giant** (9 refs): Body: hill giants, hill giant
+- **Hill Giant** (9 refs): Body: hill giant, hill giants
 - **Hobgoblin** (1 refs): Body: hobgoblins
 - **Orc** (2 refs): Body: orcs
-- **Stone Giant** (18 refs): Body: stone giants, stone giant
-- **Storm Giant** (5 refs): Body: storm giant, storm giants
+- **Stone Giant** (18 refs): Body: stone giant, stone giants
+- **Storm Giant** (5 refs): Body: storm giants, storm giant
+
+### post-6347.md
+**Title:** Typhon Tactics
+- **Warrior** (1 refs): Body: warriors
 
 ### post-637.md
 **Title:** Grung Tactics
@@ -2168,9 +2261,9 @@
 
 ### post-651.md
 **Title:** Golem Tactics
-- **Clay Golem** (11 refs): Body: clay golems, clay golem
+- **Clay Golem** (11 refs): Body: clay golem, clay golems
 - **Flesh Golem** (6 refs): Body: flesh golem
-- **Iron Golem** (3 refs): Body: iron golems, iron golem
+- **Iron Golem** (3 refs): Body: iron golem, iron golems
 - **Remorhaz** (1 refs): Body: remorhazes
 - **Stone Golem** (2 refs): Body: stone golem
 - **The Flesh** (5 refs): Body: the flesh
@@ -2192,7 +2285,7 @@
 - **Guard** (1 refs): Body: guard
 - **Hobgoblin** (1 refs): Body: hobgoblins
 - **Jackal** (2 refs): Body: jackals
-- **Jackalwere** (25 refs): **Headers: jackalwere**; Body: jackalwere, jackalweres 🎯
+- **Jackalwere** (25 refs): **Headers: jackalwere**; Body: jackalweres, jackalwere 🎯
 - **Lamia** (5 refs): Body: lamia
 
 ### post-677.md
@@ -2200,16 +2293,16 @@
 - **Animated Armor** (9 refs): Body: animated armor
 - **Bard** (1 refs): Body: bards
 - **Druid** (1 refs): Body: druids
-- **Flying Sword** (5 refs): Body: flying swords, flying sword
+- **Flying Sword** (5 refs): Body: flying sword, flying swords
 - **Rug of Smothering** (4 refs): Body: rug of smothering
 - **Solar** (3 refs): Body: solar
 
 ### post-682.md
 **Title:** Construct Tactics: Scarecrows, Helmed Horrors and Shield Guardians
-- **Guardian** (14 refs): **Headers: guardians**; Body: guardian, guardians 🎯
+- **Guardian** (14 refs): **Headers: guardians**; Body: guardians, guardian 🎯
 - **Revenant** (1 refs): Body: revenants
-- **Scarecrow** (28 refs): **Headers: scarecrows**; Body: scarecrows, scarecrow 🎯
-- **Shield Guardian** (13 refs): **Headers: shield guardians**; Body: shield guardians, shield guardian 🎯
+- **Scarecrow** (28 refs): **Headers: scarecrows**; Body: scarecrow, scarecrows 🎯
+- **Shield Guardian** (13 refs): **Headers: shield guardians**; Body: shield guardian, shield guardians 🎯
 
 ### post-687.md
 **Title:** Revenant Tactics
@@ -2235,7 +2328,7 @@
 - **Brown Bear** (1 refs): Body: brown bear
 - **Druid** (1 refs): Body: druid
 - **Lion** (1 refs): Body: lion
-- **Redcap** (27 refs): **Headers: redcaps**; Body: redcaps, redcap 🎯
+- **Redcap** (27 refs): **Headers: redcaps**; Body: redcap, redcaps 🎯
 - **Tiger** (1 refs): Body: tiger
 
 ### post-698.md
@@ -2251,7 +2344,7 @@
 **Title:** Otyugh Tactics
 - **Behir** (1 refs): Body: behirs
 - **Lizardfolk** (1 refs): Body: lizardfolk
-- **Otyugh** (25 refs): **Headers: otyugh**; Body: otyughs, otyugh 🎯
+- **Otyugh** (25 refs): **Headers: otyugh**; Body: otyugh, otyughs 🎯
 - **Remorhaz** (1 refs): Body: remorhaz
 
 ### post-709.md
@@ -2268,7 +2361,7 @@
 - **Hawk** (1 refs): Body: hawk
 - **Kraken** (1 refs): Body: kraken
 - **Owl** (1 refs): Body: owl
-- **Roc** (9 refs): **Headers: roc**; Body: roc, rocs 🎯
+- **Roc** (9 refs): **Headers: roc**; Body: rocs, roc 🎯
 - **Roper** (1 refs): Body: ropers
 - **Tarrasque** (1 refs): Body: tarrasque
 
@@ -2298,7 +2391,7 @@
 - **Shadow** (1 refs): Body: shadow
 - **Specter** (26 refs): **Headers: specters**; Body: specters, specter 🎯
 - **Wight** (12 refs): **Headers: wights**; Body: wights, wight 🎯
-- **Wraith** (21 refs): **Headers: wraiths**; Body: wraith, wraiths 🎯
+- **Wraith** (21 refs): **Headers: wraiths**; Body: wraiths, wraith 🎯
 - **Zombie** (1 refs): Body: zombie
 
 ### post-742.md
@@ -2315,7 +2408,7 @@
 - **Assassin** (1 refs): Body: assassins
 - **Guard** (1 refs): Body: guard
 - **Guardian** (2 refs): Body: guardians
-- **Invisible Stalker** (13 refs): **Headers: invisible stalker**; Body: invisible stalker, invisible stalkers 🎯
+- **Invisible Stalker** (13 refs): **Headers: invisible stalker**; Body: invisible stalkers, invisible stalker 🎯
 - **Salamander** (3 refs): Body: salamanders, salamander
 - **Strife** (1 refs): Body: strife
 
@@ -2327,42 +2420,42 @@
 ### post-759.md
 **Title:** Elite Giant Tactics
 - **Bard** (1 refs): Body: bard
-- **Cloud Giant** (6 refs): Body: cloud giants, cloud giant
+- **Cloud Giant** (6 refs): Body: cloud giant, cloud giants
 - **Druid** (1 refs): Body: druid
-- **Fire Giant** (4 refs): Body: fire giant, fire giants
+- **Fire Giant** (4 refs): Body: fire giants, fire giant
 - **Frost Giant** (3 refs): Body: frost giant, frost giants
-- **Hill Giant** (4 refs): Body: hill giants, hill giant
+- **Hill Giant** (4 refs): Body: hill giant, hill giants
 - **Stone Giant** (2 refs): Body: stone giant
 - **Storm Giant** (2 refs): Body: storm giant
 - **Troll** (2 refs): Body: troll
 
 ### post-767.md
 **Title:** Barghest Tactics
-- **Druid** (2 refs): Body: druid, druids
+- **Druid** (2 refs): Body: druids, druid
 - **Ghast** (1 refs): Body: ghast
 - **Ghost** (1 refs): Body: ghost
-- **Goblin** (19 refs): Body: goblins, goblin
+- **Goblin** (19 refs): Body: goblin, goblins
 - **Merrow** (1 refs): Body: merrows
 
 ### post-772.md
 **Title:** Merrow Tactics
 - **Merfolk** (2 refs): Body: merfolk
-- **Merrow** (25 refs): **Headers: merrow**; Body: merrow, merrows 🎯
+- **Merrow** (25 refs): **Headers: merrow**; Body: merrows, merrow 🎯
 
 ### post-774.md
 **Title:** Angel Tactics
 - **Badger** (1 refs): Body: badger
 - **Deva** (19 refs): Body: deva, devas
 - **Flying Sword** (1 refs): Body: flying sword
-- **Planetar** (18 refs): Body: planetar, planetars
-- **Solar** (17 refs): Body: solar, solars
+- **Planetar** (18 refs): Body: planetars, planetar
+- **Solar** (17 refs): Body: solars, solar
 - **Unicorn** (1 refs): Body: unicorns
 
 ### post-779.md
 **Title:** Unicorn Tactics
 - **Couatl** (1 refs): Body: couatls
 - **Triceratops** (1 refs): Body: triceratops
-- **Unicorn** (39 refs): **Headers: unicorn**; Body: unicorn, unicorns 🎯
+- **Unicorn** (39 refs): **Headers: unicorn**; Body: unicorns, unicorn 🎯
 - **Vampire** (1 refs): Body: vampire
 
 ### post-782.md
@@ -2374,7 +2467,7 @@
 - **Ghost** (31 refs): **Headers: ghosts**; Body: ghosts, ghost 🎯
 - **Guard** (1 refs): Body: guard
 - **Guardian** (1 refs): Body: guardian
-- **Mummy** (15 refs): **Headers: mummies**; Body: mummies, mummy 🎯
+- **Mummy** (15 refs): **Headers: mummies**; Body: mummy, mummies 🎯
 - **Mummy Lord** (1 refs): Body: mummy lord
 - **Specter** (1 refs): Body: specters
 - **Wraith** (1 refs): Body: wraiths
@@ -2383,7 +2476,7 @@
 **Title:** Kirin Tactics
 - **Guardian** (2 refs): Body: guardian
 - **Sahuagin** (1 refs): Body: sahuagin
-- **Unicorn** (3 refs): Body: unicorn, unicorns
+- **Unicorn** (3 refs): Body: unicorns, unicorn
 
 ### post-812.md
 **Title:** Sahuagin Tactics
@@ -2412,12 +2505,12 @@
 - **Druid** (2 refs): Body: druid
 - **Fire Elemental** (2 refs): Body: fire elementals
 - **Gladiator** (1 refs): Body: gladiator
-- **Goblin** (3 refs): Body: goblins, goblin
+- **Goblin** (3 refs): Body: goblin, goblins
 - **Guard** (2 refs): Body: guards, guard
 - **Hobgoblin** (1 refs): Body: hobgoblins
 - **Ice Mephit** (1 refs): Body: ice mephits
 - **Knight** (1 refs): Body: knight
-- **Kobold** (8 refs): Body: kobolds, kobold
+- **Kobold** (8 refs): Body: kobold, kobolds
 - **Magmin** (1 refs): Body: magmins
 - **Polar Bear** (1 refs): Body: polar bears
 - **Salamander** (4 refs): Body: salamanders, salamander
@@ -2425,7 +2518,7 @@
 - **Veteran** (1 refs): Body: veteran
 - **Winter Wolf** (1 refs): Body: winter wolf
 - **Wolf** (1 refs): Body: wolf
-- **Yeti** (5 refs): Body: yetis, yeti
+- **Yeti** (5 refs): Body: yeti, yetis
 
 ### post-834.md
 **Title:** Wood Woad Tactics
@@ -2445,8 +2538,8 @@
 - **Guardian** (4 refs): Body: guardian
 - **Hobgoblin** (2 refs): Body: hobgoblin
 - **Hobgoblin Warlord** (1 refs): Body: hobgoblin warlord
-- **Mummy** (7 refs): Body: mummy, mummies
-- **Mummy Lord** (46 refs): **Headers: mummy lord**; Body: mummy lords, mummy lord 🎯
+- **Mummy** (7 refs): Body: mummies, mummy
+- **Mummy Lord** (46 refs): **Headers: mummy lord**; Body: mummy lord, mummy lords 🎯
 - **Orc** (2 refs): Body: orc
 - **Spectral Guardian** (1 refs): Body: spectral guardian
 - **Vampire** (1 refs): Body: vampires
@@ -2476,7 +2569,7 @@
 ### post-868.md
 **Title:** Rust Monster Tactics
 - **Duergar** (1 refs): Body: duergar
-- **Rust Monster** (23 refs): **Headers: rust monster**; Body: rust monster, rust monsters 🎯
+- **Rust Monster** (23 refs): **Headers: rust monster**; Body: rust monsters, rust monster 🎯
 
 ### post-873.md
 **Title:** Duergar Tactics
@@ -2488,13 +2581,13 @@
 
 ### post-886.md
 **Title:** Reader Questions: Goblin Stealth and Retreating Monsters
-- **Goblin** (4 refs): **Headers: goblin**; Body: goblins, goblin 🎯
+- **Goblin** (4 refs): **Headers: goblin**; Body: goblin, goblins 🎯
 - **Rakshasa** (1 refs): Body: rakshasas
 
 ### post-896.md
 **Title:** Rakshasa Tactics
 - **Mage** (1 refs): Body: mage
-- **Rakshasa** (34 refs): **Headers: rakshasa**; Body: rakshasas, rakshasa 🎯
+- **Rakshasa** (34 refs): **Headers: rakshasa**; Body: rakshasa, rakshasas 🎯
 - **Tarrasque** (1 refs): Body: tarrasques
 - **Vampire** (3 refs): Body: vampires, vampire
 
@@ -2522,11 +2615,11 @@
 
 ### post-962.md
 **Title:** Yeti Tactics
-- **Yeti** (28 refs): **Headers: yeti**; Body: yetis, yeti 🎯
+- **Yeti** (28 refs): **Headers: yeti**; Body: yeti, yetis 🎯
 
 ### post-965.md
 **Title:** The Flanking Rule: Why Many DMs Hate It and Why I’ll Still Use It
-- **Kobold** (4 refs): Body: kobolds, kobold
+- **Kobold** (4 refs): Body: kobold, kobolds
 - **Warrior** (1 refs): Body: warriors
 - **Wolf** (1 refs): Body: wolf
 
@@ -2541,7 +2634,7 @@
 - **Rat** (3 refs): Body: rats
 - **Spider** (4 refs): Body: spider
 - **Swarm of Bats** (1 refs): Body: swarm of bats
-- **Troll** (3 refs): Body: trolls, troll
+- **Troll** (3 refs): Body: troll, trolls
 - **Vampire** (132 refs): **Headers: vampires**; Body: vampires, vampire 🎯
 - **Vampire Spawn** (43 refs): Body: vampire spawn
 - **Vampire Warrior** (1 refs): Body: vampire warrior
@@ -2558,10 +2651,10 @@
 ### post-996.md
 **Title:** Death Knight Tactics
 - **Bard** (1 refs): Body: bard
-- **Death Knight** (53 refs): **Headers: death knight**; Body: death knight, death knights 🎯
+- **Death Knight** (53 refs): **Headers: death knight**; Body: death knights, death knight 🎯
 - **Ghast** (1 refs): Body: ghasts
 - **Ghoul** (1 refs): Body: ghouls
-- **Knight** (53 refs): **Headers: knight**; Body: knight, knights 🎯
+- **Knight** (53 refs): **Headers: knight**; Body: knights, knight 🎯
 - **Lich** (1 refs): Body: liches
 - **Mummy** (1 refs): Body: mummies
 - **Nightmare** (1 refs): Body: nightmare

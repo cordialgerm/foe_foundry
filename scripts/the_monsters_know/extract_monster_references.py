@@ -6,12 +6,29 @@ This script analyzes blog posts to identify mentions of D&D monsters by comparin
 against a comprehensive index of known monster names and variations.
 """
 
+import json
 import re
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, NamedTuple, Set, Tuple
 
 from foe_foundry_search.documents import load_monster_document_metas
+
+
+class MonsterMatch(NamedTuple):
+    """Represents a monster match with context."""
+
+    matched_text: str
+    position: int
+    context_type: str  # 'header' or 'body'
+    header_level: int = 0  # For header matches, the level (1-6)
+
+
+class PostAnalysisResult(NamedTuple):
+    """Results for a single post analysis."""
+
+    title: str
+    monster_matches: Dict[str, List[MonsterMatch]]
 
 
 class MonsterExtractor:
@@ -106,35 +123,84 @@ class MonsterExtractor:
 
         return patterns
 
-    def extract_monsters_from_text(self, text: str) -> Dict[str, List[Tuple[str, int]]]:
+    def extract_monsters_from_text(
+        self, text: str
+    ) -> Tuple[str, Dict[str, List[MonsterMatch]]]:
         """
-        Extract monster references from text.
+        Extract monster references from text, including header analysis.
 
         Args:
             text: Text to analyze
 
         Returns:
-            Dict mapping monster keys to list of (matched_text, position) tuples
+            Tuple of (title, Dict mapping monster keys to list of MonsterMatch objects)
         """
         results = defaultdict(list)
+
+        # Extract title (first header)
+        title_match = re.search(r"^#{1,6}\s+(.+)$", text, re.MULTILINE)
+        title = title_match.group(1).strip() if title_match else "Unknown Title"
+
+        # Split text into lines for header analysis
+        lines = text.split("\n")
+        current_position = 0
+
+        for line_num, line in enumerate(lines):
+            # Check if this is a header line
+            header_match = re.match(r"^(#{1,6})\s+(.+)$", line)
+            if header_match:
+                header_level = len(header_match.group(1))
+                header_text = header_match.group(2).strip()
+
+                # Check for monster matches in header
+                self._find_monsters_in_text(
+                    header_text,
+                    current_position,
+                    results,
+                    context_type="header",
+                    header_level=header_level,
+                )
+            else:
+                # Check for monster matches in body text
+                self._find_monsters_in_text(
+                    line, current_position, results, context_type="body"
+                )
+
+            current_position += len(line) + 1  # +1 for newline
+
+        return title, results
+
+    def _find_monsters_in_text(
+        self,
+        text: str,
+        base_position: int,
+        results: Dict[str, List[MonsterMatch]],
+        context_type: str = "body",
+        header_level: int = 0,
+    ):
+        """Find monster matches in a piece of text and add to results."""
         text_lower = text.lower()
 
         # Use compiled patterns for efficient matching
         for pattern_name, pattern in self.compiled_patterns.items():
             for match in pattern.finditer(text_lower):
                 matched_text = match.group()
-                position = match.start()
+                position = base_position + match.start()
 
                 # Look up which monsters this match corresponds to
                 if matched_text in self.monster_index:
                     for monster_key in self.monster_index[matched_text]:
-                        results[monster_key].append((matched_text, position))
-
-        return results
+                        monster_match = MonsterMatch(
+                            matched_text=matched_text,
+                            position=position,
+                            context_type=context_type,
+                            header_level=header_level,
+                        )
+                        results[monster_key].append(monster_match)
 
     def extract_monsters_from_file(
         self, file_path: Path
-    ) -> Dict[str, List[Tuple[str, int]]]:
+    ) -> Tuple[str, Dict[str, List[MonsterMatch]]]:
         """
         Extract monster references from a markdown file.
 
@@ -142,18 +208,16 @@ class MonsterExtractor:
             file_path: Path to the markdown file
 
         Returns:
-            Dict mapping monster keys to list of (matched_text, position) tuples
+            Tuple of (title, Dict mapping monster keys to list of MonsterMatch objects)
         """
         try:
             text = file_path.read_text(encoding="utf-8")
             return self.extract_monsters_from_text(text)
         except Exception as e:
             print(f"Error reading {file_path}: {e}")
-            return {}
+            return "Unknown Title", {}
 
-    def analyze_blog_posts(
-        self, blog_dir: Path
-    ) -> Dict[str, Dict[str, List[Tuple[str, int]]]]:
+    def analyze_blog_posts(self, blog_dir: Path) -> Dict[str, PostAnalysisResult]:
         """
         Analyze all blog posts in a directory.
 
@@ -161,21 +225,21 @@ class MonsterExtractor:
             blog_dir: Directory containing blog post markdown files
 
         Returns:
-            Dict mapping post filenames to monster extraction results
+            Dict mapping post filenames to PostAnalysisResult objects
         """
         results = {}
 
         for post_file in blog_dir.glob("post-*.md"):
             print(f"Analyzing {post_file.name}...")
-            monster_refs = self.extract_monsters_from_file(post_file)
+            title, monster_refs = self.extract_monsters_from_file(post_file)
             if monster_refs:
-                results[post_file.name] = monster_refs
+                results[post_file.name] = PostAnalysisResult(
+                    title=title, monster_matches=monster_refs
+                )
 
         return results
 
-    def generate_report(
-        self, results: Dict[str, Dict[str, List[Tuple[str, int]]]]
-    ) -> str:
+    def generate_report(self, results: Dict[str, PostAnalysisResult]) -> str:
         """
         Generate a comprehensive report of monster references.
 
@@ -191,23 +255,36 @@ class MonsterExtractor:
         # Summary statistics
         total_posts = len(results)
         total_unique_monsters = len(
-            set().union(*[refs.keys() for refs in results.values()])
+            set().union(*[result.monster_matches.keys() for result in results.values()])
         )
         total_references = sum(
-            len(refs) for post_refs in results.values() for refs in post_refs.values()
+            len(matches)
+            for result in results.values()
+            for matches in result.monster_matches.values()
+        )
+        total_header_matches = sum(
+            len([m for m in matches if m.context_type == "header"])
+            for result in results.values()
+            for matches in result.monster_matches.values()
         )
 
         report_lines.append("**Summary:**")
         report_lines.append(f"- Total posts analyzed: {total_posts}")
         report_lines.append(f"- Unique monsters referenced: {total_unique_monsters}")
         report_lines.append(f"- Total monster references: {total_references}")
+        report_lines.append(
+            f"- Header references (high quality): {total_header_matches}"
+        )
         report_lines.append("")
 
         # Monster frequency analysis
         monster_counts = defaultdict(int)
-        for post_refs in results.values():
-            for monster_key, refs in post_refs.items():
-                monster_counts[monster_key] += len(refs)
+        monster_header_counts = defaultdict(int)
+        for result in results.values():
+            for monster_key, matches in result.monster_matches.items():
+                monster_counts[monster_key] += len(matches)
+                header_matches = [m for m in matches if m.context_type == "header"]
+                monster_header_counts[monster_key] += len(header_matches)
 
         # Top referenced monsters
         top_monsters = sorted(monster_counts.items(), key=lambda x: x[1], reverse=True)[
@@ -217,30 +294,114 @@ class MonsterExtractor:
         for monster_key, count in top_monsters:
             monster_meta = self.monster_metas.get(monster_key)
             monster_name = monster_meta.name if monster_meta else monster_key
+            header_count = monster_header_counts[monster_key]
+            header_indicator = " 🎯" if header_count > 0 else ""
             report_lines.append(
                 f"- **{monster_name}** ({monster_key}): {count} references"
+                f" ({header_count} in headers){header_indicator}"
             )
         report_lines.append("")
 
         # Post-by-post breakdown
         report_lines.append("## Post-by-Post Breakdown")
         for post_name in sorted(results.keys()):
-            post_refs = results[post_name]
-            if not post_refs:
+            result = results[post_name]
+            if not result.monster_matches:
                 continue
 
             report_lines.append(f"### {post_name}")
-            for monster_key, refs in sorted(post_refs.items()):
+            report_lines.append(f"**Title:** {result.title}")
+
+            for monster_key, matches in sorted(result.monster_matches.items()):
                 monster_meta = self.monster_metas.get(monster_key)
                 monster_name = monster_meta.name if monster_meta else monster_key
-                matched_texts = [ref[0] for ref in refs]
-                unique_matches = list(set(matched_texts))
+
+                # Separate header and body matches
+                header_matches = [m for m in matches if m.context_type == "header"]
+                body_matches = [m for m in matches if m.context_type == "body"]
+
+                # Build match description
+                match_parts = []
+                if header_matches:
+                    header_texts = [m.matched_text for m in header_matches]
+                    unique_header_texts = list(set(header_texts))
+                    match_parts.append(f"**Headers: {', '.join(unique_header_texts)}**")
+
+                if body_matches:
+                    body_texts = [m.matched_text for m in body_matches]
+                    unique_body_texts = list(set(body_texts))
+                    match_parts.append(f"Body: {', '.join(unique_body_texts)}")
+
+                total_refs = len(matches)
+                header_indicator = " 🎯" if header_matches else ""
+
                 report_lines.append(
-                    f"- **{monster_name}** ({len(refs)} refs): {', '.join(unique_matches)}"
+                    f"- **{monster_name}** ({total_refs} refs): {'; '.join(match_parts)}{header_indicator}"
                 )
             report_lines.append("")
 
         return "\n".join(report_lines)
+
+    def generate_filtered_references_json(
+        self, results: Dict[str, PostAnalysisResult]
+    ) -> Dict[str, List[str]]:
+        """
+        Generate filtered monster references for JSON export.
+
+        Criteria for inclusion:
+        - At least 4 references in the source doc AND reference is in top 5 for the post
+        - OR the reference is in a header
+
+        Args:
+            results: Results from analyze_blog_posts
+
+        Returns:
+            Dict mapping post filenames to list of monster keys
+        """
+        filtered_references = {}
+
+        for post_name, result in results.items():
+            if not result.monster_matches:
+                continue
+
+            included_monsters = set()
+
+            # Get reference counts for this post
+            monster_ref_counts = {
+                monster_key: len(matches)
+                for monster_key, matches in result.monster_matches.items()
+            }
+
+            # Get top 5 most referenced monsters in this post
+            top_5_monsters = set(
+                monster_key
+                for monster_key, _ in sorted(
+                    monster_ref_counts.items(), key=lambda x: x[1], reverse=True
+                )[:5]
+            )
+
+            for monster_key, matches in result.monster_matches.items():
+                ref_count = len(matches)
+                header_matches = [m for m in matches if m.context_type == "header"]
+
+                # Include if has header match
+                if header_matches:
+                    included_monsters.add(monster_key)
+                # Include if has at least 4 references AND is in top 5 for this post
+                elif ref_count >= 4 and monster_key in top_5_monsters:
+                    included_monsters.add(monster_key)
+
+            if included_monsters:
+                # Convert to monster names for better readability
+                monster_names = []
+                for monster_key in included_monsters:
+                    monster_meta = self.monster_metas.get(monster_key)
+                    monster_name = monster_meta.name if monster_meta else monster_key
+                    monster_names.append(monster_name)
+
+                filtered_references[post_name] = sorted(monster_names)
+
+        return filtered_references
 
 
 def main():
@@ -268,13 +429,23 @@ def main():
     report = extractor.generate_report(results)
 
     # Save report
-    report_path = (
-        Path.cwd() / "scripts" / "the_monsters_know" / "monster_references_report.md"
-    )
+    report_path = Path.cwd() / "data" / "the_monsters_know" / "_REFERENCES.md"
     report_path.write_text(report, encoding="utf-8")
 
+    print("Generating filtered JSON references...")
+    filtered_references = extractor.generate_filtered_references_json(results)
+
+    # Save JSON file
+    json_path = Path.cwd() / "data" / "the_monsters_know" / "references.json"
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(filtered_references, f, indent=2, ensure_ascii=False)
+
     print(f"Report saved to: {report_path}")
+    print(f"JSON references saved to: {json_path}")
     print(f"Found monster references in {len(results)} posts")
+    print(
+        f"Filtered references for {len(filtered_references)} posts with high-quality monster matches"
+    )
 
 
 if __name__ == "__main__":
