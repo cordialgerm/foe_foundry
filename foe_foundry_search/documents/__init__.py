@@ -5,4 +5,5 @@ from .load import (
     iter_monster_doc_metas,  # noqa
     iter_documents,  # noqa
     get_document,  # noqa
+    load_documents,  # noqa
 )  # noqa

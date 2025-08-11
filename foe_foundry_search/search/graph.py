@@ -34,7 +34,7 @@ Example usage:
 """
 
 from dataclasses import dataclass
-from typing import Iterable
+from typing import Callable, Iterable
 
 from backports.strenum import StrEnum
 
@@ -66,6 +66,7 @@ def search_entities_with_graph_expansion(
     limit: int = 5,
     max_hops: int = 3,
     alpha: float = 0.15,
+    custom_filter: Callable[[dict], bool] | None = None,
 ) -> Iterable[EntitySearchResult]:
     """
     Search for entities using document search followed by graph expansion with strength decay.
@@ -100,6 +101,7 @@ def search_entities_with_graph_expansion(
             target_node_types,
             max_hops=max_hops,
             alpha=alpha,
+            custom_filter=custom_filter,
         )
         all_paths.extend(paths)
 
@@ -194,6 +196,31 @@ def search_monsters(
     return search_entities_with_graph_expansion(
         search_query,
         entity_types={EntityType.MONSTER},
+        limit=limit,
+        max_hops=max_hops,
+        custom_filter=custom_filter,
+        alpha=alpha,
+    )
+
+
+def search_powers(
+    search_query: str,
+    limit: int = 10,
+    max_hops: int = 3,
+    alpha: float = 0.15,
+) -> Iterable[EntitySearchResult]:
+    """
+    Search for powers using document search followed by graph expansion with strength decay.
+
+    Args:
+        search_query: The query to search for
+        limit: Maximum number of results to return
+        max_hops: Maximum hops for graph traversal
+        alpha: Decay factor for graph traversal
+    """
+    return search_entities_with_graph_expansion(
+        search_query,
+        entity_types={EntityType.POWER},
         limit=limit,
         max_hops=max_hops,
         alpha=alpha,

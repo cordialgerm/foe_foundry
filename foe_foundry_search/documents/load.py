@@ -141,6 +141,11 @@ def iter_documents() -> Iterable[Document]:
     return _loader.iter_documents()
 
 
+def load_documents() -> list[Document]:
+    """Load all monster documents. Cached for performance"""
+    return list(_loader.documents.values())
+
+
 def load_monster_document_metas() -> dict[str, MonsterDocumentMeta]:
     """Load metadata about monster documents. Cached for performance"""
     return _loader.document_metas

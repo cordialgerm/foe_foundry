@@ -15,6 +15,7 @@ def name_to_key(name: str) -> str:
         .replace("’", "")  # looks like ' but isnt: ’
         .replace("(", "")
         .replace(")", "")
+        .replace(":", "")
     )
 
 

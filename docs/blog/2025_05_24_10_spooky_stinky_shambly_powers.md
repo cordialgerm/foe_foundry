@@ -25,8 +25,8 @@ If you’ve ever run skeletons or zombies using the default 5E statblocks, you k
 |-----------------------------|--------------------------|--------------------------------------------------------------------------------|
 | [[Rotten Flesh]]            | Tier 1 Zombies           | Undead keeps fighting after dismemberment; adds grotesque flavor               |
 | [[Severed Limb]]            | Hordes of Zombies        | Grapples PCs even after the zombie’s death; good for swarms                    |
-| [[Rotten Grasp (Flesh Rot)]]| Plague-bearing Undead    | Inflicts disease and drains hit dice; increases long-term attrition            |
-| [[Toxic Breath (Filth Fever)]]| Elite Undead or Titans | AOE disease breath weapon; adds danger to undead bosses                        |
+| [[Rotten Grasp Flesh Rot]]| Plague-bearing Undead    | Inflicts disease and drains hit dice; increases long-term attrition            |
+| [[Toxic Breath Filth Fever]]| Elite Undead or Titans | AOE disease breath weapon; adds danger to undead bosses                        |
 | [[Skeletal Reconstruction]] | Skeleton Waves           | Reforms destroyed skeletons; perfect for surprise second waves                 |
 | [[Loathsome Rattle]]        | Low-CR Skeletons         | Unsettles players; reinforces the horror of undead                             |
 | [[Putrid Stench]]           | Zombie Mobs              | Aura-based nauseating stench; enhances immersion and threat                    |
@@ -47,13 +47,13 @@ To really play up the horror of a horde of [[Zombies]], add powers that focus on
 
 For extra fun, you can send a swarm of Zombies against a high-tier party, and as they cut through them with ease the swarm of [[Severed Limb]]s can grapple some of them in place, just in time for the [[Zombie Titan]] to arrive.
 
-[[!Rotten Grasp (Flesh Rot)]]
+[[!Rotten Grasp Flesh Rot]]
 
-[[Rotten Grasp (Flesh Rot)]] is a unique [Disease Power](../powers/disease.md) that allows a monster to inflict a nasty disease on a PC. PCs have probably never encountered anything like this before, so it'll create some interesting new situations for the party to deal with. The power also drains the hit die of the PCs which is helpful if you're in an attrition-heavy campaign arc.
+[[Rotten Grasp Flesh Rot]] is a unique [Disease Power](../powers/disease.md) that allows a monster to inflict a nasty disease on a PC. PCs have probably never encountered anything like this before, so it'll create some interesting new situations for the party to deal with. The power also drains the hit die of the PCs which is helpful if you're in an attrition-heavy campaign arc.
 
-[[!Toxic Breath (Filth Fever)]]
+[[!Toxic Breath Filth Fever]]
 
-[[Toxic Breath (Filth Fever)]] is another [Disease Power](../powers/disease.md) that can be applied via an AOE breath attack.
+[[Toxic Breath Filth Fever]] is another [Disease Power](../powers/disease.md) that can be applied via an AOE breath attack.
 
 [[!Skeletal Reconstruction]]
 
