@@ -35,6 +35,7 @@ from foe_foundry_data.families import load_families
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.powers import Powers
 from foe_foundry_search.documents import (
+    DocType,
     iter_documents,
     load_monster_document_metas,
 )
@@ -182,6 +183,35 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
             type="about",
             relevancy=1.0,
         )
+
+    # Add DOC → MON edges: Document is a blog post that references a monster
+    with (Path.cwd() / "data" / "the_monsters_know" / "references.json").open("r") as f:
+        blog_references = json.load(f)
+
+    for doc in iter_documents():
+        if doc.doc_type != DocType.blog_post:
+            continue
+
+        key = doc.doc_id[5:] + ".md"  # remove the thmk- prefix
+        references = blog_references.get(key, [])
+
+        for reference in references:
+            monster_key = name_to_key(reference)
+            monster_node = f"MON:{monster_key}"
+            doc_node = f"DOC:{doc.doc_id}"
+
+            if not G.has_node(monster_node):
+                issues.append(
+                    f"Blog post {doc.doc_id} references unknown monster {monster_key}"
+                )
+                continue
+
+            G.add_edge(
+                doc_node,
+                monster_node,
+                type="references",
+                relevancy=1.0,
+            )
 
     # Add DOC → POW edges: Document describes power
     for doc in iter_documents():

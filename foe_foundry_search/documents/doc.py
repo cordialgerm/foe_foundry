@@ -9,6 +9,7 @@ class DocType(StrEnum):
     monster_other = "monster_other"
     monster_ff = "monster_ff"
     power_ff = "power_ff"
+    blog_post = "blog_post"
 
 
 @dataclass(kw_only=True)

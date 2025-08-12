@@ -1,4 +1,5 @@
 import json
+import re
 from functools import cached_property
 from pathlib import Path
 from typing import Iterable
@@ -105,6 +106,23 @@ class _Loader:
                 name=power.name,
                 content=searchblob,
             )
+
+        blog_dir = Path.cwd() / "data" / "the_monsters_know"
+        for blog in blog_dir.glob("post-*.md"):
+            with blog.open("r", encoding="utf-8") as f:
+                text = f.read()
+                # extract the HTML header from the top of the markdown file
+                title = re.search(r"^#{1,6}\s+(.+)$", text, re.MULTILINE)
+                title = title.group(1).strip() if title else "Unknown Title"
+                searchblob = text.lower()
+                yield Document(
+                    doc_id=f"thmk-{blog.stem}",
+                    doc_type=DocType.blog_post,
+                    monster_key=None,
+                    power_key=None,
+                    name=title,
+                    content=searchblob,
+                )
 
     def iter_document_metas(self) -> Iterable[MonsterDocumentMeta]:
         dir = Path(__file__).parent.parent.parent / "data" / "5e_nl2"
