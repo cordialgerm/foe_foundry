@@ -1,0 +1,7 @@
+{
+  "Dust Mephit": {
+    "relation": "close_cousins",
+    "explanation": "The Spark Mephit is an elemental mephit with similar size and role, but focused on lightning instead of dust."
+  },
+  "monster_key": "spark-mephit"
+}

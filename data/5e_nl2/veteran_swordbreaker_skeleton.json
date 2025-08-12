@@ -1,0 +1,51 @@
+{
+    "name": "Veteran Swordbreaker Skeleton",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "skeleton",
+        "combat"
+    ],
+    "adjectives": [
+        "tenacious",
+        "formidable"
+    ],
+    "description": "A skeletal figure with a haunted presence, equipped with metal weaponry, designed to intimidate foes during combat.",
+    "memorable": "It can damage weapons that strike it, potentially destroying them.",
+    "goals": "To serve its master in battle, using its ability to incapacitate enemies' weapons.",
+    "relations": "May serve under necromancers or other evil beings.",
+    "environment": "Commonly found in graveyards, battlefields, or haunted ruins.",
+    "strengths": "High Strength allows for strong melee attacks; multiple attacks and weapon versatility.",
+    "weaknesses": "Vulnerable to thunder damage, limiting its defenses against such attacks.",
+    "attacks": "Can make two longsword attacks and additionally attack with a shortsword or crossbow.",
+    "most_powerful_ability": "Fossilized Bones, which damages and potentially destroys weapons that hit it.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immunity to poison damage and various conditions",
+        "Resists piercing and slashing damage",
+        "Has an Armor Class of 14, enhancing its defense",
+        "Possesses high durability with 78 hit points",
+        "Can attack both in melee and ranged combat effectively"
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "skeleton that damages weapons",
+        "undead creature with weapon-cracking ability",
+        "dark armed skeleton in combat",
+        "lawful evil skeleton with longsword",
+        "vulnerable skeleton to thunder damage"
+    ]
+}

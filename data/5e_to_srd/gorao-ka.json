@@ -1,0 +1,7 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Gorao-Ka is a tiny, whimsical fey creature with magical abilities, similar in nature and size to a Sprite."
+  },
+  "monster_key": "gorao-ka"
+}

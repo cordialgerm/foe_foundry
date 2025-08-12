@@ -1,0 +1,55 @@
+{
+    "name": "Wild Warrior",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any lineage",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 9,
+    "ac": 12,
+    "srd": false,
+    "ac_description": "hide armor",
+    "cr": "1/8",
+    "movement": "30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "tactics",
+        "nature"
+    ],
+    "adjectives": [
+        "resourceful",
+        "tactical",
+        "dangerous",
+        "skilled"
+    ],
+    "description": "The Wild Warrior is a medium humanoid embodying survival essence, skilled in tracking and hunting, often found in natural terrains.",
+    "memorable": "Excels in teamwork and crafting traps, making it a clever opponent.",
+    "goals": "To survive and thrive in the wild, often utilizing stealth and traps.",
+    "relations": "Likely encountered with other natural creatures or allies that complement its skills.",
+    "environment": "Forests, hills, and mountainous regions.",
+    "strengths": "Strong abilities in stealth, environmental awareness, and teamwork.",
+    "weaknesses": "Low hit points and limited damage output in direct confrontations.",
+    "attacks": "Makes spear attacks with decent range and can create traps to restrain foes.",
+    "most_powerful_ability": "Pack Tactics, granting advantage on attack rolls when allies are nearby.",
+    "equipment": "Spear as a primary weapon.",
+    "senses": null,
+    "skills": "Proficient in Perception and Stealth, both at a level of 12.",
+    "additional_information": [
+        "Automatically discerns true north in outdoor environments.",
+        "Can conceal tracks effectively, making it difficult to trace.",
+        "Uses Quick Trap bonus action to hinder opponents.",
+        "Works best in coordinated attacks with allies.",
+        "Fragile despite tactical advantages."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical forest hunter with traps",
+        "skilled tracker in natural terrain",
+        "humanoid that uses teamwork in combat",
+        "creature that sets traps and ambushes",
+        "dangerous scout in forests and hills"
+    ]
+}

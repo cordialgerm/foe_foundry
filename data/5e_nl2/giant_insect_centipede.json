@@ -1,0 +1,51 @@
+{
+    "name": "Giant Centipede",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 14,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 feet on the ground and climbing",
+    "role": "Ambusher",
+    "tags": [
+        "insect",
+        "venomous",
+        "ambush"
+    ],
+    "adjectives": [
+        "swift",
+        "dangerous",
+        "poisonous"
+    ],
+    "description": "A small, agile centipede with a venomous bite, it has natural armor that gives it a resilient appearance.",
+    "memorable": "Its bite can paralyze victims, making it particularly dangerous during ambushes.",
+    "goals": "Typically hunts smaller creatures or defends its territory.",
+    "relations": "May be found in close proximity to other small beasts or insects.",
+    "environment": "Commonly found in damp or dark environments, such as caves or forests.",
+    "strengths": "Has a potent bite that inflicts piercing and poison damage.",
+    "weaknesses": "Very low physical strength and intelligence, limiting its combat capability.",
+    "attacks": "Bite attack that delivers piercing damage and potential poison damage.",
+    "most_powerful_ability": "Paralyzing poison on a successful bite that incapacitate victims.",
+    "senses": "Possesses keen senses that allow it to detect creatures within 30 feet.",
+    "skills": "Skilled in stealth, capable of hiding effectively in its environment.",
+    "additional_information": [
+        "Swift Hunter ability for quick movement towards targets.",
+        "Has a poor constitution but evades through agility.",
+        "Can incapacitate larger foes despite its small size.",
+        "Utilizes ambush tactics to maximize its bite's effectiveness.",
+        "Natural armor provides some resilience against physical attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small venomous insect with paralyzing bite",
+        "agile centipede capable of climbing",
+        "swift hunter that can poison its prey",
+        "dangerous small beast found in dark places",
+        "giant centipede ambushing travelers"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "almost_identical",
+    "explanation": "The Swampgas Shade is a shadowy, incorporeal undead with life-draining abilities and stealth, closely matching the Shadow's traits."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are incorporeal undead with life-draining attacks and a sinister presence, making them close cousins."
+  },
+  "monster_key": "swampgas-shade"
+}

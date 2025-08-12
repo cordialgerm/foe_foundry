@@ -1,0 +1,25 @@
+{
+    "name": "Baleful Miasma",
+    "queries": [
+        {
+            "query": "elemental creature that deals poison damage and floats",
+            "variant": "floating poison dealing elemental creature"
+        },
+        {
+            "query": "poisonous creature that can occupy spaces and flies",
+            "variant": "creature that flies and takes up space while being poisonous"
+        },
+        {
+            "query": "medium elemental that suffocates enemies with poisonous air",
+            "variant": "elemental creature that uses poisonous air to suffocate foes"
+        },
+        {
+            "query": "dangerous creature immune to poison that has slam attacks",
+            "variant": "creature that is immune to poison and performs slam attacks"
+        },
+        {
+            "query": "stealthy elemental that manipulates space and causes poison effects",
+            "variant": "space manipulating stealthy elemental that causes poison"
+        }
+    ]
+}

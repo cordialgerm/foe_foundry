@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Bonepowder Ghoul is an undead ghoul variant with enhanced necrotic powers and agility."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Its almost immaterial, dusty form and necrotic abilities resemble the incorporeal nature of a Wraith."
+  },
+  "monster_key": "bonepowder-ghoul"
+}

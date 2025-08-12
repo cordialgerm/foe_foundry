@@ -1,0 +1,7 @@
+{
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "The Necrotech Thunderer is a massive undead bruiser with high HP and slow movement, similar to a powerful variant of a Zombie."
+  },
+  "monster_key": "necrotech-thunderer"
+}

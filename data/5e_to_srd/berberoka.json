@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Berberoka is a large giant with strong melee attacks and a brutish nature similar to a Hill Giant."
+  },
+  "Water Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares aquatic abilities and water-based attacks like the Berberoka's water jet and amphibious nature."
+  },
+  "monster_key": "berberoka"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Veteran",
+    "queries": [
+        {
+            "query": "seasoned warrior with tactical combat skills that can fight both up close and at range",
+            "variant": "tactical fighter that fights close and at range, skilled seasoned warrior"
+        },
+        {
+            "query": "medium humanoid that has high strength and specialized in melee attacks",
+            "variant": "humanoid with high strength specialized melee attacks, medium size"
+        },
+        {
+            "query": "combat-ready creature with slashing and piercing attacks capable of multiattack",
+            "variant": "creature ready for combat with slashing and piercing damage from multiattack"
+        },
+        {
+            "query": "fighter from any lineage who has abilities like Tactical Movement and Off-Hand Counter",
+            "variant": "any lineage fighter with abilities such as Off-Hand Counter and Tactical Movement"
+        },
+        {
+            "query": "Veteran creature known for its combat versatility and experience leading groups",
+            "variant": "creature known for combat skills and leading groups, Veteran type"
+        }
+    ]
+}

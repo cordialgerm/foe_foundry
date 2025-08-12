@@ -1,0 +1,51 @@
+{
+    "name": "Diseased Giant Rat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 7,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "disease",
+        "urban",
+        "sewer"
+    ],
+    "adjectives": [
+        "diseased",
+        "small",
+        "agile"
+    ],
+    "description": "A small, agile rat with a keen sense of smell, often found lurking in sewers and filth.",
+    "memorable": "Its ability to infect with sewer plague makes it a notable threat despite its low strength.",
+    "goals": "To survive by lurking in urban filth and attacking unsuspecting adventurers.",
+    "relations": "Often found in packs, working together to swarm their prey.",
+    "environment": "Commonly located in urban settings, especially in sewers and filthy areas.",
+    "strengths": "Keen smell grants advantage on Perception checks, and Pack Tactics gives an edge in combat when allied with other rats.",
+    "weaknesses": "Fragile with low hit points and limited physical strength.",
+    "attacks": "Bite attack that deals 4 piercing damage and may infect with disease.",
+    "most_powerful_ability": "The potential to infect creatures with sewer plague through its bite.",
+    "equipment": null,
+    "senses": "Has advantage on smell-based Perception checks to detect hidden creatures.",
+    "skills": null,
+    "additional_information": [
+        "Relies on numbers to overwhelm targets.",
+        "Has low intelligence and can't strategize effectively.",
+        "Shows less social ability or insight.",
+        "Very agile despite its low strength.",
+        "A threat primarily due to its disease-carrying ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small urban beast that causes disease",
+        "rat that infects with sewer plague",
+        "agile rat that lives in the sewers",
+        "pack tactics rat with keen smell",
+        "disease-carrying giant rat in filth"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Noctiny",
+    "queries": [
+        {
+            "query": "medium humanoid with magical weapon attacks and strong charisma",
+            "variant": "medium-sized humanoid that has magical attacks and very high charisma"
+        },
+        {
+            "query": "neutral evil creature that resists spells and deals extra force damage",
+            "variant": "evil neutral humanoid that can resist magical effects and deals additional force damage"
+        },
+        {
+            "query": "humanoid with magic resistance and high strength stats",
+            "variant": "humanoid creature that has strong resistance to magic and high strength attribute"
+        },
+        {
+            "query": "monster that uses a quarterstaff and has a cunning strategy in combat",
+            "variant": "creature that attacks with a quarterstaff and employs smart tactics in battles"
+        },
+        {
+            "query": "Noctiny's special abilities and combat tactics",
+            "variant": "abilities and combat strategies of the Noctiny"
+        }
+    ]
+}

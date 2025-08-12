@@ -1,0 +1,25 @@
+{
+    "name": "Great Wyrm Gold Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with fire immunity and powerful spells",
+            "variant": "gargantuan draconian creature that has fire immunity and strong magic"
+        },
+        {
+            "query": "gold dragon that can heal allies and deals fire damage",
+            "variant": "golden drake that provides healing for allies and inflicts fire damage"
+        },
+        {
+            "query": "majestic dragon with high armor class and powerful melee attacks",
+            "variant": "magnificent dragon boasting high AC and strong physical attacks"
+        },
+        {
+            "query": "dragon that uses breath weapon and can shapeshift",
+            "variant": "creature that has a breath attack and can transform its shape"
+        },
+        {
+            "query": "legendary dragon that can frighten foes and protect allies",
+            "variant": "epic dragon that causes fear in enemies and shields teammates"
+        }
+    ]
+}

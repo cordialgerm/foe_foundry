@@ -1,0 +1,53 @@
+{
+    "name": "Lizardfolk Ruler",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 100,
+    "ac": 15,
+    "srd": false,
+    "ac_description": "scale mail",
+    "cr": "4",
+    "movement": "30 ft. walking, 15 ft. climbing, 30 ft. swimming",
+    "role": "Leader",
+    "tags": [
+        "lizardfolk",
+        "ruler",
+        "leader",
+        "combat"
+    ],
+    "adjectives": [
+        "commanding",
+        "aggressive",
+        "powerful",
+        "tactical"
+    ],
+    "description": "The Lizardfolk Ruler is a medium humanoid known for its commanding presence, with scale mail armor and powerful melee abilities.",
+    "memorable": "Its ability to boost allies' defenses and disrupt enemy attacks with strategic challenges makes it a formidable leader in combat.",
+    "goals": "To lead allies in battle, dominate adversaries, and maintain control over its territory.",
+    "relations": "Typically leads other Lizardfolk, respected by its kin and feared by enemies.",
+    "environment": "Swamps, wetlands, or other aquatic environments where Lizardfolk dwell.",
+    "strengths": "Excels in melee combat, provides tactical advantages to allies, and has enhanced perception through smell and taste.",
+    "weaknesses": "Average cognitive abilities with low intelligence.",
+    "attacks": "Multiattack with two Bite attacks and one Greataxe attack or three Javelin attacks, dealing significant damage.",
+    "most_powerful_ability": "Unshakable Command, which protects allied creatures from being charmed or frightened.",
+    "equipment": "Greataxe and Javelins, appropriate for its aggressive combat style.",
+    "senses": "Heightened smell and taste grants it a Perception score of 17 for detecting hidden foes.",
+    "skills": "Trained in Stealth, can move effectively undetected with favorable conditions.",
+    "additional_information": [
+        "Holds breath underwater for 15 minutes.",
+        "Can deal extra damage with melee attacks due to the Brutal ability.",
+        "Leader's Challenge ability allows it to manipulate enemy attacks.",
+        "Inspiring Hiss provides temporary health to allies when they are attacked.",
+        "Heightened combat presence makes it a powerful leader."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical leader in swamp environment",
+        "powerful melee lizardfolk with command abilities",
+        "aggressive humanoid that boosts allies in combat",
+        "lizardfolk ruler with enhanced perception",
+        "mighty lizardfolk that can inspire allies"
+    ]
+}

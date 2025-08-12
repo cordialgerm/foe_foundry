@@ -1,0 +1,51 @@
+{
+    "name": "Giant Shark Bowl",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 6,
+    "srd": false,
+    "cr": "8",
+    "movement": "swim 20 ft., walk 20 ft.",
+    "role": "Controller",
+    "tags": [
+        "ooze",
+        "shark",
+        "underwater",
+        "engulfing"
+    ],
+    "adjectives": [
+        "massive",
+        "dangerous",
+        "aggressive",
+        "controlling"
+    ],
+    "description": "The Giant Shark Bowl is a massive ooze that can engulf multiple enemies, transforming into a dangerous and murky surface of lethal liquid. It has a peculiar appearance, resembling a mixture of gelatin and an aquatic predator.",
+    "memorable": "It can control the battlefield by engulfing foes and dealing consistent damage, making it a formidable presence in combat.",
+    "goals": "To dominate the battlefield by engulfing and restraining opponents.",
+    "relations": "Often encountered in aquatic environments or alongside other aquatic creatures.",
+    "environment": "Aquatic settings such as lakes or oceans.",
+    "strengths": "Can engulf multiple smaller creatures, dealing continuous damage while restricting their movements.",
+    "weaknesses": "Vulnerable to certain attack types since it has damage resistances to acid, fire, and slashing.",
+    "attacks": "Makes powerful melee attacks with its Bite and Pseudopod, each dealing 22 piercing or bludgeoning damage.",
+    "most_powerful_ability": "The 'Ooze Fish Bowl' ability, which allows it to engulf and restrain multiple creatures within its space.",
+    "senses": "Possesses blindsight up to 60 ft., allowing it to detect creatures within range even when blinded.",
+    "skills": null,
+    "additional_information": [
+        "Can absorb lightning damage and become charged, adding 2 extra damage to its attacks.",
+        "Has a symbiotic relationship with a giant shark, sharing statistics as a single unit.",
+        "Gains advantage on attacks against weakened foes due to Blood Frenzy."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive ooze that engulfs enemies",
+        "dangerous shark-like creature in water",
+        "giant ooze with continuous damage ability",
+        "controller monster that can restrain bigger foes",
+        "battlefield dominating giant shark bowl"
+    ]
+}

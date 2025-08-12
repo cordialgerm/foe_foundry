@@ -1,0 +1,54 @@
+{
+    "name": "Great Wyrm White Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Gargantuan",
+    "hp": 740,
+    "ac": 20,
+    "srd": false,
+    "cr": "22",
+    "movement": "40 ft. walk, 40 ft. burrow, 80 ft. fly, 40 ft. swim",
+    "role": "Controller",
+    "tags": [
+        "dragon",
+        "cold",
+        "legendary",
+        "mythical"
+    ],
+    "adjectives": [
+        "powerful",
+        "intimidating",
+        "gargantuan",
+        "icy"
+    ],
+    "description": "The Great Wyrm White Dragon is a colossal creature with gleaming white scales and icy breath, embodying the harshness of winter. It has fearsome claws and a long, formidable tail.",
+    "memorable": "Known for its devastating breath weapon and control over icy terrain, the creature can intimidate foes from a distance and command the battlefield with spells.",
+    "goals": "To assert dominance over its territory, hunt for prey, and exert control over weaker creatures.",
+    "relations": "May be found in the company of other icy creatures or as a master over lesser dragons and beasts.",
+    "environment": "Typically resides in icy mountains, frozen tundras, or cold caverns.",
+    "strengths": "Immune to cold damage, excels in intimidation, and possesses potent spellcasting abilities.",
+    "weaknesses": "Vulnerable to attacks not dealing cold damage, lacks significant resistances to non-cold energies.",
+    "attacks": "Can bite for piercing damage and cold, claw for slashing damage, and tail for bludgeoning, along with powerful breath attacks that freeze its enemies.",
+    "most_powerful_ability": "Cold Breath, releasing a devastating cone of frost that halts movement and deals massive cold damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight at 60 feet and a very high passive perception of 23, allowing it to detect foes easily.",
+    "skills": "Skilled in intimidation and perception, enhancing it as a fearsome predator.",
+    "additional_information": [
+        "Cold Mastery allows movement and vision to be unhindered by icy conditions.",
+        "Legendary Resistance enables it to negate failed saving throws.",
+        "Heart of Winter recharges its breath weapon after taking significant damage.",
+        "Can initiate attacks with abilities like Spit Ice and Raging Storm.",
+        "Capable of manipulating the battlefield with spells like wall of ice and sleet storm."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting includes dominating beasts and creating severe weather effects.",
+    "test_queries": [
+        "gargantuan ice-breathing dragon",
+        "powerful dragon controlling icy terrain",
+        "frost dragon with legendary powers",
+        "intimidating dragon with cold breath",
+        "mythical white dragon in frozen mountains"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Crocodile": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the SRD Crocodile in size, habitat, ambush tactics, and signature death roll ability."
+  },
+  "monster_key": "crocodile"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Merchant Captain",
+    "queries": [
+        {
+            "query": "charismatic humanoid leader with poison attacks",
+            "variant": "charismatic human leader that can attack with poison"
+        },
+        {
+            "query": "resourceful humanoid skilled in diplomacy and melee combat",
+            "variant": "humanoid adept at diplomacy and skilled in combat"
+        },
+        {
+            "query": "merchant captain who uses psychic damage and has high dexterity",
+            "variant": "captain merchant that can deal psychic damage and has good dexterity"
+        },
+        {
+            "query": "medium humanoid with spells and distraction abilities",
+            "variant": "medium-sized humanoid that has spells and distraction skills"
+        },
+        {
+            "query": "merchant captain that provides inspiration and uses fast talk",
+            "variant": "captain merchant who offers inspiration and employs fast talk"
+        }
+    ]
+}

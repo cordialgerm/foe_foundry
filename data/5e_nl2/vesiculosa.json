@@ -1,0 +1,53 @@
+{
+    "name": "Vesiculosa",
+    "creature_type": "Plant",
+    "alignment": "Unaligned",
+    "size": "Gargantuan",
+    "hp": 232,
+    "ac": 15,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "gargantuan",
+        "deceptive"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "deceptive",
+        "charming"
+    ],
+    "description": "The Vesiculosa is a gargantuan plant creature that mimics an oasis, attracting creatures with its sweet fragrance and promise of rejuvenating water.",
+    "memorable": "Its ability to charm creatures and put them to sleep with its water makes it a dangerous and deceptive foe on the battlefield.",
+    "goals": "To lure creatures closer using its sweet fragrance and incapacitate them to drain their life force.",
+    "relations": "Might be encountered in areas with other predatory plants or creatures drawn to improved environments.",
+    "environment": "Typically found in sandy or arid plantations, resembling oases.",
+    "strengths": "High hit points and the ability to grapple and incapacitate opponents.",
+    "weaknesses": "Lack of mobility and low intelligence limits its tactical decisions.",
+    "attacks": "Multiattack capability with grappling roots and ranged attacks that can put foes to sleep.",
+    "most_powerful_ability": "Sweet Fragrance, which can charm creatures and compel them to approach and drink from it.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 60 feet and a passive perception of 16.",
+    "skills": "Has a high perception skill, allowing it to detect nearby threats.",
+    "additional_information": [
+        "Deceptively disguised as an oasis.",
+        "Can heal itself and others with its Sweet Water ability.",
+        "Capable of burying enemies to restrain them.",
+        "Resistant to fire, bludgeoning, and piercing damage."
+    ],
+    "damage_types": [
+        "fire",
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan plant that mimics an oasis",
+        "deceptive plant with charming fragrance",
+        "large plant that can put creatures to sleep",
+        "creature that grapples and buries its enemies",
+        "oasis-like plant that heals and traps"
+    ]
+}

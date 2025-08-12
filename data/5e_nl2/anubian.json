@@ -1,0 +1,52 @@
+{
+    "name": "Anubian",
+    "creature_type": "Elemental",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "sand",
+        "ambush"
+    ],
+    "adjectives": [
+        "chaotic",
+        "deceptive",
+        "agile"
+    ],
+    "description": "The Anubian is a medium elemental creature embodying chaotic evil, known for its sandy form that allows it to blend into desert environments and ambush unsuspecting targets.",
+    "memorable": "Its ability to create a profoundly obscured sandstorm called Haboob, which restrains opponents, makes it a formidable foe.",
+    "goals": "To ambush and hinder unsuspecting foes in sandy environments.",
+    "relations": "Related to other elemental creatures and may serve as minions to powerful elemental beings.",
+    "environment": "Usually found in deserts or sandy terrain.",
+    "strengths": "High Dexterity allows for good agility and stealth, as well as unique abilities to manipulate terrain and concealment.",
+    "weaknesses": "Vulnerability to water, which causes it to take cold damage when it comes into contact with it.",
+    "attacks": "It uses multiattack to strike with claws, dealing slashing damage, making it a significant threat in melee.",
+    "most_powerful_ability": "Haboob creates a heavily obscured area that restrains foes and deals damage, enhancing its ambush capabilities.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 30 feet, allowing it to detect creatures nearby even when they are hidden from view.",
+    "skills": "Has a high Stealth skill modifier augmented by its Sand Camouflage ability, making it exceptionally difficult to spot in sandy environments.",
+    "additional_information": [
+        "Does not require air, food, or sleep due to its elemental nature.",
+        "Can move through narrow spaces easily due to Sand Form.",
+        "Can teleport short distances using Sand Step, allowing for quick repositioning.",
+        "Creates an obscuring sandstorm that both conceals and restrains enemies.",
+        "Suffers significant damage when submerged or splashed by water."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "desert elemental creature",
+        "ambush sand monster",
+        "chaotic elemental with sand powers",
+        "creature with sandstorm abilities",
+        "monster vulnerable to water"
+    ]
+}

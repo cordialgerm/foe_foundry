@@ -1,0 +1,25 @@
+{
+    "name": "Stormboar",
+    "queries": [
+        {
+            "query": "large creature with electrical attacks and strong durability",
+            "variant": "big creature that has electrical abilities and is very durable"
+        },
+        {
+            "query": "monstrous boar that can deal thunder damage and jumps over obstacles",
+            "variant": "monstrous pig that can deliver thunder damage and leaps over barriers"
+        },
+        {
+            "query": "monster immune to lightning that can detect ferrous metals",
+            "variant": "creature that is lightning immune and can sense ferrous metals"
+        },
+        {
+            "query": "Stormboar abilities including lightning damage and thunder charge maneuver",
+            "variant": "abilities of Stormboar like dealing lightning damage and thunder charge move"
+        },
+        {
+            "query": "tusk attack dealing slashing and lightning damage from a large monstrosity",
+            "variant": "large monstrosity with a tusk attack causing slashing and lightning damage"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Devilbound Gnome",
+    "queries": [
+        {
+            "query": "small humanoid that commands an imp and casts fire spells",
+            "variant": "humanoid small creature that casts fire spells and controls an imp"
+        },
+        {
+            "query": "cunning gnome with high Charisma that uses poison magic",
+            "variant": "smart gnome with great Charisma that employs poison spells"
+        },
+        {
+            "query": "magical gnome immersed in infernal powers that resists spells",
+            "variant": "gnome with magical abilities and infernal powers who is resistant to spells"
+        },
+        {
+            "query": "Devilbound Gnome traits and abilities for combat",
+            "variant": "traits and abilities of the Devilbound Gnome in battle"
+        },
+        {
+            "query": "gnome with darkvision and ability to summon devils",
+            "variant": "gnome that can see in the dark and summon devil creatures"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Musk Deer, Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Musk Deer Swarm is a Medium unaligned beast that embodies a natural, instinctive presence in its environment. It has a challenge rating of 2, indicating that it can pose a moderate threat to adventurers, particularly when encountered in groups. With an Armor Class of 13 and hit points totaling 44, it exhibits average resilience in combat. Its greatest strengths lie in its agility and evasive maneuvers, supported by a Dexterity score of 16, which translates to a good modifier of +3. However, its low Intelligence (2) and Charisma (7) make it very ineffective in any social interactions or advanced tactics. Overall, it is a creature designed for mobility and swarming tactics rather than brute strength or intelligence.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For its bonus actions, the Musk Deer Swarm has the ability to use "Musk," which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Musk Deer, Swarm
 
 *Medium* *Beast* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Sprinter:** Takes the Dash action.
 
 
+</statblock>
 
 

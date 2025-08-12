@@ -1,0 +1,25 @@
+{
+    "name": "Great Wyrm Blue Dragon",
+    "queries": [
+        {
+            "query": "gargantuan blue dragon that breathes lightning and thrives in sandy terrain",
+            "variant": "huge blue dragon that can breathe lightning and excells in sandy areas"
+        },
+        {
+            "query": "high AC dragon with devastating breath weapon and strong casting abilities",
+            "variant": "dragon with high defense and powerful breath attacks plus decent spellcasting"
+        },
+        {
+            "query": "blue dragon that can move through sand easily and has a lightning-based attack",
+            "variant": "dragon that navigates through sand effortlessly and uses lightning attacks"
+        },
+        {
+            "query": "great dragon with a high Strength score and exceptional durability in battles",
+            "variant": "powerful dragon with strong physical stats and great survivability in combat"
+        },
+        {
+            "query": "dragon with powerful melee attacks and an ability to frighten foes near it",
+            "variant": "dragon with strong close-range attacks and a skill to scare enemies nearby"
+        }
+    ]
+}

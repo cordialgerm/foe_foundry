@@ -1,6 +1,8 @@
 <MonsterName/>Khalkos</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>16</AC>
+<HP/>130</HP>
 <summary>The Khalkos is a formidable Medium Aberration that serves as a challenging opponent in combat encounters, characterized by its psionic abilities and high intelligence. With an Armor Class of 16 and a robust pool of 130 hit points, it can withstand a fair amount of damage before succumbing. Its strengths lie in its versatility and magical capabilities, allowing it to engage enemies both physically and mentally. The Khalkos is particularly adept at inflicting confusion and incapacitating foes with its abilities. However, this creature is not without weaknesses; while it has good damage resistances against fire, psychic, and radiant damage, it may still be vulnerable to more physical attacks, especially from those who understand its tactics.</summary>
 
 <detail>
@@ -44,6 +46,7 @@ Overall, the Khalkos presents a unique blend of psionic abilities and physical a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Khalkos
 
 *Medium* *Aberration*
@@ -86,5 +89,6 @@ Source: 5e_artisinal_monsters
 - **Telekinetic Shield:** When the khalkos is hit by an attack made by a creature that it can see or sense with its Detect Alignment trait, it gains a +4 bonus to AC against the triggering attack.
 
 
+</statblock>
 
 

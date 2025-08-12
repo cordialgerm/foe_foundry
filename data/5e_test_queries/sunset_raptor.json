@@ -1,0 +1,25 @@
+{
+    "name": "Sunset Raptor",
+    "queries": [
+        {
+            "query": "medium monstrosity with hypnotic abilities and good stealth",
+            "variant": "monstrosity that is medium-sized and has charm abilities and excels in stealth"
+        },
+        {
+            "query": "agile raptor known for charm abilities and pack tactics",
+            "variant": "raptor that is agile and recognized for its charm powers and pack tactics"
+        },
+        {
+            "query": "creature that utilizes hypnotic plumage and prefers to ambush",
+            "variant": "monster that uses hypnotic plumage ability and likes to set ambushes"
+        },
+        {
+            "query": "sunset raptor characterized by its dexterity and illusion skills",
+            "variant": "sunset raptor defined by its agility and skills in illusion"
+        },
+        {
+            "query": "monster with low intelligence and high charisma that controls its prey",
+            "variant": "creature with poor intelligence and great charisma that manipulates its targets"
+        }
+    ]
+}

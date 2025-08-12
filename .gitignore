@@ -167,6 +167,7 @@ cache/
 
 foe_foundry_site/routes/whoosh/index/
 tests/output/
+tests/outputs/
 
 # Mac stuff
 .DS_STORE

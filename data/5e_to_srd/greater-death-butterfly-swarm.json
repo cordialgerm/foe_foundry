@@ -1,0 +1,7 @@
+{
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "A Huge swarm of butterflies fits within the same swarm insect category, sharing swarm mechanics and poison traits."
+  },
+  "monster_key": "greater-death-butterfly-swarm"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Nyctli",
+    "queries": [
+        {
+            "query": "tiny fey creature that extinguishes light and blinds foes",
+            "variant": "little fey monster that douses light and can cause blindness"
+        },
+        {
+            "query": "mischievous creature with high stealth that thrives in darkness",
+            "variant": "tricky creature that excels in stealth and loves dark places"
+        },
+        {
+            "query": "chaotic evil fey with low physical stats and high dexterity",
+            "variant": "chaotic fey that has weak physical traits and great dexterity"
+        },
+        {
+            "query": "fragile tiny fey that uses stingers in combat",
+            "variant": "delicate small fey that attacks using stinger weapons"
+        },
+        {
+            "query": "nyctli characteristics including darkvision and high perception",
+            "variant": "features of nyctli such as darkvision and strong perception skills"
+        }
+    ]
+}

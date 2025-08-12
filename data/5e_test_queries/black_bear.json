@@ -1,0 +1,25 @@
+{
+    "name": "Black Bear",
+    "queries": [
+        {
+            "query": "large dark fur animal that climbs trees and bites",
+            "variant": "big dark furred creature that can climb and bite"
+        },
+        {
+            "query": "powerful solitary mammal with keen smell and sharp claws",
+            "variant": "strong solitary bear with good sense of smell and sharp claws"
+        },
+        {
+            "query": "bear that defends territory and has a multiattack feature",
+            "variant": "a bear that protects its turf and can attack multiple times"
+        },
+        {
+            "query": "medium-sized beast that forages for berries and fish",
+            "variant": "medium beast searching for berries and fish"
+        },
+        {
+            "query": "black bear with natural armor and strong physical attacks",
+            "variant": "dark bear with natural protection and strong attacks"
+        }
+    ]
+}

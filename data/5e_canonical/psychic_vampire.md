@@ -1,6 +1,8 @@
 <MonsterName/>Psychic Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Psychic Vampire is a Medium-sized Undead creature that embodies the essence of lawful evil. Known for its devastating mental powers, this monster excels in manipulating and incapacitating its opponents. It possesses a high Armor Class of 17 and significant hit points totaling 144, making it quite durable in battle. With a Challenge Rating of 13, it poses a formidable threat to adventurers, providing substantial experience if defeated. Although it has tremendous psychic abilities, it does have notable weaknesses, including vulnerabilities to sunlight and a reliance on using its environment strategically. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Psychic Vampire is a cunning and powerful foe, adept at controlling
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Psychic Vampire
 
 *Medium* *Undead* *lawful evil*
@@ -73,5 +76,6 @@ The psychic vampire can take 3 legendary actions, choosing from the options belo
 - **Move:** The vampire moves up to its speed without provoking opportunity attacks. If it uses this legendary action while levitating, the vampire can move up to half its speed horizontally instead.
 - **Unarmed Strike:** The vampire makes one unarmed strike.
 - **Psychic Pulse (Costs 3 Actions):** The vampire releases a powerful wave of psychic energy. Each creature within 20 feet of the vampire must succeed on a DC 17 Intelligence saving throw or be stunned until the end of its next turn.
+</statblock>
 
 

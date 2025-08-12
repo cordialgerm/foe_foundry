@@ -1,0 +1,52 @@
+{
+    "name": "Alliumite, Husker",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 68,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft., burrow 10 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "psychological attack",
+        "burrowing"
+    ],
+    "adjectives": [
+        "versatile",
+        "formidable",
+        "chaotic"
+    ],
+    "description": "The Alliumite, known as the Husker, is a unique plant creature with a robust physique, sporting a gnarly club as its weapon.",
+    "memorable": "Its Overpowering Stench ability can blind opponents and hinder their combat effectiveness significantly.",
+    "goals": "To ambush foes and disrupt their abilities during combat while maintaining a strategic presence.",
+    "relations": "Alliumites and garlicles as potential allies or adversaries.",
+    "environment": "Areas rich in plant life, where it blends into its surroundings.",
+    "strengths": "Ability to blind enemies with the Overpowering Stench and inflict psychic damage with Taunting Threat.",
+    "weaknesses": "Low Intelligence score indicates it may lack strategic cunning in complex situations.",
+    "attacks": "Uses a Gnarly Club for physical attacks and excels at psychological warfare through Taunting Threat.",
+    "most_powerful_ability": "Overpowering Stench, which can blind multiple foes and significantly impair their actions.",
+    "equipment": "Gnarly Club, a melee weapon used for physical damage.",
+    "senses": "Possesses darkvision that allows it to see in dimly lit environments within 60 feet.",
+    "skills": "Proficient in Perception, giving it a reasonable ability to detect its surroundings.",
+    "additional_information": [
+        "Has advantage on Dex (Stealth) checks in areas with ample plant life due to Plant Camouflage.",
+        "Typical strategy is to inflict conditions that disrupt foes' attacks.",
+        "Can perform Multiattacks, providing versatility in combat.",
+        "Bludgeoning damage combined with a knocking prone effect can control the battlefield.",
+        "Low Intelligence may affect its strategic planning in multi-turn encounters."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic plant creature",
+        "plant creature with psychic abilities",
+        "monster with blinding stench",
+        "Husker anatomy and tactics",
+        "ambush tactics of Alliumite"
+    ]
+}

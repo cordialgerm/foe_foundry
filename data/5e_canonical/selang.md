@@ -1,6 +1,8 @@
 <MonsterName/>Selang</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Selang is a Medium-sized fey creature characterized by its chaotic evil alignment. With a high Armor Class of 15 due to natural armor and a substantial pool of Hit Points totaling 76, it possesses notable durability in combat. Its strengths include a combination of high Strength (18), Constitution (18), and Charisma (19), allowing it to deal significant damage and manipulate opponents through spells and abilities effectively. It has good mobility with a walking speed of 40 feet and a Challenge Rating of 4, indicating that it can pose a moderate challenge to adventurers. However, its weaknesses include vulnerability to magical attacks, as its resistances do not extend to magic, which makes it susceptible to spells and magical effects. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Alien Piping ability allows the Selang to play one of several mystical melod
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Selang
 
 *Medium* *Fey* *Chaotic Evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Dagger:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 10 (3d6) poison damage.
 - **Poison Bolt:** Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 14 (3d6 + 4) poison damage.
 - **Alien Piping:** The selang plays one of the following ear-bending melodies on alien pipes. One creature the selang can see within 60 feet of it is the only creature that can hear the melody. The target must succeed on a DC 14 Wisdom saving throw or be affected by the chosen melody.
+</statblock>
 
 

@@ -1,0 +1,50 @@
+{
+    "name": "Guard Squad",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Large",
+    "hp": 55,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "protective unit",
+        "transformative",
+        "vulnerable",
+        "squad"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Guard Squad is a large humanoid creature that acts as a protective unit in combat. It can absorb damage and has the ability to transform when severely injured.",
+    "memorable": "Its ability to transform into multiple guards when defeated keeps the encounter dynamic and engages players even after it seems defeated.",
+    "goals": "To act as a protective force on the battlefield and engage intruders.",
+    "relations": "Could be allied with other humanoids or soldiers.",
+    "environment": "Battlefields or fortifications.",
+    "strengths": "Functions as a strong defensive entity and retains influence even when reduced to 0 hit points.",
+    "weaknesses": "Takes double damage from area attacks, making it particularly vulnerable to such strategies.",
+    "attacks": "Utilizes spears for melee and ranged attacks, dealing significant piercing damage.",
+    "most_powerful_ability": "Squad Dispersal allows it to spawn additional guards upon defeat, extending its influence.",
+    "equipment": "Spears for both melee and ranged combat.",
+    "senses": "Has a passive perception of 12, giving it a slightly above-average ability to notice its surroundings.",
+    "skills": "Skilled in perception, helping it to detect threats in its environment.",
+    "additional_information": [
+        "Composed of 5 or more individual guards.",
+        "Can move through spaces suitable for Medium creatures.",
+        "Ignores non-damaging effects when targeted as a squad.",
+        "Deals half damage with spear attacks when bloodied."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large humanoid protective unit",
+        "guard squad that transforms when injured",
+        "squad that takes double damage from area attacks",
+        "humanoid that splits into multiple guards",
+        "durable creature with spear and strategic weaknesses"
+    ]
+}

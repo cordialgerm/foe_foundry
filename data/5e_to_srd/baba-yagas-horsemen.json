@@ -1,0 +1,11 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful, mystical fey guardians with strong magical abilities and a connection to ancient or mythical lore."
+  },
+  "Nightmare": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a dark, magical horse-related fey creature with fiery and fearsome qualities."
+  },
+  "monster_key": "baba-yagas-horsemen"
+}

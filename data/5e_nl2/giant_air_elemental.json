@@ -1,0 +1,51 @@
+{
+    "name": "Giant Air Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 127,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 90 ft.",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "air",
+        "huge",
+        "mobility"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "swift"
+    ],
+    "description": "The Giant Air Elemental embodies the power of wind and air, shaped as a large swirling mass with the ability to fly gracefully through the battlefield.",
+    "memorable": "It can transform into a powerful whirlwind, carrying enemies and dealing damage.",
+    "goals": "To dominate the battlefield through mobility and control of enemy placement.",
+    "relations": "Often found in the company of other elemental beings or summoned by powerful mages.",
+    "environment": "Typically found in open skies, stormy areas, or locations dense with elemental air energy.",
+    "strengths": "Immunity to poison damage and resistance to certain types of damage, making it durable.",
+    "weaknesses": "Low Strength and Intelligence, making it vulnerable to physical challenges.",
+    "attacks": "Can perform two slam attacks dealing significant bludgeoning damage and has a powerful whirlwind attack.",
+    "most_powerful_ability": "Whirlwind mobilizes and damages enemies by carrying them off their feet.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can pass through very narrow openings without hindrance.",
+        "Does not require air, food, or sleep.",
+        "Can carry multiple small creatures or one large creature in its whirlwind form.",
+        "Moves quickly around the battlefield.",
+        "Immunities against various conditions such as grappled and paralyzed."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large air monster with whirlwind powers",
+        "elemental that can fly and control enemies",
+        "massive creature made of wind and air",
+        "swift air elemental with powerful slam attacks",
+        "versatile elemental that dominates battlefields"
+    ]
+}

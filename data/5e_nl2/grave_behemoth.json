@@ -1,0 +1,53 @@
+{
+    "name": "Grave Behemoth",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 210,
+    "ac": 9,
+    "srd": false,
+    "cr": "10",
+    "movement": "walking at 40 feet",
+    "role": null,
+    "tags": [
+        "undead",
+        "summoner",
+        "brute"
+    ],
+    "adjectives": [
+        "huge",
+        "necrotic",
+        "powerful",
+        "durable"
+    ],
+    "description": "The Grave Behemoth is a massive undead creature, characterized by its decaying flesh and imposing presence, making it a terrifying sight on the battlefield.",
+    "memorable": "It can summon additional zombies and commands them directly, creating a swarm effect that overwhelms foes.",
+    "goals": "Typically aims to destroy living foes while commanding an undead horde.",
+    "relations": "Often encountered with a legion of zombies it creates and controls.",
+    "environment": "Commonly found in graveyards, ruins, or places tainted by necromancy.",
+    "strengths": "Remarkable durability with high hit points and the ability to create and command zombies.",
+    "weaknesses": "Low Dexterity makes it vulnerable to nimble and ranged attacks.",
+    "attacks": "Can deliver devastating melee attacks with its slam and gorge actions, capable of dealing significant bludgeoning and necrotic damage.",
+    "most_powerful_ability": "Hurl Flesh ability allows it to vomit putrid flesh, damaging enemies in a cone while summoning more zombies.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Advantage on saving throws against turning effects.",
+        "Loses limbs impairing its combat effectiveness.",
+        "Creates zombies when it takes damage.",
+        "Zombies created by it are immune to necrotic damage.",
+        "Large area of effect attack with necrotic damage."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge undead monster commanding zombies",
+        "creature that vomits flesh and summons zombies",
+        "powerful behemoth with necrotic attacks",
+        "monster with high hit points and melee strength",
+        "undead creature with abilities to create minions"
+    ]
+}

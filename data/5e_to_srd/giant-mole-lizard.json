@@ -1,0 +1,11 @@
+{
+  "Giant Lizard": {
+    "relation": "close_cousins",
+    "explanation": "A large reptilian beast with natural armor and claw attacks similar to a Giant Lizard."
+  },
+  "Ankheg": {
+    "relation": "conceptually_similar",
+    "explanation": "A burrowing predator with acid resistance and tremorsense, similar to the Giant Mole Lizard's underground ambush and acid resistance."
+  },
+  "monster_key": "giant-mole-lizard"
+}

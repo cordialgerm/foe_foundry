@@ -1,0 +1,15 @@
+{
+  "Vapor Lynx": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, agile predator that uses poison and fog-like environmental effects to ambush prey."
+  },
+  "Giant Panther": {
+    "relation": "close_cousins",
+    "explanation": "Shares the feline, stealthy, and agile predator traits similar to a lynx."
+  },
+  "Black Dragon Wyrmling": {
+    "relation": "mechanically_similar",
+    "explanation": "Has poison damage and a breath weapon that creates hazardous zones, similar to the poison breath of the Vapor Lynx."
+  },
+  "monster_key": "vapor-lynx"
+}

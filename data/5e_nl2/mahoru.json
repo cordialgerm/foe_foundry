@@ -1,0 +1,50 @@
+{
+    "name": "Mahoru",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "60 feet, fast movement speed",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "predator",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "formidable",
+        "vicious",
+        "agile",
+        "dangerous"
+    ],
+    "description": "The mahoru is a large, powerful beast characterized by its exceptional physical abilities, marked by a strong bite attack and an intimidating presence.",
+    "memorable": "Its ability to frighten and potentially paralyze foes with its roar makes it a unique and fearsome adversary.",
+    "goals": "The mahuru typically hunts prey and engages in combat to establish dominance.",
+    "relations": "May be encountered with other monstrous or aquatic creatures that share its territory.",
+    "environment": "Commonly found in both aquatic and terrestrial settings due to its amphibious nature.",
+    "strengths": "Possesses strong melee abilities enhanced by advantage on attacks against weakened foes.",
+    "weaknesses": "Low intelligence and charisma scores limit its interactions outside of combat.",
+    "attacks": "Employs a powerful bite attack that can inflict significant slashing damage and may sever limbs on a critical hit.",
+    "most_powerful_ability": "The roar can terrify enemies, potentially frightening and paralyzing them in combat.",
+    "senses": "Has keen sight and smell, gaining advantage on perception checks that rely on these senses.",
+    "skills": "Excels in stealth with a noteworthy +6 modifier, making it hard to detect.",
+    "additional_information": [
+        "Blood frenzy grants advantage on attacks against injured foes.",
+        "Pack tactics enhance its effectiveness when allies are nearby.",
+        "Can breathe both air and water, increasing its versatility.",
+        "Natural armor provides solid protection in battle.",
+        "Excellent melee capability with a strong strength and dexterity."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large predator with a terrifying roar",
+        "creature that can breathe underwater and walks on land",
+        "formidable beast with powerful melee attacks",
+        "monster that paralyzes with its roar",
+        "agile aquatic monster with blood frenzy ability"
+    ]
+}

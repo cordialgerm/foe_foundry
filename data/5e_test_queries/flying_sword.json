@@ -1,0 +1,25 @@
+{
+    "name": "Flying Sword",
+    "queries": [
+        {
+            "query": "animated sword that patrols ancient castles and hovers",
+            "variant": "hovering sword patrolling old castles that is animated"
+        },
+        {
+            "query": "small construct that flies and has slashing attacks",
+            "variant": "small flying construct with melee slashing attacks"
+        },
+        {
+            "query": "magical sword that remains motionless and attacks intruders",
+            "variant": "sword enchanted to be still and attack trespassers"
+        },
+        {
+            "query": "mechanical guardian that is immune to poison and psychic",
+            "variant": "guardian made of machinery that can't be harmed by poison or psychic damage"
+        },
+        {
+            "query": "flying sword with the ability to disguise as a normal sword",
+            "variant": "sword that can fly and looks like an ordinary sword while still"
+        }
+    ]
+}

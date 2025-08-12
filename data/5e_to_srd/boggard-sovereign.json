@@ -1,0 +1,11 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "The Boggard Sovereign is an amphibious, swamp-dwelling humanoid leader similar in nature to Lizardfolk."
+  },
+  "Giant Frog": {
+    "relation": "conceptually_similar",
+    "explanation": "It summons frog allies and shares an amphibious swamp environment with the Giant Frog."
+  },
+  "monster_key": "boggard-sovereign"
+}

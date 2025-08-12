@@ -1,0 +1,52 @@
+{
+    "name": "Greyfur",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 67,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "Limited to 20 feet per round",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "spellcaster",
+        "agile"
+    ],
+    "adjectives": [
+        "small",
+        "nimble",
+        "intelligent"
+    ],
+    "description": "The Greyfur is a small humanoid with membranes between its limbs, enabling it to glide gracefully. It possesses a staff for melee combat and can cast spells.",
+    "memorable": "Its unique glide ability allows it to maneuver vertically and evade attacks effortlessly.",
+    "goals": "To ambush foes and manipulate the battlefield using spells.",
+    "relations": "May encounter lemurfolk or other spellcasting humanoids.",
+    "environment": "Typically found in forested or elevated areas where it can utilize its glide ability.",
+    "strengths": "High dexterity and intelligence make it agile and clever, adept at casting spells.",
+    "weaknesses": "Lacks physical strength and is vulnerable in direct melee combat.",
+    "attacks": "Wields a staff for close combat and can unleash an Arcane Bolt as a ranged attack.",
+    "most_powerful_ability": "Can cast spells like Color Spray and Sleep for crowd control.",
+    "equipment": "Carries a staff as a melee weapon.",
+    "senses": "Has darkvision with a range of 60 feet.",
+    "skills": "Skilled in Acrobatics and Stealth, enabling effective ambush tactics.",
+    "additional_information": [
+        "Glide ability allows safe landings from heights.",
+        "Can manipulate objects from a distance using Mage Hand.",
+        "Spellcasting abilities enhance versatility in combat.",
+        "Potential for tactical advantages in vertical environments.",
+        "Utilizes updrafts to extend gliding movement."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Can cast spells like Light, Mage Hand, and Prestidigitation at will, along with Color Spray and Sleep three times a day.",
+    "test_queries": [
+        "small agile spellcasting humanoid",
+        "nimble creature with gliding ability",
+        "humanoid that casts spells and glides",
+        "Greyfur ambush tactics with magic",
+        "creature skilled in stealth and acrobatics"
+    ]
+}

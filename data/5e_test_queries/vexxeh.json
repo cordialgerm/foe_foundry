@@ -1,0 +1,25 @@
+{
+    "name": "Vexxeh",
+    "queries": [
+        {
+            "query": "huge fiend with high damage output and poison immunity",
+            "variant": "huge fiend that has high damage and immunity to poison"
+        },
+        {
+            "query": "lawful evil creature with truesight and fear aura",
+            "variant": "creature that is lawful evil and has truesight plus an aura of fear"
+        },
+        {
+            "query": "powerful monster that is resistant to cold and fire",
+            "variant": "strong monster that resists cold and fire damage"
+        },
+        {
+            "query": "fiend with exceptional strength and charm weakness",
+            "variant": "fiend that has great strength but is weak to charm effects"
+        },
+        {
+            "query": "tactical monster with high HP and multiattack ability",
+            "variant": "monster with high health points and the ability to make multiple attacks"
+        }
+    ]
+}

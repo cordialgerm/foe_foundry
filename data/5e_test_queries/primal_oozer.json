@@ -1,0 +1,25 @@
+{
+    "name": "Primal Oozer",
+    "queries": [
+        {
+            "query": "aberration monster with ooze-like form that can climb and swim",
+            "variant": "aberration with ooze-like form that can swim and climb"
+        },
+        {
+            "query": "disease-inducing creature that has high Strength and uses acid attacks",
+            "variant": "creature that induces disease, high Strength, and acid attacks"
+        },
+        {
+            "query": "neutral evil ooze creature that has advantages in grapples and melee attacks",
+            "variant": "neutral evil ooze that has advantages in melee and grapples"
+        },
+        {
+            "query": "monster that causes hit point loss and can be found in various terrains",
+            "variant": "monster that can be in various terrains and causes loss of hit points"
+        },
+        {
+            "query": "primal oozer battle tactics and its natural armor defense",
+            "variant": "battle tactics of primal oozer and its defense from natural armor"
+        }
+    ]
+}

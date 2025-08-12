@@ -1,0 +1,25 @@
+{
+    "name": "Reef Drake",
+    "queries": [
+        {
+            "query": "massive underwater dragon known for its destructive abilities",
+            "variant": "huge dragon from the ocean famous for its wrecking power"
+        },
+        {
+            "query": "drake with impressive swimming speed and burrowing capabilities",
+            "variant": "creature that can swim quickly and dig through coral"
+        },
+        {
+            "query": "dragon that deals double damage to structures and can create tunnels",
+            "variant": "a drake that causes extra damage to buildings and makes large tunnels"
+        },
+        {
+            "query": "neutral evil drake that ambushes from coral reefs",
+            "variant": "evil drake that attacks from hiding spots among coral"
+        },
+        {
+            "query": "creature that can unleash thunder damage in a wide cone",
+            "variant": "monster able to emit thunder damage over a large area"
+        }
+    ]
+}

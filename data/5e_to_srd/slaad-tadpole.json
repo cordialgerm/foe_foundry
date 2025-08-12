@@ -1,0 +1,7 @@
+{
+  "Slaad Tadpole": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Slaad Tadpole exactly in size, type, abilities, and resistances."
+  },
+  "monster_key": "slaad-tadpole"
+}

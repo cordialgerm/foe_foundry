@@ -1,0 +1,52 @@
+{
+    "name": "Ratfolk Rogue",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 31,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "rogue",
+        "stealth",
+        "poison"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "nimble"
+    ],
+    "description": "The Ratfolk Rogue is a small, cunning humanoid with outstanding agility and dexterity. Its rat-like features and small stature make it a master of stealth and tactical strikes.",
+    "memorable": "Excels in stealth and tactical positioning with abilities like Nimbleness and Pack Tactics.",
+    "goals": "To ambush enemies and strike from the shadows while coordinating attacks with allies.",
+    "relations": "Often found working with other rogues or in gangs, utilizing their skills for thievery and sabotage.",
+    "environment": "Commonly located in urban areas or places where they can hide and move unseen.",
+    "strengths": "High dexterity leading to effective stealth and ranged attacks, especially when aided by allies.",
+    "weaknesses": "Poor strength makes it ineffective in direct melee combat.",
+    "attacks": "Strikes with a dagger or light crossbow, dealing piercing damage enhanced by poison.",
+    "most_powerful_ability": "Pack Tactics, granting it advantage on attacks against enemies threatened by its allies.",
+    "equipment": null,
+    "senses": "Possesses darkvision that allows it to see in low-light conditions.",
+    "skills": "Noteworthy skills include high Stealth for remaining undetected, and Acrobatics for maneuvering in combat.",
+    "additional_information": [
+        "Can move through spaces of larger creatures without penalty.",
+        "Uses Cunning Action for quick repositioning in combat.",
+        "Effective at ambushing and flanking enemies with allies.",
+        "Deals additional poison damage with attacks.",
+        "Low health but high armor class for its size."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile rogue with poison attacks",
+        "cunning humanoid that strikes from shadows",
+        "Ratfolk with high stealth and nimble movements",
+        "poison dealing rogue that uses tactics",
+        "sneaky rat-like creature skilled in acrobatics"
+    ]
+}

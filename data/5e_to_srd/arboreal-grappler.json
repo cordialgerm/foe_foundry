@@ -1,0 +1,7 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with tentacles and aquatic or stealthy ambush predation, though the Arboreal Grappler is forest-adapted."
+  },
+  "monster_key": "arboreal-grappler"
+}

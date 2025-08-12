@@ -1,0 +1,54 @@
+{
+    "name": "Helashruu",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "50 feet flying, no walking speed",
+    "role": null,
+    "tags": [
+        "aberration",
+        "flying",
+        "spellcaster",
+        "trap"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Helashruu is characterized by its alien form and chaotic evil alignment, with notable physical traits including a strength score of 20 and immense size. It is capable of flight with a speed of 50 feet and has a rugged, natural armor.",
+    "memorable": "This creature uniquely ensnares opponents with its Trap Life ability, creating a surreal display of the trapped victim on its surface.",
+    "goals": "To dominate the battlefield using its power and keen intelligence, and trap foes for a prolonged attack.",
+    "relations": "May serve or be encountered alongside other chaotic or evil aberrations.",
+    "environment": "Typically found in dark, mysterious locations or other planes of existence.",
+    "strengths": "High Constitution and Charisma scores lend to its durability and spellcasting capability, alongside its unique abilities like truesight.",
+    "weaknesses": "Vulnerable to bludgeoning and thunder damage, which can be tactically exploited.",
+    "attacks": "Utilizes its Shard Whip for melee attacks and can unleash waves of energy with Reflect Energy.",
+    "most_powerful_ability": "Trap Life allows it to entrap a creature, blinding and restraining it while dealing damage over time.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 90 feet, allowing it to detect invisible creatures and effects.",
+    "skills": "Highly skilled in perception with a +13 bonus, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Can teleport as a free action up to 120 feet.",
+        "Innate spellcasting ability allows it to cast gate once per day.",
+        "Reflect Energy can deal significant damage based on the type it most recently suffered.",
+        "Immune to charming, paralysis, petrification, and prone effects.",
+        "Only one creature can be trapped at a time with Trap Life."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcasting allows casting of gate once per day without material components.",
+    "test_queries": [
+        "huge monster with truesight and teleportation",
+        "evil flying aberration that ensnares",
+        "creature that traps foes with life siphon",
+        "powerful chaotic spellcaster with energy reflect",
+        "aberration with innate gate spell and energy attacks"
+    ]
+}

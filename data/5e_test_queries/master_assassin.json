@@ -1,0 +1,25 @@
+{
+    "name": "Master Assassin",
+    "queries": [
+        {
+            "query": "humanoid with high dexterity and lethal poison attacks",
+            "variant": "humanoid that has high dexterity and lethal poison strikes"
+        },
+        {
+            "query": "stealthy assassin that can deal instant death to surprised foes",
+            "variant": "stealthy assassin capable of dealing instant death to surprised enemies"
+        },
+        {
+            "query": "highly skilled mercenary who excels in agility and critical hits",
+            "variant": "highly trained mercenary that excels in agility and critical attacks"
+        },
+        {
+            "query": "combatant with blindsight and exceptional acrobatics skills",
+            "variant": "fighter with blindsight and outstanding acrobatics abilities"
+        },
+        {
+            "query": "medium humanoid that uses deadly poison and performs multiple attacks",
+            "variant": "medium humanoid that employs deadly poison and makes several attacks"
+        }
+    ]
+}

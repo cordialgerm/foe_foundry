@@ -1,0 +1,11 @@
+{
+  "Androsphinx": {
+    "relation": "close_cousins",
+    "explanation": "Both are large celestial guardians with strong physical presence, magical resistances, and shapechanging abilities."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful celestial beings serving lawful good causes, acting as protectors with strong combat and magical resistances."
+  },
+  "monster_key": "aatxe"
+}

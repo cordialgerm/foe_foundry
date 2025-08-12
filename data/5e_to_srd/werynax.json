@@ -1,0 +1,15 @@
+{
+  "Wyvern": {
+    "relation": "close_cousins",
+    "explanation": "Werynax is a large, flying monstrosity with natural armor and multiattack similar to a Wyvern, sharing its role as a formidable aerial skirmisher."
+  },
+  "Adult Bronze Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Werynax's combination of flight, magical abilities, and battlefield control resembles the versatile and magically potent Adult Bronze Dragon."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "Werynax's Arcane Bombardment and magic resistance align with the Mage's spellcasting and magical resilience."
+  },
+  "monster_key": "werynax"
+}

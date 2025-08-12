@@ -1,0 +1,7 @@
+{
+  "Wight": {
+    "relation": "almost_identical",
+    "explanation": "The Mask Wight is a durable Medium undead with necrotic melee attacks and a powerful wail, closely resembling a Wight with added thematic memory-erasing abilities."
+  },
+  "monster_key": "mask-wight"
+}

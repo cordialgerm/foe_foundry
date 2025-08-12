@@ -1,0 +1,25 @@
+{
+    "name": "Giant Bat",
+    "queries": [
+        {
+            "query": "large nocturnal predator that uses echolocation",
+            "variant": "big night-hunting beast that relies on echolocation"
+        },
+        {
+            "query": "monster with a wingspan of 15 feet that roosts in caves",
+            "variant": "creature with a wingspan up to 15 feet that lives in caves"
+        },
+        {
+            "query": "flying beast with piercing bite and dizzying screech",
+            "variant": "winged creature that has a biting attack and can screech to disorient"
+        },
+        {
+            "query": "agile beast found in dark environments that targets smaller prey",
+            "variant": "quick creature that lives in darkness and hunts small animals"
+        },
+        {
+            "query": "Giant Bat abilities like heightened hearing and echolocation",
+            "variant": "abilities of the Giant Bat including echolocation and enhanced hearing"
+        }
+    ]
+}

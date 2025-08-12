@@ -1,0 +1,50 @@
+{
+    "name": "Scorpion Cultist",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 26,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "cultist",
+        "poisonous",
+        "stealthy"
+    ],
+    "adjectives": [
+        "nimble",
+        "sinister",
+        "versatile"
+    ],
+    "description": "The Scorpion Cultist is a nimble humanoid clad in dark, flowing garments that embody the principles of a sinister cult, ready to serve dark powers.",
+    "memorable": "Excelled in Dexterity, capable of stealth and dealing poison damage with attacks.",
+    "goals": "Serve dark powers and enact the will of their sinister cult.",
+    "relations": "Might be encountered with other cultists or dark entities.",
+    "environment": "Commonly found in dark, hidden places where they serve their cult.",
+    "strengths": "High Dexterity and proficient in Stealth, capable of hiding effectively.",
+    "weaknesses": "Average Strength and social skills, making it less effective in physical confrontations or interactions.",
+    "attacks": "Scimitar attack deals slashing and poison damage, ranged sling attack also delivers poison damage.",
+    "most_powerful_ability": "Scorpion's Blessing provides advantage against poison and adds poison damage to weapon attacks.",
+    "equipment": null,
+    "senses": "Possesses good passive Perception of 14, enhancing threat detection.",
+    "skills": "Proficient in Animal Handling, Deception, Perception, and exceptional at Stealth with +5 bonus.",
+    "additional_information": [
+        "Resistance to poison damage.",
+        "Advantage on saves against being charmed or frightened.",
+        "Advantage on Wisdom (Perception) checks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy humanoid cultist with poison attacks",
+        "sinister cultist that excels in stealth",
+        "cultist skilled in deception and animal handling",
+        "scimitar-wielding humanoid with poison damage",
+        "nimble fighter serving dark powers"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Kraken": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a close match to the SRD Kraken, sharing size, abilities, and thematic elements like tentacles, storm control, and ink cloud."
+  },
+  "monster_key": "kraken"
+}

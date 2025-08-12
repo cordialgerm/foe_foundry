@@ -1,0 +1,25 @@
+{
+    "name": "Wereowl",
+    "queries": [
+        {
+            "query": "humanoid creature that can transform into an owl and uses stealth",
+            "variant": "creature that can change into an owl and excels at stealthy moves"
+        },
+        {
+            "query": "lawful evil shapechanger with flight capabilities",
+            "variant": "shape-shifting monster with lawful evil traits and the ability to fly"
+        },
+        {
+            "query": "medium humanoid with decent hit points and piercing damage abilities",
+            "variant": "humanoid with average size, solid hit points, and capable of dealing piercing damage"
+        },
+        {
+            "query": "dangerous creature from the dark that can fly silently",
+            "variant": "creepy flying creature that can move quietly in darkness"
+        },
+        {
+            "query": "monster that can attack in multiple forms and has lycanthropy curse",
+            "variant": "ability to attack in different forms while cursing with lycanthropy"
+        }
+    ]
+}

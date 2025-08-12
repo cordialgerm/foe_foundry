@@ -1,0 +1,25 @@
+{
+    "name": "Succubus",
+    "queries": [
+        {
+            "query": "humanoid fiend that charms and manipulates",
+            "variant": "fiend humanoid that manipulates and charms"
+        },
+        {
+            "query": "shapechanging demon with seductive powers living in chaos",
+            "variant": "demon with chaotic living and seductive, shapechanging powers"
+        },
+        {
+            "query": "creature that drains life force with a kiss and loves to deceive",
+            "variant": "deceiving creature that loves to drain life force with a kiss"
+        },
+        {
+            "query": "seductive fiend with telepathy and psychological attacks",
+            "variant": "fiend that is seductive with psychological attacks and telepathy"
+        },
+        {
+            "query": "charming monster that flies and manipulates emotions",
+            "variant": "monster that manipulates emotions and flies, charming"
+        }
+    ]
+}

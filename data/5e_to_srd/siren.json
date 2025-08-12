@@ -1,0 +1,7 @@
+{
+  "Harpy": {
+    "relation": "conceptually_similar",
+    "explanation": "The Siren shares the enchanting song and charm abilities with the Harpy, both being medium monstrosities that lure prey with their voices."
+  },
+  "monster_key": "siren"
+}

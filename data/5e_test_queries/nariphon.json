@@ -1,0 +1,25 @@
+{
+    "name": "Nariphon",
+    "queries": [
+        {
+            "query": "huge plant monster that creates clones and grapples opponents",
+            "variant": "large plant creature that makes clones and can grapple enemies"
+        },
+        {
+            "query": "creature resembling a tree with high hit points and poison immunity",
+            "variant": "tree-like monster with large hit points and immunity to poison"
+        },
+        {
+            "query": "difficult plant creature with a challenge rating of 13 and bludgeoning immunity",
+            "variant": "challenging plant monster CR 13 with immunity to bludgeoning"
+        },
+        {
+            "query": "monster using roots as a melee attack with strong constitution",
+            "variant": "creature that attacks with roots and has a high constitution"
+        },
+        {
+            "query": "plant creature that can sense movement and control clones in combat",
+            "variant": "vegetation monster that senses movement and can control clones during battle"
+        }
+    ]
+}

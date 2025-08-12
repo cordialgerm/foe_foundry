@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "almost_identical",
+    "explanation": "A small, agile goblin skilled in stealth and ranged attacks, similar to the Goblin Musketeer."
+  },
+  "monster_key": "goblin-musketeer"
+}

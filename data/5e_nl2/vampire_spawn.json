@@ -1,0 +1,51 @@
+{
+    "name": "Vampire Spawn",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 15,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft. walking, 30 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "vampire",
+        "minion"
+    ],
+    "adjectives": [
+        "loyal",
+        "fast",
+        "strong"
+    ],
+    "description": "A lesser form of vampire created from a drained mortal, retaining some of its former appearance and bound to its vampire master.",
+    "memorable": "Possesses dangerous abilities like regeneration, a charming gaze, and the ability to grapple effectively.",
+    "goals": "Typically serves as enforcers or guardians for more powerful vampires.",
+    "relations": "Often accompany true vampires and can be commanded by them.",
+    "environment": "Usually found in dark locations, such as dungeons or crypts, where vampires dwell.",
+    "strengths": "High strength, dexterity, and constitution scores enhance its combat abilities and survivability.",
+    "weaknesses": "Vulnerable to radiant damage, sunlight, and running water, which hampers its regeneration.",
+    "attacks": "Can make two melee attacks with claws or a biting attack that drains life, rebuilding its own health.",
+    "most_powerful_ability": "Regeneration allows it to regain hit points at the start of its turn, unless hindered by sunlight or radiant damage.",
+    "senses": "Has a passive Perception of 13, making it aware of hidden threats.",
+    "skills": "Excels in stealth with a +6 modifier, enabling it to ambush victims effectively.",
+    "additional_information": [
+        "Regeneration interrupted by radiant damage or holy water.",
+        "Spider Climb ability allows movement on difficult surfaces.",
+        "Can grapple opponents with claw attacks.",
+        "Draining Bite reduces target's hit points while healing itself.",
+        "Hissing Scuttle enables repositioning after taking radiant damage."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "vampire servant that drains life",
+        "undead creature with regeneration abilities",
+        "fast climbing monster under vampire control",
+        "dangerous minion with grappling attacks",
+        "creature vulnerable to sunlight and running water"
+    ]
+}

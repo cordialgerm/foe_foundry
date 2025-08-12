@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Infernal Tutor</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>182</HP>
 <summary>The Infernal Tutor is a formidable Medium fiend characterized by its lawful evil nature and a broad range of magical and psychological abilities. With a Challenge Rating of 13, it poses a significant threat to adventurers, especially those susceptible to manipulation or psychic harm. This creature is designed to dominate encounters with its high Charisma and Intelligence, allowing it to control the battlefield through spellcasting and enchantments. Its strengths lie in its magical resistance, ability to inflict psychic damage, and capacity to charm and manipulate humanoids, making it an excellent strategist in combat scenarios. However, its lower physical attributes such as Strength and moderate Constitution can be considered weaknesses, as they may limit its resilience in straightforward melee confrontations.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ For reactions, the Infernal Tutor can use an ability named Str of Character, rea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Infernal Tutor
 
 *Medium* *Fiend* *lawful evil*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Str of Character:** When it succeeds on a save tutor responds with scathing magical insult if source of effect is a creature within 60' of tutor. That creature: DC 18 Wis save or take 14 (4d6) psychic and have disadvantage on next save it makes vs. a spell cast by tutor.
 
 
+</statblock>
 
 

@@ -1,0 +1,47 @@
+{
+    "name": "Wicked Skull",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Tiny",
+    "hp": 7,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "trickster",
+        "shapeshifter",
+        "chaotic"
+    ],
+    "adjectives": [
+        "mischievous",
+        "deceptive",
+        "fragile"
+    ],
+    "description": "The Wicked Skull is a tiny monstrosity that resembles a common object when motionless, embodying a mischievous spirit.",
+    "memorable": "Its ability to change shape and disguise itself as an object makes it challenging to detect.",
+    "goals": "To influence encounters through trickery and charm.",
+    "relations": "Commonly encountered with other trickster creatures or used by mischievous beings.",
+    "environment": "Typically found in urban areas, near objects it can disguise itself as.",
+    "strengths": "Highly skilled in deception, persuasion, and stealth, allowing it to manipulate others effectively.",
+    "weaknesses": "Fragile with low physical attributes, particularly in strength.",
+    "attacks": "Uses a Pseudopod melee attack to deliver bludgeoning damage and employs Petty Mockery to disrupt opponents.",
+    "most_powerful_ability": "Shapechanger ability allows it to polymorph into a Tiny object at will, maintaining its statistics.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in deception, insight, persuasion, and stealth, enhancing its trickster capabilities.",
+    "additional_information": [
+        "Advantage on Charisma checks when incorporating humor.",
+        "Indistinguishable from an ordinary object when motionless."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny trickster creature that can disguise itself",
+        "mischievous shapechanging skull monster",
+        "creature with advantage on deception checks",
+        "small monster that uses humor in combat",
+        "deceptive creature that resembles an object"
+    ]
+}

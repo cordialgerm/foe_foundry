@@ -1,0 +1,25 @@
+{
+    "name": "Kot Bayun",
+    "queries": [
+        {
+            "query": "slow charming monster with healing abilities found in nature",
+            "variant": "charming slow monster with healing powers in the wild"
+        },
+        {
+            "query": "medium-sized stealthy monstrosity that can turn invisible",
+            "variant": "medium stealthy creature that can go invisible"
+        },
+        {
+            "query": "creature that sings to incapacitate and has strong charisma",
+            "variant": "monster with a song that puts people to sleep and high charisma"
+        },
+        {
+            "query": "monster with claw attacks and a magical song for control",
+            "variant": "creature that uses claws and has a magic song for battlefield control"
+        },
+        {
+            "query": "manipulative creature with high dexterity in neutral environments",
+            "variant": "manipulative monster with great agility found in neutral setting"
+        }
+    ]
+}

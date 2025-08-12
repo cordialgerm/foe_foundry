@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fearsome cold-aligned predators with icy attacks and a chilling presence in snowy environments."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead horror aspect and a paralyzing aura that instills fear in foes."
+  },
+  "monster_key": "wendigo"
+}

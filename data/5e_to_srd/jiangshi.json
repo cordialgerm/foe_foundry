@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium undead with claw attacks and life-draining abilities that instill fear."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "Shares life drain and the ability to create undead from fallen foes, fitting the Jiangshi's undead nature."
+  },
+  "monster_key": "jiangshi"
+}

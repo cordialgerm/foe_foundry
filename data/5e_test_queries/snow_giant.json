@@ -1,0 +1,25 @@
+{
+    "name": "Snow Giant",
+    "queries": [
+        {
+            "query": "huge giant that excels in snowy terrain and has regenerative abilities",
+            "variant": "giant that is huge excels in snow and can regenerate"
+        },
+        {
+            "query": "cold-immune giant with substantial hit points and vulnerable to fire",
+            "variant": "giant immune to cold that has high hit points and is weak to fire"
+        },
+        {
+            "query": "strong melee attacker living in snow with camouflage skill",
+            "variant": "melee attacker that is strong lives in snow and has stealth skills"
+        },
+        {
+            "query": "snowy environment creature with multiattack and snowball attack",
+            "variant": "creature in snowy areas that can multiattack and has a snowball attack"
+        },
+        {
+            "query": "giant with bludgeoning damage attacks and weaknesses to fire",
+            "variant": "bludgeoning damage dealing giant with vulnerabilities to fire"
+        }
+    ]
+}

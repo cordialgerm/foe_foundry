@@ -1,0 +1,25 @@
+{
+    "name": "Darakhul Shadowmancer",
+    "queries": [
+        {
+            "query": "medium undead creature that uses dark magic and can manipulate shadows",
+            "variant": "medium undead being that manipulates shadows and uses dark magic"
+        },
+        {
+            "query": "darkvision undead that disguises itself and excels in stealth",
+            "variant": "undead with darkvision that is great at stealth and can disguise"
+        },
+        {
+            "query": "poison immune creature that hates sunlight and brings ambush tactics",
+            "variant": "creature immune to poison that despises sunlight and specializes in ambushing"
+        },
+        {
+            "query": "clever spellcaster that relies on shadows and has a stench ability",
+            "variant": "intelligent spell user that depends on shadows and has stench power"
+        },
+        {
+            "query": "deadly necromancer that blends magic with stealth and is an undead",
+            "variant": "dangerous undead that combines magic with stealth and is a necromancer"
+        }
+    ]
+}

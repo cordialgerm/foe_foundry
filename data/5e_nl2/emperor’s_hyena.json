@@ -1,0 +1,52 @@
+{
+    "name": "Emperor\u2019s Hyena",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "pack tactics",
+        "poisonous"
+    ],
+    "adjectives": [
+        "formidable",
+        "aggressive",
+        "chaotic"
+    ],
+    "description": "A medium-sized undead creature resembling a hyena with a malevolent presence. Its natural armor provides solid defense, and it has a ghostly appearance filled with dark vapor.",
+    "memorable": "Its ability to inflict exhaustion with its breath and poison with its stench makes it a fearsome adversary.",
+    "goals": "To create chaos in battle by attacking in packs and debilitating foes.",
+    "relations": "Often found in the company of other undead creatures or beasts.",
+    "environment": "Typically encountered in desolate wastelands or battlefields where undead roam.",
+    "strengths": "Brisk movement speed allows effective positioning in combat, and advantages from Pack Tactics enhance its attacking potential.",
+    "weaknesses": "Vulnerable to radiant damage and capable of being turned by clerics despite its advantage against turning effects.",
+    "attacks": "Utilizes a multiattack with deadly bite attacks that deal piercing and necrotic damage, alongside a breath attack that causes necrotic damage and exhaustion.",
+    "most_powerful_ability": "Black Breath can significantly alter the flow of battle by inflicting damage and exhausting opponents.",
+    "equipment": null,
+    "senses": "Possesses darkvision, enabling it to see in low-light conditions, contributing to its effectiveness in ambushes.",
+    "skills": "Proficient in perception, aiding in the detection of hidden threats.",
+    "additional_information": [
+        "Damage immunities include poison, enhancing its durability.",
+        "Has advantage on saving throws against effects meant to turn undead.",
+        "Resistant to cold and necrotic damage, making it hardier against specific types of attacks.",
+        "Thrives in chaotic environments, often requiring tactical maneuvers in combat.",
+        "Its stench ability can significantly hinder opponents' effectiveness in battle."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic undead hyena creature",
+        "creature with black breath and strong bite",
+        "undead beast that poisons enemies",
+        "aggressive hyena that fights in packs",
+        "deadly hyena that causes exhaustion"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Servant",
+    "queries": [
+        {
+            "query": "magical helper with immunity to charm effects and low strength",
+            "variant": "magical assistant immune to charm and has low strength"
+        },
+        {
+            "query": "construct creature that casts prestidigitation and mending",
+            "variant": "creature construct that can use mending and prestidigitation"
+        },
+        {
+            "query": "medium construct that sees in the dark and has low intelligence",
+            "variant": "medium construct with darkvision and poor intelligence"
+        },
+        {
+            "query": "automaton with perception skills and ability to heal minor wounds",
+            "variant": "robot with perception and can heal small injuries"
+        },
+        {
+            "query": "Clockwork Servant's special abilities and environmental strengths",
+            "variant": "special abilities of Clockwork Servant and its advantages in environments"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Serpentine Lamia",
+    "queries": [
+        {
+            "query": "medium serpentine monster with seductive gaze living in swamps",
+            "variant": "medium monster with a snake body and seductive powers that lives in wetlands"
+        },
+        {
+            "query": "charming serpent creature that attacks with a scimitar and constrict ability",
+            "variant": "serpent-like creature that uses charm and constriction to attack with a scimitar"
+        },
+        {
+            "query": "deceptive monster with high Charisma that ambushes victims",
+            "variant": "monster with high Charisma scores that is skilled at ambushing and deception"
+        },
+        {
+            "query": "creature that can charm humanoids and has a snake-like appearance",
+            "variant": "humanoid-charming creature with a body resembling a snake"
+        },
+        {
+            "query": "neutral evil lamia capable of climbing and swimming",
+            "variant": "evil-aligned lamia that can both climb and swim effectively"
+        }
+    ]
+}

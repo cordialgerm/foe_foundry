@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Forest Marauder is a large, powerful giant with natural armor and melee attacks, similar to a Hill Giant but specialized for forest ambushes."
+  },
+  "monster_key": "forest-marauder"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs serving as guardians with resilient bodies and melee attacks."
+  },
+  "Iron Golem": {
+    "relation": "almost_identical",
+    "explanation": "A large, powerful construct guardian with high resilience and strong melee attacks, similar to the Eye Golem."
+  },
+  "monster_key": "eye-golem"
+}

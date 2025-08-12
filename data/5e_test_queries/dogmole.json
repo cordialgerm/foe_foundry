@@ -1,0 +1,25 @@
+{
+    "name": "Dogmole",
+    "queries": [
+        {
+            "query": "medium burrowing beast with strong bites and claws",
+            "variant": "medium beast that burrows and has strong claw and bite attacks"
+        },
+        {
+            "query": "creature that creates tunnels and has a weakness to multiple foes",
+            "variant": "monster that can make tunnels and is vulnerable to many enemies"
+        },
+        {
+            "query": "agile underground creature with a fierce rage against insectoids",
+            "variant": "quick creature from underground that becomes furious at insect-like beasts"
+        },
+        {
+            "query": "beast with high dexterity and low intelligence living underground",
+            "variant": "creature with poor intelligence but great dexterity that lives underground"
+        },
+        {
+            "query": "dogmole challenge rating and special abilities for adventurers",
+            "variant": "special abilities and challenge rating of the dogmole for players"
+        }
+    ]
+}

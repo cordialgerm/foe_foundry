@@ -1,0 +1,11 @@
+{
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey-like creatures that manipulate fear and use psychic or fear-based abilities to control and harm foes."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Fear Smith is a fey creature dwelling in mystical woodlands, similar to Dryads in habitat and fey nature."
+  },
+  "monster_key": "fear-smith"
+}

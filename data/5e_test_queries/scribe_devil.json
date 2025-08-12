@@ -1,0 +1,25 @@
+{
+    "name": "Scribe Devil",
+    "queries": [
+        {
+            "query": "lawful evil flying fiend with spellcasting abilities",
+            "variant": "flying lawful evil fiend that can cast spells"
+        },
+        {
+            "query": "medium devil that excels in manipulation and cunning tactics",
+            "variant": "medium creature that is a devil specializing in cunning and manipulation"
+        },
+        {
+            "query": "creature immune to fire and poison that can fly and see in darkness",
+            "variant": "fiend that can see in dark places and immune to both fire and poison"
+        },
+        {
+            "query": "monster with claws and tail that can cause blindness",
+            "variant": "creature that has a tail and claws which can make you blind"
+        },
+        {
+            "query": "Scribe Devil abilities and combat tactics against magic",
+            "variant": "abilities of Scribe Devil and its strategies in combat involving magic"
+        }
+    ]
+}

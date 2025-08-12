@@ -1,0 +1,53 @@
+{
+    "name": "Astral Devourer",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 30 ft., hover, walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "aberration",
+        "chaotic",
+        "magical"
+    ],
+    "adjectives": [
+        "powerful",
+        "chaotic",
+        "dangerous"
+    ],
+    "description": "The Astral Devourer is a formidable medium aberration embodying chaos and evil, featuring serpentine forms and possessing natural armor for protection. It has a menacing appearance that reflects its aggressive nature.",
+    "memorable": "It can split into smaller versions of itself when injured, maintaining a hive mind connection while also coordinating with its serpentine forms to enhance tactical options.",
+    "goals": "To disrupt and damage enemies through coordinated physical and poison attacks.",
+    "relations": "Tends to occupy areas of chaos alongside other aberrations or forms of similar chaotic entities.",
+    "environment": "Usually found in chaotic or alien environments, possibly in places where the astral plane overlaps with the material world.",
+    "strengths": "Possesses damage immunities to poison and psychic damage, along with resistances to nonmagical attacks, making it very resilient in combat.",
+    "weaknesses": "Requires proximity to its swarm for optimal functioning, which can be a tactical limitation in certain combat scenarios.",
+    "attacks": "Utilizes a multiattack action with melee attacks that involve piercing damage and poisonous effects, as well as a ground-splashing serpent spray attack.",
+    "most_powerful_ability": "The ability to split into smaller Astral Devourers when taking damage, allowing it to multiply and adapt to challenges in combat.",
+    "equipment": null,
+    "senses": "Has keen perception with a passive score of 16, indicating strong awareness of its surroundings.",
+    "skills": "Exhibits exceptional stealth and perception skills, enabling it to avoid detection and effectively sense its environment.",
+    "additional_information": [
+        "Can telepathically communicate with its individual serpents within 1 mile due to its Collective Mind ability.",
+        "Exhibits Magic Resistance, gaining advantages on saving throws against spells.",
+        "Can occupy another creature's space through its Swarm ability.",
+        "Recovers hit points by utilizing its Serpent Spray attack which damages multiple targets.",
+        "Immunities to conditions like being grappled, paralyzed, or stunned."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil aberration",
+        "serpentine monster",
+        "creature that splits when damaged",
+        "poison and psychic immune creature",
+        "telepathic monster in combat"
+    ]
+}

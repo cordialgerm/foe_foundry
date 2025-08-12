@@ -1,0 +1,11 @@
+{
+  "Knight": {
+    "relation": "almost_identical",
+    "explanation": "A humanoid warrior clad in plate armor wielding lance and mace, embodying the knight archetype."
+  },
+  "Warhorse": {
+    "relation": "close_cousins",
+    "explanation": "The Black Knight Commander is typically mounted on a warhorse, sharing the mounted combat aspect."
+  },
+  "monster_key": "black-knight-commander"
+}

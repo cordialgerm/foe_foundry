@@ -1,0 +1,53 @@
+{
+    "name": "Manure Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 7,
+    "srd": false,
+    "cr": "1",
+    "movement": "20 ft. walk, 20 ft. climb, capable of squeezing through 1-foot-wide spaces",
+    "role": "null",
+    "tags": [
+        "ooze",
+        "undead",
+        "ambient",
+        "pest"
+    ],
+    "adjectives": [
+        "pungent",
+        "sluggish",
+        "resilient",
+        "amorphous",
+        "self-replicating"
+    ],
+    "description": "The Manure Ooze is a repulsive, sluggish mass with a noxious odor, able to move through tight spaces and consume organic material.",
+    "memorable": "Its ability to split into two smaller oozes upon taking slashing damage complicates engagements with adventurers.",
+    "goals": "To consume corpses for regeneration and ambush unsuspecting creatures.",
+    "relations": "Often found in filthy environments; might coexist with other vermin or undead creatures.",
+    "environment": "Typically found in refuse piles, swamps, or areas with decaying organic matter.",
+    "strengths": "Immunities to various damage types and conditions, ability to regenerate health, and emission of a debilitating stench.",
+    "weaknesses": "Sluggish movement and reliance on consuming corpses for health.",
+    "attacks": "Pseudopod melee attack deals bludgeoning and poison damage.",
+    "most_powerful_ability": "Digest Corpse allows it to recover health while permanently destroying remains.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures in darkness.",
+    "skills": "Has a poor passive Perception score of 8, indicating limited sensory awareness.",
+    "additional_information": [
+        "Can quickly ambush unsuspecting adventurers with its ability to stay active without sleep.",
+        "Can create a disadvantage for attackers nearby with its Eye-Watering Stench.",
+        "Burning the ooze can make it more dangerous by increasing its fire damage.",
+        "Regeneration can lead to longer encounters if not dealt with promptly.",
+        "Effectively prevents enemies from reviving their fallen allies by digesting their bodies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "sluggish oozing monster with a strong stench",
+        "repulsive ooze that consumes corpses for health",
+        "ooze that splits into smaller forms when damaged",
+        "sticky creature found in decaying organic matter",
+        "ooze that emits a debilitating smell in combat"
+    ]
+}

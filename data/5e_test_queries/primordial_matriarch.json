@@ -1,0 +1,25 @@
+{
+    "name": "Primordial Matriarch",
+    "queries": [
+        {
+            "query": "gargantuan elemental monster with high flying speed and elemental attacks",
+            "variant": "gargantuan elemental creature with fast flight speed and elemental abilities"
+        },
+        {
+            "query": "powerful nature-based creature that resists multiple damage types",
+            "variant": "strong nature-themed monster that has resistances to several damage types"
+        },
+        {
+            "query": "elemental monster that can summon mephits and has legendary resistances",
+            "variant": "elemental creature capable of summoning mephits and possessing legendary resistances"
+        },
+        {
+            "query": "creature with blindsight and immunity to exhaustion living in an elemental plane",
+            "variant": "being with blindsight and exhaustion immunity existing in an elemental realm"
+        },
+        {
+            "query": "monster that deals double damage to structures and has an aura dealing damage",
+            "variant": "creature that inflicts double damage to buildings and possesses a damaging aura"
+        }
+    ]
+}

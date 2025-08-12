@@ -1,0 +1,25 @@
+{
+    "name": "Grim Jester",
+    "queries": [
+        {
+            "query": "undead creature that uses laughter to incapacitate foes",
+            "variant": "undead being that incapacitates enemies with laughter"
+        },
+        {
+            "query": "chaotic evil jester with high dexterity and charisma",
+            "variant": "chaotic evil jester who is very dexterous and charming"
+        },
+        {
+            "query": "sinister jester that can regenerate and cast spells",
+            "variant": "sinister joker that regenerates and uses spells"
+        },
+        {
+            "query": "medium undead that thrives in combat with quirky abilities",
+            "variant": "medium undead creature that excels in battle with odd powers"
+        },
+        {
+            "query": "creature immune to poison and bludgeoning from nonmagical attacks",
+            "variant": "being that can't be harmed by poison or regular bludgeoning attacks"
+        }
+    ]
+}

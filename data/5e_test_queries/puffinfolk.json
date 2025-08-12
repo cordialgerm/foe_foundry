@@ -1,0 +1,25 @@
+{
+    "name": "Puffinfolk",
+    "queries": [
+        {
+            "query": "small marine humanoid that can swim and fly",
+            "variant": "little humanoid that swims and flies in the ocean"
+        },
+        {
+            "query": "agile creature with exceptional dexterity living near the ocean",
+            "variant": "versatile creature with high dexterity found in marine environments"
+        },
+        {
+            "query": "creature with darkvision that can hold its breath underwater",
+            "variant": "monster that has darkvision and can breathe underwater for 30 minutes"
+        },
+        {
+            "query": "Puffinfolk abilities to evade attacks in combat",
+            "variant": "Puffinfolk tactics for avoiding damage in fights"
+        },
+        {
+            "query": "ocean-dwelling humanoid with unique navigation skills",
+            "variant": "humanoid from the ocean that has special navigation abilities"
+        }
+    ]
+}

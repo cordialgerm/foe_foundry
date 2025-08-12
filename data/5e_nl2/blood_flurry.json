@@ -1,0 +1,52 @@
+{
+    "name": "Blood Flurry",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 144,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "15 ft. walking speed, 40 ft. flying speed",
+    "role": null,
+    "tags": [
+        "blood",
+        "swarm",
+        "ice"
+    ],
+    "adjectives": [
+        "unsettling",
+        "swift",
+        "resilient"
+    ],
+    "description": "The Blood Flurry resembles a swirling collection of snowflakes when motionless, characterized by its ability to fly swiftly.",
+    "memorable": "Its unique ability to cause bleeding wounds that persist over time makes encounters particularly dangerous.",
+    "goals": "Typically hunts for blood to sustain its diet and maintain its camouflage.",
+    "relations": "Might be encountered with other aberrations or in locations with a dark magic influence.",
+    "environment": "Often found in cold, remote areas where it can lurk unnoticed.",
+    "strengths": "Highly mobile with a fast flying speed and resistant to multiple damage types.",
+    "weaknesses": "Vulnerable to rust-related effects due to a diet heavy in iron.",
+    "attacks": "Utilizes two attacks called Free Bleeding Cuts that can cause persistent damage if the target fails a saving throw.",
+    "most_powerful_ability": "The ability to inflict bleeding wounds that cause ongoing damage to non-undead targets.",
+    "equipment": null,
+    "senses": "Possesses Blood Sense, allowing it to detect creatures by scent within 30 feet.",
+    "skills": "Has a passive perception of 11, which is low for its CR.",
+    "additional_information": [
+        "Can blend in as a harmless collection of snowflakes while motionless.",
+        "Cannot regain hit points while occupying another creature's space.",
+        "Inflicts additional ongoing damage if targets do not staunch their wounds.",
+        "Immune to conditions such as charmed and frightened.",
+        "Possesses significant Dexterity which aids in avoiding incoming attacks."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swirling snowflake monster",
+        "blood-sucking aberration",
+        "creature that causes bleeding",
+        "flying icy threat",
+        "vulnerable to rust damage"
+    ]
+}

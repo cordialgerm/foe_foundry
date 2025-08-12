@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are chaotic plant creatures with abilities that affect foes in their vicinity, such as blinding or hindering."
+  },
+  "Awakened Shrub": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, cunning plant creatures that use stealth and manipulation in natural environments."
+  },
+  "monster_key": "alliumite,-rapscallion"
+}

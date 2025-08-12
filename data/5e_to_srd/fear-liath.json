@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "A large, incorporeal undead that instills fear and manipulates foes, similar to the Fear Liath's shadowy and cursed nature."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the dark gray shadowy form and fear-inducing presence, though mechanics differ from the Fear Liath."
+  },
+  "monster_key": "fear-liath"
+}

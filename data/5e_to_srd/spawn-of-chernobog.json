@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large fiendish creatures with menacing presences and strong melee attacks."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of infection and transformation into spawn-like creatures through a debilitating disease."
+  },
+  "monster_key": "spawn-of-chernobog"
+}

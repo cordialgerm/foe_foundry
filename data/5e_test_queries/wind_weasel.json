@@ -1,0 +1,25 @@
+{
+    "name": "Wind Weasel",
+    "queries": [
+        {
+            "query": "fey creature that can transform into a whirlwind and loves stealth",
+            "variant": "fey being that enjoys stealth and can change into a whirlwind"
+        },
+        {
+            "query": "medium-sized weasel-like creature that can fly and evade attacks",
+            "variant": "weasel kind of creature that is medium-sized and can fly while avoiding attacks"
+        },
+        {
+            "query": "agile monster with low AC that can hide as a dust devil",
+            "variant": "quick creature with weak defenses that can disguise itself as a dust devil"
+        },
+        {
+            "query": "chaotic neutral wind creature that excels in evasion and dealing slashing damage",
+            "variant": "wind-based creature of chaotic neutral alignment that is good at evading and inflicting slashing damage"
+        },
+        {
+            "query": "monster with whirlwind form and multiattack capabilities",
+            "variant": "creature that has the ability to turn into a whirlwind and attack multiple times"
+        }
+    ]
+}

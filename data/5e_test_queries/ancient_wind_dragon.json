@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Wind Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with storm abilities and high damage output",
+            "variant": "gargantuan draggon with storm powers and high damage potential"
+        },
+        {
+            "query": "dragon that uses lightning and wind in combat and has high hit points",
+            "variant": "draggon that employs lightning and winds in fights and has a lot of hit points"
+        },
+        {
+            "query": "powerful dragon immune to lightning and with fear-inducing presence",
+            "variant": "strong dragon immune to lightning damage and with a fear inducing ability"
+        },
+        {
+            "query": "ancient chaotic dragon that excels in mobility and battlefield control",
+            "variant": "old chaotic dragon that excels in movement and battlefield management"
+        },
+        {
+            "query": "dragon with high strength and multiple powerful attack options",
+            "variant": "draggon with high strenth and various powerful attack choices"
+        }
+    ]
+}

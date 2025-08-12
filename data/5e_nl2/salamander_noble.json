@@ -1,0 +1,50 @@
+{
+    "name": "Salamander Noble",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "fire",
+        "noble"
+    ],
+    "adjectives": [
+        "formidable",
+        "fiery",
+        "powerful"
+    ],
+    "description": "The Salamander Noble is a massive creature exuding heat and fire, with a strong muscular build and features that evoke the essence of flames.",
+    "memorable": "Its Heated Body trait inflicts fire damage on grappling foes, making it both physically strong and dangerous.",
+    "goals": "To dominate combat situations and inflict damage with fire-based attacks.",
+    "relations": "Often found in the company of other fire elementals or creatures from volcanic and hot environments.",
+    "environment": "Typically inhabits areas of extreme heat, such as volcanoes or lava fields.",
+    "strengths": "Immunity to fire damage and the ability to deal multiple types of damage in combat.",
+    "weaknesses": "Susceptible to cold damage which can disable some of its abilities.",
+    "attacks": "Capable of performing a multiattack with its tail and pike, dealing bludgeoning and piercing damage, along with fire damage.",
+    "most_powerful_ability": "Fire Breath: exhale fire in a 30-foot cone dealing significant damage to multiple foes.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Heated Body inflicts fire damage on grappling foes.",
+        "Can automatically hit restrained targets with tail attacks.",
+        "Fire attacks can affect multiple targets simultaneously."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge fire elemental attacker",
+        "brute with heated body trait",
+        "creature that breathes fire in a cone",
+        "noble salamander with fire damage",
+        "elemental monster resilient to fire"
+    ]
+}

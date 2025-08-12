@@ -1,0 +1,50 @@
+{
+    "name": "Flying Snake",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Tiny",
+    "hp": 10,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 ft. walking, 60 ft. flying, 30 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "poison",
+        "agile"
+    ],
+    "adjectives": [
+        "tiny",
+        "fragile",
+        "quick"
+    ],
+    "description": "The Flying Snake is a tiny, agile creature that can navigate both aerial and aquatic environments with ease. It features a slender body and possesses a notable ability to fly.",
+    "memorable": "Its Flyby ability allows it to escape attacks while striking, making it a slippery foe in combat.",
+    "goals": "To strike quickly and evade danger, relying on speed rather than brute strength.",
+    "relations": "Commonly found in environments where small, agile creatures thrive.",
+    "environment": "Aerial and aquatic environments such as jungles and swamps.",
+    "strengths": "Exceptional agility allows it to avoid attacks and reposition during combat.",
+    "weaknesses": "Low Strength and Constitution make it physically weak and fragile.",
+    "attacks": "Bite attack that deals piercing damage and potential poison damage.",
+    "most_powerful_ability": "Flyby ability enables it to move without provoking opportunity attacks.",
+    "equipment": null,
+    "senses": "Has keen senses with a perception score of 11, allowing it to detect threats effectively.",
+    "skills": "Proficient in Stealth, with a notable score of 13.",
+    "additional_information": [
+        "Low Challenge Rating of CR 1/8 indicating minimal threat level.",
+        "Utilizes Reflexive Escape to avoid damage from ranged attacks.",
+        "Has a very low Intelligence score indicating limited reasoning capabilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny flying agile snake",
+        "snake that can fly and evade attacks",
+        "quick poisoner that can fly",
+        "fragile snake with flying ability",
+        "small snake using agility to survive"
+    ]
+}

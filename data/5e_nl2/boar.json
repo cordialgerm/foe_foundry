@@ -1,0 +1,49 @@
+{
+    "name": "Boar",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "40 feet walk speed",
+    "role": "Bruiser",
+    "tags": [
+        "animal",
+        "wild",
+        "aggressive",
+        "territorial"
+    ],
+    "adjectives": [
+        "muscular",
+        "aggressive",
+        "fast"
+    ],
+    "description": "The Boar is a large, muscular animal with sharp tusks and a thick hide, known for its aggressive temperament.",
+    "memorable": "Its Relentless ability allows it to survive near-death experiences, making it a durable foe in combat.",
+    "goals": "Wild Boars roam forests and grasslands, foraging for roots, fungi, and small animals; they fiercely defend their home territory from intruders.",
+    "relations": "Often found in the company of other wild beasts in forest and grassland ecosystems.",
+    "environment": "Typically found in forests and grasslands.",
+    "strengths": "Boars are surprisingly fast and can charge at targets, dealing extra damage and knocking them prone.",
+    "weaknesses": "Low Intelligence and Charisma scores limit their effectiveness in social dynamics and mental challenges.",
+    "attacks": "Uses tusks to gore opponents, making powerful melee attacks, especially when charging.",
+    "most_powerful_ability": "Charge ability allows it to deal additional slashing damage and potentially knock foes prone.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Boars are highly territorial animals.",
+        "They can engage in hit-and-run tactics effectively.",
+        "Their thick hide provides natural armor."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive wild animal",
+        "territorial charging beast",
+        "muscular tusked creature",
+        "fast melee combatant",
+        "formidable forest beast"
+    ]
+}

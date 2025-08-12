@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-like creatures with debilitating effects and a presence in overgrown or magical areas."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures with aggressive and debilitating abilities, capable of moving through terrain."
+  },
+  "monster_key": "doom-creeper"
+}

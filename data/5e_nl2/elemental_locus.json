@@ -1,0 +1,57 @@
+{
+    "name": "Elemental Locus",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Gargantuan",
+    "hp": 290,
+    "ac": 16,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 25 ft.",
+    "role": "Defender",
+    "tags": [
+        "elemental",
+        "guardian",
+        "territorial"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "powerful",
+        "immortal",
+        "unstoppable"
+    ],
+    "description": "The Elemental Locus is a massive entity embodying the raw forces of nature, deeply connected to its territory and possessing exceptional physical strength with a colossal build.",
+    "memorable": "Its Immortal trait allows it to return to life after death, making it an ongoing threat within its bound region.",
+    "goals": "To protect its territory and assert dominance over the land, often summoning allies to assist in its defense.",
+    "relations": "It may serve as a guardian for elemental realms or be encountered alongside lesser elemental beings like mephits.",
+    "environment": "Typically found in territories of at least 100 square miles, reflecting its elemental nature.",
+    "strengths": "Highly resilient with numerous immunities and a significant ability to summon allies, making it formidable in battle.",
+    "weaknesses": "Bound to its territory, limiting its mobility in open environments and making it vulnerable if lured away.",
+    "attacks": "Can perform three powerful Slam attacks, dealing substantial bludgeoning damage and knocking targets prone.",
+    "most_powerful_ability": "The ability to return to life after death, making it nearly impossible to eliminate permanently.",
+    "senses": "Possesses darkvision and tremorsense up to 120 feet, granting it excellent awareness of its surroundings.",
+    "skills": "Proficient in Nature and Perception, allowing it to effectively interact with and observe its environment.",
+    "additional_information": [
+        "Can exist without air, food, drink, or sleep due to its Elemental Nature.",
+        "Has Magic Resistance, giving it an advantage against spells and magical effects.",
+        "As a Siege Monster, doubles damage to structures, making it a threat to fortifications.",
+        "The Land Bound feature strictly limits its movement and capabilities outside a specified area.",
+        "Can summon Elementals that share affinities with the terrain, enhancing its tactical advantages."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan elemental guardian",
+        "creature with immense strength and durability",
+        "immortal creature bound to territory",
+        "monster that summons allies in battle",
+        "creature immune to many damage types"
+    ]
+}

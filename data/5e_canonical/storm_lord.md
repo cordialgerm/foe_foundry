@@ -1,6 +1,8 @@
 <MonsterName/>Storm Lord</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Storm Lord is a formidable Huge Elemental creature characterized by its mastery over storms and lightning. With its high Armor Class of 17 and substantial pool of Hit Points totaling 161, it serves as a powerful adversary in combat scenarios. Its notable strengths lie in its ability to control the battlefield with storms, which can impede opponents' visibility and movements while providing itself with immunity to the effects of these conditions. The Storm Lord's offensive capabilities include strong melee and ranged attacks, but it can be vulnerable to certain types of damage, particularly magical attacks that bypass its resistances. Its challenge rating of 13 indicates it presents a significant challenge, making it an imposing figure for adventurers.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ Overall, the Storm Lord represents a significant threat on the battlefield with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Lord
 
 *Huge* *Elemental* *neutral*
@@ -76,5 +79,6 @@ Each creature that starts its turn within 30 feet of the storm lord must succeed
 - **Thunder Clap (Recharge 5-6):** The storm lord creates a peal of ear-splitting thunder. Each creature within 30 feet of the storm lord must make a DC 17 Constitution saving throw. On a failure, a target takes 54 (12d8) thunder damage and is deafened. On a success, a target takes half the damage but isn't deafened. The deafness lasts until it is lifted by the lesser restoration spell or similar magic.
 
 
+</statblock>
 
 

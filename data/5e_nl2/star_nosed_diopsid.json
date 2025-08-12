@@ -1,0 +1,51 @@
+{
+    "name": "Star-Nosed Diopsid",
+    "creature_type": "Aberration",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 153,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft. walking, 15 ft. burrowing, 30 ft. flying",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "poison",
+        "transformation"
+    ],
+    "adjectives": [
+        "formidable",
+        "magical",
+        "malevolent"
+    ],
+    "description": "The Star-Nosed Diopsid is a large aberration characterized by its star-like nose and unnatural appearance, often invoking fear in those who encounter it. It possesses a resilient physique and its body is designed for both agility and strength.",
+    "memorable": "This creature has the horrifying ability to transform humanoids into new diopsids, creating a cycle of terror and domination.",
+    "goals": "Typically seeks to control and corrupt humanoids, expanding its influence through transformation and manipulation.",
+    "relations": "Might be encountered alongside other aberrations or as a terrifying master of envenomed thralls.",
+    "environment": "Often found in dark, secluded areas with a focus on arcane influences, such as ancient ruins or underground lairs.",
+    "strengths": "Strong physical stats enable it to deal significant damage, and its Mutagenic Venom can incapacitate and dominate opponents.",
+    "weaknesses": "Susceptible to magical attacks, and its abilities rely heavily on proximity to envenomed creatures.",
+    "attacks": "Utilizes a fearsome stinger for piercing damage and powerful tentacles for bludgeoning damage and grappling.",
+    "most_powerful_ability": "Mutagenic Venom, which can reduce maximum hit points of a victim and eventually transform them into a diopsid.",
+    "senses": "Possesses tremorsense up to 60 feet, allowing it to detect vibrations in its surroundings.",
+    "skills": "Has a passive perception of 17, showcasing its keen awareness and ability to detect threats.",
+    "additional_information": [
+        "Can see through the senses of envenomed humanoids within 300 feet.",
+        "Can telepathically suggest actions to envenomed victims, manipulating their decisions.",
+        "Resistant to non-magical bludgeoning, piercing, and slashing damage.",
+        "Has high endurance and resilience in combat due to strong Constitution.",
+        "Can incapacitate opponents while simultaneously controlling them through its envenoming ability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster that transforms humanoids",
+        "aberration with magical venom and mind control",
+        "creature that uses poison to dominate foes",
+        "monster with lethal stinger and grappling tentacles",
+        "horror that turns victims into new creatures"
+    ]
+}

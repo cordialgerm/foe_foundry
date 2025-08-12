@@ -1,0 +1,25 @@
+{
+    "name": "Flying Snake",
+    "queries": [
+        {
+            "query": "tiny snake that can fly and escape attacks",
+            "variant": "tiny snake that flies and can escape attacks"
+        },
+        {
+            "query": "agile small monster that inflicts poison damage",
+            "variant": "agile small creature that damages with poison"
+        },
+        {
+            "query": "flying beast known for its speed and skirmishing ability",
+            "variant": "aerial beast recognized for speed and skirmishing skills"
+        },
+        {
+            "query": "snake with ability to avoid attacks and deliver poison",
+            "variant": "snake that can avoid attacks and deals poison damage"
+        },
+        {
+            "query": "small flying creature that relies on quickness in combat",
+            "variant": "small aerial creature that depends on speed in battle"
+        }
+    ]
+}

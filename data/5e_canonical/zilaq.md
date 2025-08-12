@@ -1,6 +1,8 @@
 <MonsterName/>Zilaq</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>Zilaq is a tiny, neutral dragon that serves as an intriguing and formidable presence on the battlefield. With an armor class of 15 and a considerable amount of hit points, totaling 82, Zilaq is able to withstand moderate amounts of damage while engaging opponents. This creature can walk at a speed of 30 feet and fly at an impressive speed of 60 feet, granting it exceptional mobility in combat. With a challenge rating of 4, Zilaq poses a moderate challenge for adventurers, rewarding a group with 1,100 experience points upon defeat. Notably, Zilaq possesses a range of special abilities and spells, enhancing its combat efficacy and strategic options, making it a well-rounded adversary.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, Zilaq is a strategically sound opponent, leveraging its mobility, intel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zilaq
 
 *Tiny* *Dragon* *neutral*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Phantasmal Oratory (1/Day):** Describes a creature so vividly it takes on a semblance of reality. Zilaq creates an illusory creature that resembles a Beast Monstrosity or Plant with CR 1 or less for 1 hr. The illusory creature moves and acts according to zilaq’s mental direction and takes its turn immediately after zilaq; uses statistics of creature it resembles except it can’t use traits actions or spells that force target to save.
 
 
+</statblock>
 
 

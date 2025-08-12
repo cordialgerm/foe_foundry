@@ -1,0 +1,25 @@
+{
+    "name": "Kech",
+    "queries": [
+        {
+            "query": "stealthy humanoid grappler in low-light environments",
+            "variant": "humanoid grappler that is stealthy and thrives in dim conditions"
+        },
+        {
+            "query": "medium sized creature with darkvision and ambush tactics",
+            "variant": "medium creature that uses ambush tactics and has darkvision"
+        },
+        {
+            "query": "strong and agile monster that uses grappling attacks",
+            "variant": "monster that grapples and is both strong and agile"
+        },
+        {
+            "query": "creature with abilities in athletics and stealth",
+            "variant": "a creature skilled in stealth and athletics"
+        },
+        {
+            "query": "low armor class humanoid that excels in surprise attacks",
+            "variant": "humanoid with low AC that performs well in surprise situations"
+        }
+    ]
+}

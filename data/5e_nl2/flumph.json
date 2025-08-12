@@ -1,0 +1,56 @@
+{
+    "name": "Flumph",
+    "creature_type": "Aberration",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 7,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "5 ft. on land, 30 ft. flying, 30 ft. swimming",
+    "role": "Support",
+    "tags": [
+        "aberration",
+        "amphibious",
+        "telepathy",
+        "supportive",
+        "quirky"
+    ],
+    "adjectives": [
+        "small",
+        "quirky",
+        "supportive",
+        "stealthy",
+        "amphibious"
+    ],
+    "description": "The Flumph is a small, floating creature resembling a jellyfish with a bulbous body and tendril-like appendages underneath. It can emit and change the color of light and has a whimsical, non-threatening appearance.",
+    "memorable": "Unique for its telepathic communication and ability to illuminate or conceal itself, the Flumph often plays a quirky, support role in adventures.",
+    "goals": "The Flumph typically seeks to gather information and support its allies rather than engage in combat.",
+    "relations": "Often encountered with other aberrations, particularly those that also utilize telepathy.",
+    "environment": "Typically found in underground waterways or areas where it can access both air and water.",
+    "strengths": "Good evasion capabilities due to high Dexterity and the ability to perceive telepathic messages.",
+    "weaknesses": "Very low Strength makes it inept in physical confrontations, and it has a vulnerability to psychic damage.",
+    "attacks": "Can make a melee attack with its tendrils, dealing piercing and acid damage. Also has a stench spray attack that poisons enemies.",
+    "most_powerful_ability": "Stench Spray, which can incapacitate foes and poison them while affecting others nearby.",
+    "equipment": null,
+    "senses": "The Flumph can perceive telepathic messages within 60 feet and is immune to effects that read its thoughts or emotions.",
+    "skills": null,
+    "additional_information": [
+        "Amphibious, able to breathe in both air and water.",
+        "Flumph Light ability allows it to illuminate and conceal itself.",
+        "Telepathic Spy feature grants immunity to divination effects pertaining to it.",
+        "Can become incapacitated if knocked prone but may right itself with a Dexterity saving throw.",
+        "Typically a non-combatant seeking to aid allies."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "quirky small jellyfish creature",
+        "supportive amphibious creature with telepathy",
+        "floating creature that emits light and poisons enemies",
+        "small monster with tendrils and stench spray",
+        "non-combatant creature that gathers information"
+    ]
+}

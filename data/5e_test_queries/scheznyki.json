@@ -1,0 +1,25 @@
+{
+    "name": "Scheznyki",
+    "queries": [
+        {
+            "query": "small chaotic evil fey creature that can turn invisible",
+            "variant": "small fey creature of chaotic evil that can become invisible"
+        },
+        {
+            "query": "creature with beard weakness and strong melee attacks",
+            "variant": "monster with a weakness related to its beard and powerful melee capabilities"
+        },
+        {
+            "query": "fey creature with magic resistance and strong hit points",
+            "variant": "fey monster that has resistance to magic and high hit points"
+        },
+        {
+            "query": "versatile combat fey with melee and spellcasting abilities",
+            "variant": "fey with abilities in melee combat and spellcasting that is versatile in battle"
+        },
+        {
+            "query": "Scheznyki fey with 135 HP and dangerous brute ability",
+            "variant": "fey named Scheznyki that has 135 hit points and a lethal brute trait"
+        }
+    ]
+}

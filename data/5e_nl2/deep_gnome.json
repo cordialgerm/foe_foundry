@@ -1,0 +1,53 @@
+{
+    "name": "Deep Gnome",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 23,
+    "ac": 15,
+    "srd": true,
+    "ac_description": "chain shirt",
+    "cr": "1/2",
+    "movement": "20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "underdark",
+        "gnome",
+        "stealth",
+        "cunning"
+    ],
+    "adjectives": [
+        "secretive",
+        "cautious",
+        "adaptable",
+        "pragmatic"
+    ],
+    "description": "The Deep Gnome has dark, stone-colored skin, allowing it to blend into its subterranean surroundings. They are skilled miners and craftsmen, known for their intricate machinery and traps.",
+    "memorable": "Skilled in stealth and magic, with abilities to confuse and incapacitate foes, making them formidable opponents despite their small size.",
+    "goals": "To mine precious gems and minerals while protecting their hidden cities from threats.",
+    "relations": "Often wary of outsiders, they may interact with other subterranean creatures or those seeking underground treasures.",
+    "environment": "Typically found in the Underdark, in hidden cities and mining sites.",
+    "strengths": "Exceptional at stealth, particularly in rocky terrain, and has advantages against magical attacks.",
+    "weaknesses": "Low Charisma score can hinder social interactions and persuasion attempts.",
+    "attacks": "Utilizes a War Pick for melee attacks and Crystalline Darts for ranged combat, dealing consistent piercing damage.",
+    "most_powerful_ability": "Discordant Shatter, which can incapacitate multiple enemies, especially effective against spellcasters.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, aiding in navigation through poorly lit environments.",
+    "skills": "Proficient in Stealth, allowing them to remain undetected during encounters.",
+    "additional_information": [
+        "Gnome Cunning grants advantage against magic saves.",
+        "Stone Camouflage enhances Stealth in rocky areas.",
+        "Uses infused crystals for offensive and defensive actions.",
+        "Crystalline Flash blinding reaction to incoming attacks.",
+        "Cunning hunters that excel in ambush tactics."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "secretive underground miner with stealth",
+        "gnome that excels in ambush tactics",
+        "pragmatic creature with advantages against magic",
+        "small stealthy creature from the Underdark",
+        "deep gnome with crystalline abilities and traps"
+    ]
+}

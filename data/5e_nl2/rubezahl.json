@@ -1,0 +1,56 @@
+{
+    "name": "Rubezahl",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "10",
+    "movement": "50 feet walking speed",
+    "role": null,
+    "tags": [
+        "fiend",
+        "lightning",
+        "chaotic",
+        "magic",
+        "deception"
+    ],
+    "adjectives": [
+        "chaotic",
+        "deceptive",
+        "powerful",
+        "formidable"
+    ],
+    "description": "Rubezahl is a medium fiend with a chaotic evil nature, notable for its exceptional physical abilities and deceitful character. It has a striking appearance characterized by malevolent energy and is adept in both physical combat and spellcasting.",
+    "memorable": "Rubezahl's unique 'Counting Compulsion' ability can debilitate foes by forcing it to count objects, creating strategic openings for attacks.",
+    "goals": "Rubezahl seeks to deceive others and employ its combat prowess to instill fear and chaos.",
+    "relations": "Rubezahl may be encountered alongside other fiends or chaos-oriented creatures, often acting as a manipulator or a leader.",
+    "environment": "Rubezahl can be typically found in chaotic environments, such as dark caverns or stormy regions where it can harness its lightning abilities.",
+    "strengths": "Rubezahl is immune to lightning and poison damage and has resistance to cold and fire, making it highly durable against various attacks.",
+    "weaknesses": "Despite its strengths, Rubezahl can be compelled to count objects, leaving it vulnerable to attacks during this distraction.",
+    "attacks": "Rubezahl can perform a multiattack including piercing Gore attacks and slashing Claw strikes, dealing both slashing and lightning damage.",
+    "most_powerful_ability": "Thunderstrike allows Rubezahl to call down lightning to strike a wide area, stunning opponents with devastating damage.",
+    "equipment": null,
+    "senses": "Rubezahl has blindsight up to 10 feet and can see in darkness up to 120 feet.",
+    "skills": "Rubezahl excels in deception and possesses significant skills in survival and perception.",
+    "additional_information": [
+        "Advantage on saving throws against spells due to Magic Resistance.",
+        "False Tongue ability ensures its lies are 'magically' perceived as truth.",
+        "Highly mobile with a speed of 50 feet.",
+        "Exceptional Charisma score enhances spellcasting and social interactions.",
+        "Capable of casting spells that alter the battlefield."
+    ],
+    "damage_types": [
+        "lightning",
+        "psychic"
+    ],
+    "spellcasting": "Rubezahl can cast spells requiring Charisma, including disguise self and fog cloud at will, and control weather once per day.",
+    "test_queries": [
+        "chaotic evil fiend with lightning powers",
+        "deceptive monster that can teleport storms",
+        "fiend using thunder and deception",
+        "medium fiend with counting obsession",
+        "powerful fiend casting spells in battle"
+    ]
+}

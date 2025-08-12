@@ -1,0 +1,52 @@
+{
+    "name": "Bilge Bosun Gremlin",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed of 30 feet, climbing speed of 20 feet, and swimming speed of 30 feet",
+    "role": "disruptor",
+    "tags": [
+        "gremlin",
+        "fey",
+        "chaotic",
+        "disruption"
+    ],
+    "adjectives": [
+        "cunning",
+        "malevolent",
+        "chaotic"
+    ],
+    "description": "A small fey creature known for its chaotic nature, the Bilge Bosun Gremlin is characterized by its adaptability to moist environments, possessing both amphibious traits and a knack for causing mischief.",
+    "memorable": "The Aura of Mechanical Mishap creates chaos among enemies, as nonmagical devices malfunction within a 20-foot radius.",
+    "goals": "To create misfortune and disrupt opponents' equipment during encounters.",
+    "relations": "May be found alongside other fey creatures or in environments prone to chaos and mischief.",
+    "environment": "Typically thrives in moist environments, both aquatic and terrestrial.",
+    "strengths": "High dexterity allows for nimble movements and effective multiattacks, combined with immunity to disease.",
+    "weaknesses": "Average physical strength and wisdom weaken its capability in direct confrontations.",
+    "attacks": "Bite attack that deals piercing and poison damage, and Makeshift Weapon attacks that can be used at melee or ranged.",
+    "most_powerful_ability": "Aura of Mechanical Mishap, which creates malfunctioning mayhem around it.",
+    "senses": "Possesses darkvision up to 120 feet.",
+    "skills": "Does not excel in perception, having a passive perception score of 10.",
+    "additional_information": [
+        "Has a clever strategy for ambushing foes.",
+        "Relies on causing confusion in battle.",
+        "Can repair malfunctioning devices with a successful Intelligence check.",
+        "Utilizes its unique abilities to enhance combat tactics.",
+        "Known to be particularly difficult for adventurers relying on nonmagical devices."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic small fey creature",
+        "gremlin with aura of malfunctioning devices",
+        "cunning amphibious monster that disrupts",
+        "small creature immune to disease and poisons",
+        "gremlin that creates mechanical chaos"
+    ]
+}

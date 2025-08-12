@@ -1,6 +1,8 @@
 <MonsterName/>Two-Headed Eagle</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>142</HP>
 <summary>The Two-Headed Eagle is a formidable Huge Monstrosity known for its agility and strength in combat. With a high Armor Class of 15 and substantial Hit Points totaling 142, it presents a significant challenge for adventurers. The creature is unaligned and primarily relies on its flying capabilities, able to fly at a speed of 100 feet while also being able to walk at 20 feet. With a Challenge Rating of 7, it offers 2,900 experience points upon defeat. Notable characteristics of the Two-Headed Eagle include its impressive physical attributes, reflected in a strong Strength of 20, exceptional Dexterity of 21, and solid Constitution of 16, making its performance in combat very good. However, its Intelligence is low at 6, indicating bad mental capability, while its Wisdom and Charisma are average, at 12 and 14 respectively.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Two-Headed Eagle combines aerial agility, strong physical attacks, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Two-Headed Eagle
 
 *Huge* *Monstrosity* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the two-headed eagle can't use its talons on another target.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Mei Jiao Shou</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>139</HP>
 <summary>The Mei Jiao Shou is a gargantuan beast that serves as a formidable opponent in combat scenarios. With a Challenge Rating of 7, it possesses significant strengths thanks to its high damage potential and formidable physical presence. It features exceptionally high Strength and Constitution scores, ensuring it can deliver powerful attacks and sustain considerable damage. However, its Dexterity is notably low, rendering it vulnerable to ranged attacks and dexterous maneuvers. The creature’s role primarily revolves around physical dominance, often utilizing its size and strength to create chaos on the battlefield. Players must approach it with caution, considering both its devastating melee attacks and the ability to control the terrain around it.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Mei Jiao Shou has a potent area attack called Earth-Shaking Th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mei Jiao Shou
 
 *Gargantuan* *Beast* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Earth-Shaking Thump (Recharge 5-6):** The mei jiao shou rears up and lands heavily, kicking up a shower of debris and rattling and cracking the ground. Each creature in contact with the ground within 30 feet of the mei jiao shou must make a DC 16 Dexterity saving throw. On a failure, a creature takes 22 (4d10) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone. The area then becomes difficult terrain.
 
 
+</statblock>
 
 

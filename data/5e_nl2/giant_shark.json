@@ -1,0 +1,49 @@
+{
+    "name": "Giant Shark",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 13,
+    "srd": true,
+    "cr": "5",
+    "movement": "swim 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "ocean"
+    ],
+    "adjectives": [
+        "immense",
+        "relentless",
+        "aggressive"
+    ],
+    "description": "The Giant Shark is an enormous predator known for its immense size, razor-sharp teeth, and powerful jaws. Typically found in deep ocean waters, it has a sleek, hydrodynamic body designed for speed in pursuit of prey.",
+    "memorable": "The shark can detect blood from miles away, making it an unyielding hunter of injured creatures.",
+    "goals": "To hunt and consume any prey that crosses its path, including ships and large sea creatures.",
+    "relations": "Often encountered alongside other sea creatures, and poses a threat to adventurers who venture into its territory.",
+    "environment": "Deep ocean waters.",
+    "strengths": "Exceptional strength and constitution, allowing it to deal significant damage and endure attacks in combat.",
+    "weaknesses": "Inability to breathe out of water limits it to underwater engagements.",
+    "attacks": "Can execute a multiattack with powerful bite and tail attacks, dealing substantial damage with each hit.",
+    "most_powerful_ability": "Blood Frenzy grants it advantage on melee attacks against wounded foes, making it particularly dangerous when prey is hurt.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures and objects without light, enhancing its ambush capabilities.",
+    "skills": "Has notable Perception skills, aiding it in noticing threats and prey.",
+    "additional_information": [
+        "Water Breathing ability restricts it to aquatic environments.",
+        "Blood Sense allows it to track wounded creatures within 120 feet.",
+        "Swift Hunter ability lets it close gaps quickly in combat.",
+        "Electricity sensitivity may incapacitate it temporarily when hit by lightning.",
+        "High damage output potential through multi-attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive predator of the deep",
+        "shark found in the ocean that hunts injured prey",
+        "relentless underwater hunter with sharp teeth",
+        "aggressive aquatic beast with blood sense",
+        "giant sea creature that attacks ships"
+    ]
+}

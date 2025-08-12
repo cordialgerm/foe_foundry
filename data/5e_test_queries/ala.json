@@ -1,0 +1,25 @@
+{
+    "name": "Ala",
+    "queries": [
+        {
+            "query": "flying poison creature with lightning attacks",
+            "variant": "lightning attacking flying poison creature"
+        },
+        {
+            "query": "medium fey monster that uses Multiattack and is chaotic evil",
+            "variant": "chaotic evil medium fey that has Multiattack ability"
+        },
+        {
+            "query": "creature with high Strength and decent Dexterity in electrical storms",
+            "variant": "strong and agile creature that thrives during electrical storms"
+        },
+        {
+            "query": "Ala's Combat abilities and damage immunities",
+            "variant": "combat skills and damage immunity of the Ala"
+        },
+        {
+            "query": "monster with Flyby ability and Poisonous Flesh attack",
+            "variant": "creature that has a Flyby skill and can use Poisonous Flesh"
+        }
+    ]
+}

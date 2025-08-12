@@ -1,0 +1,51 @@
+{
+    "name": "Deathweaver",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 95,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 feet walking and climbing",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "necrotic",
+        "web",
+        "zombie"
+    ],
+    "adjectives": [
+        "malevolent",
+        "deceptive",
+        "powerful"
+    ],
+    "description": "The Deathweaver is a huge monstrosity with a fearsome appearance, capable of climbing surfaces easily and utilizing its webs to ensnare foes. Its body is associated with necrotic energies, enhancing its dark capabilities.",
+    "memorable": "Its ability to create web zombies from slain foes makes the Deathweaver a terrifying opponent, capable of building an army during combat.",
+    "goals": "To ambush and ensnare adventurers, utilizing traps and necrotic magic to weaken foes and control the battlefield.",
+    "relations": "Typically related to other web-based creatures and undead, like spiders and zombies.",
+    "environment": "Often found in dark, web-laden areas such as caves or ruins.",
+    "strengths": "Blindsight allows it to detect creatures in the dark, while its web sense gives it unparalleled awareness in web-filled environments.",
+    "weaknesses": "Vulnerable to fire damage, which can destroy its webbing and damage it significantly.",
+    "attacks": "The Deathweaver can execute swift and deadly bite attacks alongside the ability to ensnare enemies in magical webs.",
+    "most_powerful_ability": "Vampiric Touch allows it to heal itself while damaging an opponent, making it a formidable foe in prolonged encounters.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 20 feet, enabling it to detect creatures without relying on sight.",
+    "skills": "Has high proficiency in stealth, enabling effective ambush tactics, and decent perception for awareness.",
+    "additional_information": [
+        "Can create zones of Darkness to hinder enemy visibility.",
+        "Utilizes webbing to restrain and damage opponents each turn.",
+        "Can create undying minions if foes are killed by its webs."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast necrotic-related spells like Chill Touch, Darkness, and Vampiric Touch without physical components.",
+    "test_queries": [
+        "huge monster that creates web zombies",
+        "monster that uses webs and necrotic magic",
+        "ambush creature with powerful bite attacks",
+        "dark creature that climbs and traps enemies",
+        "malevolent creature with blindsight and web sense"
+    ]
+}

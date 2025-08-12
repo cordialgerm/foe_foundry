@@ -1,6 +1,8 @@
 <MonsterName/>Lambent Witchfyre</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Lambent Witchfyre is a large aberration that exists with an unaligned nature. It stands out in combat due to its unique fire-based abilities, making it a formidable opponent against enemies lacking fire resistance or immunity. With a respectable challenge rating of 7, it has significant hit points totaling 110, supported by its high Constitution, which offers good survivability. While it lacks intelligence and charisma, rendering it somewhat socially inept, its Dexterity grants it good agility, allowing for effective attacks. However, its Wisdom is average, indicating it won't easily perceive danger. The Witchfyre's main strengths lie in its immunities to fire and poison, as well as its ability to regain health through fire damage, making it especially difficult to take down if opponents are unprepared for its flame-based mechanics.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Lambent Witchfyre's combination of immunities, regenerating abiliti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lambent Witchfyre
 
 *Large* *Aberration* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Blazing Touch:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns. If a creature is slain by this attack, the lambent witchfyre regains hp equal to the damage dealt. The body of a creature slain by this attack turns to ash, along with any nonmagical items it was wearing or carrying. The creature can be restored to life only by means of a resurrection or wish spell.
 
 
+</statblock>
 
 

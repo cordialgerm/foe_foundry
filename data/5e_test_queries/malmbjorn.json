@@ -1,0 +1,25 @@
+{
+    "name": "Malmbjorn",
+    "queries": [
+        {
+            "query": "large burrowing monster with high strength and keen sense of smell",
+            "variant": "big monster that burrows and has a strong sense of smell and high strength"
+        },
+        {
+            "query": "huge creature immune to cold and vulnerable to acid",
+            "variant": "big creature that takes extra damage from acid and immune to cold"
+        },
+        {
+            "query": "monstrosity that can swallow metal and grapples opponents",
+            "variant": "monster that eats metal and can grapple its enemies"
+        },
+        {
+            "query": "predator with natural armor and powerful melee attacks",
+            "variant": "hunter that has natural armor and strong melee attack options"
+        },
+        {
+            "query": "Malmbjorn abilities including Tunneler and Metal Eater",
+            "variant": "abilities of Malmbjorn like Tunneler and Metal Eater"
+        }
+    ]
+}

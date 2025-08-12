@@ -1,0 +1,52 @@
+{
+    "name": "Hoard Golem",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "guardian",
+        "treasure",
+        "construct"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "magical"
+    ],
+    "description": "The Hoard Golem is a massive construct designed as a guardian of wealth, with natural armor, impressive strength, and a body that can absorb valuable items.",
+    "memorable": "It has the ability to create a whirlwind of treasures while incapacitating foes, making it a unique challenger for treasure-seekers.",
+    "goals": "To protect treasure hoards and disable intruders.",
+    "relations": "Often found guarding treasure vaults, it may relate to other constructs or magical guardians.",
+    "environment": "Locations where vast riches are stored, like treasure hoards or vaults.",
+    "strengths": "Resistance to multiple damage types and immunity to various conditions.",
+    "weaknesses": "Low intelligence and charisma limit its effectiveness in cleverness or social situations.",
+    "attacks": "Can make two powerful Slam attacks, dealing heavy bludgeoning and additional force damage.",
+    "most_powerful_ability": "Thieving Whirlwind can inflict significant bludgeoning damage and steal valuable objects from enemies.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet and a passive perception of 14.",
+    "skills": "Proficient in Athletics and has average perception skills.",
+    "additional_information": [
+        "Enchanted weapons add extra force damage.",
+        "Immutable form provides immunity to alterations.",
+        "Magic resistance grants advantage against spells.",
+        "Strike with Awe ability debuffs nearby creatures.",
+        "Does not require food, air, or sleep."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct guardian of treasure",
+        "huge magical golem protecting wealth",
+        "intimidating entity in treasure vaults",
+        "towering defender of riches and loot",
+        "golem that steals valuable items"
+    ]
+}

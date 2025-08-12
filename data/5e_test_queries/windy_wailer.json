@@ -1,0 +1,25 @@
+{
+    "name": "Windy Wailer",
+    "queries": [
+        {
+            "query": "large undead creature with chilling attacks and flight ability",
+            "variant": "large undead monster that can fly and has chilling attacks"
+        },
+        {
+            "query": "cold energy creature that mesmerizes opponents and flies",
+            "variant": "creature that flies and mesmerizes foes using cold energy"
+        },
+        {
+            "query": "psychological creature that can incapacitate with Ghostlight and inflicts cold damage",
+            "variant": "creature that incapacitates using Ghostlight and deals cold damage"
+        },
+        {
+            "query": "undead monster with white hair mark and ability to frighten",
+            "variant": "undead creature that frightens and leaves a mark of white hair"
+        },
+        {
+            "query": "creature that relies on intimidation and is weak to radiant damage",
+            "variant": "monster that is weak to radiant damage and relies on intimidation"
+        }
+    ]
+}

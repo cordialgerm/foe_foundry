@@ -1,0 +1,25 @@
+{
+    "name": "Brownie Mystic",
+    "queries": [
+        {
+            "query": "small fey creature known for magic and healing",
+            "variant": "tiny fey known for magic and healing capabilities"
+        },
+        {
+            "query": "invisible spellcasting fey that can talk to animals",
+            "variant": "fey that can talk to beasts and turn invisible while casting spells"
+        },
+        {
+            "query": "agile creature with magic resistance and high dexterity",
+            "variant": "creature with high agility, magic resistance, and exceptional dexterity"
+        },
+        {
+            "query": "Brownie Mystic abilities to heal and cast spells",
+            "variant": "abilities to cast spells and heal of the Brownie Mystic"
+        },
+        {
+            "query": "fey with decent armor class that uses mystic staff",
+            "variant": "fey creature that uses mystic staff and has good armor class"
+        }
+    ]
+}

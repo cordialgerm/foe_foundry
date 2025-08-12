@@ -1,0 +1,53 @@
+{
+    "name": "Adult Imperial Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 297,
+    "ac": 19,
+    "srd": false,
+    "cr": "20",
+    "movement": "fly 80 ft., walk 40 ft., swim 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "mythical",
+        "powerful"
+    ],
+    "adjectives": [
+        "majestic",
+        "formidable",
+        "intelligent"
+    ],
+    "description": "The Adult Imperial Dragon is a vast and powerful creature with shimmering scales and imposing features. It has a strong, muscular build, and its size and presence command authority. The dragon wields a fearsome bite, claws, and a long tail, showcasing its strength.",
+    "memorable": "The dragon has the ability to charm creatures with its Mesmerizing Presence, and it can unleash a devastating Lightning Breath attack, making it both beautiful and deadly.",
+    "goals": "Typically seeks power, dominance, and control over territories or creatures.",
+    "relations": "Usually encountered in the company of other dragons or as a master to lesser creatures.",
+    "environment": "Can be found in mountainous regions, coastal areas, and near deep water.",
+    "strengths": "It has high physical and magical capabilities, with significant damage immunities and impressive spellcasting skills.",
+    "weaknesses": "Relatively low Dexterity makes it less agile than other creatures.",
+    "attacks": "The dragon can perform multiattack actions using its dangerous bite, claws, and tail, along with charming nearby foes.",
+    "most_powerful_ability": "The ability to exhale devastating lightning breath in a wide line, causing massive damage to multiple targets.",
+    "equipment": null,
+    "senses": "The dragon possesses blindsight and has an exceptional passive Perception score of 25, allowing it to detect enemies effectively.",
+    "skills": "It is proficient in Arcana, History, Insight, and has high Perception, showcasing its intelligence and awareness.",
+    "additional_information": [
+        "Innate spellcaster with a DC of 18 for spell save.",
+        "Amphibious; can breathe in both air and water.",
+        "Legendary Resistance allows it to shrug off failed saving throws.",
+        "Change Shape ability grants it versatility in form.",
+        "Truespeak enables it to communicate with any creature."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Can innately cast spells without material components, including fog cloud, control weather, and others.",
+    "test_queries": [
+        "powerful mystical dragon",
+        "majestic dragon with lightning breath",
+        "huge dragon capable of changing shape",
+        "adult dragon with mesmerizing presence",
+        "water and air breathing dragon"
+    ]
+}

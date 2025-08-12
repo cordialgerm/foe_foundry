@@ -1,0 +1,11 @@
+{
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "The Nihilethic Zombie is an undead creature with a similar base form and role as a Zombie, but with additional void-themed abilities and form-shifting."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "Its ability to shift into a ghostly void form and use necrotic withering touch resembles the intangible nature and attacks of a Ghost."
+  },
+  "monster_key": "nihilethic-zombie"
+}

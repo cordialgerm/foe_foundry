@@ -1,0 +1,55 @@
+{
+    "name": "Spawn of Arbeyach",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 17,
+    "srd": false,
+    "cr": "5",
+    "movement": "walks at a slow speed of 20 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "evil",
+        "poison",
+        "insects"
+    ],
+    "adjectives": [
+        "poisonous",
+        "strategic",
+        "darkvision-enabled",
+        "natural armored",
+        "resilient"
+    ],
+    "description": "The Spawn of Arbeyach is a Medium fiend with natural armor and a formidable appearance characterized by its fiendish traits, possessing strong physical attributes.",
+    "memorable": "Its ability to summon swarms of insects and incapacitate foes with poison makes it uniquely dangerous.",
+    "goals": "Typically seeks to dominate its opponents and manipulate the battlefield to its advantage.",
+    "relations": "May be encountered alongside other fiends or insect swarms as allies.",
+    "environment": "Often found in infernal realms or dark, cursed locations.",
+    "strengths": "Highly resistant to fire and poison, with magic resistance from spells and magical effects.",
+    "weaknesses": "Relatively low movement speed limits its mobility in combat.",
+    "attacks": "Utilizes a bite attack for piercing damage enhanced with poison and a stinger attack that also delivers lethal poison effects.",
+    "most_powerful_ability": "Children of Arbeyach allows it to call upon swarms of insects for assistance in battle.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, enhancing its ability to detect threats even in obscured areas.",
+    "skills": "Skilled in Perception and Stealth, providing it advantages in noticing hidden dangers and sneaking.",
+    "additional_information": [
+        "Immunities to fire damage and poisoned condition.",
+        "Advantage on initiative rolls and Wisdom (Perception) checks when near hive members.",
+        "Can communicate with insects, offering strategic possibilities.",
+        "Magic resistance grants it resilience against spells.",
+        "Can inflict poison status on its enemies, requiring saves to escape the effect."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that commands swarms of insects",
+        "poisonous monster with darkvision",
+        "lawful evil creature using hive tactics",
+        "medium fiend with bite and stinger attacks",
+        "creature resistant to fire and magic"
+    ]
+}

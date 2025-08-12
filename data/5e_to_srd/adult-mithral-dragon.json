@@ -1,0 +1,11 @@
+{
+  "Adult Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are majestic, metallic dragons with magical abilities and a focus on agility and spell resistance."
+  },
+  "Adult Brass Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a metallic dragon with a unique breath weapon and a majestic presence."
+  },
+  "monster_key": "adult-mithral-dragon"
+}

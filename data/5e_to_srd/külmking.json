@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The K\u00fclmking is a large, powerful undead with abilities to corrupt souls and create more of its kind, similar to a Wight's soul-draining and undead creation."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "The incorporeal movement and menacing presence of the K\u00fclmking resemble the spectral nature of a Wraith."
+  },
+  "monster_key": "k\u00fclmking"
+}

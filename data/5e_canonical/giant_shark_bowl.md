@@ -1,6 +1,8 @@
 <MonsterName/>Giant Shark Bowl</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>8</CR>
+<AC/>6</AC>
+<HP/>172</HP>
 <summary>The Giant Shark Bowl is a formidable creature categorized as a Huge ooze with a Challenge Rating of 8. This creature boasts a remarkable 172 hit points, making it a sturdy opponent that can withstand significant damage in combat. Its defensive capabilities are somewhat limited with an Armor Class of only 6, which suggests that it can be hit easily. However, it possesses several strong offensive abilities, particularly its Blood Frenzy, which grants it an advantage when attacking weakened foes. The Giant Shark Bowl's unique combination of traits makes it a potent threat, especially as it engages enemies in close quarters. The creature's ability to engulf smaller creatures and deal continuous damage to them while restraining them makes it dangerous in the right conditions. It is, however, weak against certain attack types, as it has moderate damage resistances and immunities, which can be exploited by careful players.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Giant Shark Bowl relies heavily on its ability to control the battl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Shark Bowl
 
 *Huge* *Ooze* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Engulf:** The giant shark bowl moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the bowl enters a creature's space, the creature must make a DC 16 Dexterity saving throw. <br><br>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the bowl. A creature that chooses not to be pushed suffers the consequences of a failed saving throw. <br><br>On a failed save, the bowl enters the creature's space, and the creature takes 22 (3d10 + 6) piercing damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 22 (3d10 + 6) piercing damage at the start of each of the bowl's turns. When the bowl moves, the engulfed creature moves with it. <br><br>An engulfed creature can try to escape by taking an action to make a DC 15 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the bowl.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "P\u00faca",
+    "queries": [
+        {
+            "query": "large fey creature that charms travelers",
+            "variant": "large fey monster that charms people"
+        },
+        {
+            "query": "manipulative creature with a beguiling aura and cold iron vulnerability",
+            "variant": "creature that manipulates with a charm aura and is weak to cold iron"
+        },
+        {
+            "query": "neutral evil creature with high Strength and Charisma",
+            "variant": "neutral evil monster that has a high Charisma and Strength"
+        },
+        {
+            "query": "P\u00faca abilities like Nightmarish Ride and Multiattack",
+            "variant": "puca powers such as Nightmarish Ride and Multiattack"
+        },
+        {
+            "query": "fey creature that paralyzes mount and travels through nightmares",
+            "variant": "fey monster that can paralyze its rider and goes through nightmare land"
+        }
+    ]
+}

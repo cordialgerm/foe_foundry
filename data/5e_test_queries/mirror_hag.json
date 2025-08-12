@@ -1,0 +1,25 @@
+{
+    "name": "Mirror Hag",
+    "queries": [
+        {
+            "query": "fey creature that can manipulate forms and has a nasty curse",
+            "variant": "fey monster that can manipulate forms and has nasty curses"
+        },
+        {
+            "query": "medium-sized hag known for incapacitating foes with true form",
+            "variant": "medium hag known for incapacitating enemies with her true form"
+        },
+        {
+            "query": "chaotic neutral mirror hag with spellcasting and high constitution",
+            "variant": "chaotic neutral mirror hag with high con and spellcasting abilities"
+        },
+        {
+            "query": "hag that uses confounding ugliness and has resistance to thunder",
+            "variant": "hag that wields confounding ugliness and resists thunder"
+        },
+        {
+            "query": "mirror hag that flies and has necrotic damage attacks",
+            "variant": "mirror hag that can fly and delivers necrotic attacks"
+        }
+    ]
+}

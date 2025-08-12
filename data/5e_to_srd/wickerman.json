@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs animated for combat, though the Wickerman is much larger and fire-based."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Wickerman is a fiery construct with ongoing fire damage and vulnerability to cold, similar to a Fire Elemental's flame nature."
+  },
+  "monster_key": "wickerman"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Venomous Snake",
+    "queries": [
+        {
+            "query": "small snake with poisonous bite that swims",
+            "variant": "tiny snake that swims and has a venomous bite"
+        },
+        {
+            "query": "tiny snake that inflicts poison damage",
+            "variant": "small snake that deals poison damage"
+        },
+        {
+            "query": "creature with blindsight and venomous capabilities",
+            "variant": "animal with blindsight and ability to poison"
+        },
+        {
+            "query": "swimming snake with low hit points and bite attack",
+            "variant": "snake that swims, has low health, and a biting attack"
+        },
+        {
+            "query": "poisonous beast that is unaligned and has low armor",
+            "variant": "venomous creature that is not aligned and has low AC"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "The Greed Swarm is a flying swarm construct similar in nature to swarms of small creatures like the Swarm of Insects."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs animated by magic, with the Greed Swarm being a treasure-themed construct."
+  },
+  "monster_key": "greed-swarm"
+}

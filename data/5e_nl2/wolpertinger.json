@@ -1,0 +1,50 @@
+{
+    "name": "Wolpertinger",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 9,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "burrow 10 ft., fly 30 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "quirky",
+        "agile"
+    ],
+    "adjectives": [
+        "tiny",
+        "elusive",
+        "whimsical"
+    ],
+    "description": "The Wolpertinger is a tiny monstrosity with a blend of whimsical features, capable of impressive jumps and possessing agility.",
+    "memorable": "Its unique charge ability and keening shriek can affect combat dynamics significantly, providing a quirky challenge.",
+    "goals": "To surprise and confuse adventurers, potentially causing chaos in encounters.",
+    "relations": "Might coexist with other small creatures or fey-like beings.",
+    "environment": "Often found in forested areas or locations suited for agile creatures.",
+    "strengths": "Can fly, burrow, and has a charge attack that deals extra damage.",
+    "weaknesses": "Low strength and intelligence, limiting physical power and cognitive capabilities.",
+    "attacks": "Can inflict piercing damage with Bite and Gore attacks, and emit a deafening shriek with its Keening ability.",
+    "most_powerful_ability": "Keening, which can deafens foes and frightens weaker beasts within earshot.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and has a passive perception score of 11.",
+    "skills": null,
+    "additional_information": [
+        "Charge attack enhances damage",
+        "Exceptional movement options due to Flyby",
+        "Can jump great distances with Standing Leap",
+        "Low hit points make it vulnerable despite agility",
+        "Provides unique challenges in low-level encounters"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny whimsical creature that can fly",
+        "agile monster that jumps high and shrieks",
+        "elusive creature that can burrow and charge",
+        "quirky undermountain monster with keen abilities",
+        "fey-like tiny creature with unique combat tactics"
+    ]
+}

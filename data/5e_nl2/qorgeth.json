@@ -1,0 +1,55 @@
+{
+    "name": "Qorgeth",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Gargantuan",
+    "hp": 370,
+    "ac": 21,
+    "srd": false,
+    "cr": "23",
+    "movement": "walk 30 ft., burrow 50 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "gargantuan",
+        "chaotic",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "dangerous",
+        "powerful"
+    ],
+    "description": "A gargantuan fiend with robust natural armor, Qorgeth embodies chaos and evil, enhancing its formidable presence in battle.",
+    "memorable": "Qorgeth's ability to swallow creatures and manipulate the battlefield with burrowing and spells makes it a uniquely terrifying foe.",
+    "goals": "To dominate opponents in battle, utilizing physical attacks and spellcasting.",
+    "relations": "Might be encountered alongside other fiends or manipulative creatures that leverage chaos.",
+    "environment": "Typically found in areas of great destruction or chaos, often haunting subterranean lairs.",
+    "strengths": "Damage immunities to multiple weapon types, exceptional offensive capabilities, and battlefield manipulation through burrowing.",
+    "weaknesses": "Notably low Dexterity hampers its ability to evade attacks.",
+    "attacks": "Multiattack consisting of powerful Bite, Crush, and Stinger attacks, each with significant damage potential.",
+    "most_powerful_ability": "The ability to swallow enemies, leading to blinding, restraining effects and necrotic damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight and tremorsense both extending 120 feet, allowing it to detect creatures without vision.",
+    "skills": "Highly perceptive with a +13 modifier in Perception, making it adept at noticing threats.",
+    "additional_information": [
+        "Immune to poison damage and nonmagical bludgeoning, piercing, and slashing damage.",
+        "Three uses of Legendary Resistance daily enhance its durability against spells.",
+        "Magic Resistance gives advantage on saving throws against magical effects.",
+        "Can create 15-foot-diameter tunnels by burrowing through solid rock.",
+        "Can cast a variety of potent spells, including earthquake once per day."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": "Can cast at will black tentacles and detect magic; dispel magic and insect plague thrice daily; and earthquake and teleport once per day.",
+    "test_queries": [
+        "gargantuan fiend with burrowing ability",
+        "chaotic evil monster that swallows enemies",
+        "powerful fiend with legendary resistance",
+        "creature with blindsight and spellcasting",
+        "fiend with strong physical attacks and spells"
+    ]
+}

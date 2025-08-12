@@ -1,0 +1,52 @@
+{
+    "name": "Goblin Musketeer",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 10,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walks 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "ranged",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "tricky",
+        "small"
+    ],
+    "description": "The Goblin Musketeer is a small, agile humanoid adept at ranged combat, often working in tandem with fellow goblins to maximize their effectiveness. It carries a musket and wields a shortsword for close encounters.",
+    "memorable": "Its ability to coordinate with another musketeer to increase attack effectiveness makes it a clever and agile opponent.",
+    "goals": "Typically seeks to ambush and attack from a distance while avoiding direct confrontation.",
+    "relations": "Often found among groups of goblins or as part of a tactical ambush.",
+    "environment": "Commonly located in forests, dungeons, or areas where goblins reside.",
+    "strengths": "Skilled in stealth and able to deliver significant damage from a distance with a musket.",
+    "weaknesses": "Fragile due to low hit points, struggles in melee combat, and vulnerable to direct attacks.",
+    "attacks": "Utilizes a musket for strong ranged attacks dealing 10 piercing damage and occasionally engages with a shortsword in close combat.",
+    "most_powerful_ability": "The ability to coordinate with another goblin musketeer to gain advantage on ranged attack rolls.",
+    "equipment": "Musket and shortsword.",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in low-light conditions.",
+    "skills": "Has a proficiency in stealth, resulting in a +3 modifier.",
+    "additional_information": [
+        "Cooperates effectively with other goblin musketeers for coordinated attacks.",
+        "Can use Nimble Escape to disengage or hide as a bonus action.",
+        "Low strength makes it weak in melee confrontations.",
+        "Average Constitution means it withstands minimal damage.",
+        "Considered a low-level adversary, yet effective in groups."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile goblin with a musket",
+        "tricky ranged attacker in forest",
+        "goblin skilled in stealth attacks",
+        "goblin musketeer ambush tactics",
+        "quick goblin with ranged attacks"
+    ]
+}

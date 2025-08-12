@@ -1,0 +1,25 @@
+{
+    "name": "Crimson Jelly",
+    "queries": [
+        {
+            "query": "tiny transparent ooze that can fly and swim",
+            "variant": "small clear ooze that swims and flies"
+        },
+        {
+            "query": "jelly creature with blood sense and amorphous ability",
+            "variant": "jelly-like monster with blood sensing and shape-changing power"
+        },
+        {
+            "query": "creature that drains memories and is immune to exhaustion",
+            "variant": "monster that takes away memories and can't get tired"
+        },
+        {
+            "query": "invisible ooze that is hard to detect in dim light",
+            "variant": "unseen ooze which is tricky to find in low lighting"
+        },
+        {
+            "query": "necrotic damage dealer that can reproduce itself",
+            "variant": "damage inflicting jelly that can split and create copies"
+        }
+    ]
+}

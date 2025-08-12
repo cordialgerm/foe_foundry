@@ -1,0 +1,55 @@
+{
+    "name": "Giant Earth Elemental",
+    "creature_type": "Elemental",
+    "alignment": null,
+    "size": "Large",
+    "hp": 157,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walking 30 feet, burrowing 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "earth",
+        "elemental",
+        "large",
+        "durable",
+        "siege"
+    ],
+    "adjectives": [
+        "formidable",
+        "sturdy",
+        "slow",
+        "powerful"
+    ],
+    "description": "The Giant Earth Elemental embodies the raw power of the earth with a robust, large form, featuring a rocky exterior and a solid, imposing presence.",
+    "memorable": "It can burrow through earth without a trace and grapple opponents effectively.",
+    "goals": "Typically acts as a frontline defender or siege engine against fortifications.",
+    "relations": "Related to other elemental creatures and may serve as a guardian or protector of earth-related locations.",
+    "environment": "Found in underground areas, caves, or rocky terrains.",
+    "strengths": "High durability, effective melee and ranged attacks, and unique burrowing ability.",
+    "weaknesses": "Low Dexterity makes it vulnerable to agile opponents.",
+    "attacks": "Can perform strong melee slam attacks and a grappling embrace, as well as ranged rock throws.",
+    "most_powerful_ability": "Earth Glide allows it to move through earth and stone stealthily and tactically.",
+    "equipment": null,
+    "senses": "It has a passive Perception of 10, indicating limited sensory perception.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to poison and several conditions.",
+        "Resistant to damage from nonmagical weapons.",
+        "Ability to deal double damage to objects with Siege Monster.",
+        "Does not require air, food, or sleep.",
+        "Can grapple and maintain advantage on attacks against grappled targets."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive earth creature with burrowing ability",
+        "powerful elemental that can grapple enemies",
+        "stone giant known for siege tactics",
+        "earth elemental with high durability in combat",
+        "defender creature that excels at melee attacks"
+    ]
+}

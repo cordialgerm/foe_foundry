@@ -1,0 +1,11 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "A stealthy humanoid skilled in ambush and precision attacks with weapons like dagger and longbow."
+  },
+  "Drow": {
+    "relation": "conceptually_similar",
+    "explanation": "A shadowy humanoid with fey ancestry, sensitive to sunlight, and adept at stealth and poison attacks."
+  },
+  "monster_key": "forest-hunter"
+}

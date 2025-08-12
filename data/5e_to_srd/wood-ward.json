@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs serving as guardians with physical attacks."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are natural-themed guardians made of plant material protecting natural areas."
+  },
+  "monster_key": "wood-ward"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "White Stag",
+    "queries": [
+        {
+            "query": "large celestial creature with mobility in forests and curse abilities",
+            "variant": "large creature with celestial nature that moves easily in forests and has curse powers"
+        },
+        {
+            "query": "creature that can jump long distances and bestows curses upon death",
+            "variant": "monster that can leap great distances and curses those who kill it"
+        },
+        {
+            "query": "chaotic good creature known for divine protection and agility in combat",
+            "variant": "divine protector creature that is chaotic good and agile in battles"
+        },
+        {
+            "query": "forest-dwelling creature with darkvision and strong perception skills",
+            "variant": "creature that lives in forests, has darkvision and excellent perception abilities"
+        },
+        {
+            "query": "divine stag known for its mobility, strength, and special abilities",
+            "variant": "celestial stag recognized for its agile movement, power, and unique skills"
+        }
+    ]
+}

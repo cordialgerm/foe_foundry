@@ -1,0 +1,25 @@
+{
+    "name": "Scintillating Ooze",
+    "queries": [
+        {
+            "query": "large acidic ooze that can climb walls and creates smaller oozlings",
+            "variant": "big acid ooze that can scale walls and produces tinier oozlings"
+        },
+        {
+            "query": "neutral slime creature with corrosive attacks and high hit points",
+            "variant": "neutral slime monster that has corrosive strikes and lots of hit points"
+        },
+        {
+            "query": "monster with blindsight and immunity to cold and acid",
+            "variant": "creature with ability to see without sight and resistant to cold and acid"
+        },
+        {
+            "query": "tough ooze with multiattack and ability to pull creatures closer",
+            "variant": "durable ooze that can attack multiple times and draw in nearby foes"
+        },
+        {
+            "query": "amorphous creature that does not require sleep and causes acid damage",
+            "variant": "formless being that doesn't need sleep and inflicts acid damage"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Giant Badger": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Giant Badger in size, behavior, burrowing ability, and combat style."
+  },
+  "monster_key": "giant-badger"
+}

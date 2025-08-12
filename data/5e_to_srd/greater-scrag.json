@@ -1,0 +1,11 @@
+{
+  "Black Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic, swamp-dwelling predators with darkvision and a formidable presence."
+  },
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "A large aquatic predator with strong bite and claw attacks, fitting the Greater Scrag's combat style and habitat."
+  },
+  "monster_key": "greater-scrag"
+}

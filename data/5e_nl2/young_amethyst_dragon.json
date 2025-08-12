@@ -1,0 +1,53 @@
+{
+    "name": "Young Amethyst Dragon",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 133,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft., burrow 20 ft., fly 60 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "psionic",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "large",
+        "intelligent",
+        "formidable"
+    ],
+    "description": "A large dragon with potent psionic abilities and a sleek, amethyst-hued body.",
+    "memorable": "Its ability to psionically observe creatures within 100 miles gives it a strategic edge.",
+    "goals": "Typically seeks to control or manipulate situations using its intellect and psionic powers.",
+    "relations": "May interact with other dragons or psionically-inclined creatures.",
+    "environment": "Mountainous or cavernous regions where it can defend its territory.",
+    "strengths": "Exceptional spellcasting abilities, strong physical attacks, and immunity to fatigue.",
+    "weaknesses": "Susceptible to spells that can exploit psionic vulnerabilities.",
+    "attacks": "Multiattack option allowing for a powerful bite and claw attacks with additional damage from its breath weapon.",
+    "most_powerful_ability": "Concussive Breath that deals significant area force damage.",
+    "equipment": "null",
+    "senses": "Has a passive perception of 15, which enhances its awareness of its surroundings.",
+    "skills": "Proficient in deception, insight, perception, and persuasion, allowing it to navigate social situations effectively.",
+    "additional_information": [
+        "Resistant to force and psychic damage.",
+        "Innate spellcaster with Charisma as its spellcasting ability.",
+        "Ability to telepathically communicate within 120 feet.",
+        "Can observe psionic activities within a 100-mile radius.",
+        "Blind and deaf to its physical surroundings while using Far Thoughts."
+    ],
+    "damage_types": [
+        "force",
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting allowing it to cast calm emotions and charm person without components.",
+    "test_queries": [
+        "large dragon with psionic abilities",
+        "amethyst-colored dragon that flies",
+        "dragon capable of observing minds",
+        "creature that attacks with claws and bite",
+        "powerful dragon using force damage breath"
+    ]
+}

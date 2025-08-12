@@ -1,0 +1,11 @@
+{
+  "Basilisk": {
+    "relation": "conceptually_similar",
+    "explanation": "Both have a paralyzing gaze and a fearsome reptilian appearance."
+  },
+  "Tiger": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a large feline predator form and a chaotic, fearsome nature."
+  },
+  "monster_key": "tigebra"
+}

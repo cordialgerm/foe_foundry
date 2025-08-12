@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large chaotic fiends with flying ability, multiattack, and resistances, sharing a fiendish bruiser role."
+  },
+  "Succubus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the charming and manipulative nature with high charisma and enchantment abilities."
+  },
+  "monster_key": "spawn-of-rhopalocerex"
+}

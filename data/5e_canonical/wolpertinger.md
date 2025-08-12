@@ -1,6 +1,8 @@
 <MonsterName/>Wolpertinger</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>9</HP>
 <summary>The Wolpertinger is a tiny monstrosity that embodies a unique blend of whimsical features, making it both an elusive and potentially troublesome creature in the world of Dungeons & Dragons. Despite its small size, this creature can pose a threat due to its decent agility and special abilities. It boasts a good Armor Class of 13 and moderate hit points totaling 9, allowing it to withstand a few blows in combat. The Wolpertinger possesses strengths such as its ability to fly and burrow, as well as its charge attack which can add extra damage. However, it has notably low strength and intelligence scores, which limit its physical power and cognitive capabilities. With a Challenge Rating of 1/4, it is suitable for lower-level adventurers looking to test their mettle against quirky foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In summation, the Wolpertinger is a unique creature with a mix of agility and sp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wolpertinger
 
 *Tiny* *Monstrosity* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Keening (Recharge 6):** The wolpertinger emits a piercing shriek. Each creature within 30 feet that can hear the wolpertinger must succeed on a DC 13 Constitution saving throw or be deafened for 1 minute. A beast with an Intelligence of 4 or lower that is in the area must also succeed on a DC 13 Wisdom saving throw or be frightened until the beginning of its next turn.
 
 
+</statblock>
 
 

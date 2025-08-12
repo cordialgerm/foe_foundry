@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "A tiny fey creature with spellcasting abilities and invisibility similar to a Sprite."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "A fey being connected to forests with supportive magic and communication with animals."
+  },
+  "monster_key": "brownie-mystic"
+}

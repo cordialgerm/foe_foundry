@@ -1,0 +1,11 @@
+{
+  "Basilisk": {
+    "relation": "conceptually_similar",
+    "explanation": "Both have a paralyzing gaze and reptilian predatory traits."
+  },
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares cunning, stealthy, and fast predatory canine-like features with sound mimicry."
+  },
+  "monster_key": "crocotta"
+}

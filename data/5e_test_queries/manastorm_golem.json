@@ -1,0 +1,25 @@
+{
+    "name": "Manastorm Golem",
+    "queries": [
+        {
+            "query": "medium magical construct that can fly and resist fire damage",
+            "variant": "meduim magical construct that can fly and has fire resistance"
+        },
+        {
+            "query": "creature with truesight and ability to stun enemies",
+            "variant": "creature that has truesight and can stun foes"
+        },
+        {
+            "query": "golem with high intelligence and magical attacks",
+            "variant": "golem with a high intelligence score and magical weapon attacks"
+        },
+        {
+            "query": "construct immune to poison that communicates telepathically",
+            "variant": "construct immune to poisin that can talk telepathically"
+        },
+        {
+            "query": "difficult opponent that has armor class of 14 and multiattack",
+            "variant": "challenging enemy with armor class 14 and a multiattack ability"
+        }
+    ]
+}

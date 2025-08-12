@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons with ambush tactics and breath weapons, though the homebrew focuses on earth and burrowing."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both have a strong connection to earth and terrain, with powerful physical attacks and a protective nature."
+  },
+  "monster_key": "earth-dragon-wyrmling"
+}

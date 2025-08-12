@@ -1,0 +1,52 @@
+{
+    "name": "Mastiff",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 9,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "40 feet",
+    "role": "null",
+    "tags": [
+        "beast",
+        "hound",
+        "guardian",
+        "companion"
+    ],
+    "adjectives": [
+        "loyal",
+        "powerful",
+        "agile",
+        "brave"
+    ],
+    "description": "A large, powerful breed of dog with a strong bite known for its loyalty and intelligence. Mastiffs are commonly used as guard and companion animals.",
+    "memorable": "Mastiffs can knock down enemies with their bite and fiercely defend their masters.",
+    "goals": "To protect, track, and assist in battle.",
+    "relations": "Often found alongside soldiers, hunters, or as companions to humanoids.",
+    "environment": "Domesticated settings, often in homes or at camps.",
+    "strengths": "High agility and enhanced senses for tracking and detecting foes.",
+    "weaknesses": "Low hit points and relatively low armor class make it vulnerable in combat.",
+    "attacks": "Effective Bite attack that can knock targets prone.",
+    "most_powerful_ability": "Keen Hearing and Smell provides advantage on perception checks.",
+    "equipment": null,
+    "senses": "Heightened senses grant it a Perception score of 16 when using hearing or smell.",
+    "skills": "Has a +3 bonus to Perception checks, making it adept at detecting threats.",
+    "additional_information": [
+        "Can be trained as guard, hunting, or war dogs.",
+        "Able to react to protect allies during combat.",
+        "Often used by halflings and small humanoids as riding mounts.",
+        "Known for bravery and loyalty to those they trust.",
+        "Their agility aids them in evading attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large guard dog known for loyalty",
+        "medium beast with keen senses and strong bite",
+        "agile hound trained for tracking and guarding",
+        "brave companion dog that defends its master",
+        "powerful beast that can knock enemies prone"
+    ]
+}

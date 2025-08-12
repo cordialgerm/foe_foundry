@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Earth Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon that can burrow and blend with rock",
+            "variant": "dragon that is gargantuan and can burrow while blending with rocky terrain"
+        },
+        {
+            "query": "earth dragon known for high HP and powerful breath weapon",
+            "variant": "dragon of earth with high hit points and a strong breath attack"
+        },
+        {
+            "query": "strong dragon that uses magical terrain manipulation and has camouflage",
+            "variant": "powerful dragon using magic to manipulate terrain and able to camoflage"
+        },
+        {
+            "query": "dragons that are resistant to nonmagical damage and can move through stone",
+            "variant": "dragon that resists non-magical attacks and moves through stone easily"
+        },
+        {
+            "query": "Ancient dragon that uses spells and has a legendary resistance",
+            "variant": "legendary dragon that utilizes spells and has a resistance to failure"
+        }
+    ]
+}

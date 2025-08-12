@@ -1,6 +1,8 @@
 <MonsterName/>Giant Earth Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>17</AC>
+<HP/>157</HP>
 <summary>The Giant Earth Elemental is a formidable creature, embodying the raw power of the earth itself. As a large elemental, it plays a potent role on the battlefield, capable of grappling opponents and dealing substantial damage with its slam attacks and ranged rock throws. With a robust set of defenses, including damage immunities and resistances, it excels in durability while its ability to burrow gives it unique tactical mobility. However, despite its impressive attributes, its low Dexterity score means it is not particularly agile, making it vulnerable to more dexterous foes. Overall, the Giant Earth Elemental is a powerful combatant that can serve as a siege engine or a tough frontline defender.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ This creature's combination of strong melee attacks, unique mobility, and an abi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Earth Elemental
 
 *Large* *Elemental*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

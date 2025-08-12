@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Darakhul Spy is an undead stealthy ambusher with poison and deception traits similar to a Ghoul."
+  },
+  "Spy": {
+    "relation": "conceptually_similar",
+    "explanation": "The Darakhul Spy shares the stealth, deception, and skirmisher role of the Spy, though it is undead."
+  },
+  "monster_key": "darakhul-spy"
+}

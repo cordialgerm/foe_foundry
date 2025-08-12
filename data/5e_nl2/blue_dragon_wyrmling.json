@@ -1,0 +1,51 @@
+{
+    "name": "Blue Dragon Wyrmling (Chromatic)",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 17,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 ft., burrow 15 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "elemental",
+        "lightning",
+        "desert"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "agile",
+        "powerful"
+    ],
+    "description": "A medium-sized dragon with an affinity for deserts, characterized by its striking blue scales and sharp features, showcasing the might of dragonkind.",
+    "memorable": "The wyrmling's potent Lightning Breath can devastate opponents in battle, while its unique movement abilities grant it significant tactical advantages.",
+    "goals": "To dominate its territory, hunt prey, and establish itself as a formidable presence in the desert.",
+    "relations": "May be encountered alongside other dragons or desert-dwelling creatures; possibly serves larger dragons.",
+    "environment": "Typically found in arid, desert environments where it can utilize its special abilities.",
+    "strengths": "High mobility due to flying and burrowing capabilities; immune to lightning damage; proficient in stealth and survival skills.",
+    "weaknesses": "Lower resistance to non-lightning elemental attacks makes it vulnerable to various forms of elemental damage.",
+    "attacks": "Utilizes a powerful bite attack that deals piercing damage plus additional lightning damage, and a devastating Lightning Breath that can affect multiple enemies in a line.",
+    "most_powerful_ability": "Lightning Breath, allowing it to exhale a destructive line of lightning that inflicts heavy damage on a failed saving throw.",
+    "senses": "Possesses blindsight to detect hidden threats within 10 feet, tremorsense extending 30 feet for awareness of nearby movements.",
+    "skills": "Proficient in perception and stealth, showcasing its aptitude for both hunting and evasion.",
+    "additional_information": [
+        "Desert Farer ability allows movement through difficult terrain in sandy environments.",
+        "Dune Splitter grants advantage on stealth while hidden in sand and gravel.",
+        "Pounce ability enables the dragon to knock enemies prone with its charge."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "desert dragon with lightning breath",
+        "medium blue dragon abilities",
+        "formidable dragon in the desert",
+        "fast flying dragon creature",
+        "ambush tactics of a dragon"
+    ]
+}

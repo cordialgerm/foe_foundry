@@ -1,0 +1,15 @@
+{
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cold-themed creatures associated with winter environments and cold damage."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Winterghast is an undead that spreads disease and paralysis, similar to the Ghoul's paralyzing attacks and undead nature."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead creatures with debilitating abilities and a dangerous presence on the battlefield."
+  },
+  "monster_key": "winterghast"
+}

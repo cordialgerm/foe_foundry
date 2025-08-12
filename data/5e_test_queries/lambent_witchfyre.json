@@ -1,0 +1,25 @@
+{
+    "name": "Lambent Witchfyre",
+    "queries": [
+        {
+            "query": "large fire creature with health regeneration abilities",
+            "variant": "big monster made of fire that can heal itself"
+        },
+        {
+            "query": "fire-based aberration with immunity to poison",
+            "variant": "poison immune fire creature that is an aberration"
+        },
+        {
+            "query": "creature that sheds light and ignites opponents",
+            "variant": "monster that gives off light and sets enemies on fire"
+        },
+        {
+            "query": "flame monster able to move through tight spaces",
+            "variant": "fire-based creature that can fit through small gaps"
+        },
+        {
+            "query": "blazing touch attack dealing fire damage",
+            "variant": "fire damage melee attack called blazing touch"
+        }
+    ]
+}

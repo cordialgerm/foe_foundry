@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are medium aberrations with serpentine forms and psychic abilities."
+  },
+  "Gibbering Mouther": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to split into smaller versions and swarm-like behavior."
+  },
+  "monster_key": "astral-devourer"
+}

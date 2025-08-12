@@ -1,6 +1,8 @@
 <MonsterName/>Thorned Sulfurlord</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Thorned Sulfurlord is a formidable Huge Fiend that embodies chaos and evil in its very essence. As a challenge rating 11 creature, it possesses a high degree of durability and offensive capability, making it a significant threat on the battlefield. With an impressive 171 hit points, the Thorned Sulfurlord can endure substantial damage before going down. Its high Armor Class of 17 provides a solid defense against attacks. While its movement speed is relatively low at 20 feet, its special abilities compensate for this limitation, allowing it to manipulate the terrain and deal consistent damage to nearby foes. Vulnerable only to cold damage while immune to fire and poison, it presents a unique challenge for adventurers, who must strategize carefully to overcome its strengths.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Thorned Sulfurlord can take advantage of its Multiattack feature,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thorned Sulfurlord
 
 *Huge* *Fiend* *chaotic evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **The World Shall Know Fire (Recharge 5-6):** The thorned sulfurlord targets a creature that has taken fire damage from it within the last minute and causes a burst of fire to expand out from that creature in a 30-foot-radius. Each creature in the area, including the target, must make a DC 17 Dexterity saving throw, taking 35 (10d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
 
 
+</statblock>
 
 

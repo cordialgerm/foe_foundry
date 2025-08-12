@@ -1,0 +1,25 @@
+{
+    "name": "Malakbel",
+    "queries": [
+        {
+            "query": "fiend with strong radiant and fire attacks that can teleport",
+            "variant": "fiend that teleport and has strong radiant and fire damage"
+        },
+        {
+            "query": "chaotic evil creature that deals radiant damage in bright light",
+            "variant": "creature aligned with chaotic evil that inflicts radiant damage in bright light"
+        },
+        {
+            "query": "medium-sized fiend resistant to cold and lightning",
+            "variant": "fiend of medium size that has resistance to cold and lightning"
+        },
+        {
+            "query": "monster with damaging aura that dispels darkness spells",
+            "variant": "creature with an aura that deals damage and can dispel darkness spells"
+        },
+        {
+            "query": "Malakbel abilities including multiattack and searing flare",
+            "variant": "abilities of Malakbel with multiattack and burning flare"
+        }
+    ]
+}

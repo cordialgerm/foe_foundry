@@ -1,0 +1,54 @@
+{
+    "name": "Frost Giant Jarl",
+    "creature_type": "Giant",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 15,
+    "srd": false,
+    "cr": "12",
+    "movement": "40 ft. walk speed",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "frost",
+        "cold",
+        "barbarian"
+    ],
+    "adjectives": [
+        "formidable",
+        "ice-themed",
+        "powerful",
+        "tactical"
+    ],
+    "description": "The Frost Giant Jarl is a massive creature with impressive physical strength, characterized by its cold demeanor and battleaxe. It is heavily muscled and covered in frost, embodying the essence of winter.",
+    "memorable": "This giant's ability to grapple foes and its icy gaze make it a daunting opponent, capable of dealing significant damage and controlling the battlefield.",
+    "goals": "To dominate the battlefield and enforce its will, using sheer strength and tactics.",
+    "relations": "Often commands lesser frost giants or winter creatures, and may be found in cold mountainous regions.",
+    "environment": "Typically found in snowy mountains or icy plains.",
+    "strengths": "Resilient against cold damage, with high hit points and strong melee attacks.",
+    "weaknesses": "Vulnerable to fire damage, which can cause it to become rattled in combat.",
+    "attacks": "Engages in melee combat with a powerful battleaxe or hurls large rocks from a distance; it can also grapple and stomp its enemies.",
+    "most_powerful_ability": "Icy Gaze, which can inflict significant cold damage and hinder an opponent's movement.",
+    "equipment": "Battleaxe, a weapon that delivers devastating slashing damage.",
+    "senses": "Passive Perception of 14 enables it to notice threats effectively.",
+    "skills": "Skilled in Athletics and Survival, reflecting its physical prowess and adaptability to its environment.",
+    "additional_information": [
+        "Utilizes a special ability called Fire Fear, which causes it to become rattled when taking fire damage.",
+        "Capable of multiattacking to deliver devastating strikes against foes.",
+        "Can throw large rocks at range, dealing substantial bludgeoning damage.",
+        "Can grapple and throw smaller opponents, using them as improvised weapons.",
+        "Possesses a reach of 10 feet with its battleaxe attacks."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ice giant that throws rocks",
+        "giant with icy gaze and battleaxe",
+        "powerful frost giant vulnerable to fire",
+        "huge giant that dominates the battlefield",
+        "frost giant jarl with grappling abilities"
+    ]
+}

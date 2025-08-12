@@ -1,0 +1,25 @@
+{
+    "name": "The Flesh",
+    "queries": [
+        {
+            "query": "medium aberration with regenerative capabilities that dwells in water",
+            "variant": "aberration creature that's medium size and can regenerate found in water"
+        },
+        {
+            "query": "creature that mimics sounds and can change form",
+            "variant": "monster that imitates sounds and has the ability to transform"
+        },
+        {
+            "query": "neutral evil creature with high strength that can swim",
+            "variant": "evil-aligned monster with strong physical power that swims"
+        },
+        {
+            "query": "monster with multiple attack options and acid abilities",
+            "variant": "creature that has several ways to attack and acid-related attacks"
+        },
+        {
+            "query": "adaptive creature immune to charm and fear living in various environments",
+            "variant": "versatile monster unaffected by charm or fear that thrives in different terrains"
+        }
+    ]
+}

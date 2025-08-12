@@ -1,0 +1,50 @@
+{
+    "name": "Cockatrice",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 27,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "20 ft. walking, 40 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "petrifying",
+        "flying",
+        "ambusher"
+    ],
+    "adjectives": [
+        "small",
+        "dragon-like",
+        "dangerous",
+        "scaly"
+    ],
+    "description": "The Cockatrice has the wings of a bat, a body resembling a chicken, and a long, scaly tail.",
+    "memorable": "Its ability to petrify prey with a single peck makes it highly dangerous despite its comical appearance.",
+    "goals": "To ambush small prey or incapacitate larger creatures.",
+    "relations": "Can be found in the company of smaller monstrous creatures or in areas with abundant prey.",
+    "environment": "Caves, forests, or swamps.",
+    "strengths": "Petrifying ability can incapacitate opponents for an extended duration.",
+    "weaknesses": "Low Armor Class and Hit Points make it vulnerable to sustained attacks.",
+    "attacks": "Utilizes a bite attack that can inflict piercing damage and potentially petrify.",
+    "most_powerful_ability": "The ability to petrify creatures with its bite attack, turning them into lifeless statues.",
+    "senses": "Darkvision allows it to see in dim light as if it were bright light and in darkness as if it were dim light.",
+    "skills": "Average stealth and perception, allowing it to effectively hide and locate threats.",
+    "additional_information": [
+        "Has a unique reaction ability called Frenzy, allowing counterattacks.",
+        "Resistant to exhaustion and the frightened condition due to Monstrosity Resilience.",
+        "Can emit a startling crow to impose disadvantage on attackers.",
+        "Capable of flying, providing strategic mobility.",
+        "Not particularly intelligent, limiting its tactical choices."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small dragon-like creature that turns you to stone",
+        "monstrous bird with petrifying abilities",
+        "dangerous flying creature that bites and petrifies",
+        "ambush predator found in swamps and caves",
+        "chicken-like monster with a scaly tail and deadly gaze"
+    ]
+}

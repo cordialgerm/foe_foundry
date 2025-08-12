@@ -1,0 +1,50 @@
+{
+    "name": "Goblin Captain",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 32,
+    "ac": 17,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft.",
+    "role": "Leader",
+    "tags": [
+        "goblin",
+        "captain",
+        "humanoid"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "tactical"
+    ],
+    "description": "The Goblin Captain is a small humanoid creature wearing a chain shirt and carrying a shield. It commands goblins in battle and is known for its dexterous movements and strategic leadership. It wields a scimitar and a shortbow, attacking swiftly with a flurry of strikes.",
+    "memorable": "This goblin demonstrates strong leadership in combat, leveraging tactical maneuvers and agile evasion to protect itself and its allies.",
+    "goals": "To lead goblin forces in battle and outmaneuver enemies through tactical efficiency.",
+    "relations": "Often seen commanding groups of goblins, it works closely with its underlings in tactical combat.",
+    "environment": "Typically found in caves, ruins, or any areas occupied by goblins.",
+    "strengths": "High Dexterity allows for skilled stealth and nimbleness in combat, making it a challenging foe in ambush situations.",
+    "weaknesses": "Average Strength and Constitution can limit its effectiveness in melee and overall durability.",
+    "attacks": "Utilizes a scimitar for close combat and a shortbow for ranged attacks, striking with precision and speed.",
+    "most_powerful_ability": "The ability 'Get That One!' allows it to direct nearby goblins to attack a specific target, enhancing goblin swarm tactics.",
+    "equipment": "Chain shirt and shield provide solid defense in combat.",
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright light within a range of 60 feet.",
+    "skills": "Excels in Stealth with a modifier of +6, enabling it to move undetected easily.",
+    "additional_information": [
+        "Can take the Disengage or Hide action as a bonus action through Nimble Escape.",
+        "Has the Protect Me! ability to divert attacks to allies.",
+        "Can make a flurry of strikes through its Multiattack ability.",
+        "Logical and tactical, often makes strategic decisions in battle.",
+        "Victorious leaders among goblins will often have high respect and authority."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "goblin leader with scimitar and shield",
+        "agile goblin captain coordinating attacks",
+        "small cunning humanoid in combat",
+        "stealthy goblin with tactical abilities",
+        "goblin captain leading ambushes"
+    ]
+}

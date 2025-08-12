@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Shadow Dragon Wyrmling shares the shadowy, necrotic, and malevolent essence similar to the Shadow creature."
+  },
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "It is a wyrmling dragon with necrotic and poison traits, similar in size and role to a Young Black Dragon."
+  },
+  "monster_key": "shadow-dragon-wyrmling"
+}

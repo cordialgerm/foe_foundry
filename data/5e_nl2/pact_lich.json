@@ -1,0 +1,54 @@
+{
+    "name": "Pact Lich",
+    "creature_type": "Undead",
+    "alignment": "any evil alignment",
+    "size": "Medium",
+    "hp": 195,
+    "ac": 17,
+    "srd": false,
+    "cr": "15",
+    "movement": "walking speed of 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "lich"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "spellcasting",
+        "powerful",
+        "psychological"
+    ],
+    "description": "The Pact Lich is a sinister figure with an exceptional Charisma, often cloaked in dark robes, emanating a commanding presence. It has a malevolent aura and unnatural movements, blending into shadows effortlessly.",
+    "memorable": "Its ability to manipulate shadows and the psychological torment it inflicts through its Maddening Touch makes it a terrifying foe.",
+    "goals": "To dominate and control its enemies, often using spellcasting to instill fear and inflict harm for its patron.",
+    "relations": "Often serves a powerful patron in the lower planes, and may command lesser undead or fiends.",
+    "environment": "Typically found in dark, arcane locations, such as ancient tombs, ruins, or shadowy lairs.",
+    "strengths": "Highly resilient to many conditions, possesses strong spellcasting abilities and can regain spells through legendary actions.",
+    "weaknesses": "Vulnerable to radiant damage and can be temporarily hindered by effects disrupting spellcasting.",
+    "attacks": "Utilizes four enhanced Eldritch Blast attacks that deal force damage and can push targets, as well as its Maddening Touch that induces debilitating hallucinations.",
+    "most_powerful_ability": "Hurl Through Hell can paralyze a target and deal significant psychic damage upon their return, creating both psychological and physical peril.",
+    "senses": "Possesses truesight up to 120 ft., allowing it to see through illusions and invisibility.",
+    "skills": "Excels in deception and persuasion, making it a potent manipulator in social situations.",
+    "additional_information": [
+        "Inherent immortality through Pact Rejuvenation if conditions are met.",
+        "Can become invisible in dim light or darkness, enhancing its stealth.",
+        "Gains temporary hit points upon reducing enemies to zero hit points.",
+        "Strong saving throws in Dexterity and Intelligence, allowing it to avoid danger effectively.",
+        "Has various powerful spells that can control and damage its foes, increasing battlefield control."
+    ],
+    "damage_types": [
+        "psychic",
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting ability with a range of powerful spells including banishment and finger of death.",
+    "test_queries": [
+        "undead spellcaster with reality-warping magic",
+        "lich that can drive you insane",
+        "powerful lich with fiendish abilities",
+        "creature that uses shadows and hallucinations",
+        "spellcasting monster with truesight"
+    ]
+}

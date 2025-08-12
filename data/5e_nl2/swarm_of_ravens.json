@@ -1,0 +1,49 @@
+{
+    "name": "Swarm of Ravens",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 24,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "10 ft. walking, 50 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "flying",
+        "beast"
+    ],
+    "adjectives": [
+        "dark",
+        "aggressive",
+        "swift"
+    ],
+    "description": "A swirling mass of black-feathered birds that aggressively attack their prey with beaks and talons.",
+    "memorable": "Can disorient and overwhelm foes through sheer numbers and coordinated attacks.",
+    "goals": "Defend territory, scavenge for food, and harass opponents.",
+    "relations": "Related to other swarming beasts and can often be found alongside scavenging creatures.",
+    "environment": "Typically found in forests and areas abundant with carrion.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage; immune to many debilitating conditions.",
+    "weaknesses": "Low strength and constitution make it weak in direct confrontations.",
+    "attacks": "Performs a Beaks attack, dealing piercing damage with a swift flurry of strikes.",
+    "most_powerful_ability": "Can occupy the space of another creature, making it difficult to avoid or escape.",
+    "senses": "Passive perception of 15 allows it to notice hidden threats effectively.",
+    "skills": "Proficient in Perception, enhancing its ability to detect hidden creatures.",
+    "additional_information": [
+        "Highly agile, making it hard to pin down.",
+        "Can move through openings large enough for a Tiny creature.",
+        "In large numbers, becomes a coordinated dangerous force.",
+        "Does not regain hit points, limiting its combat sustainability.",
+        "Swarming behavior provides tactical advantages in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dark mass of aggressive birds",
+        "swarm of birds that overwhelms enemies",
+        "flying swarm that harasses prey",
+        "swarm with piercing attacks and mobility",
+        "agile ravens that scavenge and attack"
+    ]
+}

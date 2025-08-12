@@ -1,6 +1,8 @@
 <MonsterName/>Ember Glider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Ember Glider is a medium-sized monstrosity that presents a fiery and agile threat in combat. It possesses a unique blend of mobility and elemental prowess, making it a formidable opponent for adventurers. With a good armor class of 15 from its natural armor and a respectable pool of 44 hit points, it can withstand some damage while striking back with its piercing bite and explosive fire-based attacks. Its strengths lie in its high dexterity, which allows for nimble movement and effective combat engagement, as well as its immunity to fire damage and resistance to poison. However, it is hampered by low strength and intelligence, making it less effective in physical confrontations and interactions requiring intellect. The Ember Glider is notable for its ability to glide and deal persistent damage through its fiery abilities, making it a challenging adversary that requires strategic planning to defeat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Furthermore, the Ember Glider’s Blazing Tail is a potent special action that c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ember Glider
 
 *Medium* *Monstrosity* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Blazing Tail (Recharge 5–6):** Lashes its tail releasing an arc of fire. Each creature in a 15 ft. cone: 14 (4d6) fire (DC 13 Dex half). The fire ignites flammable objects in  area that aren’t being worn or carried.
 
 
+</statblock>
 
 

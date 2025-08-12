@@ -1,6 +1,8 @@
 <MonsterName/>Dark Father</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Dark Father is a formidable undead entity steeped in darkness and possesses a lawful neutral alignment. It is a powerful presence on the battlefield, bolstered by its high armor class of 18 due to its natural armor and a decent pool of hit points at 65, which allows it to endure significant damage. Its ability to fly at a speed of 20 feet adds mobility, while its walking speed of 40 feet provides effective ground movement. The Dark Father is designed for disruption and damage, leveraging its necrotic abilities to weaken and drain the life from its foes, making it a notable challenge for adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Dark Father can also react to spells cast nearby through "Banish Hope," prov
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Father
 
 *Large* *Undead* *lawful neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Banish Hope:** When a spell from the evocation or necromancy school is cast within 30 feet of the dark father, the dark father can counter the spell with a successful ability check. This works like the counterspell spell with a +5 spellcasting ability check, except the dark father must make the ability check no matter the level of the spell.
 
 
+</statblock>
 
 

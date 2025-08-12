@@ -1,0 +1,25 @@
+{
+    "name": "Thundercall Hadrosaur",
+    "queries": [
+        {
+            "query": "massive dinosaur that can unleash thunderous bellow",
+            "variant": "big dino that unleashes a thunder bellow"
+        },
+        {
+            "query": "powerful creature with high Strength and thunder damage resistance",
+            "variant": "strong monster that resists thunder damage and has high Strength"
+        },
+        {
+            "query": "hadrosaur that knocks enemies prone with slam attacks",
+            "variant": "hadrosaur capable of knocking foes down with its slam strikes"
+        },
+        {
+            "query": "monstrosity that deals double damage to structures",
+            "variant": "creature that does twice the damage to objects and buildings"
+        },
+        {
+            "query": "huge dinosaur with natural armor and high hit points",
+            "variant": "large dinosaur with great natural armor and many hit points"
+        }
+    ]
+}

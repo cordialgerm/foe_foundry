@@ -1,0 +1,25 @@
+{
+    "name": "Swarm, Swamp Slirghs",
+    "queries": [
+        {
+            "query": "elemental creature that can teleport in water and poisons enemies",
+            "variant": "elemental monster that poisons foes and can teleport through water"
+        },
+        {
+            "query": "large swamp creature with strong physical attacks and low armor class",
+            "variant": "big wetland creature that has strong melee attacks and low AC"
+        },
+        {
+            "query": "creature immune to poison that uses swamp sludge as an attack",
+            "variant": "monster with poison immunity that attacks with swamp sludge"
+        },
+        {
+            "query": "wetlands monster that occupies the same space as enemies and confuses them",
+            "variant": "swamp creature that can share space with foes and creates confusion"
+        },
+        {
+            "query": "slime-like elemental that uses stealth in swamps and has a high perception",
+            "variant": "slime-infused elemental living in swamps with good perception skills"
+        }
+    ]
+}

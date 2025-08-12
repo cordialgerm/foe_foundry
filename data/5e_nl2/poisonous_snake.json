@@ -1,0 +1,51 @@
+{
+    "name": "Poisonous Snake",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 ft. walk and swim",
+    "role": null,
+    "tags": [
+        "small",
+        "venomous",
+        "predator"
+    ],
+    "adjectives": [
+        "stealthy",
+        "deadly",
+        "fragile"
+    ],
+    "description": "A small, stealthy predator with a venomous bite, found in forests, jungles, or deserts. It can blend into its environment, making it hard to spot until it strikes.",
+    "memorable": "Its venomous bite can paralyze or kill smaller creatures, posing a significant threat despite its size.",
+    "goals": "Focus on survival and hunting smaller prey.",
+    "relations": "Often found in areas with abundant small prey, may encounter other predatory beasts.",
+    "environment": "Forests, jungles, and deserts.",
+    "strengths": "High dexterity allows it to be stealthy and avoid detection; venomous bite is effective against smaller creatures.",
+    "weaknesses": "Very low hit points and weak physical attributes make it fragile in direct combat.",
+    "attacks": "Bite attack that delivers piercing damage along with additional poison damage on failure to save.",
+    "most_powerful_ability": "Injecting venom on a bite that can inflict significant poison damage to unprepared targets.",
+    "equipment": null,
+    "senses": "The snake has blindsight up to 10 feet, allowing it to sense nearby creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "Can swim and move effectively in various terrains.",
+        "Camouflages well in its environment, making it hard to spot.",
+        "Uses stealth to surprise its prey.",
+        "Not typically aggressive unless threatened."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny snake with venomous bite",
+        "small predatory snake found in jungle",
+        "stealthy snake that poisons smaller prey",
+        "snake with blindsight and poison attack",
+        "fragile but dangerous snake in forests"
+    ]
+}

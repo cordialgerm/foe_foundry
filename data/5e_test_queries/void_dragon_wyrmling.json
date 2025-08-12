@@ -1,0 +1,25 @@
+{
+    "name": "Void Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that manipulates gravity and deals cold damage",
+            "variant": "medium-sized dragon that controls gravity and inflicts cold damage"
+        },
+        {
+            "query": "cold-resistant dragon that can twist reality and has high AC",
+            "variant": "dragon that is immune to cold and can manipulate reality while having a strong AC"
+        },
+        {
+            "query": "dragon known for gravitational powers and chilling breath attacks",
+            "variant": "dragon recognized for its ability to manipulate gravity and its cold breath attacks"
+        },
+        {
+            "query": "chaotic neutral dragon that travels the void and has freezing abilities",
+            "variant": "chaotic neutral wyrmling that navigates the void and possesses chilling powers"
+        },
+        {
+            "query": "yet formidable creature with cold breath and gravitational attacks",
+            "variant": "formidable dragon with chilling breath and gravity-manipulating attacks"
+        }
+    ]
+}

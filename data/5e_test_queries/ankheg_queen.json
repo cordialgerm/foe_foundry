@@ -1,0 +1,25 @@
+{
+    "name": "Ankheg Queen",
+    "queries": [
+        {
+            "query": "huge underground monster with acid attacks",
+            "variant": "huge monster that lives underground and has acid attacks"
+        },
+        {
+            "query": "monstrosity that can grapple and has tremorsense",
+            "variant": "a monstrous creature that grapples and uses tremorsense"
+        },
+        {
+            "query": "territorial creature that uses burrowing tactics and acid spray",
+            "variant": "a creature that controls its territory using burrowing tactics and sprays acid"
+        },
+        {
+            "query": "giant monster with low intelligence that ambushes from underground",
+            "variant": "big monster with very low intelligence that ambushes from below ground"
+        },
+        {
+            "query": "creature with claws and acid resistance that poses a challenge",
+            "variant": "monster with claws and resistance to acid that is a challenge"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Owl",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 11,
+    "srd": true,
+    "cr": "0",
+    "movement": "5 feet on the ground and 60 feet in the air",
+    "role": "null",
+    "tags": [
+        "flying",
+        "scout",
+        "predator"
+    ],
+    "adjectives": [
+        "nocturnal",
+        "stealthy",
+        "keen-sighted"
+    ],
+    "description": "The owl is a small, agile bird of prey with sharp talons and a silvery coat of feathers, adapted for silent flight and hunting in darkness.",
+    "memorable": "Its quiet flight and keen senses make it an effective scout and companion despite its fragility.",
+    "goals": "Hunts small rodents and insects primarily in forests and natural settings.",
+    "relations": "Often associated with magical settings as a familiar for spellcasters.",
+    "environment": "Forests, mountains, and other natural settings.",
+    "strengths": "Exceptional at stealth and reconnaissance, with heightened senses for detecting threats.",
+    "weaknesses": "Very fragile with only 1 hit point, making it susceptible to harm.",
+    "attacks": "Talons attack, dealing minimal slashing damage.",
+    "most_powerful_ability": "Flyby allows it to escape danger without provoking attacks.",
+    "senses": "Possesses darkvision up to 120 feet and heightened perception.",
+    "skills": "Has proficiency in Perception and Stealth, with bonuses reflecting its scouting abilities.",
+    "additional_information": [
+        "Heightened Hearing and Sight grants advantage on perception checks.",
+        "Effective silent flight aids in evasion.",
+        "Unaligned creature, displaying no specific allegiance."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny nocturnal predator with silent flight",
+        "agile creature known for keen eyesight",
+        "bird of prey used as familiar",
+        "small scout that hunts rodents at night",
+        "owl abilities for scouting and stealth"
+    ]
+}

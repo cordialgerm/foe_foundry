@@ -1,0 +1,52 @@
+{
+    "name": "Giant Ant",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 52,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed 40 feet, fast mover",
+    "role": "Skirmisher",
+    "tags": [
+        "insect",
+        "beast",
+        "predator"
+    ],
+    "adjectives": [
+        "large",
+        "aggressive",
+        "formidable"
+    ],
+    "description": "The Giant Ant is a large beast with a strong build and natural armor, characterized by its aggressive demeanor and impressive combat abilities.",
+    "memorable": "Its grappling Bite immobilizes its prey, while its Sting inflicts significant poison damage.",
+    "goals": "Typically hunts for food and defends its territory.",
+    "relations": "May be encountered with other insects or in colonies.",
+    "environment": "Often found in forested or underground regions.",
+    "strengths": "Good melee combat effectiveness with high Strength and Constitution, allowing for durability and damage output.",
+    "weaknesses": "Low Intelligence and Charisma render it inept in strategic planning and social interactions.",
+    "attacks": "Uses a powerful Bite that grapples enemies and a Sting that delivers piercing damage and poison.",
+    "most_powerful_ability": "The combination of its Bite and Sting attacks allows it to control the battlefield by grappling opponents and dealing poison damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, enhancing its ability to perceive threats even without vision.",
+    "skills": null,
+    "additional_information": [
+        "Strong defensive capability due to natural armor",
+        "Advantage on Perception checks that rely on smell",
+        "Can immobilize targets effectively through grappling",
+        "High walking speed allowing quick engagement in combat",
+        "Effective at hunting and tracking due to keen senses"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive beast with poison sting",
+        "insect that controls prey with grappling",
+        "fast moving giant ant with keen sense of smell",
+        "large ant that bites and poisons its enemies",
+        "predatory ant found in forests or underground"
+    ]
+}

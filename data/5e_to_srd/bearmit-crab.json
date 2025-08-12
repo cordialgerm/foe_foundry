@@ -1,0 +1,11 @@
+{
+  "Giant Crab": {
+    "relation": "almost_identical",
+    "explanation": "A large crab-like monstrosity with natural armor and claw attacks, similar to the Bearmit Crab."
+  },
+  "Cloaker": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the False Appearance ability for ambush and blending into surroundings."
+  },
+  "monster_key": "bearmit-crab"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ghast",
+    "queries": [
+        {
+            "query": "undead creature with a foul stench that paralyzes",
+            "variant": "undead monster with a stench that paralyzes"
+        },
+        {
+            "query": "emaciated undead that hunts in packs and inflicts paralysis",
+            "variant": "thin undead that hunts in groups and causes paralysis"
+        },
+        {
+            "query": "medium-sized creature that feeds on raw meat and causes poison",
+            "variant": "medium creature that eats raw meat and inflicts poison"
+        },
+        {
+            "query": "vile undead that is resistant to poison and capable of climbing",
+            "variant": "disgusting undead that resists poison and can climb"
+        },
+        {
+            "query": "creepy ghoul-like monster that emits a toxic stench and attacks with claws",
+            "variant": "creepy monster similar to a ghoul that has a bad stench and claws attacks"
+        }
+    ]
+}

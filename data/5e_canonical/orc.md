@@ -1,6 +1,9 @@
 <MonsterName/>Orc</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>orc</Subtype>
+<CR/>1</CR>
+<AC/>13 (hide armor)</AC>
+<HP/>15</HP>
 <summary>Orcs are fierce, green-skinned humanoids known for their savage nature and warlike culture. Standing taller and stronger than most humans, Orcs are brutal warriors who live for battle and conquest. They often form raiding parties or large warbands, attacking settlements and taking what they want by force. Orcs are known for their strength, aggression, and lack of fear, charging into battle with little regard for their own safety. They typically wield crude but effective weapons like axes, spears, or clubs, and are often led by chieftains or powerful shamans.</summary>
 
 <summary>The Orc is a medium humanoid creature that serves as a formidable combatant on the battlefield, known for its resilience and aggression. With a Challenge Rating of 1/2, it poses a moderate threat to adventurers, capable of dealing significant damage while withstanding some punishment due to its decent hit points and the ability to resist effects that would hinder it. Orcs are characterized by their straightforward approach to combat, wielding heavy weaponry and charging toward foes. However, they lack sophistication in intelligence and charm, providing them with weaknesses when faced with more cunning or charismatic opponents. </summary>
@@ -25,6 +28,7 @@ Overall, the Orc is a straightforward yet effective combatant that thrives in me
 
 Source: 5e_srd
 
+<statblock>
 ## Orc
 
 *Medium humanoid (orc), chaotic evil*
@@ -53,7 +57,8 @@ Source: 5e_srd
 
 ***Greataxe***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (1d12+3) slashing damage.
 
-***Javelin***. *Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 6 (1d6+3) piercing damage.
+***Javelin***. *Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 6 (1d6+3) piercing damage.</statblock>
+
 
 
 
@@ -61,6 +66,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orc
 
 *Medium humanoid*
@@ -93,5 +99,6 @@ Source: 5e_artisinal_monsters
 
 - **Warrior’s Advance.** The orc moves up to its speed toward a hostile creature that it can see.
 
+</statblock>
 
 

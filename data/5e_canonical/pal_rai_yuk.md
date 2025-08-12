@@ -1,6 +1,8 @@
 <MonsterName/>Pal-Rai-Yuk</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Pal-Rai-Yuk is a formidable Huge monstrosity characterized by its neutral evil alignment. Known for its dual abilities both in and out of the water, this creature can burrow through terrain, swim swiftly, and walk effectively on land. With a Challenge Rating of 8, it presents a significant threat to adventurers, capable of dealing substantial damage while also employing unique tactics to control and incapacitate its opponents. Its dual heads grant it enhanced perception and resistance to various conditions, contributing to its role as a cunning predator. Notably, the Pal-Rai-Yuk possesses abilities that can erase the memories of those it devours, making it a unique menace in encounters.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ If the Pal-Rai-Yuk takes significant damage from a swallowed creature on its tur
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pal-Rai-Yuk
 
 *Huge* *Monstrosity* *neutral evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Swallow:** The pal-rai-yuk makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the creature is restrained, it has total cover against attacks and other effects outside the pal-rai-yuk, and it takes 18 (4d8) acid damage at the start of each of the pal-rai-yuk’s turns. The pal-rai-yuk can have up to three Medium or smaller creatures swallowed at a time.<br><br>The swallowed creature can see outside of the pal-rai-yuk, but it can’t target those outside the pal-rai-yuk with spells or cast spells or use features that allow it to leave the pal-rai-yuk’s stomach. In addition, nothing can physically pass through the pal-rai-yuk’s stomach, preventing creatures inside the stomach from making attack rolls against creatures outside the stomach.<br><br>If the pal-rai-yuk takes 20 damage or more on a single turn from a creature inside it, the pal-rai-yuk must succeed on a DC 16 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the pal-rai-yuk. If the pal-rai-yuk dies, a swallowed creature is no longer restrained by it and can escape the corpse by using 15 feet of movement, exiting prone.
 
 
+</statblock>
 
 

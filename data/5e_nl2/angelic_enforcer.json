@@ -1,0 +1,52 @@
+{
+    "name": "Angelic Enforcer",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 152,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft., fly 90 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "protector",
+        "punisher"
+    ],
+    "adjectives": [
+        "powerful",
+        "divine",
+        "formidable"
+    ],
+    "description": "A large celestial being embodying law and good, known for its exceptional physical power, wisdom, and charisma. It features blazing weapons and a magical presence.",
+    "memorable": "Possesses truesight, can know when it hears a lie, and has transformative abilities via its Change Shape ability, making it both unpredictable and versatile.",
+    "goals": "To protect and punish in accordance with celestial law, often enforcing good and punishing evil.",
+    "relations": "Often encountered alongside other celestial beings, may serve higher celestial powers, and is a natural enemy to evil creatures.",
+    "environment": "Typically found in celestial realms or places of significant good.",
+    "strengths": "Exceptionally high armor class and hit points, innate spellcasting, resistance to nonmagical damage, immunity to radiant damage, and excellent saving throws.",
+    "weaknesses": "Vulnerability to magic attacks, dependency on lawful good alignment affecting interactions with evil characters.",
+    "attacks": "Engages in combat with powerful melee attacks, including a Bite that curses foes and a Greatsword that deals both slashing and fire damage.",
+    "most_powerful_ability": "Blazing Weapons allows it to deal an additional 4d8 fire damage with its weapon attacks, making its melee strikes significantly more potent.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through illusions and deceptions.",
+    "skills": "Excels in Insight, Intimidation, Perception, and Survival, all at a proficiency of +9, making it very adept in social and awareness situations.",
+    "additional_information": [
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Immunities to conditions such as charmed, exhaustion, and frightened.",
+        "Can innately cast spells like Detect Evil and Good, and has spellcasting flexibility with multiple daily spells.",
+        "Ability to Change Shape into creatures that have a challenge rating no higher than its own.",
+        "Its curse from the Bite attack hinders healing, adding a strategic element to its combat capabilities."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting allowing it to cast Detect Evil and Good at will, and Counterspell, Dispel Evil and Good, Dispel Magic, and Protection from Evil and Good three times per day each.",
+    "test_queries": [
+        "divine protector creature",
+        "celestial being with magical abilities",
+        "powerful angelic warrior",
+        "creature with truesight and shapeshifting",
+        "lawful good celestial enforcer"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Skulker",
+    "queries": [
+        {
+            "query": "stealthy small humanoid that ambushes using shortbow",
+            "variant": "small humanoid that uses shortbow and ambush tactics while being stealthy"
+        },
+        {
+            "query": "goblin that excels in stealth and has darkvision",
+            "variant": "stealthy goblin creature that can see in the dark"
+        },
+        {
+            "query": "creature with high stealth skill that attacks from hidden positions",
+            "variant": "creature skilled in stealth that ambushes from hidden spots"
+        },
+        {
+            "query": "small humanoid that deals extra damage when allies are nearby",
+            "variant": "humanoid creature that does more damage if friends are close"
+        },
+        {
+            "query": "Goblin Skulker's tactics when engaging foes",
+            "variant": "strategies used by Goblin Skulker in combat"
+        }
+    ]
+}

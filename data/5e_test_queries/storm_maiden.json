@@ -1,0 +1,25 @@
+{
+    "name": "Storm Maiden",
+    "queries": [
+        {
+            "query": "elemental creature that controls storms and uses lightning attacks",
+            "variant": "creature that is elemental and controls storms with lightning attacks"
+        },
+        {
+            "query": "medium-sized chaotic evil monster that can fly and swim",
+            "variant": "chaotic evil medium monster that can swim and fly"
+        },
+        {
+            "query": "monster with immunity to poison and resistance to lightning",
+            "variant": "creature immune to poison and resistant to lightning"
+        },
+        {
+            "query": "spellcasting elemental monster with thunder attacks",
+            "variant": "elemental monster that casts spells and uses thunder attacks"
+        },
+        {
+            "query": "Storm Maiden abilities and weaknesses in combat",
+            "variant": "abilities and weaknesses of the Storm Maiden in battle"
+        }
+    ]
+}

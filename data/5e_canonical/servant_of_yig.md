@@ -1,6 +1,8 @@
 <MonsterName/>Servant of Yig</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>90</HP>
 <summary>The Servant of Yig is a malevolent aberration that embodies the dark and twisted nature of its master, Yig. This creature is a formidable opponent in combat due to its decent health pool of 90 hit points, which gives it good endurance. With a challenge rating of 4, it poses a moderate threat to adventurers. The Servant is agile in the water and on land, with a swimming and walking speed of 30 feet, allowing it to navigate various terrains effectively. It possesses a mix of offensive capabilities and magical prowess, making it a versatile adversary. However, its armor class of 12 indicates it is relatively easy to hit, which can be a significant weakness if surrounded by multiple foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Servant of Yig can execute a multiattack, allowing it to make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Servant of Yig
 
 *Medium* *Aberration* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the Servant of Yig can't constrict another target.
 
 
+</statblock>
 
 

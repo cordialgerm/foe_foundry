@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "almost_identical",
+    "explanation": "A powerful arcane spellcaster with a focus on battlefield control and high-level spells."
+  },
+  "Drow": {
+    "relation": "conceptually_similar",
+    "explanation": "An elf-like humanoid associated with shadowy environments and magical abilities."
+  },
+  "monster_key": "shadow-elf-mage"
+}

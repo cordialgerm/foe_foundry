@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful aquatic creatures with control over water and strong swimming abilities."
+  },
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Giant Lantern is a huge giant with strong melee attacks, similar in size and combat role to Fire Giants."
+  },
+  "monster_key": "giant-lantern"
+}

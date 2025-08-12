@@ -1,0 +1,25 @@
+{
+    "name": "Tripwire Patch",
+    "queries": [
+        {
+            "query": "huge ambush plant that creates difficult terrain",
+            "variant": "large plant that ambushes and makes hard terrain"
+        },
+        {
+            "query": "plant creature that traps intruders and enriches the land",
+            "variant": "creature that traps intruders and enriches land with its abilities"
+        },
+        {
+            "query": "plant monster with strong bite attack and natural camouflage",
+            "variant": "monster that uses a camouflaged false appearance and has a powerful bite"
+        },
+        {
+            "query": "creature that uses traps and has tremorsense to detect enemies",
+            "variant": "creature with tremorsense that lays traps for detecting foes"
+        },
+        {
+            "query": "cunning plant that punishes invaders and can knock them prone",
+            "variant": "sly plant that punishes trespassers and can make them fall"
+        }
+    ]
+}

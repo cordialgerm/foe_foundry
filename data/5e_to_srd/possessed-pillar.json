@@ -1,0 +1,15 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs serving as guardians with armor-like bodies and melee attacks."
+  },
+  "Gargoyle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both resemble stone statues that come to life to defend their territory."
+  },
+  "Stone Golem": {
+    "relation": "mechanically_similar",
+    "explanation": "Both are large, durable constructs with powerful melee attacks and magical resistances."
+  },
+  "monster_key": "possessed-pillar"
+}

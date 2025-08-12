@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Cave Giant is a huge, strong giant with melee and ranged attacks similar to a Hill Giant but with cave adaptations."
+  },
+  "Stone Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Cave Giant shares the giant type and subterranean habitat with the Stone Giant, emphasizing physical strength and cave dwelling."
+  },
+  "monster_key": "cave-giant"
+}

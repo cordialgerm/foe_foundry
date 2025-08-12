@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are large celestial beings with radiant melee attacks, flight, and spellcasting abilities embodying good alignment."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Hundun shares the concept of a powerful, radiant celestial warrior with flight and strong melee capabilities."
+  },
+  "monster_key": "hundun"
+}

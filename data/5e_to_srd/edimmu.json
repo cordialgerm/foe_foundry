@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Edimmu is a medium undead with life-draining necrotic attacks and incorporeal movement similar to a Wraith."
+  },
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic evil undead with necrotic life-draining abilities and a ghastly presence."
+  },
+  "monster_key": "edimmu"
+}

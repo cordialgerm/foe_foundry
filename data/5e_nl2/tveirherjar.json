@@ -1,0 +1,53 @@
+{
+    "name": "Tveirherjar",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 18,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "necrotic",
+        "tracker"
+    ],
+    "adjectives": [
+        "formidable",
+        "fearsome",
+        "undead"
+    ],
+    "description": "The Tveirherjar is a formidable undead creature with a strong physical presence, exhibiting a characteristic dark and menacing aura. It wields a longsword that absorbs light, creating an ominous atmosphere around it.",
+    "memorable": "Its ability to curse creatures to become undead and its multiattack capability makes it a unique and dangerous adversary.",
+    "goals": "To track and curse einherjar to expand its undead ranks.",
+    "relations": "Often encountered alongside other undead or as a part of necromantic gatherings.",
+    "environment": "Typically found in dark, gloomy locations, often near battlefields or sites of past conflict.",
+    "strengths": "High strength and physical resilience, making it a formidable opponent in combat.",
+    "weaknesses": "Vulnerable to magical attacks and counterplay from aware players can diminish its effectiveness.",
+    "attacks": "Can wield its Niflheim longsword to deal slashing and necrotic damage, as well as use ranged attacks and debilitate foes with its terrifying glare.",
+    "most_powerful_ability": "Curse of the Tveirherjar, capable of transforming enemies into undead if they are slain by its powerful curse.",
+    "equipment": "Niflheim longsword that absorbs light and has unique magical properties, crumbling away upon the Tveirherjar's death.",
+    "senses": "Possesses truesight up to 60 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Has a proficiency in stealth, making it capable of moving quietly and remaining undetected.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Resistant to slashing damage from nonmagical attacks.",
+        "Can locate einherjar within 1,000 feet, unaffected by running water.",
+        "Becomes more dangerous when its hit points drop below 30 due to Battle Frenzy.",
+        "Can paralyze foes with its terrifying glare for up to one minute."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable undead with dark aura",
+        "creature that curses foes into undead",
+        "undead tracker with light absorbing sword",
+        "monster that paralyzes enemies with glare",
+        "powerful undead that transforms einherjar"
+    ]
+}

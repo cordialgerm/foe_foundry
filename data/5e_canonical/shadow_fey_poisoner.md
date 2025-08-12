@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Fey Poisoner</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>112</HP>
 <summary>The Shadow Fey Poisoner is a cunning and elusive creature classified as a Medium humanoid of neutral alignment. With a Challenge Rating of 11, it serves as a formidable opponent in combat, boasting a robust Armor Class of 16 due to its studded leather armor and a substantial pool of Hit Points totaling 112. The Poisoner's strengths lie in its agility, dexterity, and stealth capabilities, making it exceptionally difficult to detect and defend against. However, it has a weakness in sunlight, where its effectiveness is significantly diminished due to its sunlight sensitivity. Its combination of deadly sneak attacks and poison-inflicting abilities makes it a dangerous foe and a master of deceit in combat situations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions in combat, the Shadow Fey Poisoner can perform a Multiattack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Fey Poisoner
 
 *Medium* *Humanoid* *neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +8 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 28 (8d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Bombardier Beetle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>13</HP>
 <summary>The Giant Bombardier Beetle is a Medium-sized beast that stands out for its unique combat abilities and resistance to certain forms of damage. With an Armor Class of 14, it can withstand some attacks, while its 13 hit points provide it with a reasonable amount of durability for its Challenge Rating of 1/4, making it a relatively minor threat to adventurers. However, its primary strengths lie in its ranged attack capabilities, particularly its ability to spray fire, which can bring surprise to unsuspecting targets. With a good Dexterity score of 14, it has decent agility, although its intelligence and charisma are notably very low, hindering its interactions outside of combat. This creature is unaligned and primarily operates on instinct.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ Overall, the Giant Bombardier Beetle is effective for its size and challenge lev
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Bombardier Beetle
 
 *Medium* *Beast* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Spray:** Ranged Weapon Attack: +4 to hit, range 15/30 ft., one target. Hit: 7 (2d4 + 2) fire damage.
 
 
+</statblock>
 
 

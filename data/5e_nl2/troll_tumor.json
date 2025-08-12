@@ -1,0 +1,52 @@
+{
+    "name": "Troll, Tumor",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 125,
+    "ac": 13,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "chaotic",
+        "regenerative"
+    ],
+    "adjectives": [
+        "horrifying",
+        "regenerative",
+        "unpredictable"
+    ],
+    "description": "The Tumor Troll is characterized by its horrifying regenerative abilities and unique teratomas that can alter its capabilities. It has an intimidating presence due to its size and strength, with a grotesque form hinting at its chaotic nature.",
+    "memorable": "Its ability to regenerate and gain random teratomas enhances its unpredictability, making it a formidable opponent that can change the dynamics of battle.",
+    "goals": "To thrive in chaos and engage in brutal combat, using its regenerative abilities to outlast opponents.",
+    "relations": "Trolls and other chaotic creatures may accompany or serve it, often creating an unpredictable and dangerous environment.",
+    "environment": "Typically found in chaotic or wild areas where it can thrive and regenerate in battle.",
+    "strengths": "Exceptional regenerative capabilities, high hit points, and the ability to adapt through teratomas.",
+    "weaknesses": "Weak dexterity makes it vulnerable to ranged attacks and dexterity-based saving throws; susceptible to fire and acid damage that negate its regeneration.",
+    "attacks": "Multiattack with two Bite attacks dealing piercing and poison damage, along with Claw attacks; can also fling limbs as a ranged attack.",
+    "most_powerful_ability": "Regeneration allows it to regain 10 hit points each turn, except when taking acid or fire damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Low passive perception with a -2 modifier, indicating its inability to notice details effectively.",
+    "additional_information": [
+        "Gains teratomas that provide various combat enhancements or effects.",
+        "Can die only if it starts its turn with 0 hit points and cannot regenerate.",
+        "Uncontrolled Growth ability allows adaptation in combat.",
+        "Immunity to poison damage enhances its durability in encounters.",
+        "Slow intelligence and wisdom indicate limited strategic capacity."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic giant with regeneration",
+        "monster that gains teratomas in battle",
+        "horrifying troll difficult to kill",
+        "giant with regenerative abilities and poison",
+        "chaotic giant that adapts through regeneration"
+    ]
+}

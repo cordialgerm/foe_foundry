@@ -1,0 +1,48 @@
+{
+    "name": "Bear, Black",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 25,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "40 ft. speed, climbs at 30 ft.",
+    "role": "null",
+    "tags": [
+        "wildlife",
+        "animal",
+        "beast"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "formidable",
+        "mobile"
+    ],
+    "description": "The Black Bear is a medium-sized beast characterized by its considerable physical strength and mobility, capable of traversing land quickly and climbing efficiently.",
+    "memorable": "Its heightened sense of smell, allowing for exceptional perception of creatures nearby, makes it a challenging foe in its natural habitat.",
+    "goals": "Typically found in wilderness areas, it seeks food and territory, embodying the role of wildlife in its environment.",
+    "relations": "Often associated with other wildlife and lesser creatures in natural ecosystems.",
+    "environment": "Commonly found in wilderness areas.",
+    "strengths": "Decent hit points, good mobility, and strong melee attacks.",
+    "weaknesses": "Low intelligence and armor class, making it easy to outsmart.",
+    "attacks": "The bear utilizes a Multiattack, comprising a Bite attack and a Claws attack, both effective in close combat.",
+    "most_powerful_ability": "Heightened Smell enhances its perception significantly, making stealthy approaches difficult.",
+    "equipment": null,
+    "senses": "The bear possesses a Heightened Smell ability, granting it a remarkable Perception score of 18 when detecting creatures by scent.",
+    "skills": null,
+    "additional_information": [
+        "Strong physical power reflected in Strength score of +2.",
+        "Good durability indicated by Constitution score of +2.",
+        "Certain threats can vary due to low armor class."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "wildlife monster",
+        "climbing bear",
+        "medium-sized beast",
+        "predator with enhanced smell",
+        "forest creature encounter"
+    ]
+}

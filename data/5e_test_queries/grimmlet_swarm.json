@@ -1,0 +1,25 @@
+{
+    "name": "Grimmlet Swarm",
+    "queries": [
+        {
+            "query": "large flying monstrosity that deals psychic damage",
+            "variant": "big flying creature that does psychic damage"
+        },
+        {
+            "query": "creature with high constitution that can reproduce when damaged by spells",
+            "variant": "monster with strong constitution that creates new versions when hit by magic"
+        },
+        {
+            "query": "swarm that uses psychic abilities and inflicts exhaustion",
+            "variant": "horde that employs psychic powers and causes exhaustion"
+        },
+        {
+            "query": "monstrosity that has an enervating explosion upon death",
+            "variant": "creature that explodes in despair when it dies"
+        },
+        {
+            "query": "Grimmlet Swarm abilities for tactical combat",
+            "variant": "Grimmlet Swarm tactics in combat actions"
+        }
+    ]
+}

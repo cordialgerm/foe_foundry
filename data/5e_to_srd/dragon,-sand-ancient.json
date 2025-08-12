@@ -1,0 +1,11 @@
+{
+  "Ancient Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A gargantuan, ancient dragon with fire breath and fearsome presence, similar in role and power but with sand and piercing elements."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares elemental fire traits and embodies elemental power, complementing the sand elemental aspect of the homebrew dragon."
+  },
+  "monster_key": "dragon,-sand-ancient"
+}

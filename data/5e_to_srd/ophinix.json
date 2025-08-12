@@ -1,0 +1,11 @@
+{
+  "Giant Eagle": {
+    "relation": "close_cousins",
+    "explanation": "A large flying creature with strong physical attacks and good perception."
+  },
+  "Lightning Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elemental lightning theme and electrical damage abilities."
+  },
+  "monster_key": "ophinix"
+}

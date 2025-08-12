@@ -1,0 +1,11 @@
+{
+  "Adult Gold Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A three-headed mechanical dragon with fire breath shares the dragon concept and fiery breath of an Adult Gold Dragon."
+  },
+  "Iron Golem": {
+    "relation": "mechanically_similar",
+    "explanation": "As a construct with high resilience, immunity to poison and psychic damage, and siege capabilities, it shares traits with the Iron Golem."
+  },
+  "monster_key": "three-headed-clockwork-dragon"
+}

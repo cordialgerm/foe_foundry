@@ -1,0 +1,25 @@
+{
+    "name": "Lemurfolk",
+    "queries": [
+        {
+            "query": "small humanoid creature that can glide and excels in acrobatics",
+            "variant": "humanoid creature that glides and is good at acrobatics, small size"
+        },
+        {
+            "query": "creature with membranes between limbs that resides in forested areas",
+            "variant": "forest-dwelling creature with membranes on its limbs"
+        },
+        {
+            "query": "agile lemur-like humanoid skilled in stealth and with low charisma",
+            "variant": "stealthy humanoid with low charisma and agility similar to lemurs"
+        },
+        {
+            "query": "Lemurfolk abilities and tactics for using blowgun effectively",
+            "variant": "Lemurfolk tactics and abilities for effective blowgun usage"
+        },
+        {
+            "query": "creature that can slow its fall and uses poisoned blowgun attacks",
+            "variant": "creature that uses a blowgun with poison and slows its descent"
+        }
+    ]
+}

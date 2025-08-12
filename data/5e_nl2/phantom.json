@@ -1,0 +1,55 @@
+{
+    "name": "Phantom",
+    "creature_type": "Undead",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 40 ft., hover; no walking",
+    "role": null,
+    "tags": [
+        "undead",
+        "ghost",
+        "fear",
+        "paralyze"
+    ],
+    "adjectives": [
+        "spectral",
+        "chilling",
+        "lost",
+        "formidable"
+    ],
+    "description": "The Phantom embodies the essence of lost souls, drifting with a chilling presence. It has a ghostly appearance, capable of moving through solid objects, and uses its abilities to instill fear in foes.",
+    "memorable": "Its ability to paralyze and frighten opponents sets it apart, alongside its vulnerability to sunlight, which hampers its effectiveness.",
+    "goals": "To instill fear and harm living beings, often lingering in places of sorrow or regret.",
+    "relations": "May be encountered alongside other undead or haunt entities.",
+    "environment": "Often found in haunted locations, graveyards, or places with strong emotional ties.",
+    "strengths": "Incorporeal movement allows it to pass through obstacles; immune to many damaging effects.",
+    "weaknesses": "Significantly weakened during sunlight, suffering disadvantages on rolls.",
+    "attacks": "Ghostly Grasp deals necrotic damage, while Chilling Moan can frighten and paralyze targets.",
+    "most_powerful_ability": "Chilling Moan, causing fear and potential paralysis to multiple targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to cold, necrotic, and poison damage",
+        "Resistant to various elemental damage types",
+        "Can move through objects as if in difficult terrain",
+        "Condition immunities include charmed, frightened, and paralyzed",
+        "Presence of lost souls creates an eerie atmosphere"
+    ],
+    "damage_types": [
+        "necrotic",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ghostly creature that instills fear",
+        "undead that can paralyze and frighten",
+        "spectral entity vulnerable to sunlight",
+        "lost soul drifting through the world",
+        "phantom with incorporeal movement abilities"
+    ]
+}

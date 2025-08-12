@@ -1,0 +1,51 @@
+{
+    "name": "Zombie Horde",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 75,
+    "ac": 8,
+    "srd": false,
+    "cr": "4",
+    "movement": "slow walking speed of 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "zombie",
+        "horde",
+        "dangerous"
+    ],
+    "adjectives": [
+        "relentless",
+        "formidable",
+        "durable",
+        "dangerous"
+    ],
+    "description": "A large, collective entity made up of numerous zombies, showcasing a decaying, rotting appearance that instills dread.",
+    "memorable": "Regenerates hit points by grappling and defeating foes, and can split into two zombies upon reaching 0 hit points.",
+    "goals": "To overwhelm and consume the living by outnumbering and grappling them.",
+    "relations": "May be accompanied by other undead creatures or spells that summon zombies.",
+    "environment": "Typically found in graveyards, battlefields, or abandoned areas where undead are prevalent.",
+    "strengths": "Very durable with a total of 75 hit points and can regenerate health through attacks.",
+    "weaknesses": "Vulnerable to bludgeoning damage, taking double damage from it, and susceptible to area effects.",
+    "attacks": "Utilizes a 'Grab' action to inflict bludgeoning damage and a 'Bite' action that deals significant piercing damage to grappled targets.",
+    "most_powerful_ability": "Ability to split into two zombies when reduced to 0 hit points ensures continued danger.",
+    "senses": "Possesses darkvision, allowing it to see in darkness up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage, fatigue, and poisoned condition.",
+        "Does not require air, food, or sleep due to its undead nature.",
+        "Horde can move through openings large enough for one Medium creature."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead monster made of zombies",
+        "horde of zombies regenerating health",
+        "creature that splits into zombies when defeated",
+        "undead foe that grapples and bites",
+        "dangerous collective of undead creatures"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Speaker to the Darkness",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 135,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 25 ft.",
+    "role": "Controller",
+    "tags": [
+        "necromancer",
+        "summoner",
+        "fear",
+        "darkness"
+    ],
+    "adjectives": [
+        "chaotic",
+        "terrifying",
+        "dark",
+        "menacing"
+    ],
+    "description": "A small, humanoid creature with a dark and terrifying presence, clad in scale mail. It embodies chaotic evil and has a notable ability to instill fear in its opponents.",
+    "memorable": "The ability to summon ghasts and create magical darkness enhances its control over the battlefield.",
+    "goals": "To dominate and instill dread in its enemies using fear and necromancy.",
+    "relations": "Potentially aligned with other chaotic evil creatures and necromancers.",
+    "environment": "Often found in dark, foreboding places that suit its chaotic evil nature.",
+    "strengths": "High hit points and specialized abilities focusing on fear and necrotic damage make it a formidable opponent.",
+    "weaknesses": "Particularly vulnerable to radiant damage, decreasing its effectiveness in combat.",
+    "attacks": "Makes melee and ranged attacks with a quarterstaff and sling, capable of inflicting bludgeoning and necrotic damage.",
+    "most_powerful_ability": "Boon of the Bat, allowing it to frighten opponents with its attacks.",
+    "equipment": "Quarterstaff and sling.",
+    "senses": "Possesses darkvision, enhancing its ability to perceive in low-light conditions.",
+    "skills": "Demonstrates proficiency in Dexterity saving throws, evading many attacks effectively.",
+    "additional_information": [
+        "Immune to frightened condition, providing resilience against fear tactics.",
+        "Can create a significant tactical advantage with magical darkness.",
+        "Conjures ghasts to overwhelm enemies.",
+        "Can inflict necrotic damage, adding complexity to its melee attacks.",
+        "Utilizes a strategic combat style based on fear and darkness."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small dark humanoid that summons undead",
+        "evil creature using fear-based tactics",
+        "monster that creates magical darkness",
+        "humanoid with necrotic attacks and ghasts",
+        "creature embodying chaotic evil and controlling fear"
+    ]
+}

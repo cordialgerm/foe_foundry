@@ -1,0 +1,47 @@
+{
+    "name": "Giant Mongoose",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "scout",
+        "agile"
+    ],
+    "adjectives": [
+        "nimble",
+        "stealthy"
+    ],
+    "description": "The Giant Mongoose is an agile creature known for its exceptional speed and dexterity. It features a sleek body built for stealth, enabling it to act as a scout and ambush predator.",
+    "memorable": "The Giant Mongoose has keen senses allowing it to excel at avoiding detection and a notable defensive ability that boosts its survivability.",
+    "goals": "To seek food, evade predators, and scout areas for potential threats.",
+    "relations": "Might be found in packs with other similar beasts or interacting with their environment, hunting small prey.",
+    "environment": "Commonly found in varied environments as a clever and agile creature.",
+    "strengths": "Exceptional dexterity and stealth, with a strong ability to resist poison damage.",
+    "weaknesses": "Low intelligence and charisma score limit its problem-solving and social interaction capabilities.",
+    "attacks": "Bite attack dealing piercing damage with good accuracy and reach.",
+    "most_powerful_ability": "Keen Hearing and Smell grants it advantage on perception checks based on those senses.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet allowing it to see in low-light conditions.",
+    "skills": "Proficient in stealth with a high bonus, making it hard to detect.",
+    "additional_information": [
+        "Resistant to poison damage and immune to being poisoned.",
+        "Excellent defensive ability through Defensive Roll to evade attacks.",
+        "Very high dexterity contributes to its agility and efficacy in moving."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fast and stealthy small creature",
+        "nimble beast with keen senses",
+        "mongoose that excels at scouting",
+        "agile predator immune to poison",
+        "beast known for defensive abilities"
+    ]
+}

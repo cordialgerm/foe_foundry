@@ -1,0 +1,51 @@
+{
+    "name": "Glacier Behemoth",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "burrow 20 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "behemoth",
+        "cold immune",
+        "terrain manipulator"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "powerful"
+    ],
+    "description": "The Glacier Behemoth is a massive creature known for its bulk and power, with thick natural armor protecting its body.",
+    "memorable": "Its ability to manipulate terrain into difficult ground and deliver devastating melee attacks makes it a formidable opponent.",
+    "goals": "The Glacier Behemoth likely seeks to establish dominance over its territory and crush any threats with its physical strength.",
+    "relations": "It may be encountered in the company of other icy or mountainous creatures.",
+    "environment": "Typically found in cold or icy regions.",
+    "strengths": "Exceptional physical strength and resilience, with immunity to cold damage and the ability to control the battlefield terrain.",
+    "weaknesses": "Very low dexterity makes it easy to hit, and it lacks intelligence or charisma.",
+    "attacks": "Performs powerful multiattacks with its bite, causing substantial piercing damage, and can charge through opponents for bludgeoning damage.",
+    "most_powerful_ability": "Ground Disruptor ability allows it to turn terrain into difficult ground while moving.",
+    "senses": "Possesses tremorsense and darkvision, with a passive perception of 16 for heightened awareness.",
+    "skills": "Proficient in athletics, showcasing its incredible strength, and perception to detect hidden creatures.",
+    "additional_information": [
+        "Immune to cold damage and several conditions.",
+        "Can move through difficult terrain without penalty.",
+        "Highly effective at grappling with a strength of 24.",
+        "Capable of executing an Inexorable Charge that does not provoke opportunity attacks.",
+        "Average wisdom aids in perception checks."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive cold immune creature that disrupts terrain",
+        "behemoth that charges and knocks creatures prone",
+        "hulking creature with powerful melee attacks",
+        "ice terrain manipulator with devastating bite attack",
+        "huge beast that can move through difficult terrain"
+    ]
+}

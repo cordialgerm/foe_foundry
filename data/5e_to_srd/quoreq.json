@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are medium aberrations with unsettling appearances and abilities that instill fear."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares chaotic aberration traits and fear-inducing presence with multiple attacks."
+  },
+  "monster_key": "quoreq"
+}

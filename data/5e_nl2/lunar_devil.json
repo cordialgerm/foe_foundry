@@ -1,0 +1,53 @@
+{
+    "name": "Lunar Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 94,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "60 ft. walking, 40 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "devil",
+        "summoner",
+        "magic-resistant"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "manipulative",
+        "translucent"
+    ],
+    "description": "The Lunar Devil is a large, translucent fiend that excels in both melee combat and magical manipulation, utilizing moonlight to enhance its abilities.",
+    "memorable": "Its ability to blend into moonlight and summon allies makes it a unique and tactical foe.",
+    "goals": "Typically aims to manipulate and overpower adversaries using cunning tactics and magical abilities.",
+    "relations": "May serve other powerful fiends or operate independently in dark, moonlit areas.",
+    "environment": "Often found in dark, moonlit places, such as forests or mountainous terrain.",
+    "strengths": "Immunity to fire and poison damage, exceptional physical attributes, and the ability to see through magical darkness.",
+    "weaknesses": "Vulnerable in brightly lit environments due to its reliance on darkness.",
+    "attacks": "Engages in combat using its Bite, Claw, and Tail, or strikes with Hurl Moonlight to deal cold damage and potentially blind enemies.",
+    "most_powerful_ability": "Can summon up to four giant owls or potentially another Lunar Devil, significantly increasing its combat presence.",
+    "senses": "Possesses darkvision up to 120 feet, which allows it to navigate complete darkness effectively.",
+    "skills": "Proficient in Perception, offering keen insight into its surroundings.",
+    "additional_information": [
+        "Utilizes moonlight to provide defensive advantages.",
+        "Gains magical resistance, making it harder to affect with spells.",
+        "Can teleport short distances between areas of moonlight.",
+        "Bite attacks include both piercing and cold damage.",
+        "Ability to cast spells adds to its tactical flexibility."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast spells like fly and major image at will, and has access to greater invisibility and wall of ice.",
+    "test_queries": [
+        "fiend with moonlight abilities",
+        "translucent devil that summons allies",
+        "devil immune to fire attacks",
+        "large fiend with powerful melee strikes",
+        "cunning creature that manipulates darkness"
+    ]
+}

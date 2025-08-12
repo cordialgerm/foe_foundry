@@ -1,0 +1,50 @@
+{
+    "name": "Snow Cat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "climb 40 ft. walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "predator",
+        "snow"
+    ],
+    "adjectives": [
+        "agile",
+        "elusive",
+        "perceptive"
+    ],
+    "description": "The Snow Cat is a medium-sized, agile beast thriving in snowy terrains. It has a sleek body with strong limbs, sharp claws, and a keen sense of its surroundings.",
+    "memorable": "This ambush predator excels in snowy environments and can grapple surprised prey, making it a stealthy threat.",
+    "goals": "Hunting prey and surviving in its cold habitat.",
+    "relations": "Can be encountered alongside other snowy beasts.",
+    "environment": "Snowy terrains and cold environments.",
+    "strengths": "Highly agile with keen senses, allowing it to be an effective ambusher.",
+    "weaknesses": "Low hit points make it fragile in prolonged encounters.",
+    "attacks": "Bite attack deals piercing damage; claw attack inflicts slashing damage.",
+    "most_powerful_ability": "Stalker ability lets it grapple surprised foes efficiently.",
+    "equipment": null,
+    "senses": "Possesses keen senses, granting advantage on perception checks related to sight, hearing, or smell.",
+    "skills": "Skilled in stealth and perception, making it difficult to detect.",
+    "additional_information": [
+        "Advantage on Dexterity (Stealth) checks in snow.",
+        "Effective ambush predator with outdoor survival skills.",
+        "Low intelligence reflects basic instincts.",
+        "Relies on stealth and surprise for hunting.",
+        "Can climb quickly to escape threats or reposition."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile predator in snowy terrain",
+        "stealthy beast that grapples prey",
+        "snow camouflage hunting animal",
+        "medium-sized ambush predator with keen senses",
+        "climbing snow cat that hunts effectively"
+    ]
+}

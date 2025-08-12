@@ -1,0 +1,25 @@
+{
+    "name": "Yumerai",
+    "queries": [
+        {
+            "query": "dream-manipulating fey creature that uses psychic attacks",
+            "variant": "fey creature that manipulates dreams and utilizes psychic attacks"
+        },
+        {
+            "query": "medium-sized monster with stealth and dream abilities",
+            "variant": "medium monster known for its stealth and dream manipulation abilities"
+        },
+        {
+            "query": "creature that controls dreams and deals psychic damage",
+            "variant": "monster that inflicts psychic harm and commands dreams"
+        },
+        {
+            "query": "Yumerai abilities in battle and psychic resistances",
+            "variant": "abilities of Yumerai during combat and its resistance to psychic damage"
+        },
+        {
+            "query": "fey that communicates telepathically and manipulates sleeping creatures",
+            "variant": "fey creature that can communicate through telepathy and influences sleeping beings"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Hydra",
+    "queries": [
+        {
+            "query": "multi-headed water monster that regenerates heads",
+            "variant": "water monster with multiple heads and head regeneration"
+        },
+        {
+            "query": "massive reptilian creature found in swamps with poisonous attacks",
+            "variant": "huge reptile found in swamps that has poison attacks"
+        },
+        {
+            "query": "serpentine body creature that strikes from water and has tough armor",
+            "variant": "creature with a serpentine body that attacks from the water and has tough armor"
+        },
+        {
+            "query": "monstrous swamp dweller with high hit points and reactive heads",
+            "variant": "big swampland monster with a lot of hit points and reactive heads"
+        },
+        {
+            "query": "giant creature with multiple heads and high damage capability in combat",
+            "variant": "huge monster with many heads and strong damage potential in battle"
+        }
+    ]
+}

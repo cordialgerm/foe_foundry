@@ -1,0 +1,53 @@
+{
+    "name": "Sunflower Sprite",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 14,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "healer",
+        "nature"
+    ],
+    "adjectives": [
+        "small",
+        "radiant",
+        "fragile",
+        "agile"
+    ],
+    "description": "The Sunflower Sprite is a small fey creature with radiant abilities, embodying a connection to nature. It is agile and thrives in sunlight, featuring a vibrant appearance and mystical charm.",
+    "memorable": "Magic resistance and the ability to communicate with plants makes it unique among fey creatures.",
+    "goals": "To provide utility and support to allies while maintaining harmony with nature.",
+    "relations": "May be encountered with other fey creatures or woodland beings.",
+    "environment": "Typically found in sunny natural environments, thriving in areas rich with vegetation.",
+    "strengths": "Has magic resistance that enhances survivability against spells and can heal allies.",
+    "weaknesses": "Becomes less effective at night or underground, suffering disadvantage on initiative and perception checks.",
+    "attacks": "Uses Radiant Leaf for melee slashing and radiant damage, and Light Ray for ranged radiant attacks.",
+    "most_powerful_ability": "Healing Radiance allows nearby allies to regain health, but its use is limited to sunlight exposure.",
+    "equipment": null,
+    "senses": "Has a passive perception of 14, allowing it to detect hidden foes and hazards effectively.",
+    "skills": "Possesses perception skill proficiency, enhancing its ability to notice details in the environment.",
+    "additional_information": [
+        "Affected by sunlight, enhancing abilities and limiting healing in darkness.",
+        "Can shed light in varying radii, useful for illuminating dark areas.",
+        "Capable of influencing nature around them through communication with plants.",
+        "Fragile with low hit points, best utilized in supportive roles.",
+        "Notable for its connection to the natural world and vibrant personality."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fey creature with radiant abilities",
+        "sprite that heals allies in sunlight",
+        "nature-based creature that communicates with plants",
+        "fragile radiant sprite thriving in sunlit areas",
+        "agile creature with magic resistance and light powers"
+    ]
+}

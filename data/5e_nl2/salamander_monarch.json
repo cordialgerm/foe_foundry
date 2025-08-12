@@ -1,0 +1,55 @@
+{
+    "name": "Salamander Monarch",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 161,
+    "ac": 17,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "elemental",
+        "spellcaster",
+        "tactical"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "vengeful",
+        "fiery"
+    ],
+    "description": "The Salamander Monarch is a large elemental that embodies a fusion of fire and authority, characterized by its fiery nature and imposing presence.",
+    "memorable": "It has the ability to deal fire damage to those who come into contact with it and enhances the capabilities of allied salamanders.",
+    "goals": "To dominate its territory and support its allies in combat through powerful abilities.",
+    "relations": "Often found commanding other salamanders, this creature is a key figure within elemental hierarchies.",
+    "environment": "Typically found in fiery or volcanic regions, thriving in extreme heat.",
+    "strengths": "Immunity to fire damage and resistance to nonmagical attacks, coupled with potent fire-based abilities.",
+    "weaknesses": "Vulnerable to cold damage, which can be a tactical advantage for opponents.",
+    "attacks": "Can strike with a bludgeoning tail attack and a versatile trident, both delivering additional fire damage.",
+    "most_powerful_ability": "The *Immolating Crest* creates a hazardous area that inflicts massive fire damage and sets targets ablaze, requiring immediate tactical attention.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in arcana and intimidation, allowing it to navigate both combat and social scenarios effectively.",
+    "additional_information": [
+        "Heated Body causes damage to creatures that strike it in melee.",
+        "Heated Weapons infuse its metal weapons with extra fire damage.",
+        "Inspiring Sovereign grants allies enhanced attack and saving throws.",
+        "Innate spellcasting allows for versatile fire spells without materials.",
+        "Can summon a fire elemental once per day for additional support."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting with spells like flaming sphere and heat metal, providing area and ongoing damage.",
+    "test_queries": [
+        "powerful fire elemental commanding allies",
+        "large salamander with fire abilities",
+        "elemental creature that boosts allies",
+        "monarch of fire with powerful area attacks",
+        "dangerous fire-based creature found in lava"
+    ]
+}

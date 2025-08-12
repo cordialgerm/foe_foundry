@@ -1,0 +1,25 @@
+{
+    "name": "Stone Guardian",
+    "queries": [
+        {
+            "query": "large construct with high hit points and heavy attacks",
+            "variant": "large construct that has high HP and deals heavy damage"
+        },
+        {
+            "query": "stone creature that resists magic and has slow abilities",
+            "variant": "stone being that has magic resistance and the ability to slow"
+        },
+        {
+            "query": "guardian that is immune to form changes and has a strong slam attack",
+            "variant": "guardian immune to changing its form and capable of a powerful slam attack"
+        },
+        {
+            "query": "constructed monster with 178 hit points and defensive abilities",
+            "variant": "constructed creature with 178 HP and good defensive skills"
+        },
+        {
+            "query": "large stone guardian that can attack from distance and cause status effects",
+            "variant": "large rock guardian able to strike from afar and inflict status conditions"
+        }
+    ]
+}

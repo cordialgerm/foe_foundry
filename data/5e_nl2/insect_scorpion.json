@@ -1,0 +1,52 @@
+{
+    "name": "Insect, Scorpion",
+    "creature_type": "Beast",
+    "alignment": "null",
+    "size": "Tiny",
+    "hp": 8,
+    "ac": 11,
+    "srd": false,
+    "cr": "0",
+    "movement": "slow, 10 feet speed",
+    "role": null,
+    "tags": [
+        "poison",
+        "stealth",
+        "insect"
+    ],
+    "adjectives": [
+        "tiny",
+        "fragile",
+        "venomous"
+    ],
+    "description": "A tiny beast with a natural armor that provides low defense and a piercing sting as its primary means of attack.",
+    "memorable": "Its sting can deliver both piercing and additional poison damage, making it a potential threat to weaker opponents.",
+    "goals": "To ambush unsuspecting prey using stealth tactics.",
+    "relations": "Typically found in environments shared with other small predators.",
+    "environment": "Commonly found in arid or rocky regions.",
+    "strengths": "Capable of stealth with a moderate Stealth score, allowing it to ambush its targets effectively.",
+    "weaknesses": "Very low hit points and inadequate physical attributes render it fragile in combat.",
+    "attacks": "Sting attack with a reach of 5 feet that can deal piercing damage and potentially poison the target.",
+    "most_powerful_ability": "Sting attack that may inflict additional poison damage if the target fails a saving throw.",
+    "equipment": null,
+    "senses": "Possesses keensight within a range of 10 feet, relying more on senses than sight.",
+    "skills": "Moderate proficiency in Stealth allows it to move quietly and catch prey off guard.",
+    "additional_information": [
+        "Very low Constitution and Strength scores limit its resilience and power.",
+        "Overall serves as a minor threat in combat scenarios.",
+        "Can be a nuisance more than a true danger to stronger foes.",
+        "Strikes with its sting and can ambush effectively in low visibility.",
+        "Relies on stealth tactics to survive rather than direct confrontations."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny venomous creature with a stinger",
+        "small insect that can poison its prey",
+        "ambushing insect with a poisonous sting",
+        "scorpion with natural armor and stealth",
+        "fragile tiny beast found in arid regions"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Edjet",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 14,
+    "srd": false,
+    "ac_description": "chain shirt",
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fire-breathing",
+        "combat-oriented",
+        "athletic"
+    ],
+    "adjectives": [
+        "strong",
+        "strategic",
+        "resilient"
+    ],
+    "description": "The Edjet is a medium humanoid with a strong build, wearing a chain shirt and wielding a halberd, poised for combat.",
+    "memorable": "Its Fire Breath ability delivers significant area damage, enhancing its threat in battle.",
+    "goals": "Fighting effectively in battle, supporting allies, and overcoming threats.",
+    "relations": "Often seen alongside other humanoid allies in combat.",
+    "environment": "Commonly found in areas where humanoids gather, such as towns or battlefields.",
+    "strengths": "Utilizes Martial Advantage to deal increased damage and is resistant to fire damage.",
+    "weaknesses": "Relatively low intelligence may hinder strategic planning outside of combat.",
+    "attacks": "Edjet can employ a halberd for slashing damage, a shortsword for piercing damage, and a shortbow for ranged attacks.",
+    "most_powerful_ability": "Fire Breath, allowing it to exhale fire in a cone, damaging multiple foes at once.",
+    "equipment": "Halberd, shortsword, and shortbow.",
+    "senses": "The Edjet has a passive perception of 14, making it aware of its surroundings.",
+    "skills": "Skilled in athletics and has a good perception to notice hidden threats.",
+    "additional_information": [
+        "Can use Line of Battle for advantage against fear.",
+        "Strong physical attributes with a high Strength score.",
+        "Meant to support allies in combat through strategic positioning."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium humanoid with fire breath ability",
+        "strong combatant that uses halberd",
+        "humanoid skilled in athletics and combat",
+        "lawful neutral Edjet with fire resistance",
+        "warrior that supports allies in battle"
+    ]
+}

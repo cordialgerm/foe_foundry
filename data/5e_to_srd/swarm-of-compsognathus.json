@@ -1,0 +1,7 @@
+{
+  "Swarm of Rats": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small beasts that can occupy another creature's space and use numbers to overwhelm foes."
+  },
+  "monster_key": "swarm-of-compsognathus"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "A huge aquatic beast with strong melee attacks and a powerful tail, similar in role and environment."
+  },
+  "Giant Toad": {
+    "relation": "conceptually_similar",
+    "explanation": "A large amphibious predator with toxic and melee capabilities, sharing the toxic skin and aquatic traits."
+  },
+  "monster_key": "mbielu"
+}

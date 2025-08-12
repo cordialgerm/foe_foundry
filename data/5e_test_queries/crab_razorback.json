@@ -1,0 +1,25 @@
+{
+    "name": "Razorback Crab",
+    "queries": [
+        {
+            "query": "medium-sized spiky shell monster that deals slashing damage",
+            "variant": "medium spiky shell creature that inflicts slashing damage"
+        },
+        {
+            "query": "aggressive crab that can grapple and knock opponents prone",
+            "variant": "hostile crab that grapples enemies and can knock them down"
+        },
+        {
+            "query": "Crab with a bladed shell that moves on land and burrows",
+            "variant": "crab with a sharp shell capable of walking and burrowing"
+        },
+        {
+            "query": "beast with a Strength of 16 that has high Armor Class",
+            "variant": "creature boasting 16 Strength and a strong Armor Class"
+        },
+        {
+            "query": "monster that attacks with claws and a spiky shell",
+            "variant": "creature that uses claw attacks and a sharp shell"
+        }
+    ]
+}

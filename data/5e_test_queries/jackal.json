@@ -1,0 +1,25 @@
+{
+    "name": "Jackal",
+    "queries": [
+        {
+            "query": "small quick predator that lives in deserts",
+            "variant": "small fast predator found in deserts"
+        },
+        {
+            "query": "cunning scavenger with keen senses that hunts in packs",
+            "variant": "sneaky scavenger with sharp senses that hunts in groups"
+        },
+        {
+            "query": "small beast known for packs and sharp teeth in arid plains",
+            "variant": "little beast recognized for its pack behavior and sharp fangs in dry areas"
+        },
+        {
+            "query": "agile creature that uses hearing and smell for survival",
+            "variant": "nimble animal that relies on hearing and smell to survive"
+        },
+        {
+            "query": "fast scavenger with low hit points and bite attack",
+            "variant": "quick scavenger with low HP and a biting attack"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Tophet is a Huge construct with strong physical presence and immunity to several damage types, similar to a Clay Golem."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Tophet's fiery abilities and immunity to fire damage conceptually align it with the Fire Elemental."
+  },
+  "monster_key": "tophet"
+}

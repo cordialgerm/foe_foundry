@@ -1,0 +1,54 @@
+{
+    "name": "Dread Knight Champion",
+    "creature_type": "Undead",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 346,
+    "ac": 18,
+    "srd": false,
+    "cr": "23",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "elite",
+        "necromancer",
+        "unholy"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "cursed",
+        "tactical"
+    ],
+    "description": "The Dread Knight Champion is a formidable undead with high strength and charisma, wielding a cursed greatsword that drains life.",
+    "memorable": "Its ability to turn defeated foes into zombies and its powerful necrotic attacks make it a terrifying opponent.",
+    "goals": "To conquer and recruit fallen enemies as undead minions.",
+    "relations": "Often serves dark lords or necromancers, commanding armies of undead.",
+    "environment": "Dark and foreboding locations, often where undead rise.",
+    "strengths": "Immunities to various damage types and conditions, exceptional saving throw modifiers, and powerful area control abilities.",
+    "weaknesses": "Limited to specific damage weaknesses such as fire against ice walls.",
+    "attacks": "Uses a cursed greatsword to inflict slashing and necrotic damage, also capable of area fire damage and necrotic attacks.",
+    "most_powerful_ability": "Can deal substantial necrotic damage while reducing hit point maximums and summoning undead.",
+    "equipment": "Cursed greatsword named Legion, enhancing attacks and transferring life from victims.",
+    "senses": "Possesses truesight up to 60 feet, allowing it to see through magical darkness.",
+    "skills": "Excels in intimidation and has keen perception, making it difficult to surprise.",
+    "additional_information": [
+        "Undead nature allows it to operate without air, food, or sleep.",
+        "Has an aura that provides advantages on saving throws for allies.",
+        "Can summon a fiendish steed to aid in combat.",
+        "Ability to break magic effects enhances its versatility.",
+        "Creates ice walls for battlefield control and damage."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead knight with life-draining sword",
+        "powerful undead that summons zombies",
+        "necromancer knight with fiendish mount",
+        "undead champion with magical powers",
+        "formidable foe with ice walls and fire blasts"
+    ]
+}

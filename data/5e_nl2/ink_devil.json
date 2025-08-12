@@ -1,0 +1,52 @@
+{
+    "name": "Ink Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Small",
+    "hp": 54,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "stealth",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "small",
+        "manipulative",
+        "cunning"
+    ],
+    "description": "The Ink Devil is a small fiend with a shadowy form, characterized by a smooth, dark surface that seems to absorb light, making it hard to spot in dim conditions.",
+    "memorable": "The Ink Devil's ability to mark targets and disrupt spellcasters makes it a unique and dangerous foe, especially in battles against magic users.",
+    "goals": "To manipulate and mislead adventurers, create chaos among spellcasters, and assist its devilish allies in combat.",
+    "relations": "Often encountered alongside other fiends, especially devils who benefit from its marking abilities.",
+    "environment": "Typically found in dark, shadowy locales or places with strong magical presence.",
+    "strengths": "Immunity to fire and poison damage, resistance to cold and nonmagical attacks, and magic resistance for heightened durability versus spells.",
+    "weaknesses": "Low Wisdom score making it vulnerable to mental effects.",
+    "attacks": "Utilizes Claw attacks to deal slashing damage, and its main attack, Devil's Ink, to inflict poison damage while marking targets for its allies.",
+    "most_powerful_ability": "Devil's Ink, which marks targets to grant advantages for its allies and disadvantages on saving throws for the victims.",
+    "equipment": null,
+    "senses": "Possesses Devil\u2019s Sight, allowing it to see through magical darkness.",
+    "skills": "Highly proficient in Arcana and History, supporting its strong manipulation and knowledge abilities.",
+    "additional_information": [
+        "Can turn invisible for surprise attacks.",
+        "Skilled in deception and stealth, enhancing its stealth tactics.",
+        "Capable of corrupting scrolls, hindering spellcasters.",
+        "Uses Disrupt Concentration to control enemy spellcasters.",
+        "Can cast spells at will without needing material components."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast detect magic and illusory script at will, and glyph of warding once per day.",
+    "test_queries": [
+        "small cunning fiend that marks targets",
+        "ink devil shadows disrupt spellcasters",
+        "fiend that uses poison and deception",
+        "devil that thrives in magical darkness",
+        "manipulative creature with invisibility powers"
+    ]
+}

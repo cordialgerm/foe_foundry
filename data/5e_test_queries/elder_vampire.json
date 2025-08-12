@@ -1,0 +1,25 @@
+{
+    "name": "Elder Vampire",
+    "queries": [
+        {
+            "query": "powerful undead creature that can manipulate and charm",
+            "variant": "undead powerful creature that can charm and manipulate"
+        },
+        {
+            "query": "creature vulnerable to sunlight and running water with high hit points",
+            "variant": "monster with high hit points that is vulnerable to sunlight and running water"
+        },
+        {
+            "query": "medium vampire known for its regeneration and agility",
+            "variant": "vampire medium creature recognized for regeneration and agility"
+        },
+        {
+            "query": "tough undead monster that can shapeshift and drain life",
+            "variant": "undead tough monster that drains life and can shapeshift"
+        },
+        {
+            "query": "hunter in the dark able to charm opponents and regenerate health",
+            "variant": "dark hunter that can charm enemies and regenerate health"
+        }
+    ]
+}

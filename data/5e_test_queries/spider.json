@@ -1,0 +1,25 @@
+{
+    "name": "Spider",
+    "queries": [
+        {
+            "query": "tiny web-spinning creature that lives in dark places",
+            "variant": "tiny web spinning creature living in dark areas"
+        },
+        {
+            "query": "stealthy arachnid with venomous bite found in caves",
+            "variant": "stealthy spider with a venomous bite that can be found in caves"
+        },
+        {
+            "query": "small predator with web sense and climbing abilities",
+            "variant": "small predatory creature with web sense and ability to climb"
+        },
+        {
+            "query": "creature that can climb walls and uses webs for ambush",
+            "variant": "being able to climb walls and uses webs for ambushing"
+        },
+        {
+            "query": "insect that can inflict poison damage and has darkvision",
+            "variant": "insect capable of inflicting poison damage and possessing darkvision"
+        }
+    ]
+}

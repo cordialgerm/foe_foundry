@@ -1,0 +1,53 @@
+{
+    "name": "Blood Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 8,
+    "srd": false,
+    "cr": "6",
+    "movement": "climb 20 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "necrotic",
+        "amorphous",
+        "blood"
+    ],
+    "adjectives": [
+        "dangerous",
+        "resilient",
+        "formidable"
+    ],
+    "description": "The Blood Ooze is a large, amorphous creature that inflicts devastating necrotic damage while healing itself by draining life from its foes. Its body lacks distinct features but moves fluidly, capable of climbing surfaces with ease.",
+    "memorable": "Its unique ability to heal itself by draining necrotic energy from attackers makes it a persistent threat in battle.",
+    "goals": "To drain the life force from its enemies and sustain itself in combat.",
+    "relations": "May be encountered in lairs with other oozes or in places where blood is spilled.",
+    "environment": "Commonly found in damp, dark areas or where there is a high concentration of blood.",
+    "strengths": "Immunities to multiple damage types and conditions, combined with its ability to heal itself through damage dealt.",
+    "weaknesses": "Very low Dexterity makes it vulnerable to ranged attacks and dexterous foes.",
+    "attacks": "Pseudopod attack inflicts bludgeoning and additional necrotic damage, while allowing it to heal itself.",
+    "most_powerful_ability": "Blood Drain ability enables the ooze to regain temporary hit points while damaging attackers.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet allows it to detect creatures without relying on sight.",
+    "skills": "The ooze is highly resilient to damage due to its immunities against acid, fire, necrotic, and slashing damage.",
+    "additional_information": [
+        "Can move through spaces as narrow as 1 inch wide without squeezing.",
+        "Can climb difficult surfaces and ceilings without issue.",
+        "Takes no damage from conditions affecting its senses and status effects.",
+        "Regains temporary hit points from necrotic damage dealt to others.",
+        "Ceiling navigation allows it to ambush from unconventional angles."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable ooze that drains life",
+        "blood draining monster",
+        "necrotic ooze",
+        "amorphous creature in combat",
+        "large ooze enemy with healing ability"
+    ]
+}

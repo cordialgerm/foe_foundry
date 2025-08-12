@@ -1,6 +1,8 @@
 <MonsterName/>Kishi</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>18</AC>
+<HP/>119</HP>
 <summary>The Kishi is a Medium-sized fiend characterized by its chaotic evil nature. As a formidable opponent, it boasts high armor class and hit points, making it resilient in combat. Its exceptional Dexterity and Charisma make the Kishi adept in both physical and magical confrontations. With a Challenge Rating of 8, it significantly endangers adventurers who underestimate its abilities. The creature is particularly dangerous due to its ability to deal both piercing and cold damage simultaneously with its attacks, alongside its robust magical resistances and skills in deception and performance, making it a cunning adversary. However, the Kishi's reliance on its magical abilities means that it may struggle against particularly powerful spellcasters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of bonus actions, the Kishi can employ "Trophy Shield," absorbing the e
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kishi
 
 *Medium* *Fiend* *Chaotic Evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Trophy Shield:** The kishi absorbs some of the essence of a creature it killed since the end of its previous turn and magically creates a grisly trophy of the creature on its shield or spear. For 1 hour, its Armor Class becomes 20, and creatures of the same type as the slain creature have disadvantage on attack rolls against the kishi.
 - **Summon Demon (1/Day):** The kishi demon magically calls 1d4 giant hyenas that are Fiends with the kishi’s damage resistances and immunities. It has a 50 percent chance of calling one kishi demon instead. The called creatures arrive in 1d4 rounds, acting as allies of the kishi and obeying its telepathic commands. The creatures remain for 1 hour, until the kishi dies, or until the kishi dismisses them as a bonus action.
+</statblock>
 
 

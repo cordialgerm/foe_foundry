@@ -1,0 +1,25 @@
+{
+    "name": "Sarsaok",
+    "queries": [
+        {
+            "query": "huge monster with fire immunity and knockdown abilities",
+            "variant": "huge monstrosity immune to fire and can knock enemies down"
+        },
+        {
+            "query": "strong creature that deals piercing damage and has a weakness to cold",
+            "variant": "powerful beast causing piercing damage and vulnerable to cold attacks"
+        },
+        {
+            "query": "monstrous beast that moves fast and causes fire damage on touch",
+            "variant": "monstrous creature with good speed that inflicts fire damage when touched"
+        },
+        {
+            "query": "battle monster with high hit points and magical gore attack",
+            "variant": "combat creature with excellent durability and magical gore attacks"
+        },
+        {
+            "query": "creature with natural armor and area control fire abilities",
+            "variant": "monster with natural defense and abilities to control areas with fire"
+        }
+    ]
+}

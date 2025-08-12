@@ -1,0 +1,50 @@
+{
+    "name": "Ogre Zombie",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 8,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 feet walk speed",
+    "role": null,
+    "tags": [
+        "undead",
+        "zombie",
+        "brute"
+    ],
+    "adjectives": [
+        "massive",
+        "decayed",
+        "relentless"
+    ],
+    "description": "The Ogre Zombie is a reanimated corpse of an ogre, with decaying flesh and a massive, bulky frame. It is mindless and attacks with brute force using a Greatclub.",
+    "memorable": "Its ability to remain standing after fatal damage creates a daunting challenge for adventurers.",
+    "goals": "Typically used as shock troops by necromancers, charging into battle fearlessly.",
+    "relations": "Often encountered alongside other undead creatures or serving dark wizards.",
+    "environment": "Commonly found in regions associated with necromancy or among undead hordes.",
+    "strengths": "High strength and durability with immunity to poison and exhausting conditions.",
+    "weaknesses": "Low Dexterity and poor Intelligence, making it vulnerable to finesse attacks.",
+    "attacks": "Employs powerful melee strikes with a Greatclub, and can inflict damage with additional attacks like Bite or grab foes.",
+    "most_powerful_ability": "Undead Fortitude allows it to potentially drop to 1 hit point instead of 0 when reduced.",
+    "equipment": "Greatclub as its primary weapon.",
+    "senses": "It can see in dim light through darkvision up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immune to conditions affecting living beings such as fatigue and poison.",
+        "Lumbering Charge ability to push through enemies while damaging them.",
+        "Can heal itself from bites inflicted on grappling targets.",
+        "Mindless and lacks strategic capabilities.",
+        "Limited interaction; understands some languages but cannot speak."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead creature with great strength",
+        "mindless zombie that uses a club",
+        "brute undead monster that charges into battle",
+        "relentless ogre zombie with high durability",
+        "massive creature immune to poison effects"
+    ]
+}

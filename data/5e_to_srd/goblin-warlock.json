@@ -1,0 +1,11 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Goblin Warlock is a goblin variant with magical abilities and spellcasting."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a small humanoid spellcaster using arcane magic and illusions."
+  },
+  "monster_key": "goblin-warlock"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Rock Salamander",
+    "queries": [
+        {
+            "query": "tiny elemental creature that burrows through stone",
+            "variant": "small elemental that can dig through stone"
+        },
+        {
+            "query": "stealthy rock creature with earth manipulation abilities",
+            "variant": "rocky stealth creature that manipulates earth"
+        },
+        {
+            "query": "creature with immunity to poison that lives in rocky terrain",
+            "variant": "poison immune creature found in rocky environments"
+        },
+        {
+            "query": "agile creature with darkvision and tremorsense",
+            "variant": "fast creature that has darkvision and feels vibrations"
+        },
+        {
+            "query": "Rock Salamander special abilities and combat tactics",
+            "variant": "abilities and battle strategies of the Rock Salamander"
+        }
+    ]
+}

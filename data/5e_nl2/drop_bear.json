@@ -1,0 +1,49 @@
+{
+    "name": "Drop Bear",
+    "creature_type": "Beast",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 42,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 feet walking and climbing",
+    "role": "Ambusher",
+    "tags": [
+        "beast",
+        "ambush",
+        "forest"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "large"
+    ],
+    "description": "The Drop Bear is a large beast with a robust physical appearance, designed to ambush unsuspecting adventurers from trees. It has significant strength and sharp claws for melee combat.",
+    "memorable": "Its unique ability to fall from heights without taking damage and deliver extra impact when attacking makes it particularly dangerous.",
+    "goals": "Typically ambushes unsuspecting prey in forested environments.",
+    "relations": "May share territory with other forest beasts or be prey for larger predators.",
+    "environment": "Forested areas where it can utilize climbing and stealth.",
+    "strengths": "High Strength score allows for significant melee damage and great endurance.",
+    "weaknesses": "Poor Intelligence and Charisma limit its tactical capabilities outside combat.",
+    "attacks": "Utilizes multiattack for claw and bite attacks, capable of grappling smaller foes.",
+    "most_powerful_ability": "The Drop ability allows it to fall from heights unharmed and to deal extra damage with a prone effect.",
+    "senses": "Possesses keen smell which grants it advantage on perception checks related to smell.",
+    "skills": "Proficient in perception, giving it a decent passive perception of 13.",
+    "additional_information": [
+        "Can climb trees and remain stealthy.",
+        "Deals extra damage and knocks targets prone after falling from a height.",
+        "Able to grapple Medium or smaller creatures.",
+        "Mobile with equal speed on ground and when climbing.",
+        "Effective ambush predator using environment to its advantage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large ambush beast in forests",
+        "predator that falls from trees",
+        "stealthy creature with keen smell",
+        "climbing monster that grapples prey",
+        "drop ability beast attacking from above"
+    ]
+}

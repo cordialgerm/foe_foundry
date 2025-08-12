@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fearsome, dread-inducing fiendish creatures with necrotic or dark abilities and intimidating presences."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "The Dullahan's undead-like, headless form and necrotic powers resemble the spectral and fearsome nature of a Wraith."
+  },
+  "monster_key": "dullahan"
+}

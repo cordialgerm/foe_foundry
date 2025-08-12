@@ -1,0 +1,55 @@
+{
+    "name": "Fey Revenant",
+    "creature_type": "Fey",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 161,
+    "ac": 19,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "undead",
+        "stealth",
+        "spell resistance"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "versatile",
+        "resilient"
+    ],
+    "description": "The Fey Revenant embodies the cunning and danger of the fey realm, featuring a shadowy appearance with thorny spikes along its body. It can move through shadows and has a ghostly aura.",
+    "memorable": "Its ability to teleport through shadows and damage through touch makes it both unpredictable and perilous in combat.",
+    "goals": "Typically preys on the living and seeks revenge on its enemies.",
+    "relations": "Often associated with other fey creatures or as a servant to powerful fey lords.",
+    "environment": "Typically found in dark forests, shadowy glades, or places of strong fey influence.",
+    "strengths": "High dexterity and constitution, magical resistance, and impressive stealth skills.",
+    "weaknesses": "Sensitive to sunlight, suffering disadvantages on attacks and perception checks in bright light.",
+    "attacks": "Attacks with a shortsword or longbow, adding poison damage, and can restrain enemies with icy shadows.",
+    "most_powerful_ability": "The Shadow Traveler ability allows it to teleport and avoid danger swiftly.",
+    "equipment": null,
+    "senses": "Can see through magical darkness and has darkvision up to 120 feet.",
+    "skills": "Excels in stealth and perception, allowing it to avoid detection and notice hidden threats.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Resistant to bludgeoning and piercing damage.",
+        "Thorn Body ability punishes melee attackers.",
+        "Shadow Sight enables it to see in magical darkness.",
+        "Can use Queen's Grasp to restrain and damage enemies."
+    ],
+    "damage_types": [
+        "poison",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy figure with poisonous touch",
+        "large fey creature that teleports from darkness",
+        "lawful evil fey with thorny body",
+        "stealthy monster that attacks in shadows",
+        "dangerous fey with magical resistance"
+    ]
+}

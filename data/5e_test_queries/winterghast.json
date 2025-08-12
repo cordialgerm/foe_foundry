@@ -1,0 +1,25 @@
+{
+    "name": "Winterghast",
+    "queries": [
+        {
+            "query": "undead monster that inflicts cold and necrotic damage",
+            "variant": "monster that is undead and deals necrotic and cold damage"
+        },
+        {
+            "query": "creature that spreads disease and causes paralysis",
+            "variant": "being that causes paralysis and can spread disease"
+        },
+        {
+            "query": "sinister undead with a toxic stench and fire vulnerability",
+            "variant": "undead that has a toxic smell and is weak to fire"
+        },
+        {
+            "query": "chaotic evil monster immune to cold and resistant to necrotic",
+            "variant": "evil creature that resists necrotic damage and is cold immune"
+        },
+        {
+            "query": "creature with stealth skills and debilitating cold attacks",
+            "variant": "being that attacks with cold and has stealth abilities"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Tusked Skyfish",
+    "queries": [
+        {
+            "query": "large fish creature that can fly and has electrified tendrils",
+            "variant": "big flying fish monster with electric tentacles"
+        },
+        {
+            "query": "poison spray monster immune to lightning",
+            "variant": "creature that sprays poison and is immune to electric damage"
+        },
+        {
+            "query": "monster with powerful physical attacks and high hit points",
+            "variant": "creature with strong melee attacks and lots of hit points"
+        },
+        {
+            "query": "grappling creature that can intimidate with stench",
+            "variant": "monster that grapples and has a foul-smelling attack"
+        },
+        {
+            "query": "no intelligence fish-like monster with a mobile grappler ability",
+            "variant": "fish-like creature with low intelligence and grappling mobility"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Phase Giant",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft., climb 20 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "ethereal",
+        "melee",
+        "ranged"
+    ],
+    "adjectives": [
+        "formidable",
+        "exceptional",
+        "unique"
+    ],
+    "description": "The Phase Giant possesses exceptional strength and constitution, with spiky fists and the ability to shift between the Material and Ethereal Planes.",
+    "memorable": "Its ability to phase shift grants it significant tactical advantages in combat, making it a formidable opponent.",
+    "goals": "To maintain dominance on the battlefield and inflict heavy damage using both melee and ranged attacks.",
+    "relations": "May be encountered alongside other giants or ethereal creatures.",
+    "environment": "Often found in locations where the Material and Ethereal Planes are close together.",
+    "strengths": "Possesses both high hit points and damage-dealing abilities, along with its unique phase shifting.",
+    "weaknesses": "Average Dexterity makes it less agile and potentially vulnerable to ranged attacks when not shifting to the Ethereal Plane.",
+    "attacks": "Can make two powerful melee attacks with spiked fists or hurl rocks at targets from a distance.",
+    "most_powerful_ability": "Ethereal Jaunt allows the giant to avoid physical attacks and reposition itself strategically.",
+    "senses": "Passive Perception of 12 indicates moderate awareness of its surroundings.",
+    "skills": null,
+    "additional_information": [
+        "The giant has excellent melee damage output due to high Strength.",
+        "Spiked fists can grapple opponents, inflicting additional damage.",
+        "The ability to knock foes prone with ranged rock attack enhances combat control."
+    ],
+    "damage_types": [
+        "piercing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge giant that shifts between planes",
+        "giant with spiked fists and high hit points",
+        "ethereal monster that grapples opponents",
+        "powerful melee giant with ranged attack",
+        "neutral giant that can evade attacks"
+    ]
+}

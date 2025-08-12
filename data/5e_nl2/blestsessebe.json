@@ -1,0 +1,52 @@
+{
+    "name": "Blestsessebe",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 144,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "guardian",
+        "protector"
+    ],
+    "adjectives": [
+        "agile",
+        "powerful",
+        "radiant"
+    ],
+    "description": "The Blestsessebe is a large celestial creature known for its neutrality and goodness, displaying exceptional agility and a majestic appearance marked by its radiant horns.",
+    "memorable": "Known for its dual role as both a strong offensive attacker and a versatile support to allies through unique abilities.",
+    "goals": "Typically serves as a guardian or protector, intervening in battles to shield the innocent.",
+    "relations": "Might be encountered alongside other celestial beings or allies in combat, often seen as a protector.",
+    "environment": "Commonly found in areas where celestial beings intervene to maintain balance, such as sacred groves or battlefields.",
+    "strengths": "Excels in resisting magical effects and possesses strong mobility, allowing effective evasion in combat.",
+    "weaknesses": "Average intelligence may limit strategic decision-making in complex situations.",
+    "attacks": "Utilizes a combination of powerful Gore attacks and agile Hooves attacks, dealing significant piercing and bludgeoning damage.",
+    "most_powerful_ability": "Distracting Glow can incapacitate multiple enemies, granting a tactical advantage by imposing disadvantage on their attacks.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses a moderate perception skill allowing it to notice threats effectively.",
+    "additional_information": [
+        "Blur of Motion grants it advantage against ranged attacks while moving.",
+        "Freedom of Movement allows easy navigation through difficult terrain.",
+        "Magic Resistance improves its durability against spell effects.",
+        "Trampling Charge creates opportunities for bonus attacks by knocking foes prone.",
+        "Hastening Stomp enhances the speed of allies during combat."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial guardian creature",
+        "radiant protector monster",
+        "agile celestial being",
+        "powerful celestial combatant",
+        "blessed celestial protector"
+    ]
+}

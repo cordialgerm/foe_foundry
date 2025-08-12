@@ -1,0 +1,52 @@
+{
+    "name": "Alkonost",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 17,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 40 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "lightning",
+        "wind",
+        "singing"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "mystical"
+    ],
+    "description": "The Alkonost is a small, agile creature that embodies the mystique of lightning and winds. It features vibrant plumage that seems to shimmer with energy, reflecting its connection to storms.",
+    "memorable": "The Alkonost possesses a unique ability to sing a captivating melody that can damage and control the movement of its foes, making it both a charming and dangerous opponent.",
+    "goals": "The Alkonost typically seeks to protect its territory and may be drawn to stormy environments, using its abilities to take advantage of the chaos.",
+    "relations": "It may be encountered alongside other storm-related creatures or magical beings that share its affinity for the winds and lightning.",
+    "environment": "Often found in stormy regions or near bodies of water where thunderstorms frequently occur.",
+    "strengths": "Immunity to the effects of magical and natural wind makes it highly mobile in challenging environments.",
+    "weaknesses": "Low intelligence and constitution make it vulnerable to mental and physical challenges.",
+    "attacks": "Utilizes claws for slashing damage, enhanced by lightning damage when near storms.",
+    "most_powerful_ability": "Charged Melody can disable and damage opponents based on their movement, creating strategic advantages in combat.",
+    "equipment": null,
+    "senses": "Passive perception of 12 allows it to notice its surroundings fairly well.",
+    "skills": null,
+    "additional_information": [
+        "Gains additional lightning damage when in proximity to a lightning storm.",
+        "Good agility and reflexes help it evade attacks effectively.",
+        "Unique blend of storm aesthetics with a melodic ability.",
+        "Can command control over others with its song.",
+        "Resilient against environmental challenges posed by winds."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small storm creature",
+        "lightning-themed monstrosity",
+        "agile wind entity",
+        "singing creature that controls movement",
+        "storm guardian"
+    ]
+}

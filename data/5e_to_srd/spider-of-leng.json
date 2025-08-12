@@ -1,0 +1,11 @@
+{
+  "Phase Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, magical spiders with poisonous attacks and stealth capabilities."
+  },
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with magical abilities and a dangerous, otherworldly presence."
+  },
+  "monster_key": "spider-of-leng"
+}

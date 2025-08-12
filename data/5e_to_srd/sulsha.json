@@ -1,0 +1,11 @@
+{
+  "Ettercap": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, climbing humanoid creatures with ambusher roles and fear tactics."
+  },
+  "Bugbear": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large humanoids with melee and ranged combat abilities and a menacing presence."
+  },
+  "monster_key": "sulsha"
+}

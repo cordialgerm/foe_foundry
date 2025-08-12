@@ -1,0 +1,11 @@
+{
+  "Berserker": {
+    "relation": "conceptually_similar",
+    "explanation": "The Scrofin is a tactical, grappling-focused bruiser with a strong physical presence similar to a Berserker's combat style."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium fey creatures commonly found in forests and enchanted locations."
+  },
+  "monster_key": "scrofin"
+}

@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "close_cousins",
+    "explanation": "Both are shadowy, undead creatures that thrive in darkness and use necrotic damage."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a shadowy undead entity with incorporeal movement and necrotic attacks."
+  },
+  "monster_key": "umbral-shambler"
+}

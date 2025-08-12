@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant-based creatures with tendril-like limbs and a dangerous presence in natural environments."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ethereal and shadowy qualities, with a form that can blend into surroundings and manipulate foes."
+  },
+  "monster_key": "dead-mans-fingers"
+}

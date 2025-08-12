@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Tactician",
+    "queries": [
+        {
+            "query": "tactical combat construct with multiattack abilities",
+            "variant": "tactician combat construct that uses multiattack features"
+        },
+        {
+            "query": "intelligent robot that issues battlefield commands",
+            "variant": "smart robot that gives commands on the battlefield"
+        },
+        {
+            "query": "lawful neutral construct immune to poison and psychic damage",
+            "variant": "lawful neutral robot that is immune to psychic and poison"
+        },
+        {
+            "query": "medium-sized mechanical creature with high strength and intelligence",
+            "variant": "medium mechanical monster that's strong and intelligent"
+        },
+        {
+            "query": "clockwork being that lacks mobility but excels in strategy",
+            "variant": "mechanical creature with low mobility but great at strategy"
+        }
+    ]
+}

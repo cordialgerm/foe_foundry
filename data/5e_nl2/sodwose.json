@@ -1,0 +1,52 @@
+{
+    "name": "Sodwose",
+    "creature_type": "Plant",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush predator",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "The Sodwose is a cunning plant creature with a strong green appearance that blends seamlessly into grasslands, known for its agility and ambush tactics.",
+    "memorable": "It effectively uses camouflage and fear tactics to frighten foes, making it a deceptive threat in its environment.",
+    "goals": "To ambush intruders and protect its territory in grassland areas.",
+    "relations": "May be encountered alongside other grassland creatures, potentially serving as guardians of specific territories.",
+    "environment": "Typically found in grasslands.",
+    "strengths": "Exceptional Dexterity allows for quick maneuvers and effective ambush strategies.",
+    "weaknesses": "Vulnerable to fire damage, which can weaken it significantly.",
+    "attacks": "Uses multiple Grass Whip strikes to pull foes closer and deal slashing damage.",
+    "most_powerful_ability": "The Scarecrow ability instills fear in nearby creatures, forcing them to make saving throws or become frightened.",
+    "equipment": null,
+    "senses": "Has blindsight up to 120 feet, allowing it to detect creatures without relying on sight beyond that range.",
+    "skills": "Possesses an average perception modifier, which assists in noticing hidden creatures or traps.",
+    "additional_information": [
+        "Immune to poison damage",
+        "Resistant to bludgeoning and piercing attacks",
+        "Can create snares to restrain intruders",
+        "Can teleport short distances while carrying equipment",
+        "Uses psychological tactics to frighten intruders"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile ambush predator in grasslands",
+        "plant creature that blends into grass",
+        "cunning monster with fear tactics",
+        "Sodwose ambush strategies",
+        "deceptive grassland creature"
+    ]
+}

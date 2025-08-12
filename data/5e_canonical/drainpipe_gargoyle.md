@@ -1,6 +1,8 @@
 <MonsterName/>Drainpipe Gargoyle</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>15</AC>
+<HP/>45</HP>
 <summary>The Drainpipe Gargoyle is a Medium Elemental creature that serves as an interesting encounter for adventurers due to its unique abilities and elemental nature. With notable defensive capabilities, such as an Armor Class of 15 and a decent pool of Hit Points amounting to 45, it can withstand a fair amount of damage. The creature's strengths include immunities to poison damage and specific conditions like fatigue and unconsciousness, making it resilient in various combat scenarios. Its main weaknesses lie in its average Dexterity and a vulnerability to magical attacks. This creature can soar through the air at a speed of 60 feet, making it a versatile opponent that can attack from a distance as well as engage in close combat. Additionally, its Special Abilities enhance its stealth and sustainability, allowing it to blend seamlessly into its surroundings and operate without the need for air or sustenance.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Drainpipe Gargoyle is a strategic opponent that combines mobility, stealth, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drainpipe Gargoyle
 
 *Medium* *Elemental*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Spit (Recharge 5-6):** The gargoyle spits a steam of water 5 feet wide and 30 feet long. Each creature in the area makes a DC 12 Strength saving throw  taking 10 (3d6) bludgeoning damage and being pushed up to 15 feet from the gargoyle on a failure. On a success  a creature takes half damage.
 
 
+</statblock>
 
 

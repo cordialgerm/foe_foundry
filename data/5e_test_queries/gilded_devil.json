@@ -1,0 +1,25 @@
+{
+    "name": "Gilded Devil",
+    "queries": [
+        {
+            "query": "fiend with golden flail that manipulates others",
+            "variant": "fiend that has a golden flail and manipulates others"
+        },
+        {
+            "query": "medium-sized devil known for deception and magic",
+            "variant": "medium fiend recognized for its deception and magical powers"
+        },
+        {
+            "query": "lawful evil creature with special abilities in combat",
+            "variant": "creature that is lawful evil and has unique combat abilities"
+        },
+        {
+            "query": "deceptive fiend residing in darkness using fire attacks",
+            "variant": "fiend that is deceptive and uses fire attacks in darkness"
+        },
+        {
+            "query": "monster with high Armor Class that can teleport",
+            "variant": "creature with high AC able to teleport"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Water Horse",
+    "queries": [
+        {
+            "query": "fey creature that shapeshifts between horse and humanoid",
+            "variant": "faye monster shapeshifting from horse to a humanoid"
+        },
+        {
+            "query": "creature with Charming Gaze ability and can breathe in water",
+            "variant": "monster with Charming Gaze and can breathe air and water"
+        },
+        {
+            "query": "medium-sized humanoid with neutral evil alignment that loves trickery",
+            "variant": "medium humanoid creature with a neutral evil demeanor that tricks others"
+        },
+        {
+            "query": "monster that can transform into a horse and has darkvision",
+            "variant": "creature that transforms into a horse shape and has darkvision"
+        },
+        {
+            "query": "water-based monster that excels in deception and manipulation",
+            "variant": "water-dwelling creature skilled in manipulation and deceit"
+        }
+    ]
+}

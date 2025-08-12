@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as durable guardians with resistances and immunities, though the Barnyard Golem has unique poison and lightning absorption traits."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs designed to guard and defend, though Animated Armor is humanoid and lacks the poison and lightning features."
+  },
+  "monster_key": "barnyard-golem"
+}

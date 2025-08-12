@@ -1,0 +1,15 @@
+{
+  "Necrotech Bonecage Constrictor": {},
+  "Bone Devil": {},
+  "Ghoul": {},
+  "Wight": {},
+  "Giant Constrictor Snake": {
+    "relation": "conceptually_similar",
+    "explanation": "A huge constrictor creature that restrains enemies, similar in form and function but not undead or necromantic."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "An undead creature with necrotic traits, sharing the undead and necrotic theme but differing in physical form and abilities."
+  },
+  "monster_key": "necrotech-bonecage-constrictor"
+}

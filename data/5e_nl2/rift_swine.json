@@ -1,0 +1,53 @@
+{
+    "name": "Rift Swine",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Neutral",
+    "size": "Large",
+    "hp": 127,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "chaos",
+        "mutation"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "adaptable"
+    ],
+    "description": "The Rift Swine is a large aberration characterized by its chaotic nature and unpredictable mutations. It has a bulky physique suited for physical combat.",
+    "memorable": "Its ability to mutate at the beginning of each turn creates a dynamic and unpredictable combat experience.",
+    "goals": "The Rift Swine acts on its whims, embodying chaos rather than adhering to a specific goal or objective.",
+    "relations": "Related to other chaotic creatures or aberrations that embody unpredictability.",
+    "environment": "Found in areas of chaos, often within corrupted lands or places where reality is unstable.",
+    "strengths": "High resilience due to robust hit points and natural armor, enhanced by advantageous perception from its many eyes.",
+    "weaknesses": "Notable weaknesses in social interactions due to low Intelligence and Charisma.",
+    "attacks": "Can unleash devastating Tusk and Tentacle attacks, grappling enemies, or utilize Warping Bolt for ranged force damage.",
+    "most_powerful_ability": "Chaos Mutations allow it to change its combat capabilities every turn, making encounters unpredictable.",
+    "equipment": null,
+    "senses": "Gains advantage on Wisdom (Perception) checks tied to sight, enhancing its ability to detect threats.",
+    "skills": null,
+    "additional_information": [
+        "Can grapple Medium or smaller creatures with tentacle attacks.",
+        "Warping Bolt can impose disadvantage on attack rolls.",
+        "Possesses inherent force and poison damage resistance.",
+        "Has two tentacles for crowd control tactics.",
+        "Utilizes a unique mechanic that varies its combat role each turn."
+    ],
+    "damage_types": [
+        "force",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic large creature with unpredictable abilities",
+        "large monster that can mutate during combat",
+        "aberration with grappling tentacles and force attacks",
+        "monster that resists coordinated attacks",
+        "Rift Swine combat strategies and abilities"
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Shadow Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 209,
+    "ac": 17,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "shadow",
+        "darkness",
+        "cold"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "evil",
+        "shadowy"
+    ],
+    "description": "The Shadow Giant embodies the darkness of the Shadow Realm, with an exceptionally tall and intimidating figure. Its agility is notable, allowing it to blend into the dark with ease while delivering powerful melee attacks.",
+    "memorable": "Its ability to manipulate shadows and inflict debilitating attacks makes it a terrifying foe in battle.",
+    "goals": "Typically seeks to dominate and instill fear in its surroundings, embodying darkness.",
+    "relations": "Related to other shadow creatures, may serve dark entities or gods of the Shadow Realm.",
+    "environment": "Commonly found in shadowy areas or places of darkness and fear.",
+    "strengths": "Strong melee attacks paired with abilities to disrupt and hinder enemies, resistance to cold and necrotic damage.",
+    "weaknesses": "Its reliance on sight for its abilities can be a disadvantage against clever adventurers.",
+    "attacks": "Multiattack with its Tenebrous Talons dealing slashing and necrotic damage, as well as Cold Shadow ability affecting multiple targets.",
+    "most_powerful_ability": "Blacklight Strobe can limit enemy actions, crippling their effectiveness in combat.",
+    "equipment": null,
+    "senses": "Possesses Shadow Sight, allowing it to see in magical darkness without impediment.",
+    "skills": "High perception skill, granting it competence in spotting hidden creatures.",
+    "additional_information": [
+        "Can enter the Plane of Shadow for tactical positioning.",
+        "DCs for its abilities are notably high, creating significant challenges for opponents.",
+        "Ability to impose disadvantage on attackers with its Cold Shadow ability.",
+        "Chaotic nature reflects in its unpredictable movement and strategies.",
+        "Significant presence on the battlefield due to high HP and AC."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy giant with powerful melee attacks",
+        "creature that manipulates darkness and cold",
+        "giant enemy in shadow realm",
+        "formidable foe with shadow abilities",
+        "cold resistance monster that limits opponents"
+    ]
+}

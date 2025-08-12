@@ -1,0 +1,52 @@
+{
+    "name": "Ratfolk",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 17,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "slow with a walk speed of 10 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "ratfolk",
+        "humanoid",
+        "small creature",
+        "sly",
+        "opportunist"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "nimble"
+    ],
+    "description": "The Ratfolk is a small humanoid creature known for its agility and cunning nature, wearing studded leather armor.",
+    "memorable": "Its ability to evade and navigate through larger foes makes it a challenging opponent.",
+    "goals": "To leverage teamwork and terrain to outmaneuver adversaries.",
+    "relations": "Often found in groups or packs, coordinating with allies for combat advantages.",
+    "environment": "Typically an underground or urban setting, favoring dark and cramped spaces.",
+    "strengths": "Excels in agility and teamwork, able to gain advantage in combat when allies are nearby.",
+    "weaknesses": "Physically weak with low strength and limited movement speed.",
+    "attacks": "Uses daggers or light crossbows to deal piercing damage at range or in melee.",
+    "most_powerful_ability": "Pack Tactics grants an advantage on attack rolls when allies are around.",
+    "equipment": "Studded leather armor and a dagger or light crossbow.",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in dim light and darkness.",
+    "skills": "Good at noticing hidden threats due to a +2 modifier in Perception.",
+    "additional_information": [
+        "Can move through the space of larger enemies with no hindrance.",
+        "Often seen as a sly opportunist rather than a malevolent creature.",
+        "Low strength score results in a very bad physical power output.",
+        "Works well in groups, taking advantage of its allies' positions.",
+        "Possesses decent intelligence for strategic planning."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile humanoid with darkvision",
+        "cunning ratfolk that uses teamwork in combat",
+        "nimble creature that moves through enemies",
+        "skirmisher with stamina and dexterity",
+        "opportunistic ratfolk with weapons"
+    ]
+}

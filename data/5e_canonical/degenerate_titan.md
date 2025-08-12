@@ -1,6 +1,8 @@
 <MonsterName/>Degenerate Titan</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>12 (armor scraps)</AC>
+<HP/>161</HP>
 <summary>The Degenerate Titan is a massive and perilous creature, categorized as a Huge Giant with a chaotic evil alignment. It boasts significant physical strength and durability, demonstrated by its high Strength score of 21, which grants it an exceptional +5 modifier for melee attacks. The titan has formidable hit points totaling 161, reflecting its ability to withstand substantial damage. However, its low Dexterity of 6, resulting in a bad -2 modifier, means it may struggle with agility and ranged attacks. The creature is highly resistant to magic, giving it an advantage on saving throws against spells and magical effects, which enhances its survivability in combat. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Degenerate Titan embodies a blend of brute strength and chaos, pres
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Degenerate Titan
 
 *Huge* *Giant* *Chaotic Evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 27 (4d10 + 5) bludgeoning damage.
 - **Reality-Bending Shout:** The degenerate titan utters a scream that vibrates the fabric of reality around one creature it can see within 30 feet of it. The titan can attempt to end one magical effect of its choice of 3rd level or lower on the target. This effect works like the dispel magic spell, except the titan must always make an ability check. The titan’s ability check for this is +4.
 - **Earthstrike (Recharge 5–6):** The degenerate titan slams its fists onto the ground, creating a shockwave in a 60-foot line that is 10 feet wide. Each creature in the line must make a 16 Dexterity saving throw. On a failure, a creature takes 35 (10d6) force damage and is flung 20 feet away from the titan and knocked prone, as the earth buckles and tosses the creature. On a success, a creature takes half the damage and isn’t flung or knocked prone. If a flung creature strikes a solid surface, the creature takes 3 (1d6) bludgeoning damage for every 10 feet it was flung. If the creature is flung at another creature, that creature must succeed on a DC 16 Dexterity saving throw or take the same damage and be knocked prone.
+</statblock>
 
 

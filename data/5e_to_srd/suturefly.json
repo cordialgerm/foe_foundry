@@ -1,0 +1,7 @@
+{
+  "Bat": {
+    "relation": "conceptually_similar",
+    "explanation": "A tiny, stealthy flying beast with darkvision and high mobility."
+  },
+  "monster_key": "suturefly"
+}

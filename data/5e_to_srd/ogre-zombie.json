@@ -1,0 +1,7 @@
+{
+  "Ogre Zombie": {
+    "relation": "almost_identical",
+    "explanation": "A reanimated ogre corpse with decaying flesh, mindless behavior, and a greatclub attack matches the Ogre Zombie exactly."
+  },
+  "monster_key": "ogre-zombie"
+}

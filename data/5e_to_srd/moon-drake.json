@@ -1,0 +1,11 @@
+{
+  "Young Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A medium dragon with radiant-like breath and strong presence, similar in size and some thematic elements."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "A dragon-like creature with unique breath weapon and aquatic traits, conceptually similar in having special breath attacks."
+  },
+  "monster_key": "moon-drake"
+}

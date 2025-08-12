@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Goblin Shieldbearer is a tactical variant of the standard Goblin, sharing size, type, and stealth abilities but with added defensive support features."
+  },
+  "monster_key": "goblin-shieldbearer"
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Timingila</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Timingila is a gargantuan monstrosity that embodies the nature of chaos and destruction. This creature is neutral evil, thriving in aquatic environments and capable of devastating attacks both in and out of water. With a solid Armor Class of 18, it boasts a substantial pool of hit points totaling 232, making it a challenging adversary for any party. The creature excels in close-quarters combat through its various melee attacks and has the unique capacity to obliterate structures thanks to its Siege Monster ability. While it has exceptional strength indicated by a Strength score of 28, its Dexterity is very poor, reflecting how slow and clumsy it is on land. Being primarily an aquatic creature, its ability to only breathe underwater limits its versatility outside of its oceanic domain.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Timingila presents a formidable threat in aquatic battles, utilizin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Timingila
 
 *Gargantuan* *Monstrosity* *neutral evil*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Resonating Roar (Recharge 5-6):** The timingila roars in a 90-foot cone. Each creature in the area must make a DC 18 Constitution saving throw. On a failure, a creature takes 45 (10d8) thunder damage and is deafened for 1 minute. On a success, a creature takes half the damage and isn’t deafened. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br><br>If a vehicle is in the area, the roar travels into the vehicle and resonates inside it. Each creature inside the vehicle, even if the creature is outside the roar’s area, must succeed on a DC 18 Constitution saving throw or take half the damage from the roar.
 
 
+</statblock>
 
 

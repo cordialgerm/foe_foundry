@@ -1,0 +1,7 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "The Ogrekin is a medium humanoid similar to an Ogre, sharing its strength and melee combat focus but smaller and less armored."
+  },
+  "monster_key": "ogrekin"
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Paper Golem Swarm</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>55</HP>
 <summary>The Paper Golem Swarm is a Medium Construct that serves as a unique enemy in encounters, primarily characterized by its ability to confuse and damage foes with its swarm tactics. With an Armor Class of 13 and 55 hit points, it possesses moderate defense and sustainability in combat. Its mobility is notable, as it can fly at 30 feet per round and walk at 20 feet. The creature has a Challenge Rating of 3, making it a suitable challenge for parties encountering it. Strengths include high Dexterity, granting it a good chance to evade attacks and enabling quick strikes, while its damage vulnerabilities to fire make it susceptible to specific magical attacks. Additionally, the swarm is immune to a range of conditions and types of damage, showcasing its resilience in battle.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Paper Golem Swarm is a strategic and thematic creature that uses it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Paper Golem Swarm
 
 *Medium* *Construct* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Whirlwind (Recharge 5-6):** The air is momentarily filled with paper golems. Each creature within 5 feet of the swarm must make a DC 13 Dexterity saving throw, taking 7 (2d6) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

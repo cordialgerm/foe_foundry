@@ -1,0 +1,53 @@
+{
+    "name": "Deathsworn Elf",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elf",
+        "archer",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "mobile",
+        "stealthy",
+        "elusive"
+    ],
+    "description": "The Deathsworn Elf is a Medium humanoid characterized by exceptional dexterity and stealth, armed with a scimitar and longbow. Its green fire-imbued arrows mark its deadly ranged skills.",
+    "memorable": "The Deathsworn Elf\u2019s ability to deal additional fire damage and excel in ambush tactics makes it a unique and formidable foe.",
+    "goals": "To ambush and eliminate threats from a distance while evading capture.",
+    "relations": "Often encountered alongside other rogue or fey creatures.",
+    "environment": "Typically found in wooded or dense environments where it can hide and attack from stealth.",
+    "strengths": "High mobility, excels in ranged combat, and possesses abilities that enhance stealth and sneak attacks.",
+    "weaknesses": "Reliance on ranged attacks makes it vulnerable in close combat situations.",
+    "attacks": "Multiattack allows for rapid ranged attacks; uses both a scimitar in melee and a longbow for piercing damage from afar.",
+    "most_powerful_ability": "The Volley ability unleashes a devastating cone of fiery arrows, combining piercing and fire damage.",
+    "equipment": "Armed with a scimitar and a longbow.",
+    "senses": "Keen hearing and sight grants advantage on Perception checks.",
+    "skills": "Skilled in stealth, with a proficiency bonus providing a total of +10 in stealth checks.",
+    "additional_information": [
+        "Can use Disengage as a bonus action to escape after attacking.",
+        "Imbues arrows with magical fire for additional damage.",
+        "Advantage on saving throws against being charmed.",
+        "Extra damage when surprising enemies during the first combat round.",
+        "All weapon attacks are magical."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy elf with fiery arrows",
+        "elf archer that ambushes from stealth",
+        "mobile elf skilled in ranged combat",
+        "cunning elf with magical arrow abilities",
+        "medium humanoid that excels in sneaking"
+    ]
+}

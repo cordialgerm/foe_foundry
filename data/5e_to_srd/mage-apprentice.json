@@ -1,0 +1,7 @@
+{
+  "Mage": {
+    "relation": "almost_identical",
+    "explanation": "A spellcasting humanoid with tactical magical abilities and force damage enhancements similar to a Mage."
+  },
+  "monster_key": "mage-apprentice"
+}

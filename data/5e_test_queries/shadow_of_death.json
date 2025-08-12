@@ -1,0 +1,25 @@
+{
+    "name": "Shadow of Death",
+    "queries": [
+        {
+            "query": "dark celestial creature that inflicts necrotic damage",
+            "variant": "celestial creature in darkness that deals necrotic damage"
+        },
+        {
+            "query": "formidable large creature vulnerable to radiant damage",
+            "variant": "large and powerful creature that is weak against radiant damage"
+        },
+        {
+            "query": "creature with telepathy and impressive Dexterity",
+            "variant": "being with telepathic powers and exceptional agility"
+        },
+        {
+            "query": "monstrous entity that can teleport and paralyze enemies",
+            "variant": "monster with the ability to teleport and paralyze foes"
+        },
+        {
+            "query": "malevolent being that thrives in dim light and uses shadow stealth",
+            "variant": "evil creature that benefits from darkness and can hide in shadows"
+        }
+    ]
+}

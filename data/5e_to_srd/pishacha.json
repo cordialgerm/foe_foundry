@@ -1,0 +1,15 @@
+{
+  "Succubus": {
+    "relation": "close_cousins",
+    "explanation": "Both are chaotic evil fiends with shapechanging and possession abilities focused on deception and control."
+  },
+  "Werewolf (Lycanthrope)": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ability to transform into wolf or hybrid forms, reflecting the Pishacha's shapechanger trait."
+  },
+  "Weretiger": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ability to transform into a tiger or hybrid form, matching the Pishacha's shapechanger aspect."
+  },
+  "monster_key": "pishacha"
+}

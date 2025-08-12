@@ -1,0 +1,7 @@
+{
+  "Lich": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Lich exactly as an undead spellcaster with a skeletal form, powerful necromantic abilities, and a phylactery for resurrection."
+  },
+  "monster_key": "lich"
+}

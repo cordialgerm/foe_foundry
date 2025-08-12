@@ -1,0 +1,11 @@
+{
+  "Remorhaz": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge, cold-themed behemoths with burrowing movement and terrain manipulation abilities."
+  },
+  "White Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the icy environment and cold immunity, with powerful melee attacks and a formidable presence."
+  },
+  "monster_key": "glacier-behemoth"
+}

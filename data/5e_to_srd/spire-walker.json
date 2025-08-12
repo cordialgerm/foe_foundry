@@ -1,0 +1,11 @@
+{
+  "Dust Mephit": {
+    "relation": "close_cousins",
+    "explanation": "Both are small fey-like elemental creatures with lightning-related abilities and magical traits."
+  },
+  "Invisible Stalker": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares invisibility and teleportation abilities, making it a cunning and evasive opponent."
+  },
+  "monster_key": "spire-walker"
+}

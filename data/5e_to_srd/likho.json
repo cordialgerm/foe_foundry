@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium, agile, and chaotic creatures with limited telepathy and high dexterity."
+  },
+  "Displacer Beast": {
+    "relation": "conceptually_similar",
+    "explanation": "The Likho shares the theme of a deceptive, agile feline-like skirmisher with claw attacks."
+  },
+  "monster_key": "likho"
+}

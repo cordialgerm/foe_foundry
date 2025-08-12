@@ -1,0 +1,49 @@
+{
+    "name": "Sleipnir",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 feet walking speed and flying speed of 60 feet for one minute once per day",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "neutral good",
+        "magical"
+    ],
+    "adjectives": [
+        "powerful",
+        "agile",
+        "graceful",
+        "tactical"
+    ],
+    "description": "Sleipnir is a large, powerful creature resembling a horse, known for its remarkable strength and grace. It has rune-covered hooves and an impressive physique that enhances its combat abilities.",
+    "memorable": "Known for its tactical Heroic Leap and ability to control the battlefield with its Trampling Charge and Gold and Ice abilities.",
+    "goals": "To engage in combat effectively and protect its allies, leveraging its mobility and strength.",
+    "relations": "Can be encountered alongside elemental beings due to its ability to communicate in Primordial.",
+    "environment": "Often found in regions where it can utilize its physical strength and agility, potentially near icy terrains due to its cold resistance.",
+    "strengths": "Exceptional physical prowess, dual capabilities in dealing bludgeoning and radiant damage, and ability to leap into advantageous positions in battle.",
+    "weaknesses": "Slight weakness to cold spells, making it vulnerable to magical cold damage.",
+    "attacks": "Multiattack with rune hooves causing bludgeoning and radiant damage, and a powerful charge that can knock opponents prone.",
+    "most_powerful_ability": "Gold and Ice ability summons a devastating avalanche to control the battlefield and deal significant damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision that extends 120 feet and a passive perception of 15.",
+    "skills": "Excels in athletics and has good perception, aiding in physical challenges and environmental awareness.",
+    "additional_information": [
+        "Resistant to cold damage, taking half damage from cold attacks.",
+        "Immune to exhaustion, allowing sustained performance in prolonged encounters.",
+        "Ability to reposition effectively with Eight Hooves reaction."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large magical monster that jumps",
+        "agile creature that uses avalanche attack",
+        "powerful monstrosity with rune hooves",
+        "heroic leaping creature in icy terrains",
+        "monster with cold resistance and bludgeoning attacks"
+    ]
+}

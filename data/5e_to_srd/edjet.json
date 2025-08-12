@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Edjet is a medium humanoid combatant with martial skills and equipment similar to a Veteran."
+  },
+  "Fire Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "The Edjet's fire breath and fire resistance conceptually resemble the fire-themed nature of a Fire Giant."
+  },
+  "monster_key": "edjet"
+}

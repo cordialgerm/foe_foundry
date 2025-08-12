@@ -1,0 +1,50 @@
+{
+    "name": "Ape",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 ft. walking and climbing",
+    "role": "Bruiser",
+    "tags": [
+        "primate",
+        "muscular",
+        "territorial"
+    ],
+    "adjectives": [
+        "agile",
+        "strong",
+        "intelligent"
+    ],
+    "description": "A large, muscular primate with powerful limbs, covered in a thick coat of fur, capable of both climbing and walking on two legs.",
+    "memorable": "Its immense strength allows it to deliver crushing blows and grapple opponents effectively, making it a dangerous combatant.",
+    "goals": "Territorial defense and social interaction within family groups.",
+    "relations": "Often found in groups; may be seen with other primate species.",
+    "environment": "Typically inhabits forests and trees, where it can climb.",
+    "strengths": "Impressive strength and agility; can perform multiple attacks in a single turn.",
+    "weaknesses": "Low intelligence and charisma limit its strategic capabilities and social interactions.",
+    "attacks": "Can perform Multiattacks with its fists, dealing significant bludgeoning damage, or throw rocks over a distance.",
+    "most_powerful_ability": "Multiattack ability allows it to strike twice in a turn, increasing damage output.",
+    "equipment": null,
+    "senses": "Possesses keen perception with a passive score of 13, helping it detect hidden dangers.",
+    "skills": "Proficient in Athletics (+5), excelling in climbing and physical feats.",
+    "additional_information": [
+        "Can grapple opponents if both fist attacks hit, limiting their movement.",
+        "Generally peaceful unless provoked, showing strong social behavior.",
+        "Displays varied vocalizations and gestures for communication.",
+        "Notable for strong family groups that defend their territory.",
+        "Utilizes both melee and ranged attacks in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "muscular forest primate",
+        "strong jungle creature",
+        "athletic climbing animal",
+        "territorial forest beast",
+        "bludgeoning damage attacker"
+    ]
+}

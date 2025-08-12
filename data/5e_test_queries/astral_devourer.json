@@ -1,0 +1,25 @@
+{
+    "name": "Astral Devourer",
+    "queries": [
+        {
+            "query": "chaotic evil aberration that can split into smaller versions of itself",
+            "variant": "aberration that is chaotic evil and can split into smaller versions"
+        },
+        {
+            "query": "creature with poison attacks that communicates telepathically",
+            "variant": "monster that has poison attacks and can communicate with telepathy"
+        },
+        {
+            "query": "mysterious flying creature with a hive mind and strong stealth",
+            "variant": "stealthy flying creature that has a hive mind and is mysterious"
+        },
+        {
+            "query": "medium monster with strong defenses and the ability to use poison",
+            "variant": "defensive medium monster that can use poison attacks effectively"
+        },
+        {
+            "query": "aberration with darkvision and abilities to occupy other spaces",
+            "variant": "creature with darkvision and abilities to take other creatures' spaces"
+        }
+    ]
+}

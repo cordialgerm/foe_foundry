@@ -1,0 +1,25 @@
+{
+    "name": "Ghoul Bat",
+    "queries": [
+        {
+            "query": "small undead creature that can paralyze foes",
+            "variant": "undead small creature that paralyzes enemies"
+        },
+        {
+            "query": "creature with keen hearing and blindsight that flies",
+            "variant": "monster that flies and has keen hearing and blindsight"
+        },
+        {
+            "query": "neutral evil bat-like undead that attacks with a bite",
+            "variant": "evil neutral undead bat that bites its enemies"
+        },
+        {
+            "query": "undead creature that doesn't require air and can sense sound",
+            "variant": "creature that can sense sound and doesn't need air"
+        },
+        {
+            "query": "ghoul bat abilities focusing on speed and incapacitation",
+            "variant": "ghoul bat's skills concentrated on its speed and immobilization"
+        }
+    ]
+}

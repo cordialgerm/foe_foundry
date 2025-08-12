@@ -1,0 +1,52 @@
+{
+    "name": "Copperkill Slime",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 142,
+    "ac": 10,
+    "srd": false,
+    "cr": "8",
+    "movement": "20 ft. walk, 20 ft. climb",
+    "role": null,
+    "tags": [
+        "poison",
+        "grappling",
+        "ambush"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "dangerous"
+    ],
+    "description": "The Copperkill Slime is a Huge, greenish ooze that can blend seamlessly with its environment when motionless. It lacks advanced thought and is entirely focused on its predatory instincts.",
+    "memorable": "It can immobilize opponents while dealing ongoing poison damage and has the ability to adapt its position strategically on the battlefield.",
+    "goals": "To ambush unsuspecting adventurers and immobilize them using its toxic capabilities.",
+    "relations": "It may be encountered in areas with other oozes or creatures that thrive in toxic environments.",
+    "environment": "Typically found in subterranean locations or areas with abundant organic decay.",
+    "strengths": "Immune to acid and poison damage, resistant to piercing and slashing attacks, and possesses high durability with 142 hit points.",
+    "weaknesses": "Vulnerable to non-piercing or non-slashing damage types, lacks any tactical thinking abilities.",
+    "attacks": "Can perform multiple attacks with pseudopods, dealing bludgeoning damage and ongoing poison damage to grappled foes.",
+    "most_powerful_ability": "Poisonous Snap, which sprays poison in a 10-foot radius, coating nearby creatures in toxic slime.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to perceive its surroundings without relying on sight.",
+    "skills": "Lacks significant skills but has a passive perception of 9, which is considered low.",
+    "additional_information": [
+        "Can move through tight spaces easily due to its Amorphous ability.",
+        "Able to stretch its body across surfaces to camouflage itself.",
+        "Does not require sleep, remaining a constant threat.",
+        "Automatically grapples targets it successfully hits with two pseudopods.",
+        "Can traverse difficult surfaces and ceilings without needing checks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large green ooze that poisons",
+        "grappling slime with poisonous attacks",
+        "ambush creature with stretching ability",
+        "dangerous slime that clings to surfaces",
+        "toxic ooze that immobilizes opponents"
+    ]
+}

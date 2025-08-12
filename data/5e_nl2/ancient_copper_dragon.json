@@ -1,0 +1,54 @@
+{
+    "name": "Ancient Copper Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Gargantuan",
+    "hp": 350,
+    "ac": 21,
+    "srd": true,
+    "cr": "21",
+    "movement": "40 ft. walk, 40 ft. climb, 80 ft. fly",
+    "role": null,
+    "tags": [
+        "dragon",
+        "metallic",
+        "copper",
+        "mythical"
+    ],
+    "adjectives": [
+        "ancient",
+        "cunning",
+        "playful",
+        "intelligent"
+    ],
+    "description": "The Ancient Copper Dragon has dark greenish-brown scales reminiscent of weathered copper and a gargantuan presence. It is known for its sharp intelligence and loves riddles and games. Its body is powerful with elongated claws, a formidable tail, and a wide wingspan.",
+    "memorable": "This dragon frequently employs mischievous tricks and is known for its capability to breathe corrosive acid, along with abilities that slow and confuse its enemies.",
+    "goals": "Ancient Copper Dragons often seek to play tricks on travelers, hoard treasures, and engage in intellectual challenges rather than outright violence, although they are fierce when provoked.",
+    "relations": "Often shares connections with other metallic dragons, as well as various creatures inhabiting mountainous terrains.",
+    "environment": "Typically found in rocky hills or mountains, residing in hidden labyrinthine caves.",
+    "strengths": "Immunity to acid damage and possesses innate spellcasting abilities, allowing it to manipulate the battlefield with spells that incapacitate or control.",
+    "weaknesses": "Average Dexterity and Wisdom scores limit its ability to maneuver stealthily and perceive subtle environments, somewhat offsetting its overall power.",
+    "attacks": "Utilizes sharp bite attacks coupled with slashing claw strikes and a powerful tail. Can unleash Acid Spit and potent breath weapons dealing significant damage.",
+    "most_powerful_ability": "Legendary Resistance allows the dragon to succeed on saving throws it would otherwise fail, significantly enhancing its resilience.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a high passive perception score of 27, allowing it to detect even the stealthiest of creatures.",
+    "skills": "High proficiency in Deception and Perception, making it an adept manipulator and highly aware of its surroundings.",
+    "additional_information": [
+        "Can change shape into humanoid or beast forms, retaining its abilities and intelligence.",
+        "Has the ability 'Flow Within the Mountain' which grants advantage on Stealth checks in mountainous areas.",
+        "Legendary actions allow for additional tactical options, enhancing its unpredictability in battle.",
+        "Breath weapons can deal massive damage in a straight line or create area effects that slow enemies.",
+        "Known for its playful and cunning personality, fostering a sense of engagement in encounters."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting uses Charisma, capable of casting spells like 'Hideous Laughter' and 'Mass Suggestion' without components.",
+    "test_queries": [
+        "playful dragon",
+        "copper scaled dragon",
+        "ancient dragon with riddles",
+        "dragon that breathes acid",
+        "clever dragon tactics"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic fiends with multiple tentacle-like appendages and a predatory nature."
+  },
+  "Water Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to move through water fluidly and teleport through water."
+  },
+  "monster_key": "cipactli"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Xorn",
+    "queries": [
+        {
+            "query": "three-legged rocky creature that burrows through earth for treasure",
+            "variant": "rocky three-legged creature that digs through earth for treasure"
+        },
+        {
+            "query": "medium elemental with treasure sense that lives in rocky environments",
+            "variant": "elemental creature that senses treasure and inhabits rocky areas"
+        },
+        {
+            "query": "strong and durable monster with claws that can consume metal",
+            "variant": "tough monster with claws that eats metal and is very durable"
+        },
+        {
+            "query": "elemental creature with gaping mouth that attacks with claws",
+            "variant": "elemental with large mouth that uses claws to attack"
+        },
+        {
+            "query": "burrowing creature with camouflage ability in rocky terrain",
+            "variant": "creature that can burrow and hide in rocky areas"
+        }
+    ]
+}

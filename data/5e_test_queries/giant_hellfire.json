@@ -1,0 +1,25 @@
+{
+    "name": "Giant, Hellfire",
+    "queries": [
+        {
+            "query": "large fire-resistant giant that uses magic in battle",
+            "variant": "big giant resistant to fire that casts spells in combat"
+        },
+        {
+            "query": "giant creature with ability that curses nearby foes upon death",
+            "variant": "huge creature with curse ability affecting nearby enemies when it dies"
+        },
+        {
+            "query": "neutral good giant capable of dealing fire damage and stealthy in rocky terrain",
+            "variant": "large good-aligned giant that can inflict fire damage and is good at hiding in rocks"
+        },
+        {
+            "query": "Giant Hellfire's death malison ability and its combat tactics",
+            "variant": "Death Malison ability of Giant Hellfire and how it fights"
+        },
+        {
+            "query": "massive giant using runes and powerful melee attacks",
+            "variant": "huge giant employing runes and strong melee strikes"
+        }
+    ]
+}

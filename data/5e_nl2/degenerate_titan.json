@@ -1,0 +1,54 @@
+{
+    "name": "Degenerate Titan",
+    "creature_type": "Giant",
+    "alignment": "Chaotic Evil",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 12,
+    "srd": false,
+    "cr": "8",
+    "movement": "40 feet movement speed",
+    "role": null,
+    "tags": [
+        "chaotic",
+        "giant",
+        "strong",
+        "magical resistance"
+    ],
+    "adjectives": [
+        "massive",
+        "perilous",
+        "resilient",
+        "brutish"
+    ],
+    "description": "The Degenerate Titan is a massive giant with significant physical strength, a chaotic appearance, and scraps of armor covering its body.",
+    "memorable": "This titan has a unique ability called Reality-Bending Shout that can end magical effects, alongside earth-shaking attacks.",
+    "goals": "To dominate in combat using brute strength and disrupt foes\u2019 magical capabilities.",
+    "relations": "Could be encountered alongside other chaotic creatures or as a master over lesser giants.",
+    "environment": "Typically found in chaotic and wild areas, likely in desolate landscapes or ruins.",
+    "strengths": "Exceptional physical strength and high magic resistance make it formidable in battles against spellcasters.",
+    "weaknesses": "Low dexterity results in struggles with agility and ranged attacks.",
+    "attacks": "Utilizes powerful melee Greatclub strikes and devastating Ranged Rock attacks, along with earth-shaking shockwave attacks.",
+    "most_powerful_ability": "Reality-Bending Shout allows the titan to dispel magical effects on targets.",
+    "equipment": "Equipped with a Greatclub and uses natural weapons.",
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright light.",
+    "skills": "Skilled in Intimidation and Perception, with moderate capabilities in both.",
+    "additional_information": [
+        "Can make multiple attacks each turn for increased damage potential.",
+        "Earthstrike ability can knock down and displace multiple targets.",
+        "Benefits from its magic resistance against spell-based threats.",
+        "Inflicts significant force damage with shockwave attacks.",
+        "Represents a challenging adversary for adventurers due to high hit points."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive giant with magical resistance",
+        "brutish giant capable of ending magical effects",
+        "earth-shaking attack and ranged rocks",
+        "chaotic giant strikes with greatclub",
+        "titan that disrupts spells with shout"
+    ]
+}

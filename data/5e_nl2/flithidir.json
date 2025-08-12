@@ -1,0 +1,50 @@
+{
+    "name": "Flithidir",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "chaotic",
+        "mischievous"
+    ],
+    "adjectives": [
+        "small",
+        "chaotic",
+        "agile",
+        "mischievous"
+    ],
+    "description": "The Flithidir is a small fey creature with bright or multicolored hair, fur, scales, or feathers, embodying a mischievous air.",
+    "memorable": "Its ability to create disorienting sounds with multiple Flithidirs and its charming spellcasting make it a unique foe.",
+    "goals": "To disrupt opponents and control social interactions with its whimsical abilities.",
+    "relations": "Often found in the company of other fey creatures or in chaotic environments.",
+    "environment": "Typically inhabits areas rich in nature or magical energy, where they can play tricks on unsuspecting visitors.",
+    "strengths": "Excellent dexterity allows it to evade attacks, and its charm ability enables it to access social advantages.",
+    "weaknesses": "Average physical strength and constitution, making it less effective in direct confrontations.",
+    "attacks": "Utilizes Multiattack for two melee attacks, either using a dagger or its beak for piercing damage.",
+    "most_powerful_ability": "Cacophony, creating disorienting sounds to disadvantage nearby foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision out to 60 feet, allowing it to navigate effectively in darkness.",
+    "skills": "Proficient in acrobatics and performance, enabling it to excel in agility and creative endeavors.",
+    "additional_information": [
+        "Can polymorph into a Small humanoid or bird form.",
+        "Innate spellcasting ability based on Charisma for spells like charm person and enthrall.",
+        "Can create auditory illusions for distractions.",
+        "Retaliates with psychic damage via Mocking Retort when missed by an attack."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innately casts minor illusion (auditory only) and vicious mockery at will, with access to charm person and enthrall once per day.",
+    "test_queries": [
+        "fey creature with chaotic tendencies",
+        "small agile creature that loves tricks",
+        "creature that can fly and disrupt enemies",
+        "mischievous small fey with bright colors",
+        "creature that uses sound to confuse opponents"
+    ]
+}

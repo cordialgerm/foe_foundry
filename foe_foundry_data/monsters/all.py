@@ -1,4 +1,8 @@
+import json
+from dataclasses import asdict
+from datetime import datetime
 from functools import cached_property
+from pathlib import Path
 
 from foe_foundry.creatures import AllTemplates
 from foe_foundry.powers import Power
@@ -8,9 +12,66 @@ from foe_foundry_data.refs import MonsterRef, MonsterRefResolver
 from .data import MonsterModel
 
 
+class DateTimeEncoder(json.JSONEncoder):
+    """Custom JSON encoder that handles datetime objects."""
+
+    def default(self, obj):
+        if isinstance(obj, datetime):
+            return obj.isoformat()
+        return super().default(obj)
+
+
 class _MonsterCache:
+    def __init__(self):
+        self.cache_dir = Path.cwd() / "cache" / "monsters"
+
     @cached_property
     def one_of_each_monster(self) -> list[MonsterModel]:
+        # Try to load from cache first
+        if self.cache_dir.exists():
+            cached_monsters = self._load_from_cache()
+            if cached_monsters:
+                return cached_monsters
+
+        # Fallback to runtime generation if cache is missing
+        self.generate_cache()
+        results = self._load_from_cache()
+        if results is None:
+            raise ValueError("Failed to load monster cache")
+        return results
+
+    def _load_from_cache(self) -> list[MonsterModel] | None:
+        """Load monsters from cached JSON files."""
+        try:
+            monsters = []
+            json_files = list(self.cache_dir.glob("*.json"))
+
+            if not json_files:
+                return None
+
+            for json_file in json_files:
+                with json_file.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                    # Convert ISO datetime string back to datetime object
+                    if "create_date" in data and isinstance(data["create_date"], str):
+                        data["create_date"] = datetime.fromisoformat(
+                            data["create_date"]
+                        )
+
+                    monster = MonsterModel(**data)
+                    monsters.append(monster)
+
+            # Sort monsters for consistent ordering
+            monsters.sort(key=lambda m: m.key)
+            return monsters
+
+        except Exception:
+            # If there's any error loading from cache, fall back to generation
+            return None
+
+    def _generate_monsters(self) -> list[MonsterModel]:
+        """Generate monsters at runtime (fallback behavior)."""
         monsters = []
         for template in AllTemplates:
             for variant in template.variants:
@@ -29,6 +90,29 @@ class _MonsterCache:
                     )
                     monsters.append(m)
         return monsters
+
+    def generate_cache(self) -> None:
+        """Generate and save monster cache to disk. Called during build time."""
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+
+        # Clear existing cache files
+        for json_file in self.cache_dir.glob("*.json"):
+            json_file.unlink()
+
+        # Generate all monsters
+        monsters = self._generate_monsters()
+
+        # Save each monster as an individual JSON file
+        for monster in monsters:
+            cache_file = self.cache_dir / f"{monster.key}.json"
+            with cache_file.open("w", encoding="utf-8") as f:
+                json.dump(
+                    asdict(monster),
+                    f,
+                    ensure_ascii=False,
+                    indent=2,
+                    cls=DateTimeEncoder,
+                )
 
     @cached_property
     def lookup(self) -> dict[str, MonsterModel]:

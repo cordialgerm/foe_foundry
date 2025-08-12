@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Malakbel is a chaotic evil fiend with fiery and radiant damage, similar to the fiendish nature and combat style of a Barbed Devil."
+  },
+  "Efreeti": {
+    "relation": "mechanically_similar",
+    "explanation": "Malakbel's fire damage, teleportation, and ranged blast attacks resemble the Efreeti's fiery abilities and mobility."
+  },
+  "monster_key": "malakbel"
+}

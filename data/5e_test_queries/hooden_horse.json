@@ -1,0 +1,25 @@
+{
+    "name": "Hooden Horse",
+    "queries": [
+        {
+            "query": "medium undead horse that seeks wrongdoers and evokes fear",
+            "variant": "medium undead steed that hunts criminals and instills terror"
+        },
+        {
+            "query": "spectral horse with high charisma and necrotic attacks",
+            "variant": "ghostly horse possessing strong charisma and necrotic damage abilities"
+        },
+        {
+            "query": "undead horse with ability to charm enemies and regain health",
+            "variant": "undead steed that can enchant foes and heal itself"
+        },
+        {
+            "query": "monster that has a vulnerability to fire and is immune to necrotic damage",
+            "variant": "creature vulnerable to fire that resists necrotic attacks"
+        },
+        {
+            "query": "powerful spectral steed with multiattack and psychic damage capabilities",
+            "variant": "formidable ghostly horse featuring multiattack and psychic damage powers"
+        }
+    ]
+}

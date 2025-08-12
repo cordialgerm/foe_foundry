@@ -1,0 +1,25 @@
+{
+    "name": "Div",
+    "queries": [
+        {
+            "query": "small elemental creature with high damage resistance and spellcasting abilities",
+            "variant": "little elemental monster with strong damage resilience and spell power"
+        },
+        {
+            "query": "creature that has sunlight sensitivity and disintegrates upon death",
+            "variant": "monster sensitive to sunlight that turns to sludge when it dies"
+        },
+        {
+            "query": "neutral evil elemental capable of claw and scimitar attacks",
+            "variant": "evil-neutral elemental that can use claws and scimitars in combat"
+        },
+        {
+            "query": "small elemental that can cast spellcasting and has decent charisma",
+            "variant": "little elemental with spellcasting abilities and good charisma"
+        },
+        {
+            "query": "creature with darkvision and poisonous attack abilities",
+            "variant": "monster with the ability to see in darkness and toxic attack powers"
+        }
+    ]
+}

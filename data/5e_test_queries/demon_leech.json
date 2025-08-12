@@ -1,0 +1,25 @@
+{
+    "name": "Leech Demon",
+    "queries": [
+        {
+            "query": "aquatic fiend with blood-draining abilities",
+            "variant": "fiend that drains blood and lives in water"
+        },
+        {
+            "query": "large chaotic evil demon that can breathe underwater",
+            "variant": "big evil demon that breathes in water and on land"
+        },
+        {
+            "query": "monster that uses tentacles to restrain and drain life",
+            "variant": "creature with tentacles that holds and steals life"
+        },
+        {
+            "query": "demon with magic resistance and blood sense abilities",
+            "variant": "fiend that has blood sense and resists spells"
+        },
+        {
+            "query": "creature that summons leech swarms and heals from them",
+            "variant": "monster that can call swarms of leeches and gain health"
+        }
+    ]
+}

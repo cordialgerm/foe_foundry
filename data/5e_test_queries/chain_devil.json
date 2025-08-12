@@ -1,0 +1,25 @@
+{
+    "name": "Chain Devil",
+    "queries": [
+        {
+            "query": "humanoid fiend covered in chains that can grapple enemies",
+            "variant": "humanoid chain monster that grapples enemies with chains"
+        },
+        {
+            "query": "devil character that uses chain attacks and frightens enemies",
+            "variant": "devilish creature using chain strikes and has fright abilities"
+        },
+        {
+            "query": "torturous fiend from the Nine Hells that manipulates chains",
+            "variant": "torturing chain monster from hell that manipulates chains"
+        },
+        {
+            "query": "lawful evil monster with darkvision and magic resistance",
+            "variant": "lawful villain with darkvision and resistance to magic"
+        },
+        {
+            "query": "chain devil that is immune to fire and poison damage",
+            "variant": "devil with chains immune to poison and fire attacks"
+        }
+    ]
+}

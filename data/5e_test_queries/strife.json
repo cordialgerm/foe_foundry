@@ -1,0 +1,25 @@
+{
+    "name": "Strife",
+    "queries": [
+        {
+            "query": "small fey creature that causes confusion and distrust among enemies",
+            "variant": "small fey critter that creates confusion and distrust among foes"
+        },
+        {
+            "query": "cunning fey with high dexterity and ability to turn invisible",
+            "variant": "sly fey with great dexterity and the power to become invisible"
+        },
+        {
+            "query": "chaotic evil creature skilled in deception and stealth",
+            "variant": "chaotic wicked beast adept in trickery and stealth"
+        },
+        {
+            "query": "fey that can mimic voices and create discord among allies",
+            "variant": "fey who can imitate sounds and sow discord in ally ranks"
+        },
+        {
+            "query": "fast flying creature that excels in isolating opponents in battle",
+            "variant": "quick airborne being that specializes in isolating foes during combat"
+        }
+    ]
+}

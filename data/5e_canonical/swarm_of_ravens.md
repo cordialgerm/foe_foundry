@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Ravens</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>24</HP>
 <summary>A Swarm of Ravens is a dark, swirling mass of black-feathered birds that descend on their prey in a flurry of beaks and talons. Ravens are intelligent creatures, and when they gather in swarms, they can be highly aggressive, particularly when defending their territory or scavenging for food. These swarms can disorient their prey, pecking and clawing until they drive away or kill their target. Though ravens are typically seen as solitary scavengers, in large numbers they become a dangerous and coordinated force, capable of overwhelming even larger creatures.</summary>
 
 <summary>The Swarm of Ravens is a medium-sized beast that serves primarily as a nuisance in combat due to its ability to harass and distract enemies. With a challenge rating of 1/4, it is considered a minor threat, but its swarming ability allows it to occupy spaces and make evasive maneuvers. It possesses moderate mobility with a flying speed of 50 feet, making it agile and difficult to pin down. Defensively, it has an armor class of 12 and 17 hit points, providing it with a limited amount of resilience. The swarm's greatest strengths lie in its damage resistances to various physical attacks and immunities to many debilitating conditions, allowing it to stay active in the fight. However, its low strength and constitution scores indicate that it is rather weak in direct confrontations, making it more effective when used strategically.</summary>
@@ -21,6 +23,7 @@ For actions, the Swarm of Ravens can perform a "Beaks" attack. This is a melee w
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Ravens
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -51,7 +54,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Beaks***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target in the swarm's space. *Hit:* 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
+***Beaks***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target in the swarm's space. *Hit:* 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.</statblock>
+
 
 
 
@@ -59,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Ravens
 
 *Medium* *Beast*
@@ -88,5 +93,6 @@ Source: 5e_artisinal_monsters
 - **Beaks:** Melee Weapon Attack: +4 to hit, reach 0 ft., one target. Hit: 7 (2d6) piercing damage  or 3 (1d6) piercing damage if the swarm is bloodied.
 
 
+</statblock>
 
 

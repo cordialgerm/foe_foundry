@@ -1,0 +1,52 @@
+{
+    "name": "Fell Nightmare",
+    "creature_type": "Fiend",
+    "alignment": null,
+    "size": "Large",
+    "hp": 93,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 60 ft. fly 90 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "fire",
+        "nightmare"
+    ],
+    "adjectives": [
+        "fiery",
+        "dark",
+        "imposing"
+    ],
+    "description": "The Fell Nightmare is a large fiend with charred hoofprints and a fiery aura, embodying darkness and flame.",
+    "memorable": "It leaves a burning trail that inflicts fire damage and ignites flammable objects.",
+    "goals": "To instill fear and control the battlefield with fire.",
+    "relations": "Often associated with dark riders or fiendish trainers.",
+    "environment": "Typically found in dark or infernal locations.",
+    "strengths": "Combines high mobility with area control through fire.",
+    "weaknesses": "Low armor class makes it vulnerable to attacks.",
+    "attacks": "Hooves attack deals significant bludgeoning and fire damage, and can knock opponents prone.",
+    "most_powerful_ability": "Fiery Trail creates hazardous ground, dealing damage to creatures that enter it.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Radiates an Evil aura that affects perceptions.",
+        "Grants fire resistance to its rider.",
+        "Can communicate telepathically within 120 feet.",
+        "Ethereal Shift allows for strategic repositioning.",
+        "Emits bright and dim light from its fiery hooves."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery fiend that controls the battlefield",
+        "large nightmare with burning trail",
+        "dark creature that embodies fire",
+        "fiend with charred hoofprints and telepathy",
+        "fast skirmisher that leaves fire behind"
+    ]
+}

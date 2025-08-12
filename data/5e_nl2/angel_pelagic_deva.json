@@ -1,0 +1,52 @@
+{
+    "name": "Pelagic Deva",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 20 ft., swim 90 ft.",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "aquatic",
+        "guardian"
+    ],
+    "adjectives": [
+        "guardian",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Pelagic Deva is a graceful, celestial creature embodying the ideals of neutrality and goodness, depicted with features resembling the ocean and adorned in Living Coral Armor.",
+    "memorable": "This deva can polymorph willing creatures into aquatic forms and create an Anoxic Aura to suffocate air-breathing creatures, showcasing its tactical capabilities in aquatic environments.",
+    "goals": "To protect the seas and aquatic realms while influencing other beings toward neutrality and goodness.",
+    "relations": "Often interacts with other celestial beings and guardians of nature, may serve deities of the sea or water-related domains.",
+    "environment": "Typically found in aquatic realms like oceans, rivers, and near coral reefs.",
+    "strengths": "Possesses powerful magical weapon attacks and high resilience with damage resistance to cold and radiant damage.",
+    "weaknesses": "Less effective in aerial combat due to limited mobility on land.",
+    "attacks": "Can make three weapon attacks with its Trident, dealing both piercing and radiant damage.",
+    "most_powerful_ability": "Transforming Touch allows it to polymorph a willing creature into a giant octopus, hunter shark, or plesiosaurus for strategic advantages.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 19, indicating strong awareness of its surroundings.",
+    "skills": "Proficient in Perception, enhancing its ability to detect threats in its environment.",
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Weapon attacks are magical, adding extra radiant damage.",
+        "Immortal nature: does not require food, drink, or sleep.",
+        "Living Coral Armor can self-repair if damaged.",
+        "Has advantage on saving throws against spells and magical effects."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "guardian of the ocean",
+        "celestial being with amphibious abilities",
+        "polymorphing sea guardian",
+        "creature with Anoxic Aura",
+        "formidable deva combatant"
+    ]
+}

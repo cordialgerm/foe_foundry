@@ -1,0 +1,25 @@
+{
+    "name": "Far Dorocha",
+    "queries": [
+        {
+            "query": "malevolent fey creature that manipulates shadows and charms others",
+            "variant": "fey creature that is malevolent and manipulates shadows to charm others"
+        },
+        {
+            "query": "medium-sized fey with high Dexterity and Charisma living in darkness",
+            "variant": "medium fey creature with exceptional Dexterity and Charisma that thrives in dark environments"
+        },
+        {
+            "query": "stealthy monster immune to charm and fright with magical abilities",
+            "variant": "monster proficient in stealth that is immune to being charmed or frightened and has magical powers"
+        },
+        {
+            "query": "creature that gains defense in dim light and has a unique teleportation ability",
+            "variant": "monster that increases its defenses in darkness and possesses a special ability to teleport"
+        },
+        {
+            "query": "Fey monster with charm abilities and expertise in shadow magic",
+            "variant": "fey creature skilled in charm magic and knowledgeable about shadows"
+        }
+    ]
+}

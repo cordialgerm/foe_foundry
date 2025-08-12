@@ -1,0 +1,25 @@
+{
+    "name": "Fire Elemental",
+    "queries": [
+        {
+            "query": "creature that embodies fire and can move through narrow spaces",
+            "variant": "creature that embodies flames and moves through tiny spaces"
+        },
+        {
+            "query": "large monster that ignites everything it touches and is weak to water",
+            "variant": "big monster that sets fire to everything it touches and is vulnerable to water"
+        },
+        {
+            "query": "intelligent elemental that creates fire damage around it and can dash through foes",
+            "variant": "smart elemental that causes fire damage near it and can sprint through enemies"
+        },
+        {
+            "query": "fire creature with a high speed and ability to generate area damage",
+            "variant": "flame creature with a fast movement and capability to create area attack"
+        },
+        {
+            "query": "elemental that thrives in fire and suffers damage in water",
+            "variant": "elemental that lives in flames and takes damage in water"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Nalusa Falaya",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walk",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "stealth",
+        "shadow"
+    ],
+    "adjectives": [
+        "sneaky",
+        "quick",
+        "frightening"
+    ],
+    "description": "The Nalusa Falaya is a Medium aberration that excels in dimly lit areas, leveraging its dexterous body and shadow-based abilities. With a slender form and a demeanor that exudes malice, it thrives in the darkness.",
+    "memorable": "It can manipulate shadows to teleport and evade while unleashing a frightening gaze that can paralyze foes with terror.",
+    "goals": "The creature typically seeks to ambush unsuspecting prey and create chaos in the shadows.",
+    "relations": "It may be encountered alongside other creatures that thrive in darkness or serve more powerful evil entities.",
+    "environment": "Dimly lit areas, shadows, and places with minimal sunlight.",
+    "strengths": "Exceptional stealth abilities and shadow teleportation make it difficult to confront directly.",
+    "weaknesses": "Significantly hampered in direct sunlight, suffering from disadvantage on all actions.",
+    "attacks": "Can make a Bite attack for piercing damage, a Claw attack for slashing damage, and a Terrifying Glare to instill fear.",
+    "most_powerful_ability": "Shadow Step, allowing it to teleport to any visible shadow within 30 feet.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Stealth, greatly enhancing its ability to hide and move undetected.",
+    "additional_information": [
+        "Possesses the Shadow Stealth ability for tactical hiding.",
+        "Weakness to sunlight diminishes its combat efficacy.",
+        "Can knock opponents prone with a successful Bite attack.",
+        "Terrifying Glare may disadvantage foes, creating opportunities.",
+        "Utilizes low-light environments to its advantage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dark stealthy monster with teleportation",
+        "shadow creature with frightening abilities",
+        "medium aberration that thrives in dim light",
+        "creature that can teleport to shadows",
+        "monster with sunlight weakness and stealth skills"
+    ]
+}

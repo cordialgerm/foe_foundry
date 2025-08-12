@@ -1,0 +1,51 @@
+{
+    "name": "Venom Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 93,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "swift at 50 ft swimming and 40 ft walking",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "poison",
+        "water"
+    ],
+    "adjectives": [
+        "toxic",
+        "mobile",
+        "stealthy"
+    ],
+    "description": "A large, poisonous elemental that can flow through tight spaces and camouflage underwater, characterized by its liquid form and vibrant, toxic appearance.",
+    "memorable": "Immunity to poison and ability to incapacitate foes with poison damage.",
+    "goals": "To ambush enemies using its stealth capabilities and poison attack.",
+    "relations": "Can be encountered alongside other elemental creatures or in environments with water.",
+    "environment": "Commonly found in aquatic locations like swamps or underwater areas.",
+    "strengths": "Immunity to poison damage and various conditions such as paralysis and exhaustion.",
+    "weaknesses": "Low intelligence limits tactical decisions and combat strategy.",
+    "attacks": "Makes two powerful bite attacks that deliver both piercing and poison damage, potentially poisoning the target.",
+    "most_powerful_ability": "Liquid Form allows it to surprise enemies by moving through narrow spaces.",
+    "senses": "Has darkvision and average perception abilities.",
+    "skills": null,
+    "additional_information": [
+        "Advantage on Dexterity (Stealth) checks while underwater",
+        "Able to enter a hostile creature's space",
+        "Immune to exhaustion and unconsciousness",
+        "Can evade nonmagical bludgeoning, piercing, and slashing damage",
+        "Limited communication as it understands Primordial but cannot speak"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "poison elemental that swims swiftly",
+        "large creature with stealthy underwater camouflage",
+        "elemental that can slip through tight spaces",
+        "monster with poisonous bite attacks",
+        "toxic creature immune to poison damage"
+    ]
+}

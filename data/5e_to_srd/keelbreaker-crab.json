@@ -1,0 +1,11 @@
+{
+  "Giant Crab": {
+    "relation": "almost_identical",
+    "explanation": "A huge crustacean with powerful pincers and natural armor similar to the Keelbreaker Crab."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are durable, amorphous or tough creatures that can damage structures effectively."
+  },
+  "monster_key": "keelbreaker-crab"
+}

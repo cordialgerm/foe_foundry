@@ -1,0 +1,25 @@
+{
+    "name": "Devouring Angel",
+    "queries": [
+        {
+            "query": "large aberration that can fly and has a strong bite attack",
+            "variant": "big aberration that can fly and a strong bite attack"
+        },
+        {
+            "query": "creature that uses telepathy and can twist its body",
+            "variant": "monster that can twist its body and uses telepathy"
+        },
+        {
+            "query": "angelic creature with high hit points and reduces damage with conditions",
+            "variant": "angel-like creature with a lot of hit points and reduces damage from conditions"
+        },
+        {
+            "query": "Devouring Angel with acid attacks and mobility options",
+            "variant": "Devouring Angel with acid attack and movement options"
+        },
+        {
+            "query": "monster with a strong smell and high Constitution score",
+            "variant": "creature with a good sense of smell and a high Constitution stat"
+        }
+    ]
+}

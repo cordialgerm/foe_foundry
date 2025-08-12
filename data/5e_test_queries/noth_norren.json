@@ -1,0 +1,25 @@
+{
+    "name": "Noth-norren",
+    "queries": [
+        {
+            "query": "gargantuan elemental that controls air and can throw targets",
+            "variant": "elemental that is gargantuan, throws targets, and controls air"
+        },
+        {
+            "query": "chaotic evil elemental with strong melee attacks and high hit points",
+            "variant": "strong melee attacker that is chaotic evil and has a lot of hit points"
+        },
+        {
+            "query": "creature with air turbulence that forces flying enemies to land",
+            "variant": "air turbulence creature that makes flying foes land"
+        },
+        {
+            "query": "monster immune to poison and can manipulate the battlefield",
+            "variant": "monster that can control the battlefield and is immune to poison"
+        },
+        {
+            "query": "elemental with high speed and bludgeoning damage attacks",
+            "variant": "elemental that has fast speed with bludgeoning damage abilities"
+        }
+    ]
+}

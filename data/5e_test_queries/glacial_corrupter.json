@@ -1,0 +1,25 @@
+{
+    "name": "Glacial Corrupter",
+    "queries": [
+        {
+            "query": "chilling undead monster with cold damage abilities",
+            "variant": "undead monster with chilling powers and cold damage attacks"
+        },
+        {
+            "query": "medium undead creature that transforms victims",
+            "variant": "medium creature that transforms its victims and is undead"
+        },
+        {
+            "query": "lawful evil undead with high hit points and resilience",
+            "variant": "undead creature with high HP, resilient and lawful evil"
+        },
+        {
+            "query": "monster that uses longsword and longbow in combat",
+            "variant": "creature that fights with a longsword and a longbow"
+        },
+        {
+            "query": "undead creature immune to cold and poison damage",
+            "variant": "creature that is immune to poison and cold damage and is undead"
+        }
+    ]
+}

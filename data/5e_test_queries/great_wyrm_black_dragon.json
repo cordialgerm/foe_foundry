@@ -1,0 +1,25 @@
+{
+    "name": "Great Wyrm Black Dragon",
+    "queries": [
+        {
+            "query": "massive dragon that can breathe acid and swims well in water",
+            "variant": "huge dragon that swims great in water and breathes acid"
+        },
+        {
+            "query": "Gargantuan dragon with high Armor Class and exceptional stealth abilities",
+            "variant": "Gargantuan dragon that has impressive AC and great stealth"
+        },
+        {
+            "query": "intelligent dragon with powerful melee attacks and innate spellcasting",
+            "variant": "smart dragon that can cast spells and has strong melee attacks"
+        },
+        {
+            "query": "dragon that excels in aquatic ambushes and has resistance to acid",
+            "variant": "dragon good at ambushing in water and immune to acid damage"
+        },
+        {
+            "query": "fierce dragon able to frighten creatures and control the battlefield",
+            "variant": "dangerous dragon that can scare enemies and dominate the battlefield"
+        }
+    ]
+}

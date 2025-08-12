@@ -1,0 +1,11 @@
+{
+  "Adult Bronze Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are adult dragons with control over terrain and environment, with the Earth Dragon focusing on earth and stone."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Earth Dragon shares earth and stone manipulation and burrowing abilities similar to an Earth Elemental."
+  },
+  "monster_key": "adult-earth-dragon"
+}

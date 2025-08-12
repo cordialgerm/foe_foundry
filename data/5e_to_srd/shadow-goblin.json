@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Shadow Goblin is a stealthy, small humanoid similar to a Goblin but with added shadow and sunlight sensitivity traits."
+  },
+  "monster_key": "shadow-goblin"
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Vengeful Ghost",
+    "creature_type": "Undead",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 11,
+    "srd": false,
+    "cr": "8",
+    "movement": "flies at 40 feet speed, no walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ghost",
+        "haunting"
+    ],
+    "adjectives": [
+        "vengeful",
+        "ethereal",
+        "frightening"
+    ],
+    "description": "The Vengeful Ghost is an incorporeal entity representing the unfinished business of a deceased individual. It possesses a haunting presence with a glowing, translucent form characterized by its intense glare and anguished demeanor.",
+    "memorable": "Its ability to possess living beings and inflict magical aging makes it a particularly haunting adversary.",
+    "goals": "To resolve unfinished business and exact revenge on those who wronged it.",
+    "relations": "Often associated with other undead creatures or dark spirits that share similar motives.",
+    "environment": "Typically found in haunted locations or places of emotional turmoil.",
+    "strengths": "Immunities to cold, necrotic, and poison damage, along with the ability to move through solid objects.",
+    "weaknesses": "Vulnerable to radiant damage, making it especially susceptible to clerics and paladins.",
+    "attacks": "Withering Touch delivers necrotic damage and has a potential magical aging effect on frightened targets.",
+    "most_powerful_ability": "Possession allows the ghost to take control of a humanoid, rendering them unconscious while granting the ghost new abilities.",
+    "equipment": null,
+    "senses": "Can see both the Material and Ethereal Plane due to Ethereal Sight, enhancing its tactical advantage.",
+    "skills": null,
+    "additional_information": [
+        "Resilient against many damage types but weak to radiant.",
+        "Can haunt and intimidate foes effectively.",
+        "Returns after 24 hours unless properly put to rest.",
+        "Impose disadvantage on foes' saving throws against fear effects in darkness.",
+        "Can reactively frighten attackers when damaged."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ghost that can possess humanoids",
+        "undead spirit with magical aging ability",
+        "haunting ghost causing fear and terror",
+        "incorporeal entity flying through walls",
+        "vengeful ghost with ethereal sight"
+    ]
+}

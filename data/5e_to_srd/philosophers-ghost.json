@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium oozes capable of squeezing through narrow spaces, sharing ooze traits."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both emit light and have a ghostly, fiery presence that can harm foes."
+  },
+  "monster_key": "philosophers-ghost"
+}

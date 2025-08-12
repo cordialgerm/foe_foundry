@@ -1,6 +1,8 @@
 <MonsterName/>Seahorse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11</AC>
+<HP/>1</HP>
 <summary>The seahorse is a tiny beast that exists primarily in aquatic environments, showcasing its unique adaptations for underwater life. With a challenge rating of 0, it serves more as a whimsical representation of marine life than a formidable threat to adventurers. Its main strengths lie in its ability to swim, albeit slightly hindered by its very low hit points and poor physical attributes. The seahorse's low armor class makes it vulnerable in combat, but its primary advantage is its ability to breathe underwater, which allows it to thrive in its aquatic habitat. Overall, the seahorse is not designed to be a combatant but rather to add flavor to marine ecosystems in a campaign.</summary>
 
 <detail>
@@ -28,6 +30,7 @@ Overall, the seahorse is a minor creature with interesting adaptations for under
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Seahorse
 
 *Tiny* *Beast*
@@ -51,6 +54,7 @@ Source: 5e_artisinal_monsters
 - **Water Breathing:** The seahorse breathes only water.
 
 
+</statblock>
 
 
 
@@ -59,6 +63,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Seahorse
 
 *Tiny beast*
@@ -87,5 +92,6 @@ Source: 5e_artisinal_monsters
 
 - **Ram.** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
+</statblock>
 
 

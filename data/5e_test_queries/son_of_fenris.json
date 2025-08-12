@@ -1,0 +1,25 @@
+{
+    "name": "Son of Fenris",
+    "queries": [
+        {
+            "query": "huge chaotic evil monster with poison breath and high strength",
+            "variant": "giant evil creature with poison breath and strong attacks"
+        },
+        {
+            "query": "monstrosity with necrotic damage immunity and claw attacks",
+            "variant": "creature that has immunity to necrotic damage and claw strikes"
+        },
+        {
+            "query": "huge spellcasting monster that can swallow enemies and deals radiant damage",
+            "variant": "large spell-using creature that can consume foes and inflicts radiant damage"
+        },
+        {
+            "query": "Son of Fenris with high constitution and multiattack abilities",
+            "variant": "Fenris's offspring with great constitution and multiple attack options"
+        },
+        {
+            "query": "monstrous creature that excels in religion and can communicate telepathically",
+            "variant": "monster skilled in religion that has telepathic communication abilities"
+        }
+    ]
+}

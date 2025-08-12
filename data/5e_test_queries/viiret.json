@@ -1,0 +1,25 @@
+{
+    "name": "Viiret",
+    "queries": [
+        {
+            "query": "large plant creature that can swallow enemies and is immune to poison",
+            "variant": "large plant monster that can swallow foes and is immune to poison"
+        },
+        {
+            "query": "monster with high Constitution that detects diseases by scent",
+            "variant": "creature with high Constitution that can sense diseases by smell"
+        },
+        {
+            "query": "vine creature that deals acid damage and has cold vulnerability",
+            "variant": "vine monster that inflicts acid damage and is vulnerable to cold"
+        },
+        {
+            "query": "plant monster with multiattack and immunity to necrotic damage",
+            "variant": "plant creature with multi-attack and resistance to necrotic damage"
+        },
+        {
+            "query": "formidable plant creature with bludgeoning attack and disease senses",
+            "variant": "formidable plant monster with bludgeoning attacks and the ability to sense disease"
+        }
+    ]
+}

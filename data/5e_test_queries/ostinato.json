@@ -1,0 +1,25 @@
+{
+    "name": "Ostinato",
+    "queries": [
+        {
+            "query": "chaotic neutral aberration that manipulates sound",
+            "variant": "cacophonic sound creature with chaotic neutral alignment"
+        },
+        {
+            "query": "medium-sized monster with thunder vulnerability and psychic abilities",
+            "variant": "monster with psychic powers that is vulnerable to thunder damage and is medium-sized"
+        },
+        {
+            "query": "creature that uses invisibility and creates disorienting music",
+            "variant": "monster that can turn invisible and generates confusing tunes"
+        },
+        {
+            "query": "agile creature immune to poison and has magic resistance",
+            "variant": "poison-immune monster with resistance to magic and high agility"
+        },
+        {
+            "query": "monster with force damage ability and a Cacophony Burst attack",
+            "variant": "creature that performs Cacophony Burst and can cause force damage"
+        }
+    ]
+}

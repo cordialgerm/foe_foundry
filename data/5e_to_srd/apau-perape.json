@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large chaotic evil fiends with melee attacks and summoning abilities."
+  },
+  "Glabrezu": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful, large fiend known for summoning and physical combat, similar in role and presence."
+  },
+  "monster_key": "apau-perape"
+}

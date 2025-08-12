@@ -1,0 +1,55 @@
+{
+    "name": "Quasit",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon, shapechanger",
+    "alignment": "chaotic evil",
+    "size": "tiny",
+    "hp": 7,
+    "ac": 13,
+    "srd": true,
+    "cr": "1",
+    "movement": "40 feet walking speed, nimble",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "demon",
+        "stealth",
+        "shapechanger"
+    ],
+    "adjectives": [
+        "cunning",
+        "mischievous",
+        "invisible",
+        "poisonous"
+    ],
+    "description": "A small, imp-like creature with the ability to shapechange into a bat, rat, or spider, known for its cruel demeanor.",
+    "memorable": "Its ability to turn invisible and deliver a poisonous scratch makes it a tricky adversary in combat.",
+    "goals": "Typically serves more powerful demons or evil spellcasters as a spy or familiar.",
+    "relations": "Often encounters more powerful demons and serves warlocks or chaotic evil masters.",
+    "environment": "Commonly found in the Abyss or with evil spellcasters.",
+    "strengths": "Highly dexterous and resistant to many forms of damage, including poison and nonmagical attacks.",
+    "weaknesses": "Physically weak with low hit points and poor strength, vulnerable in direct confrontations.",
+    "attacks": "Uses claws to attack, dealing piercing damage and potentially poisoning targets.",
+    "most_powerful_ability": "Invisibility allows it to avoid detection and execute surprise attacks.",
+    "equipment": null,
+    "senses": "Has darkvision, enabling it to see in darkness, enhancing its stealth capabilities.",
+    "skills": "Proficient in Stealth, allowing it to hide effectively from enemies.",
+    "additional_information": [
+        "Radiates a Chaotic Evil aura.",
+        "Magic Resistance grants advantage on spell saving throws.",
+        "Ability to frighten nearby creatures with its Scare ability.",
+        "Can shapeshift into various small beasts for versatility.",
+        "Enjoys causing chaos and mischief in its surroundings."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mischievous tiny demon that can turn invisible",
+        "cunning shapechanger with poisonous claws",
+        "fiend that serves evil masters and causes chaos",
+        "stealthy imp-like creature with fright abilities",
+        "small demon that can transform into a bat"
+    ]
+}

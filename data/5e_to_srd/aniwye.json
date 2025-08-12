@@ -1,0 +1,11 @@
+{
+  "Ogre": {
+    "relation": "conceptually_similar",
+    "explanation": "The Aniwye can shapeshift into larger forms like an ogre, sharing a similar brute physical combat style."
+  },
+  "Hill Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "The Aniwye's ability to shapeshift into a hill giant form links it conceptually to this large, strong giant."
+  },
+  "monster_key": "aniwye"
+}

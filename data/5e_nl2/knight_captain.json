@@ -1,0 +1,50 @@
+{
+    "name": "Knight Captain",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 171,
+    "ac": 20,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "warrior",
+        "leader",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "potent"
+    ],
+    "description": "The Knight Captain is a formidable humanoid warrior, known for their exceptional defensive capabilities and impressive strength. They wear heavy armor and wield a longsword and a composite longbow.",
+    "memorable": "Their leadership abilities allow them to inspire and command allies in battle, turning the tide with coordinated attacks.",
+    "goals": "To lead and support allies in combat while effectively engaging enemies.",
+    "relations": "Often found in the company of other soldiers or knights, they may lead a group of warriors into battle.",
+    "environment": "Typically found in military encampments, battlefields, or regions under siege.",
+    "strengths": "High Strength and Constitution scores increase their melee effectiveness and survivability. Magic Resistance grants them resilience against spell attacks.",
+    "weaknesses": "Average Dexterity may affect their agility and speed in combat.",
+    "attacks": "Can strike four times in a turn with a longsword, dealing considerable slashing damage. Versatile in ranged combat with a composite longbow.",
+    "most_powerful_ability": "Knightly Inspiration allows allies to gain an expertise die on attack rolls and saving throws, significantly boosting their effectiveness.",
+    "equipment": "Wields a Longsword and a Composite Longbow, while wearing heavy armor for defense.",
+    "senses": "Possesses a high passive Perception score of 18, indicating strong awareness.",
+    "skills": "Excels in Athletics, History, and has good perception skills.",
+    "additional_information": [
+        "Immune to the frightened condition.",
+        "Benefits from Magic Resistance against spells.",
+        "Superior Heavy Armor Master reduces nonmagical damage.",
+        "Can issue commands for advantageous attacks.",
+        "Offers tactical support through Knightly Inspiration."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong humanoid knight with leadership skills",
+        "highly defensive knight captain in heavy armor",
+        "potent melee and ranged attacker in battle",
+        "knight capable of inspiring allies strategically",
+        "warrior immune to fear with magical resistance"
+    ]
+}

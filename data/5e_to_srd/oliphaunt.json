@@ -1,0 +1,7 @@
+{
+  "Elephant": {
+    "relation": "close_cousins",
+    "explanation": "The Oliphaunt is a gargantuan beast with a powerful trunk and tusks, similar to an oversized elephant."
+  },
+  "monster_key": "oliphaunt"
+}

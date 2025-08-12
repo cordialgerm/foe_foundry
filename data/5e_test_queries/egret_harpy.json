@@ -1,0 +1,25 @@
+{
+    "name": "Egret Harpy",
+    "queries": [
+        {
+            "query": "aerial monster with enchanting songs found in marshy terrain",
+            "variant": "monster with enchanting songs that lives in marshy areas and flies"
+        },
+        {
+            "query": "medium-sized spellcasting creature that aids allies in navigation",
+            "variant": "creature that casts spells and helps allies navigate, medium size"
+        },
+        {
+            "query": "harpy-like monster that uses talons and spears in combat",
+            "variant": "monster resembling a harpy that fights with spears and talons"
+        },
+        {
+            "query": "creature with strong spells and high Constitution found near water",
+            "variant": "water-side creature with powerful spells and good Constitution"
+        },
+        {
+            "query": "both melee and spell attacks monster with moderate defense",
+            "variant": "monster with average defense that attacks with spells and melee"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "The Haugbui is a ghostly undead with incorporeal movement and spellcasting similar to a Ghost."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are incorporeal undead with a menacing presence and strategic combat abilities."
+  },
+  "monster_key": "haugbui"
+}

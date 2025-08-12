@@ -1,0 +1,11 @@
+{
+  "Wolf": {
+    "relation": "close_cousins",
+    "explanation": "The Quagga shares pack tactics, keen senses, and cooperative combat style with the Wolf."
+  },
+  "Riding Horse": {
+    "relation": "conceptually_similar",
+    "explanation": "The Quagga is a fast, medium-sized creature with hooves and agility similar to a Riding Horse."
+  },
+  "monster_key": "quagga"
+}

@@ -1,0 +1,11 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "A shadowy, fey humanoid with sunlight sensitivity and lethal combat abilities similar to Drow."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Embodies shadowy and necrotic themes with abilities to vanish into shadows and command necrotic forces."
+  },
+  "monster_key": "elf,-shadow-fey-executioner"
+}

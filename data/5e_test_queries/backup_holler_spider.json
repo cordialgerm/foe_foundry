@@ -1,0 +1,25 @@
+{
+    "name": "Backup Holler Spider",
+    "queries": [
+        {
+            "query": "small chaotic spider that can climb and uses thunder attacks",
+            "variant": "tiny spider with chaotic neutral alignment that climbs and attacks with thunder"
+        },
+        {
+            "query": "tiny beast with thunder damage and climbing ability",
+            "variant": "small beast that deals thunder damage and can climb surfaces"
+        },
+        {
+            "query": "spider that emits thunder sound and helps allies",
+            "variant": "holler spider that releases thunder noises and supports allies"
+        },
+        {
+            "query": "backup holler spider characteristics and attacks in combat",
+            "variant": "attributes and combat attacks of the holler spider"
+        },
+        {
+            "query": "stealthy spider that does thunder damage and requires saving throws",
+            "variant": "stealth-based spider that inflicts thunder damage and needs saving throws"
+        }
+    ]
+}

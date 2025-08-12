@@ -1,0 +1,11 @@
+{
+  "Roper": {
+    "relation": "conceptually_similar",
+    "explanation": "Both have lethal spikes and use them to attack and control foes, with a focus on grappling and terrain."
+  },
+  "Giant Lizard": {
+    "relation": "close_cousins",
+    "explanation": "A large, agile reptilian monstrosity with strong limbs and claw attacks, similar in physicality and habitat."
+  },
+  "monster_key": "alke"
+}

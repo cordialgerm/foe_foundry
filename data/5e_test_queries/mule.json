@@ -1,0 +1,25 @@
+{
+    "name": "Mule",
+    "queries": [
+        {
+            "query": "medium beast that carries heavy loads and navigates difficult terrain",
+            "variant": "beast that is medium-sized, carries loads, and can move through tough terrain"
+        },
+        {
+            "query": "strong pack animal known for stubbornness and sure-footedness",
+            "variant": "stubborn animal that is strong and has sure-footedness, commonly used as a pack"
+        },
+        {
+            "query": "creature with low intelligence used by merchants for transport",
+            "variant": "animal with bad intelligence often utilized for transporting goods by traders"
+        },
+        {
+            "query": "medium-sized mule that is effective in carrying weight and has basic combat abilities",
+            "variant": "mule that is medium sized, good at carrying weight, and has simple combat skills"
+        },
+        {
+            "query": "unaggressive beast that can be difficult to control when overworked",
+            "variant": "non-aggressive animal that becomes hard to manage when overworked"
+        }
+    ]
+}

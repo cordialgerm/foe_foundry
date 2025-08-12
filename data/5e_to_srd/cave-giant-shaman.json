@@ -1,0 +1,11 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "A huge, physically powerful giant with strong melee attacks and spellcasting abilities, sharing the giant type and combat style."
+  },
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "A huge giant dwelling in natural environments with brute strength and melee focus, similar to the Cave Giant Shaman's physical prowess."
+  },
+  "monster_key": "cave-giant-shaman"
+}

@@ -1,0 +1,11 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "The Kadag Ogre is a large, powerful giant similar to an Ogre but with added undead manipulation and poison abilities."
+  },
+  "Zombie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Kadag Ogre commands undead minions and has resistances related to necrotic damage, linking it conceptually to Zombies."
+  },
+  "monster_key": "ogre,-kadag"
+}

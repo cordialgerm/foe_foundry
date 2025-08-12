@@ -1,0 +1,11 @@
+{
+  "Ghast": {
+    "relation": "almost_identical",
+    "explanation": "A Medium undead creature with claw and bite attacks that paralyzes living foes and has a debilitating stench."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Shares the undead, paralyzing claw and bite attack traits common to ghouls."
+  },
+  "monster_key": "necrophage-ghast"
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Grimmlet",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 28,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "hover speed 30 ft.",
+    "role": "null",
+    "tags": [
+        "monstrosity",
+        "psionics",
+        "flying",
+        "creature swarm"
+    ],
+    "adjectives": [
+        "tiny",
+        "psychic",
+        "hovering",
+        "mysterious"
+    ],
+    "description": "The Grimmlet is a tiny, hovering monstrosity known for its cute but dangerous nature, featuring a unique ability to reproduce when taking damage from spells. Its appearance is less described, but it is noted for its explosive demise upon death.",
+    "memorable": "Its ability to reproduce upon taking spell damage can quickly overwhelm opponents, creating a swarm of small threats.",
+    "goals": "Typically seeks to ambush foes and support itself through reproduction, causing chaos in combat.",
+    "relations": "Often encountered with other Grimmlets or as a singular threat that might support a larger creature.",
+    "environment": "Commonly found in areas of psionic energy or magical disturbances.",
+    "strengths": "Immune to psychic damage and resistant to nonmagical attacks; can quickly multiply when damaged.",
+    "weaknesses": "Low armor class makes it vulnerable in direct combat scenarios.",
+    "attacks": "Uses a melee attack called Crystal Edge that deals slashing and psychic damage.",
+    "most_powerful_ability": "Reproduce, which allows it to spawn more Grimmlets after taking damage from spells.",
+    "equipment": "null",
+    "senses": "Possesses blindsight with a range of 60 feet, allowing it to detect nearby creatures without needing sight.",
+    "skills": "null",
+    "additional_information": [
+        "Immunities to multiple conditions, making it resilient in various situations.",
+        "Can cast spells without needing components, leveraging psionics.",
+        "Explodes upon death, dealing psychic damage to nearby foes."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Has innate spellcasting focused on psionics, including spells like Crushing Curse and Maddening Whispers.",
+    "test_queries": [
+        "tiny flying monster that multiplies",
+        "psychic explosion creature with reproduction ability",
+        "hovering monstrosity that causes chaos",
+        "Grimmlet swarm tactics in battle",
+        "monster immune to psychic damage and conditions"
+    ]
+}

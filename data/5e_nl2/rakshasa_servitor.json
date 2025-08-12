@@ -1,0 +1,53 @@
+{
+    "name": "Rakshasa, Servitor",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "rakshasa",
+        "illusion",
+        "protector"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "tactical"
+    ],
+    "description": "The Rakshasa, Servitor is a medium-sized fiend known for its cunning, with a humanoid appearance marked by feline features and a stylish demeanor.",
+    "memorable": "It possesses Limited Magic Immunity and a unique reaction ability to protect its allies.",
+    "goals": "To manipulate encounters and protect fellow rakshasas in battle.",
+    "relations": "Often allied with other rakshasas and serves their interests.",
+    "environment": "Typically found in dark, shadowy locations or urban settings where deception thrives.",
+    "strengths": "Immunity to cantrips and advantage on saving throws against spells.",
+    "weaknesses": "Vulnerable to piercing damage from magic weapons wielded by good-aligned creatures.",
+    "attacks": "Attacks with a dagger or hand crossbow, dealing piercing damage combined with poison damage.",
+    "most_powerful_ability": "Limited Magic Immunity, making it difficult to target with spells.",
+    "equipment": null,
+    "senses": "It possesses darkvision allowing it to see in darkness up to 60 feet, and has a passive perception score of 14.",
+    "skills": "Demonstrates proficiency in perception, making it slightly above average in noticing hidden or moving objects.",
+    "additional_information": [
+        "Capable of spellcasting without requiring material components.",
+        "Can cast detect thoughts at will, enabling mind reading.",
+        "Has the ability to disguise itself at will.",
+        "Can instill fear in targets with cause fear.",
+        "Its Protecting Pounce ability allows it to absorb damage for its allies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast at will: detect thoughts and disguise self; once per day: cause fear.",
+    "test_queries": [
+        "mysterious feline humanoid with magical abilities",
+        "deceptive fiend that protects allies",
+        "rakshasa with limited magic immunity",
+        "tactical fiend that can read minds",
+        "poisonous dagger wielding fiend"
+    ]
+}

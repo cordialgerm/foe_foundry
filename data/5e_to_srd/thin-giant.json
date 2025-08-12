@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Thin Giant is a huge, chaotic evil giant with strong melee attacks similar to a Hill Giant but with unique contortion and life-draining abilities."
+  },
+  "Ogre": {
+    "relation": "conceptually_similar",
+    "explanation": "The Thin Giant shares the concept of a large, brutish humanoid with powerful melee attacks like an Ogre, but is more agile and necrotic-focused."
+  },
+  "monster_key": "thin-giant"
+}

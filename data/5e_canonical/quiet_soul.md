@@ -1,6 +1,8 @@
 <MonsterName/>Quiet Soul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Quiet Soul is a Medium undead creature characterized by its neutral evil alignment. This creature presents a significant threat in combat due to its ability to incapacitate opponents with its melancholic emanation, allowing it to control the battlefield effectively. With an Armor Class of 15 and 90 hit points, it poses a reasonable challenge, particularly at Challenge Rating 6, indicating that it provides moderate to advanced difficulty for adventuring parties. However, it is weakened by its low physical attributes, including a Strength score of 6, which is considered very bad for attacking or grappling, and a Dexterity score of 10, which is average. Its monstrous nature is enhanced by its exceptional Wisdom score of 18, granting it a very good perception skill, making it difficult for enemies to evade its influence.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ As for its actions, the Quiet Soul can unleash a psychic lash, which is a ranged
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quiet Soul
 
 *Medium* *Undead* *neutral evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Psychic Lash:** Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 21 (6d6) psychic damage. If an unconscious creature is hit by this attack, that creature must make a DC 15 Wisdom saving throw, remaining unconscious on a failed save, or waking on a successful one.
 
 
+</statblock>
 
 

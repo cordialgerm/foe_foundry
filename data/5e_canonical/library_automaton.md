@@ -1,6 +1,8 @@
 <MonsterName/>Library Automaton</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>24</HP>
 <summary>The Library Automaton is a small construct known for its role as a guardian and organizer of knowledge. It possesses a its own inherent understanding of written languages and is capable of performing a variety of tasks involving books and written records. Despite its limited physical capabilities, it compensates with clever abilities, including the manipulation of objects from a distance and the storage of valuable written works in its extradimensional space. With a challenge rating of 1/2, the Library Automaton is not particularly formidable in combat, but its utility in managing and safeguarding information makes it an interesting resource in many scenarios. Its armor class of 13 provides average protection, while its hit points totaling 24 indicate that it can withstand a moderate amount of punishment before being incapacitated.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Library Automaton can perform the Piston-Powered Kick action, whi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Library Automaton
 
 *Small* *Construct* *Lawful Neutral*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Piston-Powered Kick:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage.
 - **Unnerving Gaze:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 6 (1d6 + 3) psychic damage, and the target must succeed on a DC 13 Wisdom saving throw or have disadvantage on the next attack roll, ability check, or saving throw it makes before the start of the automaton’s next turn.
+</statblock>
 
 

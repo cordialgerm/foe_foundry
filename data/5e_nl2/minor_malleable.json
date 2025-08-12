@@ -1,0 +1,50 @@
+{
+    "name": "Minor Malleable",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "shapeshifter",
+        "psychic"
+    ],
+    "adjectives": [
+        "amorphous",
+        "chaotic"
+    ],
+    "description": "The Minor Malleable is an amorphous aberration that can change its form and shape while retaining a fleshy appearance. Its body is adaptable, allowing it to navigate tight spaces with ease.",
+    "memorable": "It can absorb psychic damage, regaining health, and can combine with others to form larger, more dangerous entities.",
+    "goals": "To absorb psychic energy and manipulate its surroundings, often teaming up with similar creatures.",
+    "relations": "Related to other minor malleables; can fuse with them to create stronger variants.",
+    "environment": "Likely found in dark or hidden places where it can surprise its victims.",
+    "strengths": "Psychic immunity and the ability to absorb psychic damage makes it exceptionally resilient to attacks of this nature.",
+    "weaknesses": "Low Dexterity impairs its agility and fleeing capabilities.",
+    "attacks": "Uses a Flesh Tendril for bludgeoning damage, capable of grappling smaller targets, and Psychic Drain to weaken opponents.",
+    "most_powerful_ability": "Psychic Absorption allows it to heal from psychic attacks, effectively making it a psychic predator.",
+    "equipment": null,
+    "senses": "Blindsight up to 30 feet allows it to perceive its surroundings even in darkness.",
+    "skills": null,
+    "additional_information": [
+        "Can move through spaces as narrow as 1 inch due to its Amorphous trait.",
+        "Reverts to its original form after temporary shape changes.",
+        "Can collaborate with other minor malleables to increase threat levels.",
+        "Moderate damage potential with its Flesh Tendril and Psychic Drain attacks.",
+        "Has a uniquely chaotic evil nature fueling its actions."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic shapeshifting monster",
+        "monster with psychic absorption ability",
+        "amorphous creature that absorbs psychic damage",
+        "malleable monster that can join others",
+        "medium aberration with bludgeoning attacks"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Aalpamac",
+    "queries": [
+        {
+            "query": "huge water monster with distance distortion ability",
+            "variant": "big aquatic creature with ability to distort distances"
+        },
+        {
+            "query": "creature that can breathe underwater and has low intelligence",
+            "variant": "monster that breathes both air and water and has bad intelligence"
+        },
+        {
+            "query": "strong melee attacker with cold resistance that swims fast",
+            "variant": "powerful close-combat creature resistant to cold and with quick swimming speed"
+        },
+        {
+            "query": "monstrosity that slows enemies and has high hit points",
+            "variant": "creature that hampers foes and possesses robust hit points"
+        },
+        {
+            "query": "monster with perception skill and amphibious trait",
+            "variant": "creature skilled in perception that can live in water and land"
+        }
+    ]
+}

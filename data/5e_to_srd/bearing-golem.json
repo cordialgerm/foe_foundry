@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with resilience and melee slam attacks, though the Bearing Golem has unique scattering and stealth abilities."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs designed as guardians or sentinels with combat capabilities, though the Bearing Golem is more agile and stealthy."
+  },
+  "monster_key": "bearing-golem"
+}

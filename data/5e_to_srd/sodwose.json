@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant creatures that use ambush tactics and can instill fear, fitting the ambusher role in natural environments."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based ambush predators that blend into natural surroundings and use physical attacks to restrain foes."
+  },
+  "monster_key": "sodwose"
+}

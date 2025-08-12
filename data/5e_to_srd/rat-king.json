@@ -1,0 +1,11 @@
+{
+  "Swarm of Rats": {
+    "relation": "close_cousins",
+    "explanation": "The Rat King commands and summons swarms of rats, linking it closely to the Swarm of Rats."
+  },
+  "Rat": {
+    "relation": "close_cousins",
+    "explanation": "As a leader of rats and summoner of rat minions, it is closely related to the Rat."
+  },
+  "monster_key": "rat-king"
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Shadow Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "shadow",
+        "necrotic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "stealthy",
+        "powerful"
+    ],
+    "description": "The Shadow Dragon Wyrmling is a medium-sized dragon that embodies traits of darkness and malevolence, displaying scale colors that blend into shadows.",
+    "memorable": "Radiates an aura of evil; possesses unique essence abilities tied to a specific area.",
+    "goals": "To dominate its territory and manipulate creatures entering its essence-linked area.",
+    "relations": "Related to other dragons and creatures of the shadows; may serve larger shadow entities.",
+    "environment": "Typically found near dark, secluded areas or locations with a strong connection to shadow energy.",
+    "strengths": "Immunities to necrotic and poison damage, resistance to multiple damage types, exceptional stealth capabilities.",
+    "weaknesses": "Limited effectiveness against magical weaponry.",
+    "attacks": "Uses a powerful bite attack and a devastating Anguished Breath weapon that inflicts necrotic damage.",
+    "most_powerful_ability": "Anguished Breath, which unleashes a cone of shadowy energy causing significant necrotic damage.",
+    "senses": "Possesses darkvision up to 120 feet, enhancing its effectiveness in low-light environments.",
+    "skills": "Excels in deception and stealth, making it a master of sneaky tactics and manipulation.",
+    "additional_information": [
+        "Incorporeal Movement allows it to pass through objects.",
+        "Essence Link ties its fate to a specific location.",
+        "Aura of evil can influence the morale of nearby creatures.",
+        "Immunities to several conditions enhance its combat resilience.",
+        "Resistance to nonmagical weapon damage improves its durability."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that uses shadow energy attacks",
+        "stealthy dragon connected to a specific area",
+        "shadow dragon with necrotic breath weapon",
+        "dark malevolent dragon in secluded locations",
+        "dragon radiating an evil aura"
+    ]
+}

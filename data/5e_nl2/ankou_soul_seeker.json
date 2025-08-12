@@ -1,0 +1,55 @@
+{
+    "name": "Ankou Soul Seeker",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 171,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "celestial",
+        "undead",
+        "guardian"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "baleful",
+        "resilient"
+    ],
+    "description": "The Ankou Soul Seeker is a large dragon with a blend of draconic and celestial features, utilizing its unique abilities to guard the boundary between life and death. It possesses a majestic yet fearsome appearance, with scales that seem to shimmer with an ethereal glow, representing its dual nature.",
+    "memorable": "The Ankou Soul Seeker's ability to control undead and transport souls makes it a daunting foe and an enigmatic ally, particularly with its lethal Reaper's Breath and its ability to become invisible in dim light.",
+    "goals": "The Ankou seeks to maintain the delicate balance between life and death, often standing guard against undead threats and ensuring that souls are transported correctly.",
+    "relations": "It may serve as a protector or guide for those who respect the boundaries of life and death, potentially allied with celestial beings or foes of undead creatures.",
+    "environment": "Typically found in areas that mark the transition between realms, such as graveyards, ancient ruins, or places of great sorrow.",
+    "strengths": "Possesses resistances to cold, necrotic, and poison damage, along with effective crowd control against undead through its Aura of Necromancy's Bane.",
+    "weaknesses": "While it excels in Constitution, the Ankou has only average Dexterity, making it less evasive in direct combat situations.",
+    "attacks": "Its attacks include a powerful bite that deals piercing and cold damage, and deadly claw strikes, making it a dangerous opponent in physical confrontations.",
+    "most_powerful_ability": "Reaper's Breath, which deals substantial damage in a line and is particularly devastating to undead creatures, rendering them vulnerable.",
+    "equipment": null,
+    "senses": "The Ankou possesses truesight up to 60 feet, allowing it to see through illusions and darkness.",
+    "skills": "It has exceptional skill in perception, making it very effective at noticing hidden threats and stealthy opponents.",
+    "additional_information": [
+        "Can become invisible in dim light or darkness with its Cloak of Shadows ability.",
+        "Holds the ability to polymorph into any creature it has seen with Change Shape.",
+        "Can transport itself and others to another plane with Usher of Souls, akin to the plane shift spell.",
+        "Possesses a notable +8 modifier in perception, reflecting its keen awareness.",
+        "Can deal radiant damage to undead creatures, making it a key adversary for them."
+    ],
+    "damage_types": [
+        "radiant",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "guardian of the boundary between life and death",
+        "ethereal dragon with soul-related abilities",
+        "dragon that transports souls",
+        "undead hunter with special attacks",
+        "stealthy dragon with invisibility"
+    ]
+}

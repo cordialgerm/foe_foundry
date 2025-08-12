@@ -1,0 +1,25 @@
+{
+    "name": "Timingila",
+    "queries": [
+        {
+            "query": "gargantuan aquatic monster that can only breathe underwater",
+            "variant": "gargantuan water creature that breathes only underwater"
+        },
+        {
+            "query": "chaotic monstrosity that excels in close combat and destroys structures",
+            "variant": "chaotic giant that shines in melee and is good at destroying buildings"
+        },
+        {
+            "query": "strong creature with a powerful roar that affects all nearby creatures",
+            "variant": "powerful monster with a fearsome roar impacting all creatures around"
+        },
+        {
+            "query": "neutral evil giant that has damage immunities and consumes its prey",
+            "variant": "neutral evil huge monster that is immune to damage and eats its victims"
+        },
+        {
+            "query": "monster with high strength living in aquatic environments and capable of causing chaos",
+            "variant": "creature with exceptional strength that lives in water and creates destruction"
+        }
+    ]
+}

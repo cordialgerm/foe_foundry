@@ -1,0 +1,52 @@
+{
+    "name": "Simurg",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Gargantuan",
+    "hp": 108,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 80 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "support",
+        "flying",
+        "healing"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "powerful",
+        "elusive"
+    ],
+    "description": "The Simurg is a gargantuan celestial creature with formidable flying capabilities, showcasing strength with its powerful bite and claw attacks.",
+    "memorable": "Its ability to control the battlefield with Forceful Gale while providing support through potent spellcasting makes it unique.",
+    "goals": "To serve as a powerful ally in combat and assist those in need through healing and protection.",
+    "relations": "Might be encountered with other celestials or allies in battle.",
+    "environment": "Typically found in celestial realms or during conflicts on the Material Plane.",
+    "strengths": "High hit points and strong physical attacks, along with versatile spellcasting for healing and control.",
+    "weaknesses": "Relatively low armor class for its size, making it vulnerable to focused attacks from ranged enemies.",
+    "attacks": "Utilizes multiattack with a bite and two claw strikes, dealing substantial damage.",
+    "most_powerful_ability": "Forceful Gale allows it to create a powerful wind gust, influencing the battlefield by knocking creatures prone.",
+    "senses": "Possesses keen sight with advantage on perception checks that rely on sight, enhancing threat detection.",
+    "skills": "High perception skill at +6, making it adept at detecting hidden or approaching foes.",
+    "additional_information": [
+        "Can telepathically communicate within 120 feet.",
+        "Resistant to radiant damage, providing additional durability.",
+        "Innate spellcasting allows for versatile support without material components.",
+        "Can detect poison and disease, ensuring safety for allies.",
+        "Flyby ability prevents opportunity attacks, enhancing its mobility."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Innate spellcasting includes healing and restorative spells, such as Cure Wounds and Greater Restoration.",
+    "test_queries": [
+        "gargantuan celestial creature that heals",
+        "flying monster with powerful wind abilities",
+        "celestial ally that can heal and fight",
+        "elusive creature that controls the battlefield",
+        "Simurg abilities and attacks"
+    ]
+}

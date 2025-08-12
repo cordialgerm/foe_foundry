@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Ghoulsteed is an undead creature related to ghouls, sharing undead traits and aggressive combat style."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead creatures with a fearsome presence and combat resilience, though the Ghoulsteed is a large undead mount."
+  },
+  "monster_key": "ghoulsteed"
+}

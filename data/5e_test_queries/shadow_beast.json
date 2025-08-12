@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Beast",
+    "queries": [
+        {
+            "query": "shadow monster from the fey realm with necrotic attacks",
+            "variant": "shadow creature from fey realm that does necrotic damage"
+        },
+        {
+            "query": "agile creature that thrives in darkness and has magic resistance",
+            "variant": "agile beast that excels in dark environments and resists magic"
+        },
+        {
+            "query": "medium fey creature that induces fear and uses shadows",
+            "variant": "medium fey monster that creates fear and utilizes shadows"
+        },
+        {
+            "query": "creature with high stealth skills that is sensitive to sunlight",
+            "variant": "monster with great stealth ability and sunlight sensitivity"
+        },
+        {
+            "query": "chaotic evil creature with melee attacks and necrotic damage",
+            "variant": "chaotic evil beast that has melee attacks and deals necrotic damage"
+        }
+    ]
+}

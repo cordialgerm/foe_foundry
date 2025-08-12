@@ -1,6 +1,8 @@
 <MonsterName/>Deep Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Deep Drake is a formidable Large Dragon embodying chaotic evil. With a challenge rating of 9, it presents a significant threat to adventurers, boasting high durability with an armor class of 17 and a substantial pool of 150 hit points. This drake thrives in chaotic environments, wielding impressive physical attacks and devastating magical capabilities. Its strengths include high physical attributes, particularly in Strength and Dexterity, allowing for strong melee attacks. However, it suffers from sunlight sensitivity, which hinders its performance when exposed to bright light. The Deep Drake is particularly dangerous due to its powerful abilities that can stun opponents and inflict necrotic damage, making it a fearsome adversary.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The drake also has a terrifying special attack known as Enervating Breath, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep Drake
 
 *Large* *Dragon* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +9 to hit, reach 5 ft, one target. Hit: 12 (2d6 + 5) slashing damage.
 - **Stinger:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 16 Constitution saving throw or become poisoned for 1 minute. A poisoned creature must repeat the saving throw at the end of each of its turns. On a failure, the creature takes 7 (2d6) poison damage. On a success, the condition ends. When animate dead is cast on one or more creatures killed by this poison, the spellcaster requires no material components and can cast the spell as an action.
 - **Enervating Breath (Recharge 5–6):** The deep drake exhales pain-inducing, purple-black energy in a 90-foot line that is 5 feet wide. Each creature in the line must make a DC 16 Dexterity saving throw. On a failure, a creature takes 35 (10d6) necrotic damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned.
+</statblock>
 
 

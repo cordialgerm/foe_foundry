@@ -1,0 +1,11 @@
+{
+  "Archmage": {
+    "relation": "close_cousins",
+    "explanation": "The Eonic Savant is a powerful humanoid spellcaster with high intelligence and diverse spellcasting like an Archmage."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are intelligent humanoid spellcasters, though the Eonic Savant has unique time manipulation abilities."
+  },
+  "monster_key": "eonic-savant"
+}

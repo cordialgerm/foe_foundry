@@ -1,6 +1,9 @@
 <MonsterName/>Drow</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>elf</Subtype>
+<CR/>1</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>13</HP>
 <summary>Drow, or dark elves, are a race of dark-skinned, subterranean elves who dwell in the vast, dangerous caverns of the Underdark. Known for their cruelty, cunning, and devotion to the dark goddess Lolth, Drow are skilled in magic and stealth. Their society is highly hierarchical, ruled by powerful priestesses of Lolth, and it is rife with intrigue, betrayal, and conflict. Drow are usually armed with poisoned weapons and are masters of ambush tactics, using the darkness of the Underdark to their advantage. Despite their evil reputation, some rare Drow may reject their society and seek redemption on the surface.</summary>
 
 <summary>The drow is a Medium humanoid known for its cunning and agility, often found in subterranean environments. With an Armor Class of 15 and only 12 hit points, the drow relies heavily on its dexterity and stealth to evade attacks rather than absorbing damage. Its challenge rating of 1/4 indicates that it is suitable for low-level encounters, making it a staple adversary in early adventures. Notable for its darkvision, the drow can see in complete darkness up to 120 feet, giving it a significant tactical advantage in dimly lit areas. However, it possesses a weakness to sunlight, which imposes disadvantages on its attack rolls and perception checks when exposed. Drow combatants excel with their ranged and melee attacks, enhanced by their ability to use poisons strategically, making them formidable foes despite their lower resilience.</summary>
@@ -21,6 +24,7 @@ As a bonus action, the drow can use the Poison Weapon ability, which allows it t
 
 Source: 5e_srd
 
+<statblock>
 ## Drow
 
 *Medium humanoid (elf), neutral evil*
@@ -57,7 +61,8 @@ At will: *dancing lights*
 
 ***Shortsword***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Hand Crossbow***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.
+***Hand Crossbow***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.</statblock>
+
 
 
 
@@ -65,6 +70,7 @@ At will: *dancing lights*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drow
 
 *Medium humanoid*
@@ -102,5 +108,6 @@ Source: 5e_artisinal_monsters
 	- Nightmare’s Kiss. The target is frightened of the drow while poisoned.
 	- Slumber’s Call. The target falls unconscious while poisoned or until it takes damage or another creature uses an action to wake it.
 
+</statblock>
 
 

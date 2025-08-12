@@ -1,0 +1,7 @@
+{
+  "Chimera": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Chimera exactly with its three heads (lion, goat, dragon), fire breath, flight, and multiattack features."
+  },
+  "monster_key": "chimera"
+}

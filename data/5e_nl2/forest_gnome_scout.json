@@ -1,0 +1,51 @@
+{
+    "name": "Forest Gnome Scout",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Forest",
+        "Gnome",
+        "Scout",
+        "Stealthy"
+    ],
+    "adjectives": [
+        "stealthy",
+        "agile",
+        "tactical"
+    ],
+    "description": "The Forest Gnome Scout is a medium humanoid with keen sensory abilities, well-suited for stealthy operations and ranged attacks in forest environments.",
+    "memorable": "Excels in stealth and surprise attacks, using illusions to confuse foes.",
+    "goals": "Typically seeks to control the battlefield and deceive enemies through clever tactics.",
+    "relations": "Can communicate with Small and Tiny beasts.",
+    "environment": "Primarily found in forested areas.",
+    "strengths": "High dexterity enabling effective stealth and ranged combat; keen hearing and sight with advantage on related checks.",
+    "weaknesses": "Low hit points making it fragile in direct confrontations.",
+    "attacks": "Wields a shortsword for melee attacks and a longbow for ranged attacks, adept at staying hidden.",
+    "most_powerful_ability": "Can cast blur, disguise self, and major image, enhancing its stealth and trickery.",
+    "equipment": null,
+    "senses": "Has passive perception of 16, providing exceptional awareness.",
+    "skills": "Proficient in stealth, with a +5 bonus, making it very effective in avoiding detection.",
+    "additional_information": [
+        "Innately casts spells without material components",
+        "Utilizes terrain for tactical advantages",
+        "Effective at distance with longbow",
+        "Specializes in deception and surprise",
+        "Can communicate with small animals"
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast blur, disguise self, and major image once each per long rest.",
+    "test_queries": [
+        "forest gnome with stealth abilities",
+        "tactical forest scout that uses illusions",
+        "agile humanoid that communicates with animals",
+        "forest creature that excels in ranged attacks",
+        "charismatic gnome with keen senses"
+    ]
+}

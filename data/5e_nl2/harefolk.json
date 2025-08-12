@@ -1,0 +1,51 @@
+{
+    "name": "Harefolk",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic good",
+    "size": "Small",
+    "hp": 18,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "burrow 10 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "stealth",
+        "exploration",
+        "subterfuge",
+        "snow"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "clever",
+        "chaotic"
+    ],
+    "description": "A small humanoid creature agile and clever, often depicted with fur and large ears.",
+    "memorable": "Known for its Keen Smell and ability to navigate icy terrains effortlessly.",
+    "goals": "Typically seeks to explore, gather information, or assist allies.",
+    "relations": "Might ally with other humanoids and creatures skilled in stealth and exploration.",
+    "environment": "Usually found in snowy regions or areas with hiding spots.",
+    "strengths": "Excels in stealth, has advantage in snowy environments, and good at detecting shapechangers.",
+    "weaknesses": "Vulnerable due to low hit points and not particularly strong in direct combat.",
+    "attacks": "Can bite with sharp teeth, strike with a shortsword, or attack from afar with a sling.",
+    "most_powerful_ability": "Ready for Trouble ability allows it to act quickly and avoid being surprised.",
+    "equipment": "Leather armor",
+    "senses": "Possesses keen senses with a passive perception of 13, enhancing its ability to detect hidden threats.",
+    "skills": "Skilled in perception and survival, effective in detecting danger and navigating survival situations.",
+    "additional_information": [
+        "Has advantage on initiative rolls when not incapacitated.",
+        "Automatically succeeds at identifying werewolves.",
+        "Can traverse icy surfaces without difficulty.",
+        "Gains advantage on stealth in snowy conditions."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "clever small creature in snowy terrain",
+        "agile humanoid with keen smell ability",
+        "chaotic good rabbit-like humanoid explorer",
+        "Harefolk tactics in snowy environments",
+        "small humanoid skilled in stealth and survival"
+    ]
+}

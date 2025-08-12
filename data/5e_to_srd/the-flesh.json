@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are grotesque aberrations with malleable bodies and a disturbing, amorphous nature."
+  },
+  "Mimic": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the mimicry ability and amorphous form that allows it to assume other shapes."
+  },
+  "monster_key": "the-flesh"
+}

@@ -1,0 +1,7 @@
+{
+  "Barbed Devil": {
+    "relation": "almost_identical",
+    "explanation": "The Chort Devil is a Medium fiend with high AC, strong melee attacks, fire damage, teleportation, and spellcasting, closely matching the Barbed Devil's traits."
+  },
+  "monster_key": "chort-devil"
+}

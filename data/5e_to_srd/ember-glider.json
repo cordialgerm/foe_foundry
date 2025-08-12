@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiery creatures with elemental fire abilities and immunity to fire damage."
+  },
+  "Magma Mephit": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, fire-themed creatures with fiery attacks and a nimble nature."
+  },
+  "monster_key": "ember-glider"
+}

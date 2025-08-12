@@ -1,0 +1,25 @@
+{
+    "name": "Cyclops Myrmidon",
+    "queries": [
+        {
+            "query": "Huge giant with a powerful melee attack and weak ranged abilities",
+            "variant": "giant with a huge size, strong melee attacks, and bad ranged skills"
+        },
+        {
+            "query": "Cyclops creature that excels in close combat but struggles with ranged attacks",
+            "variant": "creature cyclops that is great at close fighting but has trouble attacking from afar"
+        },
+        {
+            "query": "fearful giant that gains advantage when panicked in battle",
+            "variant": "giant that gets an attack advantage when scared during a fight"
+        },
+        {
+            "query": "giant with high hit points and low intelligence, proficient in melee",
+            "variant": "high HP giant with poor intelligence, skilled in melee combat"
+        },
+        {
+            "query": "Cyclops Myrmidon traits such as thick skull and multiattack abilities",
+            "variant": "traits of Cyclops Myrmidon like thick-skull ability and multi-attack"
+        }
+    ]
+}

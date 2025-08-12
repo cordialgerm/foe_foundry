@@ -1,0 +1,11 @@
+{
+  "Hezrou": {
+    "relation": "close_cousins",
+    "explanation": "The Spawn of Hriggala is a huge chaotic evil fiend with burrowing and necrotic abilities similar to a Hezrou."
+  },
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "It shares the undead and necrotic theme with Ghasts, especially with its hit point maximum reduction and summoning undead."
+  },
+  "monster_key": "spawn-of-hriggala"
+}

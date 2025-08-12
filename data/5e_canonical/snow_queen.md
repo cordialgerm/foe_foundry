@@ -1,6 +1,8 @@
 <MonsterName/>Snow Queen</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>16</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>182</HP>
 <summary>The Snow Queen is a formidable Medium Fey creature embodying the essence of winter and chill. With a neutral evil alignment, she possesses manipulative and destructive abilities that make her a dangerous adversary. Her high Armor Class of 17 due to natural armor and a generous pool of 182 hit points (28d8 + 56) demonstrate her resilience in battle. The Snow Queen showcases impressive Dexterity and Charisma, which enhance her agility and persuasive capabilities, making her both a formidable combatant and a cunning manipulator. While she is immune to cold and has resistances to nonmagical physical attacks, she is vulnerable to fire damage and other magical forces, which can turn the tide against her. With a Challenge Rating of 16, this creature presents a significant challenge, commanding respect and careful strategy from those who oppose her.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Snow Queen exemplifies a blend of formidable combat abilities, effe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snow Queen
 
 *Medium* *Fey* *Neutral Evil*
@@ -70,5 +73,6 @@ The Snow Queen can take 3 legendary actions, choosing from the options below. On
 - **Move:** The Snow Queen moves up to her speed without provoking opportunity attacks.
 - **Snowblind:** One creature the Snow Queen can see within 120 feet of her must succeed on a DC 18 Dexterity saving throw or be blinded by swirling snow until the end of its next turn.
 - **Wintry Swirl (Costs 2 Actions):** Each creature within 15 feet of the Snow Queen must succeed on a DC 18 Constitution saving throw or have vulnerability to cold damage until the end of its next turn. A creature with immunity to cold damage that fails this saving throw instead loses its immunity to cold damage but isn’t vulnerable to it.
+</statblock>
 
 

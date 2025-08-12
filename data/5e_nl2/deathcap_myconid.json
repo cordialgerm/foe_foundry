@@ -1,0 +1,50 @@
+{
+    "name": "Deathcap Myconid",
+    "creature_type": "Plant",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "toxic",
+        "myconid"
+    ],
+    "adjectives": [
+        "toxic",
+        "resilient",
+        "hazardous"
+    ],
+    "description": "The Deathcap Myconid is a Medium-sized plant creature with toxic power, exhibiting a resilience that makes it a dangerous foe. Its presence is marked by a slower movement speed of 20 feet, but its abilities to release toxic spores and deliver poisonous attacks make it formidable.",
+    "memorable": "The ability to use poisonous spores and its hypersensitivity to sunlight make the Deathcap Myconid a unique and challenging adversary.",
+    "goals": "To incapacitate or damage foes using toxic spores and melee attacks.",
+    "relations": "Often found in areas with other myconids or hazardous plant creatures.",
+    "environment": "Typically inhabits dark, damp environments where sunlight is minimal.",
+    "strengths": "High hit points and damaging poison attacks are significant strengths.",
+    "weaknesses": "Vulnerable to sunlight, suffering damage and reduced effectiveness when exposed.",
+    "attacks": "Uses Spore-Coated Fist for bludgeoning and poison damage along with Eject Spores for debilitating effects.",
+    "most_powerful_ability": "Eject Spores, which can cause debilitating effects on targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Suffers 10 radiant damage in sunlight.",
+        "Disadvantage on attack rolls in direct sunlight.",
+        "Multiattack capabilities increase offensive options."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "toxic plant creature with spores",
+        "plant monster vulnerable to sunlight",
+        "myconid with bludgeoning and poison attacks",
+        "hazardous creature found in dark environments",
+        "deathcap myconid poison attacks"
+    ]
+}

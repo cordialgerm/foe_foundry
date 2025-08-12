@@ -1,0 +1,11 @@
+{
+  "Ancient White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A gargantuan dragon with cold damage and a powerful presence similar to an Ancient White Dragon."
+  },
+  "Adult White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares cold-based breath and draconic form with the Adult White Dragon."
+  },
+  "monster_key": "ankou-soul-herald"
+}

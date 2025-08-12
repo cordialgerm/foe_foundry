@@ -1,0 +1,25 @@
+{
+    "name": "Risen Reaver",
+    "queries": [
+        {
+            "query": "undead creature with high hit points and slashing attacks",
+            "variant": "creature that is undead, has high hitpoints, and slashing damage"
+        },
+        {
+            "query": "chaotic evil monster capable of absorbing weapons",
+            "variant": "monster that is chaotic evil and can absorb nonmagical melee weapons"
+        },
+        {
+            "query": "large undead that can sense blood and move quickly",
+            "variant": "big undead creature that has blood sense and fast movement"
+        },
+        {
+            "query": "monster with blood sense that uses melee attacks",
+            "variant": "creature that has blood sense and strikes with melee attacks"
+        },
+        {
+            "query": "Risen Reaver combat abilities and undead nature",
+            "variant": "combat abilities of the Risen Reaver and its undead traits"
+        }
+    ]
+}

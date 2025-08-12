@@ -1,0 +1,50 @@
+{
+    "name": "Lantern Beetle",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 13,
+    "srd": false,
+    "cr": "0",
+    "movement": "30 ft. walking, 10 ft. climbing, 10 ft. flying",
+    "role": null,
+    "tags": [
+        "bioluminescent",
+        "environmental",
+        "insect"
+    ],
+    "adjectives": [
+        "tiny",
+        "illuminating",
+        "fragile"
+    ],
+    "description": "The Lantern Beetle is a tiny, bioluminescent creature with a horn. It emits bright light in a 10-foot radius and dim light for an additional 10 feet.",
+    "memorable": "It continues to glow for 6 hours after death, making it a unique light source.",
+    "goals": "Primarily serves to provide illumination in dark areas.",
+    "relations": "Could be encountered with other small creatures in forested or dark environments.",
+    "environment": "Commonly found in dark areas where its light can be useful.",
+    "strengths": "Provides illumination in dark environments, aiding navigation.",
+    "weaknesses": "Extremely low hit points and poor physical attributes limit combat effectiveness.",
+    "attacks": "Horn melee attack with a +3 to hit, dealing 1 piercing damage.",
+    "most_powerful_ability": "Illumination ability, shedding light in dark areas and lasting for hours after death.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 8, indicating low awareness of surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Very low Intelligence and Wisdom scores limit its interaction capabilities.",
+        "Capable of climbing and flying, albeit slowly.",
+        "Utilized as a whimsical creature in low-level encounters.",
+        "Provides amusing or mysterious interactions with adventurers.",
+        "Often seen in groups, enhancing its ecological role."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny illuminating insect with glowing ability",
+        "small bioluminescent beetle found in dark",
+        "fragile creature that emits bright light",
+        "beetle that glows for hours after death",
+        "hard to spot tiny creature with illumination"
+    ]
+}

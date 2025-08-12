@@ -1,0 +1,25 @@
+{
+    "name": "Moss Lurker",
+    "queries": [
+        {
+            "query": "small humanoid that ambushes in forests and uses poison",
+            "variant": "humanoid creature that poisons its prey and ambushes in wooded areas"
+        },
+        {
+            "query": "stealthy forest creature with high dexterity and poison attacks",
+            "variant": "forest dwelling creature that is stealthy and has poisonous attacks with high dex"
+        },
+        {
+            "query": "chaotic neutral moss creature that excels in ambush tactics",
+            "variant": "mossy creature with chaotic neutral alignment that is great at ambushing"
+        },
+        {
+            "query": "poisonous small creature that has blindsight and hides well",
+            "variant": "small poisonous humanoid that can see without sight and hides effectively"
+        },
+        {
+            "query": "Moss Lurker abilities in wooded environments and poison skills",
+            "variant": "abilities of the moss lurker in forests and its skills related to poison"
+        }
+    ]
+}

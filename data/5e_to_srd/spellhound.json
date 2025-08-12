@@ -1,0 +1,11 @@
+{
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "A predatory, magical canine-like creature that hunts and disrupts foes, similar to the Spellhound's role against spellcasters."
+  },
+  "Hunter Shark": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the concept of a predator specialized in hunting a particular prey, akin to the Spellhound's focus on spellcasters."
+  },
+  "monster_key": "spellhound"
+}

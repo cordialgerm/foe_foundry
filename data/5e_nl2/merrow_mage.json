@@ -1,0 +1,55 @@
+{
+    "name": "Merrow Mage",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 10 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "spellcaster",
+        "ambush",
+        "regeneration"
+    ],
+    "adjectives": [
+        "amphibious",
+        "arcane",
+        "agile",
+        "intelligent",
+        "formidable"
+    ],
+    "description": "A large monstrosity with strong physical attributes and arcane abilities, the Merrow Mage has a blend of merrow traits and magical prowess.",
+    "memorable": "Its ability to regenerate hit points and cast darkness makes it a tricky opponent in aquatic environments.",
+    "goals": "To ambush adventurers and manipulate combat with spellcasting.",
+    "relations": "Often encountered with other aquatic creatures or similar spellcasting foes.",
+    "environment": "Typically found in aquatic settings like oceans, lakes, or rivers.",
+    "strengths": "High Strength for melee attacks and innate spellcasting can change the flow of battle.",
+    "weaknesses": "Average Dexterity makes it less effective at dodging ranged attacks.",
+    "attacks": "Can grapple with claws, pull foes with a harpoon, and cast devastating spells like Mage Bolt.",
+    "most_powerful_ability": "Innate spellcasting allows it to cast impactful spells such as darkness and invisibility.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Regenerates 10 hit points at the start of its turn",
+        "Able to shapeshift into a Medium merfolk",
+        "Can create magical darkness that blocks vision",
+        "Uses Mage Bolt for powerful lightning damage",
+        "Grapples targets with strong claw attacks"
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Can cast darkness at will and invisibility once per hour, also charm person once daily.",
+    "test_queries": [
+        "large magical creature that lives in water",
+        "ambush spellcasting monster in aquatic environments",
+        "creature with regeneration and spellcasting prowess",
+        "monster that can grapple and pull targets",
+        "merrow creature with dark magic and agility"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Iron Golem": {
+    "relation": "almost_identical",
+    "explanation": "A massive, humanoid construct made entirely of iron with high durability and magical attacks, matching the Iron Golem exactly."
+  },
+  "monster_key": "iron-golem"
+}

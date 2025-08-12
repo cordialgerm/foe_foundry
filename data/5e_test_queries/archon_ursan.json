@@ -1,0 +1,25 @@
+{
+    "name": "Ursan Archon",
+    "queries": [
+        {
+            "query": "large celestial creature with immense strength and magical abilities",
+            "variant": "large creature that is celestial and has great strength and magic powers"
+        },
+        {
+            "query": "Ursan Archon abilities that enhance combat and provide resistances",
+            "variant": "abilities of Ursan Archon that improve fighting and give resistances"
+        },
+        {
+            "query": "magical creature immune to cold that can fly and has powerful melee attacks",
+            "variant": "creature with magic immunity to cold that can fly and has strong melee attack options"
+        },
+        {
+            "query": "chaotic good celestial being that can frighten enemies and bolster allies",
+            "variant": "celestial entity with chaotic good alignment able to scare foes and strengthen teammates"
+        },
+        {
+            "query": "combination of high damage and defensive abilities in a large celestial",
+            "variant": "mix of great damage potential and defense traits in a large celestial being"
+        }
+    ]
+}

@@ -22,6 +22,13 @@ class DamageType(StrEnum):
     Thunder = auto()
 
     @staticmethod
+    def parse(damage_type: str) -> DamageType:
+        try:
+            return DamageType[damage_type.title()]
+        except KeyError:
+            raise ValueError(f"Unknown damage type: {damage_type}")
+
+    @staticmethod
     def All() -> List[DamageType]:
         return [cast(DamageType, s) for s in DamageType._member_map_.values()]
 
@@ -62,6 +69,12 @@ class DamageType(StrEnum):
             DamageType.Thunder,
             DamageType.Poison,
         }
+
+    @staticmethod
+    def parse(damage_type: str) -> DamageType:
+        damage_type = damage_type.strip().lower()
+        val = DamageType._member_map_[damage_type.title()]
+        return cast(DamageType, val)
 
     @property
     def adj(self) -> str:

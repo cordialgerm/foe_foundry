@@ -1,6 +1,6 @@
-from .powers import clean_power_index, index_powers
+from .monsters import Monsters
 
 if __name__ == "__main__":
-    # re-index powers
-    clean_power_index()
-    index_powers()
+    print("Caching monsters...")
+    Monsters.generate_cache()
+    print("Monsters cached.")

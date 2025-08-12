@@ -1,0 +1,25 @@
+{
+    "name": "Lizardfolk Shaman",
+    "queries": [
+        {
+            "query": "humanoid shaman with poison abilities and wisdom spells",
+            "variant": "shaman who is a humanoid with poison powers and wisdom spells"
+        },
+        {
+            "query": "medium lizard creature that can swim and cast spells",
+            "variant": "medium lizardfolk who can swim and uses spells"
+        },
+        {
+            "query": "poisonous spellcaster that inhabits swamps and has heightened senses",
+            "variant": "spellcasting poison creature living in swamps with enhanced senses"
+        },
+        {
+            "query": "combatant that climbs and swims while supporting allies with spells",
+            "variant": "fighter that can climb and swim while aiding friends with magic"
+        },
+        {
+            "query": "lizardfolk with high wisdom and strong perception skills",
+            "variant": "lizard creature possessing high wisdom and excellent perception abilities"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large fiends with a chaotic evil nature and fiery abilities, excelling in close combat."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares fiery attacks and a menacing presence with high mobility, though smaller and less resilient."
+  },
+  "monster_key": "ibexian"
+}

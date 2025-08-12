@@ -1,0 +1,7 @@
+{
+  "Mimic": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a near-clone of the Mimic, sharing its shapechanging, adhesive ambush tactics, and deceptive object disguise."
+  },
+  "monster_key": "mimic"
+}

@@ -1,0 +1,11 @@
+{
+  "Phase Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large monstrosities with phasing or shifting abilities and use fear tactics."
+  },
+  "Goat": {
+    "relation": "conceptually_similar",
+    "explanation": "The homebrew's ability to shapeshift into a small goat connects it conceptually to the Goat."
+  },
+  "monster_key": "phase-monster"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Valkyrie",
+    "queries": [
+        {
+            "query": "celestial warrior with radiant damage abilities",
+            "variant": "celestial warriorradiant damage abilities"
+        },
+        {
+            "query": "powerful protector that enhances allies and fights in the air",
+            "variant": "powerfulprotectorthat enhances allies and fights in the air"
+        },
+        {
+            "query": "medium celestial being with high armor class and healing powers",
+            "variant": "medium celestial beinghih armor class and healing powers"
+        },
+        {
+            "query": "valkyrie abilities to fear enemies and support friends",
+            "variant": "valkyrie abilitise to fear enemies and support friends"
+        },
+        {
+            "query": "creature immune to poison and skilled in perception",
+            "variant": "creature immune to pwson and skilled in perception"
+        }
+    ]
+}

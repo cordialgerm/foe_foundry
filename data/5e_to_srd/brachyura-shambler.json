@@ -1,0 +1,11 @@
+{
+  "Ankheg": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium-sized monstrosities with grappling claws and acid-based attacks, often found in damp or underground environments."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a dangerous, amorphous creature inflicting acid damage and inhabiting sewers or damp places."
+  },
+  "monster_key": "brachyura-shambler"
+}

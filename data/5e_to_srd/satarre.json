@@ -1,0 +1,7 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "The Satarre is a magical humanoid combatant with necrotic damage and condition resistances, similar to the Cult Fanatic's role and abilities."
+  },
+  "monster_key": "satarre"
+}

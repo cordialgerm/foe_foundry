@@ -1,0 +1,19 @@
+{
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "A large chaotic evil undead with a terrifying presence and melee attacks."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "An undead creature with a chaotic and aggressive nature, known for melee attacks."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful undead with spellcasting and a menacing presence."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "An undead spirit with chaotic tendencies and spell-like abilities."
+  },
+  "monster_key": "elophar"
+}

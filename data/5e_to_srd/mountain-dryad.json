@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Mountain Dryad is a larger, more powerful variant of the Dryad with earth and mountain-themed abilities."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a strong connection to earth and terrain manipulation, including burrowing and tremorsense."
+  },
+  "monster_key": "mountain-dryad"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Runeswarm",
+    "queries": [
+        {
+            "query": "magical flying construct with high agility that uses runes",
+            "variant": "flying construct that is magical with exceptional agility and uses runes"
+        },
+        {
+            "query": "large swarm creature that can blind enemies and calls animals",
+            "variant": "swarm creature that summons animals and can blind enemies"
+        },
+        {
+            "query": "tough construct immune to various conditions with a low strength",
+            "variant": "resilient construct with condition immunities and low strength score"
+        },
+        {
+            "query": "Runeswarm abilities like Magic Resistance and Swarm tactics",
+            "variant": "abilities of the Runeswarm including its tactics related to Magic Resistance and Swarm"
+        },
+        {
+            "query": "agile construct that deals slashing damage and has magical effects",
+            "variant": "construct with high agility that inflicts slashing damage and employs magic effects"
+        }
+    ]
+}

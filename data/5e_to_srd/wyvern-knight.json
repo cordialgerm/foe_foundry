@@ -1,0 +1,11 @@
+{
+  "Knight": {
+    "relation": "almost_identical",
+    "explanation": "A humanoid knight clad in plate armor wielding a lance and acting as a tactical bruiser."
+  },
+  "Wyvern": {
+    "relation": "conceptually_similar",
+    "explanation": "The Wyvern Knight is thematically linked to wyverns as a mounted warrior and poison user."
+  },
+  "monster_key": "wyvern-knight"
+}

@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "close_cousins",
+    "explanation": "The Psychic Vampire shares the undead vampire nature, including converting slain foes into vampire spawn and sunlight vulnerability."
+  },
+  "Mind Flayer": {
+    "relation": "conceptually_similar",
+    "explanation": "It shares psychic manipulation and mental incapacitation abilities similar to a Mind Flayer's psionic powers."
+  },
+  "monster_key": "psychic-vampire"
+}

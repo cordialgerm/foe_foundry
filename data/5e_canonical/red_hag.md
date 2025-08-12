@@ -1,6 +1,8 @@
 <MonsterName/>Red Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Red Hag is a Medium-sized Fey creature, known for its cunning and malevolent nature. As a neutral evil entity, it revels in causing suffering and mischief, utilizing its powerful magic and physical attacks to overwhelm foes. With a challenge rating of 7, it poses a significant threat to adventurers, boasting an impressive collection of attributes, special abilities, and spells that enhance its combat efficacy. While its combat prowess is formidable, it remains vulnerable to strategies that exploit its weaknesses, such as ranged attacks and magical effects that do not require constitution saving throws.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Red Hag's spellcasting abilities augment its threat level significantly. It 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Red Hag
 
 *Medium* *Fey* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Blood Bolt:** Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 14 (2d8 + 5) necrotic damage. If the target is a creature with blood, it must succeed on a DC 16 Constitution saving throw or be poisoned until the end of its next turn.
 - **Siphon Blood (Recharge 5–6):** The red hag drains blood from nearby creatures. Each creature that isn’t a Construct or Undead within 20 feet of the red hag must make a DC 16 Constitution saving throw, taking 35 (10d6) necrotic damage on a failed save, or half as much damage on a successful one. If at least one creature fails the saving throw, the next spell the red hag casts is cast as if the spell used a spell slot two levels higher than the spell’s lowest level.
 - **Spellcasting:** The red hag casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 16):<br>At will: animal friendship, druidcraft, entangle<br>3/day: cure wounds, dispel magic, lesser restoration<br>1/day: control water, freedom of movement
+</statblock>
 
 

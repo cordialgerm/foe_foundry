@@ -1,6 +1,8 @@
 <MonsterName/>Ychen Bannog</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>186</HP>
 <summary>The Ychen Bannog is a gargantuan, unaligned beast that serves as a formidable presence in any encounter. With an impressive Armor Class of 17 due to its natural armor and a total of 186 hit points, it operates primarily as a tank in battle, capable of absorbing significant damage while dealing out devastating blows. This creature boasts exceptional Strength and Constitution scores, granting it powerful melee attacks and the ability to endure many hits, although its lack of Dexterity may make it somewhat predictable. While it cannot cast spells or communicate, its special abilities and fearsome physical attacks make it a powerful adversary.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Ychen Bannog is a devastating force in combat, capable of dealing c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ychen Bannog
 
 *Gargantuan* *Beast* *Unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Stomp:** Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 22 (3d8 + 9) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.
 - **Deafening Bellow (Recharge 5-6):** The ychen bannog delivers a fearsome bellow in a 60-foot cone that is audible out to 1 mile. Each creature in the area must make a DC 17 Constitution saving throw. On a failure, a creature takes 44 (8d10) thunder damage and is deafened for 1 hour. On a success, a creature takes half the damage and isn’t deafened. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
 - **Overrun (Recharge 6):** The ychen bannog moves up to 30 feet in a straight line and can move through the space of any Large or smaller creature. This movement doesn’t provoke opportunity attacks. The first time the ychen bannog enters a creature’s space during this move, that creature must make a DC 17 Dexterity saving throw. On a failure, a creature takes 54 (12d8) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone.
+</statblock>
 
 

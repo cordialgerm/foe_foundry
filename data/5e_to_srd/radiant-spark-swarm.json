@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "A radiant, magical elemental swarm that flies and deals fire and radiant damage shares the elemental and damage themes of a Fire Elemental."
+  },
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "As a swarm creature that occupies the space of others and attacks in close range, it is closely related to the Swarm of Insects in behavior."
+  },
+  "monster_key": "radiant-spark-swarm"
+}

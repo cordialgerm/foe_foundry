@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, agile humanoid with innate spellcasting and fire-based attacks closely matches the Kobold."
+  },
+  "monster_key": "kobold-sorcerer"
+}

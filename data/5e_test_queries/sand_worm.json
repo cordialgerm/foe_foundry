@@ -1,0 +1,25 @@
+{
+    "name": "Sand Worm",
+    "queries": [
+        {
+            "query": "gargantuan monster that burrows through solid rock",
+            "variant": "giant creature that tunnels through rock"
+        },
+        {
+            "query": "massive sand creature with incapacitating abilities",
+            "variant": "huge sand beast that can incapacitate foes"
+        },
+        {
+            "query": "monster with a powerful bite and poisonous tail stinger",
+            "variant": "creature with strong bite attack and venomous tail"
+        },
+        {
+            "query": "monstrosity that creates tunnels while attacking",
+            "variant": "creature that burrows and attacks simultaneously"
+        },
+        {
+            "query": "sand-dwelling monstrosity that disrupts enemy formations",
+            "variant": "creature from sand that can confuse enemies"
+        }
+    ]
+}

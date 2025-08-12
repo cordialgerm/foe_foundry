@@ -1,0 +1,25 @@
+{
+    "name": "Herd Skulker",
+    "queries": [
+        {
+            "query": "cunning shapeshifting monster that resembles herd animals",
+            "variant": "sneaky monster that can change into herd animals"
+        },
+        {
+            "query": "stealthy creature with advantages in deception and perception",
+            "variant": "stealthy being that has advantages in awareness and trickery"
+        },
+        {
+            "query": "medium monstrosity with good speed and natural armor",
+            "variant": "monstrous creature that has fast movement and natural armor"
+        },
+        {
+            "query": "agile creature that can hide as a cow or sheep",
+            "variant": "quick monster that can disguise itself as a sheep or cow"
+        },
+        {
+            "query": "monster with bite attack and ability to deceive herd animals",
+            "variant": "creature that has biting ability and can trick herd animals"
+        }
+    ]
+}

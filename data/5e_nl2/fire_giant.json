@@ -1,0 +1,53 @@
+{
+    "name": "Fire Giant",
+    "creature_type": "Giant",
+    "alignment": "lawful evil",
+    "size": "Huge",
+    "hp": 162,
+    "ac": 18,
+    "srd": true,
+    "cr": "9",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "giant",
+        "volcanic"
+    ],
+    "adjectives": [
+        "towering",
+        "muscular",
+        "fearsome",
+        "militaristic"
+    ],
+    "description": "A towering and muscular humanoid with coal-black skin and glowing red eyes. Clad in heavy armor, it resembles a living volcano.",
+    "memorable": "Possesses an immunity to fire and a significant ability to wield flames in battle.",
+    "goals": "To command armies, forge powerful weapons, and conquer territories.",
+    "relations": "Often commands lesser giants or humanoid slaves.",
+    "environment": "Lives in volcanic regions or massive forges.",
+    "strengths": "Exceptionally high physical strength and durability with the ability to control fire and heat.",
+    "weaknesses": "Vulnerable to cold damage, which slows it down.",
+    "attacks": "Wields an enormous greatsword for devastating melee strikes and can throw volcanic boulders for ranged attacks.",
+    "most_powerful_ability": "Can unleash a Volcanic Burst, causing widespread fire damage and knocking targets prone.",
+    "equipment": "Heavy ornate armor and formidable melee weapons like a greatsword.",
+    "senses": "Has passive perception of 16, allowing it to detect hidden creatures effectively.",
+    "skills": "Excels in athletics, intimidation, and has notable perception skills.",
+    "additional_information": [
+        "Can use a 'Sword Sweep' to attack all nearby enemies while bloodied.",
+        "Immunity to fire damage enhances its resilience in battle.",
+        "Capable of causing significant area-of-effect damage and controlling battlefield positioning.",
+        "Possesses a special move that reduces its speed when it takes cold damage.",
+        "Can utilize reactions like kicking attackers to create battlefield dynamics."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "towering giant with flaming abilities",
+        "muscular giant living in volcanoes",
+        "fire giant commanding armies with weapons",
+        "huge warrior with coal-black skin",
+        "giant with fire immunity and volcanic attacks"
+    ]
+}

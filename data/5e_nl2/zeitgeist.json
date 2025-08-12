@@ -1,0 +1,54 @@
+{
+    "name": "Zeitgeist",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "20 feet on foot, 40 feet in Darting Form",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "chaotic",
+        "swift",
+        "unpredictable"
+    ],
+    "adjectives": [
+        "chaotic",
+        "swift",
+        "unpredictable",
+        "versatile"
+    ],
+    "description": "The Zeitgeist is a medium humanoid creature that can alternate between agile and robust forms. In Darting Form, it exhibits rapid speed and elusiveness, while in Sluggish Form, it demonstrates resilience against physical damage.",
+    "memorable": "Its ability to shift forms and rewind damage makes it a unique and challenging opponent.",
+    "goals": "To outmaneuver opponents on the battlefield and survive encounters with its abilities.",
+    "relations": "Related to other humanoids or creatures that manipulate time and space.",
+    "environment": "Typically found in chaotic or unpredictable locations.",
+    "strengths": "High Dexterity and Constitution provide good mobility and resilience.",
+    "weaknesses": "Low Charisma limits its effectiveness in social situations and against mental effects.",
+    "attacks": "Employs Darting Rend for quick, multiple slashing strikes or powerful Slam attacks in its Sluggish Form.",
+    "most_powerful_ability": "Rewind ability allows it to negate damage or conditions, enhancing survival.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Damage immunity to psychic damage.",
+        "Resistance to physical damage in Sluggish Form.",
+        "Can repeatedly shift between two forms each turn.",
+        "A special Tormented Scream ability that affects a wide area.",
+        "High mobility with the ability to Dash or Disengage as a bonus action."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid that shifts forms in battle",
+        "creature with chaotic movement abilities",
+        "swift and unpredictable humanoid monster",
+        "Zeitgeist combat tactics and forms",
+        "monster immune to psychic damage"
+    ]
+}

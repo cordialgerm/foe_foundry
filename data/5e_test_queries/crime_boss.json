@@ -1,0 +1,25 @@
+{
+    "name": "Crime Boss",
+    "queries": [
+        {
+            "query": "humanoid leader with strong melee abilities and high charisma",
+            "variant": "humanoid boss with strong melee skills and high charisma"
+        },
+        {
+            "query": "master of deception living in an urban environment",
+            "variant": "deception master residing in city surroundings"
+        },
+        {
+            "query": "intimidating crime lord with tactical maneuvers and loyal henchmen",
+            "variant": "tactical crime lord with intimidation tactics and loyal followers"
+        },
+        {
+            "query": "powerful humanoid that uses command and retaliates in combat",
+            "variant": "strong humanoid that commands allies and counters in battle"
+        },
+        {
+            "query": "combat strategist that marks targets and deals extra damage",
+            "variant": "battle strategist that marks enemies and inflicts additional damage"
+        }
+    ]
+}

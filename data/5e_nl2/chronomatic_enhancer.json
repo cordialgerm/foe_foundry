@@ -1,0 +1,48 @@
+{
+    "name": "Chronomatic Enhancer",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 152,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "construct",
+        "time manipulation",
+        "support"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "durable"
+    ],
+    "description": "A Large Construct with a complex design, capable of manipulating time around it. It features robust armor and gears that whir and click, signifying its advanced technology.",
+    "memorable": "Its ability to alter time in combat dramatically shifts the dynamics, providing advantages to allies and hindering foes.",
+    "goals": "To support allies in battle while debuffing enemies using its time-manipulating abilities.",
+    "relations": "Often encountered with other constructs or as a guardian for powerful magic users.",
+    "environment": "Typically found in locations tied to advanced technology or ancient magic.",
+    "strengths": "Immunities to poison and psychic damage, along with damage resistance to nonmagical attacks, makes it resilient.",
+    "weaknesses": "Low Intelligence and Charisma, suggesting a lack of strategic depth compared to more intelligent beings.",
+    "attacks": "Engages in melee with powerful slam attacks while deploying time-altering abilities.",
+    "most_powerful_ability": "Time-Infused Gears allow it to boost allies or debilitate enemies with effects like Energizing Electricity and Slowing Gas.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, along with a passive perception of 16, allowing it to perceive threats effectively.",
+    "skills": "Furthermore, it has a good Wisdom score which aids in perception tasks.",
+    "additional_information": [
+        "Utilizes a special ability, Delay, to postpone damage taken.",
+        "Immutable Form protects it from altering spells or effects.",
+        "Can freeze opponents in time or enhance allies' capabilities during combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that manipulates time",
+        "large tactical construct with time abilities",
+        "durable construct supporting allies in battle",
+        "creature using slowing gas in combat",
+        "ember enhancing allies' combat skills"
+    ]
+}

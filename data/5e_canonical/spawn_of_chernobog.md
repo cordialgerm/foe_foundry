@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Chernobog</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Spawn of Chernobog is a large, chaotic evil fiend that embodies darkness and infection. With an armor class of 14 and a substantial pool of 95 hit points, it poses a significant challenge in combat, particularly due to its high strength and resilience. Its challenge rating of 4 indicates that it can be a formidable opponent for mid-level adventurers seeking to test their skills. The spawn thrives in dark environments, benefiting from its exceptional physical might while being vulnerable to radiant damage. However, the creature is weakened in sunlight, suffering from disadvantage on attack rolls and perception checks. Notable features include its frightening ability to infect others with a potentially deadly disease, transforming infected creatures into similar spawn if not cured in time.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Spawn of Chernobog is a creature that merges offensive capabilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Chernobog
 
 *Large* *Fiend* *chaotic evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.
 
 
+</statblock>
 
 

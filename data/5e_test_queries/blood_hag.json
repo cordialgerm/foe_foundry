@@ -1,0 +1,25 @@
+{
+    "name": "Blood Hag",
+    "queries": [
+        {
+            "query": "fey creature that drains blood and grapples enemies",
+            "variant": "fey monster that grapples and drains blood from enemies"
+        },
+        {
+            "query": "evil medium-sized hag that uses necrotic spells",
+            "variant": "medium evil hag that casts necrotic spells"
+        },
+        {
+            "query": "chaotic creature with blood sense ability and impressive hit points",
+            "variant": "chaotic fey with ability to sense blood and high hit points"
+        },
+        {
+            "query": "monster that specializes in manipulation and life-draining attacks",
+            "variant": "creature that excels in life-draining and manipulation attacks"
+        },
+        {
+            "query": "hags that have high strength and immune to charm",
+            "variant": "hags with strong build and immunity to being charmed"
+        }
+    ]
+}

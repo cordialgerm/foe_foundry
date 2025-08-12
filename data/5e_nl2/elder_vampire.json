@@ -1,0 +1,54 @@
+{
+    "name": "Elder Vampire",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 285,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "vampire",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "resilient",
+        "powerful"
+    ],
+    "description": "The Elder Vampire is a strong undead creature with formidable combat capabilities and a mastery of manipulation. It has exceptional physical attributes and can transform into mist, making it a challenging foe to defeat.",
+    "memorable": "Its ability to charm targets and raise them as vampire spawn makes it a terrifying adversary.",
+    "goals": "To dominate and manipulate others while replenishing its own power by draining life.",
+    "relations": "May be encountered alongside lesser vampires or undead minions that it controls.",
+    "environment": "Typically found in dark and secluded lairs, often where soil from its homeland is kept.",
+    "strengths": "High attributes in Strength and Constitution, notable resistances, and multiple abilities that enhance its survivability and manipulation.",
+    "weaknesses": "Susceptible to sunlight and running water, which deal radiant damage and negate some of its abilities.",
+    "attacks": "Capable of delivering bludgeoning and necrotic damage with its grab attack and can charm its victims.",
+    "most_powerful_ability": "Regeneration allows it to regain hit points each turn unless it takes radiant damage.",
+    "equipment": null,
+    "senses": "Possesses exceptional senses with truesight and darkvision, allowing it to see even in conditions of magical darkness.",
+    "skills": "Proficient in perception, stealth, and persuasion, showcasing its combat and social capabilities.",
+    "additional_information": [
+        "Legendary Resistance enables it to succeed on failed saving throws.",
+        "Misty Recovery allows it to transform into mist instead of dying.",
+        "Resting Place is essential for its power recovery and resurrection.",
+        "Blood Frenzy increases its action frequency when bloodied.",
+        "Shapechange allows it to assume the form of beasts."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful undead manipulator in dark lairs",
+        "vampire with mist form and regeneration",
+        "Elder Vampire that can charm and raise minions",
+        "undead creature with resistance to necrotic damage",
+        "vampire that fears sunlight and running water"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Beetle, Clacker Soldier",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 18,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., climb 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beetle",
+        "clacker",
+        "soldier"
+    ],
+    "adjectives": [
+        "piercing",
+        "thunderous",
+        "tactical"
+    ],
+    "description": "The Clacker Soldier is a small, resilient beast that features mandibles capable of creating a thunderous sound. Its small size allows it to effectively navigate battlefields, especially when coordinating with others of its kind.",
+    "memorable": "The ability to generate disruptive thunder damage that affects multiple enemies makes the Clacker Soldier a tactical threat despite its low intelligence.",
+    "goals": "To thrive in battle by dealing damage and disrupting enemies using its sonic abilities.",
+    "relations": "Often found with other Clacker Soldiers, they can coordinate their sonic attacks to increase their effectiveness.",
+    "environment": "Typically encountered in battle scenarios or areas where they can ambush prey.",
+    "strengths": "Resilience against slashing damage from nonmagical attacks and immunity to thunder damage.",
+    "weaknesses": "Low strength and intelligence, making them vulnerable to physical and strategic exploitation.",
+    "attacks": "Uses a melee bite attack that deals significant piercing damage.",
+    "most_powerful_ability": "Clack generates a thunderous noise in a cone, affecting multiple creatures and causing potential disadvantage on saving throws if overlapping.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, allowing it to detect nearby creatures without needing vision.",
+    "skills": "Has proficiency in Perception, though it only results in a total modifier of -2.",
+    "additional_information": [
+        "Immunity to thunder damage.",
+        "Resistant to slashing damage from nonmagical sources.",
+        "Can occupy the same space as another Clacker Soldier for strategic positioning.",
+        "Low intelligence limits complex task execution.",
+        "Effective in groups, maximizing their sonic attacks."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small resilient beetle",
+        "tactical thunder damage creature",
+        "beetle creating sound attacks",
+        "Clacker Soldier abilities",
+        "ambush tactics for Clacker Soldiers"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Sea Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 17,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "amphibious",
+        "cold damage"
+    ],
+    "adjectives": [
+        "cold-resistant",
+        "cunning",
+        "versatile"
+    ],
+    "description": "The Sea Dragon Wyrmling is a medium-sized dragon with the ability to manipulate cold, having a striking physical presence.",
+    "memorable": "Its Tidal Breath ability can disrupt enemies and change the dynamics of the battlefield with cold and bludgeoning damage.",
+    "goals": "To dominate in both aquatic and terrestrial battles, using its abilities strategically.",
+    "relations": "Related to other dragons and sea creatures, may serve more powerful dragons or deities.",
+    "environment": "Aquatic environments and coastal regions.",
+    "strengths": "Immunity to cold damage and the ability to breathe both air and water.",
+    "weaknesses": "Average dexterity, making it less effective at dodging attacks.",
+    "attacks": "Bite attack deals piercing and cold damage, and Tidal Breath unleashes a wave that can push and knock down enemies.",
+    "most_powerful_ability": "Tidal Breath can deal significant area damage and control enemy positioning.",
+    "equipment": null,
+    "senses": "Possesses blindsight 10 feet, allowing it to navigate through low visibility conditions.",
+    "skills": "Proficient in Perception, enhancing its awareness of surroundings.",
+    "additional_information": [
+        "Above average Strength and Constitution scores.",
+        "Good mobility both on land and in the air.",
+        "Effective in both social interactions thanks to high Charisma.",
+        "Can command respect and manipulate other creatures.",
+        "Strong combatant with a tactical mindset."
+    ],
+    "damage_types": [
+        "cold",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cold-resistant dragon in aquatic environments",
+        "dragon with tidal breath attack",
+        "sea dragon with high charisma and cold immunity",
+        "medium dragon that can breathe both air and water",
+        "cunning dragon with bludgeoning and cold damage"
+    ]
+}

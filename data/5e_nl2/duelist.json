@@ -1,0 +1,53 @@
+{
+    "name": "Duelist",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "skilled",
+        "agile",
+        "lawful evil"
+    ],
+    "adjectives": [
+        "skilled",
+        "agile",
+        "deceptive"
+    ],
+    "description": "The Duelist is a cunning and agile humanoid warrior known for its finesse in combat, typically wielding a rapier with great speed.",
+    "memorable": "The Duelist excels in one-on-one combat, utilizing quick strikes and evasive maneuvers with its mobility abilities.",
+    "goals": "To outmaneuver opponents, deliver swift strikes, and avoid direct confrontation when possible.",
+    "relations": "Often seen alongside other agile or cunning combatants.",
+    "environment": "Commonly encountered in urban settings or dense shadowy areas where it can utilize its mobility.",
+    "strengths": "High agility enhances evasion and attack accuracy; special abilities allow it to negate opportunity attacks.",
+    "weaknesses": "Sunlight Sensitivity causes disadvantage on attacks and perception checks in sunlight.",
+    "attacks": "Utilizes multiattacks with a rapier and venomous dagger, dealing piercing damage and applying poison.",
+    "most_powerful_ability": "Riposte allows the Duelist to counterattack with advantage after being missed by a melee attack.",
+    "equipment": "Rapier and Dagger",
+    "senses": "Possesses darkvision and a passive perception of 14.",
+    "skills": "Proficient in Acrobatics and Stealth, making it highly competent in maneuvering and evading detection.",
+    "additional_information": [
+        "Duelist's Mobility grants advantage on avoiding opportunity attacks.",
+        "Fey Ancestry provides advantage against being charmed and immunity to magical sleep.",
+        "Can vanish into shadows with Shadow Traveler for tactical repositioning.",
+        "Multiattack variant allows for increased damage output in a single turn.",
+        "Highly effective in one-on-one engagements."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swift and cunning combatant with rapier",
+        "agile humanoid using finesse in battle",
+        "duelist with poison attack and evasive maneuvers",
+        "lawful evil warrior skilled in acrobatics",
+        "creature adverse to sunlight with mobility skills"
+    ]
+}

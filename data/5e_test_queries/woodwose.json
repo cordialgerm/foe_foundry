@@ -1,0 +1,25 @@
+{
+    "name": "Woodwose",
+    "queries": [
+        {
+            "query": "nature-themed humanoid with climbing abilities and spellcasting",
+            "variant": "nature based humanoid that can climb and cast spells"
+        },
+        {
+            "query": "medium-sized forest creature known for stealth and nature skills",
+            "variant": "medium forest monster proficient in stealth and nature"
+        },
+        {
+            "query": "chaotic neutral humanoid that communicates with beasts and plants",
+            "variant": "humanoid with chaotic neutral alignment that talks to beasts and plants"
+        },
+        {
+            "query": "agile creature with innate spellcasting and melee combat skills",
+            "variant": "versatile being that can cast spells innately and is skilled in melee"
+        },
+        {
+            "query": "woodland humanoid proficient in survival and has high strength",
+            "variant": "woodsy humanoid skilled in survival with strong physical attributes"
+        }
+    ]
+}

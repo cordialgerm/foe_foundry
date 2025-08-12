@@ -1,6 +1,8 @@
 <MonsterName/>Raptor</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>32</HP>
 <summary>The Raptor is a medium-sized beast that excels as a predator, utilizing its speed and teamwork to take down prey. With an Armor Class of 13, it is moderately difficult to hit, and its 32 hit points (which equate to 5d8+10) provide it with a decent amount of survivability. One of its primary strengths is its Pack Tactics ability, which allows it to gain an advantage on attacks when near allies, making it a formidable foe in numbers. It has an exceptional Strength score of 16, giving it a strong offensive capability alongside a decent Dexterity of 14. However, the Raptor is limited in intelligence, charisma, and wisdom, indicating that it's not very strategic outside of its pack mentality. The creature's speed of 60 feet enables it to close distances quickly or retreat if needed, making it very agile in battle.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Raptor is a swift and potent predator that thrives in packs, levera
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Raptor
 
 *Medium* *Beast*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) slashing damage. If the target is a Medium or smaller creature  it makes a DC 13 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 

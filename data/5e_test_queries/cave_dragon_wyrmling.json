@@ -1,0 +1,25 @@
+{
+    "name": "Cave Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with poison breath that suppresses light",
+            "variant": "medium-sized dragon that has poison breath and can suppress light"
+        },
+        {
+            "query": "dragon that burrows through earth and creates darkness",
+            "variant": "dragon capable of burrowing and creating dark areas"
+        },
+        {
+            "query": "cave dragon that can move through stone and has blindsight",
+            "variant": "cave dragon with the ability to move through stone and has blindsight"
+        },
+        {
+            "query": "creature resistant to poison living in caves with high strength",
+            "variant": "creature that is resistant to poison and found in caves with great strength"
+        },
+        {
+            "query": "menacing dragon with high hit points and stealth skills",
+            "variant": "serious dragon with a lot of hit points and skills in stealth"
+        }
+    ]
+}

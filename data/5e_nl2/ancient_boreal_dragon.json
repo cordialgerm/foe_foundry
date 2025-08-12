@@ -1,0 +1,53 @@
+{
+    "name": "Ancient Boreal Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Gargantuan",
+    "hp": 407,
+    "ac": 22,
+    "srd": false,
+    "cr": "24",
+    "movement": "walk 40 ft., fly 80 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "boreal",
+        "ancient"
+    ],
+    "adjectives": [
+        "formidable",
+        "towering",
+        "chaotic",
+        "durable"
+    ],
+    "description": "The Ancient Boreal Dragon is a gargantuan dragon with a towering presence and immense power, embodying chaotic neutral alignment. It features a shimmering blue and white exterior reflecting its icy nature and burns with embers.",
+    "memorable": "Known for its devastating Cinder Breath and Ember Wreath abilities, this dragon strikes fear with its Frightful Presence, making it a legendary threat on the battlefield.",
+    "goals": "Its usual goals include dominating territory, intimidating other creatures, and preserving its lair's safety.",
+    "relations": "They could be encountered alongside other mighty dragons or serve as a powerful adversary for adventurers seeking to claim its domain.",
+    "environment": "Usually found in icy mountains, frigid caverns, or arctic regions.",
+    "strengths": "Exceptionally high AC of 22, powerful melee attacks, devastating breath weapon, and incredibly high passive perception.",
+    "weaknesses": "Vulnerable to cold damage and has average dexterity, limiting its evasion capabilities.",
+    "attacks": "Employs a fearsome bite, sharp claws, and a powerful tail across multiple attacks, alongside area-damage breath weapon and fear-inducing presence.",
+    "most_powerful_ability": "Cinder Breath releases a terrifying 90-foot cone of superheated air, causing massive fire damage to affected creatures.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a passive perception of 28, allowing it to detect hidden threats easily.",
+    "skills": "Excels in athletics and perception, with a high passive perception score indicating acute awareness of its surroundings.",
+    "additional_information": [
+        "Immunity to fire damage.",
+        "Legendary Resistance allows it to succeed on failed saving throws three times per day.",
+        "Can use Ember Wreath to create a damaging area around itself.",
+        "Employs Frightful Presence to instill fear in its foes.",
+        "Can manipulate the battlefield with legendary actions."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Gargantuan ice dragon",
+        "legendary dragon foe",
+        "dragon with devastating breath weapon",
+        "ice-themed dragon abilities",
+        "chaotic dragon of the north"
+    ]
+}

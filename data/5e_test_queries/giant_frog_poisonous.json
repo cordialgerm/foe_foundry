@@ -1,0 +1,25 @@
+{
+    "name": "Giant Poisonous Frog",
+    "queries": [
+        {
+            "query": "large amphibious frog with toxic skin and grappling abilities",
+            "variant": "big frog that can grapple and has poisonous skin"
+        },
+        {
+            "query": "green giant frog that poisons attackers and swallows prey",
+            "variant": "huge frog that can poison and swallow enemies"
+        },
+        {
+            "query": "frog that jumps great distances and has hallucinogenic toxins",
+            "variant": "frog able to leap far and has mild hallucination toxins"
+        },
+        {
+            "query": "creature that can swim and has a powerful bite attack",
+            "variant": "beast that swims and has a strong biting attack"
+        },
+        {
+            "query": "toxic giant frog found in water environments",
+            "variant": "poisonous large frog living in aquatic settings"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Dullahan",
+    "creature_type": "Fey",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 178,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "60 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "fey",
+        "dread",
+        "necrotic",
+        "fighting"
+    ],
+    "adjectives": [
+        "formidable",
+        "fearsome",
+        "undead-like",
+        "swift"
+    ],
+    "description": "A large, headless fey creature with a severed head that instills fear and dread.",
+    "memorable": "Its ability to instantly drop foes to 0 hp if deemed 'doomed' makes it a terrifying adversary.",
+    "goals": "To instill fear, hunt down and eliminate doomed targets.",
+    "relations": "May be in league with other fey or serve darker powers.",
+    "environment": "Typically found in eerie or cursed places within the fey realm.",
+    "strengths": "High durability with impressive physical attributes and multiple attacks per turn.",
+    "weaknesses": "Limited social capabilities due to average intelligence and charisma.",
+    "attacks": "Multiattack with Spine Whip, dealing slashing and necrotic damage; Necrotic Bolt as a ranged attack.",
+    "most_powerful_ability": "Seal the Doom, which can instantly drop doomed creatures to 0 hit points.",
+    "senses": "Truesight to detect creatures within 60 feet.",
+    "skills": "Expert in Intimidation and Persuasion, capable of instilling fear and manipulation.",
+    "additional_information": [
+        "Does not require food, drink, or sleep.",
+        "Able to move through difficult terrain without penalty.",
+        "Immunity to necrotic damage.",
+        "Resistant to nonmagical damage types.",
+        "Can frighten foes with its Baleful Glare."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "headless monster of the fey realm",
+        "large creature with a severed head",
+        "dread inducing fey with necrotic abilities",
+        "fearsome fey that doesn't require rest",
+        "monster that instantly drops doomed foes"
+    ]
+}

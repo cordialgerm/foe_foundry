@@ -1,0 +1,25 @@
+{
+    "name": "August Rooster",
+    "queries": [
+        {
+            "query": "charming bird monster that flies",
+            "variant": "bird monster that charms and can fly"
+        },
+        {
+            "query": "medium-sized monstrosity with sharp talons and psychic resistance",
+            "variant": "monstrosity with sharp talons and resistance to psychic damage"
+        },
+        {
+            "query": "manipulative creature that uses spells and loves to charm",
+            "variant": "creature that loves to charm and uses spells to manipulative"
+        },
+        {
+            "query": "cunning monster found in a variety of terrains with innate spellcasting",
+            "variant": "monster with innate spellcasting skills that is cunning and lives in many terrains"
+        },
+        {
+            "query": "August Rooster's charm aura and dive bomb attack",
+            "variant": "dive bomb attack and charm aura of the August Rooster"
+        }
+    ]
+}

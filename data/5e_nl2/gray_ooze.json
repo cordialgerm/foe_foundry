@@ -1,0 +1,50 @@
+{
+    "name": "Gray Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 8,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "slow, 10 ft. walking speed, climbing and swimming at the same speed",
+    "role": null,
+    "tags": [
+        "ooze",
+        "corrosive",
+        "ambush"
+    ],
+    "adjectives": [
+        "slimy",
+        "formless",
+        "dangerous"
+    ],
+    "description": "The Gray Ooze is a formless, slimy creature with a semi-liquid mass that can squeeze through cracks and crevices. It has a corrosive nature, capable of dissolving metal, wood, and organic matter.",
+    "memorable": "Its corrosive touch damages armor and weapons, and it blends seamlessly with wet stone.",
+    "goals": "To consume anything it comes into contact with.",
+    "relations": "May be encountered with other oozes or subterranean creatures.",
+    "environment": "Dark dungeons, caves, and sewers.",
+    "strengths": "Has blindsight up to 60 feet; resistant to various conditions like exhaustion, blinded, and frightened.",
+    "weaknesses": "Disadvantage on attack rolls when in bright light; slow movement.",
+    "attacks": "Pseudopod attack dealing both bludgeoning and acid damage, capable of corroding nonmagical metal armor.",
+    "most_powerful_ability": "Corrosive Body ability which damages and can destroy metal objects upon contact.",
+    "equipment": null,
+    "senses": "It has blindsight up to 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "Has a proficiency in Stealth due to its ability to ambush.",
+    "additional_information": [
+        "Can move through openings as narrow as 1 inch due to its Amorphous ability.",
+        "Nonmagical weapons made of metal that hit it suffer corrosion and damage penalties.",
+        "Blends in seamlessly when motionless, resembling wet stone."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "slimy creature that hides in dark places",
+        "corrosive ooze that attacks with pseudopod",
+        "creature that consumes metal and wood",
+        "dangerous ambush predator in sewers",
+        "ooze with ability to corrode metal"
+    ]
+}

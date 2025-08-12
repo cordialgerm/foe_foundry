@@ -1,0 +1,15 @@
+{
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are amorphous, burrowing creatures that damage armor and structures."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares swarm traits and poison damage with high agility."
+  },
+  "Otyugh": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiendish, burrowing creatures with tentacle-like or maw attacks and dwell in dark, underground areas."
+  },
+  "monster_key": "plaresh"
+}

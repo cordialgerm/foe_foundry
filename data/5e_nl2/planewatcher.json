@@ -1,0 +1,54 @@
+{
+    "name": "Planewatcher",
+    "creature_type": "Celestial",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 90 ft., fly 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "celestial",
+        "lawful",
+        "damage resistances",
+        "magical abilities"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "durable",
+        "magical",
+        "powerful"
+    ],
+    "description": "The Planewatcher is a robust celestial creature embodying law and order, appearing with an imposing presence and wearing plate armor. It possesses exceptional attributes, showcasing high strength, dexterity, and charisma, along with a keen tactical mind.",
+    "memorable": "The Planewatcher stands out with its extraordinary magical abilities, including the power to compel other creatures to return to their home plane.",
+    "goals": "The Planewatcher seeks to maintain order across planes and protect its domain from chaotic influences.",
+    "relations": "It may be encountered with other celestial beings or serve deities that uphold justice and order.",
+    "environment": "Often found in celestial realms, near planar portals, or places where the boundaries of planes intersect.",
+    "strengths": "Exceptional magical resistance and the ability to control the battlefield through grappling and debilitating attacks.",
+    "weaknesses": "Despite its strong defenses, it can be challenged with focused strategy and teamwork.",
+    "attacks": "The Planewatcher executes a multiattack strategy with a Radiant Lasso to grapple targets and Enervating Blasts that deal significant force damage.",
+    "most_powerful_ability": "The Planar Ultimatum, which demands grappled creatures return to their home plane or face severe consequences.",
+    "senses": "Equipped with truesight up to 120 feet, it can effectively detect hidden entities and illusions.",
+    "skills": "It demonstrates prowess in athletics, insight, perception, and survival, indicating strong capabilities in navigating and understanding its environment.",
+    "additional_information": [
+        "Has advantage on saving throws against spells due to Magic Resistance.",
+        "Can detect creatures and planar portals within 60 feet using its Planar Sense.",
+        "Immune to being charmed, frightened, or poisoned.",
+        "Immunity to spells that would forcibly relocate it, enhancing battlefield control.",
+        "Can enforce a geas on creatures that promise to return to their home plane."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast banishment as a bonus action on grappled foes.",
+    "test_queries": [
+        "powerful celestial creature with grappling abilities",
+        "magical creature that controls the battlefield",
+        "planar entity immune to being charmed",
+        "agile celestial with radiant attacks",
+        "creature demanding return to home plane"
+    ]
+}

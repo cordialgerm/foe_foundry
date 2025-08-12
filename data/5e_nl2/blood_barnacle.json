@@ -1,0 +1,52 @@
+{
+    "name": "Blood Barnacle",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 25,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 10 ft., swim 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "parasite",
+        "disease",
+        "invasive"
+    ],
+    "adjectives": [
+        "insidious",
+        "stealthy",
+        "disease-ridden"
+    ],
+    "description": "The Blood Barnacle is a tiny, insidious beast resembling a normal barnacle while motionless, capable of blending seamlessly into its surroundings. It has a small, unassuming body and can attach to its prey.",
+    "memorable": "The unique ability to infect and sap the strength of its victims through the Barnacle Shivers disease makes it a persistent threat, capable of leading to zombification.",
+    "goals": "To infect and drain the life force of nearby living creatures.",
+    "relations": "Related to other parasitic creatures and may be found in aquatic environments alongside larger sea life.",
+    "environment": "Commonly found in water bodies, particularly in coastal areas or locations with marine life.",
+    "strengths": "Impressive swimming speed and the ability to detect living creatures by scent up to a mile away.",
+    "weaknesses": "Vulnerable to fire damage, making it susceptible to specific types of attacks.",
+    "attacks": "Uses a bite attack that attaches to its target, causing continued blood loss and the potential for contracting disease.",
+    "most_powerful_ability": "Barnacle Shivers disease, which can incapacitate its prey by preventing them from regaining hit points and ultimately leading to their zombification.",
+    "equipment": null,
+    "senses": "Possesses blindsight, allowing it to sense creatures within 60 feet while being blind beyond that range.",
+    "skills": "Has an average perception skill, allowing it to notice details in its environment.",
+    "additional_information": [
+        "Can detect the general direction of creatures within a mile using Blood Sense.",
+        "Ability to protect itself through the Host Defense reaction.",
+        "Disease can be fatal, leading to the creation of a zombie ally.",
+        "Effectively ambushes prey by utilizing its False Appearance ability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "insidious small water creature",
+        "disease spreading aquatic beast",
+        "bloodsucking barnacle",
+        "aquatic parasite that causes zombification",
+        "stealthy underwater ambusher"
+    ]
+}

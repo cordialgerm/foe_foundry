@@ -1,6 +1,8 @@
 <MonsterName/>Grivid</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>180</HP>
 <summary>The Grivid is a large aberration known for its unique parasitic abilities and significant healing properties. This neutral creature boasts a robust armor class of 17 thanks to its natural armor and has a formidable pool of 180 hit points, making it quite durable in combat. With a challenge rating of 11, it presents a substantial threat to adventurers, capable of inflicting both physical and poison damage. Its main strengths lie in its capacity to inflict infestation through its parasitic cheek worms, which allows it to poison its enemies while simultaneously healing itself based on the number of creatures afflicted. However, it has notable weaknesses including low intelligence and charisma, which hinder its mental capabilities and social interactions.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Grivid can use the Consume Worms ability, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grivid
 
 *Large* *Aberration* *neutral*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Consume Worms:** Consumes up to 3 cheek worms regaining 5 (2d4) hp for each worm consumed.
 
 
+</statblock>
 
 

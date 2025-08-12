@@ -1,0 +1,25 @@
+{
+    "name": "Thin Giant",
+    "queries": [
+        {
+            "query": "huge chaotic evil creature that can squeeze through small openings",
+            "variant": "chaotic evil huge creature that can fit through small gaps"
+        },
+        {
+            "query": "strong giant that deals necrotic damage and has good stealth",
+            "variant": "powerful giant capable of necrotic attacks and skilled in stealth"
+        },
+        {
+            "query": "very durable giant that can absorb damage and has a high Strength score",
+            "variant": "extremely tough giant with a high Strength value that absorbs damage well"
+        },
+        {
+            "query": "thin giant with a life-draining bite attack and high hit points",
+            "variant": "giant that drains life with its bite and has a lot of hit points"
+        },
+        {
+            "query": "giant with decent agility and a significant hit point pool",
+            "variant": "giant that has good agility and a large pool of hit points"
+        }
+    ]
+}

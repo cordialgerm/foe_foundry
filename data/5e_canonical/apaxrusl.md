@@ -1,6 +1,8 @@
 <MonsterName/>Apaxrusl</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Apaxrusl is a Medium Construct and a neutral entity that plays a unique role in combat due to its earth manipulation abilities and fiendish essence. With a Challenge Rating of 3, it possesses a total of 60 hit points, showcasing considerable durability for its level. The creature is notable for its ability to burrow through both earth and stone without leaving a trace, allowing for surprise attacks or tactical repositioning. It has a good Armor Class of 13, making it somewhat resilient to hits. However, its reliance on non-magical materials for its abilities and its vulnerability to thunder damage highlight its strategic weaknesses. The Apaxrusl's strength lies in its powerful melee attacks and the capability to inflict additional damage through fiery sand storms, making it a formidable opponent in battle.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Lastly, the Apaxrusl has a reaction called "Shifting Sands." When it takes damag
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Apaxrusl
 
 *Medium* *Construct* *neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Shifting Sands:** The apaxrusl can shift the flowing sands of its body to avoid harm. When the apaxrusl takes damage, roll a d12. Reduce the damage it takes by the number rolled.
 
 
+</statblock>
 
 

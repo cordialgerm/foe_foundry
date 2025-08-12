@@ -1,6 +1,8 @@
 <MonsterName/>Matriarch Serpentine Lamia</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Matriarch Serpentine Lamia is a large monstrosity embodying the essence of a cunning, deceptive character. This creature is neutral evil and thrives in the shadows, using its powers of manipulation and stealth to control and ambush its prey. With a strong ability to influence others through deception and intimidation, the Matriarch is a formidable opponent, boasting a decent armor class of 15 and a substantial pool of hit points totaling 90. Its movement capabilities are versatile, allowing it to walk, swim, and climb effectively, which enhances its tactical positioning in a variety of environments. While it has a lower Intelligence score, its high Charisma and Dexterity, along with unique magical abilities, make it a dangerous creature capable of charming foes and controlling the battlefield.</summary>
 
 <detail>
@@ -24,6 +26,7 @@ In combat, the Matriarch can perform multiple actions. With her "Multiattack," s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Matriarch Serpentine Lamia
 
 *Large* *Monstrosity* *neutral evil*
@@ -61,5 +64,6 @@ At will: animal friendship (snakes only), disguise self (any humanoid form), sug
 - **Seduce:** One humanoid the matriarch serpentine lamia can see within 30 feet of her must succeed on a DC 15 Charisma saving throw or be magically charmed for 1 day. The charmed target obeys the matriarch's verbal commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect ends on it, the target is immune to the matriarch's Seduce for the next 24 hours. The matriarch can have only one target seduced at a time. If it seduces another, the effect on the previous target ends.
 
 
+</statblock>
 
 

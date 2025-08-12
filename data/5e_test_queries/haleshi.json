@@ -1,0 +1,25 @@
+{
+    "name": "Haleshi",
+    "queries": [
+        {
+            "query": "large water fey creature with psychic attacks",
+            "variant": "large creature fey from water that uses psychic attacks"
+        },
+        {
+            "query": "amphibious fey that can charm and teleport",
+            "variant": "teleporting fey that is amphibious and can charm"
+        },
+        {
+            "query": "creature with high AC that excels in aquatic environments",
+            "variant": "monster with great armor class thriving in aquatic areas"
+        },
+        {
+            "query": "psychic damage dealing fey with spellcasting abilities",
+            "variant": "fey that deals psychic damage and has spellcasting powers"
+        },
+        {
+            "query": "tactical fey with weaknesses to physical damage",
+            "variant": "strategic fey creature with vulnerabilities to physical attacks"
+        }
+    ]
+}

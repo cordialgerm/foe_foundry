@@ -1,0 +1,53 @@
+{
+    "name": "Derro, Hellforged",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 112,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 25 ft.",
+    "role": null,
+    "tags": [
+        "underdark",
+        "fire",
+        "evil"
+    ],
+    "adjectives": [
+        "small",
+        "formidable",
+        "hellforged"
+    ],
+    "description": "The Derro, Hellforged is a small yet formidable humanoid with a robust armor and a menacing appearance, characterized by its fire-affinities and resilience in combat.",
+    "memorable": "Its ability to ignite targets with hellfire and command enemies adds a unique tactical layer.",
+    "goals": "Typically seeks to dominate foes and harness the power of fire in their attacks.",
+    "relations": "Often associated with other derro or fiendish creatures, can be found in dark, underground environments.",
+    "environment": "Commonly found in underground realms, often among fire or evil-aligned entities.",
+    "strengths": "Possesses resistance to fire, poison, and damage from non-silvered weapon attacks, with powerful fire-based abilities.",
+    "weaknesses": "Impaired performance in bright sunlight with disadvantage on attacks and perception checks.",
+    "attacks": "Can perform a multiattack, using a battleaxe for melee damage or hurling hellfire as a ranged attack.",
+    "most_powerful_ability": "Hellfire Weapons ability allows it to deal extra fire damage with each weapon attack, igniting and damaging foes over time.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet.",
+    "skills": "Has a low passive perception of 7, struggling to notice threats.",
+    "additional_information": [
+        "Advantage on saves against being charmed or frightened.",
+        "Immunity to poisoned condition.",
+        "Damage immunities to fire and poison.",
+        "Uses tactical commands in battle to control opponents.",
+        "Can create opportunities for strategic retreats or attacks."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid with fire attacks",
+        "underdark creature that commands enemies",
+        "lawful evil creature wielding hellfire",
+        "formidable monster vulnerable to sunlight",
+        "derro creature with magical weapon skills"
+    ]
+}

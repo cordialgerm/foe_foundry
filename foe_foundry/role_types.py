@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from enum import auto
 
 from backports.strenum import StrEnum
@@ -14,3 +16,10 @@ class MonsterRole(StrEnum):
     Skirmisher = auto()
     Support = auto()
     Soldier = auto()
+
+    @staticmethod
+    def parse(role: str) -> MonsterRole:
+        try:
+            return MonsterRole[role.title()]
+        except KeyError:
+            raise ValueError(f"Unknown role: {role}")

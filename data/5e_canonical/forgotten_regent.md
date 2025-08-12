@@ -1,6 +1,8 @@
 <MonsterName/>Forgotten Regent</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Forgotten Regent is a formidable Medium undead creature with a lawful neutral alignment, often manifesting as a powerful leader of necromantic forces. It stands as a significant challenge in battle, managing its legions of undead while wielding frost-based abilities that can both immobilize foes and empower allies. With a high Armor Class and impressive hit points, it is built to endure extended conflicts. Notably, the Forgotten Regent has a variety of special abilities that allow it to manipulate the battlefield, protect its undead troops, and inflict debilitating cold damage on its enemies. Its weaknesses include vulnerability to fire and a reliance on its undead companions for full effectiveness.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ In terms of legendary actions, it can empower its undead allies through 'Army of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forgotten Regent
 
 *Medium* *Undead* *lawful neutral*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Army of the Damned:** Raises an arm into the air sending out a chill wind that empowers Undead allies. Each friendly Undead within 30' of it gains 10 temp hp.
 - **Teleport (2):** Magically teleports along with any items worn or carried up to 120' to an unoccupied spot it sees.
 - **Frozen Rune Maul (2):** Makes one Frozen Rune Maul attack.
+</statblock>
 
 

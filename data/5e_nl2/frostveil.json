@@ -1,0 +1,54 @@
+{
+    "name": "Frostveil",
+    "creature_type": "Plant",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "15 ft. walking speed, 10 ft. flying speed",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "cold",
+        "acid",
+        "grapple",
+        "blinded"
+    ],
+    "adjectives": [
+        "frosty",
+        "dangerous",
+        "stealthy"
+    ],
+    "description": "The Frostveil is a medium-sized, frost-covered plant creature that thrives in cold environments. Its flexible form allows it to move both on land and in the air, camouflaging itself among icy landscapes.",
+    "memorable": "The Frostveil can engulf opponents while absorbing damage taken by itself, causing havoc with its freezing tendrils and incapacitating spores.",
+    "goals": "Typically lurking in icy environments, the Frostveil aims to ambush unsuspecting creatures and absorb their damage while incapacitating them.",
+    "relations": "The creature may be found near other cold-adapted plants and animals in frigid regions.",
+    "environment": "Cold environments, like icy caves or snowy forests.",
+    "strengths": "High Strength and Dexterity, making it formidable in combat and providing excellent grappling abilities.",
+    "weaknesses": "Vulnerable to fire damage and has low Intelligence and Charisma.",
+    "attacks": "Uses Frozen Tendril attacks to grapple and engulf opponents, dealing bludgeoning and cold damage, while potentially blinding them.",
+    "most_powerful_ability": "Spirit Spores release to incapacitate nearby foes, dealing cold damage and causing chaos in battle.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures in complete darkness.",
+    "skills": "Has proficient stealth capabilities, allowing it to hide effectively in cold or icy environments.",
+    "additional_information": [
+        "Immunity to cold damage and condition immunities to blinded, charmed, deafened, frightened, and prone.",
+        "Chilling Acidic Body punishes attackers with acid damage on contact.",
+        "Can increase flying speed in windy conditions.",
+        "False Appearance allows it to remain undetected while motionless.",
+        "Damage Transfer ability reduces damage taken while engulfing a creature."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambushing frost-covered plant creature",
+        "creature with cold and acid damage abilities",
+        "engulfing plant monster living in snow",
+        "stealthy ice creature that grapples foes",
+        "frosty monster with incapacitating spores"
+    ]
+}

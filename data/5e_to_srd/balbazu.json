@@ -1,0 +1,11 @@
+{
+  "Quasit": {
+    "relation": "close_cousins",
+    "explanation": "The Balbazu is a tiny chaotic fiend with stealth and blood-draining abilities, similar in size and nature to a Quasit."
+  },
+  "Dretch": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic demons with low physical strength and fiendish traits, though the Balbazu is smaller and more aquatic."
+  },
+  "monster_key": "balbazu"
+}

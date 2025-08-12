@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, manipulative fiends with a commanding presence and combat prowess."
+  },
+  "Vrock": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares fiendish nature, flight capability, and a role as a manipulative and cunning combatant."
+  },
+  "Swarm of Insects": {
+    "relation": "mechanically_similar",
+    "explanation": "The swarm aspect and smoke shroud resemble the swarm mechanics and obscuring abilities."
+  },
+  "monster_key": "iaaffrat"
+}

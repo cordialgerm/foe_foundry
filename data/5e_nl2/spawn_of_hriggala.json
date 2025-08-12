@@ -1,0 +1,54 @@
+{
+    "name": "Spawn of Hriggala",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "burrow 30 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "chaotic",
+        "undead"
+    ],
+    "adjectives": [
+        "huge",
+        "fearsome",
+        "chaotic",
+        "evil"
+    ],
+    "description": "The Spawn of Hriggala is a huge fiend with a chaotic evil nature, characterized by its high physical strength and formidable presence in battle.",
+    "memorable": "It can reduce a target's hit point maximum with its necrotic tendril attack, potentially leading to instant death.",
+    "goals": "To cause havoc on the battlefield and summon undead to assist in combat.",
+    "relations": "It may be encountered alongside other fiends or undead creatures due to its abilities.",
+    "environment": "Typically found in dark, subterranean areas or places associated with necromantic energy.",
+    "strengths": "Possesses natural armor and immunities to necrotic and poison damage, making it a resilient adversary.",
+    "weaknesses": "Low intelligence, wisdom, and charisma scores limit its effectiveness in social situations.",
+    "attacks": "Uses a Multiattack that includes a powerful bite and tendril strikes, the latter of which can reduce hit point maximums.",
+    "most_powerful_ability": "Escape the Material allows it to open a portal to the plane of the undead, potentially bringing forth additional threats.",
+    "equipment": null,
+    "senses": "It has blindsight and tremorsense, allowing it to perceive its surroundings without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Magic Resistance gives it advantage on saving throws against spells",
+        "The Tunneler ability allows it to create tunnels through solid rock",
+        "High strength score enhances its physical attacks",
+        "Resistance to various elemental damage types enhances survivability",
+        "Grapples targets with its bite attack, rendering them restrained"
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge fiend with necrotic attacks",
+        "monster that can summon undead",
+        "chaotic evil fiend with high strength",
+        "spawning creature from the underworld",
+        "fiend that can burrow through rock"
+    ]
+}

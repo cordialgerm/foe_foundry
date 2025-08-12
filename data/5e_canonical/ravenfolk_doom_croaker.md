@@ -1,6 +1,8 @@
 <MonsterName/>Ravenfolk Doom Croaker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>88</HP>
 <summary>The Ravenfolk Doom Croaker is a medium humanoid creature with a neutral alignment, known for its mystical abilities and manipulative nature. With a solid armor class of 14, this creature is equipped with studded leather armor and has 88 hit points, providing it a good base for resilience in combat. It has a challenge rating of 5, making it a formidable foe, as it can deal significant damage while also invoking fear and utilizing magic. The Doom Croaker excels in skills that allow for deception and intimidation, paired with impressive perception. Notably, it possesses magical resistance, making it particularly resilient against spells. However, its physical strength is average, primarily relying on dexterity and wisdom for its proficiency in combat and spellcasting.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Prophetic Caw action has a recharge time of 6 turns, in which the D
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ravenfolk Doom Croaker
 
 *Medium* *Humanoid* *Neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Ghost Wings:** The ravenfolk doom croaker furiously “beats” a set of phantasmal wings. Each creature within 5 feet of the ravenfolk must succeed on a DC 15 Dexterity saving throw or be blinded until the start of its next turn.
 - **Prophetic Magic:** The ravenfolk doom croaker can cast the augury spell and thaumaturgy cantrip at will, requiring no material components and using Wisdom as the spellcasting ability.
 - **Prophetic Caw (Recharge 6):** The ravenfolk doom croaker caws a prophecy that sounds different to each listener. Each creature within 30 feet of the ravenfolk that can hear it must make a DC 15 Wisdom saving throw. Ravenfolk have advantage on the saving throw. On a failure, a creature hears a prophecy of its doom and is frightened for 1 minute. On a success, a creature hears a prophecy of its greatness and has advantage on the first attack roll it makes on each of its turns for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Wood Golem",
+    "queries": [
+        {
+            "query": "strong wooden creature that protects against magic",
+            "variant": "wooden creature that defends against magic and is strong"
+        },
+        {
+            "query": "construct monster that is vulnerable to fire and has low intelligence",
+            "variant": "fire-vulnerable construct with low mental ability"
+        },
+        {
+            "query": "medium-sized golem with high strength and natural armor",
+            "variant": "golem that is medium and has high physical strength with natural protection"
+        },
+        {
+            "query": "wood golem abilities related to magic resistance and melee attacks",
+            "variant": "abilities of the wood golem associated with melee strikes and resisting magic"
+        },
+        {
+            "query": "durable wooden defender immune to many conditions",
+            "variant": "wooden defender that is very durable and immune to various status effects"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Sarsaok</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Sarsaok is a formidable Huge Monstrosity that represents a significant threat in any encounter due to its high damage output, tough defenses, and magical abilities. With an Armor Class of 17 and 136 hit points, it can sustain considerable damage before falling. Its impressive Strength of 21 grants it a very good attack modifier, making its physical strikes potent. Despite its lower Dexterity and Intelligence, the Sarsaok possesses good speed at 40 feet, allowing it to maneuver effectively on the battlefield. It is particularly resilient, being immune to both fire and poison, and resistant to piercing damage, which makes it hard to take down unless cold damage is used against it. However, a weakness to cold damage presents an opportunity for strategic players. The Sarsaok has the unique ability to deal additional damage and knock opponents prone with its Charge attack, further amplifying its threat during combat.</summary>
 
 <detail>
@@ -39,6 +41,7 @@ The Sarsaok represents a well-rounded threat that can deal significant damage wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sarsaok
 
 *Huge* *Monstrosity* *unaligned*
@@ -75,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Immolating Purge (Recharge 5-6):** The sarsaok spews burning blood in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

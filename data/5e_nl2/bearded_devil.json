@@ -1,0 +1,56 @@
+{
+    "name": "Bearded Devil",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "beard",
+        "poison",
+        "multiple attacks"
+    ],
+    "adjectives": [
+        "grotesque",
+        "formidable",
+        "resilient",
+        "cruel"
+    ],
+    "description": "The Bearded Devil has a humanoid body, a long, snake-like beard that writhes unnaturally, and is often clad in dark armor. It wields vicious glaives with skill.",
+    "memorable": "Distinctive for its snake-like beard that can poison foes and its cruel demeanor in battle, it represents a potent threat among the ranks of devils.",
+    "goals": "To inflict pain and suffering in battle, acting as an enforcer or bodyguard for higher-ranking devils.",
+    "relations": "Often serves more powerful devils in the hierarchy of Hell.",
+    "environment": "Typically found in dark and grim environments, often in the infernal planes.",
+    "strengths": "Immunity to fire and poison damage, resistant to cold damage, and possesses Magic Resistance against spells.",
+    "weaknesses": "Lower Intelligence and Charisma make it less effective in social situations and strategic spellcasting.",
+    "attacks": "Utilizes multiattack to make strikes with its writhing beard and glaive, inflicting piercing and slashing damage along with powerful poison effects.",
+    "most_powerful_ability": "Its beard attack can poison enemies, preventing healing, while the glaive creates an infernal wound that deals ongoing damage.",
+    "equipment": "Armed with a glaive and has natural armor.",
+    "senses": "Possesses Devil's Sight, allowing it to see in magical darkness, enhancing its tactical advantage.",
+    "skills": "Noteworthy saving throws in Strength, Constitution, and Wisdom, making it effective in physical confrontations.",
+    "additional_information": [
+        "Has a multiattack option capable of making two Beard Spines attacks and one Glaive attack in one turn.",
+        "The poisoned condition from its beard prevents affected targets from regaining hit points.",
+        "Can enhance the pain of enemies, incapacitating them if they fail a saving throw.",
+        "Known for its cruel enjoyment of battle and causing suffering.",
+        "Effective in ambush tactics, leveraging its darkvision and mobility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "grotesque snake-like beard fiend",
+        "poisoning devil with glaives",
+        "medium lawful evil fiend",
+        "fiendish enforcer from hell",
+        "dark armored devil"
+    ]
+}

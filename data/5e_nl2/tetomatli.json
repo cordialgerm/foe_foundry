@@ -1,0 +1,54 @@
+{
+    "name": "Tetomatli",
+    "creature_type": "Construct",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 152,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "30 ft. walk, can fly up to 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "magical",
+        "immune",
+        "large size"
+    ],
+    "adjectives": [
+        "chaotic",
+        "strong",
+        "formidable"
+    ],
+    "description": "The Tetomatli is a large, powerful construct with difficult-to-damage bludgeoning attacks. It features a robust design that embodies chaos, with notable physical strength.",
+    "memorable": "It can create shockwaves to disrupt nearby targets, and its head slam can destroy metal armor on a critical hit.",
+    "goals": "To engage in combat and dominate the battlefield with its abilities.",
+    "relations": "May be encountered alongside other constructs or in the service of a powerful creator.",
+    "environment": "Typically found in locations designated for constructs or magical experimentation.",
+    "strengths": "Immunity to several damage types, ability to inflict double damage to structures, and advantage on saving throws against spells.",
+    "weaknesses": "Very low Intelligence, limited social interaction due to inability to speak.",
+    "attacks": "Utilizes powerful melee attacks including Head Slam and Wing Buffet, both delivering substantial bludgeoning damage.",
+    "most_powerful_ability": "Tremors ability creates a shockwave that can knock enemies prone and impair their attack and check capabilities.",
+    "senses": "Possesses 90 feet of tremorsense, detecting vibrations but blind beyond this range.",
+    "skills": "Highly skilled in athletics, proficient in physical feats with good perception for awareness.",
+    "additional_information": [
+        "Immunity to poison and psychic damage",
+        "Resistance to acid, fire, lightning, and nonmagical physical attacks",
+        "Magic weapons allow it to bypass nonmagical defenses",
+        "Ability to fly, but must be grounded at the start and end of its turn",
+        "Can destroy metal armor on a critical hit"
+    ],
+    "damage_types": [
+        "acid",
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": "Should be resistant to magical attacks and has a strong physical presence rather than spell capabilities.",
+    "test_queries": [
+        "strong construct that creates shockwaves",
+        "chaotic large creature with flying abilities",
+        "powerful melee attacker immune to poison",
+        "monster that destroys metal armor on critical hits",
+        "tremorsense construct that initiates powerful attacks"
+    ]
+}

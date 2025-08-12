@@ -1,0 +1,51 @@
+{
+    "name": "Animated Bearskin Rug",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 65,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "surprise attack",
+        "deceptive",
+        "grappler"
+    ],
+    "adjectives": [
+        "sinister",
+        "unique",
+        "deceptive"
+    ],
+    "description": "The Animated Bearskin Rug is an animate construct that resembles a normal bearskin rug. It takes on a threatening form when provoked, exhibiting strong physical presence and the ability to grapple and restrain foes.",
+    "memorable": "Its ability to deceive and surprise adventurers makes it a unique and treacherous foe, lurking innocently until triggered.",
+    "goals": "Lurking in waiting for unsuspecting creatures to approach, it aims to grapple and control them.",
+    "relations": "Other constructs or animated objects may be allies or serve a similar purpose in scaring or surprising adventurers.",
+    "environment": "Typically found in homes, inns, or areas where it can blend in as a decoration.",
+    "strengths": "Immunity to several conditions and damage types, enabling it to remain effective in combat.",
+    "weaknesses": "Very low intelligence limits its strategic capability, making it vulnerable to clever tactics.",
+    "attacks": "It can bite or claw at foes with a strong grip, and its Envelop ability allows it to restrain enemies effectively.",
+    "most_powerful_ability": "The Menacing Roar instills fear in multiple creatures, forcing them to flee and decreasing their combat effectiveness.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet but is effectively blind beyond that range, along with low passive perception.",
+    "skills": null,
+    "additional_information": [
+        "Antimagic Susceptibility makes it weak against magic suppressing fields.",
+        "Damage Transfer ability reduces damage taken while grappling an opponent.",
+        "False Appearance ability allows it to disguise itself as a normal rug until it moves."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "animated rug creature",
+        "sinister bear rug",
+        "deceptive animated construct",
+        "grappling bearskin trap",
+        "fear-inducing carpet monster"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Wasp": {
+    "relation": "close_cousins",
+    "explanation": "A large, flying, poisonous hive leader with a deadly stinger and the ability to paralyze."
+  },
+  "Drider": {
+    "relation": "conceptually_similar",
+    "explanation": "A sinister, spider-like monstrosity that commands others and uses multiple attacks with agility."
+  },
+  "monster_key": "tosculi-hive-queen"
+}

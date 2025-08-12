@@ -1,0 +1,15 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Trollkin Ragecaster shares regenerative abilities and a humanoid troll-like nature."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "It is a humanoid spellcaster with elemental spellcasting similar to a Mage."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Its elemental spellcasting and vulnerability to fire relate conceptually to elemental creatures like the Fire Elemental."
+  },
+  "monster_key": "trollkin-ragecaster"
+}

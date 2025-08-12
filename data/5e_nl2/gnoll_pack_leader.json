@@ -1,0 +1,53 @@
+{
+    "name": "Gnoll Pack Leader",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walks at 40 feet per turn",
+    "role": "Skirmisher",
+    "tags": [
+        "gnoll",
+        "leader",
+        "tactical",
+        "aggressive"
+    ],
+    "adjectives": [
+        "cunning",
+        "strategic",
+        "aggressive"
+    ],
+    "description": "The Gnoll Pack Leader is a Medium humanoid with a fierce demeanor and a tactical edge, wielding a spear and employing aggressive maneuvers in combat.",
+    "memorable": "The highlight of the Gnoll Pack Leader is its ability to enhance its allies through Pack Tactics and the Chilling Laughter ability, enabling strategic group attacks.",
+    "goals": "The Gnoll Pack Leader typically leads hunting parties, coordinating attacks against prey.",
+    "relations": "Gnoll Packs, other gnolls, and potential human or humanoid slaves.",
+    "environment": "Commonly found in caves, forests, or grasslands where gnoll tribes dwell.",
+    "strengths": "Capitalizes on teamwork and squad tactics, making it significantly more dangerous when in the company of allies.",
+    "weaknesses": "Has a low Wisdom score, making it less perceptive and insightful in critical situations.",
+    "attacks": "Utilizes a spear for melee or ranged attacks and can strike twice per turn under its Multiattack feature, dealing piercing damage.",
+    "most_powerful_ability": "Chilling Laughter allows the Pack Leader to incite frenzy among its allies, enabling additional attacks against their foes.",
+    "equipment": "Wields a spear for combat.",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light and darkness.",
+    "skills": null,
+    "additional_information": [
+        "Can use Pack Tactics for advantageous attacks when allies are nearby.",
+        "Ability to perform a Rampaging Bite as a bonus action against bloodied foes.",
+        "Rechargeable Chilling Laughter ability that amplifies its allies' attacks.",
+        "Moderate Armor Class and hit points make it resilient in battle.",
+        "Low passive perception indicates struggles with awareness."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "leader of gnoll pack in combat",
+        "aggressive gnoll with tactical abilities",
+        "mighty Gnoll with spear and laughter",
+        "cunning humanoid leading gnoll tribe",
+        "gnoll leader enhancing allies in battle"
+    ]
+}

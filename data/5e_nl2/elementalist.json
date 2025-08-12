@@ -1,0 +1,50 @@
+{
+    "name": "Elementalist",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "caster",
+        "elemental",
+        "humanoid"
+    ],
+    "adjectives": [
+        "elemental",
+        "magical",
+        "deceptive"
+    ],
+    "description": "The Elementalist is a Medium humanoid who manipulates elemental forces such as fire, lightning, cold, and poison, distinguished by its studded leather armor and scimitars.",
+    "memorable": "The Elementalist's ability to unleash elemental damage in a cone and cast spells instead of making melee weapon attacks during opportunity strikes makes it unique.",
+    "goals": "To utilize elemental magic in combat and evade direct confrontations.",
+    "relations": "May be encountered with similar magic users or elemental creatures.",
+    "environment": "Often found in places rich in elemental energies, such as caves, stormy areas, or magical realms.",
+    "strengths": "Strong dexterity and charisma enabling effective spellcasting and stealth.",
+    "weaknesses": "Low strength limit its physical confrontations, relying on magical abilities.",
+    "attacks": "Utilizes multiattack with scimitars for melee, and has a ranged elemental breath attack.",
+    "most_powerful_ability": "Fire Breath, allowing it to unleash a damaging wave of elemental energy in a wide area.",
+    "equipment": "Wields scimitars and wears studded leather armor.",
+    "senses": "Passive Perception of 10 reflects an average awareness.",
+    "skills": "Proficient in arcana and stealth, enhancing its magical capabilities and ambush potential.",
+    "additional_information": [
+        "Has a focus on elemental types granting resistance to specific damage.",
+        "Can innately cast cantrips based on elemental focus.",
+        "Possesses options for various elemental spells usable multiple times per day.",
+        "Utilizes spells instead of weapon attacks for opportunity attacks.",
+        "Each elemental focus has unique spells associated with it."
+    ],
+    "damage_types": [],
+    "spellcasting": "Spellcasting ability is Charisma with a spell save DC of 13 and +5 to hit with spell attacks.",
+    "test_queries": [
+        "elemental magic spellcaster with resistance",
+        "humanoid creature that uses elemental attacks",
+        "magical creature with fire breath ability",
+        "caster specializing in elemental spells",
+        "elementalist using scimitars and spells"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Wereshark",
+    "queries": [
+        {
+            "query": "aquatic humanoid that can transform into a shark and is chaotic evil",
+            "variant": "humanoid that is evil and can change into a shark living in water"
+        },
+        {
+            "query": "large shark-human hybrid with blood frenzy ability",
+            "variant": "big hybrid between shark and human that has a blood frenzy skill"
+        },
+        {
+            "query": "creature that can breathe underwater and has high strength",
+            "variant": "monster with the ability to hold breath underwater and exceptional strength"
+        },
+        {
+            "query": "wereshark lycanthropy bite attack and resistances",
+            "variant": "lycanthropy bite from wereshark and its damage immunities"
+        },
+        {
+            "query": "predatory humanoid that thrives in aquatic environments",
+            "variant": "human-like predator that lives well in water"
+        }
+    ]
+}

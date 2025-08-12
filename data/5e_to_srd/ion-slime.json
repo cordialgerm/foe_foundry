@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are oozes with amorphous traits and the ability to move through tight spaces."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elemental creatures associated with fluid movement and have a connection to water environments."
+  },
+  "monster_key": "ion-slime"
+}

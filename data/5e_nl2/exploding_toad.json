@@ -1,0 +1,52 @@
+{
+    "name": "Exploding Toad",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "swim 20 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "explosive",
+        "amphibious",
+        "stealthy"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "deceptive"
+    ],
+    "description": "The Exploding Toad is a small, chaotic creature, characterized by its explosive demise and vibrant amphibious appearance. Its agility is enhanced by its good Dexterity score, while its tiny size allows it to remain hidden from potential threats.",
+    "memorable": "The Exploding Toad's ability to explode upon defeat poses a significant danger, even with its low hit points.",
+    "goals": "To ambush adventurers and cause unexpected chaos through its explosive ability.",
+    "relations": [],
+    "environment": "aquatic environments, swamps, and areas near water bodies",
+    "strengths": "Good Dexterity allowing for effective stealth and evasion; immunity to fire damage.",
+    "weaknesses": "Low Strength and Intelligence, making it ineffective in physical confrontations.",
+    "attacks": "The toad can perform a bite attack, dealing minor piercing damage.",
+    "most_powerful_ability": "Final Croak: The toad explodes in a 10-foot radius when defeated, dealing significant fire damage to creatures within range.",
+    "equipment": null,
+    "senses": "The toad has darkvision, allowing it to see in darkness up to 30 feet.",
+    "skills": "It has proficiency in stealth, giving it a +5 bonus to remain hidden.",
+    "additional_information": [
+        "Amphibious and can breathe both air and water",
+        "Ranged attacks against it have disadvantage due to Mad Hopping",
+        "Can choose to take fire damage despite its immunity",
+        "Can leaping distances without needing a running start",
+        "Death Leap can turn misses into hits, adding unpredictability"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny amphibious creature that explodes",
+        "monstrosity with chaotic evil intent",
+        "stealthy toad that explodes when defeated",
+        "explosive creature hiding by water",
+        "toad that causes chaos with its final croak"
+    ]
+}

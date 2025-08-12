@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead, shadowy, and ambusher nature with necrotic damage focus."
+  },
+  "Dust Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are desert-themed creatures associated with sand and dust manipulation."
+  },
+  "monster_key": "sand-silhouette"
+}

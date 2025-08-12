@@ -1,6 +1,8 @@
 <MonsterName/>Cosmic Symphony</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>200</HP>
 <summary>The Cosmic Symphony is a formidable large celestial creature that serves as a powerful force in gameplay. With its impressive armor class of 18 and a substantial hit point total of 200, it can withstand significant damage in combat. The Symphony flies gracefully at a speed of 60 feet but is immobile on the ground, making it a tactical aerial combatant. With a challenge rating of 15, it represents a substantial threat, especially due to its high Dexterity, which provides it with exceptional speed and agility. While it lacks intelligence with a score of 2, its other attributes—particularly its high Charisma and Wisdom scores—allow it to excel in spellcasting and resistances. Its dual nature of being unaligned means it does not have a moral bias, making it a neutral entity in encounters. The Cosmic Symphony's notable strengths include its damage immunities and resistances, as well as its ability to incapacitate and stun opponents, creating opportunities for its allies or itself. However, its lack of physical mobility on the ground is a notable weakness.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In addition to its standard actions, the Cosmic Symphony has several legendary a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cosmic Symphony
 
 *Large* *Celestial* *unaligned*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Fly:** Flies up to half its flying speed with o provoking opportunity attacks.
 - **Major Chord (2):** The symphony regains 18 (4d8) hp.
 - **Minor Chord (2):** Each creature within 10 ft. of the symphony must make DC 18 Con save or take 9 (2d8) thunder.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Degenerate Titan",
+    "queries": [
+        {
+            "query": "massive giant that can disrupt magic and creates shockwaves",
+            "variant": "huge giant that disrupts magical effects and makes shockwaves"
+        },
+        {
+            "query": "chaotic evil titan with high strength and low dexterity",
+            "variant": "evil titan that is chaotic with a lot of strength and poor dexterity"
+        },
+        {
+            "query": "giant creature with magic resistance and powerful melee attacks",
+            "variant": "large creature that resists magic and has strong melee attacks"
+        },
+        {
+            "query": "strong giant who knocks creatures prone and excels in giant attacks",
+            "variant": "powerful giant that knocks enemies down and is good at giant attacks"
+        },
+        {
+            "query": "earth-shaking giant with multiple attack options and dangerous abilities",
+            "variant": "giant that shakes the earth with many attacks and deadly abilities"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Swarm of Vampire Blossoms",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., fly 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "plant",
+        "vampire",
+        "fighter"
+    ],
+    "adjectives": [
+        "menacing",
+        "unique",
+        "dangerous",
+        "lethal"
+    ],
+    "description": "The Swarm of Vampire Blossoms resembles a large mass of flower petals that can blend into its environment when motionless, appearing harmless.",
+    "memorable": "It reduces maximum hit points of its targets, presenting a serious threat, especially to characters with limited healing capabilities.",
+    "goals": "To ambush weakened foes and dominate the battlefield through its offensive and defensive capabilities.",
+    "relations": "Can be encountered alongside other plant creatures or in outdoor settings rich in vegetation.",
+    "environment": "Typically found in forests or overgrown areas where it can blend in with the flora.",
+    "strengths": "High Dexterity allows it to evade attacks, and it has multiple resistances and immunities.",
+    "weaknesses": "Low Strength makes it vulnerable to overpowering physical attacks from stronger foes.",
+    "attacks": "Petal Slashes deliver dangerous slashing damage and can lower the target's maximum hit points, making them a considerable threat.",
+    "most_powerful_ability": "Blood Frenzy allows it to attack with advantage against injured foes, heightening its lethality.",
+    "senses": "Utilizes Blood Sense to locate nearby creatures, effectively compensating for its blindness otherwise.",
+    "skills": "Has a decent perception, allowing it to sense its surroundings well.",
+    "additional_information": [
+        "Immune to psychic damage, effective against mental attack users.",
+        "Resistance to bludgeoning, piercing, and slashing damage, enhancing its durability.",
+        "Cannot be affected by conditions such as charmed, frightened, or stunned, making it hard to control.",
+        "Swarm ability enables it to occupy the same space as other creatures.",
+        "False Appearance allows it to blend in with flower petals when stationary."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing swarm of flower petals",
+        "large plant that lowers hit points",
+        "dangerous flower-based enemy that flies",
+        "vampire blossom swarm in forests",
+        "quick plant creature with blood sense"
+    ]
+}

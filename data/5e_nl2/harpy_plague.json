@@ -1,0 +1,54 @@
+{
+    "name": "Plague Harpy",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 20 ft. fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "disease",
+        "flying",
+        "psychic",
+        "telepathy"
+    ],
+    "adjectives": [
+        "disease-inflicting",
+        "agile",
+        "menacing",
+        "malevolent"
+    ],
+    "description": "The Plague Harpy is a medium monstrosity characterized by its sickly appearance and wings, representing disease and despair.",
+    "memorable": "Spreads a deadly plague and can inflict despair with its mournful Dirge while flying with agility.",
+    "goals": "To infect its enemies with disease and induce despair through psychological manipulation.",
+    "relations": "Often encountered with other undead or plague-related creatures.",
+    "environment": "Typically found in areas afflicted by disease or in dark, desolate locations.",
+    "strengths": "Able to fly quickly, inflict disease, and manipulate foes with psychic abilities.",
+    "weaknesses": "Average intelligence and wisdom limits its cunning in combat.",
+    "attacks": "Executes a variety of attacks including a damaging bite, slashing talons, and psychic cawing.",
+    "most_powerful_ability": "Virulence ability that spreads a dangerous plague among nearby creatures.",
+    "senses": "Possesses blindsight out to 90 feet, giving it strong sensory awareness.",
+    "skills": "Skilled in perception, enabling it to detect threats effectively.",
+    "additional_information": [
+        "Resistant to necrotic and poison damage",
+        "Immunity to the poisoned condition",
+        "Can perform a Multiattack, enhancing its offensive capability",
+        "Dirge can dishearten enemies, providing tactical advantage",
+        "Limited Telepathy allows communication without a response"
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "disease-spreading flying creature",
+        "menacing harpy that inflicts despair and disease",
+        "agile monster that telepathically communicates",
+        "plague monster with psychic attacks",
+        "harpy that spreads deadly plague"
+    ]
+}

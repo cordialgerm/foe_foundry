@@ -1,0 +1,52 @@
+{
+    "name": "Chimeric Phantom",
+    "creature_type": "Undead",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 36,
+    "ac": 11,
+    "srd": false,
+    "cr": "2",
+    "movement": "hovers and flies at 40 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "flying",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "chaotic",
+        "phantasmal",
+        "intimidating"
+    ],
+    "description": "The Chimeric Phantom is a ghostly figure that hovers above the ground, instilling fear and confusion with its eerie presence.",
+    "memorable": "It can inflict fear on nearby enemies while maneuvering easily through objects.",
+    "goals": "To instill fear and chaos among its foes.",
+    "relations": "Could be related to or conjured by necromancers or spirits.",
+    "environment": "Often found in haunted locations or abandoned places.",
+    "strengths": "Resistance to many damage types and immunity to several conditions.",
+    "weaknesses": "Average strength and constitution, making it physically less robust.",
+    "attacks": "Utilizes Maddening Grasp to deal necrotic damage, targeting living foes.",
+    "most_powerful_ability": "Frightening Madness, which can incapacitate nearby enemies with fear.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immunity to poison and many conditions",
+        "Can communicate in languages known by its constituent souls",
+        "Average ability scores with a strong Wisdom",
+        "Ability to pass through objects for tactical advantage",
+        "Has a specific fear-inducing aura affecting foes nearby"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "hovering undead that instills fear",
+        "ghostly creature that passes through walls",
+        "phantom with fear-inducing abilities",
+        "chaotic spirit that disrupts combat",
+        "mobile undead that uses necrotic damage"
+    ]
+}

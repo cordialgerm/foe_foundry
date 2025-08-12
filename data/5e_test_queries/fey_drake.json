@@ -1,0 +1,25 @@
+{
+    "name": "Fey Drake",
+    "queries": [
+        {
+            "query": "small chaotic neutral dragon that uses magic",
+            "variant": "chaotic neutral small dragon that uses magic"
+        },
+        {
+            "query": "dragon with high Dexterity that can become invisible",
+            "variant": "high Dexterity dragon that can turn invisible"
+        },
+        {
+            "query": "agile dragon with charm abilities that lives in magical areas",
+            "variant": "agile dragon that has charm abilities and dwells in magical places"
+        },
+        {
+            "query": "deceptive dragon that uses poison attacks and spells",
+            "variant": "deceptive dragon with poison attacks and spellcasting"
+        },
+        {
+            "query": "Fey Drake that flies quickly and has unique breath attack",
+            "variant": "Fey Drake flying fast with special breath attack"
+        }
+    ]
+}

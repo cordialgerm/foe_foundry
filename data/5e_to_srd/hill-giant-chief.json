@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "almost_identical",
+    "explanation": "The Hill Giant Chief is a variant of the Hill Giant with similar size, weapon, and combat style, adding battlefield control and terrain manipulation."
+  },
+  "monster_key": "hill-giant-chief"
+}

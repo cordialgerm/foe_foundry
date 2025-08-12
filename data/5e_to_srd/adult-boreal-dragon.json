@@ -1,0 +1,11 @@
+{
+  "Adult White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge dragons associated with cold environments and have frightening presences, though the homebrew has fire immunity and a unique fire-based breath."
+  },
+  "Adult Red Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a huge, fire-breathing legendary dragon with powerful area breath attacks and high durability."
+  },
+  "monster_key": "adult-boreal-dragon"
+}

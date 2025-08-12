@@ -1,0 +1,7 @@
+{
+  "Gnoll": {
+    "relation": "almost_identical",
+    "explanation": "The Gnoll Pack Leader is a tactical and aggressive gnoll leader with spear attacks and pack tactics, closely matching the Gnoll."
+  },
+  "monster_key": "gnoll-pack-leader"
+}

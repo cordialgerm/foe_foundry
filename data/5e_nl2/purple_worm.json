@@ -1,0 +1,52 @@
+{
+    "name": "Purple Worm",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 247,
+    "ac": 18,
+    "srd": true,
+    "cr": "15",
+    "movement": "50 ft. walking speed, 30 ft. burrowing speed",
+    "role": "Bruiser",
+    "tags": [
+        "underdark",
+        "predator",
+        "burrowing"
+    ],
+    "adjectives": [
+        "gigantic",
+        "devastating",
+        "reptilian"
+    ],
+    "description": "The Purple Worm is a gigantic, segmented monstrosity that measures up to 80 feet long, with rows of sharp teeth lining its massive maw. Its body is capable of burrowing through solid rock, leaving a large tunnel behind.",
+    "memorable": "Purple Worms are apex predators of the Underdark, feared for their ability to swallow creatures whole and their relentless hunting style.",
+    "goals": "To hunt and consume creatures found in the Underdark, using their burrowing powers to navigate and surprise prey.",
+    "relations": "Often encountered alone, but can be found in areas inhabited by other subterranean creatures.",
+    "environment": "Primarily inhabits the Underdark, tunneling through earth and rock.",
+    "strengths": "Impressive physical strength with a high attack and damage output; immune to exhaustion and fear.",
+    "weaknesses": "Low Dexterity, making it vulnerable to agile opponents.",
+    "attacks": "Uses a powerful bite that can swallow creatures as well as a stinger attack that inflicts piercing and poison damage.",
+    "most_powerful_ability": "The ability to swallow creatures whole, dealing ongoing acid damage and removing them from the battlefield.",
+    "senses": "Has blindsight for 30 feet and tremorsense for 60 feet, allowing it to detect movement effectively.",
+    "skills": null,
+    "additional_information": [
+        "Can create 10-foot diameter tunnels when burrowing.",
+        "Has a thrashing attack that can damage multiple nearby foes.",
+        "Ability to regain hit points from swallowed creatures.",
+        "Relatively high Constitution making it durable in combat.",
+        "Uses its burrowing ability for both ambush and escape."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive underground predator with burrowing abilities",
+        "giant worm that swallows creatures whole",
+        "Apex predator found in the Underdark",
+        "tunneling monster with acid damage",
+        "hulking creature with devastating melee attacks"
+    ]
+}

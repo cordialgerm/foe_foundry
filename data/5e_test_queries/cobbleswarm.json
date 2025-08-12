@@ -1,0 +1,25 @@
+{
+    "name": "Cobbleswarm",
+    "queries": [
+        {
+            "query": "swarm of animated stones that can trip adventurers",
+            "variant": "swarm of stones that animate and trip adventurers"
+        },
+        {
+            "query": "medium swarm that looks like ordinary rocks and ambushes enemies",
+            "variant": "medium-sized swarm resembling normal rocks that ambush foes"
+        },
+        {
+            "query": "creature with damage resistance that acts like a pile of stones",
+            "variant": "being with damage resistances acting as a stone pile"
+        },
+        {
+            "query": "creature that can push prone enemies and resembles stones",
+            "variant": "being that resembles stones and can push enemies that are prone"
+        },
+        {
+            "query": "stone creature with special ability to become motionless like rocks",
+            "variant": "rock-like creature with unique ability to stay still as stones"
+        }
+    ]
+}

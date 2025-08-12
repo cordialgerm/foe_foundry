@@ -1,0 +1,52 @@
+{
+    "name": "Jinmenju",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "speed 0 ft., attacks from roots",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "chaotic",
+        "manipulative"
+    ],
+    "adjectives": [
+        "huge",
+        "manipulative",
+        "chaotic"
+    ],
+    "description": "The Jinmenju is a Huge plant creature, its impressive roots can burst from the ground to attack at a distance, and it showcases a vibrant and chaotic presence.",
+    "memorable": "Its ability to incapacitate creatures with laughter through its fruit and the use of roots creates a blend of offense and control in combat.",
+    "goals": "Defend its territory and manipulate encounters using its laughter-inducing fruit.",
+    "relations": "Often encountered in conjunction with other plants or chaotic beings.",
+    "environment": "Typically found in forests or areas rich in plant life.",
+    "strengths": "Immune to nonmagical bludgeoning, piercing, and slashing damage, making it resilient against conventional attacks.",
+    "weaknesses": "Lacks mobility with a speed of 0 ft.; highly reliant on its roots for actions.",
+    "attacks": "Makes root attacks that deal bludgeoning and psychic damage, with a reach of 10 feet.",
+    "most_powerful_ability": "Laughing Fruit, which incapacitates targets with fits of laughter if they fail a Wisdom saving throw.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 120 feet, allowing it to detect movement around it even if blind.",
+    "skills": "Skilled in persuasion with a +14 bonus, reflecting its strong social presence.",
+    "additional_information": [
+        "Can create up to five roots that can attack independently.",
+        "Each root has its own health and can be damaged without affecting the Jinmenju.",
+        "Legendary actions provide versatility in combat.",
+        "Capable of influencing the battlefield through laughter and incapacitating effects.",
+        "Strong Charisma score of 22 enhances its social capabilities."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "manipulative plant creature with roots",
+        "huge plant that incapacitate with laughter",
+        "plant that attacks from the ground",
+        "creature with multiple attacking roots",
+        "silent but deadly plant monster"
+    ]
+}

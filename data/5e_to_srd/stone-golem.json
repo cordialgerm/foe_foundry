@@ -1,0 +1,7 @@
+{
+  "Stone Golem": {
+    "relation": "almost_identical",
+    "explanation": "A massive, slow-moving construct made of stone that serves as a durable guardian with magical slam attacks and the ability to slow enemies."
+  },
+  "monster_key": "stone-golem"
+}

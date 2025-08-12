@@ -1,0 +1,25 @@
+{
+    "name": "Frostjack",
+    "queries": [
+        {
+            "query": "medium fey creature that deals cold damage and manipulates ice",
+            "variant": "fey creature that manipulates ice and deals cold damage, medium size"
+        },
+        {
+            "query": "vulnerable to fire but immune to cold damage and exhaustion",
+            "variant": "immune to cold damage and exhaustion, vulnerable to fire"
+        },
+        {
+            "query": "creature with high Dexterity and a chilling presence that inflicts exhaustion",
+            "variant": "creature with chilling presence that causes exhaustion and has high Dexterity"
+        },
+        {
+            "query": "ice walking fey with multiattack ability and frost attacks",
+            "variant": "fey with frost attacks and ability to walk on ice, capable of multiattacks"
+        },
+        {
+            "query": "creature that casts icy spells and has darkvision with passive perception",
+            "variant": "creature with darkvision and passive Perception that uses icy spells"
+        }
+    ]
+}

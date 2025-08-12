@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, cunning humanoid with spellcasting, pack tactics, and sunlight sensitivity, closely matching the King Kobold."
+  },
+  "monster_key": "king-kobold"
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Moon Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 100 ft., walk 25 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "moon",
+        "lycanthropy",
+        "radiant"
+    ],
+    "adjectives": [
+        "dynamic",
+        "formidable",
+        "lunar",
+        "incorporeal"
+    ],
+    "description": "The Moon Drake is a medium-sized dragon that showcases dynamic abilities correlated with lunar phases. It has a robust build with notable attributes of Dexterity and Constitution.",
+    "memorable": "Its power fluctuates with the moon phases, making it a unique challenge.",
+    "goals": "The Moon Drake is known for its therapeutic role in curing afflicted lycanthropes.",
+    "relations": "May relate to other lycanthropes and various magical creatures.",
+    "environment": "Typically found in places with significant lunar visibility.",
+    "strengths": "High Dexterity and the ability to become incorporeal.",
+    "weaknesses": "Vulnerable to damage under a new moon phase.",
+    "attacks": "The Moon Drake can bite to inflict piercing and radiant damage, while its claws deal slashing damage. It also has special lycanthropy-related attacks.",
+    "most_powerful_ability": "Lunarbeam, exhaling radiant damage in a wide line potentially affecting shapechangers.",
+    "equipment": null,
+    "senses": "The drake has darkvision with a range of 120 feet and a passive perception of 14.",
+    "skills": "Proficient in Arcana and Insight, showcasing knowledge and perception.",
+    "additional_information": [
+        "Curative Saliva can cure afflicted lycanthropes instantly.",
+        "Moonbound ability alters resistance and damage output based on lunar phases.",
+        "Can revert shapechangers back to their true form with radiant damage.",
+        "Incorporates an incorporeal form to resist physical attacks.",
+        "Can pass through transparent objects while incorporeal."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that changes with moon phases",
+        "creature that heals lycanthropes",
+        "medium dragon with radiant attacks",
+        "moon phase dragon that flies fast",
+        "dragon with dynamic lunar abilities"
+    ]
+}

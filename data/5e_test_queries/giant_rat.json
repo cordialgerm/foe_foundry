@@ -1,0 +1,25 @@
+{
+    "name": "Giant Rat",
+    "queries": [
+        {
+            "query": "agile small beast that lives in dark places and has disease potential",
+            "variant": "small agile beast found in dark places with potential for disease"
+        },
+        {
+            "query": "pack tactics monster that can spread disease with bites",
+            "variant": "monster with pack tactics that spreads disease through bites"
+        },
+        {
+            "query": "urban nuisance that swarms in groups and has keen smell ability",
+            "variant": "nuisance found in urban settings that swarms and utilizes keen smell"
+        },
+        {
+            "query": "small rat creature known for stealth and overwhelming numbers",
+            "variant": "small stealthy rat known for swarming with great numbers"
+        },
+        {
+            "query": "giant rat from sewers that can coordinate attacks and bite hard",
+            "variant": "sewer-dwelling giant rat that coordinates attacks and bites"
+        }
+    ]
+}

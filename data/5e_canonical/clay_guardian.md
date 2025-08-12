@@ -1,6 +1,8 @@
 <MonsterName/>Clay Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>133</HP>
 <summary>The Clay Guardian is a formidable Large Construct designed to serve as a protector on the battlefield, boasting a robust defensive capability and formidable melee attack potential. With an Armor Class of 14 and a substantial pool of Hit Points totaling 133, this creature can withstand significant damage. Its primary strengths lie in its resistance to various damage types, including immunity to acid, poison, psychic damage, and damage from nonmagical weapons that are not adamantine. Additionally, its abilities grant it unique advantages, such as healing from acid damage, enhanced speed when bloodied, and a powerful berserking mechanic that allows it to go into a rage-like state, attacking aggressively. However, its weaknesses include a low Intelligence and Charisma, reflecting its limited ability for complex thought or social interaction. Overall, the Clay Guardian excels in unyielding physical combat, often serving as a guardian for powerful spellcasters or important locations.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of combat actions, the Clay Guardian can perform a Multiattack, allowin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clay Guardian
 
 *Large* *Construct*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage. If the target is a creature  it makes a DC 15 Constitution saving throw. On a failure  its hit point maximum is reduced by an amount equal to the damage dealt. The target dies if its hit point maximum is reduced to 0. A greater restoration spell or similar magic removes the reduction.
 
 
+</statblock>
 
 

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs animated by magic, though the Paper Golem is tiny and whimsical compared to the armored construct."
+  },
+  "Homunculus": {
+    "relation": "close_cousins",
+    "explanation": "The Paper Golem shares the tiny construct nature and serves as a magical servant or guardian like the Homunculus."
+  },
+  "monster_key": "paper-golem"
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Dissimortuum",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "undead",
+        "fear",
+        "climbing"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evil",
+        "intimidating"
+    ],
+    "description": "A medium-sized undead creature with a strong presence and a horrifying mask that induces fear.",
+    "memorable": "It can instill fear with its Terrifying Mask ability, affecting multiple foes at once.",
+    "goals": "To intimidate and control opponents while engaging in combat.",
+    "relations": "May serve as servants or guardians to more powerful undead creatures.",
+    "environment": "Typically found in dark, eerie, or abandoned locations.",
+    "strengths": "Immunities to necrotic and poison damage; can climb difficult surfaces easily.",
+    "weaknesses": "Has average Dexterity and low Intelligence, making it predictable in tactics.",
+    "attacks": "Uses Multiattack to perform three claw attacks, inflicting significant slashing damage with each.",
+    "most_powerful_ability": "Terrifying Mask can frighten opponents within a 60-foot radius, creating fear-based control in battles.",
+    "equipment": null,
+    "senses": "Has darkvision allowing it to see in dim light.",
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Strong saving throw proficiency in Constitution, enhancing resilience.",
+        "Is immune to conditions like charmed and exhausted, making it difficult to control.",
+        "Capable of traversing walls and ceilings with Spider Climb."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that induces fear",
+        "medium-sized chaotic evil monster",
+        "undead with terrifying abilities",
+        "climbing fear-inducing undead",
+        "monster immune to necrotic damage"
+    ]
+}

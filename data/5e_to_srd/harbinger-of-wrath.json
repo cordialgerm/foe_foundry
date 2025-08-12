@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with armor and melee combat focus, though the Harbinger is a gargantuan, more powerful version."
+  },
+  "Iron Golem": {
+    "relation": "almost_identical",
+    "explanation": "A gargantuan construct with high durability, melee attacks, immunities, and magic resistance similar to the Harbinger of Wrath."
+  },
+  "monster_key": "harbinger-of-wrath"
+}

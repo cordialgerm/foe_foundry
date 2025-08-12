@@ -1,0 +1,25 @@
+{
+    "name": "Drainpipe Gargoyle",
+    "queries": [
+        {
+            "query": "medium elemental monster that can fly and has poison immunity",
+            "variant": "medium flying elemental creature with immunity to poison"
+        },
+        {
+            "query": "gargoyle that blends into its surroundings and uses water attacks",
+            "variant": "gargoyle that can camouflage and attacks with water"
+        },
+        {
+            "query": "creature with high constitution and stealth abilities that doesn't need air",
+            "variant": "monster with great endurance and stealth that survives without air"
+        },
+        {
+            "query": "monster that attacks with claws and bites while soaring above its target",
+            "variant": "creature that strikes with claws and bites from above its prey"
+        },
+        {
+            "query": "elemental creature immune to poison that can create distance in battle",
+            "variant": "elemental monster that can't be poisoned and can push foes away"
+        }
+    ]
+}

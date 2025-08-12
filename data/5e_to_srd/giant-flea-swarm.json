@@ -1,0 +1,7 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small, numerous creatures that occupy the same space and deal damage to creatures within it."
+  },
+  "monster_key": "giant-flea-swarm"
+}

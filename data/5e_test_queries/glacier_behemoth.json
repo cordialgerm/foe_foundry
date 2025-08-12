@@ -1,0 +1,25 @@
+{
+    "name": "Glacier Behemoth",
+    "queries": [
+        {
+            "query": "massive ice creature with terrain manipulation abilities",
+            "variant": "huge ice monster with abilities to manipulate the terrain"
+        },
+        {
+            "query": "powerful beast that can charge through enemies",
+            "variant": "strong beast that charges through its foes"
+        },
+        {
+            "query": "creature resistant to nonmagical slashing damage and immune to cold",
+            "variant": "monster resistant to non-magical slashing and immune to cold damage"
+        },
+        {
+            "query": "huge beast with low dexterity and high strength",
+            "variant": "big beast that has poor dexterity and strong strength"
+        },
+        {
+            "query": "creature with high hit points and can create difficult terrain",
+            "variant": "monster with a lot of hit points that creates challenging ground"
+        }
+    ]
+}

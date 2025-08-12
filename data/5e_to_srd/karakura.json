@@ -1,0 +1,11 @@
+{
+  "Succubus": {
+    "relation": "close_cousins",
+    "explanation": "The Karakura is a charming, manipulative fiend with shapechanging and charm abilities similar to a Succubus."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Karakura's shadow manipulation and ability to trap foes in darkness conceptually align with the Shadow's nature."
+  },
+  "monster_key": "karakura"
+}

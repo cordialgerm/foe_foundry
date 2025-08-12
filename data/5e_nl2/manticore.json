@@ -1,0 +1,47 @@
+{
+    "name": "Manticore",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 68,
+    "ac": 14,
+    "srd": true,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 50 ft.",
+    "role": "Artillery",
+    "tags": [
+        "predator",
+        "flight",
+        "territorial"
+    ],
+    "adjectives": [
+        "fearsome",
+        "cunning",
+        "aggressive"
+    ],
+    "description": "A Manticore has the body of a lion, bat wings, and a human-like face with sharp teeth. Its tail is covered in barbed spikes.",
+    "memorable": "Known for its cruelty and hunger for human flesh, Manticores are feared by travelers.",
+    "goals": "They stalk their prey from the air and aggressively defend their territory.",
+    "relations": "Often found in remote wilderness areas or mountains, possibly alongside other predators.",
+    "environment": "Mountains or remote wilderness areas",
+    "strengths": "High mobility due to flying capabilities and multiattack actions, along with the ability to launch ranged tail spikes.",
+    "weaknesses": "Low intelligence and charisma, making strategic social interactions difficult.",
+    "attacks": "Utilizes a multiattack with a bite and claws, or a volley of tail spikes that can hit multiple targets.",
+    "most_powerful_ability": "Tail Spike Volley, a powerful ranged attack that deals damage to multiple enemies at once.",
+    "senses": "Possesses darkvision up to 60 feet, allowing for effective hunting and stalking in low light.",
+    "skills": "Moderate passive perception lets it notice threats reasonably well.",
+    "additional_information": [
+        "Regrows used tail spikes after a long rest.",
+        "Can mimic humanoid voices to confuse foes.",
+        "Resistant to exhaustion and the frightened condition."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "lion-bodied monster with wings",
+        "aggressive predator with barbed tail",
+        "creature that mimics humanoid voices",
+        "large flying monster that stalks prey",
+        "territorial beast known for cruelty"
+    ]
+}

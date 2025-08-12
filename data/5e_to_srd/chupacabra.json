@@ -1,0 +1,11 @@
+{
+  "Giant Wolf Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, stealthy predators with paralyzing abilities and blood-draining attacks."
+  },
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares agility, keen senses, and a predatory nature with the Chupacabra."
+  },
+  "monster_key": "chupacabra"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Doppelixir",
+    "queries": [
+        {
+            "query": "tiny ooze that can imitate liquids and drains blood",
+            "variant": "tiny ooze that drains blood and imitates liquids"
+        },
+        {
+            "query": "creature that manipulates targets and has high dexterity",
+            "variant": "being that has high dexterity and manipulates targets"
+        },
+        {
+            "query": "stealthy ooze with the ability to charm and liquids",
+            "variant": "stealthy ooze that can charm and imitate liquids"
+        },
+        {
+            "query": "Doppelixir abilities to charm and imitate potions",
+            "variant": "Doppelixir's abilities to imitate potions and charm"
+        },
+        {
+            "query": "small ooze creature that doesn't need sleep and can climb walls",
+            "variant": "small ooze that can climb walls and doesn't require sleep"
+        }
+    ]
+}

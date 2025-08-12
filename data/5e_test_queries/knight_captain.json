@@ -1,0 +1,25 @@
+{
+    "name": "Knight Captain",
+    "queries": [
+        {
+            "query": "medium humanoid with high Armor Class and battlefield leadership",
+            "variant": "medium humanoid that has a high AC and leads in battles"
+        },
+        {
+            "query": "warrior known for resilience and combat abilities",
+            "variant": "fighter recognized for toughness and fighting skills"
+        },
+        {
+            "query": "Knight Captain with combat tactics and Magic Resistance",
+            "variant": "Knight Captain having battle strategies and resistance to magic"
+        },
+        {
+            "query": "Knight Captain with high Strength and defensive capabilities",
+            "variant": "Knight Captain boasting strong Strength and good defenses"
+        },
+        {
+            "query": "resilient humanoid who can inspire allies on the battlefield",
+            "variant": "durable humanoid that can motivate teammates in combat"
+        }
+    ]
+}

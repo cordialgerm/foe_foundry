@@ -1,0 +1,11 @@
+{
+  "Ogre": {
+    "relation": "almost_identical",
+    "explanation": "A large, muscular giant with strong melee capabilities and a spear, closely matching the base Ogre."
+  },
+  "Giant Boar": {
+    "relation": "conceptually_similar",
+    "explanation": "The ogre's ability to transform into a large boar aligns with the Giant Boar's form and combat style."
+  },
+  "monster_key": "ogre,-rainforest"
+}

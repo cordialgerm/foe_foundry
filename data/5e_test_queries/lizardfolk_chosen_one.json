@@ -1,0 +1,25 @@
+{
+    "name": "Lizardfolk Chosen One",
+    "queries": [
+        {
+            "query": "humanoid creature with strong melee attacks and aquatic abilities",
+            "variant": "humanoid that has strong melee attacks and swimming capabilities"
+        },
+        {
+            "query": "lizardfolk that can hold its breath and deals piercing damage",
+            "variant": "lizardfolk who can hold its breath and does piercing damage"
+        },
+        {
+            "query": "medium humanoid with 75 hit points and +3 strength modifier",
+            "variant": "medium creature with 75 hp and a +3 in strength"
+        },
+        {
+            "query": "powerful lizardfolk that can knock enemies prone and use spells",
+            "variant": "strong lizardfolk capable of knocking foes down and casting spells"
+        },
+        {
+            "query": "Lizardfolk chosen one with draconic language and good armor class",
+            "variant": "Lizardfolk Chosen One who speaks draconic and has a good AC"
+        }
+    ]
+}

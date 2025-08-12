@@ -1,0 +1,25 @@
+{
+    "name": "Triceratops",
+    "queries": [
+        {
+            "query": "massive dinosaur with three facial horns that lives in grasslands",
+            "variant": "huge dinosaur with three horns that resides in grasslands"
+        },
+        {
+            "query": "herbivorous beast that charges and gores enemies",
+            "variant": "plant-eating beast that charges and attacks with its horns"
+        },
+        {
+            "query": "large creature with high hit points and poor agility found in jungles",
+            "variant": "big creature with lots of health and bad dexterity found in jungles"
+        },
+        {
+            "query": "strong dinosaur that performs trampling attacks and has natural armor",
+            "variant": "powerful dinosaur that uses trampling attacks and has natural defense"
+        },
+        {
+            "query": "beast known for its defensive capabilities and fearsome charge",
+            "variant": "creature recognized for its defense and intimidating charge"
+        }
+    ]
+}

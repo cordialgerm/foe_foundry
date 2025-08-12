@@ -1,0 +1,25 @@
+{
+    "name": "Ghost Knight Templar",
+    "queries": [
+        {
+            "query": "undead knight that can move through objects and deals cold damage",
+            "variant": "knight undead that deals cold damage and moves through objects"
+        },
+        {
+            "query": "strong melee combatant with high armor class and cold damage resistance",
+            "variant": "high AC cold resistant strong melee fighter"
+        },
+        {
+            "query": "ghostly knight with summoning abilities that terrorizes foes",
+            "variant": "knight ghost that can summon and frighten enemies"
+        },
+        {
+            "query": "lawful evil creature with resistance to necrotic damage and a ghostly mount",
+            "variant": "creature that is lawful evil with a ghost mount and resists necrotic damage"
+        },
+        {
+            "query": "medium undead creature with exceptional strength and tactical combat abilities",
+            "variant": "tactical combat creature that is a medium undead with great strength"
+        }
+    ]
+}

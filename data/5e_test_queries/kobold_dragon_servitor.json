@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Dragon Servitor",
+    "queries": [
+        {
+            "query": "small humanoid servant of a dragon with sunlight sensitivity",
+            "variant": "tiny servant creature devoted to a dragon that is weak in sunlight"
+        },
+        {
+            "query": "Kobold Dragon Servitor's abilities and weaknesses in sunlight",
+            "variant": "abilities of the Kobold Dragon Servitor and vulnerabilities when exposed to sunlight"
+        },
+        {
+            "query": "nimble dragon servant that attacks in packs and uses Ominous Shadow",
+            "variant": "quick dragon servant that fights in groups and employs Ominous Shadow ability"
+        },
+        {
+            "query": "creature with Pack Tactics that gains resistance from dragon master",
+            "variant": "monster with Pack Tactics ability and resistance from its dragon master"
+        },
+        {
+            "query": "humanoid monster that deals bludgeoning damage and has low HP",
+            "variant": "small humanoid that inflicts bludgeoning damage and has weak hit points"
+        }
+    ]
+}

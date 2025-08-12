@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge, amorphous, gelatinous aberrations that can squeeze through tight spaces and absorb creatures."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a chaotic, many-mouthed aberration that disorients foes with cacophonous sounds."
+  },
+  "monster_key": "shoggoth"
+}

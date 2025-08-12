@@ -1,6 +1,8 @@
 <MonsterName/>Rust Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Rust Drake is a medium-sized dragon characterized by its chaotic evil nature. As a formidable adversary in combat, it possesses a high Armor Class of 17 due to its natural armor, making it relatively tough to hit. With 161 hit points, calculated through 19d8 plus 76, it can endure a significant amount of damage. Its movement capabilities are impressive; it can walk at a speed of 80 feet and has a fly speed of 30 feet, allowing it to maneuver effectively in battle. The Rust Drake has a challenge rating of 8, making it an appropriate encounter for a party that has gained some experience, providing a reward of 3,900 experience points upon defeat. Its attributes are robust, showcasing exceptional strength and constitution, which enhance its offensive and defensive capabilities.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ One of the Rust Drake's notable abilities is Vomit Scrap, which has a recharge m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rust Drake
 
 *Medium* *Dragon* *Chaotic Evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage, and the target must succeed on a DC 15 Constitution save or contract the rust drake lockjaw disease (see the Rust Drake Lockjaw trait).
 - **Tail Swipe:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.
 - **Vomit Scrap (Recharge 5–6):** The rust drake vomits forth a 15-foot cone of rusted metal. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (5d8) slashing damage and 22 (5d8) poison damage on a failed save, or half as much damage on a successful one. In addition, each creature that failed the saving throw must succeed on a DC 15 Constitution saving throw or contract the rust drake lockjaw disease (see the Rust Drake Lockjaw trait).
+</statblock>
 
 

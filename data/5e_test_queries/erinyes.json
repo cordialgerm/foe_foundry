@@ -1,0 +1,25 @@
+{
+    "name": "Erinyes",
+    "queries": [
+        {
+            "query": "dark angelic fiend that serves infernal contracts",
+            "variant": "fiend that looks like a dark angel serving infernal contracts"
+        },
+        {
+            "query": "creature with black wings and powerful magic resistance",
+            "variant": "monster with black-feathered wings and strong magic resistance"
+        },
+        {
+            "query": "medium devil that attacks with a lasso and poisonous weapons",
+            "variant": "medium fiend who uses lasso attacks and poisonous weapons"
+        },
+        {
+            "query": "beautiful but deadly fiend that can fly and manipulate mortals",
+            "variant": "deceptively beautiful fiend that can fly and control mortals"
+        },
+        {
+            "query": "lawful evil warrior with high AC and poison attacks",
+            "variant": "warrior of lawful evil alignment with high armor class and poison damage"
+        }
+    ]
+}

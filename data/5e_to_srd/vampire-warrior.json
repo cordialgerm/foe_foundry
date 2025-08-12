@@ -1,0 +1,7 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "The Vampire Warrior is a close variant of the Vampire with similar abilities like charm, regeneration, mist transformation, and necrotic damage."
+  },
+  "monster_key": "vampire-warrior"
+}

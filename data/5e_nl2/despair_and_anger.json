@@ -1,0 +1,56 @@
+{
+    "name": "Despair And Anger",
+    "creature_type": "Celestial",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 161,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "40 ft. walking and flying",
+    "role": null,
+    "tags": [
+        "celestial",
+        "anger",
+        "despair"
+    ],
+    "adjectives": [
+        "powerful",
+        "dual-natured",
+        "formidable"
+    ],
+    "description": "Despair and Anger is a large celestial creature embodying overwhelming sorrow and fierce rage, exhibiting both defensive capabilities and significant mobility.",
+    "memorable": "Its ability to switch between sorrow and rage forms grants it a unique combat style, dealing both radiant and necrotic damage.",
+    "goals": "Engaging opponents in combat and leveraging its dual aspects for tactical advantages.",
+    "relations": null,
+    "environment": "Usually found in locales where battles of emotion and spirit take place.",
+    "strengths": "High armor class and hit points, along with resistances to necrotic and radiant damage.",
+    "weaknesses": "Dependence on its dual aspects for optimal performance can be a strategic vulnerability.",
+    "attacks": "Can unleash devastating melee attacks with Blazing Fists or Shadow Tendrils, and utilize the area attack Burning Rage or the psychic assault Despairing Rejection.",
+    "most_powerful_ability": "Burning Rage deals significant area damage and allows dexterity saving throws for half damage.",
+    "equipment": null,
+    "senses": "Has truesight up to 60 feet, allowing it to perceive creatures and objects as they truly are.",
+    "skills": "Skilled in perception with a +3 bonus, aiding in detecting hidden threats.",
+    "additional_information": [
+        "Immunity to conditions like blinded, charmed, and frightened.",
+        "Advantage on saving throws against spells due to Magic Resistance.",
+        "Regains health by dealing necrotic damage while grappling enemies.",
+        "Can strategically reposition opponents using Despairing Rejection.",
+        "Possesses a powerful bonus action to switch between anger and despair aspects."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant",
+        "fire",
+        "cold",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large celestial creature of sorrow and rage",
+        "powerful celestial with truesight",
+        "dual natured monster with radiant damage",
+        "monster that can switch forms in battle",
+        "celestial that grapples with shadow tendrils"
+    ]
+}

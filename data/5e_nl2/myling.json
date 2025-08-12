@@ -1,0 +1,51 @@
+{
+    "name": "Myling",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 10 ft., burrow 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ambusher",
+        "necrotic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "chaotic"
+    ],
+    "description": "A Small undead creature with a pale, ghostly appearance that embodies the essence of malevolent spirits.",
+    "memorable": "Its ability to attach and drain the life force from victims makes it particularly fearsome.",
+    "goals": "To ambush and drain strength from living creatures.",
+    "relations": "Might be encountered alongside other malevolent undead or as a servant of darker powers.",
+    "environment": "Often found in burial sites, haunted locations, or areas with strong negative energy.",
+    "strengths": "High Dexterity enhances its stealth capabilities, making it adept at ambush.",
+    "weaknesses": "Vulnerable to silvered weapons and magical attacks.",
+    "attacks": "Claw attack deals slashing and necrotic damage, with a chance to attach and drain life from the target.",
+    "most_powerful_ability": "Enfeebling Attacks can reduce a target's Strength, potentially leading to their death.",
+    "equipment": null,
+    "senses": "Has darkvision to perceive in darkness.",
+    "skills": "Skilled in Stealth with a +5 modifier, allowing it to sneak up on foes.",
+    "additional_information": [
+        "Immune to necrotic and poison damage.",
+        "Resistant to nonmagical attacks that aren't made with silvered weapons.",
+        "Does not require air, food, drink, or sleep.",
+        "Can bury an opponent, making them restrained and unable to breathe.",
+        "Its presence is often accompanied by extreme unease and dread."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "malevolent undead that burrows underground",
+        "small necrotic creature with enfeebling attacks",
+        "stealthy undead that drains strength",
+        "dark spirit that ambushes and attaches",
+        "chaotic evil creature that attacks with claws"
+    ]
+}

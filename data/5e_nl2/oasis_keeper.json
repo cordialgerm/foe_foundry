@@ -1,0 +1,51 @@
+{
+    "name": "Oasis Keeper",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 123,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft. walking and swimming speed",
+    "role": "Controller",
+    "tags": [
+        "desert",
+        "predator",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "stealthy"
+    ],
+    "description": "A massive monstrosity that lives in desert oases, the Oasis Keeper can blend into its sandy surroundings and features a powerful stinger and bite that can incapacitate foes with poison.",
+    "memorable": "Its ability to calm creatures that drink its poisoned water adds a unique layer of control in combat and strategy.",
+    "goals": "To protect its oasis while incapacitating those who threaten it.",
+    "relations": "It may be found near other desert creatures or as a guardian of a specific oasis.",
+    "environment": "Typically found in desert oases.",
+    "strengths": "High Strength and Dexterity make it a formidable melee combatant, with abilities that control the battlefield and incapacitate foes.",
+    "weaknesses": "Low Intelligence makes it susceptible to mental attacks and reduces its strategic capabilities.",
+    "attacks": "Utilizes its stinger and bite, dealing significant piercing damage and applying debilitating poison effects.",
+    "most_powerful_ability": "Pacifying Secretions allows it to poison water and calm creatures that consume it, greatly influencing encounters.",
+    "senses": "Blindsight up to 20 ft. grants it a unique advantage for stealthy ambushes.",
+    "skills": "Excels in Stealth and Perception checks, making it highly aware of its surroundings and capable of remaining hidden.",
+    "additional_information": [
+        "Immune to poison damage and condition of being poisoned",
+        "Can hold its breath for 30 minutes, facilitating stealthy submerged attacks",
+        "Advantage on Stealth checks in sandy terrain or when underwater",
+        "Resistance to nonmagical bludgeoning, piercing, and slashing damage",
+        "Can make two attacks in one turn with a multiattack feature"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Huge desert monster that uses poison",
+        "stealthy creature living in desert oasis",
+        "giant monster with a calming poison",
+        "predator that attacks with stinger and bite",
+        "creature that can hold breath underwater"
+    ]
+}

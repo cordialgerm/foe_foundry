@@ -1,0 +1,25 @@
+{
+    "name": "Ramag",
+    "queries": [
+        {
+            "query": "humanoid creature that uses portals and has magic resistance",
+            "variant": "humanoid that uses portal abilities and is resistant to magic"
+        },
+        {
+            "query": "magically adept medium humanoid with portal sense ability",
+            "variant": "medium humanoid with magical skills and the ability to sense portals"
+        },
+        {
+            "query": "creature with high intelligence and low strength that can teleport",
+            "variant": "creature that has a strong intelligence but weak strength and can teleport"
+        },
+        {
+            "query": "neutral humanoid that fights with a scimitar and shortbow",
+            "variant": "humanoid that is neutral aligning and uses scimitar and shortbow in combat"
+        },
+        {
+            "query": "magic resistance humanoid that communicates in common",
+            "variant": "humanoid with resistance to magic that speaks in common tongue"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Cave Troll",
+    "queries": [
+        {
+            "query": "large giant creature with high resilience living in caves",
+            "variant": "large cave creature that's a giant with great resilience"
+        },
+        {
+            "query": "strong troll with regeneration ability that prefers ambush tactics",
+            "variant": "troll that is strong and has regeneration, loves to ambush"
+        },
+        {
+            "query": "troll with keen smell and can control severed limbs",
+            "variant": "creature that has keen smell and can manage severed limbs"
+        },
+        {
+            "query": "Cave Troll that has a high Constitution and low Charisma",
+            "variant": "high Constitution troll from caves with low Charisma"
+        },
+        {
+            "query": "giant troll that can hurl rocks and regenerates in combat",
+            "variant": "troll giant that throws rocks and regenerates during battle"
+        }
+    ]
+}

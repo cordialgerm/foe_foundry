@@ -1,0 +1,7 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "The Blemmyes is a large, brutish monstrosity with strong melee attacks similar to an Ogre."
+  },
+  "monster_key": "blemmyes"
+}

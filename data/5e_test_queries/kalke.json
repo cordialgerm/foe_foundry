@@ -1,0 +1,25 @@
+{
+    "name": "Kalke",
+    "queries": [
+        {
+            "query": "small fiend that excels in stealth and has magic resistance",
+            "variant": "little fiend that is great at stealth and has resistance to magic"
+        },
+        {
+            "query": "nimble creature with low strength and a cunning personality",
+            "variant": "agile creature with weak strength and a tricky nature"
+        },
+        {
+            "query": "opportunistic ally that can detect magic and is neutral evil",
+            "variant": "strategic ally that senses magic and has a neutral evil alignment"
+        },
+        {
+            "query": "adept at hiding and using magic items but weak in wisdom",
+            "variant": "skilled at evasion and activating magic items but low in wisdom"
+        },
+        {
+            "query": "small evil fiend with a high dexterity score and low hit points",
+            "variant": "tiny malevolent fiend with a good dexterity score and not many hit points"
+        }
+    ]
+}

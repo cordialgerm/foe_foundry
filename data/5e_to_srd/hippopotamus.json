@@ -1,0 +1,7 @@
+{
+  "Giant Crocodile": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, powerful aquatic beasts inhabiting rivers and lakes with strong melee attacks."
+  },
+  "monster_key": "hippopotamus"
+}

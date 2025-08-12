@@ -1,0 +1,25 @@
+{
+    "name": "Grolar Bear Alpha",
+    "queries": [
+        {
+            "query": "large bear monster that can camouflage in forests and snows",
+            "variant": "big bear creature that can hide in snowy and forest areas"
+        },
+        {
+            "query": "monstrous creature with dismembering attack ability and keen smell",
+            "variant": "monster with dismembering strike capability and strong sense of smell"
+        },
+        {
+            "query": "intimidating beast with high strength and cold damage resistance",
+            "variant": "fearsome creature with excellent strength and resistance to cold attacks"
+        },
+        {
+            "query": "Grolar Bear Alpha special abilities and combat actions",
+            "variant": "abilities and attack options of Grolar Bear Alpha"
+        },
+        {
+            "query": "powerful monster known for multiattack and stunning capability",
+            "variant": "strong creature recognized for multiple attacks and stunning abilities"
+        }
+    ]
+}

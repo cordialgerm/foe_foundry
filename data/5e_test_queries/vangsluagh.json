@@ -1,0 +1,25 @@
+{
+    "name": "Vangsluagh",
+    "queries": [
+        {
+            "query": "chaotic evil monster that disrupts spellcasting with noise",
+            "variant": "monster that creates chaos through noise and disrupts spellcasting"
+        },
+        {
+            "query": "medium aberration with thunder immunity living in noisy environments",
+            "variant": "medium creature that is an aberration and immune to thunder, found in loud areas"
+        },
+        {
+            "query": "creature with sonic attacks and disadvantage on stealth due to constant racket",
+            "variant": "monster that uses sonic attacks and has stealth disadvantages from its noisy presence"
+        },
+        {
+            "query": "spellcaster-foiling monster that's strong in Constitution and Dexterity",
+            "variant": "monster that excels in Constitution and Dexterity, particularly harmful to spellcasters"
+        },
+        {
+            "query": "vulnerable creature to magic in its 30-feet distraction radius",
+            "variant": "creature that's vulnerable to spells within its 30 feet area of distraction"
+        }
+    ]
+}

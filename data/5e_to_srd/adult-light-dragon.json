@@ -1,0 +1,11 @@
+{
+  "Adult Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are majestic, Huge dragons with radiant and fire damage, embodying good-aligned, powerful guardians with breath weapons."
+  },
+  "Adult Silver Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the majestic and good-aligned dragon concept with radiant and ethereal thematic elements."
+  },
+  "monster_key": "adult-light-dragon"
+}

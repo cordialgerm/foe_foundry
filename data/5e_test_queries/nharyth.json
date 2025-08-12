@@ -1,0 +1,25 @@
+{
+    "name": "Nharyth",
+    "queries": [
+        {
+            "query": "huge chaotic evil aberration that can paralyze opponents",
+            "variant": "chaotic evil huge aberration that can paralyze foes"
+        },
+        {
+            "query": "powerful monster that has bludgeoning resistance and deadly spines",
+            "variant": "strong creature with bludgeoning resistance and harmful spines"
+        },
+        {
+            "query": "creature that flies and creates difficult terrain with spines",
+            "variant": "monster that hovers and makes tough ground with spines"
+        },
+        {
+            "query": " Nharyth abilities that ensnare and incapacitate enemies",
+            "variant": "Nharyth powers that trap and immobilize foes"
+        },
+        {
+            "query": "large aberration immune to being blinded or paralyzed",
+            "variant": "big aberration that can't be blinded or paralyzed"
+        }
+    ]
+}

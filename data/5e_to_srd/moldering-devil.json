@@ -1,0 +1,11 @@
+{
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "The Moldering Devil is a small devilish fiend with flying ability and devil's sight, similar to an Imp but with a focus on poison and decay."
+  },
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are devils with a corrupting and fiendish nature, though the Barbed Devil is larger and more combat-focused."
+  },
+  "monster_key": "moldering-devil"
+}

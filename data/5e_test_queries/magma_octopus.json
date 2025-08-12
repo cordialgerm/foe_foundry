@@ -1,0 +1,25 @@
+{
+    "name": "Magma Octopus",
+    "queries": [
+        {
+            "query": "large elemental creature that thrives in volcanic environments and can grapple foes",
+            "variant": "big elemental being that lives in volcanoes and is able to grab enemies"
+        },
+        {
+            "query": "creature that has fire immunity and utilizes tentacle attacks",
+            "variant": "monster with immunity to fire that uses its tentacles for attacking"
+        },
+        {
+            "query": "octopus-like monster that can swim through lava and deals fire damage",
+            "variant": "octopus creature that swims in lava and inflicts fire damage"
+        },
+        {
+            "query": "monster that becomes vulnerable to cold when outside of lava for too long",
+            "variant": "creature that is weak to cold after being out of lava for an extended time"
+        },
+        {
+            "query": "elemental creature with high hit points and powerful area attacks",
+            "variant": "elemental being with a lot of hit points and strong area damage abilities"
+        }
+    ]
+}

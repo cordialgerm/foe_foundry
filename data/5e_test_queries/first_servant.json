@@ -1,0 +1,25 @@
+{
+    "name": "First Servant",
+    "queries": [
+        {
+            "query": "humanoid with high AC that can cast spells",
+            "variant": "humanoid that can cast spells and has high armor class"
+        },
+        {
+            "query": "powerful servant with martial skills and divine abilities",
+            "variant": "servant with divine abilities and strong martial skills"
+        },
+        {
+            "query": "creature that uses Awe-Inspiring Presence and has healing capabilities",
+            "variant": "being with healing capabilities that employs Awe-Inspiring Presence"
+        },
+        {
+            "query": "fighter with necrotic damage and multiple attacks",
+            "variant": "warrior that deals necrotic damage and has multiple attacks"
+        },
+        {
+            "query": "frontline combatant with high hit points and magical weapon attacks",
+            "variant": "combatant on the frontline with magical weapon attacks and high HP"
+        }
+    ]
+}

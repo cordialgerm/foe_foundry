@@ -1,0 +1,53 @@
+{
+    "name": "Satarre",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 40,
+    "ac": 12,
+    "srd": false,
+    "ac_description": "leather armor",
+    "cr": "1",
+    "movement": "30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "combatant",
+        "necrotic"
+    ],
+    "adjectives": [
+        "versatile",
+        "resilient",
+        "magical"
+    ],
+    "description": "The Satarre is a medium humanoid creature designed for versatile combat, adept with both claw and spear attacks. It has an average appearance, with its notable weaponry enhanced by magical properties.",
+    "memorable": "Its Void Strength grants it resistance to multiple debilitating conditions, allowing it to remain active during intense combat.",
+    "goals": "Engage in versatile combat scenarios and adapt to various fighting styles.",
+    "relations": null,
+    "environment": null,
+    "strengths": "Possesses the ability to deal both piercing and necrotic damage with its attacks, offering adaptability in fights.",
+    "weaknesses": "Lacks significant spellcasting or high mental capabilities, making it less effective in knowledge-based encounters.",
+    "attacks": "Can perform claw and spear attacks that inflict piercing and additional necrotic damage.",
+    "most_powerful_ability": "Void Strength enables resistance to multiple conditions like being blinded, charmed, or frightened.",
+    "equipment": "Wields magical Void Weapons that enhance damage output.",
+    "senses": "Possesses keen perception with a total of 12, allowing for moderate awareness in combat.",
+    "skills": "Has proficiency in Stealth, enabling it to maneuver effectively.",
+    "additional_information": [
+        "Multiattack allows it to strike multiple times in one turn.",
+        "Claw and spear attacks both deal additional necrotic damage.",
+        "Resistance to various conditions enhances its combat longevity.",
+        "Decent physical attributes for melee combat effectiveness.",
+        "Designed as a versatile combatant with adaptability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magical humanoid with claw and spear",
+        "versatile combatant with necrotic abilities",
+        "medium humanoid resistant to fear and charm",
+        "Satarre with Void Weapons and special abilities",
+        "creature with necrotic damage in attacks"
+    ]
+}

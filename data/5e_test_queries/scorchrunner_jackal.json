@@ -1,0 +1,25 @@
+{
+    "name": "Scorchrunner Jackal",
+    "queries": [
+        {
+            "query": "medium fire monster that strikes from shadows",
+            "variant": "medium monster that uses fire and strikes from darkness"
+        },
+        {
+            "query": "Agile creature that thrives in sunlight and has an affinity for flames",
+            "variant": "quick creature that loves sunshine and is skilled with fire"
+        },
+        {
+            "query": "jackal-like monster that deals fire damage and is quick on its feet",
+            "variant": "jackal creature that inflicts fire damage and has great speed"
+        },
+        {
+            "query": "creature with immunity to fire and strong dexterity",
+            "variant": "monster that is immune to fire and has high dexterity"
+        },
+        {
+            "query": "monster that utilizes multiattack and excels in bright environments",
+            "variant": "creature that can multiattack and is good in daylight settings"
+        }
+    ]
+}

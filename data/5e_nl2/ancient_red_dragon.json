@@ -1,0 +1,59 @@
+{
+    "name": "Ancient Red Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "gargantuan",
+    "hp": 546,
+    "ac": 22,
+    "srd": true,
+    "cr": "24",
+    "movement": "40 ft., climb 40 ft., fly 80 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "fire",
+        "legendary"
+    ],
+    "adjectives": [
+        "ancient",
+        "fearsome",
+        "intimidating"
+    ],
+    "description": "The Ancient Red Dragon is a gargantuan creature with scales that burn like molten lava and smoke rising from its nostrils. It boasts immense power and a fierce, territorial nature.",
+    "memorable": "Known for its devastating fire breath and overwhelming presence, this dragon embodies the terror of what can happen when greed and superiority are fused into a single creature.",
+    "goals": "Driven by greed, the Ancient Red Dragon hoards treasure and will defend its territory against intruders vigorously.",
+    "relations": "Red Dragons are typically solitary, but they may have minions or lesser dragons serving them.",
+    "environment": "Volcanic mountains, surrounded by treasure hoards.",
+    "strengths": [
+        "Immunity to fire damage",
+        "High hit points and armor class",
+        "Legendary Resistance allowing it to ignore failed saving throws"
+    ],
+    "weaknesses": [
+        "Below-average Dexterity may expose it to agility-based tactics",
+        "Vulnerable to tactics that exploit its high saving throw reliance"
+    ],
+    "attacks": "The dragon can use its frightful presence to instill fear, followed by powerful multiattacks including biting, clawing, and tail swipes, along with its devastating fire breath.",
+    "most_powerful_ability": "Fire Breath unleashes a massive 90-foot cone of fire that deals high damage and can frighten those caught within it.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a passive perception score of 26, making it highly aware of its surroundings.",
+    "skills": "Profound skill in intimidation and perception makes it an imposing presence.",
+    "additional_information": [
+        "Legendary actions allow it to make extra attacks or instill fear after other creatures' turns.",
+        "Searing Heat causes damage to those who touch it or attack it in melee.",
+        "Can cast spells like command and wall of fire without needing material components.",
+        "Has the Cruel Tyranny ability to force minions to attack immediately.",
+        "Regional effects can manifest in its territory, presenting additional hazards."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting with a focus on control and area denial through spells like wall of fire.",
+    "test_queries": [
+        "gargantuan fire breathing dragon",
+        "legendary dragon of greed",
+        "volcanic mountain guardian",
+        "apex predator dragon",
+        "terrifying ancient dragon"
+    ]
+}

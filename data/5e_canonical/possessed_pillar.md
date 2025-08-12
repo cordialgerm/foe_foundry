@@ -1,6 +1,8 @@
 <MonsterName/>Possessed Pillar</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Possessed Pillar is a formidable construct that serves as a powerful guardian in its designated territory. Standing large and imposing, it combines robust physical attributes, notable magical abilities, and a unique form of battlefield control through its magnetic body ability. The pillar has an Armor Class of 14, providing it with good defenses, and a substantial hit point pool of 95, making it a tough opponent to bring down. With a Challenge Rating of 7, it poses a significant threat that requires strategic planning and teamwork to defeat. Although it lacks the finesse of more agile foes—reflected in its Dexterity score of 8, which is considered bad—it compensates with very strong Strength and Constitution scores, providing it with exceptional melee power and resilience. Its major weaknesses include vulnerabilities to non-magical attacks made with weapons other than adamantine, as well as the potential to be overwhelmed by multiple attackers taking advantage of its slower speed, which is 20 feet.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Possessed Pillar can perform a Multiattack, allowing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Possessed Pillar
 
 *Large* *Construct* *Unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The possessed pillar makes two Slam attacks.
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 9 (2d8) necrotic damage or radiant damage (the pillar’s choice).
+</statblock>
 
 

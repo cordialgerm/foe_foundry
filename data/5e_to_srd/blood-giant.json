@@ -1,0 +1,7 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Blood Giant is a powerful giant with physical strength and magical abilities, similar in role and size to a Fire Giant but with blood magic and cold damage instead of fire."
+  },
+  "monster_key": "blood-giant"
+}

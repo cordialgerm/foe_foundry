@@ -1,0 +1,52 @@
+{
+    "name": "Storm Giant Monarch",
+    "creature_type": "Giant",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 460,
+    "ac": 16,
+    "srd": false,
+    "cr": "14",
+    "movement": "50 feet walking, 50 feet swimming",
+    "role": "null",
+    "tags": [
+        "giant",
+        "storm",
+        "amphibious"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "majestic"
+    ],
+    "description": "The Storm Giant Monarch is a massive imposing figure, boasting an impressive stature that dominates the battlefield. Its skin resembles the turbulent sea, and its hair crackles with the energy of storms.",
+    "memorable": "Its ability to command thunderstorms and unleash devastating lightning strikes makes it a captivating opponent.",
+    "goals": "To wield its power over storms and protect its domain from intruders.",
+    "relations": "Often found commanding lesser giants or aquatic creatures, and occasionally serves as a guardian to ancient secrets.",
+    "environment": "Primarily found in coastal areas or mountainous regions, especially where storms frequently occur.",
+    "strengths": "Immunity to lightning and thunder damage, high hit points, and versatile spellcasting abilities.",
+    "weaknesses": "Large size can be a disadvantage in confined spaces, and its intelligence score may limit its tactical flexibility.",
+    "attacks": "Multiattack with its greatsword, can throw rocks dealing significant bludgeoning damage, or unleash powerful lightning strikes.",
+    "most_powerful_ability": "The Lightning Strike ability can hit multiple foes with a devastating area-of-effect lightning bolt.",
+    "equipment": "Greatsword",
+    "senses": "Has a passive Perception of 19, indicating sharp awareness of its surroundings.",
+    "skills": "Possesses proficiency in athletics (+14), showcasing its physical prowess, and arcana and history skills (+8) demonstrating its magical knowledge.",
+    "additional_information": [
+        "Can breathe air and water, making it amphibious.",
+        "Spellcasting capabilities enhance its combat and support abilities.",
+        "Can perform a Sword Sweep attack when bloodied, damaging multiple foes nearby."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder",
+        "cold"
+    ],
+    "spellcasting": "Can cast spells like detect magic, control weather, and commune with innate spellcasting ability.",
+    "test_queries": [
+        "amphibious giant with storm abilities",
+        "huge monster commands lightning and thunder",
+        "giant with powerful spellcasting and melee attacks",
+        "storm giant that can swim and breathe water",
+        "majestic giant with devastating lightning strikes"
+    ]
+}

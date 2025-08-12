@@ -1,6 +1,8 @@
 <MonsterName/>Orc Warlord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>17 (half plate)</AC>
+<HP/>90</HP>
 <summary>The Orc Warlord is a formidable medium humanoid that embodies strength and leadership on the battlefield. With a challenge rating of 4, this creature is designed for melee combat, boasting impressive armor and hit points that make it a resilient opponent. The warlord excels in dealing significant damage with its weapon attacks and possesses abilities that not only enhance its own performance but also provide strategic advantages to its allies. It is vulnerable to ranged attacks, particularly because its Dexterity score is merely average, but its martial prowess and rallying capabilities make it a valuable asset in combat scenarios.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For bonus actions, the Orc Warlord can use "Warrior’s Advance," potentially en
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orc Warlord
 
 *Medium humanoid*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Warrior’s Advance.** As the orc.
 - **Warlord’s Rally (Recharge 4–6)** . The warlord yells a rallying cry to its allies. Each friendly creature within 30 feet of the warlord and that can hear the warlord has advantage on the next attack roll it makes before the start of the warlord’s next turn.
 
+</statblock>
 
 

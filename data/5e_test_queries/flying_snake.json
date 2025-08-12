@@ -1,0 +1,25 @@
+{
+    "name": "Flying Snake",
+    "queries": [
+        {
+            "query": "brightly colored venomous serpent that flies",
+            "variant": "colorful venomous snake that can fly"
+        },
+        {
+            "query": "small agile jungle predator with wings",
+            "variant": "tiny jungle predator that is agile and has wings"
+        },
+        {
+            "query": "creature with a fast flying ability and poison bite",
+            "variant": "monster that has a venomous bite and can fly fast"
+        },
+        {
+            "query": "winged serpent found in tropical jungles",
+            "variant": "serpent with wings located in jungle regions"
+        },
+        {
+            "query": "nimble snake with flying capability and low strength",
+            "variant": "agile snake that can fly and has weak strength"
+        }
+    ]
+}

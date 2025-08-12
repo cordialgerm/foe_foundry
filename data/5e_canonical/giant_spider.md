@@ -1,6 +1,8 @@
 <MonsterName/>Giant Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>26</HP>
 <summary>A Giant Spider is a massive arachnid that weaves large, intricate webs to trap its prey. These creatures are commonly found in dark forests, caves, or abandoned ruins, where they patiently wait for their next meal to stumble into their web. Their venomous bite can paralyze or kill smaller creatures, and they are capable of spinning webbing to entangle foes. Giant Spiders are stealthy and fast, able to climb walls and ceilings with ease. Though solitary by nature, they are highly territorial and will defend their lairs fiercely from intruders.</summary>
 
 <summary>The Giant Spider is a formidable creature with a large and menacing presence. It combines the traits of a beast with a cunning predatory instinct, making it both a physical threat and a stealthy ambusher. With a Challenge Rating of 1, it presents a moderate challenge to adventurers. The spider possesses good agility and climbing skills, allowing it to navigate in environments that are vertical and difficult. It has average durability due to its 26 hit points and a decent Armor Class of 14. However, its intelligence is low, which can be seen as a weakness in scenarios requiring complex tactics or communication.</summary>
@@ -35,6 +37,7 @@ Overall, the Giant Spider is a versatile predator capable of engaging adventurer
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Spider
 
 *Large beast, unaligned*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Web (Recharge 5-6)***. *Ranged Weapon Attack:* +5 to hit, range 30/60 ft., one creature. *Hit:* The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
 
-To snare its prey, a **giant spider** spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.
+To snare its prey, a **giant spider** spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ To snare its prey, a **giant spider** spins elaborate webs or shoots sticky stra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Spider
 
 *Large* *Beast*
@@ -110,6 +115,7 @@ Source: 5e_artisinal_monsters
 - **Web (Recharge 5-6):** Ranged Weapon Attack: +5 to hit, range 20/60 feet., one Large or smaller creature. Hit: The creature is restrained by a web. As an action, a creature can make a DC 12 Strength check, breaking the web on a success. The effect also ends if the web is destroyed. The web is an object with AC 10, 1 hit point, and immunity to all forms of damage except slashing, fire, and force.
 
 
+</statblock>
 
 
 
@@ -118,6 +124,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider, Giant
 
 *Large beast*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Web (Recharge 4–6).** The spider launches a gob of webbing at one creature it can see within 30 feet of it. The target must succeed on a DC 12 DEX save or be restrained. A creature, including the restrained target, can take its action to free the target from the webbing by succeeding on a DC 12 STR check. The webbing can also be attacked and destroyed (AC 10; HP 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
 
+</statblock>
 
 

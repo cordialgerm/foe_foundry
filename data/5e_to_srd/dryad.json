@@ -1,0 +1,7 @@
+{
+  "Dryad": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Dryad closely matches the SRD Dryad in appearance, abilities, and role as a forest guardian with charm and nature magic."
+  },
+  "monster_key": "dryad"
+}

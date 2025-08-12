@@ -1,0 +1,25 @@
+{
+    "name": "Harbinger of Wrath",
+    "queries": [
+        {
+            "query": "gargantuan construct with adamantine weapons and drains life",
+            "variant": "gargantuan construct that has adamantine weapons and can drain life"
+        },
+        {
+            "query": "chaotic evil creature with high hit points and magic resistance",
+            "variant": "chaotic evil being with significant hit points and resistance to magic"
+        },
+        {
+            "query": "massive monster that impales victims and uses spikes",
+            "variant": "huge creature that uses spikes to impale its victims"
+        },
+        {
+            "query": "strong creature with high strength that's immune to many damage types",
+            "variant": "powerful monster with superior strength and many damage immunities"
+        },
+        {
+            "query": "combat-focused construct that grapples and restrains foes",
+            "variant": "construct made for combat that can grapple and restrain enemies"
+        }
+    ]
+}

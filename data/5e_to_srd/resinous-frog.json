@@ -1,0 +1,7 @@
+{
+  "Giant Frog": {
+    "relation": "close_cousins",
+    "explanation": "The Resinous Frog is a small amphibious grappler similar to the Giant Frog but with unique adhesive skin and a detachable tongue."
+  },
+  "monster_key": "resinous-frog"
+}

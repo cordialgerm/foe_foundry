@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a close variant of the Shambling Mound with similar traits, including being a hulking mass of animated vegetation that grapples and engulfs prey."
+  },
+  "monster_key": "shambling-mound"
+}

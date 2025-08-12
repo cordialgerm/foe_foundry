@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "close_cousins",
+    "explanation": "A large, menacing hound with cold damage and frost breath, similar in role and abilities."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "A hound creature with teleportation and hunting traits, though Hell Hound uses fire instead of cold."
+  },
+  "monster_key": "hound-of-the-night"
+}

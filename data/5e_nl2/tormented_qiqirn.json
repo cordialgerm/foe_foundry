@@ -1,0 +1,55 @@
+{
+    "name": "Tormented Qiqirn",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walks 50 feet per turn",
+    "role": null,
+    "tags": [
+        "fiend",
+        "necrotic",
+        "psychic",
+        "chaotic",
+        "evil"
+    ],
+    "adjectives": [
+        "tormented",
+        "nimble",
+        "resilient"
+    ],
+    "description": "The Tormented Qiqirn is a large fiend known for its chaotic nature. It has a high Dexterity score, allowing for nimble movements and stealth tactics. Its low Intelligence indicates a lack of strategic thinking.",
+    "memorable": "Its ability to inflict both necrotic and psychic damage, combined with its resilience and high Dexterity, make it a formidable foe.",
+    "goals": "Typically seeks to cause chaos and harm to others, using its debilitating abilities to subdue foes.",
+    "relations": "Often encountered alongside other chaotic fiends or malevolent creatures.",
+    "environment": "Likely found in dark, chaotic locations or shadowy infernal realms.",
+    "strengths": "Possesses immunities to necrotic damage and resistances to multiple damage types, enhancing its durability in combat.",
+    "weaknesses": "Particularly vulnerable to radiant damage, which it does not resist.",
+    "attacks": "Multiattack allows for two powerful bite attacks or two uses of its Spiteful Howl, inflicting significant necrotic damage.",
+    "most_powerful_ability": "Unnerving Whispers, which can debilitate multiple targets with psychic damage and random debilitating conditions.",
+    "equipment": null,
+    "senses": "Keen Smell grants it advantage on Perception checks relying on smell.",
+    "skills": "Exceptionally skilled in stealth, reflecting its ability to go unnoticed.",
+    "additional_information": [
+        "Aura of Pain inflicts ongoing necrotic damage and can impose disadvantage on attacks.",
+        "The creature's reaction, Protective Spirits, allows it to reduce incoming damage by rolling 2d8.",
+        "Spiteful Howl can deal significant necrotic damage with a Wisdom saving throw.",
+        "Has a high Dexterity which enhances both stealth and initiative.",
+        "Low Intelligence restricts complex tactical capabilities."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "evil fiend with necrotic damage",
+        "stealthy fiend that inflicts psychic damage",
+        "chaotic fiend with powerful howl attack",
+        "resilient fiend with a devastating aura",
+        "large tormented undead creature"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Steam Mephit",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 21,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "chaotic",
+        "fire"
+    ],
+    "adjectives": [
+        "mischievous",
+        "volatile",
+        "chaotic"
+    ],
+    "description": "A small elemental creature composed of steam and hot vapor, the Steam Mephit has a deceptive appearance and is fond of causing chaos.",
+    "memorable": "The Steam Mephit explodes in a burst of steam upon its defeat, potentially damaging nearby foes and adding a final twist to encounters.",
+    "goals": "To create chaos and confusion, often serving more powerful elemental masters.",
+    "relations": "Commonly found with other elemental creatures, particularly in geothermal or volcanic regions.",
+    "environment": "Hot springs, geothermal vents, or volcanic areas.",
+    "strengths": "Immunities to fire and poison, capable of flight, and strategic use of steam attacks.",
+    "weaknesses": "Low hit points and poor physical attributes, making it vulnerable in direct combat.",
+    "attacks": "Uses claw attacks for slashing and fire damage, can unleash a cone of scalding steam to damage multiple enemies at once.",
+    "most_powerful_ability": "Death Burst, which causes an explosion of steam that damages nearby creatures when it dies.",
+    "equipment": null,
+    "senses": "Has improved passive perception of 13 and can effectively hide as a cloud of steam.",
+    "skills": "No notable skills.",
+    "additional_information": [
+        "Can cast the blur spell once per day.",
+        "Does not require air, food, or sleep.",
+        "Can camouflage itself as an ordinary cloud of steam.",
+        "Enjoys disrupting enemy plans with its chaotic abilities.",
+        "Best utilized for guerrilla tactics."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can innately cast the blur spell without needing material components.",
+    "test_queries": [
+        "chaotic steam elemental hiding in volcanoes",
+        "small flying creature that deals fire damage",
+        "elemental that explodes in steam when killed",
+        "steam creature that loves hot springs",
+        "tricky mephit using scalding attacks"
+    ]
+}

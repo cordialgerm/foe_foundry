@@ -1,0 +1,50 @@
+{
+    "name": "Giant Moth",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 7,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "fly 30 ft., walk 25 ft.",
+    "role": null,
+    "tags": [
+        "flying",
+        "creature",
+        "forest"
+    ],
+    "adjectives": [
+        "small",
+        "fragile",
+        "stealthy"
+    ],
+    "description": "The Giant Moth is a small, whimsical creature with an elegant shape and delicate wings, embodying a unique aspect of forested environments.",
+    "memorable": "Its ability to create a cloud of powder can blind opponents, providing tactical advantages.",
+    "goals": "Typically found in forests, often evading threats and searching for food.",
+    "relations": "Might be encountered alongside other small forest creatures, potentially prey to larger predators.",
+    "environment": "Forested or overgrown areas.",
+    "strengths": "Good at stealth and capable of evasion with its flight speed.",
+    "weaknesses": "Fragile with low hit points, lacks offensive potency.",
+    "attacks": "Uses its proboscis to deliver piercing damage, effective against unsuspecting foes.",
+    "most_powerful_ability": "Powdery Wings creates a cloud that can temporarily blind creatures, disrupting opponents in combat.",
+    "equipment": null,
+    "senses": "Has advantage on Wisdom (Perception) checks based on smell due to its antennae.",
+    "skills": "Proficient in Stealth and Perception, able to hide effectively and notice details.",
+    "additional_information": [
+        "Very poor intelligence and charisma.",
+        "Triggered blindness ability can change combat dynamics.",
+        "Relatively slow and fragile, best suited for evasion.",
+        "Encountered in low-level settings.",
+        "Not a formidable opponent, mostly serves as environmental feature."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "whimsical flying forest creature",
+        "small moth that can blind enemies",
+        "moth with powdery wings attack",
+        "stealthy moth in forested environments",
+        "creature with antennae for perception"
+    ]
+}

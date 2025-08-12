@@ -1,0 +1,50 @@
+{
+    "name": "Swarm of Poisonous Snakes",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 48,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft., swim 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "swarm",
+        "poison",
+        "venomous"
+    ],
+    "adjectives": [
+        "poisonous",
+        "venomous",
+        "agile",
+        "swarming"
+    ],
+    "description": "A swarm composed of numerous tiny, venomous snakes that can move through small openings.",
+    "memorable": "The swarm can incapacitate foes with its poisonous attacks and occupies the same space as its victims.",
+    "goals": "To ambush and incapacitate prey using its poisonous nature.",
+    "relations": "May be encountered with other serpentine creatures or in areas with dense foliage.",
+    "environment": "Commonly found in jungles, swamps, or any warm environments where snakes thrive.",
+    "strengths": "High Dexterity enhances evasiveness and allows effective ambush tactics.",
+    "weaknesses": "Low physical strength and intelligence limit its direct combat effectiveness and strategic planning.",
+    "attacks": "Bite attack dealing piercing damage and potential poison damage on a failed saving throw.",
+    "most_powerful_ability": "The Poisonous Swarm ability that poisons creatures starting their turn in its space.",
+    "senses": "Keen senses allow it to detect nearby creatures with enhanced awareness.",
+    "skills": "Skilled in stealth, with a Stealth score of 14.",
+    "additional_information": [
+        "Immunity to various conditions, making it difficult to control.",
+        "Resistant to most physical damage types.",
+        "Cannot regain hit points, making it vulnerable to concentrated attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dangerous swarm of tiny snakes",
+        "venomous ambush predator in the jungle",
+        "swarm capable of poison damage",
+        "quick moving swarm of snakes attacking",
+        "swarm of snakes overwhelming foes"
+    ]
+}

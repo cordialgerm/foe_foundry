@@ -1,0 +1,25 @@
+{
+    "name": "Necrohydra",
+    "queries": [
+        {
+            "query": "massive undead creature with multiple heads that can frighten enemies",
+            "variant": "huge undead beast with many heads that can scare foes"
+        },
+        {
+            "query": "creature that emits a terrifying wail and has resistance to necrotic damage",
+            "variant": "monster that emits a scary moan and is resistant to necrotic attacks"
+        },
+        {
+            "query": "undead hydra with high hit points and ability to attack multiple times",
+            "variant": "undead five-headed beast with large HP and multiattack capability"
+        },
+        {
+            "query": "undead creature immune to poison that lives to instill fear",
+            "variant": "undead being resistant to poison that exists to create terror"
+        },
+        {
+            "query": "creature with low Dexterity and high Strength designed for melee combat",
+            "variant": "monster with poor agility and great strength meant for close-quarters fighting"
+        }
+    ]
+}

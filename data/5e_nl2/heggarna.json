@@ -1,0 +1,51 @@
+{
+    "name": "Heggarna",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Tiny",
+    "hp": 40,
+    "ac": 16,
+    "srd": false,
+    "cr": "1",
+    "movement": "20 ft. walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "psychic",
+        "manipulation"
+    ],
+    "adjectives": [
+        "nightmare-inducing",
+        "cat-like",
+        "deceptive"
+    ],
+    "description": "Heggarna is a tiny, cat-disguised aberration with a slippery flesh beneath its illusory fur.",
+    "memorable": "Heggarna instills nightmares while feeding on the Charisma of its sleeping prey.",
+    "goals": "To undermine foes through deception and drain their Charisma.",
+    "relations": "Often encountered in the company of other shadowy or deceptive creatures.",
+    "environment": "Typically found lurking in shadows, often in urban or dark areas.",
+    "strengths": "High Dexterity and Charisma enhance its stealth and manipulation abilities.",
+    "weaknesses": "Physically weak with low Strength and poor defenses in direct confrontations.",
+    "attacks": "A bite attack that deals piercing and psychic damage, instilling fear through its psychic abilities.",
+    "most_powerful_ability": "Dream Eating allows it to sap the Charisma of sleeping targets, causing nightmares.",
+    "senses": "Possesses darkvision up to 60 feet, helping it navigate in darkness.",
+    "skills": "Proficient in stealth and perception, making it a skilled infiltrator.",
+    "additional_information": [
+        "Ability to create magical illusions to resemble a harmless cat.",
+        "Can incapacitate enemies with its psychic energy.",
+        "Gains advantage on stealth checks while disguised.",
+        "Charisma drain can lead to the target's death.",
+        "Functions best in dim light or darkness."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny psychic monster that disguises as a cat",
+        "sneaky creature that induces nightmares",
+        "shadow creature with dream feeding abilities",
+        "stealthy aberration that drains Charisma",
+        "nightmare-inducing tiny monster"
+    ]
+}

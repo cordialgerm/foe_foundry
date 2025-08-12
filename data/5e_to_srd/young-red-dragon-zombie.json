@@ -1,0 +1,11 @@
+{
+  "Young Red Dragon": {
+    "relation": "almost_identical",
+    "explanation": "A Young Red Dragon reanimated as an undead with similar fire breath and physical attacks."
+  },
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "An undead creature with zombie traits such as Undead Fortitude and lack of need for air, food, or sleep."
+  },
+  "monster_key": "young-red-dragon-zombie"
+}

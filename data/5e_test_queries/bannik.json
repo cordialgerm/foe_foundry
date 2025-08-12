@@ -1,0 +1,25 @@
+{
+    "name": "Bannik",
+    "queries": [
+        {
+            "query": "fey creature that can see through fog and swims well",
+            "variant": "fey being that swims well and sees through fog"
+        },
+        {
+            "query": "medium fey with fire resistance and cold vulnerability",
+            "variant": "medium fey creature that has fire resistance and is vulnerable to cold"
+        },
+        {
+            "query": "Bannik water creature using boiling water attack",
+            "variant": "Bannik aquatic being that employs a boiling water attack"
+        },
+        {
+            "query": "intelligent fey with darkvision and healing spells",
+            "variant": "smart fey creature with darkvision and spells for healing"
+        },
+        {
+            "query": "neutral alignment monster with claws that deal fire damage",
+            "variant": "creature with a neutral alignment and claws causing fire damage"
+        }
+    ]
+}

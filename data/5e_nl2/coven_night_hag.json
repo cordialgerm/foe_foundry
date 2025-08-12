@@ -1,0 +1,53 @@
+{
+    "name": "Coven Night Hag",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "hag",
+        "curse",
+        "nightmare",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "sinister",
+        "manipulative",
+        "haunting",
+        "deceitful"
+    ],
+    "description": "The Coven Night Hag is a Medium Fey with a strong physical presence, marked by a malicious glare and claws that can inflict debilitating curses.",
+    "memorable": "This hag can induce nightmares, manipulate foes with curses, and shift between planes, making it a unique and dangerous opponent.",
+    "goals": "To manipulate and curse its foes, inducing fear and chaos.",
+    "relations": "Often serves as a leader or mentor to lesser hags and may interact with fiendish creatures.",
+    "environment": "Typically found in dark, foreboding areas such as swamps, cursed forests, or any place where fear thrives.",
+    "strengths": "High armor class and hit points, strong magical abilities, and advantage against spellcasting.",
+    "weaknesses": "Dependent on cunning and magic, vulnerable in direct combat against brute force.",
+    "attacks": "Can use claws for slashing damage and inflict a magical curse; utilizes sleep-inducing touch and frightening illusions.",
+    "most_powerful_ability": "Nightmare Haunting can significantly reduce a target's hit point maximum and potentially lead to their death.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 15, allowing it to detect hidden threats effectively.",
+    "skills": "Proficient in arcana, deception, insight, perception, and stealth, showcasing its manipulation and magical knowledge.",
+    "additional_information": [
+        "Can shapeshift into a Small or Medium humanoid.",
+        "Radiates an Evil aura indicating its malevolent nature.",
+        "Once per day, can absorb magic from spells being cast nearby.",
+        "Can travel between planes, including the Ethereal Plane.",
+        "Cursed targets suffer disadvantage on attack rolls against the hag."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "manipulative night hag with curses",
+        "nightmare-inducing creature from the fey",
+        "hag that can shapeshift and steal magic",
+        "evil fey that curses its enemies",
+        "sinister hag haunting in dark swamps"
+    ]
+}

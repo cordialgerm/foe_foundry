@@ -1,0 +1,11 @@
+{
+  "Vrock": {
+    "relation": "conceptually_similar",
+    "explanation": "The Khargi is a huge fiend with flying ability and poison-themed swarm attacks, similar in concept to the Vrock's fiendish nature and aerial combat."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "mechanically_similar",
+    "explanation": "The Khargi's ability to summon swarms of poisonous insects and deal poison damage aligns mechanically with the swarm nature and poison damage of the Swarm of Poisonous Snakes."
+  },
+  "monster_key": "khargi"
+}

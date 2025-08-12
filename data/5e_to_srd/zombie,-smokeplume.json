@@ -1,0 +1,7 @@
+{
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "A large undead creature similar to a Zombie but with added fire and smoke abilities."
+  },
+  "monster_key": "zombie,-smokeplume"
+}

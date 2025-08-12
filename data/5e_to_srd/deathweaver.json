@@ -1,0 +1,15 @@
+{
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "The Deathweaver is a huge web-using ambusher with climbing ability, similar to a Giant Spider."
+  },
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "It creates undead minions from slain foes, akin to the undead nature of Zombies."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Deathweaver's necrotic magic and darkness abilities evoke a shadowy, malevolent presence."
+  },
+  "monster_key": "deathweaver"
+}

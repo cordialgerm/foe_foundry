@@ -1,6 +1,8 @@
 <MonsterName/>Veteran Swordbreaker Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Veteran Swordbreaker Skeleton is a Medium undead creature with an alignment of lawful evil. It is designed as a formidable opponent in combat due to its tenacious nature and specialized abilities. With an Armor Class of 14, it is well-protected, and its Hit Points total 78, providing it with substantial durability during encounters. The skeleton's Challenge Rating of 3 indicates it is a moderately difficult adversary suitable for mid-level adventurers. The strengths of this creature lie in its ability to damage weapons that strike it and its proficiency in melee attacks using various weaponry. However, it has some weaknesses, including vulnerability to thunder damage and being unable to express itself verbally, which limits its interactions outside of combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Veteran Swordbreaker Skeleton can perform a multiattack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Veteran Swordbreaker Skeleton
 
 *Medium* *Undead* *lawful evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Heavy Crossbow:** Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage.
 
 
+</statblock>
 
 

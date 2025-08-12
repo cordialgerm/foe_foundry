@@ -1,0 +1,11 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "Both are humanoid reptilian creatures with natural weapons and similar physical traits."
+  },
+  "Cultist": {
+    "relation": "conceptually_similar",
+    "explanation": "The Serpentfolk of Yig shares the role of a cunning, malevolent humanoid involved in dark societies and manipulation."
+  },
+  "monster_key": "serpentfolk-of-yig"
+}

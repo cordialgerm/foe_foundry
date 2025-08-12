@@ -1,0 +1,48 @@
+{
+    "name": "Corpse Thief",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 30,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "thief",
+        "stealth",
+        "information gathering"
+    ],
+    "adjectives": [
+        "sneaky",
+        "cunning"
+    ],
+    "description": "A medium humanoid creature with keen agility and stealth, capable of gathering intelligence from objects and the dead.",
+    "memorable": "The Corpse Thief can see through the eyes of a living owner after studying an object.",
+    "goals": "To gather information from the living and dead, and to stealthily pilfer small items.",
+    "relations": "May be associated with undead creatures or other thieves.",
+    "environment": "Urban areas or graveyards, often where secrets and information are hidden.",
+    "strengths": "Excellent stealth capabilities and the ability to glean information from objects.",
+    "weaknesses": "Low Charisma makes it poor in social situations.",
+    "attacks": "Multiattack with two claw strikes dealing piercing damage.",
+    "most_powerful_ability": "Object Reading allows the Corpse Thief to see through the eyes of the living or gain insights from the dead.",
+    "senses": "It has darkvision allowing it to see in the dark up to 60 feet.",
+    "skills": "Skilled in stealth with a +5 bonus.",
+    "additional_information": [
+        "Ability to steal small items unnoticed",
+        "Can learn about the last owner of an object",
+        "Has a strong Dexterity score enhancing agility",
+        "Can gain memories from dead owners of objects",
+        "Balance of offensive and defensive capabilities"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy thief that gathers information",
+        "intriguing humanoid with stealing abilities",
+        "creature that reads objects for secrets",
+        "corpse thief with eye-seeing powers",
+        "urban thief who knows about the dead"
+    ]
+}

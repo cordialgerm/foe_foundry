@@ -1,0 +1,48 @@
+{
+    "name": "Archaeopteryx",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 7,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "fly 50 ft., walk 5 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "nimble",
+        "avian"
+    ],
+    "adjectives": [
+        "swift",
+        "tiny",
+        "dexterous"
+    ],
+    "description": "The Archaeopteryx is a tiny, agile creature with a wingspan that allows it to soar through the skies. It has a beak and sharp talons, essential for its attack methods.",
+    "memorable": "Its Flyby ability allows it to evade opportunity attacks while flying, making it a unique nuisance in combat.",
+    "goals": "Typically aims to harass or evade larger foes rather than engage directly.",
+    "relations": "Might be found in environments with other small creatures, fulfilling a role in the ecosystem.",
+    "environment": "Commonly inhabits areas with open space, suitable for its flying capabilities.",
+    "strengths": "High maneuverability and the ability to avoid opportunity attacks make it a challenging target.",
+    "weaknesses": "Low hit points and poor physical strength limit its effectiveness in direct confrontations.",
+    "attacks": "Performs multiattacks with its beak and talons, dealing modest damage but with the ability to strike twice.",
+    "most_powerful_ability": "Flyby allows it to disengage easily from combat, maintaining its tactical advantage.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 12, which enables it to notice details effectively.",
+    "skills": null,
+    "additional_information": [
+        "Low Intelligence limits cognitive skills and adaptability.",
+        "Average Dexterity allows for some avoidance of attacks.",
+        "Can serve as a distraction in combat scenarios."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny flying nuisance",
+        "nimble avian creature",
+        "fast flying beast D&D",
+        "Archaeopteryx abilities",
+        "skirmisher creature in Dungeons and Dragons"
+    ]
+}

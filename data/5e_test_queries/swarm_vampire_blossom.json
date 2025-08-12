@@ -1,0 +1,25 @@
+{
+    "name": "Swarm, Vampire Blossom",
+    "queries": [
+        {
+            "query": "large plant monster that attacks weakened enemies and blends in as flower petals",
+            "variant": "big plant creature that strikes injured foes and camouflages as flower petals"
+        },
+        {
+            "query": "swift monster with psychic immunity that can sense blood nearby",
+            "variant": "fast creature immune to psychic damage that detects blood close by"
+        },
+        {
+            "query": "menacing flower swarm that deals slashing damage and has strong defensive traits",
+            "variant": "threatening cluster of flowers that inflicts slashing damage and possesses solid defense"
+        },
+        {
+            "query": "plant creature immune to many conditions with high dexterity and low strength",
+            "variant": "plant monster resistant to various conditions with excellent dexterity and poor strength"
+        },
+        {
+            "query": "swarm with abilities to reduce hit points and hide as harmless petals",
+            "variant": "swarm featuring skills to lower hp and disguise itself as innocuous petals"
+        }
+    ]
+}

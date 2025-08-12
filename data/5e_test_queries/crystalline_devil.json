@@ -1,0 +1,25 @@
+{
+    "name": "Crystalline Devil",
+    "queries": [
+        {
+            "query": "fiend that can disguise itself as a gemstone and charms enemies",
+            "variant": "fiend that disguises as a gem and charms foes"
+        },
+        {
+            "query": "creature with high hit points that attacks with crystal shards",
+            "variant": "monster with high HP that uses crystal shard attacks"
+        },
+        {
+            "query": "evil fiend living in darkness with natural armor",
+            "variant": "lawful evil fiend that dwells in darkness and has natural armor"
+        },
+        {
+            "query": "medium-sized fiend with magical resistance and stealth",
+            "variant": "medium fiend that has stealth and magic resistance"
+        },
+        {
+            "query": "gemstone appearance creature that uses Charm effects",
+            "variant": "creature that looks like a gem and uses charm abilities"
+        }
+    ]
+}

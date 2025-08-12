@@ -1,0 +1,54 @@
+{
+    "name": "Philosopher's Ghost",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 77,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "fast movement at 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "fire",
+        "ooze",
+        "ghost",
+        "persistent damage"
+    ],
+    "adjectives": [
+        "burning",
+        "chaotic",
+        "offensive",
+        "relentless"
+    ],
+    "description": "The Philosopher's Ghost is a Medium-sized ooze that emits a burning light, symbolizing profound thoughts turned chaotic. It can squeeze through narrow spaces effortlessly.",
+    "memorable": "It inflicts ongoing fire damage and can ignite foes, creating a sense of urgency in combat.",
+    "goals": "To engage in combat and inflict persistent fire damage on foes.",
+    "relations": "It may be encountered in areas where oozes and phantoms are present, possibly linked to philosophical themes or haunted locations.",
+    "environment": "It thrives in combat scenarios, especially where it can catch opponents off guard.",
+    "strengths": "Immunities to fire and poison, resistance to acid and cold, and a unique ability to move through very narrow spaces.",
+    "weaknesses": "Vulnerable to water, which can severely impair its mobility and damage capabilities.",
+    "attacks": "It performs burning touch attacks that cause immediate and ongoing fire damage, igniting targets.",
+    "most_powerful_ability": "The Persistent Burning Form allows it to deal initial and ongoing fire damage to foes that it contacts.",
+    "equipment": null,
+    "senses": "The Philosopher's Ghost has blindsight up to 60 feet, allowing it to detect nearby creatures despite its blindness.",
+    "skills": null,
+    "additional_information": [
+        "Sheds bright light in a 20-foot radius and dim light for an additional 20 feet.",
+        "Can deal double damage to structures and objects.",
+        "Movement halved if fully immersed in water until incapacitated.",
+        "Burning lesions deal extra damage until treated or healed.",
+        "Relatively low Constitution makes it vulnerable to general damage."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium ooze that causes burning damage",
+        "ghostly creature that ignites its foes",
+        "fire-attacking ooze with water vulnerability",
+        "chaotic philosopher's ghost in combat",
+        "ooze that inflicts ongoing fire damage"
+    ]
+}

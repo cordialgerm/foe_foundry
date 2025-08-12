@@ -1,0 +1,11 @@
+{
+  "Bone Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Avulzor is a large, bone-themed aberration with tactical combat abilities and commanding undead, similar in theme to the Bone Devil's skeletal and fiendish nature."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "Avulzor commands and enhances skeletons, making it closely related to the basic undead skeletons it manipulates."
+  },
+  "monster_key": "avulzor"
+}

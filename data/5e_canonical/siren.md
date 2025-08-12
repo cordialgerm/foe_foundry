@@ -1,6 +1,8 @@
 <MonsterName/>Siren</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>38</HP>
 <summary>The Siren is a medium monstrosity characterized by its enchanting presence and ability to manipulate other creatures with its song. Its role in combat often revolves around charm and distraction, allowing it to incapacitate opponents while remaining relatively resilient due to its decent mobility and access to water. With a challenge rating of 1, the Siren is designed to be a moderately difficult foe, capable of charming humanoids and giants alike, making it a formidable encounter for lower-level parties. However, its armor class of 11 and only 38 hit points indicate that it is relatively vulnerable to direct combat if opponents can resist its charm.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Siren, with its combination of charm, mobility, and moderate combat capabili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Siren
 
 *Medium* *Monstrosity*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Luring Song:** The harpy sings a magical song. Each humanoid and giant within 300 feet that can hear it makes a DC 12 Wisdom saving throw. On a failure, a creature becomes charmed until the harpy fails to use its bonus action to continue the song. While charmed by the harpy, a creature is incapacitated and ignores other harpy songs. On each of its turns, the creature moves towards the harpy by the most direct route, not avoiding opportunity attacks or hazards. The creature repeats its saving throw whenever it is damaged and before it enters damaging terrain such as lava. If a saving throw is successful or the effect ends on it, it is immune to any harpys song for the next 24 hours.
 
 
+</statblock>
 
 

@@ -1,0 +1,47 @@
+{
+    "name": "Gbahali",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "50 feet walk speed",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "ambush",
+        "stealth"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "camouflaged"
+    ],
+    "description": "The Gbahali is a huge beast with the ability to camouflage itself seamlessly into its natural surroundings, showcasing impressive physical prowess.",
+    "memorable": "Excellently skilled in stealth with its Shifting Camouflage ability allows it to blend into environments, which makes it a deadly ambusher.",
+    "goals": "Primarily driven by instinct, it seeks to hunt and defend its territory.",
+    "relations": "May be encountered alongside other large beasts in natural settings.",
+    "environment": "Typically found in natural terrains such as forests or jungles.",
+    "strengths": "High physical strength and durability, fast movement, excellent stealth capabilities.",
+    "weaknesses": "Very low Intelligence indicates poor cognitive abilities.",
+    "attacks": "Utilizes a bite attack that grapples smaller targets and two claw attacks for slashing damage.",
+    "most_powerful_ability": "Shifting Camouflage grants advantage on stealth checks in natural terrain, making it a formidable ambusher.",
+    "senses": "Has a passive perception score of 14, allowing it to detect hidden threats effectively.",
+    "skills": "Possesses high skill in Stealth with a +8 modifier, making it difficult to detect when hiding.",
+    "additional_information": [
+        "Exceptional physical presence with a Strength score of 19.",
+        "Agility and durability reflected by a Dexterity and Constitution of 14 and 19 respectively.",
+        "Can grapple Medium or smaller targets, restraining them during combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large stealthy monster that blends in",
+        "formidable beast with shifting camouflage",
+        "beast known for ambushing prey",
+        "highly agile creature with grappling attacks",
+        "huge beast with natural armor and strength"
+    ]
+}

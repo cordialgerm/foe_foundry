@@ -1,0 +1,51 @@
+{
+    "name": "Shadow Demon",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walker with flying capabilities",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "ambusher",
+        "stealthy"
+    ],
+    "adjectives": [
+        "shadowy",
+        "chaotic",
+        "malevolent"
+    ],
+    "description": "The Shadow Demon embodies chaos and evil, moving with agility and often serving as a harbinger of darkness. It has a shadowy form, blending into dim light and using its abilities to manipulate and ambush.",
+    "memorable": "Possesses the unique ability to replace a target's shadow, allowing it to hide effectively while sharing damage.",
+    "goals": "To spread chaos and darkness, often by manipulating others.",
+    "relations": "Often found serving more powerful fiends or acting as a servant to dark forces.",
+    "environment": "Typically lurks in dark, shadowy areas or dimly lit environments.",
+    "strengths": "High Dexterity and Charisma allow for effective stealth and manipulation; immune to several damage types.",
+    "weaknesses": "Vulnerable to radiant damage, which can significantly impede its combat effectiveness.",
+    "attacks": "Uses claw attacks to deal significant cold damage in close combat, and employs various shadow manipulation abilities.",
+    "most_powerful_ability": "The ability to replace a target's shadow, allowing it to move undetected while sharing damage.",
+    "equipment": null,
+    "senses": "Can see in darkness up to 120 feet and has telepathy, enhancing its stealthy tactics.",
+    "skills": "Proficient in Stealth, allowing it to excel at ambush tactics.",
+    "additional_information": [
+        "Incorporeal movement allows passing through objects and creatures.",
+        "Light Sensitivity imposes disadvantages in bright light.",
+        "Immune to conditions like charmed and restrained, making it hard to control."
+    ],
+    "damage_types": [
+        "necrotic",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy fiend that ambushes in darkness",
+        "chaotic evil demon with stealth abilities",
+        "fiend that can move through shadows",
+        "creature that is immune to necrotic damage",
+        "demon that can replace shadows in battle"
+    ]
+}

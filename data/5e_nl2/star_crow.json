@@ -1,0 +1,55 @@
+{
+    "name": "Star Crow",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Tiny",
+    "hp": 12,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "20 ft. walking, 60 ft. flying (hover)",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "psychic",
+        "flying"
+    ],
+    "adjectives": [
+        "tiny",
+        "arcane",
+        "blinding",
+        "psychic",
+        "stealthy"
+    ],
+    "description": "The Star Crow is a tiny aberration with unsettling features and arcane abilities. It has a unique appearance and emits bright light, illuminating its surroundings.",
+    "memorable": "Its ability to attach to opponents and share disorienting memories makes it a unique threat.",
+    "goals": "To disrupt foes and manipulate the battlefield with its psychic abilities.",
+    "relations": "Can be encountered alongside other aberrations or creatures drawn to psychic energy.",
+    "environment": "Typically found in areas where psychic phenomena occur, such as abandoned ruins or forgotten temples.",
+    "strengths": "Possesses resistance to charmed and stunned conditions, and excellent mobility due to flying.",
+    "weaknesses": "Low Strength and Intelligence, making it vulnerable to physical attacks.",
+    "attacks": "Can deal radiant damage and attach to a target, causing psychic damage and potential stunning.",
+    "most_powerful_ability": "Thought Share, which can stun targets and disrupt their actions.",
+    "equipment": null,
+    "senses": "It has truesight out to 120 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Stealthy, with a good Stealth skill modifier, making it difficult to detect.",
+    "additional_information": [
+        "Emits bright light, affecting stealth in its vicinity.",
+        "Has advantage on saving throws against spells that alter its form.",
+        "Its Blinding Burst can incapacitate multiple opponents, creating strategic advantages.",
+        "Can detach from targets easily, making it a versatile threat in battle.",
+        "Low hit points make it vulnerable despite its disruptive abilities."
+    ],
+    "damage_types": [
+        "radiant",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny aberration with psychic attacks",
+        "flying creature that blinds opponents",
+        "star crow psychic abilities and combat",
+        "creature that attaches and disrupts foes",
+        "tiny monster with truesight and radiant touch"
+    ]
+}

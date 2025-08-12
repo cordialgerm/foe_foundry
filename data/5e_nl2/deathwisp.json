@@ -1,0 +1,54 @@
+{
+    "name": "Deathwisp",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "60 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ghost",
+        "stealth",
+        "necrotic"
+    ],
+    "adjectives": [
+        "haunting",
+        "elusive",
+        "dangerous"
+    ],
+    "description": "The Deathwisp is a medium-sized undead creature known for its ethereal and haunting appearance, flickering in and out of existence. It wields a spectral weapon called the Ghostly Pike, striking with both force and necrotic damage.",
+    "memorable": "Its ability to create specters from the spirits of the violently dead makes the Deathwisp a terrifying presence on the battlefield.",
+    "goals": "To haunt and drain the life of its victims, while commanding the spirits it has collected.",
+    "relations": "Often encountered with other undead creatures or spirits, seeking to bolster its numbers.",
+    "environment": "Typically found in dark or shadowy locations, often avoiding direct sunlight.",
+    "strengths": "Exceptional Dexterity and Charisma allow it to move stealthily and manipulate its environment skillfully.",
+    "weaknesses": "Vulnerable to radiant damage, especially in sunlight, where its effectiveness is significantly reduced.",
+    "attacks": "Utilizes multiattack capabilities with its Ghostly Pike and Life Drain abilities, dealing both physical and necrotic damage.",
+    "most_powerful_ability": "Can create up to twelve specters from recently deceased humanoids, significantly augmenting its combat power.",
+    "equipment": null,
+    "senses": "Possesses darkvision and a passive Perception of 16, allowing it to detect hidden threats accurately.",
+    "skills": "Highly skilled in Stealth and Perception, making it adept at ambush tactics.",
+    "additional_information": [
+        "Immunities to necrotic and poison damage.",
+        "Resistant to multiple damage types including acid, cold, fire, lightning, and thunder.",
+        "Incorporeal movement allows it to pass through solid objects.",
+        "Does not require air, food, drink, or sleep.",
+        "Susceptible to sunlight which imposes disadvantages on attack and perception."
+    ],
+    "damage_types": [
+        "necrotic",
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead stealthy creature with life drain",
+        "medium ghost that creates specters",
+        "haunting creature that thrives in darkness",
+        "undead monster with high dexterity and charisma",
+        "ghostly creature that suffers in sunlight"
+    ]
+}

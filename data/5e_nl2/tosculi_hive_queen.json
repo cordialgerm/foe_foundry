@@ -1,0 +1,51 @@
+{
+    "name": "Tosculi Hive Queen",
+    "creature_type": "Monstrosity",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 189,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 60 ft., fly 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "Hive Queen",
+        "Monstrosity",
+        "Leader"
+    ],
+    "adjectives": [
+        "formidable",
+        "sinister"
+    ],
+    "description": "The Tosculi Hive Queen is a large, sinister monstrosity characterized by its formidable appearance, sharp scimitars, and a deadly stinger.",
+    "memorable": "Able to implant eggs in incapacitated creatures, leading to their death after 30 days.",
+    "goals": "To lead her hive and dominate opponents through combat strategy and debilitating effects.",
+    "relations": "Commands various Tosculi underlings and can communicate telepathically with them.",
+    "environment": "Typically found in dark, hidden hive locations, often in underground lairs.",
+    "strengths": "Immunity to poison damage, good Dexterity for evasion, and the ability to paralyze enemies.",
+    "weaknesses": "Relatively vulnerable to attacks that bypass its immunities.",
+    "attacks": "Can make multiple scimitar attacks and a highly damaging stinger attack that also poisons and paralyzes opponents.",
+    "most_powerful_ability": "Implanting an egg in a target that leads to a gruesome death when larval Tosculi hatches.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Notably perceptive with a passive perception of 17.",
+    "additional_information": [
+        "Can fly and reposition strategically in battle.",
+        "Legendary Resistance to succeed on failed saving throws.",
+        "Knows the direction and distance to hive members.",
+        "Can create a blinding cloud with Glitter Dust.",
+        "Highly tactical with an above-average intelligence."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large sinister hive leader",
+        "monster that implants deadly eggs",
+        "creature with powerful poison and paralysis",
+        "monstrosity that commands a hive",
+        "quick and agile queen creature"
+    ]
+}

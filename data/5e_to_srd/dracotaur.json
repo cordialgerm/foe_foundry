@@ -1,0 +1,7 @@
+{
+  "Adult Blue Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Dracotaur shares the dragon type and lightning breath ability with the Adult Blue Dragon."
+  },
+  "monster_key": "dracotaur"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Chupacabra",
+    "queries": [
+        {
+            "query": "small monster that drains blood and can paralyze foes",
+            "variant": "small creature that drains blood and can paralyze enemies"
+        },
+        {
+            "query": "stealthy creature with sharp teeth that emits bad smell",
+            "variant": "sneaky creature with sharp teeth that gives off a foul odor"
+        },
+        {
+            "query": "predatory monster with keen senses living in darkness",
+            "variant": "predatory creature with sharp senses living in the dark"
+        },
+        {
+            "query": "fast jumper with strong bite that attacks from stealth",
+            "variant": "quick leaper with powerful bite that strikes from hiding"
+        },
+        {
+            "query": "creature with darkvision and ability to poison nearby enemies",
+            "variant": "monster with darkvision that can poison foes close by"
+        }
+    ]
+}

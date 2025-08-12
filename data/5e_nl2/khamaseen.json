@@ -1,0 +1,52 @@
+{
+    "name": "Khamaseen",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 30 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "dust",
+        "lightning"
+    ],
+    "adjectives": [
+        "tiny",
+        "elusive",
+        "lightning-infused"
+    ],
+    "description": "The Khamaseen is a tiny elemental creature infused with dust and lightning, capable of flying. It is surrounded by a cloud of swirling dust and possesses a glowing, static energy.",
+    "memorable": "Its abilities to obscure vision and incapacitate foes with choking dust make it a unique threat.",
+    "goals": "To disrupt and confuse opponents in combat using dust-related abilities.",
+    "relations": "May be encountered alongside other dust or lightning-themed creatures.",
+    "environment": "Commonly found in arid or stormy areas where dust and lightning may coexist.",
+    "strengths": "Has resistance to various forms of nonmagical damage and can incapacitate enemies.",
+    "weaknesses": "Lacks offensive spells and has low intelligence, limiting strategic options.",
+    "attacks": "Uses a melee slam attack that deals both bludgeoning and lightning damage. Can create choking clouds of dust to incapacitate nearby creatures.",
+    "most_powerful_ability": "Choking Cloud creates a hazardous area that can incapacitate opponents for 1 minute.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has a passive perception score of 10, but does not excel at awareness.",
+    "additional_information": [
+        "Elemental Nature allows it to exist without air, food, drink, or sleep.",
+        "Immunities to several conditions such as exhaustion and paralysis.",
+        "Can deal additional damage to foes wearing metal armor.",
+        "Stealthy due to condition immunities, which can surprise opponents.",
+        "Can potentially hinder multiple foes at once with its cloud abilities."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny elemental creature with lightning powers",
+        "dust elemental that can fly and incapacitate enemies",
+        "creature that disrupts opponents with choking dust",
+        "stealthy elemental with electric attacks",
+        "Khamaseen abilities and environmental presence"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Erinyes",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 153,
+    "ac": 18,
+    "srd": true,
+    "cr": "12",
+    "movement": "30 ft. walking and 60 ft. flying",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "heavenly",
+        "aggressive"
+    ],
+    "adjectives": [
+        "fearsome",
+        "deceptive",
+        "ruthless",
+        "magical",
+        "warrior"
+    ],
+    "description": "The Erinyes resembles a dark, fallen angel with large black-feathered wings and dark armor stained with the blood of enemies.",
+    "memorable": "Erinyes are deadly combatants that blend swordplay with poison and deception.",
+    "goals": "To hunt down defiers of infernal contracts and serve powerful devils.",
+    "relations": "Often allied with other devils and fiends, particularly in their roles as enforcers and punishers.",
+    "environment": "The Nine Hells and other infernal realms.",
+    "strengths": "Possesses high physical and magical defenses, resistance to multiple damage types, and lethal combat abilities.",
+    "weaknesses": "Vulnerable to radiant damage.",
+    "attacks": "Uses a longsword and longbow for melee and ranged attacks, both dealing slashing and poison damage.",
+    "most_powerful_ability": "Ability to entangle foes with a lasso, limiting their movement.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through illusions.",
+    "skills": "Skilled in Athletics, Insight, and Perception showing its physical prowess and keen awareness.",
+    "additional_information": [
+        "Immunities to fire and poison damage",
+        "Can parry melee attacks to increase its AC",
+        "Magic Resistance for better defense against spells",
+        "Multiattack allowing three attacks per turn",
+        "Can poison enemies with its weapon attacks"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark angel with wings and armor",
+        "fiendish warrior from the Nine Hells",
+        "devilish enforcer with magical abilities",
+        "lethal combatant that uses poison in attacks",
+        "entity that entangles enemies with a lasso"
+    ]
+}

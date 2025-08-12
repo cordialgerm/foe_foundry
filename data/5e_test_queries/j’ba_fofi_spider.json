@@ -1,0 +1,25 @@
+{
+    "name": "J\u2019ba Fofi Spider",
+    "queries": [
+        {
+            "query": "large spider that hunts in forests with stealthy tactics",
+            "variant": "big spider that uses stealthy tactics to hunt in wooded areas"
+        },
+        {
+            "query": "poisonous spider with strong melee attacks that creates webs",
+            "variant": "venomous spider that has powerful melee attacks and can weave webs"
+        },
+        {
+            "query": "creature with high armor class and blindsight that lives in woods",
+            "variant": "animal with great armor class and blindsight that inhabits forests"
+        },
+        {
+            "query": "stealthy forest creature with a paralyzing bite attack",
+            "variant": "sneaky woodland beast that has a bite attack causing paralysis"
+        },
+        {
+            "query": "J\u2019ba Fofi Spider environment and combat abilities",
+            "variant": "habitat and fighting skills of the J\u2019ba Fofi spider"
+        }
+    ]
+}

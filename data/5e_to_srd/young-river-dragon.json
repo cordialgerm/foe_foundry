@@ -1,0 +1,11 @@
+{
+  "Young Blue Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons with strong aquatic and air mobility and a powerful breath weapon, though the Young River Dragon uses water-based abilities."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aquatic dragons with strong ties to water environments and powerful area attacks involving water."
+  },
+  "monster_key": "young-river-dragon"
+}

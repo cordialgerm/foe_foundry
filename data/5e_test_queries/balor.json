@@ -1,0 +1,25 @@
+{
+    "name": "Balor",
+    "queries": [
+        {
+            "query": "towering demon with fire powers that commands lesser demons",
+            "variant": "tall demon with powers of fire who controls lesser demons"
+        },
+        {
+            "query": "huge fiend with lightning-infused sword and fiery whip",
+            "variant": "large fiend wielding a sword that deals lightning damage and a whip of fire"
+        },
+        {
+            "query": "demonic creature with a death explosion ability and high hit points",
+            "variant": "evil creature with an explosive death skill and significant health"
+        },
+        {
+            "query": "chaotic evil fiend that can teleport and has a fire aura",
+            "variant": "evil chaotic fiend capable of teleporting and possessing a fiery aura"
+        },
+        {
+            "query": "monster with high strength and magical attack resistance in the abyss",
+            "variant": "creature with strong physical abilities and immunity to magical attacks from the abyss"
+        }
+    ]
+}

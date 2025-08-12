@@ -1,0 +1,53 @@
+{
+    "name": "Cueyatl",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 21,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking, 20 feet climbing, 30 feet swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "stealthy",
+        "jungle"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "poisonous",
+        "swift"
+    ],
+    "description": "The Cueyatl is a small humanoid creature with adaptations for life in jungle environments, utilizing its natural camouflage for stealth.",
+    "memorable": "Noteworthy for its venomous spear attacks and ability to escape grapples easily.",
+    "goals": "Typically ambushes or outmaneuvers opponents in its jungle habitat.",
+    "relations": "May be allied with other jungle-dwelling creatures or serve a larger evil entity.",
+    "environment": "Jungle terrains or swamps.",
+    "strengths": "Skilled in stealth and mobility, can breathe both in water and air.",
+    "weaknesses": "Low armor class and hit points make it somewhat vulnerable to attacks.",
+    "attacks": "Attacks with a spear that inflicts both piercing and poison damage.",
+    "most_powerful_ability": "Can utilize jungle camouflage for higher stealth effectiveness in its native terrain.",
+    "equipment": "Spear",
+    "senses": "Possesses darkvision out to 60 feet, allowing it to see in dim light.",
+    "skills": "Proficient in stealth, allowing for a total of +3 on stealth checks.",
+    "additional_information": [
+        "Amphibious, can thrive in both aquatic and terrestrial environments.",
+        "Has the slippery ability for escaping grapples.",
+        "Long jump up to 20 feet and high jump up to 10 feet.",
+        "Uses its environment strategically to gain combat advantages.",
+        "Not especially strong but agile and cunning."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small jungle ambush creature with poison",
+        "stealthy humanoid that attacks with spear",
+        "amphibious creature in jungle environments",
+        "cunning humanoid that excels in stealth",
+        "quick jungle dweller with slippery escape"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge plant creatures with regenerative abilities and a tough, resilient nature."
+  },
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a plant-based creature that uses acidic or harmful substances to damage foes."
+  },
+  "monster_key": "fleshdreg"
+}

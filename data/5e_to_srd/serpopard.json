@@ -1,0 +1,11 @@
+{
+  "Panther": {
+    "relation": "close_cousins",
+    "explanation": "The Serpopard is a large, stealthy ambush predator with multiattack similar to a big cat like the Panther."
+  },
+  "Giant Crocodile": {
+    "relation": "conceptually_similar",
+    "explanation": "The Serpopard inhabits coastal and swampy areas and uses ambush tactics like the Giant Crocodile."
+  },
+  "monster_key": "serpopard"
+}

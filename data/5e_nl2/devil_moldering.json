@@ -1,0 +1,51 @@
+{
+    "name": "Moldering Devil",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking, 40 feet flying with limitations",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "corrupting"
+    ],
+    "adjectives": [
+        "moldering",
+        "corrupt",
+        "poisonous"
+    ],
+    "description": "The Moldering Devil is a small fiend with a decaying, insidious appearance, capable of corrupting food and water around it. It can fly but must land safely on solid surfaces.",
+    "memorable": "Its ability to render food and drink poisonous makes it a dangerous adversary, especially in survival situations.",
+    "goals": "To corrupt food and drink, creating hazardous environments for unsuspecting creatures.",
+    "relations": "It may be encountered alongside other fiends or in infernal domains.",
+    "environment": "Often found in dark, corrupted areas where it can take advantage of its toxic abilities.",
+    "strengths": "Immunity to fire and poison damage, and the ability to create hazardous conditions.",
+    "weaknesses": "Low Charisma makes it ineffective in social interactions.",
+    "attacks": "It attacks with a bite that deals piercing and necrotic damage.",
+    "most_powerful_ability": "Touch of Rot - instantly decays food and drink, poisoning those who consume it.",
+    "equipment": null,
+    "senses": "Possesses Devil's Sight, allowing it to see in magical darkness as if it were dim light.",
+    "skills": "Has a perceptive advantage with a +2 to Perception, enhancing its awareness.",
+    "additional_information": [
+        "Can fly up to 40 feet on its turn.",
+        "Corruption spreads upon its demise, affecting nearby food and water.",
+        "Its presence is marked by a decay in nearby consumables."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "poisonous flying fiend with decaying touch",
+        "small devil that corrupts food and drink",
+        "moldering fiend with devil's sight",
+        "hazardous poison devil in the darkness",
+        "creature that poisons food and has necrotic bites"
+    ]
+}

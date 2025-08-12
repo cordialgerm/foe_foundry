@@ -1,0 +1,25 @@
+{
+    "name": "Folk of Leng",
+    "queries": [
+        {
+            "query": "humanoid with necrotic immunity and cold resistance",
+            "variant": "humanoid that is resistant to cold and immune to necrotic damage"
+        },
+        {
+            "query": "cunning magical creature that can shift between planes",
+            "variant": "smart magic being that shifts between the Material and Ethereal planes"
+        },
+        {
+            "query": "creature with psychic weapon attacks and high Charisma",
+            "variant": "being with psychic damage weapon strikes and exceptional Charisma"
+        },
+        {
+            "query": "creature that can resurrect unless killed by radiant damage",
+            "variant": "being that comes back to life unless destroyed by radiant damage"
+        },
+        {
+            "query": "agile humanoid that excels in deception and arcana",
+            "variant": "swift humanoid skilled in arcana and deception"
+        }
+    ]
+}

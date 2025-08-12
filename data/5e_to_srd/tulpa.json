@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Tulpa is an incorporeal undead with necrotic and psychic traits and a fear aura, similar to a Wraith's incorporeal nature and frightening presence."
+  },
+  "Specter": {
+    "relation": "mechanically_similar",
+    "explanation": "The Tulpa's ability to reform and its connection to its creator resemble the Specter's nature as a haunting undead tied to a specific individual."
+  },
+  "monster_key": "tulpa"
+}

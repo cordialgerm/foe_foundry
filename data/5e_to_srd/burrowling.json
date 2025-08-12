@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "Small, agile underground humanoid with pack tactics and similar combat style."
+  },
+  "monster_key": "burrowling"
+}

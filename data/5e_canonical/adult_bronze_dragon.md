@@ -1,6 +1,8 @@
 <MonsterName/>Adult Bronze Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>212</HP>
 <summary>The Adult Bronze Dragon is a noble and majestic creature with shimmering, bronze-colored scales and proud, crest-like horns. These dragons are often found near coastlines or large bodies of water, where they watch over the seas and the creatures that inhabit them. Bronze Dragons are known for their sense of justice and duty, often aligning themselves with good causes or defending coastal communities from threats. Their breath weapon is a devastating blast of electricity, capable of stunning or outright destroying their enemies. Bronze Dragons are skilled swimmers and can even manipulate water, summoning powerful tidal waves or manipulating storms.</summary>
 
 <summary>The Adult Bronze Dragon is a formidable and wise creature within the realm of Dungeons & Dragons 5e. This *Huge* Dragon stands as a powerful adversary or a potential ally, known for its ability to manipulate the elements, particularly the waters and storms. With an Armor Class of 18 and a substantial Hit Points total of 287, it can withstand significant damage in combat, making it a very tough opponent. The dragon has a Challenge Rating of 18, denoting it as a high-level threat capable of engaging well-prepared adventurers. Its primary strengths include a variety of powerful melee attacks, formidable breath weapons, and impressive innate spellcasting abilities, while its weaknesses may lie in its reliance on maintaining a higher Armor Class with its Legendary Resistance. </summary>
@@ -65,6 +67,7 @@ Overall, the Adult Bronze Dragon is a complex foe with great battlefield control
 
 Source: 5e_srd
 
+<statblock>
 # Adult Bronze Dragon (Metallic)
 
 *Huge dragon, lawful good*
@@ -125,7 +128,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6+7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6+7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -133,6 +137,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Bronze Dragon
 
 *Huge* *Dragon*
@@ -185,6 +190,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 18 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 21 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Foresight (Costs 2 Actions):** The dragon focuses on the many sprawling futures before it and predicts what will come next. Attacks against it are made with disadvantage until the start of its next turn.
+</statblock>
 
 
 
@@ -193,6 +199,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Bronze Dragon
 
 *Huge dragon*
@@ -244,5 +251,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

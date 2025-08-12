@@ -1,0 +1,25 @@
+{
+    "name": "Dread Troll",
+    "queries": [
+        {
+            "query": "large giant with regenerative abilities and a terrifying attack",
+            "variant": "giant creature that has regeneration and a fearsome attack"
+        },
+        {
+            "query": "monster that controls severed limbs and has a high armor class",
+            "variant": "creature that can control its severed limbs and has strong armor"
+        },
+        {
+            "query": "tough troll that is vulnerable to fire and has a keen sense of smell",
+            "variant": "durable troll that can be harmed by fire and has an excellent smell"
+        },
+        {
+            "query": "dreadful troll with strong physical combat skills and high hit points",
+            "variant": "fearsome troll that excels in melee and has a lot of health"
+        },
+        {
+            "query": "giant creature with multiple attacks and a unique limb control ability",
+            "variant": "huge creature that can attack multiple times and control its limbs"
+        }
+    ]
+}

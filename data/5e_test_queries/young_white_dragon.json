@@ -1,0 +1,25 @@
+{
+    "name": "Young White Dragon",
+    "queries": [
+        {
+            "query": "large dragon with icy breath that roams snowy mountains",
+            "variant": "large icy dragon that breathes cold living in the snow"
+        },
+        {
+            "query": "frozen territory dragon known for its cold-based abilities",
+            "variant": "dragon of icy regions that uses cold powers"
+        },
+        {
+            "query": "territorial dragon with frost scales and deadly breath attack",
+            "variant": "aggressive dragon with freezing scales and dangerous breath"
+        },
+        {
+            "query": "cold immune dragon that can fly and swim well",
+            "variant": "flying swimming dragon immune to cold damage"
+        },
+        {
+            "query": "young dragon that blends into icy environments and attacks fiercely",
+            "variant": "young dragon that camouflages in ice and is aggressive"
+        }
+    ]
+}

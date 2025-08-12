@@ -1,0 +1,53 @@
+{
+    "name": "Culicoid",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 190,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "fly 60 ft., hover, walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "poison",
+        "flying",
+        "multiattack"
+    ],
+    "adjectives": [
+        "aggressive",
+        "formidable",
+        "chaotic"
+    ],
+    "description": "The Culicoid is a large fiend notable for its chaotic evil nature, equipped with a powerful proboscis and needle claws. It has a robust build and is characterized by its aggressive appearance, emphasizing its dangerous capabilities in combat.",
+    "memorable": "Its ability to transform into a swarm of mosquitos when reduced to zero hit points allows it to sustain life and recover.",
+    "goals": "To hunt and track creatures with blood, utilizing its chaotic nature in combat.",
+    "relations": "Related to other fiends and mosquito-like creatures; can communicate with them.",
+    "environment": "Typically found in dark, humid locations where blood-feeding creatures thrive.",
+    "strengths": "Possesses immunity to poison and benefits from magic resistance, making it resilient against magical attacks.",
+    "weaknesses": "Limited in magical attacks and has low Intelligence and Charisma, which may hinder its non-combat interactions.",
+    "attacks": "Employs a dangerous multiattack strategy, utilizing its proboscis and needle claws to inflict piercing and poison damage.",
+    "most_powerful_ability": "Cloud of Mosquitos allows it to potentially reform after being defeated, making it a persistent threat.",
+    "equipment": null,
+    "senses": "Has a passive perception of 16, allowing it to notice hidden creatures effectively.",
+    "skills": "Proficient in acrobatics, perception, and stealth, enhancing its capabilities in combat and tracking.",
+    "additional_information": [
+        "Blood Sense helps it track bleeding creatures within 60 feet.",
+        "Mosquito-Proof ability prevents blood draining attacks from similar creatures.",
+        "Can communicate with mosquito-like creatures.",
+        "Grappling attacks grant it an advantage over its foes.",
+        "Resilient due to high Constitution and multiattack capabilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fiend that can turn into mosquitos",
+        "aggressive flying creature with blood sense",
+        "monster that inflicts poison damage",
+        "chaotic evil fiend known for its resilience",
+        "creature that grapples with needle claws"
+    ]
+}

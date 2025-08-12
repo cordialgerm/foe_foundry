@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cunning, stealthy creatures with invisibility and charm abilities."
+  },
+  "Cat": {
+    "relation": "close_cousins",
+    "explanation": "Kot Bayun shares feline traits like stealth, charm, and healing purr with a cat."
+  },
+  "monster_key": "kot-bayun"
+}

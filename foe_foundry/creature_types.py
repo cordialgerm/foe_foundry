@@ -22,6 +22,13 @@ class CreatureType(StrEnum):
     Plant = auto()
     Undead = auto()
 
+    @staticmethod
+    def parse(creature_type: str) -> CreatureType:
+        try:
+            return CreatureType[creature_type.title()]
+        except KeyError:
+            raise ValueError(f"Unknown creature type: {creature_type}")
+
     @property
     def is_living(self) -> bool:
         return self in {
@@ -101,3 +108,7 @@ class CreatureType(StrEnum):
         exclusions = set(creature_type)
         all = {c for c in CreatureType}
         return all - exclusions
+
+    @staticmethod
+    def parse(ct: str) -> CreatureType:
+        return CreatureType(ct.lower())

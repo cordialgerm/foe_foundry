@@ -1,0 +1,7 @@
+{
+  "Druid": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a direct representation of the Druid class with shapeshifting and nature spellcasting abilities."
+  },
+  "monster_key": "druid"
+}

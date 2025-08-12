@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are nature-oriented fey humanoids connected to forests with spellcasting abilities."
+  },
+  "Druid": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares nature magic and connection to plants and animals, though druids are spellcasters rather than humanoid creatures."
+  },
+  "monster_key": "woodwose"
+}

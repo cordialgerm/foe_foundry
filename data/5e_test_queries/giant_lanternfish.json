@@ -1,0 +1,25 @@
+{
+    "name": "Giant Lanternfish",
+    "queries": [
+        {
+            "query": "large fish monster that uses magic and has claws",
+            "variant": "large magical fish creature with claws and spell abilities"
+        },
+        {
+            "query": "chaotic evil creature with high spellcasting ability and darkvision",
+            "variant": "evil chaotic monster with strong spellcasting skills and darkvision"
+        },
+        {
+            "query": "deep-sea monster that can charm and teleport",
+            "variant": "underwater creature that can use teleportation and charm effects"
+        },
+        {
+            "query": "strong fish creature that can manipulate others with spells",
+            "variant": "powerful fish monster capable of spell manipulation and charming others"
+        },
+        {
+            "query": "monster with deception skills that lives underwater",
+            "variant": "creature that excels in deception and exists in aquatic environments"
+        }
+    ]
+}

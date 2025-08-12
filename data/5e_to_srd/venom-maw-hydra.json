@@ -1,0 +1,7 @@
+{
+  "Hydra": {
+    "relation": "almost_identical",
+    "explanation": "A huge multi-headed hydra with regeneration and acid attacks closely matches the Venom Maw Hydra."
+  },
+  "monster_key": "venom-maw-hydra"
+}

@@ -1,0 +1,15 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge plant creatures with high hit points and natural armor found in swampy or overgrown areas."
+  },
+  "Zombie": {
+    "relation": "mechanically_similar",
+    "explanation": "The Drudge Pitcher creates and controls zombie minions from slain foes, similar to Zombies."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both manipulate undead minions and have a predatory, controlling nature."
+  },
+  "monster_key": "drudge-pitcher"
+}

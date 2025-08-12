@@ -1,0 +1,11 @@
+{
+  "Behir": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, serpentine monstrosities with multiattack features including bite, claw, and tail strikes."
+  },
+  "Chuul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aquatic monstrosities with tentacle-like features and a dangerous presence in aquatic environments."
+  },
+  "monster_key": "huecambra"
+}

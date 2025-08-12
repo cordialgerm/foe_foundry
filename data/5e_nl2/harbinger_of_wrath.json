@@ -1,0 +1,55 @@
+{
+    "name": "Harbinger of Wrath",
+    "creature_type": "Construct",
+    "alignment": "chaotic evil",
+    "size": "Gargantuan",
+    "hp": 297,
+    "ac": 21,
+    "srd": false,
+    "cr": "20",
+    "movement": "50 feet walk speed",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "melee",
+        "gargantuan",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "immense",
+        "sluggish"
+    ],
+    "description": "The Harbinger of Wrath is a gargantuan construct with adamantine weapons and a chaotic evil nature. It boasts a formidable presence with a high armor class and hit points, making it a powerful melee combatant.",
+    "memorable": "Its ability to drain life and impale foes adds to its fearsome reputation.",
+    "goals": "Typically seeks to dominate opponents and drain the life from foes.",
+    "relations": "Often encountered alongside other constructs or evil entities.",
+    "environment": "Typically found in dark, foreboding places or locations controlled by evil wizards or creators.",
+    "strengths": "High Strength and Constitution scores lead to devastating melee attacks and durability.",
+    "weaknesses": "Low Dexterity results in slower movements and less agility.",
+    "attacks": "Utilizes slam attacks with significant bludgeoning damage and can impale grappling targets.",
+    "most_powerful_ability": "The Drain Life ability allows it to sap life from impaled foes, potentially absorbing their souls.",
+    "equipment": "Wields adamantine weapons capable of bypassing many forms of damage resistance.",
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through illusions and magical darkness.",
+    "skills": null,
+    "additional_information": [
+        "Immunities to cold, fire, poison, psychic, and nonmagical attacks not made with adamantine weapons.",
+        "Immutable Form grants immunity to forms of alteration.",
+        "Legendary Resistance allows it to succeed on failed saving throws.",
+        "Magic Resistance provides advantage on saving throws against spells and magical effects.",
+        "Can use Spike Volley to control the battlefield with area damage."
+    ],
+    "damage_types": [
+        "necrotic",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan construct with adamantine weapons",
+        "chaotic evil melee combatant",
+        "monster that drains life and impales foes",
+        "formidable construct with truesight",
+        "creature with magical resistance and life-draining abilities"
+    ]
+}

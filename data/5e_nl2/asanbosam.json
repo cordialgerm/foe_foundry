@@ -1,0 +1,51 @@
+{
+    "name": "Asanbosam",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 102,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 15 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ambush",
+        "disease",
+        "predator"
+    ],
+    "adjectives": [
+        "sinister",
+        "formidable",
+        "cunning"
+    ],
+    "description": "The Asanbosam is a large aberration known for its chaotic evil nature, possessing strong physical capabilities, a dangerous disease-spreading bite, and the ability to climb and stealth for ambush tactics.",
+    "memorable": "Its ability to inflict a debilitating disease with its bite and claws, combined with its stealthy ambush tactics, makes the Asanbosam a formidable and fearsome opponent.",
+    "goals": "The Asanbosam typically aims to ambush and incapacitate its prey, utilizing its climbing ability and stealth to surprise foes.",
+    "relations": "It may be encountered alone or in places where other chaotic creatures lurk, possibly serving alongside other monstrous aberrations.",
+    "environment": "Asanbosam can often be found in wooded or treed areas, utilizing its Spider Climb ability to maneuver among branches and foliage.",
+    "strengths": "Strong melee attack capabilities combined with the ability to impose debilitation through disease.",
+    "weaknesses": "It has low Charisma, making social interactions and charm a significant shortcoming.",
+    "attacks": "The Asanbosam uses its Bite and Claws attacks in combat, dealing significant piercing damage and potentially infecting foes with a debilitating disease.",
+    "most_powerful_ability": "Spider Climb, which allows it to traverse difficult surfaces and ambush foes from unexpected angles.",
+    "senses": "The Asanbosam has darkvision up to 60 feet and a passive Perception of 13, enabling it to spot hidden threats even in darkness.",
+    "skills": "It excels in Acrobatics, Stealth, and has good perception capabilities, allowing it to move undetected and notice hidden targets.",
+    "additional_information": [
+        "Utilizes ambush tactics effectively in combat.",
+        "Can grapple targets with its Claws, imposing restraint.",
+        "Infected creatures suffer from a condition that reduces hit points.",
+        "Grappled targets cannot escape easily unless the grapple is broken.",
+        "Has a bonus action to evade attacks when within a tree."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning disease-spreading predator",
+        "stealthy ambush monster",
+        "fearsome large aberration",
+        "tree-climbing ambush creature",
+        "infectious biting monster"
+    ]
+}

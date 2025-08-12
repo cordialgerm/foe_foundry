@@ -1,0 +1,50 @@
+{
+    "name": "Ychen Bannog",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 186,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "tank",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "devastating",
+        "gargantuan"
+    ],
+    "description": "The Ychen Bannog is a gargantuan beast noted for its impressive bulk and raw power, featuring a natural armor that contributes to its formidable presence in battle.",
+    "memorable": "Its ability to deal double damage to structures makes it a terrifying force in urban or fortified environments.",
+    "goals": "To overpower opponents and dominate the battlefield through sheer force.",
+    "relations": "Can be encountered alongside other large beasts or as a guardian of territory.",
+    "environment": "Typically found in open terrains or areas where it can utilize its immense size and power.",
+    "strengths": "Possesses exceptional Strength and Constitution, making it capable of dealing significant melee damage and enduring many hits.",
+    "weaknesses": "Low Dexterity makes it somewhat predictable in movement and actions.",
+    "attacks": "Utilizes powerful Gore and Stomp attacks with significant piercing and bludgeoning damage, respectively.",
+    "most_powerful_ability": "The Deafening Bellow can incapacitate foes within range with thunder damage and deafening effects.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 11, indicating basic awareness but not particularly keen senses.",
+    "skills": null,
+    "additional_information": [
+        "Can deal double damage to structures due to Siege Monster ability.",
+        "Multiattack enables it to strike multiple times in a single action.",
+        "The Overrun ability can trample over smaller foes.",
+        "DC saving throws for effects like being knocked prone add an extra layer of battlefield control.",
+        "Lacks intelligence, making it incapable of strategic thinking."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan beast with powerful melee attacks",
+        "massive creature that deals double damage to buildings",
+        "monster that can trample foes and bellow thunder",
+        "devastating brawler known for ground-shaking attacks",
+        "formidable tank creature with high hit points"
+    ]
+}

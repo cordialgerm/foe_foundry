@@ -1,0 +1,25 @@
+{
+    "name": "Tosculi Warrior",
+    "queries": [
+        {
+            "query": "small humanoid with flight abilities that has a paralyzing attack",
+            "variant": "small creature that can fly and has a poison paralysis attack"
+        },
+        {
+            "query": "night creature with hive connection that is skilled in melee combat",
+            "variant": "creature that is connected to a hive and excels in melee combat during night"
+        },
+        {
+            "query": "lawful evil humanoid that deals slashing damage and uses tactics",
+            "variant": "humanoid with lawful evil nature that uses tactics and deals slashing damage"
+        },
+        {
+            "query": "agile warrior with special abilities in cooperative battles",
+            "variant": "quick fighter with unique abilities for teamwork in battles"
+        },
+        {
+            "query": "combatant that shares space with allies and locates hive queen",
+            "variant": "fighter that can share space with friends and senses hive queen location"
+        }
+    ]
+}

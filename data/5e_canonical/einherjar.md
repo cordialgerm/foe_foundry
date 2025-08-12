@@ -1,6 +1,8 @@
 <MonsterName/>Einherjar</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>18</AC>
+<HP/>119</HP>
 <summary>The Einherjar is a medium humanoid that embodies chaotic neutrality, drawing upon celestial powers for strength and resilience in combat. With a robust armor class of 18, it is well-equipped to withstand attacks. Its hit points are notably high at 119, giving it considerable durability in battle. The creature is designed for melee and ranged combat, boasting a challenge rating of 7, which makes it a formidable opponent with a good experience reward of 2,900 XP. The Einherjar possesses a variety of special abilities that enhance its capabilities, and while it excels at Intimidation and can deal significant damage, it is somewhat average in intelligence and charisma.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the "Celestial Blessing" ability can be invoked if the recharge is succe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Einherjar
 
 *Medium* *Humanoid* *Chaotic Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Battleaxe:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) radiant damage.
 - **Celestial Bolt:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 15 (3d8 + 2) radiant damage.
 - **Celestial Blessing (Recharge 5–6):** The einherjar calls on its celestial patrons for one of the following blessings:
+</statblock>
 
 

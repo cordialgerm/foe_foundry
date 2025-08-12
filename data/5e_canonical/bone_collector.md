@@ -1,6 +1,8 @@
 <MonsterName/>Bone Collector</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>21</HP>
 <summary>The Bone Collector is a small undead creature characterized by its neutral evil alignment. This entity has a role in combat as a hindering foe, capable of both inflicting disease and cursing its prey. With a Challenge Rating of 1/2, it is not exceedingly powerful but has notable strengths such as flight and the ability to critically hit with its attacks from a distance. However, its weaknesses include low hit points and poor physical strength. Its average defense stems from its armor class and damage immunities, but it relies heavily on its special abilities to become a potent adversary.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Bone Collector employs its abilities and actions to disrupt and wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Collector
 
 *Small* *Undead* *neutral evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Bad Omen (1/Day):** Places a bad omen on a creature it can see within 20' of it. Target: DC 10 Wis save or be cursed for 1 min. While cursed target has disadvantage on attack rolls vs. bone collector. Target can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

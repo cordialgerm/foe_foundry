@@ -1,0 +1,50 @@
+{
+    "name": "Trollkin Reaver",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "reaver",
+        "battlefield"
+    ],
+    "adjectives": [
+        "fearsome",
+        "regenerative",
+        "formidable"
+    ],
+    "description": "The Trollkin Reaver is a robust humanoid with thick hide, projecting a fearsome presence on the battlefield. Enhanced by its impressive physical strength, it is capable of dealing significant melee damage.",
+    "memorable": "Notable for its regenerative ability allowing it to recover hit points each turn unless harmed by fire or acid, making it a persistent threat in prolonged confrontations.",
+    "goals": "To dominate foes in combat through strength and to enhance allies' effectiveness in battle with its Howl of Battle ability.",
+    "relations": "Often encountered alongside other trollkin or similar aggressive humanoids.",
+    "environment": "Typically found in areas before battles or near territories that they claim or protect.",
+    "strengths": "Exceptional strength and regeneration abilities, making it a formidable opponent that can absorb damage and retaliate effectively.",
+    "weaknesses": "Vulnerable to fire and acid damage which can negate its regeneration, limiting its endurance in battle.",
+    "attacks": "Can perform multiple melee attacks in a single turn, utilizing Bite and Claw attacks or wielding a Battleaxe and Handaxe for significant slashing damage.",
+    "most_powerful_ability": "The Howl of Battle allows allies to attack with advantage, greatly enhancing combat effectiveness.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in dim light within 60 feet as if it were bright light.",
+    "skills": "Proficient in Intimidation and Survival, reflecting its imposing presence and ability to navigate various terrains.",
+    "additional_information": [
+        "Regenerates 5 hit points at the start of its turn unless taken fire or acid damage.",
+        "Multiattack capabilities allow versatile offensive strategies.",
+        "Thin skin under its thick hide grants a +1 bonus to AC.",
+        "Strong Constitution aids in maintaining resilience against physical effects.",
+        "Death occurs if it reaches 0 hp and cannot regenerate."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "regenerative humanoid strong in melee combat",
+        "battlefield creature with howl ability",
+        "tough creature vulnerable to fire damage",
+        "trollkin reaver with multiattack and regeneration",
+        "medium humanoid with fearsome presence"
+    ]
+}

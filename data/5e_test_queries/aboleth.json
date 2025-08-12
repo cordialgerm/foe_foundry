@@ -1,0 +1,25 @@
+{
+    "name": "Aboleth",
+    "queries": [
+        {
+            "query": "large sea creature with psychic powers and mucus-covered skin",
+            "variant": "large creature from the sea with psychic powers and slimy skin"
+        },
+        {
+            "query": "aberrant monster that manipulates minds and dwells underwater",
+            "variant": "aberration that controls minds and lives in water"
+        },
+        {
+            "query": "eerie monster with glowing eyes that inflicts diseases and commands telepathy",
+            "variant": "strange creature with glowing eyes that uses diseases and telepathy"
+        },
+        {
+            "query": "marine beast with tentacles and a dangerous disease known as Sea Change",
+            "variant": "ocean monster with tentacles and a deadly disease called Sea Change"
+        },
+        {
+            "query": "ancient creature that can breathe both air and water with powerful charm abilities",
+            "variant": "ancient being that breathes air and water with strong charm powers"
+        }
+    ]
+}

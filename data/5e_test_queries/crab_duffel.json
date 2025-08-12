@@ -1,0 +1,25 @@
+{
+    "name": "Crab, Duffel",
+    "queries": [
+        {
+            "query": "large aquatic creature that can trap its prey",
+            "variant": "big water monster that traps its prey"
+        },
+        {
+            "query": "monstrosity with an extradimensional shell that acts like a bag",
+            "variant": "creature with a bag-like shell that has extradimensional abilities"
+        },
+        {
+            "query": "predatory crab that uses grappling to incapacitate foes",
+            "variant": "crab that grapples and incapacitates its enemies"
+        },
+        {
+            "query": "crab that disguises itself as an ordinary object",
+            "variant": "a crab that looks like a regular item when still"
+        },
+        {
+            "query": "creature with high strength and ability to hold multiple victims",
+            "variant": "strong monster that can capture several victims at once"
+        }
+    ]
+}

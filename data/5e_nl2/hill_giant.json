@@ -1,0 +1,52 @@
+{
+    "name": "Hill Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 105,
+    "ac": 13,
+    "srd": true,
+    "cr": "5",
+    "movement": "40 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "brute",
+        "melee",
+        "ranged"
+    ],
+    "adjectives": [
+        "enormous",
+        "brutish",
+        "lazy",
+        "gluttonous"
+    ],
+    "description": "Hill Giants are enormous, brutish humanoids that live in hills and caves. They are capable of crushing foes with massive clubs or throwing boulders. Their size and strength make them formidable combatants.",
+    "memorable": "Notable for their immense size and physical power, Hill Giants can deal heavy damage and have a gluttonous nature.",
+    "goals": "Hill Giants often raid nearby settlements for food and supplies due to their insatiable hunger.",
+    "relations": "Typically found in crude tribes ruled by the strongest giants among them.",
+    "environment": "Commonly found in hilly or mountainous regions.",
+    "strengths": "Possess high physical strength and endurance, making them devastating in combat.",
+    "weaknesses": "Dim-witted and cowardly, with low Dexterity and Intelligence, making them vulnerable to smarter foes.",
+    "attacks": "Can strike twice with a greatclub, throwing rocks, and perform area control attacks with a Greatclub Sweep.",
+    "most_powerful_ability": "Greatclub Sweep can hit multiple targets and knock them prone, showcasing area control capabilities.",
+    "equipment": null,
+    "senses": "Has passive Perception of 12.",
+    "skills": "Has a notable skill in perception with a +2 bonus.",
+    "additional_information": [
+        "Gullible trait causes Insight checks to be made with disadvantage.",
+        "Vulnerable to being knocked prone due to its size.",
+        "Can use its Show of Might ability for Intimidation checks.",
+        "Massive physical presence affects social interactions.",
+        "Multiattack with greatclub or ranged attacks with rocks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large creature that thrives in hills",
+        "brutish giant with a giant club",
+        "lazy giant that loves to raid villages",
+        "enormous monster throwing boulders at foes",
+        "powerful melee giant with a gluttonous nature"
+    ]
+}

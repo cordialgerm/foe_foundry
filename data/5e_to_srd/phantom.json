@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "A spectral undead that can instill fear and paralyze, with incorporeal movement and vulnerability to sunlight."
+  },
+  "monster_key": "phantom"
+}

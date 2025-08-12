@@ -1,0 +1,50 @@
+{
+    "name": "Eldritch Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 153,
+    "ac": 8,
+    "srd": false,
+    "cr": "5",
+    "movement": "slow, 10 ft. walking and climbing",
+    "role": null,
+    "tags": [
+        "ooze",
+        "psychic damage",
+        "unintelligent"
+    ],
+    "adjectives": [
+        "formidable",
+        "maddening",
+        "amorphous"
+    ],
+    "description": "A large, amorphous ooze with a viscous form that seems to shimmer with a psychic energy, capable of fitting through small spaces.",
+    "memorable": "The ability to reduce Intelligence could lead to instant death, making it a unique threat.",
+    "goals": "To incapacitate or kill targets within reach, particularly those with higher Intelligence.",
+    "relations": null,
+    "environment": "Typically found in dark, cold, or damp environments.",
+    "strengths": "Immunity to acid, cold, lightning, and slashing damage, along with various condition immunities.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks.",
+    "attacks": "The Void-Infused Pseudopod delivers a combination of bludgeoning and psychic damage, with the potential to reduce Intelligence.",
+    "most_powerful_ability": "Maddening Form imposes incapacitation and psychic damage, affecting creatures with higher Intelligence.",
+    "equipment": null,
+    "senses": "Blindsight 60 ft., but blind beyond that range.",
+    "skills": null,
+    "additional_information": [
+        "Can split when subjected to lightning or slashing damage.",
+        "Capable of climbing on ceilings without penalty.",
+        "Not capable of communication."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Large ooze with psychic attacks",
+        "amorphous creature that splits when damaged",
+        "psychic damage ooze with Intelligence reduction",
+        "strange blobby creature residing in dark places",
+        "maddening ooze that incapacitates intelligent beings"
+    ]
+}

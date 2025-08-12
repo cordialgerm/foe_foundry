@@ -1,0 +1,55 @@
+{
+    "name": "Cloud Giant Noble",
+    "creature_type": "Giant",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 187,
+    "ac": 14,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "giant",
+        "noble",
+        "spellcaster",
+        "powerful"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "magical",
+        "tactical"
+    ],
+    "description": "The Cloud Giant Noble is a Huge Giant characterized by its towering stature, exceptional strength, and impressive magical capabilities. It possesses a glaive and can manipulate weather effectively.",
+    "memorable": "Combines immense physical prowess with powerful spellcasting, control over the battlefield, and a charming presence.",
+    "goals": "To dominate adversaries using both brute strength and clever magic, maintaining control over the environment.",
+    "relations": "Often found among other giants or in the company of powerful spellcasters.",
+    "environment": "Clouds and elevated terrains, thriving where it can use its spellcasting effectively.",
+    "strengths": "Exceptional physical strength, innate spellcasting abilities, and tactical crowd control options.",
+    "weaknesses": "Vulnerable to magical attacks and ranged strategies, less effective against quick mobile opponents.",
+    "attacks": "Utilizes a glaive for powerful melee strikes and can throw heavy rocks at range, both capable of knocking opponents prone.",
+    "most_powerful_ability": "Reverse Gravity, allowing it to hurl enemies into the air, dealing damage on impact.",
+    "equipment": "Glaive, a long-reaching melee weapon.",
+    "senses": "Possesses a passive perception of 17, allowing it to detect hidden threats easily.",
+    "skills": "Has proficiency in Insight, Perception, and Persuasion, showcasing its ability to read and influence others.",
+    "additional_information": [
+        "Benefits from resistances to lightning and thunder damage.",
+        "Can see through clouds and fog without impairment.",
+        "Has several powerful spell-like abilities including Arc Lightning and Blinking Blades.",
+        "Has a high Strength modifier, significantly enhancing its melee capabilities.",
+        "Vulnerable to ranged magic attacks."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcasting ability allowing it to manipulate the battlefield with spells like fog cloud and control weather.",
+    "test_queries": [
+        "massive giant with weather control",
+        "giant that can charm and fly",
+        "powerful noble giant with glaive",
+        "cloud giant that manipulates fog",
+        "threatening giant with lightning resistance"
+    ]
+}

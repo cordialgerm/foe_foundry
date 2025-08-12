@@ -1,0 +1,54 @@
+{
+    "name": "Reef Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 152,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft., burrow 30 ft., swim 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "reef",
+        "sea monster",
+        "tunneler"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "powerful",
+        "aggressive"
+    ],
+    "description": "A massive dragon with dark, scaled skin resembling the colors of the ocean, the Reef Drake possesses an imposing presence and fearsome features, such as sharp teeth and powerful limbs.",
+    "memorable": "Its ability to create tunnels through coral and solid rock, making it a strategic threat in underwater or coastal environments.",
+    "goals": "To dominate its territory, potentially ambush intruders, and cause destruction in coastal locations.",
+    "relations": "May be encountered alongside other sea creatures or as a rival of other drakes.",
+    "environment": "Typically found in coastal waters, coral reefs, or near underwater cave systems.",
+    "strengths": "High Strength score allows for devastating melee attacks and significant durability in combat.",
+    "weaknesses": "Low Intelligence reduces tactical capabilities in battle.",
+    "attacks": "Delivering a powerful bite attack and two slam attacks, it can unleash a thunderous concussive snap.",
+    "most_powerful_ability": "Concussive Snap, which emits a shockwave dealing thunder damage in a large cone and pushing back enemies.",
+    "equipment": null,
+    "senses": "Has blindsight up to 10 feet, enabling it to sense nearby creatures without sight.",
+    "skills": "Possesses good perception with a passive score of 12.",
+    "additional_information": [
+        "Double damage to structures makes it especially dangerous in fortified areas.",
+        "Can initiate ambush tactics by hiding near coral reefs.",
+        "Created tunnels can be strategic for movement and surprise.",
+        "Effective as a frontline combatant with strong melee capabilities.",
+        "Vulnerable to Intelligence-based effects due to low score."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive sea dragon with thunder attacks",
+        "formidable drake that can burrow through coral",
+        "aggressive dragon found in coastal waters",
+        "creature that deals double damage to structures",
+        "powerful underwater monster with ambush tactics"
+    ]
+}

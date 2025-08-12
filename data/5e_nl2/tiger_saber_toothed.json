@@ -1,0 +1,53 @@
+{
+    "name": "Saber-Toothed Tiger",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 63,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "ambush",
+        "beast"
+    ],
+    "adjectives": [
+        "fierce",
+        "stealthy",
+        "predatory"
+    ],
+    "description": "The saber-toothed tiger is a large and fearsome beast with strong muscles, sharp claws, and distinctive elongated canine teeth that give it a terrifying appearance.",
+    "memorable": "Its capability to pounce and knock down prey, combined with a deadly bite that causes bleeding, makes it a formidable threat.",
+    "goals": "Typically hunts for food, relying on stealth and sudden attacks to capture prey.",
+    "relations": "Related to other big cats, it may be found alongside similar predators in its habitat.",
+    "environment": "Typically found in wilderness areas with plenty of cover for ambushing prey, such as dense forests or rugged terrains.",
+    "strengths": "Its heightened sense of smell enhances tracking and ambush capabilities, while its powerful physical attacks make it a dangerous foe.",
+    "weaknesses": "Lacks ranged abilities and relies on close combat, making it vulnerable to distance attacks.",
+    "attacks": "Can perform a bite attack and claw attacks, potentially causing bleeding wounds that inflict additional damage over time.",
+    "most_powerful_ability": "Pounce attack allows it to close distance rapidly and deliver a devastating attack that can knock foes prone.",
+    "equipment": null,
+    "senses": "Heightened sense of smell provides it superior tracking abilities.",
+    "skills": "Excels in Stealth, allowing it to hide effectively and ambush its prey.",
+    "additional_information": [
+        "Pounce ability can incapacitate targets temporarily.",
+        "Multiattack allows for swift combination of attacks.",
+        "Capable of causing bleeding wounds that hinder target's mobility.",
+        "Strong physical build enhances combat effectiveness.",
+        "Primarily relies on ambush tactics rather than prolonged engagement."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large predatory ambush creature",
+        "stealthy tiger with saber teeth",
+        "fierce tiger that causes bleeding wounds",
+        "formidable tiger lurking in the wilderness",
+        "tiger known for pounce attacks and stealth"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Thorned Sulfurlord",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 171,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "chaotic",
+        "internal enemy"
+    ],
+    "adjectives": [
+        "powerful",
+        "formidable",
+        "chaotic"
+    ],
+    "description": "The Thorned Sulfurlord is a massive fiend adorned with thorny protrusions and an aura of chaos, embodying malevolence and destruction.",
+    "memorable": "Its ability to create difficult terrain and deal continuous fire damage while being immune to fire and poison makes it a unique menace.",
+    "goals": "To sow chaos and destruction while identifying and punishing those who are evil.",
+    "relations": "May serve or ally with other evil creatures, especially those that share a chaotic disposition.",
+    "environment": "Typically found in chaotic and infernal realms, often in areas of fire and destruction.",
+    "strengths": "High hit points and defensive capabilities, along with abilities that manipulate the battlefield and deal consistent damage.",
+    "weaknesses": "Vulnerable to cold damage.",
+    "attacks": "The Sulfur Slam strikes with bludgeoning damage and can blind foes, while the Fiery Spike offers a ranged attack that includes piercing and fire damage.",
+    "most_powerful_ability": "The World Shall Know Fire unleashes a devastating fire explosion targeting foes previously damaged by fire, creating a large area of effect.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 120 feet, enabling it to see through illusions and recognize hidden threats.",
+    "skills": "Has proficiency in athletics and perception, making it adept at grappling and sensing nearby creatures.",
+    "additional_information": [
+        "Creates difficult terrain around itself, hindering enemy movement.",
+        "Immunities include fire and poison damage, and it cannot be charmed or poisoned.",
+        "Can detect evil-aligned creatures within 100 feet.",
+        "Root ability enhances its durability at the cost of mobility for a limited time.",
+        "Capable of telepathic communication within 120 feet."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Huge fiend with fiery abilities",
+        "monster that creates difficult terrain",
+        "chaotic being with fire damage attacks",
+        "creature that senses evil nearby",
+        "formidable enemy immune to fire"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Bearmit Crab",
+    "queries": [
+        {
+            "query": "large armored creature that can grapple and blend into rocks",
+            "variant": "big armored creature that can grapple and disguise as rocks"
+        },
+        {
+            "query": "monster with high strength that uses a viscid shell ability",
+            "variant": "creature with great strength and a sticky shell ability"
+        },
+        {
+            "query": "water and land monster known for its biting and clawing attacks",
+            "variant": "land and water beast known for biting and claw attacks"
+        },
+        {
+            "query": "bearmit crab's resistance to bludgeoning damage and keen smell",
+            "variant": "bearmit crab's resistance against bludgeoning and its strong sense of smell"
+        },
+        {
+            "query": "creature with two claw attacks and the ability to ambush",
+            "variant": "monster with dual claw attacks and ambush capability"
+        }
+    ]
+}

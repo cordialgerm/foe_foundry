@@ -1,0 +1,7 @@
+{
+  "Night Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Winter Hag is a fey hag with spellcasting and curses similar to the Night Hag, but themed around winter and cold."
+  },
+  "monster_key": "winter-hag"
+}

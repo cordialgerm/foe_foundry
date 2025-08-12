@@ -1,6 +1,8 @@
 <MonsterName/>Horse, War</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (scale mail barding)</AC>
+<HP/>22</HP>
 <summary>The War Horse is a large beast known for its robust build and trained combat capabilities. It serves primarily as a mount for riders in battle. With a strong constitution and notable speed, the War Horse excels in mobility and can deal significant damage with its hoof attacks. It has a challenge rating of 1/2, making it suitable for mid-level encounters. However, its intelligence is notably low, indicating it is not capable of complex maneuvers or strategic thinking. The creature's primary strengths lie in its physical abilities and its special ability to trample enemies, while its main weaknesses stem from its lack of magical abilities and limited senses.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the War Horse is a valuable companion in battle, offering both signific
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horse, War
 
 *Large beast*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Trained Shift.** If the horse’s rider is subjected to an effect that would knock it prone or dismount it, the horse can shift its body to assist the rider. The rider has advantage on the check or save to avoid the effect.
 
+</statblock>
 
 

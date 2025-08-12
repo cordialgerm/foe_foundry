@@ -1,0 +1,25 @@
+{
+    "name": "Field Commander",
+    "queries": [
+        {
+            "query": "charismatic leader humanoid with high Strength and protective abilities",
+            "variant": "leader humanoid with high Strength and abilities of protection and charisma"
+        },
+        {
+            "query": "medium humanoid that can revive allies and boost morale",
+            "variant": "medium humanoid that boosts morale and can bring allies back to life"
+        },
+        {
+            "query": "combat strategist humanoid that uses spells and has high AC",
+            "variant": "humanoid strategist with high AC and ability to cast spells in battle"
+        },
+        {
+            "query": "Field Commander abilities including Aura of Courage and Battle Cry",
+            "variant": "abilities of the Field Commander like Battle Cry and Aura of Courage"
+        },
+        {
+            "query": "humanoid leader with magical weapon attacks and healing spells",
+            "variant": "leader that has magical attacks with weapons and can heal allies"
+        }
+    ]
+}

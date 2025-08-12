@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with a statue-like appearance used as guardians, though the Yali is more physically powerful and mobile."
+  },
+  "Gargoyle": {
+    "relation": "conceptually_similar",
+    "explanation": "The Yali and Gargoyle share a statue-like form that can blend into surroundings and excel in physical combat."
+  },
+  "monster_key": "yali"
+}

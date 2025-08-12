@@ -1,0 +1,52 @@
+{
+    "name": "Fear Smith",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 149,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 15 ft.",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "fear",
+        "chaotic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "manipulative",
+        "deceptive"
+    ],
+    "description": "The Fear Smith is a medium fey creature with a chaotic appearance, embodying the essence of fear. It has a haunting gaze and an unsettling demeanor.",
+    "memorable": "The Fear Smith uniquely manipulates fears, disorienting its foes and gaining vitality from their terror.",
+    "goals": "To instill fear and chaos among its opponents while evading threats.",
+    "relations": "It may be found among other fey creatures or allied with chaotic entities.",
+    "environment": "Typically dwells in mystical woodland areas or places infused with magic.",
+    "strengths": "Exceptional Charisma grants powerful intimidation and control abilities.",
+    "weaknesses": "Weakness in physical strength makes it less effective in direct confrontation.",
+    "attacks": "The Fear Smith's multiattack consists of three claw strikes that deal slashing and additional psychic damage, utilizing fear to siphon life from its prey.",
+    "most_powerful_ability": "Distortion Gaze causes disorientation, significantly hindering the movement of its enemies.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, allowing it to detect creatures effectively.",
+    "skills": "Excels in Intimidation and Stealth, allowing it to control encounters through fear and subterfuge.",
+    "additional_information": [
+        "Has resistance to non-cold iron weapon damage.",
+        "Immunities to charmed and frightened conditions.",
+        "Can cast spells like detect thoughts and fear at will.",
+        "Regains hit points from psychic damage inflicted through its abilities.",
+        "Advantage on saving throws against spells due to Magic Resistance."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast spells such as detect thoughts and fear, and has limited use of charm person and command.",
+    "test_queries": [
+        "fey creature that manipulates fear",
+        "chaotic fey with disorienting gaze",
+        "fear-inducing monster with psychic attacks",
+        "manipulative fey that controls nightmares",
+        "fear smith abilities and tactics"
+    ]
+}

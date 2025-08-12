@@ -1,0 +1,25 @@
+{
+    "name": "Brownie",
+    "queries": [
+        {
+            "query": "tiny fey creature that can turn invisible and communicate with animals",
+            "variant": "small fey being that can go invisible and talk to beasts"
+        },
+        {
+            "query": "magical tiny creature with high dexterity and exceptional agility",
+            "variant": "small magical being with excellent agility and high dexterous skills"
+        },
+        {
+            "query": "small fey with magic resistance and abilities to mend or clean",
+            "variant": "tiny fey with resistance to magic and skills to repair or clean"
+        },
+        {
+            "query": "nimbly agile fey with decent hit points and spell resistance",
+            "variant": "quick and agile fey creature with good hit points and magic resistance"
+        },
+        {
+            "query": "creature with low strength but excellent at avoiding attacks using magic",
+            "variant": "being with poor strength yet great at dodging hits through magic"
+        }
+    ]
+}

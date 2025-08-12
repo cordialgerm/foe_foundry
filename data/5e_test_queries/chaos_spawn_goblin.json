@@ -1,0 +1,25 @@
+{
+    "name": "Chaos-Spawn Goblin",
+    "queries": [
+        {
+            "query": "small humanoid goblin with psychic abilities and stealth skills",
+            "variant": "little goblin humanoid with stealth skills and psychic powers"
+        },
+        {
+            "query": "chaotic evil goblin that uses ambush tactics and has darkvision",
+            "variant": "goblin of chaotic evil nature using ambush strategies and capable of seeing in darkness"
+        },
+        {
+            "query": "goblin with nimble escape ability and resistance to psychic damage",
+            "variant": "goblin that can escape quickly and has psychic damage resistance"
+        },
+        {
+            "query": "agile goblin enemy with low strength but high dexterity",
+            "variant": "goblin opponent that is quick with high dexterity but weak strength"
+        },
+        {
+            "query": "sneaky goblin with telepathy and a unique psychic attack",
+            "variant": "stealthy goblin that can communicate telepathically and has a special psychic strike"
+        }
+    ]
+}

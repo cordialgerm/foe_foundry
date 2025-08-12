@@ -1,0 +1,25 @@
+{
+    "name": "Cave Giant Shaman",
+    "queries": [
+        {
+            "query": "huge monster with magical abilities that is weak in sunlight",
+            "variant": "huge creature that has magic powers and is vulnerable to sunlight"
+        },
+        {
+            "query": "giant with strong melee attacks and spellcasting powers",
+            "variant": "giant creature that excels in melee and has spellcasting abilities"
+        },
+        {
+            "query": "powerful chaotic evil giant that can petrify in sunlight",
+            "variant": "strong chaotic evil giant creature that becomes petrified in sunlight"
+        },
+        {
+            "query": "Cave Giant Shaman tactics in bright light",
+            "variant": "tactics of the Cave Giant Shaman when in bright light"
+        },
+        {
+            "query": "tall evil creature that uses a club and tusks for attacks",
+            "variant": "tall malicious creature that attacks with a club and its tusks"
+        }
+    ]
+}

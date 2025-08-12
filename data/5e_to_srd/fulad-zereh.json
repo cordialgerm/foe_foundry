@@ -1,0 +1,15 @@
+{
+  "Medusa": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the petrifying gaze ability and a menacing presence."
+  },
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "A huge fiend with barbed weapons and a powerful build similar to the Fulad-Zereh."
+  },
+  "Hezrou": {
+    "relation": "close_cousins",
+    "explanation": "A huge chaotic demon from the Abyss with strong melee attacks and battlefield presence."
+  },
+  "monster_key": "fulad-zereh"
+}

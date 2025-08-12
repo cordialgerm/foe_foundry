@@ -1,0 +1,51 @@
+{
+    "name": "Derendian Moth Abomination",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 210,
+    "ac": 14,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "flyer",
+        "tentacle"
+    ],
+    "adjectives": [
+        "formidable",
+        "mobile",
+        "resilient"
+    ],
+    "description": "The Derendian Moth Abomination is a large creature with six tentacles and a beak, capable of telekinetically sprouting additional tentacles. It has a shimmering, colorful appearance due to its wings.",
+    "memorable": "Its ability to teleport and leave behind a deadly dust cloud, along with the capacity to regenerate tentacles, makes it particularly dangerous.",
+    "goals": "Typically hunts down foes and collects nutrients from fallen creatures by laying sticky masses of eggs.",
+    "relations": "Could be encountered alongside other monstrous creatures or nocturnal ambushers in dark environments.",
+    "environment": "Often found in dark, spooky forests or abandoned ruins.",
+    "strengths": "High Dexterity, immune to cold and necrotic damage, and can bypass non-magical damage resistances.",
+    "weaknesses": "Lacks ranged attacks and can be tactically outmaneuvered by alert enemies.",
+    "attacks": "Attacks with its long-reaching tentacles and a powerful beak, capable of dealing significant damage.",
+    "most_powerful_ability": "Wings of the Primal Tender, which allows for teleportation and inflicts devastating effects on nearby creatures.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 16, allowing it to detect threats effectively.",
+    "skills": "Stealth is notable, with a skill bonus of +9, enhancing its ability to ambush enemies.",
+    "additional_information": [
+        "Regenerates tentacles when enemies fall nearby.",
+        "Immune to being frightened and effects that reduce its movement.",
+        "Can use legendary actions to maintain combat pressure."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive creature with tentacles and a beak",
+        "monster that can teleport and regenerate limbs",
+        "dark forest predator with deadly dust cloud",
+        "mobile abomination that lays sticky eggs",
+        "tentacled monstrosity immune to cold attacks"
+    ]
+}

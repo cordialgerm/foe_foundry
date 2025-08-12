@@ -1,0 +1,11 @@
+{
+  "Steam Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elemental creatures that fly and spread hazardous substances, with immunity to fire and a toxic nature."
+  },
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Living Soot is a fire-immune elemental that flies and controls the battlefield, similar to a Fire Elemental but with poison and ash effects."
+  },
+  "monster_key": "living-soot"
+}

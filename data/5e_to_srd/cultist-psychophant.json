@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "Both are manipulative cultist humanoids with spellcasting abilities and a focus on controlling others."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a spellcaster with mental and magical abilities, though the Cultist Psychophant specializes in psychic powers."
+  },
+  "monster_key": "cultist-psychophant"
+}

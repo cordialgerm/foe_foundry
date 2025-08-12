@@ -1,0 +1,53 @@
+{
+    "name": "Vampire Patrician",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 119,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "vampire",
+        "undead",
+        "noble"
+    ],
+    "adjectives": [
+        "formidable",
+        "clever",
+        "resilient",
+        "manipulative"
+    ],
+    "description": "The Vampire Patrician is a noble and powerful undead creature characterized by its high Dexterity and Charisma, donned with an air of authority and danger. It showcases sharp features, elegantly styled hair, and possibly aristocratic garb befitting its social status.",
+    "memorable": "The ability to summon hunting hounds or raptors and the threat of creating vampire spawns from its victims makes the Vampire Patrician a uniquely formidable foe.",
+    "goals": "The Vampire Patrician seeks power, control over others, and to manipulate its surroundings to maintain its influence.",
+    "relations": "It may command a cadre of undead minions or manipulate other creatures to act as its pawns in both combat and intrigue.",
+    "environment": "Typically found in castles, noble estates, or areas with a dark and aristocratic aura.",
+    "strengths": "Boasting damage resistances and regeneration abilities, along with tactical advantages in social manipulation and combat, it poses a significant challenge.",
+    "weaknesses": "It is vulnerable to sunlight, running water, wooden stakes, and cannot enter homes without invitation.",
+    "attacks": "Uses a rapier for piercing damage augmented with necrotic damage and can also bite to drain life while reducing its target's maximum hit points.",
+    "most_powerful_ability": "The Bone-Chilling Gaze can paralyze enemies with fear, making them vulnerable to follow-up attacks.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a range of 120 feet and a passive Perception score of 15, enhancing its stealth capabilities.",
+    "skills": "Skilled in Deception, Intimidation, and Persuasion, allowing it to dominate social encounters.",
+    "additional_information": [
+        "Has a special ability to transform into mist when dropped to 0 hit points outside its resting place.",
+        "Can regain hit points each turn through its Regeneration ability, provided conditions are met.",
+        "Can summon hunting hounds or raptors to assist in combat.",
+        "Has special rules against entering homes without an invitation, showcasing its vulnerabilities.",
+        "Can instill fear in enemies using its Bone-Chilling Gaze ability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "noble vampire that summons hounds",
+        "undead creature that drains life",
+        "intelligent vampire with mist escape",
+        "vampire with paralyzing gaze ability",
+        "formidable undead that hates sunlight"
+    ]
+}

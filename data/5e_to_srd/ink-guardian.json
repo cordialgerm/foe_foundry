@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amorphous oozes that deal acid damage and can slip through tight spaces."
+  },
+  "monster_key": "ink-guardian"
+}

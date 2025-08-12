@@ -1,0 +1,7 @@
+{
+  "Mage": {
+    "relation": "almost_identical",
+    "explanation": "The Apprentice Mage is a novice version of the Mage, sharing the same humanoid spellcaster concept with lower power and simpler spellcasting."
+  },
+  "monster_key": "apprentice-mage"
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Boot Grabber",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 22,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "grappler",
+        "trap",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "sticky",
+        "stealthy"
+    ],
+    "description": "The Boot Grabber is a small, sticky aberration that resembles a dirty puddle when motionless, designed for ambush and grappling opponents.",
+    "memorable": "Its ability to blend into surroundings and adhere to creatures makes it a surprising foe, especially for unsuspecting adventurers.",
+    "goals": "To entrap and confound opponents by adhering to them and manipulating their movements.",
+    "relations": "May be found alongside other aberrant creatures or in strange, magical environments.",
+    "environment": "Commonly found in damp, dark areas, like sewers or marshes.",
+    "strengths": "Good grappling abilities and stealth, can manipulate creatures with sound.",
+    "weaknesses": "Low hit points and ineffective if not motionless for False Appearance.",
+    "attacks": "Adhesive Hands causes bludgeoning damage and grapples targets, while Unearthly Hum manipulates opponents' movement.",
+    "most_powerful_ability": "Adhesive ability grapples and restrains larger creatures, making escape difficult.",
+    "senses": "Possesses blindsight and tremorsense out to 60 feet, enabling it to detect nearby creatures without sight.",
+    "skills": "Strong perception and stealth skills allow it to ambush effectively.",
+    "additional_information": [
+        "Resistant to acid damage.",
+        "Immune to being knocked prone.",
+        "Can move through 1-inch-wide spaces.",
+        "Requires to remain still for effective camouflage.",
+        "Understands Void Speech but cannot communicate."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small sticky creature that grapples",
+        "ambushing monster that resembles a puddle",
+        "manipulative creature with sound abilities",
+        "trap creature found in dark damp areas",
+        "cunning monster with high perception"
+    ]
+}

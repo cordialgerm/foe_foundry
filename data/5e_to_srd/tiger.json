@@ -1,0 +1,7 @@
+{
+  "Tiger": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a close match to the SRD Tiger, sharing size, habitat, abilities like Pounce, and predatory behavior."
+  },
+  "monster_key": "tiger"
+}

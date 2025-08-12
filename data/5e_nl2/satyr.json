@@ -1,0 +1,53 @@
+{
+    "name": "Satyr",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 31,
+    "ac": 14,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "40 feet speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "playful",
+        "charming",
+        "trickster"
+    ],
+    "adjectives": [
+        "mischievous",
+        "enchanting",
+        "nimble",
+        "charismatic"
+    ],
+    "description": "A Satyr has the upper body of a man and the lower body of a goat, complete with horns and hooves.",
+    "memorable": "Known for their playful, hedonistic nature, Satyrs can charm and manipulate others with their music.",
+    "goals": "To indulge in wine, music, and cause harmless trouble for travelers.",
+    "relations": "Often encountered with other fey creatures in magical forests.",
+    "environment": "Typically found in magical forests or enchanted glades.",
+    "strengths": "Notable for magical resistance, high charisma, and stealth capabilities.",
+    "weaknesses": "Vulnerable to physical damage due to low hit points and average armor class.",
+    "attacks": "Utilizes a ram attack and finesse weapons like a rapier and shortbow for versatile combat.",
+    "most_powerful_ability": "Dance Tune can significantly hinder opponents by forcing them to dance.",
+    "senses": "Possesses passive Perception of 12, allowing it to notice hidden creatures.",
+    "skills": "Proficient in Performance and Stealth, providing strong social and sneaky capabilities.",
+    "additional_information": [
+        "Uses enchanting music to manipulate emotions and actions.",
+        "Can become a whimsical ally or dangerous trickster.",
+        "Exceptional Charisma enhances social interactions.",
+        "A fast and agile fighter when threatened.",
+        "Capable of charming multiple opponents at once."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Utilizes magical abilities like Lullaby to incapacitate enemies temporarily.",
+    "test_queries": [
+        "magical goat man with a playful demeanor",
+        "enchanting fey creature that causes mischief",
+        "nimble trickster that loves music and wine",
+        "satyr's magical abilities and charm",
+        "creature that manipulates emotions with music"
+    ]
+}

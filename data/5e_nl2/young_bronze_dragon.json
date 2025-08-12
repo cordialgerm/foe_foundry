@@ -1,0 +1,53 @@
+{
+    "name": "Young Bronze Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 148,
+    "ac": 18,
+    "srd": true,
+    "cr": "8",
+    "movement": "40 ft. walking, 80 ft. flying, 40 ft. swimming",
+    "role": null,
+    "tags": [
+        "dragon",
+        "amphibious",
+        "spellcasting"
+    ],
+    "adjectives": [
+        "noble",
+        "courageous",
+        "intelligent",
+        "formidable"
+    ],
+    "description": "The Young Bronze Dragon has gleaming bronze scales, showcasing its noble appearance. It is a large creature capable of flying and swimming with ease.",
+    "memorable": "Known for its lightning breath weapon and ability to transform into other forms, it acts as a guardian of coastal areas.",
+    "goals": "To promote peace and justice, often aiding sailors and coastal settlements.",
+    "relations": "May ally with good-aligned adventurers and interact positively with mortals.",
+    "environment": "Coastal regions or near large bodies of water.",
+    "strengths": "Highly intelligent with strong offensive and defensive capabilities; immune to lightning damage.",
+    "weaknesses": "Can be overwhelmed by coordinated attacks due to focus on lightning abilities.",
+    "attacks": "Utilizes multiattack returning to bite and claw or breath weapons like Lightning Breath and Repulsion Breath.",
+    "most_powerful_ability": "Lightning Breath causes significant lightning damage along a long line; Repulsion Breath creates a push effect.",
+    "equipment": null,
+    "senses": "Blindsight up to 30 ft.; passive Perception of 17 enhances its detection capabilities.",
+    "skills": "Possesses solid skills in Insight, Perception, and Stealth.",
+    "additional_information": [
+        "Amphibious nature allows breathing both air and water.",
+        "Oracle of the Coast ability predicts weather accurately up to seven days.",
+        "Innate spellcasting for tactical advantages with fog cloud and speak with animals.",
+        "Lightning Extraction can impair nearby foes after using its breath weapon.",
+        "Change Shape ability enables transformation into humanoid or beast forms."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting with the ability to cast fog cloud and speak with animals.",
+    "test_queries": [
+        "noble dragon with lightning breath",
+        "creature that guards coastal areas",
+        "bronze dragon that can swim and fly",
+        "amphibious dragon known for lightning attacks",
+        "dragon that transforms into humanoid form"
+    ]
+}

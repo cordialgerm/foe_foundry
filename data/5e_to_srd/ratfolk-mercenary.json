@@ -1,0 +1,11 @@
+{
+  "Bandit": {
+    "relation": "close_cousins",
+    "explanation": "A small humanoid combatant skilled in melee and ranged attacks with leather armor and tactical combat style."
+  },
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "A small, agile humanoid with expertise in stealth, dexterous attacks, and tactical positioning similar to the Ratfolk Mercenary."
+  },
+  "monster_key": "ratfolk-mercenary"
+}

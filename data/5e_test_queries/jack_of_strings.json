@@ -1,0 +1,25 @@
+{
+    "name": "Jack of Strings",
+    "queries": [
+        {
+            "query": "fey creature that controls puppets and uses charm magic",
+            "variant": "fey being that manipulates puppets and charms targets"
+        },
+        {
+            "query": "chaotic entertainer with psychic attacks and agility",
+            "variant": "chaotic performer with mental attacks and high agility"
+        },
+        {
+            "query": "medium fey with special abilities linked to puppetry and combat",
+            "variant": "medium fey creature with unique powers related to puppeting and battle"
+        },
+        {
+            "query": "trickster monster immune to charm and magic with high charisma",
+            "variant": "trickster creature resistant to charm and spells with exceptional charisma"
+        },
+        {
+            "query": "manipulative fey with excellent acrobatics and performance skills",
+            "variant": "manipulative fey beast with outstanding acrobatics and performing abilities"
+        }
+    ]
+}

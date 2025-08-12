@@ -1,0 +1,52 @@
+{
+    "name": "Doom Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 153,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "fear-inducing",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "fearsome"
+    ],
+    "description": "The Doom Golem is a large construct designed for destruction, with a tough exterior and a skeletal glow that emits dim light. Its body showcases its incredible strength and resilience, making it a daunting presence on the battlefield.",
+    "memorable": "This golem has a powerful fear aura and can retaliate against attackers with necrotic doom bolts, making it both terrifying and dangerous.",
+    "goals": "Designed to serve its creator and wreak havoc on non-evil creatures.",
+    "relations": "Typically created and controlled by spellcasters or powerful beings; may serve as a guardian for important locations.",
+    "environment": "Found in locations where constructs are created or unleashed, such as ancient ruins or laboratories.",
+    "strengths": "High physical strength and durability, immunity to many damage types, powerful melee attacks, and fear-inducing abilities.",
+    "weaknesses": "Lacks mental abilities and cannot communicate, making it dependent on its creator for direction.",
+    "attacks": "It can perform a devastating multiattack, combining a claw attack that deals slashing and cold damage with a powerful bite attack.",
+    "most_powerful_ability": "Wind of Boreas creates a chilling arctic wind that can severely damage multiple foes in a wide area.",
+    "senses": "Blessed with darkvision and a passive perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Immutable Form protects it from effects that alter its shape.",
+        "All weapon attacks are considered magical, allowing them to bypass certain resistances.",
+        "Fear Aura causes a panicked effect on nearby creatures.",
+        "Luminous Skeleton ability enhances visibility in dim light."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that induces fear",
+        "magical golem with chilling attacks",
+        "large monster with necrotic retaliation",
+        "golem designed for destruction",
+        "fearsome guardian with cold damage"
+    ]
+}

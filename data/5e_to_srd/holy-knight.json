@@ -1,0 +1,11 @@
+{
+  "Knight": {
+    "relation": "almost_identical",
+    "explanation": "A valiant melee combatant with heavy armor and a greatsword, embodying the classic knight archetype."
+  },
+  "Paladin": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the holy and supportive aspects, including healing and radiant damage, typical of a paladin."
+  },
+  "monster_key": "holy-knight"
+}

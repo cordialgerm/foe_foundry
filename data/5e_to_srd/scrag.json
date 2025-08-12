@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Scrag is a regenerative, tough giant with amphibious traits similar to a Troll's regeneration and swampy habitat."
+  },
+  "monster_key": "scrag"
+}

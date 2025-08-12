@@ -1,6 +1,8 @@
 <MonsterName/>Aural Hunter</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Aural Hunter is a formidable large aberration known for its chaotic evil nature. With a challenging rating of 5, it presents a significant threat to adventurers, featuring high durability and an impressive mobility. Its primary strengths lie in its melee attacks and unique capacity to consume sound, allowing it to drain vitality from the very essence of its opponents. While it possesses strong physical attributes, including a solid Armor Class of 15 and 127 hit points, its low Intelligence and Charisma make it less versatile in strategic manipulation or social encounters. However, its ability to grapple and silence foes makes it a dangerous opponent in combat scenarios.</summary>
 
 <detail>
@@ -32,6 +34,7 @@ Overall, the Aural Hunter is a deadly foe that relies on its physical strength a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aural Hunter
 
 *Large* *Aberration* *chaotic evil*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Consume Sound:** Siphons energy from audible vibrations surrounding a creature grappled by it. Target: 14 (4d6) necrotic and becomes deafened and unable to speak until end of its next turn (DC 13 Con half damage and is able to hear and speak). Aural hunter regains hp equal to damage dealt. Consume Sound has no effect on creatures that are already deafened and unable to speak. It can’t use this action if it is deafened.
 
 
+</statblock>
 
 

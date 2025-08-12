@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs animated by magic, with the Aphasian Abomination being a more powerful, psychic-focused variant."
+  },
+  "monster_key": "aphasian-abomination"
+}

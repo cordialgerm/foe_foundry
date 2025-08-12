@@ -1,0 +1,7 @@
+{
+  "Swarm of Insects": {
+    "relation": "almost_identical",
+    "explanation": "A swarm of tiny insects that disrupts foes and can move through small openings, matching the homebrew's description closely."
+  },
+  "monster_key": "insect,-swarm-of-insects"
+}

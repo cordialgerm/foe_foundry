@@ -1,0 +1,25 @@
+{
+    "name": "Corpselight Moth",
+    "queries": [
+        {
+            "query": "large moth that flies and emits light in combat",
+            "variant": "big moth that shines light and flies during battle"
+        },
+        {
+            "query": "predatory insect with radiant damage abilities and unique movement skills",
+            "variant": "hunter insect capable of radiant damage and special movement abilities"
+        },
+        {
+            "query": "moth that creates difficult terrain with flying and has necrotic resistance",
+            "variant": "moth that makes hard ground while flying and resists necrotic damage"
+        },
+        {
+            "query": "agile moth creature with high Dexterity and strong offensive attacks",
+            "variant": "swift moth being with excellent Dexterity and powerful attack options"
+        },
+        {
+            "query": "beast with a strong armor class and the ability to create magical winds",
+            "variant": "creature with high AC and powers to summon magical gales"
+        }
+    ]
+}

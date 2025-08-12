@@ -1,0 +1,52 @@
+{
+    "name": "Necrotech Reaver",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "siege",
+        "melee"
+    ],
+    "adjectives": [
+        "sinister",
+        "formidable",
+        "menacing"
+    ],
+    "description": "The Necrotech Reaver is a Huge undead creature with a powerful physique and a menacing presence, wielding four chains as weapons.",
+    "memorable": "Notable for its ability to double damage to structures and its unique chain weapon attacks.",
+    "goals": "To engage in combat and destroy fortified structures.",
+    "relations": "Related to other undead creatures; may serve as a guardian or enforcer.",
+    "environment": "Typically found in battlefields or ruins, where it can wreak havoc.",
+    "strengths": "Significant melee damage output and ability to grapple multiple foes.",
+    "weaknesses": "Has disadvantage on saving throws against being knocked prone.",
+    "attacks": "Utilizes two Chain Lash attacks dealing substantial slashing damage and grappling enemies.",
+    "most_powerful_ability": "The Bladed Sweep, which can hit multiple targets and knock them prone.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Has a low passive perception of 9.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Can deal damage to structures at double the normal rate as a Siege Monster.",
+        "Sluggish due to low Dexterity score.",
+        "Can grapples targets with its chain attacks."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sinister undead creature with chains",
+        "huge monster that wrecks fortifications",
+        "undead monster with multiattack chains",
+        "brutal melee undead that grapples foes",
+        "menacing creature that swings chains in battle"
+    ]
+}

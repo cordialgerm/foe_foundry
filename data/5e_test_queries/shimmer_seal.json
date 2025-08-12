@@ -1,0 +1,25 @@
+{
+    "name": "Shimmer Seal",
+    "queries": [
+        {
+            "query": "agile beast that lives in icy environments and can become invisible",
+            "variant": "beast that is agile and can turn invisible in icy places"
+        },
+        {
+            "query": "medium beast with excellent swimming ability and cold damage resistance",
+            "variant": "medium creature that can swim very well and resist cold attacks"
+        },
+        {
+            "query": "shimmer seal combat tactics involving tusk attacks and mobility on ice",
+            "variant": "combat strategies of shimmer seal using tusks and moving on ice"
+        },
+        {
+            "query": "creature with high strength and dexterity that thrives in cold waters",
+            "variant": "beast with good strength and agility surviving in chilly waters"
+        },
+        {
+            "query": "low intelligence beast that excels in stealth and acrobatics",
+            "variant": "creature with poor mental skills but great at stealth and agility"
+        }
+    ]
+}

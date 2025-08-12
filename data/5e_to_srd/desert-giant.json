@@ -1,0 +1,7 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "A huge, strong giant with fire immunity and desert combat abilities similar to a Fire Giant."
+  },
+  "monster_key": "desert-giant"
+}

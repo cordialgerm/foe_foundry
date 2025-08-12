@@ -1,0 +1,52 @@
+{
+    "name": "Mountain Strider",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 34,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft. walking and climbing",
+    "role": "Bruiser",
+    "tags": [
+        "mountain",
+        "agile",
+        "strong"
+    ],
+    "adjectives": [
+        "intimidating",
+        "imposing",
+        "resilient"
+    ],
+    "description": "The Mountain Strider is a Large Monstrosity known for its imposing presence and agility in mountainous terrains, characterized by its strong build and notable headbutt attack.",
+    "memorable": "Combines strength and tactical abilities with a thunderous bleat that can impact multiple foes at once.",
+    "goals": "The Mountain Strider typically engages in combat, leveraging its charge ability to knock foes prone and retaliate for fallen allies.",
+    "relations": "Often found in the company of creatures that inhabit mountainous environments.",
+    "environment": "Native to mountainous terrains.",
+    "strengths": "Exceptional Strength and Constitution allowing it to deal significant damage and withstand attacks.",
+    "weaknesses": "Low Intelligence and Charisma impairing its tactical decisions and social interactions.",
+    "attacks": "Headbutt causing significant bludgeoning damage and a spear attack for piercing damage from melee or ranged.",
+    "most_powerful_ability": "Charge ability allows for additional bludgeoning damage and potentially knocking targets prone.",
+    "equipment": "Spear for melee and ranged attacks.",
+    "senses": "Possesses darkvision that enhances its awareness in dim light conditions.",
+    "skills": "Skilled in survival, capable of navigating and enduring in harsh mountainous environments.",
+    "additional_information": [
+        "Sure-Footed ability grants advantage against prone effects.",
+        "Leader-like behavior when defending allies.",
+        "Can effectively traverse rocky surfaces due to climbing speed.",
+        "Has a powerful thunderous bleat action.",
+        "Moderately durable for its challenge rating."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large mountain monster with headbutt attack",
+        "agile creature that lives in mountains",
+        "monstrous charging creature in rocky terrain",
+        "strong beast known for thunderous bleat",
+        "intimidating mountain strider with a spear"
+    ]
+}

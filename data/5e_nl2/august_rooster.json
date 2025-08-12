@@ -1,0 +1,50 @@
+{
+    "name": "August Rooster",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 25 ft., fly up to 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "charm",
+        "manipulation",
+        "flying"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "unique"
+    ],
+    "description": "The August Rooster is a medium-sized creature with sharp talons and a vibrant plumage. It is known for its charm and ability to manipulate its foes through cunning tactics.",
+    "memorable": "Its ability to charm creatures within proximity makes it a dangerous foe, capable of turning allies against one another.",
+    "goals": "To charm and manipulate foes, causing them to perform tasks for its benefit.",
+    "relations": "May be encountered with other cunning creatures or as a servant of more powerful beings.",
+    "environment": "Typically found in rural or wilderness areas where it can easily charm unsuspecting creatures.",
+    "strengths": "High Dexterity and Charisma enhance its combat agility and charm effects.",
+    "weaknesses": "Low Strength and Wisdom limit its melee effectiveness and perception.",
+    "attacks": "Utilizes sharp talons for melee attacks and can dive bomb for extra damage.",
+    "most_powerful_ability": "Aura of Subservience allows it to charm nearby creatures effortlessly.",
+    "equipment": null,
+    "senses": "Has a low passive Perception of 8, indicating struggles to notice hidden threats.",
+    "skills": "No special skill proficiencies are noted.",
+    "additional_information": [
+        "Resistant to psychic damage",
+        "Immune to being charmed",
+        "Can cast spells without material components",
+        "Noteworthy mobility with jumping capabilities",
+        "Excels in avoiding direct combat while subduing opponents"
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast spells such as 'dancing lights' and 'charm person' innately, enhancing its tactical options.",
+    "test_queries": [
+        "charming manipulative rooster",
+        "dangerous cunning monstrosity",
+        "unique flying creature with charm abilities",
+        "August Rooster abilities",
+        "skirmishing charm monster"
+    ]
+}

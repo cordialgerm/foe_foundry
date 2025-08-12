@@ -1,6 +1,8 @@
 <MonsterName/>Basilisk</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Basilisk is a large, reptilian creature with eight legs and a thick, scaly hide. Its most fearsome ability, however, is its deadly gaze, which can turn creatures to stone with a single look. Basilisks typically live in dark caves or ruins, where they can stalk their prey and ambush unsuspecting victims. Though slow and lumbering, their petrifying gaze makes them incredibly dangerous, and many an adventurer has been turned into a stone statue before even realizing they were being hunted. Basilisks are solitary hunters and tend to hoard treasures left behind by their petrified victims.</summary>
 
 <summary>The Basilisk is a medium-sized monstrosity known for its deadly gaze, which can petrify creatures with a mere look. With decent defenses due to its armor class of 15 and a good allotment of hit points totaling 52, it is capable of withstanding several attacks. As a Challenge Rating 3 creature, it presents a moderate threat to adventurers, offering 700 experience points upon defeat. Its primary strengths lie in its unique abilities, particularly its Stone Gaze, which can immobilize enemies, making it an effective ambush predator. However, it has a low Dexterity score, making it vulnerable to ranged attacks. While it possesses a formidable bite attack augmented with poison damage, it is primarily reliant on its gaze to control the battlefield.</summary>
@@ -29,6 +31,7 @@ The Basilisk can employ actions during combat, including a Multiattack option, w
 
 Source: 5e_srd
 
+<statblock>
 ## Basilisk
 
 *Medium monstrosity, unaligned*
@@ -57,7 +60,8 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage plus 7 (2d6) poison damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage plus 7 (2d6) poison damage.</statblock>
+
 
 
 
@@ -65,6 +69,7 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Basilisk
 
 *Medium* *Monstrosity*
@@ -93,6 +98,7 @@ Source: 5e_artisinal_monsters
 - **Stone Glance:** If a creature within 60 feet that the basilisk can see hits the basilisk with an attack, the basilisk uses Stone Gaze on the attacker.
 
 
+</statblock>
 
 
 
@@ -101,6 +107,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Basilisk
 
 *Medium monstrosity*
@@ -131,5 +138,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) poison damage.
 - **Poison Spit.** Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 13 (3d6 + 3) poison damage.
 
+</statblock>
 
 

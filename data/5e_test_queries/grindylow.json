@@ -1,0 +1,25 @@
+{
+    "name": "Grindylow",
+    "queries": [
+        {
+            "query": "chaotic evil water creature that can mimic voices",
+            "variant": "evil chaotic creature of water that mimics voices"
+        },
+        {
+            "query": "medium-sized monster with agility that lives underwater",
+            "variant": "monster that is medium-sized and agile, residing underwater"
+        },
+        {
+            "query": "aquatic creature with stealth skills and ink escape ability",
+            "variant": "stealthy aquatic creature that has an escape ability using ink"
+        },
+        {
+            "query": "monster that grapples with claws and swims quickly",
+            "variant": "creature that grapples using claws and can swim fast"
+        },
+        {
+            "query": "underwater monster with average intelligence and slippery trait",
+            "variant": "creature from underwater with slippery trait and average intelligence"
+        }
+    ]
+}

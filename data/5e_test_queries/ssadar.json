@@ -1,0 +1,25 @@
+{
+    "name": "Ssadar",
+    "queries": [
+        {
+            "query": "medium humanoid creature with a fiery nature and melee attacks",
+            "variant": "humanoid creature that is medium-sized, has fiery abilities and melee prowess"
+        },
+        {
+            "query": "chaotic evil monster that gains power from fire damage in combat",
+            "variant": "monster of chaotic evil alignment that increases strength when taking fire damage"
+        },
+        {
+            "query": "fire-themed humanoid that uses spit fire and has an affinity for flames",
+            "variant": "humanoid creature themed around fire that employs spit fire and has a connection to flames"
+        },
+        {
+            "query": "Ssadar's abilities that involve fire and melee attacks in battles",
+            "variant": "abilities of the Ssadar that focus on fire and melee combat options during fights"
+        },
+        {
+            "query": "creature immune to fire but vulnerable to cold that excels in melee combat",
+            "variant": "monster that is resistant to fire damage but weak against cold, specializing in melee combat"
+        }
+    ]
+}

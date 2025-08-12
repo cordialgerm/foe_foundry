@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Mithral Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with slashing immunity and exceptional dexterity",
+            "variant": "gargantuan dragon with immunity to slashing and very high dexterity"
+        },
+        {
+            "query": "dragon that can fly and has magical resistance in battle",
+            "variant": "dragon that flies and possesses magic resistance during combat"
+        },
+        {
+            "query": "neutral dragon with devastating shard breath attack and frightful presence",
+            "variant": "neutral dragon that has a powerful shard breath ability and frightful presence"
+        },
+        {
+            "query": "Ancient dragon that moves quickly and has high hit points",
+            "variant": "Old dragon that has great speed and very high hit points"
+        },
+        {
+            "query": "mythical dragon with claw attacks that cause ongoing damage",
+            "variant": "legendary dragon with claw attacks inflicting continuous damage"
+        }
+    ]
+}

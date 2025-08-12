@@ -1,0 +1,25 @@
+{
+    "name": "Avestruzii Champion",
+    "queries": [
+        {
+            "query": "strong humanoid that can push enemies away and has a greataxe",
+            "variant": "strong humanoid with a greataxe who can push back enemies"
+        },
+        {
+            "query": "medium opponent that wears scale mail and has high strength",
+            "variant": "medium creature in scale mail with a high strength score"
+        },
+        {
+            "query": "tough combat-ready monster that uses multiattack and has decent hit points",
+            "variant": "combat-ready tough creature that uses multiattacks and has good hit points"
+        },
+        {
+            "query": "humanoid with average dexterity and strong claw attack",
+            "variant": "humanoid who has a strong claw attack and average dexterity"
+        },
+        {
+            "query": "creature that uses a shortbow for ranged attack and has a reaction ability",
+            "variant": "creature that has a reaction ability and uses a shortbow for long-distance attacks"
+        }
+    ]
+}

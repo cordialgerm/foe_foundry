@@ -1,0 +1,25 @@
+{
+    "name": "Mavka",
+    "queries": [
+        {
+            "query": "medium undead creature that is hypersensitive to sunlight",
+            "variant": "medium undead creature that has sunlight hypersensitivity"
+        },
+        {
+            "query": "chaotic evil monster that can regenerate health",
+            "variant": "chaotic evil creature that is capable of regenerating health"
+        },
+        {
+            "query": "undead monster riding a nightmare",
+            "variant": "undead creature mounted on a nightmare"
+        },
+        {
+            "query": "creature with necrotic damage immunities and fire resistance",
+            "variant": "monster immune to necrotic damage and resistant to fire"
+        },
+        {
+            "query": "Mavka abilities in combat and its sunlight vulnerability",
+            "variant": "Mavka combat abilities and vulnerability to sunlight"
+        }
+    ]
+}

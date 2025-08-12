@@ -1,0 +1,7 @@
+{
+  "Gnoll": {
+    "relation": "almost_identical",
+    "explanation": "A savage, hyena-like humanoid known for chaotic, bloodthirsty pack attacks and crude weapon use."
+  },
+  "monster_key": "gnoll"
+}

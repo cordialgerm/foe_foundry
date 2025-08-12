@@ -1,0 +1,52 @@
+{
+    "name": "Mordovermis",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Large",
+    "hp": 72,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "10 ft. walking speed, 40 ft. flying speed (hover)",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "psychic",
+        "manipulative"
+    ],
+    "adjectives": [
+        "eerie",
+        "otherworldly",
+        "manipulative"
+    ],
+    "description": "The mordovermis is a large aberration with a grotesque form, capable of flying and unique in its psychological powers.",
+    "memorable": "Its ability to charm creatures and consume them while grappling makes it a threatening foe in combat.",
+    "goals": "To manipulate and incapacitate foes, using psychological control and physical attacks.",
+    "relations": "Often found alone but can collaborate with other aberrant creatures or mind-affecting beings.",
+    "environment": "Typically inhabits dark, secluded areas away from sunlight, such as caves or ruins.",
+    "strengths": "Good physical capabilities, resistance to condition effects, and extraordinary crowd control abilities.",
+    "weaknesses": "Sunlight sensitivity which hampers its attack rolls and visual perception.",
+    "attacks": "Employs multiattack with nasty sting attacks, capable of inflicting piercing and acid damage.",
+    "most_powerful_ability": "Transfixing Gaze, which can incapacitate an opponent by charming them.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see in darkness up to 120 feet.",
+    "skills": null,
+    "additional_information": [
+        "Sinuous Form enables it to squeeze through tight spaces.",
+        "Aberrant Resilience provides multiple resistances against common status effects.",
+        "Consume ability allows dealing significant damage while grappling foes.",
+        "Teleportation or fiendish connections could enhance its threat level in certain scenarios.",
+        "Low Intelligence makes it poor at solving puzzles or strategic planning."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large creature that thrives in darkness",
+        "eerie monster with charm abilities",
+        "manipulative beast with a consume ability",
+        "flying creature sensitive to sunlight",
+        "grotesque aberration with mental control powers"
+    ]
+}

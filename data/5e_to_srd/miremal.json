@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are small fey creatures associated with natural environments and stealth."
+  },
+  "Black Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares swampy habitat and acid damage abilities similar to the Miremal's Bog Spew."
+  },
+  "monster_key": "miremal"
+}

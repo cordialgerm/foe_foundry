@@ -1,6 +1,8 @@
 <MonsterName/>Cavefish Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>37</HP>
 <summary>The Cavefish Zombie is a Medium-sized undead creature, characterized as neutral evil in alignment. This macabre entity is a reanimated fish that retains some semblance of its life beneath the water's surface. With an Armor Class of 10, it is relatively easy to hit, making it vulnerable to physical attacks. It possesses 37 hit points, calculated from rolling five eight-sided dice and adding fifteen, which provides it a decent amount of survivability for its challenge rating of 1/2, equating to 100 experience points. The Cavefish Zombie thrives in aquatic environments, swimming with a speed of 40 feet and moving on land at 20 feet. Its strengths lie in its ability to inflict poison through its stench and its remarkable resilience due to its Undead Fortitude ability, allowing it to potentially avoid death. However, it is somewhat limited in its versatility, having a low Intelligence, Wisdom, and Charisma which severely restrict its interactions and decision-making in gameplay.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Cavefish Zombie can perform a simple Slam attack, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cavefish Zombie
 
 *Medium* *Undead* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

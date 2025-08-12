@@ -1,0 +1,25 @@
+{
+    "name": "Cipactli",
+    "queries": [
+        {
+            "query": "aquatic fiend with devastating bite attacks",
+            "variant": "devastating bite attacks fiend that lives in water"
+        },
+        {
+            "query": "chaotic evil monster that can swim and walk",
+            "variant": "monster that swims and walks, chaotic evil"
+        },
+        {
+            "query": "creature with ability to breathe water and air and sneak underwater",
+            "variant": "sneaky creature that can breathe both air and water"
+        },
+        {
+            "query": "medium fiend vulnerable to fire and immune to cold",
+            "variant": "medium-sized fiend with immunity to cold damage and fire vulnerability"
+        },
+        {
+            "query": "monster that uses lullaby to put creatures to sleep",
+            "variant": "creature that puts others to sleep with ancient lullaby"
+        }
+    ]
+}

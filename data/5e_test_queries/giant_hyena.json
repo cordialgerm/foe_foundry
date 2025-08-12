@@ -1,0 +1,25 @@
+{
+    "name": "Giant Hyena",
+    "queries": [
+        {
+            "query": "large predatory beast that hunts in packs in the savannah",
+            "variant": "large hunting beast that roams savannahs in packs"
+        },
+        {
+            "query": "fast creature with powerful bite in desert environments",
+            "variant": "swift animal with a strong bite in desert habitats"
+        },
+        {
+            "query": "beast with good perception and aggressive behavior",
+            "variant": "animal with high awareness and hostile tendencies"
+        },
+        {
+            "query": "hyena that creates a deafening chorus when in groups",
+            "variant": "hyena that can cause deafening sounds when together"
+        },
+        {
+            "query": "Giant Hyena combat capabilities and pack tactics",
+            "variant": "combat skills and group strategies of Giant Hyena"
+        }
+    ]
+}

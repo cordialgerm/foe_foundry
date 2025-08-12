@@ -1,0 +1,54 @@
+{
+    "name": "Ancient Sapphire Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 429,
+    "ac": 21,
+    "srd": false,
+    "cr": "25",
+    "movement": "walk 40 ft., burrow 40 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "psionic",
+        "legendary",
+        "ancient"
+    ],
+    "adjectives": [
+        "formidable",
+        "intelligent",
+        "agile",
+        "powerful"
+    ],
+    "description": "The Ancient Sapphire Dragon is a Gargantuan creature known for its immense power and distinctive sapphire scales. It possesses exceptional psionic abilities and a formidable presence that makes it a credible foe in any campaign.",
+    "memorable": "Its predictive abilities allow it to anticipate enemy moves and counter strategies effectively, making it more than just a brute in combat.",
+    "goals": "Typically seeks to dominate its territory and outsmart adversaries using its cognitive and psychic powers.",
+    "relations": "Commonly associated with other high-level dragons and magical creatures, possibly serving as a master to lesser psionic beings.",
+    "environment": "Often found in mountainous regions, ancient ruins, or areas rich in arcane energies.",
+    "strengths": "Immunities to psychic damage and fatigue, high intelligence and wisdom, and powerful psionic abilities.",
+    "weaknesses": "Reliance on specific abilities can temporarily leave it vulnerable during strategic engagements.",
+    "attacks": "Employs a Multiattack feature, using its lethal Bite and Claw attacks, alongside potent psionic options like Psionic Wave.",
+    "most_powerful_ability": "Discognitive Breath, dealing massive psychic damage and inflicting ongoing effects whilst potentially incapacitating foes.",
+    "equipment": null,
+    "senses": "It possesses a passive Perception score of 27, indicating exceptional awareness of its surroundings.",
+    "skills": "Excels in Arcana and History with a notable focus on Insight and Perception, showcasing its intellectual and perceptual capabilities.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saving throws a limited number of times each day.",
+        "Predictive Harmonics enables it to never be surprised and negates disadvantage.",
+        "Far Thoughts allows psionic observation up to 100 miles away.",
+        "Can cast a variety of spells, including mind blank and etherealness, without material components.",
+        "Prophesy Doom instills dread in attackers, linking them to a potential death within hours."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate Spellcasting allows it to cast spells like detect thoughts and etherealness without material components.",
+    "test_queries": [
+        "powerful psychic dragon",
+        "Gargantuan dragon with foresight",
+        "legendary ancient sapphire dragon",
+        "dragon with psychic abilities",
+        "intelligent psionic dragon"
+    ]
+}

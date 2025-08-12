@@ -1,0 +1,52 @@
+{
+    "name": "Kalke",
+    "creature_type": "Fiend",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 18,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 feet walk speed for agile navigation",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "stealth",
+        "magic"
+    ],
+    "adjectives": [
+        "cunning",
+        "nimble",
+        "mischievous"
+    ],
+    "description": "A small fiend known for its stealthy nature and magical abilities. It has a light build with quick movements.",
+    "memorable": "Its ability to sense magic and resist spells makes it a tricky foe.",
+    "goals": "Typically aims to disrupt or deceive in magical settings.",
+    "relations": "Might be encountered alongside other fiends or magical creatures.",
+    "environment": "Found in areas of magical influence, such as enchanted forests or ruins.",
+    "strengths": "Magic resistance provides significant protection against spellcasters.",
+    "weaknesses": "Low Strength and Wisdom limit its effectiveness in physical confrontations.",
+    "attacks": "Classic melee attack with a slam and uses magic items with potential risks.",
+    "most_powerful_ability": "Magic Resistance grants advantage on saving throws against spells.",
+    "equipment": null,
+    "senses": "Can sense magic within 120 feet, determining the direction of spells.",
+    "skills": "Proficient in Sleight of Hand and Stealth, enhancing its stealthy abilities.",
+    "additional_information": [
+        "Low hit points make it vulnerable despite its agility.",
+        "Can quickly escape from combat using Nimble Escape.",
+        "Uses magical items unpredictably, adding risk and reward.",
+        "Excel in stealth, making it difficult to pin down.",
+        "Bonus action allows quick Disengage or Hide from enemies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fiend with magical abilities",
+        "nimble fiend that senses magic",
+        "tricky opponent in magical settings",
+        "stealthy creature with magic resistance",
+        "small fiend that uses magic items"
+    ]
+}

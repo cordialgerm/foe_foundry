@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Ammut is a large celestial predator with strong combat abilities and a focus on hunting undead, similar to a Planetar."
+  },
+  "Guardian Naga": {
+    "relation": "conceptually_similar",
+    "explanation": "Ammut shares the role of a powerful protector and hunter with abilities to combat undead, akin to the Guardian Naga's protective nature."
+  },
+  "monster_key": "ammut"
+}

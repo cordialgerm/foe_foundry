@@ -1,0 +1,53 @@
+{
+    "name": "Arcane Blademaster",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 256,
+    "ac": 20,
+    "srd": false,
+    "cr": "19",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "melee combatant",
+        "heavy armor"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "dangerous"
+    ],
+    "description": "A highly skilled humanoid adept at both martial combat and arcane spellcasting, wielding a longsword and dressed in heavy armor.",
+    "memorable": "Excels in both melee and spellcasting, can create devastating area damage with spells like Meteor Swarm.",
+    "goals": "To dominate the battlefield using a combination of weapon attacks and powerful spells.",
+    "relations": "May serve as an elite enforcer for magical organizations or operate independently as a mercenary.",
+    "environment": "Often found in battlegrounds or within mystical towers, typically in areas of great magical significance.",
+    "strengths": "Possesses strong melee combat ability enhanced by the Duelist feature and effective spellcasting with high Intelligence.",
+    "weaknesses": "Vulnerable to magical disruption due to reliance on spells and concentration.",
+    "attacks": "Can attack with a longsword dealing slashing damage or a composite longbow for piercing damage, and has powerful spell attacks.",
+    "most_powerful_ability": "Meteor Swarm, which deals massive area damage to multiple targets at once.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in arcana and athletics, reflecting expertise in magic and physical prowess.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Steel Focus gives advantage on concentration checks for spells.",
+        "Superior Heavy Armor Master reduces damage from nonmagical attacks.",
+        "Capable of executing a Multiattack for multiple strikes and cantrips in one turn.",
+        "Access to various powerful spells including globe of invulnerability and teleport."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": "20th-level spellcaster with a variety of powerful spells from cantrips to Meteor Swarm.",
+    "test_queries": [
+        "formidable melee spellcaster",
+        "magic resistance dual-wield fighter",
+        "Arcane Blademaster abilities",
+        "Meteor Swarm spellcaster",
+        "elite magical enforcer"
+    ]
+}

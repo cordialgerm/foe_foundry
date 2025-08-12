@@ -1,0 +1,25 @@
+{
+    "name": "Sila",
+    "queries": [
+        {
+            "query": "large elemental creature with aquatic abilities and cloud form",
+            "variant": "large aquatic creature that can turn into a cloud and is elemental"
+        },
+        {
+            "query": "monster that can breathe water and air, and has a high stealth score",
+            "variant": "creature that breathes both air and water with excellent stealth"
+        },
+        {
+            "query": "Sila's cold-infused weapon attacks and tactical abilities in combat",
+            "variant": "tactical combat options and cold-infused attacks of the Sila"
+        },
+        {
+            "query": "elemental with 216 hit points and challenge rating of 11",
+            "variant": "creature that has 216 hp and a challenge rating 11"
+        },
+        {
+            "query": "outsider monster known for creating water elementals and moving through tight spaces",
+            "variant": "outsider creature that summons water elementals and can squeeze through narrow areas"
+        }
+    ]
+}

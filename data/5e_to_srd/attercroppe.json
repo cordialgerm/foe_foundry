@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures connected to natural environments, with the Attercroppe linked to water and the Dryad to trees."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Attercroppe's association with water and its abilities to manipulate water and become invisible underwater relate it conceptually to the Water Elemental."
+  },
+  "monster_key": "attercroppe"
+}

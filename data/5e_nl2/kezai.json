@@ -1,0 +1,52 @@
+{
+    "name": "Kezai",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., fly 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "poison",
+        "fire"
+    ],
+    "adjectives": [
+        "formidable",
+        "nauseating",
+        "venomous"
+    ],
+    "description": "The Kezai is a Medium monstrosity characterized by its ability to inflict poison and fire damage. It has a toxic nature, creating a hazardous area around it with its Nauseous Gas, and is capable of flight.",
+    "memorable": "Kezai combines flight with debilitating gas attacks, challenging players to maneuver carefully around it.",
+    "goals": "To incapacitate enemies with poison and hinder their movement using gas attacks.",
+    "relations": "Often found in the company of other poisonous creatures and beasts.",
+    "environment": "Damp, dark locations where it can ambush foes with its gas attacks.",
+    "strengths": "Immunity to fire damage and high Dexterity make it a slippery opponent in combat.",
+    "weaknesses": "Low Intelligence makes it ineffective in strategic planning.",
+    "attacks": "Multiattack with claws and a poison barb, inflicting bludgeoning and poison damage.",
+    "most_powerful_ability": "Searing Acid ability that can deal significant area fire damage while disabling its gas effect temporarily.",
+    "senses": "The Kezai has blindsight within a range of 60 feet, allowing it to detect nearby creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "Area affected by Nauseous Gas is lightly obscured.",
+        "Poison barb can be used in both melee and ranged scenarios.",
+        "Claws deal consistent bludgeoning damage making it dangerous in close combat.",
+        "Requires Constitution saving throws to mitigate poison effects.",
+        "Has a tactical nature, creating gaseous hazards in combat."
+    ],
+    "damage_types": [
+        "poison",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "flying monster that uses gas attacks",
+        "creature with poison and fire abilities",
+        "venomous beast that creates obscuring gas",
+        "hazardous monster with claws and poison barb",
+        "medium monstrosity with flight and acid attacks"
+    ]
+}

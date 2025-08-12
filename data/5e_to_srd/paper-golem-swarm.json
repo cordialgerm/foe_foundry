@@ -1,0 +1,11 @@
+{
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms that occupy the same space and use swarm tactics to overwhelm foes."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs animated by magic, serving as guardians or unique magical enemies."
+  },
+  "monster_key": "paper-golem-swarm"
+}

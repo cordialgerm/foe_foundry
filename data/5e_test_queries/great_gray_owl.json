@@ -1,0 +1,25 @@
+{
+    "name": "Great Gray Owl",
+    "queries": [
+        {
+            "query": "small flying owl with keen senses and high dexterity",
+            "variant": "little flying owl that has great senses and good dexterity"
+        },
+        {
+            "query": "owl that can fly fast and excels at stealth",
+            "variant": "owl that flies quickly and is great at hiding"
+        },
+        {
+            "query": "creature with darkvision that uses talons in combat",
+            "variant": "beast that has darkvision and attacks with talons"
+        },
+        {
+            "query": "Great Gray Owl abilities including Flyby and Keen Hearing",
+            "variant": "abilities of the Great Gray Owl like Flyby and Keen Hearing"
+        },
+        {
+            "query": "swift air maneuvering owl that hits with piercing damage",
+            "variant": "fast maneuvering owl in the air that does piercing damage when it hits"
+        }
+    ]
+}

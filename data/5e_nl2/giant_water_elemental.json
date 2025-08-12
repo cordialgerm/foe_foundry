@@ -1,0 +1,50 @@
+{
+    "name": "Giant Water Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 157,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft., swim 90 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "water",
+        "giant",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "fluid",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Giant Water Elemental is a massive and formidable being of water, capable of manipulating its form fluidly within combat, making it an imposing presence in any aquatic environment.",
+    "memorable": "Notable for its ability to simultaneously grapple multiple creatures while moving freely and its dangerous conductive trait that harms those who attack it with lightning.",
+    "goals": "Typically aims to dominate battles in aquatic settings and defend its territory.",
+    "relations": "May serve as guardians of water bodies or be found alongside lesser water elementals.",
+    "environment": "Commonly found in aquatic settings or near bodies of water.",
+    "strengths": "High hit points and damage immunities to poison, along with resistances to acid and nonmagical weapon damage.",
+    "weaknesses": "Low intelligence and charisma scores limit its utility outside of combat.",
+    "attacks": "Utilizes powerful slam attacks and can grapple multiple foes, restricting their movement and ability to breathe.",
+    "most_powerful_ability": "Whelm, which can grapple all creatures in its space, restraining them and allowing it to move freely.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Conductive trait that harms adjacent creatures if it takes lightning damage.",
+        "Fluid Form ability allows it to move through tight spaces.",
+        "Freeze ability that hampers its speed when taking cold damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive water monster that grapples opponents",
+        "giant elemental with fluid movement abilities",
+        "water creature immune to poison and grapples",
+        "powerful aquatic being with lightning damage reflection",
+        "huge water elemental with high hit points"
+    ]
+}

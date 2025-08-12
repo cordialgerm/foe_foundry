@@ -1,0 +1,11 @@
+{
+  "Minotaur": {
+    "relation": "close_cousins",
+    "explanation": "The Goat-Man shares a similar beastly humanoid form with horns and a focus on charging and melee attacks like the Minotaur."
+  },
+  "Goat": {
+    "relation": "conceptually_similar",
+    "explanation": "The Goat-Man combines humanoid traits with goat features, making it conceptually similar to a Goat."
+  },
+  "monster_key": "goat-man"
+}

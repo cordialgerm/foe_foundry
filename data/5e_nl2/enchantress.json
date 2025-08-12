@@ -1,0 +1,56 @@
+{
+    "name": "Enchantress",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 123,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 feet walking speed",
+    "role": "Controller",
+    "tags": [
+        "humanoid",
+        "spellcaster",
+        "enchanter",
+        "manipulator"
+    ],
+    "adjectives": [
+        "charming",
+        "intelligent",
+        "deceptive",
+        "shadowy"
+    ],
+    "description": "The Enchantress is a medium humanoid with an aura of charm and intelligence. She wears armor and wields a rapier, employing her magical abilities to manipulate her enemies.",
+    "memorable": "She can deal significant psychic damage and charm enemies with her whispers.",
+    "goals": "To manipulate and control others through charm and magic.",
+    "relations": "Likely to associate with other spellcasters or creatures of the fey.",
+    "environment": "Often found in dimly lit areas or places where she can hide in shadows.",
+    "strengths": "Exceptional in battlefield control, high Charisma for spellcasting, and the ability to teleport between shadows.",
+    "weaknesses": "Vulnerable in bright light due to sunlight sensitivity, which affects her attack rolls and perception.",
+    "attacks": "Uses a rapier for melee, dealing piercing and psychic damage; employs Shadow Bolt for ranged cold and necrotic damage.",
+    "most_powerful_ability": "Phrenic Weapons, which adds significant psychic damage to her weapon attacks.",
+    "equipment": "Rapier and breastplate armor.",
+    "senses": "Has a passive Perception of 16, indicating her keen awareness of her surroundings.",
+    "skills": "Proficient in Deception, Persuasion, and Perception, allowing her to manipulate others effectively.",
+    "additional_information": [
+        "Ability to cast potent spells like dominate person and phantasmal killer.",
+        "Can enhance ally actions through Leadership.",
+        "Gains advantage against charm effects due to Fey Ancestry.",
+        "Uses Beguiling Whispers to charm enemies and disrupt their defenses.",
+        "Increases mobility with Shadow Traveler, teleporting between shadows."
+    ],
+    "damage_types": [
+        "psychic",
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": "Casts a variety of spells including charm, fear, and greater invisibility, maximizing her control over the battlefield.",
+    "test_queries": [
+        "charming humanoid with spellcasting abilities",
+        "shadowy enchantress that manipulates others",
+        "powerful spellcaster with psychic damage",
+        "humanoid that excels in battlefield control",
+        "enchantress with sunlight sensitivity and teleportation"
+    ]
+}

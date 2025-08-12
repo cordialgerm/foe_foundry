@@ -1,0 +1,11 @@
+{
+  "Deep Gnome": {
+    "relation": "close_cousins",
+    "explanation": "A small, intelligent humanoid spellcaster with stealth and agility, similar to the Greyfur's nimble and magical nature."
+  },
+  "Lemure": {
+    "relation": "conceptually_similar",
+    "explanation": "Mentioned as a related creature and shares the humanoid and spellcasting aspects, though mechanically different."
+  },
+  "monster_key": "greyfur"
+}

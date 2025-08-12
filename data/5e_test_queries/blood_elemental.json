@@ -1,0 +1,25 @@
+{
+    "name": "Blood Elemental",
+    "queries": [
+        {
+            "query": "large elemental creature that drains life force",
+            "variant": "large creature that elemental drains life force"
+        },
+        {
+            "query": "creature vulnerable to water and uses necrotic damage",
+            "variant": "creature that uses necrotic damage and is vulnerable to water"
+        },
+        {
+            "query": "blood-themed monster with high Constitution and low Intelligence",
+            "variant": "monster themed around blood with low Intelligence and high Constitution"
+        },
+        {
+            "query": "manipulative water monster that can grapple",
+            "variant": "grappling water monster that is manipulative"
+        },
+        {
+            "query": "elemental that can move through narrow spaces and has melee attacks",
+            "variant": "elemental that has melee attacks and can move through narrow spaces"
+        }
+    ]
+}

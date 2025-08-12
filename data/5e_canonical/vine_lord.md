@@ -1,6 +1,8 @@
 <MonsterName/>Vine Lord</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Vine Lord is a formidable Medium-sized Plant creature embodying the essence of nature's wrath. It operates from a perspective of lawful neutrality, indicating a balance that is often focused on preservation and control of its territory. With an Armor Class of 16 and 105 hit points, it possesses a sturdy defense and significant resilience in combat. The Vine Lord's challenge rating of 9, yielding 5,000 experience points upon defeat, underscores its potency in encounters. Its primary strengths lie in its high Dexterity of 20, granting a very good initiative and dexterous maneuvers, as well as its magical abilities that enhance its defenses and control over the battlefield. However, it is vulnerable to fire damage, which could significantly impair its capabilities. In addition to its combat prowess, the Vine Lord exhibits exceptional magical resistance and unique abilities like Green Regeneration and the powers derived from its connection to its Tendril Puppets through the Root Mind, allowing for effective tactical communication during battles.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions during combat, the Vine Lord can execute a Multiattack, allo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Lord
 
 *Medium* *Plant* *Lawful Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Tendril:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 7 (1d4 + 5) slashing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 16 Constitution saving throw or become infected with a vine seed (see the Vine Seed trait).
 - **Thorned Slam:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 10 (4d4) piercing damage.
 - **Forest Protectors (1/Day):** The vine lord magically calls 1d4 awakened trees or tendril puppets, or it calls 1 Plant with a challenge rating of 4 or lower. The called creatures arrive in 1d4 rounds, acting as allies of the vine lord and obeying its spoken commands. The Plants remain for 1 hour, until the vine lord dies, or until the vine lord dismisses them as a bonus action.
+</statblock>
 
 

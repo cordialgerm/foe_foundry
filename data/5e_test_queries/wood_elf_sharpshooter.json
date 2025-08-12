@@ -1,0 +1,25 @@
+{
+    "name": "Wood Elf Sharpshooter",
+    "queries": [
+        {
+            "query": "stealthy humanoid with exceptional ranged abilities",
+            "variant": "humanoid with great ranged abilities and stealth"
+        },
+        {
+            "query": "agile forest creature skilled in archery",
+            "variant": "forest-dwelling agile creature expert in archery"
+        },
+        {
+            "query": "medium creature that excels in perception and stealth",
+            "variant": "medium-sized creature with high stealth and perception skills"
+        },
+        {
+            "query": "wood elf that can avoid tracking and attack from afar",
+            "variant": "elf able to avoid being tracked and strike from a distance"
+        },
+        {
+            "query": "hunter known for keen sight and powerful longbow attacks",
+            "variant": "hunter with sharp eyesight and strong attacks from a longbow"
+        }
+    ]
+}

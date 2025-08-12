@@ -1,0 +1,11 @@
+{
+  "Djinni": {
+    "relation": "conceptually_similar",
+    "explanation": "A humanoid elemental spellcaster associated with elemental forces and genie lords."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "A versatile humanoid spellcaster with a broad spell repertoire and elemental manipulation."
+  },
+  "monster_key": "warlock-of-the-genie-lord"
+}

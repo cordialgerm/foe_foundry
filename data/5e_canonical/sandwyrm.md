@@ -1,6 +1,8 @@
 <MonsterName/>Sandwyrm</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Sandwyrm is a formidable creature, classified as a Large dragon of unaligned nature. This beast is adept at both ambush tactics and direct combat, utilizing its burrowing capabilities to remain hidden until the opportune moment. With a challenge rating of 6, it poses a significant threat, especially if its powerful attacks are combined effectively. The Sandwyrm's main strengths include its high hit points, decent armor class, and a variety of potent melee attacks. It excels in stealth due to its ability to burrow and ambush targets, using its impressive stealth score of +4. However, its Intelligence score of 5 indicates that it may not be the most strategic opponent when it comes to planning. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Sandwyrm is a lethal predator with a variety of offensive options a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sandwyrm
 
 *Large* *Dragon* *Unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Spine Trap:** When the sandwyrm is burrowed just below the surface of sand with its back spines exposed and a Medium or smaller creature enters the spines’ space, the sandwyrm closes the spines on the creature. The creature must succeed on a DC 15 Dexterity saving throw or be restrained. When the sandwyrm moves, a restrained creature moves with it. The sandwyrm can have only one creature restrained at a time. A creature, including the restrained creature, can take an action to free the restrained creature by succeeding on a DC 15 Strength check.
+</statblock>
 
 

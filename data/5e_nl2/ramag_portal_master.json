@@ -1,0 +1,53 @@
+{
+    "name": "Ramag Portal Master",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "normal walking speed of 30 feet",
+    "role": "Controller",
+    "tags": [
+        "spellcaster",
+        "manipulation",
+        "battlefield control"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "versatile"
+    ],
+    "description": "The Ramag Portal Master is a humanoid with exceptional intelligence and magical abilities, wearing no armor but capable of enhancing its protection with mage armor.",
+    "memorable": "This creature can create magical gateways and suppress teleportation, making it a unique tactical adversary.",
+    "goals": "To manipulate space and control the battlefield using its spellcasting and abilities.",
+    "relations": "Might be encountered with other spellcasters and planar beings, potentially serving a greater mage or planar entity.",
+    "environment": "Usually found in areas rich in magical energy or near portals and planar gates.",
+    "strengths": "Possesses a strong suite of crowd control spells and magic resistance, making it a strategic foe.",
+    "weaknesses": "Moderate armor class and poor physical combat abilities due to an average strength score.",
+    "attacks": "Can make two lightning stroke attacks dealing significant lightning damage while preventing reactions from the target.",
+    "most_powerful_ability": "Dimensional Seal, which hinders all teleportation and planar travel in its vicinity.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Highly proficient in arcana, history, and investigation, showcasing its scholarly prowess.",
+    "additional_information": [
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Can create gateways for rapid movement across the battlefield.",
+        "Has access to strong area spells like fireball and crowd control spells.",
+        "Powerful spellcasting with a spell save DC of 15.",
+        "Can paralyze with hold person or banish creatures to other planes."
+    ],
+    "damage_types": [
+        "lightning",
+        "force"
+    ],
+    "spellcasting": "7th-level spellcaster with access to various damaging and control spells.",
+    "test_queries": [
+        "humanoid spellcaster manipulating space",
+        "portal master creating magical gateways",
+        "controller with significant spell power",
+        "tactical foe that suppresses teleportation",
+        "versatile spellcaster using dimensional magic"
+    ]
+}

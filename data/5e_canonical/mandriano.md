@@ -1,6 +1,8 @@
 <MonsterName/>Mandriano</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Mandriano is a large, lawful evil plant creature known for its formidable combat abilities and dark powers. With a Challenge Rating of 5, it possesses a strong mix of offensive and defensive capabilities. Its natural armor provides a decent Armor Class of 13, and it boasts 60 hit points, making it durable in battle. The Mandriano excels in grappling and draining the life force from its enemies, using its exceptional Strength score and ability to potentially turn defeated foes into undead minions. However, it is notably vulnerable to fire damage, which can exploit its weaknesses. Furthermore, its low Dexterity impacts its agility, making it relatively less effective at avoiding attacks.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Its special ability, Consume the Spark, allows it to drain the essence of any gr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mandriano
 
 *Large* *Plant* *lawful evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Consume the Spark:** The mandriano drains the essence of one grappled target. The target must make a DC 14 Constitution saving throw, taking 13 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. The target's hp maximum is reduced by an amount equal to the necrotic damage taken, and the mandriano regains hp equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hp maximum to 0. A humanoid slain in this way rises 24 hours later as a zombie or skeleton under the mandriano's control, unless the humanoid is restored to life or its body is destroyed. The mandriano can control up to twelve undead at one time.
 
 
+</statblock>
 
 

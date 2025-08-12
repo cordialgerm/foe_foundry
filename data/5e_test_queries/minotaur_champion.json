@@ -1,0 +1,25 @@
+{
+    "name": "Minotaur Champion",
+    "queries": [
+        {
+            "query": "huge monster with fire breath and high resilience in melee combat",
+            "variant": "big beast that breathes fire and is very tough in close battles"
+        },
+        {
+            "query": "creature with excellent defense, magical resistance, and powerful gore attack",
+            "variant": "monster with great armor, magic resistance, and strong gore strike"
+        },
+        {
+            "query": "monstrosity that excels in melee and has labyrinthine recall",
+            "variant": "huge creature that is strong in close combat and can remember paths"
+        },
+        {
+            "query": "aggressive minotaur that uses fire and has high hit points",
+            "variant": "fierce minotaur that attacks with flames and has a lot of health"
+        },
+        {
+            "query": "tactical monster with good perception and fear-inducing roar",
+            "variant": "strategic creature with high awareness and intimidating roar"
+        }
+    ]
+}

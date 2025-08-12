@@ -1,0 +1,25 @@
+{
+    "name": "Ravenfolk Doom Croaker",
+    "queries": [
+        {
+            "query": "humanoid creature with magical abilities and fear-inducing powers",
+            "variant": "magic using humanoid monster that induces fear and has abilities"
+        },
+        {
+            "query": "creature that mimics sounds and wears studded leather armor",
+            "variant": "monster that wears studded leather armor and can mimic noises"
+        },
+        {
+            "query": "Ravenfolk humanoid with high wisdom and strong intimidation skills",
+            "variant": "humanoid from Ravenfolk with high wise score and good intimidation skills"
+        },
+        {
+            "query": "medium-sized creature that deals radiant damage and casts augury",
+            "variant": "medium monster that can cast augury and deals radiant damaging attacks"
+        },
+        {
+            "query": "creature with darkvision that uses psychic wings and has magic resistance",
+            "variant": "monster with magic resistance, darkvision, and phantasmal wings ability"
+        }
+    ]
+}

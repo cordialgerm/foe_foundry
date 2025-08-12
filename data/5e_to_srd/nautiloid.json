@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elemental creatures with aquatic nature and swimming abilities."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares aquatic tentacle attacks and a large sea creature theme."
+  },
+  "monster_key": "nautiloid"
+}

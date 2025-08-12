@@ -1,0 +1,55 @@
+{
+    "name": "Kobold, Leviathan Hunter",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 190,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "30 ft. walk, 30 ft. swim",
+    "role": "Bruiser",
+    "tags": [
+        "Kobold",
+        "Aquatic",
+        "Grappler",
+        "Magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "aquatic",
+        "tactical"
+    ],
+    "description": "The Kobold Leviathan Hunter is a medium-sized humanoid with a strong build and cunning eyes, capable of navigating both underwater and on land.",
+    "memorable": "Its unique ability to grapple creatures significantly larger than itself makes it a surprising and dangerous opponent in combat.",
+    "goals": "The Leviathan Hunter typically seeks to control larger aquatic creatures and protect its territory from intruders.",
+    "relations": "It might be found in the company of other aquatic creatures or allied Kobolds, often working together to ambush foes.",
+    "environment": "Commonly found in aquatic environments, such as rivers, lakes, or coastal areas.",
+    "strengths": "Resilient due to high hit points and resistance to bludgeoning and cold damage; excels in grappling and teamwork.",
+    "weaknesses": "Sensitive to sunlight, imposing disadvantages on its attacks and perception checks when in bright light.",
+    "attacks": "Can perform multiple slam attacks or use a harpoon that causes ongoing piercing damage to its target.",
+    "most_powerful_ability": "Expert Wrestler - grants the ability to grapple much larger creatures, controlling bigger foes with ease.",
+    "equipment": null,
+    "senses": "Has darkvision allowing for excellent visibility in dark environments, providing a passive perception score of 16.",
+    "skills": "Possesses decent perception abilities with a +2 modifier.",
+    "additional_information": [
+        "Can hold its breath for up to 30 minutes, making it a capable swimmer.",
+        "Weapon attacks deal additional cold or poison damage, enhancing its threat level.",
+        "Advantage on checks to track large swimming creatures, showing its keen hunting ability.",
+        "Utilizes pack tactics for effective teamwork during combat.",
+        "Employs grappling tactics to divert attacks away from itself to the grappled creature."
+    ],
+    "damage_types": [
+        "cold",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical swimmer with grappling skills",
+        "aquatic Kobold with powerful harpoon",
+        "Kobold that hunts large swimming creatures",
+        "grappling expert in an aquatic environment",
+        "Kobold sensitive to sunlight but tough"
+    ]
+}

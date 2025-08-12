@@ -1,0 +1,25 @@
+{
+    "name": "Ammut",
+    "queries": [
+        {
+            "query": "large celestial creature that specializes in hunting undead",
+            "variant": "large celestical creatur that specializes in hunting undeads"
+        },
+        {
+            "query": "powerful monster with abilities to stun undead and absorb spirits",
+            "variant": "powerfull monster with abillites to stun undead and absorp spirits"
+        },
+        {
+            "query": "creature with darkvision and ability to regurgitate swallowed foes",
+            "variant": "creature with dark vision and ability to regurgitate swollowed foes"
+        },
+        {
+            "query": "tough celestial with high constitution and melee attacks",
+            "variant": "tough celestail with high constitiution and meleeatacks"
+        },
+        {
+            "query": "monster that is immune to necrotic damage and frightened condition",
+            "variant": "monstor that is immune to necrotic damadge and frigtened condition"
+        }
+    ]
+}

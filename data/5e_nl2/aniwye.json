@@ -1,0 +1,50 @@
+{
+    "name": "Aniwye",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 feet walking, 20 feet climbing",
+    "role": null,
+    "tags": [
+        "shapeshifter",
+        "poisonous",
+        "cunning"
+    ],
+    "adjectives": [
+        "formidable",
+        "adaptable",
+        "versatile"
+    ],
+    "description": "The Aniwye is a large monstrosity resembling a skunk, possessing the ability to shapeshift into larger forms such as an ogre or hill giant. It has strong physical features and a notable natural armor.",
+    "memorable": "Its ability to shapeshift and release a deadly poisonous musk makes it a unique and formidable opponent in combat.",
+    "goals": "Often seeks to overpower opponents using cunning and strength, navigating various terrains to its advantage.",
+    "relations": "May be encountered with other monstrosities or as a solitary predator.",
+    "environment": "Typically found in forests or hilly terrains where it can utilize its climbing speed.",
+    "strengths": "High physical strength and adaptability in combat due to its shapeshifting ability.",
+    "weaknesses": "Low intelligence and less effective in social interactions due to negative charisma.",
+    "attacks": "In combat, it can perform multiple attacks, using slam attacks in larger forms, and a combination of bite and claw strikes in its skunk form.",
+    "most_powerful_ability": "The Deadly Musk ability that can stun and poison multiple enemies in a large area.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and keen perception, granting a passive perception score of 16.",
+    "skills": "Skilled in stealth, making it effective at moving unseen as well as having strong perceptive abilities.",
+    "additional_information": [
+        "Retains statistics when shapeshifting except for size.",
+        "Can revert to its skunk form if it takes significant damage while in larger forms.",
+        "Capable of burrowing and climbing only in skunk form."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shapeshifting monstrosity",
+        "poisonous skunk creature",
+        "adaptive battle form",
+        "monstrosity with deadly musk",
+        "cunning large skunk-like monster"
+    ]
+}

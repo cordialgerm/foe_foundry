@@ -1,0 +1,25 @@
+{
+    "name": "Plesiosaurus",
+    "queries": [
+        {
+            "query": "large aquatic dinosaur with a long neck and biting ability",
+            "variant": "big water dinosaur that has a long neck and can bite"
+        },
+        {
+            "query": "strong swimmer that can hold its breath for an hour",
+            "variant": "powerful swimmer that holds breath underwater for 60 minutes"
+        },
+        {
+            "query": "predatory dinosaur found in lakes and rivers",
+            "variant": "hunting dinosaur living in lakes and waterways"
+        },
+        {
+            "query": "creature that becomes territorial when provoked",
+            "variant": "animal that gets territorial if disturbed"
+        },
+        {
+            "query": "monster with strong jaws and good stealth abilities",
+            "variant": "beast with powerful bite and decent sneaking skills"
+        }
+    ]
+}

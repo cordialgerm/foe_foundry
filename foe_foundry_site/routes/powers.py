@@ -7,7 +7,7 @@ from fastapi import APIRouter, HTTPException, Query
 from foe_foundry import CreatureType, MonsterRole
 from foe_foundry.utils import name_to_key
 from foe_foundry_data.powers import PowerModel, Powers
-from foe_foundry_data.powers import search_powers as search_powers_core
+from foe_foundry_search.search import search_powers as search_powers_core
 
 router = APIRouter(prefix="/api/v1/powers")
 
@@ -118,7 +118,15 @@ def search_powers(
         limit = 100
 
     if keyword:
-        powers = search_powers_core(keyword, limit=limit)
+        powers = []
+        for result in search_powers_core(keyword, limit=limit):
+            if not result.power_key:
+                continue
+
+            power = Powers.PowerLookup.get(result.power_key)
+            if power is not None:
+                powers.append(power)
+
     else:
         powers = Powers.PowerLookup.values()
 

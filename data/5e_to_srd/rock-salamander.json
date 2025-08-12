@@ -1,0 +1,11 @@
+{
+  "Salamander": {
+    "relation": "close_cousins",
+    "explanation": "A small elemental creature related to fire-based Salamanders but adapted to rocky terrain and earth abilities."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elemental nature and earth-based movement like Earth Glide and burrowing through stone."
+  },
+  "monster_key": "rock-salamander"
+}

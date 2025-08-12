@@ -1,0 +1,48 @@
+{
+    "name": "Siren",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 38,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., swim 40 ft.",
+    "role": "null",
+    "tags": [
+        "charm",
+        "water",
+        "song"
+    ],
+    "adjectives": [
+        "enchanting",
+        "versatile",
+        "charming"
+    ],
+    "description": "The Siren is characterized by its enchanting presence, capable of breathing and singing both in air and underwater, making it versatile in combat.",
+    "memorable": "Its ability to charm and incapacitate opponents with its song is both powerful and terrifying.",
+    "goals": "To lure creatures into its grasp using its enchanting song.",
+    "relations": "Related to other water-dwelling monsters that employ charm and manipulation.",
+    "environment": "Typically found in water bodies, such as oceans or lakes.",
+    "strengths": "Has a powerful charm ability that can incapacitate multiple opponents from a distance.",
+    "weaknesses": "Relatively low armor class and hit points make it vulnerable to direct combat.",
+    "attacks": "Can perform two claw attacks, each dealing minor slashing damage.",
+    "most_powerful_ability": "Luring Song, which charms and incapacitates humanoids and giants within 300 feet.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Capable of engaging in combat in both air and water.",
+        "The charm effect can be broken if the charmed creature takes damage.",
+        "Successful saving throws grant immunity to its songs for 24 hours."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "water monster that charms and sings",
+        "creature that can lure with music",
+        "enchanting singer in aquatic environments",
+        "medium monstrosity that charms bog creatures",
+        "charmer that can swim and manipulate foes"
+    ]
+}

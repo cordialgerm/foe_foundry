@@ -1,0 +1,25 @@
+{
+    "name": "Cackling Skeleton",
+    "queries": [
+        {
+            "query": "undead creature that mocks its enemies and has demoralizing laughter",
+            "variant": "creature that is undead and mocks foes with unsettling laughter"
+        },
+        {
+            "query": "skeleton with a Cackle ability that weakens opponents within 30 feet",
+            "variant": "skeleton that cackles and debuffs enemies nearby"
+        },
+        {
+            "query": "medium-sized undead that deals psychic damage and can impose disadvantage",
+            "variant": "medium undead that inflicts psychic damage and gives disadvantage"
+        },
+        {
+            "query": "low Armor Class skeleton that is vulnerable to turning and has darkvision",
+            "variant": "skeleton with low AC that is weak to turning effects and has vision in the dark"
+        },
+        {
+            "query": "living-targeting skeleton that uses mockery and cackle in battles",
+            "variant": "skeleton that uses cackling and mocking against living targets"
+        }
+    ]
+}

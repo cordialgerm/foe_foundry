@@ -1,0 +1,7 @@
+{
+  "Fire Beetle": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, bioluminescent insect-like creatures that provide light in dark environments."
+  },
+  "monster_key": "lantern-beetle"
+}

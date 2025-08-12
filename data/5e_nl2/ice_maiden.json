@@ -1,0 +1,54 @@
+{
+    "name": "Ice Maiden",
+    "creature_type": "Fey",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 84,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "cold",
+        "manipulative"
+    ],
+    "adjectives": [
+        "chilling",
+        "elegant",
+        "cunning",
+        "powerful",
+        "deceptive"
+    ],
+    "description": "The Ice Maiden embodies chilling elegance with an alluring yet dangerous presence, wielding formidable powers associated with ice and snow.",
+    "memorable": "Her ability to charm and manipulate foes while dealing significant cold damage makes her a uniquely threatening adversary.",
+    "goals": "To charm, manipulate, and dominate others around her, utilizing her ice powers effectively in combat.",
+    "relations": "Related to ice-themed creatures and could serve under more powerful fey or cold entities.",
+    "environment": "Often found in icy or snowy terrains, preferring areas where she can maximize her cold abilities.",
+    "strengths": "Possesses high Charisma for social manipulation, effective combat abilities, and powerful cold damage attacks.",
+    "weaknesses": "Vulnerable to fire damage, which can be exploited by her enemies.",
+    "attacks": "Multiattack with Ice Blade dealing slashing and cold damage or Ice Bolt dealing significant cold damage.",
+    "most_powerful_ability": "Icy Embrace allows her to deal substantial cold damage and restrain enemies with ice.",
+    "equipment": null,
+    "senses": "Snow Sight enables her to see through snow or fog without penalty.",
+    "skills": "Excels in Deception and Persuasion due to her high Charisma, and is quite stealthy with a Stealth bonus of +6.",
+    "additional_information": [
+        "Chilling Presence can deal damage and extinguish flames nearby.",
+        "Ice Walk allows movement across icy surfaces without penalty.",
+        "Magic Resistance grants her advantage on saving throws against spells.",
+        "Kiss of the Frozen Heart grants immunity to cold while charming the target.",
+        "Snow Step allows teleportation through snow or ice."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chilling elegant fey creature",
+        "manipulative ice magic user",
+        "cold damage dealing fey",
+        "ice themed creature with charming abilities",
+        "skirmisher that can teleport through snow"
+    ]
+}

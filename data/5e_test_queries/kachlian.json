@@ -1,0 +1,25 @@
+{
+    "name": "Kachlian",
+    "queries": [
+        {
+            "query": "huge flying monster that consumes souls in battles",
+            "variant": "huge monster that flies and eats souls during fights"
+        },
+        {
+            "query": "creature with darkvision that is immune to being stunned",
+            "variant": "monster with darkvision and immunity to stun effects"
+        },
+        {
+            "query": "powerful aberration with spellcasting abilities and high hit points",
+            "variant": "strong aberration that can cast spells and has many hit points"
+        },
+        {
+            "query": "neutral evil creature that grapples and has resistance to bludgeoning",
+            "variant": "neutral evil monster that can grapple and resists bludgeoning damage"
+        },
+        {
+            "query": "Kachlian characteristics such as low mobility and high Constitution",
+            "variant": "characteristics of the Kachlian like high Constitution and little mobility"
+        }
+    ]
+}

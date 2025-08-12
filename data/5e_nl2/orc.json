@@ -1,0 +1,51 @@
+{
+    "name": "Orc",
+    "creature_type": "Humanoid",
+    "creature_subtype": "orc",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 15,
+    "ac": 13,
+    "srd": true,
+    "ac_description": "hide armor",
+    "cr": "1/2",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "orc",
+        "humanoid",
+        "warrior"
+    ],
+    "adjectives": [
+        "fierce",
+        "green-skinned",
+        "savage",
+        "brutal"
+    ],
+    "description": "Orcs are fierce, green-skinned humanoids known for their savage nature and warlike culture. They stand taller and stronger than most humans, often wielding crude but effective weapons like axes, spears, or clubs.",
+    "memorable": "Orcs thrive in melee combat, charging into battle with little regard for safety, often leading raids and attacks.",
+    "goals": "To conquer and take what they want by force.",
+    "relations": "Often led by chieftains or powerful shamans, they may be encountered alongside other orc tribes.",
+    "environment": "Commonly found in warbands raiding settlements.",
+    "strengths": "Strong and resilient warriors with decent hit points and an ability to resist debilitating effects.",
+    "weaknesses": "Lack of intelligence and charm, making them vulnerable to more cunning adversaries.",
+    "attacks": "Uses a greataxe and javelins for melee and ranged attacks, dealing significant slashing and piercing damage.",
+    "most_powerful_ability": "Aggressive ability allows them to close distance toward foes rapidly.",
+    "equipment": null,
+    "senses": "Has darkvision allowing better vision in low light conditions.",
+    "skills": "Notable for intimidation with a proficiency that enhances their frightening presence.",
+    "additional_information": [
+        "Stalwart ability grants advantage on saving throws against ongoing effects.",
+        "Charge into battle with little regard for safety.",
+        "Often form raiding parties to attack settlements."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "green-skinned warrior charging into battle",
+        "savage humanoid with a greataxe",
+        "orc raider known for aggression and strength",
+        "fierce warrior wielding crude weapons",
+        "brutal combatant with warlike culture"
+    ]
+}

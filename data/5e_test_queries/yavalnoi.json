@@ -1,0 +1,25 @@
+{
+    "name": "Yavalnoi",
+    "queries": [
+        {
+            "query": "large aquatic monster that can manipulate water",
+            "variant": "big water monster that manipulates aquatic environments"
+        },
+        {
+            "query": "chaotic evil creature with strong spellcasting abilities",
+            "variant": "evil chaotic entity with powerful spellcasting powers"
+        },
+        {
+            "query": "underwater monster with damage resistance to cold",
+            "variant": "creature that thrives underwater and resists cold damage"
+        },
+        {
+            "query": "monster that summons giant crabs and octopus for battle",
+            "variant": "creature that can call giant crabs and octopuses during combat"
+        },
+        {
+            "query": "bipedal aberration that uses luminous burst to outline foes",
+            "variant": "two-legged aberration that activates luminous burst to highlight enemies"
+        }
+    ]
+}

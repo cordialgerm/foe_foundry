@@ -1,0 +1,49 @@
+{
+    "name": "Swarm of Bats",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 14,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast"
+    ],
+    "adjectives": [
+        "cacophonous",
+        "tiny",
+        "nimble"
+    ],
+    "description": "The Swarm of Bats is a cluster of tiny bats, dark and fluttering, often creating a chaotic mass in the air, typically found in cavernous environments.",
+    "memorable": "This swarm disrupts spellcasting with its cacophonous behavior and can occupy the same space as other creatures, presenting unique combat challenges.",
+    "goals": "Usually seeks dark, secluded environments for nesting and hunting insects.",
+    "relations": "May be encountered with other cave-dwelling creatures or as part of larger ecosystems.",
+    "environment": "Dark, cavernous areas, such as caves or abandoned ruins.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage; immune to a variety of debilitating conditions.",
+    "weaknesses": "Cannot regain hit points, making it vulnerable to sustained damage.",
+    "attacks": "Bite attack with a +4 to hit, dealing 2d6 piercing damage or reduced damage based on remaining hit points.",
+    "most_powerful_ability": "Cacophonous Swarm, which disrupts spellcasting by forcing a Constitution saving throw.",
+    "equipment": null,
+    "senses": "Possesses heightened hearing that enhances its perception to 16 when sensing through sound.",
+    "skills": "Notably stealthy with a Stealth score of 14, allowing it to sneak up on creatures.",
+    "additional_information": [
+        "Can occupy the same space as other creatures due to its swarm nature.",
+        "Is deafened while not using its keen sense of hearing.",
+        "Does not regain hit points or gain temporary hit points during encounters.",
+        "Effective in ambushing or overwhelming isolated targets.",
+        "Demonstrates great tactical utility in combat scenarios."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic swarm of bats",
+        "disruptive flying creatures",
+        "tactical swarm combat",
+        "cave-dwelling monster",
+        "nuisance to spellcasters"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Ankheg Spawn",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft., burrow 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "ambush",
+        "burrower",
+        "acid resistant"
+    ],
+    "adjectives": [
+        "predatory",
+        "resilient",
+        "fragile"
+    ],
+    "description": "The Ankheg Spawn is a Medium monstrosity with predatory instincts, characterized by its physical prowess and resilience. It has a strong build, capable of dealing damage with its bite and claws, and its ability to burrow allows for strategic ambush opportunities.",
+    "memorable": "The Ankheg Spawn is unique for its ability to detect vibrations through tremorsense, making it adept at locating enemies in stealthy situations.",
+    "goals": "To ambush unsuspecting prey and leverage its burrowing capabilities for strategic advantages in combat.",
+    "relations": "Related to larger Ankheg creatures, often found in similar environments.",
+    "environment": "Typically found in underground burrows or areas where it can easily ambush prey.",
+    "strengths": "Resistance to acid damage, effective melee and ranged attacks, and the ability to knock opponents prone.",
+    "weaknesses": "Low intelligence, making it vulnerable to tactics that exploit its lack of mental fortitude.",
+    "attacks": "Bite delivers slashing damage, while claws can knock targets prone, and acid spit allows ranged attacks.",
+    "most_powerful_ability": "Tremorsense at 30 feet, enabling detection of nearby vibrations for tactical advantage.",
+    "equipment": null,
+    "senses": "Tremorsense at 30 feet allows it to detect nearby movements through the ground.",
+    "skills": null,
+    "additional_information": [
+        "Low intelligence score indicating limited problem-solving ability.",
+        "Good Wisdom score suggests an awareness of surroundings.",
+        "Ability to drag prone targets, enhancing combat tactics."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator monster",
+        "vibrations detecting creature",
+        "underground burrower",
+        "predatory monstrosity with acid",
+        "battlefield control creature"
+    ]
+}

@@ -1,6 +1,10 @@
 <MonsterName/>Archmage</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>12</CR>
+<AC/>12</AC>
+<HP/>99</HP>
 <summary>An Archmage is a figure of immense magical power and knowledge, often an elder or a leader of magical academies or councils. They wear ornate robes and carry staffs or magical artifacts that enhance their already potent spellcasting abilities. Archmages are masters of the arcane, capable of casting devastating spells, from fireballs to teleportation. Their knowledge spans centuries, and they can bend reality itself to their will. Though some Archmages work for the greater good, others may be driven by ambition or personal gain. They are highly intelligent, calculating, and often play a pivotal role in the politics of the magical world.</summary>
 
 <summary>The Archmage is a formidable Medium Humanoid creature, representing one of the highest displays of magical prowess and intellect within the game. With a Challenge Rating of 11, the Archmage is equipped to pose a significant threat to adventurers, boasting an impressive pool of hit points at 117, along with strong spellcasting abilities and a variety of powerful spells. Their ability to influence the battlefield with spells like Lightning Bolt and Confusion demonstrates their potency in offensive and control tactics. However, despite their strengths, the Archmage has an Armor Class of only 12, indicating that they can be vulnerable to strong attacks if not adequately protected. They thrive in strategic situations, relying heavily on spells and special abilities, and their high Intelligence score of 20 ensures that they are not easily outwitted.</summary>
@@ -53,6 +57,7 @@ Finally, its Counter Spell reaction is a defensive measure against enemy spellca
 
 Source: 5e_srd
 
+<statblock>
 ### Archmage
 
 *Medium humanoid (any race), any alignment*
@@ -101,7 +106,8 @@ Cantrips (at will): *fire bolt*, *light*, *mage hand*, *prestidigitation*, *shoc
 
 **Archmages** are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
 
-An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers.
+An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers.</statblock>
+
 
 
 
@@ -109,6 +115,7 @@ An archmage typically has one or more apprentice mages, and an archmage's abode 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archmage
 
 *Medium* *Humanoid*
@@ -180,6 +187,7 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V:** When the archmage is hit by an attack or targeted by magic missile, they gain a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the start of their next turn.
 
 
+</statblock>
 
 
 
@@ -188,6 +196,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archmage
 
 *Medium humanoid (any lineage)*
@@ -230,5 +239,6 @@ Source: 5e_artisinal_monsters
 
 - **Counter Spell.** When a creature the archmage can see within 30 feet of it casts a spell, the archmage can counter the spell, interrupting the casting. This reaction works like the counterspell spell with a +5 spellcasting ability check, except the archmage must always make the ability check, regardless of the spell’s circle. The archmage has advantage on this check if the spell is on the Arcane source spell list.
 
+</statblock>
 
 

@@ -1,0 +1,11 @@
+{
+  "Giant Badger": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, tough beasts with digging and claw attacks, fitting a similar defensive and territorial role."
+  },
+  "Giant Lizard": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, scaled beast with natural armor and claw attacks, similar in physical traits and combat style."
+  },
+  "monster_key": "dire-pangolin"
+}

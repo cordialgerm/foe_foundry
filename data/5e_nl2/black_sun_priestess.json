@@ -1,0 +1,50 @@
+{
+    "name": "Black Sun Priestess",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "dark magic",
+        "chaotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "aggressive",
+        "vulnerable to light"
+    ],
+    "description": "The Black Sun Priestess is a humanoid figure clad in hide armor, wielding a greatclub with notable physical prowess and potent magical abilities.",
+    "memorable": "Her ability to see through magical darkness and her potent array of spells makes her a daunting presence in any dark environment.",
+    "goals": "To exert her will through manipulation and subversion, often using dark magic to combat her foes.",
+    "relations": "She may serve or be associated with other chaotic evil entities, possibly leading undead minions raised from the dead.",
+    "environment": "Often found in dark, foreboding places, particularly where she can use her abilities to their fullest.",
+    "strengths": "High Strength and Constitution scores enhance her combat capabilities, alongside effective spellcasting.",
+    "weaknesses": "Light sensitivity causes significant drawbacks in bright conditions, making her less effective in well-lit areas.",
+    "attacks": "Engages in combat using a greatclub, dealing bludgeoning damage while utilizing spells that curse and control the battlefield.",
+    "most_powerful_ability": "Her ability to animate dead brings powerful undead under her control, turning fallen foes into allies.",
+    "equipment": "greatclub",
+    "senses": "Possesses darkvision, allowing her to see in darkness up to 60 feet without impairment.",
+    "skills": "Proficient in insight and intimidation, with a strong ability to influence and read others.",
+    "additional_information": [
+        "Can see through magical darkness with Black Sun Sight.",
+        "Aggressive ability allows rapid movement towards enemies.",
+        "Spellcasting includes a diverse range of offensive and defensive spells.",
+        "Vulnerability to bright light imposes significant combat disadvantages.",
+        "Her presence is felt strongly in both melee and spellcasting scenarios."
+    ],
+    "damage_types": [],
+    "spellcasting": "Strong spellcaster with access to various cleric spells, specializing in curses and battlefield control.",
+    "test_queries": [
+        "dark priestess",
+        "chaotic evil spellcaster",
+        "undead summoner",
+        "magical darkness specialist",
+        "aggressive humanoid combatant"
+    ]
+}

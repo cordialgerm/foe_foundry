@@ -1,0 +1,7 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "Both are small aquatic humanoids with survival skills and natural weapons."
+  },
+  "monster_key": "otterfolk"
+}

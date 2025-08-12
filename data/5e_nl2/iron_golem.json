@@ -1,0 +1,54 @@
+{
+    "name": "Iron Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 210,
+    "ac": 20,
+    "srd": true,
+    "cr": "16",
+    "movement": "30 ft.",
+    "role": "Defender",
+    "tags": [
+        "construct",
+        "guardian",
+        "magical"
+    ],
+    "adjectives": [
+        "massive",
+        "indestructible",
+        "slow",
+        "poisonous"
+    ],
+    "description": "A massive, humanoid construct made entirely of iron, standing over 12 feet tall, with an impervious iron body.",
+    "memorable": "Extremely durable with immunity to most damage types and can heal from fire damage.",
+    "goals": "Typically serves as a guardian for treasures, vaults, or important relics.",
+    "relations": "Often employed by wizards, sorcerers, or malicious entities.",
+    "environment": "Usually found in treasure vaults, fortresses, or locations of importance.",
+    "strengths": "Immunity to poison, psychic damage, and physical damage from non-magical attacks, with high hit points.",
+    "weaknesses": "Low dexterity and intelligence make it predictable in battle.",
+    "attacks": "Can perform multiple melee attacks with massive weapons, delivering significant bludgeoning and piercing damage.",
+    "most_powerful_ability": "Releases poisonous gas in a 15-foot radius, dealing considerable damage to nearby foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision of 120 feet.",
+    "skills": "Average perception allows it to notice threats.",
+    "additional_information": [
+        "Functions without the need for air, food, drink, or sleep.",
+        "Immune to exhaustion and several debilitating conditions.",
+        "Can heal by absorbing fire damage.",
+        "Attacks are considered magical, avoiding standard defenses.",
+        "Has a multiattack capability with both spear arm and shield bash."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive iron guardian with poison attacks",
+        "indestructible construct that heals from fire",
+        "slow but powerful iron protector with gas attack",
+        "golem that serves wizards and sorcerers",
+        "huge magically animated iron creature"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Lymarien</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>5</HP>
 <summary>The Lymarien is a tiny fey creature that embodies a neutral good alignment. It is characterized by its impressive speed and dexterity, along with its ability to influence the battlefield through distraction. While its physical strength is very weak, its agility allows it to fly swiftly, making it elusive in combat. The Lymarien's challenge rating of 1/8 indicates that it is a minor threat, suitable for low-level encounters or as an interesting addition to a larger fight. Notably, the creature can communicate with beasts, providing opportunities for unique interactions during gameplay.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Lymarien serves as a nimble supporter and disruptor on the battlefi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lymarien
 
 *Tiny* *Fey* *neutral good*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 
 
+</statblock>
 
 

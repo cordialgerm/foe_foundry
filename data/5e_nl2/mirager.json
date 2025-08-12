@@ -1,0 +1,53 @@
+{
+    "name": "Mirager",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "fey",
+        "seduction",
+        "deception",
+        "charming"
+    ],
+    "adjectives": [
+        "deceptive",
+        "cunning",
+        "nimble"
+    ],
+    "description": "The Mirager embodies seduction and deception, capable of altering its appearance to mimic other creatures while exuding an appealing grace.",
+    "memorable": "It can charm foes with its seductive moves and has powerful psychic attacks.",
+    "goals": "To manipulate and deceive opponents in social encounters and combat.",
+    "relations": "May associate with other fey creatures or enigmatic beings that thrive on deception.",
+    "environment": "Often found in sandy terrains or areas conducive to its illusory nature.",
+    "strengths": "Exceptional Charisma enhances its ability to charm and deceive, coupled with great mobility in sandy environments.",
+    "weaknesses": "Moderate physical strength and reliance on charm and deception may backfire against strong-willed opponents.",
+    "attacks": "Slam attacks for bludgeoning damage and necrotic damage through the Thirsting Kiss ability, alongside psychic damage with Blow Kiss.",
+    "most_powerful_ability": "The Thirsting Kiss ability allows it to inflict significant necrotic damage while also gaining temporary hit points.",
+    "senses": "Possesses darkvision up to 60 feet, providing good awareness in low-light conditions.",
+    "skills": "Excels in Deception and Performance, making it highly skilled in manipulating situations and interacting with humanoids.",
+    "additional_information": [
+        "Can charm humanoids that see it when it moves elegantly.",
+        "Employs illusion magic to alter its appearance.",
+        "Capable of stunning charmed targets, creating confusion.",
+        "Uses spellcasting to further influence and control encounters.",
+        "Gains mobility advantages in sandy terrain."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": "Can cast 'Charm Person', 'Hallucinatory Terrain', and 'Suggestion' enhancing its deceptive capabilities.",
+    "test_queries": [
+        "cunning fey that charms its opponents",
+        "seductive creature with illusion abilities",
+        "deceptive monster capable of stunning foes",
+        "sand-dwelling fey that manipulates situations",
+        "necrotic damage dealer with charming abilities"
+    ]
+}

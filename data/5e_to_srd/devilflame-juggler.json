@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "A large, agile devil with spiny features and fiendish combat abilities similar to a devilflame juggler."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "A fiery fiend associated with fire and agility, sharing the elemental and thematic aspects of the Devilflame Juggler."
+  },
+  "monster_key": "devilflame-juggler"
+}

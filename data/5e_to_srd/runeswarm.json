@@ -1,0 +1,11 @@
+{
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "The Runeswarm is a large magical construct swarm, similar in swarm nature to Swarm of Insects but with magical and construct traits."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs with magical origins, though the Runeswarm is a swarm of runes rather than a single animated suit of armor."
+  },
+  "monster_key": "runeswarm"
+}

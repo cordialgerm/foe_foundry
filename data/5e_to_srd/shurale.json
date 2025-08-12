@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are medium fey creatures associated with enchanted forests and use magic and deception."
+  },
+  "Satyr": {
+    "relation": "close_cousins",
+    "explanation": "The Shurale shares the mischievous, cunning nature and fey traits common to Satyrs."
+  },
+  "monster_key": "shurale"
+}

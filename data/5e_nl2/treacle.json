@@ -1,0 +1,50 @@
+{
+    "name": "Treacle",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "ooze",
+        "stealth",
+        "trickster",
+        "ambush"
+    ],
+    "adjectives": [
+        "tiny",
+        "deceptive",
+        "cunning"
+    ],
+    "description": "The Treacle is a tiny, gelatinous ooze with a soft and plush texture. It can change its shape into familiar objects or creatures, deceiving passersby.",
+    "memorable": "Its ability to drain blood while remaining hidden makes it a unique and stealthy ambusher.",
+    "goals": "The Treacle aims to remain undetected and drain the blood from unsuspecting victims.",
+    "relations": "The Treacle can be found with other low-level creatures and may serve as an ambusher in various environments.",
+    "environment": "Typically found in tight spaces or areas where it can blend in with objects.",
+    "strengths": "Possesses good mobility with Amorphous ability, allowing it to slip through narrow gaps.",
+    "weaknesses": "Lacks offensive power, relying on stealth and deception for effectiveness.",
+    "attacks": "Uses Blood Drain to attach to its target and siphon hit points gradually.",
+    "most_powerful_ability": "Mimic Innocence allows it to transform into non-threatening shapes, tricking adventurers.",
+    "senses": "Has blindsight out to 120 feet, enabling it to navigate without sight.",
+    "skills": "Has proficiency in Deception, allowing it to effectively trick creatures.",
+    "additional_information": [
+        "Blindsight allows it to perceive its environment without sight.",
+        "Can mimic animal sounds to deceive other creatures.",
+        "Slow movement speed makes it reliant on ambush tactics.",
+        "Can remain in disguise for up to 8 hours.",
+        "Low passive Perception makes it unaware of surroundings."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny blood-draining ooze",
+        "deceptive creature that mimics",
+        "ambushing ooze with blood drain ability",
+        "stealthy creature that disguises itself",
+        "soft-textured creature in tight spaces"
+    ]
+}

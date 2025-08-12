@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Wasteland Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>333</HP>
 <summary>The Ancient Wasteland Dragon is a gargantuan creature embodying chaotic evil, serving as a formidable challenge for any adventurer. Its massive size and impressive powers make it a devastating opponent in combat. With an Armor Class of 22 and a massive pool of 333 hit points derived from rolling 18d20 and adding 144, this dragon is exceptionally resilient. It has a powerful blend of melee attacks, an area fear effect, and a devastating breath weapon, making it a versatile combatant. However, its Dexterity score of 10 suggests it is somewhat sluggish in terms of agility, which could be a point of vulnerability against more nimble foes. This creature's base statistics, along with its abilities, give it a Challenge Rating of 23, meaning it is a very high-level threat designed for experienced parties.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ All these characteristics combine to make the Ancient Wasteland Dragon a dauntin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Wasteland Dragon
 
 *Gargantuan* *Dragon* *chaotic evil*
@@ -65,5 +68,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

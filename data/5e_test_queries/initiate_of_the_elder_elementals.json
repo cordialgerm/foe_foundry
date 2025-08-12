@@ -1,0 +1,25 @@
+{
+    "name": "Initiate of the Elder Elementals",
+    "queries": [
+        {
+            "query": "small humanoid with elemental powers that operates at night",
+            "variant": "small humanoid creature with powers of the elements that works at night"
+        },
+        {
+            "query": "creature that uses spells and has sunlight sensitivity in bright light",
+            "variant": "monster that casts spells and suffers in bright light due to sunlight sensitivity"
+        },
+        {
+            "query": "humanoid monster with acid resistance and good intelligence",
+            "variant": "humanoid creature with resistance to acid and high intelligence"
+        },
+        {
+            "query": "darkvision humanoid that excels in intimidation and religion",
+            "variant": "humanoid with darkvision skilled in intimidation and religion"
+        },
+        {
+            "query": "Initiate does elemental damage with spells and prefers allies nearby",
+            "variant": "Initiate deals elemental damage through spells and benefits from allies being close"
+        }
+    ]
+}

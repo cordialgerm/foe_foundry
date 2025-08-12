@@ -1,0 +1,25 @@
+{
+    "name": "Fragrant One",
+    "queries": [
+        {
+            "query": "small fey creature that uses pheromones to charm",
+            "variant": "small fey being that charms using sweet-smelling pheromones"
+        },
+        {
+            "query": "chaotic neutral manipulative charm caster in a battle",
+            "variant": "manipulative charm caster with chaotic neutral alignment during combat"
+        },
+        {
+            "query": "fey that can incapacitate enemies with psychic attacks",
+            "variant": "fey creature capable of incapacitating foes using psychic damage"
+        },
+        {
+            "query": "creature immune to charm and frightened with darkvision",
+            "variant": "being that is immune to being charmed or frightened and has darkvision"
+        },
+        {
+            "query": "Fragrant One's sweet-smelling aura affecting allies and foes",
+            "variant": "aura of the Fragrant One that smells sweet and impacts both allies and enemies"
+        }
+    ]
+}

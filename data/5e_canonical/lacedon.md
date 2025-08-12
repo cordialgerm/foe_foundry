@@ -1,6 +1,8 @@
 <MonsterName/>Lacedon</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Lacedon is a Medium undead creature that carries an aura of malevolence, often lurking in dark waters or decaying environments. With a Challenge Rating of 1, it presents a moderate threat to adventurers, particularly due to its ability to paralyze foes. Its notable strengths include average physical capabilities, good agility, and unique abilities that allow it to withstand various forms of damage. However, its low intelligence can somewhat limit its tactical decisions during encounters. The Lacedon embodies the characteristics of ghouls, capable of swimming with ease and possessing resistances to necrotic damage, but it remains vulnerable to radiant damage, which can impair its combat effectiveness.</summary>
 
 <detail>
@@ -32,6 +34,7 @@ Overall, the Lacedon is a dangerous foe, especially in tight encounters where pa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lacedon
 
 *Medium* *Undead*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one incapacitated creature. Hit: 6 (1d8 + 2) piercing damage.
 
 
+</statblock>
 
 

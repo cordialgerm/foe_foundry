@@ -1,0 +1,25 @@
+{
+    "name": "Flithidir",
+    "queries": [
+        {
+            "query": "small fey creature known for chaos and mischief",
+            "variant": "small chaotic fey known for its mischief"
+        },
+        {
+            "query": "fey creature that can fly and uses cacophony",
+            "variant": "creature from the fey realm that can fly and creates cacophony"
+        },
+        {
+            "query": "agile creature with colorful features that casts spells",
+            "variant": "agile fey with bright colors that can cast spells"
+        },
+        {
+            "query": "mischievous small creature with good dexterity and charisma",
+            "variant": "mischievous tiny creature with strong dexterity and charismas"
+        },
+        {
+            "query": "flithidir's shapechanging ability and combat tactics",
+            "variant": "shapechanger capabilities and combat strategies of the flithidir"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A large, combat-focused humanoid with tactical melee abilities similar to a Veteran."
+  },
+  "monster_key": "knight-ab-errant"
+}

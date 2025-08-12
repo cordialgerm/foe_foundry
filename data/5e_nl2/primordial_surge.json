@@ -1,0 +1,56 @@
+{
+    "name": "Primordial Surge",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 232,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 40 ft., fly 90 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "gargantuan",
+        "nature"
+    ],
+    "adjectives": [
+        "formidable",
+        "devastating",
+        "transformative"
+    ],
+    "description": "The Primordial Surge is a massive, agile elemental creature capable of traversing land and air effortlessly, distinguished by its capacity to create lush landscapes and revive fallen allies.",
+    "memorable": "Its explosive demise opens a fertile area and can revive recently dead creatures, providing a significant tactical consideration for adventurers.",
+    "goals": "Serving as a primal force of nature, it seeks to shape its environment and dominate its foes.",
+    "relations": "May be encountered alongside other elemental beings or creatures of nature.",
+    "environment": "Typically found in wild, untamed regions where it can exert its transformative powers.",
+    "strengths": "Immunity to poison and several conditions combined with resistance to multiple damage types ensures its battlefield durability.",
+    "weaknesses": "Low intelligence, wisdom, and charisma, limiting strategic actions and social interactions.",
+    "attacks": "Can unleash three elemental strikes per turn, dealing various elemental damage with each attack.",
+    "most_powerful_ability": "Life From Death: Upon dying, it creates a wide area of life, allowing the resurrection of dead creatures and making the terrain fertile.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, enabling effective navigation in its surroundings without relying on sight.",
+    "skills": "Proficient in perception, allowing it to detect surroundings moderately well.",
+    "additional_information": [
+        "Exceptionally high dexterity enhances agility in combat.",
+        "Capable of creating difficult terrain through its restorative rain ability.",
+        "Transforms the battlefield with overgrowth and life restoration upon its death.",
+        "Can inflict ongoing damage through contact and area effects.",
+        "Resurrects allies within a significant radius upon its demise."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan elemental that creates lush landscapes",
+        "elemental capable of reviving fallen allies",
+        "agile elemental that can fly and transform terrain",
+        "elemental force with devastating area attacks",
+        "creature that revitalizes nature upon death"
+    ]
+}

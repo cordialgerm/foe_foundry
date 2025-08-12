@@ -1,0 +1,25 @@
+{
+    "name": "Anophiloi",
+    "queries": [
+        {
+            "query": "small flying predator that drains life energy",
+            "variant": "small predator that flies and drains life energy"
+        },
+        {
+            "query": "monstrosity that can climb and has blood frenzy ability",
+            "variant": "climbing monstrosity with blood frenzy ability"
+        },
+        {
+            "query": "creature vulnerable to cold and immune to poisoned condition",
+            "variant": "creature that is immune to poisoned condition and vulnerable to cold"
+        },
+        {
+            "query": "agile monster with good stealth skills and attacking from the air",
+            "variant": "agile creature with stealth skills that attacks from above"
+        },
+        {
+            "query": "predatory small creature that uses multiattacks and has a blood sense",
+            "variant": "small predatory monster with multiattacks and blood sense ability"
+        }
+    ]
+}

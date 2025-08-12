@@ -1,0 +1,50 @@
+{
+    "name": "Ecstatic Bloom",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Huge",
+    "hp": 171,
+    "ac": 15,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 10 ft.",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "undead guardian",
+        "life-giver"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "supportive",
+        "regenerative"
+    ],
+    "description": "The Ecstatic Bloom is a Huge Celestial creature that radiates life and healing energy. It has vibrant, luminescent features reminiscent of blooming flowers, and its presence inspires warmth and protection against darkness.",
+    "memorable": "This creature is unique for its ability to regenerate health, its aura that turns undead, and its capacity to enhance the resilience of nearby allies.",
+    "goals": "To protect life and combat evil, especially against undead threats.",
+    "relations": "Often found alongside good-aligned celestial beings or in areas rich with life, it opposes undead creatures.",
+    "environment": "Typically inhabits lush, vibrant areas such as enchanted forests or sacred groves.",
+    "strengths": "It can regenerate health, turn undead, and enhance allies' resistance, making it a formidable support in battle.",
+    "weaknesses": "Vulnerable to fire damage, which disrupts its healing abilities.",
+    "attacks": "Utilizes the Gilded Beam, a powerful ranged spell attack dealing radiant damage, and can stun enemies with a deafening celestial chorus.",
+    "most_powerful_ability": "The Castigate ability, which can stun non-good-aligned creatures nearby, greatly impacts enemies in combat.",
+    "senses": "Possesses truesight up to 120 feet, allowing it to see the true nature of creatures and objects.",
+    "skills": "Highly skilled in Insight and Perception, both at +9, making it adept at sensing the intentions and environment around it.",
+    "additional_information": [
+        "Immunities to radiant damage and conditions like charmed or frightened.",
+        "Can understand all languages and communicate telepathically up to 120 feet.",
+        "Foster the Trees ability gives nearby trees advantage on saving throws.",
+        "Aura of Life turns undead creatures that come too close.",
+        "Blessed Regrowth ability heals good-aligned creatures nearby."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge celestial creature that heals allies",
+        "guardian of life that turns undead",
+        "powerful bloom creature with truesight",
+        "ecstatic creature with stunning celestial powers",
+        "life-giving celestial being in enchanted forests"
+    ]
+}

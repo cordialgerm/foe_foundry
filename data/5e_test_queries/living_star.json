@@ -1,0 +1,25 @@
+{
+    "name": "Living Star",
+    "queries": [
+        {
+            "query": "huge celestial creature with radiant damage and blindness ability",
+            "variant": "huge celestial monster able to inflict radiant damage and cause blindness"
+        },
+        {
+            "query": "strong celestial being that can change size and cast spells",
+            "variant": "powerful celestial entity capable of resizing and using spells"
+        },
+        {
+            "query": "celestial with high Dexterity and immunity to necrotic damage",
+            "variant": "celestial creature that has elevated Dexterity and is immune to necrotic damage"
+        },
+        {
+            "query": "formidable creature causing damage in a 30-foot radius upon death",
+            "variant": "powerful monster dealing damage in a radius of 30 feet when it dies"
+        },
+        {
+            "query": "flying monster immune to charm and with truesight",
+            "variant": "flying creature that is immune to being charmed and has truesight"
+        }
+    ]
+}

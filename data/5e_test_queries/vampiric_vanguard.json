@@ -1,0 +1,25 @@
+{
+    "name": "Vampiric Vanguard",
+    "queries": [
+        {
+            "query": "medium undead creature that can heal from its attacks in combat",
+            "variant": "undead medium creature that heals from its attacks during fights"
+        },
+        {
+            "query": "vampiric enemy with resistance to necrotic damage found in dark places",
+            "variant": "vampire-like foe with necrotic resistance located in dark areas"
+        },
+        {
+            "query": "monster that takes damage from sunlight and wooden weapons",
+            "variant": "creature harmed by sunlight and wooden weapons"
+        },
+        {
+            "query": "stealthy undead that can climb surfaces and has a powerful bite attack",
+            "variant": "climbing undead creature with strong bite attack and stealth"
+        },
+        {
+            "query": "evil vampire that thrives in melee when its health is low",
+            "variant": "malicious vampire that excels in combat when its hp is reduced"
+        }
+    ]
+}

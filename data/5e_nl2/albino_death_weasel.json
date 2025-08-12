@@ -1,0 +1,52 @@
+{
+    "name": "Albino Death Weasel",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "burrow 30 ft., walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Beast",
+        "Poison",
+        "Grappler"
+    ],
+    "adjectives": [
+        "cunning",
+        "ferocious",
+        "formidable"
+    ],
+    "description": "The Albino Death Weasel is a large, cunning beast known for its sleek, pale fur and aggressive demeanor. It uses its keen senses to stalk prey and employs grappling techniques to restrain its targets.",
+    "memorable": "Its unique Musk Spray ability can poison foes, providing a significant tactical advantage in fights.",
+    "goals": "Hunt and incapacitate prey using stealth and ambush tactics.",
+    "relations": "Can be encountered with other predators in its habitat, such as larger beasts or territorial animals.",
+    "environment": "Predominantly found in forested or underground environments, relying on stealth to ambush its prey.",
+    "strengths": "High strength and agility allow for effective melee attacks and grappling capabilities.",
+    "weaknesses": "Very low intelligence and charisma limit its tactical and social interactions.",
+    "attacks": "Can deal piercing damage with a bite and slashing damage with claws, alongside its poison abilities.",
+    "most_powerful_ability": "Musk Spray, which can poison multiple foes, incapacitating them temporarily.",
+    "equipment": null,
+    "senses": "Has keen hearing and smell, granting it advantage on perception checks relying on these senses.",
+    "skills": "Proficient in stealth and perception, enhancing its ability to ambush prey.",
+    "additional_information": [
+        "Can knock targets prone with its Pounce ability.",
+        "Grappling ability allows it to control smaller foes effectively.",
+        "Relies heavily on its environmental stealth for hunting.",
+        "Poison from Musk Spray can be debilitating for its victims.",
+        "Relatively average Armor Class for its challenge rating."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive hunting beast",
+        "cunning white weasel",
+        "poisonous musk creature",
+        "large ambush predator",
+        "ferocious grapple specialist"
+    ]
+}

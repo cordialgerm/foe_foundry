@@ -1,0 +1,50 @@
+{
+    "name": "Hallowed Reed",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "slow walk speed of 10 feet",
+    "role": "Support",
+    "tags": [
+        "healer",
+        "defender",
+        "radiant"
+    ],
+    "adjectives": [
+        "pure",
+        "benevolent",
+        "supportive",
+        "strategic"
+    ],
+    "description": "The Hallowed Reed is a celestial creature embodying purity, noted for its distinctive presence and slow movement.",
+    "memorable": "It can regenerate by growing a new patch if destroyed, symbolizing life and restoration.",
+    "goals": "To support and protect good-aligned creatures while hindering evil forces.",
+    "relations": "It can communicate with other good-aligned beings through limited telepathy.",
+    "environment": "Typically found in serene, life-filled areas, potentially where other good-aligned entities dwell.",
+    "strengths": "Immunity to radiant damage and can resist bludgeoning and piercing damage.",
+    "weaknesses": "Low mobility and vulnerability to aggressive tactics during combat.",
+    "attacks": "Searing Grasp attack deals radiant damage and grapples targets, especially effective against undead and fiends.",
+    "most_powerful_ability": "Rebirth, allowing it to grow anew after death unless specific actions are taken to prevent this.",
+    "senses": "Possesses blindsight up to 30 feet, remaining blind beyond this range.",
+    "skills": "Exhibits strong perception with a +4 bonus.",
+    "additional_information": [
+        "Knows if nearby creatures are good-aligned through Like Calls to Like ability.",
+        "Can communicate non-verbally with good creatures within 100 feet using images and emotions.",
+        "Effective in combat against undead and fiends due to its grappling abilities."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial creature that can heal",
+        "slow moving benevolent celestial",
+        "creature that grapples with radiant damage",
+        "guardian of good creatures with rebirth ability",
+        "pure creature with telepathic communication"
+    ]
+}

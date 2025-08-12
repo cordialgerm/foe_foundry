@@ -1,0 +1,11 @@
+{
+  "Griffon": {
+    "relation": "conceptually_similar",
+    "explanation": "A large flying beast with powerful melee attacks and a protective nature."
+  },
+  "Bulette": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, treasure-seeking monstrosity with strong melee attacks and a burrowing, aggressive nature."
+  },
+  "monster_key": "pixiu"
+}

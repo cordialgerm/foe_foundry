@@ -1,0 +1,11 @@
+{
+  "Lion": {
+    "relation": "almost_identical",
+    "explanation": "The Nkosi is a shapechanger that transforms into a large lion with similar physical traits and pounce ability."
+  },
+  "Weretiger": {
+    "relation": "close_cousins",
+    "explanation": "Both are humanoid shapechangers that transform into large feline predators with enhanced physical abilities."
+  },
+  "monster_key": "nkosi"
+}

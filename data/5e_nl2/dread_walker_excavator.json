@@ -1,0 +1,50 @@
+{
+    "name": "Dread Walker Excavator",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 75,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "climbing, walking, and swimming speed of 30 feet",
+    "role": null,
+    "tags": [
+        "construct",
+        "arcane",
+        "multiattack"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "offensive"
+    ],
+    "description": "The Dread Walker Excavator is a Large Construct known for its robust build, high agility, and offensive capabilities. It features two powerful forelegs and can effortlessly climb walls and ceilings.",
+    "memorable": "The Excavator releases unstable arcane energy when damaged, harming nearby attackers, making it a dangerous foe in close combat.",
+    "goals": "Engage enemies in combat, maintain defense, and utilize arcane abilities.",
+    "relations": "Related to other Constructs and may serve as guardians or workers in arcane environments.",
+    "environment": "Often found in locations tied to magic or construction, such as ruins or underground complexes.",
+    "strengths": "Immunity to poison and psychic damage, resistances to nonmagical physical damage, and the ability to deal force damage to melee attackers.",
+    "weaknesses": "Vulnerable to magical attacks that can bypass its resistances.",
+    "attacks": "Strikes with two foreleg attacks delivering piercing damage; also capable of firing a powerful Excavation Beam dealing force damage from a distance.",
+    "most_powerful_ability": "Arcane Instability, which deals damage to creatures that make melee attacks against it when its health is low.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, allowing it to detect creatures within 60 feet even in darkness or through obstructions.",
+    "skills": "Proficient in perception, with a +6 bonus, making it adept at noticing hidden or approaching threats.",
+    "additional_information": [
+        "Immune to blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, and poisoned conditions.",
+        "Ability to traverse difficult surfaces effortlessly, increasing its tactical mobility in battles.",
+        "Combines melee and ranged attacks for versatile combat engagement."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large construct with arcane abilities",
+        "mobile monster that climbs walls easily",
+        "creature that harms attackers with instability",
+        "excavator that deals force damage from range",
+        "robotic enemy immune to poison and psychic"
+    ]
+}

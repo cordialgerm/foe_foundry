@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are mischievous, magical fey creatures associated with forests and trickery."
+  },
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Clurichaun and Sprite are both tiny fey with stealth and spellcasting abilities."
+  },
+  "monster_key": "clurichaun"
+}

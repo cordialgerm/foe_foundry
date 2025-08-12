@@ -1,0 +1,25 @@
+{
+    "name": "Liminal Drake",
+    "queries": [
+        {
+            "query": "dragon that can manipulate space and is neutral evil",
+            "variant": "neutral evil dragon that manipulates space"
+        },
+        {
+            "query": "large dragon with cold immunity that can fly and hover",
+            "variant": "large flying dragon with immunity to cold and hovering abilities"
+        },
+        {
+            "query": "creature with high dexterity and incapacitating light abilities",
+            "variant": "monster with great dexterity and abilities that can incapacitate foes"
+        },
+        {
+            "query": "Liminal Drake with unique attack patterns and resistances",
+            "variant": "drake that has unique attack styles and multiple resistances"
+        },
+        {
+            "query": "dragon with darkvision and multiple elemental resistances",
+            "variant": "dragon type creature that has darkvision and resists various elemental damages"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Eonic Savant",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 115,
+    "ac": 13,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walking",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "melee combatant",
+        "time manipulator"
+    ],
+    "adjectives": [
+        "formidable",
+        "intelligent",
+        "agile"
+    ],
+    "description": "The Eonic Savant is a humanoid with an exceptional Intelligence score of 20, wielding a Time Warping Staff and capable of manipulating time.",
+    "memorable": "Its ability to create past and future versions of itself during combat and to concentrate on two spells simultaneously makes it highly unpredictable.",
+    "goals": "To engage in combat using its spellcasting and time manipulation abilities.",
+    "relations": "Eonic Savants can be encountered alongside other humanoids or spellcasters, potentially as allies or foes.",
+    "environment": "Often found in arcane settings or locations rich in magic.",
+    "strengths": "High Intelligence and the ability to resist magic through Magic Resistance.",
+    "weaknesses": "Below average Strength and Wisdom scores, making it less proficient in physical combat and willpower-related tasks.",
+    "attacks": "Makes three melee attacks with its Time Warping Staff, dealing bludgeoning and force damage.",
+    "most_powerful_ability": "Past and Future, Present, allowing the savant to buffer damage and cast multiple spells at once.",
+    "equipment": "Time Warping Staff, which deals both bludgeoning and force damage.",
+    "senses": "Passive perception of 13.",
+    "skills": "Proficient in arcana and history, with strong spellcasting capabilities.",
+    "additional_information": [
+        "Has the ability to grant advantage or disadvantage on attacks through Amend Time.",
+        "Always accompanied by past and future versions of itself.",
+        "Immunity to frightened condition.",
+        "9th-level spellcaster with a diverse spell repertoire.",
+        "Can absorb damage through its past and future selves."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "9th-level wizard with prepared spells including fireball, counterspell, and dimension door.",
+    "test_queries": [
+        "humanoid that manipulates time and casts spells",
+        "intelligent creature with time manipulation abilities",
+        "powerful wizard with future copies in combat",
+        "spellcaster with multiattack and damage mitigation",
+        "formidable humanoid known for arcane knowledge"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures associated with natural, wooded or swampy environments and share supportive roles."
+  },
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares agility, perceptiveness, and a connection to natural environments, emphasizing mobility and stealth."
+  },
+  "monster_key": "lazavik"
+}

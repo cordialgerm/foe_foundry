@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Naga",
+    "queries": [
+        {
+            "query": "serpentine creature with humanoid head that casts necromancy spells",
+            "variant": "snake-like monster with a person's head known for dark magic spells"
+        },
+        {
+            "query": "large monstrosity skilled in death magic in ancient ruins",
+            "variant": "big creature proficient in necromancy found in old temples"
+        },
+        {
+            "query": "magic-using naga that can resurrect itself and commands undead",
+            "variant": "naga that employs dark magic and comes back to life, controlling skeletons"
+        },
+        {
+            "query": "snake monster with high Constitution and poison attacks",
+            "variant": "serpent creature boasting great hit points and toxic strikes"
+        },
+        {
+            "query": "Spirit Naga abilities in combat with spellcasting and bite attack",
+            "variant": "combat skills of the Spirit Naga focusing on spells and nasty bites"
+        }
+    ]
+}

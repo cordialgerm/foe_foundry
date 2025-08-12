@@ -1,0 +1,52 @@
+{
+    "name": "Rattok",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 66,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "swim 20 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "necrotic",
+        "stealth"
+    ],
+    "adjectives": [
+        "chaotic",
+        "swift",
+        "resilient"
+    ],
+    "description": "The Rattok is a Small fiend with a chaotic appearance, featuring nimble movements and dark, shadowy forms.",
+    "memorable": "Its ability to regenerate health rapidly and become immune to fire and necrotic damage makes it a unique threat.",
+    "goals": "To engage in chaotic mischief and combat, using its abilities to gain an edge in battle.",
+    "relations": "Can be encountered alongside other chaotic fiends or summoned by dark sorcerers.",
+    "environment": "Commonly found in chaotic or fiend-influenced areas, often lurking in shadows.",
+    "strengths": "Speed and skillful navigation make it a formidable opponent, along with multiple immunities and resistances.",
+    "weaknesses": "Low Wisdom and Charisma attributes hinder its perception and social interactions.",
+    "attacks": "It uses a combination of biting and clawing attacks, with necrotic damage dealing additional harm.",
+    "most_powerful_ability": "Necrotic Rush unleashes shadowy clones that can damage multiple foes in a sweeping attack.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses a Stealth skill of +5, enhancing its ability to remain concealed.",
+    "additional_information": [
+        "Immunities to fire, necrotic, and poison damage",
+        "Regains health through its Bottled Soul ability",
+        "Advantages on saving throws against magical effects",
+        "Resistance to cold and lightning damage",
+        "Ability to move freely in fire or necrotic environments"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic small fiend with regeneration",
+        "swift fiend that can become immune to fire",
+        "shadowy creature with swift combat abilities",
+        "fiend that uses necrotic attacks and stealth",
+        "small mobile fiend with damage resistance"
+    ]
+}

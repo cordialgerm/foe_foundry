@@ -1,0 +1,25 @@
+{
+    "name": "Likho",
+    "queries": [
+        {
+            "query": "medium chaotic evil creature with strong claws and magic resistance",
+            "variant": "medium creature that is chaotic evil and has strong claws along with magic resistance"
+        },
+        {
+            "query": "likho abilities including telepathy and pounce for combat",
+            "variant": "abilities of the likho which feature telepathy and pounce during fights"
+        },
+        {
+            "query": "high dexterity monster that manipulates others and fights aggressively",
+            "variant": "monster with high dexterity that can manipulate foes and fights aggressively"
+        },
+        {
+            "query": "monstrosity that uses disruptive gaze and claw attacks in battle",
+            "variant": "a monstrosity that employs disruptive gaze and claw attacks during combat"
+        },
+        {
+            "query": "creature with natural armor and multiple attacks in D&D",
+            "variant": "creature that has natural armor and can perform multiple attacks in D&D"
+        }
+    ]
+}

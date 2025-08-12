@@ -1,0 +1,25 @@
+{
+    "name": "Minor Malleable",
+    "queries": [
+        {
+            "query": "shapeshifting evil creature that absorbs psychic damage",
+            "variant": "evil shapeshifting monster that absorbs psychic damage"
+        },
+        {
+            "query": "medium amorphous monster that can climb walls",
+            "variant": "amorphous medium creature that can climb on walls"
+        },
+        {
+            "query": "aberration with high strength and low dexterity in tight spaces",
+            "variant": "creature with strong physical abilities and poor agility in small areas"
+        },
+        {
+            "query": "chaotic creature that grapples and drains psychic energy",
+            "variant": "chaotic monster that grapples and drains psychic attacks"
+        },
+        {
+            "query": "monster that transforms with controlled mutability and combines with others",
+            "variant": "creature that can change shape with controlled mutability and join forces"
+        }
+    ]
+}

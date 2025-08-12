@@ -1,6 +1,8 @@
 <MonsterName/>Greater Sphinx</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>17</CR>
+<AC/>20</AC>
+<HP/>220</HP>
 <summary>The Greater Sphinx is a colossal monstrosity known for its many supernatural attributes and formidable combat capabilities. It serves as both a guardian and a challenger, often guarding ancient wisdom or treasures while also possessing a deep understanding of magic and lore. With a high armor class of 20 and a significant pool of hit points totaling 220, it is extremely resilient in combat, capable of withstanding considerable damage. Its challenge rating of 17 indicates that it is a powerful foe that adventurers must approach with caution. The Sphinx excels with strong Wisdom and intelligence scores, enhancing its spellcasting and insight. However, its reliance on physical attacks may be seen as a weakness, as its Dexterity is relatively average, making it less evasive in quick maneuvers.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ As a bonus action once per day, the Greater Sphinx can utilize "Speed Time," dou
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Sphinx
 
 *Huge* *Monstrosity*
@@ -76,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Time:** The creatures appear in empty spaces of the sphinxs choosing anywhere on the Material Plane, at any time from 1,000 years in the past to 1,000 years in the future. At the Narrators discretion, changes made in the past may alter the present.
 
 
+</statblock>
 
 

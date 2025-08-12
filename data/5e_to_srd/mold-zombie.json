@@ -1,0 +1,11 @@
+{
+  "Zombie": {
+    "relation": "almost_identical",
+    "explanation": "A decaying undead creature with bludgeoning attacks and undead fortitude similar to a standard Zombie."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead theme and disease-spreading, chaotic nature, though mechanically different."
+  },
+  "monster_key": "mold-zombie"
+}

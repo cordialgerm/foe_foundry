@@ -1,6 +1,8 @@
 <MonsterName/>Caretaker Weevil</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>51</HP>
 <summary>The Caretaker Weevil is a medium-sized beast that serves an unusual role in the D&D ecosystem. With an unaligned disposition, this creature is not inherently good or evil, but rather finds itself in the unique position of providing support to allies and incapacitating enemies through its special abilities. It boasts a solid pool of hit points, making it capable of enduring in combat, while also possessing an average Armor Class that allows it to avoid some hits. The Caretaker Weevil is particularly notable for its abilities to calm hostile creatures and stabilize allies, making it a valuable ally in various scenarios. However, it is relatively weak in terms of offensive capabilities, relying on its actions to deal moderate damage and support its fellow creatures.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Caretaker Weevil stands out as an unusual companion, offering stabi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Caretaker Weevil
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Regenerative Spittle (3/Day):** Launches spittle at one creature it can see within 10 ft. of it. Target regains 2 (1d4) hp. For 1 min target regains 1 hp at the start of each of its turns.
 
 
+</statblock>
 
 

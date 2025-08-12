@@ -1,0 +1,53 @@
+{
+    "name": "The Flesh",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk, climb, and swim at 30 feet",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "regenerative",
+        "mimic"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "adaptive"
+    ],
+    "description": "The Flesh is a Medium-sized aberration with a grotesque and malleable body, capable of adapting its form.",
+    "memorable": "Its ability to regenerate unless damaged by acid or fire makes it relentlessly challenging.",
+    "goals": "It typically preys on humanoids and beasts, using its Mimicry to deceive and ambush.",
+    "relations": "It can encounter humanoid creatures and beasts, as it often consumes them to transform.",
+    "environment": "Commonly found in areas where it can blend into both land and water environments.",
+    "strengths": "High Strength score enhances its melee damage capabilities and adaptability through its special abilities.",
+    "weaknesses": "Not very intelligent and requires specific conditions to be killed.",
+    "attacks": "Multiattack feature allows two Slam attacks or two Manipulate Flesh actions, which are devastating and versatile.",
+    "most_powerful_ability": "Regeneration trait allows it to regain hit points unless it has taken acid or fire damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has limited perception with a passive score of 11, which restricts its ability to notice hidden threats.",
+    "additional_information": [
+        "Can breathe both air and water due to Amphibious trait.",
+        "Amorphous ability allows squeezing through tight spaces.",
+        "Mimicry enables it to imitate sounds heard from other creatures.",
+        "Can consume corpses to assume their forms and characteristics.",
+        "Requires a specific method to die, making it persistently difficult to defeat."
+    ],
+    "damage_types": [
+        "acid",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "grotesque adaptive creature",
+        "monster with regeneration and mimicry abilities",
+        "aberration that consumes humanoids",
+        "medium-sized evil creature that can swim",
+        "monster that can\u53d8\u5f62 assumes other forms"
+    ]
+}

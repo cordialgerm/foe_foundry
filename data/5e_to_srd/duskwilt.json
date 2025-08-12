@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are small plant-like fungi creatures with necrotic and poison traits."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant creatures that manipulate their environment and engage in combat."
+  },
+  "monster_key": "duskwilt"
+}

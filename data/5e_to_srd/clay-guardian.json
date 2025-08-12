@@ -1,0 +1,7 @@
+{
+  "Clay Golem": {
+    "relation": "almost_identical",
+    "explanation": "A large construct made of clay with strong defensive and melee capabilities, similar to the Clay Guardian."
+  },
+  "monster_key": "clay-guardian"
+}

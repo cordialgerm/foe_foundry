@@ -1,6 +1,8 @@
 <MonsterName/>Wereshark</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>11</AC>
+<HP/>90</HP>
 <summary>The Wereshark is a large, chaotic evil humanoid creature that embodies the traits of both a shark and a human. This formidable foe is particularly dangerous due to its ability to switch between forms, allowing it to take advantage of its aquatic environment while also being a capable melee attacker on land. With a strong set of physical attributes, including exceptional strength and good constitution, the Wereshark can withstand significant damage and becomes even deadlier when its prey is wounded. While it possesses weaknesses to silvered weaponry, its damage immunities to nonmagical physical attacks make it a tough opponent. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Wereshark is a cunning and dangerous predator, ready to exploit any
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereshark
 
 *Large* *Humanoid* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Trident (Humanoid or Hybrid Form Only):** Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "close_cousins",
+    "explanation": "Both are dark, shadowy humanoid creatures that thrive in darkness and use stealth."
+  },
+  "Bandit": {
+    "relation": "mechanically_similar",
+    "explanation": "Uses similar weapons like a sickle and light crossbow and functions as a skirmisher humanoid."
+  },
+  "monster_key": "dark-servant"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are animated constructs created to protect, with melee attacks and magical origins."
+  },
+  "Flesh Golem": {
+    "relation": "almost_identical",
+    "explanation": "A medium construct protector with immunities, melee multiattacks, and a berserk-like relentless fighting style."
+  },
+  "monster_key": "flesh-guardian"
+}

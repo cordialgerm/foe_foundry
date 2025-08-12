@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge aberrations with telepathic abilities and a dominating presence in subterranean environments."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the undead controller role by raising slain humanoids as zombies, similar to ghouls' undead nature."
+  },
+  "monster_key": "cave-sovereign"
+}

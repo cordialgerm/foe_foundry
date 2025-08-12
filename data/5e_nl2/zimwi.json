@@ -1,0 +1,54 @@
+{
+    "name": "Zimwi",
+    "creature_type": "Giant",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "60 feet walk speed, notably rapid",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "chaotic evil",
+        "multiattack",
+        "swallowing"
+    ],
+    "adjectives": [
+        "formidable",
+        "rapid",
+        "tenacious",
+        "chaotic"
+    ],
+    "description": "The Zimwi is a medium-sized giant with an agile physique, characterized by its chaotic evil nature and a chaotic appearance. It has high dexterity and a tough constitution, making it a resilient and dangerous opponent.",
+    "memorable": "Its unique ability, Desperate Hunger, makes it especially dangerous when wounded, granting an advantage on attacks.",
+    "goals": "To dominate its enemies in combat using brute strength and swallowing tactics.",
+    "relations": "Could be encountered alongside other chaotic creatures or as a servant to darker entities.",
+    "environment": "Often found in wild, chaotic areas or regions that foster evil beings.",
+    "strengths": "High dexterity enhances attack accuracy, while the ability to swallow multiple creatures provides tactical advantages.",
+    "weaknesses": "Low intelligence and lack of mental acuity can be exploited in strategic combat.",
+    "attacks": "Multiattack with powerful Bite and Claw attacks capable of inflicting piercing and slashing damage, respectively.",
+    "most_powerful_ability": "Desperate Hunger allows for increased attack potency when the Zimwi is below half health.",
+    "equipment": null,
+    "senses": "Possesses darkvision to see in dim light as if it were bright light.",
+    "skills": "Has a Perception skill bonus of +2, allowing it to detect hidden creatures better.",
+    "additional_information": [
+        "Can grapple creatures with its claws, making escape difficult.",
+        "Can swallow up to two Medium or smaller creatures simultaneously.",
+        "Suffers ongoing acid damage to swallowed creatures each turn.",
+        "Possesses natural armor for additional protection in combat.",
+        "Intensifies threat level when its hit points are below half."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant that swallows multiple creatures",
+        "rapid evil creature with claws and bite",
+        "medium giant with aggressive bite attack",
+        "tenacious giant that becomes stronger when wounded",
+        "giant with chaotic nature and quick movements"
+    ]
+}

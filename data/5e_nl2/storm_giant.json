@@ -1,0 +1,55 @@
+{
+    "name": "Storm Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 230,
+    "ac": 16,
+    "srd": true,
+    "cr": "13",
+    "movement": "50 ft. walking, 50 ft. swimming",
+    "role": null,
+    "tags": [
+        "giant",
+        "storm",
+        "lightning",
+        "magical"
+    ],
+    "adjectives": [
+        "towering",
+        "majestic",
+        "formidable",
+        "powerful"
+    ],
+    "description": "Storm Giants are towering and majestic beings, often seen governing the forces of storms and lightning. They wield massive weapons and have an innate connection to storm-related magic.",
+    "memorable": "Commands the weather, summoning storms and lightning at will, and displays immense physical might.",
+    "goals": "Prefer isolation and contemplation, but can unleash devastation when provoked.",
+    "relations": "Might be encountered with other giants or as guardians of powerful storms.",
+    "environment": "Remote mountains or beneath the ocean.",
+    "strengths": "Exceptional physical strength and magical abilities, with a versatile combat style.",
+    "weaknesses": "Average Dexterity makes it somewhat vulnerable to ranged attacks.",
+    "attacks": "Multiattack with a greatsword and powerful lightning strikes, capable of dealing significant area damage.",
+    "most_powerful_ability": "Ability to summon storms and manipulate weather conditions within a 3-mile radius.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 19, indicating strong awareness of its surroundings.",
+    "skills": "Notable proficiency in athletics, arcana, and perception.",
+    "additional_information": [
+        "Amphibious, can breathe air and water.",
+        "Resistance to cold damage.",
+        "Immunities to lightning and thunder damage.",
+        "Can communicate through its innate spellcasting abilities.",
+        "Possesses awareness through stormsight, allowing it to see through obscured environments."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Innately casts spells like detect magic, control weather, and can commune for magical insights.",
+    "test_queries": [
+        "towering coastal lightning giant",
+        "giant with control over storms",
+        "powerful storm creature of the ocean",
+        "magical being that breathes water and air",
+        "huge giant known for thunderous strikes"
+    ]
+}

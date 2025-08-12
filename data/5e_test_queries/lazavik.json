@@ -1,0 +1,25 @@
+{
+    "name": "Lazavik",
+    "queries": [
+        {
+            "query": "tiny swamp fey creature with blinding light ability",
+            "variant": "swampy tiny fey monster that has a blinding light ability"
+        },
+        {
+            "query": "resilient fey that can communicate with beasts and navigate marshes",
+            "variant": "durable fey that speaks with animals and moves through marshy terrain"
+        },
+        {
+            "query": "neutral good fey with glowing eye and hold breath skill",
+            "variant": "good-aligned fey that has a shining eye and can hold its breath"
+        },
+        {
+            "query": "agile creature with high stealth in swampy environments",
+            "variant": "fast monster with excellent stealth skills in marshy areas"
+        },
+        {
+            "query": "Lazavik characteristics such as Dexterity and special abilities",
+            "variant": "traits of Lazavik like dexterity score and unique skills"
+        }
+    ]
+}

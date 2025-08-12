@@ -1,0 +1,54 @@
+{
+    "name": "Jeholopterus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 12,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 10 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aerial",
+        "blood drain",
+        "nimble"
+    ],
+    "adjectives": [
+        "small",
+        "elusive",
+        "mobile",
+        "noxious"
+    ],
+    "description": "The Jeholopterus is a small aerial dinosaur with keen sight and remarkable agility, featuring a sleek body and wings that enable rapid flight.",
+    "memorable": "Its blood-draining ability allows it to sap the strength of foes over time, making it a strategic threat despite its low hit points.",
+    "goals": "To engage and weaken larger creatures by draining their blood from a safe distance.",
+    "relations": "Often encountered in areas populated by other small or solitary flying beasts.",
+    "environment": "Typically found in forested or open areas where it can take advantage of its flying speed.",
+    "strengths": "Boasts high agility with a flying speed and the Flyby ability, making it difficult to pin down in combat.",
+    "weaknesses": "Low hit points and average strength make it fragile in direct confrontations.",
+    "attacks": "Blood Drain delivers significant piercing damage and ongoing health loss, while claw attacks deal slashing damage.",
+    "most_powerful_ability": "Blood Drain allows it to attach to foes and drain their health over multiple turns.",
+    "equipment": null,
+    "senses": "The Jeholopterus has keen sight, granting it advantage on perception checks that rely on sight.",
+    "skills": "It has a passive perception score of 13, indicating decent awareness.",
+    "additional_information": [
+        "Low intelligence indicates a lack of reasoning.",
+        "Uses Flyby ability to avoid retaliation during flight.",
+        "Attaches to victims and continues to drain their hit points each turn.",
+        "Very low charisma suggests it doesn't engage socially.",
+        "Dexterity allows it to evade and maneuver effectively."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small flying dinosaur that drains blood",
+        "nimble aerial beast with blood-draining attack",
+        "Jeholopterus abilities and environment",
+        "elusive dinosaur with keen sight and agility",
+        "mobile creature that avoids attacks while flying"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Bucca",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft., fly 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "trickster",
+        "elusive"
+    ],
+    "adjectives": [
+        "mischievous",
+        "treacherous",
+        "cunning"
+    ],
+    "description": "A tiny fey creature with a mischievous and treacherous nature, characterized by its high Dexterity and Charisma, and a penchant for trickery.",
+    "memorable": "The Bucca's mastery of stealth and deception, combined with its sunlight hypersensitivity, makes it a unique challenge in daylight encounters.",
+    "goals": "To play tricks and outwit unsuspecting foes while locating treasures.",
+    "relations": "Associated with other trickster fey and may serve more powerful fey beings.",
+    "environment": "Thrives in environments where it can hide and ambush unsuspecting targets.",
+    "strengths": "Exceptional stealth and deception capabilities, along with the ability to fly without provoking attacks.",
+    "weaknesses": "Significant vulnerability to sunlight, which hampers its abilities and causes damage.",
+    "attacks": "Uses a dagger for melee or ranged attacks, dealing piercing damage and potentially injecting poison.",
+    "most_powerful_ability": "Invisibility, allowing it to become invisible until it attacks, significantly enhancing its survivability.",
+    "skills": "Proficient in Sleight of Hand and Stealth, making it very effective in stealthy engagements.",
+    "additional_information": [
+        "Flyby ability prevents opportunity attacks when it flies away.",
+        "Treasure Sense allows it to detect valuable metals and gems within 60 feet.",
+        "High Dexterity for enhanced agility and evasion.",
+        "Low Wisdom may impact perception of danger.",
+        "Can inflict poison on targets hit by its dagger."
+    ],
+    "damage_types": [],
+    "spellcasting": "Ability to cast Invisibility to avoid detection.",
+    "test_queries": [
+        "tiny mischievous fey creature",
+        "cunning trickster fey with poison damage",
+        "fey that loves treasure and plays tricks",
+        "elusive creature vulnerable to sunlight",
+        "flying fey that uses stealth to ambush"
+    ]
+}

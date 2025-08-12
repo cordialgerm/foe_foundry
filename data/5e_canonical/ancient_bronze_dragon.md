@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Bronze Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>444</HP>
 <summary>The Ancient Bronze Dragon is a noble and disciplined creature, with scales that shimmer like polished bronze. These dragons are often found near coastlines or large bodies of water, where they protect and oversee vast regions. Known for their sense of justice and honor, Bronze Dragons often aid noble causes, defending coastal cities and ships from threats. Their breath weapon is a powerful blast of lightning, and they can also manipulate water to create tidal waves or storms. Despite their formidable power, Ancient Bronze Dragons are often diplomatic, preferring to resolve conflicts through reason rather than force.</summary>
 
 <summary>The Ancient Bronze Dragon is a gargantuan creature known for its power and versatility. As one of the most formidable dragons, it serves as a guardian of coastal regions and is revered for its intelligence and connection to nature. With a high Armor Class of 21, it is difficult to hit, while its impressive 425 hit points and formidable Constitution make it exceptionally resilient in battle. The dragon possesses a range of abilities that enhance its combat prowess, such as strong multiattack capabilities featuring devastating bite, claw, and tail strikes. Its lightning immunity and natural spellcasting abilities further augment its effectiveness. Notably, it has the capacity for flight and swimming, making it a threat both in the air and underwater. While it has exceptional offensive capabilities, its reliance on advantageous terrain and the potential vulnerability during its recharge abilities may be considered a weakness.</summary>
@@ -61,6 +63,7 @@ The dragon also possesses regional effects that could play a role in its territo
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Bronze Dragon (Metallic)
 
 *Gargantuan dragon, lawful good*
@@ -121,7 +124,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6+9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6+9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -129,6 +133,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Bronze Dragon
 
 *Gargantuan* *Dragon*
@@ -184,6 +189,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 20 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 24 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Foresight (Costs 2 Actions):** The dragon focuses on the many sprawling futures before it and predicts what will come next. Until the start of its next turn, it gains advantage on saving throws, and attacks against it are made with disadvantage.
+</statblock>
 
 
 
@@ -192,6 +198,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Bronze Dragon
 
 *Gargantuan dragon*
@@ -243,5 +250,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

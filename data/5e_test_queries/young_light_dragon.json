@@ -1,0 +1,25 @@
+{
+    "name": "Young Light Dragon",
+    "queries": [
+        {
+            "query": "large benevolent dragon with radiant breath attack",
+            "variant": "large good dragon that has a radiant breath attack"
+        },
+        {
+            "query": "dragon with damage immunity to radiant and incorporeal movement",
+            "variant": "dragon that is immune to radiant damage and has incorporeal movement"
+        },
+        {
+            "query": "celestial dragon that glides through space without air",
+            "variant": "celestial dragon that moves through space avoiding the need for air"
+        },
+        {
+            "query": "light dragon with high hit points and powerful melee strengths",
+            "variant": "light dragon that possesses high hit points and strong melee abilities"
+        },
+        {
+            "query": "dragon capable of blinding foes and traveling between stars",
+            "variant": "dragon that can blind enemies and move between stars"
+        }
+    ]
+}

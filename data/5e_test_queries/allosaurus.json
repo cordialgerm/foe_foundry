@@ -1,0 +1,25 @@
+{
+    "name": "Allosaurus",
+    "queries": [
+        {
+            "query": "huge dinosaur that excels in melee combat and moves quickly",
+            "variant": "massive dino that is good at melee fighting and is fast"
+        },
+        {
+            "query": "strong beast with a powerful bite attack that knocks foes prone",
+            "variant": "muscular creature with a deadly bite that can knock enemies down"
+        },
+        {
+            "query": "large predator living in aggressive environments with low intelligence",
+            "variant": "big hunting creature found in hostile areas with bad smarts"
+        },
+        {
+            "query": "melee monster with high strength that can make quick attacks",
+            "variant": "close combat creature with great power that can strike fast"
+        },
+        {
+            "query": "primal lizard-like beast with a significant challenge rating",
+            "variant": "primitive reptile-like monster with a notable difficulty level"
+        }
+    ]
+}

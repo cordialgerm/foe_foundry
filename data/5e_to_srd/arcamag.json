@@ -1,0 +1,7 @@
+{
+  "Mimic": {
+    "relation": "conceptually_similar",
+    "explanation": "Both the Arcamag and the Mimic can shapeshift into objects to deceive and ambush targets."
+  },
+  "monster_key": "arcamag"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Cutthroat",
+    "queries": [
+        {
+            "query": "stealthy humanoid that excels in hit-and-run tactics",
+            "variant": "humanoid that is stealthy and good at hit-and-run tactics"
+        },
+        {
+            "query": "medium creature with high dexterity and deception skills",
+            "variant": "creature that is medium sized and has good dexterity and deception"
+        },
+        {
+            "query": "clever humanoid that uses sneak attack in combat",
+            "variant": "humanoid that is clever and uses sneak attack during battle"
+        },
+        {
+            "query": "Cutthroat with a hand crossbow and shortsword",
+            "variant": "cutthroat creature wielding a shortsword and hand crossbow"
+        },
+        {
+            "query": "agile creature with good perception and cunning action",
+            "variant": "agile humanoid known for its good perception and cunning action ability"
+        }
+    ]
+}

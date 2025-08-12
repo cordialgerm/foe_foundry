@@ -1,0 +1,25 @@
+{
+    "name": "Blink Dog",
+    "queries": [
+        {
+            "query": "canine creature that can teleport and loves to hunt",
+            "variant": "dog-like creature with teleportation ability and a love for hunting"
+        },
+        {
+            "query": "agile fey creature that lives in forests and has keen senses",
+            "variant": "nimble fey being found in woods with sharp hearing and smell"
+        },
+        {
+            "query": "magical dog known for its speed and ability to dodge attacks",
+            "variant": "enchanting dog famed for its quickness and talent for avoiding attacks"
+        },
+        {
+            "query": "loyal pack-associated creature found in plains that uses teleportation",
+            "variant": "faithful canine pack member located in open fields employing teleportation"
+        },
+        {
+            "query": "small fey creature with special abilities and lower combat power",
+            "variant": "tiny fey being with unique skills and modest fighting strength"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Clockwork Beetle Swarm",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 52,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 50 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "swarm",
+        "construct",
+        "mechanical"
+    ],
+    "adjectives": [
+        "agile",
+        "resilient",
+        "mechanical"
+    ],
+    "description": "A large collective of mechanical beetles that move and attack as a single unit, featuring a hard outer shell that provides natural armor.",
+    "memorable": "The Clockwork Beetle Swarm is notable for its remarkable resistances and immunities, making it a durable foe in combat, as well as its ability to occupy the same space as other creatures.",
+    "goals": "Typically engages in aggressive encounters, overwhelming enemies through sheer numbers.",
+    "relations": "Related to other mechanical constructs or swarms, potentially serving or allied with them.",
+    "environment": "Often found in technologically advanced areas or ruins, possibly near factories or magical constructs.",
+    "strengths": "Immunities to poison and psychic damage, resistance to bludgeoning, piercing, and slashing damage.",
+    "weaknesses": "Very low intelligence and charisma hinders ability to strategize or communicate.",
+    "attacks": "Uses Bites action to deal significant piercing damage with additional poison damage, making it a lethal threat.",
+    "most_powerful_ability": "Magic Resistance grants advantage on saving throws against spells and magical effects.",
+    "equipment": null,
+    "senses": "Darkvision allows the swarm to see in darkness up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to Construct Nature.",
+        "Can move through any opening large enough for a Tiny Construct.",
+        "Cannot regain hit points or gain temporary hit points."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large mechanical beetle swarm",
+        "swarm that can fly and walk",
+        "robotic swarm immune to poison",
+        "agile construct with high damage potential",
+        "clockwork creature swarming enemy"
+    ]
+}

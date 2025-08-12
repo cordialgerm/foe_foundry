@@ -1,0 +1,52 @@
+{
+    "name": "Scarecrow",
+    "creature_type": "Construct",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 31,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "fear",
+        "construct",
+        "undead"
+    ],
+    "adjectives": [
+        "fearsome",
+        "strategic",
+        "durable"
+    ],
+    "description": "The Scarecrow is a medium-sized construct designed to resist fear, appearing indistinguishable from an ordinary scarecrow when motionless. It has a humanoid shape with a straw-filled body that instills terror among those who see it.",
+    "memorable": "Possesses the ability to instill fear in opponents and is hard to destroy due to its spell-created nature.",
+    "goals": "To create terror among living creatures and protect its designated area.",
+    "relations": "Often used by its creator for nefarious purposes; may be served by other constructs.",
+    "environment": "Typically found in fields, farms, or areas near its place of creation.",
+    "strengths": "Immunity to poison and various conditions, along with exceptional Dexterity for evasion.",
+    "weaknesses": "Vulnerable to fire, which can cause ongoing damage.",
+    "attacks": "Can make a Multiattack using its Scare ability and two slam attacks for bludgeoning damage.",
+    "most_powerful_ability": "The Scare ability can frighten creatures within 30 feet, making them panic and flee.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see in dim light within 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "False Appearance lets it blend in as a regular scarecrow until it moves.",
+        "Flammable trait causes ongoing fire damage after being hit with fire.",
+        "Local Spirit limits its movement to one mile from its creation site.",
+        "Requires a DC 19 dispel magic check to be destroyed.",
+        "Use of Hat of Illusion allows it to mimic a humanoid for deception."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fear-inducing scarecrow with fire vulnerability",
+        "scarecrow that instills terror in creatures",
+        "construct that acts like a regular scarecrow",
+        "durable scarecrow with ongoing fire damage",
+        "tactical scarecrow with illusion magic"
+    ]
+}

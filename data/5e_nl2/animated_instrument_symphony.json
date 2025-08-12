@@ -1,0 +1,52 @@
+{
+    "name": "Animated Instrument, Symphony",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "gargantuan",
+    "hp": 201,
+    "ac": 15,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 30 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "musical",
+        "construct",
+        "flying",
+        "spellcaster control"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "musical",
+        "resilient",
+        "manipulative"
+    ],
+    "description": "The Animated Instrument is a gargantuan construct that resembles a collection of large musical instruments. When motionless, it blends seamlessly into its surroundings, looking like a part of a musical ensemble.",
+    "memorable": "Its ability to control the battlefield through powerful musical arrangements makes it a unique and formidable opponent.",
+    "goals": "To dominate the battlefield through music, affecting the actions of nearby creatures.",
+    "relations": "Often found in orchestras of constructs or allied with other musical-themed creatures.",
+    "environment": "Can typically be found in concert halls, magical theaters, or locations associated with music and performance.",
+    "strengths": "Immunities to poison and psychic damage, along with several condition immunities, enhance its durability in combat.",
+    "weaknesses": "Vulnerable to anti-magic fields, making it susceptible to certain spells.",
+    "attacks": "Employs a Multiattack with a Musical Arrangement followed by physical strikes such as the Hammer Note and ranged attacks like the Pulsating Cacophony, delivering significant damage.",
+    "most_powerful_ability": "It can perform various Musical Arrangements that manipulate creatures' actions, cause fear, and control the battlefield with powerful winds.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures without needing to see them.",
+    "skills": "Its perception skill is negative, making it less aware of its surroundings despite its powerful abilities.",
+    "additional_information": [
+        "Antimagic Susceptibility: incapacitated in antimagic fields.",
+        "Grand Composition: disrupts spellcasting of creatures in its space.",
+        "Legendary Resistance: can choose to succeed on failed saves three times per day.",
+        "Magic Resistance: advantage on saving throws against spells and magical effects.",
+        "Can freely occupy another creature's space, enhancing its mobility."
+    ],
+    "damage_types": [],
+    "spellcasting": "Utilizes a variety of musical abilities that have spell-like effects, including inducing fear and cursing others.",
+    "test_queries": [
+        "gargantuan musical construct",
+        "animated musical instrument",
+        "combat control through music",
+        "fear inducing musical creature",
+        "battlefield manipulating symphony"
+    ]
+}

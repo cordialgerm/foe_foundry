@@ -1,0 +1,55 @@
+{
+    "name": "Snake with a Hundred Mage Hands",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 67,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "swim, walk, and climb at 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "snake",
+        "mage",
+        "monstrosity",
+        "trickster"
+    ],
+    "adjectives": [
+        "cunning",
+        "magical",
+        "stealthy",
+        "versatile"
+    ],
+    "description": "A small monstrosity with a unique magical ability, surrounded by one hundred spectral hands that can manipulate objects and distract enemies.",
+    "memorable": "Its ability to use magical hands for various tasks while remaining difficult to target makes it a unique threat.",
+    "goals": "To disrupt enemy actions and create confusion in battle using its magical hands.",
+    "relations": "Related to other magical creatures and entities that utilize trickery and stealth.",
+    "environment": "Typically found in areas where it can use its swimming and climbing abilities effectively, such as forests or swamps.",
+    "strengths": "High Dexterity and Intelligence allow for effective stealth and tactical plays.",
+    "weaknesses": "Low Strength and Charisma lead to physical frailty and difficulties in social situations.",
+    "attacks": "Can make two bite attacks per turn, dealing consistent damage, and unleash a flurry of spectral fists as an area attack.",
+    "most_powerful_ability": "One Hundred Mage Hands allows for exceptional manipulation and tactical distraction of enemies.",
+    "equipment": null,
+    "senses": "Blindsight up to 10 feet provides it with awareness of its surroundings without relying on sight.",
+    "skills": "Proficient in stealth, allowing it to move unnoticed, and has a reasonable perception skill.",
+    "additional_information": [
+        "Utilizes spot-on tactical plays to undermine opponents.",
+        "The spectral hands cannot take damage or be targeted, making them highly effective.",
+        "Ability to perform multiple Dexterity (Sleight of Hand) checks in one action greatly increases its versatility.",
+        "Can disrupt enemy formations with its Flying Fists ability.",
+        "Relies heavily on its magical abilities rather than physical prowess."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "snake that uses magical hands for deception",
+        "small magical creature that distracts enemies",
+        "versatile trickster with a hundred hands",
+        "cunning snake that excels in stealth tactics",
+        "monstrosity that manipulates objects with hands"
+    ]
+}

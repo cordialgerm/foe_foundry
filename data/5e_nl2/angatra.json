@@ -1,0 +1,50 @@
+{
+    "name": "Angatra",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 85,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "medium",
+        "combat"
+    ],
+    "adjectives": [
+        "painful",
+        "agile",
+        "vulnerable",
+        "formidable"
+    ],
+    "description": "The Angatra is a Medium-sized undead creature with a blend of speed and resilience, characterized by its effective armor class and substantial hit points. Its agile form allows it to move swiftly in combat while executing painful and incapacitating attacks.",
+    "memorable": "The Angatra can paralyze foes with its painful Claw attacks and has the ability to render enemies vulnerable to damage through its Agonizing Gaze.",
+    "goals": "The Angatra seeks to incapacitate and overpower its enemies, particularly targeting descendants of its tribe.",
+    "relations": "It may be encountered alongside other undead or vengeful spirits, particularly those linked to its tribal lineage.",
+    "environment": "Typically found in battlefields or areas connected to its tribal history.",
+    "strengths": "Remarkable agility and powerful abilities, particularly against its tribe's descendants.",
+    "weaknesses": "Vulnerable to magical weaponry and attacks.",
+    "attacks": "The Angatra can execute multiattacks with its Claw, causing painful piercing damage and potentially paralyzing opponents.",
+    "most_powerful_ability": "Agonizing Gaze, which can make enemies vulnerable to all damage types.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and has a passive Perception of 14.",
+    "skills": "Proficient in Stealth and has a good observational capability with Perception.",
+    "additional_information": [
+        "Immune to poison damage.",
+        "Resistant to necrotic damage and physical damage from nonmagical attacks.",
+        "Cannot be affected by conditions like charmed, exhausted, frightened, or poisoned.",
+        "Recognizes descendants of its tribe, providing tactical advantages in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "painful undead creature",
+        "medium-sized agile monster",
+        "undead with paralyzing attacks",
+        "neutral evil agile undead",
+        "Angatra abilities"
+    ]
+}

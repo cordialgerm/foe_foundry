@@ -1,0 +1,15 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, celestial creatures with radiant presences and protective roles."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Moonkite shares the celestial nature, radiant abilities, and protective role typical of a Planetar."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "Like the Moonkite, the Solar is a powerful celestial being with radiant powers and teleportation abilities."
+  },
+  "monster_key": "moonkite"
+}

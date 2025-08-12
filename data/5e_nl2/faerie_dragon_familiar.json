@@ -1,0 +1,52 @@
+{
+    "name": "Faerie Dragon Familiar",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 10 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "familiar",
+        "support",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "tiny",
+        "whimsical",
+        "enchanting",
+        "colorful"
+    ],
+    "description": "The Faerie Dragon Familiar is a tiny dragon that serves as a whimsical companion to spellcasters, featuring vibrant, colorful scales and eyes full of mischief.",
+    "memorable": "Euphoria Breath can confuse enemies, and it can become invisible as a bonus action.",
+    "goals": "To support its spellcaster allies and engage in light-hearted mischief.",
+    "relations": "Often associated with spellcasters and other dragons.",
+    "environment": "Commonly found in magical or whimsical environments.",
+    "strengths": "Exceptional Dexterity and Charisma enhance its stealth and magical abilities.",
+    "weaknesses": "Very low Strength results in weak melee attack capabilities.",
+    "attacks": "It has a weak bite attack dealing only 1 piercing damage, but excels with magical breath attacks that can confuse and blind.",
+    "most_powerful_ability": "Innate spellcasting allows it to cast a variety of useful spells without components.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, aiding its stealthy nature.",
+    "skills": "Proficient in stealth, arcana, and perception, enhancing its abilities in sneaking and magic.",
+    "additional_information": [
+        "Can turn invisible as a bonus action.",
+        "Gains new spells as it ages, enhancing its magical repertoire.",
+        "Euphoria Breath causes confusion in enemies, adding a tactical edge.",
+        "Prismatic Light can blind foes, aiding its escape or support tactics.",
+        "Beast Form can transform targets into harmless creatures, altering battlefield dynamics."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting based on Charisma, allowing for spontaneous casting of various spells with no material components.",
+    "test_queries": [
+        "tiny dragon that confuses enemies",
+        "magical companion with spellcasting abilities",
+        "colorful dragon that turns invisible",
+        "dragon that supports spellcasters with spells",
+        "whimsical dragon with blinding light ability"
+    ]
+}

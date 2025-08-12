@@ -1,0 +1,25 @@
+{
+    "name": "Zoog",
+    "queries": [
+        {
+            "query": "tiny chaotic evil creature with climbing ability",
+            "variant": "chaotic evil tiny monster that can climb"
+        },
+        {
+            "query": "stealthy aberration that attacks from above",
+            "variant": "aberration that is stealthy and attacks from high places"
+        },
+        {
+            "query": "creature with high Dexterity and very low Strength",
+            "variant": "monster low in strength but high in dexterity"
+        },
+        {
+            "query": "darkvision tiny monster with a bite attack",
+            "variant": "tiny creature that can see in the dark and has a bite"
+        },
+        {
+            "query": "perceptive small aberration with low hit points",
+            "variant": "small aberration that is perceptive but has few hit points"
+        }
+    ]
+}

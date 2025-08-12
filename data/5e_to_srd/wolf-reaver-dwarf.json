@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Wolf Reaver Dwarf is a tactical, resilient melee combatant similar to a Veteran with multiple weapon attacks and combat skills."
+  },
+  "Dwarf": {
+    "relation": "almost_identical",
+    "explanation": "A dwarf warrior with typical dwarven resilience, darkvision, and combat prowess using axes and spear."
+  },
+  "monster_key": "wolf-reaver-dwarf"
+}

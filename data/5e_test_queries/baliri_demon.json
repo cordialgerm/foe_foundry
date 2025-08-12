@@ -1,0 +1,25 @@
+{
+    "name": "Baliri Demon",
+    "queries": [
+        {
+            "query": "chaotic evil fiend with necrotic abilities",
+            "variant": "fiend with necrotic powers that's chaotic evil"
+        },
+        {
+            "query": "demon that severs limbs and has magic resistance",
+            "variant": "demon with limb severing attacks and resistant to magic"
+        },
+        {
+            "query": "medium fiend with high Strength that brays loudly",
+            "variant": "medium-sized fiend with strong Strength and loud braying"
+        },
+        {
+            "query": "Baliri creature resistant to poison in combat",
+            "variant": "poison-resistant Baliri that fights in battles"
+        },
+        {
+            "query": "demon with an area attack that stuns enemies",
+            "variant": "demon capable of stunning multiple foes with area attack"
+        }
+    ]
+}

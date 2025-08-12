@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "A powerful celestial being with radiant attacks, flight, and spellcasting similar to the Forgotten God."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "A majestic divine celestial with strong radiant damage and legendary abilities, conceptually akin to a forgotten god."
+  },
+  "monster_key": "forgotten-god"
+}

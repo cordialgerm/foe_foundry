@@ -1,0 +1,54 @@
+{
+    "name": "Doppelixir",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "20 feet walk, climb, and swim",
+    "role": "Ambusher",
+    "tags": [
+        "ooze",
+        "deception",
+        "ambusher"
+    ],
+    "adjectives": [
+        "tiny",
+        "deceptive",
+        "manipulative"
+    ],
+    "description": "The Doppelixir is a tiny ooze capable of imitating various liquids, making it an effective ambusher. It appears as an unassuming liquid when motionless, embodying a tactile, deceptive presence.",
+    "memorable": "Notable for its ability to charm targets, compelling them to drink from it, leading to blood loss.",
+    "goals": "To ambush and manipulate creatures, draining their life force.",
+    "relations": "May serve alongside other oozes or creatures that utilize deception.",
+    "environment": "Typically found in damp, shady areas where it can blend in with liquids.",
+    "strengths": "Resists damage from acid, fire, necrotic, and slashing, and can ignore many conditions.",
+    "weaknesses": "Low intelligence makes it vulnerable to intelligence-based attacks.",
+    "attacks": "Slam attack that deals bludgeoning damage and allows it to attach and drain blood.",
+    "most_powerful_ability": "Telepathic Urge, which charms a target, compelling them to approach and attempt to drink from the Doppelixir.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet, allowing it to detect creatures without sight.",
+    "skills": "Possesses perception skills with a passive score of 11, indicating mild awareness.",
+    "additional_information": [
+        "Can move through spaces as small as 1 foot wide without squeezing.",
+        "Imitates a wide range of common and uncommon liquids.",
+        "Does not require sleep, remaining active continuously.",
+        "Can move effortlessly across difficult surfaces and ceilings.",
+        "Leaves behind an imitation if it takes no damage from acid, fire, or poison when slain."
+    ],
+    "damage_types": [
+        "acid",
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny deceptive ooze that charms targets",
+        "liquid monster that drains blood",
+        "ambushing ooze that imitates potions",
+        "manipulative ooze with high dexterity",
+        "creature that tricks enemies into drinking"
+    ]
+}

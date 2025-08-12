@@ -1,6 +1,8 @@
 <MonsterName/>Arcamag</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Arcamag is a tiny monstrosity known for its cunning and deceptive nature. Often feared for its ability to manipulate spellcasters through attachment, this creature has a mix of strengths and weaknesses that make it an intriguing encounter. With an Armor Class of 13 and 22 hit points, the Arcamag is moderately difficult to harm but does not withstand many hits due to its low constitution score. Its key strengths lie in stealth, where it excels due to its ability to blend in when attached to a host, and in its unique abilities that allow it to shape-shift into small objects. However, its overall low strength and intelligence make it weak in direct combat situations, earning it an average challenge rating of 2.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Arcamag represents a stealthy and manipulative creature that can ha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcamag
 
 *Tiny* *Monstrosity* *neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Teleport (1/Day):** The arcamag magically teleports up to 60 feet to an unoccupied space. If it is attached to a host when it uses this action, it automatically detaches.
 
 
+</statblock>
 
 

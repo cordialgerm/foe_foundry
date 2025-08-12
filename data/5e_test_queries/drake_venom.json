@@ -1,0 +1,25 @@
+{
+    "name": "Venom Drake",
+    "queries": [
+        {
+            "query": "large dragon with potent poison and good camouflage abilities",
+            "variant": "big dragon that has strong poison and great camouflaging skills"
+        },
+        {
+            "query": "chaotic evil dragon type that bites and claws its foes",
+            "variant": "evil chaotic dragon kind that attacks with claws and bites"
+        },
+        {
+            "query": "dragon that uses venom attacks and has high hit points",
+            "variant": "dragon with venomous strikes and a lot of hit points"
+        },
+        {
+            "query": "agile dragon that hides well in natural surroundings",
+            "variant": "quick dragon that effectively conceals itself in nature"
+        },
+        {
+            "query": "creature that causes incapacitating pain with its poison",
+            "variant": "being that inflicts disabling pain through its toxic abilities"
+        }
+    ]
+}

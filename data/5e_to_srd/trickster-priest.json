@@ -1,0 +1,11 @@
+{
+  "Acolyte": {
+    "relation": "close_cousins",
+    "explanation": "The Trickster Priest is a humanoid cleric with healing and spellcasting abilities similar to an Acolyte."
+  },
+  "Priest": {
+    "relation": "almost_identical",
+    "explanation": "The Trickster Priest closely resembles a Priest with its clerical spellcasting, healing, and mace attacks."
+  },
+  "monster_key": "trickster-priest"
+}

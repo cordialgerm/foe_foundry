@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "A small, cunning humanoid with stealth and ambush tactics similar to a Goblin."
+  },
+  "monster_key": "dust-goblin-chieftain"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Acolyte",
+    "queries": [
+        {
+            "query": "supportive humanoid dressed in simple robes with healing magic",
+            "variant": "humanoid in simple robes that heals and supports allies"
+        },
+        {
+            "query": "medium creature that casts spells and assists in religious settings",
+            "variant": "creature that helps in temples and uses magic"
+        },
+        {
+            "query": "low armor class humanoid with divine spellcasting abilities",
+            "variant": "humanoid with weak defenses and divine spells"
+        },
+        {
+            "query": "devoted follower of a deity with spells like bless and cure wounds",
+            "variant": "devout believer using spells like bless and to heal"
+        },
+        {
+            "query": "cantrip user that provides advantages on death saves",
+            "variant": "spellcaster that grants death save advantages to friends"
+        }
+    ]
+}

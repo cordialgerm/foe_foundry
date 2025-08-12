@@ -1,0 +1,25 @@
+{
+    "name": "Fungi, Duskwilt",
+    "queries": [
+        {
+            "query": "small plant creature that absorbs light and uses telepathy",
+            "variant": "small plant monster that uses telepathy and absorbs light"
+        },
+        {
+            "query": "agile creature with necrotic abilities that lives in low light",
+            "variant": "agile monster with necrotic powers that thrives in darkness"
+        },
+        {
+            "query": "plant creature vulnerable to radiant damage that manipulates visibility",
+            "variant": "plant monster weak to radiant attacks that alters light visibility"
+        },
+        {
+            "query": "creature with darkvision that can poison enemies and telepathically communicate",
+            "variant": "monster with darkvision that can inflict poison and has telepathic communication"
+        },
+        {
+            "query": "Duskwilt tactics that combine melee and necrotic attacks",
+            "variant": "Duskwilt strategies that mix physical strikes and necrotic damage"
+        }
+    ]
+}

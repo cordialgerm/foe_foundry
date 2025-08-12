@@ -1,0 +1,7 @@
+{
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "The Monarch Skeleton is an undead skeleton that commands other skeletons and uses necrotic attacks, sharing the basic undead skeleton traits."
+  },
+  "monster_key": "monarch-skeleton"
+}

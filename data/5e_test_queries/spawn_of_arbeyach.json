@@ -1,0 +1,25 @@
+{
+    "name": "Spawn of Arbeyach",
+    "queries": [
+        {
+            "query": "medium fiend with poison abilities that summons insects",
+            "variant": "medium fiend with poisoned abilities that can summon insects"
+        },
+        {
+            "query": "lawful evil creature that can see in magical darkness and communicates with insects",
+            "variant": "lawful evil monster that can see through magical darkness and talks to insects"
+        },
+        {
+            "query": "dangerous fiend with hive bonds that has high strength and low movement speed",
+            "variant": "dangerous fiend with hive connections that has great strength and slow moving speed"
+        },
+        {
+            "query": "fiend immune to fire and poison that excels in combat with special abilities",
+            "variant": "fiend immune to fire and poisoning that is great in battle with special powers"
+        },
+        {
+            "query": "creature with good perception skill that uses a multiattack strategy",
+            "variant": "monster with high perception skill that employs multiattack tactics"
+        }
+    ]
+}

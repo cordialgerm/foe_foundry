@@ -1,0 +1,11 @@
+{
+  "Giant Frog": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, agile swamp creatures with strong jumping abilities and amphibious movement."
+  },
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ambusher and stealthy traits, using unique combat abilities to incapacitate foes."
+  },
+  "monster_key": "lobe-lemur"
+}

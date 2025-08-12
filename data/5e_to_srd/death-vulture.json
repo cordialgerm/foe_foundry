@@ -1,0 +1,11 @@
+{
+  "Vulture": {
+    "relation": "close_cousins",
+    "explanation": "A large vulture-like creature with pack tactics and a stench ability similar to the Vulture."
+  },
+  "Death Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares necrotic and poison damage traits and a menacing undead horror theme."
+  },
+  "monster_key": "death-vulture"
+}

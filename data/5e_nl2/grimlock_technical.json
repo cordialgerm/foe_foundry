@@ -1,0 +1,53 @@
+{
+    "name": "Grimlock Technical",
+    "creature_type": "Humanoid",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "stealth",
+        "ambush",
+        "rocky terrain",
+        "humanoid"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "tactical",
+        "versatile"
+    ],
+    "description": "The Grimlock Technical is a Medium humanoid that excels in stealth and subterfuge, often camouflaging into rocky terrains.",
+    "memorable": "Its clever tactics, use of camouflage, and ability to deal mixed bludgeoning and lightning damage make it stand out.",
+    "goals": "To ambush unsuspecting foes and control the battlefield.",
+    "relations": "Typically operates alone or in small groups, possibly alongside other Grimlock or similar stealthy creatures.",
+    "environment": "Rocky terrains, where it can effectively use camouflage to surprise its enemies.",
+    "strengths": "Excellent stealth capabilities and versatility in combat options, including the ability to deal both melee and ranged damage.",
+    "weaknesses": "Low hit points and poor Charisma, making it susceptible to social interactions and overt combat.",
+    "attacks": "Uses a Lightning Stick for mixed damage, a grappling attack, a sling for ranged attacks, and a powerful silenced blunderbuss for piercing damage.",
+    "most_powerful_ability": "Smoke Bomb can obscure the battlefield, facilitating ambushes or retreats.",
+    "senses": "Blindsight at 30 ft., or 10 ft. while deafened, and passive Perception of 14, allowing it to detect hidden foes.",
+    "skills": "Proficient in athletics, engineering, and stealth, giving it an advantage in physical endeavors.",
+    "additional_information": [
+        "Has advantage on Stealth checks in rocky terrain due to Camouflage.",
+        "Advantage on Perception checks relying on hearing or smell with Keen Hearing and Smell.",
+        "Capable of grappling foes and controlling the fight with Throttle ability.",
+        "Uses a combination of melee and ranged attacks effectively.",
+        "Blinded condition immunity enhances its survivability."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy ambush predator in rocky terrain",
+        "humanoid with bludgeoning and lightning attacks",
+        "cunning creature that uses smoke bombs",
+        "Grimlock with keen senses and camouflage",
+        "tactical creature with grappling abilities"
+    ]
+}

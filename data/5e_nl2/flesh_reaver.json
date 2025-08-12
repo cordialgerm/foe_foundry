@@ -1,0 +1,53 @@
+{
+    "name": "Flesh Reaver",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "40 feet walking speed, agile jumper",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "agile",
+        "tactical",
+        "evil"
+    ],
+    "adjectives": [
+        "quick",
+        "aggressive",
+        "tactical"
+    ],
+    "description": "The Flesh Reaver is a lithe undead creature, with a disjointed and grotesque appearance reflecting its malevolent nature. It possesses sharp claws and a predatory grace, allowing it to leap at its foes unexpectedly.",
+    "memorable": "Its ability to knock foes prone and consume their flesh while they are incapacitated sets it apart as a particularly lethal adversary.",
+    "goals": "To hunt down and devour living creatures, employing cunning tactics to exploit the vulnerable.",
+    "relations": "Often found in the company of other undead or evil creatures, exploiting Pack Tactics to maximize its combat effectiveness.",
+    "environment": "Usually lurks in graveyards, crypts, or shadowy urban areas where it can ambush unsuspecting prey.",
+    "strengths": "Immunity to poison, resistance to necrotic damage, and advantageous special abilities like Keen Senses and Pack Tactics enhance its combat capabilities.",
+    "weaknesses": "Low intelligence and charisma make it vulnerable to mental and social manipulations.",
+    "attacks": "Uses quick claw strikes to deal slashing damage and can followup with a Consume Flesh attack on prone targets for additional necrotic damage.",
+    "most_powerful_ability": "Its Leap ability allows it to jump into combat effectively and gain tactical advantage by knocking opponents prone.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to perceive its environment without needing sight.",
+    "skills": "Has a +2 modifier in perception checks due to its keen senses, providing good awareness of its surroundings.",
+    "additional_information": [
+        "Tactical in nature, utilizing group tactics against foes.",
+        "Can close distances quickly with its high movement speed.",
+        "Immune to conditions such as charmed, exhaustion, and poisoned.",
+        "Can bypass the mental defenses of enemies due to low intelligence.",
+        "Inflicts additional necrotic damage when it successfully consumes flesh."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with quick movement and jumping ability",
+        "agile reaver that consumes its foes",
+        "tactical undead that knocks opponents prone",
+        "creature with keen senses and necrotic abilities",
+        "flesh-eating monster with high mobility"
+    ]
+}

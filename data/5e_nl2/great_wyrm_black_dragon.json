@@ -1,0 +1,54 @@
+{
+    "name": "Great Wyrm Black Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Gargantuan",
+    "hp": 735,
+    "ac": 22,
+    "srd": false,
+    "cr": "23",
+    "movement": "walk 40 ft., fly 80 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "ambusher",
+        "spellcaster",
+        "aquatic"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "powerful",
+        "terrifying"
+    ],
+    "description": "A gargantuan dragon with black scales, commanding presence, and sharp claws. Its eyes glow ominously, and it can breathe acid.",
+    "memorable": "Its ability to virtually ensure success on saving throws and devastating acid attacks make the dragon a significant threat.",
+    "goals": "To dominate its territory and eliminate intruders.",
+    "relations": "Often encountered with other dragons or creatures of darkness, possibly leading broods of lesser dragons.",
+    "environment": "Typically found near swamps, lakes, or coastal waters where it can immerse itself in water.",
+    "strengths": "Incredible physical strength and resilience, immunity to acid damage, and powerful magical abilities.",
+    "weaknesses": "When its legendary resistances are depleted, its defenses can drop, leading to increased vulnerability.",
+    "attacks": "Multiattack includes a powerful bite, slashing claws, and a pushing tail attack, along with devastating acid breath and spit attacks.",
+    "most_powerful_ability": "Acid Breath, which deals massive area-of-effect damage and can blind foes.",
+    "equipment": null,
+    "senses": "Possesses blindsight and an impressive passive perception of 22, allowing it exceptional awareness in combative situations.",
+    "skills": "Skilled in history and perception, showcasing its knowledge and awareness on the battlefield.",
+    "additional_information": [
+        "Ambushes effectively while submerged in water for greater stealth.",
+        "Can breathe both air and water due to its amphibious nature.",
+        "When bloodied, its acid attacks become more powerful, ignoring resistance.",
+        "Can engage in terrifying roar to frighten foes within range.",
+        "Utilizes legendary actions to maintain battlefield control."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting with a DC of 19, can cast spells like fog cloud, pass without trace, and time stop.",
+    "test_queries": [
+        "massive black dragon with acid breath",
+        "dragon that attacks from underwater",
+        "Gargantuan dragon with devastating magic",
+        "acid-spitting dragon lurking in swamps",
+        "powerful dragon known for stealth attacks"
+    ]
+}

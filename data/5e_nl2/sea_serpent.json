@@ -1,0 +1,50 @@
+{
+    "name": "Sea Serpent",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 247,
+    "ac": 17,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 10 ft., swim 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "serpent",
+        "aquatic",
+        "monstrosity",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "amphibious"
+    ],
+    "description": "A massive serpent-like creature with impressive physical form, it dominates its environment both in water and on land.",
+    "memorable": "With its ability to grapple and deliver devastating damage, it poses a formidable challenge to adventurers.",
+    "goals": "Predominantly seeks to overpower and dominate its foes in aquatic territories.",
+    "relations": "Commonly found near coastal areas or within large bodies of water, may be encountered alongside other aquatic creatures.",
+    "environment": "Aquatic environments such as oceans and large lakes.",
+    "strengths": "High Strength and Constitution scores allow it to deal and withstand significant damage.",
+    "weaknesses": "Low Dexterity and Intelligence make it less agile and mentally capable.",
+    "attacks": "Attacks with powerful coils, a sweeping tail, and a piercing bite.",
+    "most_powerful_ability": "Coils ability not only allows it to deal high bludgeoning damage but also grapples opponents to restrict their movement.",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Amphibious, can breathe air and water.",
+        "Reactive abilities enhance its defensive tactics.",
+        "Can attack twice as a reaction when injured.",
+        "Can thrash while bloodied for increased damage.",
+        "Sinuous ability allows occupying the same space as others."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan aquatic serpent",
+        "serpent that grapples and thrashes",
+        "powerful sea monster with a tail",
+        "monster that can breathe air and water",
+        "massive serpent with deadly melee attacks"
+    ]
+}

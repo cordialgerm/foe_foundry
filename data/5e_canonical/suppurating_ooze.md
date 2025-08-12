@@ -1,6 +1,8 @@
 <MonsterName/>Suppurating Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>30</HP>
 <summary>The Suppurating Ooze is a Medium-sized ooze creature that operates without any alignment, making it a neutral force in the world. It serves as a challenge rating of 1, providing a moderate threat to adventurers, particularly due to its unique abilities and diseases. With an Armor Class of 8, it is relatively easy to hit, but it compensates for this with a decent pool of 30 hit points, translating to a good durability for its challenge rating. The creature is notable for its immunities and resistances, making it difficult to harm with certain damage types and conditions. However, it lacks intelligence and charisma, indicating its simplistic behavior in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For its actions, the Suppurating Ooze can make a melee weapon attack with its Ps
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Suppurating Ooze
 
 *Medium* *Ooze* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 9 (2d8) necrotic damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or become infected with the seeping death disease (see the Seeping Death trait).
 
 
+</statblock>
 
 

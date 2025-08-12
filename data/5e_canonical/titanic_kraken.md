@@ -1,6 +1,8 @@
 <MonsterName/>Titanic Kraken</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>25</CR>
+<AC/>20</AC>
+<HP/>888</HP>
 <summary>The Titanic Kraken is an enormous and menacing monstrosity that shallows the depths of the ocean with its monumental presence. It is a formidable foe, with exceptional attributes and abilities that make it a true terror in combat. With an Armor Class of 20, a staggering 888 hit points, and a challenge rating of 25, the Titanic Kraken is a significant threat to any adventurers daring enough to face it. Its natural defenses include immunity to lightning damage and damage from nonmagical weapons, along with resistances to cold, fire, and thunder. Though its Dexterity is average at +0, its Strength of +10, Constitution of +8, Intelligence of +6, Wisdom of +4, and Charisma of +4 contribute to its overall capability in battle. The Kraken has multiple special abilities that enhance its survivability and offensive capabilities, including its ability to take control of the battlefield with ink clouds and summoned storms.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Titanic Kraken stands as one of the most powerful and challenging c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Titanic Kraken
 
 *Titanic* *Monstrosity*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** The kraken makes one tentacle attack.
 - **Fling:** The kraken uses Fling.
 - **Squeeze (Costs 2 Actions):** The kraken ends any magical effect that is restraining it or reducing its movement and then swims up to half its swim speed without provoking opportunity attacks. During this movement, it can fit through gaps as narrow as 10 feet wide without squeezing.
+</statblock>
 
 

@@ -1,0 +1,51 @@
+{
+    "name": "Cavelight Moss",
+    "creature_type": "Plant",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 95,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 15 ft.",
+    "role": "null",
+    "tags": [
+        "plant",
+        "grappling",
+        "illuminating"
+    ],
+    "adjectives": [
+        "resilient",
+        "exhausting",
+        "large"
+    ],
+    "description": "The Cavelight Moss is a large plant creature that emits light in dark areas and has a unique ability to grapple foes with its tendrils.",
+    "memorable": "Its capability to grapple and exhaust adventurers while providing illumination makes it both fascinating and dangerous in combat.",
+    "goals": "To ensnare and sap the strength of creatures that come near.",
+    "relations": "Related to other plant creatures, possibly found in caves alongside other subterranean life.",
+    "environment": "Subterranean ecosystems, particularly in dark cave environments.",
+    "strengths": "High hit points, natural armor, and ability to make opponents exhausted.",
+    "weaknesses": "Low mobility and very low intelligence make it vulnerable to more cunning foes.",
+    "attacks": "Can make two Tendrils attacks that can grapple and restrain opponents, causing exhaustion.",
+    "most_powerful_ability": "Variable Illumination allows it to adjust the radius of bright light it emits.",
+    "equipment": null,
+    "senses": "Possesses tremorsense out to 60 feet, allowing it to detect vibrations in its surroundings.",
+    "skills": "Possesses damage resistances to acid, cold, fire, and slashing from nonmagical attacks, and has immunity to many crowd control effects.",
+    "additional_information": [
+        "Can only grapple one creature at a time.",
+        "Grappling imposes a DC 15 Constitution saving throw on foes."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature with grappling abilities",
+        "large moss that exhausts its opponents",
+        "subterranean plant that emits bright light",
+        "illuminating moss in cave environments",
+        "strong plant that grapples adventurers"
+    ]
+}

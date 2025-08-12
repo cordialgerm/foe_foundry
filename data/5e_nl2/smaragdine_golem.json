@@ -1,0 +1,54 @@
+{
+    "name": "Smaragdine Golem",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 231,
+    "ac": 17,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "construct",
+        "guardian",
+        "magical",
+        "durable"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "magical",
+        "mechanical"
+    ],
+    "description": "The Smaragdine Golem is a large construct with a solid, emerald-like exterior. It has no facial features or limbs beyond its arms, which end in enormous fists that appear to glow with magical energy.",
+    "memorable": "Its unique ability to absorb and release magical spells makes it a cunning foe on the battlefield.",
+    "goals": "Serves as a guardian or weapon of its creator, staying loyal and following orders.",
+    "relations": "Often created and controlled by powerful spellcasters.",
+    "environment": "Typically found in the service of arcane practitioners or guarding valuable locations.",
+    "strengths": "Immunity to nonmagical physical attacks and a strong resistance to spells, along with significant force damage output.",
+    "weaknesses": "Lacks intelligence and cannot communicate, making it dependent on its creator's direction.",
+    "attacks": "Makes powerful slam attacks delivering both bludgeoning and force damage with magical enhancements.",
+    "most_powerful_ability": "Can absorb spells and release them in a damaging burst, incapacitating foes with a single action.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet but limited passive perception.",
+    "skills": null,
+    "additional_information": [
+        "Construct nature allows it to operate without air, food, or sleep.",
+        "Each weapon attack deals an additional 5d8 force damage.",
+        "Immutable form grants immunity to transformation effects.",
+        "Magic resistance provides advantage on saving throws against magic.",
+        "Charged state allows for a powerful explosive release of absorbed magic."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical guardian with powerful magic",
+        "Large construct that absorbs spells",
+        "emerald golem with force damage attack",
+        "defensive magical construct in combat",
+        "golem that can incapacitate opponents"
+    ]
+}

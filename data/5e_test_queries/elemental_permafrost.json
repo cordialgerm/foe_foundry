@@ -1,0 +1,25 @@
+{
+    "name": "Permafrost Elemental",
+    "queries": [
+        {
+            "query": "large ice elemental that infects with plague",
+            "variant": "big ice elemental that spreads disease"
+        },
+        {
+            "query": "cold damage dealer with freezing terrain ability",
+            "variant": "frosty damage dealer that creates difficult ground"
+        },
+        {
+            "query": "elemental creature weak against fire with high hit points",
+            "variant": "fire vulnerable elemental with strong health points"
+        },
+        {
+            "query": "tall elemental that can burrow and cause difficult terrain",
+            "variant": "huge elemental that burrows and makes terrain hard to navigate"
+        },
+        {
+            "query": "elemental with natural armor and frigid footprints",
+            "variant": "creature with armor and ability to freeze the ground"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Lizard": {
+    "relation": "almost_identical",
+    "explanation": "A tiny, agile cold-blooded reptile with climbing ability and low hit points matching the SRD Lizard."
+  },
+  "monster_key": "lizard"
+}

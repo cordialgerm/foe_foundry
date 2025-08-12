@@ -1,0 +1,11 @@
+{
+  "Mummy": {
+    "relation": "close_cousins",
+    "explanation": "Both are large undead creatures with spellcasting and strong melee attacks, often found in haunted or necromantic environments."
+  },
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the eerie undead nature and melee combat focus, though the Mari Lwyd has unique spellcasting and thematic elements."
+  },
+  "monster_key": "mari-lwyd"
+}

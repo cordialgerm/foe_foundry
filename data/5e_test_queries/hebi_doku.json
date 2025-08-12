@@ -1,0 +1,25 @@
+{
+    "name": "Hebi-Doku",
+    "queries": [
+        {
+            "query": "chaotic evil serpentine fey that paralyzes enemies",
+            "variant": "evil serpentine fey that can paralysis foes with its attacks"
+        },
+        {
+            "query": "slimy medium-sized creature from the fey realm with keen smell",
+            "variant": "slender medium creature from the fey world with strong sense of smell"
+        },
+        {
+            "query": "creature immune to poison that attacks with venomous bites",
+            "variant": "monster that is poison immune and uses venomous bites in its attacks"
+        },
+        {
+            "query": "Fey monster with multiattack and toxic abilities in combat",
+            "variant": "Fey creature that uses multiattack and has toxic abilities in fights"
+        },
+        {
+            "query": "snake-controlling fey creature that thrives in ambush situations",
+            "variant": "fey creature that commands snakes and excels in ambush tactics"
+        }
+    ]
+}

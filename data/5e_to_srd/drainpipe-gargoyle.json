@@ -1,0 +1,11 @@
+{
+  "Gargoyle": {
+    "relation": "almost_identical",
+    "explanation": "A gargoyle with False Appearance and flying melee attacks, closely matching the Drainpipe Gargoyle's ambush and statue-like traits."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares elemental water nature and immunity traits, though the Drainpipe Gargoyle combines this with gargoyle features."
+  },
+  "monster_key": "drainpipe-gargoyle"
+}

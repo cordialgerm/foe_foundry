@@ -1,0 +1,54 @@
+{
+    "name": "Zmey Headling",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "slow land movement of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "chaotic",
+        "dragon",
+        "regenerative"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "dangerous",
+        "amphibious"
+    ],
+    "description": "The Zmey Headling is a medium-sized dragon with a strong physical presence and natural armor. It has a fearsome bite and sharp claws, with scales that hint at its fiery breath.",
+    "memorable": "Its ability to regenerate and devastating fire breath make it a terrifying opponent.",
+    "goals": "To dominate its territory and engage in combats to prove its might.",
+    "relations": "Often encountered in the company of other chaotic creatures, could have elemental creatures as allies.",
+    "environment": "Typically found in diverse terrains capable of supporting both water and land.",
+    "strengths": "Possesses resistances to cold and fire damage along with regenerative capabilities.",
+    "weaknesses": "Poor mental statistics, specifically low Intelligence and Charisma.",
+    "attacks": "Can unleash a powerful bite and claw attacks, as well as a fire breath attack in a cone.",
+    "most_powerful_ability": "Fire Breath, which can cause massive damage in a wide area while being selective in its targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Regenerates 10 hit points at the beginning of each turn.",
+        "Can breathe both air and water, enhancing adaptability.",
+        "Can choose not to harm plants with its fire breath.",
+        "Has natural armor providing good protection.",
+        "Forms a moderate challenge for adventurers."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium dragon with fire breath",
+        "chaotic evil dragon that regenerates",
+        "Zmey Headling amphibious combat tactics",
+        "dangerous dragon with cold resistance",
+        "dragon with bite and claw attacks"
+    ]
+}

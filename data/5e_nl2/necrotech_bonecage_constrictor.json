@@ -1,0 +1,54 @@
+{
+    "name": "Necrotech Bonecage Constrictor",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 175,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 50 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "constrictor",
+        "necromancy",
+        "battlefield control"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing",
+        "durable",
+        "necrotic"
+    ],
+    "description": "This Huge undead creature combines technology and necromancy, standing as a fearsome presence on the battlefield.",
+    "memorable": "Its ability to restrain foes within its body while they are stabilized at 0 hit points makes it uniquely horrifying.",
+    "goals": "To restrain and incapacitate enemies on the battlefield.",
+    "relations": "Related to other undead creatures, often found with necromantic spellcasters.",
+    "environment": "Often encountered in places tainted by death or arcane experimentation.",
+    "strengths": "High hit points and a powerful restraining ability provide it with excellent durability and battlefield control.",
+    "weaknesses": "Vulnerable to bludgeoning and thunder damage, which can exploit its durability.",
+    "attacks": "It can make two Bite attacks dealing piercing and necrotic damage, and one Encage attack that restrains targets.",
+    "most_powerful_ability": "Necrotic Prison allows restrained creatures to stabilize at 0 hp, creating a unique situation in combat.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 30 feet, allowing it to detect movement even in darkness.",
+    "skills": "Has proficiency in Strength saving throws, boosting its resistance against physical challenges.",
+    "additional_information": [
+        "Immune to poisoned condition and being knocked prone.",
+        "Can restrain up to 6 Medium or smaller creatures simultaneously.",
+        "Creatures caged take additional necrotic damage each turn.",
+        "Requires Dexterity saving throw for Entangle action to restrain foes.",
+        "Vulnerabilities can be exploited to shift the tide of battle."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead giant that restrains enemies",
+        "creature with necrotic prison ability",
+        "huge monster that does bludgeoning damage",
+        "menacing constrictor creature with high hp",
+        "fearsome undead with necromantic prowess"
+    ]
+}

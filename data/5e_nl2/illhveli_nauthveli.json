@@ -1,0 +1,54 @@
+{
+    "name": "Illhveli, Nauthveli",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Gargantuan",
+    "hp": 280,
+    "ac": 18,
+    "srd": false,
+    "cr": "16",
+    "movement": "swim 60 ft., walk 10 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "monstrosity",
+        "fear",
+        "grappling"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "chaotic",
+        "fearsome"
+    ],
+    "description": "The Illhveli is a gargantuan monstrosity that embodies the terror of the deep sea, with an imposing physical presence.",
+    "memorable": "Its ability to instill fear and swallow foes whole makes it a terrifying presence in aquatic encounters.",
+    "goals": "Typically seeks to dominate swimmers and coastal inhabitants, instilling fear and causing chaos.",
+    "relations": "May be encountered alongside other aquatic monsters or serve as a guardian of undersea territories.",
+    "environment": "Often found in deep ocean waters, near coastal regions, or shipwrecks.",
+    "strengths": "High physical strength and resilience, exceptional swimming speed, and immunity to frightened condition.",
+    "weaknesses": "Vulnerable to cold damage and has a low Intelligence, relying on instinct.",
+    "attacks": "Can deliver devastating bite and tail attacks, grapple foes, and swallow smaller creatures whole.",
+    "most_powerful_ability": "The Thunderous Bellow unleashes a powerful sonic attack, causing thunder damage and knocking foes prone.",
+    "equipment": null,
+    "senses": "Has darkvision and a high passive perception of 17, enhancing its awareness in underwater environments.",
+    "skills": "Excels in Athletics and Perception, demonstrating proficiency in swimming and hunting.",
+    "additional_information": [
+        "Hold Breath for up to one hour.",
+        "Double damage to structures due to Siege Monster ability.",
+        "Surrounded by a supernatural aura of dread.",
+        "Can grapple and restrain foes with its powerful bites.",
+        "Swallowed creatures suffer ongoing acid damage while inside."
+    ],
+    "damage_types": [
+        "thunder",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan sea monster",
+        "aquatic creature that instills fear",
+        "monstrosity with terrifying bellow attack",
+        "monster that swallows creatures whole",
+        "deep sea predator with incredible strength"
+    ]
+}

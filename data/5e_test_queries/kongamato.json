@@ -1,0 +1,25 @@
+{
+    "name": "Kongamato",
+    "queries": [
+        {
+            "query": "large creature with flight abilities and a terrifying screech",
+            "variant": "big beast that can fly and has a frightful screech"
+        },
+        {
+            "query": "beast with claw attacks that can grapple enemies",
+            "variant": "monster with claws that can grab its foes"
+        },
+        {
+            "query": "ferocious large beast known for breaking boats",
+            "variant": "wild big creature recognized for damaging wooden vessels"
+        },
+        {
+            "query": "fast walker with high natural armor and low intelligence",
+            "variant": "quick moving creature with good natural defense and poor smarts"
+        },
+        {
+            "query": "Kongamato combat abilities and escape tactics",
+            "variant": "skills of the Kongamato in combat and how it escapes"
+        }
+    ]
+}

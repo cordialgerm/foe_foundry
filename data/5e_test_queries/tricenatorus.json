@@ -1,0 +1,25 @@
+{
+    "name": "Tricenatorus",
+    "queries": [
+        {
+            "query": "huge monstrosity with high hit points that deals double damage to objects",
+            "variant": "large monster that has a lot of HP and can double damage to structures"
+        },
+        {
+            "query": "strong melee attacker that regains tail spikes and grapples enemies",
+            "variant": "powerful melee creature that can regenerate tail spikes and restrain foes"
+        },
+        {
+            "query": "creature with Blood Frenzy ability and Relentless trait that enjoys physical combat",
+            "variant": "monster with an advantage on melee and Relentless feature that loves fighting"
+        },
+        {
+            "query": "Tricenatorus combat tactics for high-level adventurers",
+            "variant": "combat strategies for Tricenatorus against high-level parties"
+        },
+        {
+            "query": "monstrosity that resists nonmagical damage and has a powerful bite attack",
+            "variant": "creature that is tough against normal damage and has a strong bite attack"
+        }
+    ]
+}

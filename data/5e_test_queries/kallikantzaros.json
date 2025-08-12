@@ -1,0 +1,25 @@
+{
+    "name": "Kallikantzaros",
+    "queries": [
+        {
+            "query": "small fey creature that thrives in shadows and has nimble escape",
+            "variant": "fey creature that is small, loves shadows, and can escape quickly"
+        },
+        {
+            "query": "chaotic evil fey monster with high dexterity and stealth abilities",
+            "variant": "fey monster that is chaotic evil, very stealthy, and has great dexterity"
+        },
+        {
+            "query": "mischievous creature that suffers from burning incense and attacks with handsaw",
+            "variant": "trickster creature that is hurt by incense and uses a saw to attack"
+        },
+        {
+            "query": "Kallikantzaros vulnerabilities and special abilities in combat",
+            "variant": "weaknesses and unique abilities of the Kallikantzaros when fighting"
+        },
+        {
+            "query": "fey monster with darkvision that excels in ambush tactics",
+            "variant": "creature with darkvision that is a fey and is good at ambush strategies"
+        }
+    ]
+}

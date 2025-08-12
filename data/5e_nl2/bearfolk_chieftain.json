@@ -1,0 +1,50 @@
+{
+    "name": "Bearfolk Chieftain",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 130,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walking speed of 40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "Bearfolk",
+        "Chieftain",
+        "Frenzy",
+        "Melee Combat",
+        "Leader"
+    ],
+    "adjectives": [
+        "fierce",
+        "protective",
+        "strong",
+        "resilient"
+    ],
+    "description": "The Bearfolk Chieftain is a robust humanoid with exceptional physical prowess, embodying the spirit of a fierce warrior and protector. It wears a chain shirt and uses a shield, emphasizing its role in combat.",
+    "memorable": "The ability to enter a frenzy enhances its damage output while making it a formidable opponent that can turn the tide of battle.",
+    "goals": "To defend its kin and lead them in battle against threats.",
+    "relations": "Related to other Bearfolk and may lead a tribe of them; could ally with other chaotic good creatures.",
+    "environment": "Typically found in forested areas or territories inhabited by Bearfolk.",
+    "strengths": "Exceptional melee combat capabilities with high strength and resilience.",
+    "weaknesses": "Relatively low intelligence, which may hinder strategic planning.",
+    "attacks": "Employs multiattack strategy, utilizing a battleaxe for strong slashing damage, and a bite for additional piercing damage.",
+    "most_powerful_ability": "Frenzy allows it to become greatly enhanced in combat at the cost of increased vulnerability to attacks.",
+    "senses": "Possesses keen smell, granting advantage on perception checks related to smell.",
+    "skills": "Proficient in athletics, intimidation, insight, persuasion, and survival, showcasing its strength and leadership.",
+    "additional_information": [
+        "Has the Brute ability to deal extra damage with melee attacks.",
+        "Savage Charge can knock foes prone when charging, allowing for bonus bite attacks.",
+        "Leadership ability can bolster allies' attack and saving throws, reflecting its role as a leader."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong bear warrior",
+        "fierce protector chieftain",
+        "melee combat leader",
+        "wild humanoid chieftain",
+        "bearfolk tribe leader"
+    ]
+}

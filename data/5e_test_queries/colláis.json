@@ -1,0 +1,25 @@
+{
+    "name": "Coll\u00e1is",
+    "queries": [
+        {
+            "query": "large neutral monstrosity with magical resistance and battlefield control",
+            "variant": "neutral large monstrosity that has magical resistance and can control the battlefield"
+        },
+        {
+            "query": "powerful creature with impaling attack and area fear effect",
+            "variant": "strong monster that can impale enemies and create a fear effect in an area"
+        },
+        {
+            "query": "Coll\u00e1is abilities related to intimidation and forest dwelling",
+            "variant": "abilities of the Coll\u00e1is that involve intimidation and living in forests"
+        },
+        {
+            "query": "monstrosity that throws enemies and has a cautions presence",
+            "variant": "creature that can throw foes away and has a cautious presence"
+        },
+        {
+            "query": "strong melee attacker immune to charm and fear",
+            "variant": "powerful melee attacker that is immune to being charmed and scared"
+        }
+    ]
+}

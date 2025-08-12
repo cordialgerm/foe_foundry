@@ -1,0 +1,50 @@
+{
+    "name": "Dire Tyrannosaurus Rex",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 253,
+    "ac": 13,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dinosaur",
+        "predator",
+        "beast"
+    ],
+    "adjectives": [
+        "enormous",
+        "ferocious",
+        "formidable"
+    ],
+    "description": "The Dire Tyrannosaurus Rex is an enormous beast exemplifying raw physical power, with a massive size and powerful jaws, capable of grappling prey.",
+    "memorable": "Its overwhelming strength and ability to grapple make it a terrifying combatant, as it can control the battlefield with its Multiattack.",
+    "goals": "Typically seeks to hunt and overpower its foes, utilizing its immense size and strength in combat.",
+    "relations": "Related to other large dinosaurs and predatory beasts, often encountered in wilderness environments.",
+    "environment": "Usually found in dense jungles, open plains, or remote mountainous regions.",
+    "strengths": "High damage output through powerful bite and tail attacks; exceptional durability with a large number of hit points.",
+    "weaknesses": "Average Armor Class makes it vulnerable to skilled attackers, lacks strategic reasoning.",
+    "attacks": "Multiattack allows it to strike with both bite and tail; the Bite attack deals substantial piercing damage and can grapple targets, while the Tail attack delivers bludgeoning damage.",
+    "most_powerful_ability": "The ability to grapple opponents, giving it an advantage on bite attacks against them.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "High Strength score of 22 for powerful physical attacks",
+        "Low Intelligence limits tactical complexity",
+        "Fast movement speed of 50 feet",
+        "Grappling ability enhances combat effectiveness",
+        "Large size creates a formidable presence in encounters"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive ferocious dinosaur",
+        "giant predator with powerful bite",
+        "dinosaur that grapples its prey",
+        "enormous beast in dense jungle",
+        "huge monster with high hit points"
+    ]
+}

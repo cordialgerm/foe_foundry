@@ -1,0 +1,25 @@
+{
+    "name": "Salt Golem",
+    "queries": [
+        {
+            "query": "large construct with blinding salt spray ability that functions in combat",
+            "variant": "big construct that has blinding salt spray skill and works in battle"
+        },
+        {
+            "query": "amber-colored guardian created by a mage that inflicts necrotic damage",
+            "variant": "yellowish guardian made by a wizard that deals necrotic damage"
+        },
+        {
+            "query": "slow-moving golem that attacks with fists and causes exhaustion",
+            "variant": "golem that moves slow and hits with fists, making you tired"
+        },
+        {
+            "query": "tough protector immune to fire and poison living in various settings",
+            "variant": "strong guardian that is immune to fire and poison in different environments"
+        },
+        {
+            "query": "undead-churning construct that does not require food or sleep",
+            "variant": "zombie-like construct that doesn't need food or rest"
+        }
+    ]
+}

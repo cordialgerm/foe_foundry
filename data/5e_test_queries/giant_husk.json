@@ -1,0 +1,25 @@
+{
+    "name": "Giant Husk",
+    "queries": [
+        {
+            "query": "large undead creature that grapples and suffocates in combat",
+            "variant": "big undead monster that squeezes and suffocates during fights"
+        },
+        {
+            "query": "chaotic evil monster with low armor class and high strength",
+            "variant": "chaotic evil being that has bad AC and strong strength"
+        },
+        {
+            "query": "undead creature immune to poison that comes from dark places",
+            "variant": "poisonproof undead monster that inhabits dark areas"
+        },
+        {
+            "query": "Giant creature with unique abilities that attacks twice",
+            "variant": "Huge monster with special skills that can strike twice"
+        },
+        {
+            "query": "monster with low dexterity that excels in melee damage",
+            "variant": "creature with bad dexterity that is great at close combat damage"
+        }
+    ]
+}

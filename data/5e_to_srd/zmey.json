@@ -1,0 +1,11 @@
+{
+  "Adult Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A huge, multi-headed dragon with fire breath and formidable physical attacks similar to an Adult Red Dragon."
+  },
+  "Ancient Red Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "The Zmey's multi-headed nature and regeneration make it conceptually similar to the powerful and destructive Ancient Red Dragon."
+  },
+  "monster_key": "zmey"
+}

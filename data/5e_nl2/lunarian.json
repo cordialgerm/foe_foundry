@@ -1,0 +1,53 @@
+{
+    "name": "Lunarian",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 40 ft., climb 15 ft., walk 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "radiant",
+        "fey",
+        "chaotic"
+    ],
+    "adjectives": [
+        "magical",
+        "chaotic",
+        "agile"
+    ],
+    "description": "The Lunarian is a Medium-sized fey with a chaotic neutral alignment, featuring magical light and a halberd. It possesses a unique light-based aesthetic along with an elusive presence.",
+    "memorable": "The Lunarian's vulnerability to natural light and its ability to inflict radiant and necrotic damage make it a unique and dangerous opponent.",
+    "goals": "To thrive in moonlight and utilize its powerful abilities to combat foes.",
+    "relations": "Other fey creatures and moon-related entities.",
+    "environment": "Typically found in areas with strong moonlight and darkness.",
+    "strengths": "High mobility, magical attacks dealing radiant damage, and ability to summon light effects.",
+    "weaknesses": "Vulnerability to natural light, which can cause significant radiant damage.",
+    "attacks": "Multiattack with halberd, dealing slashing and radiant damage.",
+    "most_powerful_ability": "Summon Shadowbeam, creating a damaging area of effect.",
+    "equipment": "Halberd",
+    "senses": "Has a passive Perception score of 11, showcasing a moderate awareness.",
+    "skills": "Proficient in Acrobatics, Stealth, and mixed utility skills, allowing for diversified tactical options.",
+    "additional_information": [
+        "Creates magical light that can't be extinguished.",
+        "Takes radiant damage if exposed to natural light.",
+        "Weapons deal additional radiant damage and cause dim light.",
+        "Can summon a damaging area of pale light and shadow.",
+        "Resistant to necrotic and poison damage."
+    ],
+    "damage_types": [
+        "radiant",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magical fey that deals radiant damage",
+        "chaotic creature vulnerable to natural light",
+        "light summoning fey with halberd",
+        "agile fey that creates light effects",
+        "fey that summons beams of shadow"
+    ]
+}

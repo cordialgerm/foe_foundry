@@ -1,0 +1,11 @@
+{
+  "Young Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Rust Drake is a medium-sized chaotic evil dragon with strong physical attacks and a high AC, similar in role and size to a Young Red Dragon."
+  },
+  "Black Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "The Rust Drake's association with rust and acid damage conceptually aligns with the Black Dragon Wyrmling's acidic breath and swampy, corrosive nature."
+  },
+  "monster_key": "rust-drake"
+}

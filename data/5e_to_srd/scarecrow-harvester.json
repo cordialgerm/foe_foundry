@@ -1,0 +1,11 @@
+{
+  "Scarecrow": {
+    "relation": "almost_identical",
+    "explanation": "A humanoid construct with fear abilities and a scarecrow theme."
+  },
+  "Blazing Skeleton": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the skeletal and fire aspects along with fear-inducing presence."
+  },
+  "monster_key": "scarecrow-harvester"
+}

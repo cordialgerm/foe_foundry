@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Cyclops Myrmidon is a huge, strong giant that throws rocks and fights in melee like a Hill Giant."
+  },
+  "monster_key": "cyclops-myrmidon"
+}

@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "almost_identical",
+    "explanation": "A massive, powerful giant known for brute strength and melee combat, closely matching the Cyclops description."
+  },
+  "monster_key": "cyclops"
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Alp",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "illusion",
+        "stealth"
+    ],
+    "adjectives": [
+        "deceptive",
+        "chaotic",
+        "agile"
+    ],
+    "description": "The Alp is a Small fey creature characterized by its chaotic evil nature, featuring agility and magical abilities. It can manipulate shadows and create illusions, making it a tricky opponent.",
+    "memorable": "Its ability to incapacitate opponents with its Sleeper's Slap attack and its innate spellcasting, especially invisibility and sleep, make the Alp a formidable trickster.",
+    "goals": "The Alp typically seeks to confuse and incapacitate its foes, using clever tactics and illusions.",
+    "relations": "The Alp may be encountered with other fey creatures or in the company of trickster deities.",
+    "environment": "Alps are often found in dark forests or shadowy areas where they can take advantage of their stealth abilities.",
+    "strengths": "Notable strengths include exceptional stealth through Shadow Stealth and the ability to cast invisibility at will.",
+    "weaknesses": "It has a significant weakness to bright light, suffering disadvantages on attacks and perception in sunlight.",
+    "attacks": "The signature attack, Sleeper's Slap, deals bludgeoning damage and can frighten and restrain asleep or unconscious targets.",
+    "most_powerful_ability": "Invisibility allows the Alp to escape detection and set ambushes effectively.",
+    "equipment": null,
+    "senses": "It has darkvision out to 60 feet and a passive perception of 13.",
+    "skills": null,
+    "additional_information": [
+        "Immune to conditions like being charmed, exhausted, paralyzed, and unconscious.",
+        "Can use Shapechanger to polymorph into a Small or Tiny beast.",
+        "Casts spells like silent image and sleep three times per day.",
+        "Vulnerable to bright light, creating a tactical disadvantage.",
+        "Possesses Shadow Stealth for surprise attacks."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting based on Wisdom, with spells including invisibility at will and sleep three times per day.",
+    "test_queries": [
+        "deceptive shadow fey",
+        "tricky illusionist fey",
+        "small chaotic evil creature",
+        "stealthy polymorph fey",
+        "evil trickster in dark forests"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Cave Bear",
+    "queries": [
+        {
+            "query": "large cave-dwelling predator with powerful melee attacks",
+            "variant": "large predator from caves that has strong melee strikes"
+        },
+        {
+            "query": "beast with keen sense of smell that lives in caves",
+            "variant": "creature that lives in caves and has an acute sense of smell"
+        },
+        {
+            "query": "strong bear that can grapple opponents and has darkvision",
+            "variant": "strong bear with grappling ability and can see in dark"
+        },
+        {
+            "query": "tough melee attacker from caves with average intelligence",
+            "variant": "durable melee monster from caves that has low intelligence"
+        },
+        {
+            "query": "Cave Bear abilities and combat tactics",
+            "variant": "abilities of Cave Bear and its combat techniques"
+        }
+    ]
+}

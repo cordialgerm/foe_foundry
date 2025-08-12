@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small humanoid with draconic features and innate spellcasting serving dragons closely matches the Kobold."
+  },
+  "monster_key": "kobold-sorcerer-dragon-servitor"
+}

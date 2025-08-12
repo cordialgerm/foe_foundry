@@ -1,6 +1,8 @@
 <MonsterName/>Insect, Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>8</HP>
 <summary>The scorpion is a tiny beast that features low power and limited ability, making it a minor nuisance rather than a serious threat. It has an Armor Class of 11 due to its natural armor, allowing it to withstand some attacks, although with only 8 hit points, it is quite fragile. This creature has a very bad strength score of -4, which limits its physical capabilities, and its low Constitution score of -1 means it is not particularly resilient. It is, however, capable of stealth with a moderate Stealth score of 12, allowing it to move quietly and ambush unsuspecting prey. The scorpion's sting is its primary means of attack, providing a small amount of piercing damage and the potential for additional poison damage, which can be impactful against lower Constitution opponents.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the scorpion serves as a minor threat with a few tactical advantages in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Scorpion
 
 *Tiny beast*
@@ -44,5 +47,6 @@ Source: 5e_artisinal_monsters
 
 - **Sting.** Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage, and the target must succeed on a DC 10 CON save or take 2 (1d4) poison damage.
 
+</statblock>
 
 

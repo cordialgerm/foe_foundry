@@ -1,6 +1,8 @@
 <MonsterName/>Thornheart Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Thornheart Guardian is a formidable large construct with a lawful evil alignment. Serving as a sentinel or protector, it boasts impressive defensive capabilities, including a high armor class of 18 and a substantial pool of hit points totaling 133. This creature excels in physical combat, utilizing its strong strength attribute of 19 to deliver devastating attacks. With its magical enhancements and immunities, it presents a significant threat to adventurers. Notably, it can resist various forms of damage while remaining unaffected by many conditions. However, its intelligence is low, meaning it lacks sophisticated tactical reasoning, which can be exploited by clever players.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Thornheart Guardian combines physical prowess with potent magical q
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thornheart Guardian
 
 *Large* *Construct* *lawful evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Grasp of the Briar (Recharge 5-6):** The thornheart guardian summons grasping, thorny vines to impede and drain the life of its foes. The ground within 20 feet of the thornheart guardian becomes difficult terrain for 1 minute. This difficult terrain doesn’t cost the thornheart guardian extra movement. A creature that enters or starts its turn in the area must succeed on a DC 16 Strength saving throw or be restrained by the plants. A restrained creature takes 7 (2d6) necrotic damage at the start of each of its turns. A creature, including the restrained target, can take its action to break the target free of the vines by succeeding on a DC 16 Strength check.
 
 
+</statblock>
 
 

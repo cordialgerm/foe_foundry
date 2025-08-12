@@ -1,0 +1,15 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs animated by magical forces with a mechanical nature."
+  },
+  "Specter": {
+    "relation": "close_cousins",
+    "explanation": "Shares the spectral, undead nature and necrotic damage abilities."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are menacing undead with necrotic attacks and a spectral presence."
+  },
+  "monster_key": "fellforged"
+}

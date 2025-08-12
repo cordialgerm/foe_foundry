@@ -1,0 +1,49 @@
+{
+    "name": "Dogmole Juggernaut",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 126,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 10 ft., burrow 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "burrowing",
+        "rage",
+        "strength",
+        "monster"
+    ],
+    "adjectives": [
+        "fearsome",
+        "robust",
+        "tenacious"
+    ],
+    "description": "The Dogmole Juggernaut is a large monstrosity with exceptional strength and robust durability, characterized by its burrowing ability that allows it to surprise foes.",
+    "memorable": "Its ability to create tunnels and its relentless nature make it a formidable opponent in physical confrontations.",
+    "goals": "Typically engages in combat, especially against smaller enemies, utilizing its strength and burrowing ability strategically.",
+    "relations": "Often found in territories alongside other beasts or monstrosities, particularly those that are insectoid.",
+    "environment": "Commonly inhabits underground or rocky terrains where it can utilize its burrowing abilities.",
+    "strengths": "High strength and constitution provide significant offensive and defensive capabilities.",
+    "weaknesses": "Relatively low dexterity and intelligence limit its agility and tactical options.",
+    "attacks": "Utilizes a multiattack routine with a bite and two claw strikes, delivering strong piercing and slashing damage.",
+    "most_powerful_ability": "Its 'Relentless' ability allows it to stay in the fight despite severe damage, reflecting its tenacity.",
+    "equipment": null,
+    "senses": "Possesses blindsight to a range of 30 feet, allowing it to perceive its surroundings without sight.",
+    "skills": null,
+    "additional_information": [
+        "Can create 10-foot diameter tunnels when burrowing.",
+        "Gains advantage on checks against being pushed or knocked prone.",
+        "Enters a frenzy when wounded by insectoid creatures, enhancing its attack capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large burrowing monster with great strength",
+        "fearsome subterranean creature with relentless nature",
+        "monster that creates tunnels and excels in melee",
+        "juggernaut that rages against insectoid foes",
+        "tough monster with powerful bite and claws"
+    ]
+}

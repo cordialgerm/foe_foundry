@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "close_cousins",
+    "explanation": "Ratfolk share the small humanoid, cunning, and pack tactics traits similar to Kobolds."
+  },
+  "monster_key": "ratfolk"
+}

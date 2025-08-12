@@ -1,0 +1,15 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs serving as guardians with limited or no physical movement."
+  },
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "A large construct with magical origins and resilience, similar in role as a guardian."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "A magical construct designed to protect and guard, sharing the guardian role and magical nature."
+  },
+  "monster_key": "pillar-of-the-lost-magocracy"
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Hell Hound",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 15,
+    "srd": true,
+    "cr": "3",
+    "movement": "50 feet speed, agile",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "fire",
+        "canine",
+        "pack tactics"
+    ],
+    "adjectives": [
+        "fiery",
+        "fierce",
+        "intelligent",
+        "cunning"
+    ],
+    "description": "A fierce, fiery canine creature with charred black fur and glowing red eyes, known for its agility and combat prowess.",
+    "memorable": "The Hell Hound is known for its fiery breath and its tactics in attacking prey in packs, making it a formidable foe.",
+    "goals": "Typically serves as a guard or tracker for fiends, hunting down souls or enemies.",
+    "relations": "Often found in the company of devils and other infernal beings, enhancing their patrol of the Nine Hells.",
+    "environment": "Patrolling the borders of the Nine Hells or hunting for dark masters.",
+    "strengths": "Possesses strong fire immunity and benefits from Pack Tactics, enhancing its attack effectiveness.",
+    "weaknesses": "Low intelligence and charisma, limiting strategic depth and social interaction capabilities.",
+    "attacks": "Bite attack that deals piercing and fire damage, plus a powerful area attack with Fire Breath.",
+    "most_powerful_ability": "Fire Breath unleashes a cone of flames, causing massive fire damage to multiple targets.",
+    "senses": "Keen hearing and smell grant advantage on perception checks based on these senses.",
+    "skills": "Good at perception with a +5 bonus, allowing for effective environmental awareness.",
+    "additional_information": [
+        "Can pinpoint the location of Medium and smaller creatures within 30 feet by scent.",
+        "Highly intelligent and capable of working in packs to take down prey.",
+        "Potentially a guardian for darker forces, adding to its intimidating presence.",
+        "Known for its relentless pursuit of enemies.",
+        "Resilient due to its high Constitution."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery canine creature with guard duties",
+        "hell hound fire breath and pack tactics",
+        "fierce creature that hunts souls",
+        "black fur monster that serves fiends",
+        "swift fiend with powerful bite attack"
+    ]
+}

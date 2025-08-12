@@ -1,0 +1,52 @@
+{
+    "name": "Lymarien Swarm",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 5 ft., fly 50 ft.",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "swarm",
+        "crowd control",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "enchanting",
+        "agile",
+        "distracting",
+        "versatile"
+    ],
+    "description": "The Lymarien Swarm is a large fey creature characterized by its enchanting beauty, with fluttering wings and luminous eyes. It moves with agility and can occupy the space of other creatures.",
+    "memorable": "Its Distracting Beauty ability can significantly hinder enemies' effectiveness, creating a unique control dynamic in combat.",
+    "goals": "To support allies and control the battlefield while disorienting enemies.",
+    "relations": "Often found with other fey creatures, it may collaborate with beasts due to its ability to communicate with them.",
+    "environment": "Prefers enchanting forests or mystical glades where fey creatures thrive.",
+    "strengths": "High Dexterity allows it to evade attacks, while the ability to inflict crowd control with spells and distracting abilities provides tactical advantages.",
+    "weaknesses": "Poor physical strength limits its combat potential; cannot regain hit points while in combat.",
+    "attacks": "Claws attack with a potential for high slashing damage, coupled with a unique Flight of the Fey ability to lift and drop foes.",
+    "most_powerful_ability": "Distracting Beauty, which can incapacitate enemies and impose disadvantage on their attacks.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 14, indicating decent awareness.",
+    "skills": "Has proficiency in Stealth and Perception, enhancing its ability to move unseen and observe surroundings.",
+    "additional_information": [
+        "Can cast spells like dancing lights and minor illusion at will.",
+        "Has immunity to many conditions such as charmed and frightened.",
+        "Can effectively disrupt enemy attacks and perceptions.",
+        "Swarm ability provides mobility advantages on the battlefield.",
+        "Works well in groups to enhance coordination and effectiveness."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innately can cast spells like hypnotic pattern and sleep, focusing on crowd control.",
+    "test_queries": [
+        "enchanting swarm creature with flight",
+        "large fey that distracts enemies",
+        "agile creature that controls crowds",
+        "charming fey that speaks to beasts",
+        "swarm that can lift opponents in combat"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "A fiend with a lawful evil alignment and combat versatility, sharing infernal origins and cunning nature."
+  },
+  "Black Pudding": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the shapeless, amorphous form and ability to occupy other creatures' spaces."
+  },
+  "monster_key": "infernal-swarm"
+}

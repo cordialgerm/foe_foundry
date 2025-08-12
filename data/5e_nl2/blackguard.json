@@ -1,0 +1,52 @@
+{
+    "name": "Blackguard",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 18,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "combat leader",
+        "support",
+        "curse"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "powerful"
+    ],
+    "description": "The Blackguard is a well-armored humanoid clad in dark armor, wielding a greatsword and exuding a menacing aura that bolsters its allies.",
+    "memorable": "Its ability to enhance allies' melee damage while cursing enemies makes it a dual threat on the battlefield.",
+    "goals": "To dominate the battlefield and weaken opponents while empowering allies.",
+    "relations": "Could be encountered with other dark humanoids or creatures that benefit from its Aura of Anger.",
+    "environment": "Typically found in dark, oppressive settings, often leading bands of followers.",
+    "strengths": "Excellent in melee combat with a strong multiattack and the ability to curse opponents.",
+    "weaknesses": "Average dexterity may limit its agility in certain situations.",
+    "attacks": "Utilizes a deadly greatsword for melee attacks, and can employ a lance if mounted, or a heavy crossbow for ranged attacks enhanced by poison damage.",
+    "most_powerful_ability": "Aura of Anger grants allies within range a +2 bonus to melee weapon damage.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 15, indicating keen awareness.",
+    "skills": "Profoundly skilled in athletics, intimidation, and perception.",
+    "additional_information": [
+        "Strong against physical attacks due to high constitution.",
+        "Capable of unleashing a curse that affects multiple targets.",
+        "Versatile in combat with abilities for both melee and ranged engagement.",
+        "Functions well as a leader in battle, empowering allies.",
+        "May struggle against highly agile opponents due to average dexterity."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark knight leader",
+        "humanoid with curses",
+        "formidable melee combatant",
+        "aura of anger ability",
+        "intimidating blackguard"
+    ]
+}

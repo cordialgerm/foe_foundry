@@ -1,0 +1,50 @@
+{
+    "name": "Black Knight Commander",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 18,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "knight",
+        "mounted",
+        "commander"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "intimidating"
+    ],
+    "description": "The Black Knight Commander is a Medium humanoid clad in plate armor, wielding a lance and mace, exuding an aura of authority and menace.",
+    "memorable": "It combines martial prowess with the ability to instill fear, utilizing terrifying charges while mounted.",
+    "goals": "To lead and command allies on the battlefield, exerting control over the fight through fear and tactical advantage.",
+    "relations": "Often accompanied by a warhorse, commanding other creatures in a military context.",
+    "environment": "Typically found in battlefields or in the service of dark lords, leading troops.",
+    "strengths": "Possesses high damage output through melee attacks and a unique ability to enhance allies' damage while mounted.",
+    "weaknesses": "Reliance on its warhorse can be a vulnerability if separated from it.",
+    "attacks": "Employs a multiattack strategy with a lance and mace, capable of dealing significant damage.",
+    "most_powerful_ability": "Frightful Charge, allowing it to move through enemies and deal heavy damage while instilling fear.",
+    "equipment": "Wields a lance and mace, and is equipped with plate armor.",
+    "senses": null,
+    "skills": "Proficient in Animal Handling, Athletics, and Intimidation, making it effective in controlling mounts and influencing others.",
+    "additional_information": [
+        "Has a custom-barded warhorse that enhances its combat capabilities.",
+        "Can remain secure on its mount, immune to forced dismounts.",
+        "Frightful Charge ability recharges quickly, enabling frequent use.",
+        "Enhances allies within 10 feet with a damage bonus.",
+        "Noted for its strategic mobility and martial discipline."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mounted knight commander",
+        "black knight abilities",
+        "fear inducing warrior",
+        "dark magic knight",
+        "strategic mounted combat"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "An elite variant of the Kobold with typical traits like Pack Tactics, sunlight sensitivity, and tactical ambush abilities."
+  },
+  "monster_key": "elite-kobold"
+}

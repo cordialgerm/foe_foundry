@@ -1,0 +1,11 @@
+{
+  "Young Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A small, charismatic dragon with spellcasting and a focus on influence and authority, similar to a Young Gold Dragon's noble and magical nature."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "The Pact Drake's innate spellcasting and focus on divination and influence align with the Mage's spellcasting abilities."
+  },
+  "monster_key": "pact-drake"
+}

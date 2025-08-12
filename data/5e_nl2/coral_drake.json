@@ -1,0 +1,52 @@
+{
+    "name": "Coral Drake",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walking speed of 60 feet",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "aquatic",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "dangerous"
+    ],
+    "description": "The Coral Drake is a Medium-sized dragon with formidable physical attributes and a striking presence. Its features enable it to thrive in aquatic environments, with a coloration that aids in camouflage.",
+    "memorable": "The Coral Drake's ability to unleash tiny hatchling drakes as an area attack makes it particularly unique and fearsome.",
+    "goals": "Typically seeks to dominate its aquatic territory and eliminate threats in its environment.",
+    "relations": "Might be encountered alongside other aquatic creatures or as a master of lesser drakes.",
+    "environment": "Usually found in aquatic and underwater habitats.",
+    "strengths": "Possesses high hit points and is adept at physical combat with piercing damage capabilities and poison effects.",
+    "weaknesses": "Limited mobility and capabilities on dry land due to its requirement for water breathing.",
+    "attacks": "Can perform a Multiattack with a powerful Bite and two Spined Fin strikes, or utilize a Stinger attack with potential poison effects.",
+    "most_powerful_ability": "Biting Breath ability that releases ravenous hatchling drakes in a 15-foot cone, risking blindness and significant piercing damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a range of 120 feet and exceptional passive Perception of 17.",
+    "skills": "Has strong skill proficiencies in Acrobatics, Stealth, and notably high Perception for detecting hidden foes.",
+    "additional_information": [
+        "Immunity to poison damage and condition immunity to poisoned.",
+        "Ability to breathe only underwater due to its Water Breathing trait.",
+        "Advantage on Dexterity (Stealth) checks when submerged, enhancing its stealth capabilities.",
+        "Damage resistance to cold damage which adds to its survivability in icy waters.",
+        "High Constitution and Dexterity scores allowing for robust defenses and agility in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that lives in water and uses poison",
+        "formidable dragon with aquatic camouflage abilities",
+        "dangerous underwater predator that can blind foes",
+        "medium-sized dragon known for aquatic stealth",
+        "dragon that attacks with hatchling spawn in a cone"
+    ]
+}

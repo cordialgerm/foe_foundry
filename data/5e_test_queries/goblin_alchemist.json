@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Alchemist",
+    "queries": [
+        {
+            "query": "small humanoid that uses alchemical fire attacks and has a stealth skill",
+            "variant": "small humanoid using alchemical fire attacks and has stealth skill"
+        },
+        {
+            "query": "goblin creature with darkvision that can throw fire vials from a distance",
+            "variant": "goblin creature able to throw fire vials from a distance and has darkvision"
+        },
+        {
+            "query": "cunning goblin that blends into shadows and deals ongoing fire damage",
+            "variant": "cunning goblin that blends into shadows and inflicts ongoing fire damage"
+        },
+        {
+            "query": "alchemist goblin specializes in stealth and agility while using ranged attacks",
+            "variant": "goblin alchemist hence specializes in agility and stealth while utilizing ranged attacks"
+        },
+        {
+            "query": "small alchemist monster with nimble escape ability and low hit points",
+            "variant": "tiny alchemist creature with nimble escape feature and fewer hit points"
+        }
+    ]
+}

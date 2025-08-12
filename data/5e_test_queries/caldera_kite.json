@@ -1,0 +1,25 @@
+{
+    "name": "Caldera Kite",
+    "queries": [
+        {
+            "query": "large flying monster that emits toxic effects",
+            "variant": "big monster that flies and creates poisonous clouds"
+        },
+        {
+            "query": "poisonous kite creature that grapples its prey",
+            "variant": "grappling kite monster that uses poison on its victims"
+        },
+        {
+            "query": "monstrosity that avoids opportunity attacks and has a powerful haze ability",
+            "variant": "creature that can evade attacks and releases a toxic haze"
+        },
+        {
+            "query": "mobile enemy found in battle with high armor class",
+            "variant": "quick opponent that has a strong armor rating in combat"
+        },
+        {
+            "query": "monster that has low intelligence but high dexterity and strength",
+            "variant": "creature with very low IQ but excellent speed and power"
+        }
+    ]
+}

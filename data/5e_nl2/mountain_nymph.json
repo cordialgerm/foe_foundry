@@ -1,0 +1,52 @@
+{
+    "name": "Mountain Nymph",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking, 30 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "stealth",
+        "archer",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "elusive",
+        "chaotic"
+    ],
+    "description": "The Mountain Nymph is a Medium-sized fey creature known for her grace and cleverness, clad in leather armor, and capable of moving effortlessly across rocky terrain.",
+    "memorable": "Her ability to foresee the actions of her enemies and excel at stealth makes her a dangerous opponent.",
+    "goals": "To evade capture, protect her mountain home, and ambush intruders.",
+    "relations": "Often associated with other fey creatures and guardians of mountainous regions.",
+    "environment": "Rocky terrains and mountainous areas.",
+    "strengths": "High Dexterity and Wisdom grants her excellent agility, perception, and stealth skills.",
+    "weaknesses": "Moderate Intelligence and physical strength may hinder her in direct confrontations.",
+    "attacks": "Utilizes a Multiattack with her longbow, striking from a distance effectively.",
+    "most_powerful_ability": "Hunter's Foresight allows her to gain advantage against a marked target.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 90 feet and has a passive perception of 17.",
+    "skills": "Skilled in perception, stealth, and survival with a focus on evasion.",
+    "additional_information": [
+        "Innate spellcasting allows her to cast spells without material components.",
+        "Point Blank Hunter trait enables effective ranged attacks in close proximity.",
+        "Mountain Walk ability allows for seamless movement across rocky surfaces.",
+        "Hunter's Mark can be cast at will, enhancing her combat effectiveness.",
+        "Can create difficult terrain with Spike Growth to hinder enemies."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast Hunter's Mark at will, and Misty Step and Spike Growth three times per day each, with one use of Pass Without Trace.",
+    "test_queries": [
+        "agile fey with spellcasting abilities",
+        "mountain creature skilled in stealth and archery",
+        "chaotic neutral nymph in rocky terrain",
+        "elusive creature with foresight ability",
+        "fey who protects mountainous areas"
+    ]
+}

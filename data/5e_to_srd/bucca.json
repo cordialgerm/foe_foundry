@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Bucca is a tiny, mischievous fey with flying and stealth abilities similar to the Sprite."
+  },
+  "Quickling": {
+    "relation": "conceptually_similar",
+    "explanation": "The Bucca shares the trickster, elusive nature and high Dexterity of the Quickling, though it is not in the SRD list, conceptually it fits."
+  },
+  "monster_key": "bucca"
+}

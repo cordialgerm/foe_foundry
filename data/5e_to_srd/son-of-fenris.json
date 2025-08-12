@@ -1,0 +1,11 @@
+{
+  "Tarrasque": {
+    "relation": "conceptually_similar",
+    "explanation": "A huge, formidable monstrosity with powerful melee attacks and the ability to swallow foes."
+  },
+  "Behir": {
+    "relation": "close_cousins",
+    "explanation": "A huge serpentine monstrosity with a breath weapon and the ability to swallow creatures."
+  },
+  "monster_key": "son-of-fenris"
+}

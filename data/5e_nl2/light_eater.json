@@ -1,0 +1,53 @@
+{
+    "name": "Light Eater",
+    "creature_type": "Aberration",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 26,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 10 ft., fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "light manipulation",
+        "stealth"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "stealthy"
+    ],
+    "description": "The Light Eater is a small aberration that camouflages itself as a normal rock while motionless. It has a unique ability to thrive on consuming light, manipulating its surroundings with its multicolored bright light.",
+    "memorable": "Its ability to absorb light and emit blinding flashes makes it a formidable opponent in battle.",
+    "goals": "To consume light and ambush unsuspecting foes.",
+    "relations": "It may be found in areas with abundant light sources, potentially drawing the attention of light-based creatures.",
+    "environment": "Often found in illuminated areas where it can manipulate light sources.",
+    "strengths": "Immune to fire and radiant damage, and possesses good stealth abilities.",
+    "weaknesses": "Low Strength and Intelligence make it vulnerable in direct physical confrontations.",
+    "attacks": "Can deliver a Tentacle attack for bludgeoning damage.",
+    "most_powerful_ability": "Light Absorption, which allows it to diminish light around it and potentially create darkness.",
+    "equipment": null,
+    "senses": "It has blindsight up to 120 feet, allowing it to detect creatures without relying on light.",
+    "skills": "Has a passive Perception of 15, indicating good awareness of its surroundings.",
+    "additional_information": [
+        "Blinds creatures within 30 feet with Emergency Flare",
+        "Can sense the location of any light source within 100 feet",
+        "Transforms bright light to dim and dim light to darkness",
+        "Appears indistinguishable from normal rock while motionless",
+        "Sheds multicolored bright light for an hour after extinguishing a light source"
+    ],
+    "damage_types": [
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small creature that consumes light",
+        "aberration with tentacle attacks",
+        "stealthy creature disguised as rock",
+        "light-manipulating monster in bright areas",
+        "creature that blinds with light flares"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Constrictor Snake",
+    "queries": [
+        {
+            "query": "large muscular serpent that lives in jungles and can squeeze its prey",
+            "variant": "muscular large serpent that can squeeze prey and lives in jungles"
+        },
+        {
+            "query": "ambush predator with powerful constriction found in forests and swamps",
+            "variant": "predator with powerful constricting ability found in forests and swamps that ambushes"
+        },
+        {
+            "query": "snake that uses stealth to hunt and has great strength",
+            "variant": "stealthy snake that is strong and hunts its prey"
+        },
+        {
+            "query": "powerful snake that grapples its prey and can swim",
+            "variant": "grappling snake that is powerful and capable of swimming"
+        },
+        {
+            "query": "non-venomous snake that can constrict and is found in wet environments",
+            "variant": "wet environment snake that constricts and lacks venom"
+        }
+    ]
+}

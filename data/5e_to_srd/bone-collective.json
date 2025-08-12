@@ -1,0 +1,11 @@
+{
+  "Swarm of Skeletons": {
+    "relation": "almost_identical",
+    "explanation": "A swarm of animated bones with undead traits and swarm mechanics similar to the Bone Collective."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "The Bone Collective takes humanoid form and wields weapons like skeletons, sharing undead and animated bone characteristics."
+  },
+  "monster_key": "bone-collective"
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Possessed Pillar",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 95,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "slow movement at 20 feet",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "magical",
+        "construct"
+    ],
+    "adjectives": [
+        "formidable",
+        "imposing",
+        "magnetic",
+        "durable",
+        "persistent"
+    ],
+    "description": "The Possessed Pillar stands large and imposing, resembling a robust column. It possesses a magnetic body and blends seamlessly into its environment when motionless, resembling a statue or carved column.",
+    "memorable": "Its ability to restrain attackers with its magnetic body and its powerful magical attacks make it a unique guardian.",
+    "goals": "To serve as a powerful guardian in its designated territory.",
+    "relations": "Might be encountered alongside other constructs or magical entities.",
+    "environment": "Typically found guarding specific locations or treasures.",
+    "strengths": "High Strength for powerful melee attacks, magical resistance, and the ability to immobilize attackers.",
+    "weaknesses": "Vulnerable to non-magical attacks from weapons other than adamantine, and can be overwhelmed by multiple attackers.",
+    "attacks": "Can perform two Slam attacks that deal substantial bludgeoning damage along with damaging necrotic or radiant energy.",
+    "most_powerful_ability": "The Magnetic Body ability can restrain attackers and immobilize their weapons, creating tactical advantages.",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, drink, or rest.",
+        "Immunity to spells that alter its form.",
+        "Advantage on saving throws against spells.",
+        "Capable of dealing additional 2d8 necrotic or radiant damage with its attacks.",
+        "Indistinguishable from a statue while motionless."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magnetic guardian construct",
+        "large statue that restrains attackers",
+        "imposing guardian with magical melee attacks",
+        "magical guardian that appears as a column",
+        "powerful construct with necrotic damage"
+    ]
+}

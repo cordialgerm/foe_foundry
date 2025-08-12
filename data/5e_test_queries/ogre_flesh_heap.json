@@ -1,0 +1,25 @@
+{
+    "name": "Ogre Flesh Heap",
+    "queries": [
+        {
+            "query": "large undead creature that can regain hit points and has high strength",
+            "variant": "big undead monster that regains hit points and has great strength"
+        },
+        {
+            "query": "slow undead monster formed from ogre remains with poison immunity",
+            "variant": "sluggish undead creature made from ogre remains that is immune to poison"
+        },
+        {
+            "query": "undead giant with melee attacks and ability to cheat death",
+            "variant": "zombie giant with physical attacks and a skill to escape death"
+        },
+        {
+            "query": "creature that uses acid damage and has darkvision up to 60 feet",
+            "variant": "monster that deals acid damage and can see in the dark for 60 feet"
+        },
+        {
+            "query": "undead creature that performs grappling attacks and has low intelligence",
+            "variant": "undead monster that grapples its enemies and has poor intelligence"
+        }
+    ]
+}

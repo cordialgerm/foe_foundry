@@ -1,0 +1,7 @@
+{
+  "Bulette": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, burrowing monstrosities with strong melee attacks and tunnel-creating abilities."
+  },
+  "monster_key": "dogmole-juggernaut"
+}

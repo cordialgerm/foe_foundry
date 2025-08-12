@@ -1,0 +1,11 @@
+{
+  "Young Blue Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The creature is an undead variant of a Young Blue Dragon, sharing size, dragon features, and breath weapon theme."
+  },
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "It is an undead creature with zombie traits, including Undead Fortitude and the ability to create more zombies."
+  },
+  "monster_key": "young-blue-dragon-zombie"
+}

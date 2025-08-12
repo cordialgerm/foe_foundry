@@ -1,0 +1,25 @@
+{
+    "name": "Giant Ant Queen",
+    "queries": [
+        {
+            "query": "large beast with grappling bite and poison sting",
+            "variant": "big beast that has a bite that grapples and a sting with poison"
+        },
+        {
+            "query": "powerful ant queen that uses scent to boost minions",
+            "variant": "strong ant queen that boosts her minions with scent"
+        },
+        {
+            "query": "monster with blindsight that thrives in colonies",
+            "variant": "creature that thrives in ant colonies and has blindsight"
+        },
+        {
+            "query": "Giant Ant Queen abilities and combat tactics",
+            "variant": "abilities and combat strategies of the Giant Ant Queen"
+        },
+        {
+            "query": "ant queen with natural armor and decent hit points",
+            "variant": "queen ant that has natural armor and good hit points"
+        }
+    ]
+}

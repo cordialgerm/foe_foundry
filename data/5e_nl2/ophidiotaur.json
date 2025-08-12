@@ -1,0 +1,53 @@
+{
+    "name": "Ophidiotaur",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 95,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "swim 30 ft., walk 50 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "poison",
+        "summoner"
+    ],
+    "adjectives": [
+        "chaotic",
+        "poisonous",
+        "powerful",
+        "menacing"
+    ],
+    "description": "A large monstrosity with a powerful physique, showcasing serpentine features and armed with a glaive.",
+    "memorable": "Combines strong melee combat abilities with poison immunity and the ability to summon snakes, enhancing its threat level.",
+    "goals": "Overwhelm foes in battle using its powerful attacks and summoned allies.",
+    "relations": "Might command snakes or work alongside other chaotic evil creatures.",
+    "environment": "Typically found in swamps or areas with large bodies of water.",
+    "strengths": "High physical prowess, excellent durability, and poison immunity; also has magic resistance.",
+    "weaknesses": "Low intelligence may limit strategic thinking.",
+    "attacks": "Makes powerful melee attacks with its bite and poisoned glaive, capable of inflicting both piercing and poison damage.",
+    "most_powerful_ability": "Charge ability that grants extra slashing damage when moving toward a target.",
+    "equipment": "Glaive",
+    "senses": "Has a passive perception of 16, indicating strong awareness of its surroundings.",
+    "skills": "Proficient in Athletics and Stealth, enabling it to excel in physical encounters.",
+    "additional_information": [
+        "Possesses damage immunity to poison.",
+        "Conditions immunity to being poisoned.",
+        "Ability to summon 1d6 poisonous or flying snakes once per day.",
+        "Uses chaotic behavior in combat to keep foes guessing.",
+        "Strong in melee combat with high damage output."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large serpent-like monster that summons snakes",
+        "chaotic creature with poison immunity and glaive",
+        "Ophidiotaur powerful melee and poison creature",
+        "menacing monster with high physical strength and speed",
+        "tall monster that can charge at enemies"
+    ]
+}

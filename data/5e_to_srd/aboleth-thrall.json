@@ -1,0 +1,7 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "The Aboleth Thrall is a humanoid servant closely connected to and serving an Aboleth, sharing aquatic traits and loyalty."
+  },
+  "monster_key": "aboleth-thrall"
+}

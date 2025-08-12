@@ -1,0 +1,15 @@
+{
+  "Ancient Amethyst Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A gargantuan ancient dragon with psionic and mind-manipulating abilities, similar in concept to an ancient dragon with added psychic powers."
+  },
+  "Ancient Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the ancient dragon type and majestic presence, though the Amethyst variant has unique psionic abilities."
+  },
+  "Ancient Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient dragons with a regal and majestic demeanor, differing mainly in elemental and psionic traits."
+  },
+  "monster_key": "ancient-amethyst-dragon"
+}

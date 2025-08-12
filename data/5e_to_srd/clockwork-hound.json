@@ -1,0 +1,11 @@
+{
+  "Flying Sword": {
+    "relation": "conceptually_similar",
+    "explanation": "A mechanical construct designed for combat, similar to the Clockwork Hound's construct nature and combat role."
+  },
+  "Mastiff": {
+    "relation": "conceptually_similar",
+    "explanation": "A canine creature used for tracking and combat, sharing the hound-like concept with the Clockwork Hound."
+  },
+  "monster_key": "clockwork-hound"
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Rust Monster",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 14,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "fast, 40 feet speed",
+    "role": null,
+    "tags": [
+        "metal-corroding",
+        "insect-like"
+    ],
+    "adjectives": [
+        "strange",
+        "insect-like",
+        "dangerous"
+    ],
+    "description": "The Rust Monster is a medium-sized, insect-like creature with the unique ability to corrode and destroy metal objects, feeding on them as its primary food source.",
+    "memorable": "Its ability to destroy nonmagical metal weapons and armor makes it a significant threat to adventurers.",
+    "goals": "Searching for and consuming metal objects.",
+    "relations": "May be found in the company of other creatures in caverns or ruins.",
+    "environment": "Caverns, ruins, or near forges.",
+    "strengths": "Can detect ferrous metals within 30 feet and corrode metal upon contact.",
+    "weaknesses": "Low intelligence and reliance on instinct rather than strategy.",
+    "attacks": "Bite attack dealing piercing damage and antennae action to corrode metal.",
+    "most_powerful_ability": "Rust Metal, causing weapon damage penalties and potential destruction of nonmagical metal equipment.",
+    "equipment": null,
+    "senses": "Has tremorsense up to 30 feet, allowing it to detect creatures even through solid surfaces.",
+    "skills": "Noteworthy Stealth proficiency with a score of 13, enabling it to move quietly.",
+    "additional_information": [
+        "Iron Scent allows it to pinpoint ferrous metals by smell.",
+        "Rusts nonmagical metal weapons and ammo that strike it.",
+        "Resilient against exhaustion and fear effects.",
+        "Can climb difficult surfaces with Spider Climb ability.",
+        "Unique ecological niche feeding on metal."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "metal-eating insect creature",
+        "metal corroding monster in caverns",
+        "dangerous creature that destroys metal",
+        "insect monster that feeds on ferrous metals",
+        "fast moving rust monster in ruins"
+    ]
+}

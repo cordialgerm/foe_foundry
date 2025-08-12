@@ -1,0 +1,15 @@
+{
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "The Behtu is a small chaotic evil humanoid with fire breath, similar in role and size to an Imp."
+  },
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Behtu is a small humanoid skirmisher with strong physical attacks, akin to a Goblin's combat style."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Behtu's fire breath and elemental damage link it conceptually to the Fire Elemental's fiery nature."
+  },
+  "monster_key": "behtu"
+}

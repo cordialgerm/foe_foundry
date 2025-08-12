@@ -1,0 +1,25 @@
+{
+    "name": "Skeleton Horde",
+    "queries": [
+        {
+            "query": "large undead creature that uses melee and ranged attacks",
+            "variant": "big undead monster using both close and long-range attacks"
+        },
+        {
+            "query": "skeleton that does not require sleep and is immune to poison",
+            "variant": "skeleton that doesn\u2019t need to sleep and is immune to poison effects"
+        },
+        {
+            "query": "undead horde with bludgeoning vulnerability",
+            "variant": "horde of undead that is vulnerable to bludgeoning damage"
+        },
+        {
+            "query": "monster with average armor class and strong piercing damage",
+            "variant": "creature with normal armor class and high piercing attack power"
+        },
+        {
+            "query": "fearsome skeleton that can coordinate attacks",
+            "variant": "intimidating skeleton capable of coordinating attacks"
+        }
+    ]
+}

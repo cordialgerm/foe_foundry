@@ -1,0 +1,15 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with slam attacks and resistances, but the Tar Golem has unique fire and poison traits."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Tar Golem's fiery nature and ignition on fire damage conceptually align with the elemental fire theme."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "The Tar Golem's amorphous, sticky, and gooey nature is conceptually similar to the Black Pudding ooze."
+  },
+  "monster_key": "tar-golem"
+}

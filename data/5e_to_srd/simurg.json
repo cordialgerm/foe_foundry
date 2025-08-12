@@ -1,0 +1,11 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are gargantuan celestial creatures with powerful physical attacks and spellcasting abilities."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Simurg shares the celestial nature, healing, and support role with the Planetar, though with different combat styles."
+  },
+  "monster_key": "simurg"
+}

@@ -1,0 +1,11 @@
+{
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium dragons with nature-themed abilities and a connection to forest or desert environments."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are reptilian creatures adapted to specific environments with natural armor and area damage abilities."
+  },
+  "monster_key": "cactus-drake"
+}

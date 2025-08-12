@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish knights with strong combat abilities and a menacing presence."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the infernal theme and fiery nature, though mechanically different."
+  },
+  "monster_key": "infernal-knight"
+}

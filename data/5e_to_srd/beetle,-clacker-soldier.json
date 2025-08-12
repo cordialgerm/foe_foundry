@@ -1,0 +1,7 @@
+{
+  "Giant Beetle": {
+    "relation": "close_cousins",
+    "explanation": "The Clacker Soldier is a small beetle-like creature with resilience and melee attacks, similar to the Giant Beetle but with added thunderous sonic abilities."
+  },
+  "monster_key": "beetle,-clacker-soldier"
+}

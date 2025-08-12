@@ -1,0 +1,50 @@
+{
+    "name": "Giant Grick",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 90,
+    "ac": 17,
+    "srd": false,
+    "cr": "2",
+    "movement": "40 ft. walking and climbing speed",
+    "role": "Bruiser",
+    "tags": [
+        "Giant",
+        "Ambusher",
+        "Grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "mobile",
+        "stealthy"
+    ],
+    "description": "The Giant Grick is a Medium monstrosity with powerful tentacles and a beak, known for its ability to surprise foes while climbing on difficult surfaces.",
+    "memorable": "Its ability to grapple multiple foes and attack from an ambush position makes it a unique threat in combat.",
+    "goals": "To ambush and immobilize targets for feeding.",
+    "relations": "Other monsters in rocky terrains or hiding spots, potentially working alongside similar ambush predators.",
+    "environment": "Rocky terrains and caves where it can utilize its camouflage.",
+    "strengths": "High Strength and abilities to climb and ambush effectively.",
+    "weaknesses": "Very low Intelligence and Charisma, making it poor in social interactions.",
+    "attacks": "Tentacle attacks with a long reach, capable of grappling opponents.",
+    "most_powerful_ability": "The ability to grapple and restrain up to two foes simultaneously with its tentacles.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in stealth, making it proficient at hiding in rocky environments.",
+    "additional_information": [
+        "Resistance to nonmagical weapon damage",
+        "Can move on ceilings and difficult surfaces",
+        "Uses camouflage to enhance stealth",
+        "Two powerful melee attack options",
+        "Average passive perception"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "rock climbing monster that ambushes foes",
+        "Giant creature with powerful grappling tentacles",
+        "stealthy monstrosity hiding in rocky terrain",
+        "mobile ambusher with climbing abilities",
+        "monster that can grapple multiple opponents"
+    ]
+}

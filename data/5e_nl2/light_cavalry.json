@@ -1,0 +1,50 @@
+{
+    "name": "Light Cavalry",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walk speed",
+    "role": null,
+    "tags": [
+        "cavalry",
+        "mounted",
+        "fire breath"
+    ],
+    "adjectives": [
+        "agile",
+        "versatile",
+        "combat-ready"
+    ],
+    "description": "The Light Cavalry wears leather armor and carries a shield, skilled in mounted combat with a Cavalry Saber and a Shortbow.",
+    "memorable": "Specializes in melee attacks against smaller foes with a powerful area attack through Fire Breath.",
+    "goals": "Engage in battles effectively while mounted, taking down smaller opponents.",
+    "relations": "Can be found fighting alongside other cavalry or humanoid warriors.",
+    "environment": "Typically found on battlefields or in areas where mounted combat is prevalent.",
+    "strengths": "Advantage on melee attacks against smaller creatures when mounted, strong physical capabilities.",
+    "weaknesses": "Lower intelligence and charisma scores hinder problem-solving and social interactions.",
+    "attacks": "Utilizes a Cavalry Saber for slashing damage and a Shortbow for piercing damage, includes a fire breath area attack.",
+    "most_powerful_ability": "Fire Breath, dealing significant area damage in a cone.",
+    "equipment": "Cavalry Saber and Shortbow",
+    "senses": "Possesses a passive perception of 14, showing good awareness of surroundings.",
+    "skills": "Adept in athletics and perception with +4 bonuses in both skills.",
+    "additional_information": [
+        "Resistance to fire damage increases resilience in combat.",
+        "Mounted Warrior ability prevents the mount from being charmed or frightened.",
+        "Infantry Slayer ability enhances melee effectiveness against smaller foes."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mounted humanoid warrior with fire breath",
+        "combat cavalry skilled in slashing attacks",
+        "light cavalry with fire breath and dual attacks",
+        "medium humanoid proficient in mounted combat",
+        "agile warrior focused on melee and ranged attacks"
+    ]
+}

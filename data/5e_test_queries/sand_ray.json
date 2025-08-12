@@ -1,0 +1,25 @@
+{
+    "name": "Sand Ray",
+    "queries": [
+        {
+            "query": "large aberration that can fly and ambush in sandy environments",
+            "variant": "big aberration capable of flying and ambushing in sandy surroundings"
+        },
+        {
+            "query": "creature with light sensitivity and a grappling bite attack",
+            "variant": "monster suffering from light sensitivity and having a grappling bite ability"
+        },
+        {
+            "query": "psychological attack creature that uses illusions and has high stealth",
+            "variant": "creature with psychological attacks that utilizes illusions and boasts high stealth"
+        },
+        {
+            "query": "sand-dwelling monster that can frighten and blind its prey",
+            "variant": "monster living in sand that can scare and blind its targets"
+        },
+        {
+            "query": "stealthy creature with powerful bite and tail attacks",
+            "variant": "sneaky creature featuring strong bite and tail attacks"
+        }
+    ]
+}

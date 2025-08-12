@@ -1,0 +1,25 @@
+{
+    "name": "Oliphaunt",
+    "queries": [
+        {
+            "query": "gargantuan beast known for its strength and can trample enemies",
+            "variant": "huge beast famous for its power and ability to trample foes"
+        },
+        {
+            "query": "massive creature with high hit points and low Dexterity living on the battlefield",
+            "variant": "big creature with a large health pool and poor agility seen in combat"
+        },
+        {
+            "query": "trampling monster that can use a trunk to grapple and slam opponents",
+            "variant": "creature that tramples and grapples with its trunk while slamming enemies"
+        },
+        {
+            "query": "strong beast that lacks magical abilities and excels in physical combat",
+            "variant": "powerful beast with no magical skills that is great at melee battles"
+        },
+        {
+            "query": "Oliphaunt's charging ability to knock down foes and make stomps",
+            "variant": "charging ability of the Oliphaunt that knocks down enemies and allows stomping"
+        }
+    ]
+}

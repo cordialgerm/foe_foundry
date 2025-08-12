@@ -1,0 +1,54 @@
+{
+    "name": "Ophanim",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 200,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "fly 120 ft., hover, walk 50 ft.",
+    "role": "Artillery",
+    "tags": [
+        "celestial",
+        "lawful good",
+        "spellcaster",
+        "guardian",
+        "divine"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "radiant",
+        "magical"
+    ],
+    "description": "The Ophanim is a large celestial creature with remarkable physical and magical attributes, characterized by its glowing form and majestic presence.",
+    "memorable": "The ability to instantly sense lies makes the Ophanim a formidable truth-seeker and guardian.",
+    "goals": "Typically serves as a protector or guide for those who align with its ideals.",
+    "relations": "Often associated with other celestial beings and may serve as a guardian for divine causes.",
+    "environment": "Typically found in celestial realms or locations of great significance to good-aligned beings.",
+    "strengths": "Exceptional physical and magical defenses, potent spellcasting, and the unique ability to discern deception.",
+    "weaknesses": "Vulnerability to non-magical attacks.",
+    "attacks": "Can unleash four radiant Light of Judgment attacks and a devastating Holy Fire ability.",
+    "most_powerful_ability": "Holy Fire, which deals significant radiant damage and can reduce enemies to ash.",
+    "senses": "Possesses truesight up to 120 feet and has a remarkable passive perception of 22.",
+    "skills": "Proficient in insight and perception, enhancing its ability to understand and perceive its environment.",
+    "additional_information": [
+        "Immune to necrotic and poison damage.",
+        "Resists radiant damage and non-magical physical damage.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Innate spellcaster with a spell save DC of 21, enabling powerful spellcasting.",
+        "Can commune for guidance and bring allies back to life with true resurrection."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells at will and has a range of powerful spells available for daily use.",
+    "test_queries": [
+        "large celestial guardian with radiant attacks",
+        "truth-seeking celestial with magical resistance",
+        "guardian that can sense lies and cast spells",
+        "Ophanim abilities and divine powers",
+        "formidable celestial that protects good beings"
+    ]
+}

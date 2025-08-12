@@ -1,0 +1,25 @@
+{
+    "name": "Strobing Fungus",
+    "queries": [
+        {
+            "query": "plant creature that emits dazzling strobing light",
+            "variant": "plant monster with dazzling strobing light ability"
+        },
+        {
+            "query": "medium-sized fungus that blinds enemies with light",
+            "variant": "medium fungus creature that can blind foes with light"
+        },
+        {
+            "query": "creature with blindsight and ability to emit light",
+            "variant": "monster that has blindsight and emits light"
+        },
+        {
+            "query": "fungus that deals acid damage and controls visibility",
+            "variant": "fungus creature dealing acid damage and controlling sight"
+        },
+        {
+            "query": "creature that can't speak but understands Common and uses strobing light",
+            "variant": "monster that understands Common, can't talk, and uses strobe light"
+        }
+    ]
+}

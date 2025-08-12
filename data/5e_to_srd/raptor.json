@@ -1,0 +1,7 @@
+{
+  "Velociraptor": {
+    "relation": "almost_identical",
+    "explanation": "A medium-sized, swift predator with pack tactics and claw attacks that knock prey prone."
+  },
+  "monster_key": "raptor"
+}

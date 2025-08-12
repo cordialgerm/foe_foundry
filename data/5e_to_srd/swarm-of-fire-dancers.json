@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "A fiery elemental swarm with fire damage and immunity, similar in elemental nature and fire affinity."
+  },
+  "Swarm of Insects": {
+    "relation": "conceptually_similar",
+    "explanation": "A swarm creature that occupies the same space as others and attacks in numbers, similar in swarm mechanics."
+  },
+  "monster_key": "swarm-of-fire-dancers"
+}

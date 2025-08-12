@@ -1,0 +1,25 @@
+{
+    "name": "Green Abyss Orc",
+    "queries": [
+        {
+            "query": "cunning humanoid skilled in climbing with poison abilities",
+            "variant": "humanoid skilled in climbing and has abilities with poison"
+        },
+        {
+            "query": "darkvision orc with disadvantage in sunlight and high dexterity",
+            "variant": "orc with darkvision that has high dexterity but disadvantage in bright light"
+        },
+        {
+            "query": "agile orc that can incapacitate foes with poisoned spear",
+            "variant": "orc that uses poisoned spear to immobilize enemies and is very agile"
+        },
+        {
+            "query": "chaotic evil humanoid with poison immunity and climbing speed",
+            "variant": "humanoid with climbing speed and immunity to poison who is chaotic evil"
+        },
+        {
+            "query": "medium orc that is good at acrobatics and stealth, but has low hit points",
+            "variant": "orc that is medium-sized with low hit points but excels in stealth and acrobatics"
+        }
+    ]
+}

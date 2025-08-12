@@ -1,0 +1,25 @@
+{
+    "name": "Orca",
+    "queries": [
+        {
+            "query": "huge black and white aquatic predator with strong bite attacks",
+            "variant": "large water predator that is black and white and has strong bite attacks"
+        },
+        {
+            "query": "intelligent marine beast that uses echolocation and swims quickly",
+            "variant": "smart ocean beast that uses echolocation and has a quick swim speed"
+        },
+        {
+            "query": "powerful swimming creature that can hold its breath for 30 minutes",
+            "variant": "strong water creature that can stay underwater for 30 minutes"
+        },
+        {
+            "query": "water-dwelling beast with a devastating tail slap ability",
+            "variant": "aquatic beast that has a powerful tail slap move"
+        },
+        {
+            "query": "formidable ocean creature with keen senses and average constitution",
+            "variant": "intimidating sea creature that has sharp senses and average endurance"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Couatl": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small celestial creatures with radiant features and protective, healing roles."
+  },
+  "Pegasus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are celestial, winged creatures associated with goodness and protection."
+  },
+  "monster_key": "firebird"
+}

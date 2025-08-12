@@ -1,0 +1,53 @@
+{
+    "name": "Silver Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 51,
+    "ac": 17,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. walking, 60 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "metallic",
+        "wyrmling",
+        "cold"
+    ],
+    "adjectives": [
+        "silver",
+        "young",
+        "dangerous",
+        "agile"
+    ],
+    "description": "A medium silver dragon with scales that reflect light like tarnished metal, showcasing an inherent majesty mixed with ferocity.",
+    "memorable": "Possesses both Frost Breath and Paralyzing Breath, making it a versatile threat in combat.",
+    "goals": "Typically seeks to defend its territory and assert dominance over weaker creatures.",
+    "relations": "May be encountered alongside other metallic dragons or be part of a draconic kin group.",
+    "environment": "Commonly found in mountainous regions or areas with cold climates.",
+    "strengths": "Highly mobile due to its flying speed, along with strong breath weapons that can incapacitate or severely damage multiple foes.",
+    "weaknesses": "Relatively low Constitution compared to larger dragons but still more durable than many creatures of its size.",
+    "attacks": "Makes a powerful bite attack for piercing damage and can strike with claw attacks, utilizing both melee and breath attacks in combat.",
+    "most_powerful_ability": "Can use Frost Breath to deal significant cold damage in a cone, alongside its Paralyzing Breath to incapacitate foes.",
+    "senses": "Possesses blindsight for up to 10 feet, allowing it to perceive creatures in close proximity without sight.",
+    "skills": "Noteworthy stealth skill of +4 makes it adept at moving quietly and remaining unnoticed.",
+    "additional_information": [
+        "Immune to cold damage.",
+        "Has a special ability called Cloud Strider, allowing it to resist high altitude effects.",
+        "Can use its wings to control the battlefield.",
+        "Shows inherent draconic majesty with a strong Charisma score.",
+        "Capable of performing both physical melee and magical breath attacks."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile dragon with breath attacks",
+        "silver dragon that can paralyze",
+        "cold damage dragon with high mobility",
+        "medium dragon with icy breath",
+        "young dragon with powerful melee attacks"
+    ]
+}

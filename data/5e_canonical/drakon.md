@@ -1,6 +1,8 @@
 <MonsterName/>Drakon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Drakon is a formidable creature known for its impressive offensive abilities and unique poison resistance. This large, unaligned dragon excels in combat with a solid Armor Class of 16, robust Hit Points totaling 105, and a mix of both physical and magical attack capabilities. With its ability to breathe both air and water, the Drakon demonstrates versatility in different environments, enhancing its role as a predator. Its strength lies in its exceptional Dexterity score of 19 (+4), allowing for good evasion and stealth, but it suffers from a low Intelligence of 2 (-4), which limits its tactical options outside of direct confrontation. The creature exhibits both significant damage potential and the ability to incapacitate prey, making it dangerous in various scenarios.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Drakon is a powerful foe with a blend of swift attacks and debilita
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drakon
 
 *Large* *Dragon* *Unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 10 (4d4) acid damage.
 - **Tail:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.
 - **Acid Breath (Recharge 5–6):** The drakon exhales acidic vapors in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 28 (8d6) acid damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

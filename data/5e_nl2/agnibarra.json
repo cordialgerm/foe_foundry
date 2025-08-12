@@ -1,0 +1,51 @@
+{
+    "name": "Agnibarra",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 39,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fire",
+        "monstrosity",
+        "chaotic"
+    ],
+    "adjectives": [
+        "fiery",
+        "chaotic"
+    ],
+    "description": "The Agnibarra is a Small monstrosity characterized by its fiery nature, emitting bright light in a 10-foot radius. Its body appears to be constantly engulfed in flames, and it has a menacing presence with sharp claws.",
+    "memorable": "Agnibarra can ignite enemies and flammable objects around it, creating hazardous conditions in combat.",
+    "goals": "Typically seeks to cause chaos and inflict fire damage on opponents.",
+    "relations": "Might be encountered alongside other fire-themed creatures or as a guardian of fiery environments.",
+    "environment": "Often found in volcanic regions or places with abundant fire sources.",
+    "strengths": "Vulnerable to cold damage but immune to fire damage, making it resilient in fire-prevalent environments.",
+    "weaknesses": "Weak against cold damage, which hinders its resilience.",
+    "attacks": "Employs burning claws and spit fire attacks, inflicting both slashing and ongoing fire damage.",
+    "most_powerful_ability": "Body in Flames allows it to punish foes that engage in melee combat, igniting them for additional fire damage over time.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can communicate in Common and Ignan.",
+        "Possesses a strong Constitution score indicating durability.",
+        "Ignites any flammable objects within 5 feet.",
+        "Utilizes illumination to reveal hidden enemies.",
+        "Has a relatively high Dexterity score aiding in dodging attacks."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery chaos monster",
+        "creature that ignites enemies",
+        "small fire-themed monstrosity",
+        "monster with burning attacks",
+        "creature immune to fire damage"
+    ]
+}

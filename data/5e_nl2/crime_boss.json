@@ -1,0 +1,50 @@
+{
+    "name": "Crime Boss",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 127,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "tactical",
+        "manipulative",
+        "combatant"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "The Crime Boss is a robust humanoid with impressive physical stature, showcasing strength and an authoritative presence.",
+    "memorable": "Its ability to mark enemies for extra damage makes it a dangerous opponent in combat.",
+    "goals": "To command loyalty from allies while cunningly manipulating foes.",
+    "relations": "Often accompanied by loyal henchmen and allies.",
+    "environment": "Urban settings, often amidst crime syndicates or underworld activities.",
+    "strengths": "High melee damage output with Multiattack and the ability to shield itself through Command Bodyguard.",
+    "weaknesses": "Dependent on allies for protection; a strong strategist but vulnerable if isolated.",
+    "attacks": "Utilizes a shortsword for multiple strikes and a dagger for versatile melee or ranged attacks.",
+    "most_powerful_ability": "Mark for Death can significantly increase its damage output on targeted enemies.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 16, enhancing its scouting and awareness capabilities.",
+    "skills": "Proficient in Deception, Insight, and Intimidation, allowing it to manipulate social situations effectively.",
+    "additional_information": [
+        "High Strength and Constitution provide durability and melee power.",
+        "Thrives in combat with a strategic approach to positioning.",
+        "Cunning and capable of quick retaliation with its Offhand Dagger ability.",
+        "Commands respect and loyalty among allies, enhancing its effectiveness in team settings.",
+        "Utilizes skills in social scenarios to deceive or intimidate opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable humanoid crime leader",
+        "cunning boss that marks enemies",
+        "tactician with powerful melee attacks",
+        "urban crime boss with loyal henchmen",
+        "manipulative villain commanding allies"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Mire Fiend",
+    "queries": [
+        {
+            "query": "demon creature that swims well and has strong natural armor",
+            "variant": "swimming demon with strong natural armor and quick land movement"
+        },
+        {
+            "query": "fiend with pack tactics that thrives in swampy terrain",
+            "variant": "swamp-loving fiend that uses pack tactics for attacks"
+        },
+        {
+            "query": "amphibious monster that can stun enemies with sound",
+            "variant": "monster that can stun foes with sonic attacks and is amphibious"
+        },
+        {
+            "query": "creature that is resistant to fire and has a powerful stinger",
+            "variant": "fire-resistant creature with a strong stinger attack"
+        },
+        {
+            "query": "Mire Fiend abilities including magic resistance and acid damage",
+            "variant": "Mire Fiend skills like acid damage and resistance to magic"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, dangerous creatures that use venom or acid to harm prey and rely on ambush tactics."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of small, venomous creatures that pose a hazard through their attacks and can be dangerous in groups."
+  },
+  "monster_key": "acid-ant"
+}

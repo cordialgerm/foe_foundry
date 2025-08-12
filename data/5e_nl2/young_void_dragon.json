@@ -1,0 +1,55 @@
+{
+    "name": "Young Void Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Large",
+    "hp": 157,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "void",
+        "chaotic",
+        "elemental"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "powerful"
+    ],
+    "description": "The Young Void Dragon embodies chaos and power, exhibiting a large stature and formidable presence with a striking appearance that reflects its alien nature.",
+    "memorable": "It possesses powerful breath weapons, including Gravitic Breath and Stellar Breath, capable of imposing battlefield control and dealing devastating damage.",
+    "goals": "To unleash chaos and inflict damage upon foes, while navigating both physical and void environments effortlessly.",
+    "relations": "Related to other dragon species and potentially allied with creatures of the Void.",
+    "environment": "Typically found in chaotic, alien planes or regions steeped in elemental conflict.",
+    "strengths": "Immunity to cold damage and innate resistance to charm or fear effects, along with high Constitution and significant bite and claw attacks.",
+    "weaknesses": "Despite high resilience, it may struggle against coordinated efforts from large groups or ambush tactics.",
+    "attacks": "Multitiered attacks with a powerful bite and sharp claws, alongside elemental breath attacks delivering substantial fire and radiant damage.",
+    "most_powerful_ability": "Chill of the Void negates cold damage resistances, making it a particularly dangerous adversary against cold-resistant foes.",
+    "equipment": null,
+    "senses": "The dragon has blindsight up to 30 feet, allowing it to perceive threats without relying on sight.",
+    "skills": "It possesses excellent knowledge of the Arcana and History skills, enhancing its tactical abilities.",
+    "additional_information": [
+        "Can exist without air, food, or sleep due to its void nature.",
+        "Has the ability to twist reality to improve its defense against attacks.",
+        "Exhibits keen awareness reflected in a high passive Perception score.",
+        "Possesses powerful area control abilities through its breath weapons.",
+        "Represents an amalgamation of dragon traits and elemental chaos."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon that navigates the Void",
+        "chaotic dragon with cold immunity",
+        "dragon that breathes fire and radiant energy",
+        "monster skilled in Arcana and History",
+        "powerful dragon with devastating breath weapons"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Kryt",
+    "queries": [
+        {
+            "query": "humanoid monster with high strength and psychological abilities",
+            "variant": "monster humanoid with strong physical power and mind manipulation skills"
+        },
+        {
+            "query": "Kryt's powers and combat tactics as a neutral evil creature",
+            "variant": "combat tactics and abilities of Kryt, a creature aligned with neutral evil"
+        },
+        {
+            "query": "creature that can hold breath for 15 minutes and has darkvision",
+            "variant": "monster with 15 minutes breath hold ability and 60 feet darkvision"
+        },
+        {
+            "query": "agile monster immune to exhaustion with good insight",
+            "variant": "quick creature with immunity to tiredness and high perception skills"
+        },
+        {
+            "query": "medium humanoid with strong melee attack and low intelligence",
+            "variant": "average sized humanoid with powerful physical attacks but weak intellect"
+        }
+    ]
+}

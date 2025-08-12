@@ -1,0 +1,11 @@
+{
+  "Hydra": {
+    "relation": "close_cousins",
+    "explanation": "The Manggus shares the hydra's multi-headed regeneration and terrifying presence, especially in its hydra form."
+  },
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "The Manggus is a large chaotic evil giant wielding a greataxe, similar to ogres in size and combat style."
+  },
+  "monster_key": "manggus"
+}

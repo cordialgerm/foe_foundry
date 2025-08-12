@@ -1,0 +1,25 @@
+{
+    "name": "Will-o\u2019-Wisp",
+    "queries": [
+        {
+            "query": "tiny undead creature that can become invisible and manipulate light",
+            "variant": "tiny undead being that can turn invisible and control light"
+        },
+        {
+            "query": "ghostly light creature that lures adventurers into danger",
+            "variant": "spectral light monster that tricks adventurers into peril"
+        },
+        {
+            "query": "creature that floats and uses lightning attacks while being elusive",
+            "variant": "floating entity that employs lightning strikes and is hard to catch"
+        },
+        {
+            "query": "undead monster with high AC that uses tactics to pull enemies",
+            "variant": "undead being with a high armor class that employs strategies to draw foes"
+        },
+        {
+            "query": "creature that doesn't need food or sleep and can phase through walls",
+            "variant": "being that requires no sustenance or rest and can move through solid objects"
+        }
+    ]
+}

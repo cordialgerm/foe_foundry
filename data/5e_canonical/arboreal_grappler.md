@@ -1,6 +1,8 @@
 <MonsterName/>Arboreal Grappler</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Arboreal Grappler is a Medium aberration known for its swift and stealthy movements in forested or jungle terrains. As a Neutral Evil creature, it often employs cunning tactics to overpower its foes and ambush unsuspecting adventurers. With a respectable Armor Class of 14, it maintains a good defense primarily through its natural armor. The creature boasts 90 hit points, making it fairly resilient in combat encounters. Its Challenge Rating of 4 indicates that it poses a moderate threat, with an experience reward of 1,100 XP for its defeat. The Arboreal Grappler excels in both grappling and maneuverability, using its tentacles to restrain opponents while being able to efficiently navigate the battlefield without limitation.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Arboreal Grappler can perform a Multiattack, consisting of one Bi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arboreal Grappler
 
 *Medium* *Aberration* *Neutral Evil*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The arboreal grappler makes one Bite attack and two Tentacle attacks.
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage.
 - **Tentacle:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained. The arboreal grappler has two tentacles, each of which can grapple only one target.
+</statblock>
 
 

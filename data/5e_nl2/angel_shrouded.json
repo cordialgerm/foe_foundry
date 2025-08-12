@@ -1,0 +1,53 @@
+{
+    "name": "Shrouded Angel",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 161,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft., fly 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "angel",
+        "chaotic good"
+    ],
+    "adjectives": [
+        "powerful",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Shrouded Angel is a celestial being characterized by its radiant appearance and chaotic good ideals. It possesses a confident stance, honed through experiences of both battle and judgment.",
+    "memorable": "Notably possesses the ability to deal radiant poison damage and can reduce targets to zero hit points with its 'Executioner's Judgment' if they fail to repent.",
+    "goals": "Acts as an agent of chaotic good, seeking to lead others towards redemption while enforcing justice against wrongdoing.",
+    "relations": "May ally with or oppose various celestial entities, adventurers seeking guidance, or creatures of darkness.",
+    "environment": "Typically found in areas of celestial influence, divine realms, or places associated with justice and redemption.",
+    "strengths": "Exceptionally high Dexterity and Constitution aid in both offense and survivability, combined with the ability to resist many conditions.",
+    "weaknesses": "Average Charisma could impair social interactions or manipulation compared to other celestial beings.",
+    "attacks": "Uses melee weapon attacks with radiant poison and ranged spell attacks dealing radiant damage.",
+    "most_powerful_ability": "Executioner's Judgment allows it to force a target's repentance and potentially reduce them to zero hit points.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet and a passive perception score of 21, allowing it to effectively monitor its surroundings.",
+    "skills": "Proficient in perception with a significant +6 modifier.",
+    "additional_information": [
+        "Resistant to poison and radiant damage, as well as nonmagical bludgeoning, piercing, and slashing attacks.",
+        "Immune to conditions such as charm, exhaustion, fright, and poison.",
+        "Can cast spells at will without material components, enhancing versatility in combat and support.",
+        "Possesses Magic Resistance, granting advantage on saving throws against spells and magical effects.",
+        "Known for its Divine Awareness, allowing it to discern lies."
+    ],
+    "damage_types": [
+        "radiant",
+        "poison"
+    ],
+    "spellcasting": "Cast spells without material components at will, including 'bane', 'bless', and 'locate creature', with additional spells available three times per day.",
+    "test_queries": [
+        "chaotic good celestial guardian",
+        "angel with radiant poison abilities",
+        "heavenly being that can judge repentance",
+        "powerful celestial with flight capabilities",
+        "angelic figure known for seeking redemption"
+    ]
+}

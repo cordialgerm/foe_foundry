@@ -1,0 +1,25 @@
+{
+    "name": "Putrescent Slime",
+    "queries": [
+        {
+            "query": "medium ooze creature with poison immunities and low Dexterity",
+            "variant": "medium slime that is immune to poison and has low dexterity"
+        },
+        {
+            "query": "ambush predator found in various environments with high hit points",
+            "variant": "creature that ambushes prey in different settings and has many hit points"
+        },
+        {
+            "query": "creature that can move through tight spaces and has a stench ability",
+            "variant": "monster that can fit through small areas and emits a stench"
+        },
+        {
+            "query": "Putrescent Slime abilities including Pseudopod and Amorphous",
+            "variant": "abilities of the Putrescent Slime like Amorphous and Pseudopod"
+        },
+        {
+            "query": "slime that deals bludgeoning and poison damage while attacking",
+            "variant": "slime dealing bludgeoning and poison when it attacks"
+        }
+    ]
+}

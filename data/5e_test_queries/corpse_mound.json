@@ -1,0 +1,25 @@
+{
+    "name": "Corpse Mound",
+    "queries": [
+        {
+            "query": "huge undead monster with necrotic resistance and toxic aura",
+            "variant": "huge undead creature with necrotic immunity and poison aura"
+        },
+        {
+            "query": "creature that absorbs dead bodies and creates zombies",
+            "variant": "monster that takes in the dead and makes zombies"
+        },
+        {
+            "query": "powerful creature with high strength and terrifying appearance in combat",
+            "variant": "strong monster with frightening look and significant power in battle"
+        },
+        {
+            "query": "evil undead that is immune to poison and can grapple opponents",
+            "variant": "malevolent undead creature that resists poison and can restrain enemies"
+        },
+        {
+            "query": "mound of corpses that has a noxious aura and grappling attacks",
+            "variant": "heap of bodies with toxic presence and constricting strikes"
+        }
+    ]
+}

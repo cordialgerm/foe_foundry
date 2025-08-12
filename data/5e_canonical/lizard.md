@@ -1,6 +1,8 @@
 <MonsterName/>Lizard</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>2</HP>
 <summary>A Lizard is a small, cold-blooded reptile commonly found in warm environments such as deserts, jungles, or rocky areas. Lizards are agile and quick, using their sharp claws and teeth to catch small insects and evade predators. Though individually harmless, some larger species of lizards can be more dangerous, especially when provoked. Lizards are often used as familiars or pets by spellcasters due to their stealth and adaptability. They are excellent climbers and can blend into their surroundings to avoid detection.</summary>
 
 <summary>The Lizard is a tiny, unassuming beast often found in various environments, primarily thriving in wetlands and rocky terrains. While it has a low challenge rating, making it a very weak combatant, the Lizard's role is primarily that of an insignificant creature in the world, harmless and easily overlooked. Its strengths lie in its low profile and ability to evade detection due to its small size, while its weaknesses are pronounced contributions to its minimal combat effectiveness and low hit points. Notably, the Lizard has unique game mechanics that allow it to participate in the ecosystem as a prey animal, but it can also serve as a useful, if inconsequential, familiar or companion for low-level characters.</summary>
@@ -33,6 +35,7 @@ In summary, the lizard is a low-impact creature with limited combat value but of
 
 Source: 5e_srd
 
+<statblock>
 ### Lizard
 
 *Tiny beast, unaligned*
@@ -55,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
+***Bite***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.</statblock>
+
 
 
 
@@ -63,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizard
 
 *Tiny* *Beast*
@@ -86,6 +91,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -94,6 +100,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizard
 
 *Tiny beast*
@@ -125,5 +132,6 @@ Source: 5e_artisinal_monsters
 
 - **Detach Tail (5 HP or Fewer, Recharges after a Short or Long Rest).** When the lizard takes damage, it can detach its tail, reducing the damage by 2 (1d4), and immediately move up to its speed without provoking opportunity attacks.
 
+</statblock>
 
 

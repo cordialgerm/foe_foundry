@@ -1,0 +1,53 @@
+{
+    "name": "Burrowling",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Neutral",
+    "size": "Small",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 10 ft., burrow 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "burrowing",
+        "small",
+        "humanoid"
+    ],
+    "adjectives": [
+        "agile",
+        "cooperative"
+    ],
+    "description": "Small humanoid with high agility that thrives underground, exhibiting teamwork.",
+    "memorable": "Effectively uses pack tactics for teamwork in combat.",
+    "goals": "Overwhelm foes through teamwork and cooperative attacks.",
+    "relations": "Often encountered alongside other Burrowlings.",
+    "environment": "Underground or dimly lit areas.",
+    "strengths": "High Dexterity enhances attack rolls and team effectiveness.",
+    "weaknesses": "Low hit points make them vulnerable when isolated.",
+    "attacks": "Uses Bite and Claw attacks during multiattack, and can also attack from a distance with a Sling.",
+    "most_powerful_ability": "Pack Tactics grants advantage on attacks when allies are nearby.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, aiding in underground navigation.",
+    "skills": "Has a Perception skill, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Burrow Awareness enhances perceptual checks in groups.",
+        "Smaller size allows for agile movements.",
+        "Lawful neutral alignment indicates disciplined behavior.",
+        "Effective in cooperative combat situations.",
+        "Utilizes burrowing capabilities to navigate terrain."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile underground humanoid",
+        "burrowing creature with teamwork abilities",
+        "cooperating humanoid monster in combat",
+        "Burrowling tactics for teamwork and agility",
+        "dextrous creature thriving in dark environments"
+    ]
+}

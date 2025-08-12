@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Mantis",
+    "queries": [
+        {
+            "query": "mechanical guardian that is fast and stealthy",
+            "variant": "fast stealthy mechanical guardian"
+        },
+        {
+            "query": "large construct with powerful slashing attacks and invisibility",
+            "variant": "large construct that can turn invisible and deals slashing damage"
+        },
+        {
+            "query": "creature immune to poison and psychic damage with high dexterity",
+            "variant": "high dexterity creature that is immune to psychic and poison damage"
+        },
+        {
+            "query": "agile clockwork monster that reduces enemy speed and has darkvision",
+            "variant": "darkvision agile clockwork monster that slows enemies"
+        },
+        {
+            "query": "construct with low intelligence that excels in ambush scenarios",
+            "variant": "low intelligence construct great for ambushes"
+        }
+    ]
+}

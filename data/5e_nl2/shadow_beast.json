@@ -1,0 +1,54 @@
+{
+    "name": "Shadow Beast",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "stealthy",
+        "magical",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "chaotic",
+        "shadowy"
+    ],
+    "description": "A shadowy form that embodies chaos, this creature is agile and magical, moving effortlessly through shadows and objects, making it a formidable presence in combat.",
+    "memorable": "Its ability to instill fear and cause necrotic damage makes it a terrifying opponent in dark environments.",
+    "goals": "To disrupt the plans of its foes and thrive in darkness.",
+    "relations": "Related to other fey creatures and possibly serves darker entities from the Feywild.",
+    "environment": "Found in dark or shadowy areas, often in the Feywild.",
+    "strengths": "High agility, magic resistance, and dangerous necrotic damage output.",
+    "weaknesses": "Sunlight sensitivity reduces its effectiveness in bright light.",
+    "attacks": "Utilizes a Multiattack with a Bite that deals piercing and necrotic damage, and Claw attacks that deal slashing and necrotic damage.",
+    "most_powerful_ability": "Frightful Shadows ability that induces fear and deals significant necrotic damage.",
+    "equipment": null,
+    "senses": "Has keen stealth skills with a +8 modifier, making it very effective at ambushing.",
+    "skills": "Skilled in Stealth, allowing it to hide and surprise its enemies.",
+    "additional_information": [
+        "Incorporeal Movement enables movement through objects and creatures",
+        "Magic Resistance provides advantage on saving throws against spells",
+        "Immune to conditions like exhaustion, grappled, and poisoned",
+        "Resistant to multiple damage types including acid, cold, and fire",
+        "Tends to thrive in low-light environments"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy creature that instills fear",
+        "magical fey with necrotic claws",
+        "dangerous ambusher from the Feywild",
+        "creature that moves through objects",
+        "agile beast with magic resistance"
+    ]
+}

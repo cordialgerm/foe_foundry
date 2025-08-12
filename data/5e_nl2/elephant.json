@@ -1,0 +1,52 @@
+{
+    "name": "Elephant",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 76,
+    "ac": 12,
+    "srd": true,
+    "cr": "4",
+    "movement": "40 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "large",
+        "mammal",
+        "trampling"
+    ],
+    "adjectives": [
+        "massive",
+        "intelligent",
+        "powerful",
+        "herbivorous"
+    ],
+    "description": "A massive, herbivorous mammal with thick, wrinkled skin and long, powerful tusks. Known for its strength and intelligence, the elephant uses its trunk for manipulation and communication.",
+    "memorable": "Domineering presence on the battlefield with formidable tusks capable of inflicting serious damage.",
+    "goals": "Typically travels in herds, can charge aggressively when threatened.",
+    "relations": "Often found with other elephants in grasslands or jungles; may be used as war beasts by certain cultures.",
+    "environment": "Grasslands and jungles where they travel in herds.",
+    "strengths": "High strength allows for powerful melee attacks and ability to absorb damage.",
+    "weaknesses": "Low dexterity leads to poor agility and vulnerability to quick opponents.",
+    "attacks": "Capable of gore attacks with tusks inflicting piercing damage, and stomping on prone creatures for additional bludgeoning damage.",
+    "most_powerful_ability": "Trampling Charge allows it to knock down opponents and follow up with stomping attacks.",
+    "equipment": null,
+    "senses": "Has passive Perception of 10, allowing it to detect threats reasonably well.",
+    "skills": null,
+    "additional_information": [
+        "Can grapple creatures with its trunk for battlefield control.",
+        "Not very effective in social situations due to low Charisma.",
+        "Formidable at disrupting enemy formations with charges.",
+        "Uses tusks and a massive body as its primary weapons.",
+        "Typically peaceful but can be dangerous when threatened."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive mammal with powerful tusks",
+        "huge creature that charges at enemies",
+        "herbivorous beast that travels in herds",
+        "trampling animal used in battle",
+        "intelligent creature with a trunk and tusks"
+    ]
+}

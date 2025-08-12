@@ -1,6 +1,8 @@
 <MonsterName/>Blood Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Blood Elemental is a formidable creature in the elemental category, characterized by its large size and unique connection to blood and vitality. With a challenge rating of 5, it poses a significant threat with its ability to grapple and drain the life force from adventurers. The Blood Elemental has an impressive amount of hit points at 95, making it quite resilient in combat. However, it is vulnerable to poison damage, which can significantly reduce its effectiveness. The elemental excels in close combat, utilizing its high Strength score of 16, while its Constitution score of 18 grants it excellent durability against many forms of damage. Its abilities allow it to manipulate and control the battlefield, using its liquid form to slip through narrow spaces and invade enemy territory. However, its intelligence and charisma scores are markedly low, making it poor at social interactions and strategy.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ Overall, the Blood Elemental combines durability, manipulative movement, and sig
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Elemental
 
 *Large* *Elemental* *neutral*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Blood Drain (Recharge 4-6):** Each creature in the elemental's space must make a DC 15 Constitution saving throw. On a failure, a creature takes 10 (3d6) necrotic damage and, if it is Large or smaller, it is grappled (escape DC 13). A grappled creature is restrained and unable to breathe. If the saving throw is successful, the creature is pushed out of the elemental's space. The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time.<br><br>At the start of the elemental's turn, each target grappled by it takes 10 (3d6) necrotic damage. A creature within 5 feet of the elemental can use its action to make a DC 15 Strength check, freeing a grappled creature on a success. When Blood Drain deals 30 or more necrotic damage, the elemental grows in size as though affected by an enlarge/reduce spell. This increase in size lasts until the blood elemental finishes a long rest.
 
 
+</statblock>
 
 

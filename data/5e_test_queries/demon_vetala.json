@@ -1,0 +1,25 @@
+{
+    "name": "Demon, Vetala",
+    "queries": [
+        {
+            "query": "fiend that controls undead and thrives in graveyards",
+            "variant": "undead-controlling fiend that thrives in graveyards"
+        },
+        {
+            "query": "medium demon known for necrotic damage and agility",
+            "variant": "medium demon with agility and necrotic damage"
+        },
+        {
+            "query": "chaotic evil monster with darkvision and magic resistance",
+            "variant": "evil chaotic monster with darkvision and resist magic"
+        },
+        {
+            "query": "undead summoner with slashing and necrotic attack capabilities",
+            "variant": "summoner of undead with slashing and necrotic attacks"
+        },
+        {
+            "query": "creature that resurrects corpses and detonates undead",
+            "variant": "monster that raises corpses and causes undead explosions"
+        }
+    ]
+}

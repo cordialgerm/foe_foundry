@@ -1,0 +1,7 @@
+{
+  "Acolyte": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster closely matches the SRD Acolyte as a devout, supportive humanoid cleric with healing and buff spells."
+  },
+  "monster_key": "acolyte"
+}

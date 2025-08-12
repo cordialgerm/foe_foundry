@@ -1,0 +1,25 @@
+{
+    "name": "Oni",
+    "queries": [
+        {
+            "query": "deceptive blue-skinned giant with magical abilities",
+            "variant": "blue-skinned giant that uses magic and tricks enemies"
+        },
+        {
+            "query": "shape-shifting monster that flies and has tusks",
+            "variant": "monster with tusks that can fly and change shape"
+        },
+        {
+            "query": "malevolent giant that feasts on the weak in human form",
+            "variant": "cruel giant that disguises as human to prey on the weak"
+        },
+        {
+            "query": "magical giant with regeneration and powerful melee attacks",
+            "variant": "giant with magic and healing abilities that hits hard"
+        },
+        {
+            "query": "Oni with claw attacks and multiattack abilities",
+            "variant": "Oni that uses claws and can attack multiple times"
+        }
+    ]
+}

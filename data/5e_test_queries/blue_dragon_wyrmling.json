@@ -1,0 +1,25 @@
+{
+    "name": "Blue Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that breathes lightning and thrives in deserts",
+            "variant": "medium dragon that can breath lightning and loves deserts"
+        },
+        {
+            "query": "dragon with high AC and lightning immunity found in hot environments",
+            "variant": "dragon with high armor class and immune to lightning living in warm areas"
+        },
+        {
+            "query": "creature that can fly quickly and has a powerful bite attack",
+            "variant": "creature that flies fast and possesses a strong bite attack"
+        },
+        {
+            "query": "dragon that uses ambush tactics and has a keen sense of stealth",
+            "variant": "dragon employing ambush strategies and skilled in stealth"
+        },
+        {
+            "query": "creature that takes no damage from lightning and burrows underground",
+            "variant": "monster immune to lightning damage and can dig underground"
+        }
+    ]
+}

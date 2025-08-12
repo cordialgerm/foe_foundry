@@ -1,0 +1,54 @@
+{
+    "name": "Winter Hag",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "hag",
+        "winter",
+        "spellcaster",
+        "fey"
+    ],
+    "adjectives": [
+        "deceptive",
+        "cold",
+        "powerful",
+        "mystical"
+    ],
+    "description": "The Winter Hag embodies the mystique and power of winter, known for her formidable presence with a distinct streak of white hair visible even in shapeshifted forms.",
+    "memorable": "Her curse allows her to manipulate and hinder those who accept her gifts, creating a challenging situation for her foes.",
+    "goals": "To curse those who accept her gifts and manipulate the battlefield using her powerful spells.",
+    "relations": "Often encountered with other fey or as part of winter-themed creatures.",
+    "environment": "Cold regions, often amidst snow and ice.",
+    "strengths": "Strong melee and ranged attacks, potent innate spellcasting, and resistance to cold damage.",
+    "weaknesses": "Reliance on spells may be exploited, and she has no additional defenses against magical attacks.",
+    "attacks": "Multiattack with claws dealing slashing damage and ice bolt that deals cold damage and can petrify targets.",
+    "most_powerful_ability": "Curse that severely hinders those who accept her gifts, making them vulnerable to her spells.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 16, allowing her to easily notice hidden creatures.",
+    "skills": "Proficient in arcana, deception, insight, perception, and stealth, demonstrating her cunning nature.",
+    "additional_information": [
+        "Can move freely through cold weather and leaves no trace on icy surfaces.",
+        "Innate spellcasting allows her to cast spells without needing material components.",
+        "Can shapeshift into a humanoid while retaining her statistics.",
+        "Can turn invisible for an hour unless she attacks or casts a spell.",
+        "Ice Shield reaction grants her extra defense against melee attacks."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcaster with spells like charm person, invisibility, and control weather (extreme cold).",
+    "test_queries": [
+        "cold fey spellcaster with a curse",
+        "winter hag with icy abilities",
+        "fey creature that manipulates snow",
+        "deceptive hag that uses control weather",
+        "powerful hag known for her curses"
+    ]
+}

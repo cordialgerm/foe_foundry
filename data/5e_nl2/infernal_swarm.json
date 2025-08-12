@@ -1,0 +1,50 @@
+{
+    "name": "Infernal Swarm",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Huge",
+    "hp": 150,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "hover and fly capabilities",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "shape-shifting"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "chaotic"
+    ],
+    "description": "The Infernal Swarm is a Huge fiend that can transform between a solid form and a shapeless mass, embodying both cunning and chaotic power.",
+    "memorable": "It can switch between a powerful fiend form and an elusive shapeless form, using its abilities to manipulate the battlefield and confuse foes.",
+    "goals": "Its primary goal is to overwhelm and defeat its enemies through chaotic combat and manipulation.",
+    "relations": "Often found commanding lesser fiends or collaborating with them in schemes of malevolence.",
+    "environment": "Typically found in infernal realms or dark, chaotic places.",
+    "strengths": "Immunity to fire and poison, resistance to multiple damage types, and high combat versatility make it a versatile adversary.",
+    "weaknesses": "Vulnerable to thunder damage, which can force it out of its powerful fiend form.",
+    "attacks": "Can attack using slashing scimitar strikes, powerful bites in shapeless form, and a poisonous ranged barb.",
+    "most_powerful_ability": "The Shaped Swarm ability allows it to transform instantly, keeping its statistics while confusing and evading attacks.",
+    "equipment": null,
+    "senses": "Possesses Devil\u2019s Sight, enabling it to see in magical darkness.",
+    "skills": "Has advantage on saving throws against spells, making it difficult to control through magic.",
+    "additional_information": [
+        "Immunities to several conditions like charmed and frightened.",
+        "Can occupy other creatures' spaces while in shapeless form.",
+        "Retains all combat capabilities in both forms."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fiend that can shapeshift",
+        "Huge fire-resistant monster with poison attacks",
+        "lawful evil creature with magic resistance",
+        "shapeless form attacking from the dark",
+        "manipulative fiend with powerful abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Elf Champion Warrior",
+    "queries": [
+        {
+            "query": "humanoid warrior with dark magic and high dexterity",
+            "variant": "dark magic humanoid warrior with high dexterity"
+        },
+        {
+            "query": "tough fighter that uses a shortsword and poison attacks",
+            "variant": "tough fighter using poison attacks and a shortsword"
+        },
+        {
+            "query": "medium-sized elf that excels in melee and ranged combat",
+            "variant": "elf warrior skilled in ranged and melee combat with medium size"
+        },
+        {
+            "query": "shadow elf champion with effective multiattack abilities",
+            "variant": "champion shadow elf with strong multiattack capabilities"
+        },
+        {
+            "query": "stealthy warrior with high athletics and intimidation skills",
+            "variant": "athletics and intimidation skilled stealthy warrior"
+        }
+    ]
+}

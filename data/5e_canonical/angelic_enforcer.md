@@ -1,6 +1,8 @@
 <MonsterName/>Angelic Enforcer</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Angelic Enforcer is a powerful creature known for its role as a divine protector and punisher within celestial realms. This large celestial being embodies the principles of law and good, making it a formidable presence in combat. Its notable strengths include high armor class, significant hit points, and a range of potent abilities and spells that allow it to deal heavy damage while resisting many forms of attacks. Additionally, the enforcer possesses innate spellcasting abilities, making it effective in both combat and supportive roles. Its primary weaknesses include a vulnerability to magic attacks, despite its resistance to nonmagical damage, and its reliance on maintaining a lawful good nature which can impact its interactions with potentially evil characters.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Lastly, the Angelic Enforcer has a Change Shape ability, allowing it to polymorp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angelic Enforcer
 
 *Large* *Celestial* *lawful good*
@@ -62,5 +65,6 @@ At will: detect evil and good
 - **Change Shape:** The angelic enforcer magically polymorphs into a humanoid or a lion that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the enforcer’s choice). In a new form, the enforcer retains its own game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has.
 
 
+</statblock>
 
 

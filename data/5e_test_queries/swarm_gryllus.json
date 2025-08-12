@@ -1,0 +1,25 @@
+{
+    "name": "Gryllus Swarm",
+    "queries": [
+        {
+            "query": "large construct that is bound to a book and uses swarm tactics",
+            "variant": "big construct monster tied to a book using swarm strategies"
+        },
+        {
+            "query": "Dexterous book-bound creature that can reduce speed",
+            "variant": "agile book-bound monster that can slow down opponents"
+        },
+        {
+            "query": "mechanical swarm creature that attacks with slashing damage",
+            "variant": "robotic swarm monster that deals slashing attacks"
+        },
+        {
+            "query": "creature that can't eat or sleep and uses book for health",
+            "variant": "monster that doesn't require food or sleep and relies on a book for hit points"
+        },
+        {
+            "query": "lawful neutral swarm monster with multiple attack options",
+            "variant": "structured swarm creature with various attack capabilities"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Glass Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "guardian",
+        "magical",
+        "glass"
+    ],
+    "adjectives": [
+        "small",
+        "formidable",
+        "crafted"
+    ],
+    "description": "The Glass Golem is a small construct made entirely from glass, designed to act as a guardian for valuable treasures.",
+    "memorable": "Its ability to resist many magical attacks combined with the vulnerability to bludgeoning makes it an intriguing foe.",
+    "goals": "To protect specific areas or treasures from intruders.",
+    "relations": "Often created by spellcasters as guardians.",
+    "environment": "Typically found in places of importance, such as treasure vaults or magical laboratories.",
+    "strengths": "Immune to poison and psychic damage, resistant to physical damage from nonmagical attacks, and has Magic Resistance.",
+    "weaknesses": "Vulnerable to bludgeoning damage which can compromise its structure.",
+    "attacks": "Utilizes a Shard attack that deals slashing damage with a decent probability to hit.",
+    "most_powerful_ability": "Magic Resistance provides the golem with an advantage on saving throws against spells and magical effects.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immutable Form makes it immune to spells altering its form.",
+        "Can retaliate with a Shard attack when receiving bludgeoning damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small guardian made of glass",
+        "magical construct that resists spells",
+        "vulnerable glass golem with slashing attack",
+        "guardian golem immune to conditions",
+        "treasure protector made of glass"
+    ]
+}

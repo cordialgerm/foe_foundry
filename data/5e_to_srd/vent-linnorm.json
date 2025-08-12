@@ -1,0 +1,11 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are gargantuan dragons with fear-inducing presence and necrotic-themed breath weapons in dark, swampy or cold environments."
+  },
+  "Ancient Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the necrotic and fear-inducing breath weapon theme and aquatic capabilities, with a menacing presence in dark or cold environments."
+  },
+  "monster_key": "vent-linnorm"
+}

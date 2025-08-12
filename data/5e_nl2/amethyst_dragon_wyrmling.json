@@ -1,0 +1,53 @@
+{
+    "name": "Amethyst Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 45,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., burrow 15 ft., fly 50 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "wyrm",
+        "psionic"
+    ],
+    "adjectives": [
+        "amethyst",
+        "telepathic",
+        "formidable"
+    ],
+    "description": "The Amethyst Dragon Wyrmling is a medium-sized dragon known for its stunning amethyst scales and formidable psionic abilities. This creature has a sleek and imposing appearance with sharp features, embodying both grace and power.",
+    "memorable": "Its unique 'Far Thoughts' ability allows it to psionically observe creatures and locations from incredible distances, making it a powerful foe and insightful ally.",
+    "goals": "Navigating its surroundings and engaging with those exhibiting psionic powers or telepathic communication.",
+    "relations": "Possibly encountered with other dragons, psionic creatures, or as a protector of its territory.",
+    "environment": "Typically found in rocky terrains or areas rich in psionic energy.",
+    "strengths": "Resistance to force and psychic damage, immunity to fatigue, and strong telepathic communication.",
+    "weaknesses": "Average physical attributes with no exceptional strengths or weaknesses.",
+    "attacks": "Can make a melee attack with a bite that deals considerable piercing damage and unleash a 'Concussive Breath' attack that affects multiple foes with psionic energy.",
+    "most_powerful_ability": "Far Thoughts allows the dragon to observe any creature using psionic abilities or communicating telepathically within 100 miles.",
+    "equipment": null,
+    "senses": "Possesses keen telepathic abilities that allow it to connect with others within a vast range.",
+    "skills": "Proficient in deception and persuasion, reflecting its capabilities in social encounters.",
+    "additional_information": [
+        "Can psionically observe a target indefinitely.",
+        "Emits a 15-foot cone of psionic energy with its Concussive Breath.",
+        "Maintains a balanced profile with no exceptional physical strengths.",
+        "Commonly serves as both an adversary and a potential ally.",
+        "Possesses a good level of durability for its challenge rating."
+    ],
+    "damage_types": [
+        "force",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psionic dragon",
+        "telepathic dragon wyrmling",
+        "amethyst scaled dragon",
+        "dragon with psionic abilities",
+        "young dragon effective for lower level adventures"
+    ]
+}

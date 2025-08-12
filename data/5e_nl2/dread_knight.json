@@ -1,0 +1,54 @@
+{
+    "name": "Dread Knight",
+    "creature_type": "Undead",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 262,
+    "ac": 18,
+    "srd": false,
+    "cr": "19",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "magic",
+        "melee",
+        "damage"
+    ],
+    "adjectives": [
+        "formidable",
+        "relentless",
+        "powerful"
+    ],
+    "description": "The Dread Knight is a medium undead creature, marked by its dark armor and menacing presence, wielding a cursed greatsword. Its dread aura surrounds it, instilling fear in its enemies.",
+    "memorable": "The Dread Knight's ability to reduce a target's hit point maximum to zero is particularly chilling, alongside its capability to summon a nightmarish steed.",
+    "goals": "The Dread Knight typically seeks to dominate battlefields and eliminate its foes, often commanding a legion of undead minions.",
+    "relations": "The Dread Knight may be encountered alongside other undead creatures or fiends, particularly those it has summoned.",
+    "environment": "Often found in dark, haunted places or battlefields where it has fallen, usually shunning sunlight.",
+    "strengths": "Significant damage output with the cursed greatsword and powerful magical abilities provide both offense and defense in combat.",
+    "weaknesses": null,
+    "attacks": "Cursed Greatsword attack deals slashing and necrotic damage, and targets could face a fatal reduction in their hit point maximum.",
+    "most_powerful_ability": "Unholy Aura grants significant advantages to allies while hindering enemies in its radius.",
+    "equipment": null,
+    "senses": "The Dread Knight possesses truesight up to 60 feet, allowing it to see through illusions and darkness.",
+    "skills": "With proficiency in Intimidation and high Perception, the Dread Knight excels at instilling fear and noticing threats.",
+    "additional_information": [
+        "Immune to cold, fire, necrotic, and poison damage.",
+        "Cannot be affected by charm, fright, or stun.",
+        "Can end spell effects of 5th level or lower in its vicinity.",
+        "Can summon a fell nightmare or wyvern to aid in battle.",
+        "Features a unique ability to create an Ice Wall for tactical advantage."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable undead knight with dark armor",
+        "summons nightmare steed and controls magic",
+        "enemy that reduces hit points permanently",
+        "undead creature with powerful cursed greatsword",
+        "Dread Knight's unholy aura advantages"
+    ]
+}

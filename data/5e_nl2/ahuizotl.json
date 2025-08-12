@@ -1,0 +1,51 @@
+{
+    "name": "Ahuizotl",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 71,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "ambush",
+        "grappler"
+    ],
+    "adjectives": [
+        "agile",
+        "spiky",
+        "formidable"
+    ],
+    "description": "The Ahuizotl is a small monstrosity with a spiky coat, known for its aquatic capabilities and agility. It possesses strong physical traits, particularly in Strength and Dexterity, making it effective in melee combat.",
+    "memorable": "With its spiky coat that damages attackers and the ability to grapple and drag foes, the Ahuizotl is a dangerous ambush predator in both land and water environments.",
+    "goals": "The Ahuizotl typically seeks to surprise and overpower its prey with swift attacks and grappling tactics.",
+    "relations": "Often encountered near water bodies, it might have interactions with aquatic creatures or serve as a guardian of its territory.",
+    "environment": "Commonly found in aquatic environments, including rivers, lakes, and other bodies of water.",
+    "strengths": "The Ahuizotl is characterized by its agility in water, strong melee capabilities, and a dangerous spiky coat that deters close-range attacks.",
+    "weaknesses": "It has low Intelligence, Wisdom, and Charisma scores, making it ineffective in social interactions and strategic planning.",
+    "attacks": "Utilizes bite and claw attacks, complemented by the powerful Tail Grab ability to grapple and drag its foes.",
+    "most_powerful_ability": "Tail Grab allows the Ahuizotl to effectively control and manipulate opponents while moving in combat.",
+    "senses": "Possesses passive perception of 13, allowing it to be moderately aware of its surroundings.",
+    "skills": "Has proficiency in perception, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Can breathe air and water due to its amphibious nature.",
+        "Highly effective in surprise ambush scenarios.",
+        "Grapples opponents easily, pulling them along as it moves.",
+        "The spiky coat can hurt close-range attackers.",
+        "Good balance of physical stats enhances its combat abilities."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic ambush predator",
+        "spiky coat creature",
+        "grappler monstrosity",
+        "agile water creature",
+        "Ahuizotl abilities"
+    ]
+}

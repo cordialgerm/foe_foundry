@@ -1,0 +1,25 @@
+{
+    "name": "Aurora Horribilis",
+    "queries": [
+        {
+            "query": "large aberration with chaotic abilities that can fly",
+            "variant": "huge chaotic creature that has flying skill and unique powers"
+        },
+        {
+            "query": "creature immune to cold and can move through objects",
+            "variant": "monster that is resilient to cold damage and passes through other things"
+        },
+        {
+            "query": "monster with high charisma that confuses enemies with song",
+            "variant": "creature with great charm that uses music to disorient foes"
+        },
+        {
+            "query": "strange creature that manipulates reality and has low strength",
+            "variant": "weird being that alters existence and is weak in physical strength"
+        },
+        {
+            "query": "flying monster that uses void speech and has acrobatics skills",
+            "variant": "aerial creature that speaks in void language and excels in acrobatics"
+        }
+    ]
+}

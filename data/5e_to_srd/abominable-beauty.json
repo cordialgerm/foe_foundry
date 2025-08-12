@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures known for their enchanting beauty and connection to nature."
+  },
+  "Banshee": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares abilities that incapacitate foes with powerful auditory and gaze effects."
+  },
+  "monster_key": "abominable-beauty"
+}

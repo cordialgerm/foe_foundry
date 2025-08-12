@@ -1,0 +1,50 @@
+{
+    "name": "Clacking Skeleton",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "skeleton",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "menacing",
+        "terrifying"
+    ],
+    "description": "A medium skeleton adorned with scraps of armor, it instills fear with its horrifying clacking sounds.",
+    "memorable": "Its Horrid Clacking ability can frighten adventurers and disrupt their strategies.",
+    "goals": "To instill fear in enemies and dominate the battlefield through terror.",
+    "relations": "Typically found among other undead or summoned by necromancers.",
+    "environment": "Often found in dark tombs or abandoned battlefields.",
+    "strengths": "Immunity to poison damage and conditions like exhaustion and poison.",
+    "weaknesses": "Vulnerability to bludgeoning damage which can double the damage received.",
+    "attacks": "Can attack with a glaive, a gore attack, or shoot from a shortbow.",
+    "most_powerful_ability": "Horrid Clacking can cause fear in creatures within a 30-foot range.",
+    "senses": "Has darkvision that allows it to see in darkness up to 60 feet.",
+    "skills": "Lacks notable skills, but possesses immunities to various conditions.",
+    "additional_information": [
+        "Can make two attacks in a single turn.",
+        "Frightens enemies to disrupt their combat tactics.",
+        "Attacks include melee and ranged options.",
+        "Low intelligence and charisma, limiting its interaction.",
+        "Passive perception is below average."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "skeleton that frightens enemies",
+        "undead that makes horrible clacking sounds",
+        "medium skeleton with glaive attacks",
+        "fear-causing undead creature",
+        "skeleton vulnerable to bludgeoning damage"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ankylosaurus",
+    "queries": [
+        {
+            "query": "large armored beast with a powerful tail attack",
+            "variant": "big armored creature that has a strong tail attack"
+        },
+        {
+            "query": "slow-moving dinosaur known for its protective shell",
+            "variant": "dinosaur that moves slowly and is famous for its protective shell"
+        },
+        {
+            "query": "massive reptile that deals bludgeoning damage with its tail",
+            "variant": "huge reptile that attacks with tail for bludgeoning damage"
+        },
+        {
+            "query": "colossal beast in combat with high hit points",
+            "variant": "huge creature in battles with a lot of hit points"
+        },
+        {
+            "query": "tank-like creature from prehistoric times with high strength",
+            "variant": "tank-like animal from ancient times that has high strength"
+        }
+    ]
+}

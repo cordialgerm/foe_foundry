@@ -1,0 +1,25 @@
+{
+    "name": "Giant Constrictor Snake",
+    "queries": [
+        {
+            "query": "huge snake that grapples and constricts prey",
+            "variant": "huge snake that constricts and grapples prey"
+        },
+        {
+            "query": "snake with a powerful constrict ability and decent armor",
+            "variant": "snake that has a strong constrict ability and good armor"
+        },
+        {
+            "query": "massive serpent that deals bludgeoning damage and suffocates victims",
+            "variant": "massive serpent that can deal bludgeoning damage and suffocate victims"
+        },
+        {
+            "query": "giant snake known for its hunting skills and stealthy movement",
+            "variant": "large snake known for its stealthy movement and hunting abilities"
+        },
+        {
+            "query": "beastly snake that can crush enemies and has keen senses",
+            "variant": "beast-like snake that can crush foes and possesses keen senses"
+        }
+    ]
+}

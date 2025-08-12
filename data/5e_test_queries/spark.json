@@ -1,0 +1,25 @@
+{
+    "name": "Spark",
+    "queries": [
+        {
+            "query": "tiny lightning elemental that takes control of humanoids",
+            "variant": "little elemental of lightning that can inhabit humanoids"
+        },
+        {
+            "query": "elemental creature with high Dexterity and lightning immunity",
+            "variant": "creature of elemental nature with great Dexterity and immune to lightning"
+        },
+        {
+            "query": "chaotic neutral elemental that doesn't need food or sleep",
+            "variant": "elemental that is chaotic neutral and doesn't require sleep or food"
+        },
+        {
+            "query": "fast elemental with electric attack ability",
+            "variant": "quick elemental creature with the ability to attack using electricity"
+        },
+        {
+            "query": "spark that can incapacitate humanoids and has darkvision",
+            "variant": "spark that incapacitates humanoid targets and possesses darkvision"
+        }
+    ]
+}

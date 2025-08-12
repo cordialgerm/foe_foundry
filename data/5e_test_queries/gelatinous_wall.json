@@ -1,0 +1,25 @@
+{
+    "name": "Gelatinous Wall",
+    "queries": [
+        {
+            "query": "massive ooze that traps its enemies in combat",
+            "variant": "big ooze that ensnares foes during fights"
+        },
+        {
+            "query": "gelatinous creature vulnerable to sunlight and low mobility",
+            "variant": "jelly like monster weak to sunlight and not very mobile"
+        },
+        {
+            "query": "thick transparent wall that can engulf adventurers",
+            "variant": "chunky see-through barrier capable of swallowing heroes"
+        },
+        {
+            "query": "slow monster with high hit points that attacks with acid",
+            "variant": "lagging creature with significant health that strikes using acid"
+        },
+        {
+            "query": "creature with engulfing attack that is blind in bright light",
+            "variant": "monster that can engulf foes and is sightless in bright lighting"
+        }
+    ]
+}

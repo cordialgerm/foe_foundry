@@ -1,0 +1,51 @@
+{
+    "name": "White Ape",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 114,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "monkey",
+        "disease",
+        "magical"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "agile",
+        "diseased"
+    ],
+    "description": "The White Ape is a large, powerful creature with exceptional physical prowess and magical abilities, featuring a strong build and notable agility.",
+    "memorable": "This creature can inflict arcane wasting disease, causing mental deterioration to spellcasters.",
+    "goals": "The White Ape typically seeks to dominate and incapacitate its opponents, particularly spellcasters.",
+    "relations": "May be found alongside other magical beasts or in areas with strong arcane influences.",
+    "environment": "Usually found in magical forests or areas steeped in arcane energy.",
+    "strengths": "Possesses high Strength and Constitution, durable and capable of significant damage.",
+    "weaknesses": "Low Intelligence and Charisma limit its ability for interaction and intelligence-based skills.",
+    "attacks": "Employs a Multiattack with a Bite and two Fist attacks, featuring powerful bludgeoning damage.",
+    "most_powerful_ability": "Arcane Wasting, a disease that can severely weaken spellcasters over time.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 15, indicating good awareness of its surroundings.",
+    "skills": "Skilled in Athletics and Intimidation, showcasing its physical abilities and presence.",
+    "additional_information": [
+        "Gains advantage on saving throws against spells due to Magic Resistance.",
+        "Can attack multiple creatures in one turn with its Frenzy ability.",
+        "Focuses its attacks on those using magic with Spellcasting Animosity.",
+        "Can inflict significant damage with its physical attacks.",
+        "Serves as a formidable foe for adventurers due to its combination of strength and magical resistance."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large ape with debilitating magical abilities",
+        "monstrous white ape that inflicts disease",
+        "agile creature that targets spellcasters",
+        "powerful melee attacker with magic resistance",
+        "formidable ape known for arcane wasting disease"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Moth",
+    "queries": [
+        {
+            "query": "small unaligned creature that can fly and uses powder clouds",
+            "variant": "small creature unaligned that can fly and uses powdery clouds"
+        },
+        {
+            "query": "moth-like monster with strong stealth and perception skills",
+            "variant": "monster like a moth with strong stealth and perception abilities"
+        },
+        {
+            "query": "fragile flying creature found in forests with weak intelligence",
+            "variant": "flying fragile creature found in forests that has low intelligence"
+        },
+        {
+            "query": "giant moth with antennae that enhances smell detection in combat",
+            "variant": "moth giant with antennae enhancing smell detection during combat"
+        },
+        {
+            "query": "forest animal that can blind foes and relies on smell",
+            "variant": "animal in the forest that relies on smell and can blind enemies"
+        }
+    ]
+}

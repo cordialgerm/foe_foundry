@@ -1,0 +1,25 @@
+{
+    "name": "Iron Ghoul",
+    "queries": [
+        {
+            "query": "undead creature with high strength and paralysis attack",
+            "variant": "undead beast with strong strength and paralysis ability"
+        },
+        {
+            "query": "medium undead that requires no air and can inflict diseases",
+            "variant": "medium ghoul that doesn't need air and can cause diseases"
+        },
+        {
+            "query": "slow-moving monster with powerful melee attacks and poison immunity",
+            "variant": "sluggish creature with strong melee attacks and resistant to poison"
+        },
+        {
+            "query": "lawful evil ghoul that can paralyze opponents and has darkvision",
+            "variant": "evil lawful ghoul capable of paralyzing foes and possessing darkvision"
+        },
+        {
+            "query": "ghoul with high AC and the ability to turn the tides in battle",
+            "variant": "ghoul that has high armor class and can change the battle's outcome"
+        }
+    ]
+}

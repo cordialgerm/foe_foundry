@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with natural armor and high defenses, though the Void Constructor has additional necrotic abilities and flight."
+  },
+  "Gargoyle": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares flying capability and grappling attacks, with a focus on mobility and close combat."
+  },
+  "monster_key": "void-constructor"
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Dread Troll",
+    "creature_type": "Giant",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "regeneration",
+        "troll",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "terrifying",
+        "resilient",
+        "strong"
+    ],
+    "description": "The Dread Troll is a large and fearsome creature known for its incredible strength and regenerative abilities. It features a robust physique, capable of withstanding significant damage.",
+    "memorable": "Its unique Severed Limbs ability allows it to control its lost extremities and continue fighting even when severely injured.",
+    "goals": "To overpower adversaries in combat and use its regeneration to survive battles.",
+    "relations": "Could be found alongside other trolls or as a solitary predator.",
+    "environment": "Typically found in dark forests or mountainous regions.",
+    "strengths": "High physical damage output with multiple attacks and significant hit point pool; can regenerate health unless affected by fire or acid.",
+    "weaknesses": "Vulnerable to fire and acid damage, which temporarily halts its regeneration.",
+    "attacks": "Can make two bite attacks and three claw attacks in a single turn.",
+    "most_powerful_ability": "Regeneration, allowing it to regain hit points unless it suffers fire or acid damage.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting advantage on Perception checks based on smell.",
+    "skills": "Proficient in stealth, allowing it to ambush unsuspecting foes.",
+    "additional_information": [
+        "Has the ability to control severed limbs with their own hit points.",
+        "If the troll loses a limb, it can reattach it as a bonus action.",
+        "Severed limbs can continue to attack independently.",
+        "High Constitution ensures excellent durability in combat.",
+        "Struggles with intelligence, making it less versatile in non-combat situations."
+    ],
+    "damage_types": [
+        "fire",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "troll that can control its severed limbs",
+        "giant with stunning regeneration abilities",
+        "formidable giant with keen smell in the forest",
+        "large troll that regains health each turn",
+        "resilient creature vulnerable to fire and acid"
+    ]
+}

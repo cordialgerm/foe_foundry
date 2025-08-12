@@ -1,0 +1,25 @@
+{
+    "name": "Vine Lord",
+    "queries": [
+        {
+            "query": "plant creature that can regenerate in forests and uses vine attacks",
+            "variant": "creature plant that regenerates in woods and attacks with vines"
+        },
+        {
+            "query": "magical plant monster with poison attacks and telepathic abilities",
+            "variant": "magical vine monster that has poison attacks and can communicate telepathically"
+        },
+        {
+            "query": "medium sized plant creature vulnerable to fire and skilled in tactics",
+            "variant": "medium plant creature that is weak against fire and tactical in nature"
+        },
+        {
+            "query": "Vine Lord capabilities including healing and spell resistance",
+            "variant": "Vine Lord's abilities with healing and resistance to magic"
+        },
+        {
+            "query": "creature from the forest that summons allies and walks through difficult terrain",
+            "variant": "forest creature that can summon allies and moves without penalties on difficult ground"
+        }
+    ]
+}

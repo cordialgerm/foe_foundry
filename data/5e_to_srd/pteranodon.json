@@ -1,0 +1,7 @@
+{
+  "Pteranodon": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a close match to the SRD Pteranodon with similar size, abilities, and role as a nimble flying predator."
+  },
+  "monster_key": "pteranodon"
+}

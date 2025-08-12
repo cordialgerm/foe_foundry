@@ -1,0 +1,7 @@
+{
+  "Bugbear": {
+    "relation": "almost_identical",
+    "explanation": "A formidable bugbear leader with strong melee attacks and ambush tactics closely matches the Bugbear."
+  },
+  "monster_key": "bugbear-chief"
+}

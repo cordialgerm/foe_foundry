@@ -1,0 +1,25 @@
+{
+    "name": "Gulper Behemoth",
+    "queries": [
+        {
+            "query": "gargantuan aquatic monster with explosive death burst",
+            "variant": "huge water creature that explodes when killed"
+        },
+        {
+            "query": "massive behemoth that grapples and swallows enemies",
+            "variant": "large monster that can swallow and restrain foes"
+        },
+        {
+            "query": "underwater creature with keen hearing and sonic pulse attack",
+            "variant": "water-based monster with acute hearing and sound attack"
+        },
+        {
+            "query": "behemoth with high strength and vulnerability to piercing damage",
+            "variant": "powerful monster with low agility and weakness to pierce attacks"
+        },
+        {
+            "query": "giant monster that can only breathe underwater and has blindsight",
+            "variant": "huge creature that has keen senses and can only live in water"
+        }
+    ]
+}

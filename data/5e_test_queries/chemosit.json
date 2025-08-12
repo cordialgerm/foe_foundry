@@ -1,0 +1,25 @@
+{
+    "name": "Chemosit",
+    "queries": [
+        {
+            "query": "fiend that uses a charming song in battle",
+            "variant": "fiend that charms opponents with a song during fights"
+        },
+        {
+            "query": "medium neutral evil fiend with a red light ability",
+            "variant": "medium fiend of neutral evil alignment that emits red light"
+        },
+        {
+            "query": "creature that can change shape and has a crutch",
+            "variant": "creature with a crutch able to transform shape"
+        },
+        {
+            "query": "monster that deals fire damage and infects with disease",
+            "variant": "creature that inflicts fire damage and spreads disease"
+        },
+        {
+            "query": "Chemosit tactics and combat abilities",
+            "variant": "tactics and combat abilities of the Chemosit fiend"
+        }
+    ]
+}

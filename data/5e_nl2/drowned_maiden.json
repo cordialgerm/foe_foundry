@@ -1,0 +1,50 @@
+{
+    "name": "Drowned Maiden",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "grappler",
+        "psychic"
+    ],
+    "adjectives": [
+        "deceptive",
+        "malevolent",
+        "agile"
+    ],
+    "description": "The Drowned Maiden is a Medium-sized undead creature associated with decay, possessing flowing hair that she uses as whips in combat.",
+    "memorable": "Her ability to grapple and drain strength from her victims is both unique and terrifying.",
+    "goals": "To manipulate and harm adventurers, using deception and crowd control tactics.",
+    "relations": "Might be encountered with other undead or malevolent creatures.",
+    "environment": "Typically found in damp, decaying locations like swamps or ruins.",
+    "strengths": "Immune to necrotic and poison damage; manipulative abilities through grappling and illusions.",
+    "weaknesses": "Vulnerable to magical attacks; susceptible to strength reduction effects.",
+    "attacks": "Her Hair attacks allow for grappling and deal slashing damage.",
+    "most_powerful_ability": "Draining Kiss inflicts psychic damage and reduces the target's Strength score.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can grapple up to three creatures at a time",
+        "Creates illusions to ambush and deceive",
+        "Immune to charmed, exhausted, and frightened conditions"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psychic draining undead creature",
+        "deceptive undead controlling with hair",
+        "grappling undead with strength reduction abilities",
+        "creature that uses illusions to ambush",
+        "undead that drains life through kiss"
+    ]
+}

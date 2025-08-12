@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "The Vampire Patrician is a noble vampire with life drain, regeneration, mist form, and paralyzing gaze, closely matching the Vampire."
+  },
+  "Vampire Spawn": {
+    "relation": "close_cousins",
+    "explanation": "The Vampire Patrician can create vampire spawns, linking it closely to the Vampire Spawn."
+  },
+  "monster_key": "vampire-patrician"
+}

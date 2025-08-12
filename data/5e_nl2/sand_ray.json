@@ -1,0 +1,52 @@
+{
+    "name": "Sand Ray",
+    "creature_type": "Aberration",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 97,
+    "ac": 13,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 10 ft., fly 50 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ambush",
+        "flying",
+        "psychological"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "The Sand Ray is a large, cunning aberration resembling a patch of sand when motionless. It possesses a formidable build with powerful physical attributes and is designed for aerial maneuvers.",
+    "memorable": "Its ability to blend into sandy environments makes it an elusive predator, capable of striking fear into its prey with psychological attacks.",
+    "goals": "To ambush unsuspecting creatures, deliver psychic fear, and maintain dominance in its territory.",
+    "relations": "It may serve as a guardian of sandy terrains or be a potential ally to other aberrations.",
+    "environment": "Typically found in sandy or arid environments where it can utilize its False Appearance.",
+    "strengths": "High strength for powerful melee attacks, stealth skills for ambush tactics, and the ability to frighten enemies.",
+    "weaknesses": "Light Sensitivity imposes disadvantage in bright light environments.",
+    "attacks": "Features a powerful Bite that grapples and blinds, and a Tail attack that inflicts slashing and poison damage.",
+    "most_powerful_ability": "Moan, which can frighten non-aberration creatures and influence the tide of battle.",
+    "equipment": "null",
+    "senses": "Has darkvision up to 60 feet, allowing it to thrive in dim light or darkness.",
+    "skills": "Possesses stealth proficiency, making it adept at ambushing.",
+    "additional_information": [
+        "False Appearance allows it to mimic sand.",
+        "When grappling, it can transfer damage to the prey.",
+        "Can create phantasms to gain an advantage against attacks.",
+        "Immunity to being charmed or frightened.",
+        "Resistant to bludgeoning damage."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning sand monster that ambushes",
+        "psychological creature with powerful bite attack",
+        "flying aberration that blends in with sand",
+        "monster that frightens enemies with moan",
+        "large creature with disadvantage in bright light"
+    ]
+}

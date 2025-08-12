@@ -1,0 +1,25 @@
+{
+    "name": "Jackalwere",
+    "queries": [
+        {
+            "query": "medium fiend that shapeshifts and charms foes",
+            "variant": "medium fiend that can shapeshift and charm enemies"
+        },
+        {
+            "query": "sneaky jackal monster that relies on deception",
+            "variant": "sneaky jackal creature that depends on deception"
+        },
+        {
+            "query": "chaotic evil creature that uses sleep gaze attacks",
+            "variant": "chaotic evil being that employs sleep gaze strikes"
+        },
+        {
+            "query": "creature with pack tactics that prefers ambushes",
+            "variant": "monster with pack tactics that likes to ambush"
+        },
+        {
+            "query": "jackal-like fiend vulnerable to magical attacks",
+            "variant": "jackal creature weak to magical assaults"
+        }
+    ]
+}

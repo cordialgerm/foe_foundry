@@ -1,0 +1,53 @@
+{
+    "name": "Cactus Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "20 ft. walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "cactus",
+        "support"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Cactus Drake resembles a tall branched cactus, with thorny features and a sturdy build, allowing it to blend seamlessly into desert environments.",
+    "memorable": "Its ability to disguise itself as a cactus and provide nourishment through self-mutilation sets it apart as a unique creature in survival scenarios.",
+    "goals": "Typically seeks to support smaller creatures and survive in harsh environments.",
+    "relations": "Might associate with other desert creatures or dragons.",
+    "environment": "Deserts or arid regions where it can camouflage among cacti.",
+    "strengths": "Possesses regeneration and can deal area damage with its Thorn Spray ability.",
+    "weaknesses": "Vulnerable to cold and poison damage, which can negate its regeneration.",
+    "attacks": "Can bite and swipe with claws, along with a damaging area effect from its Thorn Spray.",
+    "most_powerful_ability": "Thorn Spray allows it to deal significant area piercing damage and impede enemy movement.",
+    "equipment": null,
+    "senses": "Has tremorsense up to 30 feet, aiding in detecting nearby creatures.",
+    "skills": "Lacks notable skills beyond basic perception.",
+    "additional_information": [
+        "Impressive camouflage as a cactus",
+        "Regeneration allows for prolonged survival",
+        "Offering of Flesh provides aid to comrades",
+        "Thorny Body acts as both defense and deterrent",
+        "Requires strategic planning to fully utilize its abilities"
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cactus dragon that camouflages in deserts",
+        "medium dragon with thorn attacks and regeneration",
+        "creature that offers nourishment to allies",
+        "dragon with a thorny body and bite attacks",
+        "area damage from thorn spray ability"
+    ]
+}

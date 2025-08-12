@@ -1,6 +1,8 @@
 <MonsterName/>Ashen Custodian</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>99</HP>
 <summary>The Ashen Custodian is a formidable Medium-sized fey creature with a neutral alignment, serving as a guardian of forest sanctity and fire. With a challenge rating of 6, it possesses a balance of offensive and defensive capabilities, making it a significant threat in combat. Standing out with its exceptional Dexterity score of 21, the Ashen Custodian can evade attacks effectively, rated as very good for agility. With a notable Charisma of 18, it showcases strong magical abilities, along with resilience against various forms of damage. The creature has good health, boasting 99 hit points, which provides it substantial staying power in encounters. However, it is vulnerable to magical damage despite its immunity to fire, as well as possessing resistances that make nonmagical attacks less effective against it.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The Ashen Custodian's spellcasting capabilities are driven by its innate spellca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ashen Custodian
 
 *Medium* *Fey* *neutral*
@@ -63,5 +66,6 @@ At will: druidcraft, produce flame
 - **Cleansing Strike:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage plus 9 (2d8) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are amorphous, chaotic fiends with multiple attacks and a disturbing, unpredictable nature."
+  },
+  "Chuul": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares multiattack and bludgeoning attacks with additional effects, similar to Xecha's pseudopod and slam attacks."
+  },
+  "monster_key": "xecha"
+}

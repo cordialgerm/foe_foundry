@@ -1,0 +1,55 @@
+{
+    "name": "Gryllus Swarm",
+    "creature_type": "Construct",
+    "alignment": "lawful neutral",
+    "size": "Large",
+    "hp": 110,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "swarm",
+        "construct",
+        "book-bound",
+        "mobility"
+    ],
+    "adjectives": [
+        "magical",
+        "mechanical",
+        "predictable",
+        "agile"
+    ],
+    "description": "The Gryllus Swarm is a large, magical and mechanical amalgamation, bound to a book which it cannot stray far from. It possesses good agility and is shaped like a swarm of small constructs that can blend into illustrations within the book.",
+    "memorable": "Its unique dependency on a physical book creates an intriguing tactical vulnerability, offering players a chance to capitalize on.",
+    "goals": "To operate and fight efficiently as long as it remains close to its book.",
+    "relations": "Potentially associated with other constructs or magical entities that share similar characteristics.",
+    "environment": "Typically found in libraries, magical workshops, or places where books are stored.",
+    "strengths": "Good Dexterity allows for dodging attacks, and unique abilities support mobility and evasion.",
+    "weaknesses": "Its maximum hit points are reduced if it strays too far from its book, making it vulnerable when separate.",
+    "attacks": "Notable melee and ranged attacks include 'Go for the Knees' causing slashing damage and speed reduction, and 'Go for the Eyes' which can blind opponents.",
+    "most_powerful_ability": "The 'Book Bound' ability significantly limits its operational capacity when distanced from its book and can lead to its demise.",
+    "equipment": null,
+    "senses": "It has darkvision, which allows it to see in darkness as if it were dim light.",
+    "skills": "Possesses perceptive skills, though not significantly high with a +1 modifier.",
+    "additional_information": [
+        "Can occupy another creature's space allowing for flexible combat tactics.",
+        "Has condition immunities to several common effects, enhancing its durability in combat.",
+        "Can blend into its book's illustrations, allowing for stealthy movements.",
+        "Immutable form grants immunity to spells that would alter its physical form.",
+        "Does not require air, food, drink, or sleep, allowing it prolonged operation."
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magical swarm bound to a book",
+        "large construct with flexible movement",
+        "swarm that causes blinding damage",
+        "unique construct with book dependence",
+        "tactical swarm that can't regain health"
+    ]
+}

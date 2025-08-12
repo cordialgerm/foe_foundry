@@ -1,0 +1,52 @@
+{
+    "name": "Great Gray Owl",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 10,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 5 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "owl",
+        "flying",
+        "beast",
+        "swift",
+        "stealthy"
+    ],
+    "adjectives": [
+        "keen",
+        "agile",
+        "unassuming"
+    ],
+    "description": "The Great Gray Owl is known for its impressive flying capability and keen senses. Its feathers allow it to navigate swiftly through the air, making it an effective hunter.",
+    "memorable": "Its ability to avoid enemy attacks while flying makes it a tricky foe to deal with.",
+    "goals": "Typically hunts for small prey and scouts its surroundings.",
+    "relations": "Often found in wooded areas or near open fields where it can hunt and hide from larger predators.",
+    "environment": "Forests, open fields, and areas with abundant small game.",
+    "strengths": "High dexterity boosts its agility and stealth, making it an effective ambusher.",
+    "weaknesses": "Low strength and intelligence limit its physical and mental capabilities.",
+    "attacks": "The owl can strike with its talons, inflicting piercing damage with good accuracy.",
+    "most_powerful_ability": "Flyby allows it to engage and disengage from combat without risk of opportunity attacks.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, granting enhanced sight in low light conditions.",
+    "skills": "Excels in perception and stealth, making it difficult to detect.",
+    "additional_information": [
+        "Strong dexterity allows for effective evasion.",
+        "Keen Hearing and Sight provide advantage on perception checks.",
+        "Low challenge rating suitable for low-level encounters.",
+        "Moderate defenses with an armor class of 13.",
+        "Quick aerial maneuvers help it evade threats."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small flying owl with keen senses",
+        "swift bird that attacks from the air",
+        "owl that excels at stealth and evasion",
+        "agile forest creature with great mobility",
+        "owl with a flyby ability that avoids attacks"
+    ]
+}

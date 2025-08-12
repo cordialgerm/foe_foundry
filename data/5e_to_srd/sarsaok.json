@@ -1,0 +1,11 @@
+{
+  "Manticore": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge monstrosities with powerful melee attacks and the ability to control the battlefield."
+  },
+  "Fire Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "The Sarsaok's fire immunity and fiery area attack conceptually resemble the fiery nature of a Fire Giant."
+  },
+  "monster_key": "sarsaok"
+}

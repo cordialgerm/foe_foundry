@@ -1,0 +1,25 @@
+{
+    "name": "Hraesvelgr",
+    "queries": [
+        {
+            "query": "titan giant with powerful abilities that can transform into a colossal roc",
+            "variant": "titanic giant that can turn into a giant roc with formidable abilities"
+        },
+        {
+            "query": "huge giant that influences weather and has significant damage immunity",
+            "variant": "massive giant that can control weather and is immune to cold damage"
+        },
+        {
+            "query": "giant creature with high hit points capable of multiattacks and grappling",
+            "variant": "massive creature boasting 241 hit points with multiple attack options and grappling"
+        },
+        {
+            "query": "dangerous giant with a thunder screech ability and attacks for bludgeoning damage",
+            "variant": "threatening giant that can use a thunderous screech and deals bludgeoning damage"
+        },
+        {
+            "query": "Hraesvelgr's tactics for battling opponents in weather-altered environments",
+            "variant": "strategies of Hraesvelgr for fighting foes in modified weather conditions"
+        }
+    ]
+}

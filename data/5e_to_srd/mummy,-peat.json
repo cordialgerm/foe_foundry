@@ -1,0 +1,7 @@
+{
+  "Mummy": {
+    "relation": "close_cousins",
+    "explanation": "The Peat Mummy is an undead mummy variant with a swampy theme and a unique curse, sharing core undead mummy traits."
+  },
+  "monster_key": "mummy,-peat"
+}

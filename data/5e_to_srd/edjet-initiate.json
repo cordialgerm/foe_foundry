@@ -1,0 +1,11 @@
+{
+  "Bandit": {
+    "relation": "close_cousins",
+    "explanation": "A medium humanoid combatant with simple weapons and light armor, similar to a Bandit."
+  },
+  "Dragonborn": {
+    "relation": "conceptually_similar",
+    "explanation": "A dragonborn humanoid with fire resistance and melee combat focus, conceptually similar to the Dragonborn race."
+  },
+  "monster_key": "edjet-initiate"
+}

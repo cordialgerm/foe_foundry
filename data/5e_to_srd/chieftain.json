@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "close_cousins",
+    "explanation": "The Chieftain is a small humanoid leader associated with kobolds, sharing similar traits and leadership roles."
+  },
+  "monster_key": "chieftain"
+}

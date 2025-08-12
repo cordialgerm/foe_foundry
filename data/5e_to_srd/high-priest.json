@@ -1,0 +1,11 @@
+{
+  "Acolyte": {
+    "relation": "close_cousins",
+    "explanation": "The High Priest is a more powerful and versatile cleric-like spellcaster similar to an Acolyte."
+  },
+  "Priest": {
+    "relation": "almost_identical",
+    "explanation": "The High Priest closely resembles a Priest with enhanced spellcasting, healing, and radiant damage capabilities."
+  },
+  "monster_key": "high-priest"
+}

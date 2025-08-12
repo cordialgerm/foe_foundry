@@ -1,0 +1,7 @@
+{
+  "Allosaurus": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge dinosaurs with powerful melee attacks and strong physical presence."
+  },
+  "monster_key": "therizinosaurus"
+}

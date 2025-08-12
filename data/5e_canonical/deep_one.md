@@ -1,6 +1,8 @@
 <MonsterName/>Deep One</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Deep One is a Medium humanoid creature embodying a chaotic evil alignment, serving as a formidable foe in Dungeons & Dragons. With a robust armor class of 13 due to its natural armor and a considerable pool of hit points totaling 71, it presents a resilient challenge for adventurers. This creature’s strengths lie in its impressive physical capabilities, highlighted by a Strength score of 16, which grants it a good modifier of +3, along with a Constitution of 14, providing it an average modifier of +2 for durability. However, its intelligence, wisdom, and charisma scores are relatively low, indicating weaknesses in magical resistance and social interactions. The Deep One is particularly dangerous in melee combat, especially when it enters a frenzied state, enhancing its attacks significantly when damaged. Its vulnerabilities to fire make it susceptible to certain damage types, while its resistance to cold grants it additional survivability against icy spells and similar effects.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ When it comes to actions, the Deep One can utilize its Claws as a melee weapon a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep One
 
 *Medium* *Humanoid* *Chaotic Evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage.
+</statblock>
 
 

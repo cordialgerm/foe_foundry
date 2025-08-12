@@ -1,0 +1,51 @@
+{
+    "name": "Cyclops",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 13,
+    "srd": false,
+    "cr": "7",
+    "movement": "walking speed of 40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "monstrous",
+        "brute"
+    ],
+    "adjectives": [
+        "massive",
+        "powerful",
+        "fearsome"
+    ],
+    "description": "A massive giant with brute strength, the Cyclops is known for its large frame and terrifying presence. It is notable for its physical durability and its ability to deliver powerful melee attacks.",
+    "memorable": "The Cyclops can land devastating blows while frantically frightened, demonstrating its raw might even in fear.",
+    "goals": "To dominate its opponents on the battlefield, relying on brute strength and panic-induced aggression.",
+    "relations": "Usually solitary, but it may have interactions with other giants or monsters in its territory.",
+    "environment": "Often found in mountainous or remote areas, far from civilization.",
+    "strengths": "Exceptional strength and constitution, enabling it to absorb damage and hit hard in melee combat.",
+    "weaknesses": "Poor depth perception makes ranged attacks less effective, and low intelligence limits strategic decisions.",
+    "attacks": "Utilizes heavy melee attacks with a club, and can throw rocks, though with disadvantage due to depth perception issues.",
+    "most_powerful_ability": "Panicked Rage allows it to attack with advantage when frightened by an immediate threat.",
+    "senses": "Possesses passive perception of 10, indicating average awareness.",
+    "skills": "Has proficiency in survival, allowing it to navigate through natural environments effectively.",
+    "additional_information": [
+        "Can mitigate conditions through its Thick Skulled ability once per day.",
+        "Gains advantage on retaliation attacks against melee attackers with Big Windup.",
+        "Relying on brute force rather than strategy due to low intelligence.",
+        "Large size gives it a significant physical presence on the battlefield.",
+        "Often feared due to its impressive physical prowess."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive giant known for brute strength",
+        "giant that excels in melee combat",
+        "fearsome creature with panicked rage ability",
+        "cyclops that struggles with ranged attacks",
+        "huge brute with powerful melee strikes"
+    ]
+}

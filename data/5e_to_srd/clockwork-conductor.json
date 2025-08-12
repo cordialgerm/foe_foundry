@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are small constructs with mechanical nature and combat roles."
+  },
+  "Shield Guardian": {
+    "relation": "conceptually_similar",
+    "explanation": "Both serve as protective constructs that support allies in battle."
+  },
+  "monster_key": "clockwork-conductor"
+}

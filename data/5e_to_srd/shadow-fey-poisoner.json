@@ -1,0 +1,11 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "A stealthy, shadow-affiliated humanoid with poison and darkness-related abilities similar to Drow traits."
+  },
+  "Spy": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the skirmisher role with sneak attacks, stealth, and deception tactics."
+  },
+  "monster_key": "shadow-fey-poisoner"
+}

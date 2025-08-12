@@ -1,0 +1,54 @@
+{
+    "name": "Mad Piper",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 19,
+    "ac": 12,
+    "srd": false,
+    "ac_description": "padded armor",
+    "cr": "2",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Support",
+    "tags": [
+        "construct",
+        "fear",
+        "inspiration",
+        "music"
+    ],
+    "adjectives": [
+        "bizarre",
+        "unsettling",
+        "haunting"
+    ],
+    "description": "The Mad Piper embodies a bizarre and unsettling presence, utilizing a mixture of music and melee combat. It has a humanoid form with a musical instrument, likely used for its dirges and tunes.",
+    "memorable": "Its ability to inspire allies and terrify enemies creates a dynamic and unpredictable presence on the battlefield.",
+    "goals": "To inspire allies and instill fear in foes through music.",
+    "relations": "Constructs or beings that rely on music for their abilities, as well as living manifestations of fear.",
+    "environment": "Typically found in eerie settings or battlefields where its musical presence can be fully realized.",
+    "strengths": "High Strength and Charisma, making it effective in melee and supportive roles.",
+    "weaknesses": "Low Dexterity affects its initiative and agility.",
+    "attacks": "Screaming Flail delivers heavy bludgeoning damage combined with thunder damage, while the Terrible Dirge instills fear in a wide area.",
+    "most_powerful_ability": "Terrible Dirge, causing fear in enemies within range, potentially affecting multiple foes.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in performance, enhancing its musical effectiveness.",
+    "additional_information": [
+        "Immunities to various debilitating conditions like fear and poison.",
+        "Can inspire allies to improve their chances in critical situations.",
+        "Terrifies enemies, forcing them to save against its haunting tune.",
+        "Has a low passive perception indicating poor awareness of surroundings.",
+        "Uses music both to support allies and control the battlefield."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large construct that plays haunting music",
+        "fear-inducing music monster",
+        "supportive piper that inspires allies",
+        "bizarre creature with powerful melody attacks",
+        "unsettling construct that terrifies foes"
+    ]
+}

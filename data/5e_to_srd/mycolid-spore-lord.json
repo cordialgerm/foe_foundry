@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are fungal plant creatures that use spores and poison to control areas and affect enemies."
+  },
+  "Myconid": {
+    "relation": "conceptually_similar",
+    "explanation": "The Mycolid Spore Lord shares the fungal and telepathic nature of Myconids, supporting allies and controlling the battlefield."
+  },
+  "monster_key": "mycolid-spore-lord"
+}

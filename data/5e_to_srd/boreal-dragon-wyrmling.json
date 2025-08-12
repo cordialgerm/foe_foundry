@@ -1,0 +1,11 @@
+{
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium-sized dragons with icy scales and inhabit cold environments, though the homebrew has fiery breath instead of cold."
+  },
+  "Young Red Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a young dragon with fiery breath and significant mobility, but differs in elemental theme and environment."
+  },
+  "monster_key": "boreal-dragon-wyrmling"
+}

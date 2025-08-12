@@ -1,0 +1,11 @@
+{
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A medium dragon with nature-related abilities and poison damage, similar to the Young Green Dragon's forest affinity and poison breath."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the acid breath and natural, environmental control theme, though much larger and aquatic."
+  },
+  "monster_key": "vine-drake"
+}

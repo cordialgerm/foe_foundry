@@ -1,0 +1,51 @@
+{
+    "name": "Young Green Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 18,
+    "srd": true,
+    "cr": "8",
+    "movement": "40 ft. walk, 80 ft. fly, 40 ft. swim",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "poison",
+        "ambush"
+    ],
+    "adjectives": [
+        "cunning",
+        "devious",
+        "manipulative"
+    ],
+    "description": "A Young Green Dragon has emerald-green scales that camouflage it in forests or jungles, and it uses lies and deceit to manipulate others. It has a long serpentine body, sharp claws, and a fearsome bite.",
+    "memorable": "This dragon's use of fear and manipulation, alongside its poisonous breath, makes it a terrifying adversary.",
+    "goals": "It seeks to control weaker creatures and expand its territory.",
+    "relations": "It often interacts with other dragons and holds dominion over weaker creatures.",
+    "environment": "Forested or jungle areas where it can ambush its prey.",
+    "strengths": "High mobility with flying and swimming abilities, as well as resistance to poison damage.",
+    "weaknesses": "Vulnerable to coordinated attacks by adventurers who can exploit its weaknesses.",
+    "attacks": "Multiattack with a strong bite and slashing claws, along with a devastating poisonous breath weapon.",
+    "most_powerful_ability": "Poison Breath, which deals significant area damage and can terrify opponents.",
+    "senses": "Has blindsight out to 30 feet and a high passive Perception of 17.",
+    "skills": "Expert in deception, perception, and stealth, allowing it to excel in combat and social encounters.",
+    "additional_information": [
+        "Amphibious: can breathe air and water.",
+        "Woodland Stalker: advantage on Stealth checks in forested areas.",
+        "Innate spellcasting with ability-based on Charisma.",
+        "Hallucinogenic Gas that can frighten nearby creatures.",
+        "High hit points and armor class enhance its durability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting with spells like animal messenger and tongues, usable three times per day.",
+    "test_queries": [
+        "devious dragon that blends in forests",
+        "cunning dragon with poisonous breath",
+        "manipulative dragon that controls weaker creatures",
+        "ambush predator in jungles",
+        "young green dragon with hallucinogenic gas"
+    ]
+}

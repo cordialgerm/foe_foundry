@@ -1,0 +1,25 @@
+{
+    "name": "War Wyvern",
+    "queries": [
+        {
+            "query": "large dragon that spits venom and flies",
+            "variant": "big dragon that can fly and spits poison"
+        },
+        {
+            "query": "dragon with high hit points and siege abilities",
+            "variant": "dragon that has a lot of hit points and siege monster trait"
+        },
+        {
+            "query": "war wyvern attack capabilities in melee and ranged",
+            "variant": "war wyvern's melee and ranged attack abilities"
+        },
+        {
+            "query": "creature that grapples with claws and has a stinger",
+            "variant": "monster that can grapple using claws and has a stinger"
+        },
+        {
+            "query": "combat-effective dragon found in battle scenarios",
+            "variant": "battle-ready dragon that is effective in combat situations"
+        }
+    ]
+}

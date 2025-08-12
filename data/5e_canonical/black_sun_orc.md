@@ -1,6 +1,8 @@
 <MonsterName/>Black Sun Orc</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>65</HP>
 <summary>The Black Sun Orc is a Medium-sized humanoid creature known for its chaotic evil alignment. This orc is a formidable combatant, boasting a decent armor class of 14, which reflects the use of hide armor, and a robust pool of hit points totaling 65, acquired through 10d8+20. With a challenge rating of 2, it presents a moderate threat to adventurers and is capable of delivering significant damage in combat. The orc's strengths lie in its physical attributes, particularly its high Strength and respectable Dexterity, allowing for effective melee and ranged attacks. However, it suffers from disadvantages when exposed to bright light, making it vulnerable in well-lit environments. Notably, the Black Sun Orc has special abilities that enhance its movement and camouflage in rocky terrains, making it a cunning adversary.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Black Sun Orc is a hybrid predator that can engage effectively in v
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Sun Orc
 
 *Medium* *Humanoid* *chaotic evil*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

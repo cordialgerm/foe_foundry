@@ -1,0 +1,15 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs designed as guardians, with the Hoard Golem being a larger, more powerful variant."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "The Hoard Golem shares the role of a powerful construct guardian protecting a master or treasure."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "The Hoard Golem is a large, durable construct with magical abilities, similar in concept to the Iron Golem's role as a magical protector."
+  },
+  "monster_key": "hoard-golem"
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Mavka",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 170,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "nightmare"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "dangerous"
+    ],
+    "description": "The Mavka is a Medium undead creature with strong offensive capabilities, often mounted on a nightmare. It features dark and undead characteristics, with an imposing presence.",
+    "memorable": "Its combination of regeneration, powerful spells, and combat versatility makes the Mavka a significant threat, especially when mounted on its nightmare.",
+    "goals": "Typically seeks to cause chaos and destruction, using its abilities to dominate the battlefield.",
+    "relations": "Often associated with nightmares and other evil undead creatures.",
+    "environment": "Likely to be found in dark or cursed areas, avoiding sunlight.",
+    "strengths": "Immunity to necrotic and poison damage, and able to regenerate health through attacks.",
+    "weaknesses": "Severe vulnerability to sunlight causing radiant damage and disadvantage on attacks.",
+    "attacks": "Utilizes two Enervating Slam melee attacks and three Necrotic Bolt ranged spell attacks, along with devastating fire abilities when mounted.",
+    "most_powerful_ability": "The ability to unleash Flame Burst, dealing significant fire damage to multiple targets at once.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 90 feet and a passive Perception of 15.",
+    "skills": "Skilled in Athletics, capable in Nature, and perceptive with notable proficiency in Perception.",
+    "additional_information": [
+        "Regains health based on necrotic damage dealt by attacks.",
+        "Can cast multiple spells to manipulate the battlefield.",
+        "The nightmare mount adds mobility and additional attack options.",
+        "Exempts the Mavka from the need for air, food, drink, or sleep.",
+        "Suffers significant penalties in sunlight, making its environment crucial."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": "Can cast a variety of spells, including darkness and other utility spells to control combat scenarios.",
+    "test_queries": [
+        "undead creature with nightmare mount",
+        "dark evil undead that can regenerate",
+        "creature that is weak to sunlight",
+        "powerful necrotic spellcasting monster",
+        "chaotic undead with mobility and spells"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Dust Mephit": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Dust Mephit exactly in size, type, abilities, and thematic elements."
+  },
+  "monster_key": "dust-mephit"
+}

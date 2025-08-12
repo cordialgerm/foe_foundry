@@ -1,0 +1,57 @@
+{
+    "name": "Weretiger",
+    "creature_type": "Humanoid",
+    "creature_subtype": [
+        "human",
+        "lycanthrope",
+        "shapechanger"
+    ],
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 12,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft. walking, 40 ft. in tiger form",
+    "role": "Bruiser",
+    "tags": [
+        "shapechanger",
+        "predator",
+        "lycanthrope",
+        "stealthy"
+    ],
+    "adjectives": [
+        "graceful",
+        "fierce",
+        "stealthy",
+        "predatory"
+    ],
+    "description": "A humanoid cursed with the ability to transform into a tiger or hybrid form; known for sharp claws and fangs.",
+    "memorable": "Immunity to nonmagical and non-silvered weapon damage, fierce territorial protectors.",
+    "goals": "Typically solitary hunters, fiercely protective of their territory.",
+    "relations": "May serve or be found with other lycanthropes; typically avoid civilized areas.",
+    "environment": "Remote jungles and forests where they can hunt in peace.",
+    "strengths": "High physical abilities, stealth skills, and form versatility grant tactical advantages in combat.",
+    "weaknesses": "Vulnerable to wolfsbane, which can poison and damage them.",
+    "attacks": "Multiattack capabilities using claws and bite; can knock targets prone.",
+    "most_powerful_ability": "Bite attack can curse humanoids with weretiger lycanthropy.",
+    "equipment": "Can wield weapons like scimitars and longbows in humanoid form.",
+    "senses": "Keen hearing and smell grant advantage on Perception checks related to these senses.",
+    "skills": "Proficient in stealth and perception, capable of effective ambush tactics.",
+    "additional_information": [
+        "Can shapeshift between humanoid, hybrid, and tiger forms.",
+        "Pounce ability allows knocking opponents prone for extra attacks.",
+        "Frenzied Bite makes it more dangerous when bloodied.",
+        "Bleed Prey ability tracks and inflicts ongoing damage to marked prey.",
+        "Immunity to most non-silvered weapon damages enhances survivability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "predator in jungle that transforms",
+        "humanoid that can become a tiger",
+        "stealthy shapechanger that is a werebeast",
+        "creature immune to non-silvered weapons",
+        "weretiger with powerful biting attack"
+    ]
+}

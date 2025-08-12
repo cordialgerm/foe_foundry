@@ -1,0 +1,51 @@
+{
+    "name": "Giant Wolf Spider",
+    "creature_type": "Beast",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 14,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "40 feet on the ground and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "spider",
+        "predator",
+        "ambush"
+    ],
+    "adjectives": [
+        "nimble",
+        "stealthy",
+        "poisonous"
+    ],
+    "description": "A Medium beast with exceptional climbing abilities and a deadly bite that delivers poison, allowing it to incapacitate prey effectively.",
+    "memorable": "Its ability to paralyze victims with poisonous bites makes it a deadly ambush predator.",
+    "goals": "To hunt and incapacitate prey using stealth and poison.",
+    "relations": "Often found in the company of other ambush predators or in nests with young spiders.",
+    "environment": "Commonly found in various terrains where it can climb and hide.",
+    "strengths": "High agility and climbing capabilities allow for strategic positioning in combat.",
+    "weaknesses": "Very low Intelligence and Charisma make it vulnerable to magical effects and social challenges.",
+    "attacks": "Uses a bite attack that deals piercing and additional poison damage, potentially paralyzing foes.",
+    "most_powerful_ability": "Poisonous bite can paralyze prey for an hour if not saved against.",
+    "senses": "Possesses keen senses with a high Stealth score of 16, making it adept at ambush tactics.",
+    "skills": "Skilled in stealth, allowing it to sneak up on unsuspecting victims.",
+    "additional_information": [
+        "Can climb difficult surfaces without rolling for success.",
+        "Has a unique jumping ability to quickly close distances.",
+        "Makes strategic leaps that do not provoke opportunity attacks.",
+        "Ability to stabilize poisoned creatures prevents death.",
+        "Recognizable by its large size and predatory behavior."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium poisonous spider that ambushes prey",
+        "stealthy spider with climbing abilities",
+        "predatory spider that jumps and bites",
+        "Giant Wolf Spider skills and tactics",
+        "nimble spider found in various terrains"
+    ]
+}

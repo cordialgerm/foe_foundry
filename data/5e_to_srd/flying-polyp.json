@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with powerful mental and control abilities, though the Flying Polyp is more focused on flight and wind."
+  },
+  "Air Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares flight, wind-based control abilities, and elemental damage types like lightning and thunder."
+  },
+  "monster_key": "flying-polyp"
+}

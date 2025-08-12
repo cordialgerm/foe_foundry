@@ -1,0 +1,25 @@
+{
+    "name": "Fate Eater",
+    "queries": [
+        {
+            "query": "creature that manipulates destiny and has psychic powers",
+            "variant": "monster that has psychic powers and manipulates fate"
+        },
+        {
+            "query": "dark creature that can poison those who eat its flesh",
+            "variant": "creature with dark abilities that poisons eaters of its flesh"
+        },
+        {
+            "query": "medium aberration with truesight and high intelligence",
+            "variant": "medium monstrosity with high intelligence and truesight"
+        },
+        {
+            "query": "monster with strong bite attacks and psychic damage abilities",
+            "variant": "creature that provides psychic damage and has a strong bite attack"
+        },
+        {
+            "query": "aberration immune to charm and fear with 130 hit points",
+            "variant": "aberration with 130 HP that is immune to fear and charm effects"
+        }
+    ]
+}

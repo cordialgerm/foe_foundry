@@ -1,0 +1,7 @@
+{
+  "Gelatinous Cube": {
+    "relation": "almost_identical",
+    "explanation": "A massive, transparent ooze that engulfs and restrains foes with acid damage, functioning as a dangerous obstacle."
+  },
+  "monster_key": "gelatinous-wall"
+}

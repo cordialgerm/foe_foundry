@@ -1,0 +1,11 @@
+{
+  "Giant Bat": {
+    "relation": "almost_identical",
+    "explanation": "A large flying beast with similar size and flight capabilities, serving as a base for the Giant Vampire Bat."
+  },
+  "Vampire": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the vampire theme of life-draining and necrotic bite, though the Giant Vampire Bat is a beast rather than undead."
+  },
+  "monster_key": "giant-vampire-bat"
+}

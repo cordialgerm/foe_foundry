@@ -1,0 +1,25 @@
+{
+    "name": "Alp",
+    "queries": [
+        {
+            "query": "small fey creature with illusion magic and sunlight vulnerability",
+            "variant": "small creature fey with magic illusions and vulnerable to sunlight"
+        },
+        {
+            "query": "stealthy monster that uses sleep spells and can change shape",
+            "variant": "monster good at stealth that can cast sleep spells and shapeshift"
+        },
+        {
+            "query": "chaotic evil creature that becomes frightened and restrained",
+            "variant": "creature evil chaos that can make enemies frightened and restrained"
+        },
+        {
+            "query": "monster that excels in ambushes and has darkvision",
+            "variant": "creature good at ambush that can see in the dark"
+        },
+        {
+            "query": "fey with a signature melee attack and innate spellcasting abilities",
+            "variant": "fey monster with unique melee attack and spellcasting powers"
+        }
+    ]
+}

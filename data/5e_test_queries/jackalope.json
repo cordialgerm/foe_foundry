@@ -1,0 +1,25 @@
+{
+    "name": "Jackalope",
+    "queries": [
+        {
+            "query": "tiny beast known for agility and evasion that mimics sounds",
+            "variant": "small creature famous for quickness and avoidance that imitates noises"
+        },
+        {
+            "query": "fast creature with high dexterity that lives in a variety of environments",
+            "variant": "swift being with great dexterity that exists in multiple habitats"
+        },
+        {
+            "query": "tiny agile monster that can perform actions like Gore and Nimble Escape",
+            "variant": "small nimble creature capable of actions such as Gore and speedy retreat"
+        },
+        {
+            "query": "Jackalope creature with keen hearing and exceptional evasion abilities",
+            "variant": "Jackalope beast with sharp hearing and remarkable agility skills"
+        },
+        {
+            "query": "small beast with low intelligence that thrives on stealth and deception",
+            "variant": "little creature with poor smarts that excels in sneaking and trickery"
+        }
+    ]
+}

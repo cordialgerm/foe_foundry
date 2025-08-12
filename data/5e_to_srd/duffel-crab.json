@@ -1,0 +1,7 @@
+{
+  "Giant Crab": {
+    "relation": "close_cousins",
+    "explanation": "The Duffel Crab is a large aquatic crab-like monstrosity with similar physical traits and claw attacks."
+  },
+  "monster_key": "duffel-crab"
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Sazakan",
+    "creature_type": "Elemental",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "cold",
+        "ice",
+        "weather manipulation"
+    ],
+    "adjectives": [
+        "frosty",
+        "resilient",
+        "imposing"
+    ],
+    "description": "The Sazakan embodies the essence of cold and ice, featuring a frosty appearance that evokes a wintry landscape.",
+    "memorable": "It can alter weather conditions and has an imposing Wintry Aura that damages nearby creatures.",
+    "goals": "To control the battlefield through cold manipulation and impair its foes.",
+    "relations": "Related to other elemental creatures, particularly those associated with ice and cold.",
+    "environment": "Typically found in frigid locations where cold weather prevails.",
+    "strengths": "Immunity to exhaustion and paralysis; highly capable of manipulating its environment.",
+    "weaknesses": "Limited by its inability to change wind conditions, dependent on the surrounding environment for its full power.",
+    "attacks": "The Sazakan can attack with its Icy Wind Lash, dealing both slashing and cold damage, while using its Ice Whirlwind for area control.",
+    "most_powerful_ability": "Its Blizzard Heart allows it to change weather conditions, mimicking spell effects without the need for action.",
+    "senses": "It possesses blindsight up to 30 feet and an impressive passive perception of 17, allowing it to be highly aware of its surroundings.",
+    "skills": "It is proficient in perception, making it very good at noticing its environment.",
+    "additional_information": [
+        "Has resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+        "Immunities to conditions like exhaustion, paralysis, and petrification.",
+        "Can create a frost vortex with Ice Whirlwind that affects multiple creatures.",
+        "The Wintry Aura deals cold damage to all nearby enemies at the start of its turn.",
+        "Requires only half the air, food, and drink of a humanoid of its size."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cold elemental that manipulates weather",
+        "ice monster with freezing aura",
+        "elemental that controls blizzards",
+        "frozen creature causing icy wind damage",
+        "medium ice creature with blizzard powers"
+    ]
+}

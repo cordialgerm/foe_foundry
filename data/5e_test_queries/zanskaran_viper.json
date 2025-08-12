@@ -1,0 +1,25 @@
+{
+    "name": "Zanskaran Viper",
+    "queries": [
+        {
+            "query": "large snake with a poisonous bite and strong strength",
+            "variant": "big snake that has a poisonous bite and high strength"
+        },
+        {
+            "query": "predatory beast that can blind its prey with venom",
+            "variant": "meat-eating creature that can blind its victims with poison"
+        },
+        {
+            "query": "Zanskaran Viper habitat and combat abilities",
+            "variant": "habitat and attack abilities of the Zanskaran Viper"
+        },
+        {
+            "query": "creature with natural armor and exceptional constitution",
+            "variant": "being with natural protective skin and high constitution"
+        },
+        {
+            "query": "viper that moves quickly and attacks with poison",
+            "variant": "snake that is fast and uses poison in its attack"
+        }
+    ]
+}

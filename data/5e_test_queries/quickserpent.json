@@ -1,0 +1,25 @@
+{
+    "name": "Quickserpent",
+    "queries": [
+        {
+            "query": "large swamp creature with constricting ability and quicksand attacks",
+            "variant": "big swamp monster that can constrict and use quicksand"
+        },
+        {
+            "query": "beast that thrives in swamps and has a high strength score",
+            "variant": "monster living in swampy areas with a strong strength attribute"
+        },
+        {
+            "query": "creature that uses stealth in muddy environments and can immobilize foes",
+            "variant": "being that hides in mud and can trap enemies"
+        },
+        {
+            "query": "Quickserpent abilities and swamp camouflage",
+            "variant": "abilities of Quickserpent and how it camouflages in swamps"
+        },
+        {
+            "query": "large beast with tremorsense and high hit points",
+            "variant": "big creature that can sense through the ground and has many hit points"
+        }
+    ]
+}

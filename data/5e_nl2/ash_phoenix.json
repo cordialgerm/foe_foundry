@@ -1,0 +1,52 @@
+{
+    "name": "Ash Phoenix",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 90 ft., hover",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "flying",
+        "ambush"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "dangerous"
+    ],
+    "description": "The Ash Phoenix is a Large Undead creature that resembles a cloud of ash and smoke when motionless. It has an impressive wingspan and its body is made of charred remnants, giving it a ghostly and intimidating appearance.",
+    "memorable": "The ability to rejuvenate itself if destroyed and its lethal Ash Storm attacks make the Ash Phoenix a fearsome adversary that can return to battle even after being defeated.",
+    "goals": "Typically seeks to instill terror and chaos, often appearing in conflict zones as a harbinger of doom.",
+    "relations": "Might be encountered alongside other undead creatures or sinister allies in the service of malevolent beings.",
+    "environment": "Commonly found in graveyards, ruins, or areas steeped in necromantic energy.",
+    "strengths": "High Dexterity grants exceptional agility and stealth, making it difficult to detect and hit.",
+    "weaknesses": "Vulnerable to radiant damage and hindered by strong winds, which affects its combat effectiveness.",
+    "attacks": "Utilizes swift Ash Talon attacks that deal slashing and fire damage, capable of healing itself with necrotic damage dealt. Its Ash Storm ability can blind foes and deal significant area damage.",
+    "most_powerful_ability": "Rejuvenation allows it to return fully healed if its birth site is not purified.",
+    "senses": "Has passive Perception of 15, allowing it to detect hidden foes effectively.",
+    "skills": "Proficient in Stealth, making it adept at hiding and ambushing in dim lighting.",
+    "additional_information": [
+        "Can disguise itself as harmless ash while hovering.",
+        "Less effective in bright light due to its reliance on dim conditions to use its stealth abilities.",
+        "Difficult to combat due to its ability to recover from defeat.",
+        "Commands respect and fear among lesser undead and dark beings.",
+        "Can potentially blind multiple targets with its area attack."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with ash powers",
+        "flying necromancer",
+        "stealthy phoenix monster",
+        "ASH STORM ability",
+        "rejuvenating undead phoenix"
+    ]
+}

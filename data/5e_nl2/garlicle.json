@@ -1,0 +1,50 @@
+{
+    "name": "Garlicle",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 31,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., burrow 20 ft.",
+    "role": "null",
+    "tags": [
+        "plant",
+        "trickster",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "chaotic",
+        "small",
+        "trickster"
+    ],
+    "description": "The Garlicle is a small, chaotic neutral plant creature with a unique appearance resembling a bulbous plant with cloves. It often employs clever tactics in battles to impair foes and support allies.",
+    "memorable": "Its unpredictable abilities cause varying fortune outcomes in combat, making each encounter chaotic and engaging.",
+    "goals": "To create mayhem in battle while assisting allies and avoiding detection.",
+    "relations": "Related to other plant creatures and tricky fey beings.",
+    "environment": "Typically found in natural areas with abundant plant life.",
+    "strengths": "High passive perception and excellent stealth due to Plant Camouflage.",
+    "weaknesses": "Very low physical strength and limited melee effectiveness without spell support.",
+    "attacks": "Uses a basic melee attack with a Walking Staff and can create unpredictable effects with Cloves of Fate based on dice rolls.",
+    "most_powerful_ability": "The Cloves of Fate ability allows for a range of chaotic outcomes affecting allies and enemies alike.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive Perception score of 16, making it highly aware.",
+    "skills": "Excels in Insight and Perception with a +6 bonus, reflecting its strong ability to notice details and discern intentions.",
+    "additional_information": [
+        "Powered by innate spellcasting with Wisdom as the spellcasting ability.",
+        "Can cast utility spells like guidance and shillelagh at will.",
+        "Possesses the Tearful Stench ability that can blind nearby foes when damaged.",
+        "Uses advantage on Stealth checks in obscuring plant life.",
+        "Has a very ineffective melee attack unless using spells to enhance it."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting allows it to cast spells like shillelagh and entangle without material components.",
+    "test_queries": [
+        "chaotic plant creature with trickster abilities",
+        "plant monster that affects luck in battle",
+        "small trickster plant that uses spells",
+        "Garlicle abilities and environment",
+        "chaotic plant with blinding stench"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Orniraptor",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 16,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "agile",
+        "defensive",
+        "coordination"
+    ],
+    "adjectives": [
+        "small",
+        "caustic",
+        "mobile"
+    ],
+    "description": "The Orniraptor is a small creature with notable agility and a unique defensive trait stemming from its caustic blood.",
+    "memorable": "It can retaliate with acid damage when injured and shares awareness with other Orniraptors.",
+    "goals": "Often serves as a nuisance in combat, leveraging its mobility and tactical cohesion.",
+    "relations": "Works collectively with other Orniraptors for enhanced situational awareness.",
+    "environment": "Typically found in skirmish scenarios, potentially in groups.",
+    "strengths": "Possesses the ability to inflict damage through retaliation and cooperative tactics.",
+    "weaknesses": "Low intelligence and wisdom, leading to vulnerabilities in manipulation and ambush situations.",
+    "attacks": "Can use a melee Peck attack for piercing damage or a ranged Spit Stone for bludgeoning damage.",
+    "most_powerful_ability": "Blood Spurt, which retaliates against attackers with acid damage when injured.",
+    "equipment": null,
+    "senses": "Has poor vision, only seeing creatures in motion, making it susceptible to ambush.",
+    "skills": null,
+    "additional_information": [
+        "Collective Perception allows for shared awareness among Orniraptors.",
+        "Relies on instinct and collective awareness for communication.",
+        "Vulnerable to focused attacks due to average hit points and armor class.",
+        "Encourages cautious engagement due to its retaliatory Blood Spurt ability.",
+        "Limited to basic instincts, lacking in cognitive and perceptive capabilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small creature with caustic blood",
+        "fast skirmisher that retaliates when injured",
+        "coordinated attacks from a group of Orniraptors",
+        "mobile creature with poor vision and acid defense",
+        "nimble monster that attacks when hurt"
+    ]
+}

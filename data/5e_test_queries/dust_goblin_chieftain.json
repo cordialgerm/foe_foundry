@@ -1,0 +1,25 @@
+{
+    "name": "Dust Goblin Chieftain",
+    "queries": [
+        {
+            "query": "small humanoid that uses cunning ambush tactics and is neutral evil",
+            "variant": "humanoid that is small and thrives on cunning ambush tactics, neutral evil"
+        },
+        {
+            "query": "Dexterity-focused goblin that attacks with poison and utilizes stealth",
+            "variant": "goblin focusing on Dexterity that utilizes stealth and attacks with poison"
+        },
+        {
+            "query": "dust goblin using a shortsword and has abilities to frighten",
+            "variant": "goblin chieftain using shortsword and with abilities to instill fear"
+        },
+        {
+            "query": "creature with high dexterity that avoids being charmed or frightened",
+            "variant": "creature skilled in dexterity that resists charm and fear effects"
+        },
+        {
+            "query": "goblin leader specializing in ambush attacks in a dark environment",
+            "variant": "leader goblin that specializes in ambush strikes found in darkness"
+        }
+    ]
+}

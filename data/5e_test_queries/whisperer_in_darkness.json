@@ -1,0 +1,25 @@
+{
+    "name": "Whisperer in Darkness",
+    "queries": [
+        {
+            "query": "medium aberration with psychic immunity and high intelligence",
+            "variant": "medium aberration that is immune to psychic damage and has high intelligence"
+        },
+        {
+            "query": "spellcasting creature that manipulates minds and has dark powers",
+            "variant": "creature that casts spells, influences minds, and possesses dark abilities"
+        },
+        {
+            "query": "creature with formidable combat abilities and high armor class",
+            "variant": "monster with strong combat skills and a high armor rating"
+        },
+        {
+            "query": "entity that can teleport and create illusions in battle",
+            "variant": "being that can shift locations and conjures illusions during fights"
+        },
+        {
+            "query": "dark manipulative creature immune to poison and frightened conditions",
+            "variant": "evil creature that is immune to poison and the frightened state"
+        }
+    ]
+}

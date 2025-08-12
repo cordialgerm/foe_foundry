@@ -1,0 +1,25 @@
+{
+    "name": "Azi Dahaka",
+    "queries": [
+        {
+            "query": "huge dragon with three heads that uses lightning in battle",
+            "variant": "huge 3-headed dragon that fights with lightning"
+        },
+        {
+            "query": "chaotic evil dragon that has strong physical attacks and magic resistance",
+            "variant": "chaotic evil dragon with powerful physical strikes and magic resistance"
+        },
+        {
+            "query": "dragon that can control the weather and has high hit points",
+            "variant": "dragon with high hit points that can change the weather"
+        },
+        {
+            "query": "Azi Dahaka's abilities to inflict damage and resist spells",
+            "variant": "Azi Dahaka's spell resistance and damage abilities"
+        },
+        {
+            "query": "formidable dragon that excels in stealth and perception",
+            "variant": "powerful dragon skilled in stealth and perception"
+        }
+    ]
+}

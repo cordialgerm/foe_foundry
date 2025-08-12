@@ -1,0 +1,7 @@
+{
+  "Ghast": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Ghast's undead nature, paralyzing claw attacks, stench ability, and role as a stronger ghoul variant."
+  },
+  "monster_key": "ghast"
+}

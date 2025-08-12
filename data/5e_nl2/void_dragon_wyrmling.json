@@ -1,0 +1,54 @@
+{
+    "name": "Void Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 17,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 60 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "cold damage",
+        "breath weapon",
+        "gravity manipulation"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "captivating",
+        "young"
+    ],
+    "description": "The Void Dragon Wyrmling is a medium-sized dragon with a striking presence, characterized by its capacity to manipulate gravity and cold. It exudes a chilling aura and is known for its unique appearance that hints at its otherworldly heritage.",
+    "memorable": "Its ability to unleash cold damage that bypasses resistance makes it a daunting opponent. The unique gravitational abilities allow for strategic control over the battlefield.",
+    "goals": "Typically seeks to dominate its environment and engage in combat, often manipulating foes with gravitational effects.",
+    "relations": "May be related to other dragon types, particularly those with elemental or chaos themes, and can encounter various creatures tied to cold or void.",
+    "environment": "Often found in dark, cold locales or places associated with elemental chaos or the void.",
+    "strengths": "Damage immunity to cold and resistance against charm and fear effects enhance its combat resilience.",
+    "weaknesses": "Vulnerable to non-cold damage types, which can be exploited by foes.",
+    "attacks": "Utilizes a melee bite attack that inflicts piercing and additional cold damage, alongside a formidable breath weapon that can deal bludgeoning or elemental damage.",
+    "most_powerful_ability": "Chill of the Void allows it to deal cold damage that bypasses resistance, presenting a unique challenge to foes.",
+    "equipment": null,
+    "senses": "Possesses blindsight at 10 feet, enabling it to detect nearby creatures without relying on sight.",
+    "skills": "Proficient in Perception and Stealth, enhancing its abilities to observe surroundings and remain undetected.",
+    "additional_information": [
+        "Can travel the Void effortlessly without the need for air or sleep.",
+        "Has the unique language known as Void Speech.",
+        "Can restrict enemy movement using gravitational breath attacks.",
+        "Exhibits a mysterious appearance linked to the themes of space and coldness.",
+        "Possesses a reaction ability that manipulates reality for defensive purposes."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that manipulates gravity and cold",
+        "young dragon immune to charm and fear",
+        "cold breath attack dragon",
+        "void-themed creature that controls the battlefield",
+        "formidable wyrmling with unique abilities"
+    ]
+}

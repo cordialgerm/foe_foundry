@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge plant creatures that attack with roots and control the battlefield."
+  },
+  "monster_key": "jinmenju"
+}

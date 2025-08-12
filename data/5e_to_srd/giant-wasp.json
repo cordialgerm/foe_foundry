@@ -1,0 +1,7 @@
+{
+  "Giant Wasp": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster closely matches the Giant Wasp in size, abilities, venomous sting, and pheromone-based ally enhancement."
+  },
+  "monster_key": "giant-wasp"
+}

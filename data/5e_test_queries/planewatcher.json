@@ -1,0 +1,25 @@
+{
+    "name": "Planewatcher",
+    "queries": [
+        {
+            "query": "celestial being that can fly and control enemies",
+            "variant": "celestial creature that can fly and controls foes"
+        },
+        {
+            "query": "powerful creature with radiant attacks and high defense",
+            "variant": "strong monster with radiant damage and great defense"
+        },
+        {
+            "query": "agile celestial that grapples and banishes foes",
+            "variant": "quick celestial that grapples and sends enemies away"
+        },
+        {
+            "query": "creature immune to poison and resistant to magic",
+            "variant": "monster that is immune to poison and resists magic"
+        },
+        {
+            "query": "lawful celestial with magic resistance and planar abilities",
+            "variant": "lawful celestial having magic resistance and ability to sense planes"
+        }
+    ]
+}

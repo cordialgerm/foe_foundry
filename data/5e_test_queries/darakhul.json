@@ -1,0 +1,25 @@
+{
+    "name": "Darakhul",
+    "queries": [
+        {
+            "query": "medium undead creature that can paralyze and inflict disease",
+            "variant": "undead medium creature that can cause disease and paralyze"
+        },
+        {
+            "query": "stealthy monster with sunlight sensitivity that disguises itself",
+            "variant": "monster that is stealthy, sensitive to sunlight, and can disguise"
+        },
+        {
+            "query": "undead being with high armor class and poison immunity",
+            "variant": "undead creature with strong armor class and immunity to poison"
+        },
+        {
+            "query": "creature that uses deception to impersonate living beings",
+            "variant": "monster that deceives to mimic living creatures"
+        },
+        {
+            "query": "combatant with claw and bite attacks that can inflict damage",
+            "variant": "fighter with claw and bite moves that deal damage"
+        }
+    ]
+}

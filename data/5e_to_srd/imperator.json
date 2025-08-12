@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge aquatic monstrosities with strong melee attacks and significant swimming speed."
+  },
+  "Giant Penguin": {
+    "relation": "conceptually_similar",
+    "explanation": "The Imperator's unique ability to summon penguins and its icy aquatic environment conceptually aligns with a giant penguin-like creature."
+  },
+  "monster_key": "imperator"
+}

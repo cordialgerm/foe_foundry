@@ -1,6 +1,8 @@
 <MonsterName/>Mycolid Commoner</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>21</HP>
 <summary>The Mycolid Commoner is a small plant creature that serves as a non-combatant within its ecosystem, displaying unique abilities rooted in fungal biology. It possesses a challenge rating of 1/2, indicating it is relatively low in power compared to other foes. The Mycolid excels in stealth and perception but is not physically imposing. Its attributes reflect a balanced approach to agility and wisdom, allowing for effective scouting and awareness of its surroundings while presenting weaknesses in intelligence and charisma. Notably, the Mycolid can inflict potent poison damage, resist various debilitating effects, and has a remarkable ability to communicate telepathically with its kin.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In summary, the Mycolid Commoner is a unique plant creature that, while not form
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mycolid Commoner
 
 *Small plant*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 
 - **Fetid Feast.** The mycolid draws sustenance from a Medium or larger pile of carrion or rotting vegetation within 5 feet of it. It regains 5 (2d4) HP. The mycolid can’t use Fetid Feast on a pile of carrion or vegetation if it or another mycolid has already used Fetid Feast on that pile.
 
+</statblock>
 
 

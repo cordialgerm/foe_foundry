@@ -1,0 +1,11 @@
+{
+  "Allosaurus": {
+    "relation": "close_cousins",
+    "explanation": "The Spinosaurus is a gargantuan predatory dinosaur similar in concept to the Allosaurus, both being large predatory beasts."
+  },
+  "Giant Crocodile": {
+    "relation": "conceptually_similar",
+    "explanation": "The Spinosaurus shares aquatic and ambush predator traits with the Giant Crocodile, thriving in riverine environments."
+  },
+  "monster_key": "spinosaurus"
+}

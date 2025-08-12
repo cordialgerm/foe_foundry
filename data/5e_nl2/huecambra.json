@@ -1,0 +1,52 @@
+{
+    "name": "Huecambra",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 136,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "swim 30 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "curse",
+        "thunder damage",
+        "aquatic"
+    ],
+    "adjectives": [
+        "formidable",
+        "explosive",
+        "gem-like"
+    ],
+    "description": "The Huecambra is a large monstrosity with gem-like nodules on its body, capable of inflicting debilitating curses and dealing significant damage in combat.",
+    "memorable": "Its ability to detonate gem-like growths causes area damage and can stun opponents, making it a dangerous foe.",
+    "goals": "To engage in combat and assert dominance over its territory.",
+    "relations": "It may be encountered in areas with aquatic creatures or as a guardian of specific locations.",
+    "environment": "Found in both aquatic and terrestrial environments.",
+    "strengths": "High damage output from multiattacks and explosive area-effect abilities.",
+    "weaknesses": "Low intelligence indicates reliance on instinct rather than strategy.",
+    "attacks": "Utilizes a multiattack feature, incorporating a bite, claw, and tail strike, with the bite also inflicting a curse.",
+    "most_powerful_ability": "Gem Explosion allows it to deal massive area thunder damage and stun nearby enemies.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It is proficient in perception and stealth, allowing it to detect threats and move undetected.",
+    "additional_information": [
+        "Immune to poison and thunder damage.",
+        "Unaffected by being charmed, petrified, or poisoned.",
+        "Cursed targets suffer additional damage within close proximity.",
+        "High Constitution provides resilience against endurance-related effects.",
+        "Acts instinctively due to its low intelligence."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster that can explode gems",
+        "formidable aquatic beast with curses",
+        "large monstrosity with explosive thunder attack",
+        "creature with gem-like growths and curses",
+        "monster that causes area thunder damage stuns"
+    ]
+}

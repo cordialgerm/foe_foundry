@@ -1,0 +1,25 @@
+{
+    "name": "Shroud Ray",
+    "queries": [
+        {
+            "query": "aquatic stealth monster that grapples foes and is sensitive to light",
+            "variant": "stealthy aquatic creature that can grapple enemies and hates light"
+        },
+        {
+            "query": "large aberration creature with camouflage and fear-inducing abilities",
+            "variant": "big aberration being with illusions and the power to frighten"
+        },
+        {
+            "query": "monster that can only breathe underwater and has strong melee attacks",
+            "variant": "creature that breathes only water and has powerful close-range strikes"
+        },
+        {
+            "query": "fearsome creature that blends into sandy environments and attacks with bites",
+            "variant": "intimidating being that hides in sand and uses biting attacks"
+        },
+        {
+            "query": "ray-like creature that specializes in ambush tactics and causes blindness",
+            "variant": "ray creature known for surprise attacks and blinding its victims"
+        }
+    ]
+}

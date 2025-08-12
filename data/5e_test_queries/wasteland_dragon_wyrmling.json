@@ -1,0 +1,25 @@
+{
+    "name": "Wasteland Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium chaotic evil dragon with versatile movement abilities",
+            "variant": "medium chaotic evil dragon that has various movement skills"
+        },
+        {
+            "query": "dragon that breathes warped arcane energy and has flying capabilities",
+            "variant": "dragon that can unleash arcane energy breath and can fly"
+        },
+        {
+            "query": "dragon with natural armor and strong melee attack",
+            "variant": "dragon that has natural armor and a powerful bite attack"
+        },
+        {
+            "query": "creature immune to force damage and has keen senses",
+            "variant": "monster that is immune to force damage and possesses sharp senses"
+        },
+        {
+            "query": "dragon found in a wasteland environment with burrowing ability",
+            "variant": "dragon existing in wastelands that can burrow"
+        }
+    ]
+}

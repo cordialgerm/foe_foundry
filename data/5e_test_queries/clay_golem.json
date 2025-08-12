@@ -1,0 +1,25 @@
+{
+    "name": "Clay Golem",
+    "queries": [
+        {
+            "query": "large humanoid creature made of clay that is resistant to magic",
+            "variant": "big humanoid shaped monster made out of clay that resists magic"
+        },
+        {
+            "query": "slow-moving clay monster that regenerates and has a curse touch",
+            "variant": "slow clay creature that heals and has a touch that curses"
+        },
+        {
+            "query": "golem that absorbs acid damage and can become berserk",
+            "variant": "golem that heals from acid and has a berserk mode"
+        },
+        {
+            "query": "towering clay construct that serves as a temple guardian",
+            "variant": "tall clay monster that protects temples"
+        },
+        {
+            "query": "powerful clay creature with a weakness to fire and melee attacks",
+            "variant": "strong clay being that is weak against fire and melee hits"
+        }
+    ]
+}

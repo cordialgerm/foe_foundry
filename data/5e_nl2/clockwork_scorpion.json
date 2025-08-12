@@ -1,0 +1,51 @@
+{
+    "name": "Clockwork Scorpion",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 95,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "mechanical",
+        "poison"
+    ],
+    "adjectives": [
+        "mechanical",
+        "poisonous",
+        "large"
+    ],
+    "description": "The Clockwork Scorpion is a large mechanical creature with formidable combat abilities, characterized by its sharp claws and stinger.",
+    "memorable": "Its ability to inflict hallucinations and unconsciousness makes it a unique threat in combat.",
+    "goals": "Undertakes tasks and battles as intended by its creator.",
+    "relations": "Can be related to other constructs or creations of its maker.",
+    "environment": "Typically found in areas associated with its creator or industrial locations.",
+    "strengths": "Possesses high Strength and Constitution, making it a powerful melee combatant with significant durability.",
+    "weaknesses": "Low Intelligence and Charisma indicate it is incapable of complex strategies outside combat.",
+    "attacks": "Can perform a series of attacks including claw grapples and a deadly sting that inflicts poison and other debilitating effects.",
+    "most_powerful_ability": "Sting attack delivers poison damage and has various debilitating effects based on Constitution saving throws.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense within 60 feet, along with a passive perception of 15.",
+    "skills": "Average perception skills with a +1 modifier indicate a basic awareness of its environment.",
+    "additional_information": [
+        "Immune to numerous conditions, enhancing its defensive capabilities.",
+        "Doesn't require air, food, drink, or sleep, making it tireless in tasks.",
+        "Magic Resistance grants it advantages against spells."
+    ],
+    "damage_types": [
+        "poison",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical scorpion with poison abilities",
+        "large construct immune to many conditions",
+        "scorpion that can cause hallucinations",
+        "scorpion monster with acid spray attack",
+        "unstoppable mechanical creature in combat"
+    ]
+}

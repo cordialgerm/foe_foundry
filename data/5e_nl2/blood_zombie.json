@@ -1,0 +1,55 @@
+{
+    "name": "Blood Zombie",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 51,
+    "ac": 10,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "blood drain",
+        "creature",
+        "zombie"
+    ],
+    "adjectives": [
+        "menacing",
+        "durable",
+        "formidable",
+        "regenerative",
+        "threatening"
+    ],
+    "description": "The Blood Zombie is a decayed, medium-sized undead creature with a gaunt appearance, its body is a pale, bluish color with remnants of its former life. It moves slowly but possesses great strength despite its low agility.",
+    "memorable": "The Blood Zombie's ability to drain life from attackers and become temporarily stronger makes it a uniquely dangerous opponent in melee combat.",
+    "goals": "Typically roams in search of living creatures to attack and drain their life force.",
+    "relations": "Related to other undead creatures like zombies and ghouls, often encountered in dark, eerie locations.",
+    "environment": "Dark and desolate areas, such as graveyards, abandoned buildings, or remote ruins.",
+    "strengths": "Impressive durability with high hit points and the ability to gain temporary hit points from its blood drain ability.",
+    "weaknesses": "Vulnerable to radiant damage which disrupts its regenerative capabilities and prevents its blood drain ability.",
+    "attacks": "Employs a slam attack that deals both bludgeoning and necrotic damage, enhancing its threat level in combat with life-draining effects.",
+    "most_powerful_ability": "Blood Drain allows it to inflict necrotic damage and gain temporary hit points, empowering its combat effectiveness.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Has the Undead Fortitude ability, allowing it to potentially survive lethal damage.",
+        "Damage immunities to poison, enhancing its survivability against certain attacks.",
+        "Low Dexterity which indicates slow movement and reduced agility.",
+        "Can regain temporary hit points through its Blood Drain ability.",
+        "Significant physical strength despite its undead form."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing undead monster",
+        "life-draining zombie",
+        "blood-sucking creature",
+        "slow but powerful zombie",
+        "undead with regenerative abilities"
+    ]
+}

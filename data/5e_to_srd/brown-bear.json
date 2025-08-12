@@ -1,0 +1,7 @@
+{
+  "Brown Bear": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Brown Bear in size, abilities, attacks, and natural behavior closely."
+  },
+  "monster_key": "brown-bear"
+}

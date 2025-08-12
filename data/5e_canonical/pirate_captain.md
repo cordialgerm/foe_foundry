@@ -1,6 +1,8 @@
 <MonsterName/>Pirate Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>65</HP>
 <summary>The Pirate Captain is a skilled and cunning warrior, adept at both combat and navigation, making them a formidable opponent on the battlefield. With a medium humanoid stature, the captain boasts a decent Armor Class of 15, allowing for a good level of defense. The captain has 65 hit points, derived from rolling 10 eight-sided dice and adding 20, indicating a solid survivability in fights. With a challenge rating of 3, they present a moderate challenge to adventurers, earning 700 experience points upon defeat. The Pirate Captain excels in Dexterity, with a score of 16 (+3), making them quick and agile, and this is reflected in their numerous skills and ability to dodge attacks. However, they do not possess exceptional mental stats, keeping their intelligence and charisma at a respectable level of 14 (+2). </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Pirate Captain is a balanced and strategically minded adversary wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pirate Captain
 
 *Medium* *Humanoid*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** If the bandit captain is wielding a melee weapon and can see their attacker, they add 2 to their AC against one melee attack that would hit them.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Zmey</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Zmey is a formidable and chaotic evil dragon known for its impressive physical power and a suite of devastating abilities. As a huge creature, it boasts a high armor class of 18, making it quite resilient in combat. With a total of 189 hit points, derived from rolling 18 twelve-sided dice plus an additional 72, it can take substantial damage before being defeated. The Zmey's challenge rating of 15 indicates that it poses a significant threat to adventurers, offering 13,000 experience points upon defeat. Its strengths lie in its multiple heads, powerful attacks, and innate resistances, while its vulnerabilities include taking acid and fire damage that can negate its regeneration abilities.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Furthermore, the Zmey has legendary actions, allowing for tactical flexibility. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zmey
 
 *Huge* *Dragon* *Chaotic Evil*
@@ -61,5 +64,6 @@ The zmey can take 3 legendary actions, choosing from the options below. Only one
 - **Move:** The zmey moves up to its speed, or flies up to half its flying speed, without provoking opportunity attacks.
 - **Tail Whip:** The zmey whips its tail around it. Each creature within 15 feet of the zmey must succeed on a DC 17 Dexterity saving throw or be knocked prone.
 - **Tripartite Roar (Costs 2 Actions):** The zmey’s heads exhale a three-part roar, one a deafening shriek, one a frightful screech, and one a stunning bellow, in a 30-foot cone. Each creature in that area must succeed on a DC 17 Wisdom saving throw or suffer the effects of the roars until the end of its next turn. The effects depend upon the number of heads the zmey has remaining: deafened for only one head, deafened and frightened for two heads, or stunned for three heads.
+</statblock>
 
 

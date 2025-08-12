@@ -1,0 +1,54 @@
+{
+    "name": "Behir Magus",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 168,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 60 ft., climb 40 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "lightning immune",
+        "multiattack",
+        "grappler",
+        "magical",
+        "agile"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "powerful",
+        "agile"
+    ],
+    "description": "The Behir Magus is a Huge monstrosity characterized by its serpentine body covered in scaly skin and its long, sinuous form. It possesses a fierce bite and a constricting attack, making it a daunting presence in combat. Its connection to lightning is visually striking, as it channels powerful electrical energy.",
+    "memorable": "Its ability to absorb lightning damage and retaliate empowers it against spellcasters who rely on electrical attacks, making it a unique threat in battle.",
+    "goals": "To dominate its territory and eliminate threats, utilizing its agility and powerful attacks to overpower foes.",
+    "relations": "Might be encountered alongside other creatures associated with lightning or draconic lineage.",
+    "environment": "Typically found in caves, mountains, or areas with access to water where it can leverage its agility and mobility.",
+    "strengths": "High Constitution and dexterous movements allow it to withstand damage and evade many attacks. Its immunity to lightning grants it resilience against elemental magic.",
+    "weaknesses": "Relies heavily on its breath weapon and may struggle against foes resistant to physical attacks.",
+    "attacks": "Delivers a powerful bite that can incapacitate foes and a constricting attack that grapples and restrains enemies.",
+    "most_powerful_ability": "Lightning Breath allows it to unleash a devastating line of lightning that can severely damage multiple creatures.",
+    "senses": "Possesses blindsight within 90 feet, enabling it to perceive its surroundings without reliance on sight.",
+    "skills": "Proficient in Athletics, Stealth, and Perception, showcasing its physical prowess and keen awareness.",
+    "additional_information": [
+        "Can climb on difficult surfaces and ceilings with Spider Climb.",
+        "Utilizes Lightning Breath reactively when attacked, dealing damage to the aggressor.",
+        "Can become invisible in response to damage, enhancing its survivability.",
+        "Absorbs lightning attacks and retaliates with necrotic damage.",
+        "Capable of grappling two creatures simultaneously."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "serpentine lightning creature",
+        "giant creature with lightning powers",
+        "agile monstrous predator",
+        "beast with constricting attacks",
+        "powerful lightning breath monster"
+    ]
+}

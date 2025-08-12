@@ -1,0 +1,7 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "The Boggard is an amphibious, humanoid reptilian creature similar in role and environment to Lizardfolk."
+  },
+  "monster_key": "boggard"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Heavy Cavalry",
+    "queries": [
+        {
+            "query": "medium humanoid warrior with strong armor and fire resistance",
+            "variant": "medium humanoid that has strong armor and resistance to fire"
+        },
+        {
+            "query": "mounted warrior that uses a lance and breathes fire",
+            "variant": "warrior on a mount that uses a lance and can breathe fire"
+        },
+        {
+            "query": "creature that is difficult to dismount and has a giant lizard companion",
+            "variant": "being hard to dismount that has a giant lizard as a companion"
+        },
+        {
+            "query": "heavy-armored humanoid with good physical skills and average perception",
+            "variant": "humanoid in heavy armor that has good physical skills and normal perception"
+        },
+        {
+            "query": "lawful neutral soldier that can trample enemies while mounted",
+            "variant": "soldier with lawful neutral alignment that can trample foes while on a mount"
+        }
+    ]
+}

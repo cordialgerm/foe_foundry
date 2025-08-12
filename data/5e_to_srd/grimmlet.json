@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, chaotic monstrosities that can overwhelm foes with numbers and cause psychic-related effects."
+  },
+  "Swarm of Bats": {
+    "relation": "conceptually_similar",
+    "explanation": "The Grimmlet's ability to multiply and swarm resembles the swarm behavior of a Swarm of Bats."
+  },
+  "monster_key": "grimmlet"
+}

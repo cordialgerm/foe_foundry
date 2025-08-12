@@ -1,0 +1,53 @@
+{
+    "name": "Niya-Atha Warrior",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 49,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "warrior",
+        "enlargement"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "strategic"
+    ],
+    "description": "The Niya-Atha Warrior is a medium-sized fey creature wearing chain mail, known for its agility and combat prowess. It can magically enlarge itself, enhancing its physical attributes and combat abilities.",
+    "memorable": "Its ability to enlarge itself and retain mobility makes it a unique and unpredictable battlefield presence.",
+    "goals": "To engage in combat with versatility, adapting its size to suit the tactical needs of the moment.",
+    "relations": "Niya-Atha Warriors may work in groups with other fey creatures or serve larger fey entities.",
+    "environment": "Typically found in enchanted forests or areas rich in fey magic.",
+    "strengths": "High dexterity allows effective evasion and skilled attacks in combat.",
+    "weaknesses": "Limited use of its jumping abilities when enlarged and needs sufficient space for its Enlarge ability to take effect.",
+    "attacks": "Can perform two attacks with a mace or longbow, varying in damage based on its size.",
+    "most_powerful_ability": "The Enlarge ability, allowing a significant increase in damage output and enhanced physical performance.",
+    "equipment": "Chain mail armor and a mace or longbow.",
+    "senses": "It has a passive perception score of 10, indicating average awareness.",
+    "skills": "Proficient in Dexterity saving throws (+5), allowing it to avoid many types of attacks.",
+    "additional_information": [
+        "Possesses the ability Reduce to return to normal size effortlessly.",
+        "Standing Leap ability enhances jumping capabilities significantly.",
+        "Wields a mace for melee attacks and a longbow for ranged combat.",
+        "Creates tactical choices in combat with its enlargement skills.",
+        "Engages in agile combat, evading attacks while dealing damage."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium fey creature that enlarges",
+        "warrior capable of agile combat and leaping",
+        "enlarging fey fighter with a mace and bow",
+        "lawful neutral agile creature in enchanted forests",
+        "Niya-Atha warrior enlargement abilities"
+    ]
+}

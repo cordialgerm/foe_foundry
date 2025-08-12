@@ -1,6 +1,8 @@
 <MonsterName/>Wardu</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Wardu is a Medium-sized aberration known for its neutral evil alignment. This creature possesses a blend of magical abilities and evasive maneuverability, making it both a challenging foe and a tricky opponent in battle. With a moderate overall power level, rated at Challenge Rating 6, the Wardu is recognized for its strong magical resistance and ability to inflict debilitating conditions on its foes while also healing itself through its attacks. The Wardu's significant speed in the air allows it to engage and disengage from combat effectively, putting it in a strong strategic position. However, its lack of physical movement on the ground can be seen as a notable weakness, preventing it from engaging in some combat scenarios without the ability to maneuver.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Segmented Gaze ability allows the Wardu to concentrate magical energy within
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wardu
 
 *Medium* *Aberration* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Segmented Gaze:** The wardu’s segmented central eye flares with unstable magical energy. One creature the wardu can see within 30 feet of it must succeed on a DC 15 Constitution saving throw or suffer a random condition until the end of its next turn. Roll a d4 to determine the condition: blinded (1), frightened (2), deafened (3), or incapacitated (4).
 
 
+</statblock>
 
 

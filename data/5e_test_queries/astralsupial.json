@@ -1,0 +1,25 @@
+{
+    "name": "Astralsupial",
+    "queries": [
+        {
+            "query": "medium beast with climbing ability and unique pouch attack",
+            "variant": "medium-sized beast with the ability to climb and a unique pouch attack"
+        },
+        {
+            "query": "versatile creature that can teleport and feigns death",
+            "variant": "a versatile creature capable of teleporting and pretending to be dead"
+        },
+        {
+            "query": "monster with high dexterity and keen hearing that lives in trees",
+            "variant": "a creature with great dexterity and sharp hearing that resides among trees"
+        },
+        {
+            "query": "astral-themed beast with special abilities for combat and exploration",
+            "variant": "a beast with astral characteristics possessing unique abilities for combat and exploration"
+        },
+        {
+            "query": "agile creature that uses astral pouch for various effects and climbs easily",
+            "variant": "an agile creature that employs its astral pouch for different effects and can climb effortlessly"
+        }
+    ]
+}

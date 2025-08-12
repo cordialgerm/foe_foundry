@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid spellcaster with cleric-like abilities and support role similar to a Cult Fanatic."
+  },
+  "Orc": {
+    "relation": "almost_identical",
+    "explanation": "An orc with melee attacks and spellcasting support abilities closely matches the Orc type."
+  },
+  "monster_key": "warhordling-orc-eye"
+}

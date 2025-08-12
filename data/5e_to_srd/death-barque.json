@@ -1,0 +1,11 @@
+{
+  "Death Knight": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful undead entities with necrotic abilities and a fearsome presence."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead and terrifying spectral nature, fitting the haunting aquatic theme."
+  },
+  "monster_key": "death-barque"
+}

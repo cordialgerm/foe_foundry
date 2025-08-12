@@ -1,0 +1,11 @@
+{
+  "Allosaurus": {
+    "relation": "close_cousins",
+    "explanation": "A medium-sized predatory dinosaur with claw attacks and agility similar to the Razorfeather Raptor."
+  },
+  "Raptor": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a nimble, pack-hunting predatory dinosaur, though not an official SRD monster."
+  },
+  "monster_key": "razorfeather-raptor"
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Khargi</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Khargi is a formidable Huge Fiend characterized by its neutral evil alignment, making it a threatening adversary on the battlefield. Its strengths lie in its substantial hit points, powerful attacks, and unique abilities centered around poisonous insect swarms, allowing it to deal consistent damage while providing battlefield control through its spawn mechanics. While it boasts solid natural armor which makes it resilient, its overall defensive capabilities are somewhat compromised by its vulnerability to certain damage types, particularly nonmagical attacks. The creature's mobility, with the ability to fly, enhances its versatility in combat, allowing it to engage or retreat effectively. The challenge presented by the Khargi is elevated by its ability to deal poison damage and summon swarms of insects, making it a nightmare for unprepared adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a reaction, the Khargi can employ *Adaptive Carapace*, which allows it to mag
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Khargi
 
 *Huge* *Fiend* *neutral evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Adaptive Carapace:** When it takes acid cold force lightning or thunder it can magically attune itself to that type of damage. Until end of its next turn khargi has resistance to damage of the triggering type and when it hits with any weapon target takes an extra 7 (2d6) damage of the triggering type.
 
 
+</statblock>
 
 

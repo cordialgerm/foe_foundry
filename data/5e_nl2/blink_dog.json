@@ -1,0 +1,52 @@
+{
+    "name": "Blink Dog",
+    "creature_type": "Fey",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "40 ft. walking speed",
+    "role": null,
+    "tags": [
+        "canine",
+        "fey",
+        "teleportation",
+        "companion"
+    ],
+    "adjectives": [
+        "agile",
+        "loyal",
+        "cunning",
+        "playful"
+    ],
+    "description": "The Blink Dog is a canine creature with sleek fur, bright intelligent eyes, and a notable ability to teleport short distances.",
+    "memorable": "Its ability to blink in and out of existence makes it an unpredictable and agile opponent.",
+    "goals": "To protect its pack and territory, and to hunt for food.",
+    "relations": "Often found in packs and may interact with other fey creatures.",
+    "environment": "Forests and plains.",
+    "strengths": "Exceptional Dexterity and the ability to teleport, which enhances its survivability and maneuverability in combat.",
+    "weaknesses": "Relatively low Armor Class and hit points make it susceptible to damage.",
+    "attacks": "Primarily uses a bite attack for melee damage.",
+    "most_powerful_ability": "Teleportation allows for rapid repositioning in battles, adding an exceptional level of mobility.",
+    "equipment": null,
+    "senses": "Has Keen Hearing and Smell, providing advantage on Perception checks that rely on these senses.",
+    "skills": "Excels in Stealth and Perception checks, allowing it to detect threats and remain hidden.",
+    "additional_information": [
+        "Resistant to the charmed and unconscious conditions.",
+        "Has advantage on attack rolls if an ally is within 5 feet (Pack Tactics).",
+        "Can teleport up to 40 feet to an unoccupied space it can see.",
+        "Often used as a scout and protective companion.",
+        "Holds a long-standing hatred for displacer beasts."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "teleporting canine creature",
+        "loyal fey companion",
+        "swift forest guardian",
+        "mystical blink dog",
+        "agile hunting dog"
+    ]
+}

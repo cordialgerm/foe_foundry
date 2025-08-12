@@ -1,0 +1,25 @@
+{
+    "name": "Riding Horse",
+    "queries": [
+        {
+            "query": "large beast used as a mount with high speed",
+            "variant": "beast that is large and serves as a mount known for its speed"
+        },
+        {
+            "query": "horse with good strength and special ability to reduce exhaustion",
+            "variant": "strong horse that has a unique ability to help avoid exhaustion"
+        },
+        {
+            "query": "fast creature that can deal damage with hooves and has low armor class",
+            "variant": "quick beast capable of hoof attacks but has low defense"
+        },
+        {
+            "query": "Riding Horse features like Easy Gait and melee attack",
+            "variant": "features of the horse like its Easy Gait ability and hoof attack"
+        },
+        {
+            "query": "mount that moves quickly and has a challenge rating of 1/4",
+            "variant": "fast mount with a CR of one-quarter"
+        }
+    ]
+}

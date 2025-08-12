@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Bone Collector is a small undead that inflicts disease and uses talon attacks, similar to a Ghoul's undead nature and melee attacks."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are malevolent flying undead with magical resistances and a sinister presence."
+  },
+  "monster_key": "bone-collector"
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Sahuagin",
+    "creature_type": "Humanoid",
+    "creature_subtype": "sahuagin",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "walk 30 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "humanoid",
+        "aggressive"
+    ],
+    "adjectives": [
+        "vicious",
+        "fish-like",
+        "territorial",
+        "formidable"
+    ],
+    "description": "Sahuagins are fish-like humanoids known for their sharp claws, webbed hands and feet, and rows of razor-sharp teeth, making them fearsome opponents in their coastal and underwater territories.",
+    "memorable": "They can command sharks telepathically, enhancing their combat capabilities and strategic options during battles.",
+    "goals": "Frequently raid coastal settlements and ships for food and slaves.",
+    "relations": "Often engage in territorial battles with merfolk and sea elves.",
+    "environment": "Deep oceans and coastal waters.",
+    "strengths": "Blood Frenzy ability gives them advantage on attacks against wounded foes, allowing them to exploit their enemies' weaknesses.",
+    "weaknesses": "Limited amphibiousness; they must remain submerged in water at least once every four hours to avoid suffocation.",
+    "attacks": "Multiattack allows for a combination of bite and claw or spear strikes, dealing significant melee damage.",
+    "most_powerful_ability": "Shark Telepathy enables them to command sharks within 120 feet, adding a layer of tactical teamwork to their attacks.",
+    "senses": "Possess darkvision that extends to 120 feet, allowing effective navigation and hunting in dark waters.",
+    "skills": "Good sensory awareness with a Perception score of +5.",
+    "additional_information": [
+        "Highly territorial and aggressive towards intruders.",
+        "Live in underwater communities ruled by priestesses or barons.",
+        "Ruthless in combat, valuing strength and brutality.",
+        "Can utilize a unique reaction to frighten enemies nearby.",
+        "Not particularly skilled in physical or mental prowess."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive fish-like humanoid from the ocean",
+        "creature that commands sharks in combat",
+        "territorial underwater raiders with sharp teeth",
+        "aquatic monster with blood frenzy ability",
+        "relentless coastal raiders with webbed limbs"
+    ]
+}

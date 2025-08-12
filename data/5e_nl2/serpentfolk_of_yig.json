@@ -1,0 +1,52 @@
+{
+    "name": "Serpentfolk of Yig",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 40,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "serpent",
+        "magic"
+    ],
+    "adjectives": [
+        "cunning",
+        "malevolent",
+        "agile"
+    ],
+    "description": "The Serpentfolk of Yig is a cunning humanoid creature characterized by serpent-like features, embodying darker powers.",
+    "memorable": "Its ability to blend in and manipulate through magic makes it a deadly foe.",
+    "goals": "Typically found in nefarious societies or as agents of chaos, seeking to spread disorder.",
+    "relations": "Often associates with other dark beings and can be found among cultists or conspirators.",
+    "environment": "Commonly found in secretive lairs or hidden within sinister organizations.",
+    "strengths": "Immune to poison damage and the poisoned condition, plus strong magical abilities.",
+    "weaknesses": "Average physical strength and low defensive capabilities against brute force.",
+    "attacks": "Uses a multiattack with a potent bite that inflicts both piercing and poison damage, alongside slashing attacks from its scimitar and ranged piercing attacks with a shortbow.",
+    "most_powerful_ability": "Magic Resistance, providing advantage on saving throws against spells.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in deception, allowing them to manipulate and mislead others effectively.",
+    "additional_information": [
+        "Can cast 'charm person' and 'disguise self' three times per day each without components.",
+        "Strong in stealth, allowing for ambush tactics.",
+        "Possesses a notable charisma, enhancing their presence.",
+        "Typically found manipulating others from the shadows.",
+        "Can communicate in various dark languages."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting based on charisma, includes charm person and disguise self.",
+    "test_queries": [
+        "humanoid with serpent-like features and magic",
+        "cunning humanoid skilled in deception and stealth",
+        "serpentfolk with poison immunity and charm spells",
+        "malevolent creature that can disguise itself",
+        "agile adversary found in nefarious societies"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Storm Giant": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Storm Giant's description, abilities, and environment closely, including storm control and amphibious nature."
+  },
+  "monster_key": "storm-giant"
+}

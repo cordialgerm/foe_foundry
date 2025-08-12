@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large oozes with acid damage and the ability to restrain foes, though the Desert Slime has a desert sand disguise and fire immunity."
+  },
+  "monster_key": "desert-slime"
+}

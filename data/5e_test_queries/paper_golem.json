@@ -1,0 +1,25 @@
+{
+    "name": "Paper Golem",
+    "queries": [
+        {
+            "query": "tiny construct made of paper with high dexterity",
+            "variant": "tiny paper creature that has high dexterity"
+        },
+        {
+            "query": "paper monster that uses ink and can camouflage",
+            "variant": "ink using paper creature that can blend in"
+        },
+        {
+            "query": "golem with immunity to form-altering spells and vulnerabilities to fire",
+            "variant": "construct immune to altering spells but weak to fire"
+        },
+        {
+            "query": "whimsical paper golem that can deal poison damage",
+            "variant": "playful paper creature capable of inflicting poison damage"
+        },
+        {
+            "query": "tiny guardian that dodges attacks and lives among paper",
+            "variant": "small defender that evades hits and resides in paper"
+        }
+    ]
+}

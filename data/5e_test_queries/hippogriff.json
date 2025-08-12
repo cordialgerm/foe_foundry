@@ -1,0 +1,25 @@
+{
+    "name": "Hippogriff",
+    "queries": [
+        {
+            "query": "majestic creature with eagle front and horse back found in mountains",
+            "variant": "majestic creature found in mountains with horse back and eagle front"
+        },
+        {
+            "query": "large flying monster that defends nests fiercely and has sharp claws",
+            "variant": "large monster with sharp claws that flies and defends its nest fiercely"
+        },
+        {
+            "query": "creature with keen sight abilities that can fly and is good at tracking",
+            "variant": "creature that can fly and has keen sight abilities, excelling in tracking"
+        },
+        {
+            "query": "mountain creature known for speed and agility in flight",
+            "variant": "creature known for agility in flight and speed found in mountains"
+        },
+        {
+            "query": "animal-monster hybrid living in high altitudes that can be tamed",
+            "variant": "hybrid animal monster that can be tamed living in high altitudes"
+        }
+    ]
+}

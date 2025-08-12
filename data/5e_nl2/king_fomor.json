@@ -1,0 +1,53 @@
+{
+    "name": "King Fomor",
+    "creature_type": "Celestial",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 656,
+    "ac": 21,
+    "srd": false,
+    "cr": "22",
+    "movement": "60 ft. walking and flying speed",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "gargantuan",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "immense",
+        "powerful",
+        "durable"
+    ],
+    "description": "The King Fomor is a gargantuan celestial creature with exceptional physical strength and agility, notable for its impressive resilience and potent spellcasting capabilities.",
+    "memorable": "It commands immense power, has a high saving throw proficiencies, and can alternate its size between Gargantuan and Medium.",
+    "goals": "To dominate the battlefield and exert control over its foes through powerful spells and devastating melee attacks.",
+    "relations": "Could be encountered alongside other celestial beings or serve higher celestial entities.",
+    "environment": "Typically found in celestial realms or places of significant divine influence.",
+    "strengths": "High saving throws, spellcasting abilities, damage immunities, and formidable melee attacks.",
+    "weaknesses": "Vulnerable to effects targeting Charisma due to its reliance on that ability for spellcasting.",
+    "attacks": "Devastating melee attacks with bludgeoning and radiant damage, capable of pushing foes and knocking them prone.",
+    "most_powerful_ability": "Innate spellcasting with a high Spell Save DC of 23, allowing it to control and damage enemies effectively.",
+    "equipment": null,
+    "senses": "The King Fomor possesses truesight out to 120 feet, allowing it to see through illusions and invisibility.",
+    "skills": null,
+    "additional_information": [
+        "Immune to radiant damage and damage from nonmagical weapons.",
+        "Unique ability to switch its size between Gargantuan and Medium.",
+        "Can use a powerful shout that stuns nearby creatures.",
+        "Has a notable spellcasting ability, requiring no material components.",
+        "Can recover from negative effects while bloodied."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": "Can cast spells such as flame strike, hold monster, and greater restoration, with a focus on control and damage.",
+    "test_queries": [
+        "gargantuan celestial creature with powerful spells",
+        "king fomor lightning and fire caster",
+        "immortal celestial that switches size",
+        "creature with truesight and high saving throws",
+        "divine being that deals bludgeoning and radiant damage"
+    ]
+}

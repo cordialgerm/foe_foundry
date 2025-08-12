@@ -1,0 +1,25 @@
+{
+    "name": "Sporous Crab",
+    "queries": [
+        {
+            "query": "filthy swamp creature with spore abilities",
+            "variant": "swamp creature that has spore abilities and lives in filth"
+        },
+        {
+            "query": "small crab that can breathe in water and air",
+            "variant": "amphibious small crab that breathes both air and water"
+        },
+        {
+            "query": "poisonous crab from dank caves",
+            "variant": "dank cave crab that is poisonous"
+        },
+        {
+            "query": "creature with claw attacks and spore infection",
+            "variant": "creature that has claw attacks and can infect with spores"
+        },
+        {
+            "query": "beast with natural armor and fire vulnerability",
+            "variant": "beast having natural protection and is vulnerable to fire"
+        }
+    ]
+}

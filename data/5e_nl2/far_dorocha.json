@@ -1,0 +1,54 @@
+{
+    "name": "Far Dorocha",
+    "creature_type": "Fey",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "shadow",
+        "manipulation",
+        "charm"
+    ],
+    "adjectives": [
+        "cunning",
+        "malevolent",
+        "stealthy",
+        "charming"
+    ],
+    "description": "The Far Dorocha is a medium-sized fey with exceptional agility and charm, manipulating shadows with its dark powers.",
+    "memorable": "Its ability to charm others and control them makes it a strategic threat in both combat and social encounters.",
+    "goals": "To manipulate and control others, often using charm and stealth to achieve its objectives.",
+    "relations": "Often encountered alongside other fey creatures or as a minion of a dark fey lord.",
+    "environment": "Typically found in areas of dim light or darkness, such as shadowy forests or enchanted glades.",
+    "strengths": "Exceptional Dexterity and Charisma enhance its stealth and deception, making it effective in both combat and social interactions.",
+    "weaknesses": "Vulnerable to harm from radiant damage and can be outsmarted by clever opponents.",
+    "attacks": "Utilizes a dirk for melee or ranged attacks that deal piercing and poison damage, along with a charm ability.",
+    "most_powerful_ability": "The Dark Invitation ability charms a target, compelling them to follow the Far Dorocha as if invited by its master.",
+    "equipment": null,
+    "senses": "Possesses effective skills in stealth and deception, with advantageous checks related to shadow magic.",
+    "skills": "Skilled in Deception and Stealth, making it particularly adept at avoiding detection and manipulating others.",
+    "additional_information": [
+        "Gains significant defense in dim light or darkness.",
+        "Can disappear into shadows as a bonus action.",
+        "Has innate spellcasting abilities, allowing for versatile combat options.",
+        "Immunity to being charmed or frightened.",
+        "Can handle multiple social encounters effectively with high charisma."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast spells such as disguise self, command, and darkness, enhancing its manipulative and stealth capabilities.",
+    "test_queries": [
+        "malevolent creature that manipulates shadows",
+        "fey with charm and stealth abilities",
+        "creature that disappears in darkness",
+        "cunning fey that uses poison attacks",
+        "shadowy fey known for its dark invitation"
+    ]
+}

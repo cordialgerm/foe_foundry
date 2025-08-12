@@ -1,0 +1,25 @@
+{
+    "name": "Tusked Crimson Ogre",
+    "queries": [
+        {
+            "query": "large chaotic evil giant with high strength and melee attacks",
+            "variant": "giant with high melee attacks and chaotic evil nature that is large"
+        },
+        {
+            "query": "ogre with blood frenzy ability and high hit points",
+            "variant": "blood frenzy ogre that has high hit points"
+        },
+        {
+            "query": "strong melee fighter with low intelligence and poor agility",
+            "variant": "melee fighter that is strong but has low intelligence and bad agility"
+        },
+        {
+            "query": "creature that roars and causes berserk effects within 15 feet",
+            "variant": "creature that can roar and make others berserk within 15 feet radius"
+        },
+        {
+            "query": "brutish giant that has damage resistance against poison",
+            "variant": "giant that is brutish and resists poison damage"
+        }
+    ]
+}

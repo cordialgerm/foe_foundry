@@ -1,0 +1,25 @@
+{
+    "name": "Nightmare",
+    "queries": [
+        {
+            "query": "fiery horse creature that travels through the night",
+            "variant": "fire horse monster that moves through the night sky"
+        },
+        {
+            "query": "Large fiend with flaming hooves and glowing red eyes",
+            "variant": "big fiend that has fiery hooves and bright red eyes"
+        },
+        {
+            "query": "creature that grants fire resistance and leaves burning tracks",
+            "variant": "being that provides fire resistance and creates fire trails"
+        },
+        {
+            "query": "steed of evil that can move between planes",
+            "variant": "dark horse that transitions between dimensions"
+        },
+        {
+            "query": "monster known for its evil aura and fast flying speed",
+            "variant": "creature famous for sinister aura and high flying speed"
+        }
+    ]
+}

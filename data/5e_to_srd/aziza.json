@@ -1,0 +1,15 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Aziza is a tiny, agile fey with spellcasting and a playful nature similar to the Sprite."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Aziza shares a woodland spirit theme and connection to nature like the Dryad."
+  },
+  "Frog": {
+    "relation": "conceptually_similar",
+    "explanation": "Aziza's unique communication with frogs and toads links it conceptually to the Frog."
+  },
+  "monster_key": "aziza"
+}

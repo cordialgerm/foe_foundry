@@ -1,0 +1,53 @@
+{
+    "name": "Allosaurus",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 51,
+    "ac": 13,
+    "srd": true,
+    "cr": "2",
+    "movement": "walk 60 ft.",
+    "role": null,
+    "tags": [
+        "predator",
+        "beast",
+        "primal"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "fast"
+    ],
+    "description": "The Allosaurus is a Huge beast characterized by its massive body, sharp claws, and powerful jaws, serving as a terror on the battlefield.",
+    "memorable": "It excels at physical combat with its high strength and dexterity, allowing it to deal significant damage in melee encounters.",
+    "goals": "Hunt and overpower prey while asserting dominance in its territory.",
+    "relations": "Often encountered alongside other predatory creatures.",
+    "environment": "Typically found in wild, open territories such as forests and plains.",
+    "strengths": "Impressive physical stats enhance its melee attack capabilities.",
+    "weaknesses": "Low intelligence makes it susceptible to strategic tactics.",
+    "attacks": "Primary attack is a powerful Bite that deals significant piercing damage.",
+    "most_powerful_ability": "Has the Pounce ability, allowing it to knock enemies prone when moving at speed before the attack.",
+    "equipment": null,
+    "senses": "Possesses keen hearing and a passive perception of 15.",
+    "skills": "Proficient in perception, exhibiting average perceptive abilities.",
+    "additional_information": [
+        "Can knock targets prone with a successful claw attack.",
+        "Benefits from increased attack rolls if charging towards its target.",
+        "Represents a fierce predator in settings, often inducing fear in lesser creatures.",
+        "Typically hunts in packs but can also be solitary when stalking larger prey.",
+        "Adaptable to various terrains, making it a versatile threat."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful predatory beast",
+        "large dinosaur creature",
+        "primal hunter",
+        "melee-focused dinosaur",
+        "Allosaurus abilities in combat"
+    ]
+}

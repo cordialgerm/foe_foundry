@@ -1,0 +1,11 @@
+{
+  "Giant Badger": {
+    "relation": "close_cousins",
+    "explanation": "A small burrowing beast with strong claws and stealth capabilities similar to a Giant Badger."
+  },
+  "Giant Mole": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the burrowing and ambushing traits of a mole, adapted to cold snowy environments."
+  },
+  "monster_key": "frost-mole"
+}

@@ -1,0 +1,7 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Flesh Reaver is an agile, undead skirmisher with claw attacks, necrotic damage, and the ability to knock foes prone, similar to a Ghoul."
+  },
+  "monster_key": "flesh-reaver"
+}

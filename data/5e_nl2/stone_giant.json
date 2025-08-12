@@ -1,0 +1,51 @@
+{
+    "name": "Stone Giant",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 17,
+    "srd": true,
+    "cr": "7",
+    "movement": "40 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "rock thrower",
+        "sculptor"
+    ],
+    "adjectives": [
+        "massive",
+        "gray-skinned",
+        "formidable"
+    ],
+    "description": "Stone Giants are massive, gray-skinned humanoids who dwell deep in caves and mountainous regions. They can shape their environment with remarkable precision and are guardians of the natural stone beneath the earth.",
+    "memorable": "Stone Giants can hurl boulders with deadly accuracy and are powerful warriors when provoked.",
+    "goals": "They prefer isolation and act as keepers of ancient secrets hidden within the mountains.",
+    "relations": "They might be encountered with other giant kin or can be found in cooperation with creatures of mountains and caves.",
+    "environment": "Deep caves and mountainous regions.",
+    "strengths": "Exceptional Strength of 23 allows them to deal significant melee damage and manipulate foes easily, while their camouflage provides steath in rocky terrain.",
+    "weaknesses": "Vulnerability to being knocked prone can hinder their combat effectiveness.",
+    "attacks": "Attacks include devastating greatclub strikes that can knock creatures prone and ranged rock throws that can incapacitate opponents.",
+    "most_powerful_ability": "The ability to throw grappling targets up to 30 feet, providing both damage and movement manipulation during combat.",
+    "senses": "Remains undetected in rocky terrain with advantage on Stealth checks due to Stone Camouflage.",
+    "skills": "Noteworthy skills in Athletics and Stealth, reinforcing their physical prowess and ability to remain hidden.",
+    "additional_information": [
+        "Resistance to acid damage and immunity to petrification.",
+        "High hit points enable them to absorb considerable damage.",
+        "Possesses rock catching ability to negate projectile damage.",
+        "Can perform wrestling maneuvers against grappled creatures.",
+        "Long-lived beings, often serving as guardians."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive gray-skinned mountain creature",
+        "giant that throws rocks and grapples",
+        "stone-based creature with camouflage ability",
+        "powerful melee giant with high hit points",
+        "cave-dwelling giant known for sculpting"
+    ]
+}

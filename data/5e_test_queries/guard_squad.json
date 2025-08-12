@@ -1,0 +1,25 @@
+{
+    "name": "Guard Squad",
+    "queries": [
+        {
+            "query": "large humanoid creature that splits into two when defeated",
+            "variant": "large humanoid that disperses into two guards upon defeat"
+        },
+        {
+            "query": "tactical monster that is weak to area attacks",
+            "variant": "strategic creature vulnerable to area damage"
+        },
+        {
+            "query": "monster with good durability and area vulnerability",
+            "variant": "creature that has high HP but takes double damage from area effects"
+        },
+        {
+            "query": "guard unit that transforms when hit points reach zero",
+            "variant": "squad that changes into two guards when it hits 0 HP"
+        },
+        {
+            "query": "humanoid that uses spears and has low intelligence",
+            "variant": "humanoid creature that attacks with spears and has average mental abilities"
+        }
+    ]
+}

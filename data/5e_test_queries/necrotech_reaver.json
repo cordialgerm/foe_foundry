@@ -1,0 +1,25 @@
+{
+    "name": "Necrotech Reaver",
+    "queries": [
+        {
+            "query": "huge undead creature with chains that attacks from a distance",
+            "variant": "huge undead monster using chains that can hit from far away"
+        },
+        {
+            "query": "undead monster that doesn't need to eat or sleep and can grapple",
+            "variant": "undead beast that requires no sleep or food and has grappling abilities"
+        },
+        {
+            "query": "physical combat-focused undead with double damage to structures",
+            "variant": "combat-oriented undead that deals double damage to buildings"
+        },
+        {
+            "query": "creature weak against being knocked prone but powerful in melee",
+            "variant": "creature vulnerable to being knocked down but strong in close combat"
+        },
+        {
+            "query": "sinister large undead that uses a bladed sweep attack",
+            "variant": "menacing huge undead that performs a sweeping blade attack"
+        }
+    ]
+}

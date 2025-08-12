@@ -1,0 +1,25 @@
+{
+    "name": "Dragon, Prismatic Ancient",
+    "queries": [
+        {
+            "query": "gargantuan dragon that can cast spells and has radiant immunity",
+            "variant": "gargantuan dragoon that can spell cast and is immune to radiant"
+        },
+        {
+            "query": "dragon with a frightful presence and a powerful breath weapon",
+            "variant": "dragon that has frightful presence and strong breath weapon"
+        },
+        {
+            "query": "massive dragon with darkvision and blindsight abilities",
+            "variant": "huge dragon that possesses darkvision and blindsight"
+        },
+        {
+            "query": "neutral dragon with high hit points and climbing speed",
+            "variant": "neutral dragoon with lots of hit points and ability to climb"
+        },
+        {
+            "query": "prismatic dragon using multiattack and legendary resistance",
+            "variant": "prismatic drake performing multiattack and legendary resistances"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "The Wrackwraith is a ghostly undead with incorporeal movement and necrotic attacks similar to a Ghost."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "As a malevolent, flying undead that uses necrotic damage and grappling abilities, the Wrackwraith shares traits with a Wraith."
+  },
+  "monster_key": "wrackwraith"
+}

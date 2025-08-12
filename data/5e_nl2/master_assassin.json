@@ -1,0 +1,52 @@
+{
+    "name": "Master Assassin",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 143,
+    "ac": 18,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "assassin",
+        "stealth",
+        "mercenary"
+    ],
+    "adjectives": [
+        "highly skilled",
+        "lethal",
+        "agile"
+    ],
+    "description": "The Master Assassin is a highly skilled humanoid mercenary with exceptional dexterity and strength, known for its lethal precision in combat.",
+    "memorable": "The Master Assassin can deal instant death to surprised enemies with a critical hit using its Death Strike ability.",
+    "goals": "Typically seeks to eliminate targets swiftly and quietly, often preferring to strike without warning.",
+    "relations": "May work alongside other mercenaries or assassins, and could be hired by influential figures or organizations.",
+    "environment": "Favors cities and shadowy environments where stealth and precision are paramount.",
+    "strengths": "Possesses extraordinary dexterity, allowing for high damage output and evasion of attacks.",
+    "weaknesses": "Moderate Constitution score and lack of magical abilities limit versatility in certain situations.",
+    "attacks": "Uses a shortsword for melee attacks and a light crossbow for ranged attacks, each capable of inflicting severe poison damage.",
+    "most_powerful_ability": "Death Strike allows for instant kill on surprised enemies, making ambushes particularly deadly.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 20 feet, allowing it to detect nearby threats without relying on sight.",
+    "skills": "Trained in Acrobatics and Stealth, making it exceedingly difficult to detect and evade.",
+    "additional_information": [
+        "Deadly poison can be applied to weapons, increasing lethality.",
+        "Gains advantage against creatures that have not yet acted during the first turn of combat.",
+        "Cunning Action allows for versatile movement in battle.",
+        "Impressive saving throws facilitate evasion of dangers.",
+        "Sneak Attack ability adds significant damage when in advantageous positions."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "skilled stealthy humanoid mercenary",
+        "lethal assassin with deadly poison",
+        "high dexterity assassin that deals instant death",
+        "agile monster that excels in ambushes",
+        "master of stealth and lethal strikes"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Lobe Lemur",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 93,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., swim 30 ft., climb 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swamp",
+        "stealth",
+        "ambusher",
+        "agile"
+    ],
+    "adjectives": [
+        "agile",
+        "stealthy",
+        "small"
+    ],
+    "description": "The Lobe Lemur is a small, agile monstrosity known for its unique combat abilities, blending into swampy environments with ease.",
+    "memorable": "It can attach to an opponent's head with its Face Clamp, blinding them until the end of their next turn.",
+    "goals": "To ambush and incapacitate prey using its agility and camouflage.",
+    "relations": "Commonly found in swamps alongside other stealthy and ambush creatures.",
+    "environment": "Typically inhabits swampy terrains.",
+    "strengths": "Excels in Dexterity, making it difficult to hit and capable of impressive leaps.",
+    "weaknesses": "Low Intelligence and Charisma, limiting its interactions outside combat.",
+    "attacks": "Can deliver a multiattack with either multiple slashing Claw Swipes or a Face Clamp that inflicts blindness.",
+    "most_powerful_ability": "The Face Clamp ability can blind opponents, severely hindering their combat effectiveness.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Has a passive Perception of 13, allowing it to notice opponents with average success.",
+    "additional_information": [
+        "Gains advantage on Dexterity saving throws due to high Dexterity score.",
+        "Has a special ability to jump great distances, improving its ambush capabilities.",
+        "Advantage on Dexterity (Stealth) checks in swampy environments.",
+        "Can move with its target when attached, increasing the challenge for opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small swamp creature with jumping abilities",
+        "agile monster that blinds its enemies",
+        "ambushing creature with unique combat skills",
+        "stealthy monster that excels in swamp environments",
+        "creature that can attach to its victim's head"
+    ]
+}

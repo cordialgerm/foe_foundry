@@ -1,0 +1,52 @@
+{
+    "name": "Voidpool",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 112,
+    "ac": 8,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 15 ft., climb 15 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "ooze",
+        "grappler",
+        "Void"
+    ],
+    "adjectives": [
+        "dark",
+        "formless",
+        "threatening"
+    ],
+    "description": "The Voidpool is a large ooze creature embodying a dark, formless essence tied to the Void.",
+    "memorable": "Its ability to transport creatures to the Void creates a unique and terrifying threat in combat.",
+    "goals": "To capture and transport opponents to the Void.",
+    "relations": "Could be encountered alongside other oozes or dark creatures tied to the Void.",
+    "environment": "Typically found in dark, forsaken locations or areas connected to the Void.",
+    "strengths": "Formidable grappling power and substantial hit points.",
+    "weaknesses": "Vulnerability to radiant damage and low intelligence limits strategic capabilities.",
+    "attacks": "Uses pseudopod attacks dealing bludgeoning and necrotic damage, capable of grappling foes.",
+    "most_powerful_ability": "Planar Portal allows it to potentially transport grappled creatures to the Void.",
+    "senses": "Has blindsight up to 60 feet, allowing it to sense its surroundings in complete darkness.",
+    "skills": "Low passive perception of 8 indicates limited awareness of its environment.",
+    "additional_information": [
+        "Amorphous allows it to slip through narrow spaces.",
+        "Grappler ability enhances its effectiveness in combat.",
+        "Immunities to force and necrotic damage increase its resilience.",
+        "Condition immunities make it a difficult foe to hinder.",
+        "Can climb difficult surfaces without difficulty."
+    ],
+    "damage_types": [
+        "force",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark ooze that transports creatures to the Void",
+        "large formless creature with necrotic attacks",
+        "monster that grapples and pulls into the Void",
+        "ooze with portal abilities and grappling strength",
+        "creature immune to force and necrotic damage"
+    ]
+}

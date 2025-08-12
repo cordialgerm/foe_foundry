@@ -1,0 +1,11 @@
+{
+  "Adult White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are dragons with cold damage and cold resistance, sharing similar elemental traits."
+  },
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A medium-sized dragon with cold abilities and breath weapon, similar in size and elemental affinity."
+  },
+  "monster_key": "sea-dragon-wyrmling"
+}

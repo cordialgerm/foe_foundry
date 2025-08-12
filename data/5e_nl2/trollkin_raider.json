@@ -1,0 +1,48 @@
+{
+    "name": "Trollkin Raider",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "Trollkin",
+        "Raider",
+        "Regeneration"
+    ],
+    "adjectives": [
+        "resilient",
+        "versatile",
+        "tough"
+    ],
+    "description": "The Trollkin Raider is a robust humanoid with thick hide and a combat-ready demeanor. It possesses natural regenerative abilities and is equipped with hide armor.",
+    "memorable": "The ability to regenerate hit points makes the Trollkin Raider challenging to defeat in combat, especially if not targeted with fire or acid damage.",
+    "goals": "Typically, Trollkin Raiders aim to engage in combat, survive by any means necessary, and may raid or scavenge for resources.",
+    "relations": "Trollkin Raiders may be allied with other Trollkin or similar humanoids, often found in groups or clans.",
+    "environment": "Often encountered in hilly or forested areas where they can utilize their survival skills.",
+    "strengths": "Natural regeneration allows it to recover from injuries, and thick hide provides additional armor class.",
+    "weaknesses": "Low intelligence may hinder strategic planning or complex maneuvers in battle.",
+    "attacks": "The Raider can attack with bites and claws, or use a spear for both melee and ranged strikes, making it versatile in close-quarters or distance combat.",
+    "most_powerful_ability": "Regeneration, allowing it to regain hit points each turn unless hit by fire or acid damage.",
+    "equipment": "Hide armor and spear",
+    "senses": "Has darkvision, allowing it to see in darkness up to 60 feet and a passive perception score of 13, aiding in awareness of surroundings.",
+    "skills": "Proficient in insight, perception, nature, and survival, allowing it to track and navigate effectively.",
+    "additional_information": [
+        "Can make two spear attacks or a combination of bite and claw attacks in one turn.",
+        "Utilizes its regeneration ability strategically to outlast opponents.",
+        "Thick hide contributes to a solid defense, making it durable in battle."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tough humanoid with regeneration ability",
+        "warrior with thick hide armor",
+        "monster that recovers hit points",
+        "humanoid raider from forests",
+        "combat-effective trollkin creature"
+    ]
+}

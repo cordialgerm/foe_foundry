@@ -1,0 +1,52 @@
+{
+    "name": "Hezrou",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 16,
+    "srd": true,
+    "cr": "8",
+    "movement": "40 feet walk, 30 feet swim",
+    "role": "Bruiser",
+    "tags": [
+        "demon",
+        "fiend",
+        "amphibious"
+    ],
+    "adjectives": [
+        "hulking",
+        "amphibious",
+        "chaotic",
+        "evil"
+    ],
+    "description": "The Hezrou is a hulking, amphibious demon with a toad-like body and powerful limbs, characterized by thick, warty skin.",
+    "memorable": "Its foul stench weakens nearby creatures, and its ability to grapple and swallow foes makes it dangerous.",
+    "goals": "Serve more powerful demons in battle and crush foes with brute strength.",
+    "relations": "Related to other demons in the Abyss.",
+    "environment": "Abyssal realms and other dark, chaotic locations.",
+    "strengths": "Resistance to cold, fire, lightning, and damage from nonmagical weapons; immune to poison.",
+    "weaknesses": "Very low Intelligence limits strategic capabilities.",
+    "attacks": "Multiattack consisting of a powerful bite and deadly claws, with the ability to grapple foes.",
+    "most_powerful_ability": "Swallowing enemies, leading to blindness and ongoing acid damage.",
+    "equipment": null,
+    "senses": "Darkvision with a range of 120 feet.",
+    "skills": "Average perception and stealth skills.",
+    "additional_information": [
+        "Can breathe air and water.",
+        "Creates magical darkness for tactical advantage.",
+        "Quick Leap ability allows jumping without provoking opportunity attacks.",
+        "Has a Stench ability that poisons nearby creatures.",
+        "Communicates with frogs and toads."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "hulking amphibious demon with a foul stench",
+        "chaotic evil creature from the Abyss",
+        "powerful fiend that smells terrible",
+        "brutish demon with massive claws",
+        "demonic creature capable of swallowing foes"
+    ]
+}

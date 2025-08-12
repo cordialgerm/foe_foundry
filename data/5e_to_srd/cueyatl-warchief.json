@@ -1,0 +1,11 @@
+{
+  "Bandit Captain": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid leader skilled in combat and tactics, similar to a Bandit Captain but with amphibious and jungle traits."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares high mobility, stealth proficiency, and ambush tactics akin to a Scout."
+  },
+  "monster_key": "cueyatl-warchief"
+}

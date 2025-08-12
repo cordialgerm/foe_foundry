@@ -1,0 +1,25 @@
+{
+    "name": "Grove Bear",
+    "queries": [
+        {
+            "query": "medium-sized bear with grappling ability that lives in nature",
+            "variant": "bear that is medium-sized and can grapple, found in natural areas"
+        },
+        {
+            "query": "strong melee attacker that has keen senses and lives in forests",
+            "variant": "melee strong attacker with good senses dwelling in woodland areas"
+        },
+        {
+            "query": "beast with natural armor and advantage on perception checks relying on smell",
+            "variant": "creature with natural defensive abilities and perks for smell-related perception"
+        },
+        {
+            "query": "Grove Bear abilities focusing on melee attacks and grappling foes",
+            "variant": "abilities of Grove Bear centered on close combat and grappling"
+        },
+        {
+            "query": "large bear that can climb with exceptional physical strength",
+            "variant": "big bear that has climbing skills and immense physical power"
+        }
+    ]
+}

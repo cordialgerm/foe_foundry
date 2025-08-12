@@ -1,6 +1,8 @@
 <MonsterName/>Death Shroud Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>95</HP>
 <summary>The Death Shroud Golem is a large construct that serves as a formidable foe in combat, particularly known for its ability to grapple and restrain opponents. With an armor class of 12, it is moderately difficult to hit, but its high hit points of 95, derived from 10d10 plus 40, allow it to endure numerous attacks. This golem has an average speed while walking, but it can fly at 40 feet, giving it the ability to traverse the battlefield with ease. Its challenge rating of 5 illustrates that it presents a substantial challenge to adventurers, offering 1,800 experience points upon defeat. The golem has significant strengths, including various immunities and resistances to damage, making it hard to injure with mundane attacks. However, it does hold a weakness against magical effects that can bypass its defenses.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the "Direct Victim" action allows the golem to manipulate a grappl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Shroud Golem
 
 *Large* *Construct* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Direct Victim:** The death shroud golem forces a creature it is grappling to move up to the creature’s speed and make one attack with a melee weapon the creature is holding. If the creature isn’t holding a melee weapon, it makes one unarmed strike instead. The death shroud golem decides the direction of the movement and the target of the attack. The grappled creature can use its reaction and isn’t considered blinded or restrained when moving and attacking in this way.
 
 
+</statblock>
 
 

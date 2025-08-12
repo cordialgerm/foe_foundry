@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fiendish devils with melee combat focus and a menacing presence."
+  },
+  "Ice Devil": {
+    "relation": "almost_identical",
+    "explanation": "A devil with cold-based powers, battlefield control, and a menacing icy presence closely matches the Rimepacted Devil."
+  },
+  "monster_key": "rimepacted-devil"
+}

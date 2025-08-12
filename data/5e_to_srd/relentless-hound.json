@@ -1,0 +1,11 @@
+{
+  "Death Dog": {
+    "relation": "close_cousins",
+    "explanation": "The Relentless Hound is an undead, necrotic hound similar in concept and role to the Death Dog."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead nature and necrotic damage theme, with a menacing and chaotic presence."
+  },
+  "monster_key": "relentless-hound"
+}

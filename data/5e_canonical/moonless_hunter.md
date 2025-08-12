@@ -1,6 +1,8 @@
 <MonsterName/>Moonless Hunter</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Moonless Hunter is a Medium-sized fey creature characterized by its neutral evil alignment, making it a formidable adversary. With a challenge rating of 4, it presents a significant challenge to adventurers, possessing a robust combination of offensive capabilities, unique special abilities, and resistances. The creature is agile and stealthy, with high Dexterity, enabling it to evade attacks effectively. However, it is vulnerable to silvered weapons and can be affected by certain holy effects. The Moonless Hunter excels in psychological manipulation, employing nightmares to debilitate foes while simultaneously being capable of direct physical attacks. It thrives in darkness, gaining advantages in stealth and movement in shadowy environments, but is hindered in direct sunlight.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Moonless Hunter is a cunning and dangerous foe that uses psychologi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonless Hunter
 
 *Medium* *Fey* *neutral evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Whispered Terrors (Recharge 5–6):** Bombards the minds of up to 3 creatures it can see within 60' of it with nightmares: 18 (4d8) psychic and frightened until end of its next turn (DC 14 Wis half not frightened). If creature fails by 5+ also suffers short-term madness.
 
 
+</statblock>
 
 

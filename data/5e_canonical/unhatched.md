@@ -1,6 +1,8 @@
 <MonsterName/>Unhatched</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Unhatched is a small, chaotic evil undead creature that embodies darkness and malice, often acting as a curse upon those who heal. With a Challenge Rating of 4 and a high intelligence score of 18, it is a potent adversary in combat, especially against those who engage in restorative magic. Its strengths lie in its ability to resist various forms of damage and conditions, as well as its powerful multiattack capabilities. However, it is particularly vulnerable to bludgeoning damage, making it less effective against foes who capitalize on that weakness.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Unhatched is a fearsome opponent capable of punishing those who see
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Unhatched
 
 *Small* *Undead* *chaotic evil*
@@ -73,5 +76,6 @@ At will: chill touch, minor illusion
 - **Desiccating Breath (Recharge 5-6):** The dragon exhales a cloud of choking dust infused with necrotic magic in a 30-foot cone. Each creature in the area must make a DC 14 Dexterity saving throw, taking 16 (3d10) necrotic damage on a failed save, or half as much damage on a successful one. A creature who fails this save can't speak until the end of its next turn as it chokes on the dust.
 
 
+</statblock>
 
 

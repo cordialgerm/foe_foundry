@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "A vampire with regeneration, mist transformation, charm abilities, and vulnerability to sunlight."
+  },
+  "Priest": {
+    "relation": "close_cousins",
+    "explanation": "A clerical spellcaster with knowledge of religion and healing spells, fitting the priest archetype."
+  },
+  "monster_key": "vampire-priestess"
+}

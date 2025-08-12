@@ -1,0 +1,11 @@
+{
+  "Ancient Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient dragons with necrotic and shadowy themes, sharing similar breath weapon concepts and environments."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ancient Shadow Dragon embodies shadow and incorporeal movement, similar to the shadow's dark, insubstantial nature."
+  },
+  "monster_key": "ancient-shadow-dragon"
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Necrotic Tick",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 3,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "climb and walk at 10 feet speed",
+    "role": null,
+    "tags": [
+        "necro",
+        "parasite",
+        "undead",
+        "manipulative"
+    ],
+    "adjectives": [
+        "tiny",
+        "deadly",
+        "necrotic",
+        "manipulative"
+    ],
+    "description": "The Necrotic Tick is a tiny, unaligned beast that poses a unique threat due to its ability to drain life and manipulate its host, using necrotic energy to seal wounds with scabrous tissue.",
+    "memorable": "Its ability to transform hosts into zombies through necrotic regeneration makes it a substantial tactical challenge.",
+    "goals": "To drain life from hosts and create new minions.",
+    "relations": "Often encountered with other undead or necromantic creatures.",
+    "environment": "Typically found in dark and damp environments where its hosts might reside.",
+    "strengths": "Possesses necrotic regeneration that allows it to heal its host while draining their life.",
+    "weaknesses": "Vulnerable due to its low hit points and armor class; can be easily attacked if detected.",
+    "attacks": "Blood Drain attack inflicts piercing damage and attaches to the target, causing persistent blood loss.",
+    "most_powerful_ability": "Necrotic Regeneration heals its host at the cost of necrotic damage, potentially transforming them into a zombie.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can incite rage in hosts to attack other creatures.",
+        "The host must succeed on a Wisdom saving throw to resist its influence.",
+        "Detachment from a host deals necrotic damage to the previous host.",
+        "Regeneration counteracts magical healing.",
+        "Can create zombies if necrotic hp matches the host's maximum hit points."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny monster that drains life",
+        "creature that controls its host",
+        "necrotic parasite that creates zombies",
+        "deadly tick with regenerative abilities",
+        "manipulative beast found in dark places"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Skullbloom",
+    "creature_type": "Plant",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 23,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet speed, can Dash to pursue",
+    "role": "Skirmisher",
+    "tags": [
+        "plant",
+        "fungus",
+        "infection"
+    ],
+    "adjectives": [
+        "ferocious",
+        "tenacious",
+        "resilient"
+    ],
+    "description": "The Skullbloom is a plant creature that exhibits ferocity with resilient traits, featuring a fusion of biting and slamming attacks.",
+    "memorable": "Infects its victims with apocalyptic fungus if both attacks succeed.",
+    "goals": "To infect humanoids as it pursues them.",
+    "relations": "May be found in the company of other plant creatures or fungi.",
+    "environment": "Often resides in damp, dark environments favored by plants and fungi.",
+    "strengths": "Possesses heightened hearing and resistance to exhaustion and debilitating conditions.",
+    "weaknesses": "Poor mental attributes limit its effectiveness in clever situations.",
+    "attacks": "Makes a melee Bite attack dealing piercing and poison damage, and a Slam attack dealing bludgeoning damage.",
+    "most_powerful_ability": "Apocalyptic fungus infection when both attacks successfully hit a humanoid.",
+    "equipment": null,
+    "senses": "Has keen hearing, allowing it to perceive sounds within a 10-foot radius.",
+    "skills": "Proficient in Stealth, utilizing its plant nature to remain hidden.",
+    "additional_information": [
+        "Resistant to the paralyzed, petrified, and unconscious conditions.",
+        "Can Dash as a bonus action to chase uninfected targets.",
+        "Reflects characteristics of natural resilience in plants."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that infects humanoids",
+        "ferocious fungus with heightened hearing",
+        "tenacious plant that uses bite and slam attacks",
+        "medium plant that pursues prey relentlessly",
+        "resilient creature resistant to exhaustion"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Snow Queen",
+    "queries": [
+        {
+            "query": "tall fey creature that controls winter and is vulnerable to fire",
+            "variant": "tall fey being who manipulates winter and is weak to fire"
+        },
+        {
+            "query": "medium fey with ice powers who uses cold attacks",
+            "variant": "medium fey with ice abilities that attacks with cold damage"
+        },
+        {
+            "query": "snow-themed creature that has high dexterity and charisma",
+            "variant": "winter-themed monster with great dexterity and presence"
+        },
+        {
+            "query": "queen of ice that can petrify creatures and has legendary actions",
+            "variant": "ice queen who can freeze enemies and employs legendary moves"
+        },
+        {
+            "query": "manipulative fey that has immunity to cold and is skilled in stealth",
+            "variant": "cunning fey creature immune to cold and proficient in sneaking"
+        }
+    ]
+}

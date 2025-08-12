@@ -1,0 +1,25 @@
+{
+    "name": "Berberoka",
+    "queries": [
+        {
+            "query": "large swamp giant with bludgeoning attacks",
+            "variant": "giant that is large and dwells in swamps with strong bludgeoning attacks"
+        },
+        {
+            "query": "amphibious creature thriving in marshland",
+            "variant": "creature that can live in both water and land and loves marshy areas"
+        },
+        {
+            "query": "powerful melee giant that regenerates in water",
+            "variant": "tough giant that can heal itself when in water and has strong melee attacks"
+        },
+        {
+            "query": "giant creature that can camouflage in swampy environments",
+            "variant": "big creature that hides well in marshy areas with camouflage"
+        },
+        {
+            "query": "Berberoka swamp monster with muddy slam attack",
+            "variant": "swamp monster known as Berberoka that has a slam attack covered in mud"
+        }
+    ]
+}

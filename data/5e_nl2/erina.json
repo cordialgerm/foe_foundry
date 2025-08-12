@@ -1,0 +1,52 @@
+{
+    "name": "Erina",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 22,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft. burrow 20 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "burrowing",
+        "poison resistance"
+    ],
+    "adjectives": [
+        "small",
+        "adaptable",
+        "crafty"
+    ],
+    "description": "The Erina is a small humanoid creature with notable adaptability, equipped with spines that deal damage to attackers and a keen sense of smell.",
+    "memorable": "Its ability to burrow and poison resistance make it a unique threat despite its size.",
+    "goals": "Typically aims to use its burrowing ability for escape and to leverage tactical advantages in combat.",
+    "relations": "May be encountered alongside other small creatures or in underground environments.",
+    "environment": "Commonly found in caverns or low-light areas suitable for burrowing.",
+    "strengths": "Possesses keen smell for detecting hidden creatures and hardy resilience against poison.",
+    "weaknesses": "Low strength and wisdom make it ineffective in physical confrontations and limited in mental challenges.",
+    "attacks": "Attacks include a dagger for slashing damage and a sling for ranged bludgeoning damage.",
+    "most_powerful_ability": "The ability to burrow allows it to escape and reposition itself tactically in combat.",
+    "equipment": null,
+    "senses": "Has darkvision enabling it to see in low-light conditions.",
+    "skills": null,
+    "additional_information": [
+        "Keen Smell provides advantage on perception checks based on smell.",
+        "Hardy grants advantage on saving throws against poison.",
+        "Spines cause damage to melee attackers and grapplers.",
+        "Has decent Constitution and Dexterity for its survival.",
+        "Utilizes environment for ambush tactics."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid with burrowing abilities",
+        "creature that resists poison damage",
+        "adaptable creature with keen smell",
+        "mobile little monster in caves",
+        "bristly creature that attacks with spines"
+    ]
+}

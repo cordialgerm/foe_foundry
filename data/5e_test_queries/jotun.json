@@ -1,0 +1,25 @@
+{
+    "name": "Jotun",
+    "queries": [
+        {
+            "query": "gargantuan giant with cold immunity and high hit points",
+            "variant": "giant with high hp and immunity to cold that is gargantuan"
+        },
+        {
+            "query": "massive creature that possesses icy weapons and strong melee attacks",
+            "variant": "huge creature with icy attacks and melee strength"
+        },
+        {
+            "query": "giant monster immune to nonmagical damage and strong in combat",
+            "variant": "monster that is a giant, immune to nonmagical damage and skilled in battle"
+        },
+        {
+            "query": "Jotun characteristics including magical resistance and frightening presence",
+            "variant": "features of the Jotun like fear-inducing presence and magic resistance"
+        },
+        {
+            "query": "creature with darkvision that can cast spells and excels in melee combat",
+            "variant": "being that has darkvision, uses spells, and is great at melee fighting"
+        }
+    ]
+}

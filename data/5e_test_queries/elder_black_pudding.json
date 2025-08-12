@@ -1,0 +1,25 @@
+{
+    "name": "Elder Black Pudding",
+    "queries": [
+        {
+            "query": "huge black ooze that can absorb physical attacks",
+            "variant": "huge pudding black that absorbs physical attacks"
+        },
+        {
+            "query": "corrosive creature that suffers in sunlight and splits when damaged",
+            "variant": "creature that is corrosive and splits when damaged, suffers in sunlight"
+        },
+        {
+            "query": "large ooze with high hit points and low AC",
+            "variant": "large high hit points ooze with low AC"
+        },
+        {
+            "query": "monster that damages weapons and can climb on ceilings",
+            "variant": "monster that can climb on ceilings and damages weapons"
+        },
+        {
+            "query": "slow-moving creature immune to acid and slashing damage",
+            "variant": "creature slow-moving immune to slashing and acid damage"
+        }
+    ]
+}

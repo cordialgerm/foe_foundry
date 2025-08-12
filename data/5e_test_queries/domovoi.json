@@ -1,0 +1,25 @@
+{
+    "name": "Domovoi",
+    "queries": [
+        {
+            "query": "fey creature that protects households and teleports",
+            "variant": "household protecting fey creature that can teleport"
+        },
+        {
+            "query": "magical guardian with high strength and bludgeoning attacks",
+            "variant": "strong magical guardian that uses bludgeoning attacks"
+        },
+        {
+            "query": "mystical creature immune to acid and lightning damage",
+            "variant": "creature that is immune to acid and lightning magic"
+        },
+        {
+            "query": "medium-sized fey that can become invisible and casts spells",
+            "variant": "fey of medium size that turns invisible and provides spell casting"
+        },
+        {
+            "query": "Domovoi traits including high hit points and low intelligence",
+            "variant": "traits of Domovoi with low intelligence and high HP"
+        }
+    ]
+}

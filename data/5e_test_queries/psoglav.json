@@ -1,0 +1,25 @@
+{
+    "name": "Psoglav",
+    "queries": [
+        {
+            "query": "large fiend that can control shadows and is resistant to elemental damage",
+            "variant": "big fiend with the ability to control shadows and resist elemental attacks"
+        },
+        {
+            "query": "chaotic evil creature with high dexterity and powerful bite attacks",
+            "variant": "evil creature that is chaotic with high agility and strong bite attacks"
+        },
+        {
+            "query": "fiend with invisibility and shadow-stealing abilities in combat",
+            "variant": "creature that has the power of invisibility and can steal shadows during battle"
+        },
+        {
+            "query": "powerful fiend with strong strength and magical weapon attacks",
+            "variant": "strong fiend that has great strength and attacks with enchanted weapons"
+        },
+        {
+            "query": "monster with blindsight that communicates telepathically and has magic resistance",
+            "variant": "creature that can see without sight and speaks through telepathy while resisting magic"
+        }
+    ]
+}

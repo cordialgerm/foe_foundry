@@ -1,0 +1,25 @@
+{
+    "name": "Tosculi Hive Queen",
+    "queries": [
+        {
+            "query": "large evil insect monster that can implant eggs",
+            "variant": "big evil bug creature that can put eggs in hosts"
+        },
+        {
+            "query": "monstrosity with poison immunity and fly speed",
+            "variant": "creature with immunity to poison and ability to fly"
+        },
+        {
+            "query": "Hive Queen with telepathy and crowd control abilities",
+            "variant": "Hive Queen that can communicate mentally and control crowds"
+        },
+        {
+            "query": "fast creature with high Dexterity and powerful attacks",
+            "variant": "quick monster that has excellent Dexterity and strong attacks"
+        },
+        {
+            "query": "monstrosity that loves tactical combat and has multiple attacks",
+            "variant": "creature that enjoys tactical fights and can make several attacks"
+        }
+    ]
+}

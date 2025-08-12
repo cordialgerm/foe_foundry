@@ -1,0 +1,55 @@
+{
+    "name": "Uridimmu",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 150,
+    "ac": 18,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 30 ft., fly 90 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "lawful",
+        "support",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "heroic"
+    ],
+    "description": "The Uridimmu is a large celestial creature with a strong presence in combat, embodying lawful goodness. It is equipped with a mace and possesses high armor and hit points, ensuring its resilience in battle.",
+    "memorable": "Notably, it can bolster allies and hinder foes with its special abilities, such as the Heroic Aura and heavenly roar, making it a strong protector and adversary.",
+    "goals": "The Uridimmu seeks to protect allies and fight against chaotic forces, embodying the principles of lawful goodness.",
+    "relations": "It may be encountered alongside other celestial beings or as a guardian of places dedicated to lawful deities.",
+    "environment": "Typically found in celestial realms or in locations fighting against chaos and evil.",
+    "strengths": "High resistances to various damage types, magical resistance, and the ability to bolster allies with its aura.",
+    "weaknesses": "Vulnerable to magical effects, especially in chaotic environments.",
+    "attacks": "Multiattack capability with a bite and magical mace that deals additional damage based on the Uridimmu's choice of element.",
+    "most_powerful_ability": "Heavenly Roar, which can deal significant thunder damage and frighten foes.",
+    "equipment": "Mace that deals both bludgeoning and elemental damage.",
+    "senses": "Possesses truesight up to 90 feet, allowing it to detect invisible creatures.",
+    "skills": "Excels in insight and has a strong perception, making it proficient at detecting threats.",
+    "additional_information": [
+        "Absorbs significant damage due to high hit points and resistances.",
+        "Can cast multiple spells for offensive and defensive purposes.",
+        "Mace attacks deal adaptable damage types.",
+        "Can create beneficial zones for allies to enhance their combat effectiveness.",
+        "Resilient against being charmed, exhausted, or frightened."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning",
+        "radiant"
+    ],
+    "spellcasting": "Innate spellcasting with a focus on protective and damaging spells, providing versatility in combat.",
+    "test_queries": [
+        "formidable celestial creature with powerful spells",
+        "large monster that flies and protects allies",
+        "heavenly protector with truesight and magical attacks",
+        "lawful good celestial with a mighty roar",
+        "monster with aura that boosts allies and hinders foes"
+    ]
+}

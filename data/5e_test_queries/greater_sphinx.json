@@ -1,0 +1,25 @@
+{
+    "name": "Greater Sphinx",
+    "queries": [
+        {
+            "query": "colossal guardian monster with magical abilities",
+            "variant": "huge guardian creature that has magical powers"
+        },
+        {
+            "query": "sphinx with exceptional Wisdom and spellcasting abilities",
+            "variant": "sphinx possessing high Wisdom and spellcasting powers"
+        },
+        {
+            "query": "powerful creature that resists psychic damage and has legendary resistance",
+            "variant": "strong monster that is immune to psychic damage and has legendary resistance"
+        },
+        {
+            "query": "monster that can telepathically communicate and travel across planes",
+            "variant": "creature able to communicate via telepathy and move between planes"
+        },
+        {
+            "query": "huge sphinx that roars to frighten and damage enemies",
+            "variant": "large sphinx that uses a roar to scare and harm opponents"
+        }
+    ]
+}

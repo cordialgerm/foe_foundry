@@ -1,0 +1,55 @@
+{
+    "name": "Khalkos",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 130,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft. walking and flying",
+    "role": "null",
+    "tags": [
+        "psionic",
+        "intelligent",
+        "manipulator",
+        "confusing"
+    ],
+    "adjectives": [
+        "formidable",
+        "adaptive",
+        "intelligent",
+        "dangerous"
+    ],
+    "description": "A Medium Aberration with a mix of physical agility and psionic prowess, the Khalkos has unique traits to confuse and incapacitate foes.",
+    "memorable": "Known for its ability to induce confusion and stunning effects while being resilient to various damage types.",
+    "goals": "To incapacitate foes with debilitating effects and manipulate situations to its advantage.",
+    "relations": "Often encountered with other aberrant creatures or as a servant to powerful psionic entities.",
+    "environment": "Can typically be found in areas of psychic disturbance or ancient ruins.",
+    "strengths": "Versatile in both physical attacks and magical abilities, with high intelligence and defensive capabilities against spells.",
+    "weaknesses": "Vulnerable to physical attacks if opponents understand its psionic tactics and abilities.",
+    "attacks": "Utilizes a combination of claw attacks, psychic stings, and confusion-inducing pheromones.",
+    "most_powerful_ability": "Psionic Sting, which stuns and deals significant psychic damage to its target.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 17, allowing it to detect hidden creatures easily.",
+    "skills": "Highly skilled in deception, insight, perception, persuasion, and religion.",
+    "additional_information": [
+        "Immunities to being charmed",
+        "Advantage on saving throws against spells",
+        "Ability to detect alignment of creatures nearby",
+        "Can create psychic confusion in a large radius",
+        "Ability to increase AC against detected attacks"
+    ],
+    "damage_types": [
+        "psychic",
+        "poison"
+    ],
+    "spellcasting": "Can cast various psionic spells using its high Intelligence.",
+    "test_queries": [
+        "psionic monster that confuses enemies",
+        "intelligent creature with poison attacks",
+        "aberation known for mental abilities",
+        "Khalkos tactics and abilities",
+        "dangerous monster that uses pheromones"
+    ]
+}

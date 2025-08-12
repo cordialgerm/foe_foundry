@@ -1,0 +1,7 @@
+{
+  "Sprite": {
+    "relation": "almost_identical",
+    "explanation": "A tiny, nimble fey with flying speed and distraction abilities similar to the Lymarien."
+  },
+  "monster_key": "lymarien"
+}

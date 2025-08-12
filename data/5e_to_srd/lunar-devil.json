@@ -1,0 +1,11 @@
+{
+  "Erinyes": {
+    "relation": "close_cousins",
+    "explanation": "A large, cunning devil with flying ability and melee combat skills similar to the Lunar Devil."
+  },
+  "Giant Owl": {
+    "relation": "conceptually_similar",
+    "explanation": "The Lunar Devil summons giant owls, linking it conceptually to this creature."
+  },
+  "monster_key": "lunar-devil"
+}

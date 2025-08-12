@@ -1,0 +1,55 @@
+{
+    "name": "Chained Angel",
+    "creature_type": "Celestial",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 121,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "60 ft. walking, 30 ft. flying",
+    "role": null,
+    "tags": [
+        "celestial",
+        "angel",
+        "fiery",
+        "chaos"
+    ],
+    "adjectives": [
+        "chained",
+        "powerful",
+        "cunning",
+        "divine"
+    ],
+    "description": "The Chained Angel is a celestial being bound by chains, with a strong build and fiery abilities.",
+    "memorable": "Despite its celestial nature, it embodies a neutral evil alignment and possesses significant magical abilities.",
+    "goals": "Seeking freedom from its chains and possibly vengeance against those who bound it.",
+    "relations": "Can be associated with other celestial beings and may oppose fiends.",
+    "environment": "Typically found in dark or corrupted places, where it might be constrained.",
+    "strengths": "Highly mobile with exceptional Strength and Charisma, and resistant to fire and radiant damage.",
+    "weaknesses": "Vulnerable to certain conditions, and its freedom is limited by the chains binding it.",
+    "attacks": "Multiattack with Fiery Greatsword dealing slashing and fire damage, plus the ability to unleash radiant damage through Fallen Glory.",
+    "most_powerful_ability": "Redemption allows it to retaliate against attempts to free it with unholy flames.",
+    "equipment": "Fiery Greatsword",
+    "senses": "Has darkvision extending 200 feet and a passive Perception score of 17.",
+    "skills": "Proficient in Perception, enabling better detection of threats.",
+    "additional_information": [
+        "Immune to fire and radiant damage",
+        "Can counter spells targeting cleric or paladin spells",
+        "Does not require food, drink, or sleep",
+        "Can unleash unholy flames when freed attempts are made",
+        "Possesses high magical resistance"
+    ],
+    "damage_types": [
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": "Has magical resistance with advantage on saving throws against spells.",
+    "test_queries": [
+        "powerful celestial being with chains",
+        "angel that fights with fiery sword",
+        "chained creature immune to fire",
+        "angel with radiant attack abilities",
+        "celestial being that resists spells"
+    ]
+}

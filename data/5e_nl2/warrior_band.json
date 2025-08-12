@@ -1,0 +1,48 @@
+{
+    "name": "Warrior Band",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Large",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "teamwork",
+        "resilience",
+        "combat"
+    ],
+    "adjectives": [
+        "large",
+        "tactical",
+        "formidable"
+    ],
+    "description": "The Warrior Band is a large humanoid creature that embodies the essence of teamwork and resilience in battle, capable of deploying multiple warriors even in defeat.",
+    "memorable": "Its ability to disperse into two warriors upon being defeated makes it a persistent threat.",
+    "goals": "Engage in close-quarters combat and use tactical teamwork in battle.",
+    "relations": "May be encountered alongside other warrior types or in formations.",
+    "environment": "Typically found in battlegrounds or regions where combat is prevalent.",
+    "strengths": "Noteworthy for its teamwork, ability to split into multiple warriors, and above-average perception.",
+    "weaknesses": "Vulnerable to area damage effects, taking double damage from such attacks.",
+    "attacks": "Uses spears for melee and ranged attacks, dealing substantial piercing damage.",
+    "most_powerful_ability": "Band Dispersal allows it to maintain a presence in combat even after reaching zero hit points.",
+    "equipment": "Spears used for attacking.",
+    "senses": "Has a passive perception of 14, making it adept at noticing hidden threats.",
+    "skills": "Proficient in athletics, stealth, perception, and survival, allowing for effective combat and navigation.",
+    "additional_information": [
+        "Shows resilience through numbers in battle.",
+        "Can share its space with Medium or smaller creatures.",
+        "Can move through openings large enough for a Medium creature without squeezing."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical humanoid warriors in battle",
+        "large creature that splits into multiple fighters",
+        "persistent threat in combat teamwork",
+        "resilient band of warriors with spears",
+        "humanoid warriors vulnerable to area attacks"
+    ]
+}

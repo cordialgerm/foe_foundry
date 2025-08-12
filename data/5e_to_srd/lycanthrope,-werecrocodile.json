@@ -1,0 +1,15 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "The Werecrocodile is a humanoid reptilian predator similar to Lizardfolk in form and habitat."
+  },
+  "Werewolf (Lycanthrope)": {
+    "relation": "close_cousins",
+    "explanation": "As a lycanthrope with humanoid and animal forms and a curse-spreading bite, it shares core traits with the Werewolf."
+  },
+  "Crocodile": {
+    "relation": "conceptually_similar",
+    "explanation": "The Werecrocodile shares the crocodilian features and aquatic ambush predator concept with the Crocodile."
+  },
+  "monster_key": "lycanthrope,-werecrocodile"
+}

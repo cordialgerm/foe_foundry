@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are tiny fey creatures with flight, magical abilities, and nimble combat styles."
+  },
+  "Pixie": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a tiny, magical, flying fey with utility spellcasting and mischievous nature."
+  },
+  "monster_key": "chernomoi"
+}

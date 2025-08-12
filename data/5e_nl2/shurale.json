@@ -1,0 +1,51 @@
+{
+    "name": "Shurale",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "magic",
+        "combat",
+        "deception"
+    ],
+    "adjectives": [
+        "cunning",
+        "mischievous",
+        "dangerous"
+    ],
+    "description": "The Shurale is a medium-sized fey creature with a sly demeanor, characterized by high Dexterity and Charisma. It uses a combination of physical attacks and magical abilities to incapacitate foes.",
+    "memorable": "Its unique Tickle ability can incapacitate enemies with laughter, making it a formidable opponent in combat.",
+    "goals": "The Shurale typically seeks to sow chaos and incapacitate its enemies rather than direct confrontation.",
+    "relations": "Often found in the company of other mischievous fey or magical creatures, and could serve as tricksters or guardians of enchanted areas.",
+    "environment": "Commonly inhabits enchanted forests and mystical realms, where it can utilize its magical abilities effectively.",
+    "strengths": "High Dexterity and Charisma contribute to its agility and deceptive abilities. Magic Resistance grants it advantage on saving throws against spells.",
+    "weaknesses": "Vulnerable to powerful magical effects despite its Magic Resistance and can be hindered by non-magical attacks.",
+    "attacks": "Utilizes a Multiattack to combine its Tickle ability with piercing gore and slashing battleaxe strikes.",
+    "most_powerful_ability": "Mirthful Regeneration allows it to heal from incapacitated enemies, regaining health and gaining temporary hit points from laughing creatures.",
+    "equipment": null,
+    "senses": "The Shurale has a passive Perception of 15, showing a keen awareness of its surroundings.",
+    "skills": "It is particularly skilled in acrobatics and deception, allowing it to maneuver and manipulate situations effectively.",
+    "additional_information": [
+        "Magic Weapons ability means its attacks bypass resistances.",
+        "Innate spellcasting provides tactical versatility with spells.",
+        "The Tickle ability leads to incapacitation and potential death from laughter.",
+        "Regains health from incapacitated foes in close proximity.",
+        "Chaotic by nature, creating confusion among enemies can turn tides in battle."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innatly casts spells like invisibility and confusion, enhancing its strategic options.",
+    "test_queries": [
+        "fey creature that incapacitates with laughter",
+        "cunning trickster fey with magical attacks",
+        "dangerous fey with regenerative laughter ability",
+        "medium fey that uses deception and spells",
+        "agile creature that causes uncontrollable laughter"
+    ]
+}

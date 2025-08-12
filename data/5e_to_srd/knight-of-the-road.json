@@ -1,0 +1,11 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid skilled in stealth, ambush, and manipulation, similar to the Knight of the Road's shadowy and cunning nature."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Embodies shadowy traits and stealth, matching the Knight of the Road's affinity for darkness and evasion."
+  },
+  "monster_key": "knight-of-the-road"
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Dretch",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": "chaotic evil",
+    "size": "small",
+    "hp": 18,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "slow, 20 feet walking speed",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "demon",
+        "chaotic",
+        "low-level"
+    ],
+    "adjectives": [
+        "wretched",
+        "putrid",
+        "cannon fodder",
+        "cowardly"
+    ],
+    "description": "A bloated, twisted form covered in sores and patches of matted fur, with glowing eyes that exude malevolent stupidity.",
+    "memorable": "Its ability to disrupt opponents with its Energy-Sucking Aura and its resilience, coming back to life unless purified.",
+    "goals": "To serve more powerful demons and create chaos in battle.",
+    "relations": "Often found alongside more powerful demons as expendable minions.",
+    "environment": "Chaotic landscapes of the Abyss.",
+    "strengths": "Immunity to poison damage and ability to hinder enemy actions in combat through unique abilities.",
+    "weaknesses": "Very low damage output and poor mental acuity with low intelligence and charisma.",
+    "attacks": "Can bite or claw, dealing minimal damage with the potential for poison effects.",
+    "most_powerful_ability": "Energy-Sucking Aura, limiting enemy actions within a certain radius.",
+    "senses": "Has a passive perception of 9, indicating poor sensory capability.",
+    "skills": "None notably mentioned.",
+    "additional_information": [
+        "Can return to life in the Abyss within 1d10 days after dying unless purified with holy water.",
+        "Radiates a Chaotic Evil aura.",
+        "Uses Fetid Cloud to obscure vision and poison enemies.",
+        "Serves as cannon fodder in battles.",
+        "Attacks in numbers to overwhelm enemies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small demon that disrupts enemy actions",
+        "filthy creature from the Abyss",
+        "nuisance demon with crippling aura",
+        "weak but persistent demon",
+        "chaotic evil fiend that poisons enemies"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Treant": {
+    "relation": "almost_identical",
+    "explanation": "A huge plant guardian resembling a tree with abilities to blend in and summon allies, similar to a Treant."
+  },
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "Summons a swarm of mosquitos as allies, conceptually related to a Swarm of Insects."
+  },
+  "monster_key": "mangrove-treant"
+}

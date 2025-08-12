@@ -1,0 +1,52 @@
+{
+    "name": "Psychic Vampire",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 144,
+    "ac": 17,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "vampire",
+        "psychic",
+        "manipulator"
+    ],
+    "adjectives": [
+        "psychic",
+        "manipulative",
+        "undead",
+        "cunning"
+    ],
+    "description": "The Psychic Vampire is a Medium-sized undead with a formidable presence, embodying a blend of sophistication and malice. It features extraordinary mental powers, allowing it to incapacitate foes through psychic manipulation. It has a durable physique, with notable agility and strength.",
+    "memorable": "Its ability to incapacitate targets through mental manipulation and convert slain foes into vampire spawn makes it a uniquely terrifying opponent.",
+    "goals": "To manipulate and control its foes while sustaining itself through psychic drain and converting enemies into followers.",
+    "relations": "Related to other vampire species, potentially found in the company of other undead or evil-aligned creatures.",
+    "environment": "Typically found in dark and desolate places, where it can exert its mind over others without interference.",
+    "strengths": "Immunity to psychic damage and resistance to necrotic damage allows it to withstand various forms of attacks, while its legendary resistance ensures survival against powerful spells.",
+    "weaknesses": "Vulnerable to sunlight and has restrictions on entering premises without an invitation, limiting its mobility.",
+    "attacks": "Uses Imprison Mind to incapacitate, followed by Psychic Assault to deal psychic damage and instill memory loss in enemies.",
+    "most_powerful_ability": "Imprison Mind ability can incapacitate opponents for up to a minute, rendering them helpless and vulnerable.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can summon additional creatures with Knowledge Keepers ability",
+        "Regenerates health unless exposed to radiant damage or holy water",
+        "Can levitate and climb walls, making it difficult to pin down",
+        "Possesses legendary actions for additional tactical advantages",
+        "Can convert slain humanoids into vampire spawn"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with psychic abilities",
+        "creature that manipulates minds and drains life",
+        "vampire that can summon allies in battle",
+        "cunning undead that thrives in darkness",
+        "psychic vampire with sunlight vulnerability"
+    ]
+}

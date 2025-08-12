@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "almost_identical",
+    "explanation": "The Goblin Boss is a close variant of the Goblin, serving as a leader with similar size, abilities, and equipment but with enhanced tactical command."
+  },
+  "monster_key": "goblin-boss"
+}

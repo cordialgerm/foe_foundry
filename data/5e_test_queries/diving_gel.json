@@ -1,0 +1,25 @@
+{
+    "name": "Diving Gel",
+    "queries": [
+        {
+            "query": "tiny swimming ooze with the ability to breathe underwater",
+            "variant": "tiny ooze that swims and can breath underwater"
+        },
+        {
+            "query": "gel-like creature that restricts breathing and is weak in strength",
+            "variant": "creature made of gel that can restrict breathing and has low strength"
+        },
+        {
+            "query": "small ooze that excels in water but has limited movement on land",
+            "variant": "little ooze great in water but moves slowly on land"
+        },
+        {
+            "query": "amorphous ooze that can attach to other creatures for advantage",
+            "variant": "ooze that can change shape and attach for combat advantage"
+        },
+        {
+            "query": "Diving Gel's dexterity and its resistances to fire and acid",
+            "variant": "Diving Gel dexterity score and resistances against acid and fire"
+        }
+    ]
+}

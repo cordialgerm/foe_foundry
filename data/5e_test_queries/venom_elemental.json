@@ -1,0 +1,25 @@
+{
+    "name": "Venom Elemental",
+    "queries": [
+        {
+            "query": "poison-using aquatic creature that can slip through tight spaces",
+            "variant": "aquatic creature that uses poison and can slip through narrow spaces"
+        },
+        {
+            "query": "large elemental monster with high hit points that inflicts poison damage",
+            "variant": "large monster elemental with high HP that deals poison damage"
+        },
+        {
+            "query": "mobile poison elemental that excels in underwater stealth",
+            "variant": "stealthy poison elemental that is very mobile underwater"
+        },
+        {
+            "query": "monster with high Constitution and immunity to poison damage",
+            "variant": "creature with high Con and is immune to poison damage"
+        },
+        {
+            "query": "elemental that attacks with bites and inflicts ongoing poison effects",
+            "variant": "elemental that bites and causes ongoing poison damage"
+        }
+    ]
+}

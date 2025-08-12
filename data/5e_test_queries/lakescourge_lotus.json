@@ -1,0 +1,25 @@
+{
+    "name": "Lakescourge Lotus",
+    "queries": [
+        {
+            "query": "undead creature that poisons foes and can walk on water",
+            "variant": "undead monster that can poison enemies and walks on water"
+        },
+        {
+            "query": "aquatic monster with high HP and the ability to stealth",
+            "variant": "water-based creature with great health and stealth skills"
+        },
+        {
+            "query": "chaotic evil undead that creates toxic water",
+            "variant": "chaotic evil undead monster that produces toxic water"
+        },
+        {
+            "query": "Medium undead with reflective form and area control abilities",
+            "variant": "medium undead creature that has reflection ability and controls area"
+        },
+        {
+            "query": "poisonous attacker that is immune to cold damage and cannot sleep",
+            "variant": "poison-using attacker that is immune to cold and does not need sleep"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Lich": {
+    "relation": "close_cousins",
+    "explanation": "The Demilich is a powerful undead spellcaster closely related to the Lich but smaller and more ethereal."
+  },
+  "monster_key": "demilich"
+}

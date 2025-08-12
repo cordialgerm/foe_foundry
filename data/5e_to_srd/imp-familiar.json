@@ -1,0 +1,7 @@
+{
+  "Imp": {
+    "relation": "almost_identical",
+    "explanation": "The Imp Familiar closely matches the Imp with its tiny size, fiend type, flight, invisibility, poison sting, and shape-shifting abilities."
+  },
+  "monster_key": "imp-familiar"
+}

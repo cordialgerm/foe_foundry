@@ -1,0 +1,25 @@
+{
+    "name": "Krake Spawn",
+    "queries": [
+        {
+            "query": "huge underwater monster with grappling tentacles",
+            "variant": "huge monster underwater that has grappling tentacles"
+        },
+        {
+            "query": "monstrosity that emits poison cloud and has a high AC",
+            "variant": "monstrous creature with a high AC that creates a poison cloud"
+        },
+        {
+            "query": "amphibious creature with high strength and cold immunity",
+            "variant": "creature that is amphibious, immune to cold, and has high strength"
+        },
+        {
+            "query": "Krake Spawn combat abilities including biting and tentacle attacks",
+            "variant": "combat abilities of Krake Spawn that involve biting and tentacles"
+        },
+        {
+            "query": "powerful aquatic monster with acid attacks and good saving throws",
+            "variant": "aquatic monster that is powerful, has acid attacks, and good saving throws"
+        }
+    ]
+}

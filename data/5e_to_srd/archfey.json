@@ -1,0 +1,15 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful, intelligent fey-like creatures with strong magical abilities and a commanding presence."
+  },
+  "Archmage": {
+    "relation": "mechanically_similar",
+    "explanation": "The Archfey's versatile spellcasting and high Charisma resemble the Archmage's focus on powerful magic and spell versatility."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Archfey shares the fey creature type and connection to natural, enchanted environments with Dryads."
+  },
+  "monster_key": "archfey"
+}

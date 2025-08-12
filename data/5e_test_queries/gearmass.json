@@ -1,0 +1,25 @@
+{
+    "name": "Gearmass",
+    "queries": [
+        {
+            "query": "large ooze creature with corrosive effects on metal",
+            "variant": "big ooze monster that damages metal weapons"
+        },
+        {
+            "query": "hazardous environmental ooze that grapples and engulfs",
+            "variant": "dangerous ooze that can grapple and engulf enemies"
+        },
+        {
+            "query": "monster that moves through tight spaces and makes noise",
+            "variant": "creature that can fit through narrow areas and is noisy"
+        },
+        {
+            "query": "High constitution ooze that inflicts ongoing damage",
+            "variant": "ooze with great constitution causing continuous damage"
+        },
+        {
+            "query": "monster with low dexterity and high hit points",
+            "variant": "creature with poor dexterity and a lot of hit points"
+        }
+    ]
+}

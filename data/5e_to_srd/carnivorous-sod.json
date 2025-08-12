@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based ambushers that blend into natural environments and use physical attacks to subdue prey."
+  },
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a stationary or slow-moving plant-like creature that ambushes prey and thrives in natural settings."
+  },
+  "monster_key": "carnivorous-sod"
+}

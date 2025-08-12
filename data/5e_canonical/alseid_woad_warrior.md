@@ -1,6 +1,8 @@
 <MonsterName/>Alseid, Woad Warrior</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>55</HP>
 <summary>The Alseid, a Woad Warrior, is a medium-sized chaotic neutral monstrosity known for its affinity with nature and combat capabilities. With an armor class of 14 and a solid hit point total of 55, the Alseid presents a formidable challenge to adventurers, boasting a good balance of defense and offense. Its ability to move quickly, with a speed of 40 feet, allows it to reposition itself effectively in combat. The Challenge Rating of 2 suggests it is suitable for a party of low-level adventurers, providing a moderate threat. Notable strengths of the Alseid include its advantage on intimidation checks and saving throws against fear, along with its capabilities in forested environments, allowing it to navigate without leaving tracks. However, its lower intelligence makes it less effective at strategic thinking and problem-solving in scenarios requiring intellect.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Alseid can use its "Dye Bomb" ability three times per day, lob
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alseid, Woad Warrior
 
 *Medium* *Monstrosity* *chaotic neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Dye Bomb (3/Day):** Lobs a sphere of concentrated dye that explodes on impact marking creatures caught in its effect. Each creature within a 10 ft. radius of where sphere landed: DC 13 Dex save or be brightly painted for 8 hrs. Any attack roll vs. creature has advantage if attacker can see it and other creatures have advantage on any Wis (Perception) or Wis (Survival) check made to find the marked creature. To remove the effect a creature must spend 1 min bathing. Alternatively spells that create water or clean objects such as prestidigitation also remove the effect.
 
 
+</statblock>
 
 

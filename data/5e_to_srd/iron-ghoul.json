@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Iron Ghoul is an undead similar to a Ghoul with enhanced durability, paralysis, and disease effects."
+  },
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "Like a Ghast, the Iron Ghoul is a powerful undead that inflicts paralysis and disease, acting as a fearsome combatant."
+  },
+  "monster_key": "iron-ghoul"
+}

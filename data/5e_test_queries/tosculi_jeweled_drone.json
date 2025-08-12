@@ -1,0 +1,25 @@
+{
+    "name": "Tosculi Jeweled Drone",
+    "queries": [
+        {
+            "query": "small humanoid flying creature with pheromones that helps allies",
+            "variant": "small humanoid that flies and uses pheromones to aid allies"
+        },
+        {
+            "query": "lawful evil creature that can blind enemies in bright light",
+            "variant": "creature with lawful evil alignment that blinds foes in sunlight"
+        },
+        {
+            "query": "9140 with high dexterity and poison attacks",
+            "variant": "high dexterity humanoid that uses poisonous attacks"
+        },
+        {
+            "query": "Tosculi Jeweled Drone abilities that enhance allies",
+            "variant": "abilities of the Jeweled Drone that boost its allies"
+        },
+        {
+            "query": "creature immune to charm and fright with multiattack",
+            "variant": "monster that can't be charmed or frightened and has multiple attacks"
+        }
+    ]
+}

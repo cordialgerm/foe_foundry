@@ -1,0 +1,52 @@
+{
+    "name": "Kobold",
+    "creature_type": "Humanoid",
+    "creature_subtype": "kobold",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 5,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 feet swift movement",
+    "role": "Skirmisher",
+    "tags": [
+        "tribal",
+        "cunning",
+        "reptilian"
+    ],
+    "adjectives": [
+        "small",
+        "cowardly",
+        "agile",
+        "shrewd"
+    ],
+    "description": "Kobolds are small, reptilian humanoids with scaly skin that is often reddish or brown, large beady eyes, and a notorious reputation for cowardice coupled with cunning.",
+    "memorable": "Kobolds rely on sheer numbers and cunning traps, worshiping dragon-like ancestors.",
+    "goals": "To survive and thrive in numbers while worshiping their dragon deities.",
+    "relations": "Often found in large tribes, they work together, making them more dangerous as a group.",
+    "environment": "Tunnels, caves, or ruins, often in close-knit tribal communities.",
+    "strengths": "Possess Pack Tactics, offering them advantages during combat in groups.",
+    "weaknesses": "Vulnerable to sunlight, suffering disadvantages in bright conditions.",
+    "attacks": "Effective melee attack with a Dagger and a ranged attack with a Sling.",
+    "most_powerful_ability": "Pack Tactics allowing advantage on attack rolls against enemies when allies are near.",
+    "equipment": null,
+    "senses": "They possess darkvision up to 60 feet.",
+    "skills": "Excellent Stealth, making them hard to detect.",
+    "additional_information": [
+        "Very weak in direct combat due to low hit points.",
+        "Use tools or weapons opportunistically and resourcefully.",
+        "Greatly enhances combat effectiveness in tribal settings.",
+        "Can move strategically in combat without triggering attacks.",
+        "Poor perception in bright sunlight, limiting their scouting abilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning small reptilian humanoid",
+        "tribal creature that worships dragons",
+        "cowardly creature that uses traps",
+        "skirmisher with Pack Tactics ability",
+        "small agile creature that thrives in groups"
+    ]
+}

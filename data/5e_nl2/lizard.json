@@ -1,0 +1,51 @@
+{
+    "name": "Lizard",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "tiny",
+    "hp": 2,
+    "ac": 10,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 ft. walking and climbing speed",
+    "role": null,
+    "tags": [
+        "reptile",
+        "small",
+        "stealthy"
+    ],
+    "adjectives": [
+        "tiny",
+        "agile",
+        "cold-blooded",
+        "fragile"
+    ],
+    "description": "A tiny cold-blooded reptile, often blending into its environment with sharp claws and teeth, primarily found in warm climates.",
+    "memorable": "Lizards can detach their tails as a defensive maneuver, allowing them to escape danger.",
+    "goals": "Primarily to survive by evading predators and finding food.",
+    "relations": "Often used as familiars or pets by spellcasters.",
+    "environment": "Commonly found in deserts, jungles, and rocky areas.",
+    "strengths": "Excellent climbers and possess the ability to evade detection.",
+    "weaknesses": "Extremely fragile with low hit points and poor combat capabilities.",
+    "attacks": "Bite attack inflicts 1 piercing damage, with low odds of success.",
+    "most_powerful_ability": "Detach Tail allows it to reduce damage taken and escape quickly.",
+    "equipment": null,
+    "senses": "Has darkvision with a range of 30 feet, helping it navigate low-light environments.",
+    "skills": "Passive Perception of 9 indicates very basic awareness of surroundings.",
+    "additional_information": [
+        "Very low challenge rating, making it an inconsequential combatant.",
+        "Can serve as a useful companion or scout for low-level characters.",
+        "Common prey animal in ecosystems, easily overlooked.",
+        "Lacks significant combat abilities, focusing on stealth and evasion.",
+        "Incapacitated creatures take no damage if bitten by the Lizard."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny reptile that can detach its tail",
+        "small agile creature found in jungles",
+        "stealthy little creature with low hit points",
+        "cold-blooded lizard that climbs well",
+        "fragile animal that can be a familiar"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Ashwalker is an undead malevolent energy creature similar to a Wraith in its incorporeal and relentless nature."
+  },
+  "Adult Black Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ashwalker has draconic traits and elemental damage related to the dragon that killed it, conceptually similar to an Adult Black Dragon's acid affinity."
+  },
+  "Adult Red Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ashwalker embodies elemental traits of dragons, such as fire damage like an Adult Red Dragon."
+  },
+  "monster_key": "ashwalker"
+}

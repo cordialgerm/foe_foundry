@@ -1,0 +1,25 @@
+{
+    "name": "Rat King",
+    "queries": [
+        {
+            "query": "sinister leader of rats that can burrow and has poison immunity",
+            "variant": "evil rat leader that can burrow and is immune to poison"
+        },
+        {
+            "query": "monstrosity with high Dexterity and low Strength residing in urban settings",
+            "variant": "creature with great agility and weak Strength living in city areas"
+        },
+        {
+            "query": "medium-sized creature that causes misfortune and can summon additional rats",
+            "variant": "medium monster that brings bad luck and can call more rats"
+        },
+        {
+            "query": "underworld creature immune to paralysis and capable of stealth attacks",
+            "variant": "creature from the shadows immune to being paralyzed and can strike stealthily"
+        },
+        {
+            "query": "chaotic evil rat monster with the ability to absorb others for temporary health",
+            "variant": "chaotic evil rat creature that can absorb allies to gain temporary hit points"
+        }
+    ]
+}

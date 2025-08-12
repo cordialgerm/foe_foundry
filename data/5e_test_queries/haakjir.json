@@ -1,0 +1,25 @@
+{
+    "name": "Haakjir",
+    "queries": [
+        {
+            "query": "medium-sized monster with earth manipulation and powerful claws",
+            "variant": "medium sized monstrosity that manipulates earth and has strong claws"
+        },
+        {
+            "query": "creature resilient to piercing and slashing attacks with climbing ability",
+            "variant": "resilient monster against slashing and piercing attacks that can climb"
+        },
+        {
+            "query": "monster adept at tactical combat and hiding in rocky environments",
+            "variant": "monster skilled in tactical fights and good at hiding in rock terrains"
+        },
+        {
+            "query": "neutral creature that can burrow and has Pack Tactics",
+            "variant": "neutral monster with burrowing abilities and Pack Tactics"
+        },
+        {
+            "query": "strength-focused creature that uses Claw attacks effectively in combat",
+            "variant": "creature with a focus on strength who utilizes Claw attacks in fights"
+        }
+    ]
+}

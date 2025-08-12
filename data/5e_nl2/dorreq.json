@@ -1,0 +1,53 @@
+{
+    "name": "Dorreq",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "slow movement of 15 feet",
+    "role": "Ambusher",
+    "tags": [
+        "aberration",
+        "ambush",
+        "control"
+    ],
+    "adjectives": [
+        "deceptive",
+        "dangerous",
+        "formidable"
+    ],
+    "description": "The Dorreq is a Medium aberration characterized by its warped appearance and the ability to manipulate space. It possesses powerful limbs ready for physical attacks and is adept at stealth.",
+    "memorable": "Its ability to warp space and deal thunder and necrotic damage makes it a unique and treacherous opponent.",
+    "goals": "The Dorreq seeks to ambush its enemies, using control and damage to dominate the battlefield.",
+    "relations": "Typically found in the company of other nefarious aberrations, potentially serving greater dark forces.",
+    "environment": "Commonly inhabits dark, rocky terrains where it can utilize its Stone Step ability to teleport.",
+    "strengths": "High Dexterity and exceptional stealth skills, resistant to multiple damage types.",
+    "weaknesses": "Low movement speed and poor situational awareness due to low Wisdom.",
+    "attacks": "Utilizes a powerful Bite and Tentacle attacks for grappling and controlling foes.",
+    "most_powerful_ability": "Void Thrum, which deals significant thunder and necrotic damage to multiple creatures nearby.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": "Skilled in Stealth with a +8 modifier, making it exceptional at remaining undetected.",
+    "additional_information": [
+        "Can grapple two Medium or smaller creatures simultaneously.",
+        "Uses Void Warping to control enemy movement.",
+        "Teleports short distances using Stone Step.",
+        "Resistant to acid, cold, and lightning damage.",
+        "Has a strong physical attack with high damage potential."
+    ],
+    "damage_types": [
+        "thunder",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that warps space and whispers",
+        "aberration with thunder and necrotic attacks",
+        "stealthy creature that grapples opponents",
+        "deceptive ambush monster from rocky terrain",
+        "medium size monster that moves slowly and attacks powerfully"
+    ]
+}

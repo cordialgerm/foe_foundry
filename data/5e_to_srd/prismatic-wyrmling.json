@@ -1,0 +1,11 @@
+{
+  "Gold Dragon Wyrmling": {
+    "relation": "close_cousins",
+    "explanation": "A medium dragon wyrmling with radiant-themed abilities and spellcasting similar to a Gold Dragon Wyrmling."
+  },
+  "Young Gold Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the radiant and magical nature of a Young Gold Dragon but as a smaller wyrmling with unique prismatic traits."
+  },
+  "monster_key": "prismatic-wyrmling"
+}

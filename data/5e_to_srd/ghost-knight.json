@@ -1,0 +1,19 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "The Ghost Knight is a spectral undead warrior similar to a Ghost, sharing its ethereal nature and undead traits."
+  },
+  "Knight": {
+    "relation": "almost_identical",
+    "explanation": "The Ghost Knight is a formidable armored warrior like a Knight, equipped with melee weapons and combat skills."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "The Ghost Knight's mount is a skeletal warhorse, closely related to the Skeleton as an undead combatant."
+  },
+  "Warhorse Skeleton": {
+    "relation": "almost_identical",
+    "explanation": "The Ghost Knight rides a Warhorse Skeleton, making this an exact match for its mount."
+  },
+  "monster_key": "ghost-knight"
+}

@@ -1,0 +1,7 @@
+{
+  "Mummy": {
+    "relation": "close_cousins",
+    "explanation": "The Accursed Defiler is a desert-themed undead with resilience and a cursed existence similar to a Mummy."
+  },
+  "monster_key": "accursed-defiler"
+}

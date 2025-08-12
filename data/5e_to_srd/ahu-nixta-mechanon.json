@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with combat roles and physical presence, though the Mechanon has additional restorative and versatile abilities."
+  },
+  "Shield Guardian": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs designed to protect and support allies, with the Mechanon having unique soul-based healing."
+  },
+  "monster_key": "ahu-nixta-mechanon"
+}

@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amorphous oozes with corrosive acid damage and the ability to move through narrow spaces."
+  },
+  "monster_key": "pustulent-shambler"
+}

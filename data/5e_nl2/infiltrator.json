@@ -1,0 +1,51 @@
+{
+    "name": "Infiltrator",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "stealth",
+        "spellcaster",
+        "skillful"
+    ],
+    "adjectives": [
+        "cunning",
+        "adaptable",
+        "intelligent",
+        "charming"
+    ],
+    "description": "The Infiltrator is a Medium humanoid known for its stealth and adaptability, equipped with studded leather armor, wielding shortswords and a dagger, with a keen sense of charm.",
+    "memorable": "Possesses the unique Knowledge Charm, granting proficiency in skills and additional languages for tactical advantages.",
+    "goals": "Engage in operations requiring stealth and manipulation; often employed in subterfuge.",
+    "relations": "May serve or be associated with organizations focused on espionage or subterfuge.",
+    "environment": "Often found in urban areas where stealth and charm are advantageous.",
+    "strengths": "High intelligence and charisma enhance its spellcasting and tactical social interactions.",
+    "weaknesses": "Average physical strength limits its combat effectiveness compared to brawny foes.",
+    "attacks": "Utilizes multiattack with two shortsword strikes and a dagger thrust; can also engage at range with a light crossbow.",
+    "most_powerful_ability": "Invisibility, allowing it to evade detection for tactical repositioning or ambush.",
+    "equipment": null,
+    "senses": "Possesses passive Perception 14, reflecting its above-average perceptiveness.",
+    "skills": "Has proficiency in perception and can gain proficiency in additional skills through its Knowledge Charm.",
+    "additional_information": [
+        "Can cast spells like charm person and sleep to control encounters.",
+        "Employs Cunning Action to reposition quickly during combat.",
+        "Excels in social interactions thanks to high charisma and charm abilities.",
+        "Focuses on versatility in combat with spells and melee attacks.",
+        "Relies on stealth and adaptability for survival and success."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast minor illusion, mage hand, and message at will, with charm person and sleep three times per day, and invisibility once per day.",
+    "test_queries": [
+        "stealthy humanoid with charm abilities",
+        "clever infiltrator that uses magic",
+        "medium humanoid focused on subterfuge",
+        "escapable enemy that can vanish",
+        "skillful rogue with spellcasting"
+    ]
+}

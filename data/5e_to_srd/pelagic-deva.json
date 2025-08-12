@@ -1,0 +1,19 @@
+{
+  "Deva": {
+    "relation": "almost_identical",
+    "explanation": "The Pelagic Deva is a celestial guardian similar to a Deva but adapted for aquatic environments with unique abilities like polymorphing and anoxic aura."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "The Pelagic Deva can polymorph creatures into a giant octopus, sharing thematic aquatic traits."
+  },
+  "Hunter Shark": {
+    "relation": "conceptually_similar",
+    "explanation": "The polymorph options include a hunter shark, linking the Pelagic Deva conceptually to this aquatic predator."
+  },
+  "Plesiosaurus": {
+    "relation": "conceptually_similar",
+    "explanation": "The Pelagic Deva can transform willing creatures into a plesiosaurus, connecting it conceptually to this aquatic dinosaur."
+  },
+  "monster_key": "pelagic-deva"
+}

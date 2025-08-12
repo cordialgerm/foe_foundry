@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Niya-Atha Raja is a fey creature with a commanding presence and magical resistance, similar to Dryads as fey guardians of nature."
+  },
+  "Satyr": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fey nature, agility, and charm-related abilities, though mechanically different."
+  },
+  "monster_key": "niya-atha-raja"
+}

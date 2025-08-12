@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Dwarf Soldier</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>16</AC>
+<HP/>19</HP>
 <summary>The Mountain Dwarf Soldier is a robust and disciplined humanoid warrior known for its resilience and combat proficiency. With an Armor Class of 16, this soldier is relatively difficult to hit, making them a formidable presence on the battlefield. Their Hit Points total 19, providing them with decent survivability for their Challenge Rating of 1/2, which allows them to be a viable opponent for low-level adventurers. They possess a balanced mix of physical strength and endurance, with a Strength score of 14, which gives them a good modifier of +2, and a Constitution score of 14, also granting a +2 modifier. However, they are not overly charismatic or wise, with scores of 10 in Intelligence, Wisdom, and Charisma, translating to average performance in those areas. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ For a bonus action, the Mountain Dwarf Soldier can utilize Tactical Movement, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Dwarf Soldier
 
 *Medium* *Humanoid*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Tactical Movement:** Until the end of the soldiers turn, their Speed is halved and their movement doesnt provoke opportunity attacks.
 
 
+</statblock>
 
 

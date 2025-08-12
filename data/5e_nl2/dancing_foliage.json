@@ -1,0 +1,55 @@
+{
+    "name": "Dancing Foliage",
+    "creature_type": "Plant",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "40 feet walking speed with enhanced mobility",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "guardian",
+        "mobility",
+        "charm",
+        "nature"
+    ],
+    "adjectives": [
+        "whimsical",
+        "agile",
+        "charming",
+        "chaotic"
+    ],
+    "description": "A charming plant creature with serrated leaves and colorful petals, resembling a flowering shrub, agile and capable of graceful movements.",
+    "memorable": "Ability to charm and incapacitate multiple creatures with dance while evading attacks and blending into its surroundings.",
+    "goals": "To protect nature and assist those who respect the natural world.",
+    "relations": "May be encountered alongside other nature-themed creatures or guardians.",
+    "environment": "Natural and forested areas, typically where flora is rejuvenated or protected.",
+    "strengths": "High dexterity for evasive movements, ability to charm and control battlefield dynamics.",
+    "weaknesses": "Vulnerable to fire damage, which poses significant risk in combat situations.",
+    "attacks": "Strikes with serrated leaves for slashing damage and utilizes powerful area-of-effect capabilities through Flower Dance.",
+    "most_powerful_ability": "Alluring Dance can incapacitate multiple targets, rendering them unable to act while charmed.",
+    "equipment": null,
+    "senses": "Passive perception of 13, indicating good awareness of surroundings.",
+    "skills": "Proficient in acrobatics and performance, allowing for graceful movements and captivating presence.",
+    "additional_information": [
+        "Immune to poison damage and conditions such as exhaustion and fear.",
+        "Can use Evasion to completely negate damage from area effects.",
+        "False Appearance allows it to blend into the environment, perfect for ambush tactics.",
+        "Nimble Dance boosts mobility, allowing for quick disengagements.",
+        "Reactive ability Shower of Petals imposes disadvantage on attackers targeting it."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "charming creature that controls nature",
+        "plant monster with evasive abilities",
+        "whimsical guardian of the forest",
+        "creature that charms and protects nature",
+        "mobile plant creature with leaf attacks"
+    ]
+}

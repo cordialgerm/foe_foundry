@@ -1,6 +1,8 @@
 <MonsterName/>Archfey</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>12</CR>
+<AC/>16</AC>
+<HP/>330</HP>
 <summary>The Archfey is a powerful Medium Fey creature, renowned for its magical prowess and ability to manipulate its size, making it a formidable opponent in combat. With an Armor Class of 16 and a significant pool of 330 hit points, the Archfey can withstand considerable damage while delivering its own through both melee and ranged attacks. It possesses high Dexterity and Charisma, providing it with very good agility and social influence, while its significant Wisdom enhances its perception and insight in interactions. With a Challenge Rating of 12, it is designed for higher-level encounters, making it a tough adversary or a valuable ally. The Archfey's ability to avoid common conditions like being charmed or poisoned adds to its resilience. However, it can be outmatched by foes that capitalize on its lower Strength and Constitution.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Archfey can utilize Faerie Step to teleport up to 60 feet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archfey
 
 *Medium* *Fey*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Vengeful Eye:** When the archfey is hit by a ranged attack or targeted with a spell by a creature within 60 feet, it uses Evil Eye on the attacker if they can see each other.
 
 
+</statblock>
 
 

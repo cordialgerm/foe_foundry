@@ -1,0 +1,49 @@
+{
+    "name": "Giant Elk",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 42,
+    "ac": 14,
+    "srd": true,
+    "cr": "2",
+    "movement": "60 feet per round",
+    "role": null,
+    "tags": [
+        "herbivore",
+        "powerful",
+        "wild"
+    ],
+    "adjectives": [
+        "majestic",
+        "enormous"
+    ],
+    "description": "A Giant Elk is an enormous, majestic herbivore, standing far taller than a horse, with large, sweeping antlers that serve as powerful weapons.",
+    "memorable": "The Giant Elk is a symbol of the wild's untamed beauty and possesses the ability to charge at foes, knocking them down.",
+    "goals": "Roams freely in small herds in deep forests or vast plains.",
+    "relations": "Often found near other forest creatures and considered a sign of significant events in some cultures.",
+    "environment": "Deep forests and vast plains.",
+    "strengths": "High physical attributes, capable of delivering significant damage and knocking enemies prone.",
+    "weaknesses": "Very low Intelligence; struggles with social interactions and strategic planning.",
+    "attacks": "Can perform a powerful Ram attack dealing 11 bludgeoning damage and a Kick attack that deals 9 bludgeoning damage to prone targets.",
+    "most_powerful_ability": "Charge ability allows it to deal extra damage and knock targets prone.",
+    "equipment": null,
+    "senses": "Possesses keen perception with a passive score of 14.",
+    "skills": "Has proficiency in Perception, enhancing its awareness of surroundings.",
+    "additional_information": [
+        "Can perform a multiattack with a Ram and a Kick.",
+        "Species known for its majestic presence.",
+        "Considered a divine omen in some cultures.",
+        "Relatively low armor class, making it easier to hit.",
+        "Ability to use a Bolstering Bugle for attacking advantage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive herbivore with large antlers",
+        "majestic forest creature capable of charging",
+        "huge elk known for its strength and speed",
+        "wild creature that roams in herds",
+        "enormous elk with powerful antler attacks"
+    ]
+}

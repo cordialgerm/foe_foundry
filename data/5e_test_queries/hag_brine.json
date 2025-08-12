@@ -1,0 +1,25 @@
+{
+    "name": "Brine Hag",
+    "queries": [
+        {
+            "query": "toxic water creature that can summon aquatic allies",
+            "variant": "water creature that summons aquatic allies and is toxic"
+        },
+        {
+            "query": "evil fey that thrives in aquatic environments with spellcasting abilities",
+            "variant": "evil fey thriving in water with magic skills"
+        },
+        {
+            "query": "medium-sized fey monster with natural armor and poisonous aura",
+            "variant": "medium-sized fey entity with poison aura and natural armor"
+        },
+        {
+            "query": "brine hag abilities related to swimming and resistances",
+            "variant": "brine hag's swimming abilities and resistances"
+        },
+        {
+            "query": "creature that can breathe both air and water with high Charisma for spells",
+            "variant": "creature that breathes air and water with high spellcasting Charisma"
+        }
+    ]
+}

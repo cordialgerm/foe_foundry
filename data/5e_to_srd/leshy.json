@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are nature spirits with a humanoid form connected to plants and forests."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based monstrosities embodying nature and using vegetation in combat."
+  },
+  "monster_key": "leshy"
+}

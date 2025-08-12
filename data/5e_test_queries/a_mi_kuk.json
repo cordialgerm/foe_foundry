@@ -1,0 +1,25 @@
+{
+    "name": "A-mi-kuk",
+    "queries": [
+        {
+            "query": "huge creature with icy slime and fear of fire",
+            "variant": "huge monster that has icy slime and is afraid of fire"
+        },
+        {
+            "query": "strong aberration that thrives in underwater environments",
+            "variant": "powerful aberration that excels in aquatic environments"
+        },
+        {
+            "query": "creature resistant to cold and bludgeoning damage",
+            "variant": "monster immune to cold and resistant against bludgeoning attacks"
+        },
+        {
+            "query": "chaotic evil monster with high hit points and melee attacks",
+            "variant": "chaotic evil creature that has a lot of hit points and melee abilities"
+        },
+        {
+            "query": "A-mi-kuk abilities including strangle and icy slime",
+            "variant": "abilities of A-mi-kuk like strangle and icy slime"
+        }
+    ]
+}

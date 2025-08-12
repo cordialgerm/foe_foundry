@@ -1,0 +1,25 @@
+{
+    "name": "Kappa",
+    "queries": [
+        {
+            "query": "small fey creature that lives near lakes and has amphibious abilities",
+            "variant": "small fey creature that resides by lakes and can breathe both air and water"
+        },
+        {
+            "query": "trickster with a water bowl on its head and grapple ability",
+            "variant": "trickster creature with a bowl on its head for water and grappling talent"
+        },
+        {
+            "query": "agile monster that excels in physical contests and struggles without water",
+            "variant": "agile creature that is good in physical contests and has issues when lacking water"
+        },
+        {
+            "query": "chaotic fey known for cunning and strength in close combat",
+            "variant": "chaotic fey recognized for its cleverness and physical power in melee"
+        },
+        {
+            "query": "small creature with high strength and abilities for escaping grapples",
+            "variant": "tiny creature with impressive strength and skills to break free from grapples"
+        }
+    ]
+}

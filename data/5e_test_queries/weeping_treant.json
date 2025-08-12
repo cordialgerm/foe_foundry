@@ -1,0 +1,25 @@
+{
+    "name": "Weeping Treant",
+    "queries": [
+        {
+            "query": "large plant creature that can communicate with plants and oozes acid",
+            "variant": "big plant monster that speaks to plants and drips acid"
+        },
+        {
+            "query": "tree-like monster that is vulnerable to fire and has high hit points",
+            "variant": "tree creature weak to fire with a lot of health"
+        },
+        {
+            "query": "neutral plant creature with bludgeoning resistance and acidic sap attacks",
+            "variant": "neutral plant monster resistant to bludgeoning with acid-based attacks"
+        },
+        {
+            "query": "Weeping Treant's offensive capabilities and environmental interactions",
+            "variant": "Weeping Treant's attack power and how it interacts with the environment"
+        },
+        {
+            "query": "huge creature with Siege Monster ability that deals extra damage to structures",
+            "variant": "big beast with Siege Monster trait that does extra damage to buildings"
+        }
+    ]
+}

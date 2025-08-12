@@ -1,0 +1,25 @@
+{
+    "name": "Cat",
+    "queries": [
+        {
+            "query": "tiny agile creature with sharp claws that can climb and see in the dark",
+            "variant": "small swift animal that has claws, climbs, and can see in dim light"
+        },
+        {
+            "query": "stealthy cat-like creature that excels in perception and has a charming ability",
+            "variant": "cat-like stealthy beast that is good at perception and can charm others"
+        },
+        {
+            "query": "small mammal known for its independence and silent movements in urban areas",
+            "variant": "tiny independent animal recognized for quiet movements in towns"
+        },
+        {
+            "query": "small cat that can fall safely and has a heightened sense of smell",
+            "variant": "little cat capable of safe landings and enhanced smell perception"
+        },
+        {
+            "query": "non-threatening small beast that can serve as a spy or companion",
+            "variant": "not dangerous tiny creature serving as a companion or stealthy observer"
+        }
+    ]
+}

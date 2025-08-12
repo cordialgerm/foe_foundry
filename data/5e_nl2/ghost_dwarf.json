@@ -1,0 +1,51 @@
+{
+    "name": "Ghost Dwarf",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 81,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 40 ft., walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "ghost",
+        "dwarf"
+    ],
+    "adjectives": [
+        "restless",
+        "malevolent",
+        "incorporeal"
+    ],
+    "description": "The Ghost Dwarf embodies the restless spirit of a once-living dwarf, with an ethereal appearance and the ability to move through solid objects.",
+    "memorable": "With abilities like Aura of Defiance and necrotic attacks, it can control the battlefield while being difficult to directly engage due to its incorporeal movement.",
+    "goals": "It likely seeks to enact vengeance or fulfill unfinished business from its life.",
+    "relations": "Often found in the company of other undead creatures, especially those in service to dark powers.",
+    "environment": "Typically found in crypts, abandoned mines, or other dark, secluded areas.",
+    "strengths": "Highly mobile due to incorporeal movement, can frighten opponents and reduce their hit point maximum.",
+    "weaknesses": "Sensitive to sunlight, suffering disadvantages in attacks and perception checks in daylight.",
+    "attacks": "Uses Ghostly Axe for versatile melee or ranged attacks, and Hand of the Grave inflicts significant necrotic damage while reducing hit point maximum.",
+    "most_powerful_ability": "Prayers Unanswered can frighten multiple foes, establishing control and panic on the battlefield.",
+    "senses": "Ethereal Sight allows it to see into the Ethereal Plane, providing tactical advantages.",
+    "skills": null,
+    "additional_information": [
+        "Immune to necrotic and poison damage.",
+        "Resistance to several elemental damage types.",
+        "Advantage on saving throws against effects that turn undead.",
+        "Can perceive entities on the Ethereal Plane.",
+        "Can enter the Ethereal Plane for tactical repositioning."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead dwarf that can fly",
+        "ghostly creature with necrotic attacks",
+        "flying undead that frightens opponents",
+        "dwarf spirit with incorporeal movement",
+        "ghost that weakens hit point maximum"
+    ]
+}

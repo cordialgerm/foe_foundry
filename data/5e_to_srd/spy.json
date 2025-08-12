@@ -1,0 +1,7 @@
+{
+  "Spy": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Spy matches the SRD Spy closely in stealth, deception, and use of shortsword and hand crossbow with sneak attack."
+  },
+  "monster_key": "spy"
+}

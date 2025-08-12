@@ -1,0 +1,50 @@
+{
+    "name": "Ankheg Queen",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 59,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., burrow 15 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "burrowing",
+        "acid",
+        "ambush"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "tenacious"
+    ],
+    "description": "The Ankheg Queen is a large, insect-like creature, capable of burrowing underground and ambushing its prey. It possesses powerful claws and a mouth designed for grasping and tearing.",
+    "memorable": "The Ankheg Queen can control the battlefield with its acid sprays and grappling attacks, making it a fearsome opponent in subterranean encounters.",
+    "goals": "To ambush unsuspecting prey, control its territory, and eliminate threats.",
+    "relations": "Related to other Ankhegs and may be found within the same ecosystem, often serving as a dominant predator.",
+    "environment": "Typically found in underground lairs or areas with loose soil suitable for burrowing.",
+    "strengths": "High damage potential through acid and strong melee attacks; effective control with grappling.",
+    "weaknesses": "Low intelligence, which limits problem-solving and tactical options.",
+    "attacks": "Utilizes claws for grappling and slashing, bites for finishing enemies, and acid sprays as area damage.",
+    "most_powerful_ability": "Acid Spray, which can damage multiple targets and is particularly lethal when used against grappled foes.",
+    "equipment": null,
+    "senses": "Has tremorsense allowing it to detect vibrations within 30 feet.",
+    "skills": null,
+    "additional_information": [
+        "Damage resistance to acid, providing some protection against acid attacks.",
+        "Can burrow without provoking opportunity attacks, enhancing ambush capabilities.",
+        "Severs the heads of killed grappled foes, potentially intimidating others."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant insect ambush",
+        "underground predator",
+        "acid spraying monster",
+        "huge burrowing creature",
+        "powerful grappling monster"
+    ]
+}

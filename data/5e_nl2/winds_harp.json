@@ -1,0 +1,55 @@
+{
+    "name": "Wind's Harp",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 63,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 10 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "spellcaster",
+        "psychic",
+        "manipulative"
+    ],
+    "adjectives": [
+        "cunning",
+        "malicious",
+        "strategic",
+        "resilient"
+    ],
+    "description": "The Wind's Harp is a Medium-sized evil fiend known for its cunning and malicious influence. It possesses an exceptional Charisma score, enhancing its spellcasting abilities.",
+    "memorable": "Its ability to disrupt spellcasting with Diabolical Countersong makes it a formidable foe.",
+    "goals": "The Wind's Harp aims to manipulate and disrupt enemies using its magical abilities.",
+    "relations": "It may be encountered alongside other fiends or air-based creatures.",
+    "environment": "Often found in areas of magical influence or locations with chaotic energies.",
+    "strengths": "Resistance to spells and immunity to cold, fire, and poison damage provide exceptional durability.",
+    "weaknesses": "Low Armor Class makes it vulnerable to physical attacks.",
+    "attacks": "Performs ranged attacks known as Infernal Noise dealing psychic and thunder damage.",
+    "most_powerful_ability": "Hellish Chorus, creating an infernal cacophony that damages all nearby creatures.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Skilled in stealth, allowing it to remain undetected effectively.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "False Appearance allows it to ambush unsuspecting foes.",
+        "Strong Winds ability enhances attack rolls in conjunction with air allies.",
+        "Immunities to cold, fire, and poison damage highlight its resilience.",
+        "Ability to deal psychic damage aligns with its malevolent nature."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "evil fiend with psychic abilities",
+        "medium fiend that can interrupt spells",
+        "manipulative fiend with powerful ranged attacks",
+        "cunning creature that uses infernal noise",
+        "fiend immune to fire and poison"
+    ]
+}

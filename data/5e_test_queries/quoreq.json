@@ -1,0 +1,25 @@
+{
+    "name": "Quoreq",
+    "queries": [
+        {
+            "query": "chaotic evil creature with frightening appearance and regenerative abilities",
+            "variant": "creature with frightening appearance and regenerative abilities that is chaotic evil"
+        },
+        {
+            "query": "medium-sized aberration that regenerates health but is weak to acid and fire damage",
+            "variant": "aberration that is medium-sized and regenerates health but weak to fire and acid damage"
+        },
+        {
+            "query": "monster that uses fear tactics and has a strong melee presence",
+            "variant": "creature that has a strong melee presence and utilizes fear tactics"
+        },
+        {
+            "query": "creature with blindsight that can inflict terror and regenerate health",
+            "variant": "being with blindsight capable of inflicting terror and health regeneration"
+        },
+        {
+            "query": "durable monster with average intelligence and multiple claw attacks",
+            "variant": "monster that is durable, has average intelligence, and can make multiple claw attacks"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Dretch": {
+    "relation": "conceptually_similar",
+    "explanation": "A low-level demon that often appears in groups and embodies chaotic evil fiendish nature."
+  },
+  "Hezrou": {
+    "relation": "close_cousins",
+    "explanation": "A large demon with strong melee capabilities and durable presence, similar to a large fiendish bruiser."
+  },
+  "monster_key": "horde-demon-band"
+}

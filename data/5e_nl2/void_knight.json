@@ -1,0 +1,55 @@
+{
+    "name": "Void Knight",
+    "creature_type": "Construct",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 153,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "slow with 20 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "malevolent",
+        "battlefield control",
+        "melee attacker"
+    ],
+    "adjectives": [
+        "formidable",
+        "malevolent",
+        "slow",
+        "potent"
+    ],
+    "description": "The Void Knight is a Medium Construct with a powerful presence, armed with the Void Gauntlet and the ability to manipulate its foes through dark magical abilities.",
+    "memorable": "Its 'Implosive End' ability unleashes destructive force damage upon its death, making it a deadly adversary even in defeat.",
+    "goals": "To control the battlefield and immobilize foes while dealing significant damage.",
+    "relations": "Related to other constructs or dark entities, possibly serving a greater evil power.",
+    "environment": "Typically found in dark or foreboding locations, often accompanying evil overlords or as guardians of forbidden areas.",
+    "strengths": "High Strength score allows for powerful melee attacks, plus multiple abilities to control enemy movement.",
+    "weaknesses": "Low Dexterity results in poor maneuverability and disadvantage on Dexterity-related checks.",
+    "attacks": "Multiattack options with either slashing and force damage from its Void Gauntlet or ranged force damage from its Void Bolts.",
+    "most_powerful_ability": "Pulls enemies closer using 'Pull of the Void', dealing force damage to those who are within range.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures in darkness or invisibility.",
+    "skills": "High passive Perception of 17 indicates notable awareness of its surroundings.",
+    "additional_information": [
+        "Immovable nature prevents it from being forcibly moved except by magic.",
+        "Immunities to condition effects like blinded, charmed, and frightened make it resilient in combat.",
+        "Can communicate through Void Speech and telepathy within a 120-foot range.",
+        "May impose a Strength saving throw to immobilize creatures attempting to escape its vicinity.",
+        "Leverages its Construct Nature to function without basic needs like air or food."
+    ],
+    "damage_types": [
+        "force",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "malevolent battlefield controlling construct",
+        "knight that pulls enemies closer",
+        "construct with deadly implosive ability",
+        "void-themed creature with strong melee attacks",
+        "slow but powerful knight with dark powers"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Dimensional Shambler",
+    "queries": [
+        {
+            "query": "large aberration that can manipulate space and instills fear",
+            "variant": "big aberration that can control space and creates fear"
+        },
+        {
+            "query": "monster with high hit points that can teleport and cause psychic damage",
+            "variant": "creature with lots of hit points that can shift planes and deal psychic damage"
+        },
+        {
+            "query": "psychologically terrorizing creature that is vulnerable to magic",
+            "variant": "monster that causes mental terror and has weaknesses against magical attacks"
+        },
+        {
+            "query": "large evil creature with strong physical attacks and evasive abilities",
+            "variant": "big malevolent creature that has powerful physical assaults and dodging skills"
+        },
+        {
+            "query": "psychic damage dealing creature that is immune to poison",
+            "variant": "creature that causes psychic harm and cannot be affected by poison"
+        }
+    ]
+}

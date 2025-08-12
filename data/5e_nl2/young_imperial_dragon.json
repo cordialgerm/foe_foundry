@@ -1,0 +1,54 @@
+{
+    "name": "Young Imperial Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 210,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "swim 40 ft., walk 40 ft., fly 80 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "aquatic",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "aquatic",
+        "youthful"
+    ],
+    "description": "A large, agile dragon embodying aquatic traits, with a strong physique and vibrant scales, able to effortlessly navigate both water and air.",
+    "memorable": "Its ability to unleash devastating lightning breath and manipulate the battlefield with innate spells makes it a fearsome encounter.",
+    "goals": "Typically hunts in aquatic environments and seeks to assert dominance in its territory.",
+    "relations": "May be encountered alongside other dragons or aquatic creatures; could have ties with elemental or storm beings.",
+    "environment": "Often found in areas near water, such as lakes, rivers, or coastal regions.",
+    "strengths": "Immune to lightning and thunder damage, high hit points, and effective battlefield control via spellcasting.",
+    "weaknesses": "Vulnerable to certain types of magic and relies heavily on physical attacks.",
+    "attacks": "Uses a multiattack that includes a powerful bite and sharp claws, capable of devastating damage.",
+    "most_powerful_ability": "Lightning Breath can inflict massive damage in a single attack, affecting multiple enemies in a line.",
+    "equipment": null,
+    "senses": "Blindsight up to 30 feet and a high passive Perception of 20 allow it to detect threats effectively.",
+    "skills": "Proficient in Insight and Perception, making it adept at reading its surroundings and noticing hidden threats.",
+    "additional_information": [
+        "Amphibious, able to breathe both air and water.",
+        "Innate spellcasting that enhances its battlefield control.",
+        "Strong physical attributes including a high Strength score.",
+        "Can maneuver effectively in both water and air.",
+        "Possesses resistance against physical and debilitating effects through high Constitution."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma; can cast Fog Cloud three times a day, and Control Water, Gust of Wind, Stinking Cloud once per day each.",
+    "test_queries": [
+        "powerful aquatic dragon with lightning breath",
+        "large dragon that can breathe underwater",
+        "young dragon that controls water and storms",
+        "formidable creature with devastating breath attack",
+        "dragon with innate spellcasting abilities"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Hantu Penanggal",
+    "creature_type": "Fiend",
+    "alignment": "any evil",
+    "size": "Medium",
+    "hp": 123,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 40 ft. walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "undead",
+        "horror"
+    ],
+    "adjectives": [
+        "menacing",
+        "clever",
+        "stealthy"
+    ],
+    "description": "The Hantu Penanggal is a medium fiend known for its ghastly ability to detach its head, trailing entrails like flexible tentacles while it flies.",
+    "memorable": "Its ability to detach its head and act independently makes it a unique and terrifying foe, and it has the power to frighten nearby creatures.",
+    "goals": "To manipulate, deceive, and instill fear in those who encounter it while seeking out new bodies.",
+    "relations": "Typically serves evil masters or necromancers, can summon lesser undead creatures.",
+    "environment": "Dark, eerie locations, often near graveyards or haunted places.",
+    "strengths": "High mobility due to flying, strong deceptive capabilities, and the ability to heal by reducing opponents' maximum hit points.",
+    "weaknesses": "Vulnerable if both its head and body are targeted; if the head is destroyed, the body dies as well.",
+    "attacks": "It can make multiple attacks using both head and body, including sharp bites, claw strikes, and grappling with entrails.",
+    "most_powerful_ability": "The Detachable Head ability allows tactical flexibility and intimidation on the battlefield.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 60 feet, allowing it to see creatures and objects as they truly are.",
+    "skills": "Notably skilled in deception and stealth, enhancing its ability to outmaneuver opponents.",
+    "additional_information": [
+        "Immune to fire and poison damage.",
+        "Resistant to cold, lightning, and nonmagical physical damage.",
+        "Can cast spells at will without material components.",
+        "Frightens creatures that see it from 30 feet away.",
+        "Can turn a humanoid slain by it into a new Hantu Penanggal."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting ability allows it to cast spells like darkness and detect evil and good at will, with the ability to use protection from evil and good and scorching ray twice per day.",
+    "test_queries": [
+        "fiendish creature that can detach its head",
+        "stealthy fiend capable of frightening foes",
+        "monster that regenerates by reducing hit points",
+        "horror creature with impressive spellcasting abilities",
+        "creature that haunts dark graveyards and casts darkness"
+    ]
+}

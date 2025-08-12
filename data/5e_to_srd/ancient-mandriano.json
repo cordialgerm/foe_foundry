@@ -1,0 +1,15 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge plant creatures with strong physical presence and grappling abilities."
+  },
+  "Mummy": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares undead and necromancer themes, including raising and commanding undead servants."
+  },
+  "Zombie": {
+    "relation": "mechanically_similar",
+    "explanation": "The Ancient Mandriano animates and controls zombies, similar to the basic undead minions."
+  },
+  "monster_key": "ancient-mandriano"
+}

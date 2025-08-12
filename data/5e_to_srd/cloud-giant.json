@@ -1,0 +1,7 @@
+{
+  "Cloud Giant": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Cloud Giant's description, abilities, and environment almost exactly."
+  },
+  "monster_key": "cloud-giant"
+}

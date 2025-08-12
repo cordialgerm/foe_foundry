@@ -1,0 +1,25 @@
+{
+    "name": "Lord of the Hunt",
+    "queries": [
+        {
+            "query": "powerful fey creature with poison attacks and high armor class",
+            "variant": "strong fey being with poison damage and high AC"
+        },
+        {
+            "query": "lord of the hunt that summons beasts and thrives in battle",
+            "variant": "lord of the hunt who calls beasts and excels in combat"
+        },
+        {
+            "query": "magical weapon wielder immune to cold and poison in fey realm",
+            "variant": "fey creature with magical weapons immune to cold and poison"
+        },
+        {
+            "query": "creature with exceptional strength and ranged attacks that commands respect",
+            "variant": "being with great strength and ranged abilities that commands admiration"
+        },
+        {
+            "query": "lawful neutral being that can charm and has multiple legendary actions",
+            "variant": "lawful being that can charm targets and has multiple legendary abilities"
+        }
+    ]
+}

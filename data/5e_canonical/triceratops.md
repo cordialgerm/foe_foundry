@@ -1,6 +1,8 @@
 <MonsterName/>Triceratops (Dinosaur)</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>95</HP>
 <summary>A Triceratops is a massive, herbivorous dinosaur, known for its three facial horns and large, bony frill. This prehistoric creature uses its horns to defend itself from predators, charging with immense force and goring anything that threatens it. Standing as tall as an elephant and weighing several tons, the Triceratops is a formidable creature despite its peaceful grazing habits. It is commonly found in grasslands and jungles, where it grazes on vegetation. Though not aggressive by nature, it will not hesitate to use its horns to protect itself or its herd from danger.</summary>
 
 <summary>The Triceratops is a massive creature classified as a Huge Beast, notable for both its imposing physical presence and formidable defensive capabilities. With an Armor Class of 14 and substantial hit points totaling 84, it can withstand considerable damage in combat. This creature boasts impressive Strength at 20, making it highly effective in melee combat, and a solid Constitution score of 18, enhancing its resilience. Despite its low Dexterity, Intelligence, and Charisma scores, the Triceratops compensates with powerful attacks that utilize its natural weapons. With a Challenge Rating of 5, it poses a significant threat to adventurers, capable of dealing heavy damage while also imposing penalties on opponents.</summary>
@@ -49,6 +51,7 @@ Overall, the Triceratops is a powerful creature ideal for aggressive tactics, ca
 
 Source: 5e_srd
 
+<statblock>
 ### Triceratops (Dinosaur)
 
 *Huge beast, unaligned*
@@ -77,7 +80,8 @@ If the target is prone, the triceratops can make one stomp attack against it as 
 
 ***Gore***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 24 (4d8+6) piercing damage.
 
-***Stomp***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.
+***Stomp***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.</statblock>
+
 
 
 
@@ -85,6 +89,7 @@ If the target is prone, the triceratops can make one stomp attack against it as 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Triceratops
 
 *Huge* *Beast*
@@ -109,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Trample:** The triceratops moves up to its speed in a straight line. It can move through the spaces of Large and smaller creatures. Each of these creatures makes a DC 14 Dexterity saving throw  taking 21 (3d10 + 5) bludgeoning damage on a failure.
 
 
+</statblock>
 
 
 
@@ -117,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Triceratops
 
 *Huge beast*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Warning Bugle.** The triceratops emits a piercing call in a 30-foot cone, signaling its impending attack. Each creature in the area must succeed on a DC 14 WIS save or be frightened until the end of its next turn. If the triceratops uses this bonus action before moving the requisite 20 feet for Trampling Charge, the target of its charge has disadvantage on this save, and the triceratops can make a Stomp attack against the prone target without needing to use a bonus action, provided the target fails the STR save from the charge.
 
+</statblock>
 
 

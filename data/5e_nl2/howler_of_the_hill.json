@@ -1,0 +1,50 @@
+{
+    "name": "Howler Of The Hill",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 178,
+    "ac": 18,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 50 ft., climb 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "psychic",
+        "aberration",
+        "howler"
+    ],
+    "adjectives": [
+        "formidable",
+        "swift",
+        "malevolent"
+    ],
+    "description": "A Large Aberration with exceptional features and an eerie howl, capable of inflicting psychic damage and incapacitating foes in varying light conditions.",
+    "memorable": "Possesses the ability to incapacitate or stun multiple opponents with its howls depending on the light, making it highly dangerous in different environments.",
+    "goals": "To incapacitate and dominate foes through psychic manipulation while evading physical confrontations.",
+    "relations": "Might be encountered alongside other psychic aberrations or as a solitary predator in its territory.",
+    "environment": "Typically found in dark or eerie locales, especially where changing light conditions exist.",
+    "strengths": "Immunity to psychic damage, adept in both melee and ranged psychic attacks, and highly mobile.",
+    "weaknesses": "While resistant to physical attacks, it is vulnerable to magical effects that do not target its high saving throws.",
+    "attacks": "Can unleash a flurry of claw attacks in close combat or strike at a distance with its powerful Psychic Bolt.",
+    "most_powerful_ability": "Gloaming Howl, which affects the targets based on the light conditions, rendering them incapacitated, stunned, or paralyzed with fear.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, enabling it to perceive enemies hiding from it.",
+    "skills": "Has a notable passive Perception of 19, allowing it to effectively notice concealed creatures.",
+    "additional_information": [
+        "Does not require air, food, or sleep as a Hungry Void Traveler.",
+        "Immunity to effects that sense its emotions or read its thoughts.",
+        "Can transport itself to another plane using its Otherworldly Hunter ability."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psychic monster that can incapacitate with howls",
+        "dangerous creature in dark environments with deadly howl",
+        "large aberration with high mobility and psychic powers",
+        "creature immune to psychic damage that can induce fear",
+        "howler that shifts between planes and attacks with claws"
+    ]
+}

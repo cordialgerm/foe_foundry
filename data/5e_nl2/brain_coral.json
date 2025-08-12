@@ -1,0 +1,52 @@
+{
+    "name": "Brain Coral",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 119,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "swim 120 ft.",
+    "role": null,
+    "tags": [
+        "underwater",
+        "summoner",
+        "poisonous"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "colonial"
+    ],
+    "description": "The Brain Coral is a massive and complex creature with a central spire and multiple clusters, resembling a coral formation. It exhibits a mix of vibrant colors often found in oceanic environments.",
+    "memorable": "Its ability to control multiple clusters and heal by spawning new ones creates a unique challenge in combat.",
+    "goals": "To dominate underwater battles through ambush tactics and swarm tactics using summoned allies.",
+    "relations": "Often found in colonies with other sea creatures; can summon giant crabs, sea horses, or reef sharks to assist in combat.",
+    "environment": "Primarily found in underwater settings like coral reefs or ocean depths.",
+    "strengths": "High hit points and immunity to psychic damage, plus powerful area control abilities with its Reef Poison Spray.",
+    "weaknesses": "Low dexterity makes it slow and limits its physical agility; vulnerable to concentrated attacks targeting individual clusters.",
+    "attacks": "Utilizes Pseudopods to deal bludgeoning damage and can release a debilitating poisonous cloud that incapacitates foes.",
+    "most_powerful_ability": "Beasts of the Sea allows it to call forth multiple aquatic allies in battle, overwhelming adversaries.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet and a high passive perception of 15, making it aware of its surroundings despite being effectively blind.",
+    "skills": "Has proficiency in perception, enabling it to detect threats more easily in its environment.",
+    "additional_information": [
+        "Can breathe underwater, enhancing its combat effectiveness.",
+        "Damage is shared among the central spire and its clusters.",
+        "New clusters can be created when the coral takes significant damage.",
+        "Can incapacitate foes with poison, creating strategic advantages.",
+        "Tactics involve using multiple attacking clusters simultaneously."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive coral creature that controls sea allies",
+        "underwater monster with poisonous attacks",
+        "strategic creature with multiple attacking clusters",
+        "huge brain-like coral that summons sea creatures",
+        "colony coral with unique damage-sharing mechanics"
+    ]
+}

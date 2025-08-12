@@ -1,0 +1,25 @@
+{
+    "name": "Dogmole Juggernaut",
+    "queries": [
+        {
+            "query": "large burrowing monster with high hit points and a strong bite attack",
+            "variant": "large monster that burrows with a powerful bite attack and many hit points"
+        },
+        {
+            "query": "monstrosity that creates tunnels and has relentless rage capabilities",
+            "variant": "creature that can burrow tunnels and possesses relentless rage abilities"
+        },
+        {
+            "query": "sturdy monster with advantage on strength checks and a high constitution",
+            "variant": "strong creature that has advantage on strength checks and a great constitution score"
+        },
+        {
+            "query": "juggernaut that thrives in physical combat and hates small insectoid beasts",
+            "variant": "physical combat-loving juggernaut that is aggressive towards small insectoid creatures"
+        },
+        {
+            "query": "fearsome battlefield creature with decent agility but low intelligence",
+            "variant": "intimidating creature on the battlefield with average agility and very low intelligence"
+        }
+    ]
+}

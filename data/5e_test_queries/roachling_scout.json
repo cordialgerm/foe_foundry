@@ -1,0 +1,25 @@
+{
+    "name": "Roachling Scout",
+    "queries": [
+        {
+            "query": "small humanoid creature that is good at stealth and tracking",
+            "variant": "humanoid small creature skilled in tracking and stealth"
+        },
+        {
+            "query": "chaotic neutral creature with climbing speed and poison attacks",
+            "variant": "creature that is chaotic neutral and has climbing ability with poisonous attacks"
+        },
+        {
+            "query": "agile creature that attacks with shortsword and darts while scouting",
+            "variant": "creature that is agile and uses darts and a shortsword in scouting attacks"
+        },
+        {
+            "query": "Roachling Scout abilities and weaknesses in social interactions",
+            "variant": "abilities of Roachling Scout and its social interaction weaknesses"
+        },
+        {
+            "query": "humanoid with darkvision that excels in perception and dexterity",
+            "variant": "humanoid with great dexterity and perception skills that has darkvision"
+        }
+    ]
+}

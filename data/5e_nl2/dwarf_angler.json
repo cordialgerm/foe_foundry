@@ -1,0 +1,52 @@
+{
+    "name": "Dwarf Angler",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 25 ft., climb 25 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "humanoid",
+        "underground",
+        "cunning"
+    ],
+    "adjectives": [
+        "treacherous",
+        "cunning",
+        "dark"
+    ],
+    "description": "The Dwarf Angler is a medium humanoid creature known for its treacherous demeanor and ability to manipulate light. It has a distinct lure with an orb that glows, allowing it to charm foes.",
+    "memorable": "The Dwarf Angler uses its Alluring Light to incapacitate and charm creatures, making it a dangerous foe in dark, rocky environments.",
+    "goals": "Lure unsuspecting creatures into traps and ambushes for predatory purposes.",
+    "relations": "Often found in the company of other underground creatures and may dominate weaker creatures in its territory.",
+    "environment": "Rocky underground terrains, typically in dark caves.",
+    "strengths": "Effective ambusher with abilities to charm and attack from a distance.",
+    "weaknesses": "Lower Dexterity and Charisma scores hinder its agility and social interaction.",
+    "attacks": "Can perform multiple bites or use its Blazing Beacon to cause radiant damage.",
+    "most_powerful_ability": "Alluring Light, which charms and incapacitates foes while causing them to approach it.",
+    "equipment": null,
+    "senses": "Blindsight allows it to perceive its surroundings even in complete darkness within 10 feet.",
+    "skills": "Possesses a decent passive perception of 14, enabling it to notice hidden dangers.",
+    "additional_information": [
+        "Uses Underworld Camouflage for stealth in rocky areas.",
+        "Has a strong melee attack with its Bite, dealing significant damage.",
+        "Can summon bright bursts of light to blind and damage foes.",
+        "Ignores lights of other anglers when charmed.",
+        "Deals poison damage resistance."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "treacherous underground dwarf with a glowing lure",
+        "dark cave creature that charms enemies",
+        "ambushing angler dwarf that manipulates light",
+        "dwarf with a glowing orb that incapacitates foes",
+        "cunning humanoid living in rocky terrains"
+    ]
+}

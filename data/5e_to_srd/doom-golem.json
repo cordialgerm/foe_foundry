@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "almost_identical",
+    "explanation": "A large construct golem with magical resistances and a tough exterior designed for destruction."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are magical constructs serving as guardians, though Animated Armor is smaller and less powerful."
+  },
+  "monster_key": "doom-golem"
+}

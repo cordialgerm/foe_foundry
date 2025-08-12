@@ -1,0 +1,11 @@
+{
+  "Harpy": {
+    "relation": "almost_identical",
+    "explanation": "The Owl Harpy is a variant of the Harpy with similar charm and ambush abilities, enhanced by magical darkness and a sleeping song."
+  },
+  "Owl": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares avian features and nocturnal traits with the Owl, emphasizing stealth and perception."
+  },
+  "monster_key": "owl-harpy"
+}

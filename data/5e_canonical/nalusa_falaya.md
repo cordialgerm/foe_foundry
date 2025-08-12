@@ -1,6 +1,8 @@
 <MonsterName/>Nalusa Falaya</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Nalusa Falaya is a Medium aberration with a neutral evil alignment. This creature operates primarily in dimly lit areas or shadows, leveraging its unique abilities to gain tactical advantages in combat. It has decent defensive capabilities with a natural armor class of 13, making it somewhat resilient, and it boasts a total of 33 hit points, which can be considered average for a creature of this Challenge Rating (1/2). Its strength lies in stealth, with a good Dexterity score that enhances its evasion, and its abilities allow it to maneuver quickly between shadows. However, it has a notable weakness when exposed to sunlight, which hampers its effectiveness in various actions. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Nalusa Falaya has multiple actions it can take during combat. The Bite attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nalusa Falaya
 
 *Medium* *Aberration* *neutral evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Terrifying Glare:** The nalusa falaya targets one creature it can see within 30 feet of it. If the target can see the nalusa falaya, the target must succeed on a DC 12 Wisdom saving throw or be frightened until the end of the nalusa falaya's next turn.
 
 
+</statblock>
 
 

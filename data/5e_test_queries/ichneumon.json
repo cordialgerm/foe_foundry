@@ -1,0 +1,25 @@
+{
+    "name": "Ichneumon",
+    "queries": [
+        {
+            "query": "large monster with strong melee attacks and quick speed",
+            "variant": "large creature that has fast movement and powerful physical attacks"
+        },
+        {
+            "query": "beast with high strength and resistance to fire damage",
+            "variant": "creature with potent strength and fire immunity traits"
+        },
+        {
+            "query": "monstrosity living in various environments with keen smell",
+            "variant": "monstrous creature that thrives in diverse habitats and has sensitive smell abilities"
+        },
+        {
+            "query": "tough large creature that uses mud armor for defense",
+            "variant": "resilient big monster that applies mud for enhanced protection"
+        },
+        {
+            "query": "agile predator that grapples with powerful bite attacks",
+            "variant": "quick hunter that restrains its prey using strong biting attacks"
+        }
+    ]
+}

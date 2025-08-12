@@ -1,0 +1,25 @@
+{
+    "name": "Ice Maiden",
+    "queries": [
+        {
+            "query": "elegant fey creature that uses ice magic and manipulates others",
+            "variant": "fey creature that is elegant and uses ice magic while manipulating others"
+        },
+        {
+            "query": "ice-themed villain that is resistant to cold and vulnerable to fire",
+            "variant": "villain themed around ice resistant to cold damage and weak against fire"
+        },
+        {
+            "query": "charming fey with a kiss ability and chilling presence",
+            "variant": "fey that charms with a kiss ability and has a chilling presence"
+        },
+        {
+            "query": "cold magic user with good dexterity and stealth skills",
+            "variant": "user of cold magic that has high dexterity and excels in stealth"
+        },
+        {
+            "query": "ice maiden that can teleport through snow and has a multiattack",
+            "variant": "maiden of ice that teleports through snow and can perform multiattacks"
+        }
+    ]
+}

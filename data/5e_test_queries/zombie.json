@@ -1,0 +1,25 @@
+{
+    "name": "Zombie",
+    "queries": [
+        {
+            "query": "slow reanimated corpse that attacks living beings",
+            "variant": "slow corpse that is reanimated and attacks the living"
+        },
+        {
+            "query": "undead creature with low Armor Class and high durability",
+            "variant": "creature with low AC and high durability that is undead"
+        },
+        {
+            "query": "zombie with the ability to withstand lethal damage",
+            "variant": "undead that can withstand damage that would normally kill it"
+        },
+        {
+            "query": "mindless undead found in graveyards with a penchant for grappling",
+            "variant": "undead that roams graveyards and likes to grapple its victims"
+        },
+        {
+            "query": "stumbling, weak creature that spreads undead infection",
+            "variant": "weak stumbling creature that can create more undead"
+        }
+    ]
+}

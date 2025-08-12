@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant creatures with magical animation and shapechanging traits."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures that can instill fear and have a frightening presence."
+  },
+  "monster_key": "shiftshroom"
+}

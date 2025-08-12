@@ -1,0 +1,15 @@
+{
+  "Sprite": {
+    "relation": "conceptually_similar",
+    "explanation": "A tiny, playful, and elusive fey creature with magical abilities and invisibility."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, magical, and elusive creature that uses light and invisibility to manipulate and confuse."
+  },
+  "Deva": {
+    "relation": "close_cousins",
+    "explanation": "A celestial being with strong magical resistance and radiant damage, though much larger and more powerful."
+  },
+  "monster_key": "irid"
+}

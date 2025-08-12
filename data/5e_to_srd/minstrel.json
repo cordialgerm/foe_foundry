@@ -1,0 +1,7 @@
+{
+  "Bard": {
+    "relation": "almost_identical",
+    "explanation": "The Minstrel is essentially a bard with similar spellcasting, support, and manipulation abilities."
+  },
+  "monster_key": "minstrel"
+}

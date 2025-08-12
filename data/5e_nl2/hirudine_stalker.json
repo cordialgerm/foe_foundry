@@ -1,0 +1,51 @@
+{
+    "name": "Hirudine Stalker",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., climb 20 ft., swim 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "stealth",
+        "predator"
+    ],
+    "adjectives": [
+        "cunning",
+        "deadly",
+        "ambush"
+    ],
+    "description": "A medium-sized monstrosity that excels in aquatic environments, with advantages in climbing and swimming. It uses its unique adaptations and stealth to stalk and ambush prey.",
+    "memorable": "The Hirudine Stalker can regain health through its necrotic attacks and has devastating projectile abilities, making it a fearsome opponent in battle.",
+    "goals": "To hunt and ambush weakened foes.",
+    "relations": "Often encountered with other Hirudine Stalkers, forming packs to enhance their hunting strategies.",
+    "environment": "Typically found in damp, aquatic areas such as swamps or riverbanks.",
+    "strengths": "Excels in tracking injured foes and can ambush with debilitating attacks.",
+    "weaknesses": "Vulnerable to psychic damage, taking double damage from such attacks.",
+    "attacks": "Uses Bite and Spit Tooth attacks, the latter inflicting debilitating effects or causing incapacitation.",
+    "most_powerful_ability": "Blood Scent grants advantage on checks to locate injured prey, enhancing its stalking abilities.",
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Has a +2 modifier in Perception, enabling it to track and hunt effectively.",
+    "additional_information": [
+        "Can breathe both air and water due to its amphibious nature.",
+        "Regains hit points equal to necrotic damage dealt through its Bite attack.",
+        "Utilizes 'Hidden Predator' for ambushing tactics.",
+        "Has versatile projectile attacks with varying debilitating effects.",
+        "Possesses telepathy with other Hirudine Stalkers over 120 feet."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy underwater predator with debilitating attacks",
+        "ambush predator that regains health when it bites",
+        "versatile monster in swamps that can breathe water",
+        "creature that tracks injured foes in combat",
+        "medium monstrosity with blindsight and telepathy"
+    ]
+}

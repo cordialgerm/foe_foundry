@@ -1,0 +1,7 @@
+{
+  "Werewolf (Lycanthrope)": {
+    "relation": "almost_identical",
+    "explanation": "The Alpha Werewolf is a close variant of the Werewolf (Lycanthrope) with enhanced pack tactics and shapeshifting abilities."
+  },
+  "monster_key": "alpha-werewolf"
+}

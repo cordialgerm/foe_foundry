@@ -1,6 +1,8 @@
 <MonsterName/>Megapede</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Megapede is a large monstrosity, notable for its formidable combination of physical attacks and unique abilities. With a high Armor Class of 15, it can withstand a decent amount of damage. The creature has a total of 75 hit points, making it moderately resilient in battle. Its challenge rating of 3 allows it to pose a genuine threat to lower-level adventurers, yielding 700 experience points upon defeat. The Megapede excels in dealing damage through its bite and stinger attacks, which can result in both slashing and poison damage. However, it has low intelligence, wisdom, and charisma, indicating a lack of mental acuity or social skills. Notably, the Megapede possesses a remarkable ability to sense metal from a distance, which can be both advantageous and thematic in gameplay, considering its ability to consume metal objects.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Megapede's mixture of physical attacks, poison effects, and unique 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Megapede
 
 *Large* *Monstrosity* *unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Acid Spray (Recharge 6):** The megapede spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

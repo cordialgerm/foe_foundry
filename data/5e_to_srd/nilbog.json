@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Nilbog is a small, mischievous humanoid closely related to goblins, sharing similar size and trickster nature."
+  },
+  "monster_key": "nilbog"
+}

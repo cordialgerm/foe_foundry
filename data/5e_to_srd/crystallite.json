@@ -1,0 +1,11 @@
+{
+  "Stone Giant": {
+    "relation": "close_cousins",
+    "explanation": "A Large giant associated with rocky terrains and physical combat."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "A creature embodying earth and stone elements, similar to the Crystallite's crystal and earthy nature."
+  },
+  "monster_key": "crystallite"
+}

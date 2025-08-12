@@ -1,0 +1,25 @@
+{
+    "name": "Shoreline Scrapper",
+    "queries": [
+        {
+            "query": "large coastal beast with a magnetic shell",
+            "variant": "big creature from the coast that has a magnetic shell"
+        },
+        {
+            "query": "monster that can breathe air and water and has high hit points",
+            "variant": "creature that can live in both water and air with a lot of hit points"
+        },
+        {
+            "query": "strong melee creature that restrains enemies with metal abilities",
+            "variant": "powerful physical creature that uses metal powers to hold foes"
+        },
+        {
+            "query": "beast with good constitution and poor intelligence found in coastal areas",
+            "variant": "creature with high resilience but low smarts that thrives near the shore"
+        },
+        {
+            "query": "great combat opponent that uses magnetic tactics in water",
+            "variant": "strong enemy that uses magnetic control in aquatic environments"
+        }
+    ]
+}

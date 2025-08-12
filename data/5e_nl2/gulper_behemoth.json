@@ -1,0 +1,51 @@
+{
+    "name": "Gulper Behemoth",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 188,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "behemoth",
+        "grappler"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "powerful",
+        "environmental"
+    ],
+    "description": "The Gulper Behemoth is a massive aquatic creature characterized by its immense size and formidable presence in water. It has a massive mouth ideal for grappling and swallowing prey.",
+    "memorable": "Its explosive death burst and ability to stun opponents with sonic pulses make it a dangerous foe in underwater encounters.",
+    "goals": "To dominate its aquatic territory and consume smaller creatures.",
+    "relations": "Could be encountered with other aquatic monstrosities or as a predator in its underwater habitat.",
+    "environment": "Primarily found in underwater environments.",
+    "strengths": "Exceptional physical strength and grappling capabilities, area control through sonic attacks, and ability to deal explosive acid damage upon defeat.",
+    "weaknesses": "Vulnerable to piercing damage, limited mobility on land, and reliance on hearing for sensory perception.",
+    "attacks": "Powerful bite attack causing significant piercing damage and the ability to swallow and restrain prey.",
+    "most_powerful_ability": "Death Burst, which inflicts substantial acid damage to nearby creatures upon the behemoth's defeat.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, but is hampered if deafened.",
+    "skills": "Has keen hearing, granting it advantage on Wisdom (Perception) checks related to sound.",
+    "additional_information": [
+        "Can only breathe underwater, limiting its movement on land.",
+        "Explosive death causes area damage, making it risky to engage closely.",
+        "Echolocation ability is negated when deafened."
+    ],
+    "damage_types": [
+        "acid",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive aquatic monster with explosive death",
+        "gargantuan creature that swallows prey",
+        "powerful underwater behemoth with sonic attacks",
+        "monster that grapples and consumes underwater",
+        "beast that creates sonic pulses and acid bursts"
+    ]
+}

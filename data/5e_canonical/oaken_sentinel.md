@@ -1,6 +1,8 @@
 <MonsterName/>Oaken Sentinel</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Oaken Sentinel is a formidable Huge plant creature that serves as a guardian of natural spaces. With its strong defenses and considerable hit points, it poses a significant challenge to adventurers. Notably, it has a robust armor class of 16, making it somewhat difficult to hit. It has a total of 189 hit points, providing it with exceptional durability in combat. While it is relatively slow with a walking speed of only 10 feet, its ability to grapple and restrain opponents with its Grasping Branches offers it a strategic advantage. This creature excel in using its environment to control the battlefield but is vulnerable to lightning damage. Due to its lack of intelligence and charisma, it may struggle with interactions outside of combat. Overall, the Oaken Sentinel is a powerful defender with the ability to immobilize and damage its foes while demonstrating resilience against various damage types.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ With its various abilities and attacks, the Oaken Sentinel is a dangerous oppone
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oaken Sentinel
 
 *Huge* *Plant* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Fling:** One Med or smaller creature grappled by the oaken sentinel is thrown up to 60' in a random direction and knocked prone. If a thrown target strikes a solid surface the target takes 3 (1d6) bludgeoning damage for every 10 ft. it was thrown. If the target is thrown at another creature that creature must make DC 16 Dex save or take the same damage and be knocked prone.
 
 
+</statblock>
 
 

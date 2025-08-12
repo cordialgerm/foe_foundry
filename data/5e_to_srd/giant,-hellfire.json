@@ -1,0 +1,7 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "A giant with fire-related abilities and a guardian role similar to a Fire Giant, but with added magical and curse features."
+  },
+  "monster_key": "giant,-hellfire"
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Iron Sphere",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 60,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "burrow 10 ft., climb 20 ft., walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "construct",
+        "siege",
+        "burrowing"
+    ],
+    "adjectives": [
+        "resilient",
+        "versatile",
+        "formidable"
+    ],
+    "description": "The Iron Sphere is a small, sturdy construct with an ability to deal damage in combat and manipulate environments, characterized by its robust physical form and mechanical design.",
+    "memorable": "It excels in destroying objects and structures, thanks to its double damage against them and burrowing capabilities.",
+    "goals": "To engage enemies in combat and destroy barriers or structures.",
+    "relations": "Can be encountered alongside other constructs or as creations of a skilled artisan.",
+    "environment": "Usually found in areas with fortifications, ruins, or places with solid rock.",
+    "strengths": "Immune to several damage types, high Constitution, and capable of burrowing.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma, limiting its effectiveness in magical and social interactions.",
+    "attacks": "Makes three different melee attacks (Blade, Piston, Spike) and has a powerful Lightning Cannon attack.",
+    "most_powerful_ability": "Lightning Cannon, dealing significant lightning damage in a line with a recharge requirement.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "Skilled in athletics and has decent perception capabilities.",
+    "additional_information": [
+        "Immune to changing forms due to Immutable Form ability.",
+        "Can leap impressively high and far with Standing Leap.",
+        "Burrows through solid rock, leaving a tunnel behind.",
+        "Has resistances to multiple damage types.",
+        "Active in combat and environmental destruction."
+    ],
+    "damage_types": [
+        "lightning",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small construct with melee attacks and burrowing",
+        "resilient construct that deals double damage to structures",
+        "tactical burrowing creature with lightning powers",
+        "mechanical monster that excels in combat and tunneling",
+        "versatile construct immune to many damage types"
+    ]
+}

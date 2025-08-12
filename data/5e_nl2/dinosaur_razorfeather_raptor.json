@@ -1,0 +1,51 @@
+{
+    "name": "Razorfeather Raptor",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "raptor",
+        "pack tactics",
+        "mobility"
+    ],
+    "adjectives": [
+        "cunning",
+        "nimble",
+        "formidable"
+    ],
+    "description": "The Razorfeather Raptor is a medium-sized, nimble predator with sharp feathers and a powerful build. It uses its agility to maneuver through combat and lands swift strikes on its foes.",
+    "memorable": "This creature excels in pack tactics, enhancing its attack effectiveness significantly when fighting alongside allies.",
+    "goals": "To hunt down prey using stealth and agility, often in coordination with pack members.",
+    "relations": "Often found alongside other predators or in packs, utilizing teamwork to take down larger foes.",
+    "environment": "Typically found in wooded areas or grasslands, where it can effectively stalk and ambush its prey.",
+    "strengths": "High Dexterity allows for good evasion and effective attacks, especially when using pack tactics.",
+    "weaknesses": "Low Charisma and Intelligence hinder social interactions and problem-solving abilities.",
+    "attacks": "Can perform a Multiattack to strike with both a Claw and a Bladed Feather attack, dealing significant slashing damage while hindering its target's movement.",
+    "most_powerful_ability": "Pack Tactics grants advantage on attack rolls against enemies when allies are nearby, making it a dangerous opponent in groups.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 13, indicating decent awareness of its surroundings.",
+    "skills": "Limited perception skills with a +1 modifier.",
+    "additional_information": [
+        "Can knock targets prone with its Pounce ability, enhancing its follow-up attacks.",
+        "Utilizes speed to outmaneuver and hinder its opponents.",
+        "Its Bladed Feather attack not only deals damage but also impairs enemy movement."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fast predator with sharp feathers",
+        "mobile raptor that hunts in packs",
+        "cunning monster that reduces speed",
+        "formidable dinosaur with claw attacks",
+        "nimble predator using pack tactics"
+    ]
+}

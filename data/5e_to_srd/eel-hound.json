@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "close_cousins",
+    "explanation": "The Eel Hound shares the fey type, pack tactics, teleportation, and dog-like hunting traits with the Blink Dog."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "The Eel Hound's amphibious nature and aquatic abilities conceptually align with the Giant Octopus's aquatic traits."
+  },
+  "monster_key": "eel-hound"
+}

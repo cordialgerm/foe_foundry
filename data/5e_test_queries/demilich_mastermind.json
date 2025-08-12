@@ -1,0 +1,25 @@
+{
+    "name": "Demilich Mastermind",
+    "queries": [
+        {
+            "query": "tiny undead with powerful spellcasting and flight capabilities",
+            "variant": "tiny undead creature that can cast powerful spells and has flying abilities"
+        },
+        {
+            "query": "intelligent undead that manipulates the battlefield with psychic powers",
+            "variant": "undead with high intelligence that uses psychic abilities to control the battlefield"
+        },
+        {
+            "query": "creature that can devour souls and has exceptional agility",
+            "variant": "monster that can consume souls and possesses superior agility"
+        },
+        {
+            "query": "undead that is immune to many conditions and can teleport",
+            "variant": "undead creature immune to various conditions and capable of teleporting"
+        },
+        {
+            "query": "a cunning undead with truesight and powerful flight",
+            "variant": "an intelligent undead with truesight ability and strong flying skills"
+        }
+    ]
+}

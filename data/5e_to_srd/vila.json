@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Vila is a fey forest guardian with nature control and the ability to summon beasts, similar to a Dryad."
+  },
+  "Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "The Vila summons wolves as allies, linking it conceptually to the Wolf."
+  },
+  "monster_key": "vila"
+}

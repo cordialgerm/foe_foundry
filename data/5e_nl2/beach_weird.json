@@ -1,0 +1,53 @@
+{
+    "name": "Beach Weird",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., swim 40 ft.",
+    "role": "null",
+    "tags": [
+        "elemental",
+        "coastal",
+        "guardian"
+    ],
+    "adjectives": [
+        "untamed",
+        "elusive",
+        "dangerous"
+    ],
+    "description": "The Beach Weird is a large elemental creature embodying the essence of coastal environments, capable of traversing sandy shores and tide pools. It features a powerful physique with notable defensive capabilities.",
+    "memorable": "Its ability to create hazardous quicksand and become invisible in water makes it a unique guardian of its coastal territory.",
+    "goals": "To protect tide pools and sandy shores from intruders.",
+    "relations": "Related to other elemental creatures, especially those of water or earth.",
+    "environment": "Coastal areas, particularly around tide pools and sandy shores.",
+    "strengths": "Powerful slam attack and the ability to create hazardous quicksand.",
+    "weaknesses": "Bound to its tide pools, limiting its movement range.",
+    "attacks": "Slam attack deals significant bludgeoning damage and can push targets away.",
+    "most_powerful_ability": "Create Quicksand, allowing it to control the battlefield and trap intruders.",
+    "equipment": null,
+    "senses": "Blindsight 30 feet allows it to detect creatures without sight.",
+    "skills": "Possesses a perception skill of average effectiveness, with a +2 bonus.",
+    "additional_information": [
+        "Elemental nature grants it resilience to environmental factors.",
+        "Can become invisible when fully immersed in water.",
+        "Burrows through sand but cannot attack while doing so.",
+        "Perishes if moved beyond 100 feet from its tide pool.",
+        "Gains various damage immunities and resistances."
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "guardian of the beach",
+        "elemental creature of the coast",
+        "quicksand creating monster",
+        "tide pool guardian",
+        "invisible water dwelling creature"
+    ]
+}

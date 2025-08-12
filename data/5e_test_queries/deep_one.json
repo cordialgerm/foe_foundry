@@ -1,0 +1,25 @@
+{
+    "name": "Deep One",
+    "queries": [
+        {
+            "query": "humanoid creature that lives in water and is strong in melee combat",
+            "variant": "water-dwelling humanoid monster that excels in close quarters fighting"
+        },
+        {
+            "query": "creature with darkvision that is vulnerable to fire and can breathe underwater",
+            "variant": "monster with 120 ft. darkvision susceptible to fire and capable of underwater breathing"
+        },
+        {
+            "query": "aggressive Deep One that can enhance attacks when damaged",
+            "variant": "frenzied Deep One capable of amplifying its melee strikes when injured"
+        },
+        {
+            "query": "chaotic evil creature with cold resistance and average wisdom",
+            "variant": "evil humanoid with resistance to cold and low wisdom"
+        },
+        {
+            "query": "Deep One description with natural armor and high hit points",
+            "variant": "description of the Deep One featuring its natural armor class and significant health"
+        }
+    ]
+}

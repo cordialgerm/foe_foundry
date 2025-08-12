@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Shares the large octopus form and grappling tentacle attacks."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elemental creatures associated with fire and lava environments."
+  },
+  "monster_key": "magma-octopus"
+}

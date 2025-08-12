@@ -1,0 +1,11 @@
+{
+  "Brass Dragon Wyrmling": {
+    "relation": "close_cousins",
+    "explanation": "A metallic dragon wyrmling with a breath weapon and flying ability, sharing the young metallic dragon family traits."
+  },
+  "Young Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A young metallic dragon with magic resistance and flying, similar in size and nature but differing in breath weapon and damage type."
+  },
+  "monster_key": "mithral-dragon-wyrmling"
+}

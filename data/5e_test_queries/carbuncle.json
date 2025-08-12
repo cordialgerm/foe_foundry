@@ -1,0 +1,25 @@
+{
+    "name": "Carbuncle",
+    "queries": [
+        {
+            "query": "small jungle creature with a glowing garnet gem",
+            "variant": "small creature from the jungle with a glowing gem of garnet"
+        },
+        {
+            "query": "monstrosity that uses light attacks and can camouflage",
+            "variant": "monstrosity able to camouflage and uses light-based attacks"
+        },
+        {
+            "query": "chaotic good creature that excels in stealth and perception",
+            "variant": "chaotic good monstrosity that is good at stealth and has high perception"
+        },
+        {
+            "query": "fast climbing creature with radiant damage abilities",
+            "variant": "quick climbing creature that has attacks that deal radiant damage"
+        },
+        {
+            "query": "creature with multiattack and jungle camouflage abilities",
+            "variant": "creature that can perform multiattacks and has jungle camouflage"
+        }
+    ]
+}

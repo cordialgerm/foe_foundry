@@ -1,0 +1,50 @@
+{
+    "name": "Spark Mephit",
+    "creature_type": "Elemental",
+    "alignment": null,
+    "size": "Small",
+    "hp": 17,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking and flying",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "lightning",
+        "trickster"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "electric"
+    ],
+    "description": "The Spark Mephit is a small elemental creature associated with electricity, known for its agility and speed, able to walk and fly at the same rate.",
+    "memorable": "The Spark Mephit can transform into an arc of lightning, slipping past foes while dealing damage, making it a cunning opponent.",
+    "goals": "To harass and distract opponents using its speed and electric abilities.",
+    "relations": "Elementals, particularly those associated with electricity or air.",
+    "environment": "Typically found in areas with electrical hazards or elemental planes.",
+    "strengths": "Immunity to lightning and poison damage, and an ability to move swiftly through enemy spaces.",
+    "weaknesses": "Low physical strength and constitution, making it vulnerable in direct confrontations.",
+    "attacks": "Utilizes claws for slashing damage combined with lightning damage.",
+    "most_powerful_ability": "Spark Form allows it to turn into lightning and move through creatures, damaging those it passes.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in maneuvering and avoiding physical confrontations due to high dexterity.",
+    "additional_information": [
+        "Can use Faerie Flame to reveal invisible creatures.",
+        "Does not require air, food, or sleep.",
+        "Creates a burst of lightning upon death."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small electric elemental creature",
+        "agile creature that can fly and zap",
+        "elemental monster with lightning abilities",
+        "trickster that can outline foes",
+        "spark creature that transforms into lightning"
+    ]
+}

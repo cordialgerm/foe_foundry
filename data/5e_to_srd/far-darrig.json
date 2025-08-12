@@ -1,0 +1,15 @@
+{
+  "Satyr": {
+    "relation": "close_cousins",
+    "explanation": "The Far Darrig is a small, agile fey with woodland traits and charisma, similar to a Satyr."
+  },
+  "Giant Weasel": {
+    "relation": "conceptually_similar",
+    "explanation": "The Far Darrig summons woodland creatures like giant weasels, linking it conceptually to this beast."
+  },
+  "Elk": {
+    "relation": "conceptually_similar",
+    "explanation": "The Far Darrig can summon elk as woodland allies, making it conceptually similar to this creature."
+  },
+  "monster_key": "far-darrig"
+}

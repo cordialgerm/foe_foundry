@@ -1,0 +1,50 @@
+{
+    "name": "Mandrake",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 8,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 5 ft.",
+    "role": "null",
+    "tags": [
+        "plant",
+        "disruptive",
+        "support"
+    ],
+    "adjectives": [
+        "tiny",
+        "resilient",
+        "disruptive"
+    ],
+    "description": "The Mandrake is a tiny plant creature known for its shriek ability, which can disrupt foes. It has a low presence but is immune to poison.",
+    "memorable": "Its Shriek ability can stun or incapacitate multiple foes at once.",
+    "goals": "To disrupt and incapacitate opponents in battle.",
+    "relations": "None specifically mentioned; primarily exists as a solitary disruptive entity.",
+    "environment": "Typically found in environments where it can exploit its sound-based abilities.",
+    "strengths": "Immune to poison damage, cannot be exhausted or poisoned.",
+    "weaknesses": "Low Dexterity and Intelligence, including very poor capability in physical combat.",
+    "attacks": "Makes a melee bite attack dealing 5 piercing damage, but relies heavily on its sonic shriek.",
+    "most_powerful_ability": "The Shriek ability can stun enemies and create crowd control, based on failed saving throws.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 60 feet, making it aware of its surroundings even when blind.",
+    "skills": null,
+    "additional_information": [
+        "Can stun or incapacitate enemies with its Shriek ability.",
+        "Low Armor Class and moderate hit points make it vulnerable in direct combat.",
+        "Recharge ability for Shriek makes it impactful in tactical encounters."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that can stun",
+        "tiny monster with thunder abilities",
+        "mandrake abilities and weaknesses",
+        "plant that shrieks to incapacitate",
+        "poison immune disruptive plant creature"
+    ]
+}

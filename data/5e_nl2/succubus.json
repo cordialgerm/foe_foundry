@@ -1,0 +1,54 @@
+{
+    "name": "Succubus",
+    "creature_type": "Fiend",
+    "creature_subtype": "shapechanger",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 15,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "shapechanger",
+        "charmer",
+        "seducer"
+    ],
+    "adjectives": [
+        "seductive",
+        "manipulative",
+        "deceptive",
+        "agile"
+    ],
+    "description": "A Succubus is a beautiful fiend that can shapechange, using its alluring humanoid form to deceive and corrupt its victims. It has a strong celestial charm, with notable elegance and a dangerously seductive presence.",
+    "memorable": "The Succubus excels at charm and manipulation, draining the life force of its victims through kisses, while often turning mortals against one another.",
+    "goals": "To seduce and manipulate mortals, creating discord and chaos while serving more powerful demons.",
+    "relations": "Commonly associated with other fiends and darker entities, it may manipulate humans and weaker demons alike.",
+    "environment": "Found in dark, chaotic locations, often in urban settings or places of temptation and vice.",
+    "strengths": "Exceptional Charisma (+7) enhances its charm and psychic attacks, making it difficult to resist its manipulation.",
+    "weaknesses": "Physically weak with low Strength (-1), vulnerable to direct attacks if its manipulative tactics fail.",
+    "attacks": "Utilizes claw attacks in its fiend form, inflicting slashing and psychic damage; known for its dangerous Draining Kiss and the ability to charm humanoids.",
+    "most_powerful_ability": "Draining Kiss, which inflicts heavy psychic damage and reduces the target's hit point maximum.",
+    "senses": "Possesses darkvision and a passive perception of 15, allowing it to notice hidden creatures effectively.",
+    "skills": "Highly skilled in Deception (+9) and Persuasion (+9), enhancing its ability to manipulate mortals successfully.",
+    "additional_information": [
+        "Telepathic Bond allows communication with charmed creatures regardless of distance.",
+        "Shapechanger ability to alter its form, enhancing its stealth and deceptive prowess.",
+        "Can enter the Ethereal Plane, increasing its difficulty to target.",
+        "Can command charmed creatures to defend it, offering tactical advantages in battle.",
+        "Known for causing emotional turmoil and chaos among victims, contributing to its dark schemes."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that can shapeshift and charm",
+        "seductive demon known for draining life",
+        "evil creature that manipulates mortals",
+        "agile humanoid fiend with psychic attacks",
+        "deceptive creature with a dangerous kiss"
+    ]
+}

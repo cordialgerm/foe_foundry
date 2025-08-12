@@ -1,0 +1,11 @@
+{
+  "Berserker": {
+    "relation": "close_cousins",
+    "explanation": "The Redcap is a tough, bloodthirsty bruiser with high strength and constitution, similar to the brutal combat style of a Berserker."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures associated with forests, though the Redcap is malevolent and violent compared to the Dryad's nature guardian role."
+  },
+  "monster_key": "redcap"
+}

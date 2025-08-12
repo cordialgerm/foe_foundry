@@ -1,0 +1,25 @@
+{
+    "name": "Bronze Golem",
+    "queries": [
+        {
+            "query": "magical metal creature that grapples",
+            "variant": "magik metal monster that can grapple"
+        },
+        {
+            "query": "large construct immune to poison and psychic damage",
+            "variant": "big robot that resists poison and psychic attacks"
+        },
+        {
+            "query": "fire-resistant golem with strong melee attacks",
+            "variant": "fire proof golem with powerful close combat attacks"
+        },
+        {
+            "query": "durable golem that can trap foes in a boiler",
+            "variant": "tough golem able to contain enemies in its boiler"
+        },
+        {
+            "query": "creature with high constitution and magic resistance",
+            "variant": "monster with strong constitution and resistant to magic"
+        }
+    ]
+}

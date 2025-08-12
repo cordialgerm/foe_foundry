@@ -1,0 +1,25 @@
+{
+    "name": "Tembril",
+    "queries": [
+        {
+            "query": "large predator with a maddening psychic attack that is cold resistant",
+            "variant": "large beast that can attack psychically and resists cold damage"
+        },
+        {
+            "query": "monster with high strength and natural armor that can ambush foes",
+            "variant": "creature with a lot of strength and natural defense that ambushes enemies"
+        },
+        {
+            "query": "stealthy monster that can perform multiple attacks and incapacitate opponents",
+            "variant": "sneaky creature capable of multiple strikes that can incapacitate its targets"
+        },
+        {
+            "query": "formidable enemy that deals slashing damage and has darkvision",
+            "variant": "powerful foe that inflicts slashing damage and can see in darkness"
+        },
+        {
+            "query": "unaligned monstrosity that uses nimble movements in battle",
+            "variant": "not aligned creature that uses agile actions during combat"
+        }
+    ]
+}

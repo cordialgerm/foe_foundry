@@ -1,0 +1,25 @@
+{
+    "name": "Ushabti Royal Guard",
+    "queries": [
+        {
+            "query": "large mechanical guardian that protects tombs and has necrotic attacks",
+            "variant": "big robot guard with necrotic abilities that defends tombs"
+        },
+        {
+            "query": "construct with high armor class that can't be turned into other forms",
+            "variant": "robot with a strong armor rating that is immune to form changes"
+        },
+        {
+            "query": "statue-like guardian that uses healing magic for itself and attacks with Khopesh",
+            "variant": "statue guardian that attacks using a Khopesh and leeches healing magic"
+        },
+        {
+            "query": "immortal protector with breath-stealing presence and magic resistance",
+            "variant": "eternal guardian that can steal breath and has resistance to magic"
+        },
+        {
+            "query": "intelligent construct with high perceptions and ancient treasure protection",
+            "variant": "smart robot with excellent perception that guards ancient treasures"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Ruby Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 9,
+    "srd": false,
+    "cr": "6",
+    "movement": "climb 20 ft., walk 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ooze",
+        "corrosive",
+        "ambush",
+        "petrification"
+    ],
+    "adjectives": [
+        "deceptive",
+        "hazardous",
+        "corrosive",
+        "sluggish"
+    ],
+    "description": "A deceptive ooze that resembles a pile of rubies when motionless, the Ruby Ooze can squeeze through tight spaces and strikes with corrosive damage.",
+    "memorable": "Its ability to camouflage as gems and petrify its foes makes the Ruby Ooze uniquely dangerous.",
+    "goals": "To ambush and overwhelm unsuspecting adventurers using surprise and corrosive attacks.",
+    "relations": "Related to other hazardous oozes or creatures that control or manipulate the environment.",
+    "environment": "Often found in treasure-filled caverns or areas rich in precious gems.",
+    "strengths": "Superior ambush tactics, high hit points, corrosive attacks that degrade weaponry.",
+    "weaknesses": "Vulnerable to lightning damage and struggles against ranged attacks due to low Dexterity.",
+    "attacks": "Dual pseudopod attacks dealing significant bludgeoning and acid damage, and a powerful Acid Spray that can restrain foes.",
+    "most_powerful_ability": "The Acid Spray can turn opponents' flesh into stone while dealing significant damage.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, making it aware of creatures even in complete darkness.",
+    "skills": null,
+    "additional_information": [
+        "Can squeeze through a space as narrow as 1 inch.",
+        "Cloaked in camouflage resembling rubies.",
+        "Weapons striking it suffer cumulative damage penalties.",
+        "Can climb difficult surfaces without hindrance."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ooze that resembles rubies",
+        "corrosive ooze with ambush tactics",
+        "petrifying monster hidden as gems",
+        "hazardous creature that degrades weapons",
+        "sluggish ooze with surprise attack"
+    ]
+}

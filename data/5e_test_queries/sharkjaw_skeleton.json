@@ -1,0 +1,25 @@
+{
+    "name": "Sharkjaw Skeleton",
+    "queries": [
+        {
+            "query": "large predatory undead that grapples and devours enemies",
+            "variant": "large undead predator that grapples and eats foes"
+        },
+        {
+            "query": "skeleton creature with shark-like features that can restrain and inflict damage",
+            "variant": "skeleton monster with shark features that can restrain and deal damage"
+        },
+        {
+            "query": "undead monster with cold immunity that uses bite attacks",
+            "variant": "undead creature immune to cold that attacks with bites"
+        },
+        {
+            "query": "creature that functions without food and can grapple two targets",
+            "variant": "monster that operates without food and can grapple multiple targets"
+        },
+        {
+            "query": "undead skeleton with a devouring ability that presents a combat challenge",
+            "variant": "skeleton zombie with a devouring skill that poses a battle challenge"
+        }
+    ]
+}

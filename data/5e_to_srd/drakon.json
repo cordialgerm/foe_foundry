@@ -1,0 +1,7 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large dragon with acid breath and swampy, aquatic affinities similar to the Drakon's amphibious nature and acid damage."
+  },
+  "monster_key": "drakon"
+}

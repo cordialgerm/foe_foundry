@@ -1,0 +1,55 @@
+{
+    "name": "Incandescent One",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 144,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft., fly 60 ft., swim 60 ft.",
+    "role": "null",
+    "tags": [
+        "celestial",
+        "chaotic",
+        "magical",
+        "support"
+    ],
+    "adjectives": [
+        "resilient",
+        "mobile",
+        "powerful",
+        "versatile"
+    ],
+    "description": "The Incandescent One is a medium-sized celestial creature that embodies mobility, resilience, and powerful magical abilities. It has a glowing presence that emanates dim light within a 5-foot radius.",
+    "memorable": "Its ability to inspire allies and see through illusions makes it a unique and invaluable companion in combat.",
+    "goals": "Typically serves to aid allies in battle, using its magical abilities to enhance their capabilities.",
+    "relations": "May interact with other celestial beings and can be an ally to adventurers fighting against dark forces.",
+    "environment": "Usually found in areas of light or celestial energy, potentially near bodies of water due to its amphibious nature.",
+    "strengths": "Possesses high mobility, multiple resistances, and immunities, along with powerful offensive and support magic.",
+    "weaknesses": "While resilient, it may still be vulnerable to strong magical attacks; otherwise, it is difficult to incapacitate.",
+    "attacks": "Can perform two powerful Slam attacks that inflict both bludgeoning and cold damage, or use three ranged Astral Bolt attacks dealing radiant damage.",
+    "most_powerful_ability": "Celestial Inspiration allows it to inspire allies, providing them with an advantage on their next attack roll or saving throw.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 120 feet, allowing it to perceive hidden or illusionary creatures.",
+    "skills": "Has a high passive perception of 17, enabling it to notice threats and hidden creatures easily.",
+    "additional_information": [
+        "Aqueous Form allows it to traverse narrow openings.",
+        "Flyby ability prevents opportunity attacks while flying.",
+        "Immortal Nature means it does not require food, drink, or sleep.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can communicate telepathically with others within 120 feet."
+    ],
+    "damage_types": [
+        "cold",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful celestial ally with healing abilities",
+        "mobile creature with truesight and flight",
+        "celestial being that inspires allies in combat",
+        "magical being immune to poison and various effects",
+        "explorer of both land and water with blinding light"
+    ]
+}

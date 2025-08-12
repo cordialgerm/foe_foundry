@@ -1,0 +1,25 @@
+{
+    "name": "Ring Servant",
+    "queries": [
+        {
+            "query": "large construct creature that serves its creator in combat",
+            "variant": "large monster construct that fights for its creator"
+        },
+        {
+            "query": "durable construct immune to poison and conditions",
+            "variant": "tough construct creature with poison immunity and condition resistance"
+        },
+        {
+            "query": "melee combatant with high Strength that can knock foes prone",
+            "variant": "strong melee fighter that knocks enemies down with attacks"
+        },
+        {
+            "query": "magical creature with powerful slam attacks and area damage ability",
+            "variant": "magical beast that has strong slam attacks and a ring of destruction move"
+        },
+        {
+            "query": "creature with natural armor and high hit points living in a combat environment",
+            "variant": "monster with high armor and many hit points found in battle scenarios"
+        }
+    ]
+}

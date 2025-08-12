@@ -1,0 +1,25 @@
+{
+    "name": "Nkosi",
+    "queries": [
+        {
+            "query": "humanoid shapechanger that can turn into a lion and excels in survival",
+            "variant": "shapechanging humanoid that transforms into a big lion and is great at survival"
+        },
+        {
+            "query": "medium humanoid with high strength and dexterity that can knock opponents prone",
+            "variant": "medium human-like creature with strong dexterity and strength that can knock enemies down"
+        },
+        {
+            "query": "Nkosi's abilities that enhance tracking and combat versatility",
+            "variant": "abilities of Nkosi that improve tracking and flexible combat"
+        },
+        {
+            "query": "creature with keen smell and pounce ability that thrives in combat",
+            "variant": "being with strong sense of smell and pounce skill that performs well in fights"
+        },
+        {
+            "query": "Nkosi's features including lion transformation and decent armor class",
+            "variant": "features of Nkosi such as transforming into a lion and having a reasonable AC"
+        }
+    ]
+}

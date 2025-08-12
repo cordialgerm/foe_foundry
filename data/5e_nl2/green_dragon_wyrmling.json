@@ -1,0 +1,53 @@
+{
+    "name": "Green Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 38,
+    "ac": 17,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. walking, 60 ft. flying, 30 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "poison",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "poisonous"
+    ],
+    "description": "The Green Dragon Wyrmling is a medium dragon known for its green scales and agile movements, often found in forested environments. It exhibits a powerful presence with its sharp teeth and claws.",
+    "memorable": "Its potent Poison Breath ability can severely injure unprepared parties, and it excels at ambush tactics due to its Woodland Stalker trait.",
+    "goals": "To dominate its territory, utilizing stealth and poison to overwhelm foes.",
+    "relations": "Often found alone or in the company of other dragonkin, serving as a young protector of its lair.",
+    "environment": "Forested or mountainous areas.",
+    "strengths": "Immunities to poison damage and the poisoned condition make it resilient to certain attacks.",
+    "weaknesses": "Relatively low hit points compared to older dragons can make it vulnerable if targeted effectively.",
+    "attacks": "Can perform a multiattack with a Bite and Claw, dealing piercing and poison damage.",
+    "most_powerful_ability": "The Poison Breath, a devastating area attack that can affect multiple targets at once.",
+    "equipment": null,
+    "senses": "Blindsight allows it to detect creatures within a 10-foot radius without relying on sight.",
+    "skills": "Proficient in Perception and Stealth, particularly enhanced in forested areas.",
+    "additional_information": [
+        "Amphibious nature allows breathing both air and water.",
+        "Woodland Stalker trait grants advantage on Stealth in forests.",
+        "Pounce ability can knock foes prone for tactical advantage.",
+        "Can impact multiple characters simultaneously with Poison Breath.",
+        "Young yet formidable, it presents a moderate threat to adventurers."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "young dragon that attacks with poison",
+        "cunning forest dragon with breath attack",
+        "medium dragon skilled in stealthy ambushes",
+        "poisonous dragon often found in forests",
+        "agile dragon that can swim and fly"
+    ]
+}

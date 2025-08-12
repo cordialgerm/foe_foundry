@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Overshadow is a large, stealthy undead that thrives in darkness and uses necrotic strength drain similar to a Wraith."
+  },
+  "Shadow": {
+    "relation": "almost_identical",
+    "explanation": "The Overshadow's shadowy form, stealth in dim light, and sunlight vulnerability closely match the Shadow's traits."
+  },
+  "monster_key": "overshadow"
+}

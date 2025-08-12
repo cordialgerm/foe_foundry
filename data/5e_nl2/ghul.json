@@ -1,0 +1,48 @@
+{
+    "name": "Ghul",
+    "creature_type": "Undead",
+    "alignment": "any evil alignment",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "melee"
+    ],
+    "adjectives": [
+        "sinister",
+        "tactical",
+        "resilient"
+    ],
+    "description": "The Ghul is a Medium undead creature that exudes a sinister presence, adept in melee with claws that deal significant damage and can paralyze foes.",
+    "memorable": "Its death triggers a noxious explosion that can paralyze nearby creatures, making it a dangerous foe even in defeat.",
+    "goals": "To disrupt enemy plans through tactical combat and control the battlefield with spellcasting.",
+    "relations": "Often encountered with other undead or evil creatures.",
+    "environment": "Commonly found in dark, decrepit places or on battlefields.",
+    "strengths": "Resistant to various damage types and immune to many conditions, allowing for exceptional resilience in combat.",
+    "weaknesses": "Vulnerable to certain forms of attack and relies on Charisma for spellcasting.",
+    "attacks": "Multiattack with two claw strikes, each capable of paralyzing non-undead foes.",
+    "most_powerful_ability": "Variable Immunity allows the Ghul to adapt to incoming damage types, enhancing its survivability.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can innately cast spells without material components.",
+        "Utilizes a mix of melee and spellcasting abilities for combat versatility.",
+        "Features abilities like Paralyzing Throes and Turn Resistance for added tactical advantages."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting includes destructive and utility spells like fireball and misty step.",
+    "test_queries": [
+        "undead creature that can paralyze enemies",
+        "tactical undead spellcaster with claws",
+        "ghul explosion causes paralysis",
+        "medium undead with variable damage immunity",
+        "creature that disrupts enemies with spells"
+    ]
+}

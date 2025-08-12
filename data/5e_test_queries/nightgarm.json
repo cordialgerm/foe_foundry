@@ -1,0 +1,25 @@
+{
+    "name": "Nightgarm",
+    "queries": [
+        {
+            "query": "large monstrosity that dwells in darkness and summons wolves",
+            "variant": "monstrosity that is large, loves darkness, and calls wolves"
+        },
+        {
+            "query": "creature with telepathy and resistance to lightning living in sinister environments",
+            "variant": "creature that can use telepathy and is resistant to lightning found in dark places"
+        },
+        {
+            "query": "chaotic evil creature that is vulnerable to radiant damage and bites",
+            "variant": "chaotic evil monster that can be harmed by radiant damage and uses bite attacks"
+        },
+        {
+            "query": "Nightgarm tactics involving stealth and summoning wolves",
+            "variant": "stealth tactics of the Nightgarm using wolf summons"
+        },
+        {
+            "query": "strong creature with high Constitution that disguises itself in shadows",
+            "variant": "powerful creature with great Constitution that hides in shadows"
+        }
+    ]
+}

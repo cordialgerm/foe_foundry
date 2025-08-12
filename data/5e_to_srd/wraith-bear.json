@@ -1,0 +1,15 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Wraith Bear is a large undead with necrotic life-draining abilities and incorporeal movement similar to a Wraith."
+  },
+  "Bear": {
+    "relation": "close_cousins",
+    "explanation": "It shares the physical form and brute strength of a large bear."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead predators that drain life and have a terrifying presence."
+  },
+  "monster_key": "wraith-bear"
+}

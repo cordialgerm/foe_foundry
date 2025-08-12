@@ -1,0 +1,54 @@
+{
+    "name": "Sootwing",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 13,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "fly 30 ft., walk 25 ft.",
+    "role": "null",
+    "tags": [
+        "beast",
+        "flying",
+        "ambusher",
+        "fire immunity"
+    ],
+    "adjectives": [
+        "small",
+        "stealthy",
+        "quick",
+        "fire-resistant"
+    ],
+    "description": "The Sootwing is a small, winged creature known for its soot-covered wings and keen sense of smell. It has a proboscis for feeding and its body is designed for quick maneuvers in the air.",
+    "memorable": "Its ability to create a blinding cloud of ash can significantly impair opponents, allowing for surprise attacks.",
+    "goals": "To scout for dangers and ambush prey, utilizing its evasive flying capabilities.",
+    "relations": "May be found accompanying larger beasts or used as a scout by cunning creatures.",
+    "environment": "Favored in areas with low light and possibly near fires or soot.",
+    "strengths": "Immunity to fire damage and ability to use the Sooty Wings ability to blind enemies.",
+    "weaknesses": "Low hit points make it vulnerable to sustained damage; limited intelligence limits tactical capabilities.",
+    "attacks": "Utilizes a proboscis for piercing damage and has a Sooty Wings ability that can blind multiple foes.",
+    "most_powerful_ability": "Sooty Wings creates a cloud of ash that blinds and damages enemies within a radius.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, enabling it to see in dim light and darkness effectively.",
+    "skills": "Proficient in stealth and perception, allowing it to blend into surroundings and notice threats.",
+    "additional_information": [
+        "Antennae trait gives advantage on Perception checks relying on smell.",
+        "Moderate dexterity allows for stealthy movement and evasion.",
+        "Ineffective in social interactions due to low charisma.",
+        "Vulnerable to physical attacks due to low armor class.",
+        "Works well as a distraction in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small flying creature with fire resistance",
+        "stealthy beast that can blind enemies",
+        "quick beast with ash cloud ability",
+        "winged creature immune to fire damage",
+        "ambushing creature with proboscis attack"
+    ]
+}

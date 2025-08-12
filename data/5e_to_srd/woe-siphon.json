@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Woe Siphon is a fey creature from forest environments with manipulative and psychological traits similar to a Dryad."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Its invisibility and life-draining abilities conceptually resemble the shadowy, life-sapping nature of a Shadow."
+  },
+  "monster_key": "woe-siphon"
+}

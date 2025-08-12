@@ -1,0 +1,25 @@
+{
+    "name": "Behir Magus",
+    "queries": [
+        {
+            "query": "huge lightning-resistant monster that can swim and climb",
+            "variant": "huge monster resistant to lightning that can climb and swim"
+        },
+        {
+            "query": "monster with serpentine movement that causes acid damage",
+            "variant": "creature that inflicts acid damage and has serpentine mobility"
+        },
+        {
+            "query": "agile creature that uses lightning breath and has high hit points",
+            "variant": "agile monster capable of lightning breath and has a lot of hit points"
+        },
+        {
+            "query": "intelligent creature with darkvision and strong perception skills",
+            "variant": "smart creature with darkvision and good perception skills"
+        },
+        {
+            "query": "monstrosity that can swallow and constrict its prey",
+            "variant": "creature capable of swallowing and restraining its victims"
+        }
+    ]
+}

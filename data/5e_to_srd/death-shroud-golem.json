@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs designed to protect or ambush, with the Death Shroud Golem being a stealthy, fabric-like variant."
+  },
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Death Shroud Golem shares the construct type and magical immunities typical of golems like the Clay Golem."
+  },
+  "monster_key": "death-shroud-golem"
+}

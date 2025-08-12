@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fiends with durable builds, natural armor, and powerful melee attacks."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of inflicting debilitating effects and disease-like curses through bite attacks."
+  },
+  "Ogre Zombie": {
+    "relation": "mechanically_similar",
+    "explanation": "Both inflict exhaustion and have necrotic damage with durable, tough bodies."
+  },
+  "monster_key": "vellso"
+}

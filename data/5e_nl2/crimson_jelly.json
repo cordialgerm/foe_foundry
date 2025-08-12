@@ -1,0 +1,52 @@
+{
+    "name": "Crimson Jelly",
+    "creature_type": "Ooze",
+    "alignment": "null",
+    "size": "Tiny",
+    "hp": 20,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "can fly 60 ft. (hover) and swim 30 ft.",
+    "role": "null",
+    "tags": [
+        "ooze",
+        "necrotic",
+        "invisible"
+    ],
+    "adjectives": [
+        "tiny",
+        "crimson",
+        "transparent"
+    ],
+    "description": "The Crimson Jelly is a tiny, translucent ooze, faintly glowing crimson in darkness, capable of squeezing through tight spaces with ease.",
+    "memorable": "Its ability to become invisible in light and attach to foes for suffocation makes it a unique and tactical combatant.",
+    "goals": "To drain opponents and control the battlefield by seizing opportunities in chaotic encounters.",
+    "relations": "Often encountered alongside other oozes or as a solitary predator in dark, moist environments.",
+    "environment": "Predominantly found in damp areas, caves, or near water sources.",
+    "strengths": "Immunity to exhaustion and several debilitating conditions enhances its resilience in combat.",
+    "weaknesses": "Low physical strength and constitution make it vulnerable to high-damage attacks.",
+    "attacks": "Uses 'Feeding Paddles' to deal necrotic damage and gains temporary hit points, potentially suffocating its target.",
+    "most_powerful_ability": "The 'Tainted Attacks' ability can impose exhaustion on foes, leading to memory loss and nightmares.",
+    "equipment": "null",
+    "senses": "Possesses keen senses within a 10-foot radius, making it difficult to detect due to its stealth score.",
+    "skills": "Has a high stealth score of 14, allowing effective ambush tactics.",
+    "additional_information": [
+        "Can split into smaller jelly types with the Reproduce ability.",
+        "Invisible in dim or bright light, creating tactical advantages.",
+        "Utilizes blood sense to track living creatures efficiently.",
+        "Immune to several conditions, enhancing its combat survivability.",
+        "Can pass through narrow spaces without penalties due to its amorphous form."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny crimson ooze that flies",
+        "invisible jelly that drains memories",
+        "ooze with necrotic attacks and blood sense",
+        "crimson jelly that splits into new jellies",
+        "suffocating jelly monster in dark caves"
+    ]
+}

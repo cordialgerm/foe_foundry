@@ -1,6 +1,8 @@
 <MonsterName/>Astral Snapper</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>12</AC>
+<HP/>78</HP>
 <summary>The Astral Snapper is a Medium Aberration classified as neutral evil. It has a unique ability to invade the bodies of other creatures, drawing power from its hosts while posing a significant threat in combat. The creature has an Armor Class of 12 and gains 78 hit points from rolling twelve 8-sided dice plus an additional 24 hit points, which makes it relatively resilient against attacks. With a challenge rating of 3, the Astral Snapper can present a moderate difficulty to adventurers, granting 700 experience points upon defeat. This creature boasts impressive Dexterity and Wisdom scores, making it agile and perceptive, though its Charisma is notably low.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Claws attack is its primary offensive option, dealing reliable damage and po
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Astral Snapper
 
 *Medium* *Aberration* *neutral evil*
@@ -51,5 +54,6 @@ From the time the astral snapper succeeds on the initial dive into the host thro
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.
 
 
+</statblock>
 
 

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as mechanical guardians with armor and weaponry."
+  },
+  "Flying Sword": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are mechanical constructs designed for stealthy ambush and swift attacks."
+  },
+  "monster_key": "clockwork-mantis"
+}

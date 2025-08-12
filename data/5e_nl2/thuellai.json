@@ -1,0 +1,53 @@
+{
+    "name": "Thuellai",
+    "creature_type": "Elemental",
+    "alignment": "Chaotic Neutral",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "100 feet walking speed, exceptionally fast",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "cold",
+        "huge",
+        "chaotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "mobile",
+        "cold-based",
+        "chaotic"
+    ],
+    "description": "Thuellai is a huge elemental with a strong cold presence, known for its icy appearance and frigid abilities. It possesses extraordinary agility and resilience, making it a feared combatant.",
+    "memorable": "Its ability to extinguish flames and freeze water creates a formidable tactical advantage in battle.",
+    "goals": "To dominate the battlefield through cold-based control, forcing opponents to adapt to its chilling presence.",
+    "relations": "Can be encountered alongside other elemental creatures or in wintry environments.",
+    "environment": "Typically found in extremely cold or icy regions, often from the elemental planes.",
+    "strengths": "High mobility and significant cold-based area-of-effect attacks.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Three Icy Claw melee attacks dealing slashing and additional cold damage, along with a freezing breath attack in a wide cone.",
+    "most_powerful_ability": "Freezing Breath, dealing massive cold damage in a large area.",
+    "senses": "Thuellai has Snowsight, allowing it to see through wintry precipitation without penalty.",
+    "skills": "It has a decent Perception skill, enhancing its awareness of surroundings.",
+    "additional_information": [
+        "Exhaustion condition immunity",
+        "Can ignore the needs for air, food, drink, or sleep",
+        "Has a Chilling Presence that damages and exhausts nearby creatures",
+        "Resistant to bludgeoning, piercing, and slashing from nonmagical attacks",
+        "Can extinguish unprotected flames within close range"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cold elemental with powerful icy breath",
+        "huge elemental that extinguishes flames",
+        "elemental with cold-based area attack",
+        "creature that freezes water and causes exhaustion",
+        "fast chaotic neutral ice monster"
+    ]
+}

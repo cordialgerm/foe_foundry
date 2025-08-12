@@ -1,0 +1,1 @@
+Rust Monster is found in the following environments: Caverns, ruins, or near forges. Rust Monster has the following relations: May be found in the company of other creatures in caverns or ruins. Rust Monster is focused on: Searching for and consuming metal objects. 

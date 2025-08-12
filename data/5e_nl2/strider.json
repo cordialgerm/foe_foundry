@@ -1,0 +1,49 @@
+{
+    "name": "Strider",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "stealth",
+        "agility",
+        "wilderness"
+    ],
+    "adjectives": [
+        "agile",
+        "stealthy"
+    ],
+    "description": "The Strider is a medium humanoid creature known for its agility and stealth. It possesses exceptional dexterity and wisdom, enabling it to excel in both ranged and melee combat.",
+    "memorable": "The Strider combines agility, stealth, and lethal precision, making it a formidable opponent in both wilderness and combat scenarios.",
+    "goals": "To ambush prey and navigate through the wilderness without being tracked.",
+    "relations": "May be found alongside other wilderness creatures or skilled hunters.",
+    "environment": "Wilderness and forested areas where evasion and tracking skills are beneficial.",
+    "strengths": "Master of evasion and concealment, able to avoid detection.",
+    "weaknesses": "None immediately specified, but relies on stealth and agility.",
+    "attacks": "Can use a shortsword for melee or a shortbow for ranged attacks, both inflicting significant piercing damage.",
+    "most_powerful_ability": "Trained Accuracy enhances weapon attacks with extra damage.",
+    "equipment": null,
+    "senses": "The Strider has keen hearing and sight, granting it advantage on relevant perception checks.",
+    "skills": "Proficient in nature, perception, stealth, and survival, making it expert in wilderness navigation.",
+    "additional_information": [
+        "Ability to move without being tracked by nonmagical means.",
+        "The Aimed Strike grants significant tactical advantages in combat.",
+        "Can make multiple attacks during its turn.",
+        "Expert in ambush tactics.",
+        "Possesses strong defenses against dexterity and wisdom saves."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy agile humanoid in the wilderness",
+        "wilderness tracker with keen senses",
+        "fast humanoid with strong evasion abilities",
+        "Strider multiattack tactics in combat",
+        "creature that can\u2019t be tracked by nonmagical means"
+    ]
+}

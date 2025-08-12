@@ -1,0 +1,25 @@
+{
+    "name": "Giant Sea Horse",
+    "queries": [
+        {
+            "query": "large colorful underwater creature used as mounts by merfolk",
+            "variant": "large underwatter colorful creature used as mounts by merfolk"
+        },
+        {
+            "query": "gentle sea horse found in shallow warm waters",
+            "variant": "gentle sea horse located in warm shallow waters"
+        },
+        {
+            "query": "creature with curled tail that delivers a strong kick when threatened",
+            "variant": "creature with a curling tail that can gives a strong kick when threatened"
+        },
+        {
+            "query": "graceful swimming beast that breathes underwater",
+            "variant": "beast that swims gracefully and can breath underwater"
+        },
+        {
+            "query": "large shy fish that blends into coral reefs",
+            "variant": "shy large fish that blends in coral reefs"
+        }
+    ]
+}

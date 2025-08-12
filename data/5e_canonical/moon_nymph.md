@@ -1,6 +1,8 @@
 <MonsterName/>Moon Nymph</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>13</AC>
+<HP/>110</HP>
 <summary>The Moon Nymph is a medium-sized aberration characterized by its chaotic neutral alignment. This creature is formidable in combat, boasting a strong combination of psychic and radiant damage abilities, which makes it particularly dangerous. With its powerful magic resistance and the ability to disappear in darkness or bright light, the Moon Nymph is both elusive and damaging. A total of 110 hit points grants it substantial endurance in battle, but its relatively low strength indicates it is not built for physical confrontations. Instead, the Moon Nymph relies on its dexterity and charisma to outmaneuver opponents and manipulate the battlefield effectively.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Moon Nymph is a cunning and formidable foe, blending magic, stealth
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moon Nymph
 
 *Medium* *Aberration* *chaotic neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Veil of Nightmares (1/Day):** The moon nymph emits a wave of hallucinatory nightmare visions. Each creature within 5 feet of the moon nymph must make a DC 14 Wisdom saving throw. On a failure, the creature takes 36 (8d8) psychic damage and is frightened. On a success, the creature takes half of the damage and isn't frightened. A frightened creature must succeed on a DC 10 Wisdom saving throw at the end of its turn to end the effect on itself. On a second failed save, the creature is incapacitated by fright for 1 round. On the start of its next turn, the creature must succeed on a DC 12 Wisdom saving throw or be reduced to 0 hp.
 
 
+</statblock>
 
 

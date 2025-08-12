@@ -1,0 +1,52 @@
+{
+    "name": "Diving Gel",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 17,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "slow on land, fast in water",
+    "role": null,
+    "tags": [
+        "ooze",
+        "aquatic",
+        "tiny"
+    ],
+    "adjectives": [
+        "amorphous",
+        "aquatic",
+        "dexterous"
+    ],
+    "description": "A small, gelatinous creature capable of moving through narrow spaces with its amorphous form, the Diving Gel is adept at swimming and retains a solid shape in water but struggles on land.",
+    "memorable": "Its ability to attach to creatures and provide breathable air while restricting movement makes it a unique threat in aquatic environments.",
+    "goals": "To survive by ambushing prey in aquatic surroundings and utilizing its attachments for breath support.",
+    "relations": "May associate with other aquatic creatures or oozes of similar nature.",
+    "environment": "Primarily found in aquatic environments but can survive on land for short periods.",
+    "strengths": "High Dexterity and resistance to acid, fire, and poison damage enhance its survivability.",
+    "weaknesses": "Extremely low Strength and Intelligence limit its physical effectiveness and ability to reason.",
+    "attacks": "Uses Pseudopod to bludgeon foes, and can Attach to restrict movement while providing air.",
+    "most_powerful_ability": "The Attach ability allows the Diving Gel to gain an advantage on attacks and control the breathing of its prey.",
+    "equipment": null,
+    "senses": "The Diving Gel has limited perception abilities with a passive Perception of 8.",
+    "skills": "Possesses some perception ability despite low Wisdom, enabling it to detect nearby actions.",
+    "additional_information": [
+        "Can breathe both air and water due to its amphibious ability.",
+        "Does not require sleep, remaining alert at all times.",
+        "Highly agility allows effective maneuverability in tight spaces."
+    ],
+    "damage_types": [
+        "acid",
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny aquatic gelatinous creature",
+        "amorphous monster that provides breathable air",
+        "dexterous ooze that lives in water",
+        "creature that can attach and restrict movement",
+        "weak but agile swimming ooze"
+    ]
+}

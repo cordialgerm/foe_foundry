@@ -1,0 +1,25 @@
+{
+    "name": "Ice Mephit",
+    "queries": [
+        {
+            "query": "small ice elemental creature that can create fog and explode on death",
+            "variant": "small ice elemental monster that explodes when it dies and can produce fog"
+        },
+        {
+            "query": "ice creature that appears as a shard of ice and breathes cold air",
+            "variant": "frosty monster that looks like an ice shard and exhales cold air"
+        },
+        {
+            "query": "impish creature made of frost that attacks with icy claws",
+            "variant": "shrimp-like monster of ice that strikes with sharp claws"
+        },
+        {
+            "query": "cold elemental that thrives in snowy environments and can summon allies",
+            "variant": "frost elemental that lives in ice-filled places and can call for help"
+        },
+        {
+            "query": "mephit known for its freezing breath and deceptive appearance",
+            "variant": "mephit recognized for its cold breath attack and ability to disguise itself"
+        }
+    ]
+}

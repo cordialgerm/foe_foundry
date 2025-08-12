@@ -1,0 +1,25 @@
+{
+    "name": "Bandit Lord",
+    "queries": [
+        {
+            "query": "cunning humanoid leader with strong melee attacks",
+            "variant": "smart humanoid boss with strong close combat strikes"
+        },
+        {
+            "query": "medium humanoid in armor that leads bandit groups",
+            "variant": "medium armored humanoid that commands bandit teams"
+        },
+        {
+            "query": "bandit commander that uses pack tactics in battle",
+            "variant": "bandit lord using grouped tactics during fights"
+        },
+        {
+            "query": "strong and agile humanoid that excels in combat",
+            "variant": "tough and nimble humanoid that is great in battles"
+        },
+        {
+            "query": "leader with advantage on attacks near allies and extra damage",
+            "variant": "commander that has attack boosts with allies around and extra damage"
+        }
+    ]
+}

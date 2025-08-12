@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "A large aquatic creature with multiple tentacles and grappling abilities similar to the Gargoctopus."
+  },
+  "Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the tentacled aquatic form and camouflage traits, though smaller and less combat-focused."
+  },
+  "monster_key": "gargoctopus"
+}

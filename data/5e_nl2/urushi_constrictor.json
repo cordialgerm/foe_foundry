@@ -1,0 +1,51 @@
+{
+    "name": "Urushi Constrictor",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 133,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walk, 30 ft. climb, 30 ft. swim",
+    "role": "Ambusher",
+    "tags": [
+        "jungle",
+        "predator",
+        "poison"
+    ],
+    "adjectives": [
+        "large",
+        "venomous",
+        "camouflaged"
+    ],
+    "description": "The Urushi Constrictor is a large, formidable creature with its skin embedded with poisonous leaves and vines, making it appear as part of the jungle itself.",
+    "memorable": "Its ability to inflict poison and disease while being a stealthy ambusher in jungle terrain makes it a dangerous opponent.",
+    "goals": "To ambush and constrict prey in its jungle environment.",
+    "relations": "Typically found alone or may inhabit territories near other jungle creatures.",
+    "environment": "Dense jungle areas where it can utilize its camouflage for ambush.",
+    "strengths": "Stealthy ambusher, immunity to bludgeoning and poison damage.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Utilizes multiattack options including powerful bites and constriction that grapples and poisons.",
+    "most_powerful_ability": "Urushi Blight disease, inflicting debilitating effects on creatures.",
+    "senses": "Has blindsight up to 10 feet, allowing it to sense creatures in close proximity.",
+    "skills": "Average detection abilities with a passive perception of 13.",
+    "additional_information": [
+        "Possesses Jungle Camouflage for enhanced stealth in jungle terrain.",
+        "Can inflict 7 poison damage with contact from its skin.",
+        "Has a high Constitution, making it resilient in combat.",
+        "Infected targets of Urushi Blight suffer significant disadvantages.",
+        "Can grapple and restrain targets while inflicting additional poison damage."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large jungle ambush predator",
+        "venomous creature with disease attack",
+        "jungle monster that grapples and constricts",
+        "stealthy ambusher in jungle terrain",
+        "creature with poisonous leaves and blight"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Tuberkith",
+    "creature_type": "Plant",
+    "alignment": "any alignment",
+    "size": "Small",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft., burrow 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "plant",
+        "small creature",
+        "burrower",
+        "ambusher"
+    ],
+    "adjectives": [
+        "swift",
+        "tough",
+        "perceptive"
+    ],
+    "description": "The Tuberkith is a small plant creature with distinctive abilities, featuring a sturdy natural armor and a series of eyes that enhance its perception.",
+    "memorable": "Its ability to knock opponents prone combined with its advantage against movement effects makes it a strategic combatant.",
+    "goals": "Survive and ambush predators while defending its territory.",
+    "relations": "May interact with other plant creatures or forest animals, possibly serving as guardians in a forest environment.",
+    "environment": "Typically found in forested areas or overgrown regions.",
+    "strengths": "Advantage on saves against displacement and perception checks related to sight.",
+    "weaknesses": "Low Strength and Charisma make it vulnerable in physical confrontations and social interactions.",
+    "attacks": "Utilizes Peeler and Masher attacks, capable of dealing slashing and bludgeoning damage with additional effects.",
+    "most_powerful_ability": "Deep Roots grants it significant resistance to being moved against its will.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, allowing it to see in darkness as if it were dim light.",
+    "skills": "Proficient in perception with an average modifier.",
+    "additional_information": [
+        "Can use its Deep Roots ability to resist attempts to move it.",
+        "Prevents attacking creatures from benefiting from teamwork tactics when not blinded.",
+        "Moves at a speed of 30 feet and can burrow even faster.",
+        "Uses its Dozens of Eyes ability for enhanced perception.",
+        "Has a low challenge rating, making it suitable for minor encounters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small swift plant creature with burrowing",
+        "tough plant creature that can knock foes down",
+        "plant monster with many eyes in the forest",
+        "creature that ambushes and prevents teamwork",
+        "burrowing creature that is hard to displace"
+    ]
+}

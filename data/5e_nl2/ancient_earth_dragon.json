@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Earth Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 425,
+    "ac": 22,
+    "srd": false,
+    "cr": "24",
+    "movement": "walk 40 ft., fly 40 ft., burrow 60 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "earth",
+        "legendary",
+        "ancient"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "formidable",
+        "primal",
+        "resilient"
+    ],
+    "description": "The Ancient Earth Dragon embodies primal forces of earth and stone with its massive form and rocky exterior. It has large, powerful limbs and a fearsome presence that commands respect.",
+    "memorable": "Its ability to blend seamlessly with rocky terrain while motionless and its capacity to alter the battlefield make it a unique and strategic threat.",
+    "goals": "The dragon seeks to protect its essence-linked area and may lay ambushes for intruders.",
+    "relations": "It may be encountered alongside other powerful earth-based creatures or serve as a protector of natural landmarks.",
+    "environment": "Typically found in mountainous regions, caverns, or areas rich in earth and stone.",
+    "strengths": "With exceptional physical and magical strength, it can manipulate terrain and has strong resistance against non-magical attacks.",
+    "weaknesses": "Its reliance on a specific landmark for resting can be a strategic vulnerability for those who know it.",
+    "attacks": "The dragon employs a powerful Multiattack strategy, using a combination of a bite and slam attacks or a Rock Spire attack to control combat.",
+    "most_powerful_ability": "The Scouring Breath, which unleashes a devastating cone of slashing damage, emphasizing its area control.",
+    "equipment": null,
+    "senses": "With darkvision and tremorsense extending to 120 feet, it has exceptional awareness of its surroundings.",
+    "skills": "The dragon excels in Athletics, Insight, Nature, and Perception, showcasing its dominance in both physical and mental challenges.",
+    "additional_information": [
+        "Earth Glide allows it to burrow without leaving a trace.",
+        "False Appearance makes it indistinguishable from the rocky terrain when still.",
+        "Legendary Resistance enables it to succeed on failed saving throws three times per day.",
+        "Essence Link ties its wellbeing to a specific landmark.",
+        "Innate spellcasting capability with spells related to terrain manipulation and surveillance."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting uses Charisma, allowing it to cast spells that manipulate terrain and control the battlefield.",
+    "test_queries": [
+        "massive dragon of earth and stone",
+        "earth dragon with incredible resilience",
+        "subterranean dragon with camouflage ability",
+        "legendary dragon that alters terrain",
+        "primal dragon protector of mountains"
+    ]
+}

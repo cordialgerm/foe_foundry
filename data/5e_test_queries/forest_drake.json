@@ -1,0 +1,25 @@
+{
+    "name": "Forest Drake",
+    "queries": [
+        {
+            "query": "small dragon that breathes fire and jumps high",
+            "variant": "small drake that can jump high and breathes fire"
+        },
+        {
+            "query": "forest creature with fire immunity and strong melee attacks",
+            "variant": "a creature immune to fire from the forest with strong melee attacks"
+        },
+        {
+            "query": "agile drake known for powerful leaps and fire breath",
+            "variant": "drake that leaps powerfully and has a breath of fire"
+        },
+        {
+            "query": "green-scaled dragon that communicates in draconic and sylvan",
+            "variant": "dragon with green scales that speaks draconic and sylvan"
+        },
+        {
+            "query": "creature with natural armor and a high jump ability in the forest",
+            "variant": "forest creature with natural armor and the ability to jump high"
+        }
+    ]
+}

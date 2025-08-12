@@ -1,0 +1,7 @@
+{
+  "Goat": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew creature is a small, hardy beast with curved horns and a charging attack, matching the Goat exactly."
+  },
+  "monster_key": "goat"
+}

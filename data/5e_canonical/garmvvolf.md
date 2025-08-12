@@ -1,6 +1,8 @@
 <MonsterName/>Garmvvolf</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Garmvvolf is a formidable Huge Monstrosity that operates outside of any alignment, often presenting itself as a fearsome adversary in encounters. It boasts a high amount of hit points, making it durable and capable of sustaining damage during battles. With an exceptional Strength score of 20, the Garmvvolf excels in physical combat, particularly through its powerful bite attacks. Its Challenge Rating of 9 indicates that it poses a significant threat to low to mid-level adventurers, and its ability to regenerate heads makes it a persistent foe. However, it has weaknesses, such as low Intelligence and Charisma, making it easy to outsmart or charm. Overall, the Garmvvolf can be a menacing presence on the battlefield, especially when working with allies to exploit its strengths.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Garmvvolf provides a strong adversarial presence with a mix of high
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Garmvvolf
 
 *Huge* *Monstrosity* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Tripartite Howl (Recharge 5–6):** Its heads exhale a three-part howl one filled with poisonous spittle one a thunderous bellow and one a frightful bay in a 30' cone. Each creature in area: 17 (5d6) poison and 17 (5d6) thunder and becomes frightened 1 min (DC 16 Dex half damage isn’t frightened). A frightened creature can re-save at end of each of its turns ending effect on itself on a success.
 
 
+</statblock>
 
 

@@ -1,0 +1,11 @@
+{
+  "Sphinx of Wonder": {
+    "relation": "conceptually_similar",
+    "explanation": "A tiny celestial creature with intelligence and magical resistance, sharing the celestial and supportive nature."
+  },
+  "Deva": {
+    "relation": "close_cousins",
+    "explanation": "A lawful good celestial being with healing and protective abilities, similar in role but larger and more powerful."
+  },
+  "monster_key": "haladron"
+}

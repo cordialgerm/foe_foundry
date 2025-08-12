@@ -1,0 +1,15 @@
+{
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, stealthy creatures that use darkness and shadows to ambush prey."
+  },
+  "Doppelganger": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the shapechanging and deceptive nature with the Alp's polymorph and illusion abilities."
+  },
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are small fey creatures with magical abilities and a connection to stealth and trickery."
+  },
+  "monster_key": "alp"
+}

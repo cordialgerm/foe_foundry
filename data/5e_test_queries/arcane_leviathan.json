@@ -1,0 +1,25 @@
+{
+    "name": "Arcane Leviathan",
+    "queries": [
+        {
+            "query": "gargantuan water creature with electrical abilities",
+            "variant": "gargantuan creature in water that has lightning powers"
+        },
+        {
+            "query": "construct that is immune to poison and resistant to acid",
+            "variant": "artificial being immune to poison and has resistance to acid"
+        },
+        {
+            "query": "massive creature that uses lightning and grapples its prey",
+            "variant": "huge creature that can use lightning and holds onto its targets"
+        },
+        {
+            "query": "aquatic construct with high hit points and magical attacks",
+            "variant": "water-based construct with many hit points and spell-like abilities"
+        },
+        {
+            "query": "creature that does not need sleep and can take no damage on saves",
+            "variant": "monster that requires no rest and can completely avoid damage on saving throws"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Blood Giant",
+    "queries": [
+        {
+            "query": "huge magic-using giant with blood powers",
+            "variant": "huge giant that uses magic and blood abilities"
+        },
+        {
+            "query": "strong melee giant that can sense living creatures",
+            "variant": "strong giant who can detect living entities nearby"
+        },
+        {
+            "query": "giant immune to cold and poison attacks",
+            "variant": "cold and poison immune giant creature"
+        },
+        {
+            "query": "blood giant with powerful spear attack",
+            "variant": "blood giant that has a strong spear attack"
+        },
+        {
+            "query": "combat giant with special blood magic abilities",
+            "variant": "combat giant possessing unique blood magic powers"
+        }
+    ]
+}

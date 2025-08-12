@@ -1,0 +1,15 @@
+{
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "A small, cunning fiend with invisibility and spellcasting abilities similar to an Imp."
+  },
+  "Quasit": {
+    "relation": "close_cousins",
+    "explanation": "A small fiend known for stealth, deception, and magical abilities, akin to the Ink Devil's traits."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a shadowy, light-absorbing form and stealthy nature, though mechanically different."
+  },
+  "monster_key": "ink-devil"
+}

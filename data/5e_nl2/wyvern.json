@@ -1,0 +1,53 @@
+{
+    "name": "Wyvern",
+    "creature_type": "Dragon",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 110,
+    "ac": 13,
+    "srd": true,
+    "cr": "6",
+    "movement": "20 ft. walking, 80 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "predator",
+        "venomous",
+        "flying"
+    ],
+    "adjectives": [
+        "large",
+        "aggressive",
+        "venomous",
+        "powerful"
+    ],
+    "description": "A large dragon-like creature with a long, barbed tail and powerful wings, known for its agility and fierce combat abilities.",
+    "memorable": "Its venomous stinger can incapacitate prey, making it a dangerous aerial predator.",
+    "goals": "To hunt large game and threaten travelers and livestock in its mountainous or wasteland habitat.",
+    "relations": "May be encountered alongside other territorial predators or serve as a threat to weaker creatures.",
+    "environment": "Remote, mountainous regions or desolate wastelands.",
+    "strengths": "Impressive physical strength and agility in flight",
+    "weaknesses": "Impaired flying ability when bloodied limits its mobility.",
+    "attacks": "Uses multiattack with bite and stinger, along with claws from the air.",
+    "most_powerful_ability": "Venomous stinger inflicts high poison damage.",
+    "senses": "Possesses keen perception with a passive score of 14.",
+    "skills": "Skilled at perception, making it aware of its surroundings.",
+    "additional_information": [
+        "Clumsy, vulnerable to being knocked down when grounded.",
+        "Imperfect Flight when bloodied reduces flying speed by half.",
+        "Can grapple targets while attacking from above.",
+        "Reflective Tail Whip can knock opponents prone.",
+        "Understands Draconic but cannot speak."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large venomous flying dragon",
+        "aggressive aerial predator with stinger",
+        "mountain dwelling dragon with barbed tail",
+        "dragon-like creature that hunts large game",
+        "creature that can grapple and poison enemies"
+    ]
+}

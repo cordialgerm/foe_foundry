@@ -1,6 +1,8 @@
 <MonsterName/>Gear Spider</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>28</HP>
 <summary>The Gear Spider is a tiny construct that embodies ingenuity and practicality, serving as a mechanical observer and simple combatant. Its relatively low Armor Class of 13 and moderate Hit Points of 28 make it somewhat fragile, yet its speed allows it to navigate both ground and vertical surfaces effectively. As a Challenge Rating of 1/2 creature, the Gear Spider is an entry-level opponent for players, providing a bit of challenge without overwhelming them. The creature possesses a surprising array of abilities, such as the power to record images and avoid many common conditions, but it lacks significant offensive power, relying on its stealth to avoid detection and attack. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Gear Spider also has a unique bonus action called "Photograph," which allows
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gear Spider
 
 *Tiny* *Construct*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Photograph:** The gear spider stores a black and white image of what it can see. The gear spider can hold up to 10 images at a time. Retrieving the image storage device inside the gear spider requires 1 minute. Once the device is accessed, viewing a stored image requires a DC 12 Investigation check to make out any details.
 
 
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Winter Wolf",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 75,
+    "ac": 13,
+    "srd": true,
+    "cr": "3",
+    "movement": "fast speed of 50 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "arctic",
+        "wolf",
+        "cold",
+        "ambush"
+    ],
+    "adjectives": [
+        "massive",
+        "intelligent",
+        "cunning",
+        "fierce"
+    ],
+    "description": "A large monstrosity with icy white fur and pale blue eyes, known for its cold resilience and fearsome demeanor.",
+    "memorable": "The Winter Wolf's freezing breath and tactical advantages make it a unique threat in combat.",
+    "goals": "To hunt prey and serve as a mount or guard for frost giants and other cold-aligned beings.",
+    "relations": "Often found in the company of frost giants or other cold-aligned creatures.",
+    "environment": "Cold, arctic landscapes, typically hunting in packs.",
+    "strengths": "Resistance to cold damage and enhanced skills in snowy environments.",
+    "weaknesses": "Low intelligence and charisma may limit tactical options and social interactions.",
+    "attacks": "A powerful bite attack dealing piercing damage, with the potential to knock foes prone.",
+    "most_powerful_ability": "Cold Breath can inflict significant area damage, affecting multiple enemies at once.",
+    "senses": "Keen Hearing and Smell grants advantage on Perception checks related to these senses.",
+    "skills": "A +3 in Perception, allowing it to detect threats adequately, and +3 in Stealth for ambush tactics.",
+    "additional_information": [
+        "Gain advantage on attack rolls if an ally is nearby due to Pack Tactics.",
+        "Snow Camouflage enhances its Stealth ability in snowy terrain.",
+        "Defensive resilience against exhaustion and fear effects.",
+        "Can freeze portions of a target's body with Freezing Nose ability.",
+        "Communicates using growls, barks, and speaks Common and Giant."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "intelligent wolf with icy breath",
+        "cold-breathing wolf of the arctic",
+        "massive white wolf that hunts in packs",
+        "wolf that can freeze parts of its prey",
+        "cunning predator in snowy environments"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Shark Bowl",
+    "queries": [
+        {
+            "query": "large ooze creature that can engulf smaller foes",
+            "variant": "big ooze monster that can swallow smaller enemies"
+        },
+        {
+            "query": "monster with electrical charge ability and blood frenzy against injured creatures",
+            "variant": "creature with blood frenzy and electrical charge ability for weakened foes"
+        },
+        {
+            "query": "slow moving ooze that attacks in close quarters while dealing consistent damage",
+            "variant": "sluggish ooze monster that engages in close combat while causing steady damage"
+        },
+        {
+            "query": "giant monster with amphibious traits that can breathe in both air and water",
+            "variant": "huge creature that can live in air and water"
+        },
+        {
+            "query": "battlefield controlling ooze with low armor class and high hit points",
+            "variant": "battlefield commanding ooze that has low AC and a lot of hit points"
+        }
+    ]
+}

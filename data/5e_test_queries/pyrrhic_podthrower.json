@@ -1,0 +1,25 @@
+{
+    "name": "Pyrrhic Podthrower",
+    "queries": [
+        {
+            "query": "small plant creature that regenerates and deals fire damage",
+            "variant": "small plant monster regenerating and inflicting fire damage"
+        },
+        {
+            "query": "ambush monster that blends in with the environment and uses explosive seedpods",
+            "variant": "creature for ambush that camouflages and has exploding seedpods"
+        },
+        {
+            "query": "plant monster with stealth abilities and significant hit points",
+            "variant": "stealthy plant creature with high hit points"
+        },
+        {
+            "query": "Pyrrhic Podthrower tactics involving burrowing and surprise attacks",
+            "variant": "tactics of Podthrower using burrowing and ambush attacks"
+        },
+        {
+            "query": "creature that is weak to necrotic damage and has False Appearance ability",
+            "variant": "monster vulnerable to necrotic that posses False Appearance skill"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Moonlit King",
+    "creature_type": "Fey",
+    "alignment": "Neutral Good",
+    "size": "Medium",
+    "hp": 204,
+    "ac": 17,
+    "srd": false,
+    "cr": "17",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "fey",
+        "magical",
+        "night",
+        "protection"
+    ],
+    "adjectives": [
+        "mystical",
+        "enchanting",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Moonlit King embodies the mystical qualities of the night, appearing as a medium-sized fey with a regal demeanor.",
+    "memorable": "The Moonlit King can teleport in moonlight, summon a lunar devil, and has an extraordinary spellcasting ability.",
+    "goals": "Protect the natural world and maintain the balance of the night.",
+    "relations": "May be encountered with other fey creatures or allies of the night.",
+    "environment": "Typically found in areas illuminated by moonlight, such as enchanted forests.",
+    "strengths": "Immunity to cold, fire, and poison damage; highly resilient due to legendary resistances.",
+    "weaknesses": "Vulnerable to attacks made with cold iron weapons.",
+    "attacks": "Uses the Crystal Staff for melee strikes and the Moon Bolt spell for ranged attacks, dealing radiant damage.",
+    "most_powerful_ability": "Animate Shadows can deal significant necrotic damage and reduce a target's Strength.",
+    "equipment": "Crystal Staff, a magical weapon that enhances its damage.",
+    "senses": "Possesses blindsight up to 30 feet and has a high passive perception of 20.",
+    "skills": "Proficient in Arcana and has notable perception skills.",
+    "additional_information": [
+        "Can teleport using Moonlight Step.",
+        "Has an array of powerful spells including Heal and Moonbeam.",
+        "Legendary Actions allow it to manipulate moonlight and attack without taking opportunity attacks.",
+        "Shadow Slip grants it defensive capabilities against attackers.",
+        "Summons a lunar devil to aid in combat."
+    ],
+    "damage_types": [
+        "radiant",
+        "necrotic"
+    ],
+    "spellcasting": "Casts spells such as continual flame, invisibility, and moonbeam at will; also has higher level spells like heal and major image available.",
+    "test_queries": [
+        "mystical fey creature in moonlight",
+        "enchanted protector of the night",
+        "powerful foe with spellcasting abilities",
+        "moonlit king's radiant attacks",
+        "creature immune to cold and poison"
+    ]
+}

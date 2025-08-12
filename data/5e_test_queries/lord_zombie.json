@@ -1,0 +1,25 @@
+{
+    "name": "Lord Zombie",
+    "queries": [
+        {
+            "query": "undead creature with high hit points and ability to rise from death",
+            "variant": "undead monster that has high hp and can come back from death"
+        },
+        {
+            "query": "powerful zombie that controls lesser undead",
+            "variant": "strong zombie lord that commands weaker undead"
+        },
+        {
+            "query": "menacing zombie with life drain ability and high Constitution",
+            "variant": "threatening zombie that can drain life and has great Constitution"
+        },
+        {
+            "query": "zombie monster immune to necrotic damage and resistant to physical attacks",
+            "variant": "undead monster that can't be hurt by necrotic damage and has resistance to physical hits"
+        },
+        {
+            "query": "medium undead with strong offensive capabilities and stench ability",
+            "variant": "medium undead creature with powerful attacks and a stench effect"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Marid is a large water elemental with magical abilities and aquatic traits similar to the Water Elemental."
+  },
+  "monster_key": "marid"
+}

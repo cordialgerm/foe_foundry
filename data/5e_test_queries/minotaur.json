@@ -1,0 +1,25 @@
+{
+    "name": "Minotaur",
+    "queries": [
+        {
+            "query": "muscular humanoid creature with a bull's head that thrives in labyrinths",
+            "variant": "muscular humanoid monster with a bull head that loves labyrinths"
+        },
+        {
+            "query": "powerful melee fighter with a penchant for charging at enemies in dungeons",
+            "variant": "strong melee combatant that charges at foes in dungeons"
+        },
+        {
+            "query": "aggressive monster possessing keen navigation skills in maze-like environments",
+            "variant": "fierce creature with excellent navigation abilities in maze-like areas"
+        },
+        {
+            "query": "large creature that inflicts massive damage with a greataxe and has a gore attack",
+            "variant": "big monster that deals heavy damage using a greataxe and has a gore attack"
+        },
+        {
+            "query": "chaotic evil creature known for its brute strength and labyrinthe recall ability",
+            "variant": "chaotic evil monster famous for its brute power and labyrinthine recall skill"
+        }
+    ]
+}

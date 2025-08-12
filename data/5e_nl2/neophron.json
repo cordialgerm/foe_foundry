@@ -1,0 +1,53 @@
+{
+    "name": "Neophron",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 90 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "shapechanger",
+        "poison immue",
+        "acid damage"
+    ],
+    "adjectives": [
+        "deceptive",
+        "formidable",
+        "tactical"
+    ],
+    "description": "The Neophron is a medium-sized fiend characterized by its chaotic evil nature and impressive mobility, boasting the ability to fly and high combat resilience.",
+    "memorable": "Its ability to swallow foes and turn them into ghasts makes it a unique and dangerous opponent.",
+    "goals": "Typically seeks to disrupt the order and instill chaos.",
+    "relations": "Often associated with other fiends or chaotic creatures.",
+    "environment": "Typically found in dark, chaotic realms or battlefields.",
+    "strengths": "Immunities to poison and resistance to various damage types enhance its survivability in combat.",
+    "weaknesses": "Low Intelligence score of 8 may limit strategic options.",
+    "attacks": "Utilizes a Multiattack with a Bite that can swallow enemies and Claw attacks that can inflict poison.",
+    "most_powerful_ability": "The ability to polymorph into a Large giant vulture, allowing for stealth or tactical retreats.",
+    "equipment": null,
+    "senses": "Possesses Keen Sight and Smell, granting it advantage on Perception checks that rely on these senses.",
+    "skills": "Proficient in survival with a +6 bonus.",
+    "additional_information": [
+        "Has a Magic Resistance for enhanced defense against spells.",
+        "Can only swallow one creature at a time.",
+        "Creates ghasts from swallowed humanoids, gaining control over them.",
+        "Can regurgitate swallowed creatures under certain damage conditions.",
+        "High Constitution grants significant saving throw bonuses."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend with shapechanging ability",
+        "deceptive medium monster with wings",
+        "poison immune creature that swallows foes",
+        "chaotic evil creature that creates ghasts",
+        "tactical monster with keen senses and magic resistance"
+    ]
+}

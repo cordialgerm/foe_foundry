@@ -1,0 +1,25 @@
+{
+    "name": "Venom Maw Hydra",
+    "queries": [
+        {
+            "query": "huge multi-headed monster with acid attacks",
+            "variant": "huge monster with multiple heads and acid attacks"
+        },
+        {
+            "query": "amphibious hydra that regenerates heads",
+            "variant": "regenerating hydra that can breathe air and water"
+        },
+        {
+            "query": "creature with five heads that sprays acid",
+            "variant": "five-headed creature that can spray acid"
+        },
+        {
+            "query": "chaotic hydra that is difficult to hit",
+            "variant": "hard-to-hit chaotic hydra"
+        },
+        {
+            "query": "venomous monster that loves water and has high HP",
+            "variant": "water-loving venomous creature with lots of hit points"
+        }
+    ]
+}

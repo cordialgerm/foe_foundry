@@ -1,0 +1,53 @@
+{
+    "name": "Nightmare",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 68,
+    "ac": 13,
+    "srd": true,
+    "cr": "3",
+    "movement": "60 ft. walking speed, 90 ft. flying speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "steed",
+        "fire",
+        "fear"
+    ],
+    "adjectives": [
+        "fiendish",
+        "flame-wreathed",
+        "swift",
+        "menacing"
+    ],
+    "description": "A Nightmare is a large fiendish horse wreathed in flames, with a dark, smoky mane and glowing red eyes. Its hooves burn with fire as it gallops.",
+    "memorable": "This creature combines striking fire abilities with high mobility, instilling dread in those who encounter it.",
+    "goals": "Typically summoned to serve as a steed for evil entities and necromancers, it excels in combat and stealth missions.",
+    "relations": "Often serves powerful fiends or necromancers.",
+    "environment": "Can be found in dark, fiery planar locations or near evil-aligned creatures.",
+    "strengths": "High mobility with flying speed, fire immunity, and formidable melee attacks.",
+    "weaknesses": "Challenge rating of 3 indicates it is best suited for encounters with lower-level adventurers.",
+    "attacks": "Delivers powerful hooves attacks, dealing bludgeoning damage accompanied by fire damage, with the potential to knock foes prone.",
+    "most_powerful_ability": "Ethereal Shift allows it to magically transition between planes, providing tactical advantages.",
+    "senses": "Possesses passive perception of 11, representing moderate awareness in stealth situations.",
+    "skills": "Offers fire resistance to willing riders, while punishments incur for unauthorized riders.",
+    "additional_information": [
+        "Radiates an Evil aura.",
+        "Leaves burning hoofprints that can damage creatures.",
+        "Can create chaotic conditions in battle.",
+        "Equipped with a significant blend of physical and magical abilities.",
+        "Can grant fire resistance to allies."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery nighttime horse monster",
+        "dark horse that breathes fire",
+        "evil steed with burning hooves",
+        "large fiend that travels between planes",
+        "fiendish mount for necromancers"
+    ]
+}

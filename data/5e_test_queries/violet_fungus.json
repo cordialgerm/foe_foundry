@@ -1,0 +1,25 @@
+{
+    "name": "Violet Fungus",
+    "queries": [
+        {
+            "query": "carnivorous plant that attacks in caves",
+            "variant": "plant that devours in dark caves"
+        },
+        {
+            "query": "dark cave creature with toxic spores",
+            "variant": "toxic spore creature of dark caves"
+        },
+        {
+            "query": "slow-moving fungus known for necrotic damage",
+            "variant": "fungus that moves slowly and deals necrotic damage"
+        },
+        {
+            "query": "creature resembling ordinary fungus with rotting touch",
+            "variant": "monster that looks like normal mushroom with rotting touch attack"
+        },
+        {
+            "query": "underground monster with false appearance",
+            "variant": "monster that hides as regular fungus underground"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Kraken": {
+    "relation": "close_cousins",
+    "explanation": "The Krake Spawn is a huge aquatic monstrosity with tentacles and poison attacks, similar in concept and role to the Kraken."
+  },
+  "monster_key": "krake-spawn"
+}

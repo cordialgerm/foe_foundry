@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "A Huge lawful evil fiend with a menacing presence and melee combat focus."
+  },
+  "Bearded Devil": {
+    "relation": "close_cousins",
+    "explanation": "A lawful evil fiend known for melee attacks and intimidating presence."
+  },
+  "monster_key": "vexxeh"
+}

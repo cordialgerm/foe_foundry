@@ -1,0 +1,25 @@
+{
+    "name": "Dire Centipede",
+    "queries": [
+        {
+            "query": "large venomous centipede that can climb walls and paralyze",
+            "variant": "venomous large centipede that can climb walls and cause paralysis"
+        },
+        {
+            "query": "creature with blindsight that is a threat in dark environments",
+            "variant": "dark environment creature with the ability to see vibrations"
+        },
+        {
+            "query": "beast with poison attack and ability to navigate difficult surfaces",
+            "variant": "poison-using beast that can move over challenging terrain"
+        },
+        {
+            "query": "mobility-focused beast that inflicts paralysis on its prey",
+            "variant": "beast focused on mobility that can paralyze its targets"
+        },
+        {
+            "query": "melee attacker that has a poor intelligence but deadly venom",
+            "variant": "melee attacking creature with low intelligence and lethal venom"
+        }
+    ]
+}

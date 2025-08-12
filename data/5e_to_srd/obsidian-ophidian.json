@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elemental creatures associated with fire and lava, with the Obsidian Ophidian being a serpentine variant that thrives in molten lava."
+  },
+  "Salamander": {
+    "relation": "conceptually_similar",
+    "explanation": "The Obsidian Ophidian shares the fiery elemental nature and volcanic habitat with Salamanders, though it has a serpentine form and obsidian-like texture."
+  },
+  "monster_key": "obsidian-ophidian"
+}

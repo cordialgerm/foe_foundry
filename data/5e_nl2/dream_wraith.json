@@ -1,0 +1,51 @@
+{
+    "name": "Dream Wraith",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 60 ft., hover",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "nightmare",
+        "psychic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "incorporeal",
+        "swift"
+    ],
+    "description": "The Dream Wraith is a malevolent, incorporeal creature that preys on the living, characterized by its ability to fly and move through solid objects.",
+    "memorable": "It can create wraiths from the fallen and manipulate dreams to terrify its foes.",
+    "goals": "To prey on the living by exploiting their dreams and fears.",
+    "relations": "It may control undead wraiths it creates.",
+    "environment": "Thrives in darkness, typically found in eerie or haunted locations.",
+    "strengths": "High Dexterity for agility in combat and good stealth skills.",
+    "weaknesses": "Vulnerable to psychic damage.",
+    "attacks": "Uses a Sleep Touch attack causing psychic damage and the potential to render targets unconscious.",
+    "most_powerful_ability": "Steal Dreams allows it to reduce a target to 0 hit points and gain temporary hit points.",
+    "senses": "Has darkvision allowing it to see in darkness effectively.",
+    "skills": "Possesses exceptional stealth capabilities with a +7 modifier.",
+    "additional_information": [
+        "Immune to necrotic and poison damage.",
+        "Resistant to multiple damage types including acid and cold.",
+        "Can generate illusions of loved ones to terrify foes.",
+        "Endures force damage if ending its turn inside solid objects.",
+        "Sensitized to sunlight, suffering disadvantages while exposed."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "malevolent incorporeal undead creature",
+        "creature that preys on sleeping targets",
+        "undead that creates wraiths from kills",
+        "psychic damage dealing nightmare creature",
+        "swift flying undead that terrifies"
+    ]
+}

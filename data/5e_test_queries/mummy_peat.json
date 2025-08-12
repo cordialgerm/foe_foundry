@@ -1,0 +1,25 @@
+{
+    "name": "Mummy, Peat",
+    "queries": [
+        {
+            "query": "undead bog creature that curses its enemies",
+            "variant": "bog undead creature that curses its foes"
+        },
+        {
+            "query": "Peat Mummy with high strength and a nasty curse",
+            "variant": "Mummy from the peat with strong physical attacks and a bad curse"
+        },
+        {
+            "query": "creature that inflicts bog melt and has poison immunity",
+            "variant": "monster that uses bog melt curse and is immune to poison"
+        },
+        {
+            "query": "medium undead monster that thrives in decay",
+            "variant": "undead creature of medium size that lives in decay"
+        },
+        {
+            "query": "peat mummy with multiattack and noxious abilities",
+            "variant": "mummy from the peat that has multiattacks and noxious powers"
+        }
+    ]
+}

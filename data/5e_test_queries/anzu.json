@@ -1,0 +1,25 @@
+{
+    "name": "Anzu",
+    "queries": [
+        {
+            "query": "large winged monster that can breathe fire and water",
+            "variant": "big flying monster that breathes fire and water"
+        },
+        {
+            "query": "powerful creature with lightning abilities and good attack strength",
+            "variant": "strong monster with abilities related to lightning and great attack power"
+        },
+        {
+            "query": "monstrosity that attacks with claws and has high hit points",
+            "variant": "creature that uses talons for attacks and has a lot of health"
+        },
+        {
+            "query": "flying monster that has resistance to fire and lightning damage",
+            "variant": "birdlike creature that is resistant to fire and lightning"
+        },
+        {
+            "query": "monster known for keen sight and strong perception skills",
+            "variant": "creature famous for its sharp vision and perception abilities"
+        }
+    ]
+}

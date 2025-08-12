@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Atavist is a humanoid combatant with tactical combat skills similar to a Veteran."
+  },
+  "Berserker": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are formidable melee combatants with a focus on physical prowess and damage output."
+  },
+  "monster_key": "atavist"
+}

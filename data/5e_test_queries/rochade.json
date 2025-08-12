@@ -1,0 +1,25 @@
+{
+    "name": "Rochade",
+    "queries": [
+        {
+            "query": "stealthy fey creature that can teleport and loves to trick",
+            "variant": "fey creature that loves to trick and can teleport stealthily"
+        },
+        {
+            "query": "small agile monster vulnerable to sunlight with dexterous abilities",
+            "variant": "agile small monster with dexterous abilities that is vulnerable to sunlight"
+        },
+        {
+            "query": "cunning creature with ambush tactics who uses bludgeoning attacks",
+            "variant": "creature that uses bludgeoning attacks and has cunning ambush tactics"
+        },
+        {
+            "query": "fey creature with darkvision that communicates in Undercommon",
+            "variant": "darkvision fey creature that talks in Undercommon"
+        },
+        {
+            "query": "Rochade special abilities including elusive and switch",
+            "variant": "special abilities of Rochade like switch and elusive"
+        }
+    ]
+}

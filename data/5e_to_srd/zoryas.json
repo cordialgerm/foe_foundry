@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Zoryas are medium celestial beings with radiant powers and a protective role similar to a Planetar."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "Zoryas share divine, radiant, and celestial traits with the powerful Solar, including light manipulation and a strong connection to celestial realms."
+  },
+  "monster_key": "zoryas"
+}

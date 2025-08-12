@@ -1,0 +1,7 @@
+{
+  "Blink Dog": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Blink Dog exactly in type, abilities, and role."
+  },
+  "monster_key": "blink-dog"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Gold Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "golden scaled dragon that breathes fire",
+            "variant": "golden scaling dragon that exhales fire"
+        },
+        {
+            "query": "medium dragon immune to fire living in a warm area",
+            "variant": "med size dragon resistant to fire living in warm environments"
+        },
+        {
+            "query": "powerful dragon with breath weapon and high Charisma",
+            "variant": "strong dragon with breath attack and impressive Charisma"
+        },
+        {
+            "query": "dragon that can swim and fly with a Challenge Rating of 3",
+            "variant": "dragon that swims and flies having a CR of 3"
+        },
+        {
+            "query": "dragon with the ability to weaken foes through gas",
+            "variant": "dragon that can debuff enemies using gas"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "Deer": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a graceful, skittish herbivore with similar traits and abilities as the SRD Deer."
+  },
+  "monster_key": "deer"
+}

@@ -1,0 +1,7 @@
+{
+  "Giant Wasp": {
+    "relation": "almost_identical",
+    "explanation": "A large, flying, poisonous insect with a stinger attack and high agility similar to the Fleshpod Hornet."
+  },
+  "monster_key": "fleshpod-hornet"
+}

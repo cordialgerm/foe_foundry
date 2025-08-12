@@ -1,0 +1,52 @@
+{
+    "name": "Myrmex, Young",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 54,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., burrow 15 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "terrain manipulator",
+        "neutral good"
+    ],
+    "adjectives": [
+        "small",
+        "elemental",
+        "resilient"
+    ],
+    "description": "The Myrmex is a small elemental creature that embodies neutrality with a natural armor and keen sensory skills. It is known for its ability to manipulate earth and navigate various terrains effortlessly.",
+    "memorable": "Its ability to manipulate terrain permanently and create sculptures or stories from the earth makes the Myrmex a unique presence in the natural world.",
+    "goals": "To exist harmoniously within its environment and assist others or defend its territory as necessary.",
+    "relations": "Related to other elemental creatures and can be encountered with earth or stone-based entities.",
+    "environment": "Typically found in natural settings with access to earth or stone.",
+    "strengths": "Possesses resistance to poison and immunity to exhaustion, paralysis, and petrification, enhanced navigation capabilities.",
+    "weaknesses": "Limited offensive power, primarily reliant on manipulative abilities rather than direct combat.",
+    "attacks": "Bite attack deals piercing and poison damage, and the Earth Shift ability can push targets and hinder their movement.",
+    "most_powerful_ability": "Earth Manipulation, allowing it to reshape terrain and create permanent alterations in its environment.",
+    "equipment": null,
+    "senses": "The Myrmex has blindsight up to 60 feet, allowing it to perceive its surroundings without the need for light.",
+    "skills": "It has neutral passive perception, indicating an average awareness of its environment.",
+    "additional_information": [
+        "Elemental nature allows it to survive without air, food, drink, or sleep.",
+        "Keen Smell grants advantage on perception checks based on smell.",
+        "Can magically transmit simple messages and images to creatures nearby.",
+        "Spider Climb ability lets it traverse difficult surfaces without checks.",
+        "Stone Walk enables movement through earth or stone terrain without extra cost."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small earth manipulating elemental creature",
+        "Myrmex abilities in earth and terrain",
+        "elemental with blindsight and keen smell",
+        "neutral good creature that shapes terrain",
+        "creature that can move through stone easily"
+    ]
+}

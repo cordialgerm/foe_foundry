@@ -1,0 +1,25 @@
+{
+    "name": "Skull Lantern",
+    "queries": [
+        {
+            "query": "tiny undead creature with an eerie glow that can fly",
+            "variant": "small undead monster with a glowing light that has flight"
+        },
+        {
+            "query": "creature that dispels magical darkness and has blinding light",
+            "variant": "monster that can remove magical darkness and emits bright light"
+        },
+        {
+            "query": "undead with low hit points and the ability to avoid destruction",
+            "variant": "creature with few hit points that can escape being destroyed"
+        },
+        {
+            "query": "monster that shines light in a wide area and has fire attacks",
+            "variant": "creature that produces light over a large space and uses fire attacks"
+        },
+        {
+            "query": "flying creature immune to poison that provides illumination",
+            "variant": "levitating monster with poison immunity that brings light"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Acolyte",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "support",
+    "tags": [
+        "cleric",
+        "healer",
+        "religious"
+    ],
+    "adjectives": [
+        "devout",
+        "supportive",
+        "vulnerable"
+    ],
+    "description": "Acolytes are junior members of a religious order, typically donning simple robes marked with their faith's symbol. They often carry religious icons or holy books and show devotion to their deity. Although not physically strong, Acolytes possess divine magic for healing and blessings.",
+    "memorable": "Their ability to provide advantages on death saving throws to nearby allies makes them exceptionally valuable in dire situations.",
+    "goals": "To serve their deity and assist higher-ranking clergy through rituals, healing, and spreading their faith.",
+    "relations": "Often found in temples, they may work alongside priests, paladins, and other clerics.",
+    "environment": "Commonly located in religious settings such as temples, shrines, or villages.",
+    "strengths": "Access to supportive spells like healing and buffs, as well as the ability to deal radiant damage from a distance.",
+    "weaknesses": "Low armor class and hit points make them vulnerable in combat.",
+    "attacks": "Can make melee attacks with a club or use spells like Radiant Bolt, dealing radiant damage from a distance.",
+    "most_powerful_ability": "Divine Providence, which grants nearby friendly creatures advantage on death saving throws.",
+    "equipment": "Simple robes and a club or mace, depending on the source.",
+    "senses": "Passive perception of 12 allows them to notice hidden creatures moderately well.",
+    "skills": "Proficient in medicine and religion, giving them a good ability to treat wounds and perform religious duties.",
+    "additional_information": [
+        "Acolytes serve as assistants in religious ceremonies and rituals.",
+        "They have a spell save DC of 12 and a +4 bonus to spell attacks.",
+        "Abilities allow them to cast spells like Bless and Cure Wounds multiple times a day.",
+        "The Acolyte's role becomes critical in maintaining party survivability during conflicts.",
+        "Typically function as a healer and support character in adventuring parties."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "The Acolyte can cast a selection of cleric spells, emphasizing healing and protection.",
+    "test_queries": [
+        "devout healer in a temple",
+        "junior clergy member with divine magic",
+        "divine support character for adventurers",
+        "humanoid spellcaster focused on healing",
+        "priestly assistant providing buffs"
+    ]
+}

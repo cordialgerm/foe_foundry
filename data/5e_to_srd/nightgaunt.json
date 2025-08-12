@@ -1,0 +1,15 @@
+{
+  "Gauth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with multiple eyes and a terrifying presence, though the Nightgaunt focuses more on stealth and ambush."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the aberration type and a disturbing, fear-inducing nature, though the Nightgaunt is more stealthy and tactical."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Both use stealth and impose psychological disadvantages on foes, fitting the Nightgaunt's ambush and fear tactics."
+  },
+  "monster_key": "nightgaunt"
+}

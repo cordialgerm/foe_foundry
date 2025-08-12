@@ -1,0 +1,11 @@
+{
+  "Giant Boar": {
+    "relation": "close_cousins",
+    "explanation": "The Stormboar is a large, tusked creature similar to a Giant Boar but with added electrical and thunder abilities."
+  },
+  "Fire Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a large, powerful humanoid associated with elemental damage and battlefield control."
+  },
+  "monster_key": "stormboar"
+}

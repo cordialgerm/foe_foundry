@@ -1,0 +1,11 @@
+{
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "Both are large constructs designed to serve and protect, with the Godslayer being a more powerful and specialized version."
+  },
+  "Planetar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Godslayer shares the celestial and divine retribution theme with the Planetar, though it is a construct rather than a celestial being."
+  },
+  "monster_key": "godslayer"
+}

@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are oozes with resilience to bludgeoning damage and poisonous traits, inhabiting swampy or wet environments."
+  },
+  "monster_key": "swampgas-bubble"
+}

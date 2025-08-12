@@ -1,0 +1,52 @@
+{
+    "name": "Shoggoth",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Neutral",
+    "size": "Huge",
+    "hp": 325,
+    "ac": 18,
+    "srd": false,
+    "cr": "19",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "amorphous",
+        "chaotic",
+        "undead-hunting"
+    ],
+    "adjectives": [
+        "massive",
+        "chaotic",
+        "formidable"
+    ],
+    "description": "The Shoggoth is a massive, amorphous entity with many mouths emitting cacophonous sounds. It possesses a gelatinous appearance and can easily squeeze through tight spaces.",
+    "memorable": "Its ability to absorb fallen foes\u2019 bodies and create chaos on the battlefield with its hideous cacophony makes it a terrifying presence.",
+    "goals": "To decimate its foes and disrupt their resurrection efforts.",
+    "relations": "Often encountered alongside other chaotic creatures or aberrations.",
+    "environment": "Likely found in dark, chaotic, or ancient locations.",
+    "strengths": "High hit points and resistances to several damage types make it a durable opponent.",
+    "weaknesses": null,
+    "attacks": "The Shoggoth can make four powerful Slam attacks in a single turn, grappling smaller creatures.",
+    "most_powerful_ability": "The ability to absorb the bodies of its victims, preventing them from being resurrected except by powerful spells.",
+    "equipment": null,
+    "senses": "Keen hearing and smell grant it advantage on Perception checks related to those senses.",
+    "skills": "Exceptional at noticing hidden creatures or environmental changes, with a Perception skill modifier of +11.",
+    "additional_information": [
+        "Does not require air due to its anaerobic nature.",
+        "Disorients creatures with its hideous cacophony, potentially incapacitating them.",
+        "Can alter its form for only one round when subjected to shape-altering spells."
+    ],
+    "damage_types": [
+        "fire",
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive chaotic creature with many mouths",
+        "aberration that absorbs fallen bodies",
+        "gelatinous being that disrupts enemies in combat",
+        "huge amorphous monster with disorienting sounds",
+        "strong and resistant creature in dark environments"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge aquatic predators with tentacle-like limbs and ambush tactics."
+  },
+  "Merrow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are monstrous aquatic creatures that hunt in coastal and swampy environments."
+  },
+  "monster_key": "tidehunter"
+}

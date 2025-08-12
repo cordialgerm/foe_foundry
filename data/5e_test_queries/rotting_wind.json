@@ -1,0 +1,25 @@
+{
+    "name": "Rotting Wind",
+    "queries": [
+        {
+            "query": "invisible undead creature with poisonous aura",
+            "variant": "undead creature that is invisible and has a poison aura"
+        },
+        {
+            "query": "large undead that inflicts disease and decays enemies",
+            "variant": "large creature that spreads disease and rots foes"
+        },
+        {
+            "query": "swift undead that can move through narrow spaces and cause Tomb Rot",
+            "variant": "fast undead that can slip through tiny areas and inflict Tomb Rot"
+        },
+        {
+            "query": "creature that withers plants and can become air form",
+            "variant": "monster that kills plants and can transform into air form"
+        },
+        {
+            "query": "undead with high Dexterity and significant bludgeoning damage",
+            "variant": "creature with high agility and major bludgeoning attack damage"
+        }
+    ]
+}

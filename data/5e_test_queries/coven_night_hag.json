@@ -1,0 +1,25 @@
+{
+    "name": "Coven Night Hag",
+    "queries": [
+        {
+            "query": "manipulative fey creature with darkvision that uses curses",
+            "variant": "fey creature with darkvision that manipulates and uses curses"
+        },
+        {
+            "query": "sinister hag known for inducing sleep and stealing magic",
+            "variant": "sinister night hag that induces sleep and steals magic"
+        },
+        {
+            "query": "Fey monster that can shapeshift and has a powerful presence",
+            "variant": "powerful fey monster that can shapeshift and has a strong presence"
+        },
+        {
+            "query": "Coven Night Hag with high hit points and magic resistance",
+            "variant": "night hag with high HP and resistance to magic"
+        },
+        {
+            "query": "creature with a curse ability that haunts sleeping targets",
+            "variant": "creature that curses and haunts targets who are asleep"
+        }
+    ]
+}

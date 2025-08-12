@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aberrations with powerful abilities and a connection to dark, aquatic or shadowy environments."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of darkness and necrotic energy, with abilities related to shadows and stealth."
+  },
+  "monster_key": "voidling"
+}

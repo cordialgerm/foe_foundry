@@ -1,6 +1,8 @@
 <MonsterName/>Avulzor</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (bone kilt)</AC>
+<HP/>135</HP>
 <summary>Avulzor is a formidable large aberration that embodies a lawful evil alignment. Its strategic role in combat is accentuated by its ability to manipulate bones and command undead servants, making it a significant threat on the battlefield. With an Armor Class of 17 bolstered by a unique bone kilt, Avulzor has a robust defense, while its 135 hit points provide substantial durability. Its combination of a strong attack capability, with both claw and synchronized bite attacks, and the ability to enhance allies through its Bone Shaping ability, suggests that Avulzor thrives in a tactical role, supporting its undead minions while engaging directly with foes. However, its damage immunities and resistances, while impressive, do suggest a vulnerability to particularly strong magical attacks. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, Avulzor is a complex creature that offers a mix of offensive and defens
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avulzor
 
 *Large* *Aberration* *lawful evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Animate Bones (Recharge 5-6):** The avulzor creates a skeleton out of a pile of bones or a the corpse of a Large or smaller creature within 10 feet of it. The skeleton is under the control of the avulzor, obeying the avulzor’s mental commands, and uses the statistics of a CR 1 or lower skeleton of your choice. The avulzor can control up to three skeletons at one time. If the avulzor creates a skeleton while it already has three under its control, the oldest skeleton crumbles to dust.
 
 
+</statblock>
 
 

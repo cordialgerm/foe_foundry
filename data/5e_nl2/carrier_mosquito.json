@@ -1,0 +1,52 @@
+{
+    "name": "Carrier Mosquito",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 75,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "insect",
+        "beast",
+        "flyer",
+        "control"
+    ],
+    "adjectives": [
+        "agile",
+        "disruptive",
+        "large",
+        "threatening"
+    ],
+    "description": "The Carrier Mosquito is a large and agile beast that poses a unique threat. Its body is reminiscent of a giant mosquito, exhibiting notable swiftness and a lengthy proboscis used for its attacks.",
+    "memorable": "Its ability to disrupt spellcasting and control smaller creatures makes it a formidable opponent in battle.",
+    "goals": "To feed on smaller creatures and disrupt spellcasters during combat.",
+    "relations": "Likely encountered near marshy or swampy environments, possibly associated with other flying creatures or insects.",
+    "environment": "Swamps, marshes, or humid environments where flying insects thrive.",
+    "strengths": "High strength and constitution, allowing for significant damage output and hit points.",
+    "weaknesses": "Low intelligence, wisdom, and charisma, limiting its cognitive and social interactions.",
+    "attacks": "It uses its impaling proboscis for melee attacks, grappling and restraining its victims for automatic follow-up hits.",
+    "most_powerful_ability": "Disruptive Droning, which hampers nearby spellcasters' ability to cast spells, especially under concentration.",
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "N/A",
+    "additional_information": [
+        "Can deliver extra damage with a charge attack.",
+        "Grapples and restrains Medium or smaller creatures with its attacks.",
+        "Impacts combat dynamics significantly by affecting spellcasting.",
+        "Noted for its agility in hit-and-run tactics."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large disruptive flying insect",
+        "agile mosquito that hinders spellcasters",
+        "beast that grapples and restrains prey",
+        "fast flying insect with a dangerous proboscis",
+        "carrier mosquito abilities and threats"
+    ]
+}

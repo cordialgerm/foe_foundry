@@ -77,7 +77,7 @@ def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
     class _RottenGraspInner(DiseasePower):
         def __init__(self):
             super().__init__(
-                name=f"Rotten Grasp ({disease.name.title()})", power_level=HIGH_POWER
+                name=f"Rotten Grasp: {disease.name.title()}", power_level=HIGH_POWER
             )
             self.disease = disease
 
@@ -105,7 +105,7 @@ def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
     class _ToxicBreathInner(DiseasePower):
         def __init__(self):
             super().__init__(
-                name=f"Toxic Breath ({disease.name.title()})", power_level=HIGH_POWER
+                name=f"Toxic Breath: {disease.name.title()}", power_level=HIGH_POWER
             )
             self.disease = disease
 

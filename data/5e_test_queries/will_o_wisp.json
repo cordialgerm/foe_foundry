@@ -1,0 +1,25 @@
+{
+    "name": "Will-o-Wisp",
+    "queries": [
+        {
+            "query": "small floating undead creature that haunts swamps and graveyards",
+            "variant": "tiny undead creature that floats and haunts graveyards and swamps"
+        },
+        {
+            "query": "ethereal orb that delivers lightning damage while invisible in cursed lands",
+            "variant": "ghostly orb that gives lightning damage and stays invisible in cursed areas"
+        },
+        {
+            "query": "malevolent spirit that lures travelers into bogs and delivers electrical shocks",
+            "variant": "evil spirit that attracts adventurers into swamps and uses electric shocks"
+        },
+        {
+            "query": "creature with high dexterity that can evade attacks and cause fear",
+            "variant": "monster with exceptional agility that avoids hits and spreads dread"
+        },
+        {
+            "query": "undead entity that provides tactical advantage in dark environments",
+            "variant": "undead being that offers strategic benefits in shadowy locations"
+        }
+    ]
+}

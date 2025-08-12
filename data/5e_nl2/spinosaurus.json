@@ -1,0 +1,48 @@
+{
+    "name": "Spinosaurus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 232,
+    "ac": 15,
+    "srd": false,
+    "cr": "13",
+    "movement": "walking speed of 40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "aquatic",
+        "legendary"
+    ],
+    "adjectives": [
+        "formidable",
+        "gargantuan",
+        "ferocious"
+    ],
+    "description": "The Spinosaurus is a gargantuan beast, notable for its large frame, powerful jaws, and sharp claws. It has a long tail and physical characteristics suited for both land and aquatic environments.",
+    "memorable": "Its unique Reptilian Affinity means it avoids attacking reptilian humanoids unless provoked, making it a distinctive predator.",
+    "goals": "It thrives as a dominant predator in its ecosystem, prioritizing hunting and territorial control.",
+    "relations": "It is related to other large predatory reptiles and may be encountered alongside aquatic creatures.",
+    "environment": "Typically found in riverine or marsh environments, thriving in both water and land.",
+    "strengths": "High damage output in melee combat, excellent durability with 232 hit points, and the ability to grapple and restrain foes.",
+    "weaknesses": "Low dexterity and intelligence may limit its strategic abilities in combat.",
+    "attacks": "Can perform a Multiattack with a powerful Bite, Claw, and Tail attacks, each inflicting significant damage.",
+    "most_powerful_ability": "Frightful Presence can scare nearby creatures, imposing a strong psychological threat in combat.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, indicating decent awareness in its surroundings.",
+    "skills": "Proficient in Perception, allowing it to be attentive to environmental cues.",
+    "additional_information": [
+        "Can hold its breath for up to 1 hour, making it formidable in water.",
+        "Deals double damage to objects and structures as a Siege Monster.",
+        "Can take legendary actions to move or attack between other creatures' turns."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan river predator",
+        "massive dinosaur with frightful presence",
+        "beast that grapples and restrains foes",
+        "aquatic creature that avoids reptilian humanoids",
+        "legendary monster with powerful bite and claws"
+    ]
+}

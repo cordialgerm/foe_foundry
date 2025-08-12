@@ -1,0 +1,25 @@
+{
+    "name": "Lou Carcolh",
+    "queries": [
+        {
+            "query": "medium monster that leaves a slime trail and has sticky tongues",
+            "variant": "medium creature with sticky tongues and leaves a slime trail"
+        },
+        {
+            "query": "cunning opponent with venomous bite and climbing ability",
+            "variant": "smart enemy with climbing skills and venomous bite attack"
+        },
+        {
+            "query": "monster that restrains with tongues and creates difficult terrain",
+            "variant": "creature that creates difficult terrain and uses tongues to restrain"
+        },
+        {
+            "query": "stealthy creature that moves quickly through water and leaves slime",
+            "variant": "quick-moving creature that leaves slime and is stealthy"
+        },
+        {
+            "query": "poisonous monster with average wisdom and strong melee attacks",
+            "variant": "strong melee creature with average wisdom and poison abilities"
+        }
+    ]
+}

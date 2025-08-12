@@ -1,0 +1,25 @@
+{
+    "name": "Skein Witch",
+    "queries": [
+        {
+            "query": "celestial creature with fate manipulation and high Wisdom",
+            "variant": "celestial being that manipulates fate and has a strong Wisdom"
+        },
+        {
+            "query": "medium creature with 20 AC and spell resistance that teleport",
+            "variant": "medium-sized monster with Armor Class of 20 and magic resistance that can teleport"
+        },
+        {
+            "query": "witch-like being immune to fire and lightning with powerful radiant attacks",
+            "variant": "witch creature that is immune to lightning and fire with strong radiant damage abilities"
+        },
+        {
+            "query": "Skein Witch abilities including Bind Fates and Inexorable Thread",
+            "variant": "Skein Witch powers such as Bind Fates and Inexorable Thread attacks"
+        },
+        {
+            "query": "creature that can distribute conditions and has telepathy",
+            "variant": "monster capable of redistributing conditions and possessing telepathy"
+        }
+    ]
+}

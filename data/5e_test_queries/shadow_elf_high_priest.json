@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Elf High Priest",
+    "queries": [
+        {
+            "query": "spellcaster with high wisdom and dark vision",
+            "variant": "spell caster high wisdom and darkvision"
+        },
+        {
+            "query": "humanoid guardian that uses shadow magic and healing spells",
+            "variant": "guardian humanoid using shadow magic and healing spells"
+        },
+        {
+            "query": "powerful priest wielding a mace and casting insect plague",
+            "variant": "powerful mace-wielding priest casting insect plague"
+        },
+        {
+            "query": "versatile spellcasting humanoid that thrives in darkness",
+            "variant": "humanoid thriving in darkness with versatile spellcasting"
+        },
+        {
+            "query": "elf humanoid priest that creates difficult terrain and heals allies",
+            "variant": "elf humanoid priest creating difficult terrain and healing allies"
+        }
+    ]
+}

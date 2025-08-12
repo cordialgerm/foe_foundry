@@ -1,0 +1,7 @@
+{
+  "Medusa": {
+    "relation": "almost_identical",
+    "explanation": "The Medusa Queen is a close variant of the Medusa, sharing the petrifying gaze, snake hair attacks, and charm abilities."
+  },
+  "monster_key": "medusa-queen"
+}

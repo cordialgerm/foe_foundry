@@ -1,0 +1,25 @@
+{
+    "name": "Fane Spirit",
+    "queries": [
+        {
+            "query": "undead spirit that can move through solid objects and has psychic attacks",
+            "variant": "spirit undead that has psychic attacks and can pass through objects"
+        },
+        {
+            "query": "creature with high wisdom and the ability to forget memories",
+            "variant": "being with significant wisdom and capability of erasing memories"
+        },
+        {
+            "query": "medium undead that transforms during the day and has immunity to many conditions",
+            "variant": "undead of medium size that shifts form in daylight and is immune to various conditions"
+        },
+        {
+            "query": "spirit creature with resistance to multiple damage types and spells",
+            "variant": "creature spirit resistant to various damage types and capable of spellcasting"
+        },
+        {
+            "query": "Fane Spirit abilities that involve memory manipulation and fear",
+            "variant": "abilities of the Fane Spirit that include fear and memory effects"
+        }
+    ]
+}

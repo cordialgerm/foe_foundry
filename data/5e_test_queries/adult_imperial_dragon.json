@@ -1,0 +1,25 @@
+{
+    "name": "Adult Imperial Dragon",
+    "queries": [
+        {
+            "query": "huge dragon that can breathe lightning and thunder",
+            "variant": "huge dragon that breathes thunder and lightning"
+        },
+        {
+            "query": "powerful spellcasting dragon that is amphibious",
+            "variant": "spellcasting dragon with amphibious abilities"
+        },
+        {
+            "query": "dragon with high hit points that uses mesmerizing presence",
+            "variant": "dragon that has a lot of hit points and uses its mesmerizing presence"
+        },
+        {
+            "query": "dragon that can fly and swim and has innate spellcasting",
+            "variant": "dragon capable of flying and swimming with innate spellcasting powers"
+        },
+        {
+            "query": "dragon that charms creatures nearby and has darkvision",
+            "variant": "dragon that can charm nearby creatures and possesses darkvision"
+        }
+    ]
+}

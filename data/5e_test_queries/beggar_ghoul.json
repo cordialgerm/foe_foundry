@@ -1,0 +1,25 @@
+{
+    "name": "Beggar Ghoul",
+    "queries": [
+        {
+            "query": "chaotic evil undead creature with surprise attacks",
+            "variant": "undead creature that is chaotic evil and relies on surprise tactics"
+        },
+        {
+            "query": "medium undead monster that can paralyze targets",
+            "variant": "monster that is medium, undead and can paralyze its foes"
+        },
+        {
+            "query": "walking undead that attacks in packs",
+            "variant": "undead that can walk and attacks together with allies"
+        },
+        {
+            "query": "beggar ghoul bite attack critical hits on surprise",
+            "variant": "bite attack of beggar ghoul critical hits if it surprises the target"
+        },
+        {
+            "query": "undead creature that doesn't need sleep and uses guerrilla tactics",
+            "variant": "creature that is undead and requires no sleep, using ambush tactics"
+        }
+    ]
+}

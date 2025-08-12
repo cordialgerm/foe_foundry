@@ -1,0 +1,50 @@
+{
+    "name": "Nautiloid",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Gargantuan",
+    "hp": 216,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "0 ft. walking, 90 ft. swimming",
+    "role": null,
+    "tags": [
+        "elemental",
+        "aquatic",
+        "magical"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "magical",
+        "neutral good"
+    ],
+    "description": "A gargantuan elemental that resembles a massive nautilus shell, known for its enchanting abilities and aquatic prowess. Its shell acts as a dome, providing comfortable conditions for those inside.",
+    "memorable": "The Enchanted Shell creates a magnificent palace inside the Nautiloid, able to accommodate up to 50 passengers.",
+    "goals": "To provide safe passage and protection for creatures within its shell, while navigating aquatic environments.",
+    "relations": "Typically found in partnership with other aquatic creatures or adventurers seeking refuge in its shell.",
+    "environment": "Primarily aquatic environments, thriving in oceans and large bodies of water.",
+    "strengths": "Immunity to cold damage and resistance to non-magical physical attacks.",
+    "weaknesses": "Low intelligence and charisma scores affect strategic abilities and social interactions.",
+    "attacks": "Multiattack with beak and tentacle strikes, dealing piercing and poison damage.",
+    "most_powerful_ability": "Jet Propulsion allows it to propel backward, damaging and knocking prone creatures in its path.",
+    "equipment": null,
+    "senses": "Blindsight out to 60 feet, granting it awareness of its surroundings even in murky waters.",
+    "skills": "Possesses basic perception skills, though its low intelligence hampers advanced knowledge or tactics.",
+    "additional_information": [
+        "Elemental Traveler eliminates needs for air or food in hostile environments.",
+        "The Enchanted Shell alters conditions within for comfort and safety.",
+        "Limited Telepathy facilitates communication with those inside the shell."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan underwater protector",
+        "magical shell creature with telepathy",
+        "creature that can create palatial shelters",
+        "elemental that swims fast and provides refuge",
+        "nautilus-shaped elemental with powerful attacks"
+    ]
+}

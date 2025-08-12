@@ -1,0 +1,49 @@
+{
+    "name": "Triceratops",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 95,
+    "ac": 13,
+    "srd": true,
+    "cr": "5",
+    "movement": "50 feet speed on land",
+    "role": "Bruiser",
+    "tags": [
+        "dinosaur",
+        "herbivore",
+        "massive"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "threatening"
+    ],
+    "description": "A massive, herbivorous dinosaur known for its three facial horns and large, bony frill, resembling a prehistoric beast standing as tall as an elephant.",
+    "memorable": "Known for its charging attacks and ability to trample smaller foes, making it a dominant presence in its environment.",
+    "goals": "Grazes on vegetation and protects itself and its herd from predators.",
+    "relations": "May coexist with other large herbivores; serves as prey for larger predators such as carnivorous dinosaurs.",
+    "environment": "Commonly found in grasslands and jungles.",
+    "strengths": "Exceptional Strength score allows for powerful melee attacks; hardy nature against critical hits enhances survivability.",
+    "weaknesses": "Low Dexterity and lack of social skills make it vulnerable to tactical movements that target agility.",
+    "attacks": "Utilizes its 'Gore' attack to deliver piercing damage and can follow up with a 'Stomp' against prone targets.",
+    "most_powerful_ability": "Trampling Charge allows it to knock targets prone and follow up with additional attacks.",
+    "senses": "Passive perception of 10, indicating some awareness of its surroundings.",
+    "skills": "Average skills; doesn\u2019t possess any noteworthy skill proficiencies.",
+    "additional_information": [
+        "Capable of delivering devastating melee damage with its charge and gore attacks.",
+        "Can emit a loud warning call to intimidate nearby creatures.",
+        "Can ignore additional damage from critical hits.",
+        "Has a large body size allowing it to trample through smaller creatures.",
+        "Known to be protective of its herd."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive dinosaur with three facial horns",
+        "formidable herbivore found in jungles",
+        "charging dinosaur that protects its herd",
+        "large dinosaur that grazes on vegetation",
+        "imposing creature that can trample foes"
+    ]
+}

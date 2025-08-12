@@ -1,0 +1,25 @@
+{
+    "name": "Giant Fire Beetle",
+    "queries": [
+        {
+            "query": "small glowing insect that lives in dark caves",
+            "variant": "small glowing bug that dwells in caves and dark places"
+        },
+        {
+            "query": "beetle that emits light and has low attack power",
+            "variant": "creature that glows and has weak melee attack skills"
+        },
+        {
+            "query": "creature found underground that provides illumination",
+            "variant": "underground insect that gives off light"
+        },
+        {
+            "query": "weak insect with fire glands that can be used for light",
+            "variant": "feeble bug with glowing glands for illumination"
+        },
+        {
+            "query": "bioluminescent beetle often found in forests",
+            "variant": "glow beetle typically located in forested areas"
+        }
+    ]
+}

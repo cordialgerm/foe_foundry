@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, sinister plant-like creatures with poisonous and grappling abilities found in dark environments."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large plant-based monsters that grapple foes and inhabit dark, forested or cursed places."
+  },
+  "monster_key": "warlocks-trumpetbloom"
+}

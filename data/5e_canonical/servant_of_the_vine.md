@@ -1,6 +1,8 @@
 <MonsterName/>Servant of the Vine</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>72</HP>
 <summary>The Servant of the Vine is a medium-sized humanoid creature aligned with chaotic neutral instincts. It possesses a well-balanced set of physical and magical capabilities, making it a versatile addition to any encounter. With an Armor Class of 16 and a significant pool of Hit Points totaling 72, it can withstand a fair amount of damage before being incapacitated. The challenge rating of 6 indicates that parties of adventurers should prepare adequately to face this creature, which combines decent physical strength with potent spellcasting abilities. One of its notable strengths lies in its capability to inspire allies, increasing their performance in skills, while its spellcasting allows for a mix of healing, crowd control, and offensive spells. However, its strengths are balanced by some weaknesses, particularly in its lack of high Constitution and Strength scores, which may leave it open to certain physical attacks and effects. </summary>
 
 <detail>
@@ -30,6 +32,7 @@ The Servant also possesses a powerful action called Stuporous Breath, which can 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Servant of the Vine
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -69,5 +72,6 @@ Cantrips (at will): guidance, light, sacred flame, thaumaturgy
 - **Stuporous Breath (Recharge 5-6):** The servant of the vine exhales potent fumes in a 15-foot cone. Each creature in that area must make a DC 14 Constitution saving throw. On a failure, a creature takes 21 (6d6) poison damage and falls asleep, remaining unconscious for 1 minute. On a success, a creature takes half the damage but doesn't fall asleep. The unconscious target awakens if it takes damage or another creature takes an action to wake it. When the creature wakes, it is poisoned until it finishes a short or long rest. The breath has no effect on constructs or undead.
 
 
+</statblock>
 
 

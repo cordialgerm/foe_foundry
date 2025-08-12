@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are large constructs designed as guardians with strong physical attacks and immunity to certain damage types."
+  },
+  "Ice Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the icy, cold-themed nature and a formidable presence, though the Ice Devil is a fiend rather than a construct."
+  },
+  "monster_key": "ice-golem"
+}

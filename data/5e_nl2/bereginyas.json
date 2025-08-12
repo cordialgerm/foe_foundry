@@ -1,0 +1,54 @@
+{
+    "name": "Bereginyas",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Tiny",
+    "hp": 81,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 60 ft., fly 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "poison",
+        "stealth",
+        "small creature",
+        "evasive"
+    ],
+    "adjectives": [
+        "tiny",
+        "poisonous",
+        "stealthy",
+        "formidable"
+    ],
+    "description": "The Bereginyas is a tiny fey creature with a semi-solid form that emits poisonous gases, excelling in stealth and evasive tactics. Despite its small size, it displays formidable combat capabilities, utilizing its dexterous claws and the ability to latch onto prey.",
+    "memorable": "The ability to smother foes with poisonous gas while attached, along with its exceptional stealth, makes the Bereginyas a uniquely dangerous adversary.",
+    "goals": "To ensnare and incapacitate its prey using stealth and poison.",
+    "relations": "Often encountered alongside other fey creatures or in settings corrupted by fey magic.",
+    "environment": "Typically found in areas dense with foliage or near corrupted natural sites, favoring environments that enhance its stealth.",
+    "strengths": "High Dexterity and stealth skills allow it to evade attacks and remain undetected.",
+    "weaknesses": "Reliance on poison can be countered by creatures with poison resistance.",
+    "attacks": "Employs Multiattack to deliver claw strikes, potentially inflicting both slashing and poison damage when successful.",
+    "most_powerful_ability": "Foul Form creates a toxic atmosphere, forcing nearby creatures to make saving throws or risk becoming poisoned.",
+    "senses": "Possesses a passive Perception of 15, allowing effective detection of hidden creatures.",
+    "skills": "Excels in Stealth with a +8, making it hard to notice until it's too late.",
+    "additional_information": [
+        "Immune to bludgeoning damage unique for a tiny creature.",
+        "Can attach to prey, enabling it to maintain a hold without expending movement.",
+        "Poison damage can incapacitate foes through suffocation if left untreated.",
+        "Effective in low-light conditions due to darkvision.",
+        "Has a notable dexterity saving throw modifier of +6."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy poisonous fey creature",
+        "tiny smothering monster",
+        "fey with poisonous gas",
+        "evasive fey in combat",
+        "Bereginyas tactics"
+    ]
+}

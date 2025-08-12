@@ -1,0 +1,25 @@
+{
+    "name": "Oozasis",
+    "queries": [
+        {
+            "query": "gargantuan ooze that looks like an oasis in the desert",
+            "variant": "huge ooze monster that resembles an oasis in desert"
+        },
+        {
+            "query": "creature that can manipulate others through its water",
+            "variant": "monster that uses its water to control creatures"
+        },
+        {
+            "query": "amorphous ooze with high hit points and vulnerability to cold",
+            "variant": "shapeshifting ooze with lots of hit points and weakness to cold"
+        },
+        {
+            "query": "deceptive creature in desert environments that uses telepathy",
+            "variant": "tricky desert monster that communicates through telepathy"
+        },
+        {
+            "query": "ooze with special abilities to ensnare and compel",
+            "variant": "ooze monster with unique powers to trap and manipulate"
+        }
+    ]
+}

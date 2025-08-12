@@ -1,0 +1,25 @@
+{
+    "name": "Yaojing",
+    "queries": [
+        {
+            "query": "celestial creature with high Dexterity and Charisma",
+            "variant": "celestial being with high Charisma and Dexterity"
+        },
+        {
+            "query": "neutral good being that can detect lies and has magic resistance",
+            "variant": "being that is neutral good and can sense lies while resisting magic"
+        },
+        {
+            "query": "powerful creature that casts spells and can evade attacks",
+            "variant": "strong being that can evade strikes and casts spells"
+        },
+        {
+            "query": "intelligent celestial monster with area effect attack",
+            "variant": "smart celestial being with a powerful area attack"
+        },
+        {
+            "query": "Yaojing abilities regarding spellcasting and combat",
+            "variant": "abilities of the Yaojing in combat and spellcasting"
+        }
+    ]
+}

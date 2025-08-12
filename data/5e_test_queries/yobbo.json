@@ -1,0 +1,25 @@
+{
+    "name": "Yobbo",
+    "queries": [
+        {
+            "query": "small humanoid that consumes magical items",
+            "variant": "humanoid creature that eats magical items and spells"
+        },
+        {
+            "query": "stealthy creature with explosive death ability",
+            "variant": "creature that is stealthy and has an explosive death feature"
+        },
+        {
+            "query": "monster that attacks with a spike ball and has darkvision",
+            "variant": "creature that uses a spike ball attack and can see in the dark"
+        },
+        {
+            "query": "magical item eater that uses spells when killed",
+            "variant": "creature that devours magic items and releases spells on death"
+        },
+        {
+            "query": "low-level challenge humanoid with arcana skills",
+            "variant": "low challenge humanoid that has skills in arcana"
+        }
+    ]
+}

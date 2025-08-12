@@ -1,0 +1,7 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, agile elementals with high Dexterity and the ability to move quickly, though the Chronalmental manipulates time rather than air."
+  },
+  "monster_key": "chronalmental"
+}

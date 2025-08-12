@@ -1,0 +1,25 @@
+{
+    "name": "Beheaded Vengeful Spirit",
+    "queries": [
+        {
+            "query": "undead spirit that can manipulate rage and emotions",
+            "variant": "spirit that is undead and can manipulate anger and emotions"
+        },
+        {
+            "query": "medium vengeful ghost immune to cold damage",
+            "variant": "medium ghost that is vengeful and immune to cold"
+        },
+        {
+            "query": "creature with high charisma and psychic attack abilities",
+            "variant": "creature that has high charisma and can attack with psychic powers"
+        },
+        {
+            "query": "spirit that can decapitate and cause rage in opponents",
+            "variant": "spirit that causes rage in foes and has a decapitation ability"
+        },
+        {
+            "query": "undead creature with angry defiance and incorporeal movement",
+            "variant": "creature that is undead with the ability of angry defiance and incorporeal movement"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Alseid",
+    "queries": [
+        {
+            "query": "forest-dwelling creature with high dexterity and spellcasting abilities",
+            "variant": "creature that lives in the forest and has high dexterity plus spell powers"
+        },
+        {
+            "query": "chaotic neutral monstrosity skilled in survival and stealth",
+            "variant": "monstrosity of chaotic neutral alignment that excels in stealth and survival"
+        },
+        {
+            "query": "medium creature that attacks with spear and shortbow",
+            "variant": "medium-sized monster that uses spear and shortbow for attacks"
+        },
+        {
+            "query": "Alseid abilities in natural environments and its tracking skills",
+            "variant": "abilities of Alseid in nature and its ability to leave no tracks"
+        },
+        {
+            "query": "agile monster with low constitution and social interaction skills",
+            "variant": "fast monster that has poor constitution and social abilities"
+        }
+    ]
+}

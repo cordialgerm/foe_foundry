@@ -1,0 +1,53 @@
+{
+    "name": "Remorhaz",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 195,
+    "ac": 17,
+    "srd": true,
+    "cr": "11",
+    "movement": "30 ft., burrow 20 ft.",
+    "role": "null",
+    "tags": [
+        "arctic",
+        "predator",
+        "burrowing"
+    ],
+    "adjectives": [
+        "massive",
+        "fearsome",
+        "icy-blue",
+        "fiery"
+    ],
+    "description": "A massive, centipede-like creature covered in icy-blue plates, capable of generating intense heat that causes the air around it to shimmer.",
+    "memorable": "Remorhaz can swallow victims whole and is known for its ability to inflict continuous damage with its Heated Body ability.",
+    "goals": "To ambush and consume prey in cold, arctic regions.",
+    "relations": "Often exists in cold environments, could be encountered with other arctic predators.",
+    "environment": "Cold, arctic regions, capable of burrowing through snow and ice.",
+    "strengths": "High Strength and Constitution scores, immunity to cold and fire damage, can grapple multiple creatures at once.",
+    "weaknesses": "Very low Intelligence, Wisdom, and Charisma scores, limited agility due to average Dexterity.",
+    "attacks": "Utilizes a powerful bite attack and constrict action, dealing both piercing and fire damage, with the ability to swallow foes.",
+    "most_powerful_ability": "Heated Body causes fire damage to anyone grappling or hitting it in close range, increasing if bloodied.",
+    "senses": "Possesses darkvision and tremorsense, each extending 60 feet, enhancing awareness of its environment.",
+    "skills": "Lacks notable skill proficiencies, limiting its effectiveness outside combat scenarios.",
+    "additional_information": [
+        "Can create tunnels through ice and snow.",
+        "Resistant to exhaustion and fear effects.",
+        "Can vent heat to potentially exhaust nearby creatures.",
+        "Swallowed creatures take continuous acid damage.",
+        "Can grapple up to three creatures at once."
+    ],
+    "damage_types": [
+        "fire",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive icy-blue predator that burrows",
+        "creature that swallows its prey whole",
+        "arctic monster that generates intense heat",
+        "huge centipede-like creature with fiery attacks",
+        "predator known for grappling and swallowing"
+    ]
+}

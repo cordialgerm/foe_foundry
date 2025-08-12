@@ -1,0 +1,11 @@
+{
+  "Adult Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A massive, powerful dragon with versatile breath and legendary actions, similar in size and magical prowess."
+  },
+  "Adult Bronze Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A dragon associated with magic and transformation, sharing aquatic and versatile breath traits."
+  },
+  "monster_key": "ouroboros"
+}

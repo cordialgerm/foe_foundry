@@ -1,0 +1,25 @@
+{
+    "name": "Luck Leech",
+    "queries": [
+        {
+            "query": "fey creature that absorbs luck from others and thrives on misfortune",
+            "variant": "fey monster that takes luck from other creatures and lives off misfortune"
+        },
+        {
+            "query": "medium-sized creature with high Dexterity that deals necrotic damage",
+            "variant": "medium fey with high Dexterity that inflicts necrotic damage"
+        },
+        {
+            "query": "creature with ability to make others unlucky and has piercing attacks",
+            "variant": "monster that makes others unlucky and uses biting attacks"
+        },
+        {
+            "query": "neutral evil fey with special abilities for gaining fortune and psychic damage",
+            "variant": "neutral evil fey that has abilities to gain luck and does psychic damage"
+        },
+        {
+            "query": "stealthy creature immune to necrotic damage that can communicate in multiple languages",
+            "variant": "sneaky fey immune to necrotic and speaks several languages"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Young Red Dragon Zombie",
+    "queries": [
+        {
+            "query": "large dragon-like undead that breathes fire",
+            "variant": "large undead-dragon that can breathe fire"
+        },
+        {
+            "query": "undead creature with powerful bite and claw attacks",
+            "variant": "creature that attacks with claws and a strong bite"
+        },
+        {
+            "query": "formidable fire-breathing dragon zombie that aviods destruction",
+            "variant": "powerful zombie dragon that has fire breath and can avoid dying"
+        },
+        {
+            "query": "creature driven by instinct that can operate without air or food",
+            "variant": "undead monster that doesn't need food, sleep, or air"
+        },
+        {
+            "query": "large undead dragon with the ability to stun and frighten opponents",
+            "variant": "big zombie dragon that stuns and terrfies enemies"
+        }
+    ]
+}

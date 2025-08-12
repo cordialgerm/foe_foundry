@@ -1,6 +1,8 @@
 <MonsterName/>Young Silver Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>168</HP>
 <summary>A Young Silver Dragon is a graceful and kind creature, its metallic silver scales gleaming in the sunlight. It has a powerful breath weapon that can unleash freezing cold, making it a formidable defender of the innocent. Young Silver Dragons are often found in cold, mountainous regions, where they protect nearby settlements from monsters or evil forces. They are known for their wisdom and generosity, often taking an interest in the affairs of mortals and providing guidance or aid when necessary. They prefer to avoid conflict but will fight fiercely when the safety of others is at stake.</summary>
 
 <summary>The Young Silver Dragon is a formidable creature that serves as both a powerful adversary and an iconic ally for characters within the Dungeons & Dragons universe. With a challenge rating of 10, it presents a significant threat with its impressive physical attributes, strong magical capabilities, and excellent defenses. Possessing immunity to cold damage, along with high hit points and a good armor class, it is particularly resilient in combat. The dragon's special abilities allow it to thrive in lofty environments without harm, and its innate spellcasting adds another layer of strategy in encounters. While it has strong offensive abilities and formidable breath weapon attacks, the Young Silver Dragon is not without limits, as its lower Wisdom and Intelligence scores suggest potential vulnerabilities in certain tactical situations.</summary>
@@ -59,6 +61,7 @@ As a bonus action, the Young Silver Dragon can use its Change Shape ability, all
 
 Source: 5e_srd
 
+<statblock>
 # Young Silver Dragon (Metallic)
 
 *Large dragon, lawful good*
@@ -97,7 +100,8 @@ Source: 5e_srd
 
 **Cold Breath**. The dragon exhales an icy blast in a 30- foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.
 
-**Paralyzing Breath**. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+**Paralyzing Breath**. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -105,6 +109,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Silver Dragon
 
 *Large* *Dragon*
@@ -140,6 +145,7 @@ Source: 5e_artisinal_monsters
 - **Paralyzing Breath:** The dragon exhales paralytic gas in a 30-foot cone. Each creature in the area must succeed on a DC 17 Constitution saving throw or be paralyzed until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -148,6 +154,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Silver Dragon
 
 *Large dragon*
@@ -183,5 +190,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The dragon magically transforms into a Beast or Humanoid that has a challenge rating no higher than its own, or back into its true form, which is Dragon. Any equipment it is wearing or carrying transforms with it or is borne by the new form (the dragon’s choice). It reverts to its true form if it dies. In a new form, the dragon retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA scores, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 
