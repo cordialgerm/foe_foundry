@@ -131,7 +131,7 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
             node_id,
             type="MON",
             name=meta.name,
-            monster_key=doc.monster_key,
+            monster_key=meta.key,
             is_srd=meta.srd,
         )
 
