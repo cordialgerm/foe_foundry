@@ -1,0 +1,7 @@
+{
+  "Guard": {
+    "relation": "almost_identical",
+    "explanation": "A medium humanoid clad in armor, trained to defend locations and equipped with a spear, matching the SRD Guard closely."
+  },
+  "monster_key": "guard"
+}

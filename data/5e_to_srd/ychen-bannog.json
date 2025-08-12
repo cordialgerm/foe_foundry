@@ -1,0 +1,7 @@
+{
+  "Elephant": {
+    "relation": "close_cousins",
+    "explanation": "A gargantuan beast with powerful melee attacks, trampling ability, and siege damage similar to an Elephant."
+  },
+  "monster_key": "ychen-bannog"
+}

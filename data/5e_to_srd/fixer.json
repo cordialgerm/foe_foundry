@@ -1,0 +1,11 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "The Fixer shares the stealthy, supportive, and utility-focused role of the Spy, including use of weapons and subterfuge."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "The Fixer's minor spellcasting and magical utility resemble the Mage's arcane support capabilities."
+  },
+  "monster_key": "fixer"
+}

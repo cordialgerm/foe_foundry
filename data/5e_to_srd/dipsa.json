@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are ooze creatures with acidic damage and amorphous bodies, though the Dipsa is smaller and stealthier."
+  },
+  "monster_key": "dipsa"
+}

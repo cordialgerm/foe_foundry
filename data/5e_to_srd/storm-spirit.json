@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elemental creatures associated with air and capable of flight and hovering."
+  },
+  "Storm Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the storm and thunder thematic elements, though much larger and mechanically different."
+  },
+  "monster_key": "storm-spirit"
+}

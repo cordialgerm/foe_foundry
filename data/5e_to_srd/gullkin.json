@@ -1,0 +1,11 @@
+{
+  "Merfolk": {
+    "relation": "close_cousins",
+    "explanation": "The Gullkin is an aquatic humanoid with swimming ability and some avian traits, similar to Merfolk's aquatic humanoid nature."
+  },
+  "Harpy": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gullkin shares avian features and flight capability with Harpies, though it is more aquatic and tactical."
+  },
+  "monster_key": "gullkin"
+}

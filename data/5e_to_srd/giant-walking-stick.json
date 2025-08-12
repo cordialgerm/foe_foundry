@@ -1,0 +1,11 @@
+{
+  "Giant Stick Insect": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, camouflaged insect-like creature that blends into vegetation, similar to the Giant Walking Stick's mimicry and forest habitat."
+  },
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are large forest predators with climbing abilities and multi-attack options, sharing a similar ecological niche."
+  },
+  "monster_key": "giant-walking-stick"
+}

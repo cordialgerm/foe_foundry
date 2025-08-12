@@ -1,0 +1,7 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "The Glass Gator is a large, amphibious predator similar to a Giant Crocodile, sharing habitat and hunting style."
+  },
+  "monster_key": "glass-gator"
+}

@@ -1,0 +1,7 @@
+{
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "A nimble, medium humanoid skilled in stealth, acrobatics, and using a bonus action to disengage, matching the Kapi's combat style and abilities."
+  },
+  "monster_key": "kapi"
+}

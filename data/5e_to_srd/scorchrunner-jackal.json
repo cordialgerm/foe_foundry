@@ -1,0 +1,11 @@
+{
+  "Hell Hound": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiery, canine-like monstrosities with fire affinity and mobility."
+  },
+  "Jackal": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the jackal form and agility but lacks the fire and magical traits."
+  },
+  "monster_key": "scorchrunner-jackal"
+}

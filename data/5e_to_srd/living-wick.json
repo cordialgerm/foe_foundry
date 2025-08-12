@@ -1,0 +1,11 @@
+{
+  "Magma Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, fire-powered creatures that emit light and can deal fire damage, with explosive or fiery area effects."
+  },
+  "Steam Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Similar small elemental constructs with elemental damage and light emission, though steam-themed rather than fire."
+  },
+  "monster_key": "living-wick"
+}

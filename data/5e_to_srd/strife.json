@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Strife is a small, flying fey with stealth and manipulation abilities similar to a Sprite."
+  },
+  "Quickling": {
+    "relation": "conceptually_similar",
+    "explanation": "Strife shares the traits of a small, fast, and cunning fey that uses speed and trickery to confuse foes, akin to a Quickling."
+  },
+  "monster_key": "strife"
+}

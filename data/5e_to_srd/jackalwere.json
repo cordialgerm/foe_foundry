@@ -1,0 +1,11 @@
+{
+  "Wererat (Lycanthrope)": {
+    "relation": "close_cousins",
+    "explanation": "The Jackalwere is a shapeshifting fiend similar to the Wererat lycanthrope, sharing the hybrid form and ambush tactics."
+  },
+  "Imp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fiends known for deception and trickery, with the Jackalwere's charm and sly nature resembling an Imp's demeanor."
+  },
+  "monster_key": "jackalwere"
+}

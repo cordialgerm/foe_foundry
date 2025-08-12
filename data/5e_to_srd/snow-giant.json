@@ -1,0 +1,7 @@
+{
+  "Frost Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Snow Giant is a giant associated with cold and snowy environments, similar to the Frost Giant."
+  },
+  "monster_key": "snow-giant"
+}

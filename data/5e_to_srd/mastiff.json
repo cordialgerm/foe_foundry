@@ -1,0 +1,7 @@
+{
+  "Mastiff": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Mastiff closely matches the SRD Mastiff in size, role, abilities, and description as a loyal, powerful guard dog."
+  },
+  "monster_key": "mastiff"
+}

@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Mechanist is an intelligent humanoid skilled in creating and controlling constructs, similar to a Mage's use of magic and tools."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "The Mechanist creates and commands mechanical constructs, akin to the animated constructs like Animated Armor."
+  },
+  "monster_key": "mechanist"
+}

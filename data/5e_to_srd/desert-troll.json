@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "almost_identical",
+    "explanation": "A large chaotic evil giant with regeneration and vulnerability to acid, similar to a Troll but adapted for desert terrain."
+  },
+  "monster_key": "desert-troll"
+}

@@ -1,0 +1,11 @@
+{
+  "Behir": {
+    "relation": "conceptually_similar",
+    "explanation": "A huge, serpentine aberration with multiple legs and acid attacks, similar in form and acid abilities."
+  },
+  "Remorhaz": {
+    "relation": "close_cousins",
+    "explanation": "A huge, burrowing cold-themed creature with heat-based attacks, sharing environment and elemental traits."
+  },
+  "monster_key": "glacial-crawler"
+}

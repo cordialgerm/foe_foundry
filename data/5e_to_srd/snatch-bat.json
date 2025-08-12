@@ -1,0 +1,11 @@
+{
+  "Giant Bat": {
+    "relation": "close_cousins",
+    "explanation": "The Snatch Bat is a flying ambush predator similar in size and form to a Giant Bat but with aberration traits and item stealing abilities."
+  },
+  "Bat": {
+    "relation": "conceptually_similar",
+    "explanation": "It shares the bat-like appearance and flying ambush predator concept with the Bat, though it is more powerful and aberrant."
+  },
+  "monster_key": "snatch-bat"
+}

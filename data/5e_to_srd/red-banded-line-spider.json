@@ -1,0 +1,11 @@
+{
+  "Giant Wolf Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are spiders with poison bites and agility, though the Red-Banded Line Spider is smaller and has unique venom mechanics."
+  },
+  "Spider": {
+    "relation": "almost_identical",
+    "explanation": "A tiny spider with poison and climbing abilities closely matches the basic Spider in the SRD."
+  },
+  "monster_key": "red-banded-line-spider"
+}

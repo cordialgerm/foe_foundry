@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons with shadowy or dark themes and breath attacks, sharing similar size and ambush roles."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares incorporeal, shadowy nature and fear-inducing presence, similar to the shadowy essence of the homebrew dragon."
+  },
+  "monster_key": "young-shadow-dragon"
+}

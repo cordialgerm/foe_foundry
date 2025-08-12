@@ -1,0 +1,7 @@
+{
+  "Adult Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Adult Emerald Dragon shares the green dragon's forest habitat, size, and dragon type but adds psionic and spellcasting abilities."
+  },
+  "monster_key": "adult-emerald-dragon"
+}

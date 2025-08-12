@@ -1,0 +1,7 @@
+{
+  "Bandit Captain": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Bandit Captain closely matches the SRD Bandit Captain in role, abilities, and combat style."
+  },
+  "monster_key": "bandit-captain"
+}

@@ -1,0 +1,11 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Dvarapala is a Huge giant with strong melee attacks and robust defenses similar to a Fire Giant, but with added divine and magical resistance traits."
+  },
+  "Cloud Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "The Dvarapala's divine nature, spellcasting, and role as a guardian align conceptually with the majestic and magical Cloud Giant."
+  },
+  "monster_key": "dvarapala"
+}

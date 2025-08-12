@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge, ooze-like aberrations with acid-related abilities and a corrosive form."
+  },
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aberrations with telepathic abilities and a capacity to absorb or manipulate knowledge."
+  },
+  "monster_key": "droth"
+}

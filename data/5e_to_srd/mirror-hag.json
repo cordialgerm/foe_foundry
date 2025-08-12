@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Mirror Hag is a fey hag with deception and incapacitating abilities similar to the Green Hag."
+  },
+  "Night Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the hag type and spellcasting with necrotic damage and manipulative traits."
+  },
+  "monster_key": "mirror-hag"
+}

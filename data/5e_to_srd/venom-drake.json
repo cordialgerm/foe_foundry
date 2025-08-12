@@ -1,0 +1,7 @@
+{
+  "Wyvern": {
+    "relation": "close_cousins",
+    "explanation": "The Venom Drake is a large, venomous dragon-like creature with poison attacks and multiattack similar to a Wyvern."
+  },
+  "monster_key": "venom-drake"
+}

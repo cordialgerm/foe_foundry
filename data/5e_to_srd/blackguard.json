@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Blackguard is a formidable humanoid combat leader with strong melee abilities and battlefield support, similar to the Veteran's role."
+  },
+  "monster_key": "blackguard"
+}

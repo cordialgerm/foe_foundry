@@ -1,0 +1,11 @@
+{
+  "Efreeti": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, chaotic genies with elemental traits and flight, though the Al-Aeshma has unique necrotic and regenerative abilities."
+  },
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Al-Aeshma Genie shares elemental nature and flight with the Air Elemental, and uses wind-based abilities like Dust Devil."
+  },
+  "monster_key": "al-aeshma-genie"
+}

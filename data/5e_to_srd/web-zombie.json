@@ -1,0 +1,7 @@
+{
+  "Zombie": {
+    "relation": "almost_identical",
+    "explanation": "A zombie with undead fortitude and necrotic slam attacks, closely matching the base zombie but with climbing and web-related abilities."
+  },
+  "monster_key": "web-zombie"
+}

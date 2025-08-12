@@ -1,0 +1,15 @@
+{
+  "Swarm of Bats": {
+    "relation": "close_cousins",
+    "explanation": "Both are large swarms of flying creatures that can occupy the same space and attack in numbers."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are swarms of many small creatures forming a single monstrous entity with a disturbing, mind-affecting presence."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the mystical, flying, and psychic nature with innate spellcasting and a haunting presence."
+  },
+  "monster_key": "grimmlet-swarm"
+}

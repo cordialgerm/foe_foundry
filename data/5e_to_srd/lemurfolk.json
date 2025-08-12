@@ -1,0 +1,11 @@
+{
+  "Kobold": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, agile humanoids with a focus on stealth and dexterity."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares proficiency in Acrobatics and Stealth and a role emphasizing agility and tactical movement."
+  },
+  "monster_key": "lemurfolk"
+}

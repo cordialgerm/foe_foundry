@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs designed for melee combat and guarding important locations."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, powerful construct with strong melee attacks and immunities, similar in role and durability."
+  },
+  "monster_key": "monolith-champion"
+}

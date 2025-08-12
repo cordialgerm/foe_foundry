@@ -1,0 +1,15 @@
+{
+  "Chimera": {
+    "relation": "conceptually_similar",
+    "explanation": "A flying monstrosity with multiple attack types including poison and fire damage."
+  },
+  "Giant Bat": {
+    "relation": "mechanically_similar",
+    "explanation": "A flying creature with a focus on mobility and melee attacks."
+  },
+  "Black Dragon Wyrmling": {
+    "relation": "mechanically_similar",
+    "explanation": "A medium flying creature with poison and acid-related abilities."
+  },
+  "monster_key": "kezai"
+}

@@ -1,0 +1,11 @@
+{
+  "Allosaurus": {
+    "relation": "close_cousins",
+    "explanation": "A large, fast-moving predatory monstrosity with powerful bite and claw attacks."
+  },
+  "Young Black Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the draconic theme and resilience against dragon abilities, though mechanically different."
+  },
+  "monster_key": "ichneumon"
+}

@@ -1,0 +1,7 @@
+{
+  "Shrieker": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Shrieker exactly as a fungus that emits a loud shriek to serve as an alarm in caves."
+  },
+  "monster_key": "shrieker"
+}

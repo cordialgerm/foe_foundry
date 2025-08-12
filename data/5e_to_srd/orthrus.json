@@ -1,0 +1,11 @@
+{
+  "Hydra": {
+    "relation": "close_cousins",
+    "explanation": "Both are multi-headed monstrosities with multiple bite attacks and enhanced perception."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares canine features and a poisonous or fiery bite, representing a two-headed canine creature."
+  },
+  "monster_key": "orthrus"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Spider": {
+    "relation": "almost_identical",
+    "explanation": "A large, stealthy spider ambusher with venomous bite and web abilities in forest environments."
+  },
+  "Swarm of Spiders": {
+    "relation": "mechanically_similar",
+    "explanation": "Summons swarms of spiderlings to aid in battle, similar to a swarm of spiders."
+  },
+  "monster_key": "jba-fofi-spider"
+}

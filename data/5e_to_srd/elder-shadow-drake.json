@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the shadowy, stealthy darkness theme and ambush tactics."
+  },
+  "Adult White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large dragon with cold damage breath weapon similar to the Elder Shadow Drake's cold breath."
+  },
+  "monster_key": "elder-shadow-drake"
+}

@@ -1,0 +1,7 @@
+{
+  "Ghoul": {
+    "relation": "almost_identical",
+    "explanation": "A Medium undead ghoul with paralyzing claw attacks and disease infection, closely matching the Imperial Ghoul's core traits."
+  },
+  "monster_key": "imperial-ghoul"
+}

@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "Xing Tian is a huge giant with melee combat focus and high durability, similar to a Hill Giant but with added resilience and healing abilities."
+  },
+  "monster_key": "xing-tian"
+}

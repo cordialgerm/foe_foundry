@@ -1,0 +1,7 @@
+{
+  "Frog": {
+    "relation": "almost_identical",
+    "explanation": "A tiny, amphibious creature with smooth skin and the ability to jump far, matching the SRD Frog closely."
+  },
+  "monster_key": "frog"
+}

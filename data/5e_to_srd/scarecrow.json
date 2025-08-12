@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with humanoid shapes designed to guard or protect areas."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fear-inducing and undead-like terror aspect, though mechanically different."
+  },
+  "monster_key": "scarecrow"
+}

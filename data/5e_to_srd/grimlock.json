@@ -1,0 +1,7 @@
+{
+  "Grimlock": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Grimlock exactly in description, abilities, environment, and behavior."
+  },
+  "monster_key": "grimlock"
+}

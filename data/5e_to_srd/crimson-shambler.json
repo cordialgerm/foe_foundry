@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant-based creatures that spread deadly spores and create new threats through infection."
+  },
+  "Zombie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Crimson Shambler resembles a bloody zombie and uses disease to transform victims, similar to undead infection themes."
+  },
+  "monster_key": "crimson-shambler"
+}

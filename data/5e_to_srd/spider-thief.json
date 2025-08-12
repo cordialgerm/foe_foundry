@@ -1,0 +1,7 @@
+{
+  "Flying Sword": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small constructs designed for agility and stealth, with the Spider Thief using hooked wire and sickle claws instead of a sword."
+  },
+  "monster_key": "spider-thief"
+}

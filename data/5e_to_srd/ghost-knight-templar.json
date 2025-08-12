@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "A ghostly undead warrior with incorporeal movement and cold/necrotic damage."
+  },
+  "Knight": {
+    "relation": "conceptually_similar",
+    "explanation": "A warrior in plate armor with martial combat skills and strategic fighting style."
+  },
+  "monster_key": "ghost-knight-templar"
+}

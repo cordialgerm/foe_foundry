@@ -1,0 +1,7 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large elemental creatures with liquid forms capable of moving through narrow spaces and grappling foes."
+  },
+  "monster_key": "blood-elemental"
+}

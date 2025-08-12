@@ -1,0 +1,11 @@
+{
+  "Lizard": {
+    "relation": "close_cousins",
+    "explanation": "The Chroma Lizard is a large, nimble beast with lizard-like traits and reflective scales."
+  },
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a nimble, magical beast that uses illusions and evasive maneuvers."
+  },
+  "monster_key": "chroma-lizard"
+}

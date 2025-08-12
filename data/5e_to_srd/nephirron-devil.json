@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Nephirron Devil is a large, powerful devil with spellcasting and manipulative abilities similar to the Barbed Devil."
+  },
+  "Horned Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge, muscular devils with strong physical attacks, spellcasting, and a commanding presence in the Nine Hells."
+  },
+  "monster_key": "nephirron-devil"
+}

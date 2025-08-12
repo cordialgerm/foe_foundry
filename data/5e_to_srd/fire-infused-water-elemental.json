@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Shares the core water elemental nature and movement but infused with fire aspects."
+  },
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Incorporates fiery essence and fire damage similar to a fire elemental."
+  },
+  "monster_key": "fire-infused-water-elemental"
+}

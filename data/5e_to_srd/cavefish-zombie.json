@@ -1,0 +1,11 @@
+{
+  "Ogre Zombie": {
+    "relation": "close_cousins",
+    "explanation": "Shares the undead zombie nature and Undead Fortitude ability, though the Cavefish Zombie is aquatic and poisonous."
+  },
+  "Zombie": {
+    "relation": "almost_identical",
+    "explanation": "A reanimated undead creature with Undead Fortitude and low AC, closely matching the zombie archetype."
+  },
+  "monster_key": "cavefish-zombie"
+}

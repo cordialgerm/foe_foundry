@@ -1,0 +1,19 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "A spellcasting humanoid with a broad spell list and intelligence focus, similar to a Mage."
+  },
+  "Cult Fanatic": {
+    "relation": "conceptually_similar",
+    "explanation": "A spellcaster devoted to dark magic and necromancy, often found in crypts and commanding undead."
+  },
+  "Zombie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Necromancer commands undead minions like Zombies, linking it conceptually to undead creatures."
+  },
+  "Skeleton": {
+    "relation": "conceptually_similar",
+    "explanation": "The Necromancer animates skeletons as minions, sharing thematic ties with Skeletons."
+  },
+  "monster_key": "necromancer"
+}

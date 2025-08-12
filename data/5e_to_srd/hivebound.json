@@ -1,0 +1,11 @@
+{
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "The Hivebound is an insect-like monstrosity that controls multiple insect swarms, similar in concept to a Swarm of Insects."
+  },
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, cunning insect-like monstrosities with mobility and poison attacks."
+  },
+  "monster_key": "hivebound"
+}

@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "The Deathwisp is a medium undead with ethereal form, life drain, and the ability to create specters, closely matching the Ghost's traits."
+  },
+  "Specter": {
+    "relation": "close_cousins",
+    "explanation": "The Deathwisp creates specters from the dead, linking it closely to the Specter as a related undead spirit."
+  },
+  "monster_key": "deathwisp"
+}

@@ -1,0 +1,7 @@
+{
+  "Giant Scorpion": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Giant Scorpion in size, abilities, poison sting, grappling claws, and desert habitat."
+  },
+  "monster_key": "giant-scorpion"
+}

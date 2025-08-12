@@ -1,0 +1,11 @@
+{
+  "Bugbear": {
+    "relation": "close_cousins",
+    "explanation": "Both are small humanoid creatures with a focus on stealth and combat, though the Roachling Lord is more poison and agility oriented."
+  },
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Roachling Lord shares the small humanoid type, stealth skills, and skirmisher role similar to Goblins."
+  },
+  "monster_key": "roachling-lord"
+}

@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant creatures with some form of animation and cunning, though the Wind Witch is larger and has flight and fire abilities."
+  },
+  "Fire Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the fire-based damage and interaction with fire, including catching fire and taking ongoing damage."
+  },
+  "monster_key": "wind-witch"
+}

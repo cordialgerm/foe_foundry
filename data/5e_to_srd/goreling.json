@@ -1,0 +1,11 @@
+{
+  "Swarm of Rats": {
+    "relation": "close_cousins",
+    "explanation": "The Goreling is a small, nimble undead swarm that multiplies and overwhelms in numbers, similar to how a Swarm of Rats functions as a small, numerous threat."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Gorelings deal necrotic damage and are undead with a bloodthirsty nature, conceptually similar to Ghouls which are also undead and aggressive."
+  },
+  "monster_key": "goreling"
+}

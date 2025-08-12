@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "A huge, brutal giant with high strength and constitution, wielding a large weapon and capable of grappling and throwing foes, similar to a Hill Giant."
+  },
+  "monster_key": "giant,-shire"
+}

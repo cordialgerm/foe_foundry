@@ -1,0 +1,7 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Mortifera is a large, amphibious aberration with tentacles and a poisonous attack that blends into swampy environments, similar to an Aboleth."
+  },
+  "monster_key": "mortifera"
+}

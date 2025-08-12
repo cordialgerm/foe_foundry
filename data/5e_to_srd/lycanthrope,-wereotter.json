@@ -1,0 +1,11 @@
+{
+  "Wererat (Lycanthrope)": {
+    "relation": "close_cousins",
+    "explanation": "Both are lycanthropes with humanoid and animal hybrid forms and the ability to curse others with lycanthropy."
+  },
+  "Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "The Wereotter shares the concept of a humanoid with animal traits and shape-shifting similar to a wolf but adapted to an aquatic otter."
+  },
+  "monster_key": "lycanthrope,-wereotter"
+}

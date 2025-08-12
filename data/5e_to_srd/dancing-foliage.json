@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant creatures resembling shrubs with natural camouflage and a connection to nature."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a charming, nature-connected guardian with abilities to charm and protect."
+  },
+  "monster_key": "dancing-foliage"
+}

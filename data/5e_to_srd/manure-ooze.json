@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are oozes that consume organic material and can split when damaged, with a resilient, amorphous form."
+  },
+  "monster_key": "manure-ooze"
+}

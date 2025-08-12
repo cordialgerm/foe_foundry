@@ -1,0 +1,15 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Malphas is a shadowy, necrotic damage-dealing fey with sunlight sensitivity and stealthy traits similar to a Shadow."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Malphas is a fey creature with agility and a connection to natural but dark environments, akin to a Dryad."
+  },
+  "Assassin": {
+    "relation": "mechanically_similar",
+    "explanation": "Malphas's agility, melee focus, and ability to blind or debilitate foes resemble the Assassin's stealth and precision combat style."
+  },
+  "monster_key": "malphas"
+}

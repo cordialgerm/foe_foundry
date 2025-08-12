@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "A medium fiend with control and fearsome presence, sharing the fiend type and battlefield control role."
+  },
+  "Bearded Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "A medium fiend known for its intimidating presence and control in combat, similar in role and type."
+  },
+  "monster_key": "silent-crier"
+}

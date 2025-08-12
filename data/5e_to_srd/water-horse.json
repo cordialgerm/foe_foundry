@@ -1,0 +1,15 @@
+{
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are creatures associated with water and have amphibious traits."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures with a connection to nature and manipulation abilities."
+  },
+  "Satyr": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey shapeshifters with charming and manipulative traits."
+  },
+  "monster_key": "water-horse"
+}

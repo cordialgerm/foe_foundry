@@ -1,0 +1,11 @@
+{
+  "Worg": {
+    "relation": "close_cousins",
+    "explanation": "The Roggenwolf is a wolf-like agile predator with a fear-inducing howl, similar in role and environment to a Worg."
+  },
+  "Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "The Roggenwolf shares the concept of a predatory wolf-like creature with keen senses and pack hunting."
+  },
+  "monster_key": "roggenwolf"
+}

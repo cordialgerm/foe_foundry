@@ -1,0 +1,7 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Tar Ghoul is an undead ambusher with paralyzing claw attacks similar to a Ghoul, but with added fire and tar abilities."
+  },
+  "monster_key": "tar-ghoul"
+}

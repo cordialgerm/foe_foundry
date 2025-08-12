@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with unsettling, mind-affecting abilities and a grotesque nature."
+  },
+  "Quasit": {
+    "relation": "close_cousins",
+    "explanation": "A tiny, stealthy, and deceptive fiendish creature with psychic and manipulative traits similar to Heggarna."
+  },
+  "monster_key": "heggarna"
+}

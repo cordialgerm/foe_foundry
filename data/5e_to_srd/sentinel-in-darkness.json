@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "A large construct guardian with resilient defenses and combat abilities."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "A powerful construct designed to protect and serve as a guardian."
+  },
+  "monster_key": "sentinel-in-darkness"
+}

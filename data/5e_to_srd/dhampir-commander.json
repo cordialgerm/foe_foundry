@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "close_cousins",
+    "explanation": "A charismatic undead humanoid with vampiric traits and necrotic healing abilities similar to a Vampire."
+  },
+  "Veteran": {
+    "relation": "mechanically_similar",
+    "explanation": "A tactical and versatile humanoid leader with multiple attacks and combat leadership abilities like a Veteran."
+  },
+  "monster_key": "dhampir-commander"
+}

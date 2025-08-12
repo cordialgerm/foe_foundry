@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are malevolent aberrations with psychic abilities and manipulative traits."
+  },
+  "Cult Fanatic": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the theme of creating and commanding cultist minions and using charm abilities."
+  },
+  "monster_key": "mindshard"
+}

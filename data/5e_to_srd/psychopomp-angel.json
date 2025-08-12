@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful celestial beings with radiant abilities and protective roles."
+  },
+  "Deva": {
+    "relation": "close_cousins",
+    "explanation": "The Psychopomp Angel shares the celestial nature and supportive, protective role typical of Devas."
+  },
+  "monster_key": "psychopomp-angel"
+}

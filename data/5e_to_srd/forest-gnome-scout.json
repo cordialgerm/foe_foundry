@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "A stealthy and tactical humanoid skilled in ranged combat and battlefield control."
+  },
+  "Deep Gnome": {
+    "relation": "close_cousins",
+    "explanation": "A gnome humanoid with keen senses and stealth abilities, similar in nature to forest gnomes."
+  },
+  "monster_key": "forest-gnome-scout"
+}

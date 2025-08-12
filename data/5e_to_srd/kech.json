@@ -1,0 +1,11 @@
+{
+  "Berserker": {
+    "relation": "conceptually_similar",
+    "explanation": "A physically strong humanoid focused on melee combat and grappling."
+  },
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "A stealthy humanoid skilled in ambush and reconnaissance, similar to the Kech's stealth and ambush role."
+  },
+  "monster_key": "kech"
+}

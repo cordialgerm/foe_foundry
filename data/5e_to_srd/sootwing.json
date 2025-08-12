@@ -1,0 +1,11 @@
+{
+  "Giant Bat": {
+    "relation": "close_cousins",
+    "explanation": "A small flying beast with keen senses and stealthy movement similar to a Giant Bat."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares fire immunity and thematic connection to fire and ash clouds."
+  },
+  "monster_key": "sootwing"
+}

@@ -1,0 +1,11 @@
+{
+  "Adult Bronze Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A medium to large dragon with protective and supportive traits, including a breath weapon and affinity for aquatic and coastal environments."
+  },
+  "Young Bronze Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A medium dragon with breath weapon and some protective instincts, similar in size and supportive nature."
+  },
+  "monster_key": "shepherd-drake"
+}

@@ -1,0 +1,11 @@
+{
+  "Green Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "A serpentine creature with poison abilities and a natural affinity for controlling others, similar to the Hebi-Doku's venomous and commanding traits."
+  },
+  "Giant Snake": {
+    "relation": "close_cousins",
+    "explanation": "The Hebi-Doku is a venomous, serpentine fey with snake-like features and abilities, closely related to large snake creatures."
+  },
+  "monster_key": "hebi-doku"
+}

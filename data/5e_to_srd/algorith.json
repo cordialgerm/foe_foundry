@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with strong armor and combat capabilities, though the Algorith has advanced spellcasting and unique abilities."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "The Algorith is a powerful, durable construct with high physical strength and resilience, similar in concept to an Iron Golem but with added spellcasting and tactical abilities."
+  },
+  "monster_key": "algorith"
+}

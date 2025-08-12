@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "close_cousins",
+    "explanation": "Both are small plant creatures with innate spellcasting and stealth abilities."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the trickster and fey-like chaotic nature with plant-related magical abilities."
+  },
+  "monster_key": "garlicle"
+}

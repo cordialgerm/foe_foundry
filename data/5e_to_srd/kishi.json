@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiends with magical weapon attacks and resistances, sharing a similar fiendish combat style."
+  },
+  "Giant Hyena": {
+    "relation": "conceptually_similar",
+    "explanation": "The Kishi summons giant hyenas, linking it conceptually to this creature."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiendish creatures with a focus on cold or fire damage and hunting roles."
+  },
+  "monster_key": "kishi"
+}

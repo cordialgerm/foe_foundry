@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Elementalist is a humanoid caster specializing in elemental magic similar to a Mage's spellcasting role."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Elementalist's elemental fire breath and elemental magic evoke the concept of a Fire Elemental."
+  },
+  "monster_key": "elementalist"
+}

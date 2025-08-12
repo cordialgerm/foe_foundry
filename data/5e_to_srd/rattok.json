@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fiends with a chaotic and dangerous nature, using melee attacks and resistances to damage types."
+  },
+  "Dretch": {
+    "relation": "close_cousins",
+    "explanation": "The Rattok shares the chaotic fiend type and small size with the Dretch, though it is more resilient and stealthy."
+  },
+  "monster_key": "rattok"
+}

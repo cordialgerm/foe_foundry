@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant creatures connected to natural environments with regenerative abilities."
+  },
+  "monster_key": "barometz"
+}

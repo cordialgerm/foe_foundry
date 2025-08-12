@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Flinderbeast is a small, agile fey creature found in forests, similar to Dryads in nature and environment."
+  },
+  "Pixie": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, tricky fey with teleportation abilities and high Dexterity, emphasizing agility and cunning."
+  },
+  "monster_key": "flinderbeast"
+}

@@ -1,0 +1,15 @@
+{
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ghoul Bat shares the undead and paralyzing bite concept similar to a Ghast, though it is smaller and bat-like."
+  },
+  "Bat": {
+    "relation": "close_cousins",
+    "explanation": "The Ghoul Bat resembles a small flying bat in size and movement."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Ghoul Bat is an undead creature with paralyzing bite abilities like a Ghoul, but smaller and with flight."
+  },
+  "monster_key": "ghoul-bat"
+}

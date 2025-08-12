@@ -1,0 +1,11 @@
+{
+  "Minotaur": {
+    "relation": "close_cousins",
+    "explanation": "The Millitaur shares the bull-humanoid hybrid form and melee combat style with the Minotaur."
+  },
+  "Ogre": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, physically powerful monstrosities serving as bruisers in combat."
+  },
+  "monster_key": "millitaur"
+}

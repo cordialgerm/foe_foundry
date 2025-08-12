@@ -1,0 +1,7 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Talus Flow is a large elemental that blends into rocky terrain and controls the battlefield, similar to an Earth Elemental."
+  },
+  "monster_key": "talus-flow"
+}

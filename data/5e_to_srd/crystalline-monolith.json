@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "close_cousins",
+    "explanation": "Both are aberrations with bizarre, unsettling forms and psionic or mind-affecting abilities."
+  },
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aberrations with strong psychic powers and a connection to otherworldly or mystical environments."
+  },
+  "monster_key": "crystalline-monolith"
+}

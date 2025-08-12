@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant creatures that engulf and grapple opponents, with the Frostveil adapted to cold and icy environments."
+  },
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-like creatures that use spores to incapacitate foes, fitting the Frostveil's incapacitating spore ability."
+  },
+  "monster_key": "frostveil"
+}

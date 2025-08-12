@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "almost_identical",
+    "explanation": "The Trollkin Reaver shares the troll's regenerative ability, multiattack, and vulnerability to fire and acid, making it a close variant of the Troll."
+  },
+  "monster_key": "trollkin-reaver"
+}

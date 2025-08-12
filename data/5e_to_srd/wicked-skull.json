@@ -1,0 +1,15 @@
+{
+  "Mimic": {
+    "relation": "conceptually_similar",
+    "explanation": "Both the Wicked Skull and the Mimic can disguise themselves as objects to deceive others."
+  },
+  "Homunculus": {
+    "relation": "close_cousins",
+    "explanation": "The Wicked Skull shares a small, magical construct-like nature and trickster role similar to the Homunculus."
+  },
+  "Pseudodragon": {
+    "relation": "mechanically_similar",
+    "explanation": "The Wicked Skull's small size and use of a pseudopod attack loosely parallels the Pseudodragon's small dragon form and natural attacks."
+  },
+  "monster_key": "wicked-skull"
+}

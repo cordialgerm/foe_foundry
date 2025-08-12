@@ -1,0 +1,11 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Ratfolk Warlock is a small, nimble humanoid similar in size and nature to Goblins."
+  },
+  "Cult Fanatic": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small humanoid spellcasters with a focus on dark or divine magic and battlefield control."
+  },
+  "monster_key": "ratfolk-warlock"
+}

@@ -1,0 +1,7 @@
+{
+  "Rakshasa": {
+    "relation": "close_cousins",
+    "explanation": "The Rakshasa, Servitor shares the same fiend type, feline humanoid appearance, and limited magic immunity as the Rakshasa but is a weaker, specialized variant."
+  },
+  "monster_key": "rakshasa,-servitor"
+}

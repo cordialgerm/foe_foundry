@@ -1,0 +1,11 @@
+{
+  "Ettin": {
+    "relation": "almost_identical",
+    "explanation": "A medium giant with two heads that bicker, similar to an Ettin but with kobold traits and thunder abilities."
+  },
+  "Kobold": {
+    "relation": "close_cousins",
+    "explanation": "Shares kobold cunning and pack tactics, blending kobold traits with giant features."
+  },
+  "monster_key": "kobold-ettin"
+}

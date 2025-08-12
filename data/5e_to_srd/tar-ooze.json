@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large ooze creatures that grapple and deal damage with pseudopods, sharing the ooze type and battlefield control role."
+  },
+  "monster_key": "tar-ooze"
+}

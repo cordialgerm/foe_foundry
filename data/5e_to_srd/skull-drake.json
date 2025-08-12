@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A medium-sized dragon with necrotic-themed breath and dark, swampy or ruinous habitat similar to a Young Black Dragon."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "An undead creature with necrotic traits and vulnerability to radiant damage, sharing undead aspects with the Skull Drake."
+  },
+  "monster_key": "skull-drake"
+}

@@ -1,0 +1,11 @@
+{
+  "Mimic": {
+    "relation": "close_cousins",
+    "explanation": "The Dune Mimic shares the amorphous, shape-changing and engulfing traits of the Mimic but is specialized for sandy desert terrain."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are amorphous creatures that engulf prey and have immunity to acid, with the Dune Mimic adapted to desert environments."
+  },
+  "monster_key": "dune-mimic"
+}

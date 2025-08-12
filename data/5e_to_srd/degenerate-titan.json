@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "A massive, brutish giant with greatclub attacks and a chaotic nature similar to a Hill Giant."
+  },
+  "Fire Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful giant with armor scraps and strong melee attacks, sharing thematic elements with Fire Giants."
+  },
+  "monster_key": "degenerate-titan"
+}

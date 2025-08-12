@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Blood Hag shares the hag creature type and fey nature with the Green Hag, including deceptive and magical abilities."
+  },
+  "Night Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Blood Hag is similar to the Night Hag in being a malevolent hag with necromantic and life-draining powers."
+  },
+  "monster_key": "blood-hag"
+}

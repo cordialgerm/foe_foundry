@@ -1,0 +1,11 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Myrmex Speaker is an earth-based elemental with terrain manipulation similar to an Earth Elemental."
+  },
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elemental nature and incorporeal, strategic battlefield control aspects, though the Myrmex Speaker is earth-based and has psychic abilities."
+  },
+  "monster_key": "myrmex-speaker"
+}

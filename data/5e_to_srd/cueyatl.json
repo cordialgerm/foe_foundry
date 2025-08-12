@@ -1,0 +1,7 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "The Cueyatl is a small, amphibious, stealthy humanoid with poison attacks and jungle adaptations, similar to Lizardfolk."
+  },
+  "monster_key": "cueyatl"
+}

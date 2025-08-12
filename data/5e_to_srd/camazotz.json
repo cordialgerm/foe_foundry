@@ -1,0 +1,15 @@
+{
+  "Vrock": {
+    "relation": "close_cousins",
+    "explanation": "Both are large chaotic evil fiends with bat-like features, capable of flight and summoning bats."
+  },
+  "Vampire": {
+    "relation": "conceptually_similar",
+    "explanation": "Camazotz creates vampires from fallen foes, sharing thematic ties to vampirism and undead creation."
+  },
+  "Balor": {
+    "relation": "mechanically_similar",
+    "explanation": "Both have high hit points, powerful melee attacks, fire-based breath or area attacks, and strong magic resistance."
+  },
+  "monster_key": "camazotz"
+}

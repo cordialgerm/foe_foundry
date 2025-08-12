@@ -1,0 +1,11 @@
+{
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "A small, cunning fiend with shapechanging abilities and stealthy nature similar to the Gumienniki."
+  },
+  "Cat": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gumienniki can transform into a Tiny housecat, sharing the cat's stealth and agility."
+  },
+  "monster_key": "gumienniki"
+}

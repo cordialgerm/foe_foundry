@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "The Banshee is a haunting undead spirit with incorporeal movement and fear-inducing wail, closely matching the Ghost's traits."
+  },
+  "monster_key": "banshee"
+}

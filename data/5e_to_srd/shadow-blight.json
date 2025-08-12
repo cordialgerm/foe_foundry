@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures that animate vegetation and thrive in natural environments, though the Shadow Blight is smaller and more stealthy."
+  },
+  "monster_key": "shadow-blight"
+}

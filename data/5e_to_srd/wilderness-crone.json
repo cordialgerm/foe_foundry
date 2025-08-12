@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures deeply connected to forests and nature, with abilities to communicate with plants and animals."
+  },
+  "Green Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are crone-like fey with magical abilities and a connection to nature, though the Wilderness Crone is more protective and supportive."
+  },
+  "monster_key": "wilderness-crone"
+}

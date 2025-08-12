@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are amorphous, slime-like creatures that can move through narrow spaces and have corrosive or acid damage."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead creatures that instill fear and drain life force from victims."
+  },
+  "monster_key": "sarcophagus-slime"
+}

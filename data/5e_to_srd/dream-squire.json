@@ -1,0 +1,19 @@
+{
+  "Awakened Shrub": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures serving as protectors or guardians in magical environments."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Dream Squire and Dryads are both fey beings connected to nature and magical realms."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "The Dream Squire's spellcasting and psychic abilities resemble the Mage's arcane capabilities."
+  },
+  "Guard": {
+    "relation": "almost_identical",
+    "explanation": "The Dream Squire functions as a defender with armor and weapons similar to the Guard."
+  },
+  "monster_key": "dream-squire"
+}

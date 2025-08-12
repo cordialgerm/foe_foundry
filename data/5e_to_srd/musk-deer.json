@@ -1,0 +1,7 @@
+{
+  "Cat": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile beast with notable dexterity and evasion similar to a cat."
+  },
+  "monster_key": "musk-deer"
+}

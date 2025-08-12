@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are manipulative fey creatures with a focus on charm and deception."
+  },
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ice and cold elemental theme and abilities related to cold damage."
+  },
+  "monster_key": "ice-maiden"
+}

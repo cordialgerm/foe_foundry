@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "almost_identical",
+    "explanation": "A large, shadowy undead with life drain, incorporeal movement, and necrotic abilities similar to the Dark Father."
+  },
+  "Specter": {
+    "relation": "close_cousins",
+    "explanation": "Shares the undead, incorporeal, necrotic life-draining traits and stealthy nature with the Dark Father."
+  },
+  "monster_key": "dark-father"
+}

@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Living Star is a huge celestial with radiant powers and magic resistance, similar to a Planetar's role and abilities."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Living Star's radiant presence, blinding light, and powerful radiant damage upon death conceptually resemble the Solar's divine and radiant nature."
+  },
+  "monster_key": "living-star"
+}

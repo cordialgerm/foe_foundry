@@ -1,0 +1,15 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead creatures with a bite that can cause disease and a stench that poisons nearby foes."
+  },
+  "Cult Fanatic": {
+    "relation": "mechanically_similar",
+    "explanation": "Both are spellcasting evil humanoids with necrotic damage and control spells like Hold Person."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are formidable undead servants of dark powers with necrotic abilities and a menacing presence."
+  },
+  "monster_key": "servant-of-the-unsated-god"
+}

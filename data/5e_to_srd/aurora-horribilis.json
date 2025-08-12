@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic aberrations that cause confusion and madness in their foes."
+  },
+  "Ghost": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares incorporeal movement and evasive defensive traits similar to the Aurora Horribilis."
+  },
+  "monster_key": "aurora-horribilis"
+}

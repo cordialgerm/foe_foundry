@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful cold-themed creatures with freezing breath and icy terrain affinity."
+  },
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "Boreas' Chosen is a durable, combat-focused humanoid similar to a Veteran with armor and shield."
+  },
+  "monster_key": "boreas-chosen"
+}

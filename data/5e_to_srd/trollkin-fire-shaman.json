@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fire magic and elemental fire theme with the Trollkin Fire Shaman."
+  },
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Trollkin Fire Shaman is a humanoid with regeneration and tough skin, similar to a Troll."
+  },
+  "monster_key": "trollkin-fire-shaman"
+}

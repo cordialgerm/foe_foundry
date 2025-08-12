@@ -1,0 +1,11 @@
+{
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons with cold-based breath weapons and aquatic capabilities, though the homebrew has unique tidal breath and structural damage."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aquatic dragons with powerful physical attacks and a strong presence in aquatic environments."
+  },
+  "monster_key": "young-sea-dragon"
+}

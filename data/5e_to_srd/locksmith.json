@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with durable bodies designed for protection and combat."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "A durable magical construct with resistances and immunities, though the Locksmith is smaller and more specialized."
+  },
+  "monster_key": "locksmith"
+}

@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "A fey warrior from enchanted forests with agility and combat skills, similar to a Dryad's nature and environment."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the role of a skirmisher with high dexterity, skilled attacks, and mobility, akin to the Scout's combat style."
+  },
+  "monster_key": "niya-atha-warrior"
+}

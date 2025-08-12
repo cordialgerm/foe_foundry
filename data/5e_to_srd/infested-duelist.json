@@ -1,0 +1,11 @@
+{
+  "Druid": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a connection to nature and toxins, with abilities related to spores and poison."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "Exhibits high Dexterity, rapid attacks, and evasion similar to a Scout's combat style."
+  },
+  "monster_key": "infested-duelist"
+}

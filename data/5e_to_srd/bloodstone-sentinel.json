@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "The Bloodstone Sentinel is a large construct similar to Animated Armor but with unique blood manipulation abilities."
+  },
+  "monster_key": "bloodstone-sentinel"
+}

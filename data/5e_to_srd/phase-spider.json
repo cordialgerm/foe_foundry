@@ -1,0 +1,7 @@
+{
+  "Phase Spider": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Phase Spider exactly in abilities, behavior, and environment."
+  },
+  "monster_key": "phase-spider"
+}

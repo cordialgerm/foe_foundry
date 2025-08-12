@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small humanoid kobold with pack tactics and frontline combat role using melee weapons."
+  },
+  "monster_key": "kobold-broodguard"
+}

@@ -1,0 +1,11 @@
+{
+  "Djinni": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares elemental air and lightning theme and a humanoid genie-like nature."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "Similar in size, agility, and use of light weapons with mobility and reaction-based defense."
+  },
+  "monster_key": "jinnborn-air-pirate"
+}

@@ -1,0 +1,11 @@
+{
+  "Otyugh": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aberrations with grappling tentacles and the ability to restrain and damage foes."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a grotesque, amorphous creature that can absorb and damage creatures over time."
+  },
+  "monster_key": "dust-grazer"
+}

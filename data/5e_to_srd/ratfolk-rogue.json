@@ -1,0 +1,15 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "The Ratfolk Rogue shares the role of a nimble, stealthy skirmisher with the Scout, emphasizing agility and tactical positioning."
+  },
+  "Rogue": {
+    "relation": "conceptually_similar",
+    "explanation": "Though not in the SRD list, the Ratfolk Rogue embodies the classic rogue archetype with stealth, poison, and cunning tactics."
+  },
+  "Rat": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ratfolk Rogue has rat-like features and small size, conceptually similar to the Rat in appearance and agility."
+  },
+  "monster_key": "ratfolk-rogue"
+}

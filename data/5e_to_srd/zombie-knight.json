@@ -1,0 +1,7 @@
+{
+  "Zombie": {
+    "relation": "almost_identical",
+    "explanation": "A medium undead creature with Undead Fortitude and slow movement, similar to a Zombie but with enhanced combat abilities and equipment."
+  },
+  "monster_key": "zombie-knight"
+}

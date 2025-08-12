@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "A fey creature with magical abilities and a connection to nature and trickery, similar to the Niya-Atha Sorcerer's fey and magical nature."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "A spellcaster with a focus on controlling the battlefield through magic, akin to the Niya-Atha Sorcerer's sorcerer role and spellcasting."
+  },
+  "monster_key": "niya-atha-sorcerer"
+}

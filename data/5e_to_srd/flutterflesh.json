@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, mobile undead with necrotic damage and a focus on tormenting the living."
+  },
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the chaotic evil undead theme with debilitating melee attacks and a fearsome presence."
+  },
+  "monster_key": "flutterflesh"
+}

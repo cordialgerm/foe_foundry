@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons associated with dark, subterranean environments and have poison-related breath attacks."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, robust dragons with a connection to earth and water environments and formidable physical presence."
+  },
+  "monster_key": "young-cave-dragon"
+}

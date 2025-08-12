@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "A small humanoid with light armor, skilled in perception and combat, similar to the Erina Defender's role and equipment."
+  },
+  "Bandit": {
+    "relation": "close_cousins",
+    "explanation": "A small humanoid combatant with light armor and melee/ranged attacks, sharing the Erina Defender's combat style."
+  },
+  "monster_key": "erina-defender"
+}

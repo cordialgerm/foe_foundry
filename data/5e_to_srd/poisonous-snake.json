@@ -1,0 +1,7 @@
+{
+  "Poisonous Snake": {
+    "relation": "almost_identical",
+    "explanation": "A tiny, venomous snake with stealth and poison bite matching the SRD Poisonous Snake."
+  },
+  "monster_key": "poisonous-snake"
+}

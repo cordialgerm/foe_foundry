@@ -1,0 +1,11 @@
+{
+  "Ancient Bronze Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient dragons with a connection to terrain and elemental forces, with the Ancient Earth Dragon focusing on earth and stone."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ancient Earth Dragon embodies primal earth and stone forces similar to an Earth Elemental's nature and terrain manipulation."
+  },
+  "monster_key": "ancient-earth-dragon"
+}

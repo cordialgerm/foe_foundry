@@ -1,0 +1,11 @@
+{
+  "Adult White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large dragon with cold damage and flying ability, similar in size and some damage types."
+  },
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A smaller white dragon with cold damage and flying, sharing elemental affinity."
+  },
+  "monster_key": "liminal-drake"
+}

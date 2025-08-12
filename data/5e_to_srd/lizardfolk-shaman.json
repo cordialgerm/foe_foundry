@@ -1,0 +1,11 @@
+{
+  "Lizardfolk": {
+    "relation": "almost_identical",
+    "explanation": "A Lizardfolk spellcaster variant with poison abilities and swamp affinity."
+  },
+  "Druid": {
+    "relation": "close_cousins",
+    "explanation": "Shares spellcasting and healing roles typical of druids, supporting allies and controlling the battlefield."
+  },
+  "monster_key": "lizardfolk-shaman"
+}

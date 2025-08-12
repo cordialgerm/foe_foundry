@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are amorphous oozes that move through narrow spaces and deal ongoing damage, though the Suppurating Ooze focuses on disease and necrotic effects."
+  },
+  "Gray Ooze": {
+    "relation": "close_cousins",
+    "explanation": "Both are amorphous oozes with low AC and the ability to move through small openings, sharing the ooze creature type and similar physical traits."
+  },
+  "monster_key": "suppurating-ooze"
+}

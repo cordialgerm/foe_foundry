@@ -1,0 +1,15 @@
+{
+  "Allosaurus": {
+    "relation": "close_cousins",
+    "explanation": "The Chaos Raptor shares the raptor-like physical traits and powerful beak and talons similar to the Allosaurus."
+  },
+  "Behir": {
+    "relation": "mechanically_similar",
+    "explanation": "The Chaos Raptor's burrowing and flying capabilities, along with its chaotic aura, resemble the Behir's multi-limbed attacks and terrain manipulation."
+  },
+  "Tarrasque": {
+    "relation": "conceptually_similar",
+    "explanation": "As a gargantuan, powerful monstrosity with regeneration and immense strength, the Chaos Raptor conceptually aligns with the Tarrasque."
+  },
+  "monster_key": "chaos-raptor"
+}

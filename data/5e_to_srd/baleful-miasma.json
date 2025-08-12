@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Baleful Miasma is an elemental with flying movement and air-related traits similar to the Air Elemental."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are stealthy, flying, and dangerous creatures that can move through spaces without provoking opportunity attacks."
+  },
+  "monster_key": "baleful-miasma"
+}

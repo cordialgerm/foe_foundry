@@ -1,0 +1,7 @@
+{
+  "Gnoll": {
+    "relation": "almost_identical",
+    "explanation": "The Gnoll Havoc Runner is a gnoll variant with pack tactics and similar combat style, using melee attacks and coordination."
+  },
+  "monster_key": "gnoll-havoc-runner"
+}

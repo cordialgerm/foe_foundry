@@ -1,0 +1,7 @@
+{
+  "Guardian": {
+    "relation": "almost_identical",
+    "explanation": "A large humanoid protector with combat abilities and shadow teleportation closely matches the Guardian construct."
+  },
+  "monster_key": "guardian"
+}

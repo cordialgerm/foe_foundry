@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant-based creatures connected to nature with regenerative abilities and control over plant life."
+  },
+  "monster_key": "vine-lord"
+}

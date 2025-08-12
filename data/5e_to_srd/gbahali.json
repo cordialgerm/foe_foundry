@@ -1,0 +1,11 @@
+{
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge beasts known for stealth, ambush tactics, and grappling attacks."
+  },
+  "Tiger": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, stealthy predator that uses camouflage and ambush to hunt prey."
+  },
+  "monster_key": "gbahali"
+}

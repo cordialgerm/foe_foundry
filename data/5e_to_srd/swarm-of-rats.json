@@ -1,0 +1,7 @@
+{
+  "Swarm of Rats": {
+    "relation": "almost_identical",
+    "explanation": "A medium swarm of tiny rats that spread disease and have resistance to many damage types, matching the Swarm of Rats exactly."
+  },
+  "monster_key": "swarm-of-rats"
+}

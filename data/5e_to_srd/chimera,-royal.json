@@ -1,0 +1,7 @@
+{
+  "Chimera": {
+    "relation": "almost_identical",
+    "explanation": "The Royal Chimera is a close variant of the Chimera with added spellcasting and resistances, maintaining the classic three-headed beast concept."
+  },
+  "monster_key": "chimera,-royal"
+}

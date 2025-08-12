@@ -1,0 +1,11 @@
+{
+  "Shrieker": {
+    "relation": "conceptually_similar",
+    "explanation": "Both resemble ordinary fungus and use spores to affect creatures, fitting the ambush and poison theme."
+  },
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "A plant-like fungus creature that uses spores and ambush tactics, similar in nature and environment."
+  },
+  "monster_key": "wirbeln-fungi"
+}

@@ -1,0 +1,7 @@
+{
+  "Weretiger": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a near-clone of the Weretiger with similar shapechanging abilities, attacks, and immunities."
+  },
+  "monster_key": "weretiger"
+}

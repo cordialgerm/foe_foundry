@@ -1,0 +1,11 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Trollkin Shaman shares the regenerative ability and humanoid troll-like traits with the Troll, but adds spellcasting and support roles."
+  },
+  "Druid": {
+    "relation": "mechanically_similar",
+    "explanation": "The Trollkin Shaman is an 8th-level spellcaster with druid spells focused on healing and area control, similar to a Druid's spellcasting."
+  },
+  "monster_key": "trollkin-shaman"
+}

@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fey guardians connected to natural, mystical environments with a protective role."
+  },
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Juniper Sheriff shares size, fey nature, and agility with Sprites, both being small, perceptive fey creatures."
+  },
+  "monster_key": "juniper-sheriff"
+}

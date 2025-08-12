@@ -1,0 +1,11 @@
+{
+  "Ice Mephit": {
+    "relation": "close_cousins",
+    "explanation": "Both are cold-affine elemental creatures with stealth and ambush capabilities in icy environments."
+  },
+  "Dust Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elemental nature and small size with burrowing and ambush traits, though Dust Mephit is not cold-affine."
+  },
+  "monster_key": "rime-worm-grub"
+}

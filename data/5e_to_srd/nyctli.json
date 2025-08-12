@@ -1,0 +1,11 @@
+{
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are stealthy, dark-themed creatures that ambush foes in shadowy environments."
+  },
+  "Pixie": {
+    "relation": "close_cousins",
+    "explanation": "Both are tiny fey creatures with high mobility and magical abilities, though Pixies are more benevolent."
+  },
+  "monster_key": "nyctli"
+}

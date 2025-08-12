@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Crinaea is an aquatic fey similar to a Dryad, sharing fey nature and stealth abilities."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Crinaea's aquatic nature and control over water relate conceptually to the Water Elemental."
+  },
+  "monster_key": "crinaea"
+}

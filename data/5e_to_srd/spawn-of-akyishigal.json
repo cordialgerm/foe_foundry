@@ -1,0 +1,11 @@
+{
+  "Dretch": {
+    "relation": "close_cousins",
+    "explanation": "Both are chaotic evil fiends with a malevolent nature and similar challenge rating."
+  },
+  "Swarm of Insects": {
+    "relation": "mechanically_similar",
+    "explanation": "The Spawn of Akyishigal summons swarms of insects to aid in battle, similar to the Swarm of Insects."
+  },
+  "monster_key": "spawn-of-akyishigal"
+}

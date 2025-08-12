@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant creatures with a chaotic nature and physical combat abilities."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the plant and humanoid shape-shifting aspect, blending into natural environments."
+  },
+  "monster_key": "morphoi"
+}

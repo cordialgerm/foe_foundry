@@ -1,0 +1,7 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "A powerful undead vampire with spellcasting, regeneration, mist form, and charm abilities closely matches the Vampire."
+  },
+  "monster_key": "vampire-mage"
+}

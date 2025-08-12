@@ -1,0 +1,7 @@
+{
+  "Purple Worm": {
+    "relation": "close_cousins",
+    "explanation": "Both are large worm-like monstrosities with swallowing abilities and acid damage."
+  },
+  "monster_key": "corpse-worm"
+}

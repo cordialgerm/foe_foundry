@@ -1,0 +1,11 @@
+{
+  "Pteranodon": {
+    "relation": "close_cousins",
+    "explanation": "The Sunset Raptor is a medium-sized, agile creature with a raptor-like form similar to the Pteranodon."
+  },
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the traits of agility, pack tactics, and charming abilities to manipulate foes."
+  },
+  "monster_key": "sunset-raptor"
+}

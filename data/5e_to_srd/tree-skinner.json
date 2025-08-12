@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-like creatures that use their environment and grappling attacks, with the Tree Skinner having a deceptive tree camouflage."
+  },
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Tree Skinner is a chaotic evil fiend with a fiendish nature similar to the Barbed Devil."
+  },
+  "monster_key": "tree-skinner"
+}

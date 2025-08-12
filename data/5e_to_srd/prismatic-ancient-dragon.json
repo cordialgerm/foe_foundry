@@ -1,0 +1,15 @@
+{
+  "Ancient Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient dragons with radiant damage and powerful breath weapons, sharing a majestic and formidable presence."
+  },
+  "Ancient Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the ancient dragon type and multi-damage breath weapon concept, emphasizing devastating physical and magical attacks."
+  },
+  "Ancient White Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are ancient dragons with a fearsome presence and elemental breath weapons, though the prismatic dragon has more damage types."
+  },
+  "monster_key": "prismatic-ancient-dragon"
+}

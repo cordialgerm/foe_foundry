@@ -1,0 +1,11 @@
+{
+  "Ancient Bronze Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient dragons with aquatic affinities and control over water, though the homebrew has unique water and weather manipulation abilities."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are gargantuan aquatic creatures with powerful physical attacks and a strong connection to water environments."
+  },
+  "monster_key": "ancient-river-dragon"
+}

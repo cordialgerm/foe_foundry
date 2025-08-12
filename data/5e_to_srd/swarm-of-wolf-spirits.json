@@ -1,0 +1,15 @@
+{
+  "Swarm of Bats": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of flying undead creatures with mobility and the ability to occupy the same space as others."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ghostly, incorporeal undead nature and chilling abilities that cause fear and damage."
+  },
+  "Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "The swarm is composed of wolf spirits, conceptually similar to wolves in form and behavior."
+  },
+  "monster_key": "swarm-of-wolf-spirits"
+}

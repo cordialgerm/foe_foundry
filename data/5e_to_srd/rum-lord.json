@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic fey creatures that use intoxicating and debilitating effects to hinder foes."
+  },
+  "Bugbear": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares a role as a melee skirmisher with proficiency in Athletics and Intimidation."
+  },
+  "monster_key": "rum-lord"
+}

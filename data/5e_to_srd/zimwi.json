@@ -1,0 +1,7 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "The Zimwi is a medium-sized chaotic evil giant with multiattack and swallowing abilities, similar in role and size to an Ogre but with more agility and unique swallowing mechanics."
+  },
+  "monster_key": "zimwi"
+}

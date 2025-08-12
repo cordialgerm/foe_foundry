@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Preta is an undead that deals necrotic damage and uses stealth and ethereal abilities similar to a Wraith."
+  },
+  "Specter": {
+    "relation": "close_cousins",
+    "explanation": "Like the Preta, the Specter is a stealthy undead that drains life and has ethereal movement."
+  },
+  "monster_key": "preta"
+}

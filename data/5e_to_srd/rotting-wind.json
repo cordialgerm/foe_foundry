@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, invisible undead that embodies decay and necrotic energy."
+  },
+  "Ghast": {
+    "relation": "mechanically_similar",
+    "explanation": "An undead with a poisonous aura and disease-like debilitating effects."
+  },
+  "monster_key": "rotting-wind"
+}

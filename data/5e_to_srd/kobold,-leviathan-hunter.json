@@ -1,0 +1,11 @@
+{
+  "Kobold": {
+    "relation": "close_cousins",
+    "explanation": "The creature is a Kobold variant with aquatic adaptations and grappling focus."
+  },
+  "Giant Crocodile": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares an aquatic environment and grappling combat style with powerful slam attacks."
+  },
+  "monster_key": "kobold,-leviathan-hunter"
+}

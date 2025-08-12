@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic beasts with tentacle-like appendages and ambush predatory behavior."
+  },
+  "Giant Crab": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic crustacean-like beasts with powerful melee attacks and burrowing capabilities."
+  },
+  "monster_key": "giant-mantis-shrimp"
+}

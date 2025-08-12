@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ghost Boar shares a spectral, incorporeal nature and resilience similar to a Ghost."
+  },
+  "Giant Boar": {
+    "relation": "close_cousins",
+    "explanation": "The Ghost Boar is a large, tusked beast similar in form and role to a Giant Boar but with ghostly traits."
+  },
+  "monster_key": "ghost-boar"
+}

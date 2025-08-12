@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Xanka is a small construct with a focus on destruction and immunity traits, similar to an Animated Armor's construct nature."
+  },
+  "Iron Golem": {
+    "relation": "mechanically_similar",
+    "explanation": "Xanka's ability to absorb and degrade nonmagical objects parallels the Iron Golem's destructive nature and immunity to many damage types."
+  },
+  "monster_key": "xanka"
+}

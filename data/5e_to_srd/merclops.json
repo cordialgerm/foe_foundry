@@ -1,0 +1,11 @@
+{
+  "Merfolk": {
+    "relation": "close_cousins",
+    "explanation": "The Merclops is an aquatic giant related to Merfolk, sharing aquatic traits and environment."
+  },
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Merclops is a Huge giant with strong melee attacks and a club, similar to a Hill Giant but aquatic."
+  },
+  "monster_key": "merclops"
+}

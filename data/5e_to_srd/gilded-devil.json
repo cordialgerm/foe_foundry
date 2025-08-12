@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish devils with a focus on melee combat and magical abilities."
+  },
+  "Erinyes": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gilded Devil shares the manipulative, deceptive nature and magical prowess of the Erinyes, with a focus on charm and control."
+  },
+  "monster_key": "gilded-devil"
+}

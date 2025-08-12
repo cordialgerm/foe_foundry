@@ -1,0 +1,15 @@
+{
+  "Giant Eagle": {
+    "relation": "close_cousins",
+    "explanation": "A gargantuan flying beast with powerful attacks and high mobility similar to a Giant Eagle but much larger and more destructive."
+  },
+  "Tarrasque": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares gargantuan size, siege capabilities, and immense physical power, though the Dawnfly is aerial and more chaotic."
+  },
+  "Fire Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares immunity to fire damage and area fire attacks similar to the Dawnfly's Winged Inferno ability."
+  },
+  "monster_key": "dawnfly"
+}

@@ -1,0 +1,15 @@
+{
+  "Ancient White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are ancient dragons with cold breath and formidable presence, but the homebrew is specialized for aquatic environments."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are massive aquatic dragons dominating sea environments with powerful physical attacks and presence."
+  },
+  "Kraken": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are gargantuan sea monsters with control over oceanic territory and fearsome aquatic combat abilities."
+  },
+  "monster_key": "ancient-sea-dragon"
+}

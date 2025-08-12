@@ -1,0 +1,11 @@
+{
+  "Giant Wasp": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile humanoid with flying, poison stinger attacks, and hive connections similar to a Giant Wasp."
+  },
+  "Bandit": {
+    "relation": "conceptually_similar",
+    "explanation": "A small humanoid warrior with tactical combat skills and multiattack capabilities like a Bandit."
+  },
+  "monster_key": "tosculi-warrior"
+}

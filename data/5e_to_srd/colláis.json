@@ -1,0 +1,11 @@
+{
+  "Giant Elk": {
+    "relation": "close_cousins",
+    "explanation": "A large, forest-dwelling creature with powerful melee attacks and imposing presence similar to the Coll\u00e1is."
+  },
+  "Treant": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are forest-associated monstrosities with abilities that affect battlefield control and instill fear."
+  },
+  "monster_key": "coll\u00e1is"
+}

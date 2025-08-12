@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Cherufe is a huge magma elemental with fire traits and tremorsense, similar in elemental nature to the Fire Elemental but with added magma and quake abilities."
+  },
+  "Magma Mephit": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares magma and fire damage traits and abilities related to fire and molten rock, though on a much smaller scale."
+  },
+  "monster_key": "cherufe"
+}

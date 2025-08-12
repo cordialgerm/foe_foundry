@@ -1,0 +1,7 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Firegeist is a small fire elemental with similar fire-based abilities and immunity, but with added fear effects and unique features."
+  },
+  "monster_key": "firegeist"
+}

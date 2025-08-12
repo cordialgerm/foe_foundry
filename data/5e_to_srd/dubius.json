@@ -1,0 +1,11 @@
+{
+  "Quasit": {
+    "relation": "close_cousins",
+    "explanation": "Dubius is a small fiend that manipulates and induces fear, similar to the Quasit."
+  },
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "Dubius shares the small fiend type and manipulative nature with the Imp."
+  },
+  "monster_key": "dubius"
+}

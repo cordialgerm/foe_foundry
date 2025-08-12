@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "A small humanoid spellcaster with magical abilities and a focus on manipulating objects and magic."
+  },
+  "Bandit": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, agile humanoid that uses improvised weapons and tactics, similar to a scavenger or junk user."
+  },
+  "monster_key": "junk-shaman"
+}

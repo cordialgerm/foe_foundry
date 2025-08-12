@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful celestial beings with a majestic presence and battlefield control abilities."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Cosmic Symphony shares the celestial nature and high CR with the Solar, embodying divine power and tactical combat presence."
+  },
+  "monster_key": "cosmic-symphony"
+}

@@ -1,0 +1,11 @@
+{
+  "Hezrou": {
+    "relation": "close_cousins",
+    "explanation": "The Golmana is a Medium demon with claw and tail attacks, poison immunity, and magical resistance similar to a Hezrou."
+  },
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiendish demons with a menacing presence and resilient nature, though the Golmana has unique void and thunder abilities."
+  },
+  "monster_key": "golmana"
+}

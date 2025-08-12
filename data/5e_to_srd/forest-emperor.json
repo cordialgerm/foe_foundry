@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aberrations with acidic attacks and abilities to drain life, fitting the aberrant forest predator concept."
+  },
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the forest predator role with mobility and fear-inducing presence, though mechanically different."
+  },
+  "monster_key": "forest-emperor"
+}

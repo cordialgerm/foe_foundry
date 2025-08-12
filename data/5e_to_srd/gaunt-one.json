@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with a menacing presence and predatory nature."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares brutal melee attacks and grappling abilities to incapacitate prey."
+  },
+  "monster_key": "gaunt-one"
+}

@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures associated with nature and forests, sharing stealth and elusive traits."
+  },
+  "Sprite": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, agile fey with stealthy and elusive natures, though the Wind Weasel is larger and more combat-focused."
+  },
+  "monster_key": "wind-weasel"
+}

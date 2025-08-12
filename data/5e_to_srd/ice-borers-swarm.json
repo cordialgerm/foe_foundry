@@ -1,0 +1,7 @@
+{
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, cold-themed elemental creatures associated with icy environments and cold damage."
+  },
+  "monster_key": "ice-borers-swarm"
+}

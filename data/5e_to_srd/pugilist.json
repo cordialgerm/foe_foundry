@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Pugilist is a martial-focused humanoid fighter similar to the Veteran's combat role and melee prowess."
+  },
+  "monster_key": "pugilist"
+}

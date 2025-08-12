@@ -1,0 +1,11 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Deep Troll shares the troll's regenerative ability and brutish combat style but adds acid damage and oozing duplicates."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "The Deep Troll's oozing body and acid damage conceptually resemble the Black Pudding's amorphous, corrosive nature."
+  },
+  "monster_key": "deep-troll"
+}

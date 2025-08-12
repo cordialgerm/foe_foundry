@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fey creatures with magical abilities and connections to nature, often using deception and enchantment."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "The Kitsune's innate spellcasting and use of spells like Detect Thoughts and Fire Bolt resemble the Mage's spellcasting abilities."
+  },
+  "Doppelganger": {
+    "relation": "mechanically_similar",
+    "explanation": "The Kitsune's shapechanger ability and disguise powers are similar to the Doppelganger's shapechanging and deceptive nature."
+  },
+  "monster_key": "kitsune"
+}

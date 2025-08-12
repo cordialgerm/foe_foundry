@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large chaotic evil fiends with a fiery and infernal nature, featuring strong combat abilities and resistances."
+  },
+  "Balor": {
+    "relation": "conceptually_similar",
+    "explanation": "The Alnaar shares the fiery, chaotic evil fiend concept with the Balor, including a destructive aura and powerful multiattacks."
+  },
+  "monster_key": "alnaar"
+}

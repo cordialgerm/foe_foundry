@@ -1,0 +1,11 @@
+{
+  "Dretch": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium fiendish demons with poison abilities and resistances, sharing a similar demonic nature."
+  },
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiendish demons with natural armor and multiattack capabilities, though the Barbed Devil focuses more on melee combat."
+  },
+  "monster_key": "unska"
+}

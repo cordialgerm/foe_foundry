@@ -1,0 +1,11 @@
+{
+  "Ogre": {
+    "relation": "almost_identical",
+    "explanation": "A huge, powerful ogre with strong melee abilities and high hit points, closely matching the Rockchewer Ogre's role and traits."
+  },
+  "Stone Giant": {
+    "relation": "close_cousins",
+    "explanation": "Shares the giant type and rocky environment, with abilities related to stone and throwing rocks, similar to the Rockchewer Ogre."
+  },
+  "monster_key": "ogre,-rockchewer"
+}

@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic aberrations with powerful grappling abilities and psychic or fear-based control."
+  },
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a gelatinous, amorphous body and resistance to bludgeoning damage, with a focus on engulfing or grappling prey."
+  },
+  "monster_key": "shroud-ray"
+}

@@ -1,0 +1,7 @@
+{
+  "Sahuagin": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Sahuagin exactly in appearance, abilities, and behavior."
+  },
+  "monster_key": "sahuagin"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs that serve as guardians and have durable, animated forms resembling statues or armor."
+  },
+  "Mummy": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead or necromantic guardians associated with tombs and curses."
+  },
+  "monster_key": "ushabti"
+}

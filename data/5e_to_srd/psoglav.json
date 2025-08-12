@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Psoglav controls shadows and uses invisibility, similar to the shadowy nature of the Shadow."
+  },
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Psoglav is a large chaotic evil fiend with strong melee attacks, akin to the Barbed Devil's fiendish combat role."
+  },
+  "monster_key": "psoglav"
+}

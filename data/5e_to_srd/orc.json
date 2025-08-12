@@ -1,0 +1,7 @@
+{
+  "Orc": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a direct representation of the Orc from the SRD with matching traits and behavior."
+  },
+  "monster_key": "orc"
+}

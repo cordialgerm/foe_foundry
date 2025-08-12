@@ -1,0 +1,11 @@
+{
+  "Bandit Captain": {
+    "relation": "conceptually_similar",
+    "explanation": "A tactical humanoid warrior leading others in combat, similar to a leader of a warrior band."
+  },
+  "Tribal Warrior": {
+    "relation": "close_cousins",
+    "explanation": "A large humanoid fighter using spears and teamwork, akin to a tribal combatant."
+  },
+  "monster_key": "warrior-band"
+}

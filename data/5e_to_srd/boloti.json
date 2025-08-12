@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the aquatic and vortex form concept with the Boloti's water mastery and whirlpool abilities."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures with a connection to natural environments, with the Boloti specialized in aquatic habitats."
+  },
+  "monster_key": "boloti"
+}

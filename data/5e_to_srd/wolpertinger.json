@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, agile, fey-like creature with flying and elusive movement similar to the Wolpertinger."
+  },
+  "Stirge": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the tiny size, flying capability, and a piercing attack, along with a unique combat ability."
+  },
+  "monster_key": "wolpertinger"
+}

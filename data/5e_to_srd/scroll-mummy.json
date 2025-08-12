@@ -1,0 +1,11 @@
+{
+  "Mummy": {
+    "relation": "close_cousins",
+    "explanation": "The Scroll Mummy is an undead wrapped in mystical materials with spell absorption, sharing the undead mummy theme and resistances."
+  },
+  "Mummy Lord": {
+    "relation": "conceptually_similar",
+    "explanation": "Like a Mummy Lord, the Scroll Mummy is a powerful undead spellcaster with magical abilities and a commanding presence."
+  },
+  "monster_key": "scroll-mummy"
+}

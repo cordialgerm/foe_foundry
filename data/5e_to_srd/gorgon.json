@@ -1,0 +1,7 @@
+{
+  "Gorgon": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a large, bull-like creature with iron-like plates and a petrifying breath weapon, matching the Gorgon exactly."
+  },
+  "monster_key": "gorgon"
+}

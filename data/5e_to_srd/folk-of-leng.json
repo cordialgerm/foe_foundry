@@ -1,0 +1,15 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "Both are cunning, magical humanoids skilled in deception and stealth."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares ethereal plane shifting and mystical, elusive nature."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "Both have spellcasting abilities focused on manipulation and magic."
+  },
+  "monster_key": "folk-of-leng"
+}

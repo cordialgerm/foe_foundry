@@ -1,0 +1,815 @@
+{
+  "post-1560.md": [
+    "Drow"
+  ],
+  "post-502.md": [
+    "Kraken"
+  ],
+  "post-782.md": [
+    "Couatl"
+  ],
+  "post-631.md": [
+    "Cloud Giant",
+    "Fire Giant",
+    "Hill Giant",
+    "Stone Giant",
+    "Storm Giant"
+  ],
+  "post-584.md": [
+    "Master Thief"
+  ],
+  "post-615.md": [
+    "Empyrean"
+  ],
+  "post-495.md": [
+    "Minotaur"
+  ],
+  "post-3501.md": [
+    "Mage",
+    "Wight"
+  ],
+  "post-3486.md": [
+    "Giant Constrictor Snake"
+  ],
+  "post-1800.md": [
+    "Bard"
+  ],
+  "post-2659.md": [
+    "Assassin"
+  ],
+  "post-3475.md": [
+    "Drow",
+    "Shadow"
+  ],
+  "post-2032.md": [
+    "Specter"
+  ],
+  "post-1399.md": [
+    "Ghast",
+    "Ghoul"
+  ],
+  "post-248.md": [
+    "Drow",
+    "Spider"
+  ],
+  "post-532.md": [
+    "Bugbear",
+    "Goblin",
+    "Hobgoblin",
+    "Mage"
+  ],
+  "post-1993.md": [
+    "Giant Spider",
+    "Giant Vulture",
+    "Spider",
+    "Troll",
+    "Vulture"
+  ],
+  "post-6283.md": [
+    "Hydra"
+  ],
+  "post-481.md": [
+    "Cambion"
+  ],
+  "post-1905.md": [
+    "Scout"
+  ],
+  "post-4132.md": [
+    "Stirge"
+  ],
+  "post-687.md": [
+    "Revenant"
+  ],
+  "post-4180.md": [
+    "Dire Wolf"
+  ],
+  "post-547.md": [
+    "Kobold"
+  ],
+  "post-4091.md": [
+    "Vampire"
+  ],
+  "post-3667.md": [
+    "Ghost",
+    "Ghost Dragon"
+  ],
+  "post-640.md": [
+    "Lamia",
+    "Lion"
+  ],
+  "post-1830.md": [
+    "Duergar",
+    "Guard"
+  ],
+  "post-462.md": [
+    "Oni"
+  ],
+  "post-209.md": [
+    "Mimic"
+  ],
+  "post-1109.md": [
+    "Demilich",
+    "Lich"
+  ],
+  "post-1289.md": [
+    "Skeleton",
+    "Zombie"
+  ],
+  "post-1058.md": [
+    "Stirge"
+  ],
+  "post-2678.md": [
+    "Soldier"
+  ],
+  "post-1883.md": [
+    "Wight"
+  ],
+  "post-2629.md": [
+    "Knight",
+    "Skeleton",
+    "Warhorse",
+    "Zombie"
+  ],
+  "post-651.md": [
+    "Clay Golem",
+    "Flesh Golem",
+    "The Flesh"
+  ],
+  "post-812.md": [
+    "Sahuagin"
+  ],
+  "post-1425.md": [
+    "Bard"
+  ],
+  "post-3520.md": [
+    "Mage"
+  ],
+  "post-696.md": [
+    "Redcap"
+  ],
+  "post-1656.md": [
+    "Druid"
+  ],
+  "post-774.md": [
+    "Deva",
+    "Planetar",
+    "Solar"
+  ],
+  "post-1497.md": [
+    "Drow",
+    "Shadow",
+    "Shadow Demon"
+  ],
+  "post-701.md": [
+    "Shadow"
+  ],
+  "post-750.md": [
+    "Invisible Stalker"
+  ],
+  "post-3415.md": [
+    "Adult Amethyst Dragon"
+  ],
+  "post-523.md": [
+    "Aboleth"
+  ],
+  "post-339.md": [
+    "Incubus",
+    "Succubus"
+  ],
+  "post-443.md": [
+    "Medusa"
+  ],
+  "post-1421.md": [
+    "Kraken",
+    "Priest"
+  ],
+  "post-873.md": [
+    "Duergar"
+  ],
+  "post-822.md": [
+    "Kobold",
+    "Salamander",
+    "Troll",
+    "Yeti"
+  ],
+  "post-962.md": [
+    "Yeti"
+  ],
+  "post-1840.md": [
+    "Duergar"
+  ],
+  "post-537.md": [
+    "Hobgoblin",
+    "Shadow"
+  ],
+  "post-655.md": [
+    "Remorhaz"
+  ],
+  "post-4012.md": [
+    "Vampire",
+    "Vampire Spawn"
+  ],
+  "post-907.md": [
+    "Tarrasque"
+  ],
+  "post-1975.md": [
+    "Shadow"
+  ],
+  "post-682.md": [
+    "Guardian",
+    "Scarecrow",
+    "Shield Guardian"
+  ],
+  "post-2225.md": [
+    "Rat"
+  ],
+  "post-448.md": [
+    "Commoner",
+    "Intellect Devourer"
+  ],
+  "post-419.md": [
+    "Balor",
+    "Marilith",
+    "Nalfeshnee"
+  ],
+  "post-5132.md": [
+    "Shadow"
+  ],
+  "post-15.md": [
+    "Orc"
+  ],
+  "post-559.md": [
+    "Orc"
+  ],
+  "post-246.md": [
+    "Drow",
+    "Mage",
+    "Quasit",
+    "Shadow",
+    "Shadow Demon"
+  ],
+  "post-1006.md": [
+    "Allosaurus",
+    "Ankylosaurus",
+    "Pteranodon",
+    "Triceratops",
+    "Velociraptor"
+  ],
+  "post-233.md": [
+    "Drow",
+    "Warrior"
+  ],
+  "post-409.md": [
+    "Glabrezu"
+  ],
+  "post-689.md": [
+    "Warrior"
+  ],
+  "post-868.md": [
+    "Rust Monster"
+  ],
+  "post-819.md": [
+    "Giant Rat",
+    "Rat"
+  ],
+  "post-74.md": [
+    "Specter",
+    "Wight",
+    "Wraith"
+  ],
+  "post-2830.md": [
+    "Goblin"
+  ],
+  "post-4169.md": [
+    "Kobold"
+  ],
+  "post-40.md": [
+    "Shadow",
+    "Skeleton",
+    "Zombie"
+  ],
+  "post-302.md": [
+    "Knight",
+    "Warrior"
+  ],
+  "post-4835.md": [
+    "Gladiator",
+    "Mystic"
+  ],
+  "post-171.md": [
+    "Assassin",
+    "Bandit",
+    "Bandit Captain"
+  ],
+  "post-1185.md": [
+    "Mage"
+  ],
+  "post-384.md": [
+    "Dryad",
+    "Pixie",
+    "Sprite"
+  ],
+  "post-155.md": [
+    "Commoner",
+    "Noble"
+  ],
+  "post-3350.md": [
+    "Hawk"
+  ],
+  "post-192.md": [
+    "Archmage",
+    "Mage"
+  ],
+  "post-1261.md": [
+    "Knight"
+  ],
+  "post-579.md": [
+    "Bard",
+    "Priest"
+  ],
+  "post-97.md": [
+    "Bat",
+    "Spider",
+    "Vampire",
+    "Vampire Spawn"
+  ],
+  "post-2860.md": [
+    "Soldier"
+  ],
+  "post-2464.md": [
+    "Shadow"
+  ],
+  "post-1.md": [
+    "Soldier"
+  ],
+  "post-10.md": [
+    "Goblin"
+  ],
+  "post-212.md": [
+    "Bugbear"
+  ],
+  "post-1304.md": [
+    "Treant"
+  ],
+  "post-284.md": [
+    "Chimera",
+    "Goat",
+    "Lion"
+  ],
+  "post-4752.md": [
+    "Priest",
+    "Warrior"
+  ],
+  "post-1037.md": [
+    "Shadow"
+  ],
+  "post-253.md": [
+    "Drider",
+    "Drow",
+    "Giant Spider",
+    "Spider"
+  ],
+  "post-438.md": [
+    "Harpy"
+  ],
+  "post-65.md": [
+    "Ghast",
+    "Ghoul"
+  ],
+  "post-2571.md": [
+    "Zombie"
+  ],
+  "post-391.md": [
+    "Green Hag",
+    "Night Hag",
+    "Sea Hag"
+  ],
+  "post-1225.md": [
+    "Wyvern"
+  ],
+  "post-1056.md": [
+    "Ettin"
+  ],
+  "post-4733.md": [
+    "Warrior"
+  ],
+  "post-1017.md": [
+    "Flying Snake"
+  ],
+  "post-1386.md": [
+    "Shadow"
+  ],
+  "post-1235.md": [
+    "Centaurs"
+  ],
+  "post-4597.md": [
+    "Spider"
+  ],
+  "post-101.md": [
+    "Lich"
+  ],
+  "post-1310.md": [
+    "Ogre"
+  ],
+  "post-519.md": [
+    "Chuul"
+  ],
+  "post-55.md": [
+    "Goblin"
+  ],
+  "post-459.md": [
+    "Gibbering Mouther"
+  ],
+  "post-489.md": [
+    "Dust Mephit",
+    "Ice Mephit",
+    "Magma Mephit"
+  ],
+  "post-4198.md": [
+    "Priest",
+    "Shadow"
+  ],
+  "post-13.md": [
+    "Goblin",
+    "Kobold"
+  ],
+  "post-2269.md": [
+    "Drow"
+  ],
+  "post-122.md": [
+    "Owlbear"
+  ],
+  "post-274.md": [
+    "Gorgon"
+  ],
+  "post-334.md": [
+    "Shambling Mound"
+  ],
+  "post-375.md": [
+    "Marid"
+  ],
+  "post-4481.md": [
+    "Pirate"
+  ],
+  "post-1041.md": [
+    "Faerie Dragon"
+  ],
+  "post-3395.md": [
+    "Shadow"
+  ],
+  "post-5699.md": [
+    "Assassin"
+  ],
+  "post-759.md": [
+    "Cloud Giant",
+    "Fire Giant",
+    "Hill Giant"
+  ],
+  "post-1459.md": [
+    "Drow"
+  ],
+  "post-779.md": [
+    "Unicorn"
+  ],
+  "post-4466.md": [
+    "Mage"
+  ],
+  "post-330.md": [
+    "Will-o’-Wisp"
+  ],
+  "post-177.md": [
+    "Commoner",
+    "Cult Fanatic",
+    "Cultist",
+    "Druid",
+    "Priest"
+  ],
+  "post-194.md": [
+    "Berserker",
+    "Tribal Warrior",
+    "Warrior"
+  ],
+  "post-136.md": [
+    "Peryton"
+  ],
+  "post-320.md": [
+    "Tiger",
+    "Werebear",
+    "Wereboar",
+    "Weretiger"
+  ],
+  "post-3356.md": [
+    "Dream Eater",
+    "Nightmare"
+  ],
+  "post-2884.md": [
+    "Soldier"
+  ],
+  "post-729.md": [
+    "Nightmare"
+  ],
+  "post-669.md": [
+    "Jackalwere",
+    "Lamia"
+  ],
+  "post-3458.md": [
+    "Drow",
+    "Duergar",
+    "Ogre",
+    "Shadow"
+  ],
+  "post-282.md": [
+    "Manticore"
+  ],
+  "post-142.md": [
+    "Ettercap",
+    "Spider"
+  ],
+  "post-393.md": [
+    "Satyr"
+  ],
+  "post-1093.md": [
+    "Cloaker"
+  ],
+  "post-4503.md": [
+    "Nightmare"
+  ],
+  "post-344.md": [
+    "Air Elemental",
+    "Fire Elemental",
+    "Water Elemental"
+  ],
+  "post-315.md": [
+    "Archpriest",
+    "Guardian"
+  ],
+  "post-1083.md": [
+    "Gnoll"
+  ],
+  "post-2308.md": [
+    "Roc"
+  ],
+  "post-103.md": [
+    "Black Pudding",
+    "Gelatinous Cube",
+    "Gray Ooze",
+    "Ochre Jelly"
+  ],
+  "post-719.md": [
+    "Roper"
+  ],
+  "post-84.md": [
+    "Guardian",
+    "Mummy",
+    "Mummy Lord"
+  ],
+  "post-599.md": [
+    "Nightmare"
+  ],
+  "post-3439.md": [
+    "Sea Serpent"
+  ],
+  "post-181.md": [
+    "Mage"
+  ],
+  "post-146.md": [
+    "Grick"
+  ],
+  "post-397.md": [
+    "Bearded Devil",
+    "Bone Devil",
+    "Chain Devil",
+    "Imp"
+  ],
+  "post-4422.md": [
+    "Solar"
+  ],
+  "post-296.md": [
+    "Shadow"
+  ],
+  "post-1074.md": [
+    "Giant Spider",
+    "Phase Spider",
+    "Spider"
+  ],
+  "post-3336.md": [
+    "Rakshasa"
+  ],
+  "post-5939.md": [
+    "Lion"
+  ],
+  "post-3478.md": [
+    "Archdruid",
+    "Bard",
+    "Mage"
+  ],
+  "post-709.md": [
+    "Behir"
+  ],
+  "post-36.md": [
+    "Bugbear",
+    "Goblin",
+    "Goblin Boss",
+    "Hobgoblin",
+    "Hobgoblin Captain",
+    "Hobgoblin Warlord"
+  ],
+  "post-2206.md": [
+    "Gnoll"
+  ],
+  "post-1873.md": [
+    "Nightmare"
+  ],
+  "post-483.md": [
+    "Androsphinx",
+    "Gynosphinx",
+    "Sphinx"
+  ],
+  "post-4104.md": [
+    "Jiangshi",
+    "Wight"
+  ],
+  "post-637.md": [
+    "Warrior"
+  ],
+  "post-3490.md": [
+    "Ogre"
+  ],
+  "post-965.md": [
+    "Kobold"
+  ],
+  "post-996.md": [
+    "Death Knight",
+    "Knight"
+  ],
+  "post-19.md": [
+    "Crocodile",
+    "Lizard",
+    "Lizardfolk",
+    "Lizardfolk Shaman"
+  ],
+  "post-1477.md": [
+    "Drow",
+    "Giant Spider",
+    "Spider"
+  ],
+  "post-514.md": [
+    "Guardian",
+    "Guardian Naga",
+    "Spirit Naga"
+  ],
+  "post-767.md": [
+    "Goblin"
+  ],
+  "post-3447.md": [
+    "Dragon Turtle"
+  ],
+  "post-850.md": [
+    "Vampire",
+    "Vampire Warrior",
+    "Warrior"
+  ],
+  "post-2558.md": [
+    "Warrior",
+    "Wraith"
+  ],
+  "post-3725.md": [
+    "Troll",
+    "Zombie"
+  ],
+  "post-3620.md": [
+    "Infiltrator",
+    "Mage",
+    "Soldier"
+  ],
+  "post-747.md": [
+    "Banshee"
+  ],
+  "post-29.md": [
+    "Gnoll"
+  ],
+  "post-425.md": [
+    "Glabrezu",
+    "Hezrou",
+    "Marilith",
+    "Quasit",
+    "Vrock"
+  ],
+  "post-1406.md": [
+    "Fomorian"
+  ],
+  "post-1867.md": [
+    "Drow",
+    "Spider"
+  ],
+  "post-586.md": [
+    "Troll"
+  ],
+  "post-4217.md": [
+    "Gibbering Mouther"
+  ],
+  "post-159.md": [
+    "Commoner",
+    "Guard",
+    "Knight",
+    "Thug",
+    "Veteran"
+  ],
+  "post-4978.md": [
+    "Mage"
+  ],
+  "post-772.md": [
+    "Merrow"
+  ],
+  "post-3615.md": [
+    "Mimic"
+  ],
+  "post-3466.md": [
+    "Druid",
+    "Duergar",
+    "Hobgoblin",
+    "Kobold"
+  ],
+  "post-606.md": [
+    "Night Hag",
+    "Sea Hag"
+  ],
+  "post-79.md": [
+    "Ghost",
+    "Mummy"
+  ],
+  "post-564.md": [
+    "Gnoll"
+  ],
+  "post-1516.md": [
+    "Drow"
+  ],
+  "post-756.md": [
+    "Salamander"
+  ],
+  "post-4307.md": [
+    "Guard",
+    "Priest",
+    "Solar",
+    "Warrior"
+  ],
+  "post-400.md": [
+    "Erinyes",
+    "Horned Devil",
+    "Ice Devil",
+    "Pit Fiend"
+  ],
+  "post-5884.md": [
+    "Harpy"
+  ],
+  "post-4859.md": [
+    "Hill Giant",
+    "Megapede"
+  ],
+  "post-713.md": [
+    "Roc"
+  ],
+  "post-742.md": [
+    "Hydra"
+  ],
+  "post-4071.md": [
+    "Dullahan"
+  ],
+  "post-886.md": [
+    "Goblin"
+  ],
+  "post-896.md": [
+    "Rakshasa"
+  ],
+  "post-404.md": [
+    "Shadow",
+    "Shadow Demon",
+    "Vrock"
+  ],
+  "post-677.md": [
+    "Animated Armor",
+    "Flying Sword",
+    "Rug of Smothering"
+  ],
+  "post-1644.md": [
+    "Drow",
+    "Guardian"
+  ],
+  "post-1891.md": [
+    "Salamander"
+  ],
+  "post-703.md": [
+    "Otyugh"
+  ],
+  "post-2186.md": [
+    "Scout",
+    "Spy"
+  ],
+  "post-2363.md": [
+    "Mastiff",
+    "Shadow"
+  ],
+  "post-5962.md": [
+    "Chimera"
+  ]
+}

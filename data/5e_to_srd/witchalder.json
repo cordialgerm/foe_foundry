@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant-based creatures that control their environment and use powerful slam attacks."
+  },
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a dangerous, poisonous plant-like organism that can ambush and harm foes."
+  },
+  "monster_key": "witchalder"
+}

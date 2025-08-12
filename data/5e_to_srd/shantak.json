@@ -1,0 +1,11 @@
+{
+  "Giant Bat": {
+    "relation": "close_cousins",
+    "explanation": "A large flying monstrosity with terrifying screech and flight similar to a Giant Bat."
+  },
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares necrotic damage and frightening abilities like a Ghast."
+  },
+  "monster_key": "shantak"
+}

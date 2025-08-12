@@ -1,0 +1,11 @@
+{
+  "Mammoth": {
+    "relation": "conceptually_similar",
+    "explanation": "The Peat Mammoth shares the massive size and mammoth concept but is plant-based and swamp-adapted."
+  },
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant creatures dwelling in swampy environments with engulfing abilities and fire-related traits."
+  },
+  "monster_key": "peat-mammoth"
+}

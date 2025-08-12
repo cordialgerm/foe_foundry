@@ -1,0 +1,7 @@
+{
+  "Wraith": {
+    "relation": "almost_identical",
+    "explanation": "The Oathrot Wraith is a spectral undead with life drain and curse abilities, closely matching the Wraith's ethereal, necrotic, and ambusher traits."
+  },
+  "monster_key": "oathrot-wraith"
+}

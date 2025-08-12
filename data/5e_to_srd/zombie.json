@@ -1,0 +1,7 @@
+{
+  "Zombie": {
+    "relation": "almost_identical",
+    "explanation": "A classic undead creature with slow movement, mindless behavior, and Undead Fortitude resilience."
+  },
+  "monster_key": "zombie"
+}

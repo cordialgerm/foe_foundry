@@ -1,0 +1,7 @@
+{
+  "Orc": {
+    "relation": "almost_identical",
+    "explanation": "A brutish orc warrior with typical orc traits and combat style, including a greataxe and aggressive charge."
+  },
+  "monster_key": "warhordling-orc-warrior"
+}

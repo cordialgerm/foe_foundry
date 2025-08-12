@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Salt Devil is a medium fiendish devil with summoning and teleportation abilities similar to a Barbed Devil."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiendish creatures associated with harsh environments and have a dangerous presence, though the Salt Devil is more humanoid."
+  },
+  "monster_key": "salt-devil"
+}

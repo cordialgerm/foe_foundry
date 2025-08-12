@@ -1,0 +1,11 @@
+{
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile dragon with charm and poison abilities, sharing the dragon type and some thematic elements."
+  },
+  "Sprite": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fey, mischievous, and stealthy nature with spellcasting and invisibility."
+  },
+  "monster_key": "fey-drake"
+}

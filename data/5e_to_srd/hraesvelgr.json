@@ -1,0 +1,11 @@
+{
+  "Cloud Giant": {
+    "relation": "close_cousins",
+    "explanation": "Hraesvelgr is a massive giant associated with weather control and mountainous areas, similar to Cloud Giants."
+  },
+  "Roc": {
+    "relation": "close_cousins",
+    "explanation": "Hraesvelgr can transform into a colossal roc, sharing the giant bird form and keen sight of a Roc."
+  },
+  "monster_key": "hraesvelgr"
+}

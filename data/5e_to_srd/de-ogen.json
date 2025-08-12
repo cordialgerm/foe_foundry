@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "De Ogen is a flying, incorporeal undead with a transfixing gaze and shadow creation similar to a Wraith."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "De Ogen creates shadows from slain foes and shares stealthy, incapacitating traits with Shadows."
+  },
+  "monster_key": "de-ogen"
+}

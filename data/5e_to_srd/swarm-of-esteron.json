@@ -1,0 +1,15 @@
+{
+  "Swarm of Quippers": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of aquatic beasts with piercing bite attacks and swarm mechanics."
+  },
+  "Swarm of Bats": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are swarms of small, mobile creatures capable of flight and engaging multiple foes."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are swarms of agile, biting beasts that attack in numbers and can occupy the same space as others."
+  },
+  "monster_key": "swarm-of-esteron"
+}

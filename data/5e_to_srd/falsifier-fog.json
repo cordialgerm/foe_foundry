@@ -1,0 +1,11 @@
+{
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are eerie, flying undead creatures associated with fear and a ghostly, insubstantial form."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the intangible, fear-inducing undead nature and ability to manipulate shadows or darkness."
+  },
+  "monster_key": "falsifier-fog"
+}

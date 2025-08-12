@@ -1,0 +1,7 @@
+{
+  "Mummy": {
+    "relation": "almost_identical",
+    "explanation": "A medium undead wrapped in bandages with curse abilities and immunities similar to a Mummy, but with added poison and toxic smoke features."
+  },
+  "monster_key": "venomous-mummy"
+}

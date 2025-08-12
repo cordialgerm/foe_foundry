@@ -1,0 +1,11 @@
+{
+  "Phoenix": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the phoenix concept of fiery resurrection but as an undead variant with decay and necrotic traits."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead creatures with a menacing presence and resistances to necrotic damage."
+  },
+  "monster_key": "undead-phoenix"
+}

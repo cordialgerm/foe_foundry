@@ -1,0 +1,11 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "The Ogre Mage is a magical variant of the Ogre, sharing its large giant form and melee combat style."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Ogre Mage shares spellcasting abilities and magical prowess similar to a Mage."
+  },
+  "monster_key": "ogre-mage"
+}

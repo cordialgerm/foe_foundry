@@ -1,0 +1,11 @@
+{
+  "Remorhaz": {
+    "relation": "close_cousins",
+    "explanation": "Both are gargantuan monstrosities with cold-themed abilities and powerful melee attacks."
+  },
+  "Giant Crocodile": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the combination of strong bite and claw attacks with swimming and land movement."
+  },
+  "monster_key": "graknork"
+}

@@ -1,0 +1,7 @@
+{
+  "Giant Centipede": {
+    "relation": "almost_identical",
+    "explanation": "A large, segmented monstrosity with many legs, venomous stinger, and grappling abilities similar to the Megapede."
+  },
+  "monster_key": "megapede"
+}

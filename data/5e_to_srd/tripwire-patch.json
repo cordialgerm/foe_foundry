@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large plant-based ambush predators that manipulate terrain and attack with powerful melee strikes."
+  },
+  "monster_key": "tripwire-patch"
+}

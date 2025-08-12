@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Zilaq is a tiny dragon with flight and breath weapon-like sonic attacks, sharing the dragon concept and mobility."
+  },
+  "Dragon Turtle": {
+    "relation": "mechanically_similar",
+    "explanation": "Zilaq's powerful area thunder damage and multiattack resemble the Dragon Turtle's breath weapon and multiattack mechanics."
+  },
+  "monster_key": "zilaq"
+}

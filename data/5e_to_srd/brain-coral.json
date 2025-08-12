@@ -1,0 +1,19 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aberrations with aquatic habitats and abilities to control or influence other creatures."
+  },
+  "Giant Crab": {
+    "relation": "mechanically_similar",
+    "explanation": "Summons giant crabs as allies, sharing thematic and combat roles."
+  },
+  "Giant Sea Horse": {
+    "relation": "mechanically_similar",
+    "explanation": "Summons giant sea horses as allies, reflecting similar underwater support creatures."
+  },
+  "Reef Shark": {
+    "relation": "mechanically_similar",
+    "explanation": "Summons reef sharks to assist in combat, sharing aquatic predator traits."
+  },
+  "monster_key": "brain-coral"
+}

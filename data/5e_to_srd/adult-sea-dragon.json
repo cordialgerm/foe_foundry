@@ -1,0 +1,11 @@
+{
+  "Adult White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge dragons with cold-based breath weapons and similar physical traits, but the homebrew is amphibious and sea-themed."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, powerful aquatic-themed creatures that dominate coastal and oceanic environments."
+  },
+  "monster_key": "adult-sea-dragon"
+}

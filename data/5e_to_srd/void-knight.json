@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with armor-like appearances and melee combat roles."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful, slow-moving construct with high durability and strong melee attacks."
+  },
+  "monster_key": "void-knight"
+}

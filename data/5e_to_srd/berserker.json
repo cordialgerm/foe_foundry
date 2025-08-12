@@ -1,0 +1,7 @@
+{
+  "Berserker": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Berserker closely matches the SRD Berserker in role, equipment, fighting style, and abilities."
+  },
+  "monster_key": "berserker"
+}

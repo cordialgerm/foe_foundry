@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures associated with magical forests and possess charm and manipulation abilities."
+  },
+  "Bugbear": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the skirmisher role with melee attacks and agility, though the Jack of Strings adds psychic damage and control."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "Both use magic and manipulation, with the Jack of Strings focusing on trickery and puppet control."
+  },
+  "monster_key": "jack-of-strings"
+}

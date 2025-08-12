@@ -1,0 +1,15 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy humanoid creatures embodying darkness and fear."
+  },
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "Both are elusive, charismatic humanoids with strong social manipulation and shadowy traits."
+  },
+  "Spy": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares skills in deception, persuasion, and quick melee attacks with finesse weapons."
+  },
+  "monster_key": "shadow-fey-ambassador"
+}

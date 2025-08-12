@@ -1,0 +1,11 @@
+{
+  "Merfolk": {
+    "relation": "close_cousins",
+    "explanation": "Both are aquatic humanoids adapted to marine environments with swimming capabilities."
+  },
+  "Pteranodon": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the flying ability and bird-like traits similar to the Puffinfolk's peck attack and flight."
+  },
+  "monster_key": "puffinfolk"
+}

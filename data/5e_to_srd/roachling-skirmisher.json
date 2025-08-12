@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile humanoid with stealth and skirmishing abilities similar to a Goblin."
+  },
+  "monster_key": "roachling-skirmisher"
+}

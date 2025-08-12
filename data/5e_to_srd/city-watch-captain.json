@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "almost_identical",
+    "explanation": "A tactical, well-equipped humanoid leader with combat skills and command abilities similar to a Veteran."
+  },
+  "monster_key": "city-watch-captain"
+}

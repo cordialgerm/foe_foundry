@@ -1,0 +1,11 @@
+{
+  "Dust Mephit": {
+    "relation": "close_cousins",
+    "explanation": "Both are tiny elemental creatures associated with dust and have abilities to hinder foes, with flying and elemental damage."
+  },
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Khamaseen is an elemental with flying and air-related dust abilities, conceptually similar to an Air Elemental's control of air and wind."
+  },
+  "monster_key": "khamaseen"
+}

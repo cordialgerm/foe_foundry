@@ -1,0 +1,11 @@
+{
+  "Adult Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful dragon with magical abilities and radiant damage, similar in role and presence."
+  },
+  "Adult Bronze Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A dragon with strong magical and physical combat capabilities, often associated with elemental and force-like attacks."
+  },
+  "monster_key": "star-drake"
+}

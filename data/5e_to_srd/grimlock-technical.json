@@ -1,0 +1,7 @@
+{
+  "Grimlock": {
+    "relation": "almost_identical",
+    "explanation": "A stealthy, cunning humanoid that uses camouflage and ambush tactics in rocky terrain, similar to a Grimlock."
+  },
+  "monster_key": "grimlock-technical"
+}

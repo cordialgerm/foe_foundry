@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Trollkin Raider shares the humanoid troll kinship and regeneration ability, making it a close cousin to the Troll."
+  },
+  "monster_key": "trollkin-raider"
+}

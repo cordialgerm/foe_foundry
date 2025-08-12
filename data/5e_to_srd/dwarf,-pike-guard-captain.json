@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A disciplined and tactical humanoid warrior with combat experience and commanding presence."
+  },
+  "Guard": {
+    "relation": "close_cousins",
+    "explanation": "Functions as a guard captain, leading and supporting allied troops in a defensive role."
+  },
+  "monster_key": "dwarf,-pike-guard-captain"
+}

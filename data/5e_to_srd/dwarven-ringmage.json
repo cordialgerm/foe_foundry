@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Dwarven Ringmage is a spellcaster with battlefield control similar to a Mage but with dwarven traits and resilience."
+  },
+  "Dwarf": {
+    "relation": "close_cousins",
+    "explanation": "It is a dwarf humanoid with spellcasting abilities, linking it closely to the Dwarf race."
+  },
+  "monster_key": "dwarven-ringmage"
+}

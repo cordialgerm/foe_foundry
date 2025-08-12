@@ -1,0 +1,11 @@
+{
+  "Giant Elk": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful beast with high mobility and strength similar to the Diomedian Horse."
+  },
+  "Giant Boar": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, strong beast known for aggressive combat and knocking foes prone, akin to the Diomedian Horse's pounce ability."
+  },
+  "monster_key": "diomedian-horse"
+}

@@ -1,0 +1,15 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead spellcasters that use stealth and dark magic, with sunlight sensitivity and incorporeal traits."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares undead nature and association with ghouls, with a melee bite attack and necrotic damage."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "Functions as a 9th-level wizard spellcaster with a diverse spell list and arcane abilities."
+  },
+  "monster_key": "darakhul-shadowmancer"
+}

@@ -1,0 +1,7 @@
+{
+  "Ghoul": {
+    "relation": "almost_identical",
+    "explanation": "The Ghul is a Medium undead with paralyzing claws and a sinister presence, closely matching the Ghoul's core traits."
+  },
+  "monster_key": "ghul"
+}

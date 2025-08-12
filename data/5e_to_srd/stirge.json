@@ -1,0 +1,7 @@
+{
+  "Stirge": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Stirge exactly as a tiny, bat-like bloodsucking creature with a proboscis and swarming behavior."
+  },
+  "monster_key": "stirge"
+}

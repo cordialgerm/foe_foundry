@@ -1,0 +1,15 @@
+{
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are evil, undead fiends with a menacing presence and necrotic abilities."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Shares undead horror traits and the ability to instill fear and manipulate foes."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are haunting undead creatures associated with fear and eerie environments."
+  },
+  "monster_key": "hantu-penanggal"
+}

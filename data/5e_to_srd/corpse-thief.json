@@ -1,0 +1,7 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "The Corpse Thief is a stealthy humanoid skilled in information gathering and theft, similar to a Spy."
+  },
+  "monster_key": "corpse-thief"
+}

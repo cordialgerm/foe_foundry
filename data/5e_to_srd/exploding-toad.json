@@ -1,0 +1,7 @@
+{
+  "Giant Frog": {
+    "relation": "close_cousins",
+    "explanation": "The Exploding Toad is a small amphibious creature similar to a Giant Frog in habitat and form."
+  },
+  "monster_key": "exploding-toad"
+}

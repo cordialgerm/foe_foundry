@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile humanoid skilled in stealth, perception, and survival, similar to the Harefolk's role and abilities."
+  },
+  "Wererat (Lycanthrope)": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a small humanoid with animal traits and an ability to detect shapechangers."
+  },
+  "monster_key": "harefolk"
+}

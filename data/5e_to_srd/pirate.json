@@ -1,0 +1,7 @@
+{
+  "Bandit": {
+    "relation": "almost_identical",
+    "explanation": "A medium humanoid combatant wielding a scimitar and light crossbow with moderate combat abilities."
+  },
+  "monster_key": "pirate"
+}

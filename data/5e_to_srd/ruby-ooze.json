@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are corrosive oozes that can ambush and degrade weapons, with the Ruby Ooze having a unique gem-like camouflage and petrification ability."
+  },
+  "monster_key": "ruby-ooze"
+}

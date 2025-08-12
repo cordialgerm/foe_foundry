@@ -1,0 +1,7 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are fungal plant creatures with poison abilities and slow movement."
+  },
+  "monster_key": "mycolid-commoner"
+}

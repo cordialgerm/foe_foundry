@@ -1,0 +1,15 @@
+{
+  "Black Pudding": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are ooze creatures with amorphous bodies, but Treacle is tiny and focuses on stealth and blood draining rather than brute acid damage."
+  },
+  "Gelatinous Cube": {
+    "relation": "conceptually_similar",
+    "explanation": "Treacle shares the gelatinous, amorphous nature of the Gelatinous Cube but is much smaller and uses deception and blood drain instead of engulfing."
+  },
+  "Mimic": {
+    "relation": "mechanically_similar",
+    "explanation": "Treacle's ability to mimic objects and creatures for ambush aligns with the Mimic's shapechanging and deceptive tactics."
+  },
+  "monster_key": "treacle"
+}

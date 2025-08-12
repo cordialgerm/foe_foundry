@@ -1,0 +1,11 @@
+{
+  "Merfolk": {
+    "relation": "close_cousins",
+    "explanation": "A versatile aquatic humanoid capable of swimming and fighting in melee and ranged combat."
+  },
+  "Harpy": {
+    "relation": "conceptually_similar",
+    "explanation": "A flying humanoid hunter with agility and mobility."
+  },
+  "monster_key": "gullkin-hunter"
+}

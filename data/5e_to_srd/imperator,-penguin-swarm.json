@@ -1,0 +1,11 @@
+{
+  "Swarm of Ravens": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small creatures that overwhelm foes with numbers and can occupy the same space."
+  },
+  "Giant Penguin": {
+    "relation": "conceptually_similar",
+    "explanation": "A huge swarm of penguins conceptually resembles a large penguin-like beast adapted to cold environments."
+  },
+  "monster_key": "imperator,-penguin-swarm"
+}

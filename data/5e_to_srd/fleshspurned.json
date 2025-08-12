@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "A spectral undead with necrotic damage and ghostly presence that flies and causes fear and disruption."
+  },
+  "Ghast": {
+    "relation": "mechanically_similar",
+    "explanation": "An undead that uses debilitating effects and has a focus on weakening enemies, similar to causing confusion and ghostly effects."
+  },
+  "monster_key": "fleshspurned"
+}

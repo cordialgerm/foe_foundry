@@ -1,0 +1,11 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Hinn is an earth-based elemental with earth glide and burrowing abilities similar to an Earth Elemental."
+  },
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Hinn's ability to transform into a cloud of dust conceptually resembles the Air Elemental's gaseous form."
+  },
+  "monster_key": "hinn"
+}

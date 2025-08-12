@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Glass Golem is a small construct guardian similar to the Clay Golem but made of glass with unique vulnerabilities and resistances."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are magical constructs designed as guardians, with the Glass Golem being a smaller, glass-based variant."
+  },
+  "monster_key": "glass-golem"
+}

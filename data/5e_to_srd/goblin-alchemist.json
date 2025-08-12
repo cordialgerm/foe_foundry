@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "close_cousins",
+    "explanation": "The Goblin Alchemist is a goblin variant with alchemical fire and acid attacks, sharing the goblin's size, stealth, and agility."
+  },
+  "monster_key": "goblin-alchemist"
+}

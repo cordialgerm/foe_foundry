@@ -1,0 +1,15 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amphibious predators with powerful melee attacks and aquatic habitats."
+  },
+  "Giant Constrictor Snake": {
+    "relation": "close_cousins",
+    "explanation": "Both are large serpentine monstrosities with strong physical presence and ambush tactics."
+  },
+  "Black Dragon Wyrmling": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the serpentine, poisonous nature and aquatic swampy environment."
+  },
+  "monster_key": "horned-serpent"
+}

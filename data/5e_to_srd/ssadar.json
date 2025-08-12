@@ -1,0 +1,11 @@
+{
+  "Fire Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are humanoid creatures with a strong connection to fire and melee combat."
+  },
+  "Magma Mephit": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares fire-based ranged attacks and immunity to fire damage."
+  },
+  "monster_key": "ssadar"
+}

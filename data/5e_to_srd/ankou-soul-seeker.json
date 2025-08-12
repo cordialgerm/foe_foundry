@@ -1,0 +1,15 @@
+{
+  "Adult Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large celestial dragon with cold and radiant thematic elements and a majestic presence."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares ethereal and soul-related qualities, including invisibility and connection to the boundary between life and death."
+  },
+  "Wight": {
+    "relation": "mechanically_similar",
+    "explanation": "Both have abilities related to controlling or affecting undead and dealing radiant damage to them."
+  },
+  "monster_key": "ankou-soul-seeker"
+}

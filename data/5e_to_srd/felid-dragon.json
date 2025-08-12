@@ -1,0 +1,11 @@
+{
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the poison theme, flying and ambush tactics, and uses breath weapon similar to a bile attack."
+  },
+  "Adult Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large poison-using dragon with stealth and ambush capabilities, similar in role and environment."
+  },
+  "monster_key": "felid-dragon"
+}

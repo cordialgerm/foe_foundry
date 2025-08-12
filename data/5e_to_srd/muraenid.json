@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic monstrosities with powerful tentacles and grappling abilities."
+  },
+  "Merrow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aquatic predators with manipulative and controlling traits in underwater environments."
+  },
+  "monster_key": "muraenid"
+}

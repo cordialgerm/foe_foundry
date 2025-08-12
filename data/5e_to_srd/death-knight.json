@@ -1,0 +1,7 @@
+{
+  "Death Knight": {
+    "relation": "almost_identical",
+    "explanation": "A towering undead warrior clad in plate armor wielding a greatsword and necrotic powers, matching the Death Knight exactly."
+  },
+  "monster_key": "death-knight"
+}

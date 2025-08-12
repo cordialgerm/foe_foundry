@@ -1,0 +1,11 @@
+{
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons associated with cold environments and have icy scales, though the homebrew dragon uses fire breath instead of cold."
+  },
+  "Young Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The homebrew dragon's fire-based breath weapon and chaotic nature align it closely with the Young Red Dragon's fiery breath and temperament."
+  },
+  "monster_key": "young-boreal-dragon"
+}

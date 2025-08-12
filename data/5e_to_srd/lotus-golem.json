@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Lotus Golem is a large construct with resilience and spell absorption similar to a Clay Golem."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Lotus Golem's water-related abilities and movement evoke similarities to a Water Elemental."
+  },
+  "monster_key": "lotus-golem"
+}

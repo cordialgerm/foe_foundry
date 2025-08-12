@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "close_cousins",
+    "explanation": "Both are agile, medium-sized fey creatures with teleportation-like abilities and high mobility."
+  },
+  "Phase Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ability to shift between planes and uses multiple attacks including grappling with claws and talons."
+  },
+  "monster_key": "sasori-fukurowashi"
+}

@@ -1,0 +1,11 @@
+{
+  "Flesh Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are resilient construct golems with immunity to certain damage types and a berserk-like state."
+  },
+  "Bone Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a bone-themed appearance and necrotic association, though mechanically different."
+  },
+  "monster_key": "bone-golem"
+}

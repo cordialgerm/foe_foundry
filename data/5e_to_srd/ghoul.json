@@ -1,0 +1,7 @@
+{
+  "Ghoul": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Ghoul's undead nature, paralyzing claw attack, ravenous hunger, and ambusher role closely."
+  },
+  "monster_key": "ghoul"
+}

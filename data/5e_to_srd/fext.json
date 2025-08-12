@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Fext is a medium undead with magical weapon attacks and fear-inducing abilities similar to a Wight."
+  },
+  "Specter": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead with unsettling presences and psychic or fear-based effects, though the Fext has more magical weapon focus."
+  },
+  "monster_key": "fext"
+}

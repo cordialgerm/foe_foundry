@@ -1,0 +1,11 @@
+{
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, mobile predators with poison abilities and climbing movement."
+  },
+  "Giant Wolf Spider": {
+    "relation": "close_cousins",
+    "explanation": "Shares poison attacks, mobility, and the ability to knock opponents prone with pounce."
+  },
+  "monster_key": "catscratch"
+}

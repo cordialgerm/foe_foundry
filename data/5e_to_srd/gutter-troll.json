@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "almost_identical",
+    "explanation": "A Medium-sized troll with regeneration and poison abilities, similar to the standard Troll but with added toxic and amphibious traits."
+  },
+  "monster_key": "gutter-troll"
+}

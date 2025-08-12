@@ -1,0 +1,11 @@
+{
+  "Brown Bear": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful bear with strong melee attacks and natural predator traits similar to a Brown Bear."
+  },
+  "Polar Bear": {
+    "relation": "close_cousins",
+    "explanation": "Adapted to cold environments with cold resistance and camouflage in snowy terrain, similar to a Polar Bear."
+  },
+  "monster_key": "grolar-bear-alpha"
+}

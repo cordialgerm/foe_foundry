@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as magical guardians with resilience and immunity to certain effects."
+  },
+  "Flying Sword": {
+    "relation": "conceptually_similar",
+    "explanation": "A small flying construct with mobility and combat role, similar to the Stained-Glass Moth's flight and skirmishing."
+  },
+  "monster_key": "stained-glass-moth"
+}

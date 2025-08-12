@@ -1,0 +1,7 @@
+{
+  "Warhorse": {
+    "relation": "almost_identical",
+    "explanation": "A large, muscular, trained mount with a trampling charge and bludgeoning hooves attack, matching the Warhorse exactly."
+  },
+  "monster_key": "warhorse"
+}

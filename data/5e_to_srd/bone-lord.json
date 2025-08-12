@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Bone Lord shares the undead necrotic theme and leadership over undead minions, akin to a Wight but more powerful and larger."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "The Bone Lord is composed of skeletal remains and commands skeletons, linking it closely to the Skeleton creature type."
+  },
+  "monster_key": "bone-lord"
+}

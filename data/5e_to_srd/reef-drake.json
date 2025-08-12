@@ -1,0 +1,11 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A massive, dark-scaled dragon dwelling in swampy or desolate environments, similar in size and predatory nature."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "A large sea-based dragon-like creature with a tough shell and aquatic habitat, sharing the coastal and underwater theme."
+  },
+  "monster_key": "reef-drake"
+}

@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "Both are agile humanoid ambushers skilled in stealth, perception, and ranged combat."
+  },
+  "Elf": {
+    "relation": "close_cousins",
+    "explanation": "The Wood Elf Sharpshooter shares the elf race and typical elven traits like agility and keen senses."
+  },
+  "monster_key": "wood-elf-sharpshooter"
+}

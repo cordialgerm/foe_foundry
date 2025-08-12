@@ -1,0 +1,15 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Shadow Antipaladin is a skilled humanoid warrior similar to a Veteran but with necrotic and shadowy traits."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a shadowy, menacing nature and necrotic damage affinity with the Shadow creature."
+  },
+  "Thug": {
+    "relation": "mechanically_similar",
+    "explanation": "Functions as a skirmisher with melee and ranged attacks, similar to a Thug's combat style."
+  },
+  "monster_key": "shadow-antipaladin"
+}

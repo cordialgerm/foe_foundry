@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "almost_identical",
+    "explanation": "The Elvish Veteran Archer closely matches the Veteran in role, combat style, and challenge rating, with added elvish traits and archery focus."
+  },
+  "monster_key": "elvish-veteran-archer"
+}

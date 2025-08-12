@@ -1,0 +1,7 @@
+{
+  "Goblin": {
+    "relation": "almost_identical",
+    "explanation": "The Goblin Skulker is a stealthy, small goblin variant with similar weapons and abilities like Nimble Escape."
+  },
+  "monster_key": "goblin-skulker"
+}

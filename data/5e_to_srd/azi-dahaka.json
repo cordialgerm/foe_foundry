@@ -1,0 +1,11 @@
+{
+  "Adult Blue Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Azi Dahaka is a large, chaotic evil dragon with storm-related breath and magical abilities similar to an Adult Blue Dragon."
+  },
+  "Ancient Blue Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Azi Dahaka's three-headed form and powerful storm breath resemble the thematic concept of an Ancient Blue Dragon's lightning and storm powers."
+  },
+  "monster_key": "azi-dahaka"
+}

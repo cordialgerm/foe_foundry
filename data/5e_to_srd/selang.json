@@ -1,0 +1,11 @@
+{
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures that use mystical sounds to influence and harm enemies."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Selang is a fey creature from enchanted forests, similar in nature to Dryads."
+  },
+  "monster_key": "selang"
+}

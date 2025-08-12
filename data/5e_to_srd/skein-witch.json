@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful medium celestial beings with strong magical abilities and high wisdom and charisma."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Skein Witch shares the celestial and strategic magical nature of the Solar, though with a unique fate manipulation theme."
+  },
+  "monster_key": "skein-witch"
+}

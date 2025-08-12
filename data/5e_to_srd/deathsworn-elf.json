@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "The Deathsworn Elf shares the role of a mobile, stealthy skirmisher skilled in ranged combat like the Scout."
+  },
+  "Elf": {
+    "relation": "conceptually_similar",
+    "explanation": "The Deathsworn Elf is an elf humanoid with stealth and archery traits similar to typical elves."
+  },
+  "monster_key": "deathsworn-elf"
+}

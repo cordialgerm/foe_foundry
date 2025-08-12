@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs designed to guard and fight, with the Bolt-Thrower being a ranged turret variant of the Animated Armor concept."
+  },
+  "monster_key": "bolt-thrower"
+}

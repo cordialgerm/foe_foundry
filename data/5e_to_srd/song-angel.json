@@ -1,0 +1,15 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are majestic celestial creatures with powerful abilities and a strong presence."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Song Angel is a large, powerful celestial with radiant abilities and a supportive role, similar to a Planetar."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Song Angel shares the celestial, radiant, and martial aspects of a Solar but is less powerful and more focused on support."
+  },
+  "monster_key": "song-angel"
+}

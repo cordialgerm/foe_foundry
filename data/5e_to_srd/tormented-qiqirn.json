@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "A large chaotic evil fiend with resilience and powerful attacks, sharing the fiendish nature and combat role."
+  },
+  "Ghast": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares necrotic damage and debilitating effects with its attacks, similar to the Tormented Qiqirn's necrotic and psychic damage abilities."
+  },
+  "monster_key": "tormented-qiqirn"
+}

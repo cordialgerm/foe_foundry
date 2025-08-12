@@ -1,0 +1,7 @@
+{
+  "Steam Mephit": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Steam Mephit matches the SRD Steam Mephit in size, elemental nature, abilities, and thematic description."
+  },
+  "monster_key": "steam-mephit"
+}

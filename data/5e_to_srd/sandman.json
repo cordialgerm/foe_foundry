@@ -1,0 +1,15 @@
+{
+  "Planetar": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful celestial beings with a majestic presence and strong magical abilities."
+  },
+  "Nightmare": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of nightmares and an ethereal, dream-related nature."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are ethereal, elusive creatures associated with magical and illusory effects."
+  },
+  "monster_key": "sandman"
+}

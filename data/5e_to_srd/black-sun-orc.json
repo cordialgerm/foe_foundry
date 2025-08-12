@@ -1,0 +1,7 @@
+{
+  "Orc": {
+    "relation": "almost_identical",
+    "explanation": "The Black Sun Orc is a variant of the standard Orc with similar combat style and traits, enhanced by stealth and darkvision."
+  },
+  "monster_key": "black-sun-orc"
+}

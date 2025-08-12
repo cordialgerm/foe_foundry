@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, flying undead with necromantic powers and a malicious nature."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares undead traits and a curse-like punishment theme, though mechanically different."
+  },
+  "monster_key": "unhatched"
+}

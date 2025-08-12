@@ -1,0 +1,15 @@
+{
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead creatures embodying fear and death with ethereal abilities."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "The Lich Hound shares undead traits and a predatory nature with Ghouls."
+  },
+  "Ghost": {
+    "relation": "mechanically_similar",
+    "explanation": "Both can shift between the Material and Ethereal Planes and instill fear."
+  },
+  "monster_key": "lich-hound"
+}

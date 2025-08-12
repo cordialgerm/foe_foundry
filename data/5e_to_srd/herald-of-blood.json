@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish creatures with a menacing presence and combat prowess, though the Herald of Blood focuses on necrotic damage and battlefield control."
+  },
+  "Bone Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Herald of Blood shares the fiend type, imposing size, and melee combat role with the Bone Devil, including abilities to restrain foes."
+  },
+  "Balor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful, huge fiends with a commanding presence and devastating melee attacks, though the Herald of Blood emphasizes necrotic damage."
+  },
+  "monster_key": "herald-of-blood"
+}

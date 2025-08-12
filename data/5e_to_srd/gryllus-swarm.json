@@ -1,0 +1,11 @@
+{
+  "Swarm of Insects": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gryllus Swarm is a large swarm of small constructs, similar in concept to a swarm of insects."
+  },
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "As a magical construct with mechanical traits, it shares characteristics with Animated Armor."
+  },
+  "monster_key": "gryllus-swarm"
+}

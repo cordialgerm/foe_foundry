@@ -1,0 +1,7 @@
+{
+  "Orc": {
+    "relation": "close_cousins",
+    "explanation": "Gray Orcs share the orc humanoid type and predatory nature but have unique abilities like magic absorption and enhanced stealth."
+  },
+  "monster_key": "gray-orc"
+}

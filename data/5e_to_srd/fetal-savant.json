@@ -1,0 +1,11 @@
+{
+  "Doppelganger": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are manipulative, chaotic humanoids with abilities related to controlling or swapping identities."
+  },
+  "Ghost": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares psychic and fear-inducing abilities along with an unsettling presence."
+  },
+  "monster_key": "fetal-savant"
+}

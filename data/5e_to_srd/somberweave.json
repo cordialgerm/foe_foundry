@@ -1,0 +1,11 @@
+{
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy, stealthy ambush predators that dwell in dark environments and use concealment to trap prey."
+  },
+  "Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "The Somberweave uses webs to ensnare and restrain prey, similar to the Spider's web abilities."
+  },
+  "monster_key": "somberweave"
+}

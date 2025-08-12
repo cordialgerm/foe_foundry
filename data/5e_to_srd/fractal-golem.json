@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "A large, resilient construct with immunity to many conditions and a slam attack, similar to a Clay Golem."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs serving as guardians with no mental capacity, though the Fractal Golem has unique replication abilities."
+  },
+  "monster_key": "fractal-golem"
+}

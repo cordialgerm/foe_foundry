@@ -1,0 +1,7 @@
+{
+  "Balor": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Balor closely matches the SRD Balor in size, abilities, weapons, and demonic nature."
+  },
+  "monster_key": "balor"
+}

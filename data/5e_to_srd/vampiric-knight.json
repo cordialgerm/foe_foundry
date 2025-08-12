@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "A powerful undead warrior with classic vampire traits including regeneration and vulnerabilities to radiant damage."
+  },
+  "Veteran": {
+    "relation": "mechanically_similar",
+    "explanation": "A skilled martial combatant with plate armor and shield, similar to a knight's combat style."
+  },
+  "monster_key": "vampiric-knight"
+}

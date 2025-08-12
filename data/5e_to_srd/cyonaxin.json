@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful celestial protectors with support roles and radiant abilities."
+  },
+  "Couatl": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are agile, medium-sized celestials with support capabilities and protective natures."
+  },
+  "monster_key": "cyonaxin"
+}

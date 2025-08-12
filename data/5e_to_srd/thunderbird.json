@@ -1,0 +1,11 @@
+{
+  "Giant Eagle": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful flying predator with keen sight and aerial agility similar to the Thunderbird."
+  },
+  "Storm Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Associated with storms and lightning, sharing the elemental and thematic connection to thunder and lightning."
+  },
+  "monster_key": "thunderbird"
+}

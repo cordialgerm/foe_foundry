@@ -1,0 +1,7 @@
+{
+  "Guard": {
+    "relation": "almost_identical",
+    "explanation": "A small humanoid defender equipped with a spear and solid armor, matching the Guard's role and capabilities."
+  },
+  "monster_key": "stout-halfling-guard"
+}

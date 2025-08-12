@@ -1,0 +1,11 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large celestial creatures with lion-like bodies and wings, serving as powerful guardians with magical abilities."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Lamassu shares the celestial protector role, spellcasting, and high durability with the Planetar."
+  },
+  "monster_key": "lamassu"
+}

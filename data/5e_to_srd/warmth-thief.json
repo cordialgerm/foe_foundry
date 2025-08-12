@@ -1,0 +1,15 @@
+{
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are tiny, stealthy fey creatures associated with cold and life-draining abilities."
+  },
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "Shares undead traits and life-draining capabilities similar to the Warmth Thief."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Both drain life energy and have stealthy, incorporeal qualities."
+  },
+  "monster_key": "warmth-thief"
+}

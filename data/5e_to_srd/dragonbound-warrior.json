@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid warrior skilled in combat, similar to the Dragonbound Warrior's role as a melee and ranged combatant."
+  },
+  "Half-Dragon Template": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the draconic influence and elemental damage theme with the Dragonbound Warrior."
+  },
+  "monster_key": "dragonbound-warrior"
+}

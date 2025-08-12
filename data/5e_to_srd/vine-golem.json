@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as guardians with durable forms."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures that manipulate their environment and blend into natural surroundings."
+  },
+  "monster_key": "vine-golem"
+}

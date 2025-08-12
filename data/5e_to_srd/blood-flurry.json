@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with unsettling, amorphous forms and dangerous ongoing effects on targets."
+  },
+  "Ice Mephit": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares cold damage and flying speed, representing a small icy elemental threat."
+  },
+  "monster_key": "blood-flurry"
+}

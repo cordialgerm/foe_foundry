@@ -1,0 +1,11 @@
+{
+  "Ankheg": {
+    "relation": "close_cousins",
+    "explanation": "Both are burrowing beasts with acid spit attacks and tough exteriors suited for underground environments."
+  },
+  "Giant Crab": {
+    "relation": "conceptually_similar",
+    "explanation": "The Rock Roach's tough, rocky exterior and biting attacks resemble a large crustacean's armored body and pincers."
+  },
+  "monster_key": "rock-roach"
+}

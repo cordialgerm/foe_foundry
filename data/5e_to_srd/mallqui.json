@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium undead with necrotic abilities and resistances, sharing a ghostly, grim presence."
+  },
+  "Mummy": {
+    "relation": "conceptually_similar",
+    "explanation": "The Mallqui's necrotic aura and moisture draining causing exhaustion conceptually align with the Mummy's curse and necrotic traits."
+  },
+  "monster_key": "mallqui"
+}

@@ -1,0 +1,15 @@
+{
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "The Qwyllion shares the undead and poison theme with the Ghast, including a nauseating stench and control over undead."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy, manipulative creatures that lurk in dark areas and use stealth and charm-like abilities."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "The Qwyllion's undead nature, poison, and melee claw attacks conceptually align with the Ghoul's predatory undead traits."
+  },
+  "monster_key": "qwyllion"
+}

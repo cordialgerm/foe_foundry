@@ -1,0 +1,15 @@
+{
+  "Hydra": {
+    "relation": "conceptually_similar",
+    "explanation": "A large serpentine monstrosity with multiple heads and a strong melee presence."
+  },
+  "Giant Snake": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares serpentine features and poison-related abilities."
+  },
+  "Gnoll": {
+    "relation": "mechanically_similar",
+    "explanation": "Chaotic evil humanoid with strong melee attacks and pack tactics, similar to summoning snakes."
+  },
+  "monster_key": "ophidiotaur"
+}

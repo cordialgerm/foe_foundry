@@ -1,0 +1,7 @@
+{
+  "Harpy": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the SRD Harpy closely in appearance, abilities, and behavior, including the Luring Song and flying ambush tactics."
+  },
+  "monster_key": "harpy"
+}

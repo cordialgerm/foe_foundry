@@ -1,0 +1,11 @@
+{
+  "Giant Bat": {
+    "relation": "conceptually_similar",
+    "explanation": "A flying ambush predator with a natural ability to operate in obscured environments."
+  },
+  "Black Pudding": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to create obscuring effects that hinder vision and control the battlefield."
+  },
+  "monster_key": "brimstone-locusthound"
+}

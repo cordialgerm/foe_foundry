@@ -1,0 +1,11 @@
+{
+  "Young Brass Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Young Mithral Dragon is a metallic dragon with a shard breath weapon and charm immunity, similar to the Young Brass Dragon's metallic nature and breath attack."
+  },
+  "Young Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Young Mithral Dragon shares traits with the Young Silver Dragon, such as metallic scales, charm immunity, and a breath weapon that affects the battlefield."
+  },
+  "monster_key": "young-mithral-dragon"
+}

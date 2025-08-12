@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "A mystical humanoid spellcaster with fear and radiant damage abilities similar to a Cult Fanatic."
+  },
+  "Harpy": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a humanoid with fear-inducing cries and mystical, manipulative nature."
+  },
+  "monster_key": "ravenfolk-doom-croaker"
+}

@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium-sized fungi with poisonous attacks and stealthy ambush tactics."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures that blend into their environment and use physical and magical attacks."
+  },
+  "monster_key": "void-fungus"
+}

@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant creatures with physical attacks and battlefield control through animated plant parts."
+  },
+  "monster_key": "arborcyte"
+}

@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Deathspeaker is a manipulative undead with necrotic attacks and a curse ability, similar in theme and role to a Wight."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead with melee attacks and a predatory nature, though the Deathspeaker is more intelligent and manipulative."
+  },
+  "monster_key": "deathspeaker"
+}

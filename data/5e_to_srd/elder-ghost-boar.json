@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "The Elder Ghost Boar shares the incorporeal and spectral nature of a Ghost, with similar ghostly abilities."
+  },
+  "Giant Boar": {
+    "relation": "conceptually_similar",
+    "explanation": "It is a huge, tusked boar-like creature, similar in form and role to a Giant Boar but with ghostly traits."
+  },
+  "monster_key": "elder-ghost-boar"
+}

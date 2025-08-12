@@ -1,0 +1,11 @@
+{
+  "Duergar": {
+    "relation": "close_cousins",
+    "explanation": "Derro and Duergar are both small, underground-dwelling humanoids with non-good alignments and combat roles."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "The Derro Guard's role as a stealthy skirmisher with ranged and melee attacks resembles the Scout's combat style."
+  },
+  "monster_key": "derro-guard"
+}

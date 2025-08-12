@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid skirmisher skilled in stealth and ranged attacks, similar to the Tosculi Elite Bow Raider's role and abilities."
+  },
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the flying and high mobility traits, representing a swift and elusive combatant."
+  },
+  "monster_key": "tosculi-elite-bow-raider"
+}

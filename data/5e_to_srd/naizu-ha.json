@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are small fey creatures associated with natural environments and stealth."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the ambush predator role and natural camouflage in its environment."
+  },
+  "Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "Both have climbing abilities and use multiple attacks with natural weapons."
+  },
+  "monster_key": "naizu-ha"
+}

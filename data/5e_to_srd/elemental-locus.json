@@ -1,0 +1,19 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are gargantuan elemental guardians with immense strength and territorial nature."
+  },
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Shares the elemental nature and powerful physical presence as a large elemental guardian."
+  },
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Similar elemental being with a large, powerful form and territorial instincts."
+  },
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Another elemental guardian with a large form and connection to natural forces."
+  },
+  "monster_key": "elemental-locus"
+}

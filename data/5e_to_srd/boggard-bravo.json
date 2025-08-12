@@ -1,0 +1,7 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "The Boggard Bravo is an amphibious, humanoid reptilian skirmisher similar to Lizardfolk in habitat and combat style."
+  },
+  "monster_key": "boggard-bravo"
+}

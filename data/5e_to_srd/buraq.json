@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful celestial beings with radiant abilities and protective roles."
+  },
+  "Pegasus": {
+    "relation": "conceptually_similar",
+    "explanation": "The Buraq is a majestic, radiant flying steed similar in concept to a Pegasus."
+  },
+  "monster_key": "buraq"
+}

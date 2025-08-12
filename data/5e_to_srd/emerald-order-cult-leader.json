@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "Both are cult leaders with divine spellcasting and a focus on commanding and supporting allies."
+  },
+  "Priest": {
+    "relation": "close_cousins",
+    "explanation": "Shares the divine magic and support role with radiant damage and spellcasting abilities."
+  },
+  "monster_key": "emerald-order-cult-leader"
+}

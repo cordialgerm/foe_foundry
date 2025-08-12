@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the magical and manipulative nature with the Mage, though this creature is a snake with spectral hands."
+  },
+  "Snake": {
+    "relation": "close_cousins",
+    "explanation": "A small snake-like creature with similar movement capabilities and stealth."
+  },
+  "monster_key": "snake-with-a-hundred-mage-hands"
+}

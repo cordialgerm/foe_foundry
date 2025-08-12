@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead creatures with a malicious nature and melee attacks involving poison or decay."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are malevolent, ambush-oriented undead that use swampy or dark environments to their advantage."
+  },
+  "monster_key": "putrid-haunt"
+}

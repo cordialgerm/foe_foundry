@@ -1,0 +1,7 @@
+{
+  "Chuul": {
+    "relation": "almost_identical",
+    "explanation": "The Spell-warped Chuul is a close variant of the Chuul with added magical abilities and lightning attacks."
+  },
+  "monster_key": "spell-warped-chuul"
+}

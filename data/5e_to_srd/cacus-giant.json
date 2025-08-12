@@ -1,0 +1,7 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "A huge, chaotic giant associated with fire, wielding greatclubs and hurling rocks, similar to a Fire Giant."
+  },
+  "monster_key": "cacus-giant"
+}

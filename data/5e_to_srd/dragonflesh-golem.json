@@ -1,0 +1,15 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are large magical constructs with high durability and immunity to many effects."
+  },
+  "Fire Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a large, powerful creature with elemental fire abilities and strong melee attacks."
+  },
+  "Adult Black Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "The golem is made from dragon flesh and uses elemental breath attacks similar to a dragon's breath weapon."
+  },
+  "monster_key": "dragonflesh-golem"
+}

@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs animated by magical forces, with the Onyx Magistrate being a larger, more powerful variant enforcing law."
+  },
+  "monster_key": "onyx-magistrate"
+}

@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Sila is a large water-based elemental with amphibious traits and the ability to summon a water elemental ally."
+  },
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Sila's nebulous form and ability to move through spaces and fly resembles the fluid, airy nature of an Air Elemental."
+  },
+  "monster_key": "sila"
+}

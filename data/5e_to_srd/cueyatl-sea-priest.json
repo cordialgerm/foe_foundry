@@ -1,0 +1,11 @@
+{
+  "Merfolk": {
+    "relation": "close_cousins",
+    "explanation": "A small aquatic humanoid with amphibious traits and spellcasting abilities similar to Merfolk."
+  },
+  "Cult Fanatic": {
+    "relation": "conceptually_similar",
+    "explanation": "A humanoid spellcaster with a religious or priestly role, akin to a Cult Fanatic."
+  },
+  "monster_key": "cueyatl-sea-priest"
+}

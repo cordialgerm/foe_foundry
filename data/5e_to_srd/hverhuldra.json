@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are magical, water-affiliated creatures with aquatic abilities and control over water."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures connected to nature and possess magical abilities."
+  },
+  "monster_key": "hverhuldra"
+}

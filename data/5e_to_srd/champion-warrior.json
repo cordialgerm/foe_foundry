@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "almost_identical",
+    "explanation": "A skilled humanoid warrior with strong melee capabilities and multiattack using a greataxe."
+  },
+  "monster_key": "champion-warrior"
+}

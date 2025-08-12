@@ -1,0 +1,11 @@
+{
+  "Pseudodragon": {
+    "relation": "close_cousins",
+    "explanation": "A tiny dragon-like creature with supportive and nimble traits similar to the Light Drake."
+  },
+  "Young Gold Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A dragon associated with radiant and good-aligned themes, sharing the Light Drake's essence of light and goodness."
+  },
+  "monster_key": "light-drake"
+}

@@ -1,0 +1,7 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fey creatures connected to nature, with the Naiad focused on aquatic environments."
+  },
+  "monster_key": "naiad"
+}

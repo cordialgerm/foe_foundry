@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Hinderling is a small, mischievous fey with agility and trickster traits similar to a Sprite."
+  },
+  "Pixie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Hinderling shares the concept of a small, chaotic fey that causes mischief and uses evasive tactics like a Pixie."
+  },
+  "monster_key": "hinderling"
+}

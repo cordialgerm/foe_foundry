@@ -1,0 +1,11 @@
+{
+  "Imp": {
+    "relation": "almost_identical",
+    "explanation": "A tiny fiend with similar abilities, including flight, spellcasting, and devil's sight, but with added fire-themed traits."
+  },
+  "Magma Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small fiendish creatures associated with fire and magic, sharing elemental fire traits and spellcasting."
+  },
+  "monster_key": "fire-imp"
+}

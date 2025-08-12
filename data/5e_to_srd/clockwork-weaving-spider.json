@@ -1,0 +1,11 @@
+{
+  "Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "A tiny mechanical spider resembling a spider in form and agility."
+  },
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "A construct with mechanical nature and immunity to many conditions, similar to animated constructs."
+  },
+  "monster_key": "clockwork-weaving-spider"
+}

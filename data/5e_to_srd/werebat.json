@@ -1,0 +1,11 @@
+{
+  "Werewolf (Lycanthrope)": {
+    "relation": "close_cousins",
+    "explanation": "The Werebat shares lycanthropic traits and curse mechanics with the Werewolf (Lycanthrope), both being humanoid lycanthropes."
+  },
+  "Bat": {
+    "relation": "conceptually_similar",
+    "explanation": "The Werebat has bat-like features and flying ability similar to a Bat."
+  },
+  "monster_key": "werebat"
+}

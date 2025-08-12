@@ -1,0 +1,7 @@
+{
+  "Guard": {
+    "relation": "conceptually_similar",
+    "explanation": "A large humanoid protective unit armed with spears, similar in role to a Guard."
+  },
+  "monster_key": "guard-squad"
+}

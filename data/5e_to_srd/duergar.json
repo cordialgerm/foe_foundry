@@ -1,0 +1,7 @@
+{
+  "Duergar": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Duergar exactly in appearance, abilities, and behavior."
+  },
+  "monster_key": "duergar"
+}

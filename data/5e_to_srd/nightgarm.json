@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "close_cousins",
+    "explanation": "A large, evil monstrosity that summons wolves and uses powerful bite and claw attacks."
+  },
+  "Worg": {
+    "relation": "conceptually_similar",
+    "explanation": "A dark, wolf-like creature with telepathic communication and summoning abilities."
+  },
+  "monster_key": "nightgarm"
+}

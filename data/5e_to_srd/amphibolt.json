@@ -1,0 +1,16 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "The Amphibolt is a large amphibious monstrosity with tentacle-like attacks and ambush tactics similar to a Giant Octopus."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "mechanically_similar",
+    "explanation": "The Amphibolt's lightning damage and ambush style resemble the venomous and striking nature of a Swarm of Poisonous Snakes."
+  },
+  "Electric Eel (not in SRD but conceptually)": {},
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Amphibolt's amphibious nature and elemental lightning damage conceptually align with the Water Elemental's aquatic form and elemental essence."
+  },
+  "monster_key": "amphibolt"
+}

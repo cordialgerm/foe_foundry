@@ -1,0 +1,11 @@
+{
+  "Ancient White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "An ancient, gargantuan ice-themed dragon with cold environment affinity and fear-inducing presence."
+  },
+  "Ancient Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the fire-based breath weapon and legendary dragon traits, combined with a chaotic nature."
+  },
+  "monster_key": "ancient-boreal-dragon"
+}

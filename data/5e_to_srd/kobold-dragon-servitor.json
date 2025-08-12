@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, nimble humanoid devoted to dragons with Pack Tactics and Sunlight Sensitivity, matching the Kobold closely."
+  },
+  "monster_key": "kobold-dragon-servitor"
+}

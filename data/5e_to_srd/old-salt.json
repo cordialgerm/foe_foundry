@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "The Old Salt is an undead sailor with necrotic abilities and a revival mechanic, similar to a Ghost's haunting and incorporeal nature."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Old Salt shares undead traits, necrotic damage, and a relentless nature akin to a Wight."
+  },
+  "monster_key": "old-salt"
+}

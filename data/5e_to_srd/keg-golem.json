@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium-sized golems with immunity to poison and psychic damage and resistance to nonmagical physical damage."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs designed for combat with a solid physical presence and simple melee attacks."
+  },
+  "monster_key": "keg-golem"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs animated to fight, with the Painted Phantasm being an artistic variant."
+  },
+  "Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "The Painted Phantasm is a magical construct like golems, created by powerful magic to serve specific roles."
+  },
+  "monster_key": "painted-phantasm"
+}

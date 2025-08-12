@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures with a connection to magic and manipulation, though the Luck Leech focuses on luck and curses."
+  },
+  "Banshee": {
+    "relation": "mechanically_similar",
+    "explanation": "The Luck Leech's ability to inflict psychic damage and curses is similar to the Banshee's haunting and debilitating effects."
+  },
+  "monster_key": "luck-leech"
+}

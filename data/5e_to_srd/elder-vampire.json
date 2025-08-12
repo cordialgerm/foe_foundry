@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "The Elder Vampire is a more powerful variant of the standard Vampire with similar abilities like mist form, regeneration, charm, and raising vampire spawn."
+  },
+  "Vampire Spawn": {
+    "relation": "close_cousins",
+    "explanation": "The Elder Vampire controls and raises Vampire Spawn as minions, indicating a close relationship."
+  },
+  "monster_key": "elder-vampire"
+}

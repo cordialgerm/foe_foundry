@@ -1,0 +1,7 @@
+{
+  "Orc": {
+    "relation": "close_cousins",
+    "explanation": "The Orc Warlord is a stronger, more tactical variant of the basic Orc, leading troops and excelling in melee combat."
+  },
+  "monster_key": "orc-warlord"
+}

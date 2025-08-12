@@ -1,0 +1,15 @@
+{
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elemental creatures associated with cold and ice, featuring icy abilities and a frosty nature."
+  },
+  "Frost Giant": {
+    "relation": "conceptually_similar",
+    "explanation": "Both embody cold and ice themes with imposing presence and cold-based attacks."
+  },
+  "Air Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares elemental nature and control over environmental forces, similar to Sazakan's weather manipulation."
+  },
+  "monster_key": "sazakan"
+}

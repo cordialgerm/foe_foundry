@@ -1,0 +1,11 @@
+{
+  "Ogre Zombie": {
+    "relation": "close_cousins",
+    "explanation": "The Voidclaw Zombie shares undead traits and Undead Fortitude with zombies, but is smaller, more mobile, and has unique necrotic abilities."
+  },
+  "Zombie": {
+    "relation": "almost_identical",
+    "explanation": "The Voidclaw Zombie is a variant of the standard Zombie with similar undead nature, Undead Fortitude, and necrotic damage focus."
+  },
+  "monster_key": "voidclaw-zombie"
+}

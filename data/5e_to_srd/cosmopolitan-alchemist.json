@@ -1,0 +1,12 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "A skilled humanoid with high intelligence and knowledge-based skills similar to a Mage."
+  },
+  "Alchemist": {},
+  "Bandit": {
+    "relation": "conceptually_similar",
+    "explanation": "A humanoid using bombs and daggers for combat shares some conceptual similarity with a Bandit."
+  },
+  "monster_key": "cosmopolitan-alchemist"
+}

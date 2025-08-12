@@ -1,0 +1,7 @@
+{
+  "Stone Golem": {
+    "relation": "almost_identical",
+    "explanation": "A large, durable construct with magical resistance and powerful melee attacks that serves as a guardian."
+  },
+  "monster_key": "stone-guardian"
+}

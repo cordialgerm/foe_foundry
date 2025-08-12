@@ -1,0 +1,11 @@
+{
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cold-themed creatures with vulnerabilities to fire and abilities related to ice and cold environments."
+  },
+  "Giant Crab": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ice Urchin's spiny, large monstrosity form with piercing attacks resembles a large crustacean like the Giant Crab."
+  },
+  "monster_key": "ice-urchin"
+}

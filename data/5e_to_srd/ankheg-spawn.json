@@ -1,0 +1,7 @@
+{
+  "Ankheg": {
+    "relation": "almost_identical",
+    "explanation": "The Ankheg Spawn is a smaller, less powerful version of the Ankheg with similar burrowing, acid resistance, and tremorsense abilities."
+  },
+  "monster_key": "ankheg-spawn"
+}

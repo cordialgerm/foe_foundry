@@ -1,0 +1,11 @@
+{
+  "Vrock": {
+    "relation": "close_cousins",
+    "explanation": "Akyishigal is a large chaotic evil fiend with insect swarm abilities similar to the Vrock's fiendish nature and swarm association."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "Akyishigal's cloud of stinging insects is conceptually similar to a swarm of poisonous snakes as a hazardous swarm."
+  },
+  "monster_key": "akyishigal"
+}

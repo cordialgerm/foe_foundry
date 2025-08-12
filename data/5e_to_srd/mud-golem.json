@@ -1,0 +1,7 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Mud Golem is a construct similar to the Clay Golem, sharing traits like immunity to poison and shape-changing effects, but differs in size and specific abilities."
+  },
+  "monster_key": "mud-golem"
+}

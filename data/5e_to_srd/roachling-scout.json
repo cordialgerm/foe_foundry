@@ -1,0 +1,7 @@
+{
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "A small, agile humanoid specialized in stealth and reconnaissance, matching the Roachling Scout's role and abilities."
+  },
+  "monster_key": "roachling-scout"
+}

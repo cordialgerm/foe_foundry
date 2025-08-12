@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-like creatures with a shrub form, though the Execrable Shrub is a fiend with additional abilities."
+  },
+  "Blight": {
+    "relation": "close_cousins",
+    "explanation": "The Execrable Shrub shares the fiendish plant-like nature and malevolent traits similar to Blights."
+  },
+  "monster_key": "execrable-shrub"
+}

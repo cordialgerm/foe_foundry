@@ -1,0 +1,11 @@
+{
+  "Cultist": {
+    "relation": "almost_identical",
+    "explanation": "A humanoid cultist with stealth and poison attacks closely matches the Cultist archetype."
+  },
+  "Scorpion": {
+    "relation": "conceptually_similar",
+    "explanation": "The poison and scorpion theme conceptually aligns with the Scorpion creature."
+  },
+  "monster_key": "scorpion-cultist"
+}

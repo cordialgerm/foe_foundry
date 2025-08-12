@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead creatures that raise victims as undead and have a menacing presence."
+  },
+  "Ghast": {
+    "relation": "close_cousins",
+    "explanation": "Similar undead nature with the ability to create more undead and a chilling, menacing aura."
+  },
+  "monster_key": "glacial-corrupter"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with armored bodies serving as guardians, though the Arcane Scavenger is more powerful and magical."
+  },
+  "Iron Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Arcane Scavenger shares the construct type, high durability, and magical nature with the Iron Golem, acting as a formidable guardian."
+  },
+  "monster_key": "arcane-scavenger"
+}

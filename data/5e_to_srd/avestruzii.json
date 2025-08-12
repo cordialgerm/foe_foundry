@@ -1,0 +1,11 @@
+{
+  "Bandit Captain": {
+    "relation": "close_cousins",
+    "explanation": "Avestruzii is a medium humanoid front-line fighter with melee and ranged attacks, similar to a Bandit Captain's combat role and equipment."
+  },
+  "Bandit": {
+    "relation": "close_cousins",
+    "explanation": "Shares the humanoid fighter archetype with melee and ranged capabilities, wearing armor and wielding simple weapons."
+  },
+  "monster_key": "avestruzii"
+}

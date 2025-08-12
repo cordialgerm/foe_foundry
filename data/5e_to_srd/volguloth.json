@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fiends with aggressive combat styles and abilities to restrain or control foes."
+  },
+  "Vrock": {
+    "relation": "conceptually_similar",
+    "explanation": "A sneaky, aggressive fiend with poison and grappling tactics shares thematic elements with the Vrock's fiendish nature and combat style."
+  },
+  "monster_key": "volguloth"
+}

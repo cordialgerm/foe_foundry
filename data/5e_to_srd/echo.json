@@ -1,0 +1,11 @@
+{
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiends with unsettling presences that use disruptive, wailing abilities to impair opponents."
+  },
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Echo is a chaotic evil fiend with formidable combat skills and iron claws, similar to the Barbed Devil's fiendish nature and melee prowess."
+  },
+  "monster_key": "echo"
+}

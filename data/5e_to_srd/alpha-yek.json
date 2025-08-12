@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "The Alpha Yek is a medium chaotic evil fiend with magic resistance and combat focus, similar to the Barbed Devil's fiendish nature and durability."
+  },
+  "Glabrezu": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful fiends with strong physical attacks and magic resistance, though the Glabrezu is larger and more complex."
+  },
+  "monster_key": "alpha-yek"
+}

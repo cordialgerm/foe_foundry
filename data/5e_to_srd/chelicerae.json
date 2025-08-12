@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aberrations with poisonous attacks and tentacle-like features, known for ambush tactics."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are stealthy aberrations that can cling to ceilings and ambush prey in dark environments."
+  },
+  "monster_key": "chelicerae"
+}

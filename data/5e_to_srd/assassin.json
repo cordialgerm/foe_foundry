@@ -1,0 +1,7 @@
+{
+  "Assassin": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew assassin closely matches the SRD Assassin in stealth, poison use, and ambush tactics."
+  },
+  "monster_key": "assassin"
+}
