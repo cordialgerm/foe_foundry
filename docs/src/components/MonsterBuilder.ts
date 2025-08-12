@@ -594,8 +594,14 @@ export class MonsterBuilder extends LitElement {
     }
   }
 
-  // Show toast when powers change (mobile only)
+  // Show toast when powers change (mobile only) - but only on first use as a tutorial
   private showPowerChangedToast() {
+    // Check if user has already seen the power change tutorial
+    const hasSeenPowerTutorial = localStorage.getItem('foe-foundry-power-tutorial-seen');
+    if (hasSeenPowerTutorial === 'true') {
+      return; // Skip showing the toast if they've already seen it
+    }
+
     // Ensure only one toast at a time by dismissing any existing toast first
     this.dismissActiveToast();
 
@@ -612,12 +618,16 @@ export class MonsterBuilder extends LitElement {
     // Listen for completion (progress fills or OK click)
     const onComplete = () => {
       this.setMobileTab('statblock');
+      // Mark tutorial as seen when user interacts with it
+      localStorage.setItem('foe-foundry-power-tutorial-seen', 'true');
       toast?.remove();
       toast?.removeEventListener('toast-completed', onComplete);
       toast?.removeEventListener('toast-dismissed', onDismiss);
     };
     // Listen for dismissal (click or escape)
     const onDismiss = () => {
+      // Mark tutorial as seen even if dismissed
+      localStorage.setItem('foe-foundry-power-tutorial-seen', 'true');
       toast?.remove();
       toast?.removeEventListener('toast-completed', onComplete);
       toast?.removeEventListener('toast-dismissed', onDismiss);
