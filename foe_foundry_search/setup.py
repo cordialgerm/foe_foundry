@@ -1,6 +1,6 @@
 from .documents import load_documents, load_monster_document_metas
 from .graph import load_graph
-from .search import load_document_index
+from .search import index_documents
 
 
 def setup_indexes():
@@ -9,4 +9,4 @@ def setup_indexes():
     load_documents()
     load_monster_document_metas()
     load_graph()
-    load_document_index()
+    index_documents()
