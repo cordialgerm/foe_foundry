@@ -1001,3 +1001,83 @@ export function initializeCodexPage() {
 5. **Testing Strategy**: Unit tests for individual components, integration tests for the search flow, and E2E tests for the complete user journey.
 
 This implementation plan provides a solid foundation for the desktop monster codex interface while setting up the architecture to later extend to mobile responsiveness.
+
+---
+
+## Future Enhancements
+
+### Phase 5: Additional Filter Categories
+
+The initial implementation focuses on **Creature Type** and **Challenge Rating** filters for simplicity. The following filter categories should be added in future iterations:
+
+#### Environment Filters
+- **Forest**, **Desert**, **Arctic**, **Swamp**, **Mountain**, **Urban**, etc.
+- Requires backend support for environment tagging
+- UI: Pill-style toggles similar to Creature Type
+
+#### Role Filters  
+- **Artillery**, **Brute**, **Controller**, **Lurker**, **Skirmisher**, **Soldier**, etc.
+- Based on monster tactical roles in combat
+- UI: Pill-style toggles in dedicated section
+
+#### Family Filters
+- **Dragon**, **Giant**, **Undead**, **Fey**, etc.
+- Groups related monsters by thematic families
+- UI: Could be combined with grouping functionality
+
+#### Implementation Notes for Future Filters:
+1. **API Changes**: Extend `MonsterSearchRequest` and `SearchFacets` interfaces
+2. **Backend Support**: Ensure monster data includes environment, role, and family metadata
+3. **UI Updates**: Add new filter sections to the sidebar
+4. **Mobile Adaptation**: Ensure new filters work well in collapsible mobile interface
+
+### Phase 6: Advanced Features
+- **Saved Searches**: Allow users to bookmark common filter combinations
+- **Bulk Operations**: Select multiple monsters for comparison or encounter building
+- **Advanced Sorting**: Sort by HP, damage output, or other computed stats
+- **Export Functions**: Export filtered lists to various formats
+
+---
+
+## Recent Architectural Changes (August 2025)
+
+### Data Model Alignment
+Updated the search system to align with backend data structures:
+
+1. **MonsterInfo Type**: Created new `MonsterInfo` interface matching backend `MonsterInfoModel`
+   - Fields: `key`, `name`, `cr`, `template`, `monsterFamilies`, `backgroundImage`
+   - Removed dependency on full `Monster` type for search results
+
+2. **Component Refactoring**: 
+   - **MonsterCardPreview**: Now takes `monster-key` attribute and loads full `Monster` data via API
+   - **MonsterCodex**: Updated to work with `MonsterInfo[]` for search results
+   - Both components now use `ApiMonsterStore` for loading full monster data when needed
+
+3. **Search API Simplification**:
+   - Removed environment, role, and family filters (documented for future implementation)
+   - POST method alignment with backend parameters
+   - Direct use of `MonsterInfo` without conversion from backend `MonsterInfoModel`
+
+### Benefits of This Approach
+- **Performance**: Search results are lightweight (`MonsterInfo` vs full `Monster`)
+- **Consistency**: Frontend types match backend data structures
+- **Scalability**: Full monster data loaded only when needed (on selection/preview)
+- **Maintainability**: Clear separation between search results and detailed monster data
+
+### UI Dependency Analysis
+Components requiring full Monster model:
+- **Visual presentation**: `image`, `backgroundImage` for monster cards
+- **Rich metadata**: `creatureType`, `tagLine`, `monsterFamilies` 
+- **Advanced features**: Full stat blocks, loadouts, related monsters
+
+Components working with MonsterInfo:
+- **Search results**: Basic listing with name, CR, key
+- **Grouping/filtering**: By family (when available), CR, name
+- **Navigation**: Monster selection and routing
+
+---
+
+IMPORTANT
+
+- MonsterCardPreview should be sure it uses the task rendering system
+- search API needs real facet implementation
