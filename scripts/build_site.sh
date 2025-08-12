@@ -34,6 +34,17 @@ if [ "$FAST_BUILD" = true ]; then
     export SKIP_INDEX_INIT=1
 fi
 
+# Prepare the cached content
+if [ "$FAST_BUILD" = false ]; then
+    rm -rf cache/
+    echo "Preparing indexes..."
+    poetry run python -m foe_foundry_data
+    poetry run python -m foe_foundry_search
+else
+    echo "Skipping cache preparation due to --fast flag."
+fi
+
+
 # Build the static content unless --fast is present
 if [ "$FAST_BUILD" = false ]; then
     echo "Building the static site with MkDocs..."
@@ -73,13 +84,6 @@ if command -v npx vite &> /dev/null; then
 else
     echo "Error: Vite is not installed. Aborting."
     exit 1
-fi
-
-# Prepare the search index
-if [ "$FAST_BUILD" = true ]; then
-    poetry run python -m foe_foundry_search --fast
-else
-    poetry run python -m foe_foundry_search
 fi
 
 
