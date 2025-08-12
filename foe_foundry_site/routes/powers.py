@@ -123,7 +123,9 @@ def search_powers(
             if not result.power_key:
                 continue
 
-            powers.append(Powers.PowerLookup.get(result.power_key))
+            power = Powers.PowerLookup.get(result.power_key)
+            if power is not None:
+                powers.append(power)
 
     else:
         powers = Powers.PowerLookup.values()
