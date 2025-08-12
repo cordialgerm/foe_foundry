@@ -1,0 +1,7 @@
+{
+  "Giant Boar": {
+    "relation": "close_cousins",
+    "explanation": "A robust, medium beast with strong physical attacks and a headbutt-like ram attack."
+  },
+  "monster_key": "lystrosaurus"
+}

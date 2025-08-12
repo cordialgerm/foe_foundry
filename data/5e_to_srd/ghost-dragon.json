@@ -1,0 +1,11 @@
+{
+  "Adult White Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A large dragon with icy breath and a fearsome presence, similar in theme to the ghostly undead dragon."
+  },
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "Shares incorporeal movement, etherealness, and undead ghostly traits with the Ghost Dragon."
+  },
+  "monster_key": "ghost-dragon"
+}

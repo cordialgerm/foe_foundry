@@ -1,0 +1,7 @@
+{
+  "Bugbear": {
+    "relation": "close_cousins",
+    "explanation": "The Barbed is a small, stealthy humanoid ambusher with Pack Tactics and poison attacks, similar in role and tactics to a Bugbear."
+  },
+  "monster_key": "the-barbed"
+}

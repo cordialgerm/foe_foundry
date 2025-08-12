@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are Huge fiends with a sinister presence and strong melee attacks, sharing immunities to fire and poison."
+  },
+  "Bone Devil": {
+    "relation": "close_cousins",
+    "explanation": "Similar Huge fiend with powerful claw and bite attacks and a menacing battlefield presence."
+  },
+  "monster_key": "devil-bough"
+}

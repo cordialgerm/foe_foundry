@@ -1,0 +1,11 @@
+{
+  "Chain Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs made of chains that grapple and restrain foes, with a mechanical and infernal theme."
+  },
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs animated by magic, serving as durable guardians with melee attacks."
+  },
+  "monster_key": "chain-golem"
+}

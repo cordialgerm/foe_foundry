@@ -1,0 +1,7 @@
+{
+  "Bandit": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid skirmisher using spear attacks and stealth tactics similar to a Bandit."
+  },
+  "monster_key": "wild-warrior"
+}

@@ -1,0 +1,11 @@
+{
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A young dragon with cold damage and breath weapon, sharing the cold elemental theme."
+  },
+  "Young Silver Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A young dragon wyrmling with a majestic and otherworldly presence, somewhat akin to the Void Dragon's mysterious and captivating nature."
+  },
+  "monster_key": "void-dragon-wyrmling"
+}

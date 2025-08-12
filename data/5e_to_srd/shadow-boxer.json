@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, shadowy creatures that manipulate darkness and use stealth and incapacitation."
+  },
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Shadow Boxer is a small fey trickster like the Sprite, sharing fey nature and agility."
+  },
+  "monster_key": "shadow-boxer"
+}

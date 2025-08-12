@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with humanoid forms and low AC, though the Mad Piper uses music and fear rather than just physical attacks."
+  },
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of terrifying enemies with a haunting, fear-inducing presence through sound."
+  },
+  "monster_key": "mad-piper"
+}

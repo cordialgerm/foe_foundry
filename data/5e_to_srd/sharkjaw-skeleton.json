@@ -1,0 +1,11 @@
+{
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "The Sharkjaw Skeleton is an undead skeleton variant with grappling and biting abilities."
+  },
+  "Giant Shark": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the predatory shark traits and biting attack, though the Sharkjaw Skeleton is undead and skeletal."
+  },
+  "monster_key": "sharkjaw-skeleton"
+}

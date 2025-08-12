@@ -1,0 +1,11 @@
+{
+  "Minotaur Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "The Lost Minotaur is an undead minotaur with similar size and combat style but with added magical resistances and unique abilities."
+  },
+  "Minotaur": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the core concept of a large, powerful minotaur warrior, though the Lost Minotaur is undead and has distinct abilities."
+  },
+  "monster_key": "lost-minotaur"
+}

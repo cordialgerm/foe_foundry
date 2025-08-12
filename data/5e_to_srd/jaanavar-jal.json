@@ -1,0 +1,11 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "A massive amphibious predator with powerful jaws and grappling abilities similar to a Giant Crocodile."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fire damage and fiery attack theme with the Fire Elemental."
+  },
+  "monster_key": "jaanavar-jal"
+}

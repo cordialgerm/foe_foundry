@@ -1,0 +1,11 @@
+{
+  "Harpy": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic fey creatures with flight and a focus on mobility and melee attacks."
+  },
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the storm and lightning elemental theme with high mobility and immunity to lightning and thunder damage."
+  },
+  "monster_key": "ala"
+}

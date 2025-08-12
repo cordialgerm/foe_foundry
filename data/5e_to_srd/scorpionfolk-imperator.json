@@ -1,0 +1,11 @@
+{
+  "Scorpion": {
+    "relation": "close_cousins",
+    "explanation": "The Scorpionfolk Imperator shares the scorpion theme and grappling claws with the Scorpion, but adds significant spellcasting and humanoid traits."
+  },
+  "Cult Fanatic": {
+    "relation": "conceptually_similar",
+    "explanation": "It is a spellcasting humanoid with healing and control spells, similar to the Cult Fanatic's spellcasting role."
+  },
+  "monster_key": "scorpionfolk-imperator"
+}

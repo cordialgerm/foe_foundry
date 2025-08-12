@@ -1,0 +1,11 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are stealthy, predatory creatures that attack by biting and can inflict ongoing damage."
+  },
+  "Animated Armor": {
+    "relation": "mechanically_similar",
+    "explanation": "Both are constructs with resistances and immunities typical of mechanical beings."
+  },
+  "monster_key": "clockwork-leech"
+}

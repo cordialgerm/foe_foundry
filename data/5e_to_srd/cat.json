@@ -1,0 +1,7 @@
+{
+  "Cat": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Cat matches the SRD Cat exactly in size, abilities, and role as a small, agile, stealthy companion."
+  },
+  "monster_key": "cat"
+}

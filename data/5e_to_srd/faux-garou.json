@@ -1,0 +1,15 @@
+{
+  "Wererat (Lycanthrope)": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shapechanging creatures mimicking lycanthropic forms with beast transformations."
+  },
+  "Flesh Golem": {
+    "relation": "close_cousins",
+    "explanation": "The Faux-Garou is a construct with high durability and immunity to conditions, similar to a Flesh Golem."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares necrotic damage and frightening abilities that can instill fear in enemies."
+  },
+  "monster_key": "faux-garou"
+}

@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are oozes with amorphous, liquid-like bodies that can move through small spaces and resist acid and slashing damage."
+  },
+  "Gray Ooze": {
+    "relation": "close_cousins",
+    "explanation": "Similar tiny ooze creature with corrosive properties and the ability to move through tight spaces."
+  },
+  "monster_key": "doppelixir"
+}

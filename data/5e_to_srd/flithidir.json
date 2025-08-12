@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, flying fey creatures with mischievous natures and innate spellcasting focused on charm and illusions."
+  },
+  "Pixie": {
+    "relation": "close_cousins",
+    "explanation": "Similar small, chaotic fey with flight, spellcasting, and a penchant for trickery and social disruption."
+  },
+  "monster_key": "flithidir"
+}

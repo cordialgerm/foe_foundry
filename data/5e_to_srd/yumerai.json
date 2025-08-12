@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures connected to nature and manipulation, with the Yumerai focusing on dreams and psychic abilities."
+  },
+  "Sprite": {
+    "relation": "conceptually_similar",
+    "explanation": "The Yumerai shares the small, elusive, and trickster nature of Sprites, with added dream and psychic manipulation."
+  },
+  "monster_key": "yumerai"
+}

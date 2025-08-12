@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Abaasy is a huge, melee-focused giant with high strength and constitution, similar to a Hill Giant but with added defensive gear and chaotic berserk traits."
+  },
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "Like the Fire Giant, the Abaasy is a heavily armored giant with formidable melee capabilities and a focus on physical power."
+  },
+  "monster_key": "abaasy"
+}

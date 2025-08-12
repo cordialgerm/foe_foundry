@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Eonic Drifter is a magical humanoid with intelligence and arcane knowledge similar to a Mage."
+  },
+  "Spy": {
+    "relation": "conceptually_similar",
+    "explanation": "Its agility, chaotic nature, and use of a staff in combat resemble the stealthy and cunning Spy."
+  },
+  "monster_key": "eonic-drifter"
+}

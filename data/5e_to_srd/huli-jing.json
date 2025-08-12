@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures associated with nature and charm magic."
+  },
+  "Doppelganger": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares shapechanging abilities and deceptive nature."
+  },
+  "Succubus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are charming, manipulative shapechangers that use enchantment and psychic abilities."
+  },
+  "monster_key": "huli-jing"
+}

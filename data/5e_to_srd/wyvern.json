@@ -1,0 +1,7 @@
+{
+  "Wyvern": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Wyvern's description as a large, venomous, dragon-like flying predator with a barbed tail and similar combat abilities."
+  },
+  "monster_key": "wyvern"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as guardians with solid armor and combat roles."
+  },
+  "Giant Tiger": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the feline form and combat style, though the Clockwork Tiger is mechanical."
+  },
+  "monster_key": "clockwork-tiger"
+}

@@ -1,0 +1,11 @@
+{
+  "Deva": {
+    "relation": "close_cousins",
+    "explanation": "A large celestial being with supportive abilities and magic resistance."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Amphibious nature with strong movement in water and air."
+  },
+  "monster_key": "savior-lumen"
+}

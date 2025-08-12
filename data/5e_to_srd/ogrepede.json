@@ -1,0 +1,15 @@
+{
+  "Ogre": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ogrepede is a massive undead creature with brute strength and fear abilities, conceptually similar to an Ogre but undead and chaotic."
+  },
+  "Giant Centipede": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ogrepede's name and climbing movement suggest a large centipede-like creature, similar in concept to a Giant Centipede but undead and much larger."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "As an undead creature that instills fear and has a chaotic evil alignment, the Ogrepede shares undead traits and fear effects similar to a Ghoul."
+  },
+  "monster_key": "ogrepede"
+}

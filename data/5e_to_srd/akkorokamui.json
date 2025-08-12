@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aquatic creatures with tentacles and a mystical presence."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "Akkorokamui is a celestial protector and healer like the Planetar, sharing a celestial nature and protective role."
+  },
+  "monster_key": "akkorokamui"
+}

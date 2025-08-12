@@ -1,0 +1,15 @@
+{
+  "Mummy": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead creatures associated with necrotic magic and tomb environments."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "The Corrupted Ushabti's scarab swarm and ability to move through small spaces resemble a swarm creature."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares regenerative abilities and necrotic-themed attacks as a fearsome undead."
+  },
+  "monster_key": "corrupted-ushabti"
+}

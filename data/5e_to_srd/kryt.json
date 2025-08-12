@@ -1,0 +1,11 @@
+{
+  "Assassin": {
+    "relation": "conceptually_similar",
+    "explanation": "The Kryt is a sinister, agile humanoid with psychological manipulation and melee focus, similar in concept to an Assassin."
+  },
+  "Veteran": {
+    "relation": "mechanically_similar",
+    "explanation": "The Kryt's multiattack with melee weapons and combat resilience resembles the Veteran's combat style."
+  },
+  "monster_key": "kryt"
+}

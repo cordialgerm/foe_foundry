@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "close_cousins",
+    "explanation": "Both are small plant creatures with enhanced perception and natural armor, fitting the plant creature archetype."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures that can ambush and have tough natural defenses, though the Shambling Mound is much larger."
+  },
+  "monster_key": "tuberkith"
+}

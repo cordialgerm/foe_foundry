@@ -1,0 +1,11 @@
+{
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cold environment predators with pack tactics and a powerful howl that affects foes."
+  },
+  "Giant Wolf Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares ambush predator role with climbing ability and pack tactics enhancing attacks."
+  },
+  "monster_key": "brumalek"
+}

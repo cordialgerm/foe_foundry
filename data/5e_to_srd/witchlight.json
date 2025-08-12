@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs animated by magic, though Witchlight is tiny and focused on light and blinding effects."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, glowing creatures that use light and can blind or disorient foes, though Will-o-Wisp is a fey and incorporeal."
+  },
+  "monster_key": "witchlight"
+}

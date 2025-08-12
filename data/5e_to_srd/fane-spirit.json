@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "A haunting undead spirit with incorporeal form, psychic attacks, and spellcasting abilities similar to the Fane Spirit."
+  },
+  "monster_key": "fane-spirit"
+}

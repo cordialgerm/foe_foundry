@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, cunning humanoid with Pack Tactics and spellcasting abilities similar to a Kobold."
+  },
+  "monster_key": "kobold-witch"
+}

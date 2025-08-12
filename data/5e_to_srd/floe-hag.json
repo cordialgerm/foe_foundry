@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Floe Hag shares the hag type and manipulative nature, with added cold and aquatic traits."
+  },
+  "Sea Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Floe Hag's amphibious nature and aquatic environment align closely with the Sea Hag."
+  },
+  "monster_key": "floe-hag"
+}

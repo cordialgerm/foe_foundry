@@ -1,0 +1,7 @@
+{
+  "Mimic": {
+    "relation": "almost_identical",
+    "explanation": "The Cave Mimic is a gargantuan variant of the Mimic with similar adhesive and shapechanging abilities."
+  },
+  "monster_key": "cave-mimic"
+}

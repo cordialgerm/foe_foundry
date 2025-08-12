@@ -1,0 +1,7 @@
+{
+  "Grimlock": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are stealthy, subterranean aberrations that rely on ambush tactics and have darkvision."
+  },
+  "monster_key": "zoog"
+}

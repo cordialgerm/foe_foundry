@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "A gargantuan celestial with powerful spellcasting and melee abilities similar to the King Fomor."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "A majestic, powerful celestial being with radiant damage and divine spellcasting like the King Fomor."
+  },
+  "monster_key": "king-fomor"
+}

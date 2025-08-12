@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-like creatures that control terrain and hinder foes, with a focus on area control."
+  },
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant-based monsters with battlefield control and melee attacks using natural weapons."
+  },
+  "monster_key": "razorleaf"
+}

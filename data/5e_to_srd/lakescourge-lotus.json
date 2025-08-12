@@ -1,0 +1,15 @@
+{
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares an aquatic, fluid form and water manipulation abilities."
+  },
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "An undead creature with a predatory nature and poison-related traits."
+  },
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "A plant-like undead that creates hazardous areas and poisons foes."
+  },
+  "monster_key": "lakescourge-lotus"
+}

@@ -1,0 +1,11 @@
+{
+  "Hezrou": {
+    "relation": "close_cousins",
+    "explanation": "The Maha is a chaotic evil fiend with strong physical attributes and a demonic nature similar to the Hezrou."
+  },
+  "Bheur Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "The Maha's icy aura and cold damage relate conceptually to the cold-themed hag archetype."
+  },
+  "monster_key": "maha"
+}

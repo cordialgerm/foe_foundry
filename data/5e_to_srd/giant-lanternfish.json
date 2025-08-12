@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, malevolent aquatic monstrosities with physical attacks and tentacle-like appendages."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the aquatic large monstrosity aspect with multiple limbs and physical prowess."
+  },
+  "monster_key": "giant-lanternfish"
+}

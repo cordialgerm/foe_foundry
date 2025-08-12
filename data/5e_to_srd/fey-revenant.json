@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are shadowy, stealthy undead creatures with abilities related to darkness and shadow."
+  },
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Fey Revenant is a fey creature with a connection to nature and thorny features, similar to Dryads."
+  },
+  "monster_key": "fey-revenant"
+}

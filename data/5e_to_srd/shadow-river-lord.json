@@ -1,0 +1,15 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are shadowy undead creatures with necrotic abilities and a menacing presence."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares aquatic movement and elemental water-like traits, similar to the Shadow River Lord's shadowy water attacks."
+  },
+  "Shadow": {
+    "relation": "almost_identical",
+    "explanation": "A shadowy undead entity with necrotic damage and stealthy, evasive movement, closely matching the Shadow River Lord's nature."
+  },
+  "monster_key": "shadow-river-lord"
+}

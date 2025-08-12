@@ -1,0 +1,11 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, powerful aquatic predators with strong melee attacks and the ability to move effectively in water and on land."
+  },
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "The Akhlut shares pack tactics and cold environment traits with the Winter Wolf, emphasizing group hunting and cold resistance."
+  },
+  "monster_key": "akhlut"
+}

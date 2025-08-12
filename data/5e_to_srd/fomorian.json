@@ -1,0 +1,11 @@
+{
+  "Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Fomorian is a huge fey creature similar in size and strength to giants."
+  },
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares mystical and psychic influence abilities, especially with fear and charm effects."
+  },
+  "monster_key": "fomorian"
+}

@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "almost_identical",
+    "explanation": "A medium humanoid combatant skilled with spear and crossbow, exhibiting tactical movement and teamwork."
+  },
+  "monster_key": "soldier"
+}

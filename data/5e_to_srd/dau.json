@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, agile fey creatures with strong illusion and trickery themes."
+  },
+  "Quickling": {
+    "relation": "conceptually_similar",
+    "explanation": "The Dau shares the small size, high speed, and trickster nature of the Quickling, though with more illusion magic."
+  },
+  "monster_key": "dau"
+}

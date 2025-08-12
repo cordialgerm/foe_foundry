@@ -1,0 +1,19 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish creatures with a focus on melee combat and intimidation."
+  },
+  "Berserker": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the role of a formidable melee combatant with high physical strength."
+  },
+  "Gnoll": {
+    "relation": "conceptually_similar",
+    "explanation": "Hyena-like humanoid traits and ambush tactics align with the gnoll's savage nature."
+  },
+  "Dretch": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fiends with a focus on ambush and deception, though the Bouda is more powerful."
+  },
+  "monster_key": "bouda"
+}

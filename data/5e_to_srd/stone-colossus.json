@@ -1,0 +1,7 @@
+{
+  "Stone Golem": {
+    "relation": "almost_identical",
+    "explanation": "A massive stone construct with high durability, powerful melee attacks, magic resistance, and siege capabilities."
+  },
+  "monster_key": "stone-colossus"
+}

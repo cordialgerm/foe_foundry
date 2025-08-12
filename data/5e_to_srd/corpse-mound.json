@@ -1,0 +1,15 @@
+{
+  "Mummy": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large undead creatures that can create or control other undead and have a noxious or harmful aura."
+  },
+  "Zombie": {
+    "relation": "mechanically_similar",
+    "explanation": "The Corpse Mound creates zombies from corpses, sharing the zombie's undead nature and minion creation."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Like the Corpse Mound, ghouls are undead that feed on the dead and can create additional undead threats."
+  },
+  "monster_key": "corpse-mound"
+}

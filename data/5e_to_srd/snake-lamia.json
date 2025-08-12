@@ -1,0 +1,7 @@
+{
+  "Lamia": {
+    "relation": "almost_identical",
+    "explanation": "The Snake Lamia shares the same humanoid upper body and serpent lower body, charm and spellcasting abilities, and manipulative nature as the Lamia."
+  },
+  "monster_key": "snake-lamia"
+}

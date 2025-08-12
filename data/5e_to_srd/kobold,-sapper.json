@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, cunning humanoid with agility and trap-setting skills, closely matching the Kobold archetype."
+  },
+  "monster_key": "kobold,-sapper"
+}

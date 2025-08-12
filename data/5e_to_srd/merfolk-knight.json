@@ -1,0 +1,11 @@
+{
+  "Merfolk": {
+    "relation": "almost_identical",
+    "explanation": "The Merfolk Knight is a combat-capable variant of the Merfolk with armor and inspiring abilities."
+  },
+  "Knight": {
+    "relation": "close_cousins",
+    "explanation": "The Merfolk Knight shares the knight's role as a skilled armored warrior and supporter."
+  },
+  "monster_key": "merfolk-knight"
+}

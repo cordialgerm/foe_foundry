@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, malevolent fiends with powerful melee attacks and a commanding presence."
+  },
+  "Nalfeshnee": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a large, chaotic evil fiend that dominates foes and spreads malevolence."
+  },
+  "monster_key": "equitox"
+}

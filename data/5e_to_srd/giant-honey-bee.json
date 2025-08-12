@@ -1,0 +1,7 @@
+{
+  "Giant Wasp": {
+    "relation": "almost_identical",
+    "explanation": "A small, flying insect with a sting that deals piercing and poison damage, similar to the Giant Honey Bee."
+  },
+  "monster_key": "giant-honey-bee"
+}

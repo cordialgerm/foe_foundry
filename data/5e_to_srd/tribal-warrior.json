@@ -1,0 +1,7 @@
+{
+  "Tribal Warrior": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is essentially the same as the SRD Tribal Warrior, sharing role, equipment, tactics, and environment."
+  },
+  "monster_key": "tribal-warrior"
+}

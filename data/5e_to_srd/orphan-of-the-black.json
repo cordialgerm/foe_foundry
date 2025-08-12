@@ -1,0 +1,11 @@
+{
+  "Quickling": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, cunning, and agile fey creature known for its speed and trickery."
+  },
+  "Banshee": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to manipulate others with a compelling, fear-inducing presence."
+  },
+  "monster_key": "orphan-of-the-black"
+}

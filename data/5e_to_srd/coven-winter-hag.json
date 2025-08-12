@@ -1,0 +1,19 @@
+{
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "Both embody winter and cold themes with a malicious nature."
+  },
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "A Coven Winter Hag is a type of hag, sharing the hag family traits and spellcasting."
+  },
+  "Night Hag": {
+    "relation": "close_cousins",
+    "explanation": "Shares the hag type and spellcasting abilities, with a focus on malevolent magic."
+  },
+  "Ice Mephit": {
+    "relation": "mechanically_similar",
+    "explanation": "Both use cold damage and have innate spellcasting related to ice and cold."
+  },
+  "monster_key": "coven-winter-hag"
+}

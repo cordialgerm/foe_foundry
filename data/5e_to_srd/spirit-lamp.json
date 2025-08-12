@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are chaotic undead spirits with necrotic powers and a menacing presence."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "Both manipulate light and have a ghostly, glowing appearance associated with spirits."
+  },
+  "monster_key": "spirit-lamp"
+}

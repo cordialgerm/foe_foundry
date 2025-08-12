@@ -1,0 +1,7 @@
+{
+  "Drider": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a near-clone of the Drider, sharing its spider-drow hybrid nature, abilities, and role in the Underdark."
+  },
+  "monster_key": "drider"
+}

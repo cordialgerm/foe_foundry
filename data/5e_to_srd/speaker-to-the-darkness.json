@@ -1,0 +1,11 @@
+{
+  "Cult Fanatic": {
+    "relation": "close_cousins",
+    "explanation": "A small chaotic evil humanoid with necromancer and summoner traits, similar to a Cult Fanatic's dark devotion and spellcasting."
+  },
+  "Ghast": {
+    "relation": "close_cousins",
+    "explanation": "Summons ghasts to overwhelm enemies, directly relating to the Ghast creature."
+  },
+  "monster_key": "speaker-to-the-darkness"
+}

@@ -1,0 +1,7 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "A skilled humanoid melee combatant with multiple attacks and strong physical abilities similar to a Veteran."
+  },
+  "monster_key": "hill-dwarf-wrestler"
+}

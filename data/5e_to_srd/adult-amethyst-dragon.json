@@ -1,0 +1,11 @@
+{
+  "Adult Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful adult dragons with spellcasting and strong presence, though the Amethyst Dragon focuses on psionics and psychic damage."
+  },
+  "Adult Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the adult dragon form and spellcasting abilities, with a majestic and intelligent demeanor similar to the Amethyst Dragon."
+  },
+  "monster_key": "adult-amethyst-dragon"
+}

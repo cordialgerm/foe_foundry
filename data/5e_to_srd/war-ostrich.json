@@ -1,0 +1,11 @@
+{
+  "Giant Eagle": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, agile beast known for speed and combat prowess, similar to the War Ostrich's role as a swift skirmisher."
+  },
+  "Giant Ostrich": {
+    "relation": "almost_identical",
+    "explanation": "The War Ostrich is essentially a large, fast, and combat-capable bird similar to the Giant Ostrich with added combat features."
+  },
+  "monster_key": "war-ostrich"
+}

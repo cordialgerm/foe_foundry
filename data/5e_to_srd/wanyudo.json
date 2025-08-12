@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, durable fiends with a menacing presence and strong melee capabilities."
+  },
+  "Hezrou": {
+    "relation": "close_cousins",
+    "explanation": "The Wanyudo shares the large fiend type, durability, and brute strength similar to the Hezrou."
+  },
+  "monster_key": "wanyudo"
+}

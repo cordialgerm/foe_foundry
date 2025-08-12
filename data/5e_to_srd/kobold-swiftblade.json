@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, agile kobold using Pack Tactics, leather armor, scimitar, and hand crossbow with sunlight sensitivity."
+  },
+  "monster_key": "kobold-swiftblade"
+}

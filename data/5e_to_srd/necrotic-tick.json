@@ -1,0 +1,19 @@
+{
+  "Blood Hawk": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small creatures that drain life and pose a threat through persistent damage."
+  },
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "A tiny, parasitic creature with a bite attack and ability to cling to hosts, similar to a tick."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the necrotic and undead theme with the ability to manipulate and create undead minions."
+  },
+  "Zombie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Necrotic Tick's ability to transform hosts into zombies aligns with the undead nature of Zombies."
+  },
+  "monster_key": "necrotic-tick"
+}

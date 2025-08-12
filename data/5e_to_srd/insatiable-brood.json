@@ -1,0 +1,11 @@
+{
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic swarms of aberrations with a disturbing, otherworldly nature."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms that overwhelm foes with numbers and have a swarm movement style."
+  },
+  "monster_key": "insatiable-brood"
+}

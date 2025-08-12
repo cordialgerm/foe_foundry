@@ -1,0 +1,11 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are medium celestial creatures with a protective nature and magical abilities."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Kinnara shares the celestial protector role and spellcasting traits with the Planetar, though at a lower power level."
+  },
+  "monster_key": "kinnara"
+}

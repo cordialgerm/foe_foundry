@@ -1,0 +1,11 @@
+{
+  "Helmed Horror": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are intelligent constructs with armor-like bodies and magical abilities."
+  },
+  "Modron": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the mechanical and clockwork nature as an intelligent aberration."
+  },
+  "monster_key": "ahu-nixta"
+}

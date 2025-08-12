@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "A charming and manipulative fey often associated with natural environments, similar to the Lorelei's fey nature and seductive abilities."
+  },
+  "Nymph": {
+    "relation": "conceptually_similar",
+    "explanation": "Though not in the SRD list, the Lorelei's seductive, water-associated fey nature conceptually aligns with nymph-like creatures."
+  },
+  "Succubus": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the seductive, charming, and manipulative traits with psychic and necrotic damage abilities similar to the Lorelei."
+  },
+  "monster_key": "lorelei"
+}

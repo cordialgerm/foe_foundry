@@ -1,0 +1,15 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "A stealthy, magical humanoid warrior skilled in deception and ambush, similar to the Ravenfolk Warrior."
+  },
+  "Spy": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the role of a stealthy, tactical humanoid using deception and versatile attacks."
+  },
+  "Raven": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ravenfolk Warrior's mimicry and thematic connection to ravens aligns conceptually with the Raven."
+  },
+  "monster_key": "ravenfolk-warrior"
+}

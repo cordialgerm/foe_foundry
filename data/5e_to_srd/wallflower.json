@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant creatures with grappling abilities and control aspects in forested environments."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares stealth and ambush traits with a tentacle-like form, though Darkmantle is not a plant."
+  },
+  "monster_key": "wallflower"
+}

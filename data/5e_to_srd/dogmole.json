@@ -1,0 +1,7 @@
+{
+  "Badger": {
+    "relation": "close_cousins",
+    "explanation": "The Dogmole is a burrowing, medium beast with strong claws and a powerful bite similar to a Badger."
+  },
+  "monster_key": "dogmole"
+}

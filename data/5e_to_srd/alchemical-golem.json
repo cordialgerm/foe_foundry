@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, durable constructs with immunities and resistances, serving as magical guardians."
+  },
+  "Flesh Golem": {
+    "relation": "close_cousins",
+    "explanation": "Shares the construct type and role as a durable magical enforcer with strong melee attacks."
+  },
+  "monster_key": "alchemical-golem"
+}

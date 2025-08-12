@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are plant creatures in swampy or damp environments with deceptive and dangerous abilities."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based swamp creatures that use their environment and physical attacks to control foes."
+  },
+  "monster_key": "swamp-lily"
+}

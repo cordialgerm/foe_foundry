@@ -1,0 +1,7 @@
+{
+  "Allosaurus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, dinosaur-like beasts with powerful melee attacks and a huge size."
+  },
+  "monster_key": "stegosaurus"
+}

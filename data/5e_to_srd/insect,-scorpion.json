@@ -1,0 +1,7 @@
+{
+  "Scorpion": {
+    "relation": "almost_identical",
+    "explanation": "A tiny venomous beast with a sting attack and natural armor, matching the description of the Scorpion."
+  },
+  "monster_key": "insect,-scorpion"
+}

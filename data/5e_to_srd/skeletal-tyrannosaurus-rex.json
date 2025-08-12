@@ -1,0 +1,11 @@
+{
+  "Tyrannosaurus Rex": {
+    "relation": "close_cousins",
+    "explanation": "A huge dinosaur with similar physical traits and combat style, but this one is undead and skeletal."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "An undead creature composed of bones, sharing the skeletal and undead nature."
+  },
+  "monster_key": "skeletal-tyrannosaurus-rex"
+}

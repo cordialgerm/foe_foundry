@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, nimble, and magical beast known for its agility and aiding allies, similar to the Moon Weaver's enchanting and evasive nature."
+  },
+  "Giant Owl": {
+    "relation": "close_cousins",
+    "explanation": "A flying beast with keen senses and agility in wooded environments, akin to the Moon Weaver's forest habitat and flight capabilities."
+  },
+  "monster_key": "moon-weaver"
+}

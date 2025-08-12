@@ -1,0 +1,11 @@
+{
+  "Panther": {
+    "relation": "almost_identical",
+    "explanation": "The Grimalkin's panther form and stealthy, agile nature closely match the Panther's characteristics."
+  },
+  "Cat": {
+    "relation": "almost_identical",
+    "explanation": "The Grimalkin's ability to shift into a small cat form aligns closely with the Cat's traits."
+  },
+  "monster_key": "grimalkin"
+}

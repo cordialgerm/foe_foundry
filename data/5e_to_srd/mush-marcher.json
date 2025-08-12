@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large fungal plant creatures that use spores to debilitate foes."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large plant-like creatures that control the battlefield with physical and environmental effects."
+  },
+  "monster_key": "mush-marcher"
+}

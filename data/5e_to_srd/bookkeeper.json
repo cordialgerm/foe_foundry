@@ -1,0 +1,11 @@
+{
+  "Homunculus": {
+    "relation": "close_cousins",
+    "explanation": "A tiny construct serving a master with stealth and flying abilities, similar to the Bookkeeper's role and size."
+  },
+  "Flying Sword": {
+    "relation": "conceptually_similar",
+    "explanation": "A small flying construct designed to protect, sharing the guardian and flying aspects with the Bookkeeper."
+  },
+  "monster_key": "bookkeeper"
+}

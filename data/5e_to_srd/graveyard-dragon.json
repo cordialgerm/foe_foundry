@@ -1,0 +1,15 @@
+{
+  "Adult Black Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "A large undead dragon with elemental breath and a fearsome presence, similar to a black dragon's acidic breath and swampy theme."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "An undead creature with resilience and necrotic traits, sharing undead nature and combat role."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares undead traits and stealth abilities, with a focus on damaging nearby enemies and evasion."
+  },
+  "monster_key": "graveyard-dragon"
+}

@@ -1,0 +1,7 @@
+{
+  "Orc": {
+    "relation": "close_cousins",
+    "explanation": "The Green Abyss Orc is a green-skinned orc variant with similar size and combat style but with added poison and climbing abilities."
+  },
+  "monster_key": "green-abyss-orc"
+}

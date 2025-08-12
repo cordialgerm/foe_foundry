@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The V\u00e6ttir is a Medium undead with necrotic attacks, sunlight sensitivity, and the ability to incapacitate foes, similar to a Wight."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead skirmishers with melee focus and relentless nature, though the V\u00e6ttir has unique abilities like truesight and reformation."
+  },
+  "monster_key": "v\u00e6ttir"
+}

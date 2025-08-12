@@ -1,0 +1,11 @@
+{
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are incorporeal, fear-inducing undead spirits associated with necrotic damage and weakening foes."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "The Plague Spirit shares a spectral, menacing presence and necrotic abilities similar to a Wraith."
+  },
+  "monster_key": "plague-spirit"
+}

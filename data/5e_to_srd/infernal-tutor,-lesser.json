@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fiends with devilish traits and combat abilities, sharing infernal origins and manipulative natures."
+  },
+  "Imp": {
+    "relation": "conceptually_similar",
+    "explanation": "Like the Infernal Tutor, the Imp is a small devil known for shapechanging and manipulation, emphasizing cunning and charm."
+  },
+  "monster_key": "infernal-tutor,-lesser"
+}

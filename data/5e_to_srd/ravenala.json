@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant-based guardians with strong physical presence and the ability to restrain foes."
+  },
+  "Treant": {
+    "relation": "conceptually_similar",
+    "explanation": "Both serve as nature guardians with healing and protective roles in forest environments."
+  },
+  "monster_key": "ravenala"
+}

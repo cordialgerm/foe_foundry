@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "The Crimson Mist is a spectral, vampire-like undead that drains life and heals itself, sharing core traits with the Vampire."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Its spectral, weightless form and necrotic life-draining abilities resemble the Wraith's ethereal undead nature."
+  },
+  "monster_key": "crimson-mist"
+}

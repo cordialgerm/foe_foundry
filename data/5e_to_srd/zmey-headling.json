@@ -1,0 +1,11 @@
+{
+  "Young Red Dragon": {
+    "relation": "almost_identical",
+    "explanation": "A medium chaotic evil dragon with fire breath and strong bite and claw attacks similar to the Zmey Headling."
+  },
+  "Adult Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A larger, more powerful red dragon sharing the fire breath and aggressive nature of the Zmey Headling."
+  },
+  "monster_key": "zmey-headling"
+}

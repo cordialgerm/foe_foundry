@@ -1,0 +1,11 @@
+{
+  "Swarm of Bats": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, flying swarm with ambush tactics and chaotic movement similar to a swirling mass."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "A malevolent fey creature with a disorienting presence and innate spellcasting, akin to chaotic fey energy."
+  },
+  "monster_key": "nyctli-swarm"
+}

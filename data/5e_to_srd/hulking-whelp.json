@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "A small fey canine creature with shape-shifting and agility, similar in concept to the Hulking Whelp."
+  },
+  "Wolf": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the canine form and physical attack style with the Hulking Whelp's powerful slam attacks."
+  },
+  "monster_key": "hulking-whelp"
+}

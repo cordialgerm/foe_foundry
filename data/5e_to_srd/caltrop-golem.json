@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs and golems with durable bodies, though the Caltrop Golem is more stealthy and ambush-focused."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs animated by magic, capable of combat and defense, with the Caltrop Golem having a unique caltrop form."
+  },
+  "monster_key": "caltrop-golem"
+}

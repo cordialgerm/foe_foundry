@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are mechanical constructs designed as guardians with armor and melee weapons."
+  },
+  "monster_key": "clockwork-watchman"
+}

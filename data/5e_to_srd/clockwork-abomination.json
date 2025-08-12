@@ -1,0 +1,11 @@
+{
+  "Fire Giant": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the fire breath ability and strong melee attacks typical of a fire-based bruiser."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, humanoid construct with mechanical and magical resilience."
+  },
+  "monster_key": "clockwork-abomination"
+}

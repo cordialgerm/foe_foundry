@@ -1,0 +1,11 @@
+{
+  "Succubus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cunning, shapechanging, and deceptive chaotic evil monstrosities known for ambush and manipulation."
+  },
+  "Doppelganger": {
+    "relation": "close_cousins",
+    "explanation": "Shares the shapechanger trait and deceptive nature, using form-shifting to ambush and manipulate foes."
+  },
+  "monster_key": "empusa"
+}

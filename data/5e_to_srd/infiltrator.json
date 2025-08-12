@@ -1,0 +1,7 @@
+{
+  "Spy": {
+    "relation": "almost_identical",
+    "explanation": "The Infiltrator closely matches the Spy's stealth, charm, and spellcasting abilities with similar equipment and tactics."
+  },
+  "monster_key": "infiltrator"
+}

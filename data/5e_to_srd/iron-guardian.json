@@ -1,0 +1,7 @@
+{
+  "Shield Guardian": {
+    "relation": "almost_identical",
+    "explanation": "A large construct guardian with high durability and combat focus, similar to the Iron Guardian."
+  },
+  "monster_key": "iron-guardian"
+}

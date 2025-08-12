@@ -1,0 +1,15 @@
+{
+  "Young White Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons with cold damage immunity and a connection to cold and elemental forces."
+  },
+  "Young Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares the large dragon form and breath weapon dealing fire damage."
+  },
+  "Young Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Similar large dragon with radiant breath damage and strong presence."
+  },
+  "monster_key": "young-void-dragon"
+}

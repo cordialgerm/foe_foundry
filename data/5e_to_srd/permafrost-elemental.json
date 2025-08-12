@@ -1,0 +1,7 @@
+{
+  "Ice Elemental": {
+    "relation": "close_cousins",
+    "explanation": "A large cold elemental with ice and cold damage abilities, similar in nature but with added disease and burrowing features."
+  },
+  "monster_key": "permafrost-elemental"
+}

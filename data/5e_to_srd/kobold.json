@@ -1,0 +1,7 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Kobold exactly in size, type, abilities, and behavior."
+  },
+  "monster_key": "kobold"
+}

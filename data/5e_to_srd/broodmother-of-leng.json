@@ -1,0 +1,11 @@
+{
+  "Drider": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge aberrations with arachnid traits that command spider allies and use poison."
+  },
+  "Giant Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the spider-like appearance and poisonous attacks, though mechanically simpler."
+  },
+  "monster_key": "broodmother-of-leng"
+}

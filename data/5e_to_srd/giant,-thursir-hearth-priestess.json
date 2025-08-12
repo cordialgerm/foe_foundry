@@ -1,0 +1,11 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "A large, lawful evil giant with fire-based attacks and strong melee capabilities."
+  },
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "A spellcaster that supports allies with healing and buff spells."
+  },
+  "monster_key": "giant,-thursir-hearth-priestess"
+}

@@ -1,0 +1,11 @@
+{
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "A small, agile humanoid with amphibious abilities and jungle adaptation similar to Lizardfolk."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares stealth, agility, and ambush tactics with the Scout archetype."
+  },
+  "monster_key": "cueyatl-warrior"
+}

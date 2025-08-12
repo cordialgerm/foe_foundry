@@ -1,0 +1,15 @@
+{
+  "Merfolk": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid aquatic creature capable of breathing air and water, similar to Merfolk."
+  },
+  "Lizardfolk": {
+    "relation": "close_cousins",
+    "explanation": "A muscular humanoid with strong claws and physical prowess, akin to Lizardfolk."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the frenzied, aggressive combat style and claw attacks reminiscent of a Ghoul."
+  },
+  "monster_key": "deep-one"
+}

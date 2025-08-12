@@ -1,0 +1,7 @@
+{
+  "Cat": {
+    "relation": "close_cousins",
+    "explanation": "A tiny, agile beast with keen senses and stealth abilities similar to a Cat."
+  },
+  "monster_key": "fennec-fox"
+}

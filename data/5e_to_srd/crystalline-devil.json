@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish creatures with tactical combat roles and summoning abilities."
+  },
+  "Chain Devil": {
+    "relation": "close_cousins",
+    "explanation": "Shares fiendish nature, summoning allies, and a tactical ambusher role."
+  },
+  "monster_key": "crystalline-devil"
+}

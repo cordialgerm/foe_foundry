@@ -1,0 +1,7 @@
+{
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Pech Stonemaster is a small stone elemental with melee attacks and stone resilience, similar to an Earth Elemental but smaller and with spellcasting."
+  },
+  "monster_key": "pech-stonemaster"
+}

@@ -1,0 +1,11 @@
+{
+  "Hydra": {
+    "relation": "conceptually_similar",
+    "explanation": "The Necrohydra shares the multi-headed, massive beast concept with the Hydra, though it is undead and uses necrotic abilities."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "As an undead creature with fear-inducing abilities and necrotic attacks, the Necrohydra is related to the Wight in undead traits and battlefield control."
+  },
+  "monster_key": "necrohydra"
+}

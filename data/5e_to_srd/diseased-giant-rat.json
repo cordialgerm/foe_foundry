@@ -1,0 +1,7 @@
+{
+  "Giant Rat": {
+    "relation": "almost_identical",
+    "explanation": "A small, agile rat with pack tactics and disease-carrying bite closely matches the Giant Rat."
+  },
+  "monster_key": "diseased-giant-rat"
+}

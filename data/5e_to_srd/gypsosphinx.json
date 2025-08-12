@@ -1,0 +1,11 @@
+{
+  "Androsphinx": {
+    "relation": "close_cousins",
+    "explanation": "The Gypsosphinx is a sphinx-like monstrosity with similar physical traits and magical abilities."
+  },
+  "Sphinx of Wonder": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are magical sphinx creatures with spellcasting and mystical knowledge."
+  },
+  "monster_key": "gypsosphinx"
+}

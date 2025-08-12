@@ -1,0 +1,11 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant creatures with grappling abilities and durable forms."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead theme and ability to drain life force and create undead minions."
+  },
+  "monster_key": "mandriano"
+}

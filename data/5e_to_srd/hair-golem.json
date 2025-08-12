@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are small constructs serving as guardians with immunities and combat roles."
+  },
+  "Flesh Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are golem-type constructs with immunities and vulnerabilities, though differing in material and size."
+  },
+  "monster_key": "hair-golem"
+}

@@ -1,0 +1,11 @@
+{
+  "Specter": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gaki is a chaotic, grotesque undead specter with necrotic abilities similar to a Specter."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "The Gaki's hunger-driven attacks and necrotic damage resemble the Ghoul's predatory undead nature."
+  },
+  "monster_key": "gaki"
+}

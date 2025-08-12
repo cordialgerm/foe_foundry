@@ -1,0 +1,7 @@
+{
+  "Vine Blight": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant creatures that use vines to grapple and restrain prey, fitting the ambush predator role."
+  },
+  "monster_key": "asp-vine"
+}

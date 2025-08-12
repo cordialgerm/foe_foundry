@@ -1,0 +1,11 @@
+{
+  "Giant Lion": {
+    "relation": "conceptually_similar",
+    "explanation": "The Dire Lionfish shares the predatory and large feline concept with the Giant Lion, adapted to an aquatic environment."
+  },
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic predators with ambush tactics and high mobility in water."
+  },
+  "monster_key": "dire-lionfish"
+}

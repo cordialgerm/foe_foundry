@@ -1,0 +1,7 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "A humanoid skirmisher with high mobility and unpredictable combat style similar to a Spy."
+  },
+  "monster_key": "zeitgeist"
+}

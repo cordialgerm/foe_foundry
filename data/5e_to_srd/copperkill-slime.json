@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amorphous oozes that grapple and resist certain damage types, with the Copperkill Slime adding poison damage and camouflage."
+  },
+  "monster_key": "copperkill-slime"
+}

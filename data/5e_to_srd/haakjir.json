@@ -1,0 +1,11 @@
+{
+  "Ankheg": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium monstrosities with burrowing abilities and acid damage, adapted to underground or rocky terrains."
+  },
+  "Grick": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cunning, agile monstrosities that dwell in rocky environments and use stealth and ambush tactics."
+  },
+  "monster_key": "haakjir"
+}

@@ -1,0 +1,7 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with metal bodies designed for combat, though the Clockwork Soldier wields a halberd and has unique abilities."
+  },
+  "monster_key": "clockwork-soldier"
+}

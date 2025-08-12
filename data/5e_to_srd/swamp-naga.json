@@ -1,0 +1,11 @@
+{
+  "Spirit Naga": {
+    "relation": "close_cousins",
+    "explanation": "The Swamp Naga shares the naga creature type, spellcasting abilities, and serpentine form, but with a swamp and insect manipulation theme."
+  },
+  "Swarm of Insects": {
+    "relation": "mechanically_similar",
+    "explanation": "The Swamp Naga's ability to command and manipulate insects is conceptually similar to a Swarm of Insects."
+  },
+  "monster_key": "swamp-naga"
+}

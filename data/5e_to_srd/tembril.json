@@ -1,0 +1,15 @@
+{
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, stealthy ambush predators with lethal bite and claw attacks."
+  },
+  "Giant Wolf Spider": {
+    "relation": "close_cousins",
+    "explanation": "Shares the ambusher role, stealth, and agility with powerful bite and claw attacks."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Both have maddening, psychic-like abilities that incapacitate and cause madness."
+  },
+  "monster_key": "tembril"
+}

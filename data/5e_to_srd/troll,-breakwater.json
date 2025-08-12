@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Breakwater Troll is a variant of the Troll with aquatic traits and regeneration, sharing the core giant and regenerative features."
+  },
+  "monster_key": "troll,-breakwater"
+}

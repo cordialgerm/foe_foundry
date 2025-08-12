@@ -1,0 +1,11 @@
+{
+  "Allosaurus": {
+    "relation": "conceptually_similar",
+    "explanation": "A huge, mobile, predatory monstrosity with quick and strategic attacks."
+  },
+  "Giant Elk": {
+    "relation": "conceptually_similar",
+    "explanation": "A huge, fast creature with keen senses and mobility in wild environments."
+  },
+  "monster_key": "zouyu"
+}

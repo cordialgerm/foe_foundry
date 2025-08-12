@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are malevolent undead that use claw attacks and drain life, embodying a predatory undead spirit."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of a stealthy, necrotic undead that weakens strength and thrives in darkness."
+  },
+  "monster_key": "myling"
+}

@@ -1,0 +1,11 @@
+{
+  "Dust Mephit": {
+    "relation": "close_cousins",
+    "explanation": "Both are small elemental creatures associated with earth and sand, with abilities that affect the battlefield and support allies."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Qumdaq shares the elemental earth nature and burrowing abilities, though it is smaller and has unique sand-based effects."
+  },
+  "monster_key": "qumdaq"
+}

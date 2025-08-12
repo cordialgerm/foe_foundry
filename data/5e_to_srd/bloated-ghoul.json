@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "almost_identical",
+    "explanation": "The Bloated Ghoul is a close variant of a Ghoul with added poison and scavenging features."
+  },
+  "Ghast": {
+    "relation": "close_cousins",
+    "explanation": "Related to Ghasts as a more resilient and poisonous undead scavenger variant."
+  },
+  "monster_key": "bloated-ghoul"
+}

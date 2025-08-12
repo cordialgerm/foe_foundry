@@ -1,0 +1,7 @@
+{
+  "Cloaker": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the SRD Cloaker in appearance, abilities, and behavior, including its cloak disguise and psychic moan."
+  },
+  "monster_key": "cloaker"
+}

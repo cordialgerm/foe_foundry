@@ -1,0 +1,11 @@
+{
+  "Giant Boar": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful beast with tusks and a charging attack that can knock down foes, similar to the Hodag's physical prowess and charge ability."
+  },
+  "Ogre": {
+    "relation": "conceptually_similar",
+    "explanation": "A formidable melee bruiser with strong physical attacks and intimidating presence, akin to the Hodag's role and combat style."
+  },
+  "monster_key": "hodag"
+}

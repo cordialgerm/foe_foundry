@@ -1,0 +1,7 @@
+{
+  "Giant Scorpion": {
+    "relation": "close_cousins",
+    "explanation": "The Clockwork Scorpion shares the large scorpion form and poison abilities with the Giant Scorpion, but is a mechanical construct variant."
+  },
+  "monster_key": "clockwork-scorpion"
+}

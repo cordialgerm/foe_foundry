@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Marid Noble is a large water-based elemental with aquatic and aerial movement, similar in elemental nature to the Water Elemental."
+  },
+  "Djinni": {
+    "relation": "conceptually_similar",
+    "explanation": "The Marid Noble shares the noble, elemental humanoid concept with the Djinni, both being powerful elemental beings with spellcasting and commanding presence."
+  },
+  "monster_key": "marid-noble"
+}

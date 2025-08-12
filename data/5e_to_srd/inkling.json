@@ -1,0 +1,11 @@
+{
+  "Mimic": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, amorphous constructs with stealthy and magical traits."
+  },
+  "Invisible Stalker": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares agility, stealth, and magical resistance with innate spellcasting."
+  },
+  "monster_key": "inkling"
+}

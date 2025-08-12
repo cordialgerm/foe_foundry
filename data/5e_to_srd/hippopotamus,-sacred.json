@@ -1,0 +1,11 @@
+{
+  "Elephant": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, powerful beast with natural armor and significant physical strength similar to a huge hippopotamus."
+  },
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "A celestial guardian with divine powers and protective roles, akin to the Sacred Hippopotamus's celestial and guardian nature."
+  },
+  "monster_key": "hippopotamus,-sacred"
+}

@@ -1,0 +1,11 @@
+{
+  "Ghast": {
+    "relation": "conceptually_similar",
+    "explanation": "A large undead creature that instills fear and is menacing in combat."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "An undead creature known for its terrifying presence and melee attacks."
+  },
+  "monster_key": "balara"
+}

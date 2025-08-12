@@ -1,0 +1,7 @@
+{
+  "Giant Poisonous Snake": {
+    "relation": "almost_identical",
+    "explanation": "A large predatory snake with a poisonous bite that can incapacitate prey, matching the Zanskaran Viper's description."
+  },
+  "monster_key": "zanskaran-viper"
+}

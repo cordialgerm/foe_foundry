@@ -1,0 +1,11 @@
+{
+  "Grick": {
+    "relation": "conceptually_similar",
+    "explanation": "A large aberration with tentacle-like features and a predatory nature in natural environments."
+  },
+  "Ankheg": {
+    "relation": "mechanically_similar",
+    "explanation": "Uses acid damage and can destroy nonmagical objects, similar to the Child of Yggdrasil's acid touch."
+  },
+  "monster_key": "child-of-yggdrasil"
+}

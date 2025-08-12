@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium-sized fey creatures connected to natural environments."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both thrive in aquatic environments and have a connection to water."
+  },
+  "Basilisk": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the petrification ability and a dangerous ambush style."
+  },
+  "monster_key": "shellycoat"
+}

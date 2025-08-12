@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures with charm and deception abilities, though the Mirager has more necrotic and psychic damage and illusion magic."
+  },
+  "Satyr": {
+    "relation": "conceptually_similar",
+    "explanation": "Mirager shares the seductive and charming nature of Satyrs, using performance and deception to manipulate foes."
+  },
+  "monster_key": "mirager"
+}

@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Liosalfar is a large, agile elemental similar in nature to the Air Elemental but with radiant and charming abilities."
+  },
+  "Djinni": {
+    "relation": "conceptually_similar",
+    "explanation": "The Liosalfar shares the elemental and radiant thematic presence of the Djinni, with a focus on light and charm."
+  },
+  "monster_key": "liosalfar"
+}

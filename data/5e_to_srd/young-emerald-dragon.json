@@ -1,0 +1,11 @@
+{
+  "Young Green Dragon": {
+    "relation": "close_cousins",
+    "explanation": "The Young Emerald Dragon shares the same size, green coloration, and forest environment as the Young Green Dragon, with added psionic and thunder-themed abilities."
+  },
+  "Adult Green Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Both dragons are intelligent, cunning, and manipulate others, with a strong connection to nature and forested environments."
+  },
+  "monster_key": "young-emerald-dragon"
+}

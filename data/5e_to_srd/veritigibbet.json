@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "A small, elusive fey creature with flying speed and trickster nature similar to the Veritigibbet."
+  },
+  "Quickling": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, fast fey known for trickery and elusiveness, sharing the Veritigibbet's chaotic and tricky nature."
+  },
+  "monster_key": "veritigibbet"
+}

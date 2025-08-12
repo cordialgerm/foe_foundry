@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic, elusive fey creatures inhabiting magical forests with innate spellcasting and deception."
+  },
+  "Sprite": {
+    "relation": "conceptually_similar",
+    "explanation": "The Azeban shares the small, magical, and elusive nature of Sprites, including innate spellcasting and mobility."
+  },
+  "monster_key": "azeban"
+}

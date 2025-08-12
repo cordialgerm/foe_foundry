@@ -1,0 +1,7 @@
+{
+  "Flesh Golem": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Flesh Golem closely matches the SRD Flesh Golem in appearance, abilities, and role as a mindless, stitched-together construct vulnerable to fire."
+  },
+  "monster_key": "flesh-golem"
+}

@@ -1,0 +1,7 @@
+{
+  "Cloaker": {
+    "relation": "close_cousins",
+    "explanation": "Both are shadowy, flowing creatures with abilities to grapple and move fluidly in dark environments."
+  },
+  "monster_key": "empty-cloak"
+}

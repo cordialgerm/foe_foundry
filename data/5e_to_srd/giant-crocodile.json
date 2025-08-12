@@ -1,0 +1,7 @@
+{
+  "Giant Crocodile": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Giant Crocodile in size, habitat, ambush tactics, and signature death roll attack."
+  },
+  "monster_key": "giant-crocodile"
+}

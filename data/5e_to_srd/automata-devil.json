@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, fiendish devils with fear-inducing abilities and a menacing presence."
+  },
+  "Hell Hound": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the infernal, fearsome nature and some mechanical or beast-like qualities."
+  },
+  "monster_key": "automata-devil"
+}

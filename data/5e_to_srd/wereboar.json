@@ -1,0 +1,7 @@
+{
+  "Wereboar": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew creature is a direct match to the SRD Wereboar, sharing lycanthropy, shapechanging, and combat traits."
+  },
+  "monster_key": "wereboar"
+}

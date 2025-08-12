@@ -1,0 +1,7 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Aridni is a small, cunning, and agile fey with flying and spellcasting abilities similar to the Sprite."
+  },
+  "monster_key": "aridni"
+}

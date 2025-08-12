@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "close_cousins",
+    "explanation": "The Trollkin Ironmonger shares the regenerative ability and humanoid nature with Trolls, but is more armored and weapon-focused."
+  },
+  "monster_key": "trollkin-ironmonger"
+}

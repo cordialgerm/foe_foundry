@@ -1,0 +1,15 @@
+{
+  "Giant Frog": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amphibious monstrosities found in swampy environments with strong physical attacks."
+  },
+  "Bullywug": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a swamp-dwelling, amphibious nature and uses grappling tactics, though mechanically different."
+  },
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both thrive in aquatic or swampy environments and can use area effect attacks, though the Bukavac uses thunder."
+  },
+  "monster_key": "bukavac"
+}

@@ -1,0 +1,11 @@
+{
+  "Homunculus": {
+    "relation": "close_cousins",
+    "explanation": "A tiny mechanical construct with stealth and climbing abilities similar to a Homunculus."
+  },
+  "Spider": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the spider-like appearance and climbing movement with the Gear Spider."
+  },
+  "monster_key": "gear-spider"
+}

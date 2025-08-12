@@ -1,0 +1,15 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs made of armor and weapons serving as guardians, with the Armory Golem being a more powerful and complex variant."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "The Armory Golem shares the role of a powerful construct guardian with defensive and healing abilities similar to the Shield Guardian."
+  },
+  "Flesh Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are resilient, powerful constructs with multiple attack types and magical resistances, though the Flesh Golem is made of flesh rather than armor."
+  },
+  "monster_key": "armory-golem"
+}

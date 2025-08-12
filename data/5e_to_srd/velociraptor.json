@@ -1,0 +1,7 @@
+{
+  "Velociraptor": {
+    "relation": "almost_identical",
+    "explanation": "A small, quick, pack-hunting beast with Pack Tactics and grappling abilities closely matching the Velociraptor."
+  },
+  "monster_key": "velociraptor"
+}

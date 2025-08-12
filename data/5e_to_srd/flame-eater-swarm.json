@@ -1,0 +1,11 @@
+{
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "The Flame Eater Swarm is a swarm of tiny creatures with bite attacks, similar to a Swarm of Insects."
+  },
+  "Magma Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small creatures associated with fire and have abilities related to fire damage and interaction."
+  },
+  "monster_key": "flame-eater-swarm"
+}

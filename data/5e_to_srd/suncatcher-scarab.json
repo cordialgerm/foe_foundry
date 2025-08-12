@@ -1,0 +1,11 @@
+{
+  "Giant Scorpion": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, armored arthropod-like beasts with poison attacks and formidable physical presence."
+  },
+  "Giant Crab": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large crustacean-like beasts with tough armored plating and strong physical attacks."
+  },
+  "monster_key": "suncatcher-scarab"
+}

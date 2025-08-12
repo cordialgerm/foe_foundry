@@ -1,0 +1,11 @@
+{
+  "Balor": {
+    "relation": "close_cousins",
+    "explanation": "Mechuiti is a gargantuan chaotic evil fiend with fire attacks, spellcasting, and a terrifying presence similar to a Balor."
+  },
+  "Marilith": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful chaotic evil fiends commanding legions and possessing strong magical abilities."
+  },
+  "monster_key": "mechuiti"
+}

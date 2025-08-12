@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge fiends with thorny or spiny features and a chaotic evil nature."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiery nature and immunity to fire damage, embodying destructive fire energy."
+  },
+  "monster_key": "thorned-sulfurlord"
+}

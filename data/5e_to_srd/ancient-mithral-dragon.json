@@ -1,0 +1,11 @@
+{
+  "Ancient Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "An ancient dragon with legendary resistance and powerful breath weapon, sharing the majestic and versatile traits of an Ancient Gold Dragon."
+  },
+  "Ancient Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A large, ancient dragon with high resilience and control abilities, similar in role and power to an Ancient Silver Dragon."
+  },
+  "monster_key": "ancient-mithral-dragon"
+}

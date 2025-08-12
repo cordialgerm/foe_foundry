@@ -1,0 +1,11 @@
+{
+  "Swarm of Bats": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small flying creatures that use numbers and mobility to overwhelm foes."
+  },
+  "Swarm of Insects": {
+    "relation": "almost_identical",
+    "explanation": "A swarm of small biting gnats closely matches the concept and mechanics of a Swarm of Insects."
+  },
+  "monster_key": "swarm-of-biting-gnats"
+}

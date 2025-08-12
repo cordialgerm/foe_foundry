@@ -1,0 +1,11 @@
+{
+  "Dretch": {
+    "relation": "close_cousins",
+    "explanation": "Both are Medium demons with chaotic natures and life-draining abilities, fitting the same fiendish category."
+  },
+  "Vrock": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the demonic, chaotic theme and flying mobility, though with different combat styles."
+  },
+  "monster_key": "husk-demon"
+}

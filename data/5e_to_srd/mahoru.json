@@ -1,0 +1,11 @@
+{
+  "Giant Crocodile": {
+    "relation": "close_cousins",
+    "explanation": "A large, amphibious predator with a powerful bite and aquatic and terrestrial capabilities."
+  },
+  "Giant Wolf Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares pack tactics and blood frenzy-like advantage on attacks against injured foes."
+  },
+  "monster_key": "mahoru"
+}

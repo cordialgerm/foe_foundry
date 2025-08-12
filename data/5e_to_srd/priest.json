@@ -1,0 +1,7 @@
+{
+  "Priest": {
+    "relation": "almost_identical",
+    "explanation": "A Medium humanoid cleric with healing and support spells, holy symbols, and mace attacks."
+  },
+  "monster_key": "priest"
+}

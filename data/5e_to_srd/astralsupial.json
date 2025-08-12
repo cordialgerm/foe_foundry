@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are nimble, medium beasts with teleportation abilities and keen senses."
+  },
+  "Cat": {
+    "relation": "close_cousins",
+    "explanation": "A nimble, agile medium beast with climbing abilities similar to a cat."
+  },
+  "monster_key": "astralsupial"
+}

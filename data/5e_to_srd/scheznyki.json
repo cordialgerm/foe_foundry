@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "A small fey creature associated with forested magical areas and spellcasting."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "A spellcaster with versatile spells and battlefield control similar to the Scheznyki."
+  },
+  "monster_key": "scheznyki"
+}

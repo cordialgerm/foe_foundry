@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "A large, tough giant with melee and ranged attacks, similar to a Hill Giant but with added lightning damage and runic abilities."
+  },
+  "monster_key": "thursir"
+}

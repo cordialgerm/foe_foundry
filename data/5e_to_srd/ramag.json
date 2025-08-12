@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "The Ramag is an agile, tactical humanoid skilled in ranged and melee combat similar to a Scout."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ramag's magical abilities and intelligence align with the concept of a Mage, though it lacks formal spellcasting."
+  },
+  "monster_key": "ramag"
+}

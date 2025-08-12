@@ -1,0 +1,11 @@
+{
+  "Blink Dog": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, agile creatures that use teleportation and create distractions in combat."
+  },
+  "Giant Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the use of poison and agility in attacks, with a focus on disrupting foes."
+  },
+  "monster_key": "slithy-tove"
+}

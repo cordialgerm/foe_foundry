@@ -1,0 +1,11 @@
+{
+  "Yuan-ti Abomination": {
+    "relation": "conceptually_similar",
+    "explanation": "A shapechanging fiend that uses deception and fear, similar to the Snow Terror's mimicry and terrifying presence."
+  },
+  "Bheur Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "A cold-themed fiendish creature associated with winter and fear, matching the Snow Terror's snowy environment and chilling abilities."
+  },
+  "monster_key": "snow-terror"
+}

@@ -1,0 +1,15 @@
+{
+  "Drider": {
+    "relation": "almost_identical",
+    "explanation": "A large spider-like creature with drow features and spellcasting abilities closely matches the Drider."
+  },
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "Shares drow heritage and spellcasting traits, linking it closely to the Drow."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Its shadowy nature and sunlight vulnerability conceptually align with the Shadow."
+  },
+  "monster_key": "shadow-elf-spellcaster-drider"
+}

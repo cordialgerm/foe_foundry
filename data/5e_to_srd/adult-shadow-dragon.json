@@ -1,0 +1,11 @@
+{
+  "Adult Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are adult dragons with dark, shadowy themes and necrotic or acid damage, sharing ambush predator roles."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the shadowy, incorporeal, fear-inducing nature and necrotic damage theme."
+  },
+  "monster_key": "adult-shadow-dragon"
+}

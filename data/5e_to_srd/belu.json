@@ -1,0 +1,11 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "Belu is a Huge giant with strong physical presence and slam attacks similar to a Hill Giant."
+  },
+  "Treant": {
+    "relation": "conceptually_similar",
+    "explanation": "Belu's spellcasting focused on plants and healing aligns conceptually with the Treant's nature-based abilities."
+  },
+  "monster_key": "belu"
+}

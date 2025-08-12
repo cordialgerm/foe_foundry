@@ -1,0 +1,15 @@
+{
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "The Crypt Spider is a cunning, web-dwelling predatory spider similar in nature and abilities to the Giant Spider."
+  },
+  "Swarm of Spiders": {
+    "relation": "mechanically_similar",
+    "explanation": "The Crypt Spider's ability to create a swarm of zombie spiders relates mechanically to the Swarm of Spiders."
+  },
+  "Zombie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Crypt Spider creates zombie spiders, linking it conceptually to the Zombie undead."
+  },
+  "monster_key": "crypt-spider"
+}

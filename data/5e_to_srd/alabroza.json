@@ -1,0 +1,11 @@
+{
+  "Harpy": {
+    "relation": "conceptually_similar",
+    "explanation": "A small flying monstrosity with mobility and predatory behavior similar to a Harpy."
+  },
+  "Vampire Spawn": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the blood-draining and blood-dependent traits with Vampire Spawn."
+  },
+  "monster_key": "alabroza"
+}

@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "The Vampire Assassin is a variant of the Vampire with similar undead traits, charm abilities, regeneration, and mist form."
+  },
+  "Assassin": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the stealthy, lethal combat style and role of a skilled killer, emphasizing assassination tactics."
+  },
+  "monster_key": "vampire-assassin"
+}

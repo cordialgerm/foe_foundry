@@ -1,0 +1,15 @@
+{
+  "Giant Bat": {
+    "relation": "close_cousins",
+    "explanation": "The Skin Bat is a small undead bat-like creature with flight and echolocation similar to a Giant Bat."
+  },
+  "Swarm of Bats": {
+    "relation": "conceptually_similar",
+    "explanation": "The Skin Bat can summon other bats, conceptually similar to a Swarm of Bats."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "The Skin Bat's bite attack that can paralyze is mechanically similar to a Ghoul's paralysis ability."
+  },
+  "monster_key": "skin-bat"
+}

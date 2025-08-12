@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are fiendish demons with combat prowess and resilience, sharing a chaotic evil nature."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead theme and necrotic damage, with a focus on controlling or raising undead."
+  },
+  "Wight": {
+    "relation": "mechanically_similar",
+    "explanation": "Both can raise and command undead minions and have necrotic abilities."
+  },
+  "monster_key": "vetala"
+}

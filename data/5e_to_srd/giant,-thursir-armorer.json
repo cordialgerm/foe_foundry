@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "A large, melee-focused giant with strong physical presence and combat abilities."
+  },
+  "monster_key": "giant,-thursir-armorer"
+}

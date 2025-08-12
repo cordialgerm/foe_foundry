@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Einherjar is a durable, skilled humanoid combatant similar to a Veteran but with added celestial and radiant abilities."
+  },
+  "Planetar": {
+    "relation": "conceptually_similar",
+    "explanation": "The Einherjar shares celestial origins and radiant powers with the Planetar, though it is less powerful and more focused on melee combat."
+  },
+  "monster_key": "einherjar"
+}

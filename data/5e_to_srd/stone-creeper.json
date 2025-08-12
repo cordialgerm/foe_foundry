@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based ambush predators that blend into natural environments and use physical attacks."
+  },
+  "monster_key": "stone-creeper"
+}

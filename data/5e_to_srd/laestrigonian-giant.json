@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "A large, brutish giant wielding a greatclub and known for physical strength, similar to the Laestrigonian Giant."
+  },
+  "monster_key": "laestrigonian-giant"
+}

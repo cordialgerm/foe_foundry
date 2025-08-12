@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs serving as guardians with strong physical presence and melee attacks."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "Both are large constructs designed to protect and defend, with high durability and combat capabilities."
+  },
+  "monster_key": "thornheart-guardian"
+}

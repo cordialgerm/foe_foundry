@@ -1,0 +1,11 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, malevolent fiends with strong combat abilities and a brutal nature."
+  },
+  "Erinyes": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiendish, manipulative, and shapechanging aspects with a focus on deception and combat prowess."
+  },
+  "monster_key": "herald-of-slaughter"
+}

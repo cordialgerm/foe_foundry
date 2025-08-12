@@ -1,0 +1,11 @@
+{
+  "Ogre": {
+    "relation": "almost_identical",
+    "explanation": "A large, brutish giant wielding melee weapons and exhibiting similar physical traits to an Ogre."
+  },
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiendish, intimidating presence and psychic-like abilities such as fear and charm effects."
+  },
+  "monster_key": "one-horned-ogre"
+}

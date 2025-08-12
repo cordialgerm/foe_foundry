@@ -1,0 +1,11 @@
+{
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "Both are cunning, agile humanoids skilled in stealth and tactical combat."
+  },
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the use of psychic and magical abilities to manipulate and incapacitate foes."
+  },
+  "monster_key": "breathstealer"
+}

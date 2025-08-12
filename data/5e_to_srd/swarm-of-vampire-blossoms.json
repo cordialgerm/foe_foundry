@@ -1,0 +1,15 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms with the ability to occupy the same space as other creatures and deal damage over time."
+  },
+  "Vampire": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of draining life and reducing maximum hit points, akin to a vampire's bloodsucking nature."
+  },
+  "Awakened Shrub": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant creatures that can blend into their environment and ambush foes."
+  },
+  "monster_key": "swarm-of-vampire-blossoms"
+}

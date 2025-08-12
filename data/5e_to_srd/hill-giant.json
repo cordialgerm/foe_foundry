@@ -1,0 +1,7 @@
+{
+  "Hill Giant": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a direct match to the Hill Giant, sharing size, behavior, combat style, and environment."
+  },
+  "monster_key": "hill-giant"
+}

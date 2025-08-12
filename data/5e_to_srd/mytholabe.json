@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs designed for combat and defense, with the Mytholabe being a larger, more advanced flying variant."
+  },
+  "Shield Guardian": {
+    "relation": "close_cousins",
+    "explanation": "The Mytholabe shares the role of a durable, protective construct with magic resistance and support capabilities similar to a Shield Guardian."
+  },
+  "monster_key": "mytholabe"
+}

@@ -1,0 +1,11 @@
+{
+  "Hell Hound": {
+    "relation": "close_cousins",
+    "explanation": "The Black Shuck is a large, fiendish canine with fear and curse abilities similar to a Hell Hound's fearsome presence and fiery nature."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares undead and fear-inducing traits with the Wraith, especially its malevolent and incorporeal curse-like qualities."
+  },
+  "monster_key": "black-shuck"
+}

@@ -1,0 +1,15 @@
+{
+  "Polar Bear": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful beast adapted to cold environments with strong physical attacks."
+  },
+  "Winter Wolf": {
+    "relation": "conceptually_similar",
+    "explanation": "A cold-themed, large predatory creature with cold breath and hunting prowess in snowy terrains."
+  },
+  "Ice Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares cold damage immunity and cold-based area attacks with the Ursa Polaris."
+  },
+  "monster_key": "ursa-polaris"
+}

@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Noctiny is a humanoid spellcaster with magical weapon attacks and magic resistance, similar to a Mage's role and abilities."
+  },
+  "Warlock": {
+    "relation": "conceptually_similar",
+    "explanation": "The Noctiny's Eldritch Weapons and magical combat style conceptually resemble a Warlock's eldritch-themed abilities."
+  },
+  "monster_key": "noctiny"
+}

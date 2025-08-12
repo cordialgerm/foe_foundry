@@ -1,0 +1,15 @@
+{
+  "Berserker": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the role of a skirmisher with strong melee attacks and agility."
+  },
+  "Displacer Beast": {
+    "relation": "conceptually_similar",
+    "explanation": "A cat-like, cunning ambusher with magical abilities and agility."
+  },
+  "Satyr": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares charm and manipulative abilities with a fey humanoid form."
+  },
+  "monster_key": "wampus-cat"
+}

@@ -1,0 +1,7 @@
+{
+  "Rust Monster": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Rust Monster exactly in appearance, abilities, and ecological niche."
+  },
+  "monster_key": "rust-monster"
+}

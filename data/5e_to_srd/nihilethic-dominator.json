@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, malevolent undead with ghostly forms and resistances to nonmagical attacks."
+  },
+  "Ghast": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the ability to knock opponents prone with debilitating claw attacks."
+  },
+  "monster_key": "nihilethic-dominator"
+}

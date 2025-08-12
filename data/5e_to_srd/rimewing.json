@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, nature-related creatures with subtle magical or enchanting abilities."
+  },
+  "Sprite": {
+    "relation": "conceptually_similar",
+    "explanation": "Small, charming fey-like creatures with abilities to influence others, similar to the Rimewing's charm effect."
+  },
+  "monster_key": "rimewing"
+}

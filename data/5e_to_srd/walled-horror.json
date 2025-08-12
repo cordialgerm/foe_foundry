@@ -1,0 +1,15 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, immaterial undead that use fear and psychic-like damage to terrorize foes."
+  },
+  "Specter": {
+    "relation": "close_cousins",
+    "explanation": "The Walled Horror shares the undead, incorporeal nature and fear-inducing abilities of the Specter."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are malevolent undead with psychic and fear abilities, though the Walled Horror is uniquely bound to walls."
+  },
+  "monster_key": "walled-horror"
+}

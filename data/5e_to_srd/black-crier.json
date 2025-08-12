@@ -1,0 +1,11 @@
+{
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "The Black Crier is a flying, haunting undead with psychic and necrotic abilities similar to a Ghost."
+  },
+  "Wraith": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are incorporeal undead with a terrifying presence and psychic-like powers, evoking dread and fear."
+  },
+  "monster_key": "black-crier"
+}

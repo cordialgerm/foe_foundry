@@ -1,0 +1,11 @@
+{
+  "Androsphinx": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful and intelligent fey-like creature with tactical combat abilities and magical prowess."
+  },
+  "Hunter Shark": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the concept of a skilled hunter with a focus on tracking and attacking prey."
+  },
+  "monster_key": "lord-of-the-hunt"
+}

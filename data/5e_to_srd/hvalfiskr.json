@@ -1,0 +1,11 @@
+{
+  "Frost Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Hvalfiskr shares frost giant traits and size but adds aquatic and whale-like features."
+  },
+  "Adult White Dragon": {
+    "relation": "conceptually_similar",
+    "explanation": "Both have cold-themed abilities and a powerful presence in cold aquatic environments."
+  },
+  "monster_key": "hvalfiskr"
+}

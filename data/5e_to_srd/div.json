@@ -1,0 +1,7 @@
+{
+  "Dust Mephit": {
+    "relation": "close_cousins",
+    "explanation": "The Div is a small elemental with acid and fire resistance, spellcasting, ambush tactics, and sunlight sensitivity similar to a Dust Mephit."
+  },
+  "monster_key": "div"
+}

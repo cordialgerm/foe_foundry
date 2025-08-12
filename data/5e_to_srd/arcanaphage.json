@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are magical, tentacled creatures that feed on or manipulate magical energy."
+  },
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are flying, incorporeal or ghostly magical creatures associated with arcane realms."
+  },
+  "monster_key": "arcanaphage"
+}

@@ -1,0 +1,11 @@
+{
+  "Green Hag": {
+    "relation": "close_cousins",
+    "explanation": "The Ambush Hag shares the fey hag nature, ambushing tactics, and illusion magic similar to the Green Hag."
+  },
+  "Sea Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey hags with deceptive and ambushing traits, though the Ambush Hag focuses more on illusions and poison."
+  },
+  "monster_key": "ambush-hag"
+}

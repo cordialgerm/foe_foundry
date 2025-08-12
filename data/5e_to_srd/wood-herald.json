@@ -1,0 +1,11 @@
+{
+  "Awakened Shrub": {
+    "relation": "close_cousins",
+    "explanation": "Both are small plant creatures embodying nature and blending into foliage, acting as guardians."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based guardians of natural areas with a connection to vegetation and nature."
+  },
+  "monster_key": "wood-herald"
+}

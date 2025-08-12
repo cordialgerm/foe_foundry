@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs that resemble inanimate objects and serve as guardians with melee attacks."
+  },
+  "Stone Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "A large, durable construct with strong melee attacks and a statue-like appearance."
+  },
+  "monster_key": "walking-statue"
+}

@@ -1,0 +1,7 @@
+{
+  "Octopus": {
+    "relation": "almost_identical",
+    "explanation": "A small sea creature with eight tentacles and the ability to camouflage itself in underwater environments, matching the SRD Octopus closely."
+  },
+  "monster_key": "octopus"
+}

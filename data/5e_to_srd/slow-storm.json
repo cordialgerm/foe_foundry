@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elemental creatures embodying wind and stormy essence with high mobility and control over air."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the elemental nature and area control abilities, though focused on fire rather than lightning and wind."
+  },
+  "monster_key": "slow-storm"
+}

@@ -1,0 +1,11 @@
+{
+  "Wyvern": {
+    "relation": "conceptually_similar",
+    "explanation": "A large flying creature with a dangerous bite and aggressive nature, similar to the Narshark's flying and biting traits."
+  },
+  "Giant Shark": {
+    "relation": "conceptually_similar",
+    "explanation": "A large aquatic predator with a powerful bite, conceptually similar to the Narshark's shark-like physique and piercing bite."
+  },
+  "monster_key": "narshark"
+}

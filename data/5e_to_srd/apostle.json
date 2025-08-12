@@ -1,0 +1,11 @@
+{
+  "Acolyte": {
+    "relation": "close_cousins",
+    "explanation": "Both are divine spellcasters focused on healing and support, with the Apostle being a more powerful and combat-capable variant."
+  },
+  "Priest": {
+    "relation": "close_cousins",
+    "explanation": "The Apostle shares the role of a divine healer and support caster, equipped for combat and specialized in fighting undead."
+  },
+  "monster_key": "apostle"
+}

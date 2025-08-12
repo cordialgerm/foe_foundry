@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, amorphous oozes with resilience and the ability to move through narrow spaces."
+  },
+  "Gray Ooze": {
+    "relation": "close_cousins",
+    "explanation": "Shares the amorphous ooze nature and resistance to damage, though the Blood Ooze has necrotic and healing abilities."
+  },
+  "monster_key": "blood-ooze"
+}

@@ -1,0 +1,7 @@
+{
+  "Scrag": {
+    "relation": "almost_identical",
+    "explanation": "The Lesser Scrag is a variant of the Scrag with similar aquatic, melee, and regenerative traits."
+  },
+  "monster_key": "lesser-scrag"
+}

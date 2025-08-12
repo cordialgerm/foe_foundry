@@ -1,0 +1,11 @@
+{
+  "Bandit Captain": {
+    "relation": "close_cousins",
+    "explanation": "A skilled humanoid combatant leading a group, similar in role and combat style to a pirate captain."
+  },
+  "Veteran": {
+    "relation": "mechanically_similar",
+    "explanation": "A seasoned warrior with multiattack and combat skills, matching the Pirate Captain's combat abilities."
+  },
+  "monster_key": "pirate-captain"
+}

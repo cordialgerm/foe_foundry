@@ -1,0 +1,7 @@
+{
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew Scout matches the SRD Scout in size, role, equipment, and abilities, with only minor descriptive differences."
+  },
+  "monster_key": "scout"
+}

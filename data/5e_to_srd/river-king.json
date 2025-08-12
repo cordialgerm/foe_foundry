@@ -1,0 +1,15 @@
+{
+  "Water Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are magical creatures associated with water and aquatic environments."
+  },
+  "Djinni": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are elemental-related fey-like beings with control over natural forces and spellcasting."
+  },
+  "Archmage": {
+    "relation": "mechanically_similar",
+    "explanation": "The River King\u2019s versatile spellcasting and battlefield control resemble an Archmage\u2019s magical combat abilities."
+  },
+  "monster_key": "river-king"
+}

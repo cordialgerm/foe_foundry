@@ -1,0 +1,15 @@
+{
+  "Green Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures connected to the woods with magical resilience and a strong presence."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "The Green Knight's plate armor and shield evoke the image of a magically animated suit of armor."
+  },
+  "Fey": {
+    "relation": "close_cousins",
+    "explanation": "The Green Knight is a fey creature enforcing order in a natural environment, similar to other fey beings."
+  },
+  "monster_key": "green-knight-of-the-woods"
+}

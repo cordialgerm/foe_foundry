@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are small, whimsical fey creatures associated with enchanting and magical forests."
+  },
+  "Satyr": {
+    "relation": "conceptually_similar",
+    "explanation": "Like the Korrigan, Satyrs are chaotic fey known for charming and enchanting through revelry and performances."
+  },
+  "monster_key": "korrigan"
+}

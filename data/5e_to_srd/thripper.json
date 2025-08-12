@@ -1,0 +1,15 @@
+{
+  "Drow": {
+    "relation": "close_cousins",
+    "explanation": "The Thripper is a magical, cunning, and agile humanoid with fey-related abilities, similar to Drow's nature and spellcasting."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "The Thripper's agility, perception skills, and multiattack resemble the Scout's combat style and mobility."
+  },
+  "Pixie": {
+    "relation": "conceptually_similar",
+    "explanation": "The Thripper's fey nature, flight, and magical abilities conceptually align with the Pixie's characteristics."
+  },
+  "monster_key": "thripper"
+}

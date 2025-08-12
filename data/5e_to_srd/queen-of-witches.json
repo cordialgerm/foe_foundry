@@ -1,0 +1,11 @@
+{
+  "Archmage": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful spellcaster with high-level magic and battlefield control abilities."
+  },
+  "Green Hag": {
+    "relation": "conceptually_similar",
+    "explanation": "A fey witch-like creature with manipulative and magical traits."
+  },
+  "monster_key": "queen-of-witches"
+}

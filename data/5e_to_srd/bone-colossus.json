@@ -1,0 +1,15 @@
+{
+  "Bone Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, intimidating, chaotic evil undead or fiendish creatures with a powerful presence."
+  },
+  "Swarm of Rats": {
+    "relation": "mechanically_similar",
+    "explanation": "The Bone Colossus's ability to split into smaller swarms and swarm-based attacks resembles swarm mechanics."
+  },
+  "Skeleton": {
+    "relation": "close_cousins",
+    "explanation": "The Bone Colossus is an undead creature composed of bones, similar in nature to skeletons but on a gargantuan scale."
+  },
+  "monster_key": "bone-colossus"
+}

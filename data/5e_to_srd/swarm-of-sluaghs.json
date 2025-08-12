@@ -1,0 +1,11 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are swarms with mobility and the ability to occupy the same space as targets, emphasizing ambush tactics."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the chilling touch attack and darkness affinity, with stealth and cold damage traits."
+  },
+  "monster_key": "swarm-of-sluaghs"
+}

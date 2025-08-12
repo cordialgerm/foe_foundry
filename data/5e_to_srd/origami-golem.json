@@ -1,0 +1,11 @@
+{
+  "Clay Golem": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs with durable forms and immunity to many conditions, though the Origami Golem is paper-based and shape-shifting."
+  },
+  "Dragon Turtle": {
+    "relation": "conceptually_similar",
+    "explanation": "The Origami Golem's dragon form and powerful breath attack conceptually resemble the Dragon Turtle's dragon-like form and breath weapon."
+  },
+  "monster_key": "origami-golem"
+}

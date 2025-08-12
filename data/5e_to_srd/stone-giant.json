@@ -1,0 +1,7 @@
+{
+  "Stone Giant": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Stone Giant exactly in size, abilities, environment, and combat style."
+  },
+  "monster_key": "stone-giant"
+}

@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-like creatures that release deadly spores upon death."
+  },
+  "Gibbering Mouther": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares alien and otherworldly traits with psychic and unsettling abilities."
+  },
+  "monster_key": "mi-go"
+}

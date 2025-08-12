@@ -1,0 +1,11 @@
+{
+  "Hydra": {
+    "relation": "almost_identical",
+    "explanation": "A huge multi-headed aquatic monstrosity with regenerative abilities and multiple bite attacks."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fire elemental aspect with its fire breath and fiery nature."
+  },
+  "monster_key": "pyrohydra"
+}

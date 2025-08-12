@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are huge plant creatures that blend into forest environments and use brute strength to grapple and attack."
+  },
+  "monster_key": "nariphon"
+}

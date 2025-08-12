@@ -1,0 +1,7 @@
+{
+  "Ghost": {
+    "relation": "almost_identical",
+    "explanation": "A spectral undead guardian with fear abilities, incorporeal movement, and necrotic attacks closely matches the Ghost."
+  },
+  "monster_key": "spectral-guardian"
+}

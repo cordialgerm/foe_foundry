@@ -1,0 +1,11 @@
+{
+  "Berserker": {
+    "relation": "close_cousins",
+    "explanation": "The Bearfolk Chieftain shares the frenzy and brute melee combat style typical of a Berserker."
+  },
+  "Bandit Captain": {
+    "relation": "mechanically_similar",
+    "explanation": "The Bearfolk Chieftain's leadership abilities and role as a combat leader resemble the Bandit Captain's tactical support."
+  },
+  "monster_key": "bearfolk-chieftain"
+}

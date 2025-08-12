@@ -1,0 +1,11 @@
+{
+  "Minotaur": {
+    "relation": "close_cousins",
+    "explanation": "A large, labyrinth-dwelling monstrosity with melee attacks and a chaotic nature similar to a Minotaur."
+  },
+  "Mage": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares innate spellcasting abilities including damaging and utility spells like acid arrow and misty step."
+  },
+  "monster_key": "labyrinth-keeper"
+}

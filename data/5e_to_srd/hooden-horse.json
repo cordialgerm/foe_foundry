@@ -1,0 +1,11 @@
+{
+  "Nightmare": {
+    "relation": "conceptually_similar",
+    "explanation": "A spectral, undead steed with necrotic and psychic abilities that hunts wrongdoers, similar to the Nightmare's role as a fiendish, supernatural horse."
+  },
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "An undead, spectral entity with chilling presence and necrotic damage, sharing undead and spectral traits with the Wraith."
+  },
+  "monster_key": "hooden-horse"
+}

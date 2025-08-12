@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Angatra is a medium undead bruiser with paralyzing claw attacks and resistances similar to a Wight."
+  },
+  "Ghoul": {
+    "relation": "mechanically_similar",
+    "explanation": "The Angatra's paralyzing claw attacks and agility resemble the Ghoul's paralysis ability and combat style."
+  },
+  "monster_key": "angatra"
+}

@@ -1,0 +1,11 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium oozes with amorphous bodies and acid damage, sharing the ooze creature type and ambusher role."
+  },
+  "Ochre Jelly": {
+    "relation": "close_cousins",
+    "explanation": "Similar amorphous ooze nature with acid damage and the ability to split, representing a related ooze archetype."
+  },
+  "monster_key": "sinoper-ooze"
+}

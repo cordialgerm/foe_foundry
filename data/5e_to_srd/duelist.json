@@ -1,0 +1,11 @@
+{
+  "Assassin": {
+    "relation": "close_cousins",
+    "explanation": "Both are agile, skilled humanoid combatants specializing in finesse weapons and stealth."
+  },
+  "Spy": {
+    "relation": "close_cousins",
+    "explanation": "Shares the traits of agility, deception, and skilled melee combat with finesse weapons."
+  },
+  "monster_key": "duelist"
+}

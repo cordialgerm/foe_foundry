@@ -1,0 +1,11 @@
+{
+  "Swarm of Insects": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small creatures that attack as a single unit, with the Clockwork Beetle Swarm being a mechanical variant."
+  },
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs with mechanical or magical origins, emphasizing durability and resilience."
+  },
+  "monster_key": "clockwork-beetle-swarm"
+}

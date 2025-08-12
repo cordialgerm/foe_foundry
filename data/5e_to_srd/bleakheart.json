@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "The Bleakheart is a haunting undead with psychic abilities and stealth, similar in theme to a Wraith's incorporeal and fear-inducing nature."
+  },
+  "Ghost": {
+    "relation": "conceptually_similar",
+    "explanation": "The Bleakheart's spectral form and manipulation of thoughts and illusions conceptually resemble a Ghost's haunting presence and ethereal abilities."
+  },
+  "monster_key": "bleakheart"
+}

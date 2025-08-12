@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic creatures with grappling abilities and tentacle-like attacks."
+  },
+  "Giant Crocodile": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large aquatic ambush predators with powerful bite attacks and the ability to restrain prey."
+  },
+  "monster_key": "water-leaper"
+}

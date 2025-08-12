@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "conceptually_similar",
+    "explanation": "A large celestial being with powerful abilities and a radiant presence, similar in celestial nature but differing in alignment and necrotic focus."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "A shadowy undead creature that instills fear and uses necrotic damage, sharing thematic elements of darkness and death."
+  },
+  "monster_key": "shadow-of-death"
+}

@@ -1,0 +1,20 @@
+{
+  "Deep Gnome": {
+    "relation": "close_cousins",
+    "explanation": "A gnome humanoid with cunning and magical abilities, sharing the small humanoid nature."
+  },
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "The Devilbound Gnome often has an imp bound to it and commands devils, linking it closely to the imp fiend."
+  },
+  "Devilbound Gnome": {},
+  "Archmage": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful spellcaster with high Charisma and manipulation skills, similar to an Archmage's magical prowess."
+  },
+  "Barbed Devil": {
+    "relation": "conceptually_similar",
+    "explanation": "A fiendish creature associated with devils, reflecting the Devilbound Gnome's fiendish nature and devil summoning."
+  },
+  "monster_key": "devilbound-gnome"
+}

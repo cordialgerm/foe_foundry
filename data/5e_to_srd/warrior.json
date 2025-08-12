@@ -1,0 +1,7 @@
+{
+  "Bandit": {
+    "relation": "almost_identical",
+    "explanation": "A medium humanoid combatant skilled in melee and ranged attacks with a spear, similar to a Bandit."
+  },
+  "monster_key": "warrior"
+}

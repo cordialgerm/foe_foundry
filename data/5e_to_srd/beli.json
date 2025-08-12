@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Beli is a small, agile fey with flying ability and stealth similar to a Sprite."
+  },
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "The Beli shares cold elemental traits and icy attacks like the Ice Mephit."
+  },
+  "monster_key": "beli"
+}

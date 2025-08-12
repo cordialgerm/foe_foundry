@@ -1,0 +1,15 @@
+{
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are large chaotic evil fiends with melee attacks and a dangerous presence."
+  },
+  "Imp": {
+    "relation": "conceptually_similar",
+    "explanation": "Small fiend known for stealth and cunning, similar in ambush tactics and chaotic nature."
+  },
+  "Quasit": {
+    "relation": "conceptually_similar",
+    "explanation": "A small fiend with stealth and shapechanging abilities, sharing the sneaky and ambush aspects."
+  },
+  "monster_key": "spawn-of-alquam"
+}

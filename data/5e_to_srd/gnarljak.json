@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs animated by magic, with the Gnarljak being a small, stealthy ambusher like an animated suit of armor."
+  },
+  "Rug of Smothering": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gnarljak resembles a trap-like construct that ambushes and restrains prey, similar to the rug that grapples and suffocates."
+  },
+  "monster_key": "gnarljak"
+}

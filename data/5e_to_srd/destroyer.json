@@ -1,0 +1,11 @@
+{
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Destroyer is a resilient, skilled humanoid melee combatant similar to a Veteran in combat role and equipment."
+  },
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "The Destroyer is an undead humanoid commanding undead minions and dealing necrotic damage like a Wight."
+  },
+  "monster_key": "destroyer"
+}

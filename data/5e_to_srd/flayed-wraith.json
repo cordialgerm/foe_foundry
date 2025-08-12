@@ -1,0 +1,7 @@
+{
+  "Wraith": {
+    "relation": "almost_identical",
+    "explanation": "A tormented undead spirit that hovers, deals necrotic damage, and instills fear, similar to a Wraith."
+  },
+  "monster_key": "flayed-wraith"
+}

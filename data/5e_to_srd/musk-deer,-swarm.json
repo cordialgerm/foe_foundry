@@ -1,0 +1,7 @@
+{
+  "Swarm of Rats": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small beasts that occupy the same space and use numbers and mobility to overwhelm foes."
+  },
+  "monster_key": "musk-deer,-swarm"
+}

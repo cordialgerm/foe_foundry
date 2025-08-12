@@ -1,0 +1,11 @@
+{
+  "Giant Ape": {
+    "relation": "close_cousins",
+    "explanation": "A large, powerful primate with climbing and walking abilities similar to the Sasquatch."
+  },
+  "Berserker": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the Sasquatch's tenacity, multiple melee attacks, and fear-inducing combat presence."
+  },
+  "monster_key": "sasquatch"
+}

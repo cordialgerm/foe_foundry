@@ -1,0 +1,7 @@
+{
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "A huge giant with fire immunity and greatsword attacks, enhanced with fiery magical abilities."
+  },
+  "monster_key": "fire-giant-war-priest"
+}

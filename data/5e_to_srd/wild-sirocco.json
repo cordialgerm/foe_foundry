@@ -1,0 +1,11 @@
+{
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "A large flying elemental immune to fire with fire damage abilities, sharing the elemental and fire theme."
+  },
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "An elemental associated with wind and high mobility, similar to the Wild Sirocco's wind and movement traits."
+  },
+  "monster_key": "wild-sirocco"
+}

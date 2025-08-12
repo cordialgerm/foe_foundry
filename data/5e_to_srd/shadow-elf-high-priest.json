@@ -1,0 +1,11 @@
+{
+  "Acolyte": {
+    "relation": "close_cousins",
+    "explanation": "A Shadow Elf High Priest is a spellcasting humanoid cleric similar in role to an Acolyte but more powerful and shadow-themed."
+  },
+  "Priest": {
+    "relation": "almost_identical",
+    "explanation": "The Shadow Elf High Priest closely resembles a Priest with enhanced spellcasting, shadow magic, and battlefield control abilities."
+  },
+  "monster_key": "shadow-elf-high-priest"
+}

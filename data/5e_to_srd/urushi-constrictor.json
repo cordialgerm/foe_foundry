@@ -1,0 +1,11 @@
+{
+  "Giant Constrictor Snake": {
+    "relation": "close_cousins",
+    "explanation": "Both are large constrictor predators that grapple and restrain prey, sharing similar ambush and constriction mechanics."
+  },
+  "Ankheg": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, burrowing or jungle-adapted monstrosities with poisonous attacks and ambush predator roles."
+  },
+  "monster_key": "urushi-constrictor"
+}

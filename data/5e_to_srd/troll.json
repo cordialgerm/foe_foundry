@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Troll exactly in size, abilities, regeneration, and combat style."
+  },
+  "monster_key": "troll"
+}

@@ -1,0 +1,11 @@
+{
+  "Wraith": {
+    "relation": "close_cousins",
+    "explanation": "Both are vengeful undead spirits with incorporeal movement and psychic-like abilities."
+  },
+  "Specter": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead spirits that manipulate and terrify the living, often found in haunted locations."
+  },
+  "monster_key": "beheaded-vengeful-spirit"
+}

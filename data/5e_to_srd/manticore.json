@@ -1,0 +1,7 @@
+{
+  "Manticore": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Manticore's description, abilities, and behavior closely, including its lion body, bat wings, barbed tail spikes, and territorial aggression."
+  },
+  "monster_key": "manticore"
+}

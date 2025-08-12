@@ -1,0 +1,11 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "The Spark is a tiny elemental with high mobility and elemental nature similar to an Air Elemental."
+  },
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "The Spark's nimble, elusive nature and ability to inhabit humanoids is conceptually similar to the Invisible Stalker's stealth and ethereal qualities."
+  },
+  "monster_key": "spark"
+}

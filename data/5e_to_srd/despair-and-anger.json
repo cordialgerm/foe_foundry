@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "A large celestial with powerful combat abilities and truesight, sharing the celestial nature and formidable presence."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "A powerful celestial embodying divine aspects and combat prowess, similar in majesty and role but differing in dual nature and damage types."
+  },
+  "monster_key": "despair-and-anger"
+}

@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large tentacled monstrosities with beak-like features and aquatic or dark environment predation."
+  },
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Shares the tentacle-based attack style and large size, though the moth aspect differs."
+  },
+  "monster_key": "derendian-moth-abomination"
+}

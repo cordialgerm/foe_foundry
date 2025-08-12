@@ -1,0 +1,11 @@
+{
+  "Drider": {
+    "relation": "close_cousins",
+    "explanation": "Both are aberrations with spider-like traits, climbing ability, and web-related features."
+  },
+  "Darkmantle": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the theme of darkness manipulation and ambush tactics in shadowy environments."
+  },
+  "monster_key": "transcendent-lunarchida"
+}

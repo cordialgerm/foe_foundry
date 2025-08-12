@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are magical constructs with humanoid forms designed for combat and protection."
+  },
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a flying, amorphous, magical form with force-based attacks and high mobility."
+  },
+  "monster_key": "manastorm-golem"
+}

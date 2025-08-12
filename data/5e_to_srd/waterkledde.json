@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, water-based creatures with swimming and flying capabilities."
+  },
+  "Barbed Devil": {
+    "relation": "close_cousins",
+    "explanation": "Both are chaotic evil fiends with fear-inducing abilities and grappling attacks."
+  },
+  "monster_key": "waterkledde"
+}

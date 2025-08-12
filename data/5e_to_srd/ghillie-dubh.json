@@ -1,0 +1,11 @@
+{
+  "Deva": {
+    "relation": "close_cousins",
+    "explanation": "The Ghillie Dubh is a lawful good celestial protector with strong perception and forest ties, similar to a Deva's role as a celestial guardian."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ghillie Dubh's forest-dwelling nature and ability to communicate with plants and animals conceptually align with the Dryad's fey connection to trees."
+  },
+  "monster_key": "ghillie-dubh"
+}

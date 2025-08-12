@@ -1,0 +1,11 @@
+{
+  "Unicorn": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, graceful creatures with magical horns and hooves, embodying elegance and threat."
+  },
+  "Shadow": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the use of darkness and stealth abilities to gain tactical advantage in combat."
+  },
+  "monster_key": "shadhavar"
+}

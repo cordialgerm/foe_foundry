@@ -1,0 +1,11 @@
+{
+  "Vrock": {
+    "relation": "close_cousins",
+    "explanation": "Both are large, chaotic evil fiends with flying capabilities and multiattack features."
+  },
+  "Quasit": {
+    "relation": "conceptually_similar",
+    "explanation": "Small fiendish creatures with shapechanging or swarm-like traits, sharing chaotic evil alignment."
+  },
+  "monster_key": "culicoid"
+}

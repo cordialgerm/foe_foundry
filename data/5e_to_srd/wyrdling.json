@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "conceptually_similar",
+    "explanation": "The Wyrdling is a mystical humanoid with psychic abilities and fate manipulation, similar to a Mage's arcane spellcasting and intelligence."
+  },
+  "Cult Fanatic": {
+    "relation": "mechanically_similar",
+    "explanation": "The Wyrdling's role as a psychic humanoid influencing fate aligns with the Cult Fanatic's spellcasting and thematic devotion."
+  },
+  "monster_key": "wyrdling"
+}

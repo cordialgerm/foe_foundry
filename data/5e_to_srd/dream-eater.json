@@ -1,0 +1,11 @@
+{
+  "Nightmare": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are nightmare-themed fiends associated with dreams and fear, with flying and a sinister presence."
+  },
+  "Succubus": {
+    "relation": "close_cousins",
+    "explanation": "Both are cunning, deceptive fiends with charm abilities and high charisma used to manipulate victims."
+  },
+  "monster_key": "dream-eater"
+}

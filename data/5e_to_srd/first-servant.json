@@ -1,0 +1,11 @@
+{
+  "Cleric": {
+    "relation": "close_cousins",
+    "explanation": "The First Servant is a divine humanoid spellcaster with martial abilities, similar to a Cleric's blend of combat and divine magic."
+  },
+  "Knight": {
+    "relation": "close_cousins",
+    "explanation": "The First Servant functions as a frontline bruiser with high AC and martial prowess, akin to a Knight's combat role."
+  },
+  "monster_key": "first-servant"
+}

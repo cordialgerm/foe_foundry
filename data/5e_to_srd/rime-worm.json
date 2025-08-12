@@ -1,0 +1,11 @@
+{
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are cold-themed elemental creatures with icy abilities and a connection to cold environments."
+  },
+  "Earth Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares burrowing movement and elemental nature, though the Rime Worm adds cold damage and ice effects."
+  },
+  "monster_key": "rime-worm"
+}

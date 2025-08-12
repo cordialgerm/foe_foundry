@@ -1,0 +1,7 @@
+{
+  "Bugbear": {
+    "relation": "almost_identical",
+    "explanation": "The Bugbear Champion is a stronger, more tactical variant of the standard Bugbear with similar stealth and melee combat traits."
+  },
+  "monster_key": "bugbear-champion"
+}

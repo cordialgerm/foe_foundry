@@ -1,0 +1,11 @@
+{
+  "Giant Eagle": {
+    "relation": "conceptually_similar",
+    "explanation": "A large flying beast with strong physical attacks and a presence in forested areas."
+  },
+  "Giant Vulture": {
+    "relation": "conceptually_similar",
+    "explanation": "A large bird with a fearsome screech and aggressive nature, fitting the Jubjub Bird's intimidating scream."
+  },
+  "monster_key": "jubjub-bird"
+}

@@ -1,0 +1,11 @@
+{
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are aberrations with tentacle-like appendages and acid-related abilities."
+  },
+  "Phase Spider": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares ethereal movement and paralysis abilities with the Moonweb."
+  },
+  "monster_key": "moonweb"
+}

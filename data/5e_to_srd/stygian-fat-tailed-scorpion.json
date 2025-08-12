@@ -1,0 +1,7 @@
+{
+  "Giant Scorpion": {
+    "relation": "close_cousins",
+    "explanation": "A small, poisonous scorpion with multiattack and a potent sting similar to the Giant Scorpion but scaled down in size and power."
+  },
+  "monster_key": "stygian-fat-tailed-scorpion"
+}

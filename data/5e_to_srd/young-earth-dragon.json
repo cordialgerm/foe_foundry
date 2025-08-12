@@ -1,0 +1,11 @@
+{
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Both are young dragons with a breath weapon and similar size, but the Young Earth Dragon has earth and camouflage abilities instead of acid breath."
+  },
+  "Earth Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Young Earth Dragon shares earth and burrowing traits with the Earth Elemental, emphasizing its connection to rocky terrain and earth magic."
+  },
+  "monster_key": "young-earth-dragon"
+}

@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are gargantuan aquatic monstrosities with tentacle-like features and the ability to grapple or swallow prey."
+  },
+  "Kraken": {
+    "relation": "conceptually_similar",
+    "explanation": "The Gigantura shares the concept of a massive aquatic predator with powerful tentacles and swallowing abilities like the Kraken."
+  },
+  "monster_key": "gigantura"
+}

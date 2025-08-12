@@ -1,0 +1,23 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are powerful, flying elemental creatures embodying raw elemental forces."
+  },
+  "Fire Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Shares the elemental nature and powerful magical attacks with immunity to various damage types."
+  },
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large elemental beings with resistances and the ability to control elemental forces."
+  },
+  "Earth Elemental": {
+    "relation": "close_cousins",
+    "explanation": "A gargantuan elemental embodying raw power and resilience, similar to the Primordial Matriarch."
+  },
+  "Magma Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Both summon and command smaller elemental creatures to assist in battle."
+  },
+  "monster_key": "primordial-matriarch"
+}

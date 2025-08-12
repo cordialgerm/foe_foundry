@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are forest-associated creatures with nature-themed magic and stealth abilities."
+  },
+  "Druid": {
+    "relation": "conceptually_similar",
+    "explanation": "The Alseid shares spellcasting and nature affinity similar to Druids."
+  },
+  "monster_key": "alseid"
+}

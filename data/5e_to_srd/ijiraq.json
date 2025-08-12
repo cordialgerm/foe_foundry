@@ -1,0 +1,15 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures with elusive and tricky natures, often found in mystical environments."
+  },
+  "Druid": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares shapeshifting abilities and connection to nature, similar to the Ijiraq's polymorph and beast forms."
+  },
+  "Invisible Stalker": {
+    "relation": "mechanically_similar",
+    "explanation": "Both can turn invisible and use stealth to ambush foes, emphasizing elusive combat tactics."
+  },
+  "monster_key": "ijiraq"
+}

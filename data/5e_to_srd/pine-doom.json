@@ -1,0 +1,7 @@
+{
+  "Shambling Mound": {
+    "relation": "close_cousins",
+    "explanation": "Both are large plant creatures that ambush prey and use grappling abilities, with the Pine Doom having a tree-like camouflage and siege capabilities."
+  },
+  "monster_key": "pine-doom"
+}

@@ -1,0 +1,11 @@
+{
+  "Zombie": {
+    "relation": "close_cousins",
+    "explanation": "The Blood Zombie is an undead creature similar to a Zombie but with added blood drain and regenerative abilities."
+  },
+  "Ghoul": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead, life-draining melee combat concept with the Blood Zombie."
+  },
+  "monster_key": "blood-zombie"
+}

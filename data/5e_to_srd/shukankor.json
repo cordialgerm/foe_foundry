@@ -1,0 +1,11 @@
+{
+  "Doppelganger": {
+    "relation": "conceptually_similar",
+    "explanation": "The Shukankor shares the concept of creating duplicates and telepathic communication similar to a Doppelganger's shapechanging and mimicry."
+  },
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aberrations with telepathic abilities and a connection to dark, chaotic entities."
+  },
+  "monster_key": "shukankor"
+}

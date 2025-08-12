@@ -1,0 +1,19 @@
+{
+  "Dust Mephit": {
+    "relation": "close_cousins",
+    "explanation": "A small elemental humanoid with spellcasting and elemental damage abilities."
+  },
+  "Magma Mephit": {
+    "relation": "close_cousins",
+    "explanation": "A small elemental creature with fire-based spellcasting and elemental traits."
+  },
+  "Ice Mephit": {
+    "relation": "close_cousins",
+    "explanation": "A small elemental humanoid with cold elemental powers and spellcasting."
+  },
+  "Steam Mephit": {
+    "relation": "close_cousins",
+    "explanation": "A small elemental creature with spellcasting and elemental damage abilities."
+  },
+  "monster_key": "initiate-of-the-elder-elementals"
+}

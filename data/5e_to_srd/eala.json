@@ -1,0 +1,11 @@
+{
+  "Magma Mephit": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, agile fire-themed creatures with a fire breath attack and flying ability."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the fiery nature and elemental fire abilities, though the Eala is smaller and more agile."
+  },
+  "monster_key": "eala"
+}

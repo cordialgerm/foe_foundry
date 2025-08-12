@@ -1,0 +1,11 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Merchant Captain is a charismatic humanoid spellcaster with versatile spells and battlefield manipulation similar to a Mage."
+  },
+  "Veteran": {
+    "relation": "close_cousins",
+    "explanation": "The Merchant Captain is a skilled, resourceful leader with combat abilities and a rapier, akin to a Veteran warrior."
+  },
+  "monster_key": "merchant-captain"
+}

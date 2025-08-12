@@ -1,0 +1,11 @@
+{
+  "Black Dragon Wyrmling": {
+    "relation": "close_cousins",
+    "explanation": "A medium dragon with dark scales and poison breath, adapted to dark environments."
+  },
+  "Young Black Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares poison damage and dark habitat traits typical of black dragons."
+  },
+  "monster_key": "cave-dragon-wyrmling"
+}

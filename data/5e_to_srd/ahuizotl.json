@@ -1,0 +1,11 @@
+{
+  "Giant Octopus": {
+    "relation": "close_cousins",
+    "explanation": "Both are aquatic creatures with tentacle-based grappling abilities and ambush tactics."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "The spiky coat that damages attackers is similar in concept to a swarm that harms on contact."
+  },
+  "monster_key": "ahuizotl"
+}

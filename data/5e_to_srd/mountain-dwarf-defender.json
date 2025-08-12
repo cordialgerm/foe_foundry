@@ -1,0 +1,7 @@
+{
+  "Knight": {
+    "relation": "almost_identical",
+    "explanation": "A sturdy, brave humanoid warrior with high AC, melee combat skills, and inspiring allies, matching the Knight's role and equipment."
+  },
+  "monster_key": "mountain-dwarf-defender"
+}

@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, nimble fey creatures with stealth and evasion abilities."
+  },
+  "Ice Mephit": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares cold damage and icy thematic elements, though Mephits are elemental rather than fey."
+  },
+  "monster_key": "ice-bogie"
+}

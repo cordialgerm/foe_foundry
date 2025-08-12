@@ -1,0 +1,11 @@
+{
+  "Vampire": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are undead creatures associated with blood draining and have a charismatic, dangerous presence."
+  },
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "The Ortifex is a flying undead with incorporeal and hypnotic traits similar to a Ghost."
+  },
+  "monster_key": "ortifex"
+}

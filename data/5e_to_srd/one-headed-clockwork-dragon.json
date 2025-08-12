@@ -1,0 +1,11 @@
+{
+  "Adult Red Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A mechanical dragon with fire breath and powerful physical attacks resembles an Adult Red Dragon in combat style and elemental damage."
+  },
+  "Iron Golem": {
+    "relation": "close_cousins",
+    "explanation": "As a Large construct with high durability, immunities, and siege capabilities, it shares traits with the Iron Golem."
+  },
+  "monster_key": "one-headed-clockwork-dragon"
+}

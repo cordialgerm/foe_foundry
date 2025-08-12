@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "conceptually_similar",
+    "explanation": "The Ahu-Nixta Cataphract uses clockwork armor and has a mechanical aspect similar to Animated Armor."
+  },
+  "Aboleth": {
+    "relation": "close_cousins",
+    "explanation": "Both are aberrations with intelligence and spellcasting abilities."
+  },
+  "monster_key": "ahu-nixta-cataphract"
+}

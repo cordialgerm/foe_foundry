@@ -1,0 +1,11 @@
+{
+  "Couatl": {
+    "relation": "conceptually_similar",
+    "explanation": "A small celestial creature with magical abilities and a protective role, though Couatl is not aquatic."
+  },
+  "Water Elemental": {
+    "relation": "mechanically_similar",
+    "explanation": "An elemental with strong swimming ability and aquatic nature, sharing the underwater movement aspect."
+  },
+  "monster_key": "pescavitus"
+}

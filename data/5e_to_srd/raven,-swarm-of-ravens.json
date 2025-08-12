@@ -1,0 +1,7 @@
+{
+  "Swarm of Ravens": {
+    "relation": "almost_identical",
+    "explanation": "A medium swarm of tiny ravens that disrupts spellcasting and occupies other creatures' spaces, matching the Swarm of Ravens closely."
+  },
+  "monster_key": "raven,-swarm-of-ravens"
+}

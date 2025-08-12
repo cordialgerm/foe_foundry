@@ -1,0 +1,11 @@
+{
+  "Duergar": {
+    "relation": "close_cousins",
+    "explanation": "The Derro, Hellforged is a small, lawful evil humanoid from the Underdark with resistances and combat prowess similar to Duergar."
+  },
+  "Fire Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares strong fire affinity and immunity, representing the elemental fire aspect of the Derro, Hellforged."
+  },
+  "monster_key": "derro,-hellforged"
+}

@@ -1,0 +1,7 @@
+{
+  "Minotaur Skeleton": {
+    "relation": "almost_identical",
+    "explanation": "An undead skeletal minotaur wielding rusted weapons with charge and knock prone abilities."
+  },
+  "monster_key": "minotaur-skeleton"
+}

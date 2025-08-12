@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are small, elusive fey creatures associated with enchanted woodlands and possessing natural agility."
+  },
+  "Sprite": {
+    "relation": "close_cousins",
+    "explanation": "The Quickstep shares the small size, fey nature, and agility of the Sprite, emphasizing speed and elusive combat."
+  },
+  "monster_key": "quickstep"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "The Akaasit is a medium construct with natural armor and melee attacks similar to Animated Armor."
+  },
+  "Iron Golem": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are magical constructs with high durability and resistance to magic, though the Akaasit is more agile and tactical."
+  },
+  "monster_key": "akaasit"
+}

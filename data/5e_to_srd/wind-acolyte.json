@@ -1,0 +1,11 @@
+{
+  "Acolyte": {
+    "relation": "close_cousins",
+    "explanation": "The Wind Acolyte is a humanoid spellcaster similar to an Acolyte but with air and wind-themed abilities and flight."
+  },
+  "Air Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "The Wind Acolyte embodies air and wind manipulation like an Air Elemental, sharing elemental and mobility traits."
+  },
+  "monster_key": "wind-acolyte"
+}

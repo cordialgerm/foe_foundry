@@ -1,0 +1,7 @@
+{
+  "Vampire": {
+    "relation": "almost_identical",
+    "explanation": "A medium undead vampire with life-draining bite and claw attacks, healing from necrotic damage, and vulnerabilities to sunlight and wooden stakes."
+  },
+  "monster_key": "vampiric-vanguard"
+}

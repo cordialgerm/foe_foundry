@@ -1,0 +1,7 @@
+{
+  "Black Pudding": {
+    "relation": "close_cousins",
+    "explanation": "The Crimson Jelly is an ooze with necrotic damage and amorphous form similar to the Black Pudding, but differs in size, color, and invisibility."
+  },
+  "monster_key": "crimson-jelly"
+}

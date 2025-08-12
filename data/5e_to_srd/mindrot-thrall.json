@@ -1,0 +1,11 @@
+{
+  "Violet Fungus": {
+    "relation": "close_cousins",
+    "explanation": "Both are fungal plant creatures that spread disease and have spore-based attacks."
+  },
+  "Shambling Mound": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are plant-based creatures with a menacing presence and connection to decaying vegetation."
+  },
+  "monster_key": "mindrot-thrall"
+}

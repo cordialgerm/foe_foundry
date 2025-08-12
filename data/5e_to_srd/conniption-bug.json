@@ -1,0 +1,11 @@
+{
+  "Giant Crab": {
+    "relation": "close_cousins",
+    "explanation": "A small amphibious beast with barbed claws and grappling abilities similar to a Giant Crab."
+  },
+  "Giant Frog": {
+    "relation": "conceptually_similar",
+    "explanation": "An amphibious small beast with leaping ability and swimming movement like a Giant Frog."
+  },
+  "monster_key": "conniption-bug"
+}

@@ -1,0 +1,11 @@
+{
+  "Wight": {
+    "relation": "close_cousins",
+    "explanation": "A powerful undead with necrotic attacks and healing prevention, similar to a Wight's life-draining abilities."
+  },
+  "Guardian Naga": {
+    "relation": "conceptually_similar",
+    "explanation": "Functions as a guardian with powerful melee attacks and domain protection, akin to a Guardian Naga's role."
+  },
+  "monster_key": "underworld-sentinel"
+}

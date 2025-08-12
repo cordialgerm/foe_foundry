@@ -1,0 +1,11 @@
+{
+  "Planetar": {
+    "relation": "close_cousins",
+    "explanation": "The Chained Angel is a powerful celestial similar to a Planetar but with a neutral evil alignment and fiery, chained theme."
+  },
+  "Solar": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are powerful celestial beings with strong magical abilities and radiant attacks, though the Chained Angel has a darker, chained motif."
+  },
+  "monster_key": "chained-angel"
+}

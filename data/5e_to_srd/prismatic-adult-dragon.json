@@ -1,0 +1,11 @@
+{
+  "Adult Gold Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A majestic, powerful dragon with radiant breath and spellcasting abilities similar to the Prismatic Adult Dragon."
+  },
+  "Adult Silver Dragon": {
+    "relation": "close_cousins",
+    "explanation": "A majestic dragon with magical abilities and a fear-inducing presence, sharing thematic elements with the Prismatic Adult Dragon."
+  },
+  "monster_key": "prismatic-adult-dragon"
+}

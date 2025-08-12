@@ -1,0 +1,11 @@
+{
+  "Cloud Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Void Giant is a huge, powerful giant with spellcasting abilities similar to the Cloud Giant."
+  },
+  "Fire Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Void Giant shares the giant type and strong melee combat traits with the Fire Giant."
+  },
+  "monster_key": "void-giant"
+}

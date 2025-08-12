@@ -1,0 +1,7 @@
+{
+  "Berserker": {
+    "relation": "conceptually_similar",
+    "explanation": "A gigantic, chaotic humanoid focused on melee combat and raw physicality, similar to a Berserker's fighting style."
+  },
+  "monster_key": "bar-brawl"
+}

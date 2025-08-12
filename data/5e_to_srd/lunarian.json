@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "The Lunarian is a magical fey with radiant abilities and a connection to natural light, similar to Dryads as fey guardians."
+  },
+  "Will-o-Wisp": {
+    "relation": "conceptually_similar",
+    "explanation": "The Lunarian's radiant light and elusive presence conceptually resemble the Will-o-Wisp's glowing, ethereal nature."
+  },
+  "monster_key": "lunarian"
+}

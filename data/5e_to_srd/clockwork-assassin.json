@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are constructs with armor-like bodies designed for combat and stealth."
+  },
+  "Assassin": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the stealthy assassin role and critical hit advantage against surprised foes."
+  },
+  "monster_key": "clockwork-assassin"
+}

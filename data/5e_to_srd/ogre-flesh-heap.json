@@ -1,0 +1,7 @@
+{
+  "Ogre Zombie": {
+    "relation": "almost_identical",
+    "explanation": "A large undead ogre with brute strength and Undead Fortitude, similar to the Ogre Flesh Heap."
+  },
+  "monster_key": "ogre-flesh-heap"
+}

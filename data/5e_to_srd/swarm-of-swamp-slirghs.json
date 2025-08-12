@@ -1,0 +1,11 @@
+{
+  "Water Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are elemental creatures capable of moving through water and inhabiting aquatic environments."
+  },
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are swarming creatures that deal poison damage and can occupy the same space as other creatures."
+  },
+  "monster_key": "swarm-of-swamp-slirghs"
+}

@@ -1,0 +1,11 @@
+{
+  "Sprite": {
+    "relation": "almost_identical",
+    "explanation": "A tiny, whimsical fey creature with flying ability, magic resistance, and the power to curse and bless, closely matching the Pixie's description."
+  },
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are fey creatures associated with nature and enchanted forests, sharing thematic connections despite differences in size and abilities."
+  },
+  "monster_key": "pixie"
+}

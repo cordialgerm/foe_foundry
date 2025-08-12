@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "Both are fey creatures associated with natural environments and possess spellcasting and stealth abilities."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the role of a skirmisher with high Dexterity, stealth skills, and effective ranged attacks."
+  },
+  "monster_key": "mountain-nymph"
+}

@@ -1,0 +1,7 @@
+{
+  "Druid": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the shapeshifting ability and connection to animals, though the Herd Skulker is a monstrosity rather than a spellcaster."
+  },
+  "monster_key": "herd-skulker"
+}

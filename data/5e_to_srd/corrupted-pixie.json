@@ -1,0 +1,11 @@
+{
+  "Imp": {
+    "relation": "close_cousins",
+    "explanation": "A tiny fiend with innate spellcasting, invisibility, and a deceptive nature similar to an Imp."
+  },
+  "Pixie": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the tiny, flying, magical nature and chaotic trickster theme of a Pixie, but corrupted and fiendish."
+  },
+  "monster_key": "corrupted-pixie"
+}

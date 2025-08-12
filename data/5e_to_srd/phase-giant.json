@@ -1,0 +1,15 @@
+{
+  "Ettin": {
+    "relation": "close_cousins",
+    "explanation": "The Phase Giant is a huge giant with melee and ranged attacks, similar in size and combat style to an Ettin."
+  },
+  "Invisible Stalker": {
+    "relation": "conceptually_similar",
+    "explanation": "The Phase Giant's ability to shift between the Material and Ethereal Planes is conceptually similar to the Invisible Stalker's ethereal nature."
+  },
+  "Hill Giant": {
+    "relation": "close_cousins",
+    "explanation": "The Phase Giant shares the giant type and large size with Hill Giants, including the use of rocks as ranged attacks."
+  },
+  "monster_key": "phase-giant"
+}

@@ -1,0 +1,7 @@
+{
+  "Thug": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew thug closely matches the SRD Thug in role, equipment, combat style, and abilities."
+  },
+  "monster_key": "thug"
+}

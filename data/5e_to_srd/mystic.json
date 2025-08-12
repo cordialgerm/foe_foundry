@@ -1,0 +1,15 @@
+{
+  "Mage": {
+    "relation": "close_cousins",
+    "explanation": "The Mystic is a humanoid arcane spellcaster with cunning and magical abilities similar to a Mage."
+  },
+  "Cult Fanatic": {
+    "relation": "conceptually_similar",
+    "explanation": "The Mystic's dark arcane knowledge and necrotic damage align with the Cult Fanatic's dark magic and fanaticism."
+  },
+  "Shadow": {
+    "relation": "conceptually_similar",
+    "explanation": "The Mystic's necrotic powers and terror-inducing abilities conceptually resemble the shadowy, necrotic nature of a Shadow."
+  },
+  "monster_key": "mystic"
+}

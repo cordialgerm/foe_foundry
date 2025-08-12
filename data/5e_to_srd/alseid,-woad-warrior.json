@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are nature-affinity forest dwellers with perceptive and fearsome traits."
+  },
+  "Scout": {
+    "relation": "close_cousins",
+    "explanation": "Shares the skirmisher role with agility, perception skills, and multiattack combat style."
+  },
+  "monster_key": "alseid,-woad-warrior"
+}

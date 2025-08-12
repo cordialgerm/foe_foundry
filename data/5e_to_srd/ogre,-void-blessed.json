@@ -1,0 +1,7 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "A large chaotic giant with similar physical traits and role, but with added void-themed necrotic and psychic abilities."
+  },
+  "monster_key": "ogre,-void-blessed"
+}

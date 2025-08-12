@@ -1,0 +1,11 @@
+{
+  "Banshee": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are chaotic undead with incapacitating abilities related to sound and a sinister presence."
+  },
+  "Ghost": {
+    "relation": "close_cousins",
+    "explanation": "Both are incorporeal undead with spellcasting and manipulation abilities, often haunting eerie locations."
+  },
+  "monster_key": "grim-jester"
+}

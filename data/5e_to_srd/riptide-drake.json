@@ -1,0 +1,11 @@
+{
+  "Dragon Turtle": {
+    "relation": "close_cousins",
+    "explanation": "Both are large aquatic dragons with powerful water-based attacks and amphibious traits."
+  },
+  "Adult Bronze Dragon": {
+    "relation": "close_cousins",
+    "explanation": "Shares aquatic habitat and amphibious nature with a strong, imposing dragon form."
+  },
+  "monster_key": "riptide-drake"
+}

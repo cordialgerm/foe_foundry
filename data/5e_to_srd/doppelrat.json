@@ -1,0 +1,11 @@
+{
+  "Swarm of Rats": {
+    "relation": "conceptually_similar",
+    "explanation": "The Doppelrat creates and hides within swarms of rats, sharing the concept of rat swarms."
+  },
+  "Rat": {
+    "relation": "close_cousins",
+    "explanation": "The Doppelrat is a tiny rat-like creature with stealth and disease abilities, related to rats."
+  },
+  "monster_key": "doppelrat"
+}

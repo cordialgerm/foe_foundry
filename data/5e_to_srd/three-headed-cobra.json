@@ -1,0 +1,11 @@
+{
+  "Giant Constrictor Snake": {
+    "relation": "close_cousins",
+    "explanation": "A large snake-like monstrosity with similar size and ambush predator traits."
+  },
+  "Giant Poisonous Snake": {
+    "relation": "conceptually_similar",
+    "explanation": "A venomous large snake sharing the poisonous bite and snake concept."
+  },
+  "monster_key": "three-headed-cobra"
+}

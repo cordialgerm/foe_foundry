@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are monstrous predators with tentacle-like appendages and a parasitic or grasping nature."
+  },
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "Both are ambush predators with high agility and stealth, using multiattacks and venomous or debilitating effects."
+  },
+  "monster_key": "horakh"
+}

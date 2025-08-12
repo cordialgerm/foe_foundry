@@ -1,0 +1,11 @@
+{
+  "Chuul": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are large, fearsome monstrosities with tentacle-like features and poison damage."
+  },
+  "Aboleth": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares a monstrous aquatic/underground theme with powerful psychic and charm abilities."
+  },
+  "monster_key": "conjoined-queen"
+}

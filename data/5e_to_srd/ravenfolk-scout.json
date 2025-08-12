@@ -1,0 +1,11 @@
+{
+  "Scout": {
+    "relation": "almost_identical",
+    "explanation": "A stealthy, nimble humanoid skilled in perception and ambush tactics, matching the Scout's role and abilities."
+  },
+  "Raven": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares avian features and mimicry abilities similar to a raven, reflecting the Ravenfolk's bird-like nature."
+  },
+  "monster_key": "ravenfolk-scout"
+}

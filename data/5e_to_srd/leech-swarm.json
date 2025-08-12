@@ -1,0 +1,11 @@
+{
+  "Swarm of Poisonous Snakes": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are swarms of small creatures that attack in groups and can harm targets by biting or attaching."
+  },
+  "Giant Octopus": {
+    "relation": "conceptually_similar",
+    "explanation": "An aquatic predator with tentacle-like appendages, similar to the leech swarm's aquatic and predatory nature."
+  },
+  "monster_key": "leech-swarm"
+}

@@ -1,0 +1,11 @@
+{
+  "Animated Armor": {
+    "relation": "close_cousins",
+    "explanation": "Both are mechanical constructs with durable armor and combat roles."
+  },
+  "Flying Sword": {
+    "relation": "conceptually_similar",
+    "explanation": "Both are constructs designed for combat with tactical battlefield roles."
+  },
+  "monster_key": "clockwork-huntsman"
+}

@@ -1,0 +1,11 @@
+{
+  "Dryad": {
+    "relation": "close_cousins",
+    "explanation": "A fey creature associated with forests and natural terrain, sharing stealth and mobility traits."
+  },
+  "Scout": {
+    "relation": "mechanically_similar",
+    "explanation": "A mobile skirmisher skilled in stealth and precision attacks with piercing weapons."
+  },
+  "monster_key": "feral-hunter"
+}

@@ -1,0 +1,7 @@
+{
+  "Troll": {
+    "relation": "almost_identical",
+    "explanation": "The Lake Troll is a variant of the Troll with regeneration, multiattack, and vulnerabilities to fire and cold, sharing core traits."
+  },
+  "monster_key": "lake-troll"
+}

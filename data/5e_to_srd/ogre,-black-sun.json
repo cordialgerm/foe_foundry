@@ -1,0 +1,7 @@
+{
+  "Ogre": {
+    "relation": "close_cousins",
+    "explanation": "A large ogre with enhanced necrotic damage and magical abilities, sharing the core traits of an Ogre but with added dark powers."
+  },
+  "monster_key": "ogre,-black-sun"
+}

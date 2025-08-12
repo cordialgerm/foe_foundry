@@ -1,0 +1,7 @@
+{
+  "Swarm of Rats": {
+    "relation": "close_cousins",
+    "explanation": "Both are swarms of small beasts that overwhelm foes and can occupy another creature's space."
+  },
+  "monster_key": "swarm-of-wharflings"
+}

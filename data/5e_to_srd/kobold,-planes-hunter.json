@@ -1,0 +1,11 @@
+{
+  "Kobold": {
+    "relation": "almost_identical",
+    "explanation": "A small, cunning humanoid with typical kobold traits and combat style."
+  },
+  "Elemental": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares elemental magic and planar connections, reflecting elemental nature."
+  },
+  "monster_key": "kobold,-planes-hunter"
+}

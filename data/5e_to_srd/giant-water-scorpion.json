@@ -1,0 +1,7 @@
+{
+  "Giant Scorpion": {
+    "relation": "almost_identical",
+    "explanation": "A large scorpion with poisonous attacks and natural armor, similar to the Giant Water Scorpion but adapted for aquatic environments."
+  },
+  "monster_key": "giant-water-scorpion"
+}

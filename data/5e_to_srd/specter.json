@@ -1,0 +1,7 @@
+{
+  "Specter": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Specter exactly in type, abilities, and role as a malevolent, incorporeal undead with life-draining powers."
+  },
+  "monster_key": "specter"
+}

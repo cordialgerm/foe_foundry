@@ -1,0 +1,7 @@
+{
+  "Vampire Spawn": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster matches the Vampire Spawn exactly in abilities, role, and vulnerabilities."
+  },
+  "monster_key": "vampire-spawn"
+}

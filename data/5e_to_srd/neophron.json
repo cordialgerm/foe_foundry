@@ -1,0 +1,11 @@
+{
+  "Chimera": {
+    "relation": "conceptually_similar",
+    "explanation": "The Neophron shares the multiattack and swallowing ability concept with the Chimera's multiattack and fearsome presence."
+  },
+  "Vrock": {
+    "relation": "close_cousins",
+    "explanation": "Both are medium fiendish creatures with flying ability, poison immunity, and chaotic evil alignment."
+  },
+  "monster_key": "neophron"
+}

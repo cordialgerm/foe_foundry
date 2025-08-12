@@ -1,0 +1,7 @@
+{
+  "Giant Spider": {
+    "relation": "close_cousins",
+    "explanation": "The Backup Holler Spider is a tiny, agile spider-like beast with climbing ability, similar in nature to the Giant Spider but smaller and with added thunder damage features."
+  },
+  "monster_key": "backup-holler-spider"
+}

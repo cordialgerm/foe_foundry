@@ -1,0 +1,11 @@
+{
+  "Ghoul": {
+    "relation": "close_cousins",
+    "explanation": "Both are undead horrors specializing in grappling and restraining foes with a sinister, relentless nature."
+  },
+  "Wight": {
+    "relation": "conceptually_similar",
+    "explanation": "Shares the undead theme and a role as a controlling, relentless foe, though Wight uses life drain rather than grappling."
+  },
+  "monster_key": "offal-walker"
+}

@@ -1,0 +1,7 @@
+{
+  "Flying Snake": {
+    "relation": "almost_identical",
+    "explanation": "The homebrew monster is a tiny, brightly colored, winged serpent with venomous bite and flyby ability, matching the Flying Snake exactly."
+  },
+  "monster_key": "flying-snake"
+}

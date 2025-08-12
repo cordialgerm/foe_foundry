@@ -1,0 +1,7 @@
+{
+  "Air Elemental": {
+    "relation": "close_cousins",
+    "explanation": "Both are large elemental creatures with flying and burrowing movement, sharing elemental origin."
+  },
+  "monster_key": "magnetic-elemental"
+}

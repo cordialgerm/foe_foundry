@@ -1,0 +1,11 @@
+{
+  "Velociraptor": {
+    "relation": "conceptually_similar",
+    "explanation": "A small, quick, and stealthy dinosaur that uses pack tactics and ambushes prey."
+  },
+  "Wolf": {
+    "relation": "mechanically_similar",
+    "explanation": "Shares the Pack Tactics ability and teamwork-focused ambush tactics."
+  },
+  "monster_key": "compsognathus"
+}
