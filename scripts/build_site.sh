@@ -29,9 +29,9 @@ for arg in "$@"; do
     fi
 done
 
-# If --fast is set, set SKIP_WHOOSH_INIT env variable
+# If --fast is set, set SKIP_INDEX_INIT env variable
 if [ "$FAST_BUILD" = true ]; then
-    export SKIP_WHOOSH_INIT=1
+    export SKIP_INDEX_INIT=1
 fi
 
 # Build the static content unless --fast is present
@@ -77,9 +77,9 @@ fi
 
 # Prepare the search index
 if [ "$FAST_BUILD" = true ]; then
-    poetry run python -m foe_foundry_data --fast
+    poetry run python -m foe_foundry_search --fast
 else
-    poetry run python -m foe_foundry_data
+    poetry run python -m foe_foundry_search
 fi
 
 

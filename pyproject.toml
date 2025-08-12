@@ -13,7 +13,6 @@ seaborn = "^0.13.2"
 click = "^8.1.7"
 beautifulsoup4 = "^4.12.3"
 openai = "^1.51.2"
-transformers = {extras = ["torch"], version = "^4.45.2"}
 pytest = "^8.3.3"
 pandas = "^2.2.3"
 markdown = "^3.7"
@@ -45,6 +44,8 @@ mkdocs-minify-plugin = "^0.8.0"
 mkdocs-backlinks = "^0.9.1"
 lxml = "^5.4.0"
 cairosvg = "^2.8.2"
+networkx = "3.4"
+matplotlib = "^3.10.5"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
