@@ -23,6 +23,7 @@ export class MonsterCodex extends LitElement {
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
+  private searchDebounceTimer: number | undefined;
 
   private searchTask = new Task(this, async ([query, selectedCreatureTypes, minCr, maxCr]: [string, string[], number | undefined, number | undefined]) => {
     const hasFilters = !!(query || (selectedCreatureTypes && selectedCreatureTypes.length > 0) || minCr !== undefined || maxCr !== undefined);
@@ -522,7 +523,14 @@ export class MonsterCodex extends LitElement {
 
   private handleSearchInput(e: Event) {
     const input = e.target as HTMLInputElement;
-    this.query = input.value;
+    // Debounce search: only update query after 1s of no typing
+    const value = input.value;
+    if (this.searchDebounceTimer) {
+      clearTimeout(this.searchDebounceTimer);
+    }
+    this.searchDebounceTimer = window.setTimeout(() => {
+      this.query = value;
+    }, 1000);
   }
 
   private toggleCreatureType(type: string) {
