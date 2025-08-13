@@ -89,9 +89,15 @@ fi
 
 # Check for --run flag
 RUN_SITE=false
+OPEN_PAGE=""
 for arg in "$@"; do
     if [ "$arg" = "--run" ]; then
         RUN_SITE=true
+    fi
+    if [[ "$arg" == --open=* ]]; then
+        OPEN_PAGE="${arg#--open=}"
+        # Remove leading slash if present
+        OPEN_PAGE="${OPEN_PAGE#/}"
     fi
 done
 
@@ -99,8 +105,25 @@ done
 if [ "$RUN_SITE" = true ]; then
     echo "Running foe_foundry_site..."
     if [ "$FAST_BUILD" = true ]; then
-        poetry run python -m foe_foundry_site --fast
+        poetry run python -m foe_foundry_site --fast &
     else
-        poetry run python -m foe_foundry_site
+        poetry run python -m foe_foundry_site &
     fi
+    SITE_PID=$!
+    # Wait for site to be up (simple check)
+    echo "Waiting for site to launch at $SITE_URL..."
+    for i in {1..30}; do
+        sleep 1
+        if curl -s --head "$SITE_URL" | grep "200 OK" > /dev/null; then
+            echo "Site is up!"
+            break
+        fi
+    done
+    # If --open was specified, open browser to BASE_URL/<page>
+    if [ -n "$OPEN_PAGE" ]; then
+        OPEN_URL="$SITE_URL$OPEN_PAGE"
+        echo "Opening $OPEN_URL in browser..."
+        open "$OPEN_URL"
+    fi
+    wait $SITE_PID
 fi

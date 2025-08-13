@@ -29,7 +29,7 @@ export class MonsterCodex extends LitElement {
     if (!hasFilters) {
       // No filters: just get facets
       const facets = await this.searchApi.getFacets();
-      return { monsters: [], facets };
+      return { monsters: [], facets, total: 0 } as MonsterSearchResult;
     } else {
       // Filters: perform search
       const searchRequest: MonsterSearchRequest = {
@@ -41,7 +41,14 @@ export class MonsterCodex extends LitElement {
       const results = await this.searchApi.searchMonsters(searchRequest);
       return results;
     }
-  }, () => [this.query, this.selectedCreatureTypes, this.minCr, this.maxCr]);
+  }, () => {
+    return [
+      this.query,
+      this.selectedCreatureTypes,
+      this.minCr,
+      this.maxCr
+    ] as [string, string[], number | undefined, number | undefined];
+  });
 
   static styles = css`
     :host {
@@ -346,9 +353,9 @@ export class MonsterCodex extends LitElement {
 
   render() {
     return this.searchTask.render({
-      pending: this.renderPending,
-      complete: this.renderComplete,
-      error: this.renderError
+      pending: () => this.renderPending(),
+      complete: (results) => this.renderComplete(results),
+      error: (e) => this.renderError(e)
     });
   }
 
@@ -356,7 +363,7 @@ export class MonsterCodex extends LitElement {
     return html`<div class="loading">Loading monsters and filters...</div>`;
   }
 
-  private renderComplete(result: MonsterSearchResult | { monsters: readonly MonsterInfo[]; facets: SearchFacets }) {
+  private renderComplete(result: MonsterSearchResult) {
     const monsters = Array.from(result.monsters) as MonsterInfo[];
     const facets = result.facets;
     return html`
@@ -370,7 +377,7 @@ export class MonsterCodex extends LitElement {
               <div class="pill-container">
                 ${(Array.from(facets.creatureTypes) as { value: string; count: number }[]).map(facet => html`
                   <button
-                    class="filter-pill ${this.selectedCreatureTypes.includes(facet.value) ? 'active' : ''}"
+                    class="filter-pill ${this.selectedCreatureTypes?.includes(facet.value) ? 'active' : ''}"
                     @click=${() => this.toggleCreatureType(facet.value)}>
                     ${facet.value} (${facet.count})
                   </button>
@@ -519,7 +526,7 @@ export class MonsterCodex extends LitElement {
   }
 
   private toggleCreatureType(type: string) {
-    if (this.selectedCreatureTypes.includes(type)) {
+    if (this.selectedCreatureTypes?.includes(type)) {
       this.selectedCreatureTypes = this.selectedCreatureTypes.filter(t => t !== type);
     } else {
       this.selectedCreatureTypes = [...this.selectedCreatureTypes, type];
