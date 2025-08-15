@@ -61,7 +61,7 @@ class _Cache:
             # Load from cache
             with open(CACHE_FILE, "r") as f:
                 data = json.load(f)
-            return nx.node_link_graph(data)
+                return nx.node_link_graph(data, edges="links")
         else:
             # Build and cache
             graph, issues = _do_build_graph()

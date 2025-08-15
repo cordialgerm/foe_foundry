@@ -195,6 +195,18 @@ a.branding::after,
     vertical-align: middle;
 }
 
+.navbar a[href$="criminals/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/bandit.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
 .navbar a[href$="fanatics_and_faithful/" i]::before {
     content: " ";
     display: inline-block;
