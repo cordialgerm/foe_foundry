@@ -38,7 +38,7 @@ SpyMasterVariant = MonsterVariant(
         Monster(
             name="Spy Master",
             cr=10,
-            other_creatures={"Spy Master": "mm25"},
+            other_creatures={"Spy Master": "mm25", "Master Spy": "alias"},
             is_legendary=True,
         ),
     ],

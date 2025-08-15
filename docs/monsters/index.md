@@ -47,6 +47,8 @@ Giants are primordial creatures, living walking bones of the earth.
 
 Not all threats crawl from crypts. Some wear robes and carry grimoires. These monsters think, plan, and cast.
 
+- [Assassins](../monsters/assassin.md) - deadly killers and masters of poison
+- [Bandits](../monsters/bandit.md) - outlaws of the roads and wilds
 - [Berserkers](../monsters/berserker.md) - battle-frenzied warriors of blood and glory
 - [Cultists](cultist.md) - worshippers of the occult and forbidden
 - [Goblins](goblin.md) - little balls of mischief and mayhem
@@ -54,6 +56,9 @@ Not all threats crawl from crypts. Some wear robes and carry grimoires. These mo
 - [Mages](mage.md) - master of arcane magicks
 - [Orcs](orc.md) - bloodrage-fueled ancestral warriors
 - [Priests](priest.md) - faithful instruments of the divine
+- [Spies](spy.md) - infiltrators, informants, and masters of deception
+- [Thugs](thug.md) - brutal enforcers and hired nuscle
+
 - [Warriors](warrior.md) - disciplined soldiers of steel and strategy
 
 See also these curated **Humanoid Family Pages** for curated collections of related monsters:

@@ -37,7 +37,7 @@ from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
 from .spirit import SpiritTemplate
 from .spy.spy import SpyTemplate
-from .tough import ToughTemplate
+from .thug import ThugTemplate
 from .vrock.vrock import VrockTemplate
 from .warrior import WarriorTemplate
 from .wight import WightTemplate
@@ -82,7 +82,7 @@ AllTemplates: list[MonsterTemplate] = [
     SkeletonTemplate,
     SpiritTemplate,
     SpyTemplate,
-    ToughTemplate,
+    ThugTemplate,
     VrockTemplate,
     WarriorTemplate,
     WightTemplate,

@@ -29,7 +29,11 @@ ShockInfantryVariant = MonsterVariant(
         Monster(
             name="Shock Infantry",
             cr=1 / 8,
-            other_creatures={"Warrior Infantry": "mm25"},
+            other_creatures={
+                "Warrior Infantry": "mm25",
+                "Soldier": "alias",
+                "Infantry": "alias",
+            },
         ),
         Monster(name="Shock Infantry Veteran", cr=3, srd_creatures=["Veteran"]),
     ],
@@ -41,7 +45,11 @@ LineInfantryVariant = MonsterVariant(
         Monster(
             name="Line Infantry",
             cr=1 / 8,
-            other_creatures={"Warrior Infantry": "mm25"},
+            other_creatures={
+                "Warrior Infantry": "mm25",
+                "Soldier": "alias",
+                "Infantry": "alias",
+            },
         ),
         Monster(name="Line Infantry Veteran", cr=3, srd_creatures=["Veteran"]),
     ],
