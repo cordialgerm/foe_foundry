@@ -3,6 +3,13 @@ import { chromium, devices } from 'playwright';
 import fs from 'fs';
 import path from 'path';
 
+// Custom window type for ripple animation injection
+type RippleWindow = typeof window & {
+    __rippleHelperInjected?: boolean;
+    showRipple?: (x: number, y: number) => void;
+};
+
+
 // Top-level error handlers for visibility
 process.on('uncaughtException', (err) => {
     console.error('[record-monster] Uncaught Exception:', err);
@@ -53,9 +60,56 @@ function arg(name: string, def?: string) {
             userAgent: device.userAgent
         });
         p = await context.newPage();
+        // Forward browser console logs to Node.js terminal
+        p.on('console', msg => {
+            // Print browser logs with their type
+            console.log(`[browser][${msg.type()}]`, ...msg.args().map(arg => arg.toString()), msg.text());
+        });
         if (!p) {
             throw Error("Page doesn't exist")
         }
+
+        // Inject ripple helper at page startup
+        await p.addInitScript(() => {
+            const w = window as typeof window & {
+                __rippleHelperInjected?: boolean;
+                showRipple?: (x: number, y: number) => void;
+            };
+            if (!w.__rippleHelperInjected) {
+                w.__rippleHelperInjected = true;
+                const style = document.createElement('style');
+                style.textContent = `
+                    .playwright-ripple {
+                        position: fixed;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.7);
+                        box-shadow: 0 0 8px 2px rgba(255,255,255,0.8);
+                        pointer-events: none;
+                        width: 40px;
+                        height: 40px;
+                        transform: translate(-50%, -50%) scale(0.5);
+                        animation: ripple-anim 0.5s ease-out forwards;
+                        z-index: 9999;
+                    }
+                    @keyframes ripple-anim {
+                        to {
+                            opacity: 0;
+                            transform: translate(-50%, -50%) scale(2.5);
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+                w.showRipple = (x: number, y: number) => {
+                    console.log('[playwright ripple] showRipple called at', x, y);
+                    const ripple = document.createElement('div');
+                    ripple.className = 'playwright-ripple';
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    document.body.appendChild(ripple);
+                    setTimeout(() => ripple.remove(), 500);
+                };
+            }
+        });
 
         const page = p;
 
@@ -100,8 +154,18 @@ function arg(name: string, def?: string) {
             await page.locator(sel).first().waitFor({ state: 'visible', timeout: 20000 });
         }
 
-        //Select a random power-loadout
-        const powerLoadouts = await page.locator(selectors[2]).all();
+        //Select a random power-loadout that has 2 or more dropdown items
+        const allPowerLoadouts = await page.locator(selectors[2]).all();
+        const powerLoadouts = [];
+        for (const loadout of allPowerLoadouts) {
+            const items = await loadout.locator('.power-slot-block >>> .dropdown-container >>> .dropdown-menu >>> .dropdown-item').all();
+            if (items.length >= 2) {
+                powerLoadouts.push(loadout);
+            }
+        }
+        if (powerLoadouts.length === 0) {
+            throw new Error('[record-monster] No power-loadouts with 2 or more dropdown items found.');
+        }
         const randomPowerLoadout = powerLoadouts[Math.floor(Math.random() * powerLoadouts.length)];
 
         // Open the dropdown for a random power-loadout
@@ -126,7 +190,13 @@ function arg(name: string, def?: string) {
         await monsterBuilder.evaluate((el: any) => el.setMobileTab('statblock'));
 
         console.log(`[record-monster] Holding for viewer...`);
-        await page.waitForTimeout(3000);
+        await page.waitForTimeout(1000);
+
+        console.log('[record-monster] Slowly scroll down to the user can see the new statblock');
+        for (let i = 0; i < 8; i++) {
+            await smoothScroll(page, 120); // scroll down 120px
+        }
+        await page.waitForTimeout(2000);
 
     } catch (err) {
         console.error(`[record-monster] ERROR:`, err);
@@ -152,26 +222,49 @@ function arg(name: string, def?: string) {
     console.log('[record-monster] Script finished');
 })();
 
-
-async function smoothGlideTo(page: Page, locator: Locator, steps = 30) {
+async function smoothGlideTo(page: Page, locator: Locator, steps = 60) {
 
     // Smoothly scroll the element into view and center it
     await locator.evaluate((el: any) => {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
     // Wait for the animation to finish
-    await page.waitForTimeout(800);
+    await page.waitForTimeout(1800);
 
     // Get the bounding box after scrolling
     const box = await locator.boundingBox();
     if (!box) return;
 
-    // Move mouse smoothly to the center of the element
-    await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2, { steps });
+    // Move mouse smoothly to the center of the element, with more steps for slower movement
+    await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2, { steps: steps });
 }
 
 async function smoothClick(page: Page, locator: Locator) {
+
+    // glide to the location
     await smoothGlideTo(page, locator);
     await page.waitForTimeout(300);
-    await locator.click({ delay: 50 });
+
+    // Get click coordinates and show ripple
+    const box = await locator.boundingBox();
+    if (box) {
+        const x = box.x + box.width / 2;
+        const y = box.y + box.height / 2;
+        await page.evaluate(([x, y]) => {
+            const w = window as RippleWindow;
+            if (w.showRipple) w.showRipple(x, y);
+        }, [x, y]);
+    }
+
+    // click on the locator
+    await locator.click({ delay: 100 });
+    await page.waitForTimeout(200);
+}
+
+async function smoothScroll(page: Page, by: number) {
+    const m = 1.2 - 0.4 * Math.random();
+    await page.evaluate(({ by, m }) => {
+        window.scrollTo({ top: window.scrollY + m * by, behavior: 'smooth' });
+    }, { by, m });
+    await page.waitForTimeout(m * 800);
 }

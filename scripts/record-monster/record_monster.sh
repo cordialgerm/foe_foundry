@@ -39,7 +39,7 @@ then
   exit 1
 fi
 
-ffmpeg -y -i "$RAW_WEBM" -ss "$PREROLL_SEC" -t "$DURATION_SEC" \
-  -c:v libx264 -r 30 $FFMPEG_FLAGS -an "$FINAL_MP4"
+# ffmpeg -y -i "$RAW_WEBM" -ss "$PREROLL_SEC" -t "$DURATION_SEC" \
+#   -c:v libx264 -r 30 $FFMPEG_FLAGS -an "$FINAL_MP4"
 
-echo "✅ Demo ready: $FINAL_MP4"
+# echo "✅ Demo ready: $FINAL_MP4"
