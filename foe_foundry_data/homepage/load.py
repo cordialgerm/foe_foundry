@@ -1,4 +1,3 @@
-from datetime import datetime, timezone
 from functools import cached_property
 from pathlib import Path
 
@@ -81,11 +80,19 @@ class _HomepageDataCache:
             ["create_date", "monster_name"], ascending=[False, True]
         )
 
-        # Mark the top 3 as new
-        for m in df_sorted.head(3)["monster"]:
-            # Set is_new based on create_date
-            # some of the older content got marked as new as part of a refactor moving many files around
-            if m.create_date >= datetime(2025, 7, 18, tzinfo=timezone.utc):
+        # Enhanced logic: mark the most recent published monsters as new
+        # If there are multiple monsters published on the same day, include those, up to 10
+        # Otherwise, the most recent 3 monsters will be shown
+        if not df_sorted.empty:
+            most_recent_date = df_sorted.iloc[0]["create_date"].date()
+            most_recent_publish_count = (
+                df_sorted["create_date"]
+                .apply(lambda d: d.date() == most_recent_date)
+                .sum()
+            )
+            cap = min(max(3, most_recent_publish_count), 10)
+            # Mark the first 'cap' monsters as new
+            for m in df_sorted.head(cap)["monster"]:
                 m.is_new = True
 
         # Rebuild monsters list: new first, then shuffle the rest
