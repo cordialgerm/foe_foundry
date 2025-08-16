@@ -30,6 +30,12 @@ export class MonsterStatblock extends LitElement {
             align-items: flex-start;
         }
 
+            @media print {
+                .statblock-button-panel {
+                    display: none !important;
+                }
+            }
+
         #statblock-container {
             width: 100%;
             min-height: 300px;

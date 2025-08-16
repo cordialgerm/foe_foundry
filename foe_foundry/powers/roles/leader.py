@@ -39,6 +39,7 @@ class LeaderPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         power_types: List[PowerType] | None = None,
+        reference_statblock: str = "Knight",
         **score_args,
     ):
         standard_score_args = dict(
@@ -55,7 +56,7 @@ class LeaderPower(PowerWithStandardScoring):
             create_date=create_date,
             theme="Leader",
             icon=icon,
-            reference_statblock="Knight",
+            reference_statblock=reference_statblock,
             power_types=power_types,
             score_args=standard_score_args,
         )
@@ -90,6 +91,7 @@ class _Intimidate(LeaderPower):
             source="Foe Foundry",
             require_stats=AbilityScore.CHA,
             icon="terror",
+            reference_statblock="Thug",
             power_types=[PowerType.Debuff],
         )
 

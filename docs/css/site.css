@@ -709,7 +709,6 @@ a.burnt-parchment,
     background: var(--bg-color);
 
     padding: var(--big-margin);
-    margin-bottom: calc(2 *var(--big-margin));
 
     border: 1px solid var(--tertiary-color);
     border-radius: var(--medium-margin);
@@ -720,6 +719,14 @@ a.burnt-parchment,
     font-family: var(--primary-font);
     font-size: var(--primary-font-size);
     columns: var(--column-size) 2;
+}
+
+.power-block {
+    margin-bottom: var(--small-margin);
+}
+
+.stat-block {
+    margin-bottom: var(--big-margin);
 }
 
 .power-block.power-block-no-columns {
@@ -1183,15 +1190,19 @@ a.burnt-parchment,
         padding: 0;
     }
 
-    .pamphlet-main {
+    .container,
+    .container-md,
+    .pamphlet-container {
         margin: 0 auto;
-        padding: 5mm 18mm;
+        padding-left: 6mm;
+        padding-right: 1mm;
         box-sizing: border-box;
-        width: 100%;
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden;
     }
 
-    .container,
+
     .row {
         width: 100% !important;
         max-width: 100% !important;
