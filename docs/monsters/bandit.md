@@ -15,9 +15,7 @@ date: '2025-08-14'
 
 A caravan master might hear a friendly voice from the roadside, only to find a crossbow at his chest and half a dozen more in the brush. Flush with loot, the bandit's camp rings with raucous songs, stolen wine, and outlaws toasting freedom with every swaggering verse. Their motives range from survival to greed, but their tools are constant: ambush, intimidation, and enough violence to make victims remember the lesson for the next toll. Against a well-placed ambush, even the boldest traveler learns that coin is lighter than blood.
 
-![A grim-faced fantasy bandit veteran NPC, ready to ambush travelers in a 5E encounter.
-](../img/monsters/bandit.webp){.monster-image .masked}
-
+![A grim-faced fantasy bandit veteran NPC, ready to ambush travelers in a 5E encounter.](../img/monsters/bandit.webp){.monster-image .masked}
 
 ## Bandit Lore
 
