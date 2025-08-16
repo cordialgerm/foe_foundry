@@ -4,8 +4,7 @@
     "@lit/task": "^1.0.3",
     "lit": "^3.3.1",
     "puppeteer": "^24.12.1",
-    "vite": "^7.0.6",
-    "typescript": "^5.8.3"
+    "vite": "^7.0.6"
   },
   "name": "foe_foundry",
   "version": "1.0.0",
@@ -16,7 +15,13 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "record_monster": "ts-node scripts/record-monster/playwright-demo.ts"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "repository": {
     "type": "git",
@@ -25,7 +30,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/cordialgerm/foe_foundry/issues"
   },
