@@ -55,11 +55,9 @@ function arg(name: string, def?: string) {
         browser = await chromium.launch({ headless: true, slowMo: 100 });
         context = await browser.newContext({
             ...device,
-            deviceScaleFactor: 3,  // iPhone 15 pro
-            recordVideo: { dir: outDir, size: { width: 3 * 393, height: 3 * 852 } }, // iPhone 15 Pro physical pixels (3x CSS)
-            viewport: { width: 393, height: 852 }, // iPhone 15 Pro CSS pixels
-            userAgent: device.userAgent,
-            isMobile: true
+            viewport: { width: 393, height: 852 },
+            isMobile: true,
+            recordVideo: { dir: outDir, size: { width: 393, height: 852 } }, // iPhone 15 Pro physical pixels
         });
         p = await context.newPage();
         // Forward browser console logs to Node.js terminal
@@ -195,10 +193,15 @@ function arg(name: string, def?: string) {
         await page.waitForTimeout(1000);
 
         console.log('[record-monster] Slowly scroll down to the user can see the new statblock');
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 7; i++) {
             await smoothScroll(page, 120); // scroll down 120px
         }
-        await page.waitForTimeout(2000);
+        await page.waitForTimeout(1000);
+        for (let i = 0; i < 7; i++) {
+            await smoothScroll(page, -120); // scroll down 120px
+        }
+        await page.waitForTimeout(1000);
+
 
     } catch (err) {
         console.error(`[record-monster] ERROR:`, err);
