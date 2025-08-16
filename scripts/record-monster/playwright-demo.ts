@@ -1,3 +1,4 @@
+import type { Locator, Page } from 'playwright';
 import { chromium, devices } from 'playwright';
 import fs from 'fs';
 import path from 'path';
@@ -27,7 +28,6 @@ function arg(name: string, def?: string) {
     const base = arg('base', 'https://foefoundry.com');
     const deviceName = arg('device', 'iPhone 15 Pro');
     const outDir = arg('out', './cache/record-monster');
-    const duration = parseInt(arg('duration', '15'), 10);
 
     const url = `${base.replace(/\/$/, '')}/generate/?monster-key=${encodeURIComponent(monster)}`;
     const device = (devices as any)[deviceName] || devices['iPhone 15 Pro'];
@@ -43,7 +43,7 @@ function arg(name: string, def?: string) {
 
     let browser: import('playwright').Browser | undefined;
     let context: import('playwright').BrowserContext | undefined;
-    let page: import('playwright').Page | undefined;
+    let p: import('playwright').Page | undefined;
     try {
         browser = await chromium.launch({ headless: true, slowMo: 100 });
         context = await browser.newContext({
@@ -52,28 +52,12 @@ function arg(name: string, def?: string) {
             viewport: device.viewport,
             userAgent: device.userAgent
         });
-        page = await context.newPage();
-
-        async function glideTo(x: number, y: number, steps = 30) {
-            const box = await page!.viewportSize();
-            if (!box) return;
-            const cx = Math.max(1, Math.min(box.width - 1, x));
-            const cy = Math.max(1, Math.min(box.height - 1, y));
-            await page!.mouse.move(cx, cy, { steps });
+        p = await context.newPage();
+        if (!p) {
+            throw Error("Page doesn't exist")
         }
 
-        async function smoothClick(locator: string) {
-            const el = page!.locator(locator);
-            await el.waitFor({ state: 'visible', timeout: 8000 });
-            const box = await el.boundingBox();
-            if (box) {
-                await glideTo(box.x + box.width / 2, box.y + box.height / 2, 35);
-            } else {
-                await el.scrollIntoViewIfNeeded();
-            }
-            await page!.waitForTimeout(300);
-            await el.click({ delay: 50 });
-        }
+        const page = p;
 
         // hide the beta banner
         await page.addInitScript(() => {
@@ -83,8 +67,10 @@ function arg(name: string, def?: string) {
 
         console.log(`[record-monster] Navigating to page...`);
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
         console.log(`[record-monster] Waiting for network idle...`);
         await page.waitForLoadState('networkidle', { timeout: 20000 });
+
         console.log(`[record-monster] Waiting for root selector: ${selDefaults.root}`);
         await page.locator(selDefaults.root).waitFor({ state: 'visible', timeout: 20000 });
         await page.waitForTimeout(2000);
@@ -121,24 +107,14 @@ function arg(name: string, def?: string) {
         // Open the dropdown for a random power-loadout
         const powerButton = randomPowerLoadout.locator('.power-slot-block >>> .dropdown-container >>> .power-button');
         await powerButton.waitFor({ state: 'visible', timeout: 20000 });
-        await powerButton.scrollIntoViewIfNeeded();
-        {
-            const box = await powerButton.boundingBox();
-            if (box) await glideTo(box.x + box.width / 2, box.y + box.height / 2, 40);
-        }
-        await page.waitForTimeout(300);
-        await powerButton.click({ delay: 50 });
+        await smoothClick(page, powerButton);
 
         // Select the random dice option
         console.log(`[record-monster] Selecting random dice option...`);
         const individualPowers = await randomPowerLoadout.locator('.power-slot-block >>> .dropdown-container >>> .dropdown-menu >>> .dropdown-item').all();
         const buttonToClick = individualPowers[Math.floor(Math.random() * individualPowers.length)];
         await buttonToClick.waitFor({ state: 'visible', timeout: 8000 });
-        const box = await buttonToClick.boundingBox();
-        if (box) await glideTo(box.x + box.width / 2, box.y + box.height / 2, 28);
-
-        await page.waitForTimeout(250);
-        await buttonToClick.click({ delay: 50 });
+        await smoothClick(page, buttonToClick);
 
         //Open the Statblock
         console.log(`[record-monster] Opening statblock...`);
@@ -146,11 +122,11 @@ function arg(name: string, def?: string) {
 
         const monsterBuilder = await page.locator('monster-builder').first();
         const mobileTabs = monsterBuilder.locator('.pamphlet-main >>> .mobile-tabs').first();
-        await mobileTabs.scrollIntoViewIfNeeded()
+        await smoothGlideTo(page, mobileTabs);
         await monsterBuilder.evaluate((el: any) => el.setMobileTab('statblock'));
 
         console.log(`[record-monster] Holding for viewer...`);
-        await page.waitForTimeout(Math.max(3000, duration * 1000 - 6000));
+        await page.waitForTimeout(3000);
 
     } catch (err) {
         console.error(`[record-monster] ERROR:`, err);
@@ -175,3 +151,27 @@ function arg(name: string, def?: string) {
     }
     console.log('[record-monster] Script finished');
 })();
+
+
+async function smoothGlideTo(page: Page, locator: Locator, steps = 30) {
+
+    // Smoothly scroll the element into view and center it
+    await locator.evaluate((el: any) => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    // Wait for the animation to finish
+    await page.waitForTimeout(800);
+
+    // Get the bounding box after scrolling
+    const box = await locator.boundingBox();
+    if (!box) return;
+
+    // Move mouse smoothly to the center of the element
+    await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2, { steps });
+}
+
+async function smoothClick(page: Page, locator: Locator) {
+    await smoothGlideTo(page, locator);
+    await page.waitForTimeout(300);
+    await locator.click({ delay: 50 });
+}
