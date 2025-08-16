@@ -52,7 +52,7 @@ function arg(name: string, def?: string) {
     let context: import('playwright').BrowserContext | undefined;
     let p: import('playwright').Page | undefined;
     try {
-        browser = await chromium.launch({ headless: true, slowMo: 100 });
+        browser = await chromium.launch({ headless: false, slowMo: 100 });
         context = await browser.newContext({
             ...device,
             viewport: { width: 393, height: 852 },
@@ -193,15 +193,10 @@ function arg(name: string, def?: string) {
         await page.waitForTimeout(1000);
 
         console.log('[record-monster] Slowly scroll down to the user can see the new statblock');
-        for (let i = 0; i < 7; i++) {
-            await smoothScroll(page, 120); // scroll down 120px
-        }
+        await smoothScroll(page, 900, 6000);
         await page.waitForTimeout(1000);
-        for (let i = 0; i < 7; i++) {
-            await smoothScroll(page, -120); // scroll down 120px
-        }
+        await smoothScroll(page, -900, 6000);
         await page.waitForTimeout(1000);
-
 
     } catch (err) {
         console.error(`[record-monster] ERROR:`, err);
@@ -266,10 +261,17 @@ async function smoothClick(page: Page, locator: Locator) {
     await page.waitForTimeout(200);
 }
 
-async function smoothScroll(page: Page, by: number) {
-    const m = 1.2 - 0.4 * Math.random();
-    await page.evaluate(({ by, m }) => {
-        window.scrollTo({ top: window.scrollY + m * by, behavior: 'smooth' });
-    }, { by, m });
-    await page.waitForTimeout(m * 800);
+async function smoothScroll(page: Page, by: number, duration: number) {
+
+    const stepSize = by > 0 ? 20 : -20;
+    const steps = Math.floor(Math.abs(by / stepSize));
+    const interval = duration / steps;
+
+    for (let i = 0; i < steps; i++) {
+        const m = 1.1 - 0.2 * Math.random();
+        await page.evaluate(({ stepSize, m }) => {
+            window.scrollBy({ top: m * stepSize, behavior: 'smooth' });
+        }, { stepSize, m });
+        await page.waitForTimeout(interval);
+    }
 }
