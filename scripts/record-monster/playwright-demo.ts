@@ -55,9 +55,11 @@ function arg(name: string, def?: string) {
         browser = await chromium.launch({ headless: true, slowMo: 100 });
         context = await browser.newContext({
             ...device,
-            recordVideo: { dir: outDir, size: device.viewport },
-            viewport: device.viewport,
-            userAgent: device.userAgent
+            deviceScaleFactor: 3,  // iPhone 15 pro
+            recordVideo: { dir: outDir, size: { width: 3 * 393, height: 3 * 852 } }, // iPhone 15 Pro physical pixels (3x CSS)
+            viewport: { width: 393, height: 852 }, // iPhone 15 Pro CSS pixels
+            userAgent: device.userAgent,
+            isMobile: true
         });
         p = await context.newPage();
         // Forward browser console logs to Node.js terminal
