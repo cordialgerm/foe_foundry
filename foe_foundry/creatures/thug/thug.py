@@ -157,8 +157,8 @@ class _ToughTemplate(MonsterTemplate):
         return stats, [attack]
 
 
-ToughTemplate: MonsterTemplate = _ToughTemplate(
-    name="Tough",
+ThugTemplate: MonsterTemplate = _ToughTemplate(
+    name="Thug",
     tag_line="Brawlers and Bullies",
     description="Bodyguards, belligerents, and laborers, toughs rely on their physical strength to intimidate foes. They might be brawny criminals, rowdy tavern goers, seasoned workers, or anyone who uses their muscle to get what they want.",
     treasure=["Armaments"],

@@ -29,7 +29,12 @@ AssassinVariant = MonsterVariant(
     monsters=[
         Monster(name="Contract Killer", cr=4),
         Monster(name="Assassin", cr=8, srd_creatures=["Assassin"]),
-        Monster(name="Assassin Legend", cr=12, is_legendary=True),
+        Monster(
+            name="Assassin Legend",
+            cr=12,
+            is_legendary=True,
+            other_creatures={"Legendary Assassin": "alias"},
+        ),
     ],
 )
 

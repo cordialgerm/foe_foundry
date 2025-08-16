@@ -39,7 +39,11 @@ CommanderVariant = MonsterVariant(
         Monster(
             name="Guard Captain",
             cr=4,
-            other_creatures={"Guard Captain": "mm25"},
+            other_creatures={
+                "Guard Captain": "mm25",
+                "Captain of the Guard": "alias",
+                "Captain of the Watch": "alias",
+            },
         ),
         Monster(name="Lord of the Watch", cr=8, is_legendary=True),
     ],
