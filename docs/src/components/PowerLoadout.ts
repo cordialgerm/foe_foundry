@@ -515,9 +515,10 @@ export class PowerLoadout extends LitElement {
               ${this.powers?.length ? html`
                 <div class="dropdown-separator"></div>
                 <button
-                  class="dropdown-item ${this.focusedIndex === this.powers.length ? 'focused' : ''}"
-                  @click=${() => this.randomize()}
-                  @mouseenter=${() => this.focusedIndex = this.powers.length}
+                    class="dropdown-item ${this.focusedIndex === this.powers.length ? 'focused' : ''}"
+                    data-randomize="true"
+                    @click=${() => this.randomize()}
+                    @mouseenter=${() => this.focusedIndex = this.powers.length}
                 >
                   <svg-icon
                     class="power-icon"
