@@ -18,7 +18,7 @@ from foe_foundry_search.graph import (
 )
 
 
-def sample_subgraph(G, max_mon_nodes: int = 10, ego_radius: int = 4) -> nx.DiGraph:
+def sample_subgraph(G, max_mon_nodes: int = 15, ego_radius: int = 3) -> nx.DiGraph:
     """
     Sample a subgraph from the full graph for visualization and testing.
 
@@ -30,16 +30,17 @@ def sample_subgraph(G, max_mon_nodes: int = 10, ego_radius: int = 4) -> nx.DiGra
     Returns:
         A subgraph containing the sampled nodes and their connections
     """
-    # Get all MON nodes whose names start with 'a' or 'b'
-    mon_nodes = [n for n, d in G.nodes(data=True) if d.get("type") == "MON"]
+    mon_nodes = [n for n, d in G.nodes(data=True) if d.get("type") == "FF_MON"]
     sample_size = min(max_mon_nodes, len(mon_nodes))
     sampled_mons = random.sample(mon_nodes, sample_size)
+
+    H = G.to_undirected()
 
     # Find all nodes up to ego_radius degree connection from sampled_mons using ego_graph
     nodes_to_plot = set()
     for node in sampled_mons:
         # ego_graph returns subgraph of all nodes within radius distance from node
-        ego = nx.ego_graph(G.to_undirected(), node, radius=ego_radius)
+        ego = nx.ego_graph(H, node, radius=ego_radius)
         nodes_to_plot.update(ego.nodes())
 
     return G.subgraph(nodes_to_plot)
