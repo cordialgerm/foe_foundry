@@ -5,8 +5,8 @@ import path from 'path';
 
 // Custom window type for ripple animation injection
 type RippleWindow = typeof window & {
-    __rippleHelperInjected?: boolean;
-    showRipple?: (x: number, y: number) => void;
+    showRipple: (x: number, y: number) => void;
+    movePlaywrightCursor: (x: number, y: number) => void;
 };
 
 
@@ -60,63 +60,22 @@ function arg(name: string, def?: string) {
             recordVideo: { dir: outDir, size: { width: 393, height: 852 } }, // iPhone 15 Pro physical pixels
         });
         p = await context.newPage();
-        // Forward browser console logs to Node.js terminal
-        p.on('console', msg => {
-            // Print browser logs with their type
-            console.log(`[browser][${msg.type()}]`, ...msg.args().map(arg => arg.toString()), msg.text());
-        });
         if (!p) {
             throw Error("Page doesn't exist")
         }
-
-        // Inject ripple helper at page startup
-        await p.addInitScript(() => {
-            const w = window as typeof window & {
-                __rippleHelperInjected?: boolean;
-                showRipple?: (x: number, y: number) => void;
-            };
-            if (!w.__rippleHelperInjected) {
-                w.__rippleHelperInjected = true;
-                const style = document.createElement('style');
-                style.textContent = `
-                    .playwright-ripple {
-                        position: fixed;
-                        border-radius: 50%;
-                        background: rgba(255, 255, 255, 0.7);
-                        box-shadow: 0 0 8px 2px rgba(255,255,255,0.8);
-                        pointer-events: none;
-                        width: 40px;
-                        height: 40px;
-                        transform: translate(-50%, -50%) scale(0.5);
-                        animation: ripple-anim 0.5s ease-out forwards;
-                        z-index: 9999;
-                    }
-                    @keyframes ripple-anim {
-                        to {
-                            opacity: 0;
-                            transform: translate(-50%, -50%) scale(2.5);
-                        }
-                    }
-                `;
-                document.head.appendChild(style);
-                w.showRipple = (x: number, y: number) => {
-                    console.log('[playwright ripple] showRipple called at', x, y);
-                    const ripple = document.createElement('div');
-                    ripple.className = 'playwright-ripple';
-                    ripple.style.left = `${x}px`;
-                    ripple.style.top = `${y}px`;
-                    document.body.appendChild(ripple);
-                    setTimeout(() => ripple.remove(), 500);
-                };
-            }
-        });
-
         const page = p;
 
+        // Forward browser console logs to Node.js terminal
+        page.on('console', msg => {
+            // Print browser logs with their type
+            console.log(`[browser][${msg.type()}]`, ...msg.args().map(arg => arg.toString()), msg.text());
+        });
+
         // hide the beta banner
+        // Inject ripple helper and cursor at page startup
         await page.addInitScript(() => {
             localStorage.setItem("hideBetaBanner", "true");
-            localStorage.setItem('foe-foundry-power-tutorial-seen', 'true');
+            localStorage.setItem("foe-foundry-power-tutorial-seen", "true");
         });
 
         console.log(`[record-monster] Navigating to page...`);
@@ -125,13 +84,68 @@ function arg(name: string, def?: string) {
         console.log(`[record-monster] Waiting for network idle...`);
         await page.waitForLoadState('networkidle', { timeout: 20000 });
 
+        // Inject ripple helper and cursor helper
+        await page.evaluate(() => {
+            const w = window as RippleWindow;
+            const style = document.createElement('style');
+            style.textContent = `
+        .playwright-ripple {
+            position: fixed;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 8px 2px rgba(255,255,255,0.8);
+            pointer-events: none;
+            width: 40px;
+            height: 40px;
+            transform: translate(-50%, -50%) scale(0.5);
+            animation: ripple-anim 0.5s ease-out forwards;
+            z-index: 9999;
+        }
+        @keyframes ripple-anim {
+            to {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(2.5);
+            }
+        }
+        .playwright-cursor {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            pointer-events: none;
+            z-index: 10000;
+            background: url('data:image/svg+xml;utf8,<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 32,16 16,32" fill="black" stroke="white" stroke-width="2"/></svg>') no-repeat center center;
+        }
+    `;
+            document.head.appendChild(style);
+            w.showRipple = (x: number, y: number) => {
+                console.log('[playwright ripple] showRipple called at', x, y);
+                const ripple = document.createElement('div');
+                ripple.className = 'playwright-ripple';
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+                document.body.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 500);
+            };
+            // Inject cursor element and movement function
+            const cursor = document.createElement('div');
+            cursor.className = 'playwright-cursor';
+            cursor.style.left = '0px';
+            cursor.style.top = '0px';
+            document.body.appendChild(cursor);
+            w.movePlaywrightCursor = (x: number, y: number) => {
+                console.log('[playwright cursor] moved to', x, y);
+                cursor.style.left = `${x - 4}px`;
+                cursor.style.top = `${y - 4}px`;
+            };
+        });
+
         console.log(`[record-monster] Waiting for root selector: ${selDefaults.root}`);
         await page.locator(selDefaults.root).waitFor({ state: 'visible', timeout: 20000 });
-        await page.waitForTimeout(2000);
 
-        console.log(`[record-monster] Opening first power dropdown...`);
+        // Set the cursor in a good initial position
+        await moveCursor(page, 150, 300);
 
-        // Enhanced locator logic: check for each item and print status
+        // Check that all the items we expect exist
         const selectors = [
             'monster-builder',
             'monster-builder >>> .pamphlet-main >>> .panels-container >>> .card-panel >>> monster-card',
@@ -143,8 +157,6 @@ function arg(name: string, def?: string) {
             const count = await el.count();
             if (count > 0) {
                 console.log(`[record-monster] Found element(s) for selector: ${sel} (count: ${count})`);
-                // const innerContent = await el.evaluate(el => el.shadowRoot ? el.shadowRoot.innerHTML : '[no shadowRoot]');
-                // console.log('[record-monster] Inner Content:\n', innerContent)
             } else {
                 throw new Error(`[record-monster] ERROR: Could not find element for selector: ${sel}`);
             }
@@ -154,7 +166,13 @@ function arg(name: string, def?: string) {
             await page.locator(sel).first().waitFor({ state: 'visible', timeout: 20000 });
         }
 
+        // Start Sequence
+        await page.waitForTimeout(800);
+        await smoothScroll(page, 600, 800);
+
+
         //Select a random power-loadout that has 2 or more dropdown items
+        console.log(`[record-monster] Opening first power dropdown...`);
         const allPowerLoadouts = await page.locator(selectors[2]).all();
         const powerLoadouts = [];
         for (const loadout of allPowerLoadouts) {
@@ -187,6 +205,7 @@ function arg(name: string, def?: string) {
         const monsterBuilder = await page.locator('monster-builder').first();
         const mobileTabs = monsterBuilder.locator('.pamphlet-main >>> .mobile-tabs').first();
         await smoothGlideTo(page, mobileTabs);
+        await playRippleAt(page, mobileTabs);
         await monsterBuilder.evaluate((el: any) => el.setMobileTab('statblock'));
 
         console.log(`[record-monster] Holding for viewer...`);
@@ -222,21 +241,35 @@ function arg(name: string, def?: string) {
     console.log('[record-monster] Script finished');
 })();
 
-async function smoothGlideTo(page: Page, locator: Locator, steps = 60) {
+async function moveCursor(page: Page, x: number, y: number) {
+    await page.evaluate(([x, y]) => {
+        const w = window as any;
+        w.movePlaywrightCursor(x, y);
+    }, [x, y]);
+}
+
+async function moveCursorTo(page: Page, locator: Locator) {
+    const box = await locator.boundingBox();
+    if (!box) return;
+    const x = box.x + box.width / 2;
+    const y = box.y + box.height / 2;
+    await moveCursor(page, x, y);
+}
+
+
+
+async function smoothGlideTo(page: Page, locator: Locator) {
 
     // Smoothly scroll the element into view and center it
     await locator.evaluate((el: any) => {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
+
+    // Show and move the cursor
+    await moveCursorTo(page, locator);
+
     // Wait for the animation to finish
     await page.waitForTimeout(1800);
-
-    // Get the bounding box after scrolling
-    const box = await locator.boundingBox();
-    if (!box) return;
-
-    // Move mouse smoothly to the center of the element, with more steps for slower movement
-    await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2, { steps: steps });
 }
 
 async function smoothClick(page: Page, locator: Locator) {
@@ -252,7 +285,8 @@ async function smoothClick(page: Page, locator: Locator) {
         const y = box.y + box.height / 2;
         await page.evaluate(([x, y]) => {
             const w = window as RippleWindow;
-            if (w.showRipple) w.showRipple(x, y);
+            w.showRipple(x, y);
+            w.movePlaywrightCursor(x, y);
         }, [x, y]);
     }
 
@@ -261,17 +295,36 @@ async function smoothClick(page: Page, locator: Locator) {
     await page.waitForTimeout(200);
 }
 
+async function playRippleAt(page: Page, locator: Locator) {
+    const box = await locator.boundingBox();
+    if (!box) return;
+    const x = box.x + box.width / 2;
+    const y = box.y + box.height / 2;
+    await page.evaluate(([x, y]) => {
+        const w = window as RippleWindow;
+        w.movePlaywrightCursor(x, y);
+        w.showRipple(x, y);
+    }, [x, y]);
+}
+
 async function smoothScroll(page: Page, by: number, duration: number) {
 
-    const stepSize = by > 0 ? 20 : -20;
+    const stepSize = by > 0 ? 5 : -5;
     const steps = Math.floor(Math.abs(by / stepSize));
-    const interval = duration / steps;
+
+    // each scroll is modelled to take K milliseconds, so we have to reduce the sleep interval
+    const scrollDuration = 0;
+    const waitInterval = Math.max(duration / steps - scrollDuration, 0);
+
 
     for (let i = 0; i < steps; i++) {
         const m = 1.1 - 0.2 * Math.random();
         await page.evaluate(({ stepSize, m }) => {
             window.scrollBy({ top: m * stepSize, behavior: 'smooth' });
         }, { stepSize, m });
-        await page.waitForTimeout(interval);
+
+        if (waitInterval > 0) {
+            await page.waitForTimeout(waitInterval);
+        }
     }
 }
