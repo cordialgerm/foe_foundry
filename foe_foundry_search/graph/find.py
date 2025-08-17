@@ -67,8 +67,19 @@ def find_descendants_with_decay(
             ):
                 continue
 
-            # Calculate strength with decay
-            strength = (1 - alpha) ** distance
+                # Calculate strength with decay
+
+            # Calculate relevance factor: product of all edge 'relevance' values along the path
+            relevance_factor = 1.0
+            path_nodes = shortest_paths[target_node_id]
+            for i in range(len(path_nodes) - 1):
+                edge_data = graph.get_edge_data(
+                    path_nodes[i], path_nodes[i + 1], default={}
+                )
+                relevance = edge_data.get("relevance", 1.0)
+                relevance_factor *= relevance
+
+            strength = ((1 - alpha) ** distance) * relevance_factor
 
             paths.append(
                 GraphPath(

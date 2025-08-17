@@ -24,13 +24,24 @@ def _create_layout_positions(subgraph: nx.DiGraph, layout_type: LayoutType) -> d
     Returns:
         Dictionary mapping node IDs to (x, y) positions
     """
+    # Convert to undirected graph for layout
     H = nx.Graph(subgraph)
 
+    # Build edge weights from relevance (higher relevance = closer)
+    edge_weights = {}
+    for u, v, data in H.edges(data=True):
+        relevance = data.get("relevance", 1.0)
+        # Avoid division by zero
+        weight = 1.0 / relevance if relevance > 0 else 1.0
+        edge_weights[(u, v)] = weight
+
+    nx.set_edge_attributes(H, edge_weights, "weight")
+
     if layout_type == LayoutType.SPRING:
-        return nx.spring_layout(H, seed=42, k=None, iterations=100)
+        return nx.spring_layout(H, seed=42, k=None, iterations=100, weight="weight")
 
     elif layout_type == LayoutType.KAMADA_KAWAI:
-        seed_pos = nx.spring_layout(H, seed=42, k=None, iterations=100)
+        seed_pos = nx.spring_layout(H, seed=42, k=None, iterations=100, weight="weight")
         rand_pos = nx.random_layout(H, seed=42)
         alpha = 0.8  # 0 = pure random, 1 = pure spring
         blend_pos = {
@@ -38,8 +49,8 @@ def _create_layout_positions(subgraph: nx.DiGraph, layout_type: LayoutType) -> d
             for n in H.nodes()
         }
         return nx.kamada_kawai_layout(
-            nx.Graph(subgraph),
-            weight=None,  # type: ignore
+            H,
+            weight="weight",
             scale=3.5,
             pos=blend_pos,
         )
