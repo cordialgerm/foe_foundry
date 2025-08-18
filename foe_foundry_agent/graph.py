@@ -54,7 +54,12 @@ async def node_plan(state: MonsterAgentState) -> MonsterAgentState:
     if human_input_requested is not None:
         history.add_ai_message(human_input_requested)
 
-    return {**state, "human_input_requested": human_input_requested, "plan": plan}
+    return {
+        **state,
+        "human_input_requested": human_input_requested,
+        "plan": plan,
+        "stop": human_input_requested is None,
+    }
 
 
 def edges_plan(state: MonsterAgentState) -> Literal["human_input", "__end__"]:

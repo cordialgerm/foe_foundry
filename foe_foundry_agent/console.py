@@ -79,12 +79,15 @@ class RunInConsole:
     ) -> tuple[MonsterAgentState | Command | None, bool]:
         """Handles the next turn in the conversation."""
 
-        result: dict = await self.graph.ainvoke(input=state, config=config)  # type: ignore
+        result: dict = await self.graph.ainvoke(input=state, config=config, stream_mode="")  # type: ignore
         self._print_message_history(result)
 
         if "__interrupt__" in result:
             command = self._human_input()
             return command, command is None
+        elif "__end__" in result:
+            new_state: MonsterAgentState = result  # type: ignore
+            return new_state, True
         else:
             new_state: MonsterAgentState = result  # type: ignore
             self._print_message_history(new_state)
