@@ -1,7 +1,7 @@
 from typing import Literal
 
 from langgraph.graph import StateGraph
-from langgraph.types import interrupt
+from langgraph.types import Checkpointer, interrupt
 
 from .intake import run_intake_chain
 from .plan import run_plan_chain
@@ -16,6 +16,8 @@ async def node_intake(state: MonsterAgentState) -> MonsterAgentState:
         human_input_requested = "There was an issue with intake. Please provide more information and try again."
     elif intake.clarification_follow_up is not None:
         human_input_requested = intake.clarification_follow_up
+    elif not intake.is_relevant:
+        human_input_requested = "I'm here to talk about monsters. Please provide more information and try again."
     else:
         human_input_requested = None
 
@@ -38,9 +40,7 @@ async def node_plan(state: MonsterAgentState) -> MonsterAgentState:
     if intake is None:
         raise ValueError("Intake state is required for plan generation.")
 
-    monster_input = (
-        f"{intake.statblock_markdown or ''}\n\n\n{intake.additional_notes or ''}"
-    )
+    monster_input = f"{intake.request_summary}\n\n\n{intake.statblock_details}"
 
     plan = await run_plan_chain(monster_input, state["history"])
 
@@ -79,6 +79,7 @@ def edges_plan(state: MonsterAgentState) -> Literal["human_input", "__end__"]:
 async def node_human_input(state: MonsterAgentState) -> MonsterAgentState:
     result = interrupt({"human_input": "<HUMAN INPUT NEEDED>"})
     human_input = result.get("human_input", "")
+    state["history"].add_user_message(human_input)
     return {
         **state,
         "human_input_requested": None,
@@ -99,15 +100,19 @@ def entry_point(
         return "__end__"
 
 
-builder = StateGraph(MonsterAgentState)
-builder.add_node("intake", node_intake)
-builder.add_node("plan", node_plan)
-builder.add_node("human_input", node_human_input)
-# builder.add_node("node_plan_review", node_plan_review)
+def build_planning_graph(checkpointer: Checkpointer):
+    """Builds the langgraph planning graph"""
 
-builder.set_conditional_entry_point(entry_point)
-builder.add_conditional_edges("intake", edges_intake)
-builder.add_conditional_edges("plan", edges_plan)
-# builder.add_conditional_edges("plan_review", edges_plan_review)
+    builder = StateGraph(MonsterAgentState)
+    builder.add_node("intake", node_intake)
+    builder.add_node("plan", node_plan)
+    builder.add_node("human_input", node_human_input)
+    # builder.add_node("node_plan_review", node_plan_review)
 
-plan_subgraph = builder.compile()
+    builder.set_conditional_entry_point(entry_point)
+    builder.add_conditional_edges("intake", edges_intake)
+    builder.add_conditional_edges("plan", edges_plan)
+    # builder.add_conditional_edges("plan_review", edges_plan_review)
+
+    plan_subgraph = builder.compile(checkpointer=checkpointer)
+    return plan_subgraph

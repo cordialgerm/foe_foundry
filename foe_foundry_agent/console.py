@@ -1,19 +1,27 @@
 import asyncio
+from typing import Any
 
 import dotenv
 from langchain_core.messages import AIMessage
+from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.types import Command
 
-from .graph import plan_subgraph
+from .graph import build_planning_graph
 from .state import InMemoryHistory, MonsterAgentState
 
 
 class RunInConsole:
     def __init__(self):
         self.printed_ids = set()
+        self.saver = InMemorySaver()
+        self.graph = build_planning_graph(self.saver)
 
-    def _print_message_history(self, state: MonsterAgentState):
+    def _print_message_history(self, state: MonsterAgentState | Any):
         """Prints the message history from the state."""
+
+        if not isinstance(state, dict):
+            return
+
         for message in state["history"].messages:
             if message.id in self.printed_ids:
                 continue
@@ -47,29 +55,40 @@ class RunInConsole:
             "stop": False,
         }
 
+        self._print_message_history(original_state)
         state = original_state
         while True:
+            self._print_message_history(state)
             state, stop = await self._next_turn(state, config)
+            self._print_message_history(state)
+
+            print(state)
+
             if stop or state is None:
                 print("Done!")
                 break
+            elif isinstance(state, Command):
+                print("Received Command")
+            elif state["plan"] is not None:
+                print(state["plan"].to_yaml_text())
+            elif state["intake"] is not None:
+                print(state["intake"].to_llm_display_text())
 
     async def _next_turn(
         self, state: MonsterAgentState | Command, config: dict
     ) -> tuple[MonsterAgentState | Command | None, bool]:
         """Handles the next turn in the conversation."""
 
-        result: dict = await plan_subgraph.ainvoke(input=state, config=config)  # type: ignore
+        result: dict = await self.graph.ainvoke(input=state, config=config)  # type: ignore
+        self._print_message_history(result)
 
         if "__interrupt__" in result:
             command = self._human_input()
             return command, command is None
         else:
-            new_state: MonsterAgentState = await plan_subgraph.ainvoke(
-                input=state,
-                config=config,  # type: ignore
-            )
-            stop = new_state.get("stop", False)
+            new_state: MonsterAgentState = result  # type: ignore
+            self._print_message_history(new_state)
+            stop = new_state["stop"]
             return new_state, stop
 
 
