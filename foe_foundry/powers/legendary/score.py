@@ -1,6 +1,5 @@
 from dataclasses import dataclass
-
-from backports.strenum import StrEnum
+from enum import StrEnum
 
 from ...features import Feature
 

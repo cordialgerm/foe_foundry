@@ -15,3 +15,5 @@ class MonsterAgentState(TypedDict):
 
     human_input_requested: str | None
     human_response_provided: str | None
+
+    stop: bool

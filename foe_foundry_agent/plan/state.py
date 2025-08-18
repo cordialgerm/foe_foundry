@@ -1,7 +1,8 @@
 from __future__ import annotations
 
+from enum import StrEnum
+
 import yaml
-from backports.strenum import StrEnum
 from pydantic import BaseModel
 
 from foe_foundry.utils.yaml import extract_yaml_block_from_text

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import Runnable
 from langchain_openai import ChatOpenAI
 
@@ -8,7 +8,7 @@ from langchain_openai import ChatOpenAI
 def initialize_plan_chain(
     model: str | None = None,
 ) -> Runnable:
-    """Initialize the plan chain, which handles overall planning for the monster agent. Expects {monster_input} variable."""
+    """Initialize the plan chain, which handles overall planning for the monster agent. Expects {monster_input} and {messages} variables."""
 
     if model is None:
         model = "gpt-5-mini"
@@ -23,6 +23,7 @@ def initialize_plan_chain(
     prompt = ChatPromptTemplate.from_messages(
         [
             ("system", prompt_text),
+            MessagesPlaceholder(variable_name="messages"),  # message history goes here
             ("human", "{monster_input}"),
         ]
     )

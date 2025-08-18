@@ -1,4 +1,7 @@
+from typing import Literal
+
 from langgraph.graph import StateGraph
+from langgraph.types import interrupt
 
 from .intake import run_intake_chain
 from .plan import run_plan_chain
@@ -22,7 +25,7 @@ async def node_intake(state: MonsterAgentState) -> MonsterAgentState:
     return {**state, "human_input_requested": human_input_requested, "intake": intake}
 
 
-def edges_intake(state: MonsterAgentState) -> str:
+def edges_intake(state: MonsterAgentState) -> Literal["human_input", "plan"]:
     if state["human_input_requested"] is not None:
         return "human_input"
     else:
@@ -39,7 +42,7 @@ async def node_plan(state: MonsterAgentState) -> MonsterAgentState:
         f"{intake.statblock_markdown or ''}\n\n\n{intake.additional_notes or ''}"
     )
 
-    plan = await run_plan_chain(monster_input)
+    plan = await run_plan_chain(monster_input, state["history"])
 
     if plan is None:
         human_input_requested = "There was an issue with plan generation. Please provide more information and try again."
@@ -54,29 +57,57 @@ async def node_plan(state: MonsterAgentState) -> MonsterAgentState:
     return {**state, "human_input_requested": human_input_requested, "plan": plan}
 
 
-def edges_plan(state: MonsterAgentState) -> str:
+def edges_plan(state: MonsterAgentState) -> Literal["human_input", "__end__"]:
     if state.get("human_input_requested"):
         return "human_input"
     else:
-        return "plan_review"
+        return "__end__"
 
 
-def node_plan_review(state: MonsterAgentState) -> MonsterAgentState:
-    return state
+# def node_plan_review(state: MonsterAgentState) -> MonsterAgentState:
+#     # Get human feedback on the generated plan
+#     # Or respond to human feedback on the generated plan
+#     if state["human_response_provided"] is None:
+#         return {
+#             **state,
+#             "human_input_requested": "Please review the plan and provide feedback or confirm if it is acceptable.",
+#         }
+#     else:
+#         pass
 
 
-def node_human_input(state: MonsterAgentState) -> MonsterAgentState:
-    return state
+async def node_human_input(state: MonsterAgentState) -> MonsterAgentState:
+    result = interrupt({"human_input": "<HUMAN INPUT NEEDED>"})
+    human_input = result.get("human_input", "")
+    return {
+        **state,
+        "human_input_requested": None,
+        "human_response_provided": human_input,
+    }
 
 
-plan_subgraph_builder = StateGraph(MonsterAgentState)
-plan_subgraph_builder.add_node("intake", node_intake)
-plan_subgraph_builder.add_node("plan", node_plan)
-plan_subgraph_builder.add_node("human_input", node_human_input)
-plan_subgraph_builder.add_node("node_plan_review", node_plan_review)
+def entry_point(
+    state: MonsterAgentState,
+) -> Literal["intake", "plan", "human_input", "__end__"]:
+    if state["human_input_requested"] is not None:
+        return "human_input"
+    elif state["intake"] is None:
+        return "intake"
+    elif state["intake"] is not None and state["plan"] is None:
+        return "plan"
+    else:
+        return "__end__"
 
-plan_subgraph_builder.set_entry_point("intake")
-plan_subgraph_builder.add_conditional_edges("intake", edges_intake)
-plan_subgraph_builder.add_conditional_edges("plan", edges_plan)
 
-plan_subgraph = plan_subgraph_builder.compile()
+builder = StateGraph(MonsterAgentState)
+builder.add_node("intake", node_intake)
+builder.add_node("plan", node_plan)
+builder.add_node("human_input", node_human_input)
+# builder.add_node("node_plan_review", node_plan_review)
+
+builder.set_conditional_entry_point(entry_point)
+builder.add_conditional_edges("intake", edges_intake)
+builder.add_conditional_edges("plan", edges_plan)
+# builder.add_conditional_edges("plan_review", edges_plan_review)
+
+plan_subgraph = builder.compile()

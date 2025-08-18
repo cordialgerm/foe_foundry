@@ -34,9 +34,8 @@ Example usage:
 """
 
 from dataclasses import dataclass
+from enum import StrEnum
 from typing import Callable, Iterable
-
-from backports.strenum import StrEnum
 
 from foe_foundry.creature_types import CreatureType
 
