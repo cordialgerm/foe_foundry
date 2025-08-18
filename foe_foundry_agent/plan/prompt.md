@@ -9,7 +9,8 @@ Your job: read the user’s input (which may include a 5E-style statblock in mar
 Return a single fenced YAML code block with exactly these keys:
 
 ```yaml
-monster_recognized_as: One of four possible options - srd, fantasy_ttrpg, fantasy_general, unknown
+monster_recognized_as: One of four possible options - srd, srd_variant, fantasy_ttrpg, fantasy_general, unknown
+monster_name: Tentative name for the monster based on what the user has described so far
 monster_fantasy: One or two sentences that state the creature’s core idea and why it exists in the world.
 monster_appearance: one to two sentences on visuals, anatomy, motion, and notable sensory cues.
 monster_behavior: one to three sentences on typical behaviors, combat role, instincts, habitat, goals, or social patterns.
@@ -43,19 +44,18 @@ missing_information_query: a user-facing query describing what information is mi
 You must assess whether you recognize the monster and specify the `monster_recognized_as` field from one of these enumerations.
 
 - `srd`: Part of the SRD (examples: Orc, Goblin, Aboleth)
+- `srd_variant`: A modification of an existing SRD monster (ex: Orc Fireblade)
 - `fantasy_ttrpg`: Part of general Fantasy TTRPG knowledge (examples: Beholders, Mind Flayers)
 - `fantasy_general`: Part of general fantasy, folklore, or pop-fiction knowledge (examples: Sauron, Baba Yaga)
 - `unknown`: this is an unknown or custom monster that does not fit the rules above
 
 These values are listed in priority order, based on which is the most specific value that applieds.
 
-A tweak or minor modification of on one of the above should be counted as that category (for example a "Goblin Demolitionist" would count as `srd` since a Goblin is SRD).
-
 **Important**: Do not classify a monster as `fantasy_ttrpg` solely because it has a TTRPG-style statblock. Only use fantasy_ttrpg if the monster itself is a known creature from TTRPG supplements or widely recognized in TTRPG culture. Otherwise, if the creature is not recognized from prior knowledge, mark it as `unknown`.
 
 ## Inferring Information
 
-You may reasonably infer fields from the provided information. If the user did not explicitly provide information, then you may use your background knowledge **if the monster provided is one of the recognized monsters (it is not flagged as `unknown`).
+You may reasonably infer fields from the provided information. If the user did not explicitly provide information, then you may use your background knowledge **if the monster provided is one of the recognized monsters** (it is not flagged as `unknown`).
 
 When inferring fields, you must specify them in the `inferred_fields` section.
 

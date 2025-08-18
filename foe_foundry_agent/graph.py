@@ -23,6 +23,8 @@ async def node_intake(state: MonsterAgentState) -> MonsterAgentState:
 
     if human_input_requested is not None:
         history.add_ai_message(human_input_requested)
+    else:
+        history.add_ai_message("Intake complete. Proceeding to plan generation.")
 
     return {**state, "human_input_requested": human_input_requested, "intake": intake}
 
@@ -53,6 +55,8 @@ async def node_plan(state: MonsterAgentState) -> MonsterAgentState:
 
     if human_input_requested is not None:
         history.add_ai_message(human_input_requested)
+    else:
+        history.add_ai_message("Plan generation complete.")
 
     return {
         **state,

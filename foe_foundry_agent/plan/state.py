@@ -10,6 +10,7 @@ from foe_foundry.utils.yaml import extract_yaml_block_from_text
 
 class MonsterRecognizedAs(StrEnum):
     srd = "srd"
+    srd_variant = "srd_variant"
     fantasy_ttrpg = "fantasy_ttrpg"
     fantasy_general = "fantasy_general"
     unknown = "unknown"
@@ -17,6 +18,7 @@ class MonsterRecognizedAs(StrEnum):
 
 class PlanState(BaseModel):
     monster_recognized_as: MonsterRecognizedAs
+    monster_name: str | None
     monster_fantasy: str | None
     monster_appearance: str | None
     monster_behavior: str | None

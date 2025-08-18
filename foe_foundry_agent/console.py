@@ -19,7 +19,7 @@ class RunInConsole:
     def _print_message_history(self, state: MonsterAgentState | Any):
         """Prints the message history from the state."""
 
-        if not isinstance(state, dict):
+        if not isinstance(state, dict) or "history" not in state:
             return
 
         for message in state["history"].messages:
@@ -57,42 +57,40 @@ class RunInConsole:
 
         self._print_message_history(original_state)
         state = original_state
+
         while True:
-            self._print_message_history(state)
-            state, stop = await self._next_turn(state, config)
-            self._print_message_history(state)
+            needs_input = False
+            async for update in self.graph.astream(
+                input=state,  # type: ignore
+                config=config,  # type: ignore
+                stream_mode="updates",
+            ):
+                if "__interrupt__" in update:
+                    needs_input = True
+                    break
+                else:
+                    node = list(update.keys())[0]
+                    state: MonsterAgentState = update[node]
+                    self._print_message_history(state)
 
-            print(state)
+            if needs_input:
+                state = self._human_input()  # type: ignore
+                needs_input = False
+                if state is None:
+                    print("exiting...")
 
-            if stop or state is None:
-                print("Done!")
+            if isinstance(state, dict) and state.get("stop", False):
                 break
-            elif isinstance(state, Command):
-                print("Received Command")
-            elif state["plan"] is not None:
-                print(state["plan"].to_yaml_text())
-            elif state["intake"] is not None:
-                print(state["intake"].to_llm_display_text())
 
-    async def _next_turn(
-        self, state: MonsterAgentState | Command, config: dict
-    ) -> tuple[MonsterAgentState | Command | None, bool]:
-        """Handles the next turn in the conversation."""
+        final_state: MonsterAgentState = state  # type: ignore
 
-        result: dict = await self.graph.ainvoke(input=state, config=config, stream_mode="")  # type: ignore
-        self._print_message_history(result)
+        if final_state["intake"] is not None:
+            print(final_state["intake"].to_llm_display_text())
 
-        if "__interrupt__" in result:
-            command = self._human_input()
-            return command, command is None
-        elif "__end__" in result:
-            new_state: MonsterAgentState = result  # type: ignore
-            return new_state, True
-        else:
-            new_state: MonsterAgentState = result  # type: ignore
-            self._print_message_history(new_state)
-            stop = new_state["stop"]
-            return new_state, stop
+        if final_state["plan"] is not None:
+            print(final_state["plan"].to_yaml_text())
+
+        print("\n----CHATBOT COMPLETED-----")
 
 
 def run():
