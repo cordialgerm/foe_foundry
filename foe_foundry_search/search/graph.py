@@ -45,12 +45,15 @@ from .documents import DocumentSearchResult, search_documents
 
 class EntityType(StrEnum):
     MONSTER = "monster"
+    MONSTER_THIRD_PARTY = "monster_third_party"
     FAMILY = "family"
     POWER = "power"
 
 
 @dataclass(kw_only=True)
 class EntitySearchResult:
+    id: str
+    entity_type: EntityType
     monster_key: str | None
     power_key: str | None
     family_key: str | None
@@ -84,6 +87,8 @@ def search_entities_with_graph_expansion(
     target_node_types = set()
     if EntityType.MONSTER in entity_types:
         target_node_types.add("FF_MON")
+    if EntityType.MONSTER_THIRD_PARTY in entity_types:
+        target_node_types.add("MON")
     if EntityType.FAMILY in entity_types:
         target_node_types.add("FF_FAM")
     if EntityType.POWER in entity_types:
@@ -138,8 +143,22 @@ def search_entities_with_graph_expansion(
                     document_matches.append(doc_result)
                     break
 
+        node_type = node_data["type"]
+        if node_type == "FF_MON":
+            entity_type = EntityType.MONSTER
+        elif node_type == "MON":
+            entity_type = EntityType.MONSTER_THIRD_PARTY
+        elif node_type == "FF_FAM":
+            entity_type = EntityType.FAMILY
+        elif node_type == "POW":
+            entity_type = EntityType.POWER
+        else:
+            raise ValueError(f"Unknown node type: {node_type}")
+
         results.append(
             EntitySearchResult(
+                id=node_id,
+                entity_type=entity_type,
                 monster_key=monster_key,
                 power_key=power_key,
                 family_key=family_key,

@@ -14,7 +14,6 @@ def initialize_plan_chain(
         model = "gpt-5-mini"
 
     llm = ChatOpenAI(temperature=0.3, model=model, streaming=False)
-
     # Load the system prompt text
     prompt_path = Path(__file__).parent / "prompt.md"
     prompt_text = prompt_path.read_text(encoding="utf-8")
@@ -28,5 +27,4 @@ def initialize_plan_chain(
         ]
     )
 
-    # Return a zero-input runnable
     return prompt | llm
