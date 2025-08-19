@@ -11,31 +11,7 @@ from .state import MonsterAgentState
 
 async def node_intake(state: MonsterAgentState) -> MonsterAgentState:
     history = state["history"]
-    intake = await run_intake_chain(history)
-
-    if intake is None:
-        human_input_requested = "There was an issue with intake. Please provide more information and try again."
-    elif intake.clarification_follow_up is not None:
-        human_input_requested = intake.clarification_follow_up
-    elif not intake.is_relevant:
-        human_input_requested = "I'm here to talk about monsters. Please provide more information and try again."
-    else:
-        human_input_requested = None
-
-    if human_input_requested is not None:
-        history.add_ai_message(human_input_requested)
-    else:
-        history.add_ai_message("Intake complete. Proceeding to plan generation.")
-
-    if human_input_requested is not None:
-        human_input = HumanInputState(
-            input_requested=human_input_requested,
-            return_node="intake",
-            input_provided=None,
-        )
-    else:
-        human_input = None
-
+    intake, human_input = await run_intake_chain(history)
     return {**state, "human_input": human_input, "intake": intake}
 
 
@@ -54,30 +30,13 @@ async def node_plan(state: MonsterAgentState) -> MonsterAgentState:
 
     monster_input = f"{intake.request_summary}\n\n\n{intake.statblock_details}"
 
-    plan = await run_plan_chain(monster_input, state["history"])
-
-    if plan is None:
-        human_input_requested = "There was an issue with plan generation. Please provide more information and try again."
-    elif plan.missing_information_query:
-        human_input_requested = plan.missing_information_query
-    else:
-        human_input_requested = None
-
-    if human_input_requested is not None:
-        history.add_ai_message(human_input_requested)
-    else:
-        history.add_ai_message("Plan generation complete.")
-
-    if human_input_requested is not None:
-        human_input = HumanInputState(
-            input_requested=human_input_requested,
-            return_node="plan",
-            input_provided=None,
-        )
-    else:
-        human_input = None
-
-    return {**state, "human_input": human_input, "plan": plan}
+    plan, human_input = await run_plan_chain(monster_input, history)
+    return {
+        **state,
+        "human_input": human_input,
+        "plan": plan,
+        "stop": human_input is None,
+    }
 
 
 def edges_plan(state: MonsterAgentState) -> Literal["human_input", "__end__"]:
@@ -123,17 +82,18 @@ async def node_human_input(state: MonsterAgentState) -> MonsterAgentState:
     if previously_requested is None:
         raise ValueError("Human input state is required for this node.")
 
-    result = interrupt({"human_input": state["human_input"]})
+    if previously_requested.input_provided is not None:
+        human_input = previously_requested
+    else:
+        result = interrupt({"human_input": state["human_input"]})
+        response = result.get("human_input", "")
+        human_input = HumanInputState(
+            input_requested=previously_requested.input_requested,
+            return_node=previously_requested.return_node,
+            input_provided=response,
+        )
 
-    response = result.get("human_input", "")
-
-    human_input = HumanInputState(
-        input_requested=previously_requested.input_requested,
-        return_node=previously_requested.return_node,
-        input_provided=response,
-    )
-
-    state["history"].add_user_message(response)
+    state["history"].add_user_message(human_input.input_provided)  # type: ignore
     return {
         **state,
         "human_input": human_input,

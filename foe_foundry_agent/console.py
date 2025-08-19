@@ -46,11 +46,6 @@ class RunInConsole:
             self.state_printed.add("plan")
             print("Plan: ", plan.to_yaml_text())
 
-        # review = state.get("review")
-        # if review is not None and "review" not in self.state_printed:
-        #     self.state_printed.add("review")
-        #     print("Review: ", review.to_llm_display_text())
-
     def _human_input(self, human_input: HumanInputState) -> Command | None:
         user_input = input("\nYou: ").strip()
         if user_input.lower() in {"exit", "quit"}:
@@ -59,7 +54,6 @@ class RunInConsole:
             new_human_input = human_input.with_response(user_input)
             return Command(
                 update={"human_input": new_human_input},
-                goto=new_human_input.return_node,
             )
 
     async def run_async(self):
@@ -84,7 +78,7 @@ class RunInConsole:
 
         self._print_message_history(original_state)
         self._print_state(original_state)
-        state = original_state
+        state: MonsterAgentState | Command = original_state
 
         while True:
             needs_input = False
@@ -94,22 +88,20 @@ class RunInConsole:
                 stream_mode="updates",
             ):
                 if "__interrupt__" in update:
-                    state: MonsterAgentState = update["__interrupt__"][0].value  # type: ignore
+                    state = update["__interrupt__"][0].value  # type: ignore
                     self._print_state(state)
                     self._print_message_history(state)
                     needs_input = True
                     break
                 else:
                     node = list(update.keys())[0]
-                    state: MonsterAgentState = update[node]
+                    state = update[node]
                     self._print_state(state)
                     self._print_message_history(state)
 
             if needs_input:
                 state = self._human_input(state["human_input"])  # type: ignore
                 needs_input = False
-                if state is None:
-                    print("exiting...")
 
             if isinstance(state, dict) and state.get("stop", False):
                 break
