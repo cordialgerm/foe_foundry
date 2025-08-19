@@ -7,6 +7,7 @@ from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.types import Command
 
 from .graph import build_planning_graph
+from .human_input import HumanInputState
 from .state import InMemoryHistory, MonsterAgentState
 
 
@@ -15,6 +16,7 @@ class RunInConsole:
         self.printed_ids = set()
         self.saver = InMemorySaver()
         self.graph = build_planning_graph(self.saver)
+        self.state_printed = set()
 
     def _print_message_history(self, state: MonsterAgentState | Any):
         """Prints the message history from the state."""
@@ -30,12 +32,35 @@ class RunInConsole:
             if isinstance(message, AIMessage):
                 print("Codex: ", message.content)
 
-    def _human_input(self) -> Command | None:
+    def _print_state(self, state: MonsterAgentState | Any):
+        if not isinstance(state, dict):
+            return
+
+        intake = state.get("intake")
+        if intake is not None and "intake" not in self.state_printed:
+            self.state_printed.add("intake")
+            print("Intake: ", intake.to_llm_display_text())
+
+        plan = state.get("plan")
+        if plan is not None and "plan" not in self.state_printed:
+            self.state_printed.add("plan")
+            print("Plan: ", plan.to_yaml_text())
+
+        # review = state.get("review")
+        # if review is not None and "review" not in self.state_printed:
+        #     self.state_printed.add("review")
+        #     print("Review: ", review.to_llm_display_text())
+
+    def _human_input(self, human_input: HumanInputState) -> Command | None:
         user_input = input("\nYou: ").strip()
         if user_input.lower() in {"exit", "quit"}:
             return None
         else:
-            return Command(resume={"human_input": user_input})
+            new_human_input = human_input.with_response(user_input)
+            return Command(
+                update={"human_input": new_human_input},
+                goto=new_human_input.return_node,
+            )
 
     async def run_async(self):
         greeting = "Welcome! I'm Cordialgerm's Codex, your AI Assistant for Foe Foundry. I can help you create new monster statblocks.\n\nPlease start by describing or pasting in the markdown of the monster you want to create.\n"
@@ -50,12 +75,15 @@ class RunInConsole:
             "history": history,
             "intake": None,
             "plan": None,
-            "human_input_requested": greeting,
-            "human_response_provided": None,
+            "human_input": HumanInputState(
+                input_requested=greeting, return_node="intake"
+            ),
+            "review": None,
             "stop": False,
         }
 
         self._print_message_history(original_state)
+        self._print_state(original_state)
         state = original_state
 
         while True:
@@ -66,29 +94,25 @@ class RunInConsole:
                 stream_mode="updates",
             ):
                 if "__interrupt__" in update:
+                    state: MonsterAgentState = update["__interrupt__"][0].value  # type: ignore
+                    self._print_state(state)
+                    self._print_message_history(state)
                     needs_input = True
                     break
                 else:
                     node = list(update.keys())[0]
                     state: MonsterAgentState = update[node]
+                    self._print_state(state)
                     self._print_message_history(state)
 
             if needs_input:
-                state = self._human_input()  # type: ignore
+                state = self._human_input(state["human_input"])  # type: ignore
                 needs_input = False
                 if state is None:
                     print("exiting...")
 
             if isinstance(state, dict) and state.get("stop", False):
                 break
-
-        final_state: MonsterAgentState = state  # type: ignore
-
-        if final_state["intake"] is not None:
-            print(final_state["intake"].to_llm_display_text())
-
-        if final_state["plan"] is not None:
-            print(final_state["plan"].to_yaml_text())
 
         print("\n----CHATBOT COMPLETED-----")
 
