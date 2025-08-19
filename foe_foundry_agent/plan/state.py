@@ -43,3 +43,7 @@ class PlanState(BaseModel):
         if fence:
             return f"```yaml\n{yaml_text}```"
         return yaml_text
+
+    @property
+    def is_complete(self) -> bool:
+        return self.missing_information_query is None

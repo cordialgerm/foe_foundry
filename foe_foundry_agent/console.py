@@ -16,7 +16,8 @@ class RunInConsole:
         self.printed_ids = set()
         self.saver = InMemorySaver()
         self.graph = build_planning_graph(self.saver)
-        self.state_printed = set()
+        self.last_intake = None
+        self.last_plan = None
 
     def _print_message_history(self, state: MonsterAgentState | Any):
         """Prints the message history from the state."""
@@ -37,14 +38,14 @@ class RunInConsole:
             return
 
         intake = state.get("intake")
-        if intake is not None and "intake" not in self.state_printed:
-            self.state_printed.add("intake")
-            print("Intake: ", intake.to_llm_display_text())
+        if self.last_intake is None and intake is not None:
+            print("Intake: \n", intake.to_llm_display_text())
+            self.last_intake = intake
 
         plan = state.get("plan")
-        if plan is not None and "plan" not in self.state_printed:
-            self.state_printed.add("plan")
-            print("Plan: ", plan.to_yaml_text())
+        if plan is not None and self.last_plan != plan:
+            print("Plan: \n", plan.to_yaml_text())
+            self.last_plan = plan
 
     def _human_input(self, human_input: HumanInputState) -> Command | None:
         user_input = input("\nYou: ").strip()
@@ -72,7 +73,7 @@ class RunInConsole:
             "human_input": HumanInputState(
                 input_requested=greeting, return_node="intake"
             ),
-            "review": None,
+            "human_review": None,
             "stop": False,
         }
 
@@ -89,8 +90,8 @@ class RunInConsole:
             ):
                 if "__interrupt__" in update:
                     state = update["__interrupt__"][0].value  # type: ignore
-                    self._print_state(state)
-                    self._print_message_history(state)
+                    # self._print_state(state)
+                    # self._print_message_history(state)
                     needs_input = True
                     break
                 else:

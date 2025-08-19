@@ -8,7 +8,7 @@ from langchain_openai import ChatOpenAI
 def initialize_review_chain(
     model: str | None = None,
 ) -> Runnable:
-    """Initialize the initial input chain, which handles initial ingestion for the monster agent. Expects {messages} and {plan} variable."""
+    """Initialize the initial input chain, which handles initial ingestion for the monster agent. Expects {messages} and {review_request} variable."""
 
     if model is None:
         model = "gpt-5-nano"
@@ -24,7 +24,7 @@ def initialize_review_chain(
         [
             ("system", prompt_text),
             MessagesPlaceholder(variable_name="messages"),  # message history goes here
-            ("user", "{plan}"),
+            ("user", "{review_request}"),
         ]
     )
 

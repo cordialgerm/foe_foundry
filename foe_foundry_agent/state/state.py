@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import TypedDict
 
 from ..human_input import HumanInputState
+from ..human_review import HumanReviewState
 from ..intake import IntakeState
 from ..messages import InMemoryHistory
 from ..plan import PlanState
-from ..review import ReviewState
 
 
 class MonsterAgentState(TypedDict):
@@ -15,6 +15,6 @@ class MonsterAgentState(TypedDict):
     intake: IntakeState | None
     human_input: HumanInputState | None
     plan: PlanState | None
-    review: ReviewState | None
+    human_review: HumanReviewState | None
 
     stop: bool
