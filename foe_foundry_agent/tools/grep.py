@@ -56,7 +56,7 @@ def grep_monster_markdown(
     query: str,
     regex: bool = False,
     file_filter: Optional[str] = None,
-    context_lines: int = 2,
+    context_lines: int = 4,
     limit: int = 20,
 ) -> str:
     """

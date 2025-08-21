@@ -24,6 +24,27 @@ class InMemoryHistory(BaseModel):
 
     message_dicts: list[dict] = Field(default_factory=list)
 
+    def __init__(self, **data):
+        super().__init__(**data)
+        self._on_message_added = []
+
+    def add_message_listener(self, callback):
+        """
+        Register a callback to be called when a message is added.
+        Callback signature: def callback(message: BaseMessage, history: InMemoryHistory)
+        """
+        self._on_message_added.append(callback)
+
+    def remove_message_listener(self, callback):
+        """
+        Unregister a previously registered callback.
+        """
+        self._on_message_added.remove(callback)
+
+    def _trigger_message_added(self, message: BaseMessage):
+        for cb in self._on_message_added:
+            cb(message, self)
+
     @property
     def messages(self) -> list[BaseMessage]:
         """
@@ -39,6 +60,8 @@ class InMemoryHistory(BaseModel):
             new_messages: List of BaseMessage objects to add.
         """
         self.message_dicts.extend(messages_to_dict(new_messages))
+        for msg in new_messages:
+            self._trigger_message_added(msg)
 
     def clear(self) -> None:
         """
@@ -95,12 +118,12 @@ class InMemoryHistory(BaseModel):
         Args:
             tool_call: The ToolCall object to add.
         """
-        self.message_dicts.append(
-            {
-                "type": "ai",
-                "data": {"content": "Calling tool..", "tool_calls": [tool_call]},
-            }
-        )
+        msg_dict = {
+            "type": "ai",
+            "data": {"content": "Calling tool..", "tool_calls": [tool_call]},
+        }
+        msg = messages_from_dict([msg_dict])[0]
+        self.add_message(msg)
 
     def add_tool_message(self, tool_message: ToolMessage):
         """

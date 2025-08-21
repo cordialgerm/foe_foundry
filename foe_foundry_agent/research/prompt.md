@@ -87,7 +87,7 @@ Use for candidates that directly fit or can be adapted. Prefer *summaries* over 
 type: relevant-monster
 relevance: high|medium|low
 monster_key: <slug or canonical name>
-research_summary: <1-2 sentence blurb. This will be added to the parent research context. Focus on what this contributes to the user goal>
+research_summary: <1-2 sentence blurb that does NOT contain any special YAML characters that require escaping. Especially avoid ', ", and :. This will be added to the parent research context. Focus on what this contributes to the user goal>
 source_refs: <optional CSV of short refs or links>
 ---
 
@@ -115,4 +115,4 @@ Adaptation ideas: <2-3 bullets mapping to user_goal>
 
 Return only the markdown code blocks. No extra commentary.
 
-**Important** - the final outputs need to be wrapped in individual markdown code blocks.
+**Important** - the final research block outputs MUST be wrapped in individual markdown code blocks.
