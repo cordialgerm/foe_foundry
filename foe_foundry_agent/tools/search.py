@@ -37,16 +37,19 @@ def search_monsters(keywords: str) -> str:
         )
 
         messages = []
+        monster_keys = set()
         for result in results:
-            if result.monster_key is None:
+            if result.monster_key is None or result.monster_key in monster_keys:
                 continue
 
             if result.entity_type == EntityType.MONSTER:
                 monster_key = result.monster_key
                 monster = Monsters.lookup[monster_key]
-                url = f"https://foefoundry.com/monsters/{monster.template_key}/#{monster.key} (Foe Foundry)"
-                message = f"- [{monster.name}]({url}) - {monster.tag_line} (CR: {monster.cr}, Type: {monster.creature_type})"
+                url = f"https://foefoundry.com/monsters/{monster.template_key}/#{monster.key}"
+                message = f"- [{monster.name}]({url}) (CR: {monster.cr}, Type: {monster.creature_type}). {monster.tag_line}.\n"
                 message += _document_matches_to_message(result.document_matches)
+                message += "\n\n"
+                monster_keys.add(monster_key)
                 messages.append(message)
             else:
                 monster_key = result.monster_key
@@ -55,11 +58,13 @@ def search_monsters(keywords: str) -> str:
                     continue
 
                 url = f"monster://{monster.key}"
-                message = f"- [{monster.name}]({url}) - {monster.description} - (CR: {monster.cr}, Type: {monster.creature_type})"
+                message = f"- [{monster.name}]({url}) (CR: {monster.cr}, Type: {monster.creature_type}). {monster.description}.\n"
                 message += _document_matches_to_message(result.document_matches)
+                message += "\n\n"
+                monster_keys.add(monster_key)
                 messages.append(message)
 
-        return f"## Monster Search Results For: {keywords}\n\n" + "\n".join(messages)
+        return f"\n## Monster Search Results For: {keywords}\n\n" + "\n".join(messages)
 
     except Exception as x:
         return f"Error occurred while searching for monsters: {x}"

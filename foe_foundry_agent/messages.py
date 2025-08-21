@@ -5,6 +5,8 @@ from langchain_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
+    ToolCall,
+    ToolMessage,
     get_buffer_string,
     messages_from_dict,
     messages_to_dict,
@@ -21,13 +23,13 @@ class InMemoryHistory(BaseModel):
     def messages(self) -> list[BaseMessage]:
         return messages_from_dict(self.message_dicts)
 
-    def add_messages(self, new_messages: list[BaseMessage]) -> None:
+    def add_messages(self, new_messages: list[BaseMessage]):
         self.message_dicts.extend(messages_to_dict(new_messages))
 
     def clear(self) -> None:
         self.message_dicts.clear()
 
-    def add_user_message(self, message: HumanMessage | str) -> None:
+    def add_user_message(self, message: HumanMessage | str):
         """Convenience method for adding a human message string to the store.
 
         Please note that this is a convenience method. Code should favor the
@@ -44,7 +46,7 @@ class InMemoryHistory(BaseModel):
         else:
             self.add_message(HumanMessage(content=message, id=str(uuid4())))
 
-    def add_ai_message(self, message: Union[AIMessage, str]) -> None:
+    def add_ai_message(self, message: Union[AIMessage, str]):
         """Convenience method for adding an AI message string to the store.
 
         Please note that this is a convenience method. Code should favor the bulk
@@ -61,7 +63,21 @@ class InMemoryHistory(BaseModel):
         else:
             self.add_message(AIMessage(content=message, id=str(uuid4())))
 
-    def add_message(self, message: BaseMessage) -> None:
+    def add_tool_call(self, tool_call: ToolCall):
+        """Add a ToolCall object to the store."""
+
+        self.message_dicts.append(
+            {
+                "type": "ai",
+                "data": {"content": "Calling tool..", "tool_calls": [tool_call]},
+            }
+        )
+
+    def add_tool_message(self, tool_message: ToolMessage):
+        """Add a ToolMessage object to the store."""
+        self.add_message(tool_message)
+
+    def add_message(self, message: BaseMessage):
         """Add a Message object to the store.
 
         Args:
@@ -71,7 +87,7 @@ class InMemoryHistory(BaseModel):
             NotImplementedError: If the sub-class has not implemented an efficient
                 add_messages method.
         """
-        return self.add_messages([message])
+        self.add_messages([message])
 
     def __str__(self) -> str:
         """Return a string representation of the chat history."""

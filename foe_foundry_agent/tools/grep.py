@@ -3,6 +3,7 @@ import re
 from pathlib import Path
 from typing import List, Optional
 
+from langchain_core.tools import tool
 from pydantic import BaseModel
 
 
@@ -37,6 +38,7 @@ def _find_monster_markdown_dirs() -> List[Path]:
     ]
 
 
+@tool
 def grep_monster_markdown(
     query: str,
     regex: bool = False,
