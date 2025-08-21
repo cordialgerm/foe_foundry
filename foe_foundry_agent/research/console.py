@@ -81,12 +81,12 @@ def start_console_research():
         else:
             content: str = response.content  # type: ignore
             history.add_ai_message(content)
-            print("AI: ", content)
+            print("AI: \n", content)
 
         print("\n\n------- HISTORY ------\n\n")
         print(str(history))
 
-        if "```md" in content:
+        if "```md" in content or ("---" in content and "type:" in content):
             print("DONE!")
             break
 

@@ -114,3 +114,5 @@ Adaptation ideas: <2-3 bullets mapping to user_goal>
 - Your are explicitly instructed to wrap up the findings
 
 Return only the markdown code blocks. No extra commentary.
+
+**Important** - the final outputs need to be wrapped in individual markdown code blocks.

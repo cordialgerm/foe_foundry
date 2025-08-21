@@ -14,17 +14,30 @@ class MonsterGrepResult(BaseModel):
     match: str
     context: List[str]
 
+    def to_markdown(self) -> str:
+        """
+        Format the search result as markdown for LLM contexts.
+        """
+        md = f"### `{self.file}` Line {self.line}\n"
+        md += f"**Match:**\n```\n{self.match}\n```\n"
+        if self.context:
+            md += "**Context:**\n"
+            md += "\n".join(self.context)
+            md += "\n"
+        return md
 
-def to_markdown(self) -> str:
-    """
-    Format the search result as markdown for LLM contexts.
-    """
-    md = f"## {self.file} Line {self.line}\n"
-    md += f"**Match:**\n```\n{self.match}\n```\n"
-    if self.context:
-        md += "\n".join(self.context)
-        md += "\n"
-    return md
+    def rank(self, query: str) -> int:
+        """
+        Basic ranking: heading (starts with #), start of line, anywhere.
+        Lower is better.
+        """
+        if self.match.lstrip().startswith("#") and query in self.match:
+            return 0
+        elif self.match.startswith(query):
+            return 1
+        elif query in self.match:
+            return 2
+        return 3
 
 
 def _find_monster_markdown_dirs() -> List[Path]:
@@ -44,16 +57,20 @@ def grep_monster_markdown(
     regex: bool = False,
     file_filter: Optional[str] = None,
     context_lines: int = 2,
-) -> List[MonsterGrepResult]:
+    limit: int = 20,
+) -> str:
     """
     Search monster markdown files for a keyword or regex pattern.
+
     Args:
         query: The search string or regex pattern.
         regex: If True, treat query as regex.
         file_filter: Optional substring or pattern to filter filenames.
         context_lines: Number of context lines before/after match to include.
+        limit: Maximum number of results to return.
+
     Returns:
-        List of MonsterGrepResult objects.
+        Markdown string of results.
     """
     dirs = _find_monster_markdown_dirs()
     results: List[MonsterGrepResult] = []
@@ -90,7 +107,19 @@ def grep_monster_markdown(
                         )
             except Exception:
                 continue
-    return results
+    # Rank results
+    ranked = sorted(results, key=lambda r: r.rank(query))
+    # Limit results
+    limited = ranked[:limit]
+    # Format as markdown
+    if not limited:
+        return f"\nNo results found for '{query}'."
+    md = f"\n## Grep Search Results for '{query}'\n\n"
+    for r in limited:
+        md += r.to_markdown() + "\n"
+    if len(ranked) > limit:
+        md += f"\n_Only showing top {limit} results of {len(ranked)} total._\n"
+    return md
 
 
 """
