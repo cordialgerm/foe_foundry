@@ -4,7 +4,7 @@ import dotenv
 from langchain_core.messages import AIMessage
 
 from ..messages import InMemoryHistory
-from ..tools import grep_monster_markdown, search_monsters
+from ..tools import get_monster_detail, grep_monster_markdown, search_monsters
 from .chain import initialize_research_chain
 
 
@@ -25,7 +25,8 @@ def start_console_research():
         "So far, nothing has been researched by you yet. You will start the research!"
     )
 
-    tool_count = 0
+    search_count = 0
+    detail_count = 0
 
     while True:
         response: AIMessage = chain.invoke(
@@ -34,12 +35,18 @@ def start_console_research():
             }
         )
 
-        if hasattr(response, "tool_calls") and response.tool_calls and tool_count < 5:
+        if (
+            hasattr(response, "tool_calls")
+            and response.tool_calls
+            and (search_count + detail_count) < 8
+        ):
             for tool_call in response.tool_calls:
+                tool_name = tool_call["name"].lower()
                 selected_tool = {
                     "search_monsters": search_monsters,
                     "grep_monster_markdown": grep_monster_markdown,
-                }[tool_call["name"].lower()]
+                    "get_monster_detail": get_monster_detail,
+                }[tool_name]
                 tool_msg = selected_tool.invoke(tool_call)
                 content = tool_msg.content
 
@@ -49,15 +56,26 @@ def start_console_research():
                 print(f"Tool: {tool_call}\n")
                 print(tool_msg.content)
 
-                tool_count += 1
+                if tool_name == "get_monster_detail":
+                    detail_count += 1
+                else:
+                    search_count += 1
 
-            if tool_count >= 5:
-                history.add_user_message(
-                    "You've reached the maximum number of tool searches. Please conclude your research immediately. Future tool calls will be ignored."
+            if detail_count >= 3:
+                history.add_system_message(
+                    "You've loaded the maximum number of monster details. You must immediately stop retrieving monster details and proceed to generating the research outputs."
                 )
-            elif tool_count >= 3:
-                history.add_user_message(
-                    "You've searched a couple of times now. If you've found what you're looking for, please conclude and generate the research outputs. Otherwise, you can make one more search"
+            elif detail_count >= 2:
+                history.add_system_message(
+                    "You've loaded the maximum number of monster details. You must immediately stop retrieving monster details and proceed to generating the research outputs."
+                )
+            elif search_count >= 4:
+                history.add_system_message(
+                    "You've reached the maximum number of tool searches. You must immediately stop searching and proceed to retrieving monster details."
+                )
+            elif search_count >= 3:
+                history.add_system_message(
+                    "You've searched a couple of times now. If you've found what you're looking for, please conclude searching and proceed to retrieving monster details. If not, you can make one more search."
                 )
 
         else:

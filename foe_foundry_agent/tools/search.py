@@ -96,7 +96,12 @@ def get_monster_detail(url_or_key: str) -> str:
         monster_meta = monster_metas.get(monster_key)
 
         if monster_ff is not None:
-            return monster_ff.statblock_html
+            return (
+                f"\n# {monster_ff.name}\n\n"
+                + (monster_ff.overview_html or "")
+                + "\n"
+                + monster_ff.statblock_html
+            )
         if monster_meta is not None:
             monster_meta.key
 
@@ -109,7 +114,7 @@ def get_monster_detail(url_or_key: str) -> str:
                 with open(path, "r") as f:
                     return f.read()
             else:
-                content = f"# {monster_meta.name}\n\n"
+                content = f"\n# {monster_meta.name}\n\n"
                 for _, paragraph in monster_meta.iter_paragraphs(rng):
                     content += f"{paragraph}\n"
                 return content

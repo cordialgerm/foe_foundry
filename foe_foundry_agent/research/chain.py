@@ -17,7 +17,7 @@ def initialize_research_chain(
 
     llm = ChatOpenAI(temperature=0.3, model=model, streaming=False)
 
-    tools = [search_monsters, grep_monster_markdown]
+    tools = [search_monsters, grep_monster_markdown, grep_monster_markdown]
     llm_with_tools = llm.bind_tools(tools, tool_choice="auto")
 
     # Load the system prompt text

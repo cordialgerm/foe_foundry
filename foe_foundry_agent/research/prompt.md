@@ -23,7 +23,7 @@ The user may ask for monsters that are variants of existing monsters or may ask 
 3) **Triangulate:** Keep only findings that add **new** angles or enable a stronger build path.
 4) **Distill:** Output up to 3 blocks. Prioritize high relevance and originality.
 
-## Tools
+## Search Tools
 
 You may call search tools. Use them deliberately:
 
@@ -31,18 +31,23 @@ You may call search tools. Use them deliberately:
 - Searches should not include generic keywords that all 5E D&D Monsters will have, 
   - skip keywords like '5E', 'Monster', 'Statblock', 'Attack', 'Save', 'DC', 'Lore', 'Creature', or the names of sourcebooks
   - these generic terms will pollute your results with irrelevant matches
-- Pivot only if results are redundant with the **research summary**
+- Use the `grep_monster_markdown` tool for exact string matches, rare keywords, or when searching for specific terms in markdown files that may not be covered by semantic search.
+
+If tools return only redundant results, you may skip tool calls and return zero blocks.
+
+## Monster Details
+
+Once you have identified specific monsters that are interesting and relevant, or you are instructed to stop searching, then you may retrieve the details of those monsters, including its lore and statblock. Use this tool deliberately - load only 1-3 monter details.
+
+## Outputs
+
+Once you have collected enough information, or you are instructed to generate your final analysis, then stop your research and produce findings in ```md``` code blocks according to the structure below.
+
 - Record useful `scratchpad` and `relevant-monster` findings as markdown code blocks
 - Each block will include `research_summary` text that will be passed to the parent research context
   - Write as if you are contributing one new insight to a collaborative research log
   - Avoid repeating what’s already in the upstream summary
   - Focus on what is new about this research and why it matters
-
-If tools return only redundant results, you may skip tool calls and return zero blocks.
-
-## Outputs
-
-Once you have collected enough information (between 2 to 5 focused queries), or you are instructed to stop searching, then stop your research and produce findings in ```md``` code blocks according to the structure below.
 
 ### Output Budget
 

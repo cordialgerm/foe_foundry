@@ -5,6 +5,7 @@ from langchain_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
+    SystemMessage,
     ToolCall,
     ToolMessage,
     get_buffer_string,
@@ -15,31 +16,45 @@ from pydantic import BaseModel, Field
 
 
 class InMemoryHistory(BaseModel):
-    """LangGraph-compatible chat history using safe message serialization."""
+    """
+    In-memory chat history compatible with LangGraph, using safe message serialization.
+    Stores messages as dictionaries for persistence and interoperability.
+    Provides convenience methods for adding different message types and managing history.
+    """
 
     message_dicts: list[dict] = Field(default_factory=list)
 
     @property
     def messages(self) -> list[BaseMessage]:
+        """
+        Returns the list of chat messages as BaseMessage objects, deserialized from stored dictionaries.
+        """
         return messages_from_dict(self.message_dicts)
 
     def add_messages(self, new_messages: list[BaseMessage]):
+        """
+        Add multiple BaseMessage objects to the chat history.
+
+        Args:
+            new_messages: List of BaseMessage objects to add.
+        """
         self.message_dicts.extend(messages_to_dict(new_messages))
 
     def clear(self) -> None:
+        """
+        Remove all messages from the chat history.
+        """
         self.message_dicts.clear()
 
     def add_user_message(self, message: HumanMessage | str):
-        """Convenience method for adding a human message string to the store.
-
-        Please note that this is a convenience method. Code should favor the
-        bulk add_messages interface instead to save on round-trips to the underlying
-        persistence layer.
-
-        This method may be deprecated in a future release.
+        """
+        Add a human (user) message to the chat history.
 
         Args:
-            message: The human message to add to the store.
+            message: The human message to add, either as a HumanMessage object or a string.
+
+        Note:
+            Prefer using add_messages for bulk operations to optimize performance.
         """
         if isinstance(message, HumanMessage):
             self.add_message(message)
@@ -47,25 +62,39 @@ class InMemoryHistory(BaseModel):
             self.add_message(HumanMessage(content=message, id=str(uuid4())))
 
     def add_ai_message(self, message: Union[AIMessage, str]):
-        """Convenience method for adding an AI message string to the store.
-
-        Please note that this is a convenience method. Code should favor the bulk
-        add_messages interface instead to save on round-trips to the underlying
-        persistence layer.
-
-        This method may be deprecated in a future release.
+        """
+        Add an AI message to the chat history.
 
         Args:
-            message: The AI message to add.
+            message: The AI message to add, either as an AIMessage object or a string.
+
+        Note:
+            Prefer using add_messages for bulk operations to optimize performance.
         """
         if isinstance(message, AIMessage):
             self.add_message(message)
         else:
             self.add_message(AIMessage(content=message, id=str(uuid4())))
 
-    def add_tool_call(self, tool_call: ToolCall):
-        """Add a ToolCall object to the store."""
+    def add_system_message(self, message: Union[SystemMessage, str]):
+        """
+        Add a system message to the chat history.
 
+        Args:
+            message: The system message to add, either as a SystemMessage object or a string.
+        """
+        if isinstance(message, SystemMessage):
+            self.add_message(message)
+        else:
+            self.add_message(SystemMessage(content=message, id=str(uuid4())))
+
+    def add_tool_call(self, tool_call: ToolCall):
+        """
+        Add a ToolCall object to the chat history as an AI message indicating a tool is being called.
+
+        Args:
+            tool_call: The ToolCall object to add.
+        """
         self.message_dicts.append(
             {
                 "type": "ai",
@@ -74,21 +103,25 @@ class InMemoryHistory(BaseModel):
         )
 
     def add_tool_message(self, tool_message: ToolMessage):
-        """Add a ToolMessage object to the store."""
+        """
+        Add a ToolMessage object to the chat history.
+
+        Args:
+            tool_message: The ToolMessage object to add.
+        """
         self.add_message(tool_message)
 
     def add_message(self, message: BaseMessage):
-        """Add a Message object to the store.
+        """
+        Add a single BaseMessage object to the chat history.
 
         Args:
             message: A BaseMessage object to store.
-
-        Raises:
-            NotImplementedError: If the sub-class has not implemented an efficient
-                add_messages method.
         """
         self.add_messages([message])
 
     def __str__(self) -> str:
-        """Return a string representation of the chat history."""
+        """
+        Return a formatted string representation of the chat history for display or logging.
+        """
         return get_buffer_string(self.messages)
