@@ -45,4 +45,11 @@ class ResearchState(TypedDict):
     tool_calls: list[ToolCall] | None
     search_tool_count: int
     detail_tool_count: int
+    overall_summary: str | None
     should_exit: bool
+
+
+class ResearchResult(BaseModel):
+    messages: InMemoryHistory
+    notes: list[ResearchNote]
+    overall_summary: str

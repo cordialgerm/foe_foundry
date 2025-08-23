@@ -6,7 +6,9 @@ from langgraph.types import Checkpointer, interrupt
 from .human_input import HumanInputState
 from .human_review import run_review_chain
 from .intake import run_intake_chain
+from .messages import InMemoryHistory
 from .plan import run_plan_chain
+from .research import run_research_graph
 from .state import MonsterAgentState
 
 
@@ -42,13 +44,13 @@ async def node_plan(state: MonsterAgentState) -> MonsterAgentState:
 
 def edges_plan(
     state: MonsterAgentState,
-) -> Literal["human_input", "human_review", "__end__"]:
+) -> Literal["human_input", "human_review", "research"]:
     if state.get("human_input"):
         return "human_input"
     elif state.get("human_review"):
         return "human_review"
     else:
-        return "__end__"
+        return "research"
 
 
 async def node_human_input(state: MonsterAgentState) -> MonsterAgentState:
@@ -120,9 +122,26 @@ def edge_human_review(state: MonsterAgentState) -> Literal["plan", "__end__"]:
     return state["human_review"].next_edge  # type: ignore
 
 
+async def node_research(state: MonsterAgentState):
+    plan = state["plan"]
+    if plan is None:
+        raise ValueError("Plan state is required for research.")
+
+    subgraph_history = InMemoryHistory()
+    research = await run_research_graph(
+        session_id=state["session_id"], plan=plan, history=subgraph_history
+    )
+
+    state["history"].add_ai_message(
+        research.overall_summary
+    )  # give summary back to parent message context
+
+    return {**state, "research": research}
+
+
 def entry_point(
     state: MonsterAgentState,
-) -> Literal["intake", "plan", "human_input", "__end__"]:
+) -> Literal["intake", "plan", "human_input", "research", "__end__"]:
     if state["human_input"] is not None:
         return state["human_input"].next_edge  # type: ignore
     elif state["human_review"] is not None:
@@ -131,6 +150,12 @@ def entry_point(
         return "intake"
     elif state["intake"] is not None and state["plan"] is None:
         return "plan"
+    elif (
+        state["intake"] is not None
+        and state["plan"] is not None
+        and state["research"] is None
+    ):
+        return "research"
     else:
         return "__end__"
 
@@ -143,12 +168,14 @@ def build_planning_graph(checkpointer: Checkpointer):
     builder.add_node("plan", node_plan)
     builder.add_node("human_input", node_human_input)
     builder.add_node("human_review", node_human_review)
+    builder.add_node("research", node_research)
 
     builder.set_conditional_entry_point(entry_point)
     builder.add_conditional_edges("intake", edges_intake)
     builder.add_conditional_edges("plan", edges_plan)
     builder.add_conditional_edges("human_input", edge_human_input)
     builder.add_conditional_edges("human_review", edge_human_review)
+    builder.add_edge("research", "__end__")
 
     plan_subgraph = builder.compile(checkpointer=checkpointer)
     return plan_subgraph

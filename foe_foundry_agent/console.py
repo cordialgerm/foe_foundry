@@ -1,119 +1,54 @@
 import asyncio
-from typing import Any
+import json
+from pathlib import Path
 
 import dotenv
-from langchain_core.messages import AIMessage
-from langgraph.checkpoint.memory import InMemorySaver
-from langgraph.types import Command
+from langchain_core.messages import BaseMessage
 
-from .graph import build_planning_graph
-from .human_input import HumanInputState
-from .state import InMemoryHistory, MonsterAgentState
+from .messages import InMemoryHistory, add_message_listener
+from .run import GraphRunner
 
 
-class RunInConsole:
-    def __init__(self):
-        self.printed_ids = set()
-        self.saver = InMemorySaver()
-        self.graph = build_planning_graph(self.saver)
-        self.last_intake = None
-        self.last_plan = None
+async def run_async():
+    h = InMemoryHistory()
+    add_message_listener(on_message_received)
+    g = GraphRunner(input_callback=human_input)
+    state = await g.run_async(session_id="test-console-session", history=h)
 
-    def _print_message_history(self, state: MonsterAgentState | Any):
-        """Prints the message history from the state."""
+    dir = Path.cwd() / "cache" / "foe_foundry_agent"
+    dir.mkdir(parents=True, exist_ok=True)
 
-        if not isinstance(state, dict) or "history" not in state:
-            return
+    log_file = dir / "console_run_output.md"
+    with log_file.open("w") as f:
+        f.write("# Console Run Output\n")
+        f.write("---\n")
+        f.write(str(h))
 
-        for message in state["history"].messages:
-            if message.id in self.printed_ids:
-                continue
+    state_file = dir / "console_run_state.json"
+    keys = {}
+    state["intake"]
+    state["plan"]
+    state["research"]
 
-            self.printed_ids.add(message.id)
-            if isinstance(message, AIMessage):
-                print("Codex: ", message.content)
+    with state_file.open("w") as f:
+        keys = {"intake", "plan", "research"}
+        json_data = {k: v.model_dump_json() for k, v in state.items() if k in keys}  # type: ignore
+        json.dump(json_data, f)
 
-    def _print_state(self, state: MonsterAgentState | Any):
-        if not isinstance(state, dict):
-            return
+    print("DONE!")
 
-        intake = state.get("intake")
-        if self.last_intake is None and intake is not None:
-            print("Intake: \n", intake.to_llm_display_text())
-            self.last_intake = intake
 
-        plan = state.get("plan")
-        if plan is not None and self.last_plan != plan:
-            print("Plan: \n", plan.to_yaml_text())
-            self.last_plan = plan
+def on_message_received(message: BaseMessage, history):
+    print(f"{message.type}:\n{message.content}")
 
-    def _human_input(self, human_input: HumanInputState) -> Command | None:
-        user_input = input("\nYou: ").strip()
-        if user_input.lower() in {"exit", "quit"}:
-            return None
-        else:
-            new_human_input = human_input.with_response(user_input)
-            return Command(
-                update={"human_input": new_human_input},
-            )
 
-    async def run_async(self):
-        greeting = "Welcome! I'm Cordialgerm's Codex, your AI Assistant for Foe Foundry. I can help you create new monster statblocks.\n\nPlease start by describing or pasting in the markdown of the monster you want to create.\n"
-
-        history = InMemoryHistory()
-        history.add_ai_message(greeting)
-
-        session_id = "test_console_session"
-        config = {"configurable": {"thread_id": session_id}}
-
-        original_state: MonsterAgentState = {
-            "history": history,
-            "intake": None,
-            "plan": None,
-            "human_input": HumanInputState(
-                input_requested=greeting, return_node="intake"
-            ),
-            "human_review": None,
-            "stop": False,
-        }
-
-        self._print_message_history(original_state)
-        self._print_state(original_state)
-        state: MonsterAgentState | Command = original_state
-
-        while True:
-            needs_input = False
-            async for update in self.graph.astream(
-                input=state,  # type: ignore
-                config=config,  # type: ignore
-                stream_mode="updates",
-            ):
-                if "__interrupt__" in update:
-                    state = update["__interrupt__"][0].value  # type: ignore
-                    # self._print_state(state)
-                    # self._print_message_history(state)
-                    needs_input = True
-                    break
-                else:
-                    node = list(update.keys())[0]
-                    state = update[node]
-                    self._print_state(state)
-                    self._print_message_history(state)
-
-            if needs_input:
-                state = self._human_input(state["human_input"])  # type: ignore
-                needs_input = False
-
-            if isinstance(state, dict) and state.get("stop", False):
-                break
-
-        print("\n----CHATBOT COMPLETED-----")
+def human_input() -> str:
+    return input("You: ")
 
 
 def run():
     dotenv.load_dotenv()
-    r = RunInConsole()
-    asyncio.run(r.run_async())
+    asyncio.run(run_async())
 
 
 if __name__ == "__main__":

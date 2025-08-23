@@ -26,7 +26,7 @@ async def run_console_research():
     await run_research_graph("console-session", monster_plan, history)
     print("DONE!")
 
-    output_dir = Path.cwd() / "cache" / "foe_foundry_agent"
+    output_dir = Path.cwd() / "cache" / "foe_foundry_agent" / "research"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "monster_research_output.md"
     with open(output_file, "w") as f:

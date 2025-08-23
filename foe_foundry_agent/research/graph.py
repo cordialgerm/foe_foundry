@@ -8,8 +8,8 @@ from langgraph.types import Checkpointer
 from ..messages import InMemoryHistory
 from ..plan import PlanState
 from ..tools import get_monster_detail, grep_monster_markdown, search_monsters
-from .chain import initialize_research_chain
-from .state import ResearchNote, ResearchState, parse_research_notes
+from .chain import initialize_research_chain, initialize_summary_chain
+from .state import ResearchNote, ResearchResult, ResearchState, parse_research_notes
 
 
 async def node_research(state: ResearchState):
@@ -38,11 +38,14 @@ async def node_research(state: ResearchState):
     ):
         tool_calls = response.tool_calls
     else:
+        messages.add_ai_message(response.content)  # type: ignore
         try:
             notes = parse_research_notes(response.content)  # type: ignore
-            messages.add_ai_message(response.content)  # type: ignore
-        except ValueError:
-            pass
+        except ValueError as x:
+            messages.add_ai_message(
+                "Failed to parse research notes. Please adjust the response content and try again. Here is the stack trace:\n\n"
+                + str(x)
+            )
 
     return {
         **state,
@@ -51,11 +54,13 @@ async def node_research(state: ResearchState):
     }
 
 
-def edge_research(state: ResearchState) -> Literal["tool", "research", "__end__"]:
+def edge_research(
+    state: ResearchState,
+) -> Literal["tool", "research", "summary", "__end__"]:
     if state["tool_calls"] is not None:
         return "tool"
     elif state["notes"] is not None:
-        return "__end__"
+        return "summary"
     else:
         return "research"
 
@@ -118,14 +123,26 @@ async def node_tool(state: ResearchState):
     }
 
 
+async def node_summarize(state: ResearchState):
+    messages = state["messages"]
+    chain = initialize_summary_chain()
+
+    response: AIMessage = await chain.ainvoke({"messages": messages.messages})
+    summary: str = response.content  # type: ignore
+    messages.add_ai_message(summary)
+    return {**state, "research_summary": summary}
+
+
 def build_research_graph(checkpointer: Checkpointer):
     builder = StateGraph(ResearchState)
 
     builder.add_node("research", node_research)
     builder.add_node("tool", node_tool)
-    builder.add_edge("tool", "research")
-    builder.add_conditional_edges("research", edge_research)
+    builder.add_node("summary", node_summarize)
     builder.set_entry_point("research")
+    builder.add_conditional_edges("research", edge_research)
+    builder.add_edge("tool", "research")
+    builder.add_edge("summary", "__end__")
 
     research_subgraph = builder.compile(checkpointer=checkpointer)
     return research_subgraph
@@ -133,7 +150,7 @@ def build_research_graph(checkpointer: Checkpointer):
 
 async def run_research_graph(
     session_id: str, plan: PlanState | str, history: InMemoryHistory
-) -> ResearchState:
+) -> ResearchResult:
     saver = InMemorySaver()
     graph = build_research_graph(checkpointer=saver)
 
@@ -151,10 +168,17 @@ async def run_research_graph(
         "notes": None,
         "tool_calls": None,
         "should_exit": False,
+        "overall_summary": None,
     }
 
     config = {"configurable": {"thread_id": session_id}}
 
-    await graph.ainvoke(state, config=config)  # type: ignore
+    state: ResearchState = await graph.ainvoke(state, config=config)  # type: ignore
+    notes = state["notes"]
+    overall_summary = state["overall_summary"]
+    if notes is None or overall_summary is None:
+        raise ValueError("Research notes and overall summary are required.")
 
-    return state
+    return ResearchResult(
+        messages=history, notes=notes, overall_summary=overall_summary
+    )

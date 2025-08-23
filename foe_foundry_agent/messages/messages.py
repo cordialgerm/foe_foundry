@@ -14,6 +14,8 @@ from langchain_core.messages import (
 )
 from pydantic import BaseModel, Field
 
+from .events import emit_message_event
+
 
 class InMemoryHistory(BaseModel):
     """
@@ -26,24 +28,6 @@ class InMemoryHistory(BaseModel):
 
     def __init__(self, **data):
         super().__init__(**data)
-        self._on_message_added = []
-
-    def add_message_listener(self, callback):
-        """
-        Register a callback to be called when a message is added.
-        Callback signature: def callback(message: BaseMessage, history: InMemoryHistory)
-        """
-        self._on_message_added.append(callback)
-
-    def remove_message_listener(self, callback):
-        """
-        Unregister a previously registered callback.
-        """
-        self._on_message_added.remove(callback)
-
-    def _trigger_message_added(self, message: BaseMessage):
-        for cb in self._on_message_added:
-            cb(message, self)
 
     @property
     def messages(self) -> list[BaseMessage]:
@@ -61,7 +45,7 @@ class InMemoryHistory(BaseModel):
         """
         self.message_dicts.extend(messages_to_dict(new_messages))
         for msg in new_messages:
-            self._trigger_message_added(msg)
+            emit_message_event(msg, self)
 
     def clear(self) -> None:
         """
