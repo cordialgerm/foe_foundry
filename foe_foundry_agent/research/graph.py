@@ -15,17 +15,23 @@ from .state import ResearchNote, ResearchState, parse_research_notes
 async def node_research(state: ResearchState):
     messages = state["messages"]
     chain = initialize_research_chain()
-    response: AIMessage = await chain.ainvoke({"messages": messages.messages})
 
     turns = state["detail_tool_count"] + state["search_tool_count"]
-
-    tool_calls: list[ToolCall] | None = None
-    notes: list[ResearchNote] | None = None
     if turns >= 8:
         messages.add_system_message(
             "You have exceeded the maximum number of turns. Proceed immediately to generating the research outputs."
         )
-    elif (
+    if state["should_exit"]:
+        messages.add_system_message(
+            "IMPORTANT: You must now produce the final output. Return exactly 1-3 fenced ```md code blocks using the schemas previously described. No other text."
+        )
+
+    response: AIMessage = await chain.ainvoke({"messages": messages.messages})
+
+    tool_calls: list[ToolCall] | None = None
+    notes: list[ResearchNote] | None = None
+
+    if (
         hasattr(response, "tool_calls")
         and response.tool_calls is not None
         and len(response.tool_calls)
@@ -84,18 +90,22 @@ async def node_tool(state: ResearchState):
         messages.add_tool_message(tool_msg)
 
     if detail_tool_count >= 3:
+        should_exit = True
         messages.add_system_message(
             "You've loaded the maximum number of monster details. You must immediately stop retrieving monster details and proceed to generating the research outputs."
         )
     elif detail_tool_count >= 2:
+        should_exit = True
         messages.add_system_message(
             "You've loaded the maximum number of monster details. You must immediately stop retrieving monster details and proceed to generating the research outputs."
         )
     elif search_tool_count >= 4:
+        should_exit = True
         messages.add_system_message(
             "You've reached the maximum number of tool searches. You must immediately stop searching and proceed to retrieving monster details."
         )
     elif search_tool_count >= 3:
+        should_exit = True
         messages.add_system_message(
             "You've searched a couple of times now. If you've found what you're looking for, please conclude searching and proceed to retrieving monster details. If not, you can make one more search."
         )
@@ -104,6 +114,7 @@ async def node_tool(state: ResearchState):
         **state,
         "search_tool_count": search_tool_count,
         "detail_tool_count": detail_tool_count,
+        "should_exit": should_exit,
     }
 
 
@@ -139,6 +150,7 @@ async def run_research_graph(
         "search_tool_count": 0,
         "notes": None,
         "tool_calls": None,
+        "should_exit": False,
     }
 
     config = {"configurable": {"thread_id": session_id}}

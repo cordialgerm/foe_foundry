@@ -45,3 +45,4 @@ class ResearchState(TypedDict):
     tool_calls: list[ToolCall] | None
     search_tool_count: int
     detail_tool_count: int
+    should_exit: bool
