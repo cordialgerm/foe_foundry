@@ -12,7 +12,7 @@ from .chain import initialize_research_chain, initialize_summary_chain
 from .state import ResearchNote, ResearchResult, ResearchState, parse_research_notes
 
 
-async def node_research(state: ResearchState):
+async def node_research(state: ResearchState) -> ResearchState:
     messages = state["messages"]
     chain = initialize_research_chain()
 
@@ -65,7 +65,7 @@ def edge_research(
         return "research"
 
 
-async def node_tool(state: ResearchState):
+async def node_tool(state: ResearchState) -> ResearchState:
     messages = state["messages"]
 
     tool_calls = state["tool_calls"]
@@ -94,6 +94,7 @@ async def node_tool(state: ResearchState):
         messages.add_tool_call(tool_call)
         messages.add_tool_message(tool_msg)
 
+    should_exit = False
     if detail_tool_count >= 3:
         should_exit = True
         messages.add_system_message(
@@ -123,14 +124,14 @@ async def node_tool(state: ResearchState):
     }
 
 
-async def node_summarize(state: ResearchState):
+async def node_summarize(state: ResearchState) -> ResearchState:
     messages = state["messages"]
     chain = initialize_summary_chain()
 
     response: AIMessage = await chain.ainvoke({"messages": messages.messages})
     summary: str = response.content  # type: ignore
     messages.add_ai_message(summary)
-    return {**state, "research_summary": summary}
+    return {**state, "overall_summary": summary}
 
 
 def build_research_graph(checkpointer: Checkpointer):
@@ -155,7 +156,7 @@ async def run_research_graph(
     graph = build_research_graph(checkpointer=saver)
 
     if isinstance(plan, PlanState):
-        plan = plan.to_yaml_text()
+        plan = plan.to_llm_display_text()
 
     history.add_user_message(
         f"This is information about the monster that I want you to research:\n\n{plan}"

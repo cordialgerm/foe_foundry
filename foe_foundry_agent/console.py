@@ -5,13 +5,14 @@ from pathlib import Path
 import dotenv
 from langchain_core.messages import BaseMessage
 
-from .messages import InMemoryHistory, add_message_listener
+from .events import add_message_listener, add_state_listener
+from .messages import InMemoryHistory
 from .run import GraphRunner
+from .state import StateChangedEvent
 
 
 async def run_async():
     h = InMemoryHistory()
-    add_message_listener(on_message_received)
     g = GraphRunner(input_callback=human_input)
     state = await g.run_async(session_id="test-console-session", history=h)
 
@@ -25,17 +26,28 @@ async def run_async():
         f.write(str(h))
 
     state_file = dir / "console_run_state.json"
-    keys = {}
-    state["intake"]
-    state["plan"]
-    state["research"]
 
     with state_file.open("w") as f:
         keys = {"intake", "plan", "research"}
-        json_data = {k: v.model_dump_json() for k, v in state.items() if k in keys}  # type: ignore
+        json_data = {
+            k: v.model_dump(mode="json") if v is not None else v  # type: ignore
+            for k, v in state.items()
+            if k in keys
+        }
         json.dump(json_data, f)
 
     print("DONE!")
+
+
+def on_state_changed(event: StateChangedEvent):
+    state = event.state
+
+    if state["research"] is not None:
+        print(state["research"].to_llm_display_text())
+    elif state["plan"] is not None:
+        print(state["plan"].to_llm_display_text())
+    elif state["intake"] is not None:
+        print(state["intake"].to_llm_display_text())
 
 
 def on_message_received(message: BaseMessage, history):
@@ -43,11 +55,16 @@ def on_message_received(message: BaseMessage, history):
 
 
 def human_input() -> str:
-    return input("You: ")
+    try:
+        return input("You: ")
+    except KeyboardInterrupt:
+        return "exit"
 
 
 def run():
     dotenv.load_dotenv()
+    add_message_listener(on_message_received)
+    add_state_listener(on_state_changed)
     asyncio.run(run_async())
 
 

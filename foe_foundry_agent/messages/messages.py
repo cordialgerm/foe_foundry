@@ -14,7 +14,7 @@ from langchain_core.messages import (
 )
 from pydantic import BaseModel, Field
 
-from .events import emit_message_event
+from ..events import emit_message_event
 
 
 class InMemoryHistory(BaseModel):

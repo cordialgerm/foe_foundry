@@ -1,9 +1,11 @@
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.types import Command
 
+from .events import emit_state_event
 from .graph import build_planning_graph
 from .human_input import HumanInputState
-from .state import InMemoryHistory, MonsterAgentState
+from .messages import InMemoryHistory
+from .state import MonsterAgentState, StateChangedEvent
 
 
 class GraphRunner:
@@ -62,6 +64,7 @@ class GraphRunner:
                 else:
                     node = list(update.keys())[0]
                     state = update[node]
+                    emit_state_event(StateChangedEvent(state=state, node=node))  # type: ignore
 
             if needs_input:
                 state = self.human_input(state["human_input"])  # type: ignore

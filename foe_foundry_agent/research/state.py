@@ -1,5 +1,6 @@
 from typing import Literal, TypedDict
 
+import yaml
 from langchain_core.messages import ToolCall
 from pydantic import BaseModel
 
@@ -53,3 +54,10 @@ class ResearchResult(BaseModel):
     messages: InMemoryHistory
     notes: list[ResearchNote]
     overall_summary: str
+
+    def to_llm_display_text(self):
+        return (
+            "```yaml\n"
+            + yaml.safe_dump(self.model_dump(mode="json"), sort_keys=False)
+            + "```"
+        )

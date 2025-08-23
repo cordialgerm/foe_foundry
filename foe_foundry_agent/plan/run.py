@@ -40,6 +40,7 @@ async def run_plan_chain(
         human_review = HumanReviewState(
             review_requested="Do you have any changes you'd like to see to this plan, or do you approve it?",
             return_node="plan",
+            next_node="research",
         )
         history.add_ai_message(human_review.review_requested)
 

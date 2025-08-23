@@ -8,6 +8,7 @@ from foe_foundry.utils.yaml import extract_yaml_block_from_text
 class HumanReviewState(BaseModel):
     review_requested: str
     return_node: str
+    next_node: str
     review_provided: str | None = None
     is_approved: bool | None = None
 
@@ -23,6 +24,6 @@ class HumanReviewState(BaseModel):
         if self.is_approved is None:
             return "human_review"
         elif self.is_approved:
-            return "__end__"
+            return self.next_node
         else:
             return self.return_node

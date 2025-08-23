@@ -4,6 +4,7 @@ from pathlib import Path
 import dotenv
 from langchain_core.messages import BaseMessage
 
+from ..events import add_message_listener
 from ..messages import InMemoryHistory
 from .graph import run_research_graph
 
@@ -14,8 +15,6 @@ def _message_listener(message: BaseMessage, history):
 
 async def run_console_research():
     history = InMemoryHistory()
-    history.add_message_listener(_message_listener)
-
     greeting = "This is the start of the monster research agent\n"
     print(greeting)
 
@@ -36,5 +35,6 @@ async def run_console_research():
 
 
 if __name__ == "__main__":
+    add_message_listener(_message_listener)
     dotenv.load_dotenv()
     asyncio.run(run_console_research())

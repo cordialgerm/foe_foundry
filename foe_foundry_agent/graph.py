@@ -115,7 +115,7 @@ async def node_human_review(state: MonsterAgentState) -> MonsterAgentState:
     }
 
 
-def edge_human_review(state: MonsterAgentState) -> Literal["plan", "__end__"]:
+def edge_human_review(state: MonsterAgentState) -> Literal["plan", "research"]:
     if state["human_review"] is None:
         raise ValueError("Human review state is required for this edge.")
 

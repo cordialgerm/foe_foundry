@@ -38,7 +38,7 @@ class PlanState(BaseModel):
 
         return PlanState(**data)
 
-    def to_yaml_text(self, fence: bool = True) -> str:
+    def to_llm_display_text(self, fence: bool = True) -> str:
         yaml_text = yaml.safe_dump(self.model_dump(mode="json"), sort_keys=False)
         if fence:
             return f"```yaml\n{yaml_text}```"
