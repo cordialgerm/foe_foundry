@@ -32,3 +32,8 @@ def test_get_monster_detail_internal_url():
     url = "monster://aboleth"
     result = search.get_monster_detail(url)
     assert "aboleth" in result.lower() or "No monster found" in result
+
+
+def test_search_powers():
+    result = search.search_powers("hide")
+    assert "cunning action" in result.lower()

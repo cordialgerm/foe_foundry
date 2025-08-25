@@ -1,4 +1,3 @@
-import asyncio
 from pathlib import Path
 
 import dotenv
@@ -14,6 +13,8 @@ def _message_listener(message: BaseMessage, history):
 
 
 async def run_console_research():
+    add_message_listener(_message_listener)
+    dotenv.load_dotenv()
     history = InMemoryHistory()
     greeting = "This is the start of the monster research agent\n"
     print(greeting)
@@ -32,9 +33,3 @@ async def run_console_research():
         f.write("# Monster Research Output\n")
         f.write("---\n")
         f.write(str(history))
-
-
-if __name__ == "__main__":
-    add_message_listener(_message_listener)
-    dotenv.load_dotenv()
-    asyncio.run(run_console_research())

@@ -51,6 +51,13 @@
             "request": "launch",
             "module": "foe_foundry_agent",
             "justMyCode": true
+        },
+        {
+            "name": "Research Sub-Agent",
+            "type": "python",
+            "request": "launch",
+            "module": "foe_foundry_agent.research",
+            "justMyCode": true
         }
     ]
 }

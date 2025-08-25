@@ -7,24 +7,26 @@ from langgraph.types import Checkpointer
 
 from ..messages import InMemoryHistory
 from ..plan import PlanState
-from ..tools import get_monster_detail, grep_monster_markdown, search_monsters
+from ..tools import ToolManager
 from .chain import initialize_research_chain, initialize_summary_chain
 from .state import ResearchNote, ResearchResult, ResearchState, parse_research_notes
 
 
 async def node_research(state: ResearchState) -> ResearchState:
     messages = state["messages"]
-    chain = initialize_research_chain()
+    tools = ToolManager(
+        budget_search_monsters=state["budget_search_monsters"],
+        budget_search_powers=state["budget_search_powers"],
+        budget_get_monster_details=state["budget_monster_details"],
+    )
+    chain = initialize_research_chain(tools)
 
-    turns = state["detail_tool_count"] + state["search_tool_count"]
-    if turns >= 8:
-        messages.add_system_message(
-            "You have exceeded the maximum number of turns. Proceed immediately to generating the research outputs."
-        )
-    if state["should_exit"]:
+    if state["force_exit"]:
         messages.add_system_message(
             "IMPORTANT: You must now produce the final output. Return exactly 1-3 fenced ```md code blocks using the schemas previously described. No other text."
         )
+    elif budget := tools.describe_budget():
+        messages.add_system_message(budget)
 
     response: AIMessage = await chain.ainvoke({"messages": messages.messages})
 
@@ -75,52 +77,30 @@ async def node_tool(state: ResearchState) -> ResearchState:
         )
         return state
 
-    search_tool_count = state.get("search_tool_count", 0)
-    detail_tool_count = state.get("detail_tool_count", 0)
+    tools = ToolManager(
+        budget_search_monsters=state["budget_search_monsters"],
+        budget_search_powers=state["budget_search_powers"],
+        budget_get_monster_details=state["budget_monster_details"],
+    )
+
     for tool_call in tool_calls:
-        tool_name = tool_call["name"].lower()
-        selected_tool = {
-            "search_monsters": search_monsters,
-            "grep_monster_markdown": grep_monster_markdown,
-            "get_monster_detail": get_monster_detail,
-        }[tool_name]
-        tool_msg = selected_tool.invoke(tool_call)
-
-        if tool_name == "get_monster_detail":
-            detail_tool_count += 1
-        else:
-            search_tool_count += 1
-
         messages.add_tool_call(tool_call)
-        messages.add_tool_message(tool_msg)
+        tool_msg = tools.invoke(tool_call)
+        if isinstance(tool_msg, str):
+            messages.add_ai_message(tool_msg)
+        else:
+            messages.add_tool_message(tool_msg)
 
-    should_exit = False
-    if detail_tool_count >= 3:
-        should_exit = True
-        messages.add_system_message(
-            "You've loaded the maximum number of monster details. You must immediately stop retrieving monster details and proceed to generating the research outputs."
-        )
-    elif detail_tool_count >= 2:
-        should_exit = True
-        messages.add_system_message(
-            "You've loaded the maximum number of monster details. You must immediately stop retrieving monster details and proceed to generating the research outputs."
-        )
-    elif search_tool_count >= 4:
-        should_exit = True
-        messages.add_system_message(
-            "You've reached the maximum number of tool searches. You must immediately stop searching and proceed to retrieving monster details."
-        )
-    elif search_tool_count >= 3:
-        should_exit = True
-        messages.add_system_message(
-            "You've searched a couple of times now. If you've found what you're looking for, please conclude searching and proceed to retrieving monster details. If not, you can make one more search."
-        )
+    force_exit = (
+        tools.budget_search_monsters <= 0
+        and tools.budget_search_powers <= 0
+        and tools.budget_get_monster_details <= 0
+    )
 
     return {
         **state,
-        "search_tool_count": search_tool_count,
-        "detail_tool_count": detail_tool_count,
-        "should_exit": should_exit,
+        **tools.updated_state,  # type: ignore
+        "force_exit": force_exit,
     }
 
 
@@ -164,12 +144,13 @@ async def run_research_graph(
 
     state: ResearchState = {
         "messages": history,
-        "detail_tool_count": 0,
-        "search_tool_count": 0,
         "notes": None,
         "tool_calls": None,
-        "should_exit": False,
+        "force_exit": False,
         "overall_summary": None,
+        "budget_search_monsters": 3,
+        "budget_search_powers": 3,
+        "budget_monster_details": 3,
     }
 
     config = {"configurable": {"thread_id": session_id}}

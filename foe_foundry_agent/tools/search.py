@@ -3,8 +3,11 @@ from pathlib import Path
 
 import numpy as np
 from langchain_core.tools import tool
+from markdownify import markdownify
 
+from foe_foundry_data.jinja import render_power_fragment
 from foe_foundry_data.monsters import Monsters
+from foe_foundry_data.powers import Powers
 from foe_foundry_search.documents import load_monster_document_metas
 from foe_foundry_search.search import (
     DocumentSearchResult,
@@ -13,7 +16,7 @@ from foe_foundry_search.search import (
 )
 
 
-@tool
+@tool(parse_docstring=True)
 def search_monsters(keywords: str) -> str:
     """
     Search for monsters using natural language keywords and return a formatted Markdown list of matching monsters.
@@ -70,7 +73,60 @@ def search_monsters(keywords: str) -> str:
         return f"Error occurred while searching for monsters: {x}"
 
 
-@tool
+@tool(parse_docstring=True)
+def search_powers(keywords: str) -> str:
+    """
+    Search for powers using natural language keywords and return a formatted Markdown list of matching powers.
+
+    This tool leverages semantic and graph-based search to find powers from both canonical and third-party sources.
+    Results include power name, description, and relevant document matches.
+    Suitable for LLMs and chatbots to provide rich, linkable search results for tabletop RPG power queries.
+
+    Args:
+        keywords (str): Natural language keywords describing the desired powers.
+
+    Returns:
+        str: Markdown-formatted search results, or an error message if the search fails.
+    """
+
+    try:
+        results = search_entities_with_graph_expansion(
+            keywords, entity_types={EntityType.POWER}
+        )
+
+        messages = []
+        power_keys = set()
+        for result in results:
+            if result.power_key is None or result.power_key in power_keys:
+                continue
+
+            if result.entity_type == EntityType.POWER:
+                power_key = result.power_key
+                power = Powers.PowerLookup[power_key]
+
+                url = f"https://foefoundry.com/powers/{power.theme}/#{power.key}"
+                message = f"### [{power.name}]({url})\n\n"
+
+                power_html = render_power_fragment(
+                    power, header_tag="h4", include_icon=False
+                )
+                power_markdown = markdownify(html=power_html)
+
+                message += power_markdown
+                message += "\n\n"
+                message += _document_matches_to_message(result.document_matches)
+                message += "\n\n"
+                power_keys.add(power_key)
+                messages.append(message)
+            else:
+                continue
+
+        return f"\n## Power Search Results For: {keywords}\n\n" + "\n".join(messages)
+    except Exception as x:
+        return f"Error occurred while searching for powers: {x}"
+
+
+@tool(parse_docstring=True)
 def get_monster_detail(url_or_key: str) -> str:
     """
     Retrieve detailed statblock or description for a monster given its URL or key.

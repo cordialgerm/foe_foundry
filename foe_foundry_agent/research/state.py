@@ -14,11 +14,12 @@ from ..messages import InMemoryHistory
 
 
 class ResearchNote(BaseModel):
-    type: Literal["relevant-monster", "scratchpad"]
+    type: Literal["relevant-monster", "relevant-power", "scratchpad"]
     relevance: Literal["high", "medium", "low"]
     monster_key: str | None
+    power_key: str | None
+    source_refs: str | None
     research_summary: str
-    source_refs: str
     research_content: str
 
 
@@ -32,8 +33,9 @@ def parse_research_notes(llm_output: str) -> list[ResearchNote]:
             type=yaml_data.get("type", "scratchpad"),
             relevance=yaml_data.get("relevance", "medium"),
             monster_key=yaml_data.get("monster_key"),
+            power_key=yaml_data.get("power_key"),
             research_summary=yaml_data.get("research_summary", ""),
-            source_refs=yaml_data.get("source_refs", ""),
+            source_refs=yaml_data.get("source_refs"),
             research_content=content,
         )
         notes.append(note)
@@ -44,10 +46,12 @@ class ResearchState(TypedDict):
     messages: InMemoryHistory
     notes: list[ResearchNote] | None
     tool_calls: list[ToolCall] | None
-    search_tool_count: int
-    detail_tool_count: int
     overall_summary: str | None
-    should_exit: bool
+    force_exit: bool
+
+    budget_search_monsters: int
+    budget_search_powers: int
+    budget_monster_details: int
 
 
 class ResearchResult(BaseModel):

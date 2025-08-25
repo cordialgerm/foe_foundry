@@ -5,19 +5,18 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import Runnable
 from langchain_openai import ChatOpenAI
 
-from ..tools import grep_monster_markdown, search_monsters
+from ..tools import ToolManager
 
 
 def initialize_research_chain(
+    tools: ToolManager,
     model: str | None = None,
 ) -> Runnable:
     if model is None:
         model = "gpt-5"
 
     llm = ChatOpenAI(temperature=0.3, model=model, streaming=False)
-
-    tools = [search_monsters, grep_monster_markdown, grep_monster_markdown]
-    llm_with_tools = llm.bind_tools(tools, tool_choice="auto")
+    llm_with_tools = llm.bind_tools(tools.tools, tool_choice="auto")
 
     # Load the system prompt text
     prompt_path = Path(__file__).parent / "prompt.md"
