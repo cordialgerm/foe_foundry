@@ -109,3 +109,17 @@ def test_search_monsters():
         if result.family_key:
             print(f"     Family: {result.family_key}")
         print(f"     Document matches: {len(result.document_matches)}")
+
+
+def test_search_ngrams():
+    query = "undead pirate captain, pirate lord, outlaw, bandit captain, ghost ship, cursed sea lord, sword wraith commander, drowned one, ghost captain"
+    results = list(
+        search_monsters(
+            query,
+            limit=5,
+            max_hops=4,
+            alpha=0.15,
+            creature_types={CreatureType.Humanoid},
+        )
+    )
+    assert len(results) > 0

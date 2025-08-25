@@ -82,7 +82,7 @@ class ToolManager:
             messages.append(
                 "You have exhausted your budget for searching monsters. You must immediately stop searching for monsters and proceed to searching for powers and loading specific monster details."
             )
-        if self.budget_search_monsters <= 2:
+        if self.budget_search_monsters <= 1:
             messages.append(
                 "You are running low on your budget for searching monsters. Consider focusing on searching for powers or loading specific monster details."
             )
@@ -91,7 +91,7 @@ class ToolManager:
             messages.append(
                 "You have exhausted your budget for searching powers. You must immediately stop searching for powers and proceed to the next step."
             )
-        if self.budget_search_powers <= 2:
+        if self.budget_search_powers <= 1:
             messages.append(
                 "You are running low on your budget for searching powers. Consider focusing on the next step."
             )
@@ -101,7 +101,7 @@ class ToolManager:
                 "You have exhausted your budget for getting monster details. You must immediately stop retrieving monster details and proceed to generating the research outputs."
             )
 
-        if self.budget_get_monster_details <= 2:
+        if self.budget_get_monster_details <= 1:
             messages.append(
                 "You are running low on your budget for getting monster details. Consider focusing on generating the research outputs."
             )

@@ -26,7 +26,7 @@ def search_monsters(keywords: str) -> str:
     Suitable for LLMs and chatbots to provide rich, linkable search results for tabletop RPG monster queries.
 
     Args:
-        keywords (str): Natural language keywords describing the desired monsters.
+        keywords (str): Natural language keywords describing the desired monsters. Phrases within the query should be comma-separated.
 
     Returns:
         str: Markdown-formatted search results, or an error message if the search fails.
@@ -83,7 +83,7 @@ def search_powers(keywords: str) -> str:
     Suitable for LLMs and chatbots to provide rich, linkable search results for tabletop RPG power queries.
 
     Args:
-        keywords (str): Natural language keywords describing the desired powers.
+        keywords (str): Natural language keywords describing the desired powers. Phrases within the query should be comma-separated.
 
     Returns:
         str: Markdown-formatted search results, or an error message if the search fails.
