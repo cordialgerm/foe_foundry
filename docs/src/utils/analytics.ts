@@ -2,10 +2,11 @@
 /// <reference types="vite/client" />
 /**
  * Analytics tracking utility for Foe Foundry
- * Provides a centralized wrapper around Google Analytics 4 (GA4)
+ * Provides a centralized wrapper around Google Analytics 4 (GA4) and GrowthBook
  */
 
 import { StatblockChangeType } from '../data/monster.js';
+import { trackGrowthBookEvent } from './growthbook.js';
 
 // Global gtag type declaration
 declare global {
@@ -35,10 +36,13 @@ export function trackEvent(name: string, params: AnalyticsParams = {}): void {
     ...params
   };
 
-  // Only track in production and if gtag is available
+  // Track to Google Analytics if available and in production
   if (typeof window.gtag !== 'undefined' && import.meta.env.PROD) {
     window.gtag('event', name, args);
   }
+
+  // Track to GrowthBook
+  trackGrowthBookEvent(name, args);
 
   // Log in development for debugging
   if (!import.meta.env.PROD) {

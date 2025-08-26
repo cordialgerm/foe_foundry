@@ -77,6 +77,7 @@ export class SvgIcon extends LitElement {
   @property()
   jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = false;
 
+  @property({ attribute: false })
   private svgContent: string = '';
 
   private handleClick() {
