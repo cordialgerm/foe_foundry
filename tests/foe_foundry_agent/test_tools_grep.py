@@ -12,8 +12,9 @@ def test_grep_monster_markdown_basic(tmp_path):
 
 def test_grep_monster_markdown_regex(tmp_path):
     # Test for any creature with the 'suggestion' spell or an ability with the word 'charm' in it
-    results = grep.grep_monster_markdown(r"suggestion|charm", regex=True)
-    # At least one result should mention 'suggestion' or 'charm'
-    assert any(
-        "suggestion" in r.match.lower() or "charm" in r.match.lower() for r in results
+    results = grep.grep_monster_markdown.invoke(
+        input=dict(query=r"suggestion|charm", regex=True)
     )
+    # At least one result should mention 'suggestion' or 'charm'
+    lower = results.lower()
+    assert "suggestion" in lower or "charm" in lower
