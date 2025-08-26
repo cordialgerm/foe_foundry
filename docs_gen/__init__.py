@@ -12,7 +12,17 @@ def generate_pages():
         print("Dev mode is on, skipping dynamic page generation.")
         return
 
+    # Performance optimization: Skip expensive page generation in fast builds
+    fast_build = os.environ.get("FAST_BUILD", "false").lower() == "true"
+    skip_generation = os.environ.get("SKIP_PAGE_GENERATION", "false").lower() == "true"
+    
+    if fast_build or skip_generation:
+        print("Fast build mode: skipping dynamic page generation for performance.")
+        return
+
+    print("Generating dynamic pages...")
     generate_topics_index()
     generate_families_index()
     generate_all_powers()
     generate_monsters_with_no_lore()
+    print("Dynamic page generation completed.")

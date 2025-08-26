@@ -91,8 +91,29 @@ class _MonsterCache:
                     monsters.append(m)
         return monsters
 
+    def _is_cache_fresh(self) -> bool:
+        """Check if the monster cache is fresh and doesn't need regeneration."""
+        if not self.cache_dir.exists():
+            return False
+        
+        json_files = list(self.cache_dir.glob("*.json"))
+        if not json_files:
+            return False
+        
+        # Check if cache files exist and are reasonably recent
+        # In a real implementation, you might check against source file timestamps
+        # For now, we'll assume cache is fresh if it exists and has files
+        return len(json_files) > 0
+
     def generate_cache(self) -> None:
         """Generate and save monster cache to disk. Called during build time."""
+        # Performance optimization: skip generation if cache is fresh
+        if self._is_cache_fresh():
+            import os
+            if os.environ.get("SKIP_MONSTER_CACHE_GENERATION", "false").lower() == "true":
+                print("Monster cache is fresh, skipping regeneration for performance.")
+                return
+        
         self.cache_dir.mkdir(parents=True, exist_ok=True)
 
         # Clear existing cache files
