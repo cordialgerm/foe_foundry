@@ -9,7 +9,9 @@ if TYPE_CHECKING:
     from ..powers import PowerModel
 
 
-def render_power_fragment(power: "PowerModel", header_tag: str = "h2") -> str:
+def render_power_fragment(
+    power: "PowerModel", header_tag: str = "h2", include_icon: bool = True
+) -> str:
     """Renders a power HTML fragment for a single power"""
 
     template = JinjaEnv.get_template("power.html.j2")
@@ -46,7 +48,7 @@ def render_power_fragment(power: "PowerModel", header_tag: str = "h2") -> str:
     spellcasting = [f for f in power.features if f.is_spellcasting]
     attack = [f for f in power.features if f.is_attack]
 
-    if power.icon is not None:
+    if include_icon and power.icon is not None:
         icon = inline_icon(power.icon)
     else:
         icon = None

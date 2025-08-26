@@ -1,10 +1,13 @@
 {
   "dependencies": {
+    "@growthbook/growthbook": "^1.6.1",
     "@lit/context": "^1.1.6",
     "@lit/task": "^1.0.3",
     "lit": "^3.3.1",
-    "puppeteer": "^24.12.1",
     "vite": "^7.0.6"
+  },
+  "optionalDependencies": {
+    "puppeteer": "^24.12.1"
   },
   "name": "foe_foundry",
   "version": "1.0.0",
@@ -15,13 +18,25 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "record_monster": "ts-node scripts/record-monster/playwright-demo.ts"
+    "preinstall": "echo 'Configuring environment to skip browser downloads for testing...' && export PUPPETEER_SKIP_DOWNLOAD=true",
+    "test": "PUPPETEER_SKIP_DOWNLOAD=true vitest run",
+    "test:watch": "PUPPETEER_SKIP_DOWNLOAD=true vitest",
+    "test:ui": "PUPPETEER_SKIP_DOWNLOAD=true vitest --ui",
+    "test:coverage": "PUPPETEER_SKIP_DOWNLOAD=true vitest run --coverage",
+    "record_monster": "ts-node scripts/record-monster/playwright-demo.ts",
+    "install:test": "PUPPETEER_SKIP_DOWNLOAD=true npm install",
+    "install:dev": "npm install"
   },
   "devDependencies": {
+    "@open-wc/testing": "^4.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "happy-dom": "^18.0.1",
+    "jsdom": "^26.1.0",
     "playwright": "^1.54.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^3.2.4"
   },
   "repository": {
     "type": "git",

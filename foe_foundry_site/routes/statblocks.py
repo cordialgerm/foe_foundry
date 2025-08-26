@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import os
 from dataclasses import asdict
+from enum import StrEnum
 from typing import Annotated
 
 import numpy as np
-from backports.strenum import StrEnum
 from fastapi import APIRouter, Body, HTTPException, Query, Response
 from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel

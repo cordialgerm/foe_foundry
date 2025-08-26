@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { createRef, ref, Ref } from 'lit/directives/ref.js';
 import { Task } from '@lit/task';
 import { initializeMonsterStore } from '../data/api';
-import { StatblockRequest, StatblockChange, StatblockChangeType } from '../data/monster';
+import { StatblockRequest, StatblockChange, StatblockChangeType, MonsterStore } from '../data/monster';
 import { Power } from '../data/powers';
 import { adoptExternalCss } from '../utils';
 import './ForgeButton.js';
@@ -140,7 +140,8 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean, attribute: 'hide-buttons' })
     hideButtons: boolean = false;
 
-    private monsters = initializeMonsterStore();
+    @property({ type: Object })
+    monsterStore?: MonsterStore;
     private statblockRef: Ref<HTMLDivElement> = createRef();
     private _cachedStatblock: Element | null = null;
     private _changedPower: Power | null = null;
@@ -181,9 +182,11 @@ export class MonsterStatblock extends LitElement {
                 await adoptExternalCss(this.shadowRoot);
             }
 
+            const store = this.monsterStore || initializeMonsterStore();
+
             // If random flag is set, use the random statblock endpoint
             if (random) {
-                const statblockElement = await this.monsters.getRandomStatblock();
+                const statblockElement = await store.getRandomStatblock();
 
                 if (!statblockElement) {
                     throw new Error('Failed to generate random statblock');
@@ -226,7 +229,7 @@ export class MonsterStatblock extends LitElement {
                 changedPower: this._changedPower
             } : null;
 
-            const statblockElement = await this.monsters.getStatblock(request, change);
+            const statblockElement = await store.getStatblock(request, change);
 
             if (!statblockElement) {
                 throw new Error('Failed to generate statblock');

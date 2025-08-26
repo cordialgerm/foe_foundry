@@ -95,6 +95,11 @@ for arg in "$@"; do
     fi
 done
 
+# If --fast is set, also set --run
+if [ "$FAST_BUILD" = true ]; then
+    RUN_SITE=true
+fi
+
 # Optionally run the site if --run flag is present
 if [ "$RUN_SITE" = true ]; then
     echo "Running foe_foundry_site..."
