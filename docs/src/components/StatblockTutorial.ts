@@ -28,6 +28,7 @@ interface TutorialState {
   currentTarget: TutorialTarget | null;
   currentLine: string;
   showTime: number;
+  bubbleElement: HTMLElement | null;
 }
 
 @customElement('statblock-tutorial')
@@ -37,13 +38,16 @@ export class StatblockTutorial extends LitElement {
     currentStatblock: null,
     currentTarget: null,
     currentLine: '',
-    showTime: 0
+    showTime: 0,
+    bubbleElement: null
   };
 
   private _intersectionObserver?: IntersectionObserver;
   private _statblocks: Element[] = [];
   private _visibilityMap = new Map<Element, number>();
   private _initTimeout?: number;
+  private _cycleTimeout?: number;
+  private _currentTargetIndex = 0;
 
   static styles = css`
     :host {
@@ -54,25 +58,27 @@ export class StatblockTutorial extends LitElement {
 
     .tutorial-bubble {
       position: absolute;
-      background: #fefdf9;
-      border: 1px solid #ccc;
+      background: var(--bg-color, #1a1a1a);
+      border: 2px solid var(--tertiary-color, #c29a5b);
       border-radius: 12px;
-      padding: 6px 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      padding: 8px 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       font-family: var(--primary-font, system-ui);
       font-size: 0.9rem;
+      color: var(--fg-color, #f4f1e6);
       max-width: 250px;
       z-index: 1001;
       pointer-events: auto;
       cursor: pointer;
       animation: popIn 0.25s ease-out;
+      white-space: nowrap;
     }
 
     .tutorial-bubble::after {
       content: '';
       position: absolute;
       border: 8px solid transparent;
-      border-top-color: #fefdf9;
+      border-top-color: var(--bg-color, #1a1a1a);
       top: 100%;
       left: 50%;
       transform: translateX(-50%);
@@ -82,7 +88,7 @@ export class StatblockTutorial extends LitElement {
       content: '';
       position: absolute;
       border: 9px solid transparent;
-      border-top-color: #ccc;
+      border-top-color: var(--tertiary-color, #c29a5b);
       top: 100%;
       left: 50%;
       transform: translateX(-50%);
@@ -93,7 +99,8 @@ export class StatblockTutorial extends LitElement {
       margin: 0;
       overflow: hidden;
       white-space: nowrap;
-      animation: typing 1.5s steps(50, end);
+      border-right: 2px solid var(--tertiary-color, #c29a5b);
+      animation: typing 2s steps(40, end), blink 1s step-end infinite;
     }
 
     @keyframes popIn {
@@ -110,6 +117,11 @@ export class StatblockTutorial extends LitElement {
     @keyframes typing {
       from { width: 0 }
       to { width: 100% }
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: var(--tertiary-color, #c29a5b) }
     }
 
     /* Icon highlighting animations */
@@ -248,8 +260,14 @@ export class StatblockTutorial extends LitElement {
       }
     });
 
-    if (mostVisible && maxVisibility > 0.1 && mostVisible !== this._tutorialState.currentStatblock) {
-      this._attachTutorialToStatblock(mostVisible);
+    if (mostVisible && maxVisibility > 0.1) {
+      if (mostVisible !== this._tutorialState.currentStatblock || !this._tutorialState.isActive) {
+        this._attachTutorialToStatblock(mostVisible);
+      }
+    } else if (this._tutorialState.isActive) {
+      // No statblock is visible, hide tutorial
+      this._removeTutorialBubble();
+      this._tutorialState.isActive = false;
     }
   }
 
@@ -271,13 +289,14 @@ export class StatblockTutorial extends LitElement {
       }
 
       this._showTutorialForButtons(statblock, buttons);
+      this._startCycleTimer();
     }, 100);
   }
 
   private _showTutorialForButtons(statblock: Element, buttons: Element[]): void {
-    // Randomly select a button to highlight
-    const randomButton = buttons[Math.floor(Math.random() * buttons.length)];
-    const target = randomButton.tagName.toLowerCase() === 'reroll-button' ? 'dice' : 'anvil';
+    // Cycle through available buttons
+    const targetButton = buttons[this._currentTargetIndex % buttons.length];
+    const target = targetButton.tagName.toLowerCase() === 'reroll-button' ? 'dice' : 'anvil';
     
     // Get random copy for this target
     const copyArray = TUTORIAL_COPY[target];
@@ -288,10 +307,11 @@ export class StatblockTutorial extends LitElement {
       currentStatblock: statblock,
       currentTarget: target,
       currentLine: randomLine,
-      showTime: Date.now()
+      showTime: Date.now(),
+      bubbleElement: null
     };
 
-    this._showTutorialBubble(randomButton, target, randomLine);
+    this._showTutorialBubble(targetButton, target, randomLine);
     this.requestUpdate();
   }
 
@@ -315,6 +335,30 @@ export class StatblockTutorial extends LitElement {
     return buttons;
   }
 
+  private _startCycleTimer(): void {
+    this._clearCycleTimer();
+    
+    this._cycleTimeout = window.setTimeout(() => {
+      if (this._tutorialState.isActive && this._tutorialState.currentStatblock) {
+        // Move to next target
+        this._currentTargetIndex++;
+        
+        // Find buttons in current statblock
+        const buttons = this._findButtonsInStatblock(this._tutorialState.currentStatblock);
+        if (buttons.length > 0) {
+          this._showTutorialForButtons(this._tutorialState.currentStatblock, buttons);
+        }
+      }
+    }, 4000); // Cycle every 4 seconds
+  }
+
+  private _clearCycleTimer(): void {
+    if (this._cycleTimeout) {
+      clearTimeout(this._cycleTimeout);
+      this._cycleTimeout = undefined;
+    }
+  }
+
   private _showTutorialBubble(button: Element, target: TutorialTarget, text: string): void {
     // Remove any existing bubble
     this._removeTutorialBubble();
@@ -331,8 +375,12 @@ export class StatblockTutorial extends LitElement {
     bubble.addEventListener('click', () => this._handleBubbleClick(target));
     button.addEventListener('click', () => this._handleIconClick(target));
     
-    // Add to DOM
-    document.body.appendChild(bubble);
+    // Find the statblock container and append bubble there
+    let container = button.closest('monster-statblock');
+    if (!container) {
+      container = document.body;
+    }
+    container.appendChild(bubble);
     
     // Add highlighting class to host
     this.classList.add(`highlighting-${target}`);
@@ -349,11 +397,26 @@ export class StatblockTutorial extends LitElement {
     const buttonRect = button.getBoundingClientRect();
     const bubbleElement = bubble as HTMLElement;
     
-    // Position above the button
-    bubbleElement.style.position = 'fixed';
-    bubbleElement.style.left = `${buttonRect.left + buttonRect.width / 2}px`;
-    bubbleElement.style.top = `${buttonRect.top - 60}px`;
+    // Find the statblock container for positioning context
+    let positioningParent = button.closest('monster-statblock');
+    if (!positioningParent) {
+      positioningParent = document.body;
+    }
+    
+    // Position relative to the positioning parent
+    bubbleElement.style.position = 'absolute';
+    
+    // Calculate position relative to the button
+    const parentRect = positioningParent.getBoundingClientRect();
+    const left = buttonRect.left - parentRect.left + (buttonRect.width / 2);
+    const top = buttonRect.top - parentRect.top - 70;
+    
+    bubbleElement.style.left = `${left}px`;
+    bubbleElement.style.top = `${top}px`;
     bubbleElement.style.transform = 'translateX(-50%)';
+    
+    // Store reference to bubble element
+    this._tutorialState.bubbleElement = bubbleElement;
   }
 
   private _removeTutorialBubble(): void {
@@ -362,8 +425,16 @@ export class StatblockTutorial extends LitElement {
       existingBubble.remove();
     }
     
+    if (this._tutorialState.bubbleElement) {
+      this._tutorialState.bubbleElement.remove();
+      this._tutorialState.bubbleElement = null;
+    }
+    
     // Remove highlighting classes
     this.classList.remove('highlighting-dice', 'highlighting-anvil');
+    
+    // Clear cycle timer
+    this._clearCycleTimer();
   }
 
   private _handleBubbleClick(target: TutorialTarget): void {
@@ -410,6 +481,8 @@ export class StatblockTutorial extends LitElement {
       clearTimeout(this._initTimeout);
     }
     
+    this._clearCycleTimer();
+    
     if (this._intersectionObserver) {
       this._intersectionObserver.disconnect();
     }
@@ -421,7 +494,8 @@ export class StatblockTutorial extends LitElement {
       currentStatblock: null,
       currentTarget: null,
       currentLine: '',
-      showTime: 0
+      showTime: 0,
+      bubbleElement: null
     };
   }
 
