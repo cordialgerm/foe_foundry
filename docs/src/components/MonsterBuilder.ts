@@ -3,8 +3,8 @@ import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { MonsterCard } from '../components/MonsterCard';
 import { initializeMonsterStore } from '../data/api';
-import { Power } from '../data/powers';
-import { StatblockChangeType } from '../data/monster';
+import { Power, PowerStore } from '../data/powers';
+import { StatblockChangeType, MonsterStore } from '../data/monster';
 import { Task } from '@lit/task';
 import { Monster, RelatedMonster } from '../data/monster';
 import { adoptExternalCss } from '../utils';
@@ -343,7 +343,7 @@ export class MonsterBuilder extends LitElement {
         await adoptExternalCss(this.shadowRoot);
       }
 
-      const store = initializeMonsterStore();
+      const store = this.monsterStore || initializeMonsterStore();
       const monster = await store.getMonster(monsterKey);
 
       if (monster === null) {
@@ -357,6 +357,12 @@ export class MonsterBuilder extends LitElement {
 
   @property({ type: String, attribute: 'monster-key' })
   monsterKey: string = '';
+
+  @property({ type: Object })
+  monsterStore?: MonsterStore;
+
+  @property({ type: Object })
+  powerStore?: PowerStore;
 
   @property({ type: String })
   mobileTab: 'edit' | 'statblock' = 'edit';
@@ -748,7 +754,11 @@ export class MonsterBuilder extends LitElement {
           style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
 
           <div class="card-panel" id="card-panel" tabindex="-1">
-            <monster-card monster-key="${this.monsterKey}"></monster-card>
+            <monster-card 
+              monster-key="${this.monsterKey}"
+              .monsterStore="${this.monsterStore}"
+              .powerStore="${this.powerStore}"
+            ></monster-card>
           </div>
 
           <div class="statblock-panel" id="statblock-panel" tabindex="-1">
@@ -756,6 +766,7 @@ export class MonsterBuilder extends LitElement {
               monster-key="${this.monsterKey}"
               power-keys="${powerKeys}"
               hide-buttons
+              .monsterStore="${this.monsterStore}"
             ></monster-statblock>
           </div>
         </div>

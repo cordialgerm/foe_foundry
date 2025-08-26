@@ -116,6 +116,7 @@ export class MockMonsterStore implements MonsterStore {
     
     const element = document.createElement('div');
     element.className = 'monster-statblock';
+    element.setAttribute('data-monster', 'random-monster');
     element.innerHTML = `
       <h3>Random Monster</h3>
       <p><strong>AC:</strong> 15</p>
@@ -131,14 +132,44 @@ export class MockMonsterStore implements MonsterStore {
     
     const element = document.createElement('div');
     element.className = 'monster-statblock';
+    element.setAttribute('data-monster', request.monsterKey);
+    
+    const powersList = request.powers && request.powers.length > 0 
+      ? request.powers.map(p => p.name || p.key).join(', ')
+      : 'No powers';
+    
     element.innerHTML = `
       <h3>${request.monsterKey}</h3>
       <p><strong>AC:</strong> 15</p>
-      <p><strong>HP:</strong> ${request.hpMultiplier ? 30 * request.hpMultiplier : 30}</p>
+      <p><strong>HP:</strong> ${request.hpMultiplier ? Math.round(30 * request.hpMultiplier) : 30}</p>
       <p><strong>Speed:</strong> 30 ft.</p>
-      <p><strong>Powers:</strong> ${request.powers.map(p => p.name).join(', ')}</p>
+      <p><strong>Powers:</strong> ${powersList}</p>
       ${change ? `<p><em>Changed: ${change.type}</em></p>` : ''}
     `;
+    
+    // Add change-specific CSS classes for testing
+    if (change?.type === 'hp-changed') {
+      element.querySelectorAll('p').forEach(p => {
+        if (p.textContent?.includes('HP:')) {
+          p.setAttribute('data-statblock-property', 'hp');
+        }
+      });
+    }
+    if (change?.type === 'damage-changed') {
+      element.querySelectorAll('p').forEach(p => {
+        if (p.textContent?.includes('Powers:')) {
+          p.setAttribute('data-statblock-property', 'attack');
+        }
+      });
+    }
+    if (change?.changedPower) {
+      element.querySelectorAll('p').forEach(p => {
+        if (p.textContent?.includes('Powers:')) {
+          p.setAttribute('data-power-key', change.changedPower!.key);
+        }
+      });
+    }
+    
     return element;
   }
 
