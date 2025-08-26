@@ -24,6 +24,9 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Run JavaScript tests
+        run: npm test
+
       - name: Set up Python 3.13.7
         uses: actions/setup-python@v5
         with:
