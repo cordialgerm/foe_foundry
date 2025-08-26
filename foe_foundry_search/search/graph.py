@@ -36,7 +36,10 @@ Example usage:
 from dataclasses import dataclass
 from typing import Callable, Iterable
 
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 
 from foe_foundry.creature_types import CreatureType
 

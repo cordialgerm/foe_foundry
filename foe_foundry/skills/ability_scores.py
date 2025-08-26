@@ -4,7 +4,10 @@ from __future__ import annotations
 
 from typing import List, cast
 
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 
 from .scaling import StatScaler, StatScaling
 

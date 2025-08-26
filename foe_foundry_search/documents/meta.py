@@ -5,7 +5,10 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 
 from foe_foundry import CreatureType, DamageType
 from foe_foundry.utils import list_to_sentence

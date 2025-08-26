@@ -1,7 +1,10 @@
 from dataclasses import field
 from enum import auto
 
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 from pydantic.dataclasses import dataclass
 
 from ..die.formula import DieFormula

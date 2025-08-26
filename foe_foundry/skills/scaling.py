@@ -1,6 +1,9 @@
 from typing import TYPE_CHECKING
 
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 
 if TYPE_CHECKING:
     from foe_foundry.skills.ability_scores import AbilityScore

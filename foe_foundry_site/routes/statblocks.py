@@ -5,7 +5,10 @@ from dataclasses import asdict
 from typing import Annotated
 
 import numpy as np
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 from fastapi import APIRouter, Body, HTTPException, Query, Response
 from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel

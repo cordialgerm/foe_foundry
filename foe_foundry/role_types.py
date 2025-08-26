@@ -2,7 +2,10 @@ from __future__ import annotations
 
 from enum import auto
 
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 
 
 class MonsterRole(StrEnum):

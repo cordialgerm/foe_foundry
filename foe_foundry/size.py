@@ -4,7 +4,10 @@ from enum import auto
 from typing import Dict, List
 
 import numpy as np
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 
 from .die import Die
 

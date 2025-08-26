@@ -2,7 +2,10 @@ import hashlib
 from typing import Any, Callable, Dict, List, TypeAlias, TypeVar, overload
 
 import numpy as np
-from backports.strenum import StrEnum
+try:
+    from enum import StrEnum  # Python 3.11+
+except ImportError:
+    from backports.strenum import StrEnum  # Python 3.10
 
 E = TypeVar("E", bound=StrEnum)
 T = TypeVar("T")
