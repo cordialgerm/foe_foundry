@@ -301,7 +301,12 @@ describe('MonsterCard Component', () => {
       const eventSpy = vi.fn();
       element.addEventListener('monster-changed', eventSpy);
 
-      // Simulate power selection event from a power loadout
+      // Wait for power loadouts to be rendered
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Simulate power selection event by dispatching it to the element itself
+      // since the event listener is on the element, not the child
       const powerSelectedEvent = new CustomEvent('power-selected', {
         detail: {
           power: { key: 'test-power-1', name: 'Fire Breath' }
@@ -309,9 +314,7 @@ describe('MonsterCard Component', () => {
         bubbles: true
       });
 
-      const powerLoadout = element.shadowRoot?.querySelector('power-loadout');
-      powerLoadout?.dispatchEvent(powerSelectedEvent);
-      
+      element.dispatchEvent(powerSelectedEvent);
       await element.updateComplete;
 
       expect(eventSpy).toHaveBeenCalled();

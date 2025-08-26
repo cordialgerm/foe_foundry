@@ -403,6 +403,10 @@ describe('MonsterStatblock Component', () => {
     });
 
     it('should show cached content while loading new statblock', async () => {
+      // Ensure we have cached content first
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+      
       const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
       
       // Add a delay to the mock to simulate loading
@@ -412,11 +416,18 @@ describe('MonsterStatblock Component', () => {
         )
       );
 
-      await element.reroll({ powers: 'new-power' });
-
+      // Start the reroll but don't await it yet
+      const rerollPromise = element.reroll({ powers: 'new-power' });
+      
+      // Check immediately after starting the reroll for loading state
+      await element.updateComplete;
+      
       // Should show cached content with loading overlay
       const cachedElement = element.shadowRoot?.querySelector('.loading.cached');
       expect(cachedElement).to.exist;
+      
+      // Now await completion
+      await rerollPromise;
     });
   });
 });

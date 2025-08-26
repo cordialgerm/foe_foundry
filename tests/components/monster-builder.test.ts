@@ -154,8 +154,10 @@ describe('MonsterBuilder Component', () => {
     });
 
     it('should handle statblock updates in mobile mode', async () => {
-      // Simulate power change that should trigger statblock update flag
+      // Set mobile mode and tab
+      element.isMobile = true;
       element.mobileTab = 'edit';
+      await element.updateComplete;
       
       const mockMonsterCard = {
         monsterKey: 'test-monster',
@@ -164,9 +166,26 @@ describe('MonsterBuilder Component', () => {
         damageMultiplier: 1
       };
 
-      await element.onStatblockChangeRequested(mockMonsterCard as any, { 
-        power: { key: 'test-power-1' } 
+      // Dispatch the monster-changed event that triggers the statblockUpdated flag
+      const monsterChangedEvent = new CustomEvent('monster-changed', {
+        detail: {
+          monsterCard: mockMonsterCard,
+          changeType: 'power-selected',
+          power: { key: 'test-power-1' }
+        },
+        bubbles: true
       });
+      
+      // Dispatch from a child element to simulate the real scenario
+      const monsterCard = element.shadowRoot?.querySelector('monster-card');
+      if (monsterCard) {
+        monsterCard.dispatchEvent(monsterChangedEvent);
+      } else {
+        // Fallback: dispatch directly on shadowRoot
+        element.shadowRoot?.dispatchEvent(monsterChangedEvent);
+      }
+      
+      await element.updateComplete;
 
       // The statblockUpdated flag should be set when in mobile mode and not viewing statblock
       expect(element.statblockUpdated).to.be.true;
