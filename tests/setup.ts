@@ -1,4 +1,8 @@
 import { vi } from 'vitest';
+import { expect as chaiExpect } from '@open-wc/testing';
+
+// Set up Chai with DOM testing capabilities for global access
+global.chaiExpect = chaiExpect;
 
 // Mock the CSS adoption utility to avoid errors in tests
 vi.mock('../docs/src/utils/css-adoption.js', () => ({

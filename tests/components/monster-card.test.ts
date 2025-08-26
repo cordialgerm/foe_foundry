@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { fixture, html } from '@open-wc/testing';
+import { fixture, html, expect as chaiExpect } from '@open-wc/testing';
 import { MonsterCard } from '../../docs/src/components/MonsterCard.js';
 import { MockMonsterStore } from '../mocks/mock-monster-store.js';
 import { MockPowerStore } from '../mocks/mock-power-store.js';
@@ -93,7 +93,7 @@ describe('MonsterCard Component', () => {
       await element.updateComplete;
 
       expect(element.contentTab).to.equal('lore');
-      expect(loreTab).to.have.attribute('class');
+      chaiExpect(loreTab).to.have.attribute('class');
       expect(loreTab?.className).to.include('active');
     });
   });

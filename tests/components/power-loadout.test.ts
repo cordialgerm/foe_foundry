@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { fixture, html } from '@open-wc/testing';
+import { fixture, html, expect as chaiExpect } from '@open-wc/testing';
 import { PowerLoadout } from '../../docs/src/components/PowerLoadout.js';
 import { MockPowerStore, mockPowerLoadouts } from '../mocks/mock-power-store.js';
 import '../setup.js';
@@ -173,7 +173,7 @@ describe('PowerLoadout Component', () => {
 
     it('should render single power without dropdown for locked loadouts', () => {
       const powerButton = element.shadowRoot?.querySelector('.power-button');
-      expect(powerButton).to.have.attribute('class');
+      chaiExpect(powerButton).to.have.attribute('class');
       expect(powerButton?.className).to.include('single-power');
 
       const chevron = element.shadowRoot?.querySelector('.dropdown-chevron');
