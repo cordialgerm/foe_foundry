@@ -1,18 +1,18 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import { customElement } from 'lit/decorators.js';
 import { trackEvent } from '../utils/analytics.js';
 
 // Tutorial copy library
 const TUTORIAL_COPY = {
   dice: [
-    "Not tough enough for your party? Roll again",
-    "Your PCs need a real challenge. Click me to re-roll",
-    "Not what you're looking for? Roll for a fresh take"
+    "Not tough enough for your party? Roll again.",
+    "Your PCs need a real challenge. Click me to re-roll.",
+    "Not what you're looking for? Roll for a fresh take."
   ],
   anvil: [
-    "Think you can forge a nastier foe?",
-    "Forge the perfect foe with a couple clicks", 
-    "Tired of boring statblocks? Forge an unforgettable foe"
+    "Think you can forge a nastier foe? Try it out!",
+    "Forge the perfect foe with a couple clicks.",
+    "Tired of boring statblocks? Forge an unforgettable foe."
   ]
 };
 
@@ -56,74 +56,6 @@ export class StatblockTutorial extends LitElement {
       pointer-events: none;
     }
 
-    .tutorial-bubble {
-      position: absolute;
-      background: var(--bg-color, #1a1a1a);
-      border: 2px solid var(--tertiary-color, #c29a5b);
-      border-radius: 12px;
-      padding: 8px 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      font-family: var(--primary-font, system-ui);
-      font-size: 0.9rem;
-      color: var(--fg-color, #f4f1e6);
-      max-width: 250px;
-      z-index: 1001;
-      pointer-events: auto;
-      cursor: pointer;
-      animation: popIn 0.25s ease-out;
-      white-space: nowrap;
-    }
-
-    .tutorial-bubble::after {
-      content: '';
-      position: absolute;
-      border: 8px solid transparent;
-      border-top-color: var(--bg-color, #1a1a1a);
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .tutorial-bubble::before {
-      content: '';
-      position: absolute;
-      border: 9px solid transparent;
-      border-top-color: var(--tertiary-color, #c29a5b);
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: -1;
-    }
-
-    .tutorial-text {
-      margin: 0;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 2px solid var(--tertiary-color, #c29a5b);
-      animation: typing 2s steps(40, end), blink 1s step-end infinite;
-    }
-
-    @keyframes popIn {
-      from { 
-        transform: scale(0.8); 
-        opacity: 0; 
-      }
-      to { 
-        transform: scale(1); 
-        opacity: 1; 
-      }
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink {
-      from, to { border-color: transparent }
-      50% { border-color: var(--tertiary-color, #c29a5b) }
-    }
-
     /* Icon highlighting animations */
     :host(.highlighting-dice) ::slotted(reroll-button),
     :host(.highlighting-dice) reroll-button {
@@ -150,7 +82,7 @@ export class StatblockTutorial extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    
+
     // Check if tutorial is already completed
     if (this._isCompleted()) {
       return;
@@ -186,7 +118,7 @@ export class StatblockTutorial extends LitElement {
 
     // Find all statblock components
     this._findStatblocks();
-    
+
     if (this._statblocks.length === 0) {
       // Retry after a short delay in case components are still loading
       setTimeout(() => {
@@ -205,7 +137,7 @@ export class StatblockTutorial extends LitElement {
 
     // Set up intersection observer
     this._setupIntersectionObserver();
-    
+
     // Track tutorial impression
     this._trackAnalytics('tutorial_impression', {
       tutorial_version: TUTORIAL_VERSION,
@@ -238,7 +170,7 @@ export class StatblockTutorial extends LitElement {
           const visibilityRatio = entry.intersectionRatio;
           this._visibilityMap.set(entry.target, visibilityRatio);
         });
-        
+
         this._updateMostVisibleStatblock();
       },
       { threshold: [0, 0.1, 0.25, 0.5, 0.75, 1.0] }
@@ -276,7 +208,7 @@ export class StatblockTutorial extends LitElement {
     setTimeout(() => {
       // Find available buttons in the statblock
       const buttons = this._findButtonsInStatblock(statblock);
-      
+
       if (buttons.length === 0) {
         // Try again after another short delay
         setTimeout(() => {
@@ -297,7 +229,7 @@ export class StatblockTutorial extends LitElement {
     // Cycle through available buttons
     const targetButton = buttons[this._currentTargetIndex % buttons.length];
     const target = targetButton.tagName.toLowerCase() === 'reroll-button' ? 'dice' : 'anvil';
-    
+
     // Get random copy for this target
     const copyArray = TUTORIAL_COPY[target];
     const randomLine = copyArray[Math.floor(Math.random() * copyArray.length)];
@@ -317,7 +249,7 @@ export class StatblockTutorial extends LitElement {
 
   private _findButtonsInStatblock(statblock: Element): Element[] {
     const buttons: Element[] = [];
-    
+
     // Look for buttons in the shadow DOM
     const shadowRoot = (statblock as any).shadowRoot;
     if (shadowRoot) {
@@ -326,30 +258,33 @@ export class StatblockTutorial extends LitElement {
       if (buttonPanel) {
         const rerollButton = buttonPanel.querySelector('reroll-button');
         const forgeButton = buttonPanel.querySelector('forge-button');
-        
+
         if (rerollButton) buttons.push(rerollButton);
         if (forgeButton) buttons.push(forgeButton);
       }
     }
-    
+
     return buttons;
   }
 
   private _startCycleTimer(): void {
     this._clearCycleTimer();
-    
+
+    // Random duration between 5-7 seconds (6 +/- 1)
+    const randomDelay = 5000 + (Math.random() * 2000);
+
     this._cycleTimeout = window.setTimeout(() => {
       if (this._tutorialState.isActive && this._tutorialState.currentStatblock) {
         // Move to next target
         this._currentTargetIndex++;
-        
+
         // Find buttons in current statblock
         const buttons = this._findButtonsInStatblock(this._tutorialState.currentStatblock);
         if (buttons.length > 0) {
           this._showTutorialForButtons(this._tutorialState.currentStatblock, buttons);
         }
       }
-    }, 4000); // Cycle every 4 seconds
+    }, randomDelay);
   }
 
   private _clearCycleTimer(): void {
@@ -366,25 +301,33 @@ export class StatblockTutorial extends LitElement {
     // Create bubble element
     const bubble = document.createElement('div');
     bubble.className = 'tutorial-bubble';
-    bubble.innerHTML = `<p class="tutorial-text">${text}</p>`;
-    
+
+    // Add inline styles since the bubble will be outside the shadow DOM
+    this._applyBubbleStyles(bubble);
+
+    // Create the text element without animation initially
+    bubble.innerHTML = `<p class="tutorial-text" style="margin: 0; white-space: normal; line-height: 1.4; border-right: 2px solid var(--tertiary-color, #c29a5b); animation: blink 1s step-end infinite;"></p>`;
+
+    // Start the typewriter effect
+    this._startTypewriterEffect(bubble.querySelector('.tutorial-text') as HTMLElement, text);
+
     // Position bubble relative to button
     this._positionBubble(bubble, button);
-    
+
     // Add click handlers
     bubble.addEventListener('click', () => this._handleBubbleClick(target));
     button.addEventListener('click', () => this._handleIconClick(target));
-    
+
     // Find the statblock container and append bubble there
-    let container = button.closest('monster-statblock');
+    let container: Element | null = button.closest('monster-statblock');
     if (!container) {
       container = document.body;
     }
     container.appendChild(bubble);
-    
+
     // Add highlighting class to host
     this.classList.add(`highlighting-${target}`);
-    
+
     // Track analytics
     this._trackAnalytics('tutorial_bubble_shown', {
       line: text,
@@ -393,38 +336,200 @@ export class StatblockTutorial extends LitElement {
     });
   }
 
+  private _startTypewriterEffect(textElement: HTMLElement, fullText: string): void {
+    let currentIndex = 0;
+    const baseTypingSpeed = 50; // base milliseconds per character
+
+    const typeNextCharacter = () => {
+      if (currentIndex < fullText.length) {
+        textElement.textContent = fullText.substring(0, currentIndex + 1);
+        currentIndex++;
+
+        // Add random delay of +/- 5ms for more natural typing
+        const randomDelay = baseTypingSpeed + (Math.random() * 10 - 5);
+        setTimeout(typeNextCharacter, randomDelay);
+      } else {
+        // Typing complete, stop cursor blinking
+        textElement.style.borderRight = '2px solid transparent';
+        textElement.style.animation = 'none';
+      }
+    };
+
+    typeNextCharacter();
+  }
+
   private _positionBubble(bubble: Element, button: Element): void {
     const buttonRect = button.getBoundingClientRect();
     const bubbleElement = bubble as HTMLElement;
-    
-    // Find the best positioning context - prefer monster-statblock, fallback to document.body
-    let positioningParent = button.closest('monster-statblock');
-    if (!positioningParent) {
-      positioningParent = document.body;
-    }
-    
-    // Position relative to the positioning parent
-    bubbleElement.style.position = 'absolute';
-    
-    if (positioningParent === document.body) {
-      // Use viewport positioning for body
+
+    // Find the monster-statblock container for proper positioning
+    let statblockContainer: Element | null = button.closest('monster-statblock');
+
+    if (statblockContainer) {
+      // Position relative to the statblock container
+      const containerRect = statblockContainer.getBoundingClientRect();
+
+      // Check available space and choose positioning
+      const viewportWidth = window.innerWidth;
+      const bubbleWidth = 220; // Fixed width from CSS
+      const spaceOnRight = viewportWidth - containerRect.right;
+      const spaceOnLeft = containerRect.left;
+
+      let positionedOnRight = true;
+
+      if (spaceOnRight >= bubbleWidth + 32) {
+        // Position to the right of the statblock
+        bubbleElement.style.position = 'fixed';
+        bubbleElement.style.left = `${containerRect.right + 16}px`;
+        bubbleElement.style.top = `${buttonRect.top + (buttonRect.height / 2)}px`;
+        bubbleElement.style.transform = 'translateY(-50%)';
+        positionedOnRight = true;
+      } else if (spaceOnLeft >= bubbleWidth + 32) {
+        // Position to the left of the statblock
+        bubbleElement.style.position = 'fixed';
+        bubbleElement.style.left = `${containerRect.left - bubbleWidth - 16}px`;
+        bubbleElement.style.top = `${buttonRect.top + (buttonRect.height / 2)}px`;
+        bubbleElement.style.transform = 'translateY(-50%)';
+        positionedOnRight = false;
+      } else {
+        // Fallback to above the button if no side space
+        bubbleElement.style.position = 'fixed';
+        bubbleElement.style.left = `${buttonRect.left + (buttonRect.width / 2)}px`;
+        bubbleElement.style.top = `${buttonRect.top - 70}px`;
+        bubbleElement.style.transform = 'translateX(-50%)';
+        positionedOnRight = true; // Use default arrow
+      }
+
+      // Add class to indicate arrow direction
+      if (positionedOnRight) {
+        bubbleElement.classList.add('arrow-left');
+        bubbleElement.classList.remove('arrow-right');
+      } else {
+        bubbleElement.classList.add('arrow-right');
+        bubbleElement.classList.remove('arrow-left');
+      }
+
+      // Ensure it doesn't go above or below viewport
+      const bubbleTop = buttonRect.top + (buttonRect.height / 2);
+      if (bubbleTop < 80) {
+        bubbleElement.style.top = '80px';
+        bubbleElement.style.transform = positionedOnRight ? 'translateY(0)' : 'translateY(0)';
+      } else if (bubbleTop > window.innerHeight - 80) {
+        bubbleElement.style.top = `${window.innerHeight - 80}px`;
+        bubbleElement.style.transform = positionedOnRight ? 'translateY(-100%)' : 'translateY(-100%)';
+      }
+    } else {
+      // Fallback to original positioning if no statblock container found
+      bubbleElement.style.position = 'fixed';
       bubbleElement.style.left = `${buttonRect.left + (buttonRect.width / 2)}px`;
       bubbleElement.style.top = `${buttonRect.top - 70}px`;
-      bubbleElement.style.position = 'fixed';
-    } else {
-      // Calculate position relative to the statblock container
-      const parentRect = positioningParent.getBoundingClientRect();
-      const left = buttonRect.left - parentRect.left + (buttonRect.width / 2);
-      const top = buttonRect.top - parentRect.top - 70;
-      
-      bubbleElement.style.left = `${left}px`;
-      bubbleElement.style.top = `${top}px`;
+      bubbleElement.style.transform = 'translateX(-50%)';
+      bubbleElement.classList.add('arrow-top');
     }
-    
-    bubbleElement.style.transform = 'translateX(-50%)';
-    
+
     // Store reference to bubble element
     this._tutorialState.bubbleElement = bubbleElement;
+  }
+
+  private _applyBubbleStyles(bubble: HTMLElement): void {
+    // Apply all the CSS styles inline since the bubble is outside the shadow DOM
+    bubble.style.cssText = `
+      position: fixed;
+      background: var(--bg-color, #1a1a1a);
+      border: 2px solid var(--tertiary-color, #c29a5b);
+      border-radius: 12px;
+      padding: 8px 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-family: var(--primary-font, system-ui);
+      font-size: 0.9rem;
+      color: var(--fg-color, #f4f1e6);
+      min-width: 220px;
+      max-width: 250px;
+      min-height: 50px;
+      max-height: 80px;
+      z-index: 1001;
+      pointer-events: auto;
+      cursor: pointer;
+      animation: popIn 0.25s ease-out;
+      white-space: normal;
+      line-height: 1.4;
+    `;
+
+    // Add pseudo-element styles via a style element for the arrow
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes popIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+      }
+      @keyframes blink {
+        from, to { border-color: transparent }
+        50% { border-color: var(--tertiary-color, #c29a5b) }
+      }
+      .tutorial-bubble.arrow-left::after {
+        content: '';
+        position: absolute;
+        border: 8px solid transparent;
+        border-left-color: var(--bg-color, #1a1a1a);
+        top: 50%;
+        left: -8px;
+        transform: translateY(-50%);
+      }
+      .tutorial-bubble.arrow-left::before {
+        content: '';
+        position: absolute;
+        border: 9px solid transparent;
+        border-left-color: var(--tertiary-color, #c29a5b);
+        top: 50%;
+        left: -9px;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+      .tutorial-bubble.arrow-right::after {
+        content: '';
+        position: absolute;
+        border: 8px solid transparent;
+        border-right-color: var(--bg-color, #1a1a1a);
+        top: 50%;
+        right: -8px;
+        transform: translateY(-50%);
+      }
+      .tutorial-bubble.arrow-right::before {
+        content: '';
+        position: absolute;
+        border: 9px solid transparent;
+        border-right-color: var(--tertiary-color, #c29a5b);
+        top: 50%;
+        right: -9px;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+      .tutorial-bubble.arrow-top::after {
+        content: '';
+        position: absolute;
+        border: 8px solid transparent;
+        border-top-color: var(--bg-color, #1a1a1a);
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .tutorial-bubble.arrow-top::before {
+        content: '';
+        position: absolute;
+        border: 9px solid transparent;
+        border-top-color: var(--tertiary-color, #c29a5b);
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+    `;
+
+    // Add the style to the document head if it doesn't exist
+    if (!document.querySelector('#tutorial-bubble-styles')) {
+      style.id = 'tutorial-bubble-styles';
+      document.head.appendChild(style);
+    }
   }
 
   private _removeTutorialBubble(): void {
@@ -432,53 +537,53 @@ export class StatblockTutorial extends LitElement {
     if (existingBubble) {
       existingBubble.remove();
     }
-    
+
     if (this._tutorialState.bubbleElement) {
       this._tutorialState.bubbleElement.remove();
       this._tutorialState.bubbleElement = null;
     }
-    
+
     // Remove highlighting classes
     this.classList.remove('highlighting-dice', 'highlighting-anvil');
-    
+
     // Clear cycle timer
     this._clearCycleTimer();
   }
 
   private _handleBubbleClick(target: TutorialTarget): void {
     const timeElapsed = Date.now() - this._tutorialState.showTime;
-    
+
     this._trackAnalytics('tutorial_click_bubble', {
       line: this._tutorialState.currentLine,
       target,
       ms_since_show: timeElapsed
     });
-    
+
     this._completeTutorial(target);
   }
 
   private _handleIconClick(target: TutorialTarget): void {
     const timeElapsed = Date.now() - this._tutorialState.showTime;
-    
+
     this._trackAnalytics('tutorial_click_icon', {
       line: this._tutorialState.currentLine,
       target,
       ms_since_show: timeElapsed
     });
-    
+
     this._completeTutorial(target);
   }
 
   private _completeTutorial(completionMethod: TutorialTarget): void {
     const totalTime = Date.now() - this._tutorialState.showTime;
-    
+
     this._trackAnalytics('tutorial_complete', {
       completion: completionMethod,
       line: this._tutorialState.currentLine,
       ms_total: totalTime,
       tutorial_version: TUTORIAL_VERSION
     });
-    
+
     this._markCompleted();
     this._removeTutorialBubble();
     this._cleanup();
@@ -488,15 +593,21 @@ export class StatblockTutorial extends LitElement {
     if (this._initTimeout) {
       clearTimeout(this._initTimeout);
     }
-    
+
     this._clearCycleTimer();
-    
+
     if (this._intersectionObserver) {
       this._intersectionObserver.disconnect();
     }
-    
+
     this._removeTutorialBubble();
-    
+
+    // Remove injected styles
+    const styleElement = document.querySelector('#tutorial-bubble-styles');
+    if (styleElement) {
+      styleElement.remove();
+    }
+
     this._tutorialState = {
       isActive: false,
       currentStatblock: null,
