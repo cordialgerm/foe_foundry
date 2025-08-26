@@ -104,6 +104,9 @@ export PUPPETEER_SKIP_DOWNLOAD=true
 - **Ghostscript**: Required for print.sh script, install with `sudo apt install ghostscript`
 - **Code formatting**: No black/flake8 configured - manual formatting required
 
+### Python Versions
+- **NEVER** change the python version
+
 ### Performance Notes:
 - **Full build**: 96 seconds (never cancel, expect MkDocs to take majority of time)
 - **Fast build**: 4 seconds (good for development iterations)
