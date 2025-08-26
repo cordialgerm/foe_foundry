@@ -2,7 +2,8 @@ import { LitElement, html, css, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { ref, createRef } from 'lit/directives/ref.js';
 import { initializeMonsterStore } from '../data/api';
-import { Power } from '../data/powers';
+import { Power, PowerStore } from '../data/powers';
+import { MonsterStore } from '../data/monster';
 import { Task } from '@lit/task';
 import './MonsterArt';
 import './MonsterInfo';
@@ -17,7 +18,7 @@ export class MonsterCard extends LitElement {
   // Use Lit Task for async monster loading
   private _monsterTask = new Task(this, {
     task: async ([monsterKey], { signal }) => {
-      const store = initializeMonsterStore();
+      const store = this.monsterStore || initializeMonsterStore();
       const monster = await store.getMonster(monsterKey);
       const similarMonsters = await store.getSimilarMonsters(monsterKey);
       return { monster, similarMonsters };
@@ -27,6 +28,12 @@ export class MonsterCard extends LitElement {
 
   @property({ type: String, attribute: 'monster-key' })
   monsterKey = '';
+
+  @property({ type: Object })
+  monsterStore?: MonsterStore;
+
+  @property({ type: Object })
+  powerStore?: PowerStore;
 
   @property({ type: String }) contentTab: 'powers' | 'similar' | 'lore' | 'encounters' = 'powers';
 
@@ -538,6 +545,7 @@ export class MonsterCard extends LitElement {
                     <power-loadout
                       monster-key="${monster.key}"
                       loadout-key="${loadout.key}"
+                      .powerStore="${this.powerStore}"
                     ></power-loadout>
                   `
         )}
