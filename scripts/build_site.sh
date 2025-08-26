@@ -6,6 +6,15 @@ set -e
 # Move back to the root of the repository
 cd "$(dirname "$0")/.."
 
+# Ensure Poetry uses the correct Python version if available
+if command -v python3.13 &> /dev/null; then
+    poetry env use python3.13
+elif command -v python3.12 &> /dev/null; then
+    poetry env use python3.12
+elif command -v python3.11 &> /dev/null; then
+    poetry env use python3.11
+fi
+
 # Make sure the venv is in sync with the lock file
 poetry install --sync
 
