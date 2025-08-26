@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SITE_URL: http://128.0.0.1:8000
+      LANG: en_US.UTF-8
+      LC_ALL: en_US.UTF-8
 
     steps:
       - name: Checkout code
