@@ -48,6 +48,9 @@ export class StatblockTutorial extends LitElement {
   private _initTimeout?: number;
   private _cycleTimeout?: number;
   private _currentTargetIndex = 0;
+  private _scrollCheckInterval?: number;
+  private _currentButton?: Element;
+  private _lastBubblePosition = { top: 0, left: 0 };
 
   static styles = css`
     :host {
@@ -270,8 +273,8 @@ export class StatblockTutorial extends LitElement {
   private _startCycleTimer(): void {
     this._clearCycleTimer();
 
-    // Random duration between 5-7 seconds (6 +/- 1)
-    const randomDelay = 5000 + (Math.random() * 2000);
+    // Random duration between 7-9 seconds (8 +/- 1)
+    const randomDelay = 7000 + (Math.random() * 2000);
 
     this._cycleTimeout = window.setTimeout(() => {
       if (this._tutorialState.isActive && this._tutorialState.currentStatblock) {
@@ -284,6 +287,9 @@ export class StatblockTutorial extends LitElement {
           this._showTutorialForButtons(this._tutorialState.currentStatblock, buttons);
         }
       }
+
+      // Restart the timer to keep it running continuously
+      this._startCycleTimer();
     }, randomDelay);
   }
 
@@ -297,6 +303,9 @@ export class StatblockTutorial extends LitElement {
   private _showTutorialBubble(button: Element, target: TutorialTarget, text: string): void {
     // Remove any existing bubble
     this._removeTutorialBubble();
+
+    // Store current button reference
+    this._currentButton = button;
 
     // Create bubble element
     const bubble = document.createElement('div');
@@ -327,6 +336,9 @@ export class StatblockTutorial extends LitElement {
 
     // Add highlighting class to host
     this.classList.add(`highlighting-${target}`);
+
+    // Start scroll monitoring
+    this._startScrollMonitoring();
 
     // Track analytics
     this._trackAnalytics('tutorial_bubble_shown', {
@@ -365,6 +377,10 @@ export class StatblockTutorial extends LitElement {
     // Find the monster-statblock container for proper positioning
     let statblockContainer: Element | null = button.closest('monster-statblock');
 
+    let newTop: number;
+    let newLeft: number;
+    let transform: string;
+
     if (statblockContainer) {
       // Position relative to the statblock container
       const containerRect = statblockContainer.getBoundingClientRect();
@@ -379,24 +395,21 @@ export class StatblockTutorial extends LitElement {
 
       if (spaceOnRight >= bubbleWidth + 32) {
         // Position to the right of the statblock
-        bubbleElement.style.position = 'fixed';
-        bubbleElement.style.left = `${containerRect.right + 16}px`;
-        bubbleElement.style.top = `${buttonRect.top + (buttonRect.height / 2)}px`;
-        bubbleElement.style.transform = 'translateY(-50%)';
+        newLeft = containerRect.right + 16;
+        newTop = buttonRect.top + (buttonRect.height / 2);
+        transform = 'translateY(-50%)';
         positionedOnRight = true;
       } else if (spaceOnLeft >= bubbleWidth + 32) {
         // Position to the left of the statblock
-        bubbleElement.style.position = 'fixed';
-        bubbleElement.style.left = `${containerRect.left - bubbleWidth - 16}px`;
-        bubbleElement.style.top = `${buttonRect.top + (buttonRect.height / 2)}px`;
-        bubbleElement.style.transform = 'translateY(-50%)';
+        newLeft = containerRect.left - bubbleWidth - 16;
+        newTop = buttonRect.top + (buttonRect.height / 2);
+        transform = 'translateY(-50%)';
         positionedOnRight = false;
       } else {
         // Fallback to above the button if no side space
-        bubbleElement.style.position = 'fixed';
-        bubbleElement.style.left = `${buttonRect.left + (buttonRect.width / 2)}px`;
-        bubbleElement.style.top = `${buttonRect.top - 70}px`;
-        bubbleElement.style.transform = 'translateX(-50%)';
+        newLeft = buttonRect.left + (buttonRect.width / 2);
+        newTop = buttonRect.top - 70;
+        transform = 'translateX(-50%)';
         positionedOnRight = true; // Use default arrow
       }
 
@@ -412,23 +425,176 @@ export class StatblockTutorial extends LitElement {
       // Ensure it doesn't go above or below viewport
       const bubbleTop = buttonRect.top + (buttonRect.height / 2);
       if (bubbleTop < 80) {
-        bubbleElement.style.top = '80px';
-        bubbleElement.style.transform = positionedOnRight ? 'translateY(0)' : 'translateY(0)';
+        newTop = 80;
+        transform = positionedOnRight ? 'translateY(0)' : 'translateY(0)';
       } else if (bubbleTop > window.innerHeight - 80) {
-        bubbleElement.style.top = `${window.innerHeight - 80}px`;
-        bubbleElement.style.transform = positionedOnRight ? 'translateY(-100%)' : 'translateY(-100%)';
+        newTop = window.innerHeight - 80;
+        transform = positionedOnRight ? 'translateY(-100%)' : 'translateY(-100%)';
       }
     } else {
       // Fallback to original positioning if no statblock container found
-      bubbleElement.style.position = 'fixed';
-      bubbleElement.style.left = `${buttonRect.left + (buttonRect.width / 2)}px`;
-      bubbleElement.style.top = `${buttonRect.top - 70}px`;
-      bubbleElement.style.transform = 'translateX(-50%)';
+      newLeft = buttonRect.left + (buttonRect.width / 2);
+      newTop = buttonRect.top - 70;
+      transform = 'translateX(-50%)';
       bubbleElement.classList.add('arrow-top');
+    }
+
+    // Only update position if there's a meaningful change (reduce jitter)
+    const positionThreshold = 3; // pixels
+    const topDiff = Math.abs(newTop - this._lastBubblePosition.top);
+    const leftDiff = Math.abs(newLeft - this._lastBubblePosition.left);
+
+    if (topDiff > positionThreshold || leftDiff > positionThreshold) {
+      bubbleElement.style.position = 'fixed';
+      bubbleElement.style.left = `${newLeft}px`;
+      bubbleElement.style.top = `${newTop}px`;
+      bubbleElement.style.transform = transform;
+
+      // Update tracked position
+      this._lastBubblePosition = { top: newTop, left: newLeft };
     }
 
     // Store reference to bubble element
     this._tutorialState.bubbleElement = bubbleElement;
+  }
+
+  private _startScrollMonitoring(): void {
+    // Clear any existing scroll monitoring
+    this._stopScrollMonitoring();
+
+    // Check scroll position every 150ms for smoother animation (reduced frequency)
+    this._scrollCheckInterval = window.setInterval(() => {
+      this._checkBubbleVisibility();
+    }, 150);
+  }
+
+  private _stopScrollMonitoring(): void {
+    if (this._scrollCheckInterval) {
+      clearInterval(this._scrollCheckInterval);
+      this._scrollCheckInterval = undefined;
+    }
+  }
+
+  private _checkBubbleVisibility(): void {
+    if (!this._tutorialState.isActive || !this._tutorialState.bubbleElement || !this._currentButton) {
+      return;
+    }
+
+    // Check if current button is still visible and reasonably positioned
+    const buttonRect = this._currentButton.getBoundingClientRect();
+    const isButtonVisible = buttonRect.top >= 0 &&
+      buttonRect.bottom <= window.innerHeight &&
+      buttonRect.left >= 0 &&
+      buttonRect.right <= window.innerWidth;
+
+    if (!isButtonVisible) {
+      // Current button is not visible, find the closest visible button
+      const closestVisibleButton = this._findClosestVisibleButton();
+      if (closestVisibleButton) {
+        // Move bubble to the closest visible button
+        this._repositionBubbleToButton(closestVisibleButton);
+      } else {
+        // No visible buttons, hide bubble temporarily but keep timer running
+        this._temporarilyHideBubble();
+      }
+    } else {
+      // Button is visible, ensure bubble is properly positioned
+      this._ensureBubblePosition();
+    }
+  }
+
+  private _findClosestVisibleButton(): Element | null {
+    let closestButton: Element | null = null;
+    let closestDistance = Infinity;
+
+    // Check all statblocks for visible buttons
+    for (const statblock of this._statblocks) {
+      const visibility = this._visibilityMap.get(statblock) || 0;
+      if (visibility < 0.1) continue; // Skip barely visible statblocks
+
+      const buttons = this._findButtonsInStatblock(statblock);
+      for (const button of buttons) {
+        const buttonRect = button.getBoundingClientRect();
+        const isVisible = buttonRect.top >= 0 &&
+          buttonRect.bottom <= window.innerHeight &&
+          buttonRect.left >= 0 &&
+          buttonRect.right <= window.innerWidth;
+
+        if (isVisible) {
+          // Calculate distance from center of viewport
+          const viewportCenterY = window.innerHeight / 2;
+          const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+          const distance = Math.abs(viewportCenterY - buttonCenterY);
+
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestButton = button;
+          }
+        }
+      }
+    }
+
+    return closestButton;
+  }
+
+  private _repositionBubbleToButton(newButton: Element): void {
+    if (!this._tutorialState.bubbleElement) return;
+
+    // Update current button reference
+    this._currentButton = newButton;
+
+    // Update tutorial state to match new button
+    const newTarget = newButton.tagName.toLowerCase() === 'reroll-button' ? 'dice' : 'anvil' as TutorialTarget;
+    this._tutorialState.currentTarget = newTarget;
+
+    // Update statblock reference
+    const newStatblock = newButton.closest('monster-statblock');
+    if (newStatblock) {
+      this._tutorialState.currentStatblock = newStatblock;
+    }
+
+    // Use requestAnimationFrame for smoother position updates
+    requestAnimationFrame(() => {
+      // Reposition the bubble
+      this._positionBubble(this._tutorialState.bubbleElement!, newButton);
+
+      // Update highlighting
+      this.classList.remove('highlighting-dice', 'highlighting-anvil');
+      this.classList.add(`highlighting-${newTarget}`);
+
+      // Show bubble if it was hidden
+      if (this._tutorialState.bubbleElement!.style.display === 'none') {
+        this._tutorialState.bubbleElement!.style.display = 'block';
+      }
+    });
+  }
+
+  private _temporarilyHideBubble(): void {
+    if (this._tutorialState.bubbleElement) {
+      this._tutorialState.bubbleElement.style.display = 'none';
+    }
+    // Remove highlighting while hidden
+    this.classList.remove('highlighting-dice', 'highlighting-anvil');
+  }
+
+  private _ensureBubblePosition(): void {
+    if (!this._tutorialState.bubbleElement || !this._currentButton) return;
+
+    // Use requestAnimationFrame for smoother updates
+    requestAnimationFrame(() => {
+      // Reposition bubble to ensure it stays next to the button
+      this._positionBubble(this._tutorialState.bubbleElement!, this._currentButton!);
+
+      // Ensure bubble is visible
+      if (this._tutorialState.bubbleElement!.style.display === 'none') {
+        this._tutorialState.bubbleElement!.style.display = 'block';
+
+        // Restore highlighting
+        if (this._tutorialState.currentTarget) {
+          this.classList.add(`highlighting-${this._tutorialState.currentTarget}`);
+        }
+      }
+    });
   }
 
   private _applyBubbleStyles(bubble: HTMLElement): void {
@@ -453,6 +619,7 @@ export class StatblockTutorial extends LitElement {
       animation: popIn 0.25s ease-out;
       white-space: normal;
       line-height: 1.4;
+      transition: top 0.2s ease-out, left 0.2s ease-out, transform 0.2s ease-out;
     `;
 
     // Add pseudo-element styles via a style element for the arrow
@@ -543,6 +710,12 @@ export class StatblockTutorial extends LitElement {
       this._tutorialState.bubbleElement = null;
     }
 
+    // Stop scroll monitoring
+    this._stopScrollMonitoring();
+
+    // Clear current button reference
+    this._currentButton = undefined;
+
     // Remove highlighting classes
     this.classList.remove('highlighting-dice', 'highlighting-anvil');
 
@@ -595,6 +768,7 @@ export class StatblockTutorial extends LitElement {
     }
 
     this._clearCycleTimer();
+    this._stopScrollMonitoring();
 
     if (this._intersectionObserver) {
       this._intersectionObserver.disconnect();
