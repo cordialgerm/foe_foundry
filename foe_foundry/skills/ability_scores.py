@@ -2,9 +2,8 @@
 # Includes docstrings and comments for context and future maintainers.
 from __future__ import annotations
 
+from enum import StrEnum
 from typing import List, cast
-
-from backports.strenum import StrEnum
 
 from .scaling import StatScaler, StatScaling
 

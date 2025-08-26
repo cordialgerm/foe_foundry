@@ -1,8 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
-
-from backports.strenum import StrEnum
+from enum import StrEnum
 
 
 class DocType(StrEnum):

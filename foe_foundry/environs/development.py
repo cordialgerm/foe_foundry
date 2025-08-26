@@ -1,6 +1,4 @@
-from enum import auto
-
-from backports.strenum import StrEnum
+from enum import StrEnum, auto
 
 
 class Development(StrEnum):

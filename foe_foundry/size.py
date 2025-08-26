@@ -1,10 +1,9 @@
 from __future__ import annotations
 
-from enum import auto
+from enum import StrEnum, auto
 from typing import Dict, List
 
 import numpy as np
-from backports.strenum import StrEnum
 
 from .die import Die
 
@@ -19,7 +18,14 @@ class Size(StrEnum):
 
     @staticmethod
     def All() -> List[Size]:
-        return [Size.Tiny, Size.Small, Size.Medium, Size.Large, Size.Huge, Size.Gargantuan]
+        return [
+            Size.Tiny,
+            Size.Small,
+            Size.Medium,
+            Size.Large,
+            Size.Huge,
+            Size.Gargantuan,
+        ]
 
     @staticmethod
     def Ordinals() -> Dict[Size, int]:
