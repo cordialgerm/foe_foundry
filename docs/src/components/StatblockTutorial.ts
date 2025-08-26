@@ -32,7 +32,7 @@ interface TutorialState {
 
 @customElement('statblock-tutorial')
 export class StatblockTutorial extends LitElement {
-  @state() private _tutorialState: TutorialState = {
+  private _tutorialState: TutorialState = {
     isActive: false,
     currentStatblock: null,
     currentTarget: null,
