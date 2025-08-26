@@ -1,5 +1,5 @@
-import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { LitElement, html, css, PropertyValues } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import { trackEvent } from '../utils/analytics.js';
 
 // Tutorial copy library
@@ -33,6 +33,9 @@ interface TutorialState {
 
 @customElement('statblock-tutorial')
 export class StatblockTutorial extends LitElement {
+  @property({ type: Boolean })
+  enabled: boolean = false;
+
   private _tutorialState: TutorialState = {
     isActive: false,
     currentStatblock: null,
@@ -86,6 +89,11 @@ export class StatblockTutorial extends LitElement {
   connectedCallback() {
     super.connectedCallback();
 
+    // Check if tutorial is enabled
+    if (!this.enabled) {
+      return;
+    }
+
     // Check if tutorial is already completed
     if (this._isCompleted()) {
       return;
@@ -93,13 +101,38 @@ export class StatblockTutorial extends LitElement {
 
     // Wait 300ms after FCP before initializing
     this._initTimeout = window.setTimeout(() => {
-      this._initializeTutorial();
+      // Double-check enabled state in case it changed during timeout
+      if (this.enabled && !this._isCompleted()) {
+        this._initializeTutorial();
+      }
     }, 300);
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
     this._cleanup();
+  }
+
+  updated(changedProperties: PropertyValues) {
+    super.updated(changedProperties);
+
+    // Handle enabled property changes
+    if (changedProperties.has('enabled')) {
+      if (this.enabled) {
+        // Tutorial was just enabled - start it if not completed
+        if (!this._isCompleted()) {
+          // Wait a brief moment for DOM to settle if needed
+          this._initTimeout = window.setTimeout(() => {
+            if (this.enabled && !this._isCompleted()) {
+              this._initializeTutorial();
+            }
+          }, 100);
+        }
+      } else {
+        // Tutorial was disabled - clean up
+        this._cleanup();
+      }
+    }
   }
 
   private _isCompleted(): boolean {
