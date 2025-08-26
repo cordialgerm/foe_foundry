@@ -4,10 +4,11 @@ from dataclasses import dataclass
 from functools import cached_property
 from pathlib import Path
 
-from whoosh.analysis import StemmingAnalyzer
+from whoosh.analysis import NgramWordAnalyzer, StemmingAnalyzer
 from whoosh.fields import ID, TEXT, Schema
 from whoosh.index import FileIndex, create_in, open_dir
 from whoosh.qparser import MultifieldParser, OrGroup
+from whoosh.query import Or, Term
 
 from ..documents import Document, get_document, iter_documents
 
@@ -46,11 +47,12 @@ def index_documents():
     """
     Index all documents for search.
     """
-
+    ngram_analyzer = NgramWordAnalyzer(minsize=2, maxsize=4)
     schema = Schema(
         doc_id=ID(stored=True),
         name=TEXT(sortable=True, stored=True),
-        content=TEXT(analyzer=StemmingAnalyzer(), stored=True),
+        content_stemmed=TEXT(analyzer=StemmingAnalyzer(), stored=True),
+        content_ngram=TEXT(analyzer=ngram_analyzer, stored=True),
     )
 
     INDEX_DIR.mkdir(exist_ok=True, parents=True)
@@ -60,7 +62,10 @@ def index_documents():
     log.info(f"Indexing documents at {INDEX_DIR}...")
     for doc in iter_documents():
         writer.add_document(
-            doc_id=doc.doc_id, name=doc.name, content=doc.content.lower()
+            doc_id=doc.doc_id,
+            name=doc.name,
+            content_stemmed=doc.content.lower(),
+            content_ngram=doc.content.lower(),
         )
 
     writer.commit()
@@ -101,26 +106,42 @@ def search_documents(search_query: str, limit: int) -> list[DocumentSearchResult
         # Define which fields to search and boost
         fields = [
             "name",
-            "content",
+            "content_stemmed",
+            "content_ngram",
         ]
         fieldboosts = {
             "name": 3.0,
-            "content": 1.0,
+            "content_stemmed": 1.0,
+            "content_ngram": 1.0,
         }
 
-        # Phrase Search
-        search_words = search_query.split()
-        if len(search_words) > 1:
-            # First, try exact phrase search
-            phrase_parser = MultifieldParser(
-                fields, schema=ix.schema, fieldboosts=fieldboosts
-            )
-            phrase_query = phrase_parser.parse(f'"{search_query.lower()}"')
-            phrase_results = searcher.search(phrase_query, limit=limit, terms=True)
-        else:
-            phrase_results = []
+        # Phrase Search: split by comma, search each phrase
+        phrase_results = []
+        phrases = [p.strip() for p in search_query.split(",") if p.strip()]
+        phrase_parser = MultifieldParser(
+            fields, schema=ix.schema, fieldboosts=fieldboosts
+        )
+        for phrase in phrases:
+            if phrase:
+                phrase_query = phrase_parser.parse(f'"{phrase.lower()}"')
+                results = searcher.search(phrase_query, limit=limit, terms=True)
+                phrase_results.extend(results)
 
-        # Individual term search
+        # Ngram search: generate ngrams from query and search in content_ngram
+        ngram_terms = set()
+        for phrase in phrases:
+            words = phrase.lower().replace(",", " ").split()
+            for n in range(2, min(5, len(words) + 1)):
+                for i in range(len(words) - n + 1):
+                    ngram = " ".join(words[i : i + n])
+                    ngram_terms.add(ngram)
+        ngram_queries = [Term("content_ngram", ngram) for ngram in ngram_terms]
+        ngram_results = []
+        if ngram_queries:
+            ngram_query = Or(ngram_queries)
+            ngram_results = searcher.search(ngram_query, limit=limit, terms=True)
+
+        # Individual term search (bag of words)
         or_parser = MultifieldParser(
             fields, schema=ix.schema, fieldboosts=fieldboosts, group=OrGroup
         )
@@ -130,67 +151,72 @@ def search_documents(search_query: str, limit: int) -> list[DocumentSearchResult
         all_results = []
         result_ids = set()
 
-        def process_results(results, multiplier: float = 1.0):
-            for result in results:
-                doc_id = result["doc_id"]
-                if doc_id in result_ids:
-                    continue
+        all_results.extend(process_results(phrase_results, result_ids, multiplier=2.0))
+        all_results.extend(process_results(ngram_results, result_ids, multiplier=1.5))
+        all_results.extend(process_results(or_results, result_ids))
 
-                doc = get_document(doc_id)
-                if not doc:
-                    continue
+    all_results.sort(key=lambda r: r.score, reverse=True)
+    return all_results[:limit]
 
-                score = multiplier * result.score  # type: ignore
 
-                # Get match details
-                matched_terms = list(result.matched_terms())
-                matched_fields = list(
-                    {
-                        field.decode() if isinstance(field, bytes) else field
-                        for field, term in matched_terms
-                    }
-                )
+def process_results(results, result_ids: set[str], multiplier: float = 1.0) -> list:
+    all_results = []
+    for result in results:
+        doc_id = result["doc_id"]
+        if doc_id in result_ids:
+            continue
 
-                # Decode matched terms
-                decoded_terms = [
-                    (
-                        field.decode() if isinstance(field, bytes) else field,
-                        term.decode() if isinstance(term, bytes) else term,
-                    )
-                    for field, term in matched_terms
-                ]
+        doc = get_document(doc_id)
+        if not doc:
+            continue
 
-                # Get highlights
-                highlighted_name = None
-                highlighted_content = None
+        score = multiplier * result.score  # type: ignore
 
-                try:
-                    if "name" in matched_fields:
-                        highlighted_name = result.highlights("name")
-                except Exception:
-                    pass
+        # Get match details
+        matched_terms = list(result.matched_terms())
+        matched_fields = list(
+            {
+                field.decode() if isinstance(field, bytes) else field
+                for field, term in matched_terms
+            }
+        )
 
-                try:
-                    if "content" in matched_fields:
-                        highlighted_content = result.highlights("content")
-                except Exception:
-                    pass
+        # Decode matched terms
+        decoded_terms = [
+            (
+                field.decode() if isinstance(field, bytes) else field,
+                term.decode() if isinstance(term, bytes) else term,
+            )
+            for field, term in matched_terms
+        ]
 
-                all_results.append(
-                    DocumentSearchResult(
-                        document=doc,
-                        score=score,
-                        matched_fields=matched_fields,
-                        matched_terms=decoded_terms,
-                        highlighted_match=highlighted_name
-                        if highlighted_name
-                        else highlighted_content,
-                    )
-                )
-                result_ids.add(doc_id)
+        # Get highlights
+        highlighted_name = None
+        highlighted_content = None
 
-        process_results(phrase_results, multiplier=2.0)
-        process_results(or_results)
+        try:
+            if "name" in matched_fields:
+                highlighted_name = result.highlights("name")
+        except Exception:
+            pass
 
-        all_results.sort(key=lambda r: r.score, reverse=True)
-        return all_results[:limit]
+        try:
+            if "content" in matched_fields:
+                highlighted_content = result.highlights("content")
+        except Exception:
+            pass
+
+        all_results.append(
+            DocumentSearchResult(
+                document=doc,
+                score=score,
+                matched_fields=matched_fields,
+                matched_terms=decoded_terms,
+                highlighted_match=highlighted_name
+                if highlighted_name
+                else highlighted_content,
+            )
+        )
+        result_ids.add(doc_id)
+
+    return all_results

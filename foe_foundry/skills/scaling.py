@@ -1,6 +1,5 @@
+from enum import StrEnum
 from typing import TYPE_CHECKING
-
-from backports.strenum import StrEnum
 
 if TYPE_CHECKING:
     from foe_foundry.skills.ability_scores import AbilityScore

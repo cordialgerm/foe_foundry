@@ -33,9 +33,12 @@ def test_search_with_highlights():
     assert len(result.matched_terms) > 0, "Should have matched terms"
 
     # For emerald search, should match in content
-    assert "content" in result.matched_fields, "Should match in content field"
-    assert any(term == "rage" for field, term in result.matched_terms), (
-        "Should match 'rage' term"
+    assert (
+        "content_stemmed" in result.matched_fields
+        or "content_ngram" in result.matched_fields
+    ), "Should match in content field"
+    assert any(term == "warrior" for field, term in result.matched_terms), (
+        "Should match 'warrior' term"
     )
 
     # Should have highlighted content since it matched in content
@@ -109,3 +112,17 @@ def test_search_monsters():
         if result.family_key:
             print(f"     Family: {result.family_key}")
         print(f"     Document matches: {len(result.document_matches)}")
+
+
+def test_search_ngrams():
+    query = "undead pirate captain, pirate lord, outlaw, bandit captain, ghost ship, cursed sea lord, sword wraith commander, drowned one, ghost captain"
+    results = list(
+        search_monsters(
+            query,
+            limit=5,
+            max_hops=4,
+            alpha=0.15,
+            creature_types={CreatureType.Humanoid},
+        )
+    )
+    assert len(results) > 0

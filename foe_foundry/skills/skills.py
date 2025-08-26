@@ -1,6 +1,5 @@
+from enum import StrEnum
 from typing import List, cast
-
-from backports.strenum import StrEnum
 
 from .ability_scores import AbilityScore
 
