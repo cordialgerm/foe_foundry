@@ -397,7 +397,7 @@ export class StatblockTutorial extends LitElement {
     const buttonRect = button.getBoundingClientRect();
     const bubbleElement = bubble as HTMLElement;
     
-    // Find the statblock container for positioning context
+    // Find the best positioning context - prefer monster-statblock, fallback to document.body
     let positioningParent = button.closest('monster-statblock');
     if (!positioningParent) {
       positioningParent = document.body;
@@ -406,13 +406,21 @@ export class StatblockTutorial extends LitElement {
     // Position relative to the positioning parent
     bubbleElement.style.position = 'absolute';
     
-    // Calculate position relative to the button
-    const parentRect = positioningParent.getBoundingClientRect();
-    const left = buttonRect.left - parentRect.left + (buttonRect.width / 2);
-    const top = buttonRect.top - parentRect.top - 70;
+    if (positioningParent === document.body) {
+      // Use viewport positioning for body
+      bubbleElement.style.left = `${buttonRect.left + (buttonRect.width / 2)}px`;
+      bubbleElement.style.top = `${buttonRect.top - 70}px`;
+      bubbleElement.style.position = 'fixed';
+    } else {
+      // Calculate position relative to the statblock container
+      const parentRect = positioningParent.getBoundingClientRect();
+      const left = buttonRect.left - parentRect.left + (buttonRect.width / 2);
+      const top = buttonRect.top - parentRect.top - 70;
+      
+      bubbleElement.style.left = `${left}px`;
+      bubbleElement.style.top = `${top}px`;
+    }
     
-    bubbleElement.style.left = `${left}px`;
-    bubbleElement.style.top = `${top}px`;
     bubbleElement.style.transform = 'translateX(-50%)';
     
     // Store reference to bubble element
