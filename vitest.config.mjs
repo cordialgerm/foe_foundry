@@ -10,6 +10,10 @@ export default defineConfig({
       reporter: ['text', 'html', 'json'],
       include: ['docs/src/**/*.ts'],
       exclude: ['docs/src/**/*.test.ts', 'tests/**/*', 'docs/src/**/*.d.ts']
+    },
+    // Ensure test environment skips browser downloads
+    env: {
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
     }
   },
   esbuild: {

@@ -3,8 +3,10 @@
     "@lit/context": "^1.1.6",
     "@lit/task": "^1.0.3",
     "lit": "^3.3.1",
-    "puppeteer": "^24.12.1",
     "vite": "^7.0.6"
+  },
+  "optionalDependencies": {
+    "puppeteer": "^24.12.1"
   },
   "name": "foe_foundry",
   "version": "1.0.0",
@@ -15,11 +17,14 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage",
-    "record_monster": "ts-node scripts/record-monster/playwright-demo.ts"
+    "preinstall": "echo 'Configuring environment to skip browser downloads for testing...' && export PUPPETEER_SKIP_DOWNLOAD=true",
+    "test": "PUPPETEER_SKIP_DOWNLOAD=true vitest run",
+    "test:watch": "PUPPETEER_SKIP_DOWNLOAD=true vitest",
+    "test:ui": "PUPPETEER_SKIP_DOWNLOAD=true vitest --ui",
+    "test:coverage": "PUPPETEER_SKIP_DOWNLOAD=true vitest run --coverage",
+    "record_monster": "ts-node scripts/record-monster/playwright-demo.ts",
+    "install:test": "PUPPETEER_SKIP_DOWNLOAD=true npm install",
+    "install:dev": "npm install"
   },
   "devDependencies": {
     "@open-wc/testing": "^4.0.0",
