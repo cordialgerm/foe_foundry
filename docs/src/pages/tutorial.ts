@@ -1,19 +1,4 @@
-import { GrowthBook } from "@growthbook/growthbook";
-import { autoAttributesPlugin } from "@growthbook/growthbook/plugins";
-
-const growthbook = new GrowthBook({
-    apiHost: "https://cdn.growthbook.io",
-    clientKey: "sdk-aKoPKzaJK9otD0Cn",
-    enableDevMode: true,
-    trackingCallback: (experiment, result) => {
-        // This is where you would send an event to your analytics provider
-        console.log("Viewed Experiment", {
-            experimentId: experiment.key,
-            variationId: result.key
-        });
-    },
-    plugins: [autoAttributesPlugin()],
-});
+import { initGrowthBook, isFeatureEnabled } from '../utils/growthbook.js';
 
 // Wait for features to be available
 (async () => {
@@ -21,9 +6,10 @@ const growthbook = new GrowthBook({
 })();
 
 async function setupTutorial() {
-    await growthbook.init({ streaming: true });
+    // Initialize GrowthBook
+    await initGrowthBook();
 
-    if (growthbook.isOn("show-tutorial")) {
+    if (isFeatureEnabled("show-tutorial")) {
         console.log("show-tutorial is on");
 
         // Enable all statblock-tutorial elements on the page
