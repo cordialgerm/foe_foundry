@@ -142,8 +142,6 @@ export class MonsterStatblock extends LitElement {
 
     @property({ type: Object })
     monsterStore?: MonsterStore;
-
-    private monsters = initializeMonsterStore();
     private statblockRef: Ref<HTMLDivElement> = createRef();
     private _cachedStatblock: Element | null = null;
     private _changedPower: Power | null = null;
@@ -184,7 +182,7 @@ export class MonsterStatblock extends LitElement {
                 await adoptExternalCss(this.shadowRoot);
             }
 
-            const store = this.monsterStore || this.monsters;
+            const store = this.monsterStore || initializeMonsterStore();
 
             // If random flag is set, use the random statblock endpoint
             if (random) {
