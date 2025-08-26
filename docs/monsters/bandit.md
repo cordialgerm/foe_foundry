@@ -7,6 +7,9 @@ json_ld: true
 date: '2025-08-14'
 ---
 
+<statblock-tutorial></statblock-tutorial>
+
+
 # Bandits
 
 *Outlaws of the Roads and Wilds*
