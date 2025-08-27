@@ -41,7 +41,7 @@ common: &common
     main:
       base: Greataxe
       damage_multiplier: 1.0
-      secondary_damage_type: [Fire, Cold, Lightning, Acid, Poison]
+      secondary_damage_type: null
   skills:
     proficiency: [Athletics]
     expertise: []
@@ -52,15 +52,25 @@ berserker:
 
 berserker-veteran:
   <<: *common
+  attacks:
+    main:
+      base: Greataxe
+      damage_multiplier: 1.0
+      secondary_damage_type: [Fire, Cold, Lightning, Acid, Poison]
   skills:
     proficiency: [Athletics, Perception]
-  saves: [STR]
+  saves: [STR, CON]
 
 berserker-commander:
   <<: *common
   roles:
     primary: Bruiser
     additional: [Leader]
+  attacks:
+    main:
+      base: Greataxe
+      damage_multiplier: 1.0
+      secondary_damage_type: [Fire, Cold, Lightning, Acid, Poison]
   skills:
     proficiency: [Athletics, Perception, Initiative]
   saves: [STR, CON]
@@ -70,6 +80,11 @@ berserker-legend:
   roles:
     primary: Bruiser
     additional: [Leader]
+  attacks:
+    main:
+      base: Greataxe
+      damage_multiplier: 1.0
+      secondary_damage_type: [Fire, Cold, Lightning, Acid, Poison]
   condition_immunities: [Frightened, Charmed]
   skills:
     proficiency: [Athletics, Perception, Initiative]

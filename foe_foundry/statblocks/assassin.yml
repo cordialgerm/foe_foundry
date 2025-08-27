@@ -51,6 +51,7 @@ common: &common
   - template: StuddedLeatherArmor
     modifier: 0
   attacks:
+    set_attacks: 2
     main:
       base: Daggers
       display_name: Poisoned Dagger
@@ -70,14 +71,19 @@ contract-killer:
   <<: *common
   attacks:
     set_attacks: 1
+    main:
+      base: Daggers
+      display_name: Poisoned Dagger
+      damage_multiplier: 1.0
+      secondary_damage_type: Poison
+    secondary:
+      base: HandCrossbow
+      display_name: Poisoned Hand Crossbow
+      damage_multiplier: 1.0
+      secondary_damage_type: Poison
 
 assassin:
   <<: *common
-  attacks:
-    set_attacks: 2
-  ac_templates:
-  - template: StuddedLeatherArmor
-    modifier: 0
   skills:
     proficiency: [Acrobatics, Perception, Stealth, Initiative]
     expertise: [Stealth, Perception, Initiative]
@@ -85,8 +91,6 @@ assassin:
 
 assassin-legend:
   <<: *common
-  attacks:
-    set_attacks: 2
   ac_templates:
   - template: StuddedLeatherArmor
     modifier: 1

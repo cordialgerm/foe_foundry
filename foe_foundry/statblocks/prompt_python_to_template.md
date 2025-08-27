@@ -262,7 +262,76 @@ berserker-legend:
 
 ## Translate from Imperative to Declarative
 
-The python code is written imperatively, with various IF statements. Your task is to instead map those if statements onto the corresponding monster and produce a clean declarative representation of that monster. There should be no conditional logic in the templates
+The python code is written imperatively, with various IF statements. Your task is to instead map those if statements onto the corresponding monster and produce a clean declarative representation of that monster. There should be no conditional logic in the templates.
+
+### Handling CR-Dependent Conditional Logic
+
+Most Python templates contain conditional logic that checks Challenge Rating thresholds, like:
+
+```python
+# Example from Knight template
+if stats.cr >= 12:
+    attack = weapon.Greatsword.with_display_name("Oathbound Blade")
+elif stats.cr >= 6:
+    attack = weapon.Greatsword.with_display_name("Blessed Blade")
+else:
+    attack = weapon.Greatsword
+```
+
+**Instead of trying to express this conditionally**, resolve it to the specific monster variants:
+
+1. **Identify the monster list** and their specific CRs
+2. **Trace through the conditional logic** for each specific CR
+3. **Resolve what each specific monster variant should get**
+4. **Assign specific values** to each monster in the YAML
+
+For the Knight example:
+- `knight` (CR 3): gets `base: Greatsword` (no display_name)
+- `knight-of-the-realm` (CR 6): gets `base: Greatsword, display_name: "Blessed Blade"`
+- `questing-knight` (CR 12): gets `base: Greatsword, display_name: "Oathbound Blade"`
+- `paragon-knight` (CR 16): gets `base: Greatsword, display_name: "Oathbound Blade"`
+
+### Handling Ability Score Scaling
+
+For scaling logic like:
+```python
+AbilityScore.STR: StatScaling.Primary,
+AbilityScore.DEX: (StatScaling.Medium, 2),
+```
+
+Translate directly to:
+```yaml
+abilities:
+  STR: Primary
+  DEX: [Medium, 2]
+```
+
+The parser will handle converting the scaling logic.
+
+### Handling HP/Damage Multipliers
+
+For conditional multipliers like:
+```python
+hp_multiplier=settings.hp_multiplier * (1.1 if cr >= 12 else 1.0)
+```
+
+Resolve this to specific monsters:
+- CR < 12 monsters get: `hp_multiplier: 1.0`
+- CR >= 12 monsters get: `hp_multiplier: 1.1`
+
+### Handling Random Selections
+
+For random choices like:
+```python
+elemental_damage_type = choose_enum(rng, list(DamageType.Primal()))
+```
+
+Represent as a list of all possible options:
+```yaml
+secondary_damage_type: ["Fire", "Cold", "Lightning", "Thunder"]
+```
+
+The parser will randomly pick one during generation.
 
 ## Style & anchors
 

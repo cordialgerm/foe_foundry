@@ -47,7 +47,7 @@ common: &common
     DEX: Default
     INT: Default
     WIS: Medium
-    CHA: Default
+    CHA: [Medium, 2]
   ac_templates:
   - template: PlateArmor
     modifier: 0
@@ -81,6 +81,7 @@ knight-of-the-realm:
 
 questing-knight:
   <<: *common
+  hp_multiplier: 1.1
   attacks:
     main:
       base: Greatsword
@@ -95,6 +96,7 @@ questing-knight:
 
 paragon-knight:
   <<: *common
+  hp_multiplier: 1.1
   attacks:
     main:
       base: Greatsword
