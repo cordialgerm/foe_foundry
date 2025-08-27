@@ -43,7 +43,7 @@ if [ "$SHOW_HELP" = true ]; then
     echo "Options:"
     echo "  --fast       Fast build mode with smart caching (skips data generation when fresh,"
     echo "               skips page generation, uses file copying for development)"
-    echo "  --optimized  Alias for --fast (deprecated, use --fast instead)"
+    echo "  --optimized  Alias for --fast"
     echo "  --run        Run the site after building"
     echo "  --help, -h   Show this help message"
     echo ""

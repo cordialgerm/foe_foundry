@@ -1,4 +1,5 @@
 import json
+import os
 from dataclasses import asdict
 from datetime import datetime
 from functools import cached_property
@@ -91,57 +92,8 @@ class _MonsterCache:
                     monsters.append(m)
         return monsters
 
-    def _is_cache_fresh(self) -> bool:
-        """Check if the monster cache is fresh and doesn't need regeneration."""
-        if not self.cache_dir.exists():
-            return False
-        
-        json_files = list(self.cache_dir.glob("*.json"))
-        if not json_files:
-            return False
-        
-        # Get the oldest cache file timestamp
-        cache_timestamps = [f.stat().st_mtime for f in json_files]
-        oldest_cache_time = min(cache_timestamps)
-        
-        # Check if any source files are newer than the cache
-        import os
-        from pathlib import Path
-        
-        # Check foe_foundry source files
-        source_dirs = [
-            Path("foe_foundry"),
-            Path("foe_foundry_data"), 
-            Path("data")
-        ]
-        
-        for source_dir in source_dirs:
-            if source_dir.exists():
-                for source_file in source_dir.rglob("*.py"):
-                    if source_file.stat().st_mtime > oldest_cache_time:
-                        return False
-                # Also check data files
-                for data_file in source_dir.rglob("*.json"):
-                    if data_file.stat().st_mtime > oldest_cache_time:
-                        return False
-                for data_file in source_dir.rglob("*.yml"):
-                    if data_file.stat().st_mtime > oldest_cache_time:
-                        return False
-                for data_file in source_dir.rglob("*.yaml"):
-                    if data_file.stat().st_mtime > oldest_cache_time:
-                        return False
-        
-        return True
-
     def generate_cache(self) -> None:
         """Generate and save monster cache to disk. Called during build time."""
-        # Performance optimization: skip generation if cache is fresh
-        if self._is_cache_fresh():
-            import os
-            if os.environ.get("SKIP_MONSTER_CACHE_GENERATION", "false").lower() == "true":
-                print("Monster cache is fresh, skipping regeneration for performance.")
-                return
-        
         self.cache_dir.mkdir(parents=True, exist_ok=True)
 
         # Clear existing cache files
