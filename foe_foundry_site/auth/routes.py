@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import logging
 from datetime import datetime, timezone
-from typing import Optional
 
 import httpx
 from fastapi import APIRouter, Form, HTTPException, Query, Request
@@ -14,7 +13,6 @@ from google.oauth2 import id_token
 from sqlmodel import select
 
 from .dependencies import (
-    AuthContextDep,
     DISCORD_CLIENT_ID,
     DISCORD_CLIENT_SECRET,
     DISCORD_REDIRECT_URI,
@@ -22,7 +20,7 @@ from .dependencies import (
     PATREON_CLIENT_ID,
     PATREON_CLIENT_SECRET,
     PATREON_REDIRECT_URI,
-    RequireAuthDep,
+    AuthContextDep,
     SessionDep,
 )
 from .models import AccountType, PatronStatus, PatronTier, User
@@ -46,7 +44,7 @@ async def auth_google(
     """Google One Tap authentication endpoint."""
     if not GOOGLE_CLIENT_ID:
         raise HTTPException(status_code=500, detail="Google OAuth not configured")
-    
+
     try:
         # Verify the ID token
         idinfo = id_token.verify_oauth2_token(
@@ -55,19 +53,19 @@ async def auth_google(
     except Exception as e:
         log.error(f"Google token verification failed: {e}")
         raise HTTPException(status_code=401, detail="Invalid Google token")
-    
+
     email = idinfo.get("email")
     name = idinfo.get("name")
     picture = idinfo.get("picture")
     google_id = idinfo.get("sub")
-    
+
     if not email:
         raise HTTPException(status_code=400, detail="Email not provided by Google")
-    
+
     # Check if user exists
     statement = select(User).where(User.email == email)
     user = session.exec(statement).first()
-    
+
     if not user:
         # Create new user
         user = User(
@@ -84,17 +82,17 @@ async def auth_google(
         user.profile_picture = picture or user.profile_picture
         user.google_id = google_id
         user.updated_at = datetime.now(timezone.utc)
-        
+
         # Check if this user has Patreon data by email matching
         if not user.patreon_id:
             # Could potentially match Patreon data here if we had it
             pass
-    
+
     # Reset credits if needed
     user.reset_credits_if_needed()
     session.commit()
     session.refresh(user)
-    
+
     # Set session
     request.session["user"] = {
         "id": user.id,
@@ -102,14 +100,19 @@ async def auth_google(
         "display_name": user.display_name,
         "tier": user.patron_tier.value,
     }
-    
+
     log.info(f"Google login successful for user {user.email}")
-    return JSONResponse({"detail": "Google login successful", "user": {
-        "email": user.email,
-        "display_name": user.display_name,
-        "tier": user.patron_tier.value,
-        "credits_remaining": user.get_credits_remaining(),
-    }})
+    return JSONResponse(
+        {
+            "detail": "Google login successful",
+            "user": {
+                "email": user.email,
+                "display_name": user.display_name,
+                "tier": user.patron_tier.value,
+                "credits_remaining": user.credits_remaining,
+            },
+        }
+    )
 
 
 @router.get("/patreon")
@@ -117,7 +120,7 @@ def login_patreon():
     """Redirect to Patreon OAuth authorization."""
     if not PATREON_CLIENT_ID or not PATREON_REDIRECT_URI:
         raise HTTPException(status_code=500, detail="Patreon OAuth not configured")
-    
+
     url = (
         f"https://www.patreon.com/oauth2/authorize?response_type=code"
         f"&client_id={PATREON_CLIENT_ID}&redirect_uri={PATREON_REDIRECT_URI}"
@@ -135,7 +138,7 @@ async def patreon_callback(
     """Handle Patreon OAuth callback."""
     if not PATREON_CLIENT_ID or not PATREON_CLIENT_SECRET:
         raise HTTPException(status_code=500, detail="Patreon OAuth not configured")
-    
+
     # Exchange code for access token
     token_data = {
         "grant_type": "authorization_code",
@@ -144,20 +147,19 @@ async def patreon_callback(
         "client_secret": PATREON_CLIENT_SECRET,
         "redirect_uri": PATREON_REDIRECT_URI,
     }
-    
+
     async with httpx.AsyncClient() as client:
         try:
             token_resp = await client.post(
-                "https://www.patreon.com/api/oauth2/token", 
-                data=token_data
+                "https://www.patreon.com/api/oauth2/token", data=token_data
             )
             token_json = token_resp.json()
             access_token = token_json.get("access_token")
-            
+
             if not access_token:
                 log.error(f"Patreon token exchange failed: {token_json}")
                 raise HTTPException(status_code=400, detail="Patreon OAuth failed")
-            
+
             # Get user identity
             headers = {"Authorization": f"Bearer {access_token}"}
             user_resp = await client.get(
@@ -166,40 +168,40 @@ async def patreon_callback(
                 "&fields[user]=email,full_name"
                 "&fields[member]=patron_status,pledge_relationship_start,campaign_lifetime_support_cents"
                 "&fields[campaign]=creation_name",
-                headers=headers
+                headers=headers,
             )
             user_data = user_resp.json()
-            
+
         except Exception as e:
             log.error(f"Patreon API error: {e}")
             raise HTTPException(status_code=400, detail="Failed to fetch Patreon data")
-    
+
     # Extract user information
     user_attrs = user_data.get("data", {}).get("attributes", {})
     email = user_attrs.get("email")
     name = user_attrs.get("full_name")
     patreon_id = user_data.get("data", {}).get("id")
-    
+
     if not email:
         raise HTTPException(status_code=400, detail="Email not provided by Patreon")
-    
+
     # Determine patron tier from memberships
     patron_tier = PatronTier.FREE
     patron_status = None
-    
+
     relationships = user_data.get("data", {}).get("relationships", {})
     memberships = relationships.get("memberships", {}).get("data", [])
-    
+
     if memberships:
         # For simplicity, just check if they have any active membership
         # In a real implementation, you'd check the pledge amount or tier
         patron_tier = PatronTier.GOLD  # Simplified logic
         patron_status = PatronStatus.ACTIVE
-    
+
     # Check if user exists
     statement = select(User).where(User.email == email)
     user = session.exec(statement).first()
-    
+
     if not user:
         # Create new user with Patreon data
         user = User(
@@ -218,14 +220,14 @@ async def patreon_callback(
         user.patron_tier = patron_tier
         user.patron_status = patron_status
         user.updated_at = datetime.now(timezone.utc)
-    
+
     # Reset credits based on new tier
     user.credits_remaining = user.get_monthly_credit_limit()
     user.credits_last_reset = datetime.now(timezone.utc)
-    
+
     session.commit()
     session.refresh(user)
-    
+
     # Set session
     request.session["user"] = {
         "id": user.id,
@@ -233,9 +235,9 @@ async def patreon_callback(
         "display_name": user.display_name,
         "tier": user.patron_tier.value,
     }
-    
+
     log.info(f"Patreon login successful for user {user.email} with tier {patron_tier}")
-    
+
     # Redirect to a success page or homepage
     return RedirectResponse("/", status_code=302)
 
@@ -245,7 +247,7 @@ def login_discord():
     """Redirect to Discord OAuth authorization."""
     if not DISCORD_CLIENT_ID or not DISCORD_REDIRECT_URI:
         raise HTTPException(status_code=500, detail="Discord OAuth not configured")
-    
+
     url = (
         f"https://discord.com/api/oauth2/authorize?response_type=code"
         f"&client_id={DISCORD_CLIENT_ID}&redirect_uri={DISCORD_REDIRECT_URI}"
@@ -263,61 +265,66 @@ async def discord_callback(
     """Handle Discord OAuth callback."""
     if not DISCORD_CLIENT_ID or not DISCORD_CLIENT_SECRET:
         raise HTTPException(status_code=500, detail="Discord OAuth not configured")
-    
+
     # Exchange code for access token
     token_data = {
         "grant_type": "authorization_code",
         "code": code,
         "redirect_uri": DISCORD_REDIRECT_URI,
     }
-    
+
     async with httpx.AsyncClient() as client:
         try:
             token_resp = await client.post(
                 "https://discord.com/api/oauth2/token",
                 data=token_data,
                 auth=(DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET),
-                headers={"Content-Type": "application/x-www-form-urlencoded"}
+                headers={"Content-Type": "application/x-www-form-urlencoded"},
             )
             token_json = token_resp.json()
             access_token = token_json.get("access_token")
-            
+
             if not access_token:
                 log.error(f"Discord token exchange failed: {token_json}")
                 raise HTTPException(status_code=400, detail="Discord OAuth failed")
-            
+
             # Get user identity
             headers = {"Authorization": f"Bearer {access_token}"}
             user_resp = await client.get(
-                "https://discord.com/api/users/@me",
-                headers=headers
+                "https://discord.com/api/users/@me", headers=headers
             )
             user_data = user_resp.json()
-            
+
         except Exception as e:
             log.error(f"Discord API error: {e}")
             raise HTTPException(status_code=400, detail="Failed to fetch Discord data")
-    
+
     # Extract user information
     email = user_data.get("email")
     username = user_data.get("username")
     discriminator = user_data.get("discriminator")
     discord_id = user_data.get("id")
     avatar_hash = user_data.get("avatar")
-    
+
     if not email:
         raise HTTPException(status_code=400, detail="Email not provided by Discord")
-    
+
     # Build display name and profile picture
-    display_name = f"{username}#{discriminator}" if discriminator and discriminator != "0" else username
+    display_name = (
+        f"{username}#{discriminator}"
+        if discriminator and discriminator != "0"
+        else username
+    )
     profile_picture = None
     if avatar_hash:
-        profile_picture = f"https://cdn.discordapp.com/avatars/{discord_id}/{avatar_hash}.png"
-    
+        profile_picture = (
+            f"https://cdn.discordapp.com/avatars/{discord_id}/{avatar_hash}.png"
+        )
+
     # Check if user exists
     statement = select(User).where(User.email == email)
     user = session.exec(statement).first()
-    
+
     if not user:
         # Create new user with Discord data
         user = User(
@@ -334,12 +341,12 @@ async def discord_callback(
         user.profile_picture = profile_picture or user.profile_picture
         user.discord_id = discord_id
         user.updated_at = datetime.now(timezone.utc)
-    
+
     # Reset credits if needed
     user.reset_credits_if_needed()
     session.commit()
     session.refresh(user)
-    
+
     # Set session
     request.session["user"] = {
         "id": user.id,
@@ -347,9 +354,9 @@ async def discord_callback(
         "display_name": user.display_name,
         "tier": user.patron_tier.value,
     }
-    
+
     log.info(f"Discord login successful for user {user.email}")
-    
+
     # Redirect to a success page or homepage
     return RedirectResponse("/", status_code=302)
 
@@ -364,7 +371,7 @@ def logout(request: Request):
 @router.get("/me")
 def get_current_user(auth_context: AuthContextDep):
     """Get current user information."""
-    if auth_context.is_authenticated:
+    if auth_context.is_authenticated and auth_context.user:
         user = auth_context.user
         return {
             "authenticated": True,
@@ -374,18 +381,24 @@ def get_current_user(auth_context: AuthContextDep):
                 "display_name": user.display_name,
                 "profile_picture": user.profile_picture,
                 "tier": user.patron_tier.value,
-                "credits_remaining": auth_context.get_credits_remaining(),
                 "account_type": user.account_type.value,
-            }
+            },
+            "credits": {
+                "credits_remaining": auth_context.credits_remaining,
+                "credits_limit": auth_context.credit_limit,
+            },
         }
     else:
         return {
             "authenticated": False,
             "anonymous": {
+                "id": auth_context.anon_session.anon_id,
                 "tier": "anonymous",
-                "credits_remaining": auth_context.get_credits_remaining(),
-                "credits_limit": auth_context.anon_session.get_credit_limit(),
-            }
+            },
+            "credits": {
+                "credits_remaining": auth_context.credits_remaining,
+                "credits_limit": auth_context.credit_limit,
+            },
         }
 
 

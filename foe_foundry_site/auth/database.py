@@ -7,13 +7,8 @@ from typing import Generator
 
 from sqlmodel import Session, SQLModel, create_engine
 
-from .models import User, AnonymousSession, CreditTransaction
-
 # Database URL from environment, with fallback to SQLite for development
-DATABASE_URL = os.getenv(
-    "DATABASE_URL", 
-    "sqlite:///./foe_foundry_accounts.db"
-)
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./foe_foundry_accounts.db")
 
 # Convert postgres:// to postgresql:// if needed (Heroku compatibility)
 if DATABASE_URL.startswith("postgres://"):
@@ -22,9 +17,7 @@ if DATABASE_URL.startswith("postgres://"):
 # Create engine with appropriate settings
 if DATABASE_URL.startswith("sqlite"):
     engine = create_engine(
-        DATABASE_URL, 
-        echo=False,
-        connect_args={"check_same_thread": False}
+        DATABASE_URL, echo=False, connect_args={"check_same_thread": False}
     )
 else:
     engine = create_engine(DATABASE_URL, echo=False)
