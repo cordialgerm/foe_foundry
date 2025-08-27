@@ -15,8 +15,21 @@ template:
     name: Paragon Knight
     cr: 16
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: native
+  - development: stronghold
+    affinity: native
+  - development: settlement
+    affinity: common
+  - development: countryside
+    affinity: common
+  - development: frontier
+    affinity: uncommon
+  - development: wilderness
+    affinity: rare
+  species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -25,37 +38,71 @@ common: &common
   creature_class: Knight
   hp_multiplier: 1.0
   damage_multiplier: 1.0
+  uses_shield: false
   roles:
-    primary: null
-    additional: []
+    primary: Soldier
+    additional: [Leader, Support]
   abilities:
     STR: Primary
     DEX: Default
     INT: Default
     WIS: Medium
     CHA: Default
+  ac_templates:
+  - template: PlateArmor
+    modifier: 0
+  condition_immunities: [Frightened]
   attacks:
     main:
       base: Greatsword
       damage_multiplier: 1.0
-      secondary_damage_type: null
+      secondary_damage_type: Radiant
   skills:
-    proficiency:
-    - Athletics
-    - Perception
-    - Persuasion
-    - Initiative
+    proficiency: [Athletics]
     expertise: []
-  saves:
-  - CON
-  - STR
-  - CHA
-  - WIS
-knight: !!set
-  '<<: *common': null
-knight-of-the-realm: !!set
-  '<<: *common': null
-questing-knight: !!set
-  '<<: *common': null
-paragon-knight: !!set
-  '<<: *common': null
+  saves: [CON]
+
+knight:
+  <<: *common
+
+knight-of-the-realm:
+  <<: *common
+  attacks:
+    main:
+      base: Greatsword
+      display_name: Blessed Blade
+      damage_multiplier: 1.0
+      secondary_damage_type: Radiant
+  skills:
+    proficiency: [Athletics, Perception, Persuasion, Initiative]
+    expertise: []
+  saves: [CON, STR, WIS, CHA]
+  condition_immunities: [Frightened, Charmed]
+
+questing-knight:
+  <<: *common
+  attacks:
+    main:
+      base: Greatsword
+      display_name: Oathbound Blade
+      damage_multiplier: 1.0
+      secondary_damage_type: Radiant
+  skills:
+    proficiency: [Athletics, Perception, Persuasion, Initiative]
+    expertise: []
+  saves: [CON, STR, WIS, CHA]
+  condition_immunities: [Frightened, Charmed]
+
+paragon-knight:
+  <<: *common
+  attacks:
+    main:
+      base: Greatsword
+      display_name: Oathbound Blade
+      damage_multiplier: 1.0
+      secondary_damage_type: Radiant
+  skills:
+    proficiency: [Athletics, Perception, Persuasion, Initiative]
+    expertise: []
+  saves: [CON, STR, WIS, CHA]
+  condition_immunities: [Frightened, Charmed]

@@ -4,7 +4,7 @@ template:
   monsters:
   - key: bandit
     name: Bandit
-    cr: null
+    cr: 0.125
   - key: bandit-veteran
     name: Bandit Veteran
     cr: 1
@@ -15,8 +15,23 @@ template:
     name: Bandit Crime Lord
     cr: 11
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: wilderness
+    affinity: native
+  - development: frontier
+    affinity: native
+  - region: OpenRoads
+    affinity: common
+  - development: countryside
+    affinity: common
+  - region: CountryShire
+    affinity: common
+  - development: ruin
+    affinity: uncommon
+  - region: UrbanTownship
+    affinity: uncommon
+  species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -26,33 +41,86 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
-    additional: []
+    primary: Artillery
+    additional: [Ambusher, Artillery]
   abilities:
-    STR: Default
+    STR: [Medium, 0.5]
     DEX: Primary
-    INT: Default
+    INT: [Medium, -0.5]
     WIS: Default
-    CHA: Default
+    CHA: [Medium, -0.5]
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
+  attacks:
+    main:
+      base: Shortswords
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Crossbow
+      display_name: Light Crossbow
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+  skills:
+    proficiency: [Stealth]
+    expertise: []
+  saves: []
+
+bandit:
+  <<: *common
+
+bandit-veteran:
+  <<: *common
   attacks:
     main:
       base: Pistol
       damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Shortswords
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+  saves: [STR, DEX]
+
+bandit-captain:
+  <<: *common
+  roles:
+    primary: Leader
+    additional: [Ambusher, Artillery]
+  attacks:
+    main:
+      base: Pistol
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Shortswords
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+  skills:
+    proficiency: [Stealth, Deception, Athletics]
+    expertise: []
+  saves: [STR, DEX]
+
+bandit-crime-lord:
+  <<: *common
+  roles:
+    primary: Leader
+    additional: [Ambusher, Artillery]
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 1
+  attacks:
+    reduced_attacks: 1
+    main:
+      base: Pistol
+      damage_multiplier: 1.0
+      secondary_damage_type: Poison
+    secondary:
+      base: Shortswords
+      damage_multiplier: 1.0
       secondary_damage_type: Poison
   skills:
-    proficiency:
-    - Stealth
-    - Initiative
-    expertise: []
-  saves:
-  - CON
-  - STR
-  - DEX
-bandit: !!set
-  '<<: *common': null
-bandit-veteran: !!set
-  '<<: *common': null
-bandit-captain: !!set
-  '<<: *common': null
-bandit-crime-lord: !!set
-  '<<: *common': null
+    proficiency: [Stealth, Deception, Athletics, Perception, Initiative]
+    expertise: [Stealth, Initiative]
+  saves: [STR, DEX, CON]
