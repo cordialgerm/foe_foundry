@@ -7,6 +7,8 @@ from typing import Generator
 
 from sqlmodel import Session, SQLModel, create_engine
 
+from .models import User, AnonymousSession, CreditTransaction
+
 # Database URL from environment, with fallback to SQLite for development
 DATABASE_URL = os.getenv(
     "DATABASE_URL", 
@@ -30,8 +32,6 @@ else:
 
 def create_db_and_tables():
     """Create database tables if they don't exist."""
-    # Import models here to ensure they're registered
-    from .models import User, AnonymousSession, CreditTransaction
     SQLModel.metadata.create_all(engine)
 
 

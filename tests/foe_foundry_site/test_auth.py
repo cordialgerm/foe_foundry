@@ -1,6 +1,7 @@
 """Test authentication endpoints."""
 
 import pytest
+from unittest.mock import patch
 from fastapi.testclient import TestClient
 
 from foe_foundry_site.app import app
@@ -36,20 +37,20 @@ def test_credit_usage_with_generation():
     response = client.get("/auth/status")
     initial_credits = response.json()["credits_remaining"]
     
-    # Generate a monster (this should use credits but we skip it to avoid dependencies)
-    # For now, just test that the endpoint exists and requires credits
+    # Generate a monster - this should use credits
     response = client.get("/api/v1/statblocks/random?output=json")
-    # This might fail due to missing dependencies but that's OK for this test
-    assert response.status_code in [200, 402, 500]  # Various valid responses
+    # Should either succeed or fail due to insufficient credits
+    assert response.status_code in [200, 402]
 
 
+@patch('foe_foundry_site.auth.routes.PATREON_CLIENT_ID', 'test_client_id')
+@patch('foe_foundry_site.auth.routes.PATREON_REDIRECT_URI', 'http://test.example.com/callback')
 def test_patreon_login_redirect():
-    """Test that Patreon login redirects properly or fails gracefully."""
+    """Test that Patreon login redirects properly."""
     response = client.get("/auth/patreon", follow_redirects=False)
-    # Should either redirect to Patreon or return 500 if not configured
-    assert response.status_code in [302, 500]
-    if response.status_code == 302:
-        assert "patreon.com" in response.headers["location"]
+    # Should redirect to Patreon OAuth (302 or 307 are both valid redirect codes)
+    assert response.status_code in [302, 307]
+    assert "patreon.com" in response.headers["location"]
 
 
 def test_logout():
