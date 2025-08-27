@@ -4,13 +4,13 @@ template:
   monsters:
   - key: goblin-lickspittle
     name: Goblin Lickspittle
-    cr: null
+    cr: 0.125
   - key: goblin
     name: Goblin
-    cr: null
+    cr: 0.25
   - key: goblin-brute
     name: Goblin Brute
-    cr: null
+    cr: 0.5
   - key: goblin-boss
     name: Goblin Boss
     cr: 1
@@ -23,44 +23,195 @@ template:
   - key: goblin-shaman
     name: Goblin Shaman
     cr: 2
-  environments: []
+  environments:
+  - development: ruin
+    affinity: native
+  - biome: underground
+    affinity: native
+  - terrain: hill
+    affinity: common
+  - region: Feywood
+    affinity: common
+  - development: wilderness
+    affinity: common
+  - extraplanar: faerie
+    affinity: common
+  - development: frontier
+    affinity: common
+  - region: CountryShire
+    affinity: uncommon
+  - development: settlement
+    affinity: rare
   species: null
+
 common: &common
-  creature_type: null
+  creature_type: Humanoid
+  additional_creature_types: [Fey]
+  creature_subtype: Goblinoid
   size: Small
   languages:
   - Common
   - Goblin
   creature_class: Goblin
-  hp_multiplier: 1.0
+  darkvision: 60
+  hp_multiplier: 0.7
   damage_multiplier: 1.0
   roles:
-    primary: null
-    additional: []
-  abilities: {}
+    primary: Skirmisher
+    additional: [Artillery, Ambusher]
+  abilities:
+    STR: [Default, -3]
+    DEX: [Primary, 2]
+    INT: [Default, -1]
+    WIS: [Default, -2]
+    CHA: [Default, -2]
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
   attacks:
     main:
       base: Daggers
+      display_name: Stick'Em
       damage_multiplier: 1.0
       secondary_damage_type: null
+    secondary:
+      base: Shortbow
+      display_name: Shoot'Em
+      damage_multiplier: 0.9
+      secondary_damage_type: null
   skills:
-    proficiency:
-    - Stealth
+    proficiency: [Stealth]
     expertise: []
-  saves:
-  - CON
-  - WIS
-goblin-lickspittle: !!set
-  '<<: *common': null
-goblin: !!set
-  '<<: *common': null
-goblin-brute: !!set
-  '<<: *common': null
-goblin-boss: !!set
-  '<<: *common': null
-goblin-warchief: !!set
-  '<<: *common': null
-goblin-foulhex: !!set
-  '<<: *common': null
-goblin-shaman: !!set
-  '<<: *common': null
+  saves: []
+
+goblin-lickspittle:
+  <<: *common
+
+goblin:
+  <<: *common
+  hp_multiplier: 0.8
+  abilities:
+    STR: [Default, -3]
+    DEX: Primary
+    INT: [Default, -1]
+    WIS: [Default, -2]
+    CHA: [Default, -2]
+
+goblin-brute:
+  <<: *common
+  hp_multiplier: 1.0
+  roles:
+    primary: Soldier
+    additional: [Skirmisher, Bruiser]
+  abilities:
+    STR: Primary
+    DEX: [Medium, 2]
+    INT: [Default, -1]
+    WIS: [Default, -2]
+    CHA: [Default, -2]
+  ac_templates:
+  - template: ChainShirt
+    modifier: 0
+  attacks:
+    main:
+      base: Maul
+      display_name: Smash'Em
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+
+goblin-boss:
+  <<: *common
+  hp_multiplier: 1.0
+  roles:
+    primary: Leader
+    additional: [Soldier]
+  abilities:
+    STR: Default
+    DEX: Primary
+    INT: Default
+    WIS: Default
+    CHA: Default
+  ac_templates:
+  - template: ChainShirt
+    modifier: 0
+  attacks:
+    main:
+      base: Maul
+      display_name: Smash'Em
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Shortbow
+      display_name: Shoot'Em
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+  saves: [CON, WIS]
+
+goblin-warchief:
+  <<: *common
+  hp_multiplier: 1.0
+  roles:
+    primary: Leader
+    additional: [Soldier]
+  abilities:
+    STR: Default
+    DEX: Primary
+    INT: Default
+    WIS: Default
+    CHA: Default
+  ac_templates:
+  - template: Breastplate
+    modifier: 0
+  attacks:
+    main:
+      base: Maul
+      display_name: Smash'Em
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Shortbow
+      display_name: Shoot'Em
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+  saves: [CON, WIS]
+
+goblin-foulhex:
+  <<: *common
+  hp_multiplier: 0.8
+  damage_multiplier: 1.1
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  abilities:
+    STR: Default
+    DEX: [Medium, 2]
+    INT: Primary
+    WIS: Default
+    CHA: Default
+  attacks:
+    main:
+      base: Gaze
+      display_name: Hex'Em
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+
+goblin-shaman:
+  <<: *common
+  hp_multiplier: 0.8
+  damage_multiplier: 1.1
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  abilities:
+    STR: Default
+    DEX: [Medium, 2]
+    INT: Primary
+    WIS: Default
+    CHA: Default
+  attacks:
+    main:
+      base: Gaze
+      display_name: Hex'Em
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+  saves: [CON, WIS]
