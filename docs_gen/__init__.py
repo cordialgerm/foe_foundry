@@ -1,31 +1,26 @@
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from typing import List
 
-from .families import generate_families_index
-from .monsters import generate_monsters_with_no_lore
-from .powers import generate_all_powers
-from .topics import generate_topics_index
+import mkdocs_gen_files
+
+from .families import generate_families_content, generate_families_index
+from .monsters import (
+    generate_monsters_with_no_lore,
+    generate_monsters_with_no_lore_content,
+)
+from .powers import generate_all_powers, generate_all_powers_content
+from .topics import generate_topics_content, generate_topics_index
+from .types import FilesToGenerate
 
 
-def _generate_topics():
-    """Wrapper function for multiprocessing."""
-    generate_topics_index()
-    return "topics"
-
-def _generate_families():
-    """Wrapper function for multiprocessing."""
-    generate_families_index()
-    return "families"
-
-def _generate_powers():
-    """Wrapper function for multiprocessing."""
-    generate_all_powers()
-    return "powers"
-
-def _generate_monsters():
-    """Wrapper function for multiprocessing."""
-    generate_monsters_with_no_lore()
-    return "monsters"
+def write_content_results(results: List[FilesToGenerate]):
+    """Write content results that were generated in worker processes."""
+    for result in results:
+        for filename, content in result.files.items():
+            with mkdocs_gen_files.open(filename, "w") as f:
+                f.write(content)
+            print(f"Wrote {filename} from multiprocessing result {result.name}")
 
 
 def generate_pages():
@@ -37,42 +32,48 @@ def generate_pages():
     # Performance optimization: Skip expensive page generation in fast builds
     fast_build = os.environ.get("FAST_BUILD", "false").lower() == "true"
     skip_generation = os.environ.get("SKIP_PAGE_GENERATION", "false").lower() == "true"
-    
+
     if fast_build or skip_generation:
         print("Fast build mode: skipping dynamic page generation for performance.")
         return
 
     print("Generating dynamic pages with multiprocessing...")
-    
-    # Use multiprocessing to generate pages in parallel
-    generators = [_generate_topics, _generate_families, _generate_powers, _generate_monsters]
-    
+
+    # All generators now return FilesToGenerate
+    generators = [
+        generate_topics_content,
+        generate_families_content,
+        generate_all_powers_content,
+        generate_monsters_with_no_lore_content,
+    ]
+
     try:
-        with ProcessPoolExecutor(max_workers=4) as executor:
-            # Submit all tasks
+        # Run content generators in parallel worker processes
+        with ProcessPoolExecutor(max_workers=min(4, len(generators))) as executor:
             future_to_name = {executor.submit(gen): gen.__name__ for gen in generators}
-            
-            # Collect results as they complete
+
+            results = []
             for future in as_completed(future_to_name):
                 gen_name = future_to_name[future]
                 try:
                     result = future.result()
-                    print(f"Completed generating {result} pages")
+                    results.append(result)
+                    print(f"Completed generating {result.name} content")
                 except Exception as exc:
-                    print(f"Generation of {gen_name} failed with exception: {exc}")
-                    # Fall back to sequential generation on error
-                    print("Falling back to sequential generation...")
-                    generate_topics_index()
-                    generate_families_index()
-                    generate_all_powers()
-                    generate_monsters_with_no_lore()
-                    break
+                    print(
+                        f"Content generation of {gen_name} failed with exception: {exc}"
+                    )
+                    raise  # Re-raise to trigger fallback
+
+        # Write all content results in main process
+        write_content_results(results)
+
     except Exception as e:
-        print(f"Multiprocessing failed: {e}")
+        print(f"Multiprocessing/generation failed: {e}")
         print("Falling back to sequential generation...")
         generate_topics_index()
         generate_families_index()
         generate_all_powers()
         generate_monsters_with_no_lore()
-    
+
     print("Dynamic page generation completed.")
