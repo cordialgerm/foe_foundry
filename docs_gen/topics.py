@@ -4,8 +4,14 @@ from pathlib import Path
 import frontmatter
 import mkdocs_gen_files
 
+from .types import FilesToGenerate
 
-def generate_topics_index():
+
+def generate_topics_content() -> FilesToGenerate:
+    """Generate topics index content without writing to mkdocs_gen_files.
+
+    Returns FilesToGenerate with the files to be written.
+    """
     topics_dir = Path("docs/topics")
 
     topics_list = []
@@ -37,6 +43,14 @@ def generate_topics_index():
     for title, slug in topics_list:
         lines.append(f"- [{title}]({slug}/)")
 
+    return FilesToGenerate(name="topics", files={"topics/index.md": "\n".join(lines)})
+
+
+def generate_topics_index():
+    """Generate topics index and write directly to mkdocs_gen_files."""
+    result = generate_topics_content()
+
     # Write it into the virtual MkDocs build
-    with mkdocs_gen_files.open("topics/index.md", "w") as f:
-        f.write("\n".join(lines))
+    for filename, content in result.files.items():
+        with mkdocs_gen_files.open(filename, "w") as f:
+            f.write(content)
