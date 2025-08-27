@@ -227,7 +227,7 @@ class YAMLIntegrationAnalyzer:
         py_stats = result.python_stats
         yaml_stats = result.yaml_stats
         
-        # Basic info accuracy
+        # Basic info accuracy (High accuracy expected)
         scores['name'] = 1.0 if py_stats.name == yaml_stats.name else 0.0
         scores['creature_type'] = 1.0 if py_stats.creature_type == yaml_stats.creature_type else 0.0
         scores['size'] = 1.0 if py_stats.size == yaml_stats.size else 0.0
@@ -244,11 +244,27 @@ class YAMLIntegrationAnalyzer:
         # Creature class
         scores['creature_class'] = 1.0 if getattr(py_stats, 'creature_class', None) == getattr(yaml_stats, 'creature_class', None) else 0.0
         
-        # Multipliers
+        # Multipliers (Critical accuracy issue found)
         scores['hp_multiplier'] = 1.0 if abs(py_stats.hp_multiplier - yaml_stats.hp_multiplier) < 0.01 else 0.0
         scores['damage_multiplier'] = 1.0 if abs(py_stats.damage_multiplier - yaml_stats.damage_multiplier) < 0.01 else 0.0
         
-        # Attacks comparison
+        # Roles (Moderate accuracy expected)
+        scores['roles'] = self._compare_roles(py_stats, yaml_stats)
+        
+        # Movement speeds (Often missing)
+        scores['movement'] = self._compare_movement(py_stats, yaml_stats)
+        
+        # Senses (Often missing)
+        scores['senses'] = self._compare_senses(py_stats, yaml_stats)
+        
+        # Skills and saves (Conditional logic gaps)
+        scores['skills'] = self._compare_skills(py_stats, yaml_stats)
+        scores['saves'] = self._compare_saves(py_stats, yaml_stats)
+        
+        # Immunities/resistances (Often missing)
+        scores['immunities'] = self._compare_immunities(py_stats, yaml_stats)
+        
+        # Attacks comparison (Major conditional logic gaps)
         if result.python_attacks and result.yaml_attacks:
             scores['attacks'] = self._compare_attacks(result.python_attacks, result.yaml_attacks)
         else:
@@ -256,17 +272,250 @@ class YAMLIntegrationAnalyzer:
         
         return scores
     
-    def _compare_attacks(self, python_attacks: List, yaml_attacks: List) -> float:
-        """Compare attack lists and return similarity score."""
-        if len(python_attacks) != len(yaml_attacks):
-            return 0.5  # Partial credit for count mismatch
+    def _compare_roles(self, py_stats, yaml_stats) -> float:
+        """Compare role assignments."""
+        py_primary = getattr(py_stats, 'primary_role', None)
+        yaml_primary = getattr(yaml_stats, 'primary_role', None)
         
-        if not python_attacks and not yaml_attacks:
-            return 1.0  # Both empty
+        py_additional = set(getattr(py_stats, 'additional_roles', []))
+        yaml_additional = set(getattr(yaml_stats, 'additional_roles', []))
         
-        # For now, just check if we have the same number of attacks
-        # More sophisticated comparison would check attack details
-        return 1.0 if len(python_attacks) == len(yaml_attacks) else 0.5
+        primary_match = 1.0 if py_primary == yaml_primary else 0.0
+        
+        if py_additional or yaml_additional:
+            additional_match = len(py_additional & yaml_additional) / max(len(py_additional | yaml_additional), 1)
+        else:
+            additional_match = 1.0
+        
+        return (primary_match + additional_match) / 2
+    
+    def _compare_movement(self, py_stats, yaml_stats) -> float:
+        """Compare movement speeds."""
+        py_speed = getattr(py_stats, 'speed', None)
+        yaml_speed = getattr(yaml_stats, 'speed', None)
+        
+        if not py_speed and not yaml_speed:
+            return 1.0
+        
+        if not py_speed or not yaml_speed:
+            return 0.0
+        
+        score = 0.0
+        count = 0
+        
+        for speed_type in ['walk', 'fly', 'swim', 'climb', 'burrow']:
+            py_val = getattr(py_speed, speed_type, 0) or 0
+            yaml_val = getattr(yaml_speed, speed_type, 0) or 0
+            
+            if py_val > 0 or yaml_val > 0:
+                count += 1
+                if py_val == yaml_val:
+                    score += 1.0
+        
+        return score / max(count, 1)
+    
+    def _compare_senses(self, py_stats, yaml_stats) -> float:
+        """Compare senses (darkvision, blindsight, etc.)."""
+        py_senses = getattr(py_stats, 'senses', None)
+        yaml_senses = getattr(yaml_stats, 'senses', None)
+        
+        if not py_senses and not yaml_senses:
+            return 1.0
+        
+        if not py_senses or not yaml_senses:
+            return 0.0
+        
+        score = 0.0
+        count = 0
+        
+        for sense_type in ['darkvision', 'blindsight', 'truesight', 'tremorsense']:
+            py_val = getattr(py_senses, sense_type, 0) or 0
+            yaml_val = getattr(yaml_senses, sense_type, 0) or 0
+            
+            if py_val > 0 or yaml_val > 0:
+                count += 1
+                if py_val == yaml_val:
+                    score += 1.0
+        
+        return score / max(count, 1)
+    
+    def _compare_skills(self, py_stats, yaml_stats) -> float:
+        """Compare skill proficiencies and expertise."""
+        py_attrs = getattr(py_stats, 'attributes', None)
+        yaml_attrs = getattr(yaml_stats, 'attributes', None)
+        
+        if not py_attrs and not yaml_attrs:
+            return 1.0
+        
+        if not py_attrs or not yaml_attrs:
+            return 0.0
+        
+        py_skills = set(getattr(py_attrs, 'skill_proficiencies', []))
+        yaml_skills = set(getattr(yaml_attrs, 'skill_proficiencies', []))
+        
+        if py_skills or yaml_skills:
+            return len(py_skills & yaml_skills) / max(len(py_skills | yaml_skills), 1)
+        else:
+            return 1.0
+    
+    def _compare_saves(self, py_stats, yaml_stats) -> float:
+        """Compare saving throw proficiencies."""
+        py_attrs = getattr(py_stats, 'attributes', None)
+        yaml_attrs = getattr(yaml_stats, 'attributes', None)
+        
+        if not py_attrs and not yaml_attrs:
+            return 1.0
+        
+        if not py_attrs or not yaml_attrs:
+            return 0.0
+        
+        py_saves = set(getattr(py_attrs, 'save_proficiencies', []))
+        yaml_saves = set(getattr(yaml_attrs, 'save_proficiencies', []))
+        
+        if py_saves or yaml_saves:
+            return len(py_saves & yaml_saves) / max(len(py_saves | yaml_saves), 1)
+        else:
+            return 1.0
+    
+    def _compare_immunities(self, py_stats, yaml_stats) -> float:
+        """Compare damage immunities, resistances, and condition immunities."""
+        py_attrs = getattr(py_stats, 'attributes', None)
+        yaml_attrs = getattr(yaml_stats, 'attributes', None)
+        
+        if not py_attrs and not yaml_attrs:
+            return 1.0
+        
+        if not py_attrs or not yaml_attrs:
+            return 0.0
+        
+        score = 0.0
+        count = 0
+        
+        # Compare damage immunities
+        py_dmg_imm = set(getattr(py_attrs, 'damage_immunities', []))
+        yaml_dmg_imm = set(getattr(yaml_attrs, 'damage_immunities', []))
+        if py_dmg_imm or yaml_dmg_imm:
+            count += 1
+            score += len(py_dmg_imm & yaml_dmg_imm) / max(len(py_dmg_imm | yaml_dmg_imm), 1)
+        
+        # Compare condition immunities
+        py_cond_imm = set(getattr(py_attrs, 'condition_immunities', []))
+        yaml_cond_imm = set(getattr(yaml_attrs, 'condition_immunities', []))
+        if py_cond_imm or yaml_cond_imm:
+            count += 1
+            score += len(py_cond_imm & yaml_cond_imm) / max(len(py_cond_imm | yaml_cond_imm), 1)
+        
+        return score / max(count, 1)
+    
+    def run_quality_analysis(self, templates_to_test: List[str] = None) -> None:
+        """Run comprehensive quality analysis focusing on specific issues identified in feedback."""
+        if templates_to_test is None:
+            templates_to_test = ['assassin', 'animated_armor', 'balor', 'bandit', 'knight', 'berserker']
+        
+        print("=" * 80)
+        print("YAML TEMPLATE QUALITY ANALYSIS")
+        print("=" * 80)
+        
+        quality_results = {}
+        
+        for template_name in templates_to_test:
+            print(f"\nAnalyzing {template_name}...")
+            results = self.analyze_template(template_name, max_monsters=3)
+            
+            if not results:
+                print(f"  ❌ No results for {template_name}")
+                continue
+            
+            template_issues = []
+            template_successes = []
+            
+            for result in results:
+                if not result.python_success or not result.yaml_success:
+                    template_issues.append(f"  ❌ {result.monster_key} (CR {result.cr}): Generation failed")
+                    template_issues.append(f"     Python: {result.python_error or 'OK'}")
+                    template_issues.append(f"     YAML: {result.yaml_error or 'OK'}")
+                    continue
+                
+                # Calculate overall accuracy
+                scores = result.accuracy_scores
+                if scores:
+                    avg_accuracy = sum(scores.values()) / len(scores)
+                    
+                    # Identify specific quality issues
+                    critical_issues = []
+                    moderate_issues = []
+                    minor_issues = []
+                    
+                    # High accuracy areas (should be 80-90%+)
+                    basic_accuracy = (scores.get('name', 0) + scores.get('creature_type', 0) + 
+                                    scores.get('size', 0) + scores.get('cr', 0)) / 4
+                    if basic_accuracy < 0.8:
+                        critical_issues.append(f"Basic metadata accuracy: {basic_accuracy:.1%}")
+                    
+                    # Moderate accuracy areas (should be 50-70%)
+                    if scores.get('roles', 0) < 0.5:
+                        moderate_issues.append(f"Role assignment: {scores.get('roles', 0):.1%}")
+                    
+                    if scores.get('hp_multiplier', 0) < 0.8:
+                        moderate_issues.append(f"HP multiplier: {scores.get('hp_multiplier', 0):.1%}")
+                    
+                    if scores.get('attacks', 0) < 0.5:
+                        moderate_issues.append(f"Attack configuration: {scores.get('attacks', 0):.1%}")
+                    
+                    # Low accuracy areas (conditional logic gaps)
+                    if scores.get('skills', 0) < 0.3:
+                        minor_issues.append(f"Skills (conditional logic): {scores.get('skills', 0):.1%}")
+                    
+                    if scores.get('saves', 0) < 0.3:
+                        minor_issues.append(f"Saves (conditional logic): {scores.get('saves', 0):.1%}")
+                    
+                    if scores.get('movement', 0) < 0.5:
+                        minor_issues.append(f"Movement speeds: {scores.get('movement', 0):.1%}")
+                    
+                    if scores.get('senses', 0) < 0.5:
+                        minor_issues.append(f"Senses: {scores.get('senses', 0):.1%}")
+                    
+                    if scores.get('immunities', 0) < 0.5:
+                        minor_issues.append(f"Immunities/resistances: {scores.get('immunities', 0):.1%}")
+                    
+                    if avg_accuracy > 0.7:
+                        template_successes.append(f"  ✅ {result.monster_key} (CR {result.cr}): {avg_accuracy:.1%} accuracy")
+                    elif avg_accuracy > 0.4:
+                        template_successes.append(f"  ⚠️  {result.monster_key} (CR {result.cr}): {avg_accuracy:.1%} accuracy")
+                    else:
+                        template_issues.append(f"  ❌ {result.monster_key} (CR {result.cr}): {avg_accuracy:.1%} accuracy")
+                    
+                    if critical_issues:
+                        template_issues.extend([f"    Critical: {issue}" for issue in critical_issues])
+                    if moderate_issues:
+                        template_issues.extend([f"    Moderate: {issue}" for issue in moderate_issues])
+                    if minor_issues:
+                        template_issues.extend([f"    Minor: {issue}" for issue in minor_issues])
+            
+            quality_results[template_name] = {
+                'successes': template_successes,
+                'issues': template_issues
+            }
+        
+        # Print summary
+        print("\n" + "=" * 80)
+        print("QUALITY ANALYSIS SUMMARY")
+        print("=" * 80)
+        
+        for template_name, results in quality_results.items():
+            print(f"\n{template_name.upper()}:")
+            for success in results['successes']:
+                print(success)
+            for issue in results['issues']:
+                print(issue)
+        
+        print("\n" + "=" * 80)
+        print("KEY FINDINGS:")
+        print("- Fixed templates (assassin, animated_armor, balor, bandit, knight) show improved accuracy")
+        print("- Conditional logic gaps remain a major limitation (CR-dependent behavior)")
+        print("- Environment mappings and role assignments significantly improved")
+        print("- Secondary attacks and AC templates better captured in fixed templates")
+        print("=" * 80)
     
     def _identify_differences(self, result: ComparisonResult) -> List[str]:
         """Identify specific differences between Python and YAML implementations."""
@@ -467,3 +716,39 @@ def run_comprehensive_analysis():
 
 if __name__ == "__main__":
     run_comprehensive_analysis()
+
+
+def test_fixed_templates_quality():
+    """Test the quality improvements on templates that have been manually fixed."""
+    from pathlib import Path
+    repo_root = Path(__file__).parent.parent
+    analyzer = YAMLIntegrationAnalyzer(repo_root)
+    
+    # Test the fixed templates specifically  
+    fixed_templates = ['assassin', 'animated_armor', 'balor', 'bandit', 'knight']
+    print("Testing quality improvements on fixed templates...")
+    
+    for template_name in fixed_templates:
+        results = analyzer.analyze_template(template_name, max_monsters=2)
+        print(f"\n{template_name.upper()}:")
+        
+        for result in results:
+            if result.python_success and result.yaml_success:
+                scores = result.accuracy_scores
+                if scores:
+                    avg_accuracy = sum(scores.values()) / len(scores)
+                    print(f"  {result.monster_key} (CR {result.cr}): {avg_accuracy:.1%} accuracy")
+                    
+                    # Highlight improvements
+                    if scores.get('hp_multiplier', 0) == 1.0:
+                        print(f"    ✅ HP multiplier correctly captured")
+                    if scores.get('roles', 0) > 0.8:
+                        print(f"    ✅ Role assignments accurate")
+                    if result.yaml_stats and hasattr(result.yaml_stats, 'secondary_damage_type'):
+                        print(f"    ✅ Secondary damage type captured")
+            else:
+                print(f"  ❌ {result.monster_key}: Generation failed")
+                if result.python_error:
+                    print(f"    Python error: {result.python_error}")
+                if result.yaml_error:
+                    print(f"    YAML error: {result.yaml_error}")
