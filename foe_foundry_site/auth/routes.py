@@ -8,7 +8,7 @@ from typing import Optional
 
 import httpx
 from fastapi import APIRouter, Form, HTTPException, Query, Request
-from fastapi.responses import JSONResponse, RedirectResponse
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token
 from sqlmodel import select
@@ -26,6 +26,12 @@ from .models import AccountType, PatronStatus, PatronTier, User
 
 router = APIRouter(prefix="/auth", tags=["authentication"])
 log = logging.getLogger(__name__)
+
+
+@router.get("/demo")
+def auth_demo():
+    """Serve the authentication demo page."""
+    return FileResponse("demo_auth.html", media_type="text/html")
 
 
 @router.post("/google")

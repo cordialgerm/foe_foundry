@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foe Foundry - Account Demo</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .auth-container { border: 1px solid #ccc; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .credits-info { background: #f0f8ff; padding: 15px; border-radius: 5px; margin: 10px 0; }
+        .error { color: red; background: #ffe6e6; padding: 10px; border-radius: 5px; }
+        .success { color: green; background: #e6ffe6; padding: 10px; border-radius: 5px; }
+        button { padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; }
+        .primary-btn { background: #4285f4; color: white; }
+        .secondary-btn { background: #28a745; color: white; }
+        .danger-btn { background: #dc3545; color: white; }
+        .disabled { background: #ccc; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <h1>Foe Foundry Account System Demo</h1>
+    
+    <div class="credits-info" id="creditsInfo">
+        <h3>Loading account status...</h3>
+    </div>
+
+    <div class="auth-container" id="authContainer">
+        <h3>Authentication</h3>
+        <div id="googleSignIn"></div>
+        <p>or</p>
+        <button class="secondary-btn" onclick="loginWithPatreon()">Sign in with Patreon</button>
+        <button class="danger-btn" onclick="logout()" id="logoutBtn" style="display: none;">Logout</button>
+    </div>
+
+    <div class="auth-container">
+        <h3>Monster Generation</h3>
+        <button class="primary-btn" onclick="generateMonster()" id="generateBtn">Generate Random Monster</button>
+        <div id="generationResult"></div>
+    </div>
+
+    <script>
+        let authStatus = null;
+
+        // Initialize Google One Tap
+        window.onload = function() {
+            updateAuthStatus();
+            
+            // Initialize Google Sign-In (Note: would need actual client ID)
+            if (window.google) {
+                google.accounts.id.initialize({
+                    client_id: "YOUR_GOOGLE_CLIENT_ID", // Replace with actual client ID
+                    callback: handleGoogleSignIn
+                });
+                
+                google.accounts.id.renderButton(
+                    document.getElementById("googleSignIn"),
+                    { theme: "outline", size: "large" }
+                );
+            } else {
+                document.getElementById("googleSignIn").innerHTML = 
+                    '<p style="color: orange;">Google Sign-In not available (need client ID)</p>';
+            }
+        };
+
+        async function updateAuthStatus() {
+            try {
+                const response = await fetch('/auth/status');
+                authStatus = await response.json();
+                updateUI();
+            } catch (error) {
+                console.error('Failed to get auth status:', error);
+                document.getElementById('creditsInfo').innerHTML = 
+                    '<h3 class="error">Failed to load account status</h3>';
+            }
+        }
+
+        function updateUI() {
+            const creditsInfo = document.getElementById('creditsInfo');
+            const logoutBtn = document.getElementById('logoutBtn');
+            const generateBtn = document.getElementById('generateBtn');
+
+            if (authStatus.authenticated) {
+                creditsInfo.innerHTML = `
+                    <h3>Welcome back!</h3>
+                    <p><strong>Tier:</strong> ${authStatus.tier}</p>
+                    <p><strong>Credits remaining:</strong> ${authStatus.credits_remaining === -1 ? 'Unlimited' : authStatus.credits_remaining}</p>
+                `;
+                logoutBtn.style.display = 'inline-block';
+            } else {
+                creditsInfo.innerHTML = `
+                    <h3>Anonymous User</h3>
+                    <p><strong>Free credits remaining:</strong> ${authStatus.credits_remaining}</p>
+                    <p>Create an account to get more credits!</p>
+                `;
+                logoutBtn.style.display = 'none';
+            }
+
+            if (authStatus.can_generate) {
+                generateBtn.classList.remove('disabled');
+                generateBtn.disabled = false;
+            } else {
+                generateBtn.classList.add('disabled');
+                generateBtn.disabled = true;
+            }
+        }
+
+        async function handleGoogleSignIn(response) {
+            try {
+                const formData = new FormData();
+                formData.append('credential', response.credential);
+                
+                const result = await fetch('/auth/google', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await result.json();
+                
+                if (result.ok) {
+                    showMessage('Google sign-in successful!', 'success');
+                    updateAuthStatus();
+                } else {
+                    showMessage('Google sign-in failed: ' + data.detail, 'error');
+                }
+            } catch (error) {
+                showMessage('Google sign-in error: ' + error.message, 'error');
+            }
+        }
+
+        function loginWithPatreon() {
+            window.location.href = '/auth/patreon';
+        }
+
+        async function logout() {
+            try {
+                const response = await fetch('/auth/logout', { method: 'POST' });
+                if (response.ok) {
+                    showMessage('Logged out successfully', 'success');
+                    updateAuthStatus();
+                } else {
+                    showMessage('Logout failed', 'error');
+                }
+            } catch (error) {
+                showMessage('Logout error: ' + error.message, 'error');
+            }
+        }
+
+        async function generateMonster() {
+            if (!authStatus.can_generate) {
+                showMessage('No credits remaining! Please create an account.', 'error');
+                return;
+            }
+
+            const generateBtn = document.getElementById('generateBtn');
+            const originalText = generateBtn.textContent;
+            generateBtn.textContent = 'Generating...';
+            generateBtn.disabled = true;
+
+            try {
+                const response = await fetch('/api/v1/statblocks/random?output=json');
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    showGenerationResult(data);
+                    updateAuthStatus(); // Refresh credits
+                } else {
+                    const error = await response.json();
+                    showMessage('Generation failed: ' + error.detail, 'error');
+                }
+            } catch (error) {
+                showMessage('Generation error: ' + error.message, 'error');
+            } finally {
+                generateBtn.textContent = originalText;
+                generateBtn.disabled = false;
+            }
+        }
+
+        function showGenerationResult(data) {
+            const resultDiv = document.getElementById('generationResult');
+            resultDiv.innerHTML = `
+                <div class="success">
+                    <h4>Monster Generated Successfully!</h4>
+                    <p><strong>Monster:</strong> ${data.monster_meta.monster_key}</p>
+                    <details>
+                        <summary>View Statblock HTML</summary>
+                        <div style="max-height: 300px; overflow-y: auto; background: #f5f5f5; padding: 10px; margin: 10px 0;">
+                            ${data.statblock_html}
+                        </div>
+                    </details>
+                </div>
+            `;
+        }
+
+        function showMessage(message, type) {
+            const resultDiv = document.getElementById('generationResult');
+            resultDiv.innerHTML = `<div class="${type}">${message}</div>`;
+        }
+    </script>
+</body>
+</html>
