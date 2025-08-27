@@ -9,40 +9,62 @@ template:
     name: Balor Dreadlord
     cr: 23
     legendary: true
-  environments: []
+  environments:
+  - extraplanar: hellish
+    affinity: native
+  - biome: extraplanar
+    affinity: native
+  - region: FieryHellscape
+    affinity: native
+  - development: ruin
+    affinity: common
+  - region: HauntedLands
+    affinity: uncommon
+  - development: wilderness
+    affinity: rare
   species: null
+
 common: &common
   creature_type: Fiend
+  creature_subtype: Demon
   size: Huge
+  walk_speed: 40
+  fly_speed: 80
   languages:
   - Abyssal; telepathy 120 ft.
   creature_class: Balor
+  truesight: 120
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
-    additional: []
+    primary: Bruiser
+    additional: [Soldier, Leader]
   abilities:
     STR: Primary
-    DEX: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    DEX: [Medium, 1]
+    INT: [Medium, 4]
+    WIS: [Medium, 2]
+    CHA: [Medium, 6]
+  ac_templates:
+  - template: UnholyArmor
+    modifier: 0
+  condition_immunities: [Poisoned, Frightened]
+  damage_immunities: [Fire, Poison]
+  damage_resistances: [Cold, Lightning]
   attacks:
+    set_attacks: 3
     main:
       base: Greatsword
+      display_name: Lightning Blade
       damage_multiplier: 1.0
       secondary_damage_type: Fire
   skills:
-    proficiency:
-    - Perception
-    - Initiative
-    - Initiative
-    expertise: []
-  saves:
-  - CON
-  - WIS
-balor: !!set
-  '<<: *common': null
-balor-dreadlord: !!set
-  '<<: *common': null
+    proficiency: [Perception, Initiative]
+    expertise: [Initiative]
+  saves: [CON, WIS]
+
+balor:
+  <<: *common
+
+balor-dreadlord:
+  <<: *common

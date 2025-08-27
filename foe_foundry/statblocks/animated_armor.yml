@@ -8,30 +8,78 @@ template:
   - key: animated-runeplate
     name: Animated Runeplate
     cr: 4
-  environments: []
+  environments:
+  - development: stronghold
+    affinity: native
+  - development: ruin
+    affinity: common
+  - region: UrbanTownship
+    affinity: common
+  - development: settlement
+    affinity: uncommon
+  - development: dungeon
+    affinity: uncommon
+  - development: wilderness
+    affinity: rare
   species: null
+
 common: &common
   creature_type: Construct
   size: Medium
   languages:
   - Understands Common but can't speak
   creature_class: Animated Armor
+  fly_speed: 30
+  hover: true
   hp_multiplier: 1.0
   damage_multiplier: 1.0
+  blindsight: 60
   roles:
-    primary: null
-    additional: []
-  abilities: {}
+    primary: Defender
+    additional: [Soldier]
+  abilities:
+    STR: [Primary, 1]
+    DEX: Medium
+    CON: [Constitution, 2]
+    INT: [NoScaling, -9]
+    WIS: [NoScaling, -7]
+    CHA: [NoScaling, -9]
+  ac_templates:
+  - template: PlateArmor
+    modifier: 0
+  condition_immunities: [Poisoned, Charmed, Blinded, Stunned, Exhaustion, Frightened, Paralyzed, Petrified]
+  damage_immunities: [Poison, Psychic]
   attacks:
+    set_attacks: 2
     main:
-      base: SwordAndShield
+      base: Slam
+      display_name: Plated Gauntlet
       damage_multiplier: 1.0
       secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
   saves: []
-animated-armor: !!set
-  '<<: *common': null
-animated-runeplate: !!set
-  '<<: *common': null
+
+animated-armor:
+  <<: *common
+
+animated-runeplate:
+  <<: *common
+  hp_multiplier: 0.8
+  damage_multiplier: 0.9
+  uses_shield: true
+  abilities:
+    STR: Primary
+    DEX: Medium
+    CON: [Constitution, 2]
+    INT: [NoScaling, 0]
+    WIS: [NoScaling, 0]
+    CHA: [NoScaling, 0]
+  attacks:
+    set_attacks: 2
+    main:
+      base: SwordAndShield
+      display_name: Runic Blade
+      damage_multiplier: 1.0
+      secondary_damage_type: Force

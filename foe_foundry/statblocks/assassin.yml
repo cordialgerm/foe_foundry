@@ -12,46 +12,85 @@ template:
     name: Assassin Legend
     cr: 12
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - region: UrbanTownship
+    affinity: native
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  - region: CountryShire
+    affinity: uncommon
+  - development: stronghold
+    affinity: uncommon
+  - development: frontier
+    affinity: rare
+  - development: wilderness
+    affinity: rare
+  species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
   languages:
   - Common
   creature_class: Assassin
-  hp_multiplier: 1.0
+  climb_speed: 30
+  hp_multiplier: 0.85
   damage_multiplier: 1.0
   roles:
-    primary: null
-    additional: []
+    primary: Ambusher
+    additional: [Skirmisher, Artillery]
   abilities:
     STR: Default
     DEX: Primary
-    INT: Default
-    WIS: Default
-    CHA: Default
+    INT: [Medium, 0.5]
+    WIS: [Medium, 1]
+    CHA: [Medium, 1]
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
   attacks:
     main:
       base: Daggers
+      display_name: Poisoned Dagger
+      damage_multiplier: 1.0
+      secondary_damage_type: Poison
+    secondary:
+      base: HandCrossbow
+      display_name: Poisoned Hand Crossbow
       damage_multiplier: 1.0
       secondary_damage_type: Poison
   skills:
-    proficiency:
-    - Acrobatics
-    - Perception
-    - Stealth
-    - Initiative
-    - Stealth
-    - Perception
-    - Initiative
+    proficiency: [Acrobatics, Perception, Stealth, Initiative]
     expertise: []
-  saves:
-  - DEX
-  - INT
-contract-killer: !!set
-  '<<: *common': null
-assassin: !!set
-  '<<: *common': null
-assassin-legend: !!set
-  '<<: *common': null
+  saves: []
+
+contract-killer:
+  <<: *common
+  attacks:
+    set_attacks: 1
+
+assassin:
+  <<: *common
+  attacks:
+    set_attacks: 2
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
+  skills:
+    proficiency: [Acrobatics, Perception, Stealth, Initiative]
+    expertise: [Stealth, Perception, Initiative]
+  saves: [DEX, INT]
+
+assassin-legend:
+  <<: *common
+  attacks:
+    set_attacks: 2
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 1
+  skills:
+    proficiency: [Acrobatics, Perception, Stealth, Initiative]
+    expertise: [Stealth, Perception, Initiative]
+  saves: [DEX, INT]
