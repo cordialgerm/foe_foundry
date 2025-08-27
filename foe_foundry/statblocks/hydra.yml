@@ -1,0 +1,44 @@
+template:
+  key: hydra
+  name: Hydra
+  monsters:
+    - { key: hydra, name: "Hydra", cr: 8 }
+    - { key: foulblood-hydra, name: "Foulblood Hydra", cr: 12, legendary: true }
+  environments:
+    - { biome: swamp, affinity: native }
+    - { biome: lake, affinity: native }
+    - { biome: river, affinity: common }
+    - { biome: underground, affinity: common }
+    - { development: wilderness, affinity: common }
+    - { development: ruin, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Monstrosity
+  size: Huge
+  creature_class: Hydra
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Default
+    CON: Constitution
+    WIS: Default
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+hydra:
+  <<: *common
+
+foulblood-hydra:
+  <<: *common

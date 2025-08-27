@@ -1,0 +1,168 @@
+template:
+  key: mage
+  name: Mage
+  monsters:
+    - { key: mage-neophyte, name: "Mage Neophyte", cr: 0.25 }
+    - { key: mage-apprentice, name: "Mage Apprentice", cr: 2 }
+    - { key: abjurer-mage-adept, name: "Abjurer Mage Adept", cr: 4 }
+    - { key: abjurer-mage, name: "Abjurer Mage", cr: 6 }
+    - { key: abjurer-archmage, name: "Abjurer Archmage", cr: 12 }
+    - { key: abjurer-primagus, name: "Abjurer Primagus", cr: 16, legendary: true }
+    - { key: conjurer-mage-adept, name: "Conjurer Mage Adept", cr: 4 }
+    - { key: conjurer-mage, name: "Conjurer Mage", cr: 6 }
+    - { key: conjurer-archmage, name: "Conjurer Archmage", cr: 12 }
+    - { key: conjurer-primagus, name: "Conjurer Primagus", cr: 16, legendary: true }
+    - { key: diviner-mage-adept, name: "Diviner Mage Adept", cr: 4 }
+    - { key: diviner-mage, name: "Diviner Mage", cr: 6 }
+    - { key: diviner-archmage, name: "Diviner Archmage", cr: 12 }
+    - { key: diviner-primagus, name: "Diviner Primagus", cr: 16, legendary: true }
+    - { key: enchanter-mage-adept, name: "Enchanter Mage Adept", cr: 4 }
+    - { key: enchanter-mage, name: "Enchanter Mage", cr: 6 }
+    - { key: enchanter-archmage, name: "Enchanter Archmage", cr: 12 }
+    - { key: enchanter-primagus, name: "Enchanter Primagus", cr: 16, legendary: true }
+    - { key: illusionist-mage-adept, name: "Illusionist Mage Adept", cr: 4 }
+    - { key: illusionist-mage, name: "Illusionist Mage", cr: 6 }
+    - { key: illusionist-archmage, name: "Illusionist Archmage", cr: 12 }
+    - { key: illusionist-primagus, name: "Illusionist Primagus", cr: 16, legendary: true }
+    - { key: necromancer-adept, name: "Necromancer Adept", cr: 4 }
+    - { key: necromancer-mage, name: "Necromancer Mage", cr: 6 }
+    - { key: necromancer-archmage, name: "Necromancer Archmage", cr: 12 }
+    - { key: necromancer-primagus, name: "Necromancer Primagus", cr: 16, legendary: true }
+    - { key: transmuter-mage-adept, name: "Transmuter Mage Adept", cr: 4 }
+    - { key: transmuter-mage, name: "Transmuter Mage", cr: 6 }
+    - { key: transmuter-archmage, name: "Transmuter Archmage", cr: 12 }
+    - { key: transmuter-primagus, name: "Transmuter Primagus", cr: 16, legendary: true }
+    - { key: pyromancer, name: "Pyromancer", cr: 6 }
+    - { key: cryomancer, name: "Cryomancer", cr: 6 }
+    - { key: electromancer, name: "Electromancer", cr: 6 }
+    - { key: toximancer, name: "Toximancer", cr: 6 }
+  environments:
+    - { development: ruin, affinity: common }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: ['Common']
+  creature_class: Wizard
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Artillery
+    additional: []
+  abilities:
+    STR: Default
+    DEX: Default
+    INT: Primary
+    WIS: Medium
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+mage-neophyte:
+  <<: *common
+
+mage-apprentice:
+  <<: *common
+
+abjurer-mage-adept:
+  <<: *common
+
+abjurer-mage:
+  <<: *common
+
+abjurer-archmage:
+  <<: *common
+
+abjurer-primagus:
+  <<: *common
+
+conjurer-mage-adept:
+  <<: *common
+
+conjurer-mage:
+  <<: *common
+
+conjurer-archmage:
+  <<: *common
+
+conjurer-primagus:
+  <<: *common
+
+diviner-mage-adept:
+  <<: *common
+
+diviner-mage:
+  <<: *common
+
+diviner-archmage:
+  <<: *common
+
+diviner-primagus:
+  <<: *common
+
+enchanter-mage-adept:
+  <<: *common
+
+enchanter-mage:
+  <<: *common
+
+enchanter-archmage:
+  <<: *common
+
+enchanter-primagus:
+  <<: *common
+
+illusionist-mage-adept:
+  <<: *common
+
+illusionist-mage:
+  <<: *common
+
+illusionist-archmage:
+  <<: *common
+
+illusionist-primagus:
+  <<: *common
+
+necromancer-adept:
+  <<: *common
+
+necromancer-mage:
+  <<: *common
+
+necromancer-archmage:
+  <<: *common
+
+necromancer-primagus:
+  <<: *common
+
+transmuter-mage-adept:
+  <<: *common
+
+transmuter-mage:
+  <<: *common
+
+transmuter-archmage:
+  <<: *common
+
+transmuter-primagus:
+  <<: *common
+
+pyromancer:
+  <<: *common
+
+cryomancer:
+  <<: *common
+
+electromancer:
+  <<: *common
+
+toximancer:
+  <<: *common

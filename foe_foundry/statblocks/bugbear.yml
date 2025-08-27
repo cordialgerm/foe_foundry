@@ -1,0 +1,52 @@
+template:
+  key: bugbear
+  name: Bugbear
+  monsters:
+    - { key: bugbear, name: "Bugbear", cr: 1 }
+    - { key: bugbear-brute, name: "Bugbear Brute", cr: 3 }
+    - { key: bugbear-shadowstalker, name: "Bugbear Shadowstalker", cr: 5 }
+  environments:
+    - { region: tangledforest, affinity: native }
+    - { biome: underground, affinity: native }
+    - { development: wilderness, affinity: common }
+    - { development: ruin, affinity: common }
+    - { development: frontier, affinity: common }
+    - { region: feywood, affinity: uncommon }
+    - { development: countryside, affinity: uncommon }
+    - { development: settlement, affinity: rare }
+    - { region: TangledForest, affinity: native }
+    - { region: Feywood, affinity: uncommon }
+  species: True
+
+common: &common
+  size: Medium
+  languages: ['Common', 'Goblin']
+  creature_class: Bugbear
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Ambusher
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Medium
+    INT: Medium
+    WIS: Default
+    CHA: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+bugbear:
+  <<: *common
+
+bugbear-brute:
+  <<: *common
+
+bugbear-shadowstalker:
+  <<: *common

@@ -1,0 +1,47 @@
+template:
+  key: ghoul
+  name: Ghoul
+  monsters:
+    - { key: ghoul, name: "Ghoul", cr: 1 }
+    - { key: ghast, name: "Ghast", cr: 2 }
+    - { key: ghast-gravelord, name: "Ghast Gravelord", cr: 6 }
+  environments:
+    - { biome: underground, affinity: native }
+    - { development: dungeon, affinity: common }
+    - { development: urban, affinity: uncommon }
+    - { biome: swamp, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Undead
+  languages: ['Common']
+  creature_class: Ghoul
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Leader
+    additional: []
+  abilities:
+    STR: Medium
+    DEX: Primary
+    CON: Constitution
+    INT: Default
+    WIS: Default
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+ghoul:
+  <<: *common
+
+ghast:
+  <<: *common
+
+ghast-gravelord:
+  <<: *common

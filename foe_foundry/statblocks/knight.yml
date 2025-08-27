@@ -1,0 +1,53 @@
+template:
+  key: knight
+  name: Knight
+  monsters:
+    - { key: knight, name: "Knight", cr: 3 }
+    - { key: knight-of-the-realm, name: "Knight of the Realm", cr: 6 }
+    - { key: questing-knight, name: "Questing Knight", cr: 12 }
+    - { key: paragon-knight, name: "Paragon Knight", cr: 16, legendary: true }
+  environments:
+    - { development: urban, affinity: native }
+    - { development: stronghold, affinity: native }
+    - { development: settlement, affinity: common }
+    - { development: countryside, affinity: common }
+    - { development: frontier, affinity: uncommon }
+    - { development: wilderness, affinity: rare }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: ['Common']
+  creature_class: Knight
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Soldier
+    additional: ['Leader', 'Support']
+  abilities:
+    STR: Primary
+    DEX: Default
+    INT: Default
+    WIS: Medium
+    CHA: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+knight:
+  <<: *common
+
+knight-of-the-realm:
+  <<: *common
+
+questing-knight:
+  <<: *common
+
+paragon-knight:
+  <<: *common

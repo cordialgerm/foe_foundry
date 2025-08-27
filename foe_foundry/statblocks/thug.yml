@@ -1,0 +1,63 @@
+template:
+  key: thug
+  name: Thug
+  monsters:
+    - { key: thug, name: "Thug", cr: 0.5 }
+    - { key: veteran-thug, name: "Veteran Thug", cr: 2 }
+    - { key: elite-thug, name: "Elite Thug", cr: 4 }
+    - { key: brawler, name: "Brawler", cr: 1 }
+    - { key: thug-boss, name: "Thug Boss", cr: 2 }
+    - { key: thug-overboss, name: "Thug Overboss", cr: 4 }
+    - { key: thug-legend, name: "Thug Legend", cr: 8, legendary: true }
+  environments:
+    - { development: urban, affinity: common }
+    - { development: countryside, affinity: uncommon }
+    - { terrain: plain, affinity: uncommon }
+    - { terrain: hill, affinity: rare }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: ['Common']
+  creature_class: Thug
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Leader
+    additional: ['Bruiser']
+  abilities:
+    STR: Primary
+    DEX: Medium
+    INT: Default
+    WIS: Default
+    CHA: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+thug:
+  <<: *common
+
+veteran-thug:
+  <<: *common
+
+elite-thug:
+  <<: *common
+
+brawler:
+  <<: *common
+
+thug-boss:
+  <<: *common
+
+thug-overboss:
+  <<: *common
+
+thug-legend:
+  <<: *common

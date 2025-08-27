@@ -1,0 +1,36 @@
+template:
+  key: gorgon
+  name: Gorgon
+  monsters:
+    - { key: gorgon, name: "Gorgon", cr: 5 }
+  environments:
+    - { terrain: hill, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Construct
+  size: Large
+  creature_class: Gorgon
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Default
+    CON: Constitution
+    INT: Default
+    WIS: Default
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+gorgon:
+  <<: *common

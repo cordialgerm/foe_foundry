@@ -1,0 +1,37 @@
+template:
+  key: direbunny
+  name: DireBunny
+  monsters:
+    - { key: dire-bunny, name: "Dire Bunny", cr: 1 }
+    - { key: dire-bunny-matriarch, name: "Dire Bunny Matriarch", cr: 3 }
+  environments:
+    - { biome: forest, affinity: native }
+  species: all
+
+common: &common
+  creature_type: Monstrosity
+  size: Large
+  creature_class: Bunny
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Skirmisher
+    additional: []
+  abilities:
+    STR: Default
+    DEX: Primary
+    CON: Constitution
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+dire-bunny:
+  <<: *common
+
+dire-bunny-matriarch:
+  <<: *common

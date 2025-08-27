@@ -1,0 +1,56 @@
+template:
+  key: scout
+  name: Scout
+  monsters:
+    - { key: scout, name: "Scout", cr: 0.5 }
+    - { key: ranger, name: "Ranger", cr: 5 }
+    - { key: scout-captain, name: "Scout Captain", cr: 3 }
+    - { key: first-scout, name: "First Scout", cr: 7, legendary: true }
+  environments:
+    - { region: countryshire, affinity: native }
+    - { region: wartornkingdom, affinity: common }
+    - { region: tangledforest, affinity: native }
+    - { development: frontier, affinity: native }
+    - { biome: forest, affinity: common }
+    - { terrain: hill, affinity: common }
+    - { region: CountryShire, affinity: native }
+    - { region: WartornKingdom, affinity: common }
+    - { region: TangledForest, affinity: native }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: ['Common']
+  creature_class: Scout
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Skirmisher
+    additional: ['Artillery', 'Ambusher']
+  abilities:
+    STR: Default
+    DEX: Primary
+    INT: Default
+    WIS: Medium
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+scout:
+  <<: *common
+
+ranger:
+  <<: *common
+
+scout-captain:
+  <<: *common
+
+first-scout:
+  <<: *common

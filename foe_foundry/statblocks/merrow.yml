@@ -1,0 +1,44 @@
+template:
+  key: merrow
+  name: Merrow
+  monsters:
+    - { key: merrow, name: "Merrow", cr: 2 }
+  environments:
+    - { region: restlesssea, affinity: native }
+    - { region: flowingriver, affinity: common }
+    - { biome: ocean, affinity: native }
+    - { biome: lake, affinity: common }
+    - { biome: river, affinity: common }
+    - { development: settlement, affinity: uncommon }
+    - { development: dungeon, affinity: uncommon }
+    - { region: RestlessSea, affinity: native }
+    - { region: FlowingRiver, affinity: common }
+  species: all
+
+common: &common
+  creature_type: Monstrosity
+  size: Large
+  languages: ['Abyssal', 'Aquan']
+  creature_class: Merrow
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Support
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Medium
+    INT: Default
+    WIS: Default
+    CHA: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+merrow:
+  <<: *common

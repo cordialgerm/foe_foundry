@@ -1,0 +1,64 @@
+template:
+  key: goblin
+  name: Goblin
+  monsters:
+    - { key: goblin-lickspittle, name: "Goblin Lickspittle", cr: 0.125 }
+    - { key: goblin, name: "Goblin", cr: 0.25 }
+    - { key: goblin-brute, name: "Goblin Brute", cr: 0.5 }
+    - { key: goblin-boss, name: "Goblin Boss", cr: 1 }
+    - { key: goblin-warchief, name: "Goblin Warchief", cr: 4 }
+    - { key: goblin-foulhex, name: "Goblin Foulhex", cr: 1 }
+    - { key: goblin-shaman, name: "Goblin Shaman", cr: 2 }
+  environments:
+    - { terrain: hill, affinity: common }
+    - { region: feywood, affinity: common }
+    - { development: frontier, affinity: common }
+    - { region: countryshire, affinity: uncommon }
+    - { region: Feywood, affinity: common }
+    - { region: CountryShire, affinity: uncommon }
+  species: True
+
+common: &common
+  size: Small
+  languages: ['Common', 'Goblin']
+  creature_class: Goblin
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Skirmisher
+    additional: []
+  abilities:
+    STR: Default
+    DEX: Primary
+    INT: Default
+    WIS: Default
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+goblin-lickspittle:
+  <<: *common
+
+goblin:
+  <<: *common
+
+goblin-brute:
+  <<: *common
+
+goblin-boss:
+  <<: *common
+
+goblin-warchief:
+  <<: *common
+
+goblin-foulhex:
+  <<: *common
+
+goblin-shaman:
+  <<: *common

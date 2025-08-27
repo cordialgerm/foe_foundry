@@ -1,0 +1,36 @@
+template:
+  key: gelatinouscube
+  name: GelatinousCube
+  monsters:
+    - { key: gelatinous-cube, name: "Gelatinous Cube", cr: 2 }
+    - { key: ancient-gelatinous-cube, name: "Ancient Gelatinous Cube", cr: 6 }
+  environments:
+  species: all
+
+common: &common
+  creature_type: Ooze
+  size: Huge
+  creature_class: Gelatinous Cube
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Ambusher
+    additional: []
+  abilities:
+    STR: Primary
+    CON: Constitution
+    WIS: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+gelatinous-cube:
+  <<: *common
+
+ancient-gelatinous-cube:
+  <<: *common

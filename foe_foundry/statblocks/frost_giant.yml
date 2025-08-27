@@ -1,0 +1,55 @@
+template:
+  key: frostgiant
+  name: FrostGiant
+  monsters:
+    - { key: frost-giant-reaver, name: "Frost Giant Reaver", cr: 8 }
+    - { key: frost-giant-challenger, name: "Frost Giant Challenger", cr: 10 }
+    - { key: frost-giant-rimepriest, name: "Frost Giant Rimepriest", cr: 12 }
+    - { key: frost-giant-thane, name: "Frost Giant Thane", cr: 16, legendary: true }
+  environments:
+    - { region: frozenwastes, affinity: native }
+    - { region: loftymountains, affinity: common }
+    - { biome: arctic, affinity: native }
+    - { region: restlesssea, affinity: uncommon }
+    - { region: FrozenWastes, affinity: native }
+    - { region: LoftyMountains, affinity: common }
+    - { region: RestlessSea, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Giant
+  size: Huge
+  languages: ['Common', 'Giant']
+  creature_class: Frost Giant
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Default
+    CON: Constitution
+    INT: Default
+    WIS: Default
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+frost-giant-reaver:
+  <<: *common
+
+frost-giant-challenger:
+  <<: *common
+
+frost-giant-rimepriest:
+  <<: *common
+
+frost-giant-thane:
+  <<: *common

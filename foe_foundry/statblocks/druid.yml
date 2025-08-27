@@ -1,0 +1,50 @@
+template:
+  key: druid
+  name: Druid
+  monsters:
+    - { key: druid, name: "Druid", cr: 2 }
+    - { key: druid-greenwarden, name: "Druid Greenwarden", cr: 6 }
+    - { key: archdruid-of-the-old-way, name: "Archdruid of the Old Way", cr: 12 }
+    - { key: archdruid-of-the-first-grove, name: "Archdruid of the First Grove", cr: 16, legendary: true }
+  environments:
+    - { development: frontier, affinity: common }
+    - { biome: swamp, affinity: uncommon }
+    - { development: ruin, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: ['Common', 'Druidic', 'Sylvan']
+  creature_class: Druid
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Support
+    additional: []
+  abilities:
+    STR: Default
+    DEX: Medium
+    INT: Default
+    WIS: Primary
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+druid:
+  <<: *common
+
+druid-greenwarden:
+  <<: *common
+
+archdruid-of-the-old-way:
+  <<: *common
+
+archdruid-of-the-first-grove:
+  <<: *common

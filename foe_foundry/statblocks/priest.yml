@@ -1,0 +1,57 @@
+template:
+  key: priest
+  name: Priest
+  monsters:
+    - { key: acolyte, name: "Acolyte", cr: 0.25 }
+    - { key: priest, name: "Priest", cr: 2 }
+    - { key: priest-anointed-one, name: "Priest Anointed One", cr: 5 }
+    - { key: archpriest, name: "Archpriest", cr: 12 }
+    - { key: archpriest-living-saint, name: "Archpriest Living Saint", cr: 16, legendary: true }
+  environments:
+    - { region: urbantownship, affinity: native }
+    - { region: countryshire, affinity: common }
+    - { development: urban, affinity: uncommon }
+    - { development: wilderness, affinity: rare }
+    - { region: UrbanTownship, affinity: native }
+    - { region: CountryShire, affinity: common }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: ['Common']
+  creature_class: Priest
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Support
+    additional: []
+  abilities:
+    STR: Medium
+    DEX: Default
+    INT: Default
+    WIS: Primary
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+acolyte:
+  <<: *common
+
+priest:
+  <<: *common
+
+priest-anointed-one:
+  <<: *common
+
+archpriest:
+  <<: *common
+
+archpriest-living-saint:
+  <<: *common

@@ -1,0 +1,52 @@
+template:
+  key: bandit
+  name: Bandit
+  monsters:
+    - { key: bandit, name: "Bandit", cr: 0.125 }
+    - { key: bandit-veteran, name: "Bandit Veteran", cr: 1 }
+    - { key: bandit-captain, name: "Bandit Captain", cr: 2 }
+    - { key: bandit-crime-lord, name: "Bandit Crime Lord", cr: 11, legendary: true }
+  environments:
+    - { development: frontier, affinity: native }
+    - { region: countryshire, affinity: common }
+    - { development: ruin, affinity: uncommon }
+    - { development: settlement, affinity: rare }
+    - { region: CountryShire, affinity: common }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: ['Common']
+  creature_class: Bandit
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Leader
+    additional: ['Ambusher', 'Artillery']
+  abilities:
+    STR: Medium
+    DEX: Primary
+    INT: Medium
+    WIS: Default
+    CHA: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+bandit:
+  <<: *common
+
+bandit-veteran:
+  <<: *common
+
+bandit-captain:
+  <<: *common
+
+bandit-crime-lord:
+  <<: *common

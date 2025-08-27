@@ -1,0 +1,44 @@
+template:
+  key: mimic
+  name: Mimic
+  monsters:
+    - { key: mimic, name: "Mimic", cr: 2 }
+    - { key: greater-mimic, name: "Greater Mimic", cr: 4 }
+    - { key: vault-mimic, name: "Vault Mimic", cr: 8 }
+  environments:
+    - { biome: underground, affinity: common }
+    - { development: wilderness, affinity: rare }
+  species: all
+
+common: &common
+  creature_type: Monstrosity
+  size: Huge
+  creature_class: Mimic
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Ambusher
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Default
+    INT: Default
+    WIS: Medium
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+mimic:
+  <<: *common
+
+greater-mimic:
+  <<: *common
+
+vault-mimic:
+  <<: *common

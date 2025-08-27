@@ -1,0 +1,54 @@
+template:
+  key: wolf
+  name: Wolf
+  monsters:
+    - { key: wolf, name: "Wolf", cr: 0.125 }
+    - { key: dire-wolf, name: "Dire Wolf", cr: 1 }
+    - { key: winter-wolf, name: "Winter Wolf", cr: 3 }
+    - { key: fellwinter-packlord, name: "Fellwinter Packlord", cr: 6, legendary: true }
+  environments:
+    - { region: tangledforest, affinity: native }
+    - { development: wilderness, affinity: native }
+    - { region: countryshire, affinity: common }
+    - { biome: forest, affinity: common }
+    - { region: feywood, affinity: uncommon }
+    - { development: countryside, affinity: rare }
+    - { region: TangledForest, affinity: native }
+    - { region: CountryShire, affinity: common }
+    - { region: Feywood, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Beast
+  size: Medium
+  creature_class: Wolf
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: []
+  abilities:
+    STR: Primary
+    CON: Constitution
+    INT: Default
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+wolf:
+  <<: *common
+
+dire-wolf:
+  <<: *common
+
+winter-wolf:
+  <<: *common
+
+fellwinter-packlord:
+  <<: *common

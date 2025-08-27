@@ -1,0 +1,42 @@
+template:
+  key: simulacrum
+  name: Simulacrum
+  monsters:
+    - { key: simulacrum, name: "Simulacrum", cr: 9 }
+    - { key: mastercraft-simulacrum, name: "Mastercraft Simulacrum", cr: 12 }
+    - { key: simulacrum-mirrorblade, name: "Simulacrum Mirrorblade", cr: 7 }
+  environments:
+  species: all
+
+common: &common
+  size: Medium
+  languages: ['Common']
+  creature_class: Simulacrum
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Skirmisher
+    additional: []
+  abilities:
+    STR: Default
+    DEX: Default
+    INT: Primary
+    WIS: Medium
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+simulacrum:
+  <<: *common
+
+mastercraft-simulacrum:
+  <<: *common
+
+simulacrum-mirrorblade:
+  <<: *common

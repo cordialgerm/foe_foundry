@@ -1,0 +1,58 @@
+template:
+  key: spirit
+  name: Spirit
+  monsters:
+    - { key: shadow, name: "Shadow", cr: 0.5 }
+    - { key: specter, name: "Specter", cr: 1 }
+    - { key: banshee, name: "Banshee", cr: 4 }
+    - { key: ghost, name: "Ghost", cr: 4 }
+    - { key: revenant, name: "Revenant", cr: 5 }
+    - { key: wraith, name: "Wraith", cr: 5 }
+    - { key: wraith-shadelord, name: "Wraith Shadelord", cr: 8, legendary: true }
+  environments:
+    - { extraplanarinfluence: deathly, affinity: native }
+    - { extraplanarinfluence: astral, affinity: common }
+    - { development: ruin, affinity: native }
+    - { development: countryside, affinity: common }
+    - { biome: underground, affinity: common }
+  species: all
+
+common: &common
+  creature_type: Undead
+  size: Medium
+  languages: ['Telepathy 60 ft.']
+  creature_class: Shadow
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Ambusher
+    additional: []
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+shadow:
+  <<: *common
+
+specter:
+  <<: *common
+
+banshee:
+  <<: *common
+
+ghost:
+  <<: *common
+
+revenant:
+  <<: *common
+
+wraith:
+  <<: *common
+
+wraith-shadelord:
+  <<: *common

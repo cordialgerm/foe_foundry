@@ -1,0 +1,57 @@
+template:
+  key: ogre
+  name: Ogre
+  monsters:
+    - { key: ogre, name: "Ogre", cr: 2 }
+    - { key: ogre-wallsmasha, name: "Ogre Wallsmasha", cr: 4 }
+    - { key: ogre-burnbelcha, name: "Ogre Burnbelcha", cr: 4 }
+    - { key: ogre-chaincrakka, name: "Ogre Chaincrakka", cr: 4 }
+    - { key: ogre-big-brainz, name: "Ogre Big Brainz", cr: 7 }
+  environments:
+    - { terrain: hill, affinity: native }
+    - { biome: underground, affinity: native }
+    - { development: wilderness, affinity: common }
+    - { development: frontier, affinity: common }
+    - { biome: forest, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Giant
+  size: Large
+  languages: ['Common']
+  creature_class: Ogre
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Default
+    CON: Constitution
+    INT: Primary
+    WIS: Medium
+    CHA: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+ogre:
+  <<: *common
+
+ogre-wallsmasha:
+  <<: *common
+
+ogre-burnbelcha:
+  <<: *common
+
+ogre-chaincrakka:
+  <<: *common
+
+ogre-big-brainz:
+  <<: *common

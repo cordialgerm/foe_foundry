@@ -1,0 +1,42 @@
+template:
+  key: balor
+  name: Balor
+  monsters:
+    - { key: balor, name: "Balor", cr: 19 }
+    - { key: balor-dreadlord, name: "Balor Dreadlord", cr: 23, legendary: true }
+  environments:
+    - { biome: extraplanar, affinity: native }
+    - { region: hauntedlands, affinity: uncommon }
+    - { region: HauntedLands, affinity: uncommon }
+  species: all
+
+common: &common
+  creature_type: Fiend
+  size: Huge
+  languages: ['Abyssal; telepathy 120 ft.']
+  creature_class: Balor
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: ['Soldier', 'Leader']
+  abilities:
+    STR: Primary
+    DEX: Medium
+    INT: Medium
+    WIS: Medium
+    CHA: Medium
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+balor:
+  <<: *common
+
+balor-dreadlord:
+  <<: *common

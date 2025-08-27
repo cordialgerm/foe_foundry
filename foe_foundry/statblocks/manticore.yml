@@ -1,0 +1,44 @@
+template:
+  key: manticore
+  name: Manticore
+  monsters:
+    - { key: manticore, name: "Manticore", cr: 3 }
+    - { key: manticore-ravager, name: "Manticore Ravager", cr: 6 }
+  environments:
+    - { terrain: mountain, affinity: native }
+    - { development: ruin, affinity: common }
+    - { biome: desert, affinity: uncommon }
+    - { development: frontier, affinity: rare }
+  species: all
+
+common: &common
+  creature_type: Monstrosity
+  size: Large
+  languages: ['Common']
+  creature_class: Manticore
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Artillery
+    additional: []
+  abilities:
+    STR: Primary
+    DEX: Medium
+    CON: Constitution
+    INT: Default
+    WIS: Medium
+    CHA: Default
+  attacks:
+    main:
+      base: TBD
+      damage_multiplier: 1.0
+  skills:
+    proficiency: []
+    expertise: []
+  saves: []
+
+manticore:
+  <<: *common
+
+manticore-ravager:
+  <<: *common
