@@ -28,6 +28,7 @@
         <div id="googleSignIn"></div>
         <p>or</p>
         <button class="secondary-btn" onclick="loginWithPatreon()">Sign in with Patreon</button>
+        <button class="secondary-btn" onclick="loginWithDiscord()" style="background: #5865f2;">Sign in with Discord</button>
         <button class="danger-btn" onclick="logout()" id="logoutBtn" style="display: none;">Logout</button>
     </div>
 
@@ -128,6 +129,10 @@
 
         function loginWithPatreon() {
             window.location.href = '/auth/patreon';
+        }
+
+        function loginWithDiscord() {
+            window.location.href = '/auth/discord';
         }
 
         async function logout() {

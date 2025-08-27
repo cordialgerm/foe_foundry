@@ -53,6 +53,24 @@ def test_patreon_login_redirect():
     assert "patreon.com" in response.headers["location"]
 
 
+@patch('foe_foundry_site.auth.routes.DISCORD_CLIENT_ID', 'test_client_id')
+@patch('foe_foundry_site.auth.routes.DISCORD_REDIRECT_URI', 'http://test.example.com/callback')
+def test_discord_login_redirect():
+    """Test that Discord login redirects properly."""
+    response = client.get("/auth/discord", follow_redirects=False)
+    # Should redirect to Discord OAuth (302 or 307 are both valid redirect codes)
+    assert response.status_code in [302, 307]
+    assert "discord.com" in response.headers["location"]
+
+
+def test_discord_auth_not_configured():
+    """Test Discord auth returns 500 when not configured."""
+    response = client.get("/auth/discord")
+    assert response.status_code == 500
+    data = response.json()
+    assert "discord oauth not configured" in data["detail"].lower()
+
+
 def test_logout():
     """Test logout functionality."""
     response = client.post("/auth/logout")
@@ -73,3 +91,7 @@ def test_demo_page_loads():
     assert response.status_code == 200
     assert "html" in response.headers["content-type"]
     assert "Foe Foundry" in response.text
+    # Check that all three auth options are present
+    assert "Sign in with Patreon" in response.text
+    assert "Sign in with Discord" in response.text
+    assert "Google" in response.text

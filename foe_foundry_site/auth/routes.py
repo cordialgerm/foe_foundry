@@ -15,6 +15,9 @@ from sqlmodel import select
 
 from .dependencies import (
     AuthContextDep,
+    DISCORD_CLIENT_ID,
+    DISCORD_CLIENT_SECRET,
+    DISCORD_REDIRECT_URI,
     GOOGLE_CLIENT_ID,
     PATREON_CLIENT_ID,
     PATREON_CLIENT_SECRET,
@@ -232,6 +235,120 @@ async def patreon_callback(
     }
     
     log.info(f"Patreon login successful for user {user.email} with tier {patron_tier}")
+    
+    # Redirect to a success page or homepage
+    return RedirectResponse("/", status_code=302)
+
+
+@router.get("/discord")
+def login_discord():
+    """Redirect to Discord OAuth authorization."""
+    if not DISCORD_CLIENT_ID or not DISCORD_REDIRECT_URI:
+        raise HTTPException(status_code=500, detail="Discord OAuth not configured")
+    
+    url = (
+        f"https://discord.com/api/oauth2/authorize?response_type=code"
+        f"&client_id={DISCORD_CLIENT_ID}&redirect_uri={DISCORD_REDIRECT_URI}"
+        f"&scope=identify%20email"
+    )
+    return RedirectResponse(url)
+
+
+@router.get("/discord/callback")
+async def discord_callback(
+    request: Request,
+    code: str = Query(...),
+    session: SessionDep = None,
+):
+    """Handle Discord OAuth callback."""
+    if not DISCORD_CLIENT_ID or not DISCORD_CLIENT_SECRET:
+        raise HTTPException(status_code=500, detail="Discord OAuth not configured")
+    
+    # Exchange code for access token
+    token_data = {
+        "grant_type": "authorization_code",
+        "code": code,
+        "redirect_uri": DISCORD_REDIRECT_URI,
+    }
+    
+    async with httpx.AsyncClient() as client:
+        try:
+            token_resp = await client.post(
+                "https://discord.com/api/oauth2/token",
+                data=token_data,
+                auth=(DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET),
+                headers={"Content-Type": "application/x-www-form-urlencoded"}
+            )
+            token_json = token_resp.json()
+            access_token = token_json.get("access_token")
+            
+            if not access_token:
+                log.error(f"Discord token exchange failed: {token_json}")
+                raise HTTPException(status_code=400, detail="Discord OAuth failed")
+            
+            # Get user identity
+            headers = {"Authorization": f"Bearer {access_token}"}
+            user_resp = await client.get(
+                "https://discord.com/api/users/@me",
+                headers=headers
+            )
+            user_data = user_resp.json()
+            
+        except Exception as e:
+            log.error(f"Discord API error: {e}")
+            raise HTTPException(status_code=400, detail="Failed to fetch Discord data")
+    
+    # Extract user information
+    email = user_data.get("email")
+    username = user_data.get("username")
+    discriminator = user_data.get("discriminator")
+    discord_id = user_data.get("id")
+    avatar_hash = user_data.get("avatar")
+    
+    if not email:
+        raise HTTPException(status_code=400, detail="Email not provided by Discord")
+    
+    # Build display name and profile picture
+    display_name = f"{username}#{discriminator}" if discriminator and discriminator != "0" else username
+    profile_picture = None
+    if avatar_hash:
+        profile_picture = f"https://cdn.discordapp.com/avatars/{discord_id}/{avatar_hash}.png"
+    
+    # Check if user exists
+    statement = select(User).where(User.email == email)
+    user = session.exec(statement).first()
+    
+    if not user:
+        # Create new user with Discord data
+        user = User(
+            email=email,
+            display_name=display_name,
+            profile_picture=profile_picture,
+            discord_id=discord_id,
+            account_type=AccountType.DISCORD,
+        )
+        session.add(user)
+    else:
+        # Update existing user with Discord data
+        user.display_name = display_name or user.display_name
+        user.profile_picture = profile_picture or user.profile_picture
+        user.discord_id = discord_id
+        user.updated_at = datetime.now(timezone.utc)
+    
+    # Reset credits if needed
+    user.reset_credits_if_needed()
+    session.commit()
+    session.refresh(user)
+    
+    # Set session
+    request.session["user"] = {
+        "id": user.id,
+        "email": user.email,
+        "display_name": user.display_name,
+        "tier": user.patron_tier.value,
+    }
+    
+    log.info(f"Discord login successful for user {user.email}")
     
     # Redirect to a success page or homepage
     return RedirectResponse("/", status_code=302)

@@ -18,6 +18,9 @@ GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
 PATREON_CLIENT_ID = os.getenv("PATREON_CLIENT_ID")
 PATREON_CLIENT_SECRET = os.getenv("PATREON_CLIENT_SECRET")
 PATREON_REDIRECT_URI = os.getenv("PATREON_REDIRECT_URI", "http://127.0.0.1:8080/auth/patreon/callback")
+DISCORD_CLIENT_ID = os.getenv("DISCORD_CLIENT_ID")
+DISCORD_CLIENT_SECRET = os.getenv("DISCORD_CLIENT_SECRET")
+DISCORD_REDIRECT_URI = os.getenv("DISCORD_REDIRECT_URI", "http://127.0.0.1:8080/auth/discord/callback")
 SESSION_SECRET = os.getenv("SESSION_SECRET", "supersecret-change-in-production")
 
 

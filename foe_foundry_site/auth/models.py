@@ -45,6 +45,7 @@ class User(SQLModel, table=True):
     # OAuth provider IDs
     google_id: Optional[str] = Field(default=None, index=True)
     patreon_id: Optional[str] = Field(default=None, index=True)
+    discord_id: Optional[str] = Field(default=None, index=True)
     
     # Account metadata
     account_type: AccountType = Field(default=AccountType.GOOGLE)
