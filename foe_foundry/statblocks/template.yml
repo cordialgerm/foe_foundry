@@ -1,0 +1,101 @@
+template:
+  key: berserker
+  name: Berserker
+  monsters:
+    - { key: berserker, name: "Berserker", cr: 2 }
+    - { key: berserker_veteran, name: "Berserker Veteran", cr: 4 }
+    - { key: berserker_commander, name: "Berserker Commander", cr: 8 }
+    - {
+        key: berserker_legend,
+        name: "Berserker Legend",
+        cr: 12,
+        legendary: true,
+      }
+  environments:
+    - { development: wilderness, affinity: native }
+    - { development: frontier, affinity: native }
+    - { biome: arctic, affinity: common }
+    - { terrain: mountains, affinity: common }
+    - { development: countryside, affinity: common }
+    - { region: WartornKingdom, affinity: common }
+    - { development: settlement, affinity: uncommon }
+    - { region: UrbanTownship, affinity: rare }
+  species: all
+
+common: &common
+  creature_type: Humanoid
+  size: Medium
+  languages: [Common]
+  creature_class: Berserker
+  hp_multiplier: 1.0
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: [Soldier]
+  abilities:
+    STR: Primary
+    DEX: [Medium, 2]
+    CON: [Constitution, 2]
+    INT: [Default, -1]
+    WIS: Default
+    CHA: [Default, -1]
+  ac_templates:
+    - BerserkersDefense
+  immunities:
+    conditions: [Frightened]
+  attacks:
+    main:
+      base: Greataxe
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+  skills:
+    proficiency: [Athletics]
+    expertise: null
+  saves: []
+
+berserker:
+  <<: *common
+
+berserker-veteran:
+  <<: *common
+  attacks:
+    main:
+      base: Greataxe
+      display_name: Primal Greataxe
+      damage_multiplier: 1.0
+      secondary_damage_type: ["Fire", "Cold", "Lightning", "Acid", "Poison"]
+  skills:
+    proficiency: [Athletics, Perception]
+  saves: [STR]
+
+berserker-commander:
+  <<: *common
+  roles:
+    primary: Bruiser
+    additional: [Leader]
+  attacks:
+    main:
+      base: Greataxe
+      display_name: Primal Greataxe
+      damage_multiplier: 1.0
+      secondary_damage_type: ["Fire", "Cold", "Lightning", "Acid", "Poison"]
+  skills:
+    proficiency: [Athletics, Perception, Initiative]
+  saves: [STR, CON]
+
+berserker-legend:
+  <<: *common
+  roles:
+    primary: Bruiser
+    additional: [Leader]
+  attacks:
+    main:
+      base: Greataxe
+      display_name: Primal Greataxe
+      damage_multiplier: 1.0
+      secondary_damage_type: ["Fire", "Cold", "Lightning", "Acid", "Poison"]
+  skills:
+    proficiency: [Athletics, Perception, Initiative]
+  immunities:
+    conditions: [Frightened, Charmed]
+  saves: [STR, CON]
