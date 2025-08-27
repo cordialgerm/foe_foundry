@@ -100,10 +100,38 @@ class _MonsterCache:
         if not json_files:
             return False
         
-        # Check if cache files exist and are reasonably recent
-        # In a real implementation, you might check against source file timestamps
-        # For now, we'll assume cache is fresh if it exists and has files
-        return len(json_files) > 0
+        # Get the oldest cache file timestamp
+        cache_timestamps = [f.stat().st_mtime for f in json_files]
+        oldest_cache_time = min(cache_timestamps)
+        
+        # Check if any source files are newer than the cache
+        import os
+        from pathlib import Path
+        
+        # Check foe_foundry source files
+        source_dirs = [
+            Path("foe_foundry"),
+            Path("foe_foundry_data"), 
+            Path("data")
+        ]
+        
+        for source_dir in source_dirs:
+            if source_dir.exists():
+                for source_file in source_dir.rglob("*.py"):
+                    if source_file.stat().st_mtime > oldest_cache_time:
+                        return False
+                # Also check data files
+                for data_file in source_dir.rglob("*.json"):
+                    if data_file.stat().st_mtime > oldest_cache_time:
+                        return False
+                for data_file in source_dir.rglob("*.yml"):
+                    if data_file.stat().st_mtime > oldest_cache_time:
+                        return False
+                for data_file in source_dir.rglob("*.yaml"):
+                    if data_file.stat().st_mtime > oldest_cache_time:
+                        return False
+        
+        return True
 
     def generate_cache(self) -> None:
         """Generate and save monster cache to disk. Called during build time."""

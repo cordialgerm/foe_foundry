@@ -21,15 +21,15 @@ export PORT=${PORT:-8080}
 export NODE_ENV=${NODE_ENV:-development}
 echo "NODE_ENV is set to: $NODE_ENV"
 
-# Check for --fast, --optimized, and --help flags
+# Check for --fast and --help flags
 FAST_BUILD=false
-OPTIMIZED_BUILD=false
 SHOW_HELP=false
 for arg in "$@"; do
     if [ "$arg" = "--fast" ]; then
         FAST_BUILD=true
     elif [ "$arg" = "--optimized" ]; then
-        OPTIMIZED_BUILD=true
+        # --optimized is now an alias for --fast for backward compatibility
+        FAST_BUILD=true
     elif [ "$arg" = "--help" ] || [ "$arg" = "-h" ]; then
         SHOW_HELP=true
     fi
@@ -41,30 +41,23 @@ if [ "$SHOW_HELP" = true ]; then
     echo "Usage: $0 [OPTIONS]"
     echo ""
     echo "Options:"
-    echo "  --fast       Fast build mode (skips data generation, MkDocs, uses file copying)"
-    echo "  --optimized  Optimized build mode (skips page generation, uses cache intelligently)"
+    echo "  --fast       Fast build mode with smart caching (skips data generation when fresh,"
+    echo "               skips page generation, uses file copying for development)"
+    echo "  --optimized  Alias for --fast (deprecated, use --fast instead)"
     echo "  --run        Run the site after building"
     echo "  --help, -h   Show this help message"
     echo ""
     echo "Build Mode Performance Comparison:"
     echo "  Full build (no flags):     ~145s (complete regeneration)"
-    echo "  --optimized build:         ~66s  (smart caching, 54% faster)"
     echo "  --fast build:              ~4s   (development mode, 97% faster)"
     echo ""
-    echo "Use --optimized for CI/CD and production builds when cache exists."
-    echo "Use --fast for local development and iteration."
+    echo "Use --fast for local development, iteration, and CI/CD builds with caching."
     exit 0
 fi
 
-# If --fast is set, set optimization flags
+# If --fast is set, set optimization flags for smart caching
 if [ "$FAST_BUILD" = true ]; then
     export SKIP_INDEX_INIT=1
-    export SKIP_PAGE_GENERATION=true
-    export SKIP_INDEX_REBUILD=true
-fi
-
-# If --optimized is set, set performance optimization flags
-if [ "$OPTIMIZED_BUILD" = true ]; then
     export SKIP_PAGE_GENERATION=true
     export SKIP_INDEX_REBUILD=true
     export SKIP_MONSTER_CACHE_GENERATION=true
@@ -84,8 +77,8 @@ fi
 # Build the static content unless --fast is present
 if [ "$FAST_BUILD" = false ]; then
     echo "Building the static site with MkDocs..."
-    if [ "$OPTIMIZED_BUILD" = true ]; then
-        echo "Running optimized MkDocs build (skipping dynamic page generation)..."
+    if [ "$FAST_BUILD" = true ]; then
+        echo "Running fast MkDocs build (skipping dynamic page generation)..."
     fi
     poetry run mkdocs build --clean
     echo "MkDocs build completed successfully."
