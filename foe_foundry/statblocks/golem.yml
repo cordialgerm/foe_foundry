@@ -2,52 +2,54 @@ template:
   key: golem
   name: Golem
   monsters:
-    - { key: stone-golem, name: "Stone Golem", cr: 10 }
-    - { key: clay-golem, name: "Clay Golem", cr: 9 }
-    - { key: iron-golem, name: "Iron Golem", cr: 16 }
-    - { key: flesh-golem, name: "Flesh Golem", cr: 5 }
-    - { key: ice-golem, name: "Ice Golem", cr: 7 }
-    - { key: shield-guardian, name: "Shield Guardian", cr: 7 }
-  environments:
-  species: all
-
+  - key: stone-golem
+    name: Stone Golem
+    cr: 10
+  - key: clay-golem
+    name: Clay Golem
+    cr: 9
+  - key: iron-golem
+    name: Iron Golem
+    cr: 16
+  - key: flesh-golem
+    name: Flesh Golem
+    cr: 5
+  - key: ice-golem
+    name: Ice Golem
+    cr: 7
+  - key: shield-guardian
+    name: Shield Guardian
+    cr: 7
+  environments: []
+  species: null
 common: &common
   creature_type: Construct
   size: Large
-  languages: ['Understands commands given in any language but can']
+  languages:
+  - Understands commands given in any language but can't speak
   creature_class: Golem
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Defender
-    additional: ['Soldier']
-  abilities:
-    STR: Primary
-    CON: Constitution
-    WIS: Default
+    primary: null
+    additional: []
+  abilities: {}
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
   saves: []
-
-stone-golem:
-  <<: *common
-
-clay-golem:
-  <<: *common
-
-iron-golem:
-  <<: *common
-
-flesh-golem:
-  <<: *common
-
-ice-golem:
-  <<: *common
-
-shield-guardian:
-  <<: *common
+stone-golem: !!set
+  '<<: *common': null
+clay-golem: !!set
+  '<<: *common': null
+iron-golem: !!set
+  '<<: *common': null
+flesh-golem: !!set
+  '<<: *common': null
+ice-golem: !!set
+  '<<: *common': null
+shield-guardian: !!set
+  '<<: *common': null

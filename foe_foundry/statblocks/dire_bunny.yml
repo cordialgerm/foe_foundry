@@ -1,37 +1,40 @@
 template:
-  key: direbunny
-  name: DireBunny
+  key: dire-bunny
+  name: Dire Bunny
   monsters:
-    - { key: dire-bunny, name: "Dire Bunny", cr: 1 }
-    - { key: dire-bunny-matriarch, name: "Dire Bunny Matriarch", cr: 3 }
-  environments:
-    - { biome: forest, affinity: native }
-  species: all
-
+  - key: dire-bunny
+    name: Dire Bunny
+    cr: 1
+  - key: dire-bunny-matriarch
+    name: Dire Bunny Matriarch
+    cr: 3
+  environments: []
+  species: null
 common: &common
   creature_type: Monstrosity
   size: Large
+  languages: []
   creature_class: Bunny
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
     primary: Skirmisher
     additional: []
-  abilities:
-    STR: Default
-    DEX: Primary
-    CON: Constitution
+  abilities: {}
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: Poison
   skills:
-    proficiency: []
+    proficiency:
+    - Perception
+    - Stealth
+    - Initiative
+    - Initiative
+    - Perception
     expertise: []
-  saves: []
-
-dire-bunny:
-  <<: *common
-
-dire-bunny-matriarch:
-  <<: *common
+  saves:
+  - WIS
+dire-bunny: !!set
+  '<<: *common': null
+dire-bunny-matriarch: !!set
+  '<<: *common': null

@@ -2,41 +2,38 @@ template:
   key: vrock
   name: Vrock
   monsters:
-    - { key: vrock, name: "Vrock", cr: 6 }
-  environments:
-    - { extraplanarinfluence: deathly, affinity: uncommon }
-    - { development: ruin, affinity: common }
-    - { development: dungeon, affinity: uncommon }
-    - { development: stronghold, affinity: rare }
-    - { terrain: mountain, affinity: uncommon }
-    - { terrain: plain, affinity: rare }
-  species: all
-
+  - key: vrock
+    name: Vrock
+    cr: 6
+  environments: []
+  species: null
 common: &common
   creature_type: Fiend
   size: Large
-  languages: ['Abyssal; telepathy 120 ft.']
+  languages:
+  - Abyssal; telepathy 120 ft.
   creature_class: Vrock
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Skirmisher
-    additional: ['Controller']
+    primary: null
+    additional: []
   abilities:
     STR: Primary
-    DEX: Medium
-    CON: Constitution
+    DEX: Default
+    CON: Default
     INT: Default
     WIS: Default
     CHA: Default
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: Poison
   skills:
     proficiency: []
     expertise: []
-  saves: []
-
-vrock:
-  <<: *common
+  saves:
+  - DEX
+  - CHA
+  - WIS
+vrock: !!set
+  '<<: *common': null

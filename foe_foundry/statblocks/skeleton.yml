@@ -2,29 +2,36 @@ template:
   key: skeleton
   name: Skeleton
   monsters:
-    - { key: skeleton, name: "Skeleton", cr: 0.25 }
-    - { key: skeletal-grave-guard, name: "Skeletal Grave Guard", cr: 4 }
-    - { key: burning-skeleton, name: "Burning Skeleton", cr: 3 }
-    - { key: burning-skeletal-champion, name: "Burning Skeletal Champion", cr: 6 }
-    - { key: freezing-skeleton, name: "Freezing Skeleton", cr: 3 }
-    - { key: freezing-skeletal-champion, name: "Freezing Skeletal Champion", cr: 6 }
-  environments:
-    - { development: ruin, affinity: native }
-    - { region: blastedbadlands, affinity: common }
-    - { development: wilderness, affinity: uncommon }
-    - { development: settlement, affinity: rare }
-    - { region: BlastedBadlands, affinity: common }
-  species: all
-
+  - key: skeleton
+    name: Skeleton
+    cr: null
+  - key: skeletal-grave-guard
+    name: Skeletal Grave Guard
+    cr: 4
+  - key: burning-skeleton
+    name: Burning Skeleton
+    cr: 3
+  - key: burning-skeletal-champion
+    name: Burning Skeletal Champion
+    cr: 6
+  - key: freezing-skeleton
+    name: Freezing Skeleton
+    cr: 3
+  - key: freezing-skeletal-champion
+    name: Freezing Skeletal Champion
+    cr: 6
+  environments: []
+  species: null
 common: &common
   creature_type: Undead
   size: Medium
-  languages: ['Common']
+  languages:
+  - Common
   creature_class: Skeleton
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: null
     additional: []
   abilities:
     STR: Default
@@ -34,27 +41,23 @@ common: &common
     CHA: Default
   attacks:
     main:
-      base: TBD
+      base: Daggers
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
-  saves: []
-
-skeleton:
-  <<: *common
-
-skeletal-grave-guard:
-  <<: *common
-
-burning-skeleton:
-  <<: *common
-
-burning-skeletal-champion:
-  <<: *common
-
-freezing-skeleton:
-  <<: *common
-
-freezing-skeletal-champion:
-  <<: *common
+  saves:
+  - CON
+skeleton: !!set
+  '<<: *common': null
+skeletal-grave-guard: !!set
+  '<<: *common': null
+burning-skeleton: !!set
+  '<<: *common': null
+burning-skeletal-champion: !!set
+  '<<: *common': null
+freezing-skeleton: !!set
+  '<<: *common': null
+freezing-skeletal-champion: !!set
+  '<<: *common': null

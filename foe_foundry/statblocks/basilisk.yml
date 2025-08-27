@@ -2,42 +2,41 @@ template:
   key: basilisk
   name: Basilisk
   monsters:
-    - { key: basilisk, name: "Basilisk", cr: 3 }
-    - { key: basilisk-broodmother, name: "Basilisk Broodmother", cr: 8 }
-  environments:
-    - { development: wilderness, affinity: common }
-    - { development: ruin, affinity: common }
-    - { region: blastedbadlands, affinity: uncommon }
-    - { development: frontier, affinity: uncommon }
-    - { region: BlastedBadlands, affinity: uncommon }
-  species: all
-
+  - key: basilisk
+    name: Basilisk
+    cr: 3
+  - key: basilisk-broodmother
+    name: Basilisk Broodmother
+    cr: 8
+  environments: []
+  species: null
 common: &common
   creature_type: Monstrosity
   size: Medium
+  languages: []
   creature_class: Basilisk
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Bruiser
+    primary: null
     additional: []
   abilities:
     STR: Primary
     DEX: Default
     INT: Default
-    WIS: Medium
+    WIS: Default
     CHA: Default
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: Poison
   skills:
     proficiency: []
     expertise: []
-  saves: []
-
-basilisk:
-  <<: *common
-
-basilisk-broodmother:
-  <<: *common
+  saves:
+  - CON
+  - STR
+  - WIS
+basilisk: !!set
+  '<<: *common': null
+basilisk-broodmother: !!set
+  '<<: *common': null

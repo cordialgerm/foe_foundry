@@ -2,59 +2,63 @@ template:
   key: zombie
   name: Zombie
   monsters:
-    - { key: zombie, name: "Zombie", cr: 0.25 }
-    - { key: zombie-brute, name: "Zombie Brute", cr: 1 }
-    - { key: zombie-gravewalker, name: "Zombie Gravewalker", cr: 3 }
-    - { key: zombie-ogre, name: "Zombie Ogre", cr: 2 }
-    - { key: zombie-giant, name: "Zombie Giant", cr: 8 }
-    - { key: zombie-titan, name: "Zombie Titan", cr: 12, legendary: true }
-  environments:
-    - { development: dungeon, affinity: common }
-    - { biome: underground, affinity: common }
-    - { development: wilderness, affinity: uncommon }
-    - { development: settlement, affinity: rare }
-  species: all
-
+  - key: zombie
+    name: Zombie
+    cr: null
+  - key: zombie-brute
+    name: Zombie Brute
+    cr: 1
+  - key: zombie-gravewalker
+    name: Zombie Gravewalker
+    cr: 3
+  - key: zombie-ogre
+    name: Zombie Ogre
+    cr: 2
+  - key: zombie-giant
+    name: Zombie Giant
+    cr: 8
+  - key: zombie-titan
+    name: Zombie Titan
+    cr: 12
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Undead
-  size: Huge
-  languages: ['Understands Common but can']
+  size: null
+  languages:
+  - Understands Common but can't speak
   creature_class: Zombie
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Bruiser
+    primary: null
     additional: []
   abilities:
     STR: Primary
     DEX: Default
-    CON: Constitution
+    CON: Default
     INT: Default
     WIS: Default
     CHA: Default
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
-  saves: []
-
-zombie:
-  <<: *common
-
-zombie-brute:
-  <<: *common
-
-zombie-gravewalker:
-  <<: *common
-
-zombie-ogre:
-  <<: *common
-
-zombie-giant:
-  <<: *common
-
-zombie-titan:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+zombie: !!set
+  '<<: *common': null
+zombie-brute: !!set
+  '<<: *common': null
+zombie-gravewalker: !!set
+  '<<: *common': null
+zombie-ogre: !!set
+  '<<: *common': null
+zombie-giant: !!set
+  '<<: *common': null
+zombie-titan: !!set
+  '<<: *common': null

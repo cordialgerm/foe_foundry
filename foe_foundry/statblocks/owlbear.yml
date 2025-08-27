@@ -1,28 +1,30 @@
 template:
-  key: manticore
-  name: Manticore
+  key: owlbear
+  name: Owlbear
   monsters:
-  - key: manticore
-    name: Manticore
+  - key: owlbear
+    name: Owlbear
     cr: 3
-  - key: manticore-ravager
-    name: Manticore Ravager
-    cr: 6
+  - key: savage-owlbear
+    name: Savage Owlbear
+    cr: 7
+  - key: owlbear-cub
+    name: Owlbear Cub
+    cr: null
   environments: []
   species: null
 common: &common
   creature_type: Monstrosity
   size: Large
-  languages:
-  - Common
-  creature_class: Manticore
+  languages: []
+  creature_class: Owlbear
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Bruiser
     additional: []
   abilities:
-    STR: Primary
+    STR: Default
     DEX: Default
     CON: Default
     INT: Default
@@ -33,11 +35,16 @@ common: &common
       secondary_damage_type: null
   skills:
     proficiency:
-    - Intimidation
+    - Perception
+    - Perception
+    - Initiative
     expertise: []
   saves:
+  - CON
   - WIS
-manticore: !!set
+owlbear: !!set
   '<<: *common': null
-manticore-ravager: !!set
+savage-owlbear: !!set
+  '<<: *common': null
+owlbear-cub: !!set
   '<<: *common': null

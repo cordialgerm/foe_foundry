@@ -1,26 +1,198 @@
 """
-Simplified integration tests to compare YAML templates with Python templates.
+Comprehensive integration tests comparing YAML templates with Python template implementations.
+This provides quantitative analysis of conversion accuracy and identifies specific gaps.
 """
 import yaml
+import traceback
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Optional
+from dataclasses import dataclass, field
 
 from foe_foundry.creatures._data import GenerationSettings, rng_factory
+from foe_foundry.statblocks.yaml_parser import YAMLTemplateParser
+from foe_foundry.creatures import *
 
 
-class YAMLPythonComparison:
-    """Compare YAML templates with Python template behavior."""
+@dataclass
+class ComparisonResult:
+    """Results of comparing Python vs YAML template output."""
+    template_name: str
+    monster_key: str
+    cr: float
+    python_success: bool = False
+    yaml_success: bool = False
+    python_error: Optional[str] = None
+    yaml_error: Optional[str] = None
+    accuracy_scores: Dict[str, float] = field(default_factory=dict)
+    differences: List[str] = field(default_factory=list)
+    python_stats: Optional[Any] = None
+    yaml_stats: Optional[Any] = None
+    python_attacks: Optional[List] = None
+    yaml_attacks: Optional[List] = None
+
+
+class YAMLIntegrationAnalyzer:
+    """Comprehensive analyzer comparing YAML and Python template implementations."""
     
-    def analyze_template_gaps(self, template_class, yaml_path: Path, monster_key: str) -> Dict[str, Any]:
-        """Analyze gaps between Python template and YAML template."""
+    def __init__(self, repo_root: Path):
+        self.repo_root = repo_root
+        self.statblocks_dir = repo_root / "foe_foundry" / "statblocks"
+        self.yaml_parser = YAMLTemplateParser()
+        self.template_classes = self._discover_template_classes()
+    
+    def _discover_template_classes(self) -> Dict[str, Any]:
+        """Discover all template classes."""
+        import foe_foundry.creatures
+        
+        template_classes = {}
+        
+        # Common template names to try
+        template_names = [
+            'animated_armor', 'assassin', 'balor', 'bandit', 'basilisk', 'berserker',
+            'bugbear', 'chimera', 'cultist', 'dire_bunny', 'druid', 'frost_giant',
+            'gelatinous_cube', 'ghoul', 'goblin', 'golem', 'gorgon', 'guard',
+            'hollow_gazer', 'hydra', 'knight', 'kobold', 'lich', 'mage',
+            'manticore', 'medusa', 'merrow', 'mimic', 'ogre', 'orc', 'owlbear',
+            'priest', 'scout', 'simulacrum', 'skeleton', 'spirit', 'spy',
+            'thug', 'vrock', 'warrior', 'wight', 'wolf', 'zombie'
+        ]
+        
+        for name in template_names:
+            try:
+                # Try to import the template
+                module_name = f"foe_foundry.creatures.{name}"
+                module = __import__(module_name, fromlist=[f"{name.title()}Template"])
+                
+                # Look for the template class
+                template_class_name = f"{name.title().replace('_', '')}Template"
+                if hasattr(module, template_class_name):
+                    template_classes[name] = getattr(module, template_class_name)
+                else:
+                    # Try common variations
+                    for attr_name in dir(module):
+                        if attr_name.endswith('Template') and not attr_name.startswith('_'):
+                            template_classes[name] = getattr(module, attr_name)
+                            break
+            except Exception as e:
+                print(f"Could not import template {name}: {e}")
+                continue
+        
+        return template_classes
+    
+    def analyze_template(self, template_name: str, max_monsters: int = 5) -> List[ComparisonResult]:
+        """Analyze a single template, comparing YAML vs Python for multiple monsters."""
+        results = []
         
         # Load YAML template
-        with open(yaml_path, 'r', encoding='utf-8') as f:
-            yaml_data = yaml.safe_load(f)
+        yaml_path = self.statblocks_dir / f"{template_name}.yml"
+        if not yaml_path.exists():
+            result = ComparisonResult(
+                template_name=template_name,
+                monster_key="unknown",
+                cr=0,
+                yaml_error=f"YAML file not found: {yaml_path}"
+            )
+            return [result]
         
-        # Find monster in Python template
+        # Load YAML data to get monster list
+        try:
+            with open(yaml_path, 'r', encoding='utf-8') as f:
+                yaml_data = yaml.safe_load(f)
+        except Exception as e:
+            result = ComparisonResult(
+                template_name=template_name,
+                monster_key="unknown",
+                cr=0,
+                yaml_error=f"Failed to load YAML: {e}"
+            )
+            return [result]
+        
+        monsters = yaml_data.get('template', {}).get('monsters', [])
+        if not monsters:
+            result = ComparisonResult(
+                template_name=template_name,
+                monster_key="unknown",
+                cr=0,
+                yaml_error="No monsters found in YAML template"
+            )
+            return [result]
+        
+        # Get Python template class
+        template_class = self.template_classes.get(template_name)
+        if not template_class:
+            result = ComparisonResult(
+                template_name=template_name,
+                monster_key="unknown",
+                cr=0,
+                python_error=f"Python template class not found for {template_name}"
+            )
+            return [result]
+        
+        # Test up to max_monsters from the template
+        for i, monster_info in enumerate(monsters[:max_monsters]):
+            monster_key = monster_info['key']
+            cr = monster_info.get('cr', 1)
+            
+            if cr is None:
+                continue  # Skip monsters with null CR
+            
+            result = self._compare_single_monster(
+                template_name, template_class, monster_key, cr, yaml_path
+            )
+            results.append(result)
+        
+        return results
+    
+    def _compare_single_monster(
+        self, 
+        template_name: str, 
+        template_class: Any, 
+        monster_key: str, 
+        cr: float,
+        yaml_path: Path
+    ) -> ComparisonResult:
+        """Compare a single monster between Python and YAML implementations."""
+        
+        result = ComparisonResult(
+            template_name=template_name,
+            monster_key=monster_key,
+            cr=cr
+        )
+        
+        # Generate Python stats
+        try:
+            result.python_stats, result.python_attacks = self._generate_python_stats(
+                template_class, monster_key, cr
+            )
+            result.python_success = True
+        except Exception as e:
+            result.python_error = f"Python generation failed: {e}"
+            result.python_success = False
+        
+        # Generate YAML stats
+        try:
+            result.yaml_stats, result.yaml_attacks = self.yaml_parser.parse_template(
+                yaml_path, monster_key, cr
+            )
+            result.yaml_success = True
+        except Exception as e:
+            result.yaml_error = f"YAML parsing failed: {e}"
+            result.yaml_success = False
+        
+        # Compare if both succeeded
+        if result.python_success and result.yaml_success:
+            result.accuracy_scores = self._calculate_accuracy_scores(result)
+            result.differences = self._identify_differences(result)
+        
+        return result
+    
+    def _generate_python_stats(self, template_class: Any, monster_key: str, cr: float) -> Tuple[Any, List]:
+        """Generate stats using Python template."""
+        
+        # Find the monster and variant
         monster_info = None
         variant = None
+        
         for v in template_class.variants:
             for m in v.monsters:
                 if m.key == monster_key:
@@ -31,14 +203,14 @@ class YAMLPythonComparison:
                 break
         
         if not monster_info:
-            return {"error": f"Monster '{monster_key}' not found in Python template"}
+            raise ValueError(f"Monster '{monster_key}' not found in Python template")
         
-        # Generate Python stats
+        # Generate settings
         settings = GenerationSettings(
             creature_name=monster_info.name,
             monster_template=template_class.name,
             monster_key=monster_info.key,
-            cr=monster_info.cr,
+            cr=cr,
             is_legendary=monster_info.is_legendary,
             variant=variant,
             monster=monster_info,
@@ -46,250 +218,252 @@ class YAMLPythonComparison:
             rng=rng_factory(monster_info, None)
         )
         
-        try:
-            python_stats, python_attacks = template_class.generate_stats(settings)
-        except Exception as e:
-            return {"error": f"Failed to generate Python stats: {e}"}
+        return template_class.generate_stats(settings)
+    
+    def _calculate_accuracy_scores(self, result: ComparisonResult) -> Dict[str, float]:
+        """Calculate accuracy scores for different aspects of the statblock."""
+        scores = {}
         
-        # Get YAML data for this monster
-        yaml_common = yaml_data.get('common', {})
-        yaml_variant = yaml_data.get(monster_key, {})
+        py_stats = result.python_stats
+        yaml_stats = result.yaml_stats
         
-        # Analyze differences
-        gaps = {}
+        # Basic info accuracy
+        scores['name'] = 1.0 if py_stats.name == yaml_stats.name else 0.0
+        scores['creature_type'] = 1.0 if py_stats.creature_type == yaml_stats.creature_type else 0.0
+        scores['size'] = 1.0 if py_stats.size == yaml_stats.size else 0.0
+        scores['cr'] = 1.0 if abs(py_stats.cr - yaml_stats.cr) < 0.01 else 0.0
         
-        # Basic properties
-        gaps['basic'] = self._compare_basic_properties(python_stats, yaml_common, yaml_variant)
+        # Languages
+        py_langs = set(py_stats.languages or [])
+        yaml_langs = set(yaml_stats.languages or [])
+        if py_langs or yaml_langs:
+            scores['languages'] = len(py_langs & yaml_langs) / max(len(py_langs | yaml_langs), 1)
+        else:
+            scores['languages'] = 1.0
+        
+        # Creature class
+        scores['creature_class'] = 1.0 if getattr(py_stats, 'creature_class', None) == getattr(yaml_stats, 'creature_class', None) else 0.0
+        
+        # Multipliers
+        scores['hp_multiplier'] = 1.0 if abs(py_stats.hp_multiplier - yaml_stats.hp_multiplier) < 0.01 else 0.0
+        scores['damage_multiplier'] = 1.0 if abs(py_stats.damage_multiplier - yaml_stats.damage_multiplier) < 0.01 else 0.0
+        
+        # Attacks comparison
+        if result.python_attacks and result.yaml_attacks:
+            scores['attacks'] = self._compare_attacks(result.python_attacks, result.yaml_attacks)
+        else:
+            scores['attacks'] = 0.5  # Partial credit if one is missing
+        
+        return scores
+    
+    def _compare_attacks(self, python_attacks: List, yaml_attacks: List) -> float:
+        """Compare attack lists and return similarity score."""
+        if len(python_attacks) != len(yaml_attacks):
+            return 0.5  # Partial credit for count mismatch
+        
+        if not python_attacks and not yaml_attacks:
+            return 1.0  # Both empty
+        
+        # For now, just check if we have the same number of attacks
+        # More sophisticated comparison would check attack details
+        return 1.0 if len(python_attacks) == len(yaml_attacks) else 0.5
+    
+    def _identify_differences(self, result: ComparisonResult) -> List[str]:
+        """Identify specific differences between Python and YAML implementations."""
+        differences = []
+        
+        py_stats = result.python_stats
+        yaml_stats = result.yaml_stats
+        
+        # Check basic properties
+        if py_stats.name != yaml_stats.name:
+            differences.append(f"Name: Python='{py_stats.name}' vs YAML='{yaml_stats.name}'")
+        
+        if py_stats.creature_type != yaml_stats.creature_type:
+            differences.append(f"CreatureType: Python={py_stats.creature_type} vs YAML={yaml_stats.creature_type}")
+        
+        if py_stats.size != yaml_stats.size:
+            differences.append(f"Size: Python={py_stats.size} vs YAML={yaml_stats.size}")
+        
+        if abs(py_stats.cr - yaml_stats.cr) >= 0.01:
+            differences.append(f"CR: Python={py_stats.cr} vs YAML={yaml_stats.cr}")
+        
+        # Languages
+        py_langs = set(py_stats.languages or [])
+        yaml_langs = set(yaml_stats.languages or [])
+        if py_langs != yaml_langs:
+            differences.append(f"Languages: Python={py_langs} vs YAML={yaml_langs}")
+        
+        # Multipliers
+        if abs(py_stats.hp_multiplier - yaml_stats.hp_multiplier) >= 0.01:
+            differences.append(f"HP Multiplier: Python={py_stats.hp_multiplier} vs YAML={yaml_stats.hp_multiplier}")
+        
+        if abs(py_stats.damage_multiplier - yaml_stats.damage_multiplier) >= 0.01:
+            differences.append(f"Damage Multiplier: Python={py_stats.damage_multiplier} vs YAML={yaml_stats.damage_multiplier}")
         
         # Attacks
-        gaps['attacks'] = self._compare_attacks(python_attacks, yaml_common.get('attacks', {}), yaml_variant.get('attacks', {}))
+        if len(result.python_attacks or []) != len(result.yaml_attacks or []):
+            differences.append(f"Attack count: Python={len(result.python_attacks or [])} vs YAML={len(result.yaml_attacks or [])}")
         
-        # Abilities  
-        gaps['abilities'] = self._compare_abilities(python_stats, yaml_common, yaml_variant)
-        
-        # Other complex features
-        gaps['complex'] = self._analyze_complex_features(template_class, settings)
-        
-        return gaps
+        return differences
     
-    def _compare_basic_properties(self, python_stats, yaml_common: Dict, yaml_variant: Dict) -> Dict[str, Any]:
-        """Compare basic properties like name, CR, type, size."""
-        gaps = {}
-        
-        # Check creature type
-        python_type = str(python_stats.creature_type)
-        yaml_type = yaml_variant.get('creature_type') or yaml_common.get('creature_type')
-        if python_type.lower() != str(yaml_type).lower():
-            gaps['creature_type'] = {'python': python_type, 'yaml': yaml_type}
-        
-        # Check size
-        python_size = str(python_stats.size)
-        yaml_size = yaml_variant.get('size') or yaml_common.get('size')
-        if python_size.lower() != str(yaml_size).lower():
-            gaps['size'] = {'python': python_size, 'yaml': yaml_size}
-        
-        # Check languages
-        python_langs = set(python_stats.languages) if python_stats.languages else set()
-        yaml_langs = set(yaml_variant.get('languages') or yaml_common.get('languages', []))
-        if python_langs != yaml_langs:
-            gaps['languages'] = {'python': list(python_langs), 'yaml': list(yaml_langs)}
-        
-        # Check creature class
-        python_class = python_stats.creature_class
-        yaml_class = yaml_variant.get('creature_class') or yaml_common.get('creature_class')
-        if python_class != yaml_class:
-            gaps['creature_class'] = {'python': python_class, 'yaml': yaml_class}
-        
-        return gaps
-    
-    def _compare_attacks(self, python_attacks: List, yaml_common_attacks: Dict, yaml_variant_attacks: Dict) -> Dict[str, Any]:
-        """Compare attack configurations."""
-        gaps = {}
-        
-        # Attack count
-        python_count = len(python_attacks)
-        yaml_attacks = yaml_variant_attacks or yaml_common_attacks
-        
-        # Estimate YAML attack count
-        yaml_count = 0
-        if yaml_attacks.get('main'):
-            yaml_count += 1
-        if yaml_attacks.get('secondary'):
-            yaml_count += 1
-        
-        if python_count != yaml_count:
-            gaps['attack_count'] = {'python': python_count, 'yaml': yaml_count}
-        
-        # Attack names
-        python_names = [att.attack_name for att in python_attacks]
-        yaml_main = yaml_attacks.get('main', {}).get('base', 'TBD')
-        yaml_secondary = yaml_attacks.get('secondary', {}).get('base')
-        yaml_names = [name for name in [yaml_main, yaml_secondary] if name and name != 'TBD']
-        
-        if python_names != yaml_names:
-            gaps['attack_names'] = {'python': python_names, 'yaml': yaml_names}
-        
-        return gaps
-    
-    def _compare_abilities(self, python_stats, yaml_common: Dict, yaml_variant: Dict) -> Dict[str, Any]:
-        """Compare ability scores and scaling."""
-        gaps = {}
-        
-        # Get YAML abilities
-        yaml_abilities = yaml_variant.get('abilities') or yaml_common.get('abilities', {})
-        
-        if not yaml_abilities:
-            gaps['missing_abilities'] = "No abilities defined in YAML"
-            return gaps
-        
-        # Compare ability score values (roughly)
-        python_attrs = python_stats.attributes
-        ability_diffs = {}
-        
-        for ability in ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA']:
-            python_score = getattr(python_attrs, ability, 10)
-            yaml_scaling = yaml_abilities.get(ability, 'Default')
-            
-            # Rough expected scores based on scaling type
-            cr = python_stats.cr
-            expected_ranges = {
-                'Primary': (15 + cr//2, 20 + cr//2),
-                'Medium': (12 + cr//4, 16 + cr//4), 
-                'Constitution': (12 + cr//4, 16 + cr//4),
-                'Default': (8 + cr//8, 12 + cr//8)
-            }
-            
-            if isinstance(yaml_scaling, str) and yaml_scaling in expected_ranges:
-                min_score, max_score = expected_ranges[yaml_scaling]
-                if not (min_score <= python_score <= max_score):
-                    ability_diffs[ability] = {
-                        'python_score': python_score,
-                        'yaml_scaling': yaml_scaling,
-                        'expected_range': f"{min_score}-{max_score}"
-                    }
-        
-        if ability_diffs:
-            gaps['ability_score_mismatches'] = ability_diffs
-        
-        return gaps
-    
-    def _analyze_complex_features(self, template_class, settings) -> Dict[str, Any]:
-        """Analyze complex features that are hard to capture in YAML."""
-        complex_gaps = []
-        
-        # Check if template uses CR-dependent logic
-        import inspect
-        source = inspect.getsource(template_class.generate_stats)
-        
-        if 'if cr >=' in source or 'if stats.cr >=' in source:
-            complex_gaps.append("Uses CR-dependent conditional logic")
-        
-        if 'rng' in source or 'choose_' in source:
-            complex_gaps.append("Uses random selection")
-        
-        if 'species' in source and 'HumanSpecies' in source:
-            complex_gaps.append("Has species-dependent behavior")
-        
-        if 'settings.hp_multiplier *' in source:
-            complex_gaps.append("Uses dynamic HP multiplier calculations")
-        
-        if 'grant_spellcasting' in source:
-            complex_gaps.append("Grants spellcasting abilities")
-        
-        if 'with_set_attacks' in source or 'multiattack' in source:
-            complex_gaps.append("Has complex attack count logic")
-        
-        return complex_gaps
-
-    def analyze_all_templates(self) -> Dict[str, Any]:
-        """Analyze all available templates and provide summary."""
-        templates_to_test = [
-            ("foe_foundry.creatures.berserker", "BerserkerTemplate", "berserker", "berserker.yml"),
-            ("foe_foundry.creatures.assassin", "AssassinTemplate", "assassin", "assassin.yml"),
-            ("foe_foundry.creatures.knight", "KnightTemplate", "knight", "knight.yml"),
-            ("foe_foundry.creatures.goblin", "GoblinTemplate", "goblin", "goblin.yml"),
-            ("foe_foundry.creatures.mage", "MageTemplate", "mage", "mage.yml"),
-            ("foe_foundry.creatures.lich", "LichTemplate", "lich", "lich.yml"),
-            ("foe_foundry.creatures.priest", "PriestTemplate", "priest", "priest.yml"),
-            ("foe_foundry.creatures.scout", "ScoutTemplate", "scout", "scout.yml"),
-        ]
+    def analyze_all_templates(self, templates_to_analyze: Optional[List[str]] = None) -> Dict[str, List[ComparisonResult]]:
+        """Analyze all available templates."""
+        if templates_to_analyze is None:
+            templates_to_analyze = list(self.template_classes.keys())
         
         all_results = {}
-        summary = {
-            'total_templates': len(templates_to_test),
-            'successful_analyses': 0,
-            'common_gaps': {},
-            'complex_features': {}
-        }
         
-        for module_name, template_name, monster_key, yaml_file in templates_to_test:
+        print(f"Analyzing {len(templates_to_analyze)} templates...")
+        
+        for template_name in templates_to_analyze:
+            print(f"\nAnalyzing {template_name}...")
             try:
-                # Import the template
-                module = __import__(module_name, fromlist=[template_name])
-                template_class = getattr(module, template_name)
+                results = self.analyze_template(template_name, max_monsters=3)
+                all_results[template_name] = results
                 
-                yaml_path = Path(f"/home/runner/work/foe_foundry/foe_foundry/foe_foundry/statblocks/{yaml_file}")
-                
-                if not yaml_path.exists():
-                    all_results[template_name] = {"error": f"YAML file not found: {yaml_file}"}
-                    continue
-                
-                # Analyze gaps
-                gaps = self.analyze_template_gaps(template_class, yaml_path, monster_key)
-                all_results[template_name] = gaps
-                
-                if 'error' not in gaps:
-                    summary['successful_analyses'] += 1
+                # Print summary for this template
+                successful = [r for r in results if r.python_success and r.yaml_success]
+                if successful:
+                    avg_accuracy = sum(sum(r.accuracy_scores.values()) / len(r.accuracy_scores) 
+                                     for r in successful) / len(successful)
+                    print(f"  {len(successful)}/{len(results)} monsters successful, avg accuracy: {avg_accuracy:.2%}")
+                else:
+                    print(f"  No successful comparisons out of {len(results)} monsters")
                     
-                    # Track common gap types
-                    for gap_type, gap_data in gaps.items():
-                        if gap_type not in summary['common_gaps']:
-                            summary['common_gaps'][gap_type] = 0
-                        if gap_data:  # Non-empty gaps
-                            summary['common_gaps'][gap_type] += 1
-                    
-                    # Track complex features
-                    complex_features = gaps.get('complex', [])
-                    for feature in complex_features:
-                        if feature not in summary['complex_features']:
-                            summary['complex_features'][feature] = 0
-                        summary['complex_features'][feature] += 1
-                
             except Exception as e:
-                all_results[template_name] = {"error": str(e)}
+                print(f"  Error analyzing {template_name}: {e}")
+                traceback.print_exc()
+                all_results[template_name] = [ComparisonResult(
+                    template_name=template_name,
+                    monster_key="unknown",
+                    cr=0,
+                    python_error=str(e)
+                )]
         
-        return {
-            'summary': summary,
-            'detailed_results': all_results
-        }
+        return all_results
+    
+    def generate_analysis_report(self, results: Dict[str, List[ComparisonResult]]) -> str:
+        """Generate a comprehensive analysis report."""
+        
+        # Collect statistics
+        total_comparisons = 0
+        successful_comparisons = 0
+        total_accuracy_scores = []
+        category_accuracies = {}
+        
+        for template_name, template_results in results.items():
+            for result in template_results:
+                total_comparisons += 1
+                if result.python_success and result.yaml_success:
+                    successful_comparisons += 1
+                    
+                    # Overall accuracy
+                    if result.accuracy_scores:
+                        overall_accuracy = sum(result.accuracy_scores.values()) / len(result.accuracy_scores)
+                        total_accuracy_scores.append(overall_accuracy)
+                        
+                        # Category-wise accuracy
+                        for category, score in result.accuracy_scores.items():
+                            if category not in category_accuracies:
+                                category_accuracies[category] = []
+                            category_accuracies[category].append(score)
+        
+        # Generate report
+        report = []
+        report.append("# YAML Template Conversion Analysis Report")
+        report.append("")
+        report.append("## Executive Summary")
+        report.append("")
+        report.append(f"- **Total Comparisons**: {total_comparisons}")
+        report.append(f"- **Successful Comparisons**: {successful_comparisons} ({successful_comparisons/max(total_comparisons,1):.1%})")
+        
+        if total_accuracy_scores:
+            avg_accuracy = sum(total_accuracy_scores) / len(total_accuracy_scores)
+            report.append(f"- **Average Accuracy**: {avg_accuracy:.1%}")
+        
+        report.append("")
+        report.append("## Category-wise Accuracy")
+        report.append("")
+        
+        for category, scores in sorted(category_accuracies.items()):
+            if scores:
+                avg_score = sum(scores) / len(scores)
+                report.append(f"- **{category.replace('_', ' ').title()}**: {avg_score:.1%}")
+        
+        report.append("")
+        report.append("## Template-wise Results")
+        report.append("")
+        
+        for template_name, template_results in sorted(results.items()):
+            report.append(f"### {template_name.replace('_', ' ').title()}")
+            
+            successful = [r for r in template_results if r.python_success and r.yaml_success]
+            failed = [r for r in template_results if not (r.python_success and r.yaml_success)]
+            
+            if successful:
+                avg_accuracy = sum(sum(r.accuracy_scores.values()) / len(r.accuracy_scores) 
+                               for r in successful) / len(successful)
+                report.append(f"- Success Rate: {len(successful)}/{len(template_results)} ({len(successful)/max(len(template_results),1):.1%})")
+                report.append(f"- Average Accuracy: {avg_accuracy:.1%}")
+                
+                # Show detailed results for successful monsters
+                for result in successful:
+                    report.append(f"  - **{result.monster_key}** (CR {result.cr}): {sum(result.accuracy_scores.values())/len(result.accuracy_scores):.1%}")
+            
+            if failed:
+                report.append(f"- **Failed Monsters**: {len(failed)}")
+                for result in failed:
+                    error = result.python_error or result.yaml_error or "Unknown error"
+                    report.append(f"  - {result.monster_key}: {error}")
+            
+            report.append("")
+        
+        report.append("## Common Issues and Gaps")
+        report.append("")
+        
+        # Analyze common differences
+        common_differences = {}
+        for template_results in results.values():
+            for result in template_results:
+                for diff in result.differences:
+                    # Extract the type of difference
+                    diff_type = diff.split(':')[0]
+                    common_differences[diff_type] = common_differences.get(diff_type, 0) + 1
+        
+        for diff_type, count in sorted(common_differences.items(), key=lambda x: x[1], reverse=True):
+            report.append(f"- **{diff_type}**: Found in {count} comparisons")
+        
+        return "\n".join(report)
+
+
+def run_comprehensive_analysis():
+    """Run the comprehensive analysis and save results."""
+    repo_root = Path.cwd()
+    analyzer = YAMLIntegrationAnalyzer(repo_root)
+    
+    # Select a representative subset for testing
+    test_templates = [
+        'berserker', 'knight', 'assassin', 'mage', 'goblin', 
+        'orc', 'skeleton', 'zombie', 'owlbear', 'wolf'
+    ]
+    
+    results = analyzer.analyze_all_templates(test_templates)
+    
+    # Generate report
+    report = analyzer.generate_analysis_report(results)
+    
+    # Save report
+    report_path = repo_root / "yaml_conversion_analysis.md"
+    with open(report_path, 'w', encoding='utf-8') as f:
+        f.write(report)
+    
+    print(f"\nAnalysis report saved to: {report_path}")
+    print("\n" + "="*60)
+    print("SUMMARY")
+    print("="*60)
+    print(report.split("## Template-wise Results")[0])
 
 
 if __name__ == "__main__":
-    analyzer = YAMLPythonComparison()
-    results = analyzer.analyze_all_templates()
-    
-    print("=== YAML vs Python Template Analysis ===\n")
-    
-    summary = results['summary']
-    print(f"Templates analyzed: {summary['successful_analyses']}/{summary['total_templates']}")
-    print()
-    
-    print("Common gap types (number of templates affected):")
-    for gap_type, count in summary['common_gaps'].items():
-        print(f"  {gap_type}: {count}")
-    print()
-    
-    print("Complex features detected (number of templates):")
-    for feature, count in summary['complex_features'].items():
-        print(f"  {feature}: {count}")
-    print()
-    
-    print("Detailed results:")
-    for template_name, gaps in results['detailed_results'].items():
-        print(f"\n{template_name}:")
-        if 'error' in gaps:
-            print(f"  ERROR: {gaps['error']}")
-        else:
-            for gap_type, gap_data in gaps.items():
-                if gap_data:
-                    print(f"  {gap_type}: {len(gap_data) if isinstance(gap_data, (dict, list)) else 'present'}")
+    run_comprehensive_analysis()

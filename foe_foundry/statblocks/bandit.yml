@@ -2,51 +2,57 @@ template:
   key: bandit
   name: Bandit
   monsters:
-    - { key: bandit, name: "Bandit", cr: 0.125 }
-    - { key: bandit-veteran, name: "Bandit Veteran", cr: 1 }
-    - { key: bandit-captain, name: "Bandit Captain", cr: 2 }
-    - { key: bandit-crime-lord, name: "Bandit Crime Lord", cr: 11, legendary: true }
-  environments:
-    - { development: frontier, affinity: native }
-    - { region: countryshire, affinity: common }
-    - { development: ruin, affinity: uncommon }
-    - { development: settlement, affinity: rare }
-    - { region: CountryShire, affinity: common }
-  species: all
-
+  - key: bandit
+    name: Bandit
+    cr: null
+  - key: bandit-veteran
+    name: Bandit Veteran
+    cr: 1
+  - key: bandit-captain
+    name: Bandit Captain
+    cr: 2
+  - key: bandit-crime-lord
+    name: Bandit Crime Lord
+    cr: 11
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Humanoid
   size: Medium
-  languages: ['Common']
+  languages:
+  - Common
   creature_class: Bandit
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Leader
-    additional: ['Ambusher', 'Artillery']
+    primary: null
+    additional: []
   abilities:
-    STR: Medium
+    STR: Default
     DEX: Primary
-    INT: Medium
+    INT: Default
     WIS: Default
-    CHA: Medium
+    CHA: Default
   attacks:
     main:
-      base: TBD
+      base: Pistol
       damage_multiplier: 1.0
+      secondary_damage_type: Poison
   skills:
-    proficiency: []
+    proficiency:
+    - Stealth
+    - Initiative
     expertise: []
-  saves: []
-
-bandit:
-  <<: *common
-
-bandit-veteran:
-  <<: *common
-
-bandit-captain:
-  <<: *common
-
-bandit-crime-lord:
-  <<: *common
+  saves:
+  - CON
+  - STR
+  - DEX
+bandit: !!set
+  '<<: *common': null
+bandit-veteran: !!set
+  '<<: *common': null
+bandit-captain: !!set
+  '<<: *common': null
+bandit-crime-lord: !!set
+  '<<: *common': null

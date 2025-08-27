@@ -2,48 +2,50 @@ template:
   key: wight
   name: Wight
   monsters:
-    - { key: wight, name: "Wight", cr: 3 }
-    - { key: wight-fell-champion, name: "Wight Fell Champion", cr: 6 }
-    - { key: wight-dread-lord, name: "Wight Dread Lord", cr: 9, legendary: true }
-  environments:
-    - { development: ruin, affinity: common }
-    - { development: dungeon, affinity: common }
-    - { biome: underground, affinity: common }
-    - { development: stronghold, affinity: uncommon }
-    - { terrain: mountain, affinity: rare }
-    - { development: wilderness, affinity: rare }
-  species: all
-
+  - key: wight
+    name: Wight
+    cr: 3
+  - key: wight-fell-champion
+    name: Wight Fell Champion
+    cr: 6
+  - key: wight-dread-lord
+    name: Wight Dread Lord
+    cr: 9
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Undead
-  languages: ['Common']
+  size: null
+  languages:
+  - Common
   creature_class: Wight
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: null
     additional: []
   abilities:
     STR: Primary
-    DEX: Medium
-    CON: Constitution
+    DEX: Default
+    CON: Default
     INT: Default
     WIS: Medium
-    CHA: Medium
+    CHA: Default
   attacks:
     main:
-      base: TBD
+      base: SwordAndShield
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
-  saves: []
-
-wight:
-  <<: *common
-
-wight-fell-champion:
-  <<: *common
-
-wight-dread-lord:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+wight: !!set
+  '<<: *common': null
+wight-fell-champion: !!set
+  '<<: *common': null
+wight-dread-lord: !!set
+  '<<: *common': null

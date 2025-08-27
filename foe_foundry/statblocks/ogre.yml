@@ -2,56 +2,55 @@ template:
   key: ogre
   name: Ogre
   monsters:
-    - { key: ogre, name: "Ogre", cr: 2 }
-    - { key: ogre-wallsmasha, name: "Ogre Wallsmasha", cr: 4 }
-    - { key: ogre-burnbelcha, name: "Ogre Burnbelcha", cr: 4 }
-    - { key: ogre-chaincrakka, name: "Ogre Chaincrakka", cr: 4 }
-    - { key: ogre-big-brainz, name: "Ogre Big Brainz", cr: 7 }
-  environments:
-    - { terrain: hill, affinity: native }
-    - { biome: underground, affinity: native }
-    - { development: wilderness, affinity: common }
-    - { development: frontier, affinity: common }
-    - { biome: forest, affinity: uncommon }
-  species: all
-
+  - key: ogre
+    name: Ogre
+    cr: 2
+  - key: ogre-wallsmasha
+    name: Ogre Wallsmasha
+    cr: 4
+  - key: ogre-burnbelcha
+    name: Ogre Burnbelcha
+    cr: 4
+  - key: ogre-chaincrakka
+    name: Ogre Chaincrakka
+    cr: 4
+  - key: ogre-big-brainz
+    name: Ogre Big Brainz
+    cr: 7
+  environments: []
+  species: null
 common: &common
   creature_type: Giant
   size: Large
-  languages: ['Common']
+  languages:
+  - Common
   creature_class: Ogre
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Bruiser
+    primary: null
     additional: []
-  abilities:
-    STR: Primary
-    DEX: Default
-    CON: Constitution
-    INT: Primary
-    WIS: Medium
-    CHA: Medium
+  abilities: {}
   attacks:
     main:
-      base: TBD
+      base: Maul
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
-  saves: []
-
-ogre:
-  <<: *common
-
-ogre-wallsmasha:
-  <<: *common
-
-ogre-burnbelcha:
-  <<: *common
-
-ogre-chaincrakka:
-  <<: *common
-
-ogre-big-brainz:
-  <<: *common
+  saves:
+  - CON
+  - STR
+  - CHA
+  - WIS
+ogre: !!set
+  '<<: *common': null
+ogre-wallsmasha: !!set
+  '<<: *common': null
+ogre-burnbelcha: !!set
+  '<<: *common': null
+ogre-chaincrakka: !!set
+  '<<: *common': null
+ogre-big-brainz: !!set
+  '<<: *common': null

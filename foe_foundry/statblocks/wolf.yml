@@ -2,53 +2,48 @@ template:
   key: wolf
   name: Wolf
   monsters:
-    - { key: wolf, name: "Wolf", cr: 0.125 }
-    - { key: dire-wolf, name: "Dire Wolf", cr: 1 }
-    - { key: winter-wolf, name: "Winter Wolf", cr: 3 }
-    - { key: fellwinter-packlord, name: "Fellwinter Packlord", cr: 6, legendary: true }
-  environments:
-    - { region: tangledforest, affinity: native }
-    - { development: wilderness, affinity: native }
-    - { region: countryshire, affinity: common }
-    - { biome: forest, affinity: common }
-    - { region: feywood, affinity: uncommon }
-    - { development: countryside, affinity: rare }
-    - { region: TangledForest, affinity: native }
-    - { region: CountryShire, affinity: common }
-    - { region: Feywood, affinity: uncommon }
-  species: all
-
+  - key: wolf
+    name: Wolf
+    cr: null
+  - key: dire-wolf
+    name: Dire Wolf
+    cr: 1
+  - key: winter-wolf
+    name: Winter Wolf
+    cr: 3
+  - key: fellwinter-packlord
+    name: Fellwinter Packlord
+    cr: 6
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Beast
   size: Medium
+  languages: []
   creature_class: Wolf
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
     primary: Bruiser
     additional: []
-  abilities:
-    STR: Primary
-    CON: Constitution
-    INT: Default
-    CHA: Default
+  abilities: {}
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: Cold
   skills:
-    proficiency: []
+    proficiency:
+    - Perception
+    - Stealth
+    - Perception
     expertise: []
-  saves: []
-
-wolf:
-  <<: *common
-
-dire-wolf:
-  <<: *common
-
-winter-wolf:
-  <<: *common
-
-fellwinter-packlord:
-  <<: *common
+  saves:
+  - WIS
+wolf: !!set
+  '<<: *common': null
+dire-wolf: !!set
+  '<<: *common': null
+winter-wolf: !!set
+  '<<: *common': null
+fellwinter-packlord: !!set
+  '<<: *common': null

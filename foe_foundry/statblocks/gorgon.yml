@@ -2,35 +2,36 @@ template:
   key: gorgon
   name: Gorgon
   monsters:
-    - { key: gorgon, name: "Gorgon", cr: 5 }
-  environments:
-    - { terrain: hill, affinity: uncommon }
-  species: all
-
+  - key: gorgon
+    name: Gorgon
+    cr: 5
+  environments: []
+  species: null
 common: &common
   creature_type: Construct
   size: Large
+  languages: []
   creature_class: Gorgon
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Bruiser
+    primary: null
     additional: []
   abilities:
-    STR: Primary
+    STR: Default
     DEX: Default
-    CON: Constitution
+    CON: Default
     INT: Default
     WIS: Default
     CHA: Default
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Perception
+    - Perception
     expertise: []
   saves: []
-
-gorgon:
-  <<: *common
+gorgon: !!set
+  '<<: *common': null

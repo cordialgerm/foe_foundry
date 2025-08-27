@@ -2,56 +2,66 @@ template:
   key: priest
   name: Priest
   monsters:
-    - { key: acolyte, name: "Acolyte", cr: 0.25 }
-    - { key: priest, name: "Priest", cr: 2 }
-    - { key: priest-anointed-one, name: "Priest Anointed One", cr: 5 }
-    - { key: archpriest, name: "Archpriest", cr: 12 }
-    - { key: archpriest-living-saint, name: "Archpriest Living Saint", cr: 16, legendary: true }
-  environments:
-    - { region: urbantownship, affinity: native }
-    - { region: countryshire, affinity: common }
-    - { development: urban, affinity: uncommon }
-    - { development: wilderness, affinity: rare }
-    - { region: UrbanTownship, affinity: native }
-    - { region: CountryShire, affinity: common }
-  species: all
-
+  - key: acolyte
+    name: Acolyte
+    cr: null
+  - key: priest
+    name: Priest
+    cr: 2
+  - key: priest-anointed-one
+    name: Priest Anointed One
+    cr: 5
+  - key: archpriest
+    name: Archpriest
+    cr: 12
+  - key: archpriest-living-saint
+    name: Archpriest Living Saint
+    cr: 16
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Humanoid
   size: Medium
-  languages: ['Common']
+  languages:
+  - Common
   creature_class: Priest
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Support
+    primary: null
     additional: []
   abilities:
-    STR: Medium
+    STR: Default
     DEX: Default
     INT: Default
     WIS: Primary
     CHA: Default
   attacks:
     main:
-      base: TBD
+      base: MaceAndShield
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Medicine
+    - Religion
+    - Perception
+    - Initiative
+    - Insight
     expertise: []
-  saves: []
-
-acolyte:
-  <<: *common
-
-priest:
-  <<: *common
-
-priest-anointed-one:
-  <<: *common
-
-archpriest:
-  <<: *common
-
-archpriest-living-saint:
-  <<: *common
+  saves:
+  - CON
+  - STR
+  - INT
+  - WIS
+acolyte: !!set
+  '<<: *common': null
+priest: !!set
+  '<<: *common': null
+priest-anointed-one: !!set
+  '<<: *common': null
+archpriest: !!set
+  '<<: *common': null
+archpriest-living-saint: !!set
+  '<<: *common': null

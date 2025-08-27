@@ -2,41 +2,47 @@ template:
   key: lich
   name: Lich
   monsters:
-    - { key: lich, name: "Lich", cr: 21, legendary: true }
-    - { key: archlich, name: "Archlich", cr: 26, legendary: true }
-  environments:
-    - { development: ruin, affinity: native }
-    - { development: stronghold, affinity: common }
-  species: all
-
+  - key: lich
+    name: Lich
+    cr: 21
+    legendary: true
+  - key: archlich
+    name: Archlich
+    cr: 26
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Undead
   size: Medium
-  languages: ['All']
+  languages:
+  - All
   creature_class: Lich
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Artillery
+    primary: null
     additional: []
   abilities:
     STR: Default
     DEX: Medium
+    CON: Default
     INT: Primary
-    CON: Constitution
-    WIS: Medium
+    WIS: Default
     CHA: Medium
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
-  saves: []
-
-lich:
-  <<: *common
-
-archlich:
-  <<: *common
+  saves:
+  - CON
+  - DEX
+  - INT
+  - WIS
+  - CHA
+lich: !!set
+  '<<: *common': null
+archlich: !!set
+  '<<: *common': null

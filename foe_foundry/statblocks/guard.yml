@@ -2,51 +2,54 @@ template:
   key: guard
   name: Guard
   monsters:
-    - { key: guard, name: "Guard", cr: 0.125 }
-    - { key: sergeant-of-the-watch, name: "Sergeant of the Watch", cr: 1 }
-    - { key: guard-captain, name: "Guard Captain", cr: 4 }
-    - { key: lord-of-the-watch, name: "Lord of the Watch", cr: 8, legendary: true }
-  environments:
-    - { development: urban, affinity: common }
-    - { development: stronghold, affinity: common }
-    - { region: openroads, affinity: uncommon }
-    - { development: wilderness, affinity: rare }
-    - { region: OpenRoads, affinity: uncommon }
-  species: all
-
+  - key: guard
+    name: Guard
+    cr: null
+  - key: sergeant-of-the-watch
+    name: Sergeant of the Watch
+    cr: 1
+  - key: guard-captain
+    name: Guard Captain
+    cr: 4
+  - key: lord-of-the-watch
+    name: Lord of the Watch
+    cr: 8
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Humanoid
   size: Medium
-  languages: ['Common']
+  languages:
+  - Common
   creature_class: Guard
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Leader
-    additional: ['Defender', 'Artillery', 'Soldier']
-  abilities:
-    STR: Primary
-    DEX: Medium
-    INT: Default
-    WIS: Medium
-    CHA: Default
+    primary: null
+    additional: []
+  abilities: {}
   attacks:
     main:
-      base: TBD
+      base: Crossbow
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Perception
+    - Initiative
+    - Athletics
     expertise: []
-  saves: []
-
-guard:
-  <<: *common
-
-sergeant-of-the-watch:
-  <<: *common
-
-guard-captain:
-  <<: *common
-
-lord-of-the-watch:
-  <<: *common
+  saves:
+  - CON
+  - STR
+  - DEX
+  - WIS
+guard: !!set
+  '<<: *common': null
+sergeant-of-the-watch: !!set
+  '<<: *common': null
+guard-captain: !!set
+  '<<: *common': null
+lord-of-the-watch: !!set
+  '<<: *common': null

@@ -1,39 +1,43 @@
 template:
-  key: hollowgazer
-  name: HollowGazer
+  key: hollow-gazer
+  name: Hollow Gazer
   monsters:
-    - { key: hollow-gazer, name: "Hollow Gazer", cr: 2 }
-    - { key: hollow-gazer-of-ruin, name: "Hollow Gazer of Ruin", cr: 6 }
-  environments:
-  species: all
-
+  - key: hollow-gazer
+    name: Hollow Gazer
+    cr: 2
+  - key: hollow-gazer-of-ruin
+    name: Hollow Gazer of Ruin
+    cr: 6
+  environments: []
+  species: null
 common: &common
   creature_type: Aberration
   size: Medium
-  languages: ['Almost Comprehensible Gibberish']
+  languages:
+  - Almost Comprehensible Gibberish
   creature_class: Hollow Gazer
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Controller
+    primary: null
     additional: []
   abilities:
     STR: Default
     DEX: Medium
     INT: Primary
-    WIS: Medium
+    WIS: Default
     CHA: Default
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: Psychic
   skills:
-    proficiency: []
+    proficiency:
+    - Stealth
     expertise: []
-  saves: []
-
-hollow-gazer:
-  <<: *common
-
-hollow-gazer-of-ruin:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+hollow-gazer: !!set
+  '<<: *common': null
+hollow-gazer-of-ruin: !!set
+  '<<: *common': null

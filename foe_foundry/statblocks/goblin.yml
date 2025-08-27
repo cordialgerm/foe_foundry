@@ -2,63 +2,65 @@ template:
   key: goblin
   name: Goblin
   monsters:
-    - { key: goblin-lickspittle, name: "Goblin Lickspittle", cr: 0.125 }
-    - { key: goblin, name: "Goblin", cr: 0.25 }
-    - { key: goblin-brute, name: "Goblin Brute", cr: 0.5 }
-    - { key: goblin-boss, name: "Goblin Boss", cr: 1 }
-    - { key: goblin-warchief, name: "Goblin Warchief", cr: 4 }
-    - { key: goblin-foulhex, name: "Goblin Foulhex", cr: 1 }
-    - { key: goblin-shaman, name: "Goblin Shaman", cr: 2 }
-  environments:
-    - { terrain: hill, affinity: common }
-    - { region: feywood, affinity: common }
-    - { development: frontier, affinity: common }
-    - { region: countryshire, affinity: uncommon }
-    - { region: Feywood, affinity: common }
-    - { region: CountryShire, affinity: uncommon }
-  species: True
-
+  - key: goblin-lickspittle
+    name: Goblin Lickspittle
+    cr: null
+  - key: goblin
+    name: Goblin
+    cr: null
+  - key: goblin-brute
+    name: Goblin Brute
+    cr: null
+  - key: goblin-boss
+    name: Goblin Boss
+    cr: 1
+  - key: goblin-warchief
+    name: Goblin Warchief
+    cr: 4
+  - key: goblin-foulhex
+    name: Goblin Foulhex
+    cr: 1
+  - key: goblin-shaman
+    name: Goblin Shaman
+    cr: 2
+  environments: []
+  species: null
 common: &common
+  creature_type: null
   size: Small
-  languages: ['Common', 'Goblin']
+  languages:
+  - Common
+  - Goblin
   creature_class: Goblin
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Skirmisher
+    primary: null
     additional: []
-  abilities:
-    STR: Default
-    DEX: Primary
-    INT: Default
-    WIS: Default
-    CHA: Default
+  abilities: {}
   attacks:
     main:
-      base: TBD
+      base: Daggers
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Stealth
     expertise: []
-  saves: []
-
-goblin-lickspittle:
-  <<: *common
-
-goblin:
-  <<: *common
-
-goblin-brute:
-  <<: *common
-
-goblin-boss:
-  <<: *common
-
-goblin-warchief:
-  <<: *common
-
-goblin-foulhex:
-  <<: *common
-
-goblin-shaman:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+goblin-lickspittle: !!set
+  '<<: *common': null
+goblin: !!set
+  '<<: *common': null
+goblin-brute: !!set
+  '<<: *common': null
+goblin-boss: !!set
+  '<<: *common': null
+goblin-warchief: !!set
+  '<<: *common': null
+goblin-foulhex: !!set
+  '<<: *common': null
+goblin-shaman: !!set
+  '<<: *common': null

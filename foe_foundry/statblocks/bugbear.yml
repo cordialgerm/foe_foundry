@@ -2,51 +2,44 @@ template:
   key: bugbear
   name: Bugbear
   monsters:
-    - { key: bugbear, name: "Bugbear", cr: 1 }
-    - { key: bugbear-brute, name: "Bugbear Brute", cr: 3 }
-    - { key: bugbear-shadowstalker, name: "Bugbear Shadowstalker", cr: 5 }
-  environments:
-    - { region: tangledforest, affinity: native }
-    - { biome: underground, affinity: native }
-    - { development: wilderness, affinity: common }
-    - { development: ruin, affinity: common }
-    - { development: frontier, affinity: common }
-    - { region: feywood, affinity: uncommon }
-    - { development: countryside, affinity: uncommon }
-    - { development: settlement, affinity: rare }
-    - { region: TangledForest, affinity: native }
-    - { region: Feywood, affinity: uncommon }
-  species: True
-
+  - key: bugbear
+    name: Bugbear
+    cr: 1
+  - key: bugbear-brute
+    name: Bugbear Brute
+    cr: 3
+  - key: bugbear-shadowstalker
+    name: Bugbear Shadowstalker
+    cr: 5
+  environments: []
+  species: null
 common: &common
+  creature_type: null
   size: Medium
-  languages: ['Common', 'Goblin']
+  languages:
+  - Common
+  - Goblin
   creature_class: Bugbear
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Ambusher
+    primary: null
     additional: []
-  abilities:
-    STR: Primary
-    DEX: Medium
-    INT: Medium
-    WIS: Default
-    CHA: Medium
+  abilities: {}
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Stealth
+    - Stealth
     expertise: []
-  saves: []
-
-bugbear:
-  <<: *common
-
-bugbear-brute:
-  <<: *common
-
-bugbear-shadowstalker:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+bugbear: !!set
+  '<<: *common': null
+bugbear-brute: !!set
+  '<<: *common': null
+bugbear-shadowstalker: !!set
+  '<<: *common': null

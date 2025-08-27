@@ -2,46 +2,44 @@ template:
   key: chimera
   name: Chimera
   monsters:
-    - { key: chimera, name: "Chimera", cr: 6 }
-    - { key: chimera-sovereign, name: "Chimera Sovereign", cr: 10 }
-  environments:
-    - { region: hauntedlands, affinity: native }
-    - { development: wilderness, affinity: common }
-    - { development: ruin, affinity: common }
-    - { region: loftymountains, affinity: common }
-    - { development: settlement, affinity: rare }
-    - { region: HauntedLands, affinity: native }
-    - { region: LoftyMountains, affinity: common }
-  species: all
-
+  - key: chimera
+    name: Chimera
+    cr: 6
+  - key: chimera-sovereign
+    name: Chimera Sovereign
+    cr: 10
+  environments: []
+  species: null
 common: &common
   creature_type: Monstrosity
   size: Large
-  languages: ['Draconic']
+  languages:
+  - Draconic
   creature_class: Chimera
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Bruiser
+    primary: null
     additional: []
   abilities:
     STR: Primary
     DEX: Default
-    CON: Constitution
+    CON: Default
     INT: Default
-    WIS: Medium
+    WIS: Default
     CHA: Default
   attacks:
     main:
-      base: TBD
-      damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Perception
+    - Perception
     expertise: []
-  saves: []
-
-chimera:
-  <<: *common
-
-chimera-sovereign:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+chimera: !!set
+  '<<: *common': null
+chimera-sovereign: !!set
+  '<<: *common': null

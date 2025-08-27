@@ -2,41 +2,46 @@ template:
   key: medusa
   name: Medusa
   monsters:
-    - { key: medusa, name: "Medusa", cr: 6 }
-    - { key: medusa-queen, name: "Medusa Queen", cr: 10, legendary: true }
-  environments:
-    - { development: ruin, affinity: native }
-    - { development: dungeon, affinity: common }
-    - { development: stronghold, affinity: uncommon }
-    - { development: wilderness, affinity: uncommon }
-  species: all
-
+  - key: medusa
+    name: Medusa
+    cr: 6
+  - key: medusa-queen
+    name: Medusa Queen
+    cr: 10
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Monstrosity
   size: Medium
+  languages: []
   creature_class: Medusa
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Skirmisher
+    primary: null
     additional: []
   abilities:
     STR: Default
     DEX: Primary
     INT: Default
     WIS: Default
-    CHA: Medium
+    CHA: Default
   attacks:
     main:
-      base: TBD
+      base: Longbow
       damage_multiplier: 1.0
+      secondary_damage_type: Poison
   skills:
-    proficiency: []
+    proficiency:
+    - Initiative
+    - Deception
+    - Perception
+    - Stealth
     expertise: []
-  saves: []
-
-medusa:
-  <<: *common
-
-medusa-queen:
-  <<: *common
+  saves:
+  - WIS
+medusa: !!set
+  '<<: *common': null
+medusa-queen: !!set
+  '<<: *common': null

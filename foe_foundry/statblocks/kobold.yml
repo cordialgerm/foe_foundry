@@ -2,47 +2,47 @@ template:
   key: kobold
   name: Kobold
   monsters:
-    - { key: kobold-warrenguard, name: "Kobold Warrenguard", cr: 0.125 }
-    - { key: kobold-sharpsnout, name: "Kobold Sharpsnout", cr: 0.5 }
-    - { key: kobold-wyrmcaller, name: "Kobold Wyrmcaller", cr: 2 }
-  environments:
-    - { region: loftymountains, affinity: native }
-    - { biome: underground, affinity: native }
-    - { development: ruin, affinity: common }
-    - { development: frontier, affinity: uncommon }
-    - { region: LoftyMountains, affinity: native }
-  species: True
-
+  - key: kobold-warrenguard
+    name: Kobold Warrenguard
+    cr: null
+  - key: kobold-sharpsnout
+    name: Kobold Sharpsnout
+    cr: null
+  - key: kobold-wyrmcaller
+    name: Kobold Wyrmcaller
+    cr: 2
+  environments: []
+  species: null
 common: &common
+  creature_type: null
   size: Small
-  languages: ['Common', 'Draconic']
+  languages:
+  - Common
+  - Draconic
   creature_class: Kobold
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: null
     additional: []
-  abilities:
-    STR: Default
-    DEX: Medium
-    CON: Constitution
-    INT: Medium
-    WIS: Primary
-    CHA: Medium
+  abilities: {}
   attacks:
     main:
-      base: TBD
+      base: SpearAndShield
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Stealth
+    - Perception
+    - Stealth
     expertise: []
-  saves: []
-
-kobold-warrenguard:
-  <<: *common
-
-kobold-sharpsnout:
-  <<: *common
-
-kobold-wyrmcaller:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+kobold-warrenguard: !!set
+  '<<: *common': null
+kobold-sharpsnout: !!set
+  '<<: *common': null
+kobold-wyrmcaller: !!set
+  '<<: *common': null

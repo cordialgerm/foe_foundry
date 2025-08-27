@@ -1,41 +1,37 @@
 template:
-  key: animatedarmor
-  name: AnimatedArmor
+  key: animated-armor
+  name: Animated Armor
   monsters:
-    - { key: animated-armor, name: "Animated Armor", cr: 1 }
-    - { key: animated-runeplate, name: "Animated Runeplate", cr: 4 }
-  environments:
-    - { region: urbantownship, affinity: common }
-    - { development: dungeon, affinity: uncommon }
-    - { development: wilderness, affinity: rare }
-    - { region: UrbanTownship, affinity: common }
-  species: all
-
+  - key: animated-armor
+    name: Animated Armor
+    cr: 1
+  - key: animated-runeplate
+    name: Animated Runeplate
+    cr: 4
+  environments: []
+  species: null
 common: &common
   creature_type: Construct
   size: Medium
-  languages: ['Understands Common but can']
+  languages:
+  - Understands Common but can't speak
   creature_class: Animated Armor
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Defender
-    additional: ['Soldier']
-  abilities:
-    STR: Primary
-    DEX: Medium
-    CON: Constitution
+    primary: null
+    additional: []
+  abilities: {}
   attacks:
     main:
-      base: TBD
+      base: SwordAndShield
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
   saves: []
-
-animated-armor:
-  <<: *common
-
-animated-runeplate:
-  <<: *common
+animated-armor: !!set
+  '<<: *common': null
+animated-runeplate: !!set
+  '<<: *common': null

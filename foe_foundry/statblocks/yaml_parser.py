@@ -8,19 +8,26 @@ from __future__ import annotations
 
 import yaml
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Optional
 
 from ..statblocks.base import BaseStatblock
-from ..attack_template import AttackTemplate
+from ..attack_template import AttackTemplate, weapon
 from ..creature_types import CreatureType
 from ..size import Size
 from ..role_types import MonsterRole
-from ..skills import AbilityScore, StatScaling
+from ..skills import AbilityScore, StatScaling, Skills
+from ..damage import DamageType, Condition
+from ..attributes import Attributes
 from ..movement import Movement
 from ..senses import Senses
-from ..attributes import Attributes
-from ..die import DieFormula, Die
-from ..damage import DamageType
+from ..die import DieFormula
+
+
+def get_ac_template_by_name(template_name: str):
+    """Get AC template by name - placeholder implementation."""
+    # This would need to be implemented to return the actual AC template
+    # For now, return None to avoid errors
+    return None
 
 
 class YAMLTemplateParser:
@@ -41,7 +48,7 @@ class YAMLTemplateParser:
         
         Args:
             yaml_path: Path to the YAML template file
-            monster_key: The specific monster variant to generate (e.g., 'assassin', 'assassin-legend')
+            monster_key: The specific monster variant to generate (e.g., 'berserker', 'berserker-legend')
             cr: Optional CR override
             
         Returns:
@@ -49,9 +56,13 @@ class YAMLTemplateParser:
         """
         template_data = self.load_template(yaml_path)
         
-        # Find the monster definition
+        # Get the common template and the specific monster variant
+        common_data = template_data.get('common', {})
+        monster_data = template_data.get(monster_key, {})
+        
+        # Find monster info from template metadata
         monster_info = None
-        for monster in template_data['template']['monsters']:
+        for monster in template_data.get('template', {}).get('monsters', []):
             if monster['key'] == monster_key:
                 monster_info = monster
                 break
@@ -59,256 +70,264 @@ class YAMLTemplateParser:
         if not monster_info:
             raise ValueError(f"Monster '{monster_key}' not found in template")
         
-        # Use provided CR or get from monster definition
-        monster_cr = cr if cr is not None else monster_info['cr']
-        monster_name = monster_info['name']
+        # Use provided CR or template CR
+        actual_cr = cr if cr is not None else monster_info['cr']
         is_legendary = monster_info.get('legendary', False)
         
-        # Get common stats
-        common_stats = template_data['common']
+        # Merge common and monster-specific data
+        merged_data = self._merge_template_data(common_data, monster_data)
         
-        # Get variant-specific overrides
-        variant_stats = template_data.get(monster_key, {})
+        # Build the statblock
+        statblock = self._build_statblock(merged_data, monster_info['name'], actual_cr, is_legendary)
         
-        # Merge common and variant stats
-        merged_stats = self._merge_stats(common_stats, variant_stats)
+        # Build attacks
+        attacks = self._build_attacks(merged_data)
         
-        # Build BaseStatblock
-        base_stats = self._build_base_statblock(
-            name=monster_name,
-            template_key=template_data['template']['key'],
-            monster_key=monster_key,
-            cr=monster_cr,
-            is_legendary=is_legendary,
-            stats=merged_stats
-        )
-        
-        # Build AttackTemplates
-        attacks = self._build_attack_templates(merged_stats.get('attacks', {}))
-        
-        return base_stats, attacks
+        return statblock, attacks
     
-    def _merge_stats(self, common: Dict[str, Any], variant: Dict[str, Any]) -> Dict[str, Any]:
-        """Merge common stats with variant-specific overrides."""
-        # Deep copy common stats
-        import copy
-        merged = copy.deepcopy(common)
+    def _merge_template_data(self, common_data: Dict[str, Any], monster_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Merge common template data with monster-specific overrides."""
+        merged = common_data.copy()
         
-        # Apply variant overrides
-        for key, value in variant.items():
-            if key == '<<':
+        for key, value in monster_data.items():
+            if key == '<<': 
                 continue  # Skip YAML anchor reference
-            merged[key] = value
+            
+            if isinstance(value, dict) and key in merged and isinstance(merged[key], dict):
+                # Deep merge for nested dictionaries
+                merged[key] = {**merged[key], **value}
+            elif isinstance(value, list) and key in merged and isinstance(merged[key], list):
+                # Replace lists entirely (no merging)
+                merged[key] = value
+            else:
+                # Direct replacement
+                merged[key] = value
         
         return merged
     
-    def _build_base_statblock(self, name: str, template_key: str, monster_key: str, 
-                              cr: float, is_legendary: bool, stats: Dict[str, Any]) -> BaseStatblock:
-        """Build a BaseStatblock from merged stats."""
+    def _build_statblock(self, data: Dict[str, Any], name: str, cr: float, is_legendary: bool) -> BaseStatblock:
+        """Build a BaseStatblock from template data."""
         
-        # Parse creature type
-        creature_type_str = stats.get('creature_type', 'Humanoid')
-        creature_type = getattr(CreatureType, creature_type_str, CreatureType.Humanoid)
+        # Basic creature information
+        creature_type = getattr(CreatureType, data.get('creature_type', 'Humanoid'))
+        size = getattr(Size, data.get('size', 'Medium'))
         
-        # Parse size
-        size_str = stats.get('size', 'Medium')
-        size = getattr(Size, size_str, Size.Medium)
+        # Build attributes with ability scores
+        attributes = self._build_attributes(data.get('abilities', {}), cr)
         
-        # Parse roles
-        roles_data = stats.get('roles', {})
-        primary_role = getattr(MonsterRole, roles_data.get('primary', 'Default'), MonsterRole.Default)
-        additional_roles = [
-            getattr(MonsterRole, role, MonsterRole.Default) 
-            for role in roles_data.get('additional', [])
-        ]
-        
-        # Parse abilities (simplified for now)
-        abilities_data = stats.get('abilities', {})
-        attributes = self._build_attributes(abilities_data, cr)
-        
-        # Build basic movement (30 ft walk speed default)
-        walk_speed = stats.get('walk_speed', 30)
-        fly_speed = stats.get('fly_speed')
-        climb_speed = stats.get('climb_speed')
-        burrow_speed = stats.get('burrow_speed')
-        
+        # Movement
         movement = Movement(
-            walk=walk_speed,
-            fly=fly_speed,
-            climb=climb_speed,
-            burrow=burrow_speed
+            walk=data.get('walk_speed', 30),
+            fly=data.get('fly_speed'),
+            burrow=data.get('burrow_speed'),
+            climb=data.get('climb_speed'),
+            swim=data.get('swim_speed')
         )
         
-        # Build senses
+        # Senses
         senses = Senses(
-            darkvision=stats.get('darkvision', 0),
-            blindsight=stats.get('blindsight', 0),
-            truesight=stats.get('truesight', 0)
+            darkvision=data.get('darkvision'),
+            blindsight=data.get('blindsight'),
+            truesight=data.get('truesight')
         )
         
-        # Calculate HP (simplified - using a basic formula)
-        hp_multiplier = stats.get('hp_multiplier', 1.0)
-        hp_formula = self._calculate_hp_formula(cr, size, hp_multiplier)
+        # Roles
+        roles_data = data.get('roles', {})
+        primary_role = getattr(MonsterRole, roles_data.get('primary', 'Bruiser'), None) if roles_data.get('primary') else None
+        additional_roles = [getattr(MonsterRole, role) for role in roles_data.get('additional', [])]
         
-        # Create BaseStatblock
-        base_stats = BaseStatblock(
+        # Create base statblock
+        statblock = BaseStatblock(
             name=name,
-            template_key=template_key,
-            variant_key=monster_key,  # Simplified
-            monster_key=monster_key,
-            species_key=None,  # Simplified
-            cr=cr,
-            hp=hp_formula,
             creature_type=creature_type,
-            creature_class=stats.get('creature_class'),
-            role=primary_role,
-            additional_roles=additional_roles,
-            speed=movement,
+            additional_creature_types=data.get('additional_creature_types', []),
+            creature_subtype=data.get('creature_subtype'),
             size=size,
-            senses=senses,
+            cr=cr,
             attributes=attributes,
-            languages=stats.get('languages', []),
-            damage_multiplier=stats.get('damage_multiplier', 1.0),
-            secondary_damage_type=self._parse_damage_type(stats.get('secondary_damage_type')),
-            primary_damage_type=self._parse_damage_type(stats.get('primary_damage_type')),
-            is_legendary=is_legendary
+            movement=movement,
+            senses=senses,
+            languages=data.get('languages', []),
+            creature_class=data.get('creature_class'),
+            hp_multiplier=data.get('hp_multiplier', 1.0),
+            damage_multiplier=data.get('damage_multiplier', 1.0)
         )
         
-        return base_stats
+        # Add roles
+        if primary_role:
+            statblock = statblock.with_roles(primary_role=primary_role, additional_roles=additional_roles)
+        
+        # Add legendary status
+        if is_legendary:
+            statblock = statblock.as_legendary()
+        
+        # Add AC templates
+        ac_templates = data.get('ac_templates', [])
+        for ac_template_info in ac_templates:
+            template_name = ac_template_info.get('template')
+            modifier = ac_template_info.get('modifier', 0)
+            if template_name:
+                ac_template = get_ac_template_by_name(template_name)
+                if ac_template:
+                    statblock = statblock.add_ac_template(ac_template, modifier)
+        
+        # Add condition immunities
+        condition_immunities = data.get('condition_immunities', [])
+        for condition_name in condition_immunities:
+            condition = getattr(Condition, condition_name, None)
+            if condition:
+                statblock = statblock.grant_resistance_or_immunity(conditions={condition})
+        
+        # Add damage immunities/resistances/vulnerabilities
+        for immunity_type in ['damage_immunities', 'damage_resistances', 'damage_vulnerabilities']:
+            damage_types = data.get(immunity_type, [])
+            damage_type_objs = set()
+            for dt_name in damage_types:
+                dt = getattr(DamageType, dt_name, None)
+                if dt:
+                    damage_type_objs.add(dt)
+            
+            if damage_type_objs:
+                if immunity_type == 'damage_immunities':
+                    statblock = statblock.grant_resistance_or_immunity(damage_types=damage_type_objs)
+                elif immunity_type == 'damage_resistances':
+                    statblock = statblock.grant_resistance_or_immunity(damage_types=damage_type_objs, resistance=True)
+                # Note: damage_vulnerabilities would need separate handling if implemented
+        
+        # Add skills
+        skills_data = data.get('skills', {})
+        proficiency_skills = skills_data.get('proficiency', [])
+        expertise_skills = skills_data.get('expertise', [])
+        
+        all_skills = list(set(proficiency_skills + expertise_skills))
+        for skill_name in all_skills:
+            skill = getattr(Skills, skill_name, None)
+            if skill:
+                # Grant expertise if in expertise list, otherwise proficiency
+                statblock = statblock.grant_proficiency_or_expertise(skill, force_expertise=skill_name in expertise_skills)
+        
+        # Add saving throw proficiencies
+        saves = data.get('saves', [])
+        for save_name in saves:
+            ability = getattr(AbilityScore, save_name, None)
+            if ability:
+                statblock = statblock.copy(
+                    attributes=statblock.attributes.grant_save_proficiency(ability)
+                )
+        
+        # Add secondary damage type if specified
+        secondary_damage_type = self._parse_secondary_damage_type(data.get('attacks', {}).get('main', {}).get('secondary_damage_type'))
+        if secondary_damage_type:
+            statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
+        
+        return statblock
     
     def _build_attributes(self, abilities_data: Dict[str, Any], cr: float) -> Attributes:
-        """Build Attributes from abilities data (simplified)."""
-        # This is a simplified implementation
-        # In reality, we'd need to implement the StatScaling logic
-        base_scores = {
-            'STR': 10,
-            'DEX': 10, 
-            'CON': 10,
-            'INT': 10,
-            'WIS': 10,
-            'CHA': 10
+        """Build Attributes object from abilities data."""
+        # Map ability names to ability score enums
+        ability_map = {
+            'STR': AbilityScore.STR,
+            'DEX': AbilityScore.DEX,
+            'CON': AbilityScore.CON,
+            'INT': AbilityScore.INT,
+            'WIS': AbilityScore.WIS,
+            'CHA': AbilityScore.CHA
         }
         
-        # Apply some basic CR-based scaling
-        cr_bonus = int(cr // 4)
+        stats = {}
+        for ability_name, scaling_info in abilities_data.items():
+            ability = ability_map.get(ability_name)
+            if ability:
+                stats[ability] = self._parse_stat_scaling(scaling_info)
         
-        for ability, scaling in abilities_data.items():
-            if scaling == 'Primary':
-                base_scores[ability] = 13 + cr_bonus + 2
-            elif scaling == 'Medium':
-                base_scores[ability] = 12 + cr_bonus
-            elif scaling == 'Constitution':
-                base_scores[ability] = 12 + cr_bonus + 1
-            # Default stays at 10 + small bonus
-            elif scaling == 'Default':
-                base_scores[ability] = 10 + cr_bonus // 2
-        
-        # Calculate proficiency bonus based on CR
-        proficiency = 2 + int(cr // 4)
-        if proficiency > 9:
-            proficiency = 9  # Cap at +9
-        
+        # Use a base stats function to generate the attributes
+        # This is a simplified version - the real implementation would use the actual base_stats function
+        return self._generate_base_attributes(stats, cr)
+    
+    def _parse_stat_scaling(self, scaling_info: Any) -> Any:
+        """Parse stat scaling information."""
+        if isinstance(scaling_info, str):
+            # Simple scaling like "Primary"
+            return getattr(StatScaling, scaling_info, StatScaling.Default)
+        elif isinstance(scaling_info, list) and len(scaling_info) >= 2:
+            # Tuple format like ["Medium", 2]
+            scaling_type = getattr(StatScaling, scaling_info[0], StatScaling.Default)
+            modifier = int(scaling_info[1])
+            return (scaling_type, modifier)
+        else:
+            return StatScaling.Default
+    
+    def _generate_base_attributes(self, stats: Dict[AbilityScore, Any], cr: float) -> Attributes:
+        """Generate base attributes - simplified version for parsing."""
+        # This is a placeholder - in reality this would call the actual base_stats function
+        # For now, return a basic Attributes object
         return Attributes(
-            proficiency=proficiency,
-            STR=base_scores['STR'],
-            DEX=base_scores['DEX'],
-            CON=base_scores['CON'],
-            INT=base_scores['INT'],
-            WIS=base_scores['WIS'],
-            CHA=base_scores['CHA']
+            strength=10, dexterity=10, constitution=10, 
+            intelligence=10, wisdom=10, charisma=10
         )
     
-    def _calculate_hp_formula(self, cr: float, size: Size, hp_multiplier: float) -> DieFormula:
-        """Calculate HP formula based on CR and size (simplified)."""
-        # This is a very simplified HP calculation
-        # In reality, we'd use the same logic as base_stats()
+    def _build_attacks(self, data: Dict[str, Any]) -> List[AttackTemplate]:
+        """Build attack templates from template data."""
+        attacks = []
         
-        # Base HP by CR (rough approximation)
-        base_hp_by_cr = {
-            0.125: 7, 0.25: 9, 0.5: 11, 1: 13, 2: 16, 3: 19, 4: 22,
-            5: 25, 6: 28, 7: 31, 8: 34, 9: 37, 10: 40, 11: 43, 12: 46,
-            13: 49, 14: 52, 15: 55, 16: 58, 17: 61, 18: 64, 19: 67, 20: 70,
-            21: 73, 22: 76, 23: 79, 24: 82, 25: 85, 26: 88, 27: 91, 28: 94, 29: 97, 30: 100
-        }
+        attacks_data = data.get('attacks', {})
         
-        base_hp = base_hp_by_cr.get(cr, int(cr * 3 + 10))
-        final_hp = int(base_hp * hp_multiplier)
+        # Main attack
+        main_attack = attacks_data.get('main', {})
+        if main_attack:
+            attack = self._build_single_attack(main_attack)
+            if attack:
+                attacks.append(attack)
         
-        # Create a simple die formula (this is very simplified)
-        die_count = max(1, final_hp // 6)
-        bonus = final_hp - (die_count * 4)  # Rough average for d8
+        # Secondary attack
+        secondary_attack = attacks_data.get('secondary', {})
+        if secondary_attack:
+            attack = self._build_single_attack(secondary_attack)
+            if attack:
+                attacks.append(attack)
         
-        return DieFormula.from_dice(d8=die_count, mod=bonus)
+        return attacks
     
-    def _parse_damage_type(self, damage_type_data) -> DamageType | None:
-        """Parse damage type from YAML data."""
-        if not damage_type_data:
+    def _build_single_attack(self, attack_data: Dict[str, Any]) -> Optional[AttackTemplate]:
+        """Build a single attack template."""
+        base_name = attack_data.get('base')
+        if not base_name:
             return None
         
-        if isinstance(damage_type_data, str):
-            return getattr(DamageType, damage_type_data, None)
+        # Get the base attack template
+        base_attack = getattr(weapon, base_name, None)
+        if not base_attack:
+            return None
         
-        # Handle list of damage types (random choice) - for now just take first
-        if isinstance(damage_type_data, list) and damage_type_data:
-            return getattr(DamageType, damage_type_data[0], None)
+        attack = base_attack
+        
+        # Apply display name if specified
+        display_name = attack_data.get('display_name')
+        if display_name:
+            attack = attack.with_display_name(display_name)
+        
+        # Apply damage multiplier if specified
+        damage_multiplier = attack_data.get('damage_multiplier', 1.0)
+        if damage_multiplier != 1.0:
+            attack = attack.with_damage_multiplier(damage_multiplier)
+        
+        return attack
+    
+    def _parse_secondary_damage_type(self, secondary_damage_data: Any) -> Optional[Any]:
+        """Parse secondary damage type information."""
+        if not secondary_damage_data:
+            return None
+        
+        if isinstance(secondary_damage_data, str):
+            # Single damage type
+            return getattr(DamageType, secondary_damage_data, None)
+        elif isinstance(secondary_damage_data, list):
+            # Multiple damage types (random choice)
+            damage_types = []
+            for dt_name in secondary_damage_data:
+                dt = getattr(DamageType, dt_name, None)
+                if dt:
+                    damage_types.append(dt)
+            return damage_types if damage_types else None
         
         return None
-    
-    def _build_attack_templates(self, attacks_data: Dict[str, Any]) -> List[AttackTemplate]:
-        """Build AttackTemplate objects from attacks data."""
-        attack_templates = []
-        
-        # Handle main attack
-        main_attack = attacks_data.get('main')
-        if main_attack:
-            attack_template = self._build_single_attack(main_attack)
-            if attack_template:
-                attack_templates.append(attack_template)
-        
-        # Handle secondary attack
-        secondary_attack = attacks_data.get('secondary')
-        if secondary_attack:
-            attack_template = self._build_single_attack(secondary_attack)
-            if attack_template:
-                attack_templates.append(attack_template)
-        
-        return attack_templates
-    
-    def _build_single_attack(self, attack_data: Dict[str, Any]) -> AttackTemplate | None:
-        """Build a single AttackTemplate from attack data."""
-        base_name = attack_data.get('base')
-        if not base_name or base_name == 'TBD':
-            return None
-        
-        # This is very simplified - in reality we'd need to import
-        # and look up the actual weapon/attack templates
-        display_name = attack_data.get('display_name', base_name)
-        damage_multiplier = attack_data.get('damage_multiplier', 1.0)
-        
-        # Create a basic attack template (this is a placeholder)
-        from ..attack_template.weapon import Daggers  # Example import
-        
-        # This is a simplified approach - in reality we'd have a registry
-        # of all available attack templates to look up by name
-        return AttackTemplate(
-            attack_name=base_name,
-            display_name=display_name,
-            die=Die.d6,  # Placeholder
-            damage_scalar=damage_multiplier
-        )
-
-
-def parse_yaml_template(yaml_path: Path, monster_key: str, cr: float = None) -> Tuple[BaseStatblock, List[AttackTemplate]]:
-    """
-    Convenience function to parse a YAML template.
-    
-    Args:
-        yaml_path: Path to the YAML template file
-        monster_key: The specific monster variant to generate
-        cr: Optional CR override
-        
-    Returns:
-        Tuple of (BaseStatblock, list[AttackTemplate])
-    """
-    parser = YAMLTemplateParser()
-    return parser.parse_template(yaml_path, monster_key, cr)

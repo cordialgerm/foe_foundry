@@ -1,55 +1,60 @@
 template:
-  key: frostgiant
-  name: FrostGiant
+  key: frost-giant
+  name: Frost Giant
   monsters:
-    - { key: frost-giant-reaver, name: "Frost Giant Reaver", cr: 8 }
-    - { key: frost-giant-challenger, name: "Frost Giant Challenger", cr: 10 }
-    - { key: frost-giant-rimepriest, name: "Frost Giant Rimepriest", cr: 12 }
-    - { key: frost-giant-thane, name: "Frost Giant Thane", cr: 16, legendary: true }
-  environments:
-    - { region: frozenwastes, affinity: native }
-    - { region: loftymountains, affinity: common }
-    - { biome: arctic, affinity: native }
-    - { region: restlesssea, affinity: uncommon }
-    - { region: FrozenWastes, affinity: native }
-    - { region: LoftyMountains, affinity: common }
-    - { region: RestlessSea, affinity: uncommon }
-  species: all
-
+  - key: frost-giant-reaver
+    name: Frost Giant Reaver
+    cr: 8
+  - key: frost-giant-challenger
+    name: Frost Giant Challenger
+    cr: 10
+  - key: frost-giant-rimepriest
+    name: Frost Giant Rimepriest
+    cr: 12
+  - key: frost-giant-thane
+    name: Frost Giant Thane
+    cr: 16
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Giant
   size: Huge
-  languages: ['Common', 'Giant']
+  languages:
+  - Common
+  - Giant
   creature_class: Frost Giant
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
     primary: Bruiser
     additional: []
-  abilities:
-    STR: Primary
-    DEX: Default
-    CON: Constitution
-    INT: Default
-    WIS: Default
-    CHA: Default
+  abilities: {}
   attacks:
     main:
-      base: TBD
+      base: Greataxe
       damage_multiplier: 1.0
+      secondary_damage_type: Cold
   skills:
-    proficiency: []
+    proficiency:
+    - Insight
+    - Perception
+    - Initiative
+    - Athletics
+    - Perception
+    - Survival
+    - Initiative
     expertise: []
-  saves: []
-
-frost-giant-reaver:
-  <<: *common
-
-frost-giant-challenger:
-  <<: *common
-
-frost-giant-rimepriest:
-  <<: *common
-
-frost-giant-thane:
-  <<: *common
+  saves:
+  - CON
+  - STR
+  - CHA
+  - WIS
+frost-giant-reaver: !!set
+  '<<: *common': null
+frost-giant-challenger: !!set
+  '<<: *common': null
+frost-giant-rimepriest: !!set
+  '<<: *common': null
+frost-giant-thane: !!set
+  '<<: *common': null

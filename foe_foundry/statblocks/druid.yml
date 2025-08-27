@@ -2,25 +2,33 @@ template:
   key: druid
   name: Druid
   monsters:
-    - { key: druid, name: "Druid", cr: 2 }
-    - { key: druid-greenwarden, name: "Druid Greenwarden", cr: 6 }
-    - { key: archdruid-of-the-old-way, name: "Archdruid of the Old Way", cr: 12 }
-    - { key: archdruid-of-the-first-grove, name: "Archdruid of the First Grove", cr: 16, legendary: true }
-  environments:
-    - { development: frontier, affinity: common }
-    - { biome: swamp, affinity: uncommon }
-    - { development: ruin, affinity: uncommon }
-  species: all
-
+  - key: druid
+    name: Druid
+    cr: 2
+  - key: druid-greenwarden
+    name: Druid Greenwarden
+    cr: 6
+  - key: archdruid-of-the-old-way
+    name: Archdruid of the Old Way
+    cr: 12
+  - key: archdruid-of-the-first-grove
+    name: Archdruid of the First Grove
+    cr: 16
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Humanoid
   size: Medium
-  languages: ['Common', 'Druidic', 'Sylvan']
+  languages:
+  - Common
+  - Druidic
+  - Sylvan
   creature_class: Druid
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Support
+    primary: null
     additional: []
   abilities:
     STR: Default
@@ -30,21 +38,23 @@ common: &common
     CHA: Default
   attacks:
     main:
-      base: TBD
+      base: Staff
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Medicine
+    - Nature
+    - Perception
     expertise: []
-  saves: []
-
-druid:
-  <<: *common
-
-druid-greenwarden:
-  <<: *common
-
-archdruid-of-the-old-way:
-  <<: *common
-
-archdruid-of-the-first-grove:
-  <<: *common
+  saves:
+  - CON
+  - WIS
+druid: !!set
+  '<<: *common': null
+druid-greenwarden: !!set
+  '<<: *common': null
+archdruid-of-the-old-way: !!set
+  '<<: *common': null
+archdruid-of-the-first-grove: !!set
+  '<<: *common': null

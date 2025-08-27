@@ -2,84 +2,102 @@ template:
   key: cultist
   name: Cultist
   monsters:
-    - { key: cultist, name: "Cultist", cr: 0.125 }
-    - { key: cultist-fanatic, name: "Cultist Fanatic", cr: 2 }
-    - { key: cultist-grand-master, name: "Cultist Grand Master", cr: 10 }
-    - { key: cultist-exarch, name: "Cultist Exarch", cr: 14, legendary: true }
-    - { key: aberrant-cultist-initiate, name: "Aberrant Cultist Initiate", cr: 4 }
-    - { key: aberrant-cultist, name: "Aberrant Cultist", cr: 8 }
-    - { key: aberrant-cultist-grand-master, name: "Aberrant Cultist Grand Master", cr: 14 }
-    - { key: death-cultist-initiate, name: "Death Cultist Initiate", cr: 4 }
-    - { key: death-cultist, name: "Death Cultist", cr: 8 }
-    - { key: death-cultist-grand-master, name: "Death Cultist Grand Master", cr: 14 }
-    - { key: fiend-cultist-initiate, name: "Fiend Cultist Initiate", cr: 4 }
-    - { key: fiend-cultist, name: "Fiend Cultist", cr: 8 }
-    - { key: fiend-cultist-grand-master, name: "Fiend Cultist Grand Master", cr: 14 }
-  environments:
-    - { development: settlement, affinity: common }
-    - { development: ruin, affinity: common }
-  species: all
-
+  - key: cultist
+    name: Cultist
+    cr: null
+  - key: cultist-fanatic
+    name: Cultist Fanatic
+    cr: 2
+  - key: cultist-grand-master
+    name: Cultist Grand Master
+    cr: 10
+  - key: cultist-exarch
+    name: Cultist Exarch
+    cr: 14
+    legendary: true
+  - key: aberrant-cultist-initiate
+    name: Aberrant Cultist Initiate
+    cr: 4
+  - key: aberrant-cultist
+    name: Aberrant Cultist
+    cr: 8
+  - key: aberrant-cultist-grand-master
+    name: Aberrant Cultist Grand Master
+    cr: 14
+  - key: death-cultist-initiate
+    name: Death Cultist Initiate
+    cr: 4
+  - key: death-cultist
+    name: Death Cultist
+    cr: 8
+  - key: death-cultist-grand-master
+    name: Death Cultist Grand Master
+    cr: 14
+  - key: fiend-cultist-initiate
+    name: Fiend Cultist Initiate
+    cr: 4
+  - key: fiend-cultist
+    name: Fiend Cultist
+    cr: 8
+  - key: fiend-cultist-grand-master
+    name: Fiend Cultist Grand Master
+    cr: 14
+  environments: []
+  species: null
 common: &common
   creature_type: Humanoid
   size: Medium
-  languages: ['Common']
+  languages:
+  - Common
   creature_class: Cultist
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Controller
+    primary: null
     additional: []
   abilities:
     STR: Default
-    DEX: Medium
+    DEX: Default
     INT: Default
-    WIS: Medium
+    WIS: Default
     CHA: Primary
   attacks:
     main:
-      base: TBD
+      base: Daggers
       damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency: []
+    proficiency:
+    - Deception
+    - Religion
+    - Persuasion
+    - Initiative
     expertise: []
-  saves: []
-
-cultist:
-  <<: *common
-
-cultist-fanatic:
-  <<: *common
-
-cultist-grand-master:
-  <<: *common
-
-cultist-exarch:
-  <<: *common
-
-aberrant-cultist-initiate:
-  <<: *common
-
-aberrant-cultist:
-  <<: *common
-
-aberrant-cultist-grand-master:
-  <<: *common
-
-death-cultist-initiate:
-  <<: *common
-
-death-cultist:
-  <<: *common
-
-death-cultist-grand-master:
-  <<: *common
-
-fiend-cultist-initiate:
-  <<: *common
-
-fiend-cultist:
-  <<: *common
-
-fiend-cultist-grand-master:
-  <<: *common
+  saves:
+  - WIS
+cultist: !!set
+  '<<: *common': null
+cultist-fanatic: !!set
+  '<<: *common': null
+cultist-grand-master: !!set
+  '<<: *common': null
+cultist-exarch: !!set
+  '<<: *common': null
+aberrant-cultist-initiate: !!set
+  '<<: *common': null
+aberrant-cultist: !!set
+  '<<: *common': null
+aberrant-cultist-grand-master: !!set
+  '<<: *common': null
+death-cultist-initiate: !!set
+  '<<: *common': null
+death-cultist: !!set
+  '<<: *common': null
+death-cultist-grand-master: !!set
+  '<<: *common': null
+fiend-cultist-initiate: !!set
+  '<<: *common': null
+fiend-cultist: !!set
+  '<<: *common': null
+fiend-cultist-grand-master: !!set
+  '<<: *common': null

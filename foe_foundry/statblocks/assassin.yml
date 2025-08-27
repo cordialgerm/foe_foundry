@@ -2,47 +2,56 @@ template:
   key: assassin
   name: Assassin
   monsters:
-    - { key: contract-killer, name: "Contract Killer", cr: 4 }
-    - { key: assassin, name: "Assassin", cr: 8 }
-    - { key: assassin-legend, name: "Assassin Legend", cr: 12, legendary: true }
-  environments:
-    - { region: countryshire, affinity: uncommon }
-    - { development: stronghold, affinity: uncommon }
-    - { development: frontier, affinity: rare }
-    - { development: wilderness, affinity: rare }
-    - { region: CountryShire, affinity: uncommon }
-  species: all
-
+  - key: contract-killer
+    name: Contract Killer
+    cr: 4
+  - key: assassin
+    name: Assassin
+    cr: 8
+  - key: assassin-legend
+    name: Assassin Legend
+    cr: 12
+    legendary: true
+  environments: []
+  species: null
 common: &common
   creature_type: Humanoid
   size: Medium
-  languages: ['Common']
+  languages:
+  - Common
   creature_class: Assassin
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Ambusher
-    additional: ['Skirmisher', 'Artillery']
+    primary: null
+    additional: []
   abilities:
     STR: Default
     DEX: Primary
-    INT: Medium
-    WIS: Medium
-    CHA: Medium
+    INT: Default
+    WIS: Default
+    CHA: Default
   attacks:
     main:
-      base: TBD
+      base: Daggers
       damage_multiplier: 1.0
+      secondary_damage_type: Poison
   skills:
-    proficiency: []
+    proficiency:
+    - Acrobatics
+    - Perception
+    - Stealth
+    - Initiative
+    - Stealth
+    - Perception
+    - Initiative
     expertise: []
-  saves: []
-
-contract-killer:
-  <<: *common
-
-assassin:
-  <<: *common
-
-assassin-legend:
-  <<: *common
+  saves:
+  - DEX
+  - INT
+contract-killer: !!set
+  '<<: *common': null
+assassin: !!set
+  '<<: *common': null
+assassin-legend: !!set
+  '<<: *common': null
