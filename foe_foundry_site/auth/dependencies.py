@@ -186,7 +186,7 @@ def validate_credits(auth_context: AuthContext, cost: int) -> CreditValidationRe
     Returns:
         None if credits are sufficient, otherwise returns error response data
     """
-    credits_remaining = auth_context.get_credits_remaining()
+    credits_remaining = auth_context.credits_remaining
     if not auth_context.can_use_credits(cost):
         if auth_context.is_anonymous:
             message = f"Insufficient credits. Need {cost}, have {credits_remaining}. Create an account for more credits!"

@@ -24,6 +24,15 @@ from .dependencies import (
     SessionDep,
 )
 from .models import AccountType, PatronStatus, PatronTier, User
+from .schemas import (
+    AuthGoogleResponse,
+    AuthMeResponse,
+    AuthStatusResponse,
+    LogoutResponse,
+    UserInfo,
+    CreditsInfo,
+    AnonymousInfo,
+)
 
 router = APIRouter(prefix="/auth", tags=["authentication"])
 log = logging.getLogger(__name__)
@@ -35,7 +44,7 @@ def auth_demo():
     return FileResponse("demo_auth.html", media_type="text/html")
 
 
-@router.post("/google")
+@router.post("/google", response_model=AuthGoogleResponse)
 async def auth_google(
     request: Request,
     credential: str = Form(...),
@@ -102,16 +111,16 @@ async def auth_google(
     }
 
     log.info(f"Google login successful for user {user.email}")
-    return JSONResponse(
-        {
-            "detail": "Google login successful",
-            "user": {
-                "email": user.email,
-                "display_name": user.display_name,
-                "tier": user.patron_tier.value,
-                "credits_remaining": user.credits_remaining,
-            },
-        }
+    return AuthGoogleResponse(
+        detail="Google login successful",
+        user=UserInfo(
+            id=user.id,
+            email=user.email,
+            display_name=user.display_name,
+            profile_picture=user.profile_picture,
+            tier=user.patron_tier.value,
+            account_type=user.account_type.value,
+        ),
     )
 
 
@@ -361,53 +370,53 @@ async def discord_callback(
     return RedirectResponse("/", status_code=302)
 
 
-@router.post("/logout")
+@router.post("/logout", response_model=LogoutResponse)
 def logout(request: Request):
     """Log out the current user."""
     request.session.clear()
-    return JSONResponse({"detail": "Logged out successfully"})
+    return LogoutResponse(detail="Logged out successfully")
 
 
-@router.get("/me")
+@router.get("/me", response_model=AuthMeResponse)
 def get_current_user(auth_context: AuthContextDep):
     """Get current user information."""
     if auth_context.is_authenticated and auth_context.user:
         user = auth_context.user
-        return {
-            "authenticated": True,
-            "user": {
-                "id": user.id,
-                "email": user.email,
-                "display_name": user.display_name,
-                "profile_picture": user.profile_picture,
-                "tier": user.patron_tier.value,
-                "account_type": user.account_type.value,
-            },
-            "credits": {
-                "credits_remaining": auth_context.credits_remaining,
-                "credits_limit": auth_context.credit_limit,
-            },
-        }
+        return AuthMeResponse(
+            authenticated=True,
+            user=UserInfo(
+                id=user.id,
+                email=user.email,
+                display_name=user.display_name,
+                profile_picture=user.profile_picture,
+                tier=user.patron_tier.value,
+                account_type=user.account_type.value,
+            ),
+            credits=CreditsInfo(
+                credits_remaining=auth_context.credits_remaining,
+                credits_limit=auth_context.credit_limit(),
+            ),
+        )
     else:
-        return {
-            "authenticated": False,
-            "anonymous": {
-                "id": auth_context.anon_session.anon_id,
-                "tier": "anonymous",
-            },
-            "credits": {
-                "credits_remaining": auth_context.credits_remaining,
-                "credits_limit": auth_context.credit_limit,
-            },
-        }
+        return AuthMeResponse(
+            authenticated=False,
+            anonymous=AnonymousInfo(
+                id=auth_context.anon_session.anon_id,
+                tier="anonymous",
+            ),
+            credits=CreditsInfo(
+                credits_remaining=auth_context.credits_remaining,
+                credits_limit=auth_context.credit_limit(),
+            ),
+        )
 
 
-@router.get("/status")
+@router.get("/status", response_model=AuthStatusResponse)
 def get_auth_status(auth_context: AuthContextDep):
     """Get authentication status for frontend."""
-    return {
-        "authenticated": auth_context.is_authenticated,
-        "tier": auth_context.get_tier_name().lower(),
-        "credits_remaining": auth_context.get_credits_remaining(),
-        "can_generate": auth_context.can_use_credits(1),
-    }
+    return AuthStatusResponse(
+        authenticated=auth_context.is_authenticated,
+        tier=auth_context.tier_name.lower(),
+        credits_remaining=auth_context.credits_remaining,
+        can_generate=auth_context.can_use_credits(1),
+    )
