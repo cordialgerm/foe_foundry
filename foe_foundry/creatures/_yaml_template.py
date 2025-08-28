@@ -255,22 +255,22 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
     Parse movement data from YAML.
 
     Args:
-        data: YAML data containing movement section
+        data: YAML data containing speed section
 
     Returns:
         Movement object, or None if no movement data
     """
-    movement_data = data.get("movement", {})
-    if not movement_data:
+    speed_data = data.get("speed", {})
+    if not speed_data:
         return None
 
     movement_kwargs = {}
     for movement_type in ["walk", "climb", "fly", "swim", "burrow"]:
-        if movement_type in movement_data:
-            movement_kwargs[movement_type] = movement_data[movement_type]
+        if movement_type in speed_data:
+            movement_kwargs[movement_type] = speed_data[movement_type]
 
-    if "hover" in movement_data:
-        movement_kwargs["hover"] = movement_data["hover"]
+    if "hover" in speed_data:
+        movement_kwargs["hover"] = speed_data["hover"]
 
     return Movement(**movement_kwargs) if movement_kwargs else None
 

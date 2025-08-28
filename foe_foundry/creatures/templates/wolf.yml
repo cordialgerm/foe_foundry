@@ -52,7 +52,7 @@ common:
   - template: NaturalArmor
   senses:
     darkvision: 60
-  movement:
+  speed:
     walk: 40
   skills:
     proficiency:
@@ -76,13 +76,13 @@ wolf:
 
 dire-wolf:
   size: Large
-  movement:
+  speed:
     walk: 50
 
 winter-wolf:
   size: Large
   creature_type: Monstrosity
-  movement:
+  speed:
     walk: 50
   attacks:
     main:
@@ -96,7 +96,7 @@ winter-wolf:
 fellwinter-packlord:
   size: Large
   creature_type: Monstrosity
-  movement:
+  speed:
     walk: 50
   attacks:
     main:
