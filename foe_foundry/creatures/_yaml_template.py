@@ -93,7 +93,7 @@ class YamlMonsterTemplate(MonsterTemplate):
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
         # Import the appropriate powers based on template key
-        template_key = settings.monster_template
+        template_key = settings.monster_template.lower()  # Convert to lowercase for comparison
         monster_key = settings.monster_key
         
         if template_key == "wolf":
@@ -537,7 +537,7 @@ def parse_statblock_from_yaml(
         statblock = base_stats(
             name=name,
             template_key=template_data["key"],
-            variant_key=template_data["key"],
+            variant_key=settings.variant.key,
             monster_key=settings.monster_key,
             species_key=None,
             cr=cr,
@@ -779,25 +779,74 @@ def parse_species_from_template_yaml(template_data: dict) -> list[CreatureSpecie
 
 
 def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVariant]:
-    variants = []
+    """Parse variants from template YAML data, grouping monsters appropriately."""
     monsters: list[dict] = template_data["monsters"]
-    for monster_data in monsters:
-        name = monster_data["name"]
-        cr = monster_data["cr"]
-        is_legendary = monster_data.get("legendary", False)
+    
+    # For the wolf template, group monsters into two variants
+    # This logic should be generalized in the future for other templates
+    template_key = template_data["key"]
+    
+    if template_key == "wolf":
+        # Create Wolf variant (for wolf and dire-wolf)
+        wolf_monsters = []
+        winter_wolf_monsters = []
+        
+        for monster_data in monsters:
+            name = monster_data["name"]
+            cr = monster_data["cr"]
+            is_legendary = monster_data.get("legendary", False)
+            
+            monster = Monster(
+                name=name,
+                cr=cr,
+                is_legendary=is_legendary,
+                srd_creatures=None,  # TODO LATER
+                other_creatures=None,  # TODO LATER
+            )
+            
+            # Group monsters by variant
+            if monster.key in ["wolf", "dire-wolf"]:
+                wolf_monsters.append(monster)
+            elif monster.key in ["winter-wolf", "fellwinter-packlord"]:
+                winter_wolf_monsters.append(monster)
+        
+        variants = []
+        if wolf_monsters:
+            variants.append(MonsterVariant(
+                name="Wolf",
+                description="Wolves are pack hunters that stalk their prey with cunning and ferocity.",
+                monsters=wolf_monsters
+            ))
+        
+        if winter_wolf_monsters:
+            variants.append(MonsterVariant(
+                name="Winter Wolf", 
+                description="Winter wolves are large, intelligent wolves with white fur and a breath weapon that can freeze their foes.",
+                monsters=winter_wolf_monsters
+            ))
+        
+        return variants
+    
+    else:
+        # Default behavior: one variant per monster (for other templates)
+        variants = []
+        for monster_data in monsters:
+            name = monster_data["name"]
+            cr = monster_data["cr"]
+            is_legendary = monster_data.get("legendary", False)
 
-        monster = Monster(
-            name=name,
-            cr=cr,
-            is_legendary=is_legendary,
-            srd_creatures=None,  # TODO LATER
-            other_creatures=None,  # TODO LATER
-        )
+            monster = Monster(
+                name=name,
+                cr=cr,
+                is_legendary=is_legendary,
+                srd_creatures=None,  # TODO LATER
+                other_creatures=None,  # TODO LATER
+            )
 
-        variant = MonsterVariant(name=name, description=name, monsters=[monster])
-        variants.append(variant)
+            variant = MonsterVariant(name=name, description=name, monsters=[monster])
+            variants.append(variant)
 
-    return variants
+        return variants
 
 
 def parse_environments_from_template_yaml(
