@@ -8,8 +8,12 @@ template:
   - key: chimera-sovereign
     name: Chimera Sovereign
     cr: 10
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -19,7 +23,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Primary
@@ -39,7 +43,7 @@ common: &common
   saves:
   - CON
   - WIS
-chimera: !!set
-  '<<: *common': null
-chimera-sovereign: !!set
-  '<<: *common': null
+chimera:
+  <<: *common
+chimera-sovereign:
+  <<: *common

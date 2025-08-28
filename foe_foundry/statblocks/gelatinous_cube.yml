@@ -8,8 +8,12 @@ template:
   - key: ancient-gelatinous-cube
     name: Ancient Gelatinous Cube
     cr: 6
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Ooze
   size: Huge
@@ -34,7 +38,7 @@ common: &common
     proficiency: []
     expertise: []
   saves: []
-gelatinous-cube: !!set
-  '<<: *common': null
-ancient-gelatinous-cube: !!set
-  '<<: *common': null
+gelatinous-cube:
+  <<: *common
+ancient-gelatinous-cube:
+  <<: *common

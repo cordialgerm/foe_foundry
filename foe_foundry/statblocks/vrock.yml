@@ -5,8 +5,12 @@ template:
   - key: vrock
     name: Vrock
     cr: 6
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Fiend
   size: Large
@@ -16,7 +20,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Primary
@@ -35,5 +39,5 @@ common: &common
   - DEX
   - CHA
   - WIS
-vrock: !!set
-  '<<: *common': null
+vrock:
+  <<: *common

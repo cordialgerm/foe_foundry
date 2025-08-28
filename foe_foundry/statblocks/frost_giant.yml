@@ -15,8 +15,12 @@ template:
     name: Frost Giant Thane
     cr: 16
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Giant
   size: Huge
@@ -29,7 +33,10 @@ common: &common
   roles:
     primary: Bruiser
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    WIS: Default
   attacks:
     main:
       base: Greataxe
@@ -50,11 +57,11 @@ common: &common
   - STR
   - CHA
   - WIS
-frost-giant-reaver: !!set
-  '<<: *common': null
-frost-giant-challenger: !!set
-  '<<: *common': null
-frost-giant-rimepriest: !!set
-  '<<: *common': null
-frost-giant-thane: !!set
-  '<<: *common': null
+frost-giant-reaver:
+  <<: *common
+frost-giant-challenger:
+  <<: *common
+frost-giant-rimepriest:
+  <<: *common
+frost-giant-thane:
+  <<: *common

@@ -8,8 +8,12 @@ template:
   - key: dire-bunny-matriarch
     name: Dire Bunny Matriarch
     cr: 3
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -20,7 +24,10 @@ common: &common
   roles:
     primary: Skirmisher
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    WIS: Default
   attacks:
     main:
       secondary_damage_type: Poison
@@ -34,7 +41,7 @@ common: &common
     expertise: []
   saves:
   - WIS
-dire-bunny: !!set
-  '<<: *common': null
-dire-bunny-matriarch: !!set
-  '<<: *common': null
+dire-bunny:
+  <<: *common
+dire-bunny-matriarch:
+  <<: *common

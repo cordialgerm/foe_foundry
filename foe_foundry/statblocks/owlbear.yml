@@ -10,9 +10,13 @@ template:
     cr: 7
   - key: owlbear-cub
     name: Owlbear Cub
-    cr: null
-  environments: []
-  species: null
+    cr: 0.125
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -42,9 +46,9 @@ common: &common
   saves:
   - CON
   - WIS
-owlbear: !!set
-  '<<: *common': null
-savage-owlbear: !!set
-  '<<: *common': null
-owlbear-cub: !!set
-  '<<: *common': null
+owlbear:
+  <<: *common
+savage-owlbear:
+  <<: *common
+owlbear-cub:
+  <<: *common

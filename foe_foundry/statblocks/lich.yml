@@ -10,8 +10,12 @@ template:
     name: Archlich
     cr: 26
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Undead
   size: Medium
@@ -21,7 +25,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -42,7 +46,7 @@ common: &common
   - INT
   - WIS
   - CHA
-lich: !!set
-  '<<: *common': null
-archlich: !!set
-  '<<: *common': null
+lich:
+  <<: *common
+archlich:
+  <<: *common

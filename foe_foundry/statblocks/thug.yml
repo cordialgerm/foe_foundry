@@ -24,8 +24,12 @@ template:
     name: Thug Legend
     cr: 8
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -35,7 +39,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Primary
@@ -57,17 +61,17 @@ common: &common
   - CON
   - STR
   - CHA
-thug: !!set
-  '<<: *common': null
-veteran-thug: !!set
-  '<<: *common': null
-elite-thug: !!set
-  '<<: *common': null
-brawler: !!set
-  '<<: *common': null
-thug-boss: !!set
-  '<<: *common': null
-thug-overboss: !!set
-  '<<: *common': null
-thug-legend: !!set
-  '<<: *common': null
+thug:
+  <<: *common
+veteran-thug:
+  <<: *common
+elite-thug:
+  <<: *common
+brawler:
+  <<: *common
+thug-boss:
+  <<: *common
+thug-overboss:
+  <<: *common
+thug-legend:
+  <<: *common

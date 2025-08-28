@@ -17,8 +17,12 @@ template:
   - key: ogre-big-brainz
     name: Ogre Big Brainz
     cr: 7
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Giant
   size: Large
@@ -28,9 +32,15 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: [Default, -2]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -5]
+    WIS: [NoScaling, -3]
+    CHA: [NoScaling, -3]
   attacks:
     main:
       base: Maul
@@ -44,13 +54,13 @@ common: &common
   - STR
   - CHA
   - WIS
-ogre: !!set
-  '<<: *common': null
-ogre-wallsmasha: !!set
-  '<<: *common': null
-ogre-burnbelcha: !!set
-  '<<: *common': null
-ogre-chaincrakka: !!set
-  '<<: *common': null
-ogre-big-brainz: !!set
-  '<<: *common': null
+ogre:
+  <<: *common
+ogre-wallsmasha:
+  <<: *common
+ogre-burnbelcha:
+  <<: *common
+ogre-chaincrakka:
+  <<: *common
+ogre-big-brainz:
+  <<: *common

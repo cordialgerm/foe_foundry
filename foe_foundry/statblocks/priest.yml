@@ -4,7 +4,7 @@ template:
   monsters:
   - key: acolyte
     name: Acolyte
-    cr: null
+    cr: 0.125
   - key: priest
     name: Priest
     cr: 2
@@ -18,8 +18,12 @@ template:
     name: Archpriest Living Saint
     cr: 16
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -29,7 +33,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -55,13 +59,13 @@ common: &common
   - STR
   - INT
   - WIS
-acolyte: !!set
-  '<<: *common': null
-priest: !!set
-  '<<: *common': null
-priest-anointed-one: !!set
-  '<<: *common': null
-archpriest: !!set
-  '<<: *common': null
-archpriest-living-saint: !!set
-  '<<: *common': null
+acolyte:
+  <<: *common
+priest:
+  <<: *common
+priest-anointed-one:
+  <<: *common
+archpriest:
+  <<: *common
+archpriest-living-saint:
+  <<: *common

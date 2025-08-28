@@ -5,8 +5,12 @@ template:
   - key: gorgon
     name: Gorgon
     cr: 5
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Construct
   size: Large
@@ -15,7 +19,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -33,5 +37,5 @@ common: &common
     - Perception
     expertise: []
   saves: []
-gorgon: !!set
-  '<<: *common': null
+gorgon:
+  <<: *common

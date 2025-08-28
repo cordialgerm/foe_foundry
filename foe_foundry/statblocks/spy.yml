@@ -12,8 +12,12 @@ template:
     name: Spy Master
     cr: 10
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -23,7 +27,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -54,9 +58,9 @@ common: &common
   - DEX
   - INT
   - WIS
-spy: !!set
-  '<<: *common': null
-elite-spy: !!set
-  '<<: *common': null
-spy-master: !!set
-  '<<: *common': null
+spy:
+  <<: *common
+elite-spy:
+  <<: *common
+spy-master:
+  <<: *common

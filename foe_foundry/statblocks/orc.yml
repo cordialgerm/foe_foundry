@@ -4,7 +4,7 @@ template:
   monsters:
   - key: orc-soldier
     name: Orc Soldier
-    cr: null
+    cr: 0.5
   - key: orc-reaver
     name: Orc Reaver
     cr: 1
@@ -27,10 +27,15 @@ template:
     name: Orc Warchief of the Bloody Fang
     cr: 7
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
+
 common: &common
-  creature_type: null
+  creature_type: Humanoid
   size: Small
   languages:
   - Common
@@ -39,36 +44,122 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: [Primary, 2]
+    DEX: [Medium, 2]
+    CON: [Constitution, 2]
+    INT: [Default, -3]
+    WIS: [Default, 1]
+    CHA: Default
+  ac_templates:
+  - template: HideArmor
+    modifier: 0
   attacks:
     main:
-      base: Daggers
+      base: Battleaxe
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Darts
       damage_multiplier: 1.0
       secondary_damage_type: null
   skills:
-    proficiency:
-    - Intimidation
-    - Initiative
+    proficiency: [Intimidation]
     expertise: []
-  saves:
-  - CON
-  - STR
-  - WIS
-orc-soldier: !!set
-  '<<: *common': null
-orc-reaver: !!set
-  '<<: *common': null
-orc-hardened-one: !!set
-  '<<: *common': null
-orc-bloodrite-shaman: !!set
-  '<<: *common': null
-orc-bloodrite-elder-shaman: !!set
-  '<<: *common': null
-orc-bloodletter: !!set
-  '<<: *common': null
-orc-warchief: !!set
-  '<<: *common': null
-orc-warchief-of-the-bloody-fang: !!set
-  '<<: *common': null
+  saves: []
+
+orc-soldier:
+  <<: *common
+
+orc-reaver:
+  <<: *common
+  abilities:
+    STR: [Primary, 2]
+    DEX: [Medium, 2]
+    CON: [Constitution, 2]
+    INT: [Default, -3]
+    WIS: [Default, -1]
+    CHA: Default
+
+orc-hardened-one:
+  <<: *common
+  abilities:
+    STR: [Primary, 2]
+    DEX: [Medium, 2]
+    CON: [Constitution, 2]
+    INT: [Default, 2]
+    WIS: [Default, 1]
+    CHA: [Default, 2]
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
+
+orc-bloodrite-shaman:
+  <<: *common
+  roles:
+    primary: Controller
+    additional: [Caster]
+  abilities:
+    STR: Default
+    DEX: [Medium, 1]
+    INT: [Medium, 2]
+    WIS: Primary
+    CHA: Default
+
+orc-bloodrite-elder-shaman:
+  <<: *common
+  roles:
+    primary: Controller
+    additional: [Caster]
+  abilities:
+    STR: Default
+    DEX: [Medium, 1]
+    INT: [Medium, 2]
+    WIS: Primary
+    CHA: Default
+
+orc-bloodletter:
+  <<: *common
+  roles:
+    primary: Skirmisher
+    additional: [Artillery]
+  abilities:
+    STR: Default
+    DEX: Primary
+    INT: [Medium, 0.5]
+    WIS: [Medium, 1]
+    CHA: [Medium, 1]
+
+orc-warchief:
+  <<: *common
+  roles:
+    primary: Leader
+    additional: [Soldier]
+  abilities:
+    STR: Primary
+    DEX: Medium
+    CON: [Constitution, 2]
+    INT: [Default, 1]
+    WIS: [Default, 2]
+    CHA: [Medium, 1]
+  ac_templates:
+  - template: PlateArmor
+    modifier: 0
+
+orc-warchief-of-the-bloody-fang:
+  <<: *common
+  roles:
+    primary: Leader
+    additional: [Soldier]
+  abilities:
+    STR: Primary
+    DEX: Medium
+    CON: [Constitution, 2]
+    INT: [Default, 1]
+    WIS: [Default, 2]
+    CHA: [Medium, 1]
+  ac_templates:
+  - template: PlateArmor
+    modifier: 0

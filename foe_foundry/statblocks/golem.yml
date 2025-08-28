@@ -20,8 +20,12 @@ template:
   - key: shield-guardian
     name: Shield Guardian
     cr: 7
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Construct
   size: Large
@@ -31,9 +35,12 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    WIS: Default
   attacks:
     main:
       secondary_damage_type: null
@@ -41,15 +48,15 @@ common: &common
     proficiency: []
     expertise: []
   saves: []
-stone-golem: !!set
-  '<<: *common': null
-clay-golem: !!set
-  '<<: *common': null
-iron-golem: !!set
-  '<<: *common': null
-flesh-golem: !!set
-  '<<: *common': null
-ice-golem: !!set
-  '<<: *common': null
-shield-guardian: !!set
-  '<<: *common': null
+stone-golem:
+  <<: *common
+clay-golem:
+  <<: *common
+iron-golem:
+  <<: *common
+flesh-golem:
+  <<: *common
+ice-golem:
+  <<: *common
+shield-guardian:
+  <<: *common

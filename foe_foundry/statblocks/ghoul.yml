@@ -11,31 +11,43 @@ template:
   - key: ghast-gravelord
     name: Ghast Gravelord
     cr: 6
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Undead
-  size: null
+  size: Medium
   languages:
   - Common
   creature_class: Ghoul
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    CON: [Constitution, 1]
+    INT: [Default, -1]
+    WIS: Default
+    CHA: [Default, -2]
   attacks:
     main:
+      base: Claws
+      damage_multiplier: 1.0
       secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
   saves:
   - WIS
-ghoul: !!set
-  '<<: *common': null
-ghast: !!set
-  '<<: *common': null
-ghast-gravelord: !!set
-  '<<: *common': null
+ghoul:
+  <<: *common
+ghast:
+  <<: *common
+ghast-gravelord:
+  <<: *common

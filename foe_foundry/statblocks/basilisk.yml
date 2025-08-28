@@ -8,8 +8,12 @@ template:
   - key: basilisk-broodmother
     name: Basilisk Broodmother
     cr: 8
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Monstrosity
   size: Medium
@@ -18,7 +22,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Primary
@@ -36,7 +40,7 @@ common: &common
   - CON
   - STR
   - WIS
-basilisk: !!set
-  '<<: *common': null
-basilisk-broodmother: !!set
-  '<<: *common': null
+basilisk:
+  <<: *common
+basilisk-broodmother:
+  <<: *common

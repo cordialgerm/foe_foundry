@@ -4,7 +4,7 @@ template:
   monsters:
   - key: guard
     name: Guard
-    cr: null
+    cr: 0.125
   - key: sergeant-of-the-watch
     name: Sergeant of the Watch
     cr: 1
@@ -15,41 +15,100 @@ template:
     name: Lord of the Watch
     cr: 8
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - region: UrbanTownship
+    affinity: native
+  - development: settlement
+    affinity: native
+  - development: urban
+    affinity: common
+  - region: CountryShire
+    affinity: common
+  - development: stronghold
+    affinity: common
+  - development: frontier
+    affinity: uncommon
+  - region: OpenRoads
+    affinity: uncommon
+  - development: wilderness
+    affinity: rare
+  species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
   languages:
   - Common
   creature_class: Guard
+  uses_shield: true
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
-    additional: []
-  abilities: {}
+    primary: Defender
+    additional: [Artillery, Soldier]
+  abilities:
+    STR: Primary
+    DEX: Medium
+    INT: Default
+    WIS: [Medium, 1]
+    CHA: Default
+  ac_templates:
+  - template: ChainShirt
+    modifier: 0
   attacks:
     main:
       base: Crossbow
       damage_multiplier: 1.0
       secondary_damage_type: null
+    secondary:
+      base: SpearAndShield
+      damage_multiplier: 1.0
+      secondary_damage_type: null
   skills:
-    proficiency:
-    - Perception
-    - Initiative
-    - Athletics
+    proficiency: [Perception]
     expertise: []
-  saves:
-  - CON
-  - STR
-  - DEX
-  - WIS
-guard: !!set
-  '<<: *common': null
-sergeant-of-the-watch: !!set
-  '<<: *common': null
-guard-captain: !!set
-  '<<: *common': null
-lord-of-the-watch: !!set
-  '<<: *common': null
+  saves: []
+
+guard:
+  <<: *common
+
+sergeant-of-the-watch:
+  <<: *common
+
+guard-captain:
+  <<: *common
+  roles:
+    primary: Leader
+    additional: [Defender, Artillery, Soldier]
+  abilities:
+    STR: Primary
+    DEX: [Medium, 4]
+    INT: Default
+    WIS: [Medium, 2]
+    CHA: [Default, 1]
+  ac_templates:
+  - template: SplintArmor
+    modifier: 0
+  skills:
+    proficiency: [Perception, Initiative, Athletics]
+    expertise: []
+  saves: [STR]
+
+lord-of-the-watch:
+  <<: *common
+  roles:
+    primary: Leader
+    additional: [Defender, Artillery, Soldier]
+  abilities:
+    STR: Primary
+    DEX: [Medium, 4]
+    INT: Default
+    WIS: [Medium, 2]
+    CHA: [Default, 1]
+  ac_templates:
+  - template: PlateArmor
+    modifier: 0
+  skills:
+    proficiency: [Perception, Initiative, Athletics]
+    expertise: []
+  saves: [STR, WIS, DEX, CON]

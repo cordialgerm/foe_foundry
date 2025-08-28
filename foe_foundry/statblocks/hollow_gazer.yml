@@ -8,8 +8,12 @@ template:
   - key: hollow-gazer-of-ruin
     name: Hollow Gazer of Ruin
     cr: 6
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Aberration
   size: Medium
@@ -19,7 +23,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -37,7 +41,7 @@ common: &common
   saves:
   - CON
   - WIS
-hollow-gazer: !!set
-  '<<: *common': null
-hollow-gazer-of-ruin: !!set
-  '<<: *common': null
+hollow-gazer:
+  <<: *common
+hollow-gazer-of-ruin:
+  <<: *common

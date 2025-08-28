@@ -11,8 +11,12 @@ template:
   - key: vault-mimic
     name: Vault Mimic
     cr: 8
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Monstrosity
   size: null
@@ -40,9 +44,9 @@ common: &common
   saves:
   - CON
   - WIS
-mimic: !!set
-  '<<: *common': null
-greater-mimic: !!set
-  '<<: *common': null
-vault-mimic: !!set
-  '<<: *common': null
+mimic:
+  <<: *common
+greater-mimic:
+  <<: *common
+vault-mimic:
+  <<: *common

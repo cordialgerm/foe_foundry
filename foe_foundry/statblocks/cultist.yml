@@ -4,7 +4,7 @@ template:
   monsters:
   - key: cultist
     name: Cultist
-    cr: null
+    cr: 0.125
   - key: cultist-fanatic
     name: Cultist Fanatic
     cr: 2
@@ -42,8 +42,12 @@ template:
   - key: fiend-cultist-grand-master
     name: Fiend Cultist Grand Master
     cr: 14
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -53,7 +57,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -75,29 +79,29 @@ common: &common
     expertise: []
   saves:
   - WIS
-cultist: !!set
-  '<<: *common': null
-cultist-fanatic: !!set
-  '<<: *common': null
-cultist-grand-master: !!set
-  '<<: *common': null
-cultist-exarch: !!set
-  '<<: *common': null
-aberrant-cultist-initiate: !!set
-  '<<: *common': null
-aberrant-cultist: !!set
-  '<<: *common': null
-aberrant-cultist-grand-master: !!set
-  '<<: *common': null
-death-cultist-initiate: !!set
-  '<<: *common': null
-death-cultist: !!set
-  '<<: *common': null
-death-cultist-grand-master: !!set
-  '<<: *common': null
-fiend-cultist-initiate: !!set
-  '<<: *common': null
-fiend-cultist: !!set
-  '<<: *common': null
-fiend-cultist-grand-master: !!set
-  '<<: *common': null
+cultist:
+  <<: *common
+cultist-fanatic:
+  <<: *common
+cultist-grand-master:
+  <<: *common
+cultist-exarch:
+  <<: *common
+aberrant-cultist-initiate:
+  <<: *common
+aberrant-cultist:
+  <<: *common
+aberrant-cultist-grand-master:
+  <<: *common
+death-cultist-initiate:
+  <<: *common
+death-cultist:
+  <<: *common
+death-cultist-grand-master:
+  <<: *common
+fiend-cultist-initiate:
+  <<: *common
+fiend-cultist:
+  <<: *common
+fiend-cultist-grand-master:
+  <<: *common

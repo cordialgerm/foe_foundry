@@ -4,7 +4,7 @@ template:
   monsters:
   - key: scout
     name: Scout
-    cr: null
+    cr: 0.5
   - key: ranger
     name: Ranger
     cr: 5
@@ -15,45 +15,95 @@ template:
     name: First Scout
     cr: 7
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - region: CountryShire
+    affinity: native
+  - region: WartornKingdom
+    affinity: common
+  - region: TangledForest
+    affinity: native
+  - development: frontier
+    affinity: native
+  - development: wilderness
+    affinity: native
+  - biome: forest
+    affinity: common
+  - terrain: hill
+    affinity: common
+  - development: countryside
+    affinity: common
+  species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
   languages:
   - Common
   creature_class: Scout
+  uses_shield: false
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
-    additional: []
-  abilities: {}
+    primary: Skirmisher
+    additional: [Artillery, Ambusher]
+  abilities:
+    STR: Default
+    DEX: Primary
+    INT: [Default, 0.5]
+    WIS: [Medium, 1]
+    CHA: [Default, 0.5]
+  ac_templates:
+  - template: LeatherArmor
+    modifier: 0
   attacks:
     main:
       base: Longbow
       damage_multiplier: 1.0
       secondary_damage_type: null
+    secondary:
+      base: Shortswords
+      damage_multiplier: 0.9
+      secondary_damage_type: null
   skills:
-    proficiency:
-    - Perception
-    - Nature
-    - Survival
-    - Stealth
-    - Initiative
-    - Perception
-    - Stealth
-    - Survival
+    proficiency: [Perception, Nature, Survival, Stealth, Initiative]
     expertise: []
-  saves:
-  - DEX
-  - INT
-  - WIS
-scout: !!set
-  '<<: *common': null
-ranger: !!set
-  '<<: *common': null
-scout-captain: !!set
-  '<<: *common': null
-first-scout: !!set
-  '<<: *common': null
+  saves: []
+
+scout:
+  <<: *common
+
+ranger:
+  <<: *common
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
+  skills:
+    proficiency: [Perception, Nature, Survival, Stealth, Initiative]
+    expertise: [Perception, Stealth, Survival]
+  saves: [DEX, INT]
+
+scout-captain:
+  <<: *common
+  roles:
+    primary: Skirmisher
+    additional: [Artillery, Ambusher, Leader]
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
+  skills:
+    proficiency: [Perception, Nature, Survival, Stealth, Initiative]
+    expertise: [Perception, Stealth, Survival]
+  saves: [DEX, INT]
+
+first-scout:
+  <<: *common
+  roles:
+    primary: Skirmisher
+    additional: [Artillery, Ambusher, Leader]
+  ac_templates:
+  - template: StuddedLeatherArmor
+    modifier: 0
+  skills:
+    proficiency: [Perception, Nature, Survival, Stealth, Initiative]
+    expertise: [Perception, Stealth, Survival]
+  saves: [DEX, INT, WIS]

@@ -9,8 +9,12 @@ template:
     name: Medusa Queen
     cr: 10
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Monstrosity
   size: Medium
@@ -19,7 +23,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -41,7 +45,7 @@ common: &common
     expertise: []
   saves:
   - WIS
-medusa: !!set
-  '<<: *common': null
-medusa-queen: !!set
-  '<<: *common': null
+medusa:
+  <<: *common
+medusa-queen:
+  <<: *common

@@ -4,7 +4,7 @@ template:
   monsters:
   - key: zombie
     name: Zombie
-    cr: null
+    cr: 0.125
   - key: zombie-brute
     name: Zombie Brute
     cr: 1
@@ -21,44 +21,48 @@ template:
     name: Zombie Titan
     cr: 12
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Undead
-  size: null
+  size: Medium
   languages:
   - Understands Common but can't speak
   creature_class: Zombie
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Primary
-    DEX: Default
-    CON: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    DEX: [Default, -2]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -4]
+    WIS: [NoScaling, -3]
+    CHA: [NoScaling, -4]
   attacks:
     main:
+      base: Slam
+      damage_multiplier: 1.0
       secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []
-  saves:
-  - CON
-  - WIS
-zombie: !!set
-  '<<: *common': null
-zombie-brute: !!set
-  '<<: *common': null
-zombie-gravewalker: !!set
-  '<<: *common': null
-zombie-ogre: !!set
-  '<<: *common': null
-zombie-giant: !!set
-  '<<: *common': null
-zombie-titan: !!set
-  '<<: *common': null
+  saves: [WIS]
+zombie:
+  <<: *common
+zombie-brute:
+  <<: *common
+zombie-gravewalker:
+  <<: *common
+zombie-ogre:
+  <<: *common
+zombie-giant:
+  <<: *common
+zombie-titan:
+  <<: *common

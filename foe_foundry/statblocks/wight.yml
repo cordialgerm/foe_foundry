@@ -12,8 +12,12 @@ template:
     name: Wight Dread Lord
     cr: 9
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Undead
   size: null
@@ -23,7 +27,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Primary
@@ -43,9 +47,9 @@ common: &common
   saves:
   - CON
   - WIS
-wight: !!set
-  '<<: *common': null
-wight-fell-champion: !!set
-  '<<: *common': null
-wight-dread-lord: !!set
-  '<<: *common': null
+wight:
+  <<: *common
+wight-fell-champion:
+  <<: *common
+wight-dread-lord:
+  <<: *common

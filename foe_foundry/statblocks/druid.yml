@@ -15,8 +15,12 @@ template:
     name: Archdruid of the First Grove
     cr: 16
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -28,7 +32,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -50,11 +54,11 @@ common: &common
   saves:
   - CON
   - WIS
-druid: !!set
-  '<<: *common': null
-druid-greenwarden: !!set
-  '<<: *common': null
-archdruid-of-the-old-way: !!set
-  '<<: *common': null
-archdruid-of-the-first-grove: !!set
-  '<<: *common': null
+druid:
+  <<: *common
+druid-greenwarden:
+  <<: *common
+archdruid-of-the-old-way:
+  <<: *common
+archdruid-of-the-first-grove:
+  <<: *common

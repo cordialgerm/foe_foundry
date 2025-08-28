@@ -4,7 +4,7 @@ template:
   monsters:
   - key: wolf
     name: Wolf
-    cr: null
+    cr: 0.125
   - key: dire-wolf
     name: Dire Wolf
     cr: 1
@@ -15,8 +15,12 @@ template:
     name: Fellwinter Packlord
     cr: 6
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Beast
   size: Medium
@@ -27,9 +31,17 @@ common: &common
   roles:
     primary: Bruiser
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    CON: Medium
+    INT: [NoScaling, -4]
+    WIS: Default
+    CHA: [NoScaling, -3]
   attacks:
     main:
+      base: Bite
+      damage_multiplier: 1.0
       secondary_damage_type: Cold
   skills:
     proficiency:
@@ -39,11 +51,11 @@ common: &common
     expertise: []
   saves:
   - WIS
-wolf: !!set
-  '<<: *common': null
-dire-wolf: !!set
-  '<<: *common': null
-winter-wolf: !!set
-  '<<: *common': null
-fellwinter-packlord: !!set
-  '<<: *common': null
+wolf:
+  <<: *common
+dire-wolf:
+  <<: *common
+winter-wolf:
+  <<: *common
+fellwinter-packlord:
+  <<: *common

@@ -11,10 +11,14 @@ template:
   - key: bugbear-shadowstalker
     name: Bugbear Shadowstalker
     cr: 5
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
-  creature_type: null
+  creature_type: Humanoid
   size: Medium
   languages:
   - Common
@@ -23,11 +27,19 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    CON: [Constitution, 2]
+    INT: [Default, -1]
+    WIS: Default
+    CHA: [Default, -1]
   attacks:
     main:
+      base: Morningstar
+      damage_multiplier: 1.0
       secondary_damage_type: null
   skills:
     proficiency:
@@ -37,9 +49,9 @@ common: &common
   saves:
   - CON
   - WIS
-bugbear: !!set
-  '<<: *common': null
-bugbear-brute: !!set
-  '<<: *common': null
-bugbear-shadowstalker: !!set
-  '<<: *common': null
+bugbear:
+  <<: *common
+bugbear-brute:
+  <<: *common
+bugbear-shadowstalker:
+  <<: *common

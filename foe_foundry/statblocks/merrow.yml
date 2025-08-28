@@ -5,8 +5,12 @@ template:
   - key: merrow
     name: Merrow
     cr: 2
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -17,9 +21,12 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    WIS: Default
   attacks:
     main:
       base: JavelinAndShield
@@ -31,5 +38,5 @@ common: &common
     expertise: []
   saves:
   - WIS
-merrow: !!set
-  '<<: *common': null
+merrow:
+  <<: *common

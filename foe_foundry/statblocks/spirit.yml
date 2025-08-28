@@ -4,7 +4,7 @@ template:
   monsters:
   - key: shadow
     name: Shadow
-    cr: null
+    cr: 0.125
   - key: specter
     name: Specter
     cr: 1
@@ -24,8 +24,12 @@ template:
     name: Wraith Shadelord
     cr: 8
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Undead
   size: Medium
@@ -35,9 +39,12 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    WIS: Default
   attacks:
     main:
       base: Greatsword
@@ -49,17 +56,17 @@ common: &common
     expertise: []
   saves:
   - CON
-shadow: !!set
-  '<<: *common': null
-specter: !!set
-  '<<: *common': null
-banshee: !!set
-  '<<: *common': null
-ghost: !!set
-  '<<: *common': null
-revenant: !!set
-  '<<: *common': null
-wraith: !!set
-  '<<: *common': null
-wraith-shadelord: !!set
-  '<<: *common': null
+shadow:
+  <<: *common
+specter:
+  <<: *common
+banshee:
+  <<: *common
+ghost:
+  <<: *common
+revenant:
+  <<: *common
+wraith:
+  <<: *common
+wraith-shadelord:
+  <<: *common

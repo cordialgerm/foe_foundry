@@ -4,13 +4,13 @@ template:
   monsters:
   - key: shock-infantry
     name: Shock Infantry
-    cr: null
+    cr: 0.125
   - key: shock-infantry-veteran
     name: Shock Infantry Veteran
     cr: 3
   - key: line-infantry
     name: Line Infantry
-    cr: null
+    cr: 0.125
   - key: line-infantry-veteran
     name: Line Infantry Veteran
     cr: 3
@@ -21,8 +21,27 @@ template:
     name: Legendary Warrior
     cr: 14
     legendary: true
-  environments: []
-  species: null
+  environments:
+  - development: stronghold
+    affinity: common
+  - region: UrbanTownship
+    affinity: common
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  - development: countryside
+    affinity: common
+  - development: frontier
+    affinity: uncommon
+  - terrain: plain
+    affinity: common
+  - terrain: hill
+    affinity: uncommon
+  - terrain: mountain
+    affinity: rare
+  species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -32,36 +51,157 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    INT: [Default, -2]
+    WIS: [Medium, 1]
+    CHA: [Default, -2]
+  ac_templates:
+  - template: ChainShirt
+    modifier: 0
   attacks:
     main:
       base: Greatsword
       damage_multiplier: 1.0
       secondary_damage_type: null
+    secondary:
+      base: Shortbow
+      damage_multiplier: 0.9
+      secondary_damage_type: null
   skills:
-    proficiency:
-    - Athletics
-    - Perception
-    - Initiative
-    - Persuasion
-    - Insight
+    proficiency: [Athletics]
     expertise: []
-  saves:
-  - CON
-  - STR
-  - DEX
-  - WIS
-shock-infantry: !!set
-  '<<: *common': null
-shock-infantry-veteran: !!set
-  '<<: *common': null
-line-infantry: !!set
-  '<<: *common': null
-line-infantry-veteran: !!set
-  '<<: *common': null
-warrior-commander: !!set
-  '<<: *common': null
-legendary-warrior: !!set
-  '<<: *common': null
+  saves: []
+
+shock-infantry:
+  <<: *common
+  roles:
+    primary: Soldier
+    additional: [Bruiser]
+  attacks:
+    main:
+      base: Greatsword  # Can be Greataxe, Greatsword, or Maul
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Shortbow
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+
+shock-infantry-veteran:
+  <<: *common
+  roles:
+    primary: Soldier
+    additional: [Bruiser]
+  ac_templates:
+  - template: SplintArmor
+    modifier: 0
+  attacks:
+    main:
+      base: Greatsword  # Can be Greataxe, Greatsword, or Maul
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Crossbow
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+  skills:
+    proficiency: [Athletics, Perception, Initiative]
+    expertise: []
+  saves: [STR]
+
+line-infantry:
+  <<: *common
+  roles:
+    primary: Soldier
+    additional: [Defender]
+  attacks:
+    main:
+      base: Polearm  # Can be Polearm or SpearAndShield
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Shortbow
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+
+line-infantry-veteran:
+  <<: *common
+  roles:
+    primary: Soldier
+    additional: [Defender]
+  ac_templates:
+  - template: SplintArmor
+    modifier: 0
+  attacks:
+    main:
+      base: Polearm  # Can be Polearm or SpearAndShield
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Crossbow
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+  skills:
+    proficiency: [Athletics, Perception, Initiative]
+    expertise: []
+  saves: [STR]
+
+warrior-commander:
+  <<: *common
+  roles:
+    primary: Soldier
+    additional: [Leader]
+  abilities:
+    STR: Primary
+    DEX: [Medium, 4]
+    INT: [Default, 2]
+    WIS: [Medium, 3]
+    CHA: [Default, 2]
+  ac_templates:
+  - template: PlateArmor
+    modifier: 0
+  attacks:
+    main:
+      base: Greatsword
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Crossbow
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+  skills:
+    proficiency: [Athletics, Perception, Initiative, Persuasion, Insight]
+    expertise: []
+  saves: [STR, WIS, DEX, CON]
+
+legendary-warrior:
+  <<: *common
+  roles:
+    primary: Soldier
+    additional: [Leader]
+  abilities:
+    STR: Primary
+    DEX: [Medium, 4]
+    INT: [Default, 2]
+    WIS: [Medium, 3]
+    CHA: [Default, 2]
+  ac_templates:
+  - template: PlateArmor
+    modifier: 0
+  attacks:
+    main:
+      base: Greatsword
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+    secondary:
+      base: Crossbow
+      damage_multiplier: 0.9
+      secondary_damage_type: null
+  skills:
+    proficiency: [Athletics, Perception, Initiative, Persuasion, Insight]
+    expertise: []
+  saves: [STR, WIS, DEX, CON]

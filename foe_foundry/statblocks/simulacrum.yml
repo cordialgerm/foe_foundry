@@ -11,8 +11,12 @@ template:
   - key: simulacrum-mirrorblade
     name: Simulacrum Mirrorblade
     cr: 7
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: null
   size: Medium
@@ -22,9 +26,12 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
-  abilities: {}
+  abilities:
+    STR: Primary
+    DEX: Medium
+    WIS: Default
   attacks:
     main:
       base: Daggers
@@ -44,9 +51,9 @@ common: &common
   - DEX
   - INT
   - WIS
-simulacrum: !!set
-  '<<: *common': null
-mastercraft-simulacrum: !!set
-  '<<: *common': null
-simulacrum-mirrorblade: !!set
-  '<<: *common': null
+simulacrum:
+  <<: *common
+mastercraft-simulacrum:
+  <<: *common
+simulacrum-mirrorblade:
+  <<: *common

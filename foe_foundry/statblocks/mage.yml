@@ -4,7 +4,7 @@ template:
   monsters:
   - key: mage-neophyte
     name: Mage Neophyte
-    cr: null
+    cr: 0.125
   - key: mage-apprentice
     name: Mage Apprentice
     cr: 2
@@ -111,8 +111,12 @@ template:
   - key: toximancer
     name: Toximancer
     cr: 6
-  environments: []
-  species: null
+  environments:
+  - development: urban
+    affinity: common
+  - development: settlement
+    affinity: common
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -122,7 +126,7 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: null
+    primary: Soldier
     additional: []
   abilities:
     STR: Default
@@ -144,71 +148,71 @@ common: &common
   saves:
   - INT
   - WIS
-mage-neophyte: !!set
-  '<<: *common': null
-mage-apprentice: !!set
-  '<<: *common': null
-abjurer-mage-adept: !!set
-  '<<: *common': null
-abjurer-mage: !!set
-  '<<: *common': null
-abjurer-archmage: !!set
-  '<<: *common': null
-abjurer-primagus: !!set
-  '<<: *common': null
-conjurer-mage-adept: !!set
-  '<<: *common': null
-conjurer-mage: !!set
-  '<<: *common': null
-conjurer-archmage: !!set
-  '<<: *common': null
-conjurer-primagus: !!set
-  '<<: *common': null
-diviner-mage-adept: !!set
-  '<<: *common': null
-diviner-mage: !!set
-  '<<: *common': null
-diviner-archmage: !!set
-  '<<: *common': null
-diviner-primagus: !!set
-  '<<: *common': null
-enchanter-mage-adept: !!set
-  '<<: *common': null
-enchanter-mage: !!set
-  '<<: *common': null
-enchanter-archmage: !!set
-  '<<: *common': null
-enchanter-primagus: !!set
-  '<<: *common': null
-illusionist-mage-adept: !!set
-  '<<: *common': null
-illusionist-mage: !!set
-  '<<: *common': null
-illusionist-archmage: !!set
-  '<<: *common': null
-illusionist-primagus: !!set
-  '<<: *common': null
-necromancer-adept: !!set
-  '<<: *common': null
-necromancer-mage: !!set
-  '<<: *common': null
-necromancer-archmage: !!set
-  '<<: *common': null
-necromancer-primagus: !!set
-  '<<: *common': null
-transmuter-mage-adept: !!set
-  '<<: *common': null
-transmuter-mage: !!set
-  '<<: *common': null
-transmuter-archmage: !!set
-  '<<: *common': null
-transmuter-primagus: !!set
-  '<<: *common': null
-pyromancer: !!set
-  '<<: *common': null
-cryomancer: !!set
-  '<<: *common': null
-electromancer: !!set
-  '<<: *common': null
-toximancer: !!set
-  '<<: *common': null
+mage-neophyte:
+  <<: *common
+mage-apprentice:
+  <<: *common
+abjurer-mage-adept:
+  <<: *common
+abjurer-mage:
+  <<: *common
+abjurer-archmage:
+  <<: *common
+abjurer-primagus:
+  <<: *common
+conjurer-mage-adept:
+  <<: *common
+conjurer-mage:
+  <<: *common
+conjurer-archmage:
+  <<: *common
+conjurer-primagus:
+  <<: *common
+diviner-mage-adept:
+  <<: *common
+diviner-mage:
+  <<: *common
+diviner-archmage:
+  <<: *common
+diviner-primagus:
+  <<: *common
+enchanter-mage-adept:
+  <<: *common
+enchanter-mage:
+  <<: *common
+enchanter-archmage:
+  <<: *common
+enchanter-primagus:
+  <<: *common
+illusionist-mage-adept:
+  <<: *common
+illusionist-mage:
+  <<: *common
+illusionist-archmage:
+  <<: *common
+illusionist-primagus:
+  <<: *common
+necromancer-adept:
+  <<: *common
+necromancer-mage:
+  <<: *common
+necromancer-archmage:
+  <<: *common
+necromancer-primagus:
+  <<: *common
+transmuter-mage-adept:
+  <<: *common
+transmuter-mage:
+  <<: *common
+transmuter-archmage:
+  <<: *common
+transmuter-primagus:
+  <<: *common
+pyromancer:
+  <<: *common
+cryomancer:
+  <<: *common
+electromancer:
+  <<: *common
+toximancer:
+  <<: *common
