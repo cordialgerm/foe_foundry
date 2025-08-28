@@ -24,7 +24,7 @@ template:
     Forest: common
     Feywood: uncommon
     Countryside: rare
-  species: all
+  species: []
 
 common:
   creature_type: Beast

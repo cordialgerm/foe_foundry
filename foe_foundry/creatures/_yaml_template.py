@@ -43,7 +43,6 @@ from foe_foundry.statblocks import BaseStatblock
 
 from ._template import Monster, MonsterTemplate, MonsterVariant
 from .base_stats import base_stats
-from .zombie.powers import LoadoutZombie
 
 try:
     from ..spells import CasterType
@@ -93,9 +92,26 @@ class YamlMonsterTemplate(MonsterTemplate):
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        # TODO - this is just a placeholder for now
-        # You do not need to worry about optimizing this yet
-        return PowerSelection(LoadoutZombie)
+        # Import the appropriate powers based on template key
+        template_key = settings.monster_template
+        monster_key = settings.monster_key
+        
+        if template_key == "wolf":
+            from .wolf import powers as wolf_powers
+            if monster_key == "wolf":
+                return PowerSelection(wolf_powers.LoadoutWolf)
+            elif monster_key == "dire-wolf":
+                return PowerSelection(wolf_powers.LoadoutDireWolf)
+            elif monster_key == "winter-wolf":
+                return PowerSelection(wolf_powers.LoadoutFrostWolf)
+            elif monster_key == "fellwinter-packlord":
+                return PowerSelection(wolf_powers.LoadoutPacklord)
+            else:
+                return PowerSelection(wolf_powers.LoadoutWolf)
+        
+        # For other templates, use a default empty selection for now
+        # TODO: Implement proper power selection for all templates
+        return PowerSelection([])
 
 
 # ===== PARSING HELPER FUNCTIONS =====
