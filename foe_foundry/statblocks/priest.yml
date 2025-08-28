@@ -4,7 +4,7 @@ template:
   monsters:
   - key: acolyte
     name: Acolyte
-    cr: 0.125
+    cr: 0.25
   - key: priest
     name: Priest
     cr: 2

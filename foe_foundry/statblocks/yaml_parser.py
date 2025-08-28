@@ -186,9 +186,52 @@ class YAMLTemplateParser:
         if modifications:
             statblock = statblock.copy(**modifications)
         
+        # Add movement if specified
+        movement_data = data.get('movement', {})
+        if movement_data:
+            current_movement = statblock.speed
+            movement_kwargs = {}
+            if 'walk' in movement_data:
+                movement_kwargs['walk'] = movement_data['walk']
+            if 'climb' in movement_data:
+                movement_kwargs['climb'] = movement_data['climb']
+            if 'fly' in movement_data:
+                movement_kwargs['fly'] = movement_data['fly']
+            if 'swim' in movement_data:
+                movement_kwargs['swim'] = movement_data['swim']
+            
+            if movement_kwargs:
+                new_movement = current_movement.copy(**movement_kwargs)
+                statblock = statblock.copy(speed=new_movement)
+        
+        # Add senses if specified
+        senses_data = data.get('senses', {})
+        if senses_data:
+            current_senses = statblock.senses
+            senses_kwargs = {}
+            if 'darkvision' in senses_data:
+                senses_kwargs['darkvision'] = senses_data['darkvision']
+            if 'blindsight' in senses_data:
+                senses_kwargs['blindsight'] = senses_data['blindsight']
+            if 'tremorsense' in senses_data:
+                senses_kwargs['tremorsense'] = senses_data['tremorsense']
+            if 'truesight' in senses_data:
+                senses_kwargs['truesight'] = senses_data['truesight']
+            
+            if senses_kwargs:
+                new_senses = current_senses.copy(**senses_kwargs)
+                statblock = statblock.copy(senses=new_senses)
+        
         # Add legendary status
         if is_legendary:
-            statblock = statblock.as_legendary()
+            # Check for legendary configuration
+            legendary_data = data.get('legendary', {})
+            if legendary_data:
+                actions = legendary_data.get('actions', 3)
+                resistances = legendary_data.get('resistances', 3)
+                statblock = statblock.as_legendary(actions=actions, resistances=resistances)
+            else:
+                statblock = statblock.as_legendary()
         
         # Add roles
         roles_data = data.get('roles', {})
@@ -196,6 +239,11 @@ class YAMLTemplateParser:
             primary_role = getattr(MonsterRole, roles_data['primary'])
             additional_roles = [getattr(MonsterRole, role) for role in roles_data.get('additional', [])]
             statblock = statblock.with_roles(primary_role=primary_role, additional_roles=additional_roles)
+        
+        # Add attack reduction if specified
+        attack_reduction = data.get('attack_reduction')
+        if attack_reduction:
+            statblock = statblock.with_reduced_attacks(reduce_by=attack_reduction)
         
         # Add AC templates
         ac_templates = data.get('ac_templates', [])
@@ -387,6 +435,13 @@ class YAMLTemplateParser:
         if damage_scalar:
             if hasattr(attack, 'copy'):
                 attack = attack.copy(damage_scalar=damage_scalar)
+        
+        # Apply damage type override if specified
+        damage_type = attack_data.get('damage_type')
+        if damage_type:
+            damage_type_obj = getattr(DamageType, damage_type, None)
+            if damage_type_obj and hasattr(attack, 'copy'):
+                attack = attack.copy(damage_type=damage_type_obj)
         
         # Apply damage multiplier if specified
         damage_multiplier = attack_data.get('damage_multiplier', 1.0)

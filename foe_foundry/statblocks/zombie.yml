@@ -4,7 +4,7 @@ template:
   monsters:
   - key: zombie
     name: Zombie
-    cr: 0.125
+    cr: 0.25
   - key: zombie-brute
     name: Zombie Brute
     cr: 1

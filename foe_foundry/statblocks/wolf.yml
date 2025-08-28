@@ -16,14 +16,55 @@ template:
     cr: 6
     legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    TangledForest: native
+    Wilderness: native
+    LoftyMountains: common
+    CountryShire: common
+    Frontier: common
+    Forest: common
+    Feywood: uncommon
+    Countryside: rare
   species: all
-common: &common
+# Small wolf (CR < 1)
+small_wolf_common: &small_wolf_common
   creature_type: Beast
   size: Medium
+  languages: []
+  creature_class: Wolf
+  hp_multiplier: 1.3
+  damage_multiplier: 1.0
+  roles:
+    primary: Bruiser
+    additional: []
+  abilities:
+    STR: [NoScaling, 4]
+    DEX: [NoScaling, 5]
+    CON: [NoScaling, 2]
+    INT: [NoScaling, -7]
+    WIS: [NoScaling, 2]
+    CHA: [NoScaling, -4]
+  attacks:
+    main:
+      base: Bite
+      display_name: "Snapping Jaws"
+      secondary_damage_type: Cold
+  ac_templates:
+  - template: NaturalArmor
+  senses:
+    darkvision: 60
+  movement:
+    walk: 40
+  skills:
+    proficiency:
+    - Perception
+    - Stealth
+    expertise:
+    - Perception
+  saves: []
+# Large wolf (CR >= 1)
+large_wolf_common: &large_wolf_common
+  creature_type: Beast
+  size: Large
   languages: []
   creature_class: Wolf
   hp_multiplier: 1.0
@@ -32,30 +73,58 @@ common: &common
     primary: Bruiser
     additional: []
   abilities:
-    STR: Primary
-    DEX: Medium
-    CON: Medium
-    INT: [NoScaling, -4]
-    WIS: Default
-    CHA: [NoScaling, -3]
+    STR: [Primary, 1]
+    DEX: [NoScaling, 5]
+    CON: [Constitution, 1]
+    INT: [Default, -7]
+    WIS: [NoScaling, 2]
+    CHA: [Default, -4]
   attacks:
     main:
       base: Bite
-      damage_multiplier: 1.0
+      display_name: "Snapping Jaws"
       secondary_damage_type: Cold
+  ac_templates:
+  - template: NaturalArmor
+  senses:
+    darkvision: 60
+  movement:
+    walk: 50
   skills:
     proficiency:
     - Perception
     - Stealth
+    expertise:
     - Perception
-    expertise: []
+  saves: []
+wolf:
+  <<: *small_wolf_common
+dire-wolf:
+  <<: *large_wolf_common
+winter-wolf:
+  <<: *large_wolf_common
+  creature_type: Monstrosity
+  attacks:
+    main:
+      base: Bite
+      display_name: "Snapping Jaws"
+      # No secondary damage for winter wolves
+  immunities:
+    damage_types:
+    - Cold
+fellwinter-packlord:
+  <<: *large_wolf_common
+  creature_type: Monstrosity
+  attacks:
+    main:
+      base: Bite
+      display_name: "Snapping Jaws"
+      # No secondary damage for winter wolves
+  immunities:
+    damage_types:
+    - Cold
   saves:
   - WIS
-wolf:
-  <<: *common
-dire-wolf:
-  <<: *common
-winter-wolf:
-  <<: *common
-fellwinter-packlord:
-  <<: *common
+  legendary:
+    actions: 2
+    resistances: 2
