@@ -1,5 +1,24 @@
 from typing import Any, Dict, List, Optional
 
+from foe_foundry.ac_templates import (
+    ArcaneArmor,
+    BerserkersDefense,
+    Breastplate,
+    ChainShirt,
+    ChainmailArmor,
+    flat,
+    HideArmor,
+    HolyArmor,
+    LeatherArmor,
+    NaturalArmor,
+    NaturalPlating,
+    PatchworkArmor,
+    PlateArmor,
+    SplintArmor,
+    StuddedLeatherArmor,
+    Unarmored,
+    UnholyArmor,
+)
 from foe_foundry.attack_template import AttackTemplate, natural, spell, weapon
 from foe_foundry.creature_types import CreatureType
 from foe_foundry.creatures._data import GenerationSettings
@@ -14,8 +33,10 @@ from foe_foundry.environs import (
     Region,
     Terrain,
 )
+from foe_foundry.movement import Movement
 from foe_foundry.powers import PowerSelection
 from foe_foundry.role_types import MonsterRole
+from foe_foundry.senses import Senses
 from foe_foundry.size import Size
 from foe_foundry.skills import AbilityScore, Skills, StatScaling
 from foe_foundry.statblocks import BaseStatblock
@@ -210,7 +231,7 @@ def parse_roles_from_yaml(
     return primary_role, additional_roles
 
 
-def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Dict[str, int]]:
+def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
     """
     Parse movement data from YAML.
 
@@ -218,21 +239,24 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Dict[str, int]]:
         data: YAML data containing movement section
 
     Returns:
-        Dictionary with movement types and speeds, or None if no movement data
+        Movement object, or None if no movement data
     """
     movement_data = data.get("movement", {})
     if not movement_data:
         return None
 
     movement_kwargs = {}
-    for movement_type in ["walk", "climb", "fly", "swim"]:
+    for movement_type in ["walk", "climb", "fly", "swim", "burrow"]:
         if movement_type in movement_data:
             movement_kwargs[movement_type] = movement_data[movement_type]
+    
+    if "hover" in movement_data:
+        movement_kwargs["hover"] = movement_data["hover"]
 
-    return movement_kwargs if movement_kwargs else None
+    return Movement(**movement_kwargs) if movement_kwargs else None
 
 
-def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Dict[str, int]]:
+def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Senses]:
     """
     Parse senses data from YAML.
 
@@ -240,7 +264,7 @@ def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Dict[str, int]]:
         data: YAML data containing senses section
 
     Returns:
-        Dictionary with sense types and ranges, or None if no senses data
+        Senses object, or None if no senses data
     """
     senses_data = data.get("senses", {})
     if not senses_data:
@@ -249,9 +273,13 @@ def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Dict[str, int]]:
     senses_kwargs = {}
     for sense_type in ["darkvision", "blindsight", "tremorsense", "truesight"]:
         if sense_type in senses_data:
-            senses_kwargs[sense_type] = senses_data[sense_type]
+            # Note: tremorsense maps to truesight for simplicity
+            if sense_type == "tremorsense":
+                senses_kwargs["truesight"] = senses_data[sense_type]
+            else:
+                senses_kwargs[sense_type] = senses_data[sense_type]
 
-    return senses_kwargs if senses_kwargs else None
+    return Senses(**senses_kwargs) if senses_kwargs else None
 
 
 def parse_damage_immunities_from_yaml(data: Dict[str, Any]) -> tuple[set, set]:
@@ -340,6 +368,53 @@ def parse_skills_from_yaml(data: Dict[str, Any]) -> tuple[List[Skills], List[Ski
             expertise_skills.append(skill)
 
     return proficiency_skills, expertise_skills
+
+
+def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
+    """
+    Parse AC templates from YAML data.
+
+    Args:
+        data: YAML data containing ac_templates section
+
+    Returns:
+        List of ArmorClassTemplate objects
+    """
+    ac_templates_data = data.get("ac_templates", [])
+    templates = []
+    
+    # Map template names to actual template objects
+    template_map = {
+        "ArcaneArmor": ArcaneArmor,
+        "BerserkersDefense": BerserkersDefense,
+        "Breastplate": Breastplate,
+        "ChainShirt": ChainShirt,
+        "ChainmailArmor": ChainmailArmor,
+        "flat": flat,
+        "HideArmor": HideArmor,
+        "HolyArmor": HolyArmor,
+        "LeatherArmor": LeatherArmor,
+        "NaturalArmor": NaturalArmor,
+        "NaturalPlating": NaturalPlating,
+        "PatchworkArmor": PatchworkArmor,
+        "PlateArmor": PlateArmor,
+        "SplintArmor": SplintArmor,
+        "StuddedLeatherArmor": StuddedLeatherArmor,
+        "Unarmored": Unarmored,
+        "UnholyArmor": UnholyArmor,
+    }
+    
+    for template_data in ac_templates_data:
+        if isinstance(template_data, dict):
+            template_name = template_data.get("template")
+            if template_name and template_name in template_map:
+                templates.append(template_map[template_name])
+        elif isinstance(template_data, str):
+            # Handle simple string format
+            if template_data in template_map:
+                templates.append(template_map[template_data])
+    
+    return templates
 
 
 def parse_saving_throws_from_yaml(data: Dict[str, Any]) -> List[AbilityScore]:
@@ -486,19 +561,20 @@ def parse_statblock_from_yaml(
     if modifications:
         statblock = statblock.copy(**modifications)
 
+    # Apply AC templates
+    ac_templates = parse_ac_templates_from_yaml(merged_data)
+    if ac_templates:
+        statblock = statblock.copy(ac_templates=ac_templates)
+
     # Apply movement
-    movement_kwargs = parse_movement_from_yaml(merged_data)
-    if movement_kwargs:
-        current_movement = statblock.speed
-        new_movement = current_movement.copy(**movement_kwargs)
-        statblock = statblock.copy(speed=new_movement)
+    movement = parse_movement_from_yaml(merged_data)
+    if movement:
+        statblock = statblock.copy(speed=movement)
 
     # Apply senses
-    senses_kwargs = parse_senses_from_yaml(merged_data)
-    if senses_kwargs:
-        current_senses = statblock.senses
-        new_senses = current_senses.copy(**senses_kwargs)
-        statblock = statblock.copy(senses=new_senses)
+    senses = parse_senses_from_yaml(merged_data)
+    if senses:
+        statblock = statblock.copy(senses=senses)
 
     # Apply legendary status
     if is_legendary:
@@ -756,7 +832,7 @@ def parse_environments_from_template_yaml(
                         continue
 
                     if env_obj:
-                        affinities.append(EnvironmentAffinity(env_obj, affinity))
+                        affinities.append((env_obj, affinity))
 
                 except AttributeError:
                     # Skip unknown environment values
@@ -785,7 +861,7 @@ def parse_environments_from_template_yaml(
                         continue
 
                 if env_obj:
-                    affinities.append(EnvironmentAffinity(env_obj, affinity))
+                    affinities.append((env_obj, affinity))
 
             except AttributeError:
                 # Skip unknown environment or affinity values
