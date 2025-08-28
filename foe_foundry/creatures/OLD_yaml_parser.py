@@ -154,7 +154,7 @@ class YAMLTemplateParser:
 
         # Create base statblock using base_stats function
         try:
-            from ..creatures.base_stats import base_stats
+            from .base_stats import base_stats
 
             statblock = base_stats(
                 name=name,
