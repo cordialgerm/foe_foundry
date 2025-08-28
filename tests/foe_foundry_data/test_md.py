@@ -125,7 +125,7 @@ This is some example text that contains a YAML monster block
 ```yaml
 monster_name: Knight
 power_weights:
-  grazing-attack: 1
+  whirlwind-of-steel: 1
 ```
 """
 
@@ -136,8 +136,8 @@ power_weights:
     assert isinstance(ref, MonsterRef)
     assert ref.monster is not None
     assert ref.monster.key == "knight"
-    assert "Grazing Attack" not in result.html
-    assert 'data-power-key="grazing-attack"' in result.html
+    assert "Whirlwind of Steel" in result.html
+    assert 'data-power-key="whirlwind-of-steel"' in result.html
 
 
 def test_spellcasting_renders_power_key():

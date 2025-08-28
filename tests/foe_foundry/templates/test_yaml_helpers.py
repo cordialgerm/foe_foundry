@@ -273,8 +273,10 @@ class TestParseMovementFromYaml:
         data = {"movement": {"walk": 30, "fly": 60, "swim": 20}}
 
         result = parse_movement_from_yaml(data)
-
-        assert result == {"walk": 30, "fly": 60, "swim": 20}
+        assert result is not None
+        assert result.walk == 30
+        assert result.fly == 60
+        assert result.swim == 20
 
     def test_no_movement_section(self):
         """Test when no movement section exists."""
@@ -301,8 +303,9 @@ class TestParseSensesFromYaml:
         data = {"senses": {"darkvision": 60, "blindsight": 10}}
 
         result = parse_senses_from_yaml(data)
-
-        assert result == {"darkvision": 60, "blindsight": 10}
+        assert result is not None
+        assert result.darkvision == 60
+        assert result.blindsight == 10
 
     def test_no_senses_section(self):
         """Test when no senses section exists."""
