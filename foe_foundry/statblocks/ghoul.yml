@@ -12,10 +12,12 @@ template:
     name: Ghast Gravelord
     cr: 6
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    Underground: native
+    Ruin: native
+    Dungeon: common
+    Urban: uncommon
+    Settlement: uncommon
+    Swamp: uncommon
   species: all
 common: &common
   creature_type: Undead
@@ -23,31 +25,75 @@ common: &common
   languages:
   - Common
   creature_class: Ghoul
-  hp_multiplier: 1.0
+  hp_multiplier: 0.825
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
-    additional: []
+    primary: Bruiser
+    additional: 
+    - Skirmisher
   abilities:
-    STR: Primary
-    DEX: Medium
-    CON: [Constitution, 1]
-    INT: [Default, -1]
-    WIS: Default
-    CHA: [Default, -2]
+    STR: [Medium, 2]
+    DEX: Primary
+    CON: [Constitution, -2]
+    INT: [Default, -3]
+    WIS: [Default, -0.5]
+    CHA: [Default, -4]
   attacks:
     main:
-      base: Claws
-      damage_multiplier: 1.0
-      secondary_damage_type: null
+      base: Claw
+      display_name: "Paralytic Claw"
+      secondary_damage_type: Poison
+  ac_templates:
+  - template: Unarmored
+  senses:
+    darkvision: 60
+  immunities:
+    damage_types:
+    - Poison
+    conditions:
+    - Poisoned
+    - Charmed
   skills:
     proficiency: []
     expertise: []
-  saves:
-  - WIS
+  saves: []
 ghoul:
   <<: *common
 ghast:
   <<: *common
+  saves:
+  - WIS
+  resistances:
+    damage_types:
+    - Necrotic
 ghast-gravelord:
   <<: *common
+  roles:
+    primary: Leader
+    additional: 
+    - Skirmisher
+  abilities:
+    STR: [Medium, -1]
+    DEX: [Medium, 2]
+    CON: [Constitution, -2]
+    INT: Primary
+    WIS: [Default, -0.5]
+    CHA: Medium
+  attacks:
+    main:
+      base: Claw
+      display_name: "Paralytic Claw"
+      secondary_damage_type: Poison
+    secondary:
+      base: Deathbolt
+      display_name: "Dread Bolt"
+      damage_scalar: 0.9
+  ac_templates:
+  - template: UnholyArmor
+  saves:
+  - WIS
+  resistances:
+    damage_types:
+    - Necrotic
+  spellcasting:
+    caster_type: Arcane

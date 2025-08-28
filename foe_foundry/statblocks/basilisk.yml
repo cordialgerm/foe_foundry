@@ -9,10 +9,13 @@ template:
     name: Basilisk Broodmother
     cr: 8
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    Underground: native
+    LoftyMountains: native
+    Wilderness: common
+    HauntedLands: common
+    Ruin: common
+    BlastedBadlands: uncommon
+    Frontier: uncommon
   species: all
 common: &common
   creature_type: Monstrosity
@@ -22,25 +25,33 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
-    additional: []
+    primary: Bruiser
+    additional: 
+    - Controller
   abilities:
     STR: Primary
-    DEX: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    DEX: [Default, -2]
+    INT: [Default, -6]
+    WIS: [Medium, -4] 
+    CHA: [Default, -3]
   attacks:
     main:
+      base: Bite
+      display_name: "Venomous Bite"
       secondary_damage_type: Poison
+  ac_templates:
+  - template: NaturalPlating
+  senses:
+    darkvision: 60
   skills:
     proficiency: []
     expertise: []
-  saves:
-  - CON
-  - STR
-  - WIS
+  saves: []
 basilisk:
   <<: *common
 basilisk-broodmother:
   <<: *common
+  saves:
+  - CON
+  - STR
+  - WIS

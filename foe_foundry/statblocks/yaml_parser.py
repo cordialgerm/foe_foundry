@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Tuple, Optional
 
 from ..statblocks.base import BaseStatblock
-from ..attack_template import AttackTemplate, weapon
+from ..attack_template import AttackTemplate, weapon, natural, spell
 from ..creature_types import CreatureType
 from ..size import Size
 from ..role_types import MonsterRole
@@ -159,7 +159,16 @@ class YAMLTemplateParser:
         
         # Basic creature information
         if 'creature_type' in data:
-            modifications['creature_type'] = getattr(CreatureType, data['creature_type'])
+            primary_type = getattr(CreatureType, data['creature_type'])
+            additional_types = []
+            if 'additional_types' in data:
+                additional_types = [getattr(CreatureType, t) for t in data['additional_types']]
+            
+            # Use with_types if additional types exist
+            if additional_types:
+                statblock = statblock.with_types(primary_type=primary_type, additional_types=additional_types)
+            else:
+                modifications['creature_type'] = primary_type
         
         if 'size' in data:
             modifications['size'] = getattr(Size, data['size'])
@@ -169,6 +178,9 @@ class YAMLTemplateParser:
         
         if 'creature_class' in data:
             modifications['creature_class'] = data['creature_class']
+        
+        if 'creature_subtype' in data:
+            modifications['creature_subtype'] = data['creature_subtype']
         
         # Apply modifications
         if modifications:
@@ -202,7 +214,48 @@ class YAMLTemplateParser:
             if condition:
                 statblock = statblock.grant_resistance_or_immunity(conditions={condition})
         
-        # Add damage immunities/resistances/vulnerabilities
+        # Add nested immunities structure
+        immunities_data = data.get('immunities', {})
+        if immunities_data:
+            # Damage type immunities
+            damage_immunities = immunities_data.get('damage_types', [])
+            damage_type_objs = set()
+            for dt_name in damage_immunities:
+                dt = getattr(DamageType, dt_name, None)
+                if dt:
+                    damage_type_objs.add(dt)
+            
+            # Condition immunities  
+            condition_immunities = immunities_data.get('conditions', [])
+            condition_objs = set()
+            for cond_name in condition_immunities:
+                cond = getattr(Condition, cond_name, None)
+                if cond:
+                    condition_objs.add(cond)
+            
+            if damage_type_objs or condition_objs:
+                statblock = statblock.grant_resistance_or_immunity(
+                    immunities=damage_type_objs if damage_type_objs else None,
+                    conditions=condition_objs if condition_objs else None
+                )
+        
+        # Add nested resistances structure
+        resistances_data = data.get('resistances', {})
+        if resistances_data:
+            # Damage type resistances
+            damage_resistances = resistances_data.get('damage_types', [])
+            damage_type_objs = set()
+            for dt_name in damage_resistances:
+                dt = getattr(DamageType, dt_name, None)
+                if dt:
+                    damage_type_objs.add(dt)
+            
+            if damage_type_objs:
+                statblock = statblock.grant_resistance_or_immunity(
+                    resistances=damage_type_objs
+                )
+        
+        # Add damage immunities/resistances/vulnerabilities (legacy format)
         for immunity_type in ['damage_immunities', 'damage_resistances', 'damage_vulnerabilities']:
             damage_types = data.get(immunity_type, [])
             damage_type_objs = set()
@@ -213,9 +266,9 @@ class YAMLTemplateParser:
             
             if damage_type_objs:
                 if immunity_type == 'damage_immunities':
-                    statblock = statblock.grant_resistance_or_immunity(damage_types=damage_type_objs)
+                    statblock = statblock.grant_resistance_or_immunity(immunities=damage_type_objs)
                 elif immunity_type == 'damage_resistances':
-                    statblock = statblock.grant_resistance_or_immunity(damage_types=damage_type_objs, resistance=True)
+                    statblock = statblock.grant_resistance_or_immunity(resistances=damage_type_objs)
                 # Note: damage_vulnerabilities would need separate handling if implemented
         
         # Add skills
@@ -249,6 +302,20 @@ class YAMLTemplateParser:
         secondary_damage_type = self._parse_secondary_damage_type(data.get('attacks', {}).get('main', {}).get('secondary_damage_type'))
         if secondary_damage_type:
             statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
+        
+        # Add spellcasting if specified
+        spellcasting_data = data.get('spellcasting', {})
+        if spellcasting_data:
+            caster_type_name = spellcasting_data.get('caster_type')
+            if caster_type_name:
+                try:
+                    from ..spells import CasterType
+                    caster_type = getattr(CasterType, caster_type_name, None)
+                    if caster_type:
+                        statblock = statblock.grant_spellcasting(caster_type=caster_type)
+                except ImportError:
+                    # Skip spellcasting if CasterType not available
+                    pass
         
         return statblock
     
@@ -293,8 +360,12 @@ class YAMLTemplateParser:
         if not base_name:
             return None
         
-        # Get the base attack template
+        # Get the base attack template - check weapon, natural, and spell
         base_attack = getattr(weapon, base_name, None)
+        if not base_attack:
+            base_attack = getattr(natural, base_name, None)
+        if not base_attack:
+            base_attack = getattr(spell, base_name, None)
         if not base_attack:
             return None
         
@@ -304,6 +375,18 @@ class YAMLTemplateParser:
         display_name = attack_data.get('display_name')
         if display_name:
             attack = attack.with_display_name(display_name)
+        
+        # Apply reach if specified
+        reach = attack_data.get('reach')
+        if reach:
+            if hasattr(attack, 'copy'):
+                attack = attack.copy(reach=reach)
+        
+        # Apply damage scalar if specified
+        damage_scalar = attack_data.get('damage_scalar')
+        if damage_scalar:
+            if hasattr(attack, 'copy'):
+                attack = attack.copy(damage_scalar=damage_scalar)
         
         # Apply damage multiplier if specified
         damage_multiplier = attack_data.get('damage_multiplier', 1.0)

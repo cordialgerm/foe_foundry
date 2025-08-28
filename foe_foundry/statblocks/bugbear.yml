@@ -12,13 +12,20 @@ template:
     name: Bugbear Shadowstalker
     cr: 5
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    TangledForest: native
+    Underground: native
+    Wilderness: common
+    Ruin: common
+    Frontier: common
+    Feywood: uncommon
+    Countryside: uncommon
+    Settlement: rare
   species: all
 common: &common
   creature_type: Humanoid
+  creature_subtype: Goblinoid
+  additional_types:
+  - Fey
   size: Medium
   languages:
   - Common
@@ -27,31 +34,39 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
-    additional: []
+    primary: Ambusher
+    additional: 
+    - Bruiser
   abilities:
-    STR: Primary
-    DEX: Medium
-    CON: [Constitution, 2]
-    INT: [Default, -1]
-    WIS: Default
-    CHA: [Default, -1]
+    STR: [Primary, 0.5]
+    DEX: [Medium, 3]
+    INT: [Medium, -4]
+    WIS: [Default, 2]
+    CHA: [Medium, -3]
   attacks:
     main:
-      base: Morningstar
-      damage_multiplier: 1.0
-      secondary_damage_type: null
+      base: Slam
+      display_name: "Skull Smash"
+      reach: 10
+  ac_templates:
+  - template: HideArmor
+  senses:
+    darkvision: 60
   skills:
     proficiency:
     - Stealth
+    expertise:
     - Stealth
-    expertise: []
-  saves:
-  - CON
-  - WIS
+  saves: []
 bugbear:
   <<: *common
 bugbear-brute:
   <<: *common
+  saves:
+  - CON
+  - WIS
 bugbear-shadowstalker:
   <<: *common
+  saves:
+  - CON
+  - WIS
