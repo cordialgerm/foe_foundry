@@ -19,11 +19,15 @@ template:
     cr: 16
     legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    urban-township: native
+    settlement: native
+    country-shire: common
+    haunted-lands: uncommon
+    urban: uncommon
+    wartorn-kingdom: uncommon
+    wilderness: rare
   species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -33,39 +37,83 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: Support
     additional: []
   abilities:
-    STR: Default
+    STR: [Medium, 2]
     DEX: Default
     INT: Default
     WIS: Primary
     CHA: Default
+  caster_type: Divine
+  secondary_damage_type: Radiant
+  reduce_attacks: 1
+  min_attacks: 2
+  flags: [HAS_HEALING]
+  skills:
+    proficiency: [Medicine, Religion]
+    expertise: []
+
+acolyte:
+  <<: *common
+  armor_class: ChainShirt
   attacks:
     main:
       base: MaceAndShield
-      damage_multiplier: 1.0
-      secondary_damage_type: null
-  skills:
-    proficiency:
-    - Medicine
-    - Religion
-    - Perception
-    - Initiative
-    - Insight
-    expertise: []
-  saves:
-  - CON
-  - STR
-  - INT
-  - WIS
-acolyte:
-  <<: *common
+  uses_shield: true
+  saves: []
+
 priest:
   <<: *common
+  armor_class: ChainShirt
+  attacks:
+    main:
+      base: MaceAndShield
+  uses_shield: true
+  skills:
+    proficiency: [Medicine, Religion, Perception]
+    expertise: []
+  saves: []
+
 priest-anointed-one:
   <<: *common
+  armor_class: ChainShirt
+  attacks:
+    main:
+      type: spell
+      base: HolyBolt
+      display_name: "Radiant Flame"
+  uses_shield: false
+  skills:
+    proficiency: [Medicine, Religion, Perception]
+    expertise: []
+  saves: []
+
 archpriest:
   <<: *common
+  armor_class: PlateArmor
+  attacks:
+    main:
+      type: spell
+      base: HolyBolt
+      display_name: "Radiant Flame"
+  uses_shield: false
+  skills:
+    proficiency: [Medicine, Religion, Perception, Initiative, Insight]
+    expertise: []
+  saves: [STR, CON, INT, WIS]
+
 archpriest-living-saint:
   <<: *common
+  armor_class: PlateArmor
+  attacks:
+    main:
+      type: spell
+      base: HolyBolt
+      display_name: "Radiant Flame"
+  uses_shield: false
+  skills:
+    proficiency: [Medicine, Religion, Perception, Initiative, Insight]
+    expertise: []
+  saves: [STR, CON, INT, WIS]
+  legendary_boost_ac: false

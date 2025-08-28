@@ -21,11 +21,16 @@ template:
     name: Freezing Skeletal Champion
     cr: 6
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    ruin: native
+    underground: native
+    haunted-lands: native
+    deathly: native
+    dungeon: common
+    blasted-badlands: common
+    wilderness: uncommon
+    settlement: rare
   species: all
+
 common: &common
   creature_type: Undead
   size: Medium
@@ -34,34 +39,139 @@ common: &common
   creature_class: Skeleton
   hp_multiplier: 1.0
   damage_multiplier: 1.0
-  roles:
-    primary: Soldier
-    additional: []
   abilities:
     STR: Default
     DEX: Primary
-    INT: Default
-    WIS: Default
-    CHA: Default
+    INT: [Default, -4]
+    WIS: [Default, -2] 
+    CHA: [Default, -5]
+  senses:
+    darkvision: 60
+  immunities:
+    damage_types: [Poison]
+    conditions: [Poisoned]
+  vulnerabilities:
+    damage_types: [Bludgeoning]
+
+skeleton:
+  <<: *common
+  roles:
+    primary: Soldier
+    additional: []
+  armor_class: Unarmored
   attacks:
     main:
       base: Daggers
-      damage_multiplier: 1.0
-      secondary_damage_type: null
-  skills:
-    proficiency: []
-    expertise: []
-  saves:
-  - CON
-skeleton:
-  <<: *common
+      display_name: "Bone Blades"
+      damage_scalar: 0.75
+    secondary:
+      base: Shortbow
+      display_name: "Bone Bow"
+  set_attacks: 1
+  saves: []
+
 skeletal-grave-guard:
   <<: *common
+  roles:
+    primary: Defender
+    additional: [Leader]
+  armor_class: Breastplate
+  attacks:
+    main:
+      base: SpearAndShield
+      display_name: "Bone Spear"
+    secondary:
+      base: Shortbow
+      display_name: "Bone Bow"
+      damage_scalar: 0.8
+  secondary_damage_type: Necrotic
+  set_attacks: 2
+  saves: [CON]
+
 burning-skeleton:
   <<: *common
+  roles:
+    primary: Soldier
+    additional: []
+  armor_class: Breastplate
+  attacks:
+    main:
+      base: Greatsword
+      display_name: "Burning Blade"
+    secondary:
+      type: spell
+      base: Firebolt
+      display_name: "Hurl Flames"
+      damage_scalar: 0.8
+  secondary_damage_type: Fire
+  set_attacks: 2
+  saves: [CON]
+  immunities:
+    damage_types: [Poison, Fire]
+    conditions: [Poisoned]
+
 burning-skeletal-champion:
   <<: *common
+  roles:
+    primary: Soldier
+    additional: [Leader]
+  armor_class: Breastplate
+  attacks:
+    main:
+      base: Greatsword
+      display_name: "Burning Blade"
+    secondary:
+      type: spell
+      base: Firebolt
+      display_name: "Hurl Flames"
+      damage_scalar: 0.8
+  secondary_damage_type: Fire
+  set_attacks: 2
+  saves: [CON]
+  immunities:
+    damage_types: [Poison, Fire]
+    conditions: [Poisoned]
+
 freezing-skeleton:
   <<: *common
+  roles:
+    primary: Soldier
+    additional: []
+  armor_class: Breastplate
+  attacks:
+    main:
+      base: Greatsword
+      display_name: "Freezing Blade"
+    secondary:
+      type: spell
+      base: Frostbolt
+      display_name: "Deathly Freeze"
+      damage_scalar: 0.8
+  secondary_damage_type: Cold
+  set_attacks: 2
+  saves: [CON]
+  immunities:
+    damage_types: [Poison, Cold]
+    conditions: [Poisoned]
+
 freezing-skeletal-champion:
   <<: *common
+  roles:
+    primary: Soldier
+    additional: [Leader]
+  armor_class: Breastplate
+  attacks:
+    main:
+      base: Greatsword
+      display_name: "Freezing Blade"
+    secondary:
+      type: spell
+      base: Frostbolt
+      display_name: "Deathly Freeze"
+      damage_scalar: 0.8
+  secondary_damage_type: Cold
+  set_attacks: 2
+  saves: [CON]
+  immunities:
+    damage_types: [Poison, Cold]
+    conditions: [Poisoned]

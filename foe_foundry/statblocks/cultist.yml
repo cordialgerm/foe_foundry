@@ -43,11 +43,14 @@ template:
     name: Fiend Cultist Grand Master
     cr: 14
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    urban: common
+    settlement: common
+    ruin: common
+    dungeon: uncommon
+    countryside: uncommon
+    hellish: uncommon
   species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -56,52 +59,228 @@ common: &common
   creature_class: Cultist
   hp_multiplier: 1.0
   damage_multiplier: 1.0
-  roles:
-    primary: Soldier
-    additional: []
   abilities:
-    STR: Default
-    DEX: Default
+    STR: [Default, 1]
+    DEX: [Medium, 1] 
     INT: Default
-    WIS: Default
+    WIS: [Medium, 1]
     CHA: Primary
+  caster_type: Pact
+  skills:
+    proficiency: [Deception, Religion]
+    expertise: []
+
+# Basic cultist variant
+cultist:
+  <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  armor_class: StuddedLeatherArmor
   attacks:
     main:
       base: Daggers
-      damage_multiplier: 1.0
-      secondary_damage_type: null
-  skills:
-    proficiency:
-    - Deception
-    - Religion
-    - Persuasion
-    - Initiative
-    expertise: []
-  saves:
-  - WIS
-cultist:
-  <<: *common
+      display_name: "Ritual Dagger"
+  secondary_damage_type: Necrotic
+  saves: []
+
 cultist-fanatic:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  armor_class: StuddedLeatherArmor
+  attacks:
+    main:
+      base: Daggers
+      display_name: "Ritual Dagger"
+  secondary_damage_type: Necrotic
+  skills:
+    proficiency: [Deception, Religion, Persuasion]
+    expertise: []
+  saves: [WIS]
+
 cultist-grand-master:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery, Leader]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      base: Daggers
+      display_name: "Ritual Dagger"
+  secondary_damage_type: Necrotic
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
+
 cultist-exarch:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery, Leader]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      base: Daggers
+      display_name: "Ritual Dagger"
+  secondary_damage_type: Necrotic
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
+
+# Aberrant variant
 aberrant-cultist-initiate:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      type: natural
+      base: Tentacle
+      display_name: "Aberrant Tentacle"
+  secondary_damage_type: Psychic
+  skills:
+    proficiency: [Deception, Religion, Persuasion]
+    expertise: []
+  saves: [WIS]
+
 aberrant-cultist:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      type: natural
+      base: Tentacle
+      display_name: "Aberrant Tentacle"
+  secondary_damage_type: Psychic
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
+
 aberrant-cultist-grand-master:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery, Leader]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      type: natural
+      base: Tentacle
+      display_name: "Aberrant Tentacle"
+  secondary_damage_type: Psychic
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
+
+# Death variant
 death-cultist-initiate:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      type: spell
+      base: Deathbolt
+      display_name: "Deathly Ray"
+  secondary_damage_type: Necrotic
+  skills:
+    proficiency: [Deception, Religion, Persuasion]
+    expertise: []
+  saves: [WIS]
+
 death-cultist:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      type: spell
+      base: Deathbolt
+      display_name: "Deathly Ray"
+  secondary_damage_type: Necrotic
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
+
 death-cultist-grand-master:
   <<: *common
+  roles:
+    primary: Controller
+    additional: [Artillery, Leader]
+  armor_class: UnholyArmor
+  attacks:
+    main:
+      type: spell
+      base: Deathbolt
+      display_name: "Deathly Ray"
+  secondary_damage_type: Necrotic
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
+
+# Fiend variant
 fiend-cultist-initiate:
   <<: *common
+  roles:
+    primary: Bruiser
+    additional: [Controller]
+  armor_class: PlateArmor
+  attacks:
+    main:
+      base: Greataxe
+      display_name: "Infernal Axe"
+  secondary_damage_type: Fire
+  skills:
+    proficiency: [Deception, Religion, Persuasion]
+    expertise: []
+  saves: [WIS]
+
 fiend-cultist:
   <<: *common
+  roles:
+    primary: Bruiser
+    additional: [Controller]
+  armor_class: PlateArmor
+  attacks:
+    main:
+      base: Greataxe
+      display_name: "Infernal Axe"
+  secondary_damage_type: Fire
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
+
 fiend-cultist-grand-master:
   <<: *common
+  roles:
+    primary: Bruiser
+    additional: [Controller, Leader]
+  armor_class: PlateArmor
+  attacks:
+    main:
+      base: Greataxe
+      display_name: "Infernal Axe"
+  secondary_damage_type: Fire
+  skills:
+    proficiency: [Deception, Religion, Persuasion, Initiative]
+    expertise: []
+  saves: [WIS]
