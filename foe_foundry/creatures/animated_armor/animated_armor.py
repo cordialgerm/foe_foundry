@@ -107,7 +107,8 @@ class _AnimatedArmorTemplate(MonsterTemplate):
         )
 
         # SPEED
-        stats = stats.copy(speed=Movement(walk=30, fly=30, hover=True))
+        if variant is RunicSpellplateVariant:
+            stats = stats.copy(speed=Movement(walk=30, fly=30, hover=True))
 
         # ARMOR CLASS
         stats = stats.add_ac_template(PlateArmor)

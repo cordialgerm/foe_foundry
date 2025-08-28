@@ -116,6 +116,8 @@ foo: bar
 ```
 
 """
+    result = markdown(text)
+    assert "Orc Berserker" in result.html
 
 
 def test_attack_modifier_renders_power_key():

@@ -41,7 +41,7 @@ The previous agent also wrote some unit tests that at the time claimed the parsi
   - test should compare the `StatsBeingGenerated` and assert they are all exactly equivalent
   - create a standalone helper method to compare that a given `StatsBeingGenerated` is equivalent to another
 
-## Next Steps
+## Next Steps - Round 2
 
 - [ ] In `_yaml_template.py`, the parsing pure functions should return the actual class, not just the kwargs used to construct the class. Relevant tests shoudl be updated
 - [ ] Only a single `"common"` implementation should be allowed. Update the schema to only allow for one and check all places where you support multiple and simplify so you check for the common key in the YAML template and raise an error if it's not found. `wolf.yml` template needs to be fixed
@@ -49,3 +49,11 @@ The previous agent also wrote some unit tests that at the time claimed the parsi
 - [ ] The environment parsing definitely does not work. I think it's because there's confusion between the Affinity type alias and the Affinity StrEnum. Let's rename the Affinity StrEnum to EncounterFrequency and then adjust the environment parsing function to actually work. Create a pure unit test for it that confirms it works. Don't just skip and swallow failures
 - [ ] We need to create a proper comparison of the previous statblocks and the new statblocks. I stubbed out the test that needs to be filled in
 
+
+
+## Next Steps - Round 3
+
+- Clean up the YAML template, including the YAML schema as well as all of the existing yml templates
+  - speed needs to be its own section with fly, climb, burrow, and hover as part subproperties (not top-level properties)
+  - senses needs to be its own section with blindsight, truesight, and darkvision as subproperties (not top-level properties)
+- the schema needs to explicitly disallow extra undefined properties
