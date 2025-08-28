@@ -118,6 +118,7 @@ goblin-brute:
       display_name: Smash'Em
       damage_multiplier: 1.0
       secondary_damage_type: null
+    secondary: null
 
 goblin-boss:
   <<: *common
