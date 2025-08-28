@@ -19,7 +19,7 @@ template:
   species: all
 common: &common
   creature_type: Monstrosity
-  size: null
+  size: Medium
   languages: []
   creature_class: Mimic
   hp_multiplier: 1.0
@@ -28,11 +28,12 @@ common: &common
     primary: Ambusher
     additional: []
   abilities:
-    STR: Default
-    DEX: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    STR: ["Primary", 1]
+    DEX: ["Default", 2]
+    CON: Default
+    INT: ["Default", -5]
+    WIS: ["Medium", 2]
+    CHA: ["Default", -2]
   attacks:
     main:
       secondary_damage_type: Acid
@@ -48,5 +49,7 @@ mimic:
   <<: *common
 greater-mimic:
   <<: *common
+  size: Large
 vault-mimic:
   <<: *common
+  size: Huge

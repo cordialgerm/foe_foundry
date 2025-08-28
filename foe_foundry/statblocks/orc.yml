@@ -99,8 +99,8 @@ orc-hardened-one:
 orc-bloodrite-shaman:
   <<: *common
   roles:
-    primary: Controller
-    additional: [Caster]
+    primary: Support
+    additional: [Artillery]
   abilities:
     STR: Default
     DEX: [Medium, 1]
@@ -111,8 +111,8 @@ orc-bloodrite-shaman:
 orc-bloodrite-elder-shaman:
   <<: *common
   roles:
-    primary: Controller
-    additional: [Caster]
+    primary: Support
+    additional: [Artillery]
   abilities:
     STR: Default
     DEX: [Medium, 1]

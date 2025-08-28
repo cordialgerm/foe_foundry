@@ -39,8 +39,11 @@ common: &common
     additional: []
   abilities:
     STR: Primary
-    DEX: Medium
-    WIS: Default
+    DEX: ["NoScaling", -2]
+    CON: ["Constitution", 2]
+    INT: ["NoScaling", -7]
+    WIS: ["Default", -2.5]
+    CHA: ["NoScaling", -9]
   attacks:
     main:
       secondary_damage_type: null
@@ -56,6 +59,13 @@ iron-golem:
   <<: *common
 flesh-golem:
   <<: *common
+  abilities:
+    STR: Primary
+    DEX: ["NoScaling", -2]
+    CON: ["Constitution", 2]
+    INT: ["NoScaling", -3]
+    WIS: ["Default", -2.5]
+    CHA: ["NoScaling", -4]
 ice-golem:
   <<: *common
 shield-guardian:

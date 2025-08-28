@@ -34,9 +34,12 @@ common: &common
     primary: Bruiser
     additional: []
   abilities:
-    STR: Primary
-    DEX: Medium
-    WIS: Default
+    STR: ["Primary", 3]
+    DEX: ["Default", -3]
+    CON: ["Constitution", 4]
+    INT: ["Default", -3]
+    WIS: ["Default", -2]
+    CHA: ["Default", 2]
   attacks:
     main:
       base: Greataxe
@@ -63,5 +66,21 @@ frost-giant-challenger:
   <<: *common
 frost-giant-rimepriest:
   <<: *common
+  abilities:
+    STR: ["Default", 4]
+    DEX: ["Default", -3]
+    CON: ["Constitution", 4]
+    INT: Default
+    WIS: Primary
+    CHA: ["Default", 2]
+  attacks:
+    main:
+      base: Frostbolt
+      display_name: "Arctic Blast"
+  skills:
+    proficiency:
+    - Insight
+    - Perception
+    - Initiative
 frost-giant-thane:
   <<: *common
