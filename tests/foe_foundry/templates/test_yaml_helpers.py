@@ -465,16 +465,14 @@ class TestRealYamlDataIntegration:
     @pytest.fixture
     def sample_yaml_files(self):
         """Get a few sample YAML template files for testing."""
-        templates_dir = (
-            Path(__file__).parent.parent.parent
+        templates_dir = templates_dir = (
+            Path(__file__).parent.parent.parent.parent
             / "foe_foundry"
             / "creatures"
             / "templates"
         )
         if not templates_dir.exists():
-            templates_dir = Path(
-                "/home/runner/work/foe_foundry/foe_foundry/foe_foundry/creatures/templates"
-            )
+            raise FileNotFoundError(f"Templates directory not found: {templates_dir}")
 
         yaml_files = list(templates_dir.glob("*.yml"))[
             :3

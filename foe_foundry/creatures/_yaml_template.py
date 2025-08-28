@@ -4,9 +4,8 @@ from foe_foundry.ac_templates import (
     ArcaneArmor,
     BerserkersDefense,
     Breastplate,
-    ChainShirt,
     ChainmailArmor,
-    flat,
+    ChainShirt,
     HideArmor,
     HolyArmor,
     LeatherArmor,
@@ -18,6 +17,7 @@ from foe_foundry.ac_templates import (
     StuddedLeatherArmor,
     Unarmored,
     UnholyArmor,
+    flat,
 )
 from foe_foundry.attack_template import AttackTemplate, natural, spell, weapon
 from foe_foundry.creature_types import CreatureType
@@ -93,11 +93,14 @@ class YamlMonsterTemplate(MonsterTemplate):
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
         # Import the appropriate powers based on template key
-        template_key = settings.monster_template.lower()  # Convert to lowercase for comparison
+        template_key = (
+            settings.monster_template.lower()
+        )  # Convert to lowercase for comparison
         monster_key = settings.monster_key
-        
+
         if template_key == "wolf":
             from .wolf import powers as wolf_powers
+
             if monster_key == "wolf":
                 return PowerSelection(wolf_powers.LoadoutWolf)
             elif monster_key == "dire-wolf":
@@ -108,7 +111,7 @@ class YamlMonsterTemplate(MonsterTemplate):
                 return PowerSelection(wolf_powers.LoadoutPacklord)
             else:
                 return PowerSelection(wolf_powers.LoadoutWolf)
-        
+
         # For other templates, use a default empty selection for now
         # TODO: Implement proper power selection for all templates
         return PowerSelection([])
@@ -265,7 +268,7 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
     for movement_type in ["walk", "climb", "fly", "swim", "burrow"]:
         if movement_type in movement_data:
             movement_kwargs[movement_type] = movement_data[movement_type]
-    
+
     if "hover" in movement_data:
         movement_kwargs["hover"] = movement_data["hover"]
 
@@ -289,11 +292,7 @@ def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Senses]:
     senses_kwargs = {}
     for sense_type in ["darkvision", "blindsight", "tremorsense", "truesight"]:
         if sense_type in senses_data:
-            # Note: tremorsense maps to truesight for simplicity
-            if sense_type == "tremorsense":
-                senses_kwargs["truesight"] = senses_data[sense_type]
-            else:
-                senses_kwargs[sense_type] = senses_data[sense_type]
+            senses_kwargs[sense_type] = senses_data[sense_type]
 
     return Senses(**senses_kwargs) if senses_kwargs else None
 
@@ -398,7 +397,7 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
     """
     ac_templates_data = data.get("ac_templates", [])
     templates = []
-    
+
     # Map template names to actual template objects
     template_map = {
         "ArcaneArmor": ArcaneArmor,
@@ -419,7 +418,7 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
         "Unarmored": Unarmored,
         "UnholyArmor": UnholyArmor,
     }
-    
+
     for template_data in ac_templates_data:
         if isinstance(template_data, dict):
             template_name = template_data.get("template")
@@ -429,7 +428,7 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
             # Handle simple string format
             if template_data in template_map:
                 templates.append(template_map[template_data])
-    
+
     return templates
 
 
@@ -511,7 +510,7 @@ def parse_statblock_from_yaml(
     # Get common data - only support single "common" section
     if "common" not in yaml_data:
         raise ValueError("No 'common' section found in template")
-    
+
     common_data = yaml_data["common"]
 
     # Get monster-specific data
@@ -741,7 +740,7 @@ def parse_attacks_from_yaml(
     # Get common data - only support single "common" section
     if "common" not in yaml_data:
         raise ValueError("No 'common' section found in template")
-    
+
     common_data = yaml_data["common"]
 
     # Get monster-specific data
@@ -781,21 +780,21 @@ def parse_species_from_template_yaml(template_data: dict) -> list[CreatureSpecie
 def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVariant]:
     """Parse variants from template YAML data, grouping monsters appropriately."""
     monsters: list[dict] = template_data["monsters"]
-    
+
     # For the wolf template, group monsters into two variants
     # This logic should be generalized in the future for other templates
     template_key = template_data["key"]
-    
+
     if template_key == "wolf":
         # Create Wolf variant (for wolf and dire-wolf)
         wolf_monsters = []
         winter_wolf_monsters = []
-        
+
         for monster_data in monsters:
             name = monster_data["name"]
             cr = monster_data["cr"]
             is_legendary = monster_data.get("legendary", False)
-            
+
             monster = Monster(
                 name=name,
                 cr=cr,
@@ -803,30 +802,34 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
                 srd_creatures=None,  # TODO LATER
                 other_creatures=None,  # TODO LATER
             )
-            
+
             # Group monsters by variant
             if monster.key in ["wolf", "dire-wolf"]:
                 wolf_monsters.append(monster)
             elif monster.key in ["winter-wolf", "fellwinter-packlord"]:
                 winter_wolf_monsters.append(monster)
-        
+
         variants = []
         if wolf_monsters:
-            variants.append(MonsterVariant(
-                name="Wolf",
-                description="Wolves are pack hunters that stalk their prey with cunning and ferocity.",
-                monsters=wolf_monsters
-            ))
-        
+            variants.append(
+                MonsterVariant(
+                    name="Wolf",
+                    description="Wolves are pack hunters that stalk their prey with cunning and ferocity.",
+                    monsters=wolf_monsters,
+                )
+            )
+
         if winter_wolf_monsters:
-            variants.append(MonsterVariant(
-                name="Winter Wolf", 
-                description="Winter wolves are large, intelligent wolves with white fur and a breath weapon that can freeze their foes.",
-                monsters=winter_wolf_monsters
-            ))
-        
+            variants.append(
+                MonsterVariant(
+                    name="Winter Wolf",
+                    description="Winter wolves are large, intelligent wolves with white fur and a breath weapon that can freeze their foes.",
+                    monsters=winter_wolf_monsters,
+                )
+            )
+
         return variants
-    
+
     else:
         # Default behavior: one variant per monster (for other templates)
         variants = []

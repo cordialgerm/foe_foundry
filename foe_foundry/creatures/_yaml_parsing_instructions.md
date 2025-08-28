@@ -55,5 +55,5 @@ The previous agent also wrote some unit tests that at the time claimed the parsi
 
 - Clean up the YAML template, including the YAML schema as well as all of the existing yml templates
   - speed needs to be its own section with fly, climb, burrow, and hover as part subproperties (not top-level properties)
-  - senses needs to be its own section with blindsight, truesight, and darkvision as subproperties (not top-level properties)
+  - senses needs to be its own section with blindsight, truesight, tremorsense, and darkvision as subproperties (not top-level properties)
 - the schema needs to explicitly disallow extra undefined properties
