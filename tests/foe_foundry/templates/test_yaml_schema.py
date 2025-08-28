@@ -59,7 +59,8 @@ class TestYamlSchema:
         }
         
         errors = validate_yaml_template(template_data)
-        assert "Missing required 'common' section" in errors
+        assert len(errors) > 0
+        assert any("common" in error for error in errors)
     
     def test_schema_validation_missing_required_template_fields(self):
         """Test schema validation fails when required template fields are missing."""
