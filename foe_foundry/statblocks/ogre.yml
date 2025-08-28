@@ -18,10 +18,15 @@ template:
     name: Ogre Big Brainz
     cr: 7
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    WartornKingdom: Native
+    Hill: Native
+    Underground: Native
+    Wilderness: Common
+    Mountain: Common
+    Frontier: Common
+    Forest: Uncommon
+    Countryside: Uncommon
+    Settlement: Rare
   species: all
 common: &common
   creature_type: Giant
@@ -29,10 +34,10 @@ common: &common
   languages:
   - Common
   creature_class: Ogre
-  hp_multiplier: 1.0
+  hp_multiplier: 1.2
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: Bruiser
     additional: []
   abilities:
     STR: Primary
@@ -44,23 +49,100 @@ common: &common
   attacks:
     main:
       base: Maul
+      display_name: "Bonebreaker Club"
+      reach: 10
       damage_multiplier: 1.0
       secondary_damage_type: null
+  ac_templates:
+    - template: HideArmor
   skills:
     proficiency: []
     expertise: []
-  saves:
-  - CON
-  - STR
-  - CHA
-  - WIS
+  saves: []
 ogre:
   <<: *common
+  abilities:
+    STR: [Primary, 3]
+    DEX: [Default, -2]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -5]
+    WIS: [NoScaling, -3]
+    CHA: [NoScaling, -3]
+  attacks:
+    main:
+      base: Maul
+      display_name: "Bonebreaker Club"
+      reach: 10
+      damage_multiplier: 1.0
+      secondary_damage_type: null
+      set_attacks: 1
+  saves: []
 ogre-wallsmasha:
   <<: *common
+  abilities:
+    STR: [Primary, 1]
+    DEX: [Default, -2]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -5]
+    WIS: [NoScaling, -3]
+    CHA: [NoScaling, -3]
+  saves:
+  - STR
+  - CON
 ogre-burnbelcha:
   <<: *common
+  abilities:
+    STR: [Primary, 1]
+    DEX: [Default, -2]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -5]
+    WIS: [NoScaling, -3]
+    CHA: [NoScaling, -3]
+  saves:
+  - STR
+  - CON
 ogre-chaincrakka:
   <<: *common
+  abilities:
+    STR: [Primary, 1]
+    DEX: [Default, -2]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -5]
+    WIS: [NoScaling, -3]
+    CHA: [NoScaling, -3]
+  saves:
+  - STR
+  - CON
 ogre-big-brainz:
   <<: *common
+  hp_multiplier: 1.0
+  roles:
+    primary: Artillery
+    additional: []
+  abilities:
+    STR: [Medium, 5]
+    DEX: [Default, -2]
+    CON: [Constitution, 2]
+    INT: Primary
+    WIS: [Medium, -2]
+    CHA: Medium
+  attacks:
+    main:
+      base: Gaze
+      display_name: "Nightmare Shards"
+      secondary_damage_type: Psychic
+    secondary:
+      base: Claw
+      display_name: "Cursed Grasp"
+      damage_scalar: 0.9
+  ac_templates:
+    - template: UnholyArmor
+  caster_type: Arcane
+  movement:
+    walk: 30
+    fly: 30
+    hover: true
+  saves:
+  - CON
+  - WIS
+  - CHA

@@ -10,42 +10,62 @@ template:
     cr: 12
     legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    Swamp: Native
+    Lake: Native
+    River: Common
+    Underground: Common
+    Wilderness: Common
+    Ruin: Uncommon
   species: all
 common: &common
   creature_type: Monstrosity
+  additional_creature_types: [Fiend]
   size: Huge
   languages: []
   creature_class: Hydra
-  hp_multiplier: 1.0
+  hp_multiplier: 1.3
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: Bruiser
     additional: []
   abilities:
     STR: Primary
-    DEX: Default
-    CON: Default
+    DEX: [Default, 2]
+    CON: [Constitution, 2]
     INT: Low
     WIS: Default
-    CHA: Default
+    CHA: [Default, -3]
   attacks:
     main:
+      base: Bite
+      display_name: "Flesh-Dissolving Bites"
       secondary_damage_type: Acid
+      set_attacks: 5
+  ac_templates:
+    - template: NaturalArmor
+  senses:
+    darkvision: 60
+  movement:
+    swim: 30
+  resistances:
+    damage_types: [Acid]
+  immunities:
+    conditions: [Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious]
+  reaction_count: "One Per Head"
+  multiattack_custom_text: "The hydra makes one attack for each of its heads"
   skills:
     proficiency:
     - Perception
     - Initiative
+    expertise:
     - Perception
-    expertise: []
+  saves: []
+hydra:
+  <<: *common
+  saves: []
+foulblood-hydra:
+  <<: *common
   saves:
   - CON
   - STR
   - WIS
-hydra:
-  <<: *common
-foulblood-hydra:
-  <<: *common

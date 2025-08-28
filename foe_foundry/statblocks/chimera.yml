@@ -9,10 +9,14 @@ template:
     name: Chimera Sovereign
     cr: 10
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    BlastedBadlands: Native
+    HauntedLands: Native
+    Wilderness: Common
+    Ruin: Common
+    LoftyMountains: Common
+    Frontier: Uncommon
+    WartornKingdom: Uncommon
+    Settlement: Rare
   species: all
 common: &common
   creature_type: Monstrosity
@@ -23,27 +27,41 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: Bruiser
     additional: []
   abilities:
     STR: Primary
     DEX: Default
-    CON: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    CON: [Constitution, 4]
+    INT: [Default, -8]
+    WIS: [Medium, 2]
+    CHA: [Default, -1.5]
   attacks:
     main:
+      base: Bite
+      display_name: "Three-Headed Bites"
+      damage_type: piercing
       secondary_damage_type: null
+      set_attacks: 3
+  ac_templates:
+    - template: NaturalArmor
+      ac_modifier: -1
   skills:
     proficiency:
     - Perception
+    expertise:
     - Perception
-    expertise: []
+  saves: []
+  senses:
+    darkvision: 60
+  movement:
+    walk: 30
+    fly: 60
+chimera:
+  <<: *common
+  saves: []
+chimera-sovereign:
+  <<: *common
   saves:
   - CON
   - WIS
-chimera:
-  <<: *common
-chimera-sovereign:
-  <<: *common

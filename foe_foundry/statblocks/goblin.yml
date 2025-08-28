@@ -195,6 +195,7 @@ goblin-foulhex:
       display_name: Hex'Em
       damage_multiplier: 1.0
       secondary_damage_type: null
+    secondary: null
 
 goblin-shaman:
   <<: *common
@@ -215,4 +216,5 @@ goblin-shaman:
       display_name: Hex'Em
       damage_multiplier: 1.0
       secondary_damage_type: null
+    secondary: null
   saves: [CON, WIS]

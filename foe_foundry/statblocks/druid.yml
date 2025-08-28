@@ -16,10 +16,13 @@ template:
     cr: 16
     legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    Forest: Native
+    Wilderness: Native
+    Jungle: Common
+    Frontier: Common
+    Countryside: Uncommon
+    Swamp: Uncommon
+    Ruin: Uncommon
   species: all
 common: &common
   creature_type: Humanoid
@@ -32,33 +35,44 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: Support
     additional: []
   abilities:
     STR: Default
     DEX: Medium
-    INT: Default
+    INT: [Default, 2]
     WIS: Primary
-    CHA: Default
+    CHA: [Default, 1]
   attacks:
     main:
       base: Staff
+      display_name: "Staff of the Wild"
       damage_multiplier: 1.0
-      secondary_damage_type: null
+      secondary_damage_type: ["Poison", "Fire", "Cold", "Lightning"]
+  ac_templates:
+    - template: StuddedLeatherArmor
+  caster_type: Primal
+  uses_shield: false
   skills:
     proficiency:
     - Medicine
     - Nature
     - Perception
     expertise: []
+  saves: []
+druid:
+  <<: *common
+  saves: []
+druid-greenwarden:
+  <<: *common
+  saves: []
+archdruid-of-the-old-way:
+  <<: *common
   saves:
   - CON
   - WIS
-druid:
-  <<: *common
-druid-greenwarden:
-  <<: *common
-archdruid-of-the-old-way:
-  <<: *common
 archdruid-of-the-first-grove:
   <<: *common
+  saves:
+  - CON
+  - WIS

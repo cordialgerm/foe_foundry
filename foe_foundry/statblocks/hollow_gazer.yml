@@ -9,10 +9,12 @@ template:
     name: Hollow Gazer of Ruin
     cr: 6
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    Underground: Native
+    Ruin: Native
+    Dungeon: Common
+    Stronghold: Uncommon
+    Wilderness: Rare
+    Settlement: Rare
   species: all
 common: &common
   creature_type: Aberration
@@ -23,25 +25,40 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
+    primary: Controller
     additional: []
   abilities:
-    STR: Default
+    STR: [Default, -2]
     DEX: Medium
     INT: Primary
-    WIS: Default
-    CHA: Default
+    WIS: [Medium, 1]
+    CHA: [Default, -3]
   attacks:
     main:
+      base: Gaze
+      display_name: "Pitying Gaze"
       secondary_damage_type: Psychic
+  ac_templates:
+    - template: UnholyArmor
+  senses:
+    truesight: 120
+  immunities:
+    conditions: [Charmed]
+  resistances:
+    damage_types: [Psychic]
   skills:
     proficiency:
     - Stealth
-    expertise: []
+    expertise:
+    - Arcana
+    - Insight
+    - Perception
+  saves: []
+hollow-gazer:
+  <<: *common
+  saves: []
+hollow-gazer-of-ruin:
+  <<: *common
   saves:
   - CON
   - WIS
-hollow-gazer:
-  <<: *common
-hollow-gazer-of-ruin:
-  <<: *common

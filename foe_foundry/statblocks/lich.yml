@@ -11,10 +11,12 @@ template:
     cr: 26
     legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    Dungeon: Native
+    Ruin: Native
+    Stronghold: Common
+    Deathly: Common
+    Urban: Uncommon
+    Wilderness: Rare
   species: all
 common: &common
   creature_type: Undead
@@ -22,31 +24,51 @@ common: &common
   languages:
   - All
   creature_class: Lich
-  hp_multiplier: 1.0
-  damage_multiplier: 1.0
+  hp_multiplier: 0.85
+  damage_multiplier: 1.1
   roles:
-    primary: Soldier
-    additional: []
+    primary: Artillery
+    additional: [Controller]
   abilities:
-    STR: Default
+    STR: [Default, -2]
     DEX: Medium
-    CON: Default
+    CON: [Constitution, -6]
     INT: Primary
-    WIS: Default
+    WIS: [Medium, -2]
     CHA: Medium
   attacks:
     main:
+      base: ArcaneBurst
+      display_name: "Necrotic Blast"
       secondary_damage_type: null
+  ac_templates:
+    - template: ArcaneArmor
+  caster_type: Arcane
   skills:
-    proficiency: []
-    expertise: []
+    proficiency:
+    - Insight
+    - Perception
+    expertise:
+    - Arcana
+    - History
+  saves: []
+lich:
+  <<: *common
   saves:
   - CON
   - DEX
   - INT
   - WIS
   - CHA
-lich:
-  <<: *common
 archlich:
   <<: *common
+  saves:
+  - CON
+  - DEX
+  - INT
+  - WIS
+  - CHA
+  movement:
+    walk: 30
+    fly: 15
+    hover: true

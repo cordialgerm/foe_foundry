@@ -9,10 +9,12 @@ template:
     name: Manticore Ravager
     cr: 6
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    Mountain: Native
+    Wilderness: Native
+    Ruin: Common
+    Hill: Common
+    Desert: Uncommon
+    Frontier: Rare
   species: all
 common: &common
   creature_type: Monstrosity
@@ -23,25 +25,37 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
-    primary: Soldier
-    additional: []
+    primary: Artillery
+    additional: [Skirmisher]
   abilities:
     STR: Primary
-    DEX: Default
-    CON: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    DEX: [Medium, 3]
+    CON: [Constitution, 2]
+    INT: [Default, -5]
+    WIS: [Medium, -2]
+    CHA: [Default, -4]
   attacks:
     main:
+      base: Claw
+      display_name: "Cruel Claws"
       secondary_damage_type: null
+  ac_templates:
+    - template: NaturalArmor
+      ac_modifier: -1
+  senses:
+    darkvision: 60
+  movement:
+    walk: 30
+    fly: 50
   skills:
     proficiency:
     - Intimidation
     expertise: []
-  saves:
-  - WIS
+  saves: []
 manticore:
   <<: *common
+  saves: []
 manticore-ravager:
   <<: *common
+  saves:
+  - WIS

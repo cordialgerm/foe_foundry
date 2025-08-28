@@ -12,43 +12,93 @@ template:
     name: Owlbear Cub
     cr: 0.125
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    TangledForest: Native
+    Forest: Native
+    Wilderness: Common
+    Jungle: Common
+    LoftyMountains: Uncommon
+    Frontier: Uncommon
+    CountryShire: Rare
   species: all
 common: &common
   creature_type: Monstrosity
   size: Large
   languages: []
   creature_class: Owlbear
-  hp_multiplier: 1.0
+  hp_multiplier: 0.95
   damage_multiplier: 1.0
   roles:
     primary: Bruiser
     additional: []
   abilities:
-    STR: Default
-    DEX: Default
-    CON: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    STR: Primary
+    DEX: Medium
+    CON: Constitution
+    INT: NoScaling
+    WIS: Medium
+    CHA: [Default, -3]
   attacks:
     main:
+      base: Claw
+      display_name: "Vicious Rend"
       secondary_damage_type: null
+  ac_templates:
+    - template: NaturalArmor
+  senses:
+    darkvision: 60
+  movement:
+    walk: 40
+    climb: 40
   skills:
     proficiency:
     - Perception
+    expertise:
+    - Perception
+  saves: []
+owlbear:
+  <<: *common
+  damage_multiplier: 1.15
+  abilities:
+    STR: [Primary, 2]
+    DEX: [Medium, 0.5]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -7]
+    WIS: [Medium, 0.5]
+    CHA: [Default, -3]
+  ac_templates:
+    - template: NaturalArmor
+      ac_modifier: -1
+  saves: []
+savage-owlbear:
+  <<: *common
+  abilities:
+    STR: [Primary, 4]
+    DEX: [Medium, 0.5]
+    CON: [Constitution, 4]
+    INT: [NoScaling, -2]
+    WIS: [Medium, 2]
+    CHA: [Default, -3]
+  skills:
+    proficiency:
     - Perception
     - Initiative
-    expertise: []
+    expertise:
+    - Perception
   saves:
   - CON
   - WIS
-owlbear:
-  <<: *common
-savage-owlbear:
-  <<: *common
 owlbear-cub:
   <<: *common
+  size: Small
+  damage_multiplier: 1.15
+  abilities:
+    STR: [Primary, 2]
+    DEX: [Medium, 0.5]
+    CON: [Constitution, 2]
+    INT: [NoScaling, -7]
+    WIS: [Medium, 0.5]
+    CHA: [Default, -3]
+  ac_templates:
+    - template: NaturalArmor
+      ac_modifier: -1
+  saves: []
