@@ -57,12 +57,70 @@ class YamlMonsterTemplate(MonsterTemplate):
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        # TODO Later
-        # This is just a placeholder for now to make the class valid
-        # We will fix this later
-        return PowerSelection(
-            loadouts=LoadoutZombie,
-        )
+        """
+        Choose powers for the monster based on YAML configuration.
+        
+        For now, this is a basic implementation that selects powers based on
+        the monster's role and CR. In the future, this should be extended to
+        parse power configurations directly from the YAML template.
+        """
+        # Get the merged data for this monster to determine its role
+        template_data = self.yaml_data["template"]
+        
+        # Get common data - handle flexible common section names
+        common_sections = [k for k in self.yaml_data.keys() if k == "common" or k.endswith("_common")]
+        if common_sections:
+            common_data = self.yaml_data[common_sections[0]]
+            monster_data = self.yaml_data.get(settings.monster_key, {})
+            merged_data = merge_template_data(common_data, monster_data)
+            
+            # Get the monster's primary role
+            roles_data = merged_data.get("roles", {})
+            primary_role_name = roles_data.get("primary")
+            
+            if primary_role_name:
+                try:
+                    from foe_foundry.role_types import MonsterRole
+                    from foe_foundry.powers.species import powers_for_role
+                    from foe_foundry.powers import PowerLoadout
+                    
+                    primary_role = getattr(MonsterRole, primary_role_name, None)
+                    
+                    if primary_role:
+                        # Create a basic power loadout based on the role
+                        role_powers = powers_for_role("Generic", primary_role)
+                        
+                        role_loadout = PowerLoadout(
+                            name=f"{primary_role_name} Powers",
+                            flavor_text=f"Powers suited for a {primary_role_name.lower()}",
+                            powers=role_powers,
+                        )
+                        
+                        # Add species powers if applicable
+                        species_loadout = None
+                        if settings.species is not None:
+                            species_powers = powers_for_role(settings.species.name, primary_role)
+                            if species_powers:
+                                species_loadout = PowerLoadout(
+                                    name=f"{settings.species.name} Powers",
+                                    flavor_text=f"{settings.species.name} racial powers",
+                                    powers=species_powers,
+                                )
+                        
+                        return PowerSelection(role_loadout, species_loadout)
+                
+                except ImportError:
+                    # If power system is not available, fall back to basic selection
+                    pass
+        
+        # Fallback to a basic power selection
+        try:
+            from .zombie.powers import LoadoutZombie
+            return PowerSelection(LoadoutZombie)
+        except ImportError:
+            # If even zombie powers are not available, return empty selection
+            from foe_foundry.powers import PowerSelection
+            return PowerSelection()
 
 
 # ===== PARSING HELPER FUNCTIONS =====
@@ -706,6 +764,87 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
 def parse_environments_from_template_yaml(
     template_data: dict,
 ) -> list[EnvironmentAffinity]:
+    """
+    Parse environment affinities from template YAML data.
+    
+    Args:
+        template_data: The template section of the YAML data
+        
+    Returns:
+        List of EnvironmentAffinity objects
+    """
     environments_data = template_data.get("environments", None)
-    # TODO NOW
-    return []
+    if not environments_data:
+        return []
+    
+    affinities = []
+    
+    try:
+        from foe_foundry.environs import (
+            Affinity, Biome, Development, ExtraplanarInfluence, Region, Terrain
+        )
+        
+        # Handle both list format and dict format
+        if isinstance(environments_data, list):
+            # List format: [{"development": "urban", "affinity": "common"}, ...]
+            for env_data in environments_data:
+                if not isinstance(env_data, dict):
+                    continue
+                
+                affinity_name = env_data.get("affinity", "common")
+                affinity = getattr(Affinity, affinity_name, Affinity.Common)
+                
+                # Create environment affinities based on the environment type
+                for env_type, env_value in env_data.items():
+                    if env_type == "affinity":
+                        continue
+                    
+                    try:
+                        if env_type == "development":
+                            env_obj = getattr(Development, env_value, None)
+                        elif env_type == "biome":
+                            env_obj = getattr(Biome, env_value, None)
+                        elif env_type == "terrain":
+                            env_obj = getattr(Terrain, env_value, None)
+                        elif env_type == "region":
+                            env_obj = getattr(Region, env_value, None)
+                        elif env_type == "extraplanar":
+                            env_obj = getattr(ExtraplanarInfluence, env_value, None)
+                        else:
+                            continue
+                        
+                        if env_obj:
+                            affinities.append(EnvironmentAffinity(env_obj, affinity))
+                    
+                    except AttributeError:
+                        # Skip unknown environment values
+                        continue
+        
+        elif isinstance(environments_data, dict):
+            # Dict format: {"urban": "common", "wilderness": "native", ...}
+            for env_name, affinity_name in environments_data.items():
+                try:
+                    affinity = getattr(Affinity, affinity_name, Affinity.Common)
+                    
+                    # Try to find the environment in different categories
+                    env_obj = None
+                    for env_class in [Development, Biome, Terrain, Region, ExtraplanarInfluence]:
+                        try:
+                            env_obj = getattr(env_class, env_name, None)
+                            if env_obj:
+                                break
+                        except AttributeError:
+                            continue
+                    
+                    if env_obj:
+                        affinities.append(EnvironmentAffinity(env_obj, affinity))
+                
+                except AttributeError:
+                    # Skip unknown environment or affinity values
+                    continue
+    
+    except ImportError:
+        # If environment system is not available, return empty list
+        pass
+    
+    return affinities
