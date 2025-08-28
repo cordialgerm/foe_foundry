@@ -276,34 +276,35 @@ def validate_yaml_template(template_data: Dict[str, Any]) -> List[str]:
         errors.append("Missing required 'common' section")
 
     # Validate template section
-    template_section = template_data["template"]
-    if not isinstance(template_section, dict):
-        errors.append("'template' section must be a dictionary")
-    else:
-        # Required fields in template
-        for field in ["key", "name", "monsters"]:
-            if field not in template_section:
-                errors.append(f"Missing required field 'template.{field}'")
+    if "template" in template_data:
+        template_section = template_data["template"]
+        if not isinstance(template_section, dict):
+            errors.append("'template' section must be a dictionary")
+        else:
+            # Required fields in template
+            for field in ["key", "name", "monsters"]:
+                if field not in template_section:
+                    errors.append(f"Missing required field 'template.{field}'")
 
-        # Validate monsters array
-        if "monsters" in template_section:
-            monsters = template_section["monsters"]
-            if not isinstance(monsters, list):
-                errors.append("'template.monsters' must be an array")
-            else:
-                for i, monster in enumerate(monsters):
-                    if not isinstance(monster, dict):
-                        errors.append(f"Monster {i} must be a dictionary")
-                        continue
+            # Validate monsters array
+            if "monsters" in template_section:
+                monsters = template_section["monsters"]
+                if not isinstance(monsters, list):
+                    errors.append("'template.monsters' must be an array")
+                else:
+                    for i, monster in enumerate(monsters):
+                        if not isinstance(monster, dict):
+                            errors.append(f"Monster {i} must be a dictionary")
+                            continue
 
-                    for field in ["key", "name", "cr"]:
-                        if field not in monster:
-                            errors.append(
-                                f"Missing required field 'template.monsters[{i}].{field}'"
-                            )
+                        for field in ["key", "name", "cr"]:
+                            if field not in monster:
+                                errors.append(
+                                    f"Missing required field 'template.monsters[{i}].{field}'"
+                                )
 
-                    if "cr" in monster and not isinstance(monster["cr"], (int, float)):
-                        errors.append(f"'template.monsters[{i}].cr' must be a number")
+                        if "cr" in monster and not isinstance(monster["cr"], (int, float)):
+                            errors.append(f"'template.monsters[{i}].cr' must be a number")
 
     # Validate individual monster sections exist
     if "template" in template_data and "monsters" in template_data["template"]:

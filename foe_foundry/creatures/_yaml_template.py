@@ -5,7 +5,15 @@ from foe_foundry.creature_types import CreatureType
 from foe_foundry.creatures._data import GenerationSettings
 from foe_foundry.creatures.species import AllSpecies, CreatureSpecies
 from foe_foundry.damage import Condition, DamageType
-from foe_foundry.environs import EnvironmentAffinity
+from foe_foundry.environs import (
+    Affinity,
+    Biome,
+    Development,
+    EnvironmentAffinity,
+    ExtraplanarInfluence,
+    Region,
+    Terrain,
+)
 from foe_foundry.powers import PowerSelection
 from foe_foundry.role_types import MonsterRole
 from foe_foundry.size import Size
@@ -13,7 +21,13 @@ from foe_foundry.skills import AbilityScore, Skills, StatScaling
 from foe_foundry.statblocks import BaseStatblock
 
 from ._template import Monster, MonsterTemplate, MonsterVariant
+from .base_stats import base_stats
 from .zombie.powers import LoadoutZombie
+
+try:
+    from ..spells import CasterType
+except ImportError:
+    CasterType = None
 
 
 class YamlMonsterTemplate(MonsterTemplate):
@@ -403,16 +417,11 @@ def parse_statblock_from_yaml(
     if not monster_info:
         raise ValueError(f"Monster '{settings.monster_key}' not found in template")
 
-    # Get common data - handle flexible common section names
-    common_sections = [
-        k for k in yaml_data.keys() if k == "common" or k.endswith("_common")
-    ]
-    if not common_sections:
-        raise ValueError("No common section found in template")
-
-    # For now, use the first common section found
-    # TODO: Add logic to select the right common section based on monster properties
-    common_data = yaml_data[common_sections[0]]
+    # Get common data - only support single "common" section
+    if "common" not in yaml_data:
+        raise ValueError("No 'common' section found in template")
+    
+    common_data = yaml_data["common"]
 
     # Get monster-specific data
     monster_data = yaml_data.get(settings.monster_key, {})
@@ -434,12 +443,10 @@ def parse_statblock_from_yaml(
 
     # Create base statblock using base_stats function
     try:
-        from .base_stats import base_stats
-
         statblock = base_stats(
             name=name,
-            template_key="yaml_template",
-            variant_key="yaml_variant",
+            template_key=template_data["key"],
+            variant_key=template_data["key"],
             monster_key=settings.monster_key,
             species_key=None,
             cr=cr,
@@ -553,16 +560,10 @@ def parse_statblock_from_yaml(
     spellcasting_data = merged_data.get("spellcasting", {})
     if spellcasting_data:
         caster_type_name = spellcasting_data.get("caster_type")
-        if caster_type_name:
-            try:
-                from ..spells import CasterType
-
-                caster_type = getattr(CasterType, caster_type_name, None)
-                if caster_type:
-                    statblock = statblock.grant_spellcasting(caster_type=caster_type)
-            except ImportError:
-                # Skip spellcasting if CasterType not available
-                pass
+        if caster_type_name and CasterType:
+            caster_type = getattr(CasterType, caster_type_name, None)
+            if caster_type:
+                statblock = statblock.grant_spellcasting(caster_type=caster_type)
 
     # Apply attack reduction
     attack_reduction = merged_data.get("attack_reduction")
@@ -645,15 +646,11 @@ def parse_attacks_from_yaml(
     # Get the merged data for this monster
     template_data = yaml_data["template"]
 
-    # Get common data - handle flexible common section names
-    common_sections = [
-        k for k in yaml_data.keys() if k == "common" or k.endswith("_common")
-    ]
-    if not common_sections:
-        raise ValueError("No common section found in template")
-
-    # For now, use the first common section found
-    common_data = yaml_data[common_sections[0]]
+    # Get common data - only support single "common" section
+    if "common" not in yaml_data:
+        raise ValueError("No 'common' section found in template")
+    
+    common_data = yaml_data["common"]
 
     # Get monster-specific data
     monster_data = yaml_data.get(settings.monster_key, {})
@@ -729,83 +726,69 @@ def parse_environments_from_template_yaml(
 
     affinities = []
 
-    try:
-        from foe_foundry.environs import (
-            Affinity,
-            Biome,
-            Development,
-            ExtraplanarInfluence,
-            Region,
-            Terrain,
-        )
+    # Handle both list format and dict format
+    if isinstance(environments_data, list):
+        # List format: [{"development": "urban", "affinity": "common"}, ...]
+        for env_data in environments_data:
+            if not isinstance(env_data, dict):
+                continue
 
-        # Handle both list format and dict format
-        if isinstance(environments_data, list):
-            # List format: [{"development": "urban", "affinity": "common"}, ...]
-            for env_data in environments_data:
-                if not isinstance(env_data, dict):
+            affinity_name = env_data.get("affinity", "common")
+            affinity = getattr(Affinity, affinity_name, Affinity.common)
+
+            # Create environment affinities based on the environment type
+            for env_type, env_value in env_data.items():
+                if env_type == "affinity":
                     continue
 
-                affinity_name = env_data.get("affinity", "common")
-                affinity = getattr(Affinity, affinity_name, Affinity.Common)
-
-                # Create environment affinities based on the environment type
-                for env_type, env_value in env_data.items():
-                    if env_type == "affinity":
-                        continue
-
-                    try:
-                        if env_type == "development":
-                            env_obj = getattr(Development, env_value, None)
-                        elif env_type == "biome":
-                            env_obj = getattr(Biome, env_value, None)
-                        elif env_type == "terrain":
-                            env_obj = getattr(Terrain, env_value, None)
-                        elif env_type == "region":
-                            env_obj = getattr(Region, env_value, None)
-                        elif env_type == "extraplanar":
-                            env_obj = getattr(ExtraplanarInfluence, env_value, None)
-                        else:
-                            continue
-
-                        if env_obj:
-                            affinities.append(EnvironmentAffinity(env_obj, affinity))
-
-                    except AttributeError:
-                        # Skip unknown environment values
-                        continue
-
-        elif isinstance(environments_data, dict):
-            # Dict format: {"urban": "common", "wilderness": "native", ...}
-            for env_name, affinity_name in environments_data.items():
                 try:
-                    affinity = getattr(Affinity, affinity_name, Affinity.Common)
-
-                    # Try to find the environment in different categories
-                    env_obj = None
-                    for env_class in [
-                        Development,
-                        Biome,
-                        Terrain,
-                        Region,
-                        ExtraplanarInfluence,
-                    ]:
-                        try:
-                            env_obj = getattr(env_class, env_name, None)
-                            if env_obj:
-                                break
-                        except AttributeError:
-                            continue
+                    if env_type == "development":
+                        env_obj = getattr(Development, env_value, None)
+                    elif env_type == "biome":
+                        env_obj = getattr(Biome, env_value, None)
+                    elif env_type == "terrain":
+                        env_obj = getattr(Terrain, env_value, None)
+                    elif env_type == "region":
+                        env_obj = getattr(Region, env_value, None)
+                    elif env_type == "extraplanar":
+                        env_obj = getattr(ExtraplanarInfluence, env_value, None)
+                    else:
+                        continue
 
                     if env_obj:
                         affinities.append(EnvironmentAffinity(env_obj, affinity))
 
                 except AttributeError:
-                    # Skip unknown environment or affinity values
+                    # Skip unknown environment values
                     continue
 
-    except ImportError:
-        # If environment system is not available, return empty list
-        pass
+    elif isinstance(environments_data, dict):
+        # Dict format: {"urban": "common", "wilderness": "native", ...}
+        for env_name, affinity_name in environments_data.items():
+            try:
+                affinity = getattr(Affinity, affinity_name, Affinity.common)
+
+                # Try to find the environment in different categories
+                env_obj = None
+                for env_class in [
+                    Development,
+                    Biome,
+                    Terrain,
+                    Region,
+                    ExtraplanarInfluence,
+                ]:
+                    try:
+                        env_obj = getattr(env_class, env_name, None)
+                        if env_obj:
+                            break
+                    except AttributeError:
+                        continue
+
+                if env_obj:
+                    affinities.append(EnvironmentAffinity(env_obj, affinity))
+
+            except AttributeError:
+                # Skip unknown environment or affinity values
+                continue
 
     return affinities
