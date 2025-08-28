@@ -78,34 +78,233 @@ class TestComprehensiveTemplateComparison:
     
     # Define all available templates with their import paths and monster keys to test
     TEMPLATES_TO_TEST = [
-        ("foe_foundry.creatures.assassin", "AssassinTemplate", [
-            ("assassin", "assassin.yml"),
-            ("contract-killer", "assassin.yml"), 
-            ("assassin-legend", "assassin.yml")
-        ]),
-        ("foe_foundry.creatures.berserker", "BerserkerTemplate", [
-            ("berserker", "berserker.yml"),
-            ("berserker-veteran", "berserker.yml"),
-            ("berserker-commander", "berserker.yml"),
-            ("berserker-legend", "berserker.yml")
-        ]),
-        ("foe_foundry.creatures.knight", "KnightTemplate", [
-            ("knight", "knight.yml"),
-            ("knight-of-the-realm", "knight.yml"),
-            ("questing-knight", "knight.yml"),
-            ("paragon-knight", "knight.yml")
-        ]),
-        ("foe_foundry.creatures.goblin", "GoblinTemplate", [
-            ("goblin-lickspittle", "goblin.yml"),
-            ("goblin", "goblin.yml"),
-            ("goblin-brute", "goblin.yml"),
-            ("goblin-shaman", "goblin.yml")
-        ]),
-        ("foe_foundry.creatures.bandit", "BanditTemplate", [
-            ("bandit", "bandit.yml"),
-            ("bandit-captain", "bandit.yml")
-        ])
-    ]
+    ("foe_foundry.creatures.animated_armor", "AnimatedArmorTemplate", [
+        ("animated-armor", "animated_armor.yml"),
+        ("animated-runeplate", "animated_armor.yml"),
+    ]),
+    ("foe_foundry.creatures.assassin", "AssassinTemplate", [
+        ("contract-killer", "assassin.yml"),
+        ("assassin", "assassin.yml"),
+        ("assassin-legend", "assassin.yml"),
+    ]),
+    ("foe_foundry.creatures.balor", "BalorTemplate", [
+        ("balor", "balor.yml"),
+        ("balor-dreadlord", "balor.yml"),
+    ]),
+    ("foe_foundry.creatures.bandit", "BanditTemplate", [
+        ("bandit", "bandit.yml"),
+        ("bandit-veteran", "bandit.yml"),
+        ("bandit-captain", "bandit.yml"),
+        ("bandit-crime-lord", "bandit.yml"),
+    ]),
+    ("foe_foundry.creatures.basilisk", "BasiliskTemplate", [
+        ("basilisk", "basilisk.yml"),
+        ("basilisk-broodmother", "basilisk.yml"),
+    ]),
+    ("foe_foundry.creatures.berserker", "BerserkerTemplate", [
+        ("berserker", "berserker.yml"),
+        ("berserker-veteran", "berserker.yml"),
+        ("berserker-commander", "berserker.yml"),
+        ("berserker-legend", "berserker.yml"),
+    ]),
+    ("foe_foundry.creatures.bugbear", "BugbearTemplate", [
+        ("bugbear", "bugbear.yml"),
+        ("bugbear-brute", "bugbear.yml"),
+        ("bugbear-shadowstalker", "bugbear.yml"),
+    ]),
+    ("foe_foundry.creatures.chimera", "ChimeraTemplate", [
+        ("chimera", "chimera.yml"),
+        ("chimera-matriarch", "chimera.yml"),
+    ]),
+    ("foe_foundry.creatures.cultist", "CultistTemplate", [
+        ("cultist", "cultist.yml"),
+        ("cultist-fanatic", "cultist.yml"),
+        ("cultist-grand-master", "cultist.yml"),
+    ]),
+    ("foe_foundry.creatures.dire_bunny", "DireBunnyTemplate", [
+        ("dire-bunny", "dire_bunny.yml"),
+        ("dire-bunny-alpha", "dire_bunny.yml"),
+        ("dire-bunny-matriarch", "dire_bunny.yml"),
+    ]),
+    ("foe_foundry.creatures.druid", "DruidTemplate", [
+        ("druid", "druid.yml"),
+        ("druid-circle-leader", "druid.yml"),
+        ("archdruid", "druid.yml"),
+    ]),
+    ("foe_foundry.creatures.frost_giant", "FrostGiantTemplate", [
+        ("frost-giant", "frost_giant.yml"),
+        ("frost-giant-jarl", "frost_giant.yml"),
+        ("frost-giant-everlasting", "frost_giant.yml"),
+    ]),
+    ("foe_foundry.creatures.gelatinous_cube", "GelatinousCubeTemplate", [
+        ("gelatinous-cube", "gelatinous_cube.yml"),
+        ("gelatinous-cube-elder", "gelatinous_cube.yml"),
+    ]),
+    ("foe_foundry.creatures.ghoul", "GhoulTemplate", [
+        ("ghoul", "ghoul.yml"),
+        ("ghast", "ghoul.yml"),
+        ("ghoul-master", "ghoul.yml"),
+    ]),
+    ("foe_foundry.creatures.goblin", "GoblinTemplate", [
+        ("goblin-lickspittle", "goblin.yml"),
+        ("goblin", "goblin.yml"),
+        ("goblin-brute", "goblin.yml"),
+        ("goblin-shaman", "goblin.yml"),
+    ]),
+    ("foe_foundry.creatures.golem", "GolemTemplate", [
+        ("clay-golem", "golem.yml"),
+        ("flesh-golem", "golem.yml"),
+        ("iron-golem", "golem.yml"),
+        ("stone-golem", "golem.yml"),
+    ]),
+    ("foe_foundry.creatures.gorgon", "GorgonTemplate", [
+        ("gorgon", "gorgon.yml"),
+        ("gorgon-empress", "gorgon.yml"),
+    ]),
+    ("foe_foundry.creatures.guard", "GuardTemplate", [
+        ("guard", "guard.yml"),
+        ("guard-veteran", "guard.yml"),
+        ("guard-captain", "guard.yml"),
+        ("guard-commander", "guard.yml"),
+        ("legendary-guard", "guard.yml"),
+    ]),
+    ("foe_foundry.creatures.hollow_gazer", "HollowGazerTemplate", [
+        ("hollow-gazer", "hollow_gazer.yml"),
+        ("hollow-gazer-elder", "hollow_gazer.yml"),
+    ]),
+    ("foe_foundry.creatures.hydra", "HydraTemplate", [
+        ("hydra", "hydra.yml"),
+        ("hydra-ancient", "hydra.yml"),
+    ]),
+    ("foe_foundry.creatures.knight", "KnightTemplate", [
+        ("knight", "knight.yml"),
+        ("knight-of-the-realm", "knight.yml"),
+        ("questing-knight", "knight.yml"),
+        ("paragon-knight", "knight.yml"),
+    ]),
+    ("foe_foundry.creatures.kobold", "KoboldTemplate", [
+        ("kobold", "kobold.yml"),
+        ("kobold-scout", "kobold.yml"),
+        ("kobold-scalesorcerer", "kobold.yml"),
+        ("kobold-chieftain", "kobold.yml"),
+        ("kobold-dragonshield", "kobold.yml"),
+    ]),
+    ("foe_foundry.creatures.lich", "LichTemplate", [
+        ("lich", "lich.yml"),
+        ("archlich", "lich.yml"),
+    ]),
+    ("foe_foundry.creatures.mage", "MageTemplate", [
+        ("mage", "mage.yml"),
+        ("sorcerer", "mage.yml"),
+        ("warlock", "mage.yml"),
+        ("wizard", "mage.yml"),
+        ("archmage", "mage.yml"),
+    ]),
+    ("foe_foundry.creatures.manticore", "ManticoreTemplate", [
+        ("manticore", "manticore.yml"),
+        ("manticore-patriarch", "manticore.yml"),
+    ]),
+    ("foe_foundry.creatures.medusa", "MedusaTemplate", [
+        ("medusa", "medusa.yml"),
+        ("medusa-empress", "medusa.yml"),
+    ]),
+    ("foe_foundry.creatures.merrow", "MerrowTemplate", [
+        ("merrow", "merrow.yml"),
+        ("merrow-shallowpriest", "merrow.yml"),
+    ]),
+    ("foe_foundry.creatures.mimic", "MimicTemplate", [
+        ("mimic", "mimic.yml"),
+        ("mimic-greater", "mimic.yml"),
+    ]),
+    ("foe_foundry.creatures.ogre", "OgreTemplate", [
+        ("ogre", "ogre.yml"),
+        ("ogre-elite", "ogre.yml"),
+        ("ogre-champion", "ogre.yml"),
+        ("ogre-chief", "ogre.yml"),
+    ]),
+    ("foe_foundry.creatures.orc", "OrcTemplate", [
+        ("orc", "orc.yml"),
+        ("orc-veteran", "orc.yml"),
+        ("orc-war-chief", "orc.yml"),
+        ("orc-doom-hand", "orc.yml"),
+    ]),
+    ("foe_foundry.creatures.owlbear", "OwlbearTemplate", [
+        ("owlbear", "owlbear.yml"),
+        ("owlbear-pack-leader", "owlbear.yml"),
+        ("owlbear-terror", "owlbear.yml"),
+    ]),
+    ("foe_foundry.creatures.priest", "PriestTemplate", [
+        ("acolyte", "priest.yml"),
+        ("priest", "priest.yml"),
+        ("high-priest", "priest.yml"),
+    ]),
+    ("foe_foundry.creatures.scout", "ScoutTemplate", [
+        ("scout", "scout.yml"),
+        ("scout-veteran", "scout.yml"),
+        ("scout-commander", "scout.yml"),
+        ("legendary-scout", "scout.yml"),
+    ]),
+    ("foe_foundry.creatures.simulacrum", "SimulacrumTemplate", [
+        ("simulacrum", "simulacrum.yml"),
+        ("simulacrum-lord", "simulacrum.yml"),
+    ]),
+    ("foe_foundry.creatures.skeleton", "SkeletonTemplate", [
+        ("skeleton", "skeleton.yml"),
+        ("skeleton-warrior", "skeleton.yml"),
+        ("skeleton-minotaur", "skeleton.yml"),
+        ("skeleton-knight", "skeleton.yml"),
+    ]),
+    ("foe_foundry.creatures.spirit", "SpiritTemplate", [
+        ("revenant", "spirit.yml"),
+        ("ghost", "spirit.yml"),
+        ("wraith", "spirit.yml"),
+        ("wraith-shadelord", "spirit.yml"),
+    ]),
+    ("foe_foundry.creatures.spy", "SpyTemplate", [
+        ("spy", "spy.yml"),
+        ("elite-spy", "spy.yml"),
+        ("spy-master", "spy.yml"),
+    ]),
+    ("foe_foundry.creatures.thug", "ThugTemplate", [
+        ("thug", "thug.yml"),
+        ("veteran-thug", "thug.yml"),
+        ("elite-thug", "thug.yml"),
+        ("brawler", "thug.yml"),
+        ("thug-boss", "thug.yml"),
+        ("thug-overboss", "thug.yml"),
+        ("thug-legend", "thug.yml"),
+    ]),
+    ("foe_foundry.creatures.vrock", "VrockTemplate", [
+        ("vrock", "vrock.yml"),
+    ]),
+    ("foe_foundry.creatures.warrior", "WarriorTemplate", [
+        ("line-infantry", "warrior.yml"),
+        ("line-infantry-veteran", "warrior.yml"),
+        ("shock-infantry", "warrior.yml"),
+        ("shock-infantry-veteran", "warrior.yml"),
+        ("warrior-commander", "warrior.yml"),
+        ("legendary-warrior", "warrior.yml"),
+    ]),
+    ("foe_foundry.creatures.wight", "WightTemplate", [
+        ("wight", "wight.yml"),
+        ("wight-fell-champion", "wight.yml"),
+        ("wight-dread-lord", "wight.yml"),
+    ]),
+    ("foe_foundry.creatures.wolf", "WolfTemplate", [
+        ("wolf", "wolf.yml"),
+        ("dire-wolf", "wolf.yml"),
+        ("winter-wolf", "wolf.yml"),
+        ("fellwinter-packlord", "wolf.yml"),
+    ]),
+    ("foe_foundry.creatures.zombie", "ZombieTemplate", [
+        ("zombie", "zombie.yml"),
+        ("zombie-brute", "zombie.yml"),
+        ("zombie-gravewalker", "zombie.yml"),
+        ("zombie-ogre", "zombie.yml"),
+        ("zombie-giant", "zombie.yml"),
+        ("zombie-titan", "zombie.yml"),
+    ]),
+]
     
     @pytest.fixture
     def statblocks_dir(self):
