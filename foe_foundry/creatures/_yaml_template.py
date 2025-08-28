@@ -6,6 +6,7 @@ from foe_foundry.powers import PowerSelection
 from foe_foundry.statblocks import BaseStatblock
 
 from ._template import Monster, MonsterTemplate, MonsterVariant
+from .zombie.powers import LoadoutZombie
 
 
 class YamlMonsterTemplate(MonsterTemplate):
@@ -50,7 +51,12 @@ class YamlMonsterTemplate(MonsterTemplate):
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        return super().choose_powers(settings)
+        # TODO Later
+        # This is just a placeholder for now to make the class valid
+        # We will fix this later
+        return PowerSelection(
+            loadouts=LoadoutZombie,
+        )
 
 
 def parse_statblock_from_yaml(yaml_data: dict) -> BaseStatblock:
