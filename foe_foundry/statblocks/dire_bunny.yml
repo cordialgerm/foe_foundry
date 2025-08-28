@@ -9,11 +9,10 @@ template:
     name: Dire Bunny Matriarch
     cr: 3
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
-  species: all
+  - Forest: High
+  - Grassland: High
+  - Hill: Medium
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -27,17 +26,19 @@ common: &common
   abilities:
     STR: Primary
     DEX: Medium
+    CON: Default
+    INT: Default
     WIS: Default
+    CHA: Default
   attacks:
     main:
+      base: Bite
       secondary_damage_type: Poison
   skills:
     proficiency:
     - Perception
     - Stealth
     - Initiative
-    - Initiative
-    - Perception
     expertise: []
   saves:
   - WIS

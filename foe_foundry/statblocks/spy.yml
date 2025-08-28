@@ -13,10 +13,12 @@ template:
     cr: 10
     legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+  - Urban: High
+  - Settlement: High
+  - Countryside: Medium
+  - Stronghold: Medium
+  - Hill: Medium
+  - Plain: Medium
   species: all
 common: &common
   creature_type: Humanoid
@@ -24,22 +26,29 @@ common: &common
   languages:
   - Common
   creature_class: Spy
-  hp_multiplier: 1.0
+  hp_multiplier: 0.85
   damage_multiplier: 1.0
+  movement:
+    climb: true
   roles:
-    primary: Soldier
-    additional: []
+    primary: Ambusher
+    additional: [Skirmisher, Artillery]
   abilities:
     STR: Default
     DEX: Primary
-    INT: Default
-    WIS: Default
-    CHA: Default
+    INT: [Medium, 0.5]
+    WIS: [Medium, 1]
+    CHA: [Medium, 1]
   attacks:
     main:
       base: Daggers
+      display_name: "Covert Blade"
       damage_multiplier: 1.0
       secondary_damage_type: Poison
+    secondary:
+      base: HandCrossbow
+      display_name: "Concealed Crossbow"
+    set_attacks: reduced
   skills:
     proficiency:
     - Deception
@@ -49,18 +58,50 @@ common: &common
     - SleightOfHand
     - Stealth
     - Initiative
+    expertise: []
+spy:
+  <<: *common
+elite-spy:
+  <<: *common
+  ac_template: StuddedLeatherArmor
+  ac_modifier: 1
+  skills:
+    proficiency:
+    - Deception
+    - Insight
+    - Investigation
+    - Perception
+    - SleightOfHand
+    - Stealth
+    - Initiative
+    expertise:
     - Stealth
     - Perception
     - Initiative
-    expertise: []
   saves:
   - CON
   - DEX
   - INT
   - WIS
-spy:
-  <<: *common
-elite-spy:
-  <<: *common
 spy-master:
   <<: *common
+  ac_template: StuddedLeatherArmor
+  ac_modifier: 2
+  skills:
+    proficiency:
+    - Deception
+    - Insight
+    - Investigation
+    - Perception
+    - SleightOfHand
+    - Stealth
+    - Initiative
+    expertise:
+    - Stealth
+    - Perception
+    - Initiative
+  saves:
+  - CON
+  - DEX
+  - INT
+  - WIS

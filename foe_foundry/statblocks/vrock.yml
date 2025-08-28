@@ -6,38 +6,53 @@ template:
     name: Vrock
     cr: 6
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
-  species: all
+  - Hellish: High
+  - Deathly: Medium
+  - Ruin: High
+  - Mountain: Medium
+  species: []
 common: &common
   creature_type: Fiend
+  creature_subtype: Demon
   size: Large
   languages:
-  - Abyssal; telepathy 120 ft.
+  - "Abyssal; telepathy 120 ft."
   creature_class: Vrock
-  hp_multiplier: 1.0
+  hp_multiplier: 1.2
   damage_multiplier: 1.0
+  senses:
+    darkvision: 120
+  movement:
+    walk: 40
+    fly: 60
+  ac_template: UnholyArmor
   roles:
-    primary: Soldier
-    additional: []
+    primary: Skirmisher
+    additional: [Controller]
   abilities:
     STR: Primary
-    DEX: Default
-    CON: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    DEX: [Medium, 2]
+    CON: [Constitution, 4]
+    INT: [Default, -4]
+    WIS: [Default, 2]
+    CHA: [Default, -4]
   attacks:
     main:
+      base: Claw
+      display_name: "Diseased Talons"
       secondary_damage_type: Poison
+    set_attacks: 2
   skills:
     proficiency: []
     expertise: []
   saves:
   - DEX
-  - CHA
   - WIS
+  - CHA
+  immunities:
+    damage_types: [Poison]
+    conditions: [Poisoned]
+  resistances:
+    damage_types: [Cold, Lightning, Fire]
 vrock:
   <<: *common

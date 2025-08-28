@@ -13,43 +13,59 @@ template:
     cr: 9
     legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
-  species: all
+  - Haunted: High
+  - Underland: High
+  - Deathly: High
+  - Ruin: High
+  - Underground: High
+  species: []
 common: &common
   creature_type: Undead
-  size: null
+  size: Medium
   languages:
   - Common
   creature_class: Wight
-  hp_multiplier: 1.0
+  hp_multiplier: 1.45
   damage_multiplier: 1.0
+  senses:
+    darkvision: 60
+  ac_template: Breastplate
   roles:
     primary: Soldier
-    additional: []
+    additional: [Leader]
   abilities:
     STR: Primary
-    DEX: Default
-    CON: Default
+    DEX: [Medium, 2]
+    CON: [Constitution, 2]
     INT: Default
     WIS: Medium
-    CHA: Default
+    CHA: [Medium, 3]
   attacks:
     main:
       base: SwordAndShield
+      display_name: "Icicle Sword"
       damage_multiplier: 1.0
-      secondary_damage_type: null
+      secondary_damage_type: Cold
+      uses_shield: false
   skills:
     proficiency: []
     expertise: []
-  saves:
-  - CON
-  - WIS
+  immunities:
+    damage_types: [Poison]
+    conditions: [Poisoned, Exhaustion]
+  resistances:
+    damage_types: [Necrotic]
+  vulnerabilities:
+    damage_types: [Fire]
 wight:
   <<: *common
 wight-fell-champion:
   <<: *common
+  saves:
+  - CON
+  - WIS
 wight-dread-lord:
   <<: *common
+  saves:
+  - CON
+  - WIS

@@ -12,26 +12,29 @@ template:
     name: Simulacrum Mirrorblade
     cr: 7
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
-  species: all
+  - Urban: High
+  - Settlement: Medium
+  - Stronghold: Medium
+  species: []
 common: &common
-  creature_type: null
+  creature_type: Humanoid
+  additional_types: [Construct]
   size: Medium
   languages:
   - Common
   creature_class: Simulacrum
-  hp_multiplier: 1.0
+  hp_multiplier: 0.6
   damage_multiplier: 1.0
   roles:
     primary: Soldier
     additional: []
   abilities:
-    STR: Primary
-    DEX: Medium
-    WIS: Default
+    STR: [Default, -6]
+    DEX: [Default, 2]
+    CON: Default
+    INT: Primary
+    WIS: Medium
+    CHA: Default
   attacks:
     main:
       base: Daggers
@@ -51,9 +54,19 @@ common: &common
   - DEX
   - INT
   - WIS
+  resistances:
+    damage_types: [Bludgeoning, Piercing, Slashing]
+    conditions: [Exhaustion, Poisoned]
 simulacrum:
   <<: *common
 mastercraft-simulacrum:
   <<: *common
 simulacrum-mirrorblade:
   <<: *common
+  abilities:
+    STR: [Default, -6]
+    DEX: Primary
+    CON: Default
+    INT: [Default, -1]
+    WIS: Medium
+    CHA: Default
