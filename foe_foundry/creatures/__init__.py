@@ -25,3 +25,4 @@ from ._random import (
     TemplateFilter,  # noqa
 )  # noqa
 from ._template import MonsterTemplate  # noqa
+from ._yaml_template import YamlMonsterTemplate  # noqa
