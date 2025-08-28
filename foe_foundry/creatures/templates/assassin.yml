@@ -29,13 +29,15 @@ template:
     affinity: rare
   species: all
 
-common: &common
+common:
   creature_type: Humanoid
   size: Medium
   languages:
   - Common
   creature_class: Assassin
-  climb_speed: 30
+  speed:
+    walk: 30
+    climb: 30
   hp_multiplier: 0.85
   damage_multiplier: 1.0
   roles:
@@ -68,7 +70,7 @@ common: &common
   saves: []
 
 contract-killer:
-  <<: *common
+
   attacks:
     set_attacks: 1
     main:
@@ -83,14 +85,14 @@ contract-killer:
       secondary_damage_type: Poison
 
 assassin:
-  <<: *common
+
   skills:
     proficiency: [Acrobatics, Perception, Stealth, Initiative]
     expertise: [Stealth, Perception, Initiative]
   saves: [DEX, INT]
 
 assassin-legend:
-  <<: *common
+
   ac_templates:
   - template: StuddedLeatherArmor
     modifier: 1

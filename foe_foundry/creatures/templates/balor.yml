@@ -24,16 +24,18 @@ template:
     affinity: rare
   species: null
 
-common: &common
+common:
   creature_type: Fiend
   creature_subtype: Demon
   size: Huge
-  walk_speed: 40
-  fly_speed: 80
+  speed:
+    walk: 40
+    fly: 80
   languages:
   - Abyssal; telepathy 120 ft.
   creature_class: Balor
-  truesight: 120
+  senses:
+    truesight: 120
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
@@ -64,7 +66,5 @@ common: &common
   saves: [CON, WIS]
 
 balor:
-  <<: *common
 
 balor-dreadlord:
-  <<: *common

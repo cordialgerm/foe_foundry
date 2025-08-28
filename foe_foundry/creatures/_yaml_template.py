@@ -131,12 +131,16 @@ def merge_template_data(
 
     Args:
         common_data: The common/shared configuration
-        monster_data: Monster-specific overrides
+        monster_data: Monster-specific overrides (can be None for empty monster sections)
 
     Returns:
         Merged configuration dictionary
     """
     merged = common_data.copy()
+
+    # Handle case where monster_data is None or empty
+    if monster_data is None:
+        return merged
 
     for key, value in monster_data.items():
         if key == "<<":
@@ -325,7 +329,14 @@ def parse_damage_immunities_from_yaml(data: Dict[str, Any]) -> tuple[set, set]:
             if cond:
                 condition_immunities.add(cond)
 
-    # Handle legacy condition_immunities at top level
+    # Handle legacy direct formats: damage_immunities: [...], condition_immunities: [...]
+    legacy_damage_immunities = data.get("damage_immunities", [])
+    if legacy_damage_immunities:
+        for dt_name in legacy_damage_immunities:
+            dt = getattr(DamageType, dt_name, None)
+            if dt:
+                damage_immunities.add(dt)
+
     legacy_condition_immunities = data.get("condition_immunities", [])
     for condition_name in legacy_condition_immunities:
         condition = getattr(Condition, condition_name, None)
@@ -347,10 +358,19 @@ def parse_damage_resistances_from_yaml(data: Dict[str, Any]) -> set:
     """
     resistances = set()
 
+    # Try new structured format first: resistances: damage_types: [...]
     resistances_data = data.get("resistances", {})
     if resistances_data:
         damage_resistance_names = resistances_data.get("damage_types", [])
         for dt_name in damage_resistance_names:
+            dt = getattr(DamageType, dt_name, None)
+            if dt:
+                resistances.add(dt)
+
+    # Try legacy direct format: damage_resistances: [...]
+    legacy_resistances = data.get("damage_resistances", [])
+    if legacy_resistances:
+        for dt_name in legacy_resistances:
             dt = getattr(DamageType, dt_name, None)
             if dt:
                 resistances.add(dt)
