@@ -89,10 +89,51 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
     Compare two statblocks for exact equivalence.
 
     This function checks that ALL fields match exactly between the two statblocks.
+    Provides detailed breakdown of differences for complex objects.
 
     Returns:
         None if the statblocks are exactly equivalent, otherwise a string describing the mismatch
     """
+    
+    def _detailed_attributes_diff(attr1, attr2):
+        """Compare Attributes objects and highlight specific differences."""
+        diffs = []
+        if attr1.STR != attr2.STR:
+            diffs.append(f"STR: {attr1.STR} vs {attr2.STR}")
+        if attr1.DEX != attr2.DEX:
+            diffs.append(f"DEX: {attr1.DEX} vs {attr2.DEX}")
+        if attr1.CON != attr2.CON:
+            diffs.append(f"CON: {attr1.CON} vs {attr2.CON}")
+        if attr1.INT != attr2.INT:
+            diffs.append(f"INT: {attr1.INT} vs {attr2.INT}")
+        if attr1.WIS != attr2.WIS:
+            diffs.append(f"WIS: {attr1.WIS} vs {attr2.WIS}")
+        if attr1.CHA != attr2.CHA:
+            diffs.append(f"CHA: {attr1.CHA} vs {attr2.CHA}")
+        if attr1.proficiency != attr2.proficiency:
+            diffs.append(f"proficiency: {attr1.proficiency} vs {attr2.proficiency}")
+        if attr1.proficient_saves != attr2.proficient_saves:
+            diffs.append(f"proficient_saves: {_set_diff_details(attr1.proficient_saves, attr2.proficient_saves)}")
+        if attr1.proficient_skills != attr2.proficient_skills:
+            diffs.append(f"proficient_skills: {_set_diff_details(attr1.proficient_skills, attr2.proficient_skills)}")
+        if attr1.expertise_skills != attr2.expertise_skills:
+            diffs.append(f"expertise_skills: {_set_diff_details(attr1.expertise_skills, attr2.expertise_skills)}")
+        
+        return " | ".join(diffs) if diffs else "unknown difference"
+    
+    def _set_diff_details(set1, set2):
+        """Show detailed differences between two sets."""
+        if set1 == set2:
+            return "identical"
+        
+        added = set2 - set1
+        removed = set1 - set2
+        parts = []
+        if added:
+            parts.append(f"added: {added}")
+        if removed:
+            parts.append(f"removed: {removed}")
+        return f"({', '.join(parts)})"
     # Core identity fields
     if stats1.name != stats2.name:
         return f"name mismatch: '{stats1.name}' != '{stats2.name}'"
@@ -123,13 +164,13 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
     if stats1.creature_class != stats2.creature_class:
         return f"creature_class mismatch: '{stats1.creature_class}' != '{stats2.creature_class}'"
     if stats1.additional_types != stats2.additional_types:
-        return f"additional_types mismatch: {stats1.additional_types} != {stats2.additional_types}"
+        return f"additional_types mismatch: {_set_diff_details(stats1.additional_types, stats2.additional_types)}"
 
     # Role information
     if stats1.role != stats2.role:
         return f"role mismatch: {stats1.role} != {stats2.role}"
     if stats1.additional_roles != stats2.additional_roles:
-        return f"additional_roles mismatch: {stats1.additional_roles} != {stats2.additional_roles}"
+        return f"additional_roles mismatch: {_set_diff_details(stats1.additional_roles, stats2.additional_roles)}"
 
     # Speed, size, senses, languages
     if stats1.speed != stats2.speed:
@@ -156,13 +197,13 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
 
     # Damage vulnerabilities, resistances, immunities
     if stats1.damage_vulnerabilities != stats2.damage_vulnerabilities:
-        return f"damage_vulnerabilities mismatch: {stats1.damage_vulnerabilities} != {stats2.damage_vulnerabilities}"
+        return f"damage_vulnerabilities mismatch: {_set_diff_details(stats1.damage_vulnerabilities, stats2.damage_vulnerabilities)}"
     if stats1.damage_resistances != stats2.damage_resistances:
-        return f"damage_resistances mismatch: {stats1.damage_resistances} != {stats2.damage_resistances}"
+        return f"damage_resistances mismatch: {_set_diff_details(stats1.damage_resistances, stats2.damage_resistances)}"
     if stats1.damage_immunities != stats2.damage_immunities:
-        return f"damage_immunities mismatch: {stats1.damage_immunities} != {stats2.damage_immunities}"
+        return f"damage_immunities mismatch: {_set_diff_details(stats1.damage_immunities, stats2.damage_immunities)}"
     if stats1.condition_immunities != stats2.condition_immunities:
-        return f"condition_immunities mismatch: {stats1.condition_immunities} != {stats2.condition_immunities}"
+        return f"condition_immunities mismatch: {_set_diff_details(stats1.condition_immunities, stats2.condition_immunities)}"
     if stats1.nonmagical_resistance != stats2.nonmagical_resistance:
         return f"nonmagical_resistance mismatch: {stats1.nonmagical_resistance} != {stats2.nonmagical_resistance}"
     if stats1.nonmagical_immunity != stats2.nonmagical_immunity:
@@ -172,7 +213,7 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
     if stats1.primary_attribute_score != stats2.primary_attribute_score:
         return f"primary_attribute_score mismatch: {stats1.primary_attribute_score} != {stats2.primary_attribute_score}"
     if stats1.attributes != stats2.attributes:
-        return f"attributes mismatch: {stats1.attributes} != {stats2.attributes}"
+        return f"attributes mismatch: {_detailed_attributes_diff(stats1.attributes, stats2.attributes)}"
     if stats1.difficulty_class_modifier != stats2.difficulty_class_modifier:
         return f"difficulty_class_modifier mismatch: {stats1.difficulty_class_modifier} != {stats2.difficulty_class_modifier}"
 
@@ -206,7 +247,7 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
     if stats1.selection_target_args != stats2.selection_target_args:
         return f"selection_target_args mismatch: {stats1.selection_target_args} != {stats2.selection_target_args}"
     if stats1.flags != stats2.flags:
-        return f"flags mismatch: {stats1.flags} != {stats2.flags}"
+        return f"flags mismatch: {_set_diff_details(stats1.flags, stats2.flags)}"
 
     # Spellcasting
     if stats1.caster_type != stats2.caster_type:
