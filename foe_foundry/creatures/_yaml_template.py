@@ -219,6 +219,11 @@ def parse_statblock_from_yaml(
     movement = parse_movement_from_yaml(merged_data)
     if movement:
         statblock = statblock.copy(speed=movement)
+    
+    # Apply speed modifiers
+    speed_modifier = parse_speed_modifier_from_yaml(merged_data)
+    if speed_modifier is not None:
+        statblock = statblock.copy(speed=statblock.speed.delta(speed_modifier))
 
     # Apply senses
     senses = parse_senses_from_yaml(merged_data)
@@ -483,6 +488,25 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
         movement_kwargs["hover"] = speed_data["hover"]
 
     return Movement(**movement_kwargs) if movement_kwargs else None
+
+
+def parse_speed_modifier_from_yaml(data: Dict[str, Any]) -> Optional[int]:
+    """
+    Parse speed modifier from YAML.
+    
+    Args:
+        data: YAML data containing speed section
+        
+    Returns:
+        Speed modifier as integer, or None if no modifier
+    """
+    speed_data = data.get("speed", {})
+    
+    # Handle integer speed modifiers
+    if isinstance(speed_data, (int, float)):
+        return int(speed_data)
+    
+    return None
 
 
 def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Senses]:

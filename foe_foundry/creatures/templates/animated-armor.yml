@@ -60,7 +60,7 @@ common: &common
         Paralyzed,
         Petrified,
       ]
-    damage: [Poison, Psychic]
+    damage_types: [Poison, Psychic]
   attacks:
     set_attacks: 2
     main:
