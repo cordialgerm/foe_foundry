@@ -54,7 +54,7 @@ common: &common
   saves: []
   senses:
     darkvision: 60
-  movement:
+  speed:
     walk: 30
     fly: 60
 chimera:

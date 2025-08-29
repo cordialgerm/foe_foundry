@@ -22,10 +22,11 @@ common: &common
   damage_multiplier: 1.0
   senses:
     darkvision: 120
-  movement:
+  speed:
     walk: 40
     fly: 60
-  ac_template: UnholyArmor
+  ac_templates:
+  - template: UnholyArmor
   roles:
     primary: Skirmisher
     additional: [Controller]

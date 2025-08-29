@@ -41,7 +41,7 @@ common: &common
   - template: Unarmored
   senses:
     blindsight: 60
-  movement:
+  speed:
     walk: 20
     climb: 20
   immunities:

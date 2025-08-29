@@ -45,7 +45,7 @@ common: &common
     - template: NaturalArmor
   senses:
     darkvision: 60
-  movement:
+  speed:
     swim: 30
   resistances:
     damage_types: [Acid]

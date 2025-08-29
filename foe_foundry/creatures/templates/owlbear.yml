@@ -46,7 +46,7 @@ common: &common
     - template: NaturalArmor
   senses:
     darkvision: 60
-  movement:
+  speed:
     walk: 40
     climb: 40
   skills:

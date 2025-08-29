@@ -138,7 +138,7 @@ ogre-big-brainz:
   ac_templates:
     - template: UnholyArmor
   caster_type: Arcane
-  movement:
+  speed:
     walk: 30
     fly: 30
     hover: true

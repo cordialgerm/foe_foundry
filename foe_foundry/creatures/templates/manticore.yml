@@ -44,7 +44,7 @@ common: &common
       ac_modifier: -1
   senses:
     darkvision: 60
-  movement:
+  speed:
     walk: 30
     fly: 50
   skills:

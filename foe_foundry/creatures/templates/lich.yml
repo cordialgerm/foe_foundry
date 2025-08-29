@@ -68,7 +68,7 @@ archlich:
   - INT
   - WIS
   - CHA
-  movement:
+  speed:
     walk: 30
     fly: 15
     hover: true
