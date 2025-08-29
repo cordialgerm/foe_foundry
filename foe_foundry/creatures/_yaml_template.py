@@ -448,8 +448,10 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
     elif "ac_template" in data:
         ac_template = data["ac_template"]
         if isinstance(ac_template, str):
-            # Convert single string to list format for consistent processing
-            ac_templates_data = [ac_template]
+            # Check for ac_modifier
+            ac_modifier = data.get("ac_modifier", 0)
+            # Convert to dict format with modifier
+            ac_templates_data = [{"template": ac_template, "modifier": ac_modifier}]
         else:
             raise ValueError(f"ac_template must be a string, got {type(ac_template)}")
     # Handle legacy format: armor_class
@@ -473,9 +475,8 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
         else:
             raise ValueError(f"armor_class must be a string or dict, got {type(armor_class)}")
     else:
-        # If no AC template is specified, default to Unarmored
-        # This provides a fallback for incomplete YAML templates
-        ac_templates_data = ["Unarmored"]
+        # If no AC template is specified, return empty list (no default)
+        return []
 
     if isinstance(ac_templates_data, str):
         ac_templates_data = [{"template": ac_templates_data}]
@@ -674,9 +675,64 @@ def parse_statblock_from_yaml(
         statblock = statblock.copy(**modifications)
 
     # Apply AC templates
-    ac_templates = parse_ac_templates_from_yaml(merged_data)
-    if ac_templates:
-        statblock = statblock.copy(ac_templates=ac_templates)
+    ac_templates_data = merged_data.get("ac_templates", [])
+    if ac_templates_data:
+        # Handle new format with templates and modifiers
+        for template_data in ac_templates_data:
+            if isinstance(template_data, dict):
+                template_name = template_data.get("template")
+                modifier = template_data.get("modifier", 0)
+                if template_name:
+                    # Get the template class and apply it with modifier
+                    template_map = {
+                        "ArcaneArmor": ArcaneArmor,
+                        "BerserkersDefense": BerserkersDefense,
+                        "Breastplate": Breastplate,
+                        "ChainShirt": ChainShirt,
+                        "ChainmailArmor": ChainmailArmor,
+                        "flat": flat,
+                        "HideArmor": HideArmor,
+                        "HolyArmor": HolyArmor,
+                        "LeatherArmor": LeatherArmor,
+                        "NaturalArmor": NaturalArmor,
+                        "NaturalPlating": NaturalPlating,
+                        "PatchworkArmor": PatchworkArmor,
+                        "PlateArmor": PlateArmor,
+                        "SplintArmor": SplintArmor,
+                        "StuddedLeatherArmor": StuddedLeatherArmor,
+                        "Unarmored": Unarmored,
+                        "UnholyArmor": UnholyArmor,
+                    }
+                    template_class = template_map.get(template_name)
+                    if template_class:
+                        statblock = statblock.add_ac_template(template_class, ac_modifier=modifier)
+    else:
+        # Handle legacy single template format
+        ac_template = merged_data.get("ac_template")
+        if ac_template:
+            ac_modifier = merged_data.get("ac_modifier", 0)
+            template_map = {
+                "ArcaneArmor": ArcaneArmor,
+                "BerserkersDefense": BerserkersDefense,
+                "Breastplate": Breastplate,
+                "ChainShirt": ChainShirt,
+                "ChainmailArmor": ChainmailArmor,
+                "flat": flat,
+                "HideArmor": HideArmor,
+                "HolyArmor": HolyArmor,
+                "LeatherArmor": LeatherArmor,
+                "NaturalArmor": NaturalArmor,
+                "NaturalPlating": NaturalPlating,
+                "PatchworkArmor": PatchworkArmor,
+                "PlateArmor": PlateArmor,
+                "SplintArmor": SplintArmor,
+                "StuddedLeatherArmor": StuddedLeatherArmor,
+                "Unarmored": Unarmored,
+                "UnholyArmor": UnholyArmor,
+            }
+            template_class = template_map.get(ac_template)
+            if template_class:
+                statblock = statblock.add_ac_template(template_class, ac_modifier=ac_modifier)
 
     # Apply movement
     movement = parse_movement_from_yaml(merged_data)
