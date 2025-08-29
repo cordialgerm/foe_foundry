@@ -627,7 +627,7 @@ def parse_statblock_from_yaml(
             template_key=template_data["key"],
             variant_key=settings.variant.key,
             monster_key=settings.monster_key,
-            species_key=None,
+            species_key=settings.species.key if settings.species else None,
             cr=cr,
             stats=stats,
             hp_multiplier=hp_multiplier,
