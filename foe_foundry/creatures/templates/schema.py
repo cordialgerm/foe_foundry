@@ -11,72 +11,8 @@ import yaml
 
 # Define the schema as a dictionary structure that can be used for validation
 YAML_TEMPLATE_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "template": {
-            "type": "object",
-            "properties": {
-                "key": {"type": "string"},
-                "name": {"type": "string"},
-                "monsters": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "key": {"type": "string"},
-                            "name": {"type": "string"},
-                            "cr": {"type": "number"},
-                            "legendary": {"type": "boolean"},
-                        },
-                        "required": ["key", "name", "cr"],
-                        "additionalProperties": False,
-                    },
-                },
-                "environments": {
-                    "oneOf": [
-                        {
-                            "type": "array",
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "development": {"type": "string"},
-                                    "biome": {"type": "string"},
-                                    "terrain": {"type": "string"},
-                                    "region": {"type": "string"},
-                                    "extraplanar": {"type": "string"},
-                                    "affinity": {
-                                        "type": "string",
-                                        "enum": [
-                                            "native",
-                                            "common",
-                                            "uncommon",
-                                            "rare",
-                                        ],
-                                    },
-                                },
-                                "additionalProperties": False,
-                            },
-                        },
-                        {
-                            "type": "object",
-                            "patternProperties": {
-                                "^[a-zA-Z0-9_-]+$": {
-                                    "type": "string",
-                                    "enum": ["native", "common", "uncommon", "rare"],
-                                }
-                            },
-                        },
-                    ]
-                },
-                "species": {
-                    "oneOf": [{"type": "string", "enum": ["all"]}, {"type": "null"}]
-                },
-                "is_sentient_species": {"type": "boolean"},
-            },
-            "required": ["key", "name", "monsters"],
-            "additionalProperties": False,
-        },
-        "common": {
+    "$defs": {
+        "statblockProperties": {
             "type": "object",
             "properties": {
                 "creature_type": {"type": "string"},
@@ -91,203 +27,6 @@ YAML_TEMPLATE_SCHEMA = {
                 "hp_multiplier": {"type": "number"},
                 "damage_multiplier": {"type": "number"},
                 "darkvision": {"type": "number"},
-                "roles": {
-                    "type": "object",
-                    "properties": {
-                        "primary": {"type": "string"},
-                        "additional": {"type": "array", "items": {"type": "string"}},
-                    },
-                    "additionalProperties": False,
-                },
-                "abilities": {
-                    "type": "object",
-                    "properties": {
-                        "STR": {"oneOf": [{"type": "string"}, {"type": "array"}]},
-                        "DEX": {"oneOf": [{"type": "string"}, {"type": "array"}]},
-                        "CON": {"oneOf": [{"type": "string"}, {"type": "array"}]},
-                        "INT": {"oneOf": [{"type": "string"}, {"type": "array"}]},
-                        "WIS": {"oneOf": [{"type": "string"}, {"type": "array"}]},
-                        "CHA": {"oneOf": [{"type": "string"}, {"type": "array"}]},
-                    },
-                    "additionalProperties": False,
-                },
-                "ac_templates": {
-                    "oneOf": [
-                        {"type": "string"},
-                        {
-                            "type": "array",
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "template": {"type": "string"},
-                                    "modifier": {"type": "number"},
-                                },
-                                "required": ["template"],
-                                "additionalProperties": False,
-                            },
-                        },
-                    ]
-                },
-                "attacks": {
-                    "type": "object",
-                    "properties": {
-                        "main": {
-                            "type": "object",
-                            "properties": {
-                                "base": {"type": "string"},
-                                "display_name": {"type": "string"},
-                                "damage_multiplier": {"type": "number"},
-                                "damage_scalar": {"type": "number"},
-                                "reach": {"type": "number"},
-                                "damage_type": {"type": "string"},
-                                "secondary_damage_type": {
-                                    "oneOf": [
-                                        {"type": "string"},
-                                        {"type": "array", "items": {"type": "string"}},
-                                        {"type": "null"},
-                                    ]
-                                },
-                            },
-                            "additionalProperties": False,
-                        },
-                        "secondary": {
-                            "oneOf": [
-                                {
-                                    "type": "object",
-                                    "properties": {
-                                        "base": {"type": "string"},
-                                        "display_name": {"type": "string"},
-                                        "damage_multiplier": {"type": "number"},
-                                        "damage_scalar": {"type": "number"},
-                                        "reach": {"type": "number"},
-                                        "damage_type": {"type": "string"},
-                                        "secondary_damage_type": {
-                                            "oneOf": [
-                                                {"type": "string"},
-                                                {
-                                                    "type": "array",
-                                                    "items": {"type": "string"},
-                                                },
-                                                {"type": "null"},
-                                            ]
-                                        },
-                                    },
-                                    "additionalProperties": False,
-                                },
-                                {"type": "null"},
-                            ]
-                        },
-                        "set_attacks": {"type": "number"},
-                    },
-                    "additionalProperties": False,
-                },
-                "skills": {
-                    "type": "object",
-                    "properties": {
-                        "proficiency": {"type": "array", "items": {"type": "string"}},
-                        "expertise": {"type": "array", "items": {"type": "string"}},
-                    },
-                    "additionalProperties": False,
-                },
-                "saves": {"type": "array", "items": {"type": "string"}},
-                "condition_immunities": {"type": "array", "items": {"type": "string"}},
-                "immunities": {
-                    "type": "object",
-                    "properties": {
-                        "damage_types": {"type": "array", "items": {"type": "string"}},
-                        "conditions": {"type": "array", "items": {"type": "string"}},
-                    },
-                    "additionalProperties": False,
-                },
-                "resistances": {
-                    "type": "object",
-                    "properties": {
-                        "damage_types": {"type": "array", "items": {"type": "string"}}
-                    },
-                    "additionalProperties": False,
-                },
-                "spellcasting": {
-                    "type": "object",
-                    "properties": {"caster_type": {"type": "string"}},
-                    "additionalProperties": False,
-                },
-                "movement": {
-                    "type": "object",
-                    "properties": {
-                        "walk": {"type": "number"},
-                        "climb": {"type": "number"},
-                        "fly": {"type": "number"},
-                        "swim": {"type": "number"},
-                    },
-                    "additionalProperties": False,
-                },
-                "senses": {
-                    "type": "object",
-                    "properties": {
-                        "darkvision": {"type": "number"},
-                        "blindsight": {"type": "number"},
-                        "tremorsense": {"type": "number"},
-                        "truesight": {"type": "number"},
-                    },
-                    "additionalProperties": False,
-                },
-                "legendary": {
-                    "type": "object",
-                    "properties": {
-                        "actions": {"type": "number"},
-                        "resistances": {"type": "number"},
-                    },
-                    "additionalProperties": False,
-                },
-                "attack_reduction": {"type": "number"},
-                # Legacy support fields
-                "damage_immunities": {"type": "array", "items": {"type": "string"}},
-                "damage_resistances": {"type": "array", "items": {"type": "string"}},
-                "damage_vulnerabilities": {"type": "array", "items": {"type": "string"}},
-                # Additional fields found in templates
-                "additional_types": {"type": "array", "items": {"type": "string"}},
-                "caster_type": {"type": "string"},
-                "flags": {"type": "object"},
-                "has_unique_movement_manipulation": {"type": "boolean"},
-                "legendary_boost_ac": {"type": "boolean"},
-                "min_attacks": {"type": "number"},
-                "multiattack_custom_text": {"type": "string"},
-                "primary_damage_type": {"type": "string"},
-                "reaction_count": {"type": "number"},
-                "reduce_attacks": {"type": "number"},
-                "secondary_damage_type": {"type": "string"},
-                "set_attacks": {"type": "number"},
-                "uses_shield": {"type": "boolean"},
-                "vulnerabilities": {
-                    "type": "object",
-                    "properties": {
-                        "damage_types": {"type": "array", "items": {"type": "string"}}
-                    },
-                    "additionalProperties": False,
-                },
-            },
-            "additionalProperties": False,
-        },
-    },
-    "required": ["template", "common"],
-    "patternProperties": {
-        "^[a-zA-Z0-9_-]+$": {
-            # Individual monster configurations (can inherit from common)
-            # Must use the same structure as common section
-            "type": "object",
-            "properties": {
-                # Allow all properties that can be in common
-                "creature_type": {"type": "string"},
-                "additional_creature_types": {
-                    "type": "array",
-                    "items": {"type": "string"},
-                },
-                "creature_subtype": {"type": "string"},
-                "size": {"type": "string"},
-                "languages": {"type": "array", "items": {"type": "string"}},
-                "creature_class": {"type": "string"},
-                "hp_multiplier": {"type": "number"},
-                "damage_multiplier": {"type": "number"},
                 "roles": {
                     "type": "object",
                     "properties": {
@@ -461,13 +200,99 @@ YAML_TEMPLATE_SCHEMA = {
                 # Legacy support fields
                 "damage_immunities": {"type": "array", "items": {"type": "string"}},
                 "damage_resistances": {"type": "array", "items": {"type": "string"}},
-                "damage_vulnerabilities": {"type": "array", "items": {"type": "string"}},
+                "damage_vulnerabilities": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                },
+                # Additional fields found in templates
+                "additional_types": {"type": "array", "items": {"type": "string"}},
+                "caster_type": {"type": "string"},
+                "flags": {"type": "object"},
+                "has_unique_movement_manipulation": {"type": "boolean"},
+                "legendary_boost_ac": {"type": "boolean"},
+                "min_attacks": {"type": "number"},
+                "multiattack_custom_text": {"type": "string"},
+                "primary_damage_type": {"type": "string"},
+                "reaction_count": {"type": "number"},
+                "reduce_attacks": {"type": "number"},
+                "secondary_damage_type": {"type": "string"},
+                "set_attacks": {"type": "number"},
+                "uses_shield": {"type": "boolean"},
                 # YAML anchor support
                 "<<": {},  # Allow YAML anchors
             },
             "additionalProperties": False,
         }
     },
+    "type": "object",
+    "properties": {
+        "template": {
+            "type": "object",
+            "properties": {
+                "key": {"type": "string"},
+                "name": {"type": "string"},
+                "monsters": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "key": {"type": "string"},
+                            "name": {"type": "string"},
+                            "cr": {"type": "number"},
+                            "legendary": {"type": "boolean"},
+                        },
+                        "required": ["key", "name", "cr"],
+                        "additionalProperties": False,
+                    },
+                },
+                "environments": {
+                    "oneOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "development": {"type": "string"},
+                                    "biome": {"type": "string"},
+                                    "terrain": {"type": "string"},
+                                    "region": {"type": "string"},
+                                    "extraplanar": {"type": "string"},
+                                    "affinity": {
+                                        "type": "string",
+                                        "enum": [
+                                            "native",
+                                            "common",
+                                            "uncommon",
+                                            "rare",
+                                        ],
+                                    },
+                                },
+                                "additionalProperties": False,
+                            },
+                        },
+                        {
+                            "type": "object",
+                            "patternProperties": {
+                                "^[a-zA-Z0-9_-]+$": {
+                                    "type": "string",
+                                    "enum": ["native", "common", "uncommon", "rare"],
+                                }
+                            },
+                        },
+                    ]
+                },
+                "species": {
+                    "oneOf": [{"type": "string", "enum": ["all"]}, {"type": "null"}]
+                },
+                "is_sentient_species": {"type": "boolean"},
+            },
+            "required": ["key", "name", "monsters"],
+            "additionalProperties": False,
+        },
+        "common": {"$ref": "#/$defs/statblockProperties"},
+    },
+    "required": ["template", "common"],
+    "patternProperties": {"^[a-zA-Z0-9_-]+$": {"$ref": "#/$defs/statblockProperties"}},
     "additionalProperties": False,
 }
 
