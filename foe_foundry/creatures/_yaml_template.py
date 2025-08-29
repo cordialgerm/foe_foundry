@@ -121,6 +121,23 @@ class YamlMonsterTemplate(MonsterTemplate):
                     return PowerSelection(powers_module.LoadoutRunicSpellplate)
                 else:
                     return PowerSelection(powers_module.LoadoutAnimatedArmor)
+            elif template_key == "goblin":
+                if monster_key == "goblin-lickspittle":
+                    return PowerSelection(powers_module.LoadoutLickspittle)
+                elif monster_key == "goblin":
+                    return PowerSelection(powers_module.LoadoutWarrior)
+                elif monster_key == "goblin-brute":
+                    return PowerSelection(powers_module.LoadoutBrute)
+                elif monster_key == "goblin-boss":
+                    return PowerSelection(powers_module.LoadoutBoss)
+                elif monster_key == "goblin-warchief":
+                    return PowerSelection(powers_module.LoadoutWarchief)
+                elif monster_key == "goblin-foulhex":
+                    return PowerSelection(powers_module.LoadoutShamanAdept)
+                elif monster_key == "goblin-shaman":
+                    return PowerSelection(powers_module.LoadoutShaman)
+                else:
+                    return PowerSelection(powers_module.LoadoutWarrior)
             else:
                 # For other templates, try to find a default loadout
                 # Look for common loadout names
@@ -902,8 +919,11 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
         return variants
 
     else:
-        # Default behavior: one variant per monster (for other templates)
+        # Default behavior: group all monsters into a single variant named after the template
+        template_name = template_data["name"]
         variants = []
+        variant_monsters = []
+        
         for monster_data in monsters:
             name = monster_data["name"]
             cr = monster_data["cr"]
@@ -916,9 +936,15 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
                 srd_creatures=None,  # TODO LATER
                 other_creatures=None,  # TODO LATER
             )
+            variant_monsters.append(monster)
 
-            variant = MonsterVariant(name=name, description=name, monsters=[monster])
-            variants.append(variant)
+        # Create a single variant containing all monsters
+        variant = MonsterVariant(
+            name=template_name, 
+            description=f"{template_name} creatures", 
+            monsters=variant_monsters
+        )
+        variants.append(variant)
 
         return variants
 
