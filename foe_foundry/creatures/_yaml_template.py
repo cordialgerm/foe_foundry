@@ -437,23 +437,13 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
     Returns:
         List of ArmorClassTemplate objects
     """
-    # Handle new format: ac_templates
+    # Handle ac_templates format
     if "ac_templates" in data:
         ac_templates_data = data["ac_templates"]
         if not ac_templates_data:
             raise ValueError(
                 "ac_templates cannot be empty - at least one AC template must be specified"
             )
-    # Handle legacy singular format: ac_template
-    elif "ac_template" in data:
-        ac_template = data["ac_template"]
-        if isinstance(ac_template, str):
-            # Check for ac_modifier
-            ac_modifier = data.get("ac_modifier", 0)
-            # Convert to dict format with modifier
-            ac_templates_data = [{"template": ac_template, "modifier": ac_modifier}]
-        else:
-            raise ValueError(f"ac_template must be a string, got {type(ac_template)}")
     # Handle legacy format: armor_class
     elif "armor_class" in data:
         armor_class = data["armor_class"]
@@ -475,8 +465,10 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
         else:
             raise ValueError(f"armor_class must be a string or dict, got {type(armor_class)}")
     else:
-        # If no AC template is specified, return empty list (no default)
-        return []
+        # No AC template specified - this is required
+        raise ValueError(
+            "At least one AC template must be specified. Use 'ac_templates' with a list of template objects."
+        )
 
     if isinstance(ac_templates_data, str):
         ac_templates_data = [{"template": ac_templates_data}]

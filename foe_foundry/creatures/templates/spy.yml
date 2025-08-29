@@ -64,8 +64,9 @@ spy:
   <<: *common
 elite-spy:
   <<: *common
-  ac_template: StuddedLeatherArmor
-  ac_modifier: 1
+  ac_templates:
+    - template: StuddedLeatherArmor
+      modifier: 1
   skills:
     proficiency:
       - Deception
@@ -86,8 +87,9 @@ elite-spy:
     - WIS
 spy-master:
   <<: *common
-  ac_template: StuddedLeatherArmor
-  ac_modifier: 2
+  ac_templates:
+    - template: StuddedLeatherArmor
+      modifier: 2
   attack_reduction: 2
   skills:
     proficiency:
