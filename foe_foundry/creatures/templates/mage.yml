@@ -123,8 +123,8 @@ common: &common
   languages:
   - Common
   creature_class: Wizard
-  hp_multiplier: 1.0
-  damage_multiplier: 1.0
+  hp_multiplier: 0.85
+  damage_multiplier: 1.2
   ac_templates:
   - ArcaneArmor
   roles:
