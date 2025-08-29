@@ -58,7 +58,7 @@ skeleton:
   roles:
     primary: Soldier
     additional: []
-  armor_class: Unarmored
+  ac_templates: Unarmored
   attacks:
     main:
       base: Daggers
@@ -75,7 +75,7 @@ skeletal-grave-guard:
   roles:
     primary: Defender
     additional: [Leader]
-  armor_class: Breastplate
+  ac_templates: Breastplate
   attacks:
     main:
       base: SpearAndShield
@@ -93,7 +93,7 @@ burning-skeleton:
   roles:
     primary: Soldier
     additional: []
-  armor_class: Breastplate
+  ac_templates: Breastplate
   attacks:
     main:
       base: Greatsword
@@ -115,7 +115,7 @@ burning-skeletal-champion:
   roles:
     primary: Soldier
     additional: [Leader]
-  armor_class: Breastplate
+  ac_templates: Breastplate
   attacks:
     main:
       base: Greatsword
@@ -137,7 +137,7 @@ freezing-skeleton:
   roles:
     primary: Soldier
     additional: []
-  armor_class: Breastplate
+  ac_templates: Breastplate
   attacks:
     main:
       base: Greatsword
@@ -159,7 +159,7 @@ freezing-skeletal-champion:
   roles:
     primary: Soldier
     additional: [Leader]
-  armor_class: Breastplate
+  ac_templates: Breastplate
   attacks:
     main:
       base: Greatsword

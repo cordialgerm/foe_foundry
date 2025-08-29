@@ -112,16 +112,21 @@ YAML_TEMPLATE_SCHEMA = {
                     "additionalProperties": False,
                 },
                 "ac_templates": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "template": {"type": "string"},
-                            "modifier": {"type": "number"},
+                    "oneOf": [
+                        {"type": "string"},
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "template": {"type": "string"},
+                                    "modifier": {"type": "number"},
+                                },
+                                "required": ["template"],
+                                "additionalProperties": False,
+                            },
                         },
-                        "required": ["template"],
-                        "additionalProperties": False,
-                    },
+                    ]
                 },
                 "attacks": {
                     "type": "object",
@@ -303,8 +308,12 @@ def validate_yaml_template(template_data: Dict[str, Any]) -> List[str]:
                                     f"Missing required field 'template.monsters[{i}].{field}'"
                                 )
 
-                        if "cr" in monster and not isinstance(monster["cr"], (int, float)):
-                            errors.append(f"'template.monsters[{i}].cr' must be a number")
+                        if "cr" in monster and not isinstance(
+                            monster["cr"], (int, float)
+                        ):
+                            errors.append(
+                                f"'template.monsters[{i}].cr' must be a number"
+                            )
 
     # Validate individual monster sections exist
     if "template" in template_data and "monsters" in template_data["template"]:

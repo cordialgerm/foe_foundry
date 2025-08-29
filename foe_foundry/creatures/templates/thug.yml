@@ -59,7 +59,7 @@ thug:
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class: LeatherArmor
+  ac_templates: LeatherArmor
   attacks:
     main:
       base: Maul
@@ -79,7 +79,7 @@ veteran-thug:
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class: LeatherArmor
+  ac_templates: LeatherArmor
   attacks:
     main:
       base: Maul
@@ -99,9 +99,9 @@ elite-thug:
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class:
-    base: LeatherArmor
-    modifier: 1
+  ac_templates:
+    - base: LeatherArmor
+      modifier: 1
   attacks:
     main:
       base: Maul
@@ -122,7 +122,7 @@ brawler:
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class: LeatherArmor
+  ac_templates: LeatherArmor
   attacks:
     main:
       type: natural
@@ -136,7 +136,7 @@ thug-boss:
   roles:
     primary: Leader
     additional: [Bruiser]
-  armor_class: SplintArmor
+  ac_templates: SplintArmor
   attacks:
     main:
       base: Maul
@@ -156,7 +156,7 @@ thug-overboss:
   roles:
     primary: Leader
     additional: [Bruiser]
-  armor_class:
+  ac_templates:
     base: SplintArmor
     modifier: 1
   attacks:
@@ -178,7 +178,7 @@ thug-legend:
   roles:
     primary: Leader
     additional: [Bruiser]
-  armor_class:
+  ac_templates:
     base: SplintArmor
     modifier: 1
   attacks:

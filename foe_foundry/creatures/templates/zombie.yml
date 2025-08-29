@@ -48,7 +48,7 @@ common: &common
     INT: [Default, -7]
     WIS: [Default, -4]
     CHA: [Default, -5]
-  armor_class: Unarmored
+  ac_templates: Unarmored
   attacks:
     main:
       type: natural

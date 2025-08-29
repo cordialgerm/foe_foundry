@@ -76,7 +76,7 @@ cultist:
   roles:
     primary: Controller
     additional: [Artillery]
-  armor_class: StuddedLeatherArmor
+  ac_templates: StuddedLeatherArmor
   attacks:
     main:
       base: Daggers
@@ -89,7 +89,7 @@ cultist-fanatic:
   roles:
     primary: Controller
     additional: [Artillery]
-  armor_class: StuddedLeatherArmor
+  ac_templates: StuddedLeatherArmor
   attacks:
     main:
       base: Daggers
@@ -105,7 +105,7 @@ cultist-grand-master:
   roles:
     primary: Controller
     additional: [Artillery, Leader]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       base: Daggers
@@ -121,7 +121,7 @@ cultist-exarch:
   roles:
     primary: Controller
     additional: [Artillery, Leader]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       base: Daggers
@@ -138,7 +138,7 @@ aberrant-cultist-initiate:
   roles:
     primary: Controller
     additional: [Artillery]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       type: natural
@@ -155,7 +155,7 @@ aberrant-cultist:
   roles:
     primary: Controller
     additional: [Artillery]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       type: natural
@@ -172,7 +172,7 @@ aberrant-cultist-grand-master:
   roles:
     primary: Controller
     additional: [Artillery, Leader]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       type: natural
@@ -190,7 +190,7 @@ death-cultist-initiate:
   roles:
     primary: Controller
     additional: [Artillery]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       type: spell
@@ -207,7 +207,7 @@ death-cultist:
   roles:
     primary: Controller
     additional: [Artillery]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       type: spell
@@ -224,7 +224,7 @@ death-cultist-grand-master:
   roles:
     primary: Controller
     additional: [Artillery, Leader]
-  armor_class: UnholyArmor
+  ac_templates: UnholyArmor
   attacks:
     main:
       type: spell
@@ -242,7 +242,7 @@ fiend-cultist-initiate:
   roles:
     primary: Bruiser
     additional: [Controller]
-  armor_class: PlateArmor
+  ac_templates: PlateArmor
   attacks:
     main:
       base: Greataxe
@@ -258,7 +258,7 @@ fiend-cultist:
   roles:
     primary: Bruiser
     additional: [Controller]
-  armor_class: PlateArmor
+  ac_templates: PlateArmor
   attacks:
     main:
       base: Greataxe
@@ -274,7 +274,7 @@ fiend-cultist-grand-master:
   roles:
     primary: Bruiser
     additional: [Controller, Leader]
-  armor_class: PlateArmor
+  ac_templates: PlateArmor
   attacks:
     main:
       base: Greataxe
