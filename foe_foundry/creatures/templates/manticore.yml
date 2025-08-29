@@ -2,12 +2,12 @@ template:
   key: manticore
   name: Manticore
   monsters:
-  - key: manticore
-    name: Manticore
-    cr: 3
-  - key: manticore-ravager
-    name: Manticore Ravager
-    cr: 6
+    - key: manticore
+      name: Manticore
+      cr: 3
+    - key: manticore-ravager
+      name: Manticore Ravager
+      cr: 6
   environments:
     Mountain: Native
     Wilderness: Native
@@ -20,7 +20,7 @@ common: &common
   creature_type: Monstrosity
   size: Large
   languages:
-  - Common
+    - Common
   creature_class: Manticore
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -49,7 +49,7 @@ common: &common
     fly: 50
   skills:
     proficiency:
-    - Intimidation
+      - Intimidation
     expertise: []
   saves: []
 manticore:
@@ -58,4 +58,4 @@ manticore:
 manticore-ravager:
   <<: *common
   saves:
-  - WIS
+    - WIS

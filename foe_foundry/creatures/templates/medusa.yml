@@ -2,13 +2,13 @@ template:
   key: medusa
   name: Medusa
   monsters:
-  - key: medusa
-    name: Medusa
-    cr: 6
-  - key: medusa-queen
-    name: Medusa Queen
-    cr: 10
-    legendary: true
+    - key: medusa
+      name: Medusa
+      cr: 6
+    - key: medusa-queen
+      name: Medusa Queen
+      cr: 10
+      legendary: true
   environments:
     Ruin: Native
     Dungeon: Common
@@ -47,13 +47,13 @@ common: &common
     darkvision: 150
   skills:
     proficiency:
-    - Initiative
-    - Deception
-    - Perception
-    - Stealth
+      - Initiative
+      - Deception
+      - Perception
+      - Stealth
     expertise: []
   saves:
-  - WIS
+    - WIS
 medusa:
   <<: *common
 medusa-queen:

@@ -2,12 +2,12 @@ template:
   key: chimera
   name: Chimera
   monsters:
-  - key: chimera
-    name: Chimera
-    cr: 6
-  - key: chimera-sovereign
-    name: Chimera Sovereign
-    cr: 10
+    - key: chimera
+      name: Chimera
+      cr: 6
+    - key: chimera-sovereign
+      name: Chimera Sovereign
+      cr: 10
   environments:
     BlastedBadlands: Native
     HauntedLands: Native
@@ -22,7 +22,7 @@ common: &common
   creature_type: Monstrosity
   size: Large
   languages:
-  - Draconic
+    - Draconic
   creature_class: Chimera
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -48,9 +48,9 @@ common: &common
       ac_modifier: -1
   skills:
     proficiency:
-    - Perception
+      - Perception
     expertise:
-    - Perception
+      - Perception
   saves: []
   senses:
     darkvision: 60
@@ -63,5 +63,5 @@ chimera:
 chimera-sovereign:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS

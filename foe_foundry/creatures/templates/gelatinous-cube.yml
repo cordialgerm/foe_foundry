@@ -2,12 +2,12 @@ template:
   key: gelatinous-cube
   name: Gelatinous Cube
   monsters:
-  - key: gelatinous-cube
-    name: Gelatinous Cube
-    cr: 2
-  - key: gelatinous-cube-elder
-    name: Gelatinous Cube Elder
-    cr: 6
+    - key: gelatinous-cube
+      name: Gelatinous Cube
+      cr: 2
+    - key: gelatinous-cube-elder
+      name: Gelatinous Cube Elder
+      cr: 6
   environments:
     Underground: native
     Ruin: native
@@ -38,7 +38,7 @@ common: &common
       damage_type: Acid
       secondary_damage_type: Acid
   ac_templates:
-  - template: Unarmored
+    - template: Unarmored
   senses:
     blindsight: 60
   speed:
@@ -46,14 +46,14 @@ common: &common
     climb: 20
   immunities:
     damage_types:
-    - Acid
+      - Acid
     conditions:
-    - Blinded
-    - Charmed
-    - Deafened
-    - Exhaustion
-    - Frightened
-    - Prone
+      - Blinded
+      - Charmed
+      - Deafened
+      - Exhaustion
+      - Frightened
+      - Prone
   attack_reduction: 1
   skills:
     proficiency: []

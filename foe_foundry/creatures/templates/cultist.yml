@@ -2,46 +2,46 @@ template:
   key: cultist
   name: Cultist
   monsters:
-  - key: cultist
-    name: Cultist
-    cr: 0.125
-  - key: cultist-fanatic
-    name: Cultist Fanatic
-    cr: 2
-  - key: cultist-grand-master
-    name: Cultist Grand Master
-    cr: 10
-  - key: cultist-exarch
-    name: Cultist Exarch
-    cr: 14
-    legendary: true
-  - key: aberrant-cultist-initiate
-    name: Aberrant Cultist Initiate
-    cr: 4
-  - key: aberrant-cultist
-    name: Aberrant Cultist
-    cr: 8
-  - key: aberrant-cultist-grand-master
-    name: Aberrant Cultist Grand Master
-    cr: 14
-  - key: death-cultist-initiate
-    name: Death Cultist Initiate
-    cr: 4
-  - key: death-cultist
-    name: Death Cultist
-    cr: 8
-  - key: death-cultist-grand-master
-    name: Death Cultist Grand Master
-    cr: 14
-  - key: fiend-cultist-initiate
-    name: Fiend Cultist Initiate
-    cr: 4
-  - key: fiend-cultist
-    name: Fiend Cultist
-    cr: 8
-  - key: fiend-cultist-grand-master
-    name: Fiend Cultist Grand Master
-    cr: 14
+    - key: cultist
+      name: Cultist
+      cr: 0.125
+    - key: cultist-fanatic
+      name: Cultist Fanatic
+      cr: 2
+    - key: cultist-grand-master
+      name: Cultist Grand Master
+      cr: 10
+    - key: cultist-exarch
+      name: Cultist Exarch
+      cr: 14
+      legendary: true
+    - key: aberrant-cultist-initiate
+      name: Aberrant Cultist Initiate
+      cr: 4
+    - key: aberrant-cultist
+      name: Aberrant Cultist
+      cr: 8
+    - key: aberrant-cultist-grand-master
+      name: Aberrant Cultist Grand Master
+      cr: 14
+    - key: death-cultist-initiate
+      name: Death Cultist Initiate
+      cr: 4
+    - key: death-cultist
+      name: Death Cultist
+      cr: 8
+    - key: death-cultist-grand-master
+      name: Death Cultist Grand Master
+      cr: 14
+    - key: fiend-cultist-initiate
+      name: Fiend Cultist Initiate
+      cr: 4
+    - key: fiend-cultist
+      name: Fiend Cultist
+      cr: 8
+    - key: fiend-cultist-grand-master
+      name: Fiend Cultist Grand Master
+      cr: 14
   environments:
     urban: common
     settlement: common
@@ -55,13 +55,13 @@ common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Cultist
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   abilities:
     STR: [Default, 1]
-    DEX: [Medium, 1] 
+    DEX: [Medium, 1]
     INT: Default
     WIS: [Medium, 1]
     CHA: Primary

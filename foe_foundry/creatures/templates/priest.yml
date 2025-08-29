@@ -2,22 +2,22 @@ template:
   key: priest
   name: Priest
   monsters:
-  - key: acolyte
-    name: Acolyte
-    cr: 0.25
-  - key: priest
-    name: Priest
-    cr: 2
-  - key: priest-anointed-one
-    name: Priest Anointed One
-    cr: 5
-  - key: archpriest
-    name: Archpriest
-    cr: 12
-  - key: archpriest-living-saint
-    name: Archpriest Living Saint
-    cr: 16
-    legendary: true
+    - key: acolyte
+      name: Acolyte
+      cr: 0.25
+    - key: priest
+      name: Priest
+      cr: 2
+    - key: priest-anointed-one
+      name: Priest Anointed One
+      cr: 5
+    - key: archpriest
+      name: Archpriest
+      cr: 12
+    - key: archpriest-living-saint
+      name: Archpriest Living Saint
+      cr: 16
+      legendary: true
   environments:
     urban-township: native
     settlement: native
@@ -32,7 +32,7 @@ common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Priest
   hp_multiplier: 1.0
   damage_multiplier: 1.0

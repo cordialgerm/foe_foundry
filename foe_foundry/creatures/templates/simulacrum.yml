@@ -2,26 +2,26 @@ template:
   key: simulacrum
   name: Simulacrum
   monsters:
-  - key: simulacrum
-    name: Simulacrum
-    cr: 9
-  - key: mastercraft-simulacrum
-    name: Mastercraft Simulacrum
-    cr: 12
-  - key: simulacrum-mirrorblade
-    name: Simulacrum Mirrorblade
-    cr: 7
+    - key: simulacrum
+      name: Simulacrum
+      cr: 9
+    - key: mastercraft-simulacrum
+      name: Mastercraft Simulacrum
+      cr: 12
+    - key: simulacrum-mirrorblade
+      name: Simulacrum Mirrorblade
+      cr: 7
   environments:
-  - Urban: High
-  - Settlement: Medium
-  - Stronghold: Medium
+    - Urban: High
+    - Settlement: Medium
+    - Stronghold: Medium
   species: []
 common: &common
   creature_type: Humanoid
   additional_types: [Construct]
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Simulacrum
   hp_multiplier: 0.6
   damage_multiplier: 1.0
@@ -42,18 +42,18 @@ common: &common
       secondary_damage_type: Force
   skills:
     proficiency:
-    - Stealth
-    - Athletics
-    - Acrobatics
-    - Arcana
-    - Perception
-    - History
-    - Initiative
+      - Stealth
+      - Athletics
+      - Acrobatics
+      - Arcana
+      - Perception
+      - History
+      - Initiative
     expertise: []
   saves:
-  - DEX
-  - INT
-  - WIS
+    - DEX
+    - INT
+    - WIS
   resistances:
     damage_types: [Bludgeoning, Piercing, Slashing]
     conditions: [Exhaustion, Poisoned]

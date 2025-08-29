@@ -2,20 +2,20 @@ template:
   key: mimic
   name: Mimic
   monsters:
-  - key: mimic
-    name: Mimic
-    cr: 2
-  - key: greater-mimic
-    name: Greater Mimic
-    cr: 4
-  - key: vault-mimic
-    name: Vault Mimic
-    cr: 8
+    - key: mimic
+      name: Mimic
+      cr: 2
+    - key: greater-mimic
+      name: Greater Mimic
+      cr: 4
+    - key: vault-mimic
+      name: Vault Mimic
+      cr: 8
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
   species: []
 common: &common
   creature_type: Monstrosity
@@ -41,12 +41,12 @@ common: &common
       secondary_damage_type: Acid
   skills:
     proficiency:
-    - Stealth
-    - Stealth
+      - Stealth
+      - Stealth
     expertise: []
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS
 mimic:
   <<: *common
 greater-mimic:

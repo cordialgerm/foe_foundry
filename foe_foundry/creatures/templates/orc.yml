@@ -2,44 +2,44 @@ template:
   key: orc
   name: Orc
   monsters:
-  - key: orc-soldier
-    name: Orc Soldier
-    cr: 0.5
-  - key: orc-reaver
-    name: Orc Reaver
-    cr: 1
-  - key: orc-hardened-one
-    name: Orc Hardened One
-    cr: 2
-  - key: orc-bloodrite-shaman
-    name: Orc Bloodrite Shaman
-    cr: 2
-  - key: orc-bloodrite-elder-shaman
-    name: Orc Bloodrite Elder Shaman
-    cr: 5
-  - key: orc-bloodletter
-    name: Orc Bloodletter
-    cr: 4
-  - key: orc-warchief
-    name: Orc Warchief
-    cr: 4
-  - key: orc-warchief-of-the-bloody-fang
-    name: Orc Warchief of the Bloody Fang
-    cr: 7
-    legendary: true
+    - key: orc-soldier
+      name: Orc Soldier
+      cr: 0.5
+    - key: orc-reaver
+      name: Orc Reaver
+      cr: 1
+    - key: orc-hardened-one
+      name: Orc Hardened One
+      cr: 2
+    - key: orc-bloodrite-shaman
+      name: Orc Bloodrite Shaman
+      cr: 2
+    - key: orc-bloodrite-elder-shaman
+      name: Orc Bloodrite Elder Shaman
+      cr: 5
+    - key: orc-bloodletter
+      name: Orc Bloodletter
+      cr: 4
+    - key: orc-warchief
+      name: Orc Warchief
+      cr: 4
+    - key: orc-warchief-of-the-bloody-fang
+      name: Orc Warchief of the Bloody Fang
+      cr: 7
+      legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
   species: []
 
 common: &common
   creature_type: Humanoid
   size: Small
   languages:
-  - Common
-  - Orc
+    - Common
+    - Orc
   creature_class: Orc
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -54,12 +54,12 @@ common: &common
     WIS: [Default, 1]
     CHA: Default
   ac_templates:
-  - template: HideArmor
-    modifier: 0
+    - template: HideArmor
+      modifier: 0
   attacks:
     main:
       base: Greataxe
-      display_name: "Wicked Greataxe" 
+      display_name: "Wicked Greataxe"
       damage_multiplier: 1.0
       secondary_damage_type: null
     secondary:
@@ -95,8 +95,8 @@ orc-hardened-one:
     WIS: [Default, 1]
     CHA: [Default, 2]
   ac_templates:
-  - template: StuddedLeatherArmor
-    modifier: 0
+    - template: StuddedLeatherArmor
+      modifier: 0
 
 orc-bloodrite-shaman:
   <<: *common
@@ -147,8 +147,8 @@ orc-warchief:
     WIS: [Default, 2]
     CHA: [Medium, 1]
   ac_templates:
-  - template: PlateArmor
-    modifier: 0
+    - template: PlateArmor
+      modifier: 0
 
 orc-warchief-of-the-bloody-fang:
   <<: *common
@@ -163,5 +163,5 @@ orc-warchief-of-the-bloody-fang:
     WIS: [Default, 2]
     CHA: [Medium, 1]
   ac_templates:
-  - template: PlateArmor
-    modifier: 0
+    - template: PlateArmor
+      modifier: 0

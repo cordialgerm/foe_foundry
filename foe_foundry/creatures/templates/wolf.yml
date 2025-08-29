@@ -2,19 +2,19 @@ template:
   key: wolf
   name: Wolf
   monsters:
-  - key: wolf
-    name: Wolf
-    cr: 0.125
-  - key: dire-wolf
-    name: Dire Wolf
-    cr: 1
-  - key: winter-wolf
-    name: Winter Wolf
-    cr: 3
-  - key: fellwinter-packlord
-    name: Fellwinter Packlord
-    cr: 6
-    legendary: true
+    - key: wolf
+      name: Wolf
+      cr: 0.125
+    - key: dire-wolf
+      name: Dire Wolf
+      cr: 1
+    - key: winter-wolf
+      name: Winter Wolf
+      cr: 3
+    - key: fellwinter-packlord
+      name: Fellwinter Packlord
+      cr: 6
+      legendary: true
   environments:
     TangledForest: native
     Wilderness: native
@@ -49,17 +49,17 @@ common:
       display_name: "Snapping Jaws"
       secondary_damage_type: Cold
   ac_templates:
-  - template: NaturalArmor
+    - template: NaturalArmor
   senses:
     darkvision: 60
   speed:
     walk: 40
   skills:
     proficiency:
-    - Perception
-    - Stealth
+      - Perception
+      - Stealth
     expertise:
-    - Perception
+      - Perception
   saves: []
 
 # Individual monster configurations
@@ -91,7 +91,7 @@ winter-wolf:
       # No secondary damage for winter wolves
   immunities:
     damage_types:
-    - Cold
+      - Cold
 
 fellwinter-packlord:
   size: Large
@@ -105,9 +105,9 @@ fellwinter-packlord:
       # No secondary damage for winter wolves
   immunities:
     damage_types:
-    - Cold
+      - Cold
   saves:
-  - WIS
+    - WIS
   legendary:
     actions: 2
     resistances: 2
