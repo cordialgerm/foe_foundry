@@ -128,7 +128,13 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
         return " | ".join(diffs) if diffs else "unknown difference"
 
     def _set_diff_details(set1, set2):
-        """Show detailed differences between two sets."""
+        """Show detailed differences between two sets or lists."""
+        # Convert to sets if they're lists
+        if isinstance(set1, list):
+            set1 = set(set1)
+        if isinstance(set2, list):
+            set2 = set(set2)
+            
         if set1 == set2:
             return "identical"
 

@@ -404,18 +404,46 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
 
     Returns:
         List of ArmorClassTemplate objects
-
-    Raises:
-        ValueError: If no ac_templates or armor_class are specified
     """
-    if "ac_templates" not in data:
-        raise ValueError("ac_templates section is required but not found in YAML data")
-
-    ac_templates_data = data["ac_templates"]
-    if not ac_templates_data:
-        raise ValueError(
-            "ac_templates cannot be empty - at least one AC template must be specified"
-        )
+    # Handle new format: ac_templates
+    if "ac_templates" in data:
+        ac_templates_data = data["ac_templates"]
+        if not ac_templates_data:
+            raise ValueError(
+                "ac_templates cannot be empty - at least one AC template must be specified"
+            )
+    # Handle legacy singular format: ac_template
+    elif "ac_template" in data:
+        ac_template = data["ac_template"]
+        if isinstance(ac_template, str):
+            # Convert single string to list format for consistent processing
+            ac_templates_data = [ac_template]
+        else:
+            raise ValueError(f"ac_template must be a string, got {type(ac_template)}")
+    # Handle legacy format: armor_class
+    elif "armor_class" in data:
+        armor_class = data["armor_class"]
+        if isinstance(armor_class, str):
+            # Convert single string to list format for consistent processing
+            ac_templates_data = [armor_class]
+        elif isinstance(armor_class, dict):
+            # Handle dict format: {"base": "LeatherArmor", "modifier": 1}
+            base_template = armor_class.get("base")
+            if base_template:
+                # For now, just use the base template and ignore modifier
+                # TODO: Handle modifier properly in the future
+                ac_templates_data = [base_template]
+            else:
+                raise ValueError("armor_class dict must have a 'base' field")
+        elif armor_class is None:
+            # Handle empty armor_class (YAML None)
+            ac_templates_data = ["Unarmored"]
+        else:
+            raise ValueError(f"armor_class must be a string or dict, got {type(armor_class)}")
+    else:
+        # If no AC template is specified, default to Unarmored
+        # This provides a fallback for incomplete YAML templates
+        ac_templates_data = ["Unarmored"]
 
     if isinstance(ac_templates_data, str):
         ac_templates_data = [{"template": ac_templates_data}]
@@ -447,11 +475,24 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
         if isinstance(template_data, dict):
             template_name = template_data.get("template")
             if template_name and template_name in template_map:
-                templates.append(template_map[template_name])
+                template_class = template_map[template_name]
+                
+                # Handle special case for flat template which requires an AC parameter
+                if template_name == "flat":
+                    ac_value = template_data.get("ac", 12)  # Default to 12 if not specified
+                    templates.append(template_class(ac_value))
+                else:
+                    templates.append(template_class)
         elif isinstance(template_data, str):
             # Handle simple string format
             if template_data in template_map:
-                templates.append(template_map[template_data])
+                template_class = template_map[template_data]
+                
+                # Handle special case for flat template which requires an AC parameter
+                if template_data == "flat":
+                    templates.append(template_class(12))  # Default AC 12 for flat template
+                else:
+                    templates.append(template_class)
 
     return templates
 

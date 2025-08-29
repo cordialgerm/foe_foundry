@@ -24,6 +24,14 @@ common: &common
   creature_class: Mimic
   hp_multiplier: 1.0
   damage_multiplier: 1.0
+  ac_templates:
+    - template: flat
+      ac: 12
+  speed:
+    walk: 20
+    climb: 20
+  senses:
+    darkvision: 60
   roles:
     primary: Ambusher
     additional: []
