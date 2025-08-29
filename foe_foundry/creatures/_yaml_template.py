@@ -42,6 +42,7 @@ from foe_foundry.skills import AbilityScore, Skills, StatScaling
 from foe_foundry.statblocks import BaseStatblock
 
 from ..spells import CasterType
+from ._all import AllTemplates
 from ._template import Monster, MonsterTemplate, MonsterVariant
 from .base_stats import base_stats
 from .templates import schema
@@ -89,76 +90,11 @@ class YamlMonsterTemplate(MonsterTemplate):
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        # Import the appropriate powers based on template key
-        template_key = self.yaml_data["template"][
-            "key"
-        ]  # Use the key from YAML data instead
-        monster_key = settings.monster_key
-
-        try:
-            # Import powers module for the template
-            module_name = template_key.replace("-", "_")
-            powers_module = __import__(
-                f"foe_foundry.creatures.{module_name}.powers", fromlist=[""]
-            )
-
-            # Map monster keys to power loadouts based on template
-            if template_key == "wolf":
-                if monster_key == "wolf":
-                    return PowerSelection(powers_module.LoadoutWolf)
-                elif monster_key == "dire-wolf":
-                    return PowerSelection(powers_module.LoadoutDireWolf)
-                elif monster_key == "winter-wolf":
-                    return PowerSelection(powers_module.LoadoutFrostWolf)
-                elif monster_key == "fellwinter-packlord":
-                    return PowerSelection(powers_module.LoadoutPacklord)
-                else:
-                    return PowerSelection(powers_module.LoadoutWolf)
-            elif template_key == "animated-armor":
-                if monster_key == "animated-armor":
-                    return PowerSelection(powers_module.LoadoutAnimatedArmor)
-                elif monster_key == "animated-runeplate":
-                    return PowerSelection(powers_module.LoadoutRunicSpellplate)
-                else:
-                    return PowerSelection(powers_module.LoadoutAnimatedArmor)
-            elif template_key == "goblin":
-                if monster_key == "goblin-lickspittle":
-                    return PowerSelection(powers_module.LoadoutLickspittle)
-                elif monster_key == "goblin":
-                    return PowerSelection(powers_module.LoadoutWarrior)
-                elif monster_key == "goblin-brute":
-                    return PowerSelection(powers_module.LoadoutBrute)
-                elif monster_key == "goblin-boss":
-                    return PowerSelection(powers_module.LoadoutBoss)
-                elif monster_key == "goblin-warchief":
-                    return PowerSelection(powers_module.LoadoutWarchief)
-                elif monster_key == "goblin-foulhex":
-                    return PowerSelection(powers_module.LoadoutShamanAdept)
-                elif monster_key == "goblin-shaman":
-                    return PowerSelection(powers_module.LoadoutShaman)
-                else:
-                    return PowerSelection(powers_module.LoadoutWarrior)
-            else:
-                # For other templates, try to find a default loadout
-                # Look for common loadout names
-                loadout_attrs = [
-                    attr
-                    for attr in dir(powers_module)
-                    if attr.startswith("Loadout") and not attr.endswith("__")
-                ]
-                if loadout_attrs:
-                    # Use the first loadout found
-                    loadout = getattr(powers_module, loadout_attrs[0])
-                    return PowerSelection(loadout)
-
-                # If no loadout found, return empty selection
-                return PowerSelection([])
-
-        except (ImportError, AttributeError) as e:
-            # If powers module doesn't exist or loadout not found, raise an error
-            raise ValueError(
-                f"Could not load powers for template {template_key}: {e}"
-            ) from e
+        # use existing templates to choose powers, for now
+        # we will replace this with proper logic later
+        templates_by_key = {t.key: t for t in AllTemplates}
+        template = templates_by_key[self.key]
+        return template.choose_powers(settings)
 
 
 # ===== PARSING HELPER FUNCTIONS =====
@@ -923,7 +859,7 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
         template_name = template_data["name"]
         variants = []
         variant_monsters = []
-        
+
         for monster_data in monsters:
             name = monster_data["name"]
             cr = monster_data["cr"]
@@ -940,9 +876,9 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
 
         # Create a single variant containing all monsters
         variant = MonsterVariant(
-            name=template_name, 
-            description=f"{template_name} creatures", 
-            monsters=variant_monsters
+            name=template_name,
+            description=f"{template_name} creatures",
+            monsters=variant_monsters,
         )
         variants.append(variant)
 

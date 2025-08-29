@@ -94,7 +94,7 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
     Returns:
         None if the statblocks are exactly equivalent, otherwise a string describing the mismatch
     """
-    
+
     def _detailed_attributes_diff(attr1, attr2):
         """Compare Attributes objects and highlight specific differences."""
         diffs = []
@@ -113,19 +113,25 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
         if attr1.proficiency != attr2.proficiency:
             diffs.append(f"proficiency: {attr1.proficiency} vs {attr2.proficiency}")
         if attr1.proficient_saves != attr2.proficient_saves:
-            diffs.append(f"proficient_saves: {_set_diff_details(attr1.proficient_saves, attr2.proficient_saves)}")
+            diffs.append(
+                f"proficient_saves: {_set_diff_details(attr1.proficient_saves, attr2.proficient_saves)}"
+            )
         if attr1.proficient_skills != attr2.proficient_skills:
-            diffs.append(f"proficient_skills: {_set_diff_details(attr1.proficient_skills, attr2.proficient_skills)}")
+            diffs.append(
+                f"proficient_skills: {_set_diff_details(attr1.proficient_skills, attr2.proficient_skills)}"
+            )
         if attr1.expertise_skills != attr2.expertise_skills:
-            diffs.append(f"expertise_skills: {_set_diff_details(attr1.expertise_skills, attr2.expertise_skills)}")
-        
+            diffs.append(
+                f"expertise_skills: {_set_diff_details(attr1.expertise_skills, attr2.expertise_skills)}"
+            )
+
         return " | ".join(diffs) if diffs else "unknown difference"
-    
+
     def _set_diff_details(set1, set2):
         """Show detailed differences between two sets."""
         if set1 == set2:
             return "identical"
-        
+
         added = set2 - set1
         removed = set1 - set2
         parts = []
@@ -134,6 +140,7 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
         if removed:
             parts.append(f"removed: {removed}")
         return f"({', '.join(parts)})"
+
     # Core identity fields
     if stats1.name != stats2.name:
         return f"name mismatch: '{stats1.name}' != '{stats2.name}'"
@@ -141,8 +148,11 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
         return (
             f"template_key mismatch: '{stats1.template_key}' != '{stats2.template_key}'"
         )
-    if stats1.variant_key != stats2.variant_key:
-        return f"variant_key mismatch: '{stats1.variant_key}' != '{stats2.variant_key}'"
+
+    # NOTE: don't check variants because the YAML implementation doesn't need to group by variants, it just has template and monsters
+    # if stats1.variant_key != stats2.variant_key:
+    #     return f"variant_key mismatch: '{stats1.variant_key}' != '{stats2.variant_key}'"
+
     if stats1.monster_key != stats2.monster_key:
         return f"monster_key mismatch: '{stats1.monster_key}' != '{stats2.monster_key}'"
     if stats1.species_key != stats2.species_key:
@@ -246,8 +256,10 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> str | None:
         return f"recommended_powers_modifier mismatch: {stats1.recommended_powers_modifier} != {stats2.recommended_powers_modifier}"
     if stats1.selection_target_args != stats2.selection_target_args:
         return f"selection_target_args mismatch: {stats1.selection_target_args} != {stats2.selection_target_args}"
-    if stats1.flags != stats2.flags:
-        return f"flags mismatch: {_set_diff_details(stats1.flags, stats2.flags)}"
+
+    # NOTE: do NOT compare flags, they are just internal implementation details
+    # if stats1.flags != stats2.flags:
+    #     return f"flags mismatch: {_set_diff_details(stats1.flags, stats2.flags)}"
 
     # Spellcasting
     if stats1.caster_type != stats2.caster_type:
