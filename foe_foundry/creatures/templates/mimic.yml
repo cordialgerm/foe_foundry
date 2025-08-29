@@ -36,6 +36,8 @@ common: &common
     CHA: ["Default", -2]
   attacks:
     main:
+      base: Slam
+      display_name: "Sticky Pseudopod"
       secondary_damage_type: Acid
   skills:
     proficiency:

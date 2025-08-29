@@ -58,11 +58,14 @@ common: &common
     modifier: 0
   attacks:
     main:
-      base: Battleaxe
+      base: Greataxe
+      display_name: "Wicked Greataxe" 
       damage_multiplier: 1.0
       secondary_damage_type: null
     secondary:
-      base: Darts
+      base: JavelinAndShield
+      display_name: "Javelin"
+      damage_scalar: 0.9
       damage_multiplier: 1.0
       secondary_damage_type: null
   skills:

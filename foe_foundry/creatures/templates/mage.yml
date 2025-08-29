@@ -136,6 +136,8 @@ common: &common
     CHA: Default
   attacks:
     main:
+      base: ArcaneBurst
+      display_name: "Arcane Blast"
       secondary_damage_type: null
   skills:
     proficiency:
