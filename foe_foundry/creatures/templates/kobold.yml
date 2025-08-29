@@ -2,15 +2,15 @@ template:
   key: kobold
   name: Kobold
   monsters:
-    - key: kobold
-      name: Kobold
-      cr: 0.125
     - key: kobold-warrenguard
       name: Kobold Warrenguard
       cr: 0.125
     - key: kobold-sharpsnout
       name: Kobold Sharpsnout
       cr: 0.125
+    - key: kobold-ascendant
+      name: Kobold Ascendant
+      cr: 1
     - key: kobold-wyrmcaller
       name: Kobold Wyrmcaller
       cr: 2

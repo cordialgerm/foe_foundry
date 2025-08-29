@@ -5,7 +5,7 @@ template:
     - key: gelatinous-cube
       name: Gelatinous Cube
       cr: 2
-    - key: gelatinous-cube-elder
+    - key: ancient-gelatinous-cube
       name: Gelatinous Cube Elder
       cr: 6
   environments:
@@ -61,6 +61,6 @@ common: &common
   saves: []
 gelatinous-cube:
   <<: *common
-gelatinous-cube-elder:
+ancient-gelatinous-cube:
   <<: *common
   size: Huge

@@ -45,8 +45,6 @@ BanditCaptainVariant = MonsterVariant(
 class _BanditTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
         species = settings.species if settings.species else HumanSpecies
-        cr = settings.cr
-        variant = settings.variant
 
         if species is not HumanSpecies:
             species_loadout = PowerLoadout(
@@ -57,28 +55,28 @@ class _BanditTemplate(MonsterTemplate):
         else:
             species_loadout = None
 
-        if variant is BanditVariant and cr < 1:
+        if settings.monster_key == "bandit":
             return PowerSelection(
                 loadouts=powers.LoadoutBandit,
                 species_loadout=species_loadout,
             )
-        elif variant is BanditVariant and cr >= 1:
+        elif settings.monster_key == "bandit-veteran":
             return PowerSelection(
                 loadouts=powers.LoadoutBanditVeteran,
                 species_loadout=species_loadout,
             )
-        elif variant is BanditCaptainVariant and cr <= 2:
+        elif settings.monster_key == "bandit-captain":
             return PowerSelection(
                 loadouts=powers.LoadoutBanditCaptain,
                 species_loadout=species_loadout,
             )
-        elif variant is BanditCaptainVariant and cr > 2:
+        elif settings.monster_key == "bandit-crime-lord":
             return PowerSelection(
                 loadouts=powers.LoadoutBanditLegend,
                 species_loadout=species_loadout,
             )
         else:
-            raise ValueError(f"Unknown bandit variant: {variant}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings
