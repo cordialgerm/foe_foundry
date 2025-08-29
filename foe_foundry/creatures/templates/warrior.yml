@@ -2,51 +2,51 @@ template:
   key: warrior
   name: Warrior
   monsters:
-  - key: shock-infantry
-    name: Shock Infantry
-    cr: 0.125
-  - key: shock-infantry-veteran
-    name: Shock Infantry Veteran
-    cr: 3
-  - key: line-infantry
-    name: Line Infantry
-    cr: 0.125
-  - key: line-infantry-veteran
-    name: Line Infantry Veteran
-    cr: 3
-  - key: warrior-commander
-    name: Warrior Commander
-    cr: 10
-  - key: legendary-warrior
-    name: Legendary Warrior
-    cr: 14
-    legendary: true
+    - key: shock-infantry
+      name: Shock Infantry
+      cr: 0.125
+    - key: shock-infantry-veteran
+      name: Shock Infantry Veteran
+      cr: 3
+    - key: line-infantry
+      name: Line Infantry
+      cr: 0.125
+    - key: line-infantry-veteran
+      name: Line Infantry Veteran
+      cr: 3
+    - key: warrior-commander
+      name: Warrior Commander
+      cr: 10
+    - key: legendary-warrior
+      name: Legendary Warrior
+      cr: 14
+      legendary: true
   environments:
-  - development: stronghold
-    affinity: common
-  - region: UrbanTownship
-    affinity: common
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
-  - development: countryside
-    affinity: common
-  - development: frontier
-    affinity: uncommon
-  - terrain: plain
-    affinity: common
-  - terrain: hill
-    affinity: uncommon
-  - terrain: mountain
-    affinity: rare
+    - development: stronghold
+      affinity: common
+    - region: UrbanTownship
+      affinity: common
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
+    - development: countryside
+      affinity: common
+    - development: frontier
+      affinity: uncommon
+    - terrain: plain
+      affinity: common
+    - terrain: hill
+      affinity: uncommon
+    - terrain: mountain
+      affinity: rare
   species: all
 
 common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Warrior
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -60,8 +60,8 @@ common: &common
     WIS: [Medium, 1]
     CHA: [Default, -2]
   ac_templates:
-  - template: ChainShirt
-    modifier: 0
+    - template: ChainShirt
+      modifier: 0
   attacks:
     main:
       base: Greatsword
@@ -83,7 +83,7 @@ shock-infantry:
     additional: [Bruiser]
   attacks:
     main:
-      base: Greatsword  # Can be Greataxe, Greatsword, or Maul
+      base: Greatsword # Can be Greataxe, Greatsword, or Maul
       damage_multiplier: 1.0
       secondary_damage_type: null
     secondary:
@@ -97,11 +97,11 @@ shock-infantry-veteran:
     primary: Soldier
     additional: [Bruiser]
   ac_templates:
-  - template: SplintArmor
-    modifier: 0
+    - template: SplintArmor
+      modifier: 0
   attacks:
     main:
-      base: Greatsword  # Can be Greataxe, Greatsword, or Maul
+      base: Greatsword # Can be Greataxe, Greatsword, or Maul
       damage_multiplier: 1.0
       secondary_damage_type: null
     secondary:
@@ -120,7 +120,7 @@ line-infantry:
     additional: [Defender]
   attacks:
     main:
-      base: Polearm  # Can be Polearm or SpearAndShield
+      base: Polearm # Can be Polearm or SpearAndShield
       damage_multiplier: 1.0
       secondary_damage_type: null
     secondary:
@@ -134,11 +134,11 @@ line-infantry-veteran:
     primary: Soldier
     additional: [Defender]
   ac_templates:
-  - template: SplintArmor
-    modifier: 0
+    - template: SplintArmor
+      modifier: 0
   attacks:
     main:
-      base: Polearm  # Can be Polearm or SpearAndShield
+      base: Polearm # Can be Polearm or SpearAndShield
       damage_multiplier: 1.0
       secondary_damage_type: null
     secondary:
@@ -162,8 +162,8 @@ warrior-commander:
     WIS: [Medium, 3]
     CHA: [Default, 2]
   ac_templates:
-  - template: PlateArmor
-    modifier: 0
+    - template: PlateArmor
+      modifier: 0
   attacks:
     main:
       base: Greatsword
@@ -190,8 +190,8 @@ legendary-warrior:
     WIS: [Medium, 3]
     CHA: [Default, 2]
   ac_templates:
-  - template: PlateArmor
-    modifier: 0
+    - template: PlateArmor
+      modifier: 0
   attacks:
     main:
       base: Greatsword

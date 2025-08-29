@@ -43,13 +43,12 @@ BalorGeneralVariant = MonsterVariant(
 
 class _BalorTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        variant = settings.variant
-        if variant is BalorVariant:
+        if settings.monster_key == 'balor':
             return PowerSelection(powers.LoadoutBalor)
-        elif variant is BalorGeneralVariant:
+        elif settings.monster_key == 'balor-dreadlord':
             return PowerSelection(powers.LoadoutBalorGeneral)
         else:
-            raise ValueError(f"Unknown variant: {variant.name}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings

@@ -5,7 +5,12 @@ template:
     - { key: berserker, name: "Berserker", cr: 2 }
     - { key: berserker-veteran, name: "Berserker Veteran", cr: 4 }
     - { key: berserker-commander, name: "Berserker Commander", cr: 8 }
-    - { key: berserker-legend, name: "Berserker Legend", cr: 12, legendary: true }
+    - {
+        key: berserker-legend,
+        name: "Berserker Legend",
+        cr: 12,
+        legendary: true,
+      }
   environments:
     - { development: wilderness, affinity: native }
     - { development: frontier, affinity: native }

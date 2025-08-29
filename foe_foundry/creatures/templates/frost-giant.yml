@@ -2,31 +2,31 @@ template:
   key: frost-giant
   name: Frost Giant
   monsters:
-  - key: frost-giant-reaver
-    name: Frost Giant Reaver
-    cr: 8
-  - key: frost-giant-challenger
-    name: Frost Giant Challenger
-    cr: 10
-  - key: frost-giant-rimepriest
-    name: Frost Giant Rimepriest
-    cr: 12
-  - key: frost-giant-thane
-    name: Frost Giant Thane
-    cr: 16
-    legendary: true
+    - key: frost-giant-reaver
+      name: Frost Giant Reaver
+      cr: 8
+    - key: frost-giant-challenger
+      name: Frost Giant Challenger
+      cr: 10
+    - key: frost-giant-rimepriest
+      name: Frost Giant Rimepriest
+      cr: 12
+    - key: frost-giant-thane
+      name: Frost Giant Thane
+      cr: 16
+      legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
   species: []
 common: &common
   creature_type: Giant
   size: Huge
   languages:
-  - Common
-  - Giant
+    - Common
+    - Giant
   creature_class: Frost Giant
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -47,19 +47,19 @@ common: &common
       secondary_damage_type: Cold
   skills:
     proficiency:
-    - Insight
-    - Perception
-    - Initiative
-    - Athletics
-    - Perception
-    - Survival
-    - Initiative
+      - Insight
+      - Perception
+      - Initiative
+      - Athletics
+      - Perception
+      - Survival
+      - Initiative
     expertise: []
   saves:
-  - CON
-  - STR
-  - CHA
-  - WIS
+    - CON
+    - STR
+    - CHA
+    - WIS
 frost-giant-reaver:
   <<: *common
 frost-giant-challenger:
@@ -79,8 +79,8 @@ frost-giant-rimepriest:
       display_name: "Arctic Blast"
   skills:
     proficiency:
-    - Insight
-    - Perception
-    - Initiative
+      - Insight
+      - Perception
+      - Initiative
 frost-giant-thane:
   <<: *common

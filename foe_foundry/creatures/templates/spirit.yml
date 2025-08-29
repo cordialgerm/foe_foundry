@@ -2,38 +2,38 @@ template:
   key: spirit
   name: Spirit
   monsters:
-  - key: shadow
-    name: Shadow
-    cr: 0.125
-  - key: specter
-    name: Specter
-    cr: 1
-  - key: banshee
-    name: Banshee
-    cr: 4
-  - key: ghost
-    name: Ghost
-    cr: 4
-  - key: revenant
-    name: Revenant
-    cr: 5
-  - key: wraith
-    name: Wraith
-    cr: 5
-  - key: wraith-shadelord
-    name: Wraith Shadelord
-    cr: 8
-    legendary: true
+    - key: shadow
+      name: Shadow
+      cr: 0.125
+    - key: specter
+      name: Specter
+      cr: 1
+    - key: banshee
+      name: Banshee
+      cr: 4
+    - key: ghost
+      name: Ghost
+      cr: 4
+    - key: revenant
+      name: Revenant
+      cr: 5
+    - key: wraith
+      name: Wraith
+      cr: 5
+    - key: wraith-shadelord
+      name: Wraith Shadelord
+      cr: 8
+      legendary: true
   environments:
-  - Haunted: High
-  - Deathly: High
-  - Ruin: Medium
+    - Haunted: High
+    - Deathly: High
+    - Ruin: Medium
   species: []
 common: &common
   creature_type: Undead
   size: Medium
   languages:
-  - "Telepathy 60 ft."
+    - "Telepathy 60 ft."
   creature_class: Spirit
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -54,10 +54,10 @@ common: &common
       secondary_damage_type: Cold
   skills:
     proficiency:
-    - Stealth
+      - Stealth
     expertise: []
   saves:
-  - CON
+    - CON
 shadow:
   <<: *common
 specter:

@@ -2,14 +2,14 @@ template:
   key: lich
   name: Lich
   monsters:
-  - key: lich
-    name: Lich
-    cr: 21
-    legendary: true
-  - key: archlich
-    name: Archlich
-    cr: 26
-    legendary: true
+    - key: lich
+      name: Lich
+      cr: 21
+      legendary: true
+    - key: archlich
+      name: Archlich
+      cr: 26
+      legendary: true
   environments:
     Dungeon: Native
     Ruin: Native
@@ -22,7 +22,7 @@ common: &common
   creature_type: Undead
   size: Medium
   languages:
-  - All
+    - All
   creature_class: Lich
   hp_multiplier: 0.85
   damage_multiplier: 1.1
@@ -46,28 +46,28 @@ common: &common
   caster_type: Arcane
   skills:
     proficiency:
-    - Insight
-    - Perception
+      - Insight
+      - Perception
     expertise:
-    - Arcana
-    - History
+      - Arcana
+      - History
   saves: []
 lich:
   <<: *common
   saves:
-  - CON
-  - DEX
-  - INT
-  - WIS
-  - CHA
+    - CON
+    - DEX
+    - INT
+    - WIS
+    - CHA
 archlich:
   <<: *common
   saves:
-  - CON
-  - DEX
-  - INT
-  - WIS
-  - CHA
+    - CON
+    - DEX
+    - INT
+    - WIS
+    - CHA
   speed:
     walk: 30
     fly: 15

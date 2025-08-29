@@ -2,46 +2,46 @@ template:
   key: goblin
   name: Goblin
   monsters:
-  - key: goblin-lickspittle
-    name: Goblin Lickspittle
-    cr: 0.125
-  - key: goblin
-    name: Goblin
-    cr: 0.25
-  - key: goblin-brute
-    name: Goblin Brute
-    cr: 0.5
-  - key: goblin-boss
-    name: Goblin Boss
-    cr: 1
-  - key: goblin-warchief
-    name: Goblin Warchief
-    cr: 4
-  - key: goblin-foulhex
-    name: Goblin Foulhex
-    cr: 1
-  - key: goblin-shaman
-    name: Goblin Shaman
-    cr: 2
+    - key: goblin-lickspittle
+      name: Goblin Lickspittle
+      cr: 0.125
+    - key: goblin
+      name: Goblin
+      cr: 0.25
+    - key: goblin-brute
+      name: Goblin Brute
+      cr: 0.5
+    - key: goblin-boss
+      name: Goblin Boss
+      cr: 1
+    - key: goblin-warchief
+      name: Goblin Warchief
+      cr: 4
+    - key: goblin-foulhex
+      name: Goblin Foulhex
+      cr: 1
+    - key: goblin-shaman
+      name: Goblin Shaman
+      cr: 2
   environments:
-  - development: ruin
-    affinity: native
-  - biome: underground
-    affinity: native
-  - terrain: hill
-    affinity: common
-  - region: Feywood
-    affinity: common
-  - development: wilderness
-    affinity: common
-  - extraplanar: faerie
-    affinity: common
-  - development: frontier
-    affinity: common
-  - region: CountryShire
-    affinity: uncommon
-  - development: settlement
-    affinity: rare
+    - development: ruin
+      affinity: native
+    - biome: underground
+      affinity: native
+    - terrain: hill
+      affinity: common
+    - region: Feywood
+      affinity: common
+    - development: wilderness
+      affinity: common
+    - extraplanar: faerie
+      affinity: common
+    - development: frontier
+      affinity: common
+    - region: CountryShire
+      affinity: uncommon
+    - development: settlement
+      affinity: rare
   species: null
 
 common: &common
@@ -50,8 +50,8 @@ common: &common
   creature_subtype: Goblinoid
   size: Small
   languages:
-  - Common
-  - Goblin
+    - Common
+    - Goblin
   creature_class: Goblin
   senses:
     darkvision: 60
@@ -67,8 +67,8 @@ common: &common
     WIS: [Default, -2]
     CHA: [Default, -2]
   ac_templates:
-  - template: StuddedLeatherArmor
-    modifier: 0
+    - template: StuddedLeatherArmor
+      modifier: 0
   attacks:
     main:
       base: Daggers
@@ -111,8 +111,8 @@ goblin-brute:
     WIS: [Default, -2]
     CHA: [Default, -2]
   ac_templates:
-  - template: ChainShirt
-    modifier: 0
+    - template: ChainShirt
+      modifier: 0
   attacks:
     main:
       base: Maul
@@ -134,8 +134,8 @@ goblin-boss:
     WIS: Default
     CHA: Default
   ac_templates:
-  - template: ChainShirt
-    modifier: 0
+    - template: ChainShirt
+      modifier: 0
   attacks:
     main:
       base: Maul
@@ -162,8 +162,8 @@ goblin-warchief:
     WIS: Default
     CHA: Default
   ac_templates:
-  - template: Breastplate
-    modifier: 0
+    - template: Breastplate
+      modifier: 0
   attacks:
     main:
       base: Maul

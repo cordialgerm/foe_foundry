@@ -2,28 +2,28 @@ template:
   key: wight
   name: Wight
   monsters:
-  - key: wight
-    name: Wight
-    cr: 3
-  - key: wight-fell-champion
-    name: Wight Fell Champion
-    cr: 6
-  - key: wight-dread-lord
-    name: Wight Dread Lord
-    cr: 9
-    legendary: true
+    - key: wight
+      name: Wight
+      cr: 3
+    - key: wight-fell-champion
+      name: Wight Fell Champion
+      cr: 6
+    - key: wight-dread-lord
+      name: Wight Dread Lord
+      cr: 9
+      legendary: true
   environments:
-  - Haunted: High
-  - Underland: High
-  - Deathly: High
-  - Ruin: High
-  - Underground: High
+    - Haunted: High
+    - Underland: High
+    - Deathly: High
+    - Ruin: High
+    - Underground: High
   species: []
 common: &common
   creature_type: Undead
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Wight
   hp_multiplier: 1.45
   damage_multiplier: 1.0
@@ -62,10 +62,10 @@ wight:
 wight-fell-champion:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS
 wight-dread-lord:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS

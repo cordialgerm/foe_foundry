@@ -2,21 +2,31 @@ template:
   key: merrow
   name: Merrow
   monsters:
-  - key: merrow
-    name: Merrow
-    cr: 2
+    - key: merrow
+      name: Merrow
+      cr: 2
+    - key: merrow-blood-blessed
+      name: Merrow Blood-Blessed
+      cr: 4
+    - key: merrow-storm-blessed
+      name: Merrow Storm-Blessed
+      cr: 8
+    - key: merrow-abyssal-lord
+      name: Merrow Abyssal Lord
+      cr: 12
+      legendary: true
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
   species: []
 common: &common
   creature_type: Monstrosity
   size: Large
   languages:
-  - Abyssal
-  - Aquan
+    - Abyssal
+    - Aquan
   creature_class: Merrow
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -32,14 +42,46 @@ common: &common
     CHA: ["Medium", -1]
   attacks:
     main:
+      base: Bite
+      display_name: "Envenomed Maw"
+      secondary_damage_type: Poison
+    secondary:
       base: JavelinAndShield
-      damage_multiplier: 1.0
-      secondary_damage_type: Lightning
+      display_name: "Sharktooth Harpoon"
+      damage_scalar: 0.9
   skills:
     proficiency:
-    - Stealth
+      - Stealth
     expertise: []
   saves:
-  - WIS
+    - WIS
 merrow:
   <<: *common
+merrow-blood-blessed:
+  <<: *common
+merrow-storm-blessed:
+  <<: *common
+  abilities:
+    STR: ["Default", 2]
+    DEX: ["Medium", 2]
+    CON: Default
+    INT: ["Default", 3]
+    WIS: Primary
+    CHA: ["Medium", 1]
+  attacks:
+    main:
+      base: Shock
+      display_name: "Stormcaller's Strike"
+      secondary_damage_type: Lightning
+  roles:
+    primary: Support
+    additional: []
+merrow-abyssal-lord:
+  <<: *common
+  abilities:
+    STR: Primary
+    DEX: ["Medium", 2]
+    CON: Default
+    INT: Default
+    WIS: ["Medium", -1]
+    CHA: ["Medium", 1]

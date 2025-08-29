@@ -46,14 +46,12 @@ RunicSpellplateVariant = MonsterVariant(
 
 class _AnimatedArmorTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        variant = settings.variant
-
-        if variant is AnimatedArmorVariant:
+        if settings.monster_key == 'animated-armor':
             return PowerSelection(powers.LoadoutAnimatedArmor)
-        elif variant is RunicSpellplateVariant:
+        elif settings.monster_key == 'animated-runeplate':
             return PowerSelection(powers.LoadoutRunicSpellplate)
         else:
-            raise ValueError(f"Unknown variant: {variant}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings

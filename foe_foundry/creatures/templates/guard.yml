@@ -2,43 +2,43 @@ template:
   key: guard
   name: Guard
   monsters:
-  - key: guard
-    name: Guard
-    cr: 0.125
-  - key: sergeant-of-the-watch
-    name: Sergeant of the Watch
-    cr: 1
-  - key: guard-captain
-    name: Guard Captain
-    cr: 4
-  - key: lord-of-the-watch
-    name: Lord of the Watch
-    cr: 8
-    legendary: true
+    - key: guard
+      name: Guard
+      cr: 0.125
+    - key: sergeant-of-the-watch
+      name: Sergeant of the Watch
+      cr: 1
+    - key: guard-captain
+      name: Guard Captain
+      cr: 4
+    - key: lord-of-the-watch
+      name: Lord of the Watch
+      cr: 8
+      legendary: true
   environments:
-  - region: UrbanTownship
-    affinity: native
-  - development: settlement
-    affinity: native
-  - development: urban
-    affinity: common
-  - region: CountryShire
-    affinity: common
-  - development: stronghold
-    affinity: common
-  - development: frontier
-    affinity: uncommon
-  - region: OpenRoads
-    affinity: uncommon
-  - development: wilderness
-    affinity: rare
+    - region: UrbanTownship
+      affinity: native
+    - development: settlement
+      affinity: native
+    - development: urban
+      affinity: common
+    - region: CountryShire
+      affinity: common
+    - development: stronghold
+      affinity: common
+    - development: frontier
+      affinity: uncommon
+    - region: OpenRoads
+      affinity: uncommon
+    - development: wilderness
+      affinity: rare
   species: all
 
 common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Guard
   uses_shield: true
   hp_multiplier: 1.0
@@ -53,8 +53,8 @@ common: &common
     WIS: [Medium, 1]
     CHA: Default
   ac_templates:
-  - template: ChainShirt
-    modifier: 0
+    - template: ChainShirt
+      modifier: 0
   attacks:
     main:
       base: Crossbow
@@ -87,8 +87,8 @@ guard-captain:
     WIS: [Medium, 2]
     CHA: [Default, 1]
   ac_templates:
-  - template: SplintArmor
-    modifier: 0
+    - template: SplintArmor
+      modifier: 0
   skills:
     proficiency: [Perception, Initiative, Athletics]
     expertise: []
@@ -106,8 +106,8 @@ lord-of-the-watch:
     WIS: [Medium, 2]
     CHA: [Default, 1]
   ac_templates:
-  - template: PlateArmor
-    modifier: 0
+    - template: PlateArmor
+      modifier: 0
   skills:
     proficiency: [Perception, Initiative, Athletics]
     expertise: []

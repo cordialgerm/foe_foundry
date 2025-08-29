@@ -2,26 +2,26 @@ template:
   key: balor
   name: Balor
   monsters:
-  - key: balor
-    name: Balor
-    cr: 19
-  - key: balor-dreadlord
-    name: Balor Dreadlord
-    cr: 23
-    legendary: true
+    - key: balor
+      name: Balor
+      cr: 19
+    - key: balor-dreadlord
+      name: Balor Dreadlord
+      cr: 23
+      legendary: true
   environments:
-  - extraplanar: hellish
-    affinity: native
-  - biome: extraplanar
-    affinity: native
-  - region: FieryHellscape
-    affinity: native
-  - development: ruin
-    affinity: common
-  - region: HauntedLands
-    affinity: uncommon
-  - development: wilderness
-    affinity: rare
+    - extraplanar: hellish
+      affinity: native
+    - biome: extraplanar
+      affinity: native
+    - region: FieryHellscape
+      affinity: native
+    - development: ruin
+      affinity: common
+    - region: HauntedLands
+      affinity: uncommon
+    - development: wilderness
+      affinity: rare
   species: null
 
 common:
@@ -32,7 +32,7 @@ common:
     walk: 40
     fly: 80
   languages:
-  - Abyssal; telepathy 120 ft.
+    - Abyssal; telepathy 120 ft.
   creature_class: Balor
   senses:
     truesight: 120
@@ -48,8 +48,8 @@ common:
     WIS: [Medium, 2]
     CHA: [Medium, 6]
   ac_templates:
-  - template: UnholyArmor
-    modifier: 0
+    - template: UnholyArmor
+      modifier: 0
   condition_immunities: [Poisoned, Frightened]
   damage_immunities: [Fire, Poison]
   damage_resistances: [Cold, Lightning]

@@ -93,40 +93,38 @@ FiendVariant = MonsterVariant(
 
 class _CultistTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        variant = settings.variant
-        cr = settings.cr
-        if variant is CultistVariant:
-            if cr < 1:
-                return PowerSelection(powers.LoadoutCultist)
-            elif cr <= 4:
-                return PowerSelection(powers.LoadoutCultFanatic)
-            elif cr <= 10:
-                return PowerSelection(powers.LoadoutCultGrandMaster)
-            else:
-                return PowerSelection(powers.LoadoutCultExarch)
-        elif variant is AberrantVariant:
-            if cr <= 4:
-                return PowerSelection(powers.LoadoutAberrantInitiate)
-            if cr <= 8:
-                return PowerSelection(powers.LoadoutAberrantCultist)
-            else:
-                return PowerSelection(powers.LoadoutAberrantGrandMaster)
-        elif variant is NecroVariant:
-            if cr <= 4:
-                return PowerSelection(powers.LoadoutDeathCultInitiate)
-            elif cr <= 8:
-                return PowerSelection(powers.LoadoutDeathCultist)
-            else:
-                return PowerSelection(powers.LoadoutDeathCultGrandMaster)
-        elif variant is FiendVariant:
-            if cr <= 4:
-                return PowerSelection(powers.LoadoutFiendishInitiate)
-            elif cr <= 8:
-                return PowerSelection(powers.LoadoutFiendishCultist)
-            else:
-                return PowerSelection(powers.LoadoutFiendishGrandMaster)
+        # Basic cultist variants
+        if settings.monster_key == 'cultist':
+            return PowerSelection(powers.LoadoutCultist)
+        elif settings.monster_key == 'cultist-fanatic':
+            return PowerSelection(powers.LoadoutCultFanatic)
+        elif settings.monster_key == 'cultist-grand-master':
+            return PowerSelection(powers.LoadoutCultGrandMaster)
+        elif settings.monster_key == 'cultist-exarch':
+            return PowerSelection(powers.LoadoutCultExarch)
+        # Aberrant cultist variants
+        elif settings.monster_key == 'aberrant-cultist-initiate':
+            return PowerSelection(powers.LoadoutAberrantInitiate)
+        elif settings.monster_key == 'aberrant-cultist':
+            return PowerSelection(powers.LoadoutAberrantCultist)
+        elif settings.monster_key == 'aberrant-cultist-grand-master':
+            return PowerSelection(powers.LoadoutAberrantGrandMaster)
+        # Death cultist variants
+        elif settings.monster_key == 'death-cultist-initiate':
+            return PowerSelection(powers.LoadoutDeathCultInitiate)
+        elif settings.monster_key == 'death-cultist':
+            return PowerSelection(powers.LoadoutDeathCultist)
+        elif settings.monster_key == 'death-cultist-grand-master':
+            return PowerSelection(powers.LoadoutDeathCultGrandMaster)
+        # Fiend cultist variants
+        elif settings.monster_key == 'fiend-cultist-initiate':
+            return PowerSelection(powers.LoadoutFiendishInitiate)
+        elif settings.monster_key == 'fiend-cultist':
+            return PowerSelection(powers.LoadoutFiendishCultist)
+        elif settings.monster_key == 'fiend-cultist-grand-master':
+            return PowerSelection(powers.LoadoutFiendishGrandMaster)
         else:
-            raise ValueError(f"Unknown variant: {variant}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings

@@ -2,30 +2,30 @@ template:
   key: kobold
   name: Kobold
   monsters:
-  - key: kobold
-    name: Kobold
-    cr: 0.125
-  - key: kobold-warrenguard
-    name: Kobold Warrenguard
-    cr: 0.125
-  - key: kobold-sharpsnout
-    name: Kobold Sharpsnout
-    cr: 0.125
-  - key: kobold-wyrmcaller
-    name: Kobold Wyrmcaller
-    cr: 2
+    - key: kobold-warrenguard
+      name: Kobold Warrenguard
+      cr: 0.125
+    - key: kobold-sharpsnout
+      name: Kobold Sharpsnout
+      cr: 0.125
+    - key: kobold-ascendant
+      name: Kobold Ascendant
+      cr: 1
+    - key: kobold-wyrmcaller
+      name: Kobold Wyrmcaller
+      cr: 2
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
   species: []
 common: &common
   creature_type: Humanoid
   size: Small
   languages:
-  - Common
-  - Draconic
+    - Common
+    - Draconic
   creature_class: Kobold
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -46,13 +46,13 @@ common: &common
       secondary_damage_type: null
   skills:
     proficiency:
-    - Stealth
-    - Perception
-    - Stealth
+      - Stealth
+      - Perception
+      - Stealth
     expertise: []
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS
 
 kobold:
   <<: *common

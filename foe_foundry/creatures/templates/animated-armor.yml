@@ -2,32 +2,32 @@ template:
   key: animated-armor
   name: Animated Armor
   monsters:
-  - key: animated-armor
-    name: Animated Armor
-    cr: 1
-  - key: animated-runeplate
-    name: Animated Runeplate
-    cr: 4
+    - key: animated-armor
+      name: Animated Armor
+      cr: 1
+    - key: animated-runeplate
+      name: Animated Runeplate
+      cr: 4
   environments:
-  - development: stronghold
-    affinity: native
-  - development: ruin
-    affinity: common
-  - region: UrbanTownship
-    affinity: common
-  - development: settlement
-    affinity: uncommon
-  - development: dungeon
-    affinity: uncommon
-  - development: wilderness
-    affinity: rare
+    - development: stronghold
+      affinity: native
+    - development: ruin
+      affinity: common
+    - region: UrbanTownship
+      affinity: common
+    - development: settlement
+      affinity: uncommon
+    - development: dungeon
+      affinity: uncommon
+    - development: wilderness
+      affinity: rare
   species: null
 
 common: &common
   creature_type: Construct
   size: Medium
   languages:
-  - Understands Common but can't speak
+    - Understands Common but can't speak
   creature_class: Animated Armor
   speed:
     walk: 30
@@ -46,9 +46,19 @@ common: &common
     WIS: [NoScaling, -7]
     CHA: [NoScaling, -9]
   ac_templates:
-  - template: PlateArmor
-    modifier: 0
-  condition_immunities: [Poisoned, Charmed, Blinded, Stunned, Exhaustion, Frightened, Paralyzed, Petrified]
+    - template: PlateArmor
+      modifier: 0
+  condition_immunities:
+    [
+      Poisoned,
+      Charmed,
+      Blinded,
+      Stunned,
+      Exhaustion,
+      Frightened,
+      Paralyzed,
+      Petrified,
+    ]
   damage_immunities: [Poison, Psychic]
   attacks:
     set_attacks: 2

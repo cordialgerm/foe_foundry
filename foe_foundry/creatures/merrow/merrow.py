@@ -51,16 +51,16 @@ MerrowAbyssalLord = MonsterVariant(
 
 class _MerrowTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        if settings.variant is MerrowVariant:
+        if settings.monster_key == "merrow":
             return PowerSelection(loadouts=powers.MerrowLoadout)
-        elif settings.variant is MerrowBloodBlessed:
+        elif settings.monster_key == "merrow-blood-blessed":
             return PowerSelection(loadouts=powers.MerrowBloodBlessedLoadout)
-        elif settings.variant is MerrowStormblessed:
+        elif settings.monster_key == "merrow-storm-blessed":
             return PowerSelection(loadouts=powers.MerrowStormblessedLoadout)
-        elif settings.variant is MerrowAbyssalLord:
+        elif settings.monster_key == "merrow-abyssal-lord":
             return PowerSelection(loadouts=powers.MerrowAbyssalLordLoadout)
         else:
-            raise ValueError(f"Variant '{settings.variant.key}' is not recognized")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings

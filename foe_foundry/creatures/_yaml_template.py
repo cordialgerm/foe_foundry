@@ -41,13 +41,11 @@ from foe_foundry.size import Size
 from foe_foundry.skills import AbilityScore, Skills, StatScaling
 from foe_foundry.statblocks import BaseStatblock
 
+from ..spells import CasterType
+from ._all import AllTemplates
 from ._template import Monster, MonsterTemplate, MonsterVariant
 from .base_stats import base_stats
-
-try:
-    from ..spells import CasterType
-except ImportError:
-    CasterType = None
+from .templates import schema
 
 
 class YamlMonsterTemplate(MonsterTemplate):
@@ -92,50 +90,11 @@ class YamlMonsterTemplate(MonsterTemplate):
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        # Import the appropriate powers based on template key
-        template_key = self.yaml_data["template"]["key"]  # Use the key from YAML data instead
-        monster_key = settings.monster_key
-
-        try:
-            # Import powers module for the template
-            module_name = template_key.replace('-', '_')
-            powers_module = __import__(f"foe_foundry.creatures.{module_name}.powers", fromlist=[''])
-            
-            # Map monster keys to power loadouts based on template
-            if template_key == "wolf":
-                if monster_key == "wolf":
-                    return PowerSelection(powers_module.LoadoutWolf)
-                elif monster_key == "dire-wolf":
-                    return PowerSelection(powers_module.LoadoutDireWolf)
-                elif monster_key == "winter-wolf":
-                    return PowerSelection(powers_module.LoadoutFrostWolf)
-                elif monster_key == "fellwinter-packlord":
-                    return PowerSelection(powers_module.LoadoutPacklord)
-                else:
-                    return PowerSelection(powers_module.LoadoutWolf)
-            elif template_key == "animated-armor":
-                if monster_key == "animated-armor":
-                    return PowerSelection(powers_module.LoadoutAnimatedArmor)
-                elif monster_key == "animated-runeplate":
-                    return PowerSelection(powers_module.LoadoutRunicSpellplate)
-                else:
-                    return PowerSelection(powers_module.LoadoutAnimatedArmor)
-            else:
-                # For other templates, try to find a default loadout
-                # Look for common loadout names
-                loadout_attrs = [attr for attr in dir(powers_module) 
-                               if attr.startswith('Loadout') and not attr.endswith('__')]
-                if loadout_attrs:
-                    # Use the first loadout found
-                    loadout = getattr(powers_module, loadout_attrs[0])
-                    return PowerSelection(loadout)
-                
-                # If no loadout found, return empty selection
-                return PowerSelection([])
-                
-        except (ImportError, AttributeError) as e:
-            # If powers module doesn't exist or loadout not found, raise an error
-            raise ValueError(f"Could not load powers for template {template_key}: {e}") from e
+        # use existing templates to choose powers, for now
+        # we will replace this with proper logic later
+        templates_by_key = {t.key: t for t in AllTemplates}
+        template = templates_by_key[self.key]
+        return template.choose_powers(settings)
 
 
 # ===== PARSING HELPER FUNCTIONS =====
@@ -294,7 +253,7 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
         # If speed is a number, it's a speed modifier, not structured movement
         # Return None so the base template speed calculation is used
         return None
-    
+
     if not isinstance(speed_data, dict):
         # If it's not a dict or number, we can't parse it
         return None
@@ -409,6 +368,38 @@ def parse_damage_resistances_from_yaml(data: Dict[str, Any]) -> set:
     return resistances
 
 
+def parse_damage_vulnerabilities_from_yaml(data: Dict[str, Any]) -> set:
+    """
+    Parse damage vulnerabilities from YAML.
+
+    Args:
+        data: YAML data containing vulnerabilities section
+
+    Returns:
+        Set of DamageType objects for vulnerabilities
+    """
+    vulnerabilities = set()
+
+    # Try new structured format first: vulnerabilities: damage_types: [...]
+    vulnerabilities_data = data.get("vulnerabilities", {})
+    if vulnerabilities_data:
+        damage_vulnerability_names = vulnerabilities_data.get("damage_types", [])
+        for dt_name in damage_vulnerability_names:
+            dt = getattr(DamageType, dt_name, None)
+            if dt:
+                vulnerabilities.add(dt)
+
+    # Try legacy direct format: damage_vulnerabilities: [...]
+    legacy_vulnerabilities = data.get("damage_vulnerabilities", [])
+    if legacy_vulnerabilities:
+        for dt_name in legacy_vulnerabilities:
+            dt = getattr(DamageType, dt_name, None)
+            if dt:
+                vulnerabilities.add(dt)
+
+    return vulnerabilities
+
+
 def parse_skills_from_yaml(data: Dict[str, Any]) -> tuple[List[Skills], List[Skills]]:
     """
     Parse skill proficiencies and expertises from YAML.
@@ -441,21 +432,54 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
     Parse AC templates from YAML data.
 
     Args:
-        data: YAML data containing ac_templates section
+        data: YAML data containing ac_templates section or legacy armor_class
 
     Returns:
         List of ArmorClassTemplate objects
-
-    Raises:
-        ValueError: If no ac_templates are specified
     """
-    if "ac_templates" not in data:
-        raise ValueError("ac_templates section is required but not found in YAML data")
-    
-    ac_templates_data = data["ac_templates"]
-    if not ac_templates_data:
-        raise ValueError("ac_templates cannot be empty - at least one AC template must be specified")
-    
+    # Handle new format: ac_templates
+    if "ac_templates" in data:
+        ac_templates_data = data["ac_templates"]
+        if not ac_templates_data:
+            raise ValueError(
+                "ac_templates cannot be empty - at least one AC template must be specified"
+            )
+    # Handle legacy singular format: ac_template
+    elif "ac_template" in data:
+        ac_template = data["ac_template"]
+        if isinstance(ac_template, str):
+            # Convert single string to list format for consistent processing
+            ac_templates_data = [ac_template]
+        else:
+            raise ValueError(f"ac_template must be a string, got {type(ac_template)}")
+    # Handle legacy format: armor_class
+    elif "armor_class" in data:
+        armor_class = data["armor_class"]
+        if isinstance(armor_class, str):
+            # Convert single string to list format for consistent processing
+            ac_templates_data = [armor_class]
+        elif isinstance(armor_class, dict):
+            # Handle dict format: {"base": "LeatherArmor", "modifier": 1}
+            base_template = armor_class.get("base")
+            if base_template:
+                # For now, just use the base template and ignore modifier
+                # TODO: Handle modifier properly in the future
+                ac_templates_data = [base_template]
+            else:
+                raise ValueError("armor_class dict must have a 'base' field")
+        elif armor_class is None:
+            # Handle empty armor_class (YAML None)
+            ac_templates_data = ["Unarmored"]
+        else:
+            raise ValueError(f"armor_class must be a string or dict, got {type(armor_class)}")
+    else:
+        # If no AC template is specified, default to Unarmored
+        # This provides a fallback for incomplete YAML templates
+        ac_templates_data = ["Unarmored"]
+
+    if isinstance(ac_templates_data, str):
+        ac_templates_data = [{"template": ac_templates_data}]
+
     templates = []
 
     # Map template names to actual template objects
@@ -483,11 +507,24 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
         if isinstance(template_data, dict):
             template_name = template_data.get("template")
             if template_name and template_name in template_map:
-                templates.append(template_map[template_name])
+                template_class = template_map[template_name]
+                
+                # Handle special case for flat template which requires an AC parameter
+                if template_name == "flat":
+                    ac_value = template_data.get("ac", 12)  # Default to 12 if not specified
+                    templates.append(template_class(ac_value))
+                else:
+                    templates.append(template_class)
         elif isinstance(template_data, str):
             # Handle simple string format
             if template_data in template_map:
-                templates.append(template_map[template_data])
+                template_class = template_map[template_data]
+                
+                # Handle special case for flat template which requires an AC parameter
+                if template_data == "flat":
+                    templates.append(template_class(12))  # Default AC 12 for flat template
+                else:
+                    templates.append(template_class)
 
     return templates
 
@@ -598,7 +635,7 @@ def parse_statblock_from_yaml(
             template_key=template_data["key"],
             variant_key=settings.variant.key,
             monster_key=settings.monster_key,
-            species_key=None,
+            species_key=settings.species.key if settings.species else None,
             cr=cr,
             stats=stats,
             hp_multiplier=hp_multiplier,
@@ -684,6 +721,12 @@ def parse_statblock_from_yaml(
             resistances=damage_resistances
         )
 
+    damage_vulnerabilities = parse_damage_vulnerabilities_from_yaml(merged_data)
+    if damage_vulnerabilities:
+        statblock = statblock.grant_resistance_or_immunity(
+            vulnerabilities=damage_vulnerabilities
+        )
+
     # Apply skills
     proficiency_skills, expertise_skills = parse_skills_from_yaml(merged_data)
     for skill in proficiency_skills:
@@ -704,6 +747,11 @@ def parse_statblock_from_yaml(
     secondary_damage_type = parse_secondary_damage_type_from_yaml(
         merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type")
     )
+    # If not found in attacks, check at the top level
+    if not secondary_damage_type:
+        secondary_damage_type = parse_secondary_damage_type_from_yaml(
+            merged_data.get("secondary_damage_type")
+        )
     if secondary_damage_type:
         statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
 
@@ -794,8 +842,8 @@ def parse_attacks_from_yaml(
     Returns:
         List of AttackTemplate objects
     """
-    # Get the merged data for this monster
-    template_data = yaml_data["template"]
+
+    schema.validate_yaml_template(yaml_data)
 
     # Get common data - only support single "common" section
     if "common" not in yaml_data:
@@ -891,8 +939,11 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
         return variants
 
     else:
-        # Default behavior: one variant per monster (for other templates)
+        # Default behavior: group all monsters into a single variant named after the template
+        template_name = template_data["name"]
         variants = []
+        variant_monsters = []
+
         for monster_data in monsters:
             name = monster_data["name"]
             cr = monster_data["cr"]
@@ -905,9 +956,15 @@ def parse_variants_from_template_yaml(template_data: dict) -> list[MonsterVarian
                 srd_creatures=None,  # TODO LATER
                 other_creatures=None,  # TODO LATER
             )
+            variant_monsters.append(monster)
 
-            variant = MonsterVariant(name=name, description=name, monsters=[monster])
-            variants.append(variant)
+        # Create a single variant containing all monsters
+        variant = MonsterVariant(
+            name=template_name,
+            description=f"{template_name} creatures",
+            monsters=variant_monsters,
+        )
+        variants.append(variant)
 
         return variants
 
