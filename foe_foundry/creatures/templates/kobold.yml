@@ -61,5 +61,7 @@ kobold-warrenguard:
   <<: *common
 kobold-sharpsnout:
   <<: *common
+kobold-ascendant:
+  <<: *common
 kobold-wyrmcaller:
   <<: *common

@@ -29,7 +29,8 @@ common: &common
   damage_multiplier: 1.0
   senses:
     darkvision: 60
-  ac_template: Breastplate
+  ac_templates:
+    - template: Breastplate
   roles:
     primary: Soldier
     additional: [Leader]

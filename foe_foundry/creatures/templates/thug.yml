@@ -52,6 +52,7 @@ common: &common
   skills:
     proficiency: [Intimidation]
     expertise: []
+  ac_templates: LeatherArmor
 
 # Thug variant (basic thugs)
 thug:
@@ -100,7 +101,7 @@ elite-thug:
     primary: Bruiser
     additional: [Bruiser]
   ac_templates:
-    - base: LeatherArmor
+    - template: LeatherArmor
       modifier: 1
   attacks:
     main:
@@ -157,8 +158,8 @@ thug-overboss:
     primary: Leader
     additional: [Bruiser]
   ac_templates:
-    base: SplintArmor
-    modifier: 1
+    - template: SplintArmor
+      modifier: 1
   attacks:
     main:
       base: Maul
@@ -179,8 +180,8 @@ thug-legend:
     primary: Leader
     additional: [Bruiser]
   ac_templates:
-    base: SplintArmor
-    modifier: 1
+    - template: SplintArmor
+      modifier: 1
   attacks:
     main:
       base: Maul

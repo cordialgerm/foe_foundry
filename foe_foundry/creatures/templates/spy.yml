@@ -20,6 +20,7 @@ template:
     - Hill: Medium
     - Plain: Medium
   species: all
+
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -49,7 +50,8 @@ common: &common
     secondary:
       base: HandCrossbow
       display_name: "Concealed Crossbow"
-    set_attacks: reduced
+  ac_templates: Unarmored
+  attack_reduction: 1
   skills:
     proficiency:
       - Deception
@@ -60,12 +62,14 @@ common: &common
       - Stealth
       - Initiative
     expertise: []
+
 spy:
   <<: *common
 elite-spy:
   <<: *common
-  ac_template: StuddedLeatherArmor
-  ac_modifier: 1
+  ac_templates:
+    - template: StuddedLeatherArmor
+      modifier: 1
   skills:
     proficiency:
       - Deception
@@ -86,8 +90,10 @@ elite-spy:
     - WIS
 spy-master:
   <<: *common
-  ac_template: StuddedLeatherArmor
-  ac_modifier: 2
+  ac_templates:
+    - template: StuddedLeatherArmor
+      modifier: 2
+  attack_reduction: 2
   skills:
     proficiency:
       - Deception

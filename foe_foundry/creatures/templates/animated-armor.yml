@@ -48,18 +48,19 @@ common: &common
   ac_templates:
     - template: PlateArmor
       modifier: 0
-  condition_immunities:
-    [
-      Poisoned,
-      Charmed,
-      Blinded,
-      Stunned,
-      Exhaustion,
-      Frightened,
-      Paralyzed,
-      Petrified,
-    ]
-  damage_immunities: [Poison, Psychic]
+  immunities:
+    conditions:
+      [
+        Poisoned,
+        Charmed,
+        Blinded,
+        Stunned,
+        Exhaustion,
+        Frightened,
+        Paralyzed,
+        Petrified,
+      ]
+    damage: [Poison, Psychic]
   attacks:
     set_attacks: 2
     main:
