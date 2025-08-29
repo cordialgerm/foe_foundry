@@ -93,28 +93,50 @@ class YamlMonsterTemplate(MonsterTemplate):
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
         # Import the appropriate powers based on template key
-        template_key = (
-            settings.monster_template.lower()
-        )  # Convert to lowercase for comparison
+        template_key = self.yaml_data["template"]["key"]  # Use the key from YAML data instead
         monster_key = settings.monster_key
 
-        if template_key == "wolf":
-            from .wolf import powers as wolf_powers
-
-            if monster_key == "wolf":
-                return PowerSelection(wolf_powers.LoadoutWolf)
-            elif monster_key == "dire-wolf":
-                return PowerSelection(wolf_powers.LoadoutDireWolf)
-            elif monster_key == "winter-wolf":
-                return PowerSelection(wolf_powers.LoadoutFrostWolf)
-            elif monster_key == "fellwinter-packlord":
-                return PowerSelection(wolf_powers.LoadoutPacklord)
+        try:
+            # Import powers module for the template
+            module_name = template_key.replace('-', '_')
+            powers_module = __import__(f"foe_foundry.creatures.{module_name}.powers", fromlist=[''])
+            
+            # Map monster keys to power loadouts based on template
+            if template_key == "wolf":
+                if monster_key == "wolf":
+                    return PowerSelection(powers_module.LoadoutWolf)
+                elif monster_key == "dire-wolf":
+                    return PowerSelection(powers_module.LoadoutDireWolf)
+                elif monster_key == "winter-wolf":
+                    return PowerSelection(powers_module.LoadoutFrostWolf)
+                elif monster_key == "fellwinter-packlord":
+                    return PowerSelection(powers_module.LoadoutPacklord)
+                else:
+                    return PowerSelection(powers_module.LoadoutWolf)
+            elif template_key == "animated-armor":
+                if monster_key == "animated-armor":
+                    return PowerSelection(powers_module.LoadoutAnimatedArmor)
+                elif monster_key == "animated-runeplate":
+                    return PowerSelection(powers_module.LoadoutRunicSpellplate)
+                else:
+                    return PowerSelection(powers_module.LoadoutAnimatedArmor)
             else:
-                return PowerSelection(wolf_powers.LoadoutWolf)
-
-        # For other templates, use a default empty selection for now
-        # TODO: Implement proper power selection for all templates
-        return PowerSelection([])
+                # For other templates, try to find a default loadout
+                # Look for common loadout names
+                loadout_attrs = [attr for attr in dir(powers_module) 
+                               if attr.startswith('Loadout') and not attr.endswith('__')]
+                if loadout_attrs:
+                    # Use the first loadout found
+                    loadout = getattr(powers_module, loadout_attrs[0])
+                    return PowerSelection(loadout)
+                
+                # If no loadout found, return empty selection
+                return PowerSelection([])
+                
+        except (ImportError, AttributeError) as e:
+            # If powers module doesn't exist or loadout not found, return empty selection
+            print(f"Warning: Could not load powers for template {template_key}: {e}")
+            return PowerSelection([])
 
 
 # ===== PARSING HELPER FUNCTIONS =====
@@ -266,6 +288,16 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
     """
     speed_data = data.get("speed", {})
     if not speed_data:
+        return None
+
+    # Handle both integer speed modifiers and structured speed objects
+    if isinstance(speed_data, (int, float)):
+        # If speed is a number, it's a speed modifier, not structured movement
+        # Return None so the base template speed calculation is used
+        return None
+    
+    if not isinstance(speed_data, dict):
+        # If it's not a dict or number, we can't parse it
         return None
 
     movement_kwargs = {}
