@@ -65,6 +65,6 @@ common:
     expertise: [Initiative]
   saves: [CON, WIS]
 
-balor:
+balor: {}
 
-balor-dreadlord:
+balor-dreadlord: {}
