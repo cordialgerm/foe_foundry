@@ -43,17 +43,28 @@ The previous agent also wrote some unit tests that at the time claimed the parsi
 
 ## Next Steps - Round 2
 
-- [ ] In `_yaml_template.py`, the parsing pure functions should return the actual class, not just the kwargs used to construct the class. Relevant tests shoudl be updated
-- [ ] Only a single `"common"` implementation should be allowed. Update the schema to only allow for one and check all places where you support multiple and simplify so you check for the common key in the YAML template and raise an error if it's not found. `wolf.yml` template needs to be fixed
-- [ ] IMPORTANT - imports should only happen at the top of files. Fix this
-- [ ] The environment parsing definitely does not work. I think it's because there's confusion between the Affinity type alias and the Affinity StrEnum. Let's rename the Affinity StrEnum to EncounterFrequency and then adjust the environment parsing function to actually work. Create a pure unit test for it that confirms it works. Don't just skip and swallow failures
-- [ ] We need to create a proper comparison of the previous statblocks and the new statblocks. I stubbed out the test that needs to be filled in
+- [x] In `_yaml_template.py`, the parsing pure functions should return the actual class, not just the kwargs used to construct the class. Relevant tests shoudl be updated
+- [x] Only a single `"common"` implementation should be allowed. Update the schema to only allow for one and check all places where you support multiple and simplify so you check for the common key in the YAML template and raise an error if it's not found. `wolf.yml` template needs to be fixed
+- [x] IMPORTANT - imports should only happen at the top of files. Fix this
+- [x] The environment parsing definitely does not work. I think it's because there's confusion between the Affinity type alias and the Affinity StrEnum. Let's rename the Affinity StrEnum to EncounterFrequency and then adjust the environment parsing function to actually work. Create a pure unit test for it that confirms it works. Don't just skip and swallow failures
+- [x] We need to create a proper comparison of the previous statblocks and the new statblocks. I stubbed out the test that needs to be filled in
 
 
 
 ## Next Steps - Round 3
 
-- Clean up the YAML template, including the YAML schema as well as all of the existing yml templates
+- [x] Clean up the YAML template, including the YAML schema as well as all of the existing yml templates
   - speed needs to be its own section with fly, climb, burrow, and hover as part subproperties (not top-level properties)
   - senses needs to be its own section with blindsight, truesight, tremorsense, and darkvision as subproperties (not top-level properties)
-- the schema needs to explicitly disallow extra undefined properties
+- [x] the schema needs to explicitly disallow extra undefined properties
+
+## Next Steps - Round 4
+
+- Remove all "legacy" parsing behavior. For example, we have custom support for `ac_template` instead of `ac_templates`. Consolidate everything to `ac_templates`
+- also get rid of legacy "armor_class" and fix templates using it so they set `ac_templates`
+- Look at the parser logic and check for special corner cases. Clean those up and simplify them
+- Then, clean up the schema checking logic
+
+### Cleaning and Simplifying AC Templates
+
+- There should be a standalone method called `resolve_ac_template` that takes the name of an AC Template and a modifier and returns the actual AC Template class. THis should be part of ac_templates. The parser should just use this method. The method should be unit tested. It should handle `flat()` as a function call not a hard coded value of 12
