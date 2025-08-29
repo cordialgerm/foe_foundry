@@ -90,6 +90,12 @@ class YamlMonsterTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         stats = parse_statblock_from_yaml(self.yaml_data, settings)
         attacks = parse_attacks_from_yaml(self.yaml_data, settings)
+        
+        # Apply attack template alterations (like uses_shield)
+        if attacks:
+            primary_attack = attacks[0]
+            stats = primary_attack.alter_base_stats(stats)
+        
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
@@ -195,6 +201,9 @@ def parse_statblock_from_yaml(
 
     if "creature_subtype" in merged_data:
         modifications["creature_subtype"] = merged_data["creature_subtype"]
+
+    if "uses_shield" in merged_data:
+        modifications["uses_shield"] = merged_data["uses_shield"]
 
     # Apply modifications
     if modifications:
