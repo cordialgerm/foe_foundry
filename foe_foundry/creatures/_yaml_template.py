@@ -483,7 +483,9 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
         else:
             raise ValueError(f"armor_class must be a string or dict, got {type(armor_class)}")
     else:
-        raise ValueError("ac_templates, ac_template, or armor_class section is required but not found in YAML data")
+        # If no AC template is specified, default to Unarmored
+        # This provides a fallback for incomplete YAML templates
+        ac_templates_data = ["Unarmored"]
     
     templates = []
 
