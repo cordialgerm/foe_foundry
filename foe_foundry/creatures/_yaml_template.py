@@ -441,20 +441,49 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
     Parse AC templates from YAML data.
 
     Args:
-        data: YAML data containing ac_templates section
+        data: YAML data containing ac_templates section or legacy armor_class
 
     Returns:
         List of ArmorClassTemplate objects
 
     Raises:
-        ValueError: If no ac_templates are specified
+        ValueError: If no ac_templates or armor_class are specified
     """
-    if "ac_templates" not in data:
-        raise ValueError("ac_templates section is required but not found in YAML data")
-    
-    ac_templates_data = data["ac_templates"]
-    if not ac_templates_data:
-        raise ValueError("ac_templates cannot be empty - at least one AC template must be specified")
+    # Handle new format: ac_templates
+    if "ac_templates" in data:
+        ac_templates_data = data["ac_templates"]
+        if not ac_templates_data:
+            raise ValueError("ac_templates cannot be empty - at least one AC template must be specified")
+    # Handle legacy singular format: ac_template
+    elif "ac_template" in data:
+        ac_template = data["ac_template"]
+        if isinstance(ac_template, str):
+            # Convert single string to list format for consistent processing
+            ac_templates_data = [ac_template]
+        else:
+            raise ValueError(f"ac_template must be a string, got {type(ac_template)}")
+    # Handle legacy format: armor_class
+    elif "armor_class" in data:
+        armor_class = data["armor_class"]
+        if isinstance(armor_class, str):
+            # Convert single string to list format for consistent processing
+            ac_templates_data = [armor_class]
+        elif isinstance(armor_class, dict):
+            # Handle dict format: {"base": "LeatherArmor", "modifier": 1}
+            base_template = armor_class.get("base")
+            if base_template:
+                # For now, just use the base template and ignore modifier
+                # TODO: Handle modifier properly in the future
+                ac_templates_data = [base_template]
+            else:
+                raise ValueError("armor_class dict must have a 'base' field")
+        elif armor_class is None:
+            # Handle empty armor_class (YAML None)
+            raise ValueError("armor_class cannot be empty/null")
+        else:
+            raise ValueError(f"armor_class must be a string or dict, got {type(armor_class)}")
+    else:
+        raise ValueError("ac_templates, ac_template, or armor_class section is required but not found in YAML data")
     
     templates = []
 
