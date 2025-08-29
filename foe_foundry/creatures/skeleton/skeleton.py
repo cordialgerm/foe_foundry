@@ -62,17 +62,16 @@ FreezingSkeletonVariant = MonsterVariant(
 
 class _SkeletonTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        variant = settings.variant
-        if variant is SkeletonVariant:
+        if settings.monster_key == 'skeleton':
             return PowerSelection(loadouts=powers.LoadoutSkeleton)
-        elif variant is GraveGuardVariant:
+        elif settings.monster_key == 'skeletal-grave-guard':
             return PowerSelection(loadouts=powers.LoadoutGraveGuard)
-        elif variant is BurningSkeletonVariant:
+        elif settings.monster_key == 'burning-skeleton' or settings.monster_key == 'burning-skeletal-champion':
             return PowerSelection(loadouts=powers.LoadoutBurningSkeleton)
-        elif variant is FreezingSkeletonVariant:
+        elif settings.monster_key == 'freezing-skeleton':
             return PowerSelection(loadouts=powers.LoadoutFreezingSkeleton)
         else:
-            raise ValueError(f"Unrecognized variant: {variant.name}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings

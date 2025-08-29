@@ -48,21 +48,18 @@ ZombieOgreVariant = MonsterVariant(
 
 class _ZombieTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        variant = settings.variant
-        cr = settings.cr
-
-        if variant is ZombieVariant:
-            if cr < 1:
-                return PowerSelection(loadouts=powers.LoadoutZombie)
-            else:
-                return PowerSelection(loadouts=powers.LoadoutZombieBrute)
-        elif variant is ZombieOgreVariant:
-            if cr <= 2:
-                return PowerSelection(loadouts=powers.LoadoutZombieOgre)
-            else:
-                return PowerSelection(loadouts=powers.LoadoutZombieGiant)
+        if settings.monster_key == 'zombie':
+            return PowerSelection(loadouts=powers.LoadoutZombie)
+        elif settings.monster_key == 'zombie-brute':
+            return PowerSelection(loadouts=powers.LoadoutZombieBrute)
+        elif settings.monster_key == 'zombie-gravewalker':
+            return PowerSelection(loadouts=powers.LoadoutZombieBrute)
+        elif settings.monster_key == 'zombie-ogre':
+            return PowerSelection(loadouts=powers.LoadoutZombieOgre)
+        elif settings.monster_key == 'zombie-giant':
+            return PowerSelection(loadouts=powers.LoadoutZombieGiant)
         else:
-            raise ValueError(f"Unknown zombie variant: {variant.name}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings

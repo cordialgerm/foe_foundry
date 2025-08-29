@@ -84,18 +84,18 @@ OgreBigBrainzVariant = MonsterVariant(
 
 class _OgreTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        if settings.variant is OgreVariant:
+        if settings.monster_key == 'ogre':
             return PowerSelection(powers.LoadoutOgreBase)
-        elif settings.variant is OgreBigBrainzVariant:
+        elif settings.monster_key == 'ogre-big-brainz':
             return PowerSelection(powers.LoadoutTrickster)
-        elif settings.variant is OgreWallsmashaVariant:
+        elif settings.monster_key == 'ogre-wallsmasha':
             return PowerSelection(powers.LoadoutSmasha)
-        elif settings.variant is OgreBurnbelchaVariant:
+        elif settings.monster_key == 'ogre-burnbelcha':
             return PowerSelection(powers.LoadoutBelcha)
-        elif settings.variant is OgreChaincrakkaVariant:
+        elif settings.monster_key == 'ogre-chaincrakka':
             return PowerSelection(powers.LoadoutChainCrakka)
         else:
-            raise ValueError(f"Unknown ogre variant: {settings.variant}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings

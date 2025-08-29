@@ -92,41 +92,34 @@ GoblinShamanVariant = MonsterVariant(
 
 class _GoblinTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        """Selects the powers for the goblin based on its variant."""
-        variant = settings.variant
-
-        if variant is GoblinLickspittleVariant:
+        """Selects the powers for the goblin based on its monster key."""
+        
+        if settings.monster_key == "goblin-lickspittle":
             return PowerSelection(
                 loadouts=powers.LoadoutLickspittle,
             )
-        elif variant is GoblinWarriorVariant:
+        elif settings.monster_key == "goblin":
             return PowerSelection(
                 loadouts=powers.LoadoutWarrior,
             )
-        elif variant is GoblinBruteVariant:
+        elif settings.monster_key == "goblin-brute":
             return PowerSelection(
                 loadouts=powers.LoadoutBrute,
             )
-        elif variant is GoblinShamanVariant:
-            if settings.monster_key == "goblin-foulhex":
-                return PowerSelection(
-                    loadouts=powers.LoadoutShamanAdept,
-                )
-            elif settings.monster_key == "goblin-shaman":
-                return PowerSelection(
-                    loadouts=powers.LoadoutShaman,
-                )
-            else:
-                raise ValueError(f"Unknown goblin shaman key: {settings.monster_key}")
-        elif variant is GoblinBossVariant:
-            if settings.monster_key == "goblin-boss":
-                return PowerSelection(loadouts=powers.LoadoutBoss)
-            elif settings.monster_key == "goblin-warchief":
-                return PowerSelection(loadouts=powers.LoadoutWarchief)
-            else:
-                raise ValueError(f"Unknown goblin boss key: {settings.monster_key}")
+        elif settings.monster_key == "goblin-foulhex":
+            return PowerSelection(
+                loadouts=powers.LoadoutShamanAdept,
+            )
+        elif settings.monster_key == "goblin-shaman":
+            return PowerSelection(
+                loadouts=powers.LoadoutShaman,
+            )
+        elif settings.monster_key == "goblin-boss":
+            return PowerSelection(loadouts=powers.LoadoutBoss)
+        elif settings.monster_key == "goblin-warchief":
+            return PowerSelection(loadouts=powers.LoadoutWarchief)
         else:
-            raise ValueError(f"Unknown goblin variant: {variant}")
+            raise ValueError(f"Unknown monster_key: {settings.monster_key}")
 
     def generate_stats(
         self, settings: GenerationSettings
