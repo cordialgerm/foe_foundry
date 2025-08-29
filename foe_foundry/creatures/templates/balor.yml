@@ -50,8 +50,9 @@ common:
   ac_templates:
     - template: UnholyArmor
       modifier: 0
-  condition_immunities: [Poisoned, Frightened]
-  damage_immunities: [Fire, Poison]
+  immunities:
+    conditions: [Poisoned, Frightened]
+    damage: [Fire, Poison]
   damage_resistances: [Cold, Lightning]
   attacks:
     set_attacks: 3

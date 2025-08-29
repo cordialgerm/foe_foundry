@@ -56,11 +56,13 @@ YAML_TEMPLATE_SCHEMA = {
                                 "type": "object",
                                 "properties": {
                                     "template": {"type": "string"},
-                                    "modifier": {"type": "number"},
+                                    "modifier": {"type": "integer"},
+                                    "ac": {"type": "integer"},
                                 },
                                 "required": ["template"],
                                 "additionalProperties": False,
                             },
+                            "additionalItems": False,
                         },
                     ]
                 },
@@ -197,18 +199,10 @@ YAML_TEMPLATE_SCHEMA = {
                     "additionalProperties": False,
                 },
                 "attack_reduction": {"type": "number"},
-                # Legacy support fields
-                "damage_immunities": {"type": "array", "items": {"type": "string"}},
-                "damage_resistances": {"type": "array", "items": {"type": "string"}},
-                "damage_vulnerabilities": {
-                    "type": "array",
-                    "items": {"type": "string"},
-                },
                 # Additional fields found in templates
                 "additional_types": {"type": "array", "items": {"type": "string"}},
                 "caster_type": {"type": "string"},
                 "flags": {"type": "object"},
-                "has_unique_movement_manipulation": {"type": "boolean"},
                 "legendary_boost_ac": {"type": "boolean"},
                 "min_attacks": {"type": "number"},
                 "multiattack_custom_text": {"type": "string"},

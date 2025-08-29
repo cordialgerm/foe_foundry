@@ -1,6 +1,6 @@
 from foe_foundry.statblocks import BaseStatblock
 
-from ...ac_templates import StuddedLeatherArmor
+from ...ac_templates import StuddedLeatherArmor, Unarmored
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
@@ -107,6 +107,8 @@ class _SpyTemplate(MonsterTemplate):
         ac_modifier = int(interpolate_by_cr(cr, {1: 0, 4: 1, 10: 2, 15: 3}))
         if cr >= 4:
             stats = stats.add_ac_template(StuddedLeatherArmor, ac_modifier=ac_modifier)
+        else:
+            stats = stats.add_ac_template(Unarmored)
 
         # ATTACKS
 

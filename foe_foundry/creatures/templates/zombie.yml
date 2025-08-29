@@ -63,7 +63,6 @@ common: &common
     conditions: [Poisoned]
   vulnerabilities:
     damage_types: [Radiant]
-  has_unique_movement_manipulation: true
   saves: [WIS]
 
 zombie:

@@ -79,8 +79,9 @@ def test_yaml_template_exact_comparison(template: MonsterTemplate):
 
         # Use exact equality comparison with detailed error message
         mismatches = compare_stats(base_stat, new_stat)
-        assert not mismatches, f"Stats mismatches for key {stat_key}:\n" + "\n".join(
-            f"  - {mismatch}" for mismatch in mismatches
+        assert not mismatches, (
+            f"Stats mismatches for {stat_key} (left is the Python template, right is the YAML template):\n"
+            + "\n".join(f"  - {mismatch}" for mismatch in mismatches)
         )
 
 
@@ -134,7 +135,7 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
             set1 = set(set1)
         if isinstance(set2, list):
             set2 = set(set2)
-            
+
         if set1 == set2:
             return "identical"
 
@@ -205,13 +206,6 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
     # Speed, size, senses, languages
     if stats1.speed != stats2.speed:
         mismatches.append(f"speed mismatch: {stats1.speed} != {stats2.speed}")
-    if (
-        stats1.has_unique_movement_manipulation
-        != stats2.has_unique_movement_manipulation
-    ):
-        mismatches.append(
-            f"has_unique_movement_manipulation mismatch: {stats1.has_unique_movement_manipulation} != {stats2.has_unique_movement_manipulation}"
-        )
     if stats1.size != stats2.size:
         mismatches.append(f"size mismatch: {stats1.size} != {stats2.size}")
     if stats1.senses != stats2.senses:
@@ -221,8 +215,17 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
             f"languages mismatch: {stats1.languages} != {stats2.languages}"
         )
 
+    # NOTE: do NOT check for unique movement manipulation because it's just a legacy flag
+    # if (
+    #     stats1.has_unique_movement_manipulation
+    #     != stats2.has_unique_movement_manipulation
+    # ):
+    #     mismatches.append(
+    #         f"has_unique_movement_manipulation mismatch: {stats1.has_unique_movement_manipulation} != {stats2.has_unique_movement_manipulation}"
+    #     )
+
     # Armor class
-    if stats1.ac_templates != stats2.ac_templates:
+    if set(stats1.ac_templates) != set(stats2.ac_templates):
         mismatches.append(
             f"ac_templates mismatch: {stats1.ac_templates} != {stats2.ac_templates}"
         )

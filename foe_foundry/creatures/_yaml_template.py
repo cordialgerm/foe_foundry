@@ -1,5 +1,8 @@
 from typing import Any, Dict, List, Optional
 
+import numpy as np
+
+from foe_foundry.ac import ArmorClassTemplate
 from foe_foundry.ac_templates import (
     ArcaneArmor,
     BerserkersDefense,
@@ -100,6 +103,210 @@ class YamlMonsterTemplate(MonsterTemplate):
 # ===== PARSING HELPER FUNCTIONS =====
 
 
+def parse_statblock_from_yaml(
+    yaml_data: dict, settings: GenerationSettings
+) -> BaseStatblock:
+    """
+    Parse a BaseStatblock from YAML template data.
+
+    Args:
+        yaml_data: Full YAML template data
+        settings: Generation settings containing monster key and variant info
+
+    Returns:
+        Configured BaseStatblock
+    """
+    schema.validate_yaml_template(yaml_data)
+
+    # Get the monster-specific data
+    template_data = yaml_data["template"]
+
+    # Find the monster info from template metadata
+    monster_info = None
+    for monster in template_data.get("monsters", []):
+        if monster["key"] == settings.monster_key:
+            monster_info = monster
+            break
+
+    if not monster_info:
+        raise ValueError(f"Monster '{settings.monster_key}' not found in template")
+
+    # Get common data - only support single "common" section
+    if "common" not in yaml_data:
+        raise ValueError("No 'common' section found in template")
+
+    common_data = yaml_data["common"]
+
+    # Get monster-specific data
+    monster_data = yaml_data.get(settings.monster_key, {})
+
+    # Merge the data
+    merged_data = merge_template_data(common_data, monster_data)
+
+    # Extract basic info
+    name = monster_info["name"]
+    cr = monster_info["cr"]
+    is_legendary = monster_info.get("legendary", False)
+
+    # Parse ability scores
+    stats = parse_abilities_from_yaml(merged_data)
+
+    # Get HP and damage multipliers
+    hp_multiplier = merged_data.get("hp_multiplier", 1.0)
+    damage_multiplier = merged_data.get("damage_multiplier", 1.0)
+
+    # Create base statblock using base_stats function
+    try:
+        statblock = base_stats(
+            name=name,
+            template_key=template_data["key"],
+            variant_key=settings.variant.key,
+            monster_key=settings.monster_key,
+            species_key=settings.species.key if settings.species else None,
+            cr=cr,
+            stats=stats,
+            hp_multiplier=hp_multiplier,
+            damage_multiplier=damage_multiplier,
+        )
+    except Exception as e:
+        raise RuntimeError(f"Failed to create base statblock: {e}")
+
+    # Apply creature types
+    if "creature_type" in merged_data:
+        primary_type, additional_types = parse_creature_types_from_yaml(merged_data)
+        if additional_types:
+            statblock = statblock.with_types(
+                primary_type=primary_type, additional_types=additional_types
+            )
+        else:
+            statblock = statblock.copy(creature_type=primary_type)
+
+    # Apply basic properties
+    modifications = {}
+
+    if "size" in merged_data:
+        modifications["size"] = getattr(Size, merged_data["size"])
+
+    if "languages" in merged_data:
+        modifications["languages"] = merged_data["languages"]
+
+    if "creature_class" in merged_data:
+        modifications["creature_class"] = merged_data["creature_class"]
+
+    if "creature_subtype" in merged_data:
+        modifications["creature_subtype"] = merged_data["creature_subtype"]
+
+    # Apply modifications
+    if modifications:
+        statblock = statblock.copy(**modifications)
+
+    # Apply AC templates
+    ac_templates, modifier = parse_ac_templates_from_yaml(merged_data)
+    if len(ac_templates) == 0:
+        raise ValueError("ac_templates are required")
+    statblock = statblock.add_ac_templates(ac_templates, modifier)
+
+    # Apply movement
+    movement = parse_movement_from_yaml(merged_data)
+    if movement:
+        statblock = statblock.copy(speed=movement)
+
+    # Apply senses
+    senses = parse_senses_from_yaml(merged_data)
+    if senses:
+        statblock = statblock.copy(senses=senses)
+
+    # Apply legendary status
+    if is_legendary:
+        legendary_data = merged_data.get("legendary", {})
+        if legendary_data:
+            actions = legendary_data.get("actions", 3)
+            resistances = legendary_data.get("resistances", 3)
+            statblock = statblock.as_legendary(actions=actions, resistances=resistances)
+        else:
+            statblock = statblock.as_legendary()
+
+    # Apply roles
+    primary_role, additional_roles = parse_roles_from_yaml(merged_data)
+    if primary_role:
+        statblock = statblock.with_roles(
+            primary_role=primary_role, additional_roles=additional_roles
+        )
+
+    # Apply immunities and resistances
+    damage_immunities, condition_immunities = parse_damage_immunities_from_yaml(
+        merged_data
+    )
+    if damage_immunities or condition_immunities:
+        statblock = statblock.grant_resistance_or_immunity(
+            immunities=damage_immunities if damage_immunities else None,
+            conditions=condition_immunities if condition_immunities else None,
+        )
+
+    damage_resistances = parse_damage_resistances_from_yaml(merged_data)
+    if damage_resistances:
+        statblock = statblock.grant_resistance_or_immunity(
+            resistances=damage_resistances
+        )
+
+    damage_vulnerabilities = parse_damage_vulnerabilities_from_yaml(merged_data)
+    if damage_vulnerabilities:
+        statblock = statblock.grant_resistance_or_immunity(
+            vulnerabilities=damage_vulnerabilities
+        )
+
+    # Apply skills
+    proficiency_skills, expertise_skills = parse_skills_from_yaml(merged_data)
+    for skill in proficiency_skills:
+        statblock = statblock.grant_proficiency_or_expertise(skill)
+
+    for skill in expertise_skills:
+        # Note: may need different method for expertise vs proficiency
+        statblock = statblock.grant_proficiency_or_expertise(skill)
+
+    # Apply saving throws
+    saves = parse_saving_throws_from_yaml(merged_data)
+    for ability in saves:
+        statblock = statblock.copy(
+            attributes=statblock.attributes.grant_save_proficiency(ability)
+        )
+
+    # Apply secondary damage type
+    secondary_damage_type = parse_secondary_damage_type_from_yaml(
+        merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type"),
+        settings.rng,
+    )
+    # If not found in attacks, check at the top level
+    if not secondary_damage_type:
+        secondary_damage_type = parse_secondary_damage_type_from_yaml(
+            merged_data.get("secondary_damage_type"), settings.rng
+        )
+    if secondary_damage_type:
+        statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
+
+    # Apply spellcasting
+    spellcasting_data = merged_data.get("spellcasting", {})
+    if spellcasting_data:
+        caster_type_name = spellcasting_data.get("caster_type")
+        if caster_type_name and CasterType:
+            caster_type = getattr(CasterType, caster_type_name, None)
+            if caster_type:
+                statblock = statblock.grant_spellcasting(caster_type=caster_type)
+
+    # Apply attack reduction
+    attack_reduction = merged_data.get("attack_reduction")
+    if attack_reduction:
+        statblock = statblock.with_reduced_attacks(reduce_by=attack_reduction)
+
+    # Apply set_attacks from attacks section
+    attacks_data = merged_data.get("attacks", {})
+    set_attacks = attacks_data.get("set_attacks")
+    if set_attacks is not None:
+        statblock = statblock.with_set_attacks(set_attacks)
+
+    return statblock
+
+
 def merge_template_data(
     common_data: Dict[str, Any], monster_data: Dict[str, Any]
 ) -> Dict[str, Any]:
@@ -141,7 +348,7 @@ def merge_template_data(
     return merged
 
 
-def parse_stat_scaling(scaling_info: Any) -> Any:
+def parse_stat_scaling(scaling_info: Any) -> StatScaling | tuple[StatScaling, float]:
     """
     Parse stat scaling information from YAML.
 
@@ -291,7 +498,9 @@ def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Senses]:
     return Senses(**senses_kwargs) if senses_kwargs else None
 
 
-def parse_damage_immunities_from_yaml(data: Dict[str, Any]) -> tuple[set, set]:
+def parse_damage_immunities_from_yaml(
+    data: Dict[str, Any],
+) -> tuple[set[DamageType], set[Condition]]:
     """
     Parse damage immunities and condition immunities from YAML.
 
@@ -319,24 +528,10 @@ def parse_damage_immunities_from_yaml(data: Dict[str, Any]) -> tuple[set, set]:
             if cond:
                 condition_immunities.add(cond)
 
-    # Handle legacy direct formats: damage_immunities: [...], condition_immunities: [...]
-    legacy_damage_immunities = data.get("damage_immunities", [])
-    if legacy_damage_immunities:
-        for dt_name in legacy_damage_immunities:
-            dt = getattr(DamageType, dt_name, None)
-            if dt:
-                damage_immunities.add(dt)
-
-    legacy_condition_immunities = data.get("condition_immunities", [])
-    for condition_name in legacy_condition_immunities:
-        condition = getattr(Condition, condition_name, None)
-        if condition:
-            condition_immunities.add(condition)
-
     return damage_immunities, condition_immunities
 
 
-def parse_damage_resistances_from_yaml(data: Dict[str, Any]) -> set:
+def parse_damage_resistances_from_yaml(data: Dict[str, Any]) -> set[DamageType]:
     """
     Parse damage resistances from YAML.
 
@@ -368,7 +563,7 @@ def parse_damage_resistances_from_yaml(data: Dict[str, Any]) -> set:
     return resistances
 
 
-def parse_damage_vulnerabilities_from_yaml(data: Dict[str, Any]) -> set:
+def parse_damage_vulnerabilities_from_yaml(data: Dict[str, Any]) -> set[DamageType]:
     """
     Parse damage vulnerabilities from YAML.
 
@@ -385,14 +580,6 @@ def parse_damage_vulnerabilities_from_yaml(data: Dict[str, Any]) -> set:
     if vulnerabilities_data:
         damage_vulnerability_names = vulnerabilities_data.get("damage_types", [])
         for dt_name in damage_vulnerability_names:
-            dt = getattr(DamageType, dt_name, None)
-            if dt:
-                vulnerabilities.add(dt)
-
-    # Try legacy direct format: damage_vulnerabilities: [...]
-    legacy_vulnerabilities = data.get("damage_vulnerabilities", [])
-    if legacy_vulnerabilities:
-        for dt_name in legacy_vulnerabilities:
             dt = getattr(DamageType, dt_name, None)
             if dt:
                 vulnerabilities.add(dt)
@@ -427,7 +614,9 @@ def parse_skills_from_yaml(data: Dict[str, Any]) -> tuple[List[Skills], List[Ski
     return proficiency_skills, expertise_skills
 
 
-def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
+def parse_ac_templates_from_yaml(
+    data: Dict[str, Any],
+) -> tuple[List[ArmorClassTemplate], int]:
     """
     Parse AC templates from YAML data.
 
@@ -436,6 +625,7 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
 
     Returns:
         List of ArmorClassTemplate objects
+        int: Modifier to apply to AC
     """
     if "ac_templates" not in data:
         raise ValueError("ac_templates section is required but not found in YAML data")
@@ -448,6 +638,8 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
 
     if isinstance(ac_templates_data, str):
         ac_templates_data = [{"template": ac_templates_data}]
+    elif isinstance(ac_templates_data, dict):
+        ac_templates_data = [ac_templates_data]
 
     templates = []
 
@@ -471,35 +663,27 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
         "Unarmored": Unarmored,
         "UnholyArmor": UnholyArmor,
     }
+    template_map = {k.lower(): v for k, v in template_map.items()}
 
+    modifiers = []
     for template_data in ac_templates_data:
-        if isinstance(template_data, dict):
-            template_name = template_data.get("template")
-            if template_name and template_name in template_map:
-                template_class = template_map[template_name]
+        template_name = template_data["template"].lower()
+        if template_name and template_name in template_map:
+            template_class = template_map[template_name]
+            modifier = template_data.get("modifier", 0)
 
-                # Handle special case for flat template which requires an AC parameter
-                if template_name == "flat":
-                    ac_value = template_data.get(
-                        "ac", 12
-                    )  # Default to 12 if not specified
-                    templates.append(template_class(ac_value))
-                else:
-                    templates.append(template_class)
-        elif isinstance(template_data, str):
-            # Handle simple string format
-            if template_data in template_map:
-                template_class = template_map[template_data]
+            # Handle special case for flat template which requires an AC parameter
+            if template_name == "flat":
+                if "ac" not in template_data:
+                    raise ValueError("'ac' is required for flat template")
+                ac_value = flat(int(template_data["ac"]))
+                templates.append(template_class(ac_value))
+            else:
+                templates.append(template_class)
+                modifiers.append(modifier)
 
-                # Handle special case for flat template which requires an AC parameter
-                if template_data == "flat":
-                    templates.append(
-                        template_class(12)
-                    )  # Default AC 12 for flat template
-                else:
-                    templates.append(template_class)
-
-    return templates
+    modifier = max(modifiers) if len(modifiers) else 0
+    return templates, modifier
 
 
 def parse_saving_throws_from_yaml(data: Dict[str, Any]) -> List[AbilityScore]:
@@ -523,7 +707,9 @@ def parse_saving_throws_from_yaml(data: Dict[str, Any]) -> List[AbilityScore]:
     return saves
 
 
-def parse_secondary_damage_type_from_yaml(secondary_damage_data: Any) -> Optional[Any]:
+def parse_secondary_damage_type_from_yaml(
+    secondary_damage_data: Any, rng: np.random.Generator
+) -> DamageType | None:
     """
     Parse secondary damage type information from YAML.
 
@@ -546,268 +732,10 @@ def parse_secondary_damage_type_from_yaml(secondary_damage_data: Any) -> Optiona
             dt = getattr(DamageType, dt_name, None)
             if dt:
                 damage_types.append(dt)
-        return damage_types if damage_types else None
+
+        return rng.choice(damage_types) if damage_types else None
 
     return None
-
-
-def parse_statblock_from_yaml(
-    yaml_data: dict, settings: GenerationSettings
-) -> BaseStatblock:
-    """
-    Parse a BaseStatblock from YAML template data.
-
-    Args:
-        yaml_data: Full YAML template data
-        settings: Generation settings containing monster key and variant info
-
-    Returns:
-        Configured BaseStatblock
-    """
-    # Get the monster-specific data
-    template_data = yaml_data["template"]
-
-    # Find the monster info from template metadata
-    monster_info = None
-    for monster in template_data.get("monsters", []):
-        if monster["key"] == settings.monster_key:
-            monster_info = monster
-            break
-
-    if not monster_info:
-        raise ValueError(f"Monster '{settings.monster_key}' not found in template")
-
-    # Get common data - only support single "common" section
-    if "common" not in yaml_data:
-        raise ValueError("No 'common' section found in template")
-
-    common_data = yaml_data["common"]
-
-    # Get monster-specific data
-    monster_data = yaml_data.get(settings.monster_key, {})
-
-    # Merge the data
-    merged_data = merge_template_data(common_data, monster_data)
-
-    # Extract basic info
-    name = monster_info["name"]
-    cr = monster_info["cr"]
-    is_legendary = monster_info.get("legendary", False)
-
-    # Parse ability scores
-    stats = parse_abilities_from_yaml(merged_data)
-
-    # Get HP and damage multipliers
-    hp_multiplier = merged_data.get("hp_multiplier", 1.0)
-    damage_multiplier = merged_data.get("damage_multiplier", 1.0)
-
-    # Create base statblock using base_stats function
-    try:
-        statblock = base_stats(
-            name=name,
-            template_key=template_data["key"],
-            variant_key=settings.variant.key,
-            monster_key=settings.monster_key,
-            species_key=settings.species.key if settings.species else None,
-            cr=cr,
-            stats=stats,
-            hp_multiplier=hp_multiplier,
-            damage_multiplier=damage_multiplier,
-        )
-    except Exception as e:
-        raise RuntimeError(f"Failed to create base statblock: {e}")
-
-    # Apply creature types
-    if "creature_type" in merged_data:
-        primary_type, additional_types = parse_creature_types_from_yaml(merged_data)
-        if additional_types:
-            statblock = statblock.with_types(
-                primary_type=primary_type, additional_types=additional_types
-            )
-        else:
-            statblock = statblock.copy(creature_type=primary_type)
-
-    # Apply basic properties
-    modifications = {}
-
-    if "size" in merged_data:
-        modifications["size"] = getattr(Size, merged_data["size"])
-
-    if "languages" in merged_data:
-        modifications["languages"] = merged_data["languages"]
-
-    if "creature_class" in merged_data:
-        modifications["creature_class"] = merged_data["creature_class"]
-
-    if "creature_subtype" in merged_data:
-        modifications["creature_subtype"] = merged_data["creature_subtype"]
-
-    # Apply modifications
-    if modifications:
-        statblock = statblock.copy(**modifications)
-
-    # Apply AC templates
-    ac_templates_data = merged_data.get("ac_templates", [])
-    if ac_templates_data:
-        # Handle new format with templates and modifiers
-        for template_data in ac_templates_data:
-            if isinstance(template_data, dict):
-                template_name = template_data.get("template")
-                modifier = template_data.get("modifier", 0)
-                if template_name:
-                    # Get the template class and apply it with modifier
-                    template_map = {
-                        "ArcaneArmor": ArcaneArmor,
-                        "BerserkersDefense": BerserkersDefense,
-                        "Breastplate": Breastplate,
-                        "ChainShirt": ChainShirt,
-                        "ChainmailArmor": ChainmailArmor,
-                        "flat": flat,
-                        "HideArmor": HideArmor,
-                        "HolyArmor": HolyArmor,
-                        "LeatherArmor": LeatherArmor,
-                        "NaturalArmor": NaturalArmor,
-                        "NaturalPlating": NaturalPlating,
-                        "PatchworkArmor": PatchworkArmor,
-                        "PlateArmor": PlateArmor,
-                        "SplintArmor": SplintArmor,
-                        "StuddedLeatherArmor": StuddedLeatherArmor,
-                        "Unarmored": Unarmored,
-                        "UnholyArmor": UnholyArmor,
-                    }
-                    template_class = template_map.get(template_name)
-                    if template_class:
-                        statblock = statblock.add_ac_template(
-                            template_class, ac_modifier=modifier
-                        )
-    else:
-        # Handle legacy single template format
-        ac_template = merged_data.get("ac_template")
-        if ac_template:
-            ac_modifier = merged_data.get("ac_modifier", 0)
-            template_map = {
-                "ArcaneArmor": ArcaneArmor,
-                "BerserkersDefense": BerserkersDefense,
-                "Breastplate": Breastplate,
-                "ChainShirt": ChainShirt,
-                "ChainmailArmor": ChainmailArmor,
-                "flat": flat,
-                "HideArmor": HideArmor,
-                "HolyArmor": HolyArmor,
-                "LeatherArmor": LeatherArmor,
-                "NaturalArmor": NaturalArmor,
-                "NaturalPlating": NaturalPlating,
-                "PatchworkArmor": PatchworkArmor,
-                "PlateArmor": PlateArmor,
-                "SplintArmor": SplintArmor,
-                "StuddedLeatherArmor": StuddedLeatherArmor,
-                "Unarmored": Unarmored,
-                "UnholyArmor": UnholyArmor,
-            }
-            template_class = template_map.get(ac_template)
-            if template_class:
-                statblock = statblock.add_ac_template(
-                    template_class, ac_modifier=ac_modifier
-                )
-
-    # Apply movement
-    movement = parse_movement_from_yaml(merged_data)
-    if movement:
-        statblock = statblock.copy(speed=movement)
-
-    # Apply senses
-    senses = parse_senses_from_yaml(merged_data)
-    if senses:
-        statblock = statblock.copy(senses=senses)
-
-    # Apply legendary status
-    if is_legendary:
-        legendary_data = merged_data.get("legendary", {})
-        if legendary_data:
-            actions = legendary_data.get("actions", 3)
-            resistances = legendary_data.get("resistances", 3)
-            statblock = statblock.as_legendary(actions=actions, resistances=resistances)
-        else:
-            statblock = statblock.as_legendary()
-
-    # Apply roles
-    primary_role, additional_roles = parse_roles_from_yaml(merged_data)
-    if primary_role:
-        statblock = statblock.with_roles(
-            primary_role=primary_role, additional_roles=additional_roles
-        )
-
-    # Apply immunities and resistances
-    damage_immunities, condition_immunities = parse_damage_immunities_from_yaml(
-        merged_data
-    )
-    if damage_immunities or condition_immunities:
-        statblock = statblock.grant_resistance_or_immunity(
-            immunities=damage_immunities if damage_immunities else None,
-            conditions=condition_immunities if condition_immunities else None,
-        )
-
-    damage_resistances = parse_damage_resistances_from_yaml(merged_data)
-    if damage_resistances:
-        statblock = statblock.grant_resistance_or_immunity(
-            resistances=damage_resistances
-        )
-
-    damage_vulnerabilities = parse_damage_vulnerabilities_from_yaml(merged_data)
-    if damage_vulnerabilities:
-        statblock = statblock.grant_resistance_or_immunity(
-            vulnerabilities=damage_vulnerabilities
-        )
-
-    # Apply skills
-    proficiency_skills, expertise_skills = parse_skills_from_yaml(merged_data)
-    for skill in proficiency_skills:
-        statblock = statblock.grant_proficiency_or_expertise(skill)
-
-    for skill in expertise_skills:
-        # Note: may need different method for expertise vs proficiency
-        statblock = statblock.grant_proficiency_or_expertise(skill)
-
-    # Apply saving throws
-    saves = parse_saving_throws_from_yaml(merged_data)
-    for ability in saves:
-        statblock = statblock.copy(
-            attributes=statblock.attributes.grant_save_proficiency(ability)
-        )
-
-    # Apply secondary damage type
-    secondary_damage_type = parse_secondary_damage_type_from_yaml(
-        merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type")
-    )
-    # If not found in attacks, check at the top level
-    if not secondary_damage_type:
-        secondary_damage_type = parse_secondary_damage_type_from_yaml(
-            merged_data.get("secondary_damage_type")
-        )
-    if secondary_damage_type:
-        statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
-
-    # Apply spellcasting
-    spellcasting_data = merged_data.get("spellcasting", {})
-    if spellcasting_data:
-        caster_type_name = spellcasting_data.get("caster_type")
-        if caster_type_name and CasterType:
-            caster_type = getattr(CasterType, caster_type_name, None)
-            if caster_type:
-                statblock = statblock.grant_spellcasting(caster_type=caster_type)
-
-    # Apply attack reduction
-    attack_reduction = merged_data.get("attack_reduction")
-    if attack_reduction:
-        statblock = statblock.with_reduced_attacks(reduce_by=attack_reduction)
-
-    # Apply set_attacks from attacks section
-    attacks_data = merged_data.get("attacks", {})
-    set_attacks = attacks_data.get("set_attacks")
-    if set_attacks is not None:
-        statblock = statblock.with_set_attacks(set_attacks)
-
-    return statblock
 
 
 def parse_single_attack_from_yaml(
@@ -880,9 +808,6 @@ def parse_attacks_from_yaml(
     Returns:
         List of AttackTemplate objects
     """
-
-    schema.validate_yaml_template(yaml_data)
-
     # Get common data - only support single "common" section
     if "common" not in yaml_data:
         raise ValueError("No 'common' section found in template")

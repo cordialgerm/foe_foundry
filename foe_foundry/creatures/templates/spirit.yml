@@ -37,6 +37,7 @@ common: &common
   creature_class: Spirit
   hp_multiplier: 1.0
   damage_multiplier: 1.0
+  ac_templates: unarmored
   roles:
     primary: Soldier
     additional: []
@@ -68,7 +69,16 @@ ghost:
   <<: *common
 revenant:
   <<: *common
+  ac_templates:
+    - template: flat
+      ac: 13
 wraith:
   <<: *common
+  ac_templates:
+    - template: flat
+      ac: 13
 wraith-shadelord:
   <<: *common
+  ac_templates:
+    - template: flat
+      ac: 13

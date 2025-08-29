@@ -47,3 +47,16 @@ class ArmorClassTemplate(ABC):
     @abstractmethod
     def resolve(self, stats: Any, uses_shield: bool) -> ResolvedArmorClass:
         raise NotImplementedError
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, ArmorClassTemplate):
+            return NotImplemented
+
+        return (
+            self.name == other.name
+            and self.is_armored == other.is_armored
+            and self.is_heavily_armored == other.is_heavily_armored
+        )
+
+    def __hash__(self) -> int:
+        return hash(self.name)
