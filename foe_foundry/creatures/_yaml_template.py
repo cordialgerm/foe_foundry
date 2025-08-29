@@ -155,9 +155,9 @@ def parse_stat_scaling(scaling_info: Any) -> Any:
         # Simple scaling like "Primary"
         return getattr(StatScaling, scaling_info, StatScaling.Default)
     elif isinstance(scaling_info, list) and len(scaling_info) >= 2:
-        # Tuple format like ["Medium", 2]
+        # Tuple format like ["Medium", 2] or ["Medium", 0.5]
         scaling_type = getattr(StatScaling, scaling_info[0], StatScaling.Default)
-        modifier = int(scaling_info[1])
+        modifier = scaling_info[1]  # Keep original type (int or float)
         return (scaling_type, modifier)
     else:
         return StatScaling.Default
@@ -768,6 +768,12 @@ def parse_statblock_from_yaml(
     attack_reduction = merged_data.get("attack_reduction")
     if attack_reduction:
         statblock = statblock.with_reduced_attacks(reduce_by=attack_reduction)
+
+    # Apply set_attacks from attacks section
+    attacks_data = merged_data.get("attacks", {})
+    set_attacks = attacks_data.get("set_attacks")
+    if set_attacks is not None:
+        statblock = statblock.with_set_attacks(set_attacks)
 
     return statblock
 
