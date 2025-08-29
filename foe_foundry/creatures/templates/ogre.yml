@@ -27,7 +27,7 @@ template:
     Forest: Uncommon
     Countryside: Uncommon
     Settlement: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Giant
   size: Large
@@ -134,7 +134,7 @@ ogre-big-brainz:
     secondary:
       base: Claw
       display_name: "Cursed Grasp"
-      damage_scalar: 0.9
+      damage_multiplier: 0.9
   ac_templates:
     - template: UnholyArmor
   caster_type: Arcane

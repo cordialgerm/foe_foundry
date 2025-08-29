@@ -15,7 +15,7 @@ template:
     Hill: Common
     Desert: Uncommon
     Frontier: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Large

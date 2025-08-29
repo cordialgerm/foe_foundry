@@ -33,7 +33,7 @@ template:
     frontier: rare
     plain: uncommon
     hill: rare
-  species: all
+  species: []
 
 common: &common
   creature_type: Humanoid

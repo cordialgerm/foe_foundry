@@ -40,7 +40,7 @@ template:
     affinity: uncommon
   - terrain: mountain
     affinity: rare
-  species: all
+  species: []
 
 common: &common
   creature_type: Humanoid

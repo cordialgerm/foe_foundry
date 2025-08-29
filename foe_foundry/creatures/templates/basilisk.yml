@@ -16,7 +16,7 @@ template:
     Ruin: common
     BlastedBadlands: uncommon
     Frontier: uncommon
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Medium

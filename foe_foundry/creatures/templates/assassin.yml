@@ -27,7 +27,7 @@ template:
     affinity: rare
   - development: wilderness
     affinity: rare
-  species: all
+  species: []
 
 common:
   creature_type: Humanoid

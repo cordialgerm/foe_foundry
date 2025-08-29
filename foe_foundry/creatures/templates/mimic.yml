@@ -16,7 +16,7 @@ template:
     affinity: common
   - development: settlement
     affinity: common
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Medium

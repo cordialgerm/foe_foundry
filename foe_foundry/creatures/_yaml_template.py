@@ -134,9 +134,8 @@ class YamlMonsterTemplate(MonsterTemplate):
                 return PowerSelection([])
                 
         except (ImportError, AttributeError) as e:
-            # If powers module doesn't exist or loadout not found, return empty selection
-            print(f"Warning: Could not load powers for template {template_key}: {e}")
-            return PowerSelection([])
+            # If powers module doesn't exist or loadout not found, raise an error
+            raise ValueError(f"Could not load powers for template {template_key}: {e}") from e
 
 
 # ===== PARSING HELPER FUNCTIONS =====
@@ -446,8 +445,17 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
 
     Returns:
         List of ArmorClassTemplate objects
+
+    Raises:
+        ValueError: If no ac_templates are specified
     """
-    ac_templates_data = data.get("ac_templates", [])
+    if "ac_templates" not in data:
+        raise ValueError("ac_templates section is required but not found in YAML data")
+    
+    ac_templates_data = data["ac_templates"]
+    if not ac_templates_data:
+        raise ValueError("ac_templates cannot be empty - at least one AC template must be specified")
+    
     templates = []
 
     # Map template names to actual template objects

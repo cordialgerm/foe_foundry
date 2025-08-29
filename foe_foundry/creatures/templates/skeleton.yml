@@ -29,7 +29,7 @@ template:
     blasted-badlands: common
     wilderness: uncommon
     settlement: rare
-  species: all
+  species: []
 
 common: &common
   creature_type: Undead
@@ -63,7 +63,7 @@ skeleton:
     main:
       base: Daggers
       display_name: "Bone Blades"
-      damage_scalar: 0.75
+      damage_multiplier: 0.75
     secondary:
       base: Shortbow
       display_name: "Bone Bow"
@@ -83,7 +83,7 @@ skeletal-grave-guard:
     secondary:
       base: Shortbow
       display_name: "Bone Bow"
-      damage_scalar: 0.8
+      damage_multiplier: 0.8
   secondary_damage_type: Necrotic
   set_attacks: 2
   saves: [CON]
@@ -102,7 +102,7 @@ burning-skeleton:
       type: spell
       base: Firebolt
       display_name: "Hurl Flames"
-      damage_scalar: 0.8
+      damage_multiplier: 0.8
   secondary_damage_type: Fire
   set_attacks: 2
   saves: [CON]
@@ -124,7 +124,7 @@ burning-skeletal-champion:
       type: spell
       base: Firebolt
       display_name: "Hurl Flames"
-      damage_scalar: 0.8
+      damage_multiplier: 0.8
   secondary_damage_type: Fire
   set_attacks: 2
   saves: [CON]
@@ -146,7 +146,7 @@ freezing-skeleton:
       type: spell
       base: Frostbolt
       display_name: "Deathly Freeze"
-      damage_scalar: 0.8
+      damage_multiplier: 0.8
   secondary_damage_type: Cold
   set_attacks: 2
   saves: [CON]
@@ -168,7 +168,7 @@ freezing-skeletal-champion:
       type: spell
       base: Frostbolt
       display_name: "Deathly Freeze"
-      damage_scalar: 0.8
+      damage_multiplier: 0.8
   secondary_damage_type: Cold
   set_attacks: 2
   saves: [CON]

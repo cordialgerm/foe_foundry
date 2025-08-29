@@ -19,7 +19,7 @@ template:
     LoftyMountains: Uncommon
     Frontier: Uncommon
     CountryShire: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Large

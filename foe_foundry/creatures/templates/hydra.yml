@@ -16,7 +16,7 @@ template:
     Underground: Common
     Wilderness: Common
     Ruin: Uncommon
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   additional_creature_types: [Fiend]

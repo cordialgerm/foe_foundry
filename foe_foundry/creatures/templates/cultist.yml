@@ -49,7 +49,7 @@ template:
     dungeon: uncommon
     countryside: uncommon
     hellish: uncommon
-  species: all
+  species: []
 
 common: &common
   creature_type: Humanoid

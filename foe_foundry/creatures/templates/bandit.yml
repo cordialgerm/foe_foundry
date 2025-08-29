@@ -30,7 +30,7 @@ template:
     affinity: uncommon
   - region: UrbanTownship
     affinity: uncommon
-  species: all
+  species: []
 
 common: &common
   creature_type: Humanoid

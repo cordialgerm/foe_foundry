@@ -17,7 +17,7 @@ template:
     Frontier: Uncommon
     WartornKingdom: Uncommon
     Settlement: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Large

@@ -15,7 +15,7 @@ template:
     - { region: WartornKingdom, affinity: common }
     - { development: settlement, affinity: uncommon }
     - { region: UrbanTownship, affinity: rare }
-  species: all
+  species: []
 
 common: &common
   creature_type: Humanoid

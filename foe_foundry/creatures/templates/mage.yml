@@ -116,7 +116,7 @@ template:
     affinity: common
   - development: settlement
     affinity: common
-  species: all
+  species: []
 common: &common
   creature_type: Humanoid
   size: Medium
@@ -125,6 +125,8 @@ common: &common
   creature_class: Wizard
   hp_multiplier: 1.0
   damage_multiplier: 1.0
+  ac_templates:
+  - ArcaneArmor
   roles:
     primary: Soldier
     additional: []

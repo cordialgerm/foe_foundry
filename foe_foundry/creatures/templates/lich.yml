@@ -17,7 +17,7 @@ template:
     Deathly: Common
     Urban: Uncommon
     Wilderness: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Undead
   size: Medium
