@@ -56,7 +56,7 @@ class _ZombieTemplate(MonsterTemplate):
             return PowerSelection(loadouts=powers.LoadoutZombieBrute)
         elif settings.monster_key == 'zombie-ogre':
             return PowerSelection(loadouts=powers.LoadoutZombieOgre)
-        elif settings.monster_key == 'zombie-giant':
+        elif settings.monster_key == 'zombie-giant' or settings.monster_key == 'zombie-titan':
             return PowerSelection(loadouts=powers.LoadoutZombieGiant)
         else:
             raise ValueError(f"Unknown monster_key: {settings.monster_key}")

@@ -368,6 +368,38 @@ def parse_damage_resistances_from_yaml(data: Dict[str, Any]) -> set:
     return resistances
 
 
+def parse_damage_vulnerabilities_from_yaml(data: Dict[str, Any]) -> set:
+    """
+    Parse damage vulnerabilities from YAML.
+
+    Args:
+        data: YAML data containing vulnerabilities section
+
+    Returns:
+        Set of DamageType objects for vulnerabilities
+    """
+    vulnerabilities = set()
+
+    # Try new structured format first: vulnerabilities: damage_types: [...]
+    vulnerabilities_data = data.get("vulnerabilities", {})
+    if vulnerabilities_data:
+        damage_vulnerability_names = vulnerabilities_data.get("damage_types", [])
+        for dt_name in damage_vulnerability_names:
+            dt = getattr(DamageType, dt_name, None)
+            if dt:
+                vulnerabilities.add(dt)
+
+    # Try legacy direct format: damage_vulnerabilities: [...]
+    legacy_vulnerabilities = data.get("damage_vulnerabilities", [])
+    if legacy_vulnerabilities:
+        for dt_name in legacy_vulnerabilities:
+            dt = getattr(DamageType, dt_name, None)
+            if dt:
+                vulnerabilities.add(dt)
+
+    return vulnerabilities
+
+
 def parse_skills_from_yaml(data: Dict[str, Any]) -> tuple[List[Skills], List[Skills]]:
     """
     Parse skill proficiencies and expertises from YAML.
@@ -689,6 +721,12 @@ def parse_statblock_from_yaml(
             resistances=damage_resistances
         )
 
+    damage_vulnerabilities = parse_damage_vulnerabilities_from_yaml(merged_data)
+    if damage_vulnerabilities:
+        statblock = statblock.grant_resistance_or_immunity(
+            vulnerabilities=damage_vulnerabilities
+        )
+
     # Apply skills
     proficiency_skills, expertise_skills = parse_skills_from_yaml(merged_data)
     for skill in proficiency_skills:
@@ -709,6 +747,11 @@ def parse_statblock_from_yaml(
     secondary_damage_type = parse_secondary_damage_type_from_yaml(
         merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type")
     )
+    # If not found in attacks, check at the top level
+    if not secondary_damage_type:
+        secondary_damage_type = parse_secondary_damage_type_from_yaml(
+            merged_data.get("secondary_damage_type")
+        )
     if secondary_damage_type:
         statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
 

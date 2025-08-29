@@ -85,6 +85,9 @@ skeletal-grave-guard:
       display_name: "Bone Bow"
       damage_multiplier: 0.8
   secondary_damage_type: Necrotic
+  immunities:
+    damage_types: [Poison, Necrotic]
+    conditions: [Poisoned]
   set_attacks: 2
   saves: [CON]
 

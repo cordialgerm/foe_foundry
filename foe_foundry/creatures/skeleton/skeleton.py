@@ -68,7 +68,7 @@ class _SkeletonTemplate(MonsterTemplate):
             return PowerSelection(loadouts=powers.LoadoutGraveGuard)
         elif settings.monster_key == 'burning-skeleton' or settings.monster_key == 'burning-skeletal-champion':
             return PowerSelection(loadouts=powers.LoadoutBurningSkeleton)
-        elif settings.monster_key == 'freezing-skeleton':
+        elif settings.monster_key == 'freezing-skeleton' or settings.monster_key == 'freezing-skeletal-champion':
             return PowerSelection(loadouts=powers.LoadoutFreezingSkeleton)
         else:
             raise ValueError(f"Unknown monster_key: {settings.monster_key}")
