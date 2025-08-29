@@ -19,7 +19,7 @@ template:
   - Stronghold: Medium
   - Hill: Medium
   - Plain: Medium
-  species: []
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium

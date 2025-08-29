@@ -32,7 +32,7 @@ template:
     affinity: common
   - development: countryside
     affinity: common
-  species: []
+  species: all
 
 common: &common
   creature_type: Humanoid

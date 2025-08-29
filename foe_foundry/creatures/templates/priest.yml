@@ -26,7 +26,7 @@ template:
     urban: uncommon
     wartorn-kingdom: uncommon
     wilderness: rare
-  species: []
+  species: all
 
 common: &common
   creature_type: Humanoid

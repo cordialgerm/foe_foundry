@@ -23,7 +23,7 @@ template:
     Countryside: Uncommon
     Swamp: Uncommon
     Ruin: Uncommon
-  species: []
+  species: all
 common: &common
   creature_type: Humanoid
   size: Medium
