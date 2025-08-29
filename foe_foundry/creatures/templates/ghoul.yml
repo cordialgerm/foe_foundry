@@ -18,7 +18,7 @@ template:
     Urban: uncommon
     Settlement: uncommon
     Swamp: uncommon
-  species: all
+  species: []
 common: &common
   creature_type: Undead
   size: Medium
@@ -87,7 +87,7 @@ ghast-gravelord:
     secondary:
       base: Deathbolt
       display_name: "Dread Bolt"
-      damage_scalar: 0.9
+      damage_multiplier: 0.9
   ac_templates:
   - template: UnholyArmor
   saves:

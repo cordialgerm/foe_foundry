@@ -16,7 +16,7 @@ template:
     Underground: Common
     Wilderness: Common
     Ruin: Uncommon
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   additional_creature_types: [Fiend]
@@ -45,7 +45,7 @@ common: &common
     - template: NaturalArmor
   senses:
     darkvision: 60
-  movement:
+  speed:
     swim: 30
   resistances:
     damage_types: [Acid]

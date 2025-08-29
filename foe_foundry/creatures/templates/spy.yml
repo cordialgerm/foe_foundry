@@ -28,8 +28,9 @@ common: &common
   creature_class: Spy
   hp_multiplier: 0.85
   damage_multiplier: 1.0
-  movement:
-    climb: true
+  speed:
+    walk: 30
+    climb: 30
   roles:
     primary: Ambusher
     additional: [Skirmisher, Artillery]

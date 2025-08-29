@@ -19,7 +19,7 @@ template:
     LoftyMountains: Uncommon
     Frontier: Uncommon
     CountryShire: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -46,7 +46,7 @@ common: &common
     - template: NaturalArmor
   senses:
     darkvision: 60
-  movement:
+  speed:
     walk: 40
     climb: 40
   skills:

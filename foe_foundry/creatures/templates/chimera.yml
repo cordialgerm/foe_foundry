@@ -17,7 +17,7 @@ template:
     Frontier: Uncommon
     WartornKingdom: Uncommon
     Settlement: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -54,7 +54,7 @@ common: &common
   saves: []
   senses:
     darkvision: 60
-  movement:
+  speed:
     walk: 30
     fly: 60
 chimera:

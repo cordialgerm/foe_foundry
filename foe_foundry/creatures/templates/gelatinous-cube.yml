@@ -13,7 +13,7 @@ template:
     Ruin: native
     Dungeon: native
     Wilderness: rare
-  species: all
+  species: []
 common: &common
   creature_type: Ooze
   size: Large
@@ -41,7 +41,7 @@ common: &common
   - template: Unarmored
   senses:
     blindsight: 60
-  movement:
+  speed:
     walk: 20
     climb: 20
   immunities:

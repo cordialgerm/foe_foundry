@@ -20,7 +20,7 @@ template:
     Feywood: uncommon
     Countryside: uncommon
     Settlement: rare
-  species: all
+  species: []
 common: &common
   creature_type: Humanoid
   creature_subtype: Goblinoid

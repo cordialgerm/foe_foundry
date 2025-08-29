@@ -53,7 +53,8 @@ common: &common
   - Common
   - Goblin
   creature_class: Goblin
-  darkvision: 60
+  senses:
+    darkvision: 60
   hp_multiplier: 0.7
   damage_multiplier: 1.0
   roles:

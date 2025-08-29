@@ -17,7 +17,7 @@ template:
     Deathly: Common
     Urban: Uncommon
     Wilderness: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Undead
   size: Medium
@@ -68,7 +68,7 @@ archlich:
   - INT
   - WIS
   - CHA
-  movement:
+  speed:
     walk: 30
     fly: 15
     hover: true

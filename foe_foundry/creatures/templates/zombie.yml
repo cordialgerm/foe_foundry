@@ -30,7 +30,7 @@ template:
     underground: common
     wilderness: uncommon
     settlement: rare
-  species: all
+  species: []
 
 common: &common
   creature_type: Undead

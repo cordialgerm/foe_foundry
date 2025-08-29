@@ -15,7 +15,7 @@ template:
     Hill: Common
     Desert: Uncommon
     Frontier: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Large
@@ -44,7 +44,7 @@ common: &common
       ac_modifier: -1
   senses:
     darkvision: 60
-  movement:
+  speed:
     walk: 30
     fly: 50
   skills:

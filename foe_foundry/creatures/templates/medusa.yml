@@ -15,7 +15,7 @@ template:
     Stronghold: Uncommon
     Wilderness: Uncommon
     Settlement: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Monstrosity
   size: Medium

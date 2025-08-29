@@ -29,11 +29,12 @@ common: &common
   languages:
   - Understands Common but can't speak
   creature_class: Animated Armor
-  fly_speed: 30
-  hover: true
+  speed:
+    walk: 30
   hp_multiplier: 1.0
   damage_multiplier: 1.0
-  blindsight: 60
+  senses:
+    blindsight: 60
   roles:
     primary: Defender
     additional: [Soldier]
@@ -69,6 +70,10 @@ animated-runeplate:
   hp_multiplier: 0.8
   damage_multiplier: 0.9
   uses_shield: true
+  speed:
+    walk: 30
+    fly: 30
+    hover: true
   abilities:
     STR: Primary
     DEX: Medium

@@ -11,7 +11,7 @@ template:
     Wilderness: Common
     Hill: Uncommon
     Ruin: Uncommon
-  species: all
+  species: []
 common: &common
   creature_type: Construct
   size: Large

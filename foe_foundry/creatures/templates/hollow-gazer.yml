@@ -15,7 +15,7 @@ template:
     Stronghold: Uncommon
     Wilderness: Rare
     Settlement: Rare
-  species: all
+  species: []
 common: &common
   creature_type: Aberration
   size: Medium
