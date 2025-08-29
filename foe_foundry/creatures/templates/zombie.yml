@@ -2,25 +2,25 @@ template:
   key: zombie
   name: Zombie
   monsters:
-  - key: zombie
-    name: Zombie
-    cr: 0.25
-  - key: zombie-brute
-    name: Zombie Brute
-    cr: 1
-  - key: zombie-gravewalker
-    name: Zombie Gravewalker
-    cr: 3
-  - key: zombie-ogre
-    name: Zombie Ogre
-    cr: 2
-  - key: zombie-giant
-    name: Zombie Giant
-    cr: 8
-  - key: zombie-titan
-    name: Zombie Titan
-    cr: 12
-    legendary: true
+    - key: zombie
+      name: Zombie
+      cr: 0.25
+    - key: zombie-brute
+      name: Zombie Brute
+      cr: 1
+    - key: zombie-gravewalker
+      name: Zombie Gravewalker
+      cr: 3
+    - key: zombie-ogre
+      name: Zombie Ogre
+      cr: 2
+    - key: zombie-giant
+      name: Zombie Giant
+      cr: 8
+    - key: zombie-titan
+      name: Zombie Titan
+      cr: 12
+      legendary: true
   environments:
     haunted-lands: native
     deathly: native
@@ -35,7 +35,7 @@ template:
 common: &common
   creature_type: Undead
   languages:
-  - "Understands Common but can't speak"
+    - "Understands Common but can't speak"
   creature_class: Zombie
   damage_multiplier: 1.0
   roles:
@@ -48,7 +48,7 @@ common: &common
     INT: [Default, -7]
     WIS: [Default, -4]
     CHA: [Default, -5]
-  armor_class: Unarmored
+  ac_templates: Unarmored
   attacks:
     main:
       type: natural

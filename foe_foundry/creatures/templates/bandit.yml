@@ -2,41 +2,41 @@ template:
   key: bandit
   name: Bandit
   monsters:
-  - key: bandit
-    name: Bandit
-    cr: 0.125
-  - key: bandit-veteran
-    name: Bandit Veteran
-    cr: 1
-  - key: bandit-captain
-    name: Bandit Captain
-    cr: 2
-  - key: bandit-crime-lord
-    name: Bandit Crime Lord
-    cr: 11
-    legendary: true
+    - key: bandit
+      name: Bandit
+      cr: 0.125
+    - key: bandit-veteran
+      name: Bandit Veteran
+      cr: 1
+    - key: bandit-captain
+      name: Bandit Captain
+      cr: 2
+    - key: bandit-crime-lord
+      name: Bandit Crime Lord
+      cr: 11
+      legendary: true
   environments:
-  - development: wilderness
-    affinity: native
-  - development: frontier
-    affinity: native
-  - region: OpenRoads
-    affinity: common
-  - development: countryside
-    affinity: common
-  - region: CountryShire
-    affinity: common
-  - development: ruin
-    affinity: uncommon
-  - region: UrbanTownship
-    affinity: uncommon
+    - development: wilderness
+      affinity: native
+    - development: frontier
+      affinity: native
+    - region: OpenRoads
+      affinity: common
+    - development: countryside
+      affinity: common
+    - region: CountryShire
+      affinity: common
+    - development: ruin
+      affinity: uncommon
+    - region: UrbanTownship
+      affinity: uncommon
   species: all
 
 common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Bandit
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -50,8 +50,8 @@ common: &common
     WIS: Default
     CHA: [Medium, -0.5]
   ac_templates:
-  - template: StuddedLeatherArmor
-    modifier: 0
+    - template: StuddedLeatherArmor
+      modifier: 0
   attacks:
     main:
       base: Shortswords
@@ -108,8 +108,8 @@ bandit-crime-lord:
     primary: Leader
     additional: [Ambusher, Artillery]
   ac_templates:
-  - template: StuddedLeatherArmor
-    modifier: 1
+    - template: StuddedLeatherArmor
+      modifier: 1
   attacks:
     reduced_attacks: 1
     main:

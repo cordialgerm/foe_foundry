@@ -2,12 +2,12 @@ template:
   key: basilisk
   name: Basilisk
   monsters:
-  - key: basilisk
-    name: Basilisk
-    cr: 3
-  - key: basilisk-broodmother
-    name: Basilisk Broodmother
-    cr: 8
+    - key: basilisk
+      name: Basilisk
+      cr: 3
+    - key: basilisk-broodmother
+      name: Basilisk Broodmother
+      cr: 8
   environments:
     Underground: native
     LoftyMountains: native
@@ -26,13 +26,13 @@ common: &common
   damage_multiplier: 1.0
   roles:
     primary: Bruiser
-    additional: 
-    - Controller
+    additional:
+      - Controller
   abilities:
     STR: Primary
     DEX: [Default, -2]
     INT: [Default, -6]
-    WIS: [Medium, -4] 
+    WIS: [Medium, -4]
     CHA: [Default, -3]
   attacks:
     main:
@@ -40,7 +40,7 @@ common: &common
       display_name: "Venomous Bite"
       secondary_damage_type: Poison
   ac_templates:
-  - template: NaturalPlating
+    - template: NaturalPlating
   senses:
     darkvision: 60
   skills:
@@ -52,6 +52,6 @@ basilisk:
 basilisk-broodmother:
   <<: *common
   saves:
-  - CON
-  - STR
-  - WIS
+    - CON
+    - STR
+    - WIS

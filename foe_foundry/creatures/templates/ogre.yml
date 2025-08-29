@@ -2,21 +2,21 @@ template:
   key: ogre
   name: Ogre
   monsters:
-  - key: ogre
-    name: Ogre
-    cr: 2
-  - key: ogre-wallsmasha
-    name: Ogre Wallsmasha
-    cr: 4
-  - key: ogre-burnbelcha
-    name: Ogre Burnbelcha
-    cr: 4
-  - key: ogre-chaincrakka
-    name: Ogre Chaincrakka
-    cr: 4
-  - key: ogre-big-brainz
-    name: Ogre Big Brainz
-    cr: 7
+    - key: ogre
+      name: Ogre
+      cr: 2
+    - key: ogre-wallsmasha
+      name: Ogre Wallsmasha
+      cr: 4
+    - key: ogre-burnbelcha
+      name: Ogre Burnbelcha
+      cr: 4
+    - key: ogre-chaincrakka
+      name: Ogre Chaincrakka
+      cr: 4
+    - key: ogre-big-brainz
+      name: Ogre Big Brainz
+      cr: 7
   environments:
     WartornKingdom: Native
     Hill: Native
@@ -32,7 +32,7 @@ common: &common
   creature_type: Giant
   size: Large
   languages:
-  - Common
+    - Common
   creature_class: Ogre
   hp_multiplier: 1.2
   damage_multiplier: 1.0
@@ -87,8 +87,8 @@ ogre-wallsmasha:
     WIS: [NoScaling, -3]
     CHA: [NoScaling, -3]
   saves:
-  - STR
-  - CON
+    - STR
+    - CON
 ogre-burnbelcha:
   <<: *common
   abilities:
@@ -99,8 +99,8 @@ ogre-burnbelcha:
     WIS: [NoScaling, -3]
     CHA: [NoScaling, -3]
   saves:
-  - STR
-  - CON
+    - STR
+    - CON
 ogre-chaincrakka:
   <<: *common
   abilities:
@@ -111,8 +111,8 @@ ogre-chaincrakka:
     WIS: [NoScaling, -3]
     CHA: [NoScaling, -3]
   saves:
-  - STR
-  - CON
+    - STR
+    - CON
 ogre-big-brainz:
   <<: *common
   hp_multiplier: 1.0
@@ -143,6 +143,6 @@ ogre-big-brainz:
     fly: 30
     hover: true
   saves:
-  - CON
-  - WIS
-  - CHA
+    - CON
+    - WIS
+    - CHA

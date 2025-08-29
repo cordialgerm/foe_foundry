@@ -2,13 +2,13 @@ template:
   key: hydra
   name: Hydra
   monsters:
-  - key: hydra
-    name: Hydra
-    cr: 8
-  - key: foulblood-hydra
-    name: Foulblood Hydra
-    cr: 12
-    legendary: true
+    - key: hydra
+      name: Hydra
+      cr: 8
+    - key: foulblood-hydra
+      name: Foulblood Hydra
+      cr: 12
+      legendary: true
   environments:
     Swamp: Native
     Lake: Native
@@ -55,10 +55,10 @@ common: &common
   multiattack_custom_text: "The hydra makes one attack for each of its heads"
   skills:
     proficiency:
-    - Perception
-    - Initiative
+      - Perception
+      - Initiative
     expertise:
-    - Perception
+      - Perception
   saves: []
 hydra:
   <<: *common
@@ -66,6 +66,6 @@ hydra:
 foulblood-hydra:
   <<: *common
   saves:
-  - CON
-  - STR
-  - WIS
+    - CON
+    - STR
+    - WIS

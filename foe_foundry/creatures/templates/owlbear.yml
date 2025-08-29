@@ -2,15 +2,15 @@ template:
   key: owlbear
   name: Owlbear
   monsters:
-  - key: owlbear
-    name: Owlbear
-    cr: 3
-  - key: savage-owlbear
-    name: Savage Owlbear
-    cr: 7
-  - key: owlbear-cub
-    name: Owlbear Cub
-    cr: 0.125
+    - key: owlbear
+      name: Owlbear
+      cr: 3
+    - key: savage-owlbear
+      name: Savage Owlbear
+      cr: 7
+    - key: owlbear-cub
+      name: Owlbear Cub
+      cr: 0.125
   environments:
     TangledForest: Native
     Forest: Native
@@ -51,9 +51,9 @@ common: &common
     climb: 40
   skills:
     proficiency:
-    - Perception
+      - Perception
     expertise:
-    - Perception
+      - Perception
   saves: []
 owlbear:
   <<: *common
@@ -80,13 +80,13 @@ savage-owlbear:
     CHA: [Default, -3]
   skills:
     proficiency:
-    - Perception
-    - Initiative
+      - Perception
+      - Initiative
     expertise:
-    - Perception
+      - Perception
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS
 owlbear-cub:
   <<: *common
   size: Small

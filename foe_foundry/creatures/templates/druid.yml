@@ -2,19 +2,19 @@ template:
   key: druid
   name: Druid
   monsters:
-  - key: druid
-    name: Druid
-    cr: 2
-  - key: druid-greenwarden
-    name: Druid Greenwarden
-    cr: 6
-  - key: archdruid-of-the-old-way
-    name: Archdruid of the Old Way
-    cr: 12
-  - key: archdruid-of-the-first-grove
-    name: Archdruid of the First Grove
-    cr: 16
-    legendary: true
+    - key: druid
+      name: Druid
+      cr: 2
+    - key: druid-greenwarden
+      name: Druid Greenwarden
+      cr: 6
+    - key: archdruid-of-the-old-way
+      name: Archdruid of the Old Way
+      cr: 12
+    - key: archdruid-of-the-first-grove
+      name: Archdruid of the First Grove
+      cr: 16
+      legendary: true
   environments:
     Forest: Native
     Wilderness: Native
@@ -28,9 +28,9 @@ common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
-  - Druidic
-  - Sylvan
+    - Common
+    - Druidic
+    - Sylvan
   creature_class: Druid
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -55,9 +55,9 @@ common: &common
   uses_shield: false
   skills:
     proficiency:
-    - Medicine
-    - Nature
-    - Perception
+      - Medicine
+      - Nature
+      - Perception
     expertise: []
   saves: []
 druid:
@@ -69,10 +69,10 @@ druid-greenwarden:
 archdruid-of-the-old-way:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS
 archdruid-of-the-first-grove:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS

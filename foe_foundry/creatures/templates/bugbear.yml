@@ -2,15 +2,15 @@ template:
   key: bugbear
   name: Bugbear
   monsters:
-  - key: bugbear
-    name: Bugbear
-    cr: 1
-  - key: bugbear-brute
-    name: Bugbear Brute
-    cr: 3
-  - key: bugbear-shadowstalker
-    name: Bugbear Shadowstalker
-    cr: 5
+    - key: bugbear
+      name: Bugbear
+      cr: 1
+    - key: bugbear-brute
+      name: Bugbear Brute
+      cr: 3
+    - key: bugbear-shadowstalker
+      name: Bugbear Shadowstalker
+      cr: 5
   environments:
     TangledForest: native
     Underground: native
@@ -25,18 +25,18 @@ common: &common
   creature_type: Humanoid
   creature_subtype: Goblinoid
   additional_types:
-  - Fey
+    - Fey
   size: Medium
   languages:
-  - Common
-  - Goblin
+    - Common
+    - Goblin
   creature_class: Bugbear
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   roles:
     primary: Ambusher
-    additional: 
-    - Bruiser
+    additional:
+      - Bruiser
   abilities:
     STR: [Primary, 0.5]
     DEX: [Medium, 3]
@@ -49,24 +49,24 @@ common: &common
       display_name: "Skull Smash"
       reach: 10
   ac_templates:
-  - template: HideArmor
+    - template: HideArmor
   senses:
     darkvision: 60
   skills:
     proficiency:
-    - Stealth
+      - Stealth
     expertise:
-    - Stealth
+      - Stealth
   saves: []
 bugbear:
   <<: *common
 bugbear-brute:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS
 bugbear-shadowstalker:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS

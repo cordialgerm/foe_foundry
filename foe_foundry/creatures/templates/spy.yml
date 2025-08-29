@@ -2,29 +2,29 @@ template:
   key: spy
   name: Spy
   monsters:
-  - key: spy
-    name: Spy
-    cr: 1
-  - key: elite-spy
-    name: Elite Spy
-    cr: 4
-  - key: spy-master
-    name: Spy Master
-    cr: 10
-    legendary: true
+    - key: spy
+      name: Spy
+      cr: 1
+    - key: elite-spy
+      name: Elite Spy
+      cr: 4
+    - key: spy-master
+      name: Spy Master
+      cr: 10
+      legendary: true
   environments:
-  - Urban: High
-  - Settlement: High
-  - Countryside: Medium
-  - Stronghold: Medium
-  - Hill: Medium
-  - Plain: Medium
+    - Urban: High
+    - Settlement: High
+    - Countryside: Medium
+    - Stronghold: Medium
+    - Hill: Medium
+    - Plain: Medium
   species: all
 common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Spy
   hp_multiplier: 0.85
   damage_multiplier: 1.0
@@ -52,13 +52,13 @@ common: &common
     set_attacks: reduced
   skills:
     proficiency:
-    - Deception
-    - Insight
-    - Investigation
-    - Perception
-    - SleightOfHand
-    - Stealth
-    - Initiative
+      - Deception
+      - Insight
+      - Investigation
+      - Perception
+      - SleightOfHand
+      - Stealth
+      - Initiative
     expertise: []
 spy:
   <<: *common
@@ -68,41 +68,41 @@ elite-spy:
   ac_modifier: 1
   skills:
     proficiency:
-    - Deception
-    - Insight
-    - Investigation
-    - Perception
-    - SleightOfHand
-    - Stealth
-    - Initiative
+      - Deception
+      - Insight
+      - Investigation
+      - Perception
+      - SleightOfHand
+      - Stealth
+      - Initiative
     expertise:
-    - Stealth
-    - Perception
-    - Initiative
+      - Stealth
+      - Perception
+      - Initiative
   saves:
-  - CON
-  - DEX
-  - INT
-  - WIS
+    - CON
+    - DEX
+    - INT
+    - WIS
 spy-master:
   <<: *common
   ac_template: StuddedLeatherArmor
   ac_modifier: 2
   skills:
     proficiency:
-    - Deception
-    - Insight
-    - Investigation
-    - Perception
-    - SleightOfHand
-    - Stealth
-    - Initiative
+      - Deception
+      - Insight
+      - Investigation
+      - Perception
+      - SleightOfHand
+      - Stealth
+      - Initiative
     expertise:
-    - Stealth
-    - Perception
-    - Initiative
+      - Stealth
+      - Perception
+      - Initiative
   saves:
-  - CON
-  - DEX
-  - INT
-  - WIS
+    - CON
+    - DEX
+    - INT
+    - WIS

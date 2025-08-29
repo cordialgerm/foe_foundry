@@ -2,38 +2,38 @@ template:
   key: assassin
   name: Assassin
   monsters:
-  - key: contract-killer
-    name: Contract Killer
-    cr: 4
-  - key: assassin
-    name: Assassin
-    cr: 8
-  - key: assassin-legend
-    name: Assassin Legend
-    cr: 12
-    legendary: true
+    - key: contract-killer
+      name: Contract Killer
+      cr: 4
+    - key: assassin
+      name: Assassin
+      cr: 8
+    - key: assassin-legend
+      name: Assassin Legend
+      cr: 12
+      legendary: true
   environments:
-  - region: UrbanTownship
-    affinity: native
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
-  - region: CountryShire
-    affinity: uncommon
-  - development: stronghold
-    affinity: uncommon
-  - development: frontier
-    affinity: rare
-  - development: wilderness
-    affinity: rare
+    - region: UrbanTownship
+      affinity: native
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
+    - region: CountryShire
+      affinity: uncommon
+    - development: stronghold
+      affinity: uncommon
+    - development: frontier
+      affinity: rare
+    - development: wilderness
+      affinity: rare
   species: all
 
 common:
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Assassin
   speed:
     walk: 30
@@ -50,8 +50,8 @@ common:
     WIS: [Medium, 1]
     CHA: [Medium, 1]
   ac_templates:
-  - template: StuddedLeatherArmor
-    modifier: 0
+    - template: StuddedLeatherArmor
+      modifier: 0
   attacks:
     set_attacks: 2
     main:
@@ -70,7 +70,6 @@ common:
   saves: []
 
 contract-killer:
-
   attacks:
     set_attacks: 1
     main:
@@ -85,17 +84,15 @@ contract-killer:
       secondary_damage_type: Poison
 
 assassin:
-
   skills:
     proficiency: [Acrobatics, Perception, Stealth, Initiative]
     expertise: [Stealth, Perception, Initiative]
   saves: [DEX, INT]
 
 assassin-legend:
-
   ac_templates:
-  - template: StuddedLeatherArmor
-    modifier: 1
+    - template: StuddedLeatherArmor
+      modifier: 1
   skills:
     proficiency: [Acrobatics, Perception, Stealth, Initiative]
     expertise: [Stealth, Perception, Initiative]

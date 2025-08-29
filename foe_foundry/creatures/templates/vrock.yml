@@ -2,21 +2,21 @@ template:
   key: vrock
   name: Vrock
   monsters:
-  - key: vrock
-    name: Vrock
-    cr: 6
+    - key: vrock
+      name: Vrock
+      cr: 6
   environments:
-  - Hellish: High
-  - Deathly: Medium
-  - Ruin: High
-  - Mountain: Medium
+    - Hellish: High
+    - Deathly: Medium
+    - Ruin: High
+    - Mountain: Medium
   species: []
 common: &common
   creature_type: Fiend
   creature_subtype: Demon
   size: Large
   languages:
-  - "Abyssal; telepathy 120 ft."
+    - "Abyssal; telepathy 120 ft."
   creature_class: Vrock
   hp_multiplier: 1.2
   damage_multiplier: 1.0
@@ -26,7 +26,7 @@ common: &common
     walk: 40
     fly: 60
   ac_templates:
-  - template: UnholyArmor
+    - template: UnholyArmor
   roles:
     primary: Skirmisher
     additional: [Controller]
@@ -47,9 +47,9 @@ common: &common
     proficiency: []
     expertise: []
   saves:
-  - DEX
-  - WIS
-  - CHA
+    - DEX
+    - WIS
+    - CHA
   immunities:
     damage_types: [Poison]
     conditions: [Poisoned]

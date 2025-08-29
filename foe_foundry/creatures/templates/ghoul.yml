@@ -2,15 +2,15 @@ template:
   key: ghoul
   name: Ghoul
   monsters:
-  - key: ghoul
-    name: Ghoul
-    cr: 1
-  - key: ghast
-    name: Ghast
-    cr: 2
-  - key: ghast-gravelord
-    name: Ghast Gravelord
-    cr: 6
+    - key: ghoul
+      name: Ghoul
+      cr: 1
+    - key: ghast
+      name: Ghast
+      cr: 2
+    - key: ghast-gravelord
+      name: Ghast Gravelord
+      cr: 6
   environments:
     Underground: native
     Ruin: native
@@ -23,14 +23,14 @@ common: &common
   creature_type: Undead
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Ghoul
   hp_multiplier: 0.825
   damage_multiplier: 1.0
   roles:
     primary: Bruiser
-    additional: 
-    - Skirmisher
+    additional:
+      - Skirmisher
   abilities:
     STR: [Medium, 2]
     DEX: Primary
@@ -44,15 +44,15 @@ common: &common
       display_name: "Paralytic Claw"
       secondary_damage_type: Poison
   ac_templates:
-  - template: Unarmored
+    - template: Unarmored
   senses:
     darkvision: 60
   immunities:
     damage_types:
-    - Poison
+      - Poison
     conditions:
-    - Poisoned
-    - Charmed
+      - Poisoned
+      - Charmed
   skills:
     proficiency: []
     expertise: []
@@ -62,16 +62,16 @@ ghoul:
 ghast:
   <<: *common
   saves:
-  - WIS
+    - WIS
   resistances:
     damage_types:
-    - Necrotic
+      - Necrotic
 ghast-gravelord:
   <<: *common
   roles:
     primary: Leader
-    additional: 
-    - Skirmisher
+    additional:
+      - Skirmisher
   abilities:
     STR: [Medium, -1]
     DEX: [Medium, 2]
@@ -89,11 +89,11 @@ ghast-gravelord:
       display_name: "Dread Bolt"
       damage_multiplier: 0.9
   ac_templates:
-  - template: UnholyArmor
+    - template: UnholyArmor
   saves:
-  - WIS
+    - WIS
   resistances:
     damage_types:
-    - Necrotic
+      - Necrotic
   spellcasting:
     caster_type: Arcane

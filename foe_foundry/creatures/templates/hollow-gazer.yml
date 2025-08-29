@@ -2,12 +2,12 @@ template:
   key: hollow-gazer
   name: Hollow Gazer
   monsters:
-  - key: hollow-gazer
-    name: Hollow Gazer
-    cr: 2
-  - key: hollow-gazer-of-ruin
-    name: Hollow Gazer of Ruin
-    cr: 6
+    - key: hollow-gazer
+      name: Hollow Gazer
+      cr: 2
+    - key: hollow-gazer-of-ruin
+      name: Hollow Gazer of Ruin
+      cr: 6
   environments:
     Underground: Native
     Ruin: Native
@@ -20,7 +20,7 @@ common: &common
   creature_type: Aberration
   size: Medium
   languages:
-  - Almost Comprehensible Gibberish
+    - Almost Comprehensible Gibberish
   creature_class: Hollow Gazer
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -48,11 +48,11 @@ common: &common
     damage_types: [Psychic]
   skills:
     proficiency:
-    - Stealth
+      - Stealth
     expertise:
-    - Arcana
-    - Insight
-    - Perception
+      - Arcana
+      - Insight
+      - Perception
   saves: []
 hollow-gazer:
   <<: *common
@@ -60,5 +60,5 @@ hollow-gazer:
 hollow-gazer-of-ruin:
   <<: *common
   saves:
-  - CON
-  - WIS
+    - CON
+    - WIS

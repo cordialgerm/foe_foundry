@@ -2,9 +2,9 @@ template:
   key: gorgon
   name: Gorgon
   monsters:
-  - key: gorgon
-    name: Gorgon
-    cr: 5
+    - key: gorgon
+      name: Gorgon
+      cr: 5
   environments:
     Mountain: Native
     Forest: Common
@@ -44,9 +44,9 @@ common: &common
     conditions: [Exhaustion, Petrified]
   skills:
     proficiency:
-    - Perception
+      - Perception
     expertise:
-    - Perception
+      - Perception
   saves: []
 gorgon:
   <<: *common

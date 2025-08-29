@@ -2,35 +2,35 @@ template:
   key: golem
   name: Golem
   monsters:
-  - key: stone-golem
-    name: Stone Golem
-    cr: 10
-  - key: clay-golem
-    name: Clay Golem
-    cr: 9
-  - key: iron-golem
-    name: Iron Golem
-    cr: 16
-  - key: flesh-golem
-    name: Flesh Golem
-    cr: 5
-  - key: ice-golem
-    name: Ice Golem
-    cr: 7
-  - key: shield-guardian
-    name: Shield Guardian
-    cr: 7
+    - key: stone-golem
+      name: Stone Golem
+      cr: 10
+    - key: clay-golem
+      name: Clay Golem
+      cr: 9
+    - key: iron-golem
+      name: Iron Golem
+      cr: 16
+    - key: flesh-golem
+      name: Flesh Golem
+      cr: 5
+    - key: ice-golem
+      name: Ice Golem
+      cr: 7
+    - key: shield-guardian
+      name: Shield Guardian
+      cr: 7
   environments:
-  - development: urban
-    affinity: common
-  - development: settlement
-    affinity: common
+    - development: urban
+      affinity: common
+    - development: settlement
+      affinity: common
   species: []
 common: &common
   creature_type: Construct
   size: Large
   languages:
-  - Understands commands given in any language but can't speak
+    - Understands commands given in any language but can't speak
   creature_class: Golem
   hp_multiplier: 1.0
   damage_multiplier: 1.0

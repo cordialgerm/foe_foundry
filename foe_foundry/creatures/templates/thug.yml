@@ -2,28 +2,28 @@ template:
   key: thug
   name: Thug
   monsters:
-  - key: thug
-    name: Thug
-    cr: 0.5
-  - key: veteran-thug
-    name: Veteran Thug
-    cr: 2
-  - key: elite-thug
-    name: Elite Thug
-    cr: 4
-  - key: brawler
-    name: Brawler
-    cr: 1
-  - key: thug-boss
-    name: Thug Boss
-    cr: 2
-  - key: thug-overboss
-    name: Thug Overboss
-    cr: 4
-  - key: thug-legend
-    name: Thug Legend
-    cr: 8
-    legendary: true
+    - key: thug
+      name: Thug
+      cr: 0.5
+    - key: veteran-thug
+      name: Veteran Thug
+      cr: 2
+    - key: elite-thug
+      name: Elite Thug
+      cr: 4
+    - key: brawler
+      name: Brawler
+      cr: 1
+    - key: thug-boss
+      name: Thug Boss
+      cr: 2
+    - key: thug-overboss
+      name: Thug Overboss
+      cr: 4
+    - key: thug-legend
+      name: Thug Legend
+      cr: 8
+      legendary: true
   environments:
     urban-township: common
     urban: common
@@ -39,7 +39,7 @@ common: &common
   creature_type: Humanoid
   size: Medium
   languages:
-  - Common
+    - Common
   creature_class: Thug
   hp_multiplier: 1.0
   damage_multiplier: 1.0
@@ -59,18 +59,18 @@ thug:
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class: LeatherArmor
+  ac_templates: LeatherArmor
   attacks:
     main:
       base: Maul
     additional:
-    - name: "Heavy Crossbow"
-      scalar: 0.7
-      attack_type: RangedWeapon
-      range: 100
-      damage_type: Piercing
-      die: d10
-      replaces_multiattack: 2
+      - name: "Heavy Crossbow"
+        scalar: 0.7
+        attack_type: RangedWeapon
+        range: 100
+        damage_type: Piercing
+        die: d10
+        replaces_multiattack: 2
   primary_damage_type: Bludgeoning
   saves: []
 
@@ -79,18 +79,18 @@ veteran-thug:
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class: LeatherArmor
+  ac_templates: LeatherArmor
   attacks:
     main:
       base: Maul
     additional:
-    - name: "Heavy Crossbow"
-      scalar: 0.7
-      attack_type: RangedWeapon
-      range: 100
-      damage_type: Piercing
-      die: d10
-      replaces_multiattack: 2
+      - name: "Heavy Crossbow"
+        scalar: 0.7
+        attack_type: RangedWeapon
+        range: 100
+        damage_type: Piercing
+        die: d10
+        replaces_multiattack: 2
   primary_damage_type: Bludgeoning
   saves: [STR]
 
@@ -99,30 +99,30 @@ elite-thug:
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class: 
+  ac_templates:
     base: LeatherArmor
     modifier: 1
   attacks:
     main:
       base: Maul
     additional:
-    - name: "Heavy Crossbow"
-      scalar: 0.7
-      attack_type: RangedWeapon
-      range: 100
-      damage_type: Piercing
-      die: d10
-      replaces_multiattack: 2
+      - name: "Heavy Crossbow"
+        scalar: 0.7
+        attack_type: RangedWeapon
+        range: 100
+        damage_type: Piercing
+        die: d10
+        replaces_multiattack: 2
   primary_damage_type: Bludgeoning
   saves: [STR, CON, CHA]
 
-# Brawler variant 
+# Brawler variant
 brawler:
   <<: *common
   roles:
     primary: Bruiser
     additional: [Bruiser]
-  armor_class: LeatherArmor
+  ac_templates: LeatherArmor
   attacks:
     main:
       type: natural
@@ -136,18 +136,18 @@ thug-boss:
   roles:
     primary: Leader
     additional: [Bruiser]
-  armor_class: SplintArmor
+  ac_templates: SplintArmor
   attacks:
     main:
       base: Maul
     additional:
-    - name: "Heavy Crossbow"
-      scalar: 0.7
-      attack_type: RangedWeapon
-      range: 100
-      damage_type: Piercing
-      die: d10
-      replaces_multiattack: 2
+      - name: "Heavy Crossbow"
+        scalar: 0.7
+        attack_type: RangedWeapon
+        range: 100
+        damage_type: Piercing
+        die: d10
+        replaces_multiattack: 2
   primary_damage_type: Bludgeoning
   saves: [STR]
 
@@ -156,20 +156,20 @@ thug-overboss:
   roles:
     primary: Leader
     additional: [Bruiser]
-  armor_class:
+  ac_templates:
     base: SplintArmor
     modifier: 1
   attacks:
     main:
       base: Maul
     additional:
-    - name: "Heavy Crossbow"
-      scalar: 0.7
-      attack_type: RangedWeapon
-      range: 100
-      damage_type: Piercing
-      die: d10
-      replaces_multiattack: 2
+      - name: "Heavy Crossbow"
+        scalar: 0.7
+        attack_type: RangedWeapon
+        range: 100
+        damage_type: Piercing
+        die: d10
+        replaces_multiattack: 2
   primary_damage_type: Bludgeoning
   saves: [STR, CON, CHA]
 
@@ -178,20 +178,20 @@ thug-legend:
   roles:
     primary: Leader
     additional: [Bruiser]
-  armor_class:
+  ac_templates:
     base: SplintArmor
     modifier: 1
   attacks:
     main:
       base: Maul
     additional:
-    - name: "Heavy Crossbow"
-      scalar: 0.7
-      attack_type: RangedWeapon
-      range: 100
-      damage_type: Piercing
-      die: d10
-      replaces_multiattack: 2
+      - name: "Heavy Crossbow"
+        scalar: 0.7
+        attack_type: RangedWeapon
+        range: 100
+        damage_type: Piercing
+        die: d10
+        replaces_multiattack: 2
   primary_damage_type: Bludgeoning
   skills:
     proficiency: [Intimidation, Initiative]
