@@ -312,9 +312,11 @@ def parse_statblock_from_yaml(
     if attack_reduction:
         statblock = statblock.with_reduced_attacks(reduce_by=attack_reduction)
 
-    # Apply set_attacks from attacks section
+    # Apply set_attacks from attacks section or top level
     attacks_data = merged_data.get("attacks", {})
     set_attacks = attacks_data.get("set_attacks")
+    if set_attacks is None:
+        set_attacks = merged_data.get("set_attacks")
     if set_attacks is not None:
         statblock = statblock.with_set_attacks(set_attacks)
 

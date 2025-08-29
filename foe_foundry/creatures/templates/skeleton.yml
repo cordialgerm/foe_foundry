@@ -118,6 +118,7 @@ burning-skeletal-champion:
   roles:
     primary: Soldier
     additional: [Leader]
+  damage_multiplier: 1.5
   ac_templates: Breastplate
   attacks:
     main:
