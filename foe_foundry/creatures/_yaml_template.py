@@ -437,37 +437,13 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
     Returns:
         List of ArmorClassTemplate objects
     """
-    # Handle ac_templates format
-    if "ac_templates" in data:
-        ac_templates_data = data["ac_templates"]
-        if not ac_templates_data:
-            raise ValueError(
-                "ac_templates cannot be empty - at least one AC template must be specified"
-            )
-    # Handle legacy format: armor_class
-    elif "armor_class" in data:
-        armor_class = data["armor_class"]
-        if isinstance(armor_class, str):
-            # Convert single string to list format for consistent processing
-            ac_templates_data = [armor_class]
-        elif isinstance(armor_class, dict):
-            # Handle dict format: {"base": "LeatherArmor", "modifier": 1}
-            base_template = armor_class.get("base")
-            if base_template:
-                # For now, just use the base template and ignore modifier
-                # TODO: Handle modifier properly in the future
-                ac_templates_data = [base_template]
-            else:
-                raise ValueError("armor_class dict must have a 'base' field")
-        elif armor_class is None:
-            # Handle empty armor_class (YAML None)
-            ac_templates_data = ["Unarmored"]
-        else:
-            raise ValueError(f"armor_class must be a string or dict, got {type(armor_class)}")
-    else:
-        # No AC template specified - this is required
+    if "ac_templates" not in data:
+        raise ValueError("ac_templates section is required but not found in YAML data")
+
+    ac_templates_data = data["ac_templates"]
+    if not ac_templates_data:
         raise ValueError(
-            "At least one AC template must be specified. Use 'ac_templates' with a list of template objects."
+            "ac_templates cannot be empty - at least one AC template must be specified"
         )
 
     if isinstance(ac_templates_data, str):
@@ -501,10 +477,12 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
             template_name = template_data.get("template")
             if template_name and template_name in template_map:
                 template_class = template_map[template_name]
-                
+
                 # Handle special case for flat template which requires an AC parameter
                 if template_name == "flat":
-                    ac_value = template_data.get("ac", 12)  # Default to 12 if not specified
+                    ac_value = template_data.get(
+                        "ac", 12
+                    )  # Default to 12 if not specified
                     templates.append(template_class(ac_value))
                 else:
                     templates.append(template_class)
@@ -512,10 +490,12 @@ def parse_ac_templates_from_yaml(data: Dict[str, Any]) -> List[Any]:
             # Handle simple string format
             if template_data in template_map:
                 template_class = template_map[template_data]
-                
+
                 # Handle special case for flat template which requires an AC parameter
                 if template_data == "flat":
-                    templates.append(template_class(12))  # Default AC 12 for flat template
+                    templates.append(
+                        template_class(12)
+                    )  # Default AC 12 for flat template
                 else:
                     templates.append(template_class)
 
@@ -697,7 +677,9 @@ def parse_statblock_from_yaml(
                     }
                     template_class = template_map.get(template_name)
                     if template_class:
-                        statblock = statblock.add_ac_template(template_class, ac_modifier=modifier)
+                        statblock = statblock.add_ac_template(
+                            template_class, ac_modifier=modifier
+                        )
     else:
         # Handle legacy single template format
         ac_template = merged_data.get("ac_template")
@@ -724,7 +706,9 @@ def parse_statblock_from_yaml(
             }
             template_class = template_map.get(ac_template)
             if template_class:
-                statblock = statblock.add_ac_template(template_class, ac_modifier=ac_modifier)
+                statblock = statblock.add_ac_template(
+                    template_class, ac_modifier=ac_modifier
+                )
 
     # Apply movement
     movement = parse_movement_from_yaml(merged_data)
