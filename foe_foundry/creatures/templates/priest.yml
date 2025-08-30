@@ -54,7 +54,6 @@ acolyte:
   <<: *common
   ac_templates: ChainShirt
   attacks:
-    set_attacks: 2
     main:
       base: MaceAndShield
       secondary_damage_type: Radiant

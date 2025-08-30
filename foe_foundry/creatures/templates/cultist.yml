@@ -159,7 +159,7 @@ aberrant-cultist:
     main:
       base: Tentacle
       display_name: "Aberrant Tentacle"
-  secondary_damage_type: Psychic
+      secondary_damage_type: Psychic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -175,7 +175,7 @@ aberrant-cultist-grand-master:
     main:
       base: Tentacle
       display_name: "Aberrant Tentacle"
-  secondary_damage_type: Psychic
+      secondary_damage_type: Psychic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -192,7 +192,7 @@ death-cultist-initiate:
     main:
       base: Deathbolt
       display_name: "Deathly Ray"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
@@ -208,7 +208,7 @@ death-cultist:
     main:
       base: Deathbolt
       display_name: "Deathly Ray"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -224,7 +224,7 @@ death-cultist-grand-master:
     main:
       base: Deathbolt
       display_name: "Deathly Ray"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -241,7 +241,7 @@ fiend-cultist-initiate:
     main:
       base: Greataxe
       display_name: "Infernal Axe"
-  secondary_damage_type: Fire
+      secondary_damage_type: Fire
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
@@ -257,7 +257,7 @@ fiend-cultist:
     main:
       base: Greataxe
       display_name: "Infernal Axe"
-  secondary_damage_type: Fire
+      secondary_damage_type: Fire
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -273,7 +273,7 @@ fiend-cultist-grand-master:
     main:
       base: Greataxe
       display_name: "Infernal Axe"
-  secondary_damage_type: Fire
+      secondary_damage_type: Fire
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
