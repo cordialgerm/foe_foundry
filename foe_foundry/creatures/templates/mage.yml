@@ -126,7 +126,8 @@ common: &common
   hp_multiplier: 0.85
   damage_multiplier: 1.2
   ac_templates:
-    - ArcaneArmor
+    - template: ArcaneArmor
+      modifier: 0
   roles:
     primary: Soldier
     additional: []

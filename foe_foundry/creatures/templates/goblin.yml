@@ -90,10 +90,10 @@ goblin-lickspittle:
 
 goblin:
   <<: *common
-  hp_multiplier: 0.8
+  hp_multiplier: 0.7
   abilities:
     STR: [Default, -3]
-    DEX: Primary
+    DEX: [Primary, 2]
     INT: [Default, -1]
     WIS: [Default, -2]
     CHA: [Default, -2]
@@ -190,6 +190,11 @@ goblin-foulhex:
     INT: Primary
     WIS: Default
     CHA: Default
+  ac_templates:
+    - template: Unarmored
+      modifier: 0
+  caster_type: Primal
+  spellcasting_stat: INT
   attacks:
     main:
       base: Gaze

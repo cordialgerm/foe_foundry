@@ -6,7 +6,7 @@ template:
       name: Gelatinous Cube
       cr: 2
     - key: ancient-gelatinous-cube
-      name: Gelatinous Cube Elder
+      name: Ancient Gelatinous Cube
       cr: 6
   environments:
     Underground: native
@@ -32,12 +32,12 @@ common: &common
     WIS: [Medium, -6]
     CHA: [NoScaling, -9]
   attacks:
-    reduced_attacks: 1
     main:
       base: Slam
       display_name: "Pseudopod"
       damage_type: Acid
       secondary_damage_type: Acid
+  reduced_attacks: 1
   ac_templates:
     - template: Unarmored
   senses:
