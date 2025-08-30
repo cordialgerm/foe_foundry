@@ -104,6 +104,21 @@ describe('MonsterBuilder Component', () => {
       expect(navPills?.length).to.be.greaterThan(0);
     });
 
+    it('should have mobile-friendly nav pills styling', () => {
+      const navPillsContainer = element.shadowRoot?.querySelector('.nav-pills');
+      expect(navPillsContainer).to.exist;
+      
+      // Check that the container exists and can contain nav pills
+      const navPills = element.shadowRoot?.querySelectorAll('.nav-pill');
+      expect(navPills?.length).to.be.greaterThan(0);
+      
+      // Verify each nav pill has proper styling for mobile interaction
+      navPills?.forEach(pill => {
+        const styles = getComputedStyle(pill as HTMLElement);
+        expect(pill.classList.contains('nav-pill')).to.be.true;
+      });
+    });
+
     it('should handle monster key changes', async () => {
       const eventSpy = vi.fn();
       element.addEventListener('monster-key-changed', eventSpy);

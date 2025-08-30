@@ -299,6 +299,26 @@ export class MonsterBuilder extends LitElement {
       .nav-arrow:focus {
         border-radius: 6px;
       }
+
+      .nav-pills {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        padding-bottom: 0.25rem; /* Space for focus rings */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* iOS momentum scrolling */
+      }
+
+      .nav-pills::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+
+      .nav-pill {
+        flex-shrink: 0; /* Prevent pills from shrinking */
+        min-width: 120px; /* Slightly larger touch targets on mobile */
+        padding: 0.75rem 1rem; /* More padding for better touch interaction */
+      }
     }
 
     /* Large desktop: wider MonsterCard */
