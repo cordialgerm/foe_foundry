@@ -22,7 +22,7 @@ common: &common
   size: Medium
   languages: []
   creature_class: Mimic
-  hp_multiplier: 1.0
+  hp_multiplier: 1.25
   damage_multiplier: 1.0
   ac_templates:
     - template: flat
@@ -38,7 +38,7 @@ common: &common
   abilities:
     STR: ["Primary", 1]
     DEX: ["Default", 2]
-    CON: Default
+    # CON: Leave as default calculation (not explicitly set in Python template)
     INT: ["Default", -5]
     WIS: ["Medium", 2]
     CHA: ["Default", -2]
@@ -52,14 +52,18 @@ common: &common
       - Stealth
       - Stealth
     expertise: []
-  saves:
-    - CON
-    - WIS
+  # No saves for base CR 2 mimic (conditional saves added per monster)
 mimic:
   <<: *common
+  # No saves for CR 2 mimic
 greater-mimic:
   <<: *common
   size: Large
+  saves:
+    - CON  # CR >= 4
 vault-mimic:
   <<: *common
   size: Huge
+  saves:
+    - CON  # CR >= 4
+    - WIS  # CR >= 8

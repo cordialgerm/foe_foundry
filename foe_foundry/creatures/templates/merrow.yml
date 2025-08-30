@@ -31,13 +31,18 @@ common: &common
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   ac_templates: NaturalArmor
+  senses:
+    darkvision: 60
+  speed:
+    walk: 10
+    swim: 40
   roles:
-    primary: Soldier
-    additional: []
+    primary: Ambusher
+    additional: [Bruiser]
   abilities:
     STR: Primary
     DEX: ["Medium", 2]
-    CON: Default
+    # CON: Default calculation (not explicitly set)
     INT: ["Default", -2]
     WIS: Default
     CHA: ["Medium", -1]
@@ -54,18 +59,22 @@ common: &common
     proficiency:
       - Stealth
     expertise: []
-  saves:
-    - WIS
+  # No saves for base CR 2 merrow (WIS save only for CR >= 4)
 merrow:
   <<: *common
+  # No saves for CR 2 merrow
 merrow-blood-blessed:
   <<: *common
+  saves:
+    - WIS  # CR >= 4
 merrow-storm-blessed:
   <<: *common
+  saves:
+    - WIS  # CR >= 4
   abilities:
     STR: ["Default", 2]
     DEX: ["Medium", 2]
-    CON: Default
+    # CON: Default calculation
     INT: ["Default", 3]
     WIS: Primary
     CHA: ["Medium", 1]
@@ -74,15 +83,18 @@ merrow-storm-blessed:
       base: Shock
       display_name: "Stormcaller's Strike"
       secondary_damage_type: Lightning
+    secondary: null  # No secondary attack for storm-blessed variant
   roles:
     primary: Support
     additional: []
 merrow-abyssal-lord:
   <<: *common
+  saves:
+    - WIS  # CR >= 4
   abilities:
     STR: Primary
     DEX: ["Medium", 2]
-    CON: Default
+    # CON: Default calculation
     INT: Default
     WIS: ["Medium", -1]
     CHA: ["Medium", 1]
