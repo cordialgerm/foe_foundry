@@ -297,6 +297,24 @@ def parse_statblock_from_yaml(
     if ac_boost is not None:
         statblock = statblock.copy(ac_boost=ac_boost)
 
+    # Apply damage types at statblock level
+    damage_type_modifications = {}
+    
+    primary_damage_type_name = merged_data.get("primary_damage_type")
+    if primary_damage_type_name:
+        primary_damage_type = getattr(DamageType, primary_damage_type_name, None)
+        if primary_damage_type:
+            damage_type_modifications["primary_damage_type"] = primary_damage_type
+    
+    secondary_damage_type_name = merged_data.get("secondary_damage_type")
+    if secondary_damage_type_name:
+        secondary_damage_type = getattr(DamageType, secondary_damage_type_name, None)
+        if secondary_damage_type:
+            damage_type_modifications["secondary_damage_type"] = secondary_damage_type
+    
+    if damage_type_modifications:
+        statblock = statblock.copy(**damage_type_modifications)
+
     return statblock
 
 
@@ -692,7 +710,7 @@ def parse_ac_templates_from_yaml(
                 if "ac" not in template_data:
                     raise ValueError("'ac' is required for flat template")
                 ac_value = flat(int(template_data["ac"]))
-                templates.append(template_class(ac_value))
+                templates.append(ac_value)
             else:
                 templates.append(template_class)
                 modifiers.append(modifier)
