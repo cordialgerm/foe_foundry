@@ -34,6 +34,7 @@ common: &common
   creature_class: Golem
   hp_multiplier: 1.0
   damage_multiplier: 1.0
+  ac_templates: NaturalPlating
   roles:
     primary: Soldier
     additional: []
@@ -46,7 +47,8 @@ common: &common
     CHA: ["NoScaling", -9]
   attacks:
     main:
-      secondary_damage_type: null
+      base: Slam
+      display_name: "Slam"
   skills:
     proficiency: []
     expertise: []
@@ -59,6 +61,7 @@ iron-golem:
   <<: *common
 flesh-golem:
   <<: *common
+  ac_templates: Unarmored
   abilities:
     STR: Primary
     DEX: ["NoScaling", -2]

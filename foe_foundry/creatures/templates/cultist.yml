@@ -81,7 +81,7 @@ cultist:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   saves: []
 
 cultist-fanatic:
@@ -94,7 +94,7 @@ cultist-fanatic:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
@@ -110,7 +110,7 @@ cultist-grand-master:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -126,7 +126,7 @@ cultist-exarch:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -141,10 +141,9 @@ aberrant-cultist-initiate:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: natural
       base: Tentacle
       display_name: "Aberrant Tentacle"
-  secondary_damage_type: Psychic
+      secondary_damage_type: Psychic
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
@@ -158,10 +157,9 @@ aberrant-cultist:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: natural
       base: Tentacle
       display_name: "Aberrant Tentacle"
-  secondary_damage_type: Psychic
+      secondary_damage_type: Psychic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -175,10 +173,9 @@ aberrant-cultist-grand-master:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: natural
       base: Tentacle
       display_name: "Aberrant Tentacle"
-  secondary_damage_type: Psychic
+      secondary_damage_type: Psychic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -193,10 +190,9 @@ death-cultist-initiate:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: spell
       base: Deathbolt
       display_name: "Deathly Ray"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
@@ -210,10 +206,9 @@ death-cultist:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: spell
       base: Deathbolt
       display_name: "Deathly Ray"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -227,10 +222,9 @@ death-cultist-grand-master:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: spell
       base: Deathbolt
       display_name: "Deathly Ray"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -247,7 +241,7 @@ fiend-cultist-initiate:
     main:
       base: Greataxe
       display_name: "Infernal Axe"
-  secondary_damage_type: Fire
+      secondary_damage_type: Fire
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
@@ -263,7 +257,7 @@ fiend-cultist:
     main:
       base: Greataxe
       display_name: "Infernal Axe"
-  secondary_damage_type: Fire
+      secondary_damage_type: Fire
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -279,7 +273,7 @@ fiend-cultist-grand-master:
     main:
       base: Greataxe
       display_name: "Infernal Axe"
-  secondary_damage_type: Fire
+      secondary_damage_type: Fire
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []

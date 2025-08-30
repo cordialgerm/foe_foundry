@@ -585,6 +585,7 @@ class BaseStatblock:
         | set[CreatureType]
         | list[CreatureType]
         | None = None,
+        replace_existing: bool = False,
     ) -> BaseStatblock:
         if primary_type is None:
             primary_type = self.creature_type
@@ -596,9 +597,9 @@ class BaseStatblock:
         elif isinstance(additional_types, set):
             additional_types = list(additional_types)
 
-        new_additional_types = set(
-            self.additional_types.copy() + additional_types + [self.creature_type]
-        )
+        new_additional_types = set(self.additional_types.copy() + additional_types)
+        if not replace_existing:
+            new_additional_types.add(self.creature_type)
 
         return self.copy(
             creature_type=primary_type,

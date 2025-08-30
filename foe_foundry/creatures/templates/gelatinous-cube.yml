@@ -6,7 +6,7 @@ template:
       name: Gelatinous Cube
       cr: 2
     - key: ancient-gelatinous-cube
-      name: Gelatinous Cube Elder
+      name: Ancient Gelatinous Cube
       cr: 6
   environments:
     Underground: native
@@ -35,8 +35,8 @@ common: &common
     main:
       base: Slam
       display_name: "Pseudopod"
-      damage_type: Acid
-      secondary_damage_type: Acid
+      primary_damage_type: Acid
+  reduced_attacks: 1
   ac_templates:
     - template: Unarmored
   senses:
@@ -54,7 +54,7 @@ common: &common
       - Exhaustion
       - Frightened
       - Prone
-  attack_reduction: 1
+
   skills:
     proficiency: []
     expertise: []

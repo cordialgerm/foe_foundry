@@ -56,12 +56,10 @@ common: &common
     main:
       base: Shortswords
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Crossbow
       display_name: Light Crossbow
       damage_multiplier: 1.0
-      secondary_damage_type: null
   skills:
     proficiency: [Stealth]
     expertise: []
@@ -76,12 +74,9 @@ bandit-veteran:
     main:
       base: Pistol
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortswords
       damage_multiplier: 1.0
-      secondary_damage_type: null
-  saves: [STR, DEX]
 
 bandit-captain:
   <<: *common
@@ -92,11 +87,9 @@ bandit-captain:
     main:
       base: Pistol
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortswords
       damage_multiplier: 1.0
-      secondary_damage_type: null
   skills:
     proficiency: [Stealth, Deception, Athletics]
     expertise: []
@@ -115,11 +108,9 @@ bandit-crime-lord:
     main:
       base: Pistol
       damage_multiplier: 1.0
-      secondary_damage_type: Poison
     secondary:
       base: Shortswords
       damage_multiplier: 1.0
-      secondary_damage_type: Poison
   skills:
     proficiency: [Stealth, Deception, Athletics, Perception, Initiative]
     expertise: [Stealth, Initiative]

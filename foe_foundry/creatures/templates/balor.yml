@@ -52,7 +52,7 @@ common:
       modifier: 0
   immunities:
     conditions: [Poisoned, Frightened]
-    damage: [Fire, Poison]
+    damage_types: [Fire, Poison]
   damage_resistances: [Cold, Lightning]
   attacks:
     set_attacks: 3
@@ -60,7 +60,7 @@ common:
       base: Greatsword
       display_name: Lightning Blade
       damage_multiplier: 1.0
-      secondary_damage_type: Fire
+      primary_damage_type: Lightning
   skills:
     proficiency: [Perception, Initiative]
     expertise: [Initiative]

@@ -26,6 +26,7 @@ common: &common
   creature_class: Chimera
   hp_multiplier: 1.0
   damage_multiplier: 1.0
+  ac_boost: -1
   roles:
     primary: Bruiser
     additional: []
@@ -37,12 +38,10 @@ common: &common
     WIS: [Medium, 2]
     CHA: [Default, -1.5]
   attacks:
+    set_attacks: 3
     main:
       base: Bite
       display_name: "Three-Headed Bites"
-      damage_type: piercing
-      secondary_damage_type: null
-      set_attacks: 3
   ac_templates:
     - template: NaturalArmor
       ac_modifier: -1

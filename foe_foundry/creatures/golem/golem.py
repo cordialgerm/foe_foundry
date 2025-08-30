@@ -11,7 +11,6 @@ from ...powers import (
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import AbilityScore, StatScaling
-from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
     Monster,
@@ -108,7 +107,6 @@ class _GolemTemplate(MonsterTemplate):
         variant = settings.variant
 
         # STATS
-
         if variant is not FleshVariant:
             attrs = {
                 AbilityScore.STR: StatScaling.Primary,
@@ -118,6 +116,10 @@ class _GolemTemplate(MonsterTemplate):
                 AbilityScore.WIS: (StatScaling.Default, -2.5),
                 AbilityScore.CHA: (StatScaling.NoScaling, -9),
             }
+
+            # Flesh Golems are a bit more aggressive since they're unarmored
+            hp_multiplier = 1.4
+            attack_damage_multiplier = 0.9
         else:
             attrs = {
                 AbilityScore.STR: StatScaling.Primary,
@@ -128,6 +130,10 @@ class _GolemTemplate(MonsterTemplate):
                 AbilityScore.CHA: (StatScaling.NoScaling, -4),
             }
 
+            # Golems have high HP and AC and lower damage
+            hp_multiplier = 1.25
+            attack_damage_multiplier = 0.8
+
         stats = base_stats(
             name=name,
             variant_key=settings.variant.key,
@@ -135,8 +141,8 @@ class _GolemTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=attrs,
-            hp_multiplier=settings.hp_multiplier,
-            damage_multiplier=settings.damage_multiplier,
+            hp_multiplier=hp_multiplier * settings.hp_multiplier,
+            damage_multiplier=attack_damage_multiplier * settings.damage_multiplier,
         )
 
         stats = stats.copy(
@@ -193,17 +199,6 @@ class _GolemTemplate(MonsterTemplate):
 
         # Golems have a slow attack speed, but attacks hit hard
         stats = stats.with_reduced_attacks(reduce_by=2, min_attacks=2)
-
-        # Golems have high HP and AC and lower damage
-        # Flesh Golems are a bit more aggressive since they're unarmored
-        if variant is FleshVariant:
-            stats = stats.apply_monster_dials(
-                MonsterDials(hp_multiplier=1.4, attack_damage_multiplier=0.9)
-            )
-        else:
-            stats = stats.apply_monster_dials(
-                MonsterDials(hp_multiplier=1.25, attack_damage_multiplier=0.8)
-            )
 
         # ROLES
         stats = stats.with_roles(

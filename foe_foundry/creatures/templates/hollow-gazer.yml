@@ -37,7 +37,6 @@ common: &common
     main:
       base: Gaze
       display_name: "Pitying Gaze"
-      secondary_damage_type: Psychic
   ac_templates:
     - template: UnholyArmor
   senses:
@@ -49,10 +48,10 @@ common: &common
   skills:
     proficiency:
       - Stealth
-    expertise:
       - Arcana
       - Insight
       - Perception
+    expertise: []
   saves: []
 hollow-gazer:
   <<: *common

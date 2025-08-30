@@ -15,7 +15,6 @@ from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import AbilityScore, StatScaling
-from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
     Monster,
@@ -48,15 +47,18 @@ ZombieOgreVariant = MonsterVariant(
 
 class _ZombieTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        if settings.monster_key == 'zombie':
+        if settings.monster_key == "zombie":
             return PowerSelection(loadouts=powers.LoadoutZombie)
-        elif settings.monster_key == 'zombie-brute':
+        elif settings.monster_key == "zombie-brute":
             return PowerSelection(loadouts=powers.LoadoutZombieBrute)
-        elif settings.monster_key == 'zombie-gravewalker':
+        elif settings.monster_key == "zombie-gravewalker":
             return PowerSelection(loadouts=powers.LoadoutZombieBrute)
-        elif settings.monster_key == 'zombie-ogre':
+        elif settings.monster_key == "zombie-ogre":
             return PowerSelection(loadouts=powers.LoadoutZombieOgre)
-        elif settings.monster_key == 'zombie-giant' or settings.monster_key == 'zombie-titan':
+        elif (
+            settings.monster_key == "zombie-giant"
+            or settings.monster_key == "zombie-titan"
+        ):
             return PowerSelection(loadouts=powers.LoadoutZombieGiant)
         else:
             raise ValueError(f"Unknown monster_key: {settings.monster_key}")
@@ -84,7 +86,7 @@ class _ZombieTemplate(MonsterTemplate):
                 AbilityScore.WIS: (StatScaling.Default, -4),
                 AbilityScore.CHA: (StatScaling.Default, -5),
             },
-            hp_multiplier=settings.hp_multiplier,
+            hp_multiplier=(1.3 if cr <= 1 else 1.5) * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
 
@@ -131,7 +133,10 @@ class _ZombieTemplate(MonsterTemplate):
 
         ## ATTACK DAMAGE
         # zombies should have fewer attacks, but the attacks should hit hard!
-        stats = stats.with_reduced_attacks(reduce_by=1 if stats.cr <= 8 else 2)
+        if settings.monster_key == "zombie":
+            stats = stats.with_set_attacks(1)
+        else:
+            stats = stats.with_set_attacks(2)
 
         # ROLES
         stats = stats.with_roles(
@@ -149,10 +154,6 @@ class _ZombieTemplate(MonsterTemplate):
             conditions={Condition.Poisoned},
             vulnerabilities={DamageType.Radiant},
         )
-
-        ## HP
-        hp_multiplier = 1.3 if stats.cr <= 1 else 1.5
-        stats = stats.apply_monster_dials(MonsterDials(hp_multiplier=hp_multiplier))
 
         return stats, [attack]
 

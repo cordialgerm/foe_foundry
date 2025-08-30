@@ -38,7 +38,6 @@ common: &common
     main:
       base: Claw
       display_name: "Cruel Claws"
-      secondary_damage_type: null
   ac_templates:
     - template: NaturalArmor
       ac_modifier: -1

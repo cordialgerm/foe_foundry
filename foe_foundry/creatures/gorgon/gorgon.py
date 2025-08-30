@@ -6,13 +6,11 @@ from ...attack_template import AttackTemplate, natural
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...powers import (
-    MEDIUM_POWER,
     PowerSelection,
 )
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import AbilityScore, Skills, StatScaling
-from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
     Monster,
@@ -99,12 +97,6 @@ class _GorgonTemplate(MonsterTemplate):
         stats = stats.grant_proficiency_or_expertise(
             Skills.Perception
         ).grant_proficiency_or_expertise(Skills.Perception)  # expertise
-
-        # ADDITIONAL POWERS
-
-        stats = stats.apply_monster_dials(
-            dials=MonsterDials(recommended_powers_modifier=MEDIUM_POWER)
-        )
 
         return stats, [attack]
 

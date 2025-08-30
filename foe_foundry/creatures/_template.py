@@ -153,7 +153,13 @@ class MonsterTemplate:
     def generate(self, settings: GenerationSettings) -> StatsBeingGenerated:
         """Creates a statblock for the given generation settings"""
 
-        stats, attacks = self.generate_stats(settings)
+        # IMPORTANT - do not use settings directly
+        # Instead, we will make a copy of settings and clear out the RNG
+        # This is because we want to reset the RNG streams between generating a statblock and choosing powers
+        settings1 = settings.copy(rng=None)
+        settings2 = settings.copy(rng=None)
+
+        stats, attacks = self.generate_stats(settings1)
 
         # INITIALIZE ATTACKS
         primary_attack = attacks[0]
@@ -164,12 +170,12 @@ class MonsterTemplate:
                 stats = secondary_attack.add_as_secondary_attack(stats)
 
         # POWERS
-        power_selection = self.choose_powers(settings)
-        powers = power_selection.choose_powers(settings.selection_settings)
+        power_selection = self.choose_powers(settings2)
+        powers = power_selection.choose_powers(settings2.selection_settings)
 
         # SPECIES CUSTOMIZATION
-        if settings.species is not None:
-            stats = settings.species.alter_base_stats(stats)
+        if settings2.species is not None:
+            stats = settings2.species.alter_base_stats(stats)
 
         # POWERS
         features: list[Feature] = []
@@ -192,7 +198,7 @@ class MonsterTemplate:
 
         # ATTACKS
         for attack in attacks:
-            stats = attack.finalize_attacks(stats, settings.rng, repair_all=False)
+            stats = attack.finalize_attacks(stats, settings2.rng, repair_all=False)
 
         # LEGENDARY ATTACKS
         if stats.is_legendary:
@@ -245,12 +251,18 @@ class MonsterTemplate:
 
     def generate_settings(self, **kwargs) -> Iterable[GenerationSettings]:
         """Generates all possible settings for this template"""
+
+        if kwargs.get("species") is not None:
+            species = [kwargs.get("species")]
+        else:
+            species = self.species if self.n_species > 0 else [None]
+
+        kwargs.pop("species")
+
         for variant in self.variants:
             for monster in variant.monsters:
-                for species in self.species if self.n_species > 0 else [None]:
-                    settings = self._settings_for_variant(
-                        variant, monster, species, **kwargs
-                    )
+                for s in species:
+                    settings = self._settings_for_variant(variant, monster, s, **kwargs)
                     yield settings
 
     def _settings_for_variant(

@@ -11,7 +11,6 @@ from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import AbilityScore, Skills, StatScaling
-from ...statblocks import MonsterDials
 from ...utils.interpolate import interpolate_by_cr
 from .._template import (
     GenerationSettings,
@@ -80,7 +79,8 @@ class _SpyTemplate(MonsterTemplate):
                 AbilityScore.WIS: (StatScaling.Medium, 1),
                 AbilityScore.CHA: (StatScaling.Medium, 1),
             },
-            hp_multiplier=settings.hp_multiplier,
+            hp_multiplier=0.85
+            * settings.hp_multiplier,  # spies have lower HP than average
             damage_multiplier=settings.damage_multiplier,
         )
 
@@ -97,10 +97,6 @@ class _SpyTemplate(MonsterTemplate):
             speed=stats.speed.grant_climbing(),
             primary_damage_type=DamageType.Piercing,
         )
-
-        ## HP
-        # spies have lower HP than average
-        stats = stats.apply_monster_dials(MonsterDials(hp_multiplier=0.85))
 
         # ARMOR CLASS
         # based off Spy and Spy Master stats

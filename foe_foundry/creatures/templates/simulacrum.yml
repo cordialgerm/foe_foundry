@@ -18,13 +18,14 @@ template:
   species: []
 common: &common
   creature_type: Humanoid
-  additional_types: [Construct]
+  additional_creature_types: [Construct]
   size: Medium
   languages:
     - Common
   creature_class: Simulacrum
   hp_multiplier: 0.6
   damage_multiplier: 1.0
+  ac_templates: ArcaneArmor
   roles:
     primary: Soldier
     additional: []
@@ -63,6 +64,7 @@ mastercraft-simulacrum:
   <<: *common
 simulacrum-mirrorblade:
   <<: *common
+  ac_templates: StuddedLeatherArmor
   abilities:
     STR: [Default, -6]
     DEX: Primary

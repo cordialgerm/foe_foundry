@@ -66,11 +66,9 @@ common: &common
     main:
       base: Greatsword
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortbow
       damage_multiplier: 0.9
-      secondary_damage_type: null
   skills:
     proficiency: [Athletics]
     expertise: []
@@ -85,11 +83,9 @@ shock-infantry:
     main:
       base: Greatsword # Can be Greataxe, Greatsword, or Maul
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortbow
       damage_multiplier: 0.9
-      secondary_damage_type: null
 
 shock-infantry-veteran:
   <<: *common
@@ -103,11 +99,9 @@ shock-infantry-veteran:
     main:
       base: Greatsword # Can be Greataxe, Greatsword, or Maul
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Crossbow
       damage_multiplier: 0.9
-      secondary_damage_type: null
   skills:
     proficiency: [Athletics, Perception, Initiative]
     expertise: []
@@ -120,13 +114,11 @@ line-infantry:
     additional: [Defender]
   attacks:
     main:
-      base: Polearm # Can be Polearm or SpearAndShield
+      base: Polearm # Python template deterministically chooses Polearm for human variant
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortbow
       damage_multiplier: 0.9
-      secondary_damage_type: null
 
 line-infantry-veteran:
   <<: *common
@@ -138,13 +130,12 @@ line-infantry-veteran:
       modifier: 0
   attacks:
     main:
-      base: Polearm # Can be Polearm or SpearAndShield
+      base: SpearAndShield # Python template deterministically chooses SpearAndShield for this case
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Crossbow
       damage_multiplier: 0.9
-      secondary_damage_type: null
+  uses_shield: true
   skills:
     proficiency: [Athletics, Perception, Initiative]
     expertise: []
@@ -168,11 +159,9 @@ warrior-commander:
     main:
       base: Greatsword
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Crossbow
       damage_multiplier: 0.9
-      secondary_damage_type: null
   skills:
     proficiency: [Athletics, Perception, Initiative, Persuasion, Insight]
     expertise: []
@@ -196,11 +185,9 @@ legendary-warrior:
     main:
       base: Greatsword
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Crossbow
       damage_multiplier: 0.9
-      secondary_damage_type: null
   skills:
     proficiency: [Athletics, Perception, Initiative, Persuasion, Insight]
     expertise: []

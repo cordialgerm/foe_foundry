@@ -15,34 +15,46 @@ template:
   species: []
 common: &common
   creature_type: Monstrosity
-  size: Large
+  size: Medium
   languages: []
   creature_class: Bunny
-  hp_multiplier: 1.0
+  hp_multiplier: 0.8
   damage_multiplier: 1.0
+  ac_templates: NaturalArmor
+  speed:
+    walk: 50
+    burrow: 25
+  senses:
+    darkvision: 60
+    blindsight: 30
   roles:
     primary: Skirmisher
     additional: []
   abilities:
-    STR: Primary
-    DEX: Medium
-    CON: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    STR: Default
+    DEX: [Primary, 2]
+    CON: [Constitution, -2]
+    INT: [NoScaling, -7]
+    WIS: [NoScaling, 2]
+    CHA: [NoScaling, -4]
   attacks:
     main:
       base: Bite
+      display_name: Rabid Bite
       secondary_damage_type: Poison
   skills:
     proficiency:
       - Perception
-      - Stealth
       - Initiative
-    expertise: []
-  saves:
-    - WIS
+      - Stealth
+    expertise:
+      - Perception
+      - Initiative
+  saves: []
+
 dire-bunny:
   <<: *common
+
 dire-bunny-matriarch:
   <<: *common
+  size: Large

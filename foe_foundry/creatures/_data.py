@@ -87,6 +87,10 @@ class GenerationSettings:
 
     power_weights: dict[str, float] = field(default_factory=dict)
 
+    def __post_init__(self):
+        if self.rng is None:
+            object.__setattr__(self, "rng", rng_factory(self.monster, self.species))
+
     @property
     def key(self) -> str:
         if self.species is not None:

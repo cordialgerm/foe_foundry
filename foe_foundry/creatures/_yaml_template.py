@@ -116,7 +116,10 @@ def parse_statblock_from_yaml(
     Returns:
         Configured BaseStatblock
     """
-    schema.validate_yaml_template(yaml_data)
+
+    errors = schema.validate_yaml_template(yaml_data)
+    if errors:
+        raise ValueError(f"YAML validation errors found: {errors}")
 
     # Get the monster-specific data
     template_data = yaml_data["template"]
@@ -172,14 +175,12 @@ def parse_statblock_from_yaml(
         raise RuntimeError(f"Failed to create base statblock: {e}")
 
     # Apply creature types
-    if "creature_type" in merged_data:
-        primary_type, additional_types = parse_creature_types_from_yaml(merged_data)
-        if additional_types:
-            statblock = statblock.with_types(
-                primary_type=primary_type, additional_types=additional_types
-            )
-        else:
-            statblock = statblock.copy(creature_type=primary_type)
+    primary_type, additional_types = parse_creature_types_from_yaml(merged_data)
+    statblock = statblock.with_types(
+        primary_type=primary_type,
+        additional_types=additional_types,
+        replace_existing=True,
+    )
 
     # Apply basic properties
     modifications = {}
@@ -196,6 +197,9 @@ def parse_statblock_from_yaml(
     if "creature_subtype" in merged_data:
         modifications["creature_subtype"] = merged_data["creature_subtype"]
 
+    if "uses_shield" in merged_data:
+        modifications["uses_shield"] = merged_data["uses_shield"]
+
     # Apply modifications
     if modifications:
         statblock = statblock.copy(**modifications)
@@ -210,6 +214,11 @@ def parse_statblock_from_yaml(
     movement = parse_movement_from_yaml(merged_data)
     if movement:
         statblock = statblock.copy(speed=movement)
+
+    # Apply speed modifiers
+    speed_modifier = parse_speed_modifier_from_yaml(merged_data)
+    if speed_modifier is not None:
+        statblock = statblock.copy(speed=statblock.speed.delta(speed_modifier))
 
     # Apply senses
     senses = parse_senses_from_yaml(merged_data)
@@ -228,10 +237,9 @@ def parse_statblock_from_yaml(
 
     # Apply roles
     primary_role, additional_roles = parse_roles_from_yaml(merged_data)
-    if primary_role:
-        statblock = statblock.with_roles(
-            primary_role=primary_role, additional_roles=additional_roles
-        )
+    statblock = statblock.with_roles(
+        primary_role=primary_role, additional_roles=additional_roles
+    )
 
     # Apply immunities and resistances
     damage_immunities, condition_immunities = parse_damage_immunities_from_yaml(
@@ -261,48 +269,33 @@ def parse_statblock_from_yaml(
         statblock = statblock.grant_proficiency_or_expertise(skill)
 
     for skill in expertise_skills:
-        # Note: may need different method for expertise vs proficiency
+        # applying proficiency twice grants expertise
         statblock = statblock.grant_proficiency_or_expertise(skill)
 
     # Apply saving throws
     saves = parse_saving_throws_from_yaml(merged_data)
-    for ability in saves:
-        statblock = statblock.copy(
-            attributes=statblock.attributes.grant_save_proficiency(ability)
-        )
-
-    # Apply secondary damage type
-    secondary_damage_type = parse_secondary_damage_type_from_yaml(
-        merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type"),
-        settings.rng,
-    )
-    # If not found in attacks, check at the top level
-    if not secondary_damage_type:
-        secondary_damage_type = parse_secondary_damage_type_from_yaml(
-            merged_data.get("secondary_damage_type"), settings.rng
-        )
-    if secondary_damage_type:
-        statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
+    statblock = statblock.grant_save_proficiency(*saves)
 
     # Apply spellcasting
-    spellcasting_data = merged_data.get("spellcasting", {})
-    if spellcasting_data:
-        caster_type_name = spellcasting_data.get("caster_type")
-        if caster_type_name and CasterType:
-            caster_type = getattr(CasterType, caster_type_name, None)
-            if caster_type:
-                statblock = statblock.grant_spellcasting(caster_type=caster_type)
+    caster_type_name = merged_data.get("caster_type")
+    if caster_type_name:
+        caster_type = getattr(CasterType, caster_type_name)
+        statblock = statblock.grant_spellcasting(caster_type=caster_type)
 
     # Apply attack reduction
-    attack_reduction = merged_data.get("attack_reduction")
-    if attack_reduction:
-        statblock = statblock.with_reduced_attacks(reduce_by=attack_reduction)
+    reduced_attacks = merged_data.get("attacks", {}).get("reduced_attacks")
+    if reduced_attacks:
+        statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks)
 
     # Apply set_attacks from attacks section
-    attacks_data = merged_data.get("attacks", {})
-    set_attacks = attacks_data.get("set_attacks")
+    set_attacks = merged_data.get("attacks", {}).get("set_attacks")
     if set_attacks is not None:
         statblock = statblock.with_set_attacks(set_attacks)
+
+    # Apply ac_boost if specified
+    ac_boost = merged_data.get("ac_boost")
+    if ac_boost is not None:
+        statblock = statblock.copy(ac_boost=ac_boost)
 
     return statblock
 
@@ -416,7 +409,7 @@ def parse_creature_types_from_yaml(
 
 def parse_roles_from_yaml(
     data: Dict[str, Any],
-) -> tuple[Optional[MonsterRole], List[MonsterRole]]:
+) -> tuple[MonsterRole, List[MonsterRole]]:
     """
     Parse monster roles from YAML data.
 
@@ -430,8 +423,11 @@ def parse_roles_from_yaml(
     primary_role = None
     additional_roles = []
 
-    if roles_data.get("primary"):
-        primary_role = getattr(MonsterRole, roles_data["primary"])
+    primary_role = roles_data.get("primary")
+    if primary_role is None:
+        raise ValueError("roles.primary is required in template YAML")
+
+    primary_role = getattr(MonsterRole, primary_role)
 
     if roles_data.get("additional"):
         additional_roles = [
@@ -474,6 +470,25 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
         movement_kwargs["hover"] = speed_data["hover"]
 
     return Movement(**movement_kwargs) if movement_kwargs else None
+
+
+def parse_speed_modifier_from_yaml(data: Dict[str, Any]) -> Optional[int]:
+    """
+    Parse speed modifier from YAML.
+
+    Args:
+        data: YAML data containing speed section
+
+    Returns:
+        Speed modifier as integer, or None if no modifier
+    """
+    speed_data = data.get("speed", {})
+
+    # Handle integer speed modifiers
+    if isinstance(speed_data, (int, float)):
+        return int(speed_data)
+
+    return None
 
 
 def parse_senses_from_yaml(data: Dict[str, Any]) -> Optional[Senses]:
@@ -739,7 +754,7 @@ def parse_secondary_damage_type_from_yaml(
 
 
 def parse_single_attack_from_yaml(
-    attack_data: Dict[str, Any],
+    attack_data: Dict[str, Any], rng: np.random.Generator
 ) -> Optional[AttackTemplate]:
     """
     Parse a single attack template from YAML data.
@@ -763,7 +778,7 @@ def parse_single_attack_from_yaml(
     if not base_attack:
         return None
 
-    attack = base_attack
+    attack: AttackTemplate = base_attack
 
     # Apply display name if specified
     display_name = attack_data.get("display_name")
@@ -772,25 +787,48 @@ def parse_single_attack_from_yaml(
 
     # Apply reach if specified
     reach = attack_data.get("reach")
-    if reach and hasattr(attack, "copy"):
+    if reach:
         attack = attack.copy(reach=reach)
+
+    # Apply range if specified
+    range_val = attack_data.get("range")
+    range_max_val = attack_data.get("range_max")
+    if range_val:
+        # Handle both simple range (100) and range/max format (100/400)
+        if isinstance(range_val, str) and "/" in range_val:
+            range_parts = range_val.split("/")
+            range_normal = int(range_parts[0])
+            range_max = int(range_parts[1])
+            attack = attack.copy(range=range_normal, range_max=range_max)
+        else:
+            copy_args = {"range": range_val}
+            # If range_max is explicitly specified in YAML (even as null), override it
+            if "range_max" in attack_data:
+                copy_args["range_max"] = range_max_val
+            attack = attack.copy(**copy_args)
 
     # Apply damage scalar if specified
     damage_scalar = attack_data.get("damage_scalar")
-    if damage_scalar and hasattr(attack, "copy"):
+    if damage_scalar:
         attack = attack.copy(damage_scalar=damage_scalar)
 
     # Apply damage type override if specified
-    damage_type = attack_data.get("damage_type")
+    damage_type = attack_data.get("primary_damage_type")
     if damage_type:
         damage_type_obj = getattr(DamageType, damage_type, None)
-        if damage_type_obj and hasattr(attack, "copy"):
+        if damage_type_obj:
             attack = attack.copy(damage_type=damage_type_obj)
+
+    secondary_damage_type = parse_secondary_damage_type_from_yaml(
+        attack_data.get("secondary_damage_type"), rng
+    )
+    if secondary_damage_type:
+        attack = attack.copy(secondary_damage_type=secondary_damage_type)
 
     # Apply damage multiplier if specified
     damage_multiplier = attack_data.get("damage_multiplier", 1.0)
-    if damage_multiplier != 1.0 and hasattr(attack, "with_damage_multiplier"):
-        attack = attack.with_damage_multiplier(damage_multiplier)
+    if damage_multiplier != 1.0:
+        attack = attack.copy(damage_scalar=damage_multiplier)
 
     return attack
 
@@ -826,14 +864,14 @@ def parse_attacks_from_yaml(
     # Main attack
     main_attack = attacks_data.get("main", {})
     if main_attack:
-        attack = parse_single_attack_from_yaml(main_attack)
+        attack = parse_single_attack_from_yaml(main_attack, settings.rng)
         if attack:
             attacks.append(attack)
 
     # Secondary attack
     secondary_attack = attacks_data.get("secondary", {})
     if secondary_attack and secondary_attack is not None:
-        attack = parse_single_attack_from_yaml(secondary_attack)
+        attack = parse_single_attack_from_yaml(secondary_attack, settings.rng)
         if attack:
             attacks.append(attack)
 
