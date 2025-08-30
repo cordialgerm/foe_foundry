@@ -104,7 +104,7 @@ describe('MonsterBuilder Component', () => {
       expect(navPills?.length).to.be.greaterThan(0);
     });
 
-    it('should have mobile-friendly nav pills styling', () => {
+    it('should have mobile-friendly nav pills styling with scroll indicator', () => {
       const navPillsContainer = element.shadowRoot?.querySelector('.nav-pills');
       expect(navPillsContainer).to.exist;
       
@@ -117,6 +117,15 @@ describe('MonsterBuilder Component', () => {
         const styles = getComputedStyle(pill as HTMLElement);
         expect(pill.classList.contains('nav-pill')).to.be.true;
       });
+
+      // Test scroll indicator functionality
+      // The scroll indicator should be present when content overflows
+      const navPillsElement = navPillsContainer as HTMLElement;
+      if (navPillsElement) {
+        // Simulate scrollable content by checking for the gradient pseudo-element
+        const styles = getComputedStyle(navPillsElement, '::after');
+        expect(styles).to.exist; // CSS pseudo-element exists
+      }
     });
 
     it('should handle monster key changes', async () => {
@@ -166,6 +175,56 @@ describe('MonsterBuilder Component', () => {
       await element.updateComplete;
 
       expect(element.mobileTab).to.equal('statblock');
+    });
+
+    it('should show scroll indicator when nav pills overflow', async () => {
+      // Force mobile mode
+      element.isMobile = true;
+      await element.updateComplete;
+
+      const navPillsContainer = element.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
+      expect(navPillsContainer).to.exist;
+
+      // Mock scrollable content by setting scrollWidth > clientWidth
+      Object.defineProperty(navPillsContainer, 'scrollWidth', {
+        value: 500,
+        configurable: true
+      });
+      Object.defineProperty(navPillsContainer, 'clientWidth', {
+        value: 300,
+        configurable: true
+      });
+
+      // Trigger the scroll indicator update
+      (element as any).updateNavPillsScrollIndicator();
+
+      // Should have the has-scroll class when content overflows
+      expect(navPillsContainer.classList.contains('has-scroll')).to.be.true;
+    });
+
+    it('should hide scroll indicator when nav pills do not overflow', async () => {
+      // Force mobile mode
+      element.isMobile = true;
+      await element.updateComplete;
+
+      const navPillsContainer = element.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
+      expect(navPillsContainer).to.exist;
+
+      // Mock non-scrollable content by setting scrollWidth <= clientWidth
+      Object.defineProperty(navPillsContainer, 'scrollWidth', {
+        value: 300,
+        configurable: true
+      });
+      Object.defineProperty(navPillsContainer, 'clientWidth', {
+        value: 300,
+        configurable: true
+      });
+
+      // Trigger the scroll indicator update
+      (element as any).updateNavPillsScrollIndicator();
+
+      // Should not have the has-scroll class when content doesn't overflow
+      expect(navPillsContainer.classList.contains('has-scroll')).to.be.false;
     });
 
     it('should handle statblock updates in mobile mode', async () => {

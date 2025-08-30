@@ -308,10 +308,31 @@ export class MonsterBuilder extends LitElement {
         padding-bottom: 0.25rem; /* Space for focus rings */
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch; /* iOS momentum scrolling */
+        position: relative; /* For pseudo-element positioning */
       }
 
       .nav-pills::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
+      }
+
+      /* Swipe indicator gradient - shows when there's more content to scroll */
+      .nav-pills::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 20px;
+        background: linear-gradient(to left, var(--bg-color, #ffffff) 0%, transparent 100%);
+        pointer-events: none; /* Don't interfere with scrolling */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+
+      /* Show indicator when scrollable content exists */
+      .nav-pills.has-scroll::after {
+        opacity: 1;
       }
 
       .nav-pill {
@@ -397,6 +418,7 @@ export class MonsterBuilder extends LitElement {
   isSwipeInProgress: boolean = false;
 
   private resizeObserver?: ResizeObserver;
+  private scrollObserver?: IntersectionObserver;
 
   // Touch gesture properties
   private touchStartX: number = 0;
@@ -419,12 +441,17 @@ export class MonsterBuilder extends LitElement {
   disconnectedCallback() {
     super.disconnectedCallback();
     this.resizeObserver?.disconnect();
+    this.scrollObserver?.disconnect();
     this.removeTouchListeners();
   }
 
   private setupResizeObserver() {
     this.resizeObserver = new ResizeObserver(() => {
       this.checkIsMobile();
+      // Update scroll indicator when size changes
+      requestAnimationFrame(() => {
+        this.updateNavPillsScrollIndicator();
+      });
     });
     this.resizeObserver.observe(this);
   }
@@ -438,6 +465,22 @@ export class MonsterBuilder extends LitElement {
         windowWidth: window.innerWidth,
         breakpoint: LAYOUT_CONFIG.MOBILE_BREAKPOINT
       });
+    }
+  }
+
+  private updateNavPillsScrollIndicator() {
+    if (!this.isMobile) return;
+    
+    const navPills = this.shadowRoot?.querySelector('.nav-pills');
+    if (!navPills) return;
+
+    // Check if content is scrollable
+    const isScrollable = navPills.scrollWidth > navPills.clientWidth;
+    
+    if (isScrollable) {
+      navPills.classList.add('has-scroll');
+    } else {
+      navPills.classList.remove('has-scroll');
     }
   }
 
@@ -684,6 +727,22 @@ export class MonsterBuilder extends LitElement {
 
     if (this.shadowRoot) {
       await adoptExternalCss(this.shadowRoot);
+    }
+
+    // Update scroll indicator after initial render
+    requestAnimationFrame(() => {
+      this.updateNavPillsScrollIndicator();
+    });
+  }
+
+  updated(changedProperties: Map<string | number | symbol, unknown>) {
+    super.updated(changedProperties);
+    
+    // Update scroll indicator when component updates (e.g., monster changes)
+    if (changedProperties.has('monsterKey') || changedProperties.has('isMobile')) {
+      requestAnimationFrame(() => {
+        this.updateNavPillsScrollIndicator();
+      });
     }
   }
 
