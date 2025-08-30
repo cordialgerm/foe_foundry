@@ -64,14 +64,10 @@ thug:
   attacks:
     main:
       base: Maul
-    additional:
-      - name: "Heavy Crossbow"
-        scalar: 0.7
-        attack_type: RangedWeapon
-        range: 100
-        damage_type: Piercing
-        die: d10
-        replaces_multiattack: 2
+    secondary:
+      base: Crossbow
+      damage_multiplier: 0.7
+      range: 100
   primary_damage_type: Bludgeoning
   saves: []
 

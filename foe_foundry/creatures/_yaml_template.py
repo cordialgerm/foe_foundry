@@ -823,6 +823,11 @@ def parse_single_attack_from_yaml(
     if reach and hasattr(attack, "copy"):
         attack = attack.copy(reach=reach)
 
+    # Apply range if specified
+    range_val = attack_data.get("range")
+    if range_val and hasattr(attack, "copy"):
+        attack = attack.copy(range=range_val)
+
     # Apply damage scalar if specified
     damage_scalar = attack_data.get("damage_scalar")
     if damage_scalar and hasattr(attack, "copy"):
@@ -884,6 +889,14 @@ def parse_attacks_from_yaml(
         attack = parse_single_attack_from_yaml(secondary_attack)
         if attack:
             attacks.append(attack)
+
+    # Additional attacks
+    additional_attacks = attacks_data.get("additional", [])
+    if additional_attacks:
+        for additional_attack in additional_attacks:
+            attack = parse_single_attack_from_yaml(additional_attack)
+            if attack:
+                attacks.append(attack)
 
     return attacks
 
