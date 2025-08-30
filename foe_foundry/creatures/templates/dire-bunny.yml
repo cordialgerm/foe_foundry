@@ -15,22 +15,28 @@ template:
   species: []
 common: &common
   creature_type: Monstrosity
-  size: Large
+  size: Medium
   languages: []
   creature_class: Bunny
   hp_multiplier: 1.0
   damage_multiplier: 1.0
   ac_templates: NaturalArmor
+  speed:
+    walk: 50
+    burrow: 25
+  senses:
+    darkvision: 60
+    blindsight: 30
   roles:
     primary: Skirmisher
     additional: []
   abilities:
-    STR: Primary
-    DEX: Medium
-    CON: Default
-    INT: Default
-    WIS: Default
-    CHA: Default
+    STR: [Default, -3]
+    DEX: Primary
+    CON: [Default, 1]
+    INT: [Default, -7]
+    WIS: [Default, 1]
+    CHA: [Default, -4]
   attacks:
     main:
       base: Bite
@@ -38,11 +44,11 @@ common: &common
   skills:
     proficiency:
       - Perception
-      - Stealth
       - Initiative
-    expertise: []
-  saves:
-    - WIS
+    expertise:
+      - Perception
+      - Initiative
+  saves: []
 dire-bunny:
   <<: *common
 dire-bunny-matriarch:

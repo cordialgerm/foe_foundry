@@ -81,7 +81,7 @@ cultist:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   saves: []
 
 cultist-fanatic:
@@ -94,7 +94,7 @@ cultist-fanatic:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
@@ -110,7 +110,7 @@ cultist-grand-master:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -126,7 +126,7 @@ cultist-exarch:
     main:
       base: Daggers
       display_name: "Ritual Dagger"
-  secondary_damage_type: Necrotic
+      secondary_damage_type: Necrotic
   skills:
     proficiency: [Deception, Religion, Persuasion, Initiative]
     expertise: []
@@ -143,7 +143,7 @@ aberrant-cultist-initiate:
     main:
       base: Tentacle
       display_name: "Aberrant Tentacle"
-  secondary_damage_type: Psychic
+      secondary_damage_type: Psychic
   skills:
     proficiency: [Deception, Religion, Persuasion]
     expertise: []
