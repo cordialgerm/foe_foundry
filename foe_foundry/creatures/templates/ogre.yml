@@ -36,6 +36,8 @@ common: &common
   creature_class: Ogre
   hp_multiplier: 1.2
   damage_multiplier: 1.0
+  monster_dials:
+    damage_multiplier: 2.0
   roles:
     primary: Bruiser
     additional: []
@@ -75,7 +77,7 @@ ogre:
       reach: 10
       damage_multiplier: 1.0
       secondary_damage_type: null
-      set_attacks: 1
+      set_attacks: 2
   saves: []
 ogre-wallsmasha:
   <<: *common

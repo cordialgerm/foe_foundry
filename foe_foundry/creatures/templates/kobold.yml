@@ -59,9 +59,13 @@ kobold:
 
 kobold-warrenguard:
   <<: *common
+  ac_templates: ChainShirt
 kobold-sharpsnout:
   <<: *common
+  ac_templates: NaturalArmor
 kobold-ascendant:
   <<: *common
+  ac_templates: SplintArmor
 kobold-wyrmcaller:
   <<: *common
+  ac_templates: HolyArmor
