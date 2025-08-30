@@ -81,7 +81,6 @@ bandit-veteran:
       base: Shortswords
       damage_multiplier: 1.0
       secondary_damage_type: null
-  saves: [STR, DEX]
 
 bandit-captain:
   <<: *common
@@ -110,8 +109,10 @@ bandit-crime-lord:
   ac_templates:
     - template: StuddedLeatherArmor
       modifier: 1
+  secondary_damage_type: Poison
   attacks:
     reduced_attacks: 1
+    min_attacks: 2
     main:
       base: Pistol
       damage_multiplier: 1.0

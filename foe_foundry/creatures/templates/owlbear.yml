@@ -10,7 +10,7 @@ template:
       cr: 7
     - key: owlbear-cub
       name: Owlbear Cub
-      cr: 0.125
+      cr: 0.5
   environments:
     TangledForest: Native
     Forest: Native
@@ -58,6 +58,7 @@ common: &common
 owlbear:
   <<: *common
   damage_multiplier: 1.15
+  ac_boost: -1
   abilities:
     STR: [Primary, 2]
     DEX: [Medium, 0.5]
@@ -89,8 +90,8 @@ savage-owlbear:
     - WIS
 owlbear-cub:
   <<: *common
-  size: Small
   damage_multiplier: 1.15
+  ac_boost: -1
   abilities:
     STR: [Primary, 2]
     DEX: [Medium, 0.5]

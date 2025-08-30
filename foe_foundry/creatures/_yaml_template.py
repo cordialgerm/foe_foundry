@@ -310,7 +310,11 @@ def parse_statblock_from_yaml(
     # Apply attack reduction
     reduced_attacks = merged_data.get("reduced_attacks")
     if reduced_attacks:
-        statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks)
+        attacks_data = merged_data.get("attacks", {})
+        min_attacks = attacks_data.get("min_attacks", 1)  # Get from attacks section if available
+        if min_attacks == 1:
+            min_attacks = merged_data.get("min_attacks", 1)  # Fall back to top level
+        statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks, min_attacks=min_attacks)
 
     # Apply set_attacks from attacks section or top level
     attacks_data = merged_data.get("attacks", {})
@@ -319,6 +323,11 @@ def parse_statblock_from_yaml(
         set_attacks = merged_data.get("set_attacks")
     if set_attacks is not None:
         statblock = statblock.with_set_attacks(set_attacks)
+
+    # Apply ac_boost if specified
+    ac_boost = merged_data.get("ac_boost")
+    if ac_boost is not None:
+        statblock = statblock.copy(ac_boost=ac_boost)
 
     # Apply monster dials if specified
     monster_dials_data = merged_data.get("monster_dials")
