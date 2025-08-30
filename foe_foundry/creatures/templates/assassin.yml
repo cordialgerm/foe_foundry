@@ -38,7 +38,9 @@ common:
   speed:
     walk: 30
     climb: 30
-  hp_multiplier: 0.85
+  hp_multiplier: 1.0
+  monster_dials:
+    hp_multiplier: 0.85
   damage_multiplier: 1.0
   roles:
     primary: Ambusher

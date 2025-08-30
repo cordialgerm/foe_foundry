@@ -27,7 +27,9 @@ common: &common
   languages:
     - Common
   creature_class: Spy
-  hp_multiplier: 0.85
+  hp_multiplier: 1.0
+  monster_dials:
+    hp_multiplier: 0.85
   damage_multiplier: 1.0
   speed:
     walk: 30
@@ -42,7 +44,6 @@ common: &common
     WIS: [Medium, 1]
     CHA: [Medium, 1]
   attacks:
-    set_attacks: 2
     main:
       base: Daggers
       display_name: "Covert Blade"
@@ -65,19 +66,11 @@ common: &common
 
 spy:
   <<: *common
-  attacks:
-    set_attacks: 1
-    main:
-      base: Daggers
-      display_name: "Covert Blade"
-      damage_multiplier: 1.0
-      secondary_damage_type: Poison
-    secondary:
-      base: HandCrossbow
-      display_name: "Concealed Crossbow"
+  reduced_attacks: 1
 
 elite-spy:
   <<: *common
+  reduced_attacks: 1
   ac_templates:
     - template: StuddedLeatherArmor
       modifier: 1
@@ -90,17 +83,11 @@ elite-spy:
       - SleightOfHand
       - Stealth
       - Initiative
-    expertise:
-      - Stealth
-      - Perception
-      - Initiative
-  saves:
-    - CON
-    - DEX
-    - INT
-    - WIS
+    expertise: []
+  saves: []
 spy-master:
   <<: *common
+  reduced_attacks: 2
   ac_templates:
     - template: StuddedLeatherArmor
       modifier: 2
