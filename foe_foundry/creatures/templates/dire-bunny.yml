@@ -41,7 +41,7 @@ common: &common
     main:
       base: Bite
       display_name: Rabid Bite
-  secondary_damage_type: Poison
+      secondary_damage_type: Poison
   skills:
     proficiency:
       - Perception

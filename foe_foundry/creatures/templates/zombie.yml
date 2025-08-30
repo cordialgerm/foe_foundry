@@ -54,7 +54,6 @@ common: &common
     main:
       base: Slam
       display_name: "Rotten Grasp"
-      split_secondary_damage: true
       secondary_damage_type: Poison
   senses:
     darkvision: 60
@@ -75,7 +74,6 @@ zombie:
     main:
       base: Slam
       display_name: "Rotten Grasp"
-      split_secondary_damage: false
 
 zombie-brute:
   <<: *common
@@ -88,14 +86,11 @@ zombie-gravewalker:
   size: Medium
   hp_multiplier: 1.5
   speed: -10
-  secondary_damage_type: null
   attacks:
     set_attacks: 2
     main:
       base: Slam
       display_name: "Rotten Grasp"
-      split_secondary_damage: false
-      secondary_damage_type: null
 
 zombie-ogre:
   <<: *common
