@@ -320,6 +320,19 @@ def parse_statblock_from_yaml(
     if set_attacks is not None:
         statblock = statblock.with_set_attacks(set_attacks)
 
+    # Apply monster dials if specified
+    monster_dials_data = merged_data.get("monster_dials")
+    if monster_dials_data:
+        from foe_foundry.statblocks.dials import MonsterDials
+        dials = MonsterDials(
+            hp_multiplier=monster_dials_data.get("hp_multiplier", 1.0),
+            ac_modifier=monster_dials_data.get("ac_modifier", 0),
+            multiattack_modifier=monster_dials_data.get("multiattack_modifier", 0),
+            attack_hit_modifier=monster_dials_data.get("attack_hit_modifier", 0),
+            attack_damage_multiplier=monster_dials_data.get("attack_damage_multiplier", 1.0),
+        )
+        statblock = statblock.apply_monster_dials(dials)
+
     return statblock
 
 
