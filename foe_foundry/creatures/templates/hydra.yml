@@ -19,7 +19,7 @@ template:
   species: []
 common: &common
   creature_type: Monstrosity
-  additional_creature_types: [Fiend]
+  additional_creature_types: [Monstrosity, Fiend]
   size: Huge
   languages: []
   creature_class: Hydra

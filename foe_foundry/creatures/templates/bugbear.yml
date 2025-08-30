@@ -25,6 +25,7 @@ common: &common
   creature_type: Humanoid
   creature_subtype: Goblinoid
   additional_creature_types:
+    - Humanoid
     - Fey
   size: Medium
   languages:

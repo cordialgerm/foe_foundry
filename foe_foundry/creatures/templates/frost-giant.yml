@@ -28,8 +28,13 @@ common: &common
     - Common
     - Giant
   creature_class: Frost Giant
-  hp_multiplier: 1.0
+  hp_multiplier: 1.15
   damage_multiplier: 1.0
+  speed:
+    walk: 40
+  immunities:
+    damage_types:
+      - Cold
   ac_templates: PatchworkArmor
   roles:
     primary: Bruiser
@@ -42,15 +47,15 @@ common: &common
     WIS: ["Default", -2]
     CHA: ["Default", 2]
   attacks:
+    set_attacks: 2
     main:
       base: Greataxe
+      display_name: "Biting Greataxe"
       damage_multiplier: 1.0
+      reach: 10
       secondary_damage_type: Cold
   skills:
     proficiency:
-      - Insight
-      - Perception
-      - Initiative
       - Athletics
       - Perception
       - Survival
