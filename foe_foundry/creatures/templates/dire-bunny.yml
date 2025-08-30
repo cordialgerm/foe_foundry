@@ -18,7 +18,7 @@ common: &common
   size: Medium
   languages: []
   creature_class: Bunny
-  hp_multiplier: 0.5
+  hp_multiplier: 0.8
   damage_multiplier: 1.0
   ac_templates: NaturalArmor
   speed:
@@ -33,14 +33,15 @@ common: &common
   abilities:
     STR: Default
     DEX: [Primary, 2]
-    CON: [Default, 2]
-    INT: [Default, -7]
-    WIS: [Default, 2]
-    CHA: [Default, -4]
+    CON: [Constitution, -2]
+    INT: [NoScaling, -7]
+    WIS: [NoScaling, 2]
+    CHA: [NoScaling, -4]
   attacks:
     main:
       base: Bite
-      secondary_damage_type: Poison
+      display_name: Rabid Bite
+  secondary_damage_type: Poison
   skills:
     proficiency:
       - Perception
@@ -50,7 +51,10 @@ common: &common
       - Perception
       - Initiative
   saves: []
+
 dire-bunny:
   <<: *common
+
 dire-bunny-matriarch:
   <<: *common
+  size: Large

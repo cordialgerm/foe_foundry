@@ -297,6 +297,12 @@ def parse_statblock_from_yaml(
         merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type"),
         settings.rng,
     )
+    # Also check for top-level secondary_damage_type (takes precedence)
+    if "secondary_damage_type" in merged_data:
+        secondary_damage_type = parse_secondary_damage_type_from_yaml(
+            merged_data.get("secondary_damage_type"),
+            settings.rng,
+        )
     if secondary_damage_type:
         statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
 

@@ -304,4 +304,4 @@ class Attack:
         return self.description
 
     def __eq__(self, value: object) -> bool:
-        return isinstance(value, Attack) and self.name == value.name
+        return isinstance(value, Attack) and self.description == value.description

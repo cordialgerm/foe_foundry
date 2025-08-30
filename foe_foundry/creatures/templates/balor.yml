@@ -60,8 +60,9 @@ common:
       base: Greatsword
       display_name: Lightning Blade
       damage_multiplier: 1.0
-      secondary_damage_type: Fire
+      damage_type: Lightning
   primary_damage_type: Lightning
+  secondary_damage_type: Fire
   skills:
     proficiency: [Perception, Initiative]
     expertise: [Initiative]
