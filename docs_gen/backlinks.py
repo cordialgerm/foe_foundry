@@ -79,7 +79,7 @@ class BlogBacklinks:
             if not url.startswith("/blog/"):
                 continue
 
-            self.log.info(f"Blog {page.url} links to {file.url}")
+            self.log.debug(f"Blog {page.url} links to {file.url}")
 
             backlink = Backlink(
                 src_url=page.url, src_title=str(page.title), dst_url=file.url

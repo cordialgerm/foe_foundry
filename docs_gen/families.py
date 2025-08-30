@@ -4,8 +4,14 @@ from pathlib import Path
 import frontmatter
 import mkdocs_gen_files
 
+from .types import FilesToGenerate
 
-def generate_families_index():
+
+def generate_families_content() -> FilesToGenerate:
+    """Generate families index content without writing to mkdocs_gen_files.
+
+    Returns FilesToGenerate with the files to be written.
+    """
     monsters_dir = Path("docs/families")
 
     monster_list = []
@@ -40,6 +46,16 @@ def generate_families_index():
     for title, slug in monster_list:
         lines.append(f"- [{title}]({slug}/)")
 
+    return FilesToGenerate(
+        name="families", files={"families/index.md": "\n".join(lines)}
+    )
+
+
+def generate_families_index():
+    """Generate families index and write directly to mkdocs_gen_files."""
+    result = generate_families_content()
+
     # Write it into the virtual MkDocs build
-    with mkdocs_gen_files.open("families/index.md", "w") as f:
-        f.write("\n".join(lines))
+    for filename, content in result.files.items():
+        with mkdocs_gen_files.open(filename, "w") as f:
+            f.write(content)
