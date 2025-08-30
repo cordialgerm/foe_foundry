@@ -315,23 +315,61 @@ export class MonsterBuilder extends LitElement {
         display: none; /* Chrome, Safari, Opera */
       }
 
-      /* Swipe indicator gradient - shows when there's more content to scroll */
+      /* Right scroll indicator - shows when there's more content to scroll right */
       .nav-pills::after {
-        content: '';
+        content: '›';
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 20px;
-        background: linear-gradient(to left, var(--bg-color, #ffffff) 0%, transparent 100%);
+        top: 50%;
+        right: 4px;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--bs-primary, #0d6efd);
+        text-shadow: 0 0 4px var(--bg-color, #ffffff), 0 0 8px var(--bg-color, #ffffff);
         pointer-events: none; /* Don't interfere with scrolling */
         opacity: 0;
         transition: opacity 0.3s ease;
-        z-index: 1;
+        z-index: 2;
+        background: radial-gradient(circle, var(--bg-color, #ffffff) 40%, transparent 70%);
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      /* Show indicator when scrollable content exists */
-      .nav-pills.has-scroll::after {
+      /* Left scroll indicator - shows when there's content scrolled past the left edge */
+      .nav-pills::before {
+        content: '‹';
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--bs-primary, #0d6efd);
+        text-shadow: 0 0 4px var(--bg-color, #ffffff), 0 0 8px var(--bg-color, #ffffff);
+        pointer-events: none; /* Don't interfere with scrolling */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 2;
+        background: radial-gradient(circle, var(--bg-color, #ffffff) 40%, transparent 70%);
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Show right indicator when there's more content to scroll right */
+      .nav-pills.has-scroll-right::after {
+        opacity: 1;
+      }
+
+      /* Show left indicator when content has been scrolled past the left edge */
+      .nav-pills.has-scroll-left::before {
         opacity: 1;
       }
 
@@ -456,6 +494,18 @@ export class MonsterBuilder extends LitElement {
     this.resizeObserver.observe(this);
   }
 
+  private setupNavPillsScrollListener() {
+    if (!this.isMobile) return;
+    
+    const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
+    if (!navPills) return;
+
+    // Listen for scroll events to update arrow indicators
+    navPills.addEventListener('scroll', () => {
+      this.updateNavPillsScrollIndicator();
+    }, { passive: true });
+  }
+
   private checkIsMobile() {
     const wasMobile = this.isMobile;
     this.isMobile = LAYOUT_CONFIG.isMobile(window.innerWidth);
@@ -471,16 +521,38 @@ export class MonsterBuilder extends LitElement {
   private updateNavPillsScrollIndicator() {
     if (!this.isMobile) return;
     
-    const navPills = this.shadowRoot?.querySelector('.nav-pills');
+    const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
     if (!navPills) return;
 
     // Check if content is scrollable
     const isScrollable = navPills.scrollWidth > navPills.clientWidth;
     
     if (isScrollable) {
-      navPills.classList.add('has-scroll');
+      // Check scroll position to determine which arrows to show
+      const scrollLeft = navPills.scrollLeft;
+      const maxScrollLeft = navPills.scrollWidth - navPills.clientWidth;
+      
+      // Show left arrow if scrolled past the beginning (with small tolerance)
+      const hasScrollLeft = scrollLeft > 5;
+      
+      // Show right arrow if not scrolled to the end (with small tolerance)
+      const hasScrollRight = scrollLeft < (maxScrollLeft - 5);
+      
+      // Update CSS classes for arrow visibility
+      if (hasScrollLeft) {
+        navPills.classList.add('has-scroll-left');
+      } else {
+        navPills.classList.remove('has-scroll-left');
+      }
+      
+      if (hasScrollRight) {
+        navPills.classList.add('has-scroll-right');
+      } else {
+        navPills.classList.remove('has-scroll-right');
+      }
     } else {
-      navPills.classList.remove('has-scroll');
+      // Remove all scroll indicators when content doesn't overflow
+      navPills.classList.remove('has-scroll-left', 'has-scroll-right');
     }
   }
 
@@ -732,6 +804,7 @@ export class MonsterBuilder extends LitElement {
     // Update scroll indicator after initial render
     requestAnimationFrame(() => {
       this.updateNavPillsScrollIndicator();
+      this.setupNavPillsScrollListener();
     });
   }
 

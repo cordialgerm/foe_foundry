@@ -194,12 +194,48 @@ describe('MonsterBuilder Component', () => {
         value: 300,
         configurable: true
       });
+      Object.defineProperty(navPillsContainer, 'scrollLeft', {
+        value: 0,
+        configurable: true
+      });
 
       // Trigger the scroll indicator update
       (element as any).updateNavPillsScrollIndicator();
 
-      // Should have the has-scroll class when content overflows
-      expect(navPillsContainer.classList.contains('has-scroll')).to.be.true;
+      // Should have the right scroll indicator when at the beginning
+      expect(navPillsContainer.classList.contains('has-scroll-right')).to.be.true;
+      // Should not have left scroll indicator when at the beginning
+      expect(navPillsContainer.classList.contains('has-scroll-left')).to.be.false;
+    });
+
+    it('should show left arrow when scrolled past beginning', async () => {
+      // Force mobile mode
+      element.isMobile = true;
+      await element.updateComplete;
+
+      const navPillsContainer = element.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
+      expect(navPillsContainer).to.exist;
+
+      // Mock scrollable content scrolled partway through
+      Object.defineProperty(navPillsContainer, 'scrollWidth', {
+        value: 500,
+        configurable: true
+      });
+      Object.defineProperty(navPillsContainer, 'clientWidth', {
+        value: 300,
+        configurable: true
+      });
+      Object.defineProperty(navPillsContainer, 'scrollLeft', {
+        value: 100, // Scrolled past the beginning
+        configurable: true
+      });
+
+      // Trigger the scroll indicator update
+      (element as any).updateNavPillsScrollIndicator();
+
+      // Should have both left and right scroll indicators when in the middle
+      expect(navPillsContainer.classList.contains('has-scroll-left')).to.be.true;
+      expect(navPillsContainer.classList.contains('has-scroll-right')).to.be.true;
     });
 
     it('should hide scroll indicator when nav pills do not overflow', async () => {
@@ -223,8 +259,9 @@ describe('MonsterBuilder Component', () => {
       // Trigger the scroll indicator update
       (element as any).updateNavPillsScrollIndicator();
 
-      // Should not have the has-scroll class when content doesn't overflow
-      expect(navPillsContainer.classList.contains('has-scroll')).to.be.false;
+      // Should not have any scroll indicators when content doesn't overflow
+      expect(navPillsContainer.classList.contains('has-scroll-left')).to.be.false;
+      expect(navPillsContainer.classList.contains('has-scroll-right')).to.be.false;
     });
 
     it('should handle statblock updates in mobile mode', async () => {
