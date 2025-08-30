@@ -53,6 +53,11 @@ common: &common
     proficiency: [Intimidation]
     expertise: []
   ac_templates: LeatherArmor
+  attacks:
+    main:
+      base: Maul
+    secondary:
+      base: Crossbow
 
 # Thug variant (basic thugs)
 thug:
@@ -61,11 +66,6 @@ thug:
     primary: Bruiser
     additional: [Bruiser]
   ac_templates: LeatherArmor
-  attacks:
-    main:
-      base: Maul
-    secondary:
-      base: Crossbow
   saves: []
 
 veteran-thug:
@@ -81,6 +81,9 @@ elite-thug:
   roles:
     primary: Bruiser
     additional: [Bruiser]
+  ac_templates:
+    - template: LeatherArmor
+      modifier: 1
   saves: [STR, CON, CHA]
 
 # Brawler variant

@@ -282,11 +282,6 @@ def parse_statblock_from_yaml(
         caster_type = getattr(CasterType, caster_type_name)
         statblock = statblock.grant_spellcasting(caster_type=caster_type)
 
-    # Apply attack reduction
-    reduced_attacks = merged_data.get("attacks", {}).get("reduced_attacks")
-    if reduced_attacks:
-        statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks)
-
     # Apply set_attacks from attacks section
     set_attacks = merged_data.get("attacks", {}).get("set_attacks")
     if set_attacks is not None:
@@ -692,7 +687,7 @@ def parse_ac_templates_from_yaml(
                 if "ac" not in template_data:
                     raise ValueError("'ac' is required for flat template")
                 ac_value = flat(int(template_data["ac"]))
-                templates.append(template_class(ac_value))
+                templates.append(ac_value)
             else:
                 templates.append(template_class)
                 modifiers.append(modifier)
@@ -754,7 +749,8 @@ def parse_secondary_damage_type_from_yaml(
 
 
 def parse_single_attack_from_yaml(
-    attack_data: Dict[str, Any], rng: np.random.Generator
+    attack_data: Dict[str, Any],
+    rng: np.random.Generator,
 ) -> Optional[AttackTemplate]:
     """
     Parse a single attack template from YAML data.
@@ -823,7 +819,13 @@ def parse_single_attack_from_yaml(
         attack_data.get("secondary_damage_type"), rng
     )
     if secondary_damage_type:
-        attack = attack.copy(secondary_damage_type=secondary_damage_type)
+        attack = attack.copy(
+            secondary_damage_type=secondary_damage_type,
+        )
+
+    split_secondary_damage = attack_data.get("split_secondary_damage")
+    if split_secondary_damage is not None:
+        attack = attack.copy(split_secondary_damage=split_secondary_damage)
 
     # Apply damage multiplier if specified
     damage_multiplier = attack_data.get("damage_multiplier", 1.0)
@@ -871,7 +873,10 @@ def parse_attacks_from_yaml(
     # Secondary attack
     secondary_attack = attacks_data.get("secondary", {})
     if secondary_attack and secondary_attack is not None:
-        attack = parse_single_attack_from_yaml(secondary_attack, settings.rng)
+        attack = parse_single_attack_from_yaml(
+            secondary_attack,
+            settings.rng,
+        )
         if attack:
             attacks.append(attack)
 

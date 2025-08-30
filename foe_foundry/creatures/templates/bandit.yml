@@ -104,12 +104,14 @@ bandit-crime-lord:
     - template: StuddedLeatherArmor
       modifier: 1
   attacks:
-    reduced_attacks: 1
+    set_attacks: 2
     main:
       base: Pistol
+      secondary_damage_type: Poison
       damage_multiplier: 1.0
     secondary:
       base: Shortswords
+      secondary_damage_type: Poison
       damage_multiplier: 1.0
   skills:
     proficiency: [Stealth, Deception, Athletics, Perception, Initiative]

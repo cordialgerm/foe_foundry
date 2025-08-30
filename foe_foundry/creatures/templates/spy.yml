@@ -31,6 +31,7 @@ common: &common
   speed:
     walk: 30
     climb: 30
+  secondary_damage_type: Poison
   roles:
     primary: Ambusher
     additional: [Skirmisher, Artillery]
@@ -44,7 +45,6 @@ common: &common
     main:
       base: Daggers
       display_name: "Covert Blade"
-      secondary_damage_type: Poison
     secondary:
       base: HandCrossbow
       display_name: "Concealed Crossbow"
@@ -62,11 +62,9 @@ common: &common
 
 spy:
   <<: *common
-  reduced_attacks: 1
 
 elite-spy:
   <<: *common
-  reduced_attacks: 1
   ac_templates:
     - template: StuddedLeatherArmor
       modifier: 1
@@ -83,7 +81,6 @@ elite-spy:
   saves: []
 spy-master:
   <<: *common
-  reduced_attacks: 2
   ac_templates:
     - template: StuddedLeatherArmor
       modifier: 2

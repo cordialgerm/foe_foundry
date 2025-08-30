@@ -36,7 +36,7 @@ common: &common
       base: Slam
       display_name: "Pseudopod"
       primary_damage_type: Acid
-  reduced_attacks: 1
+    set_attacks: 1
   ac_templates:
     - template: Unarmored
   senses:
@@ -64,3 +64,9 @@ gelatinous-cube:
 ancient-gelatinous-cube:
   <<: *common
   size: Huge
+  attacks:
+    main:
+      base: Slam
+      display_name: "Pseudopod"
+      primary_damage_type: Acid
+    set_attacks: 2
