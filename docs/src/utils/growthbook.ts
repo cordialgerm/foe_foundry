@@ -24,7 +24,7 @@ export function getGrowthBook(): GrowthBook {
             console.log("Experiment Viewed", {
                 experimentId: experiment.key,
                 variationId: result.key,
-            })
+            });
         };
         const trackingPlugin = thirdPartyTrackingPlugin({
             additionalCallback: trackingCallback
