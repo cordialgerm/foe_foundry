@@ -300,12 +300,11 @@ def parse_statblock_from_yaml(
 
     # Apply spellcasting
     spellcasting_data = merged_data.get("spellcasting", {})
-    if spellcasting_data:
-        caster_type_name = spellcasting_data.get("caster_type")
-        if caster_type_name and CasterType:
-            caster_type = getattr(CasterType, caster_type_name, None)
-            if caster_type:
-                statblock = statblock.grant_spellcasting(caster_type=caster_type)
+    caster_type_name = spellcasting_data.get("caster_type") or merged_data.get("caster_type")
+    if caster_type_name and CasterType:
+        caster_type = getattr(CasterType, caster_type_name, None)
+        if caster_type:
+            statblock = statblock.grant_spellcasting(caster_type=caster_type)
 
     # Apply attack reduction
     reduced_attacks = merged_data.get("reduced_attacks")

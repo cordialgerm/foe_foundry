@@ -31,17 +31,18 @@ common: &common
   damage_multiplier: 1.0
   roles:
     primary: Bruiser
-    additional: []
+    additional: [Soldier]
   abilities:
     STR: Primary
     DEX: [Medium, 2]
     CON: [Constitution, 2]
     INT: [Default, -1]
-    WIS: Default
+    WIS: [Default, 1]
     CHA: [Default, -1]
   ac_templates:
     - { template: BerserkersDefense, modifier: 0 }
-  condition_immunities: [Frightened]
+  immunities:
+    conditions: [Frightened]
   attacks:
     main:
       base: Greataxe
