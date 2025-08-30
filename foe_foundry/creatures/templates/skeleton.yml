@@ -81,15 +81,14 @@ skeletal-grave-guard:
     main:
       base: SpearAndShield
       display_name: "Bone Spear"
+      secondary_damage_type: Necrotic
     secondary:
       base: Shortbow
       display_name: "Bone Bow"
       damage_multiplier: 0.8
-  secondary_damage_type: Necrotic
   immunities:
     damage_types: [Poison, Necrotic]
     conditions: [Poisoned]
-
   saves: [CON]
 
 burning-skeleton:
@@ -103,11 +102,11 @@ burning-skeleton:
     main:
       base: Greatsword
       display_name: "Burning Blade"
+      secondary_damage_type: Fire
     secondary:
       base: Firebolt
       display_name: "Hurl Flames"
       damage_multiplier: 0.8
-  secondary_damage_type: Fire
   saves: [CON]
   immunities:
     damage_types: [Poison, Fire]
@@ -124,11 +123,11 @@ burning-skeletal-champion:
     main:
       base: Greatsword
       display_name: "Burning Blade"
+      secondary_damage_type: Fire
     secondary:
       base: Firebolt
       display_name: "Hurl Flames"
       damage_multiplier: 0.8
-  secondary_damage_type: Fire
   saves: [CON]
   immunities:
     damage_types: [Poison, Fire]
@@ -145,11 +144,11 @@ freezing-skeleton:
     main:
       base: Greatsword
       display_name: "Freezing Blade"
+      secondary_damage_type: Cold
     secondary:
       base: Frostbolt
       display_name: "Deathly Freeze"
       damage_multiplier: 0.8
-  secondary_damage_type: Cold
   saves: [CON]
   immunities:
     damage_types: [Poison, Cold]
@@ -166,11 +165,11 @@ freezing-skeletal-champion:
     main:
       base: Greatsword
       display_name: "Freezing Blade"
+      secondary_damage_type: Cold
     secondary:
       base: Frostbolt
       display_name: "Deathly Freeze"
       damage_multiplier: 0.8
-  secondary_damage_type: Cold
   saves: [CON]
   immunities:
     damage_types: [Poison, Cold]

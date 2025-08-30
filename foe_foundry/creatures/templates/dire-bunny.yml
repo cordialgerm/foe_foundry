@@ -18,7 +18,7 @@ common: &common
   size: Medium
   languages: []
   creature_class: Bunny
-  hp_multiplier: 1.0
+  hp_multiplier: 0.5
   damage_multiplier: 1.0
   ac_templates: NaturalArmor
   speed:
@@ -31,11 +31,11 @@ common: &common
     primary: Skirmisher
     additional: []
   abilities:
-    STR: [Default, -3]
-    DEX: Primary
-    CON: [Default, 1]
+    STR: Default
+    DEX: [Primary, 2]
+    CON: [Default, 2]
     INT: [Default, -7]
-    WIS: [Default, 1]
+    WIS: [Default, 2]
     CHA: [Default, -4]
   attacks:
     main:
@@ -45,6 +45,7 @@ common: &common
     proficiency:
       - Perception
       - Initiative
+      - Stealth
     expertise:
       - Perception
       - Initiative

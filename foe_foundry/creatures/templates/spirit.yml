@@ -77,10 +77,10 @@ revenant:
 wraith:
   <<: *common
   ac_templates:
-    - template: Flat
+    - template: flat
       ac: 13
 wraith-shadelord:
   <<: *common
   ac_templates:
-    - template: Flat
+    - template: flat
       ac: 13
