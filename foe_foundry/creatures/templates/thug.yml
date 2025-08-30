@@ -68,6 +68,7 @@ thug:
       base: Crossbow
       damage_multiplier: 0.7
       range: 100
+      range_max: null
   primary_damage_type: Bludgeoning
   saves: []
 

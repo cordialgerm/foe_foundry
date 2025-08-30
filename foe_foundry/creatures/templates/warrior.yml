@@ -145,6 +145,7 @@ line-infantry-veteran:
       base: Crossbow
       damage_multiplier: 0.9
       secondary_damage_type: null
+  uses_shield: true
   skills:
     proficiency: [Athletics, Perception, Initiative]
     expertise: []

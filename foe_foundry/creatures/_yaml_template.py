@@ -847,8 +847,20 @@ def parse_single_attack_from_yaml(
 
     # Apply range if specified
     range_val = attack_data.get("range")
+    range_max_val = attack_data.get("range_max")
     if range_val and hasattr(attack, "copy"):
-        attack = attack.copy(range=range_val)
+        # Handle both simple range (100) and range/max format (100/400)
+        if isinstance(range_val, str) and "/" in range_val:
+            range_parts = range_val.split("/")
+            range_normal = int(range_parts[0])
+            range_max = int(range_parts[1])
+            attack = attack.copy(range=range_normal, range_max=range_max)
+        else:
+            copy_args = {"range": range_val}
+            # If range_max is explicitly specified in YAML (even as null), override it
+            if "range_max" in attack_data:
+                copy_args["range_max"] = range_max_val
+            attack = attack.copy(**copy_args)
 
     # Apply damage scalar if specified
     damage_scalar = attack_data.get("damage_scalar")
