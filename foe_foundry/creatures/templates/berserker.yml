@@ -37,7 +37,7 @@ common: &common
     DEX: [Medium, 2]
     CON: [Constitution, 2]
     INT: [Default, -1]
-    WIS: [Default, 1]
+    WIS: Default
     CHA: [Default, -1]
   ac_templates:
     - { template: BerserkersDefense, modifier: 0 }
