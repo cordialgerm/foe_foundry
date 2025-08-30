@@ -19,7 +19,7 @@ template:
   species: []
 common: &common
   creature_type: Monstrosity
-  additional_creature_types: [Fiend]
+  additional_types: [Fiend]
   size: Huge
   languages: []
   creature_class: Hydra
@@ -46,7 +46,8 @@ common: &common
   senses:
     darkvision: 60
   speed:
-    swim: 30
+    walk: 40
+    swim: 40
   resistances:
     damage_types: [Acid]
   immunities:

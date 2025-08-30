@@ -51,7 +51,8 @@ common: &common
   ac_templates:
     - template: PlateArmor
       modifier: 0
-  condition_immunities: [Frightened]
+  immunities:
+    conditions: [Frightened]
   attacks:
     main:
       base: Greatsword
@@ -77,7 +78,8 @@ knight-of-the-realm:
     proficiency: [Athletics, Perception, Persuasion, Initiative]
     expertise: []
   saves: [CON, STR, WIS, CHA]
-  condition_immunities: [Frightened, Charmed]
+  immunities:
+    conditions: [Frightened, Charmed]
 
 questing-knight:
   <<: *common
@@ -92,7 +94,8 @@ questing-knight:
     proficiency: [Athletics, Perception, Persuasion, Initiative]
     expertise: []
   saves: [CON, STR, WIS, CHA]
-  condition_immunities: [Frightened, Charmed]
+  immunities:
+    conditions: [Frightened, Charmed]
 
 paragon-knight:
   <<: *common
@@ -107,4 +110,5 @@ paragon-knight:
     proficiency: [Athletics, Perception, Persuasion, Initiative]
     expertise: []
   saves: [CON, STR, WIS, CHA]
-  condition_immunities: [Frightened, Charmed]
+  immunities:
+    conditions: [Frightened, Charmed]
