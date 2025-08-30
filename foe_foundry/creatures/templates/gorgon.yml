@@ -30,11 +30,11 @@ common: &common
     WIS: [Default, 1]
     CHA: [Default, -5]
   attacks:
+    set_attacks: 2
     main:
       base: Stomp
       display_name: "Iron Hooves"
       secondary_damage_type: null
-      set_attacks: 2
   ac_templates:
     - template: NaturalPlating
       ac_modifier: 2

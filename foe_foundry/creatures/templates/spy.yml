@@ -42,6 +42,7 @@ common: &common
     WIS: [Medium, 1]
     CHA: [Medium, 1]
   attacks:
+    set_attacks: 2
     main:
       base: Daggers
       display_name: "Covert Blade"
@@ -51,7 +52,6 @@ common: &common
       base: HandCrossbow
       display_name: "Concealed Crossbow"
   ac_templates: Unarmored
-  attack_reduction: 1
   skills:
     proficiency:
       - Deception
@@ -65,6 +65,17 @@ common: &common
 
 spy:
   <<: *common
+  attacks:
+    set_attacks: 1
+    main:
+      base: Daggers
+      display_name: "Covert Blade"
+      damage_multiplier: 1.0
+      secondary_damage_type: Poison
+    secondary:
+      base: HandCrossbow
+      display_name: "Concealed Crossbow"
+
 elite-spy:
   <<: *common
   ac_templates:
@@ -93,7 +104,6 @@ spy-master:
   ac_templates:
     - template: StuddedLeatherArmor
       modifier: 2
-  attack_reduction: 2
   skills:
     proficiency:
       - Deception

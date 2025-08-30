@@ -90,12 +90,12 @@ class YamlMonsterTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         stats = parse_statblock_from_yaml(self.yaml_data, settings)
         attacks = parse_attacks_from_yaml(self.yaml_data, settings)
-        
+
         # Apply attack template alterations (like uses_shield)
         if attacks:
             primary_attack = attacks[0]
             stats = primary_attack.alter_base_stats(stats)
-        
+
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
@@ -219,7 +219,7 @@ def parse_statblock_from_yaml(
     movement = parse_movement_from_yaml(merged_data)
     if movement:
         statblock = statblock.copy(speed=movement)
-    
+
     # Apply speed modifiers
     speed_modifier = parse_speed_modifier_from_yaml(merged_data)
     if speed_modifier is not None:
@@ -308,9 +308,9 @@ def parse_statblock_from_yaml(
                 statblock = statblock.grant_spellcasting(caster_type=caster_type)
 
     # Apply attack reduction
-    attack_reduction = merged_data.get("attack_reduction")
-    if attack_reduction:
-        statblock = statblock.with_reduced_attacks(reduce_by=attack_reduction)
+    reduced_attacks = merged_data.get("reduced_attacks")
+    if reduced_attacks:
+        statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks)
 
     # Apply set_attacks from attacks section or top level
     attacks_data = merged_data.get("attacks", {})
@@ -495,19 +495,19 @@ def parse_movement_from_yaml(data: Dict[str, Any]) -> Optional[Movement]:
 def parse_speed_modifier_from_yaml(data: Dict[str, Any]) -> Optional[int]:
     """
     Parse speed modifier from YAML.
-    
+
     Args:
         data: YAML data containing speed section
-        
+
     Returns:
         Speed modifier as integer, or None if no modifier
     """
     speed_data = data.get("speed", {})
-    
+
     # Handle integer speed modifiers
     if isinstance(speed_data, (int, float)):
         return int(speed_data)
-    
+
     return None
 
 

@@ -36,11 +36,11 @@ common: &common
     WIS: Default
     CHA: [Default, -3]
   attacks:
+    set_attacks: 5
     main:
       base: Bite
       display_name: "Flesh-Dissolving Bites"
       secondary_damage_type: Acid
-      set_attacks: 5
   ac_templates:
     - template: NaturalArmor
   senses:

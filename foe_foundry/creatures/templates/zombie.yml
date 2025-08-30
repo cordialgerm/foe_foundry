@@ -70,39 +70,39 @@ zombie:
   size: Medium
   hp_multiplier: 1.0
   speed: -10
-  reduce_attacks: 1
+  reduced_attacks: 1
 
 zombie-brute:
   <<: *common
   size: Medium
   hp_multiplier: 1.5
   speed: -10
-  reduce_attacks: 1
+  reduced_attacks: 1
 
 zombie-gravewalker:
   <<: *common
   size: Medium
   hp_multiplier: 1.5
   speed: -10
-  reduce_attacks: 1
+  reduced_attacks: 1
   saves: [WIS, CON]
 
 zombie-ogre:
   <<: *common
   size: Large
   hp_multiplier: 1.5
-  reduce_attacks: 1
+  reduced_attacks: 1
 
 zombie-giant:
   <<: *common
   size: Huge
   hp_multiplier: 1.5
-  reduce_attacks: 1
+  reduced_attacks: 1
   saves: [WIS, CON]
 
 zombie-titan:
   <<: *common
   size: Huge
   hp_multiplier: 1.5
-  reduce_attacks: 2
+  reduced_attacks: 2
   saves: [WIS, CON]

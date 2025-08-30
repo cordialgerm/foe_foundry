@@ -32,6 +32,7 @@ common: &common
     WIS: [Medium, -6]
     CHA: [NoScaling, -9]
   attacks:
+    reduced_attacks: 1
     main:
       base: Slam
       display_name: "Pseudopod"
@@ -54,7 +55,7 @@ common: &common
       - Exhaustion
       - Frightened
       - Prone
-  attack_reduction: 1
+
   skills:
     proficiency: []
     expertise: []

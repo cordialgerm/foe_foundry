@@ -47,7 +47,7 @@ common: &common
     CHA: Default
   caster_type: Divine
   secondary_damage_type: Radiant
-  reduce_attacks: 1
+  reduced_attacks: 1
   min_attacks: 2
   flags: [HAS_HEALING]
   skills:

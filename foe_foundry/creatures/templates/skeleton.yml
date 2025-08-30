@@ -60,6 +60,7 @@ skeleton:
     additional: []
   ac_templates: Unarmored
   attacks:
+    set_attacks: 1
     main:
       base: Daggers
       display_name: "Bone Blades"
@@ -67,7 +68,6 @@ skeleton:
     secondary:
       base: Shortbow
       display_name: "Bone Bow"
-  set_attacks: 1
   saves: []
 
 skeletal-grave-guard:
@@ -77,6 +77,7 @@ skeletal-grave-guard:
     additional: [Leader]
   ac_templates: Breastplate
   attacks:
+    set_attacks: 2
     main:
       base: SpearAndShield
       display_name: "Bone Spear"
@@ -88,7 +89,7 @@ skeletal-grave-guard:
   immunities:
     damage_types: [Poison, Necrotic]
     conditions: [Poisoned]
-  set_attacks: 2
+
   saves: [CON]
 
 burning-skeleton:
@@ -98,6 +99,7 @@ burning-skeleton:
     additional: []
   ac_templates: Breastplate
   attacks:
+    set_attacks: 2
     main:
       base: Greatsword
       display_name: "Burning Blade"
@@ -107,7 +109,6 @@ burning-skeleton:
       display_name: "Hurl Flames"
       damage_multiplier: 0.8
   secondary_damage_type: Fire
-  set_attacks: 2
   saves: [CON]
   immunities:
     damage_types: [Poison, Fire]
@@ -121,6 +122,7 @@ burning-skeletal-champion:
   damage_multiplier: 1.5
   ac_templates: Breastplate
   attacks:
+    set_attacks: 2
     main:
       base: Greatsword
       display_name: "Burning Blade"
@@ -130,7 +132,6 @@ burning-skeletal-champion:
       display_name: "Hurl Flames"
       damage_multiplier: 0.8
   secondary_damage_type: Fire
-  set_attacks: 2
   saves: [CON]
   immunities:
     damage_types: [Poison, Fire]
@@ -143,6 +144,7 @@ freezing-skeleton:
     additional: []
   ac_templates: Breastplate
   attacks:
+    set_attacks: 2
     main:
       base: Greatsword
       display_name: "Freezing Blade"
@@ -152,7 +154,6 @@ freezing-skeleton:
       display_name: "Deathly Freeze"
       damage_multiplier: 0.8
   secondary_damage_type: Cold
-  set_attacks: 2
   saves: [CON]
   immunities:
     damage_types: [Poison, Cold]
@@ -165,6 +166,7 @@ freezing-skeletal-champion:
     additional: [Leader]
   ac_templates: Breastplate
   attacks:
+    set_attacks: 2
     main:
       base: Greatsword
       display_name: "Freezing Blade"
@@ -174,7 +176,6 @@ freezing-skeletal-champion:
       display_name: "Deathly Freeze"
       damage_multiplier: 0.8
   secondary_damage_type: Cold
-  set_attacks: 2
   saves: [CON]
   immunities:
     damage_types: [Poison, Cold]

@@ -52,7 +52,7 @@ common:
       modifier: 0
   immunities:
     conditions: [Poisoned, Frightened]
-    damage: [Fire, Poison]
+    damage_types: [Fire, Poison]
   damage_resistances: [Cold, Lightning]
   attacks:
     set_attacks: 3

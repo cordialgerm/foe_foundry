@@ -116,6 +116,7 @@ YAML_TEMPLATE_SCHEMA = {
                             ]
                         },
                         "set_attacks": {"type": "number"},
+                        "reduced_attacks": {"type": "number"},
                     },
                     "additionalProperties": False,
                 },
@@ -128,7 +129,6 @@ YAML_TEMPLATE_SCHEMA = {
                     "additionalProperties": False,
                 },
                 "saves": {"type": "array", "items": {"type": "string"}},
-                "condition_immunities": {"type": "array", "items": {"type": "string"}},
                 "immunities": {
                     "type": "object",
                     "properties": {
@@ -198,7 +198,6 @@ YAML_TEMPLATE_SCHEMA = {
                     },
                     "additionalProperties": False,
                 },
-                "attack_reduction": {"type": "number"},
                 # Additional fields found in templates
                 "additional_types": {"type": "array", "items": {"type": "string"}},
                 "caster_type": {"type": "string"},
@@ -208,9 +207,7 @@ YAML_TEMPLATE_SCHEMA = {
                 "multiattack_custom_text": {"type": "string"},
                 "primary_damage_type": {"type": "string"},
                 "reaction_count": {"type": "number"},
-                "reduce_attacks": {"type": "number"},
                 "secondary_damage_type": {"type": "string"},
-                "set_attacks": {"type": "number"},
                 "uses_shield": {"type": "boolean"},
                 # YAML anchor support
                 "<<": {},  # Allow YAML anchors
