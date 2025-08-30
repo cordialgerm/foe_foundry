@@ -40,7 +40,6 @@ common: &common
     main:
       base: ArcaneBurst
       display_name: "Necrotic Blast"
-      secondary_damage_type: null
   ac_templates:
     - template: ArcaneArmor
   caster_type: Arcane

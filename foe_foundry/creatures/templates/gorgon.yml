@@ -36,7 +36,6 @@ common: &common
     main:
       base: Stomp
       display_name: "Iron Hooves"
-      secondary_damage_type: null
   ac_templates:
     - template: NaturalPlating
       ac_modifier: 2

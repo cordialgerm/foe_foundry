@@ -59,11 +59,9 @@ common: &common
     main:
       base: Crossbow
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: SpearAndShield
       damage_multiplier: 1.0
-      secondary_damage_type: null
   skills:
     proficiency: [Perception]
     expertise: []

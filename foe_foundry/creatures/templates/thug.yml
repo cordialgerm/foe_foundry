@@ -123,7 +123,6 @@ brawler:
   ac_templates: LeatherArmor
   attacks:
     main:
-      type: natural
       base: Slam
   primary_damage_type: Bludgeoning
   saves: []

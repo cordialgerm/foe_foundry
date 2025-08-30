@@ -10,7 +10,6 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
-from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
     Monster,
@@ -160,9 +159,8 @@ class _SimulacrumTemplate(MonsterTemplate):
             stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.INT)
 
             # DCs
-            stats = stats.apply_monster_dials(
-                dials=MonsterDials(difficulty_class_modifier=1)
-            )  # need to boost DC to match Archmage
+            # need to boost DC to match Archmage
+            stats = stats.copy(difficulty_class_modifier=1)
 
         return stats, [attack]
 

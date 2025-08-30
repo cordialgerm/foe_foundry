@@ -12,7 +12,7 @@ from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import AbilityScore, Skills, StatScaling
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from .._template import (
     GenerationSettings,
     Monster,
@@ -99,7 +99,8 @@ class _AssassinTemplate(MonsterTemplate):
                 AbilityScore.WIS: (StatScaling.Medium, 1),
                 AbilityScore.CHA: (StatScaling.Medium, 1),
             },
-            hp_multiplier=settings.hp_multiplier,
+            hp_multiplier=0.85
+            * settings.hp_multiplier,  # assassins have lower HP than average
             damage_multiplier=settings.damage_multiplier,
         )
         stats = stats.copy(
@@ -114,10 +115,6 @@ class _AssassinTemplate(MonsterTemplate):
 
         if is_legendary:
             stats = stats.as_legendary()
-
-        ## HP
-        # Assassins have lower HP than average
-        stats = stats.apply_monster_dials(MonsterDials(hp_multiplier=0.85))
 
         # ARMOR CLASS
         stats = stats.add_ac_template(

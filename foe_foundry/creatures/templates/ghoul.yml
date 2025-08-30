@@ -95,5 +95,4 @@ ghast-gravelord:
   resistances:
     damage_types:
       - Necrotic
-  spellcasting:
-    caster_type: Arcane
+  caster_type: Arcane

@@ -45,9 +45,6 @@ common: &common
     INT: ["NoScaling", -7]
     WIS: ["Default", -2.5]
     CHA: ["NoScaling", -9]
-  attacks:
-    main:
-      secondary_damage_type: null
   skills:
     proficiency: []
     expertise: []

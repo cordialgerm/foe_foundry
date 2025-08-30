@@ -141,7 +141,6 @@ aberrant-cultist-initiate:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: natural
       base: Tentacle
       display_name: "Aberrant Tentacle"
   secondary_damage_type: Psychic
@@ -158,7 +157,6 @@ aberrant-cultist:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: natural
       base: Tentacle
       display_name: "Aberrant Tentacle"
   secondary_damage_type: Psychic
@@ -175,7 +173,6 @@ aberrant-cultist-grand-master:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: natural
       base: Tentacle
       display_name: "Aberrant Tentacle"
   secondary_damage_type: Psychic
@@ -193,7 +190,6 @@ death-cultist-initiate:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: spell
       base: Deathbolt
       display_name: "Deathly Ray"
   secondary_damage_type: Necrotic
@@ -210,7 +206,6 @@ death-cultist:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: spell
       base: Deathbolt
       display_name: "Deathly Ray"
   secondary_damage_type: Necrotic
@@ -227,7 +222,6 @@ death-cultist-grand-master:
   ac_templates: UnholyArmor
   attacks:
     main:
-      type: spell
       base: Deathbolt
       display_name: "Deathly Ray"
   secondary_damage_type: Necrotic

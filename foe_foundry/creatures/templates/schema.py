@@ -203,11 +203,9 @@ YAML_TEMPLATE_SCHEMA = {
                 "caster_type": {"type": "string"},
                 "flags": {"type": "object"},
                 "legendary_boost_ac": {"type": "boolean"},
-                "min_attacks": {"type": "number"},
                 "multiattack_custom_text": {"type": "string"},
                 "primary_damage_type": {"type": "string"},
                 "reaction_count": {"type": "number"},
-                "secondary_damage_type": {"type": "string"},
                 "uses_shield": {"type": "boolean"},
                 # YAML anchor support
                 "<<": {},  # Allow YAML anchors

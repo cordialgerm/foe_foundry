@@ -104,7 +104,6 @@ burning-skeleton:
       base: Greatsword
       display_name: "Burning Blade"
     secondary:
-      type: spell
       base: Firebolt
       display_name: "Hurl Flames"
       damage_multiplier: 0.8
@@ -126,7 +125,6 @@ burning-skeletal-champion:
       base: Greatsword
       display_name: "Burning Blade"
     secondary:
-      type: spell
       base: Firebolt
       display_name: "Hurl Flames"
       damage_multiplier: 0.8
@@ -148,7 +146,6 @@ freezing-skeleton:
       base: Greatsword
       display_name: "Freezing Blade"
     secondary:
-      type: spell
       base: Frostbolt
       display_name: "Deathly Freeze"
       damage_multiplier: 0.8
@@ -170,7 +167,6 @@ freezing-skeletal-champion:
       base: Greatsword
       display_name: "Freezing Blade"
     secondary:
-      type: spell
       base: Frostbolt
       display_name: "Deathly Freeze"
       damage_multiplier: 0.8

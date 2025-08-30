@@ -52,7 +52,6 @@ common: &common
       display_name: "Bonebreaker Club"
       reach: 10
       damage_multiplier: 1.0
-      secondary_damage_type: null
   ac_templates:
     - template: HideArmor
   skills:
@@ -74,8 +73,7 @@ ogre:
       display_name: "Bonebreaker Club"
       reach: 10
       damage_multiplier: 1.0
-      secondary_damage_type: null
-  set_attacks: 1  # CR 2 <= 3, so multiattack = 1
+  set_attacks: 1
   saves: []
 ogre-wallsmasha:
   <<: *common

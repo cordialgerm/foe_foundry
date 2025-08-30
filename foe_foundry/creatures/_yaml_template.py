@@ -103,15 +103,16 @@ class YamlMonsterTemplate(MonsterTemplate):
         # we will replace this with proper logic later
         templates_by_key = {t.key: t for t in AllTemplates}
         template = templates_by_key[self.key]
-        
+
         # Create a fresh RNG state for power selection to ensure consistency
         # between Python and YAML templates. This ensures both use the same
         # deterministic seed for power selection regardless of any randomness
         # consumed during template parsing.
         from ._data import rng_factory
+
         power_selection_rng = rng_factory(settings.monster, settings.species)
         power_selection_settings = settings.copy(rng=power_selection_rng)
-        
+
         return template.choose_powers(power_selection_settings)
 
 
@@ -131,7 +132,10 @@ def parse_statblock_from_yaml(
     Returns:
         Configured BaseStatblock
     """
-    schema.validate_yaml_template(yaml_data)
+
+    errors = schema.validate_yaml_template(yaml_data)
+    if errors:
+        raise ValueError(f"YAML validation errors found: {errors}")
 
     # Get the monster-specific data
     template_data = yaml_data["template"]
@@ -187,14 +191,12 @@ def parse_statblock_from_yaml(
         raise RuntimeError(f"Failed to create base statblock: {e}")
 
     # Apply creature types
-    if "creature_type" in merged_data:
-        primary_type, additional_types = parse_creature_types_from_yaml(merged_data)
-        if additional_types:
-            statblock = statblock.with_types(
-                primary_type=primary_type, additional_types=additional_types
-            )
-        else:
-            statblock = statblock.copy(creature_type=primary_type)
+    primary_type, additional_types = parse_creature_types_from_yaml(merged_data)
+    statblock = statblock.with_types(
+        primary_type=primary_type,
+        additional_types=additional_types,
+        replace_existing=True,
+    )
 
     # Apply basic properties
     modifications = {}
@@ -251,10 +253,9 @@ def parse_statblock_from_yaml(
 
     # Apply roles
     primary_role, additional_roles = parse_roles_from_yaml(merged_data)
-    if primary_role:
-        statblock = statblock.with_roles(
-            primary_role=primary_role, additional_roles=additional_roles
-        )
+    statblock = statblock.with_roles(
+        primary_role=primary_role, additional_roles=additional_roles
+    )
 
     # Apply immunities and resistances
     damage_immunities, condition_immunities = parse_damage_immunities_from_yaml(
@@ -284,51 +285,34 @@ def parse_statblock_from_yaml(
         statblock = statblock.grant_proficiency_or_expertise(skill)
 
     for skill in expertise_skills:
-        # Note: may need different method for expertise vs proficiency
+        # applying proficiency twice grants expertise
         statblock = statblock.grant_proficiency_or_expertise(skill)
 
     # Apply saving throws
     saves = parse_saving_throws_from_yaml(merged_data)
-    for ability in saves:
-        statblock = statblock.copy(
-            attributes=statblock.attributes.grant_save_proficiency(ability)
-        )
+    statblock = statblock.grant_save_proficiency(*saves)
 
     # Apply secondary damage type
     secondary_damage_type = parse_secondary_damage_type_from_yaml(
         merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type"),
         settings.rng,
     )
-    # If not found in attacks, check at the top level
-    if not secondary_damage_type:
-        secondary_damage_type = parse_secondary_damage_type_from_yaml(
-            merged_data.get("secondary_damage_type"), settings.rng
-        )
     if secondary_damage_type:
         statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
 
     # Apply spellcasting
-    spellcasting_data = merged_data.get("spellcasting", {})
-    caster_type_name = spellcasting_data.get("caster_type") or merged_data.get("caster_type")
-    if caster_type_name and CasterType:
-        caster_type = getattr(CasterType, caster_type_name, None)
-        if caster_type:
-            statblock = statblock.grant_spellcasting(caster_type=caster_type)
+    caster_type_name = merged_data.get("caster_type")
+    if caster_type_name:
+        caster_type = getattr(CasterType, caster_type_name)
+        statblock = statblock.grant_spellcasting(caster_type=caster_type)
 
     # Apply attack reduction
-    reduced_attacks = merged_data.get("reduced_attacks")
+    reduced_attacks = merged_data.get("attacks", {}).get("reduced_attacks")
     if reduced_attacks:
-        attacks_data = merged_data.get("attacks", {})
-        min_attacks = attacks_data.get("min_attacks", 1)  # Get from attacks section if available
-        if min_attacks == 1:
-            min_attacks = merged_data.get("min_attacks", 1)  # Fall back to top level
-        statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks, min_attacks=min_attacks)
+        statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks)
 
-    # Apply set_attacks from attacks section or top level
-    attacks_data = merged_data.get("attacks", {})
-    set_attacks = attacks_data.get("set_attacks")
-    if set_attacks is None:
-        set_attacks = merged_data.get("set_attacks")
+    # Apply set_attacks from attacks section
+    set_attacks = merged_data.get("attacks", {}).get("set_attacks")
     if set_attacks is not None:
         statblock = statblock.with_set_attacks(set_attacks)
 
@@ -336,24 +320,6 @@ def parse_statblock_from_yaml(
     ac_boost = merged_data.get("ac_boost")
     if ac_boost is not None:
         statblock = statblock.copy(ac_boost=ac_boost)
-
-    # Apply recommended_powers_modifier if specified
-    recommended_powers_modifier = merged_data.get("recommended_powers_modifier")
-    if recommended_powers_modifier is not None:
-        statblock = statblock.copy(recommended_powers_modifier=recommended_powers_modifier)
-
-    # Apply monster dials if specified
-    monster_dials_data = merged_data.get("monster_dials")
-    if monster_dials_data:
-        from foe_foundry.statblocks.dials import MonsterDials
-        dials = MonsterDials(
-            hp_multiplier=monster_dials_data.get("hp_multiplier", 1.0),
-            ac_modifier=monster_dials_data.get("ac_modifier", 0),
-            multiattack_modifier=monster_dials_data.get("multiattack_modifier", 0),
-            attack_hit_modifier=monster_dials_data.get("attack_hit_modifier", 0),
-            attack_damage_multiplier=monster_dials_data.get("attack_damage_multiplier", 1.0),
-        )
-        statblock = statblock.apply_monster_dials(dials)
 
     return statblock
 
@@ -467,7 +433,7 @@ def parse_creature_types_from_yaml(
 
 def parse_roles_from_yaml(
     data: Dict[str, Any],
-) -> tuple[Optional[MonsterRole], List[MonsterRole]]:
+) -> tuple[MonsterRole, List[MonsterRole]]:
     """
     Parse monster roles from YAML data.
 
@@ -481,8 +447,11 @@ def parse_roles_from_yaml(
     primary_role = None
     additional_roles = []
 
-    if roles_data.get("primary"):
-        primary_role = getattr(MonsterRole, roles_data["primary"])
+    primary_role = roles_data.get("primary")
+    if primary_role is None:
+        raise ValueError("roles.primary is required in template YAML")
+
+    primary_role = getattr(MonsterRole, primary_role)
 
     if roles_data.get("additional"):
         additional_roles = [

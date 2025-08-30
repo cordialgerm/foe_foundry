@@ -4,8 +4,13 @@ from typing import Any, Dict
 import pytest
 import yaml
 
-from foe_foundry.creatures import AllTemplates, MonsterTemplate, YamlMonsterTemplate
-from foe_foundry.statblocks import BaseStatblock
+from foe_foundry.creatures import (
+    AllTemplates,
+    HumanSpecies,
+    MonsterTemplate,
+    YamlMonsterTemplate,
+)
+from foe_foundry.statblocks import Statblock
 
 
 def yaml_templates() -> list[Path]:
@@ -56,13 +61,14 @@ def test_yaml_template_exact_comparison(template: MonsterTemplate):
     yaml_template = YamlMonsterTemplate(template_data)
 
     base_stats = {}
-    for _, _, _, generated_stats in template.generate_all():
-        base_stat = generated_stats.stats
+    species = HumanSpecies if template.n_species > 0 else None
+    for _, _, _, generated_stats in template.generate_all(species=species):
+        base_stat = generated_stats.finalize()
         base_stats[base_stat.key] = base_stat
 
     new_stats = {}
-    for _, _, _, generated_stats in yaml_template.generate_all():
-        new_stat = generated_stats.stats
+    for _, _, _, generated_stats in yaml_template.generate_all(species=species):
+        new_stat = generated_stats.finalize()
         new_stats[new_stat.key] = new_stat
 
     # Check that we have the same set of stats keys
@@ -85,7 +91,7 @@ def test_yaml_template_exact_comparison(template: MonsterTemplate):
         )
 
 
-def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
+def compare_stats(stats1: Statblock, stats2: Statblock) -> list[str]:
     """
     Compare two statblocks for exact equivalence.
 
@@ -281,34 +287,36 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
     additional_attacks_mismatch = stats1.additional_attacks != stats2.additional_attacks
     damage_modifier_mismatch = stats1.damage_modifier != stats2.damage_modifier
     multiattack_mismatch = stats1.multiattack != stats2.multiattack
-    
+
     if attack_mismatch:
         mismatches.append(f"attack mismatch: {stats1.attack} != {stats2.attack}")
     if additional_attacks_mismatch:
         mismatches.append(
             f"additional_attacks mismatch: {stats1.additional_attacks} != {stats2.additional_attacks}"
         )
-    
+
     # Enhanced damage modifier reporting with compensation explanation
     if damage_modifier_mismatch:
         damage_explanation = f"damage_modifier mismatch: {stats1.damage_modifier} != {stats2.damage_modifier}"
-        
+
         # Check if this is likely due to attack compensation
         if multiattack_mismatch or additional_attacks_mismatch:
             damage_explanation += " (NOTE: damage multiplier differences are often due to attack count compensation - when creatures have different numbers of attacks, the system automatically adjusts damage multipliers to maintain balanced DPR)"
-        
+
         # Check if multiattack differs
         if multiattack_mismatch:
-            damage_explanation += f" | multiattack differs: {stats1.multiattack} vs {stats2.multiattack}"
-        
+            damage_explanation += (
+                f" | multiattack differs: {stats1.multiattack} vs {stats2.multiattack}"
+            )
+
         # Count total attacks for comparison
         stats1_total_attacks = stats1.multiattack + len(stats1.additional_attacks)
         stats2_total_attacks = stats2.multiattack + len(stats2.additional_attacks)
         if stats1_total_attacks != stats2_total_attacks:
             damage_explanation += f" | total attack count differs: {stats1_total_attacks} vs {stats2_total_attacks}"
-        
+
         mismatches.append(damage_explanation)
-    
+
     if stats1.base_attack_damage != stats2.base_attack_damage:
         mismatches.append(
             f"base_attack_damage mismatch: {stats1.base_attack_damage} != {stats2.base_attack_damage}"
@@ -341,15 +349,16 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
             f"reaction_count mismatch: {stats1.reaction_count} != {stats2.reaction_count}"
         )
 
+    # NOTE: skip this - it's obsolete
     # Powers and selection
-    if stats1.recommended_powers_modifier != stats2.recommended_powers_modifier:
-        mismatches.append(
-            f"recommended_powers_modifier mismatch: {stats1.recommended_powers_modifier} != {stats2.recommended_powers_modifier}"
-        )
-    if stats1.selection_target_args != stats2.selection_target_args:
-        mismatches.append(
-            f"selection_target_args mismatch: {stats1.selection_target_args} != {stats2.selection_target_args}"
-        )
+    # if stats1.recommended_powers_modifier != stats2.recommended_powers_modifier:
+    #     mismatches.append(
+    #         f"recommended_powers_modifier mismatch: {stats1.recommended_powers_modifier} != {stats2.recommended_powers_modifier}"
+    #     )
+    # if stats1.selection_target_args != stats2.selection_target_args:
+    #     mismatches.append(
+    #         f"selection_target_args mismatch: {stats1.selection_target_args} != {stats2.selection_target_args}"
+    #     )
 
     # NOTE: do NOT compare flags, they are just internal implementation details
     # if stats1.flags != stats2.flags:

@@ -46,10 +46,6 @@ common: &common
     WIS: Primary
     CHA: Default
   caster_type: Divine
-  secondary_damage_type: Radiant
-  reduced_attacks: 1
-  min_attacks: 2
-  flags: [HAS_HEALING]
   skills:
     proficiency: [Medicine, Religion]
     expertise: []
@@ -58,8 +54,10 @@ acolyte:
   <<: *common
   ac_templates: ChainShirt
   attacks:
+    set_attacks: 2
     main:
       base: MaceAndShield
+      secondary_damage_type: Radiant
   uses_shield: true
   saves: []
 
@@ -68,7 +66,9 @@ priest:
   ac_templates: ChainShirt
   attacks:
     main:
+      set_attacks: 2
       base: MaceAndShield
+      secondary_damage_type: Radiant
   uses_shield: true
   skills:
     proficiency: [Medicine, Religion, Perception]
@@ -79,8 +79,9 @@ priest-anointed-one:
   <<: *common
   ac_templates: ChainShirt
   attacks:
+    set_attacks: 2
     main:
-      type: spell
+      set_attacks: 2
       base: HolyBolt
       display_name: "Radiant Flame"
   uses_shield: false
@@ -93,8 +94,8 @@ archpriest:
   <<: *common
   ac_templates: PlateArmor
   attacks:
+    set_attacks: 2
     main:
-      type: spell
       base: HolyBolt
       display_name: "Radiant Flame"
   uses_shield: false
@@ -108,8 +109,8 @@ archpriest-living-saint:
   ac_boost: 0
   ac_templates: PlateArmor
   attacks:
+    set_attacks: 2
     main:
-      type: spell
       base: HolyBolt
       display_name: "Radiant Flame"
   uses_shield: false

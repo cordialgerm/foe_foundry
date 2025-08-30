@@ -141,7 +141,6 @@ common: &common
     main:
       base: ArcaneBurst
       display_name: "Arcane Blast"
-      secondary_damage_type: null
   skills:
     proficiency:
       - Arcana

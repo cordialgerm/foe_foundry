@@ -61,12 +61,10 @@ common: &common
       base: Greataxe
       display_name: "Wicked Greataxe"
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: JavelinAndShield
       display_name: "Javelin"
       damage_multiplier: 0.9
-      secondary_damage_type: null
   skills:
     proficiency: [Intimidation]
     expertise: []

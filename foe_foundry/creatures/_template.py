@@ -245,12 +245,18 @@ class MonsterTemplate:
 
     def generate_settings(self, **kwargs) -> Iterable[GenerationSettings]:
         """Generates all possible settings for this template"""
+
+        if kwargs.get("species") is not None:
+            species = [kwargs.get("species")]
+        else:
+            species = self.species if self.n_species > 0 else [None]
+
+        kwargs.pop("species")
+
         for variant in self.variants:
             for monster in variant.monsters:
-                for species in self.species if self.n_species > 0 else [None]:
-                    settings = self._settings_for_variant(
-                        variant, monster, species, **kwargs
-                    )
+                for s in species:
+                    settings = self._settings_for_variant(variant, monster, s, **kwargs)
                     yield settings
 
     def _settings_for_variant(

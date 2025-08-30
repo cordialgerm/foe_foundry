@@ -43,7 +43,6 @@ common: &common
     main:
       base: SpearAndShield
       damage_multiplier: 1.0
-      secondary_damage_type: null
   skills:
     proficiency:
       - Stealth
