@@ -29,8 +29,6 @@ export function getGrowthBook(): GrowthBook {
         const trackingPlugin = thirdPartyTrackingPlugin({
             additionalCallback: trackingCallback
         });
-
-
         growthbookInstance = new GrowthBook({
             apiHost: "https://cdn.growthbook.io",
             clientKey: clientKey,
