@@ -51,7 +51,10 @@ common: &common
       - Arcana
       - Insight
       - Perception
-    expertise: []
+    expertise:
+      - Arcana
+      - Insight
+      - Perception
   saves: []
 hollow-gazer:
   <<: *common
