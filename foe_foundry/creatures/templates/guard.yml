@@ -108,6 +108,9 @@ lord-of-the-watch:
   ac_templates:
     - template: PlateArmor
       modifier: 0
+  legendary:
+    actions: 2
+    resistances: 2
   skills:
     proficiency: [Perception, Initiative, Athletics]
     expertise: []
