@@ -276,22 +276,45 @@ def compare_stats(stats1: BaseStatblock, stats2: BaseStatblock) -> list[str]:
             f"difficulty_class_modifier mismatch: {stats1.difficulty_class_modifier} != {stats2.difficulty_class_modifier}"
         )
 
-    # Attack information
-    if stats1.attack != stats2.attack:
+    # Attack information - check for damage compensation logic
+    attack_mismatch = stats1.attack != stats2.attack
+    additional_attacks_mismatch = stats1.additional_attacks != stats2.additional_attacks
+    damage_modifier_mismatch = stats1.damage_modifier != stats2.damage_modifier
+    multiattack_mismatch = stats1.multiattack != stats2.multiattack
+    
+    if attack_mismatch:
         mismatches.append(f"attack mismatch: {stats1.attack} != {stats2.attack}")
-    if stats1.additional_attacks != stats2.additional_attacks:
+    if additional_attacks_mismatch:
         mismatches.append(
             f"additional_attacks mismatch: {stats1.additional_attacks} != {stats2.additional_attacks}"
         )
-    if stats1.damage_modifier != stats2.damage_modifier:
-        mismatches.append(
-            f"damage_modifier mismatch: {stats1.damage_modifier} != {stats2.damage_modifier}"
-        )
+    
+    # Enhanced damage modifier reporting with compensation explanation
+    if damage_modifier_mismatch:
+        damage_explanation = f"damage_modifier mismatch: {stats1.damage_modifier} != {stats2.damage_modifier}"
+        
+        # Check if this is likely due to attack compensation
+        if multiattack_mismatch or additional_attacks_mismatch:
+            damage_explanation += " (NOTE: damage multiplier differences are often due to attack count compensation - when creatures have different numbers of attacks, the system automatically adjusts damage multipliers to maintain balanced DPR)"
+        
+        # Check if multiattack differs
+        if multiattack_mismatch:
+            damage_explanation += f" | multiattack differs: {stats1.multiattack} vs {stats2.multiattack}"
+        
+        # Count total attacks for comparison
+        stats1_total_attacks = stats1.multiattack + len(stats1.additional_attacks)
+        stats2_total_attacks = stats2.multiattack + len(stats2.additional_attacks)
+        if stats1_total_attacks != stats2_total_attacks:
+            damage_explanation += f" | total attack count differs: {stats1_total_attacks} vs {stats2_total_attacks}"
+        
+        mismatches.append(damage_explanation)
+    
     if stats1.base_attack_damage != stats2.base_attack_damage:
         mismatches.append(
             f"base_attack_damage mismatch: {stats1.base_attack_damage} != {stats2.base_attack_damage}"
         )
-    if stats1.multiattack != stats2.multiattack:
+    if multiattack_mismatch and not damage_modifier_mismatch:
+        # Report multiattack mismatch separately if damage modifier was already reported above
         mismatches.append(
             f"multiattack mismatch: {stats1.multiattack} != {stats2.multiattack}"
         )
