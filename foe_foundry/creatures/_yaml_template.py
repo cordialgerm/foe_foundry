@@ -97,17 +97,7 @@ class YamlMonsterTemplate(MonsterTemplate):
         # we will replace this with proper logic later
         templates_by_key = {t.key: t for t in AllTemplates}
         template = templates_by_key[self.key]
-
-        # Create a fresh RNG state for power selection to ensure consistency
-        # between Python and YAML templates. This ensures both use the same
-        # deterministic seed for power selection regardless of any randomness
-        # consumed during template parsing.
-        from ._data import rng_factory
-
-        power_selection_rng = rng_factory(settings.monster, settings.species)
-        power_selection_settings = settings.copy(rng=power_selection_rng)
-
-        return template.choose_powers(power_selection_settings)
+        return template.choose_powers(settings)
 
 
 # ===== PARSING HELPER FUNCTIONS =====
