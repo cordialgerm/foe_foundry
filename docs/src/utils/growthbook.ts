@@ -4,8 +4,9 @@
  * Provides a centralized GrowthBook instance for feature flags and experiments
  */
 
-import { GrowthBook } from "@growthbook/growthbook";
+import { GrowthBook, TrackingCallback } from "@growthbook/growthbook";
 import { autoAttributesPlugin } from "@growthbook/growthbook/plugins";
+import { thirdPartyTrackingPlugin } from "@growthbook/growthbook/plugins";
 
 // Singleton GrowthBook instance
 let growthbookInstance: GrowthBook | null = null;
@@ -18,21 +19,23 @@ export function getGrowthBook(): GrowthBook {
         const clientKey = import.meta.env.VITE_GROWTHBOOK_CLIENT_KEY;
         const isDev = import.meta.env.DEV;
 
+        // Optional settings for the plugin
+        const trackingCallback: TrackingCallback = (experiment, result) => {
+            console.log("Experiment Viewed", {
+                experimentId: experiment.key,
+                variationId: result.key,
+            })
+        };
+        const trackingPlugin = thirdPartyTrackingPlugin({
+            additionalCallback: trackingCallback
+        });
+
+
         growthbookInstance = new GrowthBook({
             apiHost: "https://cdn.growthbook.io",
             clientKey: clientKey,
             enableDevMode: isDev,
-            trackingCallback: (experiment, result) => {
-                // Track experiment views
-                console.log("Viewed Experiment", {
-                    experimentId: experiment.key,
-                    variationId: result.key
-                });
-
-                // You could also send this to your analytics here
-                // trackEvent('experiment_viewed', { experiment_id: experiment.key, variation_id: result.key });
-            },
-            plugins: [autoAttributesPlugin()],
+            plugins: [autoAttributesPlugin(), trackingPlugin],
         });
     }
 
