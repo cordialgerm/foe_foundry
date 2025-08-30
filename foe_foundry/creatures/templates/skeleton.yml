@@ -86,7 +86,6 @@ skeletal-grave-guard:
       base: Shortbow
       display_name: "Bone Bow"
       damage_multiplier: 0.8
-      split_secondary_damage: false
   immunities:
     damage_types: [Poison, Necrotic]
     conditions: [Poisoned]

@@ -90,12 +90,6 @@ class YamlMonsterTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         stats = parse_statblock_from_yaml(self.yaml_data, settings)
         attacks = parse_attacks_from_yaml(self.yaml_data, settings)
-
-        # Apply attack template alterations (like uses_shield)
-        if attacks:
-            primary_attack = attacks[0]
-            stats = primary_attack.alter_base_stats(stats)
-
         return stats, attacks
 
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
@@ -291,20 +285,6 @@ def parse_statblock_from_yaml(
     # Apply saving throws
     saves = parse_saving_throws_from_yaml(merged_data)
     statblock = statblock.grant_save_proficiency(*saves)
-
-    # Apply secondary damage type
-    secondary_damage_type = parse_secondary_damage_type_from_yaml(
-        merged_data.get("attacks", {}).get("main", {}).get("secondary_damage_type"),
-        settings.rng,
-    )
-    # Also check for top-level secondary_damage_type (takes precedence)
-    if "secondary_damage_type" in merged_data:
-        secondary_damage_type = parse_secondary_damage_type_from_yaml(
-            merged_data.get("secondary_damage_type"),
-            settings.rng,
-        )
-    if secondary_damage_type:
-        statblock = statblock.copy(secondary_damage_type=secondary_damage_type)
 
     # Apply spellcasting
     caster_type_name = merged_data.get("caster_type")
@@ -784,7 +764,7 @@ def parse_secondary_damage_type_from_yaml(
 
 
 def parse_single_attack_from_yaml(
-    attack_data: Dict[str, Any],
+    attack_data: Dict[str, Any], rng: np.random.Generator
 ) -> Optional[AttackTemplate]:
     """
     Parse a single attack template from YAML data.
@@ -808,7 +788,7 @@ def parse_single_attack_from_yaml(
     if not base_attack:
         return None
 
-    attack = base_attack
+    attack: AttackTemplate = base_attack
 
     # Apply display name if specified
     display_name = attack_data.get("display_name")
@@ -817,13 +797,13 @@ def parse_single_attack_from_yaml(
 
     # Apply reach if specified
     reach = attack_data.get("reach")
-    if reach and hasattr(attack, "copy"):
+    if reach:
         attack = attack.copy(reach=reach)
 
     # Apply range if specified
     range_val = attack_data.get("range")
     range_max_val = attack_data.get("range_max")
-    if range_val and hasattr(attack, "copy"):
+    if range_val:
         # Handle both simple range (100) and range/max format (100/400)
         if isinstance(range_val, str) and "/" in range_val:
             range_parts = range_val.split("/")
@@ -839,20 +819,26 @@ def parse_single_attack_from_yaml(
 
     # Apply damage scalar if specified
     damage_scalar = attack_data.get("damage_scalar")
-    if damage_scalar and hasattr(attack, "copy"):
+    if damage_scalar:
         attack = attack.copy(damage_scalar=damage_scalar)
 
     # Apply damage type override if specified
-    damage_type = attack_data.get("damage_type")
+    damage_type = attack_data.get("primary_damage_type")
     if damage_type:
         damage_type_obj = getattr(DamageType, damage_type, None)
-        if damage_type_obj and hasattr(attack, "copy"):
+        if damage_type_obj:
             attack = attack.copy(damage_type=damage_type_obj)
+
+    secondary_damage_type = parse_secondary_damage_type_from_yaml(
+        attack_data.get("secondary_damage_type"), rng
+    )
+    if secondary_damage_type:
+        attack = attack.copy(secondary_damage_type=secondary_damage_type)
 
     # Apply damage multiplier if specified
     damage_multiplier = attack_data.get("damage_multiplier", 1.0)
-    if damage_multiplier != 1.0 and hasattr(attack, "with_damage_multiplier"):
-        attack = attack.with_damage_multiplier(damage_multiplier)
+    if damage_multiplier != 1.0:
+        attack = attack.copy(damage_scalar=damage_multiplier)
 
     return attack
 
@@ -888,24 +874,16 @@ def parse_attacks_from_yaml(
     # Main attack
     main_attack = attacks_data.get("main", {})
     if main_attack:
-        attack = parse_single_attack_from_yaml(main_attack)
+        attack = parse_single_attack_from_yaml(main_attack, settings.rng)
         if attack:
             attacks.append(attack)
 
     # Secondary attack
     secondary_attack = attacks_data.get("secondary", {})
     if secondary_attack and secondary_attack is not None:
-        attack = parse_single_attack_from_yaml(secondary_attack)
+        attack = parse_single_attack_from_yaml(secondary_attack, settings.rng)
         if attack:
             attacks.append(attack)
-
-    # Additional attacks
-    additional_attacks = attacks_data.get("additional", [])
-    if additional_attacks:
-        for additional_attack in additional_attacks:
-            attack = parse_single_attack_from_yaml(additional_attack)
-            if attack:
-                attacks.append(attack)
 
     return attacks
 

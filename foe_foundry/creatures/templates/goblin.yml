@@ -74,12 +74,10 @@ common: &common
       base: Daggers
       display_name: Stick'Em
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortbow
       display_name: Shoot'Em
       damage_multiplier: 0.9
-      secondary_damage_type: null
   skills:
     proficiency: [Stealth]
     expertise: []
@@ -118,7 +116,6 @@ goblin-brute:
       base: Maul
       display_name: Smash'Em
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary: null
 
 goblin-boss:
@@ -141,12 +138,10 @@ goblin-boss:
       base: Maul
       display_name: Smash'Em
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortbow
       display_name: Shoot'Em
       damage_multiplier: 0.9
-      secondary_damage_type: null
   saves: [CON, WIS]
 
 goblin-warchief:
@@ -169,12 +164,10 @@ goblin-warchief:
       base: Maul
       display_name: Smash'Em
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary:
       base: Shortbow
       display_name: Shoot'Em
       damage_multiplier: 0.9
-      secondary_damage_type: null
   saves: [CON, WIS]
 
 goblin-foulhex:
@@ -200,7 +193,6 @@ goblin-foulhex:
       base: Gaze
       display_name: Hex'Em
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary: null
 
 goblin-shaman:
@@ -221,6 +213,5 @@ goblin-shaman:
       base: Gaze
       display_name: Hex'Em
       damage_multiplier: 1.0
-      secondary_damage_type: null
     secondary: null
   saves: [CON, WIS]

@@ -284,23 +284,18 @@ def compare_stats(stats1: Statblock, stats2: Statblock) -> list[str]:
 
     # Attack information - check for damage compensation logic
     attack_mismatch = stats1.attack != stats2.attack
-    additional_attacks_mismatch = stats1.additional_attacks != stats2.additional_attacks
     damage_modifier_mismatch = stats1.damage_modifier != stats2.damage_modifier
     multiattack_mismatch = stats1.multiattack != stats2.multiattack
 
     if attack_mismatch:
         mismatches.append(f"attack mismatch: {stats1.attack} != {stats2.attack}")
-    if additional_attacks_mismatch:
-        mismatches.append(
-            f"additional_attacks mismatch: {stats1.additional_attacks} != {stats2.additional_attacks}"
-        )
 
     # Enhanced damage modifier reporting with compensation explanation
     if damage_modifier_mismatch:
         damage_explanation = f"damage_modifier mismatch: {stats1.damage_modifier} != {stats2.damage_modifier}"
 
         # Check if this is likely due to attack compensation
-        if multiattack_mismatch or additional_attacks_mismatch:
+        if multiattack_mismatch:
             damage_explanation += " (NOTE: damage multiplier differences are often due to attack count compensation - when creatures have different numbers of attacks, the system automatically adjusts damage multipliers to maintain balanced DPR)"
 
         # Check if multiattack differs
@@ -310,8 +305,8 @@ def compare_stats(stats1: Statblock, stats2: Statblock) -> list[str]:
             )
 
         # Count total attacks for comparison
-        stats1_total_attacks = stats1.multiattack + len(stats1.additional_attacks)
-        stats2_total_attacks = stats2.multiattack + len(stats2.additional_attacks)
+        stats1_total_attacks = stats1.multiattack
+        stats2_total_attacks = stats2.multiattack
         if stats1_total_attacks != stats2_total_attacks:
             damage_explanation += f" | total attack count differs: {stats1_total_attacks} vs {stats2_total_attacks}"
 
@@ -334,35 +329,12 @@ def compare_stats(stats1: Statblock, stats2: Statblock) -> list[str]:
         mismatches.append(
             f"multiattack_custom_text mismatch: '{stats1.multiattack_custom_text}' != '{stats2.multiattack_custom_text}'"
         )
-    if stats1.primary_damage_type != stats2.primary_damage_type:
-        mismatches.append(
-            f"primary_damage_type mismatch: {stats1.primary_damage_type} != {stats2.primary_damage_type}"
-        )
-    if stats1.secondary_damage_type != stats2.secondary_damage_type:
-        mismatches.append(
-            f"secondary_damage_type mismatch: {stats1.secondary_damage_type} != {stats2.secondary_damage_type}"
-        )
 
     # Reactions
     if stats1.reaction_count != stats2.reaction_count:
         mismatches.append(
             f"reaction_count mismatch: {stats1.reaction_count} != {stats2.reaction_count}"
         )
-
-    # NOTE: skip this - it's obsolete
-    # Powers and selection
-    # if stats1.recommended_powers_modifier != stats2.recommended_powers_modifier:
-    #     mismatches.append(
-    #         f"recommended_powers_modifier mismatch: {stats1.recommended_powers_modifier} != {stats2.recommended_powers_modifier}"
-    #     )
-    # if stats1.selection_target_args != stats2.selection_target_args:
-    #     mismatches.append(
-    #         f"selection_target_args mismatch: {stats1.selection_target_args} != {stats2.selection_target_args}"
-    #     )
-
-    # NOTE: do NOT compare flags, they are just internal implementation details
-    # if stats1.flags != stats2.flags:
-    #     mismatches.append(f"flags mismatch: {_set_diff_details(stats1.flags, stats2.flags)}")
 
     # Spellcasting
     if stats1.caster_type != stats2.caster_type:
@@ -394,6 +366,42 @@ def compare_stats(stats1: Statblock, stats2: Statblock) -> list[str]:
         mismatches.append(
             f"legendary_resistance_damage_taken mismatch: {stats1.legendary_resistance_damage_taken} != {stats2.legendary_resistance_damage_taken}"
         )
+
+    # SECTIONS TO SKIP
+    # This is documented here so we know which attributes NOT to compare, and why
+
+    # NOTE: Don't compare additional_attacks. Those are set by powers, not by templates
+    # additional_attacks_mismatch = stats1.additional_attacks != stats2.additional_attacks
+    # if additional_attacks_mismatch:
+    #     mismatches.append(
+    #         f"additional_attacks mismatch: {stats1.additional_attacks} != {stats2.additional_attacks}"
+    #     )
+
+    # NOTE: don't compare primary_damage_type or secondary_damage_type directly
+    # Instead, we will compare the attacks to be sure everything resolved properly
+    # if stats1.primary_damage_type != stats2.primary_damage_type:
+    #     mismatches.append(
+    #         f"primary_damage_type mismatch: {stats1.primary_damage_type} != {stats2.primary_damage_type}"
+    #     )
+    # if stats1.secondary_damage_type != stats2.secondary_damage_type:
+    #     mismatches.append(
+    #         f"secondary_damage_type mismatch: {stats1.secondary_damage_type} != {stats2.secondary_damage_type}"
+    #     )
+
+    # NOTE: skip this - it's obsolete
+    # Powers and selection
+    # if stats1.recommended_powers_modifier != stats2.recommended_powers_modifier:
+    #     mismatches.append(
+    #         f"recommended_powers_modifier mismatch: {stats1.recommended_powers_modifier} != {stats2.recommended_powers_modifier}"
+    #     )
+    # if stats1.selection_target_args != stats2.selection_target_args:
+    #     mismatches.append(
+    #         f"selection_target_args mismatch: {stats1.selection_target_args} != {stats2.selection_target_args}"
+    #     )
+
+    # NOTE: do NOT compare flags, they are just internal implementation details
+    # if stats1.flags != stats2.flags:
+    #     mismatches.append(f"flags mismatch: {_set_diff_details(stats1.flags, stats2.flags)}")
 
     return mismatches
 

@@ -77,7 +77,13 @@ YAML_TEMPLATE_SCHEMA = {
                                 "damage_multiplier": {"type": "number"},
                                 "damage_scalar": {"type": "number"},
                                 "reach": {"type": "number"},
-                                "damage_type": {"type": "string"},
+                                "primary_damage_type": {
+                                    "oneOf": [
+                                        {"type": "string"},
+                                        {"type": "array", "items": {"type": "string"}},
+                                        {"type": "null"},
+                                    ]
+                                },
                                 "secondary_damage_type": {
                                     "oneOf": [
                                         {"type": "string"},
@@ -98,7 +104,16 @@ YAML_TEMPLATE_SCHEMA = {
                                         "damage_multiplier": {"type": "number"},
                                         "damage_scalar": {"type": "number"},
                                         "reach": {"type": "number"},
-                                        "damage_type": {"type": "string"},
+                                        "primary_damage_type": {
+                                            "oneOf": [
+                                                {"type": "string"},
+                                                {
+                                                    "type": "array",
+                                                    "items": {"type": "string"},
+                                                },
+                                                {"type": "null"},
+                                            ]
+                                        },
                                         "secondary_damage_type": {
                                             "oneOf": [
                                                 {"type": "string"},
@@ -199,12 +214,8 @@ YAML_TEMPLATE_SCHEMA = {
                     "additionalProperties": False,
                 },
                 # Additional fields found in templates
-                "additional_types": {"type": "array", "items": {"type": "string"}},
                 "caster_type": {"type": "string"},
-                "flags": {"type": "object"},
-                "legendary_boost_ac": {"type": "boolean"},
                 "multiattack_custom_text": {"type": "string"},
-                "primary_damage_type": {"type": "string"},
                 "reaction_count": {"type": "number"},
                 "uses_shield": {"type": "boolean"},
                 # YAML anchor support

@@ -3,8 +3,6 @@ from foe_foundry.statblocks import BaseStatblock
 from ...ac_templates import LeatherArmor, SplintArmor
 from ...attack_template import AttackTemplate, natural, weapon
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
-from ...die import Die
 from ...environs import Development, Terrain
 from ...environs.affinity import Affinity
 from ...environs.region import UrbanTownship
@@ -119,19 +117,11 @@ class _ToughTemplate(MonsterTemplate):
         else:
             attack = weapon.Maul
 
-        stats = stats.copy(primary_damage_type=attack.damage_type)
-
         # Toughs with a Mace also have a heavy crossbow
-        if attack == weapon.Maul:
-            stats = stats.add_attack(
-                name="Heavy Crossbow",
-                scalar=0.7 * min(stats.multiattack, 2),
-                attack_type=AttackType.RangedWeapon,
-                range=100,
-                damage_type=DamageType.Piercing,
-                die=Die.d10,
-                replaces_multiattack=2,
-            )
+        if variant is not BrawlerVariant:
+            secondary_attack = weapon.Crossbow
+        else:
+            secondary_attack = None
 
         # ROLES
         stats = stats.with_roles(
@@ -154,7 +144,10 @@ class _ToughTemplate(MonsterTemplate):
         if cr >= 4:
             stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.CHA)
 
-        return stats, [attack]
+        return stats, [attack] if secondary_attack is None else [
+            attack,
+            secondary_attack,
+        ]
 
 
 ThugTemplate: MonsterTemplate = _ToughTemplate(

@@ -35,8 +35,7 @@ common: &common
     main:
       base: Slam
       display_name: "Pseudopod"
-      damage_type: Acid
-      secondary_damage_type: Acid
+      primary_damage_type: Acid
   reduced_attacks: 1
   ac_templates:
     - template: Unarmored

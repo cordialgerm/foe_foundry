@@ -41,7 +41,6 @@ common: &common
     main:
       base: Claw
       display_name: "Vicious Rend"
-      secondary_damage_type: null
   ac_templates:
     - template: NaturalArmor
   senses:

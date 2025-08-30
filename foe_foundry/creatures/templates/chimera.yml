@@ -42,7 +42,6 @@ common: &common
     main:
       base: Bite
       display_name: "Three-Headed Bites"
-      damage_type: piercing
   ac_templates:
     - template: NaturalArmor
       ac_modifier: -1

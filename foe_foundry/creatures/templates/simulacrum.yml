@@ -18,7 +18,7 @@ template:
   species: []
 common: &common
   creature_type: Humanoid
-  additional_types: [Construct]
+  additional_creature_types: [Construct]
   size: Medium
   languages:
     - Common
