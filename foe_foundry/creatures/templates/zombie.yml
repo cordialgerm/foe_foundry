@@ -38,6 +38,8 @@ common: &common
     - "Understands Common but can't speak"
   creature_class: Zombie
   damage_multiplier: 1.0
+  secondary_damage_type: Poison
+  split_secondary_damage: false
   roles:
     primary: Bruiser
     additional: [Soldier]
@@ -54,7 +56,6 @@ common: &common
     main:
       base: Slam
       display_name: "Rotten Grasp"
-      secondary_damage_type: Poison
   senses:
     darkvision: 60
   immunities:
@@ -71,9 +72,6 @@ zombie:
   speed: -10
   attacks:
     set_attacks: 1
-    main:
-      base: Slam
-      display_name: "Rotten Grasp"
 
 zombie-brute:
   <<: *common
@@ -86,11 +84,6 @@ zombie-gravewalker:
   size: Medium
   hp_multiplier: 1.5
   speed: -10
-  attacks:
-    set_attacks: 2
-    main:
-      base: Slam
-      display_name: "Rotten Grasp"
 
 zombie-ogre:
   <<: *common

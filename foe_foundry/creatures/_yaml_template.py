@@ -283,7 +283,7 @@ def parse_statblock_from_yaml(
         statblock = statblock.grant_spellcasting(caster_type=caster_type)
 
     # Apply attack reduction
-    reduced_attacks = merged_data.get("attacks", {}).get("reduced_attacks")
+    reduced_attacks = merged_data.get("reduced_attacks") or merged_data.get("attacks", {}).get("reduced_attacks")
     if reduced_attacks:
         statblock = statblock.with_reduced_attacks(reduce_by=reduced_attacks)
 
@@ -772,7 +772,7 @@ def parse_secondary_damage_type_from_yaml(
 
 
 def parse_single_attack_from_yaml(
-    attack_data: Dict[str, Any], rng: np.random.Generator
+    attack_data: Dict[str, Any], rng: np.random.Generator, template_split_secondary_damage: bool = True
 ) -> Optional[AttackTemplate]:
     """
     Parse a single attack template from YAML data.
@@ -841,7 +841,13 @@ def parse_single_attack_from_yaml(
         attack_data.get("secondary_damage_type"), rng
     )
     if secondary_damage_type:
-        attack = attack.copy(secondary_damage_type=secondary_damage_type)
+        # Handle split_secondary_damage configuration
+        # Use attack-level setting if specified, otherwise use template-level setting
+        split_secondary_damage = attack_data.get("split_secondary_damage", template_split_secondary_damage)
+        attack = attack.copy(
+            secondary_damage_type=secondary_damage_type,
+            split_secondary_damage=split_secondary_damage
+        )
 
     # Apply damage multiplier if specified
     damage_multiplier = attack_data.get("damage_multiplier", 1.0)
@@ -879,17 +885,20 @@ def parse_attacks_from_yaml(
     attacks = []
     attacks_data = merged_data.get("attacks", {})
 
+    # Get template-level split_secondary_damage setting
+    template_split_secondary_damage = merged_data.get("split_secondary_damage", True)
+
     # Main attack
     main_attack = attacks_data.get("main", {})
     if main_attack:
-        attack = parse_single_attack_from_yaml(main_attack, settings.rng)
+        attack = parse_single_attack_from_yaml(main_attack, settings.rng, template_split_secondary_damage)
         if attack:
             attacks.append(attack)
 
     # Secondary attack
     secondary_attack = attacks_data.get("secondary", {})
     if secondary_attack and secondary_attack is not None:
-        attack = parse_single_attack_from_yaml(secondary_attack, settings.rng)
+        attack = parse_single_attack_from_yaml(secondary_attack, settings.rng, template_split_secondary_damage)
         if attack:
             attacks.append(attack)
 
