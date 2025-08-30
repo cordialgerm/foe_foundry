@@ -105,6 +105,7 @@ archpriest:
 
 archpriest-living-saint:
   <<: *common
+  ac_boost: 0
   ac_templates: PlateArmor
   attacks:
     main:
@@ -116,4 +117,3 @@ archpriest-living-saint:
     proficiency: [Medicine, Religion, Perception, Initiative, Insight]
     expertise: []
   saves: [STR, CON, INT, WIS]
-  legendary_boost_ac: false

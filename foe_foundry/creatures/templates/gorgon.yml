@@ -19,6 +19,8 @@ common: &common
   creature_class: Gorgon
   hp_multiplier: 1.2
   damage_multiplier: 0.95
+  ac_boost: 2
+  recommended_powers_modifier: 1.0
   roles:
     primary: Bruiser
     additional: [Defender]
@@ -40,6 +42,8 @@ common: &common
       ac_modifier: 2
   senses:
     darkvision: 60
+  speed:
+    walk: 40
   immunities:
     conditions: [Exhaustion, Petrified]
   skills:

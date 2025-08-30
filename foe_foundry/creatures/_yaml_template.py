@@ -329,6 +329,11 @@ def parse_statblock_from_yaml(
     if ac_boost is not None:
         statblock = statblock.copy(ac_boost=ac_boost)
 
+    # Apply recommended_powers_modifier if specified
+    recommended_powers_modifier = merged_data.get("recommended_powers_modifier")
+    if recommended_powers_modifier is not None:
+        statblock = statblock.copy(recommended_powers_modifier=recommended_powers_modifier)
+
     # Apply monster dials if specified
     monster_dials_data = merged_data.get("monster_dials")
     if monster_dials_data:
