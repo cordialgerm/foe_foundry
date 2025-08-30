@@ -143,17 +143,20 @@ export class MonsterBuilder extends LitElement {
       flex-direction: row;
       gap: 1rem;
       width: 100%;
+      contain: layout style; /* Prevent layout shifts from propagating */
     }
 
     .card-panel {
       flex: 0 0 ${LAYOUT_CONFIG.MONSTER_CARD_WIDTH}px;
       width: 100%;
+      contain: layout style; /* Isolate layout changes within the card panel */
     }
 
     .statblock-panel {
       flex: 1 1 auto;
       min-width: 0;
       width: 100%;
+      contain: layout style; /* Isolate statblock layout changes */
     }
     .loading,
     .error-message {
@@ -332,6 +335,93 @@ export class MonsterBuilder extends LitElement {
       .container.pamphlet-main {
         padding: 0.5rem;
       }
+    }
+
+    /* Skeleton loading styles */
+    .skeleton-element {
+      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background-size: 200% 100%;
+      animation: skeleton-loading 1.5s infinite;
+      border-radius: 4px;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    .skeleton-monster-card {
+      background: var(--bg-color, #fff);
+      border: 1px solid var(--tertiary-color, #ddd);
+      border-radius: var(--medium-margin, 8px);
+      padding: 1rem;
+      min-height: 500px;
+    }
+
+    .skeleton-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background-size: 200% 100%;
+      animation: skeleton-loading 1.5s infinite;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .skeleton-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .skeleton-line {
+      height: 1rem;
+      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background-size: 200% 100%;
+      animation: skeleton-loading 1.5s infinite;
+      border-radius: 4px;
+    }
+
+    .skeleton-line.short { width: 30%; }
+    .skeleton-line.medium { width: 60%; }
+    .skeleton-line.long { width: 80%; }
+    .skeleton-line.very-long { width: 95%; }
+
+    .skeleton-controls {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .skeleton-button {
+      width: 80px;
+      height: 2rem;
+      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background-size: 200% 100%;
+      animation: skeleton-loading 1.5s infinite;
+      border-radius: 4px;
+    }
+
+    .skeleton-statblock {
+      background: var(--bg-color, #fff);
+      border: 1px solid var(--tertiary-color, #ddd);
+      border-radius: var(--medium-margin, 8px);
+      padding: 1.5rem;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .skeleton-content-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
     }
   `;
 
@@ -675,6 +765,67 @@ export class MonsterBuilder extends LitElement {
         `;
   }
 
+  renderLoadingSkeleton() {
+    return html`
+      <div class="pamphlet-main">
+        <div class="monster-header">
+          <div class="monster-title-nav">
+            <div class="nav-arrow prev skeleton-element"></div>
+            <h1 class="monster-title skeleton-element">
+              <span>Loading Monster...</span>
+            </h1>
+            <div class="nav-arrow next skeleton-element"></div>
+          </div>
+          <div class="nav-pills">
+            <div class="nav-pill skeleton-element"></div>
+            <div class="nav-pill skeleton-element"></div>
+            <div class="nav-pill skeleton-element"></div>
+          </div>
+        </div>
+
+        ${this.isMobile ? html`
+          <div class="mobile-tabs">
+            <div class="mobile-tab skeleton-element"></div>
+            <div class="mobile-tab skeleton-element"></div>
+          </div>
+        ` : ''}
+
+        <div class="panels-container ${this.isSwipeInProgress ? 'swiping' : ''}"
+          style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
+
+          <div class="card-panel" id="card-panel" tabindex="-1">
+            <div class="skeleton-monster-card">
+              <div class="skeleton-image"></div>
+              <div class="skeleton-content">
+                <div class="skeleton-line long"></div>
+                <div class="skeleton-line medium"></div>
+                <div class="skeleton-line short"></div>
+                <div class="skeleton-controls">
+                  <div class="skeleton-button"></div>
+                  <div class="skeleton-button"></div>
+                  <div class="skeleton-button"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="statblock-panel" id="statblock-panel" tabindex="-1">
+            <div class="skeleton-statblock">
+              <div class="skeleton-line very-long"></div>
+              <div class="skeleton-line long"></div>
+              <div class="skeleton-line medium"></div>
+              <div class="skeleton-content-block">
+                <div class="skeleton-line short"></div>
+                <div class="skeleton-line medium"></div>
+                <div class="skeleton-line long"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   renderContent(monster: Monster) {
 
     const powerKeys = monster.loadouts.map(loadout => loadout.powers[0].key).join(",");
@@ -776,7 +927,7 @@ export class MonsterBuilder extends LitElement {
 
   render() {
     return this._monsterTask.render({
-      pending: () => this.renderMessage('Loading...', 'loading'),
+      pending: () => this.renderLoadingSkeleton(),
       error: (e) => this.renderMessage(`Error loading monster: ${e}`, 'error-message'),
       complete: (monster: Monster) => this.renderContent(monster)
     })

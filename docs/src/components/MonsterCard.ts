@@ -52,6 +52,7 @@ export class MonsterCard extends LitElement {
 
       background-color: var(--bs-dark);
       position: relative;
+      contain: layout style; /* Isolate layout changes within monster card */
 
       --max-text-content-height: 700px; /* Default max height for content */
     }

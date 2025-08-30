@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { property, customElement } from 'lit/decorators.js';
+import { property, customElement, state } from 'lit/decorators.js';
 
 @customElement('monster-art')
 export class MonsterArt extends LitElement {
@@ -16,6 +16,16 @@ export class MonsterArt extends LitElement {
   @property({ type: String, attribute: 'image-mode' })
   imageMode: 'contain' | 'cover' = 'contain';
 
+  @state()
+  private imageLoaded: boolean = false;
+
+  // Reset loaded state when image source changes
+  updated(changedProperties: Map<string, unknown>) {
+    if (changedProperties.has('monsterImage')) {
+      this.imageLoaded = false;
+    }
+  }
+
   static styles = css`
     :host {
       display: block;
@@ -31,6 +41,7 @@ export class MonsterArt extends LitElement {
       align-items: center;
       overflow: hidden;
       margin-bottom: 1rem;
+      contain: layout style; /* Prevent layout shifts from image loading */
     }
 
     .monster-art-container::before {
@@ -57,6 +68,12 @@ export class MonsterArt extends LitElement {
       object-fit: contain;
       object-position: center;
       mix-blend-mode: multiply;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .card-image.loaded {
+      opacity: 1;
     }
 
     .card-image.contain {
@@ -74,6 +91,9 @@ export class MonsterArt extends LitElement {
     const classes = ['card-image'];
     if (this.imageMode) {
       classes.push(this.imageMode);
+    }
+    if (this.imageLoaded) {
+      classes.push('loaded');
     }
     return classes.join(' ');
   }
@@ -113,6 +133,7 @@ export class MonsterArt extends LitElement {
   }
 
   private _handleImageLoad(event: Event) {
+    this.imageLoaded = true;
     this.dispatchEvent(new CustomEvent('image-loaded', {
       detail: { src: this.monsterImage },
       bubbles: true
