@@ -1,23 +1,16 @@
 ---
-title: Print Preview Example
-description: Testing print preview functionality for monster statblocks
+title: Print Preview Examples
+description: Examples of print-friendly monster statblocks for testing
 ---
 
 # Print Preview Examples
 
 This page demonstrates the print preview functionality for monster statblocks. The `print-preview` attribute creates a simplified black and white version suitable for printing.
 
-## Regular Statblock vs Print Preview
+## Print Preview Statblocks
 
-### Regular Orc Statblock
-<monster-statblock monster-key="orc" hide-buttons="true"></monster-statblock>
-
-### Print Preview Orc Statblock
+### Orc (Print Preview)
 <monster-statblock monster-key="orc" print-preview="true" hide-buttons="true"></monster-statblock>
-
----
-
-## Additional Print Preview Examples
 
 ### Knight (Print Preview)
 <monster-statblock monster-key="knight" print-preview="true" hide-buttons="true"></monster-statblock>
