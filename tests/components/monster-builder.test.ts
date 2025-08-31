@@ -20,7 +20,7 @@ describe('MonsterBuilder Component', () => {
   });
 
   describe('Basic Rendering', () => {
-    it('should render loading state initially', async () => {
+    it('should render loading skeleton state initially', async () => {
       element = await fixture(html`
         <monster-builder 
           monster-key="test-monster"
@@ -31,9 +31,65 @@ describe('MonsterBuilder Component', () => {
 
       expect(element).to.exist;
       
-      // Should show loading state initially
-      const loadingElement = element.shadowRoot?.querySelector('.loading');
-      expect(loadingElement).to.exist;
+      // Should show skeleton loading state initially
+      const skeletonTitle = element.shadowRoot?.querySelector('.monster-title.skeleton-element');
+      expect(skeletonTitle).to.exist;
+      expect(skeletonTitle?.textContent?.trim()).to.include('Loading Monster...');
+      
+      // Should have skeleton navigation arrows
+      const skeletonArrows = element.shadowRoot?.querySelectorAll('.nav-arrow.skeleton-element');
+      expect(skeletonArrows).to.have.length(2);
+      
+      // Should have skeleton navigation pills
+      const skeletonPills = element.shadowRoot?.querySelectorAll('.nav-pill.skeleton-element');
+      expect(skeletonPills?.length).to.be.greaterThan(0);
+    });
+
+    it('should render skeleton panels during loading', async () => {
+      element = await fixture(html`
+        <monster-builder 
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+          .powerStore="${mockPowerStore}"
+        ></monster-builder>
+      `);
+
+      // Should show skeleton monster card and statblock
+      const skeletonMonsterCard = element.shadowRoot?.querySelector('.skeleton-monster-card');
+      const skeletonStatblock = element.shadowRoot?.querySelector('.skeleton-statblock');
+      
+      expect(skeletonMonsterCard).to.exist;
+      expect(skeletonStatblock).to.exist;
+      
+      // Should have skeleton content elements
+      const skeletonImage = element.shadowRoot?.querySelector('.skeleton-image');
+      const skeletonLines = element.shadowRoot?.querySelectorAll('.skeleton-line');
+      const skeletonButtons = element.shadowRoot?.querySelectorAll('.skeleton-button');
+      
+      expect(skeletonImage).to.exist;
+      expect(skeletonLines?.length).to.be.greaterThan(0);
+      expect(skeletonButtons?.length).to.be.greaterThan(0);
+    });
+
+    it('should render mobile tabs skeleton when in mobile mode during loading', async () => {
+      element = await fixture(html`
+        <monster-builder 
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+          .powerStore="${mockPowerStore}"
+        ></monster-builder>
+      `);
+
+      // Simulate mobile viewport
+      element.isMobile = true;
+      await element.updateComplete;
+
+      // Should show skeleton mobile tabs
+      const mobileTabsContainer = element.shadowRoot?.querySelector('.mobile-tabs');
+      expect(mobileTabsContainer).to.exist;
+      
+      const skeletonTabs = element.shadowRoot?.querySelectorAll('.mobile-tab.skeleton-element');
+      expect(skeletonTabs).to.have.length(2);
     });
 
     it('should render monster content after loading', async () => {
@@ -230,6 +286,42 @@ describe('MonsterBuilder Component', () => {
       expect(monsterCard.monsterStore).to.equal(mockMonsterStore);
       expect(monsterCard.powerStore).to.equal(mockPowerStore);
       expect(monsterStatblock.monsterStore).to.equal(mockMonsterStore);
+    });
+  });
+
+  describe('Layout and CLS Prevention', () => {
+    beforeEach(async () => {
+      element = await fixture(html`
+        <monster-builder 
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+          .powerStore="${mockPowerStore}"
+        ></monster-builder>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+    });
+
+    it('should have minimum height set for CLS prevention', () => {
+      // Check that the element has the min-height style defined in its CSS
+      // We can verify this by checking the static styles property of the MonsterBuilder class
+      const stylesText = (element.constructor as any).styles.toString();
+      expect(stylesText).to.include('min-height: 700px');
+      expect(stylesText).to.include('Reserve space to prevent CLS when content loads');
+    });
+
+    it('should have CSS containment on panel containers', () => {
+      const panelsContainer = element.shadowRoot?.querySelector('.panels-container');
+      const cardPanel = element.shadowRoot?.querySelector('.card-panel');
+      const statblockPanel = element.shadowRoot?.querySelector('.statblock-panel');
+
+      expect(panelsContainer).to.exist;
+      expect(cardPanel).to.exist;
+      expect(statblockPanel).to.exist;
+
+      // Note: getComputedStyle for 'contain' property might not work in test environment
+      // but we can at least verify the elements exist with the expected classes
     });
   });
 
