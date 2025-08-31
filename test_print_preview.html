@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Preview Test</title>
+    <link href="/site/css/site.css" rel="stylesheet">
+    <script type="module" src="/site/scripts/main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        
+        /* Basic stat-block styling for testing */
+        .stat-block {
+            position: relative;
+            color: #333;
+            background-color: #faf8f5;
+            background: #faf8f5;
+            padding: 20px;
+            border: 1px solid #8B4513;
+            border-radius: 8px;
+            outline: 1px solid #8B4513;
+            outline-offset: -4px;
+            box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+            font-family: 'Times New Roman', serif;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+        
+        .stat-block .monster-name {
+            color: #8B4513;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-block .monster-name:after {
+            content: "";
+            display: block;
+            width: 100%;
+            margin: 5px auto 10px;
+            height: 2px;
+            background: #8B4513;
+        }
+        
+        .stat-block .block-header {
+            color: #8B4513;
+            border-bottom: 2px solid #8B4513;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 15px 0 10px 0;
+            padding-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Print Preview Component Test</h1>
+    
+    <div class="test-section">
+        <h2>Regular Monster Statblock Component</h2>
+        <monster-statblock use-slot="true" hide-buttons="true">
+            <div class="stat-block">
+                <div class="monster-name">Test Monster</div>
+                <p><em>Medium humanoid, chaotic evil</em></p>
+                <div class="block-header">Armor Class</div>
+                <p>15 (leather armor, shield)</p>
+                <div class="block-header">Hit Points</div>
+                <p>15 (2d8 + 2)</p>
+                <div class="block-header">Speed</div>
+                <p>30 ft.</p>
+                <div class="block-header">Actions</div>
+                <p><strong>Scimitar.</strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) slashing damage.</p>
+            </div>
+        </monster-statblock>
+    </div>
+    
+    <div class="test-section">
+        <h2>Print Preview Monster Statblock Component</h2>
+        <monster-statblock use-slot="true" print-preview="true" hide-buttons="true">
+            <div class="stat-block">
+                <div class="monster-name">Test Monster (Print Preview)</div>
+                <p><em>Medium humanoid, chaotic evil</em></p>
+                <div class="block-header">Armor Class</div>
+                <p>15 (leather armor, shield)</p>
+                <div class="block-header">Hit Points</div>
+                <p>15 (2d8 + 2)</p>
+                <div class="block-header">Speed</div>
+                <p>30 ft.</p>
+                <div class="block-header">Actions</div>
+                <p><strong>Scimitar.</strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) slashing damage.</p>
+            </div>
+        </monster-statblock>
+    </div>
+    
+    <div class="test-section">
+        <h2>Direct CSS Class Test</h2>
+        <div class="stat-block print-preview">
+            <div class="monster-name">Direct CSS Test Monster</div>
+            <p><em>Medium humanoid, chaotic evil</em></p>
+            <div class="block-header">Armor Class</div>
+            <p>15 (leather armor, shield)</p>
+            <div class="block-header">Hit Points</div>
+            <p>15 (2d8 + 2)</p>
+            <div class="block-header">Speed</div>
+            <p>30 ft.</p>
+            <div class="block-header">Actions</div>
+            <p><strong>Scimitar.</strong> <em>Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) slashing damage.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Wait for components to load and then test the print-preview functionality
+        setTimeout(() => {
+            console.log('Testing print-preview functionality...');
+            const printPreviewComponent = document.querySelector('monster-statblock[print-preview]');
+            if (printPreviewComponent) {
+                console.log('Print preview component found:', printPreviewComponent);
+                const statBlocks = printPreviewComponent.shadowRoot.querySelectorAll('.stat-block');
+                console.log('Found stat blocks in shadow root:', statBlocks.length);
+                
+                // Also check in the light DOM (slotted content)
+                const lightStatBlocks = printPreviewComponent.querySelectorAll('.stat-block');
+                console.log('Found stat blocks in light DOM:', lightStatBlocks.length);
+                
+                lightStatBlocks.forEach((block, index) => {
+                    console.log(`Stat block ${index} classes:`, block.classList.toString());
+                });
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
