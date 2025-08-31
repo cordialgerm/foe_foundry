@@ -54,6 +54,7 @@ export class StatblockTutorial extends LitElement {
   private _scrollCheckInterval?: number;
   private _currentButton?: Element;
   private _lastBubblePosition = { top: 0, left: 0 };
+  private _firedEvents = new Set<string>();
 
   static styles = css`
     :host {
@@ -148,7 +149,7 @@ export class StatblockTutorial extends LitElement {
     if (!this._checkBrowserSupport()) {
       this._trackAnalytics('tutorial_skipped_unsupported', {
         missing: this._getMissingFeatures()
-      });
+      }, true);
       return;
     }
 
@@ -165,7 +166,7 @@ export class StatblockTutorial extends LitElement {
             tutorial_version: TUTORIAL_VERSION,
             page: window.location.pathname,
             count_statblocks: this._statblocks.length
-          });
+          }, true);
         }
       }, 1000);
       return;
@@ -179,7 +180,7 @@ export class StatblockTutorial extends LitElement {
       tutorial_version: TUTORIAL_VERSION,
       page: window.location.pathname,
       count_statblocks: this._statblocks.length
-    });
+    }, true);
   }
 
   private _checkBrowserSupport(): boolean {
@@ -378,7 +379,7 @@ export class StatblockTutorial extends LitElement {
       line: text,
       target,
       visibility_ratio: this._visibilityMap.get(this._tutorialState.currentStatblock!) || 0
-    });
+    }, true);
   }
 
   private _startTypewriterEffect(textElement: HTMLElement, fullText: string): void {
@@ -825,7 +826,13 @@ export class StatblockTutorial extends LitElement {
     };
   }
 
-  private _trackAnalytics(eventName: string, params: any): void {
+  private _trackAnalytics(eventName: string, params: any, firstTimeOnly: boolean = false): void {
+    if (firstTimeOnly) {
+      if (this._firedEvents.has(eventName)) {
+        return; // Skip if already fired
+      }
+      this._firedEvents.add(eventName);
+    }
     trackEvent(eventName, params);
   }
 
