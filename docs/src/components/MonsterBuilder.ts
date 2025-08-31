@@ -340,7 +340,7 @@ export class MonsterBuilder extends LitElement {
 
     /* Skeleton loading styles */
     .skeleton-element {
-      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background: var(--muted-color);
       background-size: 200% 100%;
       animation: skeleton-loading 1.5s infinite;
       border-radius: 4px;
@@ -356,8 +356,8 @@ export class MonsterBuilder extends LitElement {
     }
 
     .skeleton-monster-card {
-      background: var(--bg-color, #fff);
-      border: 1px solid var(--tertiary-color, #ddd);
+      background: var(--muted-color);
+      border: 1px solid var(--tertiary-color);
       border-radius: var(--medium-margin, 8px);
       padding: 1rem;
       min-height: 500px;
@@ -366,7 +366,7 @@ export class MonsterBuilder extends LitElement {
     .skeleton-image {
       width: 100%;
       height: 200px;
-      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background: var(--muted-color);
       background-size: 200% 100%;
       animation: skeleton-loading 1.5s infinite;
       border-radius: 4px;
@@ -381,7 +381,7 @@ export class MonsterBuilder extends LitElement {
 
     .skeleton-line {
       height: 1rem;
-      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background: var(--muted-color);
       background-size: 200% 100%;
       animation: skeleton-loading 1.5s infinite;
       border-radius: 4px;
@@ -401,15 +401,15 @@ export class MonsterBuilder extends LitElement {
     .skeleton-button {
       width: 80px;
       height: 2rem;
-      background: linear-gradient(90deg, var(--bs-gray-300, #dee2e6) 25%, var(--bs-gray-200, #e9ecef) 50%, var(--bs-gray-300, #dee2e6) 75%);
+      background: var(--muted-color);
       background-size: 200% 100%;
       animation: skeleton-loading 1.5s infinite;
       border-radius: 4px;
     }
 
     .skeleton-statblock {
-      background: var(--bg-color, #fff);
-      border: 1px solid var(--tertiary-color, #ddd);
+      background: var(--muted-color);
+      border: 1px solid var(--tertiary-color);
       border-radius: var(--medium-margin, 8px);
       padding: 1.5rem;
       min-height: 500px;
@@ -906,7 +906,7 @@ export class MonsterBuilder extends LitElement {
           style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
 
           <div class="card-panel" id="card-panel" tabindex="-1">
-            <monster-card 
+            <monster-card
               monster-key="${this.monsterKey}"
               .monsterStore="${this.monsterStore}"
               .powerStore="${this.powerStore}"
@@ -933,7 +933,6 @@ export class MonsterBuilder extends LitElement {
       complete: (monster: Monster) => this.renderContent(monster)
     })
   }
-
 
 }
 
