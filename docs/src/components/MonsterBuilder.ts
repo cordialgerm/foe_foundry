@@ -148,7 +148,7 @@ export class MonsterBuilder extends LitElement {
     .nav-pill.more-pill {
       background: var(--bg-color);
       color: var(--tertiary-color) !important;
-      border: 1px !important;
+      border: 1px solid !important;
       border-color: var(--tertiary-color) !important;
       font-weight: bold;
     }
