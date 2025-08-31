@@ -131,6 +131,122 @@ export class MonsterBuilder extends LitElement {
       color: var(--bs-dark);
       font-weight: bold;
     }
+    .nav-pill.more-pill {
+      background: var(--primary-color);
+      color: var(--bg-color);
+      font-weight: bold;
+    }
+    .nav-pill.more-pill:hover {
+      background: var(--primary-color-darker, var(--primary-color));
+      transform: scale(1.05);
+    }
+
+    /* Monster Selection Dialog */
+    .monster-dialog-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+
+    .monster-dialog {
+      background: var(--bg-color);
+      color: var(--fg-color);
+      border-radius: 12px;
+      max-width: 90vw;
+      max-height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 2px solid var(--primary-color);
+    }
+
+    .monster-dialog-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 2px solid var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .monster-dialog-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .monster-dialog-close {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: var(--fg-color);
+      cursor: pointer;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .monster-dialog-close:hover {
+      background: var(--primary-color);
+      color: var(--bg-color);
+    }
+
+    .monster-dialog-content {
+      padding: 1rem;
+    }
+
+    .monster-dialog-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .monster-dialog-item {
+      background: var(--bs-dark);
+      color: var(--bs-light);
+      border: 2px solid transparent;
+      border-radius: 8px;
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.1rem;
+      text-align: center;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .monster-dialog-item:hover {
+      background: var(--primary-color);
+      color: var(--bg-color);
+      transform: scale(1.02);
+    }
+
+    .monster-dialog-item.current {
+      background: var(--bs-light);
+      color: var(--bs-dark);
+      border-color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .monster-dialog-item.current:hover {
+      background: var(--bs-light);
+      color: var(--bs-dark);
+      transform: none;
+      cursor: default;
+    }
     .container {
       display: flex;
       flex-direction: column;
@@ -376,6 +492,9 @@ export class MonsterBuilder extends LitElement {
   @property({ type: Boolean })
   isSwipeInProgress: boolean = false;
 
+  @property({ type: Boolean })
+  isMonsterDialogOpen: boolean = false;
+
   private resizeObserver?: ResizeObserver;
 
   // Touch gesture properties
@@ -517,6 +636,19 @@ export class MonsterBuilder extends LitElement {
 
     // Force a re-render to update the UI
     this.requestUpdate();
+  }
+
+  private openMonsterDialog() {
+    this.isMonsterDialogOpen = true;
+  }
+
+  private closeMonsterDialog() {
+    this.isMonsterDialogOpen = false;
+  }
+
+  private selectMonsterFromDialog(monsterKey: string) {
+    this.closeMonsterDialog();
+    this.onMonsterKeyChanged(monsterKey);
   }
 
   private getMobilePanelStyles(): string {
@@ -675,6 +807,77 @@ export class MonsterBuilder extends LitElement {
         `;
   }
 
+  renderDesktopNavPills(monster: Monster) {
+    // Desktop: show all related monsters
+    return monster.relatedMonsters.filter(rel => rel.sameTemplate).map((rel: RelatedMonster) => html`
+      <a
+        href="/monsters/${rel.template}#${rel.key}"
+        class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
+        @click=${(e: MouseEvent) => {
+          e.preventDefault();
+          this.onMonsterKeyChanged(rel.key);
+        }}
+      >${rel.name}</a>
+    `);
+  }
+
+  renderMobileNavPills(monster: Monster) {
+    // Mobile: show only current monster + "More..." button
+    const currentMonster = monster.relatedMonsters.find(rel => rel.key === this.monsterKey);
+    const otherMonsters = monster.relatedMonsters.filter(rel => rel.sameTemplate && rel.key !== this.monsterKey);
+    
+    return html`
+      ${currentMonster ? html`
+        <span class="nav-pill active">${currentMonster.name}</span>
+      ` : ''}
+      ${otherMonsters.length > 0 ? html`
+        <button 
+          class="nav-pill more-pill"
+          @click=${this.openMonsterDialog}
+          aria-label="Show more monster variants"
+        >
+          More... (${otherMonsters.length})
+        </button>
+      ` : ''}
+    `;
+  }
+
+  renderMonsterDialog(monster: Monster) {
+    if (!this.isMonsterDialogOpen) return '';
+
+    const relatedMonsters = monster.relatedMonsters.filter(rel => rel.sameTemplate);
+
+    return html`
+      <div class="monster-dialog-overlay" @click=${this.closeMonsterDialog}>
+        <div class="monster-dialog" @click=${(e: Event) => e.stopPropagation()}>
+          <div class="monster-dialog-header">
+            <h2 class="monster-dialog-title">Choose Variant</h2>
+            <button 
+              class="monster-dialog-close" 
+              @click=${this.closeMonsterDialog}
+              aria-label="Close dialog"
+            >
+              ×
+            </button>
+          </div>
+          <div class="monster-dialog-content">
+            <div class="monster-dialog-list">
+              ${relatedMonsters.map((rel: RelatedMonster) => html`
+                <button
+                  class="monster-dialog-item ${rel.key === this.monsterKey ? 'current' : ''}"
+                  @click=${() => this.selectMonsterFromDialog(rel.key)}
+                  ?disabled=${rel.key === this.monsterKey}
+                >
+                  ${rel.name} ${rel.key === this.monsterKey ? '(Current)' : ''}
+                </button>
+              `)}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   renderContent(monster: Monster) {
 
     const powerKeys = monster.loadouts.map(loadout => loadout.powers[0].key).join(",");
@@ -714,16 +917,7 @@ export class MonsterBuilder extends LitElement {
             ${nextTemplate}
           </div>
           <div class="nav-pills">
-            ${monster.relatedMonsters.filter(rel => rel.sameTemplate).map((rel: RelatedMonster) => html`
-              <a
-                href="/monsters/${rel.template}#${rel.key}"
-                class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
-                @click=${(e: MouseEvent) => {
-        e.preventDefault();
-        this.onMonsterKeyChanged(rel.key);
-      }}
-              >${rel.name}</a>
-            `)}
+            ${this.isMobile ? this.renderMobileNavPills(monster) : this.renderDesktopNavPills(monster)}
           </div>
         </div>
 
@@ -770,6 +964,8 @@ export class MonsterBuilder extends LitElement {
             ></monster-statblock>
           </div>
         </div>
+        
+        ${this.renderMonsterDialog(monster)}
       </div>
     `;
   }
