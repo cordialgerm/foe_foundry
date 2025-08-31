@@ -10,6 +10,23 @@
     margin-top: 0px !important;
 }
 
+monster-builder {
+    display: block;
+    /* unknown elements default to inline */
+    min-height: 700px;
+    /* matches your target */
+    contain: layout style;
+    /* keep internal reflow from leaking out */
+    contain-intrinsic-size: 700px;
+    /* reserve space even if content-visibility is used */
+}
+
+/* Optional: hide unupgraded jank while keeping space reserved */
+monster-builder:not(:defined) {
+    visibility: hidden;
+    /* keeps layout space, avoids flash of half-baked UI */
+}
+
 /* FAQ Styling */
 dt {
     font-weight: bold;
