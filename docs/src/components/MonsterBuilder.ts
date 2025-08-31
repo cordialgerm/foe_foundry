@@ -132,13 +132,11 @@ export class MonsterBuilder extends LitElement {
       font-weight: bold;
     }
     .nav-pill.more-pill {
-      background: var(--primary-color);
-      color: var(--bg-color);
+      background: var(--bg-color);
+      color: var(--tertiary-color) !important;
+      border: 1px !important;
+      border-color: var(--tertiary-color) !important;
       font-weight: bold;
-    }
-    .nav-pill.more-pill:hover {
-      background: var(--primary-color-darker, var(--primary-color));
-      transform: scale(1.05);
     }
 
     /* Monster Selection Dialog */
@@ -158,24 +156,25 @@ export class MonsterBuilder extends LitElement {
 
     .monster-dialog {
       background: var(--bg-color);
-      color: var(--fg-color);
+      color: var(--tertiary-color);
       border-radius: 12px;
       max-width: 90vw;
       max-height: 80vh;
       overflow-y: auto;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      border: 2px solid var(--primary-color);
+      border: 2px solid var(--tertiary-color);
     }
 
     .monster-dialog-header {
       padding: 1rem 1.5rem;
-      border-bottom: 2px solid var(--primary-color);
+      border-bottom: 2px solid var(--tertiary-color);
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .monster-dialog-title {
+      color: var(--tertiary-color);
       font-size: 1.5rem;
       font-weight: bold;
       margin: 0;
@@ -185,7 +184,7 @@ export class MonsterBuilder extends LitElement {
       background: none;
       border: none;
       font-size: 2rem;
-      color: var(--fg-color);
+      color: var(--tertiary-color);
       cursor: pointer;
       padding: 0;
       width: 40px;
@@ -198,7 +197,7 @@ export class MonsterBuilder extends LitElement {
     }
 
     .monster-dialog-close:hover {
-      background: var(--primary-color);
+      background: var(--tertiary-color);
       color: var(--bg-color);
     }
 
@@ -229,7 +228,7 @@ export class MonsterBuilder extends LitElement {
     }
 
     .monster-dialog-item:hover {
-      background: var(--primary-color);
+      background: var(--tertiary-color);
       color: var(--bg-color);
       transform: scale(1.02);
     }
@@ -237,7 +236,7 @@ export class MonsterBuilder extends LitElement {
     .monster-dialog-item.current {
       background: var(--bs-light);
       color: var(--bs-dark);
-      border-color: var(--primary-color);
+      border-color: var(--tertiary-color);
       font-weight: bold;
     }
 
@@ -247,6 +246,7 @@ export class MonsterBuilder extends LitElement {
       transform: none;
       cursor: default;
     }
+
     .container {
       display: flex;
       flex-direction: column;
@@ -814,9 +814,9 @@ export class MonsterBuilder extends LitElement {
         href="/monsters/${rel.template}#${rel.key}"
         class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
         @click=${(e: MouseEvent) => {
-          e.preventDefault();
-          this.onMonsterKeyChanged(rel.key);
-        }}
+        e.preventDefault();
+        this.onMonsterKeyChanged(rel.key);
+      }}
       >${rel.name}</a>
     `);
   }
@@ -825,13 +825,13 @@ export class MonsterBuilder extends LitElement {
     // Mobile: show only current monster + "More..." button
     const currentMonster = monster.relatedMonsters.find(rel => rel.key === this.monsterKey);
     const otherMonsters = monster.relatedMonsters.filter(rel => rel.sameTemplate && rel.key !== this.monsterKey);
-    
+
     return html`
       ${currentMonster ? html`
         <span class="nav-pill active">${currentMonster.name}</span>
       ` : ''}
       ${otherMonsters.length > 0 ? html`
-        <button 
+        <button
           class="nav-pill more-pill"
           @click=${this.openMonsterDialog}
           aria-label="Show more monster variants"
@@ -852,8 +852,8 @@ export class MonsterBuilder extends LitElement {
         <div class="monster-dialog" @click=${(e: Event) => e.stopPropagation()}>
           <div class="monster-dialog-header">
             <h2 class="monster-dialog-title">Choose Variant</h2>
-            <button 
-              class="monster-dialog-close" 
+            <button
+              class="monster-dialog-close"
               @click=${this.closeMonsterDialog}
               aria-label="Close dialog"
             >
@@ -948,7 +948,7 @@ export class MonsterBuilder extends LitElement {
           style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
 
           <div class="card-panel" id="card-panel" tabindex="-1">
-            <monster-card 
+            <monster-card
               monster-key="${this.monsterKey}"
               .monsterStore="${this.monsterStore}"
               .powerStore="${this.powerStore}"
@@ -964,7 +964,7 @@ export class MonsterBuilder extends LitElement {
             ></monster-statblock>
           </div>
         </div>
-        
+
         ${this.renderMonsterDialog(monster)}
       </div>
     `;
