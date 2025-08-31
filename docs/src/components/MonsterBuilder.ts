@@ -299,99 +299,6 @@ export class MonsterBuilder extends LitElement {
       .nav-arrow:focus {
         border-radius: 6px;
       }
-
-      .nav-pills {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE and Edge */
-        padding: 0.25rem 0; /* Consistent padding, no left/right padding that could cause offset */
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch; /* iOS momentum scrolling */
-        position: relative; /* For pseudo-element positioning */
-        scroll-snap-type: x proximity; /* Optional: snap to pills */
-        /* Ensure content starts at the absolute left edge */
-        box-sizing: border-box;
-      }
-
-      .nav-pills::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
-      }
-
-      /* Right scroll indicator - shows when there's more content to scroll right */
-      .nav-pills::after {
-        content: '›';
-        position: absolute;
-        top: 50%;
-        right: 4px; /* Closer to edge for better visibility */
-        transform: translateY(-50%);
-        font-size: 2rem; /* Slightly larger for better visibility */
-        font-weight: bold;
-        color: #ff4444; /* Slightly brighter red for better contrast */
-        text-shadow: 
-          2px 2px 4px rgba(0, 0, 0, 0.9), 
-          -2px -2px 4px rgba(0, 0, 0, 0.9),
-          0 0 8px rgba(0, 0, 0, 0.8); /* Enhanced shadow for better visibility */
-        pointer-events: none; /* Don't interfere with scrolling */
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 150; /* Higher z-index to ensure visibility */
-        background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 30%, transparent 60%);
-        border-radius: 50%;
-        width: 36px; /* Slightly larger */
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid rgba(255, 68, 68, 0.6); /* More visible border */
-        backdrop-filter: blur(2px); /* Add backdrop blur for better separation */
-      }
-
-      /* Left scroll indicator - shows when there's content scrolled past the left edge */
-      .nav-pills::before {
-        content: '‹';
-        position: absolute;
-        top: 50%;
-        left: 4px; /* Closer to edge for better visibility */
-        transform: translateY(-50%);
-        font-size: 2rem; /* Slightly larger for better visibility */
-        font-weight: bold;
-        color: #ff4444; /* Slightly brighter red for better contrast */
-        text-shadow: 
-          2px 2px 4px rgba(0, 0, 0, 0.9), 
-          -2px -2px 4px rgba(0, 0, 0, 0.9),
-          0 0 8px rgba(0, 0, 0, 0.8); /* Enhanced shadow for better visibility */
-        pointer-events: none; /* Don't interfere with scrolling */
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 150; /* Higher z-index to ensure visibility */
-        background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 30%, transparent 60%);
-        border-radius: 50%;
-        width: 36px; /* Slightly larger */
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid rgba(255, 68, 68, 0.6); /* More visible border */
-        backdrop-filter: blur(2px); /* Add backdrop blur for better separation */
-      }
-
-      /* Show right indicator when there's more content to scroll right */
-      .nav-pills.has-scroll-right::after {
-        opacity: 1 !important;
-      }
-
-      /* Show left indicator when content has been scrolled past the left edge */
-      .nav-pills.has-scroll-left::before {
-        opacity: 1 !important;
-      }
-
-      .nav-pill {
-        flex-shrink: 0; /* Prevent pills from shrinking */
-        min-width: 120px; /* Slightly larger touch targets on mobile */
-        padding: 0.75rem 1rem; /* More padding for better touch interaction */
-        scroll-snap-align: start; /* Optional: snap alignment */
-      }
     }
 
     /* Large desktop: wider MonsterCard */
@@ -470,7 +377,6 @@ export class MonsterBuilder extends LitElement {
   isSwipeInProgress: boolean = false;
 
   private resizeObserver?: ResizeObserver;
-  private scrollObserver?: IntersectionObserver;
 
   // Touch gesture properties
   private touchStartX: number = 0;
@@ -493,80 +399,15 @@ export class MonsterBuilder extends LitElement {
   disconnectedCallback() {
     super.disconnectedCallback();
     this.resizeObserver?.disconnect();
-    this.scrollObserver?.disconnect();
     this.removeTouchListeners();
-    
-    // Clean up scroll throttle timeout
-    if (this.scrollThrottleTimeout) {
-      clearTimeout(this.scrollThrottleTimeout);
-      this.scrollThrottleTimeout = null;
-    }
   }
 
   private setupResizeObserver() {
     this.resizeObserver = new ResizeObserver(() => {
       this.checkIsMobile();
-      // Update scroll indicator when size changes
-      requestAnimationFrame(() => {
-        this.updateNavPillsScrollIndicator();
-      });
     });
     this.resizeObserver.observe(this);
   }
-
-  private setupNavPillsScrollListener() {
-    if (!this.isMobile) return;
-    
-    const ensureLeftAlignment = () => {
-      const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
-      if (!navPills) return false;
-
-      // Force nav pills to start at the left position with multiple strategies
-      navPills.scrollLeft = 0;
-      
-      // Also ensure scroll position sticks by checking after a delay
-      setTimeout(() => {
-        if (navPills.scrollLeft !== 0) {
-          navPills.scrollLeft = 0;
-        }
-      }, 50);
-      
-      return true;
-    };
-
-    // Use multiple timing strategies to ensure reliable initialization
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        if (!ensureLeftAlignment()) return;
-        
-        const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
-        if (!navPills) return;
-
-        // Set up scroll event listener with throttling
-        navPills.addEventListener('scroll', () => {
-          if (!this.scrollThrottleTimeout) {
-            this.scrollThrottleTimeout = window.setTimeout(() => {
-              this.updateNavPillsScrollIndicator();
-              this.scrollThrottleTimeout = null;
-            }, 16); // ~60fps
-          }
-        }, { passive: true });
-
-        // Additional initialization attempts with different delays
-        setTimeout(() => {
-          ensureLeftAlignment();
-          this.updateNavPillsScrollIndicator();
-        }, 100);
-        
-        setTimeout(() => {
-          ensureLeftAlignment();
-          this.updateNavPillsScrollIndicator();
-        }, 250);
-      });
-    });
-  }
-
-  private scrollThrottleTimeout: number | null = null;
 
   private checkIsMobile() {
     const wasMobile = this.isMobile;
@@ -577,61 +418,6 @@ export class MonsterBuilder extends LitElement {
         windowWidth: window.innerWidth,
         breakpoint: LAYOUT_CONFIG.MOBILE_BREAKPOINT
       });
-    }
-  }
-
-  private updateNavPillsScrollIndicator() {
-    if (!this.isMobile) return;
-    
-    const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
-    if (!navPills) return;
-
-    // Check if content is scrollable
-    const isScrollable = navPills.scrollWidth > navPills.clientWidth;
-    
-    if (isScrollable) {
-      // Check scroll position to determine which arrows to show
-      const scrollLeft = Math.round(navPills.scrollLeft);
-      const maxScrollLeft = Math.round(navPills.scrollWidth - navPills.clientWidth);
-      
-      // Use smaller tolerance for more responsive indicators
-      const tolerance = 3;
-      
-      // Show left arrow if scrolled past the beginning (with tolerance)
-      const hasScrollLeft = scrollLeft > tolerance;
-      
-      // Show right arrow if not scrolled to the end (with tolerance)
-      const hasScrollRight = scrollLeft < (maxScrollLeft - tolerance);
-      
-      // Update CSS classes for arrow visibility with !important to override any conflicts
-      if (hasScrollLeft) {
-        navPills.classList.add('has-scroll-left');
-      } else {
-        navPills.classList.remove('has-scroll-left');
-      }
-      
-      if (hasScrollRight) {
-        navPills.classList.add('has-scroll-right');
-      } else {
-        navPills.classList.remove('has-scroll-right');
-      }
-
-      // Enhanced debug logging
-      console.debug('Nav pills scroll state:', {
-        scrollLeft: scrollLeft,
-        maxScrollLeft: maxScrollLeft,
-        scrollWidth: navPills.scrollWidth,
-        clientWidth: navPills.clientWidth,
-        hasScrollLeft: hasScrollLeft,
-        hasScrollRight: hasScrollRight,
-        isScrollable: isScrollable,
-        tolerance: tolerance,
-        classes: navPills.className
-      });
-    } else {
-      // Remove all scroll indicators when content doesn't overflow
-      navPills.classList.remove('has-scroll-left', 'has-scroll-right');
-      console.debug('Nav pills not scrollable, removing indicators');
     }
   }
 
@@ -655,13 +441,6 @@ export class MonsterBuilder extends LitElement {
       return;
     }
 
-    // Don't interfere with scrolling on nav pills - check target and all parent elements
-    const target = e.target as HTMLElement;
-    if (target?.closest('.nav-pills') || target?.classList.contains('nav-pills') || target?.classList.contains('nav-pill')) {
-      console.debug('Touch start ignored - within nav pills area');
-      return;
-    }
-
     const touch = e.touches[0];
     this.touchStartX = touch.clientX;
     this.touchStartY = touch.clientY;
@@ -672,13 +451,6 @@ export class MonsterBuilder extends LitElement {
   private handleTouchMove(e: TouchEvent) {
     // Only handle touch gestures on mobile
     if (!this.isMobile) return;
-
-    // Don't interfere with scrolling on nav pills - check target and all parent elements
-    const target = e.target as HTMLElement;
-    if (target?.closest('.nav-pills') || target?.classList.contains('nav-pills') || target?.classList.contains('nav-pill')) {
-      console.debug('Touch move ignored - within nav pills area');
-      return;
-    }
 
     const touch = e.touches[0];
     const deltaX = touch.clientX - this.touchStartX;
@@ -693,13 +465,6 @@ export class MonsterBuilder extends LitElement {
   private handleTouchEnd(e: TouchEvent) {
     // Only handle touch gestures on mobile
     if (!this.isMobile) return;
-
-    // Don't interfere with scrolling on nav pills - check target and all parent elements
-    const target = e.target as HTMLElement;
-    if (target?.closest('.nav-pills') || target?.classList.contains('nav-pills') || target?.classList.contains('nav-pill')) {
-      console.debug('Touch end ignored - within nav pills area');
-      return;
-    }
 
     const touch = e.changedTouches[0];
     const touchEndX = touch.clientX;
@@ -899,46 +664,6 @@ export class MonsterBuilder extends LitElement {
 
     if (this.shadowRoot) {
       await adoptExternalCss(this.shadowRoot);
-    }
-
-    // Update scroll indicator after initial render
-    requestAnimationFrame(() => {
-      this.updateNavPillsScrollIndicator();
-      this.setupNavPillsScrollListener();
-    });
-  }
-
-  updated(changedProperties: Map<string | number | symbol, unknown>) {
-    super.updated(changedProperties);
-    
-    // Update scroll indicator when component updates (e.g., monster changes)
-    if (changedProperties.has('monsterKey') || changedProperties.has('isMobile')) {
-      requestAnimationFrame(() => {
-        // Reset scroll position when monster changes with enhanced reliability
-        if (changedProperties.has('monsterKey')) {
-          const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
-          if (navPills && this.isMobile) {
-            // Multiple attempts to ensure scroll position resets
-            navPills.scrollLeft = 0;
-            setTimeout(() => {
-              navPills.scrollLeft = 0;
-            }, 10);
-            setTimeout(() => {
-              navPills.scrollLeft = 0;
-            }, 50);
-            setTimeout(() => {
-              navPills.scrollLeft = 0;
-              this.updateNavPillsScrollIndicator();
-            }, 100);
-          }
-        }
-        
-        this.updateNavPillsScrollIndicator();
-        // Re-setup scroll listener when monster changes or mobile state changes
-        if (changedProperties.has('monsterKey') || changedProperties.has('isMobile')) {
-          this.setupNavPillsScrollListener();
-        }
-      });
     }
   }
 
