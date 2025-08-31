@@ -321,23 +321,24 @@ export class MonsterBuilder extends LitElement {
         content: '›';
         position: absolute;
         top: 50%;
-        right: 4px;
+        right: 8px;
         transform: translateY(-50%);
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: bold;
-        color: var(--primary-color, #ff3737);
-        text-shadow: 0 0 4px var(--bg-color, #1a1a1a), 0 0 8px var(--bg-color, #1a1a1a);
+        color: #ff3737;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), -1px -1px 3px rgba(0, 0, 0, 0.8);
         pointer-events: none; /* Don't interfere with scrolling */
         opacity: 0;
         transition: opacity 0.3s ease;
-        z-index: 10;
-        background: radial-gradient(circle, var(--bg-color, #1a1a1a) 40%, transparent 70%);
+        z-index: 100;
+        background: radial-gradient(circle, rgba(26, 26, 26, 0.9) 30%, transparent 60%);
         border-radius: 50%;
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid rgba(255, 55, 55, 0.3);
       }
 
       /* Left scroll indicator - shows when there's content scrolled past the left edge */
@@ -345,23 +346,24 @@ export class MonsterBuilder extends LitElement {
         content: '‹';
         position: absolute;
         top: 50%;
-        left: 4px;
+        left: 8px;
         transform: translateY(-50%);
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: bold;
-        color: var(--primary-color, #ff3737);
-        text-shadow: 0 0 4px var(--bg-color, #1a1a1a), 0 0 8px var(--bg-color, #1a1a1a);
+        color: #ff3737;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), -1px -1px 3px rgba(0, 0, 0, 0.8);
         pointer-events: none; /* Don't interfere with scrolling */
         opacity: 0;
         transition: opacity 0.3s ease;
-        z-index: 10;
-        background: radial-gradient(circle, var(--bg-color, #1a1a1a) 40%, transparent 70%);
+        z-index: 100;
+        background: radial-gradient(circle, rgba(26, 26, 26, 0.9) 30%, transparent 60%);
         border-radius: 50%;
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid rgba(255, 55, 55, 0.3);
       }
 
       /* Show right indicator when there's more content to scroll right */
@@ -505,27 +507,36 @@ export class MonsterBuilder extends LitElement {
   private setupNavPillsScrollListener() {
     if (!this.isMobile) return;
     
-    // Use requestAnimationFrame to ensure the element is rendered
+    // Use multiple requestAnimationFrame calls to ensure reliable initialization
     requestAnimationFrame(() => {
-      const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
-      if (!navPills) return;
+      requestAnimationFrame(() => {
+        const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
+        if (!navPills) return;
 
-      // Ensure nav pills start at the left position
-      navPills.scrollLeft = 0;
+        // Force nav pills to start at the left position with multiple attempts
+        navPills.scrollLeft = 0;
+        
+        // Ensure it's really at 0 after a short delay
+        setTimeout(() => {
+          navPills.scrollLeft = 0;
+        }, 10);
 
-      // Listen for scroll events to update arrow indicators
-      navPills.addEventListener('scroll', () => {
-        // Use throttling to improve performance
-        if (!this.scrollThrottleTimeout) {
-          this.scrollThrottleTimeout = window.setTimeout(() => {
-            this.updateNavPillsScrollIndicator();
-            this.scrollThrottleTimeout = null;
-          }, 16); // ~60fps
-        }
-      }, { passive: true });
+        // Listen for scroll events to update arrow indicators
+        navPills.addEventListener('scroll', () => {
+          // Use throttling to improve performance
+          if (!this.scrollThrottleTimeout) {
+            this.scrollThrottleTimeout = window.setTimeout(() => {
+              this.updateNavPillsScrollIndicator();
+              this.scrollThrottleTimeout = null;
+            }, 16); // ~60fps
+          }
+        }, { passive: true });
 
-      // Initial update
-      this.updateNavPillsScrollIndicator();
+        // Initial update after ensuring scroll position
+        setTimeout(() => {
+          this.updateNavPillsScrollIndicator();
+        }, 50);
+      });
     });
   }
 
@@ -557,11 +568,11 @@ export class MonsterBuilder extends LitElement {
       const scrollLeft = navPills.scrollLeft;
       const maxScrollLeft = navPills.scrollWidth - navPills.clientWidth;
       
-      // Show left arrow if scrolled past the beginning (with small tolerance)
-      const hasScrollLeft = scrollLeft > 10;
+      // Show left arrow if scrolled past the beginning (with tolerance)
+      const hasScrollLeft = scrollLeft > 5;
       
-      // Show right arrow if not scrolled to the end (with small tolerance)
-      const hasScrollRight = scrollLeft < (maxScrollLeft - 10);
+      // Show right arrow if not scrolled to the end (with tolerance)
+      const hasScrollRight = scrollLeft < (maxScrollLeft - 5);
       
       // Update CSS classes for arrow visibility
       if (hasScrollLeft) {
@@ -576,10 +587,10 @@ export class MonsterBuilder extends LitElement {
         navPills.classList.remove('has-scroll-right');
       }
 
-      // Debug logging (can be removed later)
+      // Debug logging for troubleshooting
       console.debug('Nav pills scroll state:', {
-        scrollLeft: scrollLeft,
-        maxScrollLeft: maxScrollLeft,
+        scrollLeft: Math.round(scrollLeft),
+        maxScrollLeft: Math.round(maxScrollLeft),
         scrollWidth: navPills.scrollWidth,
         clientWidth: navPills.clientWidth,
         hasScrollLeft: hasScrollLeft,
@@ -869,6 +880,14 @@ export class MonsterBuilder extends LitElement {
     // Update scroll indicator when component updates (e.g., monster changes)
     if (changedProperties.has('monsterKey') || changedProperties.has('isMobile')) {
       requestAnimationFrame(() => {
+        // Reset scroll position when monster changes
+        if (changedProperties.has('monsterKey')) {
+          const navPills = this.shadowRoot?.querySelector('.nav-pills') as HTMLElement;
+          if (navPills && this.isMobile) {
+            navPills.scrollLeft = 0;
+          }
+        }
+        
         this.updateNavPillsScrollIndicator();
         // Re-setup scroll listener when monster changes or mobile state changes
         if (changedProperties.has('monsterKey') || changedProperties.has('isMobile')) {
