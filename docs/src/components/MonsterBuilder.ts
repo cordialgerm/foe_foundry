@@ -68,6 +68,19 @@ export class MonsterBuilder extends LitElement {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      opacity: 0;
+      animation: fadeInTitle 0.5s ease-in-out 0.1s forwards;
+    }
+
+    @keyframes fadeInTitle {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .nav-arrow {
@@ -344,6 +357,12 @@ export class MonsterBuilder extends LitElement {
       background-size: 200% 100%;
       animation: skeleton-loading 1.5s infinite;
       border-radius: 4px;
+      opacity: 1;
+      transition: opacity 0.3s ease-out;
+    }
+
+    .skeleton-element.fade-out {
+      opacity: 0;
     }
 
     @keyframes skeleton-loading {
@@ -772,7 +791,7 @@ export class MonsterBuilder extends LitElement {
         <div class="monster-header">
           <div class="monster-title-nav">
             <div class="nav-arrow prev skeleton-element"></div>
-            <h1 class="monster-title skeleton-element">
+            <h1 class="monster-title skeleton-element" style="opacity: 0.7;">
               <span>Loading Monster...</span>
             </h1>
             <div class="nav-arrow next skeleton-element"></div>
