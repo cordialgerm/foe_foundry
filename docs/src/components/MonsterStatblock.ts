@@ -41,6 +41,7 @@ export class MonsterStatblock extends LitElement {
             min-height: 300px;
             transition: height 0.3s ease-in-out;
             overflow: hidden;
+            contain: layout style; /* Prevent layout shifts from statblock changes */
         }
 
         .loading.empty {
