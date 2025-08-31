@@ -14,6 +14,7 @@ def _generate_fixed_monster(monster_key: str, seed: int = 12345):
     return ref, stats
 
 
+# 5E SRD Format Tests
 def test_render_statblock_markdown_5esrd_knight():
     """Test 5E SRD markdown rendering with Knight"""
     ref, stats = _generate_fixed_monster("knight")
@@ -59,6 +60,82 @@ def test_render_statblock_markdown_5esrd_spy():
     assert "**Challenge**" in markdown
 
 
+# GMBinder Format Tests
+def test_render_statblock_markdown_gmbinder_knight():
+    """Test GMBinder markdown rendering with Knight"""
+    ref, stats = _generate_fixed_monster("knight")
+    markdown = render_statblock_markdown(stats, "gmbinder")
+    
+    # Validate GMBinder specific structure
+    assert markdown.startswith("___  \n___  ")
+    assert "> ## Knight" in markdown
+    assert "> - **Armor Class**" in markdown
+    assert "|STR|DEX|CON|INT|WIS|CHA|" in markdown
+    assert "|:---:|:---:|:---:|:---:|:---:|:---:|" in markdown
+
+
+def test_render_statblock_markdown_gmbinder_priest():
+    """Test GMBinder markdown rendering with Priest"""
+    ref, stats = _generate_fixed_monster("priest")
+    markdown = render_statblock_markdown(stats, "gmbinder")
+    
+    # Validate GMBinder specific structure
+    assert markdown.startswith("___  \n___  ")
+    assert "> ## Priest" in markdown
+    assert "> - **Armor Class**" in markdown
+
+
+# Homebrewery Format Tests
+def test_render_statblock_markdown_homebrewery_knight():
+    """Test Homebrewery markdown rendering with Knight"""
+    ref, stats = _generate_fixed_monster("knight")
+    markdown = render_statblock_markdown(stats, "homebrewery")
+    
+    # Validate Homebrewery specific structure
+    assert markdown.startswith("{{monster")
+    assert markdown.endswith("}}")
+    assert "## Knight" in markdown
+    assert "**Armor Class** ::" in markdown
+    assert "|  STR  |  DEX  |  CON  |  INT  |  WIS  |  CHA  |" in markdown
+
+
+def test_render_statblock_markdown_homebrewery_spy():
+    """Test Homebrewery markdown rendering with Spy"""
+    ref, stats = _generate_fixed_monster("spy")
+    markdown = render_statblock_markdown(stats, "homebrewery")
+    
+    # Validate Homebrewery specific structure
+    assert markdown.startswith("{{monster")
+    assert "## Spy" in markdown
+    assert "**Challenge** ::" in markdown
+
+
+# Black Flag Format Tests
+def test_render_statblock_markdown_blackflag_knight():
+    """Test Black Flag markdown rendering with Knight"""
+    ref, stats = _generate_fixed_monster("knight")
+    markdown = render_statblock_markdown(stats, "blackflag")
+    
+    # Validate Black Flag specific structure
+    assert markdown.startswith("# Knight")
+    assert "- **Armor Class:**" in markdown
+    assert "- **Challenge Rating:** CR" in markdown
+    assert "| STR | DEX | CON | INT | WIS | CHA |" in markdown
+    assert "| --- | --- | --- | --- | --- | --- |" in markdown
+
+
+def test_render_statblock_markdown_blackflag_priest():
+    """Test Black Flag markdown rendering with Priest"""
+    ref, stats = _generate_fixed_monster("priest")
+    markdown = render_statblock_markdown(stats, "blackflag")
+    
+    # Validate Black Flag specific structure
+    assert markdown.startswith("# Priest")
+    assert "### Special Abilities" in markdown
+    assert "### Actions" in markdown
+
+
+# General Tests
 def test_render_statblock_markdown_invalid_format():
     """Test that invalid format raises ValueError"""
     ref, stats = _generate_fixed_monster("knight")
@@ -90,3 +167,16 @@ def test_statblock_markdown_has_sections():
     
     # Actions section should be present
     assert "###### Actions" in markdown or "Actions" in markdown
+
+
+def test_all_formats_available():
+    """Test that all expected formats are available"""
+    ref, stats = _generate_fixed_monster("knight")
+    
+    formats = ["5esrd", "gmbinder", "homebrewery", "blackflag"]
+    
+    for fmt in formats:
+        # Should not raise an exception
+        markdown = render_statblock_markdown(stats, fmt)
+        assert isinstance(markdown, str)
+        assert len(markdown) > 0
