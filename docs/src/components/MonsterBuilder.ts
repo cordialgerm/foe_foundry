@@ -43,6 +43,7 @@ export class MonsterBuilder extends LitElement {
     :host {
       display: block;
       z-index: 100;
+      min-height: 700px; /* Reserve space to prevent CLS when content loads */
     }
     .monster-header {
       display: flex;
