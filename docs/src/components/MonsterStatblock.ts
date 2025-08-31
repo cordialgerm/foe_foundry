@@ -141,6 +141,9 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean, attribute: 'hide-buttons' })
     hideButtons: boolean = false;
 
+    @property({ type: Boolean, attribute: 'print-preview' })
+    printPreview: boolean = false;
+
     @property({ type: Object })
     monsterStore?: MonsterStore;
     private statblockRef: Ref<HTMLDivElement> = createRef();
@@ -159,6 +162,13 @@ export class MonsterStatblock extends LitElement {
         }
     }
 
+    updated(changedProperties: Map<string | number | symbol, unknown>) {
+        super.updated(changedProperties);
+        
+        // Apply print-preview class after content updates
+        this.applyPrintPreviewClass();
+    }
+
     getSlottedContent(): Element | null {
         if (this.useSlot) {
             return this.querySelector('.stat-block') || this.querySelector('[slot]') || this.firstElementChild;
@@ -174,6 +184,28 @@ export class MonsterStatblock extends LitElement {
 
     getEffectiveMonsterKey() {
         return this.monsterKey || this.getSlottedMonsterKey() || this.statblockRef.value?.querySelector('.stat-block')?.getAttribute('data-monster') || null;
+    }
+
+    /**
+     * Apply print-preview class to stat-block elements if print-preview flag is set
+     */
+    private applyPrintPreviewClass() {
+        if (this.printPreview) {
+            // For slotted content, check the light DOM
+            if (this.useSlot) {
+                const statBlocks = this.querySelectorAll('.stat-block');
+                statBlocks.forEach(block => {
+                    block.classList.add('print-preview');
+                });
+            }
+            // For dynamically loaded content, check the shadow DOM container
+            else if (this.statblockRef.value) {
+                const statBlocks = this.statblockRef.value.querySelectorAll('.stat-block');
+                statBlocks.forEach(block => {
+                    block.classList.add('print-preview');
+                });
+            }
+        }
     }
 
     // Use Lit Task for async statblock loading
@@ -354,6 +386,15 @@ export class MonsterStatblock extends LitElement {
 
                 // Cache the new statblock
                 this._cachedStatblock = statblockElement;
+                
+                // Apply print-preview class if needed
+                if (this.printPreview) {
+                    const statBlocks = statblockElement.querySelectorAll('.stat-block');
+                    statBlocks.forEach(block => {
+                        block.classList.add('print-preview');
+                    });
+                }
+                
                 return html`
                             <div ${ref(this.statblockRef)} id="statblock-container">
                                 ${statblockElement}
