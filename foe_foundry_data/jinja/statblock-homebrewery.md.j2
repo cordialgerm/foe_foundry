@@ -1,6 +1,6 @@
 {% raw %}{{monster{% endraw %}
 ## {{statblock.name}}
-*{{statblock.size}} {{statblock.creature_type}}, lawful good*
+*{{statblock.size}} {{statblock.creature_type}}*
 ___
 **Armor Class** :: {{statblock.ac}}
 **Hit Points**  :: {{statblock.hp}}
@@ -63,7 +63,7 @@ ___
 {% endfor -%}
 {% endif -%}
 {% if statblock.reactions|length > 0 -%}
-### Reactions
+### {{statblock.reaction_header}}
 {% for reaction in statblock.reactions -%}
 ***{{reaction.title | fix_punctuation}}.*** {{reaction.description | fix_punctuation}}
 :

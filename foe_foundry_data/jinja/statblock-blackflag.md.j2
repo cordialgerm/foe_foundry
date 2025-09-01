@@ -9,13 +9,13 @@
 
 | STR | DEX | CON | INT | WIS | CHA |
 | --- | --- | --- | --- | --- | --- |
-| {{statblock.STR_MOD}} | {{statblock.DEX_MOD}} | {{statblock.CON_MOD}} | {{statblock.INT_MOD}} | {{statblock.WIS_MOD}} | {{statblock.CHA_MOD}} |
+| {{statblock.STR_SAVE}} | {{statblock.DEX_SAVE}} | {{statblock.CON_SAVE}} | {{statblock.INT_SAVE}} | {{statblock.WIS_SAVE}} | {{statblock.CHA_SAVE}} |
 
-{% if statblock.senses -%}
-- **Senses:** {{statblock.senses.replace('Passive Perception', 'Perception')}}
+{% if statblock.senses_no_passive_perception -%}
+- **Senses:** {{statblock.senses_no_passive_perception}}
 {% endif -%}
-{% if statblock.skills -%}
-- **Perception:** {{statblock.skills}}
+{% if statblock.passive_perception -%}
+- **Perception:** {{statblock.passive_perception}}
 {% endif -%}
 {% if statblock.languages -%}
 - **Languages:** {{statblock.languages}}
@@ -48,7 +48,7 @@
 
 {% endif -%}
 {% if statblock.reactions|length > 0 -%}
-### Reactions
+### {{statblock.reaction_header}}
 
 {% for reaction in statblock.reactions -%}
 - **{{reaction.title | fix_punctuation}}.** {{reaction.description | fix_punctuation}}
