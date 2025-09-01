@@ -22,6 +22,7 @@ nav:
       - Topics: topics/index.md
       - RSS: rss.xml
       - FAQ: topics/faq.md
+      - Privacy: topics/privacy.md
 
 use_directory_urls: true
 
