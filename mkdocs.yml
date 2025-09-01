@@ -18,12 +18,11 @@ nav:
       - Rivals: families/rivals.md
   - Powers: powers/all.md
   - Learn:
-      - Overview: learn/index.md
       - Blog: blog/index.md
       - Topics: topics/index.md
       - RSS: rss.xml
       - FAQ: topics/faq.md
-      - Privacy Policy: learn/privacy.md
+      - Privacy: topics/privacy.md
 
 use_directory_urls: true
 
