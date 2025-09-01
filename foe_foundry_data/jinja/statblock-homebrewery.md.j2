@@ -1,4 +1,4 @@
-{% raw %}{{monster{% endraw %}
+{% raw %}{{monster,frame,wide{% endraw %}
 ## {{statblock.name}}
 *{{statblock.size}} {{statblock.creature_type}}*
 ___
@@ -40,6 +40,7 @@ ___
 ***{{feature.title}}.*** {{feature.description | fix_punctuation}}
 :
 {% endfor -%}
+
 {% if statblock.attacks|length > 0 or statblock.actions|length > 0 -%}
 ### Actions
 {% endif -%}
@@ -55,6 +56,7 @@ ___
 ***{{action.title | fix_punctuation}}.*** {{action.description | fix_punctuation}}
 :
 {% endfor -%}
+
 {% if statblock.bonus_actions|length > 0 -%}
 ### Bonus Actions
 {% for bonus_action in statblock.bonus_actions -%}
@@ -63,11 +65,13 @@ ___
 {% endfor -%}
 {% endif -%}
 {% if statblock.reactions|length > 0 -%}
+
 ### {{statblock.reaction_header}}
 {% for reaction in statblock.reactions -%}
 ***{{reaction.title | fix_punctuation}}.*** {{reaction.description | fix_punctuation}}
 :
 {% endfor -%}
+
 {% endif -%}
 {% if statblock.legendary_actions|length > 0 -%}
 ### Legendary Actions

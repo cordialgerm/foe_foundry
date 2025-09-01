@@ -13,10 +13,10 @@ from pydantic import BaseModel
 from foe_foundry.creatures import (
     random_template_and_settings,
 )
+from foe_foundry.statblocks import Statblock
 from foe_foundry_data.generate import generate_monster
 from foe_foundry_data.jinja import render_statblock_markdown
 from foe_foundry_data.monsters import MonsterModel
-from foe_foundry.statblocks import Statblock
 from foe_foundry_data.refs import MonsterRefResolver
 
 from .data import MonsterMeta
@@ -86,7 +86,9 @@ def random_statblock(
         species=settings.species,
         base_url=base_url,
     )
-    return _format_statblock(monster_model=monster_model, stats=stats, rng=rng, output=output)
+    return _format_statblock(
+        monster_model=monster_model, stats=stats, rng=rng, output=output
+    )
 
 
 @router.get("/{template_or_variant_key}")
@@ -186,6 +188,9 @@ def _format_statblock(
         Query(title="return format", examples=StatblockFormat.All()),
     ] = None,
 ) -> Response:
+    if output is None:
+        output = StatblockFormat.html
+
     statblock_html = monster_model.statblock_html
     lore_html = monster_model.template_html
 
@@ -204,6 +209,18 @@ def _format_statblock(
         return HTMLResponse(content=html)
     elif output == StatblockFormat.monster_only:
         return HTMLResponse(content=statblock_html)
+    elif output == StatblockFormat.json:
+        json_data = dict(
+            monster_meta=MonsterMeta(
+                monster_key=monster_model.key,
+                template_key=monster_model.template_key,
+            ).model_dump(mode="json"),
+            statblock_html=statblock_html,
+            lore_html=lore_html,
+            image=img_src,
+            loadouts=loadouts,
+        )
+        return JSONResponse(content=json_data)
     elif output == StatblockFormat.md_5esrd:
         markdown = render_statblock_markdown(stats, "5esrd")
         return Response(content=markdown, media_type="text/markdown")
@@ -217,14 +234,4 @@ def _format_statblock(
         markdown = render_statblock_markdown(stats, "blackflag")
         return Response(content=markdown, media_type="text/markdown")
     else:
-        json_data = dict(
-            monster_meta=MonsterMeta(
-                monster_key=monster_model.key,
-                template_key=monster_model.template_key,
-            ).model_dump(mode="json"),
-            statblock_html=statblock_html,
-            lore_html=lore_html,
-            image=img_src,
-            loadouts=loadouts,
-        )
-        return JSONResponse(content=json_data)
+        raise ValueError(f"Unsupported output format: {output}")
