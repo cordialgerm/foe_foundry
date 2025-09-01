@@ -4,16 +4,22 @@
     href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 {%- if config.theme.analytics and config.theme.analytics.gtag %}
-<!-- Google Analytics with Consent Mode -->
+<!-- Google Analytics with Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.theme.analytics.gtag }}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
 
-    // Set default consent state BEFORE loading GA
+    // Set default consent state BEFORE loading GA (Consent Mode v2)
     gtag('consent', 'default', {
         ad_storage: 'denied',
-        analytics_storage: 'denied'
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'denied',
+        personalization_storage: 'denied',
+        security_storage: 'granted',
+        wait_for_update: 60000
     });
 
     gtag('js', new Date());
@@ -29,12 +35,32 @@
 <script>
     window.addEventListener("load", function () {
 
-        // Function to enable analytics
-        function initializeAnalytics(consented) {
-            console.log('analytics consented.')
+        // CRITICAL: Send initial consent state immediately
+        // This ensures GA knows we're managing consent actively
+        if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                analytics_storage: 'denied',
+                functionality_storage: 'denied',
+                personalization_storage: 'denied',
+            });
+        }
+
+        // Function to enable analytics (simplified for Consent Mode v2)
+        function initializeAnalytics(consented = false) {
+            console.log('Analytics consent status:', consented ? 'granted' : 'denied');
+
             if (typeof gtag !== 'undefined') {
                 gtag('consent', 'update', {
-                    analytics_storage: consented ? 'granted' : 'denied'
+                    ad_storage: consented ? 'granted' : 'denied',
+                    ad_user_data: consented ? 'granted' : 'denied',
+                    ad_personalization: consented ? 'granted' : 'denied',
+                    analytics_storage: consented ? 'granted' : 'denied',
+                    functionality_storage: consented ? 'granted' : 'denied',
+                    personalization_storage: consented ? 'granted' : 'denied'
+                    // security_storage stays 'granted' always
                 });
             }
         }
@@ -93,12 +119,13 @@
                         "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "NO", "LI", "GB"
                     ];
 
-                    if (data.country_code && gdprCountries.includes(data.country_code)) {
+                    // Validate response data
+                    if (data && data.country_code && gdprCountries.includes(data.country_code)) {
                         // Initialize cookie consent banner for GDPR regions
                         initializeCookieConsent();
                     } else {
                         // For non-GDPR regions, grant analytics consent by default
-                        initializeAnalytics();
+                        initializeAnalytics(true);
                     }
                 })
                 .catch(error => {
