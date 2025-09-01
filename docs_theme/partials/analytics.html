@@ -1,14 +1,35 @@
 {%- block analytics %}
+<!-- Cookie Consent CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 {%- if config.theme.analytics and config.theme.analytics.gtag %}
+<!-- Google Analytics with Consent Mode -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.theme.analytics.gtag }}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
+
+    // Set default consent state BEFORE loading GA
+    gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied'
+    });
+    
     gtag('js', new Date());
     gtag('config', {{ config.theme.analytics.gtag | tojson }});
 </script>
 {%- elif config.google_analytics %}
+<!-- Legacy Google Analytics -->
 <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    // Set default consent state BEFORE loading GA
+    gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied'
+    });
+
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
             (i[r].q = i[r].q || []).push(arguments)
@@ -20,5 +41,74 @@
     ga('send', 'pageview');
 </script>
 {%- endif %}
+
+<!-- Ahrefs Analytics (cookie-free) -->
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="bfCsxRGVjaUoyHsTfDcnEw" async></script>
+
+<!-- Cookie Consent Banner -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+    // Function to initialize cookie consent banner
+    function initializeCookieConsent() {
+        window.cookieconsent.initialise({
+            palette: {
+                popup: { background: "#1e1e1e", text: "#ffffff" },
+                button: { background: "#f1d600", text: "#000000" }
+            },
+            type: "opt-in",
+            content: {
+                message: "Foe Foundry uses cookies to improve your experience and track monster mayhem.",
+                allow: "Accept",
+                deny: "Decline",
+                link: "Privacy policy",
+                href: "{{ 'learn/privacy/' | url }}"
+            },
+            onInitialise: function (status) {
+                const consented = this.hasConsented();
+                if (typeof gtag !== 'undefined') {
+                    gtag('consent', 'update', {
+                        analytics_storage: consented ? 'granted' : 'denied'
+                    });
+                }
+            },
+            onStatusChange: function (status) {
+                const consented = this.hasConsented();
+                if (typeof gtag !== 'undefined') {
+                    gtag('consent', 'update', {
+                        analytics_storage: consented ? 'granted' : 'denied'
+                    });
+                }
+            }
+        });
+    }
+
+    // Geo-targeting: Only show consent banner in GDPR regions
+    fetch("https://ipapi.co/json/")
+        .then(res => res.json())
+        .then(data => {
+            const gdprCountries = [
+                "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT",
+                "LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","NO","LI","GB"
+            ];
+            
+            if (gdprCountries.includes(data.country_code)) {
+                // Initialize cookie consent banner for GDPR regions
+                initializeCookieConsent();
+            } else {
+                // For non-GDPR regions, grant analytics consent by default
+                if (typeof gtag !== 'undefined') {
+                    gtag('consent', 'update', {
+                        analytics_storage: 'granted'
+                    });
+                }
+            }
+        })
+        .catch(error => {
+            // Fallback: If geo-detection fails, show banner to be safe
+            console.log('Geo-detection failed, showing consent banner as fallback');
+            initializeCookieConsent();
+        });
+});
+</script>
 {%- endblock %}
