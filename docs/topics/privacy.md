@@ -48,6 +48,7 @@ We only share data with trusted service providers that help us run Foe Foundry:
 These providers process your data to provide their services and are not permitted to use it for unrelated purposes.
 
 We do **not sell your personal information** to anyone.  
+
 If Foe Foundry is ever involved in a merger, acquisition, or sale of assets, your information may be transferred to the new owner so the service can continue. It will remain protected under this Privacy Policy.
 
 ---
@@ -67,7 +68,7 @@ If you are in the EU or a similar jurisdiction, you may see a cookie banner to m
 
 ## Data Retention
 
-- Analytics data is retained by Google and Ahrefs according to their policies.  
+- Anonymous analytics data is retained by Google and Ahrefs according to their policies.  
 - Account data (if you create an account) is kept until you delete your account or request deletion.  
 
 ---
@@ -80,7 +81,7 @@ Depending on where you live, you may have rights such as:
 - Requesting correction or deletion of your data  
 - Withdrawing consent for cookies or tracking  
 
-To exercise these rights, contact us at the email below.
+To exercise these rights, contact us at **privacy@foefoundry.com**.
 
 ---
 
