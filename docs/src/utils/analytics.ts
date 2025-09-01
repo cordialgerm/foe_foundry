@@ -103,6 +103,15 @@ export function trackStatblockEdit(monsterKey: string, changeType: StatblockChan
 }
 
 /**
+ * Track download button click
+ */
+export function trackDownloadClick(monsterKey: string): void {
+  trackEvent('download_button_click', {
+    monster_key: monsterKey,
+  });
+}
+
+/**
  * Track email subscribe click
  */
 export function trackEmailSubscribeClick(): void {

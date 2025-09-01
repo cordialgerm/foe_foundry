@@ -8,6 +8,7 @@ import { Power } from '../data/powers';
 import { adoptExternalCss } from '../utils';
 import './ForgeButton.js';
 import './RerollButton.js';
+import './DownloadButton.js';
 
 @customElement('monster-statblock')
 export class MonsterStatblock extends LitElement {
@@ -412,6 +413,7 @@ export class MonsterStatblock extends LitElement {
             <div class="statblock-button-panel">
                 <reroll-button></reroll-button>
                 <forge-button></forge-button>
+                <download-button></download-button>
             </div>
         `;
     }
