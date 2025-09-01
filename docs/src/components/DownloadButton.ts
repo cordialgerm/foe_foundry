@@ -108,7 +108,9 @@ export class DownloadButton extends StatblockButton {
         
         // Build URL with current state parameters
         const params = new URLSearchParams();
-        params.set('monster-key', statblock.monsterKey || '');
+        const monsterKey = statblock.getEffectiveMonsterKey?.() || statblock.monsterKey || '';
+        params.set('monster-key', monsterKey);
+        
         if (statblock.hpMultiplier && statblock.hpMultiplier !== 1) {
             params.set('hp-multiplier', statblock.hpMultiplier.toString());
         }
@@ -128,9 +130,12 @@ export class DownloadButton extends StatblockButton {
             const baseUrl = (window as any).baseUrl || '';
             
             // Prepare the POST payload with current statblock state
+            const monsterKey = statblock.getEffectiveMonsterKey?.() || statblock.monsterKey || '';
+            const powers = statblock.powers ? statblock.powers.split(',').map((p: string) => p.trim()).filter((p: string) => p) : [];
+            
             const payload = {
-                monster_key: statblock.monsterKey || statblock.getEffectiveMonsterKey(),
-                powers: statblock.powers ? statblock.powers.split(',').map((p: string) => p.trim()).filter((p: string) => p) : [],
+                monster_key: monsterKey,
+                powers: powers,
                 hp_multiplier: statblock.hpMultiplier || 1,
                 damage_multiplier: statblock.damageMultiplier || 1
             };
@@ -160,7 +165,7 @@ export class DownloadButton extends StatblockButton {
                 'md_blackflag': 'Black-Flag'
             };
             
-            const monsterName = payload.monster_key.replace(/[^a-zA-Z0-9-_]/g, '-');
+            const monsterName = monsterKey.replace(/[^a-zA-Z0-9-_]/g, '-');
             const formatName = formatNames[format] || format;
             const filename = `${monsterName}-${formatName}.md`;
             
