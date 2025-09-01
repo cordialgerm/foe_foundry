@@ -1,0 +1,67 @@
+# {{statblock.name}}
+
+*{{statblock.size}} {{statblock.creature_type}}*
+
+- **Armor Class:** {{statblock.ac}}
+- **Hit Points:** {{statblock.hp.split('(')[0].strip()}}
+- **Speed:** {{statblock.movement}}
+- **Challenge Rating:** CR {{statblock.challenge.split('(')[0].strip()}}
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| {{statblock.STR_SAVE}} | {{statblock.DEX_SAVE}} | {{statblock.CON_SAVE}} | {{statblock.INT_SAVE}} | {{statblock.WIS_SAVE}} | {{statblock.CHA_SAVE}} |
+
+{% if statblock.senses_no_passive_perception -%}
+- **Senses:** {{statblock.senses_no_passive_perception}}
+{% endif -%}
+{% if statblock.passive_perception -%}
+- **Perception:** {{statblock.passive_perception}}
+{% endif -%}
+{% if statblock.languages -%}
+- **Languages:** {{statblock.languages}}
+{% endif -%}
+
+### Special Abilities
+
+{% for feature in statblock.passives -%}
+- **{{feature.title}}.** {{feature.description | fix_punctuation}}
+{% endfor -%}
+
+### Actions
+
+{% if statblock.multiattack -%}
+- **Multiattack** . {{statblock.multiattack | fix_punctuation}}
+{% endif -%}
+{% for attack in statblock.attacks -%}
+- **{{attack.display_name | fix_punctuation}}.** {{attack.description | fix_punctuation}}
+{% endfor -%}
+{% for action in statblock.actions -%}
+- **{{action.title | fix_punctuation}}.** {{action.description | fix_punctuation}}
+{% endfor -%}
+
+{% if statblock.bonus_actions|length > 0 -%}
+### Bonus Actions
+
+{% for bonus_action in statblock.bonus_actions -%}
+- **{{bonus_action.title | fix_punctuation}}.** {{bonus_action.description | fix_punctuation}}
+{% endfor -%}
+
+{% endif -%}
+{% if statblock.reactions|length > 0 -%}
+### {{statblock.reaction_header}}
+
+{% for reaction in statblock.reactions -%}
+- **{{reaction.title | fix_punctuation}}.** {{reaction.description | fix_punctuation}}
+{% endfor -%}
+
+{% endif -%}
+{% if statblock.legendary_actions|length > 0 -%}
+### Legendary Actions
+
+{{statblock.legendary_action_header}}
+
+{% for legendary_action in statblock.legendary_actions -%}
+- **{{legendary_action.title | fix_punctuation}}.** {{legendary_action.description | fix_punctuation}}
+{% endfor -%}
+
+{% endif -%}
