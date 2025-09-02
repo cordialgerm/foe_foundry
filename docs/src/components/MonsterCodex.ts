@@ -558,7 +558,7 @@ export class MonsterCodex extends LitElement {
     return html`
       <div
         class="monster-row ${this.selectedMonster?.key === monster.key ? 'selected' : ''}"
-        style="background-image: url('${monster.backgroundImage || ''}')"
+        style="background-image: url('${monster.background_image || ''}')"
         @click=${() => this.selectMonsterByKey(monster.key)}
         @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
         <div class="monster-info">

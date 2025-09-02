@@ -49,6 +49,7 @@ def get_search_monsters(
                 name=monster.name,
                 cr=monster.cr,
                 template=monster.template_key,
+                background_image=monster.background_image,
             )
         )
     return results
@@ -101,6 +102,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
                 name=monster.name,
                 cr=monster.cr,
                 template=monster.template_key,
+                background_image=monster.background_image,
             )
         )
     return results

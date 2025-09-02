@@ -5,7 +5,7 @@ export interface MonsterInfo {
     cr: number;
     template: string;
     monsterFamilies?: string[];
-    backgroundImage?: string;
+    background_image?: string;
 }
 
 // Enhanced search request interface
