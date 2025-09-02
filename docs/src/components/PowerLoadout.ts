@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { initializePowerStore } from '../data/api';
-import { PowerLoadout as PowerLoadoutData, Power } from '../data/powers';
+import { PowerLoadout as PowerLoadoutData, Power, PowerStore } from '../data/powers';
 import { Task } from '@lit/task';
 import './SvgIcon';
 
@@ -12,7 +12,7 @@ export class PowerLoadout extends LitElement {
   private _loadoutsTask = new Task(this, {
     task: async ([monsterKey], { signal }) => {
       // Simulate async fetch from store
-      const store = initializePowerStore();
+      const store = this.powerStore || initializePowerStore();
       const loadouts = await store.getPowerLoadouts(monsterKey);
       return loadouts || [];
     },
@@ -191,6 +191,9 @@ export class PowerLoadout extends LitElement {
 
   @property({ type: String, attribute: 'loadout-key' })
   loadoutKey = '';
+
+  @property({ type: Object })
+  powerStore?: PowerStore;
 
   @state()
   private selectedPower?: Power;
@@ -515,9 +518,10 @@ export class PowerLoadout extends LitElement {
               ${this.powers?.length ? html`
                 <div class="dropdown-separator"></div>
                 <button
-                  class="dropdown-item ${this.focusedIndex === this.powers.length ? 'focused' : ''}"
-                  @click=${() => this.randomize()}
-                  @mouseenter=${() => this.focusedIndex = this.powers.length}
+                    class="dropdown-item ${this.focusedIndex === this.powers.length ? 'focused' : ''}"
+                    data-randomize="true"
+                    @click=${() => this.randomize()}
+                    @mouseenter=${() => this.focusedIndex = this.powers.length}
                 >
                   <svg-icon
                     class="power-icon"

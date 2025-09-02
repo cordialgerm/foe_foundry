@@ -200,6 +200,7 @@ section p a {
     /* Ensure layering works */
     pointer-events: none;
     isolation: isolate;
+    text-align: center;
 }
 
 .masked-label {

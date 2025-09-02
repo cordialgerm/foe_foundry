@@ -2,10 +2,11 @@
 /// <reference types="vite/client" />
 /**
  * Analytics tracking utility for Foe Foundry
- * Provides a centralized wrapper around Google Analytics 4 (GA4)
+ * Provides a centralized wrapper around Google Analytics 4 (GA4) and GrowthBook
  */
 
 import { StatblockChangeType } from '../data/monster.js';
+import { trackGrowthBookEvent } from './growthbook.js';
 
 // Global gtag type declaration
 declare global {
@@ -20,6 +21,7 @@ export interface AnalyticsParams {
   monster_key?: string;
   monster_change_type?: StatblockChangeType;
   power_key?: string;
+  export_format?: string;
 }
 
 /**
@@ -35,10 +37,13 @@ export function trackEvent(name: string, params: AnalyticsParams = {}): void {
     ...params
   };
 
-  // Only track in production and if gtag is available
+  // Track to Google Analytics if available and in production
   if (typeof window.gtag !== 'undefined' && import.meta.env.PROD) {
     window.gtag('event', name, args);
   }
+
+  // Track to GrowthBook
+  trackGrowthBookEvent(name, args);
 
   // Log in development for debugging
   if (!import.meta.env.PROD) {
@@ -96,6 +101,22 @@ export function trackStatblockEdit(monsterKey: string, changeType: StatblockChan
     monster_change_type: changeType,
     power_key: powerKey,
   });
+}
+
+/**
+ * Track download button click
+ */
+export function trackDownloadClick(monsterKey: string, format?: string): void {
+  const params: AnalyticsParams = {
+    monster_key: monsterKey,
+  };
+  
+  // Add format type if provided
+  if (format) {
+    params.export_format = format;
+  }
+  
+  trackEvent('download_button_click', params);
 }
 
 /**

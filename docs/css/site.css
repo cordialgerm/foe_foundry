@@ -195,6 +195,18 @@ a.branding::after,
     vertical-align: middle;
 }
 
+.navbar a[href$="criminals/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/bandit.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
 .navbar a[href$="fanatics_and_faithful/" i]::before {
     content: " ";
     display: inline-block;
@@ -334,13 +346,19 @@ a.branding::after,
     cursor: pointer;
 }
 
-body {
+body:not(.print-preview) {
     background: var(--muted-color);
     color: var(--fg-color);
     font-family: var(--primary-font);
 }
 
-body:not(.homepage)::before {
+body.print-preview {
+    background: white;
+    color: black;
+    font-family: var(--primary-font);
+}
+
+body:not(.homepage, .print-preview)::before {
     content: "";
     position: fixed;
     inset: 0;
@@ -697,7 +715,6 @@ a.burnt-parchment,
     background: var(--bg-color);
 
     padding: var(--big-margin);
-    margin-bottom: calc(2 *var(--big-margin));
 
     border: 1px solid var(--tertiary-color);
     border-radius: var(--medium-margin);
@@ -708,6 +725,14 @@ a.burnt-parchment,
     font-family: var(--primary-font);
     font-size: var(--primary-font-size);
     columns: var(--column-size) 2;
+}
+
+.power-block {
+    margin-bottom: var(--small-margin);
+}
+
+.stat-block {
+    margin-bottom: var(--big-margin);
 }
 
 .power-block.power-block-no-columns {
@@ -1171,15 +1196,19 @@ a.burnt-parchment,
         padding: 0;
     }
 
-    .pamphlet-main {
+    .container,
+    .container-md,
+    .pamphlet-container {
         margin: 0 auto;
-        padding: 5mm 18mm;
+        padding-left: 6mm;
+        padding-right: 1mm;
         box-sizing: border-box;
-        width: 100%;
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden;
     }
 
-    .container,
+
     .row {
         width: 100% !important;
         max-width: 100% !important;
@@ -1322,4 +1351,49 @@ a.burnt-parchment,
     .admonition {
         display: none !important;
     }
+}
+
+/* Print Preview Styles - Simple black text on white background */
+.stat-block.print-preview,
+.power-block.print-preview {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+    margin: 0 !important;
+}
+
+.stat-block.print-preview .monster-name {
+    color: #000000 !important;
+}
+
+.stat-block.print-preview .monster-name:after {
+    background: #000000 !important;
+}
+
+.stat-block.print-preview .branding {
+    display: none !important;
+}
+
+.stat-block.print-preview .block-header,
+.power-block.print-preview .block-header {
+    color: #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.stat-block.print-preview p,
+.power-block.print-preview p {
+    color: #000000 !important;
+}
+
+.stat-block.print-preview .stats table.abilities-saves {
+    color: #000000 !important;
+}
+
+.stat-block.print-preview .stats table.abilities-saves th,
+.stat-block.print-preview .stats table.abilities-saves td {
+    color: #000000 !important;
+    border-color: #000000 !important;
 }

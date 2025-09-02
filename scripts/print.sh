@@ -2,7 +2,7 @@
 
 # === CONFIGURATION ===
 BASE_URL="http://127.0.0.1:8080"
-WAIT_TIME=60
+WAIT_TIME=12
 RELATIVE_PATH="$1"
 
 if [ -z "$RELATIVE_PATH" ]; then
@@ -14,6 +14,27 @@ FULL_URL="${BASE_URL}${RELATIVE_PATH}"
 SAFE_PATH=$(echo "$RELATIVE_PATH" | tr '/' '-' | sed 's/^-//')
 PDF_OUTPUT="${SAFE_PATH}.pdf"
 IMG_OUTPUT="${SAFE_PATH}-%03d.png"
+
+
+# === COPY STYLES ===
+echo "Copying /docs/css/ and /docs/scripts/ to /site/..."
+mkdir -p site/css site/scripts
+cp -r docs/css/. site/css/
+cp -r docs/scripts/. site/scripts/
+
+# Handle uniquified extras.js filename
+if [ -f "docs/scripts/extras.js" ]; then
+    # Look for existing extras.*.js files in site/scripts/
+    EXTRAS_FILE=$(find site/scripts/ -name "extras.*.js" -type f | head -1)
+
+    if [ -n "$EXTRAS_FILE" ]; then
+        echo "Found uniquified extras file: $EXTRAS_FILE"
+        echo "Copying docs/scripts/extras.js to match uniquified name..."
+        cp docs/scripts/extras.js "$EXTRAS_FILE"
+    fi
+fi
+
+echo "Copy completed."
 
 # === START LOCAL SERVER ===
 echo "Starting server..."

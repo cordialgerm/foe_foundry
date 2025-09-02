@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import os
 from dataclasses import asdict
+from enum import StrEnum
 from typing import Annotated
 
 import numpy as np
-from backports.strenum import StrEnum
 from fastapi import APIRouter, Body, HTTPException, Query, Response
 from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel
@@ -13,7 +13,9 @@ from pydantic import BaseModel
 from foe_foundry.creatures import (
     random_template_and_settings,
 )
+from foe_foundry.statblocks import Statblock
 from foe_foundry_data.generate import generate_monster
+from foe_foundry_data.jinja import render_statblock_markdown
 from foe_foundry_data.monsters import MonsterModel
 from foe_foundry_data.refs import MonsterRefResolver
 
@@ -27,6 +29,10 @@ class StatblockFormat(StrEnum):
     html = "html"
     monster_only = "monster_only"
     json = "json"
+    md_5esrd = "md_5esrd"
+    md_gmbinder = "md_gmbinder"
+    md_homebrewery = "md_homebrewery"
+    md_blackflag = "md_blackflag"
 
     @staticmethod
     def All():
@@ -34,6 +40,10 @@ class StatblockFormat(StrEnum):
             StatblockFormat.html,
             StatblockFormat.monster_only,
             StatblockFormat.json,
+            StatblockFormat.md_5esrd,
+            StatblockFormat.md_gmbinder,
+            StatblockFormat.md_homebrewery,
+            StatblockFormat.md_blackflag,
         ]
 
 
@@ -76,7 +86,9 @@ def random_statblock(
         species=settings.species,
         base_url=base_url,
     )
-    return _format_statblock(monster_model=monster_model, rng=rng, output=output)
+    return _format_statblock(
+        monster_model=monster_model, stats=stats, rng=rng, output=output
+    )
 
 
 @router.get("/{template_or_variant_key}")
@@ -111,6 +123,7 @@ def get_statblock(
             species=ref.species,
             base_url=base_url,
         ),
+        stats=stats,
         rng=rng,
         output=output,
     )
@@ -160,6 +173,7 @@ def generate_statblock_from_request(
             species=ref.species,
             base_url=base_url,
         ),
+        stats=stats,
         rng=rng,
         output=output,
     )
@@ -167,12 +181,16 @@ def generate_statblock_from_request(
 
 def _format_statblock(
     monster_model: MonsterModel,
+    stats: Statblock,
     rng: np.random.Generator,
     output: Annotated[
         StatblockFormat | None,
         Query(title="return format", examples=StatblockFormat.All()),
     ] = None,
 ) -> Response:
+    if output is None:
+        output = StatblockFormat.json
+
     statblock_html = monster_model.statblock_html
     lore_html = monster_model.template_html
 
@@ -191,7 +209,7 @@ def _format_statblock(
         return HTMLResponse(content=html)
     elif output == StatblockFormat.monster_only:
         return HTMLResponse(content=statblock_html)
-    else:
+    elif output == StatblockFormat.json:
         json_data = dict(
             monster_meta=MonsterMeta(
                 monster_key=monster_model.key,
@@ -203,3 +221,17 @@ def _format_statblock(
             loadouts=loadouts,
         )
         return JSONResponse(content=json_data)
+    elif output == StatblockFormat.md_5esrd:
+        markdown = render_statblock_markdown(stats, "5esrd")
+        return Response(content=markdown, media_type="text/markdown")
+    elif output == StatblockFormat.md_gmbinder:
+        markdown = render_statblock_markdown(stats, "gmbinder")
+        return Response(content=markdown, media_type="text/markdown")
+    elif output == StatblockFormat.md_homebrewery:
+        markdown = render_statblock_markdown(stats, "homebrewery")
+        return Response(content=markdown, media_type="text/markdown")
+    elif output == StatblockFormat.md_blackflag:
+        markdown = render_statblock_markdown(stats, "blackflag")
+        return Response(content=markdown, media_type="text/markdown")
+    else:
+        raise ValueError(f"Unsupported output format: {output}")

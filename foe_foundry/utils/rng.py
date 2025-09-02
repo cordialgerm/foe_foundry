@@ -1,8 +1,8 @@
 import hashlib
+from enum import StrEnum
 from typing import Any, Callable, Dict, List, TypeAlias, TypeVar, overload
 
 import numpy as np
-from backports.strenum import StrEnum
 
 E = TypeVar("E", bound=StrEnum)
 T = TypeVar("T")

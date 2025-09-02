@@ -1,5 +1,7 @@
+import hashlib
 import io
 import re
+import shutil
 from functools import cached_property
 from pathlib import Path
 
@@ -73,6 +75,24 @@ def inline_icon(icon: str, fill="", wrap: bool = True) -> Markup | None:
         return Markup(svg_cleaned)
 
 
+def _hash_og_image_params(
+    icon: str,
+    title: str,
+    background_texture: str,
+    background_texture_opacity: float,
+    background_color: str,
+    foreground_color: str,
+) -> str:
+    """Generate a hash from the input parameters for og_image_for_icon caching."""
+    hasher = hashlib.md5()
+
+    # Hash all the parameters that affect the output
+    params = f"{icon}|{title}|{background_texture}|{background_texture_opacity}|{background_color}|{foreground_color}"
+    hasher.update(params.encode("utf-8"))
+
+    return hasher.hexdigest()
+
+
 def og_image_for_icon(
     icon: str,
     title: str,
@@ -81,8 +101,30 @@ def og_image_for_icon(
     background_texture_opacity: float = 0.2,
     background_color: str = "#2a2a2a",
     foreground_color: str = "#ff3737",
+    allow_cache: bool = True,
 ) -> Path:
     """Generates an Open Graph image with a solid color, a semi-transparent background image, and an SVG icon with title."""
+
+    # Set up cache directory
+    cache_dir = Path.cwd() / "cache" / "og_image_for_icon"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    # Generate hash for caching
+    cache_hash = _hash_og_image_params(
+        icon,
+        title,
+        background_texture,
+        background_texture_opacity,
+        background_color,
+        foreground_color,
+    )
+    cached_path = cache_dir / f"{cache_hash}.png"
+
+    # Check if cached version exists
+    if allow_cache and cached_path.exists():
+        # Copy cached image to output path
+        shutil.copy2(cached_path, output_path)
+        return output_path
 
     # Constants
     OG_WIDTH, OG_HEIGHT = 1200, 630
@@ -162,5 +204,8 @@ def og_image_for_icon(
     # Save the final image
     rgb_base = base.convert("RGB")
     rgb_base.save(output_path, format="PNG")
+
+    # Save a copy to cache for future use
+    rgb_base.save(cached_path, format="PNG")
 
     return output_path

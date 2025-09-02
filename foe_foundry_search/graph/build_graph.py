@@ -23,7 +23,6 @@ Returns a tuple of (graph, issues) where issues is a list of warnings or missing
 """
 
 import json
-import os
 from functools import cached_property
 from pathlib import Path
 
@@ -42,7 +41,6 @@ from foe_foundry_search.documents import (
 from foe_foundry_search.documents.meta import MonsterDocumentMeta
 
 # Path to SRD mapping file
-SRD_MAPPING_PATH = Path(__file__).parent / "monster_to_srd_a_b.json"
 CACHE_DIR = Path.cwd() / "cache" / "graph"
 CACHE_FILE = CACHE_DIR / "graph.json"
 
@@ -61,7 +59,7 @@ class _Cache:
             # Load from cache
             with open(CACHE_FILE, "r") as f:
                 data = json.load(f)
-            return nx.node_link_graph(data)
+                return nx.node_link_graph(data, edges="links")
         else:
             # Build and cache
             graph, issues = _do_build_graph()
@@ -181,7 +179,7 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
             f"DOC:{doc.doc_id}",
             f"MON:{monster.key}",
             type="about",
-            relevancy=1.0,
+            relevance=1.0,
         )
 
     # Add DOC → MON edges: Document is a blog post that references a monster
@@ -210,7 +208,7 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
                 doc_node,
                 monster_node,
                 type="references",
-                relevancy=1.0,
+                relevance=1.0,
             )
 
     # Add DOC → POW edges: Document describes power
@@ -240,33 +238,8 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
                 f"MON:{similar_key}",
                 type="similar",
                 similar_type=similar_type.value,
-                relevancy=similar_type.relevancy,
+                relevance=similar_type.relevancy,
             )
-    if os.path.exists(SRD_MAPPING_PATH):
-        with open(SRD_MAPPING_PATH, "r") as f:
-            srd_map = json.load(f)
-        for monster_name, srd_names in srd_map.items():
-            if srd_names is None:
-                continue
-
-            monster_key = name_to_key(monster_name)
-
-            for srd_name in srd_names:
-                srd_monster_key = name_to_key(srd_name)
-
-                mon_node_id = f"MON:{monster_key}"
-                srd_node_id = f"MON:{srd_monster_key}"
-                if G.has_node(mon_node_id) and G.has_node(srd_node_id):
-                    G.add_edge(mon_node_id, srd_node_id, type="similar")
-                else:
-                    if not G.has_node(mon_node_id):
-                        issues.append(
-                            f"SRD mapping {monster_name} → {srd_name} references unknown other monster {monster_key}"
-                        )
-                    if not G.has_node(srd_node_id):
-                        issues.append(
-                            f"SRD mapping {monster_name} → {srd_name} references unknown SRD monster {srd_monster_key}"
-                        )
 
     # Add POW → FF_MON edges
     for power in Powers.AllPowers:
@@ -274,7 +247,9 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
             power_node_id = f"POW:{power.key}"
             monster_node_id = f"FF_MON:{monster.key}"
             if G.has_node(monster_node_id):
-                G.add_edge(power_node_id, monster_node_id, type="has_power")
+                G.add_edge(
+                    power_node_id, monster_node_id, type="has_power", relevance=1.0
+                )
             else:
                 issues.append(
                     f"POW {power.key} references unknown FF_MON {monster.key}"
@@ -292,7 +267,7 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
                     srd_node_id = f"MON:{srd_monster_key}"
 
                     if G.has_node(srd_node_id):
-                        G.add_edge(srd_node_id, ff_node_id, type="alias")
+                        G.add_edge(srd_node_id, ff_node_id, type="alias", relevance=1.0)
                     else:
                         issues.append(
                             f"FF_MON {monster.key} references unknown monster {srd_creature}"
@@ -304,7 +279,9 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
                     other_node_id = f"MON:{other_monster_key}"
 
                     if G.has_node(other_node_id):
-                        G.add_edge(ff_node_id, other_node_id, type="alias")
+                        G.add_edge(
+                            ff_node_id, other_node_id, type="alias", relevance=1.0
+                        )
                     else:
                         issues.append(
                             f"FF_MON {monster.key} references unknown other creature {other_monster_name}"
@@ -316,7 +293,9 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
         for monster in family.monsters:
             monster_node_id = f"FF_MON:{monster.key}"
             if G.has_node(monster_node_id):
-                G.add_edge(monster_node_id, family_node_id, type="member")
+                G.add_edge(
+                    monster_node_id, family_node_id, type="member", relevance=1.0
+                )
             else:
                 issues.append(
                     f"FF_FAM {family.key} references unknown FF_MON {monster.key}"

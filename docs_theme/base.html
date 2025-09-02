@@ -58,6 +58,8 @@
 
 </head>
 
+<statblock-tutorial></statblock-tutorial>
+
 <body {% if page and page.is_homepage %} class="homepage" {% endif %}>
     {% include "partials/navbar.html" %}
 
@@ -70,6 +72,10 @@
     {% elif page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
     <div class="container-md pamphlet-container">
         {% include "generate.j2.html" %}
+    </div>
+    {% elif page and (page.url == '/print-preview/' or page.url == '/print-preview' or page.url == 'print-preview/') %}
+    <div class="container-md pamphlet-container print-preview">
+        {% include "print-preview.j2.html" %}
     </div>
     {% else %}
     <div class="container-md pamphlet-container">

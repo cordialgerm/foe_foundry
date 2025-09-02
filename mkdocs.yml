@@ -7,12 +7,13 @@ nav:
   - Generate: generate/index.md
   - Monsters:
       - All Monsters: monsters/index.md
-      - Orcs & Goblins: families/orcs_and_goblinoids.md
-      - Undead: families/undead.md
-      - Monstrosities: families/monstrosities.md
-      - Giants: families/giants.md
+      - Criminal & Underworld: families/criminals.md
       - Fanatics & Faithful: families/fanatics_and_faithful.md
+      - Giants: families/giants.md
+      - Monstrosities: families/monstrosities.md
+      - Orcs & Goblins: families/orcs_and_goblinoids.md
       - Soldiers & Fighters: families/soldiers_and_fighters.md
+      - Undead: families/undead.md
       - Villains: families/villains.md
       - Rivals: families/rivals.md
   - Powers: powers/all.md
@@ -21,6 +22,7 @@ nav:
       - Topics: topics/index.md
       - RSS: rss.xml
       - FAQ: topics/faq.md
+      - Privacy: topics/privacy.md
 
 use_directory_urls: true
 
@@ -35,6 +37,8 @@ plugins:
   - blogging:
       dirs:
         - blog
+      locale: en_US # or just 'en'
+      time_format: short
       features:
         tags:
           insert: bottom

@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-from enum import auto
-
-from backports.strenum import StrEnum
+from enum import StrEnum, auto
 
 
 class PowerCategory(StrEnum):
