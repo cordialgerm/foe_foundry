@@ -8,6 +8,7 @@
 
     <!-- Include main site CSS for consistent theming -->
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <style>
 
         * {
@@ -21,36 +22,6 @@
             background: var(--bg-color);
             color: var(--fg-color);
             position: relative;
-        }
-
-        /* Add background image like homepage */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background-image: url('/img/icons/favicon.webp');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
-            background-attachment: fixed;
-            opacity: 0.08;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        /* Subtle parchment overlay like the main site */
-        body::after {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background-color: var(--muted-color);
-            background-image: url('/img/backgrounds/parchment-stained.webp');
-            background-repeat: repeat;
-            background-size: cover;
-            background-blend-mode: multiply;
-            opacity: 0.3;
-            pointer-events: none;
-            z-index: -1;
         }
 
         .demo-header {
@@ -109,6 +80,8 @@
 </head>
 
 <body>
+    <div id="parallax-logo-bg"></div>
+    
     <div class="demo-header">
         <h1>Foe Foundry Monster Codex</h1>
     </div>

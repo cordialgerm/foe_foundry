@@ -85,7 +85,7 @@ export class MonsterCardPreview extends LitElement {
     }
 
     .action-btn {
-      background: var(--tertiary-color);
+      background: var(--primary-color);
       color: white;
       border: none;
       padding: 0.5rem 1rem;
@@ -98,17 +98,17 @@ export class MonsterCardPreview extends LitElement {
     }
 
     .action-btn:hover {
-      background: var(--tertiary-color-dark, #c82333);
+      background: var(--primary-muted-color);
       transform: translateY(-1px);
     }
 
     .action-btn.secondary {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(128, 128, 128, 0.8);
       backdrop-filter: blur(4px);
     }
 
     .action-btn.secondary:hover {
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(160, 160, 160, 0.9);
     }
   `;
 
@@ -183,7 +183,7 @@ export class MonsterCardPreview extends LitElement {
         <div class="monster-overlay ${this.compact ? 'compact' : ''}">
           <div class="monster-name ${this.compact ? 'compact' : ''}">${this.monster.name}</div>
           <div class="monster-details ${this.compact ? 'compact' : ''}">
-            CR ${this.monster.cr} | ${this.monster.creatureType}
+            ${this.monster.cr} | ${this.monster.creatureType}
           </div>
 
           ${this.compact ? html`` : html`

@@ -21,6 +21,7 @@ export class MonsterCodex extends LitElement {
   @state() private selectedMonster: Monster | null = null;
   @state() private loading = false;
   @state() private filtersPanelVisible = window.innerWidth >= 900; // Hidden by default on medium screens
+  @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
@@ -61,14 +62,14 @@ export class MonsterCodex extends LitElement {
 
     .codex-container {
       display: grid;
-      grid-template-columns: auto 1fr 400px;
+      grid-template-columns: 300px 1fr 400px;
       height: 100vh;
-      gap: 1rem;
+      gap: 0;
       padding: 1rem;
     }
 
     .codex-container.filters-hidden {
-      grid-template-columns: 1fr 400px;
+      grid-template-columns: 0 1fr 400px;
     }
 
     .filters-panel {
@@ -77,15 +78,41 @@ export class MonsterCodex extends LitElement {
       padding: 1rem;
       overflow-y: auto;
       width: 300px;
-      transform: translateX(0);
-      transition: transform 0.3s ease-in-out;
+      transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+      border-right: 2px solid var(--primary-color);
+      position: relative;
     }
 
     .filters-panel.hidden {
-      transform: translateX(-100%);
       width: 0;
       padding: 0;
       overflow: hidden;
+      border-right: none;
+    }
+
+    .panel-divider {
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      background: var(--primary-color);
+      color: var(--fg-color);
+      border: none;
+      width: 20px;
+      height: 40px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      z-index: 2;
+      transition: all 0.2s ease;
+    }
+
+    .panel-divider:hover {
+      background: var(--primary-muted-color);
+      transform: translateY(-50%) scale(1.1);
     }
 
     .monster-list-panel {
@@ -94,6 +121,7 @@ export class MonsterCodex extends LitElement {
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      margin-left: 1rem;
     }
 
     .preview-panel {
@@ -253,6 +281,20 @@ export class MonsterCodex extends LitElement {
       background-color: rgba(0,0,0,0.7);
       transition: all 0.2s ease;
       border: 1px solid transparent;
+      position: relative;
+      min-height: 60px;
+    }
+
+    .monster-row::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: inherit;
+      z-index: 0;
     }
 
     .monster-row:hover {
@@ -268,8 +310,14 @@ export class MonsterCodex extends LitElement {
 
     .monster-info {
       color: white;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
       font-family: var(--primary-font);
+      position: relative;
+      z-index: 1;
+      background: rgba(0,0,0,0.3);
+      padding: 0.5rem;
+      border-radius: 4px;
+      backdrop-filter: blur(2px);
     }
 
     .monster-name {
@@ -371,10 +419,13 @@ export class MonsterCodex extends LitElement {
     /* Mobile responsive */
     @media (max-width: 1200px) {
       .codex-container {
-        grid-template-columns: auto 1fr 350px;
+        grid-template-columns: 280px 1fr 350px;
       }
       .codex-container.filters-hidden {
-        grid-template-columns: 1fr 350px;
+        grid-template-columns: 0 1fr 350px;
+      }
+      .filters-panel {
+        width: 280px;
       }
     }
 
@@ -396,15 +447,27 @@ export class MonsterCodex extends LitElement {
         z-index: 10;
         background: var(--bg-color);
         box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+        width: 300px;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+        border-right: none;
       }
 
       .filters-panel.hidden {
         transform: translateX(-100%);
+        width: 300px;
+        padding: 1rem;
+        overflow-y: auto;
+      }
+
+      .panel-divider {
+        display: none;
       }
 
       .monster-list-panel {
         border-radius: 0;
         border: none;
+        margin-left: 0;
       }
 
       .preview-panel {
@@ -488,6 +551,13 @@ export class MonsterCodex extends LitElement {
               </button>
             ` : ''}
           </div>
+          <!-- Panel divider with collapse indicator -->
+          <button
+            class="panel-divider"
+            @click=${this.toggleFiltersPanel}
+            title="${this.filtersPanelVisible ? 'Hide Filters' : 'Show Filters'}">
+            ${this.filtersPanelVisible ? '◀' : '▶'}
+          </button>
         </div>
 
         <!-- Monster List Panel -->
@@ -497,7 +567,7 @@ export class MonsterCodex extends LitElement {
               class="filter-toggle-btn"
               @click=${this.toggleFiltersPanel}
               title="Toggle Filters">
-              🔍
+              Filters
               ${activeFilterCount > 0 ? html`<span class="filter-count">${activeFilterCount}</span>` : ''}
             </button>
             <div class="search-input-container">
@@ -555,15 +625,16 @@ export class MonsterCodex extends LitElement {
   }
 
   private renderMonsterRow(monster: MonsterInfo) {
+    const isSelected = this.selectedMonsterKey === monster.key;
     return html`
       <div
-        class="monster-row ${this.selectedMonster?.key === monster.key ? 'selected' : ''}"
+        class="monster-row ${isSelected ? 'selected' : ''}"
         style="background-image: url('${monster.background_image || ''}')"
         @click=${() => this.selectMonsterByKey(monster.key)}
         @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
         <div class="monster-info">
           <div class="monster-name">${monster.name}</div>
-          <div class="monster-cr">CR ${monster.cr}</div>
+          <div class="monster-cr">${monster.cr}</div>
         </div>
       </div>
     `;
@@ -630,7 +701,8 @@ export class MonsterCodex extends LitElement {
     try {
       const monster = await this.apiStore.getMonster(key);
       if (monster) {
-        this.selectMonster(monster);
+        this.selectedMonster = monster;
+        this.selectedMonsterKey = key; // Mark as explicitly selected for sticky behavior
       }
     } catch (e) {
       console.error('Error selecting monster by key:', e);
@@ -638,11 +710,14 @@ export class MonsterCodex extends LitElement {
   }
 
   private previewMonsterByKey(key: string) {
-    this.apiStore.getMonster(key).then(monster => {
-      if (monster) {
-        this.selectedMonster = monster;
-      }
-    });
+    // Only update preview if no monster is explicitly selected (sticky behavior)
+    if (this.selectedMonsterKey === null) {
+      this.apiStore.getMonster(key).then(monster => {
+        if (monster) {
+          this.selectedMonster = monster;
+        }
+      });
+    }
   }
 
   private hasActiveFilters() {
@@ -669,6 +744,8 @@ export class MonsterCodex extends LitElement {
     this.selectedRoles = [];
     this.minCr = undefined;
     this.maxCr = undefined;
+    this.selectedMonsterKey = null; // Clear sticky selection
+    this.selectedMonster = null;
     // Task will auto-update
   }
 
