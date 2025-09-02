@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 from dataclasses import dataclass
+from enum import StrEnum
 from pathlib import Path
 
 import numpy as np
-from backports.strenum import StrEnum
 
 from foe_foundry import CreatureType, DamageType
 from foe_foundry.utils import list_to_sentence

@@ -1,0 +1,718 @@
+import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { fixture, html } from '@open-wc/testing';
+import { MonsterStatblock } from '../../docs/src/components/MonsterStatblock.js';
+import { MockMonsterStore } from '../mocks/mock-monster-store.js';
+import { StatblockChangeType } from '../../docs/src/data/monster.js';
+import '../setup.js';
+
+// Register the component
+import '../../docs/src/components/MonsterStatblock.js';
+
+describe('MonsterStatblock Component', () => {
+  let element: MonsterStatblock;
+  let mockMonsterStore: MockMonsterStore;
+
+  beforeEach(async () => {
+    mockMonsterStore = new MockMonsterStore();
+  });
+
+  describe('Basic Rendering', () => {
+    it('should render loading state initially', async () => {
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      expect(element).to.exist;
+
+      // Should show loading state initially
+      const loadingElement = element.shadowRoot?.querySelector('.loading');
+      expect(loadingElement).to.exist;
+    });
+
+    it('should render statblock content after loading', async () => {
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      const statblockContainer = element.shadowRoot?.querySelector('#statblock-container');
+      expect(statblockContainer).to.exist;
+
+      // Should contain the mock statblock content
+      const statblock = statblockContainer?.querySelector('.monster-statblock');
+      expect(statblock).to.exist;
+    });
+
+    it('should render button panel by default', async () => {
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      const buttonPanel = element.shadowRoot?.querySelector('.statblock-button-panel');
+      expect(buttonPanel).to.exist;
+
+      const rerollButton = buttonPanel?.querySelector('reroll-button');
+      const forgeButton = buttonPanel?.querySelector('forge-button');
+      expect(rerollButton).to.exist;
+      expect(forgeButton).to.exist;
+    });
+
+    it('should hide buttons when hide-buttons is set', async () => {
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          hide-buttons
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      // Wait for component initialization including async feature flag loading
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      const buttonPanel = element.shadowRoot?.querySelector('.statblock-button-panel');
+      expect(buttonPanel).to.not.exist;
+    });
+  });
+
+  describe('Power Integration', () => {
+    it('should handle power parameters', async () => {
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          powers="test-power-1,test-power-2"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      expect(getStatblockSpy).toHaveBeenCalledWith(
+        expect.objectContaining({
+          monsterKey: 'test-monster',
+          powers: expect.arrayContaining([
+            expect.objectContaining({ key: 'test-power-1' }),
+            expect.objectContaining({ key: 'test-power-2' })
+          ])
+        }),
+        null
+      );
+    });
+
+    it('should handle multiplier parameters', async () => {
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          hp-multiplier="1.5"
+          damage-multiplier="0.8"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      expect(getStatblockSpy).toHaveBeenCalledWith(
+        expect.objectContaining({
+          monsterKey: 'test-monster',
+          hpMultiplier: 1.5,
+          damageMultiplier: 0.8
+        }),
+        null
+      );
+    });
+  });
+
+  describe('Random Statblock', () => {
+    it('should generate random statblock when random flag is set', async () => {
+      const getRandomStatblockSpy = vi.spyOn(mockMonsterStore, 'getRandomStatblock');
+
+      element = await fixture(html`
+        <monster-statblock
+          random
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      expect(getRandomStatblockSpy).toHaveBeenCalledOnce();
+    });
+  });
+
+  describe('Slot Mode', () => {
+    it('should render slotted content when use-slot is true', async () => {
+      const slottedContent = document.createElement('div');
+      slottedContent.className = 'stat-block';
+      slottedContent.setAttribute('data-monster', 'slot-monster');
+      slottedContent.innerHTML = '<h1>Slotted Statblock</h1>';
+
+      element = await fixture(html`
+        <monster-statblock
+          use-slot
+          .monsterStore="${mockMonsterStore}"
+        >${slottedContent}</monster-statblock>
+      `);
+
+      await element.updateComplete;
+
+      const statblockContainer = element.shadowRoot?.querySelector('#statblock-container');
+      expect(statblockContainer).to.exist;
+
+      // Should contain slotted content
+      const slot = statblockContainer?.querySelector('slot');
+      expect(slot).to.exist;
+    });
+
+    it('should extract monster key from slotted content', async () => {
+      const slottedContent = document.createElement('div');
+      slottedContent.className = 'stat-block';
+      slottedContent.setAttribute('data-monster', 'slot-monster');
+
+      element = await fixture(html`
+        <monster-statblock
+          use-slot
+          .monsterStore="${mockMonsterStore}"
+        >${slottedContent}</monster-statblock>
+      `);
+
+      const extractedKey = element.getSlottedMonsterKey();
+      expect(extractedKey).to.equal('slot-monster');
+    });
+  });
+
+  describe('Reroll Functionality', () => {
+    beforeEach(async () => {
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+    });
+
+    it('should handle basic reroll without parameters', async () => {
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+      getStatblockSpy.mockClear(); // Clear initial call
+
+      await element.reroll({});
+
+      expect(getStatblockSpy).toHaveBeenCalledOnce();
+    });
+
+    it('should handle reroll with updated parameters', async () => {
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+      getStatblockSpy.mockClear();
+
+      await element.reroll({
+        monsterKey: 'new-monster',
+        powers: 'new-power-1,new-power-2',
+        hpMultiplier: 2.0,
+        damageMultiplier: 1.5,
+        changeType: StatblockChangeType.PowerChanged
+      });
+
+      expect(element.monsterKey).to.equal('new-monster');
+      expect(element.powers).to.equal('new-power-1,new-power-2');
+      expect(element.hpMultiplier).to.equal(2.0);
+      expect(element.damageMultiplier).to.equal(1.5);
+      expect(getStatblockSpy).toHaveBeenCalledWith(
+        expect.objectContaining({
+          monsterKey: 'new-monster',
+          hpMultiplier: 2.0,
+          damageMultiplier: 1.5
+        }),
+        expect.objectContaining({
+          type: StatblockChangeType.PowerChanged
+        })
+      );
+    });
+
+    it('should handle reroll with changed power tracking', async () => {
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+      getStatblockSpy.mockClear();
+
+      const changedPower = {
+        key: 'test-power-1',
+        name: 'Fire Breath',
+        powerCategory: 'offense',
+        icon: 'fire'
+      };
+
+      await element.reroll({
+        changeType: StatblockChangeType.PowerChanged,
+        changedPower: changedPower
+      });
+
+      expect(getStatblockSpy).toHaveBeenCalledWith(
+        expect.anything(),
+        expect.objectContaining({
+          type: StatblockChangeType.PowerChanged,
+          changedPower: changedPower
+        })
+      );
+    });
+
+    it('should transition from slot mode to dynamic mode on reroll', async () => {
+      const slottedContent = document.createElement('div');
+      slottedContent.className = 'stat-block';
+      slottedContent.setAttribute('data-monster', 'slot-monster');
+
+      element = await fixture(html`
+        <monster-statblock
+          use-slot
+          .monsterStore="${mockMonsterStore}"
+        >${slottedContent}</monster-statblock>
+      `);
+
+      expect(element.useSlot).to.be.true;
+
+      await element.reroll({
+        powers: 'new-power'
+      });
+
+      expect(element.useSlot).to.be.false;
+      expect(element.monsterKey).to.equal('slot-monster');
+    });
+  });
+
+  describe('Change Highlighting', () => {
+    it('should pass change information to store for highlighting', async () => {
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          change-type="hp-changed"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      expect(getStatblockSpy).toHaveBeenCalledWith(
+        expect.anything(),
+        expect.objectContaining({
+          type: 'hp-changed'
+        })
+      );
+    });
+  });
+
+  describe('Error Handling', () => {
+    it('should show error message when statblock generation fails', async () => {
+      // Make the mock store throw an error
+      vi.spyOn(mockMonsterStore, 'getStatblock').mockRejectedValue(new Error('Statblock generation failed'));
+
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      const errorElement = element.shadowRoot?.querySelector('.error');
+      expect(errorElement).to.exist;
+      expect(errorElement?.textContent).to.include('Statblock generation failed');
+    });
+
+    it('should handle missing monster key gracefully', async () => {
+      element = await fixture(html`
+        <monster-statblock .monsterStore="${mockMonsterStore}"></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      const errorElement = element.shadowRoot?.querySelector('.error');
+      expect(errorElement).to.exist;
+      expect(errorElement?.textContent).to.include('No monster key provided');
+    });
+  });
+
+  describe('Store Integration', () => {
+    it('should use injected monster store when provided', async () => {
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      expect(getStatblockSpy).toHaveBeenCalledOnce();
+    });
+
+    it('should fall back to default store when not provided', async () => {
+      element = await fixture(html`
+        <monster-statblock monster-key="test-monster"></monster-statblock>
+      `);
+
+      // Should not throw error and should attempt to use default store
+      await element.updateComplete;
+      expect(element).to.exist;
+    });
+  });
+
+  describe('Caching', () => {
+    beforeEach(async () => {
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+    });
+
+    it('should cache statblock content after first load', async () => {
+      // The first load should have cached the statblock
+      expect(element['_cachedStatblock']).to.exist;
+    });
+
+    it('should show cached content while loading new statblock', async () => {
+      // Ensure we have cached content first
+      await element.updateComplete;
+      await new Promise(resolve => setTimeout(resolve, 50));
+
+      const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
+
+      // Add a delay to the mock to simulate loading
+      getStatblockSpy.mockImplementation(() =>
+        new Promise(resolve =>
+          setTimeout(() => resolve(document.createElement('div')), 100)
+        )
+      );
+
+      // Start the reroll but don't await it yet
+      const rerollPromise = element.reroll({ powers: 'new-power' });
+
+      // Check immediately after starting the reroll for loading state
+      await element.updateComplete;
+
+      // Should show cached content with loading overlay
+      const cachedElement = element.shadowRoot?.querySelector('.loading.cached');
+      expect(cachedElement).to.exist;
+
+      // Now await completion
+      await rerollPromise;
+    });
+  });
+
+  describe('URL Parameter Methods', () => {
+    beforeEach(async () => {
+      element = await fixture(html`
+        <monster-statblock
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+    });
+
+    describe('toUrlParams', () => {
+      it('should generate URL parameters for all component state', () => {
+        element.monsterKey = 'fire-giant';
+        element.hpMultiplier = 1.5;
+        element.damageMultiplier = 2.0;
+        element.powers = 'fire-blast,stomp';
+
+        const params = element.toUrlParams();
+
+        expect(params.get('monster-key')).to.equal('fire-giant');
+        expect(params.get('hp-multiplier')).to.equal('1.5');
+        expect(params.get('damage-multiplier')).to.equal('2');
+        expect(params.get('powers')).to.equal('fire-blast,stomp');
+      });
+
+      it('should omit default values from URL parameters', () => {
+        element.monsterKey = 'test-monster';
+        element.hpMultiplier = 1; // default value
+        element.damageMultiplier = 1; // default value
+        element.powers = ''; // empty
+
+        const params = element.toUrlParams();
+
+        expect(params.get('monster-key')).to.equal('test-monster');
+        expect(params.has('hp-multiplier')).to.be.false;
+        expect(params.has('damage-multiplier')).to.be.false;
+        expect(params.has('powers')).to.be.false;
+      });
+
+      it('should handle missing monster key gracefully', () => {
+        element.monsterKey = '';
+
+        const params = element.toUrlParams();
+
+        expect(params.has('monster-key')).to.be.false;
+      });
+
+      it('should use effective monster key from slotted content', async () => {
+        const slottedContent = document.createElement('div');
+        slottedContent.className = 'stat-block';
+        slottedContent.setAttribute('data-monster', 'slotted-monster');
+
+        element = await fixture(html`
+          <monster-statblock
+            use-slot
+            .monsterStore="${mockMonsterStore}"
+          >${slottedContent}</monster-statblock>
+        `);
+
+        const params = element.toUrlParams();
+
+        expect(params.get('monster-key')).to.equal('slotted-monster');
+      });
+    });
+
+    describe('fromUrlParams', () => {
+      it('should set component state from URL parameters', () => {
+        const params = new URLSearchParams();
+        params.set('monster-key', 'frost-giant');
+        params.set('hp-multiplier', '0.8');
+        params.set('damage-multiplier', '1.2');
+        params.set('powers', 'ice-shard,blizzard');
+
+        element.fromUrlParams(params);
+
+        expect(element.monsterKey).to.equal('frost-giant');
+        expect(element.hpMultiplier).to.equal(0.8);
+        expect(element.damageMultiplier).to.equal(1.2);
+        expect(element.powers).to.equal('ice-shard,blizzard');
+      });
+
+      it('should ignore invalid numeric values', () => {
+        const params = new URLSearchParams();
+        params.set('hp-multiplier', 'invalid');
+        params.set('damage-multiplier', '-1');
+
+        const originalHp = element.hpMultiplier;
+        const originalDamage = element.damageMultiplier;
+
+        element.fromUrlParams(params);
+
+        expect(element.hpMultiplier).to.equal(originalHp);
+        expect(element.damageMultiplier).to.equal(originalDamage);
+      });
+
+      it('should handle empty or missing parameters gracefully', () => {
+        const params = new URLSearchParams();
+        const originalMonsterKey = element.monsterKey;
+
+        element.fromUrlParams(params);
+
+        expect(element.monsterKey).to.equal(originalMonsterKey);
+      });
+
+      it('should use window location search if no params provided', () => {
+        // Mock window.location.search
+        const originalSearch = window.location.search;
+        Object.defineProperty(window, 'location', {
+          value: {
+            ...window.location,
+            search: '?monster-key=location-monster&hp-multiplier=1.3'
+          },
+          writable: true
+        });
+
+        element.fromUrlParams();
+
+        expect(element.monsterKey).to.equal('location-monster');
+        expect(element.hpMultiplier).to.equal(1.3);
+
+        // Restore original location
+        Object.defineProperty(window, 'location', {
+          value: { ...window.location, search: originalSearch },
+          writable: true
+        });
+      });
+    });
+
+    describe('src-from-url property', () => {
+      it('should call fromUrlParams when src-from-url is set to true', async () => {
+        const fromUrlParamsSpy = vi.spyOn(element, 'fromUrlParams');
+
+        // Trigger the updated method by setting the property
+        element.srcFromUrl = true;
+        await element.updateComplete;
+
+        expect(fromUrlParamsSpy).toHaveBeenCalledOnce();
+      });
+
+      it('should load state from URL on connectedCallback when src-from-url is true', async () => {
+        // Mock window.location.search
+        Object.defineProperty(window, 'location', {
+          value: {
+            ...window.location,
+            search: '?monster-key=connected-monster&hp-multiplier=1.7'
+          },
+          writable: true
+        });
+
+        element = await fixture(html`
+          <monster-statblock
+            src-from-url="true"
+            .monsterStore="${mockMonsterStore}"
+          ></monster-statblock>
+        `);
+
+        expect(element.monsterKey).to.equal('connected-monster');
+        expect(element.hpMultiplier).to.equal(1.7);
+      });
+    });
+
+    describe('State completeness', () => {
+      it('should roundtrip all component state through URL parameters', () => {
+        // Set all state properties
+        element.monsterKey = 'complete-monster';
+        element.hpMultiplier = 2.5;
+        element.damageMultiplier = 0.75;
+        element.powers = 'power1,power2,power3';
+
+        // Convert to URL params and back
+        const params = element.toUrlParams();
+
+        // Create a new element to test state restoration
+        const newElement = document.createElement('monster-statblock') as MonsterStatblock;
+        newElement.fromUrlParams(params);
+
+        // Verify all state is preserved
+        expect(newElement.monsterKey).to.equal(element.monsterKey);
+        expect(newElement.hpMultiplier).to.equal(element.hpMultiplier);
+        expect(newElement.damageMultiplier).to.equal(element.damageMultiplier);
+        expect(newElement.powers).to.equal(element.powers);
+      });
+    });
+
+    describe('getStatblockPayload', () => {
+      it('should generate payload object for API calls with all state', () => {
+        element.monsterKey = 'api-monster';
+        element.hpMultiplier = 1.8;
+        element.damageMultiplier = 1.2;
+        element.powers = 'fire-breath,tail-swipe';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload).to.deep.equal({
+          monster_key: 'api-monster',
+          powers: ['fire-breath', 'tail-swipe'],
+          hp_multiplier: 1.8,
+          damage_multiplier: 1.2
+        });
+      });
+
+      it('should handle default multiplier values', () => {
+        element.monsterKey = 'default-monster';
+        element.hpMultiplier = 1; // default
+        element.damageMultiplier = 1; // default
+        element.powers = 'single-power';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload).to.deep.equal({
+          monster_key: 'default-monster',
+          powers: ['single-power'],
+          hp_multiplier: 1,
+          damage_multiplier: 1
+        });
+      });
+
+      it('should handle empty powers gracefully', () => {
+        element.monsterKey = 'no-powers-monster';
+        element.powers = '';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload).to.deep.equal({
+          monster_key: 'no-powers-monster',
+          powers: [],
+          hp_multiplier: 1,
+          damage_multiplier: 1
+        });
+      });
+
+      it('should trim and filter powers correctly', () => {
+        element.monsterKey = 'filtered-monster';
+        element.powers = 'power1, power2 ,  , power3,';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload.powers).to.deep.equal(['power1', 'power2', 'power3']);
+      });
+
+      it('should use effective monster key from slotted content', async () => {
+        const slottedContent = document.createElement('div');
+        slottedContent.className = 'stat-block';
+        slottedContent.setAttribute('data-monster', 'payload-slotted-monster');
+
+        element = await fixture(html`
+          <monster-statblock
+            use-slot
+            .monsterStore="${mockMonsterStore}"
+          >${slottedContent}</monster-statblock>
+        `);
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload.monster_key).to.equal('payload-slotted-monster');
+      });
+
+      it('should handle missing monster key gracefully', () => {
+        element.monsterKey = '';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload.monster_key).to.equal('');
+      });
+
+      it('should roundtrip all component state through payload generation', () => {
+        // Set all state properties
+        element.monsterKey = 'roundtrip-monster';
+        element.hpMultiplier = 3.0;
+        element.damageMultiplier = 0.5;
+        element.powers = 'magic-missile,fireball,lightning-bolt';
+
+        const payload = element.getStatblockPayload();
+
+        // Verify all state is captured in the payload
+        expect(payload.monster_key).to.equal(element.monsterKey);
+        expect(payload.hp_multiplier).to.equal(element.hpMultiplier);
+        expect(payload.damage_multiplier).to.equal(element.damageMultiplier);
+        expect(payload.powers).to.deep.equal(['magic-missile', 'fireball', 'lightning-bolt']);
+      });
+    });
+  });
+
+});

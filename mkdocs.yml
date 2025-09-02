@@ -22,6 +22,7 @@ nav:
       - Topics: topics/index.md
       - RSS: rss.xml
       - FAQ: topics/faq.md
+      - Privacy: topics/privacy.md
 
 use_directory_urls: true
 
@@ -36,6 +37,8 @@ plugins:
   - blogging:
       dirs:
         - blog
+      locale: en_US # or just 'en'
+      time_format: short
       features:
         tags:
           insert: bottom

@@ -6,9 +6,17 @@ from foe_foundry.utils import slug_to_title
 from foe_foundry_data.icons import inline_icon, og_image_for_icon
 from foe_foundry_data.powers import PowerCategory, PowerModel, Powers
 
+from .types import FilesToGenerate
 
-def generate_all_powers():
-    # Create the index content
+
+def generate_all_powers_content() -> FilesToGenerate:
+    """Generate all powers content without writing to mkdocs_gen_files.
+
+    Returns FilesToGenerate with all the files to be written.
+    """
+    files = {}
+
+    # Create the main index content
     lines = [
         "---",
         "title: All Powers | Foe Foundry",
@@ -40,15 +48,29 @@ def generate_all_powers():
                 f"- [{slug_to_title(theme)} Powers ({len(powers)})]({theme}.md)\n"
             )
 
+    # Add main index file
+    files["powers/all.md"] = "\n".join(lines)
+
+    # Generate theme files
     for theme, powers in Powers.PowersByTheme.items():
-        generate_theme_file(theme, powers)
+        theme_content = generate_theme_file_content(theme, powers)
+        files[f"powers/{theme}.md"] = theme_content
 
-    # Write it into the virtual MkDocs build
-    with mkdocs_gen_files.open("powers/all.md", "w") as f:
-        f.write("\n".join(lines))
+    return FilesToGenerate(name="powers", files=files)
 
 
-def generate_theme_file(theme: str, powers: list[PowerModel]):
+def generate_all_powers():
+    """Generate all powers and write directly to mkdocs_gen_files."""
+    result = generate_all_powers_content()
+
+    # Write all files into the virtual MkDocs build
+    for filename, content in result.files.items():
+        with mkdocs_gen_files.open(filename, "w") as f:
+            f.write(content)
+
+
+def generate_theme_file_content(theme: str, powers: list[PowerModel]) -> str:
+    """Generate content for a theme file without writing to mkdocs_gen_files."""
     # Sum monster_count by icon and pick the icon with the highest monster_count
     icon_counts = {}
     for p in powers:
@@ -88,6 +110,13 @@ def generate_theme_file(theme: str, powers: list[PowerModel]):
         lines.append(f"[[!{power.name}]]")
         lines.append("---\n")
 
+    return "\n".join(lines)
+
+
+def generate_theme_file(theme: str, powers: list[PowerModel]):
+    """Generate theme file and write directly to mkdocs_gen_files."""
+    content = generate_theme_file_content(theme, powers)
+
     # Write it into the virtual MkDocs build
     with mkdocs_gen_files.open(f"powers/{theme}.md", "w") as f:
-        f.write("\n".join(lines))
+        f.write(content)

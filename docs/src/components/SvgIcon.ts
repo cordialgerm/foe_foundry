@@ -77,6 +77,7 @@ export class SvgIcon extends LitElement {
   @property()
   jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = false;
 
+  @property({ attribute: false })
   private svgContent: string = '';
 
   private handleClick() {
@@ -85,7 +86,7 @@ export class SvgIcon extends LitElement {
 
   async firstUpdated() {
     if (this.src) {
-      await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
+      this.svgContent = await loadAndCleanSVG(this.src);
     }
 
     // Add click handler for jiggleUntilClick behavior
@@ -93,6 +94,8 @@ export class SvgIcon extends LitElement {
 
     // Add random delay for jiggle-until-click to desynchronize animations
     if (this.jiggle === 'jiggleUntilClick') {
+      // Wait for the next update cycle before applying the delay
+      await this.updateComplete;
       const spanElement = this.renderRoot.querySelector('span');
       if (spanElement) {
         const randomDelay = Math.random() * 2; // 0-2 seconds random delay
@@ -103,7 +106,7 @@ export class SvgIcon extends LitElement {
 
   async updated(changedProperties: Map<string, any>) {
     if (changedProperties.has('src') && this.src) {
-      await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
+      this.svgContent = await loadAndCleanSVG(this.src);
     }
   }
 
@@ -127,7 +130,7 @@ export class SvgIcon extends LitElement {
 
 const svgCache = new Map<string, string>();
 
-async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement, fillValue: string = 'currentColor') {
+async function loadAndCleanSVG(src: string, fillValue: string = 'currentColor'): Promise<string> {
   try {
     // Check if src is a valid URL ending with .svg
     let url = src;
@@ -138,9 +141,7 @@ async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement,
 
     if (svgCache.has(url)) {
       // Use cached SVG content
-      const cachedSVG = svgCache.get(url) as string;
-      injectSVG(cachedSVG, targetElement, fillValue);
-      return;
+      return svgCache.get(url) as string;
     }
 
     const result = await fetch(url);
@@ -150,38 +151,25 @@ async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement,
 
     const svgText = await result.text();
     // Strip out any fill="..." attributes, width/height attributes, and style attributes to allow CSS control
-    const cleaned = svgText
+    let cleaned = svgText
       .replace(/\s*fill\s*=\s*(['"])[^'"]*\1/gi, '')
       .replace(/\s*width\s*=\s*(['"])[^'"]*\1/gi, '')
       .replace(/\s*height\s*=\s*(['"])[^'"]*\1/gi, '')
       .replace(/\s*style\s*=\s*(['"])[^'"]*\1/gi, '');
 
+    // Apply fill value if provided
+    if (fillValue !== null) {
+      cleaned = cleaned.replace('<svg', `<svg fill="${fillValue}"`);
+    }
+
     // Cache the cleaned SVG content
     svgCache.set(url, cleaned);
 
-    // Inject the SVG into the target element
-    injectSVG(cleaned, targetElement, fillValue);
+    return cleaned;
   } catch (error) {
     console.warn('Error loading SVG icon:', src, error);
+    return '';
   }
-}
-
-function injectSVG(svgText: string, targetElement: HTMLElement, fillValue: string) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(svgText, 'image/svg+xml');
-  const svgEl = doc.documentElement;
-
-  // Optionally apply a uniform fill
-  if (fillValue !== null) {
-    svgEl.setAttribute('fill', fillValue);
-  }
-
-  // Replace the contents of the target <div>
-  while (targetElement.firstChild) {
-    targetElement.removeChild(targetElement.firstChild);
-  }
-  targetElement.appendChild(svgEl);
-  targetElement.classList.remove('placeholder');
 }
 
 declare global {

@@ -11,4 +11,6 @@ import './components/ForgeButton';
 import './components/GeneratorShowcase';
 import './components/SvgIconButton';
 import './components/EmailSubscribeCallout';
+import './components/StatblockTutorial';
 import './pages/generate';
+import './pages/tutorial';

@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Annotated
 
 import numpy as np
@@ -45,18 +45,11 @@ def new(
     ] = 10,
 ) -> list[PowerModel]:
     limit = limit or 10
-    now = datetime.now()
-    new = now - timedelta(days=30)
-    new_powers = [
-        p
-        for p in Powers.PowerLookup.values()
-        if (p.create_date is not None and p.create_date >= new)
-    ]
 
     def _sort(p: PowerModel):
         return p.create_date or datetime.min
 
-    sorted_powers = sorted(new_powers, key=_sort, reverse=True)
+    sorted_powers = sorted(Powers.AllPowers, key=_sort, reverse=True)
     return sorted_powers[:limit]
 
 

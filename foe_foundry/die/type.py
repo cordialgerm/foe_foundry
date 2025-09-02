@@ -1,8 +1,7 @@
 from __future__ import annotations
 
+from enum import StrEnum
 from typing import List, cast
-
-from backports.strenum import StrEnum
 
 
 class Die(StrEnum):

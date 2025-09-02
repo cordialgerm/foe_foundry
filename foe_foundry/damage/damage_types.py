@@ -1,9 +1,7 @@
 from __future__ import annotations
 
-from enum import auto
+from enum import StrEnum, auto
 from typing import List, Set, cast
-
-from backports.strenum import StrEnum
 
 
 class DamageType(StrEnum):
@@ -69,12 +67,6 @@ class DamageType(StrEnum):
             DamageType.Thunder,
             DamageType.Poison,
         }
-
-    @staticmethod
-    def parse(damage_type: str) -> DamageType:
-        damage_type = damage_type.strip().lower()
-        val = DamageType._member_map_[damage_type.title()]
-        return cast(DamageType, val)
 
     @property
     def adj(self) -> str:

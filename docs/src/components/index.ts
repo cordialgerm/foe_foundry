@@ -2,8 +2,11 @@
 export { StatblockButton } from './StatblockButton.js';
 export { RerollButton } from './RerollButton.js';
 export { ForgeStatblockButton } from './ForgeButton.js';
+export { DownloadButton } from './DownloadButton.js';
+export { ExportDialog } from './ExportDialog.js';
 export { SvgIcon } from './SvgIcon.js';
 export { MonsterStatblock } from './MonsterStatblock.js';
 export { GeneratorShowcase } from './GeneratorShowcase.js';
 export { SvgIconButton } from './SvgIconButton.js';
 export { EmailSubscribeCallout } from './EmailSubscribeCallout.js';
+export { StatblockTutorial } from './StatblockTutorial.js';
