@@ -1,6 +1,7 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { StatblockButton } from './StatblockButton.js';
+import { MonsterStatblock } from './MonsterStatblock.js';
 import { trackDownloadClick } from '../utils/analytics.js';
 import './SvgIcon.js';
 import './ExportDialog.js';
@@ -83,7 +84,7 @@ export class DownloadButton extends StatblockButton {
     private _handleExport(event: CustomEvent): void {
         const { exportType, format } = event.detail;
         const statblock = this.findTargetStatblock();
-        
+
         if (!statblock) {
             console.error('No target statblock found for export');
             return;
@@ -108,7 +109,7 @@ export class DownloadButton extends StatblockButton {
     private _openPrintPreview(statblock: any): void {
         // Create a new window with the statblock in print-preview mode
         const baseUrl = (window as any).baseUrl || '';
-        
+
         // Use the statblock's URL parameter generation method
         const params = statblock.toUrlParams();
 
@@ -116,10 +117,10 @@ export class DownloadButton extends StatblockButton {
         window.open(printUrl, '_blank', 'width=800,height=1000,scrollbars=yes,resizable=yes');
     }
 
-    private async _downloadMarkdown(statblock: any, format: string): Promise<void> {
+    private async _downloadMarkdown(statblock: MonsterStatblock, format: string): Promise<void> {
         try {
             const baseUrl = (window as any).baseUrl || '';
-            
+
             // Use the statblock's payload generation method
             const payload = statblock.getStatblockPayload();
 
@@ -137,22 +138,22 @@ export class DownloadButton extends StatblockButton {
 
             // The API returns markdown content directly as text
             const markdown = await response.text();
-            
+
             // Create and trigger download
             const blob = new Blob([markdown], { type: 'text/markdown' });
             const url = URL.createObjectURL(blob);
-            
+
             const formatNames: Record<string, string> = {
                 'md_5esrd': 'Simple-Markdown',
                 'md_gmbinder': 'GMBinder',
                 'md_homebrewery': 'Homebrewery',
                 'md_blackflag': 'Black-Flag'
             };
-            
-            const monsterName = monsterKey.replace(/[^a-zA-Z0-9-_]/g, '-');
+
+            const monsterName = payload.monster_key.replace(/[^a-zA-Z0-9-_]/g, '-');
             const formatName = formatNames[format] || format;
             const filename = `${monsterName}-${formatName}.md`;
-            
+
             const link = document.createElement('a');
             link.href = url;
             link.download = filename;
@@ -160,7 +161,7 @@ export class DownloadButton extends StatblockButton {
             link.click();
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
-            
+
         } catch (error) {
             console.error('Error downloading markdown:', error);
             // Could dispatch an error event here for user feedback
@@ -177,7 +178,7 @@ export class DownloadButton extends StatblockButton {
             >
                 <svg-icon src="cloud-download" .jiggle=${this.jiggle}></svg-icon>
             </button>
-            
+
             ${this.dialogOpen ? html`
                 <export-dialog
                     @close=${this._handleDialogClose}
