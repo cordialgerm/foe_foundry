@@ -8,6 +8,8 @@ import { Power } from '../data/powers';
 import { adoptExternalCss } from '../utils';
 import './ForgeButton.js';
 import './RerollButton.js';
+import './DownloadButton.js';
+import { getFeatureFlags, FeatureFlags } from '../utils/growthbook';
 
 @customElement('monster-statblock')
 export class MonsterStatblock extends LitElement {
@@ -144,14 +146,26 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean, attribute: 'print-preview' })
     printPreview: boolean = false;
 
+    @property({ type: Boolean, attribute: 'src-from-url' })
+    srcFromUrl: boolean = false;
+
     @property({ type: Object })
     monsterStore?: MonsterStore;
     private statblockRef: Ref<HTMLDivElement> = createRef();
     private _cachedStatblock: Element | null = null;
     private _changedPower: Power | null = null;
+    private _cachedFlags: FeatureFlags | null = null;
 
-    connectedCallback() {
+    async connectedCallback() {
         super.connectedCallback();
+
+        // Load feature flags early
+        this._cachedFlags = await getFeatureFlags();
+
+        // If src-from-url is set, load state from URL parameters
+        if (this.srcFromUrl) {
+            this.fromUrlParams();
+        }
 
         // If we have slotted content, cache it for potential future use
         if (this.useSlot) {
@@ -160,11 +174,19 @@ export class MonsterStatblock extends LitElement {
                 this._cachedStatblock = slottedStatblock.cloneNode(true) as Element;
             }
         }
+
+        // Trigger re-render after flags are loaded
+        this.requestUpdate();
     }
 
     updated(changedProperties: Map<string | number | symbol, unknown>) {
         super.updated(changedProperties);
-        
+
+        // If src-from-url property changed to true, load from URL
+        if (changedProperties.has('srcFromUrl') && this.srcFromUrl) {
+            this.fromUrlParams();
+        }
+
         // Apply print-preview class after content updates
         this.applyPrintPreviewClass();
     }
@@ -184,6 +206,83 @@ export class MonsterStatblock extends LitElement {
 
     getEffectiveMonsterKey() {
         return this.monsterKey || this.getSlottedMonsterKey() || this.statblockRef.value?.querySelector('.stat-block')?.getAttribute('data-monster') || null;
+    }
+
+    /**
+     * Convert current component state to URL parameters
+     * @returns URLSearchParams object with current state
+     */
+    toUrlParams(): URLSearchParams {
+        const params = new URLSearchParams();
+
+        const effectiveMonsterKey = this.getEffectiveMonsterKey();
+        if (effectiveMonsterKey) {
+            params.set('monster-key', effectiveMonsterKey);
+        }
+
+        if (this.hpMultiplier !== 1) {
+            params.set('hp-multiplier', this.hpMultiplier.toString());
+        }
+
+        if (this.damageMultiplier !== 1) {
+            params.set('damage-multiplier', this.damageMultiplier.toString());
+        }
+
+        if (this.powers && this.powers.trim()) {
+            params.set('powers', this.powers);
+        }
+
+        return params;
+    }
+
+    /**
+     * Get the payload object for API statblock generation requests
+     * @returns Object with current component state formatted for API
+     */
+    getStatblockPayload(): { monster_key: string; powers: string[]; hp_multiplier: number; damage_multiplier: number } {
+        const effectiveMonsterKey = this.getEffectiveMonsterKey() || '';
+        const powers = this.powers ? this.powers.split(',').map((p: string) => p.trim()).filter((p: string) => p) : [];
+
+        return {
+            monster_key: effectiveMonsterKey,
+            powers: powers,
+            hp_multiplier: this.hpMultiplier || 1,
+            damage_multiplier: this.damageMultiplier || 1
+        };
+    }
+
+    /**
+     * Set component state from URL parameters
+     * @param urlParams Optional URLSearchParams object. If not provided, uses current window location
+     */
+    fromUrlParams(urlParams?: URLSearchParams): void {
+        const params = urlParams || new URLSearchParams(window.location.search);
+
+        const monsterKey = params.get('monster-key');
+        if (monsterKey) {
+            this.monsterKey = monsterKey;
+        }
+
+        const hpMultiplier = params.get('hp-multiplier');
+        if (hpMultiplier) {
+            const parsed = parseFloat(hpMultiplier);
+            if (!isNaN(parsed) && parsed > 0) {
+                this.hpMultiplier = parsed;
+            }
+        }
+
+        const damageMultiplier = params.get('damage-multiplier');
+        if (damageMultiplier) {
+            const parsed = parseFloat(damageMultiplier);
+            if (!isNaN(parsed) && parsed > 0) {
+                this.damageMultiplier = parsed;
+            }
+        }
+
+        const powers = params.get('powers');
+        if (powers) {
+            this.powers = powers;
+        }
     }
 
     /**
@@ -211,6 +310,7 @@ export class MonsterStatblock extends LitElement {
     // Use Lit Task for async statblock loading
     private _statblockTask = new Task(this, {
         task: async ([monsterKey, hpMultiplier, damageMultiplier, powers, changeType, random], { signal }) => {
+
             if (this.shadowRoot) {
                 await adoptExternalCss(this.shadowRoot);
             }
@@ -346,6 +446,7 @@ export class MonsterStatblock extends LitElement {
     }
 
     render() {
+
         // If using slot-based content, render the slotted content directly
         if (this.useSlot) {
             return html`
@@ -353,23 +454,16 @@ export class MonsterStatblock extends LitElement {
                     <div ${ref(this.statblockRef)} id="statblock-container">
                         <slot></slot>
                     </div>
-                    ${!this.hideButtons ? this._renderButtonPanel() : ''}
+                    ${!this.hideButtons ? this._renderButtonPanel(this._cachedFlags?.showStatblockDownloadOptions) : ''}
                 </div>
             `;
         }
 
-        // Otherwise use the existing dynamic task-based rendering
-        return html`
-            <div class="statblock-wrapper">
-                ${this._statblockTask.render({
+        return this._statblockTask.render({
             pending: () => {
-                if (this._cachedStatblock) {
+                if (this._cachedStatblock && this._cachedFlags) {
                     // Show cached statblock while loading new one
-                    return html`
-                                <div ${ref(this.statblockRef)} id="statblock-container" class="loading cached">
-                                    ${this._cachedStatblock}
-                                </div>
-                            `;
+                    return this._renderStatblock(this._cachedStatblock, this._cachedFlags, "loading cached");
                 }
                 return html`
                             <div class="loading empty">
@@ -377,16 +471,19 @@ export class MonsterStatblock extends LitElement {
                             </div>
                         `;
             },
-            error: (e) => html`
-                        <div class="error">
-                            Error: ${e instanceof Error ? e.message : String(e)}
-                        </div>
-                    `,
-            complete: (statblockElement: Element) => {
+            error: (e) => {
+                console.error(e);
+                return html`
+                    <div class="error">
+                        Error: ${e instanceof Error ? e.message : String(e)}
+                    </div>
+                `;
+            },
+            complete: (statblockElement) => {
 
                 // Cache the new statblock
                 this._cachedStatblock = statblockElement;
-                
+
                 // Apply print-preview class if needed
                 if (this.printPreview) {
                     const statBlocks = statblockElement.querySelectorAll('.stat-block');
@@ -394,24 +491,35 @@ export class MonsterStatblock extends LitElement {
                         block.classList.add('print-preview');
                     });
                 }
-                
-                return html`
-                            <div ${ref(this.statblockRef)} id="statblock-container">
-                                ${statblockElement}
-                            </div>
-                        `;
+                return this._renderStatblock(statblockElement, this._cachedFlags || undefined);
             }
-        })}
-                ${!this.hideButtons ? this._renderButtonPanel() : ''}
+        })
+    }
+
+    private _renderStatblock(statblockElement: Element, flags?: FeatureFlags, classes?: string) {
+        return html`
+        <div class="statblock-wrapper">
+            <div ${ref(this.statblockRef)} id="statblock-container" class="${classes}">
+                ${statblockElement}
             </div>
+            ${!this.hideButtons ? this._renderButtonPanel(flags?.showStatblockDownloadOptions) : ''}
+        </div>
         `;
     }
 
-    private _renderButtonPanel() {
+    private _renderButtonPanel(showDownload?: boolean) {
+
+        const items = [];
+        items.push(html`<reroll-button></reroll-button>`);
+        items.push(html`<forge-button></forge-button>`);
+
+        if (showDownload) {
+            items.push(html`<download-button></download-button>`);
+        }
+
         return html`
             <div class="statblock-button-panel">
-                <reroll-button></reroll-button>
-                <forge-button></forge-button>
+                ${items}
             </div>
         `;
     }

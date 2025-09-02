@@ -15,8 +15,19 @@ vi.mock('../docs/src/utils/analytics.js', () => ({
   trackStatblockEdit: vi.fn()
 }));
 
+// Mock GrowthBook utilities
+vi.mock('../docs/src/utils/growthbook.js', () => ({
+  getFeatureFlags: vi.fn().mockResolvedValue({
+    showTutorial: false,
+    showStatblockDownloadOptions: false
+  }),
+  initGrowthBook: vi.fn().mockResolvedValue({
+    isOn: vi.fn().mockReturnValue(false)
+  })
+}));
+
 // Set up global test environment
-(global as any).HTMLElement = global.HTMLElement || class {};
+(global as any).HTMLElement = global.HTMLElement || class { };
 (global as any).customElements = global.customElements || {
   define: vi.fn(),
   get: vi.fn()
@@ -49,11 +60,11 @@ vi.mock('../docs/src/utils/analytics.js', () => ({
       text: () => Promise.resolve('<svg><path d="M0,0 L10,10"></path></svg>')
     });
   }
-  
+
   // Mock API calls to foefoundry.com to prevent real network calls
   if (typeof url === 'string' && url.includes('foefoundry.com')) {
     console.warn(`Mocking API call to: ${url}`);
-    
+
     // Return mock API responses based on the endpoint
     if (url.includes('/loadouts')) {
       return Promise.resolve({
@@ -61,7 +72,7 @@ vi.mock('../docs/src/utils/analytics.js', () => ({
         json: () => Promise.resolve([])
       });
     }
-    
+
     if (url.includes('/monsters/')) {
       return Promise.resolve({
         ok: true,
@@ -72,7 +83,7 @@ vi.mock('../docs/src/utils/analytics.js', () => ({
         })
       });
     }
-    
+
     if (url.includes('/statblocks/')) {
       return Promise.resolve({
         ok: true,
@@ -81,14 +92,14 @@ vi.mock('../docs/src/utils/analytics.js', () => ({
         })
       });
     }
-    
+
     // Default mock response for any other foefoundry.com API calls
     return Promise.resolve({
       ok: true,
       json: () => Promise.resolve({})
     });
   }
-  
+
   // Mock any other network calls to prevent real API calls
   console.warn(`Unmocked fetch call to: ${url}`);
   return Promise.reject(new Error(`Network call blocked in tests: ${url}`));

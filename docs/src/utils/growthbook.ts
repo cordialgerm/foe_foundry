@@ -11,6 +11,9 @@ import { thirdPartyTrackingPlugin } from "@growthbook/growthbook/plugins";
 // Singleton GrowthBook instance
 let growthbookInstance: GrowthBook | null = null;
 
+// Singleton FeatureFlags instance
+let featureFlagsInstance: FeatureFlags | null = null;
+
 /**
  * Get or create the GrowthBook instance
  */
@@ -68,16 +71,29 @@ export function trackGrowthBookEvent(event: string, properties?: Record<string, 
 }
 
 /**
- * Check if a feature flag is enabled
+ * Easy access to feature flags
  */
-export function isFeatureEnabled(feature: string): boolean {
-    return getGrowthBook().isOn(feature);
+export interface FeatureFlags {
+    readonly showTutorial: boolean;
+    readonly showStatblockDownloadOptions: boolean;
 }
 
 /**
- * Get feature value (for non-boolean features)
+ * Get a FeatureFlags object with property-based access to feature flags
  */
-export function getFeatureValue<T = any>(feature: string, defaultValue?: T): T {
-    const value = getGrowthBook().getFeatureValue(feature, defaultValue);
-    return value as T;
+export async function getFeatureFlags(): Promise<FeatureFlags> {
+
+    const gb = await initGrowthBook();
+
+    if (!featureFlagsInstance) {
+        featureFlagsInstance = {
+            get showTutorial(): boolean {
+                return gb.isOn("show-tutorial");
+            },
+            get showStatblockDownloadOptions(): boolean {
+                return gb.isOn("show-statblock-download-options");
+            }
+        };
+    }
+    return featureFlagsInstance;
 }
