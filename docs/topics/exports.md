@@ -55,5 +55,3 @@ Formatted for the Black Flag RPG system, with appropriate styling and stat block
 3. Choose your preferred export format
 4. For print preview, a new window will open ready for printing
 5. For markdown formats, a file will automatically download to your device
-
-Need help with a specific format or platform? Feel free to reach out via our [support page](/support/).

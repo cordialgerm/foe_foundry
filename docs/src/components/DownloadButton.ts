@@ -113,7 +113,7 @@ export class DownloadButton extends StatblockButton {
         // Use the statblock's URL parameter generation method
         const params = statblock.toUrlParams();
 
-        const printUrl = `${baseUrl}/print-preview/?${params.toString()}`;
+        const printUrl = `${baseUrl}/print-preview.html?${params.toString()}`;
         window.open(printUrl, '_blank', 'width=800,height=1000,scrollbars=yes,resizable=yes');
     }
 
@@ -157,9 +157,7 @@ export class DownloadButton extends StatblockButton {
             const link = document.createElement('a');
             link.href = url;
             link.download = filename;
-            document.body.appendChild(link);
             link.click();
-            document.body.removeChild(link);
             URL.revokeObjectURL(url);
 
         } catch (error) {

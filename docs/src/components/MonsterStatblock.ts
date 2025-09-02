@@ -173,12 +173,12 @@ export class MonsterStatblock extends LitElement {
 
     updated(changedProperties: Map<string | number | symbol, unknown>) {
         super.updated(changedProperties);
-        
+
         // If src-from-url property changed to true, load from URL
         if (changedProperties.has('srcFromUrl') && this.srcFromUrl) {
             this.fromUrlParams();
         }
-        
+
         // Apply print-preview class after content updates
         this.applyPrintPreviewClass();
     }
@@ -206,24 +206,24 @@ export class MonsterStatblock extends LitElement {
      */
     toUrlParams(): URLSearchParams {
         const params = new URLSearchParams();
-        
+
         const effectiveMonsterKey = this.getEffectiveMonsterKey();
         if (effectiveMonsterKey) {
             params.set('monster-key', effectiveMonsterKey);
         }
-        
+
         if (this.hpMultiplier !== 1) {
             params.set('hp-multiplier', this.hpMultiplier.toString());
         }
-        
+
         if (this.damageMultiplier !== 1) {
             params.set('damage-multiplier', this.damageMultiplier.toString());
         }
-        
+
         if (this.powers && this.powers.trim()) {
             params.set('powers', this.powers);
         }
-        
+
         return params;
     }
 
@@ -234,7 +234,7 @@ export class MonsterStatblock extends LitElement {
     getStatblockPayload(): { monster_key: string; powers: string[]; hp_multiplier: number; damage_multiplier: number } {
         const effectiveMonsterKey = this.getEffectiveMonsterKey() || '';
         const powers = this.powers ? this.powers.split(',').map((p: string) => p.trim()).filter((p: string) => p) : [];
-        
+
         return {
             monster_key: effectiveMonsterKey,
             powers: powers,
@@ -249,12 +249,12 @@ export class MonsterStatblock extends LitElement {
      */
     fromUrlParams(urlParams?: URLSearchParams): void {
         const params = urlParams || new URLSearchParams(window.location.search);
-        
+
         const monsterKey = params.get('monster-key');
         if (monsterKey) {
             this.monsterKey = monsterKey;
         }
-        
+
         const hpMultiplier = params.get('hp-multiplier');
         if (hpMultiplier) {
             const parsed = parseFloat(hpMultiplier);
@@ -262,7 +262,7 @@ export class MonsterStatblock extends LitElement {
                 this.hpMultiplier = parsed;
             }
         }
-        
+
         const damageMultiplier = params.get('damage-multiplier');
         if (damageMultiplier) {
             const parsed = parseFloat(damageMultiplier);
@@ -270,7 +270,7 @@ export class MonsterStatblock extends LitElement {
                 this.damageMultiplier = parsed;
             }
         }
-        
+
         const powers = params.get('powers');
         if (powers) {
             this.powers = powers;
@@ -468,16 +468,19 @@ export class MonsterStatblock extends LitElement {
                             </div>
                         `;
             },
-            error: (e) => html`
-                        <div class="error">
-                            Error: ${e instanceof Error ? e.message : String(e)}
-                        </div>
-                    `,
+            error: (e) => {
+                console.error(e);
+                return html`
+                    <div class="error">
+                        Error: ${e instanceof Error ? e.message : String(e)}
+                    </div>
+                `;
+            },
             complete: (statblockElement: Element) => {
 
                 // Cache the new statblock
                 this._cachedStatblock = statblockElement;
-                
+
                 // Apply print-preview class if needed
                 if (this.printPreview) {
                     const statBlocks = statblockElement.querySelectorAll('.stat-block');
@@ -485,7 +488,7 @@ export class MonsterStatblock extends LitElement {
                         block.classList.add('print-preview');
                     });
                 }
-                
+
                 return html`
                             <div ${ref(this.statblockRef)} id="statblock-container">
                                 ${statblockElement}

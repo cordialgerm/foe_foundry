@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+    <style>
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="print-preview">
+
+
+    <div class="container-md pamphlet-container print-preview">
+        <div class="row justify-content-center">
+            <div class="no-print">
+                <h1>Print Preview</h1>
+                <p>Use your browser's print function (Ctrl+P / Cmd+P) to print this statblock</p>
+            </div>
+            <div class="col-12">
+                <monster-statblock src-from-url="true" hide-buttons="true" print-preview="true"></monster-statblock>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

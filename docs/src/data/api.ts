@@ -159,7 +159,7 @@ export class ApiMonsterStore implements MonsterStore {
             damage_multiplier: request.damageMultiplier
         };
         const baseUrl: string = (window as any).baseUrl ?? 'https://foefoundry.com';
-        const response = await fetch(`${baseUrl}/api/v1/statblocks/generate`, {
+        const response = await fetch(`${baseUrl}/api/v1/statblocks/generate?output=json`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
