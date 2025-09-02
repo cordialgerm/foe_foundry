@@ -502,7 +502,7 @@ export class MonsterStatblock extends LitElement {
             <div ${ref(this.statblockRef)} id="statblock-container" class="${classes}">
                 ${statblockElement}
             </div>
-            ${this._renderButtonPanel(flags?.showStatblockDownloadOptions)}
+            ${!this.hideButtons ? this._renderButtonPanel(flags?.showStatblockDownloadOptions) : ''}
         </div>
         `;
     }

@@ -19,14 +19,14 @@ describe('MonsterStatblock Component', () => {
   describe('Basic Rendering', () => {
     it('should render loading state initially', async () => {
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
       `);
 
       expect(element).to.exist;
-      
+
       // Should show loading state initially
       const loadingElement = element.shadowRoot?.querySelector('.loading');
       expect(loadingElement).to.exist;
@@ -34,7 +34,7 @@ describe('MonsterStatblock Component', () => {
 
     it('should render statblock content after loading', async () => {
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -45,7 +45,7 @@ describe('MonsterStatblock Component', () => {
 
       const statblockContainer = element.shadowRoot?.querySelector('#statblock-container');
       expect(statblockContainer).to.exist;
-      
+
       // Should contain the mock statblock content
       const statblock = statblockContainer?.querySelector('.monster-statblock');
       expect(statblock).to.exist;
@@ -53,7 +53,7 @@ describe('MonsterStatblock Component', () => {
 
     it('should render button panel by default', async () => {
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -64,7 +64,7 @@ describe('MonsterStatblock Component', () => {
 
       const buttonPanel = element.shadowRoot?.querySelector('.statblock-button-panel');
       expect(buttonPanel).to.exist;
-      
+
       const rerollButton = buttonPanel?.querySelector('reroll-button');
       const forgeButton = buttonPanel?.querySelector('forge-button');
       expect(rerollButton).to.exist;
@@ -73,15 +73,16 @@ describe('MonsterStatblock Component', () => {
 
     it('should hide buttons when hide-buttons is set', async () => {
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           hide-buttons
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
       `);
 
+      // Wait for component initialization including async feature flag loading
       await element.updateComplete;
-      await new Promise(resolve => setTimeout(resolve, 50));
+      await new Promise(resolve => setTimeout(resolve, 100));
 
       const buttonPanel = element.shadowRoot?.querySelector('.statblock-button-panel');
       expect(buttonPanel).to.not.exist;
@@ -93,7 +94,7 @@ describe('MonsterStatblock Component', () => {
       const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           powers="test-power-1,test-power-2"
           .monsterStore="${mockMonsterStore}"
@@ -119,7 +120,7 @@ describe('MonsterStatblock Component', () => {
       const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           hp-multiplier="1.5"
           damage-multiplier="0.8"
@@ -146,7 +147,7 @@ describe('MonsterStatblock Component', () => {
       const getRandomStatblockSpy = vi.spyOn(mockMonsterStore, 'getRandomStatblock');
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           random
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -167,7 +168,7 @@ describe('MonsterStatblock Component', () => {
       slottedContent.innerHTML = '<h1>Slotted Statblock</h1>';
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           use-slot
           .monsterStore="${mockMonsterStore}"
         >${slottedContent}</monster-statblock>
@@ -177,7 +178,7 @@ describe('MonsterStatblock Component', () => {
 
       const statblockContainer = element.shadowRoot?.querySelector('#statblock-container');
       expect(statblockContainer).to.exist;
-      
+
       // Should contain slotted content
       const slot = statblockContainer?.querySelector('slot');
       expect(slot).to.exist;
@@ -189,7 +190,7 @@ describe('MonsterStatblock Component', () => {
       slottedContent.setAttribute('data-monster', 'slot-monster');
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           use-slot
           .monsterStore="${mockMonsterStore}"
         >${slottedContent}</monster-statblock>
@@ -203,7 +204,7 @@ describe('MonsterStatblock Component', () => {
   describe('Reroll Functionality', () => {
     beforeEach(async () => {
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -281,7 +282,7 @@ describe('MonsterStatblock Component', () => {
       slottedContent.setAttribute('data-monster', 'slot-monster');
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           use-slot
           .monsterStore="${mockMonsterStore}"
         >${slottedContent}</monster-statblock>
@@ -303,7 +304,7 @@ describe('MonsterStatblock Component', () => {
       const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           change-type="hp-changed"
           .monsterStore="${mockMonsterStore}"
@@ -328,7 +329,7 @@ describe('MonsterStatblock Component', () => {
       vi.spyOn(mockMonsterStore, 'getStatblock').mockRejectedValue(new Error('Statblock generation failed'));
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -361,7 +362,7 @@ describe('MonsterStatblock Component', () => {
       const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
 
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -387,7 +388,7 @@ describe('MonsterStatblock Component', () => {
   describe('Caching', () => {
     beforeEach(async () => {
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -406,26 +407,26 @@ describe('MonsterStatblock Component', () => {
       // Ensure we have cached content first
       await element.updateComplete;
       await new Promise(resolve => setTimeout(resolve, 50));
-      
+
       const getStatblockSpy = vi.spyOn(mockMonsterStore, 'getStatblock');
-      
+
       // Add a delay to the mock to simulate loading
-      getStatblockSpy.mockImplementation(() => 
-        new Promise(resolve => 
+      getStatblockSpy.mockImplementation(() =>
+        new Promise(resolve =>
           setTimeout(() => resolve(document.createElement('div')), 100)
         )
       );
 
       // Start the reroll but don't await it yet
       const rerollPromise = element.reroll({ powers: 'new-power' });
-      
+
       // Check immediately after starting the reroll for loading state
       await element.updateComplete;
-      
+
       // Should show cached content with loading overlay
       const cachedElement = element.shadowRoot?.querySelector('.loading.cached');
       expect(cachedElement).to.exist;
-      
+
       // Now await completion
       await rerollPromise;
     });
@@ -434,7 +435,7 @@ describe('MonsterStatblock Component', () => {
   describe('URL Parameter Methods', () => {
     beforeEach(async () => {
       element = await fixture(html`
-        <monster-statblock 
+        <monster-statblock
           monster-key="test-monster"
           .monsterStore="${mockMonsterStore}"
         ></monster-statblock>
@@ -484,7 +485,7 @@ describe('MonsterStatblock Component', () => {
         slottedContent.setAttribute('data-monster', 'slotted-monster');
 
         element = await fixture(html`
-          <monster-statblock 
+          <monster-statblock
             use-slot
             .monsterStore="${mockMonsterStore}"
           >${slottedContent}</monster-statblock>
@@ -581,7 +582,7 @@ describe('MonsterStatblock Component', () => {
         });
 
         element = await fixture(html`
-          <monster-statblock 
+          <monster-statblock
             src-from-url="true"
             .monsterStore="${mockMonsterStore}"
           ></monster-statblock>
@@ -602,7 +603,7 @@ describe('MonsterStatblock Component', () => {
 
         // Convert to URL params and back
         const params = element.toUrlParams();
-        
+
         // Create a new element to test state restoration
         const newElement = document.createElement('monster-statblock') as MonsterStatblock;
         newElement.fromUrlParams(params);
@@ -677,7 +678,7 @@ describe('MonsterStatblock Component', () => {
         slottedContent.setAttribute('data-monster', 'payload-slotted-monster');
 
         element = await fixture(html`
-          <monster-statblock 
+          <monster-statblock
             use-slot
             .monsterStore="${mockMonsterStore}"
           >${slottedContent}</monster-statblock>
