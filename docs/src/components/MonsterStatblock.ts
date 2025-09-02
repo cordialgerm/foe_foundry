@@ -156,8 +156,11 @@ export class MonsterStatblock extends LitElement {
     private _changedPower: Power | null = null;
     private _cachedFlags: FeatureFlags | null = null;
 
-    connectedCallback() {
+    async connectedCallback() {
         super.connectedCallback();
+
+        // Load feature flags early
+        this._cachedFlags = await getFeatureFlags();
 
         // If src-from-url is set, load state from URL parameters
         if (this.srcFromUrl) {
@@ -171,6 +174,9 @@ export class MonsterStatblock extends LitElement {
                 this._cachedStatblock = slottedStatblock.cloneNode(true) as Element;
             }
         }
+
+        // Trigger re-render after flags are loaded
+        this.requestUpdate();
     }
 
     updated(changedProperties: Map<string | number | symbol, unknown>) {
@@ -305,8 +311,6 @@ export class MonsterStatblock extends LitElement {
     private _statblockTask = new Task(this, {
         task: async ([monsterKey, hpMultiplier, damageMultiplier, powers, changeType, random], { signal }) => {
 
-            const flags = await getFeatureFlags();
-
             if (this.shadowRoot) {
                 await adoptExternalCss(this.shadowRoot);
             }
@@ -321,7 +325,7 @@ export class MonsterStatblock extends LitElement {
                     throw new Error('Failed to generate random statblock');
                 }
 
-                return { statblockElement, flags }
+                return statblockElement;
             }
 
             // Use provided monster key, slotted key, or fall back to window.defaultMonsterKey
@@ -364,7 +368,7 @@ export class MonsterStatblock extends LitElement {
                 throw new Error('Failed to generate statblock');
             }
 
-            return { statblockElement, flags };
+            return statblockElement;
         },
         args: () => [this.monsterKey, this.hpMultiplier, this.damageMultiplier, this.powers, this.changeType, this.random]
     });
@@ -450,7 +454,7 @@ export class MonsterStatblock extends LitElement {
                     <div ${ref(this.statblockRef)} id="statblock-container">
                         <slot></slot>
                     </div>
-                    ${!this.hideButtons ? this._renderButtonPanel() : ''}
+                    ${!this.hideButtons ? this._renderButtonPanel(this._cachedFlags?.showStatblockDownloadOptions) : ''}
                 </div>
             `;
         }
@@ -475,11 +479,10 @@ export class MonsterStatblock extends LitElement {
                     </div>
                 `;
             },
-            complete: ({ statblockElement, flags }) => {
+            complete: (statblockElement) => {
 
                 // Cache the new statblock
                 this._cachedStatblock = statblockElement;
-                this._cachedFlags = flags;
 
                 // Apply print-preview class if needed
                 if (this.printPreview) {
@@ -488,18 +491,18 @@ export class MonsterStatblock extends LitElement {
                         block.classList.add('print-preview');
                     });
                 }
-                return this._renderStatblock(statblockElement, flags);
+                return this._renderStatblock(statblockElement, this._cachedFlags || undefined);
             }
         })
     }
 
-    private _renderStatblock(statblockElement: Element, flags: FeatureFlags, classes?: string) {
+    private _renderStatblock(statblockElement: Element, flags?: FeatureFlags, classes?: string) {
         return html`
         <div class="statblock-wrapper">
             <div ${ref(this.statblockRef)} id="statblock-container" class="${classes}">
                 ${statblockElement}
             </div>
-            ${this._renderButtonPanel(flags.showStatblockDownloadOptions)}
+            ${this._renderButtonPanel(flags?.showStatblockDownloadOptions)}
         </div>
         `;
     }
