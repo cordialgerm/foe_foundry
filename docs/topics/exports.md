@@ -35,23 +35,3 @@ Designed for [GMBinder](https://www.gmbinder.com/), another D&D homebrew creatio
 
 ### Black Flag Format
 Formatted for the Black Flag RPG system, with appropriate styling and stat block structure for that system.
-
-## Important Notes
-
-- **State Preservation**: All export formats preserve your current monster's state, including:
-  - Selected HP multiplier
-  - Selected damage multiplier  
-  - Chosen power selections
-  - Any customizations you've made
-
-- **File Naming**: Downloaded markdown files are automatically named using the monster key and format (e.g., `fire-giant-Simple-Markdown.md`)
-
-- **Browser Compatibility**: Export features work in all modern browsers. If you experience issues, try updating your browser or disabling pop-up blockers for print preview.
-
-## Getting Started
-
-1. Generate or customize a monster using Foe Foundry
-2. Click the download button (cloud icon) next to the Reroll and Forge buttons  
-3. Choose your preferred export format
-4. For print preview, a new window will open ready for printing
-5. For markdown formats, a file will automatically download to your device
