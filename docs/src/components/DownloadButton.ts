@@ -62,9 +62,6 @@ export class DownloadButton extends StatblockButton {
     private _handleClick(): void {
         if (this.disabled || !this.monsterKey) return;
 
-        // Track analytics event
-        trackDownloadClick(this.monsterKey);
-
         // Dispatch custom event to notify parent components
         this.dispatchEvent(new CustomEvent('download-click', {
             detail: {
@@ -92,6 +89,12 @@ export class DownloadButton extends StatblockButton {
             return;
         }
 
+        // Track the specific export action with format
+        if (this.monsterKey) {
+            const trackingFormat = exportType === 'print-preview' ? 'print' : format;
+            trackDownloadClick(this.monsterKey, trackingFormat);
+        }
+
         if (exportType === 'print-preview') {
             this._openPrintPreview(statblock);
         } else if (exportType === 'markdown') {
@@ -106,19 +109,25 @@ export class DownloadButton extends StatblockButton {
         // Create a new window with the statblock in print-preview mode
         const baseUrl = (window as any).baseUrl || '';
         
-        // Build URL with current state parameters
-        const params = new URLSearchParams();
-        const monsterKey = statblock.getEffectiveMonsterKey?.() || statblock.monsterKey || '';
-        params.set('monster-key', monsterKey);
-        
-        if (statblock.hpMultiplier && statblock.hpMultiplier !== 1) {
-            params.set('hp-multiplier', statblock.hpMultiplier.toString());
-        }
-        if (statblock.damageMultiplier && statblock.damageMultiplier !== 1) {
-            params.set('damage-multiplier', statblock.damageMultiplier.toString());
-        }
-        if (statblock.powers) {
-            params.set('powers', statblock.powers);
+        // Use the statblock's URL parameter generation method if available
+        let params: URLSearchParams;
+        if (typeof statblock.toUrlParams === 'function') {
+            params = statblock.toUrlParams();
+        } else {
+            // Fallback to manual parameter building
+            params = new URLSearchParams();
+            const monsterKey = statblock.getEffectiveMonsterKey?.() || statblock.monsterKey || '';
+            params.set('monster-key', monsterKey);
+            
+            if (statblock.hpMultiplier && statblock.hpMultiplier !== 1) {
+                params.set('hp-multiplier', statblock.hpMultiplier.toString());
+            }
+            if (statblock.damageMultiplier && statblock.damageMultiplier !== 1) {
+                params.set('damage-multiplier', statblock.damageMultiplier.toString());
+            }
+            if (statblock.powers) {
+                params.set('powers', statblock.powers);
+            }
         }
 
         const printUrl = `${baseUrl}/print-preview/?${params.toString()}`;
@@ -152,6 +161,7 @@ export class DownloadButton extends StatblockButton {
                 throw new Error(`Failed to generate markdown: ${response.statusText}`);
             }
 
+            // The API returns markdown content directly as text
             const markdown = await response.text();
             
             // Create and trigger download

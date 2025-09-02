@@ -105,10 +105,17 @@ export function trackStatblockEdit(monsterKey: string, changeType: StatblockChan
 /**
  * Track download button click
  */
-export function trackDownloadClick(monsterKey: string): void {
-  trackEvent('download_button_click', {
+export function trackDownloadClick(monsterKey: string, format?: string): void {
+  const params: AnalyticsParams = {
     monster_key: monsterKey,
-  });
+  };
+  
+  // Add format type if provided
+  if (format) {
+    (params as any).export_format = format;
+  }
+  
+  trackEvent('download_button_click', params);
 }
 
 /**

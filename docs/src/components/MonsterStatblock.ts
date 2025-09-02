@@ -145,6 +145,9 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean, attribute: 'print-preview' })
     printPreview: boolean = false;
 
+    @property({ type: Boolean, attribute: 'src-from-url' })
+    srcFromUrl: boolean = false;
+
     @property({ type: Object })
     monsterStore?: MonsterStore;
     private statblockRef: Ref<HTMLDivElement> = createRef();
@@ -153,6 +156,11 @@ export class MonsterStatblock extends LitElement {
 
     connectedCallback() {
         super.connectedCallback();
+
+        // If src-from-url is set, load state from URL parameters
+        if (this.srcFromUrl) {
+            this.fromUrlParams();
+        }
 
         // If we have slotted content, cache it for potential future use
         if (this.useSlot) {
@@ -165,6 +173,11 @@ export class MonsterStatblock extends LitElement {
 
     updated(changedProperties: Map<string | number | symbol, unknown>) {
         super.updated(changedProperties);
+        
+        // If src-from-url property changed to true, load from URL
+        if (changedProperties.has('srcFromUrl') && this.srcFromUrl) {
+            this.fromUrlParams();
+        }
         
         // Apply print-preview class after content updates
         this.applyPrintPreviewClass();
@@ -185,6 +198,67 @@ export class MonsterStatblock extends LitElement {
 
     getEffectiveMonsterKey() {
         return this.monsterKey || this.getSlottedMonsterKey() || this.statblockRef.value?.querySelector('.stat-block')?.getAttribute('data-monster') || null;
+    }
+
+    /**
+     * Convert current component state to URL parameters
+     * @returns URLSearchParams object with current state
+     */
+    toUrlParams(): URLSearchParams {
+        const params = new URLSearchParams();
+        
+        const effectiveMonsterKey = this.getEffectiveMonsterKey();
+        if (effectiveMonsterKey) {
+            params.set('monster-key', effectiveMonsterKey);
+        }
+        
+        if (this.hpMultiplier !== 1) {
+            params.set('hp-multiplier', this.hpMultiplier.toString());
+        }
+        
+        if (this.damageMultiplier !== 1) {
+            params.set('damage-multiplier', this.damageMultiplier.toString());
+        }
+        
+        if (this.powers && this.powers.trim()) {
+            params.set('powers', this.powers);
+        }
+        
+        return params;
+    }
+
+    /**
+     * Set component state from URL parameters
+     * @param urlParams Optional URLSearchParams object. If not provided, uses current window location
+     */
+    fromUrlParams(urlParams?: URLSearchParams): void {
+        const params = urlParams || new URLSearchParams(window.location.search);
+        
+        const monsterKey = params.get('monster-key');
+        if (monsterKey) {
+            this.monsterKey = monsterKey;
+        }
+        
+        const hpMultiplier = params.get('hp-multiplier');
+        if (hpMultiplier) {
+            const parsed = parseFloat(hpMultiplier);
+            if (!isNaN(parsed) && parsed > 0) {
+                this.hpMultiplier = parsed;
+            }
+        }
+        
+        const damageMultiplier = params.get('damage-multiplier');
+        if (damageMultiplier) {
+            const parsed = parseFloat(damageMultiplier);
+            if (!isNaN(parsed) && parsed > 0) {
+                this.damageMultiplier = parsed;
+            }
+        }
+        
+        const powers = params.get('powers');
+        if (powers) {
+            this.powers = powers;
+        }
     }
 
     /**

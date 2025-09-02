@@ -430,4 +430,190 @@ describe('MonsterStatblock Component', () => {
       await rerollPromise;
     });
   });
+
+  describe('URL Parameter Methods', () => {
+    beforeEach(async () => {
+      element = await fixture(html`
+        <monster-statblock 
+          monster-key="test-monster"
+          .monsterStore="${mockMonsterStore}"
+        ></monster-statblock>
+      `);
+    });
+
+    describe('toUrlParams', () => {
+      it('should generate URL parameters for all component state', () => {
+        element.monsterKey = 'fire-giant';
+        element.hpMultiplier = 1.5;
+        element.damageMultiplier = 2.0;
+        element.powers = 'fire-blast,stomp';
+
+        const params = element.toUrlParams();
+
+        expect(params.get('monster-key')).to.equal('fire-giant');
+        expect(params.get('hp-multiplier')).to.equal('1.5');
+        expect(params.get('damage-multiplier')).to.equal('2');
+        expect(params.get('powers')).to.equal('fire-blast,stomp');
+      });
+
+      it('should omit default values from URL parameters', () => {
+        element.monsterKey = 'test-monster';
+        element.hpMultiplier = 1; // default value
+        element.damageMultiplier = 1; // default value
+        element.powers = ''; // empty
+
+        const params = element.toUrlParams();
+
+        expect(params.get('monster-key')).to.equal('test-monster');
+        expect(params.has('hp-multiplier')).to.be.false;
+        expect(params.has('damage-multiplier')).to.be.false;
+        expect(params.has('powers')).to.be.false;
+      });
+
+      it('should handle missing monster key gracefully', () => {
+        element.monsterKey = '';
+
+        const params = element.toUrlParams();
+
+        expect(params.has('monster-key')).to.be.false;
+      });
+
+      it('should use effective monster key from slotted content', async () => {
+        const slottedContent = document.createElement('div');
+        slottedContent.className = 'stat-block';
+        slottedContent.setAttribute('data-monster', 'slotted-monster');
+
+        element = await fixture(html`
+          <monster-statblock 
+            use-slot
+            .monsterStore="${mockMonsterStore}"
+          >${slottedContent}</monster-statblock>
+        `);
+
+        const params = element.toUrlParams();
+
+        expect(params.get('monster-key')).to.equal('slotted-monster');
+      });
+    });
+
+    describe('fromUrlParams', () => {
+      it('should set component state from URL parameters', () => {
+        const params = new URLSearchParams();
+        params.set('monster-key', 'frost-giant');
+        params.set('hp-multiplier', '0.8');
+        params.set('damage-multiplier', '1.2');
+        params.set('powers', 'ice-shard,blizzard');
+
+        element.fromUrlParams(params);
+
+        expect(element.monsterKey).to.equal('frost-giant');
+        expect(element.hpMultiplier).to.equal(0.8);
+        expect(element.damageMultiplier).to.equal(1.2);
+        expect(element.powers).to.equal('ice-shard,blizzard');
+      });
+
+      it('should ignore invalid numeric values', () => {
+        const params = new URLSearchParams();
+        params.set('hp-multiplier', 'invalid');
+        params.set('damage-multiplier', '-1');
+
+        const originalHp = element.hpMultiplier;
+        const originalDamage = element.damageMultiplier;
+
+        element.fromUrlParams(params);
+
+        expect(element.hpMultiplier).to.equal(originalHp);
+        expect(element.damageMultiplier).to.equal(originalDamage);
+      });
+
+      it('should handle empty or missing parameters gracefully', () => {
+        const params = new URLSearchParams();
+        const originalMonsterKey = element.monsterKey;
+
+        element.fromUrlParams(params);
+
+        expect(element.monsterKey).to.equal(originalMonsterKey);
+      });
+
+      it('should use window location search if no params provided', () => {
+        // Mock window.location.search
+        const originalSearch = window.location.search;
+        Object.defineProperty(window, 'location', {
+          value: {
+            ...window.location,
+            search: '?monster-key=location-monster&hp-multiplier=1.3'
+          },
+          writable: true
+        });
+
+        element.fromUrlParams();
+
+        expect(element.monsterKey).to.equal('location-monster');
+        expect(element.hpMultiplier).to.equal(1.3);
+
+        // Restore original location
+        Object.defineProperty(window, 'location', {
+          value: { ...window.location, search: originalSearch },
+          writable: true
+        });
+      });
+    });
+
+    describe('src-from-url property', () => {
+      it('should call fromUrlParams when src-from-url is set to true', async () => {
+        const fromUrlParamsSpy = vi.spyOn(element, 'fromUrlParams');
+
+        // Trigger the updated method by setting the property
+        element.srcFromUrl = true;
+        await element.updateComplete;
+
+        expect(fromUrlParamsSpy).toHaveBeenCalledOnce();
+      });
+
+      it('should load state from URL on connectedCallback when src-from-url is true', async () => {
+        // Mock window.location.search
+        Object.defineProperty(window, 'location', {
+          value: {
+            ...window.location,
+            search: '?monster-key=connected-monster&hp-multiplier=1.7'
+          },
+          writable: true
+        });
+
+        element = await fixture(html`
+          <monster-statblock 
+            src-from-url="true"
+            .monsterStore="${mockMonsterStore}"
+          ></monster-statblock>
+        `);
+
+        expect(element.monsterKey).to.equal('connected-monster');
+        expect(element.hpMultiplier).to.equal(1.7);
+      });
+    });
+
+    describe('State completeness', () => {
+      it('should roundtrip all component state through URL parameters', () => {
+        // Set all state properties
+        element.monsterKey = 'complete-monster';
+        element.hpMultiplier = 2.5;
+        element.damageMultiplier = 0.75;
+        element.powers = 'power1,power2,power3';
+
+        // Convert to URL params and back
+        const params = element.toUrlParams();
+        
+        // Create a new element to test state restoration
+        const newElement = document.createElement('monster-statblock') as MonsterStatblock;
+        newElement.fromUrlParams(params);
+
+        // Verify all state is preserved
+        expect(newElement.monsterKey).to.equal(element.monsterKey);
+        expect(newElement.hpMultiplier).to.equal(element.hpMultiplier);
+        expect(newElement.damageMultiplier).to.equal(element.damageMultiplier);
+        expect(newElement.powers).to.equal(element.powers);
+      });
+    });
+  });
+
 });
