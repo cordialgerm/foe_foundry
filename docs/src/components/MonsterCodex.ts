@@ -20,6 +20,7 @@ export class MonsterCodex extends LitElement {
   @state() private facets: SearchFacets | null = null;
   @state() private selectedMonster: Monster | null = null;
   @state() private loading = false;
+  @state() private filtersPanelVisible = window.innerWidth >= 900; // Hidden by default on medium screens
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
@@ -60,23 +61,35 @@ export class MonsterCodex extends LitElement {
 
     .codex-container {
       display: grid;
-      grid-template-columns: 300px 1fr 400px;
+      grid-template-columns: auto 1fr 400px;
       height: 100vh;
       gap: 1rem;
       padding: 1rem;
     }
 
+    .codex-container.filters-hidden {
+      grid-template-columns: 1fr 400px;
+    }
+
     .filters-panel {
       background: var(--bg-color);
-      border: 1px solid var(--tertiary-color);
       border-radius: var(--medium-margin);
       padding: 1rem;
       overflow-y: auto;
+      width: 300px;
+      transform: translateX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .filters-panel.hidden {
+      transform: translateX(-100%);
+      width: 0;
+      padding: 0;
+      overflow: hidden;
     }
 
     .monster-list-panel {
       background: var(--bg-color);
-      border: 1px solid var(--tertiary-color);
       border-radius: var(--medium-margin);
       display: flex;
       flex-direction: column;
@@ -85,7 +98,6 @@ export class MonsterCodex extends LitElement {
 
     .preview-panel {
       background: var(--bg-color);
-      border: 1px solid var(--tertiary-color);
       border-radius: var(--medium-margin);
       padding: 1rem;
       overflow-y: auto;
@@ -94,13 +106,19 @@ export class MonsterCodex extends LitElement {
     /* Search bar styles */
     .search-bar {
       padding: 1rem;
-      border-bottom: 1px solid var(--tertiary-color);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .search-input-container {
+      flex: 1;
     }
 
     .search-input {
       width: 100%;
       padding: 0.75rem;
-      border: 1px solid var(--tertiary-color);
+      border: 1px solid var(--primary-color);
       border-radius: 4px;
       background: var(--muted-color);
       color: var(--fg-color);
@@ -144,7 +162,7 @@ export class MonsterCodex extends LitElement {
 
     .filter-pill {
       padding: 0.25rem 0.75rem;
-      border: 1px solid var(--tertiary-color);
+      border: 1px solid var(--primary-color);
       border-radius: 20px;
       background: transparent;
       color: var(--fg-color);
@@ -155,13 +173,13 @@ export class MonsterCodex extends LitElement {
     }
 
     .filter-pill:hover {
-      background: var(--tertiary-color);
-      color: var(--bg-color);
+      background: var(--primary-color);
+      color: var(--fg-color);
     }
 
     .filter-pill.active {
-      background: var(--tertiary-color);
-      color: var(--bg-color);
+      background: var(--primary-color);
+      color: var(--fg-color);
       font-weight: bold;
     }
 
@@ -173,7 +191,7 @@ export class MonsterCodex extends LitElement {
 
     .group-btn {
       padding: 0.5rem 1rem;
-      border: 1px solid var(--tertiary-color);
+      border: 1px solid var(--primary-color);
       border-radius: 4px;
       background: transparent;
       color: var(--fg-color);
@@ -184,13 +202,13 @@ export class MonsterCodex extends LitElement {
     }
 
     .group-btn:hover {
-      background: var(--tertiary-color);
-      color: var(--bg-color);
+      background: var(--primary-color);
+      color: var(--fg-color);
     }
 
     .group-btn.active {
-      background: var(--tertiary-color);
-      color: var(--bg-color);
+      background: var(--primary-color);
+      color: var(--fg-color);
       font-weight: bold;
     }
 
@@ -214,7 +232,7 @@ export class MonsterCodex extends LitElement {
       color: var(--primary-color);
       margin: 1rem 0 0.5rem 0;
       padding-bottom: 0.25rem;
-      border-bottom: 1px solid var(--tertiary-color);
+      border-bottom: 1px solid var(--primary-color);
       position: sticky;
       top: 0;
       background: var(--bg-color);
@@ -240,7 +258,7 @@ export class MonsterCodex extends LitElement {
     .monster-row:hover {
       background-color: rgba(0,0,0,0.5);
       transform: translateX(4px);
-      border-color: var(--tertiary-color);
+      border-color: var(--primary-color);
     }
 
     .monster-row.selected {
@@ -316,10 +334,47 @@ export class MonsterCodex extends LitElement {
       background: var(--primary-muted-color);
     }
 
+    /* Filter toggle button styles */
+    .filter-toggle-btn {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      border: none;
+      padding: 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--primary-font);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .filter-toggle-btn:hover {
+      background: var(--primary-muted-color);
+    }
+
+    .filter-count {
+      background: var(--fg-color);
+      color: var(--primary-color);
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
     /* Mobile responsive */
     @media (max-width: 1200px) {
       .codex-container {
-        grid-template-columns: 250px 1fr 350px;
+        grid-template-columns: auto 1fr 350px;
+      }
+      .codex-container.filters-hidden {
+        grid-template-columns: 1fr 350px;
       }
     }
 
@@ -329,11 +384,22 @@ export class MonsterCodex extends LitElement {
         grid-template-rows: auto 1fr;
         gap: 0;
       }
+      .codex-container.filters-hidden {
+        grid-template-columns: 1fr;
+      }
 
       .filters-panel {
-        border-radius: 0;
-        border: none;
-        border-bottom: 1px solid var(--tertiary-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 10;
+        background: var(--bg-color);
+        box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+      }
+
+      .filters-panel.hidden {
+        transform: translateX(-100%);
       }
 
       .monster-list-panel {
@@ -367,10 +433,12 @@ export class MonsterCodex extends LitElement {
   private renderComplete(result: MonsterSearchResult) {
     const monsters = Array.from(result.monsters) as MonsterInfo[];
     const facets = result.facets;
+    const activeFilterCount = this.getActiveFilterCount();
+    
     return html`
-      <div class="codex-container">
+      <div class="codex-container ${this.filtersPanelVisible ? '' : 'filters-hidden'}">
         <!-- Filters Panel -->
-        <div class="filters-panel">
+        <div class="filters-panel ${this.filtersPanelVisible ? '' : 'hidden'}">
           <div class="filters-container">
             <h3>Filters</h3>
             <div class="filter-section">
@@ -425,13 +493,22 @@ export class MonsterCodex extends LitElement {
         <!-- Monster List Panel -->
         <div class="monster-list-panel">
           <div class="search-bar">
-            <input
-              type="text"
-              class="search-input"
-              placeholder="Search monster name..."
-              .value=${this.query}
-              @input=${this.handleSearchInput}
-            />
+            <button
+              class="filter-toggle-btn"
+              @click=${this.toggleFiltersPanel}
+              title="Toggle Filters">
+              🔍
+              ${activeFilterCount > 0 ? html`<span class="filter-count">${activeFilterCount}</span>` : ''}
+            </button>
+            <div class="search-input-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search monster name..."
+                .value=${this.query}
+                @input=${this.handleSearchInput}
+              />
+            </div>
           </div>
           <div class="monster-list">
             ${this.renderMonsterList(monsters)}
@@ -570,6 +647,19 @@ export class MonsterCodex extends LitElement {
 
   private hasActiveFilters() {
     return this.query !== '' || this.selectedCreatureTypes.length > 0 || this.minCr !== undefined || this.maxCr !== undefined;
+  }
+
+  private getActiveFilterCount() {
+    let count = 0;
+    if (this.query !== '') count++;
+    count += this.selectedCreatureTypes.length;
+    if (this.minCr !== undefined) count++;
+    if (this.maxCr !== undefined) count++;
+    return count;
+  }
+
+  private toggleFiltersPanel() {
+    this.filtersPanelVisible = !this.filtersPanelVisible;
   }
 
   private clearAllFilters() {
