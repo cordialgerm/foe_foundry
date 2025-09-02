@@ -168,24 +168,26 @@ export class ExportDialog extends LitElement {
     connectedCallback(): void {
         super.connectedCallback();
         document.addEventListener('keydown', this._handleKeyDown.bind(this));
+        // Add click listener to the host element for backdrop clicks
+        this.addEventListener('click', this._handleBackdropClick.bind(this));
     }
 
     disconnectedCallback(): void {
         super.disconnectedCallback();
         document.removeEventListener('keydown', this._handleKeyDown.bind(this));
+        this.removeEventListener('click', this._handleBackdropClick.bind(this));
     }
 
     render() {
         return html`
-            <div class="backdrop" @click=${this._handleBackdropClick}>
-                <div class="dialog" @click=${(e: Event) => e.stopPropagation()}>
-                    <div class="dialog-header">
+            <div class="dialog" @click=${(e: Event) => e.stopPropagation()}>
+                <div class="dialog-header">
                         <h3 class="dialog-title">
                             <svg-icon src="cloud-download"></svg-icon>
                             Export Monster
                         </h3>
                         <button class="close-button" @click=${this._close} aria-label="Close dialog">
-                            <svg-icon src="x"></svg-icon>
+                            <svg-icon src="cancel"></svg-icon>
                         </button>
                     </div>
 
@@ -232,7 +234,7 @@ export class ExportDialog extends LitElement {
                     </div>
 
                     <div class="dialog-footer">
-                        <svg-icon class="help-icon" src="help-circle"></svg-icon>
+                        <svg-icon class="help-icon" src="help"></svg-icon>
                         <a href="/topics/exports/" class="help-link" target="_blank">
                             Learn more about export formats
                         </a>
