@@ -64,12 +64,13 @@ export class MonsterCodex extends LitElement {
       display: grid;
       grid-template-columns: 300px 1fr 400px;
       height: 100vh;
-      gap: 0;
+      gap: 1rem;
       padding: 1rem;
     }
 
     .codex-container.filters-hidden {
       grid-template-columns: 0 1fr 400px;
+      gap: 0 1rem;
     }
 
     .filters-panel {
@@ -121,7 +122,6 @@ export class MonsterCodex extends LitElement {
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      margin-left: 1rem;
     }
 
     .preview-panel {
@@ -467,7 +467,6 @@ export class MonsterCodex extends LitElement {
       .monster-list-panel {
         border-radius: 0;
         border: none;
-        margin-left: 0;
       }
 
       .preview-panel {
