@@ -21,6 +21,7 @@ export interface AnalyticsParams {
   monster_key?: string;
   monster_change_type?: StatblockChangeType;
   power_key?: string;
+  export_format?: string;
 }
 
 /**
@@ -112,7 +113,7 @@ export function trackDownloadClick(monsterKey: string, format?: string): void {
   
   // Add format type if provided
   if (format) {
-    (params as any).export_format = format;
+    params.export_format = format;
   }
   
   trackEvent('download_button_click', params);

@@ -614,6 +614,104 @@ describe('MonsterStatblock Component', () => {
         expect(newElement.powers).to.equal(element.powers);
       });
     });
+
+    describe('getStatblockPayload', () => {
+      it('should generate payload object for API calls with all state', () => {
+        element.monsterKey = 'api-monster';
+        element.hpMultiplier = 1.8;
+        element.damageMultiplier = 1.2;
+        element.powers = 'fire-breath,tail-swipe';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload).to.deep.equal({
+          monster_key: 'api-monster',
+          powers: ['fire-breath', 'tail-swipe'],
+          hp_multiplier: 1.8,
+          damage_multiplier: 1.2
+        });
+      });
+
+      it('should handle default multiplier values', () => {
+        element.monsterKey = 'default-monster';
+        element.hpMultiplier = 1; // default
+        element.damageMultiplier = 1; // default
+        element.powers = 'single-power';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload).to.deep.equal({
+          monster_key: 'default-monster',
+          powers: ['single-power'],
+          hp_multiplier: 1,
+          damage_multiplier: 1
+        });
+      });
+
+      it('should handle empty powers gracefully', () => {
+        element.monsterKey = 'no-powers-monster';
+        element.powers = '';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload).to.deep.equal({
+          monster_key: 'no-powers-monster',
+          powers: [],
+          hp_multiplier: 1,
+          damage_multiplier: 1
+        });
+      });
+
+      it('should trim and filter powers correctly', () => {
+        element.monsterKey = 'filtered-monster';
+        element.powers = 'power1, power2 ,  , power3,';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload.powers).to.deep.equal(['power1', 'power2', 'power3']);
+      });
+
+      it('should use effective monster key from slotted content', async () => {
+        const slottedContent = document.createElement('div');
+        slottedContent.className = 'stat-block';
+        slottedContent.setAttribute('data-monster', 'payload-slotted-monster');
+
+        element = await fixture(html`
+          <monster-statblock 
+            use-slot
+            .monsterStore="${mockMonsterStore}"
+          >${slottedContent}</monster-statblock>
+        `);
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload.monster_key).to.equal('payload-slotted-monster');
+      });
+
+      it('should handle missing monster key gracefully', () => {
+        element.monsterKey = '';
+
+        const payload = element.getStatblockPayload();
+
+        expect(payload.monster_key).to.equal('');
+      });
+
+      it('should roundtrip all component state through payload generation', () => {
+        // Set all state properties
+        element.monsterKey = 'roundtrip-monster';
+        element.hpMultiplier = 3.0;
+        element.damageMultiplier = 0.5;
+        element.powers = 'magic-missile,fireball,lightning-bolt';
+
+        const payload = element.getStatblockPayload();
+
+        // Verify all state is captured in the payload
+        expect(payload.monster_key).to.equal(element.monsterKey);
+        expect(payload.hp_multiplier).to.equal(element.hpMultiplier);
+        expect(payload.damage_multiplier).to.equal(element.damageMultiplier);
+        expect(payload.powers).to.deep.equal(['magic-missile', 'fireball', 'lightning-bolt']);
+      });
+    });
   });
 
 });

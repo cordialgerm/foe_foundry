@@ -109,26 +109,8 @@ export class DownloadButton extends StatblockButton {
         // Create a new window with the statblock in print-preview mode
         const baseUrl = (window as any).baseUrl || '';
         
-        // Use the statblock's URL parameter generation method if available
-        let params: URLSearchParams;
-        if (typeof statblock.toUrlParams === 'function') {
-            params = statblock.toUrlParams();
-        } else {
-            // Fallback to manual parameter building
-            params = new URLSearchParams();
-            const monsterKey = statblock.getEffectiveMonsterKey?.() || statblock.monsterKey || '';
-            params.set('monster-key', monsterKey);
-            
-            if (statblock.hpMultiplier && statblock.hpMultiplier !== 1) {
-                params.set('hp-multiplier', statblock.hpMultiplier.toString());
-            }
-            if (statblock.damageMultiplier && statblock.damageMultiplier !== 1) {
-                params.set('damage-multiplier', statblock.damageMultiplier.toString());
-            }
-            if (statblock.powers) {
-                params.set('powers', statblock.powers);
-            }
-        }
+        // Use the statblock's URL parameter generation method
+        const params = statblock.toUrlParams();
 
         const printUrl = `${baseUrl}/print-preview/?${params.toString()}`;
         window.open(printUrl, '_blank', 'width=800,height=1000,scrollbars=yes,resizable=yes');
@@ -138,16 +120,8 @@ export class DownloadButton extends StatblockButton {
         try {
             const baseUrl = (window as any).baseUrl || '';
             
-            // Prepare the POST payload with current statblock state
-            const monsterKey = statblock.getEffectiveMonsterKey?.() || statblock.monsterKey || '';
-            const powers = statblock.powers ? statblock.powers.split(',').map((p: string) => p.trim()).filter((p: string) => p) : [];
-            
-            const payload = {
-                monster_key: monsterKey,
-                powers: powers,
-                hp_multiplier: statblock.hpMultiplier || 1,
-                damage_multiplier: statblock.damageMultiplier || 1
-            };
+            // Use the statblock's payload generation method
+            const payload = statblock.getStatblockPayload();
 
             const response = await fetch(`${baseUrl}/api/v1/statblocks/generate?output=${format}`, {
                 method: 'POST',

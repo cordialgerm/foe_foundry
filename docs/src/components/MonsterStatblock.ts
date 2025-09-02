@@ -228,6 +228,22 @@ export class MonsterStatblock extends LitElement {
     }
 
     /**
+     * Get the payload object for API statblock generation requests
+     * @returns Object with current component state formatted for API
+     */
+    getStatblockPayload(): { monster_key: string; powers: string[]; hp_multiplier: number; damage_multiplier: number } {
+        const effectiveMonsterKey = this.getEffectiveMonsterKey() || '';
+        const powers = this.powers ? this.powers.split(',').map((p: string) => p.trim()).filter((p: string) => p) : [];
+        
+        return {
+            monster_key: effectiveMonsterKey,
+            powers: powers,
+            hp_multiplier: this.hpMultiplier || 1,
+            damage_multiplier: this.damageMultiplier || 1
+        };
+    }
+
+    /**
      * Set component state from URL parameters
      * @param urlParams Optional URLSearchParams object. If not provided, uses current window location
      */
