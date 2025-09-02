@@ -20,14 +20,14 @@ export class ExportDialog extends LitElement {
         }
 
         .dialog {
-            background: var(--bs-body-bg, white);
-            color: var(--bs-body-color, black);
+            background: var(--bg-color);
+            color: var(--fg-color);
             border-radius: 8px;
             padding: 2rem;
             min-width: 400px;
             max-width: 500px;
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
-            border: 1px solid var(--bs-border-color, #dee2e6);
+            border: 1px solid var(--tertiary-color);
         }
 
         .dialog-header {
@@ -35,7 +35,7 @@ export class ExportDialog extends LitElement {
             align-items: center;
             justify-content: space-between;
             margin-bottom: 1.5rem;
-            border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+            border-bottom: 1px solid var(--tertiary-color);
             padding-bottom: 1rem;
         }
 
@@ -58,12 +58,7 @@ export class ExportDialog extends LitElement {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--bs-secondary, #6c757d);
-        }
-
-        .close-button:hover {
-            background: var(--bs-secondary-bg, #f8f9fa);
-            color: var(--bs-body-color, black);
+            color: var(--fg-color);
         }
 
         .export-options {
@@ -73,8 +68,8 @@ export class ExportDialog extends LitElement {
         }
 
         .export-option {
-            background: var(--bs-light, #f8f9fa);
-            border: 1px solid var(--bs-border-color, #dee2e6);
+            background: var(--muted-color);
+            border: 1px solid var(--tertiary-color);
             border-radius: 6px;
             padding: 1rem;
             cursor: pointer;
@@ -85,9 +80,6 @@ export class ExportDialog extends LitElement {
         }
 
         .export-option:hover {
-            background: var(--bs-primary, #0d6efd);
-            color: white;
-            border-color: var(--bs-primary, #0d6efd);
             transform: translateY(-1px);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
@@ -100,11 +92,7 @@ export class ExportDialog extends LitElement {
             font-size: 1.5rem;
             width: 1.5rem;
             height: 1.5rem;
-            color: var(--bs-primary, #0d6efd);
-        }
-
-        .export-option:hover .option-icon {
-            color: white;
+            color: var(--fg-color);
         }
 
         .option-content {
@@ -118,27 +106,22 @@ export class ExportDialog extends LitElement {
 
         .option-description {
             font-size: 0.875rem;
-            color: var(--bs-secondary, #6c757d);
             margin: 0;
-        }
-
-        .export-option:hover .option-description {
-            color: rgba(255, 255, 255, 0.8);
         }
 
         .dialog-footer {
             margin-top: 1.5rem;
             padding-top: 1rem;
-            border-top: 1px solid var(--bs-border-color, #dee2e6);
+            border-top: 1px solid var(--tertiary-color);
             display: flex;
             align-items: center;
             gap: 0.5rem;
             font-size: 0.875rem;
-            color: var(--bs-secondary, #6c757d);
+            color: var(--fg-color);
         }
 
         .help-link {
-            color: var(--bs-primary, #0d6efd);
+            color: var(--primary-color);
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -208,7 +191,7 @@ export class ExportDialog extends LitElement {
 
                     <div class="export-options">
                         <div class="export-option" @click=${() => this._handleExport('print-preview')}>
-                            <svg-icon class="option-icon" src="printer"></svg-icon>
+                            <svg-icon class="option-icon" src="papers"></svg-icon>
                             <div class="option-content">
                                 <div class="option-title">Print Preview</div>
                                 <div class="option-description">Open in new window optimized for printing</div>
@@ -216,7 +199,7 @@ export class ExportDialog extends LitElement {
                         </div>
 
                         <div class="export-option" @click=${() => this._handleExport('markdown', 'md_5esrd')}>
-                            <svg-icon class="option-icon" src="file-text"></svg-icon>
+                            <svg-icon class="option-icon" src="rule-book"></svg-icon>
                             <div class="option-content">
                                 <div class="option-title">Export to Markdown (Simple)</div>
                                 <div class="option-description">Standard markdown format for general use</div>
@@ -224,7 +207,7 @@ export class ExportDialog extends LitElement {
                         </div>
 
                         <div class="export-option" @click=${() => this._handleExport('markdown', 'md_homebrewery')}>
-                            <svg-icon class="option-icon" src="file-text"></svg-icon>
+                            <svg-icon class="option-icon" src="stabbed-note"></svg-icon>
                             <div class="option-content">
                                 <div class="option-title">Export to Markdown (Homebrewery)</div>
                                 <div class="option-description">Format optimized for Homebrewery publishing</div>
@@ -232,7 +215,7 @@ export class ExportDialog extends LitElement {
                         </div>
 
                         <div class="export-option" @click=${() => this._handleExport('markdown', 'md_gmbinder')}>
-                            <svg-icon class="option-icon" src="file-text"></svg-icon>
+                            <svg-icon class="option-icon" src="notebook"></svg-icon>
                             <div class="option-content">
                                 <div class="option-title">Export to Markdown (GMBinder)</div>
                                 <div class="option-description">Format optimized for GMBinder publishing</div>
@@ -240,7 +223,7 @@ export class ExportDialog extends LitElement {
                         </div>
 
                         <div class="export-option" @click=${() => this._handleExport('markdown', 'md_blackflag')}>
-                            <svg-icon class="option-icon" src="file-text"></svg-icon>
+                            <svg-icon class="option-icon" src="evil-book"></svg-icon>
                             <div class="option-content">
                                 <div class="option-title">Export to Markdown (Black Flag)</div>
                                 <div class="option-description">Format optimized for Black Flag RPG</div>
