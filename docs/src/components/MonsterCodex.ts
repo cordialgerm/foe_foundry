@@ -64,24 +64,26 @@ export class MonsterCodex extends LitElement {
       display: grid;
       grid-template-columns: 300px 1fr 400px;
       height: 100vh;
-      gap: 1rem;
-      padding: 1rem;
+      gap: 1.5rem;
+      padding: 1.5rem;
     }
 
     .codex-container.filters-hidden {
       grid-template-columns: 0 1fr 400px;
-      gap: 0 1rem;
+      gap: 0 1.5rem;
     }
 
     .filters-panel {
-      background: var(--bg-color);
+      background: rgba(26, 26, 26, 0.8);
+      backdrop-filter: blur(10px);
       border-radius: var(--medium-margin);
-      padding: 1rem;
+      padding: 1.5rem;
       overflow-y: auto;
       width: 300px;
       transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
       border-right: 2px solid var(--primary-color);
       position: relative;
+      border: 1px solid rgba(255, 55, 55, 0.3);
     }
 
     .filters-panel.hidden {
@@ -89,26 +91,29 @@ export class MonsterCodex extends LitElement {
       padding: 0;
       overflow: hidden;
       border-right: none;
+      border: none;
     }
 
     .panel-divider {
       position: absolute;
       top: 50%;
-      right: -10px;
+      right: -12px;
       transform: translateY(-50%);
       background: var(--primary-color);
       color: var(--fg-color);
       border: none;
-      width: 20px;
-      height: 40px;
-      border-radius: 0 4px 4px 0;
+      width: 24px;
+      height: 48px;
+      border-radius: 0 6px 6px 0;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
-      z-index: 2;
+      font-size: 14px;
+      z-index: 3;
       transition: all 0.2s ease;
+      border: 1px solid rgba(255, 55, 55, 0.5);
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
     }
 
     .panel-divider:hover {
@@ -117,26 +122,33 @@ export class MonsterCodex extends LitElement {
     }
 
     .monster-list-panel {
-      background: var(--bg-color);
+      background: rgba(26, 26, 26, 0.8);
+      backdrop-filter: blur(10px);
       border-radius: var(--medium-margin);
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      border: 1px solid rgba(255, 55, 55, 0.3);
     }
 
     .preview-panel {
-      background: var(--bg-color);
+      background: rgba(26, 26, 26, 0.8);
+      backdrop-filter: blur(10px);
       border-radius: var(--medium-margin);
-      padding: 1rem;
+      padding: 1.5rem;
       overflow-y: auto;
+      border: 1px solid rgba(255, 55, 55, 0.3);
+      z-index: 1;
     }
 
     /* Search bar styles */
     .search-bar {
-      padding: 1rem;
+      padding: 1.5rem;
       display: flex;
-      gap: 0.5rem;
+      gap: 0.75rem;
       align-items: center;
+      z-index: 5;
+      position: relative;
     }
 
     .search-input-container {
@@ -251,7 +263,7 @@ export class MonsterCodex extends LitElement {
     .monster-list {
       flex: 1;
       overflow-y: auto;
-      padding: 1rem;
+      padding: 1.5rem;
     }
 
     .group-header {
@@ -271,18 +283,18 @@ export class MonsterCodex extends LitElement {
     .monster-row {
       display: flex;
       align-items: center;
-      padding: 0.5rem;
-      margin-bottom: 0.25rem;
-      border-radius: 4px;
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      border-radius: 6px;
       cursor: pointer;
       background-size: cover;
       background-position: center;
       background-blend-mode: overlay;
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(0,0,0,0.4);
       transition: all 0.2s ease;
       border: 1px solid transparent;
       position: relative;
-      min-height: 60px;
+      min-height: 70px;
     }
 
     .monster-row::before {
@@ -294,30 +306,34 @@ export class MonsterCodex extends LitElement {
       background-position: center;
       background-repeat: no-repeat;
       border-radius: inherit;
+      opacity: 0.6;
       z-index: 0;
     }
 
     .monster-row:hover {
-      background-color: rgba(0,0,0,0.5);
-      transform: translateX(4px);
+      background-color: rgba(0,0,0,0.2);
+      transform: translateX(6px);
       border-color: var(--primary-color);
+      box-shadow: 0 4px 12px rgba(255, 55, 55, 0.2);
     }
 
     .monster-row.selected {
       background-color: var(--primary-faded-color);
       border: 1px solid var(--primary-color);
+      box-shadow: 0 4px 12px rgba(255, 55, 55, 0.3);
     }
 
     .monster-info {
       color: white;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
       font-family: var(--primary-font);
       position: relative;
       z-index: 1;
-      background: rgba(0,0,0,0.3);
-      padding: 0.5rem;
-      border-radius: 4px;
-      backdrop-filter: blur(2px);
+      background: rgba(0,0,0,0.4);
+      padding: 0.75rem;
+      border-radius: 6px;
+      backdrop-filter: blur(4px);
+      flex: 1;
     }
 
     .monster-name {

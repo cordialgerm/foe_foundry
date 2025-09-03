@@ -41,7 +41,8 @@ export class MonsterCardPreview extends LitElement {
     }
 
     .preview-card.full {
-      height: 300px; /* For mobile cards and desktop preview */
+      height: 100%;
+      min-height: 400px;
     }
 
     .preview-card.compact monster-art {
@@ -49,7 +50,8 @@ export class MonsterCardPreview extends LitElement {
     }
 
     .preview-card.full monster-art {
-      height: 300px;
+      height: 100%;
+      min-height: 400px;
     }
 
     .monster-overlay {

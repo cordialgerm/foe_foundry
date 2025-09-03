@@ -29,10 +29,11 @@ export class MonsterArt extends LitElement {
   static styles = css`
     :host {
       display: block;
+      height: 100%;
     }
 
     .monster-art-container {
-      height: 200px;
+      height: 100%;
       position: relative;
       background-size: cover;
       background-position: center;
@@ -40,7 +41,6 @@ export class MonsterArt extends LitElement {
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      margin-bottom: 1rem;
       contain: layout style; /* Prevent layout shifts from image loading */
     }
 
