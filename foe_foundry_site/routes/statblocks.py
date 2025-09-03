@@ -189,7 +189,7 @@ def _format_statblock(
     ] = None,
 ) -> Response:
     if output is None:
-        output = StatblockFormat.html
+        output = StatblockFormat.json
 
     statblock_html = monster_model.statblock_html
     lore_html = monster_model.template_html

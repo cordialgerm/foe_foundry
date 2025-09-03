@@ -346,13 +346,19 @@ a.branding::after,
     cursor: pointer;
 }
 
-body {
+body:not(.print-preview) {
     background: var(--muted-color);
     color: var(--fg-color);
     font-family: var(--primary-font);
 }
 
-body:not(.homepage)::before {
+body.print-preview {
+    background: white;
+    color: black;
+    font-family: var(--primary-font);
+}
+
+body:not(.homepage, .print-preview)::before {
     content: "";
     position: fixed;
     inset: 0;
