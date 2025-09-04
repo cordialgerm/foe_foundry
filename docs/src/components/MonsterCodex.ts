@@ -26,6 +26,7 @@ export class MonsterCodex extends LitElement {
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
   private searchDebounceTimer: number | undefined;
+  private backgroundOffsets = new Map<string, string>(); // Store consistent background positions
 
   private searchTask = new Task(this, async ([query, selectedCreatureTypes, minCr, maxCr]: [string, string[], number | undefined, number | undefined]) => {
     const hasFilters = !!(query || (selectedCreatureTypes && selectedCreatureTypes.length > 0) || minCr !== undefined || maxCr !== undefined);
@@ -56,31 +57,33 @@ export class MonsterCodex extends LitElement {
   static styles = css`
     :host {
       display: block;
-      height: 100%;
+      height: 100vh;
       overflow: hidden;
     }
 
     .codex-container {
       display: grid;
-      grid-template-columns: 300px 1fr 400px;
-      height: 100%;
-      gap: 1rem;
-      padding: 1rem;
+      grid-template-columns: 340px 1fr 400px;
+      height: 100vh;
+      gap: 0;
     }
 
     .codex-container.filters-hidden {
       grid-template-columns: 0 1fr 400px;
-      gap: 0 1rem;
     }
 
     .filters-panel {
-      border-radius: var(--medium-margin);
-      padding: 1.5rem;
-      overflow-y: auto;
+      border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: hidden;
       width: 300px;
       transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
       border-right: 2px solid var(--primary-color);
+      border-top: 2px solid var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
       position: relative;
+      background: var(--bg-color);
     }
 
     .filters-panel.hidden {
@@ -88,6 +91,12 @@ export class MonsterCodex extends LitElement {
       padding: 0;
       overflow: hidden;
       border-right: none;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    .filters-container {
+      padding: 1rem;
     }
 
     .panel-divider {
@@ -118,30 +127,37 @@ export class MonsterCodex extends LitElement {
     }
 
     .monster-list-panel {
-      border-radius: var(--medium-margin);
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      background: var(--bg-color);
     }
 
     .preview-panel {
       background: rgba(26, 26, 26, 0.8);
       backdrop-filter: blur(10px);
-      border-radius: var(--medium-margin);
+      border-radius: var(--medium-margin) 0 0 var(--medium-margin);
       padding: 1.5rem;
       overflow-y: auto;
-      border: 1px solid rgba(255, 55, 55, 0.3);
+      border-left: 2px solid var(--primary-color);
+      border-top: 2px solid var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
       z-index: 1;
     }
 
     /* Search bar styles */
     .search-bar {
       padding: 1rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
       display: flex;
       gap: 0.75rem;
       align-items: center;
       z-index: 5;
       position: relative;
+      border-top: 2px solid var(--primary-color);
+      border-bottom: 1px solid var(--primary-color);
+      background: var(--bg-color);
     }
 
     .search-input-container {
@@ -172,7 +188,7 @@ export class MonsterCodex extends LitElement {
     /* Filter styles */
     .filters-container h3 {
       color: var(--primary-color);
-      margin-bottom: 1rem;
+      margin: 0 0 1rem 0;
       font-family: var(--header-font);
       font-size: var(--header-font-size);
     }
@@ -257,7 +273,7 @@ export class MonsterCodex extends LitElement {
     .monster-list {
       flex: 1;
       overflow-y: auto;
-      padding: 0 1.5rem 1.5rem 1.5rem;
+      padding: 1.5rem;
     }
 
     .group-header {
@@ -276,8 +292,7 @@ export class MonsterCodex extends LitElement {
 
     .monster-row {
       display: flex;
-      align-items: center;
-      padding: 0.75rem;
+      align-items: stretch;
       margin-bottom: 0.5rem;
       border-radius: 6px;
       cursor: pointer;
@@ -289,6 +304,7 @@ export class MonsterCodex extends LitElement {
       border: 1px solid transparent;
       position: relative;
       min-height: 70px;
+      overflow: hidden;
     }
 
     .monster-row::before {
@@ -297,7 +313,7 @@ export class MonsterCodex extends LitElement {
       inset: 0;
       background-image: inherit;
       background-size: cover;
-      background-position: center;
+      background-position: inherit;
       background-repeat: no-repeat;
       border-radius: inherit;
       opacity: 0.3;
@@ -324,10 +340,12 @@ export class MonsterCodex extends LitElement {
       position: relative;
       z-index: 1;
       background: rgba(0,0,0,0.4);
-      padding: 0.75rem;
-      border-radius: 6px;
       backdrop-filter: blur(4px);
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.75rem;
     }
 
     .monster-name {
@@ -460,7 +478,10 @@ export class MonsterCodex extends LitElement {
         width: 300px;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
-        border-right: none;
+        border-right: 2px solid var(--primary-color);
+        border-top: 2px solid var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
       }
 
       .filters-panel.hidden {
@@ -506,7 +527,7 @@ export class MonsterCodex extends LitElement {
     const monsters = Array.from(result.monsters) as MonsterInfo[];
     const facets = result.facets;
     const activeFilterCount = this.getActiveFilterCount();
-    
+
     return html`
       <div class="codex-container ${this.filtersPanelVisible ? '' : 'filters-hidden'}">
         <!-- Filters Panel -->
@@ -635,11 +656,16 @@ export class MonsterCodex extends LitElement {
 
   private renderMonsterRow(monster: MonsterInfo) {
     const isSelected = this.selectedMonsterKey === monster.key;
-    // Generate random background position offset for variety
-    const randomX = Math.floor(Math.random() * 60) + 20; // 20-80%
-    const randomY = Math.floor(Math.random() * 60) + 20; // 20-80%
-    const backgroundPosition = `${randomX}% ${randomY}%`;
-    
+
+    // Get consistent background position for this monster
+    let backgroundPosition = this.backgroundOffsets.get(monster.key);
+    if (!backgroundPosition) {
+      const randomX = Math.floor(Math.random() * 60) + 20; // 20-80%
+      const randomY = Math.floor(Math.random() * 60) + 20; // 20-80%
+      backgroundPosition = `${randomX}% ${randomY}%`;
+      this.backgroundOffsets.set(monster.key, backgroundPosition);
+    }
+
     return html`
       <div
         class="monster-row ${isSelected ? 'selected' : ''}"
