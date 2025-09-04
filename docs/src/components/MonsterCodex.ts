@@ -57,14 +57,14 @@ export class MonsterCodex extends LitElement {
   static styles = css`
     :host {
       display: block;
-      height: 100vh;
+      height: 100%;
       overflow: hidden;
     }
 
     .codex-container {
       display: grid;
       grid-template-columns: 340px 1fr 400px;
-      height: 100vh;
+      height: 100%;
       gap: 0;
     }
 
@@ -339,8 +339,7 @@ export class MonsterCodex extends LitElement {
       font-family: var(--primary-font);
       position: relative;
       z-index: 1;
-      background: rgba(0,0,0,0.4);
-      backdrop-filter: blur(4px);
+      background: rgba(0,0,0,0.5);
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -503,6 +502,37 @@ export class MonsterCodex extends LitElement {
       .preview-panel {
         display: none; /* Hide preview panel on mobile */
       }
+    }
+
+    /* Custom scrollbar styling */
+    .monster-list::-webkit-scrollbar,
+    .preview-panel::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .monster-list::-webkit-scrollbar-track,
+    .preview-panel::-webkit-scrollbar-track {
+      background: var(--muted-color);
+      border-radius: 4px;
+    }
+
+    .monster-list::-webkit-scrollbar-thumb,
+    .preview-panel::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+      border: 1px solid var(--bg-color);
+    }
+
+    .monster-list::-webkit-scrollbar-thumb:hover,
+    .preview-panel::-webkit-scrollbar-thumb:hover {
+      background: var(--tertiary-color);
+    }
+
+    /* Firefox scrollbar styling */
+    .monster-list,
+    .preview-panel {
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary-color) var(--muted-color);
     }
   `;
 

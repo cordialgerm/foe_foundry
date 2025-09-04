@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/homepage.css">
     <style>
-
         * {
             box-sizing: border-box;
         }
@@ -24,6 +23,8 @@
             position: relative;
             height: 100vh;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Add the parallax background styling matching homepage */
@@ -49,6 +50,7 @@
             padding: 1rem;
             border-bottom: 2px solid var(--tertiary-color);
             text-align: center;
+            flex-shrink: 0;
         }
 
         .demo-header h1 {
@@ -76,8 +78,9 @@
         }
 
         #monster-codex-container {
-            height: calc(100vh - 80px);
-            /* Subtract header height */
+            flex: 1;
+            overflow: hidden;
+            padding: 1rem;
         }
 
         .error-container {
@@ -99,7 +102,7 @@
     </style>
 </head>
 
-<body>    
+<body>
     <div class="demo-header">
         <h1>Foe Foundry Monster Codex</h1>
     </div>
