@@ -52,6 +52,11 @@ export class MonsterCardPreview extends LitElement {
     .preview-card.full monster-art {
       height: 100%;
       min-height: 400px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
 
     .monster-overlay {
@@ -179,7 +184,7 @@ export class MonsterCardPreview extends LitElement {
           monster-image="${String(this.monster.image || '')}"
           background-image="${String(this.monster.backgroundImage || '')}"
           background-color="rgba(255, 255, 255, 0.55)"
-          image-mode="contain"
+          image-mode="${this.compact ? 'contain' : 'cover'}"
         ></monster-art>
 
         <div class="monster-overlay ${this.compact ? 'compact' : ''}">

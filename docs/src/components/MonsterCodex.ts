@@ -56,26 +56,24 @@ export class MonsterCodex extends LitElement {
   static styles = css`
     :host {
       display: block;
-      height: 100vh;
+      height: 100%;
       overflow: hidden;
     }
 
     .codex-container {
       display: grid;
       grid-template-columns: 300px 1fr 400px;
-      height: 100vh;
-      gap: 1.5rem;
-      padding: 1.5rem;
+      height: 100%;
+      gap: 1rem;
+      padding: 1rem;
     }
 
     .codex-container.filters-hidden {
       grid-template-columns: 0 1fr 400px;
-      gap: 0 1.5rem;
+      gap: 0 1rem;
     }
 
     .filters-panel {
-      background: rgba(26, 26, 26, 0.8);
-      backdrop-filter: blur(10px);
       border-radius: var(--medium-margin);
       padding: 1.5rem;
       overflow-y: auto;
@@ -83,7 +81,6 @@ export class MonsterCodex extends LitElement {
       transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
       border-right: 2px solid var(--primary-color);
       position: relative;
-      border: 1px solid rgba(255, 55, 55, 0.3);
     }
 
     .filters-panel.hidden {
@@ -91,7 +88,6 @@ export class MonsterCodex extends LitElement {
       padding: 0;
       overflow: hidden;
       border-right: none;
-      border: none;
     }
 
     .panel-divider {
@@ -122,13 +118,10 @@ export class MonsterCodex extends LitElement {
     }
 
     .monster-list-panel {
-      background: rgba(26, 26, 26, 0.8);
-      backdrop-filter: blur(10px);
       border-radius: var(--medium-margin);
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      border: 1px solid rgba(255, 55, 55, 0.3);
     }
 
     .preview-panel {
@@ -143,7 +136,7 @@ export class MonsterCodex extends LitElement {
 
     /* Search bar styles */
     .search-bar {
-      padding: 1.5rem;
+      padding: 1rem;
       display: flex;
       gap: 0.75rem;
       align-items: center;
@@ -153,6 +146,7 @@ export class MonsterCodex extends LitElement {
 
     .search-input-container {
       flex: 1;
+      max-width: calc(100% - 120px); /* Reserve space for filter button */
     }
 
     .search-input {
@@ -263,7 +257,7 @@ export class MonsterCodex extends LitElement {
     .monster-list {
       flex: 1;
       overflow-y: auto;
-      padding: 1.5rem;
+      padding: 0 1.5rem 1.5rem 1.5rem;
     }
 
     .group-header {
@@ -306,7 +300,7 @@ export class MonsterCodex extends LitElement {
       background-position: center;
       background-repeat: no-repeat;
       border-radius: inherit;
-      opacity: 0.6;
+      opacity: 0.3;
       z-index: 0;
     }
 
@@ -641,10 +635,15 @@ export class MonsterCodex extends LitElement {
 
   private renderMonsterRow(monster: MonsterInfo) {
     const isSelected = this.selectedMonsterKey === monster.key;
+    // Generate random background position offset for variety
+    const randomX = Math.floor(Math.random() * 60) + 20; // 20-80%
+    const randomY = Math.floor(Math.random() * 60) + 20; // 20-80%
+    const backgroundPosition = `${randomX}% ${randomY}%`;
+    
     return html`
       <div
         class="monster-row ${isSelected ? 'selected' : ''}"
-        style="background-image: url('${monster.background_image || ''}')"
+        style="background-image: url('${monster.background_image || ''}'); background-position: ${backgroundPosition};"
         @click=${() => this.selectMonsterByKey(monster.key)}
         @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
         <div class="monster-info">

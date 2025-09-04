@@ -22,10 +22,13 @@
             background: var(--bg-color);
             color: var(--fg-color);
             position: relative;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        /* Add the parallax background styling */
-        #parallax-logo-bg {
+        /* Add the parallax background styling matching homepage */
+        body::before {
+            content: '';
             position: fixed;
             top: 0;
             left: 0;
@@ -73,7 +76,7 @@
         }
 
         #monster-codex-container {
-            height: calc(100vh - 140px);
+            height: calc(100vh - 80px);
             /* Subtract header height */
         }
 
@@ -96,13 +99,10 @@
     </style>
 </head>
 
-<body>
-    <div id="parallax-logo-bg"></div>
-    
+<body>    
     <div class="demo-header">
         <h1>Foe Foundry Monster Codex</h1>
     </div>
-
 
     <div id="monster-codex-container">
         <monster-codex></monster-codex>
