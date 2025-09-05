@@ -5,6 +5,9 @@ import { Monster } from '../data/monster.js';
 import { MonsterSearchApi } from '../data/searchApi.js';
 import { ApiMonsterStore } from '../data/api.js';
 import './MonsterCardPreview.js';
+import './MonsterSimilar.js';
+import './MonsterLore.js';
+import './MonsterEncounters.js';
 import { Task } from '@lit/task';
 
 @customElement('monster-codex')
@@ -15,17 +18,21 @@ export class MonsterCodex extends LitElement {
   @state() private selectedRoles: string[] = [];
   @state() private minCr?: number;
   @state() private maxCr?: number;
-  @state() private groupBy: 'family' | 'challenge' | 'name' | 'relevance' = 'family';
+  @state() private tempMinCr?: number; // For immediate visual feedback during sliding
+  @state() private tempMaxCr?: number; // For immediate visual feedback during sliding
+  @state() private groupBy: 'family' | 'challenge' | 'name' | 'relevance' = 'relevance';
   @state() private monsters: MonsterInfo[] = [];
   @state() private facets: SearchFacets | null = null;
   @state() private selectedMonster: Monster | null = null;
   @state() private loading = false;
   @state() private filtersPanelVisible = window.innerWidth >= 900; // Hidden by default on medium screens
   @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
+  @state() private contentTab: 'preview' | 'similar' | 'lore' | 'encounters' = 'preview';
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
   private searchDebounceTimer: number | undefined;
+  private crDebounceTimer: number | undefined;
   private backgroundOffsets = new Map<string, string>(); // Store consistent background positions
 
   private searchTask = new Task(this, async ([query, selectedCreatureTypes, minCr, maxCr]: [string, string[], number | undefined, number | undefined]) => {
@@ -347,6 +354,26 @@ export class MonsterCodex extends LitElement {
       color: var(--primary-muted-color);
     }
 
+    .cr-tier-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.25rem;
+      font-size: 0.7rem;
+      color: var(--primary-color);
+      font-weight: bold;
+      position: relative;
+    }
+
+    .cr-tier-label {
+      position: absolute;
+      transform: translateX(-50%);
+    }
+
+    .cr-tier-label:nth-child(1) { left: 5%; }   /* Tier I at CR 0-3 (~10%) */
+    .cr-tier-label:nth-child(2) { left: 23.3%; } /* Tier II at CR 4-10 (~23%) */
+    .cr-tier-label:nth-child(3) { left: 50%; }   /* Tier III at CR 11-19 (~50%) */
+    .cr-tier-label:nth-child(4) { left: 83.3%; } /* Tier IV at CR 20+ (~83%) */
+
     /* Monster list styles */
     .monster-list {
       flex: 1;
@@ -612,6 +639,46 @@ export class MonsterCodex extends LitElement {
       scrollbar-width: thin;
       scrollbar-color: var(--primary-color) var(--muted-color);
     }
+
+    /* Content tabs in preview panel */
+    .preview-content-tabs {
+      display: flex;
+      border-bottom: 2px solid var(--tertiary-color);
+      margin-bottom: 1rem;
+    }
+
+    .preview-content-tab {
+      flex: 1;
+      padding: 0.5rem 0.75rem;
+      border: none;
+      border-bottom: 3px solid transparent;
+      background: transparent;
+      color: var(--primary-tertiary);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      font-family: var(--primary-font);
+    }
+
+    .preview-content-tab:hover {
+      background: var(--primary-color);
+      color: var(--fg-color);
+    }
+
+    .preview-content-tab.active {
+      color: var(--tertiary-color);
+      border-bottom-color: var(--tertiary-color);
+      font-weight: 600;
+    }
+
+    .preview-tab-content {
+      display: none;
+    }
+
+    .preview-tab-content.active {
+      display: block;
+    }
   `;
 
   async connectedCallback() {
@@ -657,7 +724,7 @@ export class MonsterCodex extends LitElement {
             <div class="filter-section">
               <h4>Challenge Rating</h4>
               <div class="cr-range">
-                CR ${this.minCr || facets.crRange.min || 0} - ${this.maxCr || facets.crRange.max || 30}
+                CR ${this.tempMinCr ?? this.minCr ?? facets.crRange.min ?? 0} - ${this.tempMaxCr ?? this.maxCr ?? facets.crRange.max ?? 30}
               </div>
               <div class="cr-slider-container">
                 <div class="cr-slider-wrapper">
@@ -667,7 +734,7 @@ export class MonsterCodex extends LitElement {
                     class="cr-slider"
                     min="0"
                     max="30"
-                    .value=${String(this.minCr || 0)}
+                    .value=${String(this.tempMinCr ?? this.minCr ?? 0)}
                     @input=${this.handleMinCrChange}
                     style="z-index: 2;"
                   />
@@ -676,7 +743,7 @@ export class MonsterCodex extends LitElement {
                     class="cr-slider"
                     min="0"
                     max="30"
-                    .value=${String(this.maxCr || 30)}
+                    .value=${String(this.tempMaxCr ?? this.maxCr ?? 30)}
                     @input=${this.handleMaxCrChange}
                     style="z-index: 1;"
                   />
@@ -685,11 +752,22 @@ export class MonsterCodex extends LitElement {
                   <span>CR 0</span>
                   <span>CR 30</span>
                 </div>
+                <div class="cr-tier-labels">
+                  <span class="cr-tier-label">I</span>
+                  <span class="cr-tier-label">II</span>
+                  <span class="cr-tier-label">III</span>
+                  <span class="cr-tier-label">IV</span>
+                </div>
               </div>
             </div>
             <div class="filter-section">
               <h4>Organize Monsters By</h4>
               <div class="group-buttons">
+                <button
+                  class="group-btn ${this.groupBy === 'relevance' ? 'active' : ''}"
+                  @click=${() => this.setGroupBy('relevance')}>
+                  Relevance
+                </button>
                 <button
                   class="group-btn ${this.groupBy === 'family' ? 'active' : ''}"
                   @click=${() => this.setGroupBy('family')}>
@@ -704,11 +782,6 @@ export class MonsterCodex extends LitElement {
                   class="group-btn ${this.groupBy === 'name' ? 'active' : ''}"
                   @click=${() => this.setGroupBy('name')}>
                   Name
-                </button>
-                <button
-                  class="group-btn ${this.groupBy === 'relevance' ? 'active' : ''}"
-                  @click=${() => this.setGroupBy('relevance')}>
-                  Relevance
                 </button>
               </div>
             </div>
@@ -757,10 +830,49 @@ export class MonsterCodex extends LitElement {
         <!-- Preview Panel -->
         <div class="preview-panel">
           ${this.selectedMonster ? html`
-            <monster-card-preview
-              monster-key="${this.selectedMonster.key}"
-              .compact=${false}
-            ></monster-card-preview>
+            <div class="preview-content-tabs">
+              <button class="preview-content-tab ${this.contentTab === 'preview' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('preview')}>
+                Preview
+              </button>
+              <button class="preview-content-tab ${this.contentTab === 'similar' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('similar')}>
+                Similar
+              </button>
+              <button class="preview-content-tab ${this.contentTab === 'lore' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('lore')}>
+                Lore
+              </button>
+              <button class="preview-content-tab ${this.contentTab === 'encounters' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('encounters')}>
+                Encounters
+              </button>
+            </div>
+            
+            <div class="preview-tab-content ${this.contentTab === 'preview' ? 'active' : ''}">
+              <monster-card-preview
+                monster-key="${this.selectedMonster.key}"
+                .compact=${false}
+              ></monster-card-preview>
+            </div>
+            
+            <div class="preview-tab-content ${this.contentTab === 'similar' ? 'active' : ''}">
+              <monster-similar
+                monster-key="${this.selectedMonster.key}"
+              ></monster-similar>
+            </div>
+            
+            <div class="preview-tab-content ${this.contentTab === 'lore' ? 'active' : ''}">
+              <monster-lore
+                monster-key="${this.selectedMonster.key}"
+              ></monster-lore>
+            </div>
+            
+            <div class="preview-tab-content ${this.contentTab === 'encounters' ? 'active' : ''}">
+              <monster-encounters
+                monster-key="${this.selectedMonster.key}"
+              ></monster-encounters>
+            </div>
           ` : html`
             <div class="no-selection">
               <p>Select a monster to see preview</p>
@@ -875,17 +987,46 @@ export class MonsterCodex extends LitElement {
   private handleMinCrChange(e: Event) {
     const input = e.target as HTMLInputElement;
     const value = parseInt(input.value);
-    this.minCr = value === 0 ? undefined : value;
+    
+    // Update temp value for immediate visual feedback
+    this.tempMinCr = value;
+    this.requestUpdate();
+    
+    // Debounce the actual filter update
+    if (this.crDebounceTimer) {
+      clearTimeout(this.crDebounceTimer);
+    }
+    this.crDebounceTimer = window.setTimeout(() => {
+      this.minCr = value === 0 ? undefined : value;
+      this.tempMinCr = undefined;
+    }, 300);
   }
 
   private handleMaxCrChange(e: Event) {
     const input = e.target as HTMLInputElement;
     const value = parseInt(input.value);
-    this.maxCr = value === 30 ? undefined : value;
+    
+    // Update temp value for immediate visual feedback
+    this.tempMaxCr = value;
+    this.requestUpdate();
+    
+    // Debounce the actual filter update
+    if (this.crDebounceTimer) {
+      clearTimeout(this.crDebounceTimer);
+    }
+    this.crDebounceTimer = window.setTimeout(() => {
+      this.maxCr = value === 30 ? undefined : value;
+      this.tempMaxCr = undefined;
+    }, 300);
   }
 
   private setGroupBy(groupBy: 'family' | 'challenge' | 'name' | 'relevance') {
     this.groupBy = groupBy;
+    this.requestUpdate();
+  }
+
+  private setContentTab(tab: 'preview' | 'similar' | 'lore' | 'encounters') {
+    this.contentTab = tab;
     this.requestUpdate();
   }
 
