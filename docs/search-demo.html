@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Codex Demo - Foe Foundry</title>
+
+    <!-- Include main site CSS for consistent theming -->
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--primary-font);
+            background: var(--bg-color);
+            color: var(--fg-color);
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Add the parallax background styling matching homepage */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/icons/favicon.webp');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            background-attachment: fixed;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .demo-header {
+            background: var(--muted-color);
+            padding: 1rem;
+            border-bottom: 2px solid var(--tertiary-color);
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .demo-header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-family: var(--stylistic-font);
+        }
+
+        .demo-subtitle {
+            margin: 0.5rem 0 0 0;
+            color: var(--fg-color);
+            opacity: 0.8;
+            font-family: var(--header-font);
+        }
+
+        /* Mock data notice */
+        .mock-notice {
+            background: #ffc107;
+            color: #000;
+            padding: 0.75rem;
+            text-align: center;
+            font-weight: bold;
+            font-family: var(--header-font);
+        }
+
+        #monster-codex-container {
+            flex: 1;
+            overflow: hidden;
+            padding: 1rem;
+        }
+
+        .error-container {
+            padding: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+            font-family: var(--header-font);
+        }
+
+        .error-container h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .error-container p {
+            color: var(--fg-color);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-header">
+        <h1>Foe Foundry Monster Codex</h1>
+    </div>
+
+    <div id="monster-codex-container">
+        <monster-codex></monster-codex>
+    </div>
+</body>
+
+<script>
+    // Set the base URL for the API to localhost for demo
+    window.baseUrl = 'http://127.0.0.1:8080';
+</script>
+<script type="module" src="scripts/main.js"></script>
+
+</html>

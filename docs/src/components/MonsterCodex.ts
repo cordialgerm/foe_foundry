@@ -1,1286 +1,1173 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import { customElement, state } from 'lit/decorators.js';
+import { MonsterInfo, MonsterSearchRequest, SearchFacets, MonsterSearchResult } from '../data/search.js';
+import { Monster } from '../data/monster.js';
+import { MonsterSearchApi } from '../data/searchApi.js';
+import { ApiMonsterStore } from '../data/api.js';
+import './MonsterCardPreview.js';
+import './MonsterSimilar.js';
+import './MonsterLore.js';
+import './MonsterEncounters.js';
+import './MonsterStatblock.js';
 import { Task } from '@lit/task';
-import { MonsterStore } from '../data/monster';
-import { adoptExternalCss } from '../utils';
-
-// Configuration for responsive layout - reusing patterns from MonsterBuilder
-const LAYOUT_CONFIG = {
-  // Component dimensions  
-  MOBILE_BREAKPOINT: 1040,
-  SMALL_MOBILE: 480,
-  LARGE_DESKTOP: 1200,
-
-  // Helper methods
-  isMobile: (width: number) => width <= LAYOUT_CONFIG.MOBILE_BREAKPOINT,
-  isSmallMobile: (width: number) => width <= LAYOUT_CONFIG.SMALL_MOBILE,
-  isLargeDesktop: (width: number) => width >= LAYOUT_CONFIG.LARGE_DESKTOP
-} as const;
-
-export interface MonsterCardData {
-  key: string;
-  name: string;
-  template: string;
-  cr: number | string;
-  creatureType: string;
-  environment?: string;
-  role?: string;
-  family?: string;
-  tagLine?: string;
-  image?: string;
-  backgroundImage?: string;
-}
-
-export interface FilterState {
-  query: string;
-  creatureTypes: string[];
-  environments: string[];
-  roles: string[];
-  crMin: number;
-  crMax: number;
-  organizeBy: 'family' | 'challenge' | 'name';
-}
 
 @customElement('monster-codex')
 export class MonsterCodex extends LitElement {
-  @property({ type: Object })
-  monsterStore?: MonsterStore;
+  @state() private query = '';
+  @state() private selectedCreatureTypes: string[] = [];
+  @state() private selectedEnvironments: string[] = [];
+  @state() private selectedRoles: string[] = [];
+  @state() private minCr?: number;
+  @state() private maxCr?: number;
+  @state() private tempMinCr?: number; // For immediate visual feedback during sliding
+  @state() private tempMaxCr?: number; // For immediate visual feedback during sliding
+  @state() private groupBy: 'family' | 'challenge' | 'name' | 'relevance' = 'relevance';
+  @state() private monsters: MonsterInfo[] = [];
+  @state() private facets: SearchFacets | null = null;
+  @state() private selectedMonster: Monster | null = null;
+  @state() private loading = false;
+  @state() private filtersPanelVisible = window.innerWidth >= 900; // Hidden by default on medium screens
+  @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
+  @state() private contentTab: 'preview' | 'lore' | 'encounters' = 'preview';
+  @state() private expandedMonsterKey: string | null = null; // Track which monster row has its drawer expanded
 
-  @state()
-  private isMobile: boolean = false;
+  private searchApi = new MonsterSearchApi();
+  private apiStore = new ApiMonsterStore();
+  private searchDebounceTimer: number | undefined;
+  private crDebounceTimer: number | undefined;
+  private backgroundOffsets = new Map<string, string>(); // Store consistent background positions
 
-  @state()
-  private isFiltersExpanded: boolean = false;
-
-  @state()
-  private filters: FilterState = {
-    query: '',
-    creatureTypes: [],
-    environments: [],
-    roles: [],
-    crMin: 0,
-    crMax: 20,
-    organizeBy: 'family'
-  };
-
-  @state()
-  private monsters: MonsterCardData[] = [];
-
-  @state()
-  private filteredMonsters: MonsterCardData[] = [];
-
-  @state()
-  private groupedMonsters: Map<string, MonsterCardData[]> = new Map();
-
-  private resizeObserver?: ResizeObserver;
+  private searchTask = new Task(this, async ([query, selectedCreatureTypes, minCr, maxCr]: [string, string[], number | undefined, number | undefined]) => {
+    const hasFilters = !!(query || (selectedCreatureTypes && selectedCreatureTypes.length > 0) || minCr !== undefined || maxCr !== undefined);
+    if (!hasFilters) {
+      // No filters: just get facets
+      const facets = await this.searchApi.getFacets();
+      return { monsters: [], facets, total: 0 } as MonsterSearchResult;
+    } else {
+      // Filters: perform search
+      const searchRequest: MonsterSearchRequest = {
+        query: query || undefined,
+        creatureTypes: selectedCreatureTypes.length > 0 ? selectedCreatureTypes : undefined,
+        minCr,
+        maxCr
+      };
+      const results = await this.searchApi.searchMonsters(searchRequest);
+      return results;
+    }
+  }, () => {
+    return [
+      this.query,
+      this.selectedCreatureTypes,
+      this.minCr,
+      this.maxCr
+    ] as [string, string[], number | undefined, number | undefined];
+  });
 
   static styles = css`
     :host {
+      --border-color: var(--fg-color);
       display: block;
-      width: 100%;
-      contain: layout style;
+      height: 100%;
+      overflow: hidden;
     }
 
     .codex-container {
-      max-width: 1200px;
-      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 340px 1fr 400px;
+      height: 100%;
+      gap: 0;
+    }
+
+    .codex-container.filters-hidden {
+      grid-template-columns: 0 1fr 400px;
+    }
+
+    .filters-panel {
+      border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
+      padding: 1rem;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      width: 300px;
+      transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+      border-right: 2px solid var(--border-color);
+      border-top: 2px solid var(--border-color);
+      border-bottom: 2px solid var(--border-color);
+      position: relative;
+      backdrop-filter: blur(5px);
+    }
+
+    .filters-panel.hidden {
+      width: 0;
+      padding: 0;
+      overflow: hidden;
+      border-right: none;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    .filters-container {
       padding: 1rem;
     }
 
-    /* Header */
-    .codex-header {
+    .panel-divider {
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      transform: translateY(-50%);
+      background: var(--fg-color);
+      color: var(--primary-color);
+      border: none;
+      width: 24px;
+      height: 48px;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin-bottom: 2rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid var(--tertiary-color);
+      justify-content: center;
+      font-size: 14px;
+      z-index: 3;
+      transition: all 0.2s ease;
+      border: 1px solid var(--border-color);
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
     }
 
-    .codex-title {
-      font-size: 2rem;
-      font-weight: bold;
-      color: var(--fg-color);
-      margin: 0;
+    .panel-divider:hover {
+      background: var(--primary-muted-color);
+      transform: translateY(-50%) scale(1.1);
     }
 
-    .hamburger-button {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: var(--fg-color);
-      cursor: pointer;
-      padding: 0.5rem;
+    .monster-list-panel {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      backdrop-filter: blur(5px);
     }
 
-    /* Search Section */
-    .search-section {
-      margin-bottom: 1.5rem;
+    .preview-panel {
+      backdrop-filter: blur(10px);
+      border-radius: var(--medium-margin) 0 0 var(--medium-margin);
+      padding: 1.5rem;
+      overflow-y: auto;
+      border-left: 2px solid var(--border-color);
+      border-top: 2px solid var(--border-color);
+      border-bottom: 2px solid var(--border-color);
+      z-index: 1;
     }
 
+    /* Search bar styles */
     .search-bar {
+      padding: 1rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      z-index: 5;
       position: relative;
-      margin-bottom: 1rem;
+      border-top: 2px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(5px);
+    }
+
+    .search-input-container {
+      flex: 1;
+      max-width: calc(100% - 120px); /* Reserve space for filter button */
     }
 
     .search-input {
       width: 100%;
-      padding: 1rem 1rem 1rem 3rem;
-      font-size: 1.1rem;
-      border: 2px solid var(--tertiary-color);
-      border-radius: 8px;
-      background: var(--bg-color);
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background: var(--muted-color);
       color: var(--fg-color);
-      outline: none;
-      transition: border-color 0.2s;
+      font-size: 1rem;
+    }
+
+    .search-input::placeholder {
+      color: var(--fg-muted-color);
     }
 
     .search-input:focus {
-      border-color: var(--accent-color);
+      outline: none;
+      border-color: var(--border-color);
+      box-shadow: 0 0 0 2px var(--fg-muted-color);
     }
 
-    .search-icon {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 1.2rem;
-      height: 1.2rem;
-      opacity: 0.6;
+    /* Filter styles */
+    .filters-container h2 {
+      color: var(--fg-color);
+      margin: 0 0 1rem 0;
+      font-family: var(--header-font);
+      font-size: var(--header-font-size);
     }
 
-    /* Filters */
-    .filters-section {
-      background: var(--bg-color);
-      border: 1px solid var(--tertiary-color);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .filters-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-      background: var(--accent-color);
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-      user-select: none;
-    }
-
-    .filters-chevron {
-      width: 1rem;
-      height: 1rem;
-      transition: transform 0.2s;
-    }
-
-    .filters-chevron.expanded {
-      transform: rotate(180deg);
-    }
-
-    .filters-content {
-      display: none;
-      padding: 1.5rem;
-      background: var(--bg-color);
-    }
-
-    .filters-content.expanded {
-      display: block;
-    }
-
-    .filter-group {
+    .filter-section {
       margin-bottom: 1.5rem;
     }
 
-    .filter-group:last-child {
-      margin-bottom: 0;
-    }
-
-    .filter-label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
+    .filter-section h4 {
       color: var(--fg-color);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-family: var(--header-font);
     }
 
-    .filter-tags {
+    .pill-container {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
     }
 
-    .filter-tag {
-      padding: 0.4rem 0.8rem;
-      border: 1px solid var(--tertiary-color);
-      border-radius: 16px;
-      background: var(--bg-color);
+    .filter-pill {
+      padding: 0.25rem 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      background: transparent;
       color: var(--fg-color);
-      font-size: 0.9rem;
       cursor: pointer;
-      transition: all 0.2s;
-      user-select: none;
-      min-height: 44px; /* Touch target */
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      font-family: var(--primary-font);
+    }
+
+    .filter-pill:hover {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      border-color: var(--primary-color);
+    }
+
+    .filter-pill.active {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      font-weight: bold;
+      border-color: var(--primary-color);
+    }
+
+    .group-buttons {
       display: flex;
-      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
     }
 
-    .filter-tag:hover {
-      background: var(--tertiary-color);
+    .group-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background: transparent;
+      color: var(--fg-color);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: var(--primary-font);
+      font-size: 0.9rem;
     }
 
-    .filter-tag.active {
-      background: var(--accent-color);
-      color: white;
-      border-color: var(--accent-color);
+    .group-btn:hover {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      border-color: var(--primary-color);
     }
 
-    /* Challenge Rating Slider */
+    .group-btn.active {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      font-weight: bold;
+      border-color: var(--primary-color);
+    }
+
+    .cr-range {
+      color: var(--fg-color);
+      font-family: var(--primary-font);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
     .cr-slider-container {
       margin-top: 1rem;
+      position: relative;
+    }
+
+    .cr-slider-wrapper {
+      position: relative;
+      height: 40px;
+      background: var(--muted-color);
     }
 
     .cr-slider {
+      position: absolute;
       width: 100%;
-      height: 6px;
-      border-radius: 3px;
-      background: var(--tertiary-color);
-      outline: none;
+      height: 100%;
+      background: transparent;
+      pointer-events: none;
       appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .cr-slider::-webkit-slider-track {
+      background: transparent;
+      height: 100%;
     }
 
     .cr-slider::-webkit-slider-thumb {
       appearance: none;
+      -webkit-appearance: none;
+      height: 36px;
       width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: var(--accent-color);
+      background: var(--fg-color);
+      border-radius: 4px;
       cursor: pointer;
+      pointer-events: auto;
+      border: 2px solid var(--fg-color);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .cr-slider::-moz-range-track {
+      background: transparent;
+      height: 100%;
+      border: none;
     }
 
     .cr-slider::-moz-range-thumb {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: var(--accent-color);
+      height: 32px;
+      width: 16px;
+      background: var(--fg-color);
+      border-radius: 4px;
       cursor: pointer;
-      border: none;
+      pointer-events: auto;
+      border: 2px solid var(--fg-color);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
 
-    .cr-range-display {
-      text-align: center;
+    .cr-slider-track {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      height: 6px;
+      background: var(--fg-color);
+      border-radius: 3px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .cr-labels {
+      display: flex;
+      justify-content: space-between;
       margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: var(--fg-color-secondary);
-    }
-
-    /* Organize Section */
-    .organize-section {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .organize-button {
-      flex: 1;
-      padding: 0.6rem 1rem;
-      border: 1px solid var(--tertiary-color);
-      border-radius: 6px;
-      background: var(--bg-color);
+      font-size: 0.8rem;
       color: var(--fg-color);
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: all 0.2s;
-      min-height: 44px; /* Touch target */
+    }
+
+    .cr-tier-labels {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      margin-top: 0.25rem;
+      font-size: 0.7rem;
+      color: var(--fg-color);
+      font-weight: bold;
+      position: relative;
     }
 
-    .organize-button:hover {
-      background: var(--tertiary-color);
+    .cr-tier-label {
+      position: absolute;
+      transform: translateX(-50%);
     }
 
-    .organize-button.active {
-      background: var(--accent-color);
-      color: white;
-      border-color: var(--accent-color);
-    }
+    .cr-tier-label:nth-child(1) { left: 5%; }   /* Tier I at CR 0-3 (~10%) */
+    .cr-tier-label:nth-child(2) { left: 23.3%; } /* Tier II at CR 4-10 (~23%) */
+    .cr-tier-label:nth-child(3) { left: 50%; }   /* Tier III at CR 11-19 (~50%) */
+    .cr-tier-label:nth-child(4) { left: 83.3%; } /* Tier IV at CR 20+ (~83%) */
 
-    /* Monster Grid */
-    .monsters-section {
-      margin-top: 2rem;
-    }
-
-    .monster-group {
-      margin-bottom: 2rem;
+    /* Monster list styles */
+    .monster-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem;
     }
 
     .group-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--tertiary-color);
-    }
-
-    .group-title {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: bold;
-      color: var(--fg-color);
-      margin: 0;
+      color: var(--primary-color);
+      margin: 1rem 0 0.5rem 0;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+      font-family: var(--header-font);
     }
 
-    .group-count {
-      margin-left: auto;
-      font-size: 0.9rem;
-      color: var(--fg-color-secondary);
-    }
-
-    .monster-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-
-    /* Monster Cards */
-    .monster-card {
-      border: 1px solid var(--tertiary-color);
-      border-radius: 12px;
-      overflow: hidden;
-      background: var(--bg-color);
-      transition: transform 0.2s, box-shadow 0.2s;
+    .monster-row {
+      display: flex;
+      align-items: stretch;
+      margin-bottom: 0.5rem;
+      border-radius: 6px;
       cursor: pointer;
-      position: relative;
-    }
-
-    .monster-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .monster-card-image {
-      width: 100%;
-      height: 200px;
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
+      background-blend-mode: overlay;
+      background-color: rgba(0,0,0,0.4);
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
       position: relative;
-      display: flex;
-      align-items: flex-end;
-      background-color: var(--tertiary-color);
+      min-height: 70px;
+      overflow: hidden;
     }
 
-    .monster-card-overlay {
-      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-      width: 100%;
-      padding: 1rem;
+    .monster-row::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: inherit;
+      background-repeat: no-repeat;
+      border-radius: inherit;
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .monster-row:hover {
+      background-color: rgba(0,0,0,0.2);
+      transform: translateX(6px);
+      border-color: var(--border-color);
+      box-shadow: 0 4px 12px rgba(255, 55, 55, 0.2);
+    }
+
+    .monster-row.selected {
+      background-color: var(--primary-faded-color);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 12px rgba(255, 55, 55, 0.3);
+    }
+
+    .monster-info {
       color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+      font-family: var(--primary-font);
+      position: relative;
+      z-index: 1;
+      background: rgba(0,0,0,0.5);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.75rem;
     }
 
-    .monster-card-name {
-      font-size: 1.3rem;
+    .monster-name {
       font-weight: bold;
-      margin: 0 0 0.25rem 0;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
     }
 
-    .monster-card-cr {
+    .monster-details {
       font-size: 0.9rem;
       opacity: 0.9;
-      margin: 0;
     }
 
-    .monster-card-content {
-      padding: 1rem;
+    /* Drawer styles */
+    .monster-drawer {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      animation: drawer-slide-down 0.3s ease-out;
     }
 
-    .monster-card-tags {
+    @keyframes drawer-slide-down {
+      from {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        max-height: 800px;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .loading {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 0.75rem;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: var(--fg-color);
+      font-family: var(--primary-font);
     }
 
-    .monster-tag {
-      padding: 0.2rem 0.6rem;
-      border-radius: 12px;
-      font-size: 0.8rem;
-      font-weight: 500;
+    .no-selection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: var(--fg-color);
+      text-align: center;
+      font-family: var(--primary-font);
     }
 
-    .monster-tag.creature-type {
-      background: var(--accent-color);
-      color: white;
+    .no-results {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: var(--fg-color);
+      text-align: center;
+      font-family: var(--primary-font);
     }
 
-    .monster-tag.family {
-      background: var(--tertiary-color);
+    .no-results h4 {
+      color: var(--fg-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .clear-filters-btn {
+      background: transparent;
+      color: var(--fg-color);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--primary-font);
+      margin-top: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .clear-filters-btn:hover {
+      background: var(--primary-color);
+      border: var(--primary-color);
       color: var(--fg-color);
     }
 
-    .monster-tag.environment {
-      background: var(--secondary-color);
+    /* Filter toggle button styles */
+    .filter-toggle-btn {
+      background: var(--primary-color);
       color: var(--fg-color);
-    }
-
-    .monster-card-description {
+      border: none;
+      padding: 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--primary-font);
       font-size: 0.9rem;
-      line-height: 1.4;
-      color: var(--fg-color-secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .filter-toggle-btn:hover {
+      background: var(--primary-muted-color);
+    }
+
+    .filter-count {
+      background: var(--fg-color);
+      color: var(--primary-color);
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 1200px) {
+      .codex-container {
+        grid-template-columns: 280px 1fr 350px;
+      }
+      .codex-container.filters-hidden {
+        grid-template-columns: 0 1fr 350px;
+      }
+      .filters-panel {
+        width: 280px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .codex-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0;
+      }
+      .codex-container.filters-hidden {
+        grid-template-columns: 1fr;
+      }
+
+      .filters-panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 10;
+        background: var(--bg-color);
+        box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+        width: 300px;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+        border-right: 2px solid var(--border-color);
+        border-top: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
+        border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
+      }
+
+      .filters-panel.hidden {
+        transform: translateX(-100%);
+        width: 300px;
+        padding: 1rem;
+        overflow-y: auto;
+      }
+
+      .panel-divider {
+        display: none;
+      }
+
+      .monster-list-panel {
+        border-radius: 0;
+        border: none;
+      }
+
+      .preview-panel {
+        display: none; /* Hide preview panel on mobile */
+      }
+    }
+
+    /* Custom scrollbar styling */
+    .monster-list::-webkit-scrollbar,
+    .preview-panel::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .monster-list::-webkit-scrollbar-track,
+    .preview-panel::-webkit-scrollbar-track {
+      background: var(--muted-color);
+      border-radius: 4px;
+    }
+
+    .monster-list::-webkit-scrollbar-thumb,
+    .preview-panel::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+      border: 1px solid var(--bg-color);
+    }
+
+    .monster-list::-webkit-scrollbar-thumb:hover,
+    .preview-panel::-webkit-scrollbar-thumb:hover {
+      background: var(--tertiary-color);
+    }
+
+    /* Firefox scrollbar styling */
+    .monster-list,
+    .preview-panel {
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary-color) var(--muted-color);
+    }
+
+    /* Content tabs in preview panel */
+    .preview-content-tabs {
+      display: flex;
+      border-bottom: 2px solid var(--tertiary-color);
       margin-bottom: 1rem;
     }
 
-    .monster-card-actions {
-      display: flex;
-      gap: 0.75rem;
-    }
-
-    .action-button {
+    .preview-content-tab {
       flex: 1;
-      padding: 0.6rem 1rem;
+      padding: 0.5rem 0.75rem;
       border: none;
-      border-radius: 6px;
+      border-bottom: 3px solid transparent;
+      background: transparent;
+      color: var(--primary-tertiary);
+      cursor: pointer;
       font-size: 0.9rem;
       font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-      min-height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      transition: all 0.2s ease;
+      font-family: var(--primary-font);
     }
 
-    .forge-button {
-      background: var(--accent-color);
-      color: white;
-    }
-
-    .forge-button:hover {
-      background: var(--accent-color-hover);
-    }
-
-    .share-button {
-      background: var(--tertiary-color);
+    .preview-content-tab:hover {
+      background: var(--primary-color);
       color: var(--fg-color);
-      border: 1px solid var(--tertiary-color);
     }
 
-    .share-button:hover {
-      background: var(--secondary-color);
+    .preview-content-tab.active {
+      color: var(--tertiary-color);
+      border-bottom-color: var(--tertiary-color);
+      font-weight: 600;
     }
 
-    /* Loading States */
-    .loading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 300px;
-      font-size: 1.1rem;
-      color: var(--fg-color-secondary);
+    .preview-tab-content {
+      display: none;
     }
 
-    /* Mobile Styles */
-    @media (max-width: ${LAYOUT_CONFIG.MOBILE_BREAKPOINT}px) {
-      .codex-container {
-        padding: 1rem 0.75rem;
-      }
-
-      .hamburger-button {
-        display: block;
-      }
-
-      .codex-title {
-        font-size: 1.5rem;
-      }
-
-      .search-input {
-        padding: 0.85rem 0.85rem 0.85rem 2.5rem;
-        font-size: 1rem;
-      }
-
-      .search-icon {
-        left: 0.75rem;
-        width: 1rem;
-        height: 1rem;
-      }
-
-      .filters-content {
-        padding: 1rem;
-      }
-
-      .filter-group {
-        margin-bottom: 1rem;
-      }
-
-      .organize-section {
-        flex-direction: column;
-        gap: 0.4rem;
-      }
-
-      .organize-button {
-        padding: 0.7rem;
-      }
-
-      .monster-card-image {
-        height: 160px;
-      }
-
-      .monster-card-name {
-        font-size: 1.1rem;
-      }
-
-      .monster-card-content {
-        padding: 0.75rem;
-      }
-
-      .action-button {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.85rem;
-      }
+    .preview-tab-content.active {
+      display: block;
     }
 
-    @media (max-width: ${LAYOUT_CONFIG.SMALL_MOBILE}px) {
-      .codex-container {
-        padding: 0.75rem 0.5rem;
-      }
-
-      .monster-card-image {
-        height: 140px;
-      }
-
-      .monster-card-overlay {
-        padding: 0.75rem;
-      }
-
-      .monster-card-content {
-        padding: 0.6rem;
-      }
-    }
-
-    /* Desktop Grid */
-    @media (min-width: ${LAYOUT_CONFIG.MOBILE_BREAKPOINT + 1}px) {
-      .monster-grid {
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-        gap: 1.5rem;
-      }
-
-      .hamburger-button {
-        display: none;
-      }
-    }
-
-    @media (min-width: ${LAYOUT_CONFIG.LARGE_DESKTOP}px) {
-      .monster-grid {
-        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      }
+    .similar-monsters-section {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
     }
   `;
 
-  connectedCallback() {
+  async connectedCallback() {
     super.connectedCallback();
-    this.setupResizeObserver();
+    await this.loadInitialData();
   }
 
-  disconnectedCallback() {
-    super.disconnectedCallback();
-    this.resizeObserver?.disconnect();
-  }
-
-  async firstUpdated() {
-    this.checkIsMobile();
-    
-    if (this.shadowRoot) {
-      await adoptExternalCss(this.shadowRoot);
-    }
-
-    // Load initial monster data
-    await this.loadMonsters();
-  }
-
-  private setupResizeObserver() {
-    this.resizeObserver = new ResizeObserver(() => {
-      this.checkIsMobile();
+  render() {
+    return this.searchTask.render({
+      pending: () => this.renderPending(),
+      complete: (results) => this.renderComplete(results),
+      error: (e) => this.renderError(e)
     });
-    this.resizeObserver.observe(this);
   }
 
-  private checkIsMobile() {
-    const wasMobile = this.isMobile;
-    this.isMobile = LAYOUT_CONFIG.isMobile(window.innerWidth);
-    if (wasMobile !== this.isMobile) {
-      console.debug('Mobile state changed', {
-        isMobile: this.isMobile,
-        windowWidth: window.innerWidth,
-        breakpoint: LAYOUT_CONFIG.MOBILE_BREAKPOINT
-      });
-    }
+  private renderPending() {
+    return html`<div class="loading">Loading monsters and filters...</div>`;
   }
 
-  private async loadMonsters() {
-    try {
-      // Use the search API to get a variety of monsters
-      // We'll search for common terms to get a diverse set
-      const searchTerms = ['', 'humanoid', 'beast', 'undead', 'giant', 'dragon'];
-      const allMonsters = new Map<string, MonsterCardData>();
-      
-      for (const term of searchTerms) {
-        try {
-          const baseUrl: string = (window as any).baseUrl ?? 'https://foefoundry.com';
-          const response = await fetch(`${baseUrl}/api/v1/search/monsters?query=${encodeURIComponent(term)}&limit=20`);
-          
-          if (response.ok) {
-            const data = await response.json();
-            const monsters = Array.isArray(data) ? data : [];
-            
-            for (const monster of monsters) {
-              // Ensure monster has the expected structure
-              if (monster && monster.key && monster.name) {
-                if (!allMonsters.has(monster.key)) {
-                  // Convert API monster to our card format
-                  allMonsters.set(monster.key, {
-                    key: monster.key,
-                    name: monster.name,
-                    template: monster.template || monster.key,
-                    cr: monster.cr || 1,
-                    creatureType: this.inferCreatureType(monster.template || monster.key),
-                    environment: this.inferEnvironment(monster.template || monster.key),
-                    role: this.inferRole(monster.template || monster.key),
-                    family: this.inferFamily(monster.template || monster.key),
-                    tagLine: this.generateTagLine(monster.name, monster.template || monster.key),
-                    backgroundImage: this.getMonsterImage(monster.template || monster.key)
-                  });
-                }
-              }
-            }
-          }
-        } catch (error) {
-          console.warn(`Failed to search for "${term}":`, error);
-        }
-      }
-      
-      this.monsters = Array.from(allMonsters.values());
-      
-      // If no monsters were loaded from API, fall back to placeholder data
-      if (this.monsters.length === 0) {
-        this.loadPlaceholderMonsters();
-      }
-      
-    } catch (error) {
-      console.error('Failed to load monsters:', error);
-      this.loadPlaceholderMonsters();
-    }
+  private renderComplete(result: MonsterSearchResult) {
+    const monsters = Array.from(result.monsters) as MonsterInfo[];
+    const facets = result.facets;
+    const activeFilterCount = this.getActiveFilterCount();
 
-    this.applyFilters();
+    return html`
+      <div class="codex-container ${this.filtersPanelVisible ? '' : 'filters-hidden'}">
+        <!-- Filters Panel -->
+        <div class="filters-panel ${this.filtersPanelVisible ? '' : 'hidden'}">
+          <div class="filters-container">
+            <h2>Filters</h2>
+            <div class="filter-section">
+              <h4>Creature Type</h4>
+              <div class="pill-container">
+                ${(Array.from(facets.creatureTypes) as { value: string; count: number }[]).map(facet => html`
+                  <button
+                    class="filter-pill ${this.selectedCreatureTypes?.includes(facet.value) ? 'active' : ''}"
+                    @click=${() => this.toggleCreatureType(facet.value)}>
+                    ${facet.value} (${facet.count})
+                  </button>
+                `)}
+              </div>
+            </div>
+            <div class="filter-section">
+              <h4>Challenge Rating</h4>
+              <div class="cr-range">
+                CR ${this.tempMinCr ?? this.minCr ?? facets.crRange.min ?? 0} - ${this.tempMaxCr ?? this.maxCr ?? facets.crRange.max ?? 30}
+              </div>
+              <div class="cr-slider-container">
+                <div class="cr-slider-wrapper">
+                  <div class="cr-slider-track"></div>
+                  <input
+                    type="range"
+                    class="cr-slider"
+                    min="0"
+                    max="30"
+                    .value=${String(this.tempMinCr ?? this.minCr ?? 0)}
+                    @input=${this.handleMinCrChange}
+                    style="z-index: 2;"
+                  />
+                  <input
+                    type="range"
+                    class="cr-slider"
+                    min="0"
+                    max="30"
+                    .value=${String(this.tempMaxCr ?? this.maxCr ?? 30)}
+                    @input=${this.handleMaxCrChange}
+                    style="z-index: 1;"
+                  />
+                </div>
+                <div class="cr-labels">
+                  <span>CR 0</span>
+                  <span>CR 30</span>
+                </div>
+                <div class="cr-tier-labels">
+                  <span class="cr-tier-label">I</span>
+                  <span class="cr-tier-label">II</span>
+                  <span class="cr-tier-label">III</span>
+                  <span class="cr-tier-label">IV</span>
+                </div>
+              </div>
+            </div>
+            <div class="filter-section">
+              <h4>Organize Monsters By</h4>
+              <div class="group-buttons">
+                <button
+                  class="group-btn ${this.groupBy === 'relevance' ? 'active' : ''}"
+                  @click=${() => this.setGroupBy('relevance')}>
+                  Relevance
+                </button>
+                <button
+                  class="group-btn ${this.groupBy === 'family' ? 'active' : ''}"
+                  @click=${() => this.setGroupBy('family')}>
+                  Family
+                </button>
+                <button
+                  class="group-btn ${this.groupBy === 'challenge' ? 'active' : ''}"
+                  @click=${() => this.setGroupBy('challenge')}>
+                  Challenge
+                </button>
+                <button
+                  class="group-btn ${this.groupBy === 'name' ? 'active' : ''}"
+                  @click=${() => this.setGroupBy('name')}>
+                  Name
+                </button>
+              </div>
+            </div>
+            ${this.hasActiveFilters() ? html`
+              <button
+                class="clear-filters-btn"
+                @click=${this.clearAllFilters}>
+                Clear All Filters
+              </button>
+            ` : ''}
+          </div>
+          <!-- Panel divider with collapse indicator -->
+          <button
+            class="panel-divider"
+            @click=${this.toggleFiltersPanel}
+            title="${this.filtersPanelVisible ? 'Hide Filters' : 'Show Filters'}">
+            ${this.filtersPanelVisible ? '◀' : '▶'}
+          </button>
+        </div>
+
+        <!-- Monster List Panel -->
+        <div class="monster-list-panel">
+          <div class="search-bar">
+            <button
+              class="filter-toggle-btn"
+              @click=${this.toggleFiltersPanel}
+              title="Toggle Filters">
+              Filters
+              ${activeFilterCount > 0 ? html`<span class="filter-count">${activeFilterCount}</span>` : ''}
+            </button>
+            <div class="search-input-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search monster name..."
+                .value=${this.query}
+                @input=${this.handleSearchInput}
+              />
+            </div>
+          </div>
+          <div class="monster-list">
+            ${this.renderMonsterList(monsters)}
+          </div>
+        </div>
+
+        <!-- Preview Panel -->
+        <div class="preview-panel">
+          ${this.selectedMonster ? html`
+            <div class="preview-content-tabs">
+              <button class="preview-content-tab ${this.contentTab === 'preview' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('preview')}>
+                Preview
+              </button>
+              <button class="preview-content-tab ${this.contentTab === 'lore' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('lore')}>
+                Lore
+              </button>
+              <button class="preview-content-tab ${this.contentTab === 'encounters' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('encounters')}>
+                Encounters
+              </button>
+            </div>
+
+            <div class="preview-tab-content ${this.contentTab === 'preview' ? 'active' : ''}">
+              <monster-card-preview
+                monster-key="${this.selectedMonster.key}"
+                .compact=${false}
+              ></monster-card-preview>
+
+              <!-- Similar Monsters below preview card -->
+              <div class="similar-monsters-section">
+                <monster-similar
+                  monster-key="${this.selectedMonster.key}"
+                  font-size="1rem"
+                  max-height="none"
+                ></monster-similar>
+              </div>
+            </div>
+
+            <div class="preview-tab-content ${this.contentTab === 'lore' ? 'active' : ''}">
+              <monster-lore
+                monster-key="${this.selectedMonster.key}"
+                font-size="1rem"
+                max-height="none"
+              ></monster-lore>
+            </div>
+
+            <div class="preview-tab-content ${this.contentTab === 'encounters' ? 'active' : ''}">
+              <monster-encounters
+                monster-key="${this.selectedMonster.key}"
+                font-size="1rem"
+                max-height="none"
+              ></monster-encounters>
+            </div>
+          ` : html`
+            <div class="no-selection">
+              <p>Select a monster to see preview</p>
+            </div>
+          `}
+        </div>
+      </div>
+    `;
   }
 
-  private loadPlaceholderMonsters() {
-    // Fallback placeholder data that matches the mobile design mockups
-    this.monsters = [
-      {
-        key: 'ice-troll',
-        name: 'Ice Troll',
-        template: 'troll',
-        cr: 4,
-        creatureType: 'Giant',
-        environment: 'Arctic',
-        role: 'Brute',
-        family: 'Troll',
-        tagLine: 'A hulking troll adapted to frigid climates, with icy skin and a chilling aura. Its regeneration is slowed by fire, but accelerated by cold.',
-        backgroundImage: '/img/monsters/ice-troll.webp'
-      },
-      {
-        key: 'winter-wolf',
-        name: 'Winter Wolf',
-        template: 'wolf',
-        cr: 3,
-        creatureType: 'Monstrosity',
-        environment: 'Arctic',
-        role: 'Striker',
-        family: 'Wolf',
-        tagLine: 'A supernatural wolf with frost-covered fur and icy breath.',
-        backgroundImage: '/img/monsters/winter-wolf.webp'
-      },
-      {
-        key: 'skeleton-warrior',
-        name: 'Skeleton Warrior',
-        template: 'skeleton',
-        cr: 1,
-        creatureType: 'Undead',
-        environment: 'Underground',
-        role: 'Brute',
-        family: 'Undead',
-        tagLine: 'Fragments of a soul bound to bleached bones, wielding ancient weapons.',
-        backgroundImage: '/img/monsters/skeleton.webp'
-      },
-      {
-        key: 'orc-berserker',
-        name: 'Orc Berserker',
-        template: 'orc',
-        cr: 2,
-        creatureType: 'Humanoid',
-        environment: 'Mountain',
-        role: 'Striker',
-        family: 'Orc',
-        tagLine: 'Bloodrage-fueled ancestral warriors with fierce tribal loyalty.',
-        backgroundImage: '/img/monsters/orc.webp'
-      },
-      {
-        key: 'basilisk-hunter',
-        name: 'Basilisk',
-        template: 'basilisk',
-        cr: 5,
-        creatureType: 'Monstrosity',
-        environment: 'Underground',
-        role: 'Controller',
-        family: 'Basilisk',
-        tagLine: 'Reptilian predators with petrifying gaze and venomous bite.',
-        backgroundImage: '/img/monsters/basilisk.webp'
-      },
-      {
-        key: 'frost-giant',
-        name: 'Frost Giant',
-        template: 'frost-giant',
-        cr: 8,
-        creatureType: 'Giant',
-        environment: 'Arctic',
-        role: 'Brute',
-        family: 'Giant',
-        tagLine: 'Frozen reavers of blood and battle, primordial creatures of the earth.',
-        backgroundImage: '/img/monsters/frost-giant.webp'
-      }
-    ];
+  private renderError(error: unknown) {
+    return html`<div class="no-results">Error loading monsters or filters: ${error instanceof Error ? error.message : String(error)}</div>`;
   }
 
-  private inferCreatureType(template: string): string {
-    // Map common templates to creature types
-    const typeMap: Record<string, string> = {
-      'skeleton': 'Undead',
-      'zombie': 'Undead',
-      'lich': 'Undead',
-      'ghost': 'Undead',
-      'wight': 'Undead',
-      'orc': 'Humanoid',
-      'goblin': 'Humanoid',
-      'human': 'Humanoid',
-      'elf': 'Humanoid',
-      'dwarf': 'Humanoid',
-      'halfling': 'Humanoid',
-      'giant': 'Giant',
-      'ogre': 'Giant',
-      'troll': 'Giant',
-      'dragon': 'Dragon',
-      'wyrmling': 'Dragon',
-      'basilisk': 'Monstrosity',
-      'chimera': 'Monstrosity',
-      'manticore': 'Monstrosity',
-      'owlbear': 'Monstrosity',
-      'wolf': 'Beast',
-      'bear': 'Beast',
-      'eagle': 'Beast',
-      'cube': 'Ooze',
-      'ooze': 'Ooze'
-    };
-
-    for (const [key, type] of Object.entries(typeMap)) {
-      if (template.toLowerCase().includes(key)) {
-        return type;
-      }
+  private renderMonsterList(monsters: MonsterInfo[]) {
+    if (!monsters || monsters.length === 0) {
+      return html`
+        <div class="no-results">
+          <h4>No monsters found</h4>
+          <p>Try adjusting your search criteria or clearing some filters.</p>
+        </div>
+      `;
     }
-
-    return 'Humanoid'; // Default fallback
+    const groupedMonsters = this.groupMonsters(monsters);
+    return html`
+      ${Object.entries(groupedMonsters).map(([groupName, monsters]) => html`
+        ${this.groupBy === 'relevance' ? html`` : html`<div class="group-header">${groupName}</div>`}
+        ${monsters.map(monster => this.renderMonsterRow(monster))}
+      `)}
+    `;
   }
 
-  private inferEnvironment(template: string): string {
-    const envMap: Record<string, string> = {
-      'frost': 'Arctic',
-      'ice': 'Arctic',
-      'winter': 'Arctic',
-      'desert': 'Desert',
-      'forest': 'Forest',
-      'mountain': 'Mountain',
-      'swamp': 'Swamp',
-      'urban': 'Urban',
-      'sea': 'Underwater',
-      'cave': 'Underground',
-      'underground': 'Underground'
-    };
+  private renderMonsterRow(monster: MonsterInfo) {
+    const isSelected = this.selectedMonsterKey === monster.key;
+    const isExpanded = this.expandedMonsterKey === monster.key;
 
-    for (const [key, env] of Object.entries(envMap)) {
-      if (template.toLowerCase().includes(key)) {
-        return env;
-      }
+    // Get consistent background position for this monster
+    let backgroundPosition = this.backgroundOffsets.get(monster.key);
+    if (!backgroundPosition) {
+      const randomX = Math.floor(Math.random() * 60) + 20; // 20-80%
+      const randomY = Math.floor(Math.random() * 60) + 20; // 20-80%
+      backgroundPosition = `${randomX}% ${randomY}%`;
+      this.backgroundOffsets.set(monster.key, backgroundPosition);
     }
 
-    return 'Forest'; // Default fallback
+    // Format the details line: CR X | CreatureType | *TagLine*
+    let details = `CR ${monster.cr}`;
+    if (monster.creature_type) {
+      details += ` | ${monster.creature_type}`;
+    }
+    if (monster.tag_line) {
+      details += ` | ${monster.tag_line}`;
+    }
+
+    return html`
+      <div>
+        <div
+          class="monster-row ${isSelected ? 'selected' : ''}"
+          style="background-image: url('${monster.background_image || ''}'); background-position: ${backgroundPosition};"
+          @click=${() => this.toggleMonsterDrawer(monster.key)}
+          @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
+          <div class="monster-info">
+            <div class="monster-name">${monster.name}</div>
+            <div class="monster-details">${details}</div>
+          </div>
+        </div>
+        ${isExpanded ? html`
+          <div class="monster-drawer">
+            <monster-statblock
+              monster-key="${monster.key}"
+              link-header
+              hide-buttons="false"
+            ></monster-statblock>
+          </div>
+        ` : ''}
+      </div>
+    `;
   }
 
-  private inferRole(template: string): string {
-    const roleMap: Record<string, string> = {
-      'brute': 'Brute',
-      'warrior': 'Brute',
-      'berserker': 'Brute',
-      'giant': 'Brute',
-      'ogre': 'Brute',
-      'striker': 'Striker',
-      'assassin': 'Striker',
-      'rogue': 'Striker',
-      'archer': 'Striker',
-      'controller': 'Controller',
-      'mage': 'Controller',
-      'wizard': 'Controller',
-      'sorcerer': 'Controller',
-      'defender': 'Defender',
-      'guard': 'Defender',
-      'knight': 'Defender',
-      'paladin': 'Defender'
-    };
-
-    for (const [key, role] of Object.entries(roleMap)) {
-      if (template.toLowerCase().includes(key)) {
-        return role;
-      }
+  private groupMonsters(monsters: MonsterInfo[]): Record<string, MonsterInfo[]> {
+    if (this.groupBy === 'relevance') {
+      // For relevance, return all monsters in a single group to maintain search order
+      return { 'Search Results': monsters };
     }
 
-    // Infer by creature type
-    const template_lower = template.toLowerCase();
-    if (template_lower.includes('giant') || template_lower.includes('troll') || template_lower.includes('ogre')) {
-      return 'Brute';
-    }
-    if (template_lower.includes('mage') || template_lower.includes('wizard') || template_lower.includes('lich')) {
-      return 'Controller';
-    }
-    if (template_lower.includes('guard') || template_lower.includes('knight')) {
-      return 'Defender';
-    }
-
-    return 'Striker'; // Default fallback
-  }
-
-  private inferFamily(template: string): string {
-    // Extract the base creature family from template
-    const familyMap: Record<string, string> = {
-      'skeleton': 'Undead',
-      'zombie': 'Undead',
-      'lich': 'Undead',
-      'ghost': 'Undead',
-      'wight': 'Undead',
-      'orc': 'Orc',
-      'goblin': 'Goblinoid',
-      'giant': 'Giant',
-      'ogre': 'Giant',
-      'troll': 'Giant',
-      'dragon': 'Dragon',
-      'basilisk': 'Monstrosity',
-      'chimera': 'Monstrosity',
-      'manticore': 'Monstrosity',
-      'wolf': 'Beast',
-      'bear': 'Beast'
-    };
-
-    for (const [key, family] of Object.entries(familyMap)) {
-      if (template.toLowerCase().includes(key)) {
-        return family;
-      }
-    }
-
-    // Capitalize the first word of the template as family
-    return template.split('-')[0].charAt(0).toUpperCase() + template.split('-')[0].slice(1);
-  }
-
-  private generateTagLine(name: string, template: string): string {
-    const tagLines: Record<string, string> = {
-      'skeleton': 'Fragments of a soul bound to bleached bones.',
-      'zombie': 'Shambling relentless hordes driven by undeath.',
-      'orc': 'Bloodrage-fueled ancestral warriors with fierce tribal loyalty.',
-      'goblin': 'Little balls of mischief and mayhem.',
-      'troll': 'Hulking regenerating brutes with insatiable hunger.',
-      'giant': 'Primordial creatures, living walking bones of the earth.',
-      'dragon': 'Ancient, intelligent, and devastatingly powerful.',
-      'basilisk': 'Reptilian predators with petrifying gaze and venomous bite.',
-      'wolf': 'Pack hunters with keen senses and fierce loyalty.',
-      'mage': 'Masters of arcane magicks and forbidden knowledge.'
-    };
-
-    for (const [key, tagLine] of Object.entries(tagLines)) {
-      if (template.toLowerCase().includes(key)) {
-        return tagLine;
-      }
-    }
-
-    return `A formidable ${template.replace(/-/g, ' ')} ready to challenge adventurers.`;
-  }
-
-  private getMonsterImage(template: string): string {
-    // Map templates to existing monster images
-    const imageMap: Record<string, string> = {
-      'skeleton': '/img/monsters/skeleton.webp',
-      'zombie': '/img/monsters/zombie.webp',
-      'orc': '/img/monsters/orc.webp',
-      'goblin': '/img/monsters/goblin.webp',
-      'troll': '/img/monsters/troll.webp',
-      'giant': '/img/monsters/frost-giant.webp',
-      'frost-giant': '/img/monsters/frost-giant.webp',
-      'dragon': '/img/monsters/dragon.webp',
-      'basilisk': '/img/monsters/basilisk.webp',
-      'wolf': '/img/monsters/wolf.webp',
-      'mage': '/img/monsters/mage.webp',
-      'knight': '/img/monsters/knight.webp',
-      'guard': '/img/monsters/guard.webp'
-    };
-
-    for (const [key, image] of Object.entries(imageMap)) {
-      if (template.toLowerCase().includes(key)) {
-        return image;
-      }
-    }
-
-    // Default fallback image
-    return '/img/monsters/default.webp';
-  }
-
-  private applyFilters() {
-    let filtered = [...this.monsters];
-
-    // Apply search query
-    if (this.filters.query.trim()) {
-      const query = this.filters.query.toLowerCase();
-      filtered = filtered.filter(monster => 
-        monster.name.toLowerCase().includes(query) ||
-        monster.creatureType.toLowerCase().includes(query) ||
-        monster.environment?.toLowerCase().includes(query) ||
-        monster.role?.toLowerCase().includes(query) ||
-        monster.family?.toLowerCase().includes(query) ||
-        monster.tagLine?.toLowerCase().includes(query)
-      );
-    }
-
-    // Apply creature type filter
-    if (this.filters.creatureTypes.length > 0) {
-      filtered = filtered.filter(monster => 
-        this.filters.creatureTypes.includes(monster.creatureType)
-      );
-    }
-
-    // Apply environment filter
-    if (this.filters.environments.length > 0) {
-      filtered = filtered.filter(monster => 
-        monster.environment && this.filters.environments.includes(monster.environment)
-      );
-    }
-
-    // Apply role filter
-    if (this.filters.roles.length > 0) {
-      filtered = filtered.filter(monster => 
-        monster.role && this.filters.roles.includes(monster.role)
-      );
-    }
-
-    // Apply CR range filter
-    filtered = filtered.filter(monster => {
-      const cr = typeof monster.cr === 'string' ? parseFloat(monster.cr) : monster.cr;
-      return cr >= this.filters.crMin && cr <= this.filters.crMax;
-    });
-
-    this.filteredMonsters = filtered;
-    this.groupMonsters();
-  }
-
-  private groupMonsters() {
-    const groups = new Map<string, MonsterCardData[]>();
-    
-    for (const monster of this.filteredMonsters) {
+    const groups: Record<string, MonsterInfo[]> = {};
+    monsters.forEach(monster => {
       let groupKey: string;
-      
-      switch (this.filters.organizeBy) {
+      switch (this.groupBy) {
         case 'family':
-          groupKey = monster.family || 'Other';
+          groupKey = monster.monsterFamilies?.[0] || 'Other';
           break;
         case 'challenge':
-          const cr = typeof monster.cr === 'string' ? parseFloat(monster.cr) : monster.cr;
-          if (cr < 1) groupKey = 'CR 0-1';
-          else if (cr < 5) groupKey = 'CR 1-4';
-          else if (cr < 11) groupKey = 'CR 5-10';
-          else if (cr < 17) groupKey = 'CR 11-16';
-          else groupKey = 'CR 17+';
+          groupKey = `Challenge Rating ${monster.cr}`;
           break;
         case 'name':
           groupKey = monster.name.charAt(0).toUpperCase();
           break;
         default:
-          groupKey = 'All';
+          groupKey = 'Other';
       }
-
-      if (!groups.has(groupKey)) {
-        groups.set(groupKey, []);
+      if (!groups[groupKey]) {
+        groups[groupKey] = [];
       }
-      groups.get(groupKey)!.push(monster);
-    }
-
-    // Sort groups and monsters within groups
-    const sortedGroups = new Map();
-    const sortedKeys = Array.from(groups.keys()).sort();
-    
-    for (const key of sortedKeys) {
-      const monsters = groups.get(key)!;
-      monsters.sort((a, b) => a.name.localeCompare(b.name));
-      sortedGroups.set(key, monsters);
-    }
-
-    this.groupedMonsters = sortedGroups;
-  }
-
-  private toggleFilters() {
-    this.isFiltersExpanded = !this.isFiltersExpanded;
+      groups[groupKey].push(monster);
+    });
+    const sortedGroups: Record<string, MonsterInfo[]> = {};
+    Object.keys(groups).sort().forEach(key => {
+      sortedGroups[key] = groups[key].sort((a, b) => a.name.localeCompare(b.name));
+    });
+    return sortedGroups;
   }
 
   private handleSearchInput(e: Event) {
-    const target = e.target as HTMLInputElement;
-    this.filters = { ...this.filters, query: target.value };
-    this.applyFilters();
-  }
-
-  private toggleFilterTag(category: keyof FilterState, value: string) {
-    const currentValues = this.filters[category] as string[];
-    const newValues = currentValues.includes(value)
-      ? currentValues.filter(v => v !== value)
-      : [...currentValues, value];
-    
-    this.filters = { ...this.filters, [category]: newValues };
-    this.applyFilters();
-  }
-
-  private setOrganizeBy(organizeBy: FilterState['organizeBy']) {
-    this.filters = { ...this.filters, organizeBy };
-    this.groupMonsters();
-  }
-
-  private handleCrChange(e: Event) {
-    const target = e.target as HTMLInputElement;
-    const value = parseInt(target.value);
-    
-    if (target.classList.contains('cr-min')) {
-      this.filters = { ...this.filters, crMin: value };
-    } else {
-      this.filters = { ...this.filters, crMax: value };
+    const input = e.target as HTMLInputElement;
+    // Debounce search: only update query after 1s of no typing
+    const value = input.value;
+    if (this.searchDebounceTimer) {
+      clearTimeout(this.searchDebounceTimer);
     }
-    
-    this.applyFilters();
+    this.searchDebounceTimer = window.setTimeout(() => {
+      this.query = value;
+    }, 1000);
   }
 
-  private handleMonsterClick(monster: MonsterCardData) {
-    // Navigate to monster page
-    window.location.href = `/monsters/${monster.template}/`;
+  private toggleCreatureType(type: string) {
+    if (this.selectedCreatureTypes?.includes(type)) {
+      this.selectedCreatureTypes = this.selectedCreatureTypes.filter(t => t !== type);
+    } else {
+      this.selectedCreatureTypes = [...this.selectedCreatureTypes, type];
+    }
+  }
+  private handleMinCrChange(e: Event) {
+    const input = e.target as HTMLInputElement;
+    const value = parseInt(input.value);
+
+    // Update temp value for immediate visual feedback
+    this.tempMinCr = value;
+    this.requestUpdate();
+
+    // Debounce the actual filter update
+    if (this.crDebounceTimer) {
+      clearTimeout(this.crDebounceTimer);
+    }
+    this.crDebounceTimer = window.setTimeout(() => {
+      this.minCr = value === 0 ? undefined : value;
+      this.tempMinCr = undefined;
+    }, 300);
   }
 
-  private handleForgeClick(e: Event, monster: MonsterCardData) {
-    e.stopPropagation();
-    // Navigate to generator with this monster
-    window.location.href = `/generate/?monster=${monster.key}`;
+  private handleMaxCrChange(e: Event) {
+    const input = e.target as HTMLInputElement;
+    const value = parseInt(input.value);
+
+    // Update temp value for immediate visual feedback
+    this.tempMaxCr = value;
+    this.requestUpdate();
+
+    // Debounce the actual filter update
+    if (this.crDebounceTimer) {
+      clearTimeout(this.crDebounceTimer);
+    }
+    this.crDebounceTimer = window.setTimeout(() => {
+      this.maxCr = value === 30 ? undefined : value;
+      this.tempMaxCr = undefined;
+    }, 300);
   }
 
-  private handleShareClick(e: Event, monster: MonsterCardData) {
-    e.stopPropagation();
-    // TODO: Implement sharing functionality
-    console.log('Share monster:', monster);
+  private setGroupBy(groupBy: 'family' | 'challenge' | 'name' | 'relevance') {
+    this.groupBy = groupBy;
+    this.requestUpdate();
   }
 
-  render() {
-    return html`
-      <div class="codex-container">
-        <header class="codex-header">
-          <button class="hamburger-button" @click=${this.toggleFilters}>
-            ☰
-          </button>
-          <h1 class="codex-title">Foe Foundry Monster Codex</h1>
-        </header>
-
-        <section class="search-section">
-          <div class="search-bar">
-            <svg class="search-icon" viewBox="0 0 24 24" fill="currentColor">
-              <path d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"/>
-            </svg>
-            <input 
-              type="text" 
-              class="search-input"
-              placeholder="Search monster name..."
-              .value=${this.filters.query}
-              @input=${this.handleSearchInput}
-            />
-          </div>
-
-          <div class="filters-section">
-            <div class="filters-header" @click=${this.toggleFilters}>
-              <span>Filters</span>
-              <svg class="filters-chevron ${this.isFiltersExpanded ? 'expanded' : ''}" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-              </svg>
-            </div>
-            
-            <div class="filters-content ${this.isFiltersExpanded ? 'expanded' : ''}">
-              <div class="filter-group">
-                <label class="filter-label">Creature Type</label>
-                <div class="filter-tags">
-                  ${['Aberration', 'Beast', 'Celestial', 'Construct', 'Dragon', 'Elemental', 'Fey', 'Fiend', 'Giant', 'Humanoid', 'Monstrosity', 'Ooze', 'Plant', 'Undead'].map(type => html`
-                    <span 
-                      class="filter-tag ${this.filters.creatureTypes.includes(type) ? 'active' : ''}"
-                      @click=${() => this.toggleFilterTag('creatureTypes', type)}
-                    >
-                      ${type}
-                    </span>
-                  `)}
-                </div>
-              </div>
-
-              <div class="filter-group">
-                <label class="filter-label">Environment</label>
-                <div class="filter-tags">
-                  ${['Arctic', 'Desert', 'Forest', 'Mountain', 'Swamp', 'Urban', 'Underwater', 'Underground'].map(env => html`
-                    <span 
-                      class="filter-tag ${this.filters.environments.includes(env) ? 'active' : ''}"
-                      @click=${() => this.toggleFilterTag('environments', env)}
-                    >
-                      ${env}
-                    </span>
-                  `)}
-                </div>
-              </div>
-
-              <div class="filter-group">
-                <label class="filter-label">Role</label>
-                <div class="filter-tags">
-                  ${['Brute', 'Controller', 'Defender', 'Striker'].map(role => html`
-                    <span 
-                      class="filter-tag ${this.filters.roles.includes(role) ? 'active' : ''}"
-                      @click=${() => this.toggleFilterTag('roles', role)}
-                    >
-                      ${role}
-                    </span>
-                  `)}
-                </div>
-              </div>
-
-              <div class="filter-group">
-                <label class="filter-label">Challenge Rating</label>
-                <div class="cr-slider-container">
-                  <input 
-                    type="range" 
-                    class="cr-slider cr-min"
-                    min="0" 
-                    max="20" 
-                    .value=${this.filters.crMin.toString()}
-                    @input=${this.handleCrChange}
-                  />
-                  <input 
-                    type="range" 
-                    class="cr-slider cr-max"
-                    min="0" 
-                    max="20" 
-                    .value=${this.filters.crMax.toString()}
-                    @input=${this.handleCrChange}
-                  />
-                  <div class="cr-range-display">
-                    CR: ${this.filters.crMin} - ${this.filters.crMax}
-                  </div>
-                </div>
-              </div>
-
-              <div class="filter-group">
-                <label class="filter-label">Organize Monsters By:</label>
-                <div class="organize-section">
-                  <button 
-                    class="organize-button ${this.filters.organizeBy === 'family' ? 'active' : ''}"
-                    @click=${() => this.setOrganizeBy('family')}
-                  >
-                    Family
-                  </button>
-                  <button 
-                    class="organize-button ${this.filters.organizeBy === 'challenge' ? 'active' : ''}"
-                    @click=${() => this.setOrganizeBy('challenge')}
-                  >
-                    Challenge
-                  </button>
-                  <button 
-                    class="organize-button ${this.filters.organizeBy === 'name' ? 'active' : ''}"
-                    @click=${() => this.setOrganizeBy('name')}
-                  >
-                    Name
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="monsters-section">
-          ${Array.from(this.groupedMonsters.entries()).map(([groupName, monsters]) => html`
-            <div class="monster-group">
-              <div class="group-header">
-                <h2 class="group-title">${groupName}</h2>
-                <span class="group-count">${monsters.length} monster${monsters.length !== 1 ? 's' : ''}</span>
-              </div>
-              <div class="monster-grid">
-                ${monsters.map(monster => this.renderMonsterCard(monster))}
-              </div>
-            </div>
-          `)}
-          
-          ${this.groupedMonsters.size === 0 ? html`
-            <div class="loading">
-              ${this.filteredMonsters.length === 0 ? 'No monsters found matching your criteria.' : 'Loading monsters...'}
-            </div>
-          ` : ''}
-        </section>
-      </div>
-    `;
+  private setContentTab(tab: 'preview' | 'lore' | 'encounters') {
+    this.contentTab = tab;
+    this.requestUpdate();
   }
 
-  private renderMonsterCard(monster: MonsterCardData) {
-    return html`
-      <div class="monster-card" @click=${() => this.handleMonsterClick(monster)}>
-        <div 
-          class="monster-card-image"
-          style=${monster.backgroundImage ? `background-image: url(${monster.backgroundImage})` : ''}
-        >
-          <div class="monster-card-overlay">
-            <h3 class="monster-card-name">${monster.name}</h3>
-            <p class="monster-card-cr">CR ${monster.cr} | ${monster.role || 'Unknown Role'}</p>
-          </div>
-        </div>
-        
-        <div class="monster-card-content">
-          <div class="monster-card-tags">
-            <span class="monster-tag creature-type">${monster.creatureType}</span>
-            ${monster.family ? html`<span class="monster-tag family">${monster.family}</span>` : ''}
-            ${monster.environment ? html`<span class="monster-tag environment">${monster.environment}</span>` : ''}
-          </div>
-          
-          ${monster.tagLine ? html`
-            <p class="monster-card-description">${monster.tagLine}</p>
-          ` : ''}
-          
-          <div class="monster-card-actions">
-            <button 
-              class="action-button forge-button"
-              @click=${(e: Event) => this.handleForgeClick(e, monster)}
-            >
-              Forge
-            </button>
-            <button 
-              class="action-button share-button"
-              @click=${(e: Event) => this.handleShareClick(e, monster)}
-            >
-              Share
-            </button>
-          </div>
-        </div>
-      </div>
-    `;
+  private selectMonster(monster: Monster) {
+    this.selectedMonster = monster;
   }
-}
 
-declare global {
-  interface HTMLElementTagNameMap {
-    'monster-codex': MonsterCodex;
+  private async selectMonsterByKey(key: string) {
+    try {
+      const monster = await this.apiStore.getMonster(key);
+      if (monster) {
+        this.selectedMonster = monster;
+        this.selectedMonsterKey = key; // Mark as explicitly selected for sticky behavior
+      }
+    } catch (e) {
+      console.error('Error selecting monster by key:', e);
+    }
+  }
+
+  private toggleMonsterDrawer(key: string) {
+    if (this.expandedMonsterKey === key) {
+      // Close if already expanded
+      this.expandedMonsterKey = null;
+    } else {
+      // Open drawer for this monster and also select it for preview
+      this.expandedMonsterKey = key;
+      this.selectMonsterByKey(key);
+    }
+  }
+
+  private previewMonsterByKey(key: string) {
+    // Only update preview if no monster is explicitly selected (sticky behavior)
+    if (this.selectedMonsterKey === null) {
+      this.apiStore.getMonster(key).then(monster => {
+        if (monster) {
+          this.selectedMonster = monster;
+        }
+      });
+    }
+  }
+
+  private hasActiveFilters() {
+    return this.query !== '' || this.selectedCreatureTypes.length > 0 || this.minCr !== undefined || this.maxCr !== undefined;
+  }
+
+  private getActiveFilterCount() {
+    let count = 0;
+    if (this.query !== '') count++;
+    count += this.selectedCreatureTypes.length;
+    if (this.minCr !== undefined) count++;
+    if (this.maxCr !== undefined) count++;
+    return count;
+  }
+
+  private toggleFiltersPanel() {
+    this.filtersPanelVisible = !this.filtersPanelVisible;
+  }
+
+  private clearAllFilters() {
+    this.query = '';
+    this.selectedCreatureTypes = [];
+    this.selectedEnvironments = [];
+    this.selectedRoles = [];
+    this.minCr = undefined;
+    this.maxCr = undefined;
+    this.selectedMonsterKey = null; // Clear sticky selection
+    this.selectedMonster = null;
+    this.expandedMonsterKey = null; // Close any open drawer
+    // Task will auto-update
+  }
+
+  private async loadInitialData() {
+    try {
+      const facets = await this.searchApi.getFacets();
+      this.facets = facets;
+    } catch (e) {
+      console.error('Error loading initial data:', e);
+    }
+  }
+
+  updated(changedProperties: Map<string | number | symbol, unknown>) {
+    super.updated(changedProperties);
+    if (changedProperties.has('selectedMonster') || changedProperties.has('monsters')) {
+      this.requestUpdate();
+    }
   }
 }

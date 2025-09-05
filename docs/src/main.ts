@@ -12,6 +12,8 @@ import './components/ForgeButton';
 import './components/GeneratorShowcase';
 import './components/SvgIconButton';
 import './components/EmailSubscribeCallout';
+import './components/MonsterCodex';
+import './components/MonsterCardPreview';
 import './components/StatblockTutorial';
 import './pages/generate';
 import './pages/tutorial';
