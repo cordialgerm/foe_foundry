@@ -15,7 +15,7 @@ export class MonsterCodex extends LitElement {
   @state() private selectedRoles: string[] = [];
   @state() private minCr?: number;
   @state() private maxCr?: number;
-  @state() private groupBy: 'family' | 'challenge' | 'name' = 'family';
+  @state() private groupBy: 'family' | 'challenge' | 'name' | 'relevance' = 'family';
   @state() private monsters: MonsterInfo[] = [];
   @state() private facets: SearchFacets | null = null;
   @state() private selectedMonster: Monster | null = null;
@@ -267,6 +267,84 @@ export class MonsterCodex extends LitElement {
       font-family: var(--primary-font);
       font-size: 0.9rem;
       margin-top: 0.5rem;
+    }
+
+    .cr-slider-container {
+      margin-top: 1rem;
+      position: relative;
+    }
+
+    .cr-slider-wrapper {
+      position: relative;
+      height: 40px;
+      background: var(--muted-color);
+      border-radius: 6px;
+      border: 1px solid var(--primary-color);
+    }
+
+    .cr-slider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      pointer-events: none;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .cr-slider::-webkit-slider-track {
+      background: transparent;
+      height: 100%;
+    }
+
+    .cr-slider::-webkit-slider-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+      height: 36px;
+      width: 20px;
+      background: var(--primary-color);
+      border-radius: 4px;
+      cursor: pointer;
+      pointer-events: auto;
+      border: 2px solid var(--fg-color);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .cr-slider::-moz-range-track {
+      background: transparent;
+      height: 100%;
+      border: none;
+    }
+
+    .cr-slider::-moz-range-thumb {
+      height: 32px;
+      width: 16px;
+      background: var(--primary-color);
+      border-radius: 4px;
+      cursor: pointer;
+      pointer-events: auto;
+      border: 2px solid var(--fg-color);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .cr-slider-track {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      height: 6px;
+      background: var(--primary-faded-color);
+      border-radius: 3px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .cr-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--primary-muted-color);
     }
 
     /* Monster list styles */
@@ -581,7 +659,33 @@ export class MonsterCodex extends LitElement {
               <div class="cr-range">
                 CR ${this.minCr || facets.crRange.min || 0} - ${this.maxCr || facets.crRange.max || 30}
               </div>
-              <!-- TODO: Add CR range slider here -->
+              <div class="cr-slider-container">
+                <div class="cr-slider-wrapper">
+                  <div class="cr-slider-track"></div>
+                  <input
+                    type="range"
+                    class="cr-slider"
+                    min="0"
+                    max="30"
+                    .value=${String(this.minCr || 0)}
+                    @input=${this.handleMinCrChange}
+                    style="z-index: 2;"
+                  />
+                  <input
+                    type="range"
+                    class="cr-slider"
+                    min="0"
+                    max="30"
+                    .value=${String(this.maxCr || 30)}
+                    @input=${this.handleMaxCrChange}
+                    style="z-index: 1;"
+                  />
+                </div>
+                <div class="cr-labels">
+                  <span>CR 0</span>
+                  <span>CR 30</span>
+                </div>
+              </div>
             </div>
             <div class="filter-section">
               <h4>Organize Monsters By</h4>
@@ -600,6 +704,11 @@ export class MonsterCodex extends LitElement {
                   class="group-btn ${this.groupBy === 'name' ? 'active' : ''}"
                   @click=${() => this.setGroupBy('name')}>
                   Name
+                </button>
+                <button
+                  class="group-btn ${this.groupBy === 'relevance' ? 'active' : ''}"
+                  @click=${() => this.setGroupBy('relevance')}>
+                  Relevance
                 </button>
               </div>
             </div>
@@ -678,7 +787,7 @@ export class MonsterCodex extends LitElement {
     const groupedMonsters = this.groupMonsters(monsters);
     return html`
       ${Object.entries(groupedMonsters).map(([groupName, monsters]) => html`
-        <div class="group-header">${groupName}</div>
+        ${this.groupBy === 'relevance' ? html`` : html`<div class="group-header">${groupName}</div>`}
         ${monsters.map(monster => this.renderMonsterRow(monster))}
       `)}
     `;
@@ -711,6 +820,11 @@ export class MonsterCodex extends LitElement {
   }
 
   private groupMonsters(monsters: MonsterInfo[]): Record<string, MonsterInfo[]> {
+    if (this.groupBy === 'relevance') {
+      // For relevance, return all monsters in a single group to maintain search order
+      return { 'Search Results': monsters };
+    }
+
     const groups: Record<string, MonsterInfo[]> = {};
     monsters.forEach(monster => {
       let groupKey: string;
@@ -758,7 +872,19 @@ export class MonsterCodex extends LitElement {
       this.selectedCreatureTypes = [...this.selectedCreatureTypes, type];
     }
   }
-  private setGroupBy(groupBy: 'family' | 'challenge' | 'name') {
+  private handleMinCrChange(e: Event) {
+    const input = e.target as HTMLInputElement;
+    const value = parseInt(input.value);
+    this.minCr = value === 0 ? undefined : value;
+  }
+
+  private handleMaxCrChange(e: Event) {
+    const input = e.target as HTMLInputElement;
+    const value = parseInt(input.value);
+    this.maxCr = value === 30 ? undefined : value;
+  }
+
+  private setGroupBy(groupBy: 'family' | 'challenge' | 'name' | 'relevance') {
     this.groupBy = groupBy;
     this.requestUpdate();
   }

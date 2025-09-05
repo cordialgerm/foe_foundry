@@ -30,6 +30,11 @@ export class MonsterCardPreview extends LitElement {
       outline-offset: 2px;
     }
 
+    :host(:hover) {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(255, 55, 55, 0.2);
+    }
+
     .preview-card {
       position: relative;
       border-radius: var(--medium-margin);
@@ -179,7 +184,7 @@ export class MonsterCardPreview extends LitElement {
     const environments = this.getEnvironments();
 
     return html`
-      <div class="preview-card ${this.compact ? 'compact' : 'full'}">
+      <div class="preview-card ${this.compact ? 'compact' : 'full'}" @click=${this.handleCardClick}>
         <monster-art
           monster-image="${String(this.monster.image || '')}"
           background-image="${String(this.monster.backgroundImage || '')}"
@@ -216,6 +221,19 @@ export class MonsterCardPreview extends LitElement {
     // For now, return empty array since the existing Monster interface doesn't have environments
     // This could be enhanced when the API provides environment data
     return [];
+  }
+
+  private handleCardClick(e: Event) {
+    // Don't navigate if clicking on action buttons
+    const target = e.target as HTMLElement;
+    if (target.closest('.action-btn')) {
+      return;
+    }
+    
+    // Navigate to monster page
+    if (this.monster?.monsterTemplate) {
+      window.location.href = `/monsters/${this.monster.monsterTemplate}/#`;
+    }
   }
 
   private handleForgeClick(e: Event) {
