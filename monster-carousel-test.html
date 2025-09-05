@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Carousel Component Test</title>
+    <meta name="description" content="Test page for the MonsterCarousel component with different filter types." />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Site CSS - mimicking the main site styles -->
+    <style>
+        :root {
+            --primary-color: #ff6b35;
+            --secondary-color: #f7931e;
+            --accent-color: #ffcc02;
+            --tertiary-color: #c5c3c6;
+            --danger-color: #dc3545;
+            --bs-dark: #212529;
+            --bs-light: #f8f9fa;
+            --fg-color: #ffffff;
+            --card-bg-color: #2d2d30;
+            --card-title-color: #ffffff;
+            --card-title-highlight-color: #ffffff;
+            --primary-faded-color: rgba(255, 107, 53, 0.3);
+            --medium-margin: 8px;
+            --header-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --stylistic-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --primary-font-size: 14px;
+        }
+        
+        body {
+            background-color: #1a1a1a;
+            color: var(--fg-color);
+            font-family: var(--header-font);
+            margin: 0;
+            padding: 2rem;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            font-family: var(--header-font);
+            text-align: center;
+        }
+        
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            border: 1px solid var(--tertiary-color);
+            border-radius: var(--medium-margin);
+            background-color: rgba(45, 45, 48, 0.5);
+        }
+        
+        .description {
+            text-align: center;
+            margin: 1rem 0;
+            color: var(--tertiary-color);
+        }
+        
+        /* Console log styles */
+        .debug-console {
+            background: #000;
+            color: #00ff00;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+        
+        .api-test {
+            background: rgba(255, 107, 53, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .test-button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+        
+        .test-button:hover {
+            background: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>Monster Carousel Component Test</h1>
+    <p class="description">This page tests the MonsterCarousel component with different filter types.</p>
+    
+    <!-- Test 1: Family Filter -->
+    <div class="section">
+        <h2>Test 1: Family Filter (Criminals)</h2>
+        <p class="description">Should show assassins, bandits, spies, thugs, etc.</p>
+        <monster-carousel filter="family:criminals"></monster-carousel>
+    </div>
+    
+    <!-- Test 2: Search Query Filter -->
+    <div class="section">
+        <h2>Test 2: Search Query Filter (Dragon)</h2>
+        <p class="description">Should show monsters related to dragons.</p>
+        <monster-carousel filter="query:dragon"></monster-carousel>
+    </div>
+    
+    <!-- Test 3: New Monsters Filter -->
+    <div class="section">
+        <h2>Test 3: New Monsters Filter</h2>
+        <p class="description">Should show the newest monsters.</p>
+        <monster-carousel filter="new"></monster-carousel>
+    </div>
+    
+    <!-- Test 4: Invalid Filter -->
+    <div class="section">
+        <h2>Test 4: Invalid Filter</h2>
+        <p class="description">Should show an error message.</p>
+        <monster-carousel filter="invalid:test"></monster-carousel>
+    </div>
+    
+    <!-- Test 5: Empty Filter -->
+    <div class="section">
+        <h2>Test 5: Empty Filter</h2>
+        <p class="description">Should show nothing (empty carousel).</p>
+        <monster-carousel filter=""></monster-carousel>
+    </div>
+    
+    <!-- Debug Section -->
+    <div class="section">
+        <h2>Quick API Tests</h2>
+        <div class="api-test">
+            <button class="test-button" onclick="testApi()">Test APIs</button>
+            <div id="api-results" class="debug-console"></div>
+        </div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Component JS -->
+    <script type="module" src="./scripts/main.js"></script>
+    
+    <script>
+        // Debug console
+        const originalConsoleLog = console.log;
+        const originalConsoleWarn = console.warn;
+        const originalConsoleError = console.error;
+        
+        function addToDebugConsole(message, type = 'log') {
+            const debugConsoles = document.querySelectorAll('.debug-console');
+            const timestamp = new Date().toLocaleTimeString();
+            const logMessage = `[${timestamp}] ${type.toUpperCase()}: ${message}\n`;
+            debugConsoles.forEach(console => {
+                console.textContent += logMessage;
+                console.scrollTop = console.scrollHeight;
+            });
+        }
+        
+        console.log = function(...args) {
+            originalConsoleLog.apply(console, args);
+            addToDebugConsole(args.join(' '), 'INFO');
+        };
+        
+        console.warn = function(...args) {
+            originalConsoleWarn.apply(console, args);
+            addToDebugConsole(args.join(' '), 'WARN');
+        };
+        
+        console.error = function(...args) {
+            originalConsoleError.apply(console, args);
+            addToDebugConsole(args.join(' '), 'ERROR');
+        };
+        
+        // Test APIs
+        async function testApi() {
+            const results = document.getElementById('api-results');
+            results.textContent = 'Testing APIs...\n';
+            
+            const tests = [
+                { name: 'Family API: /api/v1/monsters/family/criminals', url: '/api/v1/monsters/family/criminals' },
+                { name: 'New Monsters API: /api/v1/monsters/new?limit=12', url: '/api/v1/monsters/new?limit=12' },
+                { name: 'Search API: /api/v1/search/monsters?query=dragon&limit=12', url: '/api/v1/search/monsters?query=dragon&limit=12' }
+            ];
+            
+            for (const test of tests) {
+                try {
+                    const response = await fetch(test.url);
+                    if (response.ok) {
+                        const data = await response.json();
+                        results.textContent += `✓ ${test.name}: OK (${data.length} results)\n`;
+                    } else {
+                        results.textContent += `✗ ${test.name}: ${response.status} ${response.statusText}\n`;
+                    }
+                } catch (error) {
+                    results.textContent += `✗ ${test.name}: ${error.message}\n`;
+                }
+            }
+        }
+        
+        // Check if Swiper is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.Swiper) {
+                console.log('Swiper loaded successfully');
+            } else {
+                console.warn('Swiper not loaded');
+            }
+        });
+    </script>
+</body>
+</html>
