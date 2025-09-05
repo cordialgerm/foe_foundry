@@ -7,6 +7,11 @@
     <title>Monster Carousel Component Test</title>
     <meta name="description" content="Test page for the MonsterCarousel component with different filter types." />
 
+    <script>
+        // Set the base URL for API calls
+        window.baseUrl = 'http://127.0.0.1:8080';
+    </script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -104,7 +109,8 @@
 
 <body>
     <h1>Monster Carousel Component Test</h1>
-    <p class="description">This page tests the MonsterCarousel component with different filter types using the monster templates API.</p>
+    <p class="description">This page tests the MonsterCarousel component with different filter types using the monster
+        templates API.</p>
 
     <!-- Test 1: Family Filter -->
     <div class="section">
@@ -156,10 +162,6 @@
     <!-- Component JS -->
     <script type="module" src="/scripts/main.js"></script>
 
-    <script>
-        // Set the base URL for API calls
-        window.baseUrl = 'http://127.0.0.1:8080';
-    </script>
 
     <script>
         // Debug console

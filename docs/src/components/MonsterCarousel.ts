@@ -226,10 +226,16 @@ export class MonsterCarousel extends LitElement {
       opacity: 0.85;
     }
 
+    /* For transparent edges, don't apply blend mode - just display image normally */
+    .transparent-edges .card-image {
+      mix-blend-mode: normal;
+      opacity: 1;
+    }
+
     .card-image.contain {
       object-fit: contain;
       object-position: center;
-      padding: 20px;
+      padding: 0px !important;
     }
 
     /* Alternative blend modes for different effects */
@@ -430,19 +436,35 @@ export class MonsterCarousel extends LitElement {
   private convertTemplateToMonsterData(template: MonsterTemplate): MonsterData {
     // Use the rich styling information provided by the template API
     let customStyle = '';
-    
+
     if (template.background_color) {
       customStyle = `background-color: ${template.background_color};`;
     } else {
-      // Fallback to gradient if no background color is specified
-      const gradients = [
-        'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);', // Blue to purple
-        'background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);', // Pink to red
-        'background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);', // Blue to cyan
-        'background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);', // Green to teal
-        'background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);', // Pink to yellow
-        'background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);', // Cyan to pink
-      ];
+      // Choose gradients based on whether the template is grayscale
+      let gradients: string[];
+
+      if (template.grayscale) {
+        // Light, muted gradients for grayscale templates
+        gradients = [
+          'background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);', // Light gray to lighter gray
+          'background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);', // Very light blue to pale blue
+          'background: linear-gradient(135deg, #f8f0ff 0%, #e7d9ff 100%);', // Very light purple to pale lavender
+          'background: linear-gradient(135deg, #f0f8f0 0%, #d4e6d4 100%);', // Very light green to pale mint
+          'background: linear-gradient(135deg, #fff8f0 0%, #f5e6d3 100%);', // Cream to light beige
+          'background: linear-gradient(135deg, #f8f8f8 0%, #ececec 100%);', // Light gray to medium gray
+        ];
+      } else {
+        // Original vibrant gradients for non-grayscale templates
+        gradients = [
+          'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);', // Blue to purple
+          'background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);', // Pink to red
+          'background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);', // Blue to cyan
+          'background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);', // Green to teal
+          'background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);', // Pink to yellow
+          'background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);', // Cyan to pink
+        ];
+      }
+
       const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
       customStyle = randomGradient;
     }
