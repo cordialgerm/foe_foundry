@@ -449,7 +449,6 @@ export class MonsterCarousel extends LitElement {
   `;
 
   private async fetchMonsterTemplates(filter: string): Promise<MonsterData[]> {
-    console.log('fetchMonsterTemplates called with filter:', filter);
     if (!filter) {
       return [];
     }
@@ -470,11 +469,8 @@ export class MonsterCarousel extends LitElement {
         throw new Error(`Invalid filter: ${filter}`);
       }
 
-      console.log('Fetched templates:', templates);
-
       // Convert MonsterTemplate to MonsterData format for rendering
       const result = templates.map(template => this.convertTemplateToMonsterData(template));
-      console.log('Final result:', result);
       return result;
     } catch (error) {
       console.error('Error in fetchMonsterTemplates:', error);
@@ -546,24 +542,13 @@ export class MonsterCarousel extends LitElement {
   }
 
   private initializeSwiper() {
-    console.log('initializeSwiper called');
+
     if (this.swiperInstance) {
-      console.log('Swiper already exists, returning');
+      //swiper already initialized
       return;
     }
 
-    const swiperContainer = this.shadowRoot?.querySelector('.swiper-container');
-    console.log('Swiper container found:', !!swiperContainer);
-    if (!swiperContainer) {
-      console.warn('No swiper container found in shadow root');
-      return;
-    }
-
-    // Check if Swiper is available
-    if (typeof Swiper === 'undefined') {
-      console.error('Swiper is not available. Make sure it is imported correctly.');
-      return;
-    }
+    const swiperContainer = this.shadowRoot!.querySelector('.swiper-container')!;
 
     // Breakpoints similar to homepage
     const breakpoints = {
@@ -590,8 +575,6 @@ export class MonsterCarousel extends LitElement {
     };
 
     try {
-      console.log('Creating Swiper instance...');
-      console.log('Available Swiper modules:', { Autoplay, Navigation, Keyboard, Parallax });
 
       // Force wrapper to be horizontal before initializing Swiper
       const wrapper = swiperContainer.querySelector('.swiper-wrapper') as HTMLElement;
@@ -601,6 +584,8 @@ export class MonsterCarousel extends LitElement {
         wrapper.style.alignItems = 'flex-start';
       }
 
+      const delay = 5000 + Math.random() * 3000;
+
       // Use configuration that matches homepage for consistent navigation
       this.swiperInstance = new Swiper(swiperContainer as HTMLElement, {
         modules: [Autoplay, Navigation, Keyboard, Parallax],
@@ -608,7 +593,7 @@ export class MonsterCarousel extends LitElement {
         spaceBetween: 16,
         initialSlide: 1,
         centeredSlides: true,
-        createElements: true, // This creates the navigation buttons automatically
+        //createElements: true, // This creates the navigation buttons automatically - but it didn't seem to work properly
         grabCursor: true,
         direction: 'horizontal', // Explicitly set horizontal direction
         keyboard: {
@@ -618,13 +603,12 @@ export class MonsterCarousel extends LitElement {
         parallax: true,
         simulateTouch: true,
         autoplay: {
-          delay: 6000,
+          delay: delay,
           disableOnInteraction: true,
         },
         breakpoints: breakpoints,
         on: {
           init: function (this: any) {
-            console.log('Swiper init callback called');
             this.el.classList.remove('preload');
           }
         }
@@ -640,8 +624,6 @@ export class MonsterCarousel extends LitElement {
           }
         }
       });
-
-      console.log('Swiper initialized successfully');
     } catch (error) {
       console.warn('Failed to initialize Swiper:', error);
     }
@@ -649,14 +631,6 @@ export class MonsterCarousel extends LitElement {
 
   updated(changedProperties: any) {
     super.updated(changedProperties);
-
-    // Debug logging
-    console.log('MonsterCarousel updated:', {
-      filter: this.filter,
-      taskStatus: this.templatesTask.status,
-      hasSwiper: !!this.swiperInstance,
-      swiperAvailable: typeof Swiper !== 'undefined'
-    });
 
     // Clean up Swiper when filter changes
     if (changedProperties.has('filter') && this.swiperInstance) {
@@ -667,7 +641,6 @@ export class MonsterCarousel extends LitElement {
     // Only reinitialize Swiper when templates data is loaded and rendered
     // TaskStatus.COMPLETE = 2 in @lit/task
     if (this.templatesTask.status === 2 && !this.swiperInstance) {
-      console.log('Attempting to initialize Swiper...');
       // Wait for the next frame to ensure DOM is fully rendered
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
@@ -686,14 +659,11 @@ export class MonsterCarousel extends LitElement {
   }
 
   render() {
-    console.log('MonsterCarousel render() called, filter:', this.filter);
     return this.templatesTask.render({
       pending: () => {
-        console.log('Task pending state');
         return html`<div class="loading">Loading monster templates...</div>`;
       },
       complete: (templates) => {
-        console.log('Task complete state, templates:', templates);
         if (templates.length === 0) {
           return html`<div class="no-monsters">No monster templates found for this filter.</div>`;
         }
