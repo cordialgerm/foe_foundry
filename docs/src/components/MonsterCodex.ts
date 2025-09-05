@@ -26,7 +26,7 @@ export class MonsterCodex extends LitElement {
   @state() private facets: SearchFacets | null = null;
   @state() private selectedMonster: Monster | null = null;
   @state() private loading = false;
-  @state() private filtersPanelVisible = window.innerWidth >= 900; // Hidden by default on medium screens
+  @state() private filtersPanelVisible = false; // Hidden by default for mobile-first design
   @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
   @state() private contentTab: 'preview' | 'lore' | 'encounters' = 'preview';
   @state() private expandedMonsterKey: string | null = null; // Track which monster row has its drawer expanded
@@ -67,111 +67,214 @@ export class MonsterCodex extends LitElement {
     :host {
       --border-color: var(--fg-color);
       display: block;
-      height: 100%;
-      overflow: hidden;
+      min-height: 100vh;
+      background: var(--bg-color);
     }
 
+    /* Mobile-first: Single column layout */
     .codex-container {
-      display: grid;
-      grid-template-columns: 340px 1fr 400px;
-      height: 100%;
-      gap: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    .codex-container.filters-hidden {
-      grid-template-columns: 0 1fr 400px;
+    /* Desktop: Three column layout when screen is wide enough */
+    @media (min-width: 1040px) {
+      .codex-container {
+        display: grid;
+        grid-template-columns: 340px 1fr 400px;
+        height: 100vh;
+        gap: 0;
+      }
+
+      .codex-container.filters-hidden {
+        grid-template-columns: 0 1fr 400px;
+      }
     }
 
+    /* Mobile: Collapsible filters panel */
     .filters-panel {
-      border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
-      padding: 1rem;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      width: 300px;
-      transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
-      border-right: 2px solid var(--border-color);
-      border-top: 2px solid var(--border-color);
-      border-bottom: 2px solid var(--border-color);
-      position: relative;
-      backdrop-filter: blur(5px);
+      order: 2;
+      background: var(--bg-color);
+      border: 2px solid var(--border-color);
+      border-radius: var(--medium-margin);
+      margin: 1rem;
+      transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      overflow: hidden;
     }
 
     .filters-panel.hidden {
-      width: 0;
-      padding: 0;
-      overflow: hidden;
-      border-right: none;
-      border-top: none;
-      border-bottom: none;
+      max-height: 0;
+      opacity: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      border: none;
+    }
+
+    .filters-panel:not(.hidden) {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    /* Desktop: Side panel */
+    @media (min-width: 1040px) {
+      .filters-panel {
+        order: unset;
+        margin: 0;
+        border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
+        padding: 1rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 300px;
+        transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+        border-right: 2px solid var(--border-color);
+        border-top: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
+        border-left: none;
+        position: relative;
+        backdrop-filter: blur(5px);
+        max-height: unset;
+        opacity: 1;
+      }
+
+      .filters-panel.hidden {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        max-height: unset;
+        opacity: 1;
+        margin: 0;
+      }
     }
 
     .filters-container {
       padding: 1rem;
     }
 
+    /* Mobile: Hide panel divider */
     .panel-divider {
-      position: absolute;
-      top: 50%;
-      right: -12px;
-      transform: translateY(-50%);
-      background: var(--fg-color);
-      color: var(--primary-color);
-      border: none;
-      width: 24px;
-      height: 48px;
-      border-radius: 0 6px 6px 0;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      z-index: 3;
-      transition: all 0.2s ease;
-      border: 1px solid var(--border-color);
-      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+      display: none;
     }
 
-    .panel-divider:hover {
-      background: var(--primary-muted-color);
-      transform: translateY(-50%) scale(1.1);
+    /* Desktop: Show panel divider */
+    @media (min-width: 1040px) {
+      .panel-divider {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        transform: translateY(-50%);
+        background: var(--fg-color);
+        color: var(--primary-color);
+        border: none;
+        width: 24px;
+        height: 48px;
+        border-radius: 0 6px 6px 0;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        z-index: 3;
+        transition: all 0.2s ease;
+        border: 1px solid var(--border-color);
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .panel-divider:hover {
+        background: var(--primary-muted-color);
+        transform: translateY(-50%) scale(1.1);
+      }
     }
 
+    /* Mobile: Monster list takes full width */
     .monster-list-panel {
+      order: 3;
       display: flex;
       flex-direction: column;
+      flex: 1;
       overflow: hidden;
-      backdrop-filter: blur(5px);
     }
 
+    /* Desktop: Monster list in middle column */
+    @media (min-width: 1040px) {
+      .monster-list-panel {
+        order: unset;
+        backdrop-filter: blur(5px);
+      }
+    }
+
+    /* Mobile: Hide preview panel entirely */
     .preview-panel {
-      backdrop-filter: blur(10px);
-      border-radius: var(--medium-margin) 0 0 var(--medium-margin);
-      padding: 1.5rem;
-      overflow-y: auto;
-      border-left: 2px solid var(--border-color);
-      border-top: 2px solid var(--border-color);
-      border-bottom: 2px solid var(--border-color);
-      z-index: 1;
+      display: none;
     }
 
-    /* Search bar styles */
+    /* Desktop: Show preview panel */
+    @media (min-width: 1040px) {
+      .preview-panel {
+        display: block;
+        backdrop-filter: blur(10px);
+        border-radius: var(--medium-margin) 0 0 var(--medium-margin);
+        padding: 1.5rem;
+        overflow-y: auto;
+        border-left: 2px solid var(--border-color);
+        border-top: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
+        z-index: 1;
+      }
+    }
+
+    /* Mobile: Header with title and search */
+    .codex-header {
+      order: 1;
+      padding: 1rem;
+      background: var(--bg-color);
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .codex-title {
+      font-family: var(--header-font);
+      font-size: 1.8rem;
+      color: var(--fg-color);
+      margin: 0 0 1rem 0;
+      text-align: center;
+    }
+
+    /* Desktop: Hide header since it's part of site navigation */
+    @media (min-width: 1040px) {
+      .codex-header {
+        display: none;
+      }
+    }
+
+    /* Search bar styles - Mobile first */
     .search-bar {
       padding: 1rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
       display: flex;
       gap: 0.75rem;
       align-items: center;
-      z-index: 5;
-      position: relative;
       border-top: 2px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
-      backdrop-filter: blur(5px);
+      background: var(--bg-color);
+      flex-wrap: wrap;
+    }
+
+    /* Desktop: Search bar positioning */
+    @media (min-width: 1040px) {
+      .search-bar {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        z-index: 5;
+        position: relative;
+        backdrop-filter: blur(5px);
+      }
     }
 
     .search-input-container {
       flex: 1;
-      max-width: calc(100% - 120px); /* Reserve space for filter button */
+      min-width: 200px;
     }
 
     .search-input {
@@ -182,6 +285,8 @@ export class MonsterCodex extends LitElement {
       background: var(--muted-color);
       color: var(--fg-color);
       font-size: 1rem;
+      min-height: 44px; /* Touch-friendly */
+      box-sizing: border-box;
     }
 
     .search-input::placeholder {
@@ -378,33 +483,17 @@ export class MonsterCodex extends LitElement {
     .cr-tier-label:nth-child(3) { left: 50%; }   /* Tier III at CR 11-19 (~50%) */
     .cr-tier-label:nth-child(4) { left: 83.3%; } /* Tier IV at CR 20+ (~83%) */
 
-    /* Monster list styles */
+    /* Monster list styles - Mobile first */
     .monster-list {
       flex: 1;
       overflow-y: auto;
-      padding: 1.5rem;
-    }
-
-    .group-header {
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: var(--primary-color);
-      margin: 1rem 0 0.5rem 0;
-      padding-bottom: 0.25rem;
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(5px);
-      z-index: 1;
-      font-family: var(--header-font);
+      padding: 1rem;
     }
 
     .monster-row {
-      display: flex;
-      align-items: stretch;
-      margin-bottom: 0.5rem;
-      border-radius: 6px;
+      display: block;
+      margin-bottom: 1rem;
+      border-radius: 8px;
       cursor: pointer;
       background-size: cover;
       background-position: center;
@@ -413,8 +502,10 @@ export class MonsterCodex extends LitElement {
       transition: all 0.2s ease;
       border: 1px solid transparent;
       position: relative;
-      min-height: 70px;
+      min-height: 200px; /* Larger for mobile cards */
       overflow: hidden;
+      text-decoration: none;
+      color: inherit;
     }
 
     .monster-row::before {
@@ -426,15 +517,15 @@ export class MonsterCodex extends LitElement {
       background-position: inherit;
       background-repeat: no-repeat;
       border-radius: inherit;
-      opacity: 0.3;
+      opacity: 0.7;
       z-index: 0;
     }
 
     .monster-row:hover {
       background-color: rgba(0,0,0,0.2);
-      transform: translateX(6px);
+      transform: translateY(-2px);
       border-color: var(--border-color);
-      box-shadow: 0 4px 12px rgba(255, 55, 55, 0.2);
+      box-shadow: 0 8px 24px rgba(255, 55, 55, 0.3);
     }
 
     .monster-row.selected {
@@ -443,29 +534,149 @@ export class MonsterCodex extends LitElement {
       box-shadow: 0 4px 12px rgba(255, 55, 55, 0.3);
     }
 
+    /* Desktop: Smaller list items */
+    @media (min-width: 1040px) {
+      .monster-row {
+        display: flex;
+        align-items: stretch;
+        min-height: 70px;
+      }
+
+      .monster-row:hover {
+        transform: translateX(6px);
+      }
+    }
+
+    .group-header {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin: 1rem 0 0.5rem 0;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+      font-family: var(--header-font);
+    }
+
+    /* Mobile: Rich monster card info */
     .monster-info {
       color: white;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
       font-family: var(--primary-font);
       position: relative;
       z-index: 1;
-      background: rgba(0,0,0,0.5);
-      flex: 1;
+      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 0.75rem;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      min-height: 200px;
     }
 
     .monster-name {
       font-weight: bold;
-      margin-bottom: 0.25rem;
-      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
     }
 
     .monster-details {
-      font-size: 0.9rem;
+      font-size: 1rem;
       opacity: 0.9;
+      margin-bottom: 1rem;
+    }
+
+    .monster-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .monster-tag {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .monster-description {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      opacity: 0.8;
+    }
+
+    .monster-actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .monster-action-btn {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-family: var(--primary-font);
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-height: 44px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .monster-action-btn:hover {
+      background: var(--primary-muted-color);
+      transform: translateY(-1px);
+    }
+
+    .monster-action-btn.secondary {
+      background: transparent;
+      border: 1px solid var(--fg-color);
+    }
+
+    .monster-action-btn.secondary:hover {
+      background: var(--fg-color);
+      color: var(--bg-color);
+    }
+
+    /* Desktop: Simplified layout */
+    @media (min-width: 1040px) {
+      .monster-info {
+        background: rgba(0,0,0,0.5);
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.75rem;
+        min-height: auto;
+      }
+
+      .monster-name {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .monster-details {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+      }
+
+      .monster-tags,
+      .monster-description,
+      .monster-actions {
+        display: none;
+      }
     }
 
     /* Drawer styles */
@@ -542,12 +753,12 @@ export class MonsterCodex extends LitElement {
       color: var(--fg-color);
     }
 
-    /* Filter toggle button styles */
+    /* Filter toggle button styles - Mobile first */
     .filter-toggle-btn {
       background: var(--primary-color);
       color: var(--fg-color);
       border: none;
-      padding: 0.75rem;
+      padding: 0.75rem 1rem;
       border-radius: 4px;
       cursor: pointer;
       font-family: var(--primary-font);
@@ -557,6 +768,8 @@ export class MonsterCodex extends LitElement {
       gap: 0.5rem;
       transition: all 0.2s ease;
       position: relative;
+      min-height: 44px; /* Touch-friendly */
+      white-space: nowrap;
     }
 
     .filter-toggle-btn:hover {
@@ -576,7 +789,7 @@ export class MonsterCodex extends LitElement {
       font-weight: bold;
     }
 
-    /* Mobile responsive */
+    /* Mobile responsive breakpoints */
     @media (max-width: 1200px) {
       .codex-container {
         grid-template-columns: 280px 1fr 350px;
@@ -586,54 +799,6 @@ export class MonsterCodex extends LitElement {
       }
       .filters-panel {
         width: 280px;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .codex-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-        gap: 0;
-      }
-      .codex-container.filters-hidden {
-        grid-template-columns: 1fr;
-      }
-
-      .filters-panel {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        z-index: 10;
-        background: var(--bg-color);
-        box-shadow: 2px 0 8px rgba(0,0,0,0.3);
-        width: 300px;
-        transform: translateX(0);
-        transition: transform 0.3s ease-in-out;
-        border-right: 2px solid var(--border-color);
-        border-top: 2px solid var(--border-color);
-        border-bottom: 2px solid var(--border-color);
-        border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
-      }
-
-      .filters-panel.hidden {
-        transform: translateX(-100%);
-        width: 300px;
-        padding: 1rem;
-        overflow-y: auto;
-      }
-
-      .panel-divider {
-        display: none;
-      }
-
-      .monster-list-panel {
-        border-radius: 0;
-        border: none;
-      }
-
-      .preview-panel {
-        display: none; /* Hide preview panel on mobile */
       }
     }
 
@@ -738,6 +903,31 @@ export class MonsterCodex extends LitElement {
 
     return html`
       <div class="codex-container ${this.filtersPanelVisible ? '' : 'filters-hidden'}">
+        <!-- Mobile Header -->
+        <div class="codex-header">
+          <h1 class="codex-title">Foe Foundry Monster Codex</h1>
+          
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <button
+              class="filter-toggle-btn"
+              @click=${this.toggleFiltersPanel}
+              title="Toggle Filters">
+              Filters
+              ${activeFilterCount > 0 ? html`<span class="filter-count">${activeFilterCount}</span>` : ''}
+            </button>
+            <div class="search-input-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search monster name..."
+                .value=${this.query}
+                @input=${this.handleSearchInput}
+              />
+            </div>
+          </div>
+        </div>
+
         <!-- Filters Panel -->
         <div class="filters-panel ${this.filtersPanelVisible ? '' : 'hidden'}">
           <div class="filters-container">
@@ -826,7 +1016,7 @@ export class MonsterCodex extends LitElement {
               </button>
             ` : ''}
           </div>
-          <!-- Panel divider with collapse indicator -->
+          <!-- Panel divider with collapse indicator (desktop only) -->
           <button
             class="panel-divider"
             @click=${this.toggleFiltersPanel}
@@ -837,7 +1027,8 @@ export class MonsterCodex extends LitElement {
 
         <!-- Monster List Panel -->
         <div class="monster-list-panel">
-          <div class="search-bar">
+          <!-- Desktop Search Bar -->
+          <div class="search-bar" style="display: none;">
             <button
               class="filter-toggle-btn"
               @click=${this.toggleFiltersPanel}
@@ -860,7 +1051,7 @@ export class MonsterCodex extends LitElement {
           </div>
         </div>
 
-        <!-- Preview Panel -->
+        <!-- Preview Panel (Desktop only) -->
         <div class="preview-panel">
           ${this.selectedMonster ? html`
             <div class="preview-content-tabs">
@@ -916,6 +1107,18 @@ export class MonsterCodex extends LitElement {
           `}
         </div>
       </div>
+      
+      <style>
+        @media (min-width: 1040px) {
+          .codex-header {
+            display: none;
+          }
+          
+          .monster-list-panel .search-bar {
+            display: flex !important;
+          }
+        }
+      </style>
     `;
   }
 
@@ -963,18 +1166,54 @@ export class MonsterCodex extends LitElement {
       details += ` | ${monster.tag_line}`;
     }
 
+    // Generate monster tags for mobile
+    const tags = [];
+    if (monster.creature_type) tags.push(monster.creature_type);
+    if (monster.monsterFamilies?.[0]) tags.push(monster.monsterFamilies[0]);
+    // Note: environments not available in MonsterInfo interface
+
+    // Create description from tag line or family info
+    let description = monster.tag_line;
+    if (!description && monster.monsterFamilies?.[0]) {
+      description = `A ${monster.creature_type?.toLowerCase() || 'creature'} from the ${monster.monsterFamilies[0]} family.`;
+    }
+    if (!description) {
+      description = `A ${monster.creature_type?.toLowerCase() || 'creature'} of challenge rating ${monster.cr}.`;
+    }
+
     return html`
       <div>
-        <div
+        <a
           class="monster-row ${isSelected ? 'selected' : ''}"
           style="background-image: url('${monster.background_image || ''}'); background-position: ${backgroundPosition};"
-          @click=${() => this.toggleMonsterDrawer(monster.key)}
+          href="/monsters/${monster.key}/"
+          @click=${(e: Event) => this.handleMonsterClick(e, monster.key)}
           @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
           <div class="monster-info">
             <div class="monster-name">${monster.name}</div>
             <div class="monster-details">${details}</div>
+            
+            <!-- Mobile: Rich card content -->
+            <div class="monster-tags">
+              ${tags.slice(0, 3).map(tag => html`
+                <span class="monster-tag">${tag}</span>
+              `)}
+            </div>
+            
+            <div class="monster-description">${description}</div>
+            
+            <div class="monster-actions">
+              <button class="monster-action-btn" 
+                      @click=${(e: Event) => this.handleForgeClick(e, monster.key)}>
+                Forge
+              </button>
+              <button class="monster-action-btn secondary" 
+                      @click=${(e: Event) => this.handleShareClick(e, monster.key)}>
+                Share
+              </button>
+            </div>
           </div>
-        </div>
+        </a>
         ${isExpanded ? html`
           <div class="monster-drawer">
             <monster-statblock
@@ -1162,6 +1401,36 @@ export class MonsterCodex extends LitElement {
     } catch (e) {
       console.error('Error loading initial data:', e);
     }
+  }
+
+  private handleMonsterClick(e: Event, key: string) {
+    // On mobile: Allow navigation to monster page
+    // On desktop: Prevent navigation and toggle drawer instead
+    if (window.innerWidth >= 1040) {
+      e.preventDefault();
+      this.toggleMonsterDrawer(key);
+    }
+    // On mobile, let the natural navigation happen
+  }
+
+  private handleForgeClick(e: Event, key: string) {
+    e.preventDefault();
+    e.stopPropagation();
+    // Navigate to the forge page with this monster
+    window.location.href = `/generate/?monster=${key}`;
+  }
+
+  private handleShareClick(e: Event, key: string) {
+    e.preventDefault();
+    e.stopPropagation();
+    // Copy monster URL to clipboard
+    const url = `${window.location.origin}/monsters/${key}/`;
+    navigator.clipboard.writeText(url).then(() => {
+      // Show a toast notification or similar feedback
+      console.log('Monster URL copied to clipboard:', url);
+    }).catch(err => {
+      console.error('Failed to copy URL:', err);
+    });
   }
 
   updated(changedProperties: Map<string | number | symbol, unknown>) {
