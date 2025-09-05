@@ -162,9 +162,13 @@ export class MonsterCarousel extends LitElement {
       align-items: center;
       text-align: center;
       justify-content: center;
-      background: var(--card-bg-color);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
       border-radius: var(--medium-margin);
+    }
+
+    /* Apply card background only when no mask class is present */
+    .swiper-slide.card:not(.mask-1):not(.mask-2):not(.mask-3):not(.mask-4):not(.mask-5) {
+      background: var(--card-bg-color);
     }
 
     .swiper-slide.card.tall {
@@ -300,12 +304,12 @@ export class MonsterCarousel extends LitElement {
       color: var(--card-title-highlight-color);
     }
 
-    /* Mask classes from homepage CSS */
-    .mask-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    .mask-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-    .mask-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-    .mask-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
-    .mask-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+    /* Mask classes from homepage CSS - ensure they override card background */
+    .swiper-slide.card.mask-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; }
+    .swiper-slide.card.mask-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important; }
+    .swiper-slide.card.mask-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important; }
+    .swiper-slide.card.mask-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important; }
+    .swiper-slide.card.mask-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important; }
 
     /* Swiper navigation buttons */
     .swiper-button-next,
