@@ -51,6 +51,11 @@ export class MonsterCarousel extends LitElement {
       text-align: center;
       padding: 2rem;
       color: var(--bs-light);
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
     }
 
     .error {
@@ -152,21 +157,25 @@ export class MonsterCarousel extends LitElement {
     }
 
     .swiper-slide.card {
-      padding: 1.25em;
-      aspect-ratio: 4/3;
-      width: 225px;
-      min-width: 225px;
-      flex-shrink: 0;
-      overflow: hidden;
-      font-size: var(--primary-font-size);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      border-radius: var(--medium-margin);
+  padding: 1.25em;
+  aspect-ratio: 4/3;
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: var(--primary-font-size);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: var(--medium-margin);
     }
 
     /* Apply card background only when no mask class is present */
@@ -175,25 +184,43 @@ export class MonsterCarousel extends LitElement {
     }
 
     .swiper-slide.card.tall {
-      height: 300px;
-      width: 225px;
-      min-width: 225px;
-      min-height: 300px;
+  height: 300px;
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
+  min-height: 300px;
+  max-height: 300px;
     }
 
     /* Fallback layout card sizing */
     .carousel-fallback .swiper-slide {
-      flex: 0 0 auto;
-      width: 225px;
+  flex: 0 0 auto;
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
     }
 
     @media (max-width: 576px) {
       .carousel-fallback .swiper-slide {
         width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+        height: 260px;
+        min-height: 260px;
+        max-height: 260px;
       }
 
+      .swiper-slide.card,
       .swiper-slide.card.tall {
         width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+        height: 260px;
+        min-height: 260px;
+        max-height: 260px;
       }
     }
 
@@ -271,9 +298,11 @@ export class MonsterCarousel extends LitElement {
 
     /* Masked label matching homepage */
     .masked-label {
-      background-color: rgba(80, 80, 80, 0.60);
+      background: linear-gradient(135deg, rgba(40,40,40,0.60) 60%, rgba(80,80,80,0.40) 100%);
+      box-shadow: 0 2px 12px 2px rgba(0,0,0,0.18);
+      border-radius: 0.75em;
       display: inline-block;
-      padding: 0.5rem;
+      padding: 0.5rem 0.85rem;
       mask-image: url('/img/backgrounds/watercolor-mask2.webp');
       -webkit-mask-image: url('/img/backgrounds/watercolor-mask2.webp');
       mask-size: 100% 100%;
@@ -454,14 +483,14 @@ export class MonsterCarousel extends LitElement {
           'background: linear-gradient(135deg, #f8f8f8 0%, #ececec 100%);', // Light gray to medium gray
         ];
       } else {
-        // Original vibrant gradients for non-grayscale templates
+        // Slightly softened gradients for non-grayscale templates
         gradients = [
-          'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);', // Blue to purple
-          'background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);', // Pink to red
-          'background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);', // Blue to cyan
-          'background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);', // Green to teal
-          'background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);', // Pink to yellow
-          'background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);', // Cyan to pink
+          'background: linear-gradient(135deg, #b3c6ee 0%, #bbaed6 100%);', // Soft blue to soft purple
+          'background: linear-gradient(135deg, #f3c6fb 0%, #f7b6c6 100%);', // Soft pink to soft red
+          'background: linear-gradient(135deg, #b4dafe 0%, #b0f2fe 100%);', // Soft blue to soft cyan
+          'background: linear-gradient(135deg, #b3e9cb 0%, #b8f9e7 100%);', // Soft green to soft teal
+          'background: linear-gradient(135deg, #fab7c9 0%, #fbe9b7 100%);', // Soft pink to soft yellow
+          'background: linear-gradient(135deg, #c8edea 0%, #f6d6e3 100%);', // Soft cyan to soft pink
         ];
       }
 
@@ -563,10 +592,7 @@ export class MonsterCarousel extends LitElement {
         keyboard: {
           enabled: true,
         },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+        navigation: true,
         autoplay: {
           delay: 6000,
           disableOnInteraction: true,
@@ -656,8 +682,6 @@ export class MonsterCarousel extends LitElement {
             <div class="swiper-wrapper">
               ${templates.map(template => this.renderMonsterCard(template))}
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
           <style>
             /* Inline styles to ensure horizontal layout */
