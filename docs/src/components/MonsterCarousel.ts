@@ -73,12 +73,18 @@ export class MonsterCarousel extends LitElement {
       min-height: 300px;
     }
 
-    .swiper-container.preload {
-      min-height: 300px;
+    .swiper-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .swiper-container.preload .swiper-wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       overflow-x: auto;
+      gap: 1rem;
     }
 
     /* Fallback styles when Swiper is not available */
@@ -146,6 +152,8 @@ export class MonsterCarousel extends LitElement {
       padding: 1.25em;
       aspect-ratio: 4/3;
       width: 225px;
+      min-width: 225px;
+      flex-shrink: 0;
       overflow: hidden;
       font-size: var(--primary-font-size);
       position: relative;
@@ -162,6 +170,7 @@ export class MonsterCarousel extends LitElement {
     .swiper-slide.card.tall {
       height: 300px;
       width: 225px;
+      min-width: 225px;
       min-height: 300px;
     }
 
@@ -175,7 +184,7 @@ export class MonsterCarousel extends LitElement {
       .carousel-fallback .swiper-slide {
         width: 200px;
       }
-      
+
       .swiper-slide.card.tall {
         width: 200px;
       }
@@ -306,6 +315,7 @@ export class MonsterCarousel extends LitElement {
   `;
 
   private async fetchMonsters(filter: string): Promise<MonsterData[]> {
+    console.log('fetchMonsters called with filter:', filter);
     if (!filter) {
       return [];
     }
@@ -325,30 +335,44 @@ export class MonsterCarousel extends LitElement {
       throw new Error(`Invalid filter: ${filter}`);
     }
 
-    const response = await fetch(apiUrl);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch monsters: ${response.statusText}`);
-    }
+    console.log('Fetching from URL:', apiUrl);
 
-    const data = await response.json();
-    
-    // Handle different response formats from different endpoints
-    let monsters: MonsterInfo[];
-    if (filter === 'new') {
-      // The /new endpoint returns a different format: [{monster_key, template_key}]
-      monsters = data.map((item: any) => ({
-        key: item.monster_key,
-        name: this.formatMonsterName(item.monster_key),
-        cr: 1, // Default CR since not provided
-        template: item.template_key
-      }));
-    } else {
-      // Other endpoints return the expected format: [{key, name, cr, template}]
-      monsters = data;
+    try {
+      const response = await fetch(apiUrl);
+      console.log('Response status:', response.status, response.statusText);
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch monsters: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      console.log('Response data:', data);
+
+      // Handle different response formats from different endpoints
+      let monsters: MonsterInfo[];
+      if (filter === 'new') {
+        // The /new endpoint returns a different format: [{monster_key, template_key}]
+        monsters = data.map((item: any) => ({
+          key: item.monster_key,
+          name: this.formatMonsterName(item.monster_key),
+          cr: 1, // Default CR since not provided
+          template: item.template_key
+        }));
+      } else {
+        // Other endpoints return the expected format: [{key, name, cr, template}]
+        monsters = data;
+      }
+
+      console.log('Converted monsters:', monsters);
+
+      // Convert MonsterInfo to MonsterData format for rendering
+      const result = monsters.map(monster => this.convertToMonsterData(monster));
+      console.log('Final result:', result);
+      return result;
+    } catch (error) {
+      console.error('Error in fetchMonsters:', error);
+      throw error;
     }
-    
-    // Convert MonsterInfo to MonsterData format for rendering
-    return monsters.map(monster => this.convertToMonsterData(monster));
   }
 
   private formatMonsterName(key: string): string {
@@ -362,7 +386,7 @@ export class MonsterCarousel extends LitElement {
     // Generate mask and styling similar to homepage
     const maskClasses = ['mask-1', 'mask-2', 'mask-3', 'mask-4', 'mask-5'];
     const randomMask = maskClasses[Math.floor(Math.random() * maskClasses.length)];
-    
+
     return {
       key: monster.key,
       name: monster.name,
@@ -389,12 +413,22 @@ export class MonsterCarousel extends LitElement {
   }
 
   private initializeSwiper() {
+    console.log('initializeSwiper called');
     if (this.swiperInstance) {
+      console.log('Swiper already exists, returning');
       return;
     }
 
     const swiperContainer = this.shadowRoot?.querySelector('.swiper-container');
+    console.log('Swiper container found:', !!swiperContainer);
     if (!swiperContainer) {
+      console.warn('No swiper container found in shadow root');
+      return;
+    }
+
+    // Check if Swiper is available
+    if (typeof Swiper === 'undefined') {
+      console.error('Swiper is not available. Make sure it is imported correctly.');
       return;
     }
 
@@ -423,22 +457,40 @@ export class MonsterCarousel extends LitElement {
     };
 
     try {
+      console.log('Creating Swiper instance...');
+      console.log('Available Swiper modules:', { Autoplay, Navigation, Keyboard, Parallax });
+
+      // Force wrapper to be horizontal before initializing Swiper
+      const wrapper = swiperContainer.querySelector('.swiper-wrapper') as HTMLElement;
+      if (wrapper) {
+        wrapper.style.display = 'flex';
+        wrapper.style.flexDirection = 'row';
+        wrapper.style.alignItems = 'flex-start';
+      }
+
+      // Use the simplest possible Swiper configuration that should work
       this.swiperInstance = new Swiper(swiperContainer as HTMLElement, {
         modules: [Autoplay, Navigation, Keyboard, Parallax],
+        slidesPerView: 3,
+        spaceBetween: 16,
+        centeredSlides: false,
+        grabCursor: true,
+        direction: 'horizontal', // Explicitly set horizontal direction
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
         autoplay: {
           delay: 6000,
-          disableOnInteraction: true
+          disableOnInteraction: true,
         },
         breakpoints: breakpoints,
-        initialSlide: 1,
-        centeredSlides: true,
-        grabCursor: true,
-        keyboard: true,
-        navigation: true,
-        parallax: true,
-        simulateTouch: true,
         on: {
           init: function (this: any) {
+            console.log('Swiper init callback called');
             this.el.classList.remove('preload');
           }
         }
@@ -454,32 +506,40 @@ export class MonsterCarousel extends LitElement {
           }
         }
       });
-      
+
       console.log('Swiper initialized successfully');
     } catch (error) {
       console.warn('Failed to initialize Swiper:', error);
     }
   }
 
-  firstUpdated() {
-    // Initialize Swiper immediately since we have it as a package
-    this.initializeSwiper();
-  }
-
   updated(changedProperties: any) {
     super.updated(changedProperties);
-    
+
+    // Debug logging
+    console.log('MonsterCarousel updated:', {
+      filter: this.filter,
+      taskStatus: this.monstersTask.status,
+      hasSwiper: !!this.swiperInstance,
+      swiperAvailable: typeof Swiper !== 'undefined'
+    });
+
     // Clean up Swiper when filter changes
     if (changedProperties.has('filter') && this.swiperInstance) {
       this.swiperInstance.destroy(true, true);
       this.swiperInstance = null;
     }
-    
+
     // Only reinitialize Swiper when monsters data is loaded and rendered
-    if (this.monstersTask.status === 2 && !this.swiperInstance) { // 2 = COMPLETE status
+    // TaskStatus.COMPLETE = 2 in @lit/task
+    if (this.monstersTask.status === 2 && !this.swiperInstance) {
+      console.log('Attempting to initialize Swiper...');
       // Wait for the next frame to ensure DOM is fully rendered
       requestAnimationFrame(() => {
-        this.initializeSwiper();
+        requestAnimationFrame(() => {
+          // Double RAF to ensure DOM is ready
+          this.initializeSwiper();
+        });
       });
     }
   }
@@ -492,42 +552,60 @@ export class MonsterCarousel extends LitElement {
   }
 
   render() {
+    console.log('MonsterCarousel render() called, filter:', this.filter);
     return this.monstersTask.render({
-      pending: () => html`<div class="loading">Loading monsters...</div>`,
+      pending: () => {
+        console.log('Task pending state');
+        return html`<div class="loading">Loading monsters...</div>`;
+      },
       complete: (monsters) => {
+        console.log('Task complete state, monsters:', monsters);
         if (monsters.length === 0) {
           return html`<div class="no-monsters">No monsters found for this filter.</div>`;
         }
 
-        const hasSwiperInstance = !!this.swiperInstance;
-        const containerClass = hasSwiperInstance ? 'swiper-container' : 'carousel-fallback';
+        // Always render swiper container structure, then initialize Swiper on it
+        const containerClass = 'swiper-container';
 
         return html`
-          ${!hasSwiperInstance ? html`
-            <div class="no-swiper-message">
-              ⚠️ Enhanced carousel features unavailable - showing basic scrollable layout
-            </div>
-          ` : ''}
           <div class="${containerClass} preload">
-            ${hasSwiperInstance ? html`<div class="swiper-wrapper">
+            <div class="swiper-wrapper">
               ${monsters.map(monster => this.renderMonsterCard(monster))}
-            </div>` : monsters.map(monster => this.renderMonsterCard(monster))}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
+          <style>
+            /* Inline styles to ensure horizontal layout */
+            .swiper-wrapper {
+              display: flex !important;
+              flex-direction: row !important;
+              align-items: flex-start !important;
+            }
+            .swiper-slide {
+              flex-shrink: 0 !important;
+              width: 225px !important;
+              min-width: 225px !important;
+            }
+          </style>
         `;
       },
-      error: (error) => html`<div class="error">Error loading monsters: ${error instanceof Error ? error.message : 'Unknown error'}</div>`
+      error: (error) => {
+        console.error('Task error state:', error);
+        return html`<div class="error">Error loading monsters: ${error instanceof Error ? error.message : 'Unknown error'}</div>`;
+      }
     });
   }
 
   private renderMonsterCard(monster: MonsterData) {
     return html`
-      <div 
+      <div
         class="swiper-slide card tall ${monster.mask_css} ${monster.is_new ? 'new' : ''}"
         data-url="${monster.url}"
         style="${monster.custom_style}"
         @click="${() => this.handleCardClick(monster.url)}"
       >
-        <img 
+        <img
           class="card-image contain ${monster.custom_style ? '' : 'blend'}"
           src="${monster.image}"
           alt="${monster.name}"
