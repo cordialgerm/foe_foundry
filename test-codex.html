@@ -25,36 +25,186 @@
             --bs-dark: #343a40;
             --bs-light: #f8f9fa;
         }
+
+        /* Add a loading placeholder for the demo */
+        .demo-content {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: var(--bg-color);
+            border: 1px solid var(--tertiary-color);
+            border-radius: 12px;
+        }
+
+        .demo-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .demo-search {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--tertiary-color);
+            border-radius: 8px;
+            background: var(--bg-color);
+            color: var(--fg-color);
+            margin-bottom: 1rem;
+        }
+
+        .demo-filters {
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .demo-card {
+            border: 1px solid var(--tertiary-color);
+            border-radius: 12px;
+            background: var(--bg-color);
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .demo-card-image {
+            height: 160px;
+            background: linear-gradient(45deg, #2c5aa0, #4a7c59);
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .demo-card-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            width: 100%;
+            padding: 1rem;
+            color: white;
+        }
+
+        .demo-card-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .demo-card-cr {
+            font-size: 0.9rem;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .demo-card-content {
+            padding: 1rem;
+        }
+
+        .demo-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .demo-tag {
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .demo-tag.creature-type {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .demo-tag.environment {
+            background: var(--secondary-color);
+            color: var(--fg-color);
+        }
+
+        .demo-description {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: var(--fg-color-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .demo-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .demo-button {
+            flex: 1;
+            padding: 0.6rem 1rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .demo-forge {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .demo-share {
+            background: var(--tertiary-color);
+            color: var(--fg-color);
+        }
     </style>
 </head>
 <body>
-    <monster-codex></monster-codex>
-    
-    <script type="module">
-        // Import the component
-        import './docs/src/components/MonsterCodex.js';
+    <div class="demo-content">
+        <div class="demo-header">Foe Foundry Monster Codex</div>
         
-        // Mock monster store for testing
-        const mockMonsterStore = {
-            async getMonster(key) {
-                return null;
-            },
-            async getSimilarMonsters(key) {
-                return [];
-            },
-            async getRandomStatblock() {
-                return document.createElement('div');
-            },
-            async getStatblock(request, change) {
-                return document.createElement('div');
-            }
-        };
+        <input type="text" class="demo-search" placeholder="Search monster name..." />
         
-        // Initialize the component
-        const codexElement = document.querySelector('monster-codex');
-        if (codexElement) {
-            codexElement.monsterStore = mockMonsterStore;
-        }
-    </script>
+        <div class="demo-filters">Filters ▼</div>
+        
+        <div class="demo-card">
+            <div class="demo-card-image">
+                <div class="demo-card-overlay">
+                    <h3 class="demo-card-name">Ice Troll</h3>
+                    <p class="demo-card-cr">CR 4 | Brute</p>
+                </div>
+            </div>
+            <div class="demo-card-content">
+                <div class="demo-tags">
+                    <span class="demo-tag creature-type">Giant</span>
+                    <span class="demo-tag environment">Arctic</span>
+                </div>
+                <p class="demo-description">A hulking troll adapted to frigid climates, with icy skin and a chilling aura. Its regeneration is slowed by fire, but accelerated by cold.</p>
+                <div class="demo-actions">
+                    <button class="demo-button demo-forge">Forge</button>
+                    <button class="demo-button demo-share">Share</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <div class="demo-card-image" style="background: linear-gradient(45deg, #4a3c8c, #6a4c93);">
+                <div class="demo-card-overlay">
+                    <h3 class="demo-card-name">Winter Wolf</h3>
+                    <p class="demo-card-cr">CR 3 | Striker</p>
+                </div>
+            </div>
+            <div class="demo-card-content">
+                <div class="demo-tags">
+                    <span class="demo-tag creature-type">Monstrosity</span>
+                    <span class="demo-tag environment">Arctic</span>
+                </div>
+                <p class="demo-description">A supernatural wolf with frost-covered fur and icy breath.</p>
+                <div class="demo-actions">
+                    <button class="demo-button demo-forge">Forge</button>
+                    <button class="demo-button demo-share">Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

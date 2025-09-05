@@ -195,6 +195,9 @@ describe('MonsterCodex Component', () => {
     });
 
     it('should have responsive grid classes', async () => {
+      // Wait for monsters to load
+      await new Promise(resolve => setTimeout(resolve, 100));
+      
       const monsterGrid = element.shadowRoot?.querySelector('.monster-grid');
       expect(monsterGrid).to.exist;
       expect(monsterGrid?.classList.contains('monster-grid')).to.be.true;
@@ -248,16 +251,26 @@ describe('MonsterCodex Component', () => {
       const firstCard = element.shadowRoot?.querySelector('.monster-card') as HTMLElement;
       
       if (firstCard) {
-        // Mock window.location.href to test navigation
-        const originalLocation = window.location.href;
+        // Mock window.location to test navigation
+        const originalLocation = window.location;
         let navigatedUrl = '';
-        Object.defineProperty(window, 'location', {
-          value: {
-            href: originalLocation,
-            set href(url: string) {
-              navigatedUrl = url;
-            }
+        
+        const mockLocation = {
+          ...originalLocation,
+          href: originalLocation.href
+        };
+        
+        Object.defineProperty(mockLocation, 'href', {
+          set(url: string) {
+            navigatedUrl = url;
           },
+          get() {
+            return originalLocation.href;
+          }
+        });
+        
+        Object.defineProperty(window, 'location', {
+          value: mockLocation,
           writable: true
         });
         

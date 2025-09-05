@@ -618,8 +618,64 @@ export class MonsterCodex extends LitElement {
   }
 
   private async loadMonsters() {
-    // TODO: Replace with actual API call to get all monsters
-    // For now, using placeholder data that matches the mobile design mockups
+    try {
+      // Use the search API to get a variety of monsters
+      // We'll search for common terms to get a diverse set
+      const searchTerms = ['', 'humanoid', 'beast', 'undead', 'giant', 'dragon'];
+      const allMonsters = new Map<string, MonsterCardData>();
+      
+      for (const term of searchTerms) {
+        try {
+          const baseUrl: string = (window as any).baseUrl ?? 'https://foefoundry.com';
+          const response = await fetch(`${baseUrl}/api/v1/search/monsters?query=${encodeURIComponent(term)}&limit=20`);
+          
+          if (response.ok) {
+            const data = await response.json();
+            const monsters = Array.isArray(data) ? data : [];
+            
+            for (const monster of monsters) {
+              // Ensure monster has the expected structure
+              if (monster && monster.key && monster.name) {
+                if (!allMonsters.has(monster.key)) {
+                  // Convert API monster to our card format
+                  allMonsters.set(monster.key, {
+                    key: monster.key,
+                    name: monster.name,
+                    template: monster.template || monster.key,
+                    cr: monster.cr || 1,
+                    creatureType: this.inferCreatureType(monster.template || monster.key),
+                    environment: this.inferEnvironment(monster.template || monster.key),
+                    role: this.inferRole(monster.template || monster.key),
+                    family: this.inferFamily(monster.template || monster.key),
+                    tagLine: this.generateTagLine(monster.name, monster.template || monster.key),
+                    backgroundImage: this.getMonsterImage(monster.template || monster.key)
+                  });
+                }
+              }
+            }
+          }
+        } catch (error) {
+          console.warn(`Failed to search for "${term}":`, error);
+        }
+      }
+      
+      this.monsters = Array.from(allMonsters.values());
+      
+      // If no monsters were loaded from API, fall back to placeholder data
+      if (this.monsters.length === 0) {
+        this.loadPlaceholderMonsters();
+      }
+      
+    } catch (error) {
+      console.error('Failed to load monsters:', error);
+      this.loadPlaceholderMonsters();
+    }
+
+    this.applyFilters();
+  }
+
+  private loadPlaceholderMonsters() {
+    // Fallback placeholder data that matches the mobile design mockups
     this.monsters = [
       {
         key: 'ice-troll',
@@ -644,10 +700,243 @@ export class MonsterCodex extends LitElement {
         family: 'Wolf',
         tagLine: 'A supernatural wolf with frost-covered fur and icy breath.',
         backgroundImage: '/img/monsters/winter-wolf.webp'
+      },
+      {
+        key: 'skeleton-warrior',
+        name: 'Skeleton Warrior',
+        template: 'skeleton',
+        cr: 1,
+        creatureType: 'Undead',
+        environment: 'Underground',
+        role: 'Brute',
+        family: 'Undead',
+        tagLine: 'Fragments of a soul bound to bleached bones, wielding ancient weapons.',
+        backgroundImage: '/img/monsters/skeleton.webp'
+      },
+      {
+        key: 'orc-berserker',
+        name: 'Orc Berserker',
+        template: 'orc',
+        cr: 2,
+        creatureType: 'Humanoid',
+        environment: 'Mountain',
+        role: 'Striker',
+        family: 'Orc',
+        tagLine: 'Bloodrage-fueled ancestral warriors with fierce tribal loyalty.',
+        backgroundImage: '/img/monsters/orc.webp'
+      },
+      {
+        key: 'basilisk-hunter',
+        name: 'Basilisk',
+        template: 'basilisk',
+        cr: 5,
+        creatureType: 'Monstrosity',
+        environment: 'Underground',
+        role: 'Controller',
+        family: 'Basilisk',
+        tagLine: 'Reptilian predators with petrifying gaze and venomous bite.',
+        backgroundImage: '/img/monsters/basilisk.webp'
+      },
+      {
+        key: 'frost-giant',
+        name: 'Frost Giant',
+        template: 'frost-giant',
+        cr: 8,
+        creatureType: 'Giant',
+        environment: 'Arctic',
+        role: 'Brute',
+        family: 'Giant',
+        tagLine: 'Frozen reavers of blood and battle, primordial creatures of the earth.',
+        backgroundImage: '/img/monsters/frost-giant.webp'
       }
     ];
+  }
 
-    this.applyFilters();
+  private inferCreatureType(template: string): string {
+    // Map common templates to creature types
+    const typeMap: Record<string, string> = {
+      'skeleton': 'Undead',
+      'zombie': 'Undead',
+      'lich': 'Undead',
+      'ghost': 'Undead',
+      'wight': 'Undead',
+      'orc': 'Humanoid',
+      'goblin': 'Humanoid',
+      'human': 'Humanoid',
+      'elf': 'Humanoid',
+      'dwarf': 'Humanoid',
+      'halfling': 'Humanoid',
+      'giant': 'Giant',
+      'ogre': 'Giant',
+      'troll': 'Giant',
+      'dragon': 'Dragon',
+      'wyrmling': 'Dragon',
+      'basilisk': 'Monstrosity',
+      'chimera': 'Monstrosity',
+      'manticore': 'Monstrosity',
+      'owlbear': 'Monstrosity',
+      'wolf': 'Beast',
+      'bear': 'Beast',
+      'eagle': 'Beast',
+      'cube': 'Ooze',
+      'ooze': 'Ooze'
+    };
+
+    for (const [key, type] of Object.entries(typeMap)) {
+      if (template.toLowerCase().includes(key)) {
+        return type;
+      }
+    }
+
+    return 'Humanoid'; // Default fallback
+  }
+
+  private inferEnvironment(template: string): string {
+    const envMap: Record<string, string> = {
+      'frost': 'Arctic',
+      'ice': 'Arctic',
+      'winter': 'Arctic',
+      'desert': 'Desert',
+      'forest': 'Forest',
+      'mountain': 'Mountain',
+      'swamp': 'Swamp',
+      'urban': 'Urban',
+      'sea': 'Underwater',
+      'cave': 'Underground',
+      'underground': 'Underground'
+    };
+
+    for (const [key, env] of Object.entries(envMap)) {
+      if (template.toLowerCase().includes(key)) {
+        return env;
+      }
+    }
+
+    return 'Forest'; // Default fallback
+  }
+
+  private inferRole(template: string): string {
+    const roleMap: Record<string, string> = {
+      'brute': 'Brute',
+      'warrior': 'Brute',
+      'berserker': 'Brute',
+      'giant': 'Brute',
+      'ogre': 'Brute',
+      'striker': 'Striker',
+      'assassin': 'Striker',
+      'rogue': 'Striker',
+      'archer': 'Striker',
+      'controller': 'Controller',
+      'mage': 'Controller',
+      'wizard': 'Controller',
+      'sorcerer': 'Controller',
+      'defender': 'Defender',
+      'guard': 'Defender',
+      'knight': 'Defender',
+      'paladin': 'Defender'
+    };
+
+    for (const [key, role] of Object.entries(roleMap)) {
+      if (template.toLowerCase().includes(key)) {
+        return role;
+      }
+    }
+
+    // Infer by creature type
+    const template_lower = template.toLowerCase();
+    if (template_lower.includes('giant') || template_lower.includes('troll') || template_lower.includes('ogre')) {
+      return 'Brute';
+    }
+    if (template_lower.includes('mage') || template_lower.includes('wizard') || template_lower.includes('lich')) {
+      return 'Controller';
+    }
+    if (template_lower.includes('guard') || template_lower.includes('knight')) {
+      return 'Defender';
+    }
+
+    return 'Striker'; // Default fallback
+  }
+
+  private inferFamily(template: string): string {
+    // Extract the base creature family from template
+    const familyMap: Record<string, string> = {
+      'skeleton': 'Undead',
+      'zombie': 'Undead',
+      'lich': 'Undead',
+      'ghost': 'Undead',
+      'wight': 'Undead',
+      'orc': 'Orc',
+      'goblin': 'Goblinoid',
+      'giant': 'Giant',
+      'ogre': 'Giant',
+      'troll': 'Giant',
+      'dragon': 'Dragon',
+      'basilisk': 'Monstrosity',
+      'chimera': 'Monstrosity',
+      'manticore': 'Monstrosity',
+      'wolf': 'Beast',
+      'bear': 'Beast'
+    };
+
+    for (const [key, family] of Object.entries(familyMap)) {
+      if (template.toLowerCase().includes(key)) {
+        return family;
+      }
+    }
+
+    // Capitalize the first word of the template as family
+    return template.split('-')[0].charAt(0).toUpperCase() + template.split('-')[0].slice(1);
+  }
+
+  private generateTagLine(name: string, template: string): string {
+    const tagLines: Record<string, string> = {
+      'skeleton': 'Fragments of a soul bound to bleached bones.',
+      'zombie': 'Shambling relentless hordes driven by undeath.',
+      'orc': 'Bloodrage-fueled ancestral warriors with fierce tribal loyalty.',
+      'goblin': 'Little balls of mischief and mayhem.',
+      'troll': 'Hulking regenerating brutes with insatiable hunger.',
+      'giant': 'Primordial creatures, living walking bones of the earth.',
+      'dragon': 'Ancient, intelligent, and devastatingly powerful.',
+      'basilisk': 'Reptilian predators with petrifying gaze and venomous bite.',
+      'wolf': 'Pack hunters with keen senses and fierce loyalty.',
+      'mage': 'Masters of arcane magicks and forbidden knowledge.'
+    };
+
+    for (const [key, tagLine] of Object.entries(tagLines)) {
+      if (template.toLowerCase().includes(key)) {
+        return tagLine;
+      }
+    }
+
+    return `A formidable ${template.replace(/-/g, ' ')} ready to challenge adventurers.`;
+  }
+
+  private getMonsterImage(template: string): string {
+    // Map templates to existing monster images
+    const imageMap: Record<string, string> = {
+      'skeleton': '/img/monsters/skeleton.webp',
+      'zombie': '/img/monsters/zombie.webp',
+      'orc': '/img/monsters/orc.webp',
+      'goblin': '/img/monsters/goblin.webp',
+      'troll': '/img/monsters/troll.webp',
+      'giant': '/img/monsters/frost-giant.webp',
+      'frost-giant': '/img/monsters/frost-giant.webp',
+      'dragon': '/img/monsters/dragon.webp',
+      'basilisk': '/img/monsters/basilisk.webp',
+      'wolf': '/img/monsters/wolf.webp',
+      'mage': '/img/monsters/mage.webp',
+      'knight': '/img/monsters/knight.webp',
+      'guard': '/img/monsters/guard.webp'
+    };
+
+    for (const [key, image] of Object.entries(imageMap)) {
+      if (template.toLowerCase().includes(key)) {
+        return image;
+      }
+    }
+
+    // Default fallback image
+    return '/img/monsters/default.webp';
   }
 
   private applyFilters() {
