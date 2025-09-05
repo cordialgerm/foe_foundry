@@ -3,6 +3,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { Task } from '@lit/task';
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Keyboard, Parallax } from 'swiper/modules';
+import { apiMonsterStore, MonsterTemplate } from '../data/api';
 import './swiper.css';
 
 interface MonsterInfo {
@@ -21,6 +22,8 @@ interface MonsterData {
   mask_css: string;
   custom_style: string;
   is_new: boolean;
+  transparent_edges: boolean;
+  grayscale: boolean;
 }
 
 @customElement('monster-carousel')
@@ -31,9 +34,9 @@ export class MonsterCarousel extends LitElement {
   @state()
   private swiperInstance: any = null;
 
-  private monstersTask = new Task(this, {
+  private templatesTask = new Task(this, {
     task: async ([filter], { signal }) => {
-      return this.fetchMonsters(filter);
+      return this.fetchMonsterTemplates(filter);
     },
     args: () => [this.filter]
   });
@@ -379,103 +382,82 @@ export class MonsterCarousel extends LitElement {
     .swiper-button-prev {
       color: var(--primary-color);
     }
+
+    /* Additional template styling properties */
+    .card.grayscale {
+      filter: grayscale(100%);
+    }
+
+    .card.transparent-edges img {
+      padding: 0;
+    }
   `;
 
-  private async fetchMonsters(filter: string): Promise<MonsterData[]> {
-    console.log('fetchMonsters called with filter:', filter);
+  private async fetchMonsterTemplates(filter: string): Promise<MonsterData[]> {
+    console.log('fetchMonsterTemplates called with filter:', filter);
     if (!filter) {
       return [];
     }
 
-    let apiUrl = '';
-    let limit = 12;
-
-    if (filter === 'new') {
-      apiUrl = `/api/v1/monsters/new?limit=${limit}`;
-    } else if (filter.startsWith('family:')) {
-      const familyKey = filter.substring(7);
-      apiUrl = `/api/v1/monsters/family/${familyKey}`;
-    } else if (filter.startsWith('query:')) {
-      const query = filter.substring(6);
-      apiUrl = `/api/v1/search/monsters?query=${encodeURIComponent(query)}&limit=${limit}`;
-    } else {
-      throw new Error(`Invalid filter: ${filter}`);
-    }
-
-    console.log('Fetching from URL:', apiUrl);
-
     try {
-      const response = await fetch(apiUrl);
-      console.log('Response status:', response.status, response.statusText);
+      let templates: MonsterTemplate[];
+      const limit = 12;
 
-      if (!response.ok) {
-        throw new Error(`Failed to fetch monsters: ${response.statusText}`);
-      }
-
-      const data = await response.json();
-      console.log('Response data:', data);
-
-      // Handle different response formats from different endpoints
-      let monsters: MonsterInfo[];
       if (filter === 'new') {
-        // The /new endpoint returns a different format: [{monster_key, template_key}]
-        monsters = data.map((item: any) => ({
-          key: item.monster_key,
-          name: this.formatMonsterName(item.monster_key),
-          cr: 1, // Default CR since not provided
-          template: item.template_key
-        }));
+        templates = await apiMonsterStore.getNewMonsterTemplates(limit);
+      } else if (filter.startsWith('family:')) {
+        const familyKey = filter.substring(7);
+        templates = await apiMonsterStore.getMonsterTemplatesByFamily(familyKey);
+      } else if (filter.startsWith('query:')) {
+        const query = filter.substring(6);
+        templates = await apiMonsterStore.searchMonsterTemplates(query, limit);
       } else {
-        // Other endpoints return the expected format: [{key, name, cr, template}]
-        monsters = data;
+        throw new Error(`Invalid filter: ${filter}`);
       }
 
-      console.log('Converted monsters:', monsters);
+      console.log('Fetched templates:', templates);
 
-      // Convert MonsterInfo to MonsterData format for rendering
-      const result = monsters.map(monster => this.convertToMonsterData(monster));
+      // Convert MonsterTemplate to MonsterData format for rendering
+      const result = templates.map(template => this.convertTemplateToMonsterData(template));
       console.log('Final result:', result);
       return result;
     } catch (error) {
-      console.error('Error in fetchMonsters:', error);
+      console.error('Error in fetchMonsterTemplates:', error);
       throw error;
     }
   }
 
-  private formatMonsterName(key: string): string {
-    // Convert monster key to a readable name (e.g., "dire-wolf" -> "Dire Wolf")
-    return key.split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  }
-
-  private convertToMonsterData(monster: MonsterInfo): MonsterData {
-    // Generate mask and styling exactly like homepage (masked v{n} format)
-    const maskNumbers = [1, 2, 3, 4, 5, 6];
-    const randomMaskNumber = maskNumbers[Math.floor(Math.random() * maskNumbers.length)];
-    const maskClass = `masked v${randomMaskNumber}`;
-
-    // Generate gradient backgrounds matching the reference image
-    const gradients = [
-      'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);', // Blue to purple
-      'background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);', // Pink to red
-      'background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);', // Blue to cyan
-      'background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);', // Green to teal
-      'background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);', // Pink to yellow
-      'background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);', // Cyan to pink
-    ];
-
-    const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
+  private convertTemplateToMonsterData(template: MonsterTemplate): MonsterData {
+    // Use the rich styling information provided by the template API
+    let customStyle = '';
+    
+    if (template.background_color) {
+      customStyle = `background-color: ${template.background_color};`;
+    } else {
+      // Fallback to gradient if no background color is specified
+      const gradients = [
+        'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);', // Blue to purple
+        'background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);', // Pink to red
+        'background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);', // Blue to cyan
+        'background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);', // Green to teal
+        'background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);', // Pink to yellow
+        'background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);', // Cyan to pink
+      ];
+      const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
+      customStyle = randomGradient;
+    }
 
     return {
-      key: monster.key,
-      name: monster.name,
-      tagline: `CR ${monster.cr} ${monster.template.replace(/-/g, ' ')}`,
-      image: `/img/monsters/${monster.template}.webp`,
-      url: `/monsters/${monster.template}/`,
-      mask_css: maskClass,
-      custom_style: randomGradient,
-      is_new: false // TODO: Could be enhanced to check actual creation dates
+      key: template.key,
+      name: template.name,
+      tagline: template.tagline,
+      image: template.image,
+      url: template.url,
+      mask_css: template.mask_css,
+      custom_style: customStyle,
+      is_new: template.is_new,
+      transparent_edges: template.transparent_edges,
+      grayscale: template.grayscale
     };
   }
 
@@ -599,7 +581,7 @@ export class MonsterCarousel extends LitElement {
     // Debug logging
     console.log('MonsterCarousel updated:', {
       filter: this.filter,
-      taskStatus: this.monstersTask.status,
+      taskStatus: this.templatesTask.status,
       hasSwiper: !!this.swiperInstance,
       swiperAvailable: typeof Swiper !== 'undefined'
     });
@@ -610,9 +592,9 @@ export class MonsterCarousel extends LitElement {
       this.swiperInstance = null;
     }
 
-    // Only reinitialize Swiper when monsters data is loaded and rendered
+    // Only reinitialize Swiper when templates data is loaded and rendered
     // TaskStatus.COMPLETE = 2 in @lit/task
-    if (this.monstersTask.status === 2 && !this.swiperInstance) {
+    if (this.templatesTask.status === 2 && !this.swiperInstance) {
       console.log('Attempting to initialize Swiper...');
       // Wait for the next frame to ensure DOM is fully rendered
       requestAnimationFrame(() => {
@@ -633,15 +615,15 @@ export class MonsterCarousel extends LitElement {
 
   render() {
     console.log('MonsterCarousel render() called, filter:', this.filter);
-    return this.monstersTask.render({
+    return this.templatesTask.render({
       pending: () => {
         console.log('Task pending state');
-        return html`<div class="loading">Loading monsters...</div>`;
+        return html`<div class="loading">Loading monster templates...</div>`;
       },
-      complete: (monsters) => {
-        console.log('Task complete state, monsters:', monsters);
-        if (monsters.length === 0) {
-          return html`<div class="no-monsters">No monsters found for this filter.</div>`;
+      complete: (templates) => {
+        console.log('Task complete state, templates:', templates);
+        if (templates.length === 0) {
+          return html`<div class="no-monsters">No monster templates found for this filter.</div>`;
         }
 
         // Always render swiper container structure, then initialize Swiper on it
@@ -650,7 +632,7 @@ export class MonsterCarousel extends LitElement {
         return html`
           <div class="${containerClass} preload">
             <div class="swiper-wrapper">
-              ${monsters.map(monster => this.renderMonsterCard(monster))}
+              ${templates.map(template => this.renderMonsterCard(template))}
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -672,32 +654,42 @@ export class MonsterCarousel extends LitElement {
       },
       error: (error) => {
         console.error('Task error state:', error);
-        return html`<div class="error">Error loading monsters: ${error instanceof Error ? error.message : 'Unknown error'}</div>`;
+        return html`<div class="error">Error loading monster templates: ${error instanceof Error ? error.message : 'Unknown error'}</div>`;
       }
     });
   }
 
-  private renderMonsterCard(monster: MonsterData) {
+  private renderMonsterCard(template: MonsterData) {
+    const cardClasses = [
+      'swiper-slide',
+      'card',
+      'tall',
+      template.mask_css,
+      template.is_new ? 'new' : '',
+      template.grayscale ? 'grayscale' : '',
+      template.transparent_edges ? 'transparent-edges' : ''
+    ].filter(Boolean).join(' ');
+
     return html`
       <div
-        class="swiper-slide card tall ${monster.mask_css} ${monster.is_new ? 'new' : ''}"
-        data-url="${monster.url}"
-        style="${monster.custom_style}"
-        @click="${() => this.handleCardClick(monster.url)}"
+        class="${cardClasses}"
+        data-url="${template.url}"
+        style="${template.custom_style}"
+        @click="${() => this.handleCardClick(template.url)}"
       >
         <img
           class="card-image contain"
-          src="${monster.image}"
-          alt="${monster.name}"
+          src="${template.image}"
+          alt="${template.name}"
           loading="lazy"
-          @error="${(e: Event) => this.handleImageError(e, monster)}"
+          @error="${(e: Event) => this.handleImageError(e, template)}"
         />
         <div class="card-content">
           <div class="masked-label">
             <h3 class="card-title">
-              <a href="${monster.url}">${monster.name}</a>
+              <a href="${template.url}">${template.name}</a>
             </h3>
-            <p class="card-tagline">${monster.tagline}</p>
+            <p class="card-tagline">${template.tagline}</p>
           </div>
         </div>
       </div>

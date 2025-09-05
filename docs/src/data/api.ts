@@ -1,6 +1,20 @@
 import { PowerStore, PowerLoadout, Power } from './powers';
 import { Monster, MonsterStore, StatblockChangeType, StatblockChange, StatblockRequest, SimilarMonsterGroup } from './monster';
 
+export interface MonsterTemplate {
+    key: string;
+    name: string;
+    url: string;
+    image: string;
+    tagline: string;
+    transparent_edges: boolean;
+    grayscale: boolean;
+    background_color: string | null;
+    mask_css: string;
+    is_new: boolean;
+    create_date: string; // ISO date string
+}
+
 function formatCr(cr: string | number): string {
     if (typeof cr === 'string') return cr;
     switch (cr) {
@@ -39,6 +53,33 @@ export class ApiPowerStore implements PowerStore {
 }
 
 export class ApiMonsterStore implements MonsterStore {
+
+    async getNewMonsterTemplates(limit: number = 12): Promise<MonsterTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monster_templates/new?limit=${limit}`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch new monster templates: ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async getMonsterTemplatesByFamily(familyKey: string): Promise<MonsterTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monster_templates/family/${familyKey}`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch monster templates for family '${familyKey}': ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async searchMonsterTemplates(query: string, limit: number = 12): Promise<MonsterTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monster_templates/search/?query=${encodeURIComponent(query)}&limit=${limit}`);
+        if (!response.ok) {
+            throw new Error(`Failed to search monster templates for query '${query}': ${response.statusText}`);
+        }
+        return await response.json();
+    }
 
 
     async getMonster(key: string): Promise<Monster | null> {
@@ -226,3 +267,6 @@ export function initializePowerStore(): PowerStore {
 export function initializeMonsterStore(): MonsterStore {
     return new ApiMonsterStore();
 }
+
+// Export the store instance for use by components
+export const apiMonsterStore = new ApiMonsterStore();
