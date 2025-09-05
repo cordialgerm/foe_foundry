@@ -167,7 +167,7 @@ export class MonsterCarousel extends LitElement {
     }
 
     /* Apply card background only when no mask class is present */
-    .swiper-slide.card:not(.mask-1):not(.mask-2):not(.mask-3):not(.mask-4):not(.mask-5) {
+    .swiper-slide.card:not(.masked) {
       background: var(--card-bg-color);
     }
 
@@ -304,12 +304,60 @@ export class MonsterCarousel extends LitElement {
       color: var(--card-title-highlight-color);
     }
 
-    /* Mask classes from homepage CSS - ensure they override card background */
-    .swiper-slide.card.mask-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; }
-    .swiper-slide.card.mask-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important; }
-    .swiper-slide.card.mask-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important; }
-    .swiper-slide.card.mask-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important; }
-    .swiper-slide.card.mask-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important; }
+    /* Mask Styles - replicated from site.css for shadow DOM */
+    .masked {
+      mask-size: 100% 100%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+    }
+
+    .masked:not(.v1):not(.v2):not(.v3):not(.v4):not(.v5):not(.v6) {
+      mask-image: url('/img/backgrounds/watercolor-mask.webp');
+      -webkit-mask-image: url('/img/backgrounds/watercolor-mask.webp');
+    }
+
+    .masked.v1 {
+      mask-image: url('/img/backgrounds/masks/mask-watercolor.webp');
+      -webkit-mask-image: url('/img/backgrounds/masks/mask-watercolor.webp');
+    }
+
+    .masked.v2 {
+      mask-image: url('/img/backgrounds/masks/mask-watercolor2.webp');
+      -webkit-mask-image: url('/img/backgrounds/masks/mask-watercolor2.webp');
+      mask-mode: luminance;
+      -webkit-mask-mode: luminance;
+    }
+
+    .masked.v3 {
+      mask-image: url('/img/backgrounds/masks/mask-paper.webp');
+      -webkit-mask-image: url('/img/backgrounds/masks/mask-paper.webp');
+      mask-mode: luminance;
+      -webkit-mask-mode: luminance;
+    }
+
+    .masked.v4 {
+      mask-image: url('/img/backgrounds/masks/mask-charcoal.webp');
+      -webkit-mask-image: url('/img/backgrounds/masks/mask-charcoal.webp');
+      mask-mode: luminance;
+      -webkit-mask-mode: luminance;
+    }
+
+    .masked.v5 {
+      mask-image: url('/img/backgrounds/masks/mask-charcoal2.webp');
+      -webkit-mask-image: url('/img/backgrounds/masks/mask-charcoal2.webp');
+      mask-mode: luminance;
+      -webkit-mask-mode: luminance;
+    }
+
+    .masked.v6 {
+      mask-image: url('/img/backgrounds/masks/mask-paper2.webp');
+      -webkit-mask-image: url('/img/backgrounds/masks/mask-paper2.webp');
+      mask-mode: luminance;
+      -webkit-mask-mode: luminance;
+    }
 
     /* Swiper navigation buttons */
     .swiper-button-next,
@@ -387,9 +435,22 @@ export class MonsterCarousel extends LitElement {
   }
 
   private convertToMonsterData(monster: MonsterInfo): MonsterData {
-    // Generate mask and styling similar to homepage
-    const maskClasses = ['mask-1', 'mask-2', 'mask-3', 'mask-4', 'mask-5'];
-    const randomMask = maskClasses[Math.floor(Math.random() * maskClasses.length)];
+    // Generate mask and styling exactly like homepage (masked v{n} format)
+    const maskNumbers = [1, 2, 3, 4, 5, 6];
+    const randomMaskNumber = maskNumbers[Math.floor(Math.random() * maskNumbers.length)];
+    const maskClass = `masked v${randomMaskNumber}`;
+
+    // Generate gradient backgrounds matching the reference image
+    const gradients = [
+      'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);', // Blue to purple
+      'background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);', // Pink to red
+      'background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);', // Blue to cyan
+      'background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);', // Green to teal
+      'background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);', // Pink to yellow
+      'background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);', // Cyan to pink
+    ];
+    
+    const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
 
     return {
       key: monster.key,
@@ -397,8 +458,8 @@ export class MonsterCarousel extends LitElement {
       tagline: `CR ${monster.cr} ${monster.template.replace(/-/g, ' ')}`,
       image: `/img/monsters/${monster.template}.webp`,
       url: `/monsters/${monster.template}/`,
-      mask_css: randomMask,
-      custom_style: '',
+      mask_css: maskClass,
+      custom_style: randomGradient,
       is_new: false // TODO: Could be enhanced to check actual creation dates
     };
   }
