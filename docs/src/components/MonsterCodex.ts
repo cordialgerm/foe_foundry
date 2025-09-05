@@ -28,7 +28,7 @@ export class MonsterCodex extends LitElement {
   @state() private loading = false;
   @state() private filtersPanelVisible = window.innerWidth >= 900; // Hidden by default on medium screens
   @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
-  @state() private contentTab: 'preview' | 'similar' | 'lore' | 'encounters' = 'preview';
+  @state() private contentTab: 'preview' | 'lore' | 'encounters' = 'preview';
   @state() private expandedMonsterKey: string | null = null; // Track which monster row has its drawer expanded
 
   private searchApi = new MonsterSearchApi();
@@ -467,15 +467,10 @@ export class MonsterCodex extends LitElement {
 
     /* Drawer styles */
     .monster-drawer {
-      background: rgba(26, 26, 26, 0.95);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--primary-color);
-      border-radius: 6px;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       overflow: hidden;
       animation: drawer-slide-down 0.3s ease-out;
-      border-top: 2px solid var(--primary-color);
     }
 
     @keyframes drawer-slide-down {
@@ -489,44 +484,6 @@ export class MonsterCodex extends LitElement {
         opacity: 1;
         transform: translateY(0);
       }
-    }
-
-    .drawer-content {
-      padding: 1.5rem;
-      max-height: 700px;
-      overflow-y: auto;
-    }
-
-    .drawer-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--primary-color);
-    }
-
-    .drawer-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: var(--primary-color);
-      font-family: var(--header-font);
-    }
-
-    .drawer-close-btn {
-      background: transparent;
-      border: 1px solid var(--primary-color);
-      color: var(--primary-color);
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: all 0.2s ease;
-    }
-
-    .drawer-close-btn:hover {
-      background: var(--primary-color);
-      color: var(--fg-color);
     }
 
     .loading {
@@ -745,6 +702,12 @@ export class MonsterCodex extends LitElement {
     .preview-tab-content.active {
       display: block;
     }
+
+    .similar-monsters-section {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--tertiary-color);
+    }
   `;
 
   async connectedCallback() {
@@ -901,10 +864,6 @@ export class MonsterCodex extends LitElement {
                       @click=${() => this.setContentTab('preview')}>
                 Preview
               </button>
-              <button class="preview-content-tab ${this.contentTab === 'similar' ? 'active' : ''}"
-                      @click=${() => this.setContentTab('similar')}>
-                Similar
-              </button>
               <button class="preview-content-tab ${this.contentTab === 'lore' ? 'active' : ''}"
                       @click=${() => this.setContentTab('lore')}>
                 Lore
@@ -920,14 +879,15 @@ export class MonsterCodex extends LitElement {
                 monster-key="${this.selectedMonster.key}"
                 .compact=${false}
               ></monster-card-preview>
-            </div>
-            
-            <div class="preview-tab-content ${this.contentTab === 'similar' ? 'active' : ''}">
-              <monster-similar
-                monster-key="${this.selectedMonster.key}"
-                font-size="1rem"
-                max-height="none"
-              ></monster-similar>
+              
+              <!-- Similar Monsters below preview card -->
+              <div class="similar-monsters-section">
+                <monster-similar
+                  monster-key="${this.selectedMonster.key}"
+                  font-size="1rem"
+                  max-height="none"
+                ></monster-similar>
+              </div>
             </div>
             
             <div class="preview-tab-content ${this.contentTab === 'lore' ? 'active' : ''}">
@@ -1004,16 +964,10 @@ export class MonsterCodex extends LitElement {
         </div>
         ${isExpanded ? html`
           <div class="monster-drawer">
-            <div class="drawer-content">
-              <div class="drawer-header">
-                <div class="drawer-title">${monster.name} Statblock</div>
-                <button class="drawer-close-btn" @click=${(e: Event) => this.closeDrawer(e)}>Close</button>
-              </div>
-              <monster-statblock
-                monster-key="${monster.key}"
-                hide-buttons="false"
-              ></monster-statblock>
-            </div>
+            <monster-statblock
+              monster-key="${monster.key}"
+              hide-buttons="false"
+            ></monster-statblock>
           </div>
         ` : ''}
       </div>
@@ -1114,7 +1068,7 @@ export class MonsterCodex extends LitElement {
     this.requestUpdate();
   }
 
-  private setContentTab(tab: 'preview' | 'similar' | 'lore' | 'encounters') {
+  private setContentTab(tab: 'preview' | 'lore' | 'encounters') {
     this.contentTab = tab;
     this.requestUpdate();
   }
@@ -1144,11 +1098,6 @@ export class MonsterCodex extends LitElement {
       this.expandedMonsterKey = key;
       this.selectMonsterByKey(key);
     }
-  }
-
-  private closeDrawer(e: Event) {
-    e.stopPropagation(); // Prevent triggering the row click
-    this.expandedMonsterKey = null;
   }
 
   private previewMonsterByKey(key: string) {
