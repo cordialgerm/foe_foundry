@@ -30,6 +30,11 @@ export class MonsterCardPreview extends LitElement {
       outline-offset: 2px;
     }
 
+    :host(:hover) {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(255, 55, 55, 0.2);
+    }
+
     .preview-card {
       position: relative;
       border-radius: var(--medium-margin);
@@ -41,15 +46,8 @@ export class MonsterCardPreview extends LitElement {
     }
 
     .preview-card.full {
-      height: 300px; /* For mobile cards and desktop preview */
-    }
-
-    .preview-card.compact monster-art {
-      height: 60px;
-    }
-
-    .preview-card.full monster-art {
-      height: 300px;
+      height: 100%;
+      min-height: 400px;
     }
 
     .monster-overlay {
@@ -85,7 +83,7 @@ export class MonsterCardPreview extends LitElement {
     }
 
     .action-btn {
-      background: var(--tertiary-color);
+      background: var(--primary-color);
       color: white;
       border: none;
       padding: 0.5rem 1rem;
@@ -98,17 +96,17 @@ export class MonsterCardPreview extends LitElement {
     }
 
     .action-btn:hover {
-      background: var(--tertiary-color-dark, #c82333);
+      background: var(--primary-muted-color);
       transform: translateY(-1px);
     }
 
     .action-btn.secondary {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(128, 128, 128, 0.8);
       backdrop-filter: blur(4px);
     }
 
     .action-btn.secondary:hover {
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(160, 160, 160, 0.9);
     }
   `;
 
@@ -172,18 +170,19 @@ export class MonsterCardPreview extends LitElement {
     const environments = this.getEnvironments();
 
     return html`
-      <div class="preview-card ${this.compact ? 'compact' : 'full'}">
+      <div class="preview-card ${this.compact ? 'compact' : 'full'}" @click=${this.handleCardClick}>
         <monster-art
           monster-image="${String(this.monster.image || '')}"
           background-image="${String(this.monster.backgroundImage || '')}"
           background-color="rgba(255, 255, 255, 0.55)"
-          image-mode="contain"
+          image-mode="${this.compact ? 'contain' : 'cover'}"
+          height-mode="${this.compact ? 'compact' : 'fill'}"
         ></monster-art>
 
         <div class="monster-overlay ${this.compact ? 'compact' : ''}">
           <div class="monster-name ${this.compact ? 'compact' : ''}">${this.monster.name}</div>
           <div class="monster-details ${this.compact ? 'compact' : ''}">
-            CR ${this.monster.cr} | ${this.monster.creatureType}
+            ${this.monster.cr} | ${this.monster.creatureType}
           </div>
 
           ${this.compact ? html`` : html`
@@ -209,6 +208,19 @@ export class MonsterCardPreview extends LitElement {
     // For now, return empty array since the existing Monster interface doesn't have environments
     // This could be enhanced when the API provides environment data
     return [];
+  }
+
+  private handleCardClick(e: Event) {
+    // Don't navigate if clicking on action buttons
+    const target = e.target as HTMLElement;
+    if (target.closest('.action-btn')) {
+      return;
+    }
+
+    // Navigate to monster page
+    if (this.monster?.monsterTemplate) {
+      window.location.href = `/monsters/${this.monster.monsterTemplate}/#`;
+    }
   }
 
   private handleForgeClick(e: Event) {

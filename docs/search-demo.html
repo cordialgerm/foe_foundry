@@ -6,34 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monster Codex Demo - Foe Foundry</title>
 
-    <!-- Base CSS variables and styles -->
+    <!-- Include main site CSS for consistent theming -->
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <style>
-        :root {
-            --bg-color: #1a1a1a;
-            --muted-color: #2a2a2a;
-            --fg-color: #f4f1e6;
-
-            --primary-color: #ff3737;
-            --primary-faded-color: #ff373728;
-            --primary-muted-color: #a53939;
-            --tertiary-color: #c29a5b;
-            --box-shadow-color: #aaaaaa70;
-            --box-shadow-strong-color: #aaaaaa30;
-
-            --stylistic-font: "Uncial Antiqua", serif;
-            --stylistic-font-size: 26px;
-
-            --header-font: "Cinzel", serif;
-            --header-font-size: 16px;
-
-            --primary-font: "Merriweather", serif;
-            --primary-font-size: 13px;
-
-            --small-margin: 6px;
-            --big-margin: 12px;
-            --medium-margin: 9px;
-        }
-
         * {
             box-sizing: border-box;
         }
@@ -44,6 +20,29 @@
             font-family: var(--primary-font);
             background: var(--bg-color);
             color: var(--fg-color);
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Add the parallax background styling matching homepage */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/icons/favicon.webp');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            background-attachment: fixed;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: -1;
         }
 
         .demo-header {
@@ -51,6 +50,7 @@
             padding: 1rem;
             border-bottom: 2px solid var(--tertiary-color);
             text-align: center;
+            flex-shrink: 0;
         }
 
         .demo-header h1 {
@@ -78,8 +78,9 @@
         }
 
         #monster-codex-container {
-            height: calc(100vh - 140px);
-            /* Subtract header height */
+            flex: 1;
+            overflow: hidden;
+            padding: 1rem;
         }
 
         .error-container {
@@ -106,13 +107,15 @@
         <h1>Foe Foundry Monster Codex</h1>
     </div>
 
-
     <div id="monster-codex-container">
         <monster-codex></monster-codex>
     </div>
 </body>
 
-
+<script>
+    // Set the base URL for the API to localhost for demo
+    window.baseUrl = 'http://127.0.0.1:8080';
+</script>
 <script type="module" src="scripts/main.js"></script>
 
 </html>
