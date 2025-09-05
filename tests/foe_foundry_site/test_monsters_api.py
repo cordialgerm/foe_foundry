@@ -158,3 +158,26 @@ def test_similar_monsters_404():
     """Test that non-existent monsters return 404"""
     response = client.get("/api/v1/monsters/nonexistent-monster/similar")
     assert response.status_code == 404
+
+
+def test_get_monsters_by_family():
+    """Test the new family endpoint"""
+    # Test with a known family - criminals
+    response = client.get("/api/v1/monsters/family/criminals")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+    
+    # Verify each monster has the expected structure
+    for monster in data:
+        assert "key" in monster
+        assert "name" in monster
+        assert "cr" in monster
+        assert "template" in monster
+        assert isinstance(monster["cr"], (int, float))
+
+
+def test_get_monsters_by_family_404():
+    """Test that non-existent families return 404"""
+    response = client.get("/api/v1/monsters/family/nonexistent-family")
+    assert response.status_code == 404

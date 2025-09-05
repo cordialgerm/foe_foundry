@@ -10,3 +10,4 @@ export { GeneratorShowcase } from './GeneratorShowcase.js';
 export { SvgIconButton } from './SvgIconButton.js';
 export { EmailSubscribeCallout } from './EmailSubscribeCallout.js';
 export { StatblockTutorial } from './StatblockTutorial.js';
+export { MonsterCarousel } from './MonsterCarousel.js';
