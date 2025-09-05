@@ -4,7 +4,6 @@ The `<monster-carousel>` component provides a reusable, swipeable carousel for d
 
 ## Basic Usage
 
-```html
 <!-- Show newest monsters -->
 <monster-carousel filter="new"></monster-carousel>
 
@@ -12,8 +11,7 @@ The `<monster-carousel>` component provides a reusable, swipeable carousel for d
 <monster-carousel filter="family:criminals"></monster-carousel>
 
 <!-- Show search results -->
-<monster-carousel filter="query:dragon"></monster-carousel>
-```
+<monster-carousel filter="query:giant"></monster-carousel>
 
 ## Available Filter Types
 
