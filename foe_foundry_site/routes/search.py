@@ -50,6 +50,8 @@ def get_search_monsters(
                 cr=monster.cr,
                 template=monster.template_key,
                 background_image=monster.background_image,
+                creature_type=monster.creature_type.name if hasattr(monster, 'creature_type') else None,
+                tag_line=monster.tag_line if hasattr(monster, 'tag_line') else None,
             )
         )
     return results
@@ -103,6 +105,8 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
                 cr=monster.cr,
                 template=monster.template_key,
                 background_image=monster.background_image,
+                creature_type=monster.creature_type.name if hasattr(monster, 'creature_type') else None,
+                tag_line=monster.tag_line if hasattr(monster, 'tag_line') else None,
             )
         )
     return results

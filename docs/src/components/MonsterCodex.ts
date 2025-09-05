@@ -92,7 +92,8 @@ export class MonsterCodex extends LitElement {
       border-top: 2px solid var(--primary-color);
       border-bottom: 2px solid var(--primary-color);
       position: relative;
-      background: var(--bg-color);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
     }
 
     .filters-panel.hidden {
@@ -139,11 +140,12 @@ export class MonsterCodex extends LitElement {
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      background: var(--bg-color);
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
     }
 
     .preview-panel {
-      background: rgba(26, 26, 26, 0.8);
+      background: rgba(26, 26, 26, 0.4);
       backdrop-filter: blur(10px);
       border-radius: var(--medium-margin) 0 0 var(--medium-margin);
       padding: 1.5rem;
@@ -166,7 +168,8 @@ export class MonsterCodex extends LitElement {
       position: relative;
       border-top: 2px solid var(--primary-color);
       border-bottom: 1px solid var(--primary-color);
-      background: var(--bg-color);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
     }
 
     .search-input-container {
@@ -392,7 +395,8 @@ export class MonsterCodex extends LitElement {
       border-bottom: 1px solid var(--primary-color);
       position: sticky;
       top: 0;
-      background: var(--bg-color);
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
       z-index: 1;
       font-family: var(--header-font);
     }
@@ -460,7 +464,7 @@ export class MonsterCodex extends LitElement {
       font-size: 1rem;
     }
 
-    .monster-cr {
+    .monster-details {
       font-size: 0.9rem;
       opacity: 0.9;
     }
@@ -950,6 +954,15 @@ export class MonsterCodex extends LitElement {
       this.backgroundOffsets.set(monster.key, backgroundPosition);
     }
 
+    // Format the details line: CR X | CreatureType | *TagLine*
+    let details = `CR ${monster.cr}`;
+    if (monster.creature_type) {
+      details += ` | ${monster.creature_type}`;
+    }
+    if (monster.tag_line) {
+      details += ` | *${monster.tag_line}*`;
+    }
+
     return html`
       <div>
         <div
@@ -959,13 +972,14 @@ export class MonsterCodex extends LitElement {
           @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
           <div class="monster-info">
             <div class="monster-name">${monster.name}</div>
-            <div class="monster-cr">${monster.cr}</div>
+            <div class="monster-details">${details}</div>
           </div>
         </div>
         ${isExpanded ? html`
           <div class="monster-drawer">
             <monster-statblock
               monster-key="${monster.key}"
+              link-header="${monster.template}"
               hide-buttons="false"
             ></monster-statblock>
           </div>

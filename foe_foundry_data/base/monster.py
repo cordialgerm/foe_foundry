@@ -12,3 +12,5 @@ class MonsterInfoModel:
     cr: float
     template: str
     background_image: str | None = None
+    creature_type: str | None = None
+    tag_line: str | None = None
