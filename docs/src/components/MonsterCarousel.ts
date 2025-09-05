@@ -218,6 +218,9 @@ export class MonsterCarousel extends LitElement {
       object-fit: contain;
       object-position: center;
       padding: 20px;
+      /* Always apply blending for better integration with background gradients */
+      mix-blend-mode: multiply;
+      opacity: 0.85;
     }
 
     .card-image.contain {
@@ -226,8 +229,20 @@ export class MonsterCarousel extends LitElement {
       padding: 20px;
     }
 
-    .card-image.blend {
-      mix-blend-mode: multiply;
+    /* Alternative blend modes for different effects */
+    .card-image.overlay {
+      mix-blend-mode: overlay;
+      opacity: 0.8;
+    }
+
+    .card-image.soft-light {
+      mix-blend-mode: soft-light;
+      opacity: 0.9;
+    }
+
+    .card-image.darken {
+      mix-blend-mode: darken;
+      opacity: 0.8;
     }
 
     /* Card content styles matching homepage */
@@ -449,7 +464,7 @@ export class MonsterCarousel extends LitElement {
       'background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);', // Pink to yellow
       'background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);', // Cyan to pink
     ];
-    
+
     const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
 
     return {
@@ -671,7 +686,7 @@ export class MonsterCarousel extends LitElement {
         @click="${() => this.handleCardClick(monster.url)}"
       >
         <img
-          class="card-image contain ${monster.custom_style ? '' : 'blend'}"
+          class="card-image contain"
           src="${monster.image}"
           alt="${monster.name}"
           loading="lazy"
