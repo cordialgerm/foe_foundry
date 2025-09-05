@@ -26,7 +26,7 @@ export class MonsterCodex extends LitElement {
   @state() private facets: SearchFacets | null = null;
   @state() private selectedMonster: Monster | null = null;
   @state() private loading = false;
-  @state() private filtersPanelVisible = false; // Hidden by default for mobile-first design
+  @state() private filtersPanelVisible = window.innerWidth > 1040; // Hidden by default for mobile-first design
   @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
   @state() private contentTab: 'preview' | 'lore' | 'encounters' = 'preview';
   @state() private expandedMonsterKey: string | null = null; // Track which monster row has its drawer expanded
@@ -68,7 +68,6 @@ export class MonsterCodex extends LitElement {
       --border-color: var(--fg-color);
       display: block;
       min-height: 100vh;
-      background: var(--bg-color);
     }
 
     /* Mobile-first: Single column layout */
@@ -95,7 +94,6 @@ export class MonsterCodex extends LitElement {
     /* Mobile: Collapsible filters panel */
     .filters-panel {
       order: 2;
-      background: var(--bg-color);
       border: 2px solid var(--border-color);
       border-radius: var(--medium-margin);
       margin: 1rem;
@@ -112,7 +110,6 @@ export class MonsterCodex extends LitElement {
     }
 
     .filters-panel:not(.hidden) {
-      max-height: 500px;
       opacity: 1;
     }
 
@@ -230,7 +227,6 @@ export class MonsterCodex extends LitElement {
     .codex-header {
       order: 1;
       padding: 1rem;
-      background: var(--bg-color);
       border-bottom: 2px solid var(--border-color);
     }
 
@@ -257,7 +253,6 @@ export class MonsterCodex extends LitElement {
       align-items: center;
       border-top: 2px solid var(--border-color);
       border-bottom: 1px solid var(--border-color);
-      background: var(--bg-color);
       flex-wrap: wrap;
     }
 
@@ -798,7 +793,8 @@ export class MonsterCodex extends LitElement {
         grid-template-columns: 0 1fr 350px;
       }
       .filters-panel {
-        width: 280px;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
       }
     }
 
@@ -906,7 +902,7 @@ export class MonsterCodex extends LitElement {
         <!-- Mobile Header -->
         <div class="codex-header">
           <h1 class="codex-title">Foe Foundry Monster Codex</h1>
-          
+
           <!-- Search Bar -->
           <div class="search-bar">
             <button
@@ -1107,13 +1103,13 @@ export class MonsterCodex extends LitElement {
           `}
         </div>
       </div>
-      
+
       <style>
         @media (min-width: 1040px) {
           .codex-header {
             display: none;
           }
-          
+
           .monster-list-panel .search-bar {
             display: flex !important;
           }
@@ -1192,22 +1188,22 @@ export class MonsterCodex extends LitElement {
           <div class="monster-info">
             <div class="monster-name">${monster.name}</div>
             <div class="monster-details">${details}</div>
-            
+
             <!-- Mobile: Rich card content -->
             <div class="monster-tags">
               ${tags.slice(0, 3).map(tag => html`
                 <span class="monster-tag">${tag}</span>
               `)}
             </div>
-            
+
             <div class="monster-description">${description}</div>
-            
+
             <div class="monster-actions">
-              <button class="monster-action-btn" 
+              <button class="monster-action-btn"
                       @click=${(e: Event) => this.handleForgeClick(e, monster.key)}>
                 Forge
               </button>
-              <button class="monster-action-btn secondary" 
+              <button class="monster-action-btn secondary"
                       @click=${(e: Event) => this.handleShareClick(e, monster.key)}>
                 Share
               </button>
