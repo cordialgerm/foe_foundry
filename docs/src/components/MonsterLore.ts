@@ -13,6 +13,12 @@ export class MonsterLore extends LitElement {
   @property({ type: Object })
   monsterStore?: MonsterStore;
 
+  @property({ type: String, attribute: 'font-size' })
+  fontSize = '0.82rem';
+
+  @property({ type: String, attribute: 'max-height' })
+  maxHeight = 'none';
+
   private loreRef = createRef<HTMLDivElement>();
 
   private loreTask = new Task(this, {
@@ -31,9 +37,9 @@ export class MonsterLore extends LitElement {
     .lore-content {
       padding-left: 8px;
       padding-right: 8px;
-      font-size: 0.82rem;
+      font-size: var(--component-font-size, 0.82rem);
       text-align: justify;
-      max-height: calc(80px + var(--max-text-content-height, 700px));
+      max-height: var(--component-max-height, none);
       overflow: hidden;
       position: relative;
     }
@@ -96,7 +102,7 @@ export class MonsterLore extends LitElement {
     }
 
     .content-body {
-      max-height: var(--max-text-content-height, 700px);
+      max-height: var(--component-max-height, none);
       overflow: hidden;
       position: relative;
     }
@@ -155,25 +161,35 @@ export class MonsterLore extends LitElement {
   }
 
   render() {
-    return this.loreTask.render({
-      pending: () => html`<p>Loading lore...</p>`,
-      complete: (monster) => html`
-        <div class="lore-content">
-          <div class="content-header">
-            <h3>Lore</h3>
-            ${monster?.monsterTemplate ? html`
-              <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Lore</a>
-            ` : ''}
-          </div>
-          <div class="content-body">
-            <div ${ref(this.loreRef)}>
-              ${!monster?.overviewElement ? html`<p>No lore available for this monster.</p>` : ''}
+    // Set CSS custom properties based on component attributes
+    const hostStyle = `
+      --component-font-size: ${this.fontSize};
+      --component-max-height: ${this.maxHeight};
+    `;
+
+    return html`
+      <div style="${hostStyle}">
+        ${this.loreTask.render({
+          pending: () => html`<p>Loading lore...</p>`,
+          complete: (monster) => html`
+            <div class="lore-content">
+              <div class="content-header">
+                <h3>Lore</h3>
+                ${monster?.monsterTemplate ? html`
+                  <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Lore</a>
+                ` : ''}
+              </div>
+              <div class="content-body">
+                <div ${ref(this.loreRef)}>
+                  ${!monster?.overviewElement ? html`<p>No lore available for this monster.</p>` : ''}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      `,
-      error: (e) => html`<p>Error loading lore: ${e}</p>`
-    });
+          `,
+          error: (e) => html`<p>Error loading lore: ${e}</p>`
+        })}
+      </div>
+    `;
   }
 }
 

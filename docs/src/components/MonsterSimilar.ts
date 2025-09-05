@@ -12,6 +12,12 @@ export class MonsterSimilar extends LitElement {
   @property({ type: Object })
   monsterStore?: MonsterStore;
 
+  @property({ type: String, attribute: 'font-size' })
+  fontSize = '0.82rem';
+
+  @property({ type: String, attribute: 'max-height' })
+  maxHeight = 'none';
+
   private similarTask = new Task(this, {
     task: async ([monsterKey], { signal }) => {
       const store = this.monsterStore || initializeMonsterStore();
@@ -28,7 +34,7 @@ export class MonsterSimilar extends LitElement {
     .similar-content {
       padding-left: 8px;
       padding-right: 8px;
-      font-size: 0.82rem;
+      font-size: var(--component-font-size, 0.82rem);
       text-align: justify;
     }
 
@@ -78,47 +84,57 @@ export class MonsterSimilar extends LitElement {
     }
 
     .content-body {
-      max-height: var(--max-text-content-height, 700px);
+      max-height: var(--component-max-height, none);
       overflow: hidden;
       position: relative;
     }
   `;
 
   render() {
-    return this.similarTask.render({
-      pending: () => html`<p>Loading similar monsters...</p>`,
-      complete: (similarMonsters) => html`
-        <div class="similar-content">
-          <div class="content-header">
-            <h3>Similar Monsters</h3>
-            ${this.monsterKey ? html`
-              <a href="/monsters/${this.getMonsterTemplate()}/" class="full-content-link">See Full Monster</a>
-            ` : ''}
-          </div>
-          <div class="content-body">
-            <ul>
-              ${similarMonsters.map(
-                group => html`
-                  <li>
-                    <strong>${group.name}</strong>
-                    <ul>
-                      ${group.monsters.map(
-                        monster => html`
-                          <li>
-                            <a href="/generate/?monster-key=${monster.key}">${monster.name} (${monster.cr})</a>
-                          </li>
-                        `
-                      )}
-                    </ul>
-                  </li>
-                `
-              )}
-            </ul>
-          </div>
-        </div>
-      `,
-      error: (e) => html`<p>Error loading similar monsters: ${e}</p>`
-    });
+    // Set CSS custom properties based on component attributes
+    const hostStyle = `
+      --component-font-size: ${this.fontSize};
+      --component-max-height: ${this.maxHeight};
+    `;
+
+    return html`
+      <div style="${hostStyle}">
+        ${this.similarTask.render({
+          pending: () => html`<p>Loading similar monsters...</p>`,
+          complete: (similarMonsters) => html`
+            <div class="similar-content">
+              <div class="content-header">
+                <h3>Similar Monsters</h3>
+                ${this.monsterKey ? html`
+                  <a href="/monsters/${this.getMonsterTemplate()}/" class="full-content-link">See Full Monster</a>
+                ` : ''}
+              </div>
+              <div class="content-body">
+                <ul>
+                  ${similarMonsters.map(
+                    group => html`
+                      <li>
+                        <strong>${group.name}</strong>
+                        <ul>
+                          ${group.monsters.map(
+                            monster => html`
+                              <li>
+                                <a href="/generate/?monster-key=${monster.key}">${monster.name} (${monster.cr})</a>
+                              </li>
+                            `
+                          )}
+                        </ul>
+                      </li>
+                    `
+                  )}
+                </ul>
+              </div>
+            </div>
+          `,
+          error: (e) => html`<p>Error loading similar monsters: ${e}</p>`
+        })}
+      </div>
+    `;
   }
 
   private getMonsterTemplate(): string {

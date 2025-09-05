@@ -8,6 +8,7 @@ import './MonsterCardPreview.js';
 import './MonsterSimilar.js';
 import './MonsterLore.js';
 import './MonsterEncounters.js';
+import './MonsterStatblock.js';
 import { Task } from '@lit/task';
 
 @customElement('monster-codex')
@@ -28,6 +29,7 @@ export class MonsterCodex extends LitElement {
   @state() private filtersPanelVisible = window.innerWidth >= 900; // Hidden by default on medium screens
   @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
   @state() private contentTab: 'preview' | 'similar' | 'lore' | 'encounters' = 'preview';
+  @state() private expandedMonsterKey: string | null = null; // Track which monster row has its drawer expanded
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
@@ -463,6 +465,70 @@ export class MonsterCodex extends LitElement {
       opacity: 0.9;
     }
 
+    /* Drawer styles */
+    .monster-drawer {
+      background: rgba(26, 26, 26, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--primary-color);
+      border-radius: 6px;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      animation: drawer-slide-down 0.3s ease-out;
+      border-top: 2px solid var(--primary-color);
+    }
+
+    @keyframes drawer-slide-down {
+      from {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        max-height: 800px;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .drawer-content {
+      padding: 1.5rem;
+      max-height: 700px;
+      overflow-y: auto;
+    }
+
+    .drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--primary-color);
+    }
+
+    .drawer-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      font-family: var(--header-font);
+    }
+
+    .drawer-close-btn {
+      background: transparent;
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    .drawer-close-btn:hover {
+      background: var(--primary-color);
+      color: var(--fg-color);
+    }
+
     .loading {
       display: flex;
       justify-content: center;
@@ -859,18 +925,24 @@ export class MonsterCodex extends LitElement {
             <div class="preview-tab-content ${this.contentTab === 'similar' ? 'active' : ''}">
               <monster-similar
                 monster-key="${this.selectedMonster.key}"
+                font-size="1rem"
+                max-height="none"
               ></monster-similar>
             </div>
             
             <div class="preview-tab-content ${this.contentTab === 'lore' ? 'active' : ''}">
               <monster-lore
                 monster-key="${this.selectedMonster.key}"
+                font-size="1rem"
+                max-height="none"
               ></monster-lore>
             </div>
             
             <div class="preview-tab-content ${this.contentTab === 'encounters' ? 'active' : ''}">
               <monster-encounters
                 monster-key="${this.selectedMonster.key}"
+                font-size="1rem"
+                max-height="none"
               ></monster-encounters>
             </div>
           ` : html`
@@ -907,6 +979,7 @@ export class MonsterCodex extends LitElement {
 
   private renderMonsterRow(monster: MonsterInfo) {
     const isSelected = this.selectedMonsterKey === monster.key;
+    const isExpanded = this.expandedMonsterKey === monster.key;
 
     // Get consistent background position for this monster
     let backgroundPosition = this.backgroundOffsets.get(monster.key);
@@ -918,15 +991,31 @@ export class MonsterCodex extends LitElement {
     }
 
     return html`
-      <div
-        class="monster-row ${isSelected ? 'selected' : ''}"
-        style="background-image: url('${monster.background_image || ''}'); background-position: ${backgroundPosition};"
-        @click=${() => this.selectMonsterByKey(monster.key)}
-        @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
-        <div class="monster-info">
-          <div class="monster-name">${monster.name}</div>
-          <div class="monster-cr">${monster.cr}</div>
+      <div>
+        <div
+          class="monster-row ${isSelected ? 'selected' : ''}"
+          style="background-image: url('${monster.background_image || ''}'); background-position: ${backgroundPosition};"
+          @click=${() => this.toggleMonsterDrawer(monster.key)}
+          @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
+          <div class="monster-info">
+            <div class="monster-name">${monster.name}</div>
+            <div class="monster-cr">${monster.cr}</div>
+          </div>
         </div>
+        ${isExpanded ? html`
+          <div class="monster-drawer">
+            <div class="drawer-content">
+              <div class="drawer-header">
+                <div class="drawer-title">${monster.name} Statblock</div>
+                <button class="drawer-close-btn" @click=${(e: Event) => this.closeDrawer(e)}>Close</button>
+              </div>
+              <monster-statblock
+                monster-key="${monster.key}"
+                hide-buttons="false"
+              ></monster-statblock>
+            </div>
+          </div>
+        ` : ''}
       </div>
     `;
   }
@@ -1046,6 +1135,22 @@ export class MonsterCodex extends LitElement {
     }
   }
 
+  private toggleMonsterDrawer(key: string) {
+    if (this.expandedMonsterKey === key) {
+      // Close if already expanded
+      this.expandedMonsterKey = null;
+    } else {
+      // Open drawer for this monster and also select it for preview
+      this.expandedMonsterKey = key;
+      this.selectMonsterByKey(key);
+    }
+  }
+
+  private closeDrawer(e: Event) {
+    e.stopPropagation(); // Prevent triggering the row click
+    this.expandedMonsterKey = null;
+  }
+
   private previewMonsterByKey(key: string) {
     // Only update preview if no monster is explicitly selected (sticky behavior)
     if (this.selectedMonsterKey === null) {
@@ -1083,6 +1188,7 @@ export class MonsterCodex extends LitElement {
     this.maxCr = undefined;
     this.selectedMonsterKey = null; // Clear sticky selection
     this.selectedMonster = null;
+    this.expandedMonsterKey = null; // Close any open drawer
     // Task will auto-update
   }
 

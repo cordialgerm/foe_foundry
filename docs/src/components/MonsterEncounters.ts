@@ -13,6 +13,12 @@ export class MonsterEncounters extends LitElement {
   @property({ type: Object })
   monsterStore?: MonsterStore;
 
+  @property({ type: String, attribute: 'font-size' })
+  fontSize = '0.82rem';
+
+  @property({ type: String, attribute: 'max-height' })
+  maxHeight = 'none';
+
   private encounterRef = createRef<HTMLDivElement>();
 
   private encounterTask = new Task(this, {
@@ -31,9 +37,9 @@ export class MonsterEncounters extends LitElement {
     .encounter-content {
       padding-left: 8px;
       padding-right: 8px;
-      font-size: 0.82rem;
+      font-size: var(--component-font-size, 0.82rem);
       text-align: justify;
-      max-height: calc(80px + var(--max-text-content-height, 700px));
+      max-height: var(--component-max-height, none);
       overflow: hidden;
       position: relative;
     }
@@ -96,7 +102,7 @@ export class MonsterEncounters extends LitElement {
     }
 
     .content-body {
-      max-height: var(--max-text-content-height, 700px);
+      max-height: var(--component-max-height, none);
       overflow: hidden;
       position: relative;
     }
@@ -155,25 +161,35 @@ export class MonsterEncounters extends LitElement {
   }
 
   render() {
-    return this.encounterTask.render({
-      pending: () => html`<p>Loading encounters...</p>`,
-      complete: (monster) => html`
-        <div class="encounter-content">
-          <div class="content-header">
-            <h3>Encounters</h3>
-            ${monster?.monsterTemplate ? html`
-              <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Encounters</a>
-            ` : ''}
-          </div>
-          <div class="content-body">
-            <div ${ref(this.encounterRef)}>
-              ${!monster?.encounterElement ? html`<p>No encounter information available for this monster.</p>` : ''}
+    // Set CSS custom properties based on component attributes
+    const hostStyle = `
+      --component-font-size: ${this.fontSize};
+      --component-max-height: ${this.maxHeight};
+    `;
+
+    return html`
+      <div style="${hostStyle}">
+        ${this.encounterTask.render({
+          pending: () => html`<p>Loading encounters...</p>`,
+          complete: (monster) => html`
+            <div class="encounter-content">
+              <div class="content-header">
+                <h3>Encounters</h3>
+                ${monster?.monsterTemplate ? html`
+                  <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Encounters</a>
+                ` : ''}
+              </div>
+              <div class="content-body">
+                <div ${ref(this.encounterRef)}>
+                  ${!monster?.encounterElement ? html`<p>No encounter information available for this monster.</p>` : ''}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      `,
-      error: (e) => html`<p>Error loading encounters: ${e}</p>`
-    });
+          `,
+          error: (e) => html`<p>Error loading encounters: ${e}</p>`
+        })}
+      </div>
+    `;
   }
 }
 
