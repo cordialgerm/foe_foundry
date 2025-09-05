@@ -149,8 +149,8 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean, attribute: 'src-from-url' })
     srcFromUrl: boolean = false;
 
-    @property({ attribute: 'link-header' })
-    linkHeader: string = '';
+    @property({ type: Boolean, attribute: 'link-header' })
+    linkHeader: boolean = false;
 
     @property({ type: Object })
     monsterStore?: MonsterStore;
@@ -317,18 +317,18 @@ export class MonsterStatblock extends LitElement {
         if (!this.linkHeader) return;
 
         // Find the monster name header elements in the statblock
-        const nameHeaders = statblockElement.querySelectorAll('.stat-block .creature-heading h1, .stat-block .creature-heading .creature-name, .stat-block h1');
-        
+        const nameHeaders = statblockElement.querySelectorAll('.stat-block .monster-name');
+
         nameHeaders.forEach(header => {
             const monsterKey = this.getEffectiveMonsterKey();
             if (monsterKey && header.textContent) {
                 // Create a link element
                 const link = document.createElement('a');
-                link.href = `/monsters/${this.linkHeader}/#${monsterKey}`;
+                link.href = `/generate/?monster-key=${monsterKey}`;
                 link.style.color = 'inherit';
                 link.style.textDecoration = 'none';
                 link.textContent = header.textContent;
-                
+
                 // Replace the header content with the link
                 header.innerHTML = '';
                 header.appendChild(link);
@@ -344,17 +344,17 @@ export class MonsterStatblock extends LitElement {
 
         // Find the monster name header elements in slotted content
         const nameHeaders = this.querySelectorAll('.stat-block .creature-heading h1, .stat-block .creature-heading .creature-name, .stat-block h1');
-        
+
         nameHeaders.forEach(header => {
             const monsterKey = this.getEffectiveMonsterKey();
             if (monsterKey && header.textContent && !header.querySelector('a')) {
                 // Create a link element (only if not already linked)
                 const link = document.createElement('a');
-                link.href = `/monsters/${this.linkHeader}/#${monsterKey}`;
+                link.href = `/generate/?${monsterKey}/`;
                 link.style.color = 'inherit';
                 link.style.textDecoration = 'none';
                 link.textContent = header.textContent;
-                
+
                 // Replace the header content with the link
                 header.innerHTML = '';
                 header.appendChild(link);
@@ -508,7 +508,7 @@ export class MonsterStatblock extends LitElement {
             if (this.linkHeader) {
                 this.applyLinkHeaderToSlottedContent();
             }
-            
+
             return html`
                 <div class="statblock-wrapper">
                     <div ${ref(this.statblockRef)} id="statblock-container">

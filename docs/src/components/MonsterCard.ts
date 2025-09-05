@@ -357,6 +357,7 @@ export class MonsterCard extends LitElement {
               monster-image="${monster.image}"
               background-image="${monster.backgroundImage}"
               background-color="rgba(255, 255, 255, 0.55)"
+              height-mode="fixed"
             ></monster-art>
 
             <div class="content-tabs">

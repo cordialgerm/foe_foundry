@@ -16,6 +16,9 @@ export class MonsterArt extends LitElement {
   @property({ type: String, attribute: 'image-mode' })
   imageMode: 'contain' | 'cover' = 'contain';
 
+  @property({ type: String, attribute: 'height-mode' })
+  heightMode: 'fill' | 'fixed' | 'compact' = 'fill';
+
   @state()
   private imageLoaded: boolean = false;
 
@@ -29,7 +32,18 @@ export class MonsterArt extends LitElement {
   static styles = css`
     :host {
       display: block;
+    }
+
+    :host([height-mode="fill"]) {
       height: 100%;
+    }
+
+    :host([height-mode="fixed"]) {
+      height: 200px;
+    }
+
+    :host([height-mode="compact"]) {
+      height: 60px;
     }
 
     .monster-art-container {

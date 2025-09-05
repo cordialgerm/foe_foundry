@@ -979,7 +979,7 @@ export class MonsterCodex extends LitElement {
           <div class="monster-drawer">
             <monster-statblock
               monster-key="${monster.key}"
-              link-header="${monster.template}"
+              link-header
               hide-buttons="false"
             ></monster-statblock>
           </div>

@@ -50,20 +50,6 @@ export class MonsterCardPreview extends LitElement {
       min-height: 400px;
     }
 
-    .preview-card.compact monster-art {
-      height: 60px;
-    }
-
-    .preview-card.full monster-art {
-      height: 100%;
-      min-height: 400px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-
     .monster-overlay {
       position: absolute;
       inset: 0;
@@ -190,6 +176,7 @@ export class MonsterCardPreview extends LitElement {
           background-image="${String(this.monster.backgroundImage || '')}"
           background-color="rgba(255, 255, 255, 0.55)"
           image-mode="${this.compact ? 'contain' : 'cover'}"
+          height-mode="${this.compact ? 'compact' : 'fill'}"
         ></monster-art>
 
         <div class="monster-overlay ${this.compact ? 'compact' : ''}">
@@ -229,7 +216,7 @@ export class MonsterCardPreview extends LitElement {
     if (target.closest('.action-btn')) {
       return;
     }
-    
+
     // Navigate to monster page
     if (this.monster?.monsterTemplate) {
       window.location.href = `/monsters/${this.monster.monsterTemplate}/#`;
