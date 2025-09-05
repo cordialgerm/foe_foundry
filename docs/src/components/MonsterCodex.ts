@@ -230,20 +230,6 @@ export class MonsterCodex extends LitElement {
       border-bottom: 2px solid var(--border-color);
     }
 
-    .codex-title {
-      font-family: var(--header-font);
-      font-size: 1.8rem;
-      color: var(--fg-color);
-      margin: 0 0 1rem 0;
-      text-align: center;
-    }
-
-    /* Desktop: Hide header since it's part of site navigation */
-    @media (min-width: 1040px) {
-      .codex-header {
-        display: none;
-      }
-    }
 
     /* Search bar styles - Mobile first */
     .search-bar {
@@ -264,6 +250,16 @@ export class MonsterCodex extends LitElement {
         z-index: 5;
         position: relative;
         backdrop-filter: blur(5px);
+      }
+
+      .search-bar.mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      .search-bar.desktop {
+        display: none;
       }
     }
 
@@ -899,12 +895,9 @@ export class MonsterCodex extends LitElement {
 
     return html`
       <div class="codex-container ${this.filtersPanelVisible ? '' : 'filters-hidden'}">
-        <!-- Mobile Header -->
-        <div class="codex-header">
-          <h1 class="codex-title">Foe Foundry Monster Codex</h1>
 
-          <!-- Search Bar -->
-          <div class="search-bar">
+        <!-- Search Bar -->
+          <div class="search-bar mobile">
             <button
               class="filter-toggle-btn"
               @click=${this.toggleFiltersPanel}
@@ -922,7 +915,6 @@ export class MonsterCodex extends LitElement {
               />
             </div>
           </div>
-        </div>
 
         <!-- Filters Panel -->
         <div class="filters-panel ${this.filtersPanelVisible ? '' : 'hidden'}">
@@ -1024,7 +1016,7 @@ export class MonsterCodex extends LitElement {
         <!-- Monster List Panel -->
         <div class="monster-list-panel">
           <!-- Desktop Search Bar -->
-          <div class="search-bar" style="display: none;">
+          <div class="search-bar desktop">
             <button
               class="filter-toggle-btn"
               @click=${this.toggleFiltersPanel}
@@ -1103,18 +1095,6 @@ export class MonsterCodex extends LitElement {
           `}
         </div>
       </div>
-
-      <style>
-        @media (min-width: 1040px) {
-          .codex-header {
-            display: none;
-          }
-
-          .monster-list-panel .search-bar {
-            display: flex !important;
-          }
-        }
-      </style>
     `;
   }
 
