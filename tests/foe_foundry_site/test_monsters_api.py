@@ -181,3 +181,5 @@ def test_get_monsters_by_family_404():
     """Test that non-existent families return 404"""
     response = client.get("/api/v1/monsters/family/nonexistent-family")
     assert response.status_code == 404
+    data = response.json()
+    assert "Family 'nonexistent-family' not found" in data["detail"]

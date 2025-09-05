@@ -253,7 +253,7 @@ export class MonsterCarousel extends LitElement {
       parallax: true,
       simulateTouch: true,
       on: {
-        init: function () {
+        init: function (this: any) {
           this.el.classList.remove('preload');
         }
       }
@@ -272,12 +272,17 @@ export class MonsterCarousel extends LitElement {
   }
 
   firstUpdated() {
-    // Wait for Swiper to be available
+    // Wait for Swiper to be available, with timeout
+    let attempts = 0;
+    const maxAttempts = 50; // 5 seconds max
     const checkSwiper = () => {
+      attempts++;
       if (window.Swiper) {
         this.initializeSwiper();
-      } else {
+      } else if (attempts < maxAttempts) {
         setTimeout(checkSwiper, 100);
+      } else {
+        console.warn('Swiper.js not loaded after 5 seconds');
       }
     };
     checkSwiper();
@@ -332,7 +337,7 @@ export class MonsterCarousel extends LitElement {
           </div>
         </div>
       `,
-      error: (error) => html`<div class="error">Error loading monsters: ${error.message}</div>`
+      error: (error) => html`<div class="error">Error loading monsters: ${error instanceof Error ? error.message : 'Unknown error'}</div>`
     });
   }
 

@@ -109,12 +109,17 @@ def get_monsters_by_family(family_key: str) -> list[MonsterInfoModel]:
     """
     Returns a list of monsters that belong to the specified family
     """
-    families = load_families()
-    family = next((f for f in families if f.key == family_key), None)
-    if family is None:
-        raise HTTPException(status_code=404, detail="Family not found")
-    
-    return family.monsters
+    try:
+        families = load_families()
+        family = next((f for f in families if f.key == family_key), None)
+        if family is None:
+            raise HTTPException(status_code=404, detail=f"Family '{family_key}' not found")
+        
+        return family.monsters
+    except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
+        raise HTTPException(status_code=500, detail=f"Error loading family data: {str(e)}")
 
 
 @router.get("/{template_or_variant_key}")
