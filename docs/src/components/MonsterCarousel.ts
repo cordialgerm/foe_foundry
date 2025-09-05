@@ -41,10 +41,75 @@ export class MonsterCarousel extends LitElement {
       width: 100%;
     }
 
+    .loading {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+    }
+
+    .error {
+      text-align: center;
+      padding: 2rem;
+      color: #dc3545;
+      background-color: rgba(220, 53, 69, 0.1);
+      border: 1px solid rgba(220, 53, 69, 0.2);
+      border-radius: 4px;
+    }
+
     .swiper-container {
       width: 100%;
       height: 400px;
       overflow: hidden;
+    }
+
+    /* Fallback styles when Swiper is not available */
+    .carousel-fallback {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 1rem 0;
+      scroll-behavior: smooth;
+      height: 400px;
+    }
+
+    .carousel-fallback::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .carousel-fallback::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+
+    .carousel-fallback::-webkit-scrollbar-thumb {
+      background: rgba(255, 107, 53, 0.6);
+      border-radius: 4px;
+    }
+
+    .carousel-fallback::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 107, 53, 0.8);
+    }
+
+    .carousel-fallback .swiper-slide {
+      flex: 0 0 auto;
+      width: 280px;
+    }
+
+    @media (max-width: 576px) {
+      .carousel-fallback .swiper-slide {
+        width: 240px;
+      }
+    }
+
+    .no-swiper-message {
+      text-align: center;
+      padding: 0.5rem;
+      background: rgba(255, 193, 7, 0.1);
+      border: 1px solid rgba(255, 193, 7, 0.3);
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      color: #856404;
+      font-size: 0.85rem;
     }
 
     .swiper-slide {
@@ -181,10 +246,32 @@ export class MonsterCarousel extends LitElement {
       throw new Error(`Failed to fetch monsters: ${response.statusText}`);
     }
 
-    const monsters: MonsterInfo[] = await response.json();
+    const data = await response.json();
+    
+    // Handle different response formats from different endpoints
+    let monsters: MonsterInfo[];
+    if (filter === 'new') {
+      // The /new endpoint returns a different format: [{monster_key, template_key}]
+      monsters = data.map((item: any) => ({
+        key: item.monster_key,
+        name: this.formatMonsterName(item.monster_key),
+        cr: 1, // Default CR since not provided
+        template: item.template_key
+      }));
+    } else {
+      // Other endpoints return the expected format: [{key, name, cr, template}]
+      monsters = data;
+    }
     
     // Convert MonsterInfo to MonsterData format for rendering
     return monsters.map(monster => this.convertToMonsterData(monster));
+  }
+
+  private formatMonsterName(key: string): string {
+    // Convert monster key to a readable name (e.g., "dire-wolf" -> "Dire Wolf")
+    return key.split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
   }
 
   private convertToMonsterData(monster: MonsterInfo): MonsterData {
@@ -202,6 +289,19 @@ export class MonsterCarousel extends LitElement {
       custom_style: '',
       is_new: false // We'll implement this logic later if needed
     };
+  }
+
+  private handleCardClick(url: string) {
+    if (url) {
+      window.location.href = url;
+    }
+  }
+
+  private handleImageError(event: Event, monster: MonsterData) {
+    const img = event.target as HTMLImageElement;
+    console.warn(`Failed to load image for ${monster.name}: ${img.src}`);
+    // Set fallback image or hide the image element
+    img.style.display = 'none';
   }
 
   private initializeSwiper() {
@@ -289,11 +389,20 @@ export class MonsterCarousel extends LitElement {
   }
 
   updated(changedProperties: any) {
+    super.updated(changedProperties);
+    
+    // Clean up Swiper when filter changes
     if (changedProperties.has('filter') && this.swiperInstance) {
-      // Reinitialize swiper when filter changes
       this.swiperInstance.destroy(true, true);
       this.swiperInstance = null;
-      this.requestUpdate();
+    }
+    
+    // Only reinitialize Swiper when monsters data is loaded and rendered
+    if (this.monstersTask.status === 2 && !this.swiperInstance) { // 2 = COMPLETE status
+      // Wait for the next frame to ensure DOM is fully rendered
+      requestAnimationFrame(() => {
+        this.initializeSwiper();
+      });
     }
   }
 
@@ -305,23 +414,35 @@ export class MonsterCarousel extends LitElement {
   }
 
   render() {
+    const hasSwiper = !!window.Swiper;
+    
     return this.monstersTask.render({
       pending: () => html`<div class="loading">Loading monsters...</div>`,
-      complete: (monsters) => html`
-        <div class="swiper-container preload">
-          <div class="swiper-wrapper">
+      complete: (monsters) => {
+        if (monsters.length === 0) {
+          return html`<div class="no-monsters">No monsters found for this filter.</div>`;
+        }
+
+        return html`
+          ${!hasSwiper ? html`
+            <div class="no-swiper-message">
+              ⚠️ Swiper library not available - showing scrollable fallback layout
+            </div>
+          ` : ''}
+          <div class="${hasSwiper ? 'swiper-container preload' : 'carousel-fallback'}">
             ${monsters.map(monster => html`
               <div 
                 class="swiper-slide card tall ${monster.mask_css} ${monster.is_new ? 'new' : ''}"
                 data-url="${monster.url}"
                 style="${monster.custom_style}"
+                @click="${() => this.handleCardClick(monster.url)}"
               >
                 <img 
                   class="card-image contain ${monster.custom_style ? '' : 'blend'}"
                   src="${monster.image}"
                   alt="${monster.name}"
                   loading="lazy"
-                  @error="${() => this.handleImageError(monster)}"
+                  @error="${(e: Event) => this.handleImageError(e, monster)}"
                 />
                 <div class="card-content">
                   <div class="masked-label">
@@ -335,19 +456,12 @@ export class MonsterCarousel extends LitElement {
               </div>
             `)}
           </div>
-        </div>
-      `,
+        `;
+      },
       error: (error) => html`<div class="error">Error loading monsters: ${error instanceof Error ? error.message : 'Unknown error'}</div>`
     });
   }
 
-  private handleImageError(monster: MonsterData) {
-    // Fallback to a default image if the monster image fails to load
-    const imgElement = this.shadowRoot?.querySelector(`img[alt="${monster.name}"]`) as HTMLImageElement;
-    if (imgElement) {
-      imgElement.src = '/img/monsters/default.webp';
-    }
-  }
 }
 
 declare global {
