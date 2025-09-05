@@ -412,10 +412,30 @@ export class MonsterCarousel extends LitElement {
       -webkit-mask-mode: luminance;
     }
 
-    /* Swiper navigation buttons */
+    /* Swiper navigation buttons matching homepage */
     .swiper-button-next,
     .swiper-button-prev {
-      color: var(--primary-color);
+      color: var(--primary-color) !important;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      width: 44px !important;
+      height: 44px !important;
+      margin-top: -22px !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .swiper-button-disabled {
+      opacity: 0.3 !important;
     }
 
     /* Additional template styling properties */
@@ -581,18 +601,22 @@ export class MonsterCarousel extends LitElement {
         wrapper.style.alignItems = 'flex-start';
       }
 
-      // Use the simplest possible Swiper configuration that should work
+      // Use configuration that matches homepage for consistent navigation
       this.swiperInstance = new Swiper(swiperContainer as HTMLElement, {
         modules: [Autoplay, Navigation, Keyboard, Parallax],
         slidesPerView: 3,
         spaceBetween: 16,
-        centeredSlides: false,
+        initialSlide: 1,
+        centeredSlides: true,
+        createElements: true, // This creates the navigation buttons automatically
         grabCursor: true,
         direction: 'horizontal', // Explicitly set horizontal direction
         keyboard: {
           enabled: true,
         },
         navigation: true,
+        parallax: true,
+        simulateTouch: true,
         autoplay: {
           delay: 6000,
           disableOnInteraction: true,
