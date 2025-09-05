@@ -710,7 +710,6 @@ export class MonsterCodex extends LitElement {
     .similar-monsters-section {
       margin-top: 1.5rem;
       padding-top: 1rem;
-      border-top: 1px solid var(--tertiary-color);
     }
   `;
 
@@ -877,13 +876,13 @@ export class MonsterCodex extends LitElement {
                 Encounters
               </button>
             </div>
-            
+
             <div class="preview-tab-content ${this.contentTab === 'preview' ? 'active' : ''}">
               <monster-card-preview
                 monster-key="${this.selectedMonster.key}"
                 .compact=${false}
               ></monster-card-preview>
-              
+
               <!-- Similar Monsters below preview card -->
               <div class="similar-monsters-section">
                 <monster-similar
@@ -893,7 +892,7 @@ export class MonsterCodex extends LitElement {
                 ></monster-similar>
               </div>
             </div>
-            
+
             <div class="preview-tab-content ${this.contentTab === 'lore' ? 'active' : ''}">
               <monster-lore
                 monster-key="${this.selectedMonster.key}"
@@ -901,7 +900,7 @@ export class MonsterCodex extends LitElement {
                 max-height="none"
               ></monster-lore>
             </div>
-            
+
             <div class="preview-tab-content ${this.contentTab === 'encounters' ? 'active' : ''}">
               <monster-encounters
                 monster-key="${this.selectedMonster.key}"
@@ -1044,11 +1043,11 @@ export class MonsterCodex extends LitElement {
   private handleMinCrChange(e: Event) {
     const input = e.target as HTMLInputElement;
     const value = parseInt(input.value);
-    
+
     // Update temp value for immediate visual feedback
     this.tempMinCr = value;
     this.requestUpdate();
-    
+
     // Debounce the actual filter update
     if (this.crDebounceTimer) {
       clearTimeout(this.crDebounceTimer);
@@ -1062,11 +1061,11 @@ export class MonsterCodex extends LitElement {
   private handleMaxCrChange(e: Event) {
     const input = e.target as HTMLInputElement;
     const value = parseInt(input.value);
-    
+
     // Update temp value for immediate visual feedback
     this.tempMaxCr = value;
     this.requestUpdate();
-    
+
     // Debounce the actual filter update
     if (this.crDebounceTimer) {
       clearTimeout(this.crDebounceTimer);
