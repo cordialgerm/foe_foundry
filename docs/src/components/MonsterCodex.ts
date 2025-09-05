@@ -65,6 +65,7 @@ export class MonsterCodex extends LitElement {
 
   static styles = css`
     :host {
+      --border-color: var(--fg-color);
       display: block;
       height: 100%;
       overflow: hidden;
@@ -88,11 +89,10 @@ export class MonsterCodex extends LitElement {
       overflow-y: hidden;
       width: 300px;
       transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
-      border-right: 2px solid var(--primary-color);
-      border-top: 2px solid var(--primary-color);
-      border-bottom: 2px solid var(--primary-color);
+      border-right: 2px solid var(--border-color);
+      border-top: 2px solid var(--border-color);
+      border-bottom: 2px solid var(--border-color);
       position: relative;
-      background: rgba(0, 0, 0, 0.4);
       backdrop-filter: blur(5px);
     }
 
@@ -114,8 +114,8 @@ export class MonsterCodex extends LitElement {
       top: 50%;
       right: -12px;
       transform: translateY(-50%);
-      background: var(--primary-color);
-      color: var(--fg-color);
+      background: var(--fg-color);
+      color: var(--primary-color);
       border: none;
       width: 24px;
       height: 48px;
@@ -127,7 +127,7 @@ export class MonsterCodex extends LitElement {
       font-size: 14px;
       z-index: 3;
       transition: all 0.2s ease;
-      border: 1px solid rgba(255, 55, 55, 0.5);
+      border: 1px solid var(--border-color);
       box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
     }
 
@@ -140,19 +140,17 @@ export class MonsterCodex extends LitElement {
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      background: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(5px);
     }
 
     .preview-panel {
-      background: rgba(26, 26, 26, 0.4);
       backdrop-filter: blur(10px);
       border-radius: var(--medium-margin) 0 0 var(--medium-margin);
       padding: 1.5rem;
       overflow-y: auto;
-      border-left: 2px solid var(--primary-color);
-      border-top: 2px solid var(--primary-color);
-      border-bottom: 2px solid var(--primary-color);
+      border-left: 2px solid var(--border-color);
+      border-top: 2px solid var(--border-color);
+      border-bottom: 2px solid var(--border-color);
       z-index: 1;
     }
 
@@ -166,9 +164,8 @@ export class MonsterCodex extends LitElement {
       align-items: center;
       z-index: 5;
       position: relative;
-      border-top: 2px solid var(--primary-color);
-      border-bottom: 1px solid var(--primary-color);
-      background: rgba(0, 0, 0, 0.4);
+      border-top: 2px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
       backdrop-filter: blur(5px);
     }
 
@@ -180,7 +177,7 @@ export class MonsterCodex extends LitElement {
     .search-input {
       width: 100%;
       padding: 0.75rem;
-      border: 1px solid var(--primary-color);
+      border: 1px solid var(--border-color);
       border-radius: 4px;
       background: var(--muted-color);
       color: var(--fg-color);
@@ -188,18 +185,18 @@ export class MonsterCodex extends LitElement {
     }
 
     .search-input::placeholder {
-      color: var(--primary-muted-color);
+      color: var(--fg-muted-color);
     }
 
     .search-input:focus {
       outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 2px var(--primary-faded-color);
+      border-color: var(--border-color);
+      box-shadow: 0 0 0 2px var(--fg-muted-color);
     }
 
     /* Filter styles */
-    .filters-container h3 {
-      color: var(--primary-color);
+    .filters-container h2 {
+      color: var(--fg-color);
       margin: 0 0 1rem 0;
       font-family: var(--header-font);
       font-size: var(--header-font-size);
@@ -224,7 +221,7 @@ export class MonsterCodex extends LitElement {
 
     .filter-pill {
       padding: 0.25rem 0.75rem;
-      border: 1px solid var(--primary-color);
+      border: 1px solid var(--border-color);
       border-radius: 20px;
       background: transparent;
       color: var(--fg-color);
@@ -237,12 +234,14 @@ export class MonsterCodex extends LitElement {
     .filter-pill:hover {
       background: var(--primary-color);
       color: var(--fg-color);
+      border-color: var(--primary-color);
     }
 
     .filter-pill.active {
       background: var(--primary-color);
       color: var(--fg-color);
       font-weight: bold;
+      border-color: var(--primary-color);
     }
 
     .group-buttons {
@@ -253,7 +252,7 @@ export class MonsterCodex extends LitElement {
 
     .group-btn {
       padding: 0.5rem 1rem;
-      border: 1px solid var(--primary-color);
+      border: 1px solid var(--border-color);
       border-radius: 4px;
       background: transparent;
       color: var(--fg-color);
@@ -266,12 +265,14 @@ export class MonsterCodex extends LitElement {
     .group-btn:hover {
       background: var(--primary-color);
       color: var(--fg-color);
+      border-color: var(--primary-color);
     }
 
     .group-btn.active {
       background: var(--primary-color);
       color: var(--fg-color);
       font-weight: bold;
+      border-color: var(--primary-color);
     }
 
     .cr-range {
@@ -290,8 +291,6 @@ export class MonsterCodex extends LitElement {
       position: relative;
       height: 40px;
       background: var(--muted-color);
-      border-radius: 6px;
-      border: 1px solid var(--primary-color);
     }
 
     .cr-slider {
@@ -314,7 +313,7 @@ export class MonsterCodex extends LitElement {
       -webkit-appearance: none;
       height: 36px;
       width: 20px;
-      background: var(--primary-color);
+      background: var(--fg-color);
       border-radius: 4px;
       cursor: pointer;
       pointer-events: auto;
@@ -331,7 +330,7 @@ export class MonsterCodex extends LitElement {
     .cr-slider::-moz-range-thumb {
       height: 32px;
       width: 16px;
-      background: var(--primary-color);
+      background: var(--fg-color);
       border-radius: 4px;
       cursor: pointer;
       pointer-events: auto;
@@ -345,7 +344,7 @@ export class MonsterCodex extends LitElement {
       left: 10px;
       right: 10px;
       height: 6px;
-      background: var(--primary-faded-color);
+      background: var(--fg-color);
       border-radius: 3px;
       transform: translateY(-50%);
       pointer-events: none;
@@ -356,7 +355,7 @@ export class MonsterCodex extends LitElement {
       justify-content: space-between;
       margin-top: 0.5rem;
       font-size: 0.8rem;
-      color: var(--primary-muted-color);
+      color: var(--fg-color);
     }
 
     .cr-tier-labels {
@@ -364,7 +363,7 @@ export class MonsterCodex extends LitElement {
       justify-content: space-between;
       margin-top: 0.25rem;
       font-size: 0.7rem;
-      color: var(--primary-color);
+      color: var(--fg-color);
       font-weight: bold;
       position: relative;
     }
@@ -392,7 +391,7 @@ export class MonsterCodex extends LitElement {
       color: var(--primary-color);
       margin: 1rem 0 0.5rem 0;
       padding-bottom: 0.25rem;
-      border-bottom: 1px solid var(--primary-color);
+      border-bottom: 1px solid var(--border-color);
       position: sticky;
       top: 0;
       background: rgba(0, 0, 0, 0.6);
@@ -434,13 +433,13 @@ export class MonsterCodex extends LitElement {
     .monster-row:hover {
       background-color: rgba(0,0,0,0.2);
       transform: translateX(6px);
-      border-color: var(--primary-color);
+      border-color: var(--border-color);
       box-shadow: 0 4px 12px rgba(255, 55, 55, 0.2);
     }
 
     .monster-row.selected {
       background-color: var(--primary-faded-color);
-      border: 1px solid var(--primary-color);
+      border: 1px solid var(--border-color);
       box-shadow: 0 4px 12px rgba(255, 55, 55, 0.3);
     }
 
@@ -504,7 +503,7 @@ export class MonsterCodex extends LitElement {
       justify-content: center;
       align-items: center;
       height: 200px;
-      color: var(--primary-muted-color);
+      color: var(--fg-color);
       text-align: center;
       font-family: var(--primary-font);
     }
@@ -515,20 +514,20 @@ export class MonsterCodex extends LitElement {
       justify-content: center;
       align-items: center;
       height: 200px;
-      color: var(--primary-muted-color);
+      color: var(--fg-color);
       text-align: center;
       font-family: var(--primary-font);
     }
 
     .no-results h4 {
-      color: var(--primary-color);
+      color: var(--fg-color);
       margin-bottom: 0.5rem;
     }
 
     .clear-filters-btn {
-      background: var(--primary-color);
+      background: transparent;
       color: var(--fg-color);
-      border: none;
+      border: 1px solid var(--border-color);
       padding: 0.5rem 1rem;
       border-radius: 4px;
       cursor: pointer;
@@ -538,7 +537,9 @@ export class MonsterCodex extends LitElement {
     }
 
     .clear-filters-btn:hover {
-      background: var(--primary-muted-color);
+      background: var(--primary-color);
+      border: var(--primary-color);
+      color: var(--fg-color);
     }
 
     /* Filter toggle button styles */
@@ -609,9 +610,9 @@ export class MonsterCodex extends LitElement {
         width: 300px;
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
-        border-right: 2px solid var(--primary-color);
-        border-top: 2px solid var(--primary-color);
-        border-bottom: 2px solid var(--primary-color);
+        border-right: 2px solid var(--border-color);
+        border-top: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
         border-radius: 0 var(--medium-margin) var(--medium-margin) 0;
       }
 
@@ -740,7 +741,7 @@ export class MonsterCodex extends LitElement {
         <!-- Filters Panel -->
         <div class="filters-panel ${this.filtersPanelVisible ? '' : 'hidden'}">
           <div class="filters-container">
-            <h3>Filters</h3>
+            <h2>Filters</h2>
             <div class="filter-section">
               <h4>Creature Type</h4>
               <div class="pill-container">
@@ -959,7 +960,7 @@ export class MonsterCodex extends LitElement {
       details += ` | ${monster.creature_type}`;
     }
     if (monster.tag_line) {
-      details += ` | *${monster.tag_line}*`;
+      details += ` | ${monster.tag_line}`;
     }
 
     return html`
