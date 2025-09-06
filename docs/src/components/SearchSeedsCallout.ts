@@ -14,11 +14,11 @@ export class SearchSeedsCallout extends LitElement {
   @property({ type: String })
   title = 'Discover Monsters by Theme';
 
-  @state()
-  private seeds: SearchSeed[] = [];
+  private _seeds: SearchSeed[] = [];
+  private _loading = true;
 
-  @state()
-  private loading = true;
+  get seeds() { return this._seeds; }
+  get loading() { return this._loading; }
 
   static styles = css`
     :host {
@@ -155,14 +155,16 @@ export class SearchSeedsCallout extends LitElement {
     try {
       const response = await fetch('/api/v1/search/seeds');
       if (response.ok) {
-        this.seeds = await response.json();
+        this._seeds = await response.json();
+        this.requestUpdate();
       } else {
         console.error('Failed to load search seeds:', response.statusText);
       }
     } catch (error) {
       console.error('Error loading search seeds:', error);
     } finally {
-      this.loading = false;
+      this._loading = false;
+      this.requestUpdate();
     }
   }
 
