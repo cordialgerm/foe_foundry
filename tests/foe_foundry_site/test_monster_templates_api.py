@@ -39,6 +39,24 @@ def test_get_new_monster_templates_default_limit():
     assert len(data) <= 5  # Default limit
 
 
+def test_get_new_monster_templates_includes_all_recent():
+    """Test that new monster templates includes spy and thug (regression test for issue #292)"""
+    response = client.get("/api/v1/monster_templates/new")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+    
+    # Extract template keys from response
+    template_keys = {template["key"] for template in data}
+    
+    # These templates should be included as they were all created on the same date
+    expected_templates = {"assassin", "bandit", "spy", "thug"}
+    
+    # Check that all expected templates are present
+    for expected in expected_templates:
+        assert expected in template_keys, f"Template '{expected}' should be in new templates but was not found. Found: {template_keys}"
+
+
 def test_get_monster_template_by_key():
     """Test getting a specific monster template by key"""
     response = client.get("/api/v1/monster_templates/ogre")
