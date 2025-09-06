@@ -225,10 +225,6 @@ export function trackFilterUsage(filterType: string, filterValue: string, tab?: 
 /**
  * @deprecated Use trackSearch() instead
  */
-// Legacy functions for backward compatibility - these can be deprecated later
-/**
- * @deprecated Use trackSearch() instead
- */
 export function trackCodexSearch(query: string, resultCount: number): void {
   trackSearch(query, resultCount, 'search');
 }
