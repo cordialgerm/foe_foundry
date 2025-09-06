@@ -4,16 +4,10 @@ import { Task } from '@lit/task';
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Keyboard, Parallax } from 'swiper/modules';
 import { apiMonsterStore, MonsterTemplate } from '../data/api';
+import { trackMonsterClick } from '../utils/analytics.js';
 import './swiper.css';
 
-interface MonsterInfo {
-  key: string;
-  name: string;
-  cr: number;
-  template: string;
-}
-
-interface MonsterData {
+interface CardData {
   key: string;
   name: string;
   tagline: string;
@@ -448,7 +442,7 @@ export class MonsterCarousel extends LitElement {
     }
   `;
 
-  private async fetchMonsterTemplates(filter: string): Promise<MonsterData[]> {
+  private async fetchMonsterTemplates(filter: string): Promise<CardData[]> {
     if (!filter) {
       return [];
     }
@@ -478,7 +472,7 @@ export class MonsterCarousel extends LitElement {
     }
   }
 
-  private convertTemplateToMonsterData(template: MonsterTemplate): MonsterData {
+  private convertTemplateToMonsterData(template: MonsterTemplate): CardData {
     // Use the rich styling information provided by the template API
     let customStyle = '';
 
@@ -528,13 +522,23 @@ export class MonsterCarousel extends LitElement {
     };
   }
 
-  private handleCardClick(url: string) {
+  private handleCardClick(url: string, card: CardData) {
     if (url) {
+      const templateKey = card.key;
+
+      // Track analytics - this is a template click since carousel shows templates
+      trackMonsterClick(
+        templateKey,
+        'template',
+        'carousel',
+      );
+
+      // Navigate to the monster page
       window.location.href = url;
     }
   }
 
-  private handleImageError(event: Event, monster: MonsterData) {
+  private handleImageError(event: Event, monster: CardData) {
     const img = event.target as HTMLImageElement;
     console.warn(`Failed to load image for ${monster.name}: ${img.src}`);
     // Set fallback image or hide the image element
@@ -699,7 +703,7 @@ export class MonsterCarousel extends LitElement {
     });
   }
 
-  private renderMonsterCard(template: MonsterData) {
+  private renderMonsterCard(template: CardData) {
     const cardClasses = [
       'swiper-slide',
       'card',
@@ -717,7 +721,7 @@ export class MonsterCarousel extends LitElement {
         class="${cardClasses}"
         data-url="${url}"
         style="${template.custom_style}"
-        @click="${() => this.handleCardClick(url)}"
+        @click="${() => this.handleCardClick(url, template)}"
       >
         <img
           class="card-image contain"
