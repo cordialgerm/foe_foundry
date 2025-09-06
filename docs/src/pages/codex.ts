@@ -22,6 +22,9 @@ function initializeCodex() {
     // Setup monster search event listener for URL updates
     setupMonsterSearchListener();
 
+    // Setup catalog search event listener
+    setupCatalogSearchListener();
+
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashChange);
 }
@@ -137,6 +140,26 @@ function switchToBrowseTab() {
     }
 }
 
+function switchToCatalogTab() {
+    const catalogTab = document.querySelector('.codex-tab[data-tab="catalog"]') as HTMLElement;
+    const catalogContent = document.querySelector('.codex-tab-content[data-content="catalog"]') as HTMLElement;
+
+    if (catalogTab && catalogContent) {
+        // Update tab states
+        document.querySelectorAll('.codex-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.codex-tab-content').forEach(c => c.classList.remove('active'));
+
+        catalogTab.classList.add('active');
+        catalogContent.classList.add('active');
+
+        // Update URL
+        const url = new URL(window.location.href);
+        url.hash = 'catalog';
+        url.searchParams.delete('query'); // Remove query when switching to catalog
+        window.history.pushState({}, '', url.toString());
+    }
+}
+
 function handleInitialUrlState() {
     const url = new URL(window.location.href);
     const hash = url.hash.substring(1); // Remove #
@@ -153,6 +176,9 @@ function handleInitialUrlState() {
             }, 0);
             focused = true;
         }
+    } else if (hash === 'catalog') {
+        // Switch to catalog tab
+        switchToCatalogTab();
     } else if (hash === 'browse') {
         // Switch to browse tab (already default, but ensure state is correct)
         switchToBrowseTab();
@@ -190,12 +216,22 @@ function setupMonsterSearchListener() {
     });
 }
 
+function setupCatalogSearchListener() {
+    // Listen for catalog search events to switch to search tab
+    document.addEventListener('catalog-search', (e: any) => {
+        const { query } = e.detail;
+        if (query) {
+            switchToSearchTab(query);
+        }
+    });
+}
+
 function updateUrlForTab(tabName: string) {
     const url = new URL(window.location.href);
     url.hash = tabName;
 
-    // Clear query param when switching to browse tab
-    if (tabName === 'browse') {
+    // Clear query param when switching to browse or catalog tab
+    if (tabName === 'browse' || tabName === 'catalog') {
         url.searchParams.delete('query');
     }
 
@@ -208,11 +244,13 @@ declare global {
         codexPageFunctions?: {
             switchToSearchTab: (query?: string) => void;
             switchToBrowseTab: () => void;
+            switchToCatalogTab: () => void;
         };
     }
 }
 
 window.codexPageFunctions = {
     switchToSearchTab,
-    switchToBrowseTab
+    switchToBrowseTab,
+    switchToCatalogTab
 };

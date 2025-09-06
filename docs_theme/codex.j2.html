@@ -5,6 +5,10 @@
             <svg-icon src="death-note" class="tab-icon"></svg-icon>
             Browse
         </button>
+        <button class="codex-tab" data-tab="catalog">
+            <svg-icon src="bookshelf" class="tab-icon"></svg-icon>
+            Catalog
+        </button>
         <button class="codex-tab" data-tab="search">
             <svg-icon src="magnifying-glass" class="tab-icon"></svg-icon>
             Search
@@ -45,6 +49,11 @@
                 <monster-carousel filter="family:undead"></monster-carousel>
             </section>
         </div>
+    </div>
+
+    <!-- Catalog Tab Content -->
+    <div class="codex-tab-content" data-content="catalog">
+        <monster-catalog></monster-catalog>
     </div>
 
     <!-- Search Tab Content -->
