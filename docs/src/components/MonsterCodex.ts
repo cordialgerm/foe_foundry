@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, state } from 'lit/decorators.js';
+import { customElement, state, property } from 'lit/decorators.js';
 import { MonsterInfo, MonsterSearchRequest, SearchFacets, MonsterSearchResult } from '../data/search.js';
 import { Monster } from '../data/monster.js';
 import { MonsterSearchApi } from '../data/searchApi.js';
@@ -13,6 +13,7 @@ import { Task } from '@lit/task';
 
 @customElement('monster-codex')
 export class MonsterCodex extends LitElement {
+  @property({ attribute: 'initial-query' }) initialQuery = '';
   @state() private query = '';
   @state() private selectedCreatureTypes: string[] = [];
   @state() private minCr?: number;
@@ -853,11 +854,47 @@ export class MonsterCodex extends LitElement {
     // Listen for window resize to handle mobile/desktop transitions
     this.handleResize = this.handleResize.bind(this);
     window.addEventListener('resize', this.handleResize);
+
+    // Set initial query from attribute if provided
+    if (this.initialQuery) {
+      this.query = this.initialQuery;
+    }
+
+    // Listen for external search events
+    this.addEventListener('search-query-changed', this.handleExternalSearch);
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
     window.removeEventListener('resize', this.handleResize);
+    this.removeEventListener('search-query-changed', this.handleExternalSearch);
+  }
+
+  private handleExternalSearch(e: CustomEvent) {
+    if (e.detail?.query) {
+      this.query = e.detail.query;
+    }
+  }
+
+  // Method to programmatically set search query (for external calls)
+  public setSearchQuery(query: string) {
+    this.query = query;
+    this.dispatchSearchEvent();
+  }
+
+  private dispatchSearchEvent() {
+    // Dispatch event when search state changes for URL parameter updates
+    const event = new CustomEvent('monster-search-changed', {
+      detail: {
+        query: this.query,
+        creatureTypes: this.selectedCreatureTypes,
+        minCr: this.minCr,
+        maxCr: this.maxCr
+      },
+      bubbles: true,
+      composed: true
+    });
+    this.dispatchEvent(event);
   }
 
   private handleResize() {
@@ -1223,6 +1260,7 @@ export class MonsterCodex extends LitElement {
     }
     this.searchDebounceTimer = window.setTimeout(() => {
       this.query = value;
+      this.dispatchSearchEvent();
     }, 1000);
   }
 
@@ -1232,6 +1270,7 @@ export class MonsterCodex extends LitElement {
     } else {
       this.selectedCreatureTypes = [...this.selectedCreatureTypes, type];
     }
+    this.dispatchSearchEvent();
   }
 
   private handleMinCrChange(e: Event) {
@@ -1249,6 +1288,7 @@ export class MonsterCodex extends LitElement {
     this.crDebounceTimer = window.setTimeout(() => {
       this.minCr = value === 0 ? undefined : value;
       this.tempMinCr = undefined;
+      this.dispatchSearchEvent();
     }, 300);
   }
 
@@ -1267,6 +1307,7 @@ export class MonsterCodex extends LitElement {
     this.crDebounceTimer = window.setTimeout(() => {
       this.maxCr = value === 30 ? undefined : value;
       this.tempMaxCr = undefined;
+      this.dispatchSearchEvent();
     }, 300);
   }
 
