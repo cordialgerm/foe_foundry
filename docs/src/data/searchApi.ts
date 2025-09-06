@@ -1,4 +1,4 @@
-import { MonsterSearchRequest, MonsterSearchResult, SearchFacets, IMonsterSearchApi, MonsterInfo } from './search.js';
+import { MonsterSearchRequest, MonsterSearchResult, SearchFacets, IMonsterSearchApi, MonsterInfo, SearchSeed } from './search.js';
 
 export class MonsterSearchApi implements IMonsterSearchApi {
     private baseUrl: string;
@@ -51,6 +51,22 @@ export class MonsterSearchApi implements IMonsterSearchApi {
             return facets;
         } catch (error) {
             console.error('Monster facets API error:', error);
+            throw error;
+        }
+    }
+
+    async getSearchSeeds(): Promise<SearchSeed[]> {
+        try {
+            const response = await fetch(`${this.baseUrl}/v1/search/seeds`);
+
+            if (!response.ok) {
+                throw new Error(`Search seeds API request failed: ${response.status} ${response.statusText}`);
+            }
+
+            const seeds: SearchSeed[] = await response.json();
+            return seeds;
+        } catch (error) {
+            console.error('Search seeds API error:', error);
             throw error;
         }
     }

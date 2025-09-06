@@ -1,0 +1,63 @@
+# Search Seeds for Monster Codex
+# These are predefined search terms to inspire users and help them discover monsters
+
+search_seeds:
+  - term: "undead horrors"
+    description: "Skeletal champions, zombies, and other terrifying undead creatures"
+    
+  - term: "criminal underworld"
+    description: "Assassins, thugs, and bandit captains from the shadows"
+    
+  - term: "frozen wastes"
+    description: "Ice-bound creatures and frost giants from the coldest realms"
+    
+  # - term: "desert raiders"
+  #   description: "No good search results currently available"
+    
+  # - term: "swamp things"
+  #   description: "No good search results currently available"
+    
+  - term: "fire-cursed fiends"
+    description: "Demonic cultists and fire-touched undead"
+    
+  - term: "shadow assassins"
+    description: "Stealthy killers that strike from the darkness"
+    
+  - term: "beasts of burden"
+    description: "Powerful creatures used for labor and war"
+    
+  - term: "ancient constructs"
+    description: "Stone golems, gorgons, and other magical constructions"
+    
+  - term: "feral giants"
+    description: "Savage ogres and monstrous giant-kin"
+    
+  - term: "otherworldly aberrations"
+    description: "Strange creatures from beyond the material plane"
+    
+  - term: "arcane tricksters"
+    description: "Magical spellcasters with cunning abilities"
+    
+  - term: "ocean terrors"
+    description: "Aquatic monsters from the deepest waters"
+    
+  - term: "fallen celestials"
+    description: "Corrupted holy beings and dark priests"
+    
+  - term: "goblin warbands"
+    description: "Organized groups of goblinoid raiders"
+    
+  - term: "oozes and slimes"
+    description: "Gelatinous creatures and shapeshifting mimics"
+    
+  - term: "feral werewolves"
+    description: "Savage lycanthropes and dire wolves"
+    
+  - term: "storm bringers"
+    description: "Elemental creatures that command weather and lightning"
+    
+  - term: "underground horrors"
+    description: "Dungeon guardians and subterranean monsters"
+    
+  - term: "fey tricksters"
+    description: "Mischievous creatures from the feywild"
