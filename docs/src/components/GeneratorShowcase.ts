@@ -1,6 +1,8 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { SiteCssMixin } from '../utils/css-adoption.js';
+import { MonsterSearchApi } from '../data/searchApi.js';
+import { SearchSeed } from '../data/search.js';
 import './RerollButton.js';
 import './ForgeButton.js';
 import './MonsterStatblock.js';
@@ -22,6 +24,16 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     @state()
     private currentMessage = '';
 
+    @state()
+    private searchSeeds: SearchSeed[] = [];
+
+    @state()
+    private selectedSeeds: SearchSeed[] = [];
+
+    @state()
+    private showSearchSeeds = false;
+
+    private searchApi = new MonsterSearchApi();
     private timerDuration = 0;
     private timerStartTime = 0;
     private timerAnimationId: number | null = null;
@@ -35,7 +47,10 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         "A formidable enemy emerges...",
         "Something sinister stirs...",
         "A dangerous creature awakens...",
-        "Your nemesis draws near..."
+        "Your nemesis draws near...",
+        "Looking for something specific? Try searching!",
+        "Discover monsters by theme or environment!",
+        "Find the perfect foe for your adventure!"
     ];
 
     private getMonsterKeyFromUrl(): string | null {
@@ -123,6 +138,84 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         .timer-container.hidden {
             display: none;
         }
+
+        .search-seeds-section {
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 2px solid var(--tertiary-color, #c29a5b);
+            border-radius: 12px;
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(4px);
+            max-width: 500px;
+            width: 100%;
+            display: none;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .search-seeds-section.visible {
+            display: block;
+        }
+
+        .search-seeds-header {
+            color: var(--bg-color);
+            font-family: var(--header-font);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .search-seeds-description {
+            color: var(--bg-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .search-seeds-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .search-seed-button {
+            background: var(--color-surface-variant, #f5f5f5);
+            border: 1px solid var(--tertiary-color, #c29a5b);
+            border-radius: 20px;
+            padding: 0.75rem 1.25rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: var(--fg-color, #f4f1e6);
+            font-family: var(--primary-font, system-ui);
+            font-weight: 500;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .search-seed-button:hover {
+            background: var(--tertiary-color, #c29a5b);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .search-seed-button:active {
+            transform: translateY(0);
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     `;
 
     firstUpdated() {
@@ -132,6 +225,9 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         // Add event listeners for button interactions
         this.addEventListener('reroll-click', this._handleButtonClick.bind(this));
         this.addEventListener('forge-click', this._handleButtonClick.bind(this));
+
+        // Load search seeds
+        this._loadSearchSeeds();
 
         // Set up intersection observer to detect when component comes into view
         this.setupIntersectionObserver();
@@ -164,8 +260,37 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         return !effectiveMonsterKey && !this.timerActive && !this.timerHasCompletedOnce;
     }
 
+    private async _loadSearchSeeds(): Promise<void> {
+        try {
+            const seeds = await this.searchApi.getSearchSeeds();
+            this.searchSeeds = seeds;
+            // Select 3 random seeds for display
+            this._selectRandomSeeds();
+        } catch (error) {
+            console.error('Failed to load search seeds:', error);
+            this.searchSeeds = [];
+        }
+    }
+
+    private _selectRandomSeeds(): void {
+        if (this.searchSeeds.length === 0) return;
+        
+        // Shuffle and take first 3
+        const shuffled = [...this.searchSeeds].sort(() => Math.random() - 0.5);
+        this.selectedSeeds = shuffled.slice(0, 3);
+    }
+
     private startTimer() {
         if (this.timerActive) return;
+
+        // Decide whether to show search seeds or normal timer
+        // 30% chance to show search seeds instead of normal timer
+        const shouldShowSearchSeeds = Math.random() < 0.3 && this.selectedSeeds.length > 0;
+        
+        if (shouldShowSearchSeeds) {
+            this._showSearchSeeds();
+            return;
+        }
 
         // Random timer duration between 7-9 seconds
         this.timerDuration = (Math.random() * 2 + 7) * 1000;
@@ -178,6 +303,21 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
         // Start progress animation
         this.animateProgress();
+    }
+
+    private _showSearchSeeds() {
+        // Set a search-related message
+        const searchMessages = this.messages.slice(-3); // Last 3 are search-related
+        this.currentMessage = searchMessages[Math.floor(Math.random() * searchMessages.length)];
+        
+        this.showSearchSeeds = true;
+        this.timerActive = false;
+        this.timerHasCompletedOnce = true; // Prevent timer from starting again
+        
+        // Hide search seeds after 10 seconds
+        setTimeout(() => {
+            this.showSearchSeeds = false;
+        }, 10000);
     }
 
     private startMessageCycling() {
@@ -257,6 +397,11 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         window.open('https://buttondown.com/cordialgerm', '_blank');
     }
 
+    private _handleSearchSeedClick(seedTerm: string) {
+        // Navigate to search page with the selected seed term
+        window.location.href = `/powers/all/?q=${encodeURIComponent(seedTerm)}`;
+    }
+
     render() {
         const effectiveMonsterKey = this.monsterKey || this.getMonsterKeyFromUrl();
         const statblockClass = effectiveMonsterKey ? '' : 'hidden';
@@ -291,6 +436,22 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                     <div class="timer-message">${this.currentMessage}</div>
                     <div class="progress-bar-container">
                         <div class="progress-bar" style="width: ${this.timerProgress}%"></div>
+                    </div>
+                </div>
+                
+                <div class="search-seeds-section ${this.showSearchSeeds ? 'visible' : ''}">
+                    <div class="search-seeds-header">Discover Monsters</div>
+                    <div class="search-seeds-description">${this.currentMessage}</div>
+                    <div class="search-seeds-container">
+                        ${this.selectedSeeds.map(seed => html`
+                            <button 
+                                class="search-seed-button"
+                                @click=${() => this._handleSearchSeedClick(seed.term)}
+                                title="${seed.description}"
+                            >
+                                ${seed.term}
+                            </button>
+                        `)}
                     </div>
                 </div>
             </div>
