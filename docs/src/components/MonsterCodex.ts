@@ -15,21 +15,16 @@ import { Task } from '@lit/task';
 export class MonsterCodex extends LitElement {
   @state() private query = '';
   @state() private selectedCreatureTypes: string[] = [];
-  @state() private selectedEnvironments: string[] = [];
-  @state() private selectedRoles: string[] = [];
   @state() private minCr?: number;
   @state() private maxCr?: number;
-  @state() private tempMinCr?: number; // For immediate visual feedback during sliding
-  @state() private tempMaxCr?: number; // For immediate visual feedback during sliding
+  @state() private tempMinCr?: number; // For immediate visual feedback during CR slider
+  @state() private tempMaxCr?: number; // For immediate visual feedback during CR slider
   @state() private groupBy: 'family' | 'challenge' | 'name' | 'relevance' = 'relevance';
-  @state() private monsters: MonsterInfo[] = [];
-  @state() private facets: SearchFacets | null = null;
   @state() private selectedMonster: Monster | null = null;
-  @state() private loading = false;
-  @state() private filtersPanelVisible = window.innerWidth > 1040; // Hidden by default for mobile-first design
-  @state() private selectedMonsterKey: string | null = null; // Track explicitly selected monster for sticky behavior
+  @state() private filtersPanelVisible = window.innerWidth > 1040; // Mobile-first: hidden by default
+  @state() private selectedMonsterKey: string | null = null; // Track selected monster for sticky behavior
   @state() private contentTab: 'preview' | 'lore' | 'encounters' = 'preview';
-  @state() private expandedMonsterKey: string | null = null; // Track which monster row has its drawer expanded
+  @state() private expandedMonsterKey: string | null = null; // Track which monster row has drawer expanded
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
@@ -40,11 +35,11 @@ export class MonsterCodex extends LitElement {
   private searchTask = new Task(this, async ([query, selectedCreatureTypes, minCr, maxCr]: [string, string[], number | undefined, number | undefined]) => {
     const hasFilters = !!(query || (selectedCreatureTypes && selectedCreatureTypes.length > 0) || minCr !== undefined || maxCr !== undefined);
     if (!hasFilters) {
-      // No filters: just get facets
+      // No filters: just get facets for display
       const facets = await this.searchApi.getFacets();
       return { monsters: [], facets, total: 0 } as MonsterSearchResult;
     } else {
-      // Filters: perform search
+      // Filters present: perform search
       const searchRequest: MonsterSearchRequest = {
         query: query || undefined,
         creatureTypes: selectedCreatureTypes.length > 0 ? selectedCreatureTypes : undefined,
@@ -64,6 +59,7 @@ export class MonsterCodex extends LitElement {
   });
 
   static styles = css`
+    /* ===== BASE STYLES ===== */
     :host {
       --border-color: var(--fg-color);
       display: block;
@@ -71,6 +67,7 @@ export class MonsterCodex extends LitElement {
       min-height: 100vh;
     }
 
+    /* ===== LAYOUT: CONTAINER & GRID ===== */
     /* Mobile-first: Single column layout */
     .codex-container {
       display: flex;
@@ -93,6 +90,82 @@ export class MonsterCodex extends LitElement {
       }
     }
 
+    @media (max-width: 1200px) {
+      .codex-container {
+        grid-template-columns: 280px 1fr 350px;
+      }
+      .codex-container.filters-hidden {
+        grid-template-columns: 0 1fr 350px;
+      }
+    }
+
+    /* ===== HEADER ===== */
+    .codex-header {
+      order: 1;
+      padding: 1rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    /* ===== SEARCH BAR ===== */
+    .search-bar {
+      padding: 1rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      border-top: 2px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+
+    /* Desktop: Search bar positioning */
+    @media (min-width: 1040px) {
+      .search-bar {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        z-index: 5;
+        position: relative;
+        backdrop-filter: blur(5px);
+      }
+
+      .search-bar.mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      .search-bar.desktop {
+        display: none;
+      }
+    }
+
+    .search-input-container {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background: var(--muted-color);
+      color: var(--fg-color);
+      font-size: 1rem;
+      min-height: 44px; /* Touch-friendly */
+      box-sizing: border-box;
+    }
+
+    .search-input::placeholder {
+      color: var(--fg-muted-color);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--border-color);
+      box-shadow: 0 0 0 2px var(--fg-muted-color);
+    }
+
+    /* ===== FILTERS PANEL ===== */
     /* Mobile: Collapsible filters panel */
     .filters-panel {
       order: 2;
@@ -153,12 +226,18 @@ export class MonsterCodex extends LitElement {
       padding: 1rem;
     }
 
-    /* Mobile: Hide panel divider */
+    .filters-container h2 {
+      color: var(--fg-color);
+      margin: 0 0 1rem 0;
+      font-family: var(--header-font);
+      font-size: var(--header-font-size);
+    }
+
+    /* Panel divider (desktop only) */
     .panel-divider {
       display: none;
     }
 
-    /* Desktop: Show panel divider */
     @media (min-width: 1040px) {
       .panel-divider {
         display: flex;
@@ -188,119 +267,43 @@ export class MonsterCodex extends LitElement {
       }
     }
 
-    /* Mobile: Monster list takes full width */
-    .monster-list-panel {
-      order: 3;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      overflow: hidden;
-      min-height: 0; /* Allow flex shrinking for scrolling */
-    }
-
-    /* Desktop: Monster list in middle column */
-    @media (min-width: 1040px) {
-      .monster-list-panel {
-        order: unset;
-        backdrop-filter: blur(5px);
-      }
-    }
-
-    /* Mobile: Hide preview panel entirely */
-    .preview-panel {
-      display: none;
-    }
-
-    /* Desktop: Show preview panel */
-    @media (min-width: 1040px) {
-      .preview-panel {
-        display: block;
-        backdrop-filter: blur(10px);
-        border-radius: var(--medium-margin) 0 0 var(--medium-margin);
-        padding: 1.5rem;
-        overflow-y: auto;
-        border-left: 2px solid var(--border-color);
-        border-top: 2px solid var(--border-color);
-        border-bottom: 2px solid var(--border-color);
-        z-index: 1;
-      }
-    }
-
-    /* Mobile: Header with title and search */
-    .codex-header {
-      order: 1;
-      padding: 1rem;
-      border-bottom: 2px solid var(--border-color);
-    }
-
-
-    /* Search bar styles - Mobile first */
-    .search-bar {
-      padding: 1rem;
-      display: flex;
-      gap: 0.75rem;
-      align-items: center;
-      border-top: 2px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      flex-wrap: wrap;
-    }
-
-    /* Desktop: Search bar positioning */
-    @media (min-width: 1040px) {
-      .search-bar {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        z-index: 5;
-        position: relative;
-        backdrop-filter: blur(5px);
-      }
-
-      .search-bar.mobile {
-        display: none;
-      }
-    }
-
-    @media (max-width: 1040px) {
-      .search-bar.desktop {
-        display: none;
-      }
-    }
-
-    .search-input-container {
-      flex: 1;
-      min-width: 200px;
-    }
-
-    .search-input {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid var(--border-color);
+    /* Filter toggle button */
+    .filter-toggle-btn {
+      background: var(--primary-color);
+      color: var(--fg-color);
+      border: none;
+      padding: 0.75rem 1rem;
       border-radius: 4px;
-      background: var(--muted-color);
-      color: var(--fg-color);
-      font-size: 1rem;
+      cursor: pointer;
+      font-family: var(--primary-font);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      position: relative;
       min-height: 44px; /* Touch-friendly */
-      box-sizing: border-box;
+      white-space: nowrap;
     }
 
-    .search-input::placeholder {
-      color: var(--fg-muted-color);
+    .filter-toggle-btn:hover {
+      background: var(--primary-muted-color);
     }
 
-    .search-input:focus {
-      outline: none;
-      border-color: var(--border-color);
-      box-shadow: 0 0 0 2px var(--fg-muted-color);
+    .filter-count {
+      background: var(--fg-color);
+      color: var(--primary-color);
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: bold;
     }
 
-    /* Filter styles */
-    .filters-container h2 {
-      color: var(--fg-color);
-      margin: 0 0 1rem 0;
-      font-family: var(--header-font);
-      font-size: var(--header-font-size);
-    }
-
+    /* ===== FILTER SECTIONS ===== */
     .filter-section {
       margin-bottom: 1.5rem;
     }
@@ -312,6 +315,7 @@ export class MonsterCodex extends LitElement {
       font-family: var(--header-font);
     }
 
+    /* Filter pills */
     .pill-container {
       display: flex;
       flex-wrap: wrap;
@@ -343,6 +347,7 @@ export class MonsterCodex extends LitElement {
       border-color: var(--primary-color);
     }
 
+    /* Group buttons */
     .group-buttons {
       display: flex;
       gap: 0.5rem;
@@ -374,6 +379,26 @@ export class MonsterCodex extends LitElement {
       border-color: var(--primary-color);
     }
 
+    /* Clear filters button */
+    .clear-filters-btn {
+      background: transparent;
+      color: var(--fg-color);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--primary-font);
+      margin-top: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .clear-filters-btn:hover {
+      background: var(--primary-color);
+      border: var(--primary-color);
+      color: var(--fg-color);
+    }
+
+    /* ===== CR SLIDER ===== */
     .cr-range {
       color: var(--fg-color);
       font-family: var(--primary-font);
@@ -477,11 +502,74 @@ export class MonsterCodex extends LitElement {
     .cr-tier-label:nth-child(3) { left: 50%; }   /* Tier III at CR 11-19 (~50%) */
     .cr-tier-label:nth-child(4) { left: 83.3%; } /* Tier IV at CR 20+ (~83%) */
 
-    /* Monster list styles - Mobile first */
+    /* ===== MONSTER LIST PANEL ===== */
+    .monster-list-panel {
+      order: 3;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      overflow: hidden;
+      min-height: 0; /* Allow flex shrinking for scrolling */
+    }
+
+    @media (min-width: 1040px) {
+      .monster-list-panel {
+        order: unset;
+        backdrop-filter: blur(5px);
+      }
+    }
+
     .monster-list {
       flex: 1;
       overflow-y: auto;
       padding: 1rem;
+    }
+
+    /* Custom scrollbar styling */
+    .monster-list::-webkit-scrollbar,
+    .preview-panel::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .monster-list::-webkit-scrollbar-track,
+    .preview-panel::-webkit-scrollbar-track {
+      background: var(--muted-color);
+      border-radius: 4px;
+    }
+
+    .monster-list::-webkit-scrollbar-thumb,
+    .preview-panel::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+      border: 1px solid var(--bg-color);
+    }
+
+    .monster-list::-webkit-scrollbar-thumb:hover,
+    .preview-panel::-webkit-scrollbar-thumb:hover {
+      background: var(--tertiary-color);
+    }
+
+    /* Firefox scrollbar styling */
+    .monster-list,
+    .preview-panel {
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary-color) var(--muted-color);
+    }
+
+    /* ===== MONSTER ROWS ===== */
+    .group-header {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--primary-color);
+      margin: 1rem 0 0.5rem 0;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+      font-family: var(--header-font);
     }
 
     .monster-row {
@@ -541,21 +629,6 @@ export class MonsterCodex extends LitElement {
       }
     }
 
-    .group-header {
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: var(--primary-color);
-      margin: 1rem 0 0.5rem 0;
-      padding-bottom: 0.25rem;
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      background: rgba(0, 0, 0, 0.9);
-      backdrop-filter: blur(5px);
-      z-index: 1;
-      font-family: var(--header-font);
-    }
-
     .monster-info {
       color: white;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
@@ -568,6 +641,18 @@ export class MonsterCodex extends LitElement {
       justify-content: flex-end;
       padding: 1.5rem;
       min-height: 200px;
+    }
+
+    /* Desktop: Simplified layout */
+    @media (min-width: 1040px) {
+      .monster-info {
+        background: rgba(0,0,0,0.5);
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.75rem;
+        min-height: auto;
+      }
     }
 
     .monster-name {
@@ -640,19 +725,7 @@ export class MonsterCodex extends LitElement {
       color: var(--bg-color);
     }
 
-    /* Desktop: Simplified layout */
-    @media (min-width: 1040px) {
-      .monster-info {
-        background: rgba(0,0,0,0.5);
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0.75rem;
-        min-height: auto;
-      }
-    }
-
-    /* Drawer styles */
+    /* ===== MONSTER DRAWER ===== */
     .monster-drawer {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
@@ -673,138 +746,23 @@ export class MonsterCodex extends LitElement {
       }
     }
 
-    .loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 200px;
-      color: var(--fg-color);
-      font-family: var(--primary-font);
-    }
-
-    .no-selection {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 200px;
-      color: var(--fg-color);
-      text-align: center;
-      font-family: var(--primary-font);
-    }
-
-    .no-results {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 200px;
-      color: var(--fg-color);
-      text-align: center;
-      font-family: var(--primary-font);
-    }
-
-    .no-results h4 {
-      color: var(--fg-color);
-      margin-bottom: 0.5rem;
-    }
-
-    .clear-filters-btn {
-      background: transparent;
-      color: var(--fg-color);
-      border: 1px solid var(--border-color);
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-      font-family: var(--primary-font);
-      margin-top: 1rem;
-      transition: all 0.2s ease;
-    }
-
-    .clear-filters-btn:hover {
-      background: var(--primary-color);
-      border: var(--primary-color);
-      color: var(--fg-color);
-    }
-
-    /* Filter toggle button styles - Mobile first */
-    .filter-toggle-btn {
-      background: var(--primary-color);
-      color: var(--fg-color);
-      border: none;
-      padding: 0.75rem 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-      font-family: var(--primary-font);
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.2s ease;
-      position: relative;
-      min-height: 44px; /* Touch-friendly */
-      white-space: nowrap;
-    }
-
-    .filter-toggle-btn:hover {
-      background: var(--primary-muted-color);
-    }
-
-    .filter-count {
-      background: var(--fg-color);
-      color: var(--primary-color);
-      border-radius: 50%;
-      width: 1.5rem;
-      height: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-      font-weight: bold;
-    }
-
-    /* Mobile responsive breakpoints */
-    @media (max-width: 1200px) {
-      .codex-container {
-        grid-template-columns: 280px 1fr 350px;
-      }
-      .codex-container.filters-hidden {
-        grid-template-columns: 0 1fr 350px;
-      }
-      .filters-panel {
-        margin-left: 0.25rem;
-        margin-right: 0.25rem;
-      }
-    }
-
-    /* Custom scrollbar styling */
-    .monster-list::-webkit-scrollbar,
-    .preview-panel::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    .monster-list::-webkit-scrollbar-track,
-    .preview-panel::-webkit-scrollbar-track {
-      background: var(--muted-color);
-      border-radius: 4px;
-    }
-
-    .monster-list::-webkit-scrollbar-thumb,
-    .preview-panel::-webkit-scrollbar-thumb {
-      background: var(--primary-color);
-      border-radius: 4px;
-      border: 1px solid var(--bg-color);
-    }
-
-    .monster-list::-webkit-scrollbar-thumb:hover,
-    .preview-panel::-webkit-scrollbar-thumb:hover {
-      background: var(--tertiary-color);
-    }
-
-    /* Firefox scrollbar styling */
-    .monster-list,
+    /* ===== PREVIEW PANEL ===== */
     .preview-panel {
-      scrollbar-width: thin;
-      scrollbar-color: var(--primary-color) var(--muted-color);
+      display: none;
+    }
+
+    @media (min-width: 1040px) {
+      .preview-panel {
+        display: block;
+        backdrop-filter: blur(10px);
+        border-radius: var(--medium-margin) 0 0 var(--medium-margin);
+        padding: 1.5rem;
+        overflow-y: auto;
+        border-left: 2px solid var(--border-color);
+        border-top: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
+        z-index: 1;
+      }
     }
 
     /* Content tabs in preview panel */
@@ -851,13 +809,48 @@ export class MonsterCodex extends LitElement {
       margin-top: 1.5rem;
       padding-top: 1rem;
     }
+
+    /* ===== STATE MESSAGES ===== */
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: var(--fg-color);
+      font-family: var(--primary-font);
+    }
+
+    .no-selection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: var(--fg-color);
+      text-align: center;
+      font-family: var(--primary-font);
+    }
+
+    .no-results {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      color: var(--fg-color);
+      text-align: center;
+      font-family: var(--primary-font);
+    }
+
+    .no-results h4 {
+      color: var(--fg-color);
+      margin-bottom: 0.5rem;
+    }
   `;
 
   async connectedCallback() {
     super.connectedCallback();
-    await this.loadInitialData();
 
-    // Listen for window resize to close filters when transitioning to mobile
+    // Listen for window resize to handle mobile/desktop transitions
     this.handleResize = this.handleResize.bind(this);
     window.addEventListener('resize', this.handleResize);
   }
@@ -871,11 +864,11 @@ export class MonsterCodex extends LitElement {
     const isMobile = window.innerWidth <= 1040;
     const isDesktop = window.innerWidth > 1040;
 
-    // Close filters when transitioning from desktop to mobile
+    // Auto-hide filters when transitioning to mobile
     if (isMobile && this.filtersPanelVisible) {
       this.filtersPanelVisible = false;
     }
-    // Open filters when transitioning from mobile to desktop
+    // Auto-show filters when transitioning to desktop
     else if (isDesktop && !this.filtersPanelVisible) {
       this.filtersPanelVisible = true;
     }
@@ -1148,7 +1141,7 @@ export class MonsterCodex extends LitElement {
           class="monster-row ${isSelected ? 'selected' : ''}"
           style="background-image: url('${monster.background_image || ''}'); background-position: ${backgroundPosition};"
           href="/monsters/${monster.key}/"
-          @click=${(e: Event) => this.handleMonsterClick(e, monster.key)}
+          @click=${(e: Event) => this.handleMonsterSearchCardClick(e, monster.key)}
           @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
           <div class="monster-info">
             <div class="monster-name">${monster.name}</div>
@@ -1163,11 +1156,11 @@ export class MonsterCodex extends LitElement {
 
             <div class="monster-actions">
               <button class="monster-action-btn"
-                      @click=${(e: Event) => this.handleStatblockClick(e, monster.key)}>
+                      @click=${(e: Event) => this.handleStatblockButtonClick(e, monster.key)}>
                 View Stats
               </button>
               <button class="monster-action-btn secondary"
-                      @click=${(e: Event) => this.handleForgeClick(e, monster.key)}>
+                      @click=${(e: Event) => this.handleForgeButtonClick(e, monster.key)}>
                 Forge Stats
               </button>
             </div>
@@ -1222,8 +1215,9 @@ export class MonsterCodex extends LitElement {
 
   private handleSearchInput(e: Event) {
     const input = e.target as HTMLInputElement;
-    // Debounce search: only update query after 1s of no typing
     const value = input.value;
+
+    // Debounce search: only update query after 1s of no typing
     if (this.searchDebounceTimer) {
       clearTimeout(this.searchDebounceTimer);
     }
@@ -1239,6 +1233,7 @@ export class MonsterCodex extends LitElement {
       this.selectedCreatureTypes = [...this.selectedCreatureTypes, type];
     }
   }
+
   private handleMinCrChange(e: Event) {
     const input = e.target as HTMLInputElement;
     const value = parseInt(input.value);
@@ -1285,8 +1280,15 @@ export class MonsterCodex extends LitElement {
     this.requestUpdate();
   }
 
-  private selectMonster(monster: Monster) {
-    this.selectedMonster = monster;
+  private previewMonsterByKey(key: string) {
+    // Only update preview if no monster is explicitly selected (enables sticky behavior)
+    if (this.selectedMonsterKey === null) {
+      this.apiStore.getMonster(key).then(monster => {
+        if (monster) {
+          this.selectedMonster = monster;
+        }
+      });
+    }
   }
 
   private async selectMonsterByKey(key: string) {
@@ -1312,17 +1314,6 @@ export class MonsterCodex extends LitElement {
     }
   }
 
-  private previewMonsterByKey(key: string) {
-    // Only update preview if no monster is explicitly selected (sticky behavior)
-    if (this.selectedMonsterKey === null) {
-      this.apiStore.getMonster(key).then(monster => {
-        if (monster) {
-          this.selectedMonster = monster;
-        }
-      });
-    }
-  }
-
   private hasActiveFilters() {
     return this.query !== '' || this.selectedCreatureTypes.length > 0 || this.minCr !== undefined || this.maxCr !== undefined;
   }
@@ -1343,42 +1334,30 @@ export class MonsterCodex extends LitElement {
   private clearAllFilters() {
     this.query = '';
     this.selectedCreatureTypes = [];
-    this.selectedEnvironments = [];
-    this.selectedRoles = [];
     this.minCr = undefined;
     this.maxCr = undefined;
     this.selectedMonsterKey = null; // Clear sticky selection
     this.selectedMonster = null;
     this.expandedMonsterKey = null; // Close any open drawer
-    // Task will auto-update
   }
 
-  private async loadInitialData() {
-    try {
-      const facets = await this.searchApi.getFacets();
-      this.facets = facets;
-    } catch (e) {
-      console.error('Error loading initial data:', e);
-    }
-  }
-
-  private handleMonsterClick(e: Event, key: string) {
-    // Always prevent navigation and toggle drawer/show statblock on both mobile and desktop
+  private handleMonsterSearchCardClick(e: Event, key: string) {
+    // Prevent navigation and toggle drawer/show statblock
     e.preventDefault();
     this.toggleMonsterDrawer(key);
   }
 
-  private handleStatblockClick(e: Event, key: string) {
+  private handleStatblockButtonClick(e: Event, key: string) {
     e.preventDefault();
     e.stopPropagation();
     // Same behavior as clicking the card - toggle drawer/show statblock
     this.toggleMonsterDrawer(key);
   }
 
-  private handleForgeClick(e: Event, key: string) {
+  private handleForgeButtonClick(e: Event, key: string) {
     e.preventDefault();
     e.stopPropagation();
-    // Navigate to the forge page with this monster
+    // Navigate to the generate page with this monster
     window.location.href = `/generate/?monster=${key}`;
   }
 
