@@ -4,7 +4,7 @@ import { MonsterInfo, MonsterSearchRequest, SearchFacets, MonsterSearchResult } 
 import { Monster } from '../data/monster.js';
 import { MonsterSearchApi } from '../data/searchApi.js';
 import { ApiMonsterStore } from '../data/api.js';
-import { trackCodexSearch, trackCodexSearchResultClick, trackCodexForgeClick, trackCodexStatblockClick, trackCodexFilterUsage } from '../utils/analytics.js';
+import { trackSearch, trackMonsterClick, trackForgeClick, trackStatblockClick, trackFilterUsage } from '../utils/analytics.js';
 import './MonsterCardPreview.js';
 import './MonsterSimilar.js';
 import './MonsterLore.js';
@@ -52,7 +52,7 @@ export class MonsterCodex extends LitElement {
       
       // Track search analytics if there's a query
       if (query) {
-        trackCodexSearch(query, results.total || 0);
+        trackSearch(query, results.total || 0, 'search');
       }
       
       return results;
@@ -1274,10 +1274,10 @@ export class MonsterCodex extends LitElement {
   private toggleCreatureType(type: string) {
     if (this.selectedCreatureTypes?.includes(type)) {
       this.selectedCreatureTypes = this.selectedCreatureTypes.filter(t => t !== type);
-      trackCodexFilterUsage('creature_type', `removed_${type}`);
+      trackFilterUsage('creature_type', `removed_${type}`, 'search');
     } else {
       this.selectedCreatureTypes = [...this.selectedCreatureTypes, type];
-      trackCodexFilterUsage('creature_type', `added_${type}`);
+      trackFilterUsage('creature_type', `added_${type}`, 'search');
     }
     this.dispatchSearchEvent();
   }
@@ -1297,7 +1297,7 @@ export class MonsterCodex extends LitElement {
     this.crDebounceTimer = window.setTimeout(() => {
       this.minCr = value === 0 ? undefined : value;
       this.tempMinCr = undefined;
-      trackCodexFilterUsage('min_cr', value.toString());
+      trackFilterUsage('min_cr', value.toString(), 'search');
       this.dispatchSearchEvent();
     }, 300);
   }
@@ -1317,13 +1317,13 @@ export class MonsterCodex extends LitElement {
     this.crDebounceTimer = window.setTimeout(() => {
       this.maxCr = value === 30 ? undefined : value;
       this.tempMaxCr = undefined;
-      trackCodexFilterUsage('max_cr', value.toString());
+      trackFilterUsage('max_cr', value.toString(), 'search');
       this.dispatchSearchEvent();
     }, 300);
   }
 
   private setGroupBy(groupBy: 'family' | 'challenge' | 'name' | 'relevance') {
-    trackCodexFilterUsage('group_by', groupBy);
+    trackFilterUsage('group_by', groupBy, 'search');
     this.groupBy = groupBy;
     this.requestUpdate();
   }
@@ -1399,7 +1399,7 @@ export class MonsterCodex extends LitElement {
     e.preventDefault();
     
     // Track analytics for search result click
-    trackCodexSearchResultClick(key, this.query);
+    trackMonsterClick(key, 'search_result', 'search', undefined, this.query);
     
     this.toggleMonsterDrawer(key);
   }
@@ -1409,7 +1409,7 @@ export class MonsterCodex extends LitElement {
     e.stopPropagation();
     
     // Track analytics for statblock click
-    trackCodexStatblockClick(key, 'search');
+    trackStatblockClick(key, 'search');
     
     // Same behavior as clicking the card - toggle drawer/show statblock
     this.toggleMonsterDrawer(key);
@@ -1420,7 +1420,7 @@ export class MonsterCodex extends LitElement {
     e.stopPropagation();
     
     // Track analytics for forge click
-    trackCodexForgeClick(key, 'search');
+    trackForgeClick(key, 'search');
     
     // Navigate to the generate page with this monster
     window.location.href = `/generate/?monster=${key}`;

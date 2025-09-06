@@ -25,9 +25,10 @@ export interface AnalyticsParams {
   search_query?: string;
   search_result_count?: number;
   monster_family?: string;
-  codex_tab?: 'browse' | 'search';
+  tab?: string;
   filter_type?: string;
   filter_value?: string;
+  click_context?: string;
 }
 
 /**
@@ -85,19 +86,46 @@ export function getCurrentPageType(): PageType {
 /**
  * Track reroll button click
  */
-export function trackRerollClick(monsterKey: string): void {
-  trackEvent('reroll_button_click', {
+export function trackRerollClick(monsterKey: string, tab?: string): void {
+  const params: AnalyticsParams = {
     monster_key: monsterKey,
-  });
+  };
+  
+  if (tab) {
+    params.tab = tab;
+  }
+  
+  trackEvent('reroll_button_click', params);
 }
 
 /**
  * Track forge button click
  */
-export function trackForgeClick(monsterKey: string): void {
-  trackEvent('forge_button_click', {
+export function trackForgeClick(monsterKey: string, tab?: string): void {
+  const params: AnalyticsParams = {
     monster_key: monsterKey,
-  });
+  };
+  
+  if (tab) {
+    params.tab = tab;
+  }
+  
+  trackEvent('forge_button_click', params);
+}
+
+/**
+ * Track statblock view button click
+ */
+export function trackStatblockClick(monsterKey: string, tab?: string): void {
+  const params: AnalyticsParams = {
+    monster_key: monsterKey,
+  };
+  
+  if (tab) {
+    params.tab = tab;
+  }
+  
+  trackEvent('statblock_button_click', params);
 }
 
 /**
@@ -135,65 +163,107 @@ export function trackEmailSubscribeClick(): void {
 }
 
 /**
- * Track codex search performed
+ * Track search performed
  */
-export function trackCodexSearch(query: string, resultCount: number): void {
-  trackEvent('codex_search_performed', {
+export function trackSearch(query: string, resultCount?: number, tab?: string): void {
+  const params: AnalyticsParams = {
     search_query: query,
-    search_result_count: resultCount,
-    codex_tab: 'search',
-  });
+  };
+  
+  if (resultCount !== undefined) {
+    params.search_result_count = resultCount;
+  }
+  
+  if (tab) {
+    params.tab = tab;
+  }
+  
+  trackEvent('search_performed', params);
 }
 
 /**
- * Track monster family click in browse tab
+ * Track monster click (family, search result, etc.)
  */
-export function trackCodexMonsterFamilyClick(monsterKey: string, familyName: string): void {
-  trackEvent('codex_monster_family_click', {
+export function trackMonsterClick(monsterKey: string, context: string, tab?: string, familyName?: string, query?: string): void {
+  const params: AnalyticsParams = {
     monster_key: monsterKey,
-    monster_family: familyName,
-    codex_tab: 'browse',
-  });
+    click_context: context,
+  };
+  
+  if (tab) {
+    params.tab = tab;
+  }
+  
+  if (familyName) {
+    params.monster_family = familyName;
+  }
+  
+  if (query) {
+    params.search_query = query;
+  }
+  
+  trackEvent('monster_clicked', params);
 }
 
 /**
- * Track search result click in search tab
+ * Track filter usage
  */
-export function trackCodexSearchResultClick(monsterKey: string, query?: string): void {
-  trackEvent('codex_search_result_click', {
-    monster_key: monsterKey,
-    search_query: query,
-    codex_tab: 'search',
-  });
-}
-
-/**
- * Track forge button click from codex
- */
-export function trackCodexForgeClick(monsterKey: string, tab: 'browse' | 'search'): void {
-  trackEvent('codex_forge_click', {
-    monster_key: monsterKey,
-    codex_tab: tab,
-  });
-}
-
-/**
- * Track statblock view button click from codex
- */
-export function trackCodexStatblockClick(monsterKey: string, tab: 'browse' | 'search'): void {
-  trackEvent('codex_statblock_click', {
-    monster_key: monsterKey,
-    codex_tab: tab,
-  });
-}
-
-/**
- * Track codex filter usage
- */
-export function trackCodexFilterUsage(filterType: string, filterValue: string): void {
-  trackEvent('codex_filter_used', {
+export function trackFilterUsage(filterType: string, filterValue: string, tab?: string): void {
+  const params: AnalyticsParams = {
     filter_type: filterType,
     filter_value: filterValue,
-    codex_tab: 'search',
-  });
+  };
+  
+  if (tab) {
+    params.tab = tab;
+  }
+  
+  trackEvent('filter_used', params);
+}
+
+// Legacy functions for backward compatibility - these can be deprecated later
+/**
+ * @deprecated Use trackSearch() instead
+ */
+// Legacy functions for backward compatibility - these can be deprecated later
+/**
+ * @deprecated Use trackSearch() instead
+ */
+export function trackCodexSearch(query: string, resultCount: number): void {
+  trackSearch(query, resultCount, 'search');
+}
+
+/**
+ * @deprecated Use trackMonsterClick() instead
+ */
+export function trackCodexMonsterFamilyClick(monsterKey: string, familyName: string): void {
+  trackMonsterClick(monsterKey, 'family', 'browse', familyName);
+}
+
+/**
+ * @deprecated Use trackMonsterClick() instead
+ */
+export function trackCodexSearchResultClick(monsterKey: string, query?: string): void {
+  trackMonsterClick(monsterKey, 'search_result', 'search', undefined, query);
+}
+
+/**
+ * @deprecated Use trackForgeClick() instead
+ */
+export function trackCodexForgeClick(monsterKey: string, tab: 'browse' | 'search'): void {
+  trackForgeClick(monsterKey, tab);
+}
+
+/**
+ * @deprecated Use trackStatblockClick() instead
+ */
+export function trackCodexStatblockClick(monsterKey: string, tab: 'browse' | 'search'): void {
+  trackStatblockClick(monsterKey, tab);
+}
+
+/**
+ * @deprecated Use trackFilterUsage() instead
+ */
+export function trackCodexFilterUsage(filterType: string, filterValue: string): void {
+  trackFilterUsage(filterType, filterValue, 'search');
 }

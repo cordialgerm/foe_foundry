@@ -4,7 +4,7 @@ import { Task } from '@lit/task';
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Keyboard, Parallax } from 'swiper/modules';
 import { apiMonsterStore, MonsterTemplate } from '../data/api';
-import { trackCodexMonsterFamilyClick } from '../utils/analytics.js';
+import { trackMonsterClick } from '../utils/analytics.js';
 import './swiper.css';
 
 interface MonsterInfo {
@@ -543,8 +543,8 @@ export class MonsterCarousel extends LitElement {
         familyName = 'new';
       }
       
-      // Track analytics
-      trackCodexMonsterFamilyClick(monsterKey, familyName);
+      // Track analytics - this is a family browse click since carousel shows families
+      trackMonsterClick(monsterKey, 'family', 'browse', familyName);
       
       // Navigate to the monster page
       window.location.href = url;
