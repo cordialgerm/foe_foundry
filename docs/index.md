@@ -48,10 +48,6 @@ Here's a [[Hydra]]. It's got even more possible powers than heads!
 
 <br/>
 
-[[#Discover Monsters by Theme]]
-
-<br/>
-
 Browse our growing [Monster Catalog](./monsters/index.md) and see monsters built from [hundreds of unique monster powers](./powers/all.md). You'll always be able to find something new or interesting.  
 
 ---
