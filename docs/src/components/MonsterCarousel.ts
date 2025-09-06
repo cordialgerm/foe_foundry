@@ -4,6 +4,7 @@ import { Task } from '@lit/task';
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Keyboard, Parallax } from 'swiper/modules';
 import { apiMonsterStore, MonsterTemplate } from '../data/api';
+import { trackCodexMonsterFamilyClick } from '../utils/analytics.js';
 import './swiper.css';
 
 interface MonsterInfo {
@@ -528,8 +529,24 @@ export class MonsterCarousel extends LitElement {
     };
   }
 
-  private handleCardClick(url: string) {
+  private handleCardClick(url: string, monster: MonsterData) {
     if (url) {
+      // Extract monster key from URL (format is typically /monsters/{key}/)
+      const urlParts = url.split('/');
+      const monsterKey = urlParts[urlParts.length - 2] || urlParts[urlParts.length - 1];
+      
+      // Determine family name from filter
+      let familyName = 'unknown';
+      if (this.filter.startsWith('family:')) {
+        familyName = this.filter.substring(7);
+      } else if (this.filter === 'new') {
+        familyName = 'new';
+      }
+      
+      // Track analytics
+      trackCodexMonsterFamilyClick(monsterKey, familyName);
+      
+      // Navigate to the monster page
       window.location.href = url;
     }
   }
@@ -717,7 +734,7 @@ export class MonsterCarousel extends LitElement {
         class="${cardClasses}"
         data-url="${url}"
         style="${template.custom_style}"
-        @click="${() => this.handleCardClick(url)}"
+        @click="${() => this.handleCardClick(url, template)}"
       >
         <img
           class="card-image contain"
