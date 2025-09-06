@@ -5,6 +5,7 @@ site_author: Evan Rash
 
 nav:
   - Generate: generate/index.md
+  - Codex: codex/index.md
   - Monsters:
       - All Monsters: monsters/index.md
       - Criminal & Underworld: families/criminals.md
