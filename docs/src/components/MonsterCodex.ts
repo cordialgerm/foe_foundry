@@ -67,6 +67,7 @@ export class MonsterCodex extends LitElement {
     :host {
       --border-color: var(--fg-color);
       display: block;
+      height: 100%;
       min-height: 100vh;
     }
 
@@ -74,6 +75,7 @@ export class MonsterCodex extends LitElement {
     .codex-container {
       display: flex;
       flex-direction: column;
+      height: 100%;
       min-height: 100vh;
     }
 
@@ -193,6 +195,7 @@ export class MonsterCodex extends LitElement {
       flex-direction: column;
       flex: 1;
       overflow: hidden;
+      min-height: 0; /* Allow flex shrinking for scrolling */
     }
 
     /* Desktop: Monster list in middle column */
@@ -874,6 +877,29 @@ export class MonsterCodex extends LitElement {
   async connectedCallback() {
     super.connectedCallback();
     await this.loadInitialData();
+
+    // Listen for window resize to close filters when transitioning to mobile
+    this.handleResize = this.handleResize.bind(this);
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+  private handleResize() {
+    const isMobile = window.innerWidth <= 1040;
+    const isDesktop = window.innerWidth > 1040;
+
+    // Close filters when transitioning from desktop to mobile
+    if (isMobile && this.filtersPanelVisible) {
+      this.filtersPanelVisible = false;
+    }
+    // Open filters when transitioning from mobile to desktop
+    else if (isDesktop && !this.filtersPanelVisible) {
+      this.filtersPanelVisible = true;
+    }
   }
 
   render() {
