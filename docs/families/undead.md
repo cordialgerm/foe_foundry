@@ -3,6 +3,8 @@ title: Undead for 5E - Statblocks & Encounter Ideas | Foe Foundry
 short_title: Undead Statblocks & Encounters
 description: Raise chilling undead like skeletons, specters, and liches. Discover rich lore, encounters, and adventures to haunt your next 5E session.
 image: img/monsters/skeleton_warband.webp
+icon: shambling-zombie
+tag_line: Twisted Mockeries of Life
 json_ld: true
 is_monster_family: true
 ---
