@@ -18,6 +18,7 @@
 /* Tab Navigation */
 .codex-tabs {
     display: flex;
+    justify-content: center;
     background: var(--bg-color);
     border-bottom: 2px solid var(--border-color);
     margin-bottom: 0;
@@ -60,6 +61,8 @@
 
 .tab-icon {
     font-size: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 /* Tab Content */
@@ -133,6 +136,8 @@
 
 .search-icon {
     font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 /* Carousels Section */
@@ -148,7 +153,7 @@
 
 .carousel-title {
     font-family: var(--header-font);
-    font-size: var(--header-font-size);
+    font-size: 2rem;
     color: var(--primary-color);
     margin: 0 0 0.5rem 0;
     text-align: center;

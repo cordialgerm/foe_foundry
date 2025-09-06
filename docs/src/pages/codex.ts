@@ -16,6 +16,9 @@ function initializeCodex() {
     // Setup search functionality
     setupSearchNavigation();
     
+    // Setup monster search event listener for URL updates
+    setupMonsterSearchListener();
+    
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashChange);
 }
@@ -93,14 +96,16 @@ function switchToSearchTab(query?: string) {
         window.history.pushState({}, '', url.toString());
         
         // Update monster-codex component with search query
-        if (query) {
-            const monsterCodex = document.querySelector('monster-codex');
-            if (monsterCodex) {
-                // Set the query on the monster-codex component
-                // The component should handle this internally
+        const monsterCodex = document.querySelector('monster-codex') as any;
+        if (monsterCodex && query) {
+            // Use the new public method to set search query
+            if (typeof monsterCodex.setSearchQuery === 'function') {
+                monsterCodex.setSearchQuery(query);
+            } else {
+                // Fallback to attribute setting
                 monsterCodex.setAttribute('initial-query', query);
                 
-                // Dispatch a custom event to trigger search
+                // Dispatch custom event
                 monsterCodex.dispatchEvent(new CustomEvent('search-query-changed', {
                     detail: { query }
                 }));
@@ -148,6 +153,30 @@ function handleInitialUrlState() {
 
 function handleHashChange() {
     handleInitialUrlState();
+}
+
+function setupMonsterSearchListener() {
+    // Listen for monster search events to update URL parameters
+    document.addEventListener('monster-search-changed', (e: any) => {
+        const { query, creatureTypes, minCr, maxCr } = e.detail;
+        const url = new URL(window.location.href);
+        
+        // Only update URL if we're on the search tab
+        if (url.hash === '#search') {
+            // Update query parameter
+            if (query) {
+                url.searchParams.set('query', query);
+            } else {
+                url.searchParams.delete('query');
+            }
+            
+            // Update other search parameters if needed in the future
+            // (for now just focusing on query as requested)
+            
+            // Update URL without triggering navigation
+            window.history.replaceState({}, '', url.toString());
+        }
+    });
 }
 
 function updateUrlForTab(tabName: string) {
