@@ -32,7 +32,7 @@ interface SkullUpsellState {
 @customElement('skull-upsell')
 export class SkullUpsell extends LitElement {
   @property({ type: Boolean })
-  enabled: boolean = false;
+  enabled: boolean = true; // Temporarily enabled for testing
 
   private _upsellState: SkullUpsellState = {
     isActive: false,

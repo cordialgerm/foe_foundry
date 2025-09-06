@@ -13,5 +13,6 @@ import './components/GeneratorShowcase';
 import './components/SvgIconButton';
 import './components/EmailSubscribeCallout';
 import './components/StatblockTutorial';
+import './components/SkullUpsell';
 import './pages/generate';
 import './pages/tutorial';
