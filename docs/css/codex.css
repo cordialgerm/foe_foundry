@@ -1,0 +1,241 @@
+/* Codex Page Styles */
+
+.codex-page {
+    padding: 1rem 0;
+}
+
+/* Header and Tab Navigation */
+.codex-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.codex-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.codex-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 0;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.codex-tab {
+    background: var(--bs-dark);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: var(--bs-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.codex-tab:not(:last-child) {
+    border-right: 2px solid var(--border-color);
+}
+
+.codex-tab:hover {
+    background: var(--bs-secondary);
+    color: var(--primary-color);
+}
+
+.codex-tab.active {
+    background: var(--primary-color);
+    color: var(--bs-dark);
+}
+
+.tab-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/* Search Bar */
+.codex-search-bar {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border: 2px solid var(--border-color);
+    border-radius: 2rem;
+    background: var(--bs-dark);
+    color: var(--bs-light);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.2);
+}
+
+.search-input::placeholder {
+    color: var(--bs-text-muted);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--bs-text-muted);
+    pointer-events: none;
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--bs-text-muted);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.clear-search-btn:hover {
+    color: var(--bs-light);
+    background: var(--bs-secondary);
+}
+
+.clear-search-btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Tab Content */
+.tab-content {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Browse Tab Styles */
+.browse-section {
+    margin-bottom: 3rem;
+}
+
+.carousel-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    margin-bottom: 1rem;
+    text-align: left;
+    position: relative;
+}
+
+.carousel-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 3rem;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+/* Search Tab Styles */
+.search-results-container {
+    min-height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .codex-title {
+        font-size: 2rem;
+    }
+    
+    .codex-tabs {
+        width: 100%;
+    }
+    
+    .codex-tab {
+        flex: 1;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .search-input {
+        font-size: 1rem;
+        padding: 0.65rem 1rem 0.65rem 2.75rem;
+    }
+    
+    .search-icon {
+        width: 1rem;
+        height: 1rem;
+        left: 0.75rem;
+    }
+    
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+    
+    .browse-section {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .codex-page {
+        padding: 0.5rem 0;
+    }
+    
+    .codex-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .codex-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .codex-tab {
+        padding: 0.6rem 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .tab-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .search-input {
+        padding: 0.6rem 0.75rem 0.6rem 2.5rem;
+    }
+}

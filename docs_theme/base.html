@@ -73,6 +73,10 @@
     <div class="container-md pamphlet-container">
         {% include "generate.j2.html" %}
     </div>
+    {% elif page and (page.url == '/codex/' or page.url == '/codex' or page.url == 'codex/') %}
+    <div class="container-md pamphlet-container">
+        {% include "codex.j2.html" %}
+    </div>
     {% elif page and (page.url == '/print-preview/' or page.url == '/print-preview' or page.url == 'print-preview/') %}
     <div class="container-md pamphlet-container print-preview">
         {% include "print-preview.j2.html" %}
