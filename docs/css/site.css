@@ -148,12 +148,13 @@ a.branding::after,
     vertical-align: middle;
 }
 
-.navbar a[href$="monsters/" i]::before {
+.navbar a[href$="monsters/" i]::before,
+.navbar a[href$="codex/" i]::before {
     content: " ";
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
-    background-image: url('/img/icons/daemon-skull.svg');
+    background-image: url('/img/icons/death-note.svg');
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: var(--small-margin);

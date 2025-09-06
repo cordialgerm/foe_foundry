@@ -1,6 +1,6 @@
 ---
 title: Monster Codex | Browse & Search Foe Foundry Monsters
-description: Discover and search through Foe Foundry's extensive collection of 5E monsters. Browse by category or use advanced search to find the perfect creature for your campaign.
+description: Discover 100s of free 5E statblocks in Foe Foundry's Monster Codex. Find and create the perfect foe for your campaign.
 hide:
   - toc
   - backlinks

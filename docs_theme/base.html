@@ -49,8 +49,8 @@
     {% include "partials/analytics.html" %}
 
     <script>
-        var base_url = {{ base_url | tojson }}, shortcuts = {};
-        window.baseUrl = "";
+        var base_url = {{ base_url | url | tojson }}, shortcuts = {};
+        window.baseUrl = base_url;
 
         var defaultMonsterKey = "{{ default_monster_key }}";
         window.defaultMonsterKey = defaultMonsterKey;

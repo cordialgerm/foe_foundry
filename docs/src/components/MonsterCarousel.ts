@@ -710,12 +710,14 @@ export class MonsterCarousel extends LitElement {
       template.transparent_edges ? 'transparent-edges' : ''
     ].filter(Boolean).join(' ');
 
+    const url = window.baseUrl ? `${window.baseUrl}/${template.url}` : template.url;
+
     return html`
       <div
         class="${cardClasses}"
-        data-url="${template.url}"
+        data-url="${url}"
         style="${template.custom_style}"
-        @click="${() => this.handleCardClick(template.url)}"
+        @click="${() => this.handleCardClick(url)}"
       >
         <img
           class="card-image contain"

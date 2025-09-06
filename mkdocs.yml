@@ -5,18 +5,7 @@ site_author: Evan Rash
 
 nav:
   - Generate: generate/index.md
-  - Codex: codex/index.md
-  - Monsters:
-      - All Monsters: monsters/index.md
-      - Criminal & Underworld: families/criminals.md
-      - Fanatics & Faithful: families/fanatics_and_faithful.md
-      - Giants: families/giants.md
-      - Monstrosities: families/monstrosities.md
-      - Orcs & Goblins: families/orcs_and_goblinoids.md
-      - Soldiers & Fighters: families/soldiers_and_fighters.md
-      - Undead: families/undead.md
-      - Villains: families/villains.md
-      - Rivals: families/rivals.md
+  - Monsters: codex/index.md
   - Powers: powers/all.md
   - Learn:
       - Blog: blog/index.md
