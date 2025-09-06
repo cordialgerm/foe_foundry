@@ -12,7 +12,32 @@ import { trackGrowthBookEvent } from './growthbook.js';
 declare global {
   interface Window {
     gtag?: (...args: any[]) => void;
+    foeFoundryAnalytics?: {
+      trackMonsterClick: typeof trackMonsterClick;
+      trackRerollClick: typeof trackRerollClick;
+      trackForgeClick: typeof trackForgeClick;
+      trackStatblockClick: typeof trackStatblockClick;
+      trackStatblockEdit: typeof trackStatblockEdit;
+      trackDownloadClick: typeof trackDownloadClick;
+      trackEmailSubscribeClick: typeof trackEmailSubscribeClick;
+      trackSearch: typeof trackSearch;
+      trackFilterUsage: typeof trackFilterUsage;
+    };
   }
+}
+// Expose analytics functions globally for legacy JS usage
+if (typeof window !== 'undefined') {
+  window.foeFoundryAnalytics = {
+    trackMonsterClick,
+    trackRerollClick,
+    trackForgeClick,
+    trackStatblockClick,
+    trackStatblockEdit,
+    trackDownloadClick,
+    trackEmailSubscribeClick,
+    trackSearch,
+    trackFilterUsage,
+  };
 }
 
 export type MonsterKeyType = 'monster' | 'template' | 'family';
@@ -41,7 +66,7 @@ export interface AnalyticsParams {
 /**
  * Track an analytics event
  */
-export function trackEvent(name: string, params: AnalyticsParams = {}): void {
+export function trackEvent(name: string, params: AnalyticsParams = {}, transportType?: string): void {
   // Check if we're in a browser environment
   if (typeof window === 'undefined') return;
 
@@ -49,9 +74,11 @@ export function trackEvent(name: string, params: AnalyticsParams = {}): void {
     params.page_type = getCurrentPageType();
   }
 
+  const gaParams = { ...params, 'transport_type': transportType };
+
   // Track to Google Analytics if available and in production
   if (typeof window.gtag !== 'undefined' && import.meta.env.PROD) {
-    window.gtag('event', name, params);
+    window.gtag('event', name, gaParams);
   }
 
   // Track to GrowthBook
@@ -99,7 +126,7 @@ export function trackRerollClick(monsterKey: string, surface?: string): void {
   };
 
 
-  trackEvent('reroll_button_click', params);
+  trackEvent('reroll_button_click', params, 'beacon');
 }
 
 /**
@@ -112,7 +139,7 @@ export function trackForgeClick(monsterKey: string, surface?: string): void {
     surface: surface
   };
 
-  trackEvent('forge_button_click', params);
+  trackEvent('forge_button_click', params, 'beacon');
 }
 
 /**
@@ -125,7 +152,7 @@ export function trackStatblockClick(monsterKey: string, surface?: string): void 
     surface: surface
   };
 
-  trackEvent('statblock_button_click', params);
+  trackEvent('statblock_button_click', params, 'beacon');
 }
 
 /**
@@ -192,7 +219,7 @@ export function trackMonsterClick(monsterKey: string, monsterKeyType: MonsterKey
     params.search_query = query;
   }
 
-  trackEvent('monster_clicked', params);
+  trackEvent('monster_clicked', params, 'beacon');
 }
 
 /**
