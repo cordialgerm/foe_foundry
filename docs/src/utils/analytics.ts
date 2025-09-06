@@ -15,20 +15,27 @@ declare global {
   }
 }
 
+export type MonsterKeyType = 'monster' | 'template' | 'family';
+
 export type PageType = 'homepage' | 'generator' | 'monster-page' | 'power' | 'blog-post' | 'codex' | 'other';
 
 export interface AnalyticsParams {
   monster_key?: string;
+  monster_key_type?: MonsterKeyType;
+  monster_family?: string;
   monster_change_type?: StatblockChangeType;
+
   power_key?: string;
+
   export_format?: string;
+
   search_query?: string;
   search_result_count?: number;
-  monster_family?: string;
-  tab?: string;
   filter_type?: string;
   filter_value?: string;
-  click_context?: string;
+
+  surface?: string;
+  page_type?: PageType
 }
 
 /**
@@ -38,23 +45,21 @@ export function trackEvent(name: string, params: AnalyticsParams = {}): void {
   // Check if we're in a browser environment
   if (typeof window === 'undefined') return;
 
-  const pageType = getCurrentPageType();
-  const args = {
-    page_type: pageType,
-    ...params
-  };
+  if (!params.page_type) {
+    params.page_type = getCurrentPageType();
+  }
 
   // Track to Google Analytics if available and in production
   if (typeof window.gtag !== 'undefined' && import.meta.env.PROD) {
-    window.gtag('event', name, args);
+    window.gtag('event', name, params);
   }
 
   // Track to GrowthBook
-  trackGrowthBookEvent(name, args);
+  trackGrowthBookEvent(name, params);
 
   // Log in development for debugging
   if (!import.meta.env.PROD) {
-    console.log('Analytics Event:', name, args);
+    console.log('Analytics Event:', name, params);
   }
 }
 
@@ -86,45 +91,40 @@ export function getCurrentPageType(): PageType {
 /**
  * Track reroll button click
  */
-export function trackRerollClick(monsterKey: string, tab?: string): void {
+export function trackRerollClick(monsterKey: string, surface?: string): void {
   const params: AnalyticsParams = {
     monster_key: monsterKey,
+    monster_key_type: 'monster',
+    surface: surface
   };
-  
-  if (tab) {
-    params.tab = tab;
-  }
-  
+
+
   trackEvent('reroll_button_click', params);
 }
 
 /**
  * Track forge button click
  */
-export function trackForgeClick(monsterKey: string, tab?: string): void {
+export function trackForgeClick(monsterKey: string, surface?: string): void {
   const params: AnalyticsParams = {
     monster_key: monsterKey,
+    monster_key_type: 'monster',
+    surface: surface
   };
-  
-  if (tab) {
-    params.tab = tab;
-  }
-  
+
   trackEvent('forge_button_click', params);
 }
 
 /**
  * Track statblock view button click
  */
-export function trackStatblockClick(monsterKey: string, tab?: string): void {
+export function trackStatblockClick(monsterKey: string, surface?: string): void {
   const params: AnalyticsParams = {
     monster_key: monsterKey,
+    monster_key_type: 'monster',
+    surface: surface
   };
-  
-  if (tab) {
-    params.tab = tab;
-  }
-  
+
   trackEvent('statblock_button_click', params);
 }
 
@@ -134,6 +134,7 @@ export function trackStatblockClick(monsterKey: string, tab?: string): void {
 export function trackStatblockEdit(monsterKey: string, changeType: StatblockChangeType, powerKey?: string): void {
   trackEvent('statblock_edited', {
     monster_key: monsterKey,
+    monster_key_type: 'monster',
     monster_change_type: changeType,
     power_key: powerKey,
   });
@@ -145,13 +146,14 @@ export function trackStatblockEdit(monsterKey: string, changeType: StatblockChan
 export function trackDownloadClick(monsterKey: string, format?: string): void {
   const params: AnalyticsParams = {
     monster_key: monsterKey,
+    monster_key_type: 'monster'
   };
-  
+
   // Add format type if provided
   if (format) {
     params.export_format = format;
   }
-  
+
   trackEvent('download_button_click', params);
 }
 
@@ -165,101 +167,43 @@ export function trackEmailSubscribeClick(): void {
 /**
  * Track search performed
  */
-export function trackSearch(query: string, resultCount?: number, tab?: string): void {
+export function trackSearch(query: string, resultCount?: number, surface?: string): void {
   const params: AnalyticsParams = {
     search_query: query,
+    surface: surface
   };
-  
+
   if (resultCount !== undefined) {
     params.search_result_count = resultCount;
   }
-  
-  if (tab) {
-    params.tab = tab;
-  }
-  
+
   trackEvent('search_performed', params);
 }
 
-/**
- * Track monster click (family, search result, etc.)
- */
-export function trackMonsterClick(monsterKey: string, context: string, tab?: string, familyName?: string, query?: string): void {
+
+export function trackMonsterClick(monsterKey: string, monsterKeyType: MonsterKeyType, surface?: string, query?: string): void {
   const params: AnalyticsParams = {
     monster_key: monsterKey,
-    click_context: context,
+    monster_key_type: monsterKeyType,
+    surface: surface
   };
-  
-  if (tab) {
-    params.tab = tab;
-  }
-  
-  if (familyName) {
-    params.monster_family = familyName;
-  }
-  
+
   if (query) {
     params.search_query = query;
   }
-  
+
   trackEvent('monster_clicked', params);
 }
 
 /**
  * Track filter usage
  */
-export function trackFilterUsage(filterType: string, filterValue: string, tab?: string): void {
+export function trackFilterUsage(filterType: string, filterValue: string, surface?: string): void {
   const params: AnalyticsParams = {
     filter_type: filterType,
     filter_value: filterValue,
+    surface: surface
   };
-  
-  if (tab) {
-    params.tab = tab;
-  }
-  
+
   trackEvent('filter_used', params);
-}
-
-// Legacy functions for backward compatibility - these can be deprecated later
-/**
- * @deprecated Use trackSearch() instead
- */
-export function trackCodexSearch(query: string, resultCount: number): void {
-  trackSearch(query, resultCount, 'search');
-}
-
-/**
- * @deprecated Use trackMonsterClick() instead
- */
-export function trackCodexMonsterFamilyClick(monsterKey: string, familyName: string): void {
-  trackMonsterClick(monsterKey, 'family', 'browse', familyName);
-}
-
-/**
- * @deprecated Use trackMonsterClick() instead
- */
-export function trackCodexSearchResultClick(monsterKey: string, query?: string): void {
-  trackMonsterClick(monsterKey, 'search_result', 'search', undefined, query);
-}
-
-/**
- * @deprecated Use trackForgeClick() instead
- */
-export function trackCodexForgeClick(monsterKey: string, tab: 'browse' | 'search'): void {
-  trackForgeClick(monsterKey, tab);
-}
-
-/**
- * @deprecated Use trackStatblockClick() instead
- */
-export function trackCodexStatblockClick(monsterKey: string, tab: 'browse' | 'search'): void {
-  trackStatblockClick(monsterKey, tab);
-}
-
-/**
- * @deprecated Use trackFilterUsage() instead
- */
-export function trackCodexFilterUsage(filterType: string, filterValue: string): void {
-  trackFilterUsage(filterType, filterValue, 'search');
 }

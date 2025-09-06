@@ -49,12 +49,12 @@ export class MonsterCodex extends LitElement {
         maxCr
       };
       const results = await this.searchApi.searchMonsters(searchRequest);
-      
+
       // Track search analytics if there's a query
       if (query) {
         trackSearch(query, results.total || 0, 'search');
       }
-      
+
       return results;
     }
   }, () => {
@@ -1397,20 +1397,25 @@ export class MonsterCodex extends LitElement {
   private handleMonsterSearchCardClick(e: Event, key: string) {
     // Prevent navigation and toggle drawer/show statblock
     e.preventDefault();
-    
+
     // Track analytics for search result click
-    trackMonsterClick(key, 'search_result', 'search', undefined, this.query);
-    
+    trackMonsterClick(
+      key,
+      'monster',
+      'search-result',
+      this.query
+    );
+
     this.toggleMonsterDrawer(key);
   }
 
   private handleStatblockButtonClick(e: Event, key: string) {
     e.preventDefault();
     e.stopPropagation();
-    
+
     // Track analytics for statblock click
     trackStatblockClick(key, 'search');
-    
+
     // Same behavior as clicking the card - toggle drawer/show statblock
     this.toggleMonsterDrawer(key);
   }
@@ -1418,10 +1423,10 @@ export class MonsterCodex extends LitElement {
   private handleForgeButtonClick(e: Event, key: string) {
     e.preventDefault();
     e.stopPropagation();
-    
+
     // Track analytics for forge click
     trackForgeClick(key, 'search');
-    
+
     // Navigate to the generate page with this monster
     window.location.href = `/generate/?monster=${key}`;
   }

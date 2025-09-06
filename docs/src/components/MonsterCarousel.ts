@@ -7,14 +7,7 @@ import { apiMonsterStore, MonsterTemplate } from '../data/api';
 import { trackMonsterClick } from '../utils/analytics.js';
 import './swiper.css';
 
-interface MonsterInfo {
-  key: string;
-  name: string;
-  cr: number;
-  template: string;
-}
-
-interface MonsterData {
+interface CardData {
   key: string;
   name: string;
   tagline: string;
@@ -449,7 +442,7 @@ export class MonsterCarousel extends LitElement {
     }
   `;
 
-  private async fetchMonsterTemplates(filter: string): Promise<MonsterData[]> {
+  private async fetchMonsterTemplates(filter: string): Promise<CardData[]> {
     if (!filter) {
       return [];
     }
@@ -479,7 +472,7 @@ export class MonsterCarousel extends LitElement {
     }
   }
 
-  private convertTemplateToMonsterData(template: MonsterTemplate): MonsterData {
+  private convertTemplateToMonsterData(template: MonsterTemplate): CardData {
     // Use the rich styling information provided by the template API
     let customStyle = '';
 
@@ -529,29 +522,23 @@ export class MonsterCarousel extends LitElement {
     };
   }
 
-  private handleCardClick(url: string, monster: MonsterData) {
+  private handleCardClick(url: string, card: CardData) {
     if (url) {
-      // Extract monster key from URL (format is typically /monsters/{key}/)
-      const urlParts = url.split('/');
-      const monsterKey = urlParts[urlParts.length - 2] || urlParts[urlParts.length - 1];
-      
-      // Determine family name from filter
-      let familyName = 'unknown';
-      if (this.filter.startsWith('family:')) {
-        familyName = this.filter.substring(7);
-      } else if (this.filter === 'new') {
-        familyName = 'new';
-      }
-      
-      // Track analytics - this is a family browse click since carousel shows families
-      trackMonsterClick(monsterKey, 'family', 'browse', familyName);
-      
+      const templateKey = card.key;
+
+      // Track analytics - this is a template click since carousel shows templates
+      trackMonsterClick(
+        templateKey,
+        'template',
+        'carousel',
+      )
+
       // Navigate to the monster page
       window.location.href = url;
     }
   }
 
-  private handleImageError(event: Event, monster: MonsterData) {
+  private handleImageError(event: Event, monster: CardData) {
     const img = event.target as HTMLImageElement;
     console.warn(`Failed to load image for ${monster.name}: ${img.src}`);
     // Set fallback image or hide the image element
@@ -716,7 +703,7 @@ export class MonsterCarousel extends LitElement {
     });
   }
 
-  private renderMonsterCard(template: MonsterData) {
+  private renderMonsterCard(template: CardData) {
     const cardClasses = [
       'swiper-slide',
       'card',
