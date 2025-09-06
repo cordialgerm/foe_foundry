@@ -16,6 +16,8 @@ import './components/EmailSubscribeCallout';
 import './components/MonsterCodex';
 import './components/MonsterCardPreview';
 import './components/StatblockTutorial';
+import './components/MonsterSearchSeeds';
+import './components/MonsterSearchInterface';
 import './pages/generate';
 import './pages/tutorial';
 import './pages/codex';

@@ -28,20 +28,6 @@ image: img/icons/favicon.webp
 
 ## Try it out!
 
-### Search for Monsters
-
-Discover monsters by theme, vibe, or adventure hook! Try searching for:
-
-<div class="search-seeds">
-  <monster-search-seeds></monster-search-seeds>
-</div>
-
-<div class="search-container">
-  <monster-search-interface></monster-search-interface>
-</div>
-
-### Or Generate a Random Monster
-
 Here's a [[Lich]]. Roll the die to generate a new one!  
 
 [[!Lich]]  
