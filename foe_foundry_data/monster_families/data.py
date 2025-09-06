@@ -93,12 +93,16 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
     key = name_to_key(md_file.stem)
     name = frontmatter.get("short_title", frontmatter.get("title"))
     icon = frontmatter.get("icon")
+    tag_line = frontmatter.get("tag_line")
     
     if not isinstance(name, str):
         raise ValueError(f"Invalid title for family '{key}': {name}. Expected a string.")
     
     if not isinstance(icon, str):
         raise ValueError(f"Icon not found for family '{key}'. Ensure it is defined in the YAML frontmatter.")
+    
+    if not isinstance(tag_line, str):
+        raise ValueError(f"Tag line not found for family '{key}'. Ensure it is defined in the YAML frontmatter.")
     
     markdown_content = strip_yaml_frontmatter(content)
     monster_links = extract_monster_hyperlinks(markdown_content)
@@ -119,4 +123,4 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
             template_info = _convert_template_to_info_model(template, base_url)
             templates.append(template_info)
 
-    return MonsterFamilyInfo(key=key, name=name, icon=icon, templates=templates)
+    return MonsterFamilyInfo(key=key, name=name, icon=icon, tag_line=tag_line, templates=templates)

@@ -42,4 +42,5 @@ class MonsterFamilyInfo:
     key: str
     name: str
     icon: str
+    tag_line: str
     templates: list[MonsterTemplateInfoModel]

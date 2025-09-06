@@ -46,12 +46,14 @@ class TestMonsterFamilyInfo:
             key="soldiers_and_fighters",
             name="Soldiers & Fighters",
             icon="rally-the-troops",
+            tag_line="Battle-Hardened Warriors",
             templates=templates,
         )
 
         assert family.key == "soldiers_and_fighters"
         assert family.name == "Soldiers & Fighters"
         assert family.icon == "rally-the-troops"
+        assert family.tag_line == "Battle-Hardened Warriors"
         assert len(family.templates) == 2
         assert family.templates[0].name == "Guard"
         assert family.templates[1].name == "Knight"
@@ -76,6 +78,7 @@ class TestMonsterFamilyLoading:
 title: Test Soldiers & Fighters | Foe Foundry
 short_title: Test Soldiers & Fighters
 icon: rally-the-troops
+tag_line: Test Battle-Hardened Warriors
 is_monster_family: true
 ---
 
@@ -141,6 +144,7 @@ is_monster_family: false
         assert family.key == "test-soldiers"  # name_to_key converts underscores to hyphens
         assert family.name == "Test Soldiers & Fighters"
         assert family.icon == "rally-the-troops"
+        assert family.tag_line == "Test Battle-Hardened Warriors"
         assert len(family.templates) == 1
         assert family.templates[0].key == "test_template"
         assert family.templates[0].name == "Test Template"
@@ -156,6 +160,7 @@ is_monster_family: false
         no_icon_content = """---
 title: Test Family
 short_title: Test Family  
+tag_line: Test Tagline
 is_monster_family: true
 ---
 
@@ -170,6 +175,34 @@ is_monster_family: true
         with patch("foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path):
             with patch("foe_foundry_data.monster_families.data.get_base_url", return_value="http://test.example.com"):
                 with pytest.raises(ValueError, match="Icon not found"):
+                    load_monster_families()
+
+    def test_load_monster_families_validates_tag_line_field(self, tmp_path):
+        """Test that load_monster_families validates tag_line field presence."""
+        # Set up test directory structure
+        docs_dir = tmp_path / "docs"
+        families_dir = docs_dir / "families"
+        families_dir.mkdir(parents=True)
+
+        # Test missing tag_line
+        no_tag_line_content = """---
+title: Test Family
+short_title: Test Family  
+icon: test-icon
+is_monster_family: true
+---
+
+# Test Family
+
+*Test Tagline*
+"""
+
+        no_tag_line_file = families_dir / "no_tag_line.md"
+        no_tag_line_file.write_text(no_tag_line_content)
+
+        with patch("foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path):
+            with patch("foe_foundry_data.monster_families.data.get_base_url", return_value="http://test.example.com"):
+                with pytest.raises(ValueError, match="Tag line not found"):
                     load_monster_families()
 
     @pytest.mark.integration
@@ -194,6 +227,7 @@ is_monster_family: true
         assert soldiers_family is not None
         assert soldiers_family.name == "Soldiers & Fighters"
         assert soldiers_family.icon == "rally-the-troops"
+        assert soldiers_family.tag_line == "Battle-Hardened Warriors of Duty, Honor, or Fortune"
         # Should have templates for the expected monster types
         assert len(soldiers_family.templates) > 0
         
@@ -223,6 +257,7 @@ is_monster_family: true
         assert fanatics_family is not None
         assert fanatics_family.name == "Fanatics & the Faithful"
         assert fanatics_family.icon == "chalice-drops"
+        assert fanatics_family.tag_line == "Faithful Followers of the Occult or Divine"
         # Should have templates for the expected monster types
         assert len(fanatics_family.templates) > 0
         
@@ -247,6 +282,7 @@ class TestMonsterFamilyCache:
             assert hasattr(family, 'key')
             assert hasattr(family, 'name')
             assert hasattr(family, 'icon')
+            assert hasattr(family, 'tag_line')
             assert hasattr(family, 'templates')
             assert isinstance(family.templates, list)
 
@@ -261,3 +297,4 @@ class TestMonsterFamilyCache:
         if soldiers_family is not None:
             assert soldiers_family.name == "Soldiers & Fighters"
             assert soldiers_family.icon == "rally-the-troops"
+            assert soldiers_family.tag_line == "Battle-Hardened Warriors of Duty, Honor, or Fortune"

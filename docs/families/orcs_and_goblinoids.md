@@ -4,6 +4,7 @@ short_title: Orcs and Goblinoids - Statblocks, Lore, and Encounters
 description: Explore orc and goblinoid lore, statblocks, and unforgettable encounter ideas. Fuel your 5E campaign with ancestral fury, goblin mischief, and warband mayhem.
 image: img/monsters/orc-soldier.webp
 icon: orc-head
+tag_line: Chaotic Warriors Fueled by Bloodrage or Mischief
 json_ld: true
 is_monster_family: true
 ---
