@@ -3,6 +3,7 @@ title: Fanatics & the Faithful | Foe Foundry
 short_title: Fanatics & the Faithful
 description: Discover flavorful priest, cultist, and knight statblocks for your 5E campaign. Explore divine lore and dark devotion for unforgettable encounters.
 image: img/monsters/priest.webp
+icon: chalice-drops
 json_ld: true
 is_monster_family: true
 ---

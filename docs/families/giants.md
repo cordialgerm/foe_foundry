@@ -3,6 +3,7 @@ title: Giants for 5E - Statblocks & Encounter Ideas | Foe Foundry
 short_title: Giant Statblocks & Encounters
 description: Discover primal, powerful giants for your 5E campaign. Includes custom Frost Giant and Ogre statblocks, unique powers, and encounter ideas to shake the very earth beneath your players' feet.
 image: img/monsters/frost-giant.webp
+icon: boot-stomp
 json_ld: true
 is_monster_family: true
 ---
