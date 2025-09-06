@@ -524,8 +524,8 @@ export class MonsterCodex extends LitElement {
 
     .monster-row.selected {
       background-color: var(--primary-faded-color);
-      border: 1px solid var(--border-color);
-      box-shadow: 0 4px 12px rgba(255, 55, 55, 0.3);
+      border: 1px solid var(--tertiary-color);
+      box-shadow: 0 4px 12px var(--tertiary-color);
     }
 
     /* Desktop: Smaller list items */
@@ -556,7 +556,6 @@ export class MonsterCodex extends LitElement {
       font-family: var(--header-font);
     }
 
-    /* Mobile: Rich monster card info */
     .monster-info {
       color: white;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
@@ -578,12 +577,6 @@ export class MonsterCodex extends LitElement {
       line-height: 1.2;
     }
 
-    .monster-details {
-      font-size: 1rem;
-      opacity: 0.9;
-      margin-bottom: 1rem;
-    }
-
     .monster-tags {
       display: flex;
       flex-wrap: wrap;
@@ -592,7 +585,7 @@ export class MonsterCodex extends LitElement {
     }
 
     .monster-tag {
-      background: var(--primary-color);
+      background: var(--tertiary-color);
       color: var(--fg-color);
       padding: 0.25rem 0.75rem;
       border-radius: 20px;
@@ -601,10 +594,11 @@ export class MonsterCodex extends LitElement {
     }
 
     .monster-description {
-      font-size: 0.9rem;
+      font-size: 1rem;
       line-height: 1.4;
       margin-bottom: 1rem;
       opacity: 0.8;
+      font-style: italic;
     }
 
     .monster-actions {
@@ -613,7 +607,7 @@ export class MonsterCodex extends LitElement {
     }
 
     .monster-action-btn {
-      background: var(--primary-color);
+      background: var(--tertiary-color);
       color: var(--fg-color);
       border: none;
       padding: 0.5rem 1rem;
@@ -621,6 +615,7 @@ export class MonsterCodex extends LitElement {
       font-family: var(--primary-font);
       font-size: 0.9rem;
       font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
       cursor: pointer;
       transition: all 0.2s ease;
       min-height: 44px;
@@ -631,7 +626,7 @@ export class MonsterCodex extends LitElement {
     }
 
     .monster-action-btn:hover {
-      background: var(--primary-muted-color);
+      background: var(--tertiary-color);
       transform: translateY(-1px);
     }
 
@@ -654,22 +649,6 @@ export class MonsterCodex extends LitElement {
         justify-content: center;
         padding: 0.75rem;
         min-height: auto;
-      }
-
-      .monster-name {
-        font-size: 1rem;
-        margin-bottom: 0.25rem;
-      }
-
-      .monster-details {
-        font-size: 0.9rem;
-        margin-bottom: 0;
-      }
-
-      .monster-tags,
-      .monster-description,
-      .monster-actions {
-        display: none;
       }
     }
 
@@ -1159,29 +1138,9 @@ export class MonsterCodex extends LitElement {
       this.backgroundOffsets.set(monster.key, backgroundPosition);
     }
 
-    // Format the details line: CR X | CreatureType | *TagLine*
-    let details = `CR ${monster.cr}`;
-    if (monster.creature_type) {
-      details += ` | ${monster.creature_type}`;
-    }
-    if (monster.tag_line) {
-      details += ` | ${monster.tag_line}`;
-    }
-
-    // Generate monster tags for mobile
     const tags = [];
-    if (monster.creature_type) tags.push(monster.creature_type);
-    if (monster.monsterFamilies?.[0]) tags.push(monster.monsterFamilies[0]);
-    // Note: environments not available in MonsterInfo interface
-
-    // Create description from tag line or family info
-    let description = monster.tag_line;
-    if (!description && monster.monsterFamilies?.[0]) {
-      description = `A ${monster.creature_type?.toLowerCase() || 'creature'} from the ${monster.monsterFamilies[0]} family.`;
-    }
-    if (!description) {
-      description = `A ${monster.creature_type?.toLowerCase() || 'creature'} of challenge rating ${monster.cr}.`;
-    }
+    tags.push(`CR ${monster.cr}`); // CR tag
+    if (monster.creature_type) tags.push(monster.creature_type); // Creature Type tag
 
     return html`
       <div>
@@ -1193,25 +1152,23 @@ export class MonsterCodex extends LitElement {
           @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
           <div class="monster-info">
             <div class="monster-name">${monster.name}</div>
-            <div class="monster-details">${details}</div>
 
-            <!-- Mobile: Rich card content -->
             <div class="monster-tags">
-              ${tags.slice(0, 3).map(tag => html`
+              ${tags.map(tag => html`
                 <span class="monster-tag">${tag}</span>
               `)}
             </div>
 
-            <div class="monster-description">${description}</div>
+            ${monster.tag_line ? html`<div class="monster-description">${monster.tag_line}</div>` : ''}
 
             <div class="monster-actions">
               <button class="monster-action-btn"
-                      @click=${(e: Event) => this.handleForgeClick(e, monster.key)}>
-                Forge
+                      @click=${(e: Event) => this.handleStatblockClick(e, monster.key)}>
+                View Stats
               </button>
               <button class="monster-action-btn secondary"
-                      @click=${(e: Event) => this.handleShareClick(e, monster.key)}>
-                Share
+                      @click=${(e: Event) => this.handleForgeClick(e, monster.key)}>
+                Forge Stats
               </button>
             </div>
           </div>
@@ -1406,13 +1363,16 @@ export class MonsterCodex extends LitElement {
   }
 
   private handleMonsterClick(e: Event, key: string) {
-    // On mobile: Allow navigation to monster page
-    // On desktop: Prevent navigation and toggle drawer instead
-    if (window.innerWidth >= 1040) {
-      e.preventDefault();
-      this.toggleMonsterDrawer(key);
-    }
-    // On mobile, let the natural navigation happen
+    // Always prevent navigation and toggle drawer/show statblock on both mobile and desktop
+    e.preventDefault();
+    this.toggleMonsterDrawer(key);
+  }
+
+  private handleStatblockClick(e: Event, key: string) {
+    e.preventDefault();
+    e.stopPropagation();
+    // Same behavior as clicking the card - toggle drawer/show statblock
+    this.toggleMonsterDrawer(key);
   }
 
   private handleForgeClick(e: Event, key: string) {
@@ -1420,19 +1380,6 @@ export class MonsterCodex extends LitElement {
     e.stopPropagation();
     // Navigate to the forge page with this monster
     window.location.href = `/generate/?monster=${key}`;
-  }
-
-  private handleShareClick(e: Event, key: string) {
-    e.preventDefault();
-    e.stopPropagation();
-    // Copy monster URL to clipboard
-    const url = `${window.location.origin}/monsters/${key}/`;
-    navigator.clipboard.writeText(url).then(() => {
-      // Show a toast notification or similar feedback
-      console.log('Monster URL copied to clipboard:', url);
-    }).catch(err => {
-      console.error('Failed to copy URL:', err);
-    });
   }
 
   updated(changedProperties: Map<string | number | symbol, unknown>) {

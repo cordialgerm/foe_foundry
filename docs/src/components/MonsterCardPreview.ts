@@ -181,9 +181,6 @@ export class MonsterCardPreview extends LitElement {
 
         <div class="monster-overlay ${this.compact ? 'compact' : ''}">
           <div class="monster-name ${this.compact ? 'compact' : ''}">${this.monster.name}</div>
-          <div class="monster-details ${this.compact ? 'compact' : ''}">
-            ${this.monster.cr} | ${this.monster.creatureType}
-          </div>
 
           ${this.compact ? html`` : html`
             <div class="monster-tags">
@@ -196,7 +193,6 @@ export class MonsterCardPreview extends LitElement {
 
             <div class="action-buttons">
               <button class="action-btn" @click=${this.handleForgeClick}>Forge</button>
-              <button class="action-btn secondary" @click=${this.handleShareClick}>Share</button>
             </div>
           `}
         </div>
@@ -227,16 +223,6 @@ export class MonsterCardPreview extends LitElement {
     e.stopPropagation();
     // Navigate to forge page with this monster
     window.location.href = `/generate/?monster-key=${this.monster?.key}`;
-  }
-
-  private handleShareClick(e: Event) {
-    e.stopPropagation();
-    // Copy monster URL to clipboard
-    const url = `${window.location.origin}/monsters/${this.monster?.monsterTemplate}/`;
-    navigator.clipboard.writeText(url).then(() => {
-      // Could dispatch a toast notification event here
-      console.log('Monster URL copied to clipboard');
-    });
   }
 }
 
