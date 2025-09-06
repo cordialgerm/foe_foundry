@@ -531,7 +531,7 @@ export class MonsterCarousel extends LitElement {
         templateKey,
         'template',
         'carousel',
-      )
+      );
 
       // Navigate to the monster page
       window.location.href = url;
