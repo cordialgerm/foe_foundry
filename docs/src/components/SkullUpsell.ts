@@ -2,102 +2,299 @@ import { LitElement, html, css, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { trackEvent } from '../utils/analytics.js';
 
-// Skull upsell copy library - promoting skull/undead content
-const SKULL_UPSELL_COPY = [
-  "💀 Discover eerie skull creatures to haunt your campaign!",
-  "🔥 Add some bone-chilling undead to your monster collection!",
-  "💀 Need more sinister creatures? Check out our skull monsters!",
-  "⚰️ Unleash the power of undead with our skull collection!",
-  "💀 Looking for spine-tingling encounters? Explore skull creatures!"
-];
-
-// Skull creature keywords that trigger the upsell
-const SKULL_KEYWORDS = [
-  'skull', 'bone', 'undead', 'skeleton', 'lich', 'zombie', 'ghost', 
-  'wraith', 'specter', 'banshee', 'vampire', 'mummy', 'necromancer'
+// Darkly humorous skull mascot quotes as specified in issue 305
+const SKULL_QUOTES = [
+  "Careful, GM… your monsters look *balanced*.",
+  "I hold the secrets to truly cursed foes.",
+  "Subscribe, mortal, and learn forbidden powers.",
+  "These creatures need more... *personality*.",
+  "Let me whisper dark secrets in your ear...",
+  "Your campaign lacks proper dread, doesn't it?",
+  "I've seen things that would make your players weep.",
+  "Want to craft nightmares? I can teach you."
 ];
 
 // Local storage key for tracking dismissal
 const STORAGE_KEY = 'ff_skull_upsell';
-const UPSELL_VERSION = 'v1_skull';
+const UPSELL_VERSION = 'v2_animated';
+
+type SkullMode = 'generator' | 'inline' | 'floating';
+type SkullState = 'idle' | 'active' | 'dismissed';
 
 interface SkullUpsellState {
-  isActive: boolean;
-  currentStatblock: Element | null;
-  currentMessage: string;
+  state: SkullState;
+  currentQuote: string;
   showTime: number;
-  upsellElement: HTMLElement | null;
+  idleTimer?: number;
+  quotesUsed: Set<string>;
 }
 
 @customElement('skull-upsell')
 export class SkullUpsell extends LitElement {
-  @property({ type: Boolean })
-  enabled: boolean = true; // Temporarily enabled for testing
+  @property({ type: String })
+  mode: SkullMode = 'floating';
 
-  private _upsellState: SkullUpsellState = {
-    isActive: false,
-    currentStatblock: null,
-    currentMessage: '',
+  @property({ type: Array })
+  quotes: string[] = SKULL_QUOTES;
+
+  @property({ type: Function })
+  onSummon?: () => void;
+
+  @property({ type: Number })
+  idleDelay: number = 45000; // 45 seconds as suggested in PRD
+
+  @property({ type: Boolean })
+  dismissible: boolean = true;
+
+  @property({ type: Boolean })
+  enabled: boolean = true;
+
+  private _state: SkullUpsellState = {
+    state: 'idle',
+    currentQuote: '',
     showTime: 0,
-    upsellElement: null
+    quotesUsed: new Set()
   };
 
-  private _intersectionObserver?: IntersectionObserver;
-  private _statblocks: Element[] = [];
-  private _visibilityMap = new Map<Element, number>();
   private _initTimeout?: number;
-  private _displayTimeout?: number;
-  private _firedEvents = new Set<string>();
+  private _idleTimer?: number;
 
   static styles = css`
     :host {
-      position: relative;
+      position: fixed;
       z-index: 999;
       pointer-events: none;
     }
 
-    /* Skull upsell floating banner animation */
-    @keyframes skullFloat {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-5px) rotate(2deg); }
+    /* Host positioning based on mode */
+    :host([mode="floating"]) {
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    @keyframes fadeInUp {
-      from { 
-        opacity: 0; 
-        transform: translateY(20px); 
+    :host([mode="inline"]) {
+      position: relative;
+      display: block;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    :host([mode="generator"]) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .skull-container {
+      position: relative;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: all 0.3s ease;
+    }
+
+    .skull-mascot {
+      font-size: 3rem;
+      line-height: 1;
+      transition: all 0.5s ease;
+      filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.3));
+    }
+
+    .speech-bubble {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-10px);
+      background: linear-gradient(135deg, #2a1810, #1a1a1a);
+      border: 2px solid #8b4513;
+      border-radius: 15px;
+      padding: 12px 16px;
+      color: #f4f1e6;
+      font-family: var(--primary-font, 'Cinzel', serif);
+      font-size: 0.9rem;
+      font-weight: 500;
+      white-space: nowrap;
+      max-width: 280px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      z-index: 10;
+    }
+
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 8px solid transparent;
+      border-top-color: #8b4513;
+    }
+
+    .speech-bubble::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-2px);
+      border: 6px solid transparent;
+      border-top-color: #2a1810;
+      z-index: 1;
+    }
+
+    .dismiss-btn {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    /* State-based styles */
+    :host([data-state="idle"]) .skull-mascot {
+      animation: idleFloat 4s infinite ease-in-out;
+    }
+
+    :host([data-state="active"]) .speech-bubble {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    :host([data-state="active"]) .skull-mascot {
+      animation: activeWiggle 0.5s ease-out;
+      transform: scale(1.1);
+    }
+
+    :host([data-state="active"]) .dismiss-btn {
+      opacity: 1;
+    }
+
+    /* Mode-specific styles */
+    :host([mode="generator"]) .skull-container {
+      animation: riseIn 1s ease-out;
+    }
+
+    :host([mode="inline"]) {
+      pointer-events: auto;
+    }
+
+    :host([mode="inline"]) .skull-container {
+      display: inline-block;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0,10 Q50,0 100,10 Q50,20 0,10" fill="%23d4af37" opacity="0.2"/></svg>') center/contain no-repeat;
+      padding: 20px;
+    }
+
+    /* Animations */
+    @keyframes idleFloat {
+      0%, 100% { 
+        transform: translateY(0) rotate(0deg);
+        filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.3));
       }
-      to { 
-        opacity: 1; 
-        transform: translateY(0); 
+      25% { 
+        transform: translateY(-3px) rotate(1deg);
+        filter: drop-shadow(0 2px 15px rgba(255, 69, 0, 0.4));
+      }
+      50% { 
+        transform: translateY(-5px) rotate(0deg);
+        filter: drop-shadow(0 4px 20px rgba(255, 69, 0, 0.5));
+      }
+      75% { 
+        transform: translateY(-3px) rotate(-1deg);
+        filter: drop-shadow(0 2px 15px rgba(255, 69, 0, 0.4));
       }
     }
 
-    @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 5px rgba(255, 69, 0, 0.3); }
-      50% { box-shadow: 0 0 20px rgba(255, 69, 0, 0.6); }
+    @keyframes activeWiggle {
+      0% { transform: scale(1) rotate(0deg); }
+      25% { transform: scale(1.05) rotate(-5deg); }
+      50% { transform: scale(1.1) rotate(0deg); }
+      75% { transform: scale(1.05) rotate(5deg); }
+      100% { transform: scale(1.1) rotate(0deg); }
+    }
+
+    @keyframes riseIn {
+      0% { 
+        transform: translate(-50%, 20px) scale(0.8);
+        opacity: 0;
+      }
+      100% { 
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes bubblePop {
+      0% { 
+        transform: translateX(-50%) translateY(-10px) scale(0.8);
+        opacity: 0;
+      }
+      50% { 
+        transform: translateX(-50%) translateY(0) scale(1.05);
+      }
+      100% { 
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Hover effects */
+    .skull-container:hover .skull-mascot {
+      transform: scale(1.2);
+      animation: none;
+    }
+
+    .skull-container:hover .speech-bubble {
+      animation: bubblePop 0.4s ease-out;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      :host([mode="floating"]) {
+        right: 10px;
+        top: auto;
+        bottom: 20px;
+        transform: none;
+      }
+
+      .skull-mascot {
+        font-size: 2.5rem;
+      }
+
+      .speech-bubble {
+        font-size: 0.8rem;
+        max-width: 200px;
+      }
     }
   `;
 
   connectedCallback() {
     super.connectedCallback();
 
-    // Check if upsell is enabled
     if (!this.enabled) {
       return;
     }
 
     // Check if upsell was recently dismissed
     if (this._isDismissed()) {
+      this._state.state = 'dismissed';
       return;
     }
 
-    // Wait 2 seconds after component loads before initializing
+    // Initialize based on mode
     this._initTimeout = window.setTimeout(() => {
-      if (this.enabled && !this._isDismissed()) {
-        this._initializeUpsell();
-      }
-    }, 2000);
+      this._initialize();
+    }, 1000);
   }
 
   disconnectedCallback() {
@@ -108,25 +305,91 @@ export class SkullUpsell extends LitElement {
   updated(changedProperties: PropertyValues) {
     super.updated(changedProperties);
 
-    // Handle enabled property changes
     if (changedProperties.has('enabled')) {
-      if (this.enabled) {
-        // Upsell was just enabled - start it if not dismissed
-        if (!this._isDismissed()) {
-          this._initTimeout = window.setTimeout(() => {
-            if (this.enabled && !this._isDismissed()) {
-              this._initializeUpsell();
-            }
-          }, 1000);
-        }
-      } else {
-        // Upsell was disabled - clean up
+      if (this.enabled && this._state.state === 'dismissed') {
+        this._initialize();
+      } else if (!this.enabled) {
         this._cleanup();
       }
     }
+
+    // Update host attributes for CSS targeting
+    this.setAttribute('data-state', this._state.state);
+    this.setAttribute('mode', this.mode);
+  }
+
+  private _initialize(): void {
+    this._state.state = 'idle';
+    this._startIdleTimer();
+    
+    // Track initialization
+    trackEvent('skull_upsell_initialized', {
+      mode: this.mode,
+      version: UPSELL_VERSION,
+      idle_delay: this.idleDelay
+    });
+
+    this.requestUpdate();
+  }
+
+  private _startIdleTimer(): void {
+    if (this._idleTimer) {
+      clearTimeout(this._idleTimer);
+    }
+
+    this._idleTimer = window.setTimeout(() => {
+      if (this._state.state === 'idle') {
+        this._activate();
+      }
+    }, this.idleDelay);
+  }
+
+  private _activate(): void {
+    this._state.state = 'active';
+    this._state.currentQuote = this._getNextQuote();
+    this._state.showTime = Date.now();
+    
+    // Track activation
+    trackEvent('skull_upsell_activated', {
+      mode: this.mode,
+      quote: this._state.currentQuote,
+      delay_ms: this.idleDelay
+    });
+
+    this.requestUpdate();
+
+    // Auto-dismiss after 10 seconds if not interacted with
+    setTimeout(() => {
+      if (this._state.state === 'active') {
+        this._goIdle();
+      }
+    }, 10000);
+  }
+
+  private _goIdle(): void {
+    this._state.state = 'idle';
+    this.requestUpdate();
+    this._startIdleTimer();
+  }
+
+  private _getNextQuote(): string {
+    // Avoid repeating quotes until all are used
+    const availableQuotes = this.quotes.filter(quote => !this._state.quotesUsed.has(quote));
+    
+    if (availableQuotes.length === 0) {
+      // Reset if all quotes used
+      this._state.quotesUsed.clear();
+      return this.quotes[Math.floor(Math.random() * this.quotes.length)];
+    }
+
+    const quote = availableQuotes[Math.floor(Math.random() * availableQuotes.length)];
+    this._state.quotesUsed.add(quote);
+    return quote;
   }
 
   private _isDismissed(): boolean {
+    if (!this.dismissible) return false;
+    
     const dismissedAt = localStorage.getItem(STORAGE_KEY);
     if (!dismissedAt) return false;
     
@@ -139,367 +402,83 @@ export class SkullUpsell extends LitElement {
   }
 
   private _markDismissed(): void {
-    localStorage.setItem(STORAGE_KEY, Date.now().toString());
-  }
-
-  private _initializeUpsell(): void {
-    // Check for required browser features
-    if (!this._checkBrowserSupport()) {
-      this._trackAnalytics('skull_upsell_skipped_unsupported', {
-        missing: this._getMissingFeatures()
-      }, true);
-      return;
+    if (this.dismissible) {
+      localStorage.setItem(STORAGE_KEY, Date.now().toString());
+      this._state.state = 'dismissed';
+      this.requestUpdate();
     }
-
-    // Find all statblock components
-    this._findStatblocks();
-
-    if (this._statblocks.length === 0) {
-      // Retry after a short delay in case components are still loading
-      setTimeout(() => {
-        this._findStatblocks();
-        if (this._statblocks.length > 0) {
-          this._setupIntersectionObserver();
-          this._trackAnalytics('skull_upsell_impression', {
-            upsell_version: UPSELL_VERSION,
-            page: window.location.pathname,
-            count_statblocks: this._statblocks.length
-          }, true);
-        }
-      }, 1500);
-      return;
-    }
-
-    // Set up intersection observer
-    this._setupIntersectionObserver();
-
-    // Track upsell impression
-    this._trackAnalytics('skull_upsell_impression', {
-      upsell_version: UPSELL_VERSION,
-      page: window.location.pathname,
-      count_statblocks: this._statblocks.length
-    }, true);
   }
 
-  private _checkBrowserSupport(): boolean {
-    return !!(window.IntersectionObserver && window.localStorage && document.querySelector);
-  }
-
-  private _getMissingFeatures(): string[] {
-    const missing: string[] = [];
-    if (!window.IntersectionObserver) missing.push('IntersectionObserver');
-    if (!window.localStorage) missing.push('localStorage');
-    if (!document.querySelector) missing.push('selectors');
-    return missing;
-  }
-
-  private _findStatblocks(): void {
-    // Find all monster-statblock elements
-    this._statblocks = Array.from(document.querySelectorAll('monster-statblock'));
-  }
-
-  private _setupIntersectionObserver(): void {
-    this._intersectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          const visibilityRatio = entry.intersectionRatio;
-          this._visibilityMap.set(entry.target, visibilityRatio);
-        });
-
-        this._updateMostVisibleStatblock();
-      },
-      { threshold: [0, 0.25, 0.5, 0.75, 1.0] }
-    );
-
-    this._statblocks.forEach(statblock => {
-      this._intersectionObserver!.observe(statblock);
-    });
-  }
-
-  private _updateMostVisibleStatblock(): void {
-    let mostVisible: Element | null = null;
-    let maxVisibility = 0;
-
-    this._visibilityMap.forEach((visibility, statblock) => {
-      if (visibility > maxVisibility) {
-        maxVisibility = visibility;
-        mostVisible = statblock;
+  private _handleSkullClick(): void {
+    if (this._state.state === 'idle') {
+      this._activate();
+    } else if (this._state.state === 'active') {
+      // Call onSummon callback
+      if (this.onSummon) {
+        this.onSummon();
+      } else {
+        // Default behavior - open newsletter signup or similar
+        this._defaultSummonAction();
       }
-    });
 
-    // Only show upsell if statblock is significantly visible and contains skull-related content
-    if (mostVisible && maxVisibility > 0.4) {
-      if (this._shouldShowUpsellForStatblock(mostVisible)) {
-        if (mostVisible !== this._upsellState.currentStatblock || !this._upsellState.isActive) {
-          this._showUpsellForStatblock(mostVisible);
-        }
-      }
-    } else if (this._upsellState.isActive) {
-      // No suitable statblock is visible, hide upsell
-      this._removeUpsell();
-      this._upsellState.isActive = false;
+      const timeElapsed = Date.now() - this._state.showTime;
+      trackEvent('skull_upsell_summon', {
+        mode: this.mode,
+        quote: this._state.currentQuote,
+        ms_since_show: timeElapsed
+      });
+
+      this._markDismissed();
     }
   }
 
-  private _shouldShowUpsellForStatblock(statblock: Element): boolean {
-    // Get statblock text content to check for skull-related keywords
-    const text = statblock.textContent?.toLowerCase() || '';
+  private _handleDismiss(e: Event): void {
+    e.stopPropagation();
     
-    // Check if any skull keywords are present
-    return SKULL_KEYWORDS.some(keyword => text.includes(keyword));
-  }
-
-  private _showUpsellForStatblock(statblock: Element): void {
-    // Don't show multiple upsells at once
-    if (this._upsellState.isActive) {
-      return;
-    }
-
-    // Wait a moment for the statblock to be fully rendered
-    setTimeout(() => {
-      const randomMessage = SKULL_UPSELL_COPY[Math.floor(Math.random() * SKULL_UPSELL_COPY.length)];
-
-      this._upsellState = {
-        isActive: true,
-        currentStatblock: statblock,
-        currentMessage: randomMessage,
-        showTime: Date.now(),
-        upsellElement: null
-      };
-
-      this._showUpsellBanner(randomMessage);
-      
-      // Auto-dismiss after 8 seconds
-      this._displayTimeout = window.setTimeout(() => {
-        this._removeUpsell();
-      }, 8000);
-
-    }, 500);
-  }
-
-  private _showUpsellBanner(message: string): void {
-    // Remove any existing upsell
-    this._removeUpsell();
-
-    // Create upsell banner element
-    const banner = document.createElement('div');
-    banner.className = 'skull-upsell-banner';
-
-    // Apply inline styles since the banner will be outside the shadow DOM
-    this._applyBannerStyles(banner);
-
-    // Create banner content
-    banner.innerHTML = `
-      <div class="skull-icon">💀</div>
-      <div class="upsell-message">${message}</div>
-      <button class="upsell-cta">Explore Skulls</button>
-      <button class="upsell-dismiss">×</button>
-    `;
-
-    // Position banner at the bottom of the viewport
-    this._positionBanner(banner);
-
-    // Add click handlers
-    const ctaButton = banner.querySelector('.upsell-cta') as HTMLElement;
-    const dismissButton = banner.querySelector('.upsell-dismiss') as HTMLElement;
-    
-    ctaButton.addEventListener('click', () => this._handleCtaClick());
-    dismissButton.addEventListener('click', () => this._handleDismissClick());
-
-    // Add to body
-    document.body.appendChild(banner);
-
-    // Track analytics
-    this._trackAnalytics('skull_upsell_shown', {
-      message,
-      visibility_ratio: this._visibilityMap.get(this._upsellState.currentStatblock!) || 0
-    }, true);
-
-    // Store reference
-    this._upsellState.upsellElement = banner;
-  }
-
-  private _positionBanner(banner: HTMLElement): void {
-    banner.style.position = 'fixed';
-    banner.style.bottom = '20px';
-    banner.style.left = '50%';
-    banner.style.transform = 'translateX(-50%)';
-    banner.style.zIndex = '1000';
-  }
-
-  private _applyBannerStyles(banner: HTMLElement): void {
-    banner.style.cssText = `
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, #2a0a0a, #1a1a1a);
-      border: 2px solid #8b0000;
-      border-radius: 12px;
-      padding: 12px 20px;
-      box-shadow: 0 4px 20px rgba(139, 0, 0, 0.4);
-      font-family: var(--primary-font, system-ui);
-      color: #f4f1e6;
-      max-width: 400px;
-      min-width: 300px;
-      z-index: 1000;
-      pointer-events: auto;
-      animation: fadeInUp 0.5s ease-out, pulseGlow 3s infinite;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    `;
-
-    // Add pseudo-element styles via a style element
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes fadeInUp {
-        from { opacity: 0; transform: translateX(-50%) translateY(20px); }
-        to { opacity: 1; transform: translateX(-50%) translateY(0); }
-      }
-      @keyframes pulseGlow {
-        0%, 100% { box-shadow: 0 4px 20px rgba(139, 0, 0, 0.4); }
-        50% { box-shadow: 0 4px 30px rgba(139, 0, 0, 0.7); }
-      }
-      @keyframes skullFloat {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-3px) rotate(5deg); }
-      }
-      .skull-upsell-banner .skull-icon {
-        font-size: 1.5rem;
-        animation: skullFloat 2s infinite;
-      }
-      .skull-upsell-banner .upsell-message {
-        flex: 1;
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
-      .skull-upsell-banner .upsell-cta {
-        background: #8b0000;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        padding: 6px 12px;
-        font-size: 0.8rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background 0.2s ease;
-      }
-      .skull-upsell-banner .upsell-cta:hover {
-        background: #a50000;
-      }
-      .skull-upsell-banner .upsell-dismiss {
-        background: transparent;
-        color: #999;
-        border: none;
-        font-size: 1.2rem;
-        cursor: pointer;
-        padding: 0;
-        width: 20px;
-        height: 20px;
-        transition: color 0.2s ease;
-      }
-      .skull-upsell-banner .upsell-dismiss:hover {
-        color: #fff;
-      }
-    `;
-
-    // Add the style to the document head if it doesn't exist
-    if (!document.querySelector('#skull-upsell-styles')) {
-      style.id = 'skull-upsell-styles';
-      document.head.appendChild(style);
-    }
-  }
-
-  private _removeUpsell(): void {
-    const existingBanner = document.querySelector('.skull-upsell-banner');
-    if (existingBanner) {
-      existingBanner.remove();
-    }
-
-    if (this._upsellState.upsellElement) {
-      this._upsellState.upsellElement.remove();
-      this._upsellState.upsellElement = null;
-    }
-
-    // Clear display timeout
-    if (this._displayTimeout) {
-      clearTimeout(this._displayTimeout);
-      this._displayTimeout = undefined;
-    }
-
-    this._upsellState.isActive = false;
-  }
-
-  private _handleCtaClick(): void {
-    const timeElapsed = Date.now() - this._upsellState.showTime;
-
-    this._trackAnalytics('skull_upsell_cta_click', {
-      message: this._upsellState.currentMessage,
-      ms_since_show: timeElapsed
-    });
-
-    // Navigate to skull creatures page (assuming this exists)
-    window.location.href = '/monsters/?search=skull';
-
-    this._markDismissed();
-    this._removeUpsell();
-  }
-
-  private _handleDismissClick(): void {
-    const timeElapsed = Date.now() - this._upsellState.showTime;
-
-    this._trackAnalytics('skull_upsell_dismiss', {
-      message: this._upsellState.currentMessage,
+    const timeElapsed = Date.now() - this._state.showTime;
+    trackEvent('skull_upsell_dismissed', {
+      mode: this.mode,
+      quote: this._state.currentQuote,
       ms_since_show: timeElapsed
     });
 
     this._markDismissed();
-    this._removeUpsell();
+  }
+
+  private _defaultSummonAction(): void {
+    // Default action when no onSummon callback is provided
+    // Could open a modal, navigate to a page, etc.
+    window.location.href = '/generate/?utm_source=skull_upsell&utm_medium=' + this.mode;
   }
 
   private _cleanup(): void {
     if (this._initTimeout) {
       clearTimeout(this._initTimeout);
     }
-
-    if (this._displayTimeout) {
-      clearTimeout(this._displayTimeout);
+    if (this._idleTimer) {
+      clearTimeout(this._idleTimer);
     }
-
-    if (this._intersectionObserver) {
-      this._intersectionObserver.disconnect();
-    }
-
-    this._removeUpsell();
-
-    // Remove injected styles
-    const styleElement = document.querySelector('#skull-upsell-styles');
-    if (styleElement) {
-      styleElement.remove();
-    }
-
-    this._upsellState = {
-      isActive: false,
-      currentStatblock: null,
-      currentMessage: '',
-      showTime: 0,
-      upsellElement: null
-    };
-  }
-
-  private _trackAnalytics(eventName: string, params: any, firstTimeOnly: boolean = false): void {
-    if (firstTimeOnly) {
-      if (this._firedEvents.has(eventName)) {
-        return; // Skip if already fired
-      }
-      this._firedEvents.add(eventName);
-    }
-    trackEvent(eventName, params);
   }
 
   render() {
-    return html`<!-- SkullUpsell renders promotional banners via DOM manipulation -->`;
+    if (!this.enabled || this._state.state === 'dismissed') {
+      return html``;
+    }
+
+    return html`
+      <div class="skull-container" @click=${this._handleSkullClick}>
+        <div class="skull-mascot">💀</div>
+        
+        ${this._state.state === 'active' ? html`
+          <div class="speech-bubble">
+            ${this._state.currentQuote}
+            ${this.dismissible ? html`
+              <button class="dismiss-btn" @click=${this._handleDismiss}>×</button>
+            ` : ''}
+          </div>
+        ` : ''}
+      </div>
+    `;
   }
 }
 

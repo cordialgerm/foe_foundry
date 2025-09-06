@@ -59,7 +59,11 @@
 </head>
 
 <statblock-tutorial></statblock-tutorial>
-<skull-upsell enabled></skull-upsell>
+{% if page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
+<skull-upsell mode="generator" idle-delay="45000" enabled></skull-upsell>
+{% else %}
+<skull-upsell mode="floating" idle-delay="30000" enabled></skull-upsell>
+{% endif %}
 
 <body {% if page and page.is_homepage %} class="homepage" {% endif %}>
     {% include "partials/navbar.html" %}
