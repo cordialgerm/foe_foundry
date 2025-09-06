@@ -1,6 +1,6 @@
 
 
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { fixture, html } from '@open-wc/testing';
 import { MonsterCodex } from '../../docs/src/components/MonsterCodex.js';
 import '../setup.js';
@@ -8,6 +8,8 @@ import '../../docs/src/components/MonsterCodex.js';
 
 // Mock MonsterSearchApi and ApiMonsterStore
 class MockMonsterSearchApi {
+  private baseUrl = 'https://test.foefoundry.com';
+
   async getFacets() {
     return {
       creatureTypes: [
@@ -17,7 +19,7 @@ class MockMonsterSearchApi {
       crRange: { min: 0, max: 30 }
     };
   }
-  async searchMonsters() {
+  async searchMonsters(request?: any) {
     return {
       monsters: [
         { key: 'red-dragon', name: 'Red Dragon', cr: 17, creature_type: 'Dragon', tag_line: 'Fire-breathing terror', background_image: '', monsterFamilies: ['Chromatic'] },
@@ -30,12 +32,57 @@ class MockMonsterSearchApi {
 }
 
 class MockApiMonsterStore {
+  async getNewMonsterTemplates(limit: number = 12) {
+    return [];
+  }
+
+  async getMonsterTemplatesByFamily(familyKey: string) {
+    return [];
+  }
+
+  async searchMonsterTemplates(query: string, limit: number = 12) {
+    return [];
+  }
+
+  async getSimilarMonsters(key: string) {
+    return [];
+  }
+
+  async getRandomStatblock() {
+    const element = document.createElement('div');
+    element.innerHTML = '<div class="stat-block">Mock Statblock</div>';
+    return element.firstElementChild as HTMLElement;
+  }
+
+  async getStatblock(request: any, change: any) {
+    const element = document.createElement('div');
+    element.innerHTML = '<div class="stat-block">Mock Statblock</div>';
+    return element.firstElementChild as HTMLElement;
+  }
+
   async getMonster(key: string) {
-    if (key === 'red-dragon') {
-      return { key: 'red-dragon', name: 'Red Dragon', cr: 17, creature_type: 'Dragon', tag_line: 'Fire-breathing terror', background_image: '', monsterFamilies: ['Chromatic'] };
-    }
-    if (key === 'zombie') {
-      return { key: 'zombie', name: 'Zombie', cr: 1, creature_type: 'Undead', tag_line: 'Mindless undead', background_image: '', monsterFamilies: ['Corpse'] };
+    const mockData = {
+      key,
+      name: key === 'red-dragon' ? 'Red Dragon' : 'Zombie',
+      image: '',
+      backgroundImage: '',
+      creatureType: key === 'red-dragon' ? 'Dragon' : 'Undead',
+      monsterTemplateName: key === 'red-dragon' ? 'Dragon Template' : 'Undead Template',
+      monsterTemplate: key === 'red-dragon' ? 'dragon' : 'undead',
+      monsterFamilies: key === 'red-dragon' ? ['Chromatic'] : ['Corpse'],
+      size: 'Large',
+      cr: key === 'red-dragon' ? '17' : '1',
+      tagLine: key === 'red-dragon' ? 'Fire-breathing terror' : 'Mindless undead',
+      loadouts: [],
+      relatedMonsters: [],
+      nextTemplate: { monsterKey: '', templateKey: '' },
+      previousTemplate: { monsterKey: '', templateKey: '' },
+      overviewElement: null,
+      encounterElement: null
+    };
+
+    if (key === 'red-dragon' || key === 'zombie') {
+      return mockData;
     }
     return null;
   }
@@ -45,13 +92,25 @@ describe('MonsterCodex Component', () => {
   let element: MonsterCodex;
 
   beforeEach(async () => {
-    element = await fixture(html`<monster-codex></monster-codex>`);
-    // Inject mocks
-    element['searchApi'] = new MockMonsterSearchApi();
-    element['apiStore'] = new MockApiMonsterStore();
+    // Create element but don't connect to DOM yet
+    element = document.createElement('monster-codex') as MonsterCodex;
+
+    // Inject mocks BEFORE connecting to DOM and triggering the task
+    element['searchApi'] = new MockMonsterSearchApi() as any;
+    element['apiStore'] = new MockApiMonsterStore() as any;
+
+    // Now connect to DOM which will trigger the task with mocked APIs
+    document.body.appendChild(element);
     await element.updateComplete;
+
     // Wait for searchTask to finish
-    await new Promise(r => setTimeout(r, 100));
+    await new Promise(r => setTimeout(r, 500));
+    await element.updateComplete;
+  });
+
+  afterEach(() => {
+    // Clean up
+    element.remove();
   });
   it('renders the main codex container', () => {
     const container = element.shadowRoot?.querySelector('.codex-container');
@@ -113,7 +172,14 @@ describe('MonsterCodex Component', () => {
     const searchInput = element.shadowRoot?.querySelector('.search-bar.desktop .search-input') as HTMLInputElement;
     searchInput.value = 'dragon';
     searchInput.dispatchEvent(new Event('input'));
+
+    // Also directly set the query to ensure the task runs
+    element['query'] = 'dragon';
+    element.requestUpdate();
+
     await new Promise(resolve => setTimeout(resolve, 1200)); // debounce is 1s
+    await element.updateComplete;
+
     const rows = element.shadowRoot?.querySelectorAll('.monster-row');
     expect(rows && rows.length).to.be.greaterThan(0);
     if (!rows || rows.length === 0) return;

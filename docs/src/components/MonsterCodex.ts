@@ -877,9 +877,10 @@ export class MonsterCodex extends LitElement {
     this.removeEventListener('search-query-changed', this.handleExternalSearch as EventListener);
   }
 
-  private handleExternalSearch(e: CustomEvent) {
-    if (e.detail?.query) {
-      this.query = e.detail.query;
+  private handleExternalSearch(e: Event) {
+    const customEvent = e as CustomEvent;
+    if (customEvent.detail?.query) {
+      this.query = customEvent.detail.query;
     }
   }
 

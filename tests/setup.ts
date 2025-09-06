@@ -12,7 +12,17 @@ vi.mock('../docs/src/utils/css-adoption.js', () => ({
 
 // Mock analytics
 vi.mock('../docs/src/utils/analytics.js', () => ({
-  trackStatblockEdit: vi.fn()
+  trackStatblockEdit: vi.fn(),
+  trackSearch: vi.fn(),
+  trackMonsterClick: vi.fn(),
+  trackForgeClick: vi.fn(),
+  trackFilterUsage: vi.fn(),
+  trackStatblockClick: vi.fn(),
+  trackDownloadClick: vi.fn(),
+  trackEmailSubscribeClick: vi.fn(),
+  trackRerollClick: vi.fn(),
+  trackEvent: vi.fn(),
+  getCurrentPageType: vi.fn().mockReturnValue('other')
 }));
 
 // Mock GrowthBook utilities
