@@ -9,7 +9,6 @@ from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import AbilityScore, Skills, StatScaling
-from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
     Monster,
@@ -133,13 +132,7 @@ class _BanditTemplate(MonsterTemplate):
         # This means we want fewer overall attacks but more damage dice that include poison
         if cr >= 6:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
-            stats = stats.apply_monster_dials(
-                MonsterDials(
-                    multiattack_modifier=-1,
-                    attack_damage_multiplier=stats.multiattack
-                    / (stats.multiattack - 1),
-                )
-            )
+            stats = stats.with_reduced_attacks(reduce_by=1, min_attacks=2)
 
         # Bandits with a Pistol also have Shortswords as a secondary attack
         # Bandits with Shortswords also have a Crossbow as a secondary attack
