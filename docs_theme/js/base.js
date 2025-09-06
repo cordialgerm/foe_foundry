@@ -25,25 +25,34 @@ function applyTopPadding() {
 
 document.addEventListener("DOMContentLoaded", function () {
     var search_term = getSearchTerm();
-    var search_modal = new bootstrap.Modal(document.getElementById('mkdocs_search_modal'));
+    var search_modal_element = document.getElementById('mkdocs_search_modal');
+    var search_modal = null;
+    if (search_modal_element) {
+        search_modal = new bootstrap.Modal(search_modal_element);
+    }
     var keyboard_modal = new bootstrap.Modal(document.getElementById('mkdocs_keyboard_modal'));
 
-    if (search_term) {
+    if (search_term && search_modal) {
         search_modal.show();
     }
 
     // make sure search input gets autofocus every time modal opens.
-    document.getElementById('mkdocs_search_modal').addEventListener('shown.bs.modal', function () {
-        document.getElementById('mkdocs-search-query').focus();
-    });
+    if (search_modal_element) {
+        search_modal_element.addEventListener('shown.bs.modal', function () {
+            document.getElementById('mkdocs-search-query').focus();
+        });
+    }
 
     // Close search modal when result is selected
     // The links get added later so listen to parent
-    document.getElementById('mkdocs-search-results').addEventListener('click', function (e) {
-        if (e.target.tagName === 'A') {
-            search_modal.hide();
-        }
-    });
+    var search_results_element = document.getElementById('mkdocs-search-results');
+    if (search_results_element) {
+        search_results_element.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A' && search_modal) {
+                search_modal.hide();
+            }
+        });
+    }
 
     // Populate keyboard modal with proper Keys
     document.querySelector('.help.shortcut kbd').innerHTML = keyCodes[shortcuts.help];
@@ -66,11 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
             case shortcuts.search:
                 e.preventDefault();
                 keyboard_modal.hide();
-                search_modal.show();
-                document.getElementById('mkdocs-search-query').focus();
+                if (search_modal) {
+                    search_modal.show();
+                    var search_query_element = document.getElementById('mkdocs-search-query');
+                    if (search_query_element) {
+                        search_query_element.focus();
+                    }
+                }
                 break;
             case shortcuts.help:
-                search_modal.hide();
+                if (search_modal) {
+                    search_modal.hide();
+                }
                 keyboard_modal.show();
                 break;
             default: break;

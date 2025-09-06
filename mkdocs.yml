@@ -20,7 +20,6 @@ hooks:
   - docs_gen/my_hooks.py
 
 plugins:
-  - search
   - gen-files:
       scripts:
         - scripts/gen_pages.py
