@@ -44,6 +44,7 @@ export interface MonsterSearchResult {
 export interface SearchSeed {
     term: string;
     description: string;
+    examples?: string[];
 }
 
 // Search API interface

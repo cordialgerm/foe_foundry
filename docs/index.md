@@ -17,7 +17,7 @@ image: img/icons/favicon.webp
 - **Build Unique Monsters Instantly**: [Generate exciting, flavorful Monsters in minutes](./generate/index.md). You're ready for that session tonight!
 - **No More Boring Monsters**: Say goodbye to bland statblocks. Foe Foundry monsters are forged from [hundreds of handcrafted powers](./powers/all.md).
 - **Flavor AND Firepower**: Our [monster library](./monsters/index.md) is full of challenging foes that hit hard and ooze flavor. Only some are *actually* oozes!
-- **Find Exactly What You Need**: Discover monsters by theme, vibe, environment, or adventure hook - even when you don't know exactly what you're looking for!
+- **Find Exactly What You Need** (Coming Soon): Discover monsters by theme, vibe, environment, or adventure hook - even when you don't know exactly what you're looking for!
 - **Create the Perfect Encounter** (Coming Soon): Instantly generate balanced encounters based on terrain, themes, and adventure prompts.
 
 ---

@@ -38,6 +38,7 @@ class SearchFacets(BaseModel):
 class SearchSeed(BaseModel):
     term: str
     description: str
+    examples: list[str] | None = None
 
 
 class MonsterSearchResult(BaseModel):

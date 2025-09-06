@@ -1,6 +1,8 @@
 import { LitElement, html, css, PropertyValues } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, state } from 'lit/decorators.js';
 import { trackEvent } from '../utils/analytics.js';
+import { MonsterSearchApi } from '../data/searchApi.js';
+import { SearchSeed } from '../data/search.js';
 
 // Tutorial copy library
 const TUTORIAL_COPY = {
@@ -13,6 +15,11 @@ const TUTORIAL_COPY = {
     "Think you can forge a nastier foe? Try it out!",
     "Forge the perfect foe with a couple clicks.",
     "Tired of boring statblocks? Forge an unforgettable foe."
+  ],
+  search: [
+    "Looking for something specific? Try searching!",
+    "Discover monsters by theme or environment!",
+    "Find the perfect foe for your adventure!"
   ]
 };
 
@@ -20,7 +27,7 @@ const TUTORIAL_COPY = {
 const STORAGE_KEY = 'ff_statblock_tutorial';
 const TUTORIAL_VERSION = 'v1_done';
 
-type TutorialTarget = 'dice' | 'anvil';
+type TutorialTarget = 'dice' | 'anvil' | 'search';
 
 interface TutorialState {
   isActive: boolean;
@@ -35,6 +42,12 @@ interface TutorialState {
 export class StatblockTutorial extends LitElement {
   @property({ type: Boolean })
   enabled: boolean = false;
+
+  @state() private searchSeeds: SearchSeed[] = [];
+  @state() private selectedSeeds: SearchSeed[] = [];
+  @state() private showSearchSection: boolean = false;
+
+  private searchApi = new MonsterSearchApi();
 
   private _tutorialState: TutorialState = {
     isActive: false,
@@ -74,6 +87,85 @@ export class StatblockTutorial extends LitElement {
       animation: pulseGlow 1.2s infinite;
     }
 
+    :host(.highlighting-search) .search-tutorial-section {
+      animation: pulseGlow 1.2s infinite;
+    }
+
+    .search-tutorial-section {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--bg-color, #1a1a1a);
+      border: 2px solid var(--tertiary-color, #c29a5b);
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-family: var(--primary-font, system-ui);
+      color: var(--fg-color, #f4f1e6);
+      max-width: 400px;
+      width: 90vw;
+      z-index: 1001;
+      pointer-events: auto;
+      display: none;
+    }
+
+    .search-tutorial-section.visible {
+      display: block;
+      animation: popIn 0.25s ease-out;
+    }
+
+    .search-tutorial-header {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .search-tutorial-description {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      opacity: 0.8;
+    }
+
+    .search-seeds-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .search-seed-button {
+      background: var(--color-surface-variant, #f5f5f5);
+      border: 1px solid var(--tertiary-color, #c29a5b);
+      border-radius: 16px;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: var(--fg-color, #f4f1e6);
+    }
+
+    .search-seed-button:hover {
+      background: var(--tertiary-color, #c29a5b);
+      transform: translateY(-1px);
+    }
+
+    .search-tutorial-close {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: none;
+      border: none;
+      color: var(--fg-color, #f4f1e6);
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 0.25rem;
+      line-height: 1;
+    }
+
     @keyframes wiggle {
       0% { transform: rotate(0deg); }
       25% { transform: rotate(5deg); }
@@ -84,6 +176,11 @@ export class StatblockTutorial extends LitElement {
     @keyframes pulseGlow {
       0%, 100% { filter: drop-shadow(0 0 0px #ffcc66); }
       50% { filter: drop-shadow(0 0 6px #ffcc66); }
+    }
+
+    @keyframes popIn {
+      from { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+      to { transform: translate(-50%, -50%) scale(1); opacity: 1; }
     }
   `;
 
@@ -99,6 +196,9 @@ export class StatblockTutorial extends LitElement {
     if (this._isCompleted()) {
       return;
     }
+
+    // Load search seeds for potential use
+    this._loadSearchSeeds();
 
     // Wait 300ms after FCP before initializing
     this._initTimeout = window.setTimeout(() => {
@@ -134,6 +234,26 @@ export class StatblockTutorial extends LitElement {
         this._cleanup();
       }
     }
+  }
+
+  private async _loadSearchSeeds(): Promise<void> {
+    try {
+      const seeds = await this.searchApi.getSearchSeeds();
+      this.searchSeeds = seeds;
+      // Select 3 random seeds for tutorial display
+      this._selectRandomSeeds();
+    } catch (error) {
+      console.error('Failed to load search seeds:', error);
+      this.searchSeeds = [];
+    }
+  }
+
+  private _selectRandomSeeds(): void {
+    if (this.searchSeeds.length === 0) return;
+    
+    // Shuffle and take first 3
+    const shuffled = [...this.searchSeeds].sort(() => Math.random() - 0.5);
+    this.selectedSeeds = shuffled.slice(0, 3);
   }
 
   private _isCompleted(): boolean {
@@ -263,6 +383,15 @@ export class StatblockTutorial extends LitElement {
   }
 
   private _showTutorialForButtons(statblock: Element, buttons: Element[]): void {
+    // Check if we should show search tutorial occasionally (20% chance)
+    const shouldShowSearch = Math.random() < 0.2 && this.selectedSeeds.length > 0;
+    
+    if (shouldShowSearch) {
+      this._showSearchTutorial();
+      this._startCycleTimer();
+      return;
+    }
+    
     // Cycle through available buttons
     const targetButton = buttons[this._currentTargetIndex % buttons.length];
     const target = targetButton.tagName.toLowerCase() === 'reroll-button' ? 'dice' : 'anvil';
@@ -281,6 +410,36 @@ export class StatblockTutorial extends LitElement {
     };
 
     this._showTutorialBubble(targetButton, target, randomLine);
+    this.requestUpdate();
+  }
+
+  private _showSearchTutorial(): void {
+    // Hide any existing tutorial bubbles
+    this._removeTutorialBubble();
+    
+    // Set tutorial state for search
+    const copyArray = TUTORIAL_COPY.search;
+    const randomLine = copyArray[Math.floor(Math.random() * copyArray.length)];
+    
+    this._tutorialState = {
+      isActive: true,
+      currentStatblock: null,
+      currentTarget: 'search',
+      currentLine: randomLine,
+      showTime: Date.now(),
+      bubbleElement: null
+    };
+
+    // Show search tutorial section
+    this.showSearchSection = true;
+    this.classList.add('highlighting-search');
+    
+    // Track analytics
+    this._trackAnalytics('tutorial_search_shown', {
+      line: randomLine,
+      seeds_available: this.selectedSeeds.length
+    }, true);
+    
     this.requestUpdate();
   }
 
@@ -751,10 +910,35 @@ export class StatblockTutorial extends LitElement {
     this._currentButton = undefined;
 
     // Remove highlighting classes
-    this.classList.remove('highlighting-dice', 'highlighting-anvil');
+    this.classList.remove('highlighting-dice', 'highlighting-anvil', 'highlighting-search');
+    
+    // Hide search section
+    this.showSearchSection = false;
 
     // Clear cycle timer
     this._clearCycleTimer();
+  }
+
+  private _handleSearchSeedClick(seedTerm: string): void {
+    const timeElapsed = Date.now() - this._tutorialState.showTime;
+
+    this._trackAnalytics('tutorial_search_seed_click', {
+      seed: seedTerm,
+      line: this._tutorialState.currentLine,
+      ms_since_show: timeElapsed
+    });
+
+    // Navigate to search page or trigger search
+    window.location.href = `/powers/all/?q=${encodeURIComponent(seedTerm)}`;
+    
+    this._completeTutorial('search');
+  }
+
+  private _closeSearchTutorial(): void {
+    this.showSearchSection = false;
+    this.classList.remove('highlighting-search');
+    this._tutorialState.isActive = false;
+    this.requestUpdate();
   }
 
   private _handleBubbleClick(target: TutorialTarget): void {
@@ -816,6 +1000,10 @@ export class StatblockTutorial extends LitElement {
       styleElement.remove();
     }
 
+    // Reset search tutorial state
+    this.showSearchSection = false;
+    this.classList.remove('highlighting-search');
+
     this._tutorialState = {
       isActive: false,
       currentStatblock: null,
@@ -837,7 +1025,29 @@ export class StatblockTutorial extends LitElement {
   }
 
   render() {
-    return html`<!-- StatblockTutorial renders tutorial bubbles via DOM manipulation -->`;
+    return html`
+      <!-- StatblockTutorial renders tutorial bubbles via DOM manipulation -->
+      ${this.showSearchSection ? html`
+        <div class="search-tutorial-section visible">
+          <button class="search-tutorial-close" @click=${this._closeSearchTutorial} aria-label="Close">×</button>
+          <div class="search-tutorial-header">Try It Out</div>
+          <div class="search-tutorial-description">
+            ${this._tutorialState.currentLine}
+          </div>
+          <div class="search-seeds-container">
+            ${this.selectedSeeds.map(seed => html`
+              <button 
+                class="search-seed-button"
+                @click=${() => this._handleSearchSeedClick(seed.term)}
+                title="${seed.description}"
+              >
+                ${seed.term}
+              </button>
+            `)}
+          </div>
+        </div>
+      ` : ''}
+    `;
   }
 }
 

@@ -4,60 +4,72 @@
 search_seeds:
   - term: "undead horrors"
     description: "Skeletal champions, zombies, and other terrifying undead creatures"
+    examples: ["Skeletal Wraith", "Zombie Horde", "Death Knight", "Lich Queen"]
     
   - term: "criminal underworld"
     description: "Assassins, thugs, and bandit captains from the shadows"
+    examples: ["Shadow Broker", "Cutthroat Captain", "Guild Assassin", "Crime Boss"]
     
   - term: "frozen wastes"
     description: "Ice-bound creatures and frost giants from the coldest realms"
-    
-  # - term: "desert raiders"
-  #   description: "No good search results currently available"
-    
-  # - term: "swamp things"
-  #   description: "No good search results currently available"
+    examples: ["Frost Giant", "Ice Elemental", "Winter Wolf", "Frozen Lich"]
     
   - term: "fire-cursed fiends"
     description: "Demonic cultists and fire-touched undead"
+    examples: ["Infernal Cultist", "Fire Demon", "Burning Skeleton", "Flame Wraith"]
     
   - term: "shadow assassins"
     description: "Stealthy killers that strike from the darkness"
+    examples: ["Shadow Stalker", "Dark Blade", "Void Assassin", "Night Terror"]
     
   - term: "beasts of burden"
     description: "Powerful creatures used for labor and war"
+    examples: ["War Elephant", "Siege Beast", "Pack Mammoth", "Battle Ox"]
     
   - term: "ancient constructs"
     description: "Stone golems, gorgons, and other magical constructions"
+    examples: ["Stone Guardian", "Iron Golem", "Crystal Automaton", "Runic Sentinel"]
     
   - term: "feral giants"
     description: "Savage ogres and monstrous giant-kin"
+    examples: ["Hill Giant", "Ogre Chieftain", "Cave Troll", "Savage Ettin"]
     
   - term: "otherworldly aberrations"
     description: "Strange creatures from beyond the material plane"
+    examples: ["Mind Flayer", "Beholder", "Void Crawler", "Eldritch Horror"]
     
   - term: "arcane tricksters"
     description: "Magical spellcasters with cunning abilities"
+    examples: ["Spell Thief", "Mage Trickster", "Arcane Rogue", "Mystic Deceiver"]
     
   - term: "ocean terrors"
     description: "Aquatic monsters from the deepest waters"
+    examples: ["Kraken", "Sea Serpent", "Deep One", "Leviathan"]
     
   - term: "fallen celestials"
     description: "Corrupted holy beings and dark priests"
+    examples: ["Fallen Angel", "Dark Priest", "Corrupted Paladin", "Shadow Cleric"]
     
   - term: "goblin warbands"
     description: "Organized groups of goblinoid raiders"
+    examples: ["Goblin Warchief", "Hobgoblin Captain", "Bugbear Brute", "Orc Raider"]
     
   - term: "oozes and slimes"
     description: "Gelatinous creatures and shapeshifting mimics"
+    examples: ["Gelatinous Cube", "Mimic", "Black Pudding", "Acidic Ooze"]
     
   - term: "feral werewolves"
     description: "Savage lycanthropes and dire wolves"
+    examples: ["Werewolf Alpha", "Dire Wolf", "Lycanthrope", "Beast Lord"]
     
   - term: "storm bringers"
     description: "Elemental creatures that command weather and lightning"
+    examples: ["Storm Giant", "Lightning Elemental", "Thunder Beast", "Wind Lord"]
     
   - term: "underground horrors"
     description: "Dungeon guardians and subterranean monsters"
+    examples: ["Cave Lurker", "Underground Dragon", "Depths Stalker", "Tunnel Terror"]
     
   - term: "fey tricksters"
     description: "Mischievous creatures from the feywild"
+    examples: ["Pixie Prankster", "Satyr Trickster", "Dryad Deceiver", "Fey Court Jester"]

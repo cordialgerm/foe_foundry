@@ -1,18 +1,27 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, state } from 'lit/decorators.js';
+import { customElement, state, property } from 'lit/decorators.js';
 import { SearchSeed } from '../data/search.js';
 import { MonsterSearchApi } from '../data/searchApi.js';
 import { Task } from '@lit/task';
 
 @customElement('monster-search-seeds')
 export class MonsterSearchSeeds extends LitElement {
+  @property({ type: Number }) maxSeeds?: number;
   @state() private selectedSeed: string | null = null;
 
   private searchApi = new MonsterSearchApi();
 
   private seedsTask = new Task(this, async () => {
-    return await this.searchApi.getSearchSeeds();
-  }, () => []);
+    const allSeeds = await this.searchApi.getSearchSeeds();
+    
+    // If maxSeeds is specified, return random selection
+    if (this.maxSeeds && this.maxSeeds < allSeeds.length) {
+      const shuffled = [...allSeeds].sort(() => Math.random() - 0.5);
+      return shuffled.slice(0, this.maxSeeds);
+    }
+    
+    return allSeeds;
+  }, () => [this.maxSeeds]);
 
   static styles = css`
     :host {
