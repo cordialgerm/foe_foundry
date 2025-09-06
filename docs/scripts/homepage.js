@@ -148,7 +148,7 @@ function onSwiperClick(swiper, event) {
             // Try to extract the template key from the URL
             // Example URL: /monsters/{template_key}/
             const match = url.match(/\/monsters\/([^/]+)\//);
-            if (match && typeof trackMonsterClick === 'function') {
+            if (match && typeof window.foeFoundryAnalytics?.trackMonsterClick === 'function') {
                 const templateKey = match[1];
                 window.foeFoundryAnalytics.trackMonsterClick(templateKey, 'template', 'carousel-legacy');
             }
