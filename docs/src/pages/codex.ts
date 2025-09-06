@@ -1,5 +1,8 @@
 // Codex page interactivity - tab navigation and URL handling
 
+// Export to make this file a module
+export {};
+
 // Initialize codex functionality when on the codex page
 if (window.location.pathname === '/codex' || window.location.pathname === '/codex/') {
     console.log('Loaded codex page');

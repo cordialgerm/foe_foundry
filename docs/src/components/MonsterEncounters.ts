@@ -133,8 +133,8 @@ export class MonsterEncounters extends LitElement {
     }
   `;
 
-  updated() {
-    super.updated();
+  updated(changedProperties: any) {
+    super.updated(changedProperties);
     
     // Handle encounter content
     if (this.encounterRef.value && this.encounterTask.value?.encounterElement) {

@@ -8,6 +8,8 @@ import '../../docs/src/components/MonsterCodex.js';
 
 // Mock MonsterSearchApi and ApiMonsterStore
 class MockMonsterSearchApi {
+  private baseUrl = 'https://test.foefoundry.com';
+  
   async getFacets() {
     return {
       creatureTypes: [
@@ -30,12 +32,57 @@ class MockMonsterSearchApi {
 }
 
 class MockApiMonsterStore {
+  async getNewMonsterTemplates(limit: number = 12) {
+    return [];
+  }
+  
+  async getMonsterTemplatesByFamily(familyKey: string) {
+    return [];
+  }
+  
+  async searchMonsterTemplates(query: string, limit: number = 12) {
+    return [];
+  }
+  
+  async getSimilarMonsters(key: string) {
+    return [];
+  }
+  
+  async getRandomStatblock() {
+    const element = document.createElement('div');
+    element.innerHTML = '<div class="stat-block">Mock Statblock</div>';
+    return element.firstElementChild as HTMLElement;
+  }
+  
+  async getStatblock(request: any, change: any) {
+    const element = document.createElement('div');
+    element.innerHTML = '<div class="stat-block">Mock Statblock</div>';
+    return element.firstElementChild as HTMLElement;
+  }
+  
   async getMonster(key: string) {
-    if (key === 'red-dragon') {
-      return { key: 'red-dragon', name: 'Red Dragon', cr: 17, creature_type: 'Dragon', tag_line: 'Fire-breathing terror', background_image: '', monsterFamilies: ['Chromatic'] };
-    }
-    if (key === 'zombie') {
-      return { key: 'zombie', name: 'Zombie', cr: 1, creature_type: 'Undead', tag_line: 'Mindless undead', background_image: '', monsterFamilies: ['Corpse'] };
+    const mockData = {
+      key,
+      name: key === 'red-dragon' ? 'Red Dragon' : 'Zombie',
+      image: '',
+      backgroundImage: '',
+      creatureType: key === 'red-dragon' ? 'Dragon' : 'Undead',
+      monsterTemplateName: key === 'red-dragon' ? 'Dragon Template' : 'Undead Template',
+      monsterTemplate: key === 'red-dragon' ? 'dragon' : 'undead',
+      monsterFamilies: key === 'red-dragon' ? ['Chromatic'] : ['Corpse'],
+      size: 'Large',
+      cr: key === 'red-dragon' ? '17' : '1',
+      tagLine: key === 'red-dragon' ? 'Fire-breathing terror' : 'Mindless undead',
+      loadouts: [],
+      relatedMonsters: [],
+      nextTemplate: { monsterKey: '', templateKey: '' },
+      previousTemplate: { monsterKey: '', templateKey: '' },
+      overviewElement: null,
+      encounterElement: null
+    };
+
+    if (key === 'red-dragon' || key === 'zombie') {
+      return mockData;
     }
     return null;
   }
@@ -47,8 +94,8 @@ describe('MonsterCodex Component', () => {
   beforeEach(async () => {
     element = await fixture(html`<monster-codex></monster-codex>`);
     // Inject mocks
-    element['searchApi'] = new MockMonsterSearchApi();
-    element['apiStore'] = new MockApiMonsterStore();
+    element['searchApi'] = new MockMonsterSearchApi() as any;
+    element['apiStore'] = new MockApiMonsterStore() as any;
     await element.updateComplete;
     // Wait for searchTask to finish
     await new Promise(r => setTimeout(r, 100));

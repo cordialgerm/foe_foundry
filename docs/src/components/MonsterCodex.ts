@@ -861,18 +861,19 @@ export class MonsterCodex extends LitElement {
     }
 
     // Listen for external search events
-    this.addEventListener('search-query-changed', this.handleExternalSearch);
+    this.addEventListener('search-query-changed', this.handleExternalSearch as EventListener);
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
     window.removeEventListener('resize', this.handleResize);
-    this.removeEventListener('search-query-changed', this.handleExternalSearch);
+    this.removeEventListener('search-query-changed', this.handleExternalSearch as EventListener);
   }
 
-  private handleExternalSearch(e: CustomEvent) {
-    if (e.detail?.query) {
-      this.query = e.detail.query;
+  private handleExternalSearch(e: Event) {
+    const customEvent = e as CustomEvent;
+    if (customEvent.detail?.query) {
+      this.query = customEvent.detail.query;
     }
   }
 
