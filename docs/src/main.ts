@@ -18,3 +18,4 @@ import './components/MonsterCardPreview';
 import './components/StatblockTutorial';
 import './pages/generate';
 import './pages/tutorial';
+import './pages/codex';

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from typing import Annotated
+import collections
 
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
@@ -17,7 +18,73 @@ class MonsterSearchRequest(BaseModel):
     query: str
     limit: int | None = None
     target_cr: float | None = None
+    min_cr: float | None = None
+    max_cr: float | None = None
     creature_types: list[str] | None = None
+
+
+class SearchFacet(BaseModel):
+    value: str
+    count: int
+
+
+class SearchFacets(BaseModel):
+    creatureTypes: list[SearchFacet]
+    crRange: dict[str, float]  # {"min": float, "max": float}
+
+
+class MonsterSearchResult(BaseModel):
+    monsters: list[MonsterInfoModel]
+    facets: SearchFacets
+    total: int | None = None
+
+
+def _calculate_facets(monsters: list[MonsterInfoModel]) -> SearchFacets:
+    """Calculate facets from a list of monsters"""
+    # Count creature types
+    creature_type_counts = collections.Counter(m.creature_type for m in monsters if m.creature_type)
+    
+    # Create creature type facets, sorted by count descending
+    creature_type_facets = [
+        SearchFacet(value=creature_type, count=count)
+        for creature_type, count in creature_type_counts.most_common()
+    ]
+    
+    # Calculate CR range
+    crs = [m.cr for m in monsters]
+    cr_range = {"min": min(crs) if crs else 0.0, "max": max(crs) if crs else 30.0}
+    
+    return SearchFacets(
+        creatureTypes=creature_type_facets,
+        crRange=cr_range
+    )
+
+
+def _get_all_monsters() -> list[MonsterInfoModel]:
+    """Get all monsters as MonsterInfoModel objects"""
+    all_monsters = Monsters.one_of_each_monster
+    return [
+        MonsterInfoModel(
+            key=monster.key,
+            name=monster.name,
+            cr=monster.cr,
+            template=monster.template_key,
+            background_image=monster.background_image,
+            creature_type=monster.creature_type,
+            tag_line=monster.tag_line,
+        )
+        for monster in all_monsters
+    ]
+
+
+@router.get("/facets")
+def get_search_facets() -> SearchFacets:
+    """
+    Returns available search facets with counts across the entire monster database.
+    Used for initial page load to populate filter options.
+    """
+    all_monsters = _get_all_monsters()
+    return _calculate_facets(all_monsters)
 
 
 @router.get("/monsters")
@@ -60,7 +127,7 @@ def get_search_monsters(
 @router.post("/monsters")
 def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel]:
     """
-    Returns a list of top N monsters that match the search criteria
+    Returns a list of top N monsters that match the search criteria (backward compatibility)
     """
     limit = request.limit if request.limit is not None else 5
 
@@ -82,14 +149,22 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
                 # Skip invalid creature types
                 continue
 
+    # Use min_cr/max_cr if provided, otherwise fall back to target_cr
+    search_kwargs = {
+        "search_query": request.query,
+        "limit": limit,
+        "creature_types": creature_types,
+        "max_hops": 4,
+    }
+    
+    if request.min_cr is not None or request.max_cr is not None:
+        search_kwargs["min_cr"] = request.min_cr
+        search_kwargs["max_cr"] = request.max_cr
+    else:
+        search_kwargs["target_cr"] = request.target_cr
+
     results = []
-    for search_result in search_monsters(
-        search_query=request.query,
-        limit=limit,
-        target_cr=request.target_cr,
-        creature_types=creature_types,
-        max_hops=4,
-    ):
+    for search_result in search_monsters(**search_kwargs):
         monster_key = search_result.monster_key
         if not monster_key:
             continue
@@ -110,3 +185,74 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
             )
         )
     return results
+
+
+@router.post("/monsters/enhanced")
+def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearchResult:
+    """
+    Enhanced search endpoint that returns monsters with facets based on search results
+    """
+    limit = request.limit if request.limit is not None else 50
+
+    # Validate limit parameter
+    if limit <= 0:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid limit value: {limit}. Limit must be greater than 0.",
+        )
+
+    # Parse creature types if provided
+    creature_types = None
+    if request.creature_types:
+        creature_types = set()
+        for ct_str in request.creature_types:
+            try:
+                creature_types.add(CreatureType.parse(ct_str))
+            except ValueError:
+                # Skip invalid creature types
+                continue
+
+    # Use min_cr/max_cr if provided, otherwise fall back to target_cr
+    search_kwargs = {
+        "search_query": request.query,
+        "limit": limit,
+        "creature_types": creature_types,
+        "max_hops": 4,
+    }
+    
+    if request.min_cr is not None or request.max_cr is not None:
+        search_kwargs["min_cr"] = request.min_cr
+        search_kwargs["max_cr"] = request.max_cr
+    else:
+        search_kwargs["target_cr"] = request.target_cr
+
+    results = []
+    for search_result in search_monsters(**search_kwargs):
+        monster_key = search_result.monster_key
+        if not monster_key:
+            continue
+
+        monster = Monsters.lookup.get(monster_key)
+        if not monster:
+            continue
+
+        results.append(
+            MonsterInfoModel(
+                key=monster.key,
+                name=monster.name,
+                cr=monster.cr,
+                template=monster.template_key,
+                background_image=monster.background_image,
+                creature_type=monster.creature_type,
+                tag_line=monster.tag_line,
+            )
+        )
+    
+    # Calculate facets based on search results
+    facets = _calculate_facets(results)
+    
+    return MonsterSearchResult(
+        monsters=results,
+        facets=facets,
+        total=len(results)
+    )

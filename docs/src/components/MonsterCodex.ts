@@ -1,9 +1,10 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, state } from 'lit/decorators.js';
+import { customElement, state, property } from 'lit/decorators.js';
 import { MonsterInfo, MonsterSearchRequest, SearchFacets, MonsterSearchResult } from '../data/search.js';
 import { Monster } from '../data/monster.js';
 import { MonsterSearchApi } from '../data/searchApi.js';
 import { ApiMonsterStore } from '../data/api.js';
+import { trackSearch, trackMonsterClick, trackForgeClick, trackStatblockClick, trackFilterUsage } from '../utils/analytics.js';
 import './MonsterCardPreview.js';
 import './MonsterSimilar.js';
 import './MonsterLore.js';
@@ -13,6 +14,7 @@ import { Task } from '@lit/task';
 
 @customElement('monster-codex')
 export class MonsterCodex extends LitElement {
+  @property({ attribute: 'initial-query' }) initialQuery = '';
   @state() private query = '';
   @state() private selectedCreatureTypes: string[] = [];
   @state() private minCr?: number;
@@ -47,6 +49,12 @@ export class MonsterCodex extends LitElement {
         maxCr
       };
       const results = await this.searchApi.searchMonsters(searchRequest);
+
+      // Track search analytics if there's a query
+      if (query) {
+        trackSearch(query, results.total || 0, 'search');
+      }
+
       return results;
     }
   }, () => {
@@ -853,11 +861,48 @@ export class MonsterCodex extends LitElement {
     // Listen for window resize to handle mobile/desktop transitions
     this.handleResize = this.handleResize.bind(this);
     window.addEventListener('resize', this.handleResize);
+
+    // Set initial query from attribute if provided
+    if (this.initialQuery) {
+      this.query = this.initialQuery;
+    }
+
+    // Listen for external search events
+    this.addEventListener('search-query-changed', this.handleExternalSearch as EventListener);
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
     window.removeEventListener('resize', this.handleResize);
+    this.removeEventListener('search-query-changed', this.handleExternalSearch as EventListener);
+  }
+
+  private handleExternalSearch(e: Event) {
+    const customEvent = e as CustomEvent;
+    if (customEvent.detail?.query) {
+      this.query = customEvent.detail.query;
+    }
+  }
+
+  // Method to programmatically set search query (for external calls)
+  public setSearchQuery(query: string) {
+    this.query = query;
+    this.dispatchSearchEvent();
+  }
+
+  private dispatchSearchEvent() {
+    // Dispatch event when search state changes for URL parameter updates
+    const event = new CustomEvent('monster-search-changed', {
+      detail: {
+        query: this.query,
+        creatureTypes: this.selectedCreatureTypes,
+        minCr: this.minCr,
+        maxCr: this.maxCr
+      },
+      bubbles: true,
+      composed: true
+    });
+    this.dispatchEvent(event);
   }
 
   private handleResize() {
@@ -1223,15 +1268,19 @@ export class MonsterCodex extends LitElement {
     }
     this.searchDebounceTimer = window.setTimeout(() => {
       this.query = value;
+      this.dispatchSearchEvent();
     }, 1000);
   }
 
   private toggleCreatureType(type: string) {
     if (this.selectedCreatureTypes?.includes(type)) {
       this.selectedCreatureTypes = this.selectedCreatureTypes.filter(t => t !== type);
+      trackFilterUsage('creature_type', `removed_${type}`, 'search');
     } else {
       this.selectedCreatureTypes = [...this.selectedCreatureTypes, type];
+      trackFilterUsage('creature_type', `added_${type}`, 'search');
     }
+    this.dispatchSearchEvent();
   }
 
   private handleMinCrChange(e: Event) {
@@ -1249,6 +1298,8 @@ export class MonsterCodex extends LitElement {
     this.crDebounceTimer = window.setTimeout(() => {
       this.minCr = value === 0 ? undefined : value;
       this.tempMinCr = undefined;
+      trackFilterUsage('min_cr', value.toString(), 'search');
+      this.dispatchSearchEvent();
     }, 300);
   }
 
@@ -1267,10 +1318,13 @@ export class MonsterCodex extends LitElement {
     this.crDebounceTimer = window.setTimeout(() => {
       this.maxCr = value === 30 ? undefined : value;
       this.tempMaxCr = undefined;
+      trackFilterUsage('max_cr', value.toString(), 'search');
+      this.dispatchSearchEvent();
     }, 300);
   }
 
   private setGroupBy(groupBy: 'family' | 'challenge' | 'name' | 'relevance') {
+    trackFilterUsage('group_by', groupBy, 'search');
     this.groupBy = groupBy;
     this.requestUpdate();
   }
@@ -1344,12 +1398,25 @@ export class MonsterCodex extends LitElement {
   private handleMonsterSearchCardClick(e: Event, key: string) {
     // Prevent navigation and toggle drawer/show statblock
     e.preventDefault();
+
+    // Track analytics for search result click
+    trackMonsterClick(
+      key,
+      'monster',
+      'search-result',
+      this.query
+    );
+
     this.toggleMonsterDrawer(key);
   }
 
   private handleStatblockButtonClick(e: Event, key: string) {
     e.preventDefault();
     e.stopPropagation();
+
+    // Track analytics for statblock click
+    trackStatblockClick(key, 'search');
+
     // Same behavior as clicking the card - toggle drawer/show statblock
     this.toggleMonsterDrawer(key);
   }
@@ -1357,6 +1424,10 @@ export class MonsterCodex extends LitElement {
   private handleForgeButtonClick(e: Event, key: string) {
     e.preventDefault();
     e.stopPropagation();
+
+    // Track analytics for forge click
+    trackForgeClick(key, 'search');
+
     // Navigate to the generate page with this monster
     window.location.href = `/generate/?monster=${key}`;
   }
