@@ -1,0 +1,16 @@
+/* Import Swiper CSS */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/autoplay';
+@import 'swiper/css/keyboard';
+@import 'swiper/css/parallax';
+
+/* Ensure horizontal layout */
+.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.swiper-slide {
+  flex-shrink: 0 !important;
+}

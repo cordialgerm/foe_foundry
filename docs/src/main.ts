@@ -7,6 +7,7 @@ import './components/MonsterCard';
 import './components/MonsterBuilder';
 import './components/MonsterStatblock';
 import './components/MonsterCodex';
+import './components/MonsterCarousel';
 import './components/RerollButton';
 import './components/ForgeButton';
 import './components/GeneratorShowcase';

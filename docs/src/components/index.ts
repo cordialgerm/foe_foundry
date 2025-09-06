@@ -11,3 +11,4 @@ export { SvgIconButton } from './SvgIconButton.js';
 export { EmailSubscribeCallout } from './EmailSubscribeCallout.js';
 export { StatblockTutorial } from './StatblockTutorial.js';
 export { MonsterCodex } from './MonsterCodex.js';
+export { MonsterCarousel } from './MonsterCarousel.js';
