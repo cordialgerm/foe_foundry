@@ -1,0 +1,102 @@
+# Search seeds for inspiring monster discovery
+# Each seed should return interesting monsters when searched
+search_seeds:
+  - query: "undead horrors"
+    display_name: "Undead Horrors"
+    description: "Risen dead and spectral beings that defy death"
+    
+  - query: "criminal underworld" 
+    display_name: "Criminal Underworld"
+    description: "Rogues, thieves, and shadowy figures from dark alleys"
+    
+  - query: "frost giant"
+    display_name: "Frozen Wastes"
+    description: "Ice-bound creatures from the coldest reaches"
+    
+  # - query: "desert raiders"
+  #   display_name: "Desert Raiders"
+  #   description: "Nomadic hunters from scorching sands"
+  #   # No good desert/raider results found
+    
+  # - query: "swamp things"
+  #   display_name: "Swamp Things"
+  #   description: "Bog dwellers and murky marsh monsters"
+  #   # No swamp-specific monsters found
+    
+  # - query: "fire-cursed fiends"
+  #   display_name: "Fire-Cursed Fiends"
+  #   description: "Creatures wreathed in flame and brimstone"
+  #   # No fire fiends found
+    
+  - query: "assassin"
+    display_name: "Shadow Assassins"
+    description: "Silent killers that strike from darkness"
+    
+  - query: "owlbear"
+    display_name: "Beasts of Burden"
+    description: "Mighty creatures used for labor and war"
+    
+  - query: "ancient constructs"
+    display_name: "Ancient Constructs"
+    description: "Mechanical guardians from forgotten ages"
+    
+  - query: "giant"
+    display_name: "Feral Giants"
+    description: "Massive beings driven by primal rage"
+    
+  # - query: "otherworldly aberrations"
+  #   display_name: "Otherworldly Aberrations"
+  #   description: "Strange beings from beyond reality"
+  #   # No aberrations found in search results
+    
+  # - query: "arcane tricksters"
+  #   display_name: "Arcane Tricksters"
+  #   description: "Magical rogues and cunning spellcasters"
+  #   # No specific arcane trickster results
+    
+  # - query: "ocean terrors"
+  #   display_name: "Ocean Terrors"
+  #   description: "Monsters from the crushing depths"
+  #   # No ocean monsters found
+    
+  # - query: "fallen celestials"
+  #   display_name: "Fallen Celestials"
+  #   description: "Angels and divine beings consumed by corruption"
+  #   # No celestials found
+    
+  - query: "goblin"
+    display_name: "Goblin Warbands"
+    description: "Small but vicious tribal raiders"
+    
+  - query: "wolf"
+    display_name: "Wolf Packs"
+    description: "Savage predators that hunt in coordination"
+    
+  - query: "priest"
+    display_name: "Divine Servants"
+    description: "Faithful instruments of the gods"
+    
+  # - query: "oozes and slimes"
+  #   display_name: "Oozes and Slimes"
+  #   description: "Gelatinous horrors that dissolve all they touch"
+  #   # No ooze results found
+    
+  # - query: "feral werewolves"
+  #   display_name: "Feral Werewolves"
+  #   description: "Lycanthropes lost to their bestial nature"
+  #   # No werewolf results found
+    
+  # - query: "storm bringers"
+  #   display_name: "Storm Bringers"
+  #   description: "Elemental beings that command wind and lightning"
+  #   # No storm/elemental results found
+    
+  # - query: "underground horrors"
+  #   display_name: "Underground Horrors" 
+  #   description: "Creatures that lurk in caves and tunnels"
+  #   # No underground-specific monsters found
+    
+  # - query: "fey tricksters"
+  #   display_name: "Fey Tricksters"
+  #   description: "Whimsical yet dangerous beings from the feywild"
+  #   # No fey creatures found

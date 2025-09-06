@@ -13,6 +13,7 @@ import './components/ForgeButton';
 import './components/GeneratorShowcase';
 import './components/SvgIconButton';
 import './components/EmailSubscribeCallout';
+import './components/SearchSeedsCallout';
 import './components/MonsterCodex';
 import './components/MonsterCardPreview';
 import './components/StatblockTutorial';

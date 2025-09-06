@@ -47,6 +47,7 @@ class LinkPreprocessor(Preprocessor):
     BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
     EMBED_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
     NEWSLETTER_RE = re.compile(r"\[\[\@(?P<text>.+?)\]\]")
+    SEARCH_SEEDS_RE = re.compile(r"\[\[\#(?P<search_text>.+?)\]\]")
     HEADER_RE = re.compile(r"^(?P<hashes>#{1,6})\s+(?P<text>.+)")
 
     def __init__(
@@ -72,6 +73,7 @@ class LinkPreprocessor(Preprocessor):
 
             new_line = self.EMBED_RE.sub(self.replace_embed, line)
             new_line = self.NEWSLETTER_RE.sub(self.replace_newsletter, new_line)
+            new_line = self.SEARCH_SEEDS_RE.sub(self.replace_search_seeds, new_line)
             new_line = self.BUTTON_RE.sub(self.replace_button, new_line)
             new_line = self.LINK_BOLD_RE.sub(self.replace_link, new_line)
             new_line = self.LINK_SPECIAL_RE.sub(self.replace_link_required, new_line)
@@ -157,6 +159,15 @@ class LinkPreprocessor(Preprocessor):
 
         # Use the new EmailSubscribeCallout custom element instead of Jinja template
         return f'<email-subscribe-callout cta="{text}"></email-subscribe-callout>'
+
+    def replace_search_seeds(self, match: re.Match):
+        if match.group("search_text"):
+            text = match.group("search_text")
+        else:
+            raise ValueError("No text found in match")
+
+        # Create a search seeds component
+        return f'<search-seeds-callout title="{text}"></search-seeds-callout>'
 
 
 class MonsterSpecPreprocessor(Preprocessor):

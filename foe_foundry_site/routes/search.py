@@ -2,7 +2,9 @@ from __future__ import annotations
 
 from typing import Annotated
 import collections
+from pathlib import Path
 
+import yaml
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
@@ -31,6 +33,12 @@ class SearchFacet(BaseModel):
 class SearchFacets(BaseModel):
     creatureTypes: list[SearchFacet]
     crRange: dict[str, float]  # {"min": float, "max": float}
+
+
+class SearchSeed(BaseModel):
+    query: str
+    display_name: str
+    description: str
 
 
 class MonsterSearchResult(BaseModel):
@@ -256,3 +264,35 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
         facets=facets,
         total=len(results)
     )
+
+
+@router.get("/seeds")
+def get_search_seeds() -> list[SearchSeed]:
+    """
+    Returns search seeds to inspire monster discovery.
+    These are curated search terms that return interesting monsters.
+    """
+    seeds_file = Path(__file__).parent.parent.parent / "data" / "search_seeds.yaml"
+    
+    if not seeds_file.exists():
+        return []
+    
+    try:
+        with seeds_file.open("r") as f:
+            data = yaml.safe_load(f)
+        
+        if not data or "search_seeds" not in data:
+            return []
+        
+        seeds = []
+        for seed_data in data["search_seeds"]:
+            seeds.append(SearchSeed(
+                query=seed_data["query"],
+                display_name=seed_data["display_name"],
+                description=seed_data["description"]
+            ))
+        
+        return seeds
+    except Exception as e:
+        # Log the error but don't fail completely
+        return []
