@@ -175,6 +175,8 @@ def search_entities_with_graph_expansion(
 def search_monsters(
     search_query: str,
     target_cr: float | None = None,
+    min_cr: float | None = None,
+    max_cr: float | None = None,
     creature_types: set[CreatureType] | None = None,
     limit: int = 10,
     max_hops: int = 3,
@@ -185,22 +187,31 @@ def search_monsters(
         if node["type"] != "FF_MON":
             return False
 
-        if target_cr is not None:
-            cr: float | None = node.get("cr")
-            if cr is None:
+        cr: float | None = node.get("cr")
+        if cr is None:
+            return False
+
+        # Handle CR filtering with precedence: min_cr/max_cr over target_cr
+        if min_cr is not None or max_cr is not None:
+            # Use explicit min/max CR if provided
+            effective_min_cr = min_cr if min_cr is not None else 0.0
+            effective_max_cr = max_cr if max_cr is not None else float('inf')
+            
+            if not (effective_min_cr <= cr <= effective_max_cr):
                 return False
-
+        elif target_cr is not None:
+            # Fall back to target_cr logic for backward compatibility
             if target_cr < 1:
-                min_cr = 0
-                max_cr = 1
+                effective_min_cr = 0
+                effective_max_cr = 1
             elif target_cr < 5:
-                min_cr = target_cr - 1
-                max_cr = target_cr + 1
+                effective_min_cr = target_cr - 1
+                effective_max_cr = target_cr + 1
             else:
-                min_cr = 0.75 * target_cr
-                max_cr = 1.25 * target_cr
+                effective_min_cr = 0.75 * target_cr
+                effective_max_cr = 1.25 * target_cr
 
-            if not (min_cr <= cr <= max_cr):
+            if not (effective_min_cr <= cr <= effective_max_cr):
                 return False
 
         node_creature_type = node.get("creature_type")

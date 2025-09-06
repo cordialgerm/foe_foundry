@@ -26,7 +26,8 @@ def _get_monster_template(template_key: str) -> MonsterTemplateInfoModel | None:
     Helper function to get the template information for a monster
     """
     homepage_data = load_homepage_data()
-    homepage_templates = {m.key: m for m in homepage_data.monsters}
+    # Create lookup by template key, not monster key
+    homepage_templates = {m.template: m for m in homepage_data.monsters}
     # Find the template object to get the proper name
     template_obj = homepage_templates.get(template_key)
     if template_obj is None:
