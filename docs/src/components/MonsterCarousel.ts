@@ -597,7 +597,7 @@ export class MonsterCarousel extends LitElement {
         spaceBetween: 16,
         initialSlide: 1,
         centeredSlides: true,
-        //createElements: true, // This creates the navigation buttons automatically - but it didn't seem to work properly
+        createElements: true, // This creates the navigation buttons automatically
         grabCursor: true,
         direction: 'horizontal', // Explicitly set horizontal direction
         keyboard: {
