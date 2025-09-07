@@ -81,64 +81,6 @@
     padding: 0 1rem;
 }
 
-.search-input-container {
-    display: flex;
-    gap: 0.5rem;
-    align-items: stretch;
-}
-
-.codex-search-input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    background: var(--muted-color);
-    color: var(--fg-color);
-    font-size: 1rem;
-    font-family: var(--primary-font);
-    transition: all 0.3s ease;
-}
-
-.codex-search-input:focus {
-    outline: none;
-    border-color: var(--tertiary-color);
-    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
-}
-
-.codex-search-input::placeholder {
-    color: var(--fg-muted-color);
-}
-
-.search-button {
-    padding: 0.75rem 1.5rem;
-    background: var(--tertiary-color);
-    color: var(--fg-color);
-    border: none;
-    border-radius: 8px;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    min-width: fit-content;
-    white-space: nowrap;
-}
-
-.search-button:hover {
-    background: var(--primary-color);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
-}
-
-.search-icon {
-    font-size: 1rem;
-    width: 1rem;
-    height: 1rem;
-}
-
 /* Carousels Section */
 .codex-carousels {
     max-width: 1400px;
@@ -199,15 +141,6 @@ monster-codex:not(:defined) {
 
     .codex-search-section {
         padding: 0 0.5rem;
-    }
-
-    .search-input-container {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-
-    .search-button {
-        justify-content: center;
     }
 
     .codex-carousels {

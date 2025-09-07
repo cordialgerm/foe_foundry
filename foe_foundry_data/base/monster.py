@@ -33,3 +33,14 @@ class MonsterTemplateInfoModel:
     mask_css: str
     is_new: bool
     create_date: datetime
+
+
+@dataclass(kw_only=True)
+class MonsterFamilyInfo:
+    """Information about a family of similar monsters"""
+
+    key: str
+    name: str
+    icon: str
+    tag_line: str
+    templates: list[MonsterTemplateInfoModel]

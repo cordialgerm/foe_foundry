@@ -11,7 +11,8 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "rootDir": "."
   },
   "include": ["tests/**/*", "docs/src/**/*"],
   "exclude": ["node_modules", "site"]

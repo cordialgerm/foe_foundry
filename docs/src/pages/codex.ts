@@ -1,5 +1,11 @@
 // Codex page interactivity - tab navigation and URL handling
 
+// Import components
+import '../components/SearchBar.js';
+
+// Export to make this file a module
+export { };
+
 // Initialize codex functionality when on the codex page
 if (window.location.pathname === '/codex' || window.location.pathname === '/codex/') {
     console.log('Loaded codex page');
@@ -9,16 +15,19 @@ if (window.location.pathname === '/codex' || window.location.pathname === '/code
 function initializeCodex() {
     // Handle tab navigation
     setupTabNavigation();
-    
+
     // Handle URL hash and query parameters
     handleInitialUrlState();
-    
+
     // Setup search functionality
     setupSearchNavigation();
-    
+
     // Setup monster search event listener for URL updates
     setupMonsterSearchListener();
-    
+
+    // Setup catalog search event listener
+    setupCatalogSearchListener();
+
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashChange);
 }
@@ -26,23 +35,23 @@ function initializeCodex() {
 function setupTabNavigation() {
     const tabs = document.querySelectorAll('.codex-tab');
     const contents = document.querySelectorAll('.codex-tab-content');
-    
+
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const targetTab = tab.getAttribute('data-tab');
-            
+
             if (targetTab) {
                 // Update active tab
                 tabs.forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
-                
+
                 // Update active content
                 contents.forEach(c => c.classList.remove('active'));
                 const targetContent = document.querySelector(`.codex-tab-content[data-content="${targetTab}"]`);
                 if (targetContent) {
                     targetContent.classList.add('active');
                 }
-                
+
                 // Update URL hash
                 updateUrlForTab(targetTab);
             }
@@ -51,25 +60,15 @@ function setupTabNavigation() {
 }
 
 function setupSearchNavigation() {
-    const searchInput = document.getElementById('codex-search-input') as HTMLInputElement;
-    const searchButton = document.getElementById('codex-search-button');
-    
-    function performSearch() {
-        const query = searchInput?.value?.trim();
-        if (query) {
-            // Switch to search tab and set query
+    // Use event delegation on the document to catch the search-navigate event
+    // This avoids timing issues with custom element initialization
+    document.addEventListener('search-navigate', (e: Event) => {
+        // Check if this is a CustomEvent and came from the codex search bar
+        const customEvent = e as CustomEvent;
+        const target = e.target as HTMLElement;
+        if (target && target.id === 'codex-search-bar' && customEvent.detail) {
+            const { query } = customEvent.detail;
             switchToSearchTab(query);
-        }
-    }
-    
-    // Handle search button click
-    searchButton?.addEventListener('click', performSearch);
-    
-    // Handle enter key in search input
-    searchInput?.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            performSearch();
         }
     });
 }
@@ -78,15 +77,15 @@ function switchToSearchTab(query?: string) {
     // Activate search tab
     const searchTab = document.querySelector('.codex-tab[data-tab="search"]') as HTMLElement;
     const searchContent = document.querySelector('.codex-tab-content[data-content="search"]') as HTMLElement;
-    
+
     if (searchTab && searchContent) {
         // Update tab states
         document.querySelectorAll('.codex-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.codex-tab-content').forEach(c => c.classList.remove('active'));
-        
+
         searchTab.classList.add('active');
         searchContent.classList.add('active');
-        
+
         // Update URL
         const url = new URL(window.location.href);
         url.hash = 'search';
@@ -94,7 +93,7 @@ function switchToSearchTab(query?: string) {
             url.searchParams.set('query', query);
         }
         window.history.pushState({}, '', url.toString());
-        
+
         // Update monster-codex component with search query
         const monsterCodex = document.querySelector('monster-codex') as any;
         if (monsterCodex && query) {
@@ -104,7 +103,7 @@ function switchToSearchTab(query?: string) {
             } else {
                 // Fallback to attribute setting
                 monsterCodex.setAttribute('initial-query', query);
-                
+
                 // Dispatch custom event
                 monsterCodex.dispatchEvent(new CustomEvent('search-query-changed', {
                     detail: { query }
@@ -117,15 +116,15 @@ function switchToSearchTab(query?: string) {
 function switchToBrowseTab() {
     const browseTab = document.querySelector('.codex-tab[data-tab="browse"]') as HTMLElement;
     const browseContent = document.querySelector('.codex-tab-content[data-content="browse"]') as HTMLElement;
-    
+
     if (browseTab && browseContent) {
         // Update tab states
         document.querySelectorAll('.codex-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.codex-tab-content').forEach(c => c.classList.remove('active'));
-        
+
         browseTab.classList.add('active');
         browseContent.classList.add('active');
-        
+
         // Update URL
         const url = new URL(window.location.href);
         url.hash = 'browse';
@@ -134,14 +133,48 @@ function switchToBrowseTab() {
     }
 }
 
+function switchToCatalogTab() {
+    const catalogTab = document.querySelector('.codex-tab[data-tab="catalog"]') as HTMLElement;
+    const catalogContent = document.querySelector('.codex-tab-content[data-content="catalog"]') as HTMLElement;
+
+    if (catalogTab && catalogContent) {
+        // Update tab states
+        document.querySelectorAll('.codex-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.codex-tab-content').forEach(c => c.classList.remove('active'));
+
+        catalogTab.classList.add('active');
+        catalogContent.classList.add('active');
+
+        // Update URL
+        const url = new URL(window.location.href);
+        url.hash = 'catalog';
+        url.searchParams.delete('query'); // Remove query when switching to catalog
+        window.history.pushState({}, '', url.toString());
+    }
+}
+
 function handleInitialUrlState() {
     const url = new URL(window.location.href);
     const hash = url.hash.substring(1); // Remove #
     const query = url.searchParams.get('query');
-    
+    let focused = false;
     if (hash === 'search' || query) {
         // Switch to search tab
         switchToSearchTab(query || undefined);
+        // Focus search input if present and hash is search
+        if (hash === 'search') {
+            // Focus search input in search tab after a brief delay
+            setTimeout(() => {
+                const searchBar = document.getElementById('codex-search-bar') as any;
+                if (searchBar && typeof searchBar.focusInput === 'function') {
+                    searchBar.focusInput();
+                }
+            }, 0);
+            focused = true;
+        }
+    } else if (hash === 'catalog') {
+        // Switch to catalog tab
+        switchToCatalogTab();
     } else if (hash === 'browse') {
         // Switch to browse tab (already default, but ensure state is correct)
         switchToBrowseTab();
@@ -160,7 +193,7 @@ function setupMonsterSearchListener() {
     document.addEventListener('monster-search-changed', (e: any) => {
         const { query, creatureTypes, minCr, maxCr } = e.detail;
         const url = new URL(window.location.href);
-        
+
         // Only update URL if we're on the search tab
         if (url.hash === '#search') {
             // Update query parameter
@@ -169,12 +202,22 @@ function setupMonsterSearchListener() {
             } else {
                 url.searchParams.delete('query');
             }
-            
+
             // Update other search parameters if needed in the future
             // (for now just focusing on query as requested)
-            
+
             // Update URL without triggering navigation
             window.history.replaceState({}, '', url.toString());
+        }
+    });
+}
+
+function setupCatalogSearchListener() {
+    // Listen for catalog search events to switch to search tab
+    document.addEventListener('catalog-search', (e: any) => {
+        const { query } = e.detail;
+        if (query) {
+            switchToSearchTab(query);
         }
     });
 }
@@ -182,12 +225,12 @@ function setupMonsterSearchListener() {
 function updateUrlForTab(tabName: string) {
     const url = new URL(window.location.href);
     url.hash = tabName;
-    
-    // Clear query param when switching to browse tab
-    if (tabName === 'browse') {
+
+    // Clear query param when switching to browse or catalog tab
+    if (tabName === 'browse' || tabName === 'catalog') {
         url.searchParams.delete('query');
     }
-    
+
     window.history.replaceState({}, '', url.toString());
 }
 
@@ -197,11 +240,13 @@ declare global {
         codexPageFunctions?: {
             switchToSearchTab: (query?: string) => void;
             switchToBrowseTab: () => void;
+            switchToCatalogTab: () => void;
         };
     }
 }
 
 window.codexPageFunctions = {
     switchToSearchTab,
-    switchToBrowseTab
+    switchToBrowseTab,
+    switchToCatalogTab
 };

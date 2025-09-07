@@ -133,8 +133,8 @@ export class MonsterLore extends LitElement {
     }
   `;
 
-  updated() {
-    super.updated();
+  updated(changedProperties: any) {
+    super.updated(changedProperties);
     
     // Handle lore content
     if (this.loreRef.value && this.loreTask.value?.overviewElement) {
