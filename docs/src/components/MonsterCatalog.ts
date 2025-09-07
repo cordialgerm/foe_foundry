@@ -160,7 +160,7 @@ export class MonsterCatalog extends LitElement {
 
     .catalog-monsters {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: 1fr;
       gap: 0.5rem;
       margin-left: 1rem;
     }
@@ -217,6 +217,18 @@ export class MonsterCatalog extends LitElement {
     }
 
     /* Responsive design */
+    @media (min-width: 769px) and (max-width: 1200px) {
+      .catalog-monsters {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1201px) {
+      .catalog-monsters {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
     @media (max-width: 768px) {
       .catalog-container {
         padding: 0.5rem;
