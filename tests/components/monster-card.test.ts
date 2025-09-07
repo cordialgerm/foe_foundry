@@ -211,12 +211,16 @@ describe('MonsterCard Component', () => {
     });
 
     it('should render similar monsters content', () => {
-      const similarContent = element.shadowRoot?.querySelector('.similar-content');
+      const similarComponent = element.shadowRoot?.querySelector('monster-similar');
+      expect(similarComponent).to.exist;
+      const similarContent = similarComponent?.shadowRoot?.querySelector('.similar-content');
       expect(similarContent).to.exist;
     });
 
     it('should show similar monsters groups', () => {
-      const similarContent = element.shadowRoot?.querySelector('.similar-content ul');
+      const similarComponent = element.shadowRoot?.querySelector('monster-similar');
+      expect(similarComponent).to.exist;
+      const similarContent = similarComponent?.shadowRoot?.querySelector('.similar-content ul');
       expect(similarContent).to.exist;
       
       // Should have at least one monster group from our mock data
@@ -246,13 +250,17 @@ describe('MonsterCard Component', () => {
     });
 
     it('should render lore content', () => {
-      const loreContent = element.shadowRoot?.querySelector('.lore-content');
+      const loreComponent = element.shadowRoot?.querySelector('monster-lore');
+      expect(loreComponent).to.exist;
+      const loreContent = loreComponent?.shadowRoot?.querySelector('.lore-content');
       expect(loreContent).to.exist;
     });
 
     it('should show monster overview when available', () => {
       // Mock monster includes overview element
-      const overviewContent = element.shadowRoot?.querySelector('.lore-content');
+      const loreComponent = element.shadowRoot?.querySelector('monster-lore');
+      expect(loreComponent).to.exist;
+      const overviewContent = loreComponent?.shadowRoot?.querySelector('.lore-content');
       expect(overviewContent).to.exist;
     });
   });
@@ -278,7 +286,9 @@ describe('MonsterCard Component', () => {
     });
 
     it('should render encounters content', () => {
-      const encountersContent = element.shadowRoot?.querySelector('.encounter-content');
+      const encountersComponent = element.shadowRoot?.querySelector('monster-encounters');
+      expect(encountersComponent).to.exist;
+      const encountersContent = encountersComponent?.shadowRoot?.querySelector('.encounter-content');
       expect(encountersContent).to.exist;
     });
   });

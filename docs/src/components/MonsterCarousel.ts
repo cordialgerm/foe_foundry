@@ -4,16 +4,10 @@ import { Task } from '@lit/task';
 import Swiper from 'swiper';
 import { Autoplay, Navigation, Keyboard, Parallax } from 'swiper/modules';
 import { apiMonsterStore, MonsterTemplate } from '../data/api';
+import { trackMonsterClick } from '../utils/analytics.js';
 import './swiper.css';
 
-interface MonsterInfo {
-  key: string;
-  name: string;
-  cr: number;
-  template: string;
-}
-
-interface MonsterData {
+interface CardData {
   key: string;
   name: string;
   tagline: string;
@@ -75,7 +69,7 @@ export class MonsterCarousel extends LitElement {
 
     /* Swiper container styles similar to homepage */
     .swiper-container {
-      position: relative;
+      position: relative !important;
       max-width: 100%;
       overflow: hidden;
       min-height: 300px;
@@ -415,23 +409,54 @@ export class MonsterCarousel extends LitElement {
     /* Swiper navigation buttons matching homepage */
     .swiper-button-next,
     .swiper-button-prev {
+      position: absolute !important;
+      top: 50% !important;
+      width: 60px !important;
+      height: 60px !important;
+      margin-top: -30px !important;
+      z-index: 10 !important;
+      cursor: pointer !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
       color: var(--primary-color) !important;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
-      width: 44px !important;
-      height: 44px !important;
-      margin-top: -22px !important;
+      background: rgba(0, 0, 0, 0.3) !important;
+      border: 2px solid var(--primary-color) !important;
+      border-radius: 50% !important;
+      transform: translateY(-50%) !important;
+      transition: all 0.3s ease !important;
     }
 
-    .swiper-button-next:after,
+    .swiper-button-prev {
+      left: 10px !important;
+      right: auto !important;
+    }
+
+    .swiper-button-next {
+      right: 10px !important;
+      left: auto !important;
+    }
+
+    .swiper-button-next:after {
+      content: '>' !important;
+      font-size: 28px !important;
+      font-weight: bold !important;
+      font-family: inherit !important;
+    }
+
     .swiper-button-prev:after {
-      font-size: 18px !important;
-      font-weight: bold;
+      content: '<' !important;
+      font-size: 28px !important;
+      font-weight: bold !important;
+      font-family: inherit !important;
     }
 
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
-      background: rgba(0, 0, 0, 0.7);
+      color: rgba(255, 255, 255, 1) !important;
+      background: rgba(255, 107, 53, 0.8) !important;
+      border-color: rgba(255, 107, 53, 1) !important;
+      transform: translateY(-50%) scale(1.1) !important;
     }
 
     .swiper-button-disabled {
@@ -448,7 +473,7 @@ export class MonsterCarousel extends LitElement {
     }
   `;
 
-  private async fetchMonsterTemplates(filter: string): Promise<MonsterData[]> {
+  private async fetchMonsterTemplates(filter: string): Promise<CardData[]> {
     if (!filter) {
       return [];
     }
@@ -478,7 +503,7 @@ export class MonsterCarousel extends LitElement {
     }
   }
 
-  private convertTemplateToMonsterData(template: MonsterTemplate): MonsterData {
+  private convertTemplateToMonsterData(template: MonsterTemplate): CardData {
     // Use the rich styling information provided by the template API
     let customStyle = '';
 
@@ -489,24 +514,49 @@ export class MonsterCarousel extends LitElement {
       let gradients: string[];
 
       if (template.grayscale) {
-        // Light, muted gradients for grayscale templates
+        // Very pale, subtle gradients for grayscale templates - won't interfere with black and white images
         gradients = [
-          'background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);', // Light gray to lighter gray
-          'background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);', // Very light blue to pale blue
-          'background: linear-gradient(135deg, #f8f0ff 0%, #e7d9ff 100%);', // Very light purple to pale lavender
-          'background: linear-gradient(135deg, #f0f8f0 0%, #d4e6d4 100%);', // Very light green to pale mint
-          'background: linear-gradient(135deg, #fff8f0 0%, #f5e6d3 100%);', // Cream to light beige
-          'background: linear-gradient(135deg, #f8f8f8 0%, #ececec 100%);', // Light gray to medium gray
+          'background: linear-gradient(135deg, #fdfefe 0%, #f8f9fa 100%);', // Almost white to very light gray
+          'background: linear-gradient(135deg, #f8fcff 0%, #f0f7ff 100%);', // Pale blue tint to slightly deeper pale blue
+          'background: linear-gradient(135deg, #fefaff 0%, #f5f0ff 100%);', // Pale lavender tint to light lavender
+          'background: linear-gradient(135deg, #f8fff8 0%, #f0f8f0 100%);', // Pale mint tint to light mint
+          'background: linear-gradient(135deg, #fffcf8 0%, #fcf5e8 100%);', // Pale cream to light cream
+          'background: linear-gradient(135deg, #fffef8 0%, #faf8f0 100%);', // Pale warm white to light warm
+          'background: linear-gradient(135deg, #f8f8ff 0%, #f0f0f8 100%);', // Pale cool white to light cool
+          'background: linear-gradient(135deg, #fff8fa 0%, #f8f0f3 100%);', // Pale rose tint to light rose
+          'background: linear-gradient(135deg, #f8fff8 0%, #f0f8f8 100%);', // Pale seafoam to light seafoam
+          // Radial gradients for soft, organic feel
+          'background: radial-gradient(ellipse at center, #fdfefe 0%, #f5f7f8 70%);',
+          'background: radial-gradient(circle at top left, #fff8fa 0%, #f3f0f2 60%);',
+          'background: radial-gradient(ellipse at bottom right, #f8fcff 0%, #f0f6fa 80%);',
+          // Conic gradients for subtle texture
+          'background: conic-gradient(from 45deg at 50% 50%, #fdfefe 0deg, #f8f9fa 90deg, #f5f7f8 180deg, #f2f4f5 270deg, #fdfefe 360deg);',
+          'background: conic-gradient(from 0deg at 30% 70%, #fff8fa 0deg, #f8f0f3 120deg, #f5f0f2 240deg, #fff8fa 360deg);',
         ];
       } else {
-        // Slightly softened gradients for non-grayscale templates
+        // Moderate, subtle gradients for non-grayscale templates - still muted to not overpower the monster
         gradients = [
-          'background: linear-gradient(135deg, #b3c6ee 0%, #bbaed6 100%);', // Soft blue to soft purple
-          'background: linear-gradient(135deg, #f3c6fb 0%, #f7b6c6 100%);', // Soft pink to soft red
-          'background: linear-gradient(135deg, #b4dafe 0%, #b0f2fe 100%);', // Soft blue to soft cyan
-          'background: linear-gradient(135deg, #b3e9cb 0%, #b8f9e7 100%);', // Soft green to soft teal
-          'background: linear-gradient(135deg, #fab7c9 0%, #fbe9b7 100%);', // Soft pink to soft yellow
-          'background: linear-gradient(135deg, #c8edea 0%, #f6d6e3 100%);', // Soft cyan to soft pink
+          'background: linear-gradient(135deg, #e8f0fe 0%, #e3e8f5 100%);', // Soft blue to muted purple
+          'background: linear-gradient(135deg, #fef0f3 0%, #f8e8ec 100%);', // Soft pink to muted rose
+          'background: linear-gradient(135deg, #e8f7fe 0%, #e0f4f8 100%);', // Soft blue to muted cyan
+          'background: linear-gradient(135deg, #f0fef3 0%, #e8f8ec 100%);', // Soft green to muted mint
+          'background: linear-gradient(135deg, #fef5e8 0%, #f8f0e0 100%);', // Soft yellow to muted cream
+          'background: linear-gradient(135deg, #f0fffe 0%, #e8f5f3 100%);', // Soft cyan to muted seafoam
+          'background: linear-gradient(135deg, #f5f0fe 0%, #f0e8f8 100%);', // Soft lavender to muted purple
+          'background: linear-gradient(135deg, #ffe8f0 0%, #f8e0e8 100%);', // Soft coral to muted peach
+          'background: linear-gradient(135deg, #f0ffe8 0%, #e8f8e0 100%);', // Soft lime to muted green
+          'background: linear-gradient(135deg, #fff0e8 0%, #f8e8e0 100%);', // Soft peach to muted apricot
+          // Radial gradients for depth and focus
+          'background: radial-gradient(ellipse at center, #e8f0fe 0%, #e3e8f5 70%);',
+          'background: radial-gradient(circle at top right, #fef0f3 0%, #f5e5ea 65%);',
+          'background: radial-gradient(ellipse at bottom left, #f0fef3 0%, #e5f5ea 75%);',
+          'background: radial-gradient(circle at center, #fef5e8 20%, #f5f0e0 80%);',
+          // Conic gradients for magical/mystical feel
+          'background: conic-gradient(from 60deg at 50% 50%, #e8f0fe 0deg, #fef0f3 90deg, #f0fef3 180deg, #fef5e8 270deg, #e8f0fe 360deg);',
+          'background: conic-gradient(from 0deg at 40% 60%, #f5f0fe 0deg, #ffe8f0 120deg, #f0ffe8 240deg, #f5f0fe 360deg);',
+          // Multi-stop linear gradients for richer transitions
+          'background: linear-gradient(135deg, #e8f0fe 0%, #f0fffe 33%, #fef0f3 66%, #f0e8f8 100%);',
+          'background: linear-gradient(45deg, #f0fef3 0%, #e8f7fe 25%, #fef0f3 75%, #fef5e8 100%);',
         ];
       }
 
@@ -528,13 +578,23 @@ export class MonsterCarousel extends LitElement {
     };
   }
 
-  private handleCardClick(url: string) {
+  private handleCardClick(url: string, card: CardData) {
     if (url) {
+      const templateKey = card.key;
+
+      // Track analytics - this is a template click since carousel shows templates
+      trackMonsterClick(
+        templateKey,
+        'template',
+        'carousel',
+      );
+
+      // Navigate to the monster page
       window.location.href = url;
     }
   }
 
-  private handleImageError(event: Event, monster: MonsterData) {
+  private handleImageError(event: Event, monster: CardData) {
     const img = event.target as HTMLImageElement;
     console.warn(`Failed to load image for ${monster.name}: ${img.src}`);
     // Set fallback image or hide the image element
@@ -584,32 +644,75 @@ export class MonsterCarousel extends LitElement {
         wrapper.style.alignItems = 'flex-start';
       }
 
+      // Calculate how many slides are visible based on current viewport
+      const calculateSlidesPerView = () => {
+        const width = window.innerWidth;
+        if (width >= 1400) return 3;
+        if (width >= 1200) return 3;
+        if (width >= 768) return 3;
+        if (width >= 576) return 2;
+        return 1;
+      };
+
+      // Get total number of slides
+      const totalSlides = wrapper?.children.length || 0;
+      const slidesPerView = calculateSlidesPerView();
+
+      // Only enable autoplay if there are more slides than fit in the viewport
+      const shouldAutoplay = totalSlides > slidesPerView;
       const delay = 5000 + Math.random() * 3000;
+
+      // Get navigation elements from shadow root
+      const nextEl = this.shadowRoot!.querySelector('.swiper-button-next') as HTMLElement;
+      const prevEl = this.shadowRoot!.querySelector('.swiper-button-prev') as HTMLElement;
 
       // Use configuration that matches homepage for consistent navigation
       this.swiperInstance = new Swiper(swiperContainer as HTMLElement, {
         modules: [Autoplay, Navigation, Keyboard, Parallax],
         slidesPerView: 3,
         spaceBetween: 16,
-        initialSlide: 1,
-        centeredSlides: true,
-        //createElements: true, // This creates the navigation buttons automatically - but it didn't seem to work properly
+        initialSlide: 0, // Start at first slide
+        centeredSlides: false, // Left-align slides
         grabCursor: true,
         direction: 'horizontal', // Explicitly set horizontal direction
+        loop: false, // Disable infinite loop
         keyboard: {
           enabled: true,
         },
-        navigation: true,
+        navigation: {
+          nextEl: nextEl,
+          prevEl: prevEl,
+        },
         parallax: true,
         simulateTouch: true,
-        autoplay: {
+        autoplay: shouldAutoplay ? {
           delay: delay,
           disableOnInteraction: true,
-        },
+          pauseOnMouseEnter: true, // Pause autoplay when user hovers for better UX
+          stopOnLastSlide: true
+        } : false,
         breakpoints: breakpoints,
         on: {
           init: function (this: any) {
             this.el.classList.remove('preload');
+          },
+          slideChange: function (this: any) {
+            // Stop autoplay if we've reached the Nth to last slide
+            // where N is the number of slides visible in the current viewport
+            if (this.autoplay && this.autoplay.running) {
+              const currentSlide = this.activeIndex;
+              const totalSlides = this.slides.length;
+              const currentSlidesPerView = this.params.slidesPerView;
+
+              // Calculate the last slide index where we still have a full view
+              // If we have 5 slides total and 3 fit in view, we stop after slide 2 (0-indexed)
+              // because moving to slide 3 would only show slides 3,4 (only 2 slides instead of 3)
+              const lastFullViewSlide = totalSlides - currentSlidesPerView;
+
+              if (currentSlide >= lastFullViewSlide) {
+                this.autoplay.stop();
+              }
+            }
           }
         }
       });
@@ -676,6 +779,9 @@ export class MonsterCarousel extends LitElement {
             <div class="swiper-wrapper">
               ${templates.map(template => this.renderMonsterCard(template))}
             </div>
+            <!-- Navigation buttons explicitly rendered in template -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
           <style>
             /* Inline styles to ensure horizontal layout */
@@ -699,7 +805,7 @@ export class MonsterCarousel extends LitElement {
     });
   }
 
-  private renderMonsterCard(template: MonsterData) {
+  private renderMonsterCard(template: CardData) {
     const cardClasses = [
       'swiper-slide',
       'card',
@@ -710,12 +816,14 @@ export class MonsterCarousel extends LitElement {
       template.transparent_edges ? 'transparent-edges' : ''
     ].filter(Boolean).join(' ');
 
+    const url = window.baseUrl ? `${window.baseUrl}/${template.url}` : template.url;
+
     return html`
       <div
         class="${cardClasses}"
-        data-url="${template.url}"
+        data-url="${url}"
         style="${template.custom_style}"
-        @click="${() => this.handleCardClick(template.url)}"
+        @click="${() => this.handleCardClick(url, template)}"
       >
         <img
           class="card-image contain"

@@ -14,4 +14,8 @@ export { SkullUpsell } from './SkullUpsell.js';
 export { AnimatedSkull } from './AnimatedSkull.js';
 export { UpsellModal } from './UpsellModal.js';
 export { SkullUpsellInjector } from './SkullUpsellInjector.js';
+export { MonsterCodex } from './MonsterCodex.js';
 export { MonsterCarousel } from './MonsterCarousel.js';
+export { MonsterSearchSeeds } from './MonsterSearchSeeds.js';
+export { MonsterSearchInterface } from './MonsterSearchInterface.js';
+export { MonsterCatalog } from './MonsterCatalog.js';

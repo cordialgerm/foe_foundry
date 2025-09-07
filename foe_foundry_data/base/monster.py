@@ -13,6 +13,9 @@ class MonsterInfoModel:
     name: str
     cr: float
     template: str
+    background_image: str | None = None
+    creature_type: str | None = None
+    tag_line: str | None = None
 
 
 @dataclass(kw_only=True)
@@ -30,3 +33,14 @@ class MonsterTemplateInfoModel:
     mask_css: str
     is_new: bool
     create_date: datetime
+
+
+@dataclass(kw_only=True)
+class MonsterFamilyInfo:
+    """Information about a family of similar monsters"""
+
+    key: str
+    name: str
+    icon: str
+    tag_line: str
+    templates: list[MonsterTemplateInfoModel]

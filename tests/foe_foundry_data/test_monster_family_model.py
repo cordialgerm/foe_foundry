@@ -132,6 +132,7 @@ class TestMonsterFamilyModel:
         family = MonsterFamilyModel(
             key="soldiers_and_fighters",
             name="Soldiers & Fighters",
+            icon="favicon",
             tag_line="Battle-Hardened Warriors",
             monsters=monsters,
         )
@@ -270,6 +271,7 @@ is_monster_family: true
         # Test missing tagline
         no_tagline_content = """---
 title: Test Family
+family_name: Test Family
 is_monster_family: true
 ---
 
@@ -295,6 +297,7 @@ Regular content without italic tagline.
         # Test invalid monster reference
         invalid_ref_content = """---
 title: Test Family
+family_name: Test Family
 is_monster_family: true
 ---
 
