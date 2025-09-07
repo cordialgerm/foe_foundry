@@ -12,3 +12,4 @@ export { EmailSubscribeCallout } from './EmailSubscribeCallout.js';
 export { StatblockTutorial } from './StatblockTutorial.js';
 export { MonsterCodex } from './MonsterCodex.js';
 export { MonsterCarousel } from './MonsterCarousel.js';
+export { MonsterCatalog } from './MonsterCatalog.js';

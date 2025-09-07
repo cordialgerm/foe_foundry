@@ -5,6 +5,10 @@
             <svg-icon src="death-note" class="tab-icon"></svg-icon>
             Browse
         </button>
+        <button class="codex-tab" data-tab="catalog">
+            <svg-icon src="bookshelf" class="tab-icon"></svg-icon>
+            Catalog
+        </button>
         <button class="codex-tab" data-tab="search">
             <svg-icon src="magnifying-glass" class="tab-icon"></svg-icon>
             Search
@@ -15,14 +19,9 @@
     <div class="codex-tab-content active" data-content="browse">
         <!-- Search Bar for Navigation -->
         <div class="codex-search-section">
-            <div class="search-input-container">
-                <input type="text" id="codex-search-input" class="codex-search-input"
-                    placeholder="Search for monsters..." />
-                <button class="search-button" id="codex-search-button">
-                    <svg-icon src="magnifying-glass" class="search-icon"></svg-icon>
-                    Search
-                </button>
-            </div>
+            <search-bar placeholder="Search for monsters..." mode="navigation" analytics-surface="codex"
+                id="codex-search-bar">
+            </search-bar>
         </div>
 
         <!-- Carousels Section -->
@@ -45,6 +44,11 @@
                 <monster-carousel filter="family:undead"></monster-carousel>
             </section>
         </div>
+    </div>
+
+    <!-- Catalog Tab Content -->
+    <div class="codex-tab-content" data-content="catalog">
+        <monster-catalog></monster-catalog>
     </div>
 
     <!-- Search Tab Content -->
