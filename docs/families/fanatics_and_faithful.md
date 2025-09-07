@@ -4,6 +4,7 @@ short_title: Fanatics & the Faithful
 description: Discover flavorful priest, cultist, and knight statblocks for your 5E campaign. Explore divine lore and dark devotion for unforgettable encounters.
 image: img/monsters/priest.webp
 icon: chalice-drops
+family_name: Fanatics and Faithful
 tag_line: Faithful Followers of the Occult or Divine
 json_ld: true
 is_monster_family: true

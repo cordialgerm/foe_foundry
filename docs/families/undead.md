@@ -6,6 +6,7 @@ image: img/monsters/skeleton_warband.webp
 icon: shambling-zombie
 tag_line: Twisted Mockeries of Life
 json_ld: true
+family_name: Undead
 is_monster_family: true
 ---
 

@@ -2,8 +2,9 @@ import { LitElement, html, css } from 'lit';
 import { customElement, state, property } from 'lit/decorators.js';
 import { Task } from '@lit/task';
 import { apiMonsterStore, CatalogTemplate, CatalogFamily } from '../data/api.js';
-import { trackSearch, trackMonsterClick } from '../utils/analytics.js';
+import { trackMonsterClick } from '../utils/analytics.js';
 import './SvgIcon.js';
+import './SearchBar.js';
 
 type CatalogGroupBy = 'template' | 'family';
 
@@ -38,61 +39,9 @@ export class MonsterCatalog extends LitElement {
       padding: 1rem;
     }
 
-    /* Search Bar */
+    /* Catalog Search Section */
     .catalog-search-section {
       margin-bottom: 2rem;
-    }
-
-    .search-input-container {
-      display: flex;
-      gap: 0.75rem;
-      align-items: center;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .catalog-search-input {
-      flex: 1;
-      padding: 0.75rem;
-      border: 1px solid var(--border-color);
-      border-radius: 4px;
-      background: var(--muted-color);
-      color: var(--fg-color);
-      font-size: 1rem;
-      min-height: 44px;
-      box-sizing: border-box;
-    }
-
-    .catalog-search-input::placeholder {
-      color: var(--fg-muted-color);
-    }
-
-    .catalog-search-input:focus {
-      outline: none;
-      border-color: var(--border-color);
-      box-shadow: 0 0 0 2px var(--fg-muted-color);
-    }
-
-    .search-button {
-      background: var(--tertiary-color);
-      color: var(--fg-color);
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      font-family: var(--primary-font);
-      font-size: 1rem;
-      font-weight: bold;
-      min-height: 44px;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.2s ease;
-    }
-
-    .search-button:hover {
-      background: var(--tertiary-color);
-      transform: translateY(-1px);
     }
 
     /* Group By Controls */
@@ -132,10 +81,17 @@ export class MonsterCatalog extends LitElement {
     .catalog-list {
       flex: 1;
       overflow-y: auto;
+      column-count: 1;
+      column-gap: 2rem;
+      column-fill: balance;
     }
 
     .catalog-group {
       margin-bottom: 2rem;
+      break-inside: avoid;
+      page-break-inside: avoid;
+      display: inline-block;
+      width: 100%;
     }
 
     .catalog-group-header {
@@ -218,14 +174,14 @@ export class MonsterCatalog extends LitElement {
 
     /* Responsive design */
     @media (min-width: 769px) and (max-width: 1200px) {
-      .catalog-monsters {
-        grid-template-columns: repeat(2, 1fr);
+      .catalog-list {
+        column-count: 2;
       }
     }
 
     @media (min-width: 1201px) {
-      .catalog-monsters {
-        grid-template-columns: repeat(3, 1fr);
+      .catalog-list {
+        column-count: 3;
       }
     }
 
@@ -239,8 +195,11 @@ export class MonsterCatalog extends LitElement {
         align-items: center;
       }
 
+      .catalog-list {
+        column-count: 1;
+      }
+
       .catalog-monsters {
-        grid-template-columns: 1fr;
         margin-left: 0;
       }
 
@@ -262,18 +221,12 @@ export class MonsterCatalog extends LitElement {
       <div class="catalog-container">
         <!-- Search Bar -->
         <div class="catalog-search-section">
-          <div class="search-input-container">
-            <input
-              type="text"
-              class="catalog-search-input"
-              placeholder="Search for monsters..."
-              @keydown=${this.handleSearchKeydown}
-            />
-            <button class="search-button" @click=${this.handleSearchClick}>
-              <svg-icon src="magnifying-glass" class="search-icon"></svg-icon>
-              Search
-            </button>
-          </div>
+          <search-bar
+            placeholder="Search for monsters..."
+            mode="event"
+            analytics-surface="catalog"
+            @search-query="${this.handleSearchQuery}">
+          </search-bar>
         </div>
 
         <!-- Group By Controls -->
@@ -293,10 +246,10 @@ export class MonsterCatalog extends LitElement {
         <!-- Catalog List -->
         <div class="catalog-list">
           ${this.catalogTask.render({
-            pending: () => html`<div class="loading">Loading monster catalog...</div>`,
-            complete: (result) => this.renderCatalog(result),
-            error: (e) => html`<div class="error">Error loading catalog: ${e instanceof Error ? e.message : String(e)}</div>`
-          })}
+      pending: () => html`<div class="loading">Loading monster catalog...</div>`,
+      complete: (result) => this.renderCatalog(result),
+      error: (e) => html`<div class="error">Error loading catalog: ${e instanceof Error ? e.message : String(e)}</div>`
+    })}
         </div>
       </div>
     `;
@@ -304,7 +257,7 @@ export class MonsterCatalog extends LitElement {
 
   private renderCatalog(result: { data: CatalogTemplate[] | CatalogFamily[], type: 'template' | 'family' }) {
     const { data, type } = result;
-    
+
     if (!data || data.length === 0) {
       return html`<div class="error">No monsters found in catalog.</div>`;
     }
@@ -318,25 +271,25 @@ export class MonsterCatalog extends LitElement {
             </a>
           </h2>
           <div class="catalog-monsters">
-            ${group.monsters.map(monster => this.renderMonster(monster))}
+            ${group.monsters.map(monster => this.renderMonster({ ...monster, url: `${group.url}#${monster.key}` }))}
           </div>
         </div>
       `)}
     `;
   }
 
-  private renderMonster(monster: { key: string; name: string; cr: number | string }) {
-    const crDisplay = typeof monster.cr === 'number' ? 
+  private renderMonster(monster: { key: string; url: string, name: string; cr: number | string }) {
+    const crDisplay = typeof monster.cr === 'number' ?
       (monster.cr === 0.125 ? 'CR ⅛' :
-       monster.cr === 0.25 ? 'CR ¼' :
-       monster.cr === 0.5 ? 'CR ½' :
-       `CR ${monster.cr}`) :
+        monster.cr === 0.25 ? 'CR ¼' :
+          monster.cr === 0.5 ? 'CR ½' :
+            `CR ${monster.cr}`) :
       monster.cr;
 
     return html`
       <div class="catalog-monster">
-        <a 
-          href="/monsters/${monster.key}/"
+        <a
+          href="${monster.url}"
           class="catalog-monster-name"
           @click=${(e: Event) => this.handleMonsterClick(e, monster.key)}>
           ${monster.name}
@@ -350,32 +303,16 @@ export class MonsterCatalog extends LitElement {
     this.groupBy = groupBy;
   }
 
-  private handleSearchKeydown(e: KeyboardEvent) {
-    if (e.key === 'Enter') {
-      this.performSearch();
-    }
-  }
+  private handleSearchQuery(e: CustomEvent) {
+    const { query } = e.detail;
 
-  private handleSearchClick() {
-    this.performSearch();
-  }
-
-  private performSearch() {
-    const input = this.shadowRoot?.querySelector('.catalog-search-input') as HTMLInputElement;
-    const query = input?.value?.trim();
-    
-    if (query) {
-      // Track search analytics
-      trackSearch(query, 0, 'catalog');
-      
-      // Dispatch event to switch to search tab with the query
-      const event = new CustomEvent('catalog-search', {
-        detail: { query },
-        bubbles: true,
-        composed: true
-      });
-      this.dispatchEvent(event);
-    }
+    // Dispatch event to switch to search tab with the query
+    const event = new CustomEvent('catalog-search', {
+      detail: { query },
+      bubbles: true,
+      composed: true
+    });
+    this.dispatchEvent(event);
   }
 
   private handleGroupClick(e: Event, group: CatalogTemplate | CatalogFamily, type: 'template' | 'family') {
@@ -383,8 +320,7 @@ export class MonsterCatalog extends LitElement {
     trackMonsterClick(
       group.key,
       type === 'template' ? 'template' : 'family',
-      'catalog-group',
-      ''
+      'catalog'
     );
   }
 
@@ -393,8 +329,7 @@ export class MonsterCatalog extends LitElement {
     trackMonsterClick(
       monsterKey,
       'monster',
-      'catalog-monster',
-      ''
+      'catalog'
     );
   }
 }

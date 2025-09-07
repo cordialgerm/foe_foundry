@@ -6,6 +6,7 @@ image: img/monsters/warrior.webp
 icon: rally-the-troops
 tag_line: Battle-Hardened Warriors of Duty, Honor, or Fortune
 json_ld: true
+family_name: Soldiers and Fighters
 is_monster_family: true
 ---
 

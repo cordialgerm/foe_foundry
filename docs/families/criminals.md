@@ -4,6 +4,7 @@ short_title: Criminal & Underworld NPCs
 description: Outlaws, enforcers, assassins, and spies for your 5E campaign. Uncover the shadowy underbelly of society with flavorful statblocks, lore, and encounter ideas.
 image: img/monsters/thug.webp
 icon: bandit
+family_name: Criminals & Underworld NPCs
 tag_line: Outlaws, Enforcers, and Masters of Deception
 json_ld: true
 is_monster_family: true

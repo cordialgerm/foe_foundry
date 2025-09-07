@@ -1,7 +1,10 @@
 // Codex page interactivity - tab navigation and URL handling
 
+// Import components
+import '../components/SearchBar.js';
+
 // Export to make this file a module
-export {};
+export { };
 
 // Initialize codex functionality when on the codex page
 if (window.location.pathname === '/codex' || window.location.pathname === '/codex/') {
@@ -57,25 +60,15 @@ function setupTabNavigation() {
 }
 
 function setupSearchNavigation() {
-    const searchInput = document.getElementById('codex-search-input') as HTMLInputElement;
-    const searchButton = document.getElementById('codex-search-button');
-
-    function performSearch() {
-        const query = searchInput?.value?.trim();
-        if (query) {
-            // Switch to search tab and set query
+    // Use event delegation on the document to catch the search-navigate event
+    // This avoids timing issues with custom element initialization
+    document.addEventListener('search-navigate', (e: Event) => {
+        // Check if this is a CustomEvent and came from the codex search bar
+        const customEvent = e as CustomEvent;
+        const target = e.target as HTMLElement;
+        if (target && target.id === 'codex-search-bar' && customEvent.detail) {
+            const { query } = customEvent.detail;
             switchToSearchTab(query);
-        }
-    }
-
-    // Handle search button click
-    searchButton?.addEventListener('click', performSearch);
-
-    // Handle enter key in search input
-    searchInput?.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            performSearch();
         }
     });
 }
@@ -170,9 +163,12 @@ function handleInitialUrlState() {
         switchToSearchTab(query || undefined);
         // Focus search input if present and hash is search
         if (hash === 'search') {
+            // Focus search input in search tab after a brief delay
             setTimeout(() => {
-                const searchInput = document.getElementById('codex-search-input') as HTMLInputElement;
-                if (searchInput) searchInput.focus();
+                const searchBar = document.getElementById('codex-search-bar') as any;
+                if (searchBar && typeof searchBar.focusInput === 'function') {
+                    searchBar.focusInput();
+                }
             }, 0);
             focused = true;
         }

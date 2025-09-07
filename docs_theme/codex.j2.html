@@ -19,14 +19,9 @@
     <div class="codex-tab-content active" data-content="browse">
         <!-- Search Bar for Navigation -->
         <div class="codex-search-section">
-            <div class="search-input-container">
-                <input type="text" id="codex-search-input" class="codex-search-input"
-                    placeholder="Search for monsters..." />
-                <button class="search-button" id="codex-search-button">
-                    <svg-icon src="magnifying-glass" class="search-icon"></svg-icon>
-                    Search
-                </button>
-            </div>
+            <search-bar placeholder="Search for monsters..." mode="navigation" analytics-surface="codex"
+                id="codex-search-bar">
+            </search-bar>
         </div>
 
         <!-- Carousels Section -->
