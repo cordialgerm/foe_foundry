@@ -20,7 +20,7 @@ export class MonsterFamilyBrowse extends LitElement {
 
   private familiesTask = new Task(this, async () => {
     const families = await apiMonsterStore.getAllFamilies();
-    
+
     // Randomly select 3 families for initial display
     const shuffled = [...families].sort(() => 0.5 - Math.random());
     this.activeCarousels = shuffled.slice(0, 3).map(family => ({
@@ -30,7 +30,7 @@ export class MonsterFamilyBrowse extends LitElement {
       familyTagLine: family.tag_line,
       familyIcon: family.icon
     }));
-    
+
     return families;
   }, () => []);
 
@@ -38,11 +38,12 @@ export class MonsterFamilyBrowse extends LitElement {
     :host {
       display: block;
       height: 100%;
+      overflow: hidden;
     }
 
     .browse-container {
       display: flex;
-      height: 100vh;
+      height: 100%; /* Fill the tab content area */
       min-height: 600px;
       align-items: flex-start; /* Top align both panels */
     }
@@ -140,12 +141,12 @@ export class MonsterFamilyBrowse extends LitElement {
       flex: 1;
       overflow-y: auto;
       padding: 1.5rem;
-      background: var(--muted-color);
+      padding-top: 0rem;
       height: 100%; /* Full height to match toc panel */
     }
 
     .carousel-section {
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
       border-radius: 8px;
       background: var(--bg-color); /* Removed black background */
       padding: 1.5rem;
@@ -212,11 +213,14 @@ export class MonsterFamilyBrowse extends LitElement {
         border-right: none;
         border-bottom: 2px solid var(--border-color);
         height: auto;
+        overflow-y: auto; /* Ensure scrolling works on mobile */
       }
 
       .content-panel {
         padding: 1rem;
+        padding-top: 0rem;
         height: auto;
+        overflow-y: visible; /* Remove scroll on mobile since container is auto height */
       }
 
       .carousel-section {
@@ -337,10 +341,10 @@ export class MonsterFamilyBrowse extends LitElement {
 
   private renderFamilyLink(family: MonsterFamily) {
     const isActive = this.activeCarousels.some(carousel => carousel.familyKey === family.key);
-    
+
     return html`
       <li class="family-item">
-        <a 
+        <a
           href="${family.url}"
           class="family-link ${isActive ? 'active' : ''}"
           @click=${(e: Event) => this.handleFamilyClick(e, family)}
@@ -358,7 +362,7 @@ export class MonsterFamilyBrowse extends LitElement {
   private handleFamilyClick(e: Event, family: MonsterFamily) {
     // Prevent navigation for intercept behavior
     e.preventDefault();
-    
+
     // Replace the current selected carousel with this family
     const newCarousel: ActiveCarousel = {
       familyKey: family.key,
@@ -385,9 +389,9 @@ export class MonsterFamilyBrowse extends LitElement {
     requestAnimationFrame(() => {
       const carouselSections = this.shadowRoot?.querySelectorAll('.carousel-section');
       if (carouselSections && carouselSections[index]) {
-        carouselSections[index].scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'start' 
+        carouselSections[index].scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
         });
       }
     });
