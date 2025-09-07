@@ -1,6 +1,8 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { trackSearch } from '../utils/analytics.js';
+import { MonsterSearchApi } from '../data/searchApi.js';
+import { SearchSeed } from '../data/search.js';
 import './SvgIcon.js';
 
 export type SearchBarMode = 'navigation' | 'event';
@@ -12,8 +14,13 @@ export class SearchBar extends LitElement {
     @property({ attribute: 'analytics-surface' }) analyticsSurface: string = 'search';
     @property({ attribute: 'button-text' }) buttonText: string = 'Search';
     @property({ attribute: 'initial-value' }) initialValue: string = '';
+    @property({ type: Number }) seeds: number = 0;
 
     @state() private searchValue: string = '';
+    @state() private searchSeeds: SearchSeed[] = [];
+    @state() private selectedSeeds: SearchSeed[] = [];
+
+    private searchApi = new MonsterSearchApi();
 
     static styles = css`
     :host {
@@ -85,6 +92,38 @@ export class SearchBar extends LitElement {
       height: 1rem;
     }
 
+    .search-seeds {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .search-seed-button {
+      background: var(--color-surface-variant, #f5f5f5);
+      border: 1px solid var(--tertiary-color, #c29a5b);
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--fg-color, #f4f1e6);
+      font-family: var(--primary-font, system-ui);
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .search-seed-button:hover {
+      background: var(--tertiary-color, #c29a5b);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .search-seed-button:active {
+      transform: translateY(0);
+    }
+
     /* Responsive design */
     @media (max-width: 768px) {
       .search-section {
@@ -107,6 +146,28 @@ export class SearchBar extends LitElement {
         if (this.initialValue) {
             this.searchValue = this.initialValue;
         }
+        if (this.seeds > 0) {
+            this.loadSearchSeeds();
+        }
+    }
+
+    private async loadSearchSeeds(): Promise<void> {
+        try {
+            const seeds = await this.searchApi.getSearchSeeds();
+            this.searchSeeds = seeds;
+            this.selectRandomSeeds();
+        } catch (error) {
+            console.error('Failed to load search seeds:', error);
+            this.searchSeeds = [];
+        }
+    }
+
+    private selectRandomSeeds(): void {
+        if (this.searchSeeds.length === 0 || this.seeds <= 0) return;
+        
+        // Shuffle and take first N seeds
+        const shuffled = [...this.searchSeeds].sort(() => Math.random() - 0.5);
+        this.selectedSeeds = shuffled.slice(0, this.seeds);
     }
 
     render() {
@@ -126,8 +187,27 @@ export class SearchBar extends LitElement {
             ${this.buttonText}
           </button>
         </div>
+        ${this.seeds > 0 && this.selectedSeeds.length > 0 ? html`
+          <div class="search-seeds">
+            ${this.selectedSeeds.map(seed => html`
+              <button 
+                class="search-seed-button"
+                @click=${() => this.handleSeedClick(seed.term)}
+                title="${seed.description}"
+              >
+                ${seed.term}
+              </button>
+            `)}
+          </div>
+        ` : ''}
       </div>
     `;
+    }
+
+    private handleSeedClick(seedTerm: string) {
+        // Set the search value and trigger search
+        this.searchValue = seedTerm;
+        this.performSearch();
     }
 
     private handleInput(e: Event) {

@@ -1,11 +1,10 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { SiteCssMixin } from '../utils/css-adoption.js';
-import { MonsterSearchApi } from '../data/searchApi.js';
-import { SearchSeed } from '../data/search.js';
 import './RerollButton.js';
 import './ForgeButton.js';
 import './MonsterStatblock.js';
+import './SearchBar.js';
 
 @customElement('generator-showcase')
 export class GeneratorShowcase extends SiteCssMixin(LitElement) {
@@ -25,15 +24,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     private currentMessage = '';
 
     @state()
-    private searchSeeds: SearchSeed[] = [];
+    private showSearchInterface = false;
 
-    @state()
-    private selectedSeeds: SearchSeed[] = [];
-
-    @state()
-    private showSearchSeeds = false;
-
-    private searchApi = new MonsterSearchApi();
     private timerDuration = 0;
     private timerStartTime = 0;
     private timerAnimationId: number | null = null;
@@ -48,9 +40,9 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         "Something sinister stirs...",
         "A dangerous creature awakens...",
         "Your nemesis draws near...",
-        "Looking for something specific? Try searching!",
-        "Discover monsters by theme or environment!",
-        "Find the perfect foe for your adventure!"
+        "Looking for something specific?",
+        "Discover monsters by theme!",
+        "Find the perfect foe!"
     ];
 
     private getMonsterKeyFromUrl(): string | null {
@@ -139,9 +131,9 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             display: none;
         }
 
-        .search-seeds-section {
+        .search-interface {
             margin-top: 1rem;
-            padding: 1rem;
+            padding: 1.5rem;
             border: 2px solid var(--tertiary-color, #c29a5b);
             border-radius: 12px;
             background: rgba(26, 26, 26, 0.8);
@@ -152,11 +144,11 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             animation: slideIn 0.3s ease-out;
         }
 
-        .search-seeds-section.visible {
+        .search-interface.visible {
             display: block;
         }
 
-        .search-seeds-header {
+        .search-interface-header {
             color: var(--bg-color);
             font-family: var(--header-font);
             font-size: 1.2rem;
@@ -165,7 +157,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             text-align: center;
         }
 
-        .search-seeds-description {
+        .search-interface-description {
             color: var(--bg-color);
             font-size: 0.9rem;
             margin-bottom: 1rem;
@@ -173,37 +165,10 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             opacity: 0.8;
         }
 
-        .search-seeds-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-        }
-
-        .search-seed-button {
-            background: var(--color-surface-variant, #f5f5f5);
-            border: 1px solid var(--tertiary-color, #c29a5b);
-            border-radius: 20px;
-            padding: 0.75rem 1.25rem;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-decoration: none;
-            color: var(--fg-color, #f4f1e6);
-            font-family: var(--primary-font, system-ui);
-            font-weight: 500;
-            min-width: 120px;
-            text-align: center;
-        }
-
-        .search-seed-button:hover {
-            background: var(--tertiary-color, #c29a5b);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        .search-seed-button:active {
-            transform: translateY(0);
+        .search-interface search-bar {
+            --fg-color: var(--bg-color);
+            --muted-color: rgba(255, 255, 255, 0.1);
+            --tertiary-color: var(--primary-color);
         }
 
         @keyframes slideIn {
@@ -226,8 +191,9 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         this.addEventListener('reroll-click', this._handleButtonClick.bind(this));
         this.addEventListener('forge-click', this._handleButtonClick.bind(this));
 
-        // Load search seeds
-        this._loadSearchSeeds();
+        // Add event listener for search events
+        this.addEventListener('search-query', this._handleSearchQuery.bind(this));
+        this.addEventListener('search-navigate', this._handleSearchNavigate.bind(this));
 
         // Set up intersection observer to detect when component comes into view
         this.setupIntersectionObserver();
@@ -260,35 +226,15 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         return !effectiveMonsterKey && !this.timerActive && !this.timerHasCompletedOnce;
     }
 
-    private async _loadSearchSeeds(): Promise<void> {
-        try {
-            const seeds = await this.searchApi.getSearchSeeds();
-            this.searchSeeds = seeds;
-            // Select 3 random seeds for display
-            this._selectRandomSeeds();
-        } catch (error) {
-            console.error('Failed to load search seeds:', error);
-            this.searchSeeds = [];
-        }
-    }
-
-    private _selectRandomSeeds(): void {
-        if (this.searchSeeds.length === 0) return;
-        
-        // Shuffle and take first 3
-        const shuffled = [...this.searchSeeds].sort(() => Math.random() - 0.5);
-        this.selectedSeeds = shuffled.slice(0, 3);
-    }
-
     private startTimer() {
         if (this.timerActive) return;
 
-        // Decide whether to show search seeds or normal timer
-        // 30% chance to show search seeds instead of normal timer
-        const shouldShowSearchSeeds = Math.random() < 0.3 && this.selectedSeeds.length > 0;
+        // Decide whether to show search interface or normal timer
+        // 30% chance to show search interface instead of normal timer
+        const shouldShowSearchInterface = Math.random() < 0.3;
         
-        if (shouldShowSearchSeeds) {
-            this._showSearchSeeds();
+        if (shouldShowSearchInterface) {
+            this._showSearchInterface();
             return;
         }
 
@@ -305,19 +251,19 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         this.animateProgress();
     }
 
-    private _showSearchSeeds() {
+    private _showSearchInterface() {
         // Set a search-related message
         const searchMessages = this.messages.slice(-3); // Last 3 are search-related
         this.currentMessage = searchMessages[Math.floor(Math.random() * searchMessages.length)];
         
-        this.showSearchSeeds = true;
+        this.showSearchInterface = true;
         this.timerActive = false;
         this.timerHasCompletedOnce = true; // Prevent timer from starting again
         
-        // Hide search seeds after 10 seconds
+        // Hide search interface after 15 seconds
         setTimeout(() => {
-            this.showSearchSeeds = false;
-        }, 10000);
+            this.showSearchInterface = false;
+        }, 15000);
     }
 
     private startMessageCycling() {
@@ -397,9 +343,22 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         window.open('https://buttondown.com/cordialgerm', '_blank');
     }
 
-    private _handleSearchSeedClick(seedTerm: string) {
-        // Navigate to search page with the selected seed term
-        window.location.href = `/powers/all/?q=${encodeURIComponent(seedTerm)}`;
+    private _handleSearchQuery(event: CustomEvent) {
+        // Handle search-query event from SearchBar
+        const query = event.detail.query;
+        if (query) {
+            // Navigate to search page with the query
+            window.location.href = `/powers/all/?q=${encodeURIComponent(query)}`;
+        }
+    }
+
+    private _handleSearchNavigate(event: CustomEvent) {
+        // Handle search-navigate event from SearchBar  
+        const query = event.detail.query;
+        if (query) {
+            // Navigate to search page with the query
+            window.location.href = `/powers/all/?q=${encodeURIComponent(query)}`;
+        }
     }
 
     render() {
@@ -439,20 +398,16 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                     </div>
                 </div>
                 
-                <div class="search-seeds-section ${this.showSearchSeeds ? 'visible' : ''}">
-                    <div class="search-seeds-header">Discover Monsters</div>
-                    <div class="search-seeds-description">${this.currentMessage}</div>
-                    <div class="search-seeds-container">
-                        ${this.selectedSeeds.map(seed => html`
-                            <button 
-                                class="search-seed-button"
-                                @click=${() => this._handleSearchSeedClick(seed.term)}
-                                title="${seed.description}"
-                            >
-                                ${seed.term}
-                            </button>
-                        `)}
-                    </div>
+                <div class="search-interface ${this.showSearchInterface ? 'visible' : ''}">
+                    <div class="search-interface-header">Discover Monsters</div>
+                    <div class="search-interface-description">${this.currentMessage}</div>
+                    <search-bar 
+                        placeholder="Search for undead, fiends, dragons..."
+                        button-text="Search"
+                        mode="event"
+                        seeds="3"
+                        analytics-surface="generator-showcase">
+                    </search-bar>
                 </div>
             </div>
             <monster-statblock
