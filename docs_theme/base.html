@@ -2,131 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    {% if page and page.canonical_url %}
-    <link rel="canonical" href="{{ page.canonical_url }}">
-    <meta property="og:url" content="{{ page.canonical_url }}" />
-    {% endif %}
+  {% if page and page.canonical_url %}
+  <link rel="canonical" href="{{ page.canonical_url }}">
+  <meta property="og:url" content="{{ page.canonical_url }}" />
+  {% endif %}
 
-    <link rel="shortcut icon" href="{{ 'img/icons/favicon.ico'|url }}">
+  <link rel="shortcut icon" href="{{ 'img/icons/favicon.ico'|url }}">
 
-    {% if page and not page.is_homepage %}
-    <title>{{ page.meta.title }}</title>
-    <meta property="og:title" content="{{ page.meta.title }}" />
-    {% else %}
-    <title>{{ config.site_name }}</title>
-    <meta property="og:title" content="{{ config.site_name }}" />
-    {% endif %}
+  {% if page and not page.is_homepage %}
+  <title>{{ page.meta.title }}</title>
+  <meta property="og:title" content="{{ page.meta.title }}" />
+  {% else %}
+  <title>{{ config.site_name }}</title>
+  <meta property="og:title" content="{{ config.site_name }}" />
+  {% endif %}
 
-    {% if page and page.is_homepage %}
-    <meta name="description" content="{{ config.site_description }}">
-    <meta property="og:description" content="{{ config.site_description }}" />
-    {% elif page and page.meta.description %}
-    <meta name="description" content="{{ page.meta.description }}">
-    <meta property="og:description" content="{{ page.meta.description }}" />
-    {% endif %}
+  {% if page and page.is_homepage %}
+  <meta name="description" content="{{ config.site_description }}">
+  <meta property="og:description" content="{{ config.site_description }}" />
+  {% elif page and page.meta.description %}
+  <meta name="description" content="{{ page.meta.description }}">
+  <meta property="og:description" content="{{ page.meta.description }}" />
+  {% endif %}
 
-    <meta property="og:type" content="website" />
+  <meta property="og:type" content="website" />
 
-    <link rel=alternate title="Blog Posts" type=application/rss+xml href="{{ 'rss.xml' | url }}">
+  <link rel=alternate title="Blog Posts" type=application/rss+xml href="{{ 'rss.xml' | url }}">
 
-    {% if page and page.meta.image %}
-    <meta property="og:image" content="{{ config.site_url + page.meta.image}}" />
-    {% endif %}
+  {% if page and page.meta.image %}
+  <meta property="og:image" content="{{ config.site_url + page.meta.image}}" />
+  {% endif %}
 
-    {% include "partials/styles.html" %}
+  {% include "partials/styles.html" %}
 
-    {% if page and page.meta and page.meta.json_ld %}
-    <script type="application/ld+json">
+  {% if page and page.meta and page.meta.json_ld %}
+  <script type="application/ld+json">
         {{ page.meta["json_ld"] }}
     </script>
-    {% endif %}
+  {% endif %}
 
-    {% include "partials/analytics.html" %}
+  {% include "partials/analytics.html" %}
 
-    <script>
-        var base_url = {{ base_url | url | tojson }}, shortcuts = {};
-        window.baseUrl = base_url;
+  <script>
+    var base_url = {{ base_url | url | tojson }}, shortcuts = {};
+    window.baseUrl = base_url;
 
-        var defaultMonsterKey = "{{ default_monster_key }}";
-        window.defaultMonsterKey = defaultMonsterKey;
-    </script>
+    var defaultMonsterKey = "{{ default_monster_key }}";
+    window.defaultMonsterKey = defaultMonsterKey;
+  </script>
 
 </head>
 
 <statblock-tutorial></statblock-tutorial>
 {% if page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
-<!-- Generator page: Simple centered animated skull -->
-<style>
-  .generator-skull {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    pointer-events: none;
-  }
-  .generator-skull animated-skull {
-    pointer-events: auto;
-  }
-</style>
-<div class="generator-skull">
-  <animated-skull 
-    display="visible" 
-    quotes="Ready to forge true nightmares?;Your monsters need more personality...;Let me teach you the dark arts.;Subscribe for forbidden knowledge."
-  ></animated-skull>
-</div>
+<!-- Generator page: don't place animated skull yet -->
 {% else %}
 <!-- Content pages: Use the injector for smart placement -->
 <skull-upsell-injector enabled min-skulls="2" max-skulls="3" injected-class="centered"></skull-upsell-injector>
 {% endif %}
 
 <body {% if page and page.is_homepage %} class="homepage" {% endif %}>
-    {% include "partials/navbar.html" %}
+  {% include "partials/navbar.html" %}
 
-    {% include "partials/banner.html" %}
+  {% include "partials/banner.html" %}
 
-    {% if page and page.is_homepage %}
-    <div class="container-md pamphlet-container">
-        {% include "homepage.j2.html" %}
+  {% if page and page.is_homepage %}
+  <div class="container-md pamphlet-container">
+    {% include "homepage.j2.html" %}
+  </div>
+  {% elif page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
+  <div class="container-md pamphlet-container">
+    {% include "generate.j2.html" %}
+  </div>
+  {% elif page and (page.url == '/codex/' or page.url == '/codex' or page.url == 'codex/') %}
+  <div class="container-fluid pamphlet-container">
+    {% include "codex.j2.html" %}
+  </div>
+  {% elif page and (page.url == '/print-preview/' or page.url == '/print-preview' or page.url == 'print-preview/') %}
+  <div class="container-md pamphlet-container print-preview">
+    {% include "print-preview.j2.html" %}
+  </div>
+  {% else %}
+  <div class="container-md pamphlet-container">
+    <div class="row justify-content-center">
+      {%- block content %}
+      {% if page and "toc" not in page.meta.hide %}
+      <div class="d-none d-xl-block col-xl-3 d-print-none">{% include "toc.html" %}</div>
+      <div class="col-12 col-xl-9 pamphlet-main" role="main">{% include "content.html" %}</div>
+      {% else %}
+      <div class="col-12 pamphlet-main" role="main">{% include "content.html" %}</div>
+      {% endif %}
+      {%- endblock %}
     </div>
-    {% elif page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
-    <div class="container-md pamphlet-container">
-        {% include "generate.j2.html" %}
-    </div>
-    {% elif page and (page.url == '/codex/' or page.url == '/codex' or page.url == 'codex/') %}
-    <div class="container-fluid pamphlet-container">
-        {% include "codex.j2.html" %}
-    </div>
-    {% elif page and (page.url == '/print-preview/' or page.url == '/print-preview' or page.url == 'print-preview/') %}
-    <div class="container-md pamphlet-container print-preview">
-        {% include "print-preview.j2.html" %}
-    </div>
-    {% else %}
-    <div class="container-md pamphlet-container">
-        <div class="row justify-content-center">
-            {%- block content %}
-            {% if page and "toc" not in page.meta.hide %}
-            <div class="d-none d-xl-block col-xl-3 d-print-none">{% include "toc.html" %}</div>
-            <div class="col-12 col-xl-9 pamphlet-main" role="main">{% include "content.html" %}</div>
-            {% else %}
-            <div class="col-12 pamphlet-main" role="main">{% include "content.html" %}</div>
-            {% endif %}
-            {%- endblock %}
-        </div>
-    </div>
-    {% endif %}
+  </div>
+  {% endif %}
 
-    {% include "partials/footer.html" %}
+  {% include "partials/footer.html" %}
 
-    {% include "partials/scripts.html" %}
+  {% include "partials/scripts.html" %}
 
-    {% if 'search' in config.plugins %}{%- include "search-modal.html" %}{% endif %}
-    {%- include "keyboard-modal.html" %}
+  {% if 'search' in config.plugins %}{%- include "search-modal.html" %}{% endif %}
+  {%- include "keyboard-modal.html" %}
 
 </body>
 
