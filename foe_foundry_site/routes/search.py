@@ -11,7 +11,7 @@ import yaml
 from foe_foundry.creature_types import CreatureType
 from foe_foundry_data.base import MonsterInfoModel
 from foe_foundry_data.monsters.all import Monsters
-from foe_foundry_search.search import search_monsters
+from foe_foundry_search.search import enhanced_search_monsters
 
 router = APIRouter(prefix="/api/v1/search")
 
@@ -130,7 +130,7 @@ def get_search_monsters(
         limit = 5
 
     results = []
-    for search_result in search_monsters(search_query=query, limit=limit, max_hops=4):
+    for search_result in enhanced_search_monsters(search_query=query, limit=limit, max_hops=4):
         monster_key = search_result.monster_key
         if not monster_key:
             continue
@@ -193,7 +193,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
         search_kwargs["target_cr"] = request.target_cr
 
     results = []
-    for search_result in search_monsters(**search_kwargs):
+    for search_result in enhanced_search_monsters(**search_kwargs):
         monster_key = search_result.monster_key
         if not monster_key:
             continue
@@ -256,7 +256,7 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
         search_kwargs["target_cr"] = request.target_cr
 
     results = []
-    for search_result in search_monsters(**search_kwargs):
+    for search_result in enhanced_search_monsters(**search_kwargs):
         monster_key = search_result.monster_key
         if not monster_key:
             continue

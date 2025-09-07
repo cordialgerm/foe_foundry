@@ -67,18 +67,31 @@
 /* Tab Content */
 .codex-tab-content {
     display: none;
-    padding: 2rem 0;
+    height: calc(100vh - 120px);
+    /* Account for tab navigation height */
+    overflow: hidden;
+    /* Prevent this level from scrolling */
+    flex-direction: column;
 }
 
 .codex-tab-content.active {
-    display: block;
+    display: flex;
 }
 
 /* Search Section for Browse Tab */
 .codex-search-section {
     max-width: 800px;
-    margin: 0 auto 3rem auto;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem 1rem;
+    flex-shrink: 0;
+    /* Don't shrink this section */
+}
+
+/* Monster Family Browse Component */
+monster-family-browse {
+    flex: 1;
+    /* Take up remaining space */
+    overflow: hidden;
 }
 
 /* Carousels Section */

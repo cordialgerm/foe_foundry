@@ -13,6 +13,9 @@ from ..base import MonsterInfoModel
 from ..refs import MonsterRefResolver
 from .data import MonsterFamilyModel
 
+
+
+
 ref_resolver = MonsterRefResolver()
 
 
@@ -64,11 +67,18 @@ def load_families() -> list[MonsterFamilyModel]:
                         )
                     )
 
+            icon = frontmatter.get("icon", "monster-grasp")
+            if not isinstance(icon, str):
+                raise ValueError(
+                    f"Invalid icon for family '{name}': {icon}. Expected a string."
+                )
+
             families.append(
                 MonsterFamilyModel(
                     key=name_to_key(name),
                     name=title,
                     tag_line=tag_line,
+                    icon=icon,
                     monsters=monsters,
                 )
             )
