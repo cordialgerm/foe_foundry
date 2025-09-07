@@ -69,7 +69,7 @@ export class MonsterCarousel extends LitElement {
 
     /* Swiper container styles similar to homepage */
     .swiper-container {
-      position: relative;
+      position: relative !important;
       max-width: 100%;
       overflow: hidden;
       min-height: 300px;
@@ -409,29 +409,49 @@ export class MonsterCarousel extends LitElement {
     /* Swiper navigation buttons matching homepage */
     .swiper-button-next,
     .swiper-button-prev {
-      color: var(--primary-color) !important;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
+      position: absolute !important;
+      top: 50% !important;
       width: 44px !important;
       height: 44px !important;
       margin-top: -22px !important;
+      z-index: 10 !important;
+      cursor: pointer !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      color: var(--primary-color) !important;
+      background: none !important;
+      border: none !important;
+      transform: translateY(-50%) !important;
+    }
+
+    .swiper-button-prev {
+      left: 10px !important;
+      right: auto !important;
+    }
+
+    .swiper-button-next {
+      right: 10px !important;
+      left: auto !important;
     }
 
     .swiper-button-next:after {
       content: '>' !important;
       font-size: 18px !important;
-      font-weight: bold;
+      font-weight: bold !important;
+      font-family: inherit !important;
     }
 
     .swiper-button-prev:after {
       content: '<' !important;
       font-size: 18px !important;
-      font-weight: bold;
+      font-weight: bold !important;
+      font-family: inherit !important;
     }
 
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
-      background: rgba(0, 0, 0, 0.7);
+      color: rgba(255, 107, 53, 0.8) !important;
     }
 
     .swiper-button-disabled {
@@ -603,13 +623,15 @@ export class MonsterCarousel extends LitElement {
         spaceBetween: 16,
         initialSlide: 1,
         centeredSlides: true,
-        createElements: true, // This creates the navigation buttons automatically
         grabCursor: true,
         direction: 'horizontal', // Explicitly set horizontal direction
         keyboard: {
           enabled: true,
         },
-        navigation: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
         parallax: true,
         simulateTouch: true,
         autoplay: {
@@ -686,6 +708,9 @@ export class MonsterCarousel extends LitElement {
             <div class="swiper-wrapper">
               ${templates.map(template => this.renderMonsterCard(template))}
             </div>
+            <!-- Navigation buttons explicitly rendered in template -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
           <style>
             /* Inline styles to ensure horizontal layout */
