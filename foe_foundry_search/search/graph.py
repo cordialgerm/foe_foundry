@@ -33,7 +33,9 @@ Example usage:
             print(f"  Family: {result.family_key}")
 """
 
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, replace
 from enum import StrEnum
 from typing import Callable, Iterable
 
@@ -60,6 +62,9 @@ class EntitySearchResult:
 
     score: float
     document_matches: list[DocumentSearchResult]
+
+    def copy(self, **args) -> EntitySearchResult:
+        return replace(self, **args)
 
 
 def search_entities_with_graph_expansion(
@@ -195,8 +200,8 @@ def search_monsters(
         if min_cr is not None or max_cr is not None:
             # Use explicit min/max CR if provided
             effective_min_cr = min_cr if min_cr is not None else 0.0
-            effective_max_cr = max_cr if max_cr is not None else float('inf')
-            
+            effective_max_cr = max_cr if max_cr is not None else float("inf")
+
             if not (effective_min_cr <= cr <= effective_max_cr):
                 return False
         elif target_cr is not None:
