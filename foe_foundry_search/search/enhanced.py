@@ -43,6 +43,12 @@ def enhanced_search_monsters(
         Iterable of EntitySearchResult objects
     """
 
+    # Handle empty or whitespace-only queries
+    if not search_query or not search_query.strip():
+        return _get_regular_search_results(
+            search_query, target_cr, min_cr, max_cr, creature_types, limit, max_hops, alpha
+        )
+
     # Step 1: Check for exact monster match using MonsterRefResolver
     ref_resolver = MonsterRefResolver()
     monster_ref = ref_resolver.resolve_monster_ref(search_query)
