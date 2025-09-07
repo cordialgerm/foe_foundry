@@ -143,9 +143,10 @@ monster-codex:not(:defined) {
 /* Responsive Design */
 @media (max-width: 768px) {
     .codex-tab {
-        padding: 0.75rem 1rem;
+        padding: 1rem 1.25rem;
         font-size: 1rem;
         max-width: none;
+        min-height: 52px; /* Better touch target */
     }
 
     .tab-icon {
@@ -153,11 +154,12 @@ monster-codex:not(:defined) {
     }
 
     .codex-search-section {
-        padding: 0 0.5rem;
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
     }
 
     .codex-carousels {
-        padding: 0 0.5rem;
+        padding: 0 1rem;
     }
 
     .carousel-title {
@@ -166,15 +168,27 @@ monster-codex:not(:defined) {
 }
 
 @media (max-width: 480px) {
+    .codex-tabs {
+        gap: 0.25rem;
+        padding: 0 0.5rem;
+    }
+
+    .codex-tab {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+        min-height: 48px;
+    }
+
     .codex-tab-content {
-        padding: 1rem 0;
+        padding: 1.25rem 0;
     }
 
     .codex-search-section {
-        margin-bottom: 2rem;
+        padding: 1.25rem 0.75rem;
+        margin-bottom: 1.5rem;
     }
 
     .carousel-section {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }

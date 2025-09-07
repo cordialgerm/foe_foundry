@@ -5,31 +5,19 @@ import { apiMonsterStore, MonsterFamily } from '../data/api.js';
 import './MonsterCarousel.js';
 import './SvgIcon.js';
 
-interface ActiveCarousel {
-  familyKey: string;
-  familyName: string;
-  familyUrl: string;
-  familyTagLine: string;
-  familyIcon: string;
-}
-
 @customElement('monster-family-browse')
 export class MonsterFamilyBrowse extends LitElement {
-  @state() private activeCarousels: ActiveCarousel[] = [];
-  @state() private selectedFamilyIndex: number = 0; // Which carousel slot to replace next
+  @state() private shuffledFamilies: MonsterFamily[] = [];
+  @state() private alphabeticalFamilies: MonsterFamily[] = [];
 
   private familiesTask = new Task(this, async () => {
     const families = await apiMonsterStore.getAllFamilies();
 
-    // Randomly select 3 families for initial display
-    const shuffled = [...families].sort(() => 0.5 - Math.random());
-    this.activeCarousels = shuffled.slice(0, 3).map(family => ({
-      familyKey: family.key,
-      familyName: family.name,
-      familyUrl: family.url,
-      familyTagLine: family.tag_line,
-      familyIcon: family.icon
-    }));
+    // Create shuffled version for main content display
+    this.shuffledFamilies = [...families].sort(() => 0.5 - Math.random());
+
+    // Create alphabetical version for left navigation
+    this.alphabeticalFamilies = [...families].sort((a, b) => a.name.localeCompare(b.name));
 
     return families;
   }, () => []);
@@ -208,16 +196,11 @@ export class MonsterFamilyBrowse extends LitElement {
       }
 
       .toc-panel {
-        width: 100%;
-        max-height: 300px;
-        border-right: none;
-        border-bottom: 2px solid var(--border-color);
-        height: auto;
-        overflow-y: auto; /* Ensure scrolling works on mobile */
+        display: none; /* Hide the left navigation panel on mobile */
       }
 
       .content-panel {
-        padding: 1rem;
+        padding: 1.25rem;
         padding-top: 0rem;
         height: auto;
         overflow-y: visible; /* Remove scroll on mobile since container is auto height */
@@ -225,7 +208,7 @@ export class MonsterFamilyBrowse extends LitElement {
 
       .carousel-section {
         margin-bottom: 2rem;
-        padding: 1rem;
+        padding: 1.25rem;
       }
 
       .carousel-title {
@@ -235,6 +218,60 @@ export class MonsterFamilyBrowse extends LitElement {
       .carousel-icon {
         width: 24px;
         height: 24px;
+      }
+    }
+
+    /* Additional mobile improvements for smaller screens */
+    @media (max-width: 768px) {
+      .toc-panel {
+        display: none; /* Ensure toc-panel is hidden on smaller screens too */
+      }
+
+      .content-panel {
+        padding: 1rem;
+        padding-top: 0;
+      }
+
+      .carousel-section {
+        padding: 1rem;
+        margin-bottom: 1.75rem;
+      }
+
+      .carousel-title {
+        font-size: 1.5rem;
+      }
+
+      .carousel-tagline {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .toc-panel {
+        display: none; /* Ensure toc-panel is hidden on smallest screens too */
+      }
+
+      .content-panel {
+        padding: 0.875rem;
+        padding-top: 0;
+      }
+
+      .carousel-section {
+        padding: 0.875rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .carousel-title {
+        font-size: 1.375rem;
+      }
+
+      .carousel-icon {
+        width: 22px;
+        height: 22px;
+      }
+
+      .carousel-tagline {
+        font-size: 0.9rem;
       }
     }
 
@@ -312,26 +349,26 @@ export class MonsterFamilyBrowse extends LitElement {
         <div class="toc-panel">
           <h2 class="toc-title">Monster Families</h2>
           <ul class="family-list">
-            ${families.map(family => this.renderFamilyLink(family))}
+            ${this.alphabeticalFamilies.map(family => this.renderFamilyLink(family))}
           </ul>
         </div>
 
         <!-- Main Content Panel -->
         <div class="content-panel">
-          ${this.activeCarousels.map((carousel, index) => html`
-            <section class="carousel-section">
+          ${this.shuffledFamilies.map((family, index) => html`
+            <section class="carousel-section" id="family-${family.key}">
               <div class="carousel-header">
-                <svg-icon class="carousel-icon" src="${carousel.familyIcon}"></svg-icon>
+                <svg-icon class="carousel-icon" src="${family.icon}"></svg-icon>
                 <div class="carousel-title-section">
                   <h2 class="carousel-title">
-                    <a href="${carousel.familyUrl}" title="View ${carousel.familyName} family page">
-                      ${carousel.familyName}
+                    <a href="${family.url}" title="View ${family.name} family page">
+                      ${family.name}
                     </a>
                   </h2>
-                  <p class="carousel-tagline">${carousel.familyTagLine}</p>
+                  <p class="carousel-tagline">${family.tag_line}</p>
                 </div>
               </div>
-              <monster-carousel filter="family:${carousel.familyKey}"></monster-carousel>
+              <monster-carousel filter="family:${family.key}"></monster-carousel>
             </section>
           `)}
         </div>
@@ -340,15 +377,13 @@ export class MonsterFamilyBrowse extends LitElement {
   }
 
   private renderFamilyLink(family: MonsterFamily) {
-    const isActive = this.activeCarousels.some(carousel => carousel.familyKey === family.key);
-
     return html`
       <li class="family-item">
         <a
           href="${family.url}"
-          class="family-link ${isActive ? 'active' : ''}"
+          class="family-link"
           @click=${(e: Event) => this.handleFamilyClick(e, family)}
-          title="Show ${family.name} monsters">
+          title="View ${family.name} family page">
           <svg-icon class="family-icon" src="${family.icon}"></svg-icon>
           <div class="family-info">
             <div class="family-name">${family.name}</div>
@@ -360,36 +395,19 @@ export class MonsterFamilyBrowse extends LitElement {
   }
 
   private handleFamilyClick(e: Event, family: MonsterFamily) {
-    // Prevent navigation for intercept behavior
+    // Prevent navigation for anchor click behavior
     e.preventDefault();
 
-    // Replace the current selected carousel with this family
-    const newCarousel: ActiveCarousel = {
-      familyKey: family.key,
-      familyName: family.name,
-      familyUrl: family.url,
-      familyTagLine: family.tag_line,
-      familyIcon: family.icon
-    };
-
-    // Create new array with the replacement
-    const newCarousels = [...this.activeCarousels];
-    newCarousels[this.selectedFamilyIndex] = newCarousel;
-    this.activeCarousels = newCarousels;
-
-    // Move to the next carousel slot for the next click
-    this.selectedFamilyIndex = (this.selectedFamilyIndex + 1) % this.activeCarousels.length;
-
-    // Scroll to the replaced carousel
-    this.scrollToCarousel(this.selectedFamilyIndex === 0 ? this.activeCarousels.length - 1 : this.selectedFamilyIndex - 1);
+    // Scroll to the family section
+    this.scrollToFamily(family.key);
   }
 
-  private scrollToCarousel(index: number) {
-    // Wait for the next frame to ensure the DOM has updated
+  private scrollToFamily(familyKey: string) {
+    // Wait for the next frame to ensure the DOM is ready
     requestAnimationFrame(() => {
-      const carouselSections = this.shadowRoot?.querySelectorAll('.carousel-section');
-      if (carouselSections && carouselSections[index]) {
-        carouselSections[index].scrollIntoView({
+      const familySection = this.shadowRoot?.querySelector(`#family-${familyKey}`);
+      if (familySection) {
+        familySection.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });

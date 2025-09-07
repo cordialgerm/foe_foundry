@@ -131,12 +131,50 @@ export class SearchBar extends LitElement {
       }
 
       .search-input-container {
-        flex-direction: column;
         gap: 0.75rem;
       }
 
+      .search-input {
+        padding: 0.875rem 1rem;
+        font-size: 1rem;
+      }
+
       .search-button {
+        padding: 0.875rem 1.25rem;
+        font-size: 1rem;
         justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .search-section {
+        padding: 0 0.25rem;
+      }
+
+      .search-input-container {
+        flex-direction: column;
+        gap: 0.875rem;
+      }
+
+      .search-input {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      .search-button {
+        padding: 1rem;
+        font-size: 1rem;
+        justify-content: center;
+      }
+
+      .search-seeds {
+        margin-top: 1.25rem;
+        gap: 0.75rem;
+      }
+
+      .search-seed-button {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
       }
     }
   `;
