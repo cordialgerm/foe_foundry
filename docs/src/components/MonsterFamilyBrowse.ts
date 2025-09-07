@@ -214,10 +214,11 @@ export class MonsterFamilyBrowse extends LitElement {
         border-bottom: 2px solid var(--border-color);
         height: auto;
         overflow-y: auto; /* Ensure scrolling works on mobile */
+        padding: 1.25rem;
       }
 
       .content-panel {
-        padding: 1rem;
+        padding: 1.25rem;
         padding-top: 0rem;
         height: auto;
         overflow-y: visible; /* Remove scroll on mobile since container is auto height */
@@ -225,7 +226,7 @@ export class MonsterFamilyBrowse extends LitElement {
 
       .carousel-section {
         margin-bottom: 2rem;
-        padding: 1rem;
+        padding: 1.25rem;
       }
 
       .carousel-title {
@@ -235,6 +236,99 @@ export class MonsterFamilyBrowse extends LitElement {
       .carousel-icon {
         width: 24px;
         height: 24px;
+      }
+    }
+
+    /* Additional mobile improvements for smaller screens */
+    @media (max-width: 768px) {
+      .toc-panel {
+        padding: 1rem;
+        max-height: 280px;
+      }
+
+      .toc-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .family-link {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 6px;
+      }
+
+      .family-icon {
+        width: 22px;
+        height: 22px;
+        margin-right: 1rem;
+      }
+
+      .family-monster-count {
+        font-size: 0.9rem;
+      }
+
+      .content-panel {
+        padding: 1rem;
+        padding-top: 0;
+      }
+
+      .carousel-section {
+        padding: 1rem;
+        margin-bottom: 1.75rem;
+      }
+
+      .carousel-title {
+        font-size: 1.5rem;
+      }
+
+      .carousel-tagline {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .toc-panel {
+        padding: 0.875rem;
+        max-height: 260px;
+      }
+
+      .toc-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.875rem;
+      }
+
+      .family-link {
+        padding: 0.875rem;
+        font-size: 0.95rem;
+      }
+
+      .family-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.875rem;
+      }
+
+      .content-panel {
+        padding: 0.875rem;
+        padding-top: 0;
+      }
+
+      .carousel-section {
+        padding: 0.875rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .carousel-title {
+        font-size: 1.375rem;
+      }
+
+      .carousel-icon {
+        width: 22px;
+        height: 22px;
+      }
+
+      .carousel-tagline {
+        font-size: 0.9rem;
       }
     }
 
