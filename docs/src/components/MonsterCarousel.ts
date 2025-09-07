@@ -621,6 +621,10 @@ export class MonsterCarousel extends LitElement {
 
       const delay = 5000 + Math.random() * 3000;
 
+      // Get navigation elements from shadow root
+      const nextEl = this.shadowRoot!.querySelector('.swiper-button-next') as HTMLElement;
+      const prevEl = this.shadowRoot!.querySelector('.swiper-button-prev') as HTMLElement;
+
       // Use configuration that matches homepage for consistent navigation
       this.swiperInstance = new Swiper(swiperContainer as HTMLElement, {
         modules: [Autoplay, Navigation, Keyboard, Parallax],
@@ -634,8 +638,8 @@ export class MonsterCarousel extends LitElement {
           enabled: true,
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: nextEl,
+          prevEl: prevEl,
         },
         parallax: true,
         simulateTouch: true,
