@@ -1432,8 +1432,25 @@ export class MonsterCodex extends LitElement {
     window.location.href = `/generate/?monster=${key}`;
   }
 
+  firstUpdated() {
+    // Handle initial query if provided
+    if (this.initialQuery && this.initialQuery !== this.query) {
+      this.query = this.initialQuery;
+      // Dispatch search event to ensure URL parameters are updated
+      this.dispatchSearchEvent();
+    }
+  }
+
   updated(changedProperties: Map<string | number | symbol, unknown>) {
     super.updated(changedProperties);
+
+    // Handle initialQuery property changes
+    if (changedProperties.has('initialQuery') && this.initialQuery && this.initialQuery !== this.query) {
+      this.query = this.initialQuery;
+      // Dispatch search event to ensure URL parameters are updated
+      this.dispatchSearchEvent();
+    }
+
     if (changedProperties.has('selectedMonster') || changedProperties.has('monsters')) {
       this.requestUpdate();
     }

@@ -2,9 +2,11 @@ from __future__ import annotations
 
 from typing import Annotated
 import collections
+from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
+import yaml
 
 from foe_foundry.creature_types import CreatureType
 from foe_foundry_data.base import MonsterInfoModel
@@ -31,6 +33,12 @@ class SearchFacet(BaseModel):
 class SearchFacets(BaseModel):
     creatureTypes: list[SearchFacet]
     crRange: dict[str, float]  # {"min": float, "max": float}
+
+
+class SearchSeed(BaseModel):
+    term: str
+    description: str
+    examples: list[str] | None = None
 
 
 class MonsterSearchResult(BaseModel):
@@ -77,6 +85,18 @@ def _get_all_monsters() -> list[MonsterInfoModel]:
     ]
 
 
+def _load_search_seeds() -> list[SearchSeed]:
+    """Load search seeds from the YAML file"""
+    seeds_file = Path(__file__).parent.parent.parent / "data" / "search_seeds.yaml"
+    try:
+        with open(seeds_file, 'r') as f:
+            data = yaml.safe_load(f)
+        return [SearchSeed(**seed) for seed in data.get('search_seeds', [])]
+    except Exception as e:
+        # Return empty list if file not found or parse error
+        return []
+
+
 @router.get("/facets")
 def get_search_facets() -> SearchFacets:
     """
@@ -85,6 +105,15 @@ def get_search_facets() -> SearchFacets:
     """
     all_monsters = _get_all_monsters()
     return _calculate_facets(all_monsters)
+
+
+@router.get("/seeds")
+def get_search_seeds() -> list[SearchSeed]:
+    """
+    Returns predefined search seed terms to inspire users and help them discover monsters.
+    These are curated search terms that are guaranteed to return good results.
+    """
+    return _load_search_seeds()
 
 
 @router.get("/monsters")

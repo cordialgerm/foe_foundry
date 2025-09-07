@@ -7,17 +7,22 @@ import '../components/SearchBar.js';
 export { };
 
 // Initialize codex functionality when on the codex page
-if (window.location.pathname === '/codex' || window.location.pathname === '/codex/') {
+if (window.location.pathname === '/codex' || window.location.pathname === '/codex/' || window.location.pathname.includes('/codex')) {
     console.log('Loaded codex page');
-    initializeCodex();
+    // Use DOMContentLoaded to ensure the page is fully loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeCodex);
+    } else {
+        // DOM is already loaded
+        initializeCodex();
+    }
 }
 
 function initializeCodex() {
+    console.log('Initializing codex functionality...');
+
     // Handle tab navigation
     setupTabNavigation();
-
-    // Handle URL hash and query parameters
-    handleInitialUrlState();
 
     // Setup search functionality
     setupSearchNavigation();
@@ -30,9 +35,14 @@ function initializeCodex() {
 
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashChange);
-}
 
-function setupTabNavigation() {
+    // Handle URL hash and query parameters
+    // Add a small delay to ensure all components are ready
+    setTimeout(() => {
+        console.log('Running initial URL state handling...');
+        handleInitialUrlState();
+    }, 100);
+} function setupTabNavigation() {
     const tabs = document.querySelectorAll('.codex-tab');
     const contents = document.querySelectorAll('.codex-tab-content');
 
@@ -74,11 +84,14 @@ function setupSearchNavigation() {
 }
 
 function switchToSearchTab(query?: string) {
+    console.log('switchToSearchTab called with query:', query);
+
     // Activate search tab
     const searchTab = document.querySelector('.codex-tab[data-tab="search"]') as HTMLElement;
     const searchContent = document.querySelector('.codex-tab-content[data-content="search"]') as HTMLElement;
 
     if (searchTab && searchContent) {
+        console.log('Found search tab elements, activating...');
         // Update tab states
         document.querySelectorAll('.codex-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.codex-tab-content').forEach(c => c.classList.remove('active'));
@@ -92,32 +105,48 @@ function switchToSearchTab(query?: string) {
         if (query) {
             url.searchParams.set('query', query);
         }
+        console.log('Updating URL to:', url.toString());
         window.history.pushState({}, '', url.toString());
 
         // Update monster-codex component with search query
         const monsterCodex = document.querySelector('monster-codex') as any;
         if (monsterCodex && query) {
-            // Use the new public method to set search query
+            // Use the public method to set search query
             if (typeof monsterCodex.setSearchQuery === 'function') {
                 monsterCodex.setSearchQuery(query);
             } else {
-                // Fallback to attribute setting
+                // Fallback: set the query directly on the component's query property
+                monsterCodex.query = query;
+                // Also set the attribute for consistency
                 monsterCodex.setAttribute('initial-query', query);
-
-                // Dispatch custom event
-                monsterCodex.dispatchEvent(new CustomEvent('search-query-changed', {
-                    detail: { query }
-                }));
+                // Trigger a re-render to ensure the search executes
+                monsterCodex.requestUpdate();
             }
+        } else if (query) {
+            // If monster-codex component isn't ready yet, try again after a short delay
+            setTimeout(() => {
+                const delayedMonsterCodex = document.querySelector('monster-codex') as any;
+                if (delayedMonsterCodex) {
+                    if (typeof delayedMonsterCodex.setSearchQuery === 'function') {
+                        delayedMonsterCodex.setSearchQuery(query);
+                    } else {
+                        delayedMonsterCodex.query = query;
+                        delayedMonsterCodex.setAttribute('initial-query', query);
+                        delayedMonsterCodex.requestUpdate();
+                    }
+                }
+            }, 100);
         }
     }
 }
 
 function switchToBrowseTab() {
+    console.log('switchToBrowseTab called');
     const browseTab = document.querySelector('.codex-tab[data-tab="browse"]') as HTMLElement;
     const browseContent = document.querySelector('.codex-tab-content[data-content="browse"]') as HTMLElement;
 
     if (browseTab && browseContent) {
+        console.log('Found browse tab elements, activating...');
         // Update tab states
         document.querySelectorAll('.codex-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.codex-tab-content').forEach(c => c.classList.remove('active'));
@@ -129,6 +158,7 @@ function switchToBrowseTab() {
         const url = new URL(window.location.href);
         url.hash = 'browse';
         url.searchParams.delete('query'); // Remove query when switching to browse
+        console.log('Updating URL to:', url.toString());
         window.history.pushState({}, '', url.toString());
     }
 }
@@ -157,8 +187,16 @@ function handleInitialUrlState() {
     const url = new URL(window.location.href);
     const hash = url.hash.substring(1); // Remove #
     const query = url.searchParams.get('query');
-    let focused = false;
+
+    console.log('Handling initial URL state:', {
+        fullUrl: url.toString(),
+        hash,
+        query,
+        pathname: window.location.pathname
+    });
+
     if (hash === 'search' || query) {
+        console.log('Detected search intent, switching to search tab with query:', query);
         // Switch to search tab
         switchToSearchTab(query || undefined);
         // Focus search input if present and hash is search
@@ -169,22 +207,22 @@ function handleInitialUrlState() {
                 if (searchBar && typeof searchBar.focusInput === 'function') {
                     searchBar.focusInput();
                 }
-            }, 0);
-            focused = true;
+            }, 100); // Increased delay to ensure components are ready
         }
     } else if (hash === 'catalog') {
+        console.log('Switching to catalog tab');
         // Switch to catalog tab
         switchToCatalogTab();
-    } else if (hash === 'browse') {
+    } else if (hash === 'browse' || hash === '') {
+        console.log('Switching to browse tab (default or explicit)');
         // Switch to browse tab (already default, but ensure state is correct)
         switchToBrowseTab();
     } else {
-        // Default to browse tab
+        console.log('Unknown hash, defaulting to browse:', hash);
+        // Default to browse tab only for truly unknown hashes
         switchToBrowseTab();
     }
-}
-
-function handleHashChange() {
+} function handleHashChange() {
     handleInitialUrlState();
 }
 

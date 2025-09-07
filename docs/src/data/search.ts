@@ -40,6 +40,13 @@ export interface MonsterSearchResult {
     total?: number;
 }
 
+// Search seed interface
+export interface SearchSeed {
+    term: string;
+    description: string;
+    examples?: string[];
+}
+
 // Search API interface
 export interface IMonsterSearchApi {
     /**
@@ -55,4 +62,10 @@ export interface IMonsterSearchApi {
      * @returns Promise resolving to facets with total counts
      */
     getFacets(): Promise<SearchFacets>;
+
+    /**
+     * Get predefined search seed terms to inspire users
+     * @returns Promise resolving to array of search seeds
+     */
+    getSearchSeeds(): Promise<SearchSeed[]>;
 }
