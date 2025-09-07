@@ -116,6 +116,7 @@ def get_all_families() -> list[dict]:
                 "key": family.key,
                 "name": family.name,
                 "tag_line": family.tag_line,
+                "icon": family.icon,
                 "monster_count": len(family.monsters),
                 "url": f"/families/{family.key}/"
             }

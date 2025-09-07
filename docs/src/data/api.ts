@@ -40,6 +40,7 @@ export interface MonsterFamily {
     key: string;
     name: string;
     tag_line: string;
+    icon: string;
     monster_count: number;
     url: string;
 }

@@ -3,11 +3,14 @@ import { customElement, state } from 'lit/decorators.js';
 import { Task } from '@lit/task';
 import { apiMonsterStore, MonsterFamily } from '../data/api.js';
 import './MonsterCarousel.js';
+import './SvgIcon.js';
 
 interface ActiveCarousel {
   familyKey: string;
   familyName: string;
   familyUrl: string;
+  familyTagLine: string;
+  familyIcon: string;
 }
 
 @customElement('monster-family-browse')
@@ -23,7 +26,9 @@ export class MonsterFamilyBrowse extends LitElement {
     this.activeCarousels = shuffled.slice(0, 3).map(family => ({
       familyKey: family.key,
       familyName: family.name,
-      familyUrl: family.url
+      familyUrl: family.url,
+      familyTagLine: family.tag_line,
+      familyIcon: family.icon
     }));
     
     return families;
@@ -39,6 +44,7 @@ export class MonsterFamilyBrowse extends LitElement {
       display: flex;
       height: 100vh;
       min-height: 600px;
+      align-items: flex-start; /* Top align both panels */
     }
 
     /* Table of Contents Panel */
@@ -49,6 +55,8 @@ export class MonsterFamilyBrowse extends LitElement {
       overflow-y: auto;
       padding: 1.5rem;
       position: relative;
+      flex-shrink: 0; /* Prevent panel from shrinking */
+      height: 100%; /* Full height to match content panel */
     }
 
     .toc-title {
@@ -71,7 +79,8 @@ export class MonsterFamilyBrowse extends LitElement {
     }
 
     .family-link {
-      display: block;
+      display: flex;
+      align-items: center;
       padding: 0.75rem 1rem;
       color: var(--fg-color);
       text-decoration: none;
@@ -80,6 +89,18 @@ export class MonsterFamilyBrowse extends LitElement {
       border: 1px solid transparent;
       font-family: var(--primary-font);
       line-height: 1.4;
+    }
+
+    .family-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+      color: currentColor;
+    }
+
+    .family-info {
+      flex: 1;
     }
 
     .family-link:hover {
@@ -102,18 +123,31 @@ export class MonsterFamilyBrowse extends LitElement {
       margin-top: 0.25rem;
     }
 
+    /* Scroll indicator */
+    .toc-panel::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: linear-gradient(transparent, var(--bg-color));
+      pointer-events: none;
+    }
+
     /* Main Content Panel */
     .content-panel {
       flex: 1;
       overflow-y: auto;
       padding: 1.5rem;
       background: var(--muted-color);
+      height: 100%; /* Full height to match toc panel */
     }
 
     .carousel-section {
       margin-bottom: 3rem;
       border-radius: 8px;
-      background: var(--bg-color);
+      background: var(--bg-color); /* Removed black background */
       padding: 1.5rem;
       border: 1px solid var(--border-color);
     }
@@ -126,11 +160,32 @@ export class MonsterFamilyBrowse extends LitElement {
       border-bottom: 2px solid var(--border-color);
     }
 
+    .carousel-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 1rem;
+      flex-shrink: 0;
+      color: var(--primary-color);
+    }
+
+    .carousel-title-section {
+      flex: 1;
+    }
+
     .carousel-title {
       font-family: var(--header-font);
-      font-size: 1.5rem;
+      font-size: 2rem; /* Made headers larger */
       margin: 0;
       color: var(--primary-color);
+      line-height: 1.2;
+    }
+
+    .carousel-tagline {
+      font-size: 1rem;
+      color: var(--fg-color);
+      opacity: 0.8;
+      margin: 0.25rem 0 0 0;
+      font-style: italic;
     }
 
     .carousel-title a {
@@ -148,6 +203,7 @@ export class MonsterFamilyBrowse extends LitElement {
       .browse-container {
         flex-direction: column;
         height: auto;
+        align-items: stretch; /* Stack layout for mobile */
       }
 
       .toc-panel {
@@ -155,15 +211,26 @@ export class MonsterFamilyBrowse extends LitElement {
         max-height: 300px;
         border-right: none;
         border-bottom: 2px solid var(--border-color);
+        height: auto;
       }
 
       .content-panel {
         padding: 1rem;
+        height: auto;
       }
 
       .carousel-section {
         margin-bottom: 2rem;
         padding: 1rem;
+      }
+
+      .carousel-title {
+        font-size: 1.6rem; /* Smaller on mobile but still larger than before */
+      }
+
+      .carousel-icon {
+        width: 24px;
+        height: 24px;
       }
     }
 
@@ -250,11 +317,15 @@ export class MonsterFamilyBrowse extends LitElement {
           ${this.activeCarousels.map((carousel, index) => html`
             <section class="carousel-section">
               <div class="carousel-header">
-                <h2 class="carousel-title">
-                  <a href="${carousel.familyUrl}" title="View ${carousel.familyName} family page">
-                    ${carousel.familyName}
-                  </a>
-                </h2>
+                <svg-icon class="carousel-icon" src="${carousel.familyIcon}"></svg-icon>
+                <div class="carousel-title-section">
+                  <h2 class="carousel-title">
+                    <a href="${carousel.familyUrl}" title="View ${carousel.familyName} family page">
+                      ${carousel.familyName}
+                    </a>
+                  </h2>
+                  <p class="carousel-tagline">${carousel.familyTagLine}</p>
+                </div>
               </div>
               <monster-carousel filter="family:${carousel.familyKey}"></monster-carousel>
             </section>
@@ -274,8 +345,11 @@ export class MonsterFamilyBrowse extends LitElement {
           class="family-link ${isActive ? 'active' : ''}"
           @click=${(e: Event) => this.handleFamilyClick(e, family)}
           title="Show ${family.name} monsters">
-          <div class="family-name">${family.name}</div>
-          <div class="family-monster-count">${family.monster_count} monsters</div>
+          <svg-icon class="family-icon" src="${family.icon}"></svg-icon>
+          <div class="family-info">
+            <div class="family-name">${family.name}</div>
+            <div class="family-monster-count">${family.monster_count} monsters</div>
+          </div>
         </a>
       </li>
     `;
@@ -289,7 +363,9 @@ export class MonsterFamilyBrowse extends LitElement {
     const newCarousel: ActiveCarousel = {
       familyKey: family.key,
       familyName: family.name,
-      familyUrl: family.url
+      familyUrl: family.url,
+      familyTagLine: family.tag_line,
+      familyIcon: family.icon
     };
 
     // Create new array with the replacement
