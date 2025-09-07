@@ -411,18 +411,20 @@ export class MonsterCarousel extends LitElement {
     .swiper-button-prev {
       position: absolute !important;
       top: 50% !important;
-      width: 44px !important;
-      height: 44px !important;
-      margin-top: -22px !important;
+      width: 60px !important;
+      height: 60px !important;
+      margin-top: -30px !important;
       z-index: 10 !important;
       cursor: pointer !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
       color: var(--primary-color) !important;
-      background: none !important;
-      border: none !important;
+      background: rgba(0, 0, 0, 0.3) !important;
+      border: 2px solid var(--primary-color) !important;
+      border-radius: 50% !important;
       transform: translateY(-50%) !important;
+      transition: all 0.3s ease !important;
     }
 
     .swiper-button-prev {
@@ -437,21 +439,24 @@ export class MonsterCarousel extends LitElement {
 
     .swiper-button-next:after {
       content: '>' !important;
-      font-size: 18px !important;
+      font-size: 28px !important;
       font-weight: bold !important;
       font-family: inherit !important;
     }
 
     .swiper-button-prev:after {
       content: '<' !important;
-      font-size: 18px !important;
+      font-size: 28px !important;
       font-weight: bold !important;
       font-family: inherit !important;
     }
 
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
-      color: rgba(255, 107, 53, 0.8) !important;
+      color: rgba(255, 255, 255, 1) !important;
+      background: rgba(255, 107, 53, 0.8) !important;
+      border-color: rgba(255, 107, 53, 1) !important;
+      transform: translateY(-50%) scale(1.1) !important;
     }
 
     .swiper-button-disabled {
