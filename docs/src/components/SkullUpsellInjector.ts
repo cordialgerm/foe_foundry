@@ -31,7 +31,10 @@ export class SkullUpsellInjector extends LitElement {
   maxSkulls: number = 3;
 
   @property({ type: Number })
-  activationDelay: number = 10000; // 10 seconds
+  activationDelay: number = 5000; // 5 seconds for faster activation
+
+  @property({ type: String })
+  injectedClass: string = 'centered';
 
   private _modal?: HTMLElement;
   private _injectedSkulls: HTMLElement[] = [];
@@ -220,9 +223,10 @@ export class SkullUpsellInjector extends LitElement {
     wrapper.className = 'skull-wrapper';
     
     const skull = document.createElement('animated-skull') as any;
-    skull.display = 'collapsed'; // Start collapsed to avoid CLS
+    skull.display = 'visible'; // Start visible and enabled
     skull.quotes = INJECTOR_QUOTES.join(';');
     skull.quoteIndex = index % INJECTOR_QUOTES.length;
+    skull.injectedClass = this.injectedClass; // Apply injected class for styling
     skull.onClick = () => this._handleSkullClick(index);
 
     wrapper.appendChild(skull);
@@ -248,23 +252,29 @@ export class SkullUpsellInjector extends LitElement {
   }
 
   private _startActivationTimer(): void {
+    // Skulls are now enabled immediately, but we can still delay quote showing
     this._activationTimer = window.setTimeout(() => {
-      this._activateSkulls();
+      this._activateQuotes();
     }, this.activationDelay);
   }
 
-  private _activateSkulls(): void {
+  private _activateQuotes(): void {
+    // Activate quotes on skulls with a staggered delay
     this._injectedSkulls.forEach((skullElement, index) => {
       const skull = skullElement.querySelector('animated-skull') as any;
       if (skull) {
-        // Stagger the activation slightly
+        // Stagger the quote activation slightly
         setTimeout(() => {
-          skull.display = 'visible';
-        }, index * 500);
+          // Show a quote briefly to indicate interactivity
+          skull.showQuote = true;
+          setTimeout(() => {
+            skull.showQuote = false;
+          }, 3000); // Show for 3 seconds
+        }, index * 1000); // 1 second between each skull
       }
     });
 
-    trackEvent('skull_injector_activated', {
+    trackEvent('skull_injector_quotes_activated', {
       skulls_activated: this._injectedSkulls.length,
       delay_ms: this.activationDelay
     });

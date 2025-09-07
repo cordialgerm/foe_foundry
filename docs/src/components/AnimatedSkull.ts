@@ -1,5 +1,6 @@
 import { LitElement, html, css, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import './SvgIcon.js';
 
 // Default darkly humorous skull mascot quotes
 const DEFAULT_SKULL_QUOTES = [
@@ -33,6 +34,9 @@ export class AnimatedSkull extends LitElement {
   @property({ type: Number })
   quoteIndex: number = 0;
 
+  @property({ type: String })
+  injectedClass: string = '';
+
   private _quotesArray: string[] = [];
   private _state: SkullState = 'idle';
 
@@ -54,18 +58,36 @@ export class AnimatedSkull extends LitElement {
       overflow: hidden;
     }
 
+    /* Injected class support for centering */
+    :host(.centered) {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      padding: 1rem 0;
+    }
+
     .skull-container {
       position: relative;
       display: inline-block;
       transition: all 0.3s ease;
+      padding: 1rem;
     }
 
     .skull-mascot {
-      font-size: 3rem;
+      font-size: 4rem;
       line-height: 1;
       transition: all 0.5s ease;
-      filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.3));
+      filter: drop-shadow(0 0 15px rgba(255, 69, 0, 0.4));
       user-select: none;
+      display: inline-block;
+    }
+
+    /* Make the SVG icon larger and properly styled */
+    .skull-mascot svg-icon {
+      width: 4rem;
+      height: 4rem;
+      color: #f4f1e6;
+      filter: drop-shadow(0 0 15px rgba(255, 69, 0, 0.4));
     }
 
     .speech-bubble {
@@ -133,19 +155,19 @@ export class AnimatedSkull extends LitElement {
     @keyframes idleFloat {
       0%, 100% { 
         transform: translateY(0) rotate(0deg);
-        filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.3));
+        filter: drop-shadow(0 0 15px rgba(255, 69, 0, 0.4));
       }
       25% { 
-        transform: translateY(-3px) rotate(1deg);
-        filter: drop-shadow(0 2px 15px rgba(255, 69, 0, 0.4));
+        transform: translateY(-5px) rotate(1deg);
+        filter: drop-shadow(0 3px 20px rgba(255, 69, 0, 0.5));
       }
       50% { 
-        transform: translateY(-5px) rotate(0deg);
-        filter: drop-shadow(0 4px 20px rgba(255, 69, 0, 0.5));
+        transform: translateY(-8px) rotate(0deg);
+        filter: drop-shadow(0 5px 25px rgba(255, 69, 0, 0.6));
       }
       75% { 
-        transform: translateY(-3px) rotate(-1deg);
-        filter: drop-shadow(0 2px 15px rgba(255, 69, 0, 0.4));
+        transform: translateY(-5px) rotate(-1deg);
+        filter: drop-shadow(0 3px 20px rgba(255, 69, 0, 0.5));
       }
     }
 
@@ -184,7 +206,12 @@ export class AnimatedSkull extends LitElement {
     /* Mobile responsive */
     @media (max-width: 768px) {
       .skull-mascot {
-        font-size: 2.5rem;
+        font-size: 3rem;
+      }
+
+      .skull-mascot svg-icon {
+        width: 3rem;
+        height: 3rem;
       }
 
       .speech-bubble {
@@ -209,6 +236,13 @@ export class AnimatedSkull extends LitElement {
     if (changedProperties.has('showQuote')) {
       this._state = this.showQuote ? 'active' : 'idle';
       this.setAttribute('data-state', this._state);
+    }
+
+    if (changedProperties.has('injectedClass')) {
+      // Apply injected classes to the host element
+      if (this.injectedClass) {
+        this.className = this.injectedClass;
+      }
     }
 
     this.setAttribute('display', this.display);
@@ -241,7 +275,9 @@ export class AnimatedSkull extends LitElement {
 
     return html`
       <div class="skull-container" @click=${this._handleClick}>
-        <div class="skull-mascot">💀</div>
+        <div class="skull-mascot">
+          <svg-icon src="favicon"></svg-icon>
+        </div>
         
         ${this.showQuote ? html`
           <div class="speech-bubble">

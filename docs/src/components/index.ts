@@ -10,7 +10,6 @@ export { GeneratorShowcase } from './GeneratorShowcase.js';
 export { SvgIconButton } from './SvgIconButton.js';
 export { EmailSubscribeCallout } from './EmailSubscribeCallout.js';
 export { StatblockTutorial } from './StatblockTutorial.js';
-export { SkullUpsell } from './SkullUpsell.js';
 export { AnimatedSkull } from './AnimatedSkull.js';
 export { UpsellModal } from './UpsellModal.js';
 export { SkullUpsellInjector } from './SkullUpsellInjector.js';
