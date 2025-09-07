@@ -127,32 +127,6 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             display: none;
         }
 
-        .search-interface {
-            margin-top: 1rem;
-            padding: 1.5rem;
-            border: 2px solid var(--tertiary-color, #c29a5b);
-            border-radius: 12px;
-            background: rgba(26, 26, 26, 0.8);
-            backdrop-filter: blur(4px);
-            max-width: 500px;
-            width: 100%;
-            display: none;
-            animation: slideIn 0.3s ease-out;
-        }
-
-        .search-interface.visible {
-            display: block;
-        }
-
-        .search-interface-header {
-            color: var(--bg-color);
-            font-family: var(--header-font);
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            text-align: center;
-        }
-
         .search-interface-description {
             color: var(--bg-color);
             font-size: 0.9rem;
@@ -168,11 +142,11 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         }
 
         @keyframes slideIn {
-            from { 
+            from {
                 opacity: 0;
                 transform: translateY(-10px);
             }
-            to { 
+            to {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -313,25 +287,25 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         this.showStatblock();
     }
 
-    private _newsletterClick() {
-        window.open('https://buttondown.com/cordialgerm', '_blank');
+    private _handleCodexClick() {
+        window.location.href = '/codex/#browse';
     }
 
     private _handleSearchQuery(event: CustomEvent) {
         // Handle search-query event from SearchBar
         const query = event.detail.query;
         if (query) {
-            // Navigate to codex search page with the query
-            window.location.href = `/codex/#search?query=${encodeURIComponent(query)}`;
+            // Navigate to codex search page with the query (query params must come before hash)
+            window.location.href = `/codex/?query=${encodeURIComponent(query)}#search`;
         }
     }
 
     private _handleSearchNavigate(event: CustomEvent) {
-        // Handle search-navigate event from SearchBar  
+        // Handle search-navigate event from SearchBar
         const query = event.detail.query;
         if (query) {
-            // Navigate to codex search page with the query
-            window.location.href = `/codex/#search?query=${encodeURIComponent(query)}`;
+            // Navigate to codex search page with the query (query params must come before hash)
+            window.location.href = `/codex/?query=${encodeURIComponent(query)}#search`;
         }
     }
 
@@ -343,7 +317,18 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         return html`
             <div class="showcase-container bg-object scroll">
                 <span class="lead">Summon Your First Foe</span>
-                <p class="instructions">Roll the <strong>Die</strong> below to summon a random monster, click the <strong>Anvil</strong> to forge it into the perfect foe, or read the <strong>Tome</strong> for DM tips and tricks.</p>
+                 <div class="search-interface">
+                    <div class="search-interface-description">Find the perfect foe for your campaign:</div>
+                    <search-bar
+                        placeholder="Search for undead, fiends, dragons..."
+                        button-text="Search"
+                        mode="event"
+                        seeds="3"
+                        analytics-surface="generator-showcase">
+                    </search-bar>
+                </div>
+
+                <p class="instructions">Roll the <strong>Die</strong> below to summon a random monster, click the <strong>Anvil</strong> to forge it into the perfect foe, or read the <strong>Codex</strong> to discover unique foes.</p>
                 <div class="showcase-controls">
                     <reroll-button
                         jiggle="jiggleUntilClick"
@@ -357,11 +342,11 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         target="showcase-statblock">
                     </forge-button>
                     <svg-icon-button
-                        title="Subscribe to the Foe Foundry Newsletter"
+                        title="Read the Foe Foundry Codex"
                         src="death-note"
                         jiggle="jiggleUntilClick"
-                        class="showcase-button newsletter"
-                        @click="${this._newsletterClick}"
+                        class="showcase-button codex"
+                        @click="${this._handleCodexClick}"
                     >
                     </svg-icon-button>
                 </div>
@@ -371,18 +356,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         <div class="progress-bar" style="width: ${this.timerProgress}%"></div>
                     </div>
                 </div>
-                
-                <div class="search-interface visible">
-                    <div class="search-interface-header">Discover Monsters</div>
-                    <div class="search-interface-description">Find the perfect foe for your campaign</div>
-                    <search-bar 
-                        placeholder="Search for undead, fiends, dragons..."
-                        button-text="Search"
-                        mode="event"
-                        seeds="3"
-                        analytics-surface="generator-showcase">
-                    </search-bar>
-                </div>
+
+
             </div>
             <monster-statblock
                 class="${statblockClass}"

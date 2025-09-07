@@ -9,20 +9,20 @@ export type SearchBarMode = 'navigation' | 'event';
 
 @customElement('search-bar')
 export class SearchBar extends LitElement {
-    @property() placeholder: string = 'Search for monsters...';
-    @property() mode: SearchBarMode = 'event';
-    @property({ attribute: 'analytics-surface' }) analyticsSurface: string = 'search';
-    @property({ attribute: 'button-text' }) buttonText: string = 'Search';
-    @property({ attribute: 'initial-value' }) initialValue: string = '';
-    @property({ type: Number }) seeds: number = 0;
+  @property() placeholder: string = 'Search for monsters...';
+  @property() mode: SearchBarMode = 'event';
+  @property({ attribute: 'analytics-surface' }) analyticsSurface: string = 'search';
+  @property({ attribute: 'button-text' }) buttonText: string = 'Search';
+  @property({ attribute: 'initial-value' }) initialValue: string = '';
+  @property({ type: Number }) seeds: number = 0;
 
-    @state() private searchValue: string = '';
-    @state() private searchSeeds: SearchSeed[] = [];
-    @state() private selectedSeeds: SearchSeed[] = [];
+  @state() private searchValue: string = '';
+  @state() private searchSeeds: SearchSeed[] = [];
+  @state() private selectedSeeds: SearchSeed[] = [];
 
-    private searchApi = new MonsterSearchApi();
+  private searchApi = new MonsterSearchApi();
 
-    static styles = css`
+  static styles = css`
     :host {
       display: block;
       width: 100%;
@@ -59,7 +59,7 @@ export class SearchBar extends LitElement {
     }
 
     .search-input::placeholder {
-      color: var(--fg-muted-color);
+      color: var(--fg-color);
     }
 
     .search-button {
@@ -101,15 +101,15 @@ export class SearchBar extends LitElement {
     }
 
     .search-seed-button {
-      background: var(--color-surface-variant, #f5f5f5);
-      border: 1px solid var(--tertiary-color, #c29a5b);
+      background: transparent;
+      border: 1px solid var(--fg-color);
       border-radius: 20px;
       padding: 0.5rem 1rem;
       font-size: 0.85rem;
       cursor: pointer;
       transition: all 0.2s ease;
-      color: var(--fg-color, #f4f1e6);
-      font-family: var(--primary-font, system-ui);
+      color: var(--fg-color);
+      font-family: var(--primary-font);
       font-weight: 500;
       text-align: center;
     }
@@ -141,37 +141,37 @@ export class SearchBar extends LitElement {
     }
   `;
 
-    connectedCallback() {
-        super.connectedCallback();
-        if (this.initialValue) {
-            this.searchValue = this.initialValue;
-        }
-        if (this.seeds > 0) {
-            this.loadSearchSeeds();
-        }
+  connectedCallback() {
+    super.connectedCallback();
+    if (this.initialValue) {
+      this.searchValue = this.initialValue;
     }
-
-    private async loadSearchSeeds(): Promise<void> {
-        try {
-            const seeds = await this.searchApi.getSearchSeeds();
-            this.searchSeeds = seeds;
-            this.selectRandomSeeds();
-        } catch (error) {
-            console.error('Failed to load search seeds:', error);
-            this.searchSeeds = [];
-        }
+    if (this.seeds > 0) {
+      this.loadSearchSeeds();
     }
+  }
 
-    private selectRandomSeeds(): void {
-        if (this.searchSeeds.length === 0 || this.seeds <= 0) return;
-        
-        // Shuffle and take first N seeds
-        const shuffled = [...this.searchSeeds].sort(() => Math.random() - 0.5);
-        this.selectedSeeds = shuffled.slice(0, this.seeds);
+  private async loadSearchSeeds(): Promise<void> {
+    try {
+      const seeds = await this.searchApi.getSearchSeeds();
+      this.searchSeeds = seeds;
+      this.selectRandomSeeds();
+    } catch (error) {
+      console.error('Failed to load search seeds:', error);
+      this.searchSeeds = [];
     }
+  }
 
-    render() {
-        return html`
+  private selectRandomSeeds(): void {
+    if (this.searchSeeds.length === 0 || this.seeds <= 0) return;
+
+    // Shuffle and take first N seeds
+    const shuffled = [...this.searchSeeds].sort(() => Math.random() - 0.5);
+    this.selectedSeeds = shuffled.slice(0, this.seeds);
+  }
+
+  render() {
+    return html`
       <div class="search-section">
         <div class="search-input-container">
           <input
@@ -190,7 +190,7 @@ export class SearchBar extends LitElement {
         ${this.seeds > 0 && this.selectedSeeds.length > 0 ? html`
           <div class="search-seeds">
             ${this.selectedSeeds.map(seed => html`
-              <button 
+              <button
                 class="search-seed-button"
                 @click=${() => this.handleSeedClick(seed.term)}
                 title="${seed.description}"
@@ -202,89 +202,89 @@ export class SearchBar extends LitElement {
         ` : ''}
       </div>
     `;
+  }
+
+  private handleSeedClick(seedTerm: string) {
+    // Set the search value and trigger search
+    this.searchValue = seedTerm;
+    this.performSearch();
+  }
+
+  private handleInput(e: Event) {
+    const input = e.target as HTMLInputElement;
+    this.searchValue = input.value;
+  }
+
+  private handleKeydown(e: KeyboardEvent) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      this.performSearch();
+    }
+  }
+
+  private handleSearchClick() {
+    this.performSearch();
+  }
+
+  private performSearch() {
+    const query = this.searchValue.trim();
+
+    if (!query) {
+      return;
     }
 
-    private handleSeedClick(seedTerm: string) {
-        // Set the search value and trigger search
-        this.searchValue = seedTerm;
-        this.performSearch();
+    // Track search analytics
+    trackSearch(query, 0, this.analyticsSurface);
+
+    if (this.mode === 'navigation') {
+      // Navigation mode: switch to search tab (for codex browse tab)
+      this.dispatchEvent(new CustomEvent('search-navigate', {
+        detail: { query },
+        bubbles: true,
+        composed: true
+      }));
+    } else {
+      // Event mode: dispatch search event (for catalog and other components)
+      this.dispatchEvent(new CustomEvent('search-query', {
+        detail: { query },
+        bubbles: true,
+        composed: true
+      }));
     }
+  }
 
-    private handleInput(e: Event) {
-        const input = e.target as HTMLInputElement;
-        this.searchValue = input.value;
-    }
+  /**
+   * Public method to set the search value programmatically
+   */
+  public setSearchValue(value: string) {
+    this.searchValue = value;
+  }
 
-    private handleKeydown(e: KeyboardEvent) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            this.performSearch();
-        }
-    }
+  /**
+   * Public method to get the current search value
+   */
+  public getSearchValue(): string {
+    return this.searchValue;
+  }
 
-    private handleSearchClick() {
-        this.performSearch();
-    }
+  /**
+   * Public method to clear the search
+   */
+  public clearSearch() {
+    this.searchValue = '';
+  }
 
-    private performSearch() {
-        const query = this.searchValue.trim();
-
-        if (!query) {
-            return;
-        }
-
-        // Track search analytics
-        trackSearch(query, 0, this.analyticsSurface);
-
-        if (this.mode === 'navigation') {
-            // Navigation mode: switch to search tab (for codex browse tab)
-            this.dispatchEvent(new CustomEvent('search-navigate', {
-                detail: { query },
-                bubbles: true,
-                composed: true
-            }));
-        } else {
-            // Event mode: dispatch search event (for catalog and other components)
-            this.dispatchEvent(new CustomEvent('search-query', {
-                detail: { query },
-                bubbles: true,
-                composed: true
-            }));
-        }
-    }
-
-    /**
-     * Public method to set the search value programmatically
-     */
-    public setSearchValue(value: string) {
-        this.searchValue = value;
-    }
-
-    /**
-     * Public method to get the current search value
-     */
-    public getSearchValue(): string {
-        return this.searchValue;
-    }
-
-    /**
-     * Public method to clear the search
-     */
-    public clearSearch() {
-        this.searchValue = '';
-    }
-
-    /**
-     * Public method to focus the search input
-     */
-    public focusInput() {
-        const input = this.shadowRoot?.querySelector('.search-input') as HTMLInputElement;
-        input?.focus();
-    }
+  /**
+   * Public method to focus the search input
+   */
+  public focusInput() {
+    const input = this.shadowRoot?.querySelector('.search-input') as HTMLInputElement;
+    input?.focus();
+  }
 }
 
 declare global {
-    interface HTMLElementTagNameMap {
-        'search-bar': SearchBar;
-    }
+  interface HTMLElementTagNameMap {
+    'search-bar': SearchBar;
+  }
 }
