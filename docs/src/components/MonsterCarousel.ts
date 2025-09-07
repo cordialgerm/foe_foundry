@@ -600,6 +600,7 @@ export class MonsterCarousel extends LitElement {
         //createElements: true, // This creates the navigation buttons automatically - but it didn't seem to work properly
         grabCursor: true,
         direction: 'horizontal', // Explicitly set horizontal direction
+        loop: true, // Enable infinite looping to prevent autoplay from stopping at the end
         keyboard: {
           enabled: true,
         },
@@ -609,6 +610,7 @@ export class MonsterCarousel extends LitElement {
         autoplay: {
           delay: delay,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true, // Pause autoplay when user hovers for better UX
         },
         breakpoints: breakpoints,
         on: {
