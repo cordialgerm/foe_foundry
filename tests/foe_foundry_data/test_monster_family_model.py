@@ -132,6 +132,7 @@ class TestMonsterFamilyModel:
         family = MonsterFamilyModel(
             key="soldiers_and_fighters",
             name="Soldiers & Fighters",
+            icon="favicon",
             tag_line="Battle-Hardened Warriors",
             monsters=monsters,
         )
