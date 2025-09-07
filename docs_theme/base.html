@@ -60,9 +60,29 @@
 
 <statblock-tutorial></statblock-tutorial>
 {% if page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
-<skull-upsell mode="generator" idle-delay="45000" enabled></skull-upsell>
+<!-- Generator page: Simple centered animated skull -->
+<style>
+  .generator-skull {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+  }
+  .generator-skull animated-skull {
+    pointer-events: auto;
+  }
+</style>
+<div class="generator-skull">
+  <animated-skull 
+    display="visible" 
+    quotes="Ready to forge true nightmares?;Your monsters need more personality...;Let me teach you the dark arts.;Subscribe for forbidden knowledge."
+  ></animated-skull>
+</div>
 {% else %}
-<skull-upsell mode="floating" idle-delay="30000" enabled></skull-upsell>
+<!-- Content pages: Use the injector for smart placement -->
+<skull-upsell-injector enabled min-skulls="2" max-skulls="3"></skull-upsell-injector>
 {% endif %}
 
 <body {% if page and page.is_homepage %} class="homepage" {% endif %}>
