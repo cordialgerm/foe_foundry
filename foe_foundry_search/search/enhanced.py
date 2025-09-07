@@ -134,7 +134,7 @@ def _passes_filters(
             return False
     
     # Check creature type filtering
-    if creature_types is not None:
+    if creature_types is not None and len(creature_types) > 0:
         try:
             monster_creature_type = CreatureType.parse(monster.creature_type)
             if monster_creature_type not in creature_types:

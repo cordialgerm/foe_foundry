@@ -87,7 +87,7 @@ class TestFacetParsing:
         
         # Should not be facet-only
         assert is_facet_only_query("goblin") is False
-        assert is_facet_only_query("fire dragon") is False  # Contains but not exact
+        assert is_facet_only_query("fire dragon") is False  # Contains "dragon" but not exact
         assert is_facet_only_query("some random text") is False
 
 
