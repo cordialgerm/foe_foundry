@@ -23,8 +23,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     @state()
     private currentMessage = '';
 
-    @state()
-    private showSearchInterface = false;
+
 
     private timerDuration = 0;
     private timerStartTime = 0;
@@ -39,10 +38,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         "A formidable enemy emerges...",
         "Something sinister stirs...",
         "A dangerous creature awakens...",
-        "Your nemesis draws near...",
-        "Looking for something specific?",
-        "Discover monsters by theme!",
-        "Find the perfect foe!"
+        "Your nemesis draws near..."
     ];
 
     private getMonsterKeyFromUrl(): string | null {
@@ -229,15 +225,6 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     private startTimer() {
         if (this.timerActive) return;
 
-        // Decide whether to show search interface or normal timer
-        // 30% chance to show search interface instead of normal timer
-        const shouldShowSearchInterface = Math.random() < 0.3;
-        
-        if (shouldShowSearchInterface) {
-            this._showSearchInterface();
-            return;
-        }
-
         // Random timer duration between 7-9 seconds
         this.timerDuration = (Math.random() * 2 + 7) * 1000;
         this.timerStartTime = Date.now();
@@ -251,20 +238,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         this.animateProgress();
     }
 
-    private _showSearchInterface() {
-        // Set a search-related message
-        const searchMessages = this.messages.slice(-3); // Last 3 are search-related
-        this.currentMessage = searchMessages[Math.floor(Math.random() * searchMessages.length)];
-        
-        this.showSearchInterface = true;
-        this.timerActive = false;
-        this.timerHasCompletedOnce = true; // Prevent timer from starting again
-        
-        // Hide search interface after 15 seconds
-        setTimeout(() => {
-            this.showSearchInterface = false;
-        }, 15000);
-    }
+
 
     private startMessageCycling() {
         // Set initial message
@@ -347,8 +321,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         // Handle search-query event from SearchBar
         const query = event.detail.query;
         if (query) {
-            // Navigate to search page with the query
-            window.location.href = `/powers/all/?q=${encodeURIComponent(query)}`;
+            // Navigate to codex search page with the query
+            window.location.href = `/codex/#search?query=${encodeURIComponent(query)}`;
         }
     }
 
@@ -356,8 +330,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         // Handle search-navigate event from SearchBar  
         const query = event.detail.query;
         if (query) {
-            // Navigate to search page with the query
-            window.location.href = `/powers/all/?q=${encodeURIComponent(query)}`;
+            // Navigate to codex search page with the query
+            window.location.href = `/codex/#search?query=${encodeURIComponent(query)}`;
         }
     }
 
@@ -398,9 +372,9 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                     </div>
                 </div>
                 
-                <div class="search-interface ${this.showSearchInterface ? 'visible' : ''}">
+                <div class="search-interface visible">
                     <div class="search-interface-header">Discover Monsters</div>
-                    <div class="search-interface-description">${this.currentMessage}</div>
+                    <div class="search-interface-description">Find the perfect foe for your campaign</div>
                     <search-bar 
                         placeholder="Search for undead, fiends, dragons..."
                         button-text="Search"
