@@ -417,8 +417,14 @@ export class MonsterCarousel extends LitElement {
       margin-top: -22px !important;
     }
 
-    .swiper-button-next:after,
+    .swiper-button-next:after {
+      content: '>' !important;
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+
     .swiper-button-prev:after {
+      content: '<' !important;
       font-size: 18px !important;
       font-weight: bold;
     }
