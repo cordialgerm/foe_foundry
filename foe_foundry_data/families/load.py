@@ -14,18 +14,7 @@ from ..refs import MonsterRefResolver
 from .data import MonsterFamilyModel
 
 
-def get_family_icon(family_key: str) -> str:
-    """Get appropriate icon for a monster family."""
-    icon_mapping = {
-        "criminals": "bandit",
-        "fanatics-and-faithful": "prayer",
-        "giants": "giant",
-        "monstrosities": "monster-grasp",
-        "orcs-and-goblinoids": "goblin-head",
-        "soldiers-and-fighters": "sword-brandish",
-        "undead": "skull-crossed-bones",
-    }
-    return icon_mapping.get(family_key, "monster-grasp")
+
 
 ref_resolver = MonsterRefResolver()
 
@@ -78,12 +67,18 @@ def load_families() -> list[MonsterFamilyModel]:
                         )
                     )
 
+            icon = frontmatter.get("icon", "monster-grasp")
+            if not isinstance(icon, str):
+                raise ValueError(
+                    f"Invalid icon for family '{name}': {icon}. Expected a string."
+                )
+
             families.append(
                 MonsterFamilyModel(
                     key=name_to_key(name),
                     name=title,
                     tag_line=tag_line,
-                    icon=get_family_icon(name_to_key(name)),
+                    icon=icon,
                     monsters=monsters,
                 )
             )
