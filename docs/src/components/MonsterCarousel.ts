@@ -630,10 +630,11 @@ export class MonsterCarousel extends LitElement {
         modules: [Autoplay, Navigation, Keyboard, Parallax],
         slidesPerView: 3,
         spaceBetween: 16,
-        initialSlide: 1,
-        centeredSlides: true,
+        initialSlide: 0, // Start at first slide
+        centeredSlides: false, // Left-align slides
         grabCursor: true,
         direction: 'horizontal', // Explicitly set horizontal direction
+        loop: false, // Disable infinite loop
         keyboard: {
           enabled: true,
         },
@@ -646,12 +647,14 @@ export class MonsterCarousel extends LitElement {
         autoplay: {
           delay: delay,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true, // Pause autoplay when user hovers for better UX
+          stopOnLastSlide: true
         },
         breakpoints: breakpoints,
         on: {
           init: function (this: any) {
             this.el.classList.remove('preload');
-          }
+          },
         }
       });
 
