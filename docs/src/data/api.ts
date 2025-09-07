@@ -36,6 +36,14 @@ export interface CatalogFamily {
     monsters: MonsterInfo[];
 }
 
+export interface MonsterFamily {
+    key: string;
+    name: string;
+    tag_line: string;
+    monster_count: number;
+    url: string;
+}
+
 function formatCr(cr: string | number): string {
     if (typeof cr === 'string') return cr;
     switch (cr) {
@@ -293,6 +301,15 @@ export class ApiMonsterStore implements MonsterStore {
         const response = await fetch(`${baseUrl}/api/v1/catalog/by_family`);
         if (!response.ok) {
             throw new Error(`Failed to fetch catalog by family: ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async getAllFamilies(): Promise<MonsterFamily[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monsters/families`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch all families: ${response.statusText}`);
         }
         return await response.json();
     }

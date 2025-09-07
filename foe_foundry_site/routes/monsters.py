@@ -104,6 +104,27 @@ def get_new_monsters(
     ]
 
 
+@router.get("/families")
+def get_all_families() -> list[dict]:
+    """
+    Returns a list of all monster families with basic metadata
+    """
+    try:
+        families = load_families()
+        return [
+            {
+                "key": family.key,
+                "name": family.name,
+                "tag_line": family.tag_line,
+                "monster_count": len(family.monsters),
+                "url": f"/families/{family.key}/"
+            }
+            for family in families
+        ]
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error loading families data: {str(e)}")
+
+
 @router.get("/family/{family_key}")
 def get_monsters_by_family(family_key: str) -> list[MonsterInfoModel]:
     """
