@@ -4,7 +4,7 @@ from datetime import datetime
 
 import pytest
 
-from foe_foundry_data.base import MonsterFamilyInfo, MonsterTemplateInfoModel
+from foe_foundry_data.base import MonsterFamilyInfo, MonsterTemplateInfoModel, MonsterInfoModel
 from foe_foundry_data.monster_families import load_monster_families, MonsterFamilies
 
 
@@ -42,12 +42,32 @@ class TestMonsterFamilyInfo:
             ),
         ]
 
+        monsters = [
+            MonsterInfoModel(
+                key="guard",
+                name="Guard",
+                cr=1.0,
+                template="guard",
+                creature_type="humanoid",
+                tag_line="Watchful Sentries",
+            ),
+            MonsterInfoModel(
+                key="knight",
+                name="Knight", 
+                cr=3.0,
+                template="knight",
+                creature_type="humanoid",
+                tag_line="Noble Warriors",
+            ),
+        ]
+
         family = MonsterFamilyInfo(
             key="soldiers_and_fighters",
             name="Soldiers & Fighters",
             icon="rally-the-troops",
             tag_line="Battle-Hardened Warriors",
             templates=templates,
+            monsters=monsters,
         )
 
         assert family.key == "soldiers_and_fighters"
@@ -57,6 +77,9 @@ class TestMonsterFamilyInfo:
         assert len(family.templates) == 2
         assert family.templates[0].name == "Guard"
         assert family.templates[1].name == "Knight"
+        assert len(family.monsters) == 2
+        assert family.monsters[0].name == "Guard"
+        assert family.monsters[1].name == "Knight"
 
 
 class TestMonsterFamilyLoading:
@@ -114,7 +137,10 @@ is_monster_family: false
             mock_ref = type(
                 "MockRef",
                 (),
-                {"template": type("MockTemplate", (), {"key": "test_template"})()},
+                {"template": type("MockTemplate", (), {
+                    "key": "test_template",
+                    "monsters": []
+                })()},
             )()
             mock_resolver.resolve_monster_ref.return_value = mock_ref
 
@@ -122,6 +148,18 @@ is_monster_family: false
             with patch(
                 "foe_foundry_data.monster_families.data.AllTemplates"
             ) as mock_all_templates:
+                # Create mock monster objects
+                mock_monster1 = type("MockMonster", (), {
+                    "key": "test_guard",
+                    "name": "Test Guard", 
+                    "cr": 1.0,
+                })()
+                mock_monster2 = type("MockMonster", (), {
+                    "key": "test_knight",
+                    "name": "Test Knight",
+                    "cr": 3.0,
+                })()
+                
                 mock_template = type(
                     "MockTemplate",
                     (),
@@ -131,6 +169,7 @@ is_monster_family: false
                         "tag_line": "Test Template Tagline",
                         "primary_image_url": None,
                         "create_date": datetime(2024, 1, 1),
+                        "monsters": [mock_monster1, mock_monster2],
                     },
                 )()
                 mock_all_templates.__iter__ = lambda x: iter([mock_template])
@@ -148,6 +187,13 @@ is_monster_family: false
         assert len(family.templates) == 1
         assert family.templates[0].key == "test_template"
         assert family.templates[0].name == "Test Template"
+        assert len(family.monsters) == 2
+        assert family.monsters[0].key == "test_guard"
+        assert family.monsters[0].name == "Test Guard"
+        assert family.monsters[0].template == "test_template"
+        assert family.monsters[1].key == "test_knight"
+        assert family.monsters[1].name == "Test Knight"
+        assert family.monsters[1].template == "test_template"
 
     def test_load_monster_families_validates_icon_field(self, tmp_path):
         """Test that load_monster_families validates icon field presence."""
