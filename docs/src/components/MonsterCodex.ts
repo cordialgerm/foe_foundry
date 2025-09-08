@@ -1219,7 +1219,7 @@ export class MonsterCodex extends LitElement {
 
             <div class="monster-tags">
               ${monster.tags ? monster.tags.map(tag => html`
-                <span class="monster-tag-icon" 
+                <span class="monster-tag-icon"
                       title="${tag.description}"
                       style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};">
                   ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
