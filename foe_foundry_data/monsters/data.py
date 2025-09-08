@@ -215,7 +215,8 @@ class MonsterModel:
                 tag=monster_tag.tag,
                 tag_type=monster_tag.tag_type,
                 description=monster_tag.description,
-                icon=monster_tag.icon
+                icon=monster_tag.icon,
+                color=monster_tag.color
             ))
 
         return MonsterModel(

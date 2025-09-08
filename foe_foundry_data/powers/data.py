@@ -292,7 +292,12 @@ class PowerModel:
         if power.creature_types and len(power.creature_types) <= 4:
             tags.update([ct.lower() for ct in power.creature_types])
         if power.damage_types and len(power.damage_types) <= 4:
-            tags.update([d.lower() for d in power.damage_types])
+            # Filter out physical damage types (bludgeoning, piercing, slashing) as they're not useful tags
+            non_physical_damage_types = [
+                dt for dt in power.damage_types 
+                if dt.lower() not in {'bludgeoning', 'piercing', 'slashing'}
+            ]
+            tags.update([d.lower() for d in non_physical_damage_types])
         if power.theme:
             tags.add(power.theme.lower())
         if power.roles and len(power.roles) <= 4:

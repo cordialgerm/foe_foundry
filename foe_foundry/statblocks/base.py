@@ -791,7 +791,7 @@ class BaseStatblock:
         if self.is_legendary:
             tags.append(MonsterTag.legendary())
         
-        # Add damage type tags from attacks
+        # Add damage type tags from attacks (excluding physical damage types)
         damage_types = set()
         damage_types.add(self.primary_damage_type)
         if self.secondary_damage_type:
@@ -802,7 +802,13 @@ class BaseStatblock:
             if hasattr(attack, 'damage_type'):
                 damage_types.add(attack.damage_type)
         
-        for damage_type in damage_types:
+        # Filter out physical damage types (bludgeoning, piercing, slashing) as they're not useful tags
+        non_physical_damage_types = [
+            dt for dt in damage_types 
+            if dt not in {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}
+        ]
+        
+        for damage_type in non_physical_damage_types:
             tags.append(MonsterTag.from_damage_type(damage_type))
         
         # Add family tag based on monster_key or species_key

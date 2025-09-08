@@ -37,6 +37,13 @@ class MonsterTag:
             return self.definition.icon
         return None
 
+    @property
+    def color(self) -> str:
+        """Get the tag color"""
+        if self.definition:
+            return self.definition.color
+        return "#6B7280"  # Default gray color
+
     @staticmethod
     def from_creature_type(ct: CreatureType) -> MonsterTag:
         return MonsterTag(tag=ct.name, tag_type="creature_type")

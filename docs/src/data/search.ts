@@ -4,6 +4,7 @@ export interface MonsterTagInfo {
     tag_type: string;
     description: string;
     icon?: string;
+    color?: string;
 }
 
 // MonsterInfo type matching backend MonsterInfoModel

@@ -13,6 +13,7 @@ class MonsterTagInfo:
     tag_type: str
     description: str
     icon: str | None = None
+    color: str | None = None
 
 
 @dataclass(kw_only=True)

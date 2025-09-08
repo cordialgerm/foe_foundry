@@ -697,12 +697,13 @@ export class MonsterCodex extends LitElement {
       cursor: help;
       transition: all 0.2s ease;
       border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .monster-tag-icon:hover {
-      background: rgba(0, 0, 0, 0.8);
-      border-color: var(--tertiary-color);
+      border-color: rgba(255, 255, 255, 0.6);
       transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     .tag-icon {
@@ -1218,7 +1219,9 @@ export class MonsterCodex extends LitElement {
 
             <div class="monster-tags">
               ${monster.tags ? monster.tags.map(tag => html`
-                <span class="monster-tag-icon" title="${tag.description}">
+                <span class="monster-tag-icon" 
+                      title="${tag.description}"
+                      style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};">
                   ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
                 </span>
               `) : ''}
