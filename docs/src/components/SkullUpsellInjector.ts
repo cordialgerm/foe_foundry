@@ -238,8 +238,9 @@ export class SkullUpsellInjector extends LitElement {
     wrapper.appendChild(skull);
     skullElement.appendChild(wrapper);
 
+    // Always inject before the target element for better content flow
     if (point.position === 'after') {
-      point.element.insertAdjacentElement('afterend', skullElement);
+      point.element.insertAdjacentElement('beforebegin', skullElement);
     } else {
       point.element.insertAdjacentElement('beforebegin', skullElement);
     }

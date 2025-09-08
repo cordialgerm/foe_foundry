@@ -37,8 +37,16 @@ export class AnimatedSkull extends LitElement {
   @property({ type: String })
   injectedClass: string = '';
 
+  @property({ type: Boolean })
+  autoCycle: boolean = true;
+
+  @property({ type: Number })
+  cycleInterval: number = 8000; // 8 seconds between quotes
+
   private _quotesArray: string[] = [];
   private _state: SkullState = 'idle';
+  private _cycleTimer?: number;
+  private _quoteTimer?: number;
 
   static styles = css`
     :host {
@@ -119,6 +127,34 @@ export class AnimatedSkull extends LitElement {
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       z-index: 10;
       pointer-events: none;
+    }
+
+    .speech-bubble.visible {
+      pointer-events: auto;
+    }
+
+    .speech-bubble-close {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .speech-bubble-close:hover {
+      background: #a00000;
+      transform: scale(1.1);
     }
 
     .speech-bubble::after {
@@ -265,6 +301,12 @@ export class AnimatedSkull extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     this._parseQuotes();
+    this._startQuoteCycling();
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    this._stopQuoteCycling();
   }
 
   updated(changedProperties: PropertyValues) {
@@ -298,6 +340,64 @@ export class AnimatedSkull extends LitElement {
     }
   }
 
+  private _startQuoteCycling(): void {
+    if (!this.autoCycle || this._quotesArray.length <= 1) return;
+
+    // Check if skull is suppressed by cookie
+    if (this._isSkullSuppressed()) {
+      this.display = 'hidden';
+      return;
+    }
+
+    this._cycleTimer = window.setInterval(() => {
+      this._showNextQuote();
+    }, this.cycleInterval);
+  }
+
+  private _stopQuoteCycling(): void {
+    if (this._cycleTimer) {
+      clearInterval(this._cycleTimer);
+      this._cycleTimer = undefined;
+    }
+    if (this._quoteTimer) {
+      clearTimeout(this._quoteTimer);
+      this._quoteTimer = undefined;
+    }
+  }
+
+  private _showNextQuote(): void {
+    if (this._quotesArray.length === 0) return;
+
+    this.quoteIndex = (this.quoteIndex + 1) % this._quotesArray.length;
+    this.showQuote = true;
+
+    // Auto-hide quote after 4 seconds
+    this._quoteTimer = window.setTimeout(() => {
+      this.showQuote = false;
+    }, 4000);
+  }
+
+  private _isSkullSuppressed(): boolean {
+    const suppressedUntil = localStorage.getItem('skull-suppressed-until');
+    if (!suppressedUntil) return false;
+    
+    const suppressedDate = new Date(suppressedUntil);
+    return suppressedDate > new Date();
+  }
+
+  private _suppressSkullFor3Days(): void {
+    const suppressUntil = new Date();
+    suppressUntil.setDate(suppressUntil.getDate() + 3);
+    localStorage.setItem('skull-suppressed-until', suppressUntil.toISOString());
+  }
+
+  private _handleSpeechBubbleClose(e: Event): void {
+    e.stopPropagation();
+    this._suppressSkullFor3Days();
+    this.display = 'hidden';
+    this._stopQuoteCycling();
+  }
+
   private _getCurrentQuote(): string {
     if (this._quotesArray.length === 0) return '';
     return this._quotesArray[this.quoteIndex % this._quotesArray.length];
@@ -321,7 +421,8 @@ export class AnimatedSkull extends LitElement {
         </div>
         
         ${this.showQuote ? html`
-          <div class="speech-bubble">
+          <div class="speech-bubble visible">
+            <button class="speech-bubble-close" @click=${this._handleSpeechBubbleClose}>×</button>
             ${this._getCurrentQuote()}
           </div>
         ` : ''}
