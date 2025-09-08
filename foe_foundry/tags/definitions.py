@@ -152,6 +152,7 @@ CREATURE_FAMILY_TAGS = [
     TagDefinition("chimera", "Chimera creatures", "griffin-symbol.svg", "creature_family"),
     TagDefinition("cultist", "Cult members", "cultist.svg", "creature_family"),
     TagDefinition("dire_bunny", "Dire bunny creatures", "rabbit-head.svg", "creature_family"),
+    TagDefinition("dragon", "Dragon creatures", "dragon-head.svg", "creature_family"),
     TagDefinition("druid", "Druidic characters", "oak-leaf.svg", "creature_family"),
     TagDefinition("frost_giant", "Frost giants", "giant.svg", "creature_family"),
     TagDefinition("gelatinous_cube", "Gelatinous cubes", "cube.svg", "creature_family"),
@@ -215,6 +216,7 @@ THEMATIC_POWER_TAGS = [
     TagDefinition("serpentine", "Snake-like powers", "snake-tongue.svg", "theme"),
     TagDefinition("shamanic", "Shamanic spiritual powers", "totem.svg", "theme"),
     TagDefinition("sneaky", "Stealth and subterfuge powers", "ninja-mask.svg", "theme"),
+    TagDefinition("spellcaster", "Magical spellcasting abilities", "wizard-staff.svg", "theme"),
     TagDefinition("storm", "Weather and storm powers", "lightning-storm.svg", "theme"),
     TagDefinition("technique", "Skill-based martial powers", "sword-smithing.svg", "theme"),
     TagDefinition("teleportation", "Teleportation powers", "teleport.svg", "theme"),
@@ -245,6 +247,16 @@ SPELLCASTER_THEME_TAGS = [
     TagDefinition("transmuter", "Transformation magic", "magic-trick.svg", "spellcaster_theme"),
 ]
 
+# Size Tags
+SIZE_TAGS = [
+    TagDefinition("tiny", "Tiny sized creatures", "resize-down.svg", "size"),
+    TagDefinition("small", "Small sized creatures", "minions.svg", "size"), 
+    TagDefinition("medium", "Medium sized creatures", "person.svg", "size"),
+    TagDefinition("large", "Large sized creatures", "giant.svg", "size"),
+    TagDefinition("huge", "Huge sized creatures", "giant.svg", "size"),
+    TagDefinition("gargantuan", "Gargantuan sized creatures", "giant.svg", "size"),
+]
+
 # All tag categories combined
 ALL_TAG_DEFINITIONS = (
     CREATURE_TYPE_TAGS + 
@@ -258,7 +270,8 @@ ALL_TAG_DEFINITIONS = (
     CR_TIER_TAGS + 
     CREATURE_FAMILY_TAGS + 
     THEMATIC_POWER_TAGS + 
-    SPELLCASTER_THEME_TAGS
+    SPELLCASTER_THEME_TAGS +
+    SIZE_TAGS
 )
 
 # Create lookup dictionaries

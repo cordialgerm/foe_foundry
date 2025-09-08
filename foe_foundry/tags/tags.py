@@ -9,6 +9,7 @@ from foe_foundry.environs import Biome, Development, ExtraplanarInfluence, Regio
 from foe_foundry.features import ActionType
 from foe_foundry.power_types import PowerType
 from foe_foundry.role_types import MonsterRole
+from foe_foundry.size import Size
 from .definitions import TagDefinition, get_tag_definition
 
 
@@ -85,15 +86,15 @@ class MonsterTag:
         # Tier 4 is level 15-20 -> CR 20+
 
         if cr < 1:
-            return MonsterTag(tag="Tier 0", tag_type="tier")
+            return MonsterTag(tag="tier0", tag_type="cr_tier")
         elif cr < 4:
-            return MonsterTag(tag="Tier 1", tag_type="tier")
+            return MonsterTag(tag="tier1", tag_type="cr_tier")
         elif cr < 13:
-            return MonsterTag(tag="Tier 2", tag_type="tier")
+            return MonsterTag(tag="tier2", tag_type="cr_tier")
         elif cr < 20:
-            return MonsterTag(tag="Tier 3", tag_type="tier")
+            return MonsterTag(tag="tier3", tag_type="cr_tier")
         else:
-            return MonsterTag(tag="Tier 4", tag_type="tier")
+            return MonsterTag(tag="tier4", tag_type="cr_tier")
 
     @staticmethod
     def from_family(family: str) -> MonsterTag:
@@ -106,3 +107,7 @@ class MonsterTag:
     @staticmethod
     def from_power_type(power_type: PowerType) -> MonsterTag:
         return MonsterTag(tag=power_type.name, tag_type="power_type")
+
+    @staticmethod
+    def from_size(size: Size) -> MonsterTag:
+        return MonsterTag(tag=size.name, tag_type="size")

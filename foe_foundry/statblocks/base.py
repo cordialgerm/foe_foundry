@@ -19,6 +19,7 @@ from ..senses import Senses
 from ..size import Size
 from ..skills import AbilityScore
 from ..spells import CasterType, StatblockSpell
+from ..tags.tags import MonsterTag
 from ..utils import easy_multiple_of_five
 from ..xp import xp_by_cr
 from .dials import MonsterDials
@@ -98,6 +99,9 @@ class BaseStatblock:
     legendary_actions: int = 0
     legendary_resistances: int = 0
     legendary_resistance_damage_taken: int = 0
+    
+    # Tags
+    tags: List[MonsterTag] = field(default_factory=list)
 
     def __post_init__(self):
         mod = (
@@ -114,6 +118,10 @@ class BaseStatblock:
         )
 
         self.xp = xp_by_cr(self.cr)
+        
+        # Auto-generate tags if none were provided
+        if not self.tags:
+            self.tags = self._generate_tags_from_properties()
 
     @property
     def key(self) -> str:
@@ -754,6 +762,68 @@ class BaseStatblock:
         new_flags = self.flags.copy()
         new_flags.update(flags)
         return self.copy(flags=new_flags)
+
+    def _generate_tags_from_properties(self) -> List[MonsterTag]:
+        """Generate tags automatically from monster statblock properties"""
+        tags = []
+        
+        # Add creature type tag
+        tags.append(MonsterTag.from_creature_type(self.creature_type))
+        
+        # Add additional creature type tags
+        for additional_type in self.additional_types:
+            tags.append(MonsterTag.from_creature_type(additional_type))
+        
+        # Add role tag
+        tags.append(MonsterTag.from_role(self.role))
+        
+        # Add additional role tags
+        for additional_role in self.additional_roles:
+            tags.append(MonsterTag.from_role(additional_role))
+        
+        # Add size tag
+        tags.append(MonsterTag.from_size(self.size))
+        
+        # Add CR tier tag
+        tags.append(MonsterTag.from_cr(self.cr))
+        
+        # Add legendary tag if legendary
+        if self.is_legendary:
+            tags.append(MonsterTag.legendary())
+        
+        # Add damage type tags from attacks
+        damage_types = set()
+        damage_types.add(self.primary_damage_type)
+        if self.secondary_damage_type:
+            damage_types.add(self.secondary_damage_type)
+        
+        # Add damage types from additional attacks
+        for attack in self.additional_attacks:
+            if hasattr(attack, 'damage_type'):
+                damage_types.add(attack.damage_type)
+        
+        for damage_type in damage_types:
+            tags.append(MonsterTag.from_damage_type(damage_type))
+        
+        # Add family tag based on monster_key or species_key
+        if self.species_key and self.species_key != "human":
+            tags.append(MonsterTag.from_family(self.species_key))
+        elif self.monster_key:
+            # Enhanced family name extraction with special cases
+            family_name = self.monster_key.split('_')[0]
+            
+            # Special case mappings for complex names
+            dragon_colors = {'red', 'blue', 'green', 'black', 'white', 'gold', 'silver', 'bronze', 'copper', 'brass'}
+            if family_name in dragon_colors and self.creature_type == CreatureType.Dragon:
+                family_name = "dragon"
+            
+            tags.append(MonsterTag.from_family(family_name))
+        
+        # Add spellcaster tag if has spellcasting
+        if self.caster_type is not None:
+            tags.append(MonsterTag(tag="spellcaster", tag_type="theme"))
+        
+        return tags
 
     def create_rng(self, salt: str = "") -> np.random.Generator:
         hash_key = self.name + salt
