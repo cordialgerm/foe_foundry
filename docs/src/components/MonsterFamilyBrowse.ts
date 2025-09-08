@@ -31,7 +31,7 @@ export class MonsterFamilyBrowse extends LitElement {
 
     .browse-container {
       display: flex;
-      height: 100%; /* Fill the tab content area */
+      height: auto; /* Remove fixed height to prevent double-scroll */
       min-height: 600px;
       align-items: flex-start; /* Top align both panels */
     }
@@ -42,7 +42,7 @@ export class MonsterFamilyBrowse extends LitElement {
       background: var(--bg-color);
       border-right: 2px solid var(--border-color);
       overflow-y: auto;
-      padding: 1.5rem;
+      padding: 1rem; /* Reduced padding for better mobile experience */
       position: relative;
       flex-shrink: 0; /* Prevent panel from shrinking */
       height: 100%; /* Full height to match content panel */
@@ -128,16 +128,16 @@ export class MonsterFamilyBrowse extends LitElement {
     .content-panel {
       flex: 1;
       overflow-y: auto;
-      padding: 1.5rem;
+      padding: 1rem; /* Reduced padding for better mobile experience */
       padding-top: 0rem;
-      height: 100%; /* Full height to match toc panel */
+      height: auto; /* Allow natural height for better scrolling */
     }
 
     .carousel-section {
       margin-bottom: 1.5rem;
       border-radius: 8px;
       background: var(--bg-color); /* Removed black background */
-      padding: 1.5rem;
+      padding: 1rem; /* Reduced padding for better mobile experience */
       border: 1px solid var(--border-color);
     }
 
@@ -200,7 +200,7 @@ export class MonsterFamilyBrowse extends LitElement {
       }
 
       .content-panel {
-        padding: 1.25rem;
+        padding: 0.75rem; /* Further reduced padding for smaller screens */
         padding-top: 0rem;
         height: auto;
         overflow-y: visible; /* Remove scroll on mobile since container is auto height */
@@ -208,7 +208,7 @@ export class MonsterFamilyBrowse extends LitElement {
 
       .carousel-section {
         margin-bottom: 2rem;
-        padding: 1.25rem;
+        padding: 0.75rem; /* Reduced padding for smaller screens */
       }
 
       .carousel-title {
@@ -228,13 +228,13 @@ export class MonsterFamilyBrowse extends LitElement {
       }
 
       .content-panel {
-        padding: 1rem;
+        padding: 0.625rem; /* Even less padding for smallest screens */
         padding-top: 0;
       }
 
       .carousel-section {
-        padding: 1rem;
-        margin-bottom: 1.75rem;
+        padding: 0.625rem; /* Minimal padding for smallest screens */
+        margin-bottom: 1.5rem;
       }
 
       .carousel-title {
@@ -252,12 +252,12 @@ export class MonsterFamilyBrowse extends LitElement {
       }
 
       .content-panel {
-        padding: 0.875rem;
+        padding: 0.5rem; /* Minimal padding for very small screens */
         padding-top: 0;
       }
 
       .carousel-section {
-        padding: 0.875rem;
+        padding: 0.5rem; /* Minimal padding for very small screens */
         margin-bottom: 1.5rem;
       }
 

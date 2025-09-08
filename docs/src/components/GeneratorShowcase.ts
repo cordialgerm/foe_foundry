@@ -53,13 +53,14 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         }
 
         .showcase-container {
-            padding: 4rem;
+            padding: 2rem 1rem; /* Reduced padding on mobile */
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 2rem;
+            position: relative; /* Fix sticky header issues */
         }
 
         .showcase-controls {
@@ -139,6 +140,55 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             --fg-color: var(--bg-color);
             --muted-color: rgba(255, 255, 255, 0.1);
             --tertiary-color: var(--primary-color);
+        }
+
+        /* Mobile responsiveness improvements */
+        @media (max-width: 768px) {
+            .showcase-container {
+                padding: 1.5rem 0.75rem; /* Further reduced padding for mobile */
+            }
+            
+            .lead {
+                font-size: 1.25rem; /* Smaller font size on mobile */
+                margin-bottom: 0.75rem;
+            }
+            
+            .instructions {
+                font-size: 0.9rem; /* Smaller instructions text */
+                margin-bottom: 0.75rem;
+                padding: 0 0.5rem;
+            }
+            
+            .search-interface {
+                width: 100%;
+                max-width: none; /* Remove max-width constraints on mobile */
+            }
+            
+            .search-interface-description {
+                font-size: 0.85rem;
+                margin-bottom: 0.75rem;
+                padding: 0 0.5rem;
+            }
+            
+            .showcase-controls {
+                gap: 0.375rem; /* Reduced gap between buttons */
+                padding: 0.375rem;
+                flex-wrap: wrap; /* Allow wrapping on very small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .showcase-container {
+                padding: 1rem 0.5rem; /* Minimal padding for very small screens */
+            }
+            
+            .lead {
+                font-size: 1.125rem;
+            }
+            
+            .instructions {
+                font-size: 0.8rem;
+            }
         }
 
         @keyframes slideIn {
@@ -323,7 +373,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         placeholder="Search for undead, fiends, dragons..."
                         button-text="Search"
                         mode="event"
-                        seeds="3"
+                        seeds="2"
                         analytics-surface="generator-showcase">
                     </search-bar>
                 </div>
