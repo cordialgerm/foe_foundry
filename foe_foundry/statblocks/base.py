@@ -767,31 +767,31 @@ class BaseStatblock:
         """Generate tags automatically from monster statblock properties"""
         tags = []
         
-        # Add creature type tag
-        tags.append(MonsterTag.from_creature_type(self.creature_type))
+        # 1. Creature Type tags (avoid duplicates)
+        creature_types = set()
+        creature_types.add(self.creature_type)
+        creature_types.update(self.additional_types)
         
-        # Add additional creature type tags
-        for additional_type in self.additional_types:
-            tags.append(MonsterTag.from_creature_type(additional_type))
+        for creature_type in creature_types:
+            tags.append(MonsterTag.from_creature_type(creature_type))
         
-        # Add role tag
+        # 2. Role tags
         tags.append(MonsterTag.from_role(self.role))
-        
-        # Add additional role tags
         for additional_role in self.additional_roles:
             tags.append(MonsterTag.from_role(additional_role))
         
-        # Add size tag
-        tags.append(MonsterTag.from_size(self.size))
+        # 3. Spellcaster tag if has spellcasting
+        if self.caster_type is not None:
+            tags.append(MonsterTag(tag="spellcaster", tag_type="theme"))
         
-        # Add CR tier tag
+        # 4. CR Tier tag
         tags.append(MonsterTag.from_cr(self.cr))
         
-        # Add legendary tag if legendary
+        # 5. Legendary tag if legendary
         if self.is_legendary:
             tags.append(MonsterTag.legendary())
         
-        # Add damage type tags from attacks (excluding physical damage types)
+        # 6. Damage Type tags from attacks (excluding physical damage types)
         damage_types = set()
         damage_types.add(self.primary_damage_type)
         if self.secondary_damage_type:
@@ -811,23 +811,20 @@ class BaseStatblock:
         for damage_type in non_physical_damage_types:
             tags.append(MonsterTag.from_damage_type(damage_type))
         
-        # Add family tag based on monster_key or species_key
+        # 7. Species tag for humanoids and known species
         if self.species_key and self.species_key != "human":
-            tags.append(MonsterTag.from_family(self.species_key))
-        elif self.monster_key:
-            # Enhanced family name extraction with special cases
-            family_name = self.monster_key.split('_')[0]
-            
-            # Special case mappings for complex names
-            dragon_colors = {'red', 'blue', 'green', 'black', 'white', 'gold', 'silver', 'bronze', 'copper', 'brass'}
-            if family_name in dragon_colors and self.creature_type == CreatureType.Dragon:
-                family_name = "dragon"
-            
-            tags.append(MonsterTag.from_family(family_name))
-        
-        # Add spellcaster tag if has spellcasting
-        if self.caster_type is not None:
-            tags.append(MonsterTag(tag="spellcaster", tag_type="theme"))
+            # Use species tag for specific races/species
+            tags.append(MonsterTag.from_species(self.species_key))
+        elif self.creature_type == CreatureType.Humanoid and self.monster_key:
+            # For humanoid NPCs, try to extract species from monster key  
+            species_name = self.monster_key.split('_')[0].lower()
+            known_species = {
+                'orc', 'elf', 'dwarf', 'halfling', 'gnome', 'goblin', 'hobgoblin', 
+                'bugbear', 'kobold', 'lizardfolk', 'tabaxi', 'kenku', 'yuan_ti',
+                'dragonborn', 'tiefling', 'half_elf', 'half_orc'
+            }
+            if species_name in known_species:
+                tags.append(MonsterTag.from_species(species_name))
         
         return tags
 

@@ -257,7 +257,7 @@ export class TagPopup extends LitElement {
             ${this.tagInfo.example_monsters.length > 0 ? html`
               <div class="example-monsters">
                 ${this.tagInfo.example_monsters.map(monster => html`
-                  <a href="/monsters/${monster.key}/" class="monster-card">
+                  <a href="/monsters/${monster.template}/" class="monster-card">
                     <div class="monster-name">${monster.name}</div>
                     <div class="monster-details">
                       <span>CR ${monster.cr}</span>

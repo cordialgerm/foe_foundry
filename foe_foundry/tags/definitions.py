@@ -135,47 +135,33 @@ POWER_TYPE_TAGS = [
 
 # Challenge Rating Tier Tags
 CR_TIER_TAGS = [
-    TagDefinition("tier0", "Levels 1-2 (CR 0-1/2)", "level-two.svg", "cr_tier", "#F59E0B"),
-    TagDefinition("tier1", "Levels 2-4 (CR 1-3)", "level-two-advanced.svg", "cr_tier", "#EAB308"),
-    TagDefinition("tier2", "Levels 5-9 (CR 4-12)", "level-three.svg", "cr_tier", "#D97706"),
-    TagDefinition("tier3", "Levels 10-14 (CR 13-19)", "level-three-advanced.svg", "cr_tier", "#C29A5B"),
-    TagDefinition("tier4", "Levels 15-20 (CR 20+)", "level-four.svg", "cr_tier", "#A16207"),
+    TagDefinition("Tier 0", "Levels 1-2 (CR 0-1/2)", "level-two.svg", "cr_tier", "#F59E0B"),
+    TagDefinition("Tier 1", "Levels 2-4 (CR 1-3)", "level-two-advanced.svg", "cr_tier", "#EAB308"),
+    TagDefinition("Tier 2", "Levels 5-9 (CR 4-12)", "level-three.svg", "cr_tier", "#D97706"),
+    TagDefinition("Tier 3", "Levels 10-14 (CR 13-19)", "level-three-advanced.svg", "cr_tier", "#C29A5B"),
+    TagDefinition("Tier 4", "Levels 15-20 (CR 20+)", "level-four.svg", "cr_tier", "#A16207"),
 ]
 
-# Creature Family/Species Tags
-CREATURE_FAMILY_TAGS = [
-    TagDefinition("balor", "Balor demons", "devil-mask.svg", "creature_family", "#DC2626"),
-    TagDefinition("basilisk", "Basilisk creatures", "reptile-tail.svg", "creature_family", "#059669"),
-    TagDefinition("bugbear", "Bugbear goblinoids", "goblin-head.svg", "creature_family", "#A16207"),
-    TagDefinition("chimera", "Chimera creatures", "griffin-symbol.svg", "creature_family", "#B45309"),
-    TagDefinition("cultist", "Cult members", "cultist.svg", "creature_family", "#7C2D12"),
-    TagDefinition("dire_bunny", "Dire bunny creatures", "rabbit-head.svg", "creature_family", "#92400E"),
-    TagDefinition("dragon_family", "Dragon creatures", "dragon-head.svg", "creature_family", "#DC2626"),
-    TagDefinition("druid", "Druidic characters", "oak-leaf.svg", "creature_family", "#16A34A"),
-    TagDefinition("frost_giant", "Frost giants", "giant.svg", "creature_family", "#3B82F6"),
-    TagDefinition("gelatinous_cube", "Gelatinous cubes", "cube.svg", "creature_family", "#22C55E"),
-    TagDefinition("ghoul", "Ghoul undead", "shambling-zombie.svg", "creature_family", "#374151"),
-    TagDefinition("goblin", "Goblin creatures", "goblin-head.svg", "creature_family", "#CA8A04"),
-    TagDefinition("gorgon", "Gorgon creatures", "medusa-head.svg", "creature_family", "#059669"),
-    TagDefinition("guard", "Guard NPCs", "guards.svg", "creature_family", "#6B7280"),
-    TagDefinition("hydra", "Hydra creatures", "hydra.svg", "creature_family", "#0891B2"),
-    TagDefinition("knight", "Knight characters", "mounted-knight.svg", "creature_family", "#1D4ED8"),
-    TagDefinition("kobold", "Kobold creatures", "goblin-head.svg", "creature_family", "#F59E0B"),
-    TagDefinition("lich", "Lich undead", "evil-book.svg", "creature_family", "#6B21A8"),
-    TagDefinition("mage", "Spellcaster mages", "wizard-staff.svg", "creature_family", "#7C3AED"),
-    TagDefinition("manticore", "Manticore creatures", "griffin-symbol.svg", "creature_family", "#EA580C"),
-    TagDefinition("merrow", "Merrow creatures", "triton-head.svg", "creature_family", "#0EA5E9"),
-    TagDefinition("mimic", "Mimic creatures", "mimic-chest.svg", "creature_family", "#A16207"),
-    TagDefinition("nothic", "Nothic creatures", "one-eyed.svg", "creature_family", "#8B5CF6"),
-    TagDefinition("ogre", "Ogre creatures", "ogre.svg", "creature_family", "#78716C"),
-    TagDefinition("simulacrum", "Simulacrum constructs", "android-mask.svg", "creature_family", "#6B7280"),
-    TagDefinition("skeletal", "Skeletal undead", "skeleton.svg", "creature_family", "#E5E7EB"),
-    TagDefinition("spider", "Spider creatures", "spider-web.svg", "creature_family", "#111827"),
-    TagDefinition("spirit", "Spirit creatures", "ghost.svg", "creature_family", "#C084FC"),
-    TagDefinition("vrock", "Vrock demons", "harpy.svg", "creature_family", "#B91C1C"),
-    TagDefinition("wight", "Wight undead", "ghost.svg", "creature_family", "#9CA3AF"),
-    TagDefinition("wolf", "Wolf creatures", "wolf-head.svg", "creature_family", "#57534E"),
-    TagDefinition("zombie", "Zombie undead", "shambling-zombie.svg", "creature_family", "#1F2937"),
+# Species Tags (for NPCs and humanoids)
+SPECIES_TAGS = [
+    TagDefinition("dwarf", "Dwarven people", "dwarf-face.svg", "species", "#A16207"),
+    TagDefinition("elf", "Elven people", "woman-elf-face.svg", "species", "#16A34A"),
+    TagDefinition("halfling", "Halfling people", "person.svg", "species", "#CA8A04"),
+    TagDefinition("human", "Human people", "person.svg", "species", "#6366F1"),
+    TagDefinition("gnome", "Gnomish people", "person.svg", "species", "#EC4899"),
+    TagDefinition("half_elf", "Half-elven people", "woman-elf-face.svg", "species", "#22C55E"),
+    TagDefinition("half_orc", "Half-orcish people", "orc-head.svg", "species", "#DC2626"),
+    TagDefinition("dragonborn", "Dragonborn people", "dragon-head.svg", "species", "#EF4444"),
+    TagDefinition("tiefling", "Infernal-touched people", "devil-mask.svg", "species", "#991B1B"),
+    TagDefinition("orc", "Orcish warriors", "orc-head.svg", "species", "#059669"),
+    TagDefinition("goblin", "Goblin creatures", "goblin-head.svg", "species", "#CA8A04"),
+    TagDefinition("hobgoblin", "Hobgoblin militaristic folk", "orc-head.svg", "species", "#DC2626"),
+    TagDefinition("bugbear", "Bugbear goblinoids", "goblin-head.svg", "species", "#A16207"),
+    TagDefinition("kobold", "Kobold creatures", "goblin-head.svg", "species", "#F59E0B"),
+    TagDefinition("lizardfolk", "Reptilian humanoids", "reptile-tail.svg", "species", "#059669"),
+    TagDefinition("tabaxi", "Feline humanoids", "cat.svg", "species", "#F59E0B"),
+    TagDefinition("kenku", "Avian humanoids", "raven.svg", "species", "#374151"),
+    TagDefinition("yuan_ti", "Serpentine humanoids", "snake.svg", "species", "#22C55E"),
 ]
 
 # Thematic Power Tags
@@ -245,14 +231,25 @@ SPELLCASTER_THEME_TAGS = [
     TagDefinition("transmuter", "Transformation magic", "magic-trick.svg", "spellcaster_theme", "#10B981"),
 ]
 
-# Size Tags
-SIZE_TAGS = [
-    TagDefinition("tiny", "Tiny sized creatures", "resize-down.svg", "size", "#9CA3AF"),
-    TagDefinition("small", "Small sized creatures", "minions.svg", "size", "#78716C"), 
-    TagDefinition("medium", "Medium sized creatures", "person.svg", "size", "#6B7280"),
-    TagDefinition("large", "Large sized creatures", "giant.svg", "size", "#57534E"),
-    TagDefinition("huge", "Huge sized creatures", "giant.svg", "size", "#44403C"),
-    TagDefinition("gargantuan", "Gargantuan sized creatures", "giant.svg", "size", "#292524"),
+# Region Environment Tags  
+REGION_TAGS = [
+    TagDefinition("Blasted Badlands", "Desert ruins with magical devastation", "desert.svg", "region", "#D97706"),
+    TagDefinition("Country Shire", "Peaceful rural communities", "village.svg", "region", "#65A30D"),
+    TagDefinition("Feywood", "Fey-touched magical forests", "fairy.svg", "region", "#EC4899"),
+    TagDefinition("Fiery Hellscape", "Volcanic and hellish domains", "flame.svg", "region", "#DC2626"),
+    TagDefinition("Flowing River", "Rivers and waterways", "river.svg", "region", "#0891B2"),
+    TagDefinition("Frozen Wastes", "Arctic tundra and ice", "tension-snowflake.svg", "region", "#3B82F6"),
+    TagDefinition("Haunted Lands", "Cursed territories", "ghost.svg", "region", "#6B21A8"),
+    TagDefinition("Lofty Mountains", "High peaks and alpine regions", "mountain-cave.svg", "region", "#78716C"),
+    TagDefinition("Open Roads", "Well-traveled pathways", "road.svg", "region", "#CA8A04"),
+    TagDefinition("Parched Sands", "Endless desert dunes", "desert.svg", "region", "#A16207"),
+    TagDefinition("Restless Sea", "Dangerous ocean waters", "big-wave.svg", "region", "#0EA5E9"),
+    TagDefinition("Rolling Grasslands", "Fertile plains and fields", "grass.svg", "region", "#22C55E"),
+    TagDefinition("Tangled Forest", "Dense woodlands and jungles", "pine-tree.svg", "region", "#16A34A"),
+    TagDefinition("Underland Realm", "Subterranean cave networks", "underground-cave.svg", "region", "#57534E"),
+    TagDefinition("Unrelenting Marsh", "Treacherous swamplands", "swamp.svg", "region", "#84CC16"),
+    TagDefinition("Urban Township", "Cities and towns", "castle.svg", "region", "#6366F1"),
+    TagDefinition("Wartorn Kingdom", "Conflict-ravaged lands", "crossed-swords.svg", "region", "#991B1B"),
 ]
 
 # All tag categories combined
@@ -266,10 +263,10 @@ ALL_TAG_DEFINITIONS = (
     DAMAGE_TYPE_TAGS + 
     POWER_TYPE_TAGS + 
     CR_TIER_TAGS + 
-    CREATURE_FAMILY_TAGS + 
+    SPECIES_TAGS + 
     THEMATIC_POWER_TAGS + 
     SPELLCASTER_THEME_TAGS +
-    SIZE_TAGS
+    REGION_TAGS
 )
 
 # Create lookup dictionaries

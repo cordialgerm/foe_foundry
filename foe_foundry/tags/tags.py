@@ -93,19 +93,23 @@ class MonsterTag:
         # Tier 4 is level 15-20 -> CR 20+
 
         if cr < 1:
-            return MonsterTag(tag="tier0", tag_type="cr_tier")
+            return MonsterTag(tag="Tier 0", tag_type="cr_tier")
         elif cr < 4:
-            return MonsterTag(tag="tier1", tag_type="cr_tier")
+            return MonsterTag(tag="Tier 1", tag_type="cr_tier")
         elif cr < 13:
-            return MonsterTag(tag="tier2", tag_type="cr_tier")
+            return MonsterTag(tag="Tier 2", tag_type="cr_tier")
         elif cr < 20:
-            return MonsterTag(tag="tier3", tag_type="cr_tier")
+            return MonsterTag(tag="Tier 3", tag_type="cr_tier")
         else:
-            return MonsterTag(tag="tier4", tag_type="cr_tier")
+            return MonsterTag(tag="Tier 4", tag_type="cr_tier")
 
     @staticmethod
     def from_family(family: str) -> MonsterTag:
         return MonsterTag(tag=family, tag_type="monster_family")
+
+    @staticmethod
+    def from_species(species: str) -> MonsterTag:
+        return MonsterTag(tag=species, tag_type="species")
 
     @staticmethod
     def from_theme(theme: str) -> MonsterTag:
@@ -114,7 +118,3 @@ class MonsterTag:
     @staticmethod
     def from_power_type(power_type: PowerType) -> MonsterTag:
         return MonsterTag(tag=power_type.name, tag_type="power_type")
-
-    @staticmethod
-    def from_size(size: Size) -> MonsterTag:
-        return MonsterTag(tag=size.name, tag_type="size")
