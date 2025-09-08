@@ -816,7 +816,10 @@ export class MonsterCarousel extends LitElement {
       template.transparent_edges ? 'transparent-edges' : ''
     ].filter(Boolean).join(' ');
 
-    const url = window.baseUrl ? `${window.baseUrl}/${template.url}` : template.url;
+    // Only prepend baseUrl if the template.url is a relative path
+    const url = template.url.startsWith('http://') || template.url.startsWith('https://') || template.url.startsWith('/') 
+      ? template.url 
+      : window.baseUrl ? `${window.baseUrl}/${template.url}` : template.url;
 
     return html`
       <div
