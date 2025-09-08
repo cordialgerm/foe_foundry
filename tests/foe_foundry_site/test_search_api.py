@@ -299,11 +299,13 @@ def test_post_search_monsters_enhanced_with_min_max_cr():
     for monster in data["monsters"]:
         assert 0.5 <= monster["cr"] <= 2.0
     
-    # Check that facets reflect the filtered results
+    # Check that facets reflect the full database (not just filtered results)
+    # This ensures all filter options remain visible
     if data["monsters"]:
         cr_range = data["facets"]["crRange"]
-        assert cr_range["min"] >= 0.5
-        assert cr_range["max"] <= 2.0
+        # Facets should show full range from database, which includes low CR monsters
+        assert cr_range["min"] < 0.5  # Should include monsters below the filter
+        assert cr_range["max"] > 2.0  # Should include monsters above the filter
 
 
 def test_post_search_monsters_enhanced_with_creature_types():
