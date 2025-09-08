@@ -219,7 +219,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
 @router.post("/monsters/enhanced")
 def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearchResult:
     """
-    Enhanced search endpoint that returns monsters with facets based on search results
+    Enhanced search endpoint that returns monsters with facets based on the full database
     """
     limit = request.limit if request.limit is not None else 50
 
@@ -277,8 +277,10 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
             )
         )
     
-    # Calculate facets based on search results
-    facets = _calculate_facets(results)
+    # Always return facets based on the full database, not just search results
+    # This ensures all filter options remain visible with their full counts
+    all_monsters = _get_all_monsters()
+    facets = _calculate_facets(all_monsters)
     
     return MonsterSearchResult(
         monsters=results,
