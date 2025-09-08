@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tag Icon Test</title>
+    <script type="module" src="/scripts/main.js"></script>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #2a2a2a;
+            color: white;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #555;
+            border-radius: 8px;
+        }
+        .monster-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .monster-tag-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            cursor: help;
+            transition: all 0.2s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .monster-tag-icon:hover {
+            background: rgba(0, 0, 0, 0.8);
+            border-color: #ff3737;
+            transform: scale(1.1);
+        }
+        .tag-icon {
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tag Icon Rendering Test</h1>
+    
+    <div class="test-section">
+        <h2>Manual SVG Icon Test</h2>
+        <div class="monster-tags">
+            <span class="monster-tag-icon" title="Humanoid - Humans and humanlike creatures">
+                <svg-icon src="person" class="tag-icon"></svg-icon>
+            </span>
+            <span class="monster-tag-icon" title="Defender - Protective tank-like creatures">
+                <svg-icon src="shield" class="tag-icon"></svg-icon>
+            </span>
+            <span class="monster-tag-icon" title="Medium - Medium sized creatures">
+                <svg-icon src="person" class="tag-icon"></svg-icon>
+            </span>
+            <span class="monster-tag-icon" title="Piercing - Sharp pointed damage">
+                <svg-icon src="spear-feather" class="tag-icon"></svg-icon>
+            </span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>API Response Simulation</h2>
+        <div id="api-tags" class="monster-tags">
+            <!-- Will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <script type="module">
+        // Simulate API data
+        const guardTags = [
+            {
+                "tag": "Humanoid",
+                "tag_type": "creature_type",
+                "description": "Humans and humanlike creatures",
+                "icon": "person.svg"
+            },
+            {
+                "tag": "Defender",
+                "tag_type": "monster_role",
+                "description": "Protective tank-like creatures",
+                "icon": "shield.svg"
+            },
+            {
+                "tag": "Artillery",
+                "tag_type": "monster_role",
+                "description": "Long-range attackers",
+                "icon": "crossbow.svg"
+            },
+            {
+                "tag": "Medium",
+                "tag_type": "size",
+                "description": "Medium sized creatures",
+                "icon": "person.svg"
+            }
+        ];
+
+        // Wait for components to load
+        setTimeout(() => {
+            const container = document.getElementById('api-tags');
+            guardTags.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.className = 'monster-tag-icon';
+                tagElement.title = `${tag.tag} - ${tag.description}`;
+                
+                if (tag.icon) {
+                    const iconSrc = tag.icon.replace('.svg', '');
+                    tagElement.innerHTML = `<svg-icon src="${iconSrc}" class="tag-icon"></svg-icon>`;
+                }
+                
+                container.appendChild(tagElement);
+            });
+        }, 100);
+    </script>
+</body>
+</html>
