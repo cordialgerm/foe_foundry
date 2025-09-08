@@ -1,8 +1,18 @@
 from __future__ import annotations
 
 from datetime import datetime
+from typing import List, Optional
 
 from pydantic.dataclasses import dataclass
+
+
+@dataclass(kw_only=True)
+class MonsterTagInfo:
+    """Tag information for display in UI"""
+    tag: str
+    tag_type: str
+    description: str
+    icon: str | None = None
 
 
 @dataclass(kw_only=True)
@@ -16,6 +26,7 @@ class MonsterInfoModel:
     background_image: str | None = None
     creature_type: str | None = None
     tag_line: str | None = None
+    tags: List[MonsterTagInfo] | None = None
 
 
 @dataclass(kw_only=True)

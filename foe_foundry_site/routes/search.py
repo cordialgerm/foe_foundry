@@ -80,6 +80,7 @@ def _get_all_monsters() -> list[MonsterInfoModel]:
             background_image=monster.background_image,
             creature_type=monster.creature_type,
             tag_line=monster.tag_line,
+            tags=monster.tags,
         )
         for monster in all_monsters
     ]
@@ -148,6 +149,7 @@ def get_search_monsters(
                 background_image=monster.background_image,
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
+                tags=monster.tags,
             )
         )
     return results
@@ -211,6 +213,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
                 background_image=monster.background_image,
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
+                tags=monster.tags,
             )
         )
     return results
@@ -274,6 +277,7 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
                 background_image=monster.background_image,
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
+                tags=monster.tags,
             )
         )
     

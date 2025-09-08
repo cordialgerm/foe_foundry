@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
+from typing import List
 
 from bs4 import BeautifulSoup
 from pydantic.dataclasses import dataclass
@@ -23,7 +24,7 @@ from foe_foundry.utils.image import (
     is_grayscaleish,
 )
 
-from ..base import MonsterInfoModel, PowerLoadoutModel
+from ..base import MonsterInfoModel, MonsterTagInfo, PowerLoadoutModel
 from ..families import load_families
 from ..jinja import render_statblock_fragment
 
@@ -73,6 +74,7 @@ class MonsterModel:
     template_key: str
     variant_name: str
     variant_key: str
+    tags: List[MonsterTagInfo]
 
     statblock_html: str
     template_html: str | None
@@ -185,22 +187,36 @@ class MonsterModel:
         related_monster_keys = {m.key for m in related_monsters}
 
         # Also look for any monsters that are in the same family as this monster
-        families = [
-            f for f in load_families() if stats.key in {m.key for m in f.monsters}
-        ]
-        for family in families:
-            for m in family.monsters:
-                if m.key not in related_monster_keys:
-                    related_monsters.append(
-                        RelatedMonsterModel(
-                            key=m.key,
-                            name=m.name,
-                            cr=m.cr,
-                            template=TemplatesByKey[m.template].name,
-                            family=family.name,
-                            same_template=False,
+        try:
+            families = [
+                f for f in load_families() if stats.key in {m.key for m in f.monsters}
+            ]
+            for family in families:
+                for m in family.monsters:
+                    if m.key not in related_monster_keys:
+                        related_monsters.append(
+                            RelatedMonsterModel(
+                                key=m.key,
+                                name=m.name,
+                                cr=m.cr,
+                                template=TemplatesByKey[m.template].name,
+                                family=family.name,
+                                same_template=False,
+                            )
                         )
-                    )
+        except ValueError:
+            # Family cache not available, skip family-based related monsters
+            pass
+
+        # Extract tags from statblock
+        tag_infos = []
+        for monster_tag in stats.tags:
+            tag_infos.append(MonsterTagInfo(
+                tag=monster_tag.tag,
+                tag_type=monster_tag.tag_type,
+                description=monster_tag.description,
+                icon=monster_tag.icon
+            ))
 
         return MonsterModel(
             name=stats.name,
@@ -212,6 +228,7 @@ class MonsterModel:
             template_name=template.name,
             variant_key=stats.variant_key,
             variant_name=variant.name,
+            tags=tag_infos,
             statblock_html=statblock_html,
             template_html=template_html,
             overview_html=overview_html,

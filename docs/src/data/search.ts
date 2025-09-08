@@ -1,3 +1,11 @@
+// Monster tag information for display
+export interface MonsterTagInfo {
+    tag: string;
+    tag_type: string;
+    description: string;
+    icon?: string;
+}
+
 // MonsterInfo type matching backend MonsterInfoModel
 export interface MonsterInfo {
     key: string;
@@ -8,6 +16,7 @@ export interface MonsterInfo {
     background_image?: string;
     creature_type?: string;
     tag_line?: string;
+    tags?: MonsterTagInfo[];
 }
 
 // Enhanced search request interface

@@ -686,6 +686,31 @@ export class MonsterCodex extends LitElement {
       font-weight: bold;
     }
 
+    .monster-tag-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      cursor: help;
+      transition: all 0.2s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .monster-tag-icon:hover {
+      background: rgba(0, 0, 0, 0.8);
+      border-color: var(--tertiary-color);
+      transform: scale(1.1);
+    }
+
+    .tag-icon {
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: white;
+    }
+
     .monster-description {
       font-size: 1rem;
       line-height: 1.4;
@@ -1192,9 +1217,11 @@ export class MonsterCodex extends LitElement {
             <div class="monster-name">${monster.name}</div>
 
             <div class="monster-tags">
-              ${tags.map(tag => html`
-                <span class="monster-tag">${tag}</span>
-              `)}
+              ${monster.tags ? monster.tags.map(tag => html`
+                <span class="monster-tag-icon" title="${tag.description}">
+                  ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
+                </span>
+              `) : ''}
             </div>
 
             ${monster.tag_line ? html`<div class="monster-description">${monster.tag_line}</div>` : ''}
