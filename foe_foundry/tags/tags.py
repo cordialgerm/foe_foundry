@@ -1,19 +1,40 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from typing import Optional
 
 from foe_foundry.creature_types import CreatureType
 from foe_foundry.damage import DamageType
-from foe_foundry.environs.environs import MonsterEnviron
+from foe_foundry.environs import Biome, Development, ExtraplanarInfluence, Region, Terrain
 from foe_foundry.features import ActionType
 from foe_foundry.power_types import PowerType
 from foe_foundry.role_types import MonsterRole
+from .definitions import TagDefinition, get_tag_definition
 
 
 @dataclass(frozen=True)
 class MonsterTag:
     tag: str
     tag_type: str
+    
+    @property
+    def definition(self) -> Optional[TagDefinition]:
+        """Get the full tag definition with description and icon"""
+        return get_tag_definition(self.tag.lower().replace(" ", "_"))
+    
+    @property
+    def description(self) -> str:
+        """Get the tag description"""
+        if self.definition:
+            return self.definition.description
+        return f"Tag: {self.tag}"
+    
+    @property
+    def icon(self) -> Optional[str]:
+        """Get the tag icon filename"""
+        if self.definition:
+            return self.definition.icon
+        return None
 
     @staticmethod
     def from_creature_type(ct: CreatureType) -> MonsterTag:
@@ -28,8 +49,24 @@ class MonsterTag:
         return MonsterTag(tag="Legendary", tag_type="monster_role")
 
     @staticmethod
-    def from_environ(environ: MonsterEnviron) -> MonsterTag:
-        return MonsterTag(tag=environ.name, tag_type="environ")
+    def from_biome(biome: Biome) -> MonsterTag:
+        return MonsterTag(tag=biome.name, tag_type="biome")
+
+    @staticmethod
+    def from_terrain(terrain: Terrain) -> MonsterTag:
+        return MonsterTag(tag=terrain.name, tag_type="terrain")
+
+    @staticmethod
+    def from_development(development: Development) -> MonsterTag:
+        return MonsterTag(tag=development.name, tag_type="development")
+
+    @staticmethod
+    def from_extraplanar(extraplanar: ExtraplanarInfluence) -> MonsterTag:
+        return MonsterTag(tag=extraplanar.name, tag_type="extraplanar")
+
+    @staticmethod
+    def from_region(region: Region) -> MonsterTag:
+        return MonsterTag(tag=region.name, tag_type="region")
 
     @staticmethod
     def from_action_type(action_type: ActionType) -> MonsterTag:
