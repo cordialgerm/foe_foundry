@@ -34,6 +34,9 @@ origins = [
     "http://localhost:8080",
     "http://localhost:3000",
     "http://localhost:3001",
+    "https://foe-foundry-stage.onrender.com",
+    "https://foe-foundry.com",
+    "https://www.foe-foundry.com",
 ]
 
 app.add_middleware(
