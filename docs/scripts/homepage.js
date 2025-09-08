@@ -142,7 +142,18 @@ window.addEventListener("load", () => {
 function onSwiperClick(swiper, event) {
     const clickedSlide = swiper.clickedSlide;
     if (clickedSlide && clickedSlide.dataset.url) {
-        window.location.href = clickedSlide.dataset.url;
+        const url = clickedSlide.dataset.url;
+        // If this is the monster swiper, call trackMonsterClick
+        if (swiper.el && swiper.el.classList.contains('swiper-monsters')) {
+            // Try to extract the template key from the URL
+            // Example URL: /monsters/{template_key}/
+            const match = url.match(/\/monsters\/([^/]+)\//);
+            if (match && typeof window.foeFoundryAnalytics?.trackMonsterClick === 'function') {
+                const templateKey = match[1];
+                window.foeFoundryAnalytics.trackMonsterClick(templateKey, 'template', 'carousel-legacy');
+            }
+        }
+        window.location.href = url;
     }
 }
 

@@ -4,6 +4,7 @@ import { SiteCssMixin } from '../utils/css-adoption.js';
 import './RerollButton.js';
 import './ForgeButton.js';
 import './MonsterStatblock.js';
+import './SearchBar.js';
 
 @customElement('generator-showcase')
 export class GeneratorShowcase extends SiteCssMixin(LitElement) {
@@ -21,6 +22,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
     @state()
     private currentMessage = '';
+
+
 
     private timerDuration = 0;
     private timerStartTime = 0;
@@ -123,6 +126,31 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         .timer-container.hidden {
             display: none;
         }
+
+        .search-interface-description {
+            color: var(--bg-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .search-interface search-bar {
+            --fg-color: var(--bg-color);
+            --muted-color: rgba(255, 255, 255, 0.1);
+            --tertiary-color: var(--primary-color);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     `;
 
     firstUpdated() {
@@ -132,6 +160,10 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         // Add event listeners for button interactions
         this.addEventListener('reroll-click', this._handleButtonClick.bind(this));
         this.addEventListener('forge-click', this._handleButtonClick.bind(this));
+
+        // Add event listener for search events
+        this.addEventListener('search-query', this._handleSearchQuery.bind(this));
+        this.addEventListener('search-navigate', this._handleSearchNavigate.bind(this));
 
         // Set up intersection observer to detect when component comes into view
         this.setupIntersectionObserver();
@@ -179,6 +211,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         // Start progress animation
         this.animateProgress();
     }
+
+
 
     private startMessageCycling() {
         // Set initial message
@@ -253,8 +287,26 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         this.showStatblock();
     }
 
-    private _newsletterClick() {
-        window.open('https://buttondown.com/cordialgerm', '_blank');
+    private _handleCodexClick() {
+        window.location.href = '/codex/#browse';
+    }
+
+    private _handleSearchQuery(event: CustomEvent) {
+        // Handle search-query event from SearchBar
+        const query = event.detail.query;
+        if (query) {
+            // Navigate to codex search page with the query (query params must come before hash)
+            window.location.href = `/codex/?query=${encodeURIComponent(query)}#search`;
+        }
+    }
+
+    private _handleSearchNavigate(event: CustomEvent) {
+        // Handle search-navigate event from SearchBar
+        const query = event.detail.query;
+        if (query) {
+            // Navigate to codex search page with the query (query params must come before hash)
+            window.location.href = `/codex/?query=${encodeURIComponent(query)}#search`;
+        }
     }
 
     render() {
@@ -265,7 +317,18 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         return html`
             <div class="showcase-container bg-object scroll">
                 <span class="lead">Summon Your First Foe</span>
-                <p class="instructions">Roll the <strong>Die</strong> below to summon a random monster, click the <strong>Anvil</strong> to forge it into the perfect foe, or read the <strong>Tome</strong> for DM tips and tricks.</p>
+                 <div class="search-interface">
+                    <div class="search-interface-description">Find the perfect foe for your campaign:</div>
+                    <search-bar
+                        placeholder="Search for undead, fiends, dragons..."
+                        button-text="Search"
+                        mode="event"
+                        seeds="3"
+                        analytics-surface="generator-showcase">
+                    </search-bar>
+                </div>
+
+                <p class="instructions">Roll the <strong>Die</strong> below to summon a random monster, click the <strong>Anvil</strong> to forge it into the perfect foe, or read the <strong>Codex</strong> to discover unique foes.</p>
                 <div class="showcase-controls">
                     <reroll-button
                         jiggle="jiggleUntilClick"
@@ -279,11 +342,11 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         target="showcase-statblock">
                     </forge-button>
                     <svg-icon-button
-                        title="Subscribe to the Foe Foundry Newsletter"
+                        title="Read the Foe Foundry Codex"
                         src="death-note"
                         jiggle="jiggleUntilClick"
-                        class="showcase-button newsletter"
-                        @click="${this._newsletterClick}"
+                        class="showcase-button codex"
+                        @click="${this._handleCodexClick}"
                     >
                     </svg-icon-button>
                 </div>
@@ -293,6 +356,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         <div class="progress-bar" style="width: ${this.timerProgress}%"></div>
                     </div>
                 </div>
+
+
             </div>
             <monster-statblock
                 class="${statblockClass}"

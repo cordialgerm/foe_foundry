@@ -10,4 +10,5 @@ class MonsterFamilyModel:
     key: str
     name: str
     tag_line: str
+    icon: str
     monsters: list[MonsterInfoModel]

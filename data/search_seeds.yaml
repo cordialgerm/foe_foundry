@@ -1,0 +1,122 @@
+# Search Seeds for Monster Codex
+# These are predefined search terms to inspire users and help them discover monsters
+# All examples below have been validated against the actual search API
+
+search_seeds:
+- term: undead horrors
+  description: Skeletal champions, zombies, and other terrifying undead creatures
+  examples:
+  - Zombie
+  - Shield Guardian
+  - Ghost
+  - Zombie Brute
+- term: criminal underworld
+  description: Assassins, thugs, and bandit captains from the shadows
+  examples:
+  - Bandit Captain
+  - Thug
+  - Assassin
+  - Spy
+- term: frozen wastes
+  description: Ice-bound creatures and frost giants from the coldest realms
+  examples:
+  - Freezing Skeletal Champion
+  - Freezing Skeleton
+  - Ice Golem
+  - Archlich
+- term: fire-cursed fiends
+  description: Demonic cultists and fire-touched undead
+  examples:
+  - Fiend Cultist Grand Master
+  - Aberrant Cultist
+  - Aberrant Cultist Grand Master
+  - Cultist Exarch
+- term: shadow assassins
+  description: Stealthy killers that strike from the darkness
+  examples:
+  - Assassin
+  - Shadow
+  - Bandit
+  - Bandit Captain
+- term: beasts of burden
+  description: Powerful creatures used for labor and war
+  examples:
+  - Shadow
+  - Ogre
+- term: ancient constructs
+  description: Stone golems, gorgons, and other magical constructions
+  examples:
+  - Stone Golem
+  - Gorgon
+  - Ice Golem
+  - Iron Golem
+- term: feral giants
+  description: Savage ogres and monstrous giant-kin
+  examples:
+  - Ogre
+  - Owlbear
+- term: otherworldly aberrations
+  description: Strange creatures from beyond the material plane
+  examples:
+  - Conjurer Archmage
+  - Conjurer Primagus
+  - Mastercraft Simulacrum
+  - Simulacrum
+- term: arcane tricksters
+  description: Magical spellcasters with cunning abilities
+  examples:
+  - Abjurer Mage
+  - Conjurer Mage
+  - Diviner Mage
+  - Enchanter Mage
+- term: ocean terrors
+  description: Aquatic monsters from the deepest waters
+  examples:
+  - Merrow
+- term: fallen celestials
+  description: Corrupted holy beings and dark priests
+  examples:
+  - Priest Anointed One
+  - Archpriest
+  - Archpriest Living Saint
+  - Priest
+- term: goblin warbands
+  description: Organized groups of goblinoid raiders
+  examples:
+  - Goblin
+  - Goblin Boss
+- term: oozes and slimes
+  description: Gelatinous creatures and shapeshifting mimics
+  examples:
+  - Clay Golem
+  - Ancient Gelatinous Cube
+  - Vault Mimic
+  - Gelatinous Cube
+- term: feral werewolves
+  description: Savage lycanthropes and dire wolves
+  examples:
+  - Dire Wolf
+  - Wolf
+  - Frost Giant Rimepriest
+  - Goblin Shaman
+- term: storm bringers
+  description: Elemental creatures that command weather and lightning
+  examples:
+  - Burning Skeletal Champion
+  - Burning Skeleton
+  - Freezing Skeletal Champion
+  - Freezing Skeleton
+- term: underground horrors
+  description: Dungeon guardians and subterranean monsters
+  examples:
+  - Shield Guardian
+  - Gelatinous Cube
+  - Animated Armor
+  - Wight
+- term: fey tricksters
+  description: Mischievous creatures from the feywild
+  examples:
+  - Ogre Big Brainz
+  - Ogre
+  - Spy
+  - Berserker
