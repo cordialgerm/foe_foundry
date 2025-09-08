@@ -59,6 +59,9 @@ app.include_router(geo.router)
 
 site_dir = Path(__file__).parent.parent / "site"
 
+# Ensure the site directory exists for static file serving
+site_dir.mkdir(exist_ok=True)
+
 # Mounts the static site folder create by mkdocs
 app.mount("/", StaticFiles(directory=site_dir, html=True), name="site")
 
