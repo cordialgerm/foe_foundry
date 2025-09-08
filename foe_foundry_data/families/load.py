@@ -13,6 +13,9 @@ from ..base import MonsterInfoModel
 from ..refs import MonsterRefResolver
 from .data import MonsterFamilyModel
 
+
+
+
 ref_resolver = MonsterRefResolver()
 
 
@@ -29,7 +32,7 @@ def load_families() -> list[MonsterFamilyModel]:
             if not is_monster_family:
                 continue
             markdown_content = strip_yaml_frontmatter(content)
-            title = frontmatter.get("short_title", frontmatter.get("title"))
+            title = frontmatter.get("family_name", frontmatter.get("short_title"))
             if not isinstance(title, str):
                 raise ValueError(
                     f"Invalid title for family '{name}': {title}. Expected a string."
@@ -64,11 +67,18 @@ def load_families() -> list[MonsterFamilyModel]:
                         )
                     )
 
+            icon = frontmatter.get("icon", "monster-grasp")
+            if not isinstance(icon, str):
+                raise ValueError(
+                    f"Invalid icon for family '{name}': {icon}. Expected a string."
+                )
+
             families.append(
                 MonsterFamilyModel(
                     key=name_to_key(name),
                     name=title,
                     tag_line=tag_line,
+                    icon=icon,
                     monsters=monsters,
                 )
             )

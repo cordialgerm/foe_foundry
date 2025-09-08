@@ -1,0 +1,194 @@
+/* Codex Page Styles */
+.codex-container {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0px !important;
+}
+
+/* Container overrides similar to generate page */
+.container.pamphlet-container {
+    margin-top: 0px !important;
+}
+
+.container-md {
+    padding-top: 0px !important;
+}
+
+/* Tab Navigation */
+.codex-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.codex-tab {
+    flex: 1;
+    max-width: 300px;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--fg-muted-color);
+    font-family: var(--header-font);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.codex-tab:hover {
+    background: var(--primary-color);
+    color: var(--fg-color);
+}
+
+.codex-tab.active {
+    color: var(--tertiary-color);
+    border-bottom-color: var(--tertiary-color);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.tab-icon {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Tab Content */
+.codex-tab-content {
+    display: none;
+    height: calc(100vh - 120px);
+    /* Account for tab navigation height */
+    overflow: hidden;
+    /* Prevent this level from scrolling */
+    flex-direction: column;
+}
+
+.codex-tab-content.active {
+    display: flex;
+}
+
+/* Search Section for Browse Tab */
+.codex-search-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem 1rem;
+    flex-shrink: 0;
+    /* Don't shrink this section */
+}
+
+/* Monster Family Browse Component */
+monster-family-browse {
+    flex: 1;
+    /* Take up remaining space */
+    overflow: hidden;
+}
+
+/* Carousels Section */
+.codex-carousels {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.carousel-section {
+    margin-bottom: 4rem;
+}
+
+.carousel-title {
+    font-family: var(--header-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+}
+
+.carousel-description {
+    color: var(--fg-muted-color);
+    font-style: italic;
+    text-align: center !important;
+    margin: 0 0 1.5rem 0;
+    font-size: 1rem;
+}
+
+/* Monster components styling */
+monster-carousel {
+    display: block;
+    margin: 1rem 0;
+}
+
+monster-codex {
+    display: block;
+    min-height: 70vh;
+    contain: layout style;
+    contain-intrinsic-size: 70vh;
+}
+
+/* Component loading states */
+monster-carousel:not(:defined),
+monster-codex:not(:defined) {
+    visibility: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .codex-tab {
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        max-width: none;
+        min-height: 52px; /* Better touch target */
+    }
+
+    .tab-icon {
+        display: none;
+    }
+
+    .codex-search-section {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .codex-carousels {
+        padding: 0 1rem;
+    }
+
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .codex-tabs {
+        gap: 0.25rem;
+        padding: 0 0.5rem;
+    }
+
+    .codex-tab {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+        min-height: 48px;
+    }
+
+    .codex-tab-content {
+        padding: 1.25rem 0;
+    }
+
+    .codex-search-section {
+        padding: 1.25rem 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .carousel-section {
+        margin-bottom: 2rem;
+    }
+}

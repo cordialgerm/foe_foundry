@@ -149,6 +149,9 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean, attribute: 'src-from-url' })
     srcFromUrl: boolean = false;
 
+    @property({ type: Boolean, attribute: 'link-header' })
+    linkHeader: boolean = false;
+
     @property({ type: Object })
     monsterStore?: MonsterStore;
     private statblockRef: Ref<HTMLDivElement> = createRef();
@@ -307,6 +310,58 @@ export class MonsterStatblock extends LitElement {
         }
     }
 
+    /**
+     * Apply link-header functionality to make monster names clickable
+     */
+    private applyLinkHeader(statblockElement: Element) {
+        if (!this.linkHeader) return;
+
+        // Find the monster name header elements in the statblock
+        const nameHeaders = statblockElement.querySelectorAll('.stat-block .monster-name');
+
+        nameHeaders.forEach(header => {
+            const monsterKey = this.getEffectiveMonsterKey();
+            if (monsterKey && header.textContent) {
+                // Create a link element
+                const link = document.createElement('a');
+                link.href = `/generate/?monster-key=${monsterKey}`;
+                link.style.color = 'inherit';
+                link.style.textDecoration = 'none';
+                link.textContent = header.textContent;
+
+                // Replace the header content with the link
+                header.innerHTML = '';
+                header.appendChild(link);
+            }
+        });
+    }
+
+    /**
+     * Apply link-header functionality to slotted content
+     */
+    private applyLinkHeaderToSlottedContent() {
+        if (!this.linkHeader) return;
+
+        // Find the monster name header elements in slotted content
+        const nameHeaders = this.querySelectorAll('.stat-block .creature-heading h1, .stat-block .creature-heading .creature-name, .stat-block h1');
+
+        nameHeaders.forEach(header => {
+            const monsterKey = this.getEffectiveMonsterKey();
+            if (monsterKey && header.textContent && !header.querySelector('a')) {
+                // Create a link element (only if not already linked)
+                const link = document.createElement('a');
+                link.href = `/generate/?${monsterKey}/`;
+                link.style.color = 'inherit';
+                link.style.textDecoration = 'none';
+                link.textContent = header.textContent;
+
+                // Replace the header content with the link
+                header.innerHTML = '';
+                header.appendChild(link);
+            }
+        });
+    }
+
     // Use Lit Task for async statblock loading
     private _statblockTask = new Task(this, {
         task: async ([monsterKey, hpMultiplier, damageMultiplier, powers, changeType, random], { signal }) => {
@@ -449,6 +504,11 @@ export class MonsterStatblock extends LitElement {
 
         // If using slot-based content, render the slotted content directly
         if (this.useSlot) {
+            // Apply link-header functionality to existing slotted content
+            if (this.linkHeader) {
+                this.applyLinkHeaderToSlottedContent();
+            }
+
             return html`
                 <div class="statblock-wrapper">
                     <div ${ref(this.statblockRef)} id="statblock-container">
@@ -491,6 +551,10 @@ export class MonsterStatblock extends LitElement {
                         block.classList.add('print-preview');
                     });
                 }
+
+                // Apply link-header functionality if provided
+                this.applyLinkHeader(statblockElement);
+
                 return this._renderStatblock(statblockElement, this._cachedFlags || undefined);
             }
         })

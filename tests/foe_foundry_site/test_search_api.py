@@ -229,3 +229,134 @@ def test_post_search_response_format():
         assert isinstance(monster["name"], str)
         assert isinstance(monster["cr"], (int, float))
         assert isinstance(monster["template"], str)
+
+
+def test_get_search_facets():
+    """Test the facets endpoint"""
+    response = client.get("/api/v1/search/facets")
+    assert response.status_code == 200
+    data = response.json()
+    
+    # Check structure
+    assert "creatureTypes" in data
+    assert "crRange" in data
+    
+    # Check creature types structure
+    assert isinstance(data["creatureTypes"], list)
+    for facet in data["creatureTypes"]:
+        assert "value" in facet
+        assert "count" in facet
+        assert isinstance(facet["value"], str)
+        assert isinstance(facet["count"], int)
+        assert facet["count"] >= 0
+    
+    # Check CR range structure
+    assert "min" in data["crRange"]
+    assert "max" in data["crRange"]
+    assert isinstance(data["crRange"]["min"], (int, float))
+    assert isinstance(data["crRange"]["max"], (int, float))
+    assert data["crRange"]["min"] <= data["crRange"]["max"]
+
+
+def test_post_search_monsters_enhanced():
+    """Test the enhanced search endpoint with facets"""
+    request_data = {"query": "orc", "limit": 10}
+    response = client.post("/api/v1/search/monsters/enhanced", json=request_data)
+    assert response.status_code == 200
+    data = response.json()
+    
+    # Check structure
+    assert "monsters" in data
+    assert "facets" in data
+    assert "total" in data
+    
+    # Check monsters
+    assert isinstance(data["monsters"], list)
+    assert len(data["monsters"]) <= 10
+    
+    # Check facets
+    assert "creatureTypes" in data["facets"]
+    assert "crRange" in data["facets"]
+    
+    # Check total
+    assert isinstance(data["total"], int)
+    assert data["total"] == len(data["monsters"])
+
+
+def test_post_search_monsters_enhanced_with_min_max_cr():
+    """Test enhanced search with min_cr and max_cr filters"""
+    request_data = {
+        "query": "goblin", 
+        "min_cr": 0.5, 
+        "max_cr": 2.0,
+        "limit": 20
+    }
+    response = client.post("/api/v1/search/monsters/enhanced", json=request_data)
+    assert response.status_code == 200
+    data = response.json()
+    
+    # Check that all returned monsters have CR within the specified range
+    for monster in data["monsters"]:
+        assert 0.5 <= monster["cr"] <= 2.0
+    
+    # Check that facets reflect the full database (not just filtered results)
+    # This ensures all filter options remain visible
+    if data["monsters"]:
+        cr_range = data["facets"]["crRange"]
+        # Facets should show full range from database, which includes low CR monsters
+        assert cr_range["min"] < 0.5  # Should include monsters below the filter
+        assert cr_range["max"] > 2.0  # Should include monsters above the filter
+
+
+def test_post_search_monsters_enhanced_with_creature_types():
+    """Test enhanced search with creature type filters"""
+    request_data = {
+        "query": "skeleton",
+        "creature_types": ["Undead"],
+        "limit": 10
+    }
+    response = client.post("/api/v1/search/monsters/enhanced", json=request_data)
+    assert response.status_code == 200
+    data = response.json()
+    
+    # Check that all returned monsters are of the specified creature type
+    for monster in data["monsters"]:
+        if monster.get("creature_type"):
+            assert monster["creature_type"] == "Undead"
+
+
+def test_post_search_monsters_backward_compatibility():
+    """Test that the original monsters endpoint still works with min_cr/max_cr"""
+    request_data = {
+        "query": "orc",
+        "min_cr": 0.5,
+        "max_cr": 1.0,
+        "limit": 5
+    }
+    response = client.post("/api/v1/search/monsters", json=request_data)
+    assert response.status_code == 200
+    data = response.json()
+    
+    # Should return list of monsters (not enhanced result with facets)
+    assert isinstance(data, list)
+    assert len(data) <= 5
+    
+    # Check that CR filtering works
+    for monster in data:
+        assert 0.5 <= monster["cr"] <= 1.0
+
+
+def test_post_search_monsters_target_cr_fallback():
+    """Test that target_cr still works when min_cr/max_cr are not provided"""
+    request_data = {
+        "query": "goblin",
+        "target_cr": 1.0,
+        "limit": 5
+    }
+    response = client.post("/api/v1/search/monsters", json=request_data)
+    assert response.status_code == 200
+    data = response.json()
+    
+    assert isinstance(data, list)
+    # target_cr should find monsters around CR 1.0
+    # The exact range depends on the target_cr logic, but should be reasonable

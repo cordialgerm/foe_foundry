@@ -15,6 +15,36 @@ export interface MonsterTemplate {
     create_date: string; // ISO date string
 }
 
+export interface MonsterInfo {
+    key: string;
+    name: string;
+    cr: number | string;
+    template: string;
+}
+
+export interface CatalogTemplate {
+    key: string;
+    name: string;
+    url: string;
+    monsters: MonsterInfo[];
+}
+
+export interface CatalogFamily {
+    key: string;
+    name: string;
+    url: string;
+    monsters: MonsterInfo[];
+}
+
+export interface MonsterFamily {
+    key: string;
+    name: string;
+    tag_line: string;
+    icon: string;
+    monster_count: number;
+    url: string;
+}
+
 function formatCr(cr: string | number): string {
     if (typeof cr === 'string') return cr;
     switch (cr) {
@@ -256,6 +286,33 @@ export class ApiMonsterStore implements MonsterStore {
 
         observer.observe(statblockElement);
         return statblockElement;
+    }
+
+    async getCatalogByTemplate(): Promise<CatalogTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/catalog/by_template`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch catalog by template: ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async getCatalogByFamily(): Promise<CatalogFamily[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/catalog/by_family`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch catalog by family: ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async getAllFamilies(): Promise<MonsterFamily[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monsters/families`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch all families: ${response.statusText}`);
+        }
+        return await response.json();
     }
 }
 
