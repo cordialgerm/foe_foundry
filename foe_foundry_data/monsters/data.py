@@ -194,19 +194,46 @@ class MonsterModel:
             for family in families:
                 for m in family.monsters:
                     if m.key not in related_monster_keys:
+                        # Handle case where template might not exist in lookup
+                        template_name = m.template
+                        if m.template in TemplatesByKey:
+                            template_name = TemplatesByKey[m.template].name
+                        
                         related_monsters.append(
                             RelatedMonsterModel(
                                 key=m.key,
                                 name=m.name,
                                 cr=m.cr,
-                                template=TemplatesByKey[m.template].name,
+                                template=template_name,
                                 family=family.name,
                                 same_template=False,
                             )
                         )
-        except ValueError:
-            # Family cache not available, skip family-based related monsters
-            pass
+        except Exception as e:
+            # Log the error but continue processing - families are valuable
+            import logging
+            logging.warning(f"Error processing families for monster {stats.key}: {e}")
+            # Try to get families without template validation
+            try:
+                families = [
+                    f for f in load_families() if stats.key in {m.key for m in f.monsters}
+                ]
+                for family in families:
+                    for m in family.monsters:
+                        if m.key not in related_monster_keys:
+                            related_monsters.append(
+                                RelatedMonsterModel(
+                                    key=m.key,
+                                    name=m.name,
+                                    cr=m.cr,
+                                    template=m.template,  # Use raw template name
+                                    family=family.name,
+                                    same_template=False,
+                                )
+                            )
+            except Exception:
+                # Only skip if absolutely necessary
+                pass
 
         # Extract tags from statblock
         tag_infos = []
