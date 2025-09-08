@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic.dataclasses import dataclass
 
 from foe_foundry.creatures import AllTemplates
-from foe_foundry_data.base import MonsterInfoModel
+from foe_foundry_data.base import MonsterFamilyInfo, MonsterInfoModel
 from foe_foundry_data.monster_families import MonsterFamilies
 from foe_foundry_data.monsters import MonsterModel, PowerLoadoutModel
 from foe_foundry_data.monsters.all import Monsters
@@ -105,25 +105,16 @@ def get_new_monsters(
 
 
 @router.get("/families")
-def get_all_families() -> list[dict]:
+def get_all_families() -> list[MonsterFamilyInfo]:
     """
     Returns a list of all monster families with basic metadata
     """
     try:
-        families = MonsterFamilies.families
-        return [
-            {
-                "key": family.key,
-                "name": family.name,
-                "tag_line": family.tag_line,
-                "icon": family.icon,
-                "monster_count": len(family.monsters),
-                "url": f"/families/{family.key}/"
-            }
-            for family in families
-        ]
+        return MonsterFamilies.families
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error loading families data: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error loading families data: {str(e)}"
+        )
 
 
 @router.get("/family/{family_key}")
@@ -135,13 +126,17 @@ def get_monsters_by_family(family_key: str) -> list[MonsterInfoModel]:
         families = MonsterFamilies.families
         family = next((f for f in families if f.key == family_key), None)
         if family is None:
-            raise HTTPException(status_code=404, detail=f"Family '{family_key}' not found")
-        
+            raise HTTPException(
+                status_code=404, detail=f"Family '{family_key}' not found"
+            )
+
         return family.monsters
     except Exception as e:
         if isinstance(e, HTTPException):
             raise
-        raise HTTPException(status_code=500, detail=f"Error loading family data: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error loading family data: {str(e)}"
+        )
 
 
 @router.get("/{template_or_variant_key}")

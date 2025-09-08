@@ -1,6 +1,6 @@
+from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
-from datetime import datetime
 
 import pytest
 
@@ -10,7 +10,6 @@ from foe_foundry.utils.monster_content import (
     extract_yaml_frontmatter,
     strip_yaml_frontmatter,
 )
-from foe_foundry_data.monster_families import MonsterFamilies
 from foe_foundry_data.monster_families.data import load_monster_families
 
 
@@ -124,7 +123,12 @@ class TestMonsterFamilyModel:
     def test_monster_family_model_creation(self):
         """Test creating a MonsterFamilyInfo instance with consolidated structure."""
         from datetime import datetime
-        from foe_foundry_data.base import MonsterInfoModel, MonsterFamilyInfo, MonsterTemplateInfoModel
+
+        from foe_foundry_data.base import (
+            MonsterFamilyInfo,
+            MonsterInfoModel,
+            MonsterTemplateInfoModel,
+        )
 
         monsters = [
             MonsterInfoModel(key="guard", name="Guard", cr=0.125, template="guard"),
@@ -135,7 +139,7 @@ class TestMonsterFamilyModel:
             MonsterTemplateInfoModel(
                 key="guard",
                 name="Guard",
-                url="/monsters/guard/", 
+                url="/monsters/guard/",
                 image="/img/monsters/guard.webp",
                 tagline="Watchful Sentries",
                 transparent_edges=False,
@@ -149,7 +153,7 @@ class TestMonsterFamilyModel:
                 key="knight",
                 name="Knight",
                 url="/monsters/knight/",
-                image="/img/monsters/knight.webp", 
+                image="/img/monsters/knight.webp",
                 tagline="Noble Warriors",
                 transparent_edges=True,
                 grayscale=False,
@@ -162,6 +166,7 @@ class TestMonsterFamilyModel:
 
         family = MonsterFamilyInfo(
             key="soldiers_and_fighters",
+            url="TEMP",
             name="Soldiers & Fighters",
             icon="favicon",
             tag_line="Battle-Hardened Warriors",
@@ -227,15 +232,18 @@ is_monster_family: false
         mock_cwd.return_value = tmp_path
 
         # Mock the ref_resolver to avoid dependency issues
-        with patch("foe_foundry_data.monster_families.data.ref_resolver") as mock_resolver:
+        with patch(
+            "foe_foundry_data.monster_families.data.ref_resolver"
+        ) as mock_resolver:
             # Mock the resolve_monster_ref method to return mock references
             mock_ref = type(
                 "MockRef",
                 (),
-                {"template": type("MockTemplate", (), {
-                    "key": "test_template",
-                    "monsters": []
-                })()},
+                {
+                    "template": type(
+                        "MockTemplate", (), {"key": "test_template", "monsters": []}
+                    )()
+                },
             )()
             mock_resolver.resolve_monster_ref.return_value = mock_ref
 
@@ -301,7 +309,9 @@ is_monster_family: true
         no_title_file = families_dir / "no_title.md"
         no_title_file.write_text(no_title_content)
 
-        with patch("foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path):
+        with patch(
+            "foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path
+        ):
             with pytest.raises(ValueError, match="Invalid title"):
                 load_monster_families()
 
@@ -328,7 +338,9 @@ Regular content without italic tagline.
         no_tagline_file = families_dir / "no_tagline.md"
         no_tagline_file.write_text(no_tagline_content)
 
-        with patch("foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path):
+        with patch(
+            "foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path
+        ):
             with pytest.raises(ValueError, match="Tag line not found"):
                 load_monster_families()
 
@@ -358,8 +370,12 @@ is_monster_family: true
         invalid_ref_file = families_dir / "invalid_ref.md"
         invalid_ref_file.write_text(invalid_ref_content)
 
-        with patch("foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path):
-            with patch("foe_foundry_data.monster_families.data.ref_resolver") as mock_resolver:
+        with patch(
+            "foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path
+        ):
+            with patch(
+                "foe_foundry_data.monster_families.data.ref_resolver"
+            ) as mock_resolver:
                 # Mock resolver to return None for invalid references
                 mock_resolver.resolve_monster_ref.return_value = None
 
