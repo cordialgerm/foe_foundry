@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { trackEvent } from '../utils/analytics.js';
+import './SvgIcon.js';
 
 // Upsell-focused quotes for different sections
 const GENERATOR_QUOTES = [
@@ -74,13 +75,13 @@ export class UpsellModal extends LitElement {
 
     .modal-wrapper {
       position: relative;
-      max-width: 500px;
+      max-width: 700px;
       width: 100%;
     }
 
     .skull-character {
       position: absolute;
-      bottom: 0;
+      bottom: -2rem;
       right: 1rem;
       z-index: 10001;
       text-align: center;
@@ -91,7 +92,7 @@ export class UpsellModal extends LitElement {
     }
 
     .skull-name {
-      font-family: var(--primary-font, 'Cinzel', serif);
+      font-family: var(--stylistic-font, 'Uncial Antiqua', serif);
       font-size: 0.9rem;
       color: #d4af37;
       font-style: italic;
@@ -100,18 +101,18 @@ export class UpsellModal extends LitElement {
 
     .speech-bubble {
       background: linear-gradient(135deg, #2a1810, #1a1a1a);
-      border: 3px solid #8b4513;
+      border: 3px solid #c29a5b;
       border-radius: 20px;
       padding: 2rem;
-      max-height: 70vh;
+      max-height: 80vh;
       overflow-y: auto;
       position: relative;
       color: #f4f1e6;
-      font-family: var(--primary-font, 'Cinzel', serif);
+      font-family: var(--primary-font, 'Merriweather', serif);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
       transform: scale(0.9) translateY(20px);
       transition: all 0.3s ease;
-      margin-bottom: 6rem;
+      margin-bottom: 8rem;
       margin-right: 2rem;
     }
 
@@ -126,7 +127,7 @@ export class UpsellModal extends LitElement {
       bottom: -15px;
       right: 2rem;
       border: 15px solid transparent;
-      border-top-color: #8b4513;
+      border-top-color: #c29a5b;
     }
 
     .speech-bubble::before {
@@ -143,7 +144,7 @@ export class UpsellModal extends LitElement {
       position: absolute;
       top: 1rem;
       right: 1rem;
-      background: #8b0000;
+      background: #ff3737;
       color: white;
       border: none;
       border-radius: 50%;
@@ -158,7 +159,7 @@ export class UpsellModal extends LitElement {
     }
 
     .close-btn:hover {
-      background: #a00000;
+      background: #ff5555;
       transform: scale(1.1);
     }
 
@@ -172,6 +173,7 @@ export class UpsellModal extends LitElement {
       color: #d4af37;
       margin: 0 0 0.5rem 0;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: var(--stylistic-font, 'Uncial Antiqua', serif);
     }
 
     .modal-subtitle {
@@ -188,23 +190,31 @@ export class UpsellModal extends LitElement {
     }
 
     .upsell-section {
-      padding: 1rem;
-      background: rgba(139, 69, 19, 0.1);
+      padding: 1.5rem;
+      background: rgba(194, 154, 91, 0.1);
       border-radius: 10px;
-      border: 1px solid rgba(139, 69, 19, 0.3);
+      border: 1px solid rgba(194, 154, 91, 0.3);
       transition: all 0.3s ease;
+      cursor: pointer;
     }
 
     .upsell-section:hover {
-      background: rgba(139, 69, 19, 0.2);
+      background: rgba(194, 154, 91, 0.2);
       border-color: rgba(212, 175, 55, 0.5);
+      transform: translateY(-2px);
     }
 
     .section-icon {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
       display: block;
       text-align: center;
+    }
+
+    svg-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      color: #d4af37;
     }
 
     .section-title {
@@ -212,6 +222,7 @@ export class UpsellModal extends LitElement {
       color: #d4af37;
       margin: 0 0 0.5rem 0;
       text-align: center;
+      font-family: var(--header-font, 'Cinzel', serif);
     }
 
     .section-quote {
@@ -227,12 +238,12 @@ export class UpsellModal extends LitElement {
     }
 
     .cta-button {
-      background: linear-gradient(135deg, #8b4513, #a0522d);
+      background: linear-gradient(135deg, #c29a5b, #8b7355);
       color: #f4f1e6;
       border: 2px solid #d4af37;
-      padding: 0.6rem 1rem;
+      padding: 0.8rem 1.2rem;
       border-radius: 8px;
-      font-family: var(--primary-font, 'Cinzel', serif);
+      font-family: var(--header-font, 'Cinzel', serif);
       font-size: 0.9rem;
       font-weight: 600;
       cursor: pointer;
@@ -244,10 +255,10 @@ export class UpsellModal extends LitElement {
     }
 
     .cta-button:hover {
-      background: linear-gradient(135deg, #a0522d, #8b4513);
+      background: linear-gradient(135deg, #d4af37, #c29a5b);
       border-color: #ffd700;
       transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(139, 69, 19, 0.4);
+      box-shadow: 0 5px 15px rgba(194, 154, 91, 0.4);
     }
 
     .newsletter-section {
@@ -258,11 +269,11 @@ export class UpsellModal extends LitElement {
       width: 100%;
       padding: 0.8rem;
       margin: 0.5rem 0;
-      border: 2px solid #8b4513;
+      border: 2px solid #c29a5b;
       border-radius: 8px;
       background: rgba(42, 24, 16, 0.5);
       color: #f4f1e6;
-      font-family: var(--primary-font, 'Cinzel', serif);
+      font-family: var(--primary-font, 'Merriweather', serif);
       font-size: 1rem;
       box-sizing: border-box;
     }
@@ -407,15 +418,19 @@ export class UpsellModal extends LitElement {
             <div class="upsell-grid">
               <!-- Monster Generator Section -->
               <div class="upsell-section" @click=${this._handleGeneratorClick}>
-                <div class="section-icon">🔨</div>
+                <div class="section-icon">
+                  <svg-icon src="anvil"></svg-icon>
+                </div>
                 <h3 class="section-title">Monster Forge</h3>
                 <p class="section-quote">${this._getCurrentQuote('generator')}</p>
-                <button class="cta-button">Enter the Forge</button>
+                <button class="cta-button">Forge an unforgettable foe</button>
               </div>
 
               <!-- Monster Codex Section -->
               <div class="upsell-section" @click=${this._handleCodexClick}>
-                <div class="section-icon">📚</div>
+                <div class="section-icon">
+                  <svg-icon src="death-note"></svg-icon>
+                </div>
                 <h3 class="section-title">Monster Codex</h3>
                 <p class="section-quote">${this._getCurrentQuote('codex')}</p>
                 <button class="cta-button">Browse Horrors</button>

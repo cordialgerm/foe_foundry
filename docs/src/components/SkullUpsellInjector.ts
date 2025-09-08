@@ -133,34 +133,43 @@ export class SkullUpsellInjector extends LitElement {
 
     // High priority: page breaks and horizontal rules
     container.querySelectorAll('div[page-break], hr').forEach(element => {
-      points.push({
-        element,
-        position: 'after',
-        priority: 10
-      });
+      // Skip if inside stat-block or power
+      if (!this._isInExcludedElement(element)) {
+        points.push({
+          element,
+          position: 'after',
+          priority: 10
+        });
+      }
     });
 
     // Medium priority: H2 headers
     container.querySelectorAll('h2').forEach(element => {
-      points.push({
-        element,
-        position: 'after',
-        priority: 7
-      });
+      // Skip if inside stat-block or power
+      if (!this._isInExcludedElement(element)) {
+        points.push({
+          element,
+          position: 'after',
+          priority: 7
+        });
+      }
     });
 
     // Lower priority: H3 headers
     container.querySelectorAll('h3').forEach(element => {
-      points.push({
-        element,
-        position: 'after',
-        priority: 5
-      });
+      // Skip if inside stat-block or power
+      if (!this._isInExcludedElement(element)) {
+        points.push({
+          element,
+          position: 'after',
+          priority: 5
+        });
+      }
     });
 
     // Always add end placement
     const lastChild = container.lastElementChild;
-    if (lastChild) {
+    if (lastChild && !this._isInExcludedElement(lastChild)) {
       points.push({
         element: lastChild,
         position: 'after',
@@ -169,6 +178,13 @@ export class SkullUpsellInjector extends LitElement {
     }
 
     return points.sort((a, b) => b.priority - a.priority);
+  }
+
+  private _isInExcludedElement(element: Element): boolean {
+    // Check if element is inside a .stat-block or has power in its classes
+    return element.closest('.stat-block') !== null || 
+           element.classList.contains('power') ||
+           element.closest('.power') !== null;
   }
 
   private _selectInjectionPoints(points: InjectionPoint[]): InjectionPoint[] {
