@@ -66,11 +66,19 @@ export class AnimatedSkull extends LitElement {
       padding: 1rem 0;
     }
 
+    /* Enhanced interactive styling */
     .skull-container {
       position: relative;
       display: inline-block;
       transition: all 0.3s ease;
       padding: 1rem;
+      border-radius: 50%;
+      background: radial-gradient(circle, transparent 60%, rgba(255, 69, 0, 0.1) 100%);
+    }
+
+    .skull-container:hover {
+      background: radial-gradient(circle, transparent 50%, rgba(255, 69, 0, 0.2) 100%);
+      transform: scale(1.05);
     }
 
     .skull-mascot {
@@ -137,6 +145,25 @@ export class AnimatedSkull extends LitElement {
     /* State-based styles */
     :host([data-state="idle"]) .skull-mascot {
       animation: idleFloat 4s infinite ease-in-out;
+      cursor: pointer;
+    }
+
+    :host([data-state="idle"]) .skull-container {
+      cursor: pointer;
+    }
+
+    :host([data-state="idle"]) .skull-container::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 120%;
+      border: 2px solid rgba(255, 69, 0, 0.3);
+      border-radius: 50%;
+      animation: pulseRing 3s infinite ease-in-out;
+      pointer-events: none;
     }
 
     :host([data-state="active"]) .speech-bubble {
@@ -151,7 +178,21 @@ export class AnimatedSkull extends LitElement {
       transform: scale(1.1);
     }
 
-    /* Animations */
+    @keyframes pulseRing {
+      0% { 
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(0.9);
+      }
+      50% { 
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+      100% { 
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(0.9);
+      }
+    }
+
     @keyframes idleFloat {
       0%, 100% { 
         transform: translateY(0) rotate(0deg);

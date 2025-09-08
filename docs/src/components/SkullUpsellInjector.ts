@@ -31,7 +31,7 @@ export class SkullUpsellInjector extends LitElement {
   maxSkulls: number = 3;
 
   @property({ type: Number })
-  activationDelay: number = 5000; // 5 seconds for faster activation
+  activationDelay: number = 2000; // 2 seconds for faster activation
 
   @property({ type: String })
   injectedClass: string = 'centered';
@@ -103,9 +103,7 @@ export class SkullUpsellInjector extends LitElement {
     });
 
     trackEvent('skull_injector_initialized', {
-      skulls_injected: selectedPoints.length,
-      injection_points_found: injectionPoints.length,
-      content_length: contentElement.textContent?.length || 0
+      surface: 'skull_injector'
     });
   }
 
@@ -229,6 +227,14 @@ export class SkullUpsellInjector extends LitElement {
     skull.injectedClass = this.injectedClass; // Apply injected class for styling
     skull.onClick = () => this._handleSkullClick(index);
 
+    // Show a brief quote after injection to indicate interactivity
+    setTimeout(() => {
+      skull.showQuote = true;
+      setTimeout(() => {
+        skull.showQuote = false;
+      }, 2000); // Show for 2 seconds
+    }, 1000 + (index * 500)); // Stagger the initial quotes
+
     wrapper.appendChild(skull);
     skullElement.appendChild(wrapper);
 
@@ -244,18 +250,35 @@ export class SkullUpsellInjector extends LitElement {
   private _setupModal(): void {
     this._modal = document.createElement('upsell-modal') as any;
     (this._modal as any).source = 'skull_injector';
-    document.body.appendChild(this._modal);
+    
+    if (this._modal) {
+      document.body.appendChild(this._modal);
 
-    this._modal.addEventListener('modal-closed', () => {
-      // Modal was closed, maybe delay before showing skulls again
-    });
+      this._modal.addEventListener('modal-closed', () => {
+        // Modal was closed, maybe delay before showing skulls again
+      });
+    }
   }
 
   private _startActivationTimer(): void {
-    // Skulls are now enabled immediately, but we can still delay quote showing
+    // Skulls are enabled immediately and show visual feedback quickly
     this._activationTimer = window.setTimeout(() => {
       this._activateQuotes();
     }, this.activationDelay);
+    
+    // Give immediate visual feedback that skulls are interactive
+    this._injectedSkulls.forEach((skullElement, index) => {
+      const skull = skullElement.querySelector('animated-skull') as any;
+      if (skull) {
+        // Brief initial animation to show interactivity
+        setTimeout(() => {
+          skull.style.filter = 'drop-shadow(0 0 25px rgba(255, 69, 0, 0.8))';
+          setTimeout(() => {
+            skull.style.filter = '';
+          }, 1000);
+        }, index * 500);
+      }
+    });
   }
 
   private _activateQuotes(): void {
@@ -275,15 +298,13 @@ export class SkullUpsellInjector extends LitElement {
     });
 
     trackEvent('skull_injector_quotes_activated', {
-      skulls_activated: this._injectedSkulls.length,
-      delay_ms: this.activationDelay
+      surface: 'skull_injector'
     });
   }
 
   private _handleSkullClick(skullIndex: number): void {
     trackEvent('injected_skull_clicked', {
-      skull_index: skullIndex,
-      placement: skullIndex === this._injectedSkulls.length - 1 ? 'end' : 'middle'
+      surface: 'skull_injector'
     });
 
     if (this._modal) {
