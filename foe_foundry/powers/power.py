@@ -114,12 +114,50 @@ class Power(ABC):
         # Add theme tag
         if self.theme:
             tags.append(MonsterTag.from_theme(self.theme))
+            
+            # Add additional tags based on theme patterns
+            additional_tags = self._get_additional_tags_for_theme(self.theme)
+            tags.extend(additional_tags)
         
         # Add CR tier tag if suggested_cr is available
         if self.suggested_cr is not None:
             tags.append(MonsterTag.from_cr(self.suggested_cr))
         
         return tags
+    
+    def _get_additional_tags_for_theme(self, theme: str) -> List[MonsterTag]:
+        """Get additional tags based on theme patterns"""
+        additional_tags = []
+        theme_lower = theme.lower()
+        
+        # Family tags for creature-specific themes
+        creature_family_themes = {
+            'balor', 'basilisk', 'bugbear', 'chimera', 'cultist', 'dire_bunny',
+            'druid', 'frost_giant', 'gelatinous_cube', 'ghoul', 'goblin', 'gorgon',
+            'guard', 'hydra', 'knight', 'kobold', 'lich', 'mage', 'manticore',
+            'merrow', 'mimic', 'nothic', 'ogre', 'simulacrum', 'skeletal', 'spider',
+            'spirit', 'vrock', 'wight', 'wolf', 'zombie'
+        }
+        
+        if theme_lower in creature_family_themes:
+            additional_tags.append(MonsterTag.from_family(theme_lower))
+        
+        # Environment tags for environment-related themes
+        environment_themes = {
+            'aquatic': 'ocean',
+            'earthy': 'underground', 
+            'icy': 'arctic',
+            'storm': 'plain',  # storms often occur on plains/open areas
+            'flying': 'mountain',  # flying creatures often found in mountains
+        }
+        
+        if theme_lower in environment_themes:
+            # Create environment tag (would need to add method to MonsterTag)
+            # For now, create as theme tag with environment type
+            env = environment_themes[theme_lower]
+            additional_tags.append(MonsterTag(tag=env, tag_type="environment"))
+        
+        return additional_tags
 
     @abstractmethod
     def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:
