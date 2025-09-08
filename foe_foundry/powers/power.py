@@ -157,6 +157,18 @@ class Power(ABC):
             env = environment_themes[theme_lower]
             additional_tags.append(MonsterTag(tag=env, tag_type="environment"))
         
+        # Spellcaster magic school tags - these should get spellcaster_magic type
+        spellcaster_themes = {
+            'celestial', 'conjurer', 'cult', 'divination', 'druidic', 'elementalist',
+            'enchanter', 'fiendish', 'illusionist', 'magic', 'metamagic', 'necromancer',
+            'oath', 'psionic', 'shaman', 'transmuter'
+        }
+        
+        if theme_lower in spellcaster_themes:
+            # Add spellcaster magic type tag
+            magic_theme = f"{theme_lower}_magic"
+            additional_tags.append(MonsterTag(tag=magic_theme, tag_type="spellcaster_magic"))
+        
         return additional_tags
 
     @abstractmethod
