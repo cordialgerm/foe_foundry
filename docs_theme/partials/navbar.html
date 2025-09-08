@@ -21,7 +21,7 @@
             <ul class="nav navbar-nav">
                 {%- for nav_item in nav %}
                 {%- if nav_item.children %}
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown{% if nav_item.title == 'Learn' %} d-none d-lg-block{% endif %}">
                     <a href="#" class="nav-link dropdown-toggle{% if nav_item.active %} active"
                         aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown"
                         data-nav="{{ nav_item.title}}" aria-expanded="false">{{ nav_item.title }}</a>
@@ -32,7 +32,7 @@
                     </ul>
                 </li>
                 {%- else %}
-                <li class="nav-item">
+                <li class="nav-item{% if nav_item.title == 'Learn' %} d-none d-lg-block{% endif %}">
                     <a href="{{ nav_item.url|url }}" class="nav-link{% if nav_item.active %} active"
                         aria-current="page{% endif %}">{{ nav_item.title }}</a>
                 </li>
