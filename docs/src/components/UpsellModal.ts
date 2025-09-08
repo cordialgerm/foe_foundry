@@ -37,7 +37,7 @@ const PATREON_QUOTES = [
 
 @customElement('upsell-modal')
 export class UpsellModal extends LitElement {
-  @property({ type: Boolean })
+  @property({ type: Boolean, reflect: true })
   open: boolean = false;
 
   @property({ type: String })
@@ -328,18 +328,9 @@ export class UpsellModal extends LitElement {
 
   updated(changedProperties: any) {
     super.updated(changedProperties);
-
-    if (changedProperties.has('open') && this.open) {
-      trackEvent('upsell_modal_shown', {
-        source: this.source
-      });
-    }
   }
 
   private _handleClose(): void {
-    trackEvent('upsell_modal_closed', {
-      source: this.source
-    });
     this.open = false;
     this.dispatchEvent(new CustomEvent('modal-closed'));
   }
@@ -354,13 +345,8 @@ export class UpsellModal extends LitElement {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const emailInput = form.querySelector('input[type="email"]') as HTMLInputElement;
-    
-    if (emailInput && emailInput.value) {
-      trackEvent('newsletter_signup_attempt', {
-        source: 'upsell_modal',
-        email_domain: emailInput.value.split('@')[1]
-      });
 
+    if (emailInput && emailInput.value) {
       // Here you would integrate with your newsletter service
       // For now, just show success and close
       alert('Thanks for subscribing! Check your email for confirmation.');
@@ -369,23 +355,14 @@ export class UpsellModal extends LitElement {
   }
 
   private _handlePatreonClick(): void {
-    trackEvent('patreon_click', {
-      source: 'upsell_modal'
-    });
     window.open('https://www.patreon.com/foe_foundry', '_blank');
   }
 
   private _handleGeneratorClick(): void {
-    trackEvent('generator_click', {
-      source: 'upsell_modal'
-    });
     window.location.href = '/generate/';
   }
 
   private _handleCodexClick(): void {
-    trackEvent('codex_click', {
-      source: 'upsell_modal'
-    });
     window.location.href = '/codex/';
   }
 
@@ -404,6 +381,13 @@ export class UpsellModal extends LitElement {
     }
   }
 
+  /**
+   * Opens the modal by setting the `open` property to true.
+   */
+  openModal(): void {
+    this.open = true;
+  }
+
   render() {
     if (!this.open) {
       return html``;
@@ -414,7 +398,7 @@ export class UpsellModal extends LitElement {
         <div class="modal-wrapper" @click=${(e: Event) => e.stopPropagation()}>
           <div class="speech-bubble">
             <button class="close-btn" @click=${this._handleClose}>×</button>
-            
+
             <div class="modal-header">
               <h2 class="modal-title">The Skull of Karklaz Speaks</h2>
               <p class="modal-subtitle">"Mortal, I offer you forbidden knowledge..."</p>
@@ -443,10 +427,10 @@ export class UpsellModal extends LitElement {
                 <h3 class="section-title">Grimoire Newsletter</h3>
                 <p class="section-quote">${this._getCurrentQuote('newsletter')}</p>
                 <form @submit=${this._handleNewsletterSubmit}>
-                  <input 
-                    type="email" 
-                    class="newsletter-input" 
-                    placeholder="your.email@domain.com" 
+                  <input
+                    type="email"
+                    class="newsletter-input"
+                    placeholder="your.email@domain.com"
                     required
                   >
                   <button type="submit" class="cta-button">
@@ -467,7 +451,7 @@ export class UpsellModal extends LitElement {
 
           <div class="skull-character">
             <div class="skull-avatar">
-              <animated-skull 
+              <animated-skull
                 display="visible"
                 .showQuote=${false}
                 .autoCycle=${false}

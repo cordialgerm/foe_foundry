@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { trackEvent } from '../utils/analytics.js';
+import { UpsellModal } from './UpsellModal.js'
 
 // Injector-specific quotes for content placement
 const INJECTOR_QUOTES = [
@@ -36,7 +37,7 @@ export class SkullUpsellInjector extends LitElement {
   @property({ type: String })
   injectedClass: string = 'centered';
 
-  private _modal?: HTMLElement;
+  private _modal?: UpsellModal;
   private _injectedSkulls: HTMLElement[] = [];
   private _activationTimer?: number;
 
@@ -72,7 +73,7 @@ export class SkullUpsellInjector extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    
+
     if (this.enabled) {
       // Delay injection to allow page content to fully render
       setTimeout(() => {
@@ -181,12 +182,12 @@ export class SkullUpsellInjector extends LitElement {
 
     // Select middle placements
     const middlePoints = points.filter(p => p.priority !== 8);
-    
+
     if (middlePoints.length > 0) {
       // Try to place one in the middle third of content
       const middleIndex = Math.floor(middlePoints.length / 2);
       const targetIndex = Math.max(0, Math.min(middleIndex, middlePoints.length - 1));
-      
+
       if (middlePoints[targetIndex]) {
         selected.push(middlePoints[targetIndex]);
       }
@@ -216,16 +217,16 @@ export class SkullUpsellInjector extends LitElement {
   private _injectSkullAtPoint(point: InjectionPoint, index: number): void {
     const skullElement = document.createElement('div');
     skullElement.className = `injected-skull ${point.priority === 8 ? 'end-placement' : 'middle-placement'}`;
-    
+
     const wrapper = document.createElement('div');
     wrapper.className = 'skull-wrapper';
-    
+
     const skull = document.createElement('animated-skull') as any;
     skull.display = 'visible'; // Start visible and enabled
     skull.quotes = INJECTOR_QUOTES.join(';');
     skull.quoteIndex = index % INJECTOR_QUOTES.length;
     skull.injectedClass = this.injectedClass; // Apply injected class for styling
-    skull.onClick = () => this._handleSkullClick(index);
+    skull.addEventListener('click', () => this._handleSkullClick(index));
 
     // Show a brief quote after injection to indicate interactivity
     setTimeout(() => {
@@ -251,7 +252,7 @@ export class SkullUpsellInjector extends LitElement {
   private _setupModal(): void {
     this._modal = document.createElement('upsell-modal') as any;
     (this._modal as any).source = 'skull_injector';
-    
+
     if (this._modal) {
       document.body.appendChild(this._modal);
 
@@ -266,7 +267,7 @@ export class SkullUpsellInjector extends LitElement {
     this._activationTimer = window.setTimeout(() => {
       this._activateQuotes();
     }, this.activationDelay);
-    
+
     // Give immediate visual feedback that skulls are interactive
     this._injectedSkulls.forEach((skullElement, index) => {
       const skull = skullElement.querySelector('animated-skull') as any;
@@ -308,22 +309,7 @@ export class SkullUpsellInjector extends LitElement {
       surface: 'skull_injector'
     });
 
-    if (this._modal) {
-      (this._modal as any).open = true;
-    }
-
-    // Show quote on clicked skull
-    const clickedSkull = this._injectedSkulls[skullIndex]?.querySelector('animated-skull') as any;
-    if (clickedSkull) {
-      clickedSkull.showQuote = true;
-      
-      // Hide quote after a few seconds
-      setTimeout(() => {
-        if (clickedSkull) {
-          clickedSkull.showQuote = false;
-        }
-      }, 5000);
-    }
+    this._modal?.openModal();
   }
 
   private _cleanup(): void {
