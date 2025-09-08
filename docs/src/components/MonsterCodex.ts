@@ -10,6 +10,7 @@ import './MonsterSimilar.js';
 import './MonsterLore.js';
 import './MonsterEncounters.js';
 import './MonsterStatblock.js';
+import './TagPopup.js';
 import { Task } from '@lit/task';
 
 @customElement('monster-codex')
@@ -27,6 +28,8 @@ export class MonsterCodex extends LitElement {
   @state() private selectedMonsterKey: string | null = null; // Track selected monster for sticky behavior
   @state() private contentTab: 'preview' | 'lore' | 'encounters' = 'preview';
   @state() private expandedMonsterKey: string | null = null; // Track which monster row has drawer expanded
+  @state() private tagPopupOpen = false;
+  @state() private selectedTagName = '';
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
@@ -1164,6 +1167,13 @@ export class MonsterCodex extends LitElement {
           `}
         </div>
       </div>
+
+      <!-- Tag Popup -->
+      <tag-popup
+        .tagName=${this.selectedTagName}
+        .open=${this.tagPopupOpen}
+        @tag-popup-close=${this.handleTagPopupClose}>
+      </tag-popup>
     `;
   }
 
@@ -1221,7 +1231,8 @@ export class MonsterCodex extends LitElement {
               ${monster.tags ? monster.tags.map(tag => html`
                 <span class="monster-tag-icon"
                       title="${tag.description}"
-                      style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};">
+                      style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};"
+                      @click=${(e: Event) => this.handleTagClick(e, tag.tag)}>
                   ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
                 </span>
               `) : ''}
@@ -1460,6 +1471,20 @@ export class MonsterCodex extends LitElement {
 
     // Navigate to the generate page with this monster
     window.location.href = `/generate/?monster=${key}`;
+  }
+
+  private handleTagClick(e: Event, tagName: string) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Open tag popup with the selected tag
+    this.selectedTagName = tagName;
+    this.tagPopupOpen = true;
+  }
+
+  private handleTagPopupClose() {
+    this.tagPopupOpen = false;
+    this.selectedTagName = '';
   }
 
   firstUpdated() {

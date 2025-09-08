@@ -1,0 +1,43 @@
+"""Tags API routes."""
+
+from typing import Annotated
+
+from fastapi import APIRouter, HTTPException, Query
+
+from foe_foundry.utils import name_to_key
+from foe_foundry_data.tags import TagInfoModel, Tags
+
+router = APIRouter(prefix="/api/v1/tags")
+
+
+@router.get("/tag/{tag_name}")
+def get_tag(*, tag_name: str) -> TagInfoModel:
+    """Get detailed information about a specific tag including example monsters"""
+    key = name_to_key(tag_name)
+    tag = Tags.TagLookup.get(key)
+    if tag is None:
+        raise HTTPException(status_code=404, detail="Tag not found")
+    return tag
+
+
+@router.get("/all")
+def all_tags(
+    *,
+    category: Annotated[
+        str | None, Query(title="Filter by tag category")
+    ] = None,
+) -> list[TagInfoModel]:
+    """Get all available tags, optionally filtered by category"""
+    tags = Tags.AllTags
+    
+    if category:
+        tags = [tag for tag in tags if tag.category.lower() == category.lower()]
+    
+    return tags
+
+
+@router.get("/categories")
+def get_categories() -> list[str]:
+    """Get all available tag categories"""
+    categories = set(tag.category for tag in Tags.AllTags)
+    return sorted(categories)

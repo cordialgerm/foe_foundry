@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from foe_foundry_search import setup_indexes
 
 from .logconfig import setup_logging
-from .routes import catalog, monster_templates, monsters, powers, redirects, search, statblocks
+from .routes import catalog, monster_templates, monsters, powers, redirects, search, statblocks, tags
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -52,6 +52,7 @@ app.include_router(monsters.router)
 app.include_router(monster_templates.router)
 app.include_router(search.router)
 app.include_router(catalog.router)
+app.include_router(tags.router)
 
 site_dir = Path(__file__).parent.parent / "site"
 
