@@ -24,7 +24,7 @@ from foe_foundry.utils.image import (
 )
 
 from ..base import MonsterInfoModel, PowerLoadoutModel
-from ..families import load_families
+from ..monster_families import MonsterFamilies
 from ..jinja import render_statblock_fragment
 
 
@@ -186,7 +186,7 @@ class MonsterModel:
 
         # Also look for any monsters that are in the same family as this monster
         families = [
-            f for f in load_families() if stats.key in {m.key for m in f.monsters}
+            f for f in MonsterFamilies.families if stats.key in {m.key for m in f.monsters}
         ]
         for family in families:
             for m in family.monsters:

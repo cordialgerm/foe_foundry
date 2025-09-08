@@ -17,7 +17,7 @@ from foe_foundry.utils.monster_content import (
     strip_yaml_frontmatter,
 )
 
-from ..base import MonsterFamilyInfo, MonsterTemplateInfoModel
+from ..base import MonsterFamilyInfo, MonsterTemplateInfoModel, MonsterInfoModel
 from ..refs import MonsterRefResolver
 
 ref_resolver = MonsterRefResolver()
@@ -118,9 +118,21 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
 
     # Convert templates to info models
     templates = []
+    monsters = []
     for template in AllTemplates:
         if template.key in template_keys:
             template_info = _convert_template_to_info_model(template, base_url)
             templates.append(template_info)
+            
+            # Also add monster info for each monster in the template
+            for monster in template.monsters:
+                monsters.append(
+                    MonsterInfoModel(
+                        key=monster.key,
+                        name=monster.name,
+                        cr=monster.cr,
+                        template=template.key,
+                    )
+                )
 
-    return MonsterFamilyInfo(key=key, name=name, icon=icon, tag_line=tag_line, templates=templates)
+    return MonsterFamilyInfo(key=key, name=name, icon=icon, tag_line=tag_line, templates=templates, monsters=monsters)

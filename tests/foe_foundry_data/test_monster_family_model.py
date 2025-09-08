@@ -9,8 +9,8 @@ from foe_foundry.utils.monster_content import (
     extract_yaml_frontmatter,
     strip_yaml_frontmatter,
 )
-from foe_foundry_data.families.data import MonsterFamilyModel
-from foe_foundry_data.families.load import load_families
+from foe_foundry_data.monster_families import MonsterFamilies
+from foe_foundry_data.monster_families.data import load_monster_families
 
 
 class TestMonsterContentUtilities:
@@ -224,8 +224,8 @@ is_monster_family: false
                 )()
                 mock_all_templates.__iter__ = lambda x: iter([mock_template])
 
-                # Load families
-                families = load_families()
+                # Load families using the new system
+                families = MonsterFamilies.families
 
         # Verify results
         assert len(families) == 1
@@ -238,7 +238,7 @@ is_monster_family: false
         assert len(family.monsters) == 2
 
     def test_load_families_validates_required_fields(self, tmp_path):
-        """Test that load_families validates required fields and raises appropriate errors."""
+        """Test that MonsterFamilies validates required fields and raises appropriate errors."""
         # Set up test directory structure
         docs_dir = tmp_path / "docs"
         families_dir = docs_dir / "families"
@@ -257,9 +257,9 @@ is_monster_family: true
         no_title_file = families_dir / "no_title.md"
         no_title_file.write_text(no_title_content)
 
-        with patch("foe_foundry_data.families.load.Path.cwd", return_value=tmp_path):
+        with patch("foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path):
             with pytest.raises(ValueError, match="Invalid title"):
-                load_families()
+                load_monster_families()
 
     def test_load_families_validates_tagline(self, tmp_path):
         """Test that load_families validates tagline presence."""
@@ -283,9 +283,9 @@ Regular content without italic tagline.
         no_tagline_file = families_dir / "no_tagline.md"
         no_tagline_file.write_text(no_tagline_content)
 
-        with patch("foe_foundry_data.families.load.Path.cwd", return_value=tmp_path):
+        with patch("foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path):
             with pytest.raises(ValueError, match="Tagline not found"):
-                load_families()
+                load_monster_families()
 
     def test_load_families_validates_monster_references(self, tmp_path):
         """Test that load_families validates monster references."""
@@ -312,7 +312,7 @@ is_monster_family: true
         invalid_ref_file.write_text(invalid_ref_content)
 
         with patch("foe_foundry_data.families.load.Path.cwd", return_value=tmp_path):
-            with patch("foe_foundry_data.families.load.ref_resolver") as mock_resolver:
+            with patch("foe_foundry_data.monster_families.data.ref_resolver") as mock_resolver:
                 # Mock resolver to return None for invalid references
                 mock_resolver.resolve_monster_ref.return_value = None
 
@@ -320,7 +320,7 @@ is_monster_family: true
                     ValueError,
                     match="Monster reference 'nonexistent' .* could not be resolved",
                 ):
-                    load_families()
+                    load_monster_families()
 
     @pytest.mark.integration
     def test_load_actual_soldiers_family(self):

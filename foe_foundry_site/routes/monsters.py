@@ -9,7 +9,7 @@ from pydantic.dataclasses import dataclass
 
 from foe_foundry.creatures import AllTemplates
 from foe_foundry_data.base import MonsterInfoModel
-from foe_foundry_data.families import load_families
+from foe_foundry_data.monster_families import MonsterFamilies
 from foe_foundry_data.monsters import MonsterModel, PowerLoadoutModel
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.refs import MonsterRefResolver
@@ -110,7 +110,7 @@ def get_all_families() -> list[dict]:
     Returns a list of all monster families with basic metadata
     """
     try:
-        families = load_families()
+        families = MonsterFamilies.families
         return [
             {
                 "key": family.key,
@@ -132,7 +132,7 @@ def get_monsters_by_family(family_key: str) -> list[MonsterInfoModel]:
     Returns a list of monsters that belong to the specified family
     """
     try:
-        families = load_families()
+        families = MonsterFamilies.families
         family = next((f for f in families if f.key == family_key), None)
         if family is None:
             raise HTTPException(status_code=404, detail=f"Family '{family_key}' not found")
