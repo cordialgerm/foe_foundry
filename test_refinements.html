@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag System Refinements Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .header h1 {
+            color: #ff3737;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .header .subtitle {
+            color: #c29a5b;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .demo-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            border: 2px solid #444;
+            border-radius: 16px;
+            background: rgba(42, 42, 42, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .section-title {
+            color: #c29a5b;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #c29a5b;
+            padding-bottom: 0.5rem;
+        }
+        .tag-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .before-after {
+            padding: 1.5rem;
+            border-radius: 12px;
+            position: relative;
+        }
+        .before {
+            background: rgba(239, 68, 68, 0.1);
+            border: 2px solid #ef4444;
+        }
+        .after {
+            background: rgba(34, 197, 94, 0.1);
+            border: 2px solid #22c55e;
+        }
+        .before-after h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tag-examples {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .tag-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .creature-type { background-color: #6366F1; }
+        .monster-role { background-color: #DC2626; }
+        .species { background-color: #059669; }
+        .cr-tier { background-color: #EAB308; }
+        .region { background-color: #3B82F6; }
+        .damage-type { background-color: #F97316; }
+        .theme { background-color: #9333EA; }
+        .size { background-color: #78716C; opacity: 0.5; text-decoration: line-through; }
+        .family { background-color: #A16207; opacity: 0.5; text-decoration: line-through; }
+        .improvement-list {
+            list-style: none;
+            padding: 0;
+        }
+        .improvement-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .checkmark {
+            color: #22c55e;
+            font-weight: bold;
+        }
+        .x-mark {
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .highlight {
+            background: rgba(255, 55, 55, 0.2);
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            color: #ff3737;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏷️ Tag System Refinements</h1>
+            <div class="subtitle">Comprehensive improvements to the Foe Foundry tag system</div>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="section-title">🔄 Before & After Comparison</h2>
+            <div class="tag-comparison">
+                <div class="before-after before">
+                    <h3><span class="x-mark">❌</span> Before (Issues)</h3>
+                    <div class="tag-examples">
+                        <span class="tag-icon creature-type">Humanoid</span>
+                        <span class="tag-icon creature-type">Humanoid</span>
+                        <span class="tag-icon monster-role">Bruiser</span>
+                        <span class="tag-icon size">Medium</span>
+                        <span class="tag-icon cr-tier">tier1</span>
+                        <span class="tag-icon family">orc</span>
+                        <span class="tag-icon theme">spellcaster</span>
+                    </div>
+                    <ul class="improvement-list">
+                        <li><span class="x-mark">❌</span> Duplicate creature types</li>
+                        <li><span class="x-mark">❌</span> Redundant size tags</li>
+                        <li><span class="x-mark">❌</span> Confusing "tier1" format</li>
+                        <li><span class="x-mark">❌</span> Generic family tags</li>
+                        <li><span class="x-mark">❌</span> No environment context</li>
+                        <li><span class="x-mark">❌</span> Broken popup links</li>
+                    </ul>
+                </div>
+                <div class="before-after after">
+                    <h3><span class="checkmark">✅</span> After (Improved)</h3>
+                    <div class="tag-examples">
+                        <span class="tag-icon creature-type">Humanoid</span>
+                        <span class="tag-icon monster-role">Bruiser</span>
+                        <span class="tag-icon species">Orc</span>
+                        <span class="tag-icon cr-tier">Tier 1</span>
+                        <span class="tag-icon region">Country Shire</span>
+                        <span class="tag-icon theme">Spellcaster</span>
+                    </div>
+                    <ul class="improvement-list">
+                        <li><span class="checkmark">✅</span> No duplicate types</li>
+                        <li><span class="checkmark">✅</span> Size tags removed</li>
+                        <li><span class="checkmark">✅</span> Clear "Tier 1" format</li>
+                        <li><span class="checkmark">✅</span> Specific species tags</li>
+                        <li><span class="checkmark">✅</span> Environment regions</li>
+                        <li><span class="checkmark">✅</span> Working popup links</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="section-title">🆕 New Tag Categories</h2>
+            
+            <h3>Region Environment Tags (17 Total)</h3>
+            <div class="tag-examples">
+                <span class="tag-icon region">Country Shire</span>
+                <span class="tag-icon region">Fiery Hellscape</span>
+                <span class="tag-icon region">Frozen Wastes</span>
+                <span class="tag-icon region">Urban Township</span>
+                <span class="tag-icon region">Tangled Forest</span>
+                <span class="tag-icon region">Restless Sea</span>
+            </div>
+
+            <h3>Species Tags for Humanoids (18 Total)</h3>
+            <div class="tag-examples">
+                <span class="tag-icon species">Orc</span>
+                <span class="tag-icon species">Elf</span>
+                <span class="tag-icon species">Dwarf</span>
+                <span class="tag-icon species">Dragonborn</span>
+                <span class="tag-icon species">Tiefling</span>
+                <span class="tag-icon species">Goblin</span>
+            </div>
+
+            <h3>Improved CR Tier Names</h3>
+            <div class="tag-examples">
+                <span class="tag-icon cr-tier">Tier 0</span>
+                <span class="tag-icon cr-tier">Tier 1</span>
+                <span class="tag-icon cr-tier">Tier 2</span>
+                <span class="tag-icon cr-tier">Tier 3</span>
+                <span class="tag-icon cr-tier">Tier 4</span>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="section-title">🔧 Technical Improvements</h2>
+            <ul class="improvement-list">
+                <li><span class="checkmark">✅</span> <strong>Tag Ordering:</strong> Logical sequence - Creature Type, Role(s), Spellcaster, Tier, Legendary, Damage Types</li>
+                <li><span class="checkmark">✅</span> <strong>Duplicate Prevention:</strong> No more duplicate creature type tags for cleaner UI</li>
+                <li><span class="checkmark">✅</span> <strong>Species Detection:</strong> Smart extraction from template keys for humanoid NPCs</li>
+                <li><span class="checkmark">✅</span> <strong>Enhanced Error Handling:</strong> Family relationships preserved even with template lookup failures</li>
+                <li><span class="checkmark">✅</span> <strong>URL Fixes:</strong> Example monster links use correct <span class="highlight">/monsters/{template}/</span> pattern</li>
+                <li><span class="checkmark">✅</span> <strong>Icon Validation:</strong> All 176 tags have verified SVG icons in docs/img/icons/</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2 class="section-title">🎯 Expected Benefits</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div>
+                    <h4 style="color: #22c55e;">🎨 Visual Improvements</h4>
+                    <ul>
+                        <li>Cleaner tag display without redundancy</li>
+                        <li>Better visual hierarchy with ordering</li>
+                        <li>Consistent iconography across all tags</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #3b82f6;">🧭 Enhanced Discovery</h4>
+                    <ul>
+                        <li>Region tags for location-based searches</li>
+                        <li>Species tags for NPC identification</li>
+                        <li>Working links for seamless navigation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #f59e0b;">📚 Better Organization</h4>
+                    <ul>
+                        <li>Intuitive "Tier 1" vs "tier1" naming</li>
+                        <li>Logical tag ordering for readability</li>
+                        <li>176 total tags across meaningful categories</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
