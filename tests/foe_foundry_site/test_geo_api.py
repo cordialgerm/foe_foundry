@@ -31,6 +31,24 @@ class TestGeoAPI:
         if "error" in data:
             assert data["error"] in ["network_error", "timeout", "unexpected_error"]
 
+    def test_geo_location_with_forwarded_ip_headers(self, client):
+        """Test that the geo location endpoint properly handles forwarded IP headers."""
+        # Test with X-Forwarded-For header (first IP should be used)
+        response = client.get("/api/v1/geo/location", headers={"X-Forwarded-For": "8.8.8.8, 10.0.0.1"})
+        assert response.status_code == 200
+        
+        data = response.json()
+        assert isinstance(data, dict)
+        assert "country_code" in data
+        
+        # Test with X-Real-IP header
+        response = client.get("/api/v1/geo/location", headers={"X-Real-IP": "8.8.8.8"})
+        assert response.status_code == 200
+        
+        data = response.json()
+        assert isinstance(data, dict)
+        assert "country_code" in data
+
     def test_geo_test_endpoint(self, client):
         """Test the test endpoint that returns mock data."""
         response = client.get("/api/v1/geo/test")
