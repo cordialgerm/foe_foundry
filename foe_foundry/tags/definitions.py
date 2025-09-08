@@ -26,34 +26,34 @@ class TagDefinition:
 
 # Creature Type Tags
 CREATURE_TYPE_TAGS = [
-    TagDefinition("aberration", "Strange and otherworldly creatures", "tentacle-strike.svg", "creature_type", "#8B5CF6"),
-    TagDefinition("beast", "Natural animals and creatures", "bear-head.svg", "creature_type", "#059669"),
-    TagDefinition("celestial", "Divine and heavenly creatures", "angel-wings.svg", "creature_type", "#FDE047"),
-    TagDefinition("construct", "Artificial beings and golems", "robot-golem.svg", "creature_type", "#6B7280"),
+    TagDefinition("aberration", "Strange and otherworldly creatures", "tentacle-strike.svg", "creature_type", "#A855F7"),
+    TagDefinition("beast", "Natural animals and creatures", "bear-head.svg", "creature_type", "#65A30D"),
+    TagDefinition("celestial", "Divine and heavenly creatures", "angel-wings.svg", "creature_type", "#F59E0B"),
+    TagDefinition("construct", "Artificial beings and golems", "robot-golem.svg", "creature_type", "#78716C"),
     TagDefinition("dragon", "Dragons and draconic creatures", "dragon-head.svg", "creature_type", "#DC2626"),
-    TagDefinition("elemental", "Elemental beings of pure elements", "atom.svg", "creature_type", "#06B6D4"),
+    TagDefinition("elemental", "Elemental beings of pure elements", "atom.svg", "creature_type", "#0891B2"),
     TagDefinition("fey", "Magical creatures from faerie realm", "fairy.svg", "creature_type", "#EC4899"),
-    TagDefinition("fiend", "Demonic and devilish creatures", "devil-mask.svg", "creature_type", "#7C2D12"),
+    TagDefinition("fiend", "Demonic and devilish creatures", "devil-mask.svg", "creature_type", "#991B1B"),
     TagDefinition("giant", "Large humanoid creatures", "giant.svg", "creature_type", "#A16207"),
-    TagDefinition("humanoid", "Humans and humanlike creatures", "person.svg", "creature_type", "#4F46E5"),
-    TagDefinition("monstrosity", "Unnatural but not otherworldly creatures", "monster-grasp.svg", "creature_type", "#7C3AED"),
-    TagDefinition("ooze", "Amorphous creatures like slimes", "slime.svg", "creature_type", "#65A30D"),
-    TagDefinition("plant", "Vegetable creatures", "carnivorous-plant.svg", "creature_type", "#16A34A"),
-    TagDefinition("undead", "Formerly living creatures", "skull-crossed-bones.svg", "creature_type", "#374151"),
+    TagDefinition("humanoid", "Humans and humanlike creatures", "person.svg", "creature_type", "#6366F1"),
+    TagDefinition("monstrosity", "Unnatural but not otherworldly creatures", "monster-grasp.svg", "creature_type", "#9333EA"),
+    TagDefinition("ooze", "Amorphous creatures like slimes", "slime.svg", "creature_type", "#84CC16"),
+    TagDefinition("plant", "Vegetable creatures", "carnivorous-plant.svg", "creature_type", "#22C55E"),
+    TagDefinition("undead", "Formerly living creatures", "skull-crossed-bones.svg", "creature_type", "#52525B"),
 ]
 
 # Monster Role Tags
 MONSTER_ROLE_TAGS = [
-    TagDefinition("ambusher", "Strikes from hiding or surprise", "ninja-mask.svg", "monster_role", "#059669"),
-    TagDefinition("artillery", "Long-range attackers", "crossbow.svg", "monster_role", "#DC2626"),
-    TagDefinition("bruiser", "Heavy damage dealers", "muscle-up.svg", "monster_role", "#B91C1C"),
-    TagDefinition("controller", "Battlefield manipulators", "magic-portal.svg", "monster_role", "#7C3AED"),
-    TagDefinition("defender", "Protective tank-like creatures", "shield.svg", "monster_role", "#1D4ED8"),
-    TagDefinition("leader", "Command and support others", "crown.svg", "monster_role", "#F59E0B"),
-    TagDefinition("skirmisher", "Mobile hit-and-run fighters", "running-ninja.svg", "monster_role", "#10B981"),
-    TagDefinition("support", "Provides assistance to allies", "mailed-fist.svg", "monster_role", "#8B5CF6"),
-    TagDefinition("soldier", "Standard combat troops", "sword-brandish.svg", "monster_role", "#6B7280"),
-    TagDefinition("legendary", "Exceptional boss-tier creatures", "crown-of-thorns.svg", "monster_role", "#EAB308"),
+    TagDefinition("ambusher", "Strikes from hiding or surprise", "ninja-mask.svg", "monster_role", "#84CC16"),
+    TagDefinition("artillery", "Long-range attackers", "crossbow.svg", "monster_role", "#EF4444"),
+    TagDefinition("bruiser", "Heavy damage dealers", "muscle-up.svg", "monster_role", "#DC2626"),
+    TagDefinition("controller", "Battlefield manipulators", "magic-portal.svg", "monster_role", "#A855F7"),
+    TagDefinition("defender", "Protective tank-like creatures", "shield.svg", "monster_role", "#3B82F6"),
+    TagDefinition("leader", "Command and support others", "crown.svg", "monster_role", "#C29A5B"),
+    TagDefinition("skirmisher", "Mobile hit-and-run fighters", "running-ninja.svg", "monster_role", "#22C55E"),
+    TagDefinition("support", "Provides assistance to allies", "mailed-fist.svg", "monster_role", "#A855F7"),
+    TagDefinition("soldier", "Standard combat troops", "sword-brandish.svg", "monster_role", "#78716C"),
+    TagDefinition("legendary", "Exceptional boss-tier creatures", "crown-of-thorns.svg", "monster_role", "#F59E0B"),
 ]
 
 # Environment - Biome Tags
@@ -104,41 +104,41 @@ EXTRAPLANAR_TAGS = [
 
 # Damage Type Tags
 DAMAGE_TYPE_TAGS = [
-    TagDefinition("acid", "Acidic corrosive damage", "acid-blob.svg", "damage_type", "#22C55E"),
+    TagDefinition("acid", "Acidic corrosive damage", "acid-blob.svg", "damage_type", "#84CC16"),
     TagDefinition("cold", "Freezing ice damage", "ice-cube.svg", "damage_type", "#3B82F6"),
-    TagDefinition("fire", "Burning flame damage", "fire.svg", "damage_type", "#EF4444"),
+    TagDefinition("fire", "Burning flame damage", "fire.svg", "damage_type", "#F97316"),
     TagDefinition("force", "Pure magical energy", "magic-swirl.svg", "damage_type", "#E5E7EB"),
-    TagDefinition("lightning", "Electrical shock damage", "lightning-arc.svg", "damage_type", "#06B6D4"),
-    TagDefinition("necrotic", "Death and decay damage", "death-skull.svg", "damage_type", "#6B21A8"),
-    TagDefinition("poison", "Toxic venomous damage", "poison-bottle.svg", "damage_type", "#15803D"),
-    TagDefinition("psychic", "Mental mind damage", "brain-stem.svg", "damage_type", "#A855F7"),
-    TagDefinition("radiant", "Divine light damage", "sun-radiations.svg", "damage_type", "#FDE047"),
-    TagDefinition("thunder", "Sonic sound damage", "sonic-boom.svg", "damage_type", "#F97316"),
+    TagDefinition("lightning", "Electrical shock damage", "lightning-arc.svg", "damage_type", "#0891B2"),
+    TagDefinition("necrotic", "Death and decay damage", "death-skull.svg", "damage_type", "#7C2D12"),
+    TagDefinition("poison", "Toxic venomous damage", "poison-bottle.svg", "damage_type", "#65A30D"),
+    TagDefinition("psychic", "Mental mind damage", "brain-stem.svg", "damage_type", "#C084FC"),
+    TagDefinition("radiant", "Divine light damage", "sun-radiations.svg", "damage_type", "#F59E0B"),
+    TagDefinition("thunder", "Sonic sound damage", "sonic-boom.svg", "damage_type", "#EA580C"),
 ]
 
 # Power Type Tags
 POWER_TYPE_TAGS = [
-    TagDefinition("attack", "Offensive combat powers", "sword-brandish.svg", "power_type", "#DC2626"),
-    TagDefinition("defense", "Protective defensive powers", "shield.svg", "power_type", "#1D4ED8"),
+    TagDefinition("attack", "Offensive combat powers", "sword-brandish.svg", "power_type", "#EF4444"),
+    TagDefinition("defense", "Protective defensive powers", "shield.svg", "power_type", "#3B82F6"),
     TagDefinition("areaofeffect", "Wide area affecting powers", "explosion-rays.svg", "power_type", "#F97316"),
-    TagDefinition("movement", "Mobility and positioning powers", "sprint.svg", "power_type", "#10B981"),
-    TagDefinition("debuff", "Weakening enemy powers", "cursed-star.svg", "power_type", "#7C2D12"),
-    TagDefinition("buff", "Strengthening ally powers", "muscle-up.svg", "power_type", "#059669"),
-    TagDefinition("summon", "Creature summoning powers", "magic-portal.svg", "power_type", "#8B5CF6"),
+    TagDefinition("movement", "Mobility and positioning powers", "sprint.svg", "power_type", "#22C55E"),
+    TagDefinition("debuff", "Weakening enemy powers", "cursed-star.svg", "power_type", "#991B1B"),
+    TagDefinition("buff", "Strengthening ally powers", "muscle-up.svg", "power_type", "#84CC16"),
+    TagDefinition("summon", "Creature summoning powers", "magic-portal.svg", "power_type", "#A855F7"),
     TagDefinition("environmental", "Environment interaction powers", "earth-spit.svg", "power_type", "#A16207"),
     TagDefinition("aura", "Persistent area effects", "aura.svg", "power_type", "#EC4899"),
-    TagDefinition("healing", "Health restoration powers", "healing.svg", "power_type", "#16A34A"),
-    TagDefinition("utility", "Non-combat utility powers", "toolbox.svg", "power_type", "#6B7280"),
-    TagDefinition("magic", "Magical spell-like powers", "magic-hat.svg", "power_type", "#7C3AED"),
-    TagDefinition("stealth", "Concealment and hiding powers", "hood.svg", "power_type", "#374151"),
+    TagDefinition("healing", "Health restoration powers", "healing.svg", "power_type", "#65A30D"),
+    TagDefinition("utility", "Non-combat utility powers", "toolbox.svg", "power_type", "#78716C"),
+    TagDefinition("magic", "Magical spell-like powers", "magic-hat.svg", "power_type", "#9333EA"),
+    TagDefinition("stealth", "Concealment and hiding powers", "hood.svg", "power_type", "#52525B"),
 ]
 
 # Challenge Rating Tier Tags
 CR_TIER_TAGS = [
-    TagDefinition("tier0", "Levels 1-2 (CR 0-1/2)", "level-two.svg", "cr_tier", "#FDE047"),
-    TagDefinition("tier1", "Levels 2-4 (CR 1-3)", "level-two-advanced.svg", "cr_tier", "#FACC15"),
-    TagDefinition("tier2", "Levels 5-9 (CR 4-12)", "level-three.svg", "cr_tier", "#EAB308"),
-    TagDefinition("tier3", "Levels 10-14 (CR 13-19)", "level-three-advanced.svg", "cr_tier", "#CA8A04"),
+    TagDefinition("tier0", "Levels 1-2 (CR 0-1/2)", "level-two.svg", "cr_tier", "#F59E0B"),
+    TagDefinition("tier1", "Levels 2-4 (CR 1-3)", "level-two-advanced.svg", "cr_tier", "#EAB308"),
+    TagDefinition("tier2", "Levels 5-9 (CR 4-12)", "level-three.svg", "cr_tier", "#D97706"),
+    TagDefinition("tier3", "Levels 10-14 (CR 13-19)", "level-three-advanced.svg", "cr_tier", "#C29A5B"),
     TagDefinition("tier4", "Levels 15-20 (CR 20+)", "level-four.svg", "cr_tier", "#A16207"),
 ]
 
@@ -248,11 +248,11 @@ SPELLCASTER_THEME_TAGS = [
 # Size Tags
 SIZE_TAGS = [
     TagDefinition("tiny", "Tiny sized creatures", "resize-down.svg", "size", "#9CA3AF"),
-    TagDefinition("small", "Small sized creatures", "minions.svg", "size", "#6B7280"), 
-    TagDefinition("medium", "Medium sized creatures", "person.svg", "size", "#4B5563"),
-    TagDefinition("large", "Large sized creatures", "giant.svg", "size", "#374151"),
-    TagDefinition("huge", "Huge sized creatures", "giant.svg", "size", "#1F2937"),
-    TagDefinition("gargantuan", "Gargantuan sized creatures", "giant.svg", "size", "#111827"),
+    TagDefinition("small", "Small sized creatures", "minions.svg", "size", "#78716C"), 
+    TagDefinition("medium", "Medium sized creatures", "person.svg", "size", "#6B7280"),
+    TagDefinition("large", "Large sized creatures", "giant.svg", "size", "#57534E"),
+    TagDefinition("huge", "Huge sized creatures", "giant.svg", "size", "#44403C"),
+    TagDefinition("gargantuan", "Gargantuan sized creatures", "giant.svg", "size", "#292524"),
 ]
 
 # All tag categories combined
