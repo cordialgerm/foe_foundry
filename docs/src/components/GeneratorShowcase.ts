@@ -23,7 +23,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     @state()
     private currentMessage = '';
 
-
+    @state()
+    private seedCount = this.getResponsiveSeedCount();
 
     private timerDuration = 0;
     private timerStartTime = 0;
@@ -31,6 +32,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     private messageInterval: number | null = null;
     private intersectionObserver: IntersectionObserver | null = null;
     private timerHasCompletedOnce = false;
+    private resizeObserver: ResizeObserver | null = null;
 
     private readonly messages = [
         "A worthy foe approaches...",
@@ -44,6 +46,18 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     private getMonsterKeyFromUrl(): string | null {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get('monster-key') || urlParams.get('template');
+    }
+
+    private getResponsiveSeedCount(): number {
+        // Return 2 if mobile (768px or less), 3 otherwise
+        return window.innerWidth <= 768 ? 2 : 3;
+    }
+
+    private handleResize() {
+        const newSeedCount = this.getResponsiveSeedCount();
+        if (newSeedCount !== this.seedCount) {
+            this.seedCount = newSeedCount;
+        }
     }
 
     static styles = css`
@@ -211,12 +225,15 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         this.addEventListener('reroll-click', this._handleButtonClick.bind(this));
         this.addEventListener('forge-click', this._handleButtonClick.bind(this));
 
-        // Add event listener for search events
-        this.addEventListener('search-query', this._handleSearchQuery.bind(this));
-        this.addEventListener('search-navigate', this._handleSearchNavigate.bind(this));
+        // Add event listener for search events (cast to EventListener to fix TypeScript)
+        this.addEventListener('search-query', this._handleSearchQuery.bind(this) as EventListener);
+        this.addEventListener('search-navigate', this._handleSearchNavigate.bind(this) as EventListener);
 
         // Set up intersection observer to detect when component comes into view
         this.setupIntersectionObserver();
+
+        // Set up resize observer for responsive seed count
+        this.setupResizeObserver();
     }
 
     disconnectedCallback() {
@@ -225,6 +242,16 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         if (this.intersectionObserver) {
             this.intersectionObserver.disconnect();
         }
+        if (this.resizeObserver) {
+            this.resizeObserver.disconnect();
+        }
+    }
+
+    private setupResizeObserver() {
+        this.resizeObserver = new ResizeObserver(() => {
+            this.handleResize();
+        });
+        this.resizeObserver.observe(document.body);
     }
 
     private setupIntersectionObserver() {
@@ -373,7 +400,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         placeholder="Search for undead, fiends, dragons..."
                         button-text="Search"
                         mode="event"
-                        seeds="2"
+                        seeds="${this.seedCount}"
                         analytics-surface="generator-showcase">
                     </search-bar>
                 </div>
