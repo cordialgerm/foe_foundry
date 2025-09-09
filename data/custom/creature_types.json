@@ -1,72 +1,143 @@
 [
   {
     "creature_type": "Aberration",
+    "short_description": "Beings defying the natural laws of the world, originating from alien dimensions or unfathomable depths of the cosmos.",
     "description": "Aberrations are entities that defy the natural laws of the world, often originating from alien dimensions or the unfathomable depths of the cosmos. Their forms and minds are utterly foreign, leading them to have little in common with the creatures of the material plane. Aberrations typically have bizarre and unsettling anatomies with features that are unnerving or grotesque. Their motives are often inscrutable, driven by alien logic or purposes beyond mortal comprehension. Many aberrations hail from the Far Realm, a distant plane of madness and chaos. They commonly possess powerful mental abilities such as telepathy, mind control, and psionics. Due to their alien nature, aberrations are often solitary, viewing other creatures either as tools, subjects, or threats.",
-    "examples": ["aboleths", "beholders", "mind flayers", "slaadi"]
+    "examples": [
+      "aboleths",
+      "beholders",
+      "mind flayers",
+      "slaadi"
+    ]
   },
   {
     "creature_type": "Beast",
+    "short_description": "Animals and natural creatures that form a natural part of the world's ecosystems.",
     "description": "Beasts are nonhumanoid creatures that form a natural part of the world's ecosystems, ranging from the smallest insects to the largest dinosaurs. They resemble real-world animals or prehistoric creatures. Generally guided by instinct, beasts act to survive, feed, and reproduce. They are native to the natural world, evolving over time or sometimes influenced by magical environments to develop unique traits or larger sizes. While most beasts lack magical powers, they may possess exceptional physical abilities like keen senses, flight, venomous attacks, or camouflage. Some may form packs or herds, displaying social behaviors typical of their species.",
-    "examples": ["ordinary animals", "dinosaurs", "giant animals", "quippers", "stirges"]
+    "examples": [
+      "ordinary animals",
+      "dinosaurs",
+      "giant animals",
+      "quippers",
+      "stirges"
+    ]
   },
   {
     "creature_type": "Celestial",
+    "short_description": "Beings of pure Divine energy, embodying the principles of law and order.",
     "description": "Celestials are divine beings originating from the Upper Planes, embodying the principles of goodness, law, and order. They often serve deities or higher cosmic forces as messengers, guardians, or warriors. Celestials typically have radiant and majestic forms. They are guided by a strong moral compass, acting to promote good, protect the innocent, and combat evil. Created by gods or formed from pure celestial energy, these beings are the personification of virtuous ideals. They possess powerful magic, including healing, protective spells, and abilities that harness radiant energy. While inherently good, celestials can sometimes be distant or inscrutable to mortals.",
-    "examples": ["angels", "couatls", "pegasi"]
+    "examples": [
+      "angels",
+      "couatls",
+      "pegasi"
+    ]
   },
   {
     "creature_type": "Construct",
+    "short_description": "Artificially created beings animated by magic or craftsmanship.",
     "description": "Constructs are artificially created beings, brought into existence through magic, craftsmanship, or a combination of both. They lack biological life but are animated to perform specific functions. Constructs vary widely in form, from the humanoid shapes of golems crafted from clay, stone, or metal, to the mechanical and intricate designs of modrons, which resemble geometric shapes with limbs. Typically, constructs are programmed or enchanted to follow specific instructions. They might guard a location, serve a master, or perform repetitive tasks. Without orders, they may become inactive or follow default behaviors. Created by spellcasters, artisans, or deities, constructs are formed through complex rituals, enchantments, or advanced technology. Constructs often possess immense strength, durability, and immunity to many conditions that affect living creatures, such as poison or disease.",
-    "examples": ["golems", "modrons"]
+    "examples": [
+      "golems",
+      "modrons"
+    ]
   },
   {
     "creature_type": "Dragon",
+    "short_description": "Mythic scaled beasts known for their immense power, wisdom, and deadly elemental breath.",
     "description": "Dragons are legendary, large, and powerful reptilian creatures, revered and feared across the realms. They are often associated with immense power, ancient wisdom, and formidable magic. Dragons typically have massive, serpentine bodies covered in scales, large wings, sharp claws, and fearsome jaws lined with teeth. Chromatic dragons (red, blue, black, green, white) are usually evil, while metallic dragons (gold, silver, bronze, brass, copper) are generally good. Dragons are often characterized by their intelligence, pride, and greed. Many hoard treasure, collect artifacts, or accumulate knowledge. They possess powerful breath weapons, spellcasting abilities, and formidable physical strength. They have keen senses, can often shapeshift, and may have innate magical resistances.",
-    "examples": ["chromatic dragons", "metallic dragons", "wyverns"]
+    "examples": [
+      "chromatic dragons",
+      "metallic dragons",
+      "wyverns"
+    ]
   },
   {
     "creature_type": "Elemental",
+    "short_description": "The fundamental forces of nature manifesting into physical form.",
     "description": "Elementals are beings composed of the fundamental forces of nature, hailing from the Elemental Planes of Air, Earth, Fire, and Water. Elementals manifest as living embodiments of their respective elements. For example, a fire elemental appears as a humanoid shape made of flame, while an earth elemental resembles a moving mound of rock and soil. They act according to the nature of their element—fire elementals are aggressive and consuming, water elementals are fluid and adaptable. Formed from the pure essence of their elemental plane, they can be called forth by spellcasters or arise naturally in areas where elemental energy is strong. Elementals have control over their element, such as creating whirlwinds, igniting flammable objects, or reshaping earth.",
-    "examples": ["common elementals", "azer", "genies", "invisible stalkers"]
+    "examples": [
+      "common elementals",
+      "azer",
+      "genies",
+      "invisible stalkers"
+    ]
   },
   {
     "creature_type": "Fey",
+    "short_description": "Magical, whimsical, and otherworldly creatures tied to nature and the mysterious realm of the Fae.",
     "description": "Fey are magical creatures deeply connected to nature and the mystical energies of the Feywild, a parallel plane of exuberant life and enchantment. Fey often have an otherworldly beauty or charm. They are known for their capricious and whimsical nature, ranging from benevolent to mischievous or even malicious. Born from the essence of nature and magic, fey embody aspects of the natural world, emotions, or concepts like dreams and shadows. They often possess enchantment magic, such as charms, illusions, and the ability to manipulate emotions. Time and reality can behave unpredictably around fey, and interacting with them often involves navigating complex social customs.",
-    "examples": ["dryads", "satyrs"]
+    "examples": [
+      "dryads",
+      "satyrs"
+    ]
   },
   {
     "creature_type": "Fiend",
+    "short_description": "Malevolent beings born of the forces of corruption, temptation, and destruction.",
     "description": "Fiends are malevolent beings from the Lower Planes, embodying pure evil and often associated with corruption, temptation, and destruction. Fiends vary widely but often have fearsome or intimidating forms. They seek to spread evil, corrupt souls, and undermine order. Spawned in the infernal realms such as the Abyss or Nine Hells, fiends are created from the essence of evil or the souls of the damned. Fiends possess dark magic, including the ability to summon other fiends, cast destructive spells, and resist non-magical attacks. They are cunning adversaries, often manipulating others to achieve their sinister goals.",
-    "examples": ["demons", "devils", "rakshasa"]
+    "examples": [
+      "demons",
+      "devils",
+      "rakshasa"
+    ]
   },
   {
     "creature_type": "Giant",
+    "short_description": "An ancient race. The living bones of the earth towering above mortal kind.",
     "description": "Giants are massive humanoids who often live in remote or wild areas. They are descendants of ancient primordial beings and come in various types, each associated with different elements or aspects of nature. Giants resemble oversized humans, standing anywhere from 10 to 30 feet tall. Their behavior ranges from the noble and wise storm giants to the brutish and aggressive hill giants. Giants possess immense physical strength, capable of hurling boulders and wielding oversized weapons. Some giants have elemental abilities, like controlling weather or breathing fire.",
-    "examples": ["true giants", "ogres", "trolls"]
+    "examples": [
+      "true giants",
+      "ogres",
+      "trolls"
+    ]
   },
   {
     "creature_type": "Humanoid",
+    "short_description": "The mortal races are sentient beings with diverse cultures and adaptability.",
     "description": "Humanoids are the most common sentient beings, characterized by their bipedal form and capacity for culture, language, and societal development. This category includes a vast array of races such as humans, elves, dwarves, and goblinoids. Their behaviors are diverse, shaped by culture, personal beliefs, and individual experiences. Generally, humanoids have few innate magical abilities but can learn magic, martial skills, and crafts. They adapt to various environments and can be highly versatile.",
-    "examples": ["humans", "dwarves", "elves", "goblinoid races"]
+    "examples": [
+      "humans",
+      "dwarves",
+      "elves",
+      "goblinoid races"
+    ]
   },
   {
     "creature_type": "Monstrosity",
+    "short_description": "Unnatural creatures, often magical experiments or hybrids.",
     "description": "Monstrosities are creatures that do not fit into other categories, often the result of magical experimentation, curses, or unnatural evolution. They are fundamentally unnatural beings. Monstrosities often combine features of different animals or possess exaggerated traits. They may be aggressive, territorial, or predatory. Created by wizards, gods, or through chaotic magic, monstrosities might be accidents or deliberate creations designed for a purpose. Their abilities vary widely but can include heightened senses, natural weapons, and sometimes limited magical abilities.",
-    "examples": ["minotaurs", "owlbears"]
+    "examples": [
+      "minotaurs",
+      "owlbears"
+    ]
   },
   {
     "creature_type": "Ooze",
+    "short_description": "Amorphous, mindless slimes that dissolve or consume organic matter.",
     "description": "Oozes are amorphous creatures that consume organic material. They lack a defined shape and are often found in dark, damp environments like dungeons or caves. Oozes appear as blobs or puddles of gelatinous substance, ranging in color and consistency. Driven by a simple hunger, oozes move slowly, engulfing and dissolving anything organic they encounter. They can corrode metal, digest organic matter, and are often resistant or immune to certain types of damage.",
-    "examples": ["black puddings", "gelatinous cubes"]
+    "examples": [
+      "black puddings",
+      "gelatinous cubes"
+    ]
   },
   {
     "creature_type": "Plant",
+    "short_description": "Sentient or animate plant and fungal creatures.",
     "description": "Plant creatures are sentient or animate flora, including both vegetable and fungal life forms. They are often connected to the natural magic of the world. Plant creatures resemble animated versions of plants or fungi. They may defend their territory, seek to spread their spores, or interact peacefully with other beings. Plant creatures might have abilities like releasing spores that cause hallucinations, regenerating when damaged, or controlling other plants.",
-    "examples": ["shambling mounds", "myconids"]
+    "examples": [
+      "shambling mounds",
+      "myconids"
+    ]
   },
   {
     "creature_type": "Undead",
+    "short_description": "Beings cursed to persist beyond death, such as reanimated corpses or lingering spirits, often serving dark masters or bound by unfinished business",
     "description": "Undead are beings that were once alive but have been reanimated through necromancy, curses, or unfinished business binding them to the mortal realm. Undead often bear the marks of death and decay. Their behavior depends on their type; mindless undead follow the commands of their creator or act on base instincts, while intelligent undead pursue their own goals. They may have abilities such as draining life energy, causing fear, or being immune to poison and disease. Undead are often vulnerable to holy magic and symbols and are commonly associated with darkness and decay.",
-    "examples": ["ghosts", "specters", "vampires", "zombies"]
+    "examples": [
+      "ghosts",
+      "specters",
+      "vampires",
+      "zombies"
+    ]
   }
 ]
