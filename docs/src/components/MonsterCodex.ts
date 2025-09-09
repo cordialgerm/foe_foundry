@@ -1232,7 +1232,7 @@ export class MonsterCodex extends LitElement {
                 <span class="monster-tag-icon"
                       title="${tag.description}"
                       style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};"
-                      @click=${(e: Event) => this.handleTagClick(e, tag.tag)}>
+                      @click=${(e: Event) => this.handleTagClick(e, tag.key || tag.tag)}>
                   ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
                 </span>
               `) : ''}

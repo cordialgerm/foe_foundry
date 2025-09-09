@@ -1,6 +1,7 @@
 // Monster tag information for display
 export interface MonsterTagInfo {
-    tag: string;
+    tag: string;      // Display name (e.g., "Tier 1")
+    key: string;      // API identifier (e.g., "tier_1")
     tag_type: string;
     description: string;
     icon?: string;

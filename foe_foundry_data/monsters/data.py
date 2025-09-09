@@ -235,16 +235,38 @@ class MonsterModel:
                 # Only skip if absolutely necessary
                 pass
 
-        # Extract tags from statblock
+        # Extract tags from statblock and sort them
         tag_infos = []
         for monster_tag in stats.tags:
+            # Get key from definition if available, otherwise derive from tag name
+            key = monster_tag.definition.key if monster_tag.definition else monster_tag.tag.lower().replace(" ", "_")
             tag_infos.append(MonsterTagInfo(
                 tag=monster_tag.tag,
+                key=key,
                 tag_type=monster_tag.tag_type,
                 description=monster_tag.description,
                 icon=monster_tag.icon,
                 color=monster_tag.color
             ))
+        
+        # Sort tags by desired order: Creature Type, Role(s), Spellcaster, Tier, Legendary, Damage Type(s)
+        def tag_sort_order(tag: MonsterTagInfo) -> tuple:
+            type_priority = {
+                'creature_type': 1,
+                'monster_role': 2,
+                'theme': 3,  # spellcaster themes
+                'cr_tier': 4,
+                'legendary': 5,
+                'damage_type': 6,
+                'species': 7,
+                'region': 8
+            }
+            # Get priority, default to 9 for unknown types
+            priority = type_priority.get(tag.tag_type, 9)
+            # Secondary sort by tag name for consistent ordering within same type
+            return (priority, tag.tag)
+        
+        tag_infos.sort(key=tag_sort_order)
 
         return MonsterModel(
             name=stats.name,

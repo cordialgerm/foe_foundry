@@ -20,6 +20,12 @@ def get_tag(*, tag_name: str) -> TagInfoModel:
         key = name_to_key(tag_name)
         tag = Tags.TagLookup.get(key)
     if tag is None:
+        # Try lookup by display name (for names like "Tier 0")
+        for tag_info in Tags.AllTags:
+            if tag_info.name.lower() == tag_name.lower():
+                tag = tag_info
+                break
+    if tag is None:
         raise HTTPException(status_code=404, detail="Tag not found")
     return tag
 

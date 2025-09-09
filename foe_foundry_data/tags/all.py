@@ -23,10 +23,14 @@ class TagLookupCache:
         all_monsters = Monsters.one_of_each_monster
         
         for tag_def in ALL_TAG_DEFINITIONS:
-            # Find monsters that have this tag
+            # Find monsters that have this tag (check both tag name and key)
             monsters_with_tag = [
                 monster for monster in all_monsters
-                if monster.tags and any(tag.tag.lower() == tag_def.name.lower() for tag in monster.tags)
+                if monster.tags and any(
+                    tag.tag.lower() == tag_def.name.lower() or 
+                    getattr(tag, 'key', tag.tag.lower().replace(' ', '_')) == tag_def.key
+                    for tag in monster.tags
+                )
             ]
             
             # Select diverse examples (up to 4)

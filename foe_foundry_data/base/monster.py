@@ -9,7 +9,8 @@ from pydantic.dataclasses import dataclass
 @dataclass(kw_only=True)
 class MonsterTagInfo:
     """Tag information for display in UI"""
-    tag: str
+    tag: str  # Display name (e.g., "Tier 1")
+    key: str  # API identifier (e.g., "tier_1")
     tag_type: str
     description: str
     icon: str | None = None
