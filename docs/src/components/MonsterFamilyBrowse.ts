@@ -31,7 +31,7 @@ export class MonsterFamilyBrowse extends LitElement {
 
     .browse-container {
       display: flex;
-      height: auto; /* Remove fixed height to prevent double-scroll */
+      height: 100%; /* Set full height for proper scrolling */
       min-height: 600px;
       align-items: flex-start; /* Top align both panels */
     }
@@ -191,7 +191,7 @@ export class MonsterFamilyBrowse extends LitElement {
     @media (max-width: 1040px) {
       .browse-container {
         flex-direction: column;
-        height: auto;
+        height: 100vh; /* Set full viewport height for proper mobile scrolling */
         align-items: stretch; /* Stack layout for mobile */
       }
 
@@ -202,8 +202,8 @@ export class MonsterFamilyBrowse extends LitElement {
       .content-panel {
         padding: 0.75rem; /* Further reduced padding for smaller screens */
         padding-top: 0rem;
-        height: auto;
-        overflow-y: visible; /* Remove scroll on mobile since container is auto height */
+        height: 100%; /* Take full available height */
+        overflow-y: auto; /* Enable vertical scrolling to see all families */
       }
 
       .carousel-section {
