@@ -20,14 +20,8 @@ export interface MonsterInfo {
   background_image?: string;
   creature_type?: string;
   tag_line?: string;
-  tags?: MonsterTagInfo[];
+  tags?: TagInfo[];
 }
-
-export interface MonsterTagInfo {
-  tag: string;
-  tag_type: string;
-  description: string;
-  icon?: string;
   color?: string;
 }
 
@@ -35,8 +29,8 @@ export class TagApi {
   /**
    * Get detailed information about a specific tag
    */
-  async getTag(tagName: string): Promise<TagInfo> {
-    const response = await fetch(`/api/v1/tags/tag/${encodeURIComponent(tagName)}`);
+  async getTag(tagKey: string): Promise<TagInfo> {
+    const response = await fetch(`/api/v1/tags/tag/${encodeURIComponent(tagKey)}`);
     if (!response.ok) {
       throw new Error(`Failed to fetch tag: ${response.statusText}`);
     }

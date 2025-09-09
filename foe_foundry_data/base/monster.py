@@ -13,8 +13,8 @@ class MonsterTagInfo:
     key: str  # API identifier (e.g., "tier_1")
     tag_type: str
     description: str
-    icon: str | None = None
-    color: str | None = None
+    icon: str
+    color: str
 
 
 @dataclass(kw_only=True)

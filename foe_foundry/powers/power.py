@@ -119,28 +119,12 @@ class Power(ABC):
             additional_tags = self._get_additional_tags_for_theme(self.theme)
             tags.extend(additional_tags)
         
-        # Add CR tier tag if suggested_cr is available
-        if self.suggested_cr is not None:
-            tags.append(MonsterTag.from_cr(self.suggested_cr))
-        
         return tags
     
     def _get_additional_tags_for_theme(self, theme: str) -> List[MonsterTag]:
         """Get additional tags based on theme patterns"""
         additional_tags = []
         theme_lower = theme.lower()
-        
-        # Family tags for creature-specific themes
-        creature_family_themes = {
-            'balor', 'basilisk', 'bugbear', 'chimera', 'cultist', 'dire_bunny',
-            'druid', 'frost_giant', 'gelatinous_cube', 'ghoul', 'goblin', 'gorgon',
-            'guard', 'hydra', 'knight', 'kobold', 'lich', 'mage', 'manticore',
-            'merrow', 'mimic', 'nothic', 'ogre', 'simulacrum', 'skeletal', 'spider',
-            'spirit', 'vrock', 'wight', 'wolf', 'zombie'
-        }
-        
-        if theme_lower in creature_family_themes:
-            additional_tags.append(MonsterTag.from_family(theme_lower))
         
         # Environment tags for environment-related themes
         environment_themes = {

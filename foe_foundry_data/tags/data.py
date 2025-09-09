@@ -23,10 +23,10 @@ class TagInfoModel:
     # Example monsters using this tag (prioritized for diversity)
     example_monsters: List[MonsterInfoModel]
     
-    @classmethod
-    def from_tag_definition(cls, tag_def, example_monsters: List[MonsterInfoModel]) -> TagInfoModel:
+    @staticmethod
+    def from_tag_definition(tag_def, example_monsters: List[MonsterInfoModel]) -> 'TagInfoModel':
         """Create TagInfoModel from TagDefinition with example monsters"""
-        return cls(
+        return TagInfoModel(
             key=tag_def.key,
             name=tag_def.name,
             description=tag_def.description,

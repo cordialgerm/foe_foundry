@@ -5,6 +5,8 @@ This module defines all available tags with their names, descriptions, and icons
 Each tag category is organized into its own section for easy maintenance.
 """
 
+import json
+import os
 from dataclasses import dataclass
 from typing import Dict, List, Optional
 
@@ -24,82 +26,127 @@ class TagDefinition:
         return self.name.lower().replace(" ", "_")
 
 
+def _load_creature_type_tags() -> List[TagDefinition]:
+    """Load creature type tags from the JSON file"""
+    data_path = os.path.join(os.path.dirname(__file__), "..", "..", "data", "custom", "creature_types.json")
+    
+    # Icon and color mapping for creature types
+    creature_type_config = {
+        "aberration": ("tentacle-strike.svg", "#A855F7"),
+        "beast": ("bear-head.svg", "#65A30D"),
+        "celestial": ("angel-wings.svg", "#F59E0B"),
+        "construct": ("robot-golem.svg", "#78716C"),
+        "dragon": ("dragon-head.svg", "#DC2626"),
+        "elemental": ("atom.svg", "#0891B2"),
+        "fey": ("fairy.svg", "#EC4899"),
+        "fiend": ("evil-horns.svg", "#7C2D12"),
+        "giant": ("giant.svg", "#4338CA"),
+        "humanoid": ("person.svg", "#3B82F6"),
+        "monstrosity": ("hydra.svg", "#059669"),
+        "ooze": ("slime.svg", "#84CC16"),
+        "plant": ("vine-leaf.svg", "#16A34A"),
+        "undead": ("skull.svg", "#6B7280"),
+    }
+    
+    try:
+        with open(data_path, 'r') as f:
+            creature_types_data = json.load(f)
+        
+        tags = []
+        for item in creature_types_data:
+            creature_type = item["creature_type"].lower()
+            icon, color = creature_type_config.get(creature_type, ("question.svg", "#6B7280"))
+            
+            tags.append(TagDefinition(
+                name=creature_type,
+                description=item["short_description"],
+                icon=icon,
+                category="creature_type",
+                color=color
+            ))
+        
+        return tags
+    except (FileNotFoundError, json.JSONDecodeError):
+        # Fallback to hardcoded values if file not found
+        return [
+            TagDefinition("aberration", "Strange and otherworldly creatures", "tentacle-strike.svg", "creature_type", "#A855F7"),
+            TagDefinition("beast", "Natural animals and creatures", "bear-head.svg", "creature_type", "#65A30D"),
+            TagDefinition("celestial", "Divine and heavenly creatures", "angel-wings.svg", "creature_type", "#F59E0B"),
+            TagDefinition("construct", "Artificial beings and golems", "robot-golem.svg", "creature_type", "#78716C"),
+            TagDefinition("dragon", "Dragons and draconic creatures", "dragon-head.svg", "creature_type", "#DC2626"),
+            TagDefinition("elemental", "Elemental beings of pure elements", "atom.svg", "creature_type", "#0891B2"),
+            TagDefinition("fey", "Magical creatures from faerie realm", "fairy.svg", "creature_type", "#EC4899"),
+            TagDefinition("fiend", "Devils, demons, and evil outsiders", "evil-horns.svg", "creature_type", "#7C2D12"),
+            TagDefinition("giant", "Large humanoid-like beings", "giant.svg", "creature_type", "#4338CA"),
+            TagDefinition("humanoid", "Intelligent human-like creatures", "person.svg", "creature_type", "#3B82F6"),
+            TagDefinition("monstrosity", "Unnatural hybrid creatures", "hydra.svg", "creature_type", "#059669"),
+            TagDefinition("ooze", "Amorphous acidic creatures", "slime.svg", "creature_type", "#84CC16"),
+            TagDefinition("plant", "Animated plant-based creatures", "vine-leaf.svg", "creature_type", "#16A34A"),
+            TagDefinition("undead", "Formerly living creatures", "skull.svg", "creature_type", "#6B7280"),
+        ]
+
+
+def _load_monster_role_tags() -> List[TagDefinition]:
+    """Load monster role tags from the JSON file"""
+    data_path = os.path.join(os.path.dirname(__file__), "..", "..", "data", "custom", "monster_roles.json")
+    
+    # Icon and color mapping for monster roles
+    role_config = {
+        "ambusher": ("ninja-mask.svg", "#84CC16"),
+        "artillery": ("crossbow.svg", "#EF4444"),
+        "bruiser": ("muscle-up.svg", "#DC2626"),
+        "controller": ("magic-portal.svg", "#A855F7"),
+        "defender": ("shield.svg", "#3B82F6"),
+        "leader": ("crown.svg", "#C29A5B"),
+        "skirmisher": ("running-ninja.svg", "#22C55E"),
+        "support": ("mailed-fist.svg", "#A855F7"),
+    }
+    
+    try:
+        with open(data_path, 'r') as f:
+            roles_data = json.load(f)
+        
+        tags = []
+        for item in roles_data:
+            role_name = item["name"].lower()
+            icon, color = role_config.get(role_name, ("question.svg", "#6B7280"))
+            
+            tags.append(TagDefinition(
+                name=role_name,
+                description=item["short_description"],
+                icon=icon,
+                category="monster_role",
+                color=color
+            ))
+        
+        return tags
+    except (FileNotFoundError, json.JSONDecodeError):
+        # Fallback to hardcoded values if file not found
+        return [
+            TagDefinition("ambusher", "Strikes from hiding or surprise", "ninja-mask.svg", "monster_role", "#84CC16"),
+            TagDefinition("artillery", "Long-range attackers", "crossbow.svg", "monster_role", "#EF4444"),
+            TagDefinition("bruiser", "Heavy damage dealers", "muscle-up.svg", "monster_role", "#DC2626"),
+            TagDefinition("controller", "Battlefield manipulators", "magic-portal.svg", "monster_role", "#A855F7"),
+            TagDefinition("defender", "Protective tank-like creatures", "shield.svg", "monster_role", "#3B82F6"),
+            TagDefinition("leader", "Command and support others", "crown.svg", "monster_role", "#C29A5B"),
+            TagDefinition("skirmisher", "Mobile hit-and-run fighters", "running-ninja.svg", "monster_role", "#22C55E"),
+            TagDefinition("support", "Provides assistance to allies", "mailed-fist.svg", "monster_role", "#A855F7"),
+        ]
+
+
 # Creature Type Tags
-CREATURE_TYPE_TAGS = [
-    TagDefinition("aberration", "Strange and otherworldly creatures", "tentacle-strike.svg", "creature_type", "#A855F7"),
-    TagDefinition("beast", "Natural animals and creatures", "bear-head.svg", "creature_type", "#65A30D"),
-    TagDefinition("celestial", "Divine and heavenly creatures", "angel-wings.svg", "creature_type", "#F59E0B"),
-    TagDefinition("construct", "Artificial beings and golems", "robot-golem.svg", "creature_type", "#78716C"),
-    TagDefinition("dragon", "Dragons and draconic creatures", "dragon-head.svg", "creature_type", "#DC2626"),
-    TagDefinition("elemental", "Elemental beings of pure elements", "atom.svg", "creature_type", "#0891B2"),
-    TagDefinition("fey", "Magical creatures from faerie realm", "fairy.svg", "creature_type", "#EC4899"),
-    TagDefinition("fiend", "Demonic and devilish creatures", "devil-mask.svg", "creature_type", "#991B1B"),
-    TagDefinition("giant", "Large humanoid creatures", "giant.svg", "creature_type", "#A16207"),
-    TagDefinition("humanoid", "Humans and humanlike creatures", "person.svg", "creature_type", "#6366F1"),
-    TagDefinition("monstrosity", "Unnatural but not otherworldly creatures", "monster-grasp.svg", "creature_type", "#9333EA"),
-    TagDefinition("ooze", "Amorphous creatures like slimes", "slime.svg", "creature_type", "#84CC16"),
-    TagDefinition("plant", "Vegetable creatures", "carnivorous-plant.svg", "creature_type", "#22C55E"),
-    TagDefinition("undead", "Formerly living creatures", "skull-crossed-bones.svg", "creature_type", "#52525B"),
-]
+CREATURE_TYPE_TAGS = _load_creature_type_tags()
 
-# Monster Role Tags
-MONSTER_ROLE_TAGS = [
-    TagDefinition("ambusher", "Strikes from hiding or surprise", "ninja-mask.svg", "monster_role", "#84CC16"),
-    TagDefinition("artillery", "Long-range attackers", "crossbow.svg", "monster_role", "#EF4444"),
-    TagDefinition("bruiser", "Heavy damage dealers", "muscle-up.svg", "monster_role", "#DC2626"),
-    TagDefinition("controller", "Battlefield manipulators", "magic-portal.svg", "monster_role", "#A855F7"),
-    TagDefinition("defender", "Protective tank-like creatures", "shield.svg", "monster_role", "#3B82F6"),
-    TagDefinition("leader", "Command and support others", "crown.svg", "monster_role", "#C29A5B"),
-    TagDefinition("skirmisher", "Mobile hit-and-run fighters", "running-ninja.svg", "monster_role", "#22C55E"),
-    TagDefinition("support", "Provides assistance to allies", "mailed-fist.svg", "monster_role", "#A855F7"),
-    TagDefinition("soldier", "Standard combat troops", "sword-brandish.svg", "monster_role", "#78716C"),
-    TagDefinition("legendary", "Exceptional boss-tier creatures", "crown-of-thorns.svg", "monster_role", "#F59E0B"),
-]
+# Monster Role Tags  
+MONSTER_ROLE_TAGS = _load_monster_role_tags()
 
-# Environment - Biome Tags
-BIOME_TAGS = [
-    TagDefinition("arctic", "Cold, icy regions", "snowflake-1.svg", "biome", "#3B82F6"),
-    TagDefinition("desert", "Hot, dry sandy regions", "cactus.svg", "biome", "#F59E0B"),
-    TagDefinition("forest", "Wooded areas with trees", "tree-branch.svg", "biome", "#16A34A"),
-    TagDefinition("jungle", "Dense tropical forests", "vine-leaf.svg", "biome", "#15803D"),
-    TagDefinition("grassland", "Open grassy plains", "grass.svg", "biome", "#65A30D"),
-    TagDefinition("farmland", "Cultivated agricultural land", "wheat.svg", "biome", "#A16207"),
-    TagDefinition("ocean", "Vast saltwater bodies", "wave-crest.svg", "biome", "#0EA5E9"),
-    TagDefinition("river", "Flowing freshwater", "river.svg", "biome", "#06B6D4"),
-    TagDefinition("lake", "Large freshwater bodies", "water-drop.svg", "biome", "#0891B2"),
-    TagDefinition("swamp", "Wetland marshes", "swamp.svg", "biome", "#059669"),
-    TagDefinition("underground", "Subterranean environments", "cave-entrance.svg", "biome", "#78716C"),
-    TagDefinition("extraplanar", "Other-dimensional spaces", "portal.svg", "biome", "#8B5CF6"),
-]
-
-# Environment - Terrain Tags
-TERRAIN_TAGS = [
-    TagDefinition("mountain", "High rocky peaks", "mountain-cave.svg", "terrain", "#78716C"),
-    TagDefinition("hill", "Elevated gentle slopes", "hills.svg", "terrain", "#A3A3A3"),
-    TagDefinition("plain", "Flat open areas", "horizon-road.svg", "terrain", "#84CC16"),
-    TagDefinition("water", "Water-covered areas", "water-drop.svg", "terrain", "#0EA5E9"),
-]
-
-# Environment - Development Tags
-DEVELOPMENT_TAGS = [
-    TagDefinition("wilderness", "Natural untamed areas", "tree-growth.svg", "development", "#16A34A"),
-    TagDefinition("frontier", "Minimal development outposts", "wooden-sign.svg", "development", "#A16207"),
-    TagDefinition("countryside", "Rural villages and farms", "village.svg", "development", "#65A30D"),
-    TagDefinition("settlement", "Established communities", "house.svg", "development", "#6B7280"),
-    TagDefinition("urban", "Cities and advanced infrastructure", "modern-city.svg", "development", "#374151"),
-    TagDefinition("ruin", "Abandoned destroyed areas", "ancient-ruins.svg", "development", "#57534E"),
-    TagDefinition("stronghold", "Fortified military areas", "castle.svg", "development", "#1F2937"),
-    TagDefinition("dungeon", "Underground hidden areas", "dungeon-gate.svg", "development", "#111827"),
-]
-
-# Environment - Extraplanar Tags
-EXTRAPLANAR_TAGS = [
-    TagDefinition("astral", "Ethereal dreamlike qualities", "cosmic-egg.svg", "extraplanar", "#A855F7"),
-    TagDefinition("elemental_plane", "Strong elemental characteristics", "atom.svg", "extraplanar", "#06B6D4"),
-    TagDefinition("faerie", "Magical whimsical qualities", "fairy-wings.svg", "extraplanar", "#EC4899"),
-    TagDefinition("celestial_plane", "Divine holy characteristics", "holy-symbol.svg", "extraplanar", "#FDE047"),
-    TagDefinition("hellish", "Dark infernal characteristics", "hell-crosses.svg", "extraplanar", "#7C2D12"),
-    TagDefinition("deathly", "Dark eerie death qualities", "skull-crossed-bones.svg", "extraplanar", "#374151"),
+# Challenge Rating Tier Tags
+CR_TIER_TAGS = [
+    TagDefinition("Tier 0", "Monsters commonly encountered by Level 1 and 2 parties (CR 0-1/2)", "level-two.svg", "cr_tier", "#F59E0B"),
+    TagDefinition("Tier 1", "Monsters commonly encountered by Level 3 and 4 parties (CR 1-3)", "level-two-advanced.svg", "cr_tier", "#EAB308"),
+    TagDefinition("Tier 2", "Monsters commonly encountered by Level 5-9 parties (CR 4-12)", "level-three.svg", "cr_tier", "#D97706"),
+    TagDefinition("Tier 3", "Monsters commonly encountered by Level 10-14 parties (CR 13-19)", "level-three-advanced.svg", "cr_tier", "#C29A5B"),
+    TagDefinition("Tier 4", "Monsters commonly encountered by Level 15-20 parties (CR 20+)", "level-four.svg", "cr_tier", "#A16207"),
 ]
 
 # Damage Type Tags
@@ -131,15 +178,6 @@ POWER_TYPE_TAGS = [
     TagDefinition("utility", "Non-combat utility powers", "toolbox.svg", "power_type", "#78716C"),
     TagDefinition("magic", "Magical spell-like powers", "magic-hat.svg", "power_type", "#9333EA"),
     TagDefinition("stealth", "Concealment and hiding powers", "hood.svg", "power_type", "#52525B"),
-]
-
-# Challenge Rating Tier Tags
-CR_TIER_TAGS = [
-    TagDefinition("Tier 0", "Levels 1-2 (CR 0-1/2)", "level-two.svg", "cr_tier", "#F59E0B"),
-    TagDefinition("Tier 1", "Levels 2-4 (CR 1-3)", "level-two-advanced.svg", "cr_tier", "#EAB308"),
-    TagDefinition("Tier 2", "Levels 5-9 (CR 4-12)", "level-three.svg", "cr_tier", "#D97706"),
-    TagDefinition("Tier 3", "Levels 10-14 (CR 13-19)", "level-three-advanced.svg", "cr_tier", "#C29A5B"),
-    TagDefinition("Tier 4", "Levels 15-20 (CR 20+)", "level-four.svg", "cr_tier", "#A16207"),
 ]
 
 # Species Tags (for NPCs and humanoids)
@@ -231,35 +269,86 @@ SPELLCASTER_THEME_TAGS = [
     TagDefinition("transmuter", "Transformation magic", "magic-trick.svg", "spellcaster_theme", "#10B981"),
 ]
 
+def _load_region_tags() -> List[TagDefinition]:
+    """Load region tags from the Region objects"""
+    try:
+        from ..environs.region import (
+            BlastedBadlands, CountryShire, Feywood, FieryHellscape, FlowingRiver,
+            FrozenWastes, HauntedLands, LoftyMountains, OpenRoads, ParchedSands,
+            RestlessSea, RollingGrasslands, TangledForest, UnderlandRealm,
+            UnrelentingMarsh, UrbanTownship, WartornKingdom
+        )
+        
+        # Icon and color mapping for regions
+        region_config = {
+            "Blasted Badlands": ("desert.svg", "#D97706"),
+            "Country Shire": ("village.svg", "#65A30D"),
+            "Feywood": ("fairy.svg", "#EC4899"),
+            "Fiery Hellscape": ("flame.svg", "#DC2626"),
+            "Flowing River": ("river.svg", "#0891B2"),
+            "Frozen Wastes": ("tension-snowflake.svg", "#3B82F6"),
+            "Haunted Lands": ("ghost.svg", "#6B21A8"),
+            "Lofty Mountains": ("mountain-cave.svg", "#78716C"),
+            "Open Roads": ("road.svg", "#CA8A04"),
+            "Parched Sands": ("desert.svg", "#A16207"),
+            "Restless Sea": ("big-wave.svg", "#0EA5E9"),
+            "Rolling Grasslands": ("grass.svg", "#22C55E"),
+            "Tangled Forest": ("pine-tree.svg", "#16A34A"),
+            "Underland Realm": ("underground-cave.svg", "#57534E"),
+            "Unrelenting Marsh": ("swamp.svg", "#84CC16"),
+            "Urban Township": ("castle.svg", "#6366F1"),
+            "Wartorn Kingdom": ("crossed-swords.svg", "#991B1B"),
+        }
+        
+        regions = [
+            BlastedBadlands, CountryShire, Feywood, FieryHellscape, FlowingRiver,
+            FrozenWastes, HauntedLands, LoftyMountains, OpenRoads, ParchedSands,
+            RestlessSea, RollingGrasslands, TangledForest, UnderlandRealm,
+            UnrelentingMarsh, UrbanTownship, WartornKingdom
+        ]
+        
+        tags = []
+        for region in regions:
+            icon, color = region_config.get(region.name, ("map.svg", "#6B7280"))
+            tags.append(TagDefinition(
+                name=region.name,
+                description=region.short_description,
+                icon=icon,
+                category="region",
+                color=color
+            ))
+        
+        return tags
+    except ImportError:
+        # Fallback to hardcoded values if import fails
+        return [
+            TagDefinition("Blasted Badlands", "A scorched wasteland where ancient ruins rise from the dust like the bones of forgotten gods.", "desert.svg", "region", "#D97706"),
+            TagDefinition("Country Shire", "Peaceful rural communities", "village.svg", "region", "#65A30D"),
+            TagDefinition("Feywood", "Fey-touched magical forests", "fairy.svg", "region", "#EC4899"),
+            TagDefinition("Fiery Hellscape", "Volcanic and hellish domains", "flame.svg", "region", "#DC2626"),
+            TagDefinition("Flowing River", "Rivers and waterways", "river.svg", "region", "#0891B2"),
+            TagDefinition("Frozen Wastes", "Arctic tundra and ice", "tension-snowflake.svg", "region", "#3B82F6"),
+            TagDefinition("Haunted Lands", "Cursed territories", "ghost.svg", "region", "#6B21A8"),
+            TagDefinition("Lofty Mountains", "High peaks and alpine regions", "mountain-cave.svg", "region", "#78716C"),
+            TagDefinition("Open Roads", "Well-traveled pathways", "road.svg", "region", "#CA8A04"),
+            TagDefinition("Parched Sands", "Endless desert dunes", "desert.svg", "region", "#A16207"),
+            TagDefinition("Restless Sea", "Dangerous ocean waters", "big-wave.svg", "region", "#0EA5E9"),
+            TagDefinition("Rolling Grasslands", "Fertile plains and fields", "grass.svg", "region", "#22C55E"),
+            TagDefinition("Tangled Forest", "Dense woodlands and jungles", "pine-tree.svg", "region", "#16A34A"),
+            TagDefinition("Underland Realm", "Subterranean cave networks", "underground-cave.svg", "region", "#57534E"),
+            TagDefinition("Unrelenting Marsh", "Treacherous swamplands", "swamp.svg", "region", "#84CC16"),
+            TagDefinition("Urban Township", "Cities and towns", "castle.svg", "region", "#6366F1"),
+            TagDefinition("Wartorn Kingdom", "Conflict-ravaged lands", "crossed-swords.svg", "region", "#991B1B"),
+        ]
+
+
 # Region Environment Tags  
-REGION_TAGS = [
-    TagDefinition("Blasted Badlands", "Desert ruins with magical devastation", "desert.svg", "region", "#D97706"),
-    TagDefinition("Country Shire", "Peaceful rural communities", "village.svg", "region", "#65A30D"),
-    TagDefinition("Feywood", "Fey-touched magical forests", "fairy.svg", "region", "#EC4899"),
-    TagDefinition("Fiery Hellscape", "Volcanic and hellish domains", "flame.svg", "region", "#DC2626"),
-    TagDefinition("Flowing River", "Rivers and waterways", "river.svg", "region", "#0891B2"),
-    TagDefinition("Frozen Wastes", "Arctic tundra and ice", "tension-snowflake.svg", "region", "#3B82F6"),
-    TagDefinition("Haunted Lands", "Cursed territories", "ghost.svg", "region", "#6B21A8"),
-    TagDefinition("Lofty Mountains", "High peaks and alpine regions", "mountain-cave.svg", "region", "#78716C"),
-    TagDefinition("Open Roads", "Well-traveled pathways", "road.svg", "region", "#CA8A04"),
-    TagDefinition("Parched Sands", "Endless desert dunes", "desert.svg", "region", "#A16207"),
-    TagDefinition("Restless Sea", "Dangerous ocean waters", "big-wave.svg", "region", "#0EA5E9"),
-    TagDefinition("Rolling Grasslands", "Fertile plains and fields", "grass.svg", "region", "#22C55E"),
-    TagDefinition("Tangled Forest", "Dense woodlands and jungles", "pine-tree.svg", "region", "#16A34A"),
-    TagDefinition("Underland Realm", "Subterranean cave networks", "underground-cave.svg", "region", "#57534E"),
-    TagDefinition("Unrelenting Marsh", "Treacherous swamplands", "swamp.svg", "region", "#84CC16"),
-    TagDefinition("Urban Township", "Cities and towns", "castle.svg", "region", "#6366F1"),
-    TagDefinition("Wartorn Kingdom", "Conflict-ravaged lands", "crossed-swords.svg", "region", "#991B1B"),
-]
+REGION_TAGS = _load_region_tags()
 
 # All tag categories combined
 ALL_TAG_DEFINITIONS = (
     CREATURE_TYPE_TAGS + 
     MONSTER_ROLE_TAGS + 
-    BIOME_TAGS + 
-    TERRAIN_TAGS + 
-    DEVELOPMENT_TAGS + 
-    EXTRAPLANAR_TAGS + 
     DAMAGE_TYPE_TAGS + 
     POWER_TYPE_TAGS + 
     CR_TIER_TAGS + 

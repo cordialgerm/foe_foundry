@@ -1,12 +1,5 @@
-// Monster tag information for display
-export interface MonsterTagInfo {
-    tag: string;      // Display name (e.g., "Tier 1")
-    key: string;      // API identifier (e.g., "tier_1")
-    tag_type: string;
-    description: string;
-    icon?: string;
-    color?: string;
-}
+// Import TagInfo from tags.ts instead of defining MonsterTagInfo
+import { TagInfo } from './tags';
 
 // MonsterInfo type matching backend MonsterInfoModel
 export interface MonsterInfo {
@@ -18,7 +11,7 @@ export interface MonsterInfo {
     background_image?: string;
     creature_type?: string;
     tag_line?: string;
-    tags?: MonsterTagInfo[];
+    tags?: TagInfo[];
 }
 
 // Enhanced search request interface

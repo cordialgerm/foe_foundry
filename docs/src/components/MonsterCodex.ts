@@ -673,6 +673,13 @@ export class MonsterCodex extends LitElement {
       line-height: 1.2;
     }
 
+    .monster-cr {
+      font-size: 1rem;
+      font-weight: normal;
+      color: rgba(255, 255, 255, 0.7);
+      margin-left: 0.5rem;
+    }
+
     .monster-tags {
       display: flex;
       flex-wrap: wrap;
@@ -697,7 +704,7 @@ export class MonsterCodex extends LitElement {
       height: 2rem;
       background: rgba(0, 0, 0, 0.6);
       border-radius: 50%;
-      cursor: help;
+      cursor: pointer;
       transition: all 0.2s ease;
       border: 2px solid rgba(255, 255, 255, 0.3);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1225,7 +1232,7 @@ export class MonsterCodex extends LitElement {
           @click=${(e: Event) => this.handleMonsterSearchCardClick(e, monster.key)}
           @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
           <div class="monster-info">
-            <div class="monster-name">${monster.name}</div>
+            <div class="monster-name">${monster.name} <span class="monster-cr">CR ${monster.cr}</span></div>
 
             <div class="monster-tags">
               ${monster.tags ? monster.tags.map(tag => html`
