@@ -53,7 +53,9 @@ class MonsterFamilyInfo:
     """Information about a family of similar monsters"""
 
     key: str
+    url: str
     name: str
     icon: str
     tag_line: str
     templates: list[MonsterTemplateInfoModel]
+    monsters: list[MonsterInfoModel]

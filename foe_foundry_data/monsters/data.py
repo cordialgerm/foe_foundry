@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urljoin
 from typing import List
+from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 from pydantic.dataclasses import dataclass
@@ -25,8 +25,8 @@ from foe_foundry.utils.image import (
 )
 
 from ..base import MonsterInfoModel, MonsterTagInfo, PowerLoadoutModel
-from ..families import load_families
 from ..jinja import render_statblock_fragment
+from ..monster_families import MonsterFamilies
 
 
 @dataclass(kw_only=True)
@@ -187,105 +187,87 @@ class MonsterModel:
         related_monster_keys = {m.key for m in related_monsters}
 
         # Also look for any monsters that are in the same family as this monster
-        try:
-            families = [
-                f for f in load_families() if stats.key in {m.key for m in f.monsters}
-            ]
-            for family in families:
-                for m in family.monsters:
-                    if m.key not in related_monster_keys:
-                        # Handle case where template might not exist in lookup
-                        template_name = m.template
-                        if m.template in TemplatesByKey:
-                            template_name = TemplatesByKey[m.template].name
-                        
-                        related_monsters.append(
-                            RelatedMonsterModel(
-                                key=m.key,
-                                name=m.name,
-                                cr=m.cr,
-                                template=template_name,
-                                family=family.name,
-                                same_template=False,
-                            )
+        families = [
+            f
+            for f in MonsterFamilies.families
+            if stats.key in {m.key for m in f.monsters}
+        ]
+        for family in families:
+            for m in family.monsters:
+                if m.key not in related_monster_keys:
+                    related_monsters.append(
+                        RelatedMonsterModel(
+                            key=m.key,
+                            name=m.name,
+                            cr=m.cr,
+                            template=TemplatesByKey[m.template].name,
+                            family=family.name,
+                            same_template=False,
                         )
-        except Exception as e:
-            # Log the error but continue processing - families are valuable
-            import logging
-            logging.warning(f"Error processing families for monster {stats.key}: {e}")
-            # Try to get families without template validation
-            try:
-                families = [
-                    f for f in load_families() if stats.key in {m.key for m in f.monsters}
-                ]
-                for family in families:
-                    for m in family.monsters:
-                        if m.key not in related_monster_keys:
-                            related_monsters.append(
-                                RelatedMonsterModel(
-                                    key=m.key,
-                                    name=m.name,
-                                    cr=m.cr,
-                                    template=m.template,  # Use raw template name
-                                    family=family.name,
-                                    same_template=False,
-                                )
-                            )
-            except Exception:
-                # Only skip if absolutely necessary
-                pass
+                    )
 
         # Extract tags from statblock and sort them
         tag_infos = []
         for monster_tag in stats.tags:
             # Get key from definition if available, otherwise derive from tag name
-            key = monster_tag.definition.key if monster_tag.definition else monster_tag.tag.lower().replace(" ", "_")
-            tag_infos.append(MonsterTagInfo(
-                tag=monster_tag.tag,
-                key=key,
-                tag_type=monster_tag.tag_type,
-                description=monster_tag.description,
-                icon=monster_tag.icon,
-                color=monster_tag.color
-            ))
-        
+            key = (
+                monster_tag.definition.key
+                if monster_tag.definition
+                else monster_tag.tag.lower().replace(" ", "_")
+            )
+            tag_infos.append(
+                MonsterTagInfo(
+                    tag=monster_tag.tag,
+                    key=key,
+                    tag_type=monster_tag.tag_type,
+                    description=monster_tag.description,
+                    icon=monster_tag.icon,
+                    color=monster_tag.color,
+                )
+            )
+
         # Add region tags from template environment information
         from foe_foundry.environs import Region
         from foe_foundry.environs.affinity import Affinity
         from foe_foundry.tags.tags import MonsterTag
-        
-        if template and hasattr(template, 'environments') and template.environments:
+
+        if template and hasattr(template, "environments") and template.environments:
             for env, affinity in template.environments:
                 # Only add region tags for native and common affinities (not rare or unknown)
-                if isinstance(env, Region) and affinity in {Affinity.native, Affinity.common}:
+                if isinstance(env, Region) and affinity in {
+                    Affinity.native,
+                    Affinity.common,
+                }:
                     region_tag = MonsterTag.from_region(env)
                     if region_tag.definition:  # Only add if the region tag is defined
-                        tag_infos.append(MonsterTagInfo(
-                            tag=region_tag.tag,
-                            key=region_tag.definition.key,
-                            tag_type=region_tag.tag_type,
-                            description=region_tag.description,
-                            icon=region_tag.icon,
-                            color=region_tag.color
-                        ))
-        
+                        tag_infos.append(
+                            MonsterTagInfo(
+                                tag=region_tag.tag,
+                                key=region_tag.definition.key,
+                                tag_type=region_tag.tag_type,
+                                description=region_tag.description,
+                                icon=region_tag.icon,
+                                color=region_tag.color,
+                            )
+                        )
+
         # Sort tags by desired order: Creature Type, Role(s), Spellcaster, Tier, Legendary, Damage Type(s)
         def tag_sort_order(tag: MonsterTagInfo) -> tuple:
             type_priority = {
-                'creature_type': 1,
-                'monster_role': 2,
-                'theme': 3,  # spellcaster themes
-                'cr_tier': 4,
-                'legendary': 5,
-                'damage_type': 6,
-                'species': 7,
-                'region': 8
+                "creature_type": 1,
+                "monster_role": 2,
+                "theme": 3,  # spellcaster themes
+                "cr_tier": 4,
+                "legendary": 5,
+                "damage_type": 6,
+                "species": 7,
+                "region": 8,
             }
             # Get priority, default to 9 for unknown types
             priority = type_priority.get(tag.tag_type, 9)
             # Secondary sort by tag name for consistent ordering within same type
             return (priority, tag.tag)
-        
+
         tag_infos.sort(key=tag_sort_order)
 
         return MonsterModel(

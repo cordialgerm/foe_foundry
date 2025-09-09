@@ -1,3 +1,4 @@
+from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
 
@@ -9,8 +10,7 @@ from foe_foundry.utils.monster_content import (
     extract_yaml_frontmatter,
     strip_yaml_frontmatter,
 )
-from foe_foundry_data.families.data import MonsterFamilyModel
-from foe_foundry_data.families.load import load_families
+from foe_foundry_data.monster_families.data import load_monster_families
 
 
 class TestMonsterContentUtilities:
@@ -118,23 +118,60 @@ Some markdown content.
 
 
 class TestMonsterFamilyModel:
-    """Test the MonsterFamilyModel data structure."""
+    """Test the MonsterFamilyInfo data structure (consolidated model)."""
 
     def test_monster_family_model_creation(self):
-        """Test creating a MonsterFamilyModel instance."""
-        from foe_foundry_data.base import MonsterInfoModel
+        """Test creating a MonsterFamilyInfo instance with consolidated structure."""
+        from datetime import datetime
+
+        from foe_foundry_data.base import (
+            MonsterFamilyInfo,
+            MonsterInfoModel,
+            MonsterTemplateInfoModel,
+        )
 
         monsters = [
             MonsterInfoModel(key="guard", name="Guard", cr=0.125, template="guard"),
             MonsterInfoModel(key="knight", name="Knight", cr=3.0, template="knight"),
         ]
 
-        family = MonsterFamilyModel(
+        templates = [
+            MonsterTemplateInfoModel(
+                key="guard",
+                name="Guard",
+                url="/monsters/guard/",
+                image="/img/monsters/guard.webp",
+                tagline="Watchful Sentries",
+                transparent_edges=False,
+                grayscale=False,
+                background_color="#333333",
+                mask_css="",
+                is_new=False,
+                create_date=datetime(2024, 1, 1),
+            ),
+            MonsterTemplateInfoModel(
+                key="knight",
+                name="Knight",
+                url="/monsters/knight/",
+                image="/img/monsters/knight.webp",
+                tagline="Noble Warriors",
+                transparent_edges=True,
+                grayscale=False,
+                background_color=None,
+                mask_css="mask-image: url('/img/monsters/knight.webp')",
+                is_new=True,
+                create_date=datetime(2024, 2, 1),
+            ),
+        ]
+
+        family = MonsterFamilyInfo(
             key="soldiers_and_fighters",
+            url="TEMP",
             name="Soldiers & Fighters",
             icon="favicon",
             tag_line="Battle-Hardened Warriors",
             monsters=monsters,
+            templates=templates,
         )
 
         assert family.key == "soldiers_and_fighters"
@@ -143,14 +180,17 @@ class TestMonsterFamilyModel:
         assert len(family.monsters) == 2
         assert family.monsters[0].name == "Guard"
         assert family.monsters[1].name == "Knight"
+        assert len(family.templates) == 2
+        assert family.templates[0].name == "Guard"
+        assert family.templates[1].name == "Knight"
 
 
 class TestMonsterFamilyLoading:
     """Test the monster family loading functionality."""
 
-    @patch("foe_foundry_data.families.load.Path.cwd")
+    @patch("foe_foundry_data.monster_families.data.Path.cwd")
     def test_load_families_finds_family_files(self, mock_cwd, tmp_path):
-        """Test that load_families finds and processes family markdown files."""
+        """Test that load_monster_families finds and processes family markdown files."""
         # Set up test directory structure
         docs_dir = tmp_path / "docs"
         families_dir = docs_dir / "families"
@@ -160,6 +200,8 @@ class TestMonsterFamilyLoading:
         family_content = """---
 title: Test Soldiers & Fighters | Foe Foundry
 short_title: Test Soldiers & Fighters
+icon: rally-the-troops
+tag_line: Test Battle-Hardened Warriors
 is_monster_family: true
 ---
 
@@ -190,24 +232,34 @@ is_monster_family: false
         mock_cwd.return_value = tmp_path
 
         # Mock the ref_resolver to avoid dependency issues
-        with patch("foe_foundry_data.families.load.ref_resolver") as mock_resolver:
+        with patch(
+            "foe_foundry_data.monster_families.data.ref_resolver"
+        ) as mock_resolver:
             # Mock the resolve_monster_ref method to return mock references
             mock_ref = type(
                 "MockRef",
                 (),
-                {"template": type("MockTemplate", (), {"key": "test_template"})()},
+                {
+                    "template": type(
+                        "MockTemplate", (), {"key": "test_template", "monsters": []}
+                    )()
+                },
             )()
             mock_resolver.resolve_monster_ref.return_value = mock_ref
 
             # Mock AllTemplates to return mock templates
             with patch(
-                "foe_foundry_data.families.load.AllTemplates"
+                "foe_foundry_data.monster_families.data.AllTemplates"
             ) as mock_all_templates:
                 mock_template = type(
                     "MockTemplate",
                     (),
                     {
                         "key": "test_template",
+                        "name": "Test Template",
+                        "tag_line": "Test Template Tagline",
+                        "primary_image_url": None,
+                        "create_date": datetime(2024, 1, 1),
                         "monsters": [
                             type(
                                 "MockMonster",
@@ -224,8 +276,8 @@ is_monster_family: false
                 )()
                 mock_all_templates.__iter__ = lambda x: iter([mock_template])
 
-                # Load families
-                families = load_families()
+                # Load families using the new system
+                families = load_monster_families()
 
         # Verify results
         assert len(families) == 1
@@ -238,7 +290,7 @@ is_monster_family: false
         assert len(family.monsters) == 2
 
     def test_load_families_validates_required_fields(self, tmp_path):
-        """Test that load_families validates required fields and raises appropriate errors."""
+        """Test that MonsterFamilies validates required fields and raises appropriate errors."""
         # Set up test directory structure
         docs_dir = tmp_path / "docs"
         families_dir = docs_dir / "families"
@@ -257,9 +309,11 @@ is_monster_family: true
         no_title_file = families_dir / "no_title.md"
         no_title_file.write_text(no_title_content)
 
-        with patch("foe_foundry_data.families.load.Path.cwd", return_value=tmp_path):
+        with patch(
+            "foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path
+        ):
             with pytest.raises(ValueError, match="Invalid title"):
-                load_families()
+                load_monster_families()
 
     def test_load_families_validates_tagline(self, tmp_path):
         """Test that load_families validates tagline presence."""
@@ -272,6 +326,7 @@ is_monster_family: true
         no_tagline_content = """---
 title: Test Family
 family_name: Test Family
+icon: test-icon
 is_monster_family: true
 ---
 
@@ -283,9 +338,11 @@ Regular content without italic tagline.
         no_tagline_file = families_dir / "no_tagline.md"
         no_tagline_file.write_text(no_tagline_content)
 
-        with patch("foe_foundry_data.families.load.Path.cwd", return_value=tmp_path):
-            with pytest.raises(ValueError, match="Tagline not found"):
-                load_families()
+        with patch(
+            "foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path
+        ):
+            with pytest.raises(ValueError, match="Tag line not found"):
+                load_monster_families()
 
     def test_load_families_validates_monster_references(self, tmp_path):
         """Test that load_families validates monster references."""
@@ -298,6 +355,8 @@ Regular content without italic tagline.
         invalid_ref_content = """---
 title: Test Family
 family_name: Test Family
+icon: test-icon
+tag_line: Test Tagline
 is_monster_family: true
 ---
 
@@ -311,8 +370,12 @@ is_monster_family: true
         invalid_ref_file = families_dir / "invalid_ref.md"
         invalid_ref_file.write_text(invalid_ref_content)
 
-        with patch("foe_foundry_data.families.load.Path.cwd", return_value=tmp_path):
-            with patch("foe_foundry_data.families.load.ref_resolver") as mock_resolver:
+        with patch(
+            "foe_foundry_data.monster_families.data.Path.cwd", return_value=tmp_path
+        ):
+            with patch(
+                "foe_foundry_data.monster_families.data.ref_resolver"
+            ) as mock_resolver:
                 # Mock resolver to return None for invalid references
                 mock_resolver.resolve_monster_ref.return_value = None
 
@@ -320,7 +383,7 @@ is_monster_family: true
                     ValueError,
                     match="Monster reference 'nonexistent' .* could not be resolved",
                 ):
-                    load_families()
+                    load_monster_families()
 
     @pytest.mark.integration
     def test_load_actual_soldiers_family(self):
