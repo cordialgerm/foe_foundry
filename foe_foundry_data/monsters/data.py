@@ -249,6 +249,26 @@ class MonsterModel:
                 color=monster_tag.color
             ))
         
+        # Add region tags from template environment information
+        from foe_foundry.environs import Region
+        from foe_foundry.environs.affinity import Affinity
+        from foe_foundry.tags.tags import MonsterTag
+        
+        if template and hasattr(template, 'environments') and template.environments:
+            for env, affinity in template.environments:
+                # Only add region tags for native and common affinities (not rare or unknown)
+                if isinstance(env, Region) and affinity in {Affinity.native, Affinity.common}:
+                    region_tag = MonsterTag.from_region(env)
+                    if region_tag.definition:  # Only add if the region tag is defined
+                        tag_infos.append(MonsterTagInfo(
+                            tag=region_tag.tag,
+                            key=region_tag.definition.key,
+                            tag_type=region_tag.tag_type,
+                            description=region_tag.description,
+                            icon=region_tag.icon,
+                            color=region_tag.color
+                        ))
+        
         # Sort tags by desired order: Creature Type, Role(s), Spellcaster, Tier, Legendary, Damage Type(s)
         def tag_sort_order(tag: MonsterTagInfo) -> tuple:
             type_priority = {
