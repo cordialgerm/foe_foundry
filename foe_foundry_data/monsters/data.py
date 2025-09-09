@@ -221,8 +221,8 @@ class MonsterModel:
                     key=key,
                     tag_type=monster_tag.tag_type,
                     description=monster_tag.description,
-                    icon=monster_tag.icon,
-                    color=monster_tag.color,
+                    icon=monster_tag.icon or "question.svg",  # Fallback for missing icons
+                    color=monster_tag.color or "#6B7280",  # Fallback for missing colors
                 )
             )
 

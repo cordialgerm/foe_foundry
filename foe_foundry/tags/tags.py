@@ -31,11 +31,11 @@ class MonsterTag:
         return f"Tag: {self.tag}"
     
     @property
-    def icon(self) -> Optional[str]:
+    def icon(self) -> str:
         """Get the tag icon filename"""
         if self.definition:
             return self.definition.icon
-        return None
+        return "question.svg"  # Default fallback icon
 
     @property
     def color(self) -> str:

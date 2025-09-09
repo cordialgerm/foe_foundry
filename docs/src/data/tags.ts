@@ -22,8 +22,6 @@ export interface MonsterInfo {
   tag_line?: string;
   tags?: TagInfo[];
 }
-  color?: string;
-}
 
 export class TagApi {
   /**
