@@ -13,8 +13,12 @@ router = APIRouter(prefix="/api/v1/tags")
 @router.get("/tag/{tag_name}")
 def get_tag(*, tag_name: str) -> TagInfoModel:
     """Get detailed information about a specific tag including example monsters"""
-    key = name_to_key(tag_name)
-    tag = Tags.TagLookup.get(key)
+    # Try direct lookup first (for keys like "tier_0")
+    tag = Tags.TagLookup.get(tag_name)
+    if tag is None:
+        # Try with name_to_key conversion (for names like "Tier 0" -> "tier-0")
+        key = name_to_key(tag_name)
+        tag = Tags.TagLookup.get(key)
     if tag is None:
         raise HTTPException(status_code=404, detail="Tag not found")
     return tag
