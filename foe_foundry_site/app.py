@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from foe_foundry_search import setup_indexes
 
 from .logconfig import setup_logging
-from .routes import catalog, monster_templates, monsters, powers, redirects, search, statblocks
+from .routes import catalog, monster_templates, monsters, powers, pretty_monsters, redirects, search, statblocks
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -54,6 +54,12 @@ app.include_router(search.router)
 app.include_router(catalog.router)
 
 site_dir = Path(__file__).parent.parent / "site"
+
+# Store site_dir on app.state for access in route handlers
+app.state.site_dir = site_dir
+
+# Include pretty monster router BEFORE static site mount
+app.include_router(pretty_monsters.router)
 
 # Mounts the static site folder create by mkdocs
 app.mount("/", StaticFiles(directory=site_dir, html=True), name="site")
