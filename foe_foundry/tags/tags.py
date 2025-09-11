@@ -5,11 +5,17 @@ from typing import Optional
 
 from foe_foundry.creature_types import CreatureType
 from foe_foundry.damage import DamageType
-from foe_foundry.environs import Biome, Development, ExtraplanarInfluence, Region, Terrain
+from foe_foundry.environs import (
+    Biome,
+    Development,
+    ExtraplanarInfluence,
+    Region,
+    Terrain,
+)
 from foe_foundry.features import ActionType
 from foe_foundry.power_types import PowerType
 from foe_foundry.role_types import MonsterRole
-from foe_foundry.size import Size
+
 from .definitions import TagDefinition, get_tag_definition
 
 
@@ -17,19 +23,19 @@ from .definitions import TagDefinition, get_tag_definition
 class MonsterTag:
     tag: str
     tag_type: str
-    
+
     @property
     def definition(self) -> Optional[TagDefinition]:
         """Get the full tag definition with description and icon"""
         return get_tag_definition(self.tag.lower().replace(" ", "_"))
-    
+
     @property
     def description(self) -> str:
         """Get the tag description"""
         if self.definition:
             return self.definition.description
         return f"Tag: {self.tag}"
-    
+
     @property
     def icon(self) -> str:
         """Get the tag icon filename"""

@@ -1,6 +1,8 @@
 [
     {
         "name": "Ambusher",
+        "icon": "ninja-mask.svg",
+        "color": "#84CC16",
         "short_description": "Ambushers use stealth and hit-and-run tactics, striking from hiding and evading retaliation.",
         "description": "Ambushers have special features that allow them to hide, dart out of danger, or render targets senseless, making them hard to attack. They often deal more damage when hidden and rely on a pattern of hiding, attacking, and hiding again. Ambushers are less effective when forced into the open and usually have low hit points.",
         "example_monsters": [
@@ -14,6 +16,8 @@
     },
     {
         "name": "Skirmisher",
+        "icon": "running-ninja.svg",
+        "color": "#22C55E",
         "short_description": "Skirmishers use high mobility to attack and retreat, drawing characters across the battlefield.",
         "description": "Skirmishers dance around the battlefield, using high mobility to dart in for attacks and then get away. They may have lower AC or hit points but possess features to evade blows and retreat. Skirmishers are usually accurate and deal high damage when using their mobility features.",
         "example_monsters": [
@@ -28,6 +32,8 @@
     },
     {
         "name": "Artillery",
+        "icon": "crossbow.svg",
+        "color": "#EF4444",
         "short_description": "Artillery monsters deal high damage at range but are fragile and best kept behind cover.",
         "description": "Artillery have a high attack bonus and deal good damage at range, but have lower hit points or AC. They create tension early in encounters and encourage players to reach and defeat them quickly. Artillery focus fire, seek cover, and often target characters who usually stay out of trouble.",
         "example_monsters": [
@@ -43,6 +49,8 @@
     },
     {
         "name": "Controller",
+        "icon": "magic-portal.svg",
+        "color": "#A855F7",
         "short_description": "Controllers use powers to impose conditions and impede characters' effectiveness.",
         "description": "Controllers use attacks and features to impose conditions or otherwise impede characters. They may grapple, restrain, or use magic to limit actions. Controllers create dilemmas for the party and work best when not overused or too punishing.",
         "example_monsters": [
@@ -54,6 +62,8 @@
     },
     {
         "name": "Bruiser",
+        "icon": "muscle-up.svg",
+        "color": "#DC2626",
         "short_description": "Bruisers deal high melee damage but are often easy to hit or have low defenses.",
         "description": "Bruisers focus on dealing higher-than-average melee damage, often with lower AC, accuracy, or hit points. They draw attention with their damage and make fun opponents because they're easy to hit or die quickly. Bruisers are best used to surprise players with impressive damage.",
         "example_monsters": [
@@ -70,6 +80,8 @@
     },
     {
         "name": "Defender",
+        "icon": "shield.svg",
+        "color": "#3B82F6",
         "short_description": "Defenders soak up hits and protect allies, often with high AC and hit points.",
         "description": "Defenders have high AC, saving throws, and hit points, but deal less damage. They protect other creatures, draw attention, and are best used sparingly to avoid making combats too long. Defenders excel at protecting key villains or vulnerable allies.",
         "example_monsters": [
@@ -84,6 +96,8 @@
     },
     {
         "name": "Soldier",
+        "icon": "crossed-swords.svg",
+        "color": "#6B7280",
         "short_description": "Soldiers are balanced foes with reasonable offense and defense, often working in groups.",
         "description": "Soldiers are the bread and butter of organized opposition, with balanced offensive and defensive capabilities. They showcase organization, training, and coordination, and are best used as front-line foes in encounters with intelligent enemies.",
         "example_monsters": [
@@ -99,6 +113,8 @@
     },
     {
         "name": "Leader",
+        "icon": "crown.svg",
+        "color": "#C29A5B",
         "short_description": "Leaders organize and command other creatures, often acting as bosses or lieutenants.",
         "description": "Leaders have features that organize and command allies, and are often boss or legendary creatures. They are most interesting when used sparingly in set-piece encounters and should be protected by defenders or other creatures.",
         "example_monsters": [
@@ -114,6 +130,8 @@
     },
     {
         "name": "Support",
+        "icon": "mailed-fist.svg",
+        "color": "#A855F7",
         "short_description": "Support creatures aid and bolster allies, often with healing or beneficial effects.",
         "description": "Support creatures have abilities designed to aid and bolster allies, including healing and other beneficial effects. They should be used sparingly and as part of a larger group, often supporting soldiers and bruisers from behind the front line.",
         "example_monsters": [

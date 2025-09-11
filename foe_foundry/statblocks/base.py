@@ -99,9 +99,6 @@ class BaseStatblock:
     legendary_actions: int = 0
     legendary_resistances: int = 0
     legendary_resistance_damage_taken: int = 0
-    
-    # Tags
-    tags: List[MonsterTag] = field(default_factory=list)
 
     def __post_init__(self):
         mod = (
@@ -118,10 +115,6 @@ class BaseStatblock:
         )
 
         self.xp = xp_by_cr(self.cr)
-        
-        # Auto-generate tags if none were provided
-        if not self.tags:
-            self.tags = self._generate_tags_from_properties()
 
     @property
     def key(self) -> str:
@@ -763,69 +756,85 @@ class BaseStatblock:
         new_flags.update(flags)
         return self.copy(flags=new_flags)
 
-    def _generate_tags_from_properties(self) -> List[MonsterTag]:
+    @property
+    def tags(self) -> List[MonsterTag]:
         """Generate tags automatically from monster statblock properties"""
         tags = []
-        
+
         # 1. Creature Type tags (avoid duplicates)
         creature_types = set()
         creature_types.add(self.creature_type)
         creature_types.update(self.additional_types)
-        
+
         for creature_type in creature_types:
             tags.append(MonsterTag.from_creature_type(creature_type))
-        
+
         # 2. Species tag for humanoids and known species (right after creature type)
         if self.species_key and self.species_key != "human":
             # Use species tag for specific races/species
             tags.append(MonsterTag.from_species(self.species_key))
         elif self.creature_type == CreatureType.Humanoid and self.monster_key:
-            # For humanoid NPCs, try to extract species from monster key  
-            species_name = self.monster_key.split('_')[0].lower()
+            # For humanoid NPCs, try to extract species from monster key
+            species_name = self.monster_key.split("_")[0].lower()
             known_species = {
-                'orc', 'elf', 'dwarf', 'halfling', 'gnome', 'goblin', 'hobgoblin', 
-                'bugbear', 'kobold', 'lizardfolk', 'tabaxi', 'kenku', 'yuan_ti',
-                'dragonborn', 'tiefling', 'half_elf', 'half_orc'
+                "orc",
+                "elf",
+                "dwarf",
+                "halfling",
+                "gnome",
+                "goblin",
+                "hobgoblin",
+                "bugbear",
+                "kobold",
+                "lizardfolk",
+                "tabaxi",
+                "kenku",
+                "yuan_ti",
+                "dragonborn",
+                "tiefling",
+                "half_elf",
+                "half_orc",
             }
             if species_name in known_species:
                 tags.append(MonsterTag.from_species(species_name))
-        
+
         # 3. Role tags
         tags.append(MonsterTag.from_role(self.role))
         for additional_role in self.additional_roles:
             tags.append(MonsterTag.from_role(additional_role))
-        
+
         # 4. Spellcaster tag if has spellcasting
         if self.caster_type is not None:
             tags.append(MonsterTag(tag="spellcaster", tag_type="theme"))
-        
+
         # 5. CR Tier tag
         tags.append(MonsterTag.from_cr(self.cr))
-        
+
         # 6. Legendary tag if legendary
         if self.is_legendary:
             tags.append(MonsterTag.legendary())
-        
+
         # 7. Damage Type tags from attacks (excluding physical damage types)
         damage_types = set()
         damage_types.add(self.primary_damage_type)
         if self.secondary_damage_type:
             damage_types.add(self.secondary_damage_type)
-        
+
         # Add damage types from additional attacks
         for attack in self.additional_attacks:
-            if hasattr(attack, 'damage_type'):
-                damage_types.add(attack.damage_type)
-        
+            damage_types.add(attack.damage.damage_type)
+
         # Filter out physical damage types (bludgeoning, piercing, slashing) as they're not useful tags
         non_physical_damage_types = [
-            dt for dt in damage_types 
-            if dt not in {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}
+            dt
+            for dt in damage_types
+            if dt
+            not in {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}
         ]
-        
+
         for damage_type in non_physical_damage_types:
             tags.append(MonsterTag.from_damage_type(damage_type))
-        
+
         return tags
 
     def create_rng(self, salt: str = "") -> np.random.Generator:

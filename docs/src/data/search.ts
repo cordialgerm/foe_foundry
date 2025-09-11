@@ -1,4 +1,3 @@
-// Import TagInfo from tags.ts instead of defining MonsterTagInfo
 import { TagInfo } from './tags';
 
 // MonsterInfo type matching backend MonsterInfoModel

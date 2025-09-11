@@ -138,6 +138,10 @@ async function loadAndCleanSVG(src: string, fillValue: string = 'currentColor'):
       // Assume it's an icon name and convert to URL
       url = `/img/icons/${src}.svg`;
     }
+    // if it's the just the name of an icon but without a filepath, convert it as well like "hello.svg" should be "/img/icons/hello.svg"
+    else if (!url.includes('/') && url.endsWith('.svg')) {
+      url = `/img/icons/${url}`;
+    }
 
     if (svgCache.has(url)) {
       // Use cached SVG content
