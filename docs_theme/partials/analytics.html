@@ -111,7 +111,7 @@
             initializeCookieConsent();
         } else {
             // Geo-targeting: Only show consent banner in GDPR regions
-            fetch("https://ipapi.co/json/")
+            fetch("/api/v1/geo/location")
                 .then(res => res.json())
                 .then(data => {
                     const gdprCountries = [

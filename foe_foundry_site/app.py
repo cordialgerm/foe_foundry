@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from foe_foundry_search import setup_indexes
 
 from .logconfig import setup_logging
-from .routes import monsters, powers, redirects, search, statblocks
+from .routes import geo, monsters, powers, redirects, search, statblocks
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -34,6 +34,9 @@ origins = [
     "http://localhost:8080",
     "http://localhost:3000",
     "http://localhost:3001",
+    "https://foe-foundry-stage.onrender.com",
+    "https://foe-foundry.com",
+    "https://www.foe-foundry.com",
 ]
 
 app.add_middleware(
@@ -50,6 +53,8 @@ app.include_router(powers.router)
 app.include_router(statblocks.router)
 app.include_router(monsters.router)
 app.include_router(search.router)
+
+app.include_router(geo.router)
 
 site_dir = Path(__file__).parent.parent / "site"
 
