@@ -4,8 +4,6 @@ from datetime import datetime
 from functools import cached_property
 from pathlib import Path
 
-from foe_foundry.utils.env import get_base_url
-
 from ..base import MonsterFamilyInfo
 from .data import load_monster_families
 
@@ -53,7 +51,9 @@ class _MonsterFamilyCache:
 
                     # Convert ISO datetime strings back to datetime objects for templates
                     for template_data in data.get("templates", []):
-                        if "create_date" in template_data and isinstance(template_data["create_date"], str):
+                        if "create_date" in template_data and isinstance(
+                            template_data["create_date"], str
+                        ):
                             template_data["create_date"] = datetime.fromisoformat(
                                 template_data["create_date"]
                             )
