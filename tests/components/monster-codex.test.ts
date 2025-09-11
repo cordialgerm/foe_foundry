@@ -22,8 +22,32 @@ class MockMonsterSearchApi {
   async searchMonsters(request?: any) {
     return {
       monsters: [
-        { key: 'red-dragon', name: 'Red Dragon', cr: 17, creature_type: 'Dragon', tag_line: 'Fire-breathing terror', background_image: '', monsterFamilies: ['Chromatic'] },
-        { key: 'zombie', name: 'Zombie', cr: 1, creature_type: 'Undead', tag_line: 'Mindless undead', background_image: '', monsterFamilies: ['Corpse'] }
+        { 
+          key: 'red-dragon', 
+          name: 'Red Dragon', 
+          cr: 17, 
+          creature_type: 'Dragon', 
+          tag_line: 'Fire-breathing terror', 
+          background_image: '', 
+          monsterFamilies: ['Chromatic'],
+          tags: [
+            { key: 'dragon', tag: 'Dragon', name: 'Dragon', description: 'Ancient magical creature', icon: 'dragon.svg', color: '#ff3737', category: 'creature_type', example_monsters: [] },
+            { key: 'artillery', tag: 'Artillery', name: 'Artillery', description: 'Long-range attacker', icon: 'target.svg', color: '#28a745', category: 'monster_role', example_monsters: [] }
+          ]
+        },
+        { 
+          key: 'zombie', 
+          name: 'Zombie', 
+          cr: 1, 
+          creature_type: 'Undead', 
+          tag_line: 'Mindless undead', 
+          background_image: '', 
+          monsterFamilies: ['Corpse'],
+          tags: [
+            { key: 'undead', tag: 'Undead', name: 'Undead', description: 'Formerly living creature', icon: 'skull.svg', color: '#6c757d', category: 'creature_type', example_monsters: [] },
+            { key: 'soldier', tag: 'Soldier', name: 'Soldier', description: 'Basic combatant', icon: 'sword.svg', color: '#17a2b8', category: 'monster_role', example_monsters: [] }
+          ]
+        }
       ],
       facets: await this.getFacets(),
       total: 2
@@ -185,7 +209,7 @@ describe('MonsterCodex Component', () => {
     if (!rows || rows.length === 0) return;
     const firstRow = rows[0] as HTMLElement;
     expect(firstRow.querySelector('.monster-name')?.textContent).to.exist;
-    const tags = firstRow.querySelectorAll('.monster-tag');
+    const tags = firstRow.querySelectorAll('.monster-tag-icon');
     expect(tags.length).to.be.greaterThan(0);
     const actions = firstRow.querySelectorAll('.monster-action-btn');
     expect(actions.length).to.be.greaterThan(0);
