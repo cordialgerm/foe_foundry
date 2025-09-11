@@ -19,7 +19,7 @@ from ..senses import Senses
 from ..size import Size
 from ..skills import AbilityScore
 from ..spells import CasterType, StatblockSpell
-from ..tags.tags import MonsterTag
+from ..tags import TagDefinition
 from ..utils import easy_multiple_of_five
 from ..xp import xp_by_cr
 from .dials import MonsterDials
@@ -757,7 +757,7 @@ class BaseStatblock:
         return self.copy(flags=new_flags)
 
     @property
-    def tags(self) -> List[MonsterTag]:
+    def tags(self) -> List[TagDefinition]:
         """Generate tags automatically from monster statblock properties"""
         tags = []
 
@@ -767,15 +767,15 @@ class BaseStatblock:
         creature_types.update(self.additional_types)
 
         for creature_type in creature_types:
-            tags.append(MonsterTag.from_creature_type(creature_type))
+            tags.append(TagDefinition.from_creature_type(creature_type))
 
         # 2. Species tag for humanoids and known species (right after creature type)
         if self.species_key and self.species_key != "human":
             # Use species tag for specific races/species
-            tags.append(MonsterTag.from_species(self.species_key))
+            tags.append(TagDefinition.from_species(self.species_key))
         elif self.creature_type == CreatureType.Humanoid and self.monster_key:
             # For humanoid NPCs, try to extract species from monster key
-            species_name = self.monster_key.split("_")[0].lower()
+            species_name = self.monster_key.split("-")[0].lower()
             known_species = {
                 "orc",
                 "elf",
@@ -796,23 +796,23 @@ class BaseStatblock:
                 "half_orc",
             }
             if species_name in known_species:
-                tags.append(MonsterTag.from_species(species_name))
+                tags.append(TagDefinition.from_species(species_name))
 
         # 3. Role tags
-        tags.append(MonsterTag.from_role(self.role))
+        tags.append(TagDefinition.from_role(self.role))
         for additional_role in self.additional_roles:
-            tags.append(MonsterTag.from_role(additional_role))
+            tags.append(TagDefinition.from_role(additional_role))
 
         # 4. Spellcaster tag if has spellcasting
         if self.caster_type is not None:
-            tags.append(MonsterTag(tag="spellcaster", tag_type="theme"))
+            tags.append(TagDefinition.spellcaster())
 
         # 5. CR Tier tag
-        tags.append(MonsterTag.from_cr(self.cr))
+        tags.append(TagDefinition.from_cr(self.cr))
 
         # 6. Legendary tag if legendary
         if self.is_legendary:
-            tags.append(MonsterTag.legendary())
+            tags.append(TagDefinition.legendary())
 
         # 7. Damage Type tags from attacks (excluding physical damage types)
         damage_types = set()
@@ -833,7 +833,7 @@ class BaseStatblock:
         ]
 
         for damage_type in non_physical_damage_types:
-            tags.append(MonsterTag.from_damage_type(damage_type))
+            tags.append(TagDefinition.from_damage_type(damage_type))
 
         return tags
 

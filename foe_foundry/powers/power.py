@@ -8,7 +8,7 @@ from ..features import Feature
 from ..power_types import PowerType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
-from ..tags.tags import MonsterTag
+from ..tags import TagDefinition
 from ..utils import name_to_key
 from .flags import theme_flag
 from .power_category import PowerCategory
@@ -80,88 +80,35 @@ class Power(ABC):
         return name_to_key(self.theme) if self.theme is not None else None
 
     @property
-    def tags(self) -> List[MonsterTag]:
+    def tags(self) -> List[TagDefinition]:
         """Generate tags automatically from power properties"""
         tags = []
 
         # Add power type tags
         if self.power_types:
             for power_type in self.power_types:
-                tags.append(MonsterTag.from_power_type(power_type))
+                tags.append(TagDefinition.from_power_type(power_type))
 
         # Add creature type tags
         if self.creature_types:
             for creature_type in self.creature_types:
-                tags.append(MonsterTag.from_creature_type(creature_type))
+                tags.append(TagDefinition.from_creature_type(creature_type))
 
         # Add damage type tags
         if self.damage_types:
             for damage_type in self.damage_types:
-                tags.append(MonsterTag.from_damage_type(damage_type))
+                tags.append(TagDefinition.from_damage_type(damage_type))
 
         # Add role tags
         if self.roles:
             for role in self.roles:
-                tags.append(MonsterTag.from_role(role))
+                tags.append(TagDefinition.from_role(role))
 
         # Add theme tag
         if self.theme:
-            tags.append(MonsterTag.from_theme(self.theme))
-
-            # Add additional tags based on theme patterns
-            additional_tags = self._get_additional_tags_for_theme(self.theme)
-            tags.extend(additional_tags)
+            tags.append(TagDefinition.from_theme(self.theme))
 
         return tags
-
-    def _get_additional_tags_for_theme(self, theme: str) -> List[MonsterTag]:
-        """Get additional tags based on theme patterns"""
-        additional_tags = []
-        theme_lower = theme.lower()
-
-        # Environment tags for environment-related themes
-        environment_themes = {
-            "aquatic": "ocean",
-            "earthy": "underground",
-            "icy": "arctic",
-            "storm": "plain",  # storms often occur on plains/open areas
-            "flying": "mountain",  # flying creatures often found in mountains
-        }
-
-        if theme_lower in environment_themes:
-            # Create environment tag (would need to add method to MonsterTag)
-            # For now, create as theme tag with environment type
-            env = environment_themes[theme_lower]
-            additional_tags.append(MonsterTag(tag=env, tag_type="environment"))
-
-        # Spellcaster magic school tags - these should get spellcaster_magic type
-        spellcaster_themes = {
-            "celestial",
-            "conjurer",
-            "cult",
-            "divination",
-            "druidic",
-            "elementalist",
-            "enchanter",
-            "fiendish",
-            "illusionist",
-            "magic",
-            "metamagic",
-            "necromancer",
-            "oath",
-            "psionic",
-            "shaman",
-            "transmuter",
-        }
-
-        if theme_lower in spellcaster_themes:
-            # Add spellcaster magic type tag
-            magic_theme = f"{theme_lower}_magic"
-            additional_tags.append(
-                MonsterTag(tag=magic_theme, tag_type="spellcaster_magic")
-            )
-
-        return additional_tags
 
     @abstractmethod
     def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:

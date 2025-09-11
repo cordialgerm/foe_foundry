@@ -5,10 +5,22 @@ This module defines all available tags with their names, descriptions, and icons
 Each tag category is organized into its own section for easy maintenance.
 """
 
+from __future__ import annotations
+
 import json
 import os
 from dataclasses import dataclass
-from typing import Dict, List, Optional
+from typing import Dict, List
+
+from foe_foundry.creature_types import CreatureType
+from foe_foundry.damage import DamageType
+from foe_foundry.environs import (
+    Region,
+)
+from foe_foundry.features import ActionType
+from foe_foundry.power_types import PowerType
+from foe_foundry.role_types import MonsterRole
+from foe_foundry.utils import name_to_key
 
 from ..environs.region import (
     BlastedBadlands,
@@ -44,7 +56,66 @@ class TagDefinition:
     @property
     def key(self) -> str:
         """Returns a normalized key for the tag"""
-        return self.name.lower().replace(" ", "_")
+        return name_to_key(self.name)
+
+    @staticmethod
+    def from_creature_type(ct: CreatureType) -> TagDefinition:
+        return get_tag_definition(ct.value)
+
+    @staticmethod
+    def from_role(role: MonsterRole) -> TagDefinition:
+        return get_tag_definition(role.value)
+
+    @staticmethod
+    def legendary() -> TagDefinition:
+        return get_tag_definition("legendary")
+
+    @staticmethod
+    def spellcaster() -> TagDefinition:
+        return get_tag_definition("spellcaster")
+
+    @staticmethod
+    def from_region(region: Region) -> TagDefinition:
+        return get_tag_definition(region.name)
+
+    @staticmethod
+    def from_action_type(action_type: ActionType) -> TagDefinition:
+        return get_tag_definition(action_type.value)
+
+    @staticmethod
+    def from_damage_type(damage_type: DamageType) -> TagDefinition:
+        return get_tag_definition(damage_type.value)
+
+    @staticmethod
+    def from_cr(cr: float) -> TagDefinition:
+        # Tier 0 is level 1 -> CR 0, 1/8, 1/4, 1/2
+        # Tier 1 is level 2-4 -> CR 1 - 3
+        # Tier 2 is level 5-9 -> CR 4 - 12
+        # Tier 3 is level 10-14 -> CR 13 - 19
+        # Tier 4 is level 15-20 -> CR 20+
+
+        if cr < 1:
+            return get_tag_definition("Tier 0")
+        elif cr < 4:
+            return get_tag_definition("Tier 1")
+        elif cr < 13:
+            return get_tag_definition("Tier 2")
+        elif cr < 20:
+            return get_tag_definition("Tier 3")
+        else:
+            return get_tag_definition("Tier 4")
+
+    @staticmethod
+    def from_species(species: str) -> TagDefinition:
+        return get_tag_definition(species)
+
+    @staticmethod
+    def from_theme(theme: str) -> TagDefinition:
+        return get_tag_definition(theme)
+
+    @staticmethod
+    def from_power_type(power_type: PowerType) -> TagDefinition:
+        return get_tag_definition(power_type.name)
 
 
 def _load_creature_type_tags() -> List[TagDefinition]:
@@ -138,6 +209,13 @@ CR_TIER_TAGS = [
         "level-four.svg",
         "cr_tier",
         "#A16207",
+    ),
+    TagDefinition(
+        "Legendary",
+        "Legendary monsters are great boss monsters",
+        "throne-king.svg",
+        "cr_tier",
+        "#FFC107",
     ),
 ]
 
@@ -401,13 +479,6 @@ THEMATIC_POWER_TAGS = [
         "sneaky", "Stealth and subterfuge powers", "ninja-mask.svg", "theme", "#374151"
     ),
     TagDefinition(
-        "spellcaster",
-        "Magical spellcasting abilities",
-        "wizard-staff.svg",
-        "theme",
-        "#7C3AED",
-    ),
-    TagDefinition(
         "storm", "Weather and storm powers", "lightning-storm.svg", "theme", "#06B6D4"
     ),
     TagDefinition(
@@ -441,6 +512,13 @@ THEMATIC_POWER_TAGS = [
 
 # Spellcaster Theme Tags
 SPELLCASTER_THEME_TAGS = [
+    TagDefinition(
+        "spellcaster",
+        "Spellcasting, either innate or learned",
+        "spellbook.svg",
+        "spellcaster_theme",
+        "#0231B3",
+    ),
     TagDefinition(
         "celestial_magic",
         "Celestial divine magic",
@@ -619,9 +697,13 @@ for tag in ALL_TAG_DEFINITIONS:
     TAG_DEFINITIONS_BY_CATEGORY[tag.category].append(tag)
 
 
-def get_tag_definition(tag_key: str) -> Optional[TagDefinition]:
+def get_tag_definition(tag_name_or_key: str) -> TagDefinition:
     """Get a tag definition by its key"""
-    return TAG_DEFINITIONS_BY_KEY.get(tag_key)
+    tag_key = name_to_key(tag_name_or_key)
+    tag = TAG_DEFINITIONS_BY_KEY.get(tag_key)
+    if tag is None:
+        raise ValueError(f"Tag '{tag_key}' not found in definitions.")
+    return tag
 
 
 def get_tags_by_category(category: str) -> List[TagDefinition]:

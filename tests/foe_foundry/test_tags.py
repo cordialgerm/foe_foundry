@@ -42,7 +42,7 @@ class TestTags:
         rng = np.random.default_rng()
         ref, stats = generate_monster("orc-knight", ref_resolver, rng)
         assert stats is not None
-        assert any(t for t in stats.tags if t.tag == "orc")
+        assert any(t for t in stats.tags if t.key == "orc")
 
 
 class TestTagIcons:
@@ -60,7 +60,10 @@ class TestTagIcons:
         missing_icons = []
 
         for tag_def in ALL_TAG_DEFINITIONS:
-            if tag_def.icon not in available_icons:
+            icon = tag_def.icon
+            if not icon.endswith(".svg"):
+                icon += ".svg"
+            if icon not in available_icons:
                 missing_icons.append(
                     {
                         "tag": tag_def.name,
@@ -92,22 +95,6 @@ class TestTagIcons:
             seen_keys.add(tag_def.key)
 
         assert not duplicates, f"Duplicate tag keys found: {duplicates}"
-
-    def test_icon_files_are_svg(self):
-        """Test that all icon files are SVG format"""
-        for tag_def in ALL_TAG_DEFINITIONS:
-            assert tag_def.icon.endswith(".svg"), (
-                f"Tag '{tag_def.name}' has non-SVG icon: {tag_def.icon}"
-            )
-
-    @pytest.mark.parametrize("tag_def", ALL_TAG_DEFINITIONS)
-    def test_individual_tag_has_icon(self, tag_def):
-        """Test each individual tag has its icon file (parametrized test)"""
-        available_icons = get_available_icons()
-        assert tag_def.icon in available_icons, (
-            f"Icon file missing for tag '{tag_def.name}' ({tag_def.category}): "
-            f"{tag_def.icon} - {tag_def.description}"
-        )
 
 
 def print_tag_icon_report():

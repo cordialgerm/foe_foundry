@@ -15,7 +15,10 @@ from foe_foundry.creatures import (
     MonsterVariant,
     TemplatesByKey,
 )
+from foe_foundry.environs import Region
+from foe_foundry.environs.affinity import Affinity
 from foe_foundry.statblocks import Statblock
+from foe_foundry.tags import TagDefinition
 from foe_foundry.utils import name_to_key
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
 from foe_foundry.utils.image import (
@@ -210,26 +213,16 @@ class MonsterModel:
         tag_infos = []
         for monster_tag in stats.tags:
             # Get key from definition if available, otherwise derive from tag name
-            key = (
-                monster_tag.definition.key
-                if monster_tag.definition
-                else monster_tag.tag.lower().replace(" ", "_")
-            )
             tag_infos.append(
                 MonsterTagInfo(
-                    tag=monster_tag.tag,
-                    key=key,
-                    tag_type=monster_tag.tag_type,
+                    tag=monster_tag.name,
+                    key=monster_tag.key,
+                    tag_type=monster_tag.category,
                     description=monster_tag.description,
-                    icon=monster_tag.icon or "question.svg",  # Fallback for missing icons
-                    color=monster_tag.color or "#6B7280",  # Fallback for missing colors
+                    icon=monster_tag.icon,
+                    color=monster_tag.color,
                 )
             )
-
-        # Add region tags from template environment information
-        from foe_foundry.environs import Region
-        from foe_foundry.environs.affinity import Affinity
-        from foe_foundry.tags.tags import MonsterTag
 
         if template and hasattr(template, "environments") and template.environments:
             for env, affinity in template.environments:
@@ -238,29 +231,28 @@ class MonsterModel:
                     Affinity.native,
                     Affinity.common,
                 }:
-                    region_tag = MonsterTag.from_region(env)
-                    if region_tag.definition:  # Only add if the region tag is defined
-                        tag_infos.append(
-                            MonsterTagInfo(
-                                tag=region_tag.tag,
-                                key=region_tag.definition.key,
-                                tag_type=region_tag.tag_type,
-                                description=region_tag.description,
-                                icon=region_tag.icon,
-                                color=region_tag.color,
-                            )
+                    region_tag = TagDefinition.from_region(env)
+                    tag_infos.append(
+                        MonsterTagInfo(
+                            tag=region_tag.name,
+                            key=region_tag.key,
+                            tag_type=region_tag.category,
+                            description=region_tag.description,
+                            icon=region_tag.icon,
+                            color=region_tag.color,
                         )
+                    )
 
         # Sort tags by desired order: Creature Type, Role(s), Spellcaster, Tier, Legendary, Damage Type(s)
         def tag_sort_order(tag: MonsterTagInfo) -> tuple:
             type_priority = {
                 "creature_type": 1,
-                "monster_role": 2,
-                "theme": 3,  # spellcaster themes
-                "cr_tier": 4,
-                "legendary": 5,
-                "damage_type": 6,
-                "species": 7,
+                "species": 2,
+                "monster_role": 3,
+                "theme": 4,
+                "cr_tier": 5,
+                "legendary": 6,
+                "damage_type": 7,
                 "region": 8,
             }
             # Get priority, default to 9 for unknown types
