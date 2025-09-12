@@ -152,19 +152,19 @@ export class SearchBar extends LitElement {
       }
 
       .search-input-container {
-        flex-direction: column;
-        gap: 0.875rem;
+        gap: 0.5rem; /* Keep horizontal layout but reduce gap */
       }
 
       .search-input {
-        padding: 1rem;
+        padding: 0.875rem 1rem;
         font-size: 1rem;
+        min-width: 0; /* Allow the input to shrink properly */
       }
 
       .search-button {
-        padding: 1rem;
+        padding: 0.875rem 1rem;
         font-size: 1rem;
-        justify-content: center;
+        flex-shrink: 0; /* Prevent button from shrinking */
       }
 
       .search-seeds {

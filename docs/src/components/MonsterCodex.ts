@@ -75,7 +75,6 @@ export class MonsterCodex extends LitElement {
     :host {
       --border-color: var(--fg-color);
       display: block;
-      height: 100%;
       min-height: 100vh;
     }
 
@@ -93,7 +92,7 @@ export class MonsterCodex extends LitElement {
       .codex-container {
         display: grid;
         grid-template-columns: 340px 1fr 400px;
-        height: 100vh;
+        min-height: 100vh;
         gap: 0;
       }
 
@@ -1247,7 +1246,7 @@ export class MonsterCodex extends LitElement {
                 <span class="monster-tag-icon"
                       title="${tag.description}"
                       style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};"
-                      @click=${(e: Event) => this.handleTagClick(e, tag.key || tag.tag)}>
+                      @click=${(e: Event) => this.handleTagClick(e, tag.key)}>
                   ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
                 </span>
               `) : ''}

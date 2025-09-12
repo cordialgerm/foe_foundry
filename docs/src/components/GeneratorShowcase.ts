@@ -67,14 +67,23 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         }
 
         .showcase-container {
-            padding: 2rem 1rem; /* Reduced padding on mobile */
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .inner-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 2rem;
-            position: relative; /* Fix sticky header issues */
+            padding: 1rem;
         }
 
         .showcase-controls {
@@ -88,14 +97,18 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             font-family: var(--header-font);
             font-size: 1.5rem;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             text-align: center;
+            line-height: 1.2;
         }
 
         .instructions {
             color: var(--bg-color);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             text-align: center;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            padding: 0 0.5rem;
         }
 
         #showcase-statblock.hidden {
@@ -110,10 +123,10 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         .timer-container {
             margin-top: 1rem;
             width: 100%;
-            max-width: 300px;
+            max-width: 280px;
             text-align: center;
             cursor: pointer;
-            padding-bottom: 20px;
+            padding-bottom: 10px; /* Reduced bottom padding */
         }
 
         .timer-message {
@@ -145,9 +158,16 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         .search-interface-description {
             color: var(--bg-color);
             font-size: 0.9rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             text-align: center;
             opacity: 0.8;
+            padding: 0 0.5rem;
+        }
+
+        .search-interface {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
         }
 
         .search-interface search-bar {
@@ -158,50 +178,44 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
         /* Mobile responsiveness improvements */
         @media (max-width: 768px) {
-            .showcase-container {
-                padding: 1.5rem 0.75rem; /* Further reduced padding for mobile */
-            }
-            
-            .lead {
-                font-size: 1.25rem; /* Smaller font size on mobile */
-                margin-bottom: 0.75rem;
-            }
-            
+
             .instructions {
                 font-size: 0.9rem; /* Smaller instructions text */
-                margin-bottom: 0.75rem;
-                padding: 0 0.5rem;
+                margin-bottom: 1.25rem;
+                padding: 0 0.25rem;
             }
-            
+
             .search-interface {
                 width: 100%;
                 max-width: none; /* Remove max-width constraints on mobile */
             }
-            
+
             .search-interface-description {
                 font-size: 0.85rem;
-                margin-bottom: 0.75rem;
-                padding: 0 0.5rem;
+                margin-bottom: 0.5rem;
+                padding: 0 0.25rem;
             }
-            
+
             .showcase-controls {
                 gap: 0.375rem; /* Reduced gap between buttons */
                 padding: 0.375rem;
                 flex-wrap: wrap; /* Allow wrapping on very small screens */
             }
+
+            .timer-container {
+                max-width: 260px; /* Smaller timer on mobile */
+                padding-bottom: 5px;
+            }
         }
 
         @media (max-width: 480px) {
-            .showcase-container {
-                padding: 1rem 0.5rem; /* Minimal padding for very small screens */
-            }
-            
-            .lead {
-                font-size: 1.125rem;
-            }
-            
+
             .instructions {
                 font-size: 0.8rem;
+            }
+
+            .timer-container {
+                max-width: 240px;
             }
         }
 
@@ -393,48 +407,48 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
         return html`
             <div class="showcase-container bg-object scroll">
-                <span class="lead">Summon Your First Foe</span>
-                 <div class="search-interface">
-                    <div class="search-interface-description">Find the perfect foe for your campaign:</div>
-                    <search-bar
-                        placeholder="Search for undead, fiends, dragons..."
-                        button-text="Search"
-                        mode="event"
-                        seeds="${this.seedCount}"
-                        analytics-surface="generator-showcase">
-                    </search-bar>
-                </div>
+                <div class="inner-container">
+                    <span class="lead">Summon Your First Foe</span>
+                    <div class="search-interface">
+                        <div class="search-interface-description">Find the perfect foe for your campaign:</div>
+                        <search-bar
+                            placeholder="Search for undead, fiends, dragons..."
+                            button-text="Search"
+                            mode="event"
+                            seeds="${this.seedCount}"
+                            analytics-surface="generator-showcase">
+                        </search-bar>
+                    </div>
 
-                <p class="instructions">Roll the <strong>Die</strong> below to summon a random monster, click the <strong>Anvil</strong> to forge it into the perfect foe, or read the <strong>Codex</strong> to discover unique foes.</p>
-                <div class="showcase-controls">
-                    <reroll-button
-                        jiggle="jiggleUntilClick"
-                        class="showcase-button"
-                        target="showcase-statblock"
-                        ?random="${!effectiveMonsterKey}">
-                    </reroll-button>
-                    <forge-button
-                        jiggle="jiggleUntilClick"
-                        class="showcase-button"
-                        target="showcase-statblock">
-                    </forge-button>
-                    <svg-icon-button
-                        title="Read the Foe Foundry Codex"
-                        src="death-note"
-                        jiggle="jiggleUntilClick"
-                        class="showcase-button codex"
-                        @click="${this._handleCodexClick}"
-                    >
-                    </svg-icon-button>
-                </div>
-                <div class="timer-container ${timerClass}" @click="${this._handleTimerClick}">
-                    <div class="timer-message">${this.currentMessage}</div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar" style="width: ${this.timerProgress}%"></div>
+                    <p class="instructions">Roll the <strong>Die</strong> below to summon a random monster, click the <strong>Anvil</strong> to forge it into the perfect foe, or read the <strong>Codex</strong> to discover unique foes.</p>
+                    <div class="showcase-controls">
+                        <reroll-button
+                            jiggle="jiggleUntilClick"
+                            class="showcase-button"
+                            target="showcase-statblock"
+                            ?random="${!effectiveMonsterKey}">
+                        </reroll-button>
+                        <forge-button
+                            jiggle="jiggleUntilClick"
+                            class="showcase-button"
+                            target="showcase-statblock">
+                        </forge-button>
+                        <svg-icon-button
+                            title="Read the Foe Foundry Codex"
+                            src="death-note"
+                            jiggle="jiggleUntilClick"
+                            class="showcase-button codex"
+                            @click="${this._handleCodexClick}"
+                        >
+                        </svg-icon-button>
+                    </div>
+                    <div class="timer-container ${timerClass}" @click="${this._handleTimerClick}">
+                        <div class="timer-message">${this.currentMessage}</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: ${this.timerProgress}%"></div>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
             <monster-statblock
                 class="${statblockClass}"

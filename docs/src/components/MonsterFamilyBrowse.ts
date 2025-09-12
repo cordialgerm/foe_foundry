@@ -25,13 +25,11 @@ export class MonsterFamilyBrowse extends LitElement {
   static styles = css`
     :host {
       display: block;
-      height: 100%;
-      overflow: hidden;
+      width: 100%;
     }
 
     .browse-container {
       display: flex;
-      height: 100%; /* Set full height for proper scrolling */
       min-height: 600px;
       align-items: flex-start; /* Top align both panels */
     }
@@ -41,11 +39,13 @@ export class MonsterFamilyBrowse extends LitElement {
       width: 280px;
       background: var(--bg-color);
       border-right: 2px solid var(--border-color);
-      overflow-y: auto;
       padding: 1rem; /* Reduced padding for better mobile experience */
-      position: relative;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      max-height: 100vh;
+      overflow-y: auto;
       flex-shrink: 0; /* Prevent panel from shrinking */
-      height: 100%; /* Full height to match content panel */
     }
 
     .toc-title {
@@ -127,31 +127,8 @@ export class MonsterFamilyBrowse extends LitElement {
     /* Main Content Panel */
     .content-panel {
       flex: 1;
-      overflow-y: auto;
-      padding: 1rem; /* Reduced padding for better mobile experience */
+      padding: 1rem 1rem 1rem 2rem; /* Extra left padding for spacing from TOC */
       padding-top: 0rem;
-      height: auto; /* Allow natural height for better scrolling */
-      position: relative; /* For scroll indicator positioning */
-    }
-
-    /* Scroll indicator for mobile to show more content is available */
-    .content-panel::after {
-      content: "";
-      position: sticky;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 20px;
-      background: linear-gradient(transparent, rgba(255, 107, 53, 0.1));
-      pointer-events: none;
-      z-index: 2;
-    }
-
-    @media (max-width: 1040px) {
-      .content-panel::after {
-        height: 30px;
-        background: linear-gradient(transparent, rgba(255, 107, 53, 0.2));
-      }
     }
 
     .carousel-section {
@@ -212,7 +189,6 @@ export class MonsterFamilyBrowse extends LitElement {
     @media (max-width: 1040px) {
       .browse-container {
         flex-direction: column;
-        height: 100vh; /* Set full viewport height for proper mobile scrolling */
         align-items: stretch; /* Stack layout for mobile */
       }
 
@@ -223,8 +199,6 @@ export class MonsterFamilyBrowse extends LitElement {
       .content-panel {
         padding: 0.75rem; /* Further reduced padding for smaller screens */
         padding-top: 0rem;
-        height: 100%; /* Take full available height */
-        overflow-y: auto; /* Enable vertical scrolling to see all families */
       }
 
       .carousel-section {
