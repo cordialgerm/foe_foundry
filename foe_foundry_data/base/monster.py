@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import List, Optional
 
+from pydantic import computed_field
 from pydantic.dataclasses import dataclass
 
 
@@ -29,7 +30,25 @@ class MonsterInfoModel:
     creature_type: str | None = None
     tag_line: str | None = None
     tags: List[MonsterTagInfo] | None = None
-    family_key: str | None = None  # Just store the key instead of full object
+    family_keys: list[str] | None = None  # Support multiple families
+
+    @computed_field
+    @property
+    def monsterFamilies(self) -> list[str] | None:
+        """Get family names for this monster (used by API serialization)"""
+        if not self.family_keys:
+            return None
+        
+        # Import here to avoid circular dependencies
+        from foe_foundry_data.monster_families import MonsterFamilies
+        
+        family_names = []
+        for family_key in self.family_keys:
+            family = MonsterFamilies.lookup.get(family_key)
+            if family:
+                family_names.append(family.name)
+        
+        return family_names if family_names else None
 
 
 @dataclass(kw_only=True)

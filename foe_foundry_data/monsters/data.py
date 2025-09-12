@@ -93,7 +93,7 @@ class MonsterModel:
     primary_image_is_grayscaleish: bool
     primary_image_background_color: str | None = None
     create_date: datetime
-    family_key: str | None = None  # Just store the key instead of full object
+    family_keys: list[str] | None = None  # Support multiple families
 
     @property
     def key(self) -> str:
@@ -197,8 +197,8 @@ class MonsterModel:
             if stats.key in {m.key for m in f.monsters}
         ]
         
-        # Get the first family this monster belongs to (monsters should only belong to one family)
-        monster_family_key = families[0].key if families else None
+        # Get all families this monster belongs to (support multiple families)
+        monster_family_keys = [f.key for f in families] if families else None
         
         for family in families:
             for m in family.monsters:
@@ -292,5 +292,5 @@ class MonsterModel:
             primary_image_is_grayscaleish=primary_image_is_grayscaleish,
             primary_image_background_color=primary_image_background_color,
             create_date=template.create_date,
-            family_key=monster_family_key,
+            family_keys=monster_family_keys,
         )

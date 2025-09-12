@@ -1,10 +1,8 @@
 from __future__ import annotations
 
-from dataclasses import asdict
-from typing import Annotated
-
 import collections
 from pathlib import Path
+from typing import Annotated
 
 import yaml
 from fastapi import APIRouter, HTTPException, Query
@@ -13,38 +11,9 @@ from pydantic import BaseModel
 from foe_foundry.creature_types import CreatureType
 from foe_foundry_data.base import MonsterInfoModel
 from foe_foundry_data.monsters.all import Monsters
-from foe_foundry_data.monster_families import MonsterFamilies
 from foe_foundry_search.search import enhanced_search_monsters
 
 router = APIRouter(prefix="/api/v1/search")
-
-
-def _monster_info_to_dict(monster: MonsterInfoModel) -> dict:
-    """Convert MonsterInfoModel to dict with monsterFamilies field for API response"""
-    # Create basic dict excluding any complex nested objects to avoid circular references
-    monster_dict = {
-        "key": monster.key,
-        "name": monster.name,
-        "cr": monster.cr,
-        "template": monster.template,
-        "background_image": monster.background_image,
-        "creature_type": monster.creature_type,
-        "tag_line": monster.tag_line,
-        "tags": [asdict(tag) for tag in monster.tags] if monster.tags else None,
-    }
-    
-    # Add monsterFamilies field as expected by the UI
-    if monster.family_key:
-        # Resolve family name from family key
-        family = next((f for f in MonsterFamilies.families if f.key == monster.family_key), None)
-        if family:
-            monster_dict["monsterFamilies"] = [family.name]
-        else:
-            monster_dict["monsterFamilies"] = None
-    else:
-        monster_dict["monsterFamilies"] = None
-        
-    return monster_dict
 
 
 class MonsterSearchRequest(BaseModel):
@@ -73,7 +42,7 @@ class SearchSeed(BaseModel):
 
 
 class MonsterSearchResult(BaseModel):
-    monsters: list[dict]  # Changed from list[MonsterInfoModel] to allow custom serialization
+    monsters: list[MonsterInfoModel]
     facets: SearchFacets
     total: int | None = None
 
@@ -111,7 +80,7 @@ def _get_all_monsters() -> list[MonsterInfoModel]:
             creature_type=monster.creature_type,
             tag_line=monster.tag_line,
             tags=monster.tags,
-            family_key=monster.family_key,
+            family_keys=monster.family_keys,
         )
         for monster in all_monsters
     ]
@@ -183,7 +152,7 @@ def get_search_monsters(
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
                 tags=monster.tags,
-                family_key=monster.family_key,
+                family_keys=monster.family_keys,
             )
         )
     return results
@@ -248,7 +217,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
                 tags=monster.tags,
-                family_key=monster.family_key,
+                family_keys=monster.family_keys,
             )
         )
     return results
@@ -303,20 +272,19 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
         if not monster:
             continue
 
-        monster_info = MonsterInfoModel(
-            key=monster.key,
-            name=monster.name,
-            cr=monster.cr,
-            template=monster.template_key,
-            background_image=monster.background_image,
-            creature_type=monster.creature_type,
-            tag_line=monster.tag_line,
-            tags=monster.tags,
-            family_key=monster.family_key,
+        results.append(
+            MonsterInfoModel(
+                key=monster.key,
+                name=monster.name,
+                cr=monster.cr,
+                template=monster.template_key,
+                background_image=monster.background_image,
+                creature_type=monster.creature_type,
+                tag_line=monster.tag_line,
+                tags=monster.tags,
+                family_keys=monster.family_keys,
+            )
         )
-        
-        # Convert to dict with monsterFamilies field
-        results.append(_monster_info_to_dict(monster_info))
 
     # Always return facets based on the full database, not just search results
     # This ensures all filter options remain visible with their full counts
