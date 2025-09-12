@@ -41,7 +41,7 @@ export interface MonsterFamily {
     name: string;
     tag_line: string;
     icon: string;
-    monster_count: number;
+    monsters: MonsterInfo[];
     url: string;
 }
 

@@ -25,13 +25,11 @@ export class MonsterFamilyBrowse extends LitElement {
   static styles = css`
     :host {
       display: block;
-      height: 100%;
-      overflow: hidden;
+      width: 100%;
     }
 
     .browse-container {
       display: flex;
-      height: 100%; /* Fill the tab content area */
       min-height: 600px;
       align-items: flex-start; /* Top align both panels */
     }
@@ -41,11 +39,13 @@ export class MonsterFamilyBrowse extends LitElement {
       width: 280px;
       background: var(--bg-color);
       border-right: 2px solid var(--border-color);
+      padding: 1rem; /* Reduced padding for better mobile experience */
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      max-height: 100vh;
       overflow-y: auto;
-      padding: 1.5rem;
-      position: relative;
       flex-shrink: 0; /* Prevent panel from shrinking */
-      height: 100%; /* Full height to match content panel */
     }
 
     .toc-title {
@@ -127,17 +127,15 @@ export class MonsterFamilyBrowse extends LitElement {
     /* Main Content Panel */
     .content-panel {
       flex: 1;
-      overflow-y: auto;
-      padding: 1.5rem;
+      padding: 1rem 1rem 1rem 2rem; /* Extra left padding for spacing from TOC */
       padding-top: 0rem;
-      height: 100%; /* Full height to match toc panel */
     }
 
     .carousel-section {
       margin-bottom: 1.5rem;
       border-radius: 8px;
       background: var(--bg-color); /* Removed black background */
-      padding: 1.5rem;
+      padding: 1rem; /* Reduced padding for better mobile experience */
       border: 1px solid var(--border-color);
     }
 
@@ -191,7 +189,6 @@ export class MonsterFamilyBrowse extends LitElement {
     @media (max-width: 1040px) {
       .browse-container {
         flex-direction: column;
-        height: auto;
         align-items: stretch; /* Stack layout for mobile */
       }
 
@@ -200,15 +197,13 @@ export class MonsterFamilyBrowse extends LitElement {
       }
 
       .content-panel {
-        padding: 1.25rem;
+        padding: 0.75rem; /* Further reduced padding for smaller screens */
         padding-top: 0rem;
-        height: auto;
-        overflow-y: visible; /* Remove scroll on mobile since container is auto height */
       }
 
       .carousel-section {
         margin-bottom: 2rem;
-        padding: 1.25rem;
+        padding: 0.75rem; /* Reduced padding for smaller screens */
       }
 
       .carousel-title {
@@ -228,13 +223,13 @@ export class MonsterFamilyBrowse extends LitElement {
       }
 
       .content-panel {
-        padding: 1rem;
+        padding: 0.625rem; /* Even less padding for smallest screens */
         padding-top: 0;
       }
 
       .carousel-section {
-        padding: 1rem;
-        margin-bottom: 1.75rem;
+        padding: 0.625rem; /* Minimal padding for smallest screens */
+        margin-bottom: 1.5rem;
       }
 
       .carousel-title {
@@ -252,12 +247,12 @@ export class MonsterFamilyBrowse extends LitElement {
       }
 
       .content-panel {
-        padding: 0.875rem;
+        padding: 0.5rem; /* Minimal padding for very small screens */
         padding-top: 0;
       }
 
       .carousel-section {
-        padding: 0.875rem;
+        padding: 0.5rem; /* Minimal padding for very small screens */
         margin-bottom: 1.5rem;
       }
 
@@ -304,6 +299,41 @@ export class MonsterFamilyBrowse extends LitElement {
     .content-panel {
       scrollbar-width: thin;
       scrollbar-color: var(--primary-color) var(--muted-color);
+    }
+
+    /* Mobile scrollbar enhancements for better visibility */
+    @media (max-width: 1040px) {
+      .content-panel::-webkit-scrollbar {
+        width: 12px; /* Wider scrollbar on mobile for better visibility */
+      }
+
+      .content-panel::-webkit-scrollbar-track {
+        background: rgba(255, 107, 53, 0.1); /* More visible track on mobile */
+        border-radius: 6px;
+      }
+
+      .content-panel::-webkit-scrollbar-thumb {
+        background: var(--tertiary-color); /* More prominent color */
+        border-radius: 6px;
+        border: 2px solid var(--bg-color);
+        box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3); /* Add glow for visibility */
+      }
+
+      .content-panel::-webkit-scrollbar-thumb:active {
+        background: var(--primary-color);
+      }
+
+      /* Enhanced Firefox scrollbar on mobile */
+      .content-panel {
+        scrollbar-width: auto; /* Use default width for better visibility */
+        scrollbar-color: var(--tertiary-color) rgba(255, 107, 53, 0.1);
+      }
+
+      /* Force scrollbar to always be visible on mobile webkit browsers */
+      .content-panel {
+        overflow-y: scroll; /* Force scrollbar to be visible */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      }
     }
 
     .loading {
@@ -387,7 +417,7 @@ export class MonsterFamilyBrowse extends LitElement {
           <svg-icon class="family-icon" src="${family.icon}"></svg-icon>
           <div class="family-info">
             <div class="family-name">${family.name}</div>
-            <div class="family-monster-count">${family.monster_count} monsters</div>
+            <div class="family-monster-count">${family.monsters.length} monsters</div>
           </div>
         </a>
       </li>

@@ -29,9 +29,11 @@ async def get_location(request: Request) -> Dict[str, Any]:
         # Get the client's real IP address
         # Check for forwarded headers first (common in production with proxies/load balancers)
         client_ip = (
-            request.headers.get("X-Forwarded-For", "").split(",")[0].strip()
-            or request.headers.get("X-Real-IP")
-            or request.client.host
+            (
+                request.headers.get("X-Forwarded-For", "").split(",")[0].strip()
+                or request.headers.get("X-Real-IP")
+                or request.client.host
+            )
             if request.client
             else None
         )
@@ -39,12 +41,10 @@ async def get_location(request: Request) -> Dict[str, Any]:
         if not client_ip or client_ip in ["127.0.0.1", "localhost"]:
             # For local development or when we can't determine the IP,
             # fall back to general endpoint (will show consent banner)
-            log.info("Using general geo endpoint for local/unknown IP")
             url = "https://ipapi.co/json/"
         else:
             # Use the specific IP endpoint to get the user's actual location
             url = f"https://ipapi.co/{client_ip}/json/"
-            log.info(f"Fetching geo data for IP: {client_ip}")
 
         async with httpx.AsyncClient(timeout=10.0) as client:
             response = await client.get(url)
@@ -53,26 +53,21 @@ async def get_location(request: Request) -> Dict[str, Any]:
 
             # Validate that we got the expected data structure
             if not isinstance(data, dict) or "country_code" not in data:
-                log.warning(f"Unexpected response from ipapi.co: {data}")
                 # Return fallback data that will trigger consent banner
                 return {"country_code": None, "error": "Invalid response format"}
 
             return data
 
     except httpx.TimeoutException:
-        log.warning("Timeout when fetching geo-location from ipapi.co")
         # Return fallback that triggers consent banner
         return {"country_code": None, "error": "timeout"}
     except httpx.HTTPStatusError as e:
-        log.warning(f"HTTP error from ipapi.co: {e.response.status_code}")
         # Return fallback that triggers consent banner
         return {"country_code": None, "error": f"http_error_{e.response.status_code}"}
-    except (httpx.ConnectError, httpx.NetworkError) as e:
-        log.warning(f"Network error when fetching geo-location: {e}")
+    except (httpx.ConnectError, httpx.NetworkError):
         # Return fallback that triggers consent banner (safe default)
         return {"country_code": None, "error": "network_error"}
-    except Exception as e:
-        log.error(f"Unexpected error fetching geo-location: {e}")
+    except Exception:
         # Return fallback that triggers consent banner
         return {"country_code": None, "error": "unexpected_error"}
 
