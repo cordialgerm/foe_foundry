@@ -131,6 +131,27 @@ export class MonsterFamilyBrowse extends LitElement {
       padding: 1rem; /* Reduced padding for better mobile experience */
       padding-top: 0rem;
       height: auto; /* Allow natural height for better scrolling */
+      position: relative; /* For scroll indicator positioning */
+    }
+
+    /* Scroll indicator for mobile to show more content is available */
+    .content-panel::after {
+      content: "";
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: linear-gradient(transparent, rgba(255, 107, 53, 0.1));
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    @media (max-width: 1040px) {
+      .content-panel::after {
+        height: 30px;
+        background: linear-gradient(transparent, rgba(255, 107, 53, 0.2));
+      }
     }
 
     .carousel-section {
@@ -304,6 +325,41 @@ export class MonsterFamilyBrowse extends LitElement {
     .content-panel {
       scrollbar-width: thin;
       scrollbar-color: var(--primary-color) var(--muted-color);
+    }
+
+    /* Mobile scrollbar enhancements for better visibility */
+    @media (max-width: 1040px) {
+      .content-panel::-webkit-scrollbar {
+        width: 12px; /* Wider scrollbar on mobile for better visibility */
+      }
+
+      .content-panel::-webkit-scrollbar-track {
+        background: rgba(255, 107, 53, 0.1); /* More visible track on mobile */
+        border-radius: 6px;
+      }
+
+      .content-panel::-webkit-scrollbar-thumb {
+        background: var(--tertiary-color); /* More prominent color */
+        border-radius: 6px;
+        border: 2px solid var(--bg-color);
+        box-shadow: 0 0 0 1px rgba(255, 107, 53, 0.3); /* Add glow for visibility */
+      }
+
+      .content-panel::-webkit-scrollbar-thumb:active {
+        background: var(--primary-color);
+      }
+
+      /* Enhanced Firefox scrollbar on mobile */
+      .content-panel {
+        scrollbar-width: auto; /* Use default width for better visibility */
+        scrollbar-color: var(--tertiary-color) rgba(255, 107, 53, 0.1);
+      }
+
+      /* Force scrollbar to always be visible on mobile webkit browsers */
+      .content-panel {
+        overflow-y: scroll; /* Force scrollbar to be visible */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      }
     }
 
     .loading {
