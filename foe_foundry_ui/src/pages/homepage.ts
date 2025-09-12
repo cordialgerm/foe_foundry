@@ -1,13 +1,55 @@
-document.addEventListener('DOMContentLoaded', function () {
+// Homepage-specific functionality for Foe Foundry
+// Includes Swiper carousels, lazy icons, and monster reroll functionality
+
+// Export to make this file a module
+export { };
+
+// Declare global Swiper type
+declare global {
+    interface Window {
+        Swiper: any;
+        foeFoundryAnalytics?: {
+            trackMonsterClick: (templateKey: string, type: string, source: string) => void;
+        };
+        requestIdleCallback?: (callback: () => void) => void;
+        AnchorJS: any;
+    }
+}
+
+// Initialize homepage functionality when on the homepage
+if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    console.log('Loaded homepage');
+    // Use DOMContentLoaded to ensure the page is fully loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeHomepage);
+    } else {
+        // DOM is already loaded
+        initializeHomepage();
+    }
+}
+
+function initializeHomepage() {
+    console.log('Initializing homepage functionality...');
     initSwipers();
     initBackgroundLogo();
     initLazyIcons();
     randomizeMasks();
-});
+}
 
+interface SwiperBreakpoints {
+    [key: number]: {
+        slidesPerView: number;
+        spaceBetween: number;
+    };
+}
+
+interface SwiperConfig {
+    id: string;
+    breakpoints: SwiperBreakpoints;
+}
 
 function initSwipers() {
-    const breakpoints = {
+    const breakpoints: SwiperBreakpoints = {
         320: {
             slidesPerView: 1,
             spaceBetween: 16
@@ -29,7 +71,8 @@ function initSwipers() {
             spaceBetween: 48
         },
     };
-    const breakpointsFew = {
+    
+    const breakpointsFew: SwiperBreakpoints = {
         320: {
             slidesPerView: 1,
             spaceBetween: 16
@@ -55,7 +98,8 @@ function initSwipers() {
             spaceBetween: 48
         },
     };
-    const breakpointsFitMany = {
+    
+    const breakpointsFitMany: SwiperBreakpoints = {
         200: {
             slidesPerView: 1,
             spaceBetween: 8
@@ -82,21 +126,27 @@ function initSwipers() {
         },
     };
 
-    [
+    const swiperConfigs: SwiperConfig[] = [
         { id: 'monsters', breakpoints: breakpoints },
         { id: 'powers', breakpoints: breakpointsFew },
         { id: 'value-props', breakpoints: breakpointsFitMany },
         { id: 'blog', breakpoints: breakpointsFitMany }
-    ].forEach(({ id, breakpoints }) => {
+    ];
 
-        const swiperContainer = document.querySelector(`.swiper-${id}`);
+    swiperConfigs.forEach(({ id, breakpoints }) => {
+        const swiperContainer = document.querySelector(`.swiper-${id}`) as HTMLElement;
+        
+        if (!swiperContainer) {
+            console.log(`Swiper container not found: .swiper-${id}`);
+            return;
+        }
 
         // Add some random noise to the delay (e.g., ±2000ms)
         const baseDelay = 6000;
         const delayNoise = Math.floor(Math.random() * 2000); // 0–1999ms
         const randomizedDelay = baseDelay + delayNoise;
 
-        const swiper = new Swiper(swiperContainer, {
+        const swiper = new window.Swiper(swiperContainer, {
             autoplay: {
                 delay: randomizedDelay,
                 disableOnInteraction: true
@@ -127,20 +177,22 @@ function initSwipers() {
 }
 
 function initBackgroundLogo() {
-
     const setClass = () => {
-        document.getElementById("parallax-logo-bg")?.classList.add("parallax-logo-bg");
+        const logoElement = document.getElementById("parallax-logo-bg");
+        if (logoElement) {
+            logoElement.classList.add("parallax-logo-bg");
+        }
     };
 
-    requestIdleCallback?.(setClass) || setTimeout(setClass, 200);
+    if (window.requestIdleCallback) {
+        window.requestIdleCallback(setClass);
+    } else {
+        setTimeout(setClass, 200);
+    }
 }
 
-window.addEventListener("load", () => {
-
-});
-
-function onSwiperClick(swiper, event) {
-    const clickedSlide = swiper.clickedSlide;
+function onSwiperClick(swiper: any, event: Event) {
+    const clickedSlide = swiper.clickedSlide as HTMLElement;
     if (clickedSlide && clickedSlide.dataset.url) {
         const url = clickedSlide.dataset.url;
         // If this is the monster swiper, call trackMonsterClick
@@ -157,8 +209,7 @@ function onSwiperClick(swiper, event) {
     }
 }
 
-
-function cleanAndInjectSVGFromURL(url, targetElement, fillValue = 'currentColor') {
+function cleanAndInjectSVGFromURL(url: string, targetElement: HTMLElement, fillValue: string = 'currentColor') {
     fetch(url)
         .then(res => res.text()) // get the raw SVG text
         .then(svgText => {
@@ -189,7 +240,7 @@ function initLazyIcons() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const el = entry.target;
+                const el = entry.target as HTMLElement;
                 const url = el.dataset.iconUrl;
 
                 if (url) {
@@ -199,16 +250,31 @@ function initLazyIcons() {
             }
         });
     }, {
-        rootMargin: '1000px',   // Start loading 200px before it enters the view
-        threshold: 0.01         // Trigger when 10% of the element is visible
+        rootMargin: '1000px',   // Start loading 1000px before it enters the view
+        threshold: 0.01         // Trigger when 1% of the element is visible
     });
 
     document.querySelectorAll('.lazy-icon-placeholder').forEach(el => observer.observe(el));
 }
 
+function randomizeMasks() {
+    const variants = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6'];
+
+    document.querySelectorAll('.masked').forEach(el => {
+        const element = el as HTMLElement;
+        const hasVariant = variants.some(variant => element.classList.contains(variant));
+
+        if (!hasVariant) {
+            const random = variants[Math.floor(Math.random() * variants.length)];
+            element.classList.add(random);
+        }
+    });
+}
+
 // Add an event listener for any reroll button clicks
 document.addEventListener("click", async (event) => {
-    const button = event.target.closest("#summon-your-first-monster .reroll-button");
+    const target = event.target as HTMLElement;
+    const button = target.closest("#summon-your-first-monster .reroll-button") as HTMLButtonElement;
     if (!button) return;
 
     // Trigger the animation
@@ -220,18 +286,25 @@ document.addEventListener("click", async (event) => {
         button.disabled = false;
     }, 600); // match the animation duration
 
-    const url = `/api/v1/statblocks/random?output=monster_only`;
-    const res = await fetch(url);
-    const html = await res.text();
+    try {
+        const url = `/api/v1/statblocks/random?output=monster_only`;
+        const res = await fetch(url);
+        const html = await res.text();
 
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const newStatblockElement = doc.querySelector('.stat-block');
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newStatblockElement = doc.querySelector('.stat-block');
 
-    // find #statblock-placeholder and replace its content with the new statblock
-    const statblockPlaceholder = document.querySelector('#statblock-placeholder');
-    if (statblockPlaceholder) {
-        statblockPlaceholder.innerHTML = '';
-        statblockPlaceholder.appendChild(newStatblockElement);
+        // find #statblock-placeholder and replace its content with the new statblock
+        const statblockPlaceholder = document.querySelector('#statblock-placeholder');
+        if (statblockPlaceholder && newStatblockElement) {
+            statblockPlaceholder.innerHTML = '';
+            statblockPlaceholder.appendChild(newStatblockElement);
+        }
+    } catch (error) {
+        console.error('Error rerolling monster:', error);
+        // Re-enable button in case of error
+        button.classList.remove("rolling");
+        button.disabled = false;
     }
 });

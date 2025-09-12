@@ -8,7 +8,7 @@
 {{ script|script_tag }}
 {%- endfor %}
 
-<script src="{{ 'scripts/main.js'|url }}" defer></script>
+{{ '' | versioned_main_js_link | safe }}
 
 {% if page.is_homepage %}
 {{ '/' | matching_js_link | safe }}

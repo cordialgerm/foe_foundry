@@ -85,12 +85,50 @@ def matching_css_link(url: str) -> str:
         url = "/homepage"
 
     slug = url.lower().strip("/").replace("/", "-")
-    css_path = f"{slug}.css"
-    full_path = Path.cwd() / "foe_foundry_ui" / "css" / css_path
-    if not full_path.exists():
-        return f"<!-- No matching CSS file found for {url} -->"
 
-    return f'<link href="{get_base_url()}/css/{css_path}" rel="stylesheet">'
+    # Look for versioned CSS files in the site directory first
+    site_css_dir = Path.cwd() / "site" / "css"
+    if site_css_dir.exists():
+        # Look for files matching the pattern {slug}-{hash}.css
+        import glob
+
+        versioned_files = glob.glob(str(site_css_dir / f"{slug}-*.css"))
+        if versioned_files:
+            # Get the most recent file (should only be one with current setup)
+            css_file = Path(versioned_files[0])
+            css_path = css_file.name
+            return f'<link href="{get_base_url()}/css/{css_path}" rel="stylesheet">'
+
+    # Fallback to legacy CSS files in foe_foundry_ui/css (without versioning)
+    css_path = f"{slug}.css"
+    legacy_full_path = Path.cwd() / "foe_foundry_ui" / "css" / css_path
+    if legacy_full_path.exists():
+        return f'<link href="{get_base_url()}/css/{css_path}" rel="stylesheet">'
+
+    return f"<!-- No matching CSS file found for {url} -->"
+
+
+def versioned_main_js_link() -> str:
+    """Generates a link to the versioned main.js file."""
+
+    # Look for versioned main.js files in the site directory
+    site_scripts_dir = Path.cwd() / "site" / "scripts"
+    if site_scripts_dir.exists():
+        import glob
+
+        versioned_files = glob.glob(str(site_scripts_dir / "main-*.js"))
+        if versioned_files:
+            # Get the most recent file (should only be one with current setup)
+            js_file = Path(versioned_files[0])
+            js_path = js_file.name
+            return f'<script src="{get_base_url()}/scripts/{js_path}" defer></script>'
+
+    # Fallback to legacy main.js (without versioning)
+    legacy_main_path = Path.cwd() / "site" / "scripts" / "main.js"
+    if legacy_main_path.exists():
+        return f'<script src="{get_base_url()}/scripts/main.js" defer></script>'
+
+    return "<!-- No main.js file found -->"
 
 
 def matching_js_link(url: str) -> str:
@@ -100,9 +138,24 @@ def matching_js_link(url: str) -> str:
         url = "/homepage"
 
     slug = url.lower().strip("/").replace("/", "-")
-    js_path = f"{slug}.js"
-    full_path = Path.cwd() / "foe_foundry_ui" / "scripts" / js_path
-    if not full_path.exists():
-        return f"<!-- No matching JS file found for {url} -->"
 
-    return f'<script src="{get_base_url()}/scripts/{js_path}" defer></script>'
+    # Look for versioned JS files in the site directory first
+    site_scripts_dir = Path.cwd() / "site" / "scripts"
+    if site_scripts_dir.exists():
+        # Look for files matching the pattern {slug}-{hash}.js
+        import glob
+
+        versioned_files = glob.glob(str(site_scripts_dir / f"{slug}-*.js"))
+        if versioned_files:
+            # Get the most recent file (should only be one with current setup)
+            js_file = Path(versioned_files[0])
+            js_path = js_file.name
+            return f'<script src="{get_base_url()}/scripts/{js_path}" defer></script>'
+
+    # Fallback to legacy JS files in foe_foundry_ui/scripts (without versioning)
+    js_path = f"{slug}.js"
+    legacy_full_path = Path.cwd() / "foe_foundry_ui" / "scripts" / js_path
+    if legacy_full_path.exists():
+        return f'<script src="{get_base_url()}/scripts/{js_path}" defer></script>'
+
+    return f"<!-- No matching JS file found for {url} -->"

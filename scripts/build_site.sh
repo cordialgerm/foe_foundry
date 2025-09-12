@@ -91,11 +91,10 @@ else
     echo "Skipping MkDocs build due to --fast flag."
 fi
 
-# Always copy /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/css/ and /site/scripts/
-echo "Copying /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/..."
-mkdir -p site/css site/scripts
+# Copy CSS files and fonts to site (JS files are now handled by Vite)
+echo "Copying /foe_foundry_ui/css/ and /foe_foundry_ui/fonts/ to /site/..."
+mkdir -p site/css site/scripts site/fonts
 cp -r foe_foundry_ui/css/. site/css/
-cp -r foe_foundry_ui/scripts/. site/scripts/
 cp -r foe_foundry_ui/fonts/. site/fonts/
 echo "Copy completed."
 

@@ -10,6 +10,7 @@ from .utilities import (
     matching_css_link,
     matching_js_link,
     sluggify,
+    versioned_main_js_link,
 )
 
 
@@ -19,6 +20,7 @@ def setup_jinja_env(env: Environment):
     env.filters["markdown_no_wrapping_p"] = markdown_no_wrapping_p
     env.filters["matching_css_link"] = matching_css_link
     env.filters["matching_js_link"] = matching_js_link
+    env.filters["versioned_main_js_link"] = versioned_main_js_link
     env.globals["columns"] = columns
     env.globals["branding"] = partial(branding, env)
 
