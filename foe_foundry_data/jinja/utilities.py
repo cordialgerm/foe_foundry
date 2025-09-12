@@ -86,7 +86,7 @@ def matching_css_link(url: str) -> str:
 
     slug = url.lower().strip("/").replace("/", "-")
     css_path = f"{slug}.css"
-    full_path = Path.cwd() / "docs" / "css" / css_path
+    full_path = Path.cwd() / "foe_foundry_ui" / "css" / css_path
     if not full_path.exists():
         return f"<!-- No matching CSS file found for {url} -->"
 
@@ -101,7 +101,7 @@ def matching_js_link(url: str) -> str:
 
     slug = url.lower().strip("/").replace("/", "-")
     js_path = f"{slug}.js"
-    full_path = Path.cwd() / "docs" / "scripts" / js_path
+    full_path = Path.cwd() / "foe_foundry_ui" / "scripts" / js_path
     if not full_path.exists():
         return f"<!-- No matching JS file found for {url} -->"
 

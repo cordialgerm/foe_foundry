@@ -1,15 +1,15 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { fixture, html, expect as chaiExpect, oneEvent } from '@open-wc/testing';
-import { SearchBar } from '../../docs/src/components/SearchBar.js';
+import { SearchBar } from '../../foe_foundry_ui/src/components/SearchBar.js';
 import '../setup.js';
 
 // Mock analytics
-vi.mock('../../docs/src/utils/analytics.js', () => ({
+vi.mock('../../foe_foundry_ui/src/utils/analytics.js', () => ({
     trackSearch: vi.fn()
 }));
 
 // Register the component
-import '../../docs/src/components/SearchBar.js';
+import '../../foe_foundry_ui/src/components/SearchBar.js';
 
 describe('SearchBar Component', () => {
     let element: SearchBar;
@@ -163,7 +163,7 @@ describe('SearchBar Component', () => {
 
     describe('Analytics', () => {
         it('should call trackSearch with correct parameters', async () => {
-            const { trackSearch } = await import('../../docs/src/utils/analytics.js');
+            const { trackSearch } = await import('../../foe_foundry_ui/src/utils/analytics.js');
 
             element = await fixture(html`<search-bar analytics-surface="test-surface"></search-bar>`);
 

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { MockPowerStore, MockMonsterStore, mockPowers, mockPowerLoadouts, mockMonster } from '../mocks/index.js';
-import { StatblockChangeType } from '../../docs/src/data/monster.js';
+import { StatblockChangeType } from '../../foe_foundry_ui/src/data/monster.js';
 
 describe('Mock Data Stores', () => {
   describe('MockPowerStore', () => {

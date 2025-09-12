@@ -1,11 +1,11 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { fixture, html, expect as chaiExpect } from '@open-wc/testing';
-import { PowerLoadout } from '../../docs/src/components/PowerLoadout.js';
+import { PowerLoadout } from '../../foe_foundry_ui/src/components/PowerLoadout.js';
 import { MockPowerStore, mockPowerLoadouts } from '../mocks/mock-power-store.js';
 import '../setup.js';
 
 // Register the component
-import '../../docs/src/components/PowerLoadout.js';
+import '../../foe_foundry_ui/src/components/PowerLoadout.js';
 
 describe('PowerLoadout Component', () => {
   let element: PowerLoadout;

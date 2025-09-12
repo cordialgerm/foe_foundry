@@ -91,22 +91,22 @@ else
     echo "Skipping MkDocs build due to --fast flag."
 fi
 
-# When FAST_BUILD is set, copy /docs/css/ and /docs/scripts/ to /site/css/ and /site/scripts/
+# When FAST_BUILD is set, copy /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/css/ and /site/scripts/
 if [ "$FAST_BUILD" = true ]; then
-    echo "Copying /docs/css/ and /docs/scripts/ to /site/..."
+    echo "Copying /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/..."
     mkdir -p site/css site/scripts
-    cp -r docs/css/. site/css/
-    cp -r docs/scripts/. site/scripts/
+    cp -r foe_foundry_ui/css/. site/css/
+    cp -r foe_foundry_ui/scripts/. site/scripts/
 
     # Handle uniquified extras.js filename
-    if [ -f "docs/scripts/extras.js" ]; then
+    if [ -f "foe_foundry_ui/scripts/extras.js" ]; then
         # Look for existing extras.*.js files in site/scripts/
         EXTRAS_FILE=$(find site/scripts/ -name "extras.*.js" -type f | head -1)
 
         if [ -n "$EXTRAS_FILE" ]; then
             echo "Found uniquified extras file: $EXTRAS_FILE"
-            echo "Copying docs/scripts/extras.js to match uniquified name..."
-            cp docs/scripts/extras.js "$EXTRAS_FILE"
+            echo "Copying foe_foundry_ui/scripts/extras.js to match uniquified name..."
+            cp foe_foundry_ui/scripts/extras.js "$EXTRAS_FILE"
         fi
     fi
 

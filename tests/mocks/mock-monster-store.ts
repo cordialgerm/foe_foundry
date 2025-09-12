@@ -6,7 +6,7 @@ import {
   StatblockChange, 
   RelatedMonster, 
   RelatedMonsterTemplate 
-} from '../../docs/src/data/monster.js';
+} from '../../foe_foundry_ui/src/data/monster.js';
 import { mockPowerLoadouts } from './mock-power-store.js';
 
 // Test data fixtures

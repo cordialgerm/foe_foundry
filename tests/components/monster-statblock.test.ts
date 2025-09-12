@@ -1,12 +1,12 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { fixture, html } from '@open-wc/testing';
-import { MonsterStatblock } from '../../docs/src/components/MonsterStatblock.js';
+import { MonsterStatblock } from '../../foe_foundry_ui/src/components/MonsterStatblock.js';
 import { MockMonsterStore } from '../mocks/mock-monster-store.js';
-import { StatblockChangeType } from '../../docs/src/data/monster.js';
+import { StatblockChangeType } from '../../foe_foundry_ui/src/data/monster.js';
 import '../setup.js';
 
 // Register the component
-import '../../docs/src/components/MonsterStatblock.js';
+import '../../foe_foundry_ui/src/components/MonsterStatblock.js';
 
 describe('MonsterStatblock Component', () => {
   let element: MonsterStatblock;

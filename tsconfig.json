@@ -8,7 +8,7 @@
         ],
         "moduleResolution": "Node",
         "outDir": "site/js",
-        "rootDir": "docs/src",
+        "rootDir": "foe_foundry_ui/src",
         "strict": true,
         "experimentalDecorators": true,
         "useDefineForClassFields": false,
