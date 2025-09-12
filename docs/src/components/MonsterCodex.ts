@@ -10,6 +10,7 @@ import './MonsterSimilar.js';
 import './MonsterLore.js';
 import './MonsterEncounters.js';
 import './MonsterStatblock.js';
+import './SvgIcon.js';
 import './TagPopup.js';
 import { Task } from '@lit/task';
 
@@ -74,7 +75,6 @@ export class MonsterCodex extends LitElement {
     :host {
       --border-color: var(--fg-color);
       display: block;
-      height: 100%;
       min-height: 100vh;
     }
 
@@ -92,7 +92,7 @@ export class MonsterCodex extends LitElement {
       .codex-container {
         display: grid;
         grid-template-columns: 340px 1fr 400px;
-        height: 100vh;
+        min-height: 100vh;
         gap: 0;
       }
 
@@ -752,6 +752,13 @@ export class MonsterCodex extends LitElement {
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 0.5rem; /* Space between icon and text */
+    }
+
+    .button-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
     }
 
     .monster-action-btn:hover {
@@ -1239,7 +1246,7 @@ export class MonsterCodex extends LitElement {
                 <span class="monster-tag-icon"
                       title="${tag.description}"
                       style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};"
-                      @click=${(e: Event) => this.handleTagClick(e, tag.key || tag.tag)}>
+                      @click=${(e: Event) => this.handleTagClick(e, tag.key)}>
                   ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
                 </span>
               `) : ''}
@@ -1250,10 +1257,12 @@ export class MonsterCodex extends LitElement {
             <div class="monster-actions">
               <button class="monster-action-btn"
                       @click=${(e: Event) => this.handleStatblockButtonClick(e, monster.key)}>
-                View Stats
+                <svg-icon src="orc-head" class="button-icon"></svg-icon>
+                Stats
               </button>
               <button class="monster-action-btn secondary"
                       @click=${(e: Event) => this.handleForgeButtonClick(e, monster.key)}>
+                <svg-icon src="anvil" class="button-icon"></svg-icon>
                 Forge Stats
               </button>
             </div>
@@ -1465,8 +1474,8 @@ export class MonsterCodex extends LitElement {
     // Track analytics for statblock click
     trackStatblockClick(key, 'search');
 
-    // Same behavior as clicking the card - toggle drawer/show statblock
-    this.toggleMonsterDrawer(key);
+    // Navigate directly to monster page instead of toggling drawer
+    window.location.href = `/monsters/${key}/`;
   }
 
   private handleForgeButtonClick(e: Event, key: string) {
