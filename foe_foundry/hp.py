@@ -1,9 +1,8 @@
 from math import ceil, floor
-from typing import List, Tuple
 
 import numpy as np
 
-from .die import Die, DieFormula
+from .die import DieFormula
 
 
 def scale_hp_formula(formula: DieFormula, target: float) -> DieFormula:

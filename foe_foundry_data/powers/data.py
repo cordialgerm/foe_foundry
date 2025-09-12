@@ -294,8 +294,9 @@ class PowerModel:
         if power.damage_types and len(power.damage_types) <= 4:
             # Filter out physical damage types (bludgeoning, piercing, slashing) as they're not useful tags
             non_physical_damage_types = [
-                dt for dt in power.damage_types 
-                if dt.lower() not in {'bludgeoning', 'piercing', 'slashing'}
+                dt
+                for dt in power.damage_types
+                if dt.lower() not in {"bludgeoning", "piercing", "slashing"}
             ]
             tags.update([d.lower() for d in non_physical_damage_types])
         if power.theme:

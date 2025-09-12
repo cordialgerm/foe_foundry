@@ -46,7 +46,12 @@ def enhanced_search_monsters(
     # Handle empty or whitespace-only queries
     if not search_query or not search_query.strip():
         # If we have creature type filters or CR filters, treat as facet-only query
-        if creature_types or target_cr is not None or min_cr is not None or max_cr is not None:
+        if (
+            creature_types
+            or target_cr is not None
+            or min_cr is not None
+            or max_cr is not None
+        ):
             return _get_facet_only_results(
                 target_cr, min_cr, max_cr, creature_types or set(), limit
             )

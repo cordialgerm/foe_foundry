@@ -66,15 +66,15 @@ def test_subgraph_sampling():
     # Test with default parameters
     subgraph = sample_subgraph(G)
     assert isinstance(subgraph, nx.DiGraph), "Subgraph should be a directed graph"
-    assert subgraph.number_of_nodes() <= G.number_of_nodes(), (
-        "Subgraph should be smaller than or equal to original"
-    )
+    assert (
+        subgraph.number_of_nodes() <= G.number_of_nodes()
+    ), "Subgraph should be smaller than or equal to original"
 
     # Test with custom parameters
     small_subgraph = sample_subgraph(G, max_mon_nodes=10, ego_radius=2)
-    assert isinstance(small_subgraph, nx.DiGraph), (
-        "Small subgraph should be a directed graph"
-    )
+    assert isinstance(
+        small_subgraph, nx.DiGraph
+    ), "Small subgraph should be a directed graph"
 
 
 def test_visualization_layouts():

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import List, Optional
+from typing import List
 
 from pydantic.dataclasses import dataclass
 
@@ -9,6 +9,7 @@ from pydantic.dataclasses import dataclass
 @dataclass(kw_only=True)
 class MonsterTagInfo:
     """Tag information for display in UI"""
+
     tag: str  # Display name (e.g., "Tier 1")
     key: str  # API identifier (e.g., "tier_1")
     tag_type: str
