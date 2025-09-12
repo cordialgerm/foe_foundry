@@ -91,27 +91,13 @@ else
     echo "Skipping MkDocs build due to --fast flag."
 fi
 
-# When FAST_BUILD is set, copy /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/css/ and /site/scripts/
-if [ "$FAST_BUILD" = true ]; then
-    echo "Copying /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/..."
-    mkdir -p site/css site/scripts
-    cp -r foe_foundry_ui/css/. site/css/
-    cp -r foe_foundry_ui/scripts/. site/scripts/
-
-    # Handle uniquified extras.js filename
-    if [ -f "foe_foundry_ui/scripts/extras.js" ]; then
-        # Look for existing extras.*.js files in site/scripts/
-        EXTRAS_FILE=$(find site/scripts/ -name "extras.*.js" -type f | head -1)
-
-        if [ -n "$EXTRAS_FILE" ]; then
-            echo "Found uniquified extras file: $EXTRAS_FILE"
-            echo "Copying foe_foundry_ui/scripts/extras.js to match uniquified name..."
-            cp foe_foundry_ui/scripts/extras.js "$EXTRAS_FILE"
-        fi
-    fi
-
-    echo "Copy completed."
-fi
+# Always copy /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/css/ and /site/scripts/
+echo "Copying /foe_foundry_ui/css/ and /foe_foundry_ui/scripts/ to /site/..."
+mkdir -p site/css site/scripts
+cp -r foe_foundry_ui/css/. site/css/
+cp -r foe_foundry_ui/scripts/. site/scripts/
+cp -r foe_foundry_ui/fonts/. site/fonts/
+echo "Copy completed."
 
 # Build the project using Vite
 echo "Building the project with Vite..."
