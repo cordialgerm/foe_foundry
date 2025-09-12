@@ -1,3 +1,5 @@
+import { TagInfo } from './tags';
+
 // MonsterInfo type matching backend MonsterInfoModel
 export interface MonsterInfo {
     key: string;
@@ -8,6 +10,7 @@ export interface MonsterInfo {
     background_image?: string;
     creature_type?: string;
     tag_line?: string;
+    tags?: TagInfo[];
 }
 
 // Enhanced search request interface
