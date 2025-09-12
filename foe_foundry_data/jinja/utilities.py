@@ -108,7 +108,7 @@ def matching_css_link(url: str) -> str:
     return f"<!-- No matching CSS file found for {url} -->"
 
 
-def versioned_main_js_link() -> str:
+def versioned_main_js_link(dummy_input: str = "") -> str:
     """Generates a link to the versioned main.js file."""
 
     # Look for versioned main.js files in the site directory

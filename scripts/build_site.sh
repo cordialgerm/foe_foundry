@@ -79,6 +79,23 @@ else
 fi
 
 
+# Copy CSS files and fonts to site (JS files are now handled by Vite)
+echo "Copying /foe_foundry_ui/css/ and /foe_foundry_ui/fonts/ to /site/..."
+mkdir -p site/css site/scripts site/fonts
+cp -r foe_foundry_ui/css/. site/css/
+cp -r foe_foundry_ui/fonts/. site/fonts/
+echo "Copy completed."
+
+# Build the project using Vite FIRST so versioned files are available for templates
+echo "Building the project with Vite..."
+if command -v npx vite &> /dev/null; then
+    npx vite build
+    echo "Vite build completed successfully."
+else
+    echo "Error: Vite is not installed. Aborting."
+    exit 1
+fi
+
 # Build the static content unless --fast is present
 if [ "$FAST_BUILD" = false ]; then
     echo "Building the static site with MkDocs..."
@@ -89,23 +106,6 @@ if [ "$FAST_BUILD" = false ]; then
     echo "MkDocs build completed successfully."
 else
     echo "Skipping MkDocs build due to --fast flag."
-fi
-
-# Copy CSS files and fonts to site (JS files are now handled by Vite)
-echo "Copying /foe_foundry_ui/css/ and /foe_foundry_ui/fonts/ to /site/..."
-mkdir -p site/css site/scripts site/fonts
-cp -r foe_foundry_ui/css/. site/css/
-cp -r foe_foundry_ui/fonts/. site/fonts/
-echo "Copy completed."
-
-# Build the project using Vite
-echo "Building the project with Vite..."
-if command -v npx vite &> /dev/null; then
-    npx vite build
-    echo "Vite build completed successfully."
-else
-    echo "Error: Vite is not installed. Aborting."
-    exit 1
 fi
 
 
