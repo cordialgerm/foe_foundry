@@ -38,10 +38,12 @@ export class DownloadButton extends StatblockButton {
             justify-content: center;
             transition: all 0.2s ease;
             color: var(--fg-color);
+            box-shadow: 0 0 4px rgba(194, 154, 91, 0.3);
         }
 
         button:hover:not(:disabled) {
             transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(194, 154, 91, 0.6);
         }
 
         button:active:not(:disabled) {
@@ -174,7 +176,7 @@ export class DownloadButton extends StatblockButton {
                 aria-label="Export this monster"
                 title="Export this monster"
             >
-                <svg-icon src="cloud-download" .jiggle=${this.jiggle}></svg-icon>
+                <svg-icon src="cloud-download" .jiggle=${this.jiggle} .shimmer=${true}></svg-icon>
             </button>
 
             ${this.dialogOpen ? html`

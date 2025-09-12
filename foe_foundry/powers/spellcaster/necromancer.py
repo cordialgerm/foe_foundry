@@ -35,10 +35,10 @@ NecromancerExpertSpells = (
 class _NecromancerWizard(WizardPower):
     def __init__(self, **kwargs):
         super().__init__(
-            creature_name="Necromancer", 
+            creature_name="Necromancer",
             icon="skull-staff",
             power_types=[PowerType.Magic],
-            **kwargs
+            **kwargs,
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

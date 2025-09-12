@@ -21,7 +21,11 @@ from foe_foundry import DieFormula, scale_hp_formula
         # FoF Specialist - 84.5 (13d8 + 26)
         (DieFormula(d8=13, mod=26), 0.8, "12d8 + 12"),  # 67.6 target -> 66 (12d8 + 12)
         (DieFormula(d8=13, mod=26), 0.9, "12d8 + 24"),  # 76.05 target -> 78 (12d8 + 24)
-        (DieFormula(d8=13, mod=26), 1.3, "15d8 + 45"),  # 109.85 target -> 112.5 (15d8 + 45)
+        (
+            DieFormula(d8=13, mod=26),
+            1.3,
+            "15d8 + 45",
+        ),  # 109.85 target -> 112.5 (15d8 + 45)
     ],
 )
 def test_scale_hp_formula(formula: DieFormula, scale: float, expected: str):

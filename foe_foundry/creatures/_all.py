@@ -95,9 +95,9 @@ TemplatesByKey: dict[str, MonsterTemplate] = {
 }
 
 
-def all_templates_and_settings() -> list[
-    tuple[MonsterTemplate, list[GenerationSettings]]
-]:
+def all_templates_and_settings() -> (
+    list[tuple[MonsterTemplate, list[GenerationSettings]]]
+):
     results = []
     for template in AllTemplates:
         for setting in template.generate_settings():

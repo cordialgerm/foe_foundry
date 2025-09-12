@@ -171,7 +171,7 @@ class _OrcTemplate(MonsterTemplate):
 
         stats = stats.copy(
             name=name,
-            size=Size.Small,
+            size=Size.Medium,
             languages=["Common", "Orc"],
             creature_class="Orc",
             creature_subtype="Orc",

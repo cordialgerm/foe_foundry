@@ -7,9 +7,9 @@ from .chimera import ChimeraTemplate
 from .druid import DruidTemplate
 from .gelatinous_cube import GelatinousCubeTemplate
 from .golem import GolemTemplate
+from .hollow_gazer import HollowGazerTemplate
 from .knight import KnightTemplate
 from .kobold import KoboldTemplate
-from .hollow_gazer import HollowGazerTemplate
 from .ogre import OgreTemplate
 from .warrior import WarriorTemplate
 from .wight import WightTemplate

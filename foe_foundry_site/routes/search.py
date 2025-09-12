@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import collections
+from pathlib import Path
 from typing import Annotated
 import collections
 from pathlib import Path
 
+import yaml
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 import yaml
@@ -50,22 +53,21 @@ class MonsterSearchResult(BaseModel):
 def _calculate_facets(monsters: list[MonsterInfoModel]) -> SearchFacets:
     """Calculate facets from a list of monsters"""
     # Count creature types
-    creature_type_counts = collections.Counter(m.creature_type for m in monsters if m.creature_type)
-    
+    creature_type_counts = collections.Counter(
+        m.creature_type for m in monsters if m.creature_type
+    )
+
     # Create creature type facets, sorted by count descending
     creature_type_facets = [
         SearchFacet(value=creature_type, count=count)
         for creature_type, count in creature_type_counts.most_common()
     ]
-    
+
     # Calculate CR range
     crs = [m.cr for m in monsters]
     cr_range = {"min": min(crs) if crs else 0.0, "max": max(crs) if crs else 30.0}
-    
-    return SearchFacets(
-        creatureTypes=creature_type_facets,
-        crRange=cr_range
-    )
+
+    return SearchFacets(creatureTypes=creature_type_facets, crRange=cr_range)
 
 
 def _get_all_monsters() -> list[MonsterInfoModel]:
@@ -80,6 +82,7 @@ def _get_all_monsters() -> list[MonsterInfoModel]:
             background_image=monster.background_image,
             creature_type=monster.creature_type,
             tag_line=monster.tag_line,
+            tags=monster.tags,
         )
         for monster in all_monsters
     ]
@@ -89,10 +92,10 @@ def _load_search_seeds() -> list[SearchSeed]:
     """Load search seeds from the YAML file"""
     seeds_file = Path(__file__).parent.parent.parent / "data" / "search_seeds.yaml"
     try:
-        with open(seeds_file, 'r') as f:
+        with open(seeds_file, "r") as f:
             data = yaml.safe_load(f)
-        return [SearchSeed(**seed) for seed in data.get('search_seeds', [])]
-    except Exception as e:
+        return [SearchSeed(**seed) for seed in data.get("search_seeds", [])]
+    except Exception:
         # Return empty list if file not found or parse error
         return []
 
@@ -130,7 +133,9 @@ def get_search_monsters(
         limit = 5
 
     results = []
-    for search_result in enhanced_search_monsters(search_query=query, limit=limit, max_hops=4):
+    for search_result in enhanced_search_monsters(
+        search_query=query, limit=limit, max_hops=4
+    ):
         monster_key = search_result.monster_key
         if not monster_key:
             continue
@@ -148,6 +153,7 @@ def get_search_monsters(
                 background_image=monster.background_image,
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
+                tags=monster.tags,
             )
         )
     return results
@@ -185,7 +191,6 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
         "creature_types": creature_types,
         "max_hops": 4,
     }
-    
     if request.min_cr is not None or request.max_cr is not None:
         search_kwargs["min_cr"] = request.min_cr
         search_kwargs["max_cr"] = request.max_cr
@@ -211,6 +216,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
                 background_image=monster.background_image,
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
+                tags=monster.tags,
             )
         )
     return results
@@ -219,7 +225,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
 @router.post("/monsters/enhanced")
 def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearchResult:
     """
-    Enhanced search endpoint that returns monsters with facets based on search results
+    Enhanced search endpoint that returns monsters with facets based on the full database
     """
     limit = request.limit if request.limit is not None else 50
 
@@ -248,7 +254,6 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
         "creature_types": creature_types,
         "max_hops": 4,
     }
-    
     if request.min_cr is not None or request.max_cr is not None:
         search_kwargs["min_cr"] = request.min_cr
         search_kwargs["max_cr"] = request.max_cr
@@ -274,14 +279,13 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
                 background_image=monster.background_image,
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
+                tags=monster.tags,
             )
         )
-    
-    # Calculate facets based on search results
-    facets = _calculate_facets(results)
-    
-    return MonsterSearchResult(
-        monsters=results,
-        facets=facets,
-        total=len(results)
-    )
+
+    # Always return facets based on the full database, not just search results
+    # This ensures all filter options remain visible with their full counts
+    all_monsters = _get_all_monsters()
+    facets = _calculate_facets(all_monsters)
+
+    return MonsterSearchResult(monsters=results, facets=facets, total=len(results))

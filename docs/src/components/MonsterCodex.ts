@@ -10,6 +10,8 @@ import './MonsterSimilar.js';
 import './MonsterLore.js';
 import './MonsterEncounters.js';
 import './MonsterStatblock.js';
+import './SvgIcon.js';
+import './TagPopup.js';
 import { Task } from '@lit/task';
 
 @customElement('monster-codex')
@@ -27,6 +29,8 @@ export class MonsterCodex extends LitElement {
   @state() private selectedMonsterKey: string | null = null; // Track selected monster for sticky behavior
   @state() private contentTab: 'preview' | 'lore' | 'encounters' = 'preview';
   @state() private expandedMonsterKey: string | null = null; // Track which monster row has drawer expanded
+  @state() private tagPopupOpen = false;
+  @state() private selectedTagName = '';
 
   private searchApi = new MonsterSearchApi();
   private apiStore = new ApiMonsterStore();
@@ -71,7 +75,6 @@ export class MonsterCodex extends LitElement {
     :host {
       --border-color: var(--fg-color);
       display: block;
-      height: 100%;
       min-height: 100vh;
     }
 
@@ -89,7 +92,7 @@ export class MonsterCodex extends LitElement {
       .codex-container {
         display: grid;
         grid-template-columns: 340px 1fr 400px;
-        height: 100vh;
+        min-height: 100vh;
         gap: 0;
       }
 
@@ -670,6 +673,13 @@ export class MonsterCodex extends LitElement {
       line-height: 1.2;
     }
 
+    .monster-cr {
+      font-size: 1rem;
+      font-weight: normal;
+      color: rgba(255, 255, 255, 0.7);
+      margin-left: 0.5rem;
+    }
+
     .monster-tags {
       display: flex;
       flex-wrap: wrap;
@@ -684,6 +694,32 @@ export class MonsterCodex extends LitElement {
       border-radius: 20px;
       font-size: 0.8rem;
       font-weight: bold;
+    }
+
+    .monster-tag-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .monster-tag-icon:hover {
+      border-color: rgba(255, 255, 255, 0.6);
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .tag-icon {
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: white;
     }
 
     .monster-description {
@@ -716,6 +752,13 @@ export class MonsterCodex extends LitElement {
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 0.5rem; /* Space between icon and text */
+    }
+
+    .button-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
     }
 
     .monster-action-btn:hover {
@@ -1138,6 +1181,13 @@ export class MonsterCodex extends LitElement {
           `}
         </div>
       </div>
+
+      <!-- Tag Popup -->
+      <tag-popup
+        .tagName=${this.selectedTagName}
+        .open=${this.tagPopupOpen}
+        @tag-popup-close=${this.handleTagPopupClose}>
+      </tag-popup>
     `;
   }
 
@@ -1189,12 +1239,17 @@ export class MonsterCodex extends LitElement {
           @click=${(e: Event) => this.handleMonsterSearchCardClick(e, monster.key)}
           @mouseenter=${() => this.previewMonsterByKey(monster.key)}>
           <div class="monster-info">
-            <div class="monster-name">${monster.name}</div>
+            <div class="monster-name">${monster.name} <span class="monster-cr">CR ${monster.cr}</span></div>
 
             <div class="monster-tags">
-              ${tags.map(tag => html`
-                <span class="monster-tag">${tag}</span>
-              `)}
+              ${monster.tags ? monster.tags.map(tag => html`
+                <span class="monster-tag-icon"
+                      title="${tag.description}"
+                      style="background: ${tag.color || 'rgba(0, 0, 0, 0.6)'};"
+                      @click=${(e: Event) => this.handleTagClick(e, tag.key)}>
+                  ${tag.icon ? html`<svg-icon src="${tag.icon.replace('.svg', '')}" class="tag-icon"></svg-icon>` : ''}
+                </span>
+              `) : ''}
             </div>
 
             ${monster.tag_line ? html`<div class="monster-description">${monster.tag_line}</div>` : ''}
@@ -1202,10 +1257,12 @@ export class MonsterCodex extends LitElement {
             <div class="monster-actions">
               <button class="monster-action-btn"
                       @click=${(e: Event) => this.handleStatblockButtonClick(e, monster.key)}>
-                View Stats
+                <svg-icon src="orc-head" class="button-icon"></svg-icon>
+                Stats
               </button>
               <button class="monster-action-btn secondary"
                       @click=${(e: Event) => this.handleForgeButtonClick(e, monster.key)}>
+                <svg-icon src="anvil" class="button-icon"></svg-icon>
                 Forge Stats
               </button>
             </div>
@@ -1417,8 +1474,8 @@ export class MonsterCodex extends LitElement {
     // Track analytics for statblock click
     trackStatblockClick(key, 'search');
 
-    // Same behavior as clicking the card - toggle drawer/show statblock
-    this.toggleMonsterDrawer(key);
+    // Navigate directly to monster page instead of toggling drawer
+    window.location.href = `/monsters/${key}/`;
   }
 
   private handleForgeButtonClick(e: Event, key: string) {
@@ -1430,6 +1487,20 @@ export class MonsterCodex extends LitElement {
 
     // Navigate to the generate page with this monster
     window.location.href = `/generate/?monster=${key}`;
+  }
+
+  private handleTagClick(e: Event, tagName: string) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Open tag popup with the selected tag
+    this.selectedTagName = tagName;
+    this.tagPopupOpen = true;
+  }
+
+  private handleTagPopupClose() {
+    this.tagPopupOpen = false;
+    this.selectedTagName = '';
   }
 
   firstUpdated() {

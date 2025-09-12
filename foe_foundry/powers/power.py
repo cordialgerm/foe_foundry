@@ -8,6 +8,7 @@ from ..features import Feature
 from ..power_types import PowerType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
+from ..tags import TagDefinition
 from ..utils import name_to_key
 from .flags import theme_flag
 from .power_category import PowerCategory
@@ -57,7 +58,6 @@ class Power(ABC):
         self.theme = theme
         self.reference_statblock = reference_statblock
         self.icon = icon
-
         if self.power_level == EXTRA_HIGH_POWER:
             self.power_level_text = "Extra High Power"
         elif self.power_level == HIGH_POWER:
@@ -78,6 +78,37 @@ class Power(ABC):
     @property
     def theme_key(self) -> str | None:
         return name_to_key(self.theme) if self.theme is not None else None
+
+    @property
+    def tags(self) -> List[TagDefinition]:
+        """Generate tags automatically from power properties"""
+        tags = []
+
+        # Add power type tags
+        if self.power_types:
+            for power_type in self.power_types:
+                tags.append(TagDefinition.from_power_type(power_type))
+
+        # Add creature type tags
+        if self.creature_types:
+            for creature_type in self.creature_types:
+                tags.append(TagDefinition.from_creature_type(creature_type))
+
+        # Add damage type tags
+        if self.damage_types:
+            for damage_type in self.damage_types:
+                tags.append(TagDefinition.from_damage_type(damage_type))
+
+        # Add role tags
+        if self.roles:
+            for role in self.roles:
+                tags.append(TagDefinition.from_role(role))
+
+        # Add theme tag
+        if self.theme:
+            tags.append(TagDefinition.from_theme(self.theme))
+
+        return tags
 
     @abstractmethod
     def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:

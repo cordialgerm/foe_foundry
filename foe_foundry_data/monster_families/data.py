@@ -17,22 +17,27 @@ from foe_foundry.utils.monster_content import (
     strip_yaml_frontmatter,
 )
 
-from ..base import MonsterFamilyInfo, MonsterTemplateInfoModel
+from ..base import MonsterFamilyInfo, MonsterInfoModel, MonsterTemplateInfoModel
+from ..mask import random_mask
 from ..refs import MonsterRefResolver
 
 ref_resolver = MonsterRefResolver()
 
 
-def _convert_template_to_info_model(template, base_url: str) -> MonsterTemplateInfoModel:
+def _convert_template_to_info_model(
+    template, base_url: str
+) -> MonsterTemplateInfoModel:
     """Convert a MonsterTemplate to MonsterTemplateInfoModel."""
     if base_url.endswith("/"):
         base_url = base_url[:-1]
 
     # Convert image path to absolute URL
     if template.primary_image_url is not None:
-        relative_image = template.primary_image_url.relative_to(Path.cwd() / "docs").as_posix()
+        relative_image = template.primary_image_url.relative_to(
+            Path.cwd() / "docs"
+        ).as_posix()
         absolute_image = urljoin(base_url, relative_image)
-        
+
         # Get image properties
         transparent_edges = has_transparent_edges(template.primary_image_url)
         if not transparent_edges:
@@ -41,9 +46,9 @@ def _convert_template_to_info_model(template, base_url: str) -> MonsterTemplateI
         else:
             grayscale = False
             background_color = None
-            
+
         # Construct mask CSS
-        mask_css = f"mask-image: url('{absolute_image}')" if transparent_edges else ""
+        mask_css = random_mask.random_mask_css()
     else:
         absolute_image = ""
         transparent_edges = False
@@ -54,7 +59,7 @@ def _convert_template_to_info_model(template, base_url: str) -> MonsterTemplateI
     return MonsterTemplateInfoModel(
         key=template.key,
         name=template.name,
-        url=f"/monsters/{template.key}/",
+        url=f"{base_url}/monsters/{template.key}/",
         image=absolute_image,
         tagline=template.tag_line,
         transparent_edges=transparent_edges,
@@ -70,13 +75,11 @@ def load_monster_families() -> list[MonsterFamilyInfo]:
     """Load monster families from markdown files."""
     families_dir = Path.cwd() / "docs" / "families"
     base_url = get_base_url()
-    
     families = []
     for md_file in families_dir.glob("*.md"):
         family = _load_family_from_file(md_file, base_url)
         if family is not None:
             families.append(family)
-    
     return families
 
 
@@ -84,26 +87,34 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
     """Create MonsterFamilyInfo from a markdown file."""
     with md_file.open() as f:
         content = f.read()
-        
     frontmatter = extract_yaml_frontmatter(content)
     is_monster_family = frontmatter.get("is_monster_family", False)
     if not is_monster_family:
         return None
-        
+
     key = name_to_key(md_file.stem)
-    name = frontmatter.get("short_title", frontmatter.get("title"))
+    url = f"/families/{md_file.stem}/"
+
+    fallback_title = frontmatter.get("short_title", frontmatter.get("title"))
+    name = frontmatter.get("family_name", fallback_title)
     icon = frontmatter.get("icon")
     tag_line = frontmatter.get("tag_line")
-    
+
     if not isinstance(name, str):
-        raise ValueError(f"Invalid title for family '{key}': {name}. Expected a string.")
-    
+        raise ValueError(
+            f"Invalid title for family '{key}': {name}. Expected a string."
+        )
+
     if not isinstance(icon, str):
-        raise ValueError(f"Icon not found for family '{key}'. Ensure it is defined in the YAML frontmatter.")
-    
+        raise ValueError(
+            f"Icon not found for family '{key}'. Ensure it is defined in the YAML frontmatter."
+        )
+
     if not isinstance(tag_line, str):
-        raise ValueError(f"Tag line not found for family '{key}'. Ensure it is defined in the YAML frontmatter.")
-    
+        raise ValueError(
+            f"Tag line not found for family '{key}'. Ensure it is defined in the YAML frontmatter."
+        )
+
     markdown_content = strip_yaml_frontmatter(content)
     monster_links = extract_monster_hyperlinks(markdown_content)
 
@@ -112,15 +123,37 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
     for link in monster_links:
         ref = ref_resolver.resolve_monster_ref(link)
         if ref is None:
-            raise ValueError(f"Monster reference '{link}' in family '{name}' could not be resolved.")
+            raise ValueError(
+                f"Monster reference '{link}' in family '{name}' could not be resolved."
+            )
         template = ref.template
         template_keys.add(template.key)
 
     # Convert templates to info models
     templates = []
+    monsters = []
     for template in AllTemplates:
         if template.key in template_keys:
             template_info = _convert_template_to_info_model(template, base_url)
             templates.append(template_info)
 
-    return MonsterFamilyInfo(key=key, name=name, icon=icon, tag_line=tag_line, templates=templates)
+            # Also add monster info for each monster in the template
+            for monster in template.monsters:
+                monsters.append(
+                    MonsterInfoModel(
+                        key=monster.key,
+                        name=monster.name,
+                        cr=monster.cr,
+                        template=template.key,
+                    )
+                )
+
+    return MonsterFamilyInfo(
+        key=key,
+        url=url,
+        name=name,
+        icon=icon,
+        tag_line=tag_line,
+        templates=templates,
+        monsters=monsters,
+    )

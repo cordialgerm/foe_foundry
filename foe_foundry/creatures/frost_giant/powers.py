@@ -31,7 +31,6 @@ PerksOffense = [
     giant.BigWindup,
     giant.CrushTheInsect,
     giant.Earthshaker,
-
 ]
 
 PerksThrowStuff = [

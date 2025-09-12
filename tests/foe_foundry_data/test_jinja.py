@@ -19,9 +19,9 @@ def _check_header(html: str, header: str):
     bs_header = bs.find(is_header)
 
     assert bs_header is not None, "Header not found"
-    assert bs_header.text == header, (
-        f"Header text does not match: {bs_header.text} != {header}"
-    )
+    assert (
+        bs_header.text == header
+    ), f"Header text does not match: {bs_header.text} != {header}"
 
 
 def test_bonus_action_rendering():

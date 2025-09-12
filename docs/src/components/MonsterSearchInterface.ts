@@ -56,6 +56,24 @@ export class MonsterSearchInterface extends LitElement {
       font-size: 1rem;
       cursor: pointer;
       transition: background-color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    /* Mobile: Icon-only search button to fit on same line */
+    @media (max-width: 768px) {
+      .search-button {
+        padding: 0.75rem;
+        min-width: 44px; /* Touch-friendly minimum size */
+      }
+
+      .search-button .button-text {
+        display: none; /* Hide text on mobile */
+      }
+
+      .search-button::before {
+        content: "🔍"; /* Search icon */
+        font-size: 1.2rem;
+      }
     }
 
     .search-button:hover {
@@ -105,11 +123,12 @@ export class MonsterSearchInterface extends LitElement {
 
     @media (max-width: 768px) {
       .search-bar {
-        flex-direction: column;
+        flex-direction: row; /* Keep search bar horizontal on mobile */
+        gap: 0.5rem;
       }
 
       .search-button {
-        width: 100%;
+        flex-shrink: 0; /* Prevent button from shrinking */
       }
 
       .results-grid {
@@ -120,10 +139,10 @@ export class MonsterSearchInterface extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    
+
     // Listen for search seed selections
     this.addEventListener('seed-selected', this.handleSeedSelected as EventListener);
-    
+
     if (this.initialQuery) {
       this.query = this.initialQuery;
       this.performSearch();
@@ -134,20 +153,20 @@ export class MonsterSearchInterface extends LitElement {
     return html`
       <div class="search-container">
         <div class="search-bar">
-          <input 
-            type="text" 
+          <input
+            type="text"
             class="search-input"
             placeholder="Search for monsters by theme, environment, or type..."
             .value=${this.query}
             @input=${this.handleInput}
             @keydown=${this.handleKeydown}
           />
-          <button 
+          <button
             class="search-button"
             @click=${this.performSearch}
             ?disabled=${this.isSearching}
           >
-            ${this.isSearching ? 'Searching...' : 'Search'}
+            <span class="button-text">${this.isSearching ? 'Searching...' : 'Search'}</span>
           </button>
         </div>
 
@@ -168,7 +187,7 @@ export class MonsterSearchInterface extends LitElement {
     if (this.results.length === 0 && this.query) {
       return html`
         <div class="no-results">
-          No monsters found for "${this.query}". Try a different search term or browse our 
+          No monsters found for "${this.query}". Try a different search term or browse our
           <a href="/monsters/">monster catalog</a>.
         </div>
       `;
@@ -199,12 +218,12 @@ export class MonsterSearchInterface extends LitElement {
   private handleInput(e: Event) {
     const target = e.target as HTMLInputElement;
     this.query = target.value;
-    
+
     // Debounced search
     if (this.debounceTimer) {
       clearTimeout(this.debounceTimer);
     }
-    
+
     this.debounceTimer = setTimeout(() => {
       if (this.query.length >= 2) {
         this.performSearch();
@@ -238,13 +257,13 @@ export class MonsterSearchInterface extends LitElement {
     }
 
     this.isSearching = true;
-    
+
     try {
       const searchRequest: MonsterSearchRequest = {
         query: this.query,
         limit: 12 // Limit for homepage display
       };
-      
+
       const result = await this.searchApi.searchMonsters(searchRequest);
       this.results = result.monsters;
     } catch (error) {
