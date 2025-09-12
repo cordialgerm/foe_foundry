@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Test</title>
+    <style>
+        :root {
+            --box-shadow-color: rgba(194, 154, 91, 0.5);
+            --tertiary-color: #c29a5b;
+            --fg-color: #333;
+        }
+        body {
+            padding: 2rem;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .test-container {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            align-items: center;
+        }
+    </style>
+    <script type="module" src="/site/scripts/main.js"></script>
+</head>
+<body>
+    <h1>Button Styling Test</h1>
+    
+    <div class="test-container">
+        <h3>ForgeButton:</h3>
+        <forge-button monster-key="test-key"></forge-button>
+    </div>
+    
+    <div class="test-container">
+        <h3>DownloadButton:</h3>
+        <download-button monster-key="test-key"></download-button>
+    </div>
+    
+    <div class="test-container">
+        <h3>RerollButton:</h3>
+        <reroll-button monster-key="test-key"></reroll-button>
+    </div>
+    
+    <div class="test-container">
+        <h3>SvgIconButton:</h3>
+        <svg-icon-button src="death-note" title="Test Button" shimmer="true"></svg-icon-button>
+    </div>
+</body>
+</html>

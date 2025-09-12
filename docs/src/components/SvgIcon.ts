@@ -33,6 +33,11 @@ export class SvgIcon extends LitElement {
           animation: none !important;
         }
 
+        .shimmer svg {
+          filter: drop-shadow(0 0 2px var(--box-shadow-color));
+          animation: shimmer 2.5s ease-in-out infinite;
+        }
+
         @keyframes jiggle {
           0% {
             transform: rotate(0deg) translateX(0);
@@ -62,6 +67,17 @@ export class SvgIcon extends LitElement {
             transform: rotate(-1deg) translateX(-0.5px);
           }
         }
+
+        @keyframes shimmer {
+          0%, 100% {
+            filter: drop-shadow(0 0 2px var(--box-shadow-color));
+            opacity: 0.8;
+          }
+          50% {
+            filter: drop-shadow(0 0 6px var(--box-shadow-color)) drop-shadow(0 0 3px var(--tertiary-color, #c29a5b));
+            opacity: 1;
+          }
+        }
       `
   ];
 
@@ -76,6 +92,12 @@ export class SvgIcon extends LitElement {
    */
   @property()
   jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = false;
+
+  /**
+   * Shimmer/sparkle animation. When true, adds a subtle shimmer effect.
+   */
+  @property({ type: Boolean })
+  shimmer: boolean = false;
 
   @property({ attribute: false })
   private svgContent: string = '';
@@ -119,6 +141,7 @@ export class SvgIcon extends LitElement {
       'placeholder': true,
       'jiggle-on-hover': isJiggleOnHover,
       'jiggle-until-click': isJiggleUntilClick,
+      'shimmer': this.shimmer,
     };
     const classString = Object.entries(classes)
       .filter(([_, v]) => v)

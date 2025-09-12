@@ -437,6 +437,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                             title="Read the Foe Foundry Codex"
                             src="death-note"
                             jiggle="jiggleUntilClick"
+                            .shimmer=${true}
                             class="showcase-button codex"
                             @click="${this._handleCodexClick}"
                         >
