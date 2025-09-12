@@ -183,3 +183,33 @@ def test_get_monsters_by_family_404():
     assert response.status_code == 404
     data = response.json()
     assert "Family 'nonexistent-family' not found" in data["detail"]
+
+
+def test_get_all_families():
+    """Test the families endpoint returns MonsterFamilyInfo objects with monsters array"""
+    response = client.get("/api/v1/monsters/families")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+    assert len(data) > 0
+    
+    # Verify each family has the expected structure
+    for family in data:
+        assert "key" in family
+        assert "name" in family
+        assert "url" in family
+        assert "icon" in family
+        assert "tag_line" in family
+        assert "templates" in family
+        assert "monsters" in family
+        assert isinstance(family["monsters"], list)
+        
+        # Ensure there's no monster_count field (this should be calculated on frontend)
+        assert "monster_count" not in family
+        
+        # Verify monsters structure
+        for monster in family["monsters"]:
+            assert "key" in monster
+            assert "name" in monster
+            assert "cr" in monster
+            assert "template" in monster

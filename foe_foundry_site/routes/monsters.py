@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic.dataclasses import dataclass
 
 from foe_foundry.creatures import AllTemplates
-from foe_foundry_data.base import MonsterFamilyInfo, MonsterInfoModel, MonsterTemplateInfoModel
+from foe_foundry_data.base import MonsterFamilyInfo, MonsterInfoModel
 from foe_foundry_data.monster_families import MonsterFamilies
 from foe_foundry_data.monsters import MonsterModel, PowerLoadoutModel
 from foe_foundry_data.monsters.all import Monsters
@@ -104,39 +104,13 @@ def get_new_monsters(
     ]
 
 
-@dataclass(kw_only=True)
-class MonsterFamilyResponse:
-    """Monster family with computed monster count for API response"""
-    key: str
-    url: str
-    name: str
-    icon: str
-    tag_line: str
-    templates: list[MonsterTemplateInfoModel]
-    monsters: list[MonsterInfoModel]
-    monster_count: int
-
-
 @router.get("/families")
-def get_all_families() -> list[MonsterFamilyResponse]:
+def get_all_families() -> list[MonsterFamilyInfo]:
     """
     Returns a list of all monster families with basic metadata
     """
     try:
-        families = MonsterFamilies.families
-        return [
-            MonsterFamilyResponse(
-                key=family.key,
-                url=family.url,
-                name=family.name,
-                icon=family.icon,
-                tag_line=family.tag_line,
-                templates=family.templates,
-                monsters=family.monsters,
-                monster_count=len(family.monsters)
-            )
-            for family in families
-        ]
+        return MonsterFamilies.families
     except Exception as e:
         raise HTTPException(
             status_code=500, detail=f"Error loading families data: {str(e)}"
