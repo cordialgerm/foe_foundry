@@ -29,6 +29,7 @@ class MonsterInfoModel:
     creature_type: str | None = None
     tag_line: str | None = None
     tags: List[MonsterTagInfo] | None = None
+    family_key: str | None = None  # Just store the key instead of full object
 
 
 @dataclass(kw_only=True)

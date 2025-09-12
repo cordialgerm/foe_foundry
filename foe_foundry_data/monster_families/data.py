@@ -151,7 +151,8 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
                     )
                 )
 
-    return MonsterFamilyInfo(
+    # Create the family info object
+    family_info = MonsterFamilyInfo(
         key=key,
         url=url,
         name=name,
@@ -160,3 +161,9 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
         templates=templates,
         monsters=monsters,
     )
+    
+    # Now populate the back-references in the monsters (store family key to avoid circular references)
+    for monster in monsters:
+        monster.family_key = key
+
+    return family_info

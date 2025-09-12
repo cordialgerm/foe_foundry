@@ -27,7 +27,7 @@ from foe_foundry.utils.image import (
     is_grayscaleish,
 )
 
-from ..base import MonsterInfoModel, MonsterTagInfo, PowerLoadoutModel
+from ..base import MonsterInfoModel, MonsterTagInfo, PowerLoadoutModel, MonsterFamilyInfo
 from ..jinja import render_statblock_fragment
 from ..monster_families import MonsterFamilies
 
@@ -93,6 +93,7 @@ class MonsterModel:
     primary_image_is_grayscaleish: bool
     primary_image_background_color: str | None = None
     create_date: datetime
+    family_key: str | None = None  # Just store the key instead of full object
 
     @property
     def key(self) -> str:
@@ -195,6 +196,10 @@ class MonsterModel:
             for f in MonsterFamilies.families
             if stats.key in {m.key for m in f.monsters}
         ]
+        
+        # Get the first family this monster belongs to (monsters should only belong to one family)
+        monster_family_key = families[0].key if families else None
+        
         for family in families:
             for m in family.monsters:
                 if m.key not in related_monster_keys:
@@ -287,4 +292,5 @@ class MonsterModel:
             primary_image_is_grayscaleish=primary_image_is_grayscaleish,
             primary_image_background_color=primary_image_background_color,
             create_date=template.create_date,
+            family_key=monster_family_key,
         )
