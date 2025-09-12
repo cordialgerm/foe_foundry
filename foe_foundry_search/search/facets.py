@@ -4,6 +4,7 @@ Utilities for parsing search queries into facets (creature types, CR values).
 
 import re
 from typing import Optional, Tuple
+
 from foe_foundry.creature_types import CreatureType
 
 
@@ -25,7 +26,7 @@ def parse_cr_from_query(query: str) -> Optional[float]:
     query = query.strip().lower()
 
     # Pattern 1: "CR X" or "cr X"
-    cr_pattern = r'\bcr\s+(\d+/\d+|\d+(?:\.\d+)?)\b'
+    cr_pattern = r"\bcr\s+(\d+/\d+|\d+(?:\.\d+)?)\b"
     match = re.search(cr_pattern, query, re.IGNORECASE)
     if match:
         return _parse_cr_value(match.group(1))

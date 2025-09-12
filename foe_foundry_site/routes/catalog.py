@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from typing import List
+
 from fastapi import APIRouter
 from pydantic import BaseModel
 
@@ -13,6 +14,7 @@ router = APIRouter(prefix="/api/v1/catalog")
 
 class CatalogTemplateModel(BaseModel):
     """Model for a template with its monsters in the catalog"""
+
     key: str
     name: str
     url: str
@@ -21,6 +23,7 @@ class CatalogTemplateModel(BaseModel):
 
 class CatalogFamilyModel(BaseModel):
     """Model for a family with its monsters in the catalog"""
+
     key: str
     name: str
     url: str
