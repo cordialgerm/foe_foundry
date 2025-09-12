@@ -14,9 +14,6 @@ from typing import Dict, List
 
 from foe_foundry.creature_types import CreatureType
 from foe_foundry.damage import DamageType
-from foe_foundry.environs import (
-    Region,
-)
 from foe_foundry.features import ActionType
 from foe_foundry.power_types import PowerType
 from foe_foundry.role_types import MonsterRole
@@ -33,6 +30,7 @@ from ..environs.region import (
     LoftyMountains,
     OpenRoads,
     ParchedSands,
+    Region,
     RestlessSea,
     RollingGrasslands,
     TangledForest,
@@ -702,7 +700,7 @@ def get_tag_definition(tag_name_or_key: str) -> TagDefinition:
     tag_key = name_to_key(tag_name_or_key)
     tag = TAG_DEFINITIONS_BY_KEY.get(tag_key)
     if tag is None:
-        raise ValueError(f"Tag '{tag_key}' not found in definitions.")
+        raise ValueError(f"Tag '{tag_name_or_key}' not found in definitions.")
     return tag
 
 
