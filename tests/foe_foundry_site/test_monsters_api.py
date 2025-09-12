@@ -106,9 +106,9 @@ def test_similar_monsters_grouping_logic():
         monsters = group["monsters"]
         if len(monsters) > 1:
             crs = [monster["cr"] for monster in monsters]
-            assert crs == sorted(crs), (
-                f"Monsters in {group['name']} should be sorted by CR"
-            )
+            assert crs == sorted(
+                crs
+            ), f"Monsters in {group['name']} should be sorted by CR"
 
 
 def test_similar_monsters_cr_sorting():
@@ -147,9 +147,9 @@ def test_similar_monsters_cr_sorting():
 
                     if prev_min_cr_diff is not None:
                         # CR differences should be in ascending order
-                        assert cr_diff >= prev_min_cr_diff, (
-                            f"Groups should be sorted by CR difference. Previous: {prev_min_cr_diff}, Current: {cr_diff}"
-                        )
+                        assert (
+                            cr_diff >= prev_min_cr_diff
+                        ), f"Groups should be sorted by CR difference. Previous: {prev_min_cr_diff}, Current: {cr_diff}"
 
                     prev_min_cr_diff = cr_diff
 
@@ -158,3 +158,58 @@ def test_similar_monsters_404():
     """Test that non-existent monsters return 404"""
     response = client.get("/api/v1/monsters/nonexistent-monster/similar")
     assert response.status_code == 404
+
+
+def test_get_monsters_by_family():
+    """Test the new family endpoint"""
+    # Test with a known family - criminals
+    response = client.get("/api/v1/monsters/family/criminals")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+
+    # Verify each monster has the expected structure
+    for monster in data:
+        assert "key" in monster
+        assert "name" in monster
+        assert "cr" in monster
+        assert "template" in monster
+        assert isinstance(monster["cr"], (int, float))
+
+
+def test_get_monsters_by_family_404():
+    """Test that non-existent families return 404"""
+    response = client.get("/api/v1/monsters/family/nonexistent-family")
+    assert response.status_code == 404
+    data = response.json()
+    assert "Family 'nonexistent-family' not found" in data["detail"]
+
+
+def test_get_all_families():
+    """Test the families endpoint returns MonsterFamilyInfo objects with monsters array"""
+    response = client.get("/api/v1/monsters/families")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+    assert len(data) > 0
+
+    # Verify each family has the expected structure
+    for family in data:
+        assert "key" in family
+        assert "name" in family
+        assert "url" in family
+        assert "icon" in family
+        assert "tag_line" in family
+        assert "templates" in family
+        assert "monsters" in family
+        assert isinstance(family["monsters"], list)
+
+        # Ensure there's no monster_count field (this should be calculated on frontend)
+        assert "monster_count" not in family
+
+        # Verify monsters structure
+        for monster in family["monsters"]:
+            assert "key" in monster
+            assert "name" in monster
+            assert "cr" in monster
+            assert "template" in monster

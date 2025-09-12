@@ -132,12 +132,18 @@ class StatblockJinjaContext:
                 }
             )
         )
-        
+
         # Create senses without passive perception for Black Flag format
         if self.senses:
             senses_parts = [part.strip() for part in self.senses.split(",")]
-            senses_no_passive = [part for part in senses_parts if not part.startswith("Passive Perception")]
-            self.senses_no_passive_perception = ", ".join(senses_no_passive) if senses_no_passive else ""
+            senses_no_passive = [
+                part
+                for part in senses_parts
+                if not part.startswith("Passive Perception")
+            ]
+            self.senses_no_passive_perception = (
+                ", ".join(senses_no_passive) if senses_no_passive else ""
+            )
         else:
             self.senses_no_passive_perception = ""
 

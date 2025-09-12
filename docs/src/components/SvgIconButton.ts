@@ -19,6 +19,12 @@ export class SvgIconButton extends LitElement {
     @property()
     jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = 'true';
 
+    /**
+     * Shimmer/sparkle animation. When true, adds a subtle shimmer effect.
+     */
+    @property({ type: Boolean })
+    shimmer: boolean = false;
+
 
     @property({ type: Boolean, reflect: true })
     disabled = false;
@@ -40,10 +46,12 @@ export class SvgIconButton extends LitElement {
       justify-content: center;
       transition: all 0.2s ease;
       color: var(--fg-color);
+      box-shadow: 0 0 4px rgba(194, 154, 91, 0.3);
     }
 
     button:hover:not(:disabled) {
       transform: scale(1.05);
+      box-shadow: 0 0 8px rgba(194, 154, 91, 0.6);
     }
 
     button:active:not(:disabled) {
@@ -84,6 +92,7 @@ export class SvgIconButton extends LitElement {
         <svg-icon
           src=${this.src}
           .jiggle=${this.jiggle}
+          .shimmer=${this.shimmer}
         ></svg-icon>
       </button>
     `;

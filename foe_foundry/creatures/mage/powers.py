@@ -421,7 +421,7 @@ TransmuterEsotera = PowerLoadout(
     ],
 )
 
-LoadoutTransmuterAdept   = [TransmuterAdept, TransmuterAttacks, Mistystep]
+LoadoutTransmuterAdept = [TransmuterAdept, TransmuterAttacks, Mistystep]
 LoadoutTransmuterMage = [
     TransmuterMage,
     TransmuterAttacks,

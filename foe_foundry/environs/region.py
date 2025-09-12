@@ -18,6 +18,7 @@ class Region:
     """
 
     name: str  # the name of the region
+    short_description: str  # a brief, evocative player-facing description
     description: str
     features: list[str]
     weather: list[str]
@@ -32,12 +33,10 @@ class Region:
     )
 
 
-# These regions are defined by the A5E rules, and are used to define the environment in which a monster or an NPC can be found.
-### PLACE NEW ENVIRONMENTS BELOW THIS LINE ###
-
 # Alphabetically ordered region objects
 BlastedBadlands = Region(
     name="Blasted Badlands",
+    short_description="A scorched wasteland where ancient ruins rise from the dust like the bones of forgotten gods.",
     description="These deserts are notorious for their many capricious ruins, the devastated landscape the biggest mark left upon the world by the forgotten civilizations that once flourished there. Monsters aplenty roam the wastes as well, so adventurers journeying through it encounter many creatures and constructed terrain exploration challenges.",
     features=[
         "desert",
@@ -60,6 +59,7 @@ BlastedBadlands = Region(
 # Country Shire region definition
 CountryShire = Region(
     name="Country Shire",
+    short_description="Green fields and verdant hills dotted with cozy villages where the greatest danger might be an ornery farm animal.",
     description="Small villages and rural communities, often surrounded by a patchwork of farms, make for a safe and cozy existence with the most threatening events involving an angry bear harassing livestock. Adventurers journeying through this region can expect little danger, and a high number of social encounters.",
     features=[
         "forest",
@@ -92,6 +92,7 @@ CountryShire = Region(
 
 Feywood = Region(
     name="Feywood",
+    short_description="An enchanted forest where the very trees whisper secrets and magic dances in shafts of golden sunlight.",
     description="Home to faeries, sprites, dryads, nymphs, satyrs, and other fey, the animals in this forest are bold and only foolish travelers fail to respect nature as they go along their way. Adventurers journeying through regions like this contend with frequent combat encounters, social encounters, and natural terrain and supernatural exploration challenges.",
     features=[
         "forest",
@@ -127,6 +128,7 @@ Feywood = Region(
 
 FieryHellscape = Region(
     name="Fiery Hellscape",
+    short_description="Molten rock flows freely while burning ash chokes the air in this hellish landscape.",
     description="From active volcanoes to the hottest layers of Hell, these regions are dominated by red-hot lava flows and flaming geysers. Adventurers journeying through these regions can expect to encounter many natural terrain challenges and dangerous creatures.",
     features=[
         "desert",
@@ -147,6 +149,7 @@ FieryHellscape = Region(
 
 FlowingRiver = Region(
     name="Flowing River",
+    short_description="Winding waterways that carry both travelers and tales to distant shores.",
     description="Rivers can provide a convenient and fast way to travel. Encounters are less frequent, and the journey is less arduous.",
     features=[
         "river",
@@ -166,6 +169,7 @@ FlowingRiver = Region(
 
 FrozenWastes = Region(
     name="Frozen Wastes",
+    short_description="An endless expanse of ice and snow, punctuated by jagged peaks and hidden crevasses.",
     description="Endless fields of white and imposing mountains stretching towards the sky fill this icy land, and though it is rather devoid of life it is a place of great peril. Adventurers journeying through this region have to overcome many natural terrain and weather event exploration challenges, and perhaps a few combat or social encounters.",
     features=[
         "arctic",
@@ -190,6 +194,7 @@ FrozenWastes = Region(
 
 HauntedLands = Region(
     name="Haunted Lands",
+    short_description="Cursed territories where shadows move without light and the dead refuse to rest.",
     description="Settlements that have suffered a curse, or areas which are home to powerful undead beings, typically have effects that spread far from the source bringing woe to the people living nearby and attracting prowling monsters and ominous signs. Adventurers journeying through regions like this have plenty of combat encounters, some social encounters, and many circumstance or supernatural exploration challenges.",
     features=[
         "any",
@@ -214,6 +219,7 @@ HauntedLands = Region(
 
 LoftyMountains = Region(
     name="Lofty Mountains",
+    short_description="Towering peaks that scrape the sky, full of winding passes and remote outposts in their mist-shrouded heights.",
     description="Legends from all over the realm speak of remote passes, cataclysmic conflicts and relics of fell power within the ancient ruins of temples to defeated evils, the graves of terrible warlords, and sites of unspeakable rituals. Adventurers journeying through this region have few social encounters, a moderate amount of combat encounters, and many constructed terrain, natural terrain, and supernatural exploration challenges.",
     features=[
         "arctic",
@@ -246,6 +252,7 @@ LoftyMountains = Region(
 
 OpenRoads = Region(
     name="Open Roads",
+    short_description="Well-worn paths that connect both near and distant lands, alive with merchants, pilgrims, and wanderers.",
     description="Well-traveled roads with wide tracks, and plentiful inns, villages, and other stopping points along the way make some journeys less arduous than others. Adventurers journeying along country roads have many social encounters, combat encounters with NPCs or the occasional wild beast, and circumstance and constructed terrain exploration challenges.",
     features=[
         "road",
@@ -270,6 +277,7 @@ OpenRoads = Region(
 
 ParchedSands = Region(
     name="Parched Sands",
+    short_description="Vast dunes of golden sand where the merciless sun tests the endurance of all who dare cross.",
     description="Endless dunes and the baking sun make these deserts difficult and dangerous places in which to survive. Adventurers journeying through this region have very few social encounters.",
     features=[
         "desert",
@@ -295,6 +303,7 @@ ParchedSands = Region(
 
 RestlessSea = Region(
     name="Restless Sea",
+    short_description="The open sea calls to those who seek adventure, but beware the wrath of the storm.",
     description="Rapid currents and quick trade routes make these waters popular with merchants, but only the bravest and most skilled sailors are willing to chance the frequent, dangerous, and unpredictable waves. Adventurers journeying through this region or along its coast have to overcome an unusually high number of weather event exploration challenges, as well as some combat encounters and social encounters.",
     features=[
         "coast",
@@ -314,6 +323,7 @@ RestlessSea = Region(
 
 RollingGrasslands = Region(
     name="Rolling Grasslands",
+    short_description="Sun-kissed meadows where wildflowers dance in the breeze and open fields stretch as far as the eye can see.",
     description="There is great prosperity among the people that call these fields and rolling hills home. Adventurers journeying through this region have frequent social encounters, few combat encounters, and several circumstance exploration challenges.",
     features=[
         "grassland",
@@ -344,6 +354,7 @@ RollingGrasslands = Region(
 
 TangledForest = Region(
     name="Tangled Forest",
+    short_description="Dense woodlands where ancient trees guard their secrets and danger lurks in every shadow.",
     description="From temperate forests and woodlands which harbor bandit encampments to lush tropical jungles home to giant apes and mighty dinosaurs, these regions are covered with trees and undergrowth. Adventurers journeying through regions like this contend with frequent monster encounters and natural terrain and supernatural exploration challenges.",
     features=[
         "forest",
@@ -370,6 +381,7 @@ TangledForest = Region(
 
 UnderlandRealm = Region(
     name="Underland Realm",
+    short_description="A vast subterranean world of twisting caverns where darkness holds dominion over stone.",
     description="There is no map—even among the subterranean cultures that dwell within—that accurately depicts all of these enormous tunnels, which range from natural caverns and dwarven mines to shadow elf cities. Adventurers journeying through this region have combat encounters, some social encounters, and many constructed terrain, natural terrain, and supernatural exploration challenges.",
     features=[
         "forest",
@@ -400,6 +412,7 @@ UnderlandRealm = Region(
 
 UnrelentingMarsh = Region(
     name="Unrelenting Marsh",
+    short_description="Fetid wetlands where mist clings to stagnant waters, drowning ground best left untrodden.",
     description="So named because time seems to slow to a crawl while traversing its swamps, this area is rife with dangerous predators, lethal fauna, and ground best left untrusted. Adventurers journeying through this region have frequent combat encounters, a few social encounters, and many natural terrain exploration challenges.",
     features=[
         "forest",
@@ -432,6 +445,7 @@ UnrelentingMarsh = Region(
 
 UrbanTownship = Region(
     name="Urban Township",
+    short_description="Bustling settlements where the mortal races weave their stories amid stone streets and towering spires.",
     description="From mighty sprawling cities to smaller bustling towns, these areas are full of people—and more people means more accidents, more conflict, and more action. Adventurers journeying through urban areas have many social encounters, combat encounters against NPCs, and both circumstance and constructed terrain exploration challenges.",
     features=[
         "settlement",
@@ -451,6 +465,7 @@ UrbanTownship = Region(
 
 WartornKingdom = Region(
     name="Wartorn Kingdom",
+    short_description="A land scarred by conflict where smoke rises from burning fields and hope hangs by a thread.",
     description="An occupied nation, or one amidst a civil war, is a dubious place populated with aggressive soldiers, desperate commoners, and merciless opportunists. Adventurers journeying through this region have many social encounters, combat encounters against NPCs, and both circumstance and natural terrain exploration challenges as they navigate the country in conflict.",
     features=["any"],
     tiers=[Tiers.tier_1, Tiers.tier_2, Tiers.tier_3],

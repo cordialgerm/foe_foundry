@@ -69,7 +69,7 @@ class _LichSpellcasting(LichPower):
     def __init__(self):
         super().__init__(
             name="Lich Spellcasting",
-            icon="spell-book",
+            icon="spellbook",
             power_level=HIGH_POWER,
             power_types=[PowerType.Attack, PowerType.Magic, PowerType.AreaOfEffect],
         )

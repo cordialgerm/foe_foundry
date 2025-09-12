@@ -1,6 +1,50 @@
 import { PowerStore, PowerLoadout, Power } from './powers';
 import { Monster, MonsterStore, StatblockChangeType, StatblockChange, StatblockRequest, SimilarMonsterGroup } from './monster';
 
+export interface MonsterTemplate {
+    key: string;
+    name: string;
+    url: string;
+    image: string;
+    tagline: string;
+    transparent_edges: boolean;
+    grayscale: boolean;
+    background_color: string | null;
+    mask_css: string;
+    is_new: boolean;
+    create_date: string; // ISO date string
+}
+
+export interface MonsterInfo {
+    key: string;
+    name: string;
+    cr: number | string;
+    template: string;
+}
+
+export interface CatalogTemplate {
+    key: string;
+    name: string;
+    url: string;
+    monsters: MonsterInfo[];
+}
+
+export interface CatalogFamily {
+    key: string;
+    name: string;
+    url: string;
+    monsters: MonsterInfo[];
+}
+
+export interface MonsterFamily {
+    key: string;
+    name: string;
+    tag_line: string;
+    icon: string;
+    monsters: MonsterInfo[];
+    url: string;
+}
+
 function formatCr(cr: string | number): string {
     if (typeof cr === 'string') return cr;
     switch (cr) {
@@ -40,6 +84,33 @@ export class ApiPowerStore implements PowerStore {
 
 export class ApiMonsterStore implements MonsterStore {
 
+    async getNewMonsterTemplates(limit: number = 12): Promise<MonsterTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monster_templates/new?limit=${limit}`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch new monster templates: ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async getMonsterTemplatesByFamily(familyKey: string): Promise<MonsterTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monster_templates/family/${familyKey}`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch monster templates for family '${familyKey}': ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async searchMonsterTemplates(query: string, limit: number = 12): Promise<MonsterTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monster_templates/search/?query=${encodeURIComponent(query)}&limit=${limit}`);
+        if (!response.ok) {
+            throw new Error(`Failed to search monster templates for query '${query}': ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
 
     async getMonster(key: string): Promise<Monster | null> {
         const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
@@ -77,7 +148,7 @@ export class ApiMonsterStore implements MonsterStore {
             creatureType: data.creature_type,
             monsterTemplate: data.template_key,
             monsterTemplateName: data.template_name,
-            monsterFamilies: [], // Not present in API, set empty or infer if possible
+            monsterFamilies: data.family_names || [], // Map from backend family_names to frontend monsterFamilies
             size: data.size,
             cr: formatCr(data.cr),
             loadouts: (data.loadouts || []).map((loadout: any) => ({
@@ -216,6 +287,33 @@ export class ApiMonsterStore implements MonsterStore {
         observer.observe(statblockElement);
         return statblockElement;
     }
+
+    async getCatalogByTemplate(): Promise<CatalogTemplate[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/catalog/by_template`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch catalog by template: ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async getCatalogByFamily(): Promise<CatalogFamily[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/catalog/by_family`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch catalog by family: ${response.statusText}`);
+        }
+        return await response.json();
+    }
+
+    async getAllFamilies(): Promise<MonsterFamily[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monsters/families`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch all families: ${response.statusText}`);
+        }
+        return await response.json();
+    }
 }
 
 // Function to initialize the mock power store
@@ -226,3 +324,6 @@ export function initializePowerStore(): PowerStore {
 export function initializeMonsterStore(): MonsterStore {
     return new ApiMonsterStore();
 }
+
+// Export the store instance for use by components
+export const apiMonsterStore = new ApiMonsterStore();

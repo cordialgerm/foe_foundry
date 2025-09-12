@@ -30,7 +30,7 @@ import networkx as nx
 
 from foe_foundry.creatures import AllTemplates
 from foe_foundry.utils import name_to_key
-from foe_foundry_data.families import load_families
+from foe_foundry_data.monster_families import MonsterFamilies
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.powers import Powers
 from foe_foundry_search.documents import (
@@ -155,7 +155,7 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
         )
 
     # Add FF_FAM nodes: Monster families and their members
-    for family in load_families():
+    for family in MonsterFamilies.families:
         node_id = f"FF_FAM:{family.key}"
         G.add_node(
             node_id,
@@ -288,7 +288,7 @@ def _do_build_graph() -> tuple[nx.DiGraph, list[str]]:
                         )
 
     # Add FF_MON → FF_FAM edges: monsters are assigned to familes
-    for family in load_families():
+    for family in MonsterFamilies.families:
         family_node_id = f"FF_FAM:{family.key}"
         for monster in family.monsters:
             monster_node_id = f"FF_MON:{monster.key}"

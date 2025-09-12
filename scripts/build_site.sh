@@ -21,15 +21,18 @@ export PORT=${PORT:-8080}
 export NODE_ENV=${NODE_ENV:-development}
 echo "NODE_ENV is set to: $NODE_ENV"
 
-# Check for --fast and --help flags
+# Check for --fast, --help, and --no-start flags
 FAST_BUILD=false
 SHOW_HELP=false
+NO_START=false
 for arg in "$@"; do
     if [ "$arg" = "--fast" ]; then
         FAST_BUILD=true
     elif [ "$arg" = "--optimized" ]; then
         # --optimized is now an alias for --fast for backward compatibility
         FAST_BUILD=true
+    elif [ "$arg" = "--no-start" ]; then
+        NO_START=true
     elif [ "$arg" = "--help" ] || [ "$arg" = "-h" ]; then
         SHOW_HELP=true
     fi
@@ -45,6 +48,7 @@ if [ "$SHOW_HELP" = true ]; then
     echo "               skips page generation, uses file copying for development)"
     echo "  --optimized  Alias for --fast"
     echo "  --run        Run the site after building"
+    echo "  --no-start   Prevent automatic site startup (useful for automated builds)"
     echo "  --help, -h   Show this help message"
     echo ""
     echo "Build Mode Performance Comparison:"
@@ -52,6 +56,7 @@ if [ "$SHOW_HELP" = true ]; then
     echo "  --fast build:              ~4s   (development mode, 97% faster)"
     echo ""
     echo "Use --fast for local development, iteration, and CI/CD builds with caching."
+    echo "Use --fast --no-start for automated builds that should not start the server."
     exit 0
 fi
 
@@ -121,14 +126,20 @@ fi
 
 # Check for --run flag
 RUN_SITE=false
+OPEN_PAGE=""
 for arg in "$@"; do
     if [ "$arg" = "--run" ]; then
         RUN_SITE=true
     fi
+    if [[ "$arg" == --open=* ]]; then
+        OPEN_PAGE="${arg#--open=}"
+        # Remove leading slash if present
+        OPEN_PAGE="${OPEN_PAGE#/}"
+    fi
 done
 
-# If --fast is set, also set --run
-if [ "$FAST_BUILD" = true ]; then
+# If --fast is set, also set --run (unless --no-start is specified)
+if [ "$FAST_BUILD" = true ] && [ "$NO_START" = false ]; then
     RUN_SITE=true
 fi
 
@@ -136,8 +147,25 @@ fi
 if [ "$RUN_SITE" = true ]; then
     echo "Running foe_foundry_site..."
     if [ "$FAST_BUILD" = true ]; then
-        poetry run python -m foe_foundry_site --fast
+        poetry run python -m foe_foundry_site --fast &
     else
-        poetry run python -m foe_foundry_site
+        poetry run python -m foe_foundry_site &
     fi
+    SITE_PID=$!
+    # Wait for site to be up (simple check)
+    echo "Waiting for site to launch at $SITE_URL..."
+    for i in {1..30}; do
+        sleep 1
+        if curl -s --head "$SITE_URL" | grep "200 OK" > /dev/null; then
+            echo "Site is up!"
+            break
+        fi
+    done
+    # If --open was specified, open browser to BASE_URL/<page>
+    if [ -n "$OPEN_PAGE" ]; then
+        OPEN_URL="$SITE_URL$OPEN_PAGE"
+        echo "Opening $OPEN_URL in browser..."
+        open "$OPEN_URL"
+    fi
+    wait $SITE_PID
 fi

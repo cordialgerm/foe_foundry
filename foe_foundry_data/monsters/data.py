@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime
 from pathlib import Path
+from typing import List
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -14,7 +15,10 @@ from foe_foundry.creatures import (
     MonsterVariant,
     TemplatesByKey,
 )
+from foe_foundry.environs import Region
+from foe_foundry.environs.affinity import Affinity
 from foe_foundry.statblocks import Statblock
+from foe_foundry.tags import TagDefinition
 from foe_foundry.utils import name_to_key
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
 from foe_foundry.utils.image import (
@@ -23,9 +27,13 @@ from foe_foundry.utils.image import (
     is_grayscaleish,
 )
 
-from ..base import MonsterInfoModel, PowerLoadoutModel
-from ..families import load_families
+from ..base import (
+    MonsterInfoModel,
+    MonsterTagInfo,
+    PowerLoadoutModel,
+)
 from ..jinja import render_statblock_fragment
+from ..monster_families import MonsterFamilies
 
 
 @dataclass(kw_only=True)
@@ -73,6 +81,7 @@ class MonsterModel:
     template_key: str
     variant_name: str
     variant_key: str
+    tags: List[MonsterTagInfo]
 
     statblock_html: str
     template_html: str | None
@@ -88,6 +97,7 @@ class MonsterModel:
     primary_image_is_grayscaleish: bool
     primary_image_background_color: str | None = None
     create_date: datetime
+    family_keys: list[str] | None = None  # Support multiple families
 
     @property
     def key(self) -> str:
@@ -186,8 +196,14 @@ class MonsterModel:
 
         # Also look for any monsters that are in the same family as this monster
         families = [
-            f for f in load_families() if stats.key in {m.key for m in f.monsters}
+            f
+            for f in MonsterFamilies.families
+            if stats.key in {m.key for m in f.monsters}
         ]
+
+        # Get all families this monster belongs to (support multiple families)
+        monster_family_keys = [f.key for f in families] if families else None
+
         for family in families:
             for m in family.monsters:
                 if m.key not in related_monster_keys:
@@ -202,6 +218,59 @@ class MonsterModel:
                         )
                     )
 
+        # Extract tags from statblock and sort them
+        tag_infos = []
+        for monster_tag in stats.tags:
+            # Get key from definition if available, otherwise derive from tag name
+            tag_infos.append(
+                MonsterTagInfo(
+                    tag=monster_tag.name,
+                    key=monster_tag.key,
+                    tag_type=monster_tag.category,
+                    description=monster_tag.description,
+                    icon=monster_tag.icon,
+                    color=monster_tag.color,
+                )
+            )
+
+        if template and hasattr(template, "environments") and template.environments:
+            for env, affinity in template.environments:
+                # Only add region tags for native and common affinities (not rare or unknown)
+                if isinstance(env, Region) and affinity in {
+                    Affinity.native,
+                    Affinity.common,
+                }:
+                    region_tag = TagDefinition.from_region(env)
+                    tag_infos.append(
+                        MonsterTagInfo(
+                            tag=region_tag.name,
+                            key=region_tag.key,
+                            tag_type=region_tag.category,
+                            description=region_tag.description,
+                            icon=region_tag.icon,
+                            color=region_tag.color,
+                        )
+                    )
+
+        # Sort tags by desired order: Creature Type, Role(s), Spellcaster, Tier, Legendary, Damage Type(s)
+        def tag_sort_order(tag: MonsterTagInfo) -> tuple:
+            type_priority = {
+                "creature_type": 1,
+                "species": 2,
+                "monster_role": 3,
+                "theme": 4,
+                "cr_tier": 5,
+                "legendary": 6,
+                "damage_type": 7,
+                "region": 8,
+            }
+            # Get priority, default to 9 for unknown types
+            priority = type_priority.get(tag.tag_type, 9)
+            # Secondary sort by tag name for consistent ordering within same type
+            return (priority, tag.tag)
+
+        tag_infos.sort(key=tag_sort_order)
+
         return MonsterModel(
             name=stats.name,
             cr=stats.cr,
@@ -212,6 +281,7 @@ class MonsterModel:
             template_name=template.name,
             variant_key=stats.variant_key,
             variant_name=variant.name,
+            tags=tag_infos,
             statblock_html=statblock_html,
             template_html=template_html,
             overview_html=overview_html,
@@ -226,4 +296,5 @@ class MonsterModel:
             primary_image_is_grayscaleish=primary_image_is_grayscaleish,
             primary_image_background_color=primary_image_background_color,
             create_date=template.create_date,
+            family_keys=monster_family_keys,
         )

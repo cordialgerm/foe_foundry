@@ -26,20 +26,22 @@ def setup_jinja_env(env: Environment):
 def create_jinja_env():
     """Create Jinja environment with optional jinja_markdown extension"""
     extensions = []
-    
+
     # Try to import and use jinja_markdown if available
     try:
         import jinja_markdown
+
         extensions.append("jinja_markdown.MarkdownExtension")
     except ImportError:
         # jinja_markdown is optional - continue without it
         pass
-    
+
     return Environment(
         loader=PackageLoader("foe_foundry_data", package_path="jinja"),
         autoescape=select_autoescape(),
         extensions=extensions,
     )
+
 
 JinjaEnv = create_jinja_env()
 setup_jinja_env(JinjaEnv)
