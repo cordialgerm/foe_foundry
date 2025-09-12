@@ -51,8 +51,15 @@ Always reference these instructions first and fallback to search or bash command
   - Data preparation: ~20 seconds (poetry run python -m foe_foundry_data + foe_foundry_search)
   - MkDocs build: ~63 seconds
   - Vite build: ~0.5 seconds
-- Fast build (development): `./scripts/build_site.sh --fast` -- takes 4 seconds. Skips data preparation and MkDocs build.
+- Fast build (development): `./scripts/build_site.sh --fast` -- takes 4 seconds. Skips data preparation and MkDocs build. ALSO STARTS THE SERVER.
+- Fast build without server: `./scripts/build_site.sh --fast --no-start` -- takes 4 seconds. Builds but exits cleanly without starting server.
 - Run tests: `SITE_URL=http://127.0.0.1:8080/ poetry run pytest` -- takes 6 minutes 25 seconds. NEVER CANCEL. Set timeout to 480+ seconds.
+- Run TypeScript tests: `npm test` -- runs vitest test suite for TypeScript/JavaScript components.
+
+**For Agents:**
+- **ALWAYS use `--no-start` flag when building for validation**: `./scripts/build_site.sh --fast --no-start`
+- This prevents the build script from starting a server and hanging indefinitely
+- Use `--fast --no-start` for quick iteration and validation during development
 
 **Run the Application:**
 - Start web server: `poetry run python -m foe_foundry_site` (serves on http://127.0.0.1:8080)
@@ -69,6 +76,15 @@ Always reference these instructions first and fallback to search or bash command
 4. **Search functionality**: Access `/powers/all/` and verify content loads
 5. **Build completes without errors**: Both fast and full builds must complete successfully
 
+### TypeScript/JavaScript Testing:
+- **Component tests**: Located in `tests/components/` directory
+- **Test framework**: Vitest with Happy-DOM environment
+- **Test files**: `*.test.ts` files for individual components
+- **Run tests**: `npm test` (single run), `npm run test:watch` (watch mode)
+- **Coverage**: `npm run test:coverage` generates coverage reports
+- **Test environment**: Uses Happy-DOM for lightweight DOM simulation
+- **Component coverage**: Tests for Lit components like monster-builder, monster-statblock, power-loadout, etc.
+
 ### Test Environment Requirements:
 - Always set `SITE_URL=http://127.0.0.1:8080/` when running tests
 - Always set locale variables: `LC_ALL=en_US.UTF-8` and `LANG=en_US.UTF-8`
@@ -78,8 +94,11 @@ Always reference these instructions first and fallback to search or bash command
 - After any Python code changes: `poetry run pytest -x` (stop on first failure for faster feedback)
 - **After any code changes**: `python scripts/format_code.py` (format code consistently)
 - **Before committing**: `python scripts/format_code.py --check` (verify formatting)
-- After build script changes: Test both `./scripts/build_site.sh` and `./scripts/build_site.sh --fast`
+- After build script changes: Test both `./scripts/build_site.sh` and `./scripts/build_site.sh --fast --no-start`
 - After API changes: Test the web server starts and key endpoints respond correctly
+- After TypeScript/JavaScript changes: `npm test` (run component tests)
+- TypeScript test coverage: `npm run test:coverage`
+- Watch mode for TypeScript tests: `npm run test:watch`
 
 ## Common Tasks
 
@@ -96,17 +115,26 @@ export PUPPETEER_SKIP_DOWNLOAD=true
 ```
 .
 ├── foe_foundry/          # Core Python package (monster generation logic)
+├── foe_foundry_agent/    # AI agent integration
 ├── foe_foundry_data/     # Data models and Jinja templates
 ├── foe_foundry_search/   # Whoosh search functionality
 ├── foe_foundry_site/     # FastAPI web application
 ├── docs/                 # MkDocs documentation source
+├── docs_gen/             # Documentation generation tools
+├── docs_theme/           # Custom MkDocs theme
+├── docs/src/             # TypeScript/JavaScript source for Lit components
 ├── scripts/              # Build and utility scripts
 ├── tests/                # Python tests
+├── tests/components/     # TypeScript/JavaScript component tests
+├── tests/integration/    # Integration tests
 ├── data/                 # Monster/power data files
 ├── models/               # ML models (large files)
 ├── site/                 # Generated static site output
 ├── cache/                # Generated data cache
-├── package.json          # npm dependencies (Vite, Lit, Puppeteer)
+├── package.json          # npm dependencies (Vite, Lit, Puppeteer, Vitest)
+├── tsconfig.json         # TypeScript configuration
+├── vitest.config.mjs     # Vitest test configuration
+├── vite.config.mjs       # Vite build configuration
 └── pyproject.toml        # Poetry Python dependencies
 ```
 
@@ -114,14 +142,17 @@ export PUPPETEER_SKIP_DOWNLOAD=true
 - `scripts/build_site.sh` - Main build script
 - `mkdocs.yml` - Documentation configuration
 - `vite.config.mjs` - Frontend build configuration
+- `vitest.config.mjs` - TypeScript test configuration
+- `tsconfig.json` - TypeScript compiler configuration
 - `pyproject.toml` - Python dependencies and project config
 
 ### Development Workflow:
 1. Make changes to Python code in `foe_foundry/`, `foe_foundry_data/`, etc.
-2. Run fast build for rapid feedback: `./scripts/build_site.sh --fast`
+2. Run fast build for rapid feedback: `./scripts/build_site.sh --fast --no-start`
 3. Test locally: `poetry run python -m foe_foundry_site --fast`
 4. Run subset of tests: `poetry run pytest tests/foe_foundry/ -x`
-5. Before committing: Run full build and full test suite
+5. Run TypeScript tests: `npm test`
+6. Before committing: Run full build and full test suite
 
 ### Known Issues and Workarounds:
 - **Puppeteer fails**: Always use `PUPPETEER_SKIP_DOWNLOAD=true` for npm operations
@@ -142,7 +173,9 @@ export PUPPETEER_SKIP_DOWNLOAD=true
 ### Performance Notes:
 - **Full build**: 96 seconds (never cancel, expect MkDocs to take majority of time)
 - **Fast build**: 4 seconds (good for development iterations)
-- **Tests**: 6+ minutes (comprehensive test suite, never cancel)
+- **Fast build without server**: 4 seconds (ideal for automated builds and CI)
+- **TypeScript tests**: ~10 seconds (comprehensive component test suite)
+- **Python tests**: 6+ minutes (comprehensive test suite, never cancel)
 - **Poetry install**: 15 seconds (when deps cached)
 - **npm ci**: 2 seconds (when Puppeteer skipped)
 
