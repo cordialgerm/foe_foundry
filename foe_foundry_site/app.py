@@ -22,6 +22,7 @@ from .routes import (
     redirects,
     search,
     statblocks,
+    tags,
 )
 
 setup_logging()
@@ -58,6 +59,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+site_dir = Path(__file__).parent.parent / "site"
+
+# Store site_dir on app.state for access in route handlers
+app.state.site_dir = site_dir
+
 app.include_router(redirects.router)
 app.include_router(powers.router)
 app.include_router(statblocks.router)
@@ -65,14 +71,8 @@ app.include_router(monsters.router)
 app.include_router(monster_templates.router)
 app.include_router(search.router)
 app.include_router(catalog.router)
+app.include_router(tags.router)
 app.include_router(geo.router)
-
-site_dir = Path(__file__).parent.parent / "site"
-
-# Store site_dir on app.state for access in route handlers
-app.state.site_dir = site_dir
-
-# Include pretty monster router BEFORE static site mount
 app.include_router(pretty_monsters.router)
 
 # Mounts the static site folder create by mkdocs

@@ -29,6 +29,14 @@ def test_monster_model_with_species():
 
     assert stats.name == "Orc Acolyte"
     assert stats.name == f"Orc {PriestVariant.monsters[0].name}"
+    assert any(t for t in stats.tags if t.key == "orc"), (
+        "Orc NPC should have an orc tag"
+    )
+
+
+def test_species_specific_stats_have_tags():
+    for _, _, _, stats in OrcTemplate.generate_all():
+        assert any(t for t in stats.stats.tags if t.key == "orc")
 
 
 def test_orc_has_image():
