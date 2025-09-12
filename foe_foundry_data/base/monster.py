@@ -39,16 +39,16 @@ class MonsterInfoModel:
         """Get family names for this monster (used by API serialization)"""
         if not self.family_keys:
             return None
-        
+
         # Import here to avoid circular dependencies
         from foe_foundry_data.monster_families import MonsterFamilies
-        
+
         family_names = []
         for family_key in self.family_keys:
             family = MonsterFamilies.lookup.get(family_key)
             if family:
                 family_names.append(family.name)
-        
+
         return family_names if family_names else None
 
 
