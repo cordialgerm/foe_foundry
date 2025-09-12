@@ -1,12 +1,12 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { fixture, html } from '@open-wc/testing';
-import { MonsterBuilder } from '../../docs/src/components/MonsterBuilder.js';
+import { MonsterBuilder } from '../../foe_foundry_ui/src/components/MonsterBuilder.js';
 import { MockMonsterStore } from '../mocks/mock-monster-store.js';
 import { MockPowerStore } from '../mocks/mock-power-store.js';
 import '../setup.js';
 
 // Register the component
-import '../../docs/src/components/MonsterBuilder.js';
+import '../../foe_foundry_ui/src/components/MonsterBuilder.js';
 
 describe('MonsterBuilder Component', () => {
   let element: MonsterBuilder;

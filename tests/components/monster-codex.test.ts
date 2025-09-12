@@ -2,9 +2,9 @@
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { fixture, html } from '@open-wc/testing';
-import { MonsterCodex } from '../../docs/src/components/MonsterCodex.js';
+import { MonsterCodex } from '../../foe_foundry_ui/src/components/MonsterCodex.js';
 import '../setup.js';
-import '../../docs/src/components/MonsterCodex.js';
+import '../../foe_foundry_ui/src/components/MonsterCodex.js';
 
 // Mock MonsterSearchApi and ApiMonsterStore
 class MockMonsterSearchApi {

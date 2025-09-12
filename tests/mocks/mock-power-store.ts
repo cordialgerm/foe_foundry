@@ -1,4 +1,4 @@
-import { PowerStore, PowerLoadout, Power } from '../../docs/src/data/powers.js';
+import { PowerStore, PowerLoadout, Power } from '../../foe_foundry_ui/src/data/powers.js';
 
 // Test data fixtures
 export const mockPowers: Power[] = [

@@ -5,13 +5,13 @@ import { expect as chaiExpect } from '@open-wc/testing';
 (global as any).chaiExpect = chaiExpect;
 
 // Mock the CSS adoption utility to avoid errors in tests
-vi.mock('../docs/src/utils/css-adoption.js', () => ({
+vi.mock('../foe_foundry_ui/src/utils/css-adoption.js', () => ({
   SiteCssMixin: (base: any) => base,
   adoptExternalCss: vi.fn()
 }));
 
 // Mock analytics
-vi.mock('../docs/src/utils/analytics.js', () => ({
+vi.mock('../foe_foundry_ui/src/utils/analytics.js', () => ({
   trackStatblockEdit: vi.fn(),
   trackSearch: vi.fn(),
   trackMonsterClick: vi.fn(),
@@ -26,7 +26,7 @@ vi.mock('../docs/src/utils/analytics.js', () => ({
 }));
 
 // Mock GrowthBook utilities
-vi.mock('../docs/src/utils/growthbook.js', () => ({
+vi.mock('../foe_foundry_ui/src/utils/growthbook.js', () => ({
   getFeatureFlags: vi.fn().mockResolvedValue({
     showTutorial: false,
     showStatblockDownloadOptions: false
