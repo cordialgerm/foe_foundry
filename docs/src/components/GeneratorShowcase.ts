@@ -452,6 +452,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <monster-statblock
                 class="${statblockClass}"
