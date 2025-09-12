@@ -3,10 +3,13 @@ from __future__ import annotations
 import collections
 from pathlib import Path
 from typing import Annotated
+import collections
+from pathlib import Path
 
 import yaml
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
+import yaml
 
 from foe_foundry.creature_types import CreatureType
 from foe_foundry_data.base import MonsterInfoModel
@@ -188,7 +191,6 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
         "creature_types": creature_types,
         "max_hops": 4,
     }
-
     if request.min_cr is not None or request.max_cr is not None:
         search_kwargs["min_cr"] = request.min_cr
         search_kwargs["max_cr"] = request.max_cr
@@ -252,7 +254,6 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
         "creature_types": creature_types,
         "max_hops": 4,
     }
-
     if request.min_cr is not None or request.max_cr is not None:
         search_kwargs["min_cr"] = request.min_cr
         search_kwargs["max_cr"] = request.max_cr

@@ -14,7 +14,6 @@ from foe_foundry_search.search.facets import (
 
 class TestFacetParsing:
     """Test the facet parsing utilities."""
-
     def test_parse_cr_from_query(self):
         """Test CR parsing from various query formats."""
         # Test explicit CR patterns
@@ -22,7 +21,6 @@ class TestFacetParsing:
         assert parse_cr_from_query("cr 10") == 10.0
         assert parse_cr_from_query("challenge rating 15") == 15.0
         assert parse_cr_from_query("Challenge Rating 20") == 20.0
-
         # Test fractional CRs
         assert parse_cr_from_query("CR 1/2") == 0.5
         assert parse_cr_from_query("CR 1/4") == 0.25
@@ -66,17 +64,14 @@ class TestFacetParsing:
         creature_type, cr = detect_facet_query("CR 5")
         assert creature_type is None
         assert cr == 5.0
-
         # Test creature type only
         creature_type, cr = detect_facet_query("dragon")
         assert creature_type == CreatureType.Dragon
         assert cr is None
-
         # Test neither
         creature_type, cr = detect_facet_query("goblin warrior")
         assert creature_type is None
         assert cr is None
-
     def test_is_facet_only_query(self):
         """Test determining if a query should be handled as facet-only."""
         # Should be facet-only
@@ -96,7 +91,6 @@ class TestFacetParsing:
 
 class TestEnhancedSearch:
     """Test the enhanced search functionality."""
-
     def test_enhanced_search_with_exact_match(self):
         """Test that exact monster matches are returned with high priority."""
         # This test requires the actual data to be loaded

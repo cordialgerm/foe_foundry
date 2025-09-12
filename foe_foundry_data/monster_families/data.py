@@ -75,13 +75,11 @@ def load_monster_families() -> list[MonsterFamilyInfo]:
     """Load monster families from markdown files."""
     families_dir = Path.cwd() / "docs" / "families"
     base_url = get_base_url()
-
     families = []
     for md_file in families_dir.glob("*.md"):
         family = _load_family_from_file(md_file, base_url)
         if family is not None:
             families.append(family)
-
     return families
 
 
@@ -89,7 +87,6 @@ def _load_family_from_file(md_file: Path, base_url: str) -> MonsterFamilyInfo | 
     """Create MonsterFamilyInfo from a markdown file."""
     with md_file.open() as f:
         content = f.read()
-
     frontmatter = extract_yaml_frontmatter(content)
     is_monster_family = frontmatter.get("is_monster_family", False)
     if not is_monster_family:

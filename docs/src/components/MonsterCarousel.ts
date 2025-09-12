@@ -702,7 +702,7 @@ export class MonsterCarousel extends LitElement {
             if (this.autoplay && this.autoplay.running) {
               const currentSlide = this.activeIndex;
               const totalSlides = this.slides.length;
-              
+
               // Calculate current slides per view based on viewport (same logic as initialization)
               const getCurrentSlidesPerView = () => {
                 const width = window.innerWidth;
@@ -712,7 +712,7 @@ export class MonsterCarousel extends LitElement {
                 if (width >= 576) return 2;
                 return 1;
               };
-              
+
               const currentSlidesPerView = getCurrentSlidesPerView();
 
               // Calculate the last slide index where we still have a full view
@@ -828,8 +828,8 @@ export class MonsterCarousel extends LitElement {
     ].filter(Boolean).join(' ');
 
     // Only prepend baseUrl if the template.url is a relative path
-    const url = template.url.startsWith('http://') || template.url.startsWith('https://') || template.url.startsWith('/') 
-      ? template.url 
+    const url = template.url.startsWith('http://') || template.url.startsWith('https://') || template.url.startsWith('/')
+      ? template.url
       : window.baseUrl ? `${window.baseUrl}/${template.url}` : template.url;
 
     return html`

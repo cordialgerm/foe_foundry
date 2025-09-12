@@ -4,14 +4,12 @@ Utilities for parsing search queries into facets (creature types, CR values).
 
 import re
 from typing import Optional, Tuple
-
 from foe_foundry.creature_types import CreatureType
 
 
 def parse_cr_from_query(query: str) -> Optional[float]:
     """
     Parse a CR value from a search query.
-
     Supports formats like:
     - "CR 5", "cr 5"
     - "Challenge Rating 10", "challenge rating 10"
@@ -27,11 +25,10 @@ def parse_cr_from_query(query: str) -> Optional[float]:
     query = query.strip().lower()
 
     # Pattern 1: "CR X" or "cr X"
-    cr_pattern = r"\bcr\s+(\d+/\d+|\d+(?:\.\d+)?)\b"
+    cr_pattern = r'\bcr\s+(\d+/\d+|\d+(?:\.\d+)?)\b'
     match = re.search(cr_pattern, query, re.IGNORECASE)
     if match:
         return _parse_cr_value(match.group(1))
-
     # Pattern 2: "challenge rating X" or "challenge rating X"
     cr_long_pattern = r"\bchallenge\s+rating\s+(\d+/\d+|\d+(?:\.\d+)?)\b"
     match = re.search(cr_long_pattern, query, re.IGNORECASE)
@@ -66,18 +63,15 @@ def parse_creature_type_from_query(query: str) -> Optional[CreatureType]:
         The parsed CreatureType, or None if no creature type is detected
     """
     query = query.strip().lower()
-
     # Try to parse the entire query as a creature type
     try:
         return CreatureType.parse(query)
     except ValueError:
         pass
-
     # Try to find creature type words within the query
     for creature_type in CreatureType:
         if creature_type.lower() in query:
             return creature_type
-
     return None
 
 
@@ -93,14 +87,12 @@ def detect_facet_query(query: str) -> Tuple[Optional[CreatureType], Optional[flo
     """
     creature_type = parse_creature_type_from_query(query)
     cr_value = parse_cr_from_query(query)
-
     return creature_type, cr_value
 
 
 def is_facet_only_query(query: str) -> bool:
     """
     Determine if a query should be handled as facet-only (no text search).
-
     A query is considered facet-only if:
     1. It contains a recognizable CR pattern, OR
     2. It's exactly a creature type name, OR

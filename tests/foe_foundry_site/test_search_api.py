@@ -249,7 +249,6 @@ def test_get_search_facets():
         assert isinstance(facet["value"], str)
         assert isinstance(facet["count"], int)
         assert facet["count"] >= 0
-
     # Check CR range structure
     assert "min" in data["crRange"]
     assert "max" in data["crRange"]
@@ -264,7 +263,6 @@ def test_post_search_monsters_enhanced():
     response = client.post("/api/v1/search/monsters/enhanced", json=request_data)
     assert response.status_code == 200
     data = response.json()
-
     # Check structure
     assert "monsters" in data
     assert "facets" in data

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from typing import List
-
 from fastapi import APIRouter
 from pydantic import BaseModel
 
@@ -14,7 +13,6 @@ router = APIRouter(prefix="/api/v1/catalog")
 
 class CatalogTemplateModel(BaseModel):
     """Model for a template with its monsters in the catalog"""
-
     key: str
     name: str
     url: str
@@ -23,7 +21,6 @@ class CatalogTemplateModel(BaseModel):
 
 class CatalogFamilyModel(BaseModel):
     """Model for a family with its monsters in the catalog"""
-
     key: str
     name: str
     url: str
@@ -36,12 +33,10 @@ def get_catalog_by_template() -> List[CatalogTemplateModel]:
     Returns all monster templates with their monsters for the catalog view
     """
     catalog_templates = []
-
     for template in AllTemplates:
         # Only include templates that have lore (are published)
         if template.lore_md is None:
             continue
-
         # Get all monsters for this template
         template_monsters = []
         for monster in template.monsters:
@@ -100,7 +95,6 @@ def get_catalog_by_family() -> List[CatalogFamilyModel]:
     for family in families:
         for monster in family.monsters:
             family_template_keys.add(monster.template)
-
     # Add templates that don't have families as individual entries
     for template in AllTemplates:
         # Only include templates that have lore (are published)

@@ -76,6 +76,7 @@ export function trackGrowthBookEvent(event: string, properties?: Record<string, 
 export interface FeatureFlags {
     readonly showTutorial: boolean;
     readonly showStatblockDownloadOptions: boolean;
+    readonly showSkullUpsell: boolean;
 }
 
 /**
@@ -92,6 +93,9 @@ export async function getFeatureFlags(): Promise<FeatureFlags> {
             },
             get showStatblockDownloadOptions(): boolean {
                 return gb.isOn("show-statblock-download-options");
+            },
+            get showSkullUpsell(): boolean {
+                return gb.isOn("show-skull-upsell");
             }
         };
     }
