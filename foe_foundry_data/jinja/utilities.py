@@ -1,3 +1,4 @@
+import glob
 from pathlib import Path
 from typing import Any
 
@@ -90,8 +91,6 @@ def matching_css_link(url: str) -> str:
     site_css_dir = Path.cwd() / "site" / "css"
     if site_css_dir.exists():
         # Look for files matching the pattern {slug}-{hash}.css
-        import glob
-
         versioned_files = glob.glob(str(site_css_dir / f"{slug}-*.css"))
         if versioned_files:
             # Get the most recent file (should only be one with current setup)
@@ -114,8 +113,6 @@ def versioned_main_js_link(dummy_input: str = "") -> str:
     # Look for versioned main.js files in the site directory
     site_scripts_dir = Path.cwd() / "site" / "scripts"
     if site_scripts_dir.exists():
-        import glob
-
         versioned_files = glob.glob(str(site_scripts_dir / "main-*.js"))
         if versioned_files:
             # Get the most recent file (should only be one with current setup)
@@ -143,8 +140,6 @@ def matching_js_link(url: str) -> str:
     site_scripts_dir = Path.cwd() / "site" / "scripts"
     if site_scripts_dir.exists():
         # Look for files matching the pattern {slug}-{hash}.js
-        import glob
-
         versioned_files = glob.glob(str(site_scripts_dir / f"{slug}-*.js"))
         if versioned_files:
             # Get the most recent file (should only be one with current setup)

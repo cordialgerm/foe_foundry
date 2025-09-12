@@ -1,20 +1,23 @@
 // Homepage-specific functionality for Foe Foundry
 // Includes Swiper carousels, lazy icons, and monster reroll functionality
 
+// Import dependencies properly
+import { Swiper } from 'swiper';
+import { Navigation, Autoplay, Keyboard, Parallax } from 'swiper/modules';
+import type { SwiperOptions } from 'swiper/types';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
+import AnchorJS from 'anchor-js';
+
+// Configure Swiper to use modules
+Swiper.use([Navigation, Autoplay, Keyboard, Parallax]);
+
 // Export to make this file a module
 export { };
 
-// Declare global Swiper type
-declare global {
-    interface Window {
-        Swiper: any;
-        foeFoundryAnalytics?: {
-            trackMonsterClick: (templateKey: string, type: string, source: string) => void;
-        };
-        requestIdleCallback?: (callback: () => void) => void;
-        AnchorJS: any;
-    }
-}
+// Initialize AnchorJS
+const anchors = new AnchorJS();
 
 // Initialize homepage functionality when on the homepage
 if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
@@ -146,24 +149,28 @@ function initSwipers() {
         const delayNoise = Math.floor(Math.random() * 2000); // 0–1999ms
         const randomizedDelay = baseDelay + delayNoise;
 
-        const swiper = new window.Swiper(swiperContainer, {
+        const swiper = new Swiper(swiperContainer, {
+            modules: [Navigation, Autoplay, Keyboard, Parallax],
             autoplay: {
                 delay: randomizedDelay,
                 disableOnInteraction: true
             },
-            breakpoints: breakpoints,
+            breakpoints: breakpoints as any,
             initialSlide: 1,
             centeredSlides: true,
-            createElements: true,
             grabCursor: true,
-            keyboard: true,
-            navigation: true,
+            keyboard: {
+                enabled: true
+            },
+            navigation: {
+                enabled: true
+            },
             parallax: true,
             simulateTouch: true,
             on: {
-                init: function () {
+                init: function (swiper) {
                     //remove preload class which is designed to help deal with layout shift
-                    this.el.classList.remove('preload');
+                    swiper.el.classList.remove('preload');
                 }
             }
         });

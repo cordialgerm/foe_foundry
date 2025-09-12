@@ -1,8 +1,6 @@
 {%- block scripts %}
 <script src="{{ 'js/bootstrap.bundle.min.js'|url }}" defer></script>
 <script src="{{ 'js/base.js'|url }}" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js" defer></script>
 
 {%- for script in config.extra_javascript %}
 {{ script|script_tag }}
