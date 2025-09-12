@@ -417,7 +417,7 @@ export class MonsterFamilyBrowse extends LitElement {
           <svg-icon class="family-icon" src="${family.icon}"></svg-icon>
           <div class="family-info">
             <div class="family-name">${family.name}</div>
-            <div class="family-monster-count">${family.monster_count} monsters</div>
+            <div class="family-monster-count">${family.monsters.length} monsters</div>
           </div>
         </a>
       </li>
