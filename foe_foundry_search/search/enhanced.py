@@ -4,12 +4,16 @@ Enhanced search functionality with MonsterRefResolver and facet optimization.
 
 from typing import Iterable, Set
 
+import numpy as np
+
 from foe_foundry.creature_types import CreatureType
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.refs.monster_ref import MonsterRefResolver
 
 from .facets import detect_facet_query, is_facet_only_query
 from .graph import EntitySearchResult, EntityType, search_monsters
+
+EXACT_MATCH_BOOST = 100.0
 
 
 def enhanced_search_monsters(
@@ -71,7 +75,7 @@ def enhanced_search_monsters(
             monster_key=monster_ref.monster.key,
             power_key=None,
             family_key=None,
-            score=1000.0,  # Very high score to ensure it's first
+            score=1.2 * EXACT_MATCH_BOOST,  # Very high score to ensure it's first
             document_matches=[],
         )
 
@@ -199,7 +203,7 @@ def _get_facet_only_results(
                 monster_key=monster.key,
                 power_key=None,
                 family_key=None,
-                score=100.0,  # High score for facet matches
+                score=10,  # standard score for facet matches
                 document_matches=[],
             )
             results.append(result)
@@ -221,7 +225,7 @@ def _get_regular_search_results(
 ) -> list[EntitySearchResult]:
     """Get results using the regular text search approach."""
 
-    results = []
+    results: list[EntitySearchResult] = []
     # Get extra results to account for boosting potentially changing the order
     search_limit = limit + (1 if exclude_monster_key else 0)
     if template_boost_key:
@@ -251,11 +255,80 @@ def _get_regular_search_results(
                 # Boost the score for monsters from the same template
                 # Create a new EntitySearchResult with boosted score
                 result = result.copy(
-                    score=result.score + 500.0
+                    score=result.score + EXACT_MATCH_BOOST
                 )  # Boost score for same template
 
         results.append(result)
 
-    # Sort by score (descending) and return top results
+    if not len(results):
+        return []
+
+    # Sort by score (descending)
     results.sort(key=lambda r: r.score, reverse=True)
+
+    # Re-rank results to promote similar monsters to the top
+    results = _rerank_results(results)
+
+    # Selectively filter results to remove low-score outliers
+    results = _selective_filter_results(results)
+
     return results[:limit]
+
+
+def _rerank_results(results: list[EntitySearchResult]) -> list[EntitySearchResult]:
+    high_score = results[0].score
+    high_score_monster_key = results[0].monster_key
+    high_score_monster = (
+        Monsters.lookup.get(high_score_monster_key) if high_score_monster_key else None
+    )
+    high_score_family_keys = (
+        set(high_score_monster.family_keys)
+        if high_score_monster and high_score_monster.family_keys
+        else set()
+    )
+
+    # Re-Rank results based on similarity to the top result
+    reranked_results = [results[0]]
+    if high_score_monster is not None:
+        # boost any other results with the same template, families, or creature types
+        for i, result in enumerate(results[1:], start=1):
+            monster = (
+                Monsters.lookup.get(result.monster_key) if result.monster_key else None
+            )
+            family_keys = (
+                set(monster.family_keys) if monster and monster.family_keys else set()
+            )
+
+            if monster and monster.template_key == high_score_monster.template_key:
+                boost = 1.75
+            elif monster and any(family_keys.intersection(high_score_family_keys)):
+                boost = 1.5
+            elif monster and monster.creature_type == high_score_monster.creature_type:
+                boost = 1.25
+            else:
+                boost = 1.0
+
+            # Cap the boost to prevent changing the first place answer
+            new_score = min(result.score * boost, (0.98**i) * high_score)
+
+            # Boost the score for monsters from the same template
+            # Create a new EntitySearchResult with boosted score
+            reranked_result = result.copy(
+                score=new_score
+            )  # Boost score for same template
+            reranked_results.append(reranked_result)
+
+    # Sort by score (descending) and return top results
+    reranked_results.sort(key=lambda r: r.score, reverse=True)
+    return reranked_results
+
+
+def _selective_filter_results(
+    results: list[EntitySearchResult],
+) -> list[EntitySearchResult]:
+    """Filter results to only include those with a score >= 33% of the top score."""
+    high_score = results[0].score
+
+    if len(results) >= 3:
+        return [r for r in results if r.score >= 0.4 * high_score]
+    return results

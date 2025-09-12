@@ -32,6 +32,7 @@ class TestMonsterFamilyBackReferences:
         """Test that MonsterInfoModel.family_names computed field works correctly."""
         families = load_monster_families()
         family_with_monsters = next((f for f in families if f.monsters), None)
+        assert family_with_monsters is not None
         monster = family_with_monsters.monsters[0]
 
         # Test the computed property directly
@@ -94,6 +95,7 @@ class TestMonsterFamilyBackReferences:
         """Test that family_names field is consistent across different access patterns."""
         families = load_monster_families()
         family_with_monsters = next((f for f in families if f.monsters), None)
+        assert family_with_monsters is not None
         monster = family_with_monsters.monsters[0]
 
         # Test via family.monsters
