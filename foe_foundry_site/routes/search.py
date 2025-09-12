@@ -80,6 +80,7 @@ def _get_all_monsters() -> list[MonsterInfoModel]:
             creature_type=monster.creature_type,
             tag_line=monster.tag_line,
             tags=monster.tags,
+            family_keys=monster.family_keys,
         )
         for monster in all_monsters
     ]
@@ -151,6 +152,7 @@ def get_search_monsters(
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
                 tags=monster.tags,
+                family_keys=monster.family_keys,
             )
         )
     return results
@@ -215,6 +217,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
                 tags=monster.tags,
+                family_keys=monster.family_keys,
             )
         )
     return results
@@ -279,6 +282,7 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
                 creature_type=monster.creature_type,
                 tag_line=monster.tag_line,
                 tags=monster.tags,
+                family_keys=monster.family_keys,
             )
         )
 
