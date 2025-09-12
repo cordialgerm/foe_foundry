@@ -22,6 +22,7 @@ class TestFacetParsing:
         assert parse_cr_from_query("cr 10") == 10.0
         assert parse_cr_from_query("challenge rating 15") == 15.0
         assert parse_cr_from_query("Challenge Rating 20") == 20.0
+
         # Test fractional CRs
         assert parse_cr_from_query("CR 1/2") == 0.5
         assert parse_cr_from_query("CR 1/4") == 0.25
@@ -65,10 +66,12 @@ class TestFacetParsing:
         creature_type, cr = detect_facet_query("CR 5")
         assert creature_type is None
         assert cr == 5.0
+
         # Test creature type only
         creature_type, cr = detect_facet_query("dragon")
         assert creature_type == CreatureType.Dragon
         assert cr is None
+
         # Test neither
         creature_type, cr = detect_facet_query("goblin warrior")
         assert creature_type is None

@@ -4,7 +4,7 @@ from .documents import (
     load_document_index,
     search_documents,
 )  # noqa
-from .enhanced import enhanced_search_monsters  # noqa  # noqa
+from .enhanced import enhanced_search_monsters  # noqa
 from .facets import (
     detect_facet_query,
     is_facet_only_query,

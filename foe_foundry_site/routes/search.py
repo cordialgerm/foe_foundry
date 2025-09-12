@@ -188,6 +188,7 @@ def post_search_monsters(request: MonsterSearchRequest) -> list[MonsterInfoModel
         "creature_types": creature_types,
         "max_hops": 4,
     }
+
     if request.min_cr is not None or request.max_cr is not None:
         search_kwargs["min_cr"] = request.min_cr
         search_kwargs["max_cr"] = request.max_cr
@@ -251,6 +252,7 @@ def post_search_monsters_enhanced(request: MonsterSearchRequest) -> MonsterSearc
         "creature_types": creature_types,
         "max_hops": 4,
     }
+
     if request.min_cr is not None or request.max_cr is not None:
         search_kwargs["min_cr"] = request.min_cr
         search_kwargs["max_cr"] = request.max_cr

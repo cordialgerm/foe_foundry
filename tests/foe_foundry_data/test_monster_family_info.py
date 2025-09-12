@@ -339,6 +339,7 @@ is_monster_family: true
         assert fanatics_family.tag_line == "Faithful Followers of the Occult or Divine"
         # Should have templates for the expected monster types
         assert len(fanatics_family.templates) > 0
+
         # Check that we have the expected templates
         template_keys = {template.key for template in fanatics_family.templates}
         expected_templates = {"priest", "cultist", "knight"}
