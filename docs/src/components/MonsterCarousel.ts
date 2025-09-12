@@ -644,7 +644,7 @@ export class MonsterCarousel extends LitElement {
         wrapper.style.alignItems = 'flex-start';
       }
 
-      // Calculate how many slides are visible based on current viewport
+      // Helper function to calculate slides per view (matches breakpoints logic)
       const calculateSlidesPerView = () => {
         const width = window.innerWidth;
         if (width >= 1400) return 3;
@@ -655,12 +655,7 @@ export class MonsterCarousel extends LitElement {
       };
 
       // Get total number of slides
-      const totalSlides = wrapper?.children.length || 0;
-      const slidesPerView = calculateSlidesPerView();
-
-      // Only enable autoplay if there are more slides than fit in the viewport
-      const shouldAutoplay = totalSlides > slidesPerView;
-      const delay = 5000 + Math.random() * 3000;
+      const initialSlidesPerView = calculateSlidesPerView();
 
       // Get navigation elements from shadow root
       const nextEl = this.shadowRoot!.querySelector('.swiper-button-next') as HTMLElement;
@@ -669,7 +664,7 @@ export class MonsterCarousel extends LitElement {
       // Use configuration that matches homepage for consistent navigation
       this.swiperInstance = new Swiper(swiperContainer as HTMLElement, {
         modules: [Autoplay, Navigation, Keyboard, Parallax],
-        slidesPerView: 3,
+        slidesPerView: initialSlidesPerView, // Will be overridden by breakpoints
         spaceBetween: 16,
         initialSlide: 0, // Start at first slide
         centeredSlides: false, // Left-align slides
@@ -685,59 +680,15 @@ export class MonsterCarousel extends LitElement {
         },
         parallax: true,
         simulateTouch: true,
-        autoplay: shouldAutoplay ? {
-          delay: delay,
-          disableOnInteraction: true,
-          pauseOnMouseEnter: true, // Pause autoplay when user hovers for better UX
-          stopOnLastSlide: true
-        } : false,
+        autoplay: false,
         breakpoints: breakpoints,
         on: {
           init: function (this: any) {
             this.el.classList.remove('preload');
           },
-          slideChange: function (this: any) {
-            // Stop autoplay if we've reached the Nth to last slide
-            // where N is the number of slides visible in the current viewport
-            if (this.autoplay && this.autoplay.running) {
-              const currentSlide = this.activeIndex;
-              const totalSlides = this.slides.length;
-              
-              // Calculate current slides per view based on viewport (same logic as initialization)
-              const getCurrentSlidesPerView = () => {
-                const width = window.innerWidth;
-                if (width >= 1400) return 3;
-                if (width >= 1200) return 3;
-                if (width >= 768) return 3;
-                if (width >= 576) return 2;
-                return 1;
-              };
-              
-              const currentSlidesPerView = getCurrentSlidesPerView();
-
-              // Calculate the last slide index where we still have a full view
-              // If we have 5 slides total and 3 fit in view, we stop after slide 2 (0-indexed)
-              // because moving to slide 3 would only show slides 3,4 (only 2 slides instead of 3)
-              const lastFullViewSlide = totalSlides - currentSlidesPerView;
-
-              if (currentSlide >= lastFullViewSlide) {
-                this.autoplay.stop();
-              }
-            }
-          }
         }
       });
 
-      // Handle clicks
-      this.swiperInstance.on('click', (swiper: any, event: Event) => {
-        const slideEl = (event.target as HTMLElement).closest('.swiper-slide');
-        if (slideEl) {
-          const url = slideEl.getAttribute('data-url');
-          if (url) {
-            window.location.href = url;
-          }
-        }
-      });
     } catch (error) {
       console.warn('Failed to initialize Swiper:', error);
     }
@@ -828,8 +779,8 @@ export class MonsterCarousel extends LitElement {
     ].filter(Boolean).join(' ');
 
     // Only prepend baseUrl if the template.url is a relative path
-    const url = template.url.startsWith('http://') || template.url.startsWith('https://') || template.url.startsWith('/') 
-      ? template.url 
+    const url = template.url.startsWith('http://') || template.url.startsWith('https://') || template.url.startsWith('/')
+      ? template.url
       : window.baseUrl ? `${window.baseUrl}/${template.url}` : template.url;
 
     return html`
