@@ -45,16 +45,18 @@ def test_get_new_monster_templates_includes_all_recent():
     assert response.status_code == 200
     data = response.json()
     assert isinstance(data, list)
-    
+
     # Extract template keys from response
     template_keys = {template["key"] for template in data}
-    
+
     # These templates should be included as they were all created on the same date
     expected_templates = {"assassin", "bandit", "spy", "thug"}
-    
+
     # Check that all expected templates are present
     for expected in expected_templates:
-        assert expected in template_keys, f"Template '{expected}' should be in new templates but was not found. Found: {template_keys}"
+        assert (
+            expected in template_keys
+        ), f"Template '{expected}' should be in new templates but was not found. Found: {template_keys}"
 
 
 def test_get_monster_template_by_key():

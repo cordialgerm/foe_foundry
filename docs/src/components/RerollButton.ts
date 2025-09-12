@@ -37,10 +37,12 @@ export class RerollButton extends StatblockButton {
       justify-content: center;
       transition: all 0.2s ease;
       color: var(--fg-color);
+      box-shadow: 0 0 4px rgba(194, 154, 91, 0.3);
     }
 
     button:hover:not(:disabled) {
       transform: scale(1.05);
+      box-shadow: 0 0 8px rgba(194, 154, 91, 0.6);
     }
 
     button:active:not(:disabled) {
@@ -173,6 +175,7 @@ export class RerollButton extends StatblockButton {
         <svg-icon
           src="d20"
           .jiggle=${this.jiggle}
+          .shimmer=${true}
         ></svg-icon>
       </button>
     `;

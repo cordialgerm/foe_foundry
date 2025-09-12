@@ -33,16 +33,14 @@ def get_tag(*, tag_key: str) -> TagInfoModel:
 @router.get("/all")
 def all_tags(
     *,
-    category: Annotated[
-        str | None, Query(title="Filter by tag category")
-    ] = None,
+    category: Annotated[str | None, Query(title="Filter by tag category")] = None,
 ) -> list[TagInfoModel]:
     """Get all available tags, optionally filtered by category"""
     tags = Tags.AllTags
-    
+
     if category:
         tags = [tag for tag in tags if tag.category.lower() == category.lower()]
-    
+
     return tags
 
 

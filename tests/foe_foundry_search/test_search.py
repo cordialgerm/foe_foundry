@@ -37,15 +37,15 @@ def test_search_with_highlights():
         "content_stemmed" in result.matched_fields
         or "content_ngram" in result.matched_fields
     ), "Should match in content field"
-    assert any(term == "warrior" for field, term in result.matched_terms), (
-        "Should match 'warrior' term"
-    )
+    assert any(
+        term == "warrior" for field, term in result.matched_terms
+    ), "Should match 'warrior' term"
 
     # Should have highlighted content since it matched in content
     assert result.highlighted_match is not None, "Should have highlighted content"
-    assert '<b class="match' in result.highlighted_match, (
-        "Should contain highlight markup"
-    )
+    assert (
+        '<b class="match' in result.highlighted_match
+    ), "Should contain highlight markup"
 
 
 def test_search_with_highlights_bandit():

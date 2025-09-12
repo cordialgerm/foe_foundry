@@ -106,9 +106,9 @@ def test_similar_monsters_grouping_logic():
         monsters = group["monsters"]
         if len(monsters) > 1:
             crs = [monster["cr"] for monster in monsters]
-            assert crs == sorted(crs), (
-                f"Monsters in {group['name']} should be sorted by CR"
-            )
+            assert crs == sorted(
+                crs
+            ), f"Monsters in {group['name']} should be sorted by CR"
 
 
 def test_similar_monsters_cr_sorting():
@@ -147,9 +147,9 @@ def test_similar_monsters_cr_sorting():
 
                     if prev_min_cr_diff is not None:
                         # CR differences should be in ascending order
-                        assert cr_diff >= prev_min_cr_diff, (
-                            f"Groups should be sorted by CR difference. Previous: {prev_min_cr_diff}, Current: {cr_diff}"
-                        )
+                        assert (
+                            cr_diff >= prev_min_cr_diff
+                        ), f"Groups should be sorted by CR difference. Previous: {prev_min_cr_diff}, Current: {cr_diff}"
 
                     prev_min_cr_diff = cr_diff
 
@@ -167,7 +167,7 @@ def test_get_monsters_by_family():
     assert response.status_code == 200
     data = response.json()
     assert isinstance(data, list)
-    
+
     # Verify each monster has the expected structure
     for monster in data:
         assert "key" in monster

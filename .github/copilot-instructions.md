@@ -6,6 +6,36 @@ The site is mostly static html generated via MkDocs, with a FastAPI backend for 
 
 Always reference these instructions first and fallback to search or bash commands only when you encounter unexpected information that does not match the info here.
 
+## Code Formatting and Style
+
+**IMPORTANT: This project uses Ruff for Python code formatting and linting to ensure consistency between manual editing and GitHub Copilot agents.**
+
+### Formatting Requirements:
+- **Python formatter**: Ruff (configured as default in VS Code)
+- **Line length**: 88 characters (Black-compatible)
+- **Import organization**: Automatic via Ruff's isort functionality
+- **Quote style**: Double quotes for strings
+- **Indentation**: 4 spaces (no tabs)
+
+### When Making Code Changes:
+1. **Always run code formatting** after making changes: `python scripts/format_code.py`
+2. **Check formatting** before committing: `python scripts/format_code.py --check`
+3. **The pre-commit hook** will automatically check formatting and prevent commits with formatting issues
+
+### Formatting Commands:
+- **Format all code**: `python scripts/format_code.py`
+- **Check formatting only**: `python scripts/format_code.py --check`
+- **Lint/organize imports only**: `python scripts/format_code.py --lint-only`
+- **Manual Ruff commands**:
+  - Format: `poetry run ruff format .`
+  - Lint: `poetry run ruff check --fix .`
+
+### For GitHub Copilot Agents:
+- **ALWAYS run formatting** after making any Python code changes
+- Use the provided `scripts/format_code.py` script for consistency
+- The formatting configuration is in `pyproject.toml` under `[tool.ruff]`
+- This ensures the same formatting as manual VS Code editing
+
 ## Working Effectively
 
 ### Bootstrap, Build, and Test the Repository
@@ -46,6 +76,8 @@ Always reference these instructions first and fallback to search or bash command
 
 ### Validation Commands:
 - After any Python code changes: `poetry run pytest -x` (stop on first failure for faster feedback)
+- **After any code changes**: `python scripts/format_code.py` (format code consistently)
+- **Before committing**: `python scripts/format_code.py --check` (verify formatting)
 - After build script changes: Test both `./scripts/build_site.sh` and `./scripts/build_site.sh --fast`
 - After API changes: Test the web server starts and key endpoints respond correctly
 
