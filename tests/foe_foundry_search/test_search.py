@@ -1,6 +1,7 @@
 from foe_foundry.creature_types import CreatureType
 from foe_foundry_search.search import (
     EntityType,
+    enhanced_search_monsters,
     search_documents,
     search_entities_with_graph_expansion,
     search_monsters,
@@ -126,3 +127,32 @@ def test_search_ngrams():
         )
     )
     assert len(results) > 0
+
+
+def test_search_orc_relevancy():
+    results = list(enhanced_search_monsters(search_query="orc", limit=20))
+
+    for result in results:
+        assert result.monster_key is not None, "Result should have a monster key"
+        assert result.monster_key.startswith(
+            "orc"
+        ), f"Expected orc-related monster, got {result.monster_key}"
+    return
+
+
+def test_search_criminal():
+    results = list(
+        enhanced_search_monsters(
+            search_query="criminal",
+            limit=20,
+        )
+    )
+    monster_keys = {r.monster_key for r in results}
+    expected_monster_keys = {"bandit-captain", "bandit", "thug", "assassin", "spy"}
+    undesired_monster_keys = {"clay-golem"}
+    assert expected_monster_keys.issubset(
+        monster_keys
+    ), f"Expected monsters not found. Found: {monster_keys}"
+    assert not undesired_monster_keys.intersection(
+        monster_keys
+    ), f"Undesired monsters found. Found: {monster_keys}"

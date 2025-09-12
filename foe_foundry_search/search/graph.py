@@ -42,7 +42,7 @@ from typing import Callable, Iterable
 from foe_foundry.creature_types import CreatureType
 
 from ..graph import find_descendants_with_decay, load_graph
-from .documents import DocumentSearchResult, search_documents
+from .documents import DocType, DocumentSearchResult, search_documents
 
 
 class EntityType(StrEnum):
@@ -73,6 +73,7 @@ def search_entities_with_graph_expansion(
     limit: int = 5,
     max_hops: int = 3,
     alpha: float = 0.15,
+    doc_type_weights: dict[DocType, float] | None = None,
     custom_filter: Callable[[dict], bool] | None = None,
 ) -> Iterable[EntitySearchResult]:
     """
@@ -100,7 +101,11 @@ def search_entities_with_graph_expansion(
         target_node_types.add("POW")
 
     # Search documents first
-    doc_results = list(search_documents(search_query, limit=2 * limit))
+    doc_results = list(
+        search_documents(
+            search_query, limit=2 * limit, doc_type_weights=doc_type_weights
+        )
+    )
 
     # Collect all graph paths from document results
     all_paths = []
@@ -187,6 +192,18 @@ def search_monsters(
     max_hops: int = 3,
     alpha: float = 0.15,
 ) -> Iterable[EntitySearchResult]:
+    """
+    Search for monsters using document search followed by graph expansion with strength decay.
+    """
+
+    # We want to be sure the noisier document types are weighted lower
+    doc_type_weights = {
+        DocType.monster_ff: 3.0,  # boost official monsters highest
+        DocType.monster_other: 1.5,
+        DocType.power_ff: 1.0,
+        DocType.blog_post: 0.5,  # might just mention the search term in passing
+    }
+
     # custom node-level filter based on monster parameters
     def custom_filter(node: dict) -> bool:
         if node["type"] != "FF_MON":
@@ -235,6 +252,7 @@ def search_monsters(
         max_hops=max_hops,
         custom_filter=custom_filter,
         alpha=alpha,
+        doc_type_weights=doc_type_weights,
     )
 
 
