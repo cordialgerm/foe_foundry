@@ -31,12 +31,12 @@ def test_monster_has_lore_content(monster_file):
     lore = extract_overview_content(content)
 
     # Assert that lore content exists and is not empty
-    assert lore is not None, (
-        f"No lore content found in {os.path.basename(monster_file)}"
-    )
-    assert len(lore.strip()) > 0, (
-        f"Empty lore content in {os.path.basename(monster_file)}"
-    )
+    assert (
+        lore is not None
+    ), f"No lore content found in {os.path.basename(monster_file)}"
+    assert (
+        len(lore.strip()) > 0
+    ), f"Empty lore content in {os.path.basename(monster_file)}"
 
     # Check that lore content has substantial content (more than just a header or single line)
     lines = [line.strip() for line in lore.strip().splitlines() if line.strip()]
@@ -52,18 +52,18 @@ def test_monster_has_encounters_content(monster_file):
     encounters = extract_encounters_content(content)
 
     # Assert that encounters content exists and is not empty
-    assert encounters is not None, (
-        f"No encounters content found in {os.path.basename(monster_file)}"
-    )
-    assert len(encounters.strip()) > 0, (
-        f"Empty encounters content in {os.path.basename(monster_file)}"
-    )
+    assert (
+        encounters is not None
+    ), f"No encounters content found in {os.path.basename(monster_file)}"
+    assert (
+        len(encounters.strip()) > 0
+    ), f"Empty encounters content in {os.path.basename(monster_file)}"
 
     # Check that encounters content has substantial content
     lines = [line.strip() for line in encounters.strip().splitlines() if line.strip()]
-    assert len(lines) > 2, (
-        f"Encounters content too short in {os.path.basename(monster_file)}"
-    )
+    assert (
+        len(lines) > 2
+    ), f"Encounters content too short in {os.path.basename(monster_file)}"
 
     # Check that it contains at least one encounter or adventure section header
     has_encounter_header = any(
@@ -71,9 +71,9 @@ def test_monster_has_encounters_content(monster_file):
         or ("adventure" in line.lower() and line.startswith("##"))
         for line in encounters.splitlines()
     )
-    assert has_encounter_header, (
-        f"No encounter/adventure headers found in {os.path.basename(monster_file)}"
-    )
+    assert (
+        has_encounter_header
+    ), f"No encounter/adventure headers found in {os.path.basename(monster_file)}"
 
 
 @pytest.mark.parametrize("monster_file", get_monster_files())
@@ -86,14 +86,14 @@ def test_lore_content_quality(monster_file):
     assert lore is not None
 
     # Lore should not contain image directives
-    assert "![" not in lore, (
-        f"Lore contains image directives in {os.path.basename(monster_file)}"
-    )
+    assert (
+        "![" not in lore
+    ), f"Lore contains image directives in {os.path.basename(monster_file)}"
 
     # Lore should not contain info-style directives
-    assert "!!!" not in lore, (
-        f"Lore contains info directives in {os.path.basename(monster_file)}"
-    )
+    assert (
+        "!!!" not in lore
+    ), f"Lore contains info directives in {os.path.basename(monster_file)}"
 
     # Lore should contain actual descriptive content (not just headers)
     non_header_lines = [
@@ -101,9 +101,9 @@ def test_lore_content_quality(monster_file):
         for line in lore.splitlines()
         if line.strip() and not line.strip().startswith("#")
     ]
-    assert len(non_header_lines) > 0, (
-        f"Lore contains only headers in {os.path.basename(monster_file)}"
-    )
+    assert (
+        len(non_header_lines) > 0
+    ), f"Lore contains only headers in {os.path.basename(monster_file)}"
 
 
 @pytest.mark.parametrize("monster_file", get_monster_files())
@@ -120,9 +120,9 @@ def test_encounters_content_quality(monster_file):
         line.strip() and not line.strip().startswith("#")
         for line in encounters.splitlines()
     )
-    assert has_content_lines, (
-        f"Encounters contains only headers in {os.path.basename(monster_file)}"
-    )
+    assert (
+        has_content_lines
+    ), f"Encounters contains only headers in {os.path.basename(monster_file)}"
 
 
 def test_extract_lore_content_gelatinous_cube():

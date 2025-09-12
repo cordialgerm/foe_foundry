@@ -95,7 +95,7 @@ def test_embed_icon():
 
 
 def test_monster_spec():
-    text = """
+    text = """  # noqa: F841
 This is some example text that contains a YAML monster block
 
 ```yaml
@@ -139,8 +139,11 @@ power_weights:
     assert "Grazing Attack" not in result.html
     # Check that grazing-attack appears in a data-power-key attribute (may be combined with other powers)
     import re
+
     power_key_pattern = r'data-power-key="[^"]*grazing-attack[^"]*"'
-    assert re.search(power_key_pattern, result.html), f"Could not find grazing-attack in any data-power-key attribute in HTML: {result.html}"
+    assert re.search(
+        power_key_pattern, result.html
+    ), f"Could not find grazing-attack in any data-power-key attribute in HTML: {result.html}"
 
 
 def test_spellcasting_renders_power_key():

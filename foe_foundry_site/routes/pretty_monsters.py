@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from pathlib import Path
-from fastapi import APIRouter, Request, HTTPException
+
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import FileResponse, RedirectResponse
 from starlette.datastructures import URL
 
@@ -20,11 +21,11 @@ def find_monster(slug: str) -> tuple[str, str] | None:
     ref = ref_resolver.resolve_monster_ref(slug)
     if ref is None:
         return None
-    
+
     # If we found a reference and it has a monster (not just a template)
     if ref.monster is not None:
         return ref.template.key, ref.monster.key
-    
+
     return None
 
 
@@ -46,7 +47,11 @@ async def monsters_pretty_router(slug: str, request: Request):
     match = find_monster(slug)
     if match:
         template_slug, monster_key = match
-        base = str(URL(str(request.url)).replace(path=f"/monsters/{template_slug}/", query="", fragment=""))
+        base = str(
+            URL(str(request.url)).replace(
+                path=f"/monsters/{template_slug}/", query="", fragment=""
+            )
+        )
         return RedirectResponse(url=f"{base}#{monster_key}", status_code=302)
 
     # 3. Nothing found

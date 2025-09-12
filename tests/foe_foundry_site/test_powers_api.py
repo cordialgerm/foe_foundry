@@ -64,9 +64,7 @@ def test_search_powers_keyword():
 
 
 def test_search_powers_filters():
-    response = client.get(
-        "/api/v1/powers/search?role=soldier&limit=5"
-    )
+    response = client.get("/api/v1/powers/search?role=soldier&limit=5")
     assert response.status_code == 200
     data = response.json()
     assert isinstance(data, list)

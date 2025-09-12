@@ -67,6 +67,3 @@ def test_generate_monster_json_format():
     if response.status_code == 200:
         assert response.headers["content-type"].startswith("application/json")
         assert "statblock_html" in response.json()
-
-
-
