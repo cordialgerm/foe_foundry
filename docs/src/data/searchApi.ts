@@ -31,8 +31,18 @@ export class MonsterSearchApi implements IMonsterSearchApi {
                 throw new Error(`Search API request failed: ${response.status} ${response.statusText}`);
             }
 
-            const result: MonsterSearchResult = await response.json();
-            return result;
+            const result: any = await response.json();
+            
+            // Transform backend family_names to frontend monsterFamilies
+            const transformedResult: MonsterSearchResult = {
+                ...result,
+                monsters: result.monsters.map((monster: any) => ({
+                    ...monster,
+                    monsterFamilies: monster.family_names || []
+                }))
+            };
+            
+            return transformedResult;
         } catch (error) {
             console.error('Monster search API error:', error);
             throw error;

@@ -148,7 +148,7 @@ export class ApiMonsterStore implements MonsterStore {
             creatureType: data.creature_type,
             monsterTemplate: data.template_key,
             monsterTemplateName: data.template_name,
-            monsterFamilies: [], // Not present in API, set empty or infer if possible
+            monsterFamilies: data.family_names || [], // Map from backend family_names to frontend monsterFamilies
             size: data.size,
             cr: formatCr(data.cr),
             loadouts: (data.loadouts || []).map((loadout: any) => ({

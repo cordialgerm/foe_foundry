@@ -34,7 +34,7 @@ class MonsterInfoModel:
 
     @computed_field
     @property
-    def monsterFamilies(self) -> list[str] | None:
+    def family_names(self) -> list[str] | None:
         """Get family names for this monster (used by API serialization)"""
         if not self.family_keys:
             return None

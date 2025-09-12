@@ -27,18 +27,18 @@ class TestMonsterFamilyBackReferences:
                 f"Monster {monster.name} should have {family_with_monsters.key} in family_keys"
             )
 
-    def test_monster_info_computed_field_includes_monster_families(self):
-        """Test that MonsterInfoModel.monsterFamilies computed field works correctly."""
+    def test_monster_info_computed_field_includes_family_names(self):
+        """Test that MonsterInfoModel.family_names computed field works correctly."""
         families = load_monster_families()
         family_with_monsters = next((f for f in families if f.monsters), None)
         monster = family_with_monsters.monsters[0]
         
         # Test the computed property directly
-        family_names = monster.monsterFamilies
+        family_names = monster.family_names
         
-        assert family_names is not None, "monsterFamilies should not be None"
+        assert family_names is not None, "family_names should not be None"
         assert family_with_monsters.name in family_names, (
-            f"monsterFamilies should contain family name: {family_with_monsters.name}"
+            f"family_names should contain family name: {family_with_monsters.name}"
         )
 
     def test_monster_model_has_family_keys(self):
@@ -82,7 +82,7 @@ class TestMonsterFamilyBackReferences:
             
             # Test that monsters can access their family names without circular references
             for monster in family.monsters:
-                family_names = monster.monsterFamilies
+                family_names = monster.family_names
                 assert isinstance(family_names, (list, type(None)))
                 if family_names:
                     assert family.name in family_names
@@ -90,14 +90,14 @@ class TestMonsterFamilyBackReferences:
         except RecursionError:
             pytest.fail("Circular reference detected in serialization")
 
-    def test_monster_families_field_consistency(self):
-        """Test that monsterFamilies field is consistent across different access patterns."""
+    def test_family_names_field_consistency(self):
+        """Test that family_names field is consistent across different access patterns."""
         families = load_monster_families()
         family_with_monsters = next((f for f in families if f.monsters), None)
         monster = family_with_monsters.monsters[0]
         
         # Test via family.monsters
-        family_names1 = monster.monsterFamilies
+        family_names1 = monster.family_names
         
         # Test via Monsters.one_of_each_monster  
         all_monsters = list(Monsters.one_of_each_monster)
@@ -112,8 +112,8 @@ class TestMonsterFamilyBackReferences:
                 template=cached_monster.template_key,
                 family_keys=cached_monster.family_keys,
             )
-            family_names2 = monster_info.monsterFamilies
+            family_names2 = monster_info.family_names
             
             assert family_names1 == family_names2, (
-                "monsterFamilies should be consistent across different access patterns"
+                "family_names should be consistent across different access patterns"
             )
