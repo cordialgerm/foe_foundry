@@ -424,12 +424,14 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                     <div class="showcase-controls">
                         <reroll-button
                             jiggle="jiggleUntilClick"
+                            .shimmer=${true}
                             class="showcase-button"
                             target="showcase-statblock"
                             ?random="${!effectiveMonsterKey}">
                         </reroll-button>
                         <forge-button
                             jiggle="jiggleUntilClick"
+                            .shimmer=${true}
                             class="showcase-button"
                             target="showcase-statblock">
                         </forge-button>

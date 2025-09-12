@@ -35,7 +35,7 @@ export class SvgIcon extends LitElement {
 
         .shimmer svg {
           filter: drop-shadow(0 0 2px var(--box-shadow-color));
-          animation: shimmer 2.5s ease-in-out infinite;
+          animation: shimmer 5s ease-in-out infinite;
         }
 
         @keyframes jiggle {
