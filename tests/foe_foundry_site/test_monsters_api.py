@@ -192,7 +192,7 @@ def test_get_all_families():
     data = response.json()
     assert isinstance(data, list)
     assert len(data) > 0
-    
+
     # Verify each family has the expected structure
     for family in data:
         assert "key" in family
@@ -203,10 +203,10 @@ def test_get_all_families():
         assert "templates" in family
         assert "monsters" in family
         assert isinstance(family["monsters"], list)
-        
+
         # Ensure there's no monster_count field (this should be calculated on frontend)
         assert "monster_count" not in family
-        
+
         # Verify monsters structure
         for monster in family["monsters"]:
             assert "key" in monster

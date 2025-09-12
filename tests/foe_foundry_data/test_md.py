@@ -116,6 +116,8 @@ foo: bar
 ```
 
 """
+    result = markdown(text)
+    assert len(result.html) > 1.5 * len(text)
 
 
 def test_attack_modifier_renders_power_key():
