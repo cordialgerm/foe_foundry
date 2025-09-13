@@ -83,6 +83,9 @@ def test_die_from_target(
     expected: str,
 ):
     die = DieFormula.target_value(
-        target=target, suggested_die=suggested_die, force_die=force_die, force_even=force_even
+        target=target,
+        suggested_die=suggested_die,
+        force_die=force_die,
+        force_even=force_even,
     )
     assert die.dice_formula() == expected

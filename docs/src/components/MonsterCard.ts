@@ -1,6 +1,5 @@
 import { LitElement, html, css, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { ref, createRef } from 'lit/directives/ref.js';
 import { initializeMonsterStore } from '../data/api';
 import { Power, PowerStore } from '../data/powers';
 import { MonsterStore } from '../data/monster';
@@ -9,6 +8,9 @@ import './MonsterArt';
 import './MonsterInfo';
 import './MonsterRating';
 import './PowerLoadout';
+import './MonsterSimilar';
+import './MonsterLore';
+import './MonsterEncounters';
 import type { PowerLoadout } from './PowerLoadout';
 import './SvgIcon';
 
@@ -20,8 +22,7 @@ export class MonsterCard extends LitElement {
     task: async ([monsterKey], { signal }) => {
       const store = this.monsterStore || initializeMonsterStore();
       const monster = await store.getMonster(monsterKey);
-      const similarMonsters = await store.getSimilarMonsters(monsterKey);
-      return { monster, similarMonsters };
+      return { monster };
     },
     args: () => [this.monsterKey]
   });
@@ -37,9 +38,6 @@ export class MonsterCard extends LitElement {
 
   @property({ type: String }) contentTab: 'powers' | 'similar' | 'lore' | 'encounters' = 'powers';
 
-  private loreRef = createRef<HTMLDivElement>();
-  private encounterRef = createRef<HTMLDivElement>();
-
   static styles = css`
     :host {
       display: block;
@@ -52,6 +50,7 @@ export class MonsterCard extends LitElement {
 
       background-color: var(--bs-dark);
       position: relative;
+      contain: layout style; /* Isolate layout changes within monster card */
 
       --max-text-content-height: 700px; /* Default max height for content */
     }
@@ -162,115 +161,6 @@ export class MonsterCard extends LitElement {
       min-height: 300px;
     }
 
-    .lore-content,
-    .encounter-content {
-      padding-left: 8px;
-      padding-right: 8px;
-      font-size: 0.82rem;
-      text-align: justify;
-      max-height: calc(80 + var(--max-text-content-height));
-      overflow: hidden;
-      position: relative;
-    }
-
-    .content-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--tertiary-color);
-    }
-
-    .content-header h3 {
-      margin: 0;
-      font-size: 1.1rem;
-      color: var(--tertiary-color);
-    }
-
-    .full-content-link {
-      color: var(--tertiary-color);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    .full-content-link:hover {
-      color: var(--fg-color);
-      text-decoration: underline;
-    }
-
-    .content-body {
-      max-height: var(--max-text-content-height);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .content-body::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 40px;
-      background: linear-gradient(transparent, var(--bs-dark));
-      pointer-events: none;
-    }
-
-    .content-body[data-overflowing="true"]::after {
-      content: '...';
-      position: absolute;
-      bottom: 5px;
-      right: 10px;
-      height: auto;
-      background: var(--bs-dark);
-      color: var(--tertiary-color);
-      font-size: 1.2rem;
-      font-weight: bold;
-      padding: 2px 4px;
-      border-radius: 2px;
-    }
-
-    .lore-content p,
-    .encounter-content p,
-    .similiar-content p {
-      margin-top: 0.25rem;
-      margin-bottom: 0.25rem;
-      text-align: justify;
-    }
-
-    .lore-content ul,
-    .encounter-content ul,
-    .lore-content ol,
-    .encounter-content ol {
-      padding-left: 0.8rem;
-      margin-top:0.25rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .encounter-content h2,
-    .lore-content h2,
-    .encounter-content h2,
-    .lore-content h3,
-    .encounter-content h3 {
-      font-size: 1.05rem;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    .lore-content .headerlink,
-    .encounter-content .headerlink {
-      display: none;
-    }
-
-    .lore-content a,
-    .encounter-content a,
-    .similar-content a {
-      color: var(--fg-color);
-      text-decoration: underline;
-    }
-
     .powers-rating-container {
       display: flex;
       flex-direction: column;
@@ -330,46 +220,6 @@ export class MonsterCard extends LitElement {
   setContentTab(tab: 'powers' | 'lore' | 'encounters' | 'similar'): void {
     this.contentTab = tab;
     this.requestUpdate();
-  }
-
-  updated(changedProperties: PropertyValues) {
-    super.updated(changedProperties);
-
-    // Handle lore content
-    if (this.loreRef.value && this._monsterTask.value?.monster?.overviewElement) {
-      // Only append if not already present
-      if (!this.loreRef.value.querySelector('[data-monster-lore]')) {
-        const clonedElement = this._monsterTask.value.monster.overviewElement.cloneNode(true) as HTMLElement;
-        clonedElement.setAttribute('data-monster-lore', 'true');
-        this.loreRef.value.appendChild(clonedElement);
-
-        // Check if content overflows
-        this.checkContentOverflow(this.loreRef.value.closest('.content-body') as HTMLElement);
-      }
-    }
-
-    // Handle encounter content
-    if (this.encounterRef.value && this._monsterTask.value?.monster?.encounterElement) {
-      // Only append if not already present
-      if (!this.encounterRef.value.querySelector('[data-monster-encounter]')) {
-        const clonedElement = this._monsterTask.value.monster.encounterElement.cloneNode(true) as HTMLElement;
-        clonedElement.setAttribute('data-monster-encounter', 'true');
-        this.encounterRef.value.appendChild(clonedElement);
-
-        // Check if content overflows
-        this.checkContentOverflow(this.encounterRef.value.closest('.content-body') as HTMLElement);
-      }
-    }
-  }
-
-  private checkContentOverflow(contentBody: HTMLElement | null) {
-    if (!contentBody) return;
-
-    // Use requestAnimationFrame to ensure DOM is updated
-    requestAnimationFrame(() => {
-      const isOverflowing = contentBody.scrollHeight > contentBody.clientHeight;
-      contentBody.setAttribute('data-overflowing', isOverflowing.toString());
-    });
   }
 
   private handleRatingChange = (event: Event) => {
@@ -480,7 +330,7 @@ export class MonsterCard extends LitElement {
     return this._monsterTask.render({
       pending: () => html`<p>Loading monster...</p>`,
       complete: (result) => {
-        const { monster, similarMonsters } = result;
+        const { monster } = result;
         if (!monster) {
           return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
         }
@@ -507,6 +357,7 @@ export class MonsterCard extends LitElement {
               monster-image="${monster.image}"
               background-image="${monster.backgroundImage}"
               background-color="rgba(255, 255, 255, 0.55)"
+              height-mode="fixed"
             ></monster-art>
 
             <div class="content-tabs">
@@ -551,48 +402,31 @@ export class MonsterCard extends LitElement {
         )}
               </div>
 
-              <div class="tab-content lore-content ${this.contentTab === 'lore' ? 'active' : ''}" data-content="lore">
-                <div class="content-header">
-                  <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Lore</a>
-                </div>
-                <div class="content-body">
-                  <div ${ref(this.loreRef)}>
-                    ${!monster.overviewElement ? html`<p>No lore available for this monster.</p>` : ''}
-                  </div>
-                </div>
+              <div class="tab-content ${this.contentTab === 'lore' ? 'active' : ''}" data-content="lore">
+                <monster-lore
+                  monster-key="${monster.key}"
+                  font-size="0.82rem"
+                  max-height="calc(80px + var(--max-text-content-height, 700px))"
+                  .monsterStore="${this.monsterStore}"
+                ></monster-lore>
               </div>
 
-              <div class="tab-content encounter-content ${this.contentTab === 'encounters' ? 'active' : ''}" data-content="encounters">
-                <div class="content-header">
-                  <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Encounters</a>
-                </div>
-                <div class="content-body">
-                  <div ${ref(this.encounterRef)}>
-                    ${!monster.encounterElement ? html`<p>No encounter information available for this monster.</p>` : ''}
-                  </div>
-                </div>
+              <div class="tab-content ${this.contentTab === 'encounters' ? 'active' : ''}" data-content="encounters">
+                <monster-encounters
+                  monster-key="${monster.key}"
+                  font-size="0.82rem"
+                  max-height="calc(80px + var(--max-text-content-height, 700px))"
+                  .monsterStore="${this.monsterStore}"
+                ></monster-encounters>
               </div>
-              <div class="tab-content similar-content ${this.contentTab === 'similar' ? 'active' : ''}" data-content="similar">
-                <div class="content-body">
-                  <ul>
-                    ${similarMonsters.map(
-          group => html`
-                        <li>
-                          <strong>${group.name}</strong>
-                          <ul>
-                            ${group.monsters.map(
-            monster => html`
-                                <li>
-                                  <a href="/generate/?monster-key=${monster.key}">${monster.name} (${monster.cr})</a>
-                                </li>
-                              `
-          )}
-                          </ul>
-                        </li>
-                      `
-        )}
-                  </ul>
-                </div>
+
+              <div class="tab-content ${this.contentTab === 'similar' ? 'active' : ''}" data-content="similar">
+                <monster-similar
+                  monster-key="${monster.key}"
+                  font-size="0.82rem"
+                  max-height="var(--max-text-content-height, 700px)"
+                  .monsterStore="${this.monsterStore}"
+                ></monster-similar>
               </div>
             </div>
           </div>

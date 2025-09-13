@@ -3,7 +3,10 @@ title: Soldiers & Fighters | Foe Foundry
 short_title: Soldiers & Fighters
 description: Explore statblocks, lore, and encounters for martial NPCs like Warriors, Guards, Knights, and Berserkers. Perfect for battles in your 5E campaign.
 image: img/monsters/warrior.webp
+icon: rally-the-troops
+tag_line: Battle-Hardened Warriors of Duty, Honor, or Fortune
 json_ld: true
+family_name: Soldiers and Fighters
 is_monster_family: true
 ---
 

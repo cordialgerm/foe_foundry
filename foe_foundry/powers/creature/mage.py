@@ -90,7 +90,7 @@ class _ApprenticeMage(MagePower):
         super().__init__(
             name="Apprentice Mage",
             source="Foe Foundry",
-            icon="spell-book",
+            icon="spellbook",
             power_level=RIBBON_POWER,
             power_types=[PowerType.Magic],
         )
@@ -115,7 +115,7 @@ class _AdeptMage(MagePower):
         super().__init__(
             name="Adept Mage",
             source="Foe Foundry",
-            icon="spell-book",
+            icon="spellbook",
             power_level=LOW_POWER,
             power_types=[PowerType.Magic],
         )
@@ -140,7 +140,7 @@ class _Mage(MagePower):
         super().__init__(
             name="Mage",
             source="Foe Foundry",
-            icon="spell-book",
+            icon="spellbook",
             power_level=MEDIUM_POWER,
             power_types=[PowerType.Magic],
         )
@@ -165,7 +165,7 @@ class _Archmage(MagePower):
         super().__init__(
             name="Mage",
             source="Foe Foundry",
-            icon="spell-book",
+            icon="spellbook",
             power_level=MEDIUM_POWER,
             power_types=[PowerType.Magic],
         )

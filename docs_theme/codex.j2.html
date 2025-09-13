@@ -1,0 +1,40 @@
+<div class="codex-container justify-content-center">
+    <!-- Tab Navigation -->
+    <div class="codex-tabs">
+        <button class="codex-tab active" data-tab="browse">
+            <svg-icon src="death-note" class="tab-icon"></svg-icon>
+            Browse
+        </button>
+        <button class="codex-tab" data-tab="catalog">
+            <svg-icon src="bookshelf" class="tab-icon"></svg-icon>
+            Catalog
+        </button>
+        <button class="codex-tab" data-tab="search">
+            <svg-icon src="magnifying-glass" class="tab-icon"></svg-icon>
+            Search
+        </button>
+    </div>
+
+    <!-- Browse Tab Content -->
+    <div class="codex-tab-content active" data-content="browse">
+        <!-- Search Bar for Navigation -->
+        <div class="codex-search-section">
+            <search-bar placeholder="Search for monsters..." mode="navigation" analytics-surface="codex"
+                id="codex-search-bar">
+            </search-bar>
+        </div>
+
+        <!-- Monster Family Browse Component -->
+        <monster-family-browse></monster-family-browse>
+    </div>
+
+    <!-- Catalog Tab Content -->
+    <div class="codex-tab-content" data-content="catalog">
+        <monster-catalog></monster-catalog>
+    </div>
+
+    <!-- Search Tab Content -->
+    <div class="codex-tab-content" data-content="search">
+        <monster-codex></monster-codex>
+    </div>
+</div>

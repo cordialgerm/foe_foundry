@@ -11,25 +11,8 @@ from foe_foundry_data.monsters import MonsterModel
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.powers import PowerModel, Powers
 
+from ..mask import random_mask
 from .data import HomepageBlog, HomepageData, HomepageMonster, HomepagePower
-
-
-class _RandomMask:
-    """
-    A class to handle random mask selection for homepage elements.
-    """
-
-    def __init__(self, mask_count: int):
-        self.mask_count = mask_count
-        self.last_index = -1
-        self.rng = np.random.default_rng()
-
-    def random_mask_css(self) -> str:
-        n = self.rng.choice(self.mask_count) + 1
-        if n == self.last_index:
-            n = (n + 1) % self.mask_count
-        self.last_index = n
-        return f"masked v{n}"
 
 
 class _HomepageDataCache:
@@ -42,15 +25,6 @@ class _HomepageDataCache:
             HomepageData: An instance of HomepageData containing monsters, powers, and blogs.
         """
         rng = np.random.default_rng(20240711)
-
-        mask_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "masks"
-
-        # check for webp or png
-        mask_count = len(list(mask_dir.glob("*.webp"))) + len(
-            list(mask_dir.glob("*.png"))
-        )
-        random_mask = _RandomMask(mask_count)
-
         powers = [
             _power(p, random_mask.random_mask_css())
             for _, p in Powers.PowerLookup.items()

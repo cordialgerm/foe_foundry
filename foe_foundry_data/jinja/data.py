@@ -58,6 +58,7 @@ class StatblockJinjaContext:
     damage_immunities: str
     condition_immunities: str
     senses: str
+    passive_perception: int
     languages: str
     challenge: str
     proficiency_bonus: str
@@ -87,6 +88,7 @@ class StatblockJinjaContext:
     spellcasting_power_keys: str = field(init=False)
     immunities_combined: str = field(init=False)
     challenge_pb_combined: str = field(init=False)
+    senses_no_passive_perception: str = field(init=False)
 
     def __post_init__(self):
         self.key = name_to_key(self.name)
@@ -130,6 +132,20 @@ class StatblockJinjaContext:
                 }
             )
         )
+
+        # Create senses without passive perception for Black Flag format
+        if self.senses:
+            senses_parts = [part.strip() for part in self.senses.split(",")]
+            senses_no_passive = [
+                part
+                for part in senses_parts
+                if not part.startswith("Passive Perception")
+            ]
+            self.senses_no_passive_perception = (
+                ", ".join(senses_no_passive) if senses_no_passive else ""
+            )
+        else:
+            self.senses_no_passive_perception = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -311,6 +327,7 @@ class StatblockJinjaContext:
             senses=stats.senses.describe(
                 stats.attributes.passive_skill(Skills.Perception)
             ),
+            passive_perception=stats.attributes.passive_skill(Skills.Perception),
             languages=languages,
             challenge=cr,
             proficiency_bonus=f"+{stats.attributes.proficiency}",

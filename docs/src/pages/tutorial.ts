@@ -1,4 +1,4 @@
-import { initGrowthBook, isFeatureEnabled } from '../utils/growthbook.js';
+import { getFeatureFlags } from '../utils/growthbook.js';
 
 // Wait for features to be available
 (async () => {
@@ -6,10 +6,10 @@ import { initGrowthBook, isFeatureEnabled } from '../utils/growthbook.js';
 })();
 
 async function setupTutorial() {
-    // Initialize GrowthBook
-    await initGrowthBook();
+    // check feature flags
+    const flags = await getFeatureFlags();
 
-    if (isFeatureEnabled("show-tutorial")) {
+    if (flags.showTutorial) {
         console.log("show-tutorial is on");
 
         // Enable all statblock-tutorial elements on the page

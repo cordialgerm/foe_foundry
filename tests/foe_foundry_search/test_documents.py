@@ -12,9 +12,9 @@ class TestDocuments:
         document_count = sum(1 for _ in iter_documents())
 
         # Assert that we have more than 100 documents
-        assert document_count > 100, (
-            f"Expected more than 100 documents, but got {document_count}"
-        )
+        assert (
+            document_count > 100
+        ), f"Expected more than 100 documents, but got {document_count}"
 
         # Print the actual count for debugging purposes
         print(f"Total documents found: {document_count}")

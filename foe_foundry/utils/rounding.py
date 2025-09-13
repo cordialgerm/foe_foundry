@@ -1,6 +1,3 @@
-from math import ceil, floor
-
-
 def easy_multiple_of_five(
     number: float,
     min_val: int | None = None,

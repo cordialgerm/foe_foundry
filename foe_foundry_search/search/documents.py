@@ -10,7 +10,7 @@ from whoosh.index import FileIndex, create_in, open_dir
 from whoosh.qparser import MultifieldParser, OrGroup
 from whoosh.query import Or, Term
 
-from ..documents import Document, get_document, iter_documents
+from ..documents import DocType, Document, get_document, iter_documents
 
 INDEX_DIR = Path.cwd() / "cache" / "whoosh_indx"
 log = logging.getLogger(__name__)
@@ -83,7 +83,9 @@ def clean_document_index():
     shutil.rmtree(INDEX_DIR, ignore_errors=True)
 
 
-def search_documents(search_query: str, limit: int) -> list[DocumentSearchResult]:
+def search_documents(
+    search_query: str, limit: int, doc_type_weights: dict[DocType, float] | None = None
+) -> list[DocumentSearchResult]:
     """
     Search the document index and return detailed results with highlights.
 
@@ -94,6 +96,9 @@ def search_documents(search_query: str, limit: int) -> list[DocumentSearchResult
     Returns:
         An iterable of SearchResult objects with match details and highlights.
     """
+
+    if doc_type_weights is None:
+        doc_type_weights = {}
 
     try:
         ix = _cache.index
@@ -151,15 +156,26 @@ def search_documents(search_query: str, limit: int) -> list[DocumentSearchResult
         all_results = []
         result_ids = set()
 
-        all_results.extend(process_results(phrase_results, result_ids, multiplier=2.0))
-        all_results.extend(process_results(ngram_results, result_ids, multiplier=1.5))
-        all_results.extend(process_results(or_results, result_ids))
+        all_results.extend(
+            process_results(
+                phrase_results, result_ids, doc_type_weights, multiplier=2.0
+            )
+        )
+        all_results.extend(
+            process_results(ngram_results, result_ids, doc_type_weights, multiplier=1.5)
+        )
+        all_results.extend(process_results(or_results, result_ids, doc_type_weights))
 
     all_results.sort(key=lambda r: r.score, reverse=True)
     return all_results[:limit]
 
 
-def process_results(results, result_ids: set[str], multiplier: float = 1.0) -> list:
+def process_results(
+    results,
+    result_ids: set[str],
+    doc_type_weights: dict[DocType, float],
+    multiplier: float = 1.0,
+) -> list:
     all_results = []
     for result in results:
         doc_id = result["doc_id"]
@@ -170,7 +186,8 @@ def process_results(results, result_ids: set[str], multiplier: float = 1.0) -> l
         if not doc:
             continue
 
-        score = multiplier * result.score  # type: ignore
+        doc_type_weight = doc_type_weights.get(doc.doc_type, 1.0)
+        score = multiplier * result.score * doc_type_weight  # type: ignore
 
         # Get match details
         matched_terms = list(result.matched_terms())

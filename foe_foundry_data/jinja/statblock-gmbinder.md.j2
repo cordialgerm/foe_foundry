@@ -1,0 +1,81 @@
+___  
+___  
+> ## {{statblock.name}}  
+> *{{statblock.size}} {{statblock.creature_type}}*  
+> ___  
+> - **Armor Class** {{statblock.ac}}  
+> - **Hit Points** {{statblock.hp}}  
+> - **Speed** {{statblock.movement}}  
+> ___  
+> |STR|DEX|CON|INT|WIS|CHA|  
+> |:---:|:---:|:---:|:---:|:---:|:---:|  
+> |{{statblock.STR}} ({{statblock.STR_MOD}})|{{statblock.DEX}} ({{statblock.DEX_MOD}})|{{statblock.CON}} ({{statblock.CON_MOD}})|{{statblock.INT}} ({{statblock.INT_MOD}})|{{statblock.WIS}} ({{statblock.WIS_MOD}})|{{statblock.CHA}} ({{statblock.CHA_MOD}})|  
+> ___  
+{% if statblock.saves -%}
+> - **Saving Throws** {{statblock.saves}}  
+{% endif -%}
+{% if statblock.skills -%}
+> - **Skills** {{statblock.skills}}  
+{% endif -%}
+{% if statblock.damage_vulnerabilities -%}
+> - **Damage Vulnerabilities** {{statblock.damage_vulnerabilities}}  
+{% endif -%}
+{% if statblock.damage_resistances -%}
+> - **Damage Resistances** {{statblock.damage_resistances}}  
+{% endif -%}
+{% if statblock.damage_immunities -%}
+> - **Damage Immunities** {{statblock.damage_immunities}}  
+{% endif -%}
+{% if statblock.condition_immunities -%}
+> - **Condition Immunities** {{statblock.condition_immunities}}  
+{% endif -%}
+{% if statblock.senses -%}
+> - **Senses** {{statblock.senses}}  
+{% endif -%}
+{% if statblock.languages -%}
+> - **Languages** {{statblock.languages}}  
+{% endif -%}
+> - **Challenge** {{statblock.challenge}}  
+> ___  
+{% for feature in statblock.passives -%}
+> ***{{feature.title}}.*** {{feature.description | fix_punctuation}}  
+>  
+{% endfor -%}
+{% if statblock.attacks|length > 0 or statblock.actions|length > 0 -%}
+> ### Actions  
+{% endif -%}
+{% if statblock.multiattack -%}
+> ***Multiattack.*** {{statblock.multiattack | fix_punctuation}}  
+>  
+{% endif -%}
+{% for attack in statblock.attacks -%}
+> ***{{attack.display_name | fix_punctuation}}.*** {{attack.description | fix_punctuation}}  
+>  
+{% endfor -%}
+{% for action in statblock.actions -%}
+> ***{{action.title | fix_punctuation}}.*** {{action.description | fix_punctuation}}  
+>  
+{% endfor -%}
+{% if statblock.bonus_actions|length > 0 -%}
+> ### Bonus Actions  
+{% for bonus_action in statblock.bonus_actions -%}
+> ***{{bonus_action.title | fix_punctuation}}.*** {{bonus_action.description | fix_punctuation}}  
+>  
+{% endfor -%}
+{% endif -%}
+{% if statblock.reactions|length > 0 -%}
+> ### {{statblock.reaction_header}}  
+{% for reaction in statblock.reactions -%}
+> ***{{reaction.title | fix_punctuation}}.*** {{reaction.description | fix_punctuation}}  
+>  
+{% endfor -%}
+{% endif -%}
+{% if statblock.legendary_actions|length > 0 -%}
+> ### Legendary Actions  
+> {{statblock.legendary_action_header}}  
+>  
+{% for legendary_action in statblock.legendary_actions -%}
+> **{{legendary_action.title | fix_punctuation}}.** {{legendary_action.description | fix_punctuation}}  
+>  
+{% endfor -%}
+{% endif -%}

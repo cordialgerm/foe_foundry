@@ -3,6 +3,9 @@ title: Monstrosities for 5E - Statblocks & Encounter Ideas | Foe Foundry
 short_title: Monstrosity Statblocks & Encounters
 description: A complete guide to 5E monstrosities with statblocks, tactics, and encounter hooks. Run better monster encounters with chimeras, mimics, manticores, and more.
 image: img/monsters/chimera.webp
+icon: hydra
+family_name: Monstrosities
+tag_line: Monstrous creatures that defy the natural
 json_ld: true
 is_monster_family: true
 ---

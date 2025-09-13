@@ -33,14 +33,16 @@ Example usage:
             print(f"  Family: {result.family_key}")
 """
 
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, replace
 from enum import StrEnum
 from typing import Callable, Iterable
 
 from foe_foundry.creature_types import CreatureType
 
 from ..graph import find_descendants_with_decay, load_graph
-from .documents import DocumentSearchResult, search_documents
+from .documents import DocType, DocumentSearchResult, search_documents
 
 
 class EntityType(StrEnum):
@@ -61,6 +63,9 @@ class EntitySearchResult:
     score: float
     document_matches: list[DocumentSearchResult]
 
+    def copy(self, **args) -> EntitySearchResult:
+        return replace(self, **args)
+
 
 def search_entities_with_graph_expansion(
     search_query: str,
@@ -68,6 +73,7 @@ def search_entities_with_graph_expansion(
     limit: int = 5,
     max_hops: int = 3,
     alpha: float = 0.15,
+    doc_type_weights: dict[DocType, float] | None = None,
     custom_filter: Callable[[dict], bool] | None = None,
 ) -> Iterable[EntitySearchResult]:
     """
@@ -95,7 +101,11 @@ def search_entities_with_graph_expansion(
         target_node_types.add("POW")
 
     # Search documents first
-    doc_results = list(search_documents(search_query, limit=2 * limit))
+    doc_results = list(
+        search_documents(
+            search_query, limit=2 * limit, doc_type_weights=doc_type_weights
+        )
+    )
 
     # Collect all graph paths from document results
     all_paths = []
@@ -175,32 +185,55 @@ def search_entities_with_graph_expansion(
 def search_monsters(
     search_query: str,
     target_cr: float | None = None,
+    min_cr: float | None = None,
+    max_cr: float | None = None,
     creature_types: set[CreatureType] | None = None,
     limit: int = 10,
     max_hops: int = 3,
     alpha: float = 0.15,
 ) -> Iterable[EntitySearchResult]:
+    """
+    Search for monsters using document search followed by graph expansion with strength decay.
+    """
+
+    # We want to be sure the noisier document types are weighted lower
+    doc_type_weights = {
+        DocType.monster_ff: 3.0,  # boost official monsters highest
+        DocType.monster_other: 1.5,
+        DocType.power_ff: 1.0,
+        DocType.blog_post: 0.5,  # might just mention the search term in passing
+    }
+
     # custom node-level filter based on monster parameters
     def custom_filter(node: dict) -> bool:
         if node["type"] != "FF_MON":
             return False
 
-        if target_cr is not None:
-            cr: float | None = node.get("cr")
-            if cr is None:
+        cr: float | None = node.get("cr")
+        if cr is None:
+            return False
+
+        # Handle CR filtering with precedence: min_cr/max_cr over target_cr
+        if min_cr is not None or max_cr is not None:
+            # Use explicit min/max CR if provided
+            effective_min_cr = min_cr if min_cr is not None else 0.0
+            effective_max_cr = max_cr if max_cr is not None else float("inf")
+
+            if not (effective_min_cr <= cr <= effective_max_cr):
                 return False
-
+        elif target_cr is not None:
+            # Fall back to target_cr logic for backward compatibility
             if target_cr < 1:
-                min_cr = 0
-                max_cr = 1
+                effective_min_cr = 0
+                effective_max_cr = 1
             elif target_cr < 5:
-                min_cr = target_cr - 1
-                max_cr = target_cr + 1
+                effective_min_cr = target_cr - 1
+                effective_max_cr = target_cr + 1
             else:
-                min_cr = 0.75 * target_cr
-                max_cr = 1.25 * target_cr
+                effective_min_cr = 0.75 * target_cr
+                effective_max_cr = 1.25 * target_cr
 
-            if not (min_cr <= cr <= max_cr):
+            if not (effective_min_cr <= cr <= effective_max_cr):
                 return False
 
         node_creature_type = node.get("creature_type")
@@ -219,6 +252,7 @@ def search_monsters(
         max_hops=max_hops,
         custom_filter=custom_filter,
         alpha=alpha,
+        doc_type_weights=doc_type_weights,
     )
 
 

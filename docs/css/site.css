@@ -2,6 +2,7 @@
     --bg-color: #1a1a1a;
     --muted-color: #2a2a2a;
     --fg-color: #f4f1e6;
+    --fg-muted-color: #bfbdb7;
 
     --primary-color: #ff3737;
     --primary-faded-color: #ff373728;
@@ -147,12 +148,25 @@ a.branding::after,
     vertical-align: middle;
 }
 
-.navbar a[href$="monsters/" i]::before {
+.navbar a.search-link::before {
     content: " ";
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
-    background-image: url('/img/icons/daemon-skull.svg');
+    background-image: url('/img/icons/magnifying-glass.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="monsters/" i]::before,
+.navbar a[href$="codex/" i]:not(.search-link)::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/death-note.svg');
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: var(--small-margin);
@@ -346,13 +360,19 @@ a.branding::after,
     cursor: pointer;
 }
 
-body {
+body:not(.print-preview) {
     background: var(--muted-color);
     color: var(--fg-color);
     font-family: var(--primary-font);
 }
 
-body:not(.homepage)::before {
+body.print-preview {
+    background: white;
+    color: black;
+    font-family: var(--primary-font);
+}
+
+body:not(.homepage, .print-preview)::before {
     content: "";
     position: fixed;
     inset: 0;
@@ -1345,4 +1365,49 @@ a.burnt-parchment,
     .admonition {
         display: none !important;
     }
+}
+
+/* Print Preview Styles - Simple black text on white background */
+.stat-block.print-preview,
+.power-block.print-preview {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+    margin: 0 !important;
+}
+
+.stat-block.print-preview .monster-name {
+    color: #000000 !important;
+}
+
+.stat-block.print-preview .monster-name:after {
+    background: #000000 !important;
+}
+
+.stat-block.print-preview .branding {
+    display: none !important;
+}
+
+.stat-block.print-preview .block-header,
+.power-block.print-preview .block-header {
+    color: #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.stat-block.print-preview p,
+.power-block.print-preview p {
+    color: #000000 !important;
+}
+
+.stat-block.print-preview .stats table.abilities-saves {
+    color: #000000 !important;
+}
+
+.stat-block.print-preview .stats table.abilities-saves th,
+.stat-block.print-preview .stats table.abilities-saves td {
+    color: #000000 !important;
+    border-color: #000000 !important;
 }
