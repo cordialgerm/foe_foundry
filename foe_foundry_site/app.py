@@ -8,9 +8,12 @@ from pathlib import Path
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from starlette.middleware.sessions import SessionMiddleware
 
 from foe_foundry_search import setup_indexes
 
+from .auth import routes as auth_routes
+from .auth.dependencies import SESSION_SECRET
 from .logconfig import setup_logging
 from .routes import (
     catalog,
@@ -40,6 +43,9 @@ async def lifespan(app):
 
 app = FastAPI(lifespan=lifespan)
 
+# Add session middleware for authentication
+app.add_middleware(SessionMiddleware, secret_key=SESSION_SECRET, https_only=False)
+
 origins = [
     "http://localhost",
     "http://localhost:8080",
@@ -65,6 +71,7 @@ site_dir = Path(__file__).parent.parent / "site"
 app.state.site_dir = site_dir
 
 app.include_router(redirects.router)
+app.include_router(auth_routes.router)
 app.include_router(powers.router)
 app.include_router(statblocks.router)
 app.include_router(monsters.router)
