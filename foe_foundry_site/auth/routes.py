@@ -12,6 +12,7 @@ from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token
 from sqlmodel import select
 
+from .database import check_database_health
 from .dependencies import (
     DISCORD_CLIENT_ID,
     DISCORD_CLIENT_SECRET,
@@ -25,13 +26,13 @@ from .dependencies import (
 )
 from .models import AccountType, PatronStatus, PatronTier, User
 from .schemas import (
+    AnonymousInfo,
     AuthGoogleResponse,
     AuthMeResponse,
     AuthStatusResponse,
+    CreditsInfo,
     LogoutResponse,
     UserInfo,
-    CreditsInfo,
-    AnonymousInfo,
 )
 
 router = APIRouter(prefix="/auth", tags=["authentication"])
@@ -420,3 +421,13 @@ def get_auth_status(auth_context: AuthContextDep):
         credits_remaining=auth_context.credits_remaining,
         can_generate=auth_context.can_use_credits(1),
     )
+
+
+@router.get("/health")
+def database_health():
+    """Health check endpoint for database connectivity."""
+    is_healthy = check_database_health()
+    if is_healthy:
+        return {"status": "healthy", "database": "connected"}
+    else:
+        raise HTTPException(status_code=503, detail="Database connection failed")

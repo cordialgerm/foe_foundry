@@ -176,4 +176,8 @@ tests/outputs/
 
 # Mac stuff
 .DS_STORE
-.DS_Storefoe_foundry_accounts.db
+.DS_Store
+
+# SQLite database files (development only)
+*.db
+foe_foundry_accounts.db

@@ -1,7 +1,8 @@
 """Test authentication endpoints."""
 
-import pytest
 from unittest.mock import patch
+
+import pytest
 from fastapi.testclient import TestClient
 
 # Import the configured test client from conftest
@@ -32,18 +33,17 @@ def test_auth_me_anonymous(client):
 
 def test_credit_usage_with_generation(client):
     """Test that credits are properly deducted during generation."""
-    # First, check initial credits
-    response = client.get("/auth/status")
-    initial_credits = response.json()["credits_remaining"]
-    
     # Generate a monster - this should use credits
     response = client.get("/api/v1/statblocks/random?output=json")
     # Should either succeed or fail due to insufficient credits
     assert response.status_code in [200, 402]
 
 
-@patch('foe_foundry_site.auth.routes.PATREON_CLIENT_ID', 'test_client_id')
-@patch('foe_foundry_site.auth.routes.PATREON_REDIRECT_URI', 'http://test.example.com/callback')
+@patch("foe_foundry_site.auth.routes.PATREON_CLIENT_ID", "test_client_id")
+@patch(
+    "foe_foundry_site.auth.routes.PATREON_REDIRECT_URI",
+    "http://test.example.com/callback",
+)
 def test_patreon_login_redirect(client):
     """Test that Patreon login redirects properly."""
     response = client.get("/auth/patreon", follow_redirects=False)
@@ -52,8 +52,11 @@ def test_patreon_login_redirect(client):
     assert "patreon.com" in response.headers["location"]
 
 
-@patch('foe_foundry_site.auth.routes.DISCORD_CLIENT_ID', 'test_client_id')
-@patch('foe_foundry_site.auth.routes.DISCORD_REDIRECT_URI', 'http://test.example.com/callback')
+@patch("foe_foundry_site.auth.routes.DISCORD_CLIENT_ID", "test_client_id")
+@patch(
+    "foe_foundry_site.auth.routes.DISCORD_REDIRECT_URI",
+    "http://test.example.com/callback",
+)
 def test_discord_login_redirect(client):
     """Test that Discord login redirects properly."""
     response = client.get("/auth/discord", follow_redirects=False)

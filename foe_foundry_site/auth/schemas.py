@@ -9,6 +9,7 @@ from pydantic import BaseModel
 
 class UserInfo(BaseModel):
     """User information response."""
+
     id: int
     email: str
     display_name: Optional[str]
@@ -19,18 +20,21 @@ class UserInfo(BaseModel):
 
 class CreditsInfo(BaseModel):
     """Credits information response."""
+
     credits_remaining: int
     credits_limit: int
 
 
 class AnonymousInfo(BaseModel):
     """Anonymous user information response."""
+
     id: str
     tier: str
 
 
 class AuthMeResponse(BaseModel):
     """Response for /auth/me endpoint."""
+
     authenticated: bool
     user: Optional[UserInfo] = None
     anonymous: Optional[AnonymousInfo] = None
@@ -39,6 +43,7 @@ class AuthMeResponse(BaseModel):
 
 class AuthStatusResponse(BaseModel):
     """Response for /auth/status endpoint."""
+
     authenticated: bool
     tier: str
     credits_remaining: int
@@ -47,10 +52,12 @@ class AuthStatusResponse(BaseModel):
 
 class AuthGoogleResponse(BaseModel):
     """Response for Google authentication."""
+
     detail: str
     user: UserInfo
 
 
 class LogoutResponse(BaseModel):
     """Response for logout endpoint."""
+
     detail: str

@@ -19,7 +19,7 @@ from foe_foundry_data.jinja import render_statblock_markdown
 from foe_foundry_data.monsters import MonsterModel
 from foe_foundry_data.refs import MonsterRefResolver
 
-from ..auth.dependencies import AuthContextDep, require_credits, SessionDep
+from ..auth.dependencies import AuthContextDep, SessionDep, require_credits
 from .data import MonsterMeta
 
 router = APIRouter(prefix="/api/v1/statblocks")
@@ -68,18 +68,18 @@ def random_statblock(
     if not auth_context.can_use_credits(1):
         if auth_context.is_anonymous:
             raise HTTPException(
-                status_code=402, 
-                detail=f"Anonymous credit limit reached ({auth_context.anon_session.get_credit_limit()} generations). Create an account to continue."
+                status_code=402,
+                detail=f"Anonymous credit limit reached ({auth_context.anon_session.get_credit_limit()} generations). Create an account to continue.",
             )
         else:
             raise HTTPException(
                 status_code=402,
-                detail=f"Insufficient credits. You have {auth_context.get_credits_remaining()} credits remaining."
+                detail=f"Insufficient credits. You have {auth_context.get_credits_remaining()} credits remaining.",
             )
-    
+
     # Use credit
     auth_context.use_credits(1)
-    
+
     # Update database
     if auth_context.user:
         session.add(auth_context.user)
@@ -87,7 +87,7 @@ def random_statblock(
     elif auth_context.anon_session:
         session.add(auth_context.anon_session)
         session.commit()
-    
+
     # Generate the statblock
     rng = np.random.default_rng()
     template, settings = random_template_and_settings(
@@ -133,18 +133,18 @@ def get_statblock(
     if not auth_context.can_use_credits(1):
         if auth_context.is_anonymous:
             raise HTTPException(
-                status_code=402, 
-                detail=f"Anonymous credit limit reached ({auth_context.anon_session.get_credit_limit()} generations). Create an account to continue."
+                status_code=402,
+                detail=f"Anonymous credit limit reached ({auth_context.anon_session.get_credit_limit()} generations). Create an account to continue.",
             )
         else:
             raise HTTPException(
                 status_code=402,
-                detail=f"Insufficient credits. You have {auth_context.get_credits_remaining()} credits remaining."
+                detail=f"Insufficient credits. You have {auth_context.get_credits_remaining()} credits remaining.",
             )
-    
+
     # Use credit
     auth_context.use_credits(1)
-    
+
     # Update database
     if auth_context.user:
         session.add(auth_context.user)
@@ -152,7 +152,7 @@ def get_statblock(
     elif auth_context.anon_session:
         session.add(auth_context.anon_session)
         session.commit()
-    
+
     # Generate the statblock
     rng = np.random.default_rng()
     ref, stats = generate_monster(
@@ -198,18 +198,18 @@ def generate_statblock_from_request(
     if not auth_context.can_use_credits(1):
         if auth_context.is_anonymous:
             raise HTTPException(
-                status_code=402, 
-                detail=f"Anonymous credit limit reached ({auth_context.anon_session.get_credit_limit()} generations). Create an account to continue."
+                status_code=402,
+                detail=f"Anonymous credit limit reached ({auth_context.anon_session.get_credit_limit()} generations). Create an account to continue.",
             )
         else:
             raise HTTPException(
                 status_code=402,
-                detail=f"Insufficient credits. You have {auth_context.get_credits_remaining()} credits remaining."
+                detail=f"Insufficient credits. You have {auth_context.get_credits_remaining()} credits remaining.",
             )
-    
+
     # Use credit
     auth_context.use_credits(1)
-    
+
     # Update database
     if auth_context.user:
         session.add(auth_context.user)
@@ -217,7 +217,7 @@ def generate_statblock_from_request(
     elif auth_context.anon_session:
         session.add(auth_context.anon_session)
         session.commit()
-    
+
     # Generate the statblock
     rng = np.random.default_rng()
 
